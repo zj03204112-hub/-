@@ -46,21 +46,45 @@ def fetch_csv(league, code):
     return save_normalized(df, league, url)
 
 def fetch_japan():
-    url = "https://www.football-data.co.uk/new/JPN.csv"
-    r = requests.get(url, timeout=30)
-    r.raise_for_status()
-    df = pd.read_csv(io.BytesIO(r.content), encoding="latin1")
+    # J1 uses the official J.League Data Site. The Football-Data JPN.csv feed
+    # is an aggregate Japan feed and is not safe to treat as J1-only.
+    url = (
+        "https://data.j-league.or.jp/SFMS01/search"
+        "?competition_years=2026&competition_frame_ids=1"
+        "&tv_relay_station_name="
+    )
+    tables = pd.read_html(url)
+    if not tables:
+        raise RuntimeError("J.League Data Site returned no schedule table")
 
-    # If the feed provides a division field, retain only J1.
-    for c in ["League", "Division", "Div"]:
-        if c in df.columns:
-            values = df[c].astype(str).str.upper()
-            j1 = df[values.isin({"J1", "J1 LEAGUE", "1"})].copy()
-            if not j1.empty:
-                df = j1
-            break
+    df = tables[0].copy()
+    # Official table columns are: year, competition, section, date, KO, home,
+    # score, away, stadium, attendance, broadcast. Keep only final scores.
+    if len(df.columns) < 8:
+        raise RuntimeError(f"Unexpected J.League table shape: {df.shape}")
 
-    return save_normalized(df, "J1 League", url)
+    # Normalize by column position because the site uses Japanese headers.
+    df = df.iloc[:, :11].copy()
+    df.columns = [
+        "Season", "Competition", "Section", "Date", "Time",
+        "HomeTeam", "Score", "AwayTeam", "Stadium", "Attendance", "TV"
+    ][:len(df.columns)]
+
+    score = df["Score"].astype(str).str.extract(r"^(\d+)\s*[-－]\s*(\d+)$")
+    df["FTHG"] = pd.to_numeric(score[0], errors="coerce")
+    df["FTAG"] = pd.to_numeric(score[1], errors="coerce")
+    df = df[df["FTHG"].notna() & df["FTAG"].notna()].copy()
+
+    # Convert the official table into the common database columns.
+    out = df[["Date", "Time", "HomeTeam", "AwayTeam", "FTHG", "FTAG"]].copy()
+    out["league"] = "J1 League"
+    out["source"] = url
+    out.to_csv(
+        OUT / "J1_League_2026_27.csv",
+        index=False,
+        encoding="utf-8-sig",
+    )
+    return len(out)
 
 def fetch_kleague():
     api_key = os.getenv("KLEAGUE_API_KEY")
