@@ -1,4 +1,4 @@
-name: Football data update
+name: Football data update v2
 
 on:
   workflow_dispatch:
@@ -16,22 +16,33 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: main
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - run: pip install pandas requests lxml
+
       - name: Fetch current-season league results
         env:
           KLEAGUE_API_KEY: ${{ secrets.KLEAGUE_API_KEY }}
         run: python scripts/fetch_current_season.py
-      - name: Commit updated data
+
+      - name: Commit updated data v2
         run: |
           git config user.name "football-model-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/auto_results
-          git diff --cached --quiet || git commit -m "auto: update current season results"
-          git pull --rebase origin main
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git commit -m "auto: update current season results"
+          git fetch origin main
+          git rebase origin/main
           git push origin HEAD:main
