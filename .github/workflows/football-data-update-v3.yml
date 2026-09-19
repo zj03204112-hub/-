@@ -57,6 +57,10 @@ jobs:
       - name: Collect J1 and K League 1
         run: python data_pipeline/collect_public_asia.py
 
+      - name: Collect Sporttery historical handicap markets
+        run: python data_pipeline/collect_sporttery_history.py
+        continue-on-error: true
+
       - name: Build leakage-safe model features
         run: python data_pipeline/build_features.py
 
@@ -77,6 +81,7 @@ jobs:
             python data_pipeline/build_football_db.py
             python scripts/fetch_current_season.py
             python data_pipeline/collect_public_asia.py
+            python data_pipeline/collect_sporttery_history.py
             python data_pipeline/build_features.py
             python data_pipeline/build_baseline_predictions.py
             python scripts/validate_database.py
