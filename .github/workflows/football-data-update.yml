@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "30 2 * * *"
 
+concurrency:
+  group: football-data-update-main
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -13,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -27,4 +33,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data/auto_results
           git diff --cached --quiet || git commit -m "auto: update current season results"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
