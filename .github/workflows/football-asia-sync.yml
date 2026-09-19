@@ -1,0 +1,27 @@
+name: Football Asia Data Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "31 2 * * *"
+      timezone: "Asia/Singapore"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --upgrade pip requests pandas lxml
+      - run: python data_pipeline/collect_public_asia.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database data || true
+          git diff --cached --quiet || git commit -m "chore: sync K League 1 and J1"
+          git push
