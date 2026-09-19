@@ -69,7 +69,7 @@ def ingest(conn, code, cid, url):
             VALUES (?,?,?,?,?,?,?,?,?)""",
             (match_id, cid, sid, d, home, away,
              "finished" if completed else "scheduled",
-             "verified_external", 4)
+             "verified_external", 5)
         )
         if completed:
             result = "H" if ft_h > ft_a else ("A" if ft_h < ft_a else "D")
