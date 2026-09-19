@@ -139,12 +139,15 @@ def ingest_j1_csv(conn):
         away = str(r.get("AwayTeam","")).strip()
         if not home or not away or home == "nan" or away == "nan":
             continue
-        score = str(r.get("Score","")).strip()
         import re
-        m = re.search(r"(\d+)\s*[-–:]\s*(\d+)", score)
-        if not m:
-            continue
-        mh, ma = int(m.group(1)), int(m.group(2))
+        if pd.notna(r.get("FTHG")) and pd.notna(r.get("FTAG")):
+            mh, ma = int(float(r.get("FTHG"))), int(float(r.get("FTAG")))
+        else:
+            score = str(r.get("Score","")).strip()
+            m = re.search(r"(\d+)\s*[-–:]\s*(\d+)", score)
+            if not m:
+                continue
+            mh, ma = int(m.group(1)), int(m.group(2))
         midv = mid("J1", d, home, away)
         tm = str(r.get("Time","")).strip()
         kickoff = d + ("T"+tm if tm and tm != "nan" else "")
