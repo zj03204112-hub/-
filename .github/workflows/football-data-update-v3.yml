@@ -57,6 +57,9 @@ jobs:
       - name: Collect J1 and K League 1
         run: python data_pipeline/collect_public_asia.py
 
+      - name: Build leakage-safe model features
+        run: python data_pipeline/build_features.py
+
       - name: Validate database
         run: python scripts/validate_database.py
 
@@ -71,6 +74,7 @@ jobs:
             python data_pipeline/build_football_db.py
             python scripts/fetch_current_season.py
             python data_pipeline/collect_public_asia.py
+            python data_pipeline/build_features.py
             python scripts/validate_database.py
             git add football_model_database.sqlite data/validation_report.json
             if git diff --cached --quiet; then
