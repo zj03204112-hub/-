@@ -19,7 +19,21 @@
 
 ## 时间口径
 
-“当前赛季”与“2026日历年数据库”分开保存。欧洲五大联赛当前赛季为2026/27；K League为2026赛季；J1当前数据源标示为2026/27。
+“当前赛季”与“2026日历年数据库”分开保存：
+- 欧洲五大联赛：2026/27
+- K League 1：2026
+- J1 League：2026/27
+
+## 自动赛果抓取
+
+scripts/fetch_current_season.py 当前设计为：
+- 英超/西甲/德甲/意甲/法甲：Football-Data 当前赛季 CSV；
+- J1 League：Football-Data Japan 当前结果文件，并在有分区字段时仅保留 J1；
+- K League 1：K League 官方 API。自动抓取需要在 GitHub Repository Secrets 中配置 KLEAGUE_API_KEY。
+
+K League 官方 API 的赛季赛程接口是 meetSchedule.do，2026 年 K League 1 使用 meet_year=2026、meet_seq=1。官方 API 文档要求 API key，因此未配置 secret 时脚本会跳过 K League，不会阻断其它联赛更新。
+
+J1 的结果也用 J.League Data Site 做交叉核验；该官方站点提供 2026/27 J1 的赛程与结果。
 
 ## 模型判断
 
@@ -41,3 +55,9 @@ prediction 文件保存的是当时模型判断，不代表事实结果。结果
 - 盘口变化
 
 然后更新模型规则。
+
+## 当前状态
+
+截至 2026-09-19，本仓库已经建立预测、已核实赛果、数据源清单及自动更新工作流。自动更新工作流已扩展到 J1；K League 已接入官方 API 适配器，但必须配置 API key 后才会自动写入赛果文件。
+
+当前仓库中的历史结果文件不要理解为“完整 2026 年七联赛数据库”；完整性以自动抓取文件实际返回的已完成比赛数量为准。
