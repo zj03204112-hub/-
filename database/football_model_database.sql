@@ -27,6 +27,7 @@ INSERT INTO source_registry VALUES(1,'Sporttery Official API','official','primar
 INSERT INTO source_registry VALUES(2,'Football-Data','historical_dataset','secondary','https://football-data.co.uk/downloadm.php','Historical results/statistics and bookmaker/AH fields.');
 INSERT INTO source_registry VALUES(3,'K League Official Open API','official','primary','https://api.kleague.com','Official K League API; requires authKey.');
 INSERT INTO source_registry VALUES(4,'K League Official Portal','official_web','primary','https://www.kleague.com','Official K League records and schedule/results portal.');
+INSERT INTO source_registry VALUES(5,'FBref Schedule/Results','public_web','secondary','https://fbref.com','Public schedule/results cross-check source for league fixtures and results.');
 CREATE TABLE matches (match_id TEXT PRIMARY KEY,competition_id INTEGER NOT NULL,season_id INTEGER,kickoff TEXT NOT NULL,home_team TEXT NOT NULL,away_team TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'scheduled',source_status TEXT NOT NULL DEFAULT 'pending',primary_source_id INTEGER);
 CREATE TABLE results (match_id TEXT PRIMARY KEY,ht_home INTEGER,ht_away INTEGER,ft_home INTEGER,ft_away INTEGER,result_1x2 TEXT,completed_at TEXT,source_status TEXT NOT NULL DEFAULT 'pending');
 CREATE TABLE sporttery_market (market_id INTEGER PRIMARY KEY AUTOINCREMENT,match_id TEXT NOT NULL,pool_code TEXT NOT NULL,handicap REAL,home_value REAL,draw_value REAL,away_value REAL,captured_at TEXT,source_status TEXT NOT NULL DEFAULT 'pending');
