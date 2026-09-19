@@ -8,7 +8,7 @@ DB = "football_model_database.sqlite"
 START, END = "2026-01-01", "2026-09-20"
 
 PUBLIC_LEAGUES = {
-    "KLEAGUE1": (6, "https://cornerflick.com/football/leagues/k-league-1/results/season.csv"),
+    "KLEAGUE1": (6, "https://footystats.org/south-korea/k-league-1/fixtures"),
     "J1": (7, "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1&tv_relay_station_name="),
 }
 
@@ -49,20 +49,26 @@ def ingest(conn, code, cid, url):
         t.columns = ["Season","Competition","Section","Date","Time","HomeTeam","Score","AwayTeam","Stadium","Attendance","TV"][:len(t.columns)]
         rows = t.rename(columns={"HomeTeam":"Home","AwayTeam":"Away"})
     elif code == "KLEAGUE1":
-        r = requests.get(url, timeout=30, headers={"User-Agent": "football-model-data-loader/1.0"})
+        r = requests.get(url, timeout=30, headers={"User-Agent": "Mozilla/5.0 football-model-data-loader/1.0"})
         r.raise_for_status()
-        rows = pd.read_csv(StringIO(r.text))
+        tables = pd.read_html(StringIO(r.text))
+        candidates = []
+        for t in tables:
+            cols = {str(c).strip().lower() for c in t.columns}
+            if any("home" in c for c in cols) and any("away" in c for c in cols):
+                candidates.append(t)
+        if not candidates:
+            raise RuntimeError("FootyStats K League fixtures table not found")
+        rows = candidates[0].copy()
         rename = {}
         for c in rows.columns:
-            lc = str(c).lower().replace("_"," ")
-            if "date" in lc or "kickoff" in lc: rename[c] = "Date"
-            elif "home" in lc and "team" in lc: rename[c] = "Home"
-            elif "away" in lc and "team" in lc: rename[c] = "Away"
-            elif lc in ("score","result","ft"): rename[c] = "Score"
+            lc = str(c).lower()
+            if "home" in lc: rename[c] = "Home"
+            elif "away" in lc: rename[c] = "Away"
+            elif "date" in lc: rename[c] = "Date"
+            elif "score" in lc or "result" in lc: rename[c] = "Score"
             elif "time" in lc: rename[c] = "Time"
         rows = rows.rename(columns=rename)
-        if "Score" not in rows.columns and "home_score" in rows.columns and "away_score" in rows.columns:
-            rows["Score"] = rows["home_score"].astype(str) + "-" + rows["away_score"].astype(str)
     else:
         raise RuntimeError("Unknown Asia league source")
     if not {"Date","Home","Score","Away"}.issubset(rows.columns):
