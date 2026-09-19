@@ -1,4 +1,5 @@
 import hashlib, sqlite3
+from pathlib import Path
 from io import StringIO
 from datetime import datetime
 import pandas as pd
@@ -37,17 +38,19 @@ def season_id(conn, cid):
 def ingest(conn, code, cid, url):
     sid = season_id(conn, cid)
     if code == "J1":
-        r = requests.get(url, timeout=30, headers={"User-Agent": "football-model-data-loader/1.0"})
-        r.raise_for_status()
-        tables = pd.read_html(StringIO(r.text))
-        if not tables:
-            raise RuntimeError("J.League Data Site returned no tables")
-        t = tables[0].copy()
-        if len(t.columns) < 8:
-            raise RuntimeError(f"Unexpected J.League table shape: {t.shape}")
-        t = t.iloc[:, :11].copy()
-        t.columns = ["Season","Competition","Section","Date","Time","HomeTeam","Score","AwayTeam","Stadium","Attendance","TV"][:len(t.columns)]
-        rows = t.rename(columns={"HomeTeam":"Home","AwayTeam":"Away"})
+        local = "data/auto_results/J1_League_2026_27.csv"
+        if Path(local).exists():
+            rows = pd.read_csv(local)
+        else:
+            r = requests.get(url, timeout=30, headers={"User-Agent": "football-model-data-loader/1.0"})
+            r.raise_for_status()
+            tables = pd.read_html(StringIO(r.text))
+            if not tables:
+                raise RuntimeError("J.League Data Site returned no tables")
+            t = tables[0].copy()
+            t = t.iloc[:, :11]
+            t.columns = ["Season","Competition","Section","Date","Time","HomeTeam","Score","AwayTeam","Stadium","Attendance","TV"][:len(t.columns)]
+            rows = t.rename(columns={"HomeTeam":"Home","AwayTeam":"Away"})
     elif code == "KLEAGUE1":
         r = requests.get(url, timeout=30, headers={"User-Agent": "Mozilla/5.0 football-model-data-loader/1.0"})
         r.raise_for_status()
