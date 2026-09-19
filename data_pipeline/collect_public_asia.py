@@ -8,8 +8,8 @@ DB = "football_model_database.sqlite"
 START, END = "2026-01-01", "2026-09-20"
 
 PUBLIC_LEAGUES = {
-    "KLEAGUE1": (6, "https://fbref.com/en/comps/55/schedule/K-League-1-Scores-and-Fixtures"),
-    "J1": (7, "https://fbref.com/en/comps/25/schedule/J1-League-Scores-and-Fixtures"),
+    "KLEAGUE1": (6, "https://cornerflick.com/football/leagues/k-league-1/results/season.csv"),
+    "J1": (7, "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1&tv_relay_station_name="),
 }
 
 def mid(code, date, home, away):
@@ -35,10 +35,35 @@ def season_id(conn, cid):
     return row[0]
 
 def ingest(conn, code, cid, url):
-    t = find_schedule_table(url)
     sid = season_id(conn, cid)
+    if code == "J1":
+        r = requests.get(url, timeout=30, headers={"User-Agent": "football-model-data-loader/1.0"})
+        r.raise_for_status()
+        tables = pd.read_html(StringIO(r.text))
+        t = tables[0].copy()
+        t = t.iloc[:, :11]
+        t.columns = ["Season","Competition","Section","Date","Time","HomeTeam","Score","AwayTeam","Stadium","Attendance","TV"][:len(t.columns)]
+        rows = t.rename(columns={"HomeTeam":"Home","AwayTeam":"Away"})
+    elif code == "KLEAGUE1":
+        r = requests.get(url, timeout=30, headers={"User-Agent": "football-model-data-loader/1.0"})
+        r.raise_for_status()
+        rows = pd.read_csv(StringIO(r.text))
+        rename = {}
+        for c in rows.columns:
+            lc = str(c).lower().replace("_"," ")
+            if "date" in lc or "kickoff" in lc: rename[c] = "Date"
+            elif "home" in lc and "team" in lc: rename[c] = "Home"
+            elif "away" in lc and "team" in lc: rename[c] = "Away"
+            elif lc in ("score","result","ft"): rename[c] = "Score"
+            elif "time" in lc: rename[c] = "Time"
+        rows = rows.rename(columns=rename)
+    else:
+        raise RuntimeError("Unknown Asia league source")
+    if not {"Date","Home","Score","Away"}.issubset(rows.columns):
+        raise RuntimeError(f"{code} source columns: {list(rows.columns)}")
     n = 0
-    for _, r in t.iterrows():
+    import re
+    for _, r in rows.iterrows():
         date = str(r.get("Date", "")).strip()
         home = str(r.get("Home", "")).strip()
         away = str(r.get("Away", "")).strip()
@@ -52,25 +77,19 @@ def ingest(conn, code, cid, url):
             continue
         if not (START <= d <= END):
             continue
-        if home in ("Home", "nan") or away in ("Away", "nan"):
-            continue
         match_id = mid(code, d, home, away)
-        completed = "-" in score and score not in ("-", "")
-        ft_h = ft_a = None
-        if completed:
-            try:
-                a, b = score.split("-", 1)
-                ft_h, ft_a = int(a.strip()), int(b.strip())
-            except Exception:
-                completed = False
+        m = re.search(r"(\d+)\s*[-–:]\s*(\d+)", score)
+        completed = bool(m)
+        ft_h = int(m.group(1)) if m else None
+        ft_a = int(m.group(2)) if m else None
+        kickoff = d + ("T" + time if time and time != "nan" else "")
         conn.execute(
             """INSERT OR IGNORE INTO matches
             (match_id, competition_id, season_id, kickoff, home_team, away_team,
              status, source_status, primary_source_id)
             VALUES (?,?,?,?,?,?,?,?,?)""",
-            (match_id, cid, sid, d + ("T" + time if time and time != "nan" else ""), home, away,
-             "finished" if completed else "scheduled",
-             "verified_external", 5)
+            (match_id, cid, sid, kickoff, home, away,
+             "finished" if completed else "scheduled", "verified_external", 5)
         )
         if completed:
             result = "H" if ft_h > ft_a else ("A" if ft_h < ft_a else "D")
