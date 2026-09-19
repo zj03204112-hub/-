@@ -122,9 +122,51 @@ def ingest(conn, code, cid, url):
     conn.commit()
     return n
 
+def ingest_j1_csv(conn):
+    path = Path("data/auto_results/J1_League_2026_27.csv")
+    if not path.exists():
+        return 0
+    rows = pd.read_csv(path)
+    sid = season_id(conn, 7)
+    n = 0
+    for _, r in rows.iterrows():
+        d = pd.to_datetime(r.get("Date"), errors="coerce")
+        if pd.isna(d):
+            continue
+        d = d.strftime("%Y-%m-%d")
+        if not (START <= d <= END):
+            continue
+        home = str(r.get("HomeTeam","")).strip()
+        away = str(r.get("AwayTeam","")).strip()
+        if not home or not away or home == "nan" or away == "nan":
+            continue
+        score = str(r.get("Score","")).strip()
+        import re
+        m = re.search(r"(\d+)\s*[-–:]\s*(\d+)", score)
+        if not m:
+            continue
+        mh, ma = int(m.group(1)), int(m.group(2))
+        midv = mid("J1", d, home, away)
+        tm = str(r.get("Time","")).strip()
+        kickoff = d + ("T"+tm if tm and tm != "nan" else "")
+        conn.execute("""INSERT OR IGNORE INTO matches
+            (match_id, competition_id, season_id, kickoff, home_team, away_team,
+             status, source_status, primary_source_id)
+            VALUES (?,?,?,?,?,?,?,?,?)""",
+            (midv,7,sid,kickoff,home,away,"finished","verified_external",4))
+        res = "H" if mh > ma else ("A" if mh < ma else "D")
+        conn.execute("""INSERT OR REPLACE INTO results
+            (match_id, ht_home, ht_away, ft_home, ft_away, result_1x2,
+             completed_at, source_status)
+            VALUES (?,?,?,?,?,?,?,?)""",
+            (midv,None,None,mh,ma,res,d,"verified_external"))
+        n += 1
+    conn.commit()
+    return n
+
 def main():
     conn = sqlite3.connect(DB)
-    for code, (cid, url) in PUBLIC_LEAGUES.items():
+    try:\n        print("J1 CSV", ingest_j1_csv(conn), "OK")\n    except Exception as e:\n        print("J1 CSV ERROR:", e)\n    for code, (cid, url) in PUBLIC_LEAGUES.items():
         try:
             print(code, ingest(conn, code, cid, url), "OK")
         except Exception as e:
