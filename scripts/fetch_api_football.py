@@ -8,8 +8,6 @@ API_KEY = os.getenv("API_FOOTBALL_KEY")
 OUT = Path("data/api_football")
 OUT.mkdir(parents=True, exist_ok=True)
 
-# API-Football free tier: 100 requests/day, 10 requests/min.
-# Keep the first integration deliberately small and cache results locally.
 LEAGUES = {
     39: "Premier League",
     140: "LaLiga",
@@ -62,20 +60,35 @@ def main():
         raise SystemExit("API_FOOTBALL_KEY is not configured")
 
     all_rows = []
+    successes = 0
+    failures = []
+
     for league_id, league_name in LEAGUES.items():
         try:
-            all_rows.extend(fetch_fixtures(league_id, league_name))
-            print(f"{league_name}: ok")
+            rows = fetch_fixtures(league_id, league_name)
+            all_rows.extend(rows)
+            successes += 1
+            print(f"{league_name}: ok ({len(rows)} fixtures)")
         except Exception as e:
+            failures.append(f"{league_name}: {e}")
             print(f"{league_name}: {e}")
 
-    if all_rows:
-        df = pd.DataFrame(all_rows)
-        df = df.sort_values(["date_utc", "league", "home_team"])
-        df.to_csv(OUT / "fixtures_2026.csv", index=False, encoding="utf-8-sig")
-        print(f"saved {len(df)} fixtures")
-    else:
+    if not all_rows:
         print("no data returned")
+        raise SystemExit(
+            "API-Football returned no fixtures. "
+            "Check season coverage/plan before treating this workflow as successful."
+        )
+
+    df = pd.DataFrame(all_rows)
+    df = df.sort_values(["date_utc", "league", "home_team"])
+    df.to_csv(OUT / "fixtures_2026.csv", index=False, encoding="utf-8-sig")
+    print(f"saved {len(df)} fixtures from {successes}/{len(LEAGUES)} leagues")
+
+    if failures:
+        print("Warnings:")
+        for failure in failures:
+            print(f" - {failure}")
 
 if __name__ == "__main__":
     main()
