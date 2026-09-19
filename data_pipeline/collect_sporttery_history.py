@@ -30,7 +30,10 @@ def rows_for_day(sess, d):
     while True:
         p={"matchPage":1,"matchBeginDate":d.isoformat(),"matchEndDate":d.isoformat(),
            "leagueId":"","pageSize":200,"pageNo":page,"isFix":0,"pcOrWap":1}
-        r=sess.get(URL,params=p,timeout=30); r.raise_for_status()
+        r=sess.get(URL,params=p,timeout=12)
+        if r.status_code in (403, 429, 567):
+            raise RuntimeError(f"Sporttery access blocked ({r.status_code})")
+        r.raise_for_status()
         payload=r.json(); value=payload.get("value") or {}
         batch=value.get("matchResult") or []
         out.extend(batch)
@@ -78,6 +81,9 @@ def main():
                     inserted+=1
         except Exception as e:
             print("WARN",d,e)
+            if "access blocked" in str(e).lower():
+                print("Sporttery endpoint blocked; stopping collector without bypassing WAF.")
+                break
         d+=timedelta(days=1)
         time.sleep(0.15)
     con.commit(); con.close()
