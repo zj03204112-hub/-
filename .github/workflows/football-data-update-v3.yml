@@ -1,0 +1,81 @@
+name: Football data update v3
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: football-data-update-main-v3
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pandas requests lxml
+
+      - name: Fetch current-season league results
+        env:
+          KLEAGUE_API_KEY: ${{ secrets.KLEAGUE_API_KEY }}
+        run: python scripts/fetch_current_season.py
+
+      - name: Commit and push data v3
+        run: |
+          set -e
+
+          git config user.name "football-model-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          # Synchronize with the latest remote main before creating our commit.
+          git fetch origin main
+          git reset --hard origin/main
+
+          # Fetch again after reset so generated files are based on this exact main.
+          python scripts/fetch_current_season.py
+
+          git add data/auto_results
+
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+
+          git commit -m "auto: update current season results"
+
+          # Push with a small retry loop in case another workflow updates main.
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Push succeeded on attempt $attempt."
+              exit 0
+            fi
+
+            echo "Push rejected on attempt $attempt; synchronizing and regenerating data."
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/fetch_current_season.py
+            git add data/auto_results
+
+            if git diff --cached --quiet; then
+              echo "Remote already contains the latest data."
+              exit 0
+            fi
+
+            git commit -m "auto: update current season results (retry $attempt)"
+          done
+
+          echo "Push failed after 3 attempts."
+          exit 1
