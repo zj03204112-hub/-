@@ -166,7 +166,11 @@ def ingest_j1_csv(conn):
 
 def main():
     conn = sqlite3.connect(DB)
-    try:\n        print("J1 CSV", ingest_j1_csv(conn), "OK")\n    except Exception as e:\n        print("J1 CSV ERROR:", e)\n    for code, (cid, url) in PUBLIC_LEAGUES.items():
+    try:
+        print("J1 CSV", ingest_j1_csv(conn), "OK")
+    except Exception as e:
+        print("J1 CSV ERROR:", e)
+    for code, (cid, url) in PUBLIC_LEAGUES.items():
         try:
             print(code, ingest(conn, code, cid, url), "OK")
         except Exception as e:
