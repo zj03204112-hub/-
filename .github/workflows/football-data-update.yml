@@ -17,7 +17,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pandas requests
-      - run: python scripts/fetch_current_season.py
+      - name: Fetch current-season league results
+        env:
+          KLEAGUE_API_KEY: ${{ secrets.KLEAGUE_API_KEY }}
+        run: python scripts/fetch_current_season.py
       - name: Commit updated data
         run: |
           git config user.name "football-model-bot"
