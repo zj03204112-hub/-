@@ -43,6 +43,7 @@ def ingest(conn, code, cid, url):
         home = str(r.get("Home", "")).strip()
         away = str(r.get("Away", "")).strip()
         score = str(r.get("Score", "")).strip()
+        time = str(r.get("Time", "")).strip()
         if not date or date == "nan" or not home or not away:
             continue
         try:
@@ -67,7 +68,7 @@ def ingest(conn, code, cid, url):
             (match_id, competition_id, season_id, kickoff, home_team, away_team,
              status, source_status, primary_source_id)
             VALUES (?,?,?,?,?,?,?,?,?)""",
-            (match_id, cid, sid, d, home, away,
+            (match_id, cid, sid, d + ("T" + time if time and time != "nan" else ""), home, away,
              "finished" if completed else "scheduled",
              "verified_external", 5)
         )
