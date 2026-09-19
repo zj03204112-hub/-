@@ -9,7 +9,7 @@ DB = "football_model_database.sqlite"
 START, END = "2026-01-01", "2026-09-20"
 
 PUBLIC_LEAGUES = {
-    "KLEAGUE1": (6, "https://footystats.org/south-korea/k-league-1/fixtures"),
+    "KLEAGUE1": (6, "https://www.matchesio.com/competition/k-league/"),
     "J1": (7, "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1&tv_relay_station_name="),
 }
 
@@ -41,6 +41,9 @@ def ingest(conn, code, cid, url):
         local = "data/auto_results/J1_League_2026_27.csv"
         if Path(local).exists():
             rows = pd.read_csv(local)
+            rows["Home"] = rows["HomeTeam"]
+            rows["Away"] = rows["AwayTeam"]
+            rows["Score"] = rows["FTHG"].astype(str) + "-" + rows["FTAG"].astype(str)
         else:
             r = requests.get(url, timeout=30, headers={"User-Agent": "football-model-data-loader/1.0"})
             r.raise_for_status()
