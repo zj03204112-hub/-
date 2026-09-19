@@ -65,9 +65,18 @@ def fetch_kleague():
         print("K League: skipped (KLEAGUE_API_KEY secret not configured)")
         return 0
 
-    url = "https://api.kleague.com/api/meetSchedule.do"
+    # K League's official audience endpoint includes the match master data
+    # plus final home/away goals and supports a date range.
+    from datetime import date
+
+    url = "https://api.kleague.com/api/audienceInfo01.do"
     headers = {"authKey": api_key}
-    params = {"meet_year": "2026", "meet_seq": 1}
+    params = {
+        "league_gubun": "1",
+        "meet_year": "2026",
+        "sdate": "2026/01/01",
+        "edate": date.today().strftime("%Y/%m/%d"),
+    }
     r = requests.get(url, headers=headers, params=params, timeout=30)
     r.raise_for_status()
     payload = r.json()
@@ -77,24 +86,20 @@ def fetch_kleague():
         raise RuntimeError(f"K League API returned no rows: {payload}")
 
     df = pd.json_normalize(rows)
+    df = df[df["LEAGUE_NAME"].astype(str).eq("K리그1")].copy()
 
-    # The API field names may change; preserve the raw response while exposing
-    # a stable CSV when the expected schedule fields are present.
     rename = {
         "GAME_DATE": "Date",
-        "GAME_TIME": "Time",
         "HOME_TEAM_NAME": "HomeTeam",
         "AWAY_TEAM_NAME": "AwayTeam",
-        "HOME_SCORE": "FTHG",
-        "AWAY_SCORE": "FTAG",
-        "HOME_HALF_SCORE": "HTHG",
-        "AWAY_HALF_SCORE": "HTAG",
+        "HOME_GAIN_GOAL": "FTHG",
+        "AWAY_GAIN_GOAL": "FTAG",
     }
     df = df.rename(columns=rename)
 
-    # Only completed matches belong in the result database.
-    if "FTHG" in df.columns and "FTAG" in df.columns:
-        df = df[df["FTHG"].notna() & df["FTAG"].notna()].copy()
+    # The audience endpoint is already restricted to completed records in
+    # practice, but keep an explicit score check for database safety.
+    df = df[df["FTHG"].notna() & df["FTAG"].notna()].copy()
 
     return save_normalized(df, "K League 1", url)
 
