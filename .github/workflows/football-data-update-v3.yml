@@ -5,6 +5,7 @@ on:
     paths-ignore:
       - "data/**"
       - "football_model_database.sqlite"
+      - "data/auto_results/**"
   workflow_dispatch:
   schedule:
     - cron: "17 2 * * *"
