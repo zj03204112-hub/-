@@ -1,0 +1,8 @@
+league,season,scope,source_type,source_url,automation_status,notes
+Premier League,2026/27,league_only,Football-Data,https://www.football-data.co.uk/mmz4281/2627/E0.csv,enabled,current-season CSV
+LaLiga,2026/27,league_only,Football-Data,https://www.football-data.co.uk/mmz4281/2627/SP1.csv,enabled,current-season CSV
+Bundesliga,2026/27,league_only,Football-Data,https://www.football-data.co.uk/mmz4281/2627/D1.csv,enabled,current-season CSV
+Serie A,2026/27,league_only,Football-Data,https://www.football-data.co.uk/mmz4281/2627/I1.csv,enabled,current-season CSV
+Ligue 1,2026/27,league_only,Football-Data,https://www.football-data.co.uk/mmz4281/2627/F1.csv,enabled,current-season CSV
+J1 League,2026/27,league_only,J.League Data Site,https://data.j-league.or.jp/SFMS01/,enabled_via_Japan_feed,official J.League site used for cross-check; automated feed uses Football-Data Japan
+K League 1,2026,league_only,K League official API,https://api.kleague.com/api/meetSchedule.do,enabled_if_secret_configured,requires GitHub secret KLEAGUE_API_KEY
