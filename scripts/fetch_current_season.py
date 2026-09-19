@@ -87,6 +87,32 @@ def fetch_japan():
     return len(out)
 
 def fetch_kleague():
+    try:
+        url = "https://www.matchesio.com/competition/k-league/"
+        tables = pd.read_html(url)
+        for t in tables:
+            cols = {str(c).lower() for c in t.columns}
+            if not (any("home" in c for c in cols) and any("away" in c for c in cols)):
+                continue
+            rename = {}
+            for c in t.columns:
+                lc = str(c).lower()
+                if "home" in lc: rename[c] = "HomeTeam"
+                elif "away" in lc: rename[c] = "AwayTeam"
+                elif "date" in lc: rename[c] = "Date"
+                elif "score" in lc or "result" in lc: rename[c] = "Score"
+                elif "time" in lc: rename[c] = "Time"
+            t = t.rename(columns=rename)
+            if {"Date","HomeTeam","AwayTeam","Score"}.issubset(t.columns):
+                m = t["Score"].astype(str).str.extract(r"(\d+)\s*[-–:]\s*(\d+)")
+                t["FTHG"] = pd.to_numeric(m[0], errors="coerce")
+                t["FTAG"] = pd.to_numeric(m[1], errors="coerce")
+                t = t[t["FTHG"].notna() & t["FTAG"].notna()].copy()
+                if len(t):
+                    return save_normalized(t, "K League 1", url)
+    except Exception as e:
+        print(f"Public K League fallback failed: {e}")
+
     api_key = os.getenv("KLEAGUE_API_KEY")
     if not api_key:
         print("K League 1: skipped (KLEAGUE_API_KEY not configured)")
@@ -94,35 +120,21 @@ def fetch_kleague():
 
     url = "https://api.kleague.com/api/audienceInfo01.do"
     headers = {"authKey": api_key}
-    params = {
-        "league_gubun": "1",
-        "meet_year": "2026",
-        "sdate": "2026/01/01",
-        "edate": date.today().strftime("%Y/%m/%d"),
-    }
-
+    params = {"league_gubun": "1", "meet_year": "2026",
+              "sdate": "2026/01/01", "edate": date.today().strftime("%Y/%m/%d")}
     r = requests.get(url, headers=headers, params=params, timeout=30)
     r.raise_for_status()
     payload = r.json()
-
     rows = payload.get("response", {}).get("list", [])
     if not rows:
         raise RuntimeError(f"K League API returned no rows: {payload}")
-
     df = pd.json_normalize(rows)
     if "LEAGUE_NAME" not in df.columns:
         raise RuntimeError("K League response has no LEAGUE_NAME field")
-
     df = df[df["LEAGUE_NAME"].astype(str).eq("K리그1")].copy()
-
-    df = df.rename(columns={
-        "GAME_DATE": "Date",
-        "HOME_TEAM_NAME": "HomeTeam",
-        "AWAY_TEAM_NAME": "AwayTeam",
-        "HOME_GAIN_GOAL": "FTHG",
-        "AWAY_GAIN_GOAL": "FTAG",
-    })
-
+    df = df.rename(columns={"GAME_DATE":"Date","HOME_TEAM_NAME":"HomeTeam",
+                            "AWAY_TEAM_NAME":"AwayTeam","HOME_GAIN_GOAL":"FTHG",
+                            "AWAY_GAIN_GOAL":"FTAG"})
     return save_normalized(df, "K League 1", url)
 
 def main():
