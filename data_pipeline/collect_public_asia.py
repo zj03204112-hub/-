@@ -40,8 +40,12 @@ def ingest(conn, code, cid, url):
         r = requests.get(url, timeout=30, headers={"User-Agent": "football-model-data-loader/1.0"})
         r.raise_for_status()
         tables = pd.read_html(StringIO(r.text))
+        if not tables:
+            raise RuntimeError("J.League Data Site returned no tables")
         t = tables[0].copy()
-        t = t.iloc[:, :11]
+        if len(t.columns) < 8:
+            raise RuntimeError(f"Unexpected J.League table shape: {t.shape}")
+        t = t.iloc[:, :11].copy()
         t.columns = ["Season","Competition","Section","Date","Time","HomeTeam","Score","AwayTeam","Stadium","Attendance","TV"][:len(t.columns)]
         rows = t.rename(columns={"HomeTeam":"Home","AwayTeam":"Away"})
     elif code == "KLEAGUE1":
@@ -57,6 +61,8 @@ def ingest(conn, code, cid, url):
             elif lc in ("score","result","ft"): rename[c] = "Score"
             elif "time" in lc: rename[c] = "Time"
         rows = rows.rename(columns=rename)
+        if "Score" not in rows.columns and "home_score" in rows.columns and "away_score" in rows.columns:
+            rows["Score"] = rows["home_score"].astype(str) + "-" + rows["away_score"].astype(str)
     else:
         raise RuntimeError("Unknown Asia league source")
     if not {"Date","Home","Score","Away"}.issubset(rows.columns):
