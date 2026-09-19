@@ -17,7 +17,8 @@ def team_history(conn, team, before):
     out=[]
     for k,h,a,fh,fa in rows:
         gf,ga=(fh,fa) if h==team else (fa,fh)
-        out.append({"date":k[:10],"gf":gf,"ga":ga,"pts":points(gf,ga)})
+        opp = a if h==team else h
+        out.append({"date":k[:10],"kickoff":k,"gf":gf,"ga":ga,"pts":points(gf,ga),"opp":opp})
     return out
 
 def strength(conn, team, before):
@@ -52,14 +53,7 @@ def main():
                 return json.dumps(x,separators=(",",":"))
             gf=sum(x["gf"] for x in hist[:10])/max(1,min(10,len(hist)))
             ga=sum(x["ga"] for x in hist[:10])/max(1,min(10,len(hist)))
-            opps=[]
-            for x in hist[:10]:
-                # Recover opponent from the match table for strength adjustment.
-                row=con.execute("""SELECT home_team,away_team FROM matches
-                                   WHERE kickoff=? AND (home_team=? OR away_team=?)
-                                   LIMIT 1""",(x["date"]+"T",team,team)).fetchone()
-                if row:
-                    opps.append(row[1] if row[0]==team else row[0])
+            opps=[x["opp"] for x in hist[:10]]
             opp_strength=sum(strength(con,o,kickoff) for o in opps)/len(opps) if opps else 0.0
             con.execute("""
                 INSERT OR REPLACE INTO team_features
