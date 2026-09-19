@@ -31,7 +31,7 @@ scripts/fetch_current_season.py 当前设计为：
 - J1 League：Football-Data Japan 当前结果文件，并在有分区字段时仅保留 J1；
 - K League 1：K League 官方 API。自动抓取需要在 GitHub Repository Secrets 中配置 KLEAGUE_API_KEY。
 
-K League 官方 API 的赛季赛程接口是 meetSchedule.do，2026 年 K League 1 使用 meet_year=2026、meet_seq=1。官方 API 文档要求 API key，因此未配置 secret 时脚本会跳过 K League，不会阻断其它联赛更新。
+K League 官方结果接口使用 audienceInfo01.do，可按日期区间返回 K League 1 的比赛主数据与最终比分；脚本按 2026/01/01 至运行日抓取，并过滤 K League 1。官方 API 文档要求 API key，因此未配置 secret 时脚本会跳过 K League，不会阻断其它联赛更新。
 
 J1 的结果也用 J.League Data Site 做交叉核验；该官方站点提供 2026/27 J1 的赛程与结果。
 
