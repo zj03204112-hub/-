@@ -59,7 +59,7 @@ def ingest_file(conn, league, code, competition_id, season_label, season_code):
             (match_id, competition_id, season_id, kickoff, home_team, away_team,
              status, source_status, primary_source_id)
             VALUES (?,?,?,?,?,?,?,?,?)""",
-            (mid, competition_id, sid, iso_date, home, away,
+            (mid, competition_id, sid, iso_date + ("T" + (r.get("Time") or "").strip() if (r.get("Time") or "").strip() else ""), home, away,
              "finished" if completed else "scheduled", "verified_external", 2)
         )
         if completed:
