@@ -10,7 +10,6 @@ START, END = "2026-01-01", "2026-09-20"
 
 PUBLIC_LEAGUES = {
     "KLEAGUE1": (6, "https://footystats.org/kr/south-korea/k-league-1/fixtures"),
-    "J1": (7, "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1&tv_relay_station_name="),
 }
 
 def mid(code, date, home, away):
