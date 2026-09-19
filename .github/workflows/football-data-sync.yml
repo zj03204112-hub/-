@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: python -m pip install --upgrade pip requests
-
+      - name: Initialize database\n        run: |\n          if [ ! -f football_model_database.sqlite ]; then\n            sqlite3 football_model_database.sqlite < database/football_model_database.sql\n          fi\n
       - name: Run historical data collector
         run: python data_pipeline/build_football_db.py
 
