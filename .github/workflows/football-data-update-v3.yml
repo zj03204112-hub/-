@@ -61,10 +61,22 @@ jobs:
           set -e
           git config user.name "football-model-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add football_model_database.sqlite data/validation_report.json
-          if git diff --cached --quiet; then
-            echo "No generated database changes."
-            exit 0
-          fi
-          git commit -m "auto: update football model database"
-          git push origin HEAD:main
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python data_pipeline/build_football_db.py
+            python data_pipeline/collect_public_asia.py
+            python scripts/validate_database.py
+            git add football_model_database.sqlite data/validation_report.json
+            if git diff --cached --quiet; then
+              echo "No generated database changes."
+              exit 0
+            fi
+            git commit -m "auto: update football model database (attempt $attempt)"
+            if git push origin HEAD:main; then
+              echo "Push succeeded."
+              exit 0
+            fi
+            echo "Push rejected; retrying from latest main."
+          done
+          exit 1
