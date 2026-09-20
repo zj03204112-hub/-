@@ -78,6 +78,8 @@ def ingest_file(conn, league, code, competition_id, season_label, season_code):
                 avh = r.get("BbAvAHH")
                 ava = r.get("BbAvAHA")
                 if ah not in (None, "") and avh not in (None, "") and ava not in (None, ""):
+                    conn.execute("DELETE FROM sporttery_market WHERE match_id=? AND pool_code='asian_handicap_avg'",
+                                  (mid,))
                     conn.execute(
                         """INSERT INTO sporttery_market
                         (match_id,pool_code,handicap,home_value,draw_value,away_value,captured_at,source_status)
