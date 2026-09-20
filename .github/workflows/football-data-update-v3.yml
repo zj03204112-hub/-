@@ -67,7 +67,7 @@ jobs:
       - name: Build T-12h baseline predictions
         run: python data_pipeline/build_baseline_predictions.py
 
-      - name: Compare V1 V2 V3 models
+      - name: Compare V1 V2 V3 V4 + calibration + blend
         run: python data_pipeline/compare_models.py
 
       - name: Backtest integer Asian handicap
