@@ -94,6 +94,16 @@ def main():
         ).fetchone()
         if sched:
             lam_a*=max(0.94,1.0+float(sched[1] or 0.0))
+        # Optional T-12h lineup/injury layer. Zero impact when no sourced player data exists.
+        for side in ("home","away"):
+            lp=con.execute("SELECT attack_delta,defense_delta FROM lineup_projection WHERE match_id=? AND team_side=?",(mid,side)).fetchone()
+            if lp:
+                ad=max(-0.25,min(0.25,float(lp[0] or 0.0)))
+                dd=max(-0.25,min(0.25,float(lp[1] or 0.0)))
+                if side=="home":
+                    lam_h*=math.exp(ad); lam_a*=math.exp(dd)
+                else:
+                    lam_a*=math.exp(ad); lam_h*=math.exp(dd)
         matrix=dc_matrix(lam_h,lam_a)
         ph=sum(matrix[i][j] for i in range(MAX_GOALS) for j in range(MAX_GOALS) if i>j)
         pd=sum(matrix[i][j] for i in range(7) for j in range(7) if i==j)
