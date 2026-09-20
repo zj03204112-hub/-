@@ -84,6 +84,8 @@ S.headers.update({
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/140 Safari/537.36",
     "Accept": "application/json,text/plain,*/*",
     "Referer": "https://www.sofascore.com/",
+    "Origin": "https://www.sofascore.com",
+    "x-requested-with": "XMLHttpRequest",
 })
 
 def get(path, tries=4):
@@ -175,9 +177,25 @@ def player_stats(lineup, side):
     return out
 
 def scheduled_events(d):
-    # The season-event routes previously returned zero provider events in CI.
-    # Use the documented daily football schedule instead, then persist event IDs.
-    return get(f"/sport/football/scheduled-events/{d}") or {}
+    # Try both public hosts and prefer the response with the most events.
+    # Some CI/WAF paths return HTTP 200 with an empty events list.
+    best, best_n = {}, -1
+    for base in BASES:
+        for i in range(3):
+            try:
+                r = S.get(base + f"/sport/football/scheduled-events/{d}", timeout=25)
+                if r.status_code != 200:
+                    time.sleep(min(6.0, 1.0 * (i + 1)))
+                    continue
+                payload = r.json() or {}
+                n = len(payload.get("events") or [])
+                if n > best_n:
+                    best, best_n = payload, n
+                if n > 0:
+                    break
+            except Exception:
+                time.sleep(1.0 * (i + 1))
+    return best
 
 def main():
     con = sqlite3.connect(DB)
@@ -201,6 +219,8 @@ def main():
     skipped = 0
     lineup_failures = 0
     failed_dates = []
+    api_event_counts = []
+    empty_provider_dates = 0
 
     # Do not delete the existing enrichment until a replacement batch has
     # actually produced rows. This prevents a transient WAF outage from
@@ -211,6 +231,9 @@ def main():
             failed_dates.append(d)
             continue
         events = payload.get("events", [])
+        api_event_counts.append(len(events))
+        if not events:
+            empty_provider_dates += 1
         for e in events:
             tid = is_target_event(e)
             if tid is None:
@@ -282,6 +305,9 @@ def main():
         "lineup_failures": lineup_failures,
         "failed_dates": len(failed_dates),
         "scheduled_dates": len(dates),
+        "provider_event_dates_with_zero_events": empty_provider_dates,
+        "provider_event_count_total": sum(api_event_counts),
+        "provider_event_count_max": max(api_event_counts) if api_event_counts else 0,
     }
     if rows > 0:
         con.commit()
