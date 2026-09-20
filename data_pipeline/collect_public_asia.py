@@ -128,11 +128,19 @@ def ingest_j1_csv(conn):
     rows = pd.read_csv(path)
     sid = season_id(conn, 7)
     n = 0
+    import re
     for _, r in rows.iterrows():
-        d = pd.to_datetime(r.get("Date"), errors="coerce")
-        if pd.isna(d):
-            continue
-        d = d.strftime("%Y-%m-%d")
+        raw_date = str(r.get("Date", "")).strip()
+        # J.League official CSV uses dates such as 26/08/07(金).
+        mdate = re.search(r"(\d{2})/(\d{2})/(\d{2})", raw_date)
+        if mdate:
+            yy, mm, dd = map(int, mdate.groups())
+            d = f"{2000 + yy:04d}-{mm:02d}-{dd:02d}"
+        else:
+            parsed = pd.to_datetime(raw_date, errors="coerce")
+            if pd.isna(parsed):
+                continue
+            d = parsed.strftime("%Y-%m-%d")
         if not (START <= d <= END):
             continue
         home = str(r.get("HomeTeam","")).strip()
