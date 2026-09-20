@@ -67,6 +67,9 @@ jobs:
       - name: Build T-12h baseline predictions
         run: python data_pipeline/build_baseline_predictions.py
 
+      - name: Backtest integer Asian handicap
+        run: python data_pipeline/backtest_handicap.py
+
       - name: Validate database
         run: python scripts/validate_database.py
 
@@ -75,7 +78,7 @@ jobs:
           set -e
           git config user.name "football-model-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add football_model_database.sqlite data/validation_report.json data/baseline_backtest.json
+          git add football_model_database.sqlite data/validation_report.json data/baseline_backtest.json data/handicap_backtest.json
           if git diff --cached --quiet; then
             echo "No generated database changes."
             exit 0
