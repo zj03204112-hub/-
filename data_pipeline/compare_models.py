@@ -77,7 +77,7 @@ def real_strength_metrics(con,team,cutoff):
     stability=1.0/(1.0+sum(abs(gd[i]-gd[i+1]) for i in range(len(gd)-1))/max(1,len(gd)-1))
     score=0.55*(mean_pts/3.0)+0.30*((mean_gd+3.0)/6.0)+0.15*stability
     return {"score":round(max(0.0,min(1.0,score)),4),"adj_points":round(mean_pts,4),"gd":round(mean_gd,4),"stability":round(stability,4)}
-def model_lambdas(con,model,match):
+def model_lambdas(con,model,match,use_lineup=True):
     mid,kickoff,home,away,fh,fa=match
     ko=datetime.fromisoformat(kickoff[:19])
     cutoff=(ko-timedelta(hours=12)).isoformat(timespec="seconds")
@@ -104,6 +104,8 @@ def model_lambdas(con,model,match):
     lh=max(.15,min(4.0,.65+.58*hgf+.30*aga))
     la=max(.12,min(3.5,.58+.58*agf+.30*hga))
     # T-12h lineup/injury deltas are sourced inputs; if absent they are exactly neutral.
+    if not use_lineup:
+        return lh,la
     for side in ("home","away"):
         lp=con.execute("SELECT attack_delta,defense_delta FROM lineup_projection WHERE match_id=? AND team_side=?",(mid,side)).fetchone()
         if lp:
@@ -138,25 +140,22 @@ def calibration_bins(items):
 def blend(p3,p4,w):
     return {k:(1-w)*p3[k]+w*p4[k] for k in ("H","D","A")}
 
-def lineup_ablation(con, items):
-    """Report performance with/without sourced T-12h lineup deltas.
-    This is an ablation report only; it does not promote the feature automatically.
-    """
-    out=[]
-    for use_lineup in (False, True):
-        hits=[]
-        for m in items:
-            mid=m["match_id"]
-            base=m["base"]
-            # The production lambda function already reads lineup_projection.
-            # For the no-lineup arm, temporarily neutralize the two rows in memory by ignoring them.
-            lh,la=model_lambdas(con,m,"v3")
-            if not use_lineup:
-                # Recompute V3 core rates without lineup adjustment by temporarily using a neutral branch.
-                pass
-            hits.append(1 if m.get("actual") == m.get("pred") else 0)
-        out.append({"lineup_enabled":use_lineup,"n":len(hits),"note":"full ablation wired after historical player source is populated"})
-    return out
+def lineup_ablation(con, matches, model="v3"):
+    """Compare identical T-12h predictions with sourced lineup deltas enabled/disabled."""
+    arms={}
+    for enabled in (False, True):
+        d={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
+        for match in matches:
+            lh,la=model_lambdas(con,model,match,use_lineup=enabled)
+            fh,fa=match[4],match[5]
+            m=matrix(lh,la,model!="v1")
+            p={"H":sum(m[i][j] for i in range(N) for j in range(N) if i>j),
+               "D":sum(m[i][j] for i in range(N) for j in range(N) if i==j),
+               "A":sum(m[i][j] for i in range(N) for j in range(N) if i<j)}
+            actual="H" if fh>fa else "D" if fh==fa else "A"
+            metrics_add(d,p,actual)
+        arms["with_lineup" if enabled else "without_lineup"]=finish(d)
+    return arms
 
 def main():
     con=sqlite3.connect(DB)
@@ -230,6 +229,9 @@ def main():
         d["v3_accuracy"]=round(d["v3_correct"]/d["n"],4)
         d["v4_accuracy"]=round(d["v4_correct"]/d["n"],4)
     result["chronological_holdout"]["real_strength_gap_strata"]=strata
+
+    result["lineup_ablation_v3"]=lineup_ablation(con,matches,"v3")
+    result["lineup_ablation_v4"]=lineup_ablation(con,matches,"v4")
 
     payload={"definition":"Leakage-safe T-12h comparison. V1 Poisson; V2 Dixon-Coles; V3 adds opponent strength and schedule intent; V4 adds recency-weighted dynamic attack/defence states with opponent-quality adjustment. V4 is experimental. Calibration and V3/V4 blend are selected/evaluated chronologically rather than on the same test slice.","models":result}
     with open(OUT,"w",encoding="utf-8") as f: json.dump(payload,f,ensure_ascii=False,indent=2)
