@@ -57,6 +57,7 @@ jobs:
       - name: Collect real player match data
         run: python data_pipeline/collect_player_data.py
         timeout-minutes: 30
+        continue-on-error: true
       - name: Collect SofaScore Asian handicap markets
         run: python data_pipeline/collect_sofascore_handicap.py
         timeout-minutes: 20
