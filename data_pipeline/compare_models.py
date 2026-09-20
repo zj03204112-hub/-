@@ -155,12 +155,16 @@ def main():
     for match in matches:
         p3,a=run_model(con,"v3",match)
         p4,_=run_model(con,"v4",match)
-        pair.append((p3,p4,a))
+        ko=datetime.fromisoformat(match[1][:19])
+        cutoff=(ko-timedelta(hours=12)).isoformat(timespec="seconds")
+        rs_h=real_strength_metrics(con,match[2],cutoff)
+        rs_a=real_strength_metrics(con,match[3],cutoff)
+        pair.append((p3,p4,a,rs_h,rs_a))
     best_w=0.0; best_brier=float("inf")
     for step in range(21):
         w=step/20
         b=0.0
-        for p3,p4,a in pair[:split]:
+        for p3,p4,a,rs_h,rs_a in pair[:split]:
             p=blend(p3,p4,w); y={k:0 for k in p}; y[a]=1
             b+=sum((p[k]-y[k])**2 for k in p)
         b/=split
@@ -175,7 +179,7 @@ def main():
     ]:
         d={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
         items=[]
-        for p3,p4,a in pair[split:]:
+        for p3,p4,a,rs_h,rs_a in pair[split:]:
             p=fn(p3,p4); metrics_add(d,p,a); items.append((p,a))
         hold[label]=finish(d); hold[label]["calibration"]=calibration_bins(items)
 
@@ -186,6 +190,19 @@ def main():
         "weight_grid_step":0.05,
         "models":hold
     }
+
+    strata={}
+    for p3,p4,a,rs_h,rs_a in pair[split:]:
+        gap=abs(rs_h["score"]-rs_a["score"])
+        key="close" if gap<0.10 else "medium" if gap<0.20 else "large"
+        d=strata.setdefault(key,{"n":0,"v3_correct":0,"v4_correct":0})
+        d["n"]+=1
+        d["v3_correct"]+=int(max(p3,key=p3.get)==a)
+        d["v4_correct"]+=int(max(p4,key=p4.get)==a)
+    for d in strata.values():
+        d["v3_accuracy"]=round(d["v3_correct"]/d["n"],4)
+        d["v4_accuracy"]=round(d["v4_correct"]/d["n"],4)
+    result["chronological_holdout"]["real_strength_gap_strata"]=strata
 
     payload={"definition":"Leakage-safe T-12h comparison. V1 Poisson; V2 Dixon-Coles; V3 adds opponent strength and schedule intent; V4 adds recency-weighted dynamic attack/defence states with opponent-quality adjustment. V4 is experimental. Calibration and V3/V4 blend are selected/evaluated chronologically rather than on the same test slice.","models":result}
     with open(OUT,"w",encoding="utf-8") as f: json.dump(payload,f,ensure_ascii=False,indent=2)
