@@ -33,9 +33,26 @@ LEAGUE_SLUGS = {
 ALIASES = {
     "psg": "parissaintgermain",
     "parissg": "parissaintgermain",
+    "parissaintgermain": "parissaintgermain",
     "bayernmunich": "bayernmunchen",
+    "bayernmunchen": "bayernmunchen",
     "intermilan": "inter",
+    "internazionale": "inter",
     "sportinglisbon": "sportingcp",
+    "sportingcp": "sportingcp",
+    "manutd": "manchesterunited",
+    "manchesterutd": "manchesterunited",
+    "manchesterunitedfc": "manchesterunited",
+    "mancity": "mancity",
+    "manchestercity": "mancity",
+    "tottenhamhotspur": "tottenham",
+    "tottenham": "tottenham",
+    "athleticbilbao": "athleticclub",
+    "athleticclub": "athleticclub",
+    "borussiadortmund": "dortmund",
+    "dortmund": "dortmund",
+    "borussiamonchengladbach": "monchengladbach",
+    "monchengladbach": "monchengladbach",
 }
 
 def norm(s):
@@ -44,6 +61,9 @@ def norm(s):
 
 def team_key(s):
     n = norm(s)
+    for suffix in ("footballclub", "fc", "cf", "calcio", "1899"):
+        if n.endswith(suffix) and len(n) > len(suffix) + 4:
+            n = n[:-len(suffix)]
     return ALIASES.get(n, n)
 
 def similarity(a, b):
@@ -54,23 +74,32 @@ def similarity(a, b):
         return 1.0
     return SequenceMatcher(None, a, b).ratio()
 
-def find_match(matches, home, away, d):
+def find_match(matches, home, away, d, event_ts=None):
     target = datetime.fromisoformat(d).date()
     candidates = []
+    event_dt = datetime.fromtimestamp(event_ts, tz=timezone.utc) if event_ts else None
     for (h, a, md), mid in matches.items():
-        delta = abs((datetime.fromisoformat(md).date() - target).days)
-        if delta > 1:
+        delta_days = abs((datetime.fromisoformat(md).date() - target).days)
+        if delta_days > 1:
             continue
         sh, sa = similarity(home, h), similarity(away, a)
-        if sh >= 0.72 and sa >= 0.72:
-            score = 0.47 * sh + 0.47 * sa + 0.06 * (1 - delta)
-            candidates.append((score, mid))
+        if sh < 0.60 or sa < 0.60:
+            continue
+        score = 0.45 * sh + 0.45 * sa + 0.10 * (1.0 if delta_days == 0 else 0.0)
+        if event_dt is not None:
+            db_ts = datetime.fromisoformat(md + "T12:00:00").replace(tzinfo=timezone.utc)
+            hours = abs((event_dt - db_ts).total_seconds()) / 3600.0
+            score += 0.08 * max(0.0, 1.0 - min(hours, 36.0) / 36.0)
+        candidates.append((score, sh, sa, delta_days, mid))
     if not candidates:
         return None
     candidates.sort(reverse=True)
-    if len(candidates) > 1 and candidates[0][0] - candidates[1][0] < 0.025:
+    best = candidates[0]
+    if best[1] < 0.60 or best[2] < 0.60:
         return None
-    return candidates[0][1]
+    if len(candidates) > 1 and best[0] - candidates[1][0] < 0.02:
+        return None
+    return best[-1]
 
 def client():
     try:
@@ -208,7 +237,7 @@ def main():
     ):
         mid, kickoff, home, away = r
         md = kickoff[:10]
-        matches[(norm(home), norm(away), md)] = mid
+        matches[(team_key(home), team_key(away), md)] = mid
         dates.add(md)
 
     mapped_ids = set()
@@ -245,11 +274,28 @@ def main():
             seen_events += 1
             home = (e.get("homeTeam") or {}).get("name", "")
             away = (e.get("awayTeam") or {}).get("name", "")
-            mid = matches.get((norm(home), norm(away), ed)) or find_match(matches, home, away, ed)
+            event_id = str(e.get("id"))
+            mapped_row = con.execute(
+                "SELECT match_id FROM provider_event_map WHERE provider=? AND event_id=?",
+                ("sofascore", event_id),
+            ).fetchone()
+            mid = mapped_row[0] if mapped_row else None
+            if not mid:
+                mid = matches.get((team_key(home), team_key(away), ed))
+            if not mid:
+                mid = find_match(matches, home, away, ed, e.get("startTimestamp"))
             if not mid:
                 skipped += 1
+                if skipped <= 25:
+                    print(json.dumps({
+                        "unmatched_event": event_id,
+                        "date": ed,
+                        "home": home,
+                        "away": away,
+                        "home_key": team_key(home),
+                        "away_key": team_key(away),
+                    }, ensure_ascii=False), flush=True)
                 continue
-            event_id = str(e.get("id"))
             mapped_ids.add(mid)
             con.execute(
                 "INSERT OR REPLACE INTO provider_event_map "
