@@ -69,7 +69,7 @@ def main():
       WHERE sm.handicap IS NOT NULL
         AND sm.pool_code IN ('asian_handicap_avg','hhad')
         AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL
-        AND ps.notes LIKE '%"model":"baseline_poisson_t12_v1"%'
+        AND ps.notes LIKE '%"model":"dc_poisson_t12_v2"%'
     """).fetchall()
 
     by_source_line=defaultdict(lambda: {"n":0,"correct":0,"brier":0.0,"logloss":0.0})
