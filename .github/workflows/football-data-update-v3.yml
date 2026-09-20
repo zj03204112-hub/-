@@ -56,11 +56,10 @@ jobs:
         continue-on-error: true
       - name: Collect SofaScore Asian handicap markets
         run: python data_pipeline/collect_sofascore_handicap.py
+        timeout-minutes: 20
         continue-on-error: true
       - name: Collect real player match data
         run: python data_pipeline/collect_player_data.py
-        # Hard quality gate: zero provider events / mapped matches / player rows
-        # must fail the pipeline rather than silently producing a green run.
       - name: Build leakage-safe model features
         run: python data_pipeline/build_features.py
       - name: Build T-12h lineup impact projection
