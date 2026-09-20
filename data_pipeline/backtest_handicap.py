@@ -7,11 +7,20 @@ OUT="data/handicap_backtest.json"
 def pois(lam,k):
     return math.exp(-lam)*lam**k/math.factorial(k)
 
+RHO=-0.05
+
+def tau(x,y,lh,la):
+    if x==0 and y==0: return 1-lh*la*RHO
+    if x==0 and y==1: return 1+lh*RHO
+    if x==1 and y==0: return 1+la*RHO
+    if x==1 and y==1: return 1-RHO
+    return 1.0
+
 def probs_for_line(lh,la,line):
     vals={"H":0.0,"D":0.0,"A":0.0}
     for i in range(8):
         for j in range(8):
-            p=pois(lh,i)*pois(la,j)
+            p=pois(lh,i)*pois(la,j)*tau(i,j,lh,la)
             d=i+line-j
             if d>0: vals["H"]+=p
             elif abs(d)<1e-9: vals["D"]+=p
@@ -100,7 +109,7 @@ def main():
         usable+=1
 
     payload={
-      "model":"baseline_poisson_t12_v1",
+      "model":"dc_poisson_t12_v2",
       "definition":"Integer Asian handicap 3-way settlement; handicap is evaluation/stratification context, not a direct prediction rule.",
       "data_cutoff":"kickoff minus 12 hours",
       "eligible_rows":len(rows),
@@ -113,7 +122,7 @@ def main():
         "Model confidence is the maximum predicted H/D/A probability after applying the historical integer handicap to the T-12h Poisson score distribution.",
         "Empirical hit rate is measured separately and must not be treated as equal to model confidence.",
         "Quarter handicaps are excluded from this 3-way integer handicap module and will be handled by a separate split-stake Asian settlement module.",
-        "Football-Data Asian-handicap context is secondary evaluation data; it is not fed directly into the baseline prediction."
+        "Football-Data Asian-handicap context is secondary evaluation data; it is not fed directly into the T-12 prediction."
       ]
     }
     with open(OUT,"w",encoding="utf-8") as f:
