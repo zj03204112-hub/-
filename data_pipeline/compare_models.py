@@ -64,7 +64,7 @@ def finish(d):
     return {"n":d["n"],"accuracy":round(d["correct"]/d["n"],4),
             "brier":round(d["brier"]/d["n"],4),"logloss":round(d["logloss"]/d["n"],4)}
 
-def run_model(con,model,match):
+def model_lambdas(con,model,match):
     mid,kickoff,home,away,fh,fa=match
     ko=datetime.fromisoformat(kickoff[:19])
     cutoff=(ko-timedelta(hours=12)).isoformat(timespec="seconds")
@@ -90,6 +90,11 @@ def run_model(con,model,match):
                     else: agf=max(.2,agf*adj)
     lh=max(.15,min(4.0,.65+.58*hgf+.30*aga))
     la=max(.12,min(3.5,.58+.58*agf+.30*hga))
+    return lh,la
+
+def run_model(con,model,match):
+    lh,la=model_lambdas(con,model,match)
+    fh,fa=match[4],match[5]
     m=matrix(lh,la,model!="v1")
     p={"H":sum(m[i][j] for i in range(N) for j in range(N) if i>j),
        "D":sum(m[i][j] for i in range(N) for j in range(N) if i==j),
