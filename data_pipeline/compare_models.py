@@ -64,6 +64,19 @@ def finish(d):
     return {"n":d["n"],"accuracy":round(d["correct"]/d["n"],4),
             "brier":round(d["brier"]/d["n"],4),"logloss":round(d["logloss"]/d["n"],4)}
 
+def real_strength_metrics(con,team,cutoff):
+    x=hist(con,team,cutoff)[:10]
+    if not x: return {"score":0.0,"adj_points":0.0,"gd":0.0,"stability":0.0}
+    vals=[]; gd=[]
+    for (gf,ga),opp in x:
+        opp_pts=strength(con,opp,cutoff)
+        quality=max(0.75,min(2.25,opp_pts/1.5 if opp_pts else 1.0))
+        pts=3 if gf>ga else 1 if gf==ga else 0
+        vals.append(pts*(0.75+0.25*quality)); gd.append(gf-ga)
+    mean_pts=sum(vals)/len(vals); mean_gd=max(-3.0,min(3.0,sum(gd)/len(gd)))
+    stability=1.0/(1.0+sum(abs(gd[i]-gd[i+1]) for i in range(len(gd)-1))/max(1,len(gd)-1))
+    score=0.55*(mean_pts/3.0)+0.30*((mean_gd+3.0)/6.0)+0.15*stability
+    return {"score":round(max(0.0,min(1.0,score)),4),"adj_points":round(mean_pts,4),"gd":round(mean_gd,4),"stability":round(stability,4)}
 def model_lambdas(con,model,match):
     mid,kickoff,home,away,fh,fa=match
     ko=datetime.fromisoformat(kickoff[:19])
