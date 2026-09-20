@@ -29,10 +29,18 @@ def season_id(conn, competition_id, label):
         (competition_id, label)
     ).fetchone()[0]
 
+def first_value(row, names):
+    for name in names:
+        value = row.get(name)
+        if value not in (None, ""):
+            return value
+    return None
+
 def ingest_file(conn, league, code, competition_id, season_label, season_code):
     rows = csv.DictReader(io.StringIO(get_csv(code, season_code)))
     sid = season_id(conn, competition_id, season_label)
     n = 0
+    ah_rows = 0
     for r in rows:
         date = (r.get("Date") or "").strip()
         home = (r.get("HomeTeam") or "").strip()
@@ -71,26 +79,33 @@ def ingest_file(conn, league, code, competition_id, season_label, season_code):
                 (mid, int(ht_h) if ht_h else None, int(ht_a) if ht_a else None,
                  int(ft_h), int(ft_a), r.get("FTR"), iso_date, "verified_external")
             )
-            # Secondary bookmaker Asian-handicap context from Football-Data.
-            # This is NOT the Sporttery hhad pool.
             try:
-                ah = r.get("AHh")
-                avh = r.get("BbAvAHH")
-                ava = r.get("BbAvAHA")
-                if ah not in (None, "") and avh not in (None, "") and ava not in (None, ""):
-                    conn.execute("DELETE FROM sporttery_market WHERE match_id=? AND pool_code='asian_handicap_avg'",
-                                  (mid,))
+                # Football-Data renamed AH fields across releases. Prefer the
+                # regular market line and average AH prices; use closing fields
+                # only as a fallback. This is evaluation context, not a model
+                # prediction input.
+                handicap = first_value(r, ["AHh", "BbAHh", "AHCh"])
+                home_odds = first_value(r, ["BbAvAHH", "AvgAHH", "AvgCAHH"])
+                away_odds = first_value(r, ["BbAvAHA", "AvgAHA", "AvgCAHA"])
+                if handicap not in (None, "") and home_odds not in (None, "") and away_odds not in (None, ""):
+                    conn.execute(
+                        "DELETE FROM sporttery_market WHERE match_id=? AND pool_code='asian_handicap_avg'",
+                        (mid,)
+                    )
                     conn.execute(
                         """INSERT INTO sporttery_market
-                        (match_id,pool_code,handicap,home_value,draw_value,away_value,captured_at,source_status)
+                        (match_id,pool_code,handicap,home_value,draw_value,away_value,
+                         captured_at,source_status)
                         VALUES (?,?,?,?,?,?,?,?)""",
-                        (mid, "asian_handicap_avg", float(ah), float(avh), None,
-                         float(ava), iso_date, "football_data_secondary")
+                        (mid, "asian_handicap_avg", float(handicap), float(home_odds),
+                         None, float(away_odds), iso_date, "football_data_secondary")
                     )
+                    ah_rows += 1
             except (TypeError, ValueError):
                 pass
         n += 1
     conn.commit()
+    print(league, season_label, "asian_handicap_rows", ah_rows)
     return n
 
 def main():
