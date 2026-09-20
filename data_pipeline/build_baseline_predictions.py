@@ -2,7 +2,7 @@ import json, math, sqlite3
 from datetime import datetime, timedelta
 
 DB="football_model_database.sqlite"
-MODEL="baseline_poisson_t12_v1"
+MODEL="dc_poisson_t12_v2"
 
 def hist(con,team,cutoff):
     rows=con.execute("""
@@ -28,6 +28,26 @@ def rates(h):
 def pois(lam,k):
     return math.exp(-lam)*lam**k/math.factorial(k)
 
+RHO=-0.05
+MAX_GOALS=8
+
+def tau(x,y,lh,la,rho=RHO):
+    if x==0 and y==0: return 1-lh*la*rho
+    if x==0 and y==1: return 1+lh*rho
+    if x==1 and y==0: return 1+la*rho
+    if x==1 and y==1: return 1-rho
+    return 1.0
+
+def dc_matrix(lh,la):
+    m=[]
+    for i in range(MAX_GOALS):
+        row=[]
+        for j in range(MAX_GOALS):
+            row.append(pois(lh,i)*pois(la,j)*tau(i,j,lh,la))
+        m.append(row)
+    total=sum(sum(r) for r in m)
+    return [[v/total for v in row] for row in m]
+
 def main():
     con=sqlite3.connect(DB)
     matches=con.execute("""
@@ -48,8 +68,8 @@ def main():
         hgf,hga=rates(hh); agf,aga=rates(ah)
         lam_h=max(0.15,min(4.0,0.65+0.58*hgf+0.30*aga))
         lam_a=max(0.12,min(3.5,0.58+0.58*agf+0.30*hga))
-        matrix=[[pois(lam_h,i)*pois(lam_a,j) for j in range(7)] for i in range(7)]
-        ph=sum(matrix[i][j] for i in range(7) for j in range(7) if i>j)
+        matrix=dc_matrix(lam_h,lam_a)
+        ph=sum(matrix[i][j] for i in range(MAX_GOALS) for j in range(MAX_GOALS) if i>j)
         pd=sum(matrix[i][j] for i in range(7) for j in range(7) if i==j)
         pa=sum(matrix[i][j] for i in range(7) for j in range(7) if i<j)
         ps=sorted(((matrix[i][j],i,j) for i in range(7) for j in range(7)),reverse=True)[:2]
@@ -67,7 +87,7 @@ def main():
           (match_id,snapshot_time,data_cutoff,handicap,handicap_prediction,score_1,score_2,half_full,model_confidence,notes)
           VALUES (?,?,?,?,?,?,?,?,?,?)
         """,(mid,cutoff,cutoff,None,None,s1,s2,None,conf,
-             json.dumps({"model":MODEL,"p":p,"lambda":[lam_h,lam_a],"actual":actual},separators=(",",":"))))
+             json.dumps({"model":MODEL,"p":p,"lambda":[lam_h,lam_a],"actual":actual,"rho":RHO},separators=(",",":"))))
     bins=[]
     for lo in [0.5,0.6,0.7,0.8,0.9]:
         xs=[hit for c,hit in probs if lo<=c<min(lo+0.1,1.0001)]
