@@ -48,6 +48,9 @@ jobs:
               con.close()
           PY
 
+      - name: Migrate T-12h lineup schema
+        run: python scripts/migrate_injury_schema.py
+
       - name: Collect European league results
         run: python data_pipeline/build_football_db.py
 
@@ -63,6 +66,9 @@ jobs:
 
       - name: Build leakage-safe model features
         run: python data_pipeline/build_features.py
+
+      - name: Build T-12h lineup impact projection
+        run: python data_pipeline/build_lineup_projection.py
 
       - name: Build T-12h baseline predictions
         run: python data_pipeline/build_baseline_predictions.py
