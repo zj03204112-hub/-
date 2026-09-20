@@ -1,225 +1,577 @@
 {
-  "model": "dc_poisson_t12_v2",
-  "definition": "Integer Asian handicap 3-way settlement; handicap is evaluation/stratification context, not a direct prediction rule.",
+  "models": {
+    "v3": {
+      "eligible_rows": 1152,
+      "usable_integer_handicap_rows": 264,
+      "overall": {
+        "n": 264,
+        "accuracy": 0.3258,
+        "brier": 0.7061,
+        "logloss": 1.1556,
+        "mean_confidence": 0.4907,
+        "confidence_hit_gap": 0.165
+      },
+      "confidence_calibration": {
+        "0.33-0.40": {
+          "n": 31,
+          "accuracy": 0.1935,
+          "brier": 0.7033,
+          "logloss": 1.159,
+          "mean_confidence": 0.39,
+          "confidence_hit_gap": 0.1964
+        },
+        "0.40-0.50": {
+          "n": 131,
+          "accuracy": 0.3206,
+          "brier": 0.6949,
+          "logloss": 1.1418,
+          "mean_confidence": 0.4468,
+          "confidence_hit_gap": 0.1262
+        },
+        "0.50-0.60": {
+          "n": 71,
+          "accuracy": 0.3803,
+          "brier": 0.7014,
+          "logloss": 1.1458,
+          "mean_confidence": 0.5396,
+          "confidence_hit_gap": 0.1593
+        },
+        "0.60-0.70": {
+          "n": 24,
+          "accuracy": 0.25,
+          "brier": 0.8663,
+          "logloss": 1.3686,
+          "mean_confidence": 0.6336,
+          "confidence_hit_gap": 0.3836
+        },
+        "0.70-0.80": {
+          "n": 4,
+          "accuracy": 0.5,
+          "brier": 0.7152,
+          "logloss": 1.1999,
+          "mean_confidence": 0.7353,
+          "confidence_hit_gap": 0.2353
+        },
+        "0.80-0.90": {
+          "n": 3,
+          "accuracy": 1.0,
+          "brier": 0.0463,
+          "logloss": 0.1915,
+          "mean_confidence": 0.8258,
+          "confidence_hit_gap": -0.1742
+        }
+      },
+      "by_source_and_line": {
+        "asian_handicap_avg|-1": {
+          "n": 67,
+          "accuracy": 0.3582,
+          "brier": 0.6887,
+          "logloss": 1.1244,
+          "mean_confidence": 0.5248,
+          "confidence_hit_gap": 0.1666
+        },
+        "asian_handicap_avg|-2": {
+          "n": 12,
+          "accuracy": 0.4167,
+          "brier": 0.686,
+          "logloss": 1.0921,
+          "mean_confidence": 0.5929,
+          "confidence_hit_gap": 0.1762
+        },
+        "asian_handicap_avg|0": {
+          "n": 143,
+          "accuracy": 0.2867,
+          "brier": 0.7195,
+          "logloss": 1.1776,
+          "mean_confidence": 0.4613,
+          "confidence_hit_gap": 0.1746
+        },
+        "asian_handicap_avg|1": {
+          "n": 40,
+          "accuracy": 0.375,
+          "brier": 0.6961,
+          "logloss": 1.1485,
+          "mean_confidence": 0.5056,
+          "confidence_hit_gap": 0.1306
+        },
+        "asian_handicap_avg|2": {
+          "n": 2,
+          "accuracy": 0.5,
+          "brier": 0.6556,
+          "logloss": 1.1483,
+          "mean_confidence": 0.5413,
+          "confidence_hit_gap": 0.0413
+        }
+      },
+      "by_league_and_line": {
+        "BUNDESLIGA|asian_handicap_avg|-1": {
+          "n": 10,
+          "accuracy": 0.4,
+          "brier": 0.6752,
+          "logloss": 1.0959,
+          "mean_confidence": 0.5225,
+          "confidence_hit_gap": 0.1225
+        },
+        "BUNDESLIGA|asian_handicap_avg|-2": {
+          "n": 3,
+          "accuracy": 0.3333,
+          "brier": 0.6751,
+          "logloss": 1.0575,
+          "mean_confidence": 0.5082,
+          "confidence_hit_gap": 0.1748
+        },
+        "BUNDESLIGA|asian_handicap_avg|0": {
+          "n": 22,
+          "accuracy": 0.2727,
+          "brier": 0.7551,
+          "logloss": 1.2407,
+          "mean_confidence": 0.4928,
+          "confidence_hit_gap": 0.22
+        },
+        "BUNDESLIGA|asian_handicap_avg|1": {
+          "n": 7,
+          "accuracy": 0.4286,
+          "brier": 0.6547,
+          "logloss": 1.0723,
+          "mean_confidence": 0.4931,
+          "confidence_hit_gap": 0.0645
+        },
+        "BUNDESLIGA|asian_handicap_avg|2": {
+          "n": 1,
+          "accuracy": 0.0,
+          "brier": 1.0395,
+          "logloss": 1.7455,
+          "mean_confidence": 0.5063,
+          "confidence_hit_gap": 0.5063
+        },
+        "EPL|asian_handicap_avg|-1": {
+          "n": 18,
+          "accuracy": 0.3889,
+          "brier": 0.6627,
+          "logloss": 1.0842,
+          "mean_confidence": 0.5324,
+          "confidence_hit_gap": 0.1436
+        },
+        "EPL|asian_handicap_avg|-2": {
+          "n": 4,
+          "accuracy": 0.5,
+          "brier": 0.625,
+          "logloss": 1.0163,
+          "mean_confidence": 0.6769,
+          "confidence_hit_gap": 0.1769
+        },
+        "EPL|asian_handicap_avg|0": {
+          "n": 28,
+          "accuracy": 0.25,
+          "brier": 0.7244,
+          "logloss": 1.1874,
+          "mean_confidence": 0.4459,
+          "confidence_hit_gap": 0.1959
+        },
+        "EPL|asian_handicap_avg|1": {
+          "n": 8,
+          "accuracy": 0.25,
+          "brier": 0.7623,
+          "logloss": 1.2481,
+          "mean_confidence": 0.5198,
+          "confidence_hit_gap": 0.2698
+        },
+        "LALIGA|asian_handicap_avg|-1": {
+          "n": 11,
+          "accuracy": 0.2727,
+          "brier": 0.7988,
+          "logloss": 1.2791,
+          "mean_confidence": 0.5456,
+          "confidence_hit_gap": 0.2729
+        },
+        "LALIGA|asian_handicap_avg|-2": {
+          "n": 1,
+          "accuracy": 1.0,
+          "brier": 0.2694,
+          "logloss": 0.5476,
+          "mean_confidence": 0.5783,
+          "confidence_hit_gap": -0.4217
+        },
+        "LALIGA|asian_handicap_avg|0": {
+          "n": 36,
+          "accuracy": 0.2222,
+          "brier": 0.7391,
+          "logloss": 1.1934,
+          "mean_confidence": 0.4677,
+          "confidence_hit_gap": 0.2455
+        },
+        "LALIGA|asian_handicap_avg|1": {
+          "n": 5,
+          "accuracy": 0.6,
+          "brier": 0.5535,
+          "logloss": 0.9497,
+          "mean_confidence": 0.4718,
+          "confidence_hit_gap": -0.1282
+        },
+        "LALIGA|asian_handicap_avg|2": {
+          "n": 1,
+          "accuracy": 1.0,
+          "brier": 0.2716,
+          "logloss": 0.5511,
+          "mean_confidence": 0.5763,
+          "confidence_hit_gap": -0.4237
+        },
+        "LIGUE1|asian_handicap_avg|-1": {
+          "n": 10,
+          "accuracy": 0.3,
+          "brier": 0.6631,
+          "logloss": 1.0892,
+          "mean_confidence": 0.5116,
+          "confidence_hit_gap": 0.2116
+        },
+        "LIGUE1|asian_handicap_avg|-2": {
+          "n": 1,
+          "accuracy": 0.0,
+          "brier": 0.9971,
+          "logloss": 1.5139,
+          "mean_confidence": 0.5956,
+          "confidence_hit_gap": 0.5956
+        },
+        "LIGUE1|asian_handicap_avg|0": {
+          "n": 25,
+          "accuracy": 0.32,
+          "brier": 0.7369,
+          "logloss": 1.2048,
+          "mean_confidence": 0.4433,
+          "confidence_hit_gap": 0.1233
+        },
+        "LIGUE1|asian_handicap_avg|1": {
+          "n": 6,
+          "accuracy": 0.6667,
+          "brier": 0.6022,
+          "logloss": 1.0291,
+          "mean_confidence": 0.6079,
+          "confidence_hit_gap": -0.0588
+        },
+        "SERIEA|asian_handicap_avg|-1": {
+          "n": 18,
+          "accuracy": 0.3889,
+          "brier": 0.6692,
+          "logloss": 1.1054,
+          "mean_confidence": 0.5132,
+          "confidence_hit_gap": 0.1243
+        },
+        "SERIEA|asian_handicap_avg|-2": {
+          "n": 3,
+          "accuracy": 0.3333,
+          "brier": 0.8133,
+          "logloss": 1.2685,
+          "mean_confidence": 0.5695,
+          "confidence_hit_gap": 0.2361
+        },
+        "SERIEA|asian_handicap_avg|0": {
+          "n": 32,
+          "accuracy": 0.375,
+          "brier": 0.6549,
+          "logloss": 1.0867,
+          "mean_confidence": 0.4601,
+          "confidence_hit_gap": 0.0851
+        },
+        "SERIEA|asian_handicap_avg|1": {
+          "n": 14,
+          "accuracy": 0.2143,
+          "brier": 0.7702,
+          "logloss": 1.2519,
+          "mean_confidence": 0.4721,
+          "confidence_hit_gap": 0.2578
+        }
+      }
+    },
+    "v4": {
+      "eligible_rows": 1152,
+      "usable_integer_handicap_rows": 264,
+      "overall": {
+        "n": 264,
+        "accuracy": 0.3182,
+        "brier": 0.7042,
+        "logloss": 1.1516,
+        "mean_confidence": 0.4881,
+        "confidence_hit_gap": 0.1699
+      },
+      "confidence_calibration": {
+        "0.33-0.40": {
+          "n": 30,
+          "accuracy": 0.1333,
+          "brier": 0.6904,
+          "logloss": 1.135,
+          "mean_confidence": 0.3897,
+          "confidence_hit_gap": 0.2563
+        },
+        "0.40-0.50": {
+          "n": 143,
+          "accuracy": 0.3147,
+          "brier": 0.7001,
+          "logloss": 1.15,
+          "mean_confidence": 0.4461,
+          "confidence_hit_gap": 0.1314
+        },
+        "0.50-0.60": {
+          "n": 59,
+          "accuracy": 0.3898,
+          "brier": 0.6886,
+          "logloss": 1.1241,
+          "mean_confidence": 0.5434,
+          "confidence_hit_gap": 0.1535
+        },
+        "0.60-0.70": {
+          "n": 25,
+          "accuracy": 0.32,
+          "brier": 0.8006,
+          "logloss": 1.2698,
+          "mean_confidence": 0.6383,
+          "confidence_hit_gap": 0.3183
+        },
+        "0.70-0.80": {
+          "n": 6,
+          "accuracy": 0.5,
+          "brier": 0.7343,
+          "logloss": 1.2116,
+          "mean_confidence": 0.7539,
+          "confidence_hit_gap": 0.2539
+        },
+        "0.80-0.90": {
+          "n": 1,
+          "accuracy": 1.0,
+          "brier": 0.0428,
+          "logloss": 0.1833,
+          "mean_confidence": 0.8325,
+          "confidence_hit_gap": -0.1675
+        }
+      },
+      "by_source_and_line": {
+        "asian_handicap_avg|-1": {
+          "n": 67,
+          "accuracy": 0.3731,
+          "brier": 0.6963,
+          "logloss": 1.1333,
+          "mean_confidence": 0.5311,
+          "confidence_hit_gap": 0.158
+        },
+        "asian_handicap_avg|-2": {
+          "n": 12,
+          "accuracy": 0.4167,
+          "brier": 0.714,
+          "logloss": 1.1364,
+          "mean_confidence": 0.6176,
+          "confidence_hit_gap": 0.201
+        },
+        "asian_handicap_avg|0": {
+          "n": 143,
+          "accuracy": 0.2587,
+          "brier": 0.7106,
+          "logloss": 1.1633,
+          "mean_confidence": 0.4477,
+          "confidence_hit_gap": 0.1889
+        },
+        "asian_handicap_avg|1": {
+          "n": 40,
+          "accuracy": 0.4,
+          "brier": 0.6893,
+          "logloss": 1.1415,
+          "mean_confidence": 0.5105,
+          "confidence_hit_gap": 0.1105
+        },
+        "asian_handicap_avg|2": {
+          "n": 2,
+          "accuracy": 0.5,
+          "brier": 0.7531,
+          "logloss": 1.2193,
+          "mean_confidence": 0.7088,
+          "confidence_hit_gap": 0.2088
+        }
+      },
+      "by_league_and_line": {
+        "BUNDESLIGA|asian_handicap_avg|-1": {
+          "n": 10,
+          "accuracy": 0.4,
+          "brier": 0.7088,
+          "logloss": 1.1404,
+          "mean_confidence": 0.5226,
+          "confidence_hit_gap": 0.1226
+        },
+        "BUNDESLIGA|asian_handicap_avg|-2": {
+          "n": 3,
+          "accuracy": 0.3333,
+          "brier": 0.77,
+          "logloss": 1.1995,
+          "mean_confidence": 0.5693,
+          "confidence_hit_gap": 0.236
+        },
+        "BUNDESLIGA|asian_handicap_avg|0": {
+          "n": 22,
+          "accuracy": 0.2727,
+          "brier": 0.7462,
+          "logloss": 1.2145,
+          "mean_confidence": 0.4772,
+          "confidence_hit_gap": 0.2045
+        },
+        "BUNDESLIGA|asian_handicap_avg|1": {
+          "n": 7,
+          "accuracy": 0.4286,
+          "brier": 0.6687,
+          "logloss": 1.0945,
+          "mean_confidence": 0.5047,
+          "confidence_hit_gap": 0.0762
+        },
+        "BUNDESLIGA|asian_handicap_avg|2": {
+          "n": 1,
+          "accuracy": 0.0,
+          "brier": 1.3361,
+          "logloss": 2.0283,
+          "mean_confidence": 0.7542,
+          "confidence_hit_gap": 0.7542
+        },
+        "EPL|asian_handicap_avg|-1": {
+          "n": 18,
+          "accuracy": 0.4444,
+          "brier": 0.6371,
+          "logloss": 1.0526,
+          "mean_confidence": 0.5393,
+          "confidence_hit_gap": 0.0949
+        },
+        "EPL|asian_handicap_avg|-2": {
+          "n": 4,
+          "accuracy": 0.5,
+          "brier": 0.6502,
+          "logloss": 1.0609,
+          "mean_confidence": 0.6896,
+          "confidence_hit_gap": 0.1896
+        },
+        "EPL|asian_handicap_avg|0": {
+          "n": 28,
+          "accuracy": 0.3214,
+          "brier": 0.7104,
+          "logloss": 1.1686,
+          "mean_confidence": 0.4391,
+          "confidence_hit_gap": 0.1177
+        },
+        "EPL|asian_handicap_avg|1": {
+          "n": 8,
+          "accuracy": 0.25,
+          "brier": 0.7694,
+          "logloss": 1.2544,
+          "mean_confidence": 0.5382,
+          "confidence_hit_gap": 0.2882
+        },
+        "LALIGA|asian_handicap_avg|-1": {
+          "n": 11,
+          "accuracy": 0.1818,
+          "brier": 0.8591,
+          "logloss": 1.3509,
+          "mean_confidence": 0.5606,
+          "confidence_hit_gap": 0.3788
+        },
+        "LALIGA|asian_handicap_avg|-2": {
+          "n": 1,
+          "accuracy": 1.0,
+          "brier": 0.1868,
+          "logloss": 0.4345,
+          "mean_confidence": 0.6476,
+          "confidence_hit_gap": -0.3524
+        },
+        "LALIGA|asian_handicap_avg|0": {
+          "n": 36,
+          "accuracy": 0.1944,
+          "brier": 0.7026,
+          "logloss": 1.1434,
+          "mean_confidence": 0.439,
+          "confidence_hit_gap": 0.2446
+        },
+        "LALIGA|asian_handicap_avg|1": {
+          "n": 5,
+          "accuracy": 0.8,
+          "brier": 0.5359,
+          "logloss": 0.9223,
+          "mean_confidence": 0.4831,
+          "confidence_hit_gap": -0.3169
+        },
+        "LALIGA|asian_handicap_avg|2": {
+          "n": 1,
+          "accuracy": 1.0,
+          "brier": 0.17,
+          "logloss": 0.4104,
+          "mean_confidence": 0.6634,
+          "confidence_hit_gap": -0.3366
+        },
+        "LIGUE1|asian_handicap_avg|-1": {
+          "n": 10,
+          "accuracy": 0.4,
+          "brier": 0.6699,
+          "logloss": 1.0937,
+          "mean_confidence": 0.5245,
+          "confidence_hit_gap": 0.1245
+        },
+        "LIGUE1|asian_handicap_avg|-2": {
+          "n": 1,
+          "accuracy": 0.0,
+          "brier": 1.0125,
+          "logloss": 1.5384,
+          "mean_confidence": 0.6019,
+          "confidence_hit_gap": 0.6019
+        },
+        "LIGUE1|asian_handicap_avg|0": {
+          "n": 25,
+          "accuracy": 0.2,
+          "brier": 0.7486,
+          "logloss": 1.2207,
+          "mean_confidence": 0.4405,
+          "confidence_hit_gap": 0.2405
+        },
+        "LIGUE1|asian_handicap_avg|1": {
+          "n": 6,
+          "accuracy": 0.6667,
+          "brier": 0.5884,
+          "logloss": 1.0284,
+          "mean_confidence": 0.6119,
+          "confidence_hit_gap": -0.0547
+        },
+        "SERIEA|asian_handicap_avg|-1": {
+          "n": 18,
+          "accuracy": 0.3889,
+          "brier": 0.6638,
+          "logloss": 1.099,
+          "mean_confidence": 0.5132,
+          "confidence_hit_gap": 0.1243
+        },
+        "SERIEA|asian_handicap_avg|-2": {
+          "n": 3,
+          "accuracy": 0.3333,
+          "brier": 0.8193,
+          "logloss": 1.2738,
+          "mean_confidence": 0.5652,
+          "confidence_hit_gap": 0.2319
+        },
+        "SERIEA|asian_handicap_avg|0": {
+          "n": 32,
+          "accuracy": 0.3125,
+          "brier": 0.6655,
+          "logloss": 1.101,
+          "mean_confidence": 0.4501,
+          "confidence_hit_gap": 0.1376
+        },
+        "SERIEA|asian_handicap_avg|1": {
+          "n": 14,
+          "accuracy": 0.2143,
+          "brier": 0.752,
+          "logloss": 1.2273,
+          "mean_confidence": 0.4638,
+          "confidence_hit_gap": 0.2495
+        }
+      }
+    }
+  },
+  "definition": "Integer Asian handicap 3-way settlement evaluated against leakage-safe T-12h model probabilities. Handicap lines are evaluation context, not a direct prediction rule.",
   "data_cutoff": "kickoff minus 12 hours",
-  "eligible_rows": 1152,
-  "usable_integer_handicap_rows": 264,
-  "overall": {
-    "ALL": {
-      "n": 264,
-      "accuracy": 0.322,
-      "brier": 0.7082,
-      "logloss": 1.1587
-    }
-  },
-  "confidence_calibration": {
-    "0.60-0.70": {
-      "n": 28,
-      "accuracy": 0.2857,
-      "brier": 0.8497,
-      "logloss": 1.346
-    },
-    "0.40-0.50": {
-      "n": 136,
-      "accuracy": 0.2794,
-      "brier": 0.7051,
-      "logloss": 1.1564
-    },
-    "0.33-0.40": {
-      "n": 29,
-      "accuracy": 0.3103,
-      "brier": 0.6654,
-      "logloss": 1.0956
-    },
-    "0.50-0.60": {
-      "n": 63,
-      "accuracy": 0.3968,
-      "brier": 0.6938,
-      "logloss": 1.1396
-    },
-    "0.70-0.80": {
-      "n": 6,
-      "accuracy": 0.5,
-      "brier": 0.6954,
-      "logloss": 1.1607
-    },
-    "0.80-0.90": {
-      "n": 2,
-      "accuracy": 1.0,
-      "brier": 0.0501,
-      "logloss": 0.2001
-    }
-  },
-  "by_source_and_line": {
-    "asian_handicap_avg|-1": {
-      "n": 67,
-      "accuracy": 0.3881,
-      "brier": 0.697,
-      "logloss": 1.1349
-    },
-    "asian_handicap_avg|0": {
-      "n": 143,
-      "accuracy": 0.2587,
-      "brier": 0.7148,
-      "logloss": 1.1706
-    },
-    "asian_handicap_avg|1": {
-      "n": 40,
-      "accuracy": 0.4,
-      "brier": 0.6997,
-      "logloss": 1.1531
-    },
-    "asian_handicap_avg|-2": {
-      "n": 12,
-      "accuracy": 0.4167,
-      "brier": 0.7325,
-      "logloss": 1.1757
-    },
-    "asian_handicap_avg|2": {
-      "n": 2,
-      "accuracy": 0.5,
-      "brier": 0.6347,
-      "logloss": 1.1135
-    }
-  },
-  "by_league_and_line": {
-    "EPL|asian_handicap_avg|-1": {
-      "n": 18,
-      "accuracy": 0.4444,
-      "brier": 0.6631,
-      "logloss": 1.0835
-    },
-    "EPL|asian_handicap_avg|0": {
-      "n": 28,
-      "accuracy": 0.3214,
-      "brier": 0.7111,
-      "logloss": 1.1704
-    },
-    "EPL|asian_handicap_avg|1": {
-      "n": 8,
-      "accuracy": 0.25,
-      "brier": 0.7859,
-      "logloss": 1.2761
-    },
-    "EPL|asian_handicap_avg|-2": {
-      "n": 4,
-      "accuracy": 0.5,
-      "brier": 0.6597,
-      "logloss": 1.0857
-    },
-    "LALIGA|asian_handicap_avg|0": {
-      "n": 36,
-      "accuracy": 0.1667,
-      "brier": 0.7141,
-      "logloss": 1.1579
-    },
-    "LALIGA|asian_handicap_avg|-1": {
-      "n": 11,
-      "accuracy": 0.2727,
-      "brier": 0.8281,
-      "logloss": 1.3163
-    },
-    "LALIGA|asian_handicap_avg|1": {
-      "n": 5,
-      "accuracy": 0.6,
-      "brier": 0.5435,
-      "logloss": 0.9345
-    },
-    "LALIGA|asian_handicap_avg|-2": {
-      "n": 1,
-      "accuracy": 1.0,
-      "brier": 0.2101,
-      "logloss": 0.4677
-    },
-    "LALIGA|asian_handicap_avg|2": {
-      "n": 1,
-      "accuracy": 1.0,
-      "brier": 0.214,
-      "logloss": 0.4731
-    },
-    "BUNDESLIGA|asian_handicap_avg|2": {
-      "n": 1,
-      "accuracy": 0.0,
-      "brier": 1.0554,
-      "logloss": 1.754
-    },
-    "BUNDESLIGA|asian_handicap_avg|0": {
-      "n": 22,
-      "accuracy": 0.2727,
-      "brier": 0.7617,
-      "logloss": 1.2469
-    },
-    "BUNDESLIGA|asian_handicap_avg|1": {
-      "n": 7,
-      "accuracy": 0.5714,
-      "brier": 0.637,
-      "logloss": 1.0532
-    },
-    "BUNDESLIGA|asian_handicap_avg|-1": {
-      "n": 10,
-      "accuracy": 0.4,
-      "brier": 0.6979,
-      "logloss": 1.1296
-    },
-    "BUNDESLIGA|asian_handicap_avg|-2": {
-      "n": 3,
-      "accuracy": 0.3333,
-      "brier": 0.7318,
-      "logloss": 1.143
-    },
-    "SERIEA|asian_handicap_avg|1": {
-      "n": 14,
-      "accuracy": 0.2143,
-      "brier": 0.7872,
-      "logloss": 1.271
-    },
-    "SERIEA|asian_handicap_avg|0": {
-      "n": 32,
-      "accuracy": 0.375,
-      "brier": 0.6671,
-      "logloss": 1.1025
-    },
-    "SERIEA|asian_handicap_avg|-1": {
-      "n": 18,
-      "accuracy": 0.3889,
-      "brier": 0.6649,
-      "logloss": 1.098
-    },
-    "SERIEA|asian_handicap_avg|-2": {
-      "n": 3,
-      "accuracy": 0.3333,
-      "brier": 0.8724,
-      "logloss": 1.3794
-    },
-    "LIGUE1|asian_handicap_avg|0": {
-      "n": 25,
-      "accuracy": 0.16,
-      "brier": 0.7398,
-      "logloss": 1.2091
-    },
-    "LIGUE1|asian_handicap_avg|1": {
-      "n": 6,
-      "accuracy": 0.6667,
-      "brier": 0.584,
-      "logloss": 1.0125
-    },
-    "LIGUE1|asian_handicap_avg|-1": {
-      "n": 10,
-      "accuracy": 0.4,
-      "brier": 0.6704,
-      "logloss": 1.0998
-    },
-    "LIGUE1|asian_handicap_avg|-2": {
-      "n": 1,
-      "accuracy": 0.0,
-      "brier": 1.1284,
-      "logloss": 1.7303
-    }
-  },
   "notes": [
-    "Model confidence is the maximum predicted H/D/A probability after applying the historical integer handicap to the T-12h Poisson score distribution.",
-    "Empirical hit rate is measured separately and must not be treated as equal to model confidence.",
-    "Quarter handicaps are excluded from this 3-way integer handicap module and will be handled by a separate split-stake Asian settlement module.",
-    "Football-Data Asian-handicap context is secondary evaluation data; it is not fed directly into the T-12 prediction."
+    "V3 is the current production baseline candidate; V4 remains experimental.",
+    "The handicap backtest now recomputes each model's T-12h goal rates instead of reading stale prediction_snapshot lambdas.",
+    "Model confidence is the maximum predicted H/D/A probability after applying the historical integer handicap to the score distribution; empirical hit rate is reported separately.",
+    "Quarter handicaps are excluded from this 3-way integer module and require split-stake Asian settlement.",
+    "Football-Data Asian-handicap context is secondary evaluation data; it is not fed directly into the T-12h prediction."
   ]
 }
