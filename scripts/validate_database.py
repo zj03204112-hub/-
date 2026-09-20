@@ -37,8 +37,12 @@ def main():
     if dup:
         errors.append(f"duplicate fixtures: {len(dup)}")
 
+    # Compare calendar dates, not full timestamps. END is inclusive.
+    # This prevents matches played on END after 00:00 from being falsely
+    # treated as out-of-scope because their kickoff time is lexically
+    # greater than the bare date string.
     bad_dates = con.execute(
-        "SELECT COUNT(*) FROM matches WHERE kickoff < ? OR kickoff > ?",
+        "SELECT COUNT(*) FROM matches WHERE substr(kickoff,1,10) < ? OR substr(kickoff,1,10) > ?",
         (START, END)
     ).fetchone()[0]
     if bad_dates:
