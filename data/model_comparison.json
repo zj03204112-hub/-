@@ -1,0 +1,23 @@
+{
+  "definition": "Leakage-safe comparison; every model uses kickoff minus 12h and only prior completed results. V3 additionally uses opponent-strength and schedule-intent fields.",
+  "models": {
+    "v1": {
+      "n": 1435,
+      "accuracy": 0.4509,
+      "brier": 0.6403,
+      "logloss": 1.064
+    },
+    "v2": {
+      "n": 1435,
+      "accuracy": 0.4509,
+      "brier": 0.6389,
+      "logloss": 1.0612
+    },
+    "v3": {
+      "n": 1435,
+      "accuracy": 0.4516,
+      "brier": 0.6388,
+      "logloss": 1.0608
+    }
+  }
+}
