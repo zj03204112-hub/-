@@ -3,42 +3,69 @@ from datetime import datetime, timedelta
 
 DB="football_model_database.sqlite"
 
-# Injury/player-impact inputs are intentionally data-driven. The pipeline never
-# invents a player rating: impact_attack/impact_defense must come from a source.
-def iso_cutoff(kickoff):
+def cutoff(kickoff):
     return (datetime.fromisoformat(kickoff[:19])-timedelta(hours=12)).isoformat(timespec="seconds")
+
+def build(con,mid,side,cut):
+    rows=con.execute("""
+      SELECT p.player_id,p.player_name,p.position,p.starter,p.minutes_played,
+             p.xg,p.xa,p.tackles,p.interceptions,p.clearances
+      FROM player_match_stats p JOIN matches m ON m.match_id=p.match_id
+      WHERE p.team_side=? AND m.kickoff < ? AND m.kickoff >= datetime(?, '-120 days')
+      ORDER BY m.kickoff DESC
+    """,(side,cut,cut)).fetchall()
+    by={}
+    for r in rows:
+        pid,name,pos,starter,mins,xg,xa,tac,inter,clr=r
+        if pid not in by: by[pid]=[]
+        by[pid].append(r)
+    feats=[]
+    for pid,rs in by.items():
+        w=[math.exp(-0.18*i) for i in range(len(rs))]
+        sw=sum(w)
+        starts=sum(w[i]*rs[i][3] for i in range(len(rs)))/sw
+        app=sum(w[i]*(1 if rs[i][4]>0 else 0) for i in range(len(rs)))/sw
+        em=sum(w[i]*rs[i][4] for i in range(len(rs)))/sw
+        mins=max(90.0,em)
+        xg90=sum(w[i]*rs[i][5] for i in range(len(rs)))/sw*90/mins
+        xa90=sum(w[i]*rs[i][6] for i in range(len(rs)))/sw*90/mins
+        def90=sum(w[i]*(rs[i][7]+rs[i][8]+rs[i][9]) for i in range(len(rs)))/sw*90/mins
+        attack=0.65*xg90+0.35*xa90
+        defense=0.02*def90
+        influence=attack+0.01*def90
+        feats.append((pid,rs[0][1],starts,app,em,attack,defense,influence,sum(x[4] for x in rs)))
+    if not feats: return 0.0,0.0,0.0,0
+    # Expected XI: top 11 by start probability, with expected minutes as tiebreaker.
+    feats.sort(key=lambda x:(x[2],x[4]),reverse=True)
+    xi=feats[:11]
+    # Compare expected XI to a replacement baseline from the remaining squad.
+    pool=feats[11:]
+    rep_attack=sum(x[5] for x in pool)/len(pool) if pool else 0.0
+    rep_def=sum(x[6] for x in pool)/len(pool) if pool else 0.0
+    total_attack=sum((x[5]-rep_attack)*(x[4]/90.0)*x[2] for x in xi)
+    total_def=sum((x[6]-rep_def)*(x[4]/90.0)*x[2] for x in xi)
+    # Conservative log-rate deltas. These are player-data effects only.
+    ad=max(-0.20,min(0.20,0.035*total_attack))
+    dd=max(-0.20,min(0.20,0.035*total_def))
+    uncertainty=max(0.0,min(1.0,1.0-min(1.0,sum(x[2] for x in xi)/11.0)))
+    return ad,dd,uncertainty,len(xi)
 
 def main():
     con=sqlite3.connect(DB)
-    rows=con.execute("SELECT match_id,kickoff,home_team,away_team FROM matches WHERE status='finished' ORDER BY kickoff,match_id").fetchall()
     con.execute("DELETE FROM lineup_projection")
-    for mid,kickoff,home,away in rows:
-        cutoff=iso_cutoff(kickoff)
+    rows=con.execute("SELECT match_id,kickoff FROM matches WHERE status='finished' ORDER BY kickoff").fetchall()
+    populated=0
+    for mid,ko in rows:
+        cut=cutoff(ko)
         for side in ("home","away"):
-            data=con.execute("""SELECT availability_prob,expected_start_prob,impact_attack,impact_defense
-              FROM injuries WHERE match_id=? AND team_side=?
-              AND (data_cutoff IS NULL OR data_cutoff<=?)""",(mid,side,cutoff)).fetchall()
-            attack=0.0; defense=0.0; uncertainty=0.0; count=0
-            for av,sp,ia,idf in data:
-                av=1.0 if av is None else max(0.0,min(1.0,float(av)))
-                sp=1.0 if sp is None else max(0.0,min(1.0,float(sp)))
-                w=(1.0-av)*sp
-                if ia is not None: attack -= float(ia)*w
-                if idf is not None: defense += float(idf)*w
-                uncertainty += w if (ia is None or idf is None) else 0.0
-                count += 1
-            # Store log-rate deltas. Clamp to avoid one uncertain player dominating.
-            attack=max(-0.25,min(0.25,attack))
-            defense=max(-0.25,min(0.25,defense))
-            uncertainty=max(0.0,min(1.0,uncertainty/max(1,count))) if count else 0.0
-            strength=max(0.0,min(1.0,math.exp(attack)-1.0))
+            ad,dd,u,n=build(con,mid,side,cut)
             con.execute("""INSERT INTO lineup_projection
-              (match_id,team_side,expected_start_strength,attack_delta,defense_delta,uncertainty,player_count,data_cutoff)
-              VALUES (?,?,?,?,?,?,?,?)""",(mid,side,strength,attack,defense,uncertainty,count,cutoff))
+              (match_id,team_side,expected_start_strength,attack_delta,defense_delta,uncertainty,player_count,data_cutoff,source_status)
+              VALUES (?,?,?,?,?,?,?,?,?)""",
+              (mid,side,max(0.0,min(1.0,1.0-u)),ad,dd,u,n,cut,"SofaScore-derived" if n else "neutral-no-player-data"))
+            populated += n>0
     con.commit()
-    n=con.execute("SELECT COUNT(*) FROM lineup_projection").fetchone()[0]
-    populated=con.execute("SELECT COUNT(*) FROM lineup_projection WHERE player_count>0").fetchone()[0]
-    print(json.dumps({"rows":n,"populated":populated,"rule":"T-12h only; player impact must be sourced, no invented ratings"},ensure_ascii=False))
+    print(json.dumps({"lineup_rows":len(rows)*2,"populated_sides":populated,"source":"SofaScore public lineups","cutoff":"T-12h"},ensure_ascii=False))
     con.close()
 
 if __name__=="__main__": main()
