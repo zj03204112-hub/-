@@ -88,6 +88,9 @@ def ingest_file(conn, league, code, competition_id, season_label, season_code):
                 home_odds = first_value(r, ["BbAvAHH", "AvgAHH", "AvgCAHH"])
                 away_odds = first_value(r, ["BbAvAHA", "AvgAHA", "AvgCAHA"])
                 if handicap not in (None, "") and home_odds not in (None, "") and away_odds not in (None, ""):
+                    # Keep the average/regular line as the primary Football-Data observation.
+                    # Do not delete Sporttery/SofaScore observations: preserving independent
+                    # source lines lets the handicap backtest expand its integer-line coverage.
                     conn.execute(
                         "DELETE FROM sporttery_market WHERE match_id=? AND pool_code='asian_handicap_avg'",
                         (mid,)
@@ -99,6 +102,35 @@ def ingest_file(conn, league, code, competition_id, season_label, season_code):
                         VALUES (?,?,?,?,?,?,?,?)""",
                         (mid, "asian_handicap_avg", float(handicap), float(home_odds),
                          None, float(away_odds), iso_date, "football_data_secondary")
+                    )
+                    ah_rows += 1
+
+                # Football-Data exposes alternative AH line snapshots in some seasons.
+                # Store integer/half/quarter lines as separate source observations; the
+                # 3-way integer backtest will keep only integer lines and deduplicate by
+                # (match,line), so these extra observations only increase coverage when
+                # they genuinely introduce a different line.
+                for field, pool in (("AHh", "football_data_ah_open"),
+                                    ("BbAHh", "football_data_ah_bookmaker"),
+                                    ("AHCh", "football_data_ah_close")):
+                    value = r.get(field)
+                    if value in (None, ""):
+                        continue
+                    try:
+                        v = float(value)
+                    except (TypeError, ValueError):
+                        continue
+                    if handicap not in (None, "") and abs(v - float(handicap)) < 1e-9:
+                        continue
+                    if home_odds in (None, "") or away_odds in (None, ""):
+                        continue
+                    conn.execute(
+                        """INSERT INTO sporttery_market
+                        (match_id,pool_code,handicap,home_value,draw_value,away_value,
+                         captured_at,source_status)
+                        VALUES (?,?,?,?,?,?,?,?)""",
+                        (mid, pool, v, float(home_odds), None, float(away_odds),
+                         iso_date, "football_data_secondary_alt_line")
                     )
                     ah_rows += 1
             except (TypeError, ValueError):
