@@ -26,62 +26,49 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Install dependencies
-        run: python -m pip install --upgrade pip pandas requests lxml
-
+        run: python -m pip install --upgrade pip pandas requests lxml curl_cffi
       - name: Initialize database
         run: |
           python - <<'PY'
           import sqlite3
           from pathlib import Path
-          db = Path("football_model_database.sqlite")
-          schema = Path("database/football_model_database.sql")
+          db=Path("football_model_database.sqlite"); schema=Path("database/football_model_database.sql")
           if not db.exists():
-              con = sqlite3.connect(db)
-              con.executescript(schema.read_text(encoding="utf-8"))
-              con.close()
+              con=sqlite3.connect(db); con.executescript(schema.read_text(encoding="utf-8")); con.close()
           PY
-
       - name: Migrate T-12h lineup schema
         run: python scripts/migrate_injury_schema.py
-
+      - name: Migrate player data schema
+        run: python scripts/migrate_player_schema.py
       - name: Collect European league results
         run: python data_pipeline/build_football_db.py
-
       - name: Fetch official J1 feed
         run: python scripts/fetch_current_season.py
-
       - name: Collect J1 and K League 1
         run: python data_pipeline/collect_public_asia.py
-
       - name: Collect Sporttery historical handicap markets
         run: python data_pipeline/collect_sporttery_history.py
         continue-on-error: true
-
+      - name: Collect real player match data
+        run: python data_pipeline/collect_player_data.py
+        continue-on-error: true
       - name: Build leakage-safe model features
         run: python data_pipeline/build_features.py
-
       - name: Build T-12h lineup impact projection
         run: python data_pipeline/build_lineup_projection.py
-
       - name: Build T-12h baseline predictions
         run: python data_pipeline/build_baseline_predictions.py
-
       - name: Compare V1 V2 V3 V4 + calibration + blend
         run: python data_pipeline/compare_models.py
-
       - name: Backtest integer Asian handicap
         run: python data_pipeline/backtest_handicap.py
-
       - name: Validate database
         run: python scripts/validate_database.py
-
       - name: Commit generated database
         run: |
           set -e
@@ -94,5 +81,3 @@ jobs:
           fi
           git commit -m "auto: update football model database"
           git push origin HEAD:main
-
-# Full-run trigger: user confirmed one-shot pipeline execution.
