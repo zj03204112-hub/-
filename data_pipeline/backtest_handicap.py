@@ -35,6 +35,19 @@ def actual_for_line(fh,fa,line):
     d=fh+line-fa
     return "H" if d>0 else "D" if d==0 else "A"
 
+def top_scores(lh,la,n=2):
+    scores=[]
+    for i in range(10):
+        for j in range(10):
+            p=pois(lh,i)*pois(la,j)*tau(i,j,lh,la)
+            scores.append((p,i,j))
+    total=sum(x[0] for x in scores)
+    return sorted([(p/total,i,j) for p,i,j in scores],reverse=True)[:n]
+
+def score_result(i,j,line):
+    d=i+line-j
+    return "H" if d>0 else "D" if d==0 else "A"
+
 def confidence_bin(c):
     return "0.33-0.40" if c<.40 else "0.40-0.50" if c<.50 else "0.50-0.60" if c<.60 else "0.60-0.70" if c<.70 else "0.70-0.80" if c<.80 else "0.80-0.90" if c<.90 else "0.90-1.00"
 
@@ -78,6 +91,8 @@ def main():
     out_models={}
     for model in ("v3","v4"):
         samples=[]
+        audit={"n":0,"top1_consistent":0,"top2_consistent":0,"both_consistent":0,
+               "inconsistent_examples":[]}
         for mid,line,pool,fh,fa,league,ko in chosen.values():
             match=con.execute("""
               SELECT m.match_id,m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away
@@ -87,9 +102,25 @@ def main():
             try:
                 lh,la=model_lambdas(con,model,match)
                 p=probs_for_line(lh,la,line)
+                scores=top_scores(lh,la,2)
             except Exception: continue
+            pred=max(p,key=p.get)
+            r1=score_result(scores[0][1],scores[0][2],line)
+            r2=score_result(scores[1][1],scores[1][2],line)
+            audit["n"]+=1
+            audit["top1_consistent"]+=int(r1==pred)
+            audit["top2_consistent"]+=int(r2==pred)
+            audit["both_consistent"]+=int(r1==pred and r2==pred)
+            if (r1!=pred or r2!=pred) and len(audit["inconsistent_examples"])<10:
+                audit["inconsistent_examples"].append({
+                    "match_id":mid,"line":line,"pred":pred,
+                    "score1":f"{scores[0][1]}-{scores[0][2]}","score1_result":r1,
+                    "score2":f"{scores[1][1]}-{scores[1][2]}","score2_result":r2})
             samples.append({"mid":mid,"line":line,"pool":pool,"league":league,
-                            "kickoff":ko,"p":p,"actual":actual_for_line(fh,fa,line)})
+                            "kickoff":ko,"p":p,"actual":actual_for_line(fh,fa,line),
+                            "top_scores":[{"score":f"{i}-{j}","probability":round(pr,6),
+                                           "handicap_result":score_result(i,j,line)}
+                                          for pr,i,j in scores]})
 
         samples.sort(key=lambda x:(x["kickoff"],x["mid"]))
         split=max(1,int(len(samples)*.60))
@@ -122,7 +153,8 @@ def main():
             "confidence_calibration_raw":{k:finish(v) for k,v in sorted(raw_bins.items())},
             "confidence_calibration_calibrated":{k:finish(v) for k,v in sorted(cal_bins.items())},
             "by_line":{str(k):{"raw":finish(v["raw"]),"calibrated":finish(v["calibrated"])} for k,v in sorted(by_line.items())},
-            "by_source":{k:{"raw":finish(v["raw"]),"calibrated":finish(v["calibrated"])} for k,v in sorted(by_source.items())}
+            "by_source":{k:{"raw":finish(v["raw"]),"calibrated":finish(v["calibrated"])} for k,v in sorted(by_source.items())},
+            "score_mapping_audit":audit
         }
 
     payload={"models":out_models,
