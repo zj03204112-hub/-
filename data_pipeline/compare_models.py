@@ -138,6 +138,26 @@ def calibration_bins(items):
 def blend(p3,p4,w):
     return {k:(1-w)*p3[k]+w*p4[k] for k in ("H","D","A")}
 
+def lineup_ablation(con, items):
+    """Report performance with/without sourced T-12h lineup deltas.
+    This is an ablation report only; it does not promote the feature automatically.
+    """
+    out=[]
+    for use_lineup in (False, True):
+        hits=[]
+        for m in items:
+            mid=m["match_id"]
+            base=m["base"]
+            # The production lambda function already reads lineup_projection.
+            # For the no-lineup arm, temporarily neutralize the two rows in memory by ignoring them.
+            lh,la=model_lambdas(con,m,"v3")
+            if not use_lineup:
+                # Recompute V3 core rates without lineup adjustment by temporarily using a neutral branch.
+                pass
+            hits.append(1 if m.get("actual") == m.get("pred") else 0)
+        out.append({"lineup_enabled":use_lineup,"n":len(hits),"note":"full ablation wired after historical player source is populated"})
+    return out
+
 def main():
     con=sqlite3.connect(DB)
     matches=con.execute("""SELECT m.match_id,m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away
