@@ -129,7 +129,7 @@ def main():
         global_t=fit_temperature(train) if train else 1.0
         line_train=defaultdict(list)
         for s in samples[:split]: line_train[s["line"]].append((s["p"],s["actual"]))
-        line_t={line:(fit_temperature(items) if len(items)>=40 else global_t) for line,items in line_train.items()}
+        line_t={line:(fit_temperature(items) if len(items)>=20 else global_t) for line,items in line_train.items()}
 
         raw_m=metric(); cal_m=metric()
         raw_bins=defaultdict(metric); cal_bins=defaultdict(metric)
@@ -164,7 +164,7 @@ def main():
                  "settlement":"H if home_goals+line>away_goals; D if equal; A if lower",
                  "quarter_and_half_lines":"excluded from this 3-way integer module"},
       "market_priority":["hhad","asian_handicap_avg","sofascore_asian_featured"],
-      "calibration":"Temperature fitted on first 60% chronologically; evaluated on later 40%. Line-specific calibration requires >=40 training samples, otherwise global temperature is used.",
+      "calibration":"Temperature fitted on first 60% chronologically; evaluated on later 40%. Line-specific calibration requires >=20 chronological training samples, otherwise global temperature is used. Minimum is intentionally lower only for integer handicap strata; thin strata remain separately reported.",
       "notes":["V3 remains production baseline candidate; V4 remains experimental.",
                "Handicap is evaluation context, not a direct prediction feature.",
                "Model confidence and empirical hit rate are reported separately."]}
