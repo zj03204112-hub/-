@@ -65,9 +65,11 @@ def main():
                 nk,nh,na=nxt
                 opp=na if nh==team else nh
                 try:
-                    rest=(datetime.fromisoformat(nk[:19])-datetime.fromisoformat(kickoff[:19])).total_seconds()/86400
-                except Exception:
-                    rest=0
+                k1=datetime.fromisoformat(str(kickoff)[:19])
+                k2=datetime.fromisoformat(str(nk)[:19])
+                rest=max(0,(k2-k1).total_seconds()/86400)
+            except Exception:
+                rest=0
                 os=strength(con,opp,kickoff)
                 risk=0.75 if rest<=3 else 0.45 if rest<=4 else 0.2
                 if os>=2.0: risk=min(1.0,risk+0.15)
