@@ -20,6 +20,16 @@ def strength(con,team,before):
     x=history(con,team,before)[:10]
     return sum(v["pts"] for v in x)/len(x) if x else 0.0
 
+def opponent_adjusted_strength(con,team,before):
+    x=history(con,team,before)[:10]
+    if not x: return 0.0
+    weights=[1.0/(1.0+i*0.12) for i in range(len(x))]
+    vals=[]
+    for i,v in enumerate(x):
+        os=strength(con,v["opp"],before)
+        vals.append((v["pts"]*(0.75+0.25*max(0.5,min(1.5,os/1.5))),weights[i]))
+    return sum(v*w for v,w in vals)/sum(weights)
+
 def next_fixture(con,team,after):
     return con.execute("""SELECT kickoff,home_team,away_team FROM matches
       WHERE kickoff > ? AND (home_team=? OR away_team=?)
@@ -37,7 +47,7 @@ def main():
             n=max(1,min(10,len(hist)))
             gf=sum(x["gf"] for x in hist[:10])/n; ga=sum(x["ga"] for x in hist[:10])/n
             opps=[x["opp"] for x in hist[:10]]
-            os=sum(strength(con,o,kickoff) for o in opps)/len(opps) if opps else 0.0
+            os=sum(opponent_adjusted_strength(con,o,kickoff) for o in opps)/len(opps) if opps else 0.0
             con.execute("""INSERT INTO team_features
               (match_id,team_side,last3,last5,last10,goals_for,goals_against,xg_for,xg_against,opponent_strength)
               VALUES (?,?,?,?,?,?,?,?,?,?)""",(mid,side,pack(3),pack(5),pack(10),gf,ga,None,None,os))
