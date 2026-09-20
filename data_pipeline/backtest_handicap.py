@@ -5,7 +5,8 @@ from compare_models import model_lambdas, fit_temperature, apply_temperature
 DB="football_model_database.sqlite"
 OUT="data/handicap_backtest.json"
 RHO=-0.05
-PRIORITY={"hhad":3,"asian_handicap_avg":2,"sofascore_asian_featured":1}
+PRIORITY={"hhad":5,"asian_handicap_avg":4,"sofascore_asian_featured":3,
+          "football_data_ah_close":2,"football_data_ah_bookmaker":1,"football_data_ah_open":1}
 
 def pois(lam,k): return math.exp(-lam)*lam**k/math.factorial(k)
 def tau(x,y,lh,la):
@@ -75,7 +76,7 @@ def main():
       JOIN matches m ON m.match_id=sm.match_id
       JOIN competitions c ON c.competition_id=m.competition_id
       WHERE sm.handicap IS NOT NULL
-        AND sm.pool_code IN ('asian_handicap_avg','hhad','sofascore_asian_featured')
+        AND sm.pool_code IN ('asian_handicap_avg','hhad','sofascore_asian_featured','football_data_ah_close','football_data_ah_bookmaker','football_data_ah_open')
         AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL AND m.status='finished'
       ORDER BY m.kickoff,sm.match_id
     """).fetchall()
