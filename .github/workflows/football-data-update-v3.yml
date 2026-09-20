@@ -62,17 +62,24 @@ jobs:
         run: python data_pipeline/collect_sofascore_handicap.py
         timeout-minutes: 20
         continue-on-error: true
+      # Optional enrichment must never block the core V1-V4 model pipeline.
       - name: Build leakage-safe model features
+        if: ${{ always() }}
         run: python data_pipeline/build_features.py
       - name: Build T-12h lineup impact projection
+        if: ${{ always() }}
         run: python data_pipeline/build_lineup_projection.py
       - name: Build T-12h baseline predictions
+        if: ${{ always() }}
         run: python data_pipeline/build_baseline_predictions.py
       - name: Compare V1 V2 V3 V4 + calibration + blend
+        if: ${{ always() }}
         run: python data_pipeline/compare_models.py
       - name: Backtest integer Asian handicap
+        if: ${{ always() }}
         run: python data_pipeline/backtest_handicap.py
       - name: Validate database
+        if: ${{ always() }}
         run: python scripts/validate_database.py
       - name: Commit generated database
         run: |
