@@ -1,23 +1,29 @@
 {
-  "definition": "Leakage-safe comparison; every model uses kickoff minus 12h and only prior completed results. V3 additionally uses opponent-strength and schedule-intent fields.",
+  "definition": "Leakage-safe T-12h comparison. V1 Poisson; V2 Dixon-Coles; V3 adds opponent strength and schedule intent; V4 adds recency-weighted dynamic attack/defence states with opponent-quality adjustment. V4 is experimental and must be validated out-of-sample before production use.",
   "models": {
     "v1": {
       "n": 1435,
-      "accuracy": 0.4509,
-      "brier": 0.6403,
-      "logloss": 1.064
+      "accuracy": 0.4551,
+      "brier": 0.64,
+      "logloss": 1.0635
     },
     "v2": {
       "n": 1435,
-      "accuracy": 0.4509,
-      "brier": 0.6389,
-      "logloss": 1.0612
+      "accuracy": 0.4551,
+      "brier": 0.6385,
+      "logloss": 1.0608
     },
     "v3": {
       "n": 1435,
-      "accuracy": 0.4516,
-      "brier": 0.6388,
-      "logloss": 1.0608
+      "accuracy": 0.4557,
+      "brier": 0.6384,
+      "logloss": 1.0604
+    },
+    "v4": {
+      "n": 1435,
+      "accuracy": 0.4474,
+      "brier": 0.6346,
+      "logloss": 1.0545
     }
   }
 }
