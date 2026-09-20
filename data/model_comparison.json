@@ -321,6 +321,34 @@
           "v4_accuracy": 0.3673
         }
       }
+    },
+    "lineup_ablation_v3": {
+      "without_lineup": {
+        "n": 1435,
+        "accuracy": 0.4557,
+        "brier": 0.6384,
+        "logloss": 1.0604
+      },
+      "with_lineup": {
+        "n": 1435,
+        "accuracy": 0.4557,
+        "brier": 0.6384,
+        "logloss": 1.0604
+      }
+    },
+    "lineup_ablation_v4": {
+      "without_lineup": {
+        "n": 1435,
+        "accuracy": 0.4474,
+        "brier": 0.6346,
+        "logloss": 1.0545
+      },
+      "with_lineup": {
+        "n": 1435,
+        "accuracy": 0.4474,
+        "brier": 0.6346,
+        "logloss": 1.0545
+      }
     }
   }
 }
