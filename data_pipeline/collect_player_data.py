@@ -260,6 +260,37 @@ def main():
             if not lineup:
                 lineup_failures += 1
                 continue
+            # Persist pre-announced missing players exposed by the lineup feed.
+            # For historical T-12h reconstruction this is only used as an
+            # absence signal; final XI itself is never treated as a T-12h fact.
+            ko_row = con.execute("SELECT kickoff FROM matches WHERE match_id=?", (mid,)).fetchone()
+            data_cutoff = None
+            if ko_row and ko_row[0]:
+                try:
+                    data_cutoff = (datetime.fromisoformat(ko_row[0][:19]) - __import__("datetime").timedelta(hours=12)).isoformat(timespec="seconds")
+                except Exception:
+                    data_cutoff = None
+            for side in ("home", "away"):
+                for mp in (lineup.get(side) or {}).get("missingPlayers") or []:
+                    pl = mp.get("player") or {}
+                    pid = str(pl.get("id") or mp.get("playerId") or "")
+                    pname = pl.get("name") or mp.get("name") or mp.get("playerName")
+                    if not pname:
+                        continue
+                    reason = mp.get("reason") or mp.get("type") or mp.get("status") or "missing"
+                    con.execute(
+                        """INSERT INTO injuries
+                        (match_id,team_side,player,status,reason,expected_return,
+                         source_status,position,availability_prob,expected_start_prob,
+                         impact_attack,impact_defense,observed_at,data_cutoff,source_url)
+                        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                        (mid, side, pname, "missing", str(reason), None,
+                         "SofaScore public lineup missingPlayers",
+                         pl.get("position") or mp.get("position"),
+                         0.0, 0.0, 0.0, 0.0,
+                         datetime.utcnow().isoformat(timespec="seconds"),
+                         data_cutoff, f"https://www.sofascore.com/api/v1/event/{event_id}/lineups")
+                    )
             inserted_for_match = 0
             for side in ("home", "away"):
                 for p in player_stats(lineup, side):
