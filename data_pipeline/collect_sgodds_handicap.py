@@ -85,6 +85,7 @@ def main():
     con = sqlite3.connect(DB)
     urls = fetch_index()
     totals = {"files":0,"rows":0,"integer_rows":0,"inserted":0,"unmatched":0}
+    con.execute("DELETE FROM sporttery_market WHERE pool_code='sgodds_open'")
     for league, code_tuple in LEAGUES.items():
         url = urls.get(league)
         if not url:
