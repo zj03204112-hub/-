@@ -104,15 +104,30 @@ def wanted_seasons(tid):
     seen=set(); return [(a,b) for a,b in out if not (a in seen or seen.add(a))]
 
 def events(tid,sid):
-    page=0
-    while page<20:
-        j=get(f"/unique-tournament/{tid}/season/{sid}/events/last/{page}")
-        if not j: break
-        es=j.get("events",[])
-        if not es: break
-        for e in es: yield e
-        if not j.get("hasNextPage"): break
-        page+=1
+    # Try both public SofaScore event-list routes. If one route silently
+    # returns no data, the enrichment must not fail as a false green run.
+    seen=set()
+    for template in (
+        "/unique-tournament/{tid}/season/{sid}/events/last/{page}",
+        "/tournament/{tid}/season/{sid}/events/last/{page}",
+    ):
+        page=0
+        got_any=False
+        while page<40:
+            j=get(template.format(tid=tid,sid=sid,page=page))
+            if not j: break
+            es=j.get("events",[])
+            if not es: break
+            got_any=True
+            for e in es:
+                eid=e.get("id")
+                if eid not in seen:
+                    seen.add(eid)
+                    yield e
+            if not j.get("hasNextPage"): break
+            page+=1
+        if got_any:
+            return
 
 def player_stats(e,side):
     out=[]
@@ -146,10 +161,14 @@ def main():
     for r in con.execute("SELECT match_id,kickoff,home_team,away_team FROM matches WHERE kickoff>=? AND kickoff<=?",(START,END+"T23:59:59")):
         matches[(norm(r[2]),norm(r[3]),r[1][:10])]=r[0]
     con.execute("DELETE FROM player_match_stats")
-    mapped=0; rows=0; skipped=0
+    mapped=0; rows=0; skipped=0; seen_events=0; lineup_failures=0
     for code,tid in LEAGUES.items():
-        for sid,sname in wanted_seasons(tid):
+        seasons=wanted_seasons(tid)
+        print(json.dumps({"league":code,"seasons":seasons},ensure_ascii=False),flush=True)
+        for sid,sname in seasons:
+            season_events=0
             for e in events(tid,sid):
+                season_events+=1; seen_events+=1
                 ts=e.get("startTimestamp")
                 if not ts: continue
                 d=datetime.fromtimestamp(ts,tz=timezone.utc).date().isoformat()
@@ -164,7 +183,9 @@ def main():
                 event_id=str(e.get("id"))
                 con.execute("INSERT OR REPLACE INTO provider_event_map VALUES(?,?,?,?)",(mid,"sofascore",event_id,datetime.utcnow().isoformat(timespec="seconds")))
                 lineup=get(f"/event/{event_id}/lineups")
-                if not lineup: continue
+                if not lineup:
+                    lineup_failures+=1
+                    continue
                 for side in ("home","away"):
                     for p in player_stats(lineup,side):
                         con.execute("""INSERT OR REPLACE INTO player_match_stats
@@ -178,8 +199,9 @@ def main():
                 if mapped%50==0:
                     con.commit(); print(code,sname,"mapped",mapped,"player_rows",rows,flush=True)
                 time.sleep(0.15)
+            print(json.dumps({"league":code,"season":sname,"provider_events":season_events},ensure_ascii=False),flush=True)
     con.commit()
-    print(json.dumps({"mapped_matches":mapped,"player_rows":rows,"unmatched_events":skipped},ensure_ascii=False))
+    print(json.dumps({"mapped_matches":mapped,"player_rows":rows,"unmatched_events":skipped,"seen_provider_events":seen_events,"lineup_failures":lineup_failures},ensure_ascii=False))
     con.close()
 
 if __name__=="__main__": main()
