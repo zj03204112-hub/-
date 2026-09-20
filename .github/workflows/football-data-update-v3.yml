@@ -54,12 +54,13 @@ jobs:
       - name: Collect Sporttery historical handicap markets
         run: python data_pipeline/collect_sporttery_history.py
         continue-on-error: true
+      - name: Collect real player match data
+        run: python data_pipeline/collect_player_data.py
+        timeout-minutes: 30
       - name: Collect SofaScore Asian handicap markets
         run: python data_pipeline/collect_sofascore_handicap.py
         timeout-minutes: 20
         continue-on-error: true
-      - name: Collect real player match data
-        run: python data_pipeline/collect_player_data.py
       - name: Build leakage-safe model features
         run: python data_pipeline/build_features.py
       - name: Build T-12h lineup impact projection
