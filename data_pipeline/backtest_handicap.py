@@ -125,18 +125,18 @@ def main():
             pred=max(p,key=p.get)
             confidence=p[pred]
             add_metric(overall,pred,actual,p,confidence)
-            add_metric(by_source_line,f"{pool}|{line:g}",pred,actual,p,confidence)
-            add_metric(by_league_line,f"{league}|{pool}|{line:g}",pred,actual,p,confidence)
-            add_metric(by_conf,confidence_bin(confidence),pred,actual,p,confidence)
+            add_metric(by_source_line[f"{pool}|{line:g}"],pred,actual,p,confidence)
+            add_metric(by_league_line[f"{league}|{pool}|{line:g}"],pred,actual,p,confidence)
+            add_metric(by_conf[confidence_bin(confidence)],pred,actual,p,confidence)
             usable+=1
 
         out_models[model]={
             "eligible_rows":len(rows),
             "usable_integer_handicap_rows":usable,
             "overall":finish(overall),
-            "confidence_calibration":finish(by_conf),
-            "by_source_and_line":finish(by_source_line),
-            "by_league_and_line":finish(by_league_line)
+            "confidence_calibration":{k:finish(v) for k,v in sorted(by_conf.items())},
+            "by_source_and_line":{k:finish(v) for k,v in sorted(by_source_line.items())},
+            "by_league_and_line":{k:finish(v) for k,v in sorted(by_league_line.items())}
         }
 
     payload={
