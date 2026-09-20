@@ -71,6 +71,22 @@ def ingest_file(conn, league, code, competition_id, season_label, season_code):
                 (mid, int(ht_h) if ht_h else None, int(ht_a) if ht_a else None,
                  int(ft_h), int(ft_a), r.get("FTR"), iso_date, "verified_external")
             )
+            # Secondary bookmaker Asian-handicap context from Football-Data.
+            # This is NOT the Sporttery hhad pool.
+            try:
+                ah = r.get("AHh")
+                avh = r.get("BbAvAHH")
+                ava = r.get("BbAvAHA")
+                if ah not in (None, "") and avh not in (None, "") and ava not in (None, ""):
+                    conn.execute(
+                        """INSERT INTO sporttery_market
+                        (match_id,pool_code,handicap,home_value,draw_value,away_value,captured_at,source_status)
+                        VALUES (?,?,?,?,?,?,?,?)""",
+                        (mid, "asian_handicap_avg", float(ah), float(avh), None,
+                         float(ava), iso_date, "football_data_secondary")
+                    )
+            except (TypeError, ValueError):
+                pass
         n += 1
     conn.commit()
     return n
