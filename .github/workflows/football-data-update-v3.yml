@@ -64,6 +64,20 @@ jobs:
         run: python data_pipeline/collect_sofascore_handicap.py
         timeout-minutes: 20
         continue-on-error: true
+      - name: Free FBref player-data fallback
+        run: |
+          python - <<'PY'
+          import sqlite3
+          n=sqlite3.connect("football_model_database.sqlite").execute(
+              "SELECT COUNT(*) FROM player_match_stats"
+          ).fetchone()[0]
+          print(f"existing_player_rows={n}")
+          if n > 0:
+              raise SystemExit(0)
+          PY
+          python data_pipeline/collect_fbref_player_data.py
+        timeout-minutes: 45
+        continue-on-error: true
       # Optional enrichment must never block the core V1-V4 model pipeline.
       - name: Build leakage-safe model features
         if: ${{ always() }}
