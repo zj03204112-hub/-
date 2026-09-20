@@ -140,6 +140,31 @@ def calibration_bins(items):
 def blend(p3,p4,w):
     return {k:(1-w)*p3[k]+w*p4[k] for k in ("H","D","A")}
 
+def temperature_nll(items, temperature):
+    total=0.0
+    for p,a in items:
+        z={k:math.log(max(1e-12,p[k]))/temperature for k in ("H","D","A")}
+        mx=max(z.values()); ex={k:math.exp(z[k]-mx) for k in z}
+        s=sum(ex.values())
+        total -= math.log(max(1e-12,ex[a]/s))
+    return total/max(1,len(items))
+
+def fit_temperature(items):
+    # Fit only on an earlier chronological slice; never optimize on the
+    # evaluation slice. A small grid is deliberately conservative.
+    best_t,best=float(1.0),float("inf")
+    for i in range(14):
+        t=0.70+i*0.10
+        nll=temperature_nll(items,t)
+        if nll<best:
+            best,best_t=nll,t
+    return round(best_t,2)
+
+def apply_temperature(p,t):
+    z={k:math.log(max(1e-12,p[k]))/t for k in ("H","D","A")}
+    mx=max(z.values()); ex={k:math.exp(z[k]-mx) for k in z}; s=sum(ex.values())
+    return {k:ex[k]/s for k in ex}
+
 def lineup_ablation(con, matches, model="v3"):
     """Compare identical T-12h predictions with sourced lineup deltas enabled/disabled."""
     arms={}
@@ -198,23 +223,33 @@ def main():
             best_brier=b; best_w=w
 
     hold={}
+    calibration_params={}
     for label,fn in [
         ("v3",lambda p3,p4:p3),
         ("v4",lambda p3,p4:p4),
         ("blend",lambda p3,p4:blend(p3,p4,best_w))
     ]:
+        train_items=[(fn(p3,p4),a) for p3,p4,a,_,_ in pair[:split]]
+        temperature=fit_temperature(train_items)
+        calibration_params[label]={"temperature":temperature,"fit_n":len(train_items)}
         d={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
         items=[]
         for p3,p4,a,rs_h,rs_a in pair[split:]:
             p=fn(p3,p4); metrics_add(d,p,a); items.append((p,a))
         hold[label]=finish(d); hold[label]["calibration"]=calibration_bins(items)
+        calibrated_items=[(apply_temperature(p,temperature),a) for p,a in items]
+        cd={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
+        for p,a in calibrated_items: metrics_add(cd,p,a)
+        hold[label]["calibrated_probability_metrics"]=finish(cd)
+        hold[label]["calibrated_confidence"]=calibration_bins(calibrated_items)
 
     result["chronological_holdout"]={
         "train_fraction":0.60,
         "test_fraction":round((len(matches)-split)/len(matches),4),
         "blend_weight_v4":best_w,
         "weight_grid_step":0.05,
-        "models":hold
+        "models":hold,
+        "temperature_calibration":calibration_params
     }
 
     strata={}
