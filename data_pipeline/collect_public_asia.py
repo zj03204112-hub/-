@@ -106,7 +106,7 @@ def ingest(conn, code, cid, url):
              status, source_status, primary_source_id)
             VALUES (?,?,?,?,?,?,?,?,?)""",
             (match_id, cid, sid, kickoff, home, away,
-             "finished" if completed else "scheduled", "verified_external", 5)
+             "finished" if completed else "scheduled", "verified_external", 6)
         )
         if completed:
             result = "H" if ft_h > ft_a else ("A" if ft_h < ft_a else "D")
