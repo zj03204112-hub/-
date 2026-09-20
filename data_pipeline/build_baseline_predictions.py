@@ -2,7 +2,7 @@ import json, math, sqlite3
 from datetime import datetime, timedelta
 
 DB="football_model_database.sqlite"
-MODEL="dc_poisson_t12_v2"
+MODEL="dc_strength_t12_v3"
 
 def hist(con,team,cutoff):
     rows=con.execute("""
@@ -48,6 +48,17 @@ def dc_matrix(lh,la):
     total=sum(sum(r) for r in m)
     return [[v/total for v in row] for row in m]
 
+def opponent_adjusted_rates(con,team,side,match_id,hgf,hga):
+    row=con.execute(
+        "SELECT opponent_strength FROM team_features WHERE match_id=? AND team_side=?",
+        (match_id,side)
+    ).fetchone()
+    os=float(row[0]) if row and row[0] is not None else 1.5
+    os=max(0.75,min(2.25,os))
+    # Modest opponent-quality correction; avoid overfitting early-season samples.
+    factor=max(0.90,min(1.10,(os/1.5)**0.25))
+    return hgf*factor, hga/factor, os
+
 def main():
     con=sqlite3.connect(DB)
     matches=con.execute("""
@@ -66,8 +77,23 @@ def main():
         cutoff=(ko-timedelta(hours=12)).isoformat(timespec="seconds")
         hh=hist(con,home,cutoff); ah=hist(con,away,cutoff)
         hgf,hga=rates(hh); agf,aga=rates(ah)
+        hgf,hga,hos=opponent_adjusted_rates(con,home,"home",mid,hgf,hga)
+        agf,aga,aos=opponent_adjusted_rates(con,away,"away",mid,agf,aga)
         lam_h=max(0.15,min(4.0,0.65+0.58*hgf+0.30*aga))
         lam_a=max(0.12,min(3.5,0.58+0.58*agf+0.30*hga))
+        # Next-match congestion/rotation adjustment, using only schedule metadata.
+        sched=con.execute(
+            "SELECT rotation_risk,motivation_adjustment FROM schedule_intent WHERE match_id=? AND team_side=?",
+            (mid,"home")
+        ).fetchone()
+        if sched:
+            lam_h*=max(0.94,1.0+float(sched[1] or 0.0))
+        sched=con.execute(
+            "SELECT rotation_risk,motivation_adjustment FROM schedule_intent WHERE match_id=? AND team_side=?",
+            (mid,"away")
+        ).fetchone()
+        if sched:
+            lam_a*=max(0.94,1.0+float(sched[1] or 0.0))
         matrix=dc_matrix(lam_h,lam_a)
         ph=sum(matrix[i][j] for i in range(MAX_GOALS) for j in range(MAX_GOALS) if i>j)
         pd=sum(matrix[i][j] for i in range(7) for j in range(7) if i==j)
