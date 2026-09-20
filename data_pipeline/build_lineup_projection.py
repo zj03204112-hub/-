@@ -35,9 +35,54 @@ def build(con,mid,side,cut):
         influence=attack+0.01*def90
         feats.append((pid,rs[0][1],starts,app,em,attack,defense,influence,sum(x[4] for x in rs)))
     if not feats: return 0.0,0.0,0.0,0
-    # Expected XI: top 11 by start probability, with expected minutes as tiebreaker.
+    # Position-constrained expected XI. We do not use the final match XI;
+    # only historical T-12h player records before the cutoff are eligible.
     feats.sort(key=lambda x:(x[2],x[4]),reverse=True)
-    xi=feats[:11]
+    buckets={"G":[],"D":[],"M":[],"F":[],"O":[]}
+    for x in feats:
+        pos=str(x[2] if False else "")  # position is kept below via the tuple extension
+    # Rebuild with position carried explicitly for tactical feasibility.
+    raw=[]
+    for pid,name,starts,app,em,attack,defense,influence,totalmins in feats:
+        row=next((r for r in by[pid] if r[1]==name),None)
+        pos=(row[2] if row else None) or "O"
+        buckets.setdefault(pos,[]).append((pid,name,starts,app,em,attack,defense,influence,totalmins,pos))
+    for k in buckets:
+        buckets[k].sort(key=lambda x:(x[2],x[4]),reverse=True)
+
+    xi=[]
+    if buckets["G"]:
+        xi.append(buckets["G"][0])
+    # Football-plausible positional bounds; remaining slots are filled by
+    # strongest available players without forcing an artificial formation.
+    targets={"D":3,"M":2,"F":1}
+    maxes={"D":5,"M":5,"F":4}
+    used={x[0] for x in xi}
+    for pos,nmin in targets.items():
+        for x in buckets[pos]:
+            if len([z for z in xi if z[-1]==pos])>=nmin or len(xi)>=11:
+                break
+            xi.append(x); used.add(x[0])
+    remaining=[]
+    for x in buckets["D"]+buckets["M"]+buckets["F"]+buckets["O"]:
+        if x[0] not in used:
+            remaining.append(x)
+    remaining.sort(key=lambda x:(x[2],x[4]),reverse=True)
+    for x in remaining:
+        pos=x[-1]
+        count=sum(1 for z in xi if z[-1]==pos)
+        if pos in maxes and count>=maxes[pos]:
+            continue
+        if len(xi)>=11:
+            break
+        xi.append(x); used.add(x[0])
+    # If unusual data leaves fewer than 11, fill from all remaining records.
+    if len(xi)<11:
+        for x in remaining:
+            if x[0] not in used:
+                xi.append(x); used.add(x[0])
+                if len(xi)>=11: break
+
     # Compare expected XI to a replacement baseline from the remaining squad.
     pool=feats[11:]
     rep_attack=sum(x[5] for x in pool)/len(pool) if pool else 0.0
