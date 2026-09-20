@@ -1,4 +1,5 @@
 import hashlib, json, sqlite3, time, unicodedata, re
+from difflib import SequenceMatcher
 from datetime import datetime, timezone
 import requests
 
@@ -18,6 +19,39 @@ LEAGUES={
 def norm(s):
     s=unicodedata.normalize("NFKD",str(s)).encode("ascii","ignore").decode().lower()
     return re.sub(r"[^a-z0-9]","",s)
+
+TEAM_ALIASES={
+  "psg":"parissaintgermain",
+  "parissg":"parissaintgermain",
+  "bayernmunich":"bayernmunchen",
+  "intermilan":"inter",
+  "sportinglisbon":"sportingcp"
+}
+
+def team_key(s):
+    return TEAM_ALIASES.get(norm(s), norm(s))
+
+def similarity(a,b):
+    a,b=team_key(a),team_key(b)
+    if not a or not b: return 0.0
+    if a==b or a in b or b in a: return 1.0
+    return SequenceMatcher(None,a,b).ratio()
+
+def find_match(matches,home,away,d):
+    target=datetime.fromisoformat(d).date()
+    candidates=[]
+    for (h,a,md),mid in matches.items():
+        delta=abs((datetime.fromisoformat(md).date()-target).days)
+        if delta>1: continue
+        sh,sa=similarity(home,h),similarity(away,a)
+        score=0.47*sh+0.47*sa+0.06*(1-delta)
+        if sh>=0.72 and sa>=0.72:
+            candidates.append((score,mid))
+    if not candidates: return None
+    candidates.sort(reverse=True)
+    if len(candidates)>1 and candidates[0][0]-candidates[1][0]<0.025:
+        return None
+    return candidates[0][1]
 
 def client():
     try:
@@ -124,10 +158,9 @@ def main():
                 away=((e.get("awayTeam") or {}).get("name",""))
                 mid=matches.get((norm(home),norm(away),d))
                 if not mid:
-                    # team naming can differ; try reverse lookup by date + contains
-                    cand=[v for k,v in matches.items() if k[2]==d and norm(home) in k[0] and norm(away) in k[1]]
-                    mid=cand[0] if cand else None
-                if not mid: skipped+=1; continue
+                    mid=find_match(matches,home,away,d)
+                if not mid:
+                    skipped+=1; continue
                 event_id=str(e.get("id"))
                 con.execute("INSERT OR REPLACE INTO provider_event_map VALUES(?,?,?,?)",(mid,"sofascore",event_id,datetime.utcnow().isoformat(timespec="seconds")))
                 lineup=get(f"/event/{event_id}/lineups")
