@@ -8,6 +8,8 @@ BASES=["https://api.sofascore.com/api/v1","https://www.sofascore.com/api/v1"]
 START="2026-01-01"; END="2026-09-20"
 LEAGUES={17,8,35,23,34,410,196}
 ALIASES={"psg":"parissaintgermain","parissg":"parissaintgermain","bayernmunich":"bayernmunchen","intermilan":"inter","sportinglisbon":"sportingcp"}
+PROVIDER_TIMEOUT=8
+MAX_RETRIES=1
 
 def norm(s):
     s=unicodedata.normalize("NFKD",str(s)).encode("ascii","ignore").decode().lower()
@@ -29,13 +31,17 @@ S.headers.update({"User-Agent":"Mozilla/5.0 Chrome/140 Safari/537.36","Accept":"
 
 def get(path):
     for base in BASES:
-        for i in range(3):
+        for i in range(MAX_RETRIES + 1):
             try:
-                r=S.get(base+path,timeout=25)
+                r=S.get(base+path,timeout=PROVIDER_TIMEOUT)
                 if r.status_code==200:
                     return r.json() or {}
-                time.sleep(min(5,1+i))
-            except Exception: time.sleep(1+i)
+                if r.status_code in (403,429,567):
+                    break
+            except Exception:
+                pass
+            if i < MAX_RETRIES:
+                time.sleep(1)
     return {}
 
 def frac_to_decimal(x):
@@ -57,17 +63,26 @@ def parse_choice(name):
 
 def target_event(e):
     ut=e.get("uniqueTournament") or {}
-    if ut.get("id") is not None and int(ut["id"]) in LEAGUES:return True
-    return False
+    return ut.get("id") is not None and int(ut["id"]) in LEAGUES
 
 def main():
     con=sqlite3.connect(DB)
     matches={}
     dates=set()
-    for mid,ko,h,a in con.execute("SELECT match_id,kickoff,home_team,away_team FROM matches WHERE kickoff>=? AND kickoff<=?",(START,END+"T23:59:59")):
-        d=ko[:10]; dates.add(d); matches[(norm(h),norm(a),d)]=(mid,h,a)
+    for mid,ko,h,a in con.execute("""
+        SELECT m.match_id,m.kickoff,m.home_team,m.away_team
+        FROM matches m
+        WHERE m.kickoff>=? AND m.kickoff<=?
+    """,(START,END+"T23:59:59")):
+        d=ko[:10]; dates.add(d)
+        has_ah=con.execute("""
+            SELECT 1 FROM sporttery_market
+            WHERE match_id=? AND pool_code IN ('asian_handicap_avg','sofascore_asian_featured')
+            LIMIT 1
+        """,(mid,)).fetchone() is not None
+        matches[(norm(h),norm(a),d)]=(mid,h,a,has_ah)
 
-    mapped=rows=events=zero_odds=0
+    mapped=rows=events=zero_odds=skipped_existing=0
     for idx,d in enumerate(sorted(dates),1):
         payload=get(f"/sport/football/scheduled-events/{d}")
         for e in payload.get("events") or []:
@@ -83,7 +98,10 @@ def main():
                         cand.append((sim(home,hh)+sim(away,aa),v))
                 if cand: rec=max(cand,key=lambda x:x[0])[1]
             if not rec:continue
-            mid,dbhome,dbaway=rec; events+=1
+            mid,dbhome,dbaway,has_ah=rec; events+=1
+            if has_ah:
+                skipped_existing+=1
+                continue
             odds=get(f"/event/{e.get('id')}/odds/1/featured")
             asian=(odds.get("featured") or {}).get("asian") or {}
             choices=asian.get("choices") or []
@@ -111,7 +129,9 @@ def main():
               datetime.now(timezone.utc).isoformat(timespec="seconds"),"SofaScore featured Asian handicap"))
             rows+=1; mapped+=1
         if idx%10==0:con.commit()
-        print(json.dumps({"date":d,"progress":f"{idx}/{len(dates)}","mapped":mapped,"rows":rows,"events":events,"no_asian":zero_odds}),flush=True)
+        print(json.dumps({"date":d,"progress":f"{idx}/{len(dates)}","mapped":mapped,"rows":rows,
+                          "events":events,"no_asian":zero_odds,"skipped_existing":skipped_existing}),flush=True)
     con.commit(); con.close()
-    print(json.dumps({"mapped_matches":mapped,"market_rows":rows,"target_events":events,"no_asian":zero_odds},ensure_ascii=False))
+    print(json.dumps({"mapped_matches":mapped,"market_rows":rows,"target_events":events,
+                      "no_asian":zero_odds,"skipped_existing":skipped_existing},ensure_ascii=False))
 if __name__=="__main__":main()

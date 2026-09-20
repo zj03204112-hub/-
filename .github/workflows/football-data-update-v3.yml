@@ -41,6 +41,8 @@ jobs:
           if not db.exists():
               con=sqlite3.connect(db); con.executescript(schema.read_text(encoding="utf-8")); con.close()
           PY
+      - name: Enforce historical collection scope
+        run: python scripts/enforce_collection_scope.py
       - name: Migrate T-12h lineup schema
         run: python scripts/migrate_injury_schema.py
       - name: Migrate player data schema
