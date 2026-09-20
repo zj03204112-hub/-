@@ -206,25 +206,40 @@ def player_stats(lineup, side):
     return out
 
 def scheduled_events(d):
-    # Try both public hosts and prefer the response with the most events.
-    # Some CI/WAF paths return HTTP 200 with an empty events list.
-    best, best_n = {}, -1
+    # The daily schedule can be paginated.  Collect every page so a busy
+    # football day cannot hide target-league fixtures on page 1 only.
+    merged = []
+    seen = set()
+    best_payload = {}
     for base in BASES:
-        for i in range(3):
-            try:
-                r = S.get(base + f"/sport/football/scheduled-events/{d}", timeout=25)
-                if r.status_code != 200:
+        for page in range(0, 12):
+            path = f"/sport/football/scheduled-events/{d}" if page == 0 else f"/sport/football/scheduled-events/{d}/page/{page}"
+            payload = None
+            for i in range(3):
+                try:
+                    r = S.get(base + path, timeout=25)
+                    if r.status_code == 200:
+                        payload = r.json() or {}
+                        break
                     time.sleep(min(6.0, 1.0 * (i + 1)))
-                    continue
-                payload = r.json() or {}
-                n = len(payload.get("events") or [])
-                if n > best_n:
-                    best, best_n = payload, n
-                if n > 0:
-                    break
-            except Exception:
-                time.sleep(1.0 * (i + 1))
-    return best
+                except Exception:
+                    time.sleep(1.0 * (i + 1))
+            if payload is None:
+                break
+            events = payload.get("events") or []
+            for e in events:
+                eid = e.get("id")
+                if eid is not None and eid not in seen:
+                    seen.add(eid)
+                    merged.append(e)
+            if not events:
+                break
+            if not (payload.get("hasNextPage") or len(events) >= 100):
+                break
+        if merged:
+            best_payload = {"events": merged}
+            break
+    return best_payload
 
 def main():
     con = sqlite3.connect(DB)
