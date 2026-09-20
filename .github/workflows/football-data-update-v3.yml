@@ -54,6 +54,9 @@ jobs:
       - name: Collect Sporttery historical handicap markets
         run: python data_pipeline/collect_sporttery_history.py
         continue-on-error: true
+      - name: Collect SofaScore Asian handicap markets
+        run: python data_pipeline/collect_sofascore_handicap.py
+        continue-on-error: true
       - name: Collect real player match data
         run: python data_pipeline/collect_player_data.py
         # Hard quality gate: zero provider events / mapped matches / player rows
