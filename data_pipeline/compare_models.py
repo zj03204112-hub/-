@@ -101,18 +101,80 @@ def run_model(con,model,match):
        "A":sum(m[i][j] for i in range(N) for j in range(N) if i<j)}
     return p,("H" if fh>fa else "D" if fh==fa else "A")
 
+def calibration_bins(items):
+    bins={}
+    for p,a in items:
+        conf=max(p.values())
+        key=("0.33-0.40" if conf<.40 else "0.40-0.50" if conf<.50 else
+             "0.50-0.60" if conf<.60 else "0.60-0.70" if conf<.70 else
+             "0.70-0.80" if conf<.80 else "0.80-0.90" if conf<.90 else "0.90-1.00")
+        d=bins.setdefault(key,{"n":0,"correct":0,"confidence_sum":0.0})
+        d["n"]+=1; d["correct"]+=int(max(p,key=p.get)==a); d["confidence_sum"]+=conf
+    return {k:{"n":v["n"],"empirical_hit_rate":round(v["correct"]/v["n"],4),
+               "mean_confidence":round(v["confidence_sum"]/v["n"],4),
+               "calibration_gap":round(v["confidence_sum"]/v["n"]-v["correct"]/v["n"],4)}
+            for k,v in bins.items()}
+
+def blend(p3,p4,w):
+    return {k:(1-w)*p3[k]+w*p4[k] for k in ("H","D","A")}
+
 def main():
     con=sqlite3.connect(DB)
     matches=con.execute("""SELECT m.match_id,m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away
       FROM matches m JOIN results r ON r.match_id=m.match_id
-      WHERE m.status='finished' AND r.ft_home IS NOT NULL ORDER BY m.kickoff,m.match_id""").fetchall()
+      WHERE m.status='finished' AND r.ft_home IS NOT NULL
+      ORDER BY m.kickoff,m.match_id""").fetchall()
+
     result={}
+    cache=[]
     for model in ("v1","v2","v3","v4"):
         d={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
+        items=[]
         for match in matches:
-            p,a=run_model(con,model,match); metrics_add(d,p,a)
+            p,a=run_model(con,model,match); metrics_add(d,p,a); items.append((p,a))
         result[model]=finish(d)
-    payload={"definition":"Leakage-safe T-12h comparison. V1 Poisson; V2 Dixon-Coles; V3 adds opponent strength and schedule intent; V4 adds recency-weighted dynamic attack/defence states with opponent-quality adjustment. V4 is experimental and must be validated out-of-sample before production use.","models":result}
+        result[model]["calibration"]=calibration_bins(items)
+
+    # Chronological holdout: choose the V3/V4 blend weight only on the first 60%,
+    # then evaluate once on the later 40%. This avoids selecting the blend on its test data.
+    split=max(1,int(len(matches)*0.60))
+    pair=[]
+    for match in matches:
+        p3,a=run_model(con,"v3",match)
+        p4,_=run_model(con,"v4",match)
+        pair.append((p3,p4,a))
+    best_w=0.0; best_brier=float("inf")
+    for step in range(21):
+        w=step/20
+        b=0.0
+        for p3,p4,a in pair[:split]:
+            p=blend(p3,p4,w); y={k:0 for k in p}; y[a]=1
+            b+=sum((p[k]-y[k])**2 for k in p)
+        b/=split
+        if b<best_brier:
+            best_brier=b; best_w=w
+
+    hold={}
+    for label,fn in [
+        ("v3",lambda p3,p4:p3),
+        ("v4",lambda p3,p4:p4),
+        ("blend",lambda p3,p4:blend(p3,p4,best_w))
+    ]:
+        d={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
+        items=[]
+        for p3,p4,a in pair[split:]:
+            p=fn(p3,p4); metrics_add(d,p,a); items.append((p,a))
+        hold[label]=finish(d); hold[label]["calibration"]=calibration_bins(items)
+
+    result["chronological_holdout"]={
+        "train_fraction":0.60,
+        "test_fraction":round((len(matches)-split)/len(matches),4),
+        "blend_weight_v4":best_w,
+        "weight_grid_step":0.05,
+        "models":hold
+    }
+
+    payload={"definition":"Leakage-safe T-12h comparison. V1 Poisson; V2 Dixon-Coles; V3 adds opponent strength and schedule intent; V4 adds recency-weighted dynamic attack/defence states with opponent-quality adjustment. V4 is experimental. Calibration and V3/V4 blend are selected/evaluated chronologically rather than on the same test slice.","models":result}
     with open(OUT,"w",encoding="utf-8") as f: json.dump(payload,f,ensure_ascii=False,indent=2)
     print(json.dumps(payload,ensure_ascii=False)); con.close()
 
