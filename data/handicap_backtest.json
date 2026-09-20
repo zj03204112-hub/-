@@ -215,6 +215,104 @@
             "confidence_hit_gap": 0.0597
           }
         }
+      },
+      "score_mapping_audit": {
+        "n": 264,
+        "top1_consistent": 101,
+        "top2_consistent": 184,
+        "both_consistent": 30,
+        "inconsistent_examples": [
+          {
+            "match_id": "d45f6663cc1f4f24a500",
+            "line": -1,
+            "pred": "A",
+            "score1": "1-1",
+            "score1_result": "A",
+            "score2": "2-1",
+            "score2_result": "D"
+          },
+          {
+            "match_id": "bba4a74043ca9417567c",
+            "line": 0,
+            "pred": "H",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "2-1",
+            "score2_result": "H"
+          },
+          {
+            "match_id": "4ae7b06f23d75bd26d86",
+            "line": -1,
+            "pred": "A",
+            "score1": "1-1",
+            "score1_result": "A",
+            "score2": "2-1",
+            "score2_result": "D"
+          },
+          {
+            "match_id": "aa675c3da99f3907c5ef",
+            "line": 0,
+            "pred": "H",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "2-1",
+            "score2_result": "H"
+          },
+          {
+            "match_id": "74c57bc566b37ed7da7d",
+            "line": 0,
+            "pred": "H",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "2-1",
+            "score2_result": "H"
+          },
+          {
+            "match_id": "3bcd04be4b9eeab56641",
+            "line": 0,
+            "pred": "H",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "2-1",
+            "score2_result": "H"
+          },
+          {
+            "match_id": "5c5b5b2b653b34ef2978",
+            "line": 0,
+            "pred": "A",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "0-1",
+            "score2_result": "A"
+          },
+          {
+            "match_id": "dfc95bd08d10a3d877c2",
+            "line": 0,
+            "pred": "H",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "2-1",
+            "score2_result": "H"
+          },
+          {
+            "match_id": "b8c4153c690684499e85",
+            "line": 0,
+            "pred": "A",
+            "score1": "1-2",
+            "score1_result": "A",
+            "score2": "1-1",
+            "score2_result": "D"
+          },
+          {
+            "match_id": "4ba643d29f1768c6fd8c",
+            "line": -1,
+            "pred": "H",
+            "score1": "2-1",
+            "score1_result": "D",
+            "score2": "3-1",
+            "score2_result": "H"
+          }
+        ]
       }
     },
     "v4": {
@@ -432,6 +530,104 @@
             "confidence_hit_gap": 0.0853
           }
         }
+      },
+      "score_mapping_audit": {
+        "n": 264,
+        "top1_consistent": 98,
+        "top2_consistent": 181,
+        "both_consistent": 23,
+        "inconsistent_examples": [
+          {
+            "match_id": "d45f6663cc1f4f24a500",
+            "line": -1,
+            "pred": "A",
+            "score1": "1-1",
+            "score1_result": "A",
+            "score2": "2-1",
+            "score2_result": "D"
+          },
+          {
+            "match_id": "bba4a74043ca9417567c",
+            "line": 0,
+            "pred": "H",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "2-1",
+            "score2_result": "H"
+          },
+          {
+            "match_id": "4ae7b06f23d75bd26d86",
+            "line": -1,
+            "pred": "A",
+            "score1": "1-1",
+            "score1_result": "A",
+            "score2": "2-1",
+            "score2_result": "D"
+          },
+          {
+            "match_id": "aa675c3da99f3907c5ef",
+            "line": 0,
+            "pred": "H",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "2-1",
+            "score2_result": "H"
+          },
+          {
+            "match_id": "74c57bc566b37ed7da7d",
+            "line": 0,
+            "pred": "H",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "2-1",
+            "score2_result": "H"
+          },
+          {
+            "match_id": "3bcd04be4b9eeab56641",
+            "line": 0,
+            "pred": "H",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "2-1",
+            "score2_result": "H"
+          },
+          {
+            "match_id": "5c5b5b2b653b34ef2978",
+            "line": 0,
+            "pred": "A",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "0-1",
+            "score2_result": "A"
+          },
+          {
+            "match_id": "dfc95bd08d10a3d877c2",
+            "line": 0,
+            "pred": "H",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "2-1",
+            "score2_result": "H"
+          },
+          {
+            "match_id": "b8c4153c690684499e85",
+            "line": 0,
+            "pred": "A",
+            "score1": "1-1",
+            "score1_result": "D",
+            "score2": "1-2",
+            "score2_result": "A"
+          },
+          {
+            "match_id": "4ba643d29f1768c6fd8c",
+            "line": -1,
+            "pred": "A",
+            "score1": "1-1",
+            "score1_result": "A",
+            "score2": "2-1",
+            "score2_result": "D"
+          }
+        ]
       }
     }
   },
