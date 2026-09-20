@@ -56,6 +56,10 @@ jobs:
       - name: Collect Sporttery historical handicap markets
         run: python data_pipeline/collect_sporttery_history.py
         continue-on-error: true
+      - name: Collect SGOdds opening integer handicap markets
+        run: python data_pipeline/collect_sgodds_handicap.py
+        timeout-minutes: 15
+        continue-on-error: true
       - name: Collect real player match data
         run: python data_pipeline/collect_player_data.py
         timeout-minutes: 30
