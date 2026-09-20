@@ -6,7 +6,7 @@ DB="football_model_database.sqlite"
 OUT="data/handicap_backtest.json"
 RHO=-0.05
 PRIORITY={"hhad":5,"asian_handicap_avg":4,"sofascore_asian_featured":3,
-          "football_data_ah_close":2,"football_data_ah_bookmaker":1,"football_data_ah_open":1}
+          "sgodds_open":2,"football_data_ah_close":2,"football_data_ah_bookmaker":1,"football_data_ah_open":1}
 
 def pois(lam,k): return math.exp(-lam)*lam**k/math.factorial(k)
 def tau(x,y,lh,la):
@@ -76,7 +76,7 @@ def main():
       JOIN matches m ON m.match_id=sm.match_id
       JOIN competitions c ON c.competition_id=m.competition_id
       WHERE sm.handicap IS NOT NULL
-        AND sm.pool_code IN ('asian_handicap_avg','hhad','sofascore_asian_featured','football_data_ah_close','football_data_ah_bookmaker','football_data_ah_open')
+        AND sm.pool_code IN ('asian_handicap_avg','hhad','sofascore_asian_featured','football_data_ah_close','football_data_ah_bookmaker','football_data_ah_open','sgodds_open')
         AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL AND m.status='finished'
       ORDER BY m.kickoff,sm.match_id
     """).fetchall()
@@ -163,7 +163,7 @@ def main():
       "mapping":{"home_minus_1":"line=-1","home_0":"line=0","home_plus_1":"line=+1",
                  "settlement":"H if home_goals+line>away_goals; D if equal; A if lower",
                  "quarter_and_half_lines":"excluded from this 3-way integer module"},
-      "market_priority":["hhad","asian_handicap_avg","sofascore_asian_featured"],
+      "market_priority":["hhad","asian_handicap_avg","sofascore_asian_featured","sgodds_open","football_data_ah_close"],
       "calibration":"Temperature fitted on first 60% chronologically; evaluated on later 40%. Line-specific calibration requires >=20 chronological training samples, otherwise global temperature is used. Minimum is intentionally lower only for integer handicap strata; thin strata remain separately reported.",
       "notes":["V3 remains production baseline candidate; V4 remains experimental.",
                "Handicap is evaluation context, not a direct prediction feature.",
