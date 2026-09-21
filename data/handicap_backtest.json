@@ -1,7 +1,7 @@
 {
   "models": {
     "v3": {
-      "eligible_market_rows": 4120,
+      "eligible_market_rows": 4544,
       "deduped_match_line_rows": 187,
       "test_rows": 75,
       "raw": {
@@ -20,6 +20,14 @@
         "mean_confidence": 0.4328,
         "confidence_hit_gap": -0.0072
       },
+      "prior_calibrated": {
+        "n": 75,
+        "accuracy": 0.4267,
+        "brier": 0.6309,
+        "logloss": 1.0429,
+        "mean_confidence": 0.4482,
+        "confidence_hit_gap": 0.0215
+      },
       "temperature_global": 2.0,
       "temperature_by_integer_line": {
         "-3": 2.0,
@@ -27,6 +35,20 @@
         "-1": 2.0,
         "1": 2.0,
         "2": 2.0
+      },
+      "nonzero_class_prior_weight": 0.5,
+      "nonzero_class_prior_alpha": 3.0,
+      "nonzero_pooled_class_prior": {
+        "H": 0.38016528925619836,
+        "D": 0.2644628099173554,
+        "A": 0.35537190082644626
+      },
+      "nonzero_line_prior_training_n": {
+        "-3": 1,
+        "-2": 8,
+        "-1": 67,
+        "1": 35,
+        "2": 1
       },
       "confidence_calibration_raw": {
         "0.40-0.50": {
@@ -104,6 +126,40 @@
           "confidence_hit_gap": -0.3768
         }
       },
+      "confidence_calibration_prior_calibrated": {
+        "0.33-0.40": {
+          "n": 6,
+          "accuracy": 0.1667,
+          "brier": 0.6434,
+          "logloss": 1.0564,
+          "mean_confidence": 0.3937,
+          "confidence_hit_gap": 0.227
+        },
+        "0.40-0.50": {
+          "n": 64,
+          "accuracy": 0.4375,
+          "brier": 0.6393,
+          "logloss": 1.0554,
+          "mean_confidence": 0.4458,
+          "confidence_hit_gap": 0.0083
+        },
+        "0.50-0.60": {
+          "n": 4,
+          "accuracy": 0.5,
+          "brier": 0.5869,
+          "logloss": 0.9712,
+          "mean_confidence": 0.5201,
+          "confidence_hit_gap": 0.0201
+        },
+        "0.60-0.70": {
+          "n": 1,
+          "accuracy": 1.0,
+          "brier": 0.1966,
+          "logloss": 0.4494,
+          "mean_confidence": 0.638,
+          "confidence_hit_gap": -0.362
+        }
+      },
       "by_line": {
         "-2": {
           "raw": {
@@ -121,6 +177,14 @@
             "logloss": 1.0462,
             "mean_confidence": 0.4682,
             "confidence_hit_gap": -0.0318
+          },
+          "prior_calibrated": {
+            "n": 16,
+            "accuracy": 0.5,
+            "brier": 0.6237,
+            "logloss": 1.0273,
+            "mean_confidence": 0.4799,
+            "confidence_hit_gap": -0.0201
           }
         },
         "-1": {
@@ -139,6 +203,14 @@
             "logloss": 1.0647,
             "mean_confidence": 0.4247,
             "confidence_hit_gap": 0.0193
+          },
+          "prior_calibrated": {
+            "n": 37,
+            "accuracy": 0.4054,
+            "brier": 0.64,
+            "logloss": 1.0555,
+            "mean_confidence": 0.4361,
+            "confidence_hit_gap": 0.0307
           }
         },
         "1": {
@@ -157,6 +229,14 @@
             "logloss": 1.0677,
             "mean_confidence": 0.4151,
             "confidence_hit_gap": -0.0059
+          },
+          "prior_calibrated": {
+            "n": 19,
+            "accuracy": 0.3684,
+            "brier": 0.6485,
+            "logloss": 1.0729,
+            "mean_confidence": 0.4407,
+            "confidence_hit_gap": 0.0723
           }
         },
         "2": {
@@ -175,6 +255,14 @@
             "logloss": 0.8345,
             "mean_confidence": 0.456,
             "confidence_hit_gap": -0.2106
+          },
+          "prior_calibrated": {
+            "n": 3,
+            "accuracy": 0.6667,
+            "brier": 0.4463,
+            "logloss": 0.7816,
+            "mean_confidence": 0.476,
+            "confidence_hit_gap": -0.1907
           }
         }
       },
@@ -195,6 +283,14 @@
             "logloss": 1.0697,
             "mean_confidence": 0.4323,
             "confidence_hit_gap": 0.0156
+          },
+          "prior_calibrated": {
+            "n": 48,
+            "accuracy": 0.3958,
+            "brier": 0.6453,
+            "logloss": 1.0651,
+            "mean_confidence": 0.4479,
+            "confidence_hit_gap": 0.0521
           }
         },
         "football_data_ah_close": {
@@ -213,6 +309,14 @@
             "logloss": 1.0213,
             "mean_confidence": 0.4337,
             "confidence_hit_gap": -0.0478
+          },
+          "prior_calibrated": {
+            "n": 27,
+            "accuracy": 0.4815,
+            "brier": 0.6053,
+            "logloss": 1.0035,
+            "mean_confidence": 0.4487,
+            "confidence_hit_gap": -0.0328
           }
         }
       },
@@ -225,7 +329,7 @@
       }
     },
     "v4": {
-      "eligible_market_rows": 4120,
+      "eligible_market_rows": 4544,
       "deduped_match_line_rows": 187,
       "test_rows": 75,
       "raw": {
@@ -244,6 +348,14 @@
         "mean_confidence": 0.4345,
         "confidence_hit_gap": -0.0189
       },
+      "prior_calibrated": {
+        "n": 75,
+        "accuracy": 0.4533,
+        "brier": 0.6276,
+        "logloss": 1.0392,
+        "mean_confidence": 0.4501,
+        "confidence_hit_gap": -0.0032
+      },
       "temperature_global": 2.0,
       "temperature_by_integer_line": {
         "-3": 2.0,
@@ -251,6 +363,20 @@
         "-1": 2.0,
         "1": 2.0,
         "2": 2.0
+      },
+      "nonzero_class_prior_weight": 0.5,
+      "nonzero_class_prior_alpha": 3.0,
+      "nonzero_pooled_class_prior": {
+        "H": 0.38016528925619836,
+        "D": 0.2644628099173554,
+        "A": 0.35537190082644626
+      },
+      "nonzero_line_prior_training_n": {
+        "-3": 1,
+        "-2": 8,
+        "-1": 67,
+        "1": 35,
+        "2": 1
       },
       "confidence_calibration_raw": {
         "0.33-0.40": {
@@ -328,6 +454,40 @@
           "confidence_hit_gap": -0.3866
         }
       },
+      "confidence_calibration_prior_calibrated": {
+        "0.33-0.40": {
+          "n": 6,
+          "accuracy": 0.5,
+          "brier": 0.6753,
+          "logloss": 1.1169,
+          "mean_confidence": 0.3922,
+          "confidence_hit_gap": -0.1078
+        },
+        "0.40-0.50": {
+          "n": 59,
+          "accuracy": 0.4407,
+          "brier": 0.6304,
+          "logloss": 1.0441,
+          "mean_confidence": 0.4433,
+          "confidence_hit_gap": 0.0026
+        },
+        "0.50-0.60": {
+          "n": 9,
+          "accuracy": 0.4444,
+          "brier": 0.6239,
+          "logloss": 1.0187,
+          "mean_confidence": 0.514,
+          "confidence_hit_gap": 0.0696
+        },
+        "0.60-0.70": {
+          "n": 1,
+          "accuracy": 1.0,
+          "brier": 0.2073,
+          "logloss": 0.4648,
+          "mean_confidence": 0.6283,
+          "confidence_hit_gap": -0.3717
+        }
+      },
       "by_line": {
         "-2": {
           "raw": {
@@ -345,6 +505,14 @@
             "logloss": 1.0503,
             "mean_confidence": 0.4763,
             "confidence_hit_gap": -0.0237
+          },
+          "prior_calibrated": {
+            "n": 16,
+            "accuracy": 0.5,
+            "brier": 0.6254,
+            "logloss": 1.0312,
+            "mean_confidence": 0.4884,
+            "confidence_hit_gap": -0.0116
           }
         },
         "-1": {
@@ -363,6 +531,14 @@
             "logloss": 1.0598,
             "mean_confidence": 0.4227,
             "confidence_hit_gap": -0.0097
+          },
+          "prior_calibrated": {
+            "n": 37,
+            "accuracy": 0.4324,
+            "brier": 0.636,
+            "logloss": 1.0503,
+            "mean_confidence": 0.434,
+            "confidence_hit_gap": 0.0015
           }
         },
         "1": {
@@ -381,6 +557,14 @@
             "logloss": 1.0683,
             "mean_confidence": 0.4175,
             "confidence_hit_gap": 0.0491
+          },
+          "prior_calibrated": {
+            "n": 19,
+            "accuracy": 0.3684,
+            "brier": 0.6487,
+            "logloss": 1.0737,
+            "mean_confidence": 0.4435,
+            "confidence_hit_gap": 0.0751
           }
         },
         "2": {
@@ -399,6 +583,14 @@
             "logloss": 0.7784,
             "mean_confidence": 0.463,
             "confidence_hit_gap": -0.537
+          },
+          "prior_calibrated": {
+            "n": 3,
+            "accuracy": 1.0,
+            "brier": 0.4026,
+            "logloss": 0.7261,
+            "mean_confidence": 0.4877,
+            "confidence_hit_gap": -0.5123
           }
         }
       },
@@ -419,6 +611,14 @@
             "logloss": 1.0677,
             "mean_confidence": 0.4336,
             "confidence_hit_gap": 0.017
+          },
+          "prior_calibrated": {
+            "n": 48,
+            "accuracy": 0.4167,
+            "brier": 0.6432,
+            "logloss": 1.0629,
+            "mean_confidence": 0.4494,
+            "confidence_hit_gap": 0.0327
           }
         },
         "football_data_ah_close": {
@@ -437,6 +637,14 @@
             "logloss": 1.0149,
             "mean_confidence": 0.4359,
             "confidence_hit_gap": -0.0826
+          },
+          "prior_calibrated": {
+            "n": 27,
+            "accuracy": 0.5185,
+            "brier": 0.5999,
+            "logloss": 0.997,
+            "mean_confidence": 0.4515,
+            "confidence_hit_gap": -0.067
           }
         }
       },
@@ -449,7 +657,7 @@
       }
     }
   },
-  "definition": "Leakage-safe T-12h integer Asian handicap evaluation with canonical home-perspective line mapping and chronological probability calibration.",
+  "definition": "Leakage-safe T-12h integer Asian handicap evaluation with canonical home-perspective line mapping, chronological temperature calibration, and nonzero-line class-prior calibration.",
   "mapping": {
     "home_minus_1": "line=-1",
     "home_0": "line=0",
@@ -464,11 +672,12 @@
     "sgodds_open",
     "football_data_ah_close"
   ],
-  "calibration": "Temperature fitted on first 60% chronologically; evaluated on later 40%. Line-specific calibration requires >=20 chronological training samples, otherwise global temperature is used. Minimum is intentionally lower only for integer handicap strata; thin strata remain separately reported.",
+  "calibration": "Temperature fitted on first 60% chronologically; evaluated on later 40%. Nonzero class-prior correction is fitted only on the chronological training window with additive smoothing and fixed shrinkage weight; line-specific prior requires >=20 training samples, otherwise pooled nonzero-line prior is used.",
   "notes": [
     "V3 remains production baseline candidate; V4 remains experimental.",
     "Target calibration excludes level-ball line=0; level-ball rows remain stored but are not used for this handicap target.",
     "Handicap is evaluation context, not a direct prediction feature.",
-    "Model confidence and empirical hit rate are reported separately."
+    "Model confidence and empirical hit rate are reported separately.",
+    "Prior-calibrated results are evaluation-only until they beat the baseline on chronological holdout."
   ]
 }
