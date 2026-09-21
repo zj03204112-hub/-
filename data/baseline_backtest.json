@@ -1,28 +1,28 @@
 {
   "model": "dc_strength_t12_v3",
-  "n": 1437,
-  "accuracy": 0.4482,
-  "brier": 0.638,
-  "logloss": 1.0597,
+  "n": 8500,
+  "accuracy": 0.4966,
+  "brier": 0.6186,
+  "logloss": 1.0328,
   "confidence_bins": [
     {
       "bin": "0.5-0.6",
-      "n": 323,
-      "hit_rate": 0.5418
+      "n": 1950,
+      "hit_rate": 0.6021
     },
     {
       "bin": "0.6-0.7",
-      "n": 66,
-      "hit_rate": 0.6818
+      "n": 380,
+      "hit_rate": 0.6868
     },
     {
       "bin": "0.7-0.8",
-      "n": 16,
-      "hit_rate": 0.4375
+      "n": 33,
+      "hit_rate": 0.8485
     },
     {
       "bin": "0.8-0.9",
-      "n": 2,
+      "n": 1,
       "hit_rate": 1.0
     },
     {
