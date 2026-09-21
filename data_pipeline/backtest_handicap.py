@@ -45,6 +45,20 @@ def top_scores(lh,la,n=2):
     total=sum(x[0] for x in scores)
     return sorted([(p/total,i,j) for p,i,j in scores],reverse=True)[:n]
 
+def top_scores_for_result(lh,la,line,pred,n=2):
+    # The score candidates must come from the same full score distribution,
+    # but only from the handicap-result region selected by the model.
+    scores=[]
+    for i in range(10):
+        for j in range(10):
+            p=pois(lh,i)*pois(la,j)*tau(i,j,lh,la)
+            if score_result(i,j,line)==pred:
+                scores.append((p,i,j))
+    total=sum(x[0] for x in scores)
+    if not total:
+        return top_scores(lh,la,n)
+    return sorted([(p/total,i,j) for p,i,j in scores],reverse=True)[:n]
+
 def score_result(i,j,line):
     d=i+line-j
     return "H" if d>0 else "D" if d==0 else "A"
@@ -103,7 +117,7 @@ def main():
             try:
                 lh,la=model_lambdas(con,model,match)
                 p=probs_for_line(lh,la,line)
-                scores=top_scores(lh,la,2)
+                scores=top_scores_for_result(lh,la,line,pred,2)
             except Exception: continue
             pred=max(p,key=p.get)
             r1=score_result(scores[0][1],scores[0][2],line)
