@@ -7,3 +7,5 @@
 <!-- model pipeline: calibration + chronological V3/V4 blend enabled -->
 
 <!-- handicap-coverage-refresh-2026-09-21 -->
+
+<!-- validation-scope-fixed-2026-09-21 -->
