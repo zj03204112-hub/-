@@ -185,6 +185,21 @@ def main():
             add(by_source[s["pool"]]["calibrated"],pred_c,s["actual"],pc)
             add(by_source[s["pool"]]["prior_calibrated"],pred_p,s["actual"],pp)
 
+        # Evaluation-only sensitivity sweep for high-volume ±1 lines.
+        # Report all fixed weights; never select a weight on the test slice.
+        prior_weight_sweep={}
+        for sweep_w in (0.0,0.25,0.5,0.75,1.0):
+            sweep_by_line={}
+            for target_line in (-1,1):
+                mm=metric()
+                for s in samples[split:]:
+                    if s["line"]!=target_line: continue
+                    pc=apply_temperature(s["p"],line_t.get(s["line"],global_t))
+                    pp=apply_class_prior(pc,line_priors.get(s["line"],pooled_prior),weight=sweep_w)
+                    add(mm,max(pp,key=pp.get),s["actual"],pp)
+                sweep_by_line[str(target_line)]=finish(mm)
+            prior_weight_sweep[str(sweep_w)]=sweep_by_line
+
         out_models[model]={
             "eligible_market_rows":len(raw),"deduped_match_line_rows":len(chosen),"test_rows":len(samples)-split,
             "raw":finish(raw_m),"calibrated":finish(cal_m),"prior_calibrated":finish(prior_m),
