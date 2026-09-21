@@ -84,6 +84,7 @@ jobs:
         continue-on-error: true
       # Optional enrichment must never block the core V1-V4 model pipeline.
       # Calibration sweep refresh trigger: regenerate persisted +/-1 prior-weight evaluation.
+      # Rolling validation refresh trigger: regenerate expanding-window backtest output.
       - name: Build leakage-safe model features
         if: ${{ always() }}
         run: python data_pipeline/build_features.py
