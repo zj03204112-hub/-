@@ -117,9 +117,9 @@ def main():
             try:
                 lh,la=model_lambdas(con,model,match)
                 p=probs_for_line(lh,la,line)
-                scores=top_scores_for_result(lh,la,line,pred,2)
             except Exception: continue
             pred=max(p,key=p.get)
+            scores=top_scores_for_result(lh,la,line,pred,2)
             r1=score_result(scores[0][1],scores[0][2],line)
             r2=score_result(scores[1][1],scores[1][2],line)
             audit["n"]+=1
