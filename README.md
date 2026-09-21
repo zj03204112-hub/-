@@ -9,3 +9,5 @@
 <!-- handicap-coverage-refresh-2026-09-21 -->
 
 <!-- validation-scope-fixed-2026-09-21 -->
+
+<!-- tiered-handicap-target-refresh -->
