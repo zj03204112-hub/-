@@ -1,7 +1,7 @@
 {
   "models": {
     "v3": {
-      "eligible_market_rows": 2424,
+      "eligible_market_rows": 3272,
       "deduped_match_line_rows": 375,
       "test_rows": 150,
       "raw": {
@@ -343,7 +343,7 @@
       }
     },
     "v4": {
-      "eligible_market_rows": 2424,
+      "eligible_market_rows": 3272,
       "deduped_match_line_rows": 375,
       "test_rows": 150,
       "raw": {
@@ -688,7 +688,9 @@
   "market_priority": [
     "hhad",
     "asian_handicap_avg",
-    "sofascore_asian_featured"
+    "sofascore_asian_featured",
+    "sgodds_open",
+    "football_data_ah_close"
   ],
   "calibration": "Temperature fitted on first 60% chronologically; evaluated on later 40%. Line-specific calibration requires >=20 chronological training samples, otherwise global temperature is used. Minimum is intentionally lower only for integer handicap strata; thin strata remain separately reported.",
   "notes": [
