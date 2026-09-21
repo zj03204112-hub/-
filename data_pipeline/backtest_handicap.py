@@ -1,5 +1,5 @@
 import json, math, sqlite3
-from collections import defaultdict
+from collections import defaultdict, Counter
 from compare_models import model_lambdas, fit_temperature, apply_temperature
 
 DB="football_model_database.sqlite"
@@ -7,9 +7,9 @@ OUT="data/handicap_backtest.json"
 RHO=-0.05
 PRIORITY={"hhad":5,"asian_handicap_avg":4,"sofascore_asian_featured":3,
           "sgodds_open":2,"football_data_ah_close":2,"football_data_ah_bookmaker":1,"football_data_ah_open":1}
-# Production target is integer Asian handicap, excluding level ball (0).
-# Keep 0-line data in the database, but do not let it affect the target calibration.
 TARGET_LINES={-3,-2,-1,1,2,3}
+PRIOR_WEIGHT=0.50
+PRIOR_ALPHA=3.0
 
 def pois(lam,k): return math.exp(-lam)*lam**k/math.factorial(k)
 def tau(x,y,lh,la):
@@ -39,6 +39,10 @@ def actual_for_line(fh,fa,line):
     d=fh+line-fa
     return "H" if d>0 else "D" if d==0 else "A"
 
+def score_result(i,j,line):
+    d=i+line-j
+    return "H" if d>0 else "D" if d==0 else "A"
+
 def top_scores(lh,la,n=2):
     scores=[]
     for i in range(10):
@@ -49,8 +53,6 @@ def top_scores(lh,la,n=2):
     return sorted([(p/total,i,j) for p,i,j in scores],reverse=True)[:n]
 
 def top_scores_for_result(lh,la,line,pred,n=2):
-    # The score candidates must come from the same full score distribution,
-    # but only from the handicap-result region selected by the model.
     scores=[]
     for i in range(10):
         for j in range(10):
@@ -58,13 +60,8 @@ def top_scores_for_result(lh,la,line,pred,n=2):
             if score_result(i,j,line)==pred:
                 scores.append((p,i,j))
     total=sum(x[0] for x in scores)
-    if not total:
-        return top_scores(lh,la,n)
+    if not total: return top_scores(lh,la,n)
     return sorted([(p/total,i,j) for p,i,j in scores],reverse=True)[:n]
-
-def score_result(i,j,line):
-    d=i+line-j
-    return "H" if d>0 else "D" if d==0 else "A"
 
 def confidence_bin(c):
     return "0.33-0.40" if c<.40 else "0.40-0.50" if c<.50 else "0.50-0.60" if c<.60 else "0.60-0.70" if c<.70 else "0.70-0.80" if c<.80 else "0.80-0.90" if c<.90 else "0.90-1.00"
@@ -74,7 +71,8 @@ def add(d,pred,actual,p):
     y={k:0 for k in p}; y[actual]=1
     d["n"]+=1; d["correct"]+=int(pred==actual)
     d["brier"]+=sum((p[k]-y[k])**2 for k in p)
-    d["logloss"]-=math.log(max(1e-12,p[actual])); d["confidence_sum"]+=max(p.values())
+    d["logloss"]-=math.log(max(1e-12,p[actual]))
+    d["confidence_sum"]+=max(p.values())
 def finish(d):
     n=d["n"]
     return {"n":n,"accuracy":round(d["correct"]/n,4) if n else None,
@@ -82,6 +80,27 @@ def finish(d):
             "logloss":round(d["logloss"]/n,4) if n else None,
             "mean_confidence":round(d["confidence_sum"]/n,4) if n else None,
             "confidence_hit_gap":round(d["confidence_sum"]/n-d["correct"]/n,4) if n else None}
+
+def fit_class_prior(train, alpha=PRIOR_ALPHA):
+    counts=Counter(actual for _,actual in train)
+    total=sum(counts.values())
+    classes=("H","D","A")
+    return {k:(counts[k]+alpha)/(total+alpha*len(classes)) for k in classes}
+
+def apply_class_prior(p, prior, weight=PRIOR_WEIGHT):
+    q={k:p[k]*max(prior[k],1e-12)**weight for k in p}
+    s=sum(q.values())
+    return {k:v/s for k,v in q.items()} if s else p
+
+def fit_line_priors(samples, split):
+    train=samples[:split]
+    pooled=fit_class_prior([(s["p"],s["actual"]) for s in train])
+    by=defaultdict(list)
+    for s in train: by[s["line"]].append((s["p"],s["actual"]))
+    priors={}
+    for line,items in by.items():
+        priors[line]=fit_class_prior(items) if len(items)>=20 else pooled
+    return pooled,priors
 
 def main():
     con=sqlite3.connect(DB)
@@ -109,8 +128,7 @@ def main():
     out_models={}
     for model in ("v3","v4"):
         samples=[]
-        audit={"n":0,"top1_consistent":0,"top2_consistent":0,"both_consistent":0,
-               "inconsistent_examples":[]}
+        audit={"n":0,"top1_consistent":0,"top2_consistent":0,"both_consistent":0,"inconsistent_examples":[]}
         for mid,line,pool,fh,fa,league,ko in chosen.values():
             match=con.execute("""
               SELECT m.match_id,m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away
@@ -134,11 +152,8 @@ def main():
                     "match_id":mid,"line":line,"pred":pred,
                     "score1":f"{scores[0][1]}-{scores[0][2]}","score1_result":r1,
                     "score2":f"{scores[1][1]}-{scores[1][2]}","score2_result":r2})
-            samples.append({"mid":mid,"line":line,"pool":pool,"league":league,
-                            "kickoff":ko,"p":p,"actual":actual_for_line(fh,fa,line),
-                            "top_scores":[{"score":f"{i}-{j}","probability":round(pr,6),
-                                           "handicap_result":score_result(i,j,line)}
-                                          for pr,i,j in scores]})
+            samples.append({"mid":mid,"line":line,"pool":pool,"league":league,"kickoff":ko,
+                            "p":p,"actual":actual_for_line(fh,fa,line)})
 
         samples.sort(key=lambda x:(x["kickoff"],x["mid"]))
         split=max(1,int(len(samples)*.60))
@@ -147,45 +162,50 @@ def main():
         line_train=defaultdict(list)
         for s in samples[:split]: line_train[s["line"]].append((s["p"],s["actual"]))
         line_t={line:(fit_temperature(items) if len(items)>=20 else global_t) for line,items in line_train.items()}
+        pooled_prior,line_priors=fit_line_priors(samples,split)
 
-        raw_m=metric(); cal_m=metric()
-        raw_bins=defaultdict(metric); cal_bins=defaultdict(metric)
-        by_line=defaultdict(lambda:{"raw":metric(),"calibrated":metric()})
-        by_source=defaultdict(lambda:{"raw":metric(),"calibrated":metric()})
+        raw_m=metric(); cal_m=metric(); prior_m=metric()
+        raw_bins=defaultdict(metric); cal_bins=defaultdict(metric); prior_bins=defaultdict(metric)
+        by_line=defaultdict(lambda:{"raw":metric(),"calibrated":metric(),"prior_calibrated":metric()})
+        by_source=defaultdict(lambda:{"raw":metric(),"calibrated":metric(),"prior_calibrated":metric()})
+
         for s in samples[split:]:
-            pr=s["p"]; pc=apply_temperature(pr,line_t.get(s["line"],global_t))
-            pred_r=max(pr,key=pr.get); pred_c=max(pc,key=pc.get)
-            add(raw_m,pred_r,s["actual"],pr); add(cal_m,pred_c,s["actual"],pc)
+            pr=s["p"]
+            pc=apply_temperature(pr,line_t.get(s["line"],global_t))
+            pp=apply_class_prior(pc,line_priors.get(s["line"],pooled_prior))
+            pred_r=max(pr,key=pr.get); pred_c=max(pc,key=pc.get); pred_p=max(pp,key=pp.get)
+            add(raw_m,pred_r,s["actual"],pr); add(cal_m,pred_c,s["actual"],pc); add(prior_m,pred_p,s["actual"],pp)
             add(raw_bins[confidence_bin(max(pr.values()))],pred_r,s["actual"],pr)
             add(cal_bins[confidence_bin(max(pc.values()))],pred_c,s["actual"],pc)
+            add(prior_bins[confidence_bin(max(pp.values()))],pred_p,s["actual"],pp)
             add(by_line[s["line"]]["raw"],pred_r,s["actual"],pr)
             add(by_line[s["line"]]["calibrated"],pred_c,s["actual"],pc)
+            add(by_line[s["line"]]["prior_calibrated"],pred_p,s["actual"],pp)
             add(by_source[s["pool"]]["raw"],pred_r,s["actual"],pr)
             add(by_source[s["pool"]]["calibrated"],pred_c,s["actual"],pc)
+            add(by_source[s["pool"]]["prior_calibrated"],pred_p,s["actual"],pp)
 
         out_models[model]={
-            "eligible_market_rows":len(raw),"deduped_match_line_rows":len(chosen),
-            "test_rows":len(samples)-split,"raw":finish(raw_m),"calibrated":finish(cal_m),
-            "temperature_global":global_t,
-            "temperature_by_integer_line":{str(k):v for k,v in sorted(line_t.items())},
+            "eligible_market_rows":len(raw),"deduped_match_line_rows":len(chosen),"test_rows":len(samples)-split,
+            "raw":finish(raw_m),"calibrated":finish(cal_m),"prior_calibrated":finish(prior_m),
+            "temperature_global":global_t,"temperature_by_integer_line":{str(k):v for k,v in sorted(line_t.items())},
+            "nonzero_class_prior_weight":PRIOR_WEIGHT,"nonzero_class_prior_alpha":PRIOR_ALPHA,
+            "nonzero_pooled_class_prior":pooled_prior,
+            "nonzero_line_prior_training_n":{str(k):len(v) for k,v in sorted(line_train.items())},
             "confidence_calibration_raw":{k:finish(v) for k,v in sorted(raw_bins.items())},
             "confidence_calibration_calibrated":{k:finish(v) for k,v in sorted(cal_bins.items())},
-            "by_line":{str(k):{"raw":finish(v["raw"]),"calibrated":finish(v["calibrated"])} for k,v in sorted(by_line.items())},
-            "by_source":{k:{"raw":finish(v["raw"]),"calibrated":finish(v["calibrated"])} for k,v in sorted(by_source.items())},
+            "confidence_calibration_prior_calibrated":{k:finish(v) for k,v in sorted(prior_bins.items())},
+            "by_line":{str(k):{"raw":finish(v["raw"]),"calibrated":finish(v["calibrated"]),"prior_calibrated":finish(v["prior_calibrated"])} for k,v in sorted(by_line.items())},
+            "by_source":{k:{"raw":finish(v["raw"]),"calibrated":finish(v["calibrated"]),"prior_calibrated":finish(v["prior_calibrated"])} for k,v in sorted(by_source.items())},
             "score_mapping_audit":audit
         }
 
     payload={"models":out_models,
-      "definition":"Leakage-safe T-12h integer Asian handicap evaluation with canonical home-perspective line mapping and chronological probability calibration.",
-      "mapping":{"home_minus_1":"line=-1","home_0":"line=0","home_plus_1":"line=+1",
-                 "settlement":"H if home_goals+line>away_goals; D if equal; A if lower",
-                 "quarter_and_half_lines":"excluded from this 3-way integer module"},
+      "definition":"Leakage-safe T-12h integer Asian handicap evaluation with canonical home-perspective line mapping, chronological temperature calibration, and nonzero-line class-prior calibration.",
+      "mapping":{"home_minus_1":"line=-1","home_0":"line=0","home_plus_1":"line=+1","settlement":"H if home_goals+line>away_goals; D if equal; A if lower","quarter_and_half_lines":"excluded from this 3-way integer module"},
       "market_priority":["hhad","asian_handicap_avg","sofascore_asian_featured","sgodds_open","football_data_ah_close"],
-      "calibration":"Temperature fitted on first 60% chronologically; evaluated on later 40%. Line-specific calibration requires >=20 chronological training samples, otherwise global temperature is used. Minimum is intentionally lower only for integer handicap strata; thin strata remain separately reported.",
-      "notes":["V3 remains production baseline candidate; V4 remains experimental.",
-               "Target calibration excludes level-ball line=0; level-ball rows remain stored but are not used for this handicap target.",
-               "Handicap is evaluation context, not a direct prediction feature.",
-               "Model confidence and empirical hit rate are reported separately."]}
+      "calibration":"Temperature fitted on first 60% chronologically; evaluated on later 40%. Nonzero class-prior correction is fitted only on the chronological training window with additive smoothing and fixed shrinkage weight; line-specific prior requires >=20 training samples, otherwise pooled nonzero-line prior is used.",
+      "notes":["V3 remains production baseline candidate; V4 remains experimental.","Target calibration excludes level-ball line=0; level-ball rows remain stored but are not used for this handicap target.","Handicap is evaluation context, not a direct prediction feature.","Model confidence and empirical hit rate are reported separately.","Prior-calibrated results are evaluation-only until they beat the baseline on chronological holdout."]}
     with open(OUT,"w",encoding="utf-8") as f: json.dump(payload,f,ensure_ascii=False,indent=2)
     print(json.dumps(payload,ensure_ascii=False))
     con.close()
