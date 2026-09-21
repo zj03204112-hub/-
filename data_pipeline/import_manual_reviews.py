@@ -1,4 +1,4 @@
-import json, sqlite3
+import json, sqlite3, re, unicodedata
 from pathlib import Path
 DB="football_model_database.sqlite"; SRC=Path("data/manual_handicap_reviews.json")
 ALIASES = {
@@ -13,16 +13,26 @@ ALIASES = {
     "马赛":["Marseille"], "巴黎圣日耳曼":["Paris SG","Paris Saint-Germain","PSG"],
     "巴伦西亚":["Valencia"], "皇家社会":["Sociedad","Real Sociedad"],
 }
+def norm(s):
+    s=unicodedata.normalize("NFKD", s or "").encode("ascii","ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]+","",s)
+
 def find_match(con,r):
     homes=ALIASES.get(r["home"],[r["home"]]); aways=ALIASES.get(r["away"],[r["away"]])
-    clauses=[]; params=[r["date"]]
-    for h in homes:
-        for a in aways:
-            clauses.append("(home_team LIKE ? AND away_team LIKE ?)")
-            params.extend(["%"+h+"%","%"+a+"%"])
-    sql="SELECT match_id,kickoff,home_team,away_team FROM matches WHERE date(kickoff)=date(?) AND ("+" OR ".join(clauses)+") ORDER BY kickoff"
-    rows=con.execute(sql,tuple(params)).fetchall()
-    return rows[0] if rows else None
+    # Kickoff timestamps in DB may be UTC while manual reviews use local match dates.
+    # Search a ±1-day window, then require both normalized team names to match an alias.
+    rows=con.execute("""
+      SELECT match_id,kickoff,home_team,away_team
+      FROM matches
+      WHERE date(kickoff) BETWEEN date(?,'-1 day') AND date(?,'+1 day')
+      ORDER BY abs(julianday(date(kickoff))-julianday(date(?))), kickoff
+    """,(r["date"],r["date"],r["date"])).fetchall()
+    hn=[norm(x) for x in homes]; an=[norm(x) for x in aways]
+    def ok(db, aliases):
+        nd=norm(db)
+        return any(a and (a in nd or nd in a) for a in aliases)
+    matches=[row for row in rows if ok(row[2],hn) and ok(row[3],an)]
+    return matches[0] if matches else None
 
 def main():
     data=json.loads(SRC.read_text(encoding="utf-8")); con=sqlite3.connect(DB); unmatched=[]; n=0
