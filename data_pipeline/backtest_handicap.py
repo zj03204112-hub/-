@@ -5,8 +5,7 @@ from compare_models import model_lambdas, fit_temperature, apply_temperature
 DB="football_model_database.sqlite"
 OUT="data/handicap_backtest.json"
 RHO=-0.05
-PRIORITY={"hhad":5,"asian_handicap_avg":4,"sofascore_asian_featured":3,
-          "sgodds_open":2,"football_data_ah_close":2,"football_data_ah_bookmaker":1,"football_data_ah_open":1}
+PRIORITY={"hhad":10}
 TARGET_LINES={-3,-2,-1,1,2,3}
 PRIOR_WEIGHT=0.50
 PRIOR_ALPHA=3.0
@@ -112,7 +111,8 @@ def main():
       JOIN matches m ON m.match_id=sm.match_id
       JOIN competitions c ON c.competition_id=m.competition_id
       WHERE sm.handicap IS NOT NULL
-        AND sm.pool_code IN ('asian_handicap_avg','hhad','sofascore_asian_featured','football_data_ah_close','football_data_ah_bookmaker','football_data_ah_open','sgodds_open')
+        AND sm.pool_code = 'hhad'
+        AND sm.source_status = 'sporttery_official_result_endpoint'
         AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL AND m.status='finished'
       ORDER BY m.kickoff,sm.match_id
     """).fetchall()
@@ -272,11 +272,11 @@ def main():
         }
 
     payload={"models":out_models,
-      "definition":"Leakage-safe T-12h integer Asian handicap evaluation with canonical home-perspective line mapping, chronological temperature calibration, and nonzero-line class-prior calibration.",
-      "mapping":{"home_minus_1":"line=-1","home_0":"line=0","home_plus_1":"line=+1","settlement":"H if home_goals+line>away_goals; D if equal; A if lower","quarter_and_half_lines":"excluded from this 3-way integer module"},
-      "market_priority":["hhad","asian_handicap_avg","sofascore_asian_featured","sgodds_open","football_data_ah_close"],
+      "definition":"Leakage-safe T-12h integer handicap evaluation using the China Sports Lottery (中国体育彩票/中国竞彩网) 让球胜平负 handicap as the sole sample-defining line, with chronological temperature calibration and nonzero-line class-prior calibration.",
+      "mapping":{"sporttery_home_perspective":"goalLine is interpreted as the published home-perspective handicap: home -1 => line=-1; home +2 (away gives 2) => line=+2","settlement":"H if home_goals+line>away_goals; D if equal; A if lower","quarter_and_half_lines":"excluded from this 3-way integer module"},
+      "market_priority":["hhad"],
       "calibration":"Temperature fitted on first 60% chronologically; evaluated on later 40%. Nonzero class-prior correction is fitted only on the chronological training window with additive smoothing and fixed shrinkage weight; line-specific prior requires >=20 training samples, otherwise pooled nonzero-line prior is used.",
-      "notes":["V3 remains production baseline candidate; V4 remains experimental.","Target calibration excludes level-ball line=0; level-ball rows remain stored but are not used for this handicap target.","Handicap is evaluation context, not a direct prediction feature.","Model confidence and empirical hit rate are reported separately.","Prior-calibrated results are evaluation-only until they beat the baseline on chronological holdout."]}
+      "notes":["Sample-defining handicap source is strictly China Sports Lottery hhad; Asian-book/SofaScore/SGOdds lines are not fallback samples in this module.","V3 remains production baseline candidate; V4 remains experimental.","Target calibration excludes level-ball line=0; level-ball rows remain stored but are not used for this handicap target.","Handicap is evaluation context, not a direct prediction feature.","Model confidence and empirical hit rate are reported separately.","Prior-calibrated results are evaluation-only until they beat the baseline on chronological holdout."]}
     with open(OUT,"w",encoding="utf-8") as f: json.dump(payload,f,ensure_ascii=False,indent=2)
     print(json.dumps(payload,ensure_ascii=False))
     con.close()
