@@ -200,6 +200,53 @@ def main():
                 sweep_by_line[str(target_line)]=finish(mm)
             prior_weight_sweep[str(sweep_w)]=sweep_by_line
 
+        # Expanding-window rolling validation: never use future rows for fitting.
+        # Four chronological test windows; each fold expands the training set.
+        rolling_folds=[]
+        n=len(samples)
+        min_train=max(30,int(n*0.40))
+        remaining=n-min_train
+        if remaining>0:
+            chunk=max(10,remaining//4)
+            starts=list(range(min_train,n,chunk))
+            for fi,start in enumerate(starts[:4],1):
+                end=min(n,start+chunk)
+                if end<=start: continue
+                train_slice=samples[:start]
+                test_slice=samples[start:end]
+                tr=[(s["p"],s["actual"]) for s in train_slice]
+                gt=fit_temperature(tr) if tr else 1.0
+                lt_train=defaultdict(list)
+                for s in train_slice: lt_train[s["line"]].append((s["p"],s["actual"]))
+                lt={line:(fit_temperature(items) if len(items)>=20 else gt) for line,items in lt_train.items()}
+                pooled,lp=fit_line_priors(samples,start)
+                fold_raw=metric(); fold_cal=metric(); fold_prior=metric()
+                fold_pm1={}
+                for target_line in (-1,1):
+                    fold_pm1[str(target_line)]={}
+                    for w in (0.0,0.25,0.5,0.75,1.0):
+                        mm=metric()
+                        for s in test_slice:
+                            if s["line"]!=target_line: continue
+                            pc=apply_temperature(s["p"],lt.get(s["line"],gt))
+                            pp=apply_class_prior(pc,lp.get(s["line"],pooled),weight=w)
+                            add(mm,max(pp,key=pp.get),s["actual"],pp)
+                        fold_pm1[str(target_line)][str(w)]=finish(mm)
+                for s in test_slice:
+                    pr=s["p"]; pc=apply_temperature(pr,lt.get(s["line"],gt))
+                    pp=apply_class_prior(pc,lp.get(s["line"],pooled))
+                    add(fold_raw,max(pr,key=pr.get),s["actual"],pr)
+                    add(fold_cal,max(pc,key=pc.get),s["actual"],pc)
+                    add(fold_prior,max(pp,key=pp.get),s["actual"],pp)
+                rolling_folds.append({
+                    "fold":fi,"train_n":len(train_slice),"test_n":len(test_slice),
+                    "train_end":train_slice[-1]["kickoff"] if train_slice else None,
+                    "test_start":test_slice[0]["kickoff"] if test_slice else None,
+                    "test_end":test_slice[-1]["kickoff"] if test_slice else None,
+                    "raw":finish(fold_raw),"calibrated":finish(fold_cal),
+                    "prior_calibrated":finish(fold_prior),"pm1_prior_weight_sweep":fold_pm1
+                })
+
         out_models[model]={
             "eligible_market_rows":len(raw),"deduped_match_line_rows":len(chosen),"test_rows":len(samples)-split,
             "raw":finish(raw_m),"calibrated":finish(cal_m),"prior_calibrated":finish(prior_m),
@@ -213,7 +260,8 @@ def main():
             "by_line":{str(k):{"raw":finish(v["raw"]),"calibrated":finish(v["calibrated"]),"prior_calibrated":finish(v["prior_calibrated"])} for k,v in sorted(by_line.items())},
             "by_source":{k:{"raw":finish(v["raw"]),"calibrated":finish(v["calibrated"]),"prior_calibrated":finish(v["prior_calibrated"])} for k,v in sorted(by_source.items())},
             "score_mapping_audit":audit,
-            "pm1_prior_weight_sweep":prior_weight_sweep
+            "pm1_prior_weight_sweep":prior_weight_sweep,
+            "rolling_expanding_validation":rolling_folds
         }
 
     payload={"models":out_models,
