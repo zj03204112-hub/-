@@ -1,10 +1,18 @@
 {
   "models": {
     "v3": {
-      "eligible_market_rows": 15869,
+      "eligible_market_rows": 18859,
       "deduped_match_line_rows": 1382,
       "test_rows": 553,
       "effective_sample_target_per_integer_line": 200,
+      "effective_sample_min_target_by_integer_line": {
+        "-3": 100,
+        "-2": 100,
+        "-1": 200,
+        "1": 200,
+        "2": 100,
+        "3": 100
+      },
       "effective_sample_count_by_integer_line": {
         "-3": 12,
         "-2": 198,
@@ -939,10 +947,18 @@
       ]
     },
     "v4": {
-      "eligible_market_rows": 15869,
+      "eligible_market_rows": 18859,
       "deduped_match_line_rows": 1382,
       "test_rows": 553,
       "effective_sample_target_per_integer_line": 200,
+      "effective_sample_min_target_by_integer_line": {
+        "-3": 100,
+        "-2": 100,
+        "-1": 200,
+        "1": 200,
+        "2": 100,
+        "3": 100
+      },
       "effective_sample_count_by_integer_line": {
         "-3": 12,
         "-2": 198,
