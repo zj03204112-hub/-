@@ -212,7 +212,8 @@ def main():
             "confidence_calibration_prior_calibrated":{k:finish(v) for k,v in sorted(prior_bins.items())},
             "by_line":{str(k):{"raw":finish(v["raw"]),"calibrated":finish(v["calibrated"]),"prior_calibrated":finish(v["prior_calibrated"])} for k,v in sorted(by_line.items())},
             "by_source":{k:{"raw":finish(v["raw"]),"calibrated":finish(v["calibrated"]),"prior_calibrated":finish(v["prior_calibrated"])} for k,v in sorted(by_source.items())},
-            "score_mapping_audit":audit
+            "score_mapping_audit":audit,
+            "pm1_prior_weight_sweep":prior_weight_sweep
         }
 
     payload={"models":out_models,
