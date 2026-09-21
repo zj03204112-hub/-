@@ -126,6 +126,9 @@ def main():
             chosen[key]=(mid,line,pool,fh,fa,league,ko)
 
     out_models={}
+    line_sample_counts={str(k):0 for k in sorted(TARGET_LINES)}
+    for mid,line,pool,fh,fa,league,ko in chosen.values():
+        if line in TARGET_LINES: line_sample_counts[str(line)]+=1
     for model in ("v3","v4"):
         samples=[]
         audit={"n":0,"top1_consistent":0,"top2_consistent":0,"both_consistent":0,"inconsistent_examples":[]}
@@ -249,6 +252,9 @@ def main():
 
         out_models[model]={
             "eligible_market_rows":len(raw),"deduped_match_line_rows":len(chosen),"test_rows":len(samples)-split,
+            "effective_sample_target_per_integer_line":200,
+            "effective_sample_count_by_integer_line":line_sample_counts,
+            "effective_sample_target_met":all(v>=200 for v in line_sample_counts.values()),
             "raw":finish(raw_m),"calibrated":finish(cal_m),"prior_calibrated":finish(prior_m),
             "temperature_global":global_t,"temperature_by_integer_line":{str(k):v for k,v in sorted(line_t.items())},
             "nonzero_class_prior_weight":PRIOR_WEIGHT,"nonzero_class_prior_alpha":PRIOR_ALPHA,
