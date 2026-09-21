@@ -7,6 +7,9 @@ OUT="data/handicap_backtest.json"
 RHO=-0.05
 PRIORITY={"hhad":5,"asian_handicap_avg":4,"sofascore_asian_featured":3,
           "sgodds_open":2,"football_data_ah_close":2,"football_data_ah_bookmaker":1,"football_data_ah_open":1}
+# Production target is integer Asian handicap, excluding level ball (0).
+# Keep 0-line data in the database, but do not let it affect the target calibration.
+TARGET_LINES={-3,-2,-1,1,2,3}
 
 def pois(lam,k): return math.exp(-lam)*lam**k/math.factorial(k)
 def tau(x,y,lh,la):
@@ -98,7 +101,7 @@ def main():
     chosen={}
     for mid,line,pool,fh,fa,league,ko in raw:
         line=canonical_line(line)
-        if line is None: continue
+        if line is None or line not in TARGET_LINES: continue
         key=(mid,line)
         if key not in chosen or PRIORITY.get(pool,0)>PRIORITY.get(chosen[key][2],0):
             chosen[key]=(mid,line,pool,fh,fa,league,ko)
@@ -180,6 +183,7 @@ def main():
       "market_priority":["hhad","asian_handicap_avg","sofascore_asian_featured","sgodds_open","football_data_ah_close"],
       "calibration":"Temperature fitted on first 60% chronologically; evaluated on later 40%. Line-specific calibration requires >=20 chronological training samples, otherwise global temperature is used. Minimum is intentionally lower only for integer handicap strata; thin strata remain separately reported.",
       "notes":["V3 remains production baseline candidate; V4 remains experimental.",
+               "Target calibration excludes level-ball line=0; level-ball rows remain stored but are not used for this handicap target.",
                "Handicap is evaluation context, not a direct prediction feature.",
                "Model confidence and empirical hit rate are reported separately."]}
     with open(OUT,"w",encoding="utf-8") as f: json.dump(payload,f,ensure_ascii=False,indent=2)
