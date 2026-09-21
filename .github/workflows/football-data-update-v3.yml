@@ -98,6 +98,9 @@ jobs:
       - name: Backtest integer Asian handicap
         if: ${{ always() }}
         run: python data_pipeline/backtest_handicap.py
+      - name: Import manual screenshot review samples
+        if: ${{ always() }}
+        run: python data_pipeline/import_manual_reviews.py
       - name: Validate database
         if: ${{ always() }}
         run: python scripts/validate_database.py
