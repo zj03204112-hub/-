@@ -1,7 +1,7 @@
 {
   "models": {
     "v3": {
-      "eligible_market_rows": 3272,
+      "eligible_market_rows": 3696,
       "deduped_match_line_rows": 375,
       "test_rows": 150,
       "raw": {
@@ -245,105 +245,14 @@
       },
       "score_mapping_audit": {
         "n": 375,
-        "top1_consistent": 150,
-        "top2_consistent": 260,
-        "both_consistent": 46,
-        "inconsistent_examples": [
-          {
-            "match_id": "d45f6663cc1f4f24a500",
-            "line": -1,
-            "pred": "A",
-            "score1": "1-1",
-            "score1_result": "A",
-            "score2": "2-1",
-            "score2_result": "D"
-          },
-          {
-            "match_id": "41a3c72aa94106936912",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          },
-          {
-            "match_id": "bba4a74043ca9417567c",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          },
-          {
-            "match_id": "4ae7b06f23d75bd26d86",
-            "line": -1,
-            "pred": "A",
-            "score1": "1-1",
-            "score1_result": "A",
-            "score2": "2-1",
-            "score2_result": "D"
-          },
-          {
-            "match_id": "aa675c3da99f3907c5ef",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          },
-          {
-            "match_id": "74c57bc566b37ed7da7d",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          },
-          {
-            "match_id": "3bcd04be4b9eeab56641",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          },
-          {
-            "match_id": "5c5b5b2b653b34ef2978",
-            "line": 0,
-            "pred": "A",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "0-1",
-            "score2_result": "A"
-          },
-          {
-            "match_id": "49d033736e3ae2470884",
-            "line": -1,
-            "pred": "A",
-            "score1": "1-1",
-            "score1_result": "A",
-            "score2": "2-1",
-            "score2_result": "D"
-          },
-          {
-            "match_id": "dfc95bd08d10a3d877c2",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          }
-        ]
+        "top1_consistent": 375,
+        "top2_consistent": 375,
+        "both_consistent": 375,
+        "inconsistent_examples": []
       }
     },
     "v4": {
-      "eligible_market_rows": 3272,
+      "eligible_market_rows": 3696,
       "deduped_match_line_rows": 375,
       "test_rows": 150,
       "raw": {
@@ -579,101 +488,10 @@
       },
       "score_mapping_audit": {
         "n": 375,
-        "top1_consistent": 147,
-        "top2_consistent": 257,
-        "both_consistent": 39,
-        "inconsistent_examples": [
-          {
-            "match_id": "d45f6663cc1f4f24a500",
-            "line": -1,
-            "pred": "A",
-            "score1": "1-1",
-            "score1_result": "A",
-            "score2": "2-1",
-            "score2_result": "D"
-          },
-          {
-            "match_id": "41a3c72aa94106936912",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          },
-          {
-            "match_id": "bba4a74043ca9417567c",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          },
-          {
-            "match_id": "4ae7b06f23d75bd26d86",
-            "line": -1,
-            "pred": "A",
-            "score1": "1-1",
-            "score1_result": "A",
-            "score2": "2-1",
-            "score2_result": "D"
-          },
-          {
-            "match_id": "aa675c3da99f3907c5ef",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          },
-          {
-            "match_id": "74c57bc566b37ed7da7d",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          },
-          {
-            "match_id": "3bcd04be4b9eeab56641",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          },
-          {
-            "match_id": "5c5b5b2b653b34ef2978",
-            "line": 0,
-            "pred": "A",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "0-1",
-            "score2_result": "A"
-          },
-          {
-            "match_id": "49d033736e3ae2470884",
-            "line": -1,
-            "pred": "A",
-            "score1": "1-1",
-            "score1_result": "A",
-            "score2": "2-1",
-            "score2_result": "D"
-          },
-          {
-            "match_id": "dfc95bd08d10a3d877c2",
-            "line": 0,
-            "pred": "H",
-            "score1": "1-1",
-            "score1_result": "D",
-            "score2": "2-1",
-            "score2_result": "H"
-          }
-        ]
+        "top1_consistent": 375,
+        "top2_consistent": 375,
+        "both_consistent": 375,
+        "inconsistent_examples": []
       }
     }
   },
