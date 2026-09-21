@@ -1,0 +1,24 @@
+import json, sqlite3
+from pathlib import Path
+DB="football_model_database.sqlite"; SRC=Path("data/manual_handicap_reviews.json")
+def find_match(con,r):
+    rows=con.execute("SELECT match_id,kickoff,home_team,away_team FROM matches WHERE date(kickoff)=date(?) AND home_team LIKE ? AND away_team LIKE ? ORDER BY kickoff",(r["date"],"%"+r["home"]+"%","%"+r["away"]+"%")).fetchall()
+    return rows[0] if rows else None
+def main():
+    data=json.loads(SRC.read_text(encoding="utf-8")); con=sqlite3.connect(DB); unmatched=[]; n=0
+    for r in data["matches"]:
+        m=find_match(con,r)
+        if not m: unmatched.append(f'{r["home"]} vs {r["away"]} {r["date"]}'); continue
+        mid=m[0]; note="manual_screenshot_review_2026-09-20"
+        con.execute("DELETE FROM review WHERE match_id=? AND error_reason LIKE 'manual_screenshot_review_%'",(mid,))
+        con.execute("DELETE FROM prediction_snapshot WHERE match_id=? AND notes LIKE ?",(mid,note+"%"))
+        cur=con.execute("""INSERT INTO prediction_snapshot
+          (match_id,snapshot_time,data_cutoff,handicap,handicap_prediction,score_1,score_2,half_full,model_confidence,notes)
+          VALUES(?,?,?,?,?,?,?,?,?,?)""",(mid,data["reviewed_at"]+"T00:00:00",r["date"]+"T12:00:00",r["handicap"],r["pred"],r["score1"],r["score2"],None,r["confidence"]/100,note))
+        con.execute("""INSERT INTO review
+          (match_id,prediction_id,actual_result,handicap_actual,hit_status,error_type,error_reason,calibration_change,reviewed_at)
+          VALUES(?,?,?,?,?,?,?,?,?)""",(mid,cur.lastrowid,r["actual"],r["actual_handicap"],"hit" if r["hit"] else "miss","none" if r["hit"] else "handicap_mapping","manual_screenshot_review_"+("hit" if r["hit"] else "miss"),"retain as confirmed sample" if r["hit"] else "review integer handicap calibration",data["reviewed_at"]))
+        n+=1
+    con.commit(); con.close(); print("manual_review_inserted="+str(n)); print("manual_review_unmatched="+str(len(unmatched)))
+    if unmatched: print("\n".join(unmatched)); raise SystemExit(1)
+if __name__=="__main__": main()
