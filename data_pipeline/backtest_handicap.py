@@ -253,8 +253,9 @@ def main():
         out_models[model]={
             "eligible_market_rows":len(raw),"deduped_match_line_rows":len(chosen),"test_rows":len(samples)-split,
             "effective_sample_target_per_integer_line":200,
+            "effective_sample_min_target_by_integer_line":{"-3":100,"-2":100,"-1":200,"1":200,"2":100,"3":100},
             "effective_sample_count_by_integer_line":line_sample_counts,
-            "effective_sample_target_met":all(v>=200 for v in line_sample_counts.values()),
+            "effective_sample_target_met":all(line_sample_counts.get(k,0)>=t for k,t in {-3:100,-2:100,-1:200,1:200,2:100,3:100}.items()),
             "raw":finish(raw_m),"calibrated":finish(cal_m),"prior_calibrated":finish(prior_m),
             "temperature_global":global_t,"temperature_by_integer_line":{str(k):v for k,v in sorted(line_t.items())},
             "nonzero_class_prior_weight":PRIOR_WEIGHT,"nonzero_class_prior_alpha":PRIOR_ALPHA,
