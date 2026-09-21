@@ -24,10 +24,22 @@ def get_csv(code, season):
     return r.content.decode("latin1")
 
 def season_id(conn, competition_id, label):
-    return conn.execute(
+    row=conn.execute(
         "SELECT season_id FROM seasons WHERE competition_id=? AND season_label=?",
         (competition_id, label)
-    ).fetchone()[0]
+    ).fetchone()
+    if row:
+        return row[0]
+    # Expand the historical database lazily when older seasons are requested.
+    starts={"2021/22":"2021-08-01","2022/23":"2022-08-01","2023/24":"2023-08-01",
+            "2024/25":"2024-08-01","2025/26":"2025-08-01","2026/27":"2026-08-01"}
+    ends={"2021/22":"2022-07-31","2022/23":"2023-07-31","2023/24":"2024-07-31",
+          "2024/25":"2025-07-31","2025/26":"2026-07-31","2026/27":"2027-07-31"}
+    cur=conn.execute("SELECT COALESCE(MAX(season_id),0)+1 FROM seasons").fetchone()[0]
+    conn.execute("INSERT INTO seasons(season_id,competition_id,season_label,start_date,end_date) VALUES(?,?,?,?,?)",
+                 (cur,competition_id,label,starts[label],ends[label]))
+    conn.commit()
+    return cur
 
 def first_value(row, names):
     for name in names:
