@@ -1,9 +1,29 @@
 import json, sqlite3
 from pathlib import Path
 DB="football_model_database.sqlite"; SRC=Path("data/manual_handicap_reviews.json")
+ALIASES = {
+    "马竞":["Atletico Madrid","Ath Madrid","Atl Madrid"], "皇马":["Real Madrid"],
+    "尼斯":["Nice"], "里尔":["Lille"], "富勒姆":["Fulham"],
+    "曼联":["Man United","Manchester United"], "沙尔克04":["Schalke 04","Schalke"],
+    "埃尔弗斯贝格":["Elversberg"], "尤文图斯":["Juventus"], "亚特兰大":["Atalanta"],
+    "比利亚雷亚尔":["Villarreal"], "莱万特":["Levante"],
+    "拉科鲁尼亚":["La Coruna","Deportivo La Coruna","Deportivo"],
+    "皇家贝蒂斯":["Betis","Real Betis"], "帕德博恩":["Paderborn"],
+    "霍芬海姆":["Hoffenheim"], "AC米兰":["AC Milan","Milan"], "莱切":["Lecce"],
+    "马赛":["Marseille"], "巴黎圣日耳曼":["Paris SG","Paris Saint-Germain","PSG"],
+    "巴伦西亚":["Valencia"], "皇家社会":["Sociedad","Real Sociedad"],
+}
 def find_match(con,r):
-    rows=con.execute("SELECT match_id,kickoff,home_team,away_team FROM matches WHERE date(kickoff)=date(?) AND home_team LIKE ? AND away_team LIKE ? ORDER BY kickoff",(r["date"],"%"+r["home"]+"%","%"+r["away"]+"%")).fetchall()
+    homes=ALIASES.get(r["home"],[r["home"]]); aways=ALIASES.get(r["away"],[r["away"]])
+    clauses=[]; params=[r["date"]]
+    for h in homes:
+        for a in aways:
+            clauses.append("(home_team LIKE ? AND away_team LIKE ?)")
+            params.extend(["%"+h+"%","%"+a+"%"])
+    sql="SELECT match_id,kickoff,home_team,away_team FROM matches WHERE date(kickoff)=date(?) AND ("+" OR ".join(clauses)+") ORDER BY kickoff"
+    rows=con.execute(sql,tuple(params)).fetchall()
     return rows[0] if rows else None
+
 def main():
     data=json.loads(SRC.read_text(encoding="utf-8")); con=sqlite3.connect(DB); unmatched=[]; n=0
     for r in data["matches"]:
