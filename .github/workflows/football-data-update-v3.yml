@@ -97,7 +97,7 @@ jobs:
       - name: Compare V1 V2 V3 V4 + calibration + blend
         if: ${{ always() }}
         run: python data_pipeline/compare_models.py
-      - name: Backtest integer Asian handicap
+      - name: Backtest China Sports Lottery handicap
         if: ${{ always() }}
         run: python data_pipeline/backtest_handicap.py
       - name: Import manual screenshot review samples
