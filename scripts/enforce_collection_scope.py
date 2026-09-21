@@ -2,7 +2,7 @@ import sqlite3
 from datetime import datetime
 
 DB="football_model_database.sqlite"
-START="2026-01-01"
+START="2022-01-01"
 END=datetime.now().date().isoformat()
 
 CHILD_TABLES=[
