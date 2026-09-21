@@ -2,7 +2,7 @@ import sqlite3, hashlib, requests, io, csv
 from datetime import datetime
 
 DB = "football_model_database.sqlite"
-START = "2026-01-01"
+START = "2022-01-01"
 END = "2026-09-20"
 
 LEAGUES = {
@@ -12,7 +12,7 @@ LEAGUES = {
     "SERIEA": ("I1", 4),
     "LIGUE1": ("F1", 5),
 }
-SEASONS = {"2025/26": "2526", "2026/27": "2627"}
+SEASONS = {"2021/22": "2122", "2022/23": "2223", "2023/24": "2324", "2024/25": "2425", "2025/26": "2526", "2026/27": "2627"}
 
 def match_id(league, date, home, away):
     return hashlib.sha1(f"{league}|{date}|{home}|{away}".encode()).hexdigest()[:20]
