@@ -48,6 +48,50 @@ def dc_matrix(lh,la):
     total=sum(sum(r) for r in m)
     return [[v/total for v in row] for row in m]
 
+MARKET_PRIORITY={"hhad":5,"asian_handicap_avg":4,"sofascore_asian_featured":3,"sgodds_open":2,"football_data_ah_close":2,"football_data_ah_bookmaker":1,"football_data_ah_open":1}
+
+def canonical_line(x):
+    try:
+        v=float(x)
+        return int(round(v)) if abs(v-round(v))<1e-9 else None
+    except Exception:
+        return None
+
+def handicap_probs(matrix,line):
+    p={"H":0.0,"D":0.0,"A":0.0}
+    for i,row in enumerate(matrix):
+        for j,v in enumerate(row):
+            d=i+line-j
+            p["H" if d>0 else "D" if d==0 else "A"]+=v
+    return p
+
+def conditioned_scores(matrix,line,pred,n=2):
+    xs=[]
+    for i,row in enumerate(matrix):
+        for j,v in enumerate(row):
+            d=i+line-j
+            r="H" if d>0 else "D" if d==0 else "A"
+            if r==pred: xs.append((v,i,j))
+    total=sum(x[0] for x in xs)
+    if not total:
+        return sorted(((v,i,j) for i,row in enumerate(matrix) for j,v in enumerate(row)),reverse=True)[:n]
+    return sorted(((v/total,i,j) for v,i,j in xs),reverse=True)[:n]
+
+def market_line_at_cutoff(con,match_id,cutoff):
+    rows=con.execute("""
+      SELECT handicap,pool_code,captured_at FROM sporttery_market
+      WHERE match_id=? AND handicap IS NOT NULL AND captured_at<=?
+      AND pool_code IN ('hhad','asian_handicap_avg','sofascore_asian_featured','sgodds_open','football_data_ah_close','football_data_ah_bookmaker','football_data_ah_open')
+      ORDER BY captured_at DESC
+    """,(match_id,cutoff)).fetchall()
+    best=None
+    for handicap,pool,captured in rows:
+        line=canonical_line(handicap)
+        if line is None: continue
+        key=(captured,MARKET_PRIORITY.get(pool,0))
+        if best is None or key>(best[0],best[1]): best=(captured,MARKET_PRIORITY.get(pool,0),line,pool)
+    return (best[2],best[3]) if best else (None,None)
+
 def opponent_adjusted_rates(con,team,side,match_id,hgf,hga):
     row=con.execute(
         "SELECT opponent_strength FROM team_features WHERE match_id=? AND team_side=?",
@@ -106,11 +150,18 @@ def main():
                     lam_a*=math.exp(ad); lam_h*=math.exp(dd)
         matrix=dc_matrix(lam_h,lam_a)
         ph=sum(matrix[i][j] for i in range(MAX_GOALS) for j in range(MAX_GOALS) if i>j)
-        pd=sum(matrix[i][j] for i in range(7) for j in range(7) if i==j)
-        pa=sum(matrix[i][j] for i in range(7) for j in range(7) if i<j)
-        ps=sorted(((matrix[i][j],i,j) for i in range(7) for j in range(7)),reverse=True)[:2]
-        s1=f"{ps[0][1]}-{ps[0][2]}"; s2=f"{ps[1][1]}-{ps[1][2]}"
+        pd=sum(matrix[i][j] for i in range(MAX_GOALS) for j in range(MAX_GOALS) if i==j)
+        pa=sum(matrix[i][j] for i in range(MAX_GOALS) for j in range(MAX_GOALS) if i<j)
         pred=max(((ph,"H"),(pd,"D"),(pa,"A")))[1]
+        line,pool=market_line_at_cutoff(con,mid,cutoff)
+        hp=None; hpred=None
+        if line is not None:
+            hp=handicap_probs(matrix,line)
+            hpred=max(hp,key=hp.get)
+            ps=conditioned_scores(matrix,line,hpred,2)
+        else:
+            ps=sorted(((matrix[i][j],i,j) for i in range(7) for j in range(7)),reverse=True)[:2]
+        s1=f"{ps[0][1]}-{ps[0][2]}"; s2=f"{ps[1][1]}-{ps[1][2]}"
         actual="H" if fh>fa else "D" if fh==fa else "A"
         p={"H":ph,"D":pd,"A":pa}; y={"H":0,"D":0,"A":0}; y[actual]=1
         brier+=(p["H"]-y["H"])**2+(p["D"]-y["D"])**2+(p["A"]-y["A"])**2
@@ -122,8 +173,9 @@ def main():
           INSERT INTO prediction_snapshot
           (match_id,snapshot_time,data_cutoff,handicap,handicap_prediction,score_1,score_2,half_full,model_confidence,notes)
           VALUES (?,?,?,?,?,?,?,?,?,?)
-        """,(mid,cutoff,cutoff,None,None,s1,s2,None,conf,
-             json.dumps({"model":MODEL,"p":p,"lambda":[lam_h,lam_a],"actual":actual,"rho":RHO},separators=(",",":"))))
+        """,(mid,cutoff,cutoff,line,hpred,s1,s2,None,conf,
+             json.dumps({"model":MODEL,"p":p,"handicap_p":hp,"market_pool":pool,
+                         "lambda":[lam_h,lam_a],"actual":actual,"rho":RHO},separators=(",",":"))))
     bins=[]
     for lo in [0.5,0.6,0.7,0.8,0.9]:
         xs=[hit for c,hit in probs if lo<=c<min(lo+0.1,1.0001)]
