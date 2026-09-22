@@ -1,11 +1,15 @@
-import json, math, sqlite3
+import json, math, sqlite3, os
 from collections import defaultdict, Counter
 from compare_models import model_lambdas, fit_temperature, apply_temperature
 
 DB="football_model_database.sqlite"
-OUT="data/handicap_backtest.json"
+BASIS=os.environ.get("HANDICAP_SAMPLE_BASIS","asian").strip().lower()
+OUT="data/handicap_backtest_sporttery.json" if BASIS=="sporttery" else "data/handicap_backtest.json"
 RHO=-0.05
-PRIORITY={"hhad":10}
+ASIAN_PRIORITY={"asian_handicap_avg":6,"sofascore_asian_featured":5,"sgodds_open":4,"football_data_ah_close":3,"football_data_ah_bookmaker":2,"football_data_ah_open":1}
+SPORTTERY_PRIORITY={"hhad":10}
+PRIORITY=SPORTTERY_PRIORITY if BASIS=="sporttery" else ASIAN_PRIORITY
+SAMPLE_SOURCES=tuple(SPORTTERY_PRIORITY) if BASIS=="sporttery" else tuple(ASIAN_PRIORITY)
 TARGET_LINES={-3,-2,-1,1,2,3}
 PRIOR_WEIGHT=0.50
 PRIOR_ALPHA=3.0
@@ -103,7 +107,7 @@ def fit_line_priors(samples, split):
 
 def main():
     con=sqlite3.connect(DB)
-    raw=con.execute("""
+    source_sql = """
       SELECT sm.match_id,sm.handicap,sm.pool_code,r.ft_home,r.ft_away,
              c.competition_code,m.kickoff
       FROM sporttery_market sm
@@ -111,11 +115,16 @@ def main():
       JOIN matches m ON m.match_id=sm.match_id
       JOIN competitions c ON c.competition_id=m.competition_id
       WHERE sm.handicap IS NOT NULL
-        AND sm.pool_code = 'hhad'
-        AND sm.source_status = 'sporttery_official_result_endpoint'
+        AND sm.pool_code IN ({})
         AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL AND m.status='finished'
-      ORDER BY m.kickoff,sm.match_id
-    """).fetchall()
+    """.format(",".join("?" for _ in SAMPLE_SOURCES))
+    params=list(SAMPLE_SOURCES)
+    if BASIS=="sporttery":
+        source_sql=source_sql.replace(
+            "AND r.ft_home IS NOT NULL",
+            "AND sm.source_status = 'sporttery_official_result_endpoint' AND r.ft_home IS NOT NULL"
+        )
+    raw=con.execute(source_sql+" ORDER BY m.kickoff,sm.match_id",params).fetchall()
 
     chosen={}
     for mid,line,pool,fh,fa,league,ko in raw:
@@ -272,11 +281,13 @@ def main():
         }
 
     payload={"models":out_models,
-      "definition":"Leakage-safe T-12h integer handicap evaluation using the China Sports Lottery (中国体育彩票/中国竞彩网) 让球胜平负 handicap as the sole sample-defining line, with chronological temperature calibration and nonzero-line class-prior calibration.",
+      "definition":("Leakage-safe integer handicap evaluation using the China Sports Lottery (中国体育彩票/中国竞彩网) 让球胜平负 handicap as an independent validation sample."
+    if BASIS=="sporttery" else
+    "Leakage-safe integer handicap evaluation using Asian handicap market sources as the main sample, with deterministic source priority and one row per match+integer line; China Sports Lottery hhad is excluded from the main sample."),
       "mapping":{"sporttery_home_perspective":"goalLine is interpreted as the published home-perspective handicap: home -1 => line=-1; home +2 (away gives 2) => line=+2","settlement":"H if home_goals+line>away_goals; D if equal; A if lower","quarter_and_half_lines":"excluded from this 3-way integer module"},
-      "market_priority":["hhad"],
+      "sample_basis":BASIS,"market_priority":list(SAMPLE_SOURCES),
       "calibration":"Temperature fitted on first 60% chronologically; evaluated on later 40%. Nonzero class-prior correction is fitted only on the chronological training window with additive smoothing and fixed shrinkage weight; line-specific prior requires >=20 training samples, otherwise pooled nonzero-line prior is used.",
-      "notes":["Sample-defining handicap source is strictly China Sports Lottery hhad; Asian-book/SofaScore/SGOdds lines are not fallback samples in this module.","V3 remains production baseline candidate; V4 remains experimental.","Target calibration excludes level-ball line=0; level-ball rows remain stored but are not used for this handicap target.","Handicap is evaluation context, not a direct prediction feature.","Model confidence and empirical hit rate are reported separately.","Prior-calibrated results are evaluation-only until they beat the baseline on chronological holdout."]}
+      "notes":[("Sample-defining source is strictly China Sports Lottery hhad; Asian-book/SofaScore/SGOdds lines are excluded from this independent validation." if BASIS=="sporttery" else "Main sample uses Asian handicap sources only; Sporttery hhad is excluded and retained as an independent validation benchmark."),"V3 remains production baseline candidate; V4 remains experimental.","Target calibration excludes level-ball line=0; level-ball rows remain stored but are not used for this handicap target.","Handicap is evaluation context, not a direct prediction feature.","Model confidence and empirical hit rate are reported separately.","Prior-calibrated results are evaluation-only until they beat the baseline on chronological holdout."]}
     with open(OUT,"w",encoding="utf-8") as f: json.dump(payload,f,ensure_ascii=False,indent=2)
     print(json.dumps(payload,ensure_ascii=False))
     con.close()
