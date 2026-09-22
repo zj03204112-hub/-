@@ -85,6 +85,9 @@ jobs:
       - name: Build leakage-safe model features
         if: ${{ always() }}
         run: python data_pipeline/build_features.py
+      - name: Build advanced player schedule strength features
+        if: ${{ always() }}
+        run: python data_pipeline/build_advanced_features.py
       - name: Build T-12h lineup impact projection
         if: ${{ always() }}
         run: python data_pipeline/build_lineup_projection.py
@@ -118,7 +121,7 @@ jobs:
           set -e
           git config user.name "football-model-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add football_model_database.sqlite data/validation_report.json data/baseline_backtest.json data/handicap_backtest.json data/handicap_backtest_sporttery.json data/model_comparison.json data/manual_handicap_reviews.json data/handicap_sample_bridge_audit.json data_pipeline/import_manual_reviews.py
+          git add football_model_database.sqlite data/validation_report.json data/baseline_backtest.json data/handicap_backtest.json data/handicap_backtest_sporttery.json data/model_comparison.json data/manual_handicap_reviews.json data/handicap_sample_bridge_audit.json data/advanced_feature_audit.json data_pipeline/import_manual_reviews.py
           if git diff --cached --quiet; then
             echo "No generated database changes."
             exit 0
