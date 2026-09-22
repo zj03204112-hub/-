@@ -82,9 +82,6 @@ jobs:
           python data_pipeline/collect_fbref_player_data.py
         timeout-minutes: 45
         continue-on-error: true
-      # Optional enrichment must never block the core V1-V4 model pipeline.
-      # Calibration sweep refresh trigger: regenerate persisted +/-1 prior-weight evaluation.
-      # Rolling validation refresh trigger: regenerate expanding-window backtest output.
       - name: Build leakage-safe model features
         if: ${{ always() }}
         run: python data_pipeline/build_features.py
@@ -107,6 +104,9 @@ jobs:
         env:
           HANDICAP_SAMPLE_BASIS: sporttery
         run: python data_pipeline/backtest_handicap.py
+      - name: Audit ordinary-result to handicap sample bridge
+        if: ${{ always() }}
+        run: python data_pipeline/audit_handicap_sample_bridge.py
       - name: Import manual screenshot review samples
         if: ${{ always() }}
         run: python data_pipeline/import_manual_reviews.py
@@ -118,7 +118,7 @@ jobs:
           set -e
           git config user.name "football-model-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add football_model_database.sqlite data/validation_report.json data/baseline_backtest.json data/handicap_backtest.json data/handicap_backtest_sporttery.json data/model_comparison.json data/manual_handicap_reviews.json data_pipeline/import_manual_reviews.py
+          git add football_model_database.sqlite data/validation_report.json data/baseline_backtest.json data/handicap_backtest.json data/handicap_backtest_sporttery.json data/model_comparison.json data/manual_handicap_reviews.json data/handicap_sample_bridge_audit.json data_pipeline/import_manual_reviews.py
           if git diff --cached --quiet; then
             echo "No generated database changes."
             exit 0
