@@ -1,0 +1,347 @@
+{
+  "models": {
+    "v3": {
+      "eligible_market_rows": 0,
+      "deduped_match_line_rows": 0,
+      "test_rows": -1,
+      "effective_sample_target_per_integer_line": 200,
+      "effective_sample_min_target_by_integer_line": {
+        "-3": 100,
+        "-2": 100,
+        "-1": 200,
+        "1": 200,
+        "2": 100,
+        "3": 100
+      },
+      "effective_sample_count_by_integer_line": {
+        "-3": 0,
+        "-2": 0,
+        "-1": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "effective_sample_target_met": false,
+      "raw": {
+        "n": 0,
+        "accuracy": null,
+        "brier": null,
+        "logloss": null,
+        "mean_confidence": null,
+        "confidence_hit_gap": null
+      },
+      "calibrated": {
+        "n": 0,
+        "accuracy": null,
+        "brier": null,
+        "logloss": null,
+        "mean_confidence": null,
+        "confidence_hit_gap": null
+      },
+      "prior_calibrated": {
+        "n": 0,
+        "accuracy": null,
+        "brier": null,
+        "logloss": null,
+        "mean_confidence": null,
+        "confidence_hit_gap": null
+      },
+      "temperature_global": 1.0,
+      "temperature_by_integer_line": {},
+      "nonzero_class_prior_weight": 0.5,
+      "nonzero_class_prior_alpha": 3.0,
+      "nonzero_pooled_class_prior": {
+        "H": 0.3333333333333333,
+        "D": 0.3333333333333333,
+        "A": 0.3333333333333333
+      },
+      "nonzero_line_prior_training_n": {},
+      "confidence_calibration_raw": {},
+      "confidence_calibration_calibrated": {},
+      "confidence_calibration_prior_calibrated": {},
+      "by_line": {},
+      "by_source": {},
+      "score_mapping_audit": {
+        "n": 0,
+        "top1_consistent": 0,
+        "top2_consistent": 0,
+        "both_consistent": 0,
+        "inconsistent_examples": []
+      },
+      "pm1_prior_weight_sweep": {
+        "0.0": {
+          "-1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          },
+          "1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          }
+        },
+        "0.25": {
+          "-1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          },
+          "1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          }
+        },
+        "0.5": {
+          "-1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          },
+          "1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          }
+        },
+        "0.75": {
+          "-1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          },
+          "1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          }
+        },
+        "1.0": {
+          "-1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          },
+          "1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          }
+        }
+      },
+      "rolling_expanding_validation": []
+    },
+    "v4": {
+      "eligible_market_rows": 0,
+      "deduped_match_line_rows": 0,
+      "test_rows": -1,
+      "effective_sample_target_per_integer_line": 200,
+      "effective_sample_min_target_by_integer_line": {
+        "-3": 100,
+        "-2": 100,
+        "-1": 200,
+        "1": 200,
+        "2": 100,
+        "3": 100
+      },
+      "effective_sample_count_by_integer_line": {
+        "-3": 0,
+        "-2": 0,
+        "-1": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "effective_sample_target_met": false,
+      "raw": {
+        "n": 0,
+        "accuracy": null,
+        "brier": null,
+        "logloss": null,
+        "mean_confidence": null,
+        "confidence_hit_gap": null
+      },
+      "calibrated": {
+        "n": 0,
+        "accuracy": null,
+        "brier": null,
+        "logloss": null,
+        "mean_confidence": null,
+        "confidence_hit_gap": null
+      },
+      "prior_calibrated": {
+        "n": 0,
+        "accuracy": null,
+        "brier": null,
+        "logloss": null,
+        "mean_confidence": null,
+        "confidence_hit_gap": null
+      },
+      "temperature_global": 1.0,
+      "temperature_by_integer_line": {},
+      "nonzero_class_prior_weight": 0.5,
+      "nonzero_class_prior_alpha": 3.0,
+      "nonzero_pooled_class_prior": {
+        "H": 0.3333333333333333,
+        "D": 0.3333333333333333,
+        "A": 0.3333333333333333
+      },
+      "nonzero_line_prior_training_n": {},
+      "confidence_calibration_raw": {},
+      "confidence_calibration_calibrated": {},
+      "confidence_calibration_prior_calibrated": {},
+      "by_line": {},
+      "by_source": {},
+      "score_mapping_audit": {
+        "n": 0,
+        "top1_consistent": 0,
+        "top2_consistent": 0,
+        "both_consistent": 0,
+        "inconsistent_examples": []
+      },
+      "pm1_prior_weight_sweep": {
+        "0.0": {
+          "-1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          },
+          "1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          }
+        },
+        "0.25": {
+          "-1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          },
+          "1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          }
+        },
+        "0.5": {
+          "-1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          },
+          "1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          }
+        },
+        "0.75": {
+          "-1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          },
+          "1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          }
+        },
+        "1.0": {
+          "-1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          },
+          "1": {
+            "n": 0,
+            "accuracy": null,
+            "brier": null,
+            "logloss": null,
+            "mean_confidence": null,
+            "confidence_hit_gap": null
+          }
+        }
+      },
+      "rolling_expanding_validation": []
+    }
+  },
+  "definition": "Leakage-safe integer handicap evaluation using the China Sports Lottery (中国体育彩票/中国竞彩网) 让球胜平负 handicap as an independent validation sample.",
+  "mapping": {
+    "sporttery_home_perspective": "goalLine is interpreted as the published home-perspective handicap: home -1 => line=-1; home +2 (away gives 2) => line=+2",
+    "settlement": "H if home_goals+line>away_goals; D if equal; A if lower",
+    "quarter_and_half_lines": "excluded from this 3-way integer module"
+  },
+  "sample_basis": "sporttery",
+  "market_priority": [
+    "hhad"
+  ],
+  "calibration": "Temperature fitted on first 60% chronologically; evaluated on later 40%. Nonzero class-prior correction is fitted only on the chronological training window with additive smoothing and fixed shrinkage weight; line-specific prior requires >=20 training samples, otherwise pooled nonzero-line prior is used.",
+  "notes": [
+    "Sample-defining source is strictly China Sports Lottery hhad; Asian-book/SofaScore/SGOdds lines are excluded from this independent validation.",
+    "V3 remains production baseline candidate; V4 remains experimental.",
+    "Target calibration excludes level-ball line=0; level-ball rows remain stored but are not used for this handicap target.",
+    "Handicap is evaluation context, not a direct prediction feature.",
+    "Model confidence and empirical hit rate are reported separately.",
+    "Prior-calibrated results are evaluation-only until they beat the baseline on chronological holdout."
+  ]
+}
