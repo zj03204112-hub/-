@@ -26,20 +26,83 @@ def get(path):
   time.sleep(1.5*(i+1))
  return None,None,err
 def players(detail,side):
- block=((detail.get("content") or {}).get("lineup") or {}).get(side) or {}
- out=[]
- for p in block.get("players") or []:
-  pl=p.get("player") or p; st=p.get("stats") or p.get("statistics") or {}; pid=pl.get("id") or p.get("id")
-  if not pid: continue
-  def num(*ks):
-   for k in ks:
-    try:
-     v=st.get(k)
-     if v is not None:return float(v)
-    except: pass
-   return 0.0
-  out.append((str(pid),pl.get("name") or pl.get("shortName") or "unknown",p.get("position") or pl.get("position"),0 if p.get("substitute") else 1,num("minutesPlayed","minutes"),st.get("rating"),num("goals"),num("assists","goalAssist"),num("expectedGoals","xg"),num("expectedAssists","xa"),num("totalShots","shots"),num("keyPasses","keyPass"),num("tackles"),num("interceptions"),num("clearances")))
- return out
+    """Extract player rows from FotMob's current matchDetails lineup schema.
+    Supports both the historical lineup.lineup[2] structure and newer nested
+    starters/substitutes payloads. We deliberately keep this tolerant because
+    FotMob has changed the JSON shape several times.
+    """
+    content=detail.get("content") or {}
+    raw=((content.get("lineup") or {}).get("lineup"))
+    if not raw:
+        raw=(content.get("lineup") or {}).get("lineups")
+    if not raw:
+        return []
+
+    teams=raw if isinstance(raw,list) else [raw]
+    target_index=0 if side=="home" else 1
+    team_obj=teams[target_index] if len(teams)>target_index and isinstance(teams[target_index],dict) else None
+
+    # Some payloads use {players:[...]} while older payloads split players into
+    # positional groups. Flatten recursively, retaining only actual player nodes.
+    roots=[]
+    if team_obj:
+        for k in ("players","starters","startingPlayers","subs","substitutes","bench"):
+            v=team_obj.get(k)
+            if v: roots.append(v)
+    else:
+        roots.append(raw)
+
+    found=[]
+    seen=set()
+    def walk(x, inherited_starter=None):
+        if isinstance(x,list):
+            for y in x: walk(y,inherited_starter)
+            return
+        if not isinstance(x,dict): return
+
+        pl=x.get("player") if isinstance(x.get("player"),dict) else x
+        pid=pl.get("id") or x.get("id") or x.get("playerId")
+        name=pl.get("name") or pl.get("shortName") or x.get("name")
+        if pid and name:
+            stats=x.get("stats") or x.get("statistics") or pl.get("stats") or {}
+            rating=x.get("rating")
+            if isinstance(rating,dict):
+                rating=rating.get("num") or rating.get("value")
+            st=stats if isinstance(stats,dict) else {}
+            def num(*ks):
+                for k in ks:
+                    v=st.get(k)
+                    if v is None: v=x.get(k)
+                    try:
+                        if v is not None: return float(v)
+                    except (TypeError,ValueError): pass
+                return 0.0
+            starter=inherited_starter
+            if starter is None:
+                starter=not bool(x.get("substitute") or x.get("isSubstitute"))
+            row=(str(pid),name,x.get("position") or pl.get("position") or x.get("usualPosition"),
+                 1 if starter else 0,num("minutesPlayed","minsPlayed","minutes"),
+                 rating,num("goals"),num("assists","goalAssist"),
+                 num("expectedGoals","xg"),num("expectedAssists","xa"),
+                 num("totalShots","shots","totalScoringAtt"),num("keyPasses","keyPass"),
+                 num("tackles"),num("interceptions"),num("clearances"))
+            if str(pid) not in seen:
+                seen.add(str(pid)); found.append(row)
+            return
+
+        for k,v in x.items():
+            if k in ("players","starters","startingPlayers"):
+                walk(v,True)
+            elif k in ("subs","substitutes","bench"):
+                walk(v,False)
+            elif k in ("player","stats","statistics"):
+                walk(v,inherited_starter)
+            elif isinstance(v,(dict,list)):
+                walk(v,inherited_starter)
+
+    for root in roots: walk(root,None)
+    return found
+
 def main():
  con=sqlite3.connect(DB); rows=con.execute("SELECT match_id,kickoff,home_team,away_team FROM matches WHERE kickoff>=? AND kickoff<=? ORDER BY kickoff",(START,END+"T23:59:59")).fetchall()
  by_date={}
