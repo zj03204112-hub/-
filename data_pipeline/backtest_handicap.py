@@ -152,7 +152,10 @@ def main():
                 p=probs_for_line(lh,la,line)
             except Exception: continue
             pred=max(p,key=p.get)
-            scores=top_scores_for_result(lh,la,line,pred,2)
+            # Audit the actual top-2 score modes from the same score distribution.
+            # Do NOT filter scores by pred first: that would make every score
+            # mechanically consistent with pred and hide score->handicap errors.
+            scores=top_scores(lh,la,2)
             r1=score_result(scores[0][1],scores[0][2],line)
             r2=score_result(scores[1][1],scores[1][2],line)
             audit["n"]+=1
