@@ -18,7 +18,9 @@ def similarity(a,b):
     a,b=team_key(a),team_key(b)
     if not a or not b:return 0
     if a==b or a in b or b in a:return 1
-    return SequenceMatcher(None,a,b).ratio()
+    ta=set(re.findall(r"[a-z0-9]+",a)); tb=set(re.findall(r"[a-z0-9]+",b))
+    j=len(ta&tb)/max(1,len(ta|tb))
+    return max(SequenceMatcher(None,a,b).ratio(),j)
 S=requests.Session(); S.headers.update({"x-apisports-key":API_KEY,"User-Agent":"football-model-player-collector/1.1"})
 def get(endpoint,params,tries=3):
     for i in range(tries):
@@ -44,11 +46,20 @@ def map_fixture(matches,item):
         c.append((.45*sh+.45*sa+.10*(dd==0),sh,sa,dd,mid))
     if not c:return None
     c.sort(reverse=True)
-    if len(c)>1 and c[0][0]-c[1][0]<.02:return None
+    if len(c)>1 and c[0][0]-c[1][0]<.01:return None
+    if c[0][1] < .55 or c[0][2] < .55:return None
     return c[0][-1]
 def parse_players(item,mid):
-    data=get("fixtures/players",{"fixture":item["fixture"]["id"]}); out=[]
-    for block in data.get("response",[]):
+    fixture_id=item["fixture"]["id"]
+    data=get("fixtures",{"ids":fixture_id})
+    detail=(data.get("response") or [])
+    detail=detail[0] if detail else {}
+    blocks=detail.get("players") or []
+    if not blocks:
+        data=get("fixtures/players",{"fixture":fixture_id})
+        blocks=data.get("response") or []
+    out=[]
+    for block in blocks:
         side="home" if block.get("team",{}).get("id")==item["teams"]["home"].get("id") else "away"
         for p in block.get("players",[]):
             player=p.get("player") or {}; st=(p.get("statistics") or [{}])[0]
