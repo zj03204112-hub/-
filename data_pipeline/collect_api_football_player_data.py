@@ -35,7 +35,28 @@ def get(endpoint,params,tries=3):
             time.sleep(1+i)
     raise RuntimeError("unreachable")
 def fixture_rows(lid,season):
-    return get("fixtures",{"league":lid,"season":season,"from":START,"to":END}).get("response",[])
+    out=[]
+    page=1
+    while True:
+        data=get("fixtures",{"league":lid,"season":season,"from":START,"to":END,"status":"FT-AET-PEN","page":page})
+        batch=data.get("response",[])
+        out.extend(batch)
+        paging=data.get("paging") or {}
+        total_pages=int(paging.get("total") or page)
+        if page>=total_pages or not batch:
+            break
+        page+=1
+    return out
+
+def player_detail_batches(items):
+    out={}
+    for i in range(0,len(items),20):
+        ids=[str(x["fixture"]["id"]) for x in items[i:i+20] if x.get("fixture",{}).get("id")]
+        if not ids: continue
+        data=get("fixtures",{"ids":"-".join(ids)})
+        for item in data.get("response",[]) or []:
+            out[str(item.get("fixture",{}).get("id"))]=item
+    return out
 def map_fixture(matches,item):
     dt=item["fixture"].get("date","")[:10]; teams=item["teams"]; c=[]
     for (h,a,d),mid in matches.items():
@@ -50,11 +71,10 @@ def map_fixture(matches,item):
     if c[0][1] < .55 or c[0][2] < .55:return None
     return c[0][-1]
 def parse_players(item,mid):
+    if not item:
+        return []
     fixture_id=item["fixture"]["id"]
-    data=get("fixtures",{"ids":fixture_id})
-    detail=(data.get("response") or [])
-    detail=detail[0] if detail else {}
-    blocks=detail.get("players") or []
+    blocks=item.get("players") or []
     if not blocks:
         data=get("fixtures/players",{"fixture":fixture_id})
         blocks=data.get("response") or []
@@ -78,6 +98,7 @@ def main():
         for season in seasons:
             try:items=fixture_rows(lid,season)
             except Exception as e:ls["errors"]+=1;failures+=1;print(f"{name} season {season}: ERROR {e}",flush=True);continue
+            details=player_detail_batches(items)
             for item in items:
                 total+=1;ls["fixtures"]+=1;mid=map_fixture(matches,item)
                 if not mid or mid in seen:continue
