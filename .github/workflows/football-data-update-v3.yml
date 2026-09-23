@@ -53,6 +53,12 @@ jobs:
         run: python scripts/fetch_current_season.py
       - name: Collect J1 and K League 1
         run: python data_pipeline/collect_public_asia.py
+      - name: Collect UEFA Nations League 2026 match data
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python data_pipeline/collect_nations_league.py
+        timeout-minutes: 15
+        continue-on-error: true
       - name: Collect Sporttery historical handicap markets
         run: python data_pipeline/collect_sporttery_history.py
         continue-on-error: true
