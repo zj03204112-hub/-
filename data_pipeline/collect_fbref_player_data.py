@@ -74,7 +74,8 @@ def main():
     total=mapped=reports=failures=0; seen=set()
     for comp_id in LEAGUES:
         for season in ("2025","2026"):
-            sh=get(f"https://fbref.com/en/comps/{comp_id}/{season}/schedule/{season}-{int(season)+1}",
+            season_span=f"{season}-{int(season)+1}"
+            sh=get(f"https://fbref.com/en/comps/{comp_id}/{season_span}/schedule/{season_span}-Scores-and-Fixtures",
                    Path(f"schedule_{comp_id}_{season}.html"),1.5)
             if not sh: failures+=1; continue
             for report in match_links(sh):
