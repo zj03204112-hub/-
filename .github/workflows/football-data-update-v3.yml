@@ -1,24 +1,23 @@
-name: Football model data update # historical handicap coverage refresh
+name: Football player data verification
 
 on:
   push:
     paths-ignore:
       - "data/**"
       - "football_model_database.sqlite"
-      - "data/auto_results/**"
   workflow_dispatch:
   schedule:
-    - cron: "17 2 * * *"
+    - cron: "37 2 * * *"
 
 concurrency:
-  group: football-model-data-update
+  group: football-player-data-verification
   cancel-in-progress: true
 
 permissions:
   contents: write
 
 jobs:
-  update:
+  player_data:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout latest main
@@ -32,61 +31,29 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: python -m pip install --upgrade pip pandas requests lxml curl_cffi
-      - name: Initialize database
-        run: |
-          python - <<'PY'
-          import sqlite3
-          from pathlib import Path
-          db=Path("football_model_database.sqlite"); schema=Path("database/football_model_database.sql")
-          if not db.exists():
-              con=sqlite3.connect(db); con.executescript(schema.read_text(encoding="utf-8")); con.close()
-          PY
-      - name: Enforce historical collection scope
-        run: python scripts/enforce_collection_scope.py
-      - name: Migrate T-12h lineup schema
-        run: python scripts/migrate_injury_schema.py
       - name: Migrate player data schema
         run: python scripts/migrate_player_schema.py
-      - name: Collect European league results
-        run: python data_pipeline/build_football_db.py
-      - name: Fetch official J1 feed
-        run: python scripts/fetch_current_season.py
-      - name: Collect J1 and K League 1
-        run: python data_pipeline/collect_public_asia.py
-      - name: Collect UEFA Nations League 2026 match data
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-        run: python data_pipeline/collect_nations_league.py
-        timeout-minutes: 15
-        continue-on-error: true
-      - name: Collect Sporttery historical handicap markets
-        run: python data_pipeline/collect_sporttery_history.py
-        continue-on-error: true
-      - name: Collect SGOdds opening integer handicap markets
-        run: python data_pipeline/collect_sgodds_handicap.py
-        timeout-minutes: 15
-        continue-on-error: true
-      - name: Collect real player match data
-        run: python data_pipeline/collect_player_data.py
-        timeout-minutes: 30
-        continue-on-error: true
-      - name: Collect API-Football player match data
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+      - name: Inspect existing match base
         run: |
           python - <<'PY'
           import sqlite3
-          n=sqlite3.connect("football_model_database.sqlite").execute(
-              "SELECT COUNT(*) FROM player_match_stats"
-          ).fetchone()[0]
-          print(f"player_rows_before_api_football={n}")
+          con=sqlite3.connect("football_model_database.sqlite")
+          m=con.execute("SELECT COUNT(*) FROM matches").fetchone()[0]
+          p=con.execute("SELECT COUNT(*) FROM player_match_stats").fetchone()[0]
+          mm=con.execute("SELECT COUNT(DISTINCT match_id) FROM player_match_stats").fetchone()[0]
+          print({"matches":m,"player_rows_before":p,"mapped_matches_before":mm})
+          if m == 0:
+              raise SystemExit("MATCH_BASE_EMPTY")
           PY
-          python data_pipeline/collect_api_football_player_data.py
-        timeout-minutes: 60
+      - name: Collect SofaScore real player data
+        run: python data_pipeline/collect_player_data.py
+        timeout-minutes: 45
         continue-on-error: true
-      - name: Collect SofaScore Asian handicap markets
-        run: python data_pipeline/collect_sofascore_handicap.py
-        timeout-minutes: 20
+      - name: Collect API-Football player data
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python data_pipeline/collect_api_football_player_data.py
+        timeout-minutes: 90
         continue-on-error: true
       - name: Free FBref player-data fallback
         run: |
@@ -95,15 +62,12 @@ jobs:
           con=sqlite3.connect("football_model_database.sqlite")
           rows=con.execute("SELECT COUNT(*) FROM player_match_stats").fetchone()[0]
           mapped=con.execute("SELECT COUNT(DISTINCT match_id) FROM player_match_stats").fetchone()[0]
-          print(f"existing_player_rows={rows} existing_mapped_matches={mapped}")
-          if rows >= 100:
-              raise SystemExit(0)
+          print({"existing_player_rows":rows,"existing_mapped_matches":mapped})
           PY
           python data_pipeline/collect_fbref_player_data.py
-        timeout-minutes: 45
+        timeout-minutes: 60
         continue-on-error: true
       - name: Verify player data layer
-        if: ${{ always() }}
         run: |
           python - <<'PY'
           import sqlite3, sys, json
@@ -111,55 +75,23 @@ jobs:
           rows=con.execute("SELECT COUNT(*) FROM player_match_stats").fetchone()[0]
           matches=con.execute("SELECT COUNT(DISTINCT match_id) FROM player_match_stats").fetchone()[0]
           sources=con.execute("SELECT data_source,COUNT(*) FROM player_match_stats GROUP BY data_source ORDER BY COUNT(*) DESC").fetchall()
-          print(json.dumps({"player_rows":rows,"mapped_matches":matches,"sources":sources},ensure_ascii=False))
+          sides=con.execute("SELECT team_side,COUNT(*) FROM player_match_stats GROUP BY team_side").fetchall()
+          mapped_events=con.execute("SELECT COUNT(*) FROM provider_event_map").fetchone()[0]
+          print(json.dumps({"player_rows":rows,"mapped_matches":matches,"sources":sources,"team_sides":sides,"provider_event_map_rows":mapped_events},ensure_ascii=False))
           con.close()
           if rows == 0 or matches == 0:
               print("PLAYER_DATA_LAYER_EMPTY")
               sys.exit(1)
           PY
-      - name: Build leakage-safe model features
-        if: ${{ always() }}
-        run: python data_pipeline/build_features.py
-      - name: Build advanced player schedule strength features
-        if: ${{ always() }}
-        run: python data_pipeline/build_advanced_features.py
-      - name: Build T-12h lineup impact projection
-        if: ${{ always() }}
-        run: python data_pipeline/build_lineup_projection.py
-      - name: Build T-12h baseline predictions
-        if: ${{ always() }}
-        run: python data_pipeline/build_baseline_predictions.py
-      - name: Compare V1 V2 V3 V4 + calibration + blend
-        if: ${{ always() }}
-        run: python data_pipeline/compare_models.py
-      - name: Backtest Asian handicap main sample
-        if: ${{ always() }}
-        env:
-          HANDICAP_SAMPLE_BASIS: asian
-        run: python data_pipeline/backtest_handicap.py
-      - name: Backtest China Sports Lottery independent validation
-        if: ${{ always() }}
-        env:
-          HANDICAP_SAMPLE_BASIS: sporttery
-        run: python data_pipeline/backtest_handicap.py
-      - name: Audit ordinary-result to handicap sample bridge
-        if: ${{ always() }}
-        run: python data_pipeline/audit_handicap_sample_bridge.py
-      - name: Import manual screenshot review samples
-        if: ${{ always() }}
-        run: python data_pipeline/import_manual_reviews.py
-      - name: Validate database
-        if: ${{ always() }}
-        run: python scripts/validate_database.py
-      - name: Commit generated database
+      - name: Commit player data database
+        if: success()
         run: |
-          set -e
           git config user.name "football-model-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add football_model_database.sqlite data/validation_report.json data/baseline_backtest.json data/handicap_backtest.json data/handicap_backtest_sporttery.json data/model_comparison.json data/manual_handicap_reviews.json data/handicap_sample_bridge_audit.json data/advanced_feature_audit.json data_pipeline/import_manual_reviews.py
+          git add football_model_database.sqlite
           if git diff --cached --quiet; then
-            echo "No generated database changes."
+            echo "No player database changes."
             exit 0
           fi
-          git commit -m "auto: update football model database"
+          git commit -m "auto: populate and verify player data"
           git push origin HEAD:main
