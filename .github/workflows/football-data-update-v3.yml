@@ -64,6 +64,20 @@ jobs:
         run: python data_pipeline/collect_player_data.py
         timeout-minutes: 30
         continue-on-error: true
+      - name: Collect API-Football player match data
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: |
+          python - <<'PY'
+          import sqlite3
+          n=sqlite3.connect("football_model_database.sqlite").execute(
+              "SELECT COUNT(*) FROM player_match_stats"
+          ).fetchone()[0]
+          print(f"player_rows_before_api_football={n}")
+          PY
+          python data_pipeline/collect_api_football_player_data.py
+        timeout-minutes: 60
+        continue-on-error: true
       - name: Collect SofaScore Asian handicap markets
         run: python data_pipeline/collect_sofascore_handicap.py
         timeout-minutes: 20
@@ -82,6 +96,21 @@ jobs:
           python data_pipeline/collect_fbref_player_data.py
         timeout-minutes: 45
         continue-on-error: true
+      - name: Verify player data layer
+        if: ${{ always() }}
+        run: |
+          python - <<'PY'
+          import sqlite3, sys
+          con=sqlite3.connect("football_model_database.sqlite")
+          rows=con.execute("SELECT COUNT(*) FROM player_match_stats").fetchone()[0]
+          matches=con.execute("SELECT COUNT(DISTINCT match_id) FROM player_match_stats").fetchone()[0]
+          sources=con.execute("SELECT data_source,COUNT(*) FROM player_match_stats GROUP BY data_source").fetchall()
+          print({"player_rows":rows,"mapped_matches":matches,"sources":sources})
+          con.close()
+          if rows == 0:
+              print("PLAYER_DATA_LAYER_EMPTY")
+              sys.exit(1)
+          PY
       - name: Build leakage-safe model features
         if: ${{ always() }}
         run: python data_pipeline/build_features.py
