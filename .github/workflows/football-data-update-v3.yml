@@ -45,28 +45,12 @@ jobs:
           if m == 0:
               raise SystemExit("MATCH_BASE_EMPTY")
           PY
-      - name: Collect SofaScore real player data
-        run: python data_pipeline/collect_player_data.py
-        timeout-minutes: 45
-        continue-on-error: true
-      - name: Collect API-Football player data
+      - name: Test FotMob real player data (free source)
         env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-        run: python data_pipeline/collect_api_football_player_data.py
-        timeout-minutes: 90
-        continue-on-error: true
-      - name: Free FBref player-data fallback
-        run: |
-          python - <<'PY'
-          import sqlite3
-          con=sqlite3.connect("football_model_database.sqlite")
-          rows=con.execute("SELECT COUNT(*) FROM player_match_stats").fetchone()[0]
-          mapped=con.execute("SELECT COUNT(DISTINCT match_id) FROM player_match_stats").fetchone()[0]
-          print({"existing_player_rows":rows,"existing_mapped_matches":mapped})
-          PY
-          python data_pipeline/collect_fbref_player_data.py
-        timeout-minutes: 60
-        continue-on-error: true
+          FOTMOB_MAX_MATCHES: "100"
+        run: python data_pipeline/collect_fotmob_player_data.py
+        timeout-minutes: 45
+        continue-on-error: false
       - name: Verify player data layer
         run: |
           python - <<'PY'
