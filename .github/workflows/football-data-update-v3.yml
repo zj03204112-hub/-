@@ -59,7 +59,7 @@ jobs:
           PY
       - name: Test FotMob real player data (free source)
         env:
-          FOTMOB_MAX_MATCHES: "50"
+          FOTMOB_MAX_MATCHES: "300"
         run: python data_pipeline/collect_fotmob_player_data.py
         timeout-minutes: 90
         continue-on-error: false
