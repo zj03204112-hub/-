@@ -112,7 +112,8 @@ def main():
         plh,pla,hf,af,hn,an=player_enhanced(con,m)
         pp=probs(plh,pla); php,phs=handicap_probs(plh,pla,line)
         bc=int(max(bp,key=bp.get)==actual); pc=int(max(pp,key=pp.get)==actual)
-        ah=handicap_state(m[4]-m[5],line)
+        ah_settle=asian_settlement(m[4]-m[5],line)
+        ah="H" if ah_settle.startswith("H") else "A" if ah_settle.startswith("A") else "D"
         bh_pick=max(bhp,key=bhp.get); ph_pick=max(php,key=php.get)
         bhc=int(bh_pick==ah); phc=int(ph_pick==ah)
         base_correct+=bc; player_correct+=pc; base_handicap_correct+=bhc; player_handicap_correct+=phc
@@ -123,7 +124,9 @@ def main():
           "player_probs":{k:round(v,4) for k,v in pp.items()},
           "baseline_pick":max(bp,key=bp.get),"player_pick":max(pp,key=pp.get),
           "handicap_baseline_probs":{k:round(v,4) for k,v in bhp.items()},
-          "handicap_player_probs":{k:round(v,4) for k,v in php.items()},\n          "baseline_asian_settlement_probs":{k:round(v,4) for k,v in bhs.items()},\n          "player_asian_settlement_probs":{k:round(v,4) for k,v in phs.items()},
+          "handicap_player_probs":{k:round(v,4) for k,v in php.items()},
+          "baseline_asian_settlement_probs":{k:round(v,4) for k,v in bhs.items()},
+          "player_asian_settlement_probs":{k:round(v,4) for k,v in phs.items()},
           "handicap_baseline_pick":bh_pick,"handicap_player_pick":ph_pick,
           "baseline_handicap_hit":bool(bhc),"player_handicap_hit":bool(phc),
           "baseline_handicap_confidence":round(max(bhp.values()),4),
