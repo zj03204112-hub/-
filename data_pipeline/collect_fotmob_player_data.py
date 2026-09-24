@@ -62,6 +62,23 @@ def players(detail,side):
 
     found=[]
     seen=set()
+    def scalar(v):
+        if isinstance(v, (int,float)): return float(v)
+        if isinstance(v, dict):
+            for k in ("value","num","number","raw","displayValue"):
+                z=v.get(k)
+                if isinstance(z,(int,float)): return float(z)
+                if isinstance(z,str):
+                    m=re.search(r"-?\d+(?:\.\d+)?",z.replace(",",""))
+                    if m:
+                        try: return float(m.group(0))
+                        except ValueError: pass
+        if isinstance(v,str):
+            m=re.search(r"-?\d+(?:\.\d+)?",v.replace(",",""))
+            if m:
+                try: return float(m.group(0))
+                except ValueError: pass
+        return None
     def walk(x, inherited_starter=None):
         if isinstance(x,list):
             for y in x: walk(y,inherited_starter)
@@ -74,16 +91,14 @@ def players(detail,side):
         if pid and name:
             stats=x.get("stats") or x.get("statistics") or x.get("performance") or pl.get("stats") or pl.get("performance") or {}
             rating=x.get("rating") or (stats.get("rating") if isinstance(stats,dict) else None) or (pl.get("rating") if isinstance(pl,dict) else None)
-            if isinstance(rating,dict):
-                rating=rating.get("num") or rating.get("value")
+            rating=scalar(rating)
             st=stats if isinstance(stats,dict) else {}
             def num(*ks):
                 for k in ks:
                     v=st.get(k)
                     if v is None: v=x.get(k)
-                    try:
-                        if v is not None: return float(v)
-                    except (TypeError,ValueError): pass
+                    z=scalar(v)
+                    if z is not None: return z
                 return 0.0
             starter=inherited_starter
             if starter is None:
