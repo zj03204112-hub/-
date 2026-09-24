@@ -190,6 +190,23 @@ def main():
      main._debug_dumped=True
    if ins:
     mapped+=1
+    if not getattr(main, "_sample_player_dumped", False):
+     # Diagnostic: expose one real player node shape so minutes can be mapped
+     # from FotMob's current payload instead of guessing field aliases.
+     lineup=(detail.get("content") or {}).get("lineup") or {}
+     sample=[]
+     def collect_nodes(x):
+      if len(sample)>=3: return
+      if isinstance(x,list):
+       for y in x: collect_nodes(y)
+      elif isinstance(x,dict):
+       if (x.get("id") or x.get("playerId")) and (x.get("name") or x.get("shortName")):
+        sample.append(x)
+       for v in x.values():
+        if isinstance(v,(dict,list)): collect_nodes(v)
+     collect_nodes(lineup)
+     print(json.dumps({"fotmob_player_node_sample":sample},ensure_ascii=False)[:12000],flush=True)
+     main._sample_player_dumped=True
    con.commit()
    if mapped%10==0 or not ins: print(json.dumps({"dates":f"{scanned}/{len(by_date)}","candidates":candidates,"mapped_matches":mapped,"player_rows":prow,"failures":fail},ensure_ascii=False),flush=True)
    time.sleep(.15)
