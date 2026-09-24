@@ -26,20 +26,19 @@ jobs:
       - run: python -m pip install --upgrade pip pandas requests lxml curl_cffi
       - name: Run leakage-safe margin calibration experiment
         run: python data_pipeline/optimize_handicap_margin_model.py
-      - name: Run 20-match model validation
-        run: |
-          HIST_LIMIT=20 MODEL_COMPARISON_OUT=data/model_comparison_20.json python data_pipeline/compare_models.py
-      - name: Run 30-match model validation
+      - name: Run formal 30-match model validation
         run: |
           HIST_LIMIT=30 MODEL_COMPARISON_OUT=data/model_comparison_30.json python data_pipeline/compare_models.py
-      - name: Summarize 20 vs 30
+      - name: Check formal 30-match validation result
         run: |
           python - <<'PY'
           import json
-          for n in (20,30):
-              d=json.load(open(f"data/model_comparison_{n}.json",encoding="utf-8"))["models"]
-              print(n, {k:d[k] for k in ("v1","v2","v3","v4")})
-              print(n,"holdout",d["chronological_holdout"]["models"])
+          d=json.load(open("data/model_comparison_30.json",encoding="utf-8"))
+          m=d["models"]
+          print("30-match production validation")
+          for k in ("v1","v2","v3","v4"):
+              print(k, m[k])
+          print("holdout", d["chronological_holdout"]["models"])
           PY
       - name: Commit optimization result
         run: |
@@ -48,10 +47,10 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git fetch origin main
           git rebase origin/main
-          git add data/handicap_margin_optimization.json data/model_comparison_20.json data/model_comparison_30.json
+          git add data/handicap_margin_optimization.json data/model_comparison_30.json
           if git diff --cached --quiet; then
             echo "No optimization result changes."
             exit 0
           fi
-          git commit -m "auto: update handicap margin optimization"
+          git commit -m "auto: update 30-match production validation"
           git push origin HEAD:main
