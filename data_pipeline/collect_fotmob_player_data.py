@@ -130,9 +130,17 @@ def main():
    if fail<=5: print(json.dumps({"fotmob_error_date":d,"status":status,"error":err},ensure_ascii=False),flush=True)
    continue
   fmatches=[m for lg in payload.get("leagues") or [] for m in lg.get("matches") or []]
+  # Match each FotMob event to a unique local match on the same date.
+  # The previous implementation could reuse the same local match_id for many
+  # provider events because it independently selected the best match each time.
+  used_local=set()
+  used_fotmob=set()
   for fm in fmatches:
+   fid=str(fm.get("id"))
+   if not fid or fid in used_fotmob: continue
    fh=(fm.get("home") or {}).get("name",""); fa=(fm.get("away") or {}).get("name","")
-   best=max((( (sim(fh,h)+sim(fa,a))/2,mid) for mid,h,a in by_date[d]),default=(0,None))
+   ranked=sorted((( (sim(fh,h)+sim(fa,a))/2,mid,h,a) for mid,h,a in by_date[d] if mid not in used_local), reverse=True)
+   best=ranked[0] if ranked else (0,None,"","")
    if best[0]<.78: continue
    candidates+=1
    if mapped>=MAX_MATCHES: break
@@ -141,7 +149,7 @@ def main():
     fail+=1
     if fail<=10: print(json.dumps({"fotmob_detail_error":fid,"status":ds,"error":de},ensure_ascii=False),flush=True)
     continue
-   mid=best[1]; con.execute("INSERT OR REPLACE INTO provider_event_map(match_id,provider,event_id,observed_at) VALUES(?,?,?,?)",(mid,"fotmob",fid,datetime.utcnow().isoformat(timespec="seconds")))
+   mid=best[1]; used_local.add(mid); used_fotmob.add(fid); con.execute("INSERT OR REPLACE INTO provider_event_map(match_id,provider,event_id,observed_at) VALUES(?,?,?,?)",(mid,"fotmob",fid,datetime.utcnow().isoformat(timespec="seconds")))
    ins=0
    for side in ("home","away"):
     for p in players(detail,side):
