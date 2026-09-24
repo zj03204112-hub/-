@@ -92,6 +92,9 @@ jobs:
           source_rows=con.execute("SELECT data_source,COUNT(*) FROM player_match_stats GROUP BY data_source").fetchall()
           side_rows=con.execute("SELECT team_side,COUNT(*) FROM player_match_stats GROUP BY team_side").fetchall()
           map_rows=q("SELECT COUNT(DISTINCT match_id) FROM provider_event_map WHERE provider='fotmob'")
+          map_detail=con.execute("SELECT match_id,COUNT(*) AS provider_rows,MIN(event_id),MAX(event_id) FROM provider_event_map WHERE provider='fotmob' GROUP BY match_id ORDER BY match_id").fetchall()
+          player_match_detail=con.execute("SELECT match_id,COUNT(*) FROM player_match_stats GROUP BY match_id ORDER BY match_id").fetchall()
+          print(json.dumps({"map_detail":map_detail,"player_match_detail":player_match_detail},ensure_ascii=False))
           metrics={
             "rows":rows,"matches":matches,"distinct_players":players,"starters":starters,
             "rating_nonnull":rating_total,"rating_nonnull_rate":round(rating_total/rows,4) if rows else 0,
