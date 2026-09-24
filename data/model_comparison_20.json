@@ -1,0 +1,500 @@
+{
+  "definition": "Leakage-safe T-12h comparison. V1 Poisson; V2 Dixon-Coles; V3 adds opponent strength and schedule intent; V4 adds recency-weighted dynamic attack/defence states with opponent-quality adjustment. V4 is experimental. Calibration and V3/V4 blend are selected/evaluated chronologically rather than on the same test slice.",
+  "models": {
+    "v1": {
+      "n": 8548,
+      "accuracy": 0.504,
+      "brier": 0.6179,
+      "logloss": 1.0329,
+      "calibration": {
+        "0.33-0.40": {
+          "n": 760,
+          "empirical_hit_rate": 0.3592,
+          "mean_confidence": 0.3932,
+          "calibration_gap": 0.034
+        },
+        "0.60-0.70": {
+          "n": 430,
+          "empirical_hit_rate": 0.693,
+          "mean_confidence": 0.6314,
+          "calibration_gap": -0.0616
+        },
+        "0.50-0.60": {
+          "n": 2050,
+          "empirical_hit_rate": 0.6029,
+          "mean_confidence": 0.5397,
+          "calibration_gap": -0.0633
+        },
+        "0.40-0.50": {
+          "n": 5275,
+          "empirical_hit_rate": 0.469,
+          "mean_confidence": 0.4459,
+          "calibration_gap": -0.0231
+        },
+        "0.70-0.80": {
+          "n": 30,
+          "empirical_hit_rate": 0.8333,
+          "mean_confidence": 0.7329,
+          "calibration_gap": -0.1004
+        },
+        "0.80-0.90": {
+          "n": 3,
+          "empirical_hit_rate": 0.6667,
+          "mean_confidence": 0.8112,
+          "calibration_gap": 0.1445
+        }
+      }
+    },
+    "v2": {
+      "n": 8548,
+      "accuracy": 0.504,
+      "brier": 0.6169,
+      "logloss": 1.0308,
+      "calibration": {
+        "0.33-0.40": {
+          "n": 1038,
+          "empirical_hit_rate": 0.3815,
+          "mean_confidence": 0.3908,
+          "calibration_gap": 0.0093
+        },
+        "0.60-0.70": {
+          "n": 391,
+          "empirical_hit_rate": 0.6905,
+          "mean_confidence": 0.6313,
+          "calibration_gap": -0.0592
+        },
+        "0.50-0.60": {
+          "n": 1949,
+          "empirical_hit_rate": 0.6095,
+          "mean_confidence": 0.5398,
+          "calibration_gap": -0.0697
+        },
+        "0.40-0.50": {
+          "n": 5138,
+          "empirical_hit_rate": 0.4726,
+          "mean_confidence": 0.4455,
+          "calibration_gap": -0.0271
+        },
+        "0.70-0.80": {
+          "n": 30,
+          "empirical_hit_rate": 0.8,
+          "mean_confidence": 0.7337,
+          "calibration_gap": -0.0663
+        },
+        "0.80-0.90": {
+          "n": 2,
+          "empirical_hit_rate": 1.0,
+          "mean_confidence": 0.814,
+          "calibration_gap": -0.186
+        }
+      }
+    },
+    "v3": {
+      "n": 8548,
+      "accuracy": 0.5025,
+      "brier": 0.6138,
+      "logloss": 1.0262,
+      "calibration": {
+        "0.33-0.40": {
+          "n": 865,
+          "empirical_hit_rate": 0.3908,
+          "mean_confidence": 0.3902,
+          "calibration_gap": -0.0005
+        },
+        "0.60-0.70": {
+          "n": 773,
+          "empirical_hit_rate": 0.6895,
+          "mean_confidence": 0.6381,
+          "calibration_gap": -0.0515
+        },
+        "0.50-0.60": {
+          "n": 2310,
+          "empirical_hit_rate": 0.5749,
+          "mean_confidence": 0.5427,
+          "calibration_gap": -0.0322
+        },
+        "0.40-0.50": {
+          "n": 4504,
+          "empirical_hit_rate": 0.4498,
+          "mean_confidence": 0.4469,
+          "calibration_gap": -0.003
+        },
+        "0.70-0.80": {
+          "n": 88,
+          "empirical_hit_rate": 0.75,
+          "mean_confidence": 0.7289,
+          "calibration_gap": -0.0211
+        },
+        "0.80-0.90": {
+          "n": 8,
+          "empirical_hit_rate": 0.5,
+          "mean_confidence": 0.8147,
+          "calibration_gap": 0.3147
+        }
+      }
+    },
+    "v4": {
+      "n": 8548,
+      "accuracy": 0.5066,
+      "brier": 0.6129,
+      "logloss": 1.0249,
+      "calibration": {
+        "0.33-0.40": {
+          "n": 1179,
+          "empirical_hit_rate": 0.3885,
+          "mean_confidence": 0.3899,
+          "calibration_gap": 0.0015
+        },
+        "0.40-0.50": {
+          "n": 4917,
+          "empirical_hit_rate": 0.4688,
+          "mean_confidence": 0.4449,
+          "calibration_gap": -0.0239
+        },
+        "0.50-0.60": {
+          "n": 2066,
+          "empirical_hit_rate": 0.6191,
+          "mean_confidence": 0.54,
+          "calibration_gap": -0.079
+        },
+        "0.60-0.70": {
+          "n": 371,
+          "empirical_hit_rate": 0.7466,
+          "mean_confidence": 0.633,
+          "calibration_gap": -0.1136
+        },
+        "0.70-0.80": {
+          "n": 15,
+          "empirical_hit_rate": 0.7333,
+          "mean_confidence": 0.7209,
+          "calibration_gap": -0.0124
+        }
+      }
+    },
+    "chronological_holdout": {
+      "train_fraction": 0.6,
+      "test_fraction": 0.4001,
+      "blend_weight_v4": 0.55,
+      "weight_grid_step": 0.05,
+      "models": {
+        "v3": {
+          "n": 3420,
+          "accuracy": 0.495,
+          "brier": 0.6161,
+          "logloss": 1.0289,
+          "calibration": {
+            "0.40-0.50": {
+              "n": 1856,
+              "empirical_hit_rate": 0.4429,
+              "mean_confidence": 0.4464,
+              "calibration_gap": 0.0035
+            },
+            "0.50-0.60": {
+              "n": 942,
+              "empirical_hit_rate": 0.5637,
+              "mean_confidence": 0.5425,
+              "calibration_gap": -0.0212
+            },
+            "0.60-0.70": {
+              "n": 240,
+              "empirical_hit_rate": 0.7292,
+              "mean_confidence": 0.6396,
+              "calibration_gap": -0.0895
+            },
+            "0.33-0.40": {
+              "n": 341,
+              "empirical_hit_rate": 0.393,
+              "mean_confidence": 0.3905,
+              "calibration_gap": -0.0025
+            },
+            "0.70-0.80": {
+              "n": 37,
+              "empirical_hit_rate": 0.7838,
+              "mean_confidence": 0.7292,
+              "calibration_gap": -0.0546
+            },
+            "0.80-0.90": {
+              "n": 4,
+              "empirical_hit_rate": 0.5,
+              "mean_confidence": 0.8088,
+              "calibration_gap": 0.3088
+            }
+          },
+          "calibrated_probability_metrics": {
+            "n": 3420,
+            "accuracy": 0.495,
+            "brier": 0.6161,
+            "logloss": 1.0289
+          },
+          "calibrated_confidence": {
+            "0.40-0.50": {
+              "n": 1856,
+              "empirical_hit_rate": 0.4429,
+              "mean_confidence": 0.4464,
+              "calibration_gap": 0.0035
+            },
+            "0.50-0.60": {
+              "n": 942,
+              "empirical_hit_rate": 0.5637,
+              "mean_confidence": 0.5425,
+              "calibration_gap": -0.0212
+            },
+            "0.60-0.70": {
+              "n": 240,
+              "empirical_hit_rate": 0.7292,
+              "mean_confidence": 0.6396,
+              "calibration_gap": -0.0895
+            },
+            "0.33-0.40": {
+              "n": 341,
+              "empirical_hit_rate": 0.393,
+              "mean_confidence": 0.3905,
+              "calibration_gap": -0.0025
+            },
+            "0.70-0.80": {
+              "n": 37,
+              "empirical_hit_rate": 0.7838,
+              "mean_confidence": 0.7292,
+              "calibration_gap": -0.0546
+            },
+            "0.80-0.90": {
+              "n": 4,
+              "empirical_hit_rate": 0.5,
+              "mean_confidence": 0.8088,
+              "calibration_gap": 0.3088
+            }
+          }
+        },
+        "v4": {
+          "n": 3420,
+          "accuracy": 0.5018,
+          "brier": 0.6144,
+          "logloss": 1.0269,
+          "calibration": {
+            "0.40-0.50": {
+              "n": 2015,
+              "empirical_hit_rate": 0.4665,
+              "mean_confidence": 0.4448,
+              "calibration_gap": -0.0217
+            },
+            "0.50-0.60": {
+              "n": 802,
+              "empirical_hit_rate": 0.6147,
+              "mean_confidence": 0.5395,
+              "calibration_gap": -0.0752
+            },
+            "0.60-0.70": {
+              "n": 129,
+              "empirical_hit_rate": 0.7984,
+              "mean_confidence": 0.636,
+              "calibration_gap": -0.1625
+            },
+            "0.33-0.40": {
+              "n": 464,
+              "empirical_hit_rate": 0.3728,
+              "mean_confidence": 0.3899,
+              "calibration_gap": 0.017
+            },
+            "0.70-0.80": {
+              "n": 10,
+              "empirical_hit_rate": 0.7,
+              "mean_confidence": 0.7273,
+              "calibration_gap": 0.0273
+            }
+          },
+          "calibrated_probability_metrics": {
+            "n": 3420,
+            "accuracy": 0.5018,
+            "brier": 0.613,
+            "logloss": 1.0257
+          },
+          "calibrated_confidence": {
+            "0.40-0.50": {
+              "n": 1908,
+              "empirical_hit_rate": 0.4471,
+              "mean_confidence": 0.4459,
+              "calibration_gap": -0.0011
+            },
+            "0.50-0.60": {
+              "n": 946,
+              "empirical_hit_rate": 0.5814,
+              "mean_confidence": 0.542,
+              "calibration_gap": -0.0393
+            },
+            "0.60-0.70": {
+              "n": 226,
+              "empirical_hit_rate": 0.7743,
+              "mean_confidence": 0.6364,
+              "calibration_gap": -0.1379
+            },
+            "0.33-0.40": {
+              "n": 313,
+              "empirical_hit_rate": 0.3706,
+              "mean_confidence": 0.3919,
+              "calibration_gap": 0.0213
+            },
+            "0.70-0.80": {
+              "n": 26,
+              "empirical_hit_rate": 0.8077,
+              "mean_confidence": 0.7305,
+              "calibration_gap": -0.0772
+            },
+            "0.80-0.90": {
+              "n": 1,
+              "empirical_hit_rate": 1.0,
+              "mean_confidence": 0.8013,
+              "calibration_gap": -0.1987
+            }
+          }
+        },
+        "blend": {
+          "n": 3420,
+          "accuracy": 0.5009,
+          "brier": 0.6145,
+          "logloss": 1.027,
+          "calibration": {
+            "0.40-0.50": {
+              "n": 1932,
+              "empirical_hit_rate": 0.4591,
+              "mean_confidence": 0.4459,
+              "calibration_gap": -0.0132
+            },
+            "0.50-0.60": {
+              "n": 873,
+              "empirical_hit_rate": 0.5956,
+              "mean_confidence": 0.5407,
+              "calibration_gap": -0.0549
+            },
+            "0.60-0.70": {
+              "n": 174,
+              "empirical_hit_rate": 0.7759,
+              "mean_confidence": 0.6361,
+              "calibration_gap": -0.1398
+            },
+            "0.33-0.40": {
+              "n": 423,
+              "empirical_hit_rate": 0.3712,
+              "mean_confidence": 0.3906,
+              "calibration_gap": 0.0195
+            },
+            "0.70-0.80": {
+              "n": 18,
+              "empirical_hit_rate": 0.7778,
+              "mean_confidence": 0.7301,
+              "calibration_gap": -0.0477
+            }
+          },
+          "calibrated_probability_metrics": {
+            "n": 3420,
+            "accuracy": 0.5009,
+            "brier": 0.6137,
+            "logloss": 1.0264
+          },
+          "calibrated_confidence": {
+            "0.40-0.50": {
+              "n": 1835,
+              "empirical_hit_rate": 0.4545,
+              "mean_confidence": 0.4473,
+              "calibration_gap": -0.0072
+            },
+            "0.50-0.60": {
+              "n": 971,
+              "empirical_hit_rate": 0.5602,
+              "mean_confidence": 0.5432,
+              "calibration_gap": -0.017
+            },
+            "0.60-0.70": {
+              "n": 298,
+              "empirical_hit_rate": 0.7114,
+              "mean_confidence": 0.6377,
+              "calibration_gap": -0.0737
+            },
+            "0.33-0.40": {
+              "n": 278,
+              "empirical_hit_rate": 0.3309,
+              "mean_confidence": 0.3928,
+              "calibration_gap": 0.0619
+            },
+            "0.70-0.80": {
+              "n": 36,
+              "empirical_hit_rate": 0.8333,
+              "mean_confidence": 0.7357,
+              "calibration_gap": -0.0976
+            },
+            "0.80-0.90": {
+              "n": 2,
+              "empirical_hit_rate": 0.5,
+              "mean_confidence": 0.8101,
+              "calibration_gap": 0.3101
+            }
+          }
+        }
+      },
+      "temperature_calibration": {
+        "v3": {
+          "temperature": 1.0,
+          "fit_n": 5128
+        },
+        "v4": {
+          "temperature": 0.9,
+          "fit_n": 5128
+        },
+        "blend": {
+          "temperature": 0.9,
+          "fit_n": 5128
+        }
+      },
+      "real_strength_gap_strata": {
+        "close": {
+          "n": 1318,
+          "v3_correct": 585,
+          "v4_correct": 603,
+          "v3_accuracy": 0.4439,
+          "v4_accuracy": 0.4575
+        },
+        "large": {
+          "n": 1087,
+          "v3_correct": 629,
+          "v4_correct": 628,
+          "v3_accuracy": 0.5787,
+          "v4_accuracy": 0.5777
+        },
+        "medium": {
+          "n": 1015,
+          "v3_correct": 479,
+          "v4_correct": 485,
+          "v3_accuracy": 0.4719,
+          "v4_accuracy": 0.4778
+        }
+      }
+    },
+    "lineup_ablation_v3": {
+      "without_lineup": {
+        "n": 8548,
+        "accuracy": 0.5025,
+        "brier": 0.6138,
+        "logloss": 1.0262
+      },
+      "with_lineup": {
+        "n": 8548,
+        "accuracy": 0.5025,
+        "brier": 0.6138,
+        "logloss": 1.0262
+      }
+    },
+    "lineup_ablation_v4": {
+      "without_lineup": {
+        "n": 8548,
+        "accuracy": 0.5066,
+        "brier": 0.6129,
+        "logloss": 1.0249
+      },
+      "with_lineup": {
+        "n": 8548,
+        "accuracy": 0.5066,
+        "brier": 0.6129,
+        "logloss": 1.0249
+      }
+    }
+  }
+}
