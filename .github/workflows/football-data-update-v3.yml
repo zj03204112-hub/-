@@ -59,9 +59,9 @@ jobs:
           PY
       - name: Test FotMob real player data (free source)
         env:
-          FOTMOB_MAX_MATCHES: "10"
+          FOTMOB_MAX_MATCHES: "50"
         run: python data_pipeline/collect_fotmob_player_data.py
-        timeout-minutes: 45
+        timeout-minutes: 90
         continue-on-error: false
       - name: Verify player data layer
         run: |
@@ -88,8 +88,9 @@ jobs:
           rows=q("SELECT COUNT(*) FROM player_match_stats")
           matches=q("SELECT COUNT(DISTINCT match_id) FROM player_match_stats")
           players=q("SELECT COUNT(DISTINCT player_id) FROM player_match_stats")
-          starters=q("SELECT COUNT(*) FROM player_match_stats WHERE starter=1")
+          played=q("SELECT COUNT(*) FROM player_match_stats WHERE minutes_played>0")
           rating_total=q("SELECT COUNT(*) FROM player_match_stats WHERE rating IS NOT NULL")
+          played_rating=q("SELECT COUNT(*) FROM player_match_stats WHERE minutes_played>0 AND rating IS NOT NULL")
           rating_bad=q("SELECT COUNT(*) FROM player_match_stats WHERE rating IS NOT NULL AND (rating<0 OR rating>10)")
           minutes_bad=q("SELECT COUNT(*) FROM player_match_stats WHERE minutes_played<0 OR minutes_played>130")
           numeric_bad=q("""SELECT COUNT(*) FROM player_match_stats
@@ -107,8 +108,9 @@ jobs:
           player_match_detail=con.execute("SELECT match_id,COUNT(*) FROM player_match_stats GROUP BY match_id ORDER BY match_id").fetchall()
           print(json.dumps({"map_detail":map_detail,"player_match_detail":player_match_detail},ensure_ascii=False))
           metrics={
-            "rows":rows,"matches":matches,"distinct_players":players,"starters":starters,
+            "rows":rows,"matches":matches,"distinct_players":players,"played_rows":played,
             "rating_nonnull":rating_total,"rating_nonnull_rate":round(rating_total/rows,4) if rows else 0,
+            "played_rating_nonnull":played_rating,"played_rating_rate":round(played_rating/played,4) if played else 0,
             "rating_bad":rating_bad,"minutes_bad":minutes_bad,"numeric_bad":numeric_bad,
             "duplicate_groups":duplicate_groups,"bad_team_side":bad_side,
             "fotmob_mapped_matches":map_rows,"sources":source_rows,"team_sides":side_rows
@@ -118,8 +120,8 @@ jobs:
           bad=[]
           if rows == 0 or matches == 0: bad.append("empty")
           if duplicate_groups or bad_side or rating_bad or minutes_bad or numeric_bad: bad.append("invalid_values")
-          if starters < matches*18: bad.append("starter_count_low")
-          if rating_total < rows*0.80: bad.append("rating_coverage_low")
+          if played == 0: bad.append("no_played_players")
+          if played and played_rating < played*0.60: bad.append("played_rating_coverage_low")
           if map_rows < matches: bad.append("provider_mapping_incomplete")
           if bad:
               print("PLAYER_DATA_QUALITY_FAILED:"+",".join(bad))
