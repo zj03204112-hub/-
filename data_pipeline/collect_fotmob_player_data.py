@@ -4,7 +4,7 @@ from difflib import SequenceMatcher
 import requests, os
 
 DB="football_model_database.sqlite"; BASE="https://www.fotmob.com/api/data"
-START="2026-01-01"; END="2026-09-20"; MAX_MATCHES=int(os.getenv("FOTMOB_MAX_MATCHES","10"))
+START="2026-01-01"; END="2026-09-20"; MAX_MATCHES=int(os.getenv("FOTMOB_MAX_MATCHES","300"))
 ALIASES={"psg":"parissaintgermain","parissg":"parissaintgermain","bayernmunich":"bayernmunchen","intermilan":"inter","internazionale":"inter","manutd":"manchesterunited","manchesterutd":"manchesterunited","manchesterunitedfc":"manchesterunited","mancity":"mancity","manchestercity":"mancity","tottenhamhotspur":"tottenham","athleticbilbao":"athleticclub","borussiadortmund":"dortmund","borussiamonchengladbach":"monchengladbach"}
 def norm(s): return re.sub(r"[^a-z0-9]","",unicodedata.normalize("NFKD",str(s)).encode("ascii","ignore").decode().lower())
 def key(s):
@@ -146,7 +146,7 @@ def main():
  by_date={}
  # For a bounded validation run, only inspect the newest dates until we have a
  # small candidate pool. This prevents a 10-match test from scanning 260+ days.
- target_pool=max(MAX_MATCHES*3,MAX_MATCHES)
+ target_pool=max(MAX_MATCHES*5,1000)
  selected=[]
  for r in rows:
   selected.append(r)
