@@ -146,9 +146,12 @@ def main():
    for side in ("home","away"):
     for p in players(detail,side):
      con.execute("""INSERT OR REPLACE INTO player_match_stats(match_id,team_side,player_id,player_name,position,starter,minutes_played,rating,goals,assists,xg,xa,shots,key_passes,tackles,interceptions,clearances,data_source,observed_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",(mid,side,*p,"FotMob public matchDetails",datetime.utcnow().isoformat(timespec="seconds"))); prow+=1; ins+=1
+   if not ins:
+    lineup=(detail.get("content") or {}).get("lineup") or {}
+    print(json.dumps({"fotmob_empty_players":fid,"lineup_type":type(lineup).__name__,"lineup_keys":list(lineup.keys())[:30] if isinstance(lineup,dict) else None},ensure_ascii=False),flush=True)
    if ins:mapped+=1
    con.commit()
-   if mapped%10==0: print(json.dumps({"dates":f"{scanned}/{len(by_date)}","candidates":candidates,"mapped_matches":mapped,"player_rows":prow,"failures":fail},ensure_ascii=False),flush=True)
+   if mapped%10==0 or not ins: print(json.dumps({"dates":f"{scanned}/{len(by_date)}","candidates":candidates,"mapped_matches":mapped,"player_rows":prow,"failures":fail},ensure_ascii=False),flush=True)
    time.sleep(.15)
   if mapped>=MAX_MATCHES: break
  con.close(); result={"dates_scanned":scanned,"candidate_matches":candidates,"mapped_matches":mapped,"player_rows":prow,"failures":fail,"errors":errors,"max_matches":MAX_MATCHES}; print(json.dumps(result,ensure_ascii=False),flush=True)
