@@ -150,16 +150,20 @@ def main():
     lineup=(detail.get("content") or {}).get("lineup") or {}
     if not getattr(main, "_debug_dumped", False):
     def shape(x, depth=0):
-     if depth>3 or not isinstance(x,dict): return None
-     out={}
-     for k,v in list(x.items())[:20]:
-      if isinstance(v,dict): out[k]={"__keys__":list(v.keys())[:30], **(shape(v,depth+1) or {})}
-      elif isinstance(v,list): out[k]={"__list_len__":len(v),"__item_keys__":list(v[0].keys())[:30] if v and isinstance(v[0],dict) else None}
-      else: out[k]=type(v).__name__
-     return out
-    print(json.dumps({"fotmob_empty_players":fid,"lineup_shape":shape(lineup)},ensure_ascii=False),flush=True)
-    main._debug_dumped=True
-   if ins:mapped+=1
+        if depth > 3 or not isinstance(x, dict):
+            return None
+        out = {}
+        for k, v in list(x.items())[:20]:
+            if isinstance(v, dict):
+                out[k] = {"__keys__": list(v.keys())[:30], **(shape(v, depth + 1) or {})}
+            elif isinstance(v, list):
+                out[k] = {"__list_len__": len(v), "__item_keys__": list(v[0].keys())[:30] if v and isinstance(v[0], dict) else None}
+            else:
+                out[k] = type(v).__name__
+        return out
+    print(json.dumps({"fotmob_empty_players": fid, "lineup_shape": shape(lineup)}, ensure_ascii=False), flush=True)
+    main._debug_dumped = True
+if ins:mapped+=1
    con.commit()
    if mapped%10==0 or not ins: print(json.dumps({"dates":f"{scanned}/{len(by_date)}","candidates":candidates,"mapped_matches":mapped,"player_rows":prow,"failures":fail},ensure_ascii=False),flush=True)
    time.sleep(.15)
