@@ -106,7 +106,7 @@ def players(detail,side):
             if starter is None:
                 starter=not bool(x.get("substitute") or x.get("isSubstitute"))
             row=(str(pid),name,x.get("position") or pl.get("position") or x.get("usualPosition"),
-                 1 if starter else 0,num("minutesPlayed","minsPlayed","minutes","minutes_played","minutesPlayedTotal"),
+                 1 if starter else 0,(num("minutesPlayed","minsPlayed","minutes","minutes_played","minutesPlayedTotal") if num("minutesPlayed","minsPlayed","minutes","minutes_played","minutesPlayedTotal") else (float((next((e.get("time") for e in (st.get("substitutionEvents") or pl.get("performance",{}).get("substitutionEvents",[]) or []) if e.get("type")=="subOut"), 90)) if starter else max(0.0, 90.0-float(next((e.get("time") for e in (st.get("substitutionEvents") or pl.get("performance",{}).get("substitutionEvents",[]) or []) if e.get("type")=="subIn"), 90))))),
                  rating,num("goals"),num("assists","goalAssist"),
                  num("expectedGoals","xg"),num("expectedAssists","xa"),
                  num("totalShots","shots","totalScoringAtt"),num("keyPasses","keyPass"),
