@@ -50,8 +50,10 @@ def players(detail,side):
         target_index=0 if side=="home" else 1
         team_obj=teams[target_index] if len(teams)>target_index and isinstance(teams[target_index],dict) else None
 
-    # Some payloads use {players:[...]} while older payloads split players into
-    # positional groups. Flatten recursively, retaining only actual player nodes.
+    # Some payloads store minutes in a nested match-stat object rather than
+    # the player performance object. Keep a fallback so played players are not
+    # misclassified as unused substitutes.
+
     roots=[]
     if team_obj:
         for k in ("players","starters","startingPlayers","subs","substitutes","bench"):
@@ -104,7 +106,7 @@ def players(detail,side):
             if starter is None:
                 starter=not bool(x.get("substitute") or x.get("isSubstitute"))
             row=(str(pid),name,x.get("position") or pl.get("position") or x.get("usualPosition"),
-                 1 if starter else 0,num("minutesPlayed","minsPlayed","minutes"),
+                 1 if starter else 0,num("minutesPlayed","minsPlayed","minutes","minutes_played","minutesPlayedTotal"),
                  rating,num("goals"),num("assists","goalAssist"),
                  num("expectedGoals","xg"),num("expectedAssists","xa"),
                  num("totalShots","shots","totalScoringAtt"),num("keyPasses","keyPass"),
