@@ -18,18 +18,33 @@ def probs(lh,la):
             "D":sum(mat[i][j] for i in range(N) for j in range(N) if i==j),
             "A":sum(mat[i][j] for i in range(N) for j in range(N) if i<j)}
 
-def handicap_probs(lh,la,line):
-    """Probability of the same handicap W/D/L mapping used by actual results.
-    Positive line gives the home side goals; negative line gives the home side a handicap.
-    Quarter lines are evaluated directly, so D naturally has zero probability when applicable.
+def handicap_state(diff,line):
+    """Map Asian handicap settlement to H/D/A.
+    H = full home-side win, A = full away-side win, D = push/half-settlement.
+    Quarter lines are split into the adjacent whole/half lines.
     """
+    q=round(line*4)/4
+    if abs(q-round(q))<1e-9:  # whole line
+        adj=diff+q
+        return "H" if adj>0 else "D" if abs(adj)<1e-9 else "A"
+    if abs(abs(q*2)-round(abs(q*2)))<1e-9:  # half line
+        adj=diff+q
+        return "H" if adj>0 else "A"
+    # quarter: split into floor(q) and ceil(q), i.e. whole + half.
+    lo=math.floor(q*2)/2
+    hi=math.ceil(q*2)/2
+    s1=handicap_state(diff,lo)
+    s2=handicap_state(diff,hi)
+    if s1==s2:
+        return s1
+    return "D"
+
+def handicap_probs(lh,la,line):
     mat=matrix(lh,la,True)
     p={"H":0.0,"D":0.0,"A":0.0}
     for i in range(N):
         for j in range(N):
-            margin=(i-j)+line
-            key="H" if margin>0 else "D" if abs(margin)<1e-12 else "A"
-            p[key]+=mat[i][j]
+            p[handicap_state(i-j,line)]+=mat[i][j]
     return p
 
 def player_form(con,team,cutoff):
@@ -89,8 +104,7 @@ def main():
         plh,pla,hf,af,hn,an=player_enhanced(con,m)
         pp=probs(plh,pla); php=handicap_probs(plh,pla,line)
         bc=int(max(bp,key=bp.get)==actual); pc=int(max(pp,key=pp.get)==actual)
-        margin=(m[4]-m[5])+line
-        ah="H" if margin>0 else "D" if abs(margin)<1e-12 else "A"
+        ah=handicap_state(m[4]-m[5],line)
         bh_pick=max(bhp,key=bhp.get); ph_pick=max(php,key=php.get)
         bhc=int(bh_pick==ah); phc=int(ph_pick==ah)
         base_correct+=bc; player_correct+=pc; base_handicap_correct+=bhc; player_handicap_correct+=phc
@@ -112,7 +126,7 @@ def main():
           "home_player_form_rating":round(hf,4) if hf is not None else None,
           "away_player_form_rating":round(af,4) if af is not None else None,
           "home_prior_matches":hn,"away_prior_matches":an})
-    result={"definition":"10-match exploratory player-layer backtest. Target-match player data are never used; player form uses only prior completed FotMob matches before T-12h. Fixed coefficient is not fitted on this sample. Handicap hit rate is evaluated from the model goal matrix using the exact stored handicap line and the same sign convention as handicap_actual.",
+    result={"definition":"10-match exploratory player-layer backtest. Target-match player data are never used; player form uses only prior completed FotMob matches before T-12h. Fixed coefficient is not fitted on this sample. Handicap hit rate is evaluated using Asian whole/half/quarter-line settlement semantics; D represents push or half-settlement on quarter lines.",
       "n":10,"baseline_v3_accuracy":round(base_correct/10,4),
       "player_layer_accuracy":round(player_correct/10,4),
       "baseline_correct":base_correct,"player_layer_correct":player_correct,
