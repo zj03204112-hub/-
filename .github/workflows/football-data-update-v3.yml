@@ -138,7 +138,28 @@ jobs:
           print(json.dumps(d,ensure_ascii=False))
           PY
 
-      - name: Run 10-match player-layer backtest
+      - name: Validate Asian handicap settlement semantics
+        run: |
+          python - <<'PY'
+          import sys
+          sys.path.insert(0,"data_pipeline")
+          from backtest_player_10 import asian_settlement
+          cases = [
+            (1,-0.75,"H_half"), (2,-0.75,"H_full"), (1,-1.0,"D"),
+            (0,0.75,"H_full"), (-1,0.75,"A_half"), (-2,0.75,"A_full"),
+            (1,1.25,"A_half"), (2,1.25,"H_half")
+          ]
+          for diff,line,expected in cases:
+              got=asian_settlement(diff,line)
+              print({"diff":diff,"line":line,"got":got,"expected":expected})
+              assert got == expected, (diff,line,got,expected)
+          print("ASIAN_HANDICAP_SEMANTICS_PASS")
+          PY
+
+      - name: Run 50-match player-layer backtest
+        env:
+          BACKTEST_N: "50"
+          BACKTEST_OUT: "data/player_backtest_50.json"
         run: |
           python data_pipeline/backtest_player_10.py
 
