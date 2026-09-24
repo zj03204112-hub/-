@@ -104,11 +104,18 @@ def players(detail,side):
     return found
 
 def main():
- con=sqlite3.connect(DB); rows=con.execute("SELECT match_id,kickoff,home_team,away_team FROM matches WHERE kickoff>=? AND kickoff<=? ORDER BY kickoff",(START,END+"T23:59:59")).fetchall()
+ con=sqlite3.connect(DB); rows=con.execute("SELECT match_id,kickoff,home_team,away_team FROM matches WHERE kickoff>=? AND kickoff<=? ORDER BY kickoff DESC",(START,END+"T23:59:59")).fetchall()
  by_date={}
- for mid,ko,h,a in rows: by_date.setdefault(ko[:10],[]).append((mid,h,a))
+ # For a bounded validation run, only inspect the newest dates until we have a
+ # small candidate pool. This prevents a 10-match test from scanning 260+ days.
+ target_pool=max(MAX_MATCHES*3,MAX_MATCHES)
+ selected=[]
+ for r in rows:
+  selected.append(r)
+  if len(selected)>=target_pool: break
+ for mid,ko,h,a in selected: by_date.setdefault(ko[:10],[]).append((mid,h,a))
  scanned=candidates=mapped=prow=fail=0; errors={}
- for d in sorted(by_date):
+ for d in sorted(by_date, reverse=True):
   payload,status,err=get(f"/matches?date={d.replace('-','')}"); scanned+=1
   if payload is None:
    fail+=1; errors[str(status or "request")]=errors.get(str(status or "request"),0)+1
