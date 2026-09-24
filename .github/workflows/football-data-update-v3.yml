@@ -46,6 +46,17 @@ jobs:
           if m == 0:
               raise SystemExit("MATCH_BASE_EMPTY")
           PY
+      - name: Reset bounded FotMob validation rows
+        run: |
+          python - <<'PY'
+          import sqlite3
+          con=sqlite3.connect("football_model_database.sqlite")
+          con.execute("DELETE FROM player_match_stats WHERE data_source='FotMob public matchDetails'")
+          con.execute("DELETE FROM provider_event_map WHERE provider='fotmob'")
+          con.commit()
+          print("RESET_FOTMOB_VALIDATION_ROWS")
+          con.close()
+          PY
       - name: Test FotMob real player data (free source)
         env:
           FOTMOB_MAX_MATCHES: "10"
