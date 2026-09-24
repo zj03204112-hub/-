@@ -35,7 +35,7 @@ def players(detail,side):
     lineup=content.get("lineup") or {}
     # FotMob has used several schemas: lineup.home/away, lineup.lineup,
     # lineup.lineups, and team-keyed nested objects. Prefer the explicit side.
-    side_obj=lineup.get(side) if isinstance(lineup,dict) else None
+    side_obj=(lineup.get(f"{side}Team") or lineup.get(side)) if isinstance(lineup,dict) else None
     if isinstance(side_obj,dict):
         team_obj=side_obj
     else:
@@ -72,8 +72,8 @@ def players(detail,side):
         pid=pl.get("id") or x.get("id") or x.get("playerId")
         name=pl.get("name") or pl.get("shortName") or x.get("name")
         if pid and name:
-            stats=x.get("stats") or x.get("statistics") or pl.get("stats") or {}
-            rating=x.get("rating")
+            stats=x.get("stats") or x.get("statistics") or x.get("performance") or pl.get("stats") or pl.get("performance") or {}
+            rating=x.get("rating") or (stats.get("rating") if isinstance(stats,dict) else None) or (pl.get("rating") if isinstance(pl,dict) else None)
             if isinstance(rating,dict):
                 rating=rating.get("num") or rating.get("value")
             st=stats if isinstance(stats,dict) else {}
