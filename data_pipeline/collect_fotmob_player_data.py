@@ -32,15 +32,23 @@ def players(detail,side):
     FotMob has changed the JSON shape several times.
     """
     content=detail.get("content") or {}
-    raw=((content.get("lineup") or {}).get("lineup"))
-    if not raw:
-        raw=(content.get("lineup") or {}).get("lineups")
-    if not raw:
-        return []
-
-    teams=raw if isinstance(raw,list) else [raw]
-    target_index=0 if side=="home" else 1
-    team_obj=teams[target_index] if len(teams)>target_index and isinstance(teams[target_index],dict) else None
+    lineup=content.get("lineup") or {}
+    # FotMob has used several schemas: lineup.home/away, lineup.lineup,
+    # lineup.lineups, and team-keyed nested objects. Prefer the explicit side.
+    side_obj=lineup.get(side) if isinstance(lineup,dict) else None
+    if isinstance(side_obj,dict):
+        team_obj=side_obj
+    else:
+        raw=lineup.get("lineup") if isinstance(lineup,dict) else None
+        if not raw:
+            raw=lineup.get("lineups") if isinstance(lineup,dict) else None
+        if not raw:
+            raw=side_obj
+        if not raw:
+            return []
+        teams=raw if isinstance(raw,list) else [raw]
+        target_index=0 if side=="home" else 1
+        team_obj=teams[target_index] if len(teams)>target_index and isinstance(teams[target_index],dict) else None
 
     # Some payloads use {players:[...]} while older payloads split players into
     # positional groups. Flatten recursively, retaining only actual player nodes.
