@@ -18,6 +18,20 @@ def probs(lh,la):
             "D":sum(mat[i][j] for i in range(N) for j in range(N) if i==j),
             "A":sum(mat[i][j] for i in range(N) for j in range(N) if i<j)}
 
+def handicap_probs(lh,la,line):
+    """Probability of the same handicap W/D/L mapping used by actual results.
+    Positive line gives the home side goals; negative line gives the home side a handicap.
+    Quarter lines are evaluated directly, so D naturally has zero probability when applicable.
+    """
+    mat=matrix(lh,la,True)
+    p={"H":0.0,"D":0.0,"A":0.0}
+    for i in range(N):
+        for j in range(N):
+            margin=(i-j)+line
+            key="H" if margin>0 else "D" if abs(margin)<1e-12 else "A"
+            p[key]+=mat[i][j]
+    return p
+
 def player_form(con,team,cutoff):
     rows=con.execute("""SELECT p.match_id,p.rating,p.minutes_played,m.kickoff
       FROM player_match_stats p JOIN matches m ON m.match_id=p.match_id
@@ -68,30 +82,44 @@ def main():
         if len(eligible)>=10: break
     if len(eligible)<10:
         raise SystemExit(f"PLAYER_BACKTEST_NEEDS_10:{len(eligible)}")
-    rows=[]; base_correct=player_correct=0
+    rows=[]; base_correct=player_correct=0; base_handicap_correct=player_handicap_correct=0
     for m,line in eligible:
         b_lh,b_la=model_lambdas(con,"v3",m,use_lineup=False)
-        bp=probs(b_lh,b_la); actual=outcome(m)
+        bp=probs(b_lh,b_la); bhp=handicap_probs(b_lh,b_la,line); actual=outcome(m)
         plh,pla,hf,af,hn,an=player_enhanced(con,m)
-        pp=probs(plh,pla)
+        pp=probs(plh,pla); php=handicap_probs(plh,pla,line)
         bc=int(max(bp,key=bp.get)==actual); pc=int(max(pp,key=pp.get)==actual)
-        base_correct+=bc; player_correct+=pc
         margin=(m[4]-m[5])+line
-        ah="H" if margin>0 else "D" if margin==0 else "A"
+        ah="H" if margin>0 else "D" if abs(margin)<1e-12 else "A"
+        bh_pick=max(bhp,key=bhp.get); ph_pick=max(php,key=php.get)
+        bhc=int(bh_pick==ah); phc=int(ph_pick==ah)
+        base_correct+=bc; player_correct+=pc; base_handicap_correct+=bhc; player_handicap_correct+=phc
         rows.append({"match_id":m[0],"kickoff":m[1],"home":m[2],"away":m[3],
           "handicap":line,"actual_score":f"{m[4]}-{m[5]}","actual_1x2":actual,
           "handicap_actual":ah,
           "baseline_probs":{k:round(v,4) for k,v in bp.items()},
           "player_probs":{k:round(v,4) for k,v in pp.items()},
           "baseline_pick":max(bp,key=bp.get),"player_pick":max(pp,key=pp.get),
+          "handicap_baseline_probs":{k:round(v,4) for k,v in bhp.items()},
+          "handicap_player_probs":{k:round(v,4) for k,v in php.items()},
+          "handicap_baseline_pick":bh_pick,"handicap_player_pick":ph_pick,
+          "baseline_handicap_hit":bool(bhc),"player_handicap_hit":bool(phc),
+          "baseline_handicap_confidence":round(max(bhp.values()),4),
+          "player_handicap_confidence":round(max(php.values()),4),
+          "baseline_handicap_cover_risk":round(1-max(bhp.values()),4),
+          "player_handicap_cover_risk":round(1-max(php.values()),4),
           "baseline_hit":bool(bc),"player_hit":bool(pc),
           "home_player_form_rating":round(hf,4) if hf is not None else None,
           "away_player_form_rating":round(af,4) if af is not None else None,
           "home_prior_matches":hn,"away_prior_matches":an})
-    result={"definition":"10-match exploratory player-layer backtest. Target-match player data are never used; player form uses only prior completed FotMob matches before T-12h. Fixed coefficient is not fitted on this sample.",
+    result={"definition":"10-match exploratory player-layer backtest. Target-match player data are never used; player form uses only prior completed FotMob matches before T-12h. Fixed coefficient is not fitted on this sample. Handicap hit rate is evaluated from the model goal matrix using the exact stored handicap line and the same sign convention as handicap_actual.",
       "n":10,"baseline_v3_accuracy":round(base_correct/10,4),
       "player_layer_accuracy":round(player_correct/10,4),
       "baseline_correct":base_correct,"player_layer_correct":player_correct,
+      "baseline_handicap_accuracy":round(base_handicap_correct/10,4),
+      "player_layer_handicap_accuracy":round(player_handicap_correct/10,4),
+      "baseline_handicap_correct":base_handicap_correct,
+      "player_layer_handicap_correct":player_handicap_correct,
       "matches":list(reversed(rows))}
     with open(OUT,"w",encoding="utf-8") as f: json.dump(result,f,ensure_ascii=False,indent=2)
     print(json.dumps(result,ensure_ascii=False))
