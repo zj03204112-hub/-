@@ -1,8 +1,9 @@
-import json, math, sqlite3
+import json, math, sqlite3, os
 from datetime import datetime, timedelta
 
 DB="football_model_database.sqlite"
-OUT="data/model_comparison.json"
+OUT=os.getenv("MODEL_COMPARISON_OUT","data/model_comparison.json")
+HIST_LIMIT=int(os.getenv("HIST_LIMIT","20"))
 RHO=-0.05
 N=8
 
@@ -11,7 +12,7 @@ def hist(con,team,cutoff):
       FROM matches m JOIN results r ON r.match_id=m.match_id
       WHERE m.kickoff < ? AND (m.home_team=? OR m.away_team=?)
       AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL
-      ORDER BY m.kickoff DESC LIMIT 20""",(cutoff,team,team)).fetchall()
+      ORDER BY m.kickoff DESC LIMIT ?""",(cutoff,team,team,HIST_LIMIT)).fetchall()
     return [((fh,fa) if h==team else (fa,fh), a if h==team else h)
             for _,h,a,fh,fa in rows]
 
