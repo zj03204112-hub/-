@@ -11,7 +11,7 @@ def hist(con,team,cutoff):
       FROM matches m JOIN results r ON r.match_id=m.match_id
       WHERE m.kickoff < ? AND (m.home_team=? OR m.away_team=?)
       AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL
-      ORDER BY m.kickoff DESC LIMIT 30""",(cutoff,team,team)).fetchall()
+      ORDER BY m.kickoff DESC LIMIT 20""",(cutoff,team,team)).fetchall()
     return [((fh,fa) if h==team else (fa,fh), a if h==team else h)
             for _,h,a,fh,fa in rows]
 
