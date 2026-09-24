@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 
 DB="football_model_database.sqlite"
 OUT=os.getenv("MODEL_COMPARISON_OUT","data/model_comparison.json")
-HIST_LIMIT=int(os.getenv("HIST_LIMIT","20"))
+HIST_LIMIT=int(os.getenv("HIST_LIMIT","30"))
 RHO=-0.05
 N=8
 
