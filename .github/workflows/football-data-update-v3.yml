@@ -128,6 +128,16 @@ jobs:
               sys.exit(1)
           print("PLAYER_DATA_QUALITY_PASS")
           PY
+      - name: Run full model validation
+        run: |
+          python data_pipeline/compare_models.py
+          python - <<'PY'
+          import json
+          p="data/model_comparison.json"
+          d=json.load(open(p,encoding="utf-8"))
+          print(json.dumps(d,ensure_ascii=False))
+          PY
+
       - name: Run 10-match player-layer backtest
         run: |
           python data_pipeline/backtest_player_10.py
