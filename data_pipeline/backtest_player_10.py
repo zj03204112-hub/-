@@ -1,11 +1,12 @@
-import json, sqlite3, math, sys
+import json, sqlite3, math, sys, os
 from datetime import datetime, timedelta
 
 sys.path.insert(0,"data_pipeline")
 from compare_models import model_lambdas, matrix
 
 DB="football_model_database.sqlite"
-OUT="data/player_backtest_10.json"
+OUT=os.environ.get("BACKTEST_OUT","data/player_backtest_10.json")
+TEST_N=int(os.environ.get("BACKTEST_N","10"))
 N=8
 
 def outcome(m):
@@ -95,16 +96,16 @@ def main():
       FROM matches m JOIN results r ON r.match_id=m.match_id
       JOIN provider_event_map pem ON pem.match_id=m.match_id AND pem.provider='fotmob'
       WHERE m.status='finished' AND r.ft_home IS NOT NULL
-      ORDER BY m.kickoff DESC,m.match_id DESC LIMIT 50""").fetchall()
+      ORDER BY m.kickoff DESC,m.match_id DESC LIMIT ?""",(max(TEST_N*5,50),)).fetchall()
     eligible=[]
     for m in matches:
         line=con.execute("""SELECT handicap FROM sporttery_market
           WHERE match_id=? AND handicap IS NOT NULL
           ORDER BY captured_at ASC LIMIT 1""",(m[0],)).fetchone()
         if line: eligible.append((m,float(line[0])))
-        if len(eligible)>=10: break
-    if len(eligible)<10:
-        raise SystemExit(f"PLAYER_BACKTEST_NEEDS_10:{len(eligible)}")
+        if len(eligible)>=TEST_N: break
+    if len(eligible)<TEST_N:
+        raise SystemExit(f"PLAYER_BACKTEST_NEEDS_{TEST_N}:{len(eligible)}")
     rows=[]; base_correct=player_correct=0; base_handicap_correct=player_handicap_correct=0
     for m,line in eligible:
         b_lh,b_la=model_lambdas(con,"v3",m,use_lineup=False)
@@ -138,11 +139,11 @@ def main():
           "away_player_form_rating":round(af,4) if af is not None else None,
           "home_prior_matches":hn,"away_prior_matches":an})
     result={"definition":"10-match exploratory player-layer backtest. Target-match player data are never used; player form uses only prior completed FotMob matches before T-12h. Fixed coefficient is not fitted on this sample. Handicap hit rate is evaluated using Asian whole/half/quarter-line settlement semantics; D represents a true push; half-win/half-loss remain with the corresponding side.",
-      "n":10,"baseline_v3_accuracy":round(base_correct/10,4),
-      "player_layer_accuracy":round(player_correct/10,4),
+      "n":TEST_N,"baseline_v3_accuracy":round(base_correct/TEST_N,4),
+      "player_layer_accuracy":round(player_correct/TEST_N,4),
       "baseline_correct":base_correct,"player_layer_correct":player_correct,
-      "baseline_handicap_accuracy":round(base_handicap_correct/10,4),
-      "player_layer_handicap_accuracy":round(player_handicap_correct/10,4),
+      "baseline_handicap_accuracy":round(base_handicap_correct/TEST_N,4),
+      "player_layer_handicap_accuracy":round(player_handicap_correct/TEST_N,4),
       "baseline_handicap_correct":base_handicap_correct,
       "player_layer_handicap_correct":player_handicap_correct,
       "matches":list(reversed(rows))}
