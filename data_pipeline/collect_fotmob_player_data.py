@@ -105,9 +105,22 @@ def players(detail,side):
             starter=inherited_starter
             if starter is None:
                 starter=not bool(x.get("substitute") or x.get("isSubstitute"))
+            mins=num("minutesPlayed","minsPlayed","minutes","minutes_played","minutesPlayedTotal")
+            events=(st.get("substitutionEvents") if isinstance(st,dict) else None) or ((pl.get("performance") or {}).get("substitutionEvents") if isinstance(pl,dict) else None) or []
+            if not mins and isinstance(events,list):
+                for ev in events:
+                    if not isinstance(ev,dict): continue
+                    t=scalar(ev.get("time"))
+                    typ=str(ev.get("type") or "")
+                    if t is None: continue
+                    if "subOut" in typ:
+                        mins=max(0.0,float(t)); break
+                    if "subIn" in typ:
+                        mins=max(0.0,90.0-float(t)); break
+            if not mins and starter and rating is not None:
+                mins=90.0
             row=(str(pid),name,x.get("position") or pl.get("position") or x.get("usualPosition"),
-                 1 if starter else 0,(num("minutesPlayed","minsPlayed","minutes","minutes_played","minutesPlayedTotal") if num("minutesPlayed","minsPlayed","minutes","minutes_played","minutesPlayedTotal") else (float((next((e.get("time") for e in (st.get("substitutionEvents") or pl.get("performance",{}).get("substitutionEvents",[]) or []) if e.get("type")=="subOut"), 90)) if starter else max(0.0, 90.0-float(next((e.get("time") for e in (st.get("substitutionEvents") or pl.get("performance",{}).get("substitutionEvents",[]) or []) if e.get("type")=="subIn"), 90))))),
-                 rating,num("goals"),num("assists","goalAssist"),
+                 1 if starter else 0,mins,rating,num("goals"),num("assists","goalAssist"),
                  num("expectedGoals","xg"),num("expectedAssists","xa"),
                  num("totalShots","shots","totalScoringAtt"),num("keyPasses","keyPass"),
                  num("tackles"),num("interceptions"),num("clearances"))
