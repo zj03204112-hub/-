@@ -18,34 +18,42 @@ def probs(lh,la):
             "D":sum(mat[i][j] for i in range(N) for j in range(N) if i==j),
             "A":sum(mat[i][j] for i in range(N) for j in range(N) if i<j)}
 
-def handicap_state(diff,line):
-    """Map Asian handicap settlement to H/D/A.
-    H = full home-side win, A = full away-side win, D = push/half-settlement.
-    Quarter lines are split into the adjacent whole/half lines.
+def asian_settlement(diff,line):
+    """Return Asian handicap settlement probabilities as five states.
+    H_full/H_half/D/A_half/A_full. Quarter lines split into adjacent
+    whole/half lines; half-win is classified to the corresponding side
+    for the user's 3-way handicap pick, while D is reserved for a true push.
     """
     q=round(line*4)/4
-    if abs(q-round(q))<1e-9:  # whole line
+    if abs(q-round(q))<1e-9:
         adj=diff+q
-        return "H" if adj>0 else "D" if abs(adj)<1e-9 else "A"
-    if abs(abs(q*2)-round(abs(q*2)))<1e-9:  # half line
+        return "H_full" if adj>0 else "D" if abs(adj)<1e-9 else "A_full"
+    if abs(abs(q*2)-round(abs(q*2)))<1e-9:
         adj=diff+q
-        return "H" if adj>0 else "A"
-    # quarter: split into floor(q) and ceil(q), i.e. whole + half.
+        return "H_full" if adj>0 else "A_full"
     lo=math.floor(q*2)/2
     hi=math.ceil(q*2)/2
-    s1=handicap_state(diff,lo)
-    s2=handicap_state(diff,hi)
-    if s1==s2:
-        return s1
+    s1=asian_settlement(diff,lo)
+    s2=asian_settlement(diff,hi)
+    if s1.startswith("H") and s2.startswith("H"): return "H_full"
+    if s1.startswith("A") and s2.startswith("A"): return "A_full"
+    if s1=="D" and s2=="D": return "D"
+    if s1.startswith("H") or s2.startswith("H"): return "H_half"
+    if s1.startswith("A") or s2.startswith("A"): return "A_half"
     return "D"
 
 def handicap_probs(lh,la,line):
     mat=matrix(lh,la,True)
     p={"H":0.0,"D":0.0,"A":0.0}
+    settle={"H_full":0.0,"H_half":0.0,"D":0.0,"A_half":0.0,"A_full":0.0}
     for i in range(N):
         for j in range(N):
-            p[handicap_state(i-j,line)]+=mat[i][j]
-    return p
+            s=asian_settlement(i-j,line)
+            settle[s]+=mat[i][j]
+    p["H"]=settle["H_full"]+settle["H_half"]
+    p["D"]=settle["D"]
+    p["A"]=settle["A_full"]+settle["A_half"]
+    return p,settle
 
 def player_form(con,team,cutoff):
     rows=con.execute("""SELECT p.match_id,p.rating,p.minutes_played,m.kickoff
@@ -100,9 +108,9 @@ def main():
     rows=[]; base_correct=player_correct=0; base_handicap_correct=player_handicap_correct=0
     for m,line in eligible:
         b_lh,b_la=model_lambdas(con,"v3",m,use_lineup=False)
-        bp=probs(b_lh,b_la); bhp=handicap_probs(b_lh,b_la,line); actual=outcome(m)
+        bp=probs(b_lh,b_la); bhp,bhs=handicap_probs(b_lh,b_la,line); actual=outcome(m)
         plh,pla,hf,af,hn,an=player_enhanced(con,m)
-        pp=probs(plh,pla); php=handicap_probs(plh,pla,line)
+        pp=probs(plh,pla); php,phs=handicap_probs(plh,pla,line)
         bc=int(max(bp,key=bp.get)==actual); pc=int(max(pp,key=pp.get)==actual)
         ah=handicap_state(m[4]-m[5],line)
         bh_pick=max(bhp,key=bhp.get); ph_pick=max(php,key=php.get)
@@ -115,7 +123,7 @@ def main():
           "player_probs":{k:round(v,4) for k,v in pp.items()},
           "baseline_pick":max(bp,key=bp.get),"player_pick":max(pp,key=pp.get),
           "handicap_baseline_probs":{k:round(v,4) for k,v in bhp.items()},
-          "handicap_player_probs":{k:round(v,4) for k,v in php.items()},
+          "handicap_player_probs":{k:round(v,4) for k,v in php.items()},\n          "baseline_asian_settlement_probs":{k:round(v,4) for k,v in bhs.items()},\n          "player_asian_settlement_probs":{k:round(v,4) for k,v in phs.items()},
           "handicap_baseline_pick":bh_pick,"handicap_player_pick":ph_pick,
           "baseline_handicap_hit":bool(bhc),"player_handicap_hit":bool(phc),
           "baseline_handicap_confidence":round(max(bhp.values()),4),
@@ -126,7 +134,7 @@ def main():
           "home_player_form_rating":round(hf,4) if hf is not None else None,
           "away_player_form_rating":round(af,4) if af is not None else None,
           "home_prior_matches":hn,"away_prior_matches":an})
-    result={"definition":"10-match exploratory player-layer backtest. Target-match player data are never used; player form uses only prior completed FotMob matches before T-12h. Fixed coefficient is not fitted on this sample. Handicap hit rate is evaluated using Asian whole/half/quarter-line settlement semantics; D represents push or half-settlement on quarter lines.",
+    result={"definition":"10-match exploratory player-layer backtest. Target-match player data are never used; player form uses only prior completed FotMob matches before T-12h. Fixed coefficient is not fitted on this sample. Handicap hit rate is evaluated using Asian whole/half/quarter-line settlement semantics; D represents a true push; half-win/half-loss remain with the corresponding side.",
       "n":10,"baseline_v3_accuracy":round(base_correct/10,4),
       "player_layer_accuracy":round(player_correct/10,4),
       "baseline_correct":base_correct,"player_layer_correct":player_correct,
