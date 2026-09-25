@@ -138,7 +138,7 @@ def main():
           "home_player_form_rating":round(hf,4) if hf is not None else None,
           "away_player_form_rating":round(af,4) if af is not None else None,
           "home_prior_matches":hn,"away_prior_matches":an})
-    result={"definition":"10-match exploratory player-layer backtest. Target-match player data are never used; player form uses only prior completed FotMob matches before T-12h. Fixed coefficient is not fitted on this sample. Handicap hit rate is evaluated using Asian whole/half/quarter-line settlement semantics; D represents a true push; half-win/half-loss remain with the corresponding side.",
+    result={"definition":f"{TEST_N}-match exploratory player-layer backtest. Target-match player data are never used; player form uses only prior completed FotMob matches before T-12h. Fixed coefficient is not fitted on this sample. Handicap hit rate is evaluated using Asian whole/half/quarter-line settlement semantics; D represents a true push; half-win/half-loss remain with the corresponding side.",
       "n":TEST_N,"baseline_v3_accuracy":round(base_correct/TEST_N,4),
       "player_layer_accuracy":round(player_correct/TEST_N,4),
       "baseline_correct":base_correct,"player_layer_correct":player_correct,
