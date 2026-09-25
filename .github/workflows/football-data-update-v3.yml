@@ -173,8 +173,8 @@ jobs:
 
       - name: Run 100-match player-layer backtest
         env:
-          BACKTEST_N: "100"
-          BACKTEST_OUT: "data/player_backtest_100.json"
+          BACKTEST_N: "300"
+          BACKTEST_OUT: "data/player_backtest_300.json"
         run: |
           python data_pipeline/backtest_player_10.py
 
@@ -183,7 +183,7 @@ jobs:
         run: |
           git config user.name "football-model-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add football_model_database.sqlite data/player_backtest_100.json
+          git add football_model_database.sqlite data/player_backtest_300.json
           if git diff --cached --quiet; then
             echo "No player database changes."
             exit 0
