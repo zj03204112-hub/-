@@ -3,14 +3,15 @@ from datetime import datetime, timedelta
 
 DB="football_model_database.sqlite"
 MODEL="dc_strength_t12_v3"
+HIST_LIMIT=int(__import__("os").getenv("HIST_LIMIT","30"))
 
 def hist(con,team,cutoff):
     rows=con.execute("""
       SELECT m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away
       FROM matches m JOIN results r ON r.match_id=m.match_id
       WHERE m.kickoff < ? AND (m.home_team=? OR m.away_team=?)
-      ORDER BY m.kickoff DESC LIMIT 12
-    """,(cutoff,team,team)).fetchall()
+      ORDER BY m.kickoff DESC LIMIT ?
+    """,(cutoff,team,team,HIST_LIMIT)).fetchall()
     out=[]
     for k,h,a,fh,fa in rows:
         gf,ga=(fh,fa) if h==team else (fa,fh)
