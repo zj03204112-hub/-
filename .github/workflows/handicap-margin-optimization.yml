@@ -35,7 +35,7 @@ jobs:
           import json
           d=json.load(open("data/model_comparison_30.json",encoding="utf-8"))
           m=d["models"]
-          print("30-match production validation")
+          print("30-match production validation [schema-check-v2]")
           for k in ("v1","v2","v3","v4"):
               print(k, m[k])
           if "chronological_holdout" in d:
