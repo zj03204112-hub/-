@@ -1,6 +1,6 @@
 import json, sqlite3, os, sys
 sys.path.insert(0, "data_pipeline")
-from backtest_player_10 import outcome, handicap_probs, model_lambdas, player_enhanced
+from backtest_player_10 import outcome, probs, handicap_probs, asian_settlement, model_lambdas, player_enhanced
 
 DB="football_model_database.sqlite"
 OUT=os.environ.get("PLAYER_CALIBRATION_OUT","data/player_layer_calibration_300.json")
@@ -29,13 +29,13 @@ def main():
         one=hand=0
         for m,line in items:
             lh,la=model_lambdas(con,"v3",m,use_lineup=False)
-            p=handicap_probs(lh,la,line)[0]
+            p=probs(lh,la)
             plh,pla,_,_,_,_=player_enhanced(con,m,coeff)
             pp=handicap_probs(plh,pla,line)[0]
             actual=outcome(m)
             # 1X2 from the same lambda layer via handicap_probs at 0 line is equivalent to 3-way probabilities.
             one += int(max(p,key=p.get)==actual)
-            ah="H" if (m[4]-m[5])+line>0 else "D" if abs((m[4]-m[5])+line)<1e-9 else "A"
+            settle=asian_settlement(m[4]-m[5],line)\n            ah="H" if settle.startswith("H") else "A" if settle.startswith("A") else "D"
             hand += int(max(pp,key=pp.get)==ah)
         return {"one_x2_accuracy":round(one/len(items),4),"handicap_accuracy":round(hand/len(items),4),"n":len(items)}
     rows=[]
