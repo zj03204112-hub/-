@@ -33,19 +33,14 @@ def build(con,mid,side,cut):
         attack=0.65*xg90+0.35*xa90
         defense=0.02*def90
         influence=attack+0.01*def90
-        feats.append((pid,rs[0][1],starts,app,em,attack,defense,influence,sum(x[4] for x in rs)))
+        pos=(rs[0][2] or "O")
+        feats.append((pid,rs[0][1],pos,starts,app,em,attack,defense,influence,sum(x[4] for x in rs)))
     if not feats: return 0.0,0.0,0.0,0
     # Position-constrained expected XI. We do not use the final match XI;
     # only historical T-12h player records before the cutoff are eligible.
-    feats.sort(key=lambda x:(x[2],x[4]),reverse=True)
+    feats.sort(key=lambda x:(x[3],x[5]),reverse=True)
     buckets={"G":[],"D":[],"M":[],"F":[],"O":[]}
-    for x in feats:
-        pos=str(x[2] if False else "")  # position is kept below via the tuple extension
-    # Rebuild with position carried explicitly for tactical feasibility.
-    raw=[]
-    for pid,name,starts,app,em,attack,defense,influence,totalmins in feats:
-        row=next((r for r in by[pid] if r[1]==name),None)
-        pos=(row[2] if row else None) or "O"
+    for pid,name,pos,starts,app,em,attack,defense,influence,totalmins in feats:
         buckets.setdefault(pos,[]).append((pid,name,starts,app,em,attack,defense,influence,totalmins,pos))
     for k in buckets:
         buckets[k].sort(key=lambda x:(x[2],x[4]),reverse=True)
