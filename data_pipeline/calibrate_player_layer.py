@@ -35,7 +35,8 @@ def main():
             actual=outcome(m)
             # 1X2 from the same lambda layer via handicap_probs at 0 line is equivalent to 3-way probabilities.
             one += int(max(p,key=p.get)==actual)
-            settle=asian_settlement(m[4]-m[5],line)\n            ah="H" if settle.startswith("H") else "A" if settle.startswith("A") else "D"
+            settle=asian_settlement(m[4]-m[5],line)
+            ah="H" if settle.startswith("H") else "A" if settle.startswith("A") else "D"
             hand += int(max(pp,key=pp.get)==ah)
         return {"one_x2_accuracy":round(one/len(items),4),"handicap_accuracy":round(hand/len(items),4),"n":len(items)}
     rows=[]
