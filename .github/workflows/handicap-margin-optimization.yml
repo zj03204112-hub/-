@@ -48,12 +48,12 @@ jobs:
           set -e
           git config user.name "football-model-bot"
           git config user.email "actions@users.noreply.github.com"
-          git fetch origin main
-          git rebase origin/main
           git add data/handicap_margin_optimization.json data/model_comparison_30.json
           if git diff --cached --quiet; then
             echo "No optimization result changes."
             exit 0
           fi
           git commit -m "auto: update 30-match production validation"
+          git fetch origin main
+          git rebase origin/main
           git push origin HEAD:main
