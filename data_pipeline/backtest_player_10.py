@@ -75,7 +75,7 @@ def player_form(con,team,cutoff):
     sw=sum(max(1,float(r[2] or 0)) for r in rr)
     return (sum(float(r[1])*max(1,float(r[2] or 0)) for r in rr)/sw if sw else None),len(mids)
 
-def player_enhanced(con,match):
+def player_enhanced(con,match,coeff=0.018):
     mid,kickoff,home,away,fh,fa=match
     ko=datetime.fromisoformat(kickoff[:19])
     cutoff=(ko-timedelta(hours=12)).isoformat(timespec="seconds")
@@ -85,7 +85,7 @@ def player_enhanced(con,match):
     if hf is None or af is None:
         return lh,la,hf,af,hn,an
     # Fixed, conservative rating-to-goal coefficient; no fitting on target matches.
-    delta=max(-0.08,min(0.08,(hf-af)*0.018))
+    delta=max(-0.08,min(0.08,(hf-af)*coeff))
     lh*=math.exp(delta)
     la*=math.exp(-delta)
     return lh,la,hf,af,hn,an
