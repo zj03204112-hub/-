@@ -82,12 +82,12 @@ def build(con,mid,side,cut):
     pool=feats[11:]
     rep_attack=sum(x[5] for x in pool)/len(pool) if pool else 0.0
     rep_def=sum(x[6] for x in pool)/len(pool) if pool else 0.0
-    total_attack=sum((x[5]-rep_attack)*(x[4]/90.0)*x[2] for x in xi)
-    total_def=sum((x[6]-rep_def)*(x[4]/90.0)*x[2] for x in xi)
+    total_attack=sum((x[6]-rep_attack)*(x[5]/90.0) for x in xi)
+    total_def=sum((x[7]-rep_def)*(x[5]/90.0) for x in xi)
     # Conservative log-rate deltas. These are player-data effects only.
     ad=max(-0.20,min(0.20,0.035*total_attack))
     dd=max(-0.20,min(0.20,0.035*total_def))
-    uncertainty=max(0.0,min(1.0,1.0-min(1.0,sum(x[2] for x in xi)/11.0)))
+    uncertainty=max(0.0,min(1.0,1.0-len(xi)/11.0))
     return ad,dd,uncertainty,len(xi)
 
 def main():
@@ -102,7 +102,7 @@ def main():
             con.execute("""INSERT INTO lineup_projection
               (match_id,team_side,expected_start_strength,attack_delta,defense_delta,uncertainty,player_count,data_cutoff,source_status)
               VALUES (?,?,?,?,?,?,?,?,?)""",
-              (mid,side,max(0.0,min(1.0,1.0-u)),ad,dd,u,n,cut,"SofaScore-derived" if n else "neutral-no-player-data"))
+              (mid,side,max(0.0,min(1.0,1.0-u)),ad,dd,u,n,cut,"FotMob-derived" if n else "neutral-no-player-data"))
             populated += n>0
     con.commit()
     print(json.dumps({"lineup_rows":len(rows)*2,"populated_sides":populated,"source":"SofaScore public lineups","cutoff":"T-12h"},ensure_ascii=False))
