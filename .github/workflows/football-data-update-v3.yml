@@ -128,6 +128,10 @@ jobs:
               sys.exit(1)
           print("PLAYER_DATA_QUALITY_PASS")
           PY
+      - name: Rebuild T-12h lineup projection
+        run: |
+          python data_pipeline/build_lineup_projection.py
+
       - name: Run full model validation
         run: |
           python data_pipeline/compare_models.py
