@@ -79,7 +79,8 @@ def build(con,mid,side,cut):
                 if len(xi)>=11: break
 
     # Compare expected XI to a replacement baseline from the remaining squad.
-    pool=feats[11:]
+    xi_ids={x[0] for x in xi}
+    pool=[x for x in feats if x[0] not in xi_ids]
     rep_attack=sum(x[5] for x in pool)/len(pool) if pool else 0.0
     rep_def=sum(x[6] for x in pool)/len(pool) if pool else 0.0
     total_attack=sum((x[6]-rep_attack)*(x[5]/90.0) for x in xi)
@@ -105,7 +106,7 @@ def main():
               (mid,side,max(0.0,min(1.0,1.0-u)),ad,dd,u,n,cut,"FotMob-derived" if n else "neutral-no-player-data"))
             populated += n>0
     con.commit()
-    print(json.dumps({"lineup_rows":len(rows)*2,"populated_sides":populated,"source":"SofaScore public lineups","cutoff":"T-12h"},ensure_ascii=False))
+    print(json.dumps({"lineup_rows":len(rows)*2,"populated_sides":populated,"source":"FotMob historical player data","cutoff":"T-12h"},ensure_ascii=False))
     con.close()
 
 if __name__=="__main__": main()
