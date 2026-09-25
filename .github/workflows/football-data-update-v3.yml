@@ -59,7 +59,7 @@ jobs:
           PY
       - name: Test FotMob real player data (free source)
         env:
-          FOTMOB_MAX_MATCHES: "300"
+          FOTMOB_MAX_MATCHES: "500"
         run: python data_pipeline/collect_fotmob_player_data.py
         timeout-minutes: 90
         continue-on-error: false
@@ -171,7 +171,7 @@ jobs:
           print("ASIAN_HANDICAP_SEMANTICS_PASS")
           PY
 
-      - name: Run 100-match player-layer backtest
+      - name: Run 300-match player-layer backtest
         env:
           BACKTEST_N: "300"
           BACKTEST_OUT: "data/player_backtest_300.json"
