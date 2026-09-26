@@ -1,0 +1,110 @@
+{
+  "definition": "Leakage-safe player correction coefficient calibration. Coefficient selection uses only the older training block; the newer holdout block is evaluated once after selection. Target-match player data are never used.",
+  "n": 300,
+  "train_n": 200,
+  "holdout_n": 100,
+  "coefficients": [
+    {
+      "coefficient": 0.006,
+      "train": {
+        "one_x2_accuracy": 0.445,
+        "handicap_accuracy": 0.505,
+        "n": 200
+      },
+      "holdout": {
+        "one_x2_accuracy": 0.47,
+        "handicap_accuracy": 0.45,
+        "n": 100
+      }
+    },
+    {
+      "coefficient": 0.009,
+      "train": {
+        "one_x2_accuracy": 0.445,
+        "handicap_accuracy": 0.505,
+        "n": 200
+      },
+      "holdout": {
+        "one_x2_accuracy": 0.47,
+        "handicap_accuracy": 0.45,
+        "n": 100
+      }
+    },
+    {
+      "coefficient": 0.012,
+      "train": {
+        "one_x2_accuracy": 0.445,
+        "handicap_accuracy": 0.505,
+        "n": 200
+      },
+      "holdout": {
+        "one_x2_accuracy": 0.47,
+        "handicap_accuracy": 0.45,
+        "n": 100
+      }
+    },
+    {
+      "coefficient": 0.015,
+      "train": {
+        "one_x2_accuracy": 0.445,
+        "handicap_accuracy": 0.505,
+        "n": 200
+      },
+      "holdout": {
+        "one_x2_accuracy": 0.47,
+        "handicap_accuracy": 0.45,
+        "n": 100
+      }
+    },
+    {
+      "coefficient": 0.018,
+      "train": {
+        "one_x2_accuracy": 0.445,
+        "handicap_accuracy": 0.505,
+        "n": 200
+      },
+      "holdout": {
+        "one_x2_accuracy": 0.47,
+        "handicap_accuracy": 0.46,
+        "n": 100
+      }
+    },
+    {
+      "coefficient": 0.021,
+      "train": {
+        "one_x2_accuracy": 0.445,
+        "handicap_accuracy": 0.505,
+        "n": 200
+      },
+      "holdout": {
+        "one_x2_accuracy": 0.47,
+        "handicap_accuracy": 0.46,
+        "n": 100
+      }
+    },
+    {
+      "coefficient": 0.024,
+      "train": {
+        "one_x2_accuracy": 0.445,
+        "handicap_accuracy": 0.5,
+        "n": 200
+      },
+      "holdout": {
+        "one_x2_accuracy": 0.47,
+        "handicap_accuracy": 0.46,
+        "n": 100
+      }
+    }
+  ],
+  "selected_coefficient": 0.006,
+  "selected_train": {
+    "one_x2_accuracy": 0.445,
+    "handicap_accuracy": 0.505,
+    "n": 200
+  },
+  "selected_holdout": {
+    "one_x2_accuracy": 0.47,
+    "handicap_accuracy": 0.45,
+    "n": 100
+  }
+}
