@@ -171,18 +171,18 @@ jobs:
           print("ASIAN_HANDICAP_SEMANTICS_PASS")
           PY
 
-      - name: Run 300-match player-layer backtest
+      - name: Run 500-match player-layer backtest
         env:
-          BACKTEST_N: "300"
-          BACKTEST_OUT: "data/player_backtest_300.json"
+          BACKTEST_N: "500"
+          BACKTEST_OUT: "data/player_backtest_500.json"
         run: |
           python data_pipeline/backtest_player_10.py
 
-      - name: Calibrate player correction coefficient (train 200 / holdout 100)
+      - name: Calibrate player correction coefficient (train 350 / holdout 150)
         env:
-          PLAYER_CALIBRATION_N: "300"
-          PLAYER_CALIBRATION_TRAIN_N: "200"
-          PLAYER_CALIBRATION_OUT: "data/player_layer_calibration_300.json"
+          PLAYER_CALIBRATION_N: "500"
+          PLAYER_CALIBRATION_TRAIN_N: "350"
+          PLAYER_CALIBRATION_OUT: "data/player_layer_calibration_500.json"
         run: |
           python data_pipeline/calibrate_player_layer.py
 
