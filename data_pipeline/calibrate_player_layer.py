@@ -1,0 +1,120 @@
+import json, sqlite3, os, sys
+sys.path.insert(0, "data_pipeline")
+from backtest_player_10 import outcome, probs, handicap_probs, asian_settlement, model_lambdas, player_enhanced
+
+DB="football_model_database.sqlite"
+OUT=os.environ.get("PLAYER_CALIBRATION_OUT","data/player_layer_calibration_300.json")
+N=int(os.environ.get("PLAYER_CALIBRATION_N","300"))
+TRAIN_N=int(os.environ.get("PLAYER_CALIBRATION_TRAIN_N","200"))
+BASE_MODEL=os.environ.get("BASE_MODEL","v4")
+COEFFS=[float(x) for x in os.environ.get("PLAYER_COEFFS","0.006,0.009,0.012,0.015,0.018,0.021,0.024").split(",")]
+FOLDS=int(os.environ.get("PLAYER_CALIBRATION_FOLDS","4"))
+
+def main():
+    if TRAIN_N >= N or TRAIN_N < FOLDS:
+        raise SystemExit(f"INVALID_CALIBRATION_SPLIT:{TRAIN_N}:{N}:{FOLDS}")
+    con=sqlite3.connect(DB)
+    matches=con.execute("""SELECT m.match_id,m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away
+      FROM matches m JOIN results r ON r.match_id=m.match_id
+      JOIN provider_event_map pem ON pem.match_id=m.match_id AND pem.provider='fotmob'
+      WHERE m.status='finished' AND r.ft_home IS NOT NULL
+      ORDER BY m.kickoff DESC,m.match_id DESC LIMIT ?""",(max(N*5,50),)).fetchall()
+    eligible=[]
+    for m in matches:
+        line=con.execute("""SELECT handicap FROM sporttery_market WHERE match_id=? AND handicap IS NOT NULL ORDER BY captured_at ASC LIMIT 1""",(m[0],)).fetchone()
+        if line:
+            eligible.append((m,float(line[0])))
+        if len(eligible)>=N:
+            break
+    if len(eligible)<N:
+        raise SystemExit(f"PLAYER_CALIBRATION_NEEDS_{N}:{len(eligible)}")
+
+    # eligible is newest-first. Keep the newest holdout completely untouched.
+    holdout_n=N-TRAIN_N
+    train=list(reversed(eligible[holdout_n:]))
+    holdout=list(reversed(eligible[:holdout_n]))
+
+    def evaluate(items,coeff):
+        one=hand=0
+        for m,line in items:
+            lh,la=model_lambdas(con,BASE_MODEL,m,use_lineup=False)
+            p=probs(lh,la)
+            plh,pla,_,_,_,_=player_enhanced(con,m,coeff)
+            pp=handicap_probs(plh,pla,line)[0]
+            actual=outcome(m)
+            one += int(max(p,key=p.get)==actual)
+            settle=asian_settlement(m[4]-m[5],line)
+            ah="H" if settle.startswith("H") else "A" if settle.startswith("A") else "D"
+            hand += int(max(pp,key=pp.get)==ah)
+        n=len(items)
+        return {"one_x2_accuracy":round(one/n,4),"handicap_accuracy":round(hand/n,4),"n":n}
+
+    # Strict rolling walk-forward: each fold selects a coefficient using only prior folds.
+    fold_size=TRAIN_N//FOLDS
+    if fold_size < 10:
+        raise SystemExit(f"CALIBRATION_FOLD_TOO_SMALL:{fold_size}")
+    folds=[]
+    for i in range(FOLDS):
+        start=i*fold_size
+        end=(i+1)*fold_size if i<FOLDS-1 else TRAIN_N
+        folds.append((train[:start], train[start:end]))
+
+    fold_results=[]
+    for fold_index,(prior,valid) in enumerate(folds,1):
+        if not prior:
+            fold_results.append({"fold":fold_index,"train_prior_n":0,
+                                 "selected_coefficient":None,
+                                 "selection_source":"no_prior_data",
+                                 "validation":None})
+            continue
+        candidates=[(c,evaluate(prior,c)) for c in COEFFS]
+        chosen=max(candidates,key=lambda x:(x[1]["handicap_accuracy"],
+                                            x[1]["one_x2_accuracy"],-x[0]))
+        coeff=chosen[0]
+        vr=evaluate(valid,coeff)
+        fold_results.append({"fold":fold_index,"train_prior_n":len(prior),
+                             "selected_coefficient":coeff,
+                             "selection_source":"strict_prior_only",
+                             "prior_selection_metrics":chosen[1],
+                             "validation":vr})
+
+    scored=[x for x in fold_results if x["validation"] is not None]
+    if not scored:
+        raise SystemExit("NO_WALK_FORWARD_VALIDATION_FOLDS")
+    total_n=sum(x["validation"]["n"] for x in scored)
+    walk_forward_summary={
+        "one_x2_accuracy":round(sum(x["validation"]["one_x2_accuracy"]*x["validation"]["n"] for x in scored)/total_n,4),
+        "handicap_accuracy":round(sum(x["validation"]["handicap_accuracy"]*x["validation"]["n"] for x in scored)/total_n,4),
+        "n":total_n,
+        "evaluated_folds":len(scored)
+    }
+
+    # Final production coefficient is selected using all older training data only.
+    final_candidates=[(c,evaluate(train,c)) for c in COEFFS]
+    final_best=max(final_candidates,key=lambda x:(x[1]["handicap_accuracy"],
+                                                   x[1]["one_x2_accuracy"],-x[0]))
+    selected=final_best[0]
+    selected_train=final_best[1]
+    selected_holdout=evaluate(holdout,selected)
+
+    result={
+        "definition":"Leakage-safe player correction coefficient calibration. Candidate selection uses only walk-forward validation inside the older training block; the newest holdout block is evaluated once after selection. Target-match player data are never used.",
+        "n":N,
+        "train_n":TRAIN_N,
+        "holdout_n":holdout_n,
+        "folds":FOLDS,
+        "fold_size":fold_size,
+        "final_candidates":[{"coefficient":c,"training_metrics":m} for c,m in final_candidates],
+        "walk_forward":walk_forward_summary,
+        "walk_forward_folds":fold_results,
+        "selected_coefficient":selected,
+        "selected_train":selected_train,
+        "selected_holdout":selected_holdout
+    }
+    with open(OUT,"w",encoding="utf-8") as f:
+        json.dump(result,f,ensure_ascii=False,indent=2)
+    print(json.dumps(result,ensure_ascii=False))
+    con.close()
+
+if __name__=="__main__":
+    main()
