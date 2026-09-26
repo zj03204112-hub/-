@@ -5,9 +5,10 @@ sys.path.insert(0,"data_pipeline")
 from compare_models import model_lambdas, matrix
 
 DB="football_model_database.sqlite"
-OUT=os.environ.get("BACKTEST_OUT","data/player_backtest_10.json")
+OUT=os.environ.get("BACKTEST_OUT","data/player_backtest_300.json")
 TEST_N=int(os.environ.get("BACKTEST_N","10"))
 N=8
+BASE_MODEL=os.environ.get("BASE_MODEL","v4")
 
 def outcome(m):
     fh,fa=m[4],m[5]
@@ -81,7 +82,7 @@ def player_enhanced(con,match,coeff=None):
         coeff=float(os.environ.get("PLAYER_COEFF","0.006"))
     ko=datetime.fromisoformat(kickoff[:19])
     cutoff=(ko-timedelta(hours=12)).isoformat(timespec="seconds")
-    lh,la=model_lambdas(con,"v3",match,use_lineup=False)
+    lh,la=model_lambdas(con,BASE_MODEL,match,use_lineup=False)
     hf,hn=player_form(con,home,cutoff)
     af,an=player_form(con,away,cutoff)
     if hf is None or af is None:
@@ -110,7 +111,7 @@ def main():
         raise SystemExit(f"PLAYER_BACKTEST_NEEDS_{TEST_N}:{len(eligible)}")
     rows=[]; base_correct=player_correct=0; base_handicap_correct=player_handicap_correct=0
     for m,line in eligible:
-        b_lh,b_la=model_lambdas(con,"v3",m,use_lineup=False)
+        b_lh,b_la=model_lambdas(con,BASE_MODEL,m,use_lineup=False)
         bp=probs(b_lh,b_la); bhp,bhs=handicap_probs(b_lh,b_la,line); actual=outcome(m)
         plh,pla,hf,af,hn,an=player_enhanced(con,m)
         pp=probs(plh,pla); php,phs=handicap_probs(plh,pla,line)
@@ -141,7 +142,8 @@ def main():
           "away_player_form_rating":round(af,4) if af is not None else None,
           "home_prior_matches":hn,"away_prior_matches":an})
     result={"definition":f"{TEST_N}-match exploratory player-layer backtest. Target-match player data are never used; player form uses only prior completed FotMob matches before T-12h. Fixed coefficient is not fitted on this sample. Handicap hit rate is evaluated using Asian whole/half/quarter-line settlement semantics; D represents a true push; half-win/half-loss remain with the corresponding side.",
-      "n":TEST_N,"baseline_v3_accuracy":round(base_correct/TEST_N,4),
+      "n":TEST_N,"base_model":BASE_MODEL,
+      "baseline_accuracy":round(base_correct/TEST_N,4),
       "player_layer_accuracy":round(player_correct/TEST_N,4),
       "baseline_correct":base_correct,"player_layer_correct":player_correct,
       "baseline_handicap_accuracy":round(base_handicap_correct/TEST_N,4),
