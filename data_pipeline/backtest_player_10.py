@@ -83,11 +83,19 @@ def player_enhanced(con,match,coeff=None):
     ko=datetime.fromisoformat(kickoff[:19])
     cutoff=(ko-timedelta(hours=12)).isoformat(timespec="seconds")
     lh,la=model_lambdas(con,BASE_MODEL,match,use_lineup=False)
+    # Historical T-12h player layer: position-aware lineup projection first,
+    # then a small rating-form residual. Target-match player rows are never read.
+    lp_h=con.execute("SELECT attack_delta,defense_delta FROM lineup_projection WHERE match_id=? AND team_side='home'",(mid,)).fetchone()
+    lp_a=con.execute("SELECT attack_delta,defense_delta FROM lineup_projection WHERE match_id=? AND team_side='away'",(mid,)).fetchone()
+    if lp_h and lp_a:
+        had=max(-0.20,min(0.20,float(lp_h[0] or 0.0))); hdd=max(-0.20,min(0.20,float(lp_h[1] or 0.0)))
+        aad=max(-0.20,min(0.20,float(lp_a[0] or 0.0))); add=max(-0.20,min(0.20,float(lp_a[1] or 0.0)))
+        lh*=math.exp(had-add*0.5)
+        la*=math.exp(aad-hdd*0.5)
     hf,hn=player_form(con,home,cutoff)
     af,an=player_form(con,away,cutoff)
     if hf is None or af is None:
         return lh,la,hf,af,hn,an
-    # Fixed, conservative rating-to-goal coefficient; no fitting on target matches.
     delta=max(-0.08,min(0.08,(hf-af)*coeff))
     lh*=math.exp(delta)
     la*=math.exp(-delta)
