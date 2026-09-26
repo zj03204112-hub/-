@@ -171,6 +171,18 @@ jobs:
           print("ASIAN_HANDICAP_SEMANTICS_PASS")
           PY
 
+      - name: Analyze causes of 128 actual draws
+        env:
+          DRAW_ANALYSIS_N: "128"
+          DRAW_ANALYSIS_OUT: "data/draw_cause_analysis_128.json"
+        run: |
+          python data_pipeline/analyze_draw_causes.py
+          python - <<'PY'
+          import json
+          d=json.load(open("data/draw_cause_analysis_128.json",encoding="utf-8"))
+          print(json.dumps(d["summary"],ensure_ascii=False))
+          PY
+
       - name: Run 500-match player-layer backtest
         env:
           BACKTEST_N: "500"
@@ -192,7 +204,7 @@ jobs:
           set -e
           git config user.name "football-model-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add football_model_database.sqlite data/player_backtest_500.json data/player_layer_calibration_500.json
+          git add football_model_database.sqlite data/draw_cause_analysis_128.json data/player_backtest_500.json data/player_layer_calibration_500.json
           if git diff --cached --quiet; then
             echo "No player database changes."
             exit 0
