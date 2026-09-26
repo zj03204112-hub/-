@@ -48,8 +48,7 @@ def main():
         n=len(items)
         return {"one_x2_accuracy":round(one/n,4),"handicap_accuracy":round(hand/n,4),"n":n}
 
-    # Walk-forward calibration inside the older training block.
-    # Each fold validates on a later chronological block, never on earlier data.
+    # Strict rolling walk-forward: each fold selects a coefficient using only prior folds.
     fold_size=TRAIN_N//FOLDS
     if fold_size < 10:
         raise SystemExit(f"CALIBRATION_FOLD_TOO_SMALL:{fold_size}")
@@ -57,41 +56,44 @@ def main():
     for i in range(FOLDS):
         start=i*fold_size
         end=(i+1)*fold_size if i<FOLDS-1 else TRAIN_N
-        valid=train[start:end]
-        prior=train[:start]
-        folds.append((prior,valid))
+        folds.append((train[:start], train[start:end]))
 
-    rows=[]
-    for coeff in COEFFS:
-        fold_results=[]
-        for fold_index,(prior,valid) in enumerate(folds,1):
-            # The player coefficient is fixed and not fitted on the target validation block.
-            # prior is recorded to make the time ordering explicit; coefficient candidates
-            # are compared only on each later validation block.
-            vr=evaluate(valid,coeff)
-            fold_results.append({"fold":fold_index,"train_prior_n":len(prior),"validation":vr})
-        total_n=sum(x["validation"]["n"] for x in fold_results)
-        total_hand=sum(x["validation"]["handicap_accuracy"]*x["validation"]["n"] for x in fold_results)
-        total_one=sum(x["validation"]["one_x2_accuracy"]*x["validation"]["n"] for x in fold_results)
-        rows.append({
-            "coefficient":coeff,
-            "walk_forward_train": {
-                "one_x2_accuracy":round(total_one/total_n,4),
-                "handicap_accuracy":round(total_hand/total_n,4),
-                "n":total_n,
-                "folds":fold_results
-            }
-        })
+    fold_results=[]
+    for fold_index,(prior,valid) in enumerate(folds,1):
+        if not prior:
+            fold_results.append({"fold":fold_index,"train_prior_n":0,
+                                 "selected_coefficient":None,
+                                 "selection_source":"no_prior_data",
+                                 "validation":None})
+            continue
+        candidates=[(c,evaluate(prior,c)) for c in COEFFS]
+        chosen=max(candidates,key=lambda x:(x[1]["handicap_accuracy"],
+                                            x[1]["one_x2_accuracy"],-x[0]))
+        coeff=chosen[0]
+        vr=evaluate(valid,coeff)
+        fold_results.append({"fold":fold_index,"train_prior_n":len(prior),
+                             "selected_coefficient":coeff,
+                             "selection_source":"strict_prior_only",
+                             "prior_selection_metrics":chosen[1],
+                             "validation":vr})
 
-    # Select only from the older 200-match walk-forward validation.
-    # Handicap is primary because the production task is handicap prediction;
-    # 1X2 is the tie-breaker, then smaller correction for stability.
-    best=max(rows,key=lambda x:(
-        x["walk_forward_train"]["handicap_accuracy"],
-        x["walk_forward_train"]["one_x2_accuracy"],
-        -x["coefficient"]
-    ))
-    selected=best["coefficient"]
+    scored=[x for x in fold_results if x["validation"] is not None]
+    if not scored:
+        raise SystemExit("NO_WALK_FORWARD_VALIDATION_FOLDS")
+    total_n=sum(x["validation"]["n"] for x in scored)
+    walk_forward_summary={
+        "one_x2_accuracy":round(sum(x["validation"]["one_x2_accuracy"]*x["validation"]["n"] for x in scored)/total_n,4),
+        "handicap_accuracy":round(sum(x["validation"]["handicap_accuracy"]*x["validation"]["n"] for x in scored)/total_n,4),
+        "n":total_n,
+        "evaluated_folds":len(scored)
+    }
+
+    # Final production coefficient is selected using all older training data only.
+    final_candidates=[(c,evaluate(train,c)) for c in COEFFS]
+    final_best=max(final_candidates,key=lambda x:(x[1]["handicap_accuracy"],
+                                                   x[1]["one_x2_accuracy"],-x[0]))
+    selected=final_best[0]
+    selected_train=final_best[1]
     selected_holdout=evaluate(holdout,selected)
 
     result={
@@ -101,9 +103,11 @@ def main():
         "holdout_n":holdout_n,
         "folds":FOLDS,
         "fold_size":fold_size,
-        "coefficients":rows,
+        "final_candidates":[{"coefficient":c,"training_metrics":m} for c,m in final_candidates],
+        "walk_forward":walk_forward_summary,
+        "walk_forward_folds":fold_results,
         "selected_coefficient":selected,
-        "selected_walk_forward_train":best["walk_forward_train"],
+        "selected_train":selected_train,
         "selected_holdout":selected_holdout
     }
     with open(OUT,"w",encoding="utf-8") as f:
