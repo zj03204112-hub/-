@@ -161,6 +161,22 @@ def fit_temperature(items):
             best,best_t=nll,t
     return round(best_t,2)
 
+def apply_draw_bias(p,t=1.0,draw_bias=0.0):
+    z={k:math.log(max(1e-12,p[k]))/t for k in ("H","D","A")}
+    z["D"]+=draw_bias
+    mx=max(z.values()); ex={k:math.exp(z[k]-mx) for k in z}; s=sum(ex.values())
+    return {k:ex[k]/s for k in ex}
+
+def fit_draw_calibration(items):
+    best=(1.0,0.0,float("inf"))
+    for ti in range(7,14):
+        t=ti/10
+        for bi in range(-8,9):
+            b=bi/20
+            nll=temperature_nll([(apply_draw_bias(p,t,b),a) for p,a in items],1.0)
+            if nll<best[2]: best=(t,b,nll)
+    return round(best[0],2),round(best[1],3)
+
 def apply_temperature(p,t):
     z={k:math.log(max(1e-12,p[k]))/t for k in ("H","D","A")}
     mx=max(z.values()); ex={k:math.exp(z[k]-mx) for k in z}; s=sum(ex.values())
@@ -243,6 +259,11 @@ def main():
         for p,a in calibrated_items: metrics_add(cd,p,a)
         hold[label]["calibrated_probability_metrics"]=finish(cd)
         hold[label]["calibrated_confidence"]=calibration_bins(calibrated_items)
+        draw_t,draw_bias=fit_draw_calibration(train_items)
+        draw_items=[(apply_draw_bias(p,draw_t,draw_bias),a) for p,a in items]
+        dd={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
+        for p,a in draw_items: metrics_add(dd,p,a)
+        hold[label]["draw_calibration"]={"temperature":draw_t,"draw_logit_bias":draw_bias,"metrics":finish(dd),"confidence":calibration_bins(draw_items)}
 
     result["chronological_holdout"]={
         "train_fraction":0.60,
