@@ -18,7 +18,7 @@ def main():
       FROM matches m JOIN results r ON r.match_id=m.match_id
       JOIN provider_event_map pem ON pem.match_id=m.match_id AND pem.provider='fotmob'
       WHERE m.status='finished' AND r.ft_home IS NOT NULL
-      ORDER BY m.kickoff DESC,m.match_id DESC LIMIT ?""",(max(N*5,50),)).fetchall()
+      ORDER BY m.kickoff DESC,m.match_id DESC LIMIT ?""",(max(N*10,1000),)).fetchall()
     eligible=[]
     for m in matches:
         line=con.execute("""SELECT handicap FROM sporttery_market WHERE match_id=? AND handicap IS NOT NULL ORDER BY captured_at ASC LIMIT 1""",(m[0],)).fetchone()
