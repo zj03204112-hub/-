@@ -1,0 +1,140 @@
+{
+  "definition": "Leakage-safe player correction coefficient calibration. Candidate selection uses only walk-forward validation inside the older training block; the newest holdout block is evaluated once after selection. Target-match player data are never used.",
+  "n": 500,
+  "train_n": 350,
+  "holdout_n": 150,
+  "folds": 4,
+  "fold_size": 87,
+  "final_candidates": [
+    {
+      "coefficient": 0.006,
+      "training_metrics": {
+        "one_x2_accuracy": 0.4714,
+        "handicap_accuracy": 0.4857,
+        "n": 350
+      }
+    },
+    {
+      "coefficient": 0.009,
+      "training_metrics": {
+        "one_x2_accuracy": 0.4714,
+        "handicap_accuracy": 0.4857,
+        "n": 350
+      }
+    },
+    {
+      "coefficient": 0.012,
+      "training_metrics": {
+        "one_x2_accuracy": 0.4714,
+        "handicap_accuracy": 0.4857,
+        "n": 350
+      }
+    },
+    {
+      "coefficient": 0.015,
+      "training_metrics": {
+        "one_x2_accuracy": 0.4714,
+        "handicap_accuracy": 0.4857,
+        "n": 350
+      }
+    },
+    {
+      "coefficient": 0.018,
+      "training_metrics": {
+        "one_x2_accuracy": 0.4714,
+        "handicap_accuracy": 0.4857,
+        "n": 350
+      }
+    },
+    {
+      "coefficient": 0.021,
+      "training_metrics": {
+        "one_x2_accuracy": 0.4714,
+        "handicap_accuracy": 0.4886,
+        "n": 350
+      }
+    },
+    {
+      "coefficient": 0.024,
+      "training_metrics": {
+        "one_x2_accuracy": 0.4714,
+        "handicap_accuracy": 0.4886,
+        "n": 350
+      }
+    }
+  ],
+  "walk_forward": {
+    "one_x2_accuracy": 0.4601,
+    "handicap_accuracy": 0.5057,
+    "n": 263,
+    "evaluated_folds": 3
+  },
+  "walk_forward_folds": [
+    {
+      "fold": 1,
+      "train_prior_n": 0,
+      "selected_coefficient": null,
+      "selection_source": "no_prior_data",
+      "validation": null
+    },
+    {
+      "fold": 2,
+      "train_prior_n": 87,
+      "selected_coefficient": 0.006,
+      "selection_source": "strict_prior_only",
+      "prior_selection_metrics": {
+        "one_x2_accuracy": 0.5057,
+        "handicap_accuracy": 0.4253,
+        "n": 87
+      },
+      "validation": {
+        "one_x2_accuracy": 0.5172,
+        "handicap_accuracy": 0.5057,
+        "n": 87
+      }
+    },
+    {
+      "fold": 3,
+      "train_prior_n": 174,
+      "selected_coefficient": 0.006,
+      "selection_source": "strict_prior_only",
+      "prior_selection_metrics": {
+        "one_x2_accuracy": 0.5115,
+        "handicap_accuracy": 0.4655,
+        "n": 174
+      },
+      "validation": {
+        "one_x2_accuracy": 0.4253,
+        "handicap_accuracy": 0.5057,
+        "n": 87
+      }
+    },
+    {
+      "fold": 4,
+      "train_prior_n": 261,
+      "selected_coefficient": 0.006,
+      "selection_source": "strict_prior_only",
+      "prior_selection_metrics": {
+        "one_x2_accuracy": 0.4828,
+        "handicap_accuracy": 0.4789,
+        "n": 261
+      },
+      "validation": {
+        "one_x2_accuracy": 0.4382,
+        "handicap_accuracy": 0.5056,
+        "n": 89
+      }
+    }
+  ],
+  "selected_coefficient": 0.021,
+  "selected_train": {
+    "one_x2_accuracy": 0.4714,
+    "handicap_accuracy": 0.4886,
+    "n": 350
+  },
+  "selected_holdout": {
+    "one_x2_accuracy": 0.5133,
+    "handicap_accuracy": 0.4733,
+    "n": 150
+  }
+}
