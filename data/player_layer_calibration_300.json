@@ -1,106 +1,377 @@
 {
-  "definition": "Leakage-safe player correction coefficient calibration. Coefficient selection uses only the older training block; the newer holdout block is evaluated once after selection. Target-match player data are never used.",
+  "definition": "Leakage-safe player correction coefficient calibration. Candidate selection uses only walk-forward validation inside the older training block; the newest holdout block is evaluated once after selection. Target-match player data are never used.",
   "n": 300,
   "train_n": 200,
   "holdout_n": 100,
+  "folds": 4,
+  "fold_size": 50,
   "coefficients": [
     {
       "coefficient": 0.006,
-      "train": {
+      "walk_forward_train": {
         "one_x2_accuracy": 0.445,
         "handicap_accuracy": 0.505,
-        "n": 200
-      },
-      "holdout": {
-        "one_x2_accuracy": 0.47,
-        "handicap_accuracy": 0.45,
-        "n": 100
+        "n": 200,
+        "folds": [
+          {
+            "fold": 1,
+            "train_prior_n": 0,
+            "validation": {
+              "one_x2_accuracy": 0.34,
+              "handicap_accuracy": 0.44,
+              "n": 50
+            }
+          },
+          {
+            "fold": 2,
+            "train_prior_n": 50,
+            "validation": {
+              "one_x2_accuracy": 0.4,
+              "handicap_accuracy": 0.52,
+              "n": 50
+            }
+          },
+          {
+            "fold": 3,
+            "train_prior_n": 100,
+            "validation": {
+              "one_x2_accuracy": 0.42,
+              "handicap_accuracy": 0.6,
+              "n": 50
+            }
+          },
+          {
+            "fold": 4,
+            "train_prior_n": 150,
+            "validation": {
+              "one_x2_accuracy": 0.62,
+              "handicap_accuracy": 0.46,
+              "n": 50
+            }
+          }
+        ]
       }
     },
     {
       "coefficient": 0.009,
-      "train": {
+      "walk_forward_train": {
         "one_x2_accuracy": 0.445,
         "handicap_accuracy": 0.505,
-        "n": 200
-      },
-      "holdout": {
-        "one_x2_accuracy": 0.47,
-        "handicap_accuracy": 0.45,
-        "n": 100
+        "n": 200,
+        "folds": [
+          {
+            "fold": 1,
+            "train_prior_n": 0,
+            "validation": {
+              "one_x2_accuracy": 0.34,
+              "handicap_accuracy": 0.44,
+              "n": 50
+            }
+          },
+          {
+            "fold": 2,
+            "train_prior_n": 50,
+            "validation": {
+              "one_x2_accuracy": 0.4,
+              "handicap_accuracy": 0.52,
+              "n": 50
+            }
+          },
+          {
+            "fold": 3,
+            "train_prior_n": 100,
+            "validation": {
+              "one_x2_accuracy": 0.42,
+              "handicap_accuracy": 0.6,
+              "n": 50
+            }
+          },
+          {
+            "fold": 4,
+            "train_prior_n": 150,
+            "validation": {
+              "one_x2_accuracy": 0.62,
+              "handicap_accuracy": 0.46,
+              "n": 50
+            }
+          }
+        ]
       }
     },
     {
       "coefficient": 0.012,
-      "train": {
+      "walk_forward_train": {
         "one_x2_accuracy": 0.445,
         "handicap_accuracy": 0.505,
-        "n": 200
-      },
-      "holdout": {
-        "one_x2_accuracy": 0.47,
-        "handicap_accuracy": 0.45,
-        "n": 100
+        "n": 200,
+        "folds": [
+          {
+            "fold": 1,
+            "train_prior_n": 0,
+            "validation": {
+              "one_x2_accuracy": 0.34,
+              "handicap_accuracy": 0.44,
+              "n": 50
+            }
+          },
+          {
+            "fold": 2,
+            "train_prior_n": 50,
+            "validation": {
+              "one_x2_accuracy": 0.4,
+              "handicap_accuracy": 0.52,
+              "n": 50
+            }
+          },
+          {
+            "fold": 3,
+            "train_prior_n": 100,
+            "validation": {
+              "one_x2_accuracy": 0.42,
+              "handicap_accuracy": 0.6,
+              "n": 50
+            }
+          },
+          {
+            "fold": 4,
+            "train_prior_n": 150,
+            "validation": {
+              "one_x2_accuracy": 0.62,
+              "handicap_accuracy": 0.46,
+              "n": 50
+            }
+          }
+        ]
       }
     },
     {
       "coefficient": 0.015,
-      "train": {
+      "walk_forward_train": {
         "one_x2_accuracy": 0.445,
         "handicap_accuracy": 0.505,
-        "n": 200
-      },
-      "holdout": {
-        "one_x2_accuracy": 0.47,
-        "handicap_accuracy": 0.45,
-        "n": 100
+        "n": 200,
+        "folds": [
+          {
+            "fold": 1,
+            "train_prior_n": 0,
+            "validation": {
+              "one_x2_accuracy": 0.34,
+              "handicap_accuracy": 0.44,
+              "n": 50
+            }
+          },
+          {
+            "fold": 2,
+            "train_prior_n": 50,
+            "validation": {
+              "one_x2_accuracy": 0.4,
+              "handicap_accuracy": 0.52,
+              "n": 50
+            }
+          },
+          {
+            "fold": 3,
+            "train_prior_n": 100,
+            "validation": {
+              "one_x2_accuracy": 0.42,
+              "handicap_accuracy": 0.6,
+              "n": 50
+            }
+          },
+          {
+            "fold": 4,
+            "train_prior_n": 150,
+            "validation": {
+              "one_x2_accuracy": 0.62,
+              "handicap_accuracy": 0.46,
+              "n": 50
+            }
+          }
+        ]
       }
     },
     {
       "coefficient": 0.018,
-      "train": {
+      "walk_forward_train": {
         "one_x2_accuracy": 0.445,
         "handicap_accuracy": 0.505,
-        "n": 200
-      },
-      "holdout": {
-        "one_x2_accuracy": 0.47,
-        "handicap_accuracy": 0.46,
-        "n": 100
+        "n": 200,
+        "folds": [
+          {
+            "fold": 1,
+            "train_prior_n": 0,
+            "validation": {
+              "one_x2_accuracy": 0.34,
+              "handicap_accuracy": 0.44,
+              "n": 50
+            }
+          },
+          {
+            "fold": 2,
+            "train_prior_n": 50,
+            "validation": {
+              "one_x2_accuracy": 0.4,
+              "handicap_accuracy": 0.52,
+              "n": 50
+            }
+          },
+          {
+            "fold": 3,
+            "train_prior_n": 100,
+            "validation": {
+              "one_x2_accuracy": 0.42,
+              "handicap_accuracy": 0.6,
+              "n": 50
+            }
+          },
+          {
+            "fold": 4,
+            "train_prior_n": 150,
+            "validation": {
+              "one_x2_accuracy": 0.62,
+              "handicap_accuracy": 0.46,
+              "n": 50
+            }
+          }
+        ]
       }
     },
     {
       "coefficient": 0.021,
-      "train": {
+      "walk_forward_train": {
         "one_x2_accuracy": 0.445,
         "handicap_accuracy": 0.505,
-        "n": 200
-      },
-      "holdout": {
-        "one_x2_accuracy": 0.47,
-        "handicap_accuracy": 0.46,
-        "n": 100
+        "n": 200,
+        "folds": [
+          {
+            "fold": 1,
+            "train_prior_n": 0,
+            "validation": {
+              "one_x2_accuracy": 0.34,
+              "handicap_accuracy": 0.44,
+              "n": 50
+            }
+          },
+          {
+            "fold": 2,
+            "train_prior_n": 50,
+            "validation": {
+              "one_x2_accuracy": 0.4,
+              "handicap_accuracy": 0.52,
+              "n": 50
+            }
+          },
+          {
+            "fold": 3,
+            "train_prior_n": 100,
+            "validation": {
+              "one_x2_accuracy": 0.42,
+              "handicap_accuracy": 0.6,
+              "n": 50
+            }
+          },
+          {
+            "fold": 4,
+            "train_prior_n": 150,
+            "validation": {
+              "one_x2_accuracy": 0.62,
+              "handicap_accuracy": 0.46,
+              "n": 50
+            }
+          }
+        ]
       }
     },
     {
       "coefficient": 0.024,
-      "train": {
+      "walk_forward_train": {
         "one_x2_accuracy": 0.445,
         "handicap_accuracy": 0.5,
-        "n": 200
-      },
-      "holdout": {
-        "one_x2_accuracy": 0.47,
-        "handicap_accuracy": 0.46,
-        "n": 100
+        "n": 200,
+        "folds": [
+          {
+            "fold": 1,
+            "train_prior_n": 0,
+            "validation": {
+              "one_x2_accuracy": 0.34,
+              "handicap_accuracy": 0.44,
+              "n": 50
+            }
+          },
+          {
+            "fold": 2,
+            "train_prior_n": 50,
+            "validation": {
+              "one_x2_accuracy": 0.4,
+              "handicap_accuracy": 0.52,
+              "n": 50
+            }
+          },
+          {
+            "fold": 3,
+            "train_prior_n": 100,
+            "validation": {
+              "one_x2_accuracy": 0.42,
+              "handicap_accuracy": 0.58,
+              "n": 50
+            }
+          },
+          {
+            "fold": 4,
+            "train_prior_n": 150,
+            "validation": {
+              "one_x2_accuracy": 0.62,
+              "handicap_accuracy": 0.46,
+              "n": 50
+            }
+          }
+        ]
       }
     }
   ],
   "selected_coefficient": 0.006,
-  "selected_train": {
+  "selected_walk_forward_train": {
     "one_x2_accuracy": 0.445,
     "handicap_accuracy": 0.505,
-    "n": 200
+    "n": 200,
+    "folds": [
+      {
+        "fold": 1,
+        "train_prior_n": 0,
+        "validation": {
+          "one_x2_accuracy": 0.34,
+          "handicap_accuracy": 0.44,
+          "n": 50
+        }
+      },
+      {
+        "fold": 2,
+        "train_prior_n": 50,
+        "validation": {
+          "one_x2_accuracy": 0.4,
+          "handicap_accuracy": 0.52,
+          "n": 50
+        }
+      },
+      {
+        "fold": 3,
+        "train_prior_n": 100,
+        "validation": {
+          "one_x2_accuracy": 0.42,
+          "handicap_accuracy": 0.6,
+          "n": 50
+        }
+      },
+      {
+        "fold": 4,
+        "train_prior_n": 150,
+        "validation": {
+          "one_x2_accuracy": 0.62,
+          "handicap_accuracy": 0.46,
+          "n": 50
+        }
+      }
+    ]
   },
   "selected_holdout": {
     "one_x2_accuracy": 0.47,
