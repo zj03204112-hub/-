@@ -75,8 +75,10 @@ def player_form(con,team,cutoff):
     sw=sum(max(1,float(r[2] or 0)) for r in rr)
     return (sum(float(r[1])*max(1,float(r[2] or 0)) for r in rr)/sw if sw else None),len(mids)
 
-def player_enhanced(con,match,coeff=0.018):
+def player_enhanced(con,match,coeff=None):
     mid,kickoff,home,away,fh,fa=match
+    if coeff is None:
+        coeff=float(os.environ.get("PLAYER_COEFF","0.006"))
     ko=datetime.fromisoformat(kickoff[:19])
     cutoff=(ko-timedelta(hours=12)).isoformat(timespec="seconds")
     lh,la=model_lambdas(con,"v3",match,use_lineup=False)
