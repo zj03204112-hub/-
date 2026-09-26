@@ -111,8 +111,8 @@ def model_lambdas(con,model,match,use_lineup=True):
         lp=con.execute("SELECT attack_delta,defense_delta FROM lineup_projection WHERE match_id=? AND team_side=?",(mid,side)).fetchone()
         if lp:
             ad=max(-0.25,min(0.25,float(lp[0] or 0.0))); dd=max(-0.25,min(0.25,float(lp[1] or 0.0)))
-            if side=="home": lh*=math.exp(ad); la*=math.exp(dd)
-            else: la*=math.exp(ad); lh*=math.exp(dd)
+            if side=="home": lh*=math.exp(ad); la*=math.exp(-dd)
+            else: la*=math.exp(ad); lh*=math.exp(-dd)
     return lh,la
 
 def run_model(con,model,match):
