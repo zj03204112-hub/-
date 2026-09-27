@@ -140,7 +140,7 @@ def main():
       "definition": f"{N}-match descriptive validation of historical jc-daily-report signals. Prediction fields are read only from the pre-result columns; final score is used only as evaluation target. No coefficient is fitted and V4 is not changed.",
       "source_repo": REPO,
       "source_url": "https://github.com/chinjiaqing/jc-daily-report",
-      "n_source_cards": len(all_rows),\n      "n_big5_cards": len(big5_rows),
+      "n_source_cards": len(all_rows),\n      "n_target_league_cards": len(target_rows),
       "n": len(rows),
       "direction_signal": {
           "n": len(exact),
