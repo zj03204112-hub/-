@@ -128,12 +128,42 @@ def main():
                             "H":ph,"D":pd,"A":pa},
             "cause_tags":reasons
         })
+    # Cross-tab the observed signals instead of treating overlapping tags as
+    # mutually exclusive causes. This keeps the diagnosis descriptive and
+    # prevents double-counting rotation/strength/schedule effects.
+    strength_buckets={}
+    cross={}
+    schedule_coverage={"home":0,"away":0,"either":0,"both":0}
+    lineup_signal=0
+    for x in rows:
+        b=x["strength"]["bucket"]
+        strength_buckets[b]=strength_buckets.get(b,0)+1
+        hs=x["schedule_intent"]["home"] is not None
+        aws=x["schedule_intent"]["away"] is not None
+        schedule_coverage["home"]+=hs
+        schedule_coverage["away"]+=aws
+        schedule_coverage["either"]+=bool(hs or aws)
+        schedule_coverage["both"]+=bool(hs and aws)
+        lp_h=x["lineup_proxy"]["home"]
+        lp_a=x["lineup_proxy"]["away"]
+        if lp_h and lp_a and (
+            abs(float(lp_h[1] or 0))+abs(float(lp_h[2] or 0))+
+            abs(float(lp_a[1] or 0))+abs(float(lp_a[2] or 0)) > 1e-9
+        ):
+            lineup_signal+=1
+        key=f"{b}|rotation={'yes' if 'rotation' in x['cause_tags'] else 'no'}|injury={'yes' if 'key_absence' in x['cause_tags'] else 'no'}"
+        cross[key]=cross.get(key,0)+1
     summary={"n_draws":len(rows),"counts":counts,
              "share":{k:round(v/max(1,len(rows)),4) for k,v in counts.items()},
+             "strength_bucket_counts":strength_buckets,
+             "signal_cross_tab":cross,
+             "schedule_coverage":schedule_coverage,
              "injury_records":sum(x["injuries"]["records"] for x in rows),
              "draws_with_injury_records":sum(x["injuries"]["records"]>0 for x in rows),
+             "injury_signal_coverage":round(sum(x["injuries"]["records"]>0 for x in rows)/max(1,len(rows)),4),
              "draws_with_rotation_signal":sum("rotation" in x["cause_tags"] for x in rows),
-             "draws_strength_close":sum(x["strength"]["bucket"]=="close" for x in rows)}
+             "draws_strength_close":sum(x["strength"]["bucket"]=="close" for x in rows),
+             "draws_with_lineup_delta_signal":lineup_signal}
     out={"definition":"128 most recent completed actual draws; causes are classified only from pre-match/T-12h repository data. No draw-probability adjustment is applied.","summary":summary,"matches":rows}
     with open(OUT,"w",encoding="utf-8") as f: json.dump(out,f,ensure_ascii=False,indent=2)
     print(json.dumps(summary,ensure_ascii=False))
