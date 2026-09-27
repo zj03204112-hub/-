@@ -19,7 +19,9 @@ def parse_cards(html, source_date):
     # Current jc-daily-report pages use .match-card div blocks.
     for b in re.findall(r'<div\s+class="match-card[^"]*"[^>]*>(.*?)</div>\s*</div>\s*<div class="match-card', html, re.S):
         pass
-    blocks = re.findall(r'<div class="match-card[^"]*"[^>]*>(.*?)(?=\n\s*<div class="match-card|\n</main>)', html, re.S)
+    blocks = re.findall(r'<div class="match-card[^"]*"[^>]*>(.*?)(?=
+\s*<div class="match-card|
+</main>)', html, re.S)
     for b in blocks:
         league_m = re.search(r'<span class="font-bold">\s*([^<]+?)\s*</span>\s*<span class="font-mono">\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})', b, re.S)
         tm = league_m.group(2) if league_m else None
@@ -60,7 +62,8 @@ def parse_cards(html, source_date):
 
         actual = outcome(sh, sa)
         out.append({
-            "league": league,\n            "date": tm[:10],
+            "league": league,
+"date": tm[:10],
             "kickoff": tm[11:],
             "home": home,
             "away": away,
@@ -100,7 +103,19 @@ def main():
             print("FETCH_FAIL", path, str(e))
 
     all_rows = sorted(all_rows, key=lambda x: (x["date"], x["kickoff"]), reverse=True)
-    rows = all_rows[:N]
+
+    # Target competitions: Big Five + J1/K League 1 + UEFA club competitions.
+    target_leagues = {
+        "英超","西甲","德甲","意甲","法甲",
+        "英格兰超级联赛","西班牙甲级联赛","德国甲级联赛","意大利甲级联赛","法国甲级联赛",
+        "日职","J1联赛","日本J1联赛",
+        "韩国K联赛","K联赛1","K League 1","K1联赛",
+        "欧冠","欧洲冠军联赛","UEFA Champions League","欧冠联赛",
+        "欧联","欧洲联赛","UEFA Europa League","欧联杯",
+        "欧协联","欧洲协会联赛","UEFA Conference League","欧协杯"
+    }
+    target_rows = [r for r in all_rows if r["league"] in target_leagues]
+    rows = target_rows[:N]
 
     exact = [r for r in rows if r["euro_signal"]]
     exact_correct = 0
@@ -142,7 +157,8 @@ def main():
       "definition": f"{N}-match descriptive validation of historical jc-daily-report signals. Prediction fields are read only from the pre-result columns; final score is used only as evaluation target. No coefficient is fitted and V4 is not changed.",
       "source_repo": REPO,
       "source_url": "https://github.com/chinjiaqing/jc-daily-report",
-      "n_source_cards": len(all_rows),\n      "n_target_league_cards": len(target_rows),
+      "n_source_cards": len(all_rows),
+"n_target_league_cards": len(target_rows),
       "n": len(rows),
       "direction_signal": {
           "n": len(exact),
