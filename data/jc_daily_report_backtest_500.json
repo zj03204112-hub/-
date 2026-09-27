@@ -1,0 +1,26 @@
+{
+  "definition": "500-match external-source backtest. Source signals come from the historical jc-daily-report HTML pages and are never fitted to the target results. The source score is used only as the historical outcome displayed by the source; model/database results are independently matched where possible.",
+  "source_repo": "chinjiaqing/jc-daily-report",
+  "source_url": "https://github.com/chinjiaqing/jc-daily-report",
+  "n_source_cards": 0,
+  "n": 0,
+  "exact_1x2": {
+    "n": 0,
+    "correct": 0,
+    "accuracy": null
+  },
+  "double_chance": {
+    "n": 0,
+    "hit": 0,
+    "hit_rate": null
+  },
+  "all_directional_signals": {
+    "n": 0,
+    "hit": 0,
+    "hit_rate": null
+  },
+  "local_db_overlap": 0,
+  "warning": "This is a descriptive external-source validation. No coefficient is fitted on these 500 matches and V4 is not changed by this run.",
+  "sample": [],
+  "matched": []
+}
