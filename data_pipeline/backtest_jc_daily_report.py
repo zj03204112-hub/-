@@ -2,8 +2,8 @@ import json, os, re, sqlite3
 import requests
 
 DB = "football_model_database.sqlite"
-OUT = os.environ.get("SITE_BACKTEST_OUT", "data/jc_daily_report_backtest_100.json")
-N = int(os.environ.get("SITE_BACKTEST_N", "100"))
+OUT = os.environ.get("SITE_BACKTEST_OUT", "data/jc_daily_report_backtest_30_big5.json")
+N = int(os.environ.get("SITE_BACKTEST_N", "30"))
 REPO = "chinjiaqing/jc-daily-report"
 RAW = "https://raw.githubusercontent.com/chinjiaqing/jc-daily-report/main/"
 API = f"https://api.github.com/repos/{REPO}/git/trees/main?recursive=1"
@@ -21,7 +21,7 @@ def parse_cards(html, source_date):
         pass
     blocks = re.findall(r'<div class="match-card[^"]*"[^>]*>(.*?)(?=\n\s*<div class="match-card|\n</main>)', html, re.S)
     for b in blocks:
-        tm = re.search(r'(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})', b)
+        league_m = re.search(r'<span class="font-bold">\s*([^<]+?)\s*</span>\s*<span class="font-mono">\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})', b, re.S)\n        tm = league_m.group(2) if league_m else None\n        league = clean(league_m.group(1)) if league_m else ""
         teams_m = re.search(r'<span class="text-\[15px\] font-bold[^>]*>\s*(.*?)\s*<span[^>]*>vs</span>\s*(.*?)\s*</span>', b, re.S)
         score_m = re.search(r'<span class="tnum text-sm font-black[^>]*>\s*(\d+)\s*:\s*(\d+)\s*</span>', b, re.S)
         if not tm or not teams_m or not score_m:
@@ -58,8 +58,8 @@ def parse_cards(html, source_date):
 
         actual = outcome(sh, sa)
         out.append({
-            "date": tm.group(1)[:10],
-            "kickoff": tm.group(1)[11:],
+            "league": league,\n            "date": tm[:10],
+            "kickoff": tm[11:],
             "home": home,
             "away": away,
             "score": [sh, sa],
@@ -140,7 +140,7 @@ def main():
       "definition": f"{N}-match descriptive validation of historical jc-daily-report signals. Prediction fields are read only from the pre-result columns; final score is used only as evaluation target. No coefficient is fitted and V4 is not changed.",
       "source_repo": REPO,
       "source_url": "https://github.com/chinjiaqing/jc-daily-report",
-      "n_source_cards": len(all_rows),
+      "n_source_cards": len(all_rows),\n      "n_big5_cards": len(big5_rows),
       "n": len(rows),
       "direction_signal": {
           "n": len(exact),
