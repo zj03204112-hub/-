@@ -83,8 +83,11 @@ def build(con,mid,side,cut):
     pool=[x for x in feats if x[0] not in xi_ids]
     rep_attack=sum(x[5] for x in pool)/len(pool) if pool else 0.0
     rep_def=sum(x[6] for x in pool)/len(pool) if pool else 0.0
-    total_attack=sum((x[6]-rep_attack)*(x[5]/90.0) for x in xi)
-    total_def=sum((x[7]-rep_def)*(x[5]/90.0) for x in xi)
+    # x[5] is attack contribution and x[6] is defensive contribution.
+    # Weight each expected starter by their historical start probability rather
+    # than mixing the attack/defence columns with the wrong tuple offsets.
+    total_attack=sum((x[5]-rep_attack)*max(0.0,min(1.0,x[2])) for x in xi)
+    total_def=sum((x[6]-rep_def)*max(0.0,min(1.0,x[2])) for x in xi)
     # Conservative log-rate deltas. These are player-data effects only.
     ad=max(-0.20,min(0.20,0.035*total_attack))
     dd=max(-0.20,min(0.20,0.035*total_def))
