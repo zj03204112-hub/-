@@ -2,139 +2,28 @@
   "definition": "100-match descriptive validation of historical jc-daily-report signals. Prediction fields are read only from the pre-result columns; final score is used only as evaluation target. No coefficient is fitted and V4 is not changed.",
   "source_repo": "chinjiaqing/jc-daily-report",
   "source_url": "https://github.com/chinjiaqing/jc-daily-report",
-  "n_source_cards": 9,
-  "n": 9,
-  "euro_direction_signal": {
-    "n": 9,
-    "correct": 3,
-    "accuracy": 0.3333
+  "n_source_cards": 0,
+  "n": 0,
+  "direction_signal": {
+    "n": 0,
+    "correct": 0,
+    "accuracy": null,
+    "note": "The source cards currently expose mainly 主不败/客不败 double-chance language rather than a pure 1X2 主胜/平/客胜 field; accuracy is evaluated using the signal's stated coverage."
   },
-  "handicap_signal_cards": 7,
+  "over_under_signal": {
+    "n": 0,
+    "correct": null,
+    "accuracy": null,
+    "note": "No per-match O/U line or O/U side is exposed in the current daily HTML cards, so no O/U hit rate is inferred from final scores."
+  },
+  "handicap_signal_cards": 0,
   "handicap_pick_counts": {
-    "让主胜": 3,
-    "让平": 7,
+    "让主胜": 0,
+    "让平": 0,
     "让客胜": 0
   },
   "local_db_overlap": 0,
   "warning": "This is a parser/coverage validation first. It does not represent V4+source blended-model accuracy until the same matches are linked to V4 predictions under a pre-declared fusion rule.",
-  "sample": [
-    {
-      "date": "2026-08-05",
-      "kickoff": "08:30",
-      "home": "里莫",
-      "away": "桑托斯 巴西杯 2026-08-05 08:30",
-      "score": [
-        0,
-        1
-      ],
-      "actual": "A",
-      "euro_signal": "主胜",
-      "handicap_pick": "让平/让负"
-    },
-    {
-      "date": "2026-08-05",
-      "kickoff": "02:00",
-      "home": "奥林匹亚",
-      "away": "奈梅亨 欧冠 2026-08-05 02:00",
-      "score": [
-        0,
-        0
-      ],
-      "actual": "D",
-      "euro_signal": "客胜",
-      "handicap_pick": "让平/让负"
-    },
-    {
-      "date": "2026-08-05",
-      "kickoff": "02:00",
-      "home": "圣吉联合",
-      "away": "博德闪耀 欧冠 2026-08-05 02:00",
-      "score": [
-        3,
-        3
-      ],
-      "actual": "D",
-      "euro_signal": "客胜",
-      "handicap_pick": "让主胜/让平"
-    },
-    {
-      "date": "2026-08-05",
-      "kickoff": "02:00",
-      "home": "布斯巴达",
-      "away": "里昂 欧冠 2026-08-05 02:00",
-      "score": [
-        2,
-        1
-      ],
-      "actual": "H",
-      "euro_signal": "主胜",
-      "handicap_pick": "让主胜/让平"
-    },
-    {
-      "date": "2026-08-05",
-      "kickoff": "00:00",
-      "home": "米亚尔比",
-      "away": "布拉迪斯 欧冠 2026-08-05 00:00",
-      "score": [
-        1,
-        2
-      ],
-      "actual": "A",
-      "euro_signal": "平",
-      "handicap_pick": "让平/让负"
-    },
-    {
-      "date": "2026-08-04",
-      "kickoff": "08:00",
-      "home": "巴竞技",
-      "away": "维多利亚 巴西杯 2026-08-04 08:00",
-      "score": [
-        2,
-        0
-      ],
-      "actual": "H",
-      "euro_signal": "主胜",
-      "handicap_pick": ""
-    },
-    {
-      "date": "2026-08-04",
-      "kickoff": "01:00",
-      "home": "哈尔姆斯",
-      "away": "天狼星 瑞超 2026-08-04 01:00",
-      "score": [
-        0,
-        2
-      ],
-      "actual": "A",
-      "euro_signal": "客胜",
-      "handicap_pick": ""
-    },
-    {
-      "date": "2026-08-04",
-      "kickoff": "01:00",
-      "home": "佐加顿斯",
-      "away": "韦斯特罗 瑞超 2026-08-04 01:00",
-      "score": [
-        6,
-        0
-      ],
-      "actual": "H",
-      "euro_signal": "客胜",
-      "handicap_pick": "让平/让负"
-    },
-    {
-      "date": "2026-08-04",
-      "kickoff": "00:00",
-      "home": "塞伊奈",
-      "away": "赫尔辛基 芬超 2026-08-04 00:00",
-      "score": [
-        3,
-        0
-      ],
-      "actual": "H",
-      "euro_signal": "客胜",
-      "handicap_pick": "让主胜/让平"
-    }
-  ],
+  "sample": [],
   "matched": []
 }
