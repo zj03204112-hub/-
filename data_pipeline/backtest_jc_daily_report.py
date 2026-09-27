@@ -26,7 +26,7 @@ def parse_cards(html, source_date):
         row_text = [clean(x) for x in cells]
         tm = re.search(r"(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})", " ".join(row_text))
         teams_m = re.search(r"([^<]{1,40})\s+vs\s+([^<]{1,40})", cells[1], re.S)
-        score_m = re.search(r"<div[^>]*class="tnum text-base font-black[^>]*>\s*(\d+)\s*:\s*(\d+)\s*</div>", cells[7], re.S)
+        score_m = re.search(r'<div[^>]*class="tnum text-base font-black[^>]*>\s*(\d+)\s*:\s*(\d+)\s*</div>', cells[7], re.S)
         if not tm or not teams_m or not score_m:
             continue
         home = clean(teams_m.group(1))
