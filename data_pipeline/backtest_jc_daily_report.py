@@ -17,13 +17,13 @@ def outcome(h, a):
 def parse_cards(html, source_date):
     out = []
     # Current jc-daily-report pages use .match-card div blocks.
-    for b in re.findall(r'<div\\s+class="match-card[^"]*"[^>]*>(.*?)</div>\\s*</div>\\s*<div class="match-card', html, re.S):
+    for b in re.findall(r'<div\s+class="match-card[^"]*"[^>]*>(.*?)</div>\s*</div>\s*<div class="match-card', html, re.S):
         pass
-    blocks = re.findall(r'<div class="match-card[^"]*"[^>]*>(.*?)(?=\\n\\s*<div class="match-card|\\n</main>)', html, re.S)
+    blocks = re.findall(r'<div class="match-card[^"]*"[^>]*>(.*?)(?=\n\s*<div class="match-card|\n</main>)', html, re.S)
     for b in blocks:
-        tm = re.search(r'(\\d{4}-\\d{2}-\\d{2}\\s+\\d{2}:\\d{2})', b)
-        teams_m = re.search(r'<span class="text-\\[15px\\] font-bold[^>]*>\\s*(.*?)\\s*<span[^>]*>vs</span>\\s*(.*?)\\s*</span>', b, re.S)
-        score_m = re.search(r'<span class="tnum text-sm font-black[^>]*>\\s*(\\d+)\\s*:\\s*(\\d+)\\s*</span>', b, re.S)
+        tm = re.search(r'(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})', b)
+        teams_m = re.search(r'<span class="text-\[15px\] font-bold[^>]*>\s*(.*?)\s*<span[^>]*>vs</span>\s*(.*?)\s*</span>', b, re.S)
+        score_m = re.search(r'<span class="tnum text-sm font-black[^>]*>\s*(\d+)\s*:\s*(\d+)\s*</span>', b, re.S)
         if not tm or not teams_m or not score_m:
             continue
         home = clean(teams_m.group(1))
@@ -31,18 +31,18 @@ def parse_cards(html, source_date):
         sh, sa = int(score_m.group(1)), int(score_m.group(2))
         row_text = clean(b)
         # Only prediction text before the final score is used for signals.
-        pred_text = re.sub(r'\\b\\d+\\s*:\\s*\\d+\\b', ' ', row_text)
+        pred_text = re.sub(r'\b\d+\s*:\s*\d+\b', ' ', row_text)
         euro_signal = ""
         signal_type = ""
         if "主不败" in pred_text:
             euro_signal, signal_type = "主不败", "double_chance_home"
         elif "客不败" in pred_text:
             euro_signal, signal_type = "客不败", "double_chance_away"
-        elif re.search(r'\\b主胜\\b', pred_text):
+        elif re.search(r'\b主胜\b', pred_text):
             euro_signal, signal_type = "主胜", "home"
-        elif re.search(r'\\b客胜\\b', pred_text):
+        elif re.search(r'\b客胜\b', pred_text):
             euro_signal, signal_type = "客胜", "away"
-        elif re.search(r'\\b平\\b', pred_text):
+        elif re.search(r'\b平\b', pred_text):
             euro_signal, signal_type = "平", "draw"
 
         handicap_pick = ""
