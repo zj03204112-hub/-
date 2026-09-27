@@ -11,13 +11,40 @@ START = os.environ.get("LEAGUE_HOLDOUT_START", "2026-09-21")
 # Explicit team aliases observed in the repository. This is deliberately
 # separated from the 128-draw diagnostic and is never used for fitting.
 J1 = {
-    "長崎","Ｃ大阪","川崎Ｆ","鹿島","東京Ｖ","千葉","町田","横浜FM",
-    "福岡","水戸","清水","FC東京","Ｇ大阪","京都","広島"
+    "鹿島","鹿島アントラーズ","Kashima Antlers",
+    "水戸","水戸ホーリーホック","Mito Hollyhock",
+    "浦和","浦和レッズ","Urawa Reds",
+    "千葉","ジェフユナイテッド千葉","JEF United Chiba",
+    "柏","柏レイソル","Kashiwa Reysol",
+    "FC東京","ＦＣ東京","F.C.Tokyo","FC TOKYO",
+    "東京Ｖ","東京ヴェルディ","Tokyo Verdy",
+    "町田","ＦＣ町田ゼルビア","FC Machida Zelvia",
+    "川崎Ｆ","川崎フロンターレ","Kawasaki Frontale",
+    "横浜FM","横浜Ｆ・マリノス","Yokohama F･Marinos",
+    "清水","清水エスパルス","Shimizu S-Pulse",
+    "名古屋","名古屋グランパス","Nagoya Grampus",
+    "京都","京都サンガF.C.","Kyoto Sanga F.C.",
+    "Ｇ大阪","ガンバ大阪","Gamba Osaka",
+    "Ｃ大阪","セレッソ大阪","Cerezo Osaka",
+    "神戸","ヴィッセル神戸","Vissel Kobe",
+    "岡山","ファジアーノ岡山","Fagiano Okayama",
+    "広島","サンフレッチェ広島","Sanfrecce Hiroshima",
+    "福岡","アビスパ福岡","Avispa Fukuoka",
+    "長崎","Ｖ・ファーレン長崎","V-Varen Nagasaki"
 }
 K1 = {
-    "Gwangju FC","Jeonbuk Motors","Gangwon FC","FC Anyang",
-    "Daejeon Citizen","Incheon United","Gimcheon Sangmu FC",
-    "Ulsan Hyundai FC","FC Seoul","Pohang Steelers","Jeju United FC"
+    "서울","FC Seoul","FC서울",
+    "전북","Jeonbuk Motors","Jeonbuk Hyundai Motors",
+    "포항","Pohang Steelers",
+    "울산","Ulsan Hyundai FC","Ulsan Hyundai",
+    "강원","Gangwon FC",
+    "인천","Incheon United",
+    "안양","FC Anyang","Anyang",
+    "제주","Jeju United FC","Jeju United",
+    "대전","Daejeon Citizen","Daejeon Hana Citizen",
+    "부천","Bucheon FC 1995","Bucheon",
+    "김천","Gimcheon Sangmu FC","Gimcheon Sangmu",
+    "광주","Gwangju FC","Gwangju"
 }
 
 def bucket(team_h, team_a):
