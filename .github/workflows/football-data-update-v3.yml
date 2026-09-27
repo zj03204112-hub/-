@@ -228,7 +228,7 @@ jobs:
           set -e
           git config user.name "football-model-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add football_model_database.sqlite data/draw_cause_analysis_128.json data/draw_absence_retrospective_128.json data/player_backtest_500.json data/player_layer_calibration_500.json
+          git add football_model_database.sqlite data/draw_cause_analysis_128.json data/draw_absence_retrospective_128.json data/player_backtest_500.json data/player_layer_calibration_500.json data/j1_k1_independent_holdout.json
           if git diff --cached --quiet; then
             echo "No player database changes."
             exit 0
