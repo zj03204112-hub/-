@@ -212,7 +212,10 @@ jobs:
           git commit -m "auto: populate and verify player data"
           for attempt in 1 2 3; do
             git fetch origin main
-            if git rebase origin/main; then
+            # The runner may have generated tracked files that are not part of
+            # the player-data commit. Rebase refuses a dirty worktree, so use
+            # Git's built-in autostash to preserve those changes safely.
+            if git rebase --autostash origin/main; then
               if git push origin HEAD:main; then
                 echo "PLAYER_DATA_PUSH_OK attempt=$attempt"
                 exit 0
