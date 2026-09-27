@@ -195,6 +195,18 @@ jobs:
           print(json.dumps(d["summary"],ensure_ascii=False))
           PY
 
+      - name: Run independent J1 K League chronological holdout
+        env:
+          LEAGUE_HOLDOUT_START: "2026-09-21"
+          LEAGUE_HOLDOUT_OUT: "data/j1_k1_independent_holdout.json"
+        run: |
+          python data_pipeline/validate_j1_k1_holdout.py
+          python - <<'PY'
+          import json
+          d=json.load(open("data/j1_k1_independent_holdout.json",encoding="utf-8"))
+          print(json.dumps({k:v["summary"] for k,v in d["groups"].items()},ensure_ascii=False))
+          PY
+
       - name: Run 500-match player-layer backtest
         env:
           BACKTEST_N: "500"
