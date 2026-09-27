@@ -183,6 +183,13 @@ jobs:
           print(json.dumps(d["summary"],ensure_ascii=False))
           PY
 
+      - name: Backtest with jc-daily-report external signals (500)
+        env:
+          SITE_BACKTEST_N: "500"
+          SITE_BACKTEST_OUT: "data/jc_daily_report_backtest_500.json"
+        run: |
+          python data_pipeline/backtest_jc_daily_report.py
+
       - name: Retrospective absence evidence for 128 draws
         env:
           DRAW_ABSENCE_N: "128"
