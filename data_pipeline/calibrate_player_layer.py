@@ -89,12 +89,24 @@ def main():
         "evaluated_folds":len(scored)
     }
 
-    # Final production coefficient is selected using all older training data only.
+    # Production coefficient follows the strict rolling evidence first.
+    # Do not re-select on the full training block after seeing its outcomes:
+    # that can overturn a stable walk-forward choice through in-sample noise.
+    rolling_selected=[x["selected_coefficient"] for x in scored
+                       if x.get("selected_coefficient") is not None]
+    if rolling_selected:
+        from collections import Counter
+        freq=Counter(rolling_selected)
+        selected=max(freq, key=lambda x:(freq[x], -x))
+        selection_method="strict_rolling_consensus"
+    else:
+        final_candidates=[(c,evaluate(train,c)) for c in COEFFS]
+        final_best=max(final_candidates,key=lambda x:(x[1]["handicap_accuracy"],
+                                                       x[1]["one_x2_accuracy"],-x[0]))
+        selected=final_best[0]
+        selection_method="fallback_full_train"
     final_candidates=[(c,evaluate(train,c)) for c in COEFFS]
-    final_best=max(final_candidates,key=lambda x:(x[1]["handicap_accuracy"],
-                                                   x[1]["one_x2_accuracy"],-x[0]))
-    selected=final_best[0]
-    selected_train=final_best[1]
+    selected_train=next(m for c,m in final_candidates if c==selected)
     selected_holdout=evaluate(holdout,selected)
 
     result={
@@ -108,6 +120,7 @@ def main():
         "walk_forward":walk_forward_summary,
         "walk_forward_folds":fold_results,
         "selected_coefficient":selected,
+        "selection_method":selection_method,
         "selected_train":selected_train,
         "selected_holdout":selected_holdout
     }
