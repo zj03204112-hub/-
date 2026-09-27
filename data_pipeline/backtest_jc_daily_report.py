@@ -21,7 +21,9 @@ def parse_cards(html, source_date):
         pass
     blocks = re.findall(r'<div class="match-card[^"]*"[^>]*>(.*?)(?=\n\s*<div class="match-card|\n</main>)', html, re.S)
     for b in blocks:
-        league_m = re.search(r'<span class="font-bold">\s*([^<]+?)\s*</span>\s*<span class="font-mono">\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})', b, re.S)\n        tm = league_m.group(2) if league_m else None\n        league = clean(league_m.group(1)) if league_m else ""
+        league_m = re.search(r'<span class="font-bold">\s*([^<]+?)\s*</span>\s*<span class="font-mono">\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})', b, re.S)
+        tm = league_m.group(2) if league_m else None
+        league = clean(league_m.group(1)) if league_m else ""
         teams_m = re.search(r'<span class="text-\[15px\] font-bold[^>]*>\s*(.*?)\s*<span[^>]*>vs</span>\s*(.*?)\s*</span>', b, re.S)
         score_m = re.search(r'<span class="tnum text-sm font-black[^>]*>\s*(\d+)\s*:\s*(\d+)\s*</span>', b, re.S)
         if not tm or not teams_m or not score_m:
