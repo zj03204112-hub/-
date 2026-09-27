@@ -16,50 +16,59 @@ def outcome(h, a):
 
 def parse_cards(html, source_date):
     out = []
-    # Current jc-daily-report pages use table rows rather than the older match-card structure.
-    for b in re.findall(r"<tr\b[^>]*>(.*?)</tr>", html, re.S):
-        if "onclick=" not in b or " vs " not in b or "tnum" not in b:
-            continue
-        cells = re.findall(r"<td\b[^>]*>(.*?)</td>", b, re.S)
-        if len(cells) < 8:
-            continue
-        row_text = [clean(x) for x in cells]
-        tm = re.search(r"(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})", " ".join(row_text))
-        teams_cell = re.sub(r"<[^>]+>", " ", cells[1])
-        teams_cell = re.sub(r"\s+", " ", teams_cell).strip()
-        teams_m = re.search(r"(.{1,40}?)\s+vs\s+(.{1,40})\s*$", teams_cell, re.S)
-        score_m = re.search(r'<div[^>]*class="tnum text-base font-black[^>]*>\s*(\d+)\s*:\s*(\d+)\s*</div>', cells[7], re.S)
+    # Current jc-daily-report pages use .match-card div blocks.
+    for b in re.findall(r'<div\\s+class="match-card[^"]*"[^>]*>(.*?)</div>\\s*</div>\\s*<div class="match-card', html, re.S):
+        pass
+    blocks = re.findall(r'<div class="match-card[^"]*"[^>]*>(.*?)(?=\\n\\s*<div class="match-card|\\n</main>)', html, re.S)
+    for b in blocks:
+        tm = re.search(r'(\\d{4}-\\d{2}-\\d{2}\\s+\\d{2}:\\d{2})', b)
+        teams_m = re.search(r'<span class="text-\\[15px\\] font-bold[^>]*>\\s*(.*?)\\s*<span[^>]*>vs</span>\\s*(.*?)\\s*</span>', b, re.S)
+        score_m = re.search(r'<span class="tnum text-sm font-black[^>]*>\\s*(\\d+)\\s*:\\s*(\\d+)\\s*</span>', b, re.S)
         if not tm or not teams_m or not score_m:
             continue
         home = clean(teams_m.group(1))
         away = clean(teams_m.group(2))
-        # Remove handicap annotation from the home label, e.g. 塞伊奈(+1).
-        home = re.sub(r"\s*\([^)]*\)\s*$", "", home).strip()
         sh, sa = int(score_m.group(1)), int(score_m.group(2))
-
-        # Prediction-only fields: cells 0..6. Never read the final score/verification cells.
-        pred_text = " | ".join(row_text[:7])
+        row_text = clean(b)
+        # Only prediction text before the final score is used for signals.
+        pred_text = re.sub(r'\\b\\d+\\s*:\\s*\\d+\\b', ' ', row_text)
         euro_signal = ""
-        m = re.search(r"走势\s*(主胜|客胜|平)", pred_text)
-        if m:
-            euro_signal = m.group(1)
+        signal_type = ""
+        if "主不败" in pred_text:
+            euro_signal, signal_type = "主不败", "double_chance_home"
+        elif "客不败" in pred_text:
+            euro_signal, signal_type = "客不败", "double_chance_away"
+        elif re.search(r'\\b主胜\\b', pred_text):
+            euro_signal, signal_type = "主胜", "home"
+        elif re.search(r'\\b客胜\\b', pred_text):
+            euro_signal, signal_type = "客胜", "away"
+        elif re.search(r'\\b平\\b', pred_text):
+            euro_signal, signal_type = "平", "draw"
+
         handicap_pick = ""
-        m = re.search(r"买【([^】]+)】", pred_text)
+        m = re.search(r'买【([^】]+)】', pred_text)
         if m:
             handicap_pick = m.group(1)
 
-        # Use the actual kickoff shown on the card, not the page filename date.
-        kickoff = tm.group(1)
+        # The current repository HTML does not expose a per-match O/U line or
+        # an explicit O/U side in the match card. Keep these fields null rather
+        # than infer them from the final score.
+        ou_line = None
+        ou_pick = None
+
         actual = outcome(sh, sa)
         out.append({
-            "date": kickoff[:10],
-            "kickoff": kickoff[11:],
+            "date": tm.group(1)[:10],
+            "kickoff": tm.group(1)[11:],
             "home": home,
             "away": away,
             "score": [sh, sa],
             "actual": actual,
             "euro_signal": euro_signal,
-            "handicap_pick": handicap_pick
+            "signal_type": signal_type,
+            "handicap_pick": handicap_pick,
+            "ou_line": ou_line,
+            "ou_pick": ou_pick
         })
     return out
 
@@ -91,8 +100,19 @@ def main():
     all_rows = sorted(all_rows, key=lambda x: (x["date"], x["kickoff"]), reverse=True)
     rows = all_rows[:N]
 
-    exact = [r for r in rows if signal_set(r["euro_signal"])]
-    exact_correct = sum(next(iter(signal_set(r["euro_signal"]))) == r["actual"] for r in exact)
+    exact = [r for r in rows if r["euro_signal"]]
+    exact_correct = 0
+    for r in exact:
+        if r["signal_type"] == "home":
+            exact_correct += r["actual"] == "H"
+        elif r["signal_type"] == "away":
+            exact_correct += r["actual"] == "A"
+        elif r["signal_type"] == "draw":
+            exact_correct += r["actual"] == "D"
+        elif r["signal_type"] == "double_chance_home":
+            exact_correct += r["actual"] in ("H", "D")
+        elif r["signal_type"] == "double_chance_away":
+            exact_correct += r["actual"] in ("A", "D")
 
     # The source's explicit Asian-handicap recommendation is retained separately.
     handicap = [r for r in rows if r["handicap_pick"]]
@@ -122,10 +142,17 @@ def main():
       "source_url": "https://github.com/chinjiaqing/jc-daily-report",
       "n_source_cards": len(all_rows),
       "n": len(rows),
-      "euro_direction_signal": {
+      "direction_signal": {
           "n": len(exact),
           "correct": exact_correct,
-          "accuracy": round(exact_correct / len(exact), 4) if exact else None
+          "accuracy": round(exact_correct / len(exact), 4) if exact else None,
+          "note": "The source cards currently expose mainly 主不败/客不败 double-chance language rather than a pure 1X2 主胜/平/客胜 field; accuracy is evaluated using the signal's stated coverage."
+      },
+      "over_under_signal": {
+          "n": sum(r["ou_pick"] is not None for r in rows),
+          "correct": None,
+          "accuracy": None,
+          "note": "No per-match O/U line or O/U side is exposed in the current daily HTML cards, so no O/U hit rate is inferred from final scores."
       },
       "handicap_signal_cards": len(handicap),
       "handicap_pick_counts": {
