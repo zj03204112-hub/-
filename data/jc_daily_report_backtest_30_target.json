@@ -1,0 +1,30 @@
+{
+  "definition": "30-match descriptive validation of historical jc-daily-report signals. Prediction fields are read only from the pre-result columns; final score is used only as evaluation target. No coefficient is fitted and V4 is not changed.",
+  "source_repo": "chinjiaqing/jc-daily-report",
+  "source_url": "https://github.com/chinjiaqing/jc-daily-report",
+  "n_source_cards": 0,
+  "n_target_league_cards": 0,
+  "n": 0,
+  "direction_signal": {
+    "n": 0,
+    "correct": 0,
+    "accuracy": null,
+    "note": "The source cards currently expose mainly 主不败/客不败 double-chance language rather than a pure 1X2 主胜/平/客胜 field; accuracy is evaluated using the signal's stated coverage."
+  },
+  "over_under_signal": {
+    "n": 0,
+    "correct": null,
+    "accuracy": null,
+    "note": "No per-match O/U line or O/U side is exposed in the current daily HTML cards, so no O/U hit rate is inferred from final scores."
+  },
+  "handicap_signal_cards": 0,
+  "handicap_pick_counts": {
+    "让主胜": 0,
+    "让平": 0,
+    "让客胜": 0
+  },
+  "local_db_overlap": 0,
+  "warning": "This is a parser/coverage validation first. It does not represent V4+source blended-model accuracy until the same matches are linked to V4 predictions under a pre-declared fusion rule.",
+  "sample": [],
+  "matched": []
+}
