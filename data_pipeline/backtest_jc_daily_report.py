@@ -16,52 +16,51 @@ def outcome(h, a):
 
 def parse_cards(html, source_date):
     out = []
-    # Current jc-daily-report pages use .match-card div blocks.
-    for b in re.findall(r'<div\s+class="match-card[^"]*"[^>]*>(.*?)</div>\s*</div>\s*<div class="match-card', html, re.S):
-        pass
-    blocks = re.findall(r'<div class="match-card[^"]*"[^>]*>(.*?)(?=\\n\\s*<div class="match-card|\\n</main>)', html, re.S)
+    # Split on each match-card opening tag; nested divs make a normal non-greedy
+    # HTML regex unreliable for this page.
+    blocks = re.split(r'(?=<div class="match-card\\b)', html)
     for b in blocks:
-        league_m = re.search(r'<span class="font-bold">\s*([^<]+?)\s*</span>\s*<span class="font-mono">\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})', b, re.S)
+        if 'match-card' not in b:
+            continue
+        league_m = re.search(r'<span class="font-bold">\\s*([^<]+?)\\s*</span>\\s*<span class="font-mono">\\s*(\\d{4}-\\d{2}-\\d{2}\\s+\\d{2}:\\d{2})', b, re.S)
         tm = league_m.group(2) if league_m else None
         league = clean(league_m.group(1)) if league_m else ""
-        teams_m = re.search(r'<span class="text-\[15px\] font-bold[^>]*>\s*(.*?)\s*<span[^>]*>vs</span>\s*(.*?)\s*</span>', b, re.S)
-        score_m = re.search(r'<span class="tnum text-sm font-black[^>]*>\s*(\d+)\s*:\s*(\d+)\s*</span>', b, re.S)
+        teams_m = re.search(r'<span class="text-\\[15px\\] font-bold[^>]*>\\s*(.*?)\\s*<span[^>]*>vs</span>\\s*(.*?)\\s*</span>', b, re.S)
+        score_m = re.search(r'<span class="tnum text-sm font-black[^>]*>\\s*(\\d+)\\s*:\\s*(\\d+)\\s*</span>', b, re.S)
         if not tm or not teams_m or not score_m:
             continue
         home = clean(teams_m.group(1))
         away = clean(teams_m.group(2))
         sh, sa = int(score_m.group(1)), int(score_m.group(2))
         row_text = clean(b)
-        # Only prediction text before the final score is used for signals.
-        pred_text = re.sub(r'\b\d+\s*:\s*\d+\b', ' ', row_text)
         euro_signal = ""
         signal_type = ""
-        if "主不败" in pred_text:
+        # The source explicitly prints double-chance language such as
+        # “主不败” / “客不败”; evaluate those as stated, not as 1X2.
+        if "主不败" in row_text:
             euro_signal, signal_type = "主不败", "double_chance_home"
-        elif "客不败" in pred_text:
+        elif "客不败" in row_text:
             euro_signal, signal_type = "客不败", "double_chance_away"
-        elif re.search(r'\b主胜\b', pred_text):
+        elif re.search(r"主胜", row_text):
             euro_signal, signal_type = "主胜", "home"
-        elif re.search(r'\b客胜\b', pred_text):
+        elif re.search(r"客胜", row_text):
             euro_signal, signal_type = "客胜", "away"
-        elif re.search(r'\b平\b', pred_text):
+        elif re.search(r"(^|\\s)平($|\\s)", row_text):
             euro_signal, signal_type = "平", "draw"
 
         handicap_pick = ""
-        m = re.search(r'买【([^】]+)】', pred_text)
+        m = re.search(r"买【([^】]+)】", row_text)
         if m:
             handicap_pick = m.group(1)
 
-        # The current repository HTML does not expose a per-match O/U line or
-        # an explicit O/U side in the match card. Keep these fields null rather
-        # than infer them from the final score.
+        # Current cards do not expose an explicit per-match O/U line + side.
         ou_line = None
         ou_pick = None
 
         actual = outcome(sh, sa)
         out.append({
             "league": league,
-"date": tm[:10],
+            "date": tm[:10],
             "kickoff": tm[11:],
             "home": home,
             "away": away,
