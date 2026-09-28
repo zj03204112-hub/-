@@ -2,7 +2,7 @@ import json, os, re, sqlite3
 import requests
 
 DB = "football_model_database.sqlite"
-OUT = os.environ.get("SITE_BACKTEST_OUT", "data/jc_daily_report_backtest_30_big5.json")
+OUT = os.environ.get("SITE_BACKTEST_OUT", "data/jc_daily_report_backtest_30_target.json")
 N = int(os.environ.get("SITE_BACKTEST_N", "30"))
 REPO = "chinjiaqing/jc-daily-report"
 RAW = "https://raw.githubusercontent.com/chinjiaqing/jc-daily-report/main/"
@@ -19,9 +19,7 @@ def parse_cards(html, source_date):
     # Current jc-daily-report pages use .match-card div blocks.
     for b in re.findall(r'<div\s+class="match-card[^"]*"[^>]*>(.*?)</div>\s*</div>\s*<div class="match-card', html, re.S):
         pass
-    blocks = re.findall(r'<div class="match-card[^"]*"[^>]*>(.*?)(?=
-\s*<div class="match-card|
-</main>)', html, re.S)
+    blocks = re.findall(r'<div class="match-card[^"]*"[^>]*>(.*?)(?=\\n\\s*<div class="match-card|\\n</main>)', html, re.S)
     for b in blocks:
         league_m = re.search(r'<span class="font-bold">\s*([^<]+?)\s*</span>\s*<span class="font-mono">\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})', b, re.S)
         tm = league_m.group(2) if league_m else None
