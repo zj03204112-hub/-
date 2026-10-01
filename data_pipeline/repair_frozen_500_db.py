@@ -107,7 +107,8 @@ def recover_missing_frozen_rows(conn):
             cid=conn.execute("SELECT competition_id FROM competitions WHERE competition_code=?",(code,)).fetchone()
             if not cid: continue
             cid=cid[0]
-            sid=conn.execute("SELECT season_id FROM seasons WHERE competition_id=? ORDER BY season_id DESC LIMIT 1",(cid,)).fetchone()
+            label="2025/26" if code=="LALIGA" else "2026/27"
+            sid=conn.execute("SELECT season_id FROM seasons WHERE competition_id=? AND season_label=? ORDER BY season_id DESC LIMIT 1",(cid,label)).fetchone()
             if not sid: continue
             if conn.execute("SELECT 1 FROM matches WHERE competition_id=? AND substr(kickoff,1,10)=? LIMIT 1",(cid,d)).fetchone(): continue
             home=r["home"].strip(); away=r["away"].strip()
