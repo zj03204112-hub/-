@@ -108,3 +108,5 @@ print("DB_FINISHED_RESULTS", con.execute("SELECT COUNT(*) FROM matches m JOIN re
 print("DB_DATE_RANGE", con.execute("SELECT MIN(kickoff),MAX(kickoff) FROM matches WHERE status='finished'").fetchone())
 print("DB_COMPETITIONS", con.execute("SELECT c.competition_code,COUNT(*) FROM matches m JOIN competitions c ON c.competition_id=m.competition_id WHERE m.status='finished' GROUP BY c.competition_code ORDER BY c.competition_code").fetchall())
 print("DB_SAMPLE", con.execute("SELECT m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away,c.competition_code FROM matches m JOIN results r ON r.match_id=m.match_id JOIN competitions c ON c.competition_id=m.competition_id WHERE m.status='finished' ORDER BY m.kickoff LIMIT 5").fetchall())
+
+# repair-remap-trigger-2026-10-01
