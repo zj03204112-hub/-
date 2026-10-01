@@ -1,0 +1,34 @@
+name: Build fixed 500 V4 DB match mapping
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data_pipeline/build_v4_frozen_500_mapping.py"
+      - "model_validation/500_match_base_batch01.csv"
+      - "football_model_database.sqlite"
+      - "database/football_model_database.sql"
+      - ".github/workflows/build-v4-frozen-mapping.yml"
+permissions:
+  contents: write
+jobs:
+  mapping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build independent 500 to DB match_id mapping
+        run: python data_pipeline/build_v4_frozen_500_mapping.py
+      - name: Commit mapping table
+        run: |
+          git config user.name "football-model-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add model_validation/500_match_to_db_match_id_mapping.csv
+          git commit -m "validate: build fixed 500 to DB match_id mapping" || exit 0
+          git fetch origin main
+          git rebase --autostash origin/main
+          git push origin HEAD:main
