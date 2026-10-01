@@ -63,6 +63,7 @@ for x in db_rows:
     idx.setdefault(key,[]).append(x)
 
 out=[]
+used_match_ids=set()
 with open(CSV_PATH,encoding="utf-8-sig",newline="") as f:
     src=list(csv.DictReader(f))
 
@@ -71,18 +72,20 @@ for i,r in enumerate(src,1):
     code=LEAGUE_CODE.get(league)
     score=(int(r["home_score"]),int(r["away_score"]))
     key=(code,r["date"],team_key(r["home"]),team_key(r["away"]),score[0],score[1])
-    cand=idx.get(key,[])
+    cand=[x for x in idx.get(key,[]) if x[0] not in used_match_ids]
     date_team_pool=[x for x in db_rows if x[2]==code and x[4][:10]==r["date"] and team_key(x[5])==team_key(r["home"]) and team_key(x[6])==team_key(r["away"])]
     date_league_pool=[x for x in db_rows if x[2]==code and x[4][:10]==r["date"]]
     match_method="exact"
     if len(cand)!=1:
-        pool=[x for x in db_rows if x[2]==code and x[4][:10]==r["date"] and x[7]==score[0] and x[8]==score[1]]
+        pool=[x for x in db_rows if x[0] not in used_match_ids and x[2]==code and x[4][:10]==r["date"] and x[7]==score[0] and x[8]==score[1]]
         scored=sorted([(similarity(TEAM_ALIAS.get(r["home"],r["home"]),x[5])+similarity(TEAM_ALIAS.get(r["away"],r["away"]),x[6]),x) for x in pool], reverse=True, key=lambda z:z[0])
         if scored and scored[0][0] >= 1.25 and (len(scored)==1 or scored[0][0]-scored[1][0] >= 0.05):
             cand=[scored[0][1]]
             match_method="fuzzy_league_date_score_team"
     status="unique" if len(cand)==1 else "unresolved" if len(cand)==0 else "ambiguous"
     x=cand[0] if len(cand)==1 else [None, None, code, None, None, None, None, None, None]
+    if len(cand)==1:
+        used_match_ids.add(cand[0][0])
     out.append({
         "sample_row":i,"date":r["date"],"league":league,"competition_code":code,
         "home":r["home"],"away":r["away"],"home_score":score[0],"away_score":score[1],
@@ -109,4 +112,4 @@ print("DB_DATE_RANGE", con.execute("SELECT MIN(kickoff),MAX(kickoff) FROM matche
 print("DB_COMPETITIONS", con.execute("SELECT c.competition_code,COUNT(*) FROM matches m JOIN competitions c ON c.competition_id=m.competition_id WHERE m.status='finished' GROUP BY c.competition_code ORDER BY c.competition_code").fetchall())
 print("DB_SAMPLE", con.execute("SELECT m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away,c.competition_code FROM matches m JOIN results r ON r.match_id=m.match_id JOIN competitions c ON c.competition_id=m.competition_id WHERE m.status='finished' ORDER BY m.kickoff LIMIT 5").fetchall())
 
-# repair-remap-trigger-2026-10-01
+# strict-one-to-one-remap-2026-10-01
