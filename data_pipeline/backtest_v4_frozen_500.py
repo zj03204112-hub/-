@@ -31,6 +31,8 @@ def load_mapping():
     return m
 
 mapping=load_mapping()
+with open(CSV_PATH,encoding="utf-8-sig",newline="") as f:
+    src=list(csv.DictReader(f))
 match_rows=con.execute("""SELECT m.match_id,m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away
 FROM matches m JOIN results r ON r.match_id=m.match_id
 WHERE m.status='finished' AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL""").fetchall()
