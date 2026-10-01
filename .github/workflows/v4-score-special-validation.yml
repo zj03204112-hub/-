@@ -1,0 +1,37 @@
+name: V4 500 score special validation
+
+on:
+  push:
+    paths:
+      - "data_pipeline/validate_v4_500_score_special.py"
+      - "model_validation/500_match_V4_frozen_predictions.csv"
+      - "model_validation/500_match_base_batch01.csv"
+      - ".github/workflows/v4-score-special-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate 500 scores and handicaps
+        run: python data_pipeline/validate_v4_500_score_special.py
+      - name: Commit validation result
+        run: |
+          git config user.name "football-model-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add model_validation/500_match_V4_score_special_validation.csv model_validation/500_match_V4_score_special_validation.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "validate: V4 500 score and handicap special validation"
+          git fetch origin main
+          git rebase --autostash origin/main
+          git push origin HEAD:main
