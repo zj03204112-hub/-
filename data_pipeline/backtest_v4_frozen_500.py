@@ -24,33 +24,58 @@ con=sqlite3.connect(DB)
 rows=[]
 with open(CSV_PATH,encoding="utf-8-sig",newline="") as f:
     src=list(csv.DictReader(f))
-matches=con.execute("""SELECT m.match_id,m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away
+# Build an identity-safe candidate index. Frozen CSV is the source of truth.
+def norm_team(s):
+    s=(s or "").strip().lower()
+    for a,b in {"fc":"","cf":"","afc":"","sc":"","fk":"","ac":"","calcio":"","club":"","足球俱乐部":""}.items():
+        s=s.replace(a,b)
+    return "".join(ch for ch in s if ch.isalnum())
+
+def db_league_column(con):
+    cols=[r[1] for r in con.execute("PRAGMA table_info(matches)").fetchall()]
+    for c in ("league","league_name","competition","competition_name","tournament","competition_code"):
+        if c in cols: return c
+    return None
+
+league_col=db_league_column(con)
+select_league=f",m.{league_col}" if league_col else ",NULL"
+matches=con.execute(f"""SELECT m.match_id,m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away{select_league}
 FROM matches m JOIN results r ON r.match_id=m.match_id
 WHERE m.status='finished' AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL
 ORDER BY m.kickoff,m.match_id""").fetchall()
 
 idx={}
 for m in matches:
-    key=(m[1][:10],m[2].strip(),m[3].strip())
+    key=(str(m[6] or "").strip(),m[1][:10],norm_team(m[2]),norm_team(m[3]),m[4],m[5])
     idx.setdefault(key,[]).append(m)
 
 for r in src:
     key=(r["date"],r["home"].strip(),r["away"].strip())
-    cand=idx.get(key,[])
-    # The frozen CSV uses Chinese display names while the model DB may use a
-    # different canonical naming convention. Prefer exact name matching, then
-    # fall back to an identity-safe date + final-score mapping.
+    score=(int(r["home_score"]),int(r["away_score"]))
+    league=r["league"].strip()
+    cand=idx.get((league,r["date"],norm_team(r["home"]),norm_team(r["away"]),score[0],score[1]),[])
+    if not cand:
+        aliases={
+            "英超":{"英超","EPL","Premier League"},
+            "西甲":{"西甲","La Liga","LaLiga"},
+            "德甲":{"德甲","Bundesliga"},
+            "意甲":{"意甲","Serie A"},
+            "法甲":{"法甲","Ligue 1"},
+            "韩职":{"韩职","K League 1","K1"},
+            "日职J1":{"日职J1","J1 League","J1"}
+        }
+        allowed=aliases.get(league,{league})
+        cand=[m for m in matches
+              if str(m[6] or "").strip() in allowed
+              and m[1][:10]==r["date"]
+              and norm_team(m[2])==norm_team(r["home"])
+              and norm_team(m[3])==norm_team(r["away"])
+              and m[4]==score[0] and m[5]==score[1]]
     if len(cand)!=1:
-        score=int(r["home_score"]),int(r["away_score"])
-        fallback=[m for m in matches
-                  if m[1][:10]==r["date"] and m[4]==score[0] and m[5]==score[1]]
-        if len(fallback)==1:
-            cand=fallback
-        else:
-            raise RuntimeError(
-                f"DB_MATCH_MAPPING_FAILED {key} candidates={len(cand)} "
-                f"score_fallback={len(fallback)}"
-            )
+        raise RuntimeError(
+            f"DB_MATCH_MAPPING_FAILED {key} candidates={len(cand)} "
+            f"league_column={league_col} score={score}"
+        )
     match=cand[0]
     p,actual=cm.run_model(con,"v4",match)
     lh,la=cm.model_lambdas(con,"v4",match)
@@ -78,4 +103,4 @@ if len(rows)!=500 or len({(x["date"],x["league"],x["home"],x["away"]) for x in r
 fields=list(rows[0].keys())
 with open(OUT,"w",encoding="utf-8",newline="") as f:
     w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(rows)
-print(json.dumps({"rows":len(rows),"output":OUT,"mapping":"500/500","model":"V4 frozen current code","t12h":True},ensure_ascii=False))
+print(json.dumps({"rows":len(rows),"output":OUT,"mapping":"league+date+normalized_teams+final_score","model":"V4 frozen current code","t12h":True},ensure_ascii=False))
