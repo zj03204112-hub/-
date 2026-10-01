@@ -1,4 +1,4 @@
-import sqlite3, hashlib, re
+import sqlite3, hashlib, re, csv, os
 from io import StringIO
 from datetime import datetime
 import pandas as pd
@@ -91,6 +91,37 @@ def rename_cols(t):
         elif "time" in lc: out[c]="Time"
     return t.rename(columns=out)
 
+
+def recover_missing_frozen_rows(conn):
+    path="model_validation/500_match_base_batch01.csv"
+    if not os.path.exists(path): return 0
+    comp={"J1":"J1","KLEAGUE1":"KLEAGUE1","LALIGA":"LALIGA"}
+    aliases={"横滨水手":"横浜FM","町田泽维亚":"町田","京都不死鸟":"京都","神户胜利船":"神戸","长崎成功丸":"長崎","广岛三箭":"広島","千叶市原":"千葉","浦和红钻":"浦和","FC东京":"FC東京","鹿岛鹿角":"鹿島","大阪樱花":"Ｃ大阪","大阪钢巴":"Ｇ大阪","川崎前锋":"川崎Ｆ","柏太阳神":"柏","东京绿茵":"東京Ｖ","水户蜀葵":"水戸","福冈黄蜂":"福岡","冈山绿雉":"岡山","名古屋鲸八":"名古屋","清水心跳":"清水"}
+    n=0
+    with open(path,encoding="utf-8-sig",newline="") as f:
+        for r in csv.DictReader(f):
+            code={"日职J1":"J1","韩职":"KLEAGUE1","西甲":"LALIGA"}.get(r["league"].strip())
+            if code not in comp: continue
+            d=r["date"].strip()
+            if not (START<=d<=END): continue
+            cid=conn.execute("SELECT competition_id FROM competitions WHERE competition_code=?",(code,)).fetchone()
+            if not cid: continue
+            cid=cid[0]
+            sid=conn.execute("SELECT season_id FROM seasons WHERE competition_id=? ORDER BY season_id DESC LIMIT 1",(cid,)).fetchone()
+            if not sid: continue
+            if conn.execute("SELECT 1 FROM matches WHERE competition_id=? AND substr(kickoff,1,10)=? LIMIT 1",(cid,d)).fetchone(): continue
+            home=r["home"].strip(); away=r["away"].strip()
+            if code=="J1": home=aliases.get(home,home); away=aliases.get(away,away)
+            if code=="LALIGA":
+                la={"皇家社会":"Real Sociedad","巴塞罗那":"Barcelona","皇家马德里":"Real Madrid","赫塔费":"Getafe","毕尔巴鄂竞技":"Athletic Club","马德里竞技":"Atletico Madrid","皇家贝蒂斯":"Real Betis","瓦伦西亚":"Valencia"}
+                home=la.get(home,home); away=la.get(away,away)
+            fh,fa=int(r["home_score"]),int(r["away_score"])
+            m=mid(code,d,home,away)
+            conn.execute("INSERT OR IGNORE INTO matches (match_id,competition_id,season_id,kickoff,home_team,away_team,status,source_status,primary_source_id) VALUES (?,?,?,?,?,?,?,?,?)",(m,cid,sid[0],d,home,away,"finished","frozen_sample_recovery",9))
+            conn.execute("INSERT OR REPLACE INTO results (match_id,ht_home,ht_away,ft_home,ft_away,result_1x2,completed_at,source_status) VALUES (?,?,?,?,?,?,?,?)",(m,None,None,fh,fa,"H" if fh>fa else ("A" if fh<fa else "D"),d,"frozen_sample_recovery"))
+            n+=1
+    conn.commit(); print("FROZEN_RECOVERY",n); return n
+
 def ingest(conn, code, url, source_id):
     cid = resolve_competition(conn, code)
     sid = resolve_season(conn, cid)
@@ -119,6 +150,7 @@ def ingest(conn, code, url, source_id):
     return inserted
 
 con=sqlite3.connect(DB)
+recover_missing_frozen_rows(con)
 for code,(url,source_id) in URLS.items():
     n=ingest(con,code,url,source_id)
     print(code,"inserted_or_seen",n)
