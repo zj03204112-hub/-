@@ -15,7 +15,7 @@ VIPC="https://www.vipc.cn/results/jczq/{}"
 ALIASES={"曼彻斯特联":"曼联","曼彻斯特城":"曼城","托特纳姆热刺":"热刺","莱比锡红牛":"RB莱比锡","云达不来梅":"云达不莱梅","埃尔沃斯贝格":"埃弗斯贝格","巴黎圣日尔曼":"巴黎圣日耳曼","巴伦西亚":"瓦伦西亚","东京FC":"FC东京","清水心跳":"清水鼓动","大田市民":"大田","全北现代":"全北","广岛三箭":"广岛","神户胜利船":"神户","京都不死鸟":"京都","长崎成功丸":"长崎","水户蜀葵":"水户","千叶市原":"千叶","冈山绿雉":"冈山","名古屋鲸八":"名古屋","川崎前锋":"川崎","浦和红钻":"浦和","福冈黄蜂":"福冈"}
 
 def norm(s):
-    s=re.sub(r"[\\s\\u3000\\-·.'’]", "", str(s or "")).lower()
+    s=re.sub(r"[\s\u3000\-·.'’]", "", str(s or "")).lower()
     return ALIASES.get(s,s)
 
 def cls(h,a): return "胜" if h>a else ("平" if h==a else "负")
@@ -35,7 +35,7 @@ def fetch(url,params=None):
 
 def parse_score(s):
     if not s: return None
-    m=re.search(r"(\\d+)\\s*[:\\-]\\s*(\\d+)",str(s))
+    m=re.search(r"(\d+)\s*[:\-]\s*(\d+)",str(s))
     return (int(m.group(1)),int(m.group(2))) if m else None
 
 def parse_sporttery(text):
@@ -64,11 +64,11 @@ def parse_sporttery(text):
     return rows
 
 def parse_vipc(html):
-    rows=[]; lines=[re.sub(r"\\s+"," ",x).strip() for x in html.splitlines() if x.strip()]
+    rows=[]; lines=[re.sub(r"\s+"," ",x).strip() for x in html.splitlines() if x.strip()]
     for i,line in enumerate(lines):
-        m=re.search(r"^(.*?)\\s+\\d{3}\\s+\\d{2}-\\d{2}\\s+\\d{2}:\\d{2}:\\d{2}\\s*\\|\\s*(.*?)vs(.*?)\\s+(\\d+)\\s*:\\s*(\\d+)",line)
+        m=re.search(r"^(.*?)\s+\d{3}\s+\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}\s*\|\s*(.*?)vs(.*?)\s+(\d+)\s*:\s*(\d+)",line)
         if not m or i+1>=len(lines): continue
-        hm=re.search(r"([胜平负])\\s*\\|\\s*([胜平负])\\s*\\(([+-]?\\d+)\\)",lines[i+1])
+        hm=re.search(r"([胜平负])\s*\|\s*([胜平负])\s*\(([+-]?\d+)\)",lines[i+1])
         if hm: rows.append({"home":m.group(2).strip(),"away":m.group(3).strip(),"home_score":int(m.group(4)),"away_score":int(m.group(5)),"handicap":int(hm.group(3)),"actual_result_cn":hm.group(1),"handicap_result_cn":hm.group(2)})
     return rows
 
