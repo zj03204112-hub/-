@@ -15,6 +15,18 @@ LEAGUE_CODE = {
     "日职J1":"J1", "J1 League":"J1", "J1":"J1",
 }
 
+TEAM_ALIAS = {
+"切尔西":"Chelsea","布莱顿":"Brighton & Hove Albion","桑德兰":"Sunderland","富勒姆":"Fulham","阿斯顿维拉":"Aston Villa","阿森纳":"Arsenal","曼联":"Manchester United","伊普斯维奇":"Ipswich Town","利物浦":"Liverpool","诺丁汉森林":"Nottingham Forest","托特纳姆热刺":"Tottenham Hotspur","热刺":"Tottenham Hotspur","纽卡斯尔联":"Newcastle United","伯恩茅斯":"AFC Bournemouth","埃弗顿":"Everton","水晶宫":"Crystal Palace","曼城":"Manchester City","布伦特福德":"Brentford","考文垂":"Coventry City","西汉姆联":"West Ham United","伯恩利":"Burnley","利兹联":"Leeds United","狼队":"Wolverhampton Wanderers","赫尔城":"Hull City",
+"RB莱比锡":"RB Leipzig","云达不来梅":"Werder Bremen","云达不莱梅":"Werder Bremen","勒沃库森":"Bayer Leverkusen","圣保利":"St Pauli","埃尔沃斯贝格":"SV Elversberg","多特蒙德":"Borussia Dortmund","奥格斯堡":"Augsburg","帕德博恩":"Paderborn","弗赖堡":"SC Freiburg","拜仁慕尼黑":"Bayern Munich","斯图加特":"VfB Stuttgart","柏林联合":"Union Berlin","汉堡":"Hamburger SV","沃尔夫斯堡":"Wolfsburg","沙尔克04":"Schalke 04","法兰克福":"Eintracht Frankfurt","海登海姆":"Heidenheim","科隆":"FC Cologne","美因茨":"Mainz 05","门兴格拉德巴赫":"Borussia Mönchengladbach","霍芬海姆":"TSG Hoffenheim",
+"AC米兰":"AC Milan","乌迪内斯":"Udinese","亚特兰大":"Atalanta","佛罗伦萨":"Fiorentina","博洛尼亚":"Bologna","卡利亚里":"Cagliari","国际米兰":"Inter Milan","威尼斯":"Venezia","尤文图斯":"Juventus","帕尔马":"Parma","弗罗西诺内":"Frosinone","拉齐奥":"Lazio","热那亚":"Genoa","科莫":"Como","罗马":"Roma","莱切":"Lecce","萨索洛":"Sassuolo","蒙扎":"Monza","那不勒斯":"Napoli","都灵":"Torino",
+"勒芒":"Le Mans","勒阿弗尔":"Le Havre","南特":"Nantes","图卢兹":"Toulouse","尼斯":"Nice","巴黎FC":"Paris FC","巴黎圣日耳曼":"Paris Saint-Germain","布雷斯特":"Brest","摩纳哥":"Monaco","斯特拉斯堡":"Strasbourg","昂热":"Angers","朗斯":"Lens","欧塞尔":"Auxerre","洛里昂":"Lorient","特鲁瓦":"Troyes","里尔":"Lille","里昂":"Lyon","雷恩":"Rennes","马赛":"Marseille",
+"埃尔切":"Elche","塞尔塔":"Celta Vigo","塞维利亚":"Sevilla","奥萨苏纳":"Osasuna","巴列卡诺":"Rayo Vallecano","巴塞罗那":"Barcelona","拉科鲁尼亚":"Deportivo La Coruna","桑坦德竞技":"Racing Santander","比利亚雷亚尔":"Villarreal","毕尔巴鄂竞技":"Athletic Club","瓦伦西亚":"Valencia","皇家奥维耶多":"Real Oviedo","皇家社会":"Real Sociedad","皇家贝蒂斯":"Real Betis","皇家马德里":"Real Madrid","莱万特":"Levante","西班牙人":"Espanyol","赫塔费":"Getafe","赫罗纳":"Girona","阿拉维斯":"Deportivo Alaves","马德里竞技":"Atletico Madrid","马拉加":"Malaga","马略卡":"Mallorca",
+"강원":"Gangwon FC","광주":"Gwangju FC","김천":"Gimcheon Sangmu","대전":"Daejeon Hana Citizen","부천":"Bucheon FC 1995","서울":"FC Seoul","안양":"FC Anyang","울산":"Ulsan HD","인천":"Incheon United","전북":"Jeonbuk Hyundai Motors","제주":"Jeju SK","포항":"Pohang Steelers",
+"FC东京":"FC Tokyo","东京绿茵":"Tokyo Verdy","京都不死鸟":"Kyoto Sanga","冈山绿雉":"Fagiano Okayama","千叶市原":"JEF United Chiba","名古屋鲸八":"Nagoya Grampus","大阪樱花":"Cerezo Osaka","大阪钢巴":"Gamba Osaka","川崎前锋":"Kawasaki Frontale","广岛三箭":"Sanfrecce Hiroshima","柏太阳神":"Kashiwa Reysol","横滨水手":"Yokohama F. Marinos","水户蜀葵":"Mito HollyHock","浦和红钻":"Urawa Reds","清水心跳":"Shimizu S-Pulse","町田泽维亚":"FC Machida Zelvia","神户胜利船":"Vissel Kobe","福冈黄蜂":"Avispa Fukuoka","长崎成功丸":"V-Varen Nagasaki","鹿岛鹿角":"Kashima Antlers"
+}
+def team_key(s):
+    return norm_team(TEAM_ALIAS.get((s or "").strip(), s))
+
 def norm_team(s):
     s=(s or "").strip().lower()
     for token in ("football club","footballclub","fc","cf","afc","sc","fk","ac","calcio","club","足球俱乐部"):
@@ -42,7 +54,7 @@ WHERE m.status='finished'
 
 idx={}
 for x in db_rows:
-    key=(x[2],x[4][:10],norm_team(x[5]),norm_team(x[6]),x[7],x[8])
+    key=(x[2],x[4][:10],team_key(x[5]),team_key(x[6]),x[7],x[8])
     idx.setdefault(key,[]).append(x)
 
 out=[]
@@ -53,7 +65,7 @@ for i,r in enumerate(src,1):
     league=r["league"].strip()
     code=LEAGUE_CODE.get(league)
     score=(int(r["home_score"]),int(r["away_score"]))
-    key=(code,r["date"],norm_team(r["home"]),norm_team(r["away"]),score[0],score[1])
+    key=(code,r["date"],team_key(r["home"]),team_key(r["away"]),score[0],score[1])
     cand=idx.get(key,[])
     status="unique" if len(cand)==1 else "unresolved" if len(cand)==0 else "ambiguous"
     x=cand[0] if len(cand)==1 else [None, None, code, None, None, None, None, None, None]
