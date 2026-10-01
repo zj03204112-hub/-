@@ -37,8 +37,20 @@ for m in matches:
 for r in src:
     key=(r["date"],r["home"].strip(),r["away"].strip())
     cand=idx.get(key,[])
+    # The frozen CSV uses Chinese display names while the model DB may use a
+    # different canonical naming convention. Prefer exact name matching, then
+    # fall back to an identity-safe date + final-score mapping.
     if len(cand)!=1:
-        raise RuntimeError(f"DB_MATCH_MAPPING_FAILED {key} candidates={len(cand)}")
+        score=int(r["home_score"]),int(r["away_score"])
+        fallback=[m for m in matches
+                  if m[1][:10]==r["date"] and m[4]==score[0] and m[5]==score[1]]
+        if len(fallback)==1:
+            cand=fallback
+        else:
+            raise RuntimeError(
+                f"DB_MATCH_MAPPING_FAILED {key} candidates={len(cand)} "
+                f"score_fallback={len(fallback)}"
+            )
     match=cand[0]
     p,actual=cm.run_model(con,"v4",match)
     lh,la=cm.model_lambdas(con,"v4",match)
