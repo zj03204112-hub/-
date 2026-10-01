@@ -8,9 +8,29 @@ DB = "football_model_database.sqlite"
 START, END = "2026-01-01", "2026-09-30"
 
 URLS = {
-    "J1": ("https://www.matchesio.com/competition/j1-league/", 7, 4),
-    "KLEAGUE1": ("https://www.matchesio.com/competition/k-league/", 6, 6),
+    "J1": ("https://www.matchesio.com/competition/j1-league/", 4),
+    "KLEAGUE1": ("https://www.matchesio.com/competition/k-league/", 6),
 }
+
+COMP_CODE_ALIASES = {"J1": "J1", "KLEAGUE1": "KLEAGUE1"}
+
+def resolve_competition(conn, code):
+    rows = conn.execute("SELECT competition_id, competition_code, competition_name FROM competitions").fetchall()
+    target = COMP_CODE_ALIASES[code]
+    for cid, ccode, cname in rows:
+        if str(ccode).strip().upper() == target:
+            return cid
+    raise RuntimeError(f"COMPETITION_NOT_FOUND code={target} rows={rows}")
+
+def resolve_season(conn, competition_id):
+    row = conn.execute("SELECT season_id FROM seasons WHERE competition_id=? AND season_label=?", (competition_id, "2026/27")).fetchone()
+    if row:
+        return row[0]
+    starts, ends = "2026-08-01", "2027-07-31"
+    sid = conn.execute("SELECT COALESCE(MAX(season_id),0)+1 FROM seasons").fetchone()[0]
+    conn.execute("INSERT INTO seasons(season_id,competition_id,season_label,start_date,end_date) VALUES(?,?,?,?,?)", (sid, competition_id, "2026/27", starts, ends))
+    conn.commit()
+    return sid
 
 ALIASES = {
     "J1": {
@@ -71,7 +91,9 @@ def rename_cols(t):
         elif "time" in lc: out[c]="Time"
     return t.rename(columns=out)
 
-def ingest(conn, code, url, cid, source_id):
+def ingest(conn, code, url, source_id):
+    cid = resolve_competition(conn, code)
+    sid = resolve_season(conn, cid)
     t=rename_cols(fetch_table(url))
     need={"Date","Home","Away","Score"}
     if not need.issubset(t.columns):
@@ -88,7 +110,7 @@ def ingest(conn, code, url, cid, source_id):
         m=mid(code,d,h,a)
         conn.execute("""INSERT OR IGNORE INTO matches
             (match_id,competition_id,season_id,kickoff,home_team,away_team,status,source_status,primary_source_id)
-            VALUES (?,?,?,?,?,?,?,?,?)""",(m,cid,11 if code=="KLEAGUE1" else 12,kickoff,h,a,"finished","verified_external",source_id))
+            VALUES (?,?,?,?,?,?,?,?,?)""",(m,cid,sid,kickoff,h,a,"finished","verified_external",source_id))
         conn.execute("""INSERT OR REPLACE INTO results
             (match_id,ht_home,ht_away,ft_home,ft_away,result_1x2,completed_at,source_status)
             VALUES (?,?,?,?,?,?,?,?)""",(m,None,None,fh,fa,"H" if fh>fa else ("A" if fh<fa else "D"),d,"verified_external"))
@@ -97,9 +119,9 @@ def ingest(conn, code, url, cid, source_id):
     return inserted
 
 con=sqlite3.connect(DB)
-for code,(url,cid,source_id) in URLS.items():
-    n=ingest(con,code,url,cid,source_id)
+for code,(url,source_id) in URLS.items():
+    n=ingest(con,code,url,source_id)
     print(code,"inserted_or_seen",n)
 con.close()
 
-# Frozen-500 repair run marker: 2026-10-01.
+# Frozen-500 repair run marker: competition/season IDs resolved from DB schema; 2026-10-01.
