@@ -101,3 +101,5 @@ for code,(url,cid,source_id) in URLS.items():
     n=ingest(con,code,url,cid,source_id)
     print(code,"inserted_or_seen",n)
 con.close()
+
+# Frozen-500 repair run marker: 2026-10-01.
