@@ -77,9 +77,12 @@ def read_csv(p):
     with p.open("r",encoding="utf-8-sig",newline="") as f: return list(csv.DictReader(f))
 def find(rows,s):
     h,a=norm(s["home"]),norm(s["away"]); hs,aa=int(s["home_score"]),int(s["away_score"])
+    target=s["date"]
+    q=[x for x in rows if str(x.get("match_date",""))[:10]==target and norm(x["home"])==h and norm(x["away"])==a and x["home_score"]==hs and x["away_score"]==aa]
+    if len(q)==1:return q[0]
     q=[x for x in rows if norm(x["home"])==h and norm(x["away"])==a and x["home_score"]==hs and x["away_score"]==aa]
     if len(q)==1:return q[0]
-    q=[x for x in rows if norm(x["home"])==h and norm(x["away"])==a]
+    q=[x for x in rows if str(x.get("match_date",""))[:10]==target and norm(x["home"])==h and norm(x["away"])==a]
     return q[0] if len(q)==1 else None
 
 def main():
@@ -89,8 +92,12 @@ def main():
     for i,d in enumerate(dates,1):
         rows=[]
         try:
-            rows=parse_sporttery(fetch(SPORTTERY,{"startDate":d,"endDate":d}))
-            source["Sporttery"]+=len(rows); print(f"[{i}/{len(dates)}] {d}: Sporttery {len(rows)}")
+            from datetime import datetime,timedelta
+            dt=datetime.strptime(d,"%Y-%m-%d").date()
+            begin=(dt-timedelta(days=1)).isoformat()
+            end=(dt+timedelta(days=1)).isoformat()
+            rows=parse_sporttery(fetch(SPORTTERY,{"matchPage":"1","matchBeginDate":begin,"matchEndDate":end,"leagueId":"","pageSize":"200","pageNo":"1","isFix":"0","pcOrWap":"1"}))
+            source["Sporttery"]+=len(rows); print(f"[{i}/{len(dates)}] {d}: Sporttery {len(rows)} (query {begin}~{end})")
         except Exception as e:
             errors.append(f"Sporttery {d}: {e}"); print(f"[{i}/{len(dates)}] {d}: Sporttery ERROR {e}")
         if not rows:
