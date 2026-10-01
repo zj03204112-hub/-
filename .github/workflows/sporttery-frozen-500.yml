@@ -1,0 +1,28 @@
+name: Sporttery frozen 500 matchId and hhad coverage
+
+on:
+  push:
+    paths:
+      - "data_pipeline/validate_sporttery_frozen_500.py"
+      - "model_validation/500_match_to_db_match_id_mapping.csv"
+      - ".github/workflows/sporttery-frozen-500.yml"
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install requests
+      - run: python data_pipeline/validate_sporttery_frozen_500.py
+      - name: Commit mapping and coverage report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/500_match_sporttery_matchid_mapping.csv model_validation/500_match_sporttery_odds_coverage.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: map frozen 500 matches to Sporttery and check hhad"
+          git push
