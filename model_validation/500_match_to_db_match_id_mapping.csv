@@ -105,7 +105,7 @@ sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_
 104,2026-02-08,西甲,LALIGA,塞维利亚,赫罗纳,1,1,unique,1,1,1-1:9aac803d030fb1154b8f,5,Alaves-Getafe 0-2;Ath Bilbao-Levante 4-2;Sevilla-Girona 1-1;Ath Madrid-Betis 0-1;Valencia-Real Madrid 0-2,exact,9aac803d030fb1154b8f,2026-02-08T15:15,Sevilla,Girona,1,1
 105,2026-02-13,西甲,LALIGA,埃尔切,奥萨苏纳,0,0,unique,1,1,0-0:fe874a09f5441046a567,1,Elche-Osasuna 0-0,exact,fe874a09f5441046a567,2026-02-13T20:00,Elche,Osasuna,0,0
 106,2026-02-14,西甲,LALIGA,西班牙人,塞尔塔,2,2,unique,1,0,,4,Espanol-Celta 2-2;Getafe-Villarreal 2-1;Sevilla-Alaves 1-1;Real Madrid-Sociedad 4-1,fuzzy_league_date_score_team,9e10881b116fa4fc37ba,2026-02-14T13:00,Espanol,Celta,2,2
-107,2026-02-15,西甲,LALIGA,皇家奥维耶多,毕尔巴鄂竞技,1,2,unresolved,0,0,,4,Oviedo-Ath Bilbao 1-2;Vallecano-Ath Madrid 3-0;Levante-Valencia 0-2;Mallorca-Betis 1-2,exact,,,,,,
+107,2026-02-15,西甲,LALIGA,皇家奥维耶多,毕尔巴鄂竞技,1,2,unique,1,0,,4,Oviedo-Ath Bilbao 1-2;Vallecano-Ath Madrid 3-0;Levante-Valencia 0-2;Mallorca-Betis 1-2,fuzzy_league_date_score_team,95d8166f443c6fc0b50e,2026-02-15T13:00,Oviedo,Ath Bilbao,1,2
 108,2026-02-15,西甲,LALIGA,莱万特,瓦伦西亚,0,2,unique,1,1,0-2:ae6f50136ecb1148c4f0,4,Oviedo-Ath Bilbao 1-2;Vallecano-Ath Madrid 3-0;Levante-Valencia 0-2;Mallorca-Betis 1-2,exact,ae6f50136ecb1148c4f0,2026-02-15T17:30,Levante,Valencia,0,2
 109,2026-02-15,西甲,LALIGA,马略卡,皇家贝蒂斯,1,2,unique,1,0,,4,Oviedo-Ath Bilbao 1-2;Vallecano-Ath Madrid 3-0;Levante-Valencia 0-2;Mallorca-Betis 1-2,fuzzy_league_date_score_team,1d4f38ca39c460713a59,2026-02-15T20:00,Mallorca,Betis,1,2
 110,2026-02-20,西甲,LALIGA,毕尔巴鄂竞技,埃尔切,2,1,unique,1,0,,1,Ath Bilbao-Elche 2-1,fuzzy_league_date_score_team,afbd2412d80b49d0bfa9,2026-02-20T20:00,Ath Bilbao,Elche,2,1
@@ -148,7 +148,7 @@ sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_
 147,2026-03-21,西甲,LALIGA,塞维利亚,瓦伦西亚,0,2,unique,1,1,0-2:5c772c3833253ca4319e,5,Elche-Mallorca 2-1;Espanol-Getafe 1-2;Levante-Oviedo 4-2;Osasuna-Girona 1-0;Sevilla-Valencia 0-2,exact,5c772c3833253ca4319e,2026-03-21T20:00,Sevilla,Valencia,0,2
 148,2026-03-22,西甲,LALIGA,巴塞罗那,巴列卡诺,1,0,unique,1,0,,4,Barcelona-Vallecano 1-0;Celta-Alaves 3-4;Ath Bilbao-Betis 2-1;Real Madrid-Ath Madrid 3-2,fuzzy_league_date_score_team,fb3cb941926e3411a2b0,2026-03-22T13:00,Barcelona,Vallecano,1,0
 149,2026-03-22,西甲,LALIGA,塞尔塔,阿拉维斯,3,4,unique,1,0,,4,Barcelona-Vallecano 1-0;Celta-Alaves 3-4;Ath Bilbao-Betis 2-1;Real Madrid-Ath Madrid 3-2,fuzzy_league_date_score_team,d9f873aedf804373b59b,2026-03-22T15:15,Celta,Alaves,3,4
-150,2026-03-22,西甲,LALIGA,毕尔巴鄂竞技,皇家贝蒂斯,2,1,unresolved,0,0,,4,Barcelona-Vallecano 1-0;Celta-Alaves 3-4;Ath Bilbao-Betis 2-1;Real Madrid-Ath Madrid 3-2,exact,,,,,,
+150,2026-03-22,西甲,LALIGA,毕尔巴鄂竞技,皇家贝蒂斯,2,1,unique,1,0,,4,Barcelona-Vallecano 1-0;Celta-Alaves 3-4;Ath Bilbao-Betis 2-1;Real Madrid-Ath Madrid 3-2,fuzzy_league_date_score_team,579140f88cea9a1ade0a,2026-03-22T17:30,Ath Bilbao,Betis,2,1
 151,2026-03-22,西甲,LALIGA,皇家马德里,马德里竞技,3,2,unique,1,0,,4,Barcelona-Vallecano 1-0;Celta-Alaves 3-4;Ath Bilbao-Betis 2-1;Real Madrid-Ath Madrid 3-2,fuzzy_league_date_score_team,30d1f682de653fb798b9,2026-03-22T20:00,Real Madrid,Ath Madrid,3,2
 152,2026-04-04,西甲,LALIGA,皇家马德里,瓦伦西亚,2,1,unresolved,0,0,,4,Sociedad-Levante 2-0;Mallorca-Real Madrid 2-1;Betis-Espanol 0-0;Ath Madrid-Barcelona 1-2,exact,,,,,,
 153,2026-04-04,西甲,LALIGA,巴塞罗那,马德里竞技,3,2,unresolved,0,0,,4,Sociedad-Levante 2-0;Mallorca-Real Madrid 2-1;Betis-Espanol 0-0;Ath Madrid-Barcelona 1-2,exact,,,,,,
@@ -159,7 +159,7 @@ sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_
 158,2026-04-06,西甲,LALIGA,塞尔塔,西班牙人,2,0,unresolved,0,0,,1,Girona-Villarreal 1-0,exact,,,,,,
 159,2026-04-06,西甲,LALIGA,马略卡,莱万特,1,1,unresolved,0,0,,1,Girona-Villarreal 1-0,exact,,,,,,
 160,2026-04-10,西甲,LALIGA,皇家马德里,皇家社会,3,1,unresolved,0,0,,1,Real Madrid-Girona 1-1,exact,,,,,,
-161,2026-04-11,西甲,LALIGA,巴塞罗那,赫罗纳,4,1,unresolved,0,0,,4,Sociedad-Alaves 3-3;Elche-Valencia 1-0;Barcelona-Espanol 4-1;Sevilla-Ath Madrid 2-1,exact,,,,,,
+161,2026-04-11,西甲,LALIGA,巴塞罗那,赫罗纳,4,1,unique,1,0,,4,Sociedad-Alaves 3-3;Elche-Valencia 1-0;Barcelona-Espanol 4-1;Sevilla-Ath Madrid 2-1,fuzzy_league_date_score_team,77bb5ac91ee586733278,2026-04-11T17:30,Barcelona,Espanol,4,1
 162,2026-04-11,西甲,LALIGA,马德里竞技,皇家贝蒂斯,2,0,unresolved,0,0,,4,Sociedad-Alaves 3-3;Elche-Valencia 1-0;Barcelona-Espanol 4-1;Sevilla-Ath Madrid 2-1,exact,,,,,,
 163,2026-04-12,西甲,LALIGA,瓦伦西亚,毕尔巴鄂竞技,1,1,unresolved,0,0,,4,Osasuna-Betis 1-1;Mallorca-Vallecano 3-0;Celta-Oviedo 0-3;Ath Bilbao-Villarreal 1-2,exact,,,,,,
 164,2026-04-12,西甲,LALIGA,塞维利亚,比利亚雷亚尔,0,2,unresolved,0,0,,4,Osasuna-Betis 1-1;Mallorca-Vallecano 3-0;Celta-Oviedo 0-3;Ath Bilbao-Villarreal 1-2,exact,,,,,,
@@ -173,7 +173,7 @@ sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_
 172,2026-04-10,西甲,LALIGA,皇家马德里,赫罗纳,1,1,unique,1,1,1-1:7778d467442232d69c6c,1,Real Madrid-Girona 1-1,exact,7778d467442232d69c6c,2026-04-10T20:00,Real Madrid,Girona,1,1
 173,2026-04-11,西甲,LALIGA,皇家社会,阿拉维斯,3,3,unique,1,0,,4,Sociedad-Alaves 3-3;Elche-Valencia 1-0;Barcelona-Espanol 4-1;Sevilla-Ath Madrid 2-1,fuzzy_league_date_score_team,080f592ce0adf2802e05,2026-04-11T13:00,Sociedad,Alaves,3,3
 174,2026-04-11,西甲,LALIGA,埃尔切,瓦伦西亚,1,0,unique,1,1,1-0:579d4c612890fff77965,4,Sociedad-Alaves 3-3;Elche-Valencia 1-0;Barcelona-Espanol 4-1;Sevilla-Ath Madrid 2-1,exact,579d4c612890fff77965,2026-04-11T15:15,Elche,Valencia,1,0
-175,2026-04-11,西甲,LALIGA,巴塞罗那,西班牙人,4,1,unique,1,0,,4,Sociedad-Alaves 3-3;Elche-Valencia 1-0;Barcelona-Espanol 4-1;Sevilla-Ath Madrid 2-1,fuzzy_league_date_score_team,77bb5ac91ee586733278,2026-04-11T17:30,Barcelona,Espanol,4,1
+175,2026-04-11,西甲,LALIGA,巴塞罗那,西班牙人,4,1,unresolved,0,0,,4,Sociedad-Alaves 3-3;Elche-Valencia 1-0;Barcelona-Espanol 4-1;Sevilla-Ath Madrid 2-1,exact,,,,,,
 176,2026-04-11,西甲,LALIGA,塞维利亚,马德里竞技,2,1,unique,1,0,,4,Sociedad-Alaves 3-3;Elche-Valencia 1-0;Barcelona-Espanol 4-1;Sevilla-Ath Madrid 2-1,fuzzy_league_date_score_team,6131533594a8e7d07ff2,2026-04-11T20:00,Sevilla,Ath Madrid,2,1
 177,2026-04-12,西甲,LALIGA,奥萨苏纳,皇家贝蒂斯,1,1,unique,1,0,,4,Osasuna-Betis 1-1;Mallorca-Vallecano 3-0;Celta-Oviedo 0-3;Ath Bilbao-Villarreal 1-2,fuzzy_league_date_score_team,7284ac78debb7ee614e9,2026-04-12T13:00,Osasuna,Betis,1,1
 178,2026-04-12,西甲,LALIGA,马略卡,巴列卡诺,3,0,unique,1,0,,4,Osasuna-Betis 1-1;Mallorca-Vallecano 3-0;Celta-Oviedo 0-3;Ath Bilbao-Villarreal 1-2,fuzzy_league_date_score_team,0ea10665f8d8c9bbf014,2026-04-12T15:15,Mallorca,Vallecano,3,0
@@ -184,7 +184,7 @@ sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_
 183,2026-04-25,西甲,LALIGA,阿拉维斯,马略卡,2,1,unique,1,0,,4,Alaves-Mallorca 2-1;Getafe-Barcelona 0-2;Valencia-Girona 2-1;Ath Madrid-Ath Bilbao 3-2,fuzzy_league_date_score_team,90bded8c3db6fb576193,2026-04-25T13:00,Alaves,Mallorca,2,1
 184,2026-04-25,西甲,LALIGA,赫塔费,巴塞罗那,0,2,unique,1,1,0-2:c220862c654911f247ea,4,Alaves-Mallorca 2-1;Getafe-Barcelona 0-2;Valencia-Girona 2-1;Ath Madrid-Ath Bilbao 3-2,exact,c220862c654911f247ea,2026-04-25T15:15,Getafe,Barcelona,0,2
 185,2026-04-25,西甲,LALIGA,瓦伦西亚,赫罗纳,2,1,unique,1,1,2-1:9e17b9e1a33da63edc35,4,Alaves-Mallorca 2-1;Getafe-Barcelona 0-2;Valencia-Girona 2-1;Ath Madrid-Ath Bilbao 3-2,exact,9e17b9e1a33da63edc35,2026-04-25T17:30,Valencia,Girona,2,1
-186,2026-04-25,西甲,LALIGA,马德里竞技,毕尔巴鄂竞技,3,2,unresolved,0,0,,4,Alaves-Mallorca 2-1;Getafe-Barcelona 0-2;Valencia-Girona 2-1;Ath Madrid-Ath Bilbao 3-2,exact,,,,,,
+186,2026-04-25,西甲,LALIGA,马德里竞技,毕尔巴鄂竞技,3,2,unique,1,0,,4,Alaves-Mallorca 2-1;Getafe-Barcelona 0-2;Valencia-Girona 2-1;Ath Madrid-Ath Bilbao 3-2,fuzzy_league_date_score_team,35da5911164c53ed98a5,2026-04-25T20:00,Ath Madrid,Ath Bilbao,3,2
 187,2026-04-26,西甲,LALIGA,巴列卡诺,皇家社会,3,3,unique,1,0,,4,Vallecano-Sociedad 3-3;Oviedo-Elche 1-2;Osasuna-Sevilla 2-1;Villarreal-Celta 2-1,fuzzy_league_date_score_team,639af764f64f42fa6573,2026-04-26T13:00,Vallecano,Sociedad,3,3
 188,2026-04-26,西甲,LALIGA,皇家奥维耶多,埃尔切,1,2,unique,1,0,,4,Vallecano-Sociedad 3-3;Oviedo-Elche 1-2;Osasuna-Sevilla 2-1;Villarreal-Celta 2-1,fuzzy_league_date_score_team,59ef0bf4148e4a521001,2026-04-26T15:15,Oviedo,Elche,1,2
 189,2026-04-26,西甲,LALIGA,奥萨苏纳,塞维利亚,2,1,unique,1,1,2-1:1b7c201f74fce045a98a,4,Vallecano-Sociedad 3-3;Oviedo-Elche 1-2;Osasuna-Sevilla 2-1;Villarreal-Celta 2-1,exact,1b7c201f74fce045a98a,2026-04-26T17:30,Osasuna,Sevilla,2,1
@@ -203,7 +203,7 @@ sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_
 202,2026-05-01,西甲,LALIGA,赫罗纳,马略卡,0,1,unique,1,1,0-1:e9d654c30a63869a9983,1,Girona-Mallorca 0-1,exact,e9d654c30a63869a9983,2026-05-01T20:00,Girona,Mallorca,0,1
 203,2026-05-02,西甲,LALIGA,比利亚雷亚尔,莱万特,5,1,unique,1,1,5-1:14bea22c47e2a6961e4b,4,Villarreal-Levante 5-1;Valencia-Ath Madrid 0-2;Alaves-Ath Bilbao 2-4;Osasuna-Barcelona 1-2,exact,14bea22c47e2a6961e4b,2026-05-02T13:00,Villarreal,Levante,5,1
 204,2026-05-02,西甲,LALIGA,瓦伦西亚,马德里竞技,0,2,unique,1,0,,4,Villarreal-Levante 5-1;Valencia-Ath Madrid 0-2;Alaves-Ath Bilbao 2-4;Osasuna-Barcelona 1-2,fuzzy_league_date_score_team,352278a7e43da26a05f7,2026-05-02T15:15,Valencia,Ath Madrid,0,2
-205,2026-05-02,西甲,LALIGA,阿拉维斯,毕尔巴鄂竞技,2,4,unresolved,0,0,,4,Villarreal-Levante 5-1;Valencia-Ath Madrid 0-2;Alaves-Ath Bilbao 2-4;Osasuna-Barcelona 1-2,exact,,,,,,
+205,2026-05-02,西甲,LALIGA,阿拉维斯,毕尔巴鄂竞技,2,4,unique,1,0,,4,Villarreal-Levante 5-1;Valencia-Ath Madrid 0-2;Alaves-Ath Bilbao 2-4;Osasuna-Barcelona 1-2,fuzzy_league_date_score_team,65a074f3c30d518ce8f5,2026-05-02T17:30,Alaves,Ath Bilbao,2,4
 206,2026-05-02,西甲,LALIGA,奥萨苏纳,巴塞罗那,1,2,unique,1,1,1-2:9199e6531aeceb380d17,4,Villarreal-Levante 5-1;Valencia-Ath Madrid 0-2;Alaves-Ath Bilbao 2-4;Osasuna-Barcelona 1-2,exact,9199e6531aeceb380d17,2026-05-02T20:00,Osasuna,Barcelona,1,2
 207,2026-05-03,西甲,LALIGA,塞尔塔,埃尔切,3,1,unique,1,0,,4,Celta-Elche 3-1;Getafe-Vallecano 0-2;Betis-Oviedo 3-0;Espanol-Real Madrid 0-2,fuzzy_league_date_score_team,ff6abc3b0c8e93b9b6b1,2026-05-03T13:00,Celta,Elche,3,1
 208,2026-05-03,西甲,LALIGA,赫塔费,巴列卡诺,0,2,unique,1,0,,4,Celta-Elche 3-1;Getafe-Vallecano 0-2;Betis-Oviedo 3-0;Espanol-Real Madrid 0-2,fuzzy_league_date_score_team,c83ebb6542bd08afa917,2026-05-03T15:15,Getafe,Vallecano,0,2
@@ -230,7 +230,7 @@ sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_
 229,2026-05-14,西甲,LALIGA,瓦伦西亚,巴列卡诺,1,1,unique,1,0,,3,Valencia-Vallecano 1-1;Girona-Sociedad 1-1;Real Madrid-Oviedo 2-0,fuzzy_league_date_score_team,0d78626f3defde98707d,2026-05-14T18:00,Valencia,Vallecano,1,1
 230,2026-05-14,西甲,LALIGA,赫罗纳,皇家社会,1,1,unique,1,0,,3,Valencia-Vallecano 1-1;Girona-Sociedad 1-1;Real Madrid-Oviedo 2-0,fuzzy_league_date_score_team,8db50818c4bfb2c0956c,2026-05-14T19:00,Girona,Sociedad,1,1
 231,2026-05-14,西甲,LALIGA,皇家马德里,皇家奥维耶多,2,0,unique,1,0,,3,Valencia-Vallecano 1-1;Girona-Sociedad 1-1;Real Madrid-Oviedo 2-0,fuzzy_league_date_score_team,f889e7059202f6602dd5,2026-05-14T20:30,Real Madrid,Oviedo,2,0
-232,2026-05-17,西甲,LALIGA,毕尔巴鄂竞技,塞尔塔,1,1,unresolved,0,0,,10,Ath Bilbao-Celta 1-1;Ath Madrid-Girona 1-0;Elche-Getafe 1-0;Levante-Mallorca 2-0;Osasuna-Espanol 1-2;Oviedo-Alaves 0-1;Sevilla-Real Madrid 0-1;Sociedad-Valencia 3-4;Vallecano-Villarreal 2-0;Barcelona-Betis 3-1,exact,,,,,,
+232,2026-05-17,西甲,LALIGA,毕尔巴鄂竞技,塞尔塔,1,1,unique,1,0,,10,Ath Bilbao-Celta 1-1;Ath Madrid-Girona 1-0;Elche-Getafe 1-0;Levante-Mallorca 2-0;Osasuna-Espanol 1-2;Oviedo-Alaves 0-1;Sevilla-Real Madrid 0-1;Sociedad-Valencia 3-4;Vallecano-Villarreal 2-0;Barcelona-Betis 3-1,fuzzy_league_date_score_team,961050aa70354642680e,2026-05-17T18:00,Ath Bilbao,Celta,1,1
 233,2026-05-17,西甲,LALIGA,马德里竞技,赫罗纳,1,0,unique,1,0,,10,Ath Bilbao-Celta 1-1;Ath Madrid-Girona 1-0;Elche-Getafe 1-0;Levante-Mallorca 2-0;Osasuna-Espanol 1-2;Oviedo-Alaves 0-1;Sevilla-Real Madrid 0-1;Sociedad-Valencia 3-4;Vallecano-Villarreal 2-0;Barcelona-Betis 3-1,fuzzy_league_date_score_team,b52a62c263fa789d75b9,2026-05-17T18:00,Ath Madrid,Girona,1,0
 234,2026-05-17,西甲,LALIGA,埃尔切,赫塔费,1,0,unique,1,1,1-0:0920d19018b6a28df21f,10,Ath Bilbao-Celta 1-1;Ath Madrid-Girona 1-0;Elche-Getafe 1-0;Levante-Mallorca 2-0;Osasuna-Espanol 1-2;Oviedo-Alaves 0-1;Sevilla-Real Madrid 0-1;Sociedad-Valencia 3-4;Vallecano-Villarreal 2-0;Barcelona-Betis 3-1,exact,0920d19018b6a28df21f,2026-05-17T18:00,Elche,Getafe,1,0
 235,2026-05-17,西甲,LALIGA,莱万特,马略卡,2,0,unique,1,1,2-0:a07e75764afd3e6a5ab9,10,Ath Bilbao-Celta 1-1;Ath Madrid-Girona 1-0;Elche-Getafe 1-0;Levante-Mallorca 2-0;Osasuna-Espanol 1-2;Oviedo-Alaves 0-1;Sevilla-Real Madrid 0-1;Sociedad-Valencia 3-4;Vallecano-Villarreal 2-0;Barcelona-Betis 3-1,exact,a07e75764afd3e6a5ab9,2026-05-17T18:00,Levante,Mallorca,2,0
@@ -304,7 +304,7 @@ sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_
 303,2026-04-25,英超,EPL,富勒姆,阿斯顿维拉,1,0,unique,1,1,1-0:eb85e1c7d5e9df67eee8,5,Fulham-Aston Villa 1-0;Liverpool-Crystal Palace 3-1;West Ham-Everton 2-1;Wolves-Tottenham 0-1;Arsenal-Newcastle 1-0,exact,eb85e1c7d5e9df67eee8,2026-04-25T12:30,Fulham,Aston Villa,1,0
 304,2026-04-25,英超,EPL,利物浦,水晶宫,3,1,unique,1,1,3-1:1f8dd6b2daba6406de15,5,Fulham-Aston Villa 1-0;Liverpool-Crystal Palace 3-1;West Ham-Everton 2-1;Wolves-Tottenham 0-1;Arsenal-Newcastle 1-0,exact,1f8dd6b2daba6406de15,2026-04-25T15:00,Liverpool,Crystal Palace,3,1
 305,2026-04-25,英超,EPL,西汉姆联,埃弗顿,2,1,unique,1,0,,5,Fulham-Aston Villa 1-0;Liverpool-Crystal Palace 3-1;West Ham-Everton 2-1;Wolves-Tottenham 0-1;Arsenal-Newcastle 1-0,fuzzy_league_date_score_team,724d510a72ce387f188c,2026-04-25T15:00,West Ham,Everton,2,1
-306,2026-04-25,英超,EPL,狼队,热刺,0,1,unresolved,0,0,,5,Fulham-Aston Villa 1-0;Liverpool-Crystal Palace 3-1;West Ham-Everton 2-1;Wolves-Tottenham 0-1;Arsenal-Newcastle 1-0,exact,,,,,,
+306,2026-04-25,英超,EPL,狼队,热刺,0,1,unique,1,0,,5,Fulham-Aston Villa 1-0;Liverpool-Crystal Palace 3-1;West Ham-Everton 2-1;Wolves-Tottenham 0-1;Arsenal-Newcastle 1-0,fuzzy_league_date_score_team,2bacdd15dbb50fa7cbb4,2026-04-25T15:00,Wolves,Tottenham,0,1
 307,2026-04-25,英超,EPL,阿森纳,纽卡斯尔联,1,0,unique,1,0,,5,Fulham-Aston Villa 1-0;Liverpool-Crystal Palace 3-1;West Ham-Everton 2-1;Wolves-Tottenham 0-1;Arsenal-Newcastle 1-0,fuzzy_league_date_score_team,8d05c1a851aebeef6315,2026-04-25T17:30,Arsenal,Newcastle,1,0
 308,2026-04-27,英超,EPL,曼联,布伦特福德,2,1,unique,1,0,,1,Man United-Brentford 2-1,fuzzy_league_date_score_team,a534cdaddd1f2442c0d4,2026-04-27T20:00,Man United,Brentford,2,1
 309,2026-04-10,德甲,BUNDESLIGA,奥格斯堡,霍芬海姆,2,2,unique,1,0,,1,Augsburg-Hoffenheim 2-2,fuzzy_league_date_score_team,a153e6e79532f130f6e4,2026-04-10T19:30,Augsburg,Hoffenheim,2,2
@@ -344,7 +344,7 @@ sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_
 343,2026-05-02,德甲,BUNDESLIGA,拜仁慕尼黑,海登海姆,3,3,unique,1,1,3-3:df084b019542fb357299,6,Bayern Munich-Heidenheim 3-3;Ein Frankfurt-Hamburg 1-2;Hoffenheim-Stuttgart 3-3;Union Berlin-FC Koln 2-2;Werder Bremen-Augsburg 1-3;Leverkusen-RB Leipzig 4-1,exact,df084b019542fb357299,2026-05-02T14:30,Bayern Munich,Heidenheim,3,3
 344,2026-05-02,德甲,BUNDESLIGA,勒沃库森,RB莱比锡,4,1,unique,1,0,,6,Bayern Munich-Heidenheim 3-3;Ein Frankfurt-Hamburg 1-2;Hoffenheim-Stuttgart 3-3;Union Berlin-FC Koln 2-2;Werder Bremen-Augsburg 1-3;Leverkusen-RB Leipzig 4-1,fuzzy_league_date_score_team,5d06713e161754e0a471,2026-05-02T17:30,Leverkusen,RB Leipzig,4,1
 345,2026-05-03,德甲,BUNDESLIGA,圣保利,美因茨,1,2,unique,1,0,,3,St Pauli-Mainz 1-2;M'gladbach-Dortmund 1-0;Freiburg-Wolfsburg 1-1,fuzzy_league_date_score_team,861eb5b4129ac4c9124d,2026-05-03T14:30,St Pauli,Mainz,1,2
-346,2026-05-03,德甲,BUNDESLIGA,门兴格拉德巴赫,多特蒙德,1,0,unresolved,0,0,,3,St Pauli-Mainz 1-2;M'gladbach-Dortmund 1-0;Freiburg-Wolfsburg 1-1,exact,,,,,,
+346,2026-05-03,德甲,BUNDESLIGA,门兴格拉德巴赫,多特蒙德,1,0,unique,1,0,,3,St Pauli-Mainz 1-2;M'gladbach-Dortmund 1-0;Freiburg-Wolfsburg 1-1,fuzzy_league_date_score_team,a0c3e1411227c0ed1745,2026-05-03T16:30,M'gladbach,Dortmund,1,0
 347,2026-05-03,德甲,BUNDESLIGA,弗赖堡,沃尔夫斯堡,1,1,unique,1,1,1-1:3b0811238a41143b0f42,3,St Pauli-Mainz 1-2;M'gladbach-Dortmund 1-0;Freiburg-Wolfsburg 1-1,exact,3b0811238a41143b0f42,2026-05-03T18:30,Freiburg,Wolfsburg,1,1
 348,2026-05-08,德甲,BUNDESLIGA,多特蒙德,法兰克福,3,2,unique,1,0,,1,Dortmund-Ein Frankfurt 3-2,fuzzy_league_date_score_team,25aaac23b5b220292bd0,2026-05-08T19:30,Dortmund,Ein Frankfurt,3,2
 349,2026-05-09,德甲,BUNDESLIGA,霍芬海姆,云达不莱梅,1,0,unique,1,0,,5,Augsburg-M'gladbach 3-1;Hoffenheim-Werder Bremen 1-0;RB Leipzig-St Pauli 2-1;Stuttgart-Leverkusen 3-1;Wolfsburg-Bayern Munich 0-1,fuzzy_league_date_score_team,a1102fc239fae419df5a,2026-05-09T14:30,Hoffenheim,Werder Bremen,1,0
@@ -479,13 +479,13 @@ sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_
 478,2026-09-20,意甲,SERIEA,弗罗西诺内,科莫,2,0,unique,1,1,2-0:78b723a01dd25586d0ee,5,Fiorentina-Napoli 1-1;Frosinone-Como 2-0;Parma-Genoa 2-1;Juventus-Atalanta 2-0;Milan-Lecce 3-0,exact,78b723a01dd25586d0ee,2026-09-20T14:00,Frosinone,Como,2,0
 479,2026-09-20,意甲,SERIEA,帕尔马,热那亚,2,1,unique,1,1,2-1:4abd5881542341874cfe,5,Fiorentina-Napoli 1-1;Frosinone-Como 2-0;Parma-Genoa 2-1;Juventus-Atalanta 2-0;Milan-Lecce 3-0,exact,4abd5881542341874cfe,2026-09-20T14:00,Parma,Genoa,2,1
 480,2026-09-11,法甲,LIGUE1,南特,雷恩,0,2,unresolved,0,0,,1,Rennes-Marseille 1-0,exact,,,,,,
-481,2026-09-12,法甲,LIGUE1,里昂,摩纳哥,1,1,unresolved,0,0,,5,Strasbourg-Monaco 1-1;Auxerre-Nice 1-0;Le Havre-Angers 0-0;Lorient-Toulouse 2-2;Paris FC-Lyon 0-0,exact,,,,,,
+481,2026-09-12,法甲,LIGUE1,里昂,摩纳哥,1,1,unique,1,0,,5,Strasbourg-Monaco 1-1;Auxerre-Nice 1-0;Le Havre-Angers 0-0;Lorient-Toulouse 2-2;Paris FC-Lyon 0-0,fuzzy_league_date_score_team,13139fd319612e9a90ea,2026-09-12T16:15,Strasbourg,Monaco,1,1
 482,2026-09-12,法甲,LIGUE1,巴黎圣日耳曼,马赛,1,2,unresolved,0,0,,5,Strasbourg-Monaco 1-1;Auxerre-Nice 1-0;Le Havre-Angers 0-0;Lorient-Toulouse 2-2;Paris FC-Lyon 0-0,exact,,,,,,
 483,2026-09-13,法甲,LIGUE1,里尔,斯特拉斯堡,2,1,unresolved,0,0,,3,Lille-Troyes 2-0;Le Mans-Lens 2-2;Brest-Paris SG 0-1,exact,,,,,,
 484,2026-09-13,法甲,LIGUE1,摩纳哥,朗斯,2,1,unresolved,0,0,,3,Lille-Troyes 2-0;Le Mans-Lens 2-2;Brest-Paris SG 0-1,exact,,,,,,
 485,2026-09-13,法甲,LIGUE1,图卢兹,勒阿弗尔,3,2,unresolved,0,0,,3,Lille-Troyes 2-0;Le Mans-Lens 2-2;Brest-Paris SG 0-1,exact,,,,,,
 486,2026-09-13,法甲,LIGUE1,巴黎FC,斯特拉斯堡,2,1,unresolved,0,0,,3,Lille-Troyes 2-0;Le Mans-Lens 2-2;Brest-Paris SG 0-1,exact,,,,,,
-487,2026-09-13,法甲,LIGUE1,昂热,特鲁瓦,2,0,unresolved,0,0,,3,Lille-Troyes 2-0;Le Mans-Lens 2-2;Brest-Paris SG 0-1,exact,,,,,,
+487,2026-09-13,法甲,LIGUE1,昂热,特鲁瓦,2,0,unique,1,0,,3,Lille-Troyes 2-0;Le Mans-Lens 2-2;Brest-Paris SG 0-1,fuzzy_league_date_score_team,f858d358f360722ded60,2026-09-13T14:00,Lille,Troyes,2,0
 488,2026-09-13,法甲,LIGUE1,勒芒,洛里昂,2,1,unresolved,0,0,,3,Lille-Troyes 2-0;Le Mans-Lens 2-2;Brest-Paris SG 0-1,exact,,,,,,
 489,2026-09-12,西甲,LALIGA,塞维利亚,瓦伦西亚,1,0,unresolved,0,0,,4,Santander-Alaves 2-1;Osasuna-Espanol 0-2;Ath Bilbao-Elche 1-1;Real Madrid-Vallecano 4-1,exact,,,,,,
 490,2026-09-12,西甲,LALIGA,桑坦德竞技,阿拉维斯,2,1,unique,1,0,,4,Santander-Alaves 2-1;Osasuna-Espanol 0-2;Ath Bilbao-Elche 1-1;Real Madrid-Vallecano 4-1,fuzzy_league_date_score_team,7ecddb34f99c40401175,2026-09-12T13:00,Santander,Alaves,2,1
