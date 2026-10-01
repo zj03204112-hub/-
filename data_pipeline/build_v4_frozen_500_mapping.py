@@ -74,6 +74,10 @@ for i,r in enumerate(src,1):
     score=(int(r["home_score"]),int(r["away_score"]))
     key=(code,r["date"],team_key(r["home"]),team_key(r["away"]),score[0],score[1])
     cand=[x for x in idx.get(key,[]) if x[0] not in used_match_ids]
+    if len(cand)>1:
+        pref_h=TEAM_ALIAS.get(r["home"],r["home"]); pref_a=TEAM_ALIAS.get(r["away"],r["away"])
+        exact_raw=[x for x in cand if x[5]==pref_h and x[6]==pref_a]
+        if len(exact_raw)==1: cand=exact_raw
     date_team_pool=[x for x in db_rows if x[2]==code and x[4][:10]==r["date"] and team_key(x[5])==team_key(r["home"]) and team_key(x[6])==team_key(r["away"])]
     date_league_pool=[x for x in db_rows if x[2]==code and x[4][:10]==r["date"]]
     match_method="exact"
