@@ -94,34 +94,61 @@ def rename_cols(t):
 
 def recover_missing_frozen_rows(conn):
     path="model_validation/500_match_base_batch01.csv"
-    if not os.path.exists(path): return 0
-    comp={"J1":"J1","KLEAGUE1":"KLEAGUE1","LALIGA":"LALIGA"}
-    aliases={"横滨水手":"横浜FM","町田泽维亚":"町田","京都不死鸟":"京都","神户胜利船":"神戸","长崎成功丸":"長崎","广岛三箭":"広島","千叶市原":"千葉","浦和红钻":"浦和","FC东京":"FC東京","鹿岛鹿角":"鹿島","大阪樱花":"Ｃ大阪","大阪钢巴":"Ｇ大阪","川崎前锋":"川崎Ｆ","柏太阳神":"柏","东京绿茵":"東京Ｖ","水户蜀葵":"水戸","福冈黄蜂":"福岡","冈山绿雉":"岡山","名古屋鲸八":"名古屋","清水心跳":"清水"}
-    n=0
+    if not os.path.exists(path):
+        return 0
+    code_map={"英超":"EPL","西甲":"LALIGA","德甲":"BUNDESLIGA","意甲":"SERIEA","法甲":"LIGUE1","韩职":"KLEAGUE1","日职J1":"J1"}
+    # Exact canonicalization only: no similarity/fuzzy matching.
+    aliases={
+      "皇家奥维耶多":"Oviedo","毕尔巴鄂竞技":"Ath Bilbao","皇家社会":"Sociedad","马德里竞技":"Ath Madrid","皇家贝蒂斯":"Betis","皇家马德里":"Real Madrid","巴塞罗那":"Barcelona","阿拉维斯":"Alaves","塞尔塔":"Celta","塞维利亚":"Sevilla","比利亚雷亚尔":"Villarreal","赫塔费":"Getafe","马略卡":"Mallorca","莱万特":"Levante","西班牙人":"Espanol","瓦伦西亚":"Valencia","赫罗纳":"Girona","奥萨苏纳":"Osasuna","巴黎圣日耳曼":"Paris SG","尼斯":"Nice","马赛":"Marseille","朗斯":"Lens","里尔":"Lille","斯特拉斯堡":"Strasbourg","南特":"Nantes","雷恩":"Rennes","里昂":"Lyon","摩纳哥":"Monaco","图卢兹":"Toulouse","巴黎FC":"Paris FC","勒阿弗尔":"Le Havre","昂热":"Angers","特鲁瓦":"Troyes","勒芒":"Le Mans","洛里昂":"Lorient","布雷斯特":"Brest","欧塞尔":"Auxerre",
+      "切尔西":"Chelsea","布莱顿":"Brighton","狼队":"Wolves","考文垂":"Coventry","阿森纳":"Arsenal","热刺":"Tottenham","曼联":"Man United","伊普斯维奇":"Ipswich Town","诺丁汉森林":"Nott'm Forest","纽卡斯尔联":"Newcastle","伯恩茅斯":"Bournemouth","埃弗顿":"Everton","水晶宫":"Crystal Palace","曼城":"Man City","布伦特福德":"Brentford","桑德兰":"Sunderland","富勒姆":"Fulham","利兹联":"Leeds","阿斯顿维拉":"Aston Villa","西汉姆联":"West Ham United","伯恩利":"Burnley","赫尔城":"Hull City","利物浦":"Liverpool",
+      "拜仁慕尼黑":"Bayern Munich","斯图加特":"VfB Stuttgart","多特蒙德":"Borussia Dortmund","汉堡":"Hamburger SV","科隆":"FC Cologne","霍芬海姆":"TSG Hoffenheim","美因茨":"Mainz 05","帕德博恩":"Paderborn","RB莱比锡":"RB Leipzig","门兴格拉德巴赫":"Borussia Mönchengladbach","埃尔沃斯贝格":"SV Elversberg","勒沃库森":"Bayer Leverkusen","柏林联合":"Union Berlin","法兰克福":"Eintracht Frankfurt","奥格斯堡":"Augsburg","沙尔克04":"Schalke 04","弗赖堡":"SC Freiburg","云达不来梅":"Werder Bremen","海登海姆":"Heidenheim","圣保利":"St Pauli",
+      "佛罗伦萨":"Fiorentina","那不勒斯":"Napoli","国际米兰":"Inter Milan","罗马":"Roma","拉齐奥":"Lazio","尤文图斯":"Juventus","AC米兰":"AC Milan","都灵":"Torino","博洛尼亚":"Bologna","乌迪内斯":"Udinese","卡利亚里":"Cagliari","威尼斯":"Venezia","莱切":"Lecce","热那亚":"Genoa","亚特兰大":"Atalanta","萨索洛":"Sassuolo","蒙扎":"Monza","帕尔马":"Parma","科莫":"Como","弗罗西诺内":"Frosinone",
+      "横滨水手":"横浜FM","町田泽维亚":"町田","京都不死鸟":"京都","神户胜利船":"神戸","长崎成功丸":"長崎","广岛三箭":"広島","千叶市原":"千葉","浦和红钻":"浦和","FC东京":"FC東京","鹿岛鹿角":"鹿島","大阪樱花":"Ｃ大阪","大阪钢巴":"Ｇ大阪","川崎前锋":"川崎Ｆ","柏太阳神":"柏","东京绿茵":"東京Ｖ","水户蜀葵":"水戸","福冈黄蜂":"福岡","冈山绿雉":"岡山","名古屋鲸八":"名古屋","清水心跳":"清水",
+      "인천":"인천","광주":"광주","전북":"전북","김천":"김천","제주":"제주","안양":"안양","강원":"강원","울산":"울산","부천":"부천","포항":"포항","서울":"서울","대전":"대전"
+    }
+    def canon(code,team):
+        return aliases.get(team.strip(),team.strip())
+    def season_for(code,d):
+        if code=="LALIGA":
+            return "2025/26" if d <= "2026-07-31" else "2026/27"
+        return "2026/27"
+    inserted=0
     with open(path,encoding="utf-8-sig",newline="") as f:
         for r in csv.DictReader(f):
-            code={"日职J1":"J1","韩职":"KLEAGUE1","西甲":"LALIGA"}.get(r["league"].strip())
-            if code not in comp: continue
+            code=code_map.get(r["league"].strip())
+            if not code: continue
             d=r["date"].strip()
             if not (START<=d<=END): continue
-            cid=conn.execute("SELECT competition_id FROM competitions WHERE competition_code=?",(code,)).fetchone()
-            if not cid: continue
-            cid=cid[0]
-            label="2025/26" if code=="LALIGA" else "2026/27"
-            sid=conn.execute("SELECT season_id FROM seasons WHERE competition_id=? AND season_label=? ORDER BY season_id DESC LIMIT 1",(cid,label)).fetchone()
-            if not sid: continue
-            if conn.execute("SELECT 1 FROM matches WHERE competition_id=? AND substr(kickoff,1,10)=? LIMIT 1",(cid,d)).fetchone(): continue
-            home=r["home"].strip(); away=r["away"].strip()
-            if code=="J1": home=aliases.get(home,home); away=aliases.get(away,away)
-            if code=="LALIGA":
-                la={"皇家社会":"Real Sociedad","巴塞罗那":"Barcelona","皇家马德里":"Real Madrid","赫塔费":"Getafe","毕尔巴鄂竞技":"Athletic Club","马德里竞技":"Atletico Madrid","皇家贝蒂斯":"Real Betis","瓦伦西亚":"Valencia"}
-                home=la.get(home,home); away=la.get(away,away)
+            cid_row=conn.execute("SELECT competition_id FROM competitions WHERE competition_code=?",(code,)).fetchone()
+            if not cid_row: continue
+            cid=cid_row[0]
+            label=season_for(code,d)
+            sid_row=conn.execute("SELECT season_id FROM seasons WHERE competition_id=? AND season_label=? ORDER BY season_id DESC LIMIT 1",(cid,label)).fetchone()
+            if not sid_row: continue
+            sid=sid_row[0]
+            home=canon(code,r["home"]); away=canon(code,r["away"])
             fh,fa=int(r["home_score"]),int(r["away_score"])
+            # Exact identity check against existing DB rows on date/team/score.
+            exists=conn.execute("""
+                SELECT m.match_id FROM matches m JOIN results rr ON rr.match_id=m.match_id
+                WHERE m.competition_id=? AND substr(m.kickoff,1,10)=?
+                  AND m.home_team=? AND m.away_team=? AND rr.ft_home=? AND rr.ft_away=?
+                LIMIT 1
+            """,(cid,d,home,away,fh,fa)).fetchone()
+            if exists:
+                continue
+            # If team/date exists under an equivalent provider name, do not create a duplicate.
+            # Provider-name equivalence is explicit through the canonical alias map above.
             m=mid(code,d,home,away)
-            conn.execute("INSERT OR IGNORE INTO matches (match_id,competition_id,season_id,kickoff,home_team,away_team,status,source_status,primary_source_id) VALUES (?,?,?,?,?,?,?,?,?)",(m,cid,sid[0],d,home,away,"finished","frozen_sample_recovery",9))
-            conn.execute("INSERT OR REPLACE INTO results (match_id,ht_home,ht_away,ft_home,ft_away,result_1x2,completed_at,source_status) VALUES (?,?,?,?,?,?,?,?)",(m,None,None,fh,fa,"H" if fh>fa else ("A" if fh<fa else "D"),d,"frozen_sample_recovery"))
-            n+=1
-    conn.commit(); print("FROZEN_RECOVERY",n); return n
+            conn.execute("""INSERT OR IGNORE INTO matches
+                (match_id,competition_id,season_id,kickoff,home_team,away_team,status,source_status,primary_source_id)
+                VALUES(?,?,?,?,?,?,?,?,?)""",(m,cid,sid,d,home,away,"finished","frozen_sample_recovery",9))
+            conn.execute("""INSERT OR REPLACE INTO results
+                (match_id,ht_home,ht_away,ft_home,ft_away,result_1x2,completed_at,source_status)
+                VALUES(?,?,?,?,?,?,?,?)""",(m,None,None,fh,fa,"H" if fh>fa else ("A" if fh<fa else "D"),d,"frozen_sample_recovery"))
+            inserted+=1
+    conn.commit()
+    return inserted
 
 def ingest(conn, code, url, source_id):
     cid = resolve_competition(conn, code)
