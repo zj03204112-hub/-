@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "data_pipeline/backtest_v4_frozen_500.py"
+      - "data_pipeline/analyze_v4_frozen_500_errors.py"
       - "model_validation/500_match_base_batch01.csv"
       - "data_pipeline/compare_models.py"
       - "football_model_database.sqlite"
