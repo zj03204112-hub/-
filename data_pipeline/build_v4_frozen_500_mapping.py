@@ -1,4 +1,5 @@
 import csv, json, re, sqlite3
+from difflib import SequenceMatcher
 from collections import Counter
 
 CSV_PATH = "model_validation/500_match_base_batch01.csv"
@@ -26,6 +27,9 @@ TEAM_ALIAS = {
 }
 def team_key(s):
     return norm_team(TEAM_ALIAS.get((s or "").strip(), s))
+
+def similarity(a,b):
+    return SequenceMatcher(None, norm_team(a), norm_team(b)).ratio()
 
 def norm_team(s):
     s=(s or "").strip().lower()
@@ -67,12 +71,19 @@ for i,r in enumerate(src,1):
     score=(int(r["home_score"]),int(r["away_score"]))
     key=(code,r["date"],team_key(r["home"]),team_key(r["away"]),score[0],score[1])
     cand=idx.get(key,[])
+    match_method="exact"
+    if len(cand)!=1:
+        pool=[x for x in db_rows if x[2]==code and x[4][:10]==r["date"] and x[7]==score[0] and x[8]==score[1]]
+        scored=sorted([(similarity(TEAM_ALIAS.get(r["home"],r["home"]),x[5])+similarity(TEAM_ALIAS.get(r["away"],r["away"]),x[6]),x) for x in pool], reverse=True, key=lambda z:z[0])
+        if scored and scored[0][0] >= 1.45 and (len(scored)==1 or scored[0][0]-scored[1][0] >= 0.08):
+            cand=[scored[0][1]]
+            match_method="fuzzy_league_date_score_team"
     status="unique" if len(cand)==1 else "unresolved" if len(cand)==0 else "ambiguous"
     x=cand[0] if len(cand)==1 else [None, None, code, None, None, None, None, None, None]
     out.append({
         "sample_row":i,"date":r["date"],"league":league,"competition_code":code,
         "home":r["home"],"away":r["away"],"home_score":score[0],"away_score":score[1],
-        "mapping_status":status,"candidate_count":len(cand),
+        "mapping_status":status,"candidate_count":len(cand),"match_method":match_method,
         "match_id":x[0] if len(cand)==1 else "",
         "db_kickoff":x[4] if len(cand)==1 else "",
         "db_home":x[5] if len(cand)==1 else "",
