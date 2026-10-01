@@ -1,4 +1,4 @@
-import csv, json, re, sqlite3
+import csv, json, re, sqlite3, unicodedata
 from difflib import SequenceMatcher
 from collections import Counter
 
@@ -33,6 +33,7 @@ def similarity(a,b):
 
 def norm_team(s):
     s=(s or "").strip().lower()
+    s="".join(ch for ch in unicodedata.normalize("NFKD",s) if not unicodedata.combining(ch))
     for token in ("football club","footballclub","fc","cf","afc","sc","fk","ac","calcio","club","足球俱乐部"):
         s=s.replace(token,"")
     return re.sub(r"[^a-z0-9\u4e00-\u9fff]+","",s)
