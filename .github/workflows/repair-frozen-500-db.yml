@@ -1,0 +1,37 @@
+name: Repair frozen 500 DB coverage
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data_pipeline/repair_frozen_500_db.py"
+      - "model_validation/v4_frozen_500_unresolved_138_classification.csv"
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --upgrade pip pandas requests lxml
+      - name: Repair K League 1 and J1 coverage
+        run: python data_pipeline/repair_frozen_500_db.py
+      - name: Extend five major league coverage to 2026-09-30
+        run: python data_pipeline/build_football_db.py
+        env:
+          FOOTBALL_DB_END: "2026-09-30"
+      - name: Commit repaired database
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add football_model_database.sqlite
+          git diff --cached --quiet && echo "NO_DB_CHANGE" || git commit -m "Repair frozen 500 DB coverage"
+          git push
