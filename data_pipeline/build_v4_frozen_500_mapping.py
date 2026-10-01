@@ -73,6 +73,7 @@ for i,r in enumerate(src,1):
     key=(code,r["date"],team_key(r["home"]),team_key(r["away"]),score[0],score[1])
     cand=idx.get(key,[])
     date_team_pool=[x for x in db_rows if x[2]==code and x[4][:10]==r["date"] and team_key(x[5])==team_key(r["home"]) and team_key(x[6])==team_key(r["away"])]
+    date_league_pool=[x for x in db_rows if x[2]==code and x[4][:10]==r["date"]]
     match_method="exact"
     if len(cand)!=1:
         pool=[x for x in db_rows if x[2]==code and x[4][:10]==r["date"] and x[7]==score[0] and x[8]==score[1]]
@@ -85,7 +86,7 @@ for i,r in enumerate(src,1):
     out.append({
         "sample_row":i,"date":r["date"],"league":league,"competition_code":code,
         "home":r["home"],"away":r["away"],"home_score":score[0],"away_score":score[1],
-        "mapping_status":status,"candidate_count":len(cand),"date_team_candidate_count":len(date_team_pool),"date_team_scores":";".join(f"{x[7]}-{x[8]}:{x[0]}" for x in date_team_pool),"match_method":match_method,
+        "mapping_status":status,"candidate_count":len(cand),"date_team_candidate_count":len(date_team_pool),"date_team_scores":";".join(f"{x[7]}-{x[8]}:{x[0]}" for x in date_team_pool),"date_league_count":len(date_league_pool),"date_league_scores":";".join(f"{x[5]}-{x[6]} {x[7]}-{x[8]}" for x in date_league_pool),"match_method":match_method,
         "match_id":x[0] if len(cand)==1 else "",
         "db_kickoff":x[4] if len(cand)==1 else "",
         "db_home":x[5] if len(cand)==1 else "",
