@@ -9,16 +9,21 @@ BASE=ROOT/"model_validation/500_match_V4_frozen_predictions.csv"
 SAMPLE=ROOT/"model_validation/500_match_base_batch01.csv"
 OUT=ROOT/"model_validation/500_match_V4_score_special_validation.csv"
 AUDIT=ROOT/"model_validation/500_match_V4_score_special_validation.md"
-SPORTTERY="https://webapi.sporttery.cn/gateway/uniform/football/getUniformMatchResultV1.qry"
+SPORTTERY="https://webapi.sporttery.cn/gateway/jc/football/getMatchResultV1.qry"
 VIPC="https://www.vipc.cn/results/jczq/{}"
 
 ALIASES={"曼彻斯特联":"曼联","曼彻斯特城":"曼城","托特纳姆热刺":"热刺","莱比锡红牛":"RB莱比锡","云达不来梅":"云达不莱梅","埃尔沃斯贝格":"埃弗斯贝格","巴黎圣日尔曼":"巴黎圣日耳曼","巴伦西亚":"瓦伦西亚","东京FC":"FC东京","清水心跳":"清水鼓动","大田市民":"大田","全北现代":"全北","广岛三箭":"广岛","神户胜利船":"神户","京都不死鸟":"京都","长崎成功丸":"长崎","水户蜀葵":"水户","千叶市原":"千叶","冈山绿雉":"冈山","名古屋鲸八":"名古屋","川崎前锋":"川崎","浦和红钻":"浦和","福冈黄蜂":"福冈"}
-def norm(s): return ALIASES.get(re.sub(r"[\s\u3000]","",str(s or "")),re.sub(r"[\s\u3000]","",str(s or "")))
+
+def norm(s):
+    s=re.sub(r"[\\s\\u3000\\-·.'’]", "", str(s or "")).lower()
+    return ALIASES.get(s,s)
+
 def cls(h,a): return "胜" if h>a else ("平" if h==a else "负")
 def handicap_cls(h,a,g): return cls(h+g,a)
+
 def fetch(url,params=None):
     u=url+("?" + urlencode(params) if params else "")
-    req=Request(u,headers={"User-Agent":"Mozilla/5.0 football-model/2.0","Accept":"application/json,text/plain,*/*"})
+    req=Request(u,headers={"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/145.0 Safari/537.36","Referer":"https://www.sporttery.cn/","Accept":"application/json, text/plain, */*"})
     last=None
     for i in range(4):
         try:
@@ -27,57 +32,47 @@ def fetch(url,params=None):
             last=e
             if i<3: time.sleep(1.5*(i+1))
     raise last
-def walk(x):
-    if isinstance(x,dict):
-        yield x
-        for v in x.values(): yield from walk(v)
-    elif isinstance(x,list):
-        for v in x: yield from walk(v)
-def pick(d,keys):
-    for k in keys:
-        if k in d and d[k] not in ("",None): return d[k]
-def outcome(v):
-    if v in ("h","H","主胜","胜"): return "胜"
-    if v in ("d","D","平"): return "平"
-    if v in ("a","A","主负","负"): return "负"
-def dedup(rows):
-    z={}
-    for r in rows: z[(norm(r["home"]),norm(r["away"]),r["home_score"],r["away_score"],r["handicap"])]=r
-    return list(z.values())
+
+def parse_score(s):
+    if not s: return None
+    m=re.search(r"(\\d+)\\s*[:\\-]\\s*(\\d+)",str(s))
+    return (int(m.group(1)),int(m.group(2))) if m else None
+
 def parse_sporttery(text):
-    data=json.loads(text); rows=[]
-    for d in walk(data):
-        home=pick(d,["homeTeam","homeTeamName","homeName","home_team","hostName"])
-        away=pick(d,["awayTeam","awayTeamName","awayName","away_team","guestName"])
-        if isinstance(home,dict): home=pick(home,["teamName","name","cnName"])
-        if isinstance(away,dict): away=pick(away,["teamName","name","cnName"])
-        if not home or not away: continue
-        hs=pick(d,["homeScore","homeTeamScore","hScore","home_score"])
-        aas=pick(d,["awayScore","awayTeamScore","aScore","away_score"])
-        goal=pick(d,["goalLine","hgoal","letGoal","handicap","goal_line"])
-        hhad=pick(d,["hhad","hHad","letBall","handicapResult","hhadResult"])
-        hr=pick(hhad,["result","outcome","code","resultCode","h","d","a"]) if isinstance(hhad,dict) else outcome(hhad)
-        actual=pick(d,["result","hadResult","fullResult","resultCode"])
-        if isinstance(actual,dict): actual=pick(actual,["result","code","h","d","a"])
-        if hs is None or aas is None:
-            sc=pick(d,["score","fullScore","finalScore"])
-            if isinstance(sc,str):
-                m=re.search(r"(\d+)\s*[:\-]\s*(\d+)",sc)
-                if m: hs,aas=int(m.group(1)),int(m.group(2))
-        try: hs,aas=int(hs),int(aas); goal=int(float(goal))
+    data=json.loads(text)
+    value=data.get("value") or {}
+    raw=value.get("matchResult") or []
+    rows=[]
+    for d in raw:
+        home=d.get("homeTeam") or d.get("allHomeTeam")
+        away=d.get("awayTeam") or d.get("allAwayTeam")
+        score=parse_score(d.get("sectionsNo999") or d.get("fullScore") or d.get("score"))
+        goal=d.get("goalLine")
+        if not home or not away or not score or goal in ("",None): continue
+        try: goal=int(float(str(goal).replace("+","")))
         except Exception: continue
-        actual_cn=outcome(actual) or cls(hs,aas)
-        hand_cn=outcome(hr) or handicap_cls(hs,aas,goal)
-        rows.append({"home":str(home),"away":str(away),"home_score":hs,"away_score":aas,"handicap":goal,"actual_result_cn":actual_cn,"handicap_result_cn":hand_cn})
-    return dedup(rows)
+        rows.append({
+            "match_id":str(d.get("matchId") or ""),
+            "match_num":str(d.get("matchNumStr") or d.get("matchNum") or ""),
+            "match_date":str(d.get("matchDate") or ""),
+            "home":str(home),"away":str(away),
+            "home_score":score[0],"away_score":score[1],
+            "handicap":goal,
+            "actual_result_cn":cls(score[0],score[1]),
+            "handicap_result_cn":handicap_cls(score[0],score[1],goal)
+        })
+    return rows
+
 def parse_vipc(html):
-    rows=[]; lines=[re.sub(r"\s+"," ",x).strip() for x in html.splitlines() if x.strip()]
+    rows=[]; lines=[re.sub(r"\\s+"," ",x).strip() for x in html.splitlines() if x.strip()]
     for i,line in enumerate(lines):
-        m=re.search(r"^(.*?)\s+\d{3}\s+\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}\s*\|\s*(.*?)vs(.*?)\s+(\d+)\s*:\s*(\d+)",line)
+        m=re.search(r"^(.*?)\\s+\\d{3}\\s+\\d{2}-\\d{2}\\s+\\d{2}:\\d{2}:\\d{2}\\s*\\|\\s*(.*?)vs(.*?)\\s+(\\d+)\\s*:\\s*(\\d+)",line)
         if not m or i+1>=len(lines): continue
-        hm=re.search(r"([胜平负])\s*\|\s*([胜平负])\s*\(([+-]?\d+)\)",lines[i+1])
+        hm=re.search(r"([胜平负])\\s*\\|\\s*([胜平负])\\s*\\(([+-]?\\d+)\\)",lines[i+1])
         if hm: rows.append({"home":m.group(2).strip(),"away":m.group(3).strip(),"home_score":int(m.group(4)),"away_score":int(m.group(5)),"handicap":int(hm.group(3)),"actual_result_cn":hm.group(1),"handicap_result_cn":hm.group(2)})
-    return dedup(rows)
+    return rows
+
+
 def read_csv(p):
     with p.open("r",encoding="utf-8-sig",newline="") as f: return list(csv.DictReader(f))
 def find(rows,s):
