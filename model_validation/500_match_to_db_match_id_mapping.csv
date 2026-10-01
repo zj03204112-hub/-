@@ -1,501 +1,501 @@
-sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_status,candidate_count,match_method,match_id,db_kickoff,db_home,db_away,db_home_score,db_away_score
-1,2026-08-30,英超,EPL,切尔西,布莱顿,4,3,unique,1,fuzzy_league_date_score_team,f54ca471dde79361dbac,2026-08-30T14:00,Chelsea,Brighton,4,3
-2,2026-08-30,英超,EPL,桑德兰,富勒姆,1,0,unique,1,exact,915db05210d00603746d,2026-08-30T14:00,Sunderland,Fulham,1,0
-3,2026-08-31,英超,EPL,阿斯顿维拉,阿森纳,0,1,unique,1,exact,99c553ed005fa158a52a,2026-08-31T20:00,Aston Villa,Arsenal,0,1
-4,2026-08-30,英超,EPL,曼联,伊普斯维奇,5,2,unique,1,fuzzy_league_date_score_team,8db4be8ee6727701923e,2026-08-30T16:30,Man United,Ipswich,5,2
-5,2026-08-29,英超,EPL,利物浦,诺丁汉森林,2,2,unique,1,fuzzy_league_date_score_team,17dd84d2bf5fa69a3f93,2026-08-29T12:30,Liverpool,Nott'm Forest,2,2
-6,2026-08-29,英超,EPL,托特纳姆热刺,纽卡斯尔联,0,2,unique,1,fuzzy_league_date_score_team,d9828bd4dcc0bb1aa6b1,2026-08-29T17:30,Tottenham,Newcastle,0,2
-7,2026-08-29,英超,EPL,伯恩茅斯,埃弗顿,1,1,unique,1,fuzzy_league_date_score_team,c37f61eaf9c87270bbd4,2026-08-29T15:00,Bournemouth,Everton,1,1
-8,2026-08-28,英超,EPL,水晶宫,曼城,1,4,unique,1,fuzzy_league_date_score_team,3d9c95dd31c8b8f32aad,2026-08-28T20:00,Crystal Palace,Man City,1,4
-9,2026-08-24,英超,EPL,富勒姆,切尔西,2,3,unique,1,exact,274b4b1252245db21789,2026-08-24T20:00,Fulham,Chelsea,2,3
-10,2026-08-23,英超,EPL,布莱顿,阿斯顿维拉,4,0,unique,1,fuzzy_league_date_score_team,6bd744cacd6ff0dcb82d,2026-08-23T14:00,Brighton,Aston Villa,4,0
-11,2026-08-23,英超,EPL,曼城,伯恩茅斯,2,1,unique,1,fuzzy_league_date_score_team,e19fcf7964838d676078,2026-08-23T14:00,Man City,Bournemouth,2,1
-12,2026-08-23,英超,EPL,纽卡斯尔联,利物浦,2,2,unique,1,fuzzy_league_date_score_team,670e4c14b345f306f3f7,2026-08-23T16:30,Newcastle,Liverpool,2,2
-13,2026-08-22,英超,EPL,阿森纳,考文垂,3,0,unresolved,0,exact,,,,,,
-14,2026-08-22,英超,EPL,布伦特福德,热刺,3,0,unique,1,fuzzy_league_date_score_team,30a59e39b10e2131a032,2026-08-22T17:30,Brentford,Tottenham,3,0
-15,2026-08-22,英超,EPL,埃弗顿,水晶宫,2,0,unique,1,exact,7c186b6e9e7ff1f18224,2026-08-22T15:00,Everton,Crystal Palace,2,0
-16,2026-08-22,英超,EPL,赫尔城,曼联,2,0,unresolved,0,exact,,,,,,
-17,2026-08-22,英超,EPL,伊普斯维奇,桑德兰,2,1,unique,1,fuzzy_league_date_score_team,cf63afd70fbd64b4ec1b,2026-08-22T15:00,Ipswich,Sunderland,2,1
-18,2026-08-22,英超,EPL,诺丁汉森林,利兹联,0,1,unresolved,0,exact,,,,,,
-19,2026-08-28,德甲,BUNDESLIGA,拜仁慕尼黑,斯图加特,5,1,unique,1,fuzzy_league_date_score_team,fdb18394eff108ff17d4,2026-08-28T19:30,Bayern Munich,Stuttgart,5,1
-20,2026-08-29,德甲,BUNDESLIGA,科隆,霍芬海姆,3,2,unresolved,0,exact,,,,,,
-21,2026-08-29,德甲,BUNDESLIGA,多特蒙德,汉堡,2,0,unresolved,0,exact,,,,,,
-22,2026-08-29,德甲,BUNDESLIGA,美因茨,帕德博恩,0,0,unique,1,fuzzy_league_date_score_team,c8df4edd9c63bf005640,2026-08-29T14:30,Mainz,Paderborn,0,0
-23,2026-08-29,德甲,BUNDESLIGA,RB莱比锡,门兴格拉德巴赫,3,0,unique,1,fuzzy_league_date_score_team,3f62b3971f14bc3b0d1b,2026-08-29T14:30,RB Leipzig,M'gladbach,3,0
-24,2026-08-29,德甲,BUNDESLIGA,埃尔沃斯贝格,勒沃库森,3,2,unique,1,fuzzy_league_date_score_team,1e4c674c730303f681f7,2026-08-29T14:30,Elversberg,Leverkusen,3,2
-25,2026-08-29,德甲,BUNDESLIGA,柏林联合,法兰克福,3,3,unique,1,fuzzy_league_date_score_team,b8cdbc5fffd168ca15ec,2026-08-29T14:30,Union Berlin,Ein Frankfurt,3,3
-26,2026-08-30,德甲,BUNDESLIGA,奥格斯堡,沙尔克04,3,0,unique,1,exact,b8e10833cb9a4b570487,2026-08-30T16:30,Augsburg,Schalke 04,3,0
-27,2026-08-30,德甲,BUNDESLIGA,弗赖堡,云达不来梅,4,1,unique,1,exact,d31e57c9913943ec6454,2026-08-30T14:30,Freiburg,Werder Bremen,4,1
-28,2026-08-22,意甲,SERIEA,热那亚,那不勒斯,0,2,unique,1,exact,91e922ca661819abebbf,2026-08-22T19:45,Genoa,Napoli,0,2
-29,2026-08-22,意甲,SERIEA,国际米兰,蒙扎,4,1,unique,1,fuzzy_league_date_score_team,a962bba4b22d22b33fbd,2026-08-22T17:30,Inter,Monza,4,1
-30,2026-08-22,意甲,SERIEA,帕尔马,卡利亚里,0,1,unique,1,exact,4584321708aa361bf455,2026-08-22T19:45,Parma,Cagliari,0,1
-31,2026-08-22,意甲,SERIEA,乌迪内斯,科莫,1,1,unique,1,exact,fbed19cecfa4d7366c9a,2026-08-22T17:30,Udinese,Como,1,1
-32,2026-08-23,意甲,SERIEA,亚特兰大,萨索洛,2,1,unique,1,exact,cb0b5baac669b6ee85fb,2026-08-23T19:45,Atalanta,Sassuolo,2,1
-33,2026-08-23,意甲,SERIEA,弗罗西诺内,尤文图斯,0,1,unique,1,exact,8132d80c529296aeb962,2026-08-23T17:30,Frosinone,Juventus,0,1
-34,2026-08-23,意甲,SERIEA,都灵,AC米兰,1,2,unique,1,exact,d8ace818490f8c53e7a6,2026-08-23T19:45,Torino,Milan,1,2
-35,2026-08-23,意甲,SERIEA,威尼斯,莱切,0,2,unique,1,exact,a3b8b0e1621948a38e53,2026-08-23T17:30,Venezia,Lecce,0,2
-36,2026-08-24,意甲,SERIEA,博洛尼亚,拉齐奥,0,1,unique,1,exact,7e0b4c5998db3455d5d6,2026-08-24T17:30,Bologna,Lazio,0,1
-37,2026-08-24,意甲,SERIEA,罗马,佛罗伦萨,4,0,unique,1,exact,c1936fc2b0793ec4fbbb,2026-08-24T19:45,Roma,Fiorentina,4,0
-38,2026-08-28,意甲,SERIEA,AC米兰,威尼斯,2,0,unique,1,exact,84e47605c9a8e9881df4,2026-08-28T19:45,Milan,Venezia,2,0
-39,2026-08-29,意甲,SERIEA,佛罗伦萨,弗罗西诺内,0,3,unique,1,exact,103f9311dd33752c06e9,2026-08-29T17:30,Fiorentina,Frosinone,0,3
-40,2026-08-29,意甲,SERIEA,尤文图斯,帕尔马,2,0,unique,1,exact,524addb4d6bcbcd5e59a,2026-08-29T19:45,Juventus,Parma,2,0
-41,2026-08-29,意甲,SERIEA,蒙扎,乌迪内斯,2,3,unique,1,exact,6963c549d61ca913c49b,2026-08-29T17:30,Monza,Udinese,2,3
-42,2026-08-29,意甲,SERIEA,萨索洛,都灵,2,1,unique,1,exact,2ecb4ae46f39b5dadd54,2026-08-29T17:30,Sassuolo,Torino,2,1
-43,2026-08-30,意甲,SERIEA,卡利亚里,国际米兰,0,1,unique,1,fuzzy_league_date_score_team,c43c13423d7808303eaa,2026-08-30T19:45,Cagliari,Inter,0,1
-44,2026-08-30,意甲,SERIEA,拉齐奥,热那亚,1,0,unique,1,exact,fc719ff1906b0280ae3a,2026-08-30T19:45,Lazio,Genoa,1,0
-45,2026-08-30,意甲,SERIEA,那不勒斯,科莫,1,2,unique,1,exact,a5539011dbd58cfcd46b,2026-08-30T17:30,Napoli,Como,1,2
-46,2026-08-31,意甲,SERIEA,亚特兰大,博洛尼亚,1,0,unique,1,exact,887f57850f8b2807abd7,2026-08-31T19:45,Atalanta,Bologna,1,0
-47,2026-08-31,意甲,SERIEA,莱切,罗马,0,4,unique,1,exact,aa5167a7f221d27fb2f4,2026-08-31T17:30,Lecce,Roma,0,4
-48,2026-08-21,法甲,LIGUE1,马赛,斯特拉斯堡,4,0,unique,1,exact,6cf14be13c687615f97e,2026-08-21T19:45,Marseille,Strasbourg,4,0
-49,2026-08-22,法甲,LIGUE1,朗斯,欧塞尔,5,2,unique,1,exact,62bc642c134669778694,2026-08-22T16:15,Lens,Auxerre,5,2
-50,2026-08-22,法甲,LIGUE1,尼斯,洛里昂,0,0,unique,1,exact,211d89cfa392b6305d4f,2026-08-22T19:45,Nice,Lorient,0,0
-51,2026-08-22,法甲,LIGUE1,图卢兹,里昂,0,2,unique,1,exact,e9725bd6e0c60e704330,2026-08-22T19:45,Toulouse,Lyon,0,2
-52,2026-08-23,法甲,LIGUE1,昂热,里尔,0,2,unique,1,exact,a2e0fc5b7f6252f58134,2026-08-23T14:00,Angers,Lille,0,2
-53,2026-08-23,法甲,LIGUE1,勒阿弗尔,摩纳哥,0,1,unique,1,exact,b60d5ab0a03c7d14ff32,2026-08-23T16:15,Le Havre,Monaco,0,1
-54,2026-08-23,法甲,LIGUE1,雷恩,巴黎圣日耳曼,2,2,unique,1,fuzzy_league_date_score_team,b32edc467847bac531c7,2026-08-23T19:45,Rennes,Paris SG,2,2
-55,2026-08-29,法甲,LIGUE1,欧塞尔,昂热,1,3,unique,1,exact,8313af1fc978176025db,2026-08-29T19:45,Auxerre,Angers,1,3
-56,2026-08-29,法甲,LIGUE1,布雷斯特,图卢兹,2,2,unique,1,exact,51a7eb0545d81f001961,2026-08-29T19:45,Brest,Toulouse,2,2
-57,2026-08-29,法甲,LIGUE1,洛里昂,特鲁瓦,1,2,unique,1,exact,de1e455b733e256ea196,2026-08-29T19:45,Lorient,Troyes,1,2
-58,2026-08-29,法甲,LIGUE1,里昂,勒阿弗尔,1,1,unique,1,exact,fecaa9662688847af1ca,2026-08-29T19:45,Lyon,Le Havre,1,1
-59,2026-08-29,法甲,LIGUE1,斯特拉斯堡,朗斯,2,1,unique,1,exact,7f6b79c0c85ddc064bf4,2026-08-29T16:15,Strasbourg,Lens,2,1
-60,2026-08-30,法甲,LIGUE1,摩纳哥,马赛,2,0,unique,1,exact,41a34316cc34521cc7c1,2026-08-30T19:45,Monaco,Marseille,2,0
-61,2026-08-30,法甲,LIGUE1,巴黎FC,尼斯,3,0,unique,1,exact,bdac8c288a863e6d9501,2026-08-30T14:00,Paris FC,Nice,3,0
-62,2026-08-30,法甲,LIGUE1,雷恩,勒芒,3,2,unique,1,exact,8c6014d89378dd055659,2026-08-30T16:15,Rennes,Le Mans,3,2
-63,2026-01-03,西甲,LALIGA,西班牙人,巴塞罗那,0,2,unique,1,fuzzy_league_date_score_team,dcc2e52cf158b119b02f,2026-01-03T20:00,Espanol,Barcelona,0,2
-64,2026-01-04,西甲,LALIGA,皇家马德里,皇家贝蒂斯,5,1,unique,1,fuzzy_league_date_score_team,49d033736e3ae2470884,2026-01-04T15:15,Real Madrid,Betis,5,1
-65,2026-01-04,西甲,LALIGA,皇家社会,马德里竞技,1,1,unique,1,fuzzy_league_date_score_team,c4749231f74fd27636dd,2026-01-04T20:00,Sociedad,Ath Madrid,1,1
-66,2026-01-09,西甲,LALIGA,赫塔费,皇家社会,1,2,unique,1,fuzzy_league_date_score_team,69eea968c9d003976b67,2026-01-09T20:00,Getafe,Sociedad,1,2
-67,2026-01-10,西甲,LALIGA,比利亚雷亚尔,阿拉维斯,3,1,unique,1,fuzzy_league_date_score_team,27b01e2c49f91c3ffafb,2026-01-10T15:15,Villarreal,Alaves,3,1
-68,2026-01-10,西甲,LALIGA,皇家奥维耶多,皇家贝蒂斯,1,1,unique,1,fuzzy_league_date_score_team,53e6dc13252ac6e7b5b8,2026-01-10T13:00,Oviedo,Betis,1,1
-69,2026-01-17,西甲,LALIGA,皇家马德里,莱万特,2,0,unique,1,exact,8da7ce93a3cfaf751ee5,2026-01-17T13:00,Real Madrid,Levante,2,0
-70,2026-01-17,西甲,LALIGA,奥萨苏纳,皇家奥维耶多,3,2,unique,1,fuzzy_league_date_score_team,be82cc5e180aad4d2c88,2026-01-17T17:30,Osasuna,Oviedo,3,2
-71,2026-01-18,西甲,LALIGA,皇家社会,巴塞罗那,2,1,unique,1,fuzzy_league_date_score_team,29a7474071496a0adeac,2026-01-18T20:00,Sociedad,Barcelona,2,1
-72,2026-01-18,西甲,LALIGA,马德里竞技,阿拉维斯,1,0,unresolved,0,exact,,,,,,
-73,2026-01-24,西甲,LALIGA,比利亚雷亚尔,皇家马德里,0,2,unique,1,exact,e7dcd0ca793820c8bea2,2026-01-24T20:00,Villarreal,Real Madrid,0,2
-74,2026-01-25,西甲,LALIGA,巴塞罗那,皇家奥维耶多,3,0,unique,1,fuzzy_league_date_score_team,66b6aae87491382a7698,2026-01-25T15:15,Barcelona,Oviedo,3,0
-75,2026-01-25,西甲,LALIGA,皇家社会,塞尔塔,3,1,unique,1,fuzzy_league_date_score_team,eac2154598a1b97b1a1b,2026-01-25T17:30,Sociedad,Celta,3,1
-76,2026-01-25,西甲,LALIGA,马德里竞技,马略卡,3,0,unique,1,fuzzy_league_date_score_team,38ecaa55b7d0a2cb855e,2026-01-25T13:00,Ath Madrid,Mallorca,3,0
-77,2026-01-25,西甲,LALIGA,阿拉维斯,皇家贝蒂斯,2,1,unresolved,0,exact,,,,,,
-78,2026-01-31,西甲,LALIGA,埃尔切,巴塞罗那,1,3,unique,1,exact,cf007bc4c17724a32c47,2026-01-31T20:00,Elche,Barcelona,1,3
-79,2026-01-31,西甲,LALIGA,莱万特,马德里竞技,0,0,unique,1,fuzzy_league_date_score_team,c664f76b79e6a4379f7e,2026-01-31T17:30,Levante,Ath Madrid,0,0
-80,2026-02-01,西甲,LALIGA,毕尔巴鄂竞技,皇家社会,1,1,unresolved,0,exact,,,,,,
-81,2026-02-01,西甲,LALIGA,皇家马德里,巴列卡诺,2,1,unique,1,fuzzy_league_date_score_team,dc30dd3dd9705543afb7,2026-02-01T13:00,Real Madrid,Vallecano,2,1
-82,2026-02-07,西甲,LALIGA,巴塞罗那,马略卡,3,0,unique,1,exact,d12ee85c585b6f6d4017,2026-02-07T15:15,Barcelona,Mallorca,3,0
-83,2026-02-08,西甲,LALIGA,瓦伦西亚,皇家马德里,0,2,unique,1,exact,bef7ad059fba0625c61e,2026-02-08T20:00,Valencia,Real Madrid,0,2
-84,2026-02-08,西甲,LALIGA,马德里竞技,皇家贝蒂斯,0,1,unresolved,0,exact,,,,,,
-85,2026-02-08,西甲,LALIGA,阿拉维斯,赫塔费,0,2,unique,1,fuzzy_league_date_score_team,153e2480fe9b9e777ce7,2026-02-08T13:00,Alaves,Getafe,0,2
-86,2026-02-09,西甲,LALIGA,比利亚雷亚尔,西班牙人,4,1,unique,1,fuzzy_league_date_score_team,362b16217cf4a7cb6f2b,2026-02-09T20:00,Villarreal,Espanol,4,1
-87,2026-02-14,西甲,LALIGA,皇家马德里,皇家社会,4,1,unique,1,fuzzy_league_date_score_team,8184b2193eb3e32aa403,2026-02-14T20:00,Real Madrid,Sociedad,4,1
-88,2026-02-14,西甲,LALIGA,赫塔费,比利亚雷亚尔,2,1,unique,1,exact,ae3d2ce987649e3d7856,2026-02-14T15:15,Getafe,Villarreal,2,1
-89,2026-02-14,西甲,LALIGA,塞维利亚,阿拉维斯,1,1,unique,1,fuzzy_league_date_score_team,dfbbc7710d80d6423e6a,2026-02-14T17:30,Sevilla,Alaves,1,1
-90,2026-02-15,西甲,LALIGA,巴列卡诺,马德里竞技,3,0,unique,1,fuzzy_league_date_score_team,c7e8a757c5c073f82582,2026-02-15T15:15,Vallecano,Ath Madrid,3,0
-91,2026-02-16,西甲,LALIGA,赫罗纳,巴塞罗那,2,1,unique,1,exact,02e6f7a40955fb850d80,2026-02-16T20:00,Girona,Barcelona,2,1
-92,2026-02-18,西甲,LALIGA,莱万特,比利亚雷亚尔,0,1,unique,1,exact,f01af4af0616c1949914,2026-02-18T19:00,Levante,Villarreal,0,1
-93,2026-02-21,西甲,LALIGA,奥萨苏纳,皇家马德里,2,1,unique,1,exact,18539b1f6927591f14d5,2026-02-21T17:30,Osasuna,Real Madrid,2,1
-94,2026-02-21,西甲,LALIGA,马德里竞技,西班牙人,4,2,unique,1,fuzzy_league_date_score_team,ce272cbf1019e9f32a6e,2026-02-21T20:00,Ath Madrid,Espanol,4,2
-95,2026-02-22,西甲,LALIGA,巴塞罗那,莱万特,3,0,unique,1,exact,103c77a2dc03a12a6d0b,2026-02-22T15:15,Barcelona,Levante,3,0
-96,2026-02-22,西甲,LALIGA,比利亚雷亚尔,瓦伦西亚,2,1,unique,1,exact,111d3d0fb58344f0b74d,2026-02-22T20:00,Villarreal,Valencia,2,1
-97,2026-02-23,西甲,LALIGA,阿拉维斯,赫罗纳,2,2,unique,1,fuzzy_league_date_score_team,4d9e980fb1f2bbfcc77a,2026-02-23T20:00,Alaves,Girona,2,2
-98,2026-02-28,西甲,LALIGA,巴塞罗那,比利亚雷亚尔,4,1,unique,1,exact,ea83b5fc69865fbd96a9,2026-02-28T15:15,Barcelona,Villarreal,4,1
-99,2026-02-28,西甲,LALIGA,皇家奥维耶多,马德里竞技,0,1,unresolved,0,exact,,,,,,
-100,2026-02-28,西甲,LALIGA,马略卡,皇家社会,0,1,unique,1,fuzzy_league_date_score_team,4ed9d8649334e8562baf,2026-02-28T17:30,Mallorca,Sociedad,0,1
-101,2026-02-06,西甲,LALIGA,塞尔塔,奥萨苏纳,1,2,unique,1,fuzzy_league_date_score_team,bfd79000cf1ff272fc6b,2026-02-06T20:00,Celta,Osasuna,1,2
-102,2026-02-07,西甲,LALIGA,皇家社会,埃尔切,3,1,unique,1,fuzzy_league_date_score_team,d6b51e58165ec8397f6a,2026-02-07T20:00,Sociedad,Elche,3,1
-103,2026-02-08,西甲,LALIGA,毕尔巴鄂竞技,莱万特,4,2,unique,1,fuzzy_league_date_score_team,113deedda2eb55a81e4a,2026-02-08T15:15,Ath Bilbao,Levante,4,2
-104,2026-02-08,西甲,LALIGA,塞维利亚,赫罗纳,1,1,unique,1,exact,9aac803d030fb1154b8f,2026-02-08T15:15,Sevilla,Girona,1,1
-105,2026-02-13,西甲,LALIGA,埃尔切,奥萨苏纳,0,0,unique,1,exact,fe874a09f5441046a567,2026-02-13T20:00,Elche,Osasuna,0,0
-106,2026-02-14,西甲,LALIGA,西班牙人,塞尔塔,2,2,unique,1,fuzzy_league_date_score_team,9e10881b116fa4fc37ba,2026-02-14T13:00,Espanol,Celta,2,2
-107,2026-02-15,西甲,LALIGA,皇家奥维耶多,毕尔巴鄂竞技,1,2,unresolved,0,exact,,,,,,
-108,2026-02-15,西甲,LALIGA,莱万特,瓦伦西亚,0,2,unique,1,exact,ae6f50136ecb1148c4f0,2026-02-15T17:30,Levante,Valencia,0,2
-109,2026-02-15,西甲,LALIGA,马略卡,皇家贝蒂斯,1,2,unique,1,fuzzy_league_date_score_team,1d4f38ca39c460713a59,2026-02-15T20:00,Mallorca,Betis,1,2
-110,2026-02-20,西甲,LALIGA,毕尔巴鄂竞技,埃尔切,2,1,unique,1,fuzzy_league_date_score_team,afbd2412d80b49d0bfa9,2026-02-20T20:00,Ath Bilbao,Elche,2,1
-111,2026-02-21,西甲,LALIGA,皇家社会,皇家奥维耶多,3,3,unique,1,fuzzy_league_date_score_team,7274d4ab40beeb829760,2026-02-21T13:00,Sociedad,Oviedo,3,3
-112,2026-02-21,西甲,LALIGA,皇家贝蒂斯,巴列卡诺,1,1,unique,1,fuzzy_league_date_score_team,839bbd7cf1bb69af7c6d,2026-02-21T15:15,Betis,Vallecano,1,1
-113,2026-02-22,西甲,LALIGA,赫塔费,塞维利亚,0,1,unique,1,exact,453d2a6fd2970c673b5c,2026-02-22T13:00,Getafe,Sevilla,0,1
-114,2026-02-22,西甲,LALIGA,塞尔塔,马略卡,2,0,unique,1,fuzzy_league_date_score_team,a78a521a0f7388089650,2026-02-22T17:30,Celta,Mallorca,2,0
-115,2026-02-27,西甲,LALIGA,莱万特,阿拉维斯,2,0,unique,1,fuzzy_league_date_score_team,d6d844b6352bd6a0b98a,2026-02-27T20:00,Levante,Alaves,2,0
-116,2026-02-28,西甲,LALIGA,巴列卡诺,毕尔巴鄂竞技,1,1,unresolved,0,exact,,,,,,
-117,2026-03-01,西甲,LALIGA,埃尔切,西班牙人,2,2,unique,1,fuzzy_league_date_score_team,ef794e4ed271f7361d3e,2026-03-01T13:00,Elche,Espanol,2,2
-118,2026-03-01,西甲,LALIGA,瓦伦西亚,奥萨苏纳,1,0,unique,1,exact,85842e698e30d81dd70b,2026-03-01T15:15,Valencia,Osasuna,1,0
-119,2026-03-01,西甲,LALIGA,皇家贝蒂斯,塞维利亚,2,2,unique,1,fuzzy_league_date_score_team,be6853d512a59f9a8a7b,2026-03-01T17:30,Betis,Sevilla,2,2
-120,2026-03-01,西甲,LALIGA,赫罗纳,塞尔塔,1,2,unique,1,fuzzy_league_date_score_team,98fa2e062a090f2671f1,2026-03-01T20:00,Girona,Celta,1,2
-121,2026-03-02,西甲,LALIGA,皇家马德里,赫塔费,0,1,unique,1,exact,3efdd96c95e89ce7990e,2026-03-02T20:00,Real Madrid,Getafe,0,1
-122,2026-03-06,西甲,LALIGA,塞尔塔,皇家马德里,1,2,unique,1,fuzzy_league_date_score_team,fb8492ef58895fe80f58,2026-03-06T20:00,Celta,Real Madrid,1,2
-123,2026-03-07,西甲,LALIGA,奥萨苏纳,马略卡,2,2,unique,1,exact,60c37cecb4b6be06213b,2026-03-07T13:00,Osasuna,Mallorca,2,2
-124,2026-03-07,西甲,LALIGA,莱万特,赫罗纳,1,1,unique,1,exact,3e2a8b2291c90bce1929,2026-03-07T15:15,Levante,Girona,1,1
-125,2026-03-07,西甲,LALIGA,马德里竞技,皇家社会,3,2,unique,1,fuzzy_league_date_score_team,8442a42ea23e270ff88d,2026-03-07T17:30,Ath Madrid,Sociedad,3,2
-126,2026-03-07,西甲,LALIGA,毕尔巴鄂竞技,巴塞罗那,0,1,unique,1,fuzzy_league_date_score_team,09b5faef0204b0832d84,2026-03-07T20:00,Ath Bilbao,Barcelona,0,1
-127,2026-03-08,西甲,LALIGA,比利亚雷亚尔,埃尔切,2,1,unique,1,exact,0392e9e0ea0289397ea5,2026-03-08T13:00,Villarreal,Elche,2,1
-128,2026-03-08,西甲,LALIGA,赫塔费,皇家贝蒂斯,2,0,unique,1,fuzzy_league_date_score_team,577adf1057e4f7ffa1ad,2026-03-08T15:15,Getafe,Betis,2,0
-129,2026-03-08,西甲,LALIGA,塞维利亚,巴列卡诺,1,1,unique,1,fuzzy_league_date_score_team,172537abd61257182af3,2026-03-08T17:30,Sevilla,Vallecano,1,1
-130,2026-03-08,西甲,LALIGA,瓦伦西亚,阿拉维斯,3,2,unique,1,fuzzy_league_date_score_team,c09d3fb287ed89d418e7,2026-03-08T20:00,Valencia,Alaves,3,2
-131,2026-03-09,西甲,LALIGA,西班牙人,皇家奥维耶多,1,1,unique,1,fuzzy_league_date_score_team,13c4e7509f7350972b96,2026-03-09T20:00,Espanol,Oviedo,1,1
-132,2026-03-13,西甲,LALIGA,阿拉维斯,比利亚雷亚尔,1,1,unique,1,fuzzy_league_date_score_team,d2e08929054019767e5d,2026-03-13T20:00,Alaves,Villarreal,1,1
-133,2026-03-14,西甲,LALIGA,赫罗纳,毕尔巴鄂竞技,3,0,unique,1,fuzzy_league_date_score_team,00a5634902c85625ee07,2026-03-14T13:00,Girona,Ath Bilbao,3,0
-134,2026-03-14,西甲,LALIGA,马德里竞技,赫塔费,1,0,unique,1,fuzzy_league_date_score_team,f38bab5c9cbbebc30fb5,2026-03-14T15:15,Ath Madrid,Getafe,1,0
-135,2026-03-14,西甲,LALIGA,皇家奥维耶多,瓦伦西亚,1,0,unique,1,fuzzy_league_date_score_team,933080e942bcafbbc064,2026-03-14T17:30,Oviedo,Valencia,1,0
-136,2026-03-14,西甲,LALIGA,皇家马德里,埃尔切,4,1,unique,1,exact,ccbe3355a26142e415b7,2026-03-14T20:00,Real Madrid,Elche,4,1
-137,2026-03-15,西甲,LALIGA,马略卡,西班牙人,2,1,unique,1,fuzzy_league_date_score_team,f57d856ff6044b69e014,2026-03-15T13:00,Mallorca,Espanol,2,1
-138,2026-03-15,西甲,LALIGA,巴塞罗那,塞维利亚,5,2,unique,1,exact,0f48151418672b4580b4,2026-03-15T15:15,Barcelona,Sevilla,5,2
-139,2026-03-15,西甲,LALIGA,皇家贝蒂斯,塞尔塔,1,1,unresolved,0,exact,,,,,,
-140,2026-03-15,西甲,LALIGA,皇家社会,奥萨苏纳,3,1,unique,1,fuzzy_league_date_score_team,a1d669777ef5866bae29,2026-03-15T20:00,Sociedad,Osasuna,3,1
-141,2026-03-16,西甲,LALIGA,巴列卡诺,莱万特,1,1,unique,1,fuzzy_league_date_score_team,811e443974f271d3439f,2026-03-16T20:00,Vallecano,Levante,1,1
-142,2026-03-20,西甲,LALIGA,比利亚雷亚尔,皇家社会,3,1,unique,1,fuzzy_league_date_score_team,56ce4662b55f393623c2,2026-03-20T20:00,Villarreal,Sociedad,3,1
-143,2026-03-21,西甲,LALIGA,埃尔切,马略卡,2,1,unique,1,exact,4f290c014536c1bb736b,2026-03-21T13:00,Elche,Mallorca,2,1
-144,2026-03-21,西甲,LALIGA,西班牙人,赫塔费,1,2,unique,1,fuzzy_league_date_score_team,f17243480a199e91d3ba,2026-03-21T15:15,Espanol,Getafe,1,2
-145,2026-03-21,西甲,LALIGA,莱万特,皇家奥维耶多,4,2,unique,1,fuzzy_league_date_score_team,4264e29109dae5d2d82f,2026-03-21T17:30,Levante,Oviedo,4,2
-146,2026-03-21,西甲,LALIGA,奥萨苏纳,赫罗纳,1,0,unique,1,exact,7ebed655ae8a8486fa8d,2026-03-21T17:30,Osasuna,Girona,1,0
-147,2026-03-21,西甲,LALIGA,塞维利亚,瓦伦西亚,0,2,unique,1,exact,5c772c3833253ca4319e,2026-03-21T20:00,Sevilla,Valencia,0,2
-148,2026-03-22,西甲,LALIGA,巴塞罗那,巴列卡诺,1,0,unique,1,fuzzy_league_date_score_team,fb3cb941926e3411a2b0,2026-03-22T13:00,Barcelona,Vallecano,1,0
-149,2026-03-22,西甲,LALIGA,塞尔塔,阿拉维斯,3,4,unresolved,0,exact,,,,,,
-150,2026-03-22,西甲,LALIGA,毕尔巴鄂竞技,皇家贝蒂斯,2,1,unresolved,0,exact,,,,,,
-151,2026-03-22,西甲,LALIGA,皇家马德里,马德里竞技,3,2,unique,1,fuzzy_league_date_score_team,30d1f682de653fb798b9,2026-03-22T20:00,Real Madrid,Ath Madrid,3,2
-152,2026-04-04,西甲,LALIGA,皇家马德里,瓦伦西亚,2,1,unresolved,0,exact,,,,,,
-153,2026-04-04,西甲,LALIGA,巴塞罗那,马德里竞技,3,2,unresolved,0,exact,,,,,,
-154,2026-04-05,西甲,LALIGA,比利亚雷亚尔,赫塔费,2,0,unresolved,0,exact,,,,,,
-155,2026-04-05,西甲,LALIGA,皇家社会,塞维利亚,1,0,unresolved,0,exact,,,,,,
-156,2026-04-05,西甲,LALIGA,皇家贝蒂斯,赫罗纳,2,1,unresolved,0,exact,,,,,,
-157,2026-04-06,西甲,LALIGA,阿拉维斯,奥萨苏纳,1,1,unresolved,0,exact,,,,,,
-158,2026-04-06,西甲,LALIGA,塞尔塔,西班牙人,2,0,unresolved,0,exact,,,,,,
-159,2026-04-06,西甲,LALIGA,马略卡,莱万特,1,1,unresolved,0,exact,,,,,,
-160,2026-04-10,西甲,LALIGA,皇家马德里,皇家社会,3,1,unresolved,0,exact,,,,,,
-161,2026-04-11,西甲,LALIGA,巴塞罗那,赫罗纳,4,1,unresolved,0,exact,,,,,,
-162,2026-04-11,西甲,LALIGA,马德里竞技,皇家贝蒂斯,2,0,unresolved,0,exact,,,,,,
-163,2026-04-12,西甲,LALIGA,瓦伦西亚,毕尔巴鄂竞技,1,1,unresolved,0,exact,,,,,,
-164,2026-04-12,西甲,LALIGA,塞维利亚,比利亚雷亚尔,0,2,unresolved,0,exact,,,,,,
-165,2026-04-13,西甲,LALIGA,赫塔费,阿拉维斯,1,0,unresolved,0,exact,,,,,,
-166,2026-04-18,西甲,LALIGA,皇家社会,巴塞罗那,1,3,unresolved,0,exact,,,,,,
-167,2026-04-19,西甲,LALIGA,皇家马德里,赫塔费,2,0,unresolved,0,exact,,,,,,
-168,2026-04-19,西甲,LALIGA,毕尔巴鄂竞技,马德里竞技,1,2,unresolved,0,exact,,,,,,
-169,2026-04-20,西甲,LALIGA,皇家贝蒂斯,瓦伦西亚,2,1,unresolved,0,exact,,,,,,
-170,2026-04-25,西甲,LALIGA,巴塞罗那,皇家马德里,2,2,unresolved,0,exact,,,,,,
-171,2026-04-26,西甲,LALIGA,比利亚雷亚尔,皇家社会,1,0,unresolved,0,exact,,,,,,
-172,2026-04-10,西甲,LALIGA,皇家马德里,赫罗纳,1,1,unique,1,exact,7778d467442232d69c6c,2026-04-10T20:00,Real Madrid,Girona,1,1
-173,2026-04-11,西甲,LALIGA,皇家社会,阿拉维斯,3,3,unresolved,0,exact,,,,,,
-174,2026-04-11,西甲,LALIGA,埃尔切,瓦伦西亚,1,0,unique,1,exact,579d4c612890fff77965,2026-04-11T15:15,Elche,Valencia,1,0
-175,2026-04-11,西甲,LALIGA,巴塞罗那,西班牙人,4,1,unique,1,fuzzy_league_date_score_team,77bb5ac91ee586733278,2026-04-11T17:30,Barcelona,Espanol,4,1
-176,2026-04-11,西甲,LALIGA,塞维利亚,马德里竞技,2,1,unique,1,fuzzy_league_date_score_team,6131533594a8e7d07ff2,2026-04-11T20:00,Sevilla,Ath Madrid,2,1
-177,2026-04-12,西甲,LALIGA,奥萨苏纳,皇家贝蒂斯,1,1,unique,1,fuzzy_league_date_score_team,7284ac78debb7ee614e9,2026-04-12T13:00,Osasuna,Betis,1,1
-178,2026-04-12,西甲,LALIGA,马略卡,巴列卡诺,3,0,unique,1,fuzzy_league_date_score_team,0ea10665f8d8c9bbf014,2026-04-12T15:15,Mallorca,Vallecano,3,0
-179,2026-04-12,西甲,LALIGA,塞尔塔,皇家奥维耶多,0,3,unique,1,fuzzy_league_date_score_team,ce0dd19e2a1aa4f07978,2026-04-12T17:30,Celta,Oviedo,0,3
-180,2026-04-12,西甲,LALIGA,毕尔巴鄂竞技,比利亚雷亚尔,1,2,unique,1,fuzzy_league_date_score_team,95baf3e51f64e701e5c1,2026-04-12T20:00,Ath Bilbao,Villarreal,1,2
-181,2026-04-13,西甲,LALIGA,莱万特,赫塔费,1,0,unique,1,exact,a8b96b91753cb723db99,2026-04-13T20:00,Levante,Getafe,1,0
-182,2026-04-24,西甲,LALIGA,皇家贝蒂斯,皇家马德里,1,1,unique,1,fuzzy_league_date_score_team,d2f43d746e3443efb8fa,2026-04-24T20:00,Betis,Real Madrid,1,1
-183,2026-04-25,西甲,LALIGA,阿拉维斯,马略卡,2,1,unique,1,fuzzy_league_date_score_team,90bded8c3db6fb576193,2026-04-25T13:00,Alaves,Mallorca,2,1
-184,2026-04-25,西甲,LALIGA,赫塔费,巴塞罗那,0,2,unique,1,exact,c220862c654911f247ea,2026-04-25T15:15,Getafe,Barcelona,0,2
-185,2026-04-25,西甲,LALIGA,瓦伦西亚,赫罗纳,2,1,unique,1,exact,9e17b9e1a33da63edc35,2026-04-25T17:30,Valencia,Girona,2,1
-186,2026-04-25,西甲,LALIGA,马德里竞技,毕尔巴鄂竞技,3,2,unresolved,0,exact,,,,,,
-187,2026-04-26,西甲,LALIGA,巴列卡诺,皇家社会,3,3,unique,1,fuzzy_league_date_score_team,639af764f64f42fa6573,2026-04-26T13:00,Vallecano,Sociedad,3,3
-188,2026-04-26,西甲,LALIGA,皇家奥维耶多,埃尔切,1,2,unique,1,fuzzy_league_date_score_team,59ef0bf4148e4a521001,2026-04-26T15:15,Oviedo,Elche,1,2
-189,2026-04-26,西甲,LALIGA,奥萨苏纳,塞维利亚,2,1,unique,1,exact,1b7c201f74fce045a98a,2026-04-26T17:30,Osasuna,Sevilla,2,1
-190,2026-04-26,西甲,LALIGA,比利亚雷亚尔,塞尔塔,2,1,unique,1,fuzzy_league_date_score_team,6577676959c65974fc92,2026-04-26T20:00,Villarreal,Celta,2,1
-191,2026-04-27,西甲,LALIGA,西班牙人,莱万特,0,0,unique,1,fuzzy_league_date_score_team,9cdc009a5bec3d344398,2026-04-27T20:00,Espanol,Levante,0,0
-192,2026-04-21,西甲,LALIGA,毕尔巴鄂竞技,奥萨苏纳,1,0,unique,1,fuzzy_league_date_score_team,996f40dd79827106b9c5,2026-04-21T18:00,Ath Bilbao,Osasuna,1,0
-193,2026-04-21,西甲,LALIGA,马略卡,瓦伦西亚,1,1,unique,1,exact,e30abf32dcaf05b99113,2026-04-21T18:00,Mallorca,Valencia,1,1
-194,2026-04-21,西甲,LALIGA,皇家马德里,阿拉维斯,2,1,unique,1,fuzzy_league_date_score_team,5e1eb207829c53ec4769,2026-04-21T20:30,Real Madrid,Alaves,2,1
-195,2026-04-21,西甲,LALIGA,赫罗纳,皇家贝蒂斯,2,3,unique,1,fuzzy_league_date_score_team,50801754d27032a01909,2026-04-21T20:30,Girona,Betis,2,3
-196,2026-04-22,西甲,LALIGA,埃尔切,马德里竞技,3,2,unique,1,fuzzy_league_date_score_team,82dbdda53d4b560165cf,2026-04-22T18:00,Elche,Ath Madrid,3,2
-197,2026-04-22,西甲,LALIGA,皇家社会,赫塔费,0,1,unique,1,fuzzy_league_date_score_team,9ab6b63af6d960da6d8c,2026-04-22T19:00,Sociedad,Getafe,0,1
-198,2026-04-22,西甲,LALIGA,巴塞罗那,塞尔塔,1,0,unique,1,fuzzy_league_date_score_team,96ce78ed5973ef8c8f89,2026-04-22T20:30,Barcelona,Celta,1,0
-199,2026-04-23,西甲,LALIGA,莱万特,塞维利亚,2,0,unique,1,exact,9e19d1c1078ed7b35e1d,2026-04-23T18:00,Levante,Sevilla,2,0
-200,2026-04-23,西甲,LALIGA,巴列卡诺,西班牙人,1,0,unique,1,fuzzy_league_date_score_team,b4f0c92514a6c13148b8,2026-04-23T19:00,Vallecano,Espanol,1,0
-201,2026-04-23,西甲,LALIGA,皇家奥维耶多,比利亚雷亚尔,1,1,unique,1,fuzzy_league_date_score_team,96585ced303cdec8c7ea,2026-04-23T20:30,Oviedo,Villarreal,1,1
-202,2026-05-01,西甲,LALIGA,赫罗纳,马略卡,0,1,unique,1,exact,e9d654c30a63869a9983,2026-05-01T20:00,Girona,Mallorca,0,1
-203,2026-05-02,西甲,LALIGA,比利亚雷亚尔,莱万特,5,1,unique,1,exact,14bea22c47e2a6961e4b,2026-05-02T13:00,Villarreal,Levante,5,1
-204,2026-05-02,西甲,LALIGA,瓦伦西亚,马德里竞技,0,2,unique,1,fuzzy_league_date_score_team,352278a7e43da26a05f7,2026-05-02T15:15,Valencia,Ath Madrid,0,2
-205,2026-05-02,西甲,LALIGA,阿拉维斯,毕尔巴鄂竞技,2,4,unresolved,0,exact,,,,,,
-206,2026-05-02,西甲,LALIGA,奥萨苏纳,巴塞罗那,1,2,unique,1,exact,9199e6531aeceb380d17,2026-05-02T20:00,Osasuna,Barcelona,1,2
-207,2026-05-03,西甲,LALIGA,塞尔塔,埃尔切,3,1,unique,1,fuzzy_league_date_score_team,ff6abc3b0c8e93b9b6b1,2026-05-03T13:00,Celta,Elche,3,1
-208,2026-05-03,西甲,LALIGA,赫塔费,巴列卡诺,0,2,unique,1,fuzzy_league_date_score_team,c83ebb6542bd08afa917,2026-05-03T15:15,Getafe,Vallecano,0,2
-209,2026-05-03,西甲,LALIGA,皇家贝蒂斯,皇家奥维耶多,3,0,unique,1,fuzzy_league_date_score_team,42dbda8b42a220b541d4,2026-05-03T17:30,Betis,Oviedo,3,0
-210,2026-05-03,西甲,LALIGA,西班牙人,皇家马德里,0,2,unique,1,fuzzy_league_date_score_team,8ec73ff7164c4b6d8651,2026-05-03T20:00,Espanol,Real Madrid,0,2
-211,2026-05-04,西甲,LALIGA,塞维利亚,皇家社会,1,0,unique,1,fuzzy_league_date_score_team,2606aaef19d6aab196b2,2026-05-04T20:00,Sevilla,Sociedad,1,0
-212,2026-05-08,西甲,LALIGA,莱万特,奥萨苏纳,3,2,unique,1,exact,8d24a032be19497e9420,2026-05-08T20:00,Levante,Osasuna,3,2
-213,2026-05-09,西甲,LALIGA,埃尔切,阿拉维斯,1,1,unique,1,fuzzy_league_date_score_team,fb99b05b266546b66eb4,2026-05-09T13:00,Elche,Alaves,1,1
-214,2026-05-09,西甲,LALIGA,塞维利亚,西班牙人,2,1,unique,1,fuzzy_league_date_score_team,4ef319206c62518b7c1b,2026-05-09T15:15,Sevilla,Espanol,2,1
-215,2026-05-09,西甲,LALIGA,马德里竞技,塞尔塔,0,1,unresolved,0,exact,,,,,,
-216,2026-05-09,西甲,LALIGA,皇家社会,皇家贝蒂斯,2,2,unique,1,fuzzy_league_date_score_team,a60befefdcf3b85949d6,2026-05-09T20:00,Sociedad,Betis,2,2
-217,2026-05-10,西甲,LALIGA,马略卡,比利亚雷亚尔,1,1,unique,1,exact,cd08b5fee20b207efd3b,2026-05-10T13:00,Mallorca,Villarreal,1,1
-218,2026-05-10,西甲,LALIGA,毕尔巴鄂竞技,瓦伦西亚,0,1,unique,1,fuzzy_league_date_score_team,f5995c3df80772e9517c,2026-05-10T15:15,Ath Bilbao,Valencia,0,1
-219,2026-05-10,西甲,LALIGA,皇家奥维耶多,赫塔费,0,0,unique,1,fuzzy_league_date_score_team,b6fb0c4bd87f19a6cdc0,2026-05-10T17:30,Oviedo,Getafe,0,0
-220,2026-05-10,西甲,LALIGA,巴塞罗那,皇家马德里,2,0,unique,1,exact,f10f1bbd29f573999efb,2026-05-10T20:00,Barcelona,Real Madrid,2,0
-221,2026-05-11,西甲,LALIGA,巴列卡诺,赫罗纳,1,1,unique,1,fuzzy_league_date_score_team,bca50d3fd5ea44f0b115,2026-05-11T20:00,Vallecano,Girona,1,1
-222,2026-05-12,西甲,LALIGA,塞尔塔,莱万特,2,3,unique,1,fuzzy_league_date_score_team,a2a8c4ec1907bfe2ba55,2026-05-12T18:00,Celta,Levante,2,3
-223,2026-05-12,西甲,LALIGA,皇家贝蒂斯,埃尔切,2,1,unique,1,fuzzy_league_date_score_team,e4247fbf762956b3302a,2026-05-12T19:00,Betis,Elche,2,1
-224,2026-05-12,西甲,LALIGA,奥萨苏纳,马德里竞技,1,2,unique,1,fuzzy_league_date_score_team,a1a178aee744c7db43f1,2026-05-12T20:30,Osasuna,Ath Madrid,1,2
-225,2026-05-13,西甲,LALIGA,西班牙人,毕尔巴鄂竞技,2,0,unresolved,0,exact,,,,,,
-226,2026-05-13,西甲,LALIGA,比利亚雷亚尔,塞维利亚,2,3,unique,1,exact,6f0d3b1261cdb4fba716,2026-05-13T18:00,Villarreal,Sevilla,2,3
-227,2026-05-13,西甲,LALIGA,阿拉维斯,巴塞罗那,1,0,unique,1,fuzzy_league_date_score_team,5095d4cac43bc691798e,2026-05-13T20:30,Alaves,Barcelona,1,0
-228,2026-05-13,西甲,LALIGA,赫塔费,马略卡,3,1,unique,1,exact,84d446d9c9b84d4e8ee5,2026-05-13T20:30,Getafe,Mallorca,3,1
-229,2026-05-14,西甲,LALIGA,瓦伦西亚,巴列卡诺,1,1,unique,1,fuzzy_league_date_score_team,0d78626f3defde98707d,2026-05-14T18:00,Valencia,Vallecano,1,1
-230,2026-05-14,西甲,LALIGA,赫罗纳,皇家社会,1,1,unique,1,fuzzy_league_date_score_team,8db50818c4bfb2c0956c,2026-05-14T19:00,Girona,Sociedad,1,1
-231,2026-05-14,西甲,LALIGA,皇家马德里,皇家奥维耶多,2,0,unique,1,fuzzy_league_date_score_team,f889e7059202f6602dd5,2026-05-14T20:30,Real Madrid,Oviedo,2,0
-232,2026-05-17,西甲,LALIGA,毕尔巴鄂竞技,塞尔塔,1,1,unresolved,0,exact,,,,,,
-233,2026-05-17,西甲,LALIGA,马德里竞技,赫罗纳,1,0,unique,1,fuzzy_league_date_score_team,b52a62c263fa789d75b9,2026-05-17T18:00,Ath Madrid,Girona,1,0
-234,2026-05-17,西甲,LALIGA,埃尔切,赫塔费,1,0,unique,1,exact,0920d19018b6a28df21f,2026-05-17T18:00,Elche,Getafe,1,0
-235,2026-05-17,西甲,LALIGA,莱万特,马略卡,2,0,unique,1,exact,a07e75764afd3e6a5ab9,2026-05-17T18:00,Levante,Mallorca,2,0
-236,2026-05-17,西甲,LALIGA,巴列卡诺,比利亚雷亚尔,2,0,unique,1,fuzzy_league_date_score_team,9f6e5280851f20a2304d,2026-05-17T18:00,Vallecano,Villarreal,2,0
-237,2026-05-17,西甲,LALIGA,皇家社会,瓦伦西亚,3,4,unique,1,fuzzy_league_date_score_team,17fa07ee265469c3f9c7,2026-05-17T18:00,Sociedad,Valencia,3,4
-238,2026-05-17,西甲,LALIGA,皇家奥维耶多,阿拉维斯,0,1,unresolved,0,exact,,,,,,
-239,2026-05-17,西甲,LALIGA,奥萨苏纳,西班牙人,1,2,unique,1,fuzzy_league_date_score_team,6c1e36b904175a5d97a2,2026-05-17T18:00,Osasuna,Espanol,1,2
-240,2026-05-17,西甲,LALIGA,塞维利亚,皇家马德里,0,1,unique,1,exact,f15b5f6e94e0527e3560,2026-05-17T18:00,Sevilla,Real Madrid,0,1
-241,2026-05-17,西甲,LALIGA,巴塞罗那,皇家贝蒂斯,3,1,unique,1,fuzzy_league_date_score_team,28a8eb514d935f78c33d,2026-05-17T20:15,Barcelona,Betis,3,1
-242,2026-05-23,西甲,LALIGA,阿拉维斯,巴列卡诺,1,2,unresolved,0,exact,,,,,,
-243,2026-05-23,西甲,LALIGA,皇家贝蒂斯,莱万特,2,1,unique,1,fuzzy_league_date_score_team,dfd9e32af26b9cc75e36,2026-05-23T20:00,Betis,Levante,2,1
-244,2026-05-23,西甲,LALIGA,塞尔塔,塞维利亚,1,0,unique,1,fuzzy_league_date_score_team,dd5a1074f931fa4a4ec0,2026-05-23T20:00,Celta,Sevilla,1,0
-245,2026-05-23,西甲,LALIGA,西班牙人,皇家社会,1,1,unique,1,fuzzy_league_date_score_team,65e86e151f3deaaf2f2d,2026-05-23T20:00,Espanol,Sociedad,1,1
-246,2026-05-23,西甲,LALIGA,赫塔费,奥萨苏纳,1,0,unique,1,exact,e1309619e2c347182c4a,2026-05-23T20:00,Getafe,Osasuna,1,0
-247,2026-05-23,西甲,LALIGA,马略卡,皇家奥维耶多,3,0,unique,1,fuzzy_league_date_score_team,e0a1452530e267a7c43a,2026-05-23T20:00,Mallorca,Oviedo,3,0
-248,2026-05-23,西甲,LALIGA,皇家马德里,毕尔巴鄂竞技,4,2,unique,1,fuzzy_league_date_score_team,197c663c699598e4114f,2026-05-23T20:00,Real Madrid,Ath Bilbao,4,2
-249,2026-05-23,西甲,LALIGA,瓦伦西亚,巴塞罗那,3,1,unique,1,exact,4ca21c8c977b8db10b3a,2026-05-23T20:00,Valencia,Barcelona,3,1
-250,2026-05-23,西甲,LALIGA,赫罗纳,埃尔切,1,1,unique,1,exact,ade66a8983be93aaedef,2026-05-23T20:00,Girona,Elche,1,1
-251,2026-05-24,西甲,LALIGA,比利亚雷亚尔,马德里竞技,5,1,unique,1,fuzzy_league_date_score_team,4c36edabf1824f9902a2,2026-05-24T20:00,Villarreal,Ath Madrid,5,1
-252,2026-04-03,西甲,LALIGA,巴列卡诺,埃尔切,1,0,unique,1,fuzzy_league_date_score_team,81a0df34238721332e9e,2026-04-03T20:00,Vallecano,Elche,1,0
-253,2026-04-04,西甲,LALIGA,马德里竞技,巴塞罗那,1,2,unique,1,fuzzy_league_date_score_team,c779e2c23e23235f2e34,2026-04-04T20:00,Ath Madrid,Barcelona,1,2
-254,2026-04-04,西甲,LALIGA,皇家贝蒂斯,西班牙人,0,0,unique,1,fuzzy_league_date_score_team,08c423f529b7d6665160,2026-04-04T17:30,Betis,Espanol,0,0
-255,2026-04-04,西甲,LALIGA,马略卡,皇家马德里,2,1,unique,1,exact,6118c2157d8a60d6c5dc,2026-04-04T15:15,Mallorca,Real Madrid,2,1
-256,2026-04-04,西甲,LALIGA,皇家社会,莱万特,2,0,unique,1,fuzzy_league_date_score_team,95d64ad64f5374f40075,2026-04-04T13:00,Sociedad,Levante,2,0
-257,2026-04-05,西甲,LALIGA,阿拉维斯,奥萨苏纳,2,2,unique,1,fuzzy_league_date_score_team,4b83fb52e83e797a1b4f,2026-04-05T20:00,Alaves,Osasuna,2,2
-258,2026-04-05,西甲,LALIGA,皇家奥维耶多,塞维利亚,1,0,unique,1,fuzzy_league_date_score_team,a12238b7e64125a83ddd,2026-04-05T17:30,Oviedo,Sevilla,1,0
-259,2026-04-05,西甲,LALIGA,赫塔费,毕尔巴鄂竞技,2,0,unique,1,fuzzy_league_date_score_team,a1a8f05d67edd9b229d5,2026-04-05T13:00,Getafe,Ath Bilbao,2,0
-260,2026-04-05,西甲,LALIGA,瓦伦西亚,塞尔塔,2,3,unique,1,fuzzy_league_date_score_team,e99fea31ad95a38c8b85,2026-04-05T15:15,Valencia,Celta,2,3
-261,2026-04-06,西甲,LALIGA,赫罗纳,比利亚雷亚尔,1,0,unique,1,exact,d87bbba6b82aa4a79a03,2026-04-06T20:00,Girona,Villarreal,1,0
-262,2026-05-09,英超,EPL,利物浦,切尔西,1,1,unique,1,exact,ab77d8bf76fd87e36fbb,2026-05-09T12:30,Liverpool,Chelsea,1,1
-263,2026-05-09,英超,EPL,布莱顿,狼队,3,0,unresolved,0,exact,,,,,,
-264,2026-05-09,英超,EPL,富勒姆,伯恩茅斯,0,1,unique,1,fuzzy_league_date_score_team,0c254f3f07edbc607f31,2026-05-09T15:00,Fulham,Bournemouth,0,1
-265,2026-05-09,英超,EPL,桑德兰,曼联,0,0,unique,1,fuzzy_league_date_score_team,01a60ed685ed673a5d3c,2026-05-09T15:00,Sunderland,Man United,0,0
-266,2026-05-09,英超,EPL,曼城,布伦特福德,3,0,unique,1,fuzzy_league_date_score_team,4fc9747458bb082a4b65,2026-05-09T17:30,Man City,Brentford,3,0
-267,2026-05-10,英超,EPL,伯恩利,阿斯顿维拉,2,2,unique,1,exact,4389eb33b2b1960342ec,2026-05-10T14:00,Burnley,Aston Villa,2,2
-268,2026-05-10,英超,EPL,水晶宫,埃弗顿,2,2,unique,1,exact,db10b622a2b5e714a0fd,2026-05-10T14:00,Crystal Palace,Everton,2,2
-269,2026-05-10,英超,EPL,诺丁汉森林,纽卡斯尔联,1,1,unique,1,fuzzy_league_date_score_team,3759a22b015a69ebc687,2026-05-10T14:00,Nott'm Forest,Newcastle,1,1
-270,2026-05-10,英超,EPL,西汉姆联,阿森纳,0,1,unique,1,fuzzy_league_date_score_team,44b29488cf701f457a04,2026-05-10T16:30,West Ham,Arsenal,0,1
-271,2026-05-11,英超,EPL,热刺,利兹联,1,1,unresolved,0,exact,,,,,,
-272,2026-05-15,英超,EPL,阿斯顿维拉,利物浦,4,2,unique,1,exact,8ee38d049c7c5117c4dd,2026-05-15T20:00,Aston Villa,Liverpool,4,2
-273,2026-05-17,英超,EPL,曼联,诺丁汉森林,3,2,unique,1,fuzzy_league_date_score_team,82f44c54dfc6e4dd1473,2026-05-17T12:30,Man United,Nott'm Forest,3,2
-274,2026-05-17,英超,EPL,布伦特福德,水晶宫,2,2,unique,1,exact,e4255297601352de62b5,2026-05-17T15:00,Brentford,Crystal Palace,2,2
-275,2026-05-17,英超,EPL,埃弗顿,桑德兰,1,3,unique,1,exact,ccaf638e9518ebbf4279,2026-05-17T15:00,Everton,Sunderland,1,3
-276,2026-05-17,英超,EPL,利兹联,布莱顿,1,0,unresolved,0,exact,,,,,,
-277,2026-05-17,英超,EPL,狼队,富勒姆,1,1,unresolved,0,exact,,,,,,
-278,2026-05-17,英超,EPL,纽卡斯尔联,西汉姆联,3,1,unique,1,fuzzy_league_date_score_team,dbc30774b4c2007eff3e,2026-05-17T17:30,Newcastle,West Ham,3,1
-279,2026-05-18,英超,EPL,阿森纳,伯恩利,1,0,unique,1,exact,55f3219271dff8cb60cd,2026-05-18T20:00,Arsenal,Burnley,1,0
-280,2026-05-19,英超,EPL,伯恩茅斯,曼城,1,1,unique,1,fuzzy_league_date_score_team,313fc11880a1e20423d2,2026-05-19T19:30,Bournemouth,Man City,1,1
-281,2026-05-19,英超,EPL,切尔西,热刺,2,1,unique,1,fuzzy_league_date_score_team,b1324ef1a9205cce7f98,2026-05-19T20:15,Chelsea,Tottenham,2,1
-282,2026-05-24,英超,EPL,布莱顿,曼联,0,3,unresolved,0,exact,,,,,,
-283,2026-05-24,英超,EPL,伯恩利,狼队,1,1,unresolved,0,exact,,,,,,
-284,2026-05-24,英超,EPL,水晶宫,阿森纳,1,2,unique,1,exact,0fcab6daf687d2a8c788,2026-05-24T16:00,Crystal Palace,Arsenal,1,2
-285,2026-05-24,英超,EPL,富勒姆,纽卡斯尔联,2,0,unique,1,fuzzy_league_date_score_team,be6612403b87f4ebe1b2,2026-05-24T16:00,Fulham,Newcastle,2,0
-286,2026-05-24,英超,EPL,利物浦,布伦特福德,1,1,unique,1,exact,165a848d3f9951184187,2026-05-24T16:00,Liverpool,Brentford,1,1
-287,2026-05-24,英超,EPL,曼城,阿斯顿维拉,1,2,unique,1,fuzzy_league_date_score_team,ae81906ef0a59334030b,2026-05-24T16:00,Man City,Aston Villa,1,2
-288,2026-05-24,英超,EPL,诺丁汉森林,伯恩茅斯,1,1,unique,1,fuzzy_league_date_score_team,07de23b66eebb53abada,2026-05-24T16:00,Nott'm Forest,Bournemouth,1,1
-289,2026-05-24,英超,EPL,桑德兰,切尔西,2,1,unique,1,exact,1d882f000979a2e91dd5,2026-05-24T16:00,Sunderland,Chelsea,2,1
-290,2026-05-24,英超,EPL,热刺,埃弗顿,1,0,unique,1,fuzzy_league_date_score_team,3a133a620a04c5f2080f,2026-05-24T16:00,Tottenham,Everton,1,0
-291,2026-05-24,英超,EPL,西汉姆联,利兹联,3,0,unresolved,0,exact,,,,,,
-292,2026-05-01,英超,EPL,利兹联,伯恩利,3,1,unique,1,fuzzy_league_date_score_team,84064aff6e8fe059c7c2,2026-05-01T20:00,Leeds,Burnley,3,1
-293,2026-05-02,英超,EPL,布伦特福德,西汉姆联,3,0,unique,1,fuzzy_league_date_score_team,00618d8d034c85e87c94,2026-05-02T15:00,Brentford,West Ham,3,0
-294,2026-05-02,英超,EPL,纽卡斯尔联,布莱顿,3,1,unresolved,0,exact,,,,,,
-295,2026-05-02,英超,EPL,狼队,桑德兰,1,1,unresolved,0,exact,,,,,,
-296,2026-05-02,英超,EPL,阿森纳,富勒姆,3,0,unique,1,exact,2020476ee2cae8be7a12,2026-05-02T17:30,Arsenal,Fulham,3,0
-297,2026-05-03,英超,EPL,伯恩茅斯,水晶宫,3,0,unique,1,fuzzy_league_date_score_team,c6335972e4f9ea187549,2026-05-03T14:00,Bournemouth,Crystal Palace,3,0
-298,2026-05-03,英超,EPL,曼联,利物浦,3,2,unique,1,fuzzy_league_date_score_team,105eae8e25ef40f71492,2026-05-03T15:30,Man United,Liverpool,3,2
-299,2026-05-03,英超,EPL,阿斯顿维拉,热刺,1,2,unique,1,fuzzy_league_date_score_team,3b4fcc4a1c138993bb31,2026-05-03T19:00,Aston Villa,Tottenham,1,2
-300,2026-05-04,英超,EPL,切尔西,诺丁汉森林,1,3,unique,1,fuzzy_league_date_score_team,d7724ff14beba8cc4494,2026-05-04T15:00,Chelsea,Nott'm Forest,1,3
-301,2026-05-04,英超,EPL,埃弗顿,曼城,3,3,unique,1,fuzzy_league_date_score_team,cc4c87d31061b81a0532,2026-05-04T20:00,Everton,Man City,3,3
-302,2026-04-24,英超,EPL,桑德兰,诺丁汉森林,0,5,unique,1,fuzzy_league_date_score_team,0962bedf7dc1dc407f48,2026-04-24T20:00,Sunderland,Nott'm Forest,0,5
-303,2026-04-25,英超,EPL,富勒姆,阿斯顿维拉,1,0,unique,1,exact,eb85e1c7d5e9df67eee8,2026-04-25T12:30,Fulham,Aston Villa,1,0
-304,2026-04-25,英超,EPL,利物浦,水晶宫,3,1,unique,1,exact,1f8dd6b2daba6406de15,2026-04-25T15:00,Liverpool,Crystal Palace,3,1
-305,2026-04-25,英超,EPL,西汉姆联,埃弗顿,2,1,unique,1,fuzzy_league_date_score_team,724d510a72ce387f188c,2026-04-25T15:00,West Ham,Everton,2,1
-306,2026-04-25,英超,EPL,狼队,热刺,0,1,unresolved,0,exact,,,,,,
-307,2026-04-25,英超,EPL,阿森纳,纽卡斯尔联,1,0,unique,1,fuzzy_league_date_score_team,8d05c1a851aebeef6315,2026-04-25T17:30,Arsenal,Newcastle,1,0
-308,2026-04-27,英超,EPL,曼联,布伦特福德,2,1,unique,1,fuzzy_league_date_score_team,a534cdaddd1f2442c0d4,2026-04-27T20:00,Man United,Brentford,2,1
-309,2026-04-10,德甲,BUNDESLIGA,奥格斯堡,霍芬海姆,2,2,unique,1,fuzzy_league_date_score_team,a153e6e79532f130f6e4,2026-04-10T19:30,Augsburg,Hoffenheim,2,2
-310,2026-04-11,德甲,BUNDESLIGA,海登海姆,柏林联合,3,1,unique,1,exact,c0c791868a8d0ffab36c,2026-04-11T14:30,Heidenheim,Union Berlin,3,1
-311,2026-04-11,德甲,BUNDESLIGA,沃尔夫斯堡,法兰克福,1,2,unique,1,fuzzy_league_date_score_team,1cac5baee48d125cfb43,2026-04-11T14:30,Wolfsburg,Ein Frankfurt,1,2
-312,2026-04-11,德甲,BUNDESLIGA,RB莱比锡,门兴格拉德巴赫,1,0,unique,1,fuzzy_league_date_score_team,3f70fe8c3a39a1ebd00a,2026-04-11T14:30,RB Leipzig,M'gladbach,1,0
-313,2026-04-11,德甲,BUNDESLIGA,多特蒙德,勒沃库森,0,1,unique,1,fuzzy_league_date_score_team,1beedff03ce87a4d71f7,2026-04-11T14:30,Dortmund,Leverkusen,0,1
-314,2026-04-11,德甲,BUNDESLIGA,圣保利,拜仁慕尼黑,0,5,unique,1,exact,f16dc3e170a433a9a460,2026-04-11T17:30,St Pauli,Bayern Munich,0,5
-315,2026-04-12,德甲,BUNDESLIGA,科隆,云达不莱梅,3,1,unique,1,fuzzy_league_date_score_team,84c7f9964ab124828357,2026-04-12T14:30,FC Koln,Werder Bremen,3,1
-316,2026-04-12,德甲,BUNDESLIGA,斯图加特,汉堡,4,0,unique,1,fuzzy_league_date_score_team,cbf61e6f36940e822bdb,2026-04-12T16:30,Stuttgart,Hamburg,4,0
-317,2026-04-12,德甲,BUNDESLIGA,美因茨,弗赖堡,0,1,unique,1,fuzzy_league_date_score_team,414a33e44be7eca90a20,2026-04-12T18:30,Mainz,Freiburg,0,1
-318,2026-04-17,德甲,BUNDESLIGA,圣保利,科隆,1,1,unique,1,fuzzy_league_date_score_team,2f9df86e30a5766af613,2026-04-17T19:30,St Pauli,FC Koln,1,1
-319,2026-04-18,德甲,BUNDESLIGA,霍芬海姆,多特蒙德,2,1,unique,1,fuzzy_league_date_score_team,cc20f054bb377b6b7347,2026-04-18T14:30,Hoffenheim,Dortmund,2,1
-320,2026-04-18,德甲,BUNDESLIGA,柏林联合,沃尔夫斯堡,1,2,unique,1,exact,291db36b29df0b933988,2026-04-18T14:30,Union Berlin,Wolfsburg,1,2
-321,2026-04-18,德甲,BUNDESLIGA,云达不莱梅,汉堡,3,1,unique,1,fuzzy_league_date_score_team,c4004543977739378feb,2026-04-18T14:30,Werder Bremen,Hamburg,3,1
-322,2026-04-18,德甲,BUNDESLIGA,勒沃库森,奥格斯堡,1,2,unique,1,fuzzy_league_date_score_team,3db157ac27a8468b8b74,2026-04-18T14:30,Leverkusen,Augsburg,1,2
-323,2026-04-18,德甲,BUNDESLIGA,法兰克福,RB莱比锡,1,3,unique,1,fuzzy_league_date_score_team,09d176164c8a7ec57617,2026-04-18T17:30,Ein Frankfurt,RB Leipzig,1,3
-324,2026-04-19,德甲,BUNDESLIGA,弗赖堡,海登海姆,2,1,unique,1,exact,07870bb184b1d9e320b0,2026-04-19T14:30,Freiburg,Heidenheim,2,1
-325,2026-04-19,德甲,BUNDESLIGA,拜仁慕尼黑,斯图加特,4,2,unique,1,fuzzy_league_date_score_team,88133fff2f69cbdb4649,2026-04-19T16:30,Bayern Munich,Stuttgart,4,2
-326,2026-04-19,德甲,BUNDESLIGA,门兴格拉德巴赫,美因茨,1,1,unresolved,0,exact,,,,,,
-327,2026-04-24,德甲,BUNDESLIGA,RB莱比锡,柏林联合,3,1,unique,1,exact,ae112b9a32f90e9e3cb0,2026-04-24T19:30,RB Leipzig,Union Berlin,3,1
-328,2026-04-25,德甲,BUNDESLIGA,科隆,勒沃库森,1,2,unresolved,0,exact,,,,,,
-329,2026-04-25,韩职,KLEAGUE1,대전,서울,1,2,unresolved,0,exact,,,,,,
-330,2026-04-25,韩职,KLEAGUE1,인천,광주,4,0,unresolved,0,exact,,,,,,
-331,2026-04-25,韩职,KLEAGUE1,전북,김천,1,0,unresolved,0,exact,,,,,,
-332,2026-04-25,韩职,KLEAGUE1,제주,안양,1,2,unresolved,0,exact,,,,,,
-333,2026-04-25,韩职,KLEAGUE1,강원,울산,2,0,unresolved,0,exact,,,,,,
-334,2026-04-25,韩职,KLEAGUE1,부천,포항,2,0,unresolved,0,exact,,,,,,
-335,2026-05-05,韩职,KLEAGUE1,서울,안양,0,0,unresolved,0,exact,,,,,,
-336,2026-05-05,韩职,KLEAGUE1,전북,광주,4,0,unresolved,0,exact,,,,,,
-337,2026-05-12,韩职,KLEAGUE1,강원,대전,2,0,unresolved,0,exact,,,,,,
-338,2026-05-12,韩职,KLEAGUE1,광주,서울,0,1,unresolved,0,exact,,,,,,
-339,2026-05-02,德甲,BUNDESLIGA,霍芬海姆,斯图加特,3,3,unique,1,fuzzy_league_date_score_team,5d6f376a3950dd94a7b4,2026-05-02T14:30,Hoffenheim,Stuttgart,3,3
-340,2026-05-02,德甲,BUNDESLIGA,柏林联合,科隆,2,2,unique,1,fuzzy_league_date_score_team,37554eecc64b1a3ec523,2026-05-02T14:30,Union Berlin,FC Koln,2,2
-341,2026-05-02,德甲,BUNDESLIGA,云达不莱梅,奥格斯堡,1,3,unique,1,exact,45a383bb9d3374cf0161,2026-05-02T14:30,Werder Bremen,Augsburg,1,3
-342,2026-05-02,德甲,BUNDESLIGA,法兰克福,汉堡,1,2,unique,1,fuzzy_league_date_score_team,890b616362654e90ed15,2026-05-02T14:30,Ein Frankfurt,Hamburg,1,2
-343,2026-05-02,德甲,BUNDESLIGA,拜仁慕尼黑,海登海姆,3,3,unique,1,exact,df084b019542fb357299,2026-05-02T14:30,Bayern Munich,Heidenheim,3,3
-344,2026-05-02,德甲,BUNDESLIGA,勒沃库森,RB莱比锡,4,1,unique,1,fuzzy_league_date_score_team,5d06713e161754e0a471,2026-05-02T17:30,Leverkusen,RB Leipzig,4,1
-345,2026-05-03,德甲,BUNDESLIGA,圣保利,美因茨,1,2,unique,1,fuzzy_league_date_score_team,861eb5b4129ac4c9124d,2026-05-03T14:30,St Pauli,Mainz,1,2
-346,2026-05-03,德甲,BUNDESLIGA,门兴格拉德巴赫,多特蒙德,1,0,unresolved,0,exact,,,,,,
-347,2026-05-03,德甲,BUNDESLIGA,弗赖堡,沃尔夫斯堡,1,1,unique,1,exact,3b0811238a41143b0f42,2026-05-03T18:30,Freiburg,Wolfsburg,1,1
-348,2026-05-08,德甲,BUNDESLIGA,多特蒙德,法兰克福,3,2,unique,1,fuzzy_league_date_score_team,25aaac23b5b220292bd0,2026-05-08T19:30,Dortmund,Ein Frankfurt,3,2
-349,2026-05-09,德甲,BUNDESLIGA,霍芬海姆,云达不莱梅,1,0,unique,1,fuzzy_league_date_score_team,a1102fc239fae419df5a,2026-05-09T14:30,Hoffenheim,Werder Bremen,1,0
-350,2026-05-09,德甲,BUNDESLIGA,奥格斯堡,门兴格拉德巴赫,3,1,unique,1,fuzzy_league_date_score_team,852b304b42417d92d082,2026-05-09T14:30,Augsburg,M'gladbach,3,1
-351,2026-05-09,德甲,BUNDESLIGA,斯图加特,勒沃库森,3,1,unique,1,fuzzy_league_date_score_team,5b6c53bec238d51c717b,2026-05-09T14:30,Stuttgart,Leverkusen,3,1
-352,2026-05-09,德甲,BUNDESLIGA,RB莱比锡,圣保利,2,1,unique,1,exact,5b2febf2c96c40b50180,2026-05-09T14:30,RB Leipzig,St Pauli,2,1
-353,2026-05-09,德甲,BUNDESLIGA,沃尔夫斯堡,拜仁慕尼黑,0,1,unique,1,exact,1eab37ebd26e0272d143,2026-05-09T17:30,Wolfsburg,Bayern Munich,0,1
-354,2026-05-10,德甲,BUNDESLIGA,汉堡,弗赖堡,3,2,unique,1,fuzzy_league_date_score_team,033ed48f79003dbb614c,2026-05-10T14:30,Hamburg,Freiburg,3,2
-355,2026-05-10,德甲,BUNDESLIGA,科隆,海登海姆,1,3,unique,1,fuzzy_league_date_score_team,a62b6d79102f1e2b3062,2026-05-10T16:30,FC Koln,Heidenheim,1,3
-356,2026-05-10,德甲,BUNDESLIGA,美因茨,柏林联合,1,3,unique,1,fuzzy_league_date_score_team,5f6d501e84bd7e7d0972,2026-05-10T18:30,Mainz,Union Berlin,1,3
-357,2026-05-16,德甲,BUNDESLIGA,海登海姆,美因茨,0,2,unique,1,fuzzy_league_date_score_team,9e4d191fa6b1e3eb68e3,2026-05-16T14:30,Heidenheim,Mainz,0,2
-358,2026-05-16,德甲,BUNDESLIGA,圣保利,沃尔夫斯堡,1,3,unique,1,exact,ab8e01fe8cd80a2b7051,2026-05-16T14:30,St Pauli,Wolfsburg,1,3
-359,2026-05-16,德甲,BUNDESLIGA,柏林联合,奥格斯堡,4,0,unique,1,exact,2918944bbe311ae568ae,2026-05-16T14:30,Union Berlin,Augsburg,4,0
-360,2026-05-16,德甲,BUNDESLIGA,门兴格拉德巴赫,霍芬海姆,4,0,unresolved,0,exact,,,,,,
-361,2026-05-16,德甲,BUNDESLIGA,云达不莱梅,多特蒙德,0,2,unique,1,fuzzy_league_date_score_team,fd8b6db6f1ad230d22ca,2026-05-16T14:30,Werder Bremen,Dortmund,0,2
-362,2026-05-16,德甲,BUNDESLIGA,弗赖堡,RB莱比锡,4,1,unique,1,exact,550d91906ec3aae000bc,2026-05-16T14:30,Freiburg,RB Leipzig,4,1
-363,2026-05-16,德甲,BUNDESLIGA,法兰克福,斯图加特,2,2,unique,1,fuzzy_league_date_score_team,d6f0f5d94487219495a0,2026-05-16T14:30,Ein Frankfurt,Stuttgart,2,2
-364,2026-05-16,德甲,BUNDESLIGA,勒沃库森,汉堡,1,1,unique,1,fuzzy_league_date_score_team,35d09719ab4d992b419e,2026-05-16T14:30,Leverkusen,Hamburg,1,1
-365,2026-05-16,德甲,BUNDESLIGA,拜仁慕尼黑,科隆,5,1,unique,1,fuzzy_league_date_score_team,c11f49e09e1a11618308,2026-05-16T14:30,Bayern Munich,FC Koln,5,1
-366,2026-05-12,韩职,KLEAGUE1,인천,포항,0,1,unresolved,0,exact,,,,,,
-367,2026-05-13,韩职,KLEAGUE1,울산,제주,2,1,unresolved,0,exact,,,,,,
-368,2026-05-13,韩职,KLEAGUE1,안양,김천,2,2,unresolved,0,exact,,,,,,
-369,2026-05-13,韩职,KLEAGUE1,부천,전북,0,0,unresolved,0,exact,,,,,,
-370,2026-05-16,韩职,KLEAGUE1,대전,서울,1,2,unresolved,0,exact,,,,,,
-371,2026-05-16,韩职,KLEAGUE1,인천,광주,4,0,unresolved,0,exact,,,,,,
-372,2026-02-06,日职J1,J1,横滨水手,町田泽维亚,2,3,unresolved,0,exact,,,,,,
-373,2026-02-06,日职J1,J1,京都不死鸟,神户胜利船,1,1,unresolved,0,exact,,,,,,
-374,2026-02-06,日职J1,J1,长崎成功丸,广岛三箭,1,3,unresolved,0,exact,,,,,,
-375,2026-02-07,日职J1,J1,千叶市原,浦和红钻,0,2,unresolved,0,exact,,,,,,
-376,2026-02-07,日职J1,J1,FC东京,鹿岛鹿角,1,1,unresolved,0,exact,,,,,,
-377,2026-02-07,日职J1,J1,大阪樱花,大阪钢巴,0,0,unresolved,0,exact,,,,,,
-378,2026-02-08,日职J1,J1,川崎前锋,柏太阳神,5,3,unresolved,0,exact,,,,,,
-379,2026-02-08,日职J1,J1,东京绿茵,水户蜀葵,3,1,unresolved,0,exact,,,,,,
-380,2026-02-08,日职J1,J1,福冈黄蜂,冈山绿雉,1,1,unresolved,0,exact,,,,,,
-381,2026-02-08,日职J1,J1,名古屋鲸八,清水心跳,1,0,unresolved,0,exact,,,,,,
-382,2026-02-13,日职J1,J1,神户胜利船,长崎成功丸,2,0,unresolved,0,exact,,,,,,
-383,2026-02-14,日职J1,J1,町田泽维亚,水户蜀葵,2,2,unresolved,0,exact,,,,,,
-384,2026-02-14,日职J1,J1,FC东京,浦和红钻,1,1,unresolved,0,exact,,,,,,
-385,2026-02-14,日职J1,J1,鹿岛鹿角,横滨水手,1,0,unresolved,0,exact,,,,,,
-386,2026-02-14,日职J1,J1,广岛三箭,冈山绿雉,1,1,unresolved,0,exact,,,,,,
-387,2026-02-14,日职J1,J1,清水心跳,京都不死鸟,1,1,unresolved,0,exact,,,,,,
-388,2026-02-15,日职J1,J1,千叶市原,川崎前锋,0,0,unresolved,0,exact,,,,,,
-389,2026-02-15,日职J1,J1,柏太阳神,东京绿茵,1,2,unresolved,0,exact,,,,,,
-390,2026-02-15,日职J1,J1,福冈黄蜂,大阪樱花,0,2,unresolved,0,exact,,,,,,
-391,2026-02-15,日职J1,J1,大阪钢巴,名古屋鲸八,0,0,unresolved,0,exact,,,,,,
-392,2026-02-21,日职J1,J1,东京绿茵,町田泽维亚,2,2,unresolved,0,exact,,,,,,
-393,2026-02-21,日职J1,J1,横滨水手,浦和红钻,0,2,unresolved,0,exact,,,,,,
-394,2026-02-21,日职J1,J1,川崎前锋,FC东京,1,2,unresolved,0,exact,,,,,,
-395,2026-02-21,日职J1,J1,鹿岛鹿角,柏太阳神,2,0,unresolved,0,exact,,,,,,
-396,2026-02-21,日职J1,J1,清水心跳,神户胜利船,1,0,unresolved,0,exact,,,,,,
-397,2026-02-21,日职J1,J1,名古屋鲸八,长崎成功丸,1,3,unresolved,0,exact,,,,,,
-398,2026-02-22,日职J1,J1,水户蜀葵,千叶市原,1,1,unresolved,0,exact,,,,,,
-399,2026-02-22,日职J1,J1,冈山绿雉,大阪钢巴,1,2,unresolved,0,exact,,,,,,
-400,2026-02-22,日职J1,J1,京都不死鸟,福冈黄蜂,2,0,unresolved,0,exact,,,,,,
-401,2026-02-22,日职J1,J1,大阪樱花,广岛三箭,1,2,unresolved,0,exact,,,,,,
-402,2026-09-02,日职J1,J1,长崎成功丸,大阪钢巴,2,2,unresolved,0,exact,,,,,,
-403,2026-09-02,日职J1,J1,东京绿茵,神户胜利船,0,2,unresolved,0,exact,,,,,,
-404,2026-09-02,日职J1,J1,町田泽维亚,川崎前锋,2,1,unresolved,0,exact,,,,,,
-405,2026-09-02,日职J1,J1,福冈黄蜂,浦和红钻,2,3,unresolved,0,exact,,,,,,
-406,2026-09-02,日职J1,J1,大阪樱花,柏太阳神,2,0,unresolved,0,exact,,,,,,
-407,2026-09-02,日职J1,J1,水户蜀葵,鹿岛鹿角,4,2,unresolved,0,exact,,,,,,
-408,2026-09-02,日职J1,J1,千叶市原,冈山绿雉,1,2,unresolved,0,exact,,,,,,
-409,2026-09-02,日职J1,J1,清水心跳,FC东京,1,1,unresolved,0,exact,,,,,,
-410,2026-09-02,日职J1,J1,广岛三箭,名古屋鲸八,3,0,unresolved,0,exact,,,,,,
-411,2026-09-02,日职J1,J1,横滨水手,京都不死鸟,1,1,unresolved,0,exact,,,,,,
-412,2026-09-05,日职J1,J1,福冈黄蜂,水户蜀葵,1,1,unresolved,0,exact,,,,,,
-413,2026-09-06,日职J1,J1,名古屋鲸八,町田泽维亚,1,3,unresolved,0,exact,,,,,,
-414,2026-09-06,日职J1,J1,冈山绿雉,广岛三箭,3,2,unresolved,0,exact,,,,,,
-415,2026-09-06,日职J1,J1,鹿岛鹿角,浦和红钻,0,1,unresolved,0,exact,,,,,,
-416,2026-09-06,日职J1,J1,千叶市原,大阪钢巴,2,0,unresolved,0,exact,,,,,,
-417,2026-09-06,日职J1,J1,大阪樱花,东京绿茵,0,0,unresolved,0,exact,,,,,,
-418,2026-09-06,日职J1,J1,柏太阳神,横滨水手,0,2,unresolved,0,exact,,,,,,
-419,2026-09-06,日职J1,J1,神户胜利船,长崎成功丸,3,1,unresolved,0,exact,,,,,,
-420,2026-09-06,日职J1,J1,川崎前锋,清水心跳,3,1,unresolved,0,exact,,,,,,
-421,2026-09-06,日职J1,J1,FC东京,京都不死鸟,2,0,unresolved,0,exact,,,,,,
-422,2026-09-11,日职J1,J1,京都不死鸟,柏太阳神,2,3,unresolved,0,exact,,,,,,
-423,2026-09-11,日职J1,J1,神户胜利船,鹿岛鹿角,2,1,unresolved,0,exact,,,,,,
-424,2026-09-12,日职J1,J1,水户蜀葵,川崎前锋,0,1,unresolved,0,exact,,,,,,
-425,2026-09-12,日职J1,J1,清水心跳,福冈黄蜂,1,0,unresolved,0,exact,,,,,,
-426,2026-09-12,日职J1,J1,长崎成功丸,名古屋鲸八,2,0,unresolved,0,exact,,,,,,
-427,2026-09-12,日职J1,J1,大阪钢巴,FC东京,0,2,unresolved,0,exact,,,,,,
-428,2026-09-12,日职J1,J1,町田泽维亚,横滨水手,1,1,unresolved,0,exact,,,,,,
-429,2026-09-12,日职J1,J1,广岛三箭,大阪樱花,6,1,unresolved,0,exact,,,,,,
-430,2026-09-13,日职J1,J1,东京绿茵,千叶市原,1,1,unresolved,0,exact,,,,,,
-431,2026-09-13,日职J1,J1,浦和红钻,冈山绿雉,1,2,unresolved,0,exact,,,,,,
-432,2026-08-29,日职J1,J1,水户蜀葵,町田泽维亚,1,1,unresolved,0,exact,,,,,,
-433,2026-08-29,日职J1,J1,大阪钢巴,广岛三箭,0,0,unresolved,0,exact,,,,,,
-434,2026-08-29,日职J1,J1,清水心跳,柏太阳神,0,1,unresolved,0,exact,,,,,,
-435,2026-08-29,日职J1,J1,长崎成功丸,FC东京,0,3,unresolved,0,exact,,,,,,
-436,2026-08-29,日职J1,J1,川崎前锋,千叶市原,4,2,unresolved,0,exact,,,,,,
-437,2026-08-29,日职J1,J1,京都不死鸟,福冈黄蜂,2,1,unresolved,0,exact,,,,,,
-438,2026-08-29,日职J1,J1,名古屋鲸八,冈山绿雉,2,1,unresolved,0,exact,,,,,,
-439,2026-08-29,日职J1,J1,神户胜利船,大阪樱花,1,0,unresolved,0,exact,,,,,,
-440,2026-08-29,日职J1,J1,东京绿茵,鹿岛鹿角,0,2,unresolved,0,exact,,,,,,
-441,2026-08-29,日职J1,J1,浦和红钻,横滨水手,3,2,unresolved,0,exact,,,,,,
-442,2026-09-19,日职J1,J1,川崎前锋,鹿岛鹿角,3,3,unresolved,0,exact,,,,,,
-443,2026-09-19,日职J1,J1,福冈黄蜂,广岛三箭,0,1,unresolved,0,exact,,,,,,
-444,2026-09-19,日职J1,J1,清水心跳,千叶市原,2,1,unresolved,0,exact,,,,,,
-445,2026-09-19,日职J1,J1,长崎成功丸,大阪樱花,1,1,unresolved,0,exact,,,,,,
-446,2026-09-19,日职J1,J1,浦和红钻,东京绿茵,3,1,unresolved,0,exact,,,,,,
-447,2026-09-19,日职J1,J1,冈山绿雉,京都不死鸟,1,2,unresolved,0,exact,,,,,,
-448,2026-09-19,日职J1,J1,FC东京,名古屋鲸八,1,0,unresolved,0,exact,,,,,,
-449,2026-09-19,日职J1,J1,横滨水手,水户蜀葵,2,0,unresolved,0,exact,,,,,,
-450,2026-09-20,日职J1,J1,町田泽维亚,柏太阳神,2,4,unresolved,0,exact,,,,,,
-451,2026-09-20,日职J1,J1,大阪钢巴,神户胜利船,0,1,unresolved,0,exact,,,,,,
-452,2026-09-18,英超,EPL,布伦特福德,切尔西,3,0,unique,1,exact,85440eb778441f068f9e,2026-09-18T20:00,Brentford,Chelsea,3,0
-453,2026-09-19,英超,EPL,托特纳姆热刺,阿斯顿维拉,2,3,unique,1,fuzzy_league_date_score_team,298d30f9bd1d6ce39833,2026-09-19T12:30,Tottenham,Aston Villa,2,3
-454,2026-09-19,英超,EPL,布莱顿,阿森纳,3,0,unique,1,fuzzy_league_date_score_team,d3530a73c3e7bf1049bf,2026-09-19T15:00,Brighton,Arsenal,3,0
-455,2026-09-19,英超,EPL,埃弗顿,伊普斯维奇,1,0,unique,1,fuzzy_league_date_score_team,60690e03ff4477a687a5,2026-09-19T15:00,Everton,Ipswich,1,0
-456,2026-09-19,英超,EPL,纽卡斯尔联,赫尔城,2,1,unresolved,0,exact,,,,,,
-457,2026-09-19,英超,EPL,诺丁汉森林,考文垂,0,1,unique,1,fuzzy_league_date_score_team,cd11b1a04bbc8ce60651,2026-09-19T17:30,Nott'm Forest,Coventry,0,1
-458,2026-09-20,英超,EPL,伯恩茅斯,利物浦,0,1,unique,1,fuzzy_league_date_score_team,73ff87795ed3d62a326e,2026-09-20T14:00,Bournemouth,Liverpool,0,1
-459,2026-09-20,英超,EPL,利兹联,水晶宫,0,0,unique,1,fuzzy_league_date_score_team,004f806b411474b34b12,2026-09-20T14:00,Leeds,Crystal Palace,0,0
-460,2026-09-20,英超,EPL,曼城,桑德兰,5,3,unique,1,fuzzy_league_date_score_team,47b46edc3e364f75f55a,2026-09-20T14:00,Man City,Sunderland,5,3
-461,2026-09-20,英超,EPL,富勒姆,曼联,1,1,unique,1,fuzzy_league_date_score_team,02929d7bb4c90f04cf51,2026-09-20T16:30,Fulham,Man United,1,1
-462,2026-09-18,德甲,BUNDESLIGA,拜仁慕尼黑,柏林联合,7,0,unique,1,exact,d710e2422a30e6716569,2026-09-18T19:30,Bayern Munich,Union Berlin,7,0
-463,2026-09-19,德甲,BUNDESLIGA,云达不来梅,奥格斯堡,3,2,unique,1,exact,4a62390b4ef62e7f37ec,2026-09-19T14:30,Werder Bremen,Augsburg,3,2
-464,2026-09-19,德甲,BUNDESLIGA,汉堡,科隆,2,1,unresolved,0,exact,,,,,,
-465,2026-09-19,德甲,BUNDESLIGA,门兴格拉德巴赫,美因茨,3,4,unresolved,0,exact,,,,,,
-466,2026-09-19,德甲,BUNDESLIGA,法兰克福,弗赖堡,2,2,unique,1,fuzzy_league_date_score_team,26273ec888471a54550a,2026-09-19T14:30,Ein Frankfurt,Freiburg,2,2
-467,2026-09-19,德甲,BUNDESLIGA,斯图加特,多特蒙德,0,1,unique,1,fuzzy_league_date_score_team,5f254699da31707a3624,2026-09-19T17:30,Stuttgart,Dortmund,0,1
-468,2026-09-20,德甲,BUNDESLIGA,勒沃库森,RB莱比锡,2,0,unique,1,fuzzy_league_date_score_team,e7a433bfafc75aec2450,2026-09-20T14:30,Leverkusen,RB Leipzig,2,0
-469,2026-09-20,德甲,BUNDESLIGA,沙尔克04,埃尔沃斯贝格,0,0,unique,1,fuzzy_league_date_score_team,5fdfd9d91201b7cc0555,2026-09-20T16:30,Schalke 04,Elversberg,0,0
-470,2026-09-18,意甲,SERIEA,蒙扎,萨索洛,2,1,unique,1,exact,a646000f00a31ed0b058,2026-09-18T19:45,Monza,Sassuolo,2,1
-471,2026-09-19,意甲,SERIEA,威尼斯,拉齐奥,0,2,unique,1,exact,6b82ea435bf4a6c12e83,2026-09-19T19:45,Venezia,Lazio,0,2
-472,2026-09-19,意甲,SERIEA,罗马,国际米兰,2,2,unique,1,fuzzy_league_date_score_team,287a8ca35e695e74c021,2026-09-19T17:00,Roma,Inter,2,2
-473,2026-09-19,意甲,SERIEA,博洛尼亚,都灵,1,1,unique,1,exact,0058ca1dd4b2addae446,2026-09-19T14:00,Bologna,Torino,1,1
-474,2026-09-19,意甲,SERIEA,乌迪内斯,卡利亚里,0,1,unique,1,exact,72feabd07a3dd33cd624,2026-09-19T14:00,Udinese,Cagliari,0,1
-475,2026-09-19,意甲,SERIEA,佛罗伦萨,那不勒斯,1,1,unresolved,0,exact,,,,,,
-476,2026-09-20,意甲,SERIEA,AC米兰,莱切,3,0,unique,1,exact,18eb7fac6286488e9b5a,2026-09-20T19:45,Milan,Lecce,3,0
-477,2026-09-20,意甲,SERIEA,尤文图斯,亚特兰大,2,0,unique,1,exact,e5ca9f41e98685cb232a,2026-09-20T17:00,Juventus,Atalanta,2,0
-478,2026-09-20,意甲,SERIEA,弗罗西诺内,科莫,2,0,unique,1,exact,78b723a01dd25586d0ee,2026-09-20T14:00,Frosinone,Como,2,0
-479,2026-09-20,意甲,SERIEA,帕尔马,热那亚,2,1,unique,1,exact,4abd5881542341874cfe,2026-09-20T14:00,Parma,Genoa,2,1
-480,2026-09-11,法甲,LIGUE1,南特,雷恩,0,2,unresolved,0,exact,,,,,,
-481,2026-09-12,法甲,LIGUE1,里昂,摩纳哥,1,1,unresolved,0,exact,,,,,,
-482,2026-09-12,法甲,LIGUE1,巴黎圣日耳曼,马赛,1,2,unresolved,0,exact,,,,,,
-483,2026-09-13,法甲,LIGUE1,里尔,斯特拉斯堡,2,1,unresolved,0,exact,,,,,,
-484,2026-09-13,法甲,LIGUE1,摩纳哥,朗斯,2,1,unresolved,0,exact,,,,,,
-485,2026-09-13,法甲,LIGUE1,图卢兹,勒阿弗尔,3,2,unresolved,0,exact,,,,,,
-486,2026-09-13,法甲,LIGUE1,巴黎FC,斯特拉斯堡,2,1,unresolved,0,exact,,,,,,
-487,2026-09-13,法甲,LIGUE1,昂热,特鲁瓦,2,0,unresolved,0,exact,,,,,,
-488,2026-09-13,法甲,LIGUE1,勒芒,洛里昂,2,1,unresolved,0,exact,,,,,,
-489,2026-09-12,西甲,LALIGA,塞维利亚,瓦伦西亚,1,0,unresolved,0,exact,,,,,,
-490,2026-09-12,西甲,LALIGA,桑坦德竞技,阿拉维斯,2,1,unresolved,0,exact,,,,,,
-491,2026-09-12,西甲,LALIGA,奥萨苏纳,西班牙人,0,2,unique,1,fuzzy_league_date_score_team,f376c836e0cdc692bda4,2026-09-12T15:15,Osasuna,Espanol,0,2
-492,2026-09-12,西甲,LALIGA,毕尔巴鄂竞技,埃尔切,1,1,unique,1,fuzzy_league_date_score_team,20453910fd654095a340,2026-09-12T17:30,Ath Bilbao,Elche,1,1
-493,2026-09-12,西甲,LALIGA,皇家马德里,巴列卡诺,4,1,unique,1,fuzzy_league_date_score_team,2e8e63d4878170bd6148,2026-09-12T20:00,Real Madrid,Vallecano,4,1
-494,2026-09-13,西甲,LALIGA,塞尔塔,马拉加,1,1,unique,1,fuzzy_league_date_score_team,ea6317d111ac3b7ad6ee,2026-09-13T13:00,Celta,Malaga,1,1
-495,2026-09-13,西甲,LALIGA,莱万特,巴塞罗那,2,4,unique,1,exact,f7370591b571c347eefa,2026-09-13T15:15,Levante,Barcelona,2,4
-496,2026-09-13,西甲,LALIGA,赫塔费,拉科鲁尼亚,1,1,unique,1,fuzzy_league_date_score_team,bfff7876966d128f53c7,2026-09-13T17:30,Getafe,La Coruna,1,1
-497,2026-09-13,西甲,LALIGA,皇家社会,马德里竞技,0,3,unique,1,fuzzy_league_date_score_team,677fe93c875b3f9890bb,2026-09-13T20:00,Sociedad,Ath Madrid,0,3
-498,2026-09-14,西甲,LALIGA,比利亚雷亚尔,皇家贝蒂斯,1,2,unique,1,fuzzy_league_date_score_team,7e06935f175ba1f0283f,2026-09-14T20:00,Villarreal,Betis,1,2
-499,2026-09-26,韩职,KLEAGUE1,광주,서울,2,5,unresolved,0,exact,,,,,,
-500,2026-09-26,韩职,KLEAGUE1,인천,전북,1,1,unresolved,0,exact,,,,,,
+sample_row,date,league,competition_code,home,away,home_score,away_score,mapping_status,candidate_count,date_team_candidate_count,date_team_scores,match_method,match_id,db_kickoff,db_home,db_away,db_home_score,db_away_score
+1,2026-08-30,英超,EPL,切尔西,布莱顿,4,3,unique,1,0,,fuzzy_league_date_score_team,f54ca471dde79361dbac,2026-08-30T14:00,Chelsea,Brighton,4,3
+2,2026-08-30,英超,EPL,桑德兰,富勒姆,1,0,unique,1,1,1-0:915db05210d00603746d,exact,915db05210d00603746d,2026-08-30T14:00,Sunderland,Fulham,1,0
+3,2026-08-31,英超,EPL,阿斯顿维拉,阿森纳,0,1,unique,1,1,0-1:99c553ed005fa158a52a,exact,99c553ed005fa158a52a,2026-08-31T20:00,Aston Villa,Arsenal,0,1
+4,2026-08-30,英超,EPL,曼联,伊普斯维奇,5,2,unique,1,0,,fuzzy_league_date_score_team,8db4be8ee6727701923e,2026-08-30T16:30,Man United,Ipswich,5,2
+5,2026-08-29,英超,EPL,利物浦,诺丁汉森林,2,2,unique,1,0,,fuzzy_league_date_score_team,17dd84d2bf5fa69a3f93,2026-08-29T12:30,Liverpool,Nott'm Forest,2,2
+6,2026-08-29,英超,EPL,托特纳姆热刺,纽卡斯尔联,0,2,unique,1,0,,fuzzy_league_date_score_team,d9828bd4dcc0bb1aa6b1,2026-08-29T17:30,Tottenham,Newcastle,0,2
+7,2026-08-29,英超,EPL,伯恩茅斯,埃弗顿,1,1,unique,1,0,,fuzzy_league_date_score_team,c37f61eaf9c87270bbd4,2026-08-29T15:00,Bournemouth,Everton,1,1
+8,2026-08-28,英超,EPL,水晶宫,曼城,1,4,unique,1,0,,fuzzy_league_date_score_team,3d9c95dd31c8b8f32aad,2026-08-28T20:00,Crystal Palace,Man City,1,4
+9,2026-08-24,英超,EPL,富勒姆,切尔西,2,3,unique,1,1,2-3:274b4b1252245db21789,exact,274b4b1252245db21789,2026-08-24T20:00,Fulham,Chelsea,2,3
+10,2026-08-23,英超,EPL,布莱顿,阿斯顿维拉,4,0,unique,1,0,,fuzzy_league_date_score_team,6bd744cacd6ff0dcb82d,2026-08-23T14:00,Brighton,Aston Villa,4,0
+11,2026-08-23,英超,EPL,曼城,伯恩茅斯,2,1,unique,1,0,,fuzzy_league_date_score_team,e19fcf7964838d676078,2026-08-23T14:00,Man City,Bournemouth,2,1
+12,2026-08-23,英超,EPL,纽卡斯尔联,利物浦,2,2,unique,1,0,,fuzzy_league_date_score_team,670e4c14b345f306f3f7,2026-08-23T16:30,Newcastle,Liverpool,2,2
+13,2026-08-22,英超,EPL,阿森纳,考文垂,3,0,unresolved,0,0,,exact,,,,,,
+14,2026-08-22,英超,EPL,布伦特福德,热刺,3,0,unique,1,0,,fuzzy_league_date_score_team,30a59e39b10e2131a032,2026-08-22T17:30,Brentford,Tottenham,3,0
+15,2026-08-22,英超,EPL,埃弗顿,水晶宫,2,0,unique,1,1,2-0:7c186b6e9e7ff1f18224,exact,7c186b6e9e7ff1f18224,2026-08-22T15:00,Everton,Crystal Palace,2,0
+16,2026-08-22,英超,EPL,赫尔城,曼联,2,0,unresolved,0,0,,exact,,,,,,
+17,2026-08-22,英超,EPL,伊普斯维奇,桑德兰,2,1,unique,1,0,,fuzzy_league_date_score_team,cf63afd70fbd64b4ec1b,2026-08-22T15:00,Ipswich,Sunderland,2,1
+18,2026-08-22,英超,EPL,诺丁汉森林,利兹联,0,1,unresolved,0,0,,exact,,,,,,
+19,2026-08-28,德甲,BUNDESLIGA,拜仁慕尼黑,斯图加特,5,1,unique,1,0,,fuzzy_league_date_score_team,fdb18394eff108ff17d4,2026-08-28T19:30,Bayern Munich,Stuttgart,5,1
+20,2026-08-29,德甲,BUNDESLIGA,科隆,霍芬海姆,3,2,unresolved,0,0,,exact,,,,,,
+21,2026-08-29,德甲,BUNDESLIGA,多特蒙德,汉堡,2,0,unresolved,0,0,,exact,,,,,,
+22,2026-08-29,德甲,BUNDESLIGA,美因茨,帕德博恩,0,0,unique,1,0,,fuzzy_league_date_score_team,c8df4edd9c63bf005640,2026-08-29T14:30,Mainz,Paderborn,0,0
+23,2026-08-29,德甲,BUNDESLIGA,RB莱比锡,门兴格拉德巴赫,3,0,unique,1,0,,fuzzy_league_date_score_team,3f62b3971f14bc3b0d1b,2026-08-29T14:30,RB Leipzig,M'gladbach,3,0
+24,2026-08-29,德甲,BUNDESLIGA,埃尔沃斯贝格,勒沃库森,3,2,unique,1,0,,fuzzy_league_date_score_team,1e4c674c730303f681f7,2026-08-29T14:30,Elversberg,Leverkusen,3,2
+25,2026-08-29,德甲,BUNDESLIGA,柏林联合,法兰克福,3,3,unique,1,0,,fuzzy_league_date_score_team,b8cdbc5fffd168ca15ec,2026-08-29T14:30,Union Berlin,Ein Frankfurt,3,3
+26,2026-08-30,德甲,BUNDESLIGA,奥格斯堡,沙尔克04,3,0,unique,1,1,3-0:b8e10833cb9a4b570487,exact,b8e10833cb9a4b570487,2026-08-30T16:30,Augsburg,Schalke 04,3,0
+27,2026-08-30,德甲,BUNDESLIGA,弗赖堡,云达不来梅,4,1,unique,1,1,4-1:d31e57c9913943ec6454,exact,d31e57c9913943ec6454,2026-08-30T14:30,Freiburg,Werder Bremen,4,1
+28,2026-08-22,意甲,SERIEA,热那亚,那不勒斯,0,2,unique,1,1,0-2:91e922ca661819abebbf,exact,91e922ca661819abebbf,2026-08-22T19:45,Genoa,Napoli,0,2
+29,2026-08-22,意甲,SERIEA,国际米兰,蒙扎,4,1,unique,1,0,,fuzzy_league_date_score_team,a962bba4b22d22b33fbd,2026-08-22T17:30,Inter,Monza,4,1
+30,2026-08-22,意甲,SERIEA,帕尔马,卡利亚里,0,1,unique,1,1,0-1:4584321708aa361bf455,exact,4584321708aa361bf455,2026-08-22T19:45,Parma,Cagliari,0,1
+31,2026-08-22,意甲,SERIEA,乌迪内斯,科莫,1,1,unique,1,1,1-1:fbed19cecfa4d7366c9a,exact,fbed19cecfa4d7366c9a,2026-08-22T17:30,Udinese,Como,1,1
+32,2026-08-23,意甲,SERIEA,亚特兰大,萨索洛,2,1,unique,1,1,2-1:cb0b5baac669b6ee85fb,exact,cb0b5baac669b6ee85fb,2026-08-23T19:45,Atalanta,Sassuolo,2,1
+33,2026-08-23,意甲,SERIEA,弗罗西诺内,尤文图斯,0,1,unique,1,1,0-1:8132d80c529296aeb962,exact,8132d80c529296aeb962,2026-08-23T17:30,Frosinone,Juventus,0,1
+34,2026-08-23,意甲,SERIEA,都灵,AC米兰,1,2,unique,1,1,1-2:d8ace818490f8c53e7a6,exact,d8ace818490f8c53e7a6,2026-08-23T19:45,Torino,Milan,1,2
+35,2026-08-23,意甲,SERIEA,威尼斯,莱切,0,2,unique,1,1,0-2:a3b8b0e1621948a38e53,exact,a3b8b0e1621948a38e53,2026-08-23T17:30,Venezia,Lecce,0,2
+36,2026-08-24,意甲,SERIEA,博洛尼亚,拉齐奥,0,1,unique,1,1,0-1:7e0b4c5998db3455d5d6,exact,7e0b4c5998db3455d5d6,2026-08-24T17:30,Bologna,Lazio,0,1
+37,2026-08-24,意甲,SERIEA,罗马,佛罗伦萨,4,0,unique,1,1,4-0:c1936fc2b0793ec4fbbb,exact,c1936fc2b0793ec4fbbb,2026-08-24T19:45,Roma,Fiorentina,4,0
+38,2026-08-28,意甲,SERIEA,AC米兰,威尼斯,2,0,unique,1,1,2-0:84e47605c9a8e9881df4,exact,84e47605c9a8e9881df4,2026-08-28T19:45,Milan,Venezia,2,0
+39,2026-08-29,意甲,SERIEA,佛罗伦萨,弗罗西诺内,0,3,unique,1,1,0-3:103f9311dd33752c06e9,exact,103f9311dd33752c06e9,2026-08-29T17:30,Fiorentina,Frosinone,0,3
+40,2026-08-29,意甲,SERIEA,尤文图斯,帕尔马,2,0,unique,1,1,2-0:524addb4d6bcbcd5e59a,exact,524addb4d6bcbcd5e59a,2026-08-29T19:45,Juventus,Parma,2,0
+41,2026-08-29,意甲,SERIEA,蒙扎,乌迪内斯,2,3,unique,1,1,2-3:6963c549d61ca913c49b,exact,6963c549d61ca913c49b,2026-08-29T17:30,Monza,Udinese,2,3
+42,2026-08-29,意甲,SERIEA,萨索洛,都灵,2,1,unique,1,1,2-1:2ecb4ae46f39b5dadd54,exact,2ecb4ae46f39b5dadd54,2026-08-29T17:30,Sassuolo,Torino,2,1
+43,2026-08-30,意甲,SERIEA,卡利亚里,国际米兰,0,1,unique,1,0,,fuzzy_league_date_score_team,c43c13423d7808303eaa,2026-08-30T19:45,Cagliari,Inter,0,1
+44,2026-08-30,意甲,SERIEA,拉齐奥,热那亚,1,0,unique,1,1,1-0:fc719ff1906b0280ae3a,exact,fc719ff1906b0280ae3a,2026-08-30T19:45,Lazio,Genoa,1,0
+45,2026-08-30,意甲,SERIEA,那不勒斯,科莫,1,2,unique,1,1,1-2:a5539011dbd58cfcd46b,exact,a5539011dbd58cfcd46b,2026-08-30T17:30,Napoli,Como,1,2
+46,2026-08-31,意甲,SERIEA,亚特兰大,博洛尼亚,1,0,unique,1,1,1-0:887f57850f8b2807abd7,exact,887f57850f8b2807abd7,2026-08-31T19:45,Atalanta,Bologna,1,0
+47,2026-08-31,意甲,SERIEA,莱切,罗马,0,4,unique,1,1,0-4:aa5167a7f221d27fb2f4,exact,aa5167a7f221d27fb2f4,2026-08-31T17:30,Lecce,Roma,0,4
+48,2026-08-21,法甲,LIGUE1,马赛,斯特拉斯堡,4,0,unique,1,1,4-0:6cf14be13c687615f97e,exact,6cf14be13c687615f97e,2026-08-21T19:45,Marseille,Strasbourg,4,0
+49,2026-08-22,法甲,LIGUE1,朗斯,欧塞尔,5,2,unique,1,1,5-2:62bc642c134669778694,exact,62bc642c134669778694,2026-08-22T16:15,Lens,Auxerre,5,2
+50,2026-08-22,法甲,LIGUE1,尼斯,洛里昂,0,0,unique,1,1,0-0:211d89cfa392b6305d4f,exact,211d89cfa392b6305d4f,2026-08-22T19:45,Nice,Lorient,0,0
+51,2026-08-22,法甲,LIGUE1,图卢兹,里昂,0,2,unique,1,1,0-2:e9725bd6e0c60e704330,exact,e9725bd6e0c60e704330,2026-08-22T19:45,Toulouse,Lyon,0,2
+52,2026-08-23,法甲,LIGUE1,昂热,里尔,0,2,unique,1,1,0-2:a2e0fc5b7f6252f58134,exact,a2e0fc5b7f6252f58134,2026-08-23T14:00,Angers,Lille,0,2
+53,2026-08-23,法甲,LIGUE1,勒阿弗尔,摩纳哥,0,1,unique,1,1,0-1:b60d5ab0a03c7d14ff32,exact,b60d5ab0a03c7d14ff32,2026-08-23T16:15,Le Havre,Monaco,0,1
+54,2026-08-23,法甲,LIGUE1,雷恩,巴黎圣日耳曼,2,2,unique,1,0,,fuzzy_league_date_score_team,b32edc467847bac531c7,2026-08-23T19:45,Rennes,Paris SG,2,2
+55,2026-08-29,法甲,LIGUE1,欧塞尔,昂热,1,3,unique,1,1,1-3:8313af1fc978176025db,exact,8313af1fc978176025db,2026-08-29T19:45,Auxerre,Angers,1,3
+56,2026-08-29,法甲,LIGUE1,布雷斯特,图卢兹,2,2,unique,1,1,2-2:51a7eb0545d81f001961,exact,51a7eb0545d81f001961,2026-08-29T19:45,Brest,Toulouse,2,2
+57,2026-08-29,法甲,LIGUE1,洛里昂,特鲁瓦,1,2,unique,1,1,1-2:de1e455b733e256ea196,exact,de1e455b733e256ea196,2026-08-29T19:45,Lorient,Troyes,1,2
+58,2026-08-29,法甲,LIGUE1,里昂,勒阿弗尔,1,1,unique,1,1,1-1:fecaa9662688847af1ca,exact,fecaa9662688847af1ca,2026-08-29T19:45,Lyon,Le Havre,1,1
+59,2026-08-29,法甲,LIGUE1,斯特拉斯堡,朗斯,2,1,unique,1,1,2-1:7f6b79c0c85ddc064bf4,exact,7f6b79c0c85ddc064bf4,2026-08-29T16:15,Strasbourg,Lens,2,1
+60,2026-08-30,法甲,LIGUE1,摩纳哥,马赛,2,0,unique,1,1,2-0:41a34316cc34521cc7c1,exact,41a34316cc34521cc7c1,2026-08-30T19:45,Monaco,Marseille,2,0
+61,2026-08-30,法甲,LIGUE1,巴黎FC,尼斯,3,0,unique,1,1,3-0:bdac8c288a863e6d9501,exact,bdac8c288a863e6d9501,2026-08-30T14:00,Paris FC,Nice,3,0
+62,2026-08-30,法甲,LIGUE1,雷恩,勒芒,3,2,unique,1,1,3-2:8c6014d89378dd055659,exact,8c6014d89378dd055659,2026-08-30T16:15,Rennes,Le Mans,3,2
+63,2026-01-03,西甲,LALIGA,西班牙人,巴塞罗那,0,2,unique,1,0,,fuzzy_league_date_score_team,dcc2e52cf158b119b02f,2026-01-03T20:00,Espanol,Barcelona,0,2
+64,2026-01-04,西甲,LALIGA,皇家马德里,皇家贝蒂斯,5,1,unique,1,0,,fuzzy_league_date_score_team,49d033736e3ae2470884,2026-01-04T15:15,Real Madrid,Betis,5,1
+65,2026-01-04,西甲,LALIGA,皇家社会,马德里竞技,1,1,unique,1,0,,fuzzy_league_date_score_team,c4749231f74fd27636dd,2026-01-04T20:00,Sociedad,Ath Madrid,1,1
+66,2026-01-09,西甲,LALIGA,赫塔费,皇家社会,1,2,unique,1,0,,fuzzy_league_date_score_team,69eea968c9d003976b67,2026-01-09T20:00,Getafe,Sociedad,1,2
+67,2026-01-10,西甲,LALIGA,比利亚雷亚尔,阿拉维斯,3,1,unique,1,0,,fuzzy_league_date_score_team,27b01e2c49f91c3ffafb,2026-01-10T15:15,Villarreal,Alaves,3,1
+68,2026-01-10,西甲,LALIGA,皇家奥维耶多,皇家贝蒂斯,1,1,unique,1,0,,fuzzy_league_date_score_team,53e6dc13252ac6e7b5b8,2026-01-10T13:00,Oviedo,Betis,1,1
+69,2026-01-17,西甲,LALIGA,皇家马德里,莱万特,2,0,unique,1,1,2-0:8da7ce93a3cfaf751ee5,exact,8da7ce93a3cfaf751ee5,2026-01-17T13:00,Real Madrid,Levante,2,0
+70,2026-01-17,西甲,LALIGA,奥萨苏纳,皇家奥维耶多,3,2,unique,1,0,,fuzzy_league_date_score_team,be82cc5e180aad4d2c88,2026-01-17T17:30,Osasuna,Oviedo,3,2
+71,2026-01-18,西甲,LALIGA,皇家社会,巴塞罗那,2,1,unique,1,0,,fuzzy_league_date_score_team,29a7474071496a0adeac,2026-01-18T20:00,Sociedad,Barcelona,2,1
+72,2026-01-18,西甲,LALIGA,马德里竞技,阿拉维斯,1,0,unresolved,0,0,,exact,,,,,,
+73,2026-01-24,西甲,LALIGA,比利亚雷亚尔,皇家马德里,0,2,unique,1,1,0-2:e7dcd0ca793820c8bea2,exact,e7dcd0ca793820c8bea2,2026-01-24T20:00,Villarreal,Real Madrid,0,2
+74,2026-01-25,西甲,LALIGA,巴塞罗那,皇家奥维耶多,3,0,unique,1,0,,fuzzy_league_date_score_team,66b6aae87491382a7698,2026-01-25T15:15,Barcelona,Oviedo,3,0
+75,2026-01-25,西甲,LALIGA,皇家社会,塞尔塔,3,1,unique,1,0,,fuzzy_league_date_score_team,eac2154598a1b97b1a1b,2026-01-25T17:30,Sociedad,Celta,3,1
+76,2026-01-25,西甲,LALIGA,马德里竞技,马略卡,3,0,unique,1,0,,fuzzy_league_date_score_team,38ecaa55b7d0a2cb855e,2026-01-25T13:00,Ath Madrid,Mallorca,3,0
+77,2026-01-25,西甲,LALIGA,阿拉维斯,皇家贝蒂斯,2,1,unresolved,0,0,,exact,,,,,,
+78,2026-01-31,西甲,LALIGA,埃尔切,巴塞罗那,1,3,unique,1,1,1-3:cf007bc4c17724a32c47,exact,cf007bc4c17724a32c47,2026-01-31T20:00,Elche,Barcelona,1,3
+79,2026-01-31,西甲,LALIGA,莱万特,马德里竞技,0,0,unique,1,0,,fuzzy_league_date_score_team,c664f76b79e6a4379f7e,2026-01-31T17:30,Levante,Ath Madrid,0,0
+80,2026-02-01,西甲,LALIGA,毕尔巴鄂竞技,皇家社会,1,1,unresolved,0,0,,exact,,,,,,
+81,2026-02-01,西甲,LALIGA,皇家马德里,巴列卡诺,2,1,unique,1,0,,fuzzy_league_date_score_team,dc30dd3dd9705543afb7,2026-02-01T13:00,Real Madrid,Vallecano,2,1
+82,2026-02-07,西甲,LALIGA,巴塞罗那,马略卡,3,0,unique,1,1,3-0:d12ee85c585b6f6d4017,exact,d12ee85c585b6f6d4017,2026-02-07T15:15,Barcelona,Mallorca,3,0
+83,2026-02-08,西甲,LALIGA,瓦伦西亚,皇家马德里,0,2,unique,1,1,0-2:bef7ad059fba0625c61e,exact,bef7ad059fba0625c61e,2026-02-08T20:00,Valencia,Real Madrid,0,2
+84,2026-02-08,西甲,LALIGA,马德里竞技,皇家贝蒂斯,0,1,unresolved,0,0,,exact,,,,,,
+85,2026-02-08,西甲,LALIGA,阿拉维斯,赫塔费,0,2,unique,1,0,,fuzzy_league_date_score_team,153e2480fe9b9e777ce7,2026-02-08T13:00,Alaves,Getafe,0,2
+86,2026-02-09,西甲,LALIGA,比利亚雷亚尔,西班牙人,4,1,unique,1,0,,fuzzy_league_date_score_team,362b16217cf4a7cb6f2b,2026-02-09T20:00,Villarreal,Espanol,4,1
+87,2026-02-14,西甲,LALIGA,皇家马德里,皇家社会,4,1,unique,1,0,,fuzzy_league_date_score_team,8184b2193eb3e32aa403,2026-02-14T20:00,Real Madrid,Sociedad,4,1
+88,2026-02-14,西甲,LALIGA,赫塔费,比利亚雷亚尔,2,1,unique,1,1,2-1:ae3d2ce987649e3d7856,exact,ae3d2ce987649e3d7856,2026-02-14T15:15,Getafe,Villarreal,2,1
+89,2026-02-14,西甲,LALIGA,塞维利亚,阿拉维斯,1,1,unique,1,0,,fuzzy_league_date_score_team,dfbbc7710d80d6423e6a,2026-02-14T17:30,Sevilla,Alaves,1,1
+90,2026-02-15,西甲,LALIGA,巴列卡诺,马德里竞技,3,0,unique,1,0,,fuzzy_league_date_score_team,c7e8a757c5c073f82582,2026-02-15T15:15,Vallecano,Ath Madrid,3,0
+91,2026-02-16,西甲,LALIGA,赫罗纳,巴塞罗那,2,1,unique,1,1,2-1:02e6f7a40955fb850d80,exact,02e6f7a40955fb850d80,2026-02-16T20:00,Girona,Barcelona,2,1
+92,2026-02-18,西甲,LALIGA,莱万特,比利亚雷亚尔,0,1,unique,1,1,0-1:f01af4af0616c1949914,exact,f01af4af0616c1949914,2026-02-18T19:00,Levante,Villarreal,0,1
+93,2026-02-21,西甲,LALIGA,奥萨苏纳,皇家马德里,2,1,unique,1,1,2-1:18539b1f6927591f14d5,exact,18539b1f6927591f14d5,2026-02-21T17:30,Osasuna,Real Madrid,2,1
+94,2026-02-21,西甲,LALIGA,马德里竞技,西班牙人,4,2,unique,1,0,,fuzzy_league_date_score_team,ce272cbf1019e9f32a6e,2026-02-21T20:00,Ath Madrid,Espanol,4,2
+95,2026-02-22,西甲,LALIGA,巴塞罗那,莱万特,3,0,unique,1,1,3-0:103c77a2dc03a12a6d0b,exact,103c77a2dc03a12a6d0b,2026-02-22T15:15,Barcelona,Levante,3,0
+96,2026-02-22,西甲,LALIGA,比利亚雷亚尔,瓦伦西亚,2,1,unique,1,1,2-1:111d3d0fb58344f0b74d,exact,111d3d0fb58344f0b74d,2026-02-22T20:00,Villarreal,Valencia,2,1
+97,2026-02-23,西甲,LALIGA,阿拉维斯,赫罗纳,2,2,unique,1,0,,fuzzy_league_date_score_team,4d9e980fb1f2bbfcc77a,2026-02-23T20:00,Alaves,Girona,2,2
+98,2026-02-28,西甲,LALIGA,巴塞罗那,比利亚雷亚尔,4,1,unique,1,1,4-1:ea83b5fc69865fbd96a9,exact,ea83b5fc69865fbd96a9,2026-02-28T15:15,Barcelona,Villarreal,4,1
+99,2026-02-28,西甲,LALIGA,皇家奥维耶多,马德里竞技,0,1,unresolved,0,0,,exact,,,,,,
+100,2026-02-28,西甲,LALIGA,马略卡,皇家社会,0,1,unique,1,0,,fuzzy_league_date_score_team,4ed9d8649334e8562baf,2026-02-28T17:30,Mallorca,Sociedad,0,1
+101,2026-02-06,西甲,LALIGA,塞尔塔,奥萨苏纳,1,2,unique,1,0,,fuzzy_league_date_score_team,bfd79000cf1ff272fc6b,2026-02-06T20:00,Celta,Osasuna,1,2
+102,2026-02-07,西甲,LALIGA,皇家社会,埃尔切,3,1,unique,1,0,,fuzzy_league_date_score_team,d6b51e58165ec8397f6a,2026-02-07T20:00,Sociedad,Elche,3,1
+103,2026-02-08,西甲,LALIGA,毕尔巴鄂竞技,莱万特,4,2,unique,1,0,,fuzzy_league_date_score_team,113deedda2eb55a81e4a,2026-02-08T15:15,Ath Bilbao,Levante,4,2
+104,2026-02-08,西甲,LALIGA,塞维利亚,赫罗纳,1,1,unique,1,1,1-1:9aac803d030fb1154b8f,exact,9aac803d030fb1154b8f,2026-02-08T15:15,Sevilla,Girona,1,1
+105,2026-02-13,西甲,LALIGA,埃尔切,奥萨苏纳,0,0,unique,1,1,0-0:fe874a09f5441046a567,exact,fe874a09f5441046a567,2026-02-13T20:00,Elche,Osasuna,0,0
+106,2026-02-14,西甲,LALIGA,西班牙人,塞尔塔,2,2,unique,1,0,,fuzzy_league_date_score_team,9e10881b116fa4fc37ba,2026-02-14T13:00,Espanol,Celta,2,2
+107,2026-02-15,西甲,LALIGA,皇家奥维耶多,毕尔巴鄂竞技,1,2,unresolved,0,0,,exact,,,,,,
+108,2026-02-15,西甲,LALIGA,莱万特,瓦伦西亚,0,2,unique,1,1,0-2:ae6f50136ecb1148c4f0,exact,ae6f50136ecb1148c4f0,2026-02-15T17:30,Levante,Valencia,0,2
+109,2026-02-15,西甲,LALIGA,马略卡,皇家贝蒂斯,1,2,unique,1,0,,fuzzy_league_date_score_team,1d4f38ca39c460713a59,2026-02-15T20:00,Mallorca,Betis,1,2
+110,2026-02-20,西甲,LALIGA,毕尔巴鄂竞技,埃尔切,2,1,unique,1,0,,fuzzy_league_date_score_team,afbd2412d80b49d0bfa9,2026-02-20T20:00,Ath Bilbao,Elche,2,1
+111,2026-02-21,西甲,LALIGA,皇家社会,皇家奥维耶多,3,3,unique,1,0,,fuzzy_league_date_score_team,7274d4ab40beeb829760,2026-02-21T13:00,Sociedad,Oviedo,3,3
+112,2026-02-21,西甲,LALIGA,皇家贝蒂斯,巴列卡诺,1,1,unique,1,0,,fuzzy_league_date_score_team,839bbd7cf1bb69af7c6d,2026-02-21T15:15,Betis,Vallecano,1,1
+113,2026-02-22,西甲,LALIGA,赫塔费,塞维利亚,0,1,unique,1,1,0-1:453d2a6fd2970c673b5c,exact,453d2a6fd2970c673b5c,2026-02-22T13:00,Getafe,Sevilla,0,1
+114,2026-02-22,西甲,LALIGA,塞尔塔,马略卡,2,0,unique,1,0,,fuzzy_league_date_score_team,a78a521a0f7388089650,2026-02-22T17:30,Celta,Mallorca,2,0
+115,2026-02-27,西甲,LALIGA,莱万特,阿拉维斯,2,0,unique,1,0,,fuzzy_league_date_score_team,d6d844b6352bd6a0b98a,2026-02-27T20:00,Levante,Alaves,2,0
+116,2026-02-28,西甲,LALIGA,巴列卡诺,毕尔巴鄂竞技,1,1,unresolved,0,0,,exact,,,,,,
+117,2026-03-01,西甲,LALIGA,埃尔切,西班牙人,2,2,unique,1,0,,fuzzy_league_date_score_team,ef794e4ed271f7361d3e,2026-03-01T13:00,Elche,Espanol,2,2
+118,2026-03-01,西甲,LALIGA,瓦伦西亚,奥萨苏纳,1,0,unique,1,1,1-0:85842e698e30d81dd70b,exact,85842e698e30d81dd70b,2026-03-01T15:15,Valencia,Osasuna,1,0
+119,2026-03-01,西甲,LALIGA,皇家贝蒂斯,塞维利亚,2,2,unique,1,0,,fuzzy_league_date_score_team,be6853d512a59f9a8a7b,2026-03-01T17:30,Betis,Sevilla,2,2
+120,2026-03-01,西甲,LALIGA,赫罗纳,塞尔塔,1,2,unique,1,0,,fuzzy_league_date_score_team,98fa2e062a090f2671f1,2026-03-01T20:00,Girona,Celta,1,2
+121,2026-03-02,西甲,LALIGA,皇家马德里,赫塔费,0,1,unique,1,1,0-1:3efdd96c95e89ce7990e,exact,3efdd96c95e89ce7990e,2026-03-02T20:00,Real Madrid,Getafe,0,1
+122,2026-03-06,西甲,LALIGA,塞尔塔,皇家马德里,1,2,unique,1,0,,fuzzy_league_date_score_team,fb8492ef58895fe80f58,2026-03-06T20:00,Celta,Real Madrid,1,2
+123,2026-03-07,西甲,LALIGA,奥萨苏纳,马略卡,2,2,unique,1,1,2-2:60c37cecb4b6be06213b,exact,60c37cecb4b6be06213b,2026-03-07T13:00,Osasuna,Mallorca,2,2
+124,2026-03-07,西甲,LALIGA,莱万特,赫罗纳,1,1,unique,1,1,1-1:3e2a8b2291c90bce1929,exact,3e2a8b2291c90bce1929,2026-03-07T15:15,Levante,Girona,1,1
+125,2026-03-07,西甲,LALIGA,马德里竞技,皇家社会,3,2,unique,1,0,,fuzzy_league_date_score_team,8442a42ea23e270ff88d,2026-03-07T17:30,Ath Madrid,Sociedad,3,2
+126,2026-03-07,西甲,LALIGA,毕尔巴鄂竞技,巴塞罗那,0,1,unique,1,0,,fuzzy_league_date_score_team,09b5faef0204b0832d84,2026-03-07T20:00,Ath Bilbao,Barcelona,0,1
+127,2026-03-08,西甲,LALIGA,比利亚雷亚尔,埃尔切,2,1,unique,1,1,2-1:0392e9e0ea0289397ea5,exact,0392e9e0ea0289397ea5,2026-03-08T13:00,Villarreal,Elche,2,1
+128,2026-03-08,西甲,LALIGA,赫塔费,皇家贝蒂斯,2,0,unique,1,0,,fuzzy_league_date_score_team,577adf1057e4f7ffa1ad,2026-03-08T15:15,Getafe,Betis,2,0
+129,2026-03-08,西甲,LALIGA,塞维利亚,巴列卡诺,1,1,unique,1,0,,fuzzy_league_date_score_team,172537abd61257182af3,2026-03-08T17:30,Sevilla,Vallecano,1,1
+130,2026-03-08,西甲,LALIGA,瓦伦西亚,阿拉维斯,3,2,unique,1,0,,fuzzy_league_date_score_team,c09d3fb287ed89d418e7,2026-03-08T20:00,Valencia,Alaves,3,2
+131,2026-03-09,西甲,LALIGA,西班牙人,皇家奥维耶多,1,1,unique,1,0,,fuzzy_league_date_score_team,13c4e7509f7350972b96,2026-03-09T20:00,Espanol,Oviedo,1,1
+132,2026-03-13,西甲,LALIGA,阿拉维斯,比利亚雷亚尔,1,1,unique,1,0,,fuzzy_league_date_score_team,d2e08929054019767e5d,2026-03-13T20:00,Alaves,Villarreal,1,1
+133,2026-03-14,西甲,LALIGA,赫罗纳,毕尔巴鄂竞技,3,0,unique,1,0,,fuzzy_league_date_score_team,00a5634902c85625ee07,2026-03-14T13:00,Girona,Ath Bilbao,3,0
+134,2026-03-14,西甲,LALIGA,马德里竞技,赫塔费,1,0,unique,1,0,,fuzzy_league_date_score_team,f38bab5c9cbbebc30fb5,2026-03-14T15:15,Ath Madrid,Getafe,1,0
+135,2026-03-14,西甲,LALIGA,皇家奥维耶多,瓦伦西亚,1,0,unique,1,0,,fuzzy_league_date_score_team,933080e942bcafbbc064,2026-03-14T17:30,Oviedo,Valencia,1,0
+136,2026-03-14,西甲,LALIGA,皇家马德里,埃尔切,4,1,unique,1,1,4-1:ccbe3355a26142e415b7,exact,ccbe3355a26142e415b7,2026-03-14T20:00,Real Madrid,Elche,4,1
+137,2026-03-15,西甲,LALIGA,马略卡,西班牙人,2,1,unique,1,0,,fuzzy_league_date_score_team,f57d856ff6044b69e014,2026-03-15T13:00,Mallorca,Espanol,2,1
+138,2026-03-15,西甲,LALIGA,巴塞罗那,塞维利亚,5,2,unique,1,1,5-2:0f48151418672b4580b4,exact,0f48151418672b4580b4,2026-03-15T15:15,Barcelona,Sevilla,5,2
+139,2026-03-15,西甲,LALIGA,皇家贝蒂斯,塞尔塔,1,1,unresolved,0,0,,exact,,,,,,
+140,2026-03-15,西甲,LALIGA,皇家社会,奥萨苏纳,3,1,unique,1,0,,fuzzy_league_date_score_team,a1d669777ef5866bae29,2026-03-15T20:00,Sociedad,Osasuna,3,1
+141,2026-03-16,西甲,LALIGA,巴列卡诺,莱万特,1,1,unique,1,0,,fuzzy_league_date_score_team,811e443974f271d3439f,2026-03-16T20:00,Vallecano,Levante,1,1
+142,2026-03-20,西甲,LALIGA,比利亚雷亚尔,皇家社会,3,1,unique,1,0,,fuzzy_league_date_score_team,56ce4662b55f393623c2,2026-03-20T20:00,Villarreal,Sociedad,3,1
+143,2026-03-21,西甲,LALIGA,埃尔切,马略卡,2,1,unique,1,1,2-1:4f290c014536c1bb736b,exact,4f290c014536c1bb736b,2026-03-21T13:00,Elche,Mallorca,2,1
+144,2026-03-21,西甲,LALIGA,西班牙人,赫塔费,1,2,unique,1,0,,fuzzy_league_date_score_team,f17243480a199e91d3ba,2026-03-21T15:15,Espanol,Getafe,1,2
+145,2026-03-21,西甲,LALIGA,莱万特,皇家奥维耶多,4,2,unique,1,0,,fuzzy_league_date_score_team,4264e29109dae5d2d82f,2026-03-21T17:30,Levante,Oviedo,4,2
+146,2026-03-21,西甲,LALIGA,奥萨苏纳,赫罗纳,1,0,unique,1,1,1-0:7ebed655ae8a8486fa8d,exact,7ebed655ae8a8486fa8d,2026-03-21T17:30,Osasuna,Girona,1,0
+147,2026-03-21,西甲,LALIGA,塞维利亚,瓦伦西亚,0,2,unique,1,1,0-2:5c772c3833253ca4319e,exact,5c772c3833253ca4319e,2026-03-21T20:00,Sevilla,Valencia,0,2
+148,2026-03-22,西甲,LALIGA,巴塞罗那,巴列卡诺,1,0,unique,1,0,,fuzzy_league_date_score_team,fb3cb941926e3411a2b0,2026-03-22T13:00,Barcelona,Vallecano,1,0
+149,2026-03-22,西甲,LALIGA,塞尔塔,阿拉维斯,3,4,unresolved,0,0,,exact,,,,,,
+150,2026-03-22,西甲,LALIGA,毕尔巴鄂竞技,皇家贝蒂斯,2,1,unresolved,0,0,,exact,,,,,,
+151,2026-03-22,西甲,LALIGA,皇家马德里,马德里竞技,3,2,unique,1,0,,fuzzy_league_date_score_team,30d1f682de653fb798b9,2026-03-22T20:00,Real Madrid,Ath Madrid,3,2
+152,2026-04-04,西甲,LALIGA,皇家马德里,瓦伦西亚,2,1,unresolved,0,0,,exact,,,,,,
+153,2026-04-04,西甲,LALIGA,巴塞罗那,马德里竞技,3,2,unresolved,0,0,,exact,,,,,,
+154,2026-04-05,西甲,LALIGA,比利亚雷亚尔,赫塔费,2,0,unresolved,0,0,,exact,,,,,,
+155,2026-04-05,西甲,LALIGA,皇家社会,塞维利亚,1,0,unresolved,0,0,,exact,,,,,,
+156,2026-04-05,西甲,LALIGA,皇家贝蒂斯,赫罗纳,2,1,unresolved,0,0,,exact,,,,,,
+157,2026-04-06,西甲,LALIGA,阿拉维斯,奥萨苏纳,1,1,unresolved,0,0,,exact,,,,,,
+158,2026-04-06,西甲,LALIGA,塞尔塔,西班牙人,2,0,unresolved,0,0,,exact,,,,,,
+159,2026-04-06,西甲,LALIGA,马略卡,莱万特,1,1,unresolved,0,0,,exact,,,,,,
+160,2026-04-10,西甲,LALIGA,皇家马德里,皇家社会,3,1,unresolved,0,0,,exact,,,,,,
+161,2026-04-11,西甲,LALIGA,巴塞罗那,赫罗纳,4,1,unresolved,0,0,,exact,,,,,,
+162,2026-04-11,西甲,LALIGA,马德里竞技,皇家贝蒂斯,2,0,unresolved,0,0,,exact,,,,,,
+163,2026-04-12,西甲,LALIGA,瓦伦西亚,毕尔巴鄂竞技,1,1,unresolved,0,0,,exact,,,,,,
+164,2026-04-12,西甲,LALIGA,塞维利亚,比利亚雷亚尔,0,2,unresolved,0,0,,exact,,,,,,
+165,2026-04-13,西甲,LALIGA,赫塔费,阿拉维斯,1,0,unresolved,0,0,,exact,,,,,,
+166,2026-04-18,西甲,LALIGA,皇家社会,巴塞罗那,1,3,unresolved,0,0,,exact,,,,,,
+167,2026-04-19,西甲,LALIGA,皇家马德里,赫塔费,2,0,unresolved,0,0,,exact,,,,,,
+168,2026-04-19,西甲,LALIGA,毕尔巴鄂竞技,马德里竞技,1,2,unresolved,0,0,,exact,,,,,,
+169,2026-04-20,西甲,LALIGA,皇家贝蒂斯,瓦伦西亚,2,1,unresolved,0,0,,exact,,,,,,
+170,2026-04-25,西甲,LALIGA,巴塞罗那,皇家马德里,2,2,unresolved,0,0,,exact,,,,,,
+171,2026-04-26,西甲,LALIGA,比利亚雷亚尔,皇家社会,1,0,unresolved,0,0,,exact,,,,,,
+172,2026-04-10,西甲,LALIGA,皇家马德里,赫罗纳,1,1,unique,1,1,1-1:7778d467442232d69c6c,exact,7778d467442232d69c6c,2026-04-10T20:00,Real Madrid,Girona,1,1
+173,2026-04-11,西甲,LALIGA,皇家社会,阿拉维斯,3,3,unresolved,0,0,,exact,,,,,,
+174,2026-04-11,西甲,LALIGA,埃尔切,瓦伦西亚,1,0,unique,1,1,1-0:579d4c612890fff77965,exact,579d4c612890fff77965,2026-04-11T15:15,Elche,Valencia,1,0
+175,2026-04-11,西甲,LALIGA,巴塞罗那,西班牙人,4,1,unique,1,0,,fuzzy_league_date_score_team,77bb5ac91ee586733278,2026-04-11T17:30,Barcelona,Espanol,4,1
+176,2026-04-11,西甲,LALIGA,塞维利亚,马德里竞技,2,1,unique,1,0,,fuzzy_league_date_score_team,6131533594a8e7d07ff2,2026-04-11T20:00,Sevilla,Ath Madrid,2,1
+177,2026-04-12,西甲,LALIGA,奥萨苏纳,皇家贝蒂斯,1,1,unique,1,0,,fuzzy_league_date_score_team,7284ac78debb7ee614e9,2026-04-12T13:00,Osasuna,Betis,1,1
+178,2026-04-12,西甲,LALIGA,马略卡,巴列卡诺,3,0,unique,1,0,,fuzzy_league_date_score_team,0ea10665f8d8c9bbf014,2026-04-12T15:15,Mallorca,Vallecano,3,0
+179,2026-04-12,西甲,LALIGA,塞尔塔,皇家奥维耶多,0,3,unique,1,0,,fuzzy_league_date_score_team,ce0dd19e2a1aa4f07978,2026-04-12T17:30,Celta,Oviedo,0,3
+180,2026-04-12,西甲,LALIGA,毕尔巴鄂竞技,比利亚雷亚尔,1,2,unique,1,0,,fuzzy_league_date_score_team,95baf3e51f64e701e5c1,2026-04-12T20:00,Ath Bilbao,Villarreal,1,2
+181,2026-04-13,西甲,LALIGA,莱万特,赫塔费,1,0,unique,1,1,1-0:a8b96b91753cb723db99,exact,a8b96b91753cb723db99,2026-04-13T20:00,Levante,Getafe,1,0
+182,2026-04-24,西甲,LALIGA,皇家贝蒂斯,皇家马德里,1,1,unique,1,0,,fuzzy_league_date_score_team,d2f43d746e3443efb8fa,2026-04-24T20:00,Betis,Real Madrid,1,1
+183,2026-04-25,西甲,LALIGA,阿拉维斯,马略卡,2,1,unique,1,0,,fuzzy_league_date_score_team,90bded8c3db6fb576193,2026-04-25T13:00,Alaves,Mallorca,2,1
+184,2026-04-25,西甲,LALIGA,赫塔费,巴塞罗那,0,2,unique,1,1,0-2:c220862c654911f247ea,exact,c220862c654911f247ea,2026-04-25T15:15,Getafe,Barcelona,0,2
+185,2026-04-25,西甲,LALIGA,瓦伦西亚,赫罗纳,2,1,unique,1,1,2-1:9e17b9e1a33da63edc35,exact,9e17b9e1a33da63edc35,2026-04-25T17:30,Valencia,Girona,2,1
+186,2026-04-25,西甲,LALIGA,马德里竞技,毕尔巴鄂竞技,3,2,unresolved,0,0,,exact,,,,,,
+187,2026-04-26,西甲,LALIGA,巴列卡诺,皇家社会,3,3,unique,1,0,,fuzzy_league_date_score_team,639af764f64f42fa6573,2026-04-26T13:00,Vallecano,Sociedad,3,3
+188,2026-04-26,西甲,LALIGA,皇家奥维耶多,埃尔切,1,2,unique,1,0,,fuzzy_league_date_score_team,59ef0bf4148e4a521001,2026-04-26T15:15,Oviedo,Elche,1,2
+189,2026-04-26,西甲,LALIGA,奥萨苏纳,塞维利亚,2,1,unique,1,1,2-1:1b7c201f74fce045a98a,exact,1b7c201f74fce045a98a,2026-04-26T17:30,Osasuna,Sevilla,2,1
+190,2026-04-26,西甲,LALIGA,比利亚雷亚尔,塞尔塔,2,1,unique,1,0,,fuzzy_league_date_score_team,6577676959c65974fc92,2026-04-26T20:00,Villarreal,Celta,2,1
+191,2026-04-27,西甲,LALIGA,西班牙人,莱万特,0,0,unique,1,0,,fuzzy_league_date_score_team,9cdc009a5bec3d344398,2026-04-27T20:00,Espanol,Levante,0,0
+192,2026-04-21,西甲,LALIGA,毕尔巴鄂竞技,奥萨苏纳,1,0,unique,1,0,,fuzzy_league_date_score_team,996f40dd79827106b9c5,2026-04-21T18:00,Ath Bilbao,Osasuna,1,0
+193,2026-04-21,西甲,LALIGA,马略卡,瓦伦西亚,1,1,unique,1,1,1-1:e30abf32dcaf05b99113,exact,e30abf32dcaf05b99113,2026-04-21T18:00,Mallorca,Valencia,1,1
+194,2026-04-21,西甲,LALIGA,皇家马德里,阿拉维斯,2,1,unique,1,0,,fuzzy_league_date_score_team,5e1eb207829c53ec4769,2026-04-21T20:30,Real Madrid,Alaves,2,1
+195,2026-04-21,西甲,LALIGA,赫罗纳,皇家贝蒂斯,2,3,unique,1,0,,fuzzy_league_date_score_team,50801754d27032a01909,2026-04-21T20:30,Girona,Betis,2,3
+196,2026-04-22,西甲,LALIGA,埃尔切,马德里竞技,3,2,unique,1,0,,fuzzy_league_date_score_team,82dbdda53d4b560165cf,2026-04-22T18:00,Elche,Ath Madrid,3,2
+197,2026-04-22,西甲,LALIGA,皇家社会,赫塔费,0,1,unique,1,0,,fuzzy_league_date_score_team,9ab6b63af6d960da6d8c,2026-04-22T19:00,Sociedad,Getafe,0,1
+198,2026-04-22,西甲,LALIGA,巴塞罗那,塞尔塔,1,0,unique,1,0,,fuzzy_league_date_score_team,96ce78ed5973ef8c8f89,2026-04-22T20:30,Barcelona,Celta,1,0
+199,2026-04-23,西甲,LALIGA,莱万特,塞维利亚,2,0,unique,1,1,2-0:9e19d1c1078ed7b35e1d,exact,9e19d1c1078ed7b35e1d,2026-04-23T18:00,Levante,Sevilla,2,0
+200,2026-04-23,西甲,LALIGA,巴列卡诺,西班牙人,1,0,unique,1,0,,fuzzy_league_date_score_team,b4f0c92514a6c13148b8,2026-04-23T19:00,Vallecano,Espanol,1,0
+201,2026-04-23,西甲,LALIGA,皇家奥维耶多,比利亚雷亚尔,1,1,unique,1,0,,fuzzy_league_date_score_team,96585ced303cdec8c7ea,2026-04-23T20:30,Oviedo,Villarreal,1,1
+202,2026-05-01,西甲,LALIGA,赫罗纳,马略卡,0,1,unique,1,1,0-1:e9d654c30a63869a9983,exact,e9d654c30a63869a9983,2026-05-01T20:00,Girona,Mallorca,0,1
+203,2026-05-02,西甲,LALIGA,比利亚雷亚尔,莱万特,5,1,unique,1,1,5-1:14bea22c47e2a6961e4b,exact,14bea22c47e2a6961e4b,2026-05-02T13:00,Villarreal,Levante,5,1
+204,2026-05-02,西甲,LALIGA,瓦伦西亚,马德里竞技,0,2,unique,1,0,,fuzzy_league_date_score_team,352278a7e43da26a05f7,2026-05-02T15:15,Valencia,Ath Madrid,0,2
+205,2026-05-02,西甲,LALIGA,阿拉维斯,毕尔巴鄂竞技,2,4,unresolved,0,0,,exact,,,,,,
+206,2026-05-02,西甲,LALIGA,奥萨苏纳,巴塞罗那,1,2,unique,1,1,1-2:9199e6531aeceb380d17,exact,9199e6531aeceb380d17,2026-05-02T20:00,Osasuna,Barcelona,1,2
+207,2026-05-03,西甲,LALIGA,塞尔塔,埃尔切,3,1,unique,1,0,,fuzzy_league_date_score_team,ff6abc3b0c8e93b9b6b1,2026-05-03T13:00,Celta,Elche,3,1
+208,2026-05-03,西甲,LALIGA,赫塔费,巴列卡诺,0,2,unique,1,0,,fuzzy_league_date_score_team,c83ebb6542bd08afa917,2026-05-03T15:15,Getafe,Vallecano,0,2
+209,2026-05-03,西甲,LALIGA,皇家贝蒂斯,皇家奥维耶多,3,0,unique,1,0,,fuzzy_league_date_score_team,42dbda8b42a220b541d4,2026-05-03T17:30,Betis,Oviedo,3,0
+210,2026-05-03,西甲,LALIGA,西班牙人,皇家马德里,0,2,unique,1,0,,fuzzy_league_date_score_team,8ec73ff7164c4b6d8651,2026-05-03T20:00,Espanol,Real Madrid,0,2
+211,2026-05-04,西甲,LALIGA,塞维利亚,皇家社会,1,0,unique,1,0,,fuzzy_league_date_score_team,2606aaef19d6aab196b2,2026-05-04T20:00,Sevilla,Sociedad,1,0
+212,2026-05-08,西甲,LALIGA,莱万特,奥萨苏纳,3,2,unique,1,1,3-2:8d24a032be19497e9420,exact,8d24a032be19497e9420,2026-05-08T20:00,Levante,Osasuna,3,2
+213,2026-05-09,西甲,LALIGA,埃尔切,阿拉维斯,1,1,unique,1,0,,fuzzy_league_date_score_team,fb99b05b266546b66eb4,2026-05-09T13:00,Elche,Alaves,1,1
+214,2026-05-09,西甲,LALIGA,塞维利亚,西班牙人,2,1,unique,1,0,,fuzzy_league_date_score_team,4ef319206c62518b7c1b,2026-05-09T15:15,Sevilla,Espanol,2,1
+215,2026-05-09,西甲,LALIGA,马德里竞技,塞尔塔,0,1,unresolved,0,0,,exact,,,,,,
+216,2026-05-09,西甲,LALIGA,皇家社会,皇家贝蒂斯,2,2,unique,1,0,,fuzzy_league_date_score_team,a60befefdcf3b85949d6,2026-05-09T20:00,Sociedad,Betis,2,2
+217,2026-05-10,西甲,LALIGA,马略卡,比利亚雷亚尔,1,1,unique,1,1,1-1:cd08b5fee20b207efd3b,exact,cd08b5fee20b207efd3b,2026-05-10T13:00,Mallorca,Villarreal,1,1
+218,2026-05-10,西甲,LALIGA,毕尔巴鄂竞技,瓦伦西亚,0,1,unique,1,0,,fuzzy_league_date_score_team,f5995c3df80772e9517c,2026-05-10T15:15,Ath Bilbao,Valencia,0,1
+219,2026-05-10,西甲,LALIGA,皇家奥维耶多,赫塔费,0,0,unique,1,0,,fuzzy_league_date_score_team,b6fb0c4bd87f19a6cdc0,2026-05-10T17:30,Oviedo,Getafe,0,0
+220,2026-05-10,西甲,LALIGA,巴塞罗那,皇家马德里,2,0,unique,1,1,2-0:f10f1bbd29f573999efb,exact,f10f1bbd29f573999efb,2026-05-10T20:00,Barcelona,Real Madrid,2,0
+221,2026-05-11,西甲,LALIGA,巴列卡诺,赫罗纳,1,1,unique,1,0,,fuzzy_league_date_score_team,bca50d3fd5ea44f0b115,2026-05-11T20:00,Vallecano,Girona,1,1
+222,2026-05-12,西甲,LALIGA,塞尔塔,莱万特,2,3,unique,1,0,,fuzzy_league_date_score_team,a2a8c4ec1907bfe2ba55,2026-05-12T18:00,Celta,Levante,2,3
+223,2026-05-12,西甲,LALIGA,皇家贝蒂斯,埃尔切,2,1,unique,1,0,,fuzzy_league_date_score_team,e4247fbf762956b3302a,2026-05-12T19:00,Betis,Elche,2,1
+224,2026-05-12,西甲,LALIGA,奥萨苏纳,马德里竞技,1,2,unique,1,0,,fuzzy_league_date_score_team,a1a178aee744c7db43f1,2026-05-12T20:30,Osasuna,Ath Madrid,1,2
+225,2026-05-13,西甲,LALIGA,西班牙人,毕尔巴鄂竞技,2,0,unresolved,0,0,,exact,,,,,,
+226,2026-05-13,西甲,LALIGA,比利亚雷亚尔,塞维利亚,2,3,unique,1,1,2-3:6f0d3b1261cdb4fba716,exact,6f0d3b1261cdb4fba716,2026-05-13T18:00,Villarreal,Sevilla,2,3
+227,2026-05-13,西甲,LALIGA,阿拉维斯,巴塞罗那,1,0,unique,1,0,,fuzzy_league_date_score_team,5095d4cac43bc691798e,2026-05-13T20:30,Alaves,Barcelona,1,0
+228,2026-05-13,西甲,LALIGA,赫塔费,马略卡,3,1,unique,1,1,3-1:84d446d9c9b84d4e8ee5,exact,84d446d9c9b84d4e8ee5,2026-05-13T20:30,Getafe,Mallorca,3,1
+229,2026-05-14,西甲,LALIGA,瓦伦西亚,巴列卡诺,1,1,unique,1,0,,fuzzy_league_date_score_team,0d78626f3defde98707d,2026-05-14T18:00,Valencia,Vallecano,1,1
+230,2026-05-14,西甲,LALIGA,赫罗纳,皇家社会,1,1,unique,1,0,,fuzzy_league_date_score_team,8db50818c4bfb2c0956c,2026-05-14T19:00,Girona,Sociedad,1,1
+231,2026-05-14,西甲,LALIGA,皇家马德里,皇家奥维耶多,2,0,unique,1,0,,fuzzy_league_date_score_team,f889e7059202f6602dd5,2026-05-14T20:30,Real Madrid,Oviedo,2,0
+232,2026-05-17,西甲,LALIGA,毕尔巴鄂竞技,塞尔塔,1,1,unresolved,0,0,,exact,,,,,,
+233,2026-05-17,西甲,LALIGA,马德里竞技,赫罗纳,1,0,unique,1,0,,fuzzy_league_date_score_team,b52a62c263fa789d75b9,2026-05-17T18:00,Ath Madrid,Girona,1,0
+234,2026-05-17,西甲,LALIGA,埃尔切,赫塔费,1,0,unique,1,1,1-0:0920d19018b6a28df21f,exact,0920d19018b6a28df21f,2026-05-17T18:00,Elche,Getafe,1,0
+235,2026-05-17,西甲,LALIGA,莱万特,马略卡,2,0,unique,1,1,2-0:a07e75764afd3e6a5ab9,exact,a07e75764afd3e6a5ab9,2026-05-17T18:00,Levante,Mallorca,2,0
+236,2026-05-17,西甲,LALIGA,巴列卡诺,比利亚雷亚尔,2,0,unique,1,0,,fuzzy_league_date_score_team,9f6e5280851f20a2304d,2026-05-17T18:00,Vallecano,Villarreal,2,0
+237,2026-05-17,西甲,LALIGA,皇家社会,瓦伦西亚,3,4,unique,1,0,,fuzzy_league_date_score_team,17fa07ee265469c3f9c7,2026-05-17T18:00,Sociedad,Valencia,3,4
+238,2026-05-17,西甲,LALIGA,皇家奥维耶多,阿拉维斯,0,1,unresolved,0,0,,exact,,,,,,
+239,2026-05-17,西甲,LALIGA,奥萨苏纳,西班牙人,1,2,unique,1,0,,fuzzy_league_date_score_team,6c1e36b904175a5d97a2,2026-05-17T18:00,Osasuna,Espanol,1,2
+240,2026-05-17,西甲,LALIGA,塞维利亚,皇家马德里,0,1,unique,1,1,0-1:f15b5f6e94e0527e3560,exact,f15b5f6e94e0527e3560,2026-05-17T18:00,Sevilla,Real Madrid,0,1
+241,2026-05-17,西甲,LALIGA,巴塞罗那,皇家贝蒂斯,3,1,unique,1,0,,fuzzy_league_date_score_team,28a8eb514d935f78c33d,2026-05-17T20:15,Barcelona,Betis,3,1
+242,2026-05-23,西甲,LALIGA,阿拉维斯,巴列卡诺,1,2,unresolved,0,0,,exact,,,,,,
+243,2026-05-23,西甲,LALIGA,皇家贝蒂斯,莱万特,2,1,unique,1,0,,fuzzy_league_date_score_team,dfd9e32af26b9cc75e36,2026-05-23T20:00,Betis,Levante,2,1
+244,2026-05-23,西甲,LALIGA,塞尔塔,塞维利亚,1,0,unique,1,0,,fuzzy_league_date_score_team,dd5a1074f931fa4a4ec0,2026-05-23T20:00,Celta,Sevilla,1,0
+245,2026-05-23,西甲,LALIGA,西班牙人,皇家社会,1,1,unique,1,0,,fuzzy_league_date_score_team,65e86e151f3deaaf2f2d,2026-05-23T20:00,Espanol,Sociedad,1,1
+246,2026-05-23,西甲,LALIGA,赫塔费,奥萨苏纳,1,0,unique,1,1,1-0:e1309619e2c347182c4a,exact,e1309619e2c347182c4a,2026-05-23T20:00,Getafe,Osasuna,1,0
+247,2026-05-23,西甲,LALIGA,马略卡,皇家奥维耶多,3,0,unique,1,0,,fuzzy_league_date_score_team,e0a1452530e267a7c43a,2026-05-23T20:00,Mallorca,Oviedo,3,0
+248,2026-05-23,西甲,LALIGA,皇家马德里,毕尔巴鄂竞技,4,2,unique,1,0,,fuzzy_league_date_score_team,197c663c699598e4114f,2026-05-23T20:00,Real Madrid,Ath Bilbao,4,2
+249,2026-05-23,西甲,LALIGA,瓦伦西亚,巴塞罗那,3,1,unique,1,1,3-1:4ca21c8c977b8db10b3a,exact,4ca21c8c977b8db10b3a,2026-05-23T20:00,Valencia,Barcelona,3,1
+250,2026-05-23,西甲,LALIGA,赫罗纳,埃尔切,1,1,unique,1,1,1-1:ade66a8983be93aaedef,exact,ade66a8983be93aaedef,2026-05-23T20:00,Girona,Elche,1,1
+251,2026-05-24,西甲,LALIGA,比利亚雷亚尔,马德里竞技,5,1,unique,1,0,,fuzzy_league_date_score_team,4c36edabf1824f9902a2,2026-05-24T20:00,Villarreal,Ath Madrid,5,1
+252,2026-04-03,西甲,LALIGA,巴列卡诺,埃尔切,1,0,unique,1,0,,fuzzy_league_date_score_team,81a0df34238721332e9e,2026-04-03T20:00,Vallecano,Elche,1,0
+253,2026-04-04,西甲,LALIGA,马德里竞技,巴塞罗那,1,2,unique,1,0,,fuzzy_league_date_score_team,c779e2c23e23235f2e34,2026-04-04T20:00,Ath Madrid,Barcelona,1,2
+254,2026-04-04,西甲,LALIGA,皇家贝蒂斯,西班牙人,0,0,unique,1,0,,fuzzy_league_date_score_team,08c423f529b7d6665160,2026-04-04T17:30,Betis,Espanol,0,0
+255,2026-04-04,西甲,LALIGA,马略卡,皇家马德里,2,1,unique,1,1,2-1:6118c2157d8a60d6c5dc,exact,6118c2157d8a60d6c5dc,2026-04-04T15:15,Mallorca,Real Madrid,2,1
+256,2026-04-04,西甲,LALIGA,皇家社会,莱万特,2,0,unique,1,0,,fuzzy_league_date_score_team,95d64ad64f5374f40075,2026-04-04T13:00,Sociedad,Levante,2,0
+257,2026-04-05,西甲,LALIGA,阿拉维斯,奥萨苏纳,2,2,unique,1,0,,fuzzy_league_date_score_team,4b83fb52e83e797a1b4f,2026-04-05T20:00,Alaves,Osasuna,2,2
+258,2026-04-05,西甲,LALIGA,皇家奥维耶多,塞维利亚,1,0,unique,1,0,,fuzzy_league_date_score_team,a12238b7e64125a83ddd,2026-04-05T17:30,Oviedo,Sevilla,1,0
+259,2026-04-05,西甲,LALIGA,赫塔费,毕尔巴鄂竞技,2,0,unique,1,0,,fuzzy_league_date_score_team,a1a8f05d67edd9b229d5,2026-04-05T13:00,Getafe,Ath Bilbao,2,0
+260,2026-04-05,西甲,LALIGA,瓦伦西亚,塞尔塔,2,3,unique,1,0,,fuzzy_league_date_score_team,e99fea31ad95a38c8b85,2026-04-05T15:15,Valencia,Celta,2,3
+261,2026-04-06,西甲,LALIGA,赫罗纳,比利亚雷亚尔,1,0,unique,1,1,1-0:d87bbba6b82aa4a79a03,exact,d87bbba6b82aa4a79a03,2026-04-06T20:00,Girona,Villarreal,1,0
+262,2026-05-09,英超,EPL,利物浦,切尔西,1,1,unique,1,1,1-1:ab77d8bf76fd87e36fbb,exact,ab77d8bf76fd87e36fbb,2026-05-09T12:30,Liverpool,Chelsea,1,1
+263,2026-05-09,英超,EPL,布莱顿,狼队,3,0,unresolved,0,0,,exact,,,,,,
+264,2026-05-09,英超,EPL,富勒姆,伯恩茅斯,0,1,unique,1,0,,fuzzy_league_date_score_team,0c254f3f07edbc607f31,2026-05-09T15:00,Fulham,Bournemouth,0,1
+265,2026-05-09,英超,EPL,桑德兰,曼联,0,0,unique,1,0,,fuzzy_league_date_score_team,01a60ed685ed673a5d3c,2026-05-09T15:00,Sunderland,Man United,0,0
+266,2026-05-09,英超,EPL,曼城,布伦特福德,3,0,unique,1,0,,fuzzy_league_date_score_team,4fc9747458bb082a4b65,2026-05-09T17:30,Man City,Brentford,3,0
+267,2026-05-10,英超,EPL,伯恩利,阿斯顿维拉,2,2,unique,1,1,2-2:4389eb33b2b1960342ec,exact,4389eb33b2b1960342ec,2026-05-10T14:00,Burnley,Aston Villa,2,2
+268,2026-05-10,英超,EPL,水晶宫,埃弗顿,2,2,unique,1,1,2-2:db10b622a2b5e714a0fd,exact,db10b622a2b5e714a0fd,2026-05-10T14:00,Crystal Palace,Everton,2,2
+269,2026-05-10,英超,EPL,诺丁汉森林,纽卡斯尔联,1,1,unique,1,0,,fuzzy_league_date_score_team,3759a22b015a69ebc687,2026-05-10T14:00,Nott'm Forest,Newcastle,1,1
+270,2026-05-10,英超,EPL,西汉姆联,阿森纳,0,1,unique,1,0,,fuzzy_league_date_score_team,44b29488cf701f457a04,2026-05-10T16:30,West Ham,Arsenal,0,1
+271,2026-05-11,英超,EPL,热刺,利兹联,1,1,unresolved,0,0,,exact,,,,,,
+272,2026-05-15,英超,EPL,阿斯顿维拉,利物浦,4,2,unique,1,1,4-2:8ee38d049c7c5117c4dd,exact,8ee38d049c7c5117c4dd,2026-05-15T20:00,Aston Villa,Liverpool,4,2
+273,2026-05-17,英超,EPL,曼联,诺丁汉森林,3,2,unique,1,0,,fuzzy_league_date_score_team,82f44c54dfc6e4dd1473,2026-05-17T12:30,Man United,Nott'm Forest,3,2
+274,2026-05-17,英超,EPL,布伦特福德,水晶宫,2,2,unique,1,1,2-2:e4255297601352de62b5,exact,e4255297601352de62b5,2026-05-17T15:00,Brentford,Crystal Palace,2,2
+275,2026-05-17,英超,EPL,埃弗顿,桑德兰,1,3,unique,1,1,1-3:ccaf638e9518ebbf4279,exact,ccaf638e9518ebbf4279,2026-05-17T15:00,Everton,Sunderland,1,3
+276,2026-05-17,英超,EPL,利兹联,布莱顿,1,0,unresolved,0,0,,exact,,,,,,
+277,2026-05-17,英超,EPL,狼队,富勒姆,1,1,unresolved,0,0,,exact,,,,,,
+278,2026-05-17,英超,EPL,纽卡斯尔联,西汉姆联,3,1,unique,1,0,,fuzzy_league_date_score_team,dbc30774b4c2007eff3e,2026-05-17T17:30,Newcastle,West Ham,3,1
+279,2026-05-18,英超,EPL,阿森纳,伯恩利,1,0,unique,1,1,1-0:55f3219271dff8cb60cd,exact,55f3219271dff8cb60cd,2026-05-18T20:00,Arsenal,Burnley,1,0
+280,2026-05-19,英超,EPL,伯恩茅斯,曼城,1,1,unique,1,0,,fuzzy_league_date_score_team,313fc11880a1e20423d2,2026-05-19T19:30,Bournemouth,Man City,1,1
+281,2026-05-19,英超,EPL,切尔西,热刺,2,1,unique,1,0,,fuzzy_league_date_score_team,b1324ef1a9205cce7f98,2026-05-19T20:15,Chelsea,Tottenham,2,1
+282,2026-05-24,英超,EPL,布莱顿,曼联,0,3,unresolved,0,0,,exact,,,,,,
+283,2026-05-24,英超,EPL,伯恩利,狼队,1,1,unresolved,0,0,,exact,,,,,,
+284,2026-05-24,英超,EPL,水晶宫,阿森纳,1,2,unique,1,1,1-2:0fcab6daf687d2a8c788,exact,0fcab6daf687d2a8c788,2026-05-24T16:00,Crystal Palace,Arsenal,1,2
+285,2026-05-24,英超,EPL,富勒姆,纽卡斯尔联,2,0,unique,1,0,,fuzzy_league_date_score_team,be6612403b87f4ebe1b2,2026-05-24T16:00,Fulham,Newcastle,2,0
+286,2026-05-24,英超,EPL,利物浦,布伦特福德,1,1,unique,1,1,1-1:165a848d3f9951184187,exact,165a848d3f9951184187,2026-05-24T16:00,Liverpool,Brentford,1,1
+287,2026-05-24,英超,EPL,曼城,阿斯顿维拉,1,2,unique,1,0,,fuzzy_league_date_score_team,ae81906ef0a59334030b,2026-05-24T16:00,Man City,Aston Villa,1,2
+288,2026-05-24,英超,EPL,诺丁汉森林,伯恩茅斯,1,1,unique,1,0,,fuzzy_league_date_score_team,07de23b66eebb53abada,2026-05-24T16:00,Nott'm Forest,Bournemouth,1,1
+289,2026-05-24,英超,EPL,桑德兰,切尔西,2,1,unique,1,1,2-1:1d882f000979a2e91dd5,exact,1d882f000979a2e91dd5,2026-05-24T16:00,Sunderland,Chelsea,2,1
+290,2026-05-24,英超,EPL,热刺,埃弗顿,1,0,unique,1,0,,fuzzy_league_date_score_team,3a133a620a04c5f2080f,2026-05-24T16:00,Tottenham,Everton,1,0
+291,2026-05-24,英超,EPL,西汉姆联,利兹联,3,0,unresolved,0,0,,exact,,,,,,
+292,2026-05-01,英超,EPL,利兹联,伯恩利,3,1,unique,1,0,,fuzzy_league_date_score_team,84064aff6e8fe059c7c2,2026-05-01T20:00,Leeds,Burnley,3,1
+293,2026-05-02,英超,EPL,布伦特福德,西汉姆联,3,0,unique,1,0,,fuzzy_league_date_score_team,00618d8d034c85e87c94,2026-05-02T15:00,Brentford,West Ham,3,0
+294,2026-05-02,英超,EPL,纽卡斯尔联,布莱顿,3,1,unresolved,0,0,,exact,,,,,,
+295,2026-05-02,英超,EPL,狼队,桑德兰,1,1,unresolved,0,0,,exact,,,,,,
+296,2026-05-02,英超,EPL,阿森纳,富勒姆,3,0,unique,1,1,3-0:2020476ee2cae8be7a12,exact,2020476ee2cae8be7a12,2026-05-02T17:30,Arsenal,Fulham,3,0
+297,2026-05-03,英超,EPL,伯恩茅斯,水晶宫,3,0,unique,1,0,,fuzzy_league_date_score_team,c6335972e4f9ea187549,2026-05-03T14:00,Bournemouth,Crystal Palace,3,0
+298,2026-05-03,英超,EPL,曼联,利物浦,3,2,unique,1,0,,fuzzy_league_date_score_team,105eae8e25ef40f71492,2026-05-03T15:30,Man United,Liverpool,3,2
+299,2026-05-03,英超,EPL,阿斯顿维拉,热刺,1,2,unique,1,0,,fuzzy_league_date_score_team,3b4fcc4a1c138993bb31,2026-05-03T19:00,Aston Villa,Tottenham,1,2
+300,2026-05-04,英超,EPL,切尔西,诺丁汉森林,1,3,unique,1,0,,fuzzy_league_date_score_team,d7724ff14beba8cc4494,2026-05-04T15:00,Chelsea,Nott'm Forest,1,3
+301,2026-05-04,英超,EPL,埃弗顿,曼城,3,3,unique,1,0,,fuzzy_league_date_score_team,cc4c87d31061b81a0532,2026-05-04T20:00,Everton,Man City,3,3
+302,2026-04-24,英超,EPL,桑德兰,诺丁汉森林,0,5,unique,1,0,,fuzzy_league_date_score_team,0962bedf7dc1dc407f48,2026-04-24T20:00,Sunderland,Nott'm Forest,0,5
+303,2026-04-25,英超,EPL,富勒姆,阿斯顿维拉,1,0,unique,1,1,1-0:eb85e1c7d5e9df67eee8,exact,eb85e1c7d5e9df67eee8,2026-04-25T12:30,Fulham,Aston Villa,1,0
+304,2026-04-25,英超,EPL,利物浦,水晶宫,3,1,unique,1,1,3-1:1f8dd6b2daba6406de15,exact,1f8dd6b2daba6406de15,2026-04-25T15:00,Liverpool,Crystal Palace,3,1
+305,2026-04-25,英超,EPL,西汉姆联,埃弗顿,2,1,unique,1,0,,fuzzy_league_date_score_team,724d510a72ce387f188c,2026-04-25T15:00,West Ham,Everton,2,1
+306,2026-04-25,英超,EPL,狼队,热刺,0,1,unresolved,0,0,,exact,,,,,,
+307,2026-04-25,英超,EPL,阿森纳,纽卡斯尔联,1,0,unique,1,0,,fuzzy_league_date_score_team,8d05c1a851aebeef6315,2026-04-25T17:30,Arsenal,Newcastle,1,0
+308,2026-04-27,英超,EPL,曼联,布伦特福德,2,1,unique,1,0,,fuzzy_league_date_score_team,a534cdaddd1f2442c0d4,2026-04-27T20:00,Man United,Brentford,2,1
+309,2026-04-10,德甲,BUNDESLIGA,奥格斯堡,霍芬海姆,2,2,unique,1,0,,fuzzy_league_date_score_team,a153e6e79532f130f6e4,2026-04-10T19:30,Augsburg,Hoffenheim,2,2
+310,2026-04-11,德甲,BUNDESLIGA,海登海姆,柏林联合,3,1,unique,1,1,3-1:c0c791868a8d0ffab36c,exact,c0c791868a8d0ffab36c,2026-04-11T14:30,Heidenheim,Union Berlin,3,1
+311,2026-04-11,德甲,BUNDESLIGA,沃尔夫斯堡,法兰克福,1,2,unique,1,0,,fuzzy_league_date_score_team,1cac5baee48d125cfb43,2026-04-11T14:30,Wolfsburg,Ein Frankfurt,1,2
+312,2026-04-11,德甲,BUNDESLIGA,RB莱比锡,门兴格拉德巴赫,1,0,unique,1,0,,fuzzy_league_date_score_team,3f70fe8c3a39a1ebd00a,2026-04-11T14:30,RB Leipzig,M'gladbach,1,0
+313,2026-04-11,德甲,BUNDESLIGA,多特蒙德,勒沃库森,0,1,unique,1,0,,fuzzy_league_date_score_team,1beedff03ce87a4d71f7,2026-04-11T14:30,Dortmund,Leverkusen,0,1
+314,2026-04-11,德甲,BUNDESLIGA,圣保利,拜仁慕尼黑,0,5,unique,1,1,0-5:f16dc3e170a433a9a460,exact,f16dc3e170a433a9a460,2026-04-11T17:30,St Pauli,Bayern Munich,0,5
+315,2026-04-12,德甲,BUNDESLIGA,科隆,云达不莱梅,3,1,unique,1,0,,fuzzy_league_date_score_team,84c7f9964ab124828357,2026-04-12T14:30,FC Koln,Werder Bremen,3,1
+316,2026-04-12,德甲,BUNDESLIGA,斯图加特,汉堡,4,0,unique,1,0,,fuzzy_league_date_score_team,cbf61e6f36940e822bdb,2026-04-12T16:30,Stuttgart,Hamburg,4,0
+317,2026-04-12,德甲,BUNDESLIGA,美因茨,弗赖堡,0,1,unique,1,0,,fuzzy_league_date_score_team,414a33e44be7eca90a20,2026-04-12T18:30,Mainz,Freiburg,0,1
+318,2026-04-17,德甲,BUNDESLIGA,圣保利,科隆,1,1,unique,1,0,,fuzzy_league_date_score_team,2f9df86e30a5766af613,2026-04-17T19:30,St Pauli,FC Koln,1,1
+319,2026-04-18,德甲,BUNDESLIGA,霍芬海姆,多特蒙德,2,1,unique,1,0,,fuzzy_league_date_score_team,cc20f054bb377b6b7347,2026-04-18T14:30,Hoffenheim,Dortmund,2,1
+320,2026-04-18,德甲,BUNDESLIGA,柏林联合,沃尔夫斯堡,1,2,unique,1,1,1-2:291db36b29df0b933988,exact,291db36b29df0b933988,2026-04-18T14:30,Union Berlin,Wolfsburg,1,2
+321,2026-04-18,德甲,BUNDESLIGA,云达不莱梅,汉堡,3,1,unique,1,0,,fuzzy_league_date_score_team,c4004543977739378feb,2026-04-18T14:30,Werder Bremen,Hamburg,3,1
+322,2026-04-18,德甲,BUNDESLIGA,勒沃库森,奥格斯堡,1,2,unique,1,0,,fuzzy_league_date_score_team,3db157ac27a8468b8b74,2026-04-18T14:30,Leverkusen,Augsburg,1,2
+323,2026-04-18,德甲,BUNDESLIGA,法兰克福,RB莱比锡,1,3,unique,1,0,,fuzzy_league_date_score_team,09d176164c8a7ec57617,2026-04-18T17:30,Ein Frankfurt,RB Leipzig,1,3
+324,2026-04-19,德甲,BUNDESLIGA,弗赖堡,海登海姆,2,1,unique,1,1,2-1:07870bb184b1d9e320b0,exact,07870bb184b1d9e320b0,2026-04-19T14:30,Freiburg,Heidenheim,2,1
+325,2026-04-19,德甲,BUNDESLIGA,拜仁慕尼黑,斯图加特,4,2,unique,1,0,,fuzzy_league_date_score_team,88133fff2f69cbdb4649,2026-04-19T16:30,Bayern Munich,Stuttgart,4,2
+326,2026-04-19,德甲,BUNDESLIGA,门兴格拉德巴赫,美因茨,1,1,unresolved,0,0,,exact,,,,,,
+327,2026-04-24,德甲,BUNDESLIGA,RB莱比锡,柏林联合,3,1,unique,1,1,3-1:ae112b9a32f90e9e3cb0,exact,ae112b9a32f90e9e3cb0,2026-04-24T19:30,RB Leipzig,Union Berlin,3,1
+328,2026-04-25,德甲,BUNDESLIGA,科隆,勒沃库森,1,2,unresolved,0,0,,exact,,,,,,
+329,2026-04-25,韩职,KLEAGUE1,대전,서울,1,2,unresolved,0,0,,exact,,,,,,
+330,2026-04-25,韩职,KLEAGUE1,인천,광주,4,0,unresolved,0,0,,exact,,,,,,
+331,2026-04-25,韩职,KLEAGUE1,전북,김천,1,0,unresolved,0,0,,exact,,,,,,
+332,2026-04-25,韩职,KLEAGUE1,제주,안양,1,2,unresolved,0,0,,exact,,,,,,
+333,2026-04-25,韩职,KLEAGUE1,강원,울산,2,0,unresolved,0,0,,exact,,,,,,
+334,2026-04-25,韩职,KLEAGUE1,부천,포항,2,0,unresolved,0,0,,exact,,,,,,
+335,2026-05-05,韩职,KLEAGUE1,서울,안양,0,0,unresolved,0,0,,exact,,,,,,
+336,2026-05-05,韩职,KLEAGUE1,전북,광주,4,0,unresolved,0,0,,exact,,,,,,
+337,2026-05-12,韩职,KLEAGUE1,강원,대전,2,0,unresolved,0,0,,exact,,,,,,
+338,2026-05-12,韩职,KLEAGUE1,광주,서울,0,1,unresolved,0,0,,exact,,,,,,
+339,2026-05-02,德甲,BUNDESLIGA,霍芬海姆,斯图加特,3,3,unique,1,0,,fuzzy_league_date_score_team,5d6f376a3950dd94a7b4,2026-05-02T14:30,Hoffenheim,Stuttgart,3,3
+340,2026-05-02,德甲,BUNDESLIGA,柏林联合,科隆,2,2,unique,1,0,,fuzzy_league_date_score_team,37554eecc64b1a3ec523,2026-05-02T14:30,Union Berlin,FC Koln,2,2
+341,2026-05-02,德甲,BUNDESLIGA,云达不莱梅,奥格斯堡,1,3,unique,1,1,1-3:45a383bb9d3374cf0161,exact,45a383bb9d3374cf0161,2026-05-02T14:30,Werder Bremen,Augsburg,1,3
+342,2026-05-02,德甲,BUNDESLIGA,法兰克福,汉堡,1,2,unique,1,0,,fuzzy_league_date_score_team,890b616362654e90ed15,2026-05-02T14:30,Ein Frankfurt,Hamburg,1,2
+343,2026-05-02,德甲,BUNDESLIGA,拜仁慕尼黑,海登海姆,3,3,unique,1,1,3-3:df084b019542fb357299,exact,df084b019542fb357299,2026-05-02T14:30,Bayern Munich,Heidenheim,3,3
+344,2026-05-02,德甲,BUNDESLIGA,勒沃库森,RB莱比锡,4,1,unique,1,0,,fuzzy_league_date_score_team,5d06713e161754e0a471,2026-05-02T17:30,Leverkusen,RB Leipzig,4,1
+345,2026-05-03,德甲,BUNDESLIGA,圣保利,美因茨,1,2,unique,1,0,,fuzzy_league_date_score_team,861eb5b4129ac4c9124d,2026-05-03T14:30,St Pauli,Mainz,1,2
+346,2026-05-03,德甲,BUNDESLIGA,门兴格拉德巴赫,多特蒙德,1,0,unresolved,0,0,,exact,,,,,,
+347,2026-05-03,德甲,BUNDESLIGA,弗赖堡,沃尔夫斯堡,1,1,unique,1,1,1-1:3b0811238a41143b0f42,exact,3b0811238a41143b0f42,2026-05-03T18:30,Freiburg,Wolfsburg,1,1
+348,2026-05-08,德甲,BUNDESLIGA,多特蒙德,法兰克福,3,2,unique,1,0,,fuzzy_league_date_score_team,25aaac23b5b220292bd0,2026-05-08T19:30,Dortmund,Ein Frankfurt,3,2
+349,2026-05-09,德甲,BUNDESLIGA,霍芬海姆,云达不莱梅,1,0,unique,1,0,,fuzzy_league_date_score_team,a1102fc239fae419df5a,2026-05-09T14:30,Hoffenheim,Werder Bremen,1,0
+350,2026-05-09,德甲,BUNDESLIGA,奥格斯堡,门兴格拉德巴赫,3,1,unique,1,0,,fuzzy_league_date_score_team,852b304b42417d92d082,2026-05-09T14:30,Augsburg,M'gladbach,3,1
+351,2026-05-09,德甲,BUNDESLIGA,斯图加特,勒沃库森,3,1,unique,1,0,,fuzzy_league_date_score_team,5b6c53bec238d51c717b,2026-05-09T14:30,Stuttgart,Leverkusen,3,1
+352,2026-05-09,德甲,BUNDESLIGA,RB莱比锡,圣保利,2,1,unique,1,1,2-1:5b2febf2c96c40b50180,exact,5b2febf2c96c40b50180,2026-05-09T14:30,RB Leipzig,St Pauli,2,1
+353,2026-05-09,德甲,BUNDESLIGA,沃尔夫斯堡,拜仁慕尼黑,0,1,unique,1,1,0-1:1eab37ebd26e0272d143,exact,1eab37ebd26e0272d143,2026-05-09T17:30,Wolfsburg,Bayern Munich,0,1
+354,2026-05-10,德甲,BUNDESLIGA,汉堡,弗赖堡,3,2,unique,1,0,,fuzzy_league_date_score_team,033ed48f79003dbb614c,2026-05-10T14:30,Hamburg,Freiburg,3,2
+355,2026-05-10,德甲,BUNDESLIGA,科隆,海登海姆,1,3,unique,1,0,,fuzzy_league_date_score_team,a62b6d79102f1e2b3062,2026-05-10T16:30,FC Koln,Heidenheim,1,3
+356,2026-05-10,德甲,BUNDESLIGA,美因茨,柏林联合,1,3,unique,1,0,,fuzzy_league_date_score_team,5f6d501e84bd7e7d0972,2026-05-10T18:30,Mainz,Union Berlin,1,3
+357,2026-05-16,德甲,BUNDESLIGA,海登海姆,美因茨,0,2,unique,1,0,,fuzzy_league_date_score_team,9e4d191fa6b1e3eb68e3,2026-05-16T14:30,Heidenheim,Mainz,0,2
+358,2026-05-16,德甲,BUNDESLIGA,圣保利,沃尔夫斯堡,1,3,unique,1,1,1-3:ab8e01fe8cd80a2b7051,exact,ab8e01fe8cd80a2b7051,2026-05-16T14:30,St Pauli,Wolfsburg,1,3
+359,2026-05-16,德甲,BUNDESLIGA,柏林联合,奥格斯堡,4,0,unique,1,1,4-0:2918944bbe311ae568ae,exact,2918944bbe311ae568ae,2026-05-16T14:30,Union Berlin,Augsburg,4,0
+360,2026-05-16,德甲,BUNDESLIGA,门兴格拉德巴赫,霍芬海姆,4,0,unresolved,0,0,,exact,,,,,,
+361,2026-05-16,德甲,BUNDESLIGA,云达不莱梅,多特蒙德,0,2,unique,1,0,,fuzzy_league_date_score_team,fd8b6db6f1ad230d22ca,2026-05-16T14:30,Werder Bremen,Dortmund,0,2
+362,2026-05-16,德甲,BUNDESLIGA,弗赖堡,RB莱比锡,4,1,unique,1,1,4-1:550d91906ec3aae000bc,exact,550d91906ec3aae000bc,2026-05-16T14:30,Freiburg,RB Leipzig,4,1
+363,2026-05-16,德甲,BUNDESLIGA,法兰克福,斯图加特,2,2,unique,1,0,,fuzzy_league_date_score_team,d6f0f5d94487219495a0,2026-05-16T14:30,Ein Frankfurt,Stuttgart,2,2
+364,2026-05-16,德甲,BUNDESLIGA,勒沃库森,汉堡,1,1,unique,1,0,,fuzzy_league_date_score_team,35d09719ab4d992b419e,2026-05-16T14:30,Leverkusen,Hamburg,1,1
+365,2026-05-16,德甲,BUNDESLIGA,拜仁慕尼黑,科隆,5,1,unique,1,0,,fuzzy_league_date_score_team,c11f49e09e1a11618308,2026-05-16T14:30,Bayern Munich,FC Koln,5,1
+366,2026-05-12,韩职,KLEAGUE1,인천,포항,0,1,unresolved,0,0,,exact,,,,,,
+367,2026-05-13,韩职,KLEAGUE1,울산,제주,2,1,unresolved,0,0,,exact,,,,,,
+368,2026-05-13,韩职,KLEAGUE1,안양,김천,2,2,unresolved,0,0,,exact,,,,,,
+369,2026-05-13,韩职,KLEAGUE1,부천,전북,0,0,unresolved,0,0,,exact,,,,,,
+370,2026-05-16,韩职,KLEAGUE1,대전,서울,1,2,unresolved,0,0,,exact,,,,,,
+371,2026-05-16,韩职,KLEAGUE1,인천,광주,4,0,unresolved,0,0,,exact,,,,,,
+372,2026-02-06,日职J1,J1,横滨水手,町田泽维亚,2,3,unresolved,0,0,,exact,,,,,,
+373,2026-02-06,日职J1,J1,京都不死鸟,神户胜利船,1,1,unresolved,0,0,,exact,,,,,,
+374,2026-02-06,日职J1,J1,长崎成功丸,广岛三箭,1,3,unresolved,0,0,,exact,,,,,,
+375,2026-02-07,日职J1,J1,千叶市原,浦和红钻,0,2,unresolved,0,0,,exact,,,,,,
+376,2026-02-07,日职J1,J1,FC东京,鹿岛鹿角,1,1,unresolved,0,0,,exact,,,,,,
+377,2026-02-07,日职J1,J1,大阪樱花,大阪钢巴,0,0,unresolved,0,0,,exact,,,,,,
+378,2026-02-08,日职J1,J1,川崎前锋,柏太阳神,5,3,unresolved,0,0,,exact,,,,,,
+379,2026-02-08,日职J1,J1,东京绿茵,水户蜀葵,3,1,unresolved,0,0,,exact,,,,,,
+380,2026-02-08,日职J1,J1,福冈黄蜂,冈山绿雉,1,1,unresolved,0,0,,exact,,,,,,
+381,2026-02-08,日职J1,J1,名古屋鲸八,清水心跳,1,0,unresolved,0,0,,exact,,,,,,
+382,2026-02-13,日职J1,J1,神户胜利船,长崎成功丸,2,0,unresolved,0,0,,exact,,,,,,
+383,2026-02-14,日职J1,J1,町田泽维亚,水户蜀葵,2,2,unresolved,0,0,,exact,,,,,,
+384,2026-02-14,日职J1,J1,FC东京,浦和红钻,1,1,unresolved,0,0,,exact,,,,,,
+385,2026-02-14,日职J1,J1,鹿岛鹿角,横滨水手,1,0,unresolved,0,0,,exact,,,,,,
+386,2026-02-14,日职J1,J1,广岛三箭,冈山绿雉,1,1,unresolved,0,0,,exact,,,,,,
+387,2026-02-14,日职J1,J1,清水心跳,京都不死鸟,1,1,unresolved,0,0,,exact,,,,,,
+388,2026-02-15,日职J1,J1,千叶市原,川崎前锋,0,0,unresolved,0,0,,exact,,,,,,
+389,2026-02-15,日职J1,J1,柏太阳神,东京绿茵,1,2,unresolved,0,0,,exact,,,,,,
+390,2026-02-15,日职J1,J1,福冈黄蜂,大阪樱花,0,2,unresolved,0,0,,exact,,,,,,
+391,2026-02-15,日职J1,J1,大阪钢巴,名古屋鲸八,0,0,unresolved,0,0,,exact,,,,,,
+392,2026-02-21,日职J1,J1,东京绿茵,町田泽维亚,2,2,unresolved,0,0,,exact,,,,,,
+393,2026-02-21,日职J1,J1,横滨水手,浦和红钻,0,2,unresolved,0,0,,exact,,,,,,
+394,2026-02-21,日职J1,J1,川崎前锋,FC东京,1,2,unresolved,0,0,,exact,,,,,,
+395,2026-02-21,日职J1,J1,鹿岛鹿角,柏太阳神,2,0,unresolved,0,0,,exact,,,,,,
+396,2026-02-21,日职J1,J1,清水心跳,神户胜利船,1,0,unresolved,0,0,,exact,,,,,,
+397,2026-02-21,日职J1,J1,名古屋鲸八,长崎成功丸,1,3,unresolved,0,0,,exact,,,,,,
+398,2026-02-22,日职J1,J1,水户蜀葵,千叶市原,1,1,unresolved,0,0,,exact,,,,,,
+399,2026-02-22,日职J1,J1,冈山绿雉,大阪钢巴,1,2,unresolved,0,0,,exact,,,,,,
+400,2026-02-22,日职J1,J1,京都不死鸟,福冈黄蜂,2,0,unresolved,0,0,,exact,,,,,,
+401,2026-02-22,日职J1,J1,大阪樱花,广岛三箭,1,2,unresolved,0,0,,exact,,,,,,
+402,2026-09-02,日职J1,J1,长崎成功丸,大阪钢巴,2,2,unresolved,0,0,,exact,,,,,,
+403,2026-09-02,日职J1,J1,东京绿茵,神户胜利船,0,2,unresolved,0,0,,exact,,,,,,
+404,2026-09-02,日职J1,J1,町田泽维亚,川崎前锋,2,1,unresolved,0,0,,exact,,,,,,
+405,2026-09-02,日职J1,J1,福冈黄蜂,浦和红钻,2,3,unresolved,0,0,,exact,,,,,,
+406,2026-09-02,日职J1,J1,大阪樱花,柏太阳神,2,0,unresolved,0,0,,exact,,,,,,
+407,2026-09-02,日职J1,J1,水户蜀葵,鹿岛鹿角,4,2,unresolved,0,0,,exact,,,,,,
+408,2026-09-02,日职J1,J1,千叶市原,冈山绿雉,1,2,unresolved,0,0,,exact,,,,,,
+409,2026-09-02,日职J1,J1,清水心跳,FC东京,1,1,unresolved,0,0,,exact,,,,,,
+410,2026-09-02,日职J1,J1,广岛三箭,名古屋鲸八,3,0,unresolved,0,0,,exact,,,,,,
+411,2026-09-02,日职J1,J1,横滨水手,京都不死鸟,1,1,unresolved,0,0,,exact,,,,,,
+412,2026-09-05,日职J1,J1,福冈黄蜂,水户蜀葵,1,1,unresolved,0,0,,exact,,,,,,
+413,2026-09-06,日职J1,J1,名古屋鲸八,町田泽维亚,1,3,unresolved,0,0,,exact,,,,,,
+414,2026-09-06,日职J1,J1,冈山绿雉,广岛三箭,3,2,unresolved,0,0,,exact,,,,,,
+415,2026-09-06,日职J1,J1,鹿岛鹿角,浦和红钻,0,1,unresolved,0,0,,exact,,,,,,
+416,2026-09-06,日职J1,J1,千叶市原,大阪钢巴,2,0,unresolved,0,0,,exact,,,,,,
+417,2026-09-06,日职J1,J1,大阪樱花,东京绿茵,0,0,unresolved,0,0,,exact,,,,,,
+418,2026-09-06,日职J1,J1,柏太阳神,横滨水手,0,2,unresolved,0,0,,exact,,,,,,
+419,2026-09-06,日职J1,J1,神户胜利船,长崎成功丸,3,1,unresolved,0,0,,exact,,,,,,
+420,2026-09-06,日职J1,J1,川崎前锋,清水心跳,3,1,unresolved,0,0,,exact,,,,,,
+421,2026-09-06,日职J1,J1,FC东京,京都不死鸟,2,0,unresolved,0,0,,exact,,,,,,
+422,2026-09-11,日职J1,J1,京都不死鸟,柏太阳神,2,3,unresolved,0,0,,exact,,,,,,
+423,2026-09-11,日职J1,J1,神户胜利船,鹿岛鹿角,2,1,unresolved,0,0,,exact,,,,,,
+424,2026-09-12,日职J1,J1,水户蜀葵,川崎前锋,0,1,unresolved,0,0,,exact,,,,,,
+425,2026-09-12,日职J1,J1,清水心跳,福冈黄蜂,1,0,unresolved,0,0,,exact,,,,,,
+426,2026-09-12,日职J1,J1,长崎成功丸,名古屋鲸八,2,0,unresolved,0,0,,exact,,,,,,
+427,2026-09-12,日职J1,J1,大阪钢巴,FC东京,0,2,unresolved,0,0,,exact,,,,,,
+428,2026-09-12,日职J1,J1,町田泽维亚,横滨水手,1,1,unresolved,0,0,,exact,,,,,,
+429,2026-09-12,日职J1,J1,广岛三箭,大阪樱花,6,1,unresolved,0,0,,exact,,,,,,
+430,2026-09-13,日职J1,J1,东京绿茵,千叶市原,1,1,unresolved,0,0,,exact,,,,,,
+431,2026-09-13,日职J1,J1,浦和红钻,冈山绿雉,1,2,unresolved,0,0,,exact,,,,,,
+432,2026-08-29,日职J1,J1,水户蜀葵,町田泽维亚,1,1,unresolved,0,0,,exact,,,,,,
+433,2026-08-29,日职J1,J1,大阪钢巴,广岛三箭,0,0,unresolved,0,0,,exact,,,,,,
+434,2026-08-29,日职J1,J1,清水心跳,柏太阳神,0,1,unresolved,0,0,,exact,,,,,,
+435,2026-08-29,日职J1,J1,长崎成功丸,FC东京,0,3,unresolved,0,0,,exact,,,,,,
+436,2026-08-29,日职J1,J1,川崎前锋,千叶市原,4,2,unresolved,0,0,,exact,,,,,,
+437,2026-08-29,日职J1,J1,京都不死鸟,福冈黄蜂,2,1,unresolved,0,0,,exact,,,,,,
+438,2026-08-29,日职J1,J1,名古屋鲸八,冈山绿雉,2,1,unresolved,0,0,,exact,,,,,,
+439,2026-08-29,日职J1,J1,神户胜利船,大阪樱花,1,0,unresolved,0,0,,exact,,,,,,
+440,2026-08-29,日职J1,J1,东京绿茵,鹿岛鹿角,0,2,unresolved,0,0,,exact,,,,,,
+441,2026-08-29,日职J1,J1,浦和红钻,横滨水手,3,2,unresolved,0,0,,exact,,,,,,
+442,2026-09-19,日职J1,J1,川崎前锋,鹿岛鹿角,3,3,unresolved,0,0,,exact,,,,,,
+443,2026-09-19,日职J1,J1,福冈黄蜂,广岛三箭,0,1,unresolved,0,0,,exact,,,,,,
+444,2026-09-19,日职J1,J1,清水心跳,千叶市原,2,1,unresolved,0,0,,exact,,,,,,
+445,2026-09-19,日职J1,J1,长崎成功丸,大阪樱花,1,1,unresolved,0,0,,exact,,,,,,
+446,2026-09-19,日职J1,J1,浦和红钻,东京绿茵,3,1,unresolved,0,0,,exact,,,,,,
+447,2026-09-19,日职J1,J1,冈山绿雉,京都不死鸟,1,2,unresolved,0,0,,exact,,,,,,
+448,2026-09-19,日职J1,J1,FC东京,名古屋鲸八,1,0,unresolved,0,0,,exact,,,,,,
+449,2026-09-19,日职J1,J1,横滨水手,水户蜀葵,2,0,unresolved,0,0,,exact,,,,,,
+450,2026-09-20,日职J1,J1,町田泽维亚,柏太阳神,2,4,unresolved,0,0,,exact,,,,,,
+451,2026-09-20,日职J1,J1,大阪钢巴,神户胜利船,0,1,unresolved,0,0,,exact,,,,,,
+452,2026-09-18,英超,EPL,布伦特福德,切尔西,3,0,unique,1,1,3-0:85440eb778441f068f9e,exact,85440eb778441f068f9e,2026-09-18T20:00,Brentford,Chelsea,3,0
+453,2026-09-19,英超,EPL,托特纳姆热刺,阿斯顿维拉,2,3,unique,1,0,,fuzzy_league_date_score_team,298d30f9bd1d6ce39833,2026-09-19T12:30,Tottenham,Aston Villa,2,3
+454,2026-09-19,英超,EPL,布莱顿,阿森纳,3,0,unique,1,0,,fuzzy_league_date_score_team,d3530a73c3e7bf1049bf,2026-09-19T15:00,Brighton,Arsenal,3,0
+455,2026-09-19,英超,EPL,埃弗顿,伊普斯维奇,1,0,unique,1,0,,fuzzy_league_date_score_team,60690e03ff4477a687a5,2026-09-19T15:00,Everton,Ipswich,1,0
+456,2026-09-19,英超,EPL,纽卡斯尔联,赫尔城,2,1,unresolved,0,0,,exact,,,,,,
+457,2026-09-19,英超,EPL,诺丁汉森林,考文垂,0,1,unique,1,0,,fuzzy_league_date_score_team,cd11b1a04bbc8ce60651,2026-09-19T17:30,Nott'm Forest,Coventry,0,1
+458,2026-09-20,英超,EPL,伯恩茅斯,利物浦,0,1,unique,1,0,,fuzzy_league_date_score_team,73ff87795ed3d62a326e,2026-09-20T14:00,Bournemouth,Liverpool,0,1
+459,2026-09-20,英超,EPL,利兹联,水晶宫,0,0,unique,1,0,,fuzzy_league_date_score_team,004f806b411474b34b12,2026-09-20T14:00,Leeds,Crystal Palace,0,0
+460,2026-09-20,英超,EPL,曼城,桑德兰,5,3,unique,1,0,,fuzzy_league_date_score_team,47b46edc3e364f75f55a,2026-09-20T14:00,Man City,Sunderland,5,3
+461,2026-09-20,英超,EPL,富勒姆,曼联,1,1,unique,1,0,,fuzzy_league_date_score_team,02929d7bb4c90f04cf51,2026-09-20T16:30,Fulham,Man United,1,1
+462,2026-09-18,德甲,BUNDESLIGA,拜仁慕尼黑,柏林联合,7,0,unique,1,1,7-0:d710e2422a30e6716569,exact,d710e2422a30e6716569,2026-09-18T19:30,Bayern Munich,Union Berlin,7,0
+463,2026-09-19,德甲,BUNDESLIGA,云达不来梅,奥格斯堡,3,2,unique,1,1,3-2:4a62390b4ef62e7f37ec,exact,4a62390b4ef62e7f37ec,2026-09-19T14:30,Werder Bremen,Augsburg,3,2
+464,2026-09-19,德甲,BUNDESLIGA,汉堡,科隆,2,1,unresolved,0,0,,exact,,,,,,
+465,2026-09-19,德甲,BUNDESLIGA,门兴格拉德巴赫,美因茨,3,4,unresolved,0,0,,exact,,,,,,
+466,2026-09-19,德甲,BUNDESLIGA,法兰克福,弗赖堡,2,2,unique,1,0,,fuzzy_league_date_score_team,26273ec888471a54550a,2026-09-19T14:30,Ein Frankfurt,Freiburg,2,2
+467,2026-09-19,德甲,BUNDESLIGA,斯图加特,多特蒙德,0,1,unique,1,0,,fuzzy_league_date_score_team,5f254699da31707a3624,2026-09-19T17:30,Stuttgart,Dortmund,0,1
+468,2026-09-20,德甲,BUNDESLIGA,勒沃库森,RB莱比锡,2,0,unique,1,0,,fuzzy_league_date_score_team,e7a433bfafc75aec2450,2026-09-20T14:30,Leverkusen,RB Leipzig,2,0
+469,2026-09-20,德甲,BUNDESLIGA,沙尔克04,埃尔沃斯贝格,0,0,unique,1,0,,fuzzy_league_date_score_team,5fdfd9d91201b7cc0555,2026-09-20T16:30,Schalke 04,Elversberg,0,0
+470,2026-09-18,意甲,SERIEA,蒙扎,萨索洛,2,1,unique,1,1,2-1:a646000f00a31ed0b058,exact,a646000f00a31ed0b058,2026-09-18T19:45,Monza,Sassuolo,2,1
+471,2026-09-19,意甲,SERIEA,威尼斯,拉齐奥,0,2,unique,1,1,0-2:6b82ea435bf4a6c12e83,exact,6b82ea435bf4a6c12e83,2026-09-19T19:45,Venezia,Lazio,0,2
+472,2026-09-19,意甲,SERIEA,罗马,国际米兰,2,2,unique,1,0,,fuzzy_league_date_score_team,287a8ca35e695e74c021,2026-09-19T17:00,Roma,Inter,2,2
+473,2026-09-19,意甲,SERIEA,博洛尼亚,都灵,1,1,unique,1,1,1-1:0058ca1dd4b2addae446,exact,0058ca1dd4b2addae446,2026-09-19T14:00,Bologna,Torino,1,1
+474,2026-09-19,意甲,SERIEA,乌迪内斯,卡利亚里,0,1,unique,1,1,0-1:72feabd07a3dd33cd624,exact,72feabd07a3dd33cd624,2026-09-19T14:00,Udinese,Cagliari,0,1
+475,2026-09-19,意甲,SERIEA,佛罗伦萨,那不勒斯,1,1,unresolved,0,0,,exact,,,,,,
+476,2026-09-20,意甲,SERIEA,AC米兰,莱切,3,0,unique,1,1,3-0:18eb7fac6286488e9b5a,exact,18eb7fac6286488e9b5a,2026-09-20T19:45,Milan,Lecce,3,0
+477,2026-09-20,意甲,SERIEA,尤文图斯,亚特兰大,2,0,unique,1,1,2-0:e5ca9f41e98685cb232a,exact,e5ca9f41e98685cb232a,2026-09-20T17:00,Juventus,Atalanta,2,0
+478,2026-09-20,意甲,SERIEA,弗罗西诺内,科莫,2,0,unique,1,1,2-0:78b723a01dd25586d0ee,exact,78b723a01dd25586d0ee,2026-09-20T14:00,Frosinone,Como,2,0
+479,2026-09-20,意甲,SERIEA,帕尔马,热那亚,2,1,unique,1,1,2-1:4abd5881542341874cfe,exact,4abd5881542341874cfe,2026-09-20T14:00,Parma,Genoa,2,1
+480,2026-09-11,法甲,LIGUE1,南特,雷恩,0,2,unresolved,0,0,,exact,,,,,,
+481,2026-09-12,法甲,LIGUE1,里昂,摩纳哥,1,1,unresolved,0,0,,exact,,,,,,
+482,2026-09-12,法甲,LIGUE1,巴黎圣日耳曼,马赛,1,2,unresolved,0,0,,exact,,,,,,
+483,2026-09-13,法甲,LIGUE1,里尔,斯特拉斯堡,2,1,unresolved,0,0,,exact,,,,,,
+484,2026-09-13,法甲,LIGUE1,摩纳哥,朗斯,2,1,unresolved,0,0,,exact,,,,,,
+485,2026-09-13,法甲,LIGUE1,图卢兹,勒阿弗尔,3,2,unresolved,0,0,,exact,,,,,,
+486,2026-09-13,法甲,LIGUE1,巴黎FC,斯特拉斯堡,2,1,unresolved,0,0,,exact,,,,,,
+487,2026-09-13,法甲,LIGUE1,昂热,特鲁瓦,2,0,unresolved,0,0,,exact,,,,,,
+488,2026-09-13,法甲,LIGUE1,勒芒,洛里昂,2,1,unresolved,0,0,,exact,,,,,,
+489,2026-09-12,西甲,LALIGA,塞维利亚,瓦伦西亚,1,0,unresolved,0,0,,exact,,,,,,
+490,2026-09-12,西甲,LALIGA,桑坦德竞技,阿拉维斯,2,1,unresolved,0,0,,exact,,,,,,
+491,2026-09-12,西甲,LALIGA,奥萨苏纳,西班牙人,0,2,unique,1,0,,fuzzy_league_date_score_team,f376c836e0cdc692bda4,2026-09-12T15:15,Osasuna,Espanol,0,2
+492,2026-09-12,西甲,LALIGA,毕尔巴鄂竞技,埃尔切,1,1,unique,1,0,,fuzzy_league_date_score_team,20453910fd654095a340,2026-09-12T17:30,Ath Bilbao,Elche,1,1
+493,2026-09-12,西甲,LALIGA,皇家马德里,巴列卡诺,4,1,unique,1,0,,fuzzy_league_date_score_team,2e8e63d4878170bd6148,2026-09-12T20:00,Real Madrid,Vallecano,4,1
+494,2026-09-13,西甲,LALIGA,塞尔塔,马拉加,1,1,unique,1,0,,fuzzy_league_date_score_team,ea6317d111ac3b7ad6ee,2026-09-13T13:00,Celta,Malaga,1,1
+495,2026-09-13,西甲,LALIGA,莱万特,巴塞罗那,2,4,unique,1,1,2-4:f7370591b571c347eefa,exact,f7370591b571c347eefa,2026-09-13T15:15,Levante,Barcelona,2,4
+496,2026-09-13,西甲,LALIGA,赫塔费,拉科鲁尼亚,1,1,unique,1,0,,fuzzy_league_date_score_team,bfff7876966d128f53c7,2026-09-13T17:30,Getafe,La Coruna,1,1
+497,2026-09-13,西甲,LALIGA,皇家社会,马德里竞技,0,3,unique,1,0,,fuzzy_league_date_score_team,677fe93c875b3f9890bb,2026-09-13T20:00,Sociedad,Ath Madrid,0,3
+498,2026-09-14,西甲,LALIGA,比利亚雷亚尔,皇家贝蒂斯,1,2,unique,1,0,,fuzzy_league_date_score_team,7e06935f175ba1f0283f,2026-09-14T20:00,Villarreal,Betis,1,2
+499,2026-09-26,韩职,KLEAGUE1,광주,서울,2,5,unresolved,0,0,,exact,,,,,,
+500,2026-09-26,韩职,KLEAGUE1,인천,전북,1,1,unresolved,0,0,,exact,,,,,,
