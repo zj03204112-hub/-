@@ -80,8 +80,8 @@ for i,r in enumerate(src,1):
     if len(cand)!=1:
         pool=[x for x in db_rows if x[0] not in used_match_ids and x[2]==code and x[4][:10]==r["date"] and x[7]==score[0] and x[8]==score[1]]
         scored=sorted([(similarity(TEAM_ALIAS.get(r["home"],r["home"]),x[5])+similarity(TEAM_ALIAS.get(r["away"],r["away"]),x[6]),x) for x in pool], reverse=True, key=lambda z:z[0])
-        if scored and scored[0][0] >= 1.00 and (len(scored)==1 or scored[0][0]-scored[1][0] >= 0.08):
-            cand=[scored[0][1]]
+        if scored and scored[0][0] >= 1.25 and min(scored[0][1],scored[0][2]) >= 0.55 and (len(scored)==1 or scored[0][0]-scored[1][0] >= 0.08):
+            cand=[scored[0][3]]
             match_method="fuzzy_league_date_score_team"
     status="unique" if len(cand)==1 else "unresolved" if len(cand)==0 else "ambiguous"
     x=cand[0] if len(cand)==1 else [None, None, code, None, None, None, None, None, None]
