@@ -28,8 +28,12 @@ def structure_features(m):
     exact_45=diag[4]+diag[5]
     # Relative concentration: how much of the matrix is in equal-score cells
     # compared with the nearby-score band. These are matrix-native structures.
-    ratios=[diag[i]/max(m[i][i-1]+m[i][i]+m[i][i+1] if 0<=i<cm.N else EPS,EPS)
-            for i in range(cm.N)]
+    ratios=[]
+    for i in range(cm.N):
+        band=diag[i]
+        if i>0: band += m[i][i-1]
+        if i<cm.N-1: band += m[i][i+1]
+        ratios.append(diag[i]/max(band,EPS))
     return [
         1.0,
         math.log(max(diag[0],EPS)), math.log(max(diag[1],EPS)),
