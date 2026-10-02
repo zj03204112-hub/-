@@ -1,0 +1,32 @@
+name: V5-SCORE v1.1 Market-Calibrated 500 experiment
+
+on:
+  push:
+    paths:
+      - 'data_pipeline/v5_score_v1_1_market_calibrated.py'
+      - 'model_validation/V5-SCORE_v1.1_MARKET_CALIBRATED_SPEC.md'
+      - 'model_validation/500_match_to_db_match_id_mapping.csv'
+      - 'football_model_database.sqlite'
+      - '.github/workflows/v5-score-v1-1-market-calibrated.yml'
+  workflow_dispatch:
+
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Run independent market-calibrated experiment
+        run: python data_pipeline/v5_score_v1_1_market_calibrated.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v5-score-v1-1-market-calibrated
+          path: model_validation/v5_score_v1_1_market_calibrated_result.json
+      - name: Persist result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/v5_score_v1_1_market_calibrated_result.json
+          git diff --cached --quiet || git commit -m "Record V5-SCORE v1.1 market-calibrated experiment"
+          git push
