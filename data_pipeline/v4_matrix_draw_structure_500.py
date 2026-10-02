@@ -135,9 +135,11 @@ assert len(train_rows)>2000 and len(test_rows)==500
 
 # Cache matrices once. All matrices are generated strictly from T-12h V4 source.
 train=[]
+train_matrices=[]
 for r in train_rows:
     m=matrix_from_match(con,r)
-    train.append((structure_features(m), 1 if actual(r)=="D" else 0, 
+    train_matrices.append(m)
+    train.append((structure_features(m), 1 if actual(r)=="D" else 0,
                   sum(m[i][j] for i in range(cm.N) for j in range(cm.N) if i>j),
                   sum(m[i][j] for i in range(cm.N) for j in range(cm.N) if i<j)))
 test=[]
@@ -150,7 +152,7 @@ split=max(1,int(len(train)*0.75))
 candidates=[0.001,0.003,0.01,0.03,0.1,0.3,1.0]
 best=(None,None,-1)
 for l2 in candidates:
-    w=fit_logistic(train[:split][0:len(train[:split])],l2)
+    w=fit_logistic([(x,y) for x,y,_,_ in train[:split]],l2)
     draw_val=[(sigmoid(dot(w,x)),y) for x,y,_,_ in train[split:]]
     acc=sum((p>=0.5)==bool(y) for p,y in draw_val)/len(draw_val)
     # secondary criterion is logloss
@@ -160,11 +162,9 @@ for l2 in candidates:
 
 l2=best[0]
 w=fit_logistic(train,l2)
-ha_items=[(h,a,actual(r)) for r,m in train_rows and []]
 # Build conditional H/A training set from matrices directly.
 ha_train=[]
-for r in train_rows:
-    m=matrix_from_match(con,r)
+for r,m in zip(train_rows,train_matrices)
     if actual(r)!="D":
         ha_train.append((sum(m[i][j] for i in range(cm.N) for j in range(cm.N) if i>j),
                          sum(m[i][j] for i in range(cm.N) for j in range(cm.N) if i<j),actual(r)))
