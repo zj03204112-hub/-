@@ -99,6 +99,13 @@ def load_sample():
     if len(out)!=500 or len({r["match_id"] for r in out})!=500: raise RuntimeError("frozen-500 mapping integrity failure")
     return out
 
+def parse_date(s):
+    s=(s or "").strip()
+    for fmt in ("%d/%m/%Y","%d/%m/%y","%Y-%m-%d"):
+        try:return datetime.strptime(s,fmt).strftime("%Y-%m-%d")
+        except: pass
+    return ""
+
 def load_market_data():
     data={}
     for league,code in LEAGUES.items():
@@ -112,7 +119,7 @@ def load_market_data():
             except Exception:
                 continue
             for r in csv.DictReader(io.StringIO(raw)):
-                date=(r.get("Date") or "").strip()
+                date=parse_date(r.get("Date"))
                 if not date:continue
                 iso=None
                 for fmt in ("%d/%m/%Y","%d/%m/%y","%Y-%m-%d"):
@@ -152,6 +159,13 @@ def apply_market_to_matrix(lh,la,m,md):
     used=[]
     if md.get("one_x_two"):
         p=calibrate_outcomes(p,md["one_x_two"],0.10);used.append("1X2_open_avg")
+    if md.get("ah_p") and md.get("ah_line") is not None:
+        ah=md["ah_p"]
+        target_h=ah["home_side"]
+        base_h=p["H"]
+        shift=max(-0.10,min(0.10,0.08*(target_h-base_h)))
+        p={"H":max(1e-9,p["H"]+shift),"D":max(1e-9,p["D"]),"A":max(1e-9,p["A"]-shift)}
+        z=sum(p.values());p={k:v/z for k,v in p.items()};used.append("AH_open")
     lh2,la2=lh,la
     if md.get("ou_line") is not None and md.get("over_p") is not None:
         lh2,la2=adjust_total_lambda(lh2,la2,m,md["ou_line"],md["over_p"],0.12)
@@ -204,7 +218,8 @@ def main():
         lh,la=cm.model_lambdas(db,"v4",(mid,kickoff,home,away,fh,fa))
         bm=matrix(lh,la); bp=outcome_probs(bm)
         key=(kickoff[:10],home.lower(),away.lower())
-        md=market.get(key,{})
+        raw_md=market.get(key,{})
+        md=market_for(None,raw_md) if raw_md else {}
         if md.get("one_x_two"):coverage["market_1x2"]+=1
         if md.get("ou_line") is not None:coverage["market_ou"]+=1
         if md.get("ah_line") is not None:coverage["market_ah"]+=1
@@ -227,7 +242,10 @@ def main():
           "market_used":"+".join(used) if used else "NONE",
           "market_1x2":"yes" if md.get("one_x_two") else "no",
           "market_ou":"yes" if md.get("ou_line") is not None else "no",
-          "market_ah":"yes" if md.get("ah_line") is not None else "no"})
+          "market_ah":"yes" if md.get("ah_line") is not None else "no",
+          "baseline_over25":sum(v for t,v in bt.items() if t>2.5),
+          "market_over25":sum(v for t,v in ct.items() if t>2.5),
+          "actual_over25":(fh+fa)>2.5})
 
     def summary(items):
         n=len(items);return {
