@@ -27,3 +27,11 @@ jobs:
           path: |
             model_validation/v4_draw_probability_matrix_diagnostic_500.json
             model_validation/v4_draw_probability_matrix_diagnostic_500.csv
+
+      - name: Commit diagnostic outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/v4_draw_probability_matrix_diagnostic_500.json model_validation/v4_draw_probability_matrix_diagnostic_500.csv
+          git diff --cached --quiet || git commit -m "Record V4 draw probability matrix diagnostic 500"
+          git push
