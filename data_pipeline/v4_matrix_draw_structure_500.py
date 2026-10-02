@@ -161,7 +161,7 @@ for l2 in candidates:
     if score>best[2]: best=(l2,w,score)
 
 l2=best[0]
-w=fit_logistic(train,l2)
+w=fit_logistic([(x,y) for x,y,_,_ in train],l2)
 # Build conditional H/A training set from matrices directly.
 ha_train=[]
 for r,m in zip(train_rows,train_matrices):
