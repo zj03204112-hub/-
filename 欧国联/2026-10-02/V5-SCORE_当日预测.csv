@@ -3,17 +3,17 @@
 预测时间窗,赛前6–12小时
 说明,按V5-SCORE_MODEL_SPEC_v1.0.md固定规范；未核实字段不虚构并标记未知
 
-比赛,V5预测比分1,V5预测比分2,90分钟预测,竞彩让球,V5让球预测,穿盘风险,我的置信度,半全场,实际比分,90分钟命中,让球命中,复盘
-比利时 vs 土耳其,2-0,1-0,胜,未核实,未知,未知,78%,胜胜,未知,待赛,待赛,待赛
-波黑 vs 瑞典,1-2,1-1,负,未核实,未知,未知,67%,平负,未知,待赛,待赛,待赛
-塞浦路斯 vs 亚美尼亚,1-1,0-1,平,未核实,未知,未知,64%,平平,未知,待赛,待赛,待赛
-法罗群岛 vs 斯洛伐克,0-2,0-1,负,未核实,未知,未知,79%,负负,未知,待赛,待赛,待赛
-法国 vs 意大利,1-0,2-0,胜,未核实,未知,未知,76%,胜胜,未知,待赛,待赛,待赛
-匈牙利 vs 格鲁吉亚,1-0,1-1,胜,未核实,未知,未知,65%,平胜,未知,待赛,待赛,待赛
-哈萨克斯坦 vs 摩尔多瓦,1-0,2-0,胜,未核实,未知,未知,72%,胜胜,未知,待赛,待赛,待赛
-拉脱维亚 vs 黑山,0-1,0-2,负,未核实,未知,未知,75%,负负,未知,待赛,待赛,待赛
-波兰 vs 罗马尼亚,1-1,2-1,胜,未核实,未知,未知,66%,平胜,未知,待赛,待赛,待赛
-乌克兰 vs 北爱尔兰,1-0,1-1,胜,未核实,未知,未知,69%,平胜,未知,待赛,待赛,待赛
+比赛,V5预测比分1,V5预测比分2,90分钟预测,竞彩让球,V5让球预测,穿盘风险,我的置信度,半全场,预计首发/首发状态,伤停/停赛,实际比分,90分钟命中,让球命中,复盘
+比利时 vs 土耳其,2-0,1-0,胜,未核实,未知,未知,78%,胜胜,预计：Lammens；Castagne-Ngoy-Mechele-Seys；Raskin；De Bruyne-Tielemans；Lukebakio-Lukaku-Godts,比利时：Trossard伤、Penders伤、Debast停赛；土耳其：未发现可靠伤停,未知,待赛,待赛,待赛
+波黑 vs 瑞典,1-2,1-1,负,未核实,未知,未知,67%,平负,预计：Zlomislic；Katic-Muharemovic-Mujakic-Kolasinac；I.Sunjic-Tahirovic-Gigovic；Alajbegovic-Tabakovic-Bajraktarevic,瑞典：Ayari、Nygren、Lagerbielke、Stroud、Walemark因病缺席；Isak、Ekdal退出伤停,未知,待赛,待赛,待赛
+塞浦路斯 vs 亚美尼亚,1-1,0-1,平,未核实,未知,未知,64%,平平,预计：Fabiano；Konomis-Pileas-Panagiotou-Malekkidis；Kastanos-Artymatas；Edwards-Kosti-Loizou；Pittas,塞浦路斯：Sotiriou、Tsaroulla停赛；亚美尼亚：Serobyan停赛,未知,待赛,待赛,待赛
+法罗群岛 vs 斯洛伐克,0-2,0-1,负,未核实,未知,未知,79%,负负,预计：Lamhauge；Benjaminsen-Chukwudi-Vatnhamar-Edmundsson-Davidsen；Samuelsen-Hellisdal-Turi-Sorensen；Justinussen,斯洛伐克：1名中场伤缺（具体人选未在可靠来源中统一核实）；法罗群岛：未发现可靠伤停,未知,待赛,待赛,待赛
+法国 vs 意大利,1-0,2-0,胜,未核实,未知,未知,76%,胜胜,预计：Maignan；Kounde-Upamecano-Lacroix-Truffert；Rabiot-Kone-Cherki；Olise-Dembele-Doue,法国：Mbappe缺席；其余关键伤停未完全核实；意大利：Donnarumma；Kayode-Mancini-Bastoni-Calafiori；Frattesi-Barella-Tonali；S.Esposito-P.Esposito-Kean（预计）,未知,待赛,待赛,待赛
+匈牙利 vs 格鲁吉亚,1-0,1-1,胜,未核实,未知,未知,65%,平胜,预计：Balazs Toth；Osvath-Orban-Csinger-Kerkez；Schafer-Csongvai；Jurek-Szucs-Szoboszlai；Lukacs,匈牙利：Varga、Bolla、Redzic伤；Sallai伤疑；格鲁吉亚：未充分核实,未知,待赛,待赛,待赛
+哈萨克斯坦 vs 摩尔多瓦,1-0,2-0,胜,未核实,未知,未知,72%,胜胜,预计：Pokatilov；Ashirbek-Yerlanov-Alip-Zhagorov；Kasabulat-Karaman；Basmanov-Amir-Bekbolat；Karimov,哈萨克斯坦：Zaynutdinov、Chesnokov、Satpayev伤；Kuat停赛；Samorodov、Kasym存疑；摩尔多瓦：Postolachi、Nicolaescu、Caimacov、Damascan、Rotaru伤,未知,待赛,待赛,待赛
+拉脱维亚 vs 黑山,0-1,0-2,负,未核实,未知,未知,75%,负负,预计：双方预计沿用近期主力框架；完整XI待官方确认,未发现可靠新伤停/停赛,未知,待赛,待赛,待赛
+波兰 vs 罗马尼亚,1-1,2-1,胜,未核实,未知,未知,66%,平胜,预计：波兰3-4-2-1；Bułka、Szymański等核心预计首发；完整XI待官方确认,波兰锋线存在伤缺；罗马尼亚暂无重大伤停被可靠来源一致确认,未知,待赛,待赛,待赛
+乌克兰 vs 北爱尔兰,1-0,1-1,胜,未核实,未知,未知,69%,平胜,预计XI待官方确认；可靠来源已确认双方预计沿用近期主力框架,未核实到足够可靠的完整伤停清单,未知,待赛,待赛,待赛
 
 昨日复盘日期,2026-10-01
 昨日复盘说明,实际赛果已由上一轮记录填写；竞彩让球因未取得可核实官方盘口而不判定让球命中
