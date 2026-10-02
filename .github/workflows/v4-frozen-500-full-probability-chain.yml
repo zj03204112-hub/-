@@ -1,0 +1,33 @@
+name: V4 frozen 500 full probability chain
+
+on:
+  push:
+    paths:
+      - 'data_pipeline/v4_frozen_500_full_probability_chain.py'
+      - 'data_pipeline/compare_models.py'
+      - 'model_validation/500_match_to_db_match_id_mapping.csv'
+      - 'football_model_database.sqlite'
+      - '.github/workflows/v4-frozen-500-full-probability-chain.yml'
+  workflow_dispatch:
+
+jobs:
+  chain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python data_pipeline/v4_frozen_500_full_probability_chain.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v4-frozen-500-full-probability-chain
+          path: |
+            model_validation/v4_frozen_500_full_probability_chain.csv
+            model_validation/v4_frozen_500_full_probability_chain_summary.json
+      - name: Persist outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/v4_frozen_500_full_probability_chain.csv model_validation/v4_frozen_500_full_probability_chain_summary.json
+          git diff --cached --quiet || git commit -m "Record V4 frozen 500 full probability chain"
+          git push
