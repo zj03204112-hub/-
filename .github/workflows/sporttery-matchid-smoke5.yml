@@ -1,0 +1,22 @@
+name: Sporttery MatchId smoke5
+on:
+  push:
+    paths:
+      - data_pipeline/sporttery_matchid_smoke5.py
+      - model_validation/500_match_to_db_match_id_mapping.csv
+      - .github/workflows/sporttery-matchid-smoke5.yml
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python data_pipeline/sporttery_matchid_smoke5.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sporttery-matchid-smoke5
+          path: model_validation/sporttery_matchid_smoke5.json
