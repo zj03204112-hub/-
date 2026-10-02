@@ -1,0 +1,29 @@
+name: V5-SCORE v1.1 Market Calibrated 500
+
+on:
+  push:
+    paths:
+      - "data_pipeline/v5_score_v1_1_market_calibrated_500.py"
+      - ".github/workflows/v5-score-v1-1-market-calibrated-500.yml"
+      - "model_validation/500_match_base_batch01.csv"
+      - "data_pipeline/compare_models.py"
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run v1.1 experiment
+        run: python data_pipeline/v5_score_v1_1_market_calibrated_500.py
+      - name: Commit experiment outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/500_match_V5_SCORE_v1.1_market_calibrated_predictions.csv model_validation/500_match_V5_SCORE_v1.1_market_calibrated_summary.json model_validation/500_match_V5_SCORE_v1.1_market_calibrated_report.md
+          git diff --cached --quiet && exit 0
+          git commit -m "experiment: V5-SCORE v1.1 market calibrated frozen 500"
+          git push
