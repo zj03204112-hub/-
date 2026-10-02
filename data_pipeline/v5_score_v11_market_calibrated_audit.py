@@ -1,95 +1,81 @@
 #!/usr/bin/env python3
 import csv,json,io,urllib.request,re
 from pathlib import Path
-from collections import Counter,defaultdict
+from collections import defaultdict
 ROOT=Path(__file__).resolve().parents[1]
 SAMPLE=ROOT/"model_validation/500_match_base_batch01.csv"
 OUTCSV=ROOT/"model_validation/V5-SCORE_v1.1_market_data_coverage.csv"
 OUTJSON=ROOT/"model_validation/V5-SCORE_v1.1_market_data_coverage.json"
+PAGE="https://sgodds.com/football/data"
 
-LEAGUE_CODES={
-"英超":[("2526","E0"),("2627","E0")],
-"西甲":[("2526","SP1"),("2627","SP1")],
-"德甲":[("2526","D1"),("2627","D1")],
-"意甲":[("2526","I1"),("2627","I1")],
-"法甲":[("2526","F1"),("2627","F1")],
-"日职":[("2526","J1"),("2627","J1")],
-}
-# Football-Data documents opening/early odds separately from closing C-columns.
-# K League is intentionally left unresolved rather than filled by another time point.
-def norm(s):
-    return re.sub(r"[^a-z0-9]","",(s or "").lower())
-
+def norm(s): return re.sub(r"[^a-z0-9]","",(s or "").lower())
+def num(v):
+    try:
+        x=float(str(v).strip())
+        return x if x==x else None
+    except: return None
 def load():
-    with SAMPLE.open(encoding="utf-8-sig",newline="") as f:
-        r=list(csv.DictReader(f))
-    if len(r)!=500 or len({x["match_id"] for x in r})!=500:
-        raise RuntimeError("Frozen 500 integrity failure")
+    with SAMPLE.open(encoding="utf-8-sig",newline="") as f:r=list(csv.DictReader(f))
+    if len(r)!=500 or len({x["match_id"] for x in r})!=500: raise RuntimeError("Frozen 500 integrity failure")
     return r
-
-def read_csv(url):
+def get(url):
     req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0"})
-    with urllib.request.urlopen(req,timeout=30) as x:
-        raw=x.read().decode("latin1",errors="replace")
+    with urllib.request.urlopen(req,timeout=60) as x:return x.read()
+def csv_rows(url):
+    raw=get(url).decode("utf-8-sig",errors="replace")
     return list(csv.DictReader(io.StringIO(raw)))
-
-def val(row,*keys):
-    for k in keys:
-        v=row.get(k,"")
-        if v not in ("",None):
-            try:return float(str(v).strip())
-            except: pass
-    return None
-
 def main():
-    targets=load(); data=[]
-    for league,codes in LEAGUE_CODES.items():
-        for season,code in codes:
-            url=f"https://www.football-data.co.uk/mmz4281/{season}/{code}.csv"
-            try:
-                rows=read_csv(url)
-                for x in rows:
-                    x["_league"]=league
-                    data.append(x)
-            except Exception:
-                pass
+    targets=load()
+    html=get(PAGE).decode("utf-8",errors="replace")
+    links=re.findall(r'href="(https://sgodds\.com/downloads/[^"]+\.csv)"',html)
+    links=list(dict.fromkeys(links))
+    rows=[]
+    for url in links:
+        try:
+            for x in csv_rows(url):
+                x["_source_url"]=url; rows.append(x)
+        except Exception: pass
     idx=defaultdict(list)
-    for x in data:
-        idx[(x.get("Date","")[:10],norm(x.get("HomeTeam")),norm(x.get("AwayTeam")))].append(x)
+    for x in rows:
+        # SGOdds files use date/team columns; tolerate common naming variants.
+        d=(x.get("Date") or x.get("date") or x.get("MatchDate") or "")[:10]
+        h=x.get("HomeTeam") or x.get("Home") or x.get("home") or ""
+        a=x.get("AwayTeam") or x.get("Away") or x.get("away") or ""
+        idx[(d,norm(h),norm(a))].append(x)
     out=[]
     for t in targets:
-        key=(t["date"],norm(t["home"]),norm(t["away"]))
-        c=idx.get(key,[])
+        c=idx.get((t["date"],norm(t["home"]),norm(t["away"])),[])
         x=c[0] if len(c)==1 else None
-        # Opening/non-C market fields. C-prefixed fields are intentionally excluded.
         rec={"sample_row":t["match_id"],"date":t["date"],"league":t["league"],"home":t["home"],"away":t["away"],
-             "football_data_match":bool(x),"market_source":"Football-Data opening/early"}
+             "sgodds_match":bool(x),"market_source":"SGOdds opening odds"}
         if x:
             rec.update({
-              "euro_h":val(x,"B365H","AvgH","MaxH"),"euro_d":val(x,"B365D","AvgD","MaxD"),"euro_a":val(x,"B365A","AvgA","MaxA"),
-              "ou25_over":val(x,"B365>2.5","Avg>2.5","P>2.5"),"ou25_under":val(x,"B365<2.5","Avg<2.5","P<2.5"),
-              "ah_line":val(x,"AHh","BbAHh","AvgAHh"),"ah_home":val(x,"BbAvAHH","AvgAHH","MaxAHH"),
-              "ah_away":val(x,"BbAvAHA","AvgAHA","MaxAHA"),
+              "euro_h":num(x.get("Ft1X2_01")),"euro_d":num(x.get("Ft1X2_02")),"euro_a":num(x.get("Ft1X2_03")),
+              "ah_line":num(x.get("Ah_01_Hcap")),"ah_home":num(x.get("Ah_01")),"ah_away":num(x.get("Ah_02")),
+              "ou_line":num(x.get("Ou_hcap")),"ou_over":num(x.get("Ou_01")),"ou_under":num(x.get("Ou_02")),
+              "source_url":x.get("_source_url","")
             })
         else:
-            for k in ("euro_h","euro_d","euro_a","ou25_over","ou25_under","ah_line","ah_home","ah_away"): rec[k]=None
+            for k in ("euro_h","euro_d","euro_a","ah_line","ah_home","ah_away","ou_line","ou_over","ou_under"):rec[k]=None
+            rec["source_url"]=""
         rec["euro_complete"]=all(rec[k] is not None for k in ("euro_h","euro_d","euro_a"))
-        rec["ou25_complete"]=all(rec[k] is not None for k in ("ou25_over","ou25_under"))
         rec["ah_complete"]=all(rec[k] is not None for k in ("ah_line","ah_home","ah_away"))
-        # Existing DB Sporttery AH is handled later by the experiment runner; this audit
-        # deliberately reports Football-Data market coverage separately.
-        rec["all_three_complete"]=rec["euro_complete"] and rec["ou25_complete"] and rec["ah_complete"]
+        rec["ou_complete"]=all(rec[k] is not None for k in ("ou_line","ou_over","ou_under"))
+        rec["all_three_complete"]=rec["euro_complete"] and rec["ah_complete"] and rec["ou_complete"]
+        rec["ou25"]=rec["ou_complete"] and abs(rec["ou_line"]-2.5)<1e-9
+        rec["ou275"]=rec["ou_complete"] and abs(rec["ou_line"]-2.75)<1e-9
         out.append(rec)
     with OUTCSV.open("w",encoding="utf-8-sig",newline="") as f:
         w=csv.DictWriter(f,fieldnames=out[0].keys());w.writeheader();w.writerows(out)
-    report={"sample_n":500,"football_data_rows":len(data),
-            "football_data_match_n":sum(r["football_data_match"] for r in out),
+    report={"sample_n":500,"sgodds_csv_count":len(links),"sgodds_rows":len(rows),
+            "sgodds_match_n":sum(r["sgodds_match"] for r in out),
             "euro_complete_n":sum(r["euro_complete"] for r in out),
-            "ou25_complete_n":sum(r["ou25_complete"] for r in out),
             "ah_complete_n":sum(r["ah_complete"] for r in out),
+            "ou_complete_n":sum(r["ou_complete"] for r in out),
             "all_three_complete_n":sum(r["all_three_complete"] for r in out),
-            "unresolved_leagues":sorted(set(r["league"] for r in out if not r["football_data_match"])),
-            "note":"No v1.1 score calibration is run until market coverage is audited; no closing C-columns are used."}
+            "ou25_n":sum(r["ou25"] for r in out),"ou275_n":sum(r["ou275"] for r in out),
+            "unresolved_leagues":sorted(set(r["league"] for r in out if not r["sgodds_match"])),
+            "source_note":"SGOdds page identifies these as opening odds; fields include 1X2, Asian handicap and Total Goals Over/Under. No closing values are used."}
     OUTJSON.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
     print(json.dumps(report,ensure_ascii=False))
 if __name__=="__main__":main()
