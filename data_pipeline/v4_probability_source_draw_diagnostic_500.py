@@ -147,3 +147,5 @@ fields=list(rows[0].keys())
 with open(DETAIL,"w",encoding="utf-8",newline="") as f:
     w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(rows)
 print(json.dumps({"output":OUT,"detail":DETAIL,"n":500,"actual_draws":len(groups["draw"]),"auc_p_draw":auc["p_draw"],"mean_p_draw":summary["overall_mean"]["p_draw"],"actual_draw_rate":summary["overall_mean"]["actual_draw_rate"]},ensure_ascii=False))
+
+# trigger diagnostic run
