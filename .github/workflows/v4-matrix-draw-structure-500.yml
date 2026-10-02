@@ -17,6 +17,22 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
+      - name: Patch matrix feature bounds
+        run: |
+          python - <<'PY'
+          p="data_pipeline/v4_matrix_draw_structure_500.py"
+          s=open(p,encoding="utf-8").read()
+          old="""ratios=[diag[i]/max(m[i][i-1]+m[i][i]+m[i][i+1] if 0<=i<cm.N else EPS,EPS)
+            for i in range(cm.N)]"""
+          new="""ratios=[]
+          for i in range(cm.N):
+              band=diag[i]
+              if i>0: band+=m[i][i-1]
+              if i<cm.N-1: band+=m[i][i+1]
+              ratios.append(diag[i]/max(band,EPS))"""
+          assert old in s
+          open(p,"w",encoding="utf-8").write(s.replace(old,new))
+          PY
       - run: python data_pipeline/v4_matrix_draw_structure_500.py
       - uses: actions/upload-artifact@v4
         with:
