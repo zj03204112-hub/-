@@ -1,0 +1,20 @@
+name: V4 decision layer calibration 500
+on:
+  push:
+    paths:
+      - data_pipeline/v4_decision_layer_calibration.py
+      - .github/workflows/v4-decision-layer-calibration.yml
+  workflow_dispatch:
+jobs:
+  calibrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python data_pipeline/v4_decision_layer_calibration.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v4-decision-layer-calibration-500
+          path: model_validation/v4_decision_layer_calibration_500.csv
