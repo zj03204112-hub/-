@@ -84,7 +84,20 @@ def adjust_total_lambda(lh,la,m,ou_line,over_p,w=0.12):
     return lh*scale,la*scale
 
 def load_sample():
-    with open(SAMPLE,encoding="utf-8-sig",newline="") as h:return list(csv.DictReader(h))
+    with open(SAMPLE,encoding="utf-8-sig",newline="") as h:
+        sample=list(csv.DictReader(h))
+    mapping_path="model_validation/500_match_to_db_match_id_mapping.csv"
+    with open(mapping_path,encoding="utf-8-sig",newline="") as h:
+        mapping=list(csv.DictReader(h))
+    by_row={str(r.get("sample_row")):r for r in mapping}
+    out=[]
+    for idx,s in enumerate(sample,1):
+        m=by_row.get(str(idx))
+        if not m: raise RuntimeError(f"frozen mapping missing sample row {idx}")
+        z=dict(s); z["match_id"]=m["match_id"]; z["db_home"]=m["db_home"]; z["db_away"]=m["db_away"]; z["db_kickoff"]=m["db_kickoff"]
+        out.append(z)
+    if len(out)!=500 or len({r["match_id"] for r in out})!=500: raise RuntimeError("frozen-500 mapping integrity failure")
+    return out
 
 def load_market_data():
     data={}
@@ -170,14 +183,14 @@ def main():
     rows=[];base_items=[];cal_items=[]
     coverage={"market_1x2":0,"market_ou":0,"market_ah":0,"any_market":0,"no_market":0}
     for s in sample:
-        mid=s["match_id"] if "match_id" in s else None
+        mid=s["match_id"]
         if not mid:
             # Frozen base file uses sample_row rather than DB id; resolve by date/team/score.
             q=db.execute("""SELECT m.match_id,m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away
               FROM matches m JOIN results r ON r.match_id=m.match_id
               WHERE substr(m.kickoff,1,10)=? AND r.ft_home=? AND r.ft_away=?""",
               (s["date"],int(s["home_score"]),int(s["away_score"]))).fetchall()
-            q=[x for x in q if x[2].lower()==s["home"].lower() and x[3].lower()==s["away"].lower()]
+            q=[x for x in q if x[2].lower()==s["db_home"].lower() and x[3].lower()==s["db_away"].lower()]
             if len(q)!=1: continue
             mid,kickoff,home,away,fh,fa=q[0]
         else:
