@@ -164,7 +164,7 @@ l2=best[0]
 w=fit_logistic(train,l2)
 # Build conditional H/A training set from matrices directly.
 ha_train=[]
-for r,m in zip(train_rows,train_matrices)
+for r,m in zip(train_rows,train_matrices):
     if actual(r)!="D":
         ha_train.append((sum(m[i][j] for i in range(cm.N) for j in range(cm.N) if i>j),
                          sum(m[i][j] for i in range(cm.N) for j in range(cm.N) if i<j),actual(r)))
