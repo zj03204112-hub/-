@@ -1,0 +1,36 @@
+name: V5-SCORE v1.1 market coverage audit
+
+on:
+  push:
+    paths:
+      - "model_validation/V5-SCORE_v1.1_market_calibrated_spec.md"
+      - "data_pipeline/v5_score_v11_market_calibrated_audit.py"
+      - "model_validation/500_match_base_batch01.csv"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Audit frozen-500 market coverage
+        run: python data_pipeline/v5_score_v11_market_calibrated_audit.py
+      - name: Commit coverage audit
+        run: |
+          git config user.name "football-model-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add model_validation/V5-SCORE_v1.1_market_data_coverage.csv model_validation/V5-SCORE_v1.1_market_data_coverage.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "validate: audit market coverage for V5-SCORE v1.1"
+          git fetch origin main
+          git rebase --autostash origin/main
+          git push origin HEAD:main
