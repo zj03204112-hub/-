@@ -18,17 +18,15 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
       - run: python data_pipeline/v4_matrix_draw_structure_500.py
+      - name: Print summary to Actions log
+        if: success()
+        run: |
+          echo "===== V4 MATRIX DRAW STRUCTURE 500 SUMMARY ====="
+          cat model_validation/v4_matrix_draw_structure_500_summary.json
+          echo "===== END SUMMARY ====="
       - uses: actions/upload-artifact@v4
         with:
           name: v4-matrix-draw-structure-500
           path: |
             model_validation/v4_matrix_draw_structure_500.csv
             model_validation/v4_matrix_draw_structure_500_summary.json
-
-# retrigger after training tuple fix
-
-# rerun after tuple fix
-
-# rerun after syntax fix
-
-# rerun after final refit fix
