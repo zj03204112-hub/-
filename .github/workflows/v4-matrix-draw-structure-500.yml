@@ -10,6 +10,9 @@ on:
       - '.github/workflows/v4-matrix-draw-structure-500.yml'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   experiment:
     runs-on: ubuntu-latest
@@ -24,6 +27,18 @@ jobs:
           echo "===== V4 MATRIX DRAW STRUCTURE 500 SUMMARY ====="
           cat model_validation/v4_matrix_draw_structure_500_summary.json
           echo "===== END SUMMARY ====="
+      - name: Persist summary to repository
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/v4_matrix_draw_structure_500_summary.json
+          if git diff --cached --quiet; then
+            echo "SUMMARY_UNCHANGED"
+          else
+            git commit -m "Persist V4 matrix draw structure 500 summary"
+            git push origin HEAD:main
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: v4-matrix-draw-structure-500
