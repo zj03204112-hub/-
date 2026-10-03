@@ -1,0 +1,53 @@
+{
+  "experiment": "8x8 matrix -> independent draw structure probability -> H/D/A",
+  "production_status": "EXPERIMENT_ONLY",
+  "n": 500,
+  "actual_draws": 116,
+  "train_matches_before_cutoff": 8210,
+  "cutoff": "2026-08-22T00:00:00",
+  "features": "8x8 matrix only; no original aggregated P(D), no P(D) threshold",
+  "selected_l2": 1.0,
+  "ha_temperature": 0.54,
+  "new": {
+    "n": 500,
+    "correct": 240,
+    "accuracy": 0.48,
+    "brier": 0.6192937508088633,
+    "logloss": 1.0390729359829363,
+    "predicted_draws": 0,
+    "actual_draws": 116,
+    "draw_correct": 0
+  },
+  "baseline_matrix_argmax": {
+    "n": 500,
+    "correct": 240,
+    "accuracy": 0.48,
+    "brier": 0.6188278981424048,
+    "logloss": 1.032372524655265,
+    "predicted_draws": 0,
+    "actual_draws": 116,
+    "draw_correct": 0
+  },
+  "improvement_correct": 0,
+  "improvement_accuracy": 0.0,
+  "draw_structure_auc": 0.5047144396551724,
+  "draw_structure_mean_draw": 0.25305105013197804,
+  "draw_structure_mean_non_draw": 0.2516988428414236,
+  "confusion_new": {
+    "H": {
+      "H": 164,
+      "D": 0,
+      "A": 77
+    },
+    "D": {
+      "H": 57,
+      "D": 0,
+      "A": 59
+    },
+    "A": {
+      "H": 67,
+      "D": 0,
+      "A": 76
+    }
+  }
+}
