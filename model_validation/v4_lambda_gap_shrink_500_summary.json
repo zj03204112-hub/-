@@ -1,0 +1,47 @@
+{
+  "experiment": "V4 single-module lambda-gap shrink on frozen 500",
+  "production_status": "EXPERIMENT_ONLY",
+  "baseline_definition": "Existing 51.2% baseline: HIST_WINDOW=15 + pre-cutoff away-lambda bias correction; Dixon-Coles unchanged",
+  "n": 500,
+  "cutoff": "2026-08-22T00:00:00",
+  "hist_window": 15,
+  "train_matches_before_cutoff": 8210,
+  "calibration_matches": 2463,
+  "away_lambda_bias_fixed": 0.46805484524724184,
+  "shrink_parameter_grid": [
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "selected_shrink_factor": 0.9,
+  "calibration_logloss": 1.0243329741864784,
+  "baseline_correct": 256,
+  "baseline_accuracy": 0.512,
+  "baseline_pred_counts": {
+    "H": 423,
+    "D": 0,
+    "A": 77
+  },
+  "shrink_correct": 256,
+  "shrink_accuracy": 0.512,
+  "shrink_pred_counts": {
+    "H": 423,
+    "D": 0,
+    "A": 77
+  },
+  "actual_counts": {
+    "H": 241,
+    "D": 116,
+    "A": 143
+  },
+  "improvement_correct": 0,
+  "improvement_accuracy": 0.0
+}
