@@ -1,0 +1,23 @@
+{
+  "experiment":"V4 lambda source decomposition; frozen 500; windows 5/10/15/20/30",
+  "production_status":"EXPERIMENT_ONLY",
+  "n":500,
+  "source":"GitHub Actions run 37167181845",
+  "windows":{
+    "5":{"correct":225,"accuracy":0.45,"home_lambda_mae":0.9865645391,"home_lambda_rmse":1.2277085373,"home_lambda_bias":0.0807166974,"away_lambda_mae":0.9507681496,"away_lambda_rmse":1.1461399363,"away_lambda_bias":0.4993542072,"combined_lambda_mae":0.9686663443,"draw_auc":0.492344648},
+    "10":{"correct":234,"accuracy":0.468,"home_lambda_mae":0.9739195909,"home_lambda_rmse":1.2034214497,"home_lambda_bias":0.1057730025,"away_lambda_mae":0.9518415485,"away_lambda_rmse":1.1349065062,"away_lambda_bias":0.5083850693,"combined_lambda_mae":0.9628805697,"draw_auc":0.508688039},
+    "15":{"correct":241,"accuracy":0.482,"home_lambda_mae":0.9694992133,"home_lambda_rmse":1.1929040453,"home_lambda_bias":0.1185383793,"away_lambda_mae":0.9524759129,"away_lambda_rmse":1.1341049720,"away_lambda_bias":0.5117776403,"combined_lambda_mae":0.9609875631,"draw_auc":0.5202945402},
+    "20":{"correct":240,"accuracy":0.48,"home_lambda_mae":0.9690452110,"home_lambda_rmse":1.1908228861,"home_lambda_bias":0.1232546914,"away_lambda_mae":0.9564751970,"away_lambda_rmse":1.1367729540,"away_lambda_bias":0.5153266790,"combined_lambda_mae":0.9627602037,"draw_auc":0.525862069},
+    "30":{"correct":240,"accuracy":0.48,"home_lambda_mae":0.9675517364,"home_lambda_rmse":1.1871426518,"home_lambda_bias":0.1253030167,"away_lambda_mae":0.9575561979,"away_lambda_rmse":1.1378181489,"away_lambda_bias":0.5173883659,"combined_lambda_mae":0.9625539672,"draw_auc":0.5318561422}
+  },
+  "best_window_by_lambda_mae":15,
+  "source_ablation_window":15,
+  "source_ablation":{
+    "baseline":{"accuracy":0.482,"combined_lambda_mae":0.9609875631},
+    "no_recency":{"accuracy":0.472,"combined_lambda_mae":0.9606004529,"mae_improvement_if_removed":0.0003871102},
+    "no_opp_quality":{"accuracy":0.49,"combined_lambda_mae":0.9950261106,"mae_improvement_if_removed":-0.0340385475},
+    "no_strength":{"accuracy":0.49,"combined_lambda_mae":0.9607677015,"mae_improvement_if_removed":0.0002198616},
+    "no_home_adv":{"accuracy":0.352,"combined_lambda_mae":0.9672726139,"mae_improvement_if_removed":-0.0062850508}
+  },
+  "conclusion":"The dominant systematic lambda-generation error is away-team lambda positive bias of about +0.50 to +0.52 goals. The 15-match window gives the best combined lambda MAE (0.96099) among tested windows. Recency removal slightly reduces MAE but also reduces direction accuracy, so recency should not be removed solely on MAE."
+}
