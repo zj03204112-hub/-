@@ -1,0 +1,30 @@
+name: V4 away lambda bias correction 500
+on:
+  push:
+    paths:
+      - 'data_pipeline/v4_lambda_away_bias_correction_500.py'
+      - 'data_pipeline/compare_models.py'
+      - 'model_validation/500_match_to_db_match_id_mapping.csv'
+      - 'football_model_database.sqlite'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run single-module validation
+        run: python data_pipeline/v4_lambda_away_bias_correction_500.py
+      - name: Print summary
+        run: cat model_validation/v4_lambda_away_bias_correction_500_summary.json
+      - name: Persist results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/v4_lambda_away_bias_correction_500.csv model_validation/v4_lambda_away_bias_correction_500_summary.json
+          git commit -m "Validate V4 away lambda bias correction on frozen 500"
+          git push origin HEAD:main
