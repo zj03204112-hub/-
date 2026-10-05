@@ -149,11 +149,18 @@ def main():
                 hit=next((m for m in allm if m[0]==mid),None)
                 if hit is None:
                     date=r.get("date","").strip()
-                    hh,aa=r.get("home",""),r.get("away","")
-                    hs,as_=r.get("home_score",""),r.get("away_score","")
-                    cand=[m for m in allm if m[1][:10]==date and m[4]==int(hs) and m[5]==int(as_)
-                          and (norm(m[2])==norm(hh) or norm(m[2]) in norm(hh) or norm(hh) in norm(m[2]))
-                          and (norm(m[3])==norm(aa) or norm(m[3]) in norm(aa) or norm(aa) in norm(m[3]))]
+                    hh,aa=r.get("db_home") or r.get("home",""),r.get("db_away") or r.get("away","")
+                    hs,as_=int(r.get("db_home_score") or r.get("home_score")),int(r.get("db_away_score") or r.get("away_score"))
+                    dbko=(r.get("db_kickoff") or "").strip()
+                    def team_match(x,y):
+                        nx,ny=norm(x),norm(y)
+                        return nx==ny or nx in ny or ny in nx
+                    cand=[m for m in allm
+                          if m[1][:10]==date and m[4]==hs and m[5]==as_
+                          and team_match(m[2],hh) and team_match(m[3],aa)]
+                    if dbko:
+                        exact=[m for m in cand if m[1].replace(" ","")[:16]==dbko.replace(" ","")[:16]]
+                        if len(exact)==1: cand=exact
                     if len(cand)==1: hit=cand[0]
                 if hit is None or hit[0] in used:
                     raise SystemExit("FROZEN_500_MAPPING_AMBIGUOUS_OR_MISSING")
