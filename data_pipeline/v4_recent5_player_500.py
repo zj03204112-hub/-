@@ -1,9 +1,10 @@
-import json, math, sqlite3, os, sys
+import json, math, sqlite3, os, csv
 from datetime import datetime, timedelta
 
 DB="football_model_database.sqlite"
 OUT=os.getenv("OUT","model_validation/v4_recent5_player_500.csv")
 SUMMARY=os.getenv("SUMMARY","model_validation/v4_recent5_player_500_summary.json")
+MAP_PATH="model_validation/500_match_to_db_match_id_mapping.csv"
 CUTOFF="2026-08-22T00:00:00"
 N=8
 RHO=-0.05
@@ -53,7 +54,7 @@ def probs(lh,la):
             "D":sum(m[i][j] for i in range(N) for j in range(N) if i==j),
             "A":sum(m[i][j] for i in range(N) for j in range(N) if i<j)}
 
-def base_lambda(con,match,away_bias):
+def lambdas(con,match,away_bias):
     mid,ko,h,a,fh,fa=match
     cutoff=(datetime.fromisoformat(ko[:19])-timedelta(hours=12)).isoformat(timespec="seconds")
     hgf,hga=dynamic_rates(con,h,cutoff); agf,aga=dynamic_rates(con,a,cutoff)
@@ -63,32 +64,37 @@ def base_lambda(con,match,away_bias):
         else:agf*=f; aga/=f
     lh=max(.15,min(4,.65+.58*hgf+.30*aga))
     la=max(.12,min(3.5,.58+.58*agf+.30*hga))-away_bias
-    return max(.12,la),cutoff
+    return max(.12,lh),max(.12,la),cutoff
 
 def recent5(con,team,cutoff):
     x=hist(con,team,cutoff,5)
     if not x:return {"ppg":1,"gd":0,"gf":1.2,"ga":1.2}
-    pts=sum(3 if gf>ga else 1 if gf==ga else 0 for (gf,ga),_ in x)/len(x)
-    gd=sum(gf-ga for (gf,ga),_ in x)/len(x)
-    gf=sum(gf for (gf,ga),_ in x)/len(x); ga=sum(ga for (gf,ga),_ in x)/len(x)
-    return {"ppg":pts,"gd":gd,"gf":gf,"ga":ga}
+    return {"ppg":sum(3 if gf>ga else 1 if gf==ga else 0 for (gf,ga),_ in x)/len(x),
+            "gd":sum(gf-ga for (gf,ga),_ in x)/len(x),
+            "gf":sum(gf for (gf,ga),_ in x)/len(x),
+            "ga":sum(ga for (gf,ga),_ in x)/len(x)}
 
 def player_form(con,team,cutoff):
-    # Strictly pre-cutoff player observations, most recent five team matches.
-    mids=[r[0] for r in con.execute("""SELECT m.match_id FROM matches m JOIN results r ON r.match_id=m.match_id
-      WHERE m.kickoff<? AND (m.home_team=? OR m.away_team=?) ORDER BY m.kickoff DESC LIMIT 5""",(cutoff,team,team)).fetchall()]
+    # Only the target team's rows from its five most recent pre-cutoff matches.
+    mids=con.execute("""SELECT m.match_id,m.home_team,m.away_team
+      FROM matches m JOIN results r ON r.match_id=m.match_id
+      WHERE m.kickoff<? AND (m.home_team=? OR m.away_team=?)
+      AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL
+      ORDER BY m.kickoff DESC LIMIT 5""",(cutoff,team,team)).fetchall()
     if not mids:return {"attack":0,"defense":0,"influence":0,"coverage":0}
-    q=",".join("?"*len(mids))
-    rows=con.execute(f"""SELECT p.minutes_played,p.rating,p.xg,p.xa,p.shots,p.key_passes,p.tackles,p.interceptions
-      FROM player_match_stats p WHERE p.team_side IN ('home','away') AND p.match_id IN ({q})
-      AND p.minutes_played>0""",mids).fetchall()
+    rows=[]
+    for mid,home,away in mids:
+        side="home" if home==team else "away"
+        rows.extend(con.execute("""SELECT p.minutes_played,p.rating,p.xg,p.xa,p.shots,p.key_passes,p.tackles,p.interceptions
+          FROM player_match_stats p
+          WHERE p.match_id=? AND p.team_side=? AND p.minutes_played>0""",(mid,side)).fetchall())
     if not rows:return {"attack":0,"defense":0,"influence":0,"coverage":0}
     mins=sum(float(r[0] or 0) for r in rows)
     if mins<=0:return {"attack":0,"defense":0,"influence":0,"coverage":0}
     w=lambda r:max(1.0,float(r[0] or 0))
     attack=sum(w(r)*(float(r[2] or 0)+.7*float(r[3] or 0)+.03*float(r[4] or 0)+.05*float(r[5] or 0)) for r in rows)/mins*90
     defense=sum(w(r)*(.02*float(r[6] or 0)+.03*float(r[7] or 0)) for r in rows)/mins*90
-    rating=sum(w(r)*float(r[1] or 0) for r in rows)/mins if mins else 0
+    rating=sum(w(r)*float(r[1] or 0) for r in rows)/mins
     return {"attack":attack,"defense":defense,"influence":max(0,rating-6.5),"coverage":len(rows)}
 
 def feature_pair(con,match):
@@ -96,34 +102,23 @@ def feature_pair(con,match):
     cutoff=(datetime.fromisoformat(ko[:19])-timedelta(hours=12)).isoformat(timespec="seconds")
     rh,ra=recent5(con,h,cutoff),recent5(con,a,cutoff)
     ph,pa=player_form(con,h,cutoff),player_form(con,a,cutoff)
-    # Conservative standardized differentials. No frozen labels are used.
-    form_h=(rh["ppg"]-1.35)/1.65 + .22*(rh["gd"]-0)
-    form_a=(ra["ppg"]-1.35)/1.65 + .22*(ra["gd"]-0)
+    form_h=(rh["ppg"]-1.35)/1.65 + .22*rh["gd"]
+    form_a=(ra["ppg"]-1.35)/1.65 + .22*ra["gd"]
     player_h=(ph["attack"]-0.18)+.10*ph["influence"]
     player_a=(pa["attack"]-0.18)+.10*pa["influence"]
     return form_h,form_a,player_h,player_a,ph["coverage"],pa["coverage"]
 
 def eval_arm(con,matches,away_bias,bf,bp):
-    d={"n":0,"correct":0,"logloss":0}
-    rows=[]
+    d={"n":0,"correct":0,"logloss":0}; rows=[]
     for match in matches:
-        lh0,cutoff=base_lambda(con,match,away_bias)
-        la0=lh0
-        # base_lambda returns (away_lambda, cutoff); recompute home lambda by symmetric helper.
-        mid,ko,h,a,fh,fa=match
-        hgf,hga=dynamic_rates(con,h,cutoff); agf,aga=dynamic_rates(con,a,cutoff)
-        for side,team in (("home",h),("away",a)):
-            s=max(.75,min(2.25,strength(con,team,cutoff))); f=max(.94,min(1.06,(s/1.5)**.18))
-            if side=="home":hgf*=f; hga/=f
-            else:agf*=f; aga/=f
-        lh=max(.15,min(4,.65+.58*hgf+.30*aga))
-        la=max(.12,min(3.5,.58+.58*agf+.30*hga))-away_bias
+        lh,la,cutoff=lambdas(con,match,away_bias)
         fhf,faf,phf,paf,_,_=feature_pair(con,match)
-        # Combined recent-5 + player correction, multiplicative and capped.
         lh*=math.exp(max(-.12,min(.12,bf*fhf+bp*phf)))
         la*=math.exp(max(-.12,min(.12,bf*faf+bp*paf)))
-        p=probs(lh,la); actual="H" if fh>fa else "D" if fh==fa else "A"
-        pred=max(p,key=p.get); d["n"]+=1; d["correct"]+=pred==actual; d["logloss"]-=math.log(max(1e-12,p[actual]))
+        p=probs(lh,la); fh,fa=match[4],match[5]
+        actual="H" if fh>fa else "D" if fh==fa else "A"
+        pred=max(p,key=p.get)
+        d["n"]+=1; d["correct"]+=pred==actual; d["logloss"]-=math.log(max(1e-12,p[actual]))
         rows.append((match,p,pred,actual,lh,la))
     return d,rows
 
@@ -133,31 +128,22 @@ def main():
       FROM matches m JOIN results r ON r.match_id=m.match_id
       WHERE m.status='finished' AND r.ft_home IS NOT NULL ORDER BY m.kickoff,m.match_id""").fetchall()
     train=[m for m in allm if m[1]<CUTOFF]
-    frozen_ids={r[0] for r in con.execute("SELECT db_match_id FROM (SELECT db_match_id FROM model_validation_500_map LIMIT 0)").fetchall()} if False else set()
-    # Discover frozen mapping from repo CSV at workflow runtime.
-    map_path="model_validation/500_match_to_db_match_id_mapping.csv"
+    # Resolve the frozen 500 by the checked-in mapping file, independent of cwd.
+    map_path=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),MAP_PATH)
     try:
-        import csv
         with open(map_path,encoding="utf-8") as f:
-            frozen_ids={r["db_match_id"] for r in csv.DictReader(f)}
-    except Exception:
-        frozen_ids=set()
+            frozen_ids={r["db_match_id"].strip() for r in csv.DictReader(f) if r.get("db_match_id")}
+    except Exception as e:
+        raise SystemExit(f"FROZEN_500_READ_ERROR:{type(e).__name__}:{e}")
     frozen=[m for m in allm if m[0] in frozen_ids]
-    if len(frozen)!=500: raise SystemExit(f"FROZEN_500_NOT_FOUND:{len(frozen)}")
-    # Away bias estimated only before cutoff, identical to accepted 51.2 baseline.
+    if len(frozen)!=500 or len(frozen_ids)!=500:
+        raise SystemExit(f"FROZEN_500_INVALID:rows={len(frozen_ids)},matched_db={len(frozen)}")
     diffs=[]
     for m in train:
-        _,cut=base_lambda(con,m,0.0)
-        mid,ko,h,a,fh,fa=m
-        hgf,hga=dynamic_rates(con,h,cut); agf,aga=dynamic_rates(con,a,cut)
-        for side,team in (("home",h),("away",a)):
-            s=max(.75,min(2.25,strength(con,team,cut))); f=max(.94,min(1.06,(s/1.5)**.18))
-            if side=="home":hgf*=f;hga/=f
-            else:agf*=f;aga/=f
-        la=max(.12,min(3.5,.58+.58*agf+.30*hga))
-        diffs.append(la-fa)
+        lh,la,cut=lambdas(con,m,0.0)
+        diffs.append(la-m[5])
     away_bias=sum(diffs)/len(diffs)
-    split=int(len(train)*.70); fit=train[:split]; cal=train[split:]
+    split=int(len(train)*.70); cal=train[split:]
     grid_b=[0,.01,.02,.03,.04,.05,.06,.08,.10,.12]
     best=(0,0,float("inf"))
     for bf in grid_b:
@@ -168,10 +154,10 @@ def main():
     bf,bp,ll=best
     base_d,base_rows=eval_arm(con,frozen,away_bias,0,0)
     comb_d,comb_rows=eval_arm(con,frozen,away_bias,bf,bp)
-    # coverage and whether any prediction changes.
     changed=sum(a[2]!=b[2] for a,b in zip(base_rows,comb_rows))
     base_counts={k:sum(r[2]==k for r in base_rows) for k in "HDA"}
     comb_counts={k:sum(r[2]==k for r in comb_rows) for k in "HDA"}
+    coverage_h=sum(r[4]!=0 or r[5]!=0 for r in comb_rows)
     with open(OUT,"w",encoding="utf-8") as f:
         f.write("match_id,kickoff,home,away,base_pred,combined_pred,actual,base_lh,base_la,combined_lh,combined_la\n")
         for b,c in zip(base_rows,comb_rows):
@@ -184,7 +170,7 @@ def main():
       "combined_correct":comb_d["correct"],"combined_accuracy":comb_d["correct"]/500,"combined_pred_counts":comb_counts,
       "actual_counts":{k:sum(r[3]==k for r in comb_rows) for k in "HDA"},
       "changed_predictions":changed,"improvement_correct":comb_d["correct"]-base_d["correct"],
-      "player_coverage_matches":sum(1 for r in comb_rows if r[4]!=0 or r[5]!=0)}
+      "player_coverage_matches":coverage_h}
     with open(SUMMARY,"w",encoding="utf-8") as f:json.dump(summary,f,ensure_ascii=False,indent=2)
     print(json.dumps(summary,ensure_ascii=False))
 if __name__=="__main__":main()
