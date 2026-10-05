@@ -136,8 +136,30 @@ def main():
     except Exception as e:
         raise SystemExit(f"FROZEN_500_READ_ERROR:{type(e).__name__}:{e}")
     frozen=[m for m in allm if m[0] in frozen_ids]
-    if len(frozen)!=500 or len(frozen_ids)!=500:
-        raise SystemExit(f"FROZEN_500_INVALID:rows={len(frozen_ids)},matched_db={len(frozen)}")
+    # The checked-in mapping can outlive a refreshed SQLite DB. Fall back to
+    # unique date + normalized team names + final score matching.
+    if len(frozen)!=500:
+        def norm(s):
+            return "".join(ch.lower() for ch in (s or "") if ch.isalnum())
+        frozen=[]
+        used=set()
+        with open(map_path,encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                mid=r.get("db_match_id","").strip()
+                hit=next((m for m in allm if m[0]==mid),None)
+                if hit is None:
+                    date=r.get("date","").strip()
+                    hh,aa=r.get("home",""),r.get("away","")
+                    hs,as_=r.get("home_score",""),r.get("away_score","")
+                    cand=[m for m in allm if m[1][:10]==date and m[4]==int(hs) and m[5]==int(as_)
+                          and (norm(m[2])==norm(hh) or norm(m[2]) in norm(hh) or norm(hh) in norm(m[2]))
+                          and (norm(m[3])==norm(aa) or norm(m[3]) in norm(aa) or norm(aa) in norm(m[3]))]
+                    if len(cand)==1: hit=cand[0]
+                if hit is None or hit[0] in used:
+                    raise SystemExit("FROZEN_500_MAPPING_AMBIGUOUS_OR_MISSING")
+                used.add(hit[0]); frozen.append(hit)
+    if len(frozen)!=500 or len({m[0] for m in frozen})!=500:
+        raise SystemExit(f"FROZEN_500_INVALID:rows={len(frozen)},unique_db={len({m[0] for m in frozen})}")
     diffs=[]
     for m in train:
         lh,la,cut=lambdas(con,m,0.0)
