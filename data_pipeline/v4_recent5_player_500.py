@@ -159,8 +159,20 @@ def main():
                           if m[1][:10]==date and m[4]==hs and m[5]==as_
                           and team_match(m[2],hh) and team_match(m[3],aa)]
                     if dbko:
-                        exact=[m for m in cand if m[1].replace(" ","")[:16]==dbko.replace(" ","")[:16]]
-                        if len(exact)==1: cand=exact
+                        target=dbko.replace("T"," ").replace("Z","")[:16]
+                        exact=[m for m in cand if m[1].replace("T"," ").replace("Z","")[:16]==target]
+                        if exact: cand=exact
+                    if len(cand)>1:
+                        def score(m):
+                            target=dbko.replace("T"," ").replace("Z","")[:16]
+                            k=4 if dbko and m[1].replace("T"," ").replace("Z","")[:16]==target else 0
+                            k+=2 if norm(m[2])==norm(hh) else 0
+                            k+=2 if norm(m[3])==norm(aa) else 0
+                            return k
+                        scores=[score(m) for m in cand]
+                        mx=max(scores)
+                        best=[m for m,s in zip(cand,scores) if s==mx]
+                        if len(best)==1: cand=best
                     if len(cand)==1: hit=cand[0]
                 if hit is None or hit[0] in used:
                     raise SystemExit("FROZEN_500_MAPPING_AMBIGUOUS_OR_MISSING")
