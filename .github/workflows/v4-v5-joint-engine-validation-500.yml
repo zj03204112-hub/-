@@ -1,0 +1,43 @@
+name: V4 V5 joint engine validation (frozen 500)
+on:
+  push:
+    paths:
+      - "data_pipeline/v4_v5_joint_engine_validation_500.py"
+      - ".github/workflows/v4-v5-joint-engine-validation-500.yml"
+      - "model_validation/500_match_to_db_match_id_mapping.csv"
+      - "football_model_database.sqlite"
+      - "data_pipeline/compare_models.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: v4-v5-joint-engine-validation-500
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run leakage-aware V4/V5/joint validation
+        run: python data_pipeline/v4_v5_joint_engine_validation_500.py
+      - name: Print summary
+        run: cat model_validation/v4_v5_joint_walkforward_500_summary.json
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4-v5-joint-engine-validation-500
+          path: |
+            model_validation/v4_v5_joint_walkforward_500.csv
+            model_validation/v4_v5_joint_walkforward_500_summary.json
+      - name: Commit validation results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/v4_v5_joint_walkforward_500.csv model_validation/v4_v5_joint_walkforward_500_summary.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Record leakage-aware V4 V5 joint engine validation"
+          git push origin HEAD:${GITHUB_REF_NAME}
