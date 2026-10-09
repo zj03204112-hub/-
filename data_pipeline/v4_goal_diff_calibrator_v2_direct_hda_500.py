@@ -300,7 +300,7 @@ def main():
             result["holdout_error_rows"].append(z)
         out.append(z)
     with OUT_CSV.open("w",encoding="utf-8",newline="") as f:
-        writer=csv.DictWriter(f,fieldnames=list(out[0].keys()))
+        writer=csv.DictWriter(f,fieldnames=list(dict.fromkeys(k for row in out for k in row.keys())))
         writer.writeheader();writer.writerows(out)
     OUT_JSON.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding="utf-8")
     print(json.dumps({k:v for k,v in result.items() if k!="holdout_error_rows"},ensure_ascii=False,indent=2))
