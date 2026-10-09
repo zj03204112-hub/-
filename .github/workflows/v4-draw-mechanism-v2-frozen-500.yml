@@ -8,6 +8,9 @@ on:
       - 'football_model_database.sqlite'
       - '.github/workflows/v4-draw-mechanism-v2-frozen-500.yml'
   workflow_dispatch:
+concurrency:
+  group: v4-draw-mechanism-v2-frozen-500
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
