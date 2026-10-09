@@ -1,0 +1,44 @@
+name: V4 V5 final-classifier threshold experiment (frozen 500)
+on:
+  push:
+    paths:
+      - "data_pipeline/v4_v5_classifier_threshold_experiment_500.py"
+      - "data_pipeline/v4_v5_joint_engine_validation_500.py"
+      - "data_pipeline/compare_models.py"
+      - "model_validation/500_match_to_db_match_id_mapping.csv"
+      - "football_model_database.sqlite"
+      - ".github/workflows/v4-v5-classifier-threshold-500.yml"
+  pull_request:
+    paths:
+      - "data_pipeline/v4_v5_classifier_threshold_experiment_500.py"
+      - "data_pipeline/v4_v5_joint_engine_validation_500.py"
+      - "data_pipeline/compare_models.py"
+      - "model_validation/500_match_to_db_match_id_mapping.csv"
+      - "football_model_database.sqlite"
+      - ".github/workflows/v4-v5-classifier-threshold-500.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v4-v5-classifier-threshold-500
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run classifier-only experiment on frozen 500
+        run: python data_pipeline/v4_v5_classifier_threshold_experiment_500.py
+      - name: Print experiment decision
+        run: cat model_validation/v4_v5_classifier_threshold_experiment_500.json
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4-v5-classifier-threshold-500
+          path: |
+            model_validation/v4_v5_classifier_threshold_experiment_500.json
+            model_validation/v4_v5_classifier_threshold_experiment_500.csv
