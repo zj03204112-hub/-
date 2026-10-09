@@ -107,7 +107,7 @@ def brier_logloss(prob_rows, labels):
     index = {"H": 0, "D": 1, "A": 2}
     for p, y in zip(prob_rows, labels):
         brier += sum((p[j] - (1.0 if j == index[y] else 0.0)) ** 2 for j in range(3))
-        loss -= math.log(max(EPS, p[index[y]))
+        loss -= math.log(max(EPS, p[index[y]]))
     n = len(labels)
     return {"brier": brier / n, "log_loss": loss / n}
 
