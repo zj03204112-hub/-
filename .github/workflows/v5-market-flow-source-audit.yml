@@ -1,0 +1,59 @@
+name: V5.1 market-flow source audit
+on:
+  push:
+    paths:
+      - "model_validation/V5_1_MARKET_FLOW_SOURCE_AUDIT_2026-10-09.md"
+      - "data_pipeline/validate_sporttery_frozen_500.py"
+      - "model_validation/500_match_to_db_match_id_mapping.csv"
+      - ".github/workflows/v5-market-flow-source-audit.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v5-market-flow-source-audit
+  cancel-in-progress: true
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependency
+        run: python -m pip install requests
+      - name: Audit frozen 500 Sporttery odds-history coverage
+        run: python data_pipeline/validate_sporttery_frozen_500.py
+      - name: Mark distinction between odds and money flow
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("model_validation/500_match_sporttery_odds_coverage.json")
+          d = json.loads(p.read_text(encoding="utf-8"))
+          out = {
+              "audit_type": "SPORTTERY_ODDS_HISTORY_COVERAGE_NOT_MONEY_FLOW",
+              "target_count": d.get("target_count"),
+              "unique_db_match_id": d.get("unique_db_match_id"),
+              "unique_sporttery_match_id": d.get("unique_sporttery_match_id"),
+              "sporttery_match_coverage": d.get("sporttery_match_coverage"),
+              "hhad_coverage": d.get("hhad_coverage"),
+              "status_counts": d.get("status_counts"),
+              "true_money_flow_status": "FLOW_DATA_UNAVAILABLE_FROM_CURRENT_INTEGRATION",
+              "production_change": False,
+              "decision": "DO_NOT_TREAT_ODDS_MOVEMENT_AS_MONEY_FLOW"
+          }
+          Path("model_validation/V5_1_MARKET_FLOW_COVERAGE_AUDIT.json").write_text(
+              json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8"
+          )
+          print(json.dumps(out, ensure_ascii=False, indent=2))
+          PY
+      - name: Upload audit artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: v5-1-market-flow-source-audit
+          path: |
+            model_validation/500_match_sporttery_matchid_mapping.csv
+            model_validation/500_match_sporttery_odds_coverage.json
+            model_validation/V5_1_MARKET_FLOW_COVERAGE_AUDIT.json
