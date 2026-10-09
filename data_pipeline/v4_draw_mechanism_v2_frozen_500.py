@@ -1,4 +1,5 @@
 import csv, json, math, sqlite3, sys
+from datetime import datetime, timedelta
 sys.path.insert(0, "data_pipeline")
 import compare_models as cm
 
@@ -37,8 +38,9 @@ def sigmoid(z):
     z = max(-30.0, min(30.0, z))
     return 1.0 / (1.0 + math.exp(-z))
 
-def recent_stats(con, team, cutoff, n):
-    h = cm.hist(con, team, cutoff)[:n]
+def recent_stats(con, team, kickoff, n):
+    match_cutoff = (datetime.fromisoformat(kickoff[:19]) - timedelta(hours=12)).isoformat(timespec="seconds")
+    h = cm.hist(con, team, match_cutoff)[:n]
     if not h:
         return [0.25, 1.15, 1.15, 0.0]
     draws = sum(gf == ga for (gf, ga), opp in h) / len(h)
