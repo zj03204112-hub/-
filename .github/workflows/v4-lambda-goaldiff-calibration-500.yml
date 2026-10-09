@@ -1,0 +1,60 @@
+name: V4 lambda and goal-difference calibration experiment
+
+on:
+  push:
+    branches: [experiment/v4-lambda-goaldiff-calibration-20261010]
+    paths:
+      - "data_pipeline/v4_lambda_goal_diff_calibration_500.py"
+      - "data_pipeline/compare_models.py"
+      - "model_validation/500_match_to_db_match_id_mapping.csv"
+      - "football_model_database.sqlite"
+      - ".github/workflows/v4-lambda-goaldiff-calibration-500.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 31
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy scipy scikit-learn
+      - name: Run leakage-safe 300/100/100 calibration experiment
+        run: python data_pipeline/v4_lambda_goal_diff_calibration_500.py
+      - name: Print summary and error counts
+        run: |
+          python - <<'PY'
+          import json
+          p='model_validation/v4_lambda_goal_diff_calibration_500_summary.json'
+          d=json.load(open(p,encoding='utf-8'))
+          print(json.dumps({
+            'status':d['status'],
+            'split':d['split'],
+            'lambda_calibration':d['lambda_calibration'],
+            'absolute_goal_difference_bucket_calibration':d['absolute_goal_difference_bucket_calibration'],
+            'hda_from_calibrated_lambdas':d['hda_from_calibrated_lambdas'],
+            'stratified_raw_lambda_bias':d['stratified_raw_lambda_bias'],
+            'error_counts':{k:len(v) for k,v in d['per_match_errors'].items()}
+          },ensure_ascii=False,indent=2))
+          PY
+      - name: Upload calibration artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4-lambda-goaldiff-calibration-500
+          path: |
+            model_validation/v4_lambda_goal_diff_calibration_500_summary.json
+            model_validation/v4_lambda_goal_diff_calibration_500_predictions.csv
+          if-no-files-found: error
+      - name: Persist experiment results to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/v4_lambda_goal_diff_calibration_500_summary.json model_validation/v4_lambda_goal_diff_calibration_500_predictions.csv
+          git diff --cached --quiet || git commit -m "Record V4 lambda and goal-difference calibration results"
+          git push origin HEAD:experiment/v4-lambda-goaldiff-calibration-20261010
