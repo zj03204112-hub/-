@@ -125,7 +125,7 @@ def main():
         WHERE m.status='finished' AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL
     """)}
     assert all(x["match_id"] in db for x in mapping), "frozen mapping IDs do not resolve in Actions DB"
-    train_rows = sorted([r for r in db.values() if r[1] < CUTOFF], key=lambda r: r[1])
+    train_rows = sorted([r for r in db.values() if r[1] < CUTOFF], key=lambda r: r[1])[-4000:]
     test_rows = [db[x["match_id"]] for x in mapping]
     assert len(train_rows) > 2000 and len(test_rows) == 500
 
@@ -197,7 +197,8 @@ def main():
         "n": 500,
         "cutoff": CUTOFF,
         "hist_window": HIST,
-        "train_matches_before_cutoff": len(train_rows),
+        "train_matches_before_cutoff": len([r for r in db.values() if r[1] < CUTOFF]),
+        "training_window_matches": len(train_rows),
         "early_train_matches": len(early),
         "chronological_validation_matches": len(valid),
         "features": ["lambda_total", "abs_lambda_gap", "lambda balance", "DC draw/low-score cells",
