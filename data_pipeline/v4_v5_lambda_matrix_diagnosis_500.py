@@ -112,8 +112,8 @@ def main():
     # Acceptance: meaningful score-NLL improvement; H/D/A accuracy or draw recall must improve;
     # Brier and logloss may not deteriorate beyond small predeclared tolerances.
     accepted=bool(run_experiment and hold_exp["score_nll"]<hold_base["score_nll"] and
-      (hold_exp["accuracy"]>hold_base["accuracy"] or hold_exp["draw_recall"]>hold_base["draw_recall"]) and
-      hold_exp["brier"]<=hold_base["brier"]+0.005 and hold_exp["logloss"]<=hold_base["logloss"]+0.01)
+      hold_exp["accuracy"]>hold_base["accuracy"] and hold_exp["draw_recall"]>=hold_base["draw_recall"] and
+      hold_exp["brier"]<=hold_base["brier"] and hold_exp["logloss"]<=hold_base["logloss"])
     diag["single_module_experiment"]={"module":"lambda_total_scale_only; both lambdas multiplied by same scalar, lambda ratio preserved",
       "selection_split":"calibration_100 only; final_holdout_100 never used for tuning",
       "primary_objective":"exact-score NLL","calibration_baseline":base_cal,"calibration_candidates":candidates,
@@ -123,8 +123,8 @@ def main():
       "deltas_experiment_minus_original":{"accuracy":hold_exp["accuracy"]-hold_base["accuracy"],
         "draw_recall":hold_exp["draw_recall"]-hold_base["draw_recall"],"brier":hold_exp["brier"]-hold_base["brier"],
         "logloss":hold_exp["logloss"]-hold_base["logloss"],"score_nll":hold_exp["score_nll"]-hold_base["score_nll"]},
-      "acceptance_gate":{"score_nll_must_improve":True,"accuracy_or_draw_recall_must_improve":True,
-        "brier_max_allowed_increase":0.005,"logloss_max_allowed_increase":0.01},
+      "acceptance_gate":{"score_nll_must_improve":True,"accuracy_must_improve":True,"draw_recall_must_not_decline":True,
+        "brier_must_not_worsen":True,"logloss_must_not_worsen":True},
       "decision":"ACCEPT_EXPERIMENT_ONLY" if accepted else "REJECT_AND_ROLLBACK",
       "production_status":"UNCHANGED; EXPERIMENT_ONLY"}
     with OUT_JSON.open("w",encoding="utf-8") as f: json.dump(diag,f,ensure_ascii=False,indent=2)
