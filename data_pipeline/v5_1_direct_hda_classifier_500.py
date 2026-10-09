@@ -53,7 +53,7 @@ def evaluate(y, probs):
         "accuracy": float(accuracy_score(y, pred)),
         "draw": draw_stats(y, pred),
         "brier": brier(list(y), probs),
-        "log_loss": float(log_loss(y, probs, labels=CLASSES)),
+        "log_loss": float(log_loss(y, probs[:, [2, 1, 0]], labels=["A", "D", "H"])),
         "confusion_matrix_labels_H_D_A": confusion_matrix(y, pred, labels=CLASSES).tolist(),
         "predicted_class_counts": {k: int(pred.count(k)) for k in CLASSES},
         "actual_class_counts": {k: int(list(y).count(k)) for k in CLASSES},
@@ -124,7 +124,7 @@ def main():
     holdout_df["classifier_pred"] = [CLASSES[i] for i in holdout_probs.argmax(axis=1)]
     for i, label in enumerate(CLASSES):
         holdout_df[f"baseline_p_{label}"] = baseline_probs_all[ho, i]
-        holdout_df[f"classifier_p_{label}"] = holdout_probs[i]
+        holdout_df[f"classifier_p_{label}"] = holdout_probs[:, i]
     holdout_df.to_csv(OUT_CSV, index=False)
 
     summary = {
