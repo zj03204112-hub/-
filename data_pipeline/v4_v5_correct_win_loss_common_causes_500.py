@@ -30,16 +30,16 @@ def lambda_blend(x):
     return lh,la
 
 def prior_features(con,team,cutoff,venue=None):
+    venue_clause = " AND m.home_team=?" if venue=="home" else " AND m.away_team=?" if venue=="away" else ""
+    params=(cutoff,team,team,team) if venue_clause else (cutoff,team,team)
     rows=con.execute("""SELECT m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away
       FROM matches m JOIN results r ON r.match_id=m.match_id
       WHERE m.kickoff < ? AND (m.home_team=? OR m.away_team=?)
-      AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL
-      ORDER BY m.kickoff DESC,m.match_id DESC LIMIT 5""",(cutoff,team,team)).fetchall()
+      AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL""" + venue_clause +
+      " ORDER BY m.kickoff DESC,m.match_id DESC LIMIT 5",params).fetchall()
     pts=[]; gf=[]; ga=[]; gd=[]; dates=[]
     for ko,h,a,fh,fa in rows:
         is_home=(h==team)
-        if venue=="home" and not is_home: continue
-        if venue=="away" and is_home: continue
         x,y=(int(fh),int(fa)) if is_home else (int(fa),int(fh))
         pts.append(3 if x>y else 1 if x==y else 0)
         gf.append(x);ga.append(y);gd.append(x-y);dates.append(ko)
