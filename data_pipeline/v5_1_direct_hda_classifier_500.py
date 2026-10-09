@@ -82,7 +82,7 @@ def main():
     missing = sorted(required - set(df.columns))
     if missing:
         raise ValueError(f"Missing required columns: {missing}")
-    df["kickoff_sort"] = pd.to_datetime(df["kickoff"], errors="coerce")
+    df["kickoff_sort"] = pd.to_datetime(df["kickoff"], format="mixed", errors="coerce")
     df = df.dropna(subset=["kickoff_sort", "actual_result"]).sort_values(["kickoff_sort", "match_id"], kind="stable").reset_index(drop=True)
     df = df[df["actual_result"].isin(CLASSES)].reset_index(drop=True)
     if len(df) != 500:
