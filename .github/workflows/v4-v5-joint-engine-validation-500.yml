@@ -47,4 +47,4 @@ jobs:
           git add model_validation/v4_v5_joint_walkforward_500.csv model_validation/v4_v5_joint_walkforward_500_summary.json
           git diff --cached --quiet && exit 0
           git commit -m "Record leakage-aware V4 V5 joint engine validation"
-          git push origin HEAD:${GITHUB_REF_NAME}
+          git push origin HEAD:refs/heads/${{ github.event.pull_request.head.ref || github.ref_name }}
