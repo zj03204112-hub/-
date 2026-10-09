@@ -1,0 +1,35 @@
+name: V5.1 direct HDA classifier experiment
+
+on:
+  push:
+    branches: [experiment/v51-direct-hda-classifier-20261009]
+    paths:
+      - "data_pipeline/v5_1_direct_hda_classifier_500.py"
+      - ".github/workflows/v5-1-direct-hda-classifier.yml"
+      - "model_validation/500_match_V4_frozen_predictions.csv"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  classifier-experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip pandas numpy scikit-learn
+      - name: Run chronological 300/100/100 experiment
+        run: python data_pipeline/v5_1_direct_hda_classifier_500.py
+      - name: Upload experiment outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: v5-1-direct-hda-classifier-500
+          path: |
+            model_validation/V5_1_DIRECT_HDA_CLASSIFIER_500_SUMMARY.json
+            model_validation/V5_1_DIRECT_HDA_CLASSIFIER_500_PREDICTIONS.csv
+          if-no-files-found: error
