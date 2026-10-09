@@ -181,8 +181,8 @@ def score_arm(rows, arm, w=None):
         elif arm == "v5": m=x["m5"]
         else:
             # Integrate at the goal-rate layer, not by stitching final labels and score outputs.
-            lh=math.exp(w*math.log(max(1e-9,x["v4"][0])+(1-w)*math.log(max(1e-9,x["v5"][0]))))
-            la=math.exp(w*math.log(max(1e-9,x["v4"][1])+(1-w)*math.log(max(1e-9,x["v5"][1]))))
+            lh=math.exp(w*math.log(max(1e-9,x["v4"][0]))+(1-w)*math.log(max(1e-9,x["v5"][0])))
+            la=math.exp(w*math.log(max(1e-9,x["v4"][1]))+(1-w)*math.log(max(1e-9,x["v5"][1])))
             m=matrix(lh,la)
         p=matrix_probs(m); pred=max(p,key=p.get); a=x["actual"]
         scores=top2(m); actual_score=(int(x["match"][4]),int(x["match"][5]))
