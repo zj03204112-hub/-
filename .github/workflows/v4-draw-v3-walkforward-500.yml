@@ -1,0 +1,47 @@
+name: V4 draw mechanism V3 chronological validation
+
+on:
+  push:
+    branches: [experiment/v4-draw-v3-walkforward-20261010]
+    paths:
+      - "data_pipeline/v4_draw_mechanism_v3_walkforward_500.py"
+      - "data_pipeline/compare_models.py"
+      - "model_validation/500_match_to_db_match_id_mapping.csv"
+      - "football_model_database.sqlite"
+      - ".github/workflows/v4-draw-v3-walkforward-500.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: v4-draw-v3-walkforward-500
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run strict chronological 300/100/100 experiment
+        run: python data_pipeline/v4_draw_mechanism_v3_walkforward_500.py
+      - name: Print summary
+        run: cat model_validation/v4_draw_v3_walkforward_500_summary.json
+      - name: Upload validation artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4-draw-v3-walkforward-500
+          path: |
+            model_validation/v4_draw_v3_walkforward_500.csv
+            model_validation/v4_draw_v3_walkforward_500_summary.json
+      - name: Persist results to experiment branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/v4_draw_v3_walkforward_500.csv model_validation/v4_draw_v3_walkforward_500_summary.json
+          git diff --cached --quiet || git commit -m "Record V4 draw V3 chronological validation"
+          git push origin HEAD:experiment/v4-draw-v3-walkforward-20261010
