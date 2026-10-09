@@ -1,0 +1,75 @@
+{
+  "status": "COMPLETED_EXPERIMENT_ONLY",
+  "model": "Multinomial LogisticRegression C=0.3 + StandardScaler; temperature scaling selected on calibration only",
+  "sample_n": 500,
+  "split": {
+    "train_n": 300,
+    "calibration_n": 100,
+    "final_holdout_n": 100
+  },
+  "feature_count": 64,
+  "final_holdout": {
+    "v4": {
+      "accuracy": 0.46,
+      "draw_tp": 0,
+      "draw_fp": 0,
+      "draw_fn": 21,
+      "draw_recall": 0,
+      "brier": 0.6222185956,
+      "logloss": 1.0340494303,
+      "rps": 0.2287175734
+    },
+    "v5_reconstructed": {
+      "accuracy": 0.46,
+      "draw_tp": 1,
+      "draw_fp": 5,
+      "draw_fn": 20,
+      "draw_recall": 0.047619,
+      "brier": 0.667160657,
+      "logloss": 1.1214108705,
+      "rps": 0.2447995772
+    },
+    "joint_baseline": {
+      "accuracy": 0.52,
+      "draw_tp": 0,
+      "draw_fp": 0,
+      "draw_fn": 21,
+      "draw_recall": 0,
+      "brier": 0.6262700265,
+      "logloss": 1.0424816699,
+      "rps": 0.2297762549
+    },
+    "direct_lr_raw": {
+      "accuracy": 0.47,
+      "draw_tp": 5,
+      "draw_fp": 16,
+      "draw_fn": 16,
+      "draw_recall": 0.238095,
+      "brier": 0.6548289148,
+      "logloss": 1.0919243982,
+      "rps": 0.2348620381
+    },
+    "direct_lr_temperature_scaled": {
+      "accuracy": 0.47,
+      "draw_tp": 5,
+      "draw_fp": 16,
+      "draw_fn": 16,
+      "draw_recall": 0.238095,
+      "brier": 0.6453393476,
+      "logloss": 1.0707556678,
+      "rps": 0.231694656
+    }
+  },
+  "delta_vs_joint": {
+    "accuracy": -0.05,
+    "brier": 0.0190693211,
+    "logloss": 0.0282739979,
+    "rps": 0.0019184011
+  },
+  "promotion_gate_passed": false,
+  "production_status": "UNCHANGED; EXPERIMENT_ONLY",
+  "artifact": {
+    "run_id": 37950767576,
+    "artifact_id": 11625458349
+  }
+}
