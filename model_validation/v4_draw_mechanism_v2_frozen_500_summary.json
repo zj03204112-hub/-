@@ -1,0 +1,98 @@
+{
+  "experiment": "V4 draw mechanism v2: separate binary draw classifier + conditional H/A decision",
+  "production_status": "EXPERIMENT_ONLY",
+  "n": 500,
+  "cutoff": "2026-08-22T00:00:00",
+  "hist_window": 15,
+  "train_matches_before_cutoff": 8210,
+  "training_window_matches": 4000,
+  "early_train_matches": 3000,
+  "chronological_validation_matches": 1000,
+  "features": [
+    "lambda_total",
+    "abs_lambda_gap",
+    "lambda balance",
+    "DC draw/low-score cells",
+    "home/away recent-5 and recent-10 draw rates",
+    "recent goal rates",
+    "H/A matrix log-ratio"
+  ],
+  "validation": {
+    "selected_draw_threshold": 0.28,
+    "macro_f1": 0.3910740822325088,
+    "accuracy": 0.451,
+    "predicted_draws": 238,
+    "actual_draws": 251,
+    "draw_precision": 0.2815126050420168,
+    "draw_recall": 0.26693227091633465,
+    "threshold_selection": "maximize macro-F1; tie-break overall accuracy, then closest predicted draw rate"
+  },
+  "estimated_away_lambda_bias_full_train": 0.4499738684678695,
+  "baseline_matrix_argmax": {
+    "n": 500,
+    "correct": 256,
+    "accuracy": 0.512,
+    "macro_f1": 0.3331287585005339,
+    "per_class": {
+      "H": {
+        "predicted": 418,
+        "actual": 241,
+        "correct": 218,
+        "precision": 0.5215311004784688,
+        "recall": 0.9045643153526971,
+        "f1": 0.6616084977238239
+      },
+      "D": {
+        "predicted": 0,
+        "actual": 116,
+        "correct": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "A": {
+        "predicted": 82,
+        "actual": 143,
+        "correct": 38,
+        "precision": 0.4634146341463415,
+        "recall": 0.26573426573426573,
+        "f1": 0.33777777777777773
+      }
+    }
+  },
+  "draw_mechanism_v2": {
+    "n": 500,
+    "correct": 241,
+    "accuracy": 0.482,
+    "macro_f1": 0.396047120385241,
+    "per_class": {
+      "H": {
+        "predicted": 334,
+        "actual": 241,
+        "correct": 182,
+        "precision": 0.5449101796407185,
+        "recall": 0.7551867219917012,
+        "f1": 0.6330434782608696
+      },
+      "D": {
+        "predicted": 96,
+        "actual": 116,
+        "correct": 25,
+        "precision": 0.2604166666666667,
+        "recall": 0.21551724137931033,
+        "f1": 0.2358490566037736
+      },
+      "A": {
+        "predicted": 70,
+        "actual": 143,
+        "correct": 34,
+        "precision": 0.4857142857142857,
+        "recall": 0.23776223776223776,
+        "f1": 0.3192488262910798
+      }
+    }
+  },
+  "improvement_correct": -15,
+  "improvement_accuracy": -0.030000000000000027,
+  "production_gate": "remain EXPERIMENT_ONLY; require positive out-of-time improvement and nonzero draw recall"
+}
