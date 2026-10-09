@@ -128,7 +128,7 @@ def v3_draw_features(base, extra):
     return np.concatenate([base, extra], axis=1)
 
 
-def select_c(Xtr, ytr, Xcal, ycal, labels):
+def select_c(Xtr, ytr, Xcal, ycal, labels, objective="log_loss"):
     trials=[]
     for c in C_GRID:
         model=fit_pipe(c)
@@ -136,7 +136,10 @@ def select_c(Xtr, ytr, Xcal, ycal, labels):
         p=ordered_probs(model,Xcal,labels)
         met=metric_block(list(ycal),p,labels)
         trials.append({"C":c,"calibration":met})
-    chosen=sorted(trials,key=lambda t:(t["calibration"]["log_loss"],-t["calibration"]["accuracy"],t["C"]))[0]
+    if objective == "macro_f1":
+        chosen=sorted(trials,key=lambda t:(-t["calibration"]["macro_f1"],-t["calibration"]["accuracy"],t["calibration"]["log_loss"],t["C"]))[0]
+    else:
+        chosen=sorted(trials,key=lambda t:(t["calibration"]["log_loss"],-t["calibration"]["accuracy"],t["C"]))[0]
     return chosen, trials
 
 
@@ -206,14 +209,14 @@ def main():
     tr=np.arange(0,300); ca=np.arange(300,400); ho=np.arange(400,500)
 
     # A. Fix goal-difference calibration using richer pre-match features.
-    bucket_choice,bucket_trials=select_c(Xb[tr],ybarr[tr],Xb[ca],ybarr[ca],BUCKETS)
+    bucket_choice,bucket_trials=select_c(Xb[tr],ybarr[tr],Xb[ca],ybarr[ca],BUCKETS,objective="macro_f1")
     bucket_model=fit_pipe(bucket_choice["C"])
     bucket_model.fit(Xb[:400],ybarr[:400])
     bucket_hold=ordered_probs(bucket_model,Xb[ho],BUCKETS)
     bucket_raw_hold=np.asarray(bucket_base[400:])
 
     # B. Direct three-class H/D/A classifier, hyperparameter selected only on calibration.
-    hda_choice,hda_trials=select_c(Xh[tr],yarr[tr],Xh[ca],yarr[ca],HDA)
+    hda_choice,hda_trials=select_c(Xh[tr],yarr[tr],Xh[ca],yarr[ca],HDA,objective="macro_f1")
     hda_model=fit_pipe(hda_choice["C"])
     hda_model.fit(Xh[:400],yarr[:400])
     direct_hold=ordered_probs(hda_model,Xh[ho],HDA)
@@ -255,6 +258,7 @@ def main():
         "lambda_policy":"Raw V4 lambdas only; no additional away-lambda downshift applied.",
         "goal_difference_calibrator":{
             "features":["base log bucket probabilities","home/away/total lambda","signed and absolute lambda gap","pre-match strength","0-0/1-1/2-2 cells","recent-5/10 form and draw rates"],
+            "selection_objective":"calibration macro-F1 first, then accuracy, then log loss; final holdout not used for selection",
             "candidate_C":bucket_trials,"selected_C":bucket_choice["C"],
             "holdout_raw":metric_block(list(ybarr[ho]),bucket_raw_hold,BUCKETS),
             "holdout_calibrated":metric_block(list(ybarr[ho]),bucket_hold,BUCKETS),
@@ -265,6 +269,7 @@ def main():
             "V4_raw_poisson":metric_block(list(yarr[ho]),base_hold,HDA),
             "V3_two_stage_draw":metric_block(list(yarr[ho]),v3_hold,HDA),
             "direct_three_class":metric_block(list(yarr[ho]),direct_hold,HDA),
+            "direct_classifier_selection_objective":"calibration macro-F1 first, then accuracy, then log loss; final holdout not used for selection",
             "direct_classifier_candidate_C":hda_trials,"direct_classifier_selected_C":hda_choice["C"],
             "V3_draw_model_selected_C":draw_choice["C"],"V3_draw_threshold_selected_on_calibration_only":best_threshold,
             "V3_draw_threshold_candidates":v3_threshold_candidates
