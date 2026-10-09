@@ -333,5 +333,223 @@
       }
     }
   },
+  "goal_difference_distribution": {
+    "train_300": {
+      "baseline": {
+        "0": {
+          "actual_count": 74,
+          "actual_rate": 0.24666666666666667,
+          "mean_predicted_probability": 0.22680215497200987,
+          "probability_minus_actual_rate": -0.019864511694656806
+        },
+        "1": {
+          "actual_count": 121,
+          "actual_rate": 0.4033333333333333,
+          "mean_predicted_probability": 0.35804430825900846,
+          "probability_minus_actual_rate": -0.04528902507432486
+        },
+        "2": {
+          "actual_count": 71,
+          "actual_rate": 0.23666666666666666,
+          "mean_predicted_probability": 0.23086274161931267,
+          "probability_minus_actual_rate": -0.005803925047353997
+        },
+        "3+": {
+          "actual_count": 34,
+          "actual_rate": 0.11333333333333333,
+          "mean_predicted_probability": 0.18429079514966862,
+          "probability_minus_actual_rate": 0.07095746181633529
+        }
+      },
+      "calibrated": {
+        "0": {
+          "actual_count": 74,
+          "actual_rate": 0.24666666666666667,
+          "mean_predicted_probability": 0.22982896438399428,
+          "probability_minus_actual_rate": -0.016837702282672395
+        },
+        "1": {
+          "actual_count": 121,
+          "actual_rate": 0.4033333333333333,
+          "mean_predicted_probability": 0.3883951124949846,
+          "probability_minus_actual_rate": -0.014938220838348726
+        },
+        "2": {
+          "actual_count": 71,
+          "actual_rate": 0.23666666666666666,
+          "mean_predicted_probability": 0.22451232147135097,
+          "probability_minus_actual_rate": -0.012154345195315691
+        },
+        "3+": {
+          "actual_count": 34,
+          "actual_rate": 0.11333333333333333,
+          "mean_predicted_probability": 0.15726360164966974,
+          "probability_minus_actual_rate": 0.04393026831633641
+        }
+      }
+    },
+    "calibration_100": {
+      "baseline": {
+        "0": {
+          "actual_count": 21,
+          "actual_rate": 0.21,
+          "mean_predicted_probability": 0.22727518307588995,
+          "probability_minus_actual_rate": 0.01727518307588996
+        },
+        "1": {
+          "actual_count": 40,
+          "actual_rate": 0.4,
+          "mean_predicted_probability": 0.35977665724221114,
+          "probability_minus_actual_rate": -0.04022334275778888
+        },
+        "2": {
+          "actual_count": 21,
+          "actual_rate": 0.21,
+          "mean_predicted_probability": 0.23179575237988645,
+          "probability_minus_actual_rate": 0.021795752379886457
+        },
+        "3+": {
+          "actual_count": 18,
+          "actual_rate": 0.18,
+          "mean_predicted_probability": 0.18115240730201257,
+          "probability_minus_actual_rate": 0.0011524073020125758
+        }
+      },
+      "calibrated": {
+        "0": {
+          "actual_count": 21,
+          "actual_rate": 0.21,
+          "mean_predicted_probability": 0.23032119457652522,
+          "probability_minus_actual_rate": 0.02032119457652523
+        },
+        "1": {
+          "actual_count": 40,
+          "actual_rate": 0.4,
+          "mean_predicted_probability": 0.3904602399412602,
+          "probability_minus_actual_rate": -0.009539760058739799
+        },
+        "2": {
+          "actual_count": 21,
+          "actual_rate": 0.21,
+          "mean_predicted_probability": 0.2253638438161879,
+          "probability_minus_actual_rate": 0.015363843816187911
+        },
+        "3+": {
+          "actual_count": 18,
+          "actual_rate": 0.18,
+          "mean_predicted_probability": 0.15385472166602684,
+          "probability_minus_actual_rate": -0.02614527833397315
+        }
+      }
+    },
+    "blind_holdout_100": {
+      "baseline": {
+        "0": {
+          "actual_count": 21,
+          "actual_rate": 0.21,
+          "mean_predicted_probability": 0.22785204434831408,
+          "probability_minus_actual_rate": 0.017852044348314083
+        },
+        "1": {
+          "actual_count": 43,
+          "actual_rate": 0.43,
+          "mean_predicted_probability": 0.35967418039711724,
+          "probability_minus_actual_rate": -0.07032581960288276
+        },
+        "2": {
+          "actual_count": 24,
+          "actual_rate": 0.24,
+          "mean_predicted_probability": 0.2310611248247663,
+          "probability_minus_actual_rate": -0.008938875175233701
+        },
+        "3+": {
+          "actual_count": 12,
+          "actual_rate": 0.12,
+          "mean_predicted_probability": 0.18141265042980262,
+          "probability_minus_actual_rate": 0.06141265042980262
+        }
+      },
+      "calibrated": {
+        "0": {
+          "actual_count": 21,
+          "actual_rate": 0.21,
+          "mean_predicted_probability": 0.2313894969618557,
+          "probability_minus_actual_rate": 0.021389496961855714
+        },
+        "1": {
+          "actual_count": 43,
+          "actual_rate": 0.43,
+          "mean_predicted_probability": 0.3905696140900754,
+          "probability_minus_actual_rate": -0.03943038590992459
+        },
+        "2": {
+          "actual_count": 24,
+          "actual_rate": 0.24,
+          "mean_predicted_probability": 0.22438558948553955,
+          "probability_minus_actual_rate": -0.015614410514460442
+        },
+        "3+": {
+          "actual_count": 12,
+          "actual_rate": 0.12,
+          "mean_predicted_probability": 0.15365529946252937,
+          "probability_minus_actual_rate": 0.033655299462529376
+        }
+      }
+    },
+    "all_500_descriptive_only": {
+      "baseline": {
+        "0": {
+          "actual_count": 116,
+          "actual_rate": 0.232,
+          "mean_predicted_probability": 0.22710673846804655,
+          "probability_minus_actual_rate": -0.004893261531953463
+        },
+        "1": {
+          "actual_count": 204,
+          "actual_rate": 0.408,
+          "mean_predicted_probability": 0.35871675248327056,
+          "probability_minus_actual_rate": -0.04928324751672941
+        },
+        "2": {
+          "actual_count": 116,
+          "actual_rate": 0.232,
+          "mean_predicted_probability": 0.23108902041251822,
+          "probability_minus_actual_rate": -0.0009109795874817916
+        },
+        "3+": {
+          "actual_count": 64,
+          "actual_rate": 0.128,
+          "mean_predicted_probability": 0.1830874886361641,
+          "probability_minus_actual_rate": 0.055087488636164084
+        }
+      },
+      "calibrated": {
+        "0": {
+          "actual_count": 116,
+          "actual_rate": 0.232,
+          "mean_predicted_probability": 0.23023951693807282,
+          "probability_minus_actual_rate": -0.0017604830619271927
+        },
+        "1": {
+          "actual_count": 204,
+          "actual_rate": 0.408,
+          "mean_predicted_probability": 0.3892430383032579,
+          "probability_minus_actual_rate": -0.01875696169674207
+        },
+        "2": {
+          "actual_count": 116,
+          "actual_rate": 0.232,
+          "mean_predicted_probability": 0.22465727954315606,
+          "probability_minus_actual_rate": -0.007342720456843949
+        },
+        "3+": {
+          "actual_count": 64,
+          "actual_rate": 0.128,
+          "mean_predicted_probability": 0.15586016521551313,
+          "probability_minus_actual_rate": 0.027860165215513127
+        }
+      }
+    }
+  },
   "acceptance": "No production promotion in this experiment. Compare blind holdout accuracy/Brier/LogLoss/score-NLL and inspect group stability; calibration parameters were not selected on calibration or holdout labels."
 }
