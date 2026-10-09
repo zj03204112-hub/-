@@ -1,0 +1,452 @@
+{
+  "report": "Football model database audit",
+  "generated_at_utc": "2026-10-09T18:20:54+00:00",
+  "database_path": "football_model_database.sqlite",
+  "database_file_exists": true,
+  "database_size_bytes": 63332352,
+  "audit_status": "COMPLETED",
+  "tables": [
+    {
+      "table": "advanced_team_features",
+      "row_count": 17096,
+      "columns": [
+        "match_id",
+        "team_side",
+        "player_impact",
+        "squad_xg90",
+        "squad_xa90",
+        "player_stability",
+        "fatigue_load",
+        "next_opponent_strength",
+        "rotation_risk",
+        "true_strength_proxy"
+      ]
+    },
+    {
+      "table": "collection_scope",
+      "row_count": 1,
+      "columns": [
+        "scope_id",
+        "start_date",
+        "end_date",
+        "exclusions"
+      ]
+    },
+    {
+      "table": "competitions",
+      "row_count": 7,
+      "columns": [
+        "competition_id",
+        "competition_code",
+        "competition_name",
+        "country"
+      ]
+    },
+    {
+      "table": "injuries",
+      "row_count": 0,
+      "columns": [
+        "injury_id",
+        "match_id",
+        "team_side",
+        "player",
+        "status",
+        "reason",
+        "expected_return",
+        "source_status",
+        "position",
+        "availability_prob",
+        "expected_start_prob",
+        "impact_attack",
+        "impact_defense",
+        "observed_at",
+        "data_cutoff",
+        "source_url"
+      ]
+    },
+    {
+      "table": "lineup_projection",
+      "row_count": 17096,
+      "columns": [
+        "match_id",
+        "team_side",
+        "expected_start_strength",
+        "attack_delta",
+        "defense_delta",
+        "uncertainty",
+        "player_count",
+        "data_cutoff",
+        "source_status"
+      ]
+    },
+    {
+      "table": "matches",
+      "row_count": 8740,
+      "columns": [
+        "match_id",
+        "competition_id",
+        "season_id",
+        "kickoff",
+        "home_team",
+        "away_team",
+        "status",
+        "source_status",
+        "primary_source_id"
+      ]
+    },
+    {
+      "table": "player_features",
+      "row_count": 0,
+      "columns": [
+        "match_id",
+        "team_side",
+        "player_id",
+        "player_name",
+        "start_prob",
+        "appearance_prob",
+        "expected_minutes",
+        "attack90",
+        "defense90",
+        "influence90",
+        "sample_minutes",
+        "data_cutoff",
+        "source_status"
+      ]
+    },
+    {
+      "table": "player_match_stats",
+      "row_count": 29754,
+      "columns": [
+        "match_id",
+        "team_side",
+        "player_id",
+        "player_name",
+        "position",
+        "starter",
+        "minutes_played",
+        "rating",
+        "goals",
+        "assists",
+        "xg",
+        "xa",
+        "shots",
+        "key_passes",
+        "tackles",
+        "interceptions",
+        "clearances",
+        "data_source",
+        "observed_at"
+      ]
+    },
+    {
+      "table": "prediction_snapshot",
+      "row_count": 9989,
+      "columns": [
+        "prediction_id",
+        "match_id",
+        "snapshot_time",
+        "data_cutoff",
+        "handicap",
+        "handicap_prediction",
+        "score_1",
+        "score_2",
+        "half_full",
+        "model_confidence",
+        "notes"
+      ]
+    },
+    {
+      "table": "provider_event_map",
+      "row_count": 705,
+      "columns": [
+        "match_id",
+        "provider",
+        "event_id",
+        "observed_at"
+      ]
+    },
+    {
+      "table": "results",
+      "row_count": 8740,
+      "columns": [
+        "match_id",
+        "ht_home",
+        "ht_away",
+        "ft_home",
+        "ft_away",
+        "result_1x2",
+        "completed_at",
+        "source_status"
+      ]
+    },
+    {
+      "table": "review",
+      "row_count": 6,
+      "columns": [
+        "review_id",
+        "match_id",
+        "prediction_id",
+        "actual_result",
+        "handicap_actual",
+        "hit_status",
+        "error_type",
+        "error_reason",
+        "calibration_change",
+        "reviewed_at"
+      ]
+    },
+    {
+      "table": "schedule_intent",
+      "row_count": 16780,
+      "columns": [
+        "match_id",
+        "team_side",
+        "next_opponent",
+        "next_match_time",
+        "rest_days",
+        "next_match_importance",
+        "rotation_risk",
+        "motivation_adjustment"
+      ]
+    },
+    {
+      "table": "schema_migrations",
+      "row_count": 1,
+      "columns": [
+        "version",
+        "applied_at"
+      ]
+    },
+    {
+      "table": "seasons",
+      "row_count": 34,
+      "columns": [
+        "season_id",
+        "competition_id",
+        "season_label",
+        "start_date",
+        "end_date"
+      ]
+    },
+    {
+      "table": "source_registry",
+      "row_count": 5,
+      "columns": [
+        "source_id",
+        "source_name",
+        "source_type",
+        "authority_level",
+        "url",
+        "notes"
+      ]
+    },
+    {
+      "table": "sporttery_market",
+      "row_count": 81928,
+      "columns": [
+        "market_id",
+        "match_id",
+        "pool_code",
+        "handicap",
+        "home_value",
+        "draw_value",
+        "away_value",
+        "captured_at",
+        "source_status"
+      ]
+    },
+    {
+      "table": "team_features",
+      "row_count": 17096,
+      "columns": [
+        "match_id",
+        "team_side",
+        "last3",
+        "last5",
+        "last10",
+        "goals_for",
+        "goals_against",
+        "xg_for",
+        "xg_against",
+        "opponent_strength"
+      ]
+    }
+  ],
+  "league_coverage": [
+    {
+      "league": "La Liga",
+      "n": 1847,
+      "first_match": "2022-01-02T13:00",
+      "last_match": "2026-09-20T20:00"
+    },
+    {
+      "league": "English Premier League",
+      "n": 1780,
+      "first_match": "2022-01-01T12:30",
+      "last_match": "2026-09-20T16:30"
+    },
+    {
+      "league": "Serie A",
+      "n": 1768,
+      "first_match": "2022-01-06T11:30",
+      "last_match": "2026-09-20T19:45"
+    },
+    {
+      "league": "Ligue 1",
+      "n": 1544,
+      "first_match": "2022-01-07T20:00",
+      "last_match": "2026-09-20T19:45"
+    },
+    {
+      "league": "Bundesliga",
+      "n": 1468,
+      "first_match": "2022-01-07T19:30",
+      "last_match": "2026-09-20T18:30"
+    },
+    {
+      "league": "K League 1",
+      "n": 223,
+      "first_match": "2026-04-25",
+      "last_match": "2026-09-26"
+    },
+    {
+      "league": "J1 League",
+      "n": 110,
+      "first_match": "2026-02-06",
+      "last_match": "2026-09-20T17:03"
+    }
+  ],
+  "match_coverage": {
+    "total_matches": 8740,
+    "status_counts": {
+      "finished": 8740
+    },
+    "earliest_kickoff": "2022-01-01T12:30",
+    "latest_kickoff": "2026-09-26",
+    "distinct_match_ids": 8740,
+    "duplicate_match_id_rows": 0,
+    "null_match_id_rows": 0,
+    "null_home_team_rows": 0,
+    "null_away_team_rows": 0,
+    "result_rows": 8740,
+    "matches_with_result": 8740,
+    "rows_with_final_score": 8740
+  },
+  "module_coverage": [
+    {
+      "table": "results",
+      "exists": true,
+      "rows": 8740,
+      "distinct_match_ids": 8740,
+      "coverage_pct": 100.0
+    },
+    {
+      "table": "sporttery_market",
+      "exists": true,
+      "rows": 81928,
+      "distinct_match_ids": 8263,
+      "coverage_pct": 94.54
+    },
+    {
+      "table": "team_features",
+      "exists": true,
+      "rows": 17096,
+      "distinct_match_ids": 8548,
+      "coverage_pct": 97.8
+    },
+    {
+      "table": "schedule_intent",
+      "exists": true,
+      "rows": 16780,
+      "distinct_match_ids": 8406,
+      "coverage_pct": 96.18
+    },
+    {
+      "table": "injuries",
+      "exists": true,
+      "rows": 0,
+      "distinct_match_ids": 0,
+      "coverage_pct": 0.0
+    },
+    {
+      "table": "prediction_snapshot",
+      "exists": true,
+      "rows": 9989,
+      "distinct_match_ids": 8548,
+      "coverage_pct": 97.8
+    },
+    {
+      "table": "lineup_projection",
+      "exists": true,
+      "rows": 17096,
+      "distinct_match_ids": 8548,
+      "coverage_pct": 97.8
+    },
+    {
+      "table": "provider_event_map",
+      "exists": true,
+      "rows": 705,
+      "distinct_match_ids": 705,
+      "coverage_pct": 8.07
+    },
+    {
+      "table": "player_match_stats",
+      "exists": true,
+      "rows": 29754,
+      "distinct_match_ids": 700,
+      "coverage_pct": 8.01
+    },
+    {
+      "table": "player_features",
+      "exists": true,
+      "rows": 0,
+      "distinct_match_ids": 0,
+      "coverage_pct": 0.0
+    },
+    {
+      "table": "review",
+      "exists": true,
+      "rows": 6,
+      "distinct_match_ids": 6,
+      "coverage_pct": 0.07
+    },
+    {
+      "table": "advanced_team_features",
+      "exists": true,
+      "rows": 17096,
+      "distinct_match_ids": 8548,
+      "coverage_pct": 97.8
+    }
+  ],
+  "player_data_coverage": {
+    "rows": 29754,
+    "distinct_matches": 700,
+    "distinct_players": 4980,
+    "xg_non_null_rows": 29754,
+    "xg_positive_rows": 0,
+    "xa_non_null_rows": 29754,
+    "xa_positive_rows": 0,
+    "rating_non_null_rows": 20077,
+    "rating_positive_rows": 20077,
+    "minutes_played_non_null_rows": 29754,
+    "starter_non_null_rows": 29754
+  },
+  "source_coverage": [
+    {
+      "source": "FotMob public matchDetails",
+      "rows": 29754,
+      "distinct_matches": 700
+    }
+  ],
+  "integrity_checks": {},
+  "mapping_files": [
+    {
+      "path": "model_validation/500_match_to_db_match_id_mapping.csv",
+      "size_bytes": 148113
+    }
+  ],
+  "limitations": [],
+  "missing_expected_tables": [
+    "teams"
+  ]
+}
