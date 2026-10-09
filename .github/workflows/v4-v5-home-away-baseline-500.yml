@@ -1,0 +1,29 @@
+name: V4 V5 home-away baseline experiment (frozen 500)
+on:
+  push:
+    paths:
+      - "data_pipeline/v4_v5_home_away_baseline_experiment_500.py"
+      - ".github/workflows/v4-v5-home-away-baseline-500.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v4-v5-home-away-baseline-500
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python data_pipeline/v4_v5_home_away_baseline_experiment_500.py
+      - run: cat model_validation/v4_v5_home_away_baseline_experiment_500.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v4-v5-home-away-baseline-500
+          path: |
+            model_validation/v4_v5_home_away_baseline_experiment_500.json
+            model_validation/v4_v5_home_away_baseline_experiment_500.csv
