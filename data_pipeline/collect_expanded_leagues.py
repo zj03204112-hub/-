@@ -160,11 +160,19 @@ def fetch_scoreboard(slug: str, start: date, end: date):
     })
     url = f"{API_BASE}/{slug}/scoreboard?{query}"
     req = urllib.request.Request(url, headers={"User-Agent": "football-model-independent-data-pipeline/1.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=45) as response:
-            payload = json.loads(response.read().decode("utf-8"))
-    except Exception as exc:
-        raise RuntimeError(f"source request failed {url}: {exc}") from exc
+    last_error = None
+    payload = None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=45) as response:
+                payload = json.loads(response.read().decode("utf-8"))
+            break
+        except Exception as exc:
+            last_error = exc
+            if attempt < 2:
+                time.sleep(1.5 * (attempt + 1))
+    if payload is None:
+        raise RuntimeError(f"source request failed after 3 attempts {url}: {last_error}") from last_error
     events = payload.get("events") or []
     # ESPN may return the same event in adjacent month/range responses; caller deduplicates by ID.
     return events, url
