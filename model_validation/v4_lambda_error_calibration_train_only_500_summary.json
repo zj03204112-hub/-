@@ -1,0 +1,337 @@
+{
+  "experiment": "V4 lambda error diagnosis; calibration fitted only on first 300 chronological matches",
+  "status": "EXPERIMENT_ONLY",
+  "sample_n": 500,
+  "split": {
+    "train": 300,
+    "calibration": 100,
+    "blind_holdout": 100,
+    "train_end": "2026-05-16T14:30",
+    "calibration_start": "2026-05-17",
+    "calibration_end": "2026-08-30",
+    "holdout_start": "2026-08-30T14:00"
+  },
+  "raw_train_only_fit_selected": {
+    "home_lambda_scale": 0.925,
+    "away_lambda_scale": 0.8,
+    "dixon_coles_rho": 0.025,
+    "train_score_nll": 2.8714908603567437,
+    "candidate_count": 1183
+  },
+  "baseline": {
+    "train": {
+      "n": 300,
+      "accuracy": 0.47,
+      "correct": 141,
+      "predicted_counts": {
+        "H": 176,
+        "D": 0,
+        "A": 124
+      },
+      "actual_counts": {
+        "H": 144,
+        "D": 74,
+        "A": 82
+      },
+      "draw_tp": 0,
+      "draw_fp": 0,
+      "draw_fn": 74,
+      "draw_precision": 0.0,
+      "draw_recall": 0.0,
+      "brier": 0.6249143283310721,
+      "log_loss": 1.0416620068738989,
+      "score_nll": 2.9532653425645385
+    },
+    "calibration": {
+      "n": 100,
+      "accuracy": 0.53,
+      "correct": 53,
+      "predicted_counts": {
+        "H": 55,
+        "D": 0,
+        "A": 45
+      },
+      "actual_counts": {
+        "H": 49,
+        "D": 21,
+        "A": 30
+      },
+      "draw_tp": 0,
+      "draw_fp": 0,
+      "draw_fn": 21,
+      "draw_precision": 0.0,
+      "draw_recall": 0.0,
+      "brier": 0.6089193550685796,
+      "log_loss": 1.0181882777310898,
+      "score_nll": 3.0374915147748323
+    },
+    "blind_holdout": {
+      "n": 100,
+      "accuracy": 0.46,
+      "correct": 46,
+      "predicted_counts": {
+        "H": 55,
+        "D": 0,
+        "A": 45
+      },
+      "actual_counts": {
+        "H": 48,
+        "D": 21,
+        "A": 31
+      },
+      "draw_tp": 0,
+      "draw_fp": 0,
+      "draw_fn": 21,
+      "draw_precision": 0.0,
+      "draw_recall": 0.0,
+      "brier": 0.6222185955574708,
+      "log_loss": 1.0340494303191734,
+      "score_nll": 3.0508364970289734
+    }
+  },
+  "calibrated": {
+    "train": {
+      "n": 300,
+      "accuracy": 0.47333333333333333,
+      "correct": 142,
+      "predicted_counts": {
+        "H": 228,
+        "D": 0,
+        "A": 72
+      },
+      "actual_counts": {
+        "H": 144,
+        "D": 74,
+        "A": 82
+      },
+      "draw_tp": 0,
+      "draw_fp": 0,
+      "draw_fn": 74,
+      "draw_precision": 0.0,
+      "draw_recall": 0.0,
+      "brier": 0.6121050344020665,
+      "log_loss": 1.0246866526209157,
+      "score_nll": 2.8714908603567437
+    },
+    "calibration": {
+      "n": 100,
+      "accuracy": 0.57,
+      "correct": 57,
+      "predicted_counts": {
+        "H": 77,
+        "D": 0,
+        "A": 23
+      },
+      "actual_counts": {
+        "H": 49,
+        "D": 21,
+        "A": 30
+      },
+      "draw_tp": 0,
+      "draw_fp": 0,
+      "draw_fn": 21,
+      "draw_precision": 0.0,
+      "draw_recall": 0.0,
+      "brier": 0.5979384271281919,
+      "log_loss": 1.0041412396857754,
+      "score_nll": 2.950074094082657
+    },
+    "blind_holdout": {
+      "n": 100,
+      "accuracy": 0.5,
+      "correct": 50,
+      "predicted_counts": {
+        "H": 74,
+        "D": 0,
+        "A": 26
+      },
+      "actual_counts": {
+        "H": 48,
+        "D": 21,
+        "A": 31
+      },
+      "draw_tp": 0,
+      "draw_fp": 0,
+      "draw_fn": 21,
+      "draw_precision": 0.0,
+      "draw_recall": 0.0,
+      "brier": 0.6119855538245306,
+      "log_loss": 1.0209232791145602,
+      "score_nll": 2.9739442329468533
+    }
+  },
+  "stratified_lambda_error_diagnostics": {
+    "league": {
+      "德甲": {
+        "n": 64,
+        "mean_actual_home_goals": 2.09375,
+        "mean_actual_away_goals": 1.4375,
+        "mean_lambda_home_raw": 1.7956365750041792,
+        "mean_lambda_away_raw": 1.6765007045094753,
+        "mean_home_lambda_error_raw": -0.29811342499582116,
+        "mean_away_lambda_error_raw": 0.23900070450947514,
+        "mean_home_lambda_error_calibrated": -0.4327861681211345,
+        "mean_away_lambda_error_calibrated": -0.09629943639241975
+      },
+      "意甲": {
+        "n": 30,
+        "mean_actual_home_goals": 1.2666666666666666,
+        "mean_actual_away_goals": 1.1666666666666667,
+        "mean_lambda_home_raw": 1.7381579673432763,
+        "mean_lambda_away_raw": 1.7274768969085943,
+        "mean_home_lambda_error_raw": 0.47149130067660977,
+        "mean_away_lambda_error_raw": 0.5608102302419271,
+        "mean_home_lambda_error_calibrated": 0.3411294531258642,
+        "mean_away_lambda_error_calibrated": 0.21531485086020855
+      },
+      "日职J1": {
+        "n": 80,
+        "mean_actual_home_goals": 1.4125,
+        "mean_actual_away_goals": 1.275,
+        "mean_lambda_home_raw": 1.6866088365408012,
+        "mean_lambda_away_raw": 1.692064566683424,
+        "mean_home_lambda_error_raw": 0.274108836540801,
+        "mean_away_lambda_error_raw": 0.4170645666834233,
+        "mean_home_lambda_error_calibrated": 0.14761317380024094,
+        "mean_away_lambda_error_calibrated": 0.07865165334673878
+      },
+      "法甲": {
+        "n": 24,
+        "mean_actual_home_goals": 1.7083333333333333,
+        "mean_actual_away_goals": 1.2916666666666667,
+        "mean_lambda_home_raw": 1.8475135004396133,
+        "mean_lambda_away_raw": 1.772461997615945,
+        "mean_home_lambda_error_raw": 0.13918016710627976,
+        "mean_away_lambda_error_raw": 0.4807953309492781,
+        "mean_home_lambda_error_calibrated": 0.0006166545733088391,
+        "mean_away_lambda_error_calibrated": 0.12630293142608923
+      },
+      "英超": {
+        "n": 75,
+        "mean_actual_home_goals": 1.7466666666666666,
+        "mean_actual_away_goals": 1.1733333333333333,
+        "mean_lambda_home_raw": 1.8023854382548457,
+        "mean_lambda_away_raw": 1.7483348698553323,
+        "mean_home_lambda_error_raw": 0.05571877158817864,
+        "mean_away_lambda_error_raw": 0.5750015365219988,
+        "mean_home_lambda_error_calibrated": -0.07946013628093472,
+        "mean_away_lambda_error_calibrated": 0.22533456255093265
+      },
+      "西甲": {
+        "n": 209,
+        "mean_actual_home_goals": 1.6555023923444976,
+        "mean_actual_away_goals": 1.138755980861244,
+        "mean_lambda_home_raw": 1.8310459514912671,
+        "mean_lambda_away_raw": 1.757060395750484,
+        "mean_home_lambda_error_raw": 0.17554355914676995,
+        "mean_away_lambda_error_raw": 0.6183044148892397,
+        "mean_home_lambda_error_calibrated": 0.03821511278492497,
+        "mean_away_lambda_error_calibrated": 0.26689233573914284
+      },
+      "韩职": {
+        "n": 18,
+        "mean_actual_home_goals": 1.6111111111111112,
+        "mean_actual_away_goals": 0.9444444444444444,
+        "mean_lambda_home_raw": 1.6347401775323454,
+        "mean_lambda_away_raw": 1.404888682261272,
+        "mean_home_lambda_error_raw": 0.023629066421234215,
+        "mean_away_lambda_error_raw": 0.4604442378168274,
+        "mean_home_lambda_error_calibrated": -0.0989764468936916,
+        "mean_away_lambda_error_calibrated": 0.17946650136457304
+      }
+    },
+    "strength_gap_bucket": {
+      ".25-.50": {
+        "n": 84,
+        "mean_actual_home_goals": 1.7619047619047619,
+        "mean_actual_away_goals": 1.1666666666666667,
+        "mean_lambda_home_raw": 1.7747526864178766,
+        "mean_lambda_away_raw": 1.6716123047106208,
+        "mean_home_lambda_error_raw": 0.012847924513115509,
+        "mean_away_lambda_error_raw": 0.504945638043954,
+        "mean_home_lambda_error_calibrated": -0.12025852696822525,
+        "mean_away_lambda_error_calibrated": 0.17062317710182992
+      },
+      ".50-.75": {
+        "n": 98,
+        "mean_actual_home_goals": 1.6122448979591837,
+        "mean_actual_away_goals": 1.2857142857142858,
+        "mean_lambda_home_raw": 1.8138095330182933,
+        "mean_lambda_away_raw": 1.7314263085101702,
+        "mean_home_lambda_error_raw": 0.20156463505910951,
+        "mean_away_lambda_error_raw": 0.4457120227958852,
+        "mean_home_lambda_error_calibrated": 0.06552892008273765,
+        "mean_away_lambda_error_calibrated": 0.09942676109385098
+      },
+      ".75+": {
+        "n": 188,
+        "mean_actual_home_goals": 1.7180851063829787,
+        "mean_actual_away_goals": 1.1648936170212767,
+        "mean_lambda_home_raw": 1.7941075863878826,
+        "mean_lambda_away_raw": 1.7808513900837806,
+        "mean_home_lambda_error_raw": 0.07602248000490378,
+        "mean_away_lambda_error_raw": 0.6159577730625038,
+        "mean_home_lambda_error_calibrated": -0.05853558897418727,
+        "mean_away_lambda_error_calibrated": 0.25978749504574766
+      },
+      "0-.25": {
+        "n": 130,
+        "mean_actual_home_goals": 1.5615384615384615,
+        "mean_actual_away_goals": 1.2307692307692308,
+        "mean_lambda_home_raw": 1.7654043041918057,
+        "mean_lambda_away_raw": 1.6597543564583477,
+        "mean_home_lambda_error_raw": 0.2038658426533439,
+        "mean_away_lambda_error_raw": 0.42898512568911606,
+        "mean_home_lambda_error_calibrated": 0.07146051983895857,
+        "mean_away_lambda_error_calibrated": 0.09703425439744698
+      }
+    },
+    "actual_goal_diff_bucket": {
+      "0": {
+        "n": 116,
+        "mean_actual_home_goals": 1.1982758620689655,
+        "mean_actual_away_goals": 1.1982758620689655,
+        "mean_lambda_home_raw": 1.73884781281234,
+        "mean_lambda_away_raw": 1.7580512525977572,
+        "mean_home_lambda_error_raw": 0.540571950743375,
+        "mean_away_lambda_error_raw": 0.5597753905287915,
+        "mean_home_lambda_error_calibrated": 0.41015836478244966,
+        "mean_away_lambda_error_calibrated": 0.20816514000924016
+      },
+      "1": {
+        "n": 204,
+        "mean_actual_home_goals": 1.3529411764705883,
+        "mean_actual_away_goals": 1.2254901960784315,
+        "mean_lambda_home_raw": 1.764770746199711,
+        "mean_lambda_away_raw": 1.730958106792398,
+        "mean_home_lambda_error_raw": 0.4118295697291231,
+        "mean_away_lambda_error_raw": 0.5054679107139675,
+        "mean_home_lambda_error_calibrated": 0.2794717637641446,
+        "mean_away_lambda_error_calibrated": 0.15927628935548785
+      },
+      "2": {
+        "n": 116,
+        "mean_actual_home_goals": 1.8017241379310345,
+        "mean_actual_away_goals": 1.3189655172413792,
+        "mean_lambda_home_raw": 1.7845612589649484,
+        "mean_lambda_away_raw": 1.7124587738933408,
+        "mean_home_lambda_error_raw": -0.01716287896608673,
+        "mean_away_lambda_error_raw": 0.39349325665196194,
+        "mean_home_lambda_error_calibrated": -0.15100497338845778,
+        "mean_away_lambda_error_calibrated": 0.05100150187329378
+      },
+      "3+": {
+        "n": 64,
+        "mean_actual_home_goals": 3.25,
+        "mean_actual_away_goals": 0.953125,
+        "mean_lambda_home_raw": 1.9515415801538203,
+        "mean_lambda_away_raw": 1.640136291350123,
+        "mean_home_lambda_error_raw": -1.2984584198461797,
+        "mean_away_lambda_error_raw": 0.687011291350123,
+        "mean_home_lambda_error_calibrated": -1.4448240383577156,
+        "mean_away_lambda_error_calibrated": 0.3589840330800987
+      }
+    }
+  },
+  "acceptance": "No production promotion in this experiment. Compare blind holdout accuracy/Brier/LogLoss/score-NLL and inspect group stability; calibration parameters were not selected on calibration or holdout labels."
+}
