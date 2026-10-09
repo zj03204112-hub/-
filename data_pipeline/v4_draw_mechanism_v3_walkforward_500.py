@@ -129,16 +129,17 @@ def main():
     train, cal, hold = rows[:300], rows[300:400], rows[400:]
     assert dt(train[-1][1]) <= dt(cal[0][1]) <= dt(cal[-1][1]) <= dt(hold[0][1]), "Chronology split invalid"
 
-    def estimate_away_bias(rs):
-        err = []
-        for r in rs:
-            _, la = cm.model_lambdas(con, "v4", r)
-            err.append(la - r[5])
-        return sum(err) / len(err) if err else 0.0
-
-    bias_train = estimate_away_bias(train)
-    train_data = [features(con, r, bias_train) for r in train]
-    cal_data = [features(con, r, bias_train) for r in cal]
+    # Estimate the away-lambda bias only from matches strictly before the earliest frozen sample.
+    # This avoids using a target match's own result when constructing its features.
+    historic = sorted([r for r in db.values() if dt(r[1]) < dt(rows[0][1])], key=lambda r: (dt(r[1]), r[0]))[-4000:]
+    assert len(historic) >= 200, f"Insufficient pre-sample historical matches for bias calibration: {len(historic)}"
+    historical_errors = []
+    for r in historic:
+        _, la = cm.model_lambdas(con, "v4", r)
+        historical_errors.append(la - r[5])
+    historical_away_bias = sum(historical_errors) / len(historical_errors)
+    train_data = [features(con, r, historical_away_bias) for r in train]
+    cal_data = [features(con, r, historical_away_bias) for r in cal]
     means, stds = fit_scaler([z[0] for z in train_data])
     xtrain = [transform(z[0], means, stds) for z in train_data]
     ytrain = [1 if actual(r) == "D" else 0 for r in train]
@@ -158,9 +159,8 @@ def main():
     threshold = best[4]
 
     # Refit on the first 400 chronological rows; do not touch the final 100 labels for selection.
-    bias_full = estimate_away_bias(rows[:400])
-    fit_data = [features(con, r, bias_full) for r in rows[:400]]
-    hold_data = [features(con, r, bias_full) for r in hold]
+    fit_data = [features(con, r, historical_away_bias) for r in rows[:400]]
+    hold_data = [features(con, r, historical_away_bias) for r in hold]
     means2, stds2 = fit_scaler([z[0] for z in fit_data])
     xfit = [transform(z[0], means2, stds2) for z in fit_data]
     w2 = fit_logistic(xfit, [1 if actual(r) == "D" else 0 for r in rows[:400]])
@@ -191,7 +191,7 @@ def main():
                              "calibration_end": cal[-1][1], "holdout_start": hold[0][1]},
         "features": ["lambda total", "absolute lambda gap", "minimum/maximum lambda", "Poisson-Dixon-Coles draw probability",
                      "0-0/1-1/2-2 score cells", "recent-5/10 draw rates", "recent goal rates", "H/A probability log ratio"],
-        "selected_draw_threshold_on_calibration_only": threshold,
+        "historical_away_lambda_bias_pre_sample_only": historical_away_bias,\n        "selected_draw_threshold_on_calibration_only": threshold,
         "calibration_metrics": best[5],
         "baseline_holdout": {**base, **brier_logloss(baseline_probs, actual_hold)},
         "v3_holdout": {**new, **brier_logloss(v3_probs, actual_hold)},
