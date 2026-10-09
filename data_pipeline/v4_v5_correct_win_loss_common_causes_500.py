@@ -186,7 +186,8 @@ def main():
       "classes":classes,"actual_outcome_strata":actual_strata,
       "correct_vs_missed_home_wins":home_comparison,"correct_vs_missed_away_wins":away_comparison,
       "league_stats":league_stats,
-      "lambda_gap_bands":summarize(rows,"probability_margin_band"),
+      "probability_margin_bands":summarize(rows,"probability_margin_band"),
+      "lambda_gap_bands":{label:{"n":sum(1 for r in rows if fn(r["lambda_gap"])),"accuracy":mean([r["correct"] for r in rows if fn(r["lambda_gap"])]),"draws":sum(1 for r in rows if fn(r["lambda_gap"]) and r["actual_90"]=="D")} for label,fn in [("home_lambda_ahead_gt_0_35",lambda v:v>0.35),("home_lambda_ahead_0_10_to_0_35",lambda v:0.10<v<=0.35),("near_equal_abs_le_0_10",lambda v:abs(v)<=0.10),("away_lambda_ahead_0_10_to_0_35",lambda v:-0.35<=v< -0.10),("away_lambda_ahead_gt_0_35",lambda v:v< -0.35)]},
       "interpretation_guardrail":"Descriptive correlations are not causal proof. Lineup/schedule deltas may be missing; null means unavailable, not neutral in reality. No feature is added to production by this audit."}
     OUT_JSON.write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding="utf-8")
     print(json.dumps(summary,ensure_ascii=False,indent=2))
