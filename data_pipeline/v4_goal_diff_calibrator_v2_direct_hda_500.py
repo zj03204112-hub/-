@@ -94,11 +94,11 @@ def metric_block(y, probs, labels):
         "n": int(len(y)), "accuracy": float(np.mean(np.asarray(y)==np.asarray(pred))),
         "macro_f1": float(np.mean([v["f1"] for v in per.values()])),
         "brier": float(np.mean(np.sum((arr-onehot)**2, axis=1))),
-        "log_loss": float(log_loss(y, arr, labels=labels)),
+        "log_loss": float(-np.mean([math.log(max(EPS, arr[i, idx[v]])) for i, v in enumerate(y)])),
         "actual_counts": {c:int(sum(v==c for v in y)) for c in labels},
         "predicted_counts": {c:int(pred.count(c)) for c in labels},
         "per_class": per,
-        "confusion_matrix_labels_"+"_".join(labels): confusion_matrix(y,pred,labels=labels).tolist(),
+        "confusion_matrix_labels_"+"_".join(str(v) for v in labels): confusion_matrix(y,pred,labels=labels).tolist(),
     }
 
 
