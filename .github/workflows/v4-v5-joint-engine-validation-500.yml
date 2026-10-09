@@ -5,6 +5,7 @@ on:
       - "data_pipeline/v4_v5_joint_engine_validation_500.py"
       - "data_pipeline/v4_v5_result_calibration_experiment.py"
       - "data_pipeline/v4_v5_correct_win_loss_common_causes_500.py"
+      - "data_pipeline/v4_v5_conditional_draw_probability_500.py"
       - ".github/workflows/v4-v5-joint-engine-validation-500.yml"
       - "model_validation/500_match_to_db_match_id_mapping.csv"
       - "football_model_database.sqlite"
@@ -14,6 +15,7 @@ on:
       - "data_pipeline/v4_v5_joint_engine_validation_500.py"
       - "data_pipeline/v4_v5_result_calibration_experiment.py"
       - "data_pipeline/v4_v5_correct_win_loss_common_causes_500.py"
+      - "data_pipeline/v4_v5_conditional_draw_probability_500.py"
       - ".github/workflows/v4-v5-joint-engine-validation-500.yml"
       - "model_validation/500_match_to_db_match_id_mapping.csv"
       - "football_model_database.sqlite"
@@ -39,10 +41,14 @@ jobs:
         run: python data_pipeline/v4_v5_result_calibration_experiment.py
       - name: Run correct win/loss and missed-draw diagnosis
         run: python data_pipeline/v4_v5_correct_win_loss_common_causes_500.py
+      - name: Run isolated conditional draw-probability experiment
+        run: python data_pipeline/v4_v5_conditional_draw_probability_500.py
       - name: Print calibration summary
         run: cat model_validation/v4_v5_result_calibration_experiment.json
       - name: Print correct win/loss diagnosis
         run: cat model_validation/v4_v5_correct_win_loss_common_causes_500.json
+      - name: Print conditional draw-probability experiment
+        run: cat model_validation/v4_v5_conditional_draw_probability_500.json
       - name: Upload reports
         uses: actions/upload-artifact@v4
         with:
@@ -54,3 +60,5 @@ jobs:
             model_validation/v4_v5_result_calibration_experiment.json
             model_validation/v4_v5_correct_win_loss_common_causes_500.csv
             model_validation/v4_v5_correct_win_loss_common_causes_500.json
+            model_validation/v4_v5_conditional_draw_probability_500.csv
+            model_validation/v4_v5_conditional_draw_probability_500.json
