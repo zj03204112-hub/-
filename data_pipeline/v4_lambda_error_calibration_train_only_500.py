@@ -100,14 +100,17 @@ def main():
 
     # Build stratified raw-forecast lambda diagnostics. Lambda error = predicted - actual.
     detail = []
+    con = base.sqlite3.connect(str(ROOT / "football_model_database.sqlite"))
+    train_ids = {z["match"][0] for z in train}
+    cal_ids = {z["match"][0] for z in cal}
     for x in rows:
         m = x["match"]; h, a = int(m[4]), int(m[5])
         lh, la = float(x["v4"][0]), float(x["v4"][1])
         p0 = probs(matrix(lh, la))
         pc = probs(matrix(lh*sh, la*sa, rho))
-        strength_h = cm.strength(base.sqlite3.connect(str(ROOT / "football_model_database.sqlite")), m[2],
+        strength_h = cm.strength(con, m[2],
                                  (cm.datetime.fromisoformat(m[1][:19])-cm.timedelta(hours=12)).isoformat(timespec="seconds"))
-        strength_a = cm.strength(base.sqlite3.connect(str(ROOT / "football_model_database.sqlite")), m[3],
+        strength_a = cm.strength(con, m[3],
                                  (cm.datetime.fromisoformat(m[1][:19])-cm.timedelta(hours=12)).isoformat(timespec="seconds"))
         mapping = x["mapping"]
         detail.append({
@@ -123,10 +126,10 @@ def main():
             "baseline_p_draw":p0["D"], "baseline_p_away":p0["A"],
             "calibrated_pred": max("HDA", key=lambda k:pc[k]), "calibrated_p_home":pc["H"],
             "calibrated_p_draw":pc["D"], "calibrated_p_away":pc["A"],
-            "split": "train" if m[0] in {z["match"][0] for z in train} else "calibration" if m[0] in {z["match"][0] for z in cal} else "blind_holdout"
+            "split": "train" if m[0] in train_ids else "calibration" if m[0] in cal_ids else "blind_holdout"
         })
-    # Use one long-lived DB connection for strength calculations in a follow-up optimized run;
-    # this script's outputs are still deterministic. Group error summaries.
+    con.close()
+    # Group error summaries.
     groups = {}
     for key in ("league", "strength_gap_bucket", "actual_goal_diff_bucket"):
         groups[key] = {}
