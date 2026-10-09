@@ -7,6 +7,13 @@ on:
       - "model_validation/500_match_to_db_match_id_mapping.csv"
       - "football_model_database.sqlite"
       - "data_pipeline/compare_models.py"
+  pull_request:
+    paths:
+      - "data_pipeline/v4_v5_joint_engine_validation_500.py"
+      - ".github/workflows/v4-v5-joint-engine-validation-500.yml"
+      - "model_validation/500_match_to_db_match_id_mapping.csv"
+      - "football_model_database.sqlite"
+      - "data_pipeline/compare_models.py"
   workflow_dispatch:
 permissions:
   contents: write
