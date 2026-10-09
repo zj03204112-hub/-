@@ -5,6 +5,8 @@ on:
     paths:
       - "data_pipeline/collect_expanded_leagues.py"
       - ".github/workflows/expanded-five-league-ingestion.yml"
+  pull_request:
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 permissions:
@@ -76,7 +78,7 @@ jobs:
           PY
 
       - name: Persist complete isolated dataset to feature branch only
-        if: success() && github.ref != 'refs/heads/main'
+        if: success() && github.event_name == 'push' && github.ref != 'refs/heads/main'
         run: |
           git config user.name "football-model-bot"
           git config user.email "actions@users.noreply.github.com"
