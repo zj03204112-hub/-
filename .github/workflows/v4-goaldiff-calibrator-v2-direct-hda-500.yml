@@ -1,0 +1,64 @@
+name: V4 goal-difference calibrator V2 and direct HDA comparison
+
+on:
+  push:
+    branches: [experiment/v4-goaldiff-calibrator-v2-direct-hda-20261010]
+    paths:
+      - "data_pipeline/v4_goal_diff_calibrator_v2_direct_hda_500.py"
+      - "data_pipeline/compare_models.py"
+      - "model_validation/500_match_to_db_match_id_mapping.csv"
+      - "football_model_database.sqlite"
+      - ".github/workflows/v4-goaldiff-calibrator-v2-direct-hda-500.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 31
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy scipy scikit-learn
+      - name: Run same-sample calibration and direct classifier comparison
+        run: python data_pipeline/v4_goal_diff_calibrator_v2_direct_hda_500.py
+      - name: Print key metrics
+        run: |
+          python - <<'PY'
+          import json
+          p='model_validation/v4_goal_diff_calibrator_v2_direct_hda_500_summary.json'
+          d=json.load(open(p,encoding='utf-8'))
+          print(json.dumps({
+            'status':d['status'],
+            'sample_gate':d['sample_gate'],
+            'split':d['split'],
+            'goal_difference_calibrator':d['goal_difference_calibrator'],
+            'same_holdout_hda_comparison':d['same_holdout_hda_comparison'],
+            'holdout_error_counts':{
+              'actual_draw_missed_by_base':sum(r['actual']=='D' and r['base_hda_pred']!='D' for r in d['holdout_error_rows']),
+              'false_draw_by_base':sum(r['actual']!='D' and r['base_hda_pred']=='D' for r in d['holdout_error_rows']),
+              'direct_draw_hits':sum(r['actual']=='D' and r['direct_hda_pred']=='D' for r in d['holdout_error_rows']),
+              'v3_draw_hits':sum(r['actual']=='D' and r['v3_two_stage_pred']=='D' for r in d['holdout_error_rows'])
+            }
+          },ensure_ascii=False,indent=2))
+          PY
+      - name: Upload experiment artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4-goaldiff-calibrator-v2-direct-hda-500
+          path: |
+            model_validation/v4_goal_diff_calibrator_v2_direct_hda_500_summary.json
+            model_validation/v4_goal_diff_calibrator_v2_direct_hda_500_predictions.csv
+          if-no-files-found: error
+      - name: Persist experiment results to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/v4_goal_diff_calibrator_v2_direct_hda_500_summary.json model_validation/v4_goal_diff_calibrator_v2_direct_hda_500_predictions.csv
+          git diff --cached --quiet || git commit -m "Record V4 goal-difference calibrator V2 and direct HDA comparison"
+          git push origin HEAD:experiment/v4-goaldiff-calibrator-v2-direct-hda-20261010
