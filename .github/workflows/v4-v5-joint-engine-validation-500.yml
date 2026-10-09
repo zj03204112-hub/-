@@ -13,6 +13,7 @@ on:
     paths:
       - "data_pipeline/v4_v5_joint_engine_validation_500.py"
       - "data_pipeline/v4_v5_result_calibration_experiment.py"
+      - "data_pipeline/v4_v5_correct_win_loss_common_causes_500.py"
       - ".github/workflows/v4-v5-joint-engine-validation-500.yml"
       - "model_validation/500_match_to_db_match_id_mapping.csv"
       - "football_model_database.sqlite"
