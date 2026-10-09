@@ -45,6 +45,24 @@ def probs(m):
 def nll_score(m, h, a):
     return -math.log(max(EPS, m[h][a])) if h < N and a < N else -math.log(EPS)
 
+def goal_diff_distribution(rows, sh=1.0, sa=1.0, rho=-0.05):
+    keys = ("0", "1", "2", "3+")
+    observed = {k: 0 for k in keys}
+    predicted_sum = {k: 0.0 for k in keys}
+    for x in rows:
+        h, a = int(x["match"][4]), int(x["match"][5])
+        d = abs(h-a)
+        observed[str(d) if d <= 2 else "3+"] += 1
+        m = matrix(x["v4"][0]*sh, x["v4"][1]*sa, rho)
+        for k in keys:
+            predicted_sum[k] += sum(m[i][j] for i in range(N) for j in range(N)
+                                    if (abs(i-j) == int(k) if k != "3+" else abs(i-j) >= 3))
+    n = len(rows)
+    return {k: {"actual_count": observed[k], "actual_rate": observed[k]/n if n else None,
+                "mean_predicted_probability": predicted_sum[k]/n if n else None,
+                "probability_minus_actual_rate": predicted_sum[k]/n-observed[k]/n if n else None}
+            for k in keys}
+
 def metrics(rows, sh=1.0, sa=1.0, rho=-0.05):
     n = len(rows); correct = 0; tp = fp = fn = 0; brier = ll = snll = 0.0
     pred_counts = {k: 0 for k in "HDA"}
@@ -106,8 +124,14 @@ def main():
     for x in rows:
         m = x["match"]; h, a = int(m[4]), int(m[5])
         lh, la = float(x["v4"][0]), float(x["v4"][1])
-        p0 = probs(matrix(lh, la))
-        pc = probs(matrix(lh*sh, la*sa, rho))
+        m0 = matrix(lh, la)
+        mc = matrix(lh*sh, la*sa, rho)
+        p0 = probs(m0)
+        pc = probs(mc)
+        gd0 = {k: sum(m0[i][j] for i in range(N) for j in range(N)
+                      if (abs(i-j) == int(k) if k != "3+" else abs(i-j) >= 3)) for k in ("0","1","2","3+")}
+        gdc = {k: sum(mc[i][j] for i in range(N) for j in range(N)
+                      if (abs(i-j) == int(k) if k != "3+" else abs(i-j) >= 3)) for k in ("0","1","2","3+")}
         strength_h = cm.strength(con, m[2],
                                  (cm.datetime.fromisoformat(m[1][:19])-cm.timedelta(hours=12)).isoformat(timespec="seconds"))
         strength_a = cm.strength(con, m[3],
@@ -126,6 +150,10 @@ def main():
             "baseline_p_draw":p0["D"], "baseline_p_away":p0["A"],
             "calibrated_pred": max("HDA", key=lambda k:pc[k]), "calibrated_p_home":pc["H"],
             "calibrated_p_draw":pc["D"], "calibrated_p_away":pc["A"],
+            "baseline_p_goal_diff_0":gd0["0"], "baseline_p_goal_diff_1":gd0["1"],
+            "baseline_p_goal_diff_2":gd0["2"], "baseline_p_goal_diff_3plus":gd0["3+"],
+            "calibrated_p_goal_diff_0":gdc["0"], "calibrated_p_goal_diff_1":gdc["1"],
+            "calibrated_p_goal_diff_2":gdc["2"], "calibrated_p_goal_diff_3plus":gdc["3+"],
             "split": "train" if m[0] in train_ids else "calibration" if m[0] in cal_ids else "blind_holdout"
         })
     con.close()
@@ -156,6 +184,12 @@ def main():
         "calibrated":{"train":metrics(train,sh,sa,rho),"calibration":metrics(cal,sh,sa,rho),
           "blind_holdout":metrics(hold,sh,sa,rho)},
         "stratified_lambda_error_diagnostics":groups,
+        "goal_difference_distribution": {
+          "train_300": {"baseline":goal_diff_distribution(train), "calibrated":goal_diff_distribution(train,sh,sa,rho)},
+          "calibration_100": {"baseline":goal_diff_distribution(cal), "calibrated":goal_diff_distribution(cal,sh,sa,rho)},
+          "blind_holdout_100": {"baseline":goal_diff_distribution(hold), "calibrated":goal_diff_distribution(hold,sh,sa,rho)},
+          "all_500_descriptive_only": {"baseline":goal_diff_distribution(rows), "calibrated":goal_diff_distribution(rows,sh,sa,rho)}
+        },
         "acceptance":"No production promotion in this experiment. Compare blind holdout accuracy/Brier/LogLoss/score-NLL and inspect group stability; calibration parameters were not selected on calibration or holdout labels."
     }
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
