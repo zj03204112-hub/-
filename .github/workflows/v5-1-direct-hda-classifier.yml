@@ -15,7 +15,7 @@ permissions:
 jobs:
   classifier-experiment:
     runs-on: ubuntu-latest
-    timeout-minutes: 16
+    timeout-minutes: 17
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
