@@ -1,0 +1,129 @@
+{
+  "experiment": "V4 draw mechanism V3 strict chronological 300/100/100",
+  "status": "EXPERIMENT_ONLY",
+  "n": 500,
+  "split": {
+    "train": 300,
+    "threshold_calibration": 100,
+    "blind_holdout": 100,
+    "train_end": "2026-05-16T14:30",
+    "calibration_start": "2026-05-17",
+    "calibration_end": "2026-08-30",
+    "holdout_start": "2026-08-30T14:00"
+  },
+  "features": [
+    "lambda total",
+    "absolute lambda gap",
+    "minimum/maximum lambda",
+    "Poisson-Dixon-Coles draw probability",
+    "0-0/1-1/2-2 score cells",
+    "recent-5/10 draw rates",
+    "recent goal rates",
+    "H/A probability log ratio"
+  ],
+  "historical_away_lambda_bias_pre_sample_only": 0.45603453944716604,
+  "selected_draw_threshold_on_calibration_only": 0.28,
+  "calibration_metrics": {
+    "n": 100,
+    "correct": 47,
+    "accuracy": 0.47,
+    "macro_f1": 0.40892860396057634,
+    "per_class": {
+      "H": {
+        "predicted": 58,
+        "actual": 49,
+        "correct": 32,
+        "precision": 0.5517241379310345,
+        "recall": 0.6530612244897959,
+        "f1": 0.5981308411214952
+      },
+      "D": {
+        "predicted": 36,
+        "actual": 21,
+        "correct": 10,
+        "precision": 0.2777777777777778,
+        "recall": 0.47619047619047616,
+        "f1": 0.3508771929824561
+      },
+      "A": {
+        "predicted": 6,
+        "actual": 30,
+        "correct": 5,
+        "precision": 0.8333333333333334,
+        "recall": 0.16666666666666666,
+        "f1": 0.2777777777777778
+      }
+    }
+  },
+  "baseline_holdout": {
+    "n": 100,
+    "correct": 53,
+    "accuracy": 0.53,
+    "macro_f1": 0.35555555555555557,
+    "per_class": {
+      "H": {
+        "predicted": 81,
+        "actual": 48,
+        "correct": 43,
+        "precision": 0.5308641975308642,
+        "recall": 0.8958333333333334,
+        "f1": 0.6666666666666666
+      },
+      "D": {
+        "predicted": 0,
+        "actual": 21,
+        "correct": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "A": {
+        "predicted": 19,
+        "actual": 31,
+        "correct": 10,
+        "precision": 0.5263157894736842,
+        "recall": 0.3225806451612903,
+        "f1": 0.39999999999999997
+      }
+    },
+    "brier": 0.6064940059174425,
+    "log_loss": 1.0170139292066056
+  },
+  "v3_holdout": {
+    "n": 100,
+    "correct": 45,
+    "accuracy": 0.45,
+    "macro_f1": 0.3840155945419103,
+    "per_class": {
+      "H": {
+        "predicted": 60,
+        "actual": 48,
+        "correct": 32,
+        "precision": 0.5333333333333333,
+        "recall": 0.6666666666666666,
+        "f1": 0.5925925925925926
+      },
+      "D": {
+        "predicted": 33,
+        "actual": 21,
+        "correct": 8,
+        "precision": 0.24242424242424243,
+        "recall": 0.38095238095238093,
+        "f1": 0.2962962962962963
+      },
+      "A": {
+        "predicted": 7,
+        "actual": 31,
+        "correct": 5,
+        "precision": 0.7142857142857143,
+        "recall": 0.16129032258064516,
+        "f1": 0.2631578947368421
+      }
+    },
+    "brier": 0.6124777594224716,
+    "log_loss": 1.023378071731252
+  },
+  "delta_accuracy_pp": -8.0,
+  "delta_draw_recall_pp": 38.0952,
+  "production_gate": "EXPERIMENT_ONLY; promote only if holdout draw recall improves and overall accuracy/Brier/LogLoss do not materially worsen"
+}
