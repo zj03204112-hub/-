@@ -1,0 +1,45 @@
+name: V5.2 classification and feature coverage audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/v5.2-classification-data-audit
+    paths:
+      - "data_pipeline/audit_v52_feature_coverage.py"
+      - "scripts/migrate_player_xg_availability_v3.py"
+      - "data_pipeline/collect_api_football_player_data.py"
+      - "model_validation/V5.2_classification_data_audit_2026-10-10.md"
+      - ".github/workflows/v52-feature-audit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/v5.2-classification-data-audit
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check database availability
+        run: |
+          if [ ! -f football_model_database.sqlite ]; then
+            echo "DATABASE_NOT_TRACKED_OR_NOT_AVAILABLE"
+            echo "This run cannot report live table coverage without the database artifact."
+            exit 2
+          fi
+      - name: Migrate player availability markers
+        run: python scripts/migrate_player_xg_availability_v3.py
+      - name: Audit feature coverage
+        run: python data_pipeline/audit_v52_feature_coverage.py
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v52-feature-coverage-audit
+          path: data/v52_feature_coverage.json
+          if-no-files-found: warn
