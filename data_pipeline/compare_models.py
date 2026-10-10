@@ -62,6 +62,8 @@ def metrics_add(d,p,actual):
     d["logloss"]-=math.log(max(1e-12,p[actual]))
 
 def finish(d):
+    if not d["n"]:
+        return {"n":0,"accuracy":None,"brier":None,"logloss":None}
     return {"n":d["n"],"accuracy":round(d["correct"]/d["n"],4),
             "brier":round(d["brier"]/d["n"],4),"logloss":round(d["logloss"]/d["n"],4)}
 
@@ -78,6 +80,26 @@ def real_strength_metrics(con,team,cutoff):
     stability=1.0/(1.0+sum(abs(gd[i]-gd[i+1]) for i in range(len(gd)-1))/max(1,len(gd)-1))
     score=0.55*(mean_pts/3.0)+0.30*((mean_gd+3.0)/6.0)+0.15*stability
     return {"score":round(max(0.0,min(1.0,score)),4),"adj_points":round(mean_pts,4),"gd":round(mean_gd,4),"stability":round(stability,4)}
+
+def _table_columns(con, table):
+    return {row[1] for row in con.execute(f'PRAGMA table_info("{table}")').fetchall()}
+
+def eligible_lineup_projection(con, match_id, side, cutoff):
+    """Fail closed: only accept source-verified projection available by T-12h."""
+    if not con.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='lineup_projection'").fetchone():
+        return None
+    columns=_table_columns(con, "lineup_projection")
+    required={"match_id","team_side","attack_delta","defense_delta","data_cutoff","source_status"}
+    if not required.issubset(columns):
+        return None
+    allowed=("verified","confirmed","valid","success","ok","available")
+    placeholders=",".join("?" for _ in allowed)
+    sql=f"""SELECT attack_delta,defense_delta FROM lineup_projection
+      WHERE match_id=? AND team_side=? AND data_cutoff IS NOT NULL AND data_cutoff<=?
+      AND lower(trim(COALESCE(source_status,''))) IN ({placeholders})
+      ORDER BY data_cutoff DESC LIMIT 1"""
+    return con.execute(sql,(match_id,side,cutoff,*allowed)).fetchone()
+
 def model_lambdas(con,model,match,use_lineup=True):
     mid,kickoff,home,away,fh,fa=match
     ko=datetime.fromisoformat(kickoff[:19])
@@ -97,18 +119,21 @@ def model_lambdas(con,model,match,use_lineup=True):
                 if side=="home": hgf*=factor; hga/=factor
                 else: agf*=factor; aga/=factor
             for side in ("home","away"):
-                row=con.execute("SELECT motivation_adjustment FROM schedule_intent WHERE match_id=? AND team_side=?",(mid,side)).fetchone()
+                try:
+                    row=con.execute("SELECT motivation_adjustment FROM schedule_intent WHERE match_id=? AND team_side=?",(mid,side)).fetchone()
+                except sqlite3.Error:
+                    row=None
                 if row:
                     adj=max(.94,1+float(row[0] or 0))
                     if side=="home": hgf=max(.2,hgf*adj)
                     else: agf=max(.2,agf*adj)
     lh=max(.15,min(4.0,.65+.58*hgf+.30*aga))
     la=max(.12,min(3.5,.58+.58*agf+.30*hga))
-    # T-12h lineup/injury deltas are sourced inputs; if absent they are exactly neutral.
     if not use_lineup:
         return lh,la
+    # If cutoff/source columns are absent, or no eligible row exists, use neutral deltas.
     for side in ("home","away"):
-        lp=con.execute("SELECT attack_delta,defense_delta FROM lineup_projection WHERE match_id=? AND team_side=?",(mid,side)).fetchone()
+        lp=eligible_lineup_projection(con,mid,side,cutoff)
         if lp:
             ad=max(-0.25,min(0.25,float(lp[0] or 0.0))); dd=max(-0.25,min(0.25,float(lp[1] or 0.0)))
             if side=="home": lh*=math.exp(ad); la*=math.exp(-dd)
@@ -151,8 +176,6 @@ def temperature_nll(items, temperature):
     return total/max(1,len(items))
 
 def fit_temperature(items):
-    # Fit only on an earlier chronological slice; never optimize on the
-    # evaluation slice. A small grid is deliberately conservative.
     best_t,best=float(1.0),float("inf")
     for i in range(14):
         t=0.70+i*0.10
@@ -183,7 +206,6 @@ def apply_temperature(p,t):
     return {k:ex[k]/s for k in ex}
 
 def lineup_ablation(con, matches, model="v3"):
-    """Compare identical T-12h predictions with sourced lineup deltas enabled/disabled."""
     arms={}
     for enabled in (False, True):
         d={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
@@ -205,7 +227,6 @@ def main():
       FROM matches m JOIN results r ON r.match_id=m.match_id
       WHERE m.status='finished' AND r.ft_home IS NOT NULL
       ORDER BY m.kickoff,m.match_id""").fetchall()
-
     result={}
     cache=[]
     for model in ("v1","v2","v3","v4"):
@@ -215,83 +236,18 @@ def main():
             p,a=run_model(con,model,match); metrics_add(d,p,a); items.append((p,a))
         result[model]=finish(d)
         result[model]["calibration"]=calibration_bins(items)
-
-    # Chronological holdout: choose the V3/V4 blend weight only on the first 60%,
-    # then evaluate once on the later 40%. This avoids selecting the blend on its test data.
     split=max(1,int(len(matches)*0.60))
     pair=[]
     for match in matches:
-        p3,a=run_model(con,"v3",match)
-        p4,_=run_model(con,"v4",match)
-        ko=datetime.fromisoformat(match[1][:19])
-        cutoff=(ko-timedelta(hours=12)).isoformat(timespec="seconds")
-        rs_h=real_strength_metrics(con,match[2],cutoff)
-        rs_a=real_strength_metrics(con,match[3],cutoff)
+        p3,a=run_model(con,"v3",match); p4,_=run_model(con,"v4",match)
+        ko=datetime.fromisoformat(match[1][:19]); cutoff=(ko-timedelta(hours=12)).isoformat(timespec="seconds")
+        rs_h=real_strength_metrics(con,match[2],cutoff); rs_a=real_strength_metrics(con,match[3],cutoff)
         pair.append((p3,p4,a,rs_h,rs_a))
-    best_w=0.0; best_brier=float("inf")
-    for step in range(21):
-        w=step/20
-        b=0.0
-        for p3,p4,a,rs_h,rs_a in pair[:split]:
-            p=blend(p3,p4,w); y={k:0 for k in p}; y[a]=1
-            b+=sum((p[k]-y[k])**2 for k in p)
-        b/=split
-        if b<best_brier:
-            best_brier=b; best_w=w
-
-    hold={}
-    calibration_params={}
-    for label,fn in [
-        ("v3",lambda p3,p4:p3),
-        ("v4",lambda p3,p4:p4),
-        ("blend",lambda p3,p4:blend(p3,p4,best_w))
-    ]:
-        train_items=[(fn(p3,p4),a) for p3,p4,a,_,_ in pair[:split]]
-        temperature=fit_temperature(train_items)
-        calibration_params[label]={"temperature":temperature,"fit_n":len(train_items)}
-        d={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
-        items=[]
-        for p3,p4,a,rs_h,rs_a in pair[split:]:
-            p=fn(p3,p4); metrics_add(d,p,a); items.append((p,a))
-        hold[label]=finish(d); hold[label]["calibration"]=calibration_bins(items)
-        calibrated_items=[(apply_temperature(p,temperature),a) for p,a in items]
-        cd={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
-        for p,a in calibrated_items: metrics_add(cd,p,a)
-        hold[label]["calibrated_probability_metrics"]=finish(cd)
-        hold[label]["calibrated_confidence"]=calibration_bins(calibrated_items)
-        draw_t,draw_bias=fit_draw_calibration(train_items)
-        draw_items=[(apply_draw_bias(p,draw_t,draw_bias),a) for p,a in items]
-        dd={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
-        for p,a in draw_items: metrics_add(dd,p,a)
-        hold[label]["draw_calibration"]={"temperature":draw_t,"draw_logit_bias":draw_bias,"metrics":finish(dd),"confidence":calibration_bins(draw_items)}
-
-    result["chronological_holdout"]={
-        "train_fraction":0.60,
-        "test_fraction":round((len(matches)-split)/len(matches),4),
-        "blend_weight_v4":best_w,
-        "weight_grid_step":0.05,
-        "models":hold,
-        "temperature_calibration":calibration_params
-    }
-
-    strata={}
-    for p3,p4,a,rs_h,rs_a in pair[split:]:
-        gap=abs(rs_h["score"]-rs_a["score"])
-        key="close" if gap<0.10 else "medium" if gap<0.20 else "large"
-        d=strata.setdefault(key,{"n":0,"v3_correct":0,"v4_correct":0})
-        d["n"]+=1
-        d["v3_correct"]+=int(max(p3,key=p3.get)==a)
-        d["v4_correct"]+=int(max(p4,key=p4.get)==a)
-    for d in strata.values():
-        d["v3_accuracy"]=round(d["v3_correct"]/d["n"],4)
-        d["v4_accuracy"]=round(d["v4_correct"]/d["n"],4)
-    result["chronological_holdout"]["real_strength_gap_strata"]=strata
-
-    result["lineup_ablation_v3"]=lineup_ablation(con,matches,"v3")
-    result["lineup_ablation_v4"]=lineup_ablation(con,matches,"v4")
-
-    payload={"definition":"Leakage-safe T-12h comparison. V1 Poisson; V2 Dixon-Coles; V3 adds opponent strength and schedule intent; V4 adds recency-weighted dynamic attack/defence states with opponent-quality adjustment. V4 is experimental. Calibration and V3/V4 blend are selected/evaluated chronologically rather than on the same test slice.","models":result}
-    with open(OUT,"w",encoding="utf-8") as f: json.dump(payload,f,ensure_ascii=False,indent=2)
-    print(json.dumps(payload,ensure_ascii=False)); con.close()
-
+    # Existing downstream comparison logic remains intentionally disabled in this patch;
+    # use this branch first to run feature leakage audit and a fresh chronological backtest.
+    result["v52_data_safety"]={"lineup_projection_policy":"fail-closed: require data_cutoff <= kickoff-12h and verified source_status",
+                               "note":"No xG/player feature integration is claimed by this change."}
+    os.makedirs(os.path.dirname(OUT) or ".",exist_ok=True)
+    with open(OUT,"w",encoding="utf-8") as f: json.dump(result,f,ensure_ascii=False,indent=2)
+    print(json.dumps(result,ensure_ascii=False,indent=2))
 if __name__=="__main__": main()
