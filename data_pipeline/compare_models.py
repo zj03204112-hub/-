@@ -112,9 +112,9 @@ def model_lambdas(con,model,match,use_lineup=True):
         hgf,hga=rates(hh); agf,aga=rates(ah)
         if model=="v3":
             for side,os in (("home",strength(con,home,cutoff)),("away",strength(con,away,cutoff))):
-                os=max(.75,min(2.25,(os/1.5)**.25))
-                if side=="home": hgf*=os; hga/=os
-                else: agf*=os; aga/=os
+                os=max(.75,min(2.25,os)); factor=max(.90,min(1.10,(os/1.5)**.25))
+                if side=="home": hgf*=factor; hga/=factor
+                else: agf*=factor; aga/=factor
             for side in ("home","away"):
                 try:
                     row=con.execute("SELECT motivation_adjustment FROM schedule_intent WHERE match_id=? AND team_side=?",(mid,side)).fetchone()
