@@ -93,7 +93,7 @@ def parse_players(item,mid):
             xg_available=int(raw_xg not in ("", None)); xa_available=int(raw_xa not in ("", None))
             xg_value=float(raw_xg) if xg_available else None
             xa_value=float(raw_xa) if xa_available else None
-            out.append((mid,side,str(player["id"]),player["name"],g.get("position"),0 if g.get("substitute") else 1,float(g.get("minutes") or 0),float(g.get("rating") or 0) if g.get("rating") else None,float(goals.get("total") or 0),float(goals.get("assists") or 0),xg_value,xa_value,xg_available,xa_available,float(shots.get("total") or 0),float(passes.get("key") or 0),float(tackles.get("total") or 0),float(tackles.get("interceptions") or 0),float(tackles.get("blocks") or 0),"API-Football",datetime.now(timezone.utc).isoformat(timespec="seconds")))
+            out.append((mid,side,str(player["id"]),player["name"],g.get("position"),0 if g.get("substitute") else 1,float(g.get("minutes") or 0),float(g.get("rating") or 0) if g.get("rating") else None,float(goals.get("total") or 0),float(goals.get("assists") or 0),xg_value,xa_value,float(shots.get("total") or 0),float(passes.get("key") or 0),float(tackles.get("total") or 0),float(tackles.get("interceptions") or 0),float(tackles.get("blocks") or 0),"API-Football",datetime.now(timezone.utc).isoformat(timespec="seconds")))
     return out
 def main():
     if not API_KEY:raise SystemExit("API_FOOTBALL_KEY is not configured")
@@ -116,8 +116,8 @@ def main():
                 if not parsed:continue
                 seen.add(mid);mapped+=1;ls["mapped"]+=1
                 con.executemany("""INSERT OR REPLACE INTO player_match_stats
-                (match_id,team_side,player_id,player_name,position,starter,minutes_played,rating,goals,assists,xg,xa,xg_source_available,xa_source_available,shots,key_passes,tackles,interceptions,clearances,data_source,observed_at)
-                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",parsed)
+                (match_id,team_side,player_id,player_name,position,starter,minutes_played,rating,goals,assists,xg,xa,shots,key_passes,tackles,interceptions,clearances,data_source,observed_at)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",parsed)
                 rows+=len(parsed);ls["rows"]+=len(parsed)
                 if mapped%25==0:con.commit()
         league_stats[name]=ls;print(f"{name}: {ls}",flush=True)
