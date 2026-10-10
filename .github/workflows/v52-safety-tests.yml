@@ -1,0 +1,25 @@
+name: V5.2 safety tests
+on:
+  push:
+    branches:
+      - feature/v5.2-classification-data-audit
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'data_pipeline/compare_models.py'
+      - 'data_pipeline/collect_api_football_player_data.py'
+      - 'tests/test_v52_safety.py'
+      - '.github/workflows/v52-safety-tests.yml'
+jobs:
+  safety-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile changed Python modules
+        run: python -m py_compile data_pipeline/compare_models.py data_pipeline/collect_api_football_player_data.py
+      - name: Run synthetic cutoff and classification tests
+        run: python -m unittest discover -s tests -p 'test_v52_safety.py' -v
