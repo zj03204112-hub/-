@@ -146,6 +146,25 @@ def run_model(con,model,match):
        "A":sum(m[i][j] for i in range(N) for j in range(N) if i<j)}
     return p,("H" if fh>fa else "D" if fh==fa else "A")
 
+def classification_metrics(items):
+    labels=("H","D","A")
+    confusion={actual:{predicted:0 for predicted in labels} for actual in labels}
+    for p,actual in items:
+        predicted=max(p,key=p.get)
+        confusion[actual][predicted]+=1
+    per_class={}
+    for label in labels:
+        tp=confusion[label][label]
+        predicted_n=sum(confusion[a][label] for a in labels)
+        actual_n=sum(confusion[label].values())
+        per_class[label]={
+            "precision":round(tp/predicted_n,4) if predicted_n else None,
+            "recall":round(tp/actual_n,4) if actual_n else None,
+            "support":actual_n
+        }
+    return {"labels":["H","D","A"],"confusion_matrix_actual_rows_predicted_columns":confusion,
+            "per_class":per_class,"draw_recall":per_class["D"]["recall"]}
+
 def calibration_bins(items):
     bins={}
     for p,a in items:
@@ -275,17 +294,17 @@ def main():
         items=[]
         for p3,p4,a,rs_h,rs_a in pair[split:]:
             p=fn(p3,p4); metrics_add(d,p,a); items.append((p,a))
-        hold[label]=finish(d); hold[label]["calibration"]=calibration_bins(items)
+        hold[label]=finish(d); hold[label]["classification"]=classification_metrics(items); hold[label]["calibration"]=calibration_bins(items)
         calibrated_items=[(apply_temperature(p,temperature),a) for p,a in items]
         cd={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
         for p,a in calibrated_items: metrics_add(cd,p,a)
-        hold[label]["calibrated_probability_metrics"]=finish(cd)
+        hold[label]["calibrated_probability_metrics"]=finish(cd); hold[label]["calibrated_classification"]=classification_metrics(calibrated_items)
         hold[label]["calibrated_confidence"]=calibration_bins(calibrated_items)
         draw_t,draw_bias=fit_draw_calibration(train_items)
         draw_items=[(apply_draw_bias(p,draw_t,draw_bias),a) for p,a in items]
         dd={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
         for p,a in draw_items: metrics_add(dd,p,a)
-        hold[label]["draw_calibration"]={"temperature":draw_t,"draw_logit_bias":draw_bias,"metrics":finish(dd),"confidence":calibration_bins(draw_items)}
+        hold[label]["draw_calibration"]={"temperature":draw_t,"draw_logit_bias":draw_bias,"metrics":finish(dd),"classification":classification_metrics(draw_items),"confidence":calibration_bins(draw_items)}
 
     result["chronological_holdout"]={
         "train_fraction":0.60,
