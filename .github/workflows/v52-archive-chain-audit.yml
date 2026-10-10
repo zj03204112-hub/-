@@ -1,0 +1,43 @@
+name: V5.2 prediction archive chain audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/v5.2-classification-data-audit
+    paths:
+      - "data_pipeline/audit_prediction_archive_chain.py"
+      - ".github/workflows/v52-archive-chain-audit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  archive_audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout isolated V5.2 branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/v5.2-classification-data-audit
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify tracked database exists
+        run: |
+          if [ ! -f football_model_database.sqlite ]; then
+            echo "DATABASE_NOT_TRACKED_OR_NOT_AVAILABLE"
+            exit 2
+          fi
+      - name: Reconcile matches, results, predictions and reviews (read-only)
+        run: python data_pipeline/audit_prediction_archive_chain.py
+      - name: Upload reconciliation report and row-level details
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v52-prediction-archive-chain-audit
+          path: |
+            data/v52_archive_chain_audit.json
+            data/v52_archive_chain_details/*.csv
+          if-no-files-found: warn

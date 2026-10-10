@@ -78,6 +78,25 @@ def real_strength_metrics(con,team,cutoff):
     stability=1.0/(1.0+sum(abs(gd[i]-gd[i+1]) for i in range(len(gd)-1))/max(1,len(gd)-1))
     score=0.55*(mean_pts/3.0)+0.30*((mean_gd+3.0)/6.0)+0.15*stability
     return {"score":round(max(0.0,min(1.0,score)),4),"adj_points":round(mean_pts,4),"gd":round(mean_gd,4),"stability":round(stability,4)}
+def _table_columns(con, table):
+    return {row[1] for row in con.execute(f'PRAGMA table_info("{table}")').fetchall()}
+
+def eligible_lineup_projection(con, match_id, side, cutoff):
+    """Fail closed: only accept source-verified projection available by T-12h."""
+    if not con.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='lineup_projection'").fetchone():
+        return None
+    columns=_table_columns(con, "lineup_projection")
+    required={"match_id","team_side","attack_delta","defense_delta","data_cutoff","source_status"}
+    if not required.issubset(columns):
+        return None
+    allowed=("verified","confirmed","valid","success","ok","available")
+    placeholders=",".join("?" for _ in allowed)
+    sql=f"""SELECT attack_delta,defense_delta FROM lineup_projection
+      WHERE match_id=? AND team_side=? AND data_cutoff IS NOT NULL AND data_cutoff<=?
+      AND lower(trim(COALESCE(source_status,''))) IN ({placeholders})
+      ORDER BY data_cutoff DESC LIMIT 1"""
+    return con.execute(sql,(match_id,side,cutoff,*allowed)).fetchone()
+
 def model_lambdas(con,model,match,use_lineup=True):
     mid,kickoff,home,away,fh,fa=match
     ko=datetime.fromisoformat(kickoff[:19])
@@ -97,18 +116,21 @@ def model_lambdas(con,model,match,use_lineup=True):
                 if side=="home": hgf*=factor; hga/=factor
                 else: agf*=factor; aga/=factor
             for side in ("home","away"):
-                row=con.execute("SELECT motivation_adjustment FROM schedule_intent WHERE match_id=? AND team_side=?",(mid,side)).fetchone()
+                try:
+                    row=con.execute("SELECT motivation_adjustment FROM schedule_intent WHERE match_id=? AND team_side=?",(mid,side)).fetchone()
+                except sqlite3.Error:
+                    row=None
                 if row:
                     adj=max(.94,1+float(row[0] or 0))
                     if side=="home": hgf=max(.2,hgf*adj)
                     else: agf=max(.2,agf*adj)
     lh=max(.15,min(4.0,.65+.58*hgf+.30*aga))
     la=max(.12,min(3.5,.58+.58*agf+.30*hga))
-    # T-12h lineup/injury deltas are sourced inputs; if absent they are exactly neutral.
     if not use_lineup:
         return lh,la
+    # Missing cutoff/source provenance means neutral effect, never silently trust it.
     for side in ("home","away"):
-        lp=con.execute("SELECT attack_delta,defense_delta FROM lineup_projection WHERE match_id=? AND team_side=?",(mid,side)).fetchone()
+        lp=eligible_lineup_projection(con,mid,side,cutoff)
         if lp:
             ad=max(-0.25,min(0.25,float(lp[0] or 0.0))); dd=max(-0.25,min(0.25,float(lp[1] or 0.0)))
             if side=="home": lh*=math.exp(ad); la*=math.exp(-dd)
@@ -123,6 +145,25 @@ def run_model(con,model,match):
        "D":sum(m[i][j] for i in range(N) for j in range(N) if i==j),
        "A":sum(m[i][j] for i in range(N) for j in range(N) if i<j)}
     return p,("H" if fh>fa else "D" if fh==fa else "A")
+
+def classification_metrics(items):
+    labels=("H","D","A")
+    confusion={actual:{predicted:0 for predicted in labels} for actual in labels}
+    for p,actual in items:
+        predicted=max(p,key=p.get)
+        confusion[actual][predicted]+=1
+    per_class={}
+    for label in labels:
+        tp=confusion[label][label]
+        predicted_n=sum(confusion[a][label] for a in labels)
+        actual_n=sum(confusion[label].values())
+        per_class[label]={
+            "precision":round(tp/predicted_n,4) if predicted_n else None,
+            "recall":round(tp/actual_n,4) if actual_n else None,
+            "support":actual_n
+        }
+    return {"labels":["H","D","A"],"confusion_matrix_actual_rows_predicted_columns":confusion,
+            "per_class":per_class,"draw_recall":per_class["D"]["recall"]}
 
 def calibration_bins(items):
     bins={}
@@ -253,17 +294,17 @@ def main():
         items=[]
         for p3,p4,a,rs_h,rs_a in pair[split:]:
             p=fn(p3,p4); metrics_add(d,p,a); items.append((p,a))
-        hold[label]=finish(d); hold[label]["calibration"]=calibration_bins(items)
+        hold[label]=finish(d); hold[label]["classification"]=classification_metrics(items); hold[label]["calibration"]=calibration_bins(items)
         calibrated_items=[(apply_temperature(p,temperature),a) for p,a in items]
         cd={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
         for p,a in calibrated_items: metrics_add(cd,p,a)
-        hold[label]["calibrated_probability_metrics"]=finish(cd)
+        hold[label]["calibrated_probability_metrics"]=finish(cd); hold[label]["calibrated_classification"]=classification_metrics(calibrated_items)
         hold[label]["calibrated_confidence"]=calibration_bins(calibrated_items)
         draw_t,draw_bias=fit_draw_calibration(train_items)
         draw_items=[(apply_draw_bias(p,draw_t,draw_bias),a) for p,a in items]
         dd={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
         for p,a in draw_items: metrics_add(dd,p,a)
-        hold[label]["draw_calibration"]={"temperature":draw_t,"draw_logit_bias":draw_bias,"metrics":finish(dd),"confidence":calibration_bins(draw_items)}
+        hold[label]["draw_calibration"]={"temperature":draw_t,"draw_logit_bias":draw_bias,"metrics":finish(dd),"classification":classification_metrics(draw_items),"confidence":calibration_bins(draw_items)}
 
     result["chronological_holdout"]={
         "train_fraction":0.60,
