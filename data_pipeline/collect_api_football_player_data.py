@@ -91,8 +91,8 @@ def parse_players(item,mid):
             raw_xg=goals.get("expected") if goals.get("expected") not in ("", None) else st.get("xg")
             raw_xa=passes.get("expected") if passes.get("expected") not in ("", None) else st.get("xa")
             xg_available=int(raw_xg not in ("", None)); xa_available=int(raw_xa not in ("", None))
-            xg_value=float(raw_xg) if xg_available else 0.0
-            xa_value=float(raw_xa) if xa_available else 0.0
+            xg_value=float(raw_xg) if xg_available else None
+            xa_value=float(raw_xa) if xa_available else None
             out.append((mid,side,str(player["id"]),player["name"],g.get("position"),0 if g.get("substitute") else 1,float(g.get("minutes") or 0),float(g.get("rating") or 0) if g.get("rating") else None,float(goals.get("total") or 0),float(goals.get("assists") or 0),xg_value,xa_value,xg_available,xa_available,float(shots.get("total") or 0),float(passes.get("key") or 0),float(tackles.get("total") or 0),float(tackles.get("interceptions") or 0),float(tackles.get("blocks") or 0),"API-Football",datetime.now(timezone.utc).isoformat(timespec="seconds")))
     return out
 def main():
