@@ -29,11 +29,9 @@ jobs:
         run: |
           if [ ! -f football_model_database.sqlite ]; then
             echo "DATABASE_NOT_TRACKED_OR_NOT_AVAILABLE"
-            echo "This run cannot report live table coverage without the database artifact."
+            echo "This run cannot report live table coverage without the database artifact. No migration or model/data changes are performed."
             exit 2
           fi
-      - name: Migrate player availability markers
-        run: python scripts/migrate_player_xg_availability_v3.py
       - name: Audit feature coverage
         run: python data_pipeline/audit_v52_feature_coverage.py
       - name: Upload audit report
