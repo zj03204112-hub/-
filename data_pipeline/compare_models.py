@@ -304,7 +304,7 @@ def main():
 
     result={}
     cache=[]
-    for model in ("v1","v2","v3","v4"):
+    for model in ("v1","v2","v3","v4","v5.2"):
         d={"n":0,"correct":0,"brier":0.0,"logloss":0.0}
         items=[]
         for match in matches:
