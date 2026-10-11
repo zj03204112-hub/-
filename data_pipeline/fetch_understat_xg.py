@@ -6,7 +6,7 @@ actual fetch timestamp, NOT an invented historical publication timestamp. Thus
 these retroactively fetched records are useful for coverage research but must
 fail the strict historical T-12h gate unless a genuine archived timestamp exists.
 """
-import json, os, re, sqlite3, sys, time, unicodedata
+import gzip, json, os, re, sqlite3, sys, time, unicodedata
 from datetime import datetime, timezone
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
@@ -27,7 +27,10 @@ def get_json(path):
     req = Request(BASE + path, headers=HEADERS)
     with urlopen(req, timeout=12) as response:
         raw = response.read()
-        return json.loads(raw.decode("utf-8"))
+        # Understat may return gzip-compressed bytes without urllib decoding them.
+        if raw.startswith(bytes((31, 139))):
+            raw = gzip.decompress(raw)
+        return json.loads(raw.decode("utf-8-sig"))
 
 def norm(s):
     s = unicodedata.normalize("NFKD", str(s or "")).encode("ascii", "ignore").decode().lower()
