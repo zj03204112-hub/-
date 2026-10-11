@@ -1,0 +1,72 @@
+# Daily Jincai prediction workflow policy.
+# Times are displayed in Asia/Shanghai (China Standard Time, UTC+08:00).
+timezone: Asia/Shanghai
+trigger_intent:
+  user_requests:
+    - predict matches
+    - predict today's matches
+    - predict tomorrow's matches
+  action: search_all_current_day_jincai_fixtures_before_predicting
+delivery:
+  consolidate_all_fixtures_into_one_response: true
+  exclude_started_or_finished_from_prematch_predictions: true
+  never_guess_missing_fields: true
+fixtures:
+  require_official_jincai_number: true
+  crosscheck_official_competition_schedule: true
+  verify:
+    - fixture_number
+    - competition_and_level
+    - home_team
+    - away_team
+    - kickoff_time
+    - match_status
+odds_snapshot:
+  capture_at_prediction_time: true
+  wait_for_market_close: false
+  immutable_snapshot: true
+  fields:
+    - timestamp
+    - source_url
+    - jincai_1x2_home_draw_away
+    - official_home_handicap
+    - jincai_handicap_home_draw_away
+lineups_and_injuries:
+  official_starting_xi_only: true
+  predicted_lineup_must_not_be_labeled_official: true
+  record_source_and_publication_time: true
+  unknown_injury_information_is_not_equivalent_to_no_injuries: true
+recent_form:
+  last_n_official_matches: 5
+  include_fields:
+    - date
+    - competition
+    - opponent
+    - home_away
+    - score
+    - result
+    - goals_for
+    - goals_against
+  exclude_friendlies: true
+prediction:
+  required:
+    - ninety_minute_home_draw_away
+    - first_score
+    - second_score
+    - half_time_full_time
+    - confidence_and_definition
+    - risk_notes
+    - model_version_if_actually_run
+handicap_settlement:
+  source: official_jincai_handicap
+  use_first_score_only: true
+  second_score_must_not_affect_handicap_prediction: true
+  calculate_separately_from_ninety_minute_result: true
+integrity:
+  complete_crosschecks_before_final_response: true
+  cite_sources_and_capture_time: true
+  disclose_unavailable_evidence: true
+  never_claim_unrun_model_or_unwritten_archive: true
+archive:
+  preserve_immutable_prediction_and_odds_snapshot: true
+  post_match_review_appends_without_overwriting_prediction: true
