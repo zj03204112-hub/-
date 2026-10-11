@@ -1,0 +1,36 @@
+name: V5.2 optional-feature code check
+
+on:
+  push:
+    branches:
+      - feature/v5.2-classification-data-audit
+    paths:
+      - "data_pipeline/compare_models.py"
+      - "data_pipeline/ingest_xg_observations.py"
+      - "data_pipeline/audit_unproven_features.py"
+      - "data_pipeline/backtest_player_10.py"
+      - ".github/workflows/v52-feature-code-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python_syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout isolated V5.2 branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/v5.2-classification-data-audit
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile optional-feature modules
+        run: |
+          python -m py_compile \
+            data_pipeline/compare_models.py \
+            data_pipeline/ingest_xg_observations.py \
+            data_pipeline/audit_unproven_features.py \
+            data_pipeline/backtest_player_10.py
