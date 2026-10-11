@@ -14,7 +14,7 @@ from urllib.error import URLError, HTTPError
 DB = os.environ.get("FOOTBALL_DB", "football_model_database.sqlite")
 OUT = os.environ.get("XG_INGEST_REPORT", "data/xg_ingest_report.json")
 LEAGUES = ("EPL", "La_Liga", "Bundesliga", "Serie_A", "Ligue_1")
-SEASONS = tuple(range(int(os.getenv("XG_SEASON_START", "2021")),
+SEASONS = tuple(range(int(os.getenv("XG_SEASON_START", "2023")),
                       int(os.getenv("XG_SEASON_END", "2026")) + 1))
 BASE = "https://understat.com/"
 HEADERS = {
@@ -25,7 +25,7 @@ HEADERS = {
 }
 def get_json(path):
     req = Request(BASE + path, headers=HEADERS)
-    with urlopen(req, timeout=45) as response:
+    with urlopen(req, timeout=12) as response:
         raw = response.read()
         return json.loads(raw.decode("utf-8"))
 
@@ -98,7 +98,7 @@ def main():
                 print(json.dumps({"source":"Understat","league":league,"season":season,"matches":len(ms)}))
             except Exception as e:
                 report["errors"].append({"league":league,"season":season,"error":str(e)[:300]})
-            time.sleep(1.0)
+            time.sleep(0.6)
     # Match by home/away names and nearest kickoff within 36 hours; never resolve ties by guess.
     matched=[]
     for s in fetched:
