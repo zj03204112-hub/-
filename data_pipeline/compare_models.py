@@ -130,20 +130,15 @@ def historical_xg_rates(con,team,cutoff,limit=10):
             len(unique))
 
 
-def xg_adjustment_multiplier(con,team,cutoff,attack_baseline,defence_baseline):
-    """Conservative bounded ratio adjustment; no valid xG history means neutral."""
-    rates=historical_xg_rates(con,team,cutoff)
-    if not rates:
-        return 1.0, {"used":False,"matches":0}
-    xgf,xga,n=rates
-    # Ratios are deliberately shrunk and clipped to avoid letting xG overwhelm
-    # the historical-goals model. Inputs are rates per match, not total counts.
-    attack_ratio=max(0.70,min(1.30,xgf/max(0.20,attack_baseline)))
-    defence_ratio=max(0.70,min(1.30,xga/max(0.20,defence_baseline)))
-    multiplier=max(0.90,min(1.10,math.exp(0.15*math.log(attack_ratio)+0.15*math.log(defence_ratio))))
-    return multiplier, {"used":True,"matches":n,"xg_for":round(xgf,4),"xg_against":round(xga,4),
-                        "multiplier":round(multiplier,5)}
-
+def xg_lambda_multiplier(con,attack_team,defence_team,attack_baseline,defence_baseline,cutoff):
+    """Combine the attacking team's xG-for and defending team's xG-against signals."""
+    ar=historical_xg_rates(con,attack_team,cutoff)
+    dr=historical_xg_rates(con,defence_team,cutoff)
+    if not ar or not dr:
+        return 1.0
+    attack_ratio=max(0.70,min(1.30,ar[0]/max(0.20,attack_baseline)))
+    defence_ratio=max(0.70,min(1.30,dr[1]/max(0.20,defence_baseline)))
+    return max(0.90,min(1.10,math.exp(0.15*math.log(attack_ratio)+0.15*math.log(defence_ratio))))
 
 def model_lambdas(con,model,match,use_lineup=True):
     mid,kickoff,home,away,fh,fa=match
@@ -177,8 +172,8 @@ def model_lambdas(con,model,match,use_lineup=True):
     if model=="v5.2":
         # Apply sourced historical xG only when >=5 prior observations are available
         # and observed by the fixed T-12h cutoff. Otherwise preserve baseline lambda.
-        hmul,_=xg_adjustment_multiplier(con,home,cutoff,hgf,hga)
-        amul,_=xg_adjustment_multiplier(con,away,cutoff,agf,aga)
+        hmul=xg_lambda_multiplier(con,home,away,hgf,aga,cutoff)
+        amul=xg_lambda_multiplier(con,away,home,agf,hga,cutoff)
         lh=max(.15,min(4.0,lh*hmul))
         la=max(.12,min(3.5,la*amul))
     if not use_lineup:
