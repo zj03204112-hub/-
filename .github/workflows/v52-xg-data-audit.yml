@@ -36,7 +36,7 @@ jobs:
               raise SystemExit("DATABASE_MISSING_OR_TOO_SMALL")
           with open(path, "rb") as f:
               header = f.read(16)
-          if header != b"SQLite format 3\\x00":
+          if header != b"SQLite format 3\x00":
               raise SystemExit(f"NOT_SQLITE_DATABASE: header={header!r}")
           con = sqlite3.connect(f"file:{path}?mode=ro", uri=True)
           integrity = con.execute("PRAGMA integrity_check").fetchone()[0]
