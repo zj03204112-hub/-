@@ -7,6 +7,8 @@ on:
       - feature/v5.2-classification-data-audit
     paths:
       - "data_pipeline/audit_prediction_archive_chain.py"
+      - "model_validation/DAILY_JINCAI_PREDICTION_WORKFLOW.md"
+      - "config/daily_jincai_prediction_policy.yml"
       - ".github/workflows/v52-archive-chain-audit.yml"
 
 permissions:
