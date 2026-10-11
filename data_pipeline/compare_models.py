@@ -97,11 +97,59 @@ def eligible_lineup_projection(con, match_id, side, cutoff):
       ORDER BY data_cutoff DESC LIMIT 1"""
     return con.execute(sql,(match_id,side,cutoff,*allowed)).fetchone()
 
+def historical_xg_rates(con,team,cutoff,limit=10):
+    """Return weighted sourced xG-for/xG-against rates known by cutoff, or None."""
+    if not con.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='xg_observations'").fetchone():
+        return None
+    rows=con.execute("""SELECT m.kickoff,m.home_team,m.away_team,x.team_side,x.xg_for,x.xg_against,
+          x.observed_at,x.source_status
+      FROM xg_observations x JOIN matches m ON m.match_id=x.match_id
+      JOIN results r ON r.match_id=m.match_id
+      WHERE (m.home_team=? OR m.away_team=?)
+        AND m.kickoff < ? AND datetime(x.observed_at) <= datetime(?)
+        AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL
+        AND lower(trim(COALESCE(x.source_status,''))) IN
+          ('verified','confirmed','valid','success','ok','available')
+      ORDER BY m.kickoff DESC,x.observed_at DESC LIMIT ?""",
+      (team,team,cutoff,cutoff,limit*2)).fetchall()
+    # One observation per team/match: deduplicate provider duplicates before weighting.
+    unique=[]; seen=set()
+    for kickoff,home,away,side,xgf,xga,observed,status in rows:
+        key=(kickoff,home,away)
+        if key in seen: continue
+        seen.add(key)
+        if (side=="home" and home==team) or (side=="away" and away==team):
+            unique.append((float(xgf),float(xga)))
+        if len(unique)>=limit: break
+    if len(unique)<5:
+        return None
+    weights=[math.exp(-0.10*i) for i in range(len(unique))]
+    sw=sum(weights)
+    return (sum(v[0]*weights[i] for i,v in enumerate(unique))/sw,
+            sum(v[1]*weights[i] for i,v in enumerate(unique))/sw,
+            len(unique))
+
+
+def xg_adjustment_multiplier(con,team,cutoff,attack_baseline,defence_baseline):
+    """Conservative bounded ratio adjustment; no valid xG history means neutral."""
+    rates=historical_xg_rates(con,team,cutoff)
+    if not rates:
+        return 1.0, {"used":False,"matches":0}
+    xgf,xga,n=rates
+    # Ratios are deliberately shrunk and clipped to avoid letting xG overwhelm
+    # the historical-goals model. Inputs are rates per match, not total counts.
+    attack_ratio=max(0.70,min(1.30,xgf/max(0.20,attack_baseline)))
+    defence_ratio=max(0.70,min(1.30,xga/max(0.20,defence_baseline)))
+    multiplier=max(0.90,min(1.10,math.exp(0.15*math.log(attack_ratio)+0.15*math.log(defence_ratio))))
+    return multiplier, {"used":True,"matches":n,"xg_for":round(xgf,4),"xg_against":round(xga,4),
+                        "multiplier":round(multiplier,5)}
+
+
 def model_lambdas(con,model,match,use_lineup=True):
     mid,kickoff,home,away,fh,fa=match
     ko=datetime.fromisoformat(kickoff[:19])
     cutoff=(ko-timedelta(hours=12)).isoformat(timespec="seconds")
-    if model=="v4":
+    if model in ("v4","v5.2"):
         hgf,hga=dynamic_rates(con,home,cutoff); agf,aga=dynamic_rates(con,away,cutoff)
         for side,os in (("home",strength(con,home,cutoff)),("away",strength(con,away,cutoff))):
             os=max(.75,min(2.25,os)); factor=max(.94,min(1.06,(os/1.5)**.18))
@@ -126,6 +174,13 @@ def model_lambdas(con,model,match,use_lineup=True):
                     else: agf=max(.2,agf*adj)
     lh=max(.15,min(4.0,.65+.58*hgf+.30*aga))
     la=max(.12,min(3.5,.58+.58*agf+.30*hga))
+    if model=="v5.2":
+        # Apply sourced historical xG only when >=5 prior observations are available
+        # and observed by the fixed T-12h cutoff. Otherwise preserve baseline lambda.
+        hmul,_=xg_adjustment_multiplier(con,home,cutoff,hgf,hga)
+        amul,_=xg_adjustment_multiplier(con,away,cutoff,agf,aga)
+        lh=max(.15,min(4.0,lh*hmul))
+        la=max(.12,min(3.5,la*amul))
     if not use_lineup:
         return lh,la
     # Missing cutoff/source provenance means neutral effect, never silently trust it.
