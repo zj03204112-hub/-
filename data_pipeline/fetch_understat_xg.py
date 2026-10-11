@@ -6,13 +6,14 @@ actual fetch timestamp, NOT an invented historical publication timestamp. Thus
 these retroactively fetched records are useful for coverage research but must
 fail the strict historical T-12h gate unless a genuine archived timestamp exists.
 """
-import gzip, json, os, re, sqlite3, sys, time, unicodedata
+import csv, difflib, gzip, json, os, re, sqlite3, sys, time, unicodedata
 from datetime import datetime, timezone
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
 DB = os.environ.get("FOOTBALL_DB", "football_model_database.sqlite")
 OUT = os.environ.get("XG_INGEST_REPORT", "data/xg_ingest_report.json")
+UNMATCHED_OUT = os.environ.get("XG_UNMATCHED_CSV", "data/xg_unmatched_diagnosis.csv")
 LEAGUES = ("EPL", "La_Liga", "Bundesliga", "Serie_A", "Ligue_1")
 SEASONS = tuple(range(int(os.getenv("XG_SEASON_START", "2023")),
                       int(os.getenv("XG_SEASON_END", "2026")) + 1))
@@ -103,19 +104,81 @@ def main():
                 report["errors"].append({"league":league,"season":season,"error":str(e)[:300]})
             time.sleep(0.6)
     # Match by home/away names and nearest kickoff within 36 hours; never resolve ties by guess.
+    # Preserve every unmatched source row and provide a conservative candidate diagnosis.
     matched=[]
+    unmatched_rows=[]
+    all_db=[]
+    for r in dbrows:
+        dt=parse_dt(r["kickoff"])
+        if dt:
+            all_db.append((dt,str(r["match_id"]),str(r["home_team"]),str(r["away_team"])))
     for s in fetched:
         candidates=indexed.get((norm(s["home"]),norm(s["away"])),[])
         near=[c for c in candidates if abs((c[0]-s["kickoff"]).total_seconds()) <= 36*3600]
         if len(near)==0:
-            report["unmatched"]+=1; continue
+            report["unmatched"]+=1
+            # First diagnose same normalized pair with a kickoff mismatch.
+            exact_pair=indexed.get((norm(s["home"]),norm(s["away"])),[])
+            if exact_pair:
+                ranked=sorted(exact_pair,key=lambda c:abs((c[0]-s["kickoff"]).total_seconds()))
+                c=ranked[0]
+                reason="date_difference"
+                status="candidate_unverified"
+            else:
+                # Search near the source kickoff for likely team-name aliases; do not auto-join.
+                nearby=[c for c in all_db if abs((c[0]-s["kickoff"]).total_seconds()) <= 10*24*3600]
+                ranked=[]
+                sh,sa=norm(s["home"]),norm(s["away"])
+                for c in nearby:
+                    dh=difflib.SequenceMatcher(None,sh,norm(c[2])).ratio() if sh else 0
+                    da=difflib.SequenceMatcher(None,sa,norm(c[3])).ratio() if sa else 0
+                    # Require plausible similarity on both sides; this is only a candidate, never a match.
+                    if dh >= 0.72 and da >= 0.72:
+                        ranked.append((dh+da,abs((c[0]-s["kickoff"]).total_seconds()),c))
+                if ranked:
+                    ranked.sort(key=lambda x:(-x[0],x[1]))
+                    c=ranked[0][2]
+                    reason="team_name_difference"
+                    status="candidate_unverified"
+                else:
+                    c=None
+                    # Do not claim a real missing game without a plausible DB candidate.
+                    reason="database_missing_or_league_season_coverage"
+                    status="manual_review_required"
+            unmatched_rows.append({
+                "source_league":s["league"], "season":s["season"],
+                "source_match_id":s["source_match_id"], "home_team_raw":s["home"],
+                "away_team_raw":s["away"], "kickoff_utc":s["kickoff"].isoformat(),
+                "candidate_db_match_id":c[1] if c else "",
+                "candidate_db_home_team":c[2] if c else "",
+                "candidate_db_away_team":c[3] if c else "",
+                "candidate_db_kickoff_utc":c[0].isoformat() if c else "",
+                "reason_category":reason, "verification_status":status,
+                "source_url":s["source_url"]
+            })
+            continue
         near.sort(key=lambda c:abs((c[0]-s["kickoff"]).total_seconds()))
         bestdiff=abs((near[0][0]-s["kickoff"]).total_seconds())
         best=[c for c in near if abs(abs((c[0]-s["kickoff"]).total_seconds())-bestdiff)<1]
         if len(best)!=1:
-            report["ambiguous"]+=1; continue
+            report["ambiguous"]+=1
+            continue
         c=best[0]
         matched.append((s,c))
+    os.makedirs(os.path.dirname(UNMATCHED_OUT) or ".",exist_ok=True)
+    fields=["source_league","season","source_match_id","home_team_raw","away_team_raw",
+            "kickoff_utc","candidate_db_match_id","candidate_db_home_team","candidate_db_away_team",
+            "candidate_db_kickoff_utc","reason_category","verification_status","source_url"]
+    with open(UNMATCHED_OUT,"w",encoding="utf-8-sig",newline="") as f:
+        writer=csv.DictWriter(f,fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(unmatched_rows)
+    report["unmatched_diagnosis_csv"]=UNMATCHED_OUT
+    report["unmatched_diagnosis_rows"]=len(unmatched_rows)
+    report["unmatched_reason_counts"]={}
+    for row in unmatched_rows:
+        k=row["reason_category"]
+        report["unmatched_reason_counts"][k]=report["unmatched_reason_counts"].get(k,0)+1
     # Create provenance-aware table. observed_at is the actual collection time.
     con.execute("""CREATE TABLE IF NOT EXISTS xg_observations (
       match_id TEXT NOT NULL, team_side TEXT NOT NULL CHECK(team_side IN ('home','away')),
