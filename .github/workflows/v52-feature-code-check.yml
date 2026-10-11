@@ -16,13 +16,14 @@ permissions:
   contents: read
 
 jobs:
-  python_syntax:
+  xg_feature_gate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout isolated V5.2 branch
         uses: actions/checkout@v4
         with:
           ref: feature/v5.2-classification-data-audit
+          lfs: true
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -34,3 +35,19 @@ jobs:
             data_pipeline/ingest_xg_observations.py \
             data_pipeline/audit_unproven_features.py \
             data_pipeline/backtest_player_10.py
+      - name: Verify database is present
+        run: |
+          test -s football_model_database.sqlite
+          file football_model_database.sqlite
+      - name: Audit feature ingestion and T-12h eligibility
+        env:
+          FOOTBALL_DB: football_model_database.sqlite
+          FEATURE_AUDIT_OUT: data/feature_ingestion_audit.json
+        run: python data_pipeline/audit_unproven_features.py
+      - name: Upload audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v52-feature-ingestion-audit
+          path: data/feature_ingestion_audit.json
+          if-no-files-found: warn
