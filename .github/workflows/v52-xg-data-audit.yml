@@ -102,5 +102,6 @@ jobs:
             data/feature_ingestion_audit.json
             data/xg_coverage_audit.json
             data/xg_ingest_report.json
+            data/xg_unmatched_diagnosis.csv
             football_model_database.sqlite
           if-no-files-found: warn
