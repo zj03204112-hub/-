@@ -7,6 +7,7 @@ on:
     paths:
       - "football_model_database.sqlite"
       - "data_pipeline/audit_unproven_features.py"
+      - "data_pipeline/fetch_understat_xg.py"
       - ".github/workflows/v52-feature-code-check.yml"
       - ".github/workflows/v52-xg-data-audit.yml"
   workflow_dispatch:
@@ -50,6 +51,13 @@ jobs:
           print({"table_count": len(tables), "has_xg_observations": "xg_observations" in tables})
           con.close()
           PY
+      - name: Fetch real Understat xG/xGA and import into isolated database
+        env:
+          FOOTBALL_DB: football_model_database.sqlite
+          XG_INGEST_REPORT: data/xg_ingest_report.json
+          XG_SEASON_START: "2021"
+          XG_SEASON_END: "2026"
+        run: python data_pipeline/fetch_understat_xg.py
       - name: Audit xG/xGA coverage and T-12h provenance
         env:
           FOOTBALL_DB: football_model_database.sqlite
@@ -93,4 +101,6 @@ jobs:
           path: |
             data/feature_ingestion_audit.json
             data/xg_coverage_audit.json
+            data/xg_ingest_report.json
+            football_model_database.sqlite
           if-no-files-found: warn
