@@ -210,4 +210,8 @@ def main():
     print(json.dumps(report,ensure_ascii=False,indent=2))
     con.close()
     if report["errors"] and not report["source_matches_fetched"]: raise SystemExit("UNDERSTAT_FETCH_FAILED")
-if ( __name__ == "__main__"): main()
+if __name__ == "__main__":
+    main()
+    # Reclassify unmatched rows using competition/season metadata before artifacts are uploaded.
+    import runpy
+    runpy.run_path("data_pipeline/diagnose_xg_unmatched.py", run_name="__main__")
