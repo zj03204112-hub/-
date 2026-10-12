@@ -97,36 +97,72 @@ def main():
         except Exception as exc:
             errors.append({"league":"J1 League","season":season_label,"error":str(exc)})
 
-    # K League: use official API only. Do not silently promote the existing
-    # malformed public-fallback CSV into verified sample data.
-    api_key = os.getenv("KLEAGUE_API_KEY")
-    if api_key:
-        url = "https://api.kleague.com/api/audienceInfo01.do"
-        try:
-            resp = S.get(url, headers={"authKey":api_key},
-                         params={"league_gubun":"1","meet_year":"2026",
-                                 "sdate":"2026/01/01","edate":END.strftime("%Y/%m/%d")},
-                         timeout=45)
-            resp.raise_for_status()
-            payload = resp.json()
-            raw = pd.json_normalize(payload.get("response",{}).get("list",[]))
-            required = ["LEAGUE_NAME","GAME_DATE","HOME_TEAM_NAME","AWAY_TEAM_NAME","HOME_GAIN_GOAL","AWAY_GAIN_GOAL"]
-            if not set(required).issubset(raw.columns):
-                raise ValueError("official API schema missing required fields")
-            raw = raw[raw.LEAGUE_NAME.astype(str).eq("K리그1")].copy()
-            raw["match_date"] = pd.to_datetime(raw.GAME_DATE, errors="coerce")
-            raw["FTHG"] = pd.to_numeric(raw.HOME_GAIN_GOAL, errors="coerce")
-            raw["FTAG"] = pd.to_numeric(raw.AWAY_GAIN_GOAL, errors="coerce")
-            raw = raw[raw.match_date.between(START, END) & raw.FTHG.notna() & raw.FTAG.notna()].copy()
-            raw["league"]="K League 1"; raw["season_source"]="official-api-2026"
-            raw["HomeTeam"]=raw.HOME_TEAM_NAME; raw["AwayTeam"]=raw.AWAY_TEAM_NAME
-            raw["source_primary"]=url; raw["source_secondary"]=""
-            raw["verification_status"]="needs_secondary_verification"
-            rows.append(raw[["match_date","league","season_source","HomeTeam","AwayTeam","FTHG","FTAG","source_primary","source_secondary","verification_status"]])
-        except Exception as exc:
-            errors.append({"league":"K League 1","error":str(exc)})
-    else:
-        errors.append({"league":"K League 1","error":"KLEAGUE_API_KEY missing; official source not collected; excluded rather than substituting unverified fallback"})
+    # K League 1: public official results page as candidate source, so collection
+    # does not depend on a private API key. These rows remain unverified until
+    # independently matched against a second source.
+    kleague_url = "https://www.kleague.com/record/audienceDetail.do"
+    try:
+        tables = pd.read_html(kleague_url)
+        if not tables:
+            raise ValueError("official K League results page returned no tables")
+        raw = max(tables, key=lambda t: t.shape[0]).copy()
+        raw.columns = [str(x).strip() for x in raw.columns]
+        # Current official table schema: season, competition, date, home, opponent,
+        # result, stadium, attendance, away, note. Fail closed if it changes.
+        def col_match(pattern):
+            matches = [col for col in raw.columns if re.search(pattern, col, re.I)]
+            return matches[0] if len(matches) == 1 else None
+        season_col = col_match(r"시즌|season")
+        comp_col = col_match(r"대회명|competition")
+        date_col = col_match(r"일자|날짜|date")
+        home_col = col_match(r"홈팀|home")
+        away_col = col_match(r"원정팀|away")
+        score_col = col_match(r"경기결과|결과|result|score")
+        required_cols = [season_col,comp_col,date_col,home_col,away_col,score_col]
+        if any(x is None for x in required_cols):
+            raise ValueError(f"official K League results schema mismatch: {list(raw.columns)}")
+        raw = raw[raw[season_col].astype(str).str.contains("2026",na=False) &
+                  raw[comp_col].astype(str).str.contains(r"K리그1|K LEAGUE 1",case=False,regex=True,na=False)].copy()
+        raw["match_date"] = pd.to_datetime(raw[date_col], errors="coerce")
+        score = raw[score_col].astype(str).str.extract(r"(\d+)\s*[:：-]\s*(\d+)")
+        raw["FTHG"] = pd.to_numeric(score[0],errors="coerce")
+        raw["FTAG"] = pd.to_numeric(score[1],errors="coerce")
+        raw = raw[raw.match_date.between(START,END) & raw.FTHG.notna() & raw.FTAG.notna()].copy()
+        raw["league"]="K League 1"; raw["season_source"]="official-web-2026"
+        raw["HomeTeam"]=raw[home_col].astype(str).str.strip()
+        raw["AwayTeam"]=raw[away_col].astype(str).str.strip()
+        raw["source_primary"]=kleague_url; raw["source_secondary"]=""
+        raw["verification_status"]="needs_secondary_verification"
+        rows.append(raw[["match_date","league","season_source","HomeTeam","AwayTeam","FTHG","FTAG","source_primary","source_secondary","verification_status"]])
+    except Exception as exc:
+        errors.append({"league":"K League 1","error":str(exc)})
+        # API fallback only if an explicitly configured official key exists.
+        api_key = os.getenv("KLEAGUE_API_KEY")
+        if api_key:
+            url = "https://api.kleague.com/api/audienceInfo01.do"
+            try:
+                resp = S.get(url, headers={"authKey":api_key},
+                             params={"league_gubun":"1","meet_year":"2026",
+                                     "sdate":"2026/01/01","edate":END.strftime("%Y/%m/%d")},
+                             timeout=45)
+                resp.raise_for_status()
+                payload = resp.json()
+                api = pd.json_normalize(payload.get("response",{}).get("list",[]))
+                required = ["LEAGUE_NAME","GAME_DATE","HOME_TEAM_NAME","AWAY_TEAM_NAME","HOME_GAIN_GOAL","AWAY_GAIN_GOAL"]
+                if not set(required).issubset(api.columns):
+                    raise ValueError("official K League API schema missing required fields")
+                api = api[api.LEAGUE_NAME.astype(str).eq("K리그1")].copy()
+                api["match_date"]=pd.to_datetime(api.GAME_DATE,errors="coerce")
+                api["FTHG"]=pd.to_numeric(api.HOME_GAIN_GOAL,errors="coerce")
+                api["FTAG"]=pd.to_numeric(api.AWAY_GAIN_GOAL,errors="coerce")
+                api=api[api.match_date.between(START,END)&api.FTHG.notna()&api.FTAG.notna()].copy()
+                api["league"]="K League 1"; api["season_source"]="official-api-2026"
+                api["HomeTeam"]=api.HOME_TEAM_NAME; api["AwayTeam"]=api.AWAY_TEAM_NAME
+                api["source_primary"]=url; api["source_secondary"]=""
+                api["verification_status"]="needs_secondary_verification"
+                rows.append(api[["match_date","league","season_source","HomeTeam","AwayTeam","FTHG","FTAG","source_primary","source_secondary","verification_status"]])
+            except Exception as api_exc:
+                errors.append({"league":"K League 1 API","error":str(api_exc)})
 
     cols = ["match_date","league","season_source","HomeTeam","AwayTeam","FTHG","FTAG","source_primary","source_secondary","verification_status"]
     pool = pd.concat(rows, ignore_index=True) if rows else pd.DataFrame(columns=cols)
