@@ -24,7 +24,10 @@ S = requests.Session()
 S.headers.update({"User-Agent": "Mozilla/5.0 (compatible; football-sample-audit/1.0)"})
 
 def norm_team(s):
-    return re.sub(r"[^a-z0-9]+", "", str(s).strip().lower())
+    # Python's Unicode-aware \w preserves Japanese/Korean/Chinese letters and digits.
+    # ASCII-only normalization collapsed all J1 team names to empty keys.
+    value = str(s).strip().casefold()
+    return re.sub(r"[\W_]+", "", value, flags=re.UNICODE)
 
 def read_football_data(code, season_code, league):
     url = f"https://www.football-data.co.uk/mmz4281/{season_code}/{code}.csv"
