@@ -6,6 +6,7 @@ a successful query with no matching row. This does not freeze data or run models
 """
 from __future__ import annotations
 import json, re
+from io import StringIO
 from datetime import datetime, timezone
 from pathlib import Path
 import pandas as pd
@@ -34,7 +35,7 @@ def first_match(text, aliases):
 def probe_jleague(case):
     r = requests.get(case["url"], headers=HEADERS, timeout=30)
     r.raise_for_status()
-    tables = pd.read_html(r.text)
+    tables = pd.read_html(StringIO(r.text))
     target_date = pd.Timestamp(case["date"])
     matches = []
     for table in tables:
@@ -61,7 +62,7 @@ def probe_jleague(case):
 def probe_fbref(case):
     r=requests.get(case["url"],headers=HEADERS,timeout=30)
     r.raise_for_status()
-    tables=pd.read_html(r.text)
+    tables=pd.read_html(StringIO(r.text))
     matches=[]
     for table in tables:
         df=table.copy()
