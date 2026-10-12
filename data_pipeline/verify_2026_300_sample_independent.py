@@ -149,11 +149,13 @@ def main():
         for offset in (-1, 0, 1):
             days.add((pd.Timestamp(d) + pd.Timedelta(days=offset)).strftime("%Y-%m-%d"))
     fetched, errors = {}, []
+    day_status = {}
     with ThreadPoolExecutor(max_workers=6) as pool:
         futures = {pool.submit(fetch_day, day): day for day in sorted(days)}
         for future in as_completed(futures):
             day, events, error = future.result()
             fetched[day] = events
+            day_status[day] = {"request_status": "failed" if error else "success", "events_returned": len(events), "error": error or ""}
             if error:
                 errors.append({"date":day,"error":error})
     rows = []
@@ -189,9 +191,11 @@ def main():
             # Multiple candidate events are ambiguous, even if one score matches.
             status = "ambiguous_secondary_match"
         else:
-            # Distinguish provider/API outage from a genuine no-match.
-            if errors:
-                status = "secondary_lookup_incomplete"
+            # A failed request is not a mismatch. Mark not-found only if at least one relevant date was queried successfully.
+            relevant_days = [(pd.Timestamp(date_value) + pd.Timedelta(days=offset)).strftime("%Y-%m-%d") for offset in (-1, 0, 1)] if date_value else []
+            successful_days = [d for d in relevant_days if day_status.get(d, {}).get("request_status") == "success"]
+            failed_days = [d for d in relevant_days if day_status.get(d, {}).get("request_status") != "success"]
+            status = "not_found_secondary" if successful_days else "secondary_lookup_incomplete"
         ev, home, away, score, query_day = matched if matched else ({}, "", "", None, "")
         rows.append({
             "candidate_row": int(idx) + 1,
@@ -203,6 +207,8 @@ def main():
             "candidate_away_goals": expected_score[1] if expected_score else "",
             "candidate_source": row.source_primary,
             "secondary_provider": "SofaScore",
+            "query_days_succeeded": ";".join(successful_days) if not candidates else "",
+            "query_days_failed": ";".join(failed_days) if not candidates else "",
             "secondary_match_id": ev.get("id", ""),
             "secondary_date_utc": event_date(ev) or "",
             "secondary_home": home,
@@ -236,6 +242,7 @@ def main():
         "provider": "SofaScore independent secondary source",
         "provider_days_requested": len(days),
         "provider_days_failed": len(errors),
+        "per_date_request_status": day_status,
         "provider_errors": errors[:50],
         "verification_csv_sha256": hashlib.sha256(OUT.read_bytes()).hexdigest(),
         "status": "verification audit only; never freezes sample; no training/backtest performed",
