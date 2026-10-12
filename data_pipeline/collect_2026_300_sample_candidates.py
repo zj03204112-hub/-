@@ -188,6 +188,25 @@ def main():
     (OUT/"collection_summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     (OUT/"collection_errors.json").write_text(json.dumps(errors,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(summary,ensure_ascii=False,indent=2))
+    if len(pool):
+        conflict_keys = set(
+            pool.loc[pool.duplicate_count.gt(1)].groupby("match_key").filter(
+                lambda g: g[["FTHG","FTAG"]].drop_duplicates().shape[0] > 1
+            )["match_key"].tolist()
+        )
+        print("DUPLICATE_SCORE_CONFLICT_DETAILS_BEGIN")
+        if conflict_keys:
+            view = pool[pool.match_key.isin(conflict_keys)][
+                ["match_date","league","season_source","HomeTeam","AwayTeam","FTHG","FTAG","source_primary","match_key"]
+            ].sort_values(["match_key","season_source"])
+            print(view.head(100).to_json(orient="records",date_format="iso",force_ascii=False))
+        else:
+            print("[]")
+        print("DUPLICATE_SCORE_CONFLICT_DETAILS_END")
+        print("LEAGUE_DATE_RANGE_BEGIN")
+        ranges = pool.groupby("league").match_date.agg(["min","max","count"]).reset_index()
+        print(ranges.to_json(orient="records",date_format="iso",force_ascii=False))
+        print("LEAGUE_DATE_RANGE_END")
     if len(pool)==0:
         raise SystemExit("No candidate matches collected")
 if __name__ == "__main__":
