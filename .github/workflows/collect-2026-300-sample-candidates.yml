@@ -1,4 +1,4 @@
-name: Collect 2026 300-match candidates
+name: Collect and independently verify 2026 300-match candidates
 on:
   workflow_dispatch:
   push:
@@ -6,13 +6,14 @@ on:
       - feature/v5.2-classification-data-audit
     paths:
       - 'data_pipeline/collect_2026_300_sample_candidates.py'
+      - 'data_pipeline/verify_2026_300_sample_independent.py'
       - '.github/workflows/collect-2026-300-sample-candidates.yml'
 permissions:
   contents: read
 jobs:
-  collect-candidates:
+  collect-and-verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
         with:
@@ -20,21 +21,26 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install collector dependencies
+      - name: Install collector and verification dependencies
         run: python -m pip install --upgrade pandas requests lxml
-      - name: Collect fresh 2026 candidate pool (no training/backtest)
+      - name: Collect candidate results only
         env:
           KLEAGUE_API_KEY: ${{ secrets.KLEAGUE_API_KEY }}
         run: python data_pipeline/collect_2026_300_sample_candidates.py
-      - name: Upload auditable candidate pool
+      - name: Independently cross-check date, teams, and full-time score
+        run: python data_pipeline/verify_2026_300_sample_independent.py
+      - name: Upload collection and independent-verification audit
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: 2026-300-match-candidates
+          name: 2026-300-match-independent-verification
           path: |
             data/sample_2026_300/candidate_pool_2026.csv
             data/sample_2026_300/collection_summary.json
             data/sample_2026_300/collection_errors.json
             data/sample_2026_300/duplicate_key_audit.csv
             data/sample_2026_300/date_identity_audit.csv
-          if-no-files-found: error
+            data/sample_2026_300/independent_source_verification.csv
+            data/sample_2026_300/independent_source_verification_summary.json
+          if-no-files-found: warn
           retention-days: 90
