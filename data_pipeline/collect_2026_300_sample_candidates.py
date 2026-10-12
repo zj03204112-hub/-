@@ -59,38 +59,43 @@ def main():
             except Exception as exc:
                 errors.append({"league":league,"season":season,"error":str(exc)})
 
-    # J1: query official J.League result table, but retain only parseable final
-    # scores and dates. Any unexpected page/schema is a hard audit warning.
-    j1_url = ("https://data.j-league.or.jp/SFMS01/search"
-              "?competition_years=2026&competition_frame_ids=1&tv_relay_station_name=")
-    try:
-        tables = pd.read_html(j1_url)
-        if not tables:
-            raise ValueError("official J.League page returned no tables")
-        raw = tables[0].copy()
-        if raw.shape[1] < 8:
-            raise ValueError(f"unexpected official J.League table shape {raw.shape}")
-        raw = raw.iloc[:, :11].copy()
-        raw.columns = ["Season","Competition","Section","Date","Time","HomeTeam","Score","AwayTeam","Stadium","Attendance","TV"][:raw.shape[1]]
-        # The official query can include cup matches. Keep only the exact J1 league competition.
-        comp_key = (raw["Competition"].astype(str).str.replace("Ｊ", "J", regex=False)
-                    .str.replace("１", "1", regex=False).str.strip().str.upper())
-        raw = raw[comp_key.eq("J1")].copy()
-        goals = raw["Score"].astype(str).str.extract(r"^\s*(\d+)\s*[-－]\s*(\d+)\s*$")
-        raw["FTHG"] = pd.to_numeric(goals[0], errors="coerce")
-        raw["FTAG"] = pd.to_numeric(goals[1], errors="coerce")
-        # Official site dates may include Japanese weekday text; extract YYYY/MM/DD or YY/MM/DD.
-        d = raw["Date"].astype(str).str.extract(r"(\d{2,4})/(\d{1,2})/(\d{1,2})")
-        year = pd.to_numeric(d[0], errors="coerce")
-        year = year.where(year >= 1000, year + 2000)
-        raw["match_date"] = pd.to_datetime({"year":year,"month":pd.to_numeric(d[1],errors="coerce"),"day":pd.to_numeric(d[2],errors="coerce")}, errors="coerce")
-        raw = raw[raw.match_date.between(START, END) & raw.FTHG.notna() & raw.FTAG.notna()].copy()
-        raw["league"] = "J1 League"; raw["season_source"] = "official-2026"
-        raw["source_primary"] = j1_url; raw["source_secondary"] = ""
-        raw["verification_status"] = "needs_secondary_verification"
-        rows.append(raw[["match_date","league","season_source","HomeTeam","AwayTeam","FTHG","FTAG","source_primary","source_secondary","verification_status"]])
-    except Exception as exc:
-        errors.append({"league":"J1 League","error":str(exc)})
+    # J1: calendar-year 2026 spans the official 2026 Special season
+    # (100 Year Vision League, Feb-Jun) and the new 2026/27 league season
+    # (from Aug). Query both official season IDs; do not accidentally collect
+    # only the autumn season and miss the first half of the calendar year.
+    j1_queries = [
+        ("2026-special", "https://data.j-league.or.jp/SFMS01/search?competition_years=20261&competition_frame_ids=35"),
+        ("2026-27", "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1"),
+    ]
+    for season_label, j1_url in j1_queries:
+        try:
+            tables = pd.read_html(j1_url)
+            if not tables:
+                raise ValueError(f"{season_label}: official J.League page returned no tables")
+            raw = tables[0].copy()
+            if raw.shape[1] < 8:
+                raise ValueError(f"{season_label}: unexpected official J.League table shape {raw.shape}")
+            raw = raw.iloc[:, :11].copy()
+            raw.columns = ["Season","Competition","Section","Date","Time","HomeTeam","Score","AwayTeam","Stadium","Attendance","TV"][:raw.shape[1]]
+            # Keep league competitions only; exclude Levain Cup, Super Cup, and other cups.
+            comp = raw["Competition"].astype(str).str.replace(" ", "", regex=False).str.upper()
+            is_j1_league = comp.str.contains(r"Ｊ１リーグ|J1LEAGUE|Ｊ１百年構想|J1百年構想|J1 100 YEAR VISION", regex=True, na=False)
+            raw = raw[is_j1_league].copy()
+            goals = raw["Score"].astype(str).str.extract(r"^\s*(\d+)\s*[-－](?:\s*\(PK\d+[-－]\d+\))?\s*(\d+)\s*$")
+            raw["FTHG"] = pd.to_numeric(goals[0], errors="coerce")
+            raw["FTAG"] = pd.to_numeric(goals[1], errors="coerce")
+            # Penalty shoot-out scores are ignored; use the score before (PK...) only.
+            d = raw["Date"].astype(str).str.extract(r"(\d{2,4})/(\d{1,2})/(\d{1,2})")
+            year = pd.to_numeric(d[0], errors="coerce")
+            year = year.where(year >= 1000, year + 2000)
+            raw["match_date"] = pd.to_datetime({"year":year,"month":pd.to_numeric(d[1],errors="coerce"),"day":pd.to_numeric(d[2],errors="coerce")}, errors="coerce")
+            raw = raw[raw.match_date.between(START, END) & raw.FTHG.notna() & raw.FTAG.notna()].copy()
+            raw["league"] = "J1 League"; raw["season_source"] = season_label
+            raw["source_primary"] = j1_url; raw["source_secondary"] = ""
+            raw["verification_status"] = "needs_secondary_verification"
+            rows.append(raw[["match_date","league","season_source","HomeTeam","AwayTeam","FTHG","FTAG","source_primary","source_secondary","verification_status"]])
+        except Exception as exc:
+            errors.append({"league":"J1 League","season":season_label,"error":str(exc)})
 
     # K League: use official API only. Do not silently promote the existing
     # malformed public-fallback CSV into verified sample data.
