@@ -69,6 +69,10 @@ def main():
             raise ValueError(f"unexpected official J.League table shape {raw.shape}")
         raw = raw.iloc[:, :11].copy()
         raw.columns = ["Season","Competition","Section","Date","Time","HomeTeam","Score","AwayTeam","Stadium","Attendance","TV"][:raw.shape[1]]
+        # The official query can include cup matches. Keep only the exact J1 league competition.
+        comp_key = (raw["Competition"].astype(str).str.replace("Ｊ", "J", regex=False)
+                    .str.replace("１", "1", regex=False).str.strip().str.upper())
+        raw = raw[comp_key.eq("J1")].copy()
         goals = raw["Score"].astype(str).str.extract(r"^\s*(\d+)\s*[-－]\s*(\d+)\s*$")
         raw["FTHG"] = pd.to_numeric(goals[0], errors="coerce")
         raw["FTAG"] = pd.to_numeric(goals[1], errors="coerce")
@@ -128,16 +132,57 @@ def main():
         pool = pool.sort_values(["match_date","league","HomeTeam","AwayTeam"])
     out_csv = OUT / "candidate_pool_2026.csv"
     pool.to_csv(out_csv, index=False, encoding="utf-8-sig")
+
+    # Emit every member of duplicate-key groups; do not silently discard rows.
+    duplicate_path = OUT / "duplicate_key_audit.csv"
+    if len(pool):
+        duplicates = pool[pool.duplicate_count.gt(1)].copy()
+        if len(duplicates):
+            score_counts = duplicates.groupby("match_key").apply(
+                lambda g: g[["FTHG","FTAG"]].drop_duplicates().shape[0],
+                include_groups=False
+            )
+            duplicates["duplicate_score_variants"] = duplicates.match_key.map(score_counts)
+            duplicates["duplicate_score_conflict"] = duplicates.duplicate_score_variants.gt(1)
+            duplicates = duplicates.sort_values(["match_key","season_source","source_primary"])
+        duplicates.to_csv(duplicate_path, index=False, encoding="utf-8-sig")
+    else:
+        pd.DataFrame(columns=cols+["home_key","away_key","match_key","duplicate_count",
+                                   "duplicate_score_variants","duplicate_score_conflict"]).to_csv(
+            duplicate_path,index=False,encoding="utf-8-sig")
+
+    # Flag identity/score anomalies without automatic correction.
+    identity_path = OUT / "date_identity_audit.csv"
+    if len(pool):
+        audit = pool.copy()
+        audit["audit_flags"] = ""
+        audit.loc[audit.home_key.eq("") | audit.away_key.eq(""), "audit_flags"] += "empty_team_key;"
+        audit.loc[audit.home_key.eq(audit.away_key), "audit_flags"] += "same_home_away_key;"
+        audit.loc[(pd.to_numeric(audit.FTHG,errors="coerce") < 0) |
+                  (pd.to_numeric(audit.FTAG,errors="coerce") < 0), "audit_flags"] += "negative_score;"
+        audit = audit[audit.audit_flags.ne("")].copy()
+    else:
+        audit = pd.DataFrame(columns=cols+["home_key","away_key","match_key","duplicate_count","audit_flags"])
+    audit.to_csv(identity_path, index=False, encoding="utf-8-sig")
+
     league_counts = {str(k):int(v) for k,v in pool.groupby("league").size().to_dict().items()}
+    duplicate_groups = pool[pool.duplicate_count.gt(1)].groupby("match_key") if len(pool) else []
+    duplicate_key_count = int(pool.loc[pool.duplicate_count.gt(1),"match_key"].nunique()) if len(pool) else 0
+    duplicate_conflict_count = int(
+        sum(g[["FTHG","FTAG"]].drop_duplicates().shape[0] > 1 for _,g in duplicate_groups)
+    ) if len(pool) else 0
     summary = {
         "date_start":str(START.date()),"date_end":str(END.date()),
         "candidate_rows":int(len(pool)),
         "unique_match_keys":int(pool.match_key.nunique()) if len(pool) else 0,
         "duplicate_rows":int(pool.match_key.duplicated(keep="first").sum()) if len(pool) else 0,
+        "duplicate_key_groups":duplicate_key_count,
+        "duplicate_groups_with_score_conflict":duplicate_conflict_count,
+        "identity_score_anomaly_rows":int(len(audit)),
         "verified_rows":int((pool.verification_status=="verified").sum()) if len(pool) else 0,
         "eligible_for_freeze_rows":0,
         "league_counts":league_counts,"errors":errors,
-        "status":"candidate collection only; no rows frozen; no training/backtest performed",
+        "status":"candidate collection only; duplicate/identity audit emitted; no rows frozen; no training/backtest performed",
         "candidate_csv_sha256":hashlib.sha256(out_csv.read_bytes()).hexdigest(),
     }
     (OUT/"collection_summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
