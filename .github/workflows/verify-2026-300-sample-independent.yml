@@ -9,6 +9,7 @@ on:
       - '.github/workflows/verify-2026-300-sample-independent.yml'
 permissions:
   contents: read
+  actions: read
 jobs:
   verify-independent-source:
     runs-on: ubuntu-latest
