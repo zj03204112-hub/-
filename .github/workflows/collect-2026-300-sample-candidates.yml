@@ -34,5 +34,7 @@ jobs:
             data/sample_2026_300/candidate_pool_2026.csv
             data/sample_2026_300/collection_summary.json
             data/sample_2026_300/collection_errors.json
+            data/sample_2026_300/duplicate_key_audit.csv
+            data/sample_2026_300/date_identity_audit.csv
           if-no-files-found: error
           retention-days: 90
