@@ -1,0 +1,38 @@
+name: Collect 2026 300-match candidates
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/v5.2-classification-data-audit
+    paths:
+      - 'data_pipeline/collect_2026_300_sample_candidates.py'
+      - '.github/workflows/collect-2026-300-sample-candidates.yml'
+permissions:
+  contents: read
+jobs:
+  collect-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/v5.2-classification-data-audit
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install collector dependencies
+        run: python -m pip install --upgrade pandas requests lxml
+      - name: Collect fresh 2026 candidate pool (no training/backtest)
+        env:
+          KLEAGUE_API_KEY: ${{ secrets.KLEAGUE_API_KEY }}
+        run: python data_pipeline/collect_2026_300_sample_candidates.py
+      - name: Upload auditable candidate pool
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2026-300-match-candidates
+          path: |
+            data/sample_2026_300/candidate_pool_2026.csv
+            data/sample_2026_300/collection_summary.json
+            data/sample_2026_300/collection_errors.json
+          if-no-files-found: error
+          retention-days: 90
