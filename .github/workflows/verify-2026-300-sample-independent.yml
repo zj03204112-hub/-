@@ -1,0 +1,70 @@
+name: Verify 2026 sample against independent source
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/v5.2-classification-data-audit
+    paths:
+      - 'data_pipeline/verify_2026_300_sample_independent.py'
+      - '.github/workflows/verify-2026-300-sample-independent.yml'
+permissions:
+  contents: read
+jobs:
+  verify-independent-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/v5.2-classification-data-audit
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install verification dependencies
+        run: python -m pip install --upgrade pandas requests
+      - name: Download candidate artifact from latest successful collection run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, urllib.request, zipfile, io
+          repo = os.environ["GH_REPOSITORY"]
+          token = os.environ["GH_TOKEN"]
+          headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
+          def get(url):
+              req = urllib.request.Request(url, headers=headers)
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  return json.load(r) if "json" in r.headers.get("Content-Type", "") else r.read()
+          runs = get(f"https://api.github.com/repos/{repo}/actions/workflows/collect-2026-300-sample-candidates.yml/runs?branch=feature/v5.2-classification-data-audit&status=success&per_page=10")
+          if not runs.get("workflow_runs"):
+              raise SystemExit("No successful candidate collection run exists")
+          run = runs["workflow_runs"][0]
+          artifacts = get(f"https://api.github.com/repos/{repo}/actions/runs/{run['id']}/artifacts")
+          matches = [a for a in artifacts.get("artifacts", []) if a["name"] == "2026-300-match-candidates" and not a["expired"]]
+          if not matches:
+              raise SystemExit(f"No unexpired candidate artifact for run {run['id']}")
+          req = urllib.request.Request(matches[0]["archive_download_url"], headers=headers)
+          with urllib.request.urlopen(req, timeout=60) as r:
+              payload = r.read()
+          target = pathlib.Path("data/sample_2026_300")
+          target.mkdir(parents=True, exist_ok=True)
+          with zipfile.ZipFile(io.BytesIO(payload)) as z:
+              names = [n for n in z.namelist() if n.endswith("candidate_pool_2026.csv")]
+              if len(names) != 1:
+                  raise SystemExit(f"Expected one candidate CSV in artifact, got {names}")
+              (target / "candidate_pool_2026.csv").write_bytes(z.read(names[0]))
+          print(f"Downloaded candidate pool from collection run {run['id']}; source artifact is not modified.")
+          PY
+      - name: Verify identity, local date, and full-time score against SofaScore
+        run: python data_pipeline/verify_2026_300_sample_independent.py
+      - name: Upload independent verification audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2026-300-independent-verification
+          path: |
+            data/sample_2026_300/independent_source_verification.csv
+            data/sample_2026_300/independent_source_verification_summary.json
+          if-no-files-found: warn
+          retention-days: 90
