@@ -1,7 +1,6 @@
 {
   "title": "398场 V5.2 + 50场欧国联合并回测样本核验",
   "created_at": "2026-10-13",
-  "output_file": "v52_plus_nations_league_448_merged_backtest_20261013.csv",
   "source_labels": {
     "v52": "V5.2_Club",
     "nations_league": "NationsLeague_V5"
@@ -13,10 +12,9 @@
     "merged_rows": 448,
     "unique_v52_native_match_ids": 398,
     "v52_duplicate_match_ids": [],
-    "unresolved_native_match_id_rows_nations_league": 50,
-    "exact_cross_source_fixture_overlaps_by_date_home_away": 0,
-    "overlap_fixtures": [],
-    "merged_duplicate_nonempty_match_ids": 0
+    "missing_native_match_id_rows_nations_league": 50,
+    "cross_source_fixture_overlaps_by_date_home_away": 0,
+    "overlap_fixtures": []
   },
   "metrics": {
     "v52_db_native": {
@@ -62,11 +60,11 @@
       "logloss": null
     }
   },
-  "caveats": [
-    "Nations League source CSV has no native match ID; match_id left blank rather than fabricated. Therefore native-ID dedupe is complete only for the 398 V5.2 rows; cross-source overlap checked by date + normalized home/away and found none.",
-    "V5.2 CSV is reconstructed from committed SQLite DB and compare_models.py, not the missing original local CSV.",
-    "Nations League metrics are retrospective V5 reconstruction and not an independent forward blind test.",
-    "Do not pool Brier/LogLoss across sources: Nations League per-match probabilities are absent.",
-    "V5.1 production model and prediction archives were not modified."
+  "notes": [
+    "Nations League CSV has no native match ID; its match_id fields remain blank instead of fabricated. Cross-source fixture overlap check by date + normalized home/away found none.",
+    "V5.2 rows reconstructed from committed SQLite DB and compare_models.py, not original missing local CSV.",
+    "Nations League metrics are retrospective saved V5 reconstruction, not independent forward blind test.",
+    "Nations League source has no per-match probabilities; Brier/LogLoss unavailable.",
+    "V5.1 production model and prediction archives unchanged."
   ]
 }
