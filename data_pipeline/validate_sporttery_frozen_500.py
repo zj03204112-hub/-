@@ -53,8 +53,8 @@ def build_index(match_result):
     idx = defaultdict(list)
     for m in match_result:
         md = date_only(m.get("matchDate") or m.get("matchDateTime") or "")
-        home = m.get("homeTeam") or m.get("allHomeTeam") or ""
-        away = m.get("awayTeam") or m.get("allAwayTeam") or ""
+        home = m.get("homeTeamName") or m.get("homeTeam") or m.get("allHomeTeam") or ""
+        away = m.get("awayTeamName") or m.get("awayTeam") or m.get("allAwayTeam") or ""
         ss = m.get("sectionsNo999") or ""
         # Keep raw object; score parsing is intentionally permissive.
         hs = as_score(m, "home")
@@ -92,8 +92,8 @@ def match_target(t, candidates):
     team_score = []
     for m in candidates:
         md = date_only(m.get("matchDate") or m.get("matchDateTime") or "")
-        mh = norm(m.get("homeTeam") or m.get("allHomeTeam") or "")
-        ma = norm(m.get("awayTeam") or m.get("allAwayTeam") or "")
+        mh = norm(m.get("homeTeamName") or m.get("homeTeam") or m.get("allHomeTeam") or "")
+        ma = norm(m.get("awayTeamName") or m.get("awayTeam") or m.get("allAwayTeam") or "")
         ms = as_score(m, "home")
         mas = as_score(m, "away")
         if md == td and mh == home and ma == away and ms == hs and mas == aw:
@@ -120,7 +120,15 @@ def main():
             fetch_failures.append(d)
             by_date[d] = []
         else:
-            by_date[d] = data["value"].get("matchResult", []) or []
+            raw_matches = data["value"].get("matchResult", []) or []
+            flattened = []
+            for parent in raw_matches:
+                subs = parent.get("subMatchList") or [parent]
+                for sub in subs:
+                    merged = dict(parent)
+                    merged.update(sub)
+                    flattened.append(merged)
+            by_date[d] = flattened
         time.sleep(0.15)
 
     results = []
@@ -150,11 +158,11 @@ def main():
             "odds_error": ""
         })
         if m:
-            sid = str(m.get("matchId") or m.get("matchID") or "")
+            sid = str(m.get("matchId") or m.get("matchID") or m.get("match_id") or "")
             row["sporttery_match_id"] = sid
-            row["sporttery_match_date"] = str(m.get("matchDate") or "")
-            row["sporttery_home"] = str(m.get("homeTeam") or m.get("allHomeTeam") or "")
-            row["sporttery_away"] = str(m.get("awayTeam") or m.get("allAwayTeam") or "")
+            row["sporttery_match_date"] = str(m.get("matchDate") or m.get("matchDateTime") or "")
+            row["sporttery_home"] = str(m.get("homeTeamName") or m.get("homeTeam") or m.get("allHomeTeam") or "")
+            row["sporttery_away"] = str(m.get("awayTeamName") or m.get("awayTeam") or m.get("allAwayTeam") or "")
             row["sporttery_final_score"] = f"{as_score(m,'home')}-{as_score(m,'away')}"
             sporttery_ids[t["match_id"]] = sid
         results.append(row)
