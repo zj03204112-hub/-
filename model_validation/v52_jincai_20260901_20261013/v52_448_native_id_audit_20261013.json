@@ -1,0 +1,41 @@
+{
+  "title": "448场样本 Sporttery 原生 matchId 核验",
+  "sample_rows": 448,
+  "queried_dates": 24,
+  "date_query_errors": {
+    "2026-09-02": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-03": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-04": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-05": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-06": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-07": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-08": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-09": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-11": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-12": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-13": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-14": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-15": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-16": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-17": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-18": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-19": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-20": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-24": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-25": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-26": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-27": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-28": "HTTPError: HTTP Error 567: Unknown Status",
+    "2026-09-29": "HTTPError: HTTP Error 567: Unknown Status"
+  },
+  "status_counts": {
+    "QUERY_ERROR": 448
+  },
+  "verified_unique_count": 0,
+  "unresolved_count": 448,
+  "duplicate_native_ids": {},
+  "matching_rule": "exact normalized date + home team + away team + final score; only a unique candidate is accepted",
+  "policy": "No guessed IDs. No exact or ambiguous candidates remain blank. Sporttery native ID is a provider-specific ID and is not substituted for internal DB match_id.",
+  "source_csv": "model_validation/v52_jincai_20260901_20261013/v52_plus_nations_league_448_merged_backtest_20261013.csv",
+  "mapping_csv": "model_validation/v52_jincai_20260901_20261013/v52_448_native_id_mapping_20261013.csv"
+}
