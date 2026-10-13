@@ -7,6 +7,7 @@ import csv, json, re, time, urllib.parse, urllib.request
 from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
+from sporttery_official_client import get_results, SportteryAccessError
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "model_validation/v52_jincai_20260901_20261013/v52_plus_nations_league_448_merged_backtest_20261013.csv"
@@ -73,24 +74,29 @@ def flatten_payload(payload):
 
 def fetch_date(day):
     failures = []
-    variants = {
-        "uniform_result": {"startDate": day, "endDate": day},
-        "jc_result": {"matchPage": 1, "matchBeginDate": day, "matchEndDate": day,
-                      "leagueId": "", "pageSize": 200, "pageNo": 1,
-                      "isFix": 0, "pcOrWap": 1},
-    }
-    for name, url in BASES:
-        query = urllib.parse.urlencode(variants[name])
-        req = urllib.request.Request(url + "?" + query, headers=HEAD)
-        try:
-            with urllib.request.urlopen(req, timeout=35) as response:
-                payload = json.load(response)
-            items = flatten_payload(payload)
-            if items:
-                return items, name
-            failures.append(f"{name}: response contained no match rows")
-        except Exception as exc:
-            failures.append(f"{name}: {type(exc).__name__}: {exc}")
+    # Preferred historical official result API through the shared provider client.
+    try:
+        items = get_results(day, day)
+        if items:
+            return items, "uniform_result_client"
+        failures.append("uniform_result_client: response contained no match rows")
+    except SportteryAccessError as exc:
+        failures.append(f"uniform_result_client: {exc}")
+
+    # Compatibility fallback retained for deployments where the result schema/path differs.
+    url = "https://webapi.sporttery.cn/gateway/jc/football/getMatchResultV1.qry"
+    params = {"matchPage": 1, "matchBeginDate": day, "matchEndDate": day,
+              "leagueId": "", "pageSize": 200, "pageNo": 1, "isFix": 0, "pcOrWap": 1}
+    req = urllib.request.Request(url + "?" + urllib.parse.urlencode(params), headers=HEAD)
+    try:
+        with urllib.request.urlopen(req, timeout=25) as response:
+            payload = json.load(response)
+        items = flatten_payload(payload)
+        if items:
+            return items, "jc_result_compat"
+        failures.append("jc_result_compat: response contained no match rows")
+    except Exception as exc:
+        failures.append(f"jc_result_compat: {type(exc).__name__}: {exc}")
     raise RuntimeError(" | ".join(failures))
 
 with SRC.open(encoding="utf-8-sig", newline="") as f:
