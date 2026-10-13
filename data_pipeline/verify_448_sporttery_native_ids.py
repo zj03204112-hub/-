@@ -12,7 +12,10 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "model_validation/v52_jincai_20260901_20261013/v52_plus_nations_league_448_merged_backtest_20261013.csv"
 OUT = ROOT / "model_validation/v52_jincai_20260901_20261013/v52_448_native_id_mapping_20261013.csv"
 REPORT = ROOT / "model_validation/v52_jincai_20260901_20261013/v52_448_native_id_audit_20261013.json"
-BASE = "https://webapi.sporttery.cn/gateway/uniform/football/getUniformMatchResultV1.qry"
+BASES = [
+    ("uniform_result", "https://webapi.sporttery.cn/gateway/uniform/football/getUniformMatchResultV1.qry"),
+    ("jc_result", "https://webapi.sporttery.cn/gateway/jc/football/getMatchResultV1.qry"),
+]
 HEAD = {
     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1",
     "Referer": "https://www.sporttery.cn/",
@@ -49,11 +52,7 @@ def get_date(m):
             continue
     return raw[:10]
 
-def fetch_date(day):
-    params = urllib.parse.urlencode({"startDate": day, "endDate": day})
-    req = urllib.request.Request(BASE + "?" + params, headers=HEAD)
-    with urllib.request.urlopen(req, timeout=35) as response:
-        payload = json.load(response)
+def flatten_payload(payload):
     if payload.get("success") is False:
         raise RuntimeError(str(payload.get("errorMessage") or "official result endpoint returned success=false"))
     val = payload.get("value") or {}
@@ -63,7 +62,36 @@ def fetch_date(day):
             item = dict(match)
             item.update(child)
             flattened.append(item)
+    for match in (val.get("matchList") or []):
+        for child in (match.get("subMatchList") or [match]):
+            item = dict(match)
+            item.update(child)
+            flattened.append(item)
+    if not flattened and isinstance(val, list):
+        flattened = val
     return flattened
+
+def fetch_date(day):
+    failures = []
+    variants = {
+        "uniform_result": {"startDate": day, "endDate": day},
+        "jc_result": {"matchPage": 1, "matchBeginDate": day, "matchEndDate": day,
+                      "leagueId": "", "pageSize": 200, "pageNo": 1,
+                      "isFix": 0, "pcOrWap": 1},
+    }
+    for name, url in BASES:
+        query = urllib.parse.urlencode(variants[name])
+        req = urllib.request.Request(url + "?" + query, headers=HEAD)
+        try:
+            with urllib.request.urlopen(req, timeout=35) as response:
+                payload = json.load(response)
+            items = flatten_payload(payload)
+            if items:
+                return items, name
+            failures.append(f"{name}: response contained no match rows")
+        except Exception as exc:
+            failures.append(f"{name}: {type(exc).__name__}: {exc}")
+    raise RuntimeError(" | ".join(failures))
 
 with SRC.open(encoding="utf-8-sig", newline="") as f:
     rows = list(csv.DictReader(f))
@@ -73,9 +101,12 @@ by_date = defaultdict(list)
 errors = {}
 for r in rows:
     by_date[r["date"]].append(r)
+endpoint_counts = Counter()
 for day in sorted(by_date):
     try:
-        by_date[day] = fetch_date(day)
+        items, endpoint = fetch_date(day)
+        by_date[day] = items
+        endpoint_counts[endpoint] += 1
         time.sleep(0.15)
     except Exception as e:
         errors[day] = f"{type(e).__name__}: {e}"
@@ -145,6 +176,8 @@ report = {
     "title": "448场样本 Sporttery 原生 matchId 核验",
     "sample_rows": len(rows),
     "queried_dates": len(by_date),
+    "successful_endpoint_counts": dict(endpoint_counts),
+    "endpoints_tested": [name for name, _ in BASES],
     "date_query_errors": errors,
     "status_counts": dict(status_counts),
     "verified_unique_count": sum(1 for r in out if r["status"] == "VERIFIED_UNIQUE"),
