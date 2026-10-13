@@ -12,10 +12,10 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "model_validation/v52_jincai_20260901_20261013/v52_plus_nations_league_448_merged_backtest_20261013.csv"
 OUT = ROOT / "model_validation/v52_jincai_20260901_20261013/v52_448_native_id_mapping_20261013.csv"
 REPORT = ROOT / "model_validation/v52_jincai_20260901_20261013/v52_448_native_id_audit_20261013.json"
-BASE = "https://webapi.sporttery.cn/gateway/uniform/fb/getMatchDataPageListV1.qry"
+BASE = "https://webapi.sporttery.cn/gateway/uniform/football/getUniformMatchResultV1.qry"
 HEAD = {
     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1",
-    "Referer": "https://m.sporttery.cn/mjc/zqsj/?tab=result",
+    "Referer": "https://www.sporttery.cn/",
     "Origin": "https://m.sporttery.cn",
     "Accept": "application/json,text/plain,*/*",
     "X-Requested-With": "XMLHttpRequest",
@@ -50,12 +50,20 @@ def get_date(m):
     return raw[:10]
 
 def fetch_date(day):
-    params = urllib.parse.urlencode({"method": "result", "matchDate": day})
+    params = urllib.parse.urlencode({"startDate": day, "endDate": day})
     req = urllib.request.Request(BASE + "?" + params, headers=HEAD)
     with urllib.request.urlopen(req, timeout=35) as response:
         payload = json.load(response)
+    if payload.get("success") is False:
+        raise RuntimeError(str(payload.get("errorMessage") or "official result endpoint returned success=false"))
     val = payload.get("value") or {}
-    return [m for group in (val.get("matchInfoList") or []) for m in (group.get("subMatchList") or [])]
+    flattened = []
+    for match in (val.get("matchResult") or []):
+        for child in (match.get("subMatchList") or [match]):
+            item = dict(match)
+            item.update(child)
+            flattened.append(item)
+    return flattened
 
 with SRC.open(encoding="utf-8-sig", newline="") as f:
     rows = list(csv.DictReader(f))
@@ -86,8 +94,8 @@ for r in rows:
     candidates = []
     for m in by_date[day]:
         mid = str(m.get("matchId") or "").strip()
-        mh = norm(m.get("allHomeTeam") or m.get("homeTeamAllName") or m.get("homeTeam") or "")
-        ma = norm(m.get("allAwayTeam") or m.get("awayTeamAllName") or m.get("awayTeam") or "")
+        mh = norm(m.get("allHomeTeam") or m.get("homeTeamName") or m.get("homeTeamAllName") or m.get("homeTeam") or "")
+        ma = norm(m.get("allAwayTeam") or m.get("awayTeamName") or m.get("awayTeamAllName") or m.get("awayTeam") or "")
         ms = get_score(m)
         if mid and mh == target_h and ma == target_a and ms == (sh, sa):
             candidates.append((m, ms))
