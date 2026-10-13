@@ -115,8 +115,17 @@ for day in sorted(by_date):
         endpoint_counts[endpoint] += 1
         time.sleep(0.15)
     except Exception as e:
-        errors[day] = f"{type(e).__name__}: {e}"
+        message = f"{type(e).__name__}: {e}"
+        errors[day] = message
         by_date[day] = []
+        # HTTP 567 is an upstream WAF/network denial, not a match-level miss.
+        # Stop repeat requests to the same host and mark remaining dates unresolved.
+        if "HTTP 567" in message or "HTTP 403" in message:
+            for remaining_day in sorted(by_date):
+                if remaining_day not in errors and remaining_day > day:
+                    errors[remaining_day] = "SKIPPED_AFTER_UPSTREAM_ACCESS_DENIAL: " + message
+                    by_date[remaining_day] = []
+            break
 
 out = []
 status_counts = Counter()
