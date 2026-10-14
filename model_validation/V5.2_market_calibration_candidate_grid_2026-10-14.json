@@ -1,9 +1,9 @@
 {
-  "schema_version": "v5.2-market-calibration-candidate-grid-1.0",
+  "schema_version": "v5.2-market-calibration-candidate-grid-1.1",
   "created_at": "2026-10-14",
   "branch": "feature/v5.2-classification-data-audit",
   "status": "experimental_only_not_enabled",
-  "purpose": "Define a reproducible, leakage-safe candidate grid after reviewing the 2026-10-13 UEFA Champions League Matchday 2 manual market-adjusted predictions.",
+  "purpose": "Implement the requested ordered calibration workflow from the 2026-10-13 UEFA Champions League Matchday 2 market-adjusted review without changing production behavior.",
   "scope": {
     "competition": "UEFA Champions League",
     "review_matches": 9,
@@ -16,25 +16,82 @@
     "total_goals_blend_weight": 0.0,
     "high_total_tail_scale": 1.0,
     "enabled": false,
-    "note": "No production parameter is changed by this candidate file. Existing V5.1 and historical predictions remain untouched."
+    "note": "Candidate grid only. Do not alter V5.1, main, or historical prediction snapshots."
   },
+  "ordered_experiment_plan": [
+    {
+      "priority": "A",
+      "module": "total_goals_distribution_from_over_under_line",
+      "question": "At total-goal lines 3.0, 3.25, 3.5, 4.0, and 4.5, does the model systematically underpredict or overpredict total goals?",
+      "candidate_parameters": {
+        "total_goals_blend_weight": [0.0, 0.05, 0.1, 0.15, 0.2],
+        "high_total_tail_scale": [1.0, 1.05, 1.1, 1.15],
+        "high_total_trigger_line": [3.0, 3.25, 3.5, 4.0, 4.5]
+      },
+      "metrics": ["total_goals_MAE", "total_goals_bias_by_line", "scoreline_tail_4plus", "Brier", "LogLoss"],
+      "gate": "Freeze all other modules; no parameter chosen using the nine reviewed matches."
+    },
+    {
+      "priority": "B",
+      "module": "net_goal_distribution_from_asian_handicap",
+      "question": "At deeper handicaps, does probability become too concentrated on the favorite winning, suppressing draws and underdog wins?",
+      "candidate_parameters": {
+        "asian_handicap_blend_weight": [0.0, 0.05, 0.1, 0.15, 0.2]
+      },
+      "metrics": ["net_goal_distribution_0_1_2_3plus", "HDA_confusion_matrix", "draw_recall", "Brier", "LogLoss"],
+      "gate": "Freeze the total-goals module at baseline while testing this stage."
+    },
+    {
+      "priority": "C",
+      "module": "home_away_goal_allocation",
+      "question": "Are away-team high-scoring tails and underdog scoring tails suppressed?",
+      "candidate_parameters": {
+        "home_lambda_scale": [0.95, 1.0, 1.05],
+        "away_lambda_scale": [0.95, 1.0, 1.05]
+      },
+      "metrics": ["home_goals_MAE", "away_goals_MAE", "both_teams_scored_rate", "score1_exact_hit_rate", "score2_exact_hit_rate", "Brier", "LogLoss"],
+      "gate": "Test only after A and B are individually measured; avoid ungrounded blanket increases to goal means."
+    },
+    {
+      "priority": "D",
+      "module": "draw_and_upset_distribution",
+      "question": "Does the model improperly suppress draws and underdog wins when the handicap is deep?",
+      "candidate_parameters": {
+        "draw_or_upset_adjustment": ["baseline", "calibrated_on_training_window_only"]
+      },
+      "metrics": ["draw_recall", "underdog_win_recall", "HDA_confusion_matrix", "Brier", "LogLoss"],
+      "gate": "No hard-coded draw multiplier unless it improves independent time holdout and both Brier and LogLoss do not worsen."
+    },
+    {
+      "priority": "E",
+      "module": "joint_market_calibration",
+      "question": "Does combining Asian handicap and total-goals information improve beyond either source alone?",
+      "required_ablations": [
+        "base_model_only",
+        "base_plus_asian_handicap_only",
+        "base_plus_total_goals_only",
+        "base_plus_asian_handicap_and_total_goals"
+      ],
+      "gate": "Run only after A-D individual diagnostics; promote only if independent time holdout is reproducible and both Brier and LogLoss do not worsen."
+    }
+  ],
   "candidate_grid": {
     "asian_handicap_blend_weight": [0.0, 0.05, 0.1, 0.15, 0.2],
     "total_goals_blend_weight": [0.0, 0.05, 0.1, 0.15, 0.2],
     "high_total_tail_scale": [1.0, 1.05, 1.1, 1.15],
-    "high_total_trigger_line": [3.0, 3.25, 3.5]
+    "high_total_trigger_line": [3.0, 3.25, 3.5, 4.0, 4.5]
   },
   "feature_contract": {
     "asian_handicap": {
-      "role": "candidate prior for expected goal difference",
+      "role": "candidate prior for expected goal difference, not a result label",
       "must_store": ["provider", "market", "home_handicap_line", "home_water", "away_water", "observed_at", "source_url_or_raw_snapshot_id"],
-      "sign_convention": "Normalize all providers to a documented home-team handicap convention before use.",
+      "sign_convention": "Normalize every provider to a documented home-team handicap convention.",
       "forbidden": ["using handicap directly as H/D/A label", "using post-kickoff or post-match line", "substituting Asian handicap for official Sporttery handicap"]
     },
     "total_goals": {
       "role": "candidate prior for expected total goals",
       "must_store": ["provider", "market", "total_line", "over_water", "under_water", "observed_at", "source_url_or_raw_snapshot_id"],
-      "forbidden": ["treating high total line as a guarantee of over", "using post-kickoff or post-match line"]
+      "forbidden": ["treating a high total line as a guarantee of over", "using post-kickoff or post-match line"]
     },
     "timestamp_policy": {
       "required_prediction_cutoff": "kickoff_minus_12_hours",
@@ -48,15 +105,9 @@
     "mu_diff": "blend(base_mu_diff, calibrated_asian_handicap_prior, asian_handicap_blend_weight)",
     "lambda_home": "max(epsilon, (mu_total + mu_diff) / 2)",
     "lambda_away": "max(epsilon, (mu_total - mu_diff) / 2)",
-    "note": "The market-line-to-prior mappings must be calibrated on an earlier training/calibration window. Do not equate raw handicap or total line directly with goal expectations."
+    "note": "The market-line-to-prior mappings must be calibrated on an earlier training/calibration window. Do not map raw handicap/total lines directly to goal expectations without calibration."
   },
   "evaluation_plan": {
-    "required_ablations": [
-      "base_model_only",
-      "base_plus_asian_handicap_only",
-      "base_plus_total_goals_only",
-      "base_plus_asian_handicap_and_total_goals"
-    ],
     "frozen_sample_required": true,
     "chronological_split_required": true,
     "independent_time_holdout_required": true,
@@ -64,8 +115,11 @@
       "90min_HDA_accuracy",
       "HDA_confusion_matrix",
       "draw_recall",
+      "underdog_win_recall",
       "score1_exact_hit_rate",
       "score2_exact_hit_rate",
+      "home_goals_MAE",
+      "away_goals_MAE",
       "total_goals_MAE",
       "net_goal_distribution_0_1_2_3plus",
       "Brier",
@@ -80,9 +134,9 @@
     "second_score_exact_hits": "1/9",
     "first_score_total_goals_MAE": 1.6667,
     "error_pattern": [
-      "undercalled away-team goal tail in Inter vs Club Brugge and Galatasaray vs Barcelona",
-      "undercalled home-team goals and draw risk in Viking vs Bayern",
-      "overcalled total goals in Leipzig vs PSV",
+      "underestimated away-team scoring tail in Inter vs Club Brugge and Galatasaray vs Barcelona",
+      "underestimated home-team scoring and draw risk in Viking vs Bayern",
+      "overestimated total goals in Leipzig vs PSV",
       "missed upset direction in Sabah vs Slavia and Lens vs Sporting"
     ],
     "interpretation_limit": "These were manually adjusted market-reference predictions, not a replay of V5.2 production outputs; n=9 is diagnostic only and insufficient for parameter estimation."
