@@ -82,6 +82,70 @@ def metrics(rows, scale):
     }
 
 
+def outcome_from_score(score):
+    try:
+        h, a = (int(x) for x in score.split("-", 1))
+    except (ValueError, AttributeError):
+        return ""
+    return "H" if h > a else "A" if h < a else "D"
+
+
+def retrospective_backtest(rows):
+    # Actual-score evaluation covers all 448 rows, including Nations League.
+    # Probability/lambda calibration remains restricted to rows with saved lambdas.
+    by_source = {}
+    confusion = {actual: {pred: 0 for pred in ("H", "D", "A")} for actual in ("H", "D", "A")}
+    for r in rows:
+        source = r.get("sample_source", "UNKNOWN") or "UNKNOWN"
+        s = by_source.setdefault(source, {
+            "n": 0, "pred_result_correct": 0, "score1_exact": 0,
+            "score2_exact": 0, "actual_hda": Counter(), "pred_hda": Counter()
+        })
+        s["n"] += 1
+        actual = r.get("actual_result", "") or outcome_from_score(r.get("actual_score", ""))
+        pred = r.get("pred_result", "") or outcome_from_score(r.get("pred_score1", ""))
+        if actual in ("H", "D", "A"):
+            s["actual_hda"][actual] += 1
+        if pred in ("H", "D", "A"):
+            s["pred_hda"][pred] += 1
+        if actual in ("H", "D", "A") and pred in ("H", "D", "A"):
+            confusion[actual][pred] += 1
+            s["pred_result_correct"] += int(actual == pred)
+        actual_score = r.get("actual_score", "")
+        s["score1_exact"] += int(bool(actual_score) and r.get("pred_score1", "") == actual_score)
+        s["score2_exact"] += int(bool(actual_score) and r.get("pred_score2", "") == actual_score)
+    formatted = {}
+    for source, s in by_source.items():
+        n = s["n"]
+        formatted[source] = {
+            "n": n,
+            "pred_result_correct": s["pred_result_correct"],
+            "pred_result_accuracy": round(s["pred_result_correct"] / n, 6) if n else None,
+            "score1_exact_hits": s["score1_exact"],
+            "score1_exact_rate": round(s["score1_exact"] / n, 6) if n else None,
+            "score2_exact_hits": s["score2_exact"],
+            "score2_exact_rate": round(s["score2_exact"] / n, 6) if n else None,
+            "actual_hda": dict(s["actual_hda"]),
+            "pred_hda": dict(s["pred_hda"]),
+        }
+    n = len(rows)
+    correct = sum(v["pred_result_correct"] for v in by_source.values())
+    score1 = sum(v["score1_exact"] for v in by_source.values())
+    score2 = sum(v["score2_exact"] for v in by_source.values())
+    return {
+        "n": n,
+        "pred_result_correct": correct,
+        "pred_result_accuracy": round(correct / n, 6) if n else None,
+        "score1_exact_hits": score1,
+        "score1_exact_rate": round(score1 / n, 6) if n else None,
+        "score2_exact_hits": score2,
+        "score2_exact_rate": round(score2 / n, 6) if n else None,
+        "confusion_matrix_actual_rows_predicted_columns": confusion,
+        "by_source": formatted,
+        "limitation": "Retrospective stored predictions, not a prospective blind test; 50 Nations League rows have no saved probability/lambda vectors, so probability calibration metrics are unavailable for those rows."
+    }
+
+
 def main():
     with open(INPUT, encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f))
@@ -89,6 +153,7 @@ def main():
     if not rows or not required.issubset(rows[0]):
         raise SystemExit(f"INPUT_SCHEMA_INVALID required={sorted(required)}")
     merged_rows = rows
+    all_448_backtest = retrospective_backtest(merged_rows)
     native_ids = {r["match_id"] for r in merged_rows if r["match_id"]}
     if len(merged_rows) != 448 or len(native_ids) != 398:
         raise SystemExit(f"FROZEN_SAMPLE_INTEGRITY_FAIL rows={len(merged_rows)} native_ids={len(native_ids)}")
@@ -126,6 +191,7 @@ def main():
         "title": "V5.2 goal-distribution repair audit",
         "input": INPUT,
         "sample_integrity": {"merged_rows": len(merged_rows), "scored_native_rows": len(rows), "excluded_nations_league_rows_missing_lambdas": len(merged_rows) - len(rows), "unique_native_ids": len(native_ids)},
+        "all_448_retrospective_backtest": all_448_backtest,
         "method": "chronological 70/30 split; fit one common lambda multiplier on train scoreline NLL only; evaluate later 30% holdout",
         "train": {"n": len(train), "best_scale": best["scale"], "best_scoreline_nll": round(best["train_scoreline_nll"], 6)},
         "holdout_baseline": baseline,
@@ -142,7 +208,7 @@ def main():
     Path(OUTPUT).parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
-    print(json.dumps({k: out[k] for k in ("sample_integrity", "train", "holdout_baseline", "holdout_candidate", "candidate_accepted_for_next_experiment")}, ensure_ascii=False, indent=2))
+    print(json.dumps({k: out[k] for k in ("sample_integrity", "all_448_retrospective_backtest", "train", "holdout_baseline", "holdout_candidate", "candidate_accepted_for_next_experiment")}, ensure_ascii=False, indent=2))
     print("REPORT=" + OUTPUT)
 
 
