@@ -50,14 +50,14 @@ def main():
  if len(sample)!=448: raise SystemExit(f"FROZEN_SAMPLE_FAIL expected 448 got {len(sample)}")
  s=requests.Session(); s.headers.update({"User-Agent":"Mozilla/5.0","Referer":PAGE})
  html=s.get(PAGE,timeout=30);html.raise_for_status()
- links=re.findall(r'href=["\\']([^"\\']*downloads/[^"\\']+\\.csv)["\\']',html.text,re.I)
+ links=re.findall(r"""href=["']([^"']*downloads/[^"']+\.csv)["']""",html.text,re.I)
  downloads={}
  for href in links:
   full=href if href.startswith("http") else "https://sgodds.com"+href
   base=full.rsplit("/",1)[-1].lower()
   for league in LEAGUES:
    slug=league.lower().replace(" ","-")
-   if slug in base: downloads[league]=full
+   m=re.search(r"""href=["']([^"']*downloads/[^"']*"""+re.escape(slug)+r"""[^"']*\.csv)["']""",html.text,re.I)
  for league in LEAGUES:
   if league not in downloads:
    slug=league.lower().replace(" ","-")
