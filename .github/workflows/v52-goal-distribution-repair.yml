@@ -37,3 +37,5 @@ jobs:
           name: v52-goal-distribution-repair-audit
           path: model_validation/v52_jincai_20260901_20261013/v52_goal_distribution_repair_audit.json
           if-no-files-found: error
+
+# Re-trigger isolated audit for explicit acceptance verification.
