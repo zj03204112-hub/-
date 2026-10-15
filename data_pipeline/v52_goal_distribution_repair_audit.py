@@ -134,3 +134,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Acceptance trigger: rerun isolated audit workflow on the frozen sample.
