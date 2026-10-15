@@ -109,6 +109,63 @@ def main():
                       "source":"Sporttery getFixedBonusV1 oddsHistory","time_quality":"TIMESTAMPED" if parsed else "UNPARSED_TIMESTAMP"})
             time.sleep(.12)
         print(json.dumps({"date":d,"dates":f"{di}/{len(bydate)}","matched":status["mapped"],"history_rows":len(history)},ensure_ascii=False),flush=True)
+
+    # Fallback source: Football-Data CSV odds; these have no exact intraday timestamp.
+    league_files=[
+      ("EPL","https://www.football-data.co.uk/mmz4281/2627/E0.csv"),
+      ("LALIGA","https://www.football-data.co.uk/mmz4281/2627/SP1.csv"),
+      ("BUNDESLIGA","https://www.football-data.co.uk/mmz4281/2627/D1.csv"),
+      ("SERIEA","https://www.football-data.co.uk/mmz4281/2627/I1.csv"),
+      ("LIGUE1","https://www.football-data.co.uk/mmz4281/2627/F1.csv"),
+      ("J1","https://www.football-data.co.uk/new/J1.csv"),
+    ]
+    import io
+    for league,url in league_files:
+        try:
+            rr=sess.get(url,timeout=30); rr.raise_for_status()
+            try: txt=rr.content.decode("utf-8-sig")
+            except UnicodeDecodeError: txt=rr.content.decode("cp1252",errors="replace")
+            data=list(csv.DictReader(io.StringIO(txt)))
+            if not data:
+                status["football_data_empty_"+league]+=1; continue
+            cols={str(k).strip().lower():k for k in data[0].keys() if k}
+            def pick(row,*names):
+                for n in names:
+                    if n.lower() in cols: return row.get(cols[n.lower()],"")
+                return ""
+            for r in sample:
+                if r.get("sample_source")=="NationsLeague_V5": continue
+                d=r["date"]; candidates=[]
+                for q in data:
+                    qd=str(pick(q,"Date","date")).strip(); parsed=""
+                    for fmt in ("%d/%m/%y","%d/%m/%Y","%Y-%m-%d"):
+                        try: parsed=datetime.strptime(qd,fmt).strftime("%Y-%m-%d"); break
+                        except ValueError: pass
+                    if parsed!=d: continue
+                    qh=str(pick(q,"HomeTeam","home_team")).strip()
+                    qa=str(pick(q,"AwayTeam","away_team")).strip()
+                    hs,as_=sim(r["home_team"],qh),sim(r["away_team"],qa)
+                    if hs>=.9 and as_>=.9: candidates.append((hs+as_,q,qh,qa))
+                if len(candidates)!=1: continue
+                _,q,qh,qa=candidates[0]
+                for typ,line_names,home_names,away_names in [
+                    ("ASIAN_HANDICAP_OPEN",("AHh","AH"),("AvgAHH","B365AHH","AHH"),("AvgAHA","B365AHA","AHA")),
+                    ("ASIAN_HANDICAP_CLOSE",("AHCh","AHC"),("AvgCAHH","B365CAHH","CAHH"),("AvgCAHA","B365CAHA","CAHA")),
+                ]:
+                    line=pick(q,*line_names); ho=pick(q,*home_names); ao=pick(q,*away_names)
+                    try: line=float(line); ho=float(ho); ao=float(ao)
+                    except (ValueError,TypeError): continue
+                    if ho<=1 or ao<=1: continue
+                    history.append({"match_id":r["match_id"],"date":d,"home_team":r["home_team"],"away_team":r["away_team"],
+                      "sporttery_match_id":"","market":typ,"update_date":"","update_time":"","timestamp_parsed":"",
+                      "handicap_line":line,"home_odds":ho,"draw_odds":"","away_odds":ao,
+                      "source":"Football-Data.co.uk CSV","time_quality":"OPENING_OR_CLOSING_SNAPSHOT_NO_EXACT_TIMESTAMP",
+                      "provider_home":qh,"provider_away":qa,"league_code":league})
+                    status["football_data_rows"]+=1
+        except Exception as e:
+            status["football_data_error_"+league]+=1
+            print("FOOTBALL_DATA_ERROR",league,str(e)[:150],flush=True)
+
     def write_csv(path,rows):
         cols=list(dict.fromkeys(k for row in rows for k in row.keys()))
         with path.open("w",encoding="utf-8-sig",newline="") as f:
@@ -120,8 +177,9 @@ def main():
       "odds_api_errors":status["odds_api_error"],"historical_odds_rows":len(history),
       "market_rows_by_type":dict(Counter(x["market"] for x in history)),
       "timestamped_rows":sum(bool(x["timestamp_parsed"]) for x in history),
+      "football_data_snapshot_rows":sum(x.get("source")=="Football-Data.co.uk CSV" for x in history),
       "status_counts":dict(status),
-      "important_note":"Sporttery hhadList is lottery handicap 1X2 odds, not Asian handicap market odds. Historical odds snapshots are not automatically T-12 eligible; use parsed update timestamp against actual kickoff. No missing odds are imputed."}
+      "important_note":"Sporttery hhadList is lottery handicap 1X2 odds, not Asian handicap market odds. Football-Data opening/closing snapshots have no exact intraday timestamp and are not T-12 eligible. Only parsed timestamped Sporttery records can qualify for strict T-12. No missing odds are imputed."}
     (OUT/"v52_448_historical_odds_backfill_report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
     print("FINAL_REPORT",json.dumps(report,ensure_ascii=False),flush=True)
 if __name__=="__main__": main()
