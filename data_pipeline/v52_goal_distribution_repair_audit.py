@@ -88,8 +88,22 @@ def main():
     required = {"match_id", "kickoff", "sample_source", "actual_home_goals", "actual_away_goals", "lambda_home", "lambda_away"}
     if not rows or not required.issubset(rows[0]):
         raise SystemExit(f"INPUT_SCHEMA_INVALID required={sorted(required)}")
-    if len(rows) != 448 or len({r["match_id"] for r in rows if r["match_id"]}) != 398:
-        raise SystemExit(f"FROZEN_SAMPLE_INTEGRITY_FAIL rows={len(rows)} native_ids={len({r['match_id'] for r in rows if r['match_id']})}")
+    merged_rows = rows
+    native_ids = {r["match_id"] for r in merged_rows if r["match_id"]}
+    if len(merged_rows) != 448 or len(native_ids) != 398:
+        raise SystemExit(f"FROZEN_SAMPLE_INTEGRITY_FAIL rows={len(merged_rows)} native_ids={len(native_ids)}")
+    # Nations League retrospective rows have no saved lambda_home/lambda_away.
+    # They cannot be scored in a lambda-scaling experiment; exclude them explicitly.
+    rows = [
+        r for r in merged_rows
+        if r["match_id"]
+        and r["lambda_home"].strip()
+        and r["lambda_away"].strip()
+        and r["actual_home_goals"].strip()
+        and r["actual_away_goals"].strip()
+    ]
+    if len(rows) != 398 or len({r["match_id"] for r in rows}) != 398:
+        raise SystemExit(f"SCORABLE_NATIVE_SAMPLE_INTEGRITY_FAIL rows={len(rows)}")
     rows.sort(key=lambda r: (r["kickoff"], r["sample_source"], r["home_team"], r["away_team"]))
     split = int(len(rows) * 0.70)
     train, test = rows[:split], rows[split:]
@@ -111,7 +125,7 @@ def main():
     out = {
         "title": "V5.2 goal-distribution repair audit",
         "input": INPUT,
-        "sample_integrity": {"rows": len(rows), "v52_native_rows": 398, "nations_league_rows": 50, "unique_native_ids": 398},
+        "sample_integrity": {"merged_rows": len(merged_rows), "scored_native_rows": len(rows), "excluded_nations_league_rows_missing_lambdas": len(merged_rows) - len(rows), "unique_native_ids": len(native_ids)},
         "method": "chronological 70/30 split; fit one common lambda multiplier on train scoreline NLL only; evaluate later 30% holdout",
         "train": {"n": len(train), "best_scale": best["scale"], "best_scoreline_nll": round(best["train_scoreline_nll"], 6)},
         "holdout_baseline": baseline,
@@ -120,7 +134,7 @@ def main():
         "guardrails": [
             "This is an isolated experiment; no production model or historical prediction was overwritten.",
             "Common scaling is not automatically applied to V5.2; candidate needs held-out scoreline NLL and goal-bin Brier improvement.",
-            "The 398 club rows and 50 Nations League rows remain source-labelled; this combined audit is diagnostic only, not a claim of independent league-specific validation.",
+            "The 50 Nations League retrospective rows are excluded from lambda fitting/scoring because their saved lambda inputs are blank; no result is claimed for those 50 rows.",
             "Poisson likelihood is a baseline diagnostic and does not model red-card or match-state tail dependence."
         ],
         "scale_grid_train": fit,
