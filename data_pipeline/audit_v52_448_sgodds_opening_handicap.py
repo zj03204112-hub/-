@@ -97,5 +97,6 @@ def main():
  write(OUT/"v52_448_sgodds_match_coverage.csv",coverage)
  report={"sample_size":448,"source_files":reports,"rows_collected":len(records),"unique_matches_with_opening_handicap":len(unique),"matches_without_verified_opening_handicap":448-len(unique),"timestamped_rows":0,"strict_T_minus_12_eligible_matches":0,"status_counts":dict(counts),"note":"Opening snapshot records have no exact intraday timestamp and are not T-12 eligible. Audit does not modify database or model."}
  (OUT/"v52_448_sgodds_coverage_report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
+ print(json.dumps({"source_file_diagnostics":reports},ensure_ascii=False),flush=True)
  print(json.dumps({"sample_size":448,"source_files_found":len(downloads),"rows_collected":len(records),"unique_matches_with_opening_handicap":len(unique),"matches_without_verified_opening_handicap":448-len(unique),"timestamped_rows":0,"strict_T_minus_12_eligible_matches":0,"counts":dict(counts)},ensure_ascii=False),flush=True)
 if __name__=="__main__":main()
