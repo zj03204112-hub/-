@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Backfill historical Sporttery 1X2 and handicap-1X2 odds for the frozen 448 sample.
 Writes audit CSV/JSON; never invents timestamps or treats date-only captures as snapshots.
+Source refresh run requested 2026-10-15: re-query official Sporttery archive and available Football-Data CSV snapshots.
 """
 import csv, json, re, time, unicodedata
 from collections import Counter
