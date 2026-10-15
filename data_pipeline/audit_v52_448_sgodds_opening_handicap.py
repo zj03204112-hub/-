@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Audit SGOdds opening Asian-handicap CSV coverage against frozen 448 sample.
-No database/model mutation; no invented timestamps; report unique team/date matches.
+No database/model mutation; no invented timestamps; report unique team/date matches.\nThis collector is run via the dedicated SGOdds coverage workflow.
 """
 import csv, io, json, re, unicodedata
 from collections import Counter
