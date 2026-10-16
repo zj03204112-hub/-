@@ -21,6 +21,15 @@ def main():
             "score1_home":1,"score1_away":0,"score2_home":2,"score2_away":1,
             "sporttery_handicap_line":-1
         }
+        late = dict(record)
+        late["prediction_id"] = "smoke-pred-after-kickoff"
+        late["prediction_timestamp_utc"] = "2026-10-16T13:00:00+00:00"
+        try:
+            append_prediction(con, late)
+        except ValueError as exc:
+            assert "strictly before kickoff" in str(exc)
+        else:
+            raise AssertionError("post-kickoff prediction was accepted as a pre-match snapshot")
         digest = append_prediction(con, record)
         assert len(digest) == 64
         stored = con.execute("SELECT COUNT(*) FROM prediction_trace").fetchone()[0]
