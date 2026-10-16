@@ -1,5 +1,5 @@
 """Append-only writer for prediction-time records. This module does not run or alter a model."""
-import hashlib, json, os, sqlite3
+import hashlib, json, os, sqlite3, math
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -85,10 +85,22 @@ def append_prediction(con, record):
     if missing:
         raise ValueError("missing required prediction fields: " + ", ".join(missing))
     probs = [float(record[k]) for k in ("home_win_prob","draw_prob","away_win_prob")]
-    if any(p < 0 or p > 1 for p in probs) or abs(sum(probs)-1.0) > 0.01:
-        raise ValueError("1X2 probabilities must be in [0,1] and sum to 1±0.01")
-    if float(record["lambda_home"]) < 0 or float(record["lambda_away"]) < 0:
-        raise ValueError("lambda values must be non-negative")
+    if not all(math.isfinite(p) and 0 <= p <= 1 for p in probs) or abs(sum(probs)-1.0) > 0.01:
+        raise ValueError("1X2 probabilities must be finite, in [0,1], and sum to 1±0.01")
+    lambdas = [float(record["lambda_home"]), float(record["lambda_away"])]
+    if not all(math.isfinite(v) and v >= 0 for v in lambdas):
+        raise ValueError("lambda values must be finite and non-negative")
+    try:
+        prediction_time = datetime.fromisoformat(record["prediction_timestamp_utc"].replace("Z", "+00:00"))
+        kickoff_time = datetime.fromisoformat(record["kickoff_utc"].replace("Z", "+00:00"))
+    except ValueError as exc:
+        raise ValueError("prediction_timestamp_utc and kickoff_utc must be ISO-8601 timestamps") from exc
+    if prediction_time.tzinfo is None or kickoff_time.tzinfo is None:
+        raise ValueError("prediction timestamp and kickoff must include timezone offsets")
+    if prediction_time >= kickoff_time:
+        raise ValueError("pre-match prediction timestamp must be strictly before kickoff")
+    if len(str(record["config_sha256"])) != 64 or any(c not in "0123456789abcdefABCDEF" for c in str(record["config_sha256"])):
+        raise ValueError("config_sha256 must be a 64-character SHA-256 hex digest")
     payload = json.dumps(record, ensure_ascii=False, sort_keys=True, separators=(",",":"))
     digest = sha256_text(payload)
     con.execute("""
