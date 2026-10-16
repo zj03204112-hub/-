@@ -1,91 +1,139 @@
 {
-  "audit_date_beijing": "2026-10-16",
-  "status": "FAIL_TRACEABILITY_GAPS",
-  "scope": {
-    "prediction_file": "reviews/2026-10-16-prediction-results-and-market-audit.csv",
-    "prediction_rows": 14,
-    "market_file": "reviews/2026-10-16-prematch-market-snapshots.csv",
-    "market_rows": 14
-  },
-  "prediction_fields": {
-    "match_id": {
-      "present": 0,
-      "missing": 14,
-      "missing_rate": 1
-    },
-    "prediction_timestamp": {
-      "present": 0,
-      "missing": 14,
-      "missing_rate": 1,
-      "reason": "no generation-time timestamp field"
-    },
-    "model_version": {
-      "present": 14,
-      "missing": 0,
-      "missing_rate": 0,
-      "quality": "all labeled 临时展示预测; no exact model version/commit/config"
-    },
+  "audit_created_note": "Read-only audit; historical missing values are not reconstructed.",
+  "prediction_file": "reviews/2026-10-16-prediction-results-and-market-audit.csv",
+  "prediction_rows": 14,
+  "prediction_field_coverage": {
     "home_win_prob": {
       "present": 0,
       "missing": 14,
-      "missing_rate": 1
+      "missing_rate": 1.0
     },
     "draw_prob": {
       "present": 0,
       "missing": 14,
-      "missing_rate": 1
+      "missing_rate": 1.0
     },
     "away_win_prob": {
       "present": 0,
       "missing": 14,
-      "missing_rate": 1
+      "missing_rate": 1.0
     },
     "lambda_home": {
       "present": 0,
       "missing": 14,
-      "missing_rate": 1
+      "missing_rate": 1.0
     },
     "lambda_away": {
       "present": 0,
       "missing": 14,
-      "missing_rate": 1
+      "missing_rate": 1.0
+    },
+    "kickoff_beijing": {
+      "present": 14,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    "prediction_version": {
+      "present": 14,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    "prediction_source": {
+      "present": 14,
+      "missing": 0,
+      "missing_rate": 0.0
     }
   },
-  "market_fields": {
-    "snapshot_timestamp": {
+  "prediction_match_id": {
+    "present": 0,
+    "missing": 14,
+    "missing_rate": 1.0
+  },
+  "complete_probability_triplets": 0,
+  "valid_probability_triplets": 0,
+  "complete_lambda_pairs": 0,
+  "market_file": "reviews/2026-10-16-prematch-market-snapshots.csv",
+  "market_rows": 14,
+  "market_field_coverage": {
+    "snapshot_timestamp_beijing": {
       "present": 7,
       "missing": 7,
       "missing_rate": 0.5
     },
-    "source_and_url": {
+    "source": {
       "present": 7,
       "missing": 7,
       "missing_rate": 0.5
     },
-    "official_sporttery_handicap_line": {
+    "source_url": {
       "present": 7,
       "missing": 7,
       "missing_rate": 0.5
     },
-    "official_sporttery_ou": {
+    "odds_home": {
+      "present": 6,
+      "missing": 8,
+      "missing_rate": 0.5714
+    },
+    "odds_draw": {
+      "present": 6,
+      "missing": 8,
+      "missing_rate": 0.5714
+    },
+    "odds_away": {
+      "present": 6,
+      "missing": 8,
+      "missing_rate": 0.5714
+    },
+    "sporttery_handicap": {
+      "present": 7,
+      "missing": 7,
+      "missing_rate": 0.5
+    },
+    "sporttery_handicap_home_sp": {
+      "present": 7,
+      "missing": 7,
+      "missing_rate": 0.5
+    },
+    "sporttery_handicap_draw_sp": {
+      "present": 7,
+      "missing": 7,
+      "missing_rate": 0.5
+    },
+    "sporttery_handicap_away_sp": {
+      "present": 7,
+      "missing": 7,
+      "missing_rate": 0.5
+    },
+    "ou_line": {
       "present": 0,
       "missing": 14,
-      "missing_rate": 1
+      "missing_rate": 1.0
+    },
+    "over_odds": {
+      "present": 0,
+      "missing": 14,
+      "missing_rate": 1.0
+    },
+    "under_odds": {
+      "present": 7,
+      "missing": 7,
+      "missing_rate": 0.5
     }
   },
-  "result_and_join": {
-    "result_present": 12,
-    "postponed": 1,
-    "scheduled_not_kicked_off_at_archive_time": 1,
-    "verified_unique_match_id_join_possible": 0,
-    "reason": "prediction archive has no match_id and market archive has no provider event ID"
+  "market_timestamped_rows": 7,
+  "market_timestamp_missing_rows": 7,
+  "market_rows_with_source_and_url": 7,
+  "joinability": {
+    "prediction_to_market_by_unique_match_id": "BLOCKED: prediction archive has no match_id and market archive has no provider event ID",
+    "prediction_to_result_by_unique_match_id": "BLOCKED: prediction archive has no match_id",
+    "note": "Team names and kickoff labels are not accepted as a unique-ID substitute without a verified fixture mapping."
   },
-  "source_quality": {
-    "timestamped_market_rows": 7,
-    "timestamped_rows_are_raw_leisu_payloads": 0,
-    "timestamped_rows_source_note": "third-party public match page with 500彩票网/澳客网 cross-check note; not raw Leisu API data",
-    "post_match_odds_used_to_reconstruct_predictions": false
-  },
-  "hard_rule": "Do not infer missing historical probabilities, lambdas, model version or prediction timestamps from scorelines or post-match market data.",
-  "next_gate": "Integrate append_prediction() at the actual prediction-generation entrypoint and run a small end-to-end fixture batch; until then automatic capture is not operational."
+  "overall_status": "FAIL_TRACEABILITY_GAPS",
+  "next_actions": [
+    "Write match_id and provider event IDs at fixture-ingestion time.",
+    "At prediction generation, append probabilities, lambdas, exact timestamp, model version, git SHA and config hash.",
+    "Capture source event time separately from retrieval time for every market snapshot.",
+    "Preserve raw source payload and SHA-256; do not overwrite historical snapshots."
+  ]
 }
