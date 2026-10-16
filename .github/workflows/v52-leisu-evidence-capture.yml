@@ -1,0 +1,96 @@
+name: V5.2 Leisu raw evidence capture (isolated)
+on:
+  push:
+    branches:
+      - feature/v52-live-prediction-e2e
+    paths:
+      - ".github/workflows/v52-leisu-evidence-capture.yml"
+  workflow_dispatch:
+    inputs:
+      detail_url:
+        description: "Optional public Leisu detail URL to probe"
+        required: false
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: v52-leisu-evidence-capture
+  cancel-in-progress: false
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/v52-live-prediction-e2e
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Capture raw public HTML and response evidence
+        env:
+          DETAIL_URL: ${{ inputs.detail_url }}
+        run: |
+          mkdir -p evidence
+          python - <<'PY'
+          import hashlib, json, os, urllib.error, urllib.request
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          out = Path("evidence")
+          headers = {
+              "User-Agent": "Mozilla/5.0 (compatible; V52PublicPageAudit/1.0)",
+              "Accept": "text/html,application/xhtml+xml",
+              "Referer": "https://live.leisu.com/",
+          }
+          urls = [("list", "https://live.leisu.com/wanchang")]
+          detail = os.environ.get("DETAIL_URL", "").strip()
+          if detail:
+              urls.append(("detail", detail))
+          report = {"retrieved_at_utc": datetime.now(timezone.utc).isoformat(), "requests": []}
+          for label, url in urls:
+              req = urllib.request.Request(url, headers=headers)
+              entry = {"label": label, "url": url, "requested_at_utc": datetime.now(timezone.utc).isoformat()}
+              try:
+                  with urllib.request.urlopen(req, timeout=25) as resp:
+                      raw = resp.read()
+                      status = resp.status
+                      content_type = resp.headers.get("Content-Type", "")
+                      final_url = resp.geturl()
+                      entry.update({"http_status": status, "content_type": content_type, "final_url": final_url,
+                                    "bytes": len(raw), "sha256": hashlib.sha256(raw).hexdigest(),
+                                    "retrieved_at_utc": datetime.now(timezone.utc).isoformat(),
+                                    "body_file": f"{label}.html"})
+                      (out / f"{label}.html").write_bytes(raw)
+                      if label == "list":
+                          import re
+                          ids = list(dict.fromkeys(re.findall(rb"/detail-(\\d+)", raw)))
+                          entry["detail_ids_found"] = [x.decode("ascii") for x in ids[:20]]
+                          entry["status"] = "LIST_HTML_CAPTURED" if raw else "EMPTY_BODY"
+                      else:
+                          entry["status"] = "DETAIL_HTML_CAPTURED"
+              except urllib.error.HTTPError as e:
+                  raw = e.read()
+                  entry.update({"http_status": e.code, "reason": str(e.reason), "bytes": len(raw),
+                                "sha256": hashlib.sha256(raw).hexdigest(),
+                                "retrieved_at_utc": datetime.now(timezone.utc).isoformat(),
+                                "body_file": f"{label}.html", "status": "HTTP_ERROR"})
+                  (out / f"{label}.html").write_bytes(raw)
+              except Exception as e:
+                  entry.update({"error_type": type(e).__name__, "error": str(e),
+                                "retrieved_at_utc": datetime.now(timezone.utc).isoformat(),
+                                "status": "REQUEST_FAILED"})
+              report["requests"].append(entry)
+          report["overall_status"] = "CAPTURED" if any(x.get("http_status") == 200 for x in report["requests"]) else "NO_HTTP_200"
+          (out / "evidence.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          if report["overall_status"] != "CAPTURED":
+              raise SystemExit(2)
+          PY
+      - name: Upload immutable capture evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v52-leisu-raw-evidence
+          path: evidence/
+          if-no-files-found: error
+          retention-days: 30
