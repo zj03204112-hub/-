@@ -58,5 +58,19 @@ Do not expand until each test fixture passes:
 - no UPDATE/DELETE can mutate the original prediction/market trace;
 - no production model file/version is changed during this work.
 
-## 6. Current status
-The audit script and append-only writer are infrastructure only. The first audit report must be run in CI or a runtime containing the archived CSVs. The model-generation entrypoint and live provider collectors still need explicit integration and a real end-to-end run before the pipeline can be called operational.
+## 6. Current status (2026-10-16)
+- Read-only audit script exists: `data_pipeline/audit_prediction_traceability.py`.
+- Append-only SQLite writer exists: `data_pipeline/prediction_snapshot_writer.py`. It now rejects invalid probability sums, non-finite/negative lambdas, missing timezone offsets, post-kickoff prediction timestamps, and malformed config SHA-256 values.
+- Isolated storage smoke test exists: `data_pipeline/test_prediction_snapshot_writer.py`. It checks insert, UPDATE/DELETE rejection, raw payload hash, timestamp-quality distinction, and rejection of post-kickoff predictions.
+- CI workflow exists: `.github/workflows/prediction-traceability.yml`; it runs the archive audit and isolated smoke test on relevant pushes or manual dispatch.
+- The existing archive still has 14/14 missing match IDs, probability triplets, lambda pairs and actual prediction-generation timestamps. These cannot be reconstructed retrospectively.
+- No clearly identified live V5.1/V5.2 production prediction entrypoint or daily prediction workflow has yet been verified in this repository. Therefore the writer is not yet automatically called at prediction generation; do not describe automatic capture as operational.
+- No verified raw Leisu market-history collector is wired into this path yet. Sporttery validation scripts exist for fixture/odds checks, but their existence alone does not prove that raw, timestamped market payloads are being captured for every new prediction.
+- A passing isolated smoke test is not an end-to-end football fixture acceptance. Before widening collection, wire the writer into the actual production prediction runner, capture a real fixture's Leisu/Sporttery raw responses, and join its result using verified provider IDs.
+
+## 7. Next hard gate
+1. Identify the exact production prediction command/workflow used for V5.1/V5.2 (without modifying its prediction logic).
+2. Add a post-prediction hook that calls `append_prediction()` using the model's emitted probabilities/lambdas and exact run metadata.
+3. Add Leisu/Sporttery market ingestion that preserves provider event time separately from retrieval time and stores raw payload hashes.
+4. Execute a real one-to-three-fixture end-to-end test: prediction -> market snapshot -> result -> unique-ID join.
+5. Expand only after the report shows per-field coverage and no ambiguous joins.
