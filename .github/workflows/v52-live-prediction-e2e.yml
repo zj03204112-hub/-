@@ -32,7 +32,7 @@ jobs:
       - name: Compile model and runner
         run: python -m py_compile data_pipeline/compare_models.py data_pipeline/run_v52_live_prediction.py
       - name: Run append-only trace tests
-        run: python -m unittest tests.test_v52_live_trace -v
+        run: python -m unittest discover -s tests -p 'test_v52_live_trace.py' -v
       - name: Verify database
         run: |
           test -s football_model_database.sqlite
