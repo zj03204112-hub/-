@@ -1,0 +1,91 @@
+{
+  "audit_date_beijing": "2026-10-16",
+  "status": "FAIL_TRACEABILITY_GAPS",
+  "scope": {
+    "prediction_file": "reviews/2026-10-16-prediction-results-and-market-audit.csv",
+    "prediction_rows": 14,
+    "market_file": "reviews/2026-10-16-prematch-market-snapshots.csv",
+    "market_rows": 14
+  },
+  "prediction_fields": {
+    "match_id": {
+      "present": 0,
+      "missing": 14,
+      "missing_rate": 1
+    },
+    "prediction_timestamp": {
+      "present": 0,
+      "missing": 14,
+      "missing_rate": 1,
+      "reason": "no generation-time timestamp field"
+    },
+    "model_version": {
+      "present": 14,
+      "missing": 0,
+      "missing_rate": 0,
+      "quality": "all labeled 临时展示预测; no exact model version/commit/config"
+    },
+    "home_win_prob": {
+      "present": 0,
+      "missing": 14,
+      "missing_rate": 1
+    },
+    "draw_prob": {
+      "present": 0,
+      "missing": 14,
+      "missing_rate": 1
+    },
+    "away_win_prob": {
+      "present": 0,
+      "missing": 14,
+      "missing_rate": 1
+    },
+    "lambda_home": {
+      "present": 0,
+      "missing": 14,
+      "missing_rate": 1
+    },
+    "lambda_away": {
+      "present": 0,
+      "missing": 14,
+      "missing_rate": 1
+    }
+  },
+  "market_fields": {
+    "snapshot_timestamp": {
+      "present": 7,
+      "missing": 7,
+      "missing_rate": 0.5
+    },
+    "source_and_url": {
+      "present": 7,
+      "missing": 7,
+      "missing_rate": 0.5
+    },
+    "official_sporttery_handicap_line": {
+      "present": 7,
+      "missing": 7,
+      "missing_rate": 0.5
+    },
+    "official_sporttery_ou": {
+      "present": 0,
+      "missing": 14,
+      "missing_rate": 1
+    }
+  },
+  "result_and_join": {
+    "result_present": 12,
+    "postponed": 1,
+    "scheduled_not_kicked_off_at_archive_time": 1,
+    "verified_unique_match_id_join_possible": 0,
+    "reason": "prediction archive has no match_id and market archive has no provider event ID"
+  },
+  "source_quality": {
+    "timestamped_market_rows": 7,
+    "timestamped_rows_are_raw_leisu_payloads": 0,
+    "timestamped_rows_source_note": "third-party public match page with 500彩票网/澳客网 cross-check note; not raw Leisu API data",
+    "post_match_odds_used_to_reconstruct_predictions": false
+  },
+  "hard_rule": "Do not infer missing historical probabilities, lambdas, model version or prediction timestamps from scorelines or post-match market data.",
+  "next_gate": "Integrate append_prediction() at the actual prediction-generation entrypoint and run a small end-to-end fixture batch; until then automatic capture is not operational."
+}
