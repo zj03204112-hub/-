@@ -1,0 +1,52 @@
+name: V5.2 live prediction trace E2E (isolated)
+on:
+  workflow_dispatch:
+    inputs:
+      fixture_date:
+        description: "Fixture date in China time (YYYY-MM-DD)"
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: v52-live-prediction-e2e
+  cancel-in-progress: false
+jobs:
+  validate-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/v52-live-prediction-e2e
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile model and runner
+        run: python -m py_compile data_pipeline/compare_models.py data_pipeline/run_v52_live_prediction.py
+      - name: Run append-only trace tests
+        run: python -m unittest tests.test_v52_live_trace -v
+      - name: Verify database
+        run: |
+          test -s football_model_database.sqlite
+          python - <<'PY'
+          import sqlite3
+          c=sqlite3.connect('file:football_model_database.sqlite?mode=ro',uri=True)
+          assert c.execute('PRAGMA integrity_check').fetchone()[0]=='ok'
+          t={r[0] for r in c.execute("select name from sqlite_master where type='table'")}
+          assert {'matches','results'}.issubset(t)
+          print('database integrity and core tables OK')
+          PY
+      - name: Run real fixture prediction and raw source capture
+        env:
+          FIXTURE_DATE: ${{ inputs.fixture_date }}
+          GITHUB_SHA: ${{ github.sha }}
+          LEISU_EVENT_URL_TEMPLATE: ${{ vars.LEISU_EVENT_URL_TEMPLATE }}
+        run: python data_pipeline/run_v52_live_prediction.py
+      - name: Upload trace evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v52-live-e2e-trace
+          path: data/v52_live_trace.sqlite
+          if-no-files-found: warn
