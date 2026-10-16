@@ -1,0 +1,47 @@
+name: Prediction traceability audit and storage smoke test
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data_pipeline/audit_prediction_traceability.py"
+      - "data_pipeline/prediction_snapshot_writer.py"
+      - "data_pipeline/test_prediction_snapshot_writer.py"
+      - "data_pipeline/prediction_traceability_contract.md"
+      - "reviews/2026-10-16-prediction-results-and-market-audit.csv"
+      - "reviews/2026-10-16-prematch-market-snapshots.csv"
+      - ".github/workflows/prediction-traceability.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prediction-traceability-audit
+  cancel-in-progress: false
+
+jobs:
+  audit-and-smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Audit archived records (read-only source files)
+        run: python data_pipeline/audit_prediction_traceability.py
+      - name: Test append-only writer in temporary SQLite database
+        run: python data_pipeline/test_prediction_snapshot_writer.py
+      - name: Commit generated audit report only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reviews/traceability-audit-2026-10-16.json
+          if git diff --cached --quiet; then
+            echo "Audit report unchanged."
+            exit 0
+          fi
+          git commit -m "audit: refresh prediction traceability coverage"
+          git push origin HEAD:main
