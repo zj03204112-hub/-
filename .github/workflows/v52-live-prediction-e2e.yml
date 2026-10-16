@@ -6,7 +6,9 @@ on:
     paths:
       - "data_pipeline/run_v52_live_prediction.py"
       - "data_pipeline/finalize_v52_official_results.py"
+      - "data_pipeline/leisu_public_web_scraper.py"
       - "tests/test_v52_live_trace.py"
+      - "tests/test_leisu_public_web_scraper.py"
       - ".github/workflows/v52-live-prediction-e2e.yml"
   workflow_dispatch:
     inputs:
@@ -30,10 +32,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Compile model and runner
-        run: python -m py_compile data_pipeline/compare_models.py data_pipeline/run_v52_live_prediction.py data_pipeline/finalize_v52_official_results.py
+      - name: Compile model and scraping tools
+        run: python -m py_compile data_pipeline/compare_models.py data_pipeline/run_v52_live_prediction.py data_pipeline/finalize_v52_official_results.py data_pipeline/leisu_public_web_scraper.py
       - name: Run append-only trace tests
         run: python -m unittest discover -s tests -p 'test_v52_live_trace.py' -v
+      - name: Test public HTML parser
+        run: python -m unittest discover -s tests -p 'test_leisu_public_web_scraper.py' -v
       - name: Verify database
         run: |
           test -s football_model_database.sqlite
@@ -45,8 +49,13 @@ jobs:
           assert {'matches','results'}.issubset(t)
           print('database integrity and core tables OK')
           PY
-      - name: Run real fixture prediction and raw source capture
+      - name: Scrape one public Leisu page
         if: github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p data
+          python data_pipeline/leisu_public_web_scraper.py https://live.leisu.com/wanchang > data/leisu_public_page_smoke.json
+      - name: Run V5.2 prediction via configured Leisu adapter
+        if: github.event_name == 'workflow_dispatch' && vars.LEISU_EVENT_URL_TEMPLATE != ''
         env:
           FIXTURE_DATE: ${{ inputs.fixture_date }}
           GITHUB_SHA: ${{ github.sha }}
@@ -57,5 +66,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: v52-live-e2e-trace
-          path: data/v52_live_trace.sqlite
+          path: |
+            data/v52_live_trace.sqlite
+            data/leisu_public_page_smoke.json
           if-no-files-found: warn
