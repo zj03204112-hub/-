@@ -1,5 +1,12 @@
 name: V5.2 live prediction trace E2E (isolated)
 on:
+  push:
+    branches:
+      - feature/v52-live-prediction-e2e
+    paths:
+      - "data_pipeline/run_v52_live_prediction.py"
+      - "tests/test_v52_live_trace.py"
+      - ".github/workflows/v52-live-prediction-e2e.yml"
   workflow_dispatch:
     inputs:
       fixture_date:
@@ -38,6 +45,7 @@ jobs:
           print('database integrity and core tables OK')
           PY
       - name: Run real fixture prediction and raw source capture
+        if: github.event_name == 'workflow_dispatch'
         env:
           FIXTURE_DATE: ${{ inputs.fixture_date }}
           GITHUB_SHA: ${{ github.sha }}
