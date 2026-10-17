@@ -1,0 +1,107 @@
+name: V5.2 xG data audit
+
+on:
+  push:
+    branches:
+      - feature/v5.2-classification-data-audit
+    paths:
+      - "football_model_database.sqlite"
+      - "data_pipeline/audit_unproven_features.py"
+      - "data_pipeline/fetch_understat_xg.py"
+      - ".github/workflows/v52-feature-code-check.yml"
+      - ".github/workflows/v52-xg-data-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout isolated V5.2 branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/v5.2-classification-data-audit
+          lfs: true
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify SQLite database integrity
+        run: |
+          python - <<'PY'
+          import os, sqlite3, sys
+          path = "football_model_database.sqlite"
+          if not os.path.isfile(path) or os.path.getsize(path) < 100:
+              raise SystemExit("DATABASE_MISSING_OR_TOO_SMALL")
+          with open(path, "rb") as f:
+              header = f.read(16)
+          if header != b"SQLite format 3\x00":
+              raise SystemExit(f"NOT_SQLITE_DATABASE: header={header!r}")
+          con = sqlite3.connect(f"file:{path}?mode=ro", uri=True)
+          integrity = con.execute("PRAGMA integrity_check").fetchone()[0]
+          print({"size_bytes": os.path.getsize(path), "integrity_check": integrity})
+          if integrity != "ok":
+              raise SystemExit("SQLITE_INTEGRITY_CHECK_FAILED")
+          tables = {r[0] for r in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+          required = {"matches", "results"}
+          if not required.issubset(tables):
+              raise SystemExit(f"REQUIRED_TABLES_MISSING: {sorted(required - tables)}")
+          print({"table_count": len(tables), "has_xg_observations": "xg_observations" in tables})
+          con.close()
+          PY
+      - name: Fetch real Understat xG/xGA and import into isolated database
+        env:
+          FOOTBALL_DB: football_model_database.sqlite
+          XG_INGEST_REPORT: data/xg_ingest_report.json
+          XG_SEASON_START: "2021"
+          XG_SEASON_END: "2026"
+        run: python data_pipeline/fetch_understat_xg.py
+      - name: Audit xG/xGA coverage and T-12h provenance
+        env:
+          FOOTBALL_DB: football_model_database.sqlite
+          FEATURE_AUDIT_OUT: data/feature_ingestion_audit.json
+        run: python data_pipeline/audit_unproven_features.py
+      - name: Emit xG-specific coverage and leakage report
+        run: |
+          python - <<'PY'
+          import json, sqlite3
+          db = "football_model_database.sqlite"
+          con = sqlite3.connect(db)
+          tables = {r[0] for r in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+          out = {}
+          if "xg_observations" not in tables:
+              out = {"xg_table_exists": False, "xg_rows": 0, "eligible_rows": 0,
+                     "status": "BLOCKED_NO_XG_OBSERVATIONS_TABLE"}
+          else:
+              out["xg_table_exists"] = True
+              out["xg_rows"] = con.execute("SELECT COUNT(*) FROM xg_observations").fetchone()[0]
+              out["verified_rows"] = con.execute("""SELECT COUNT(*) FROM xg_observations
+                WHERE lower(trim(source_status)) IN ('verified','confirmed','valid','success','ok','available')
+                AND source_url LIKE 'http%' AND observed_at IS NOT NULL""").fetchone()[0]
+              out["eligible_rows"] = con.execute("""SELECT COUNT(*) FROM xg_observations x
+                JOIN matches m ON m.match_id=x.match_id
+                WHERE datetime(x.observed_at)<=datetime(m.kickoff,'-12 hours')
+                AND lower(trim(x.source_status)) IN ('verified','confirmed','valid','success','ok','available')
+                AND x.source_url LIKE 'http%'""").fetchone()[0]
+              out["matches_with_xg"] = con.execute("SELECT COUNT(DISTINCT match_id) FROM xg_observations").fetchone()[0]
+              out["matches_total"] = con.execute("SELECT COUNT(*) FROM matches").fetchone()[0]
+              out["status"] = "AUDIT_COMPLETE" if out["eligible_rows"] else "BLOCKED_NO_TIME_SAFE_XG_ROWS"
+          con.close()
+          print(json.dumps(out, indent=2))
+          with open("data/xg_coverage_audit.json","w") as f:
+              json.dump(out,f,indent=2)
+          PY
+      - name: Upload audit reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v52-xg-data-audit
+          path: |
+            data/feature_ingestion_audit.json
+            data/xg_coverage_audit.json
+            data/xg_ingest_report.json
+            data/xg_unmatched_diagnosis.csv
+            football_model_database.sqlite
+          if-no-files-found: warn

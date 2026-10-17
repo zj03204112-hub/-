@@ -1,0 +1,34 @@
+name: Verify 448 sample native match IDs
+
+on:
+  push:
+    branches:
+      - feature/v5.2-classification-data-audit
+    paths:
+      - ".github/workflows/verify-448-native-ids.yml"
+      - "data_pipeline/verify_448_sporttery_native_ids.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify-native-ids:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/v5.2-classification-data-audit
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Query Sporttery and verify unique IDs
+        run: python data_pipeline/verify_448_sporttery_native_ids.py
+      - name: Commit mapping and audit report
+        run: |
+          git config user.name "football-model-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add model_validation/v52_jincai_20260901_20261013/v52_448_native_id_mapping_20261013.csv model_validation/v52_jincai_20260901_20261013/v52_448_native_id_audit_20261013.json
+          git diff --cached --quiet || git commit -m "audit: verify native IDs for 448-match sample"
+          git push origin HEAD:feature/v5.2-classification-data-audit

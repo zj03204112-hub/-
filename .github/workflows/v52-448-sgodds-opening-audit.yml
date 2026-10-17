@@ -1,0 +1,40 @@
+name: Audit SGOdds opening handicap coverage for frozen 448
+on:
+  push:
+    branches:
+      - feature/v5.2-classification-data-audit
+    paths:
+      - "data_pipeline/audit_v52_448_sgodds_opening_handicap.py"
+      - ".github/workflows/v52-448-sgodds-opening-audit.yml"
+      - "model_validation/v52_jincai_20260901_20261013/v52_plus_nations_league_448_merged_backtest_20261013.csv"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/v5.2-classification-data-audit
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependency
+        run: python -m pip install requests
+      - name: Compile audit
+        run: python -m py_compile data_pipeline/audit_v52_448_sgodds_opening_handicap.py
+      - name: Download and audit SGOdds opening handicap CSVs
+        run: python data_pipeline/audit_v52_448_sgodds_opening_handicap.py
+      - name: Upload match-level coverage and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v52-448-sgodds-opening-handicap-audit
+          path: |
+            model_validation/v52_jincai_20260901_20261013/v52_448_sgodds_opening_handicap.csv
+            model_validation/v52_jincai_20260901_20261013/v52_448_sgodds_match_coverage.csv
+            model_validation/v52_jincai_20260901_20261013/v52_448_sgodds_coverage_report.json
+          if-no-files-found: warn

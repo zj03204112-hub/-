@@ -1,0 +1,120 @@
+{
+  "db_source": "feature/v5.2-classification-data-audit football_model_database.sqlite",
+  "date_range": "2026-09-01..2026-10-13",
+  "db_finished_matches": 398,
+  "db_matches_with_sporttery_market": 153,
+  "db_matches_with_prediction_snapshot": 369,
+  "db_rows_with_both_team_history": 395,
+  "metrics_all_db_rows": {
+    "n": 398,
+    "accuracy_1x2": 0.4472,
+    "score_exact_rate": 0.1709,
+    "correct_1x2": 178,
+    "score_exact_hits": 68,
+    "brier": 0.6408,
+    "logloss": 1.0648,
+    "actual_counts": {
+      "H": 140,
+      "D": 117,
+      "A": 141
+    },
+    "pred_counts": {
+      "H": 217,
+      "D": 0,
+      "A": 181
+    },
+    "confusion_actual_rows_pred_columns": {
+      "H": {
+        "H": 94,
+        "D": 0,
+        "A": 46
+      },
+      "D": {
+        "H": 66,
+        "D": 0,
+        "A": 51
+      },
+      "A": {
+        "H": 57,
+        "D": 0,
+        "A": 84
+      }
+    },
+    "draw_recall": 0.0
+  },
+  "metrics_sporttery_market_rows": {
+    "n": 153,
+    "accuracy_1x2": 0.4837,
+    "score_exact_rate": 0.1569,
+    "correct_1x2": 74,
+    "score_exact_hits": 24,
+    "brier": 0.6206,
+    "logloss": 1.0375,
+    "actual_counts": {
+      "H": 61,
+      "D": 41,
+      "A": 51
+    },
+    "pred_counts": {
+      "H": 85,
+      "D": 0,
+      "A": 68
+    },
+    "confusion_actual_rows_pred_columns": {
+      "H": {
+        "H": 43,
+        "D": 0,
+        "A": 18
+      },
+      "D": {
+        "H": 22,
+        "D": 0,
+        "A": 19
+      },
+      "A": {
+        "H": 20,
+        "D": 0,
+        "A": 31
+      }
+    },
+    "draw_recall": 0.0
+  },
+  "metrics_prediction_snapshot_rows": {
+    "n": 369,
+    "accuracy_1x2": 0.4499,
+    "score_exact_rate": 0.168,
+    "correct_1x2": 166,
+    "score_exact_hits": 62,
+    "brier": 0.6394,
+    "logloss": 1.0628,
+    "actual_counts": {
+      "H": 126,
+      "D": 108,
+      "A": 135
+    },
+    "pred_counts": {
+      "H": 200,
+      "D": 0,
+      "A": 169
+    },
+    "confusion_actual_rows_pred_columns": {
+      "H": {
+        "H": 85,
+        "D": 0,
+        "A": 41
+      },
+      "D": {
+        "H": 61,
+        "D": 0,
+        "A": 47
+      },
+      "A": {
+        "H": 54,
+        "D": 0,
+        "A": 81
+      }
+    },
+    "draw_recall": 0.0
+  },
+  "note": "This is DB-native V5.2 replay using English/FotMob team identity. It is the reliable model-coverage view, while official Sporttery Chinese rows currently need team/event mapping."
+}

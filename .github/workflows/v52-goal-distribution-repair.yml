@@ -1,0 +1,41 @@
+name: V5.2 goal-distribution repair audit
+
+on:
+  push:
+    branches:
+      - feature/v5.2-classification-data-audit
+    paths:
+      - "data_pipeline/v52_goal_distribution_repair_audit.py"
+      - "model_validation/v52_jincai_20260901_20261013/v52_plus_nations_league_448_merged_backtest_20261013.csv"
+      - ".github/workflows/v52-goal-distribution-repair.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  goal_distribution_audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout isolated V5.2 experiment branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/v5.2-classification-data-audit
+          lfs: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile audit
+        run: python -m py_compile data_pipeline/v52_goal_distribution_repair_audit.py
+      - name: Run leakage-safe chronological goal calibration audit
+        run: python data_pipeline/v52_goal_distribution_repair_audit.py
+      - name: Upload frozen-sample audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v52-goal-distribution-repair-audit
+          path: model_validation/v52_jincai_20260901_20261013/v52_goal_distribution_repair_audit.json
+          if-no-files-found: error
+
+# Re-trigger isolated audit for explicit acceptance verification.

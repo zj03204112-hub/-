@@ -1,0 +1,129 @@
+{
+  "task": "V5.2 Unified Jincai Model sample and backtest, read-only local output",
+  "generated_at_hkt": "2026-10-13T16:00:15",
+  "date_range": "2026-09-01..2026-10-13",
+  "official_source": "https://webapi.sporttery.cn/gateway/uniform/football/getUniformMatchResultV1.qry",
+  "official_completed_rows": 548,
+  "rows_with_actual_score": 542,
+  "mapped_to_v52_db": 0,
+  "fallback_official_name_rows": 548,
+  "rows_with_both_team_history": 0,
+  "rows_with_xg_signal_used": 0,
+  "rows_with_lineup_signal_used": 0,
+  "metrics_all_rows": {
+    "n": 542,
+    "accuracy_1x2": 0.4668,
+    "score_exact_rate": 0.107,
+    "correct_1x2": 253,
+    "score_exact_hits": 58,
+    "brier": 0.6483,
+    "logloss": 1.0707,
+    "actual_counts": {
+      "H": 255,
+      "D": 129,
+      "A": 158
+    },
+    "pred_counts": {
+      "H": 537,
+      "D": 0,
+      "A": 5
+    },
+    "confusion_actual_rows_pred_columns": {
+      "H": {
+        "H": 252,
+        "D": 0,
+        "A": 3
+      },
+      "D": {
+        "H": 128,
+        "D": 0,
+        "A": 1
+      },
+      "A": {
+        "H": 157,
+        "D": 0,
+        "A": 1
+      }
+    },
+    "draw_recall": 0.0
+  },
+  "metrics_db_mapped_only": {
+    "n": 0,
+    "accuracy_1x2": null,
+    "score_exact_rate": null,
+    "correct_1x2": 0,
+    "score_exact_hits": 0,
+    "brier": null,
+    "logloss": null,
+    "actual_counts": {
+      "H": 0,
+      "D": 0,
+      "A": 0
+    },
+    "pred_counts": {
+      "H": 0,
+      "D": 0,
+      "A": 0
+    },
+    "confusion_actual_rows_pred_columns": {
+      "H": {
+        "H": 0,
+        "D": 0,
+        "A": 0
+      },
+      "D": {
+        "H": 0,
+        "D": 0,
+        "A": 0
+      },
+      "A": {
+        "H": 0,
+        "D": 0,
+        "A": 0
+      }
+    },
+    "draw_recall": null
+  },
+  "metrics_both_team_history_only": {
+    "n": 0,
+    "accuracy_1x2": null,
+    "score_exact_rate": null,
+    "correct_1x2": 0,
+    "score_exact_hits": 0,
+    "brier": null,
+    "logloss": null,
+    "actual_counts": {
+      "H": 0,
+      "D": 0,
+      "A": 0
+    },
+    "pred_counts": {
+      "H": 0,
+      "D": 0,
+      "A": 0
+    },
+    "confusion_actual_rows_pred_columns": {
+      "H": {
+        "H": 0,
+        "D": 0,
+        "A": 0
+      },
+      "D": {
+        "H": 0,
+        "D": 0,
+        "A": 0
+      },
+      "A": {
+        "H": 0,
+        "D": 0,
+        "A": 0
+      }
+    },
+    "draw_recall": null
+  },
+  "important_notes": [
+    "Result endpoint provides completed Sporttery matches only; unfinished future/today matches without result are not backtested.",
+    "Fallback rows use official team names and may lack local historical features, so mapped/history subsets are the reliable model-coverage views.",
+    "V5.1 files and GitHub repository were not modified."
+  ]
+}

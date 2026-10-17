@@ -1,0 +1,70 @@
+{
+  "title": "398场 V5.2 + 50场欧国联合并回测样本核验",
+  "created_at": "2026-10-13",
+  "source_labels": {
+    "v52": "V5.2_Club",
+    "nations_league": "NationsLeague_V5"
+  },
+  "counts": {
+    "v52_rows": 398,
+    "nations_league_rows": 50,
+    "expected_total": 448,
+    "merged_rows": 448,
+    "unique_v52_native_match_ids": 398,
+    "v52_duplicate_match_ids": [],
+    "missing_native_match_id_rows_nations_league": 50,
+    "cross_source_fixture_overlaps_by_date_home_away": 0,
+    "overlap_fixtures": []
+  },
+  "metrics": {
+    "v52_db_native": {
+      "n": 398,
+      "correct_1x2": 178,
+      "accuracy": 0.4472361809045226,
+      "score1_exact_hits": 68,
+      "score1_exact_rate": 0.1708542713567839,
+      "score2_exact_hits": 31,
+      "score2_exact_rate": 0.07788944723618091,
+      "brier": 0.6408,
+      "logloss": 1.0648,
+      "actual_H_D_A": {
+        "H": 140,
+        "D": 117,
+        "A": 141
+      },
+      "predicted_H_D_A": {
+        "H": 217,
+        "D": 0,
+        "A": 181
+      },
+      "draw_recall": 0
+    },
+    "nations_league_v5_reconstruction": {
+      "n": 50,
+      "score1_exact_hits": 33,
+      "score1_exact_rate": 0.66,
+      "score2_exact_hits": 4,
+      "score2_exact_rate": 0.08,
+      "score1_direction_hits": 48,
+      "score1_direction_rate": 0.96,
+      "score2_direction_hits": 31,
+      "score2_direction_rate": 0.62,
+      "at_least_one_exact_hits": 37,
+      "at_least_one_exact_rate": 0.74,
+      "at_least_one_direction_hits": 50,
+      "at_least_one_direction_rate": 1,
+      "actual_draws": 13,
+      "predicted_draws_from_score1": 14,
+      "draw_recall": 1,
+      "brier": null,
+      "logloss": null
+    }
+  },
+  "notes": [
+    "Nations League CSV has no native match ID; its match_id fields remain blank instead of fabricated. Cross-source fixture overlap check by date + normalized home/away found none.",
+    "V5.2 rows reconstructed from committed SQLite DB and compare_models.py, not original missing local CSV.",
+    "Nations League metrics are retrospective saved V5 reconstruction, not independent forward blind test.",
+    "Nations League source has no per-match probabilities; Brier/LogLoss unavailable.",
+    "V5.1 production model and prediction archives unchanged."
+  ]
+}

@@ -1,0 +1,32 @@
+name: Recover V5.2 398-match backtest CSV
+on:
+  push:
+    branches:
+      - feature/v5.2-classification-data-audit
+    paths:
+      - 'data_pipeline/rebuild_v52_db_native_backtest_csv.py'
+      - '.github/workflows/recover-v52-398-backtest.yml'
+      - 'data_pipeline/compare_models.py'
+      - 'football_model_database.sqlite'
+permissions:
+  contents: write
+jobs:
+  rebuild-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/v5.2-classification-data-audit
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild row-level CSV from repository database
+        run: python data_pipeline/rebuild_v52_db_native_backtest_csv.py
+      - name: Commit recovered CSV and reconstruction report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add model_validation/v52_jincai_20260901_20261013/v52_db_native_predictions_backtest_20260901_20261013.csv model_validation/v52_jincai_20260901_20261013/v52_db_native_reconstruction_check_20260901_20261013.json
+          git commit -m "Recover V5.2 398-match row-level backtest CSV" || echo "No changes to commit"
+          git push origin HEAD:feature/v5.2-classification-data-audit
