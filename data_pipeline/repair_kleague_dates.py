@@ -140,7 +140,9 @@ def main():
             node_text = clean(" ".join(el.itertext()))
             if parse_date(node_text) and len(node_text) <= 120:
                 date_nodes.append((el.tag, node_text))
-        print({"debug_tr_rows": len(root.xpath("//tr")), "debug_date_nodes": date_nodes[:30], "html_length": len(response.text)})
+        links = [(clean(" ".join(a.itertext())), a.get("href")) for a in root.xpath("//a[@href]") if any(k in (a.get("href") or "").lower() for k in ("csv","json","ics","schedule","match","fixture","api","download"))]
+        scripts = [s.get("src") for s in root.xpath("//script[@src]")]
+        print({"debug_tr_rows": len(root.xpath("//tr")), "debug_date_nodes": date_nodes[:30], "debug_links": links[:80], "debug_scripts": scripts[:60], "html_length": len(response.text)})
         raise RuntimeError("No date-qualified K League match rows parsed; source layout may have changed")
     bad_dates = [r for r in rows if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", r["Date"])]
     if bad_dates:
