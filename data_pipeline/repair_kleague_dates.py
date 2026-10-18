@@ -152,6 +152,28 @@ def main():
     response = requests.get(URL, timeout=45, headers=HEADERS)
     response.raise_for_status()
     rows, root = parse_rows(response.text)
+    if "--inspect-load-more" in sys.argv:
+        nodes = []
+        for el in root.iter():
+            if not isinstance(el.tag, str):
+                continue
+            node_text = clean(" ".join(el.itertext()))
+            if "load more matches" in node_text.lower() and len(node_text) < 160:
+                nodes.append({"tag":el.tag,"text":node_text,"attributes":dict(el.attrib)})
+        print({"load_more_nodes":nodes[:20]})
+        for src in root.xpath("//script[@src]/@src"):
+            if "competition_detail" not in src:
+                continue
+            js_url = src if src.startswith("http") else BASE + src
+            js_response = requests.get(js_url, timeout=20, headers=HEADERS)
+            js_response.raise_for_status()
+            body = js_response.text
+            snippets = []
+            for term in ("load more", "loadMore", "load-more", "fetch(", "ajax", "api/", "offset", "page"):
+                for match in list(re.finditer(re.escape(term), body, re.I))[:5]:
+                    snippets.append({"term":term,"snippet":body[max(0,match.start()-180):match.end()+260]})
+            print({"script_url":js_url,"script_length":len(body),"snippets":snippets[:30]})
+        return
     if not rows:
         raise RuntimeError("No K League match rows or event ICS links found on public source")
     dated, unresolved = [], []
