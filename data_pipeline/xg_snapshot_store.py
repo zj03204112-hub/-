@@ -209,24 +209,42 @@ def append_weekly_summary(con, team_id, competition_id, season_id, iso_year, iso
     return snapshot
 
 def audit_weekly_coverage(con):
-    """Return coverage and recomputation checks; missing observations are not imputed."""
+    """Audit team-week/source coverage without merging measured and estimated xG."""
     rows = con.execute('''SELECT team_id,competition_id,season_id,iso_year,iso_week,provider,
-                                 provider_version,value_type,COUNT(DISTINCT match_id),
-                                 COUNT(DISTINCT CASE WHEN xg_for IS NOT NULL AND xg_against IS NOT NULL THEN match_id END)
+                                 provider_version,COUNT(DISTINCT match_id),
+                                 COUNT(DISTINCT CASE WHEN value_type='MEASURED' THEN match_id END),
+                                 COUNT(DISTINCT CASE WHEN value_type='MODEL_ESTIMATE' THEN match_id END),
+                                 COUNT(DISTINCT CASE WHEN value_type='MISSING' THEN match_id END)
                           FROM match_xg_observation
-                          GROUP BY team_id,competition_id,season_id,iso_year,iso_week,provider,
-                                   provider_version,value_type
+                          GROUP BY team_id,competition_id,season_id,iso_year,iso_week,provider,provider_version
                           ORDER BY competition_id,season_id,iso_year,iso_week,team_id,provider''').fetchall()
     out = []
     for r in rows:
+        total, measured, estimated, missing = r[7], r[8], r[9], r[10]
+        measured_type = 'MEASURED_WITH_MISSING' if missing and measured else 'MEASURED'
+        estimated_type = 'MODEL_ESTIMATE_WITH_MISSING' if missing and estimated else 'MODEL_ESTIMATE'
+        measured_snapshot = con.execute('''SELECT 1 FROM team_weekly_xg_snapshot
+          WHERE team_id=? AND competition_id=? AND season_id=? AND iso_year=? AND iso_week=?
+            AND provider=? AND provider_version=? AND value_type IN (?,?) LIMIT 1''',
+          (r[0],r[1],r[2],r[3],r[4],r[5],r[6],'MEASURED','MEASURED_WITH_MISSING')).fetchone() is not None
+        estimated_snapshot = con.execute('''SELECT 1 FROM team_weekly_xg_snapshot
+          WHERE team_id=? AND competition_id=? AND season_id=? AND iso_year=? AND iso_week=?
+            AND provider=? AND provider_version=? AND value_type IN (?,?) LIMIT 1''',
+          (r[0],r[1],r[2],r[3],r[4],r[5],r[6],'MODEL_ESTIMATE','MODEL_ESTIMATE_WITH_MISSING')).fetchone() is not None
+        missing_snapshot = con.execute('''SELECT 1 FROM team_weekly_xg_snapshot
+          WHERE team_id=? AND competition_id=? AND season_id=? AND iso_year=? AND iso_week=?
+            AND provider=? AND provider_version=? AND value_type='MISSING' LIMIT 1''',
+          (r[0],r[1],r[2],r[3],r[4],r[5],r[6])).fetchone() is not None
         out.append({
-          'team_id':r[0],'competition_id':r[1],'season_id':r[2],'iso_year':r[3],'iso_week':r[4],
-          'provider':r[5],'provider_version':r[6],'value_type':r[7],
-          'matches_count':r[8],'xg_covered_matches':r[9],
-          'coverage':round(r[9]/r[8],4) if r[8] else 0.0,
-          'weekly_snapshot_exists':con.execute('''SELECT 1 FROM team_weekly_xg_snapshot
-             WHERE team_id=? AND competition_id=? AND season_id=? AND iso_year=? AND iso_week=?
-               AND provider=? AND provider_version=? AND value_type=? LIMIT 1''',
-             (r[0],r[1],r[2],r[3],r[4],r[5],r[6],r[7])).fetchone() is not None
+          'team_id':r[0],'competition_id':r[1],'season_id':r[2],
+          'iso_year':r[3],'iso_week':r[4],'provider':r[5],'provider_version':r[6],
+          'matches_count':total,'measured_matches':measured,'estimated_matches':estimated,
+          'missing_matches':missing,
+          'measured_coverage':round(measured/total,4) if total else 0.0,
+          'estimated_coverage':round(estimated/total,4) if total else 0.0,
+          'source_type_conflict':bool(measured and estimated),
+          'measured_weekly_snapshot_exists':measured_snapshot,
+          'estimated_weekly_snapshot_exists':estimated_snapshot,
+          'missing_weekly_snapshot_exists':missing_snapshot
         })
     return out
