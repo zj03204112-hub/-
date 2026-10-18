@@ -175,42 +175,59 @@ def ingest_j1_csv(conn):
     return n
 
 def ingest_k_csv(conn):
-    path = Path("data/auto_results/K_League_1_2026_27.csv")
+    # Never consume the legacy CSV whose Date column contains only kickoff times.
+    path = Path("data/auto_results/K_League_1_2026_27_dated.csv")
     if not path.exists():
-        return 0
-    rows = pd.read_csv(path)
+        raise RuntimeError("dated K League source file missing; run data_pipeline/repair_kleague_dates.py first")
+    rows = pd.read_csv(path, dtype=str, keep_default_na=False)
+    required = {"Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "match_id"}
+    if not required.issubset(rows.columns):
+        raise RuntimeError("dated K League file missing columns: " + str(sorted(required - set(rows.columns))))
     sid = season_id(conn, 6)
     n = 0
+    import re
+    from datetime import datetime, timezone
     for _, r in rows.iterrows():
-        d = pd.to_datetime(r.get("Date"), errors="coerce")
-        if pd.isna(d):
-            continue
-        d = d.strftime("%Y-%m-%d")
+        raw_date = str(r.get("Date", "")).strip()
+        # Strictly require a calendar-date token; pandas can otherwise interpret HH:MM as today's date.
+        if not re.search(r"(?:\\d{4}[-/.]\\d{1,2}[-/.]\\d{1,2}|\\d{1,2}/\\d{1,2}/\\d{4})", raw_date):
+            raise RuntimeError("K League Date is not a full calendar date: " + repr(raw_date))
+        parsed = pd.to_datetime(raw_date, errors="coerce")
+        if pd.isna(parsed):
+            raise RuntimeError("unparseable K League calendar date: " + repr(raw_date))
+        d = parsed.strftime("%Y-%m-%d")
         if not (START <= d <= END):
             continue
-        home = str(r.get("HomeTeam","")).strip()
-        away = str(r.get("AwayTeam","")).strip()
-        if not home or not away or home == "nan" or away == "nan":
-            continue
-        try:
-            mh = int(r.get("FTHG"))
-            ma = int(r.get("FTAG"))
-        except Exception:
-            continue
-        midv = mid("KLEAGUE1", d, home, away)
-        tm = str(r.get("Time","")).strip()
-        kickoff = d + ("T"+tm if tm and tm != "nan" else "")
+        home = str(r.get("HomeTeam", "")).strip()
+        away = str(r.get("AwayTeam", "")).strip()
+        if not home or not away:
+            raise RuntimeError("K League row missing home/away team for " + d)
+        midv = str(r.get("match_id", "")).strip()
+        if not midv:
+            midv = mid("KLEAGUE1", d, home, away)
+        tm = str(r.get("Time", "")).strip()
+        kickoff = d + ("T" + tm if re.fullmatch(r"\\d{1,2}:\\d{2}", tm) else "")
+        ft_h_raw, ft_a_raw = str(r.get("FTHG", "")).strip(), str(r.get("FTAG", "")).strip()
+        completed = bool(re.fullmatch(r"\\d+(?:\\.0)?", ft_h_raw) and re.fullmatch(r"\\d+(?:\\.0)?", ft_a_raw))
+        ft_h, ft_a = (int(float(ft_h_raw)), int(float(ft_a_raw))) if completed else (None, None)
         conn.execute("""INSERT OR IGNORE INTO matches
             (match_id, competition_id, season_id, kickoff, home_team, away_team,
              status, source_status, primary_source_id)
             VALUES (?,?,?,?,?,?,?,?,?)""",
-            (midv,6,sid,kickoff,home,away,"finished","verified_external",5))
-        res = "H" if mh > ma else ("A" if mh < ma else "D")
-        conn.execute("""INSERT OR REPLACE INTO results
-            (match_id, ht_home, ht_away, ft_home, ft_away, result_1x2,
-             completed_at, source_status)
-            VALUES (?,?,?,?,?,?,?,?)""",
-            (midv,None,None,mh,ma,res,d,"verified_external"))
+            (midv, 6, sid, kickoff, home, away,
+             "finished" if completed else "scheduled", "verified_external", 6))
+        if completed:
+            res = "H" if ft_h > ft_a else ("A" if ft_h < ft_a else "D")
+            conn.execute("""INSERT OR IGNORE INTO results
+                (match_id, ht_home, ht_away, ft_home, ft_away, result_1x2,
+                 completed_at, source_status)
+                VALUES (?,?,?,?,?,?,?,?)""",
+                (midv, None, None, ft_h, ft_a, res, d, "verified_external"))
+        provider_event_id = str(r.get("provider_event_id", "")).strip()
+        if provider_event_id:
+            conn.execute("""INSERT OR IGNORE INTO provider_event_map
+                (match_id, provider, event_id, observed_at) VALUES (?,?,?,?)""",
+                (midv, "matchesio", provider_event_id, datetime.now(timezone.utc).isoformat(timespec="seconds")))
         n += 1
     conn.commit()
     return n
