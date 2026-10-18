@@ -27,6 +27,35 @@ TIME_RE = re.compile(r"^\d{1,2}:\d{2}$")
 SCORE_RE = re.compile(r"^\s*(\d+)\s*[–—-]\s*(\d+)\s*$")
 KST = ZoneInfo("Asia/Seoul")
 
+KLEAGUE_TEAM_ALIASES = {
+    "fc seoul":"서울", "seoul":"서울",
+    "incheon united":"인천", "incheon":"인천",
+    "gwangju fc":"광주", "gwangju":"광주",
+    "jeonbuk hyundai motors":"전북", "jeonbuk motors":"전북", "jeonbuk":"전북",
+    "ulsan hd fc":"울산", "ulsan hd":"울산", "ulsan hyundai":"울산", "ulsan":"울산",
+    "pohang steelers":"포항", "pohang":"포항",
+    "daejeon hana citizen":"대전", "daejeon":"대전",
+    "gangwon fc":"강원", "gangwon":"강원",
+    "suwon fc":"수원FC", "suwon":"수원FC",
+    "gimcheon sangmu":"김천", "gimcheon":"김천",
+    "daegu fc":"대구", "daegu":"대구",
+    "jeju sk fc":"제주", "jeju united":"제주", "jeju":"제주",
+    "fc anyang":"안양", "anyang":"안양",
+    "bucheon fc 1995":"부천", "bucheon":"부천",
+    "seongnam fc":"성남", "seongnam":"성남",
+    "suwon samsung bluewings":"수원삼성"
+}
+
+def canonical_k_team(name):
+    key = re.sub(r"\s+", " ", str(name or "").strip().casefold())
+    return KLEAGUE_TEAM_ALIASES.get(key, key)
+
+def stable_k_match_id(match_date, home, away):
+    return hashlib.sha1(
+        f"KLEAGUE1|{match_date}|{canonical_k_team(home)}|{canonical_k_team(away)}".encode("utf-8")
+    ).hexdigest()[:20]
+
+
 def clean(value):
     return re.sub(r"\s+", " ", value or "").strip()
 
@@ -97,9 +126,7 @@ def parse_rows(document):
         ft_away = score_match.group(2) if score_match else ""
         if not ft_home and clean(status).lower() in {"played","finished","full time"}:
             status = "FINISHED_SCORE_MISSING"
-        mid = hashlib.sha256(
-            f"KLEAGUE1|{date_value}|{home.casefold()}|{away.casefold()}".encode("utf-8")
-        ).hexdigest()[:24] if date_value else ""
+        mid = stable_k_match_id(date_value, home, away) if date_value else ""
         records.append({
           "match_id":mid,"provider_event_id":provider_id,
           "identity_status":"VERIFIED" if provider_id else "UNRESOLVED",
@@ -256,9 +283,7 @@ def main():
             unresolved.append(row)
             continue
         if not row.get("match_id"):
-            row["match_id"] = hashlib.sha256(
-                f"KLEAGUE1|{row['Date']}|{row['HomeTeam'].casefold()}|{row['AwayTeam'].casefold()}".encode("utf-8")
-            ).hexdigest()[:24]
+            row["match_id"] = stable_k_match_id(row["Date"], row["HomeTeam"], row["AwayTeam"])
         if not row.get("provider_event_id"):
             row["identity_status"] = "UNRESOLVED"
         dated.append(row)
