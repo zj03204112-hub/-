@@ -159,7 +159,7 @@ def ingest_j1_csv(conn):
             mh, ma = int(m.group(1)), int(m.group(2))
         midv = mid("J1", d, home, away)
         tm = str(r.get("Time","")).strip()
-        kickoff = d + ("T"+tm if tm and tm != "nan" else "")
+        kickoff = d + ("T"+tm+"+09:00" if re.fullmatch(r"\d{1,2}:\d{2}", tm) else "")
         conn.execute("""INSERT OR IGNORE INTO matches
             (match_id, competition_id, season_id, kickoff, home_team, away_team,
              status, source_status, primary_source_id)
