@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS team_weekly_xg_snapshot (
   iso_week INTEGER NOT NULL,
   provider TEXT NOT NULL,
   provider_version TEXT NOT NULL,
-  value_type TEXT NOT NULL CHECK(value_type IN ('MEASURED','MODEL_ESTIMATE','MISSING')),
+  value_type TEXT NOT NULL CHECK(value_type IN ('MEASURED','MODEL_ESTIMATE','MISSING','MEASURED_WITH_MISSING','MODEL_ESTIMATE_WITH_MISSING')),
   week_start TEXT NOT NULL,
   week_end TEXT NOT NULL,
   matches_count INTEGER NOT NULL,
@@ -151,25 +151,27 @@ def append_match_xg(con, record):
 
 def append_weekly_summary(con, team_id, competition_id, season_id, iso_year, iso_week,
                           provider, provider_version, value_type):
-    """Append a deterministic snapshot derived only from matching immutable observations."""
+    """Append a source-specific weekly snapshot; missing games stay in the denominator."""
     if value_type not in ('MEASURED','MODEL_ESTIMATE','MISSING'):
-        raise ValueError('invalid value_type')
+        raise ValueError('value_type must be MEASURED, MODEL_ESTIMATE, or MISSING')
+    allowed = (value_type,) if value_type == 'MISSING' else (value_type, 'MISSING')
+    placeholders = ','.join('?' for _ in allowed)
     rows = con.execute('''SELECT xg_record_id,match_id,match_date,xg_for,xg_against,xgd,
                                   value_type,record_sha256
                            FROM match_xg_observation
                            WHERE team_id=? AND competition_id=? AND season_id=?
                              AND iso_year=? AND iso_week=? AND provider=?
-                             AND provider_version=? AND value_type=?
+                             AND provider_version=? AND value_type IN (''' + placeholders + ''')
                            ORDER BY match_date,match_id,xg_record_id''',
                        (team_id,competition_id,season_id,iso_year,iso_week,
-                        provider,provider_version,value_type)).fetchall()
+                        provider,provider_version,*allowed)).fetchall()
     if not rows:
         raise ValueError('no xG observations for requested team/week/source group')
     record_digest = _sha(json.dumps([list(r) for r in rows], ensure_ascii=False, separators=(',',':')))
-    dates = [date.fromisoformat(r[2]) for r in rows]
     week_start = date.fromisocalendar(int(iso_year), int(iso_week), 1)
     week_end = date.fromisocalendar(int(iso_year), int(iso_week), 7)
-    valid = [r for r in rows if r[3] is not None and r[4] is not None]
+    valid = [r for r in rows if r[6] == value_type and r[3] is not None and r[4] is not None]
+    missing = [r for r in rows if r[6] == 'MISSING']
     matches_count = len(set(r[1] for r in rows))
     covered_matches = len(set(r[1] for r in valid))
     if valid:
@@ -177,13 +179,15 @@ def append_weekly_summary(con, team_id, competition_id, season_id, iso_year, iso
         sxga = sum(r[4] for r in valid)
         sxgd = sum(r[5] for r in valid)
         avgxg, avgxga, avgxgd = sxg/covered_matches, sxga/covered_matches, sxgd/covered_matches
+        summary_type = value_type + '_WITH_MISSING' if missing else value_type
     else:
         sxg = sxga = sxgd = avgxg = avgxga = avgxgd = None
+        summary_type = 'MISSING'
     coverage = covered_matches / matches_count if matches_count else 0.0
     snapshot = {
       'team_id':team_id,'competition_id':competition_id,'season_id':season_id,
       'iso_year':int(iso_year),'iso_week':int(iso_week),'provider':provider,
-      'provider_version':provider_version,'value_type':value_type,
+      'provider_version':provider_version,'value_type':summary_type,
       'week_start':week_start.isoformat(),'week_end':week_end.isoformat(),
       'matches_count':matches_count,'xg_covered_matches':covered_matches,
       'week_xg':sxg,'week_xga':sxga,'week_xgd':sxgd,
@@ -199,7 +203,7 @@ def append_weekly_summary(con, team_id, competition_id, season_id, iso_year, iso
        avg_xg_per90,avg_xga_per90,avg_xgd_per90,coverage,source_record_digest,created_at_utc,snapshot_sha256)
       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)''',
       (summary_id,team_id,competition_id,season_id,int(iso_year),int(iso_week),provider,
-       provider_version,value_type,week_start.isoformat(),week_end.isoformat(),matches_count,
+       provider_version,summary_type,week_start.isoformat(),week_end.isoformat(),matches_count,
        covered_matches,sxg,sxga,sxgd,avgxg,avgxga,avgxgd,coverage,record_digest,_utc_now(),snapshot_sha))
     con.commit()
     return snapshot
