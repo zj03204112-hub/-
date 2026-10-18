@@ -187,7 +187,7 @@ def append_weekly_summary(con, team_id, competition_id, season_id, iso_year, iso
       'week_start':week_start.isoformat(),'week_end':week_end.isoformat(),
       'matches_count':matches_count,'xg_covered_matches':covered_matches,
       'week_xg':sxg,'week_xga':sxga,'week_xgd':sxgd,
-      'avg_xg_per90':avgxg,'avg_xga_per90':avgxga,'avg_xgd_per90':avgxd,
+      'avg_xg_per90':avgxg,'avg_xga_per90':avgxga,'avg_xgd_per90':avgxgd,
       'coverage':coverage,'source_record_digest':record_digest
     }
     snapshot_json = json.dumps(snapshot, ensure_ascii=False, sort_keys=True, separators=(',',':'))
