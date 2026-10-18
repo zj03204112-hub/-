@@ -166,13 +166,17 @@ def main():
                 dated.append(row)
     dated.sort(key=lambda r: (r["Date"], r["Time"], r["HomeTeam"], r["AwayTeam"]))
     dates = [r["Date"] for r in dated]
+    has_more = any("load more matches" in clean(" ".join(el.itertext())).lower()
+                   for el in root.iter() if isinstance(el.tag, str) and len(clean(" ".join(el.itertext()))) < 120)
+    coverage_status = "PARTIAL_PAGE_LOAD_MORE_PRESENT" if has_more else "PAGE_HAS_NO_LOAD_MORE_BUTTON"
+    for row in dated:
+        row["source_coverage_status"] = coverage_status
     print({
       "source":URL,"page_rows":len(rows),"dated_rows":len(dated),
       "unresolved_rows":len(unresolved),"date_min":min(dates) if dates else None,
       "date_max":max(dates) if dates else None,
       "provider_event_ids":sum(bool(r["provider_event_id"]) for r in dated),
-      "page_has_load_more":any("load more matches" in clean(" ".join(el.itertext())).lower()
-                               for el in root.iter() if isinstance(el.tag, str) and len(clean(" ".join(el.itertext()))) < 120)
+      "source_coverage_status":coverage_status
     })
     if "--check-only" in sys.argv:
         if not dated:
@@ -180,7 +184,7 @@ def main():
         return
     fields = ["match_id","provider_event_id","identity_status","Date","Time","kickoff_timezone",
               "kickoff_time_quality","HomeTeam","AwayTeam","FTHG","FTAG","status","source_url",
-              "event_ics_url","source_retrieved_at_utc"]
+              "event_ics_url","source_retrieved_at_utc","source_coverage_status"]
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with OUT.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
