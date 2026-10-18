@@ -1,0 +1,38 @@
+name: Traceability and xG storage validation
+
+on:
+  push:
+    paths:
+      - "data_pipeline/prediction_trace_v2.py"
+      - "data_pipeline/test_prediction_trace_v2.py"
+      - "data_pipeline/xg_snapshot_store.py"
+      - "data_pipeline/test_xg_snapshot_store.py"
+      - "data_pipeline/repair_kleague_dates.py"
+      - "scripts/audit_out_of_scope_matches.py"
+      - ".github/workflows/traceability-xg-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-lineage-and-xg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test immutable prediction trace contract
+        run: python data_pipeline/test_prediction_trace_v2.py
+      - name: Test append-only xG observations and weekly summaries
+        run: python data_pipeline/test_xg_snapshot_store.py
+      - name: Re-run existing trace writer regression test
+        run: python data_pipeline/test_prediction_snapshot_writer.py
+      - name: Compile new data-layer modules
+        run: python -m py_compile data_pipeline/prediction_trace_v2.py data_pipeline/xg_snapshot_store.py data_pipeline/repair_kleague_dates.py scripts/audit_out_of_scope_matches.py
+      - name: Probe live K League public schedule parser (non-blocking diagnostic)
+        continue-on-error: true
+        run: python data_pipeline/repair_kleague_dates.py --check-only
+      - name: Report checked-in database out-of-scope records
+        run: python scripts/audit_out_of_scope_matches.py
