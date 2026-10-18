@@ -2,11 +2,12 @@ import hashlib, sqlite3
 from pathlib import Path
 from io import StringIO
 from datetime import datetime
+from zoneinfo import ZoneInfo
 import pandas as pd
 import requests
 
 DB = "football_model_database.sqlite"
-START, END = "2026-01-01", "2026-09-20"
+START, END = "2026-01-01", datetime.now(ZoneInfo("Asia/Singapore")).date().isoformat()
 
 PUBLIC_LEAGUES = {
     "KLEAGUE1": (6, "https://www.matchesio.com/competition/k-league/"),
