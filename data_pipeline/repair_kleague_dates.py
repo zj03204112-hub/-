@@ -70,7 +70,7 @@ def parse_rows(document):
     records = []
     for el in root.iter():
         tag = str(el.tag).lower() if isinstance(el.tag, str) else ""
-        text = clean(" ".join(el.itertext())) if tag in {"h2","h3","h4","div","span","p","td","th"} else ""
+        text = clean(" ".join(el.itertext()))
         if text and len(text) <= 90:
             detected = parse_date(text)
             if detected:
@@ -130,6 +130,9 @@ def main():
     response.raise_for_status()
     rows = parse_rows(response.text)
     if not rows:
+        root = html.fromstring(response.text)
+        date_nodes = [clean(" ".join(el.itertext())) for el in root.iter() if parse_date(clean(" ".join(el.itertext()))) and len(clean(" ".join(el.itertext()))) <= 120]
+        print({"debug_tr_rows": len(root.xpath("//tr")), "debug_date_nodes": date_nodes[:30], "html_length": len(response.text)})
         raise RuntimeError("No date-qualified K League match rows parsed; source layout may have changed")
     bad_dates = [r for r in rows if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", r["Date"])]
     if bad_dates:
