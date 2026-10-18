@@ -19,7 +19,7 @@ permissions:
 
 concurrency:
   group: football-model-data-sync
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   sync:
