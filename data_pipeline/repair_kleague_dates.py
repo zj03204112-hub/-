@@ -190,9 +190,7 @@ def fetch_event(row):
         row["kickoff_time_quality"] = quality
         row["source_retrieved_at_utc"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         row["identity_status"] = "VERIFIED"
-        row["match_id"] = hashlib.sha256(
-            f"KLEAGUE1|{row['Date']}|{row['HomeTeam'].casefold()}|{row['AwayTeam'].casefold()}".encode("utf-8")
-        ).hexdigest()[:24]
+        row["match_id"] = stable_k_match_id(row["Date"], row["HomeTeam"], row["AwayTeam"])
         return row, ""
     except Exception as exc:
         return row, "ICS_FETCH_ERROR:" + type(exc).__name__
