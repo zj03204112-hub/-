@@ -43,8 +43,11 @@ def main():
         assert missing_summary["matches_count"] == 1
         assert missing_summary["coverage"] == 0
         coverage = audit_weekly_coverage(con)
-        assert len(coverage) == 2
-        assert all(row["weekly_snapshot_exists"] for row in coverage)
+        assert len(coverage) == 1
+        assert abs(coverage[0]["measured_coverage"]-0.5) < 1e-9
+        assert coverage[0]["missing_matches"] == 1
+        assert coverage[0]["measured_weekly_snapshot_exists"]
+        assert coverage[0]["missing_weekly_snapshot_exists"]
         for sql in (
           "UPDATE match_xg_observation SET xg_for=99 WHERE xg_record_id=(SELECT MIN(xg_record_id) FROM match_xg_observation)",
           "DELETE FROM match_xg_observation"
