@@ -169,10 +169,20 @@ def main():
             js_response.raise_for_status()
             body = js_response.text
             snippets = []
-            for term in ("load more", "loadMore", "load-more", "fetch(", "ajax", "api/", "offset", "page"):
+            for term in ("load more", "loadMore", "load-more", "buildChunkUrl", "data-fetch-url", "fetch(", "ajax", "api/", "offset", "page"):
                 for match in list(re.finditer(re.escape(term), body, re.I))[:5]:
                     snippets.append({"term":term,"snippet":body[max(0,match.start()-180):match.end()+260]})
-            print({"script_url":js_url,"script_length":len(body),"snippets":snippets[:30]})
+            print({"script_url":js_url,"script_length":len(body),"snippets":snippets[:40]})
+        button = root.xpath("//*[@data-matches-load-more]")
+        if button:
+            endpoint = button[0].get("data-fetch-url", "")
+            page = button[0].get("data-next-page", "2")
+            target = endpoint if endpoint.startswith("http") else BASE + endpoint
+            probe = requests.get(target, params={"page":page}, timeout=20,
+                                 headers={**HEADERS,"Accept":"application/json","X-Requested-With":"XMLHttpRequest"})
+            print({"pagination_probe_url":probe.url,"status":probe.status_code,
+                   "content_type":probe.headers.get("Content-Type"),
+                   "body_prefix":probe.text[:2500]})
         return
     if not rows:
         raise RuntimeError("No K League match rows or event ICS links found on public source")
