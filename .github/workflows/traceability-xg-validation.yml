@@ -23,6 +23,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install parser dependencies
+        run: python -m pip install --upgrade requests lxml
       - name: Test immutable prediction trace contract
         run: python data_pipeline/test_prediction_trace_v2.py
       - name: Test append-only xG observations and weekly summaries
