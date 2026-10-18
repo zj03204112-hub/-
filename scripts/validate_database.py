@@ -1,8 +1,10 @@
 import json, sqlite3, sys
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 DB = Path("football_model_database.sqlite")
-START, END = "2022-01-01", "2026-09-20"
+START, END = "2022-01-01", datetime.now(ZoneInfo("Asia/Singapore")).date().isoformat()
 EXPECTED = {"EPL","LALIGA","BUNDESLIGA","SERIEA","LIGUE1","KLEAGUE1","J1"}
 
 def main():
