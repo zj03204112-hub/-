@@ -1,6 +1,14 @@
 name: Football Model Data Sync
 
 on:
+  push:
+    paths:
+      - 'data_pipeline/build_football_db.py'
+      - 'data_pipeline/collect_public_asia.py'
+      - 'data_pipeline/repair_kleague_dates.py'
+      - 'scripts/validate_database.py'
+      - 'scripts/audit_out_of_scope_matches.py'
+      - '.github/workflows/football-model-sync.yml'
   workflow_dispatch:
   schedule:
     - cron: "17 2 * * *"
@@ -44,8 +52,14 @@ jobs:
       - name: Collect five major European leagues
         run: python data_pipeline/build_football_db.py
 
+      - name: Rebuild K League 1 dates from public schedule source
+        run: python data_pipeline/repair_kleague_dates.py
+
       - name: Collect K League 1 and J1
         run: python data_pipeline/collect_public_asia.py
+
+      - name: Audit out-of-scope fixtures before validation
+        run: python scripts/audit_out_of_scope_matches.py
 
       - name: Validate database
         run: python scripts/validate_database.py
@@ -54,6 +68,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add football_model_database.sqlite data/validation_report.json
+          git add football_model_database.sqlite data/validation_report.json data/auto_results/K_League_1_2026_27_dated.csv data/out_of_scope_audit.json
           git diff --cached --quiet || git commit -m "chore: sync football model database"
           git push
