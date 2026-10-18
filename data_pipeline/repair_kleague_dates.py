@@ -55,44 +55,66 @@ def parse_rows(document):
     root = html.fromstring(document)
     records = []
     for row in root.xpath("//tr"):
+        if not isinstance(row.tag, str):
+            continue
         cells = [clean(" ".join(cell.itertext())) for cell in row.xpath("./th|./td")]
         if len(cells) < 4:
             continue
-        time_text = next((c for c in cells[:2] if TIME_RE.fullmatch(c)), "")
+        time_text = next((value for value in cells[:2] if TIME_RE.fullmatch(value)), "")
         if not time_text:
             continue
-        time_index = next(i for i,c in enumerate(cells[:2]) if TIME_RE.fullmatch(c))
+        time_index = next(i for i,value in enumerate(cells[:2]) if TIME_RE.fullmatch(value))
         if time_index == 0:
-            if len(cells) < 4:
-                continue
-            home, away = cells[2], cells[3]
+            home, away = (cells[2], cells[3]) if len(cells) >= 4 else ("", "")
             status = cells[6] if len(cells) > 6 else "UNKNOWN"
             score = cells[7] if len(cells) > 7 else ""
         else:
-            if len(cells) < 5:
-                continue
-            home, away = cells[3], cells[4]
+            home, away = (cells[3], cells[4]) if len(cells) >= 5 else ("", "")
             status = cells[7] if len(cells) > 7 else "UNKNOWN"
             score = cells[8] if len(cells) > 8 else ""
         if not home or not away or home.lower() in {"home team","home"} or away.lower() in {"away team","away"}:
             continue
+        provider_id = (row.get("data-match-id") or "").strip() or event_id_from_row(row)
+        date_value = (row.get("data-day") or "").strip()
+        time_value = time_text
+        time_quality = "TIME_TEXT_ONLY"
+        epoch = (row.get("data-time") or "").strip()
+        if epoch:
+            try:
+                seconds = float(epoch)
+                if seconds > 10_000_000_000:
+                    seconds /= 1000
+                local_dt = datetime.fromtimestamp(seconds, timezone.utc).astimezone(KST)
+                date_value = local_dt.date().isoformat()
+                time_value = local_dt.strftime("%H:%M")
+                time_quality = "UNIX_EPOCH_CONVERTED_TO_KST"
+            except (ValueError, OverflowError, OSError):
+                pass
+        if date_value and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date_value):
+            date_value = ""
         score_match = SCORE_RE.match(score)
         ft_home = score_match.group(1) if score_match else ""
         ft_away = score_match.group(2) if score_match else ""
-        provider_id = event_id_from_row(row)
-        event_url = event_url_from_row(row)
+        if not ft_home and clean(status).lower() in {"played","finished","full time"}:
+            status = "FINISHED_SCORE_MISSING"
+        mid = hashlib.sha256(
+            f"KLEAGUE1|{date_value}|{home.casefold()}|{away.casefold()}".encode("utf-8")
+        ).hexdigest()[:24] if date_value else ""
         records.append({
-          "match_id":"","provider_event_id":provider_id,
-          "identity_status":"UNRESOLVED" if not provider_id else "VERIFIED",
-          "Date":"","Time":time_text,"HomeTeam":home,"AwayTeam":away,
+          "match_id":mid,"provider_event_id":provider_id,
+          "identity_status":"VERIFIED" if provider_id else "UNRESOLVED",
+          "Date":date_value,"Time":time_value,"kickoff_timezone":"Asia/Seoul",
+          "kickoff_time_quality":time_quality,"HomeTeam":home,"AwayTeam":away,
           "FTHG":ft_home,"FTAG":ft_away,"status":status,
-          "source_url":URL,"event_ics_url":event_url,
-          "source_retrieved_at_utc":""
+          "source_url":URL,"event_ics_url":event_url_from_row(row),
+          "source_retrieved_at_utc":datetime.now(timezone.utc).isoformat(timespec="seconds")
         })
     unique = {}
-    for row in records:
-        key = (row["provider_event_id"], row["HomeTeam"].casefold(), row["AwayTeam"].casefold())
-        unique[key] = row
+    for record in records:
+        key = record["provider_event_id"] or (
+            record["Date"], record["HomeTeam"].casefold(), record["AwayTeam"].casefold()
+        )
+        unique[key] = record
     return list(unique.values()), root
 
 def parse_ics_datetime(ics_text):
@@ -186,21 +208,63 @@ def main():
         return
     if not rows:
         raise RuntimeError("No K League match rows or event ICS links found on public source")
+    button = root.xpath("//*[@data-matches-load-more]")
+    page_coverage_complete = not bool(button)
+    if button:
+        endpoint = button[0].get("data-fetch-url", "")
+        next_page = int(button[0].get("data-next-page", "2") or "2")
+        target = endpoint if endpoint.startswith("http") else BASE + endpoint
+        seen = {r["provider_event_id"] for r in rows if r["provider_event_id"]}
+        for _ in range(30):
+            page_response = requests.get(
+                target, params={"page":next_page}, timeout=30,
+                headers={**HEADERS,"Accept":"application/json","X-Requested-With":"XMLHttpRequest"}
+            )
+            page_response.raise_for_status()
+            payload = page_response.json()
+            fragment = payload.get("html", "")
+            if not fragment.strip():
+                page_coverage_complete = True
+                break
+            extra, _ = parse_rows(fragment)
+            fresh = [r for r in extra if not r["provider_event_id"] or r["provider_event_id"] not in seen]
+            if not fresh:
+                page_coverage_complete = True
+                break
+            rows.extend(fresh)
+            seen.update(r["provider_event_id"] for r in fresh if r["provider_event_id"])
+            if payload.get("has_more") is False or payload.get("hasMore") is False:
+                page_coverage_complete = True
+                break
+            next_page = int(payload.get("next_page") or payload.get("nextPage") or (next_page + 1))
+        else:
+            page_coverage_complete = False
+    # Fall back to the event ICS only for rows whose calendar date is absent.
+    missing_dates = [r for r in rows if not r.get("Date") and r.get("event_ics_url")]
+    if missing_dates:
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            futures = [pool.submit(fetch_event, row) for row in missing_dates]
+            replacements = {}
+            for future in as_completed(futures):
+                row, error = future.result()
+                replacements[row.get("provider_event_id") or row.get("HomeTeam","")] = (row,error)
+            rows = [replacements.get(r.get("provider_event_id") or r.get("HomeTeam",""), (r,""))[0] for r in rows]
     dated, unresolved = [], []
-    with ThreadPoolExecutor(max_workers=8) as pool:
-        futures = [pool.submit(fetch_event, row) for row in rows]
-        for future in as_completed(futures):
-            row, error = future.result()
-            if error or not row.get("Date"):
-                row["missing_reason"] = error or "CALENDAR_DATE_UNRESOLVED"
-                unresolved.append(row)
-            else:
-                dated.append(row)
+    for row in rows:
+        if not row.get("Date") or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", row["Date"]):
+            row["missing_reason"] = "CALENDAR_DATE_UNRESOLVED"
+            unresolved.append(row)
+            continue
+        if not row.get("match_id"):
+            row["match_id"] = hashlib.sha256(
+                f"KLEAGUE1|{row['Date']}|{row['HomeTeam'].casefold()}|{row['AwayTeam'].casefold()}".encode("utf-8")
+            ).hexdigest()[:24]
+        if not row.get("provider_event_id"):
+            row["identity_status"] = "UNRESOLVED"
+        dated.append(row)
     dated.sort(key=lambda r: (r["Date"], r["Time"], r["HomeTeam"], r["AwayTeam"]))
     dates = [r["Date"] for r in dated]
-    has_more = any("load more matches" in clean(" ".join(el.itertext())).lower()
-                   for el in root.iter() if isinstance(el.tag, str) and len(clean(" ".join(el.itertext()))) < 120)
-    coverage_status = "PARTIAL_PAGE_LOAD_MORE_PRESENT" if has_more else "PAGE_HAS_NO_LOAD_MORE_BUTTON"
+    coverage_status = "COMPLETE_PAGINATION" if page_coverage_complete else "PARTIAL_PAGE_LOAD_MORE_PRESENT"
     for row in dated:
         row["source_coverage_status"] = coverage_status
     print({
@@ -212,7 +276,7 @@ def main():
     })
     if "--check-only" in sys.argv:
         if not dated:
-            raise RuntimeError("No dated K League rows were recovered from ICS events")
+            raise RuntimeError("No dated K League rows were recovered")
         return
     fields = ["match_id","provider_event_id","identity_status","Date","Time","kickoff_timezone",
               "kickoff_time_quality","HomeTeam","AwayTeam","FTHG","FTAG","status","source_url",
