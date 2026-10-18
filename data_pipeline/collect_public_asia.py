@@ -13,6 +13,31 @@ START, END = "2026-01-01", datetime.now(ZoneInfo("Asia/Singapore")).date().isofo
 # Do not pass its time-only HTML table through the legacy pandas.read_html fallback.
 PUBLIC_LEAGUES = {}
 
+KLEAGUE_TEAM_ALIASES = {
+    "fc seoul":"서울", "seoul":"서울",
+    "incheon united":"인천", "incheon":"인천",
+    "gwangju fc":"광주", "gwangju":"광주",
+    "jeonbuk hyundai motors":"전북", "jeonbuk motors":"전북", "jeonbuk":"전북",
+    "ulsan hd fc":"울산", "ulsan hd":"울산", "ulsan hyundai":"울산", "ulsan":"울산",
+    "pohang steelers":"포항", "pohang":"포항",
+    "daejeon hana citizen":"대전", "daejeon":"대전",
+    "gangwon fc":"강원", "gangwon":"강원",
+    "suwon fc":"수원FC", "suwon":"수원FC",
+    "gimcheon sangmu":"김천", "gimcheon":"김천",
+    "daegu fc":"대구", "daegu":"대구",
+    "jeju sk fc":"제주", "jeju united":"제주", "jeju":"제주",
+    "fc anyang":"안양", "anyang":"안양",
+    "bucheon fc 1995":"부천", "bucheon":"부천",
+    "seongnam fc":"성남", "seongnam":"성남",
+    "suwon samsung bluewings":"수원삼성"
+}
+
+def canonical_k_team(name):
+    import re
+    key = re.sub(r"\s+", " ", str(name or "").strip().casefold())
+    return KLEAGUE_TEAM_ALIASES.get(key, key)
+
+
 def mid(code, date, home, away):
     return hashlib.sha1(f"{code}|{date}|{home}|{away}".encode()).hexdigest()[:20]
 
@@ -203,9 +228,19 @@ def ingest_k_csv(conn):
         away = str(r.get("AwayTeam", "")).strip()
         if not home or not away:
             raise RuntimeError("K League row missing home/away team for " + d)
-        midv = str(r.get("match_id", "")).strip()
-        if not midv:
-            midv = mid("KLEAGUE1", d, home, away)
+        # Reuse an existing internal ID if this fixture already exists in the DB,
+        # including Korean/English aliases recovered from frozen samples.
+        canonical_home, canonical_away = canonical_k_team(home), canonical_k_team(away)
+        same_day = conn.execute(
+            "SELECT match_id,home_team,away_team FROM matches WHERE competition_id=6 AND substr(kickoff,1,10)=?",
+            (d,)
+        ).fetchall()
+        matches = [item for item in same_day
+                   if canonical_k_team(item[1]) == canonical_home
+                   and canonical_k_team(item[2]) == canonical_away]
+        if len(matches) > 1:
+            raise RuntimeError("ambiguous existing K League fixture mapping: " + d + " " + home + " vs " + away)
+        midv = matches[0][0] if matches else mid("KLEAGUE1", d, canonical_home, canonical_away)
         tm = str(r.get("Time", "")).strip()
         kickoff = d + ("T" + tm if re.fullmatch(r"\\d{1,2}:\\d{2}", tm) else "")
         ft_h_raw, ft_a_raw = str(r.get("FTHG", "")).strip(), str(r.get("FTAG", "")).strip()
