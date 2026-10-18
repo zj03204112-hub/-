@@ -69,7 +69,9 @@ def parse_rows(document):
     current_date = None
     records = []
     for el in root.iter():
-        tag = str(el.tag).lower() if isinstance(el.tag, str) else ""
+        if not isinstance(el.tag, str):
+            continue
+        tag = el.tag.lower()
         text = clean(" ".join(el.itertext()))
         if text and len(text) <= 90:
             detected = parse_date(text)
