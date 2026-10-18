@@ -36,5 +36,8 @@ jobs:
       - name: Probe live K League public schedule parser (non-blocking diagnostic)
         continue-on-error: true
         run: python data_pipeline/repair_kleague_dates.py --check-only
+      - name: Inspect public schedule pagination endpoint
+        continue-on-error: true
+        run: python data_pipeline/repair_kleague_dates.py --inspect-load-more
       - name: Report checked-in database out-of-scope records
         run: python scripts/audit_out_of_scope_matches.py
