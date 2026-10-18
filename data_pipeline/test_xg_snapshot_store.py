@@ -30,8 +30,10 @@ def main():
         ))
         summary = append_weekly_summary(con,"team-home","league-test","season-test",2026,42,
                                         "TEST_PROVIDER","v1","MEASURED")
-        assert summary["matches_count"] == 1
+        assert summary["matches_count"] == 2
         assert summary["xg_covered_matches"] == 1
+        assert abs(summary["coverage"]-0.5) < 1e-9
+        assert summary["value_type"] == "MEASURED_WITH_MISSING"
         assert abs(summary["week_xg"]-1.7) < 1e-9
         assert abs(summary["week_xga"]-0.8) < 1e-9
         assert abs(summary["week_xgd"]-0.9) < 1e-9
