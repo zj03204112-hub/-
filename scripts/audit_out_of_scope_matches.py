@@ -2,11 +2,13 @@
 """Read-only diagnostic for matches outside the declared collection scope."""
 import json
 import sqlite3
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 DB = Path("football_model_database.sqlite")
 OUT = Path("data/out_of_scope_audit.json")
-START, END = "2022-01-01", "2026-09-20"
+START, END = "2022-01-01", datetime.now(ZoneInfo("Asia/Singapore")).date().isoformat()
 
 def main():
     if not DB.exists():
