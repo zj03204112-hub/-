@@ -9,9 +9,9 @@ import requests
 DB = "football_model_database.sqlite"
 START, END = "2026-01-01", datetime.now(ZoneInfo("Asia/Singapore")).date().isoformat()
 
-PUBLIC_LEAGUES = {
-    "KLEAGUE1": (6, "https://www.matchesio.com/competition/k-league/"),
-}
+# K League 1 is ingested only from the dated, provider-ID-mapped CSV above.
+# Do not pass its time-only HTML table through the legacy pandas.read_html fallback.
+PUBLIC_LEAGUES = {}
 
 def mid(code, date, home, away):
     return hashlib.sha1(f"{code}|{date}|{home}|{away}".encode()).hexdigest()[:20]
