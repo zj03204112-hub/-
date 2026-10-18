@@ -1,9 +1,10 @@
 import sqlite3, hashlib, requests, io, csv
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 DB = "football_model_database.sqlite"
 START = "2022-01-01"
-END = "2026-09-20"
+END = datetime.now(ZoneInfo("Asia/Singapore")).date().isoformat()
 
 LEAGUES = {
     "EPL": ("E0", 1),
@@ -154,6 +155,11 @@ def ingest_file(conn, league, code, competition_id, season_label, season_code):
 
 def main():
     conn = sqlite3.connect(DB)
+    try:
+        conn.execute("UPDATE collection_scope SET end_date=? WHERE scope_id=1", (END,))
+        conn.commit()
+    except sqlite3.OperationalError:
+        pass
     total = 0
     for league, (code, cid) in LEAGUES.items():
         for label, scode in SEASONS.items():
