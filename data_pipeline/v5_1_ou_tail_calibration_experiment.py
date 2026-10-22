@@ -202,9 +202,19 @@ def main():
     con = sqlite3.connect(DB)
     tables = {r[0] for r in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
     if "market_snapshot" not in tables:
+        market_related = {}
+        for table in sorted(tables):
+            if any(term in table.lower() for term in ("market", "odds", "price")):
+                market_related[table] = [x[1] for x in con.execute(f'PRAGMA table_info("{table}")')]
+        payload = {
+            "status": "BLOCKED_MARKET_TABLE_MISSING",
+            "required_fields": list(REQUIRED),
+            "market_related_tables_found": market_related,
+            "reason": "The current SQLite database has no structured market_snapshot table containing Asian total line and Over/Under odds. A Sporttery handicap-only table cannot substitute for O/U prices; no market data is inferred."
+        }
         OUT.parent.mkdir(parents=True, exist_ok=True)
-        OUT.write_text(json.dumps({"status": "BLOCKED_MARKET_TABLE_MISSING", "required_fields": list(REQUIRED)}, indent=2), encoding="utf-8")
-        print(json.dumps({"status": "BLOCKED_MARKET_TABLE_MISSING"}))
+        OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(json.dumps(payload, ensure_ascii=False))
         return
     cols = {r[1] for r in con.execute("PRAGMA table_info(market_snapshot)")}
     required_cols = {"match_id", "captured_at", "ou_line", "over_odds", "under_odds"}
