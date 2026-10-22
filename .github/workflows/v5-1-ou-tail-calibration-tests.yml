@@ -1,0 +1,28 @@
+name: O/U Tail Calibration Unit Tests
+
+on:
+  push:
+    branches:
+      - experiment/v51-ou-total-goal-tail-calibration-20261022
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  unit-tests-and-shadow-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run unit tests
+        run: python -m unittest data_pipeline/test_v5_1_ou_tail_calibration_experiment.py
+      - name: Run isolated shadow experiment
+        run: python data_pipeline/v5_1_ou_tail_calibration_experiment.py
+      - name: Upload experiment report
+        if: always() && hashFiles('model_validation/v5_1_ou_tail_calibration_result.json') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: v5-1-ou-tail-calibration-result
+          path: model_validation/v5_1_ou_tail_calibration_result.json
