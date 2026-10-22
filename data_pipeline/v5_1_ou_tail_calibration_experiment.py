@@ -118,6 +118,75 @@ def apply_ou_market(lh, la, market):
     return lh * scale, la * scale, scale
 
 
+def normalize_market_json(raw):
+    try:
+        obj = json.loads(raw) if isinstance(raw, str) else dict(raw)
+    except (TypeError, ValueError, json.JSONDecodeError):
+        return None
+    aliases = {
+        "ou_line": ("ou_line", "asian_total_line", "total_line", "line"),
+        "over_odds": ("over_odds", "over_price", "over"),
+        "under_odds": ("under_odds", "under_price", "under"),
+    }
+    out = {}
+    for target, keys in aliases.items():
+        value = next((obj.get(k) for k in keys if obj.get(k) not in (None, "")), None)
+        if value is None:
+            return None
+        try:
+            out[target] = float(value)
+        except (TypeError, ValueError):
+            return None
+    if out["over_odds"] <= 1 or out["under_odds"] <= 1:
+        return None
+    return out
+
+
+def fetch_t12h_market(con, tables, match_id, cutoff):
+    """Use only provider-timestamped pre-cutoff prices; retrieval time alone is not enough."""
+    if "market_snapshot" in tables:
+        cols = {r[1] for r in con.execute("PRAGMA table_info(market_snapshot)")}
+        required = {"match_id", "provider_event_timestamp_utc", "timestamp_quality",
+                    "ou_line", "over_odds", "under_odds"}
+        if required.issubset(cols):
+            row = con.execute("""SELECT ou_line,over_odds,under_odds
+                FROM market_snapshot
+                WHERE match_id=? AND timestamp_quality='PROVIDER_TIMESTAMPED'
+                  AND provider_event_timestamp_utc IS NOT NULL
+                  AND provider_event_timestamp_utc<=?
+                  AND ou_line IS NOT NULL AND over_odds IS NOT NULL AND under_odds IS NOT NULL
+                ORDER BY provider_event_timestamp_utc DESC LIMIT 1""",
+                (match_id, cutoff)).fetchone()
+            if row:
+                market = dict(zip(REQUIRED, row))
+                try:
+                    if float(market["over_odds"]) > 1 and float(market["under_odds"]) > 1:
+                        return {k: float(v) for k, v in market.items()}
+                except (TypeError, ValueError):
+                    pass
+
+    if "market_trace" in tables:
+        cols = {r[1] for r in con.execute("PRAGMA table_info(market_trace)")}
+        required = {"match_id", "market_type", "provider_event_timestamp_utc",
+                    "timestamp_quality", "normalized_json"}
+        if required.issubset(cols):
+            rows = con.execute("""SELECT market_type,normalized_json
+                FROM market_trace
+                WHERE match_id=? AND timestamp_quality='PROVIDER_TIMESTAMPED'
+                  AND provider_event_timestamp_utc IS NOT NULL
+                  AND provider_event_timestamp_utc<=?
+                ORDER BY provider_event_timestamp_utc DESC""",
+                (match_id, cutoff)).fetchall()
+            for market_type, normalized in rows:
+                kind = str(market_type or "").lower()
+                if not any(token in kind for token in ("total", "over_under", "over-under", "ou")):
+                    continue
+                market = normalize_market_json(normalized)
+                if market:
+                    return market
+    return None
+
+
 def fit_margin_factors(rows):
     """Layer 3: learn absolute goal-difference-bin multipliers on training rows only."""
     observed = [0.0] * 4
@@ -201,7 +270,16 @@ def main():
 
     con = sqlite3.connect(DB)
     tables = {r[0] for r in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
-    if "market_snapshot" not in tables:
+    supported_market_schema = False
+    if "market_snapshot" in tables:
+        cols = {r[1] for r in con.execute("PRAGMA table_info(market_snapshot)")}
+        supported_market_schema |= {"match_id", "provider_event_timestamp_utc", "timestamp_quality",
+                                    "ou_line", "over_odds", "under_odds"}.issubset(cols)
+    if "market_trace" in tables:
+        cols = {r[1] for r in con.execute("PRAGMA table_info(market_trace)")}
+        supported_market_schema |= {"match_id", "market_type", "provider_event_timestamp_utc",
+                                    "timestamp_quality", "normalized_json"}.issubset(cols)
+    if not supported_market_schema:
         market_related = {}
         for table in sorted(tables):
             if any(term in table.lower() for term in ("market", "odds", "price")):
@@ -210,18 +288,11 @@ def main():
             "status": "BLOCKED_MARKET_TABLE_MISSING",
             "required_fields": list(REQUIRED),
             "market_related_tables_found": market_related,
-            "reason": "The current SQLite database has no structured market_snapshot table containing Asian total line and Over/Under odds. A Sporttery handicap-only table cannot substitute for O/U prices; no market data is inferred."
+            "reason": "No market table has Over/Under line and prices with a provider-supplied event timestamp. Retrieval-time-only or Sporttery handicap-only data cannot substitute; no market data is inferred."
         }
         OUT.parent.mkdir(parents=True, exist_ok=True)
         OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(payload, ensure_ascii=False))
-        return
-    cols = {r[1] for r in con.execute("PRAGMA table_info(market_snapshot)")}
-    required_cols = {"match_id", "captured_at", "ou_line", "over_odds", "under_odds"}
-    if not required_cols.issubset(cols):
-        OUT.parent.mkdir(parents=True, exist_ok=True)
-        OUT.write_text(json.dumps({"status": "BLOCKED_MARKET_SCHEMA", "available_columns": sorted(cols)}, indent=2), encoding="utf-8")
-        print(json.dumps({"status": "BLOCKED_MARKET_SCHEMA", "available_columns": sorted(cols)}))
         return
 
     with MAP.open(encoding="utf-8-sig", newline="") as f:
@@ -244,14 +315,10 @@ def main():
             continue
         mid, kickoff, home, away, fh, fa = r
         cutoff = (datetime.fromisoformat(kickoff[:19]) - timedelta(hours=12)).isoformat(timespec="seconds")
-        market_row = con.execute("""SELECT ou_line,over_odds,under_odds FROM market_snapshot
-            WHERE match_id=? AND captured_at<=? AND ou_line IS NOT NULL
-              AND over_odds IS NOT NULL AND under_odds IS NOT NULL
-            ORDER BY captured_at DESC LIMIT 1""", (mid, cutoff)).fetchone()
-        if not market_row:
+        market = fetch_t12h_market(con, tables, mid, cutoff)
+        if not market:
             missing += 1
             continue
-        market = dict(zip(REQUIRED, market_row))
         try:
             lh, la = cm.model_lambdas(con, "v4", r)
             base = cm.matrix(lh, la, True)
