@@ -167,7 +167,7 @@ def evaluate(rows, matrix_key):
         hda_correct += int(max(p, key=p.get) == actual)
         hda_brier += brier(p, actual)
         hda_logloss -= math.log(max(1e-12, p[actual]))
-        score_logloss -= math.log(max(1e-12, m[fh][fa])) if fh < N and fa < N else 0.0
+        score_logloss -= math.log(max(1e-12, m[fh][fa])) if fh < N and fa < N else -math.log(1e-12)
         td = total_distribution(m)
         total_logloss -= math.log(max(1e-12, td.get(fh + fa, 0.0)))
         expected_total = sum(t * v for t, v in td.items())
