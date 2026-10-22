@@ -47,6 +47,35 @@ class OUTailCalibrationTests(unittest.TestCase):
         self.assertAlmostEqual(sum(map(sum, calibrated)), 1.0, places=10)
         self.assertTrue(all(x > 0 for x in factors))
 
+
+    def test_market_json_aliases(self):
+        market = exp.normalize_market_json({
+            "asian_total_line": 2.75, "over_odds": 1.91, "under_odds": 1.95
+        })
+        self.assertEqual(market["ou_line"], 2.75)
+        self.assertAlmostEqual(market["over_odds"], 1.91)
+
+    def test_market_trace_requires_provider_timestamp_before_cutoff(self):
+        import json
+        import sqlite3
+        con = sqlite3.connect(":memory:")
+        con.execute("""CREATE TABLE market_trace (
+            match_id TEXT, market_type TEXT, provider_event_timestamp_utc TEXT,
+            timestamp_quality TEXT, normalized_json TEXT)""")
+        con.execute("INSERT INTO market_trace VALUES (?,?,?,?,?)", (
+            "m1", "asian_total", "2026-10-21T11:00:00Z", "PROVIDER_TIMESTAMPED",
+            json.dumps({"asian_total_line": 2.5, "over_odds": 1.9, "under_odds": 1.9})
+        ))
+        con.execute("INSERT INTO market_trace VALUES (?,?,?,?,?)", (
+            "m1", "asian_total", "2026-10-21T13:00:00Z", "PROVIDER_TIMESTAMPED",
+            json.dumps({"asian_total_line": 3.5, "over_odds": 1.8, "under_odds": 2.0})
+        ))
+        market = exp.fetch_t12h_market(
+            con, {"market_trace"}, "m1", "2026-10-21T12:00:00"
+        )
+        self.assertEqual(market["ou_line"], 2.5)
+        con.close()
+
     def test_evaluation_exposes_required_metrics(self):
         m = exp.matrix(1.4, 1.0)
         row = {"actual_home": 1, "actual_away": 0, "base_matrix": m}
