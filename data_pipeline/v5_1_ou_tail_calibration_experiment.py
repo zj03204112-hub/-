@@ -9,7 +9,7 @@ import json
 import math
 import sqlite3
 from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import sys
 
@@ -142,44 +142,63 @@ def normalize_market_json(raw):
     return out
 
 
+def parse_utc_timestamp(value):
+    if not value:
+        return None
+    try:
+        dt = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        # Fields named *_utc are treated as UTC even if the provider omitted the suffix.
+        return dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc)
+
+
 def fetch_t12h_market(con, tables, match_id, cutoff):
     """Use only provider-timestamped pre-cutoff prices; retrieval time alone is not enough."""
+    cutoff_dt = parse_utc_timestamp(cutoff)
+    if cutoff_dt is None:
+        return None
+
     if "market_snapshot" in tables:
         cols = {r[1] for r in con.execute("PRAGMA table_info(market_snapshot)")}
         required = {"match_id", "provider_event_timestamp_utc", "timestamp_quality",
                     "ou_line", "over_odds", "under_odds"}
         if required.issubset(cols):
-            row = con.execute("""SELECT ou_line,over_odds,under_odds
+            rows = con.execute("""SELECT provider_event_timestamp_utc,ou_line,over_odds,under_odds
                 FROM market_snapshot
                 WHERE match_id=? AND timestamp_quality='PROVIDER_TIMESTAMPED'
                   AND provider_event_timestamp_utc IS NOT NULL
-                  AND provider_event_timestamp_utc<=?
                   AND ou_line IS NOT NULL AND over_odds IS NOT NULL AND under_odds IS NOT NULL
-                ORDER BY provider_event_timestamp_utc DESC LIMIT 1""",
-                (match_id, cutoff)).fetchone()
-            if row:
-                market = dict(zip(REQUIRED, row))
+                ORDER BY provider_event_timestamp_utc DESC""", (match_id,)).fetchall()
+            for timestamp, line, over, under in rows:
+                event_dt = parse_utc_timestamp(timestamp)
+                if event_dt is None or event_dt > cutoff_dt:
+                    continue
                 try:
-                    if float(market["over_odds"]) > 1 and float(market["under_odds"]) > 1:
-                        return {k: float(v) for k, v in market.items()}
+                    market = {"ou_line": float(line), "over_odds": float(over), "under_odds": float(under)}
+                    if market["over_odds"] > 1 and market["under_odds"] > 1:
+                        return market
                 except (TypeError, ValueError):
-                    pass
+                    continue
 
     if "market_trace" in tables:
         cols = {r[1] for r in con.execute("PRAGMA table_info(market_trace)")}
         required = {"match_id", "market_type", "provider_event_timestamp_utc",
                     "timestamp_quality", "normalized_json"}
         if required.issubset(cols):
-            rows = con.execute("""SELECT market_type,normalized_json
+            rows = con.execute("""SELECT provider_event_timestamp_utc,market_type,normalized_json
                 FROM market_trace
                 WHERE match_id=? AND timestamp_quality='PROVIDER_TIMESTAMPED'
                   AND provider_event_timestamp_utc IS NOT NULL
-                  AND provider_event_timestamp_utc<=?
-                ORDER BY provider_event_timestamp_utc DESC""",
-                (match_id, cutoff)).fetchall()
-            for market_type, normalized in rows:
+                ORDER BY provider_event_timestamp_utc DESC""", (match_id,)).fetchall()
+            for timestamp, market_type, normalized in rows:
+                event_dt = parse_utc_timestamp(timestamp)
+                if event_dt is None or event_dt > cutoff_dt:
+                    continue
                 kind = str(market_type or "").lower()
-                if not any(token in kind for token in ("total", "over_under", "over-under", "ou")):
+                if not any(token in kind for token in ("total", "over_under", "over-under", "ou", "/")):
                     continue
                 market = normalize_market_json(normalized)
                 if market:
