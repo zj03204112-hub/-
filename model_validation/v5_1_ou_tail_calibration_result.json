@@ -1,0 +1,46 @@
+{
+  "status": "BLOCKED_MARKET_TABLE_MISSING",
+  "generated_at_utc": "2026-10-22T02:15:17Z",
+  "repository": "zj03204112-hub/-",
+  "branch": "experiment/v51-ou-total-goal-tail-calibration-20261022",
+  "pull_request": "https://github.com/zj03204112-hub/-/pull/12",
+  "workflow_run": "https://github.com/zj03204112-hub/-/actions/runs/39710346942",
+  "unit_tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "frozen_sample_mapping": {
+    "source_branch": "audit/v4-v5-engine-20261009",
+    "rows": 500,
+    "unique_match_ids": 500,
+    "unresolved": 0,
+    "ambiguous": 0,
+    "note": "Copied unchanged into the isolated experiment branch; original branch and main are untouched."
+  },
+  "market_data_audit": {
+    "required_fields": [
+      "ou_line",
+      "over_odds",
+      "under_odds",
+      "provider_event_timestamp_utc"
+    ],
+    "available_related_tables": {
+      "sporttery_market": [
+        "market_id",
+        "match_id",
+        "pool_code",
+        "handicap",
+        "home_value",
+        "draw_value",
+        "away_value",
+        "captured_at",
+        "source_status"
+      ]
+    },
+    "usable_t12h_ou_snapshots": 0,
+    "reason": "Current SQLite database has only Sporttery handicap 1X2 fields; no O/U line and over/under odds with a provider-supplied event timestamp. Retrieval-time-only or handicap-only data cannot substitute."
+  },
+  "metrics": null,
+  "production_acceptance": "NOT_EVALUATED",
+  "next_required_action": "Ingest actual O/U line and over/under odds with provider event timestamps into market_trace (or a compatible structured market table), then rerun. Do not use closing prices or infer missing O/U values."
+}
