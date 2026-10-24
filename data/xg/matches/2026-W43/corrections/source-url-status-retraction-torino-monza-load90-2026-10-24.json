@@ -1,0 +1,13 @@
+{
+  "schema_version": "xg-source-resolution-status-v1",
+  "created_at_beijing": "2026-10-24T14:56:14+08:00",
+  "status_id": "status-2026-10-24-torino-monza-load90-url",
+  "applies_to": [
+    "data/xg/matches/2026-W43/postmatch-provider-records-2026-10-24.json",
+    "data/xg/matches/2026-W43/corrections/source-url-correction-torino-monza-load90-2026-10-24.json"
+  ],
+  "status": "UNRESOLVED_NOT_INDEPENDENTLY_RETRIEVED",
+  "note": "The prior correction file proposed a canonical URL by path-pattern inference, but that URL was not independently fetched in this run. Do not treat the candidate URL as verified or use it as an authoritative citation. Keep the Load90-displayed value separate and mark its source URL unresolved until a successful page retrieval confirms the URL.",
+  "data_values_changed": false,
+  "original_xg_snapshot_overwritten": false
+}
