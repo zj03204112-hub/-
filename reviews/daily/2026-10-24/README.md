@@ -6,9 +6,9 @@
 
 - [北京时间10月23日赛果复盘与前一轮影子预测核验](review-2026-10-23-beijing.json)
 - [当日6–12小时窗口影子预测](prediction-window-2026-10-24.json)
-- [核心联赛完赛结果](../../../../data/results/domestic-leagues/2026-10-24/core-leagues.json)
-- [W43逐场、分来源赛后xG观察值](../../../../data/xg/matches/2026-W43/postmatch-provider-records-2026-10-24.json)
-- [W43分来源周度xG摘要与覆盖缺口](../../../../data/xg/weekly/2026-W43/postmatch-summary-2026-10-24.json)
+- [核心联赛完赛结果](../../../data/results/domestic-leagues/2026-10-24/core-leagues.json)
+- [W43逐场、分来源赛后xG观察值](../../../data/xg/matches/2026-W43/postmatch-provider-records-2026-10-24.json)
+- [W43分来源周度xG摘要与覆盖缺口](../../../data/xg/weekly/2026-W43/postmatch-summary-2026-10-24.json)
 
 ## 审计结论
 
