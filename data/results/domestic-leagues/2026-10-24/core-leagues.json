@@ -1,0 +1,85 @@
+{
+  "schema_version": "domestic-league-results-v1",
+  "captured_at_beijing": "2026-10-24T14:56:14+08:00",
+  "match_date_beijing": "2026-10-24",
+  "status": "confirmed_finished",
+  "source_primary": "https://www.theguardian.com/football/results",
+  "matches": [
+    {
+      "match_id": "provisional:2026-10-24-ipswich-nottingham",
+      "competition": "Premier League",
+      "home": "Ipswich Town",
+      "away": "Nottingham Forest",
+      "score_ft": "1-1",
+      "score_ht": "1-1",
+      "result_90": "D",
+      "source_urls": [
+        "https://www.theguardian.com/football/results",
+        "https://www.skysports.com/football/ipswich-vs-n-forest/stats/8459007743001179232"
+      ],
+      "source_note": "Score confirmed by Guardian results; xG source is third-party display and stored separately."
+    },
+    {
+      "match_id": "provisional:2026-10-24-stuttgart-gladbach",
+      "competition": "Bundesliga",
+      "home": "VfB Stuttgart",
+      "away": "Borussia Mönchengladbach",
+      "score_ft": "2-3",
+      "score_ht": "1-1",
+      "result_90": "A",
+      "source_urls": [
+        "https://www.theguardian.com/football/results",
+        "https://www.futbol24.com/match/2026/10/23/national/Germany/Bundesliga/2026-2027/Stuttgart/vs/Mgladbach"
+      ],
+      "source_note": "Local-date match was 23 Oct; kickoff and result fall on 24 Oct Beijing."
+    },
+    {
+      "match_id": "provisional:2026-10-24-torino-monza",
+      "competition": "Serie A",
+      "home": "Torino",
+      "away": "Monza",
+      "score_ft": "3-2",
+      "score_ht": "1-0",
+      "result_90": "H",
+      "source_urls": [
+        "https://www.theguardian.com/football/results",
+        "https://totalodds.co.uk/matches/torino-vs-monza-6553732"
+      ],
+      "source_note": "Local-date match was 23 Oct; kickoff and result fall on 24 Oct Beijing."
+    },
+    {
+      "match_id": "provisional:2026-10-24-brest-nice",
+      "competition": "Ligue 1",
+      "home": "Brest",
+      "away": "Nice",
+      "score_ft": "1-2",
+      "score_ht": "1-0",
+      "result_90": "A",
+      "source_urls": [
+        "https://www.theguardian.com/football/results",
+        "https://www.maxifoot.fr/match/brest-nice-20261023.htm"
+      ],
+      "source_note": "Local-date match was 23 Oct; kickoff and result fall on 24 Oct Beijing."
+    },
+    {
+      "match_id": "provisional:2026-10-24-alaves-malaga",
+      "competition": "La Liga",
+      "home": "Deportivo Alavés",
+      "away": "Málaga",
+      "score_ft": "1-1",
+      "score_ht": "0-1",
+      "result_90": "D",
+      "source_urls": [
+        "https://www.theguardian.com/football/results",
+        "https://www.oddalerts.com/livescores/deportivo-alaves-vs-malaga/4679-4677"
+      ],
+      "source_note": "Local-date match was 23 Oct; kickoff and result fall on 24 Oct Beijing."
+    }
+  ],
+  "ids": {
+    "internal_match_ids": "provisional; not joined to canonical DB/provider event IDs",
+    "leisu_event_ids": null,
+    "sporttery_match_ids": null
+  },
+  "note": "This file stores confirmed scores only. It does not overwrite the original shadow predictions. Official Sporttery handicap values are not verified."
+}
