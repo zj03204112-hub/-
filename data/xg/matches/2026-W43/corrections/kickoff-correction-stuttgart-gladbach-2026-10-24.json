@@ -1,0 +1,17 @@
+{
+  "schema_version": "xg-observation-correction-v1",
+  "created_at_beijing": "2026-10-24T14:56:14+08:00",
+  "correction_id": "corr-2026-10-24-stuttgart-kickoff-01",
+  "applies_to": "data/xg/matches/2026-W43/postmatch-provider-records-2026-10-24.json",
+  "match_id": "provisional:2026-10-24-stuttgart-gladbach",
+  "field": "kickoff_beijing",
+  "original_value": "2026-10-24T01:30:00+08:00",
+  "corrected_value": "2026-10-24T02:30:00+08:00",
+  "reason": "The earlier shadow snapshot and the first xG append used 01:30 Beijing. Verified schedule sources show Stuttgart vs Mönchengladbach at 18:30 UTC on 2026-10-23, which is 02:30 Beijing on 2026-10-24. The original xG file is retained as an immutable snapshot; downstream joins should apply this correction.",
+  "sources": [
+    "https://www.skysports.com/football-scores-fixtures/2026-10-23",
+    "https://www.livescore.mobi/football/2026-10-23/"
+  ],
+  "data_values_changed": false,
+  "original_prediction_snapshot_modified": false
+}
