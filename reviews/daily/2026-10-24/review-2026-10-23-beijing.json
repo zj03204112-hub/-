@@ -69,7 +69,6 @@
     "matches": [
       {
         "match": "Ipswich Town vs Nottingham Forest",
-        "kickoff_beijing": "2026-10-24T03:00:00+08:00",
         "snapshot": {
           "score1": "1-1",
           "score2": "1-2",
@@ -92,11 +91,13 @@
           "half_full_hit": true,
           "handicap": "UNVERIFIABLE_OFFICIAL_LINE_MISSING"
         },
-        "error_note": "Direction and first score were correct; no verified pre-match xG or official handicap was available."
+        "error_note": "Direction and first score were correct; no verified pre-match xG or official handicap was available.",
+        "snapshot_kickoff_beijing": "2026-10-24T03:00:00+08:00",
+        "verified_actual_kickoff_beijing": "2026-10-24T03:00:00+08:00",
+        "kickoff_time_mismatch": false
       },
       {
         "match": "VfB Stuttgart vs Borussia Mönchengladbach",
-        "kickoff_beijing": "2026-10-24T01:30:00+08:00",
         "snapshot": {
           "score1": "2-1",
           "score2": "3-1",
@@ -119,11 +120,13 @@
           "half_full_hit": false,
           "handicap": "UNVERIFIABLE_OFFICIAL_LINE_MISSING"
         },
-        "error_note": "The away-win tail was missed; the high-total-goal risk note was directionally relevant, but neither listed score represented the away win."
+        "error_note": "The away-win tail was missed; the high-total-goal risk note was directionally relevant, but neither listed score represented the away win. Original shadow snapshot kickoff was recorded one hour early; verified schedule converts to 2026-10-24 02:30 Beijing. Original prediction snapshot is left unchanged.",
+        "snapshot_kickoff_beijing": "2026-10-24T01:30:00+08:00",
+        "verified_actual_kickoff_beijing": "2026-10-24T02:30:00+08:00",
+        "kickoff_time_mismatch": true
       },
       {
         "match": "Torino vs Monza",
-        "kickoff_beijing": "2026-10-24T02:45:00+08:00",
         "snapshot": {
           "score1": "1-1",
           "score2": "2-1",
@@ -146,11 +149,13 @@
           "half_full_hit": false,
           "handicap": "UNVERIFIABLE_OFFICIAL_LINE_MISSING"
         },
-        "error_note": "The draw and both listed scores underestimated the home-side scoring and total-goal tail; the note to preserve 3+ goals was relevant."
+        "error_note": "The draw and both listed scores underestimated the home-side scoring and total-goal tail; the note to preserve 3+ goals was relevant.",
+        "snapshot_kickoff_beijing": "2026-10-24T02:45:00+08:00",
+        "verified_actual_kickoff_beijing": "2026-10-24T02:45:00+08:00",
+        "kickoff_time_mismatch": false
       },
       {
         "match": "Brest vs Nice",
-        "kickoff_beijing": "2026-10-24T02:45:00+08:00",
         "snapshot": {
           "score1": "2-1",
           "score2": "1-1",
@@ -173,11 +178,13 @@
           "half_full_hit": false,
           "handicap": "UNVERIFIABLE_OFFICIAL_LINE_MISSING"
         },
-        "error_note": "The home-win direction was wrong; verified starting lineups and pre-match xG were not captured."
+        "error_note": "The home-win direction was wrong; verified starting lineups and pre-match xG were not captured.",
+        "snapshot_kickoff_beijing": "2026-10-24T02:45:00+08:00",
+        "verified_actual_kickoff_beijing": "2026-10-24T02:45:00+08:00",
+        "kickoff_time_mismatch": false
       },
       {
         "match": "Deportivo Alavés vs Málaga",
-        "kickoff_beijing": "2026-10-24T03:00:00+08:00",
         "snapshot": {
           "score1": "1-0",
           "score2": "1-1",
@@ -200,7 +207,10 @@
           "half_full_hit": false,
           "handicap": "UNVERIFIABLE_OFFICIAL_LINE_MISSING"
         },
-        "error_note": "The second score captured the draw, but the primary outcome and half/full-time path were wrong; draw protection was insufficient."
+        "error_note": "The second score captured the draw, but the primary outcome and half/full-time path were wrong; draw protection was insufficient.",
+        "snapshot_kickoff_beijing": "2026-10-24T03:00:00+08:00",
+        "verified_actual_kickoff_beijing": "2026-10-24T03:00:00+08:00",
+        "kickoff_time_mismatch": false
       }
     ],
     "total_goals_distribution": {
@@ -219,6 +229,10 @@
       "https://www.totalodds.co.uk/matches/torino-vs-monza-6553732",
       "https://www.maxifoot.fr/match/brest-nice-20261023.htm",
       "https://www.oddalerts.com/livescores/deportivo-alaves-vs-malaga/4679-4677"
+    ],
+    "kickoff_source_urls": [
+      "https://www.skysports.com/football-scores-fixtures/2026-10-23",
+      "https://www.livescore.mobi/football/2026-10-23/"
     ]
   },
   "database_status": {
