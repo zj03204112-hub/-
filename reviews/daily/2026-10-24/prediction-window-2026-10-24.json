@@ -1,0 +1,639 @@
+{
+  "schema_version": "daily-prediction-window-v1",
+  "captured_at_beijing": "2026-10-24T14:56:14+08:00",
+  "prediction_policy": {
+    "window_hours": [
+      6,
+      12
+    ],
+    "model_version": "manual-shadow-v0.2",
+    "formal_v5_1_run": false,
+    "note": "All score/outcome rows are shadow forecasts because no verified V5.1 production entrypoint was found. Confidence is subjective, not calibrated probability. These records are not V5.1 metrics."
+  },
+  "market_policy": {
+    "all_odds_are_public_third_party_reference": true,
+    "source_event_timestamp_available": false,
+    "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+    "note": "Retrieval time is not bookmaker update time. Except where explicitly noted, reliable normalized opening-to-current movement was unavailable. No public Asian handicap is substituted for the official Sporttery handicap."
+  },
+  "fixtures": [
+    {
+      "match_id": "provisional:2026-10-24-epl-arsenal-everton",
+      "competition": "Premier League",
+      "kickoff": "2026-10-24T22:00:00+08:00",
+      "home": "Arsenal",
+      "away": "Everton",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          1.4,
+          4.2,
+          7
+        ],
+        "total_line": 2.5,
+        "over": 1.85,
+        "under": 1.85,
+        "source": "https://www.pokerstars.fr/en/sports/soccer/1/english-premier-league/10932509/arsenal-v-everton/36177339/"
+      },
+      "score1": "2-0",
+      "score2": "2-1",
+      "result_90": "H",
+      "half_full": "D/H",
+      "total_goals_lean": "2-3 goals; O2.5 balanced",
+      "confidence": 63,
+      "data_completeness_pct": 42,
+      "risk": "Favourite price is short but O/U 2.5 is close to balanced; avoid assuming a rout. No pre-match xG or final XI captured.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-epl-coventry-fulham",
+      "competition": "Premier League",
+      "kickoff": "2026-10-24T22:00:00+08:00",
+      "home": "Coventry City",
+      "away": "Fulham",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          2.75,
+          3.4,
+          2.05
+        ],
+        "total_line": 2.5,
+        "over": 1.73,
+        "under": 2,
+        "source": "https://www.pokerstars.fr/en/sports/soccer/1/english-premier-league/10932509/coventry-v-fulham/36177321/"
+      },
+      "score1": "1-2",
+      "score2": "1-1",
+      "result_90": "A",
+      "half_full": "D/A",
+      "total_goals_lean": "2-3 goals; O2.5 slight lean",
+      "confidence": 54,
+      "data_completeness_pct": 39,
+      "risk": "Odds sources differ across bookmakers; away edge is not strong enough to exclude a draw. Current line only; open-to-current movement not verified.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-epl-chelsea-tottenham",
+      "competition": "Premier League",
+      "kickoff": "2026-10-25T00:30:00+08:00",
+      "home": "Chelsea",
+      "away": "Tottenham Hotspur",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          1.73,
+          4,
+          3.6
+        ],
+        "total_line": 2.5,
+        "over": 1.45,
+        "under": 2.55,
+        "source": "https://www.pokerstars.fr/en/sports/soccer/1/english-premier-league/10932509/chelsea-v-tottenham/36177320/"
+      },
+      "score1": "2-1",
+      "score2": "2-2",
+      "result_90": "H",
+      "half_full": "D/H",
+      "total_goals_lean": "3+ goals; retain 5+ tail",
+      "confidence": 59,
+      "data_completeness_pct": 40,
+      "risk": "Over 2.5 is strongly priced but derby variance and lineup uncertainty remain; high-total tail is possible, not guaranteed.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-bundesliga-augsburg-union",
+      "competition": "Bundesliga",
+      "kickoff": "2026-10-24T21:30:00+08:00",
+      "home": "Augsburg",
+      "away": "Union Berlin",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          1.75,
+          3.9,
+          3.7
+        ],
+        "total_line": 2.5,
+        "over": 1.5,
+        "under": 2.4,
+        "source": "https://www.pokerstars.es/en/sports/soccer/1/german-bundesliga/59/augsburg-v-union-berlin/36209522/"
+      },
+      "score1": "2-1",
+      "score2": "1-1",
+      "result_90": "H",
+      "half_full": "D/H",
+      "total_goals_lean": "2-3 goals; O2.5 lean",
+      "confidence": 55,
+      "data_completeness_pct": 38,
+      "risk": "Home edge is moderate; draw remains live. Confirm lineups and team news before treating this as a stronger call.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-bundesliga-koln-schalke",
+      "competition": "Bundesliga",
+      "kickoff": "2026-10-24T21:30:00+08:00",
+      "home": "FC Köln",
+      "away": "Schalke 04",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          2,
+          3.7,
+          3.2
+        ],
+        "total_line": 2.5,
+        "over": 1.57,
+        "under": 2.25,
+        "source": "https://www.pokerstars.es/en/sports/soccer/1/german-bundesliga/59/fc-koln-v-schalke-04/36209520/"
+      },
+      "score1": "1-1",
+      "score2": "2-1",
+      "result_90": "D",
+      "half_full": "D/D",
+      "total_goals_lean": "2-3 goals",
+      "confidence": 48,
+      "data_completeness_pct": 38,
+      "risk": "Tight 1X2 pricing and no verified lineup/injury snapshot; draw risk elevated. Do not infer official handicap from bookmaker Asian lines.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-bundesliga-mainz-werder",
+      "competition": "Bundesliga",
+      "kickoff": "2026-10-24T21:30:00+08:00",
+      "home": "Mainz 05",
+      "away": "Werder Bremen",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          1.62,
+          3.9,
+          3.8
+        ],
+        "total_line": 2.5,
+        "over": 1.5,
+        "under": 2.4,
+        "source": "https://www.pokerstars.es/en/sports/soccer/1/german-bundesliga/59/mainz-v-werder-bremen/36209521/"
+      },
+      "score1": "2-1",
+      "score2": "1-1",
+      "result_90": "H",
+      "half_full": "D/H",
+      "total_goals_lean": "3 goals; retain 4+ tail",
+      "confidence": 56,
+      "data_completeness_pct": 41,
+      "risk": "Market supports the home side and over 2.5, but secondary previews differ on draw likelihood. Pre-match xG and XI missing.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-bundesliga-paderborn-hamburg",
+      "competition": "Bundesliga",
+      "kickoff": "2026-10-24T21:30:00+08:00",
+      "home": "Paderborn",
+      "away": "Hamburger SV",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          2.1,
+          3.6,
+          2.63
+        ],
+        "total_line": 2.5,
+        "over": 1.5,
+        "under": 2.4,
+        "source": "https://www.pokerstars.fr/en/sports/soccer/1/german-bundesliga/59/paderborn-v-hamburger-sv/36209524/"
+      },
+      "score1": "1-1",
+      "score2": "1-2",
+      "result_90": "D",
+      "half_full": "D/D",
+      "total_goals_lean": "2-3 goals; O2.5 slight lean",
+      "confidence": 46,
+      "data_completeness_pct": 37,
+      "risk": "Market is relatively balanced; second score is a tail alternative, not a high-confidence outcome. Team news and recent form incompletely verified.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-bundesliga-leipzig-elversberg",
+      "competition": "Bundesliga",
+      "kickoff": "2026-10-24T21:30:00+08:00",
+      "home": "RB Leipzig",
+      "away": "Elversberg",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          1.25,
+          5.5,
+          5.5
+        ],
+        "total_line": 2.5,
+        "over": 1.25,
+        "under": 3.6,
+        "source": "https://www.pokerstars.es/en/sports/soccer/1/german-bundesliga/59/rb-leipzig-v-elversberg/36209523/"
+      },
+      "score1": "3-0",
+      "score2": "2-0",
+      "result_90": "H",
+      "half_full": "H/H",
+      "total_goals_lean": "3+ goals; explicitly preserve 5+ tail",
+      "confidence": 65,
+      "data_completeness_pct": 42,
+      "risk": "Heavy favourite; total-goals market is aggressive, but scoreline ceiling remains uncertain. Do not equate low away odds with guaranteed clean sheet.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-bundesliga-dortmund-frankfurt",
+      "competition": "Bundesliga",
+      "kickoff": "2026-10-25T00:30:00+08:00",
+      "home": "Borussia Dortmund",
+      "away": "Eintracht Frankfurt",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          1.47,
+          5.08,
+          5.82
+        ],
+        "total_line": 2.5,
+        "over": 1.34,
+        "under": 3.13,
+        "source": "https://www.thesurebettor.betmonitor.com/mobile/odds-comparison/football/germany-bundesliga/10000090"
+      },
+      "score1": "3-1",
+      "score2": "2-1",
+      "result_90": "H",
+      "half_full": "D/H",
+      "total_goals_lean": "3-4 goals; retain 5+ tail",
+      "confidence": 62,
+      "data_completeness_pct": 39,
+      "risk": "High-scoring market lean, but Frankfurt transition threat and unverified lineups prevent a confident clean-sheet call.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-serie-a-cagliari-bologna",
+      "competition": "Serie A",
+      "kickoff": "2026-10-24T21:00:00+08:00",
+      "home": "Cagliari",
+      "away": "Bologna",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          3.22,
+          3.01,
+          2.57
+        ],
+        "total_line": 2.25,
+        "over": 1.952,
+        "under": 1.934,
+        "source": "https://www.pinnacle.com/en/soccer/italy-serie-a/cagliari-vs-bologna/1638154576/"
+      },
+      "score1": "1-2",
+      "score2": "1-1",
+      "result_90": "A",
+      "half_full": "D/A",
+      "total_goals_lean": "2 goals around line 2.25; near-balanced",
+      "confidence": 49,
+      "data_completeness_pct": 40,
+      "risk": "Away side only a moderate favourite and total 2.25 is close; draw and low-scoring outcomes both plausible.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-serie-a-como-sassuolo",
+      "competition": "Serie A",
+      "kickoff": "2026-10-24T21:00:00+08:00",
+      "home": "Como",
+      "away": "Sassuolo",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          1.44,
+          4.55,
+          6.97
+        ],
+        "total_line": 3,
+        "over": 1.775,
+        "under": 2.09,
+        "source": "https://www.pinnacle.com/en/soccer/italy-serie-a/sassuolo-como/1638145376/"
+      },
+      "score1": "2-1",
+      "score2": "3-1",
+      "result_90": "H",
+      "half_full": "D/H",
+      "total_goals_lean": "3 goals baseline; 4+ and 5+ tail not negligible",
+      "confidence": 61,
+      "data_completeness_pct": 40,
+      "risk": "Strong home favourite but a high total line warns against assuming the result is automatically a low-scoring win.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-serie-a-napoli-roma",
+      "competition": "Serie A",
+      "kickoff": "2026-10-25T00:00:00+08:00",
+      "home": "Napoli",
+      "away": "Roma",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          2.55,
+          3.3,
+          2.5
+        ],
+        "total_line": 2.5,
+        "over": 1.8,
+        "under": 1.91,
+        "source": "https://www.pokerstars.es/en/sports/soccer/1/italian-serie-a/81/napoli-v-roma/36209505/"
+      },
+      "score1": "1-1",
+      "score2": "1-2",
+      "result_90": "D",
+      "half_full": "D/D",
+      "total_goals_lean": "2-3 goals; near-balanced",
+      "confidence": 45,
+      "data_completeness_pct": 39,
+      "risk": "Near-even 1X2 market; strong draw risk. Do not force a winner without verified lineup and pre-match xG evidence.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-serie-a-lazio-parma",
+      "competition": "Serie A",
+      "kickoff": "2026-10-25T02:45:00+08:00",
+      "home": "Lazio",
+      "away": "Parma",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          1.36,
+          4.2,
+          6.5
+        ],
+        "total_line": 2.5,
+        "over": 1.85,
+        "under": 1.85,
+        "source": "https://www.pokerstars.es/en/sports/soccer/1/italian-serie-a/81/lazio-v-parma/36209515/"
+      },
+      "score1": "2-0",
+      "score2": "2-1",
+      "result_90": "H",
+      "half_full": "D/H",
+      "total_goals_lean": "2-3 goals; O/U balanced",
+      "confidence": 63,
+      "data_completeness_pct": 41,
+      "risk": "Home favourite but no official handicap or current lineup snapshot; avoid translating 1X2 strength directly into a handicap win.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-laliga-racing-espanyol",
+      "competition": "La Liga",
+      "kickoff": "2026-10-24T22:15:00+08:00",
+      "home": "Racing Santander",
+      "away": "Espanyol",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          2.5,
+          3.5,
+          2.2
+        ],
+        "total_line": 2.5,
+        "over": 1.65,
+        "under": 2.1,
+        "source": "https://www.pokerstars.fr/en/sports/soccer/1/spanish-la-liga/117/racing-santander-v-espanyol/36180884/"
+      },
+      "score1": "1-1",
+      "score2": "2-1",
+      "result_90": "D",
+      "half_full": "D/D",
+      "total_goals_lean": "2-3 goals; O2.5 lean",
+      "confidence": 47,
+      "data_completeness_pct": 40,
+      "risk": "Market sources disagree on relative home/away strength; recent-form snippets are mixed. Draw protection retained.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-laliga-valencia-villarreal",
+      "competition": "La Liga",
+      "kickoff": "2026-10-25T00:30:00+08:00",
+      "home": "Valencia",
+      "away": "Villarreal",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          3.3,
+          3.6,
+          2.25
+        ],
+        "total_line": 2.5,
+        "over": 1.73,
+        "under": 2.1,
+        "source": "https://www.singlebet.net/odds/valencia-vs-villarreal-2026-10-24-3880712/"
+      },
+      "score1": "1-2",
+      "score2": "1-1",
+      "result_90": "A",
+      "half_full": "D/A",
+      "total_goals_lean": "2-3 goals; O2.5 slight lean",
+      "confidence": 55,
+      "data_completeness_pct": 43,
+      "risk": "One source lists opening/current prices but its summary is internally inconsistent; retain raw market values and do not overstate movement direction.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "odds_movement_status": "RAW_OPENING_CURRENT_DATA_INCONSISTENT_NOT_NORMALIZED",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-laliga-atletico-deportivo",
+      "competition": "La Liga",
+      "kickoff": "2026-10-25T03:00:00+08:00",
+      "home": "Atlético Madrid",
+      "away": "Deportivo de La Coruña",
+      "status": "SCHEDULE_ONLY_OUTSIDE_WINDOW_AT_CAPTURE",
+      "odds": {
+        "one_x_two": [
+          1.24,
+          6.5,
+          13
+        ],
+        "total_line": null,
+        "over": null,
+        "under": null,
+        "source": "https://www.oddsportal.com/football/spain/laliga/"
+      },
+      "score1": null,
+      "score2": null,
+      "result_90": null,
+      "half_full": null,
+      "total_goals_lean": null,
+      "confidence": null,
+      "data_completeness_pct": 24,
+      "risk": "Kickoff was 12h04 after the actual data-capture time, just outside the strict 6–12h window. Total-goals odds, xG, injuries and lineup not verified; schedule only, no early forecast.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SCHEDULE-ONLY",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-ligue1-toulouse-troyes",
+      "competition": "Ligue 1",
+      "kickoff": "2026-10-24T23:15:00+08:00",
+      "home": "Toulouse",
+      "away": "Troyes",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          1.72,
+          4.03,
+          4.58
+        ],
+        "total_line": 2.75,
+        "over": 1.79,
+        "under": 1.97,
+        "source": "https://www.oddsrun.com/match/football/fr/99/12031618/france-ligue-1/toulouse-vs-troyes/"
+      },
+      "score1": "2-1",
+      "score2": "2-0",
+      "result_90": "H",
+      "half_full": "D/H",
+      "total_goals_lean": "2.75 line; 3 goals gives Asian split settlement",
+      "confidence": 58,
+      "data_completeness_pct": 39,
+      "risk": "Public market page shows a split 2.5/3.0 total rather than official Sporttery line; no pre-match xG or confirmed XI.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    },
+    {
+      "match_id": "provisional:2026-10-24-ligue1-lens-parisfc",
+      "competition": "Ligue 1",
+      "kickoff": "2026-10-25T02:45:00+08:00",
+      "home": "Lens",
+      "away": "Paris FC",
+      "status": "PREDICTED_SHADOW",
+      "odds": {
+        "one_x_two": [
+          1.9,
+          3.9,
+          2.8
+        ],
+        "total_line": 2.5,
+        "over": 1.57,
+        "under": 2.25,
+        "source": "https://www.pokerstars.es/en/sports/soccer/1/french-ligue-1/55/lens-v-paris-fc/36180577/"
+      },
+      "score1": "2-1",
+      "score2": "1-1",
+      "result_90": "H",
+      "half_full": "D/H",
+      "total_goals_lean": "2-3 goals; O2.5 lean, retain 4+ tail",
+      "confidence": 51,
+      "data_completeness_pct": 39,
+      "risk": "Home side is not a strong favourite across all market sources; high uncertainty and official handicap missing.",
+      "official_jc_handicap": null,
+      "handicap_status": "UNVERIFIABLE_OFFICIAL_SPORTTERY_LINE_MISSING",
+      "strategy": "SHADOW-MARKET-FORM-NEWS-20261024",
+      "model_version": "manual-shadow-v0.2"
+    }
+  ],
+  "outside_window_schedule_only": [
+    {
+      "competition": "Premier League",
+      "match": "Aston Villa vs Manchester City",
+      "kickoff_beijing": "2026-10-24T19:30:00+08:00",
+      "status": "TOO_SOON_LESS_THAN_6H_AT_CAPTURE"
+    },
+    {
+      "competition": "La Liga",
+      "match": "Rayo Vallecano vs Elche",
+      "kickoff_beijing": "2026-10-24T20:00:00+08:00",
+      "status": "TOO_SOON_LESS_THAN_6H_AT_CAPTURE"
+    },
+    {
+      "competition": "K League 1",
+      "matches": [
+        "Ulsan HD vs Pohang Steelers",
+        "FC Anyang vs Jeonbuk Hyundai Motors",
+        "Bucheon FC 1995 vs Gwangju FC",
+        "Gimcheon Sangmu vs Daejeon Hana Citizen",
+        "Incheon United vs Jeju SK",
+        "FC Seoul vs Gangwon FC"
+      ],
+      "kickoff_beijing": "2026-10-24T13:00:00+08:00",
+      "status": "ALREADY_STARTED_OR_LIVE; NO_PREDICTION"
+    },
+    {
+      "competition": "J1 League",
+      "matches": [
+        "Sanfrecce Hiroshima vs Shimizu S-Pulse",
+        "Kashima Antlers vs Kashiwa Reysol",
+        "Tokyo Verdy vs Avispa Fukuoka",
+        "Vissel Kobe vs FC Machida Zelvia",
+        "Gamba Osaka vs Kyoto Sanga"
+      ],
+      "kickoff_beijing": [
+        "2026-10-24T13:00:00+08:00",
+        "2026-10-24T14:00:00+08:00",
+        "2026-10-24T15:00:00+08:00"
+      ],
+      "status": "ALREADY_STARTED_OR_WITHIN_1H; NO_PREDICTION"
+    }
+  ],
+  "missing_fields_common": [
+    "official Sporttery handicap and its capture timestamp",
+    "raw Leisu event/market payload and provider event timestamp",
+    "verified starting lineups and injury/suspension updates",
+    "provider-specific pre-match xG snapshot",
+    "fully verified last-three-match data for every fixture",
+    "tactical report, referee and weather for every fixture",
+    "next-opponent importance/rotation check for every fixture",
+    "full normalized opening-to-current market history"
+  ],
+  "integrity": {
+    "prediction_snapshot_immutable_after_commit": true,
+    "v5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "official_handicap_predictions_generated": false
+  }
+}
