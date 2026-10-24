@@ -1,0 +1,82 @@
+{
+  "schema_version": "schedule-source-supplement-v1",
+  "captured_at_beijing": "2026-10-24T14:56:14+08:00",
+  "fixture_snapshot": "reviews/daily/2026-10-24/prediction-window-2026-10-24.json",
+  "schedule_sources": [
+    {
+      "competition": "Premier League",
+      "url": "https://kqbd.vn/lich-thi-dau/2026-10-23",
+      "source_type": "third_party_schedule",
+      "note": "Times displayed in Vietnam time; convert to Beijing by +1 hour."
+    },
+    {
+      "competition": "Bundesliga",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "source_type": "odds_and_schedule_reference",
+      "note": "Cross-check fixture listing; page timestamps may not equal the current bookmaker update time."
+    },
+    {
+      "competition": "La Liga",
+      "url": "https://www.oddsportal.com/football/spain/laliga/",
+      "source_type": "odds_and_schedule_reference",
+      "note": "Fixture list includes 24 October matches."
+    },
+    {
+      "competition": "Ligue 1",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "source_type": "odds_and_schedule_reference",
+      "note": "Fixture list includes Toulouse-Troyes and Lens-Paris FC."
+    },
+    {
+      "competition": "J1 League",
+      "url": "https://www.jleague.jp/en/j1/match/",
+      "source_type": "official_league_schedule",
+      "note": "Official page showed 24 October matches live/starting and 25 October future fixtures."
+    },
+    {
+      "competition": "K League 1",
+      "url": "https://www.kleague.com/schedule.do",
+      "source_type": "official_league_schedule",
+      "note": "Official schedule page; match list was cross-checked against public fixture feed."
+    },
+    {
+      "competition": "K League 1 cross-check",
+      "url": "https://www.flashscoreusa.com/soccer/south-korea/k-league-1/fixtures/",
+      "source_type": "third_party_schedule",
+      "note": "Lists six 24 October fixtures at 05:00 UTC (14:00 Korea time / 13:00 Beijing)."
+    }
+  ],
+  "excluded_from_prediction_window": [
+    {
+      "competition": "Premier League",
+      "match": "Aston Villa vs Manchester City",
+      "kickoff_beijing": "2026-10-24T19:30:00+08:00",
+      "reason": "Less than six hours from capture."
+    },
+    {
+      "competition": "La Liga",
+      "match": "Rayo Vallecano vs Elche",
+      "kickoff_beijing": "2026-10-24T20:00:00+08:00",
+      "reason": "Less than six hours from capture."
+    },
+    {
+      "competition": "J1 League",
+      "reason": "All 24 October matches had already started or were within one hour of kickoff at capture; no prediction generated."
+    },
+    {
+      "competition": "K League 1",
+      "reason": "Six 24 October matches were scheduled for 13:00 Beijing and had already started by capture; no prediction generated."
+    },
+    {
+      "competition": "La Liga",
+      "match": "Atlético Madrid vs Deportivo de La Coruña",
+      "kickoff_beijing": "2026-10-25T03:00:00+08:00",
+      "reason": "12h04 after actual capture timestamp, outside strict 6–12h window."
+    }
+  ],
+  "missing_source_items": [
+    "Leisu event/result page could not be independently retrieved and verified in this run.",
+    "Official Sporttery odds endpoint/response not retrieved; third-party lottery mirror not treated as official.",
+    "No verified official Sporttery handicap timestamp is available for the 17 shadow forecasts."
+  ]
+}
