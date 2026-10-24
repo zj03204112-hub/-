@@ -9,7 +9,8 @@
 - [核心联赛完赛结果](../../../data/results/domestic-leagues/2026-10-24/core-leagues.json)
 - [W43逐场、分来源赛后xG观察值](../../../data/xg/matches/2026-W43/postmatch-provider-records-2026-10-24.json)
 - [斯图加特比赛开球时间修正附录（原始快照保留）](../../../data/xg/matches/2026-W43/corrections/kickoff-correction-stuttgart-gladbach-2026-10-24.json)
-- [Load90来源URL修正附录](../../../data/xg/matches/2026-W43/corrections/source-url-correction-torino-monza-load90-2026-10-24.json)
+- [Load90来源URL候选修正记录（候选链接未验证）](../../../data/xg/matches/2026-W43/corrections/source-url-correction-torino-monza-load90-2026-10-24.json)
+- [Load90来源URL核验状态（候选链接撤回）](../../../data/xg/matches/2026-W43/corrections/source-url-status-retraction-torino-monza-load90-2026-10-24.json)
 - [赛程来源与预测窗口排除记录](../../../data/fixtures/domestic-leagues/2026-10-24/schedule-source-supplement.json)
 - [W43分来源周度xG摘要与覆盖缺口](../../../data/xg/weekly/2026-W43/postmatch-summary-2026-10-24.json)
 
