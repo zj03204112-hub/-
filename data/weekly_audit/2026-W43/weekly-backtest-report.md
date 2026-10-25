@@ -2,7 +2,7 @@
 
 **Status: PARTIAL — formal V5.1 backtest blocked; ISO week still open at cutoff.**
 
-- Audit cutoff: 2026-10-25T12:02:09+08:00. Week: 2026-10-19 through 2026-10-25 (ISO W43), using Beijing date to stay consistent with the existing archive.
+- Audit cutoff: 2026-10-25T12:14:57+08:00. Week: 2026-10-19 through 2026-10-25 (ISO W43), using Beijing date to stay consistent with the existing archive.
 - Completed results verified in this run: **50 league matches** across the seven requested leagues, plus **36 archived UEFA Europa/Conference League results** kept in a separate continental-club stratum. The Toulouse–Troyes fixture was postponed to later on 25 October local time and was not counted as completed or backtested.
 - Shadow forecast sample: **21** completed matches with archived forecast values. 16 completed forecast rows from the Git-archived 24 October shadow JSON were eligible; its Toulouse–Troyes forecast was rescheduled to 25 October local time (26 October Beijing date) and excluded. Five earlier rows exist only inside an archived review JSON (the original individual snapshot files were not found). **None is a formal V5.1 prediction snapshot.**
 - Formal V5.1 eligible sample: **0**. The archived prediction table does not provide a complete append-only trace with verified provider match ID, calibrated probability triplet, lambdas, model commit/config and official pre-match Sporttery handicap for these matches. Do not present the shadow metrics as V5.1 accuracy.
