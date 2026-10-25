@@ -4,7 +4,7 @@
   "branch": "audit/weekly-backtest-xg-2026-W43-20261025",
   "source_commit": "564b83a13c58ababe12264757d68e2cfba2b490e",
   "base_branch": "audit/weekly-backtest-xg-2026-W42-20261018",
-  "generated_at": "2026-10-25T12:15:50+08:00",
+  "generated_at": "2026-10-25T12:16:36+08:00",
   "result_counts": {
     "league_completed": 50,
     "uel_uecl_completed": 36,
@@ -101,8 +101,8 @@
     },
     {
       "path": "data/weekly_audit/2026-W43/weekly-backtest-report.md",
-      "blob_sha": "975009ed78a5aca56aa031ce16e652f89bb3d499",
-      "bytes": 8465
+      "blob_sha": "3a12e90c8c8f9c7f3abc990edb6697eb7c42785d",
+      "bytes": 8857
     },
     {
       "path": "data/weekly_audit/2026-W43/uncompleted-fixtures.csv",
@@ -112,8 +112,8 @@
     },
     {
       "path": "data/xg/weekly/2026-W43/xg-integrity-audit-2026-10-25.json",
-      "blob_sha": "89d03d5a9729889ab9614d261c03f033a13e48a2",
-      "bytes": 8088
+      "blob_sha": "46a3495e546625bb1974dfb8a93d70f3b45ab62c",
+      "bytes": 8414
     }
   ],
   "integrity": {
@@ -123,7 +123,7 @@
     "readback_verification_pending": false,
     "readback_verification_passed": true,
     "readback_verified_files": 17,
-    "readback_verified_at": "2026-10-25T12:15:50+08:00",
+    "readback_verified_at": "2026-10-25T12:16:36+08:00",
     "readback_checks": {
       "files_valid": true,
       "source_files": 8,
@@ -135,5 +135,6 @@
       "secondary_xg_rows": 9,
       "uncompleted_fixture_rows": 6
     }
-  }
+  },
+  "database_query_performed": false
 }
