@@ -1,0 +1,70 @@
+{
+  "audit_date": "2026-10-25",
+  "iso_week": "2026-W43",
+  "branch": "audit/weekly-backtest-xg-2026-W43-20261025",
+  "source_commit": "564b83a13c58ababe12264757d68e2cfba2b490e",
+  "base_branch": "audit/weekly-backtest-xg-2026-W42-20261018",
+  "generated_at": "2026-10-25T12:02:09+08:00",
+  "result_counts": {
+    "league_completed": 50,
+    "uel_uecl_completed": 36,
+    "all_confirmed_completed": 86,
+    "shadow_predictions": 21,
+    "formal_v5_1_eligible": 0
+  },
+  "xg_counts": {
+    "league_roster_team_weeks": 128,
+    "league_team_match_sides": 100,
+    "provider_xg_matches": 1,
+    "provider_xg_team_sides": 2,
+    "other_competition_team_weeks": 72
+  },
+  "files": [
+    {
+      "path": "data/weekly_audit/2026-W43/match-xg-detail.csv",
+      "commit_sha": "b5aa5c1c643e9abe37f422a9b1e3d68237824106",
+      "bytes": 56995
+    },
+    {
+      "path": "data/weekly_audit/2026-W43/team-weekly-xg-audit.csv",
+      "commit_sha": "2c41e7a3d6b9f202fb85ed389e81d88da08afa1e",
+      "bytes": 56827
+    },
+    {
+      "path": "data/weekly_audit/2026-W43/team-weekly-xg-audit-other-competitions.csv",
+      "commit_sha": "4f681d2211b881481fb6888e74e501e90c916303",
+      "bytes": 28090
+    },
+    {
+      "path": "data/weekly_audit/2026-W43/shadow-backtest.csv",
+      "commit_sha": "7253e51f4208258d23ffa7d0ccea2756194a04c1",
+      "bytes": 12482
+    },
+    {
+      "path": "data/weekly_audit/2026-W43/secondary-xg-reports.csv",
+      "commit_sha": "558d413f337c6dd752efa70086e3f8dbd8278a41",
+      "bytes": 3565
+    },
+    {
+      "path": "data/weekly_audit/2026-W43/competition-strata.csv",
+      "commit_sha": "5f3596d33107307b2fa6e91b023acb394f0f0efe",
+      "bytes": 2064
+    },
+    {
+      "path": "data/weekly_audit/2026-W43/weekly-backtest-report.md",
+      "commit_sha": "758753161e3352d39f540258d3913bb04a85601c",
+      "bytes": 8243
+    },
+    {
+      "path": "data/xg/weekly/2026-W43/xg-integrity-audit-2026-10-25.json",
+      "commit_sha": "b31b6d33d31bddb7c4cbd7dfdb9b4a89d3304839",
+      "bytes": 7102
+    }
+  ],
+  "integrity": {
+    "model_files_modified": false,
+    "historical_predictions_modified": false,
+    "frozen_validation_samples_modified": false,
+    "readback_verification_pending": true
+  }
+}
