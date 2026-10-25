@@ -1,0 +1,176 @@
+{
+  "audit_date": "2026-10-25",
+  "audit_generated_at": "2026-10-25T12:02:09+08:00",
+  "iso_week": "2026-W43",
+  "week_start": "2026-10-19",
+  "week_end": "2026-10-25",
+  "week_status": "OPEN_AS_OF_CUTOFF",
+  "time_basis": "Beijing date for consistency with the existing weekly audit archive",
+  "model_changes_made": false,
+  "historical_predictions_modified": false,
+  "frozen_validation_samples_modified": false,
+  "formal_v5_1_backtest": {
+    "eligible_sample": 0,
+    "status": "BLOCKED_NO_COMPLETE_IMMUTABLE_V5_1_SNAPSHOTS"
+  },
+  "shadow_backtest": {
+    "sample_size": 21,
+    "metrics": {
+      "result_90": {
+        "hits": 12,
+        "n": 21,
+        "rate": 0.5714285714285714
+      },
+      "score1_exact": {
+        "hits": 4,
+        "n": 21,
+        "rate": 0.19047619047619047
+      },
+      "score2_exact": {
+        "hits": 4,
+        "n": 21,
+        "rate": 0.19047619047619047
+      },
+      "half_full": {
+        "hits": 7,
+        "n": 21,
+        "rate": 0.3333333333333333
+      }
+    },
+    "official_sporttery_handicap_verified": 0,
+    "probability_triplets_complete": 0,
+    "brier_score": null,
+    "log_loss": null,
+    "by_version": {
+      "manual-shadow-v0.1": {
+        "n": 5,
+        "result": {
+          "hits": 1,
+          "n": 5,
+          "rate": 0.2
+        },
+        "score1": {
+          "hits": 1,
+          "n": 5,
+          "rate": 0.2
+        },
+        "score2": {
+          "hits": 1,
+          "n": 5,
+          "rate": 0.2
+        },
+        "halfFull": {
+          "hits": 1,
+          "n": 5,
+          "rate": 0.2
+        }
+      },
+      "manual-shadow-v0.2": {
+        "n": 16,
+        "result": {
+          "hits": 11,
+          "n": 16,
+          "rate": 0.6875
+        },
+        "score1": {
+          "hits": 3,
+          "n": 16,
+          "rate": 0.1875
+        },
+        "score2": {
+          "hits": 3,
+          "n": 16,
+          "rate": 0.1875
+        },
+        "halfFull": {
+          "hits": 6,
+          "n": 16,
+          "rate": 0.375
+        }
+      }
+    }
+  },
+  "league_xg_audit": {
+    "competitions": 7,
+    "roster_team_week_rows": 128,
+    "teams_with_completed_match_observed": 83,
+    "confirmed_completed_matches": 50,
+    "team_match_sides": 100,
+    "matches_with_provider_attributed_xg": 1,
+    "team_match_sides_with_provider_xg": 2,
+    "match_coverage": 0.02,
+    "team_match_coverage": 0.02,
+    "team_week_rows_with_complete_provider_xg": 2,
+    "team_week_coverage_all_teams": 0.015625,
+    "team_week_coverage_played_teams": 0.024096385542168676,
+    "weekly_sum_recalculable_team_weeks": 2,
+    "team_week_rows_not_recalculable": 126,
+    "secondary_report_rows": 10,
+    "secondary_report_matches": 7,
+    "supplier_version_unknown_secondary_rows": 9,
+    "source_discrepancies": [
+      {
+        "match": "Ipswich vs Nottingham Forest",
+        "details": "Opta/FPL-attributed Forest xG 2.29 vs Guardian report 2.31; Ipswich xG 0.46 in both."
+      },
+      {
+        "match": "Atletico Madrid vs Deportivo La Coruna",
+        "details": "Public reports conflict: 1.44-2.02 and 1.41-1.45; not treated as verified supplier xG."
+      }
+    ],
+    "missing_reason_policy": "No provider payload => blank xG/xGA/xGD, not zero; scores are never used as xG substitutes."
+  },
+  "other_competition_xg_audit": {
+    "uel_uecl_completed_results": 36,
+    "team_week_rows": 72,
+    "provider_xg_pairs": 0,
+    "immutable_prematch_snapshots": 0,
+    "status": "SEPARATE_STRATUM"
+  },
+  "unassessed_strata": [
+    "Domestic cup results not located in current archive; absence is not proof of no fixture.",
+    "UEFA Champions League/AFC club results archive incomplete; not mixed into league metrics.",
+    "Nations League kept separate; no W43 match/snapshot found in current archive."
+  ],
+  "leakage_guard": "All xG observations are post-match audit-only. They are not used to recreate or modify pre-match predictions.",
+  "sources": {
+    "league_result_sources": [
+      "https://www.golmates.com/es/uefa/inglaterra/premier-league/2026-2027/resultados",
+      "https://www.theguardian.com/football/live/2026/oct/24/tottenham-arsenal-wsl-premier-league-efl-football-clockwatch-live",
+      "https://www.theguardian.com/football/live/2026/oct/24/chelsea-v-tottenham-premier-league-live",
+      "https://www.skysports.com/football/ipswich-vs-n-forest/report/559520",
+      "https://insights.betfred.com/football/competitions/spain/laliga/results/",
+      "https://www.oddalerts.com/livescores/deportivo-alaves-vs-malaga/4679-4677",
+      "https://results.fast/results/football-racing-santander-vs-espanyol-2026-10-24",
+      "https://elpais.com/deportes/futbol/2026/10/24/el-elche-aprovecha-el-lio-de-vallecas-y-golea-al-rayo.html",
+      "https://www.futbol24.com/match/2026/10/24/national/Spain/Primera-Division/2026-2027/Valencia/vs/Villarreal",
+      "https://www.laliga.com/en-GB/clubs/atletico-de-madrid/results",
+      "https://www.footballwebpages.co.uk/german-bundesliga/fixtures-results/october",
+      "https://www.bundesliga.com/en/bundesliga/news/vfb-stuttgart-borussia-monchengladbach-match-report-highlights-matchday-7-39693",
+      "https://insights.betfred.com/football/competitions/italy/serie-a/results/",
+      "https://www.legaseriea.it/serie-a/news/cagliari-bologna-2026-2027-0-2-cronaca-risultato-gol",
+      "https://sscnapoli.it/en/match-report-napoli-roma-3-3/",
+      "https://www.goal.com/en/competition/ligue-1/fixtures-results/dm5ka0os1e3dxcp3vh05kmp33",
+      "https://www.reuters.com/sports/soccer/hazard-winner-lifts-lens-2-1-win-over-paris-fc-2026-10-24/",
+      "https://www.flashscore.ca/soccer/south-korea/k-league-1/results/",
+      "https://www.betexplorer.com/football/team/jeju-utd/vFZJewv4/results/",
+      "https://www.jleague.jp/en/j1/match/",
+      "https://sportscore.com/football/competition/japan/japanese-j1-league/z318q66hl1qo9jd/2026/"
+    ],
+    "continental_result_sources": [
+      "https://fr.uefa.com/uefaeuropaleague/news/02a8-217720a96899-881b03afe0db-1000--ligue-europa-2026-27-calendrier-et-resultats/",
+      "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--202627-conference-league-all-the-league-phase-fixtures/"
+    ],
+    "xg_secondary_sources": [
+      "https://www.myfootballfacts.com/match/english-premier-league-2026-2027-ipswich-town-vs-nottingham-forest-2026-10-24/",
+      "https://www.theguardian.com/football/2026/oct/23/ipswich-nottingham-forest-premier-league-match-report",
+      "https://totalodds.co.uk/matches/stuttgart-vs-borussia-monchengladbach-6553731",
+      "https://totalodds.co.uk/matches/torino-vs-monza-6553732",
+      "https://statsbet.org/football/matches/deportivo-alav-s-vs-m-laga-2026-10-23",
+      "https://statsnext.com/es/la-liga/matches/2026-10-24-racing-santander-vs-espanyol-98dec649",
+      "https://dailygoal.tv/m/3OM_LybFyat/napoli-vs-as-roma",
+      "https://www.golazonews.com/en/match/1570425/atletico-madrid-vs-deportivo-la-coruna",
+      "https://cornerflick.com/football/la-liga/matches/atletico-madrid-vs-deportivo-la-coruna-la-liga-2026-10-24"
+    ]
+  }
+}
