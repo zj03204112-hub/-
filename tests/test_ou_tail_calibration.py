@@ -26,6 +26,8 @@ class CalibrationTests(unittest.TestCase):
         self.assertEqual(asian_total_settlement(2, 2.75), "loss")
         self.assertEqual(asian_total_settlement(4, 2.75), "win")
         self.assertEqual(asian_total_settlement(3, 3.0), "push")
+        self.assertEqual(asian_total_settlement(2, 2.75, "under"), "half_win")
+        self.assertEqual(asian_total_settlement(4, 2.75, "under"), "loss")
 
 
 if __name__ == "__main__":
