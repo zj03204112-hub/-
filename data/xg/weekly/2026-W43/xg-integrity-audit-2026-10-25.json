@@ -105,7 +105,7 @@
     "team_week_coverage_played_teams": 0.024096385542168676,
     "weekly_sum_recalculable_team_weeks": 2,
     "team_week_rows_not_recalculable": 126,
-    "secondary_report_rows": 10,
+    "secondary_report_rows": 9,
     "secondary_report_matches": 7,
     "supplier_version_unknown_secondary_rows": 9,
     "source_discrepancies": [
@@ -118,7 +118,8 @@
         "details": "Public reports conflict: 1.44-2.02 and 1.41-1.45; not treated as verified supplier xG."
       }
     ],
-    "missing_reason_policy": "No provider payload => blank xG/xGA/xGD, not zero; scores are never used as xG substitutes."
+    "missing_reason_policy": "No provider payload => blank xG/xGA/xGD, not zero; scores are never used as xG substitutes.",
+    "provider_attributed_report_rows": 1
   },
   "other_competition_xg_audit": {
     "uel_uecl_completed_results": 36,
@@ -153,7 +154,7 @@
       "https://www.goal.com/en/competition/ligue-1/fixtures-results/dm5ka0os1e3dxcp3vh05kmp33",
       "https://www.reuters.com/sports/soccer/hazard-winner-lifts-lens-2-1-win-over-paris-fc-2026-10-24/",
       "https://www.flashscore.ca/soccer/south-korea/k-league-1/results/",
-      "https://www.betexplorer.com/football/team/jeju-utd/vFZJewv4/results/",
+      "https://www.yna.co.kr/amp/view/AKR20261024037100007",
       "https://www.jleague.jp/en/j1/match/",
       "https://sportscore.com/football/competition/japan/japanese-j1-league/z318q66hl1qo9jd/2026/"
     ],
@@ -163,6 +164,19 @@
     ],
     "xg_secondary_sources": [
       "https://www.myfootballfacts.com/match/english-premier-league-2026-2027-ipswich-town-vs-nottingham-forest-2026-10-24/",
+      "https://www.theguardian.com/football/2026/oct/23/ipswich-nottingham-forest-premier-league-match-report",
+      "https://totalodds.co.uk/matches/stuttgart-vs-borussia-monchengladbach-6553731",
+      "https://totalodds.co.uk/matches/torino-vs-monza-6553732",
+      "https://statsbet.org/football/matches/deportivo-alav-s-vs-m-laga-2026-10-23",
+      "https://statsnext.com/es/la-liga/matches/2026-10-24-racing-santander-vs-espanyol-98dec649",
+      "https://dailygoal.tv/m/3OM_LybFyat/napoli-vs-as-roma",
+      "https://www.golazonews.com/en/match/1570425/atletico-madrid-vs-deportivo-la-coruna",
+      "https://cornerflick.com/football/la-liga/matches/atletico-madrid-vs-deportivo-la-coruna-la-liga-2026-10-24"
+    ],
+    "provider_xg_sources": [
+      "https://www.myfootballfacts.com/match/english-premier-league-2026-2027-ipswich-town-vs-nottingham-forest-2026-10-24/"
+    ],
+    "secondary_xg_sources": [
       "https://www.theguardian.com/football/2026/oct/23/ipswich-nottingham-forest-premier-league-match-report",
       "https://totalodds.co.uk/matches/stuttgart-vs-borussia-monchengladbach-6553731",
       "https://totalodds.co.uk/matches/torino-vs-monza-6553732",
