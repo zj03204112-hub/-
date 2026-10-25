@@ -93,26 +93,34 @@ def net_goal_calibrator(predicted_pmfs, actual_absolute_goal_difference, smoothi
     )
 
 
-def asian_total_settlement(total_goals: int, line: float) -> str:
-    """Return full/half win/loss or push for a single Asian total line."""
+def asian_total_settlement(total_goals: int, line: float, side: str = "over") -> str:
+    """Settle over/under for a standard Asian total line, including quarter lines."""
     if total_goals < 0:
         raise ValueError("total_goals must be non-negative")
+    if side not in ("over", "under"):
+        raise ValueError("side must be 'over' or 'under'")
     quarter = round(line * 4) / 4
     if abs(quarter - line) > 1e-9:
         raise ValueError("line must be a standard quarter-goal Asian total")
     if abs((line * 2) - round(line * 2)) < 1e-9:
         delta = total_goals - line
-        return "win" if delta > 0 else "loss" if delta < 0 else "push"
-    lower, upper = line - 0.25, line + 0.25
-    a = asian_total_settlement(total_goals, lower)
-    b = asian_total_settlement(total_goals, upper)
-    if a == b:
-        return a
-    if {a, b} == {"win", "push"}:
-        return "half_win"
-    if {a, b} == {"loss", "push"}:
-        return "half_loss"
-    return "push"
+        over_result = "win" if delta > 0 else "loss" if delta < 0 else "push"
+    else:
+        lower, upper = line - 0.25, line + 0.25
+        a = asian_total_settlement(total_goals, lower, "over")
+        b = asian_total_settlement(total_goals, upper, "over")
+        if a == b:
+            over_result = a
+        elif {a, b} == {"win", "push"}:
+            over_result = "half_win"
+        elif {a, b} == {"loss", "push"}:
+            over_result = "half_loss"
+        else:
+            over_result = "push"
+    if side == "over":
+        return over_result
+    return {"win": "loss", "loss": "win", "push": "push",
+            "half_win": "half_loss", "half_loss": "half_win"}[over_result]
 
 
 def multiclass_brier(probabilities: Sequence[Sequence[float]], outcomes: Sequence[int]) -> float:
