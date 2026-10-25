@@ -43,6 +43,8 @@ By shadow version:
 
 ## Snapshot and leakage controls
 
+- Database access limitation: the repository SQLite file is visible, but a live SQLite connection/query was not performed in this run; no DB-derived counts or joins are claimed. This audit uses Git-archived JSON/CSV and verified public result sources. The checked-in prediction-snapshot schema does not contain the complete append-only fields required for a formal V5.1 traceability record.
+
 - The 16 forecasts from the 24 October JSON are Git-archived shadow rows, not V5.1; the 5 earlier forecasts are present only in a review JSON, not their original individual files.
 - No calibrated probability triplet or lambdas were present, so Brier/Log Loss are not calculated. No official pre-match Sporttery line was verified, so handicap outcomes are N/A.
 - All xG values captured here are post-match audit observations. They are **not** fed into the forecasts that were made before kickoff; no historical prediction was overwritten.
