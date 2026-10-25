@@ -1,0 +1,234 @@
+{
+  "schema_version": "daily-review-v1",
+  "captured_at_beijing": "2026-10-24T14:56:14+08:00",
+  "review_scope": {
+    "beijing_date": "2026-10-23",
+    "note": "European local-date 2026-10-22 fixtures kicked off after midnight in Beijing and belong to Beijing date 2026-10-23.",
+    "competitions": [
+      "UEFA Europa League",
+      "UEFA Conference League"
+    ],
+    "confirmed_finished_matches": 36,
+    "immutable_prematch_snapshots_found": 0,
+    "official_sporttery_handicaps_verified": 0,
+    "formal_hit_rates": {
+      "result_90": null,
+      "score1_exact": null,
+      "score2_exact": null,
+      "sporttery_handicap": null,
+      "half_full": null,
+      "reason": "No immutable pre-match prediction snapshots and no verified official Sporttery handicap records for these 36 fixtures."
+    },
+    "total_goals_distribution": {
+      "2": 9,
+      "0-1": 5,
+      "3-4": 14,
+      "5+": 8,
+      "total": 36,
+      "five_plus_rate": 0.2222,
+      "note": "Descriptive score distribution only; not a model accuracy metric."
+    },
+    "existing_result_files": [
+      "data/results/continental-club/2026-10-22/uefa-europa-league.json",
+      "data/results/continental-club/2026-10-22/uefa-conference-league-part1.json",
+      "data/results/continental-club/2026-10-22/uefa-conference-league-part2.json"
+    ],
+    "result_sources": [
+      "https://www.uefa.com/uefaeuropaleague/news/02a8-217720a96899-881b03afe0db-1000--ligue-europa-2026-27-calendrier-et-resultats/",
+      "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--202627-conference-league-all-the-league-phase-fixtures/"
+    ]
+  },
+  "due_shadow_predictions_from_previous_run": {
+    "note": "These five fixtures were snapshotted on 2026-10-23 15:00 Beijing for kickoffs on 2026-10-24 Beijing. Reviewed separately as due forecasts; these are manual shadow predictions, not V5.1.",
+    "snapshot_source_directory": "reviews/daily/2026-10-23/",
+    "metrics": {
+      "sample_size": 5,
+      "result_90": {
+        "hits": 1,
+        "rate": 0.2
+      },
+      "score1_exact": {
+        "hits": 1,
+        "rate": 0.2
+      },
+      "score2_exact": {
+        "hits": 1,
+        "rate": 0.2
+      },
+      "half_full": {
+        "hits": 1,
+        "rate": 0.2
+      },
+      "sporttery_handicap": {
+        "hits": null,
+        "rate": null,
+        "reason": "Official handicap missing for all five fixtures."
+      },
+      "note": "Shadow-sample metrics only; must not be reported as V5.1 accuracy."
+    },
+    "matches": [
+      {
+        "match": "Ipswich Town vs Nottingham Forest",
+        "kickoff_beijing": "2026-10-24T03:00:00+08:00",
+        "snapshot": {
+          "score1": "1-1",
+          "score2": "1-2",
+          "result_90": "D",
+          "half_full": "D/D",
+          "my_confidence": 52,
+          "version": "manual-shadow-v0.1"
+        },
+        "actual": {
+          "score": "1-1",
+          "halftime_score": "1-1",
+          "result_90": "D",
+          "half_full": "D/D",
+          "total_goals": 2
+        },
+        "audit": {
+          "score1_exact": true,
+          "score2_exact": false,
+          "result_90_hit": true,
+          "half_full_hit": true,
+          "handicap": "UNVERIFIABLE_OFFICIAL_LINE_MISSING"
+        },
+        "error_note": "Direction and first score were correct; no verified pre-match xG or official handicap was available."
+      },
+      {
+        "match": "VfB Stuttgart vs Borussia Mönchengladbach",
+        "kickoff_beijing": "2026-10-24T01:30:00+08:00",
+        "snapshot": {
+          "score1": "2-1",
+          "score2": "3-1",
+          "result_90": "H",
+          "half_full": "D/H",
+          "my_confidence": 64,
+          "version": "manual-shadow-v0.1"
+        },
+        "actual": {
+          "score": "2-3",
+          "halftime_score": "1-1",
+          "result_90": "A",
+          "half_full": "D/A",
+          "total_goals": 5
+        },
+        "audit": {
+          "score1_exact": false,
+          "score2_exact": false,
+          "result_90_hit": false,
+          "half_full_hit": false,
+          "handicap": "UNVERIFIABLE_OFFICIAL_LINE_MISSING"
+        },
+        "error_note": "The away-win tail was missed; the high-total-goal risk note was directionally relevant, but neither listed score represented the away win."
+      },
+      {
+        "match": "Torino vs Monza",
+        "kickoff_beijing": "2026-10-24T02:45:00+08:00",
+        "snapshot": {
+          "score1": "1-1",
+          "score2": "2-1",
+          "result_90": "D",
+          "half_full": "D/D",
+          "my_confidence": 51,
+          "version": "manual-shadow-v0.1"
+        },
+        "actual": {
+          "score": "3-2",
+          "halftime_score": "1-0",
+          "result_90": "H",
+          "half_full": "H/H",
+          "total_goals": 5
+        },
+        "audit": {
+          "score1_exact": false,
+          "score2_exact": false,
+          "result_90_hit": false,
+          "half_full_hit": false,
+          "handicap": "UNVERIFIABLE_OFFICIAL_LINE_MISSING"
+        },
+        "error_note": "The draw and both listed scores underestimated the home-side scoring and total-goal tail; the note to preserve 3+ goals was relevant."
+      },
+      {
+        "match": "Brest vs Nice",
+        "kickoff_beijing": "2026-10-24T02:45:00+08:00",
+        "snapshot": {
+          "score1": "2-1",
+          "score2": "1-1",
+          "result_90": "H",
+          "half_full": "D/H",
+          "my_confidence": null,
+          "version": "manual-shadow-v0.1"
+        },
+        "actual": {
+          "score": "1-2",
+          "halftime_score": "1-0",
+          "result_90": "A",
+          "half_full": "H/A",
+          "total_goals": 3
+        },
+        "audit": {
+          "score1_exact": false,
+          "score2_exact": false,
+          "result_90_hit": false,
+          "half_full_hit": false,
+          "handicap": "UNVERIFIABLE_OFFICIAL_LINE_MISSING"
+        },
+        "error_note": "The home-win direction was wrong; verified starting lineups and pre-match xG were not captured."
+      },
+      {
+        "match": "Deportivo Alavés vs Málaga",
+        "kickoff_beijing": "2026-10-24T03:00:00+08:00",
+        "snapshot": {
+          "score1": "1-0",
+          "score2": "1-1",
+          "result_90": "H",
+          "half_full": "D/H",
+          "my_confidence": null,
+          "version": "manual-shadow-v0.1"
+        },
+        "actual": {
+          "score": "1-1",
+          "halftime_score": "0-1",
+          "result_90": "D",
+          "half_full": "A/D",
+          "total_goals": 2
+        },
+        "audit": {
+          "score1_exact": false,
+          "score2_exact": true,
+          "result_90_hit": false,
+          "half_full_hit": false,
+          "handicap": "UNVERIFIABLE_OFFICIAL_LINE_MISSING"
+        },
+        "error_note": "The second score captured the draw, but the primary outcome and half/full-time path were wrong; draw protection was insufficient."
+      }
+    ],
+    "total_goals_distribution": {
+      "2": 2,
+      "0-1": 0,
+      "3-4": 1,
+      "5+": 2
+    },
+    "risk_event_observation": {
+      "explicit_high_goal_warnings_with_observed_5_plus": 2,
+      "note": "This is an event observation, not a calibrated risk-warning accuracy score."
+    },
+    "result_sources": [
+      "https://www.theguardian.com/football/results",
+      "https://www.skysports.com/football-scores-fixtures/2026-10-24",
+      "https://www.totalodds.co.uk/matches/torino-vs-monza-6553732",
+      "https://www.maxifoot.fr/match/brest-nice-20261023.htm",
+      "https://www.oddalerts.com/livescores/deportivo-alaves-vs-malaga/4679-4677"
+    ]
+  },
+  "database_status": {
+    "repository_sqlite_file_visible": true,
+    "live_database_connection_or_query_performed": false,
+    "note": "The repository contains a SQLite file, but this run did not mount or open a live database connection; no DB-derived counts or joins are claimed."
+  },
+  "model_integrity": {
+    "v5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "historical_prediction_snapshots_overwritten": false
+  }
+}
