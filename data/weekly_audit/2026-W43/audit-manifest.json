@@ -4,7 +4,7 @@
   "branch": "audit/weekly-backtest-xg-2026-W43-20261025",
   "source_commit": "564b83a13c58ababe12264757d68e2cfba2b490e",
   "base_branch": "audit/weekly-backtest-xg-2026-W42-20261018",
-  "generated_at": "2026-10-25T12:02:09+08:00",
+  "generated_at": "2026-10-25T12:15:50+08:00",
   "result_counts": {
     "league_completed": 50,
     "uel_uecl_completed": 36,
@@ -41,8 +41,7 @@
     {
       "path": "reviews/daily/2026-10-24/prediction-window-2026-10-24.json",
       "blob_sha": "59b7b88c398db023abf77ac5f48ad14e4d552941",
-      "bytes": 22944,
-      "fixtures": 18
+      "bytes": 22944
     },
     {
       "path": "reviews/daily/2026-10-24/review-2026-10-23-beijing.json",
@@ -52,8 +51,7 @@
     {
       "path": "data/results/continental-club/2026-10-22/uefa-europa-league.json",
       "blob_sha": "6ada52a86dbd1059e0cfe5a4e79c6878a208c364",
-      "bytes": 1163,
-      "results": 18
+      "bytes": 1163
     },
     {
       "path": "data/results/continental-club/2026-10-22/uefa-conference-league-part1.json",
@@ -67,31 +65,31 @@
     },
     {
       "path": "data/weekly_audit/2026-W43/match-xg-detail.csv",
-      "blob_sha": "fd24244ea7aa2e37f275469983bd8cf717cecce2",
+      "blob_sha": "4619ac32df0a309aa671b090daf38c183abdb0d8",
       "bytes": 56969,
       "rows": 86
     },
     {
       "path": "data/weekly_audit/2026-W43/team-weekly-xg-audit.csv",
-      "blob_sha": "c8ea3a4fd09b76e317b88453162fd1276c0cc393",
+      "blob_sha": "26f72e1c1b364e3d3bd9c49cf97b34b01fc2d97a",
       "bytes": 57023,
       "rows": 128
     },
     {
       "path": "data/weekly_audit/2026-W43/team-weekly-xg-audit-other-competitions.csv",
-      "blob_sha": "450ecc982123720610efda367311ba9206961b96",
+      "blob_sha": "6ccc2bc302a5963e2f7663434892de825e72e073",
       "bytes": 28090,
       "rows": 72
     },
     {
       "path": "data/weekly_audit/2026-W43/shadow-backtest.csv",
-      "blob_sha": "ed6f5ee572759c2b02ce41485710adfe4e1a7ade",
+      "blob_sha": "be2453241681e075c4b0eb130c405d1b50374609",
       "bytes": 12482,
       "rows": 21
     },
     {
       "path": "data/weekly_audit/2026-W43/secondary-xg-reports.csv",
-      "blob_sha": "750668896c9265c35e623f2730bb8b77aa6417f9",
+      "blob_sha": "0a723fbfdc1a795fb3a92625424910d96321494b",
       "bytes": 3201,
       "rows": 9
     },
@@ -103,19 +101,19 @@
     },
     {
       "path": "data/weekly_audit/2026-W43/weekly-backtest-report.md",
-      "blob_sha": "3ef42bd2d7f9cb8c886406450a905583c215930c",
+      "blob_sha": "975009ed78a5aca56aa031ce16e652f89bb3d499",
       "bytes": 8465
     },
     {
       "path": "data/weekly_audit/2026-W43/uncompleted-fixtures.csv",
-      "blob_sha": "1a6e4da9a894edf3deb3baf4cd271428d79e5539",
-      "bytes": 2989,
+      "blob_sha": "f190be0223332c4bddd27912a8bd122c66c2739e",
+      "bytes": 3158,
       "rows": 6
     },
     {
       "path": "data/xg/weekly/2026-W43/xg-integrity-audit-2026-10-25.json",
-      "blob_sha": "73745d820cf037515317fed350030190cf444449",
-      "bytes": 8041
+      "blob_sha": "89d03d5a9729889ab9614d261c03f033a13e48a2",
+      "bytes": 8088
     }
   ],
   "integrity": {
@@ -125,16 +123,16 @@
     "readback_verification_pending": false,
     "readback_verification_passed": true,
     "readback_verified_files": 17,
-    "readback_verified_at": "2026-10-25T12:02:09+08:00",
+    "readback_verified_at": "2026-10-25T12:15:50+08:00",
     "readback_checks": {
-      "valid_files": 17,
-      "invalid_files": 0,
-      "shadow_backtest_rows": 21,
-      "completed_league_match_rows": 50,
-      "completed_uefa_match_rows": 36,
+      "files_valid": true,
+      "source_files": 8,
+      "report_artifacts": 9,
+      "match_detail_rows": 86,
       "league_team_week_rows": 128,
-      "other_competition_team_week_rows": 72,
-      "secondary_xg_report_rows": 9,
+      "other_team_week_rows": 72,
+      "shadow_backtest_rows": 21,
+      "secondary_xg_rows": 9,
       "uncompleted_fixture_rows": 6
     }
   }
