@@ -6,6 +6,7 @@ on:
     paths:
       - "experiments/market_lambda_allocation.py"
       - "data_pipeline/market_lambda_chronological_backtest.py"
+      - "data_pipeline/audit_market_lambda_sources.py"
       - "tests/test_market_lambda_allocation.py"
       - ".github/workflows/market-lambda-validation.yml"
       - "data/market_lambda_backtest.csv"
@@ -30,6 +31,8 @@ jobs:
           python-version: "3.12"
       - name: Run unit tests
         run: python -m unittest tests.test_market_lambda_allocation -v
+      - name: Audit real SQLite market snapshot coverage
+        run: python data_pipeline/audit_market_lambda_sources.py
       - name: Run chronological holdout experiment
         id: backtest
         continue-on-error: true
@@ -38,6 +41,7 @@ jobs:
         if: always()
         run: |
           mkdir -p artifacts/market-lambda
+          if [ -f model_validation/market_lambda_source_audit.json ]; then cp model_validation/market_lambda_source_audit.json artifacts/market-lambda/; fi
           if [ -f model_validation/market_lambda_chronological_report.json ]; then
             cp model_validation/market_lambda_chronological_report.json artifacts/market-lambda/
           else
