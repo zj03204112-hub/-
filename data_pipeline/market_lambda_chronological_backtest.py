@@ -76,7 +76,6 @@ def evaluate(rows):
         pred = market_anchored_prediction(
             over_odds=float(r["over_odds"]), under_odds=float(r["under_odds"]), goal_line=float(r["ou_line"]),
             home_odds=float(r["home_odds"]), draw_odds=float(r["draw_odds"]), away_odds=float(r["away_odds"]))
-        )
         cp = [pred["distribution"]["goal_bins"][b] for b in BINS]
         base = score_grid(float(r["baseline_lambda_home"]), float(r["baseline_lambda_away"]))
         bp = [base["goal_bins"][b] for b in BINS]
