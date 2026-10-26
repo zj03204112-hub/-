@@ -1,0 +1,64 @@
+name: Market Lambda Chronological Validation
+
+on:
+  push:
+    branches: [experiment/ou-tail-calibration-1]
+    paths:
+      - "experiments/market_lambda_allocation.py"
+      - "data_pipeline/market_lambda_chronological_backtest.py"
+      - "tests/test_market_lambda_allocation.py"
+      - ".github/workflows/market-lambda-validation.yml"
+      - "data/market_lambda_backtest.csv"
+  pull_request:
+    paths:
+      - "experiments/market_lambda_allocation.py"
+      - "data_pipeline/market_lambda_chronological_backtest.py"
+      - "tests/test_market_lambda_allocation.py"
+      - ".github/workflows/market-lambda-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-backtest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run unit tests
+        run: python -m unittest tests.test_market_lambda_allocation -v
+      - name: Run chronological holdout experiment
+        id: backtest
+        continue-on-error: true
+        run: python data_pipeline/market_lambda_chronological_backtest.py
+      - name: Preserve report and input coverage
+        if: always()
+        run: |
+          mkdir -p artifacts/market-lambda
+          if [ -f model_validation/market_lambda_chronological_report.json ]; then
+            cp model_validation/market_lambda_chronological_report.json artifacts/market-lambda/
+          else
+            printf '{"status":"BLOCKED","reason":"backtest did not produce a report"}\n' > artifacts/market-lambda/market_lambda_chronological_report.json
+          fi
+          if [ -f data/market_lambda_backtest.csv ]; then
+            python - <<'PY'
+          import csv, json
+          from pathlib import Path
+          p=Path("data/market_lambda_backtest.csv")
+          with p.open(newline="", encoding="utf-8-sig") as f: rows=list(csv.DictReader(f))
+          required=["match_id","kickoff_utc","snapshot_utc","snapshot_type","home_goals","away_goals","home_odds","draw_odds","away_odds","ou_line","over_odds","under_odds","baseline_lambda_home","baseline_lambda_away"]
+          out={"rows":len(rows),"columns":list(rows[0]) if rows else [],"missing_required_columns":[x for x in required if rows and x not in rows[0]]}
+          Path("artifacts/market-lambda/input_coverage.json").write_text(json.dumps(out,indent=2),encoding="utf-8")
+          PY
+          else
+            printf '{"status":"BLOCKED","reason":"data/market_lambda_backtest.csv is absent; no authentic timestamped O/U history was inferred"}\n' > artifacts/market-lambda/input_coverage.json
+          fi
+      - name: Upload experiment report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-lambda-validation
+          path: artifacts/market-lambda/
