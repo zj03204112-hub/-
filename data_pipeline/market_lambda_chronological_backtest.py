@@ -8,6 +8,9 @@ import csv, json, math, os, sys
 from datetime import datetime
 from pathlib import Path
 from collections import Counter
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from experiments.market_lambda_allocation import market_anchored_prediction, score_grid
 
