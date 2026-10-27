@@ -24,4 +24,4 @@ jobs:
         with:
           python-version: "3.12"
       - name: Run V5.2 market-lambda tests
-        run: python -m unittest tests/test_v5_2_market_lambda.py -v
+        run: python -m unittest discover -s tests -p 'test_v5_2_market_lambda.py' -v
