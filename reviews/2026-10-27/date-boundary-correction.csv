@@ -1,0 +1,5 @@
+correction_timestamp_beijing,artifact,old_state,new_state,reason,score_or_xg_numeric_values_changed
+2026-10-27T15:04:32+08:00,reviews/2026-10-27/previous-day-results.csv,11 matches; ACL Fergana-Al-Ittihad omitted,12 matches; added Fergana Oil Workers 1-2 Al-Ittihad at 2026-10-26 21:45 Beijing,Leisu page date grouping places the fixture on 2026-10-26 Beijing time.,NO
+2026-10-27T15:04:32+08:00,fixtures/2026-10-27/current-day-schedule.csv,Fergana Oil Workers-Al-Ittihad incorrectly assigned to 2026-10-27,Removed from current-day schedule; retained in prior-day results,Corrected Beijing calendar-date bucket.,NO
+2026-10-27T15:04:32+08:00,data/xg_weekly/2026-W44/match_xg_snapshot_v4_2026-10-27.csv,match_date_beijing=2026-10-27 for Fergana Oil Workers-Al-Ittihad rows,match_date_beijing=2026-10-26; kickoff_beijing=2026-10-26 21:45,Correct date bucket in append-only xG snapshot; ISO week remains 2026-W44 based on local match date.,NO
+2026-10-27T15:04:32+08:00,reviews/2026-10-27/daily-task-report.md,11 previous-day matches; 4 away wins,12 previous-day matches; 5 away wins,Reflect added ACL result and revised coverage counts.,NO
