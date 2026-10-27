@@ -55,7 +55,7 @@
 
 ### ISO 周 W44：截至本次运行的部分周快照
 
-- 已登记 7 场亚冠精英赛完赛记录与 2 场核心联赛完赛记录中的 xG 状态；本次 W44 xG 文件覆盖的是其中 7 场亚冠完赛 + 2 场核心联赛中的实际 xG 采集子集，完整赛事范围仍待补齐。
+- 已登记 5 场亚冠精英赛完赛记录与 2 场核心联赛完赛记录中的 xG 状态；本次 W44 xG 文件覆盖 5 场亚冠完赛 + 2 场核心联赛，共 7 场/14 条球队记录；其中 2 场核心联赛有第三方 xG 估算，5 场亚冠比赛 xG 缺失。完整赛事范围仍待补齐。
 - 塞维利亚—奥萨苏纳 xG 1.18–0.79，巴黎圣日耳曼—里昂 xG 0.96–0.69，来源为 MatchCalendar Football 第三方估算。
 - 亚冠已完赛 5 场未取得可核验 xG，均写入缺失状态；延期比赛不生成比赛 xG 记录。
 - 上述数值均标记 `POST_MATCH_ONLY`，绝不回填为赛前输入。赛前 xG 输入当前仍缺。
@@ -82,4 +82,9 @@
 
 ## 运行后补记：名称映射纠错
 
-新增纠错日志：`reviews/2026-10-27/data-corrections.csv`。修正延期对阵为利雅得胜利 vs 迪拜祈祷（Al-Wasl），并把“胡拜尔库迪西亚”映射为 Al-Qadsiah；“北方”保留雷速原始显示名并标记标准队名待核实。原始 W44 xG 快照不覆盖，已另存 v2 纠正版：`data/xg_weekly/2026-W44/match_xg_snapshot_v2_2026-10-27.csv`、`data/xg_weekly/2026-W44/team_weekly_summary_snapshot_v2_2026-10-27.csv`。这些修正不改变比分或 xG 数值。
+新增纠错日志：`reviews/2026-10-27/data-corrections.csv`。修正延期对阵为利雅得胜利 vs 迪拜祈祷（Al-Wasl），并把“胡拜尔库迪西亚”映射为 Al-Qadsiah；“北方”保留雷速原始显示名并标记标准队名待核实。原始 W44 xG 快照不覆盖，已另存 v3 纠正版：`data/xg_weekly/2026-W44/match_xg_snapshot_v3_2026-10-27.csv`、`data/xg_weekly/2026-W44/team_weekly_summary_snapshot_v3_2026-10-27.csv`；v1/v2均保留不覆盖。这些修正不改变比分或 xG 数值。
+
+
+## 补记：W44 统计口径校正
+
+W44 本次 xG 记录实际为 5 场亚冠精英赛完赛 + 2 场核心联赛完赛，共 7 场、14 条球队记录；其中 4 条球队 xG 值来自两场核心联赛的第三方估算，10 条亚冠球队记录为缺失。纠正版 v3 文件：`data/xg_weekly/2026-W44/match_xg_snapshot_v3_2026-10-27.csv`、`data/xg_weekly/2026-W44/team_weekly_summary_snapshot_v3_2026-10-27.csv`。行级 `row_update_status` 只在实际更正的球队名记录上标为 `CORRECTED_TEAM_NAME_MAPPING`，其他记录标为 `UNCHANGED_FROM_V1_VALUES`。
