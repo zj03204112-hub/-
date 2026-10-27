@@ -1,0 +1,5 @@
+correction_timestamp_beijing,artifact_type,original_path,corrected_path,row_key,old_value,new_value,reason,xg_or_score_values_changed
+2026-10-27T15:04:32+08:00,schedule,fixtures/2026-10-27/current-day-schedule.csv,fixtures/2026-10-27/current-day-schedule.csv,ACL_ELITE|2026-10-27 02:15|Al-Nassr,away_team=Shabab Al-Ahli,away_team=Al-Wasl（雷速中文名：迪拜祈祷）,雷速赛果页将延期对阵列为利雅得胜利 vs 迪拜祈祷；原先把对手误记为迪拜青年国民。,NO
+2026-10-27T15:04:32+08:00,schedule/xG,data/xg_weekly/2026-W44/match_xg_snapshot_2026-10-27.csv,data/xg_weekly/2026-W44/match_xg_snapshot_v2_2026-10-27.csv,ACL_ELITE|2026-W44|home team,Fergana Oil Workers,费尔干纳石油工人（标准英文队名待核实）,避免将雷速中文名称未经核实翻译成标准英文队名。,NO
+2026-10-27T15:04:32+08:00,schedule/xG,data/xg_weekly/2026-W44/match_xg_snapshot_2026-10-27.csv,data/xg_weekly/2026-W44/match_xg_snapshot_v2_2026-10-27.csv,ACL_ELITE|2026-W44|Al-Qadsiah vs Al-Sadd,Al-Khobar,Al-Qadsiah（雷速中文名：胡拜尔库迪西亚）,修正城市名误作俱乐部名的映射。,NO
+2026-10-27T15:04:32+08:00,schedule/prediction-attempt,fixtures/2026-10-27/current-day-schedule.csv,fixtures/2026-10-27/current-day-schedule.csv,ACL_ELITE|2026-10-28 02:15,North,北方（雷速名称；标准队名待核实）,来源只确认雷速中文显示名，未确认标准英文队名。,NO
