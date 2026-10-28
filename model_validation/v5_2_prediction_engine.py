@@ -13,6 +13,7 @@ from typing import Any, Dict
 from model_validation.v5_2_market_lambda import predict_from_markets
 from model_validation.v5_2_goal_tail_shadow import reweight_score_grid
 from model_validation.v5_2_big_goal_awareness import assess_big_goal_sensitivity, high_total_score_candidates
+from model_validation.v5_2_asian_totals_settlement import poisson_total_pmf, settle_probabilities
 
 
 ENGINE_VERSION = "V5.2-candidate-2026-10-28"
@@ -89,6 +90,14 @@ def predict_match(
         over_price_move_pct=over_price_move_pct,
         under_price_move_pct=under_price_move_pct,
     )
+    total_pmf = poisson_total_pmf(float(base["lambda_total"]))
+    quarter_line_settlement = {
+        str(line): {
+            side: settle_probabilities(line=line, side=side, total_goal_probabilities=total_pmf)
+            for side in ("over", "under")
+        }
+        for line in (2.25, 2.75)
+    }
     high_score_tail = high_total_score_candidates(
         ((row["home"], row["away"], row["probability"]) for row in adjusted["scorelines"]),
         min_total_goals=5,
@@ -114,6 +123,7 @@ def predict_match(
         "p_away": adjusted["p_away"],
         "goal_bins": adjusted["goal_bins"],
         "big_goal_awareness": big_goal,
+        "asian_quarter_line_settlement_probabilities": quarter_line_settlement,
         "high_total_score_candidates": high_score_tail,
         "probability_mass": adjusted["probability_mass"],
         "production_v5_1_changed": False,
