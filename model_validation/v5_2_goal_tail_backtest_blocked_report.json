@@ -1,0 +1,34 @@
+{
+  "report_version": "V5.2-goal-tail-holdout-audit-2026-10-28",
+  "status": "BLOCKED_INSUFFICIENT_REAL_HISTORICAL_MARKET_DATA",
+  "formal_v5_1_changed": false,
+  "historical_rows_reviewed": 14,
+  "historical_prediction_rows_with_verified_prematch_ou_line": 0,
+  "historical_prediction_rows_with_verified_prematch_over_odds": 0,
+  "historical_prediction_rows_with_verified_prematch_under_odds": 0,
+  "market_snapshot_rows": 14,
+  "market_snapshot_rows_with_ou_line_and_both_prices": 0,
+  "reason": "The existing 2026-10-16 audit CSV contains final scores for some matches, but the corresponding historical O/U lines and prices are blank. The market snapshot CSV explicitly marks official total-goals markets as missing. Final scores cannot be used to reconstruct pre-match odds.",
+  "next_required_data": [
+    "stable match_id and unique fixture mapping",
+    "kickoff_utc and snapshot_utc proving snapshot strictly before kickoff",
+    "snapshot_type and source/source_url",
+    "historical O/U line plus over and under decimal odds",
+    "actual final home and away goals",
+    "baseline lambda_home and lambda_away frozen before kickoff"
+  ],
+  "planned_evaluation": {
+    "chronological_split": "first 70% diagnostic window; last 30% untouched holdout",
+    "minimum_rows": 30,
+    "minimum_holdout_rows": 10,
+    "metrics": [
+      "goal_bucket_brier",
+      "realized_goal_bucket_log_loss",
+      "HDA_brier",
+      "five_plus_goals_brier",
+      "exact_top_score_hit_rate"
+    ],
+    "promotion_rule": "Do not promote unless holdout goal-bucket Brier and log-loss do not worsen, 5+ goals Brier improves, and the effect replicates on a second untouched time window."
+  },
+  "interpretation": "No accuracy or calibration improvement is claimed. Existing historical records are insufficient for the requested real-market chronological backtest."
+}
