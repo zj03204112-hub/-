@@ -8,9 +8,11 @@ on:
       - "model_validation/v5_2_goal_tail_shadow.py"
       - "model_validation/v5_2_prediction_engine.py"
       - "model_validation/v5_2_big_goal_awareness.py"
+      - "model_validation/v5_2_asian_totals_settlement.py"
       - "tests/test_v5_2_goal_tail_shadow.py"
       - "tests/test_v5_2_prediction_engine.py"
       - "tests/test_v5_2_big_goal_awareness.py"
+      - "tests/test_v5_2_asian_totals_settlement.py"
       - ".github/workflows/v5-2-candidate-engine-tests.yml"
   workflow_dispatch:
 
