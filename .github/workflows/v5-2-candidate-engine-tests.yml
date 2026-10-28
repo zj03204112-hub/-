@@ -1,0 +1,26 @@
+name: V5.2 candidate engine tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "model_validation/v5_2_market_lambda.py"
+      - "model_validation/v5_2_goal_tail_shadow.py"
+      - "model_validation/v5_2_prediction_engine.py"
+      - "tests/test_v5_2_prediction_engine.py"
+      - ".github/workflows/v5-2-candidate-engine-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run V5.2 engine and tail-layer tests
+        run: python -m unittest tests.test_v5_2_goal_tail_shadow tests.test_v5_2_prediction_engine -v
