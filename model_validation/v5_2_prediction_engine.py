@@ -12,6 +12,7 @@ from typing import Any, Dict
 
 from model_validation.v5_2_market_lambda import predict_from_markets
 from model_validation.v5_2_goal_tail_shadow import reweight_score_grid
+from model_validation.v5_2_big_goal_awareness import assess_big_goal_sensitivity, high_total_score_candidates
 
 
 ENGINE_VERSION = "V5.2-candidate-2026-10-28"
@@ -31,6 +32,11 @@ def predict_match(
     home_odds: float,
     draw_odds: float,
     away_odds: float,
+    opening_goal_line: float | None = None,
+    opening_over_odds: float | None = None,
+    opening_under_odds: float | None = None,
+    over_price_move_pct: float | None = None,
+    under_price_move_pct: float | None = None,
     max_goals: int = 15,
 ) -> Dict[str, Any]:
     """Generate a probability distribution from verified pre-match market data.
@@ -71,6 +77,23 @@ def predict_match(
     ap = poisson_pmf(float(base["lambda_away"]), max_goals)
     rows = [(h, a, ph * pa) for h, ph in enumerate(hp) for a, pa in enumerate(ap)]
     adjusted = reweight_score_grid(rows)
+    big_goal = assess_big_goal_sensitivity(
+        current_line=goal_line,
+        current_over_odds=over_odds,
+        current_under_odds=under_odds,
+        lambda_home=float(base["lambda_home"]),
+        lambda_away=float(base["lambda_away"]),
+        opening_line=opening_goal_line,
+        opening_over_odds=opening_over_odds,
+        opening_under_odds=opening_under_odds,
+        over_price_move_pct=over_price_move_pct,
+        under_price_move_pct=under_price_move_pct,
+    )
+    high_score_tail = high_total_score_candidates(
+        ((row["home"], row["away"], row["probability"]) for row in adjusted["scorelines"]),
+        min_total_goals=5,
+        limit=12,
+    )
 
     return {
         "engine_version": ENGINE_VERSION,
@@ -90,6 +113,8 @@ def predict_match(
         "p_draw": adjusted["p_draw"],
         "p_away": adjusted["p_away"],
         "goal_bins": adjusted["goal_bins"],
+        "big_goal_awareness": big_goal,
+        "high_total_score_candidates": high_score_tail,
         "probability_mass": adjusted["probability_mass"],
         "production_v5_1_changed": False,
         "warnings": [
