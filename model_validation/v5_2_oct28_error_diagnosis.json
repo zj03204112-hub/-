@@ -1,0 +1,48 @@
+{
+  "report_version": "V5.2-2026-10-28-retrospective-diagnosis-v1",
+  "status": "PREDICTION_TRACEABILITY_BLOCKED",
+  "formal_v5_1_changed": false,
+  "sample": {
+    "date_local": "2026-10-28",
+    "matches": 10,
+    "leagues": {
+      "Serie A": 5,
+      "EFL Cup": 5
+    },
+    "source_note": "Uses the ten pre-match picks and final scores previously listed in this conversation. Re-verify fixture IDs and results before treating as canonical backtest data."
+  },
+  "metrics": {
+    "ninety_minute_hda_hits": 2,
+    "ninety_minute_hda_n": 10,
+    "ninety_minute_hda_accuracy": 0.2,
+    "first_score_exact_hits": 1,
+    "first_score_exact_n": 10,
+    "first_score_exact_accuracy": 0.1,
+    "probability_calibration": "NOT_AVAILABLE",
+    "brier_score": "NOT_AVAILABLE",
+    "log_loss": "NOT_AVAILABLE",
+    "second_score_hits": "NOT_RECALCULATED",
+    "handicap_hits": "NOT_RECALCULATED",
+    "totals_settlement": "NOT_RECALCULATED"
+  },
+  "diagnosis": {
+    "confirmed_from_picks_and_results": [
+      "Several matches predicted as favorites wins ended in draws or underdog wins.",
+      "Both underprediction and overprediction of total goals occurred; a blanket upward goal adjustment is not supported.",
+      "Cup matches had 0/5 H/D/A picks correct in this ten-match retrospective, but sample size is small and forecast provenance is not verified."
+    ],
+    "not_identifiable_without_immutable_snapshots": [
+      "Whether these picks were produced by the repository V5.2 engine or manually selected.",
+      "Per-match lambda_home, lambda_away, p_home, p_draw, p_away and scoreline probability distribution.",
+      "Whether market odds and O/U prices were verified and captured before kickoff.",
+      "Whether team news, starting lineups, rotation, injuries and fixture IDs were correctly supplied."
+    ]
+  },
+  "required_next_steps": [
+    "Archive immutable prediction snapshots before kickoff with model version, Git SHA, UTC snapshot time, stable match ID, source URLs, odds, lambdas, H/D/A probabilities and top scores.",
+    "Backfill this ten-match retrospective only when exact fixtures, official final scores and actual pre-match market snapshots can be verified; never reconstruct odds from results.",
+    "Run error decomposition by favorite probability band, draw probability band, league/cup, total-goal bucket and net-goal bucket.",
+    "Test any change against chronological holdout using H/D/A Brier and log loss, goal-bucket Brier/log loss, top-score hit rate and 5+ goal event Brier.",
+    "Keep V5.2 tail multipliers in shadow mode until the real-data holdout promotion gate passes."
+  ]
+}
