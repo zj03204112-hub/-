@@ -1,0 +1,277 @@
+{
+  "prediction_id": "pred-v52-acl2-shanghai-shenhua-machida-20261029T101220+0800",
+  "match_id": "match:afc-champions-league-two:2026-10-29:shanghai-shenhua:fc-machida-zelvia",
+  "provider_event_id": "",
+  "provider_event_id_status": "NOT_RESOLVED",
+  "competition_id": "afc-champions-league-two",
+  "competition": "AFC Champions League Two",
+  "group": "G",
+  "round": "Matchday 3",
+  "match_type": "continental_club_competition",
+  "season": "2026-27",
+  "home_team": "Shanghai Shenhua",
+  "home_team_id": "team:shanghai-shenhua",
+  "away_team": "FC Machida Zelvia",
+  "away_team_id": "team:fc-machida-zelvia",
+  "kickoff_beijing": "2026-10-29T20:15:00+08:00",
+  "prediction_timestamp_beijing": "2026-10-29T10:12:20+08:00",
+  "hours_before_kickoff": 10.044,
+  "prediction_window_status": "WITHIN_6_TO_12_HOUR_WINDOW",
+  "model_name": "V5.2",
+  "model_version": "V5.2-candidate-2026-10-28 + V5.2-shadow-goal-tail-v1",
+  "strategy_id": "V52-MARKETLAMBDA-TAIL-ACL2-20261029-01",
+  "validation_status": "EXPERIMENTAL_NOT_BACKTESTED",
+  "calculation_execution": "Scratch calculation reproducing the checked-in market-lambda and tail-reweighting formulas; the repository predict_match entry point and CI were not executed in this run.",
+  "market_snapshot": {
+    "captured_at_beijing": "2026-10-29T10:12:20+08:00",
+    "source": "Stake.com page visible at retrieval time",
+    "source_url": "https://stake.com/sports/soccer/international-clubs/afc-cup/46823273-shanghai-shenhua-fc-machida-zelvia",
+    "provider_event_timestamp": "NOT_DISCLOSED",
+    "timestamp_quality": "Search-result retrieval-time snapshot at 10:12:20 Beijing; bookmaker's own timestamp not disclosed.",
+    "one_x_two_decimal_odds": {
+      "home": 3.3,
+      "draw": 3.45,
+      "away": 1.97
+    },
+    "asian_total_line": 2.5,
+    "over_odds": 1.8,
+    "under_odds": 1.87,
+    "external_asian_handicap": {
+      "home_line": "+0.5",
+      "home_odds": 1.75,
+      "away_line": "-0.5",
+      "away_odds": 1.93
+    },
+    "sporttery_handicap_line": null,
+    "sporttery_handicap_status": "NOT_VERIFIED",
+    "opening_to_current_market_note": "A separate odds aggregator shows the home price drifting out and the away price shortening modestly; quoted values vary by bookmaker and were not mixed into the candidate calculation.",
+    "secondary_odds_source_url": "https://www.aiscore.com/match-shanghai-shenhua-machida-zelvia/zrkn6i4z2o0hwql/odds",
+    "quarter_line_odds_2_25": null,
+    "quarter_line_odds_2_75": null
+  },
+  "model_inputs": {
+    "devigged_market_probabilities": {
+      "home": 0.2754,
+      "draw": 0.2634,
+      "away": 0.4613
+    },
+    "lambda_home": 1.1557,
+    "lambda_away": 1.5572,
+    "lambda_total": 2.7129,
+    "lambda_source": "Inferred from retrieved 2.5-goal odds and allocated to fit de-vigged 1X2 probabilities; not supplier xG.",
+    "supplier_xg_input_status": "MISSING_PREMATCH_TEAM_XG",
+    "team_form": {
+      "shanghai_shenhua_last_three": [
+        {
+          "date": "2026-10-24",
+          "opponent": "Shenzhen Peng City",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-10-18",
+          "opponent": "Wuhan Three Towns",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-10-15",
+          "opponent": "PKR Svay Rieng",
+          "score": "0-0",
+          "result": "D"
+        }
+      ],
+      "machida_zelvia_last_three": [
+        {
+          "date": "2026-10-24",
+          "opponent": "Vissel Kobe",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Shimizu S-Pulse",
+          "score": "5-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-10-18",
+          "opponent": "Avispa Fukuoka",
+          "score": "3-0",
+          "result": "W"
+        }
+      ],
+      "group_points_before_match": {
+        "shanghai_shenhua": 4,
+        "machida_zelvia": 6
+      }
+    },
+    "lineup_status": "Official starting lineups not published at snapshot time.",
+    "projected_tactics": {
+      "shanghai_shenhua": "4-2-3-1 (secondary preview; not official lineup)",
+      "machida_zelvia": "3-4-2-1 (secondary preview; not official lineup)"
+    },
+    "injury_news": {
+      "shanghai_shenhua": "Secondary preview reported no major injury concern; not independently confirmed.",
+      "machida_zelvia": "Secondary preview flagged Daihachi Okamura as a selection concern after an early substitution in the previous match; not an official injury bulletin."
+    },
+    "referee": {
+      "name": "Bijan Heydari",
+      "status": "SECONDARY_LISTING_NOT_OFFICIALLY_RECONFIRMED",
+      "source_url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FC_Machida_Zelvia_season"
+    },
+    "weather": {
+      "source_url": "https://weather5days.com/en/w/shanghai%2Cchina/2day",
+      "forecast_at_kickoff": "Around 19°C at 20:00 local time; no hourly precipitation shown for that hour; daily precipitation probability about 25%.",
+      "source_capture_time_beijing": "2026-10-29T10:02:46+08:00"
+    },
+    "next_match_and_motivation": {
+      "shanghai_shenhua": "Return fixture against Machida is listed for 5 Nov; next domestic league fixture listed for 8 Nov.",
+      "machida_zelvia": "J1 fixture against Gamba Osaka listed for 1 Nov, followed by the return fixture against Shanghai on 5 Nov.",
+      "assessment": "Both teams have meaningful group-stage points at stake. Upcoming fixtures may affect rotation, but no rotation is assumed as fact."
+    },
+    "professional_commentary": "No separately verified professional-commentator analysis captured in this run; secondary previews are context only."
+  },
+  "output": {
+    "score1": {
+      "home": 1,
+      "away": 1,
+      "probability": 0.1149
+    },
+    "score2": {
+      "home": 0,
+      "away": 1,
+      "probability": 0.0974
+    },
+    "next_score_candidate": {
+      "home": 1,
+      "away": 2,
+      "probability": 0.095
+    },
+    "ninety_minute_hda_probabilities": {
+      "home_win": 0.2838,
+      "draw": 0.2457,
+      "away_win": 0.4705
+    },
+    "ninety_minute_pick": "客胜方向，防平；第一比分仍为1-1",
+    "handicap": {
+      "external_asian_handicap": "Shanghai Shenhua +0.5 / Machida Zelvia -0.5",
+      "sporttery_line": null,
+      "sporttery_hda_prediction": null,
+      "status": "UNVERIFIABLE_NO_OFFICIAL_SPORTTERY_HANDICAP"
+    },
+    "half_full_time_pick": "平负",
+    "half_full_time_status": "Low-confidence scenario; not directly calculated by the checked-in engine.",
+    "my_confidence_rating": "5.5/10",
+    "confidence_definition": "Subjective confidence rating, not model win probability or measured hit rate.",
+    "total_goals": {
+      "over_2_5_probability": 0.5327,
+      "under_2_5_probability": 0.4673,
+      "expected_total_goals_lambda": 2.7129,
+      "probability_total_5_or_more": 0.1542,
+      "high_score_tail_candidates": [
+        {
+          "score": "2-3",
+          "probability": 0.0307
+        },
+        {
+          "score": "3-2",
+          "probability": 0.0228
+        },
+        {
+          "score": "1-4",
+          "probability": 0.0207
+        },
+        {
+          "score": "2-4",
+          "probability": 0.0119
+        },
+        {
+          "score": "3-3",
+          "probability": 0.0118
+        }
+      ],
+      "asian_quarter_line_settlement_probabilities": {
+        "2.25": {
+          "over": {
+            "win": 0.5327,
+            "half_win": 0,
+            "push": 0,
+            "half_loss": 0.235,
+            "loss": 0.2323
+          },
+          "under": {
+            "win": 0.2323,
+            "half_win": 0.235,
+            "push": 0,
+            "half_loss": 0,
+            "loss": 0.5327
+          }
+        },
+        "2.75": {
+          "over": {
+            "win": 0.3072,
+            "half_win": 0.2255,
+            "push": 0,
+            "half_loss": 0,
+            "loss": 0.4673
+          },
+          "under": {
+            "win": 0.4673,
+            "half_win": 0,
+            "push": 0,
+            "half_loss": 0.2255,
+            "loss": 0.3072
+          }
+        },
+        "note": "Probabilities come from the experimental V5.2 score distribution. No actual 2.25/2.75 prices were captured, so no expected value is claimed."
+      }
+    },
+    "risk_notes": [
+      "Machida has stronger recent defensive form, but the model away-win probability is about 47%, not a strong single.",
+      "The most likely exact score is 1-1 although away win is the leading H/D/A outcome.",
+      "Official Sporttery handicap, official starting lineups, verified supplier xG and official referee confirmation are missing.",
+      "High-score tail adjustment is experimental and has not passed a real historical holdout test."
+    ],
+    "data_completeness": {
+      "status": "PARTIAL",
+      "available": [
+        "fixture and kickoff time",
+        "third-party 1X2 odds",
+        "third-party 2.5 O/U odds",
+        "external Asian handicap",
+        "last-three results",
+        "group points",
+        "weather forecast",
+        "secondary team-news preview"
+      ],
+      "missing_or_unconfirmed": [
+        "official Sporttery handicap",
+        "official lineups",
+        "verified supplier xG",
+        "official referee assignment",
+        "single-book opening-to-current market history",
+        "verified professional-commentator analysis"
+      ]
+    }
+  },
+  "source_urls": {
+    "official_fixture": "https://www.jleague.jp/en/j1/match/",
+    "market_snapshot": "https://stake.com/zh/sports/soccer/international-clubs/afc-cup/46823273-shanghai-shenhua-fc-machida-zelvia",
+    "secondary_market_movement": "https://www.aiscore.com/match-shanghai-shenhua-machida-zelvia/zrkn6i4z2o0hwql/odds",
+    "shanghai_form": "https://afriscores.com/en/team/shanghai-shenhua/9279/results",
+    "machida_form": "https://www.jleague.jp/en/club/machida/",
+    "team_news": "https://www.freetips.com/football/shanghai-shenhua-vs-machida-zelvia-predictions-20261028-0030/",
+    "weather": "https://weather5days.com/en/w/shanghai%2Cchina/2day",
+    "referee_secondary": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FC_Machida_Zelvia_season"
+  },
+  "archive_safety": {
+    "formal_v5_1_changed": false,
+    "frozen_validation_samples_changed": false,
+    "database_connected": false,
+    "raw_market_payload_archived": false,
+    "source_capture_sha256": "NOT_COMPUTED_IN_THIS_RUNTIME"
+  },
+  "related_prior_snapshot_id": "pred-v52-acl2-shanghai-shenhua-machida-20261029T100246+0800",
+  "snapshot_relation": "Subsequent snapshot with a fresh market-page retrieval; prior snapshot retained separately."
+}
