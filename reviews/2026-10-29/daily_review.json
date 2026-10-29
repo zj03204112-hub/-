@@ -304,7 +304,7 @@
     "frozen_validation_samples_changed": false
   },
   "prediction_archive": {
-    "status": "SEPARATE_SNAPSHOTS_CREATED; FINAL_READBACK_PENDING",
+    "status": "COMMIT_AND_READBACK_VERIFIED",
     "original_snapshot": {
       "prediction_id": "pred-v52-acl2-shanghai-shenhua-machida-20261029T100246+0800",
       "path": "predictions/continental-club/2026-10-29/acl2-shanghai-shenhua-machida-v5.2.json",
@@ -328,6 +328,17 @@
       "team_registry_commit_sha": "4dea7a340090fedeb1650a76210d3cfbab56c1e1",
       "xg_audit": "data/xg_weekly/2026-W44/xg_coverage_audit.json",
       "xg_audit_commit_sha": "68a47f9bfceae29318371e742a0911cd1911ec25"
+    },
+    "readback_verification": {
+      "checked_at_beijing": "2026-10-29T10:12:20+08:00",
+      "all_expected_files_found": true,
+      "xg_match_csv_rows": 60,
+      "xg_match_csv_column_consistency": true,
+      "weekly_xg_csv_rows": 62,
+      "weekly_xg_csv_column_consistency": true,
+      "chat_reference_rows": 16,
+      "original_and_latest_prediction_ids_verified": true,
+      "schedule_pointer_verified": true
     }
   }
 }
