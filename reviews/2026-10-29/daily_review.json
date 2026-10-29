@@ -1,6 +1,6 @@
 {
   "report_version": "daily-football-review-2026-10-29",
-  "generated_at_beijing": "2026-10-29T10:02:46+08:00",
+  "generated_at_beijing": "2026-10-29T10:12:20+08:00",
   "archive_branch": "automation/daily-football-2026-10-29",
   "results_confirmed": 30,
   "result_date_basis": "Beijing date. European local 28 Oct matches are grouped under Beijing date 29 Oct because they finished after midnight in China.",
@@ -293,7 +293,9 @@
     "team_match_rows_missing_xg": 48,
     "team_match_xg_coverage_pct": 20,
     "team_weekly_summary_rows": 62,
-    "internal_team_registry_rows": 68
+    "internal_team_registry_rows": 68,
+    "source_fetch_time_status": "NOT_CAPTURED_PER_SOURCE",
+    "timestamp_note": "Run-start timestamp was previously used as a placeholder; the xG CSV was corrected to leave exact source fetch time blank and record run start/finalization separately."
   },
   "today_schedule_file": "fixtures/2026-10-29/schedule.json",
   "prediction_file": "predictions/continental-club/2026-10-29/acl2-shanghai-shenhua-machida-zelvia-v5.2.json",
@@ -302,7 +304,7 @@
     "frozen_validation_samples_changed": false
   },
   "prediction_archive": {
-    "status": "CREATED_ON_BRANCH_AND_PENDING_READBACK_CHECK",
+    "status": "CREATED_AND_READBACK_VERIFIED",
     "prediction_id": "pred-v52-acl2-shanghai-shenhua-machida-20261029T100246+0800",
     "path": "predictions/continental-club/2026-10-29/acl2-shanghai-shenhua-machida-zelvia-v5.2.json",
     "commit_sha": "9b0f16372169fe98fff4f3e6b5f823db307296ca",
