@@ -304,19 +304,30 @@
     "frozen_validation_samples_changed": false
   },
   "prediction_archive": {
-    "status": "CREATED_AND_READBACK_VERIFIED",
-    "prediction_id": "pred-v52-acl2-shanghai-shenhua-machida-20261029T100246+0800",
-    "path": "predictions/continental-club/2026-10-29/acl2-shanghai-shenhua-machida-zelvia-v5.2.json",
-    "commit_sha": "9b0f16372169fe98fff4f3e6b5f823db307296ca",
+    "status": "SEPARATE_SNAPSHOTS_CREATED; FINAL_READBACK_PENDING",
+    "original_snapshot": {
+      "prediction_id": "pred-v52-acl2-shanghai-shenhua-machida-20261029T100246+0800",
+      "path": "predictions/continental-club/2026-10-29/acl2-shanghai-shenhua-machida-v5.2.json",
+      "restore_commit_sha": "8efcb73842333616052d1c813d9d248093f2e13a"
+    },
+    "latest_snapshot": {
+      "prediction_id": "pred-v52-acl2-shanghai-shenhua-machida-20261029T101220+0800",
+      "path": "predictions/continental-club/2026-10-29/acl2-shanghai-shenhua-machida-v5.2-101220.json",
+      "commit_sha": "5fc9178241b73d16aba8dd5d1229a252b072db47"
+    },
     "schedule_path": "fixtures/2026-10-29/schedule.json",
-    "schedule_commit_sha": "de23d4a370845cb270dc3767f1f676eaa8c85d8f",
+    "schedule_commit_sha": "50685a843cb795accfdba171e385c9b4a0625040",
     "chat_reference_csv": "reviews/2026-10-29/chat_reference_diagnostics.csv",
     "chat_reference_commit_sha": "f7d54e4c45215809d0aa3afdb9e75050739c34c6",
     "xg_files": {
-      "match_level_commit_sha": "0994a68549633aedad25323114b4cf62faa95762",
-      "team_weekly_commit_sha": "12186847691ee338b49ff39d67e20e47352b97db",
+      "match_level": "data/xg_weekly/2026-W44/match_xg.csv",
+      "match_level_commit_sha": "61de0acb0dac3a64b0e34a9e10180acd3ab8a0a4",
+      "team_weekly": "data/xg_weekly/2026-W44/team_weekly_xg.csv",
+      "team_weekly_commit_sha": "434d2fa428fa6e25c135b613f1d52318ae9cbbd6",
+      "team_registry": "data/team_registry/team_id_map.csv",
       "team_registry_commit_sha": "4dea7a340090fedeb1650a76210d3cfbab56c1e1",
-      "xg_audit_commit_sha": "714b2099408b588560eca372a76f5ede4fdea6b2"
+      "xg_audit": "data/xg_weekly/2026-W44/xg_coverage_audit.json",
+      "xg_audit_commit_sha": "68a47f9bfceae29318371e742a0911cd1911ec25"
     }
   }
 }
