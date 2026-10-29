@@ -1,0 +1,28 @@
+{
+  "report_version": "weekly-xg-coverage-audit-2026-W44",
+  "generated_at_beijing": "2026-10-29T10:02:46+08:00",
+  "iso_week": "2026-W44",
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "reviewed_matches": 30,
+  "matches_with_supplier_published_fulltime_xg": 6,
+  "matches_missing_fulltime_xg": 24,
+  "team_match_rows": 60,
+  "team_match_rows_with_xg": 12,
+  "team_match_rows_missing_xg": 48,
+  "team_match_xg_coverage_pct": 20,
+  "status": "PARTIAL_NOT_ALL_TRACKED_TEAMS_COVERED",
+  "source_distinction": "Sofascore and Manchester City values are supplier-published model estimates, not official measured xG. Provider model versions are not disclosed.",
+  "missing_rule": "Missing values remain blank; no score-based xG reconstruction or own-model substitution.",
+  "gaps": [
+    "This run covers reviewed fixtures only, not every team in the seven core leagues.",
+    "Provider team IDs and provider event IDs remain unresolved; stable internal slug IDs were created.",
+    "Raw HTML/API payloads and SHA-256 digests were not archived.",
+    "No SQLite or remote database was connected."
+  ],
+  "files": {
+    "match_level": "data/xg_weekly/2026-W44/match_xg.csv",
+    "team_weekly": "data/xg_weekly/2026-W44/team_weekly_xg.csv",
+    "team_registry": "data/team_registry/team_id_map.csv"
+  }
+}
