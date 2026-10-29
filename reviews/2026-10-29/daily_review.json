@@ -1,8 +1,298 @@
 {
   "report_version": "daily-football-review-2026-10-29",
   "generated_at_beijing": "2026-10-29T10:02:46+08:00",
-  "status": "PARTIAL",
-  "note": "The complete review data is being archived in the separate result and xG files on this branch.",
-  "formal_v5_1_changed": false,
-  "frozen_validation_samples_changed": false
+  "archive_branch": "automation/daily-football-2026-10-29",
+  "results_confirmed": 30,
+  "result_date_basis": "Beijing date. European local 28 Oct matches are grouped under Beijing date 29 Oct because they finished after midnight in China.",
+  "completed_matches_by_beijing_date": {
+    "2026-10-28": 16,
+    "2026-10-29_early": 14
+  },
+  "results": [
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "J.League Levain Cup",
+      "home": "Mito Hollyhock",
+      "away": "Cerezo Osaka",
+      "score_90min_or_note": "1-3",
+      "source_url": "https://www.jleague.jp/en/leaguecup/match/"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "J.League Levain Cup",
+      "home": "Yokohama F. Marinos",
+      "away": "Sanfrecce Hiroshima",
+      "score_90min_or_note": "4-3",
+      "source_url": "https://www.jleague.jp/en/leaguecup/match/"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "J.League Levain Cup",
+      "home": "Nagoya Grampus",
+      "away": "Urawa Reds",
+      "score_90min_or_note": "1-1 (90m); 1-2 AET",
+      "source_url": "https://www.jleague.jp/en/leaguecup/match/"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "J.League Levain Cup",
+      "home": "Sagan Tosu",
+      "away": "Kawasaki Frontale",
+      "score_90min_or_note": "0-2",
+      "source_url": "https://www.jleague.jp/en/leaguecup/match/"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Elite",
+      "home": "Gamba Osaka",
+      "away": "Buriram United",
+      "score_90min_or_note": "1-1",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/md3-gamba-osaka-jpn-1-1-buriram-united-tha"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Elite",
+      "home": "Kashima Antlers",
+      "away": "Pohang Steelers",
+      "score_90min_or_note": "3-0",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_elite/news.html"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Elite",
+      "home": "Ratchaburi FC",
+      "away": "Kashiwa Reysol",
+      "score_90min_or_note": "0-0",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_elite/news.html"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Elite",
+      "home": "Beijing FC",
+      "away": "Jeonbuk Hyundai Motors",
+      "score_90min_or_note": "2-2",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_elite/news.html"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Elite",
+      "home": "Al Shamal",
+      "away": "Al Hilal",
+      "score_90min_or_note": "3-1",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_elite/news.html"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Elite",
+      "home": "Shabab Al Ahli",
+      "away": "Esteghlal",
+      "score_90min_or_note": "2-0",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_elite/news.html"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Two",
+      "home": "Al Shorta",
+      "away": "Al Hussein",
+      "score_90min_or_note": "1-1",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Two",
+      "home": "Al Seeb",
+      "away": "East Bengal",
+      "score_90min_or_note": "0-0",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Two",
+      "home": "Persib Bandung",
+      "away": "Melbourne Victory",
+      "score_90min_or_note": "2-0",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html/news/group-e-persib-bandung-idn-2-0-melbourne-victory-aus"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Two",
+      "home": "The Cong - Viettel",
+      "away": "FC Seoul",
+      "score_90min_or_note": "0-5",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html/news/group-e-the-cong-viettel-fc-vie-x-x-fc-seoul-kor-1"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Two",
+      "home": "Golgohar Sirjan",
+      "away": "FC Arkadag",
+      "score_90min_or_note": "0-0",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html"
+    },
+    {
+      "beijing_date": "2026-10-28",
+      "competition": "AFC Champions League Two",
+      "home": "Nasaf",
+      "away": "Kuwait SC",
+      "score_90min_or_note": "0-1",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "Serie A",
+      "home": "AC Milan",
+      "away": "Bologna",
+      "score_90min_or_note": "2-4",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "Serie A",
+      "home": "Parma",
+      "away": "Udinese",
+      "score_90min_or_note": "0-0",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "Serie A",
+      "home": "Venezia",
+      "away": "Inter Milan",
+      "score_90min_or_note": "0-2",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "Serie A",
+      "home": "Genoa",
+      "away": "Juventus",
+      "score_90min_or_note": "2-0",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "Serie A",
+      "home": "Monza",
+      "away": "Napoli",
+      "score_90min_or_note": "1-4",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "EFL Cup",
+      "home": "Manchester City",
+      "away": "Brighton",
+      "score_90min_or_note": "2-2; Man City won 4-3 pens",
+      "source_url": "https://www.efl.com/news/2026/october/28/carabao-cup--holders-taken-to-penalties-as-quarter-final-ties-take-shape/"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "EFL Cup",
+      "home": "Sunderland",
+      "away": "Brentford",
+      "score_90min_or_note": "3-2",
+      "source_url": "https://www.efl.com/news/2026/october/28/carabao-cup--holders-taken-to-penalties-as-quarter-final-ties-take-shape/"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "EFL Cup",
+      "home": "Bournemouth",
+      "away": "Aston Villa",
+      "score_90min_or_note": "3-0",
+      "source_url": "https://www.efl.com/news/2026/october/28/carabao-cup--holders-taken-to-penalties-as-quarter-final-ties-take-shape/"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "EFL Cup",
+      "home": "Fulham",
+      "away": "Crystal Palace",
+      "score_90min_or_note": "0-1",
+      "source_url": "https://www.efl.com/news/2026/october/28/carabao-cup--holders-taken-to-penalties-as-quarter-final-ties-take-shape/"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "EFL Cup",
+      "home": "Liverpool",
+      "away": "Chelsea",
+      "score_90min_or_note": "1-1; Liverpool won 6-5 pens",
+      "source_url": "https://www.efl.com/news/2026/october/28/carabao-cup--holders-taken-to-penalties-as-quarter-final-ties-take-shape/"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "AFC Champions League Two",
+      "home": "Al Khaldiya",
+      "away": "Al Wahda",
+      "score_90min_or_note": "1-2",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "AFC Champions League Two",
+      "home": "Al Faisaly",
+      "away": "Al Taawoun",
+      "score_90min_or_note": "0-2",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "AFC Champions League Two",
+      "home": "Al Jazira",
+      "away": "Al Muharraq",
+      "score_90min_or_note": "4-2",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html"
+    },
+    {
+      "beijing_date": "2026-10-29",
+      "competition": "AFC Champions League Two",
+      "home": "Al Nahda",
+      "away": "Al Rayyan",
+      "score_90min_or_note": "1-4",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html"
+    }
+  ],
+  "immutable_prediction_audit": {
+    "status": "BLOCKED_NO_IMMUTABLE_PREMATCH_SNAPSHOT_FOUND",
+    "repository_search": "No matching dated immutable prediction snapshot was found in the searched prediction-related paths. The available GitHub search is not a full tree enumeration.",
+    "conversation_reference_diagnostic": {
+      "matches_compared": 16,
+      "first_score_exact_hits": 2,
+      "first_score_exact_rate_pct": 12.5,
+      "second_score_exact_hits": 3,
+      "second_score_exact_rate_pct": 18.75,
+      "ninety_minute_hda_hits": 6,
+      "ninety_minute_hda_rate_pct": 37.5,
+      "note": "Diagnostic only against predictions visible in conversation; not formal audit metrics and not a substitute for immutable snapshots."
+    },
+    "official_metrics": {
+      "ninety_minute_hda": "UNVERIFIABLE_AS_FORMAL_AUDIT",
+      "first_score": "UNVERIFIABLE_AS_FORMAL_AUDIT",
+      "second_score": "UNVERIFIABLE_AS_FORMAL_AUDIT",
+      "sporttery_handicap_hda": "UNVERIFIABLE_NO_VERIFIED_SPORTTERY_LINES",
+      "half_full_time": "UNVERIFIABLE_NO_IMMUTABLE_SNAPSHOT",
+      "risk_review": "UNVERIFIABLE_NO_IMMUTABLE_RISK_SNAPSHOT"
+    }
+  },
+  "xg_weekly_status": {
+    "iso_week": "2026-W44",
+    "week_start": "2026-10-26",
+    "week_end": "2026-11-01",
+    "supplier_published_fulltime_xg_matches": 6,
+    "reviewed_matches": 30,
+    "missing_xg_matches": 24,
+    "coverage_scope": "Reviewed fixtures only, not all teams in seven core leagues",
+    "status": "PARTIAL",
+    "notes": [
+      "Sofascore and Manchester City values are supplier-published model estimates, not official measured xG.",
+      "Missing xG remains blank; no score-based inference.",
+      "Internal team IDs created; provider team/event IDs unresolved.",
+      "Raw payloads and hashes not archived.",
+      "No SQLite or remote database connected."
+    ]
+  },
+  "today_schedule_file": "fixtures/2026-10-29/schedule.json",
+  "prediction_file": "predictions/continental-club/2026-10-29/acl2-shanghai-shenhua-machida-zelvia-v5.2.json",
+  "production_safety": {
+    "formal_v5_1_changed": false,
+    "frozen_validation_samples_changed": false
+  }
 }
