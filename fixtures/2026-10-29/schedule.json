@@ -1,0 +1,202 @@
+{
+  "report_version": "daily-fixture-scan-2026-10-29",
+  "captured_at_beijing": "2026-10-29T10:02:46+08:00",
+  "scope": [
+    "EPL",
+    "La Liga",
+    "Bundesliga",
+    "Serie A",
+    "Ligue 1",
+    "K League 1",
+    "J1 League",
+    "domestic cups",
+    "AFC Champions League Elite",
+    "AFC Champions League Two",
+    "continental club competitions"
+  ],
+  "current_day_note": "All kickoff timestamps below are converted to Beijing time; several Europe-local 29 Oct matches kick off after midnight in China on 30 Oct.",
+  "upcoming_fixtures": [
+    {
+      "match_id": "match:afc-champions-league-two:2026-10-29:shanghai-shenhua:fc-machida-zelvia",
+      "competition": "AFC Champions League Two",
+      "home": "Shanghai Shenhua",
+      "away": "FC Machida Zelvia",
+      "kickoff_beijing": "2026-10-29T20:15:00+08:00",
+      "status": "PREDICTION_GENERATED_WITHIN_6_TO_12_HOUR_WINDOW",
+      "hours_before_kickoff": 10.204,
+      "source_url": "https://www.jleague.jp/en/j1/match/",
+      "market_snapshot_source": "https://stake.com/zh/sports/soccer/international-clubs/afc-cup/46823273-shanghai-shenhua-fc-machida-zelvia",
+      "market_snapshot_time_beijing": "2026-10-29T10:02:46+08:00",
+      "prediction_file": "predictions/continental-club/2026-10-29/acl2-shanghai-shenhua-machida-zelvia-v5.2.json"
+    },
+    {
+      "match_id": "match:serie-a:2026-10-29:frosinone:lecce",
+      "competition": "Serie A",
+      "home": "Frosinone",
+      "away": "Lecce",
+      "kickoff_beijing": "2026-10-30T01:30:00+08:00",
+      "competition_local_date": "2026-10-29",
+      "status": "SCHEDULE_REGISTERED_OUTSIDE_6_TO_12_HOUR_WINDOW_AT_10AM",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01",
+      "market_snapshot_status": "NOT_CAPTURED"
+    },
+    {
+      "match_id": "match:serie-a:2026-10-29:fiorentina:atalanta",
+      "competition": "Serie A",
+      "home": "Fiorentina",
+      "away": "Atalanta",
+      "kickoff_beijing": "2026-10-30T03:45:00+08:00",
+      "competition_local_date": "2026-10-29",
+      "status": "SCHEDULE_REGISTERED_OUTSIDE_6_TO_12_HOUR_WINDOW_AT_10AM",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01",
+      "market_snapshot_status": "NOT_CAPTURED"
+    },
+    {
+      "match_id": "match:efl-cup:2026-10-29:everton:newcastle-united",
+      "competition": "EFL Cup",
+      "home": "Everton",
+      "away": "Newcastle United",
+      "kickoff_beijing": "2026-10-30T03:45:00+08:00",
+      "competition_local_date": "2026-10-29",
+      "status": "SCHEDULE_REGISTERED_OUTSIDE_6_TO_12_HOUR_WINDOW_AT_10AM",
+      "source_url": "https://www.efl.com/competitions/carabao-cup/",
+      "market_snapshot_status": "NOT_CAPTURED"
+    }
+  ],
+  "completed_before_run_on_beijing_date_2026_10_29": [
+    {
+      "competition": "Serie A",
+      "home": "AC Milan",
+      "away": "Bologna",
+      "score_90min_or_note": "2-4",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "Serie A",
+      "home": "Parma",
+      "away": "Udinese",
+      "score_90min_or_note": "0-0",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "Serie A",
+      "home": "Venezia",
+      "away": "Inter Milan",
+      "score_90min_or_note": "0-2",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "Serie A",
+      "home": "Genoa",
+      "away": "Juventus",
+      "score_90min_or_note": "2-0",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "Serie A",
+      "home": "Monza",
+      "away": "Napoli",
+      "score_90min_or_note": "1-4",
+      "source_url": "https://www.skysports.com/serie-a-scores-fixtures/2026-10-01",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "EFL Cup",
+      "home": "Manchester City",
+      "away": "Brighton",
+      "score_90min_or_note": "2-2; Man City won 4-3 pens",
+      "source_url": "https://www.efl.com/news/2026/october/28/carabao-cup--holders-taken-to-penalties-as-quarter-final-ties-take-shape/",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "EFL Cup",
+      "home": "Sunderland",
+      "away": "Brentford",
+      "score_90min_or_note": "3-2",
+      "source_url": "https://www.efl.com/news/2026/october/28/carabao-cup--holders-taken-to-penalties-as-quarter-final-ties-take-shape/",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "EFL Cup",
+      "home": "Bournemouth",
+      "away": "Aston Villa",
+      "score_90min_or_note": "3-0",
+      "source_url": "https://www.efl.com/news/2026/october/28/carabao-cup--holders-taken-to-penalties-as-quarter-final-ties-take-shape/",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "EFL Cup",
+      "home": "Fulham",
+      "away": "Crystal Palace",
+      "score_90min_or_note": "0-1",
+      "source_url": "https://www.efl.com/news/2026/october/28/carabao-cup--holders-taken-to-penalties-as-quarter-final-ties-take-shape/",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "EFL Cup",
+      "home": "Liverpool",
+      "away": "Chelsea",
+      "score_90min_or_note": "1-1; Liverpool won 6-5 pens",
+      "source_url": "https://www.efl.com/news/2026/october/28/carabao-cup--holders-taken-to-penalties-as-quarter-final-ties-take-shape/",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "home": "Al Khaldiya",
+      "away": "Al Wahda",
+      "score_90min_or_note": "1-2",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "home": "Al Faisaly",
+      "away": "Al Taawoun",
+      "score_90min_or_note": "0-2",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "home": "Al Jazira",
+      "away": "Al Muharraq",
+      "score_90min_or_note": "4-2",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "home": "Al Nahda",
+      "away": "Al Rayyan",
+      "score_90min_or_note": "1-4",
+      "source_url": "https://www.the-afc.com/en/club/afc_champions_league_two.html",
+      "action": "Already completed before this run; do not issue a new prediction after kickoff."
+    }
+  ],
+  "scope_search_result": {
+    "confirmed_upcoming_core_league_fixtures": [
+      "Frosinone vs Lecce",
+      "Fiorentina vs Atalanta"
+    ],
+    "confirmed_upcoming_domestic_cup_fixtures": [
+      "Everton vs Newcastle United"
+    ],
+    "confirmed_upcoming_continental_club_fixture": [
+      "Shanghai Shenhua vs FC Machida Zelvia"
+    ],
+    "no_confirmed_fixture_found_in_pages_checked_for": [
+      "Premier League",
+      "La Liga",
+      "Bundesliga",
+      "Ligue 1",
+      "K League 1 domestic league",
+      "J1 League domestic league"
+    ],
+    "note": "Based on the official and schedule pages checked in this run; not an exhaustive all-provider feed."
+  },
+  "timing_policy": "Predict only inside the 6-12 hour pre-kickoff window; register later fixtures until they enter the window. Never invent an official Sporttery line."
+}
