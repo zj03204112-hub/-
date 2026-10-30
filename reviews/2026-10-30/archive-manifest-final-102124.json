@@ -1,0 +1,89 @@
+{
+  "report_version": "daily-football-archive-manifest-final-2026-10-30-102124",
+  "generated_at_beijing": "2026-10-30T10:21:24+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-10-30",
+  "final_status": "PARTIALLY_COMPLETE; GitHub writes and readback checks are performed for listed files, but full team-week xG coverage, official Sporttery market snapshots, raw payload hashing and database persistence remain incomplete.",
+  "previous_day_review": {
+    "date_beijing": "2026-10-29",
+    "confirmed_results": 15,
+    "match_type_split": {
+      "domestic_league": 5,
+      "domestic_cup": 5,
+      "continental_club": 5
+    },
+    "immutable_snapshots_found": 1,
+    "missing_snapshots": 14,
+    "formal_accuracy_claim": false,
+    "candidate_snapshot_diagnostic": {
+      "first_score_hit": 0,
+      "second_score_hit": 1,
+      "90m_hda_hit": 1,
+      "half_full_hit": 0,
+      "handicap": "UNVERIFIABLE"
+    }
+  },
+  "xg_weekly": {
+    "iso_week": "2026-W44",
+    "confirmed_matches_in_merged_archive": 38,
+    "unique_matches_with_verified_fulltime_xg": 13,
+    "coverage_pct": 34.21,
+    "full_seven_core_league_team_roster_coverage": false,
+    "source_specific_totals": true,
+    "unverified_shanghai_xg_excluded_from_corrected_snapshot": true,
+    "note": "The 10:15 draft snapshot and source-variant file are preserved as historical artifacts but are superseded for authoritative totals by the corrected 10:21 snapshot."
+  },
+  "schedule": {
+    "current_beijing_date": "2026-10-30",
+    "new_predictions_generated_in_10am_run": 0,
+    "reason": "No confirmed fixture was inside the strict 6–12 hour window at the 10:00 run.",
+    "active_1500_automation": "NOT_FOUND_IN_PRIOR_ACTIVE_AUTOMATION_AUDIT; no new automation created during this run."
+  },
+  "authoritative_files": [
+    "reviews/2026-10-30/previous-day-review.json",
+    "reviews/2026-10-30/xg-review-correction-102124.json",
+    "fixtures/2026-10-30/schedule.json",
+    "fixtures/2026-10-30/schedule-refresh-101536.json",
+    "fixtures/2026-10-30/schedule-window-check-101536.json",
+    "reviews/2026-10-30/current-day-results-pending_review.json",
+    "reviews/2026-10-30/current-day-results-addendum-101536.json",
+    "results/domestic-league/serie-a/2026-10-29/results-run-101536.json",
+    "results/domestic-cup/efl-cup/2026-10-29/results-run-101536.json",
+    "results/continental-club/acl2/2026-10-29/results-run-101536.json",
+    "results/other-domestic-league/brazil-serie-a/2026-10-30/early-results.json",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/match_xg_snapshot-102124-corrected.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/match_xg_source_variants-102124-corrected.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/team_weekly_xg_snapshot-102124-corrected.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/team_weekly_coverage_snapshot-102124-corrected.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/xg_coverage_audit-102124-corrected.json",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/xg_source_discrepancy_audit-102124-corrected.json"
+  ],
+  "preserved_but_superseded_drafts": [
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/match_xg_snapshot-101536.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/match_xg_source_variants-101536.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/team_weekly_xg_snapshot-101536.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/team_weekly_coverage_snapshot-101536.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/xg_coverage_audit-101536.json"
+  ],
+  "unchanged_historical_files": [
+    "data/xg_weekly/2026-W44/match_xg.csv",
+    "data/xg_weekly/2026-W44/team_weekly_xg.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/match_xg_delta.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/team_weekly_xg_delta.csv"
+  ],
+  "gaps": [
+    "14 matches in the previous-day result set lack immutable pre-match prediction snapshots.",
+    "No official Sporttery handicap/odds movement snapshot verified for the relevant matches.",
+    "Per-provider fetch timestamps, raw HTML/API payloads and SHA-256 hashes are not captured.",
+    "Some provider model versions and event IDs remain unknown.",
+    "Full-time xG remains missing for several cup/continental matches and Vasco-Flamengo.",
+    "Grêmio-Athletico final score and full-time xG remain unconfirmed in accessible sources.",
+    "The seven core league team roster for ISO week 44 is not fully enumerated.",
+    "No SQLite or remote database connection verified."
+  ],
+  "production_safety": {
+    "formal_v5_1_changed": false,
+    "frozen_validation_samples_changed": false,
+    "pre_match_xg_leakage_guard": true
+  }
+}
