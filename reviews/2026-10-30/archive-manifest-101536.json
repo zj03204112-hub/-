@@ -1,0 +1,31 @@
+{
+  "report_version": "daily-football-archive-manifest-2026-10-30-101536",
+  "generated_at_beijing": "2026-10-30T10:15:36+08:00",
+  "branch": "automation/daily-football-2026-10-30",
+  "repository": "zj03204112-hub/-",
+  "created_or_appended_files": [
+    "reviews/2026-10-30/previous-day-review.json",
+    "fixtures/2026-10-30/schedule-refresh-101536.json",
+    "reviews/2026-10-30/current-day-results-addendum-101536.json",
+    "results/domestic-league/serie-a/2026-10-29/results-run-101536.json",
+    "results/domestic-cup/efl-cup/2026-10-29/results-run-101536.json",
+    "results/continental-club/acl2/2026-10-29/results-run-101536.json",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/match_xg_snapshot-101536.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/team_weekly_xg_snapshot-101536.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/team_weekly_coverage_snapshot-101536.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/xg_coverage_audit-101536.json",
+    "data/xg_weekly/2026-W44/snapshots/2026-10-30/xg_source_discrepancy_audit-101536.json"
+  ],
+  "review": {
+    "beijing_date": "2026-10-29",
+    "confirmed_results": 15,
+    "immutable_snapshots_found": 1,
+    "formal_accuracy_claim": false
+  },
+  "production_safety": {
+    "formal_v5_1_changed": false,
+    "frozen_validation_samples_changed": false,
+    "database_connected": false,
+    "raw_payload_hashes_archived": false
+  }
+}
