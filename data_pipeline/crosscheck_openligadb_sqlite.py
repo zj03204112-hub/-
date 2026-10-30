@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Cross-check a league-season against local SQLite by date, teams and FT score; read-only."""
-import argparse, json, re, sqlite3, urllib.request, hashlib
+import argparse, json, re, sqlite3, urllib.request, hashlib, unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
 BASE="https://api.openligadb.de/getmatchdata"
 def norm(s):
-    s=(s or "").lower()
+    s=unicodedata.normalize("NFKD",(s or "").lower())
+    s="".join(ch for ch in s if not unicodedata.combining(ch))
     s=re.sub(r"[^a-z0-9]+","",s)
     return s
 def main():
@@ -43,16 +44,26 @@ def main():
       dt=(row.get("matchDateTimeUTC") or row.get("matchDateTime") or "")[:10]
       candidates=[]
       for m in local:
-        if (m["kickoff"] or "")[:10] != dt: continue
+        dbdate=(m["kickoff"] or "")[:10]
+        if not dbdate or not dt: continue
+        try:
+          delta=abs((__import__("datetime").date.fromisoformat(dbdate)-__import__("datetime").date.fromisoformat(dt)).days)
+        except ValueError:
+          continue
+        if delta > 1: continue
         if norm(m["home_team"])==home and norm(m["away_team"])==away:
+          m=dict(m); m["date_delta_days"]=delta
           candidates.append(m)
+      if len(candidates)>1:
+        min_delta=min(x["date_delta_days"] for x in candidates)
+        candidates=[x for x in candidates if x["date_delta_days"]==min_delta]
       if len(candidates)==1:
         m=candidates[0]
         if m["ft_home"]==ft["pointsTeam1"] and m["ft_away"]==ft["pointsTeam2"]:
           report["exact_matches"]+=1
         else:
           report["score_conflicts"]+=1
-        if len(report["examples"])<30: report["examples"].append({"provider_id":row.get("matchID"),"date":dt,"provider_teams":[(row.get("team1") or {}).get("teamName"),(row.get("team2") or {}).get("teamName")],"db_match_id":m["match_id"],"db_teams":[m["home_team"],m["away_team"]],"provider_score":[ft["pointsTeam1"],ft["pointsTeam2"]],"db_score":[m["ft_home"],m["ft_away"]],"status":"exact_score_match" if (m["ft_home"],m["ft_away"])==(ft["pointsTeam1"],ft["pointsTeam2"]) else "score_conflict"})
+        if len(report["examples"])<30: report["examples"].append({"provider_id":row.get("matchID"),"date":dt,"provider_teams":[(row.get("team1") or {}).get("teamName"),(row.get("team2") or {}).get("teamName")],"db_match_id":m["match_id"],"db_teams":[m["home_team"],m["away_team"]],"provider_score":[ft["pointsTeam1"],ft["pointsTeam2"]],"db_score":[m["ft_home"],m["ft_away"]],"date_delta_days":m["date_delta_days"],"status":"exact_score_match" if (m["ft_home"],m["ft_away"])==(ft["pointsTeam1"],ft["pointsTeam2"]) else "score_conflict"})
       elif len(candidates)>1:
         report["ambiguous_candidates"]+=1
       else:
