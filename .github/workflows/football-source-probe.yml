@@ -14,6 +14,7 @@ on:
   push:
     paths:
       - "data_pipeline/probe_openligadb_source.py"
+      - "data_pipeline/crosscheck_openligadb_sqlite.py"
       - ".github/workflows/football-source-probe.yml"
 
 permissions:
@@ -34,10 +35,22 @@ jobs:
           SEASON: ${{ inputs.season || '2026' }}
         run: |
           python data_pipeline/probe_openligadb_source.py --league "$LEAGUE" --season "$SEASON" --out openligadb_probe_report.json
+      - name: Cross-check against local SQLite (read-only)
+        env:
+          LEAGUE: ${{ inputs.league || 'bl1' }}
+          SEASON: ${{ inputs.season || '2026' }}
+        run: |
+          if [ "$LEAGUE" = "bl1" ]; then
+            python data_pipeline/crosscheck_openligadb_sqlite.py --league "$LEAGUE" --season "$SEASON" --competition-code BUNDESLIGA --out external_crosscheck_report.json
+          else
+            echo "No configured local competition-code mapping for $LEAGUE; source probe only." > external_crosscheck_report.json
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: openligadb-source-probe
-          path: openligadb_probe_report.json
+          path: |
+            openligadb_probe_report.json
+            external_crosscheck_report.json
           if-no-files-found: warn
           retention-days: 30
