@@ -1,0 +1,95 @@
+{
+  "report_version": "weekly-xg-coverage-audit-2026-W44-2026-10-30-101536",
+  "generated_at_beijing": "2026-10-30T10:15:36+08:00",
+  "iso_week": "2026-W44",
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "prior_full_snapshot_rows": 60,
+  "prior_daily_delta_rows": 14,
+  "source_variant_rows_added": 26,
+  "merged_team_match_provider_rows": 100,
+  "unique_match_ids": 39,
+  "confirmed_finished_unique_matches": 38,
+  "unique_matches_with_any_xg": 14,
+  "unique_match_xg_coverage_pct": 36.84,
+  "provider_discrepancies": [
+    {
+      "match": "AC Milan 2-4 Bologna",
+      "providerA": "Sofascore",
+      "xgA": "1.71-1.88",
+      "providerB": "TotalOdds",
+      "xgB": "1.97-1.99"
+    },
+    {
+      "match": "Parma 0-0 Udinese",
+      "providerA": "Sofascore",
+      "xgA": "1.04-1.35",
+      "providerB": "xGscore",
+      "xgB": "1.03-1.33"
+    },
+    {
+      "match": "Genoa 2-0 Juventus",
+      "providerA": "Sofascore",
+      "xgA": "0.97-1.21",
+      "providerB": "MatchdayGuru",
+      "xgB": "1.22-1.49"
+    },
+    {
+      "match": "Monza 1-4 Napoli",
+      "providerA": "Sofascore",
+      "xgA": "0.73-1.37",
+      "providerB": "StatsNext",
+      "xgB": "0.70-1.40"
+    },
+    {
+      "match": "Manchester City 2-2 Brighton",
+      "providerA": "Manchester City official page",
+      "xgA": "0.76-2.03",
+      "providerB": "VJStats",
+      "xgB": "1.43-1.84"
+    },
+    {
+      "match": "Fulham 0-1 Crystal Palace",
+      "providerA": "TACTIX",
+      "xgA": "1.58-0.58",
+      "providerB": "Tifolab",
+      "xgB": "1.54-0.56"
+    },
+    {
+      "match": "Frosinone 5-1 Lecce",
+      "providerA": "RatingBet",
+      "xgA": "2.79-1.10",
+      "providerB": "Flashscore",
+      "xgB": "3.07-1.45"
+    },
+    {
+      "match": "Shanghai Shenhua 0-1 Machida Zelvia",
+      "providerA": "Cornerflick prior snapshot",
+      "xgA": "1.35-0.88",
+      "providerB": "Cornerflick postmatch refresh",
+      "xgB": "1.55-1.32"
+    }
+  ],
+  "source_rules": {
+    "supplier_values_stored_separately": true,
+    "no_provider_averaging": true,
+    "post_match_xg_leakage_guard": true,
+    "missing_xg_not_inferred": true
+  },
+  "gaps": [
+    "Not all teams in EPL, La Liga, Bundesliga, Serie A, Ligue 1, K League 1 and J1 are enumerated for W44; coverage is only archived/reviewed fixtures.",
+    "Provider-specific fetch timestamps are not captured; source_fetch_time_beijing remains blank.",
+    "Raw HTML/API payloads and SHA-256 hashes are not archived.",
+    "New provider event IDs and source model versions are unresolved/undisclosed.",
+    "Full-time result and xG for Grêmio-Athletico remain unconfirmed in accessible sources.",
+    "No SQLite or remote database is connected."
+  ],
+  "files": {
+    "match_snapshot": "data/xg_weekly/2026-W44/snapshots/2026-10-30/match_xg_snapshot-101536.csv",
+    "source_variant_delta": "data/xg_weekly/2026-W44/snapshots/2026-10-30/match_xg_source_variants-101536.csv",
+    "weekly_provider_summary": "data/xg_weekly/2026-W44/snapshots/2026-10-30/team_weekly_xg_snapshot-101536.csv",
+    "team_coverage": "data/xg_weekly/2026-W44/snapshots/2026-10-30/team_weekly_coverage_snapshot-101536.csv"
+  },
+  "previous_files_unchanged": true,
+  "full_week_coverage": false
+}
