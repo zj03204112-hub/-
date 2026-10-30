@@ -77,7 +77,7 @@ def main():
     for n, item in enumerate(fixtures, 1):
         fixture = item.get("fixture", {})
         status = (fixture.get("status") or {}).get("short")
-        goals = item.get("goals") or {}
+        score = item.get("score") or {}\n        fulltime = score.get("fulltime") or {}\n        goals = item.get("goals") or {}
         teams = item.get("teams") or {}
         home, away = teams.get("home") or {}, teams.get("away") or {}
         # Keep all scheduled fixtures in the audit; actual score/result only for completed matches.
