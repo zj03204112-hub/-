@@ -1,0 +1,54 @@
+name: Enrich Premier League 2025-26 from free Understat data
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data_pipeline/enrich_premier_league_understat.py"
+      - ".github/workflows/enrich-premier-league-understat.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: enrich-premier-league-2025-understat
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install requests
+      - name: Fetch free Understat match details
+        run: python data_pipeline/enrich_premier_league_understat.py
+      - name: Commit enrichment and audit
+        run: |
+          git config user.name "football-model-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/season_match_detail/premier-league_2025_enriched.csv data/season_match_detail/premier-league_2025_enriched_audit.json data/season_match_detail_cache/understat
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git commit -m "data: enrich Premier League 2025-26 from free Understat source"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: premier-league-2025-understat-enrichment
+          path: |
+            data/season_match_detail/premier-league_2025_enriched.csv
+            data/season_match_detail/premier-league_2025_enriched_audit.json
+          if-no-files-found: warn
+          retention-days: 90
