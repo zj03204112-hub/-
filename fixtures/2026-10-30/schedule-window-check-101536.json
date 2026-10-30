@@ -1,0 +1,80 @@
+{
+  "report_version": "prediction-window-check-2026-10-30-101536",
+  "generated_at_beijing": "2026-10-30T10:15:36+08:00",
+  "rule": "Only create predictions 6-12 hours before kickoff. All times are Beijing time.",
+  "eligible_for_1500_if_task_runs": [
+    {
+      "competition": "Ligue 1",
+      "home": "Le Havre",
+      "away": "Paris Saint-Germain",
+      "kickoff_beijing": "2026-10-31T02:00:00+08:00",
+      "hours_from_1500": 11,
+      "official_sporttery_handicap": "NOT_VERIFIED",
+      "opening_to_current_market": "NOT_CAPTURED",
+      "prediction_status": "NOT_GENERATED_IN_10AM_RUN",
+      "source_url": "https://www.skysports.com/football-scores-fixtures/2026-10-30"
+    },
+    {
+      "competition": "Ligue 1",
+      "home": "Nice",
+      "away": "Rennes",
+      "kickoff_beijing": "2026-10-31T02:00:00+08:00",
+      "hours_from_1500": 11,
+      "official_sporttery_handicap": "NOT_VERIFIED",
+      "opening_to_current_market": "NOT_CAPTURED",
+      "prediction_status": "NOT_GENERATED_IN_10AM_RUN",
+      "source_url": "https://www.theguardian.com/football/fixtures/2026/Oct/30"
+    },
+    {
+      "competition": "Norwegian Eliteserien",
+      "home": "Bodø/Glimt",
+      "away": "Viking",
+      "kickoff_beijing": "2026-10-31T02:00:00+08:00",
+      "hours_from_1500": 11,
+      "official_sporttery_handicap": "NOT_VERIFIED",
+      "opening_to_current_market": "NOT_CAPTURED",
+      "prediction_status": "NOT_GENERATED_IN_10AM_RUN",
+      "source_url": "https://bbc.com.im/sport/football/european/scores-fixtures/2026-10-30"
+    }
+  ],
+  "outside_1500_window": [
+    {
+      "match": "SV Elversberg vs Mainz 05",
+      "kickoff_beijing": "2026-10-31T03:30:00+08:00",
+      "hours_from_1500": 12.5
+    },
+    {
+      "match": "Villarreal vs Espanyol",
+      "kickoff_beijing": "2026-10-31T04:00:00+08:00",
+      "hours_from_1500": 13
+    },
+    {
+      "match": "Sheffield United vs Wrexham",
+      "kickoff_beijing": "2026-10-31T04:00:00+08:00",
+      "hours_from_1500": 13
+    },
+    {
+      "match": "Lille vs Lens",
+      "kickoff_beijing": "2026-10-31T04:05:00+08:00",
+      "hours_from_1500": 13.083
+    },
+    {
+      "match": "Casa Pia vs Sporting CP",
+      "kickoff_beijing": "2026-10-31T04:15:00+08:00",
+      "hours_from_1500": 13.25
+    },
+    {
+      "match": "Corinthians vs Mirassol",
+      "kickoff_beijing": "2026-10-31T07:00:00+08:00",
+      "hours_from_1500": 16
+    }
+  ],
+  "future_k1_j1": "31 Oct local matches are more than 20 hours away at 15:00 Beijing; register only, no prediction yet.",
+  "automation_status": "The existing audit found no active 15:00 prediction automation. This run did not create a new automation; only the daily 10:00 task is confirmed.",
+  "required_before_prediction": [
+    "Recheck kickoff time",
+    "Capture official Sporttery handicap and opening/current line snapshots",
+    "Capture recent form and pre-match xG snapshot",
+    "Verify starting lineups/injuries, referee, weather, tactics/news and next-match motivation"
+  ]
+}
