@@ -1,0 +1,48 @@
+{
+  "report_version": "weekly-xg-coverage-audit-2026-W44-delta-2026-10-30-v1",
+  "generated_at_beijing": "2026-10-30T10:04:29+08:00",
+  "iso_week": "2026-W44",
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "immutable_previous_snapshot": "data/xg_weekly/2026-W44/match_xg.csv",
+  "previous_snapshot_status": {
+    "reviewed_matches": 30,
+    "matches_with_supplier_published_fulltime_xg": 6,
+    "matches_missing_fulltime_xg": 24,
+    "team_match_rows": 60,
+    "team_match_rows_with_xg": 12,
+    "coverage_pct": 20
+  },
+  "daily_delta": {
+    "matches_seen": 7,
+    "completed_matches": 6,
+    "completed_matches_with_postmatch_xg": 4,
+    "completed_matches_missing_verified_xg": 2,
+    "in_progress_or_final_status_unconfirmed": 1,
+    "team_match_rows": 14,
+    "team_match_rows_with_xg": 8,
+    "team_match_rows_missing_xg_for_completed_matches": 4,
+    "team_match_rows_pending_fulltime": 2,
+    "team_match_xg_coverage_pct_among_completed_delta_rows": 66.6667,
+    "match_level_file": "data/xg_weekly/2026-W44/snapshots/2026-10-30/match_xg_delta.csv",
+    "team_weekly_delta_file": "data/xg_weekly/2026-W44/snapshots/2026-10-30/team_weekly_xg_delta.csv"
+  },
+  "combined_reviewed_matches_if_all_delta_matches_confirmed_except_pending": 36,
+  "combined_fulltime_xg_matches": 10,
+  "combined_xg_coverage_pct_of_36_completed_matches": 27.7778,
+  "status": "PARTIAL_NOT_ALL_TRACKED_TEAMS_OR_WEEKS_COVERED",
+  "source_distinction": "All newly available xG values are third-party published model estimates with provider model versions undisclosed; they are post-match observations, not official measured xG and must not be used as pre-match features for these same matches.",
+  "missing_rules": [
+    "Inter Turku vs HJK: no verified full-time xG located; pre-match projected xG was not substituted.",
+    "Everton vs Newcastle: no verified full-time xG found in accessible reliable report.",
+    "Grêmio vs Athletico Paranaense: full-time status inconsistent at capture; no partial score/xG was treated as final."
+  ],
+  "integrity_gaps": [
+    "Raw HTML/API payloads and SHA-256 digests not archived.",
+    "Exact provider fetch timestamps and provider event IDs are unavailable; run capture time is recorded separately.",
+    "Provider model versions are not disclosed by the consulted pages.",
+    "This is a daily delta, not a full all-team snapshot for all seven core leagues.",
+    "No SQLite or remote database connection was verified."
+  ],
+  "pre_match_leakage_guard": "Do not backfill these post-match xG values into pre-match prediction snapshots. Historical snapshots are append-only; previous W44 files remain unchanged."
+}
