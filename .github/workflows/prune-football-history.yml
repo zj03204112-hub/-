@@ -1,0 +1,70 @@
+name: Prune football history to rolling three years
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data_pipeline/prune_football_history.py"
+      - ".github/workflows/prune-football-history.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: football-history-retention
+  cancel-in-progress: false
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify database exists and create retention backup
+        run: |
+          test -f football_model_database.sqlite
+          cp football_model_database.sqlite /tmp/football_model_database_pre_retention.sqlite
+          sha256sum football_model_database.sqlite | tee database_sha256_before.txt
+
+      - name: Prune rows older than three years
+        env:
+          FOOTBALL_DB_PATH: football_model_database.sqlite
+          RETENTION_AS_OF: ${{ github.event.repository.updated_at || '' }}
+        run: |
+          # Use UTC current date for a deterministic rolling three-year cutoff.
+          RETENTION_AS_OF="$(date -u +%F)" python data_pipeline/prune_football_history.py
+          sha256sum football_model_database.sqlite | tee database_sha256_after.txt
+
+      - name: Commit pruned database
+        run: |
+          git config user.name "football-model-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add football_model_database.sqlite
+          if git diff --cached --quiet; then
+            echo "No historical rows older than the cutoff were found."
+            exit 0
+          fi
+          git commit -m "data: prune football matches older than three years"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: football-three-year-retention-audit
+          path: |
+            retention_cleanup_report.json
+            database_sha256_before.txt
+            database_sha256_after.txt
+            /tmp/football_model_database_pre_retention.sqlite
+          if-no-files-found: warn
+          retention-days: 90
