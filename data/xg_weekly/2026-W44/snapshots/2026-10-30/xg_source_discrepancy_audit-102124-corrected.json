@@ -1,0 +1,116 @@
+{
+  "report_version": "xg-source-discrepancy-audit-2026-10-30-102124-corrected",
+  "generated_at_beijing": "2026-10-30T10:21:24+08:00",
+  "variants": [
+    {
+      "match": "AC Milan 2-4 Bologna",
+      "sources": [
+        {
+          "provider": "Sofascore",
+          "xg": "1.71-1.88"
+        },
+        {
+          "provider": "TotalOdds",
+          "xg": "1.97-1.99"
+        }
+      ]
+    },
+    {
+      "match": "Parma 0-0 Udinese",
+      "sources": [
+        {
+          "provider": "Sofascore",
+          "xg": "1.04-1.35"
+        },
+        {
+          "provider": "xGscore",
+          "xg": "1.03-1.33"
+        }
+      ]
+    },
+    {
+      "match": "Genoa 2-0 Juventus",
+      "sources": [
+        {
+          "provider": "Sofascore",
+          "xg": "0.97-1.21"
+        },
+        {
+          "provider": "MatchdayGuru",
+          "xg": "1.22-1.49"
+        }
+      ]
+    },
+    {
+      "match": "Monza 1-4 Napoli",
+      "sources": [
+        {
+          "provider": "Sofascore",
+          "xg": "0.73-1.37"
+        },
+        {
+          "provider": "StatsNext",
+          "xg": "0.70-1.40"
+        }
+      ]
+    },
+    {
+      "match": "Manchester City 2-2 Brighton",
+      "sources": [
+        {
+          "provider": "Manchester City official page",
+          "xg": "0.76-2.03"
+        },
+        {
+          "provider": "VJStats",
+          "xg": "1.43-1.84"
+        }
+      ]
+    },
+    {
+      "match": "Fulham 0-1 Crystal Palace",
+      "sources": [
+        {
+          "provider": "TACTIX",
+          "xg": "1.58-0.58"
+        },
+        {
+          "provider": "Tifolab",
+          "xg": "1.54-0.56"
+        }
+      ]
+    },
+    {
+      "match": "Frosinone 5-1 Lecce",
+      "sources": [
+        {
+          "provider": "RatingBet",
+          "xg": "2.79-1.10"
+        },
+        {
+          "provider": "Flashscore",
+          "xg": "3.07-1.45"
+        }
+      ]
+    },
+    {
+      "match": "Shanghai Shenhua 0-1 Machida Zelvia",
+      "sources": [
+        {
+          "provider": "Cornerflick prior row",
+          "xg": "1.35-0.88",
+          "status": "UNVERIFIED_FULLTIME_NOT_COUNTED"
+        },
+        {
+          "provider": "Uncorroborated attempted refresh",
+          "xg": "1.55-1.32",
+          "status": "RETRACTED_FROM_AUTHORITATIVE_SNAPSHOT"
+        }
+      ]
+    }
+  ],
+  "policy": "Do not average xG across providers or snapshot times. Store source-specific values separately; when full-time status is not proven, mark missing/unverified rather than using an in-play observation.",
+  "no_postmatch_leakage": true,
+  "raw_payloads_archived": false,
+  "per_provider_fetch_times_captured": false
+}
