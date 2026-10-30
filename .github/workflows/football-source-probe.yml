@@ -1,0 +1,43 @@
+name: Probe free football data source
+
+on:
+  workflow_dispatch:
+    inputs:
+      league:
+        description: OpenLigaDB league shortcut
+        required: true
+        default: bl1
+      season:
+        description: Season start year
+        required: true
+        default: "2026"
+  push:
+    paths:
+      - "data_pipeline/probe_openligadb_source.py"
+      - ".github/workflows/football-source-probe.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe OpenLigaDB (no database writes)
+        env:
+          LEAGUE: ${{ inputs.league || 'bl1' }}
+          SEASON: ${{ inputs.season || '2026' }}
+        run: |
+          python data_pipeline/probe_openligadb_source.py --league "$LEAGUE" --season "$SEASON" --out openligadb_probe_report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: openligadb-source-probe
+          path: openligadb_probe_report.json
+          if-no-files-found: warn
+          retention-days: 30
