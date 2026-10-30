@@ -28,8 +28,8 @@ def main():
       WHERE c.competition_code=?""",(a.competition_code,))]
     report={"timestamp_utc":datetime.now(timezone.utc).isoformat(),"provider":"OpenLigaDB","url":url,
       "payload_sha256":hashlib.sha256(raw).hexdigest(),"league_code":a.competition_code,
-      "provider_records":len(data),"provider_finished_scored":0,"exact_matches":0,
-      "score_conflicts":0,"unmatched_provider_records":0,"ambiguous_candidates":0,"examples":[],
+      "provider_records":len(data),"local_competition_records":len(local),"local_date_min":min([x["kickoff"] for x in local if x["kickoff"]],default=None),"local_date_max":max([x["kickoff"] for x in local if x["kickoff"]],default=None),"provider_finished_scored":0,"exact_matches":0,
+      "score_conflicts":0,"unmatched_provider_records":0,"ambiguous_candidates":0,"examples":[],"unmatched_examples":[],
       "limitations":["Community-maintained source; this is a cross-check, not official verification.",
       "Team names and kickoff time formats differ across sources; only exact normalized team/date/score matches count as exact.",
       "No database writes are performed."]}
@@ -68,6 +68,8 @@ def main():
         report["ambiguous_candidates"]+=1
       else:
         report["unmatched_provider_records"]+=1
+        if len(report["unmatched_examples"])<25:
+          report["unmatched_examples"].append({"provider_id":row.get("matchID"),"date":dt,"teams":[(row.get("team1") or {}).get("teamName"),(row.get("team2") or {}).get("teamName")],"score":[ft["pointsTeam1"],ft["pointsTeam2"]],"same_team_candidates":[{"date":m["kickoff"],"home":m["home_team"],"away":m["away_team"],"score":[m["ft_home"],m["ft_away"]]} for m in local if norm(m["home_team"])==home and norm(m["away_team"])==away][:3]})
     Path(a.out).write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(report,ensure_ascii=False,indent=2))
     con.close()
