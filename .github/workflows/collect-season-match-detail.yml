@@ -1,0 +1,84 @@
+name: Collect season scores lineups and xG
+
+on:
+  workflow_dispatch:
+    inputs:
+      league:
+        description: League key
+        required: true
+        type: choice
+        options:
+          - premier-league
+          - la-liga
+          - bundesliga
+          - serie-a
+          - ligue-1
+          - kleague1
+          - j1
+        default: premier-league
+      season:
+        description: Season start year (2025 = 2025-26, 2026 = 2026-27)
+        required: true
+        type: choice
+        options:
+          - "2025"
+          - "2026"
+        default: "2025"
+  push:
+    paths:
+      - "data_pipeline/fetch_season_results_lineups_xg.py"
+      - ".github/workflows/collect-season-match-detail.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: season-detail-${{ inputs.league || 'premier-league' }}-${{ inputs.season || '2025' }}
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Collect season match details
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          LEAGUE_KEY: ${{ inputs.league || 'premier-league' }}
+          SEASON: ${{ inputs.season || '2025' }}
+          REQUEST_PAUSE_SECONDS: "0.35"
+        run: python data_pipeline/fetch_season_results_lineups_xg.py
+
+      - name: Commit season dataset and audit
+        run: |
+          git config user.name "football-model-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/season_match_detail
+          if git diff --cached --quiet; then
+            echo "No new season data changes."
+            exit 0
+          fi
+          git commit -m "data: collect ${{ inputs.league || 'premier-league' }} season ${{ inputs.season || '2025' }} match details"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: season-match-detail-${{ inputs.league || 'premier-league' }}-${{ inputs.season || '2025' }}
+          path: data/season_match_detail/
+          if-no-files-found: warn
+          retention-days: 90
