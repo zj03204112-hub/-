@@ -77,12 +77,13 @@ def main():
     for n, item in enumerate(fixtures, 1):
         fixture = item.get("fixture", {})
         status = (fixture.get("status") or {}).get("short")
-        score = item.get("score") or {}\n        fulltime = score.get("fulltime") or {}\n        goals = item.get("goals") or {}
+        score = item.get("score") or {}
+        fulltime = score.get("fulltime") or {}
         teams = item.get("teams") or {}
         home, away = teams.get("home") or {}, teams.get("away") or {}
         # Keep all scheduled fixtures in the audit; actual score/result only for completed matches.
         completed = status in {"FT", "AET", "PEN"}
-        hg, ag = (goals.get("home"), goals.get("away")) if completed else (None, None)
+        hg, ag = (fulltime.get("home"), fulltime.get("away")) if completed else (None, None)
         outcome = ("H" if hg > ag else "D" if hg == ag else "A") if hg is not None and ag is not None else None
         row = {
             "fixture_id": fixture.get("id"), "league": league_name, "league_id": league_id,
