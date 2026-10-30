@@ -1,0 +1,77 @@
+{
+  "report_version": "xg-source-discrepancy-audit-2026-10-30-101536",
+  "generated_at_beijing": "2026-10-30T10:15:36+08:00",
+  "policy": "Keep provider and capture versions separate; do not average or overwrite different xG estimates.",
+  "variants": [
+    {
+      "match": "AC Milan 2-4 Bologna",
+      "providerA": "Sofascore",
+      "xgA": "1.71-1.88",
+      "providerB": "TotalOdds",
+      "xgB": "1.97-1.99"
+    },
+    {
+      "match": "Parma 0-0 Udinese",
+      "providerA": "Sofascore",
+      "xgA": "1.04-1.35",
+      "providerB": "xGscore",
+      "xgB": "1.03-1.33"
+    },
+    {
+      "match": "Genoa 2-0 Juventus",
+      "providerA": "Sofascore",
+      "xgA": "0.97-1.21",
+      "providerB": "MatchdayGuru",
+      "xgB": "1.22-1.49"
+    },
+    {
+      "match": "Monza 1-4 Napoli",
+      "providerA": "Sofascore",
+      "xgA": "0.73-1.37",
+      "providerB": "StatsNext",
+      "xgB": "0.70-1.40"
+    },
+    {
+      "match": "Manchester City 2-2 Brighton",
+      "providerA": "Manchester City official page",
+      "xgA": "0.76-2.03",
+      "providerB": "VJStats",
+      "xgB": "1.43-1.84"
+    },
+    {
+      "match": "Fulham 0-1 Crystal Palace",
+      "providerA": "TACTIX",
+      "xgA": "1.58-0.58",
+      "providerB": "Tifolab",
+      "xgB": "1.54-0.56"
+    },
+    {
+      "match": "Frosinone 5-1 Lecce",
+      "providerA": "RatingBet",
+      "xgA": "2.79-1.10",
+      "providerB": "Flashscore",
+      "xgB": "3.07-1.45"
+    },
+    {
+      "match": "Shanghai Shenhua 0-1 Machida Zelvia",
+      "providerA": "Cornerflick prior snapshot",
+      "xgA": "1.35-0.88",
+      "providerB": "Cornerflick postmatch refresh",
+      "xgB": "1.55-1.32"
+    }
+  ],
+  "missing_xg": [
+    "Sunderland-Brentford",
+    "Bournemouth-Aston Villa",
+    "Al Khaldiya-Al Wahda",
+    "Al Faisaly-Al Taawoun",
+    "Al Jazira-Al Muharraq",
+    "Al Nahda-Al Rayyan",
+    "Vasco da Gama-Flamengo"
+  ],
+  "pending": [
+    "Grêmio-Athletico Paranaense: final score and full-time xG not confirmed."
+  ],
+  "raw_payloads_archived": false,
+  "per_provider_fetch_times_captured": false
+}
