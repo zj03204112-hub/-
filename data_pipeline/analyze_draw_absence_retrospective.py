@@ -10,9 +10,9 @@ OUT = os.environ.get("DRAW_ABSENCE_OUT", "data/draw_absence_retrospective_128.js
 def main():
     con = sqlite3.connect(DB)
     rows = con.execute("""
-      SELECT m.match_id,m.kickoff,m.home_team,m.away_team,r.home_score,r.away_score
+      SELECT m.match_id,m.kickoff,m.home_team,m.away_team,r.ft_home,r.ft_away
       FROM matches m JOIN results r ON r.match_id=m.match_id
-      WHERE m.status='finished' AND r.home_score=r.away_score
+      WHERE m.status='finished' AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL AND r.ft_home=r.ft_away
       ORDER BY m.kickoff DESC,m.match_id DESC LIMIT ?
     """, (N,)).fetchall()
 
