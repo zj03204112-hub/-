@@ -1,0 +1,64 @@
+{
+  "provider": "openfootball/football.json",
+  "source_url": "https://github.com/openfootball/football.json/blob/master/2025-26/en.1.json",
+  "source_license_note": "Source project describes its data as public domain; verify project terms before redistribution or commercial use.",
+  "league": "Premier League",
+  "season": "2025-26",
+  "collected_at_utc": "2026-10-30T18:08:36.201Z",
+  "fixtures_in_source": 380,
+  "rows_with_full_time_score": 380,
+  "score_coverage_pct": 100,
+  "rows_with_result_label": 380,
+  "rows_with_both_starting_xi": 0,
+  "rows_with_both_actual_appearances": 0,
+  "rows_with_both_team_xg": 0,
+  "rows_with_both_team_xga": 0,
+  "field_coverage": {
+    "score_and_result": {
+      "count": 380,
+      "total": 380,
+      "pct": 100,
+      "status": "verified_from_public_dataset"
+    },
+    "starting_xi": {
+      "count": 0,
+      "total": 380,
+      "pct": 0,
+      "status": "not_provided_by_this_source"
+    },
+    "actual_player_appearances": {
+      "count": 0,
+      "total": 380,
+      "pct": 0,
+      "status": "not_provided_by_this_source"
+    },
+    "xg": {
+      "count": 0,
+      "total": 380,
+      "pct": 0,
+      "status": "not_provided_by_this_source"
+    },
+    "xga": {
+      "count": 0,
+      "total": 380,
+      "pct": 0,
+      "status": "not_provided_by_this_source"
+    }
+  },
+  "missing_data_policy": "No missing lineups, player appearances, xG or xGA have been imputed. Null values remain null.",
+  "next_sources_to_validate": [
+    {
+      "source": "Understat",
+      "purpose": "match-level shot xG and match rosters, no API key shown in public interface; automated access and completeness still need validation."
+    },
+    {
+      "source": "StrikerAPI",
+      "purpose": "documented results, lineups, player appearances, shot xG; free tier 500 credits/month and requires user API key. Likely insufficient for one-call-per-match coverage of all 380 matches at 5 credits per lineup call."
+    }
+  ],
+  "limitations": [
+    "This is an initial public-source score baseline only, not the requested complete match-detail dataset.",
+    "Need cross-check whether all 380 listed fixtures are actually completed; source currently supplies a full-time score field for all rows, so verify scheduled/status semantics against a second source before treating all as final.",
+    "No official/provider match IDs have been mapped yet."
+  ]
+}
