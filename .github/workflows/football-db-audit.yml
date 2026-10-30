@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "data_pipeline/audit_existing_sqlite_readonly.py"
+      - "data_pipeline/audit_existing_sqlite_relations.py"
       - ".github/workflows/football-db-audit.yml"
 
 permissions:
@@ -23,17 +24,20 @@ jobs:
         shell: bash
         run: |
           find . -type f \( -name 'football_model_database.sqlite' -o -name '*.sqlite' -o -name '*.db' \) -printf '%p %s bytes\n' | sort | tee database_files.txt
-      - name: Run read-only audit
+      - name: Run existing read-only audit
         env:
           FOOTBALL_DB_PATH: football_model_database.sqlite
           AUDIT_OUT: database_audit_report.json
         run: python data_pipeline/audit_existing_sqlite_readonly.py
+      - name: Run relational integrity audit
+        run: python data_pipeline/audit_existing_sqlite_relations.py | tee database_relational_audit.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: football-db-read-only-audit
           path: |
             database_audit_report.json
+            database_relational_audit.json
             database_files.txt
           if-no-files-found: warn
           retention-days: 30
