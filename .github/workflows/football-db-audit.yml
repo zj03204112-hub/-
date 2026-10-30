@@ -1,0 +1,39 @@
+name: Read-only football SQLite audit
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data_pipeline/audit_existing_sqlite_readonly.py"
+      - ".github/workflows/football-db-audit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Locate database without modifying it
+        shell: bash
+        run: |
+          find . -type f \( -name 'football_model_database.sqlite' -o -name '*.sqlite' -o -name '*.db' \) -printf '%p %s bytes\n' | sort | tee database_files.txt
+      - name: Run read-only audit
+        env:
+          FOOTBALL_DB_PATH: football_model_database.sqlite
+          AUDIT_OUT: database_audit_report.json
+        run: python data_pipeline/audit_existing_sqlite_readonly.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: football-db-read-only-audit
+          path: |
+            database_audit_report.json
+            database_files.txt
+          if-no-files-found: warn
+          retention-days: 30
