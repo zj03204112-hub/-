@@ -1,0 +1,96 @@
+{
+  "report_version": "daily-fixture-scan-refresh-2026-10-30-101536",
+  "generated_at_beijing": "2026-10-30T10:15:36+08:00",
+  "beijing_date": "2026-10-30",
+  "prior_schedule_snapshot": "fixtures/2026-10-30/schedule.json",
+  "additional_current_day_results": "reviews/2026-10-30/current-day-results-addendum-101536.json",
+  "next_day_fixtures_added": [
+    {
+      "competition": "K League 1",
+      "home": "Pohang Steelers",
+      "away": "Jeju SK",
+      "kickoff_beijing": "2026-11-01T13:00:00+08:00",
+      "source_url": "https://www.kleague.com/news_view.do?orderBy=seq&page=1&seq=96653&viewOption=album",
+      "status": "REGISTER_ONLY_OUTSIDE_6_TO_12_HOUR_WINDOW",
+      "official_sporttery_handicap": "NOT_VERIFIED",
+      "opening_to_current": "NOT_CAPTURED"
+    },
+    {
+      "competition": "K League 1",
+      "home": "Ulsan HD",
+      "away": "Gangwon FC",
+      "kickoff_beijing": "2026-11-01T13:00:00+08:00",
+      "source_url": "https://www.kleague.com/news_view.do?orderBy=seq&page=1&seq=96653&viewOption=album",
+      "status": "REGISTER_ONLY_OUTSIDE_6_TO_12_HOUR_WINDOW",
+      "official_sporttery_handicap": "NOT_VERIFIED",
+      "opening_to_current": "NOT_CAPTURED"
+    },
+    {
+      "competition": "K League 1",
+      "home": "FC Seoul",
+      "away": "Incheon United",
+      "kickoff_beijing": "2026-11-01T15:30:00+08:00",
+      "source_url": "https://www.kleague.com/news_view.do?orderBy=seq&page=1&seq=96653&viewOption=album",
+      "status": "REGISTER_ONLY_OUTSIDE_6_TO_12_HOUR_WINDOW",
+      "official_sporttery_handicap": "NOT_VERIFIED",
+      "opening_to_current": "NOT_CAPTURED"
+    },
+    {
+      "competition": "K League 1",
+      "home": "FC Anyang",
+      "away": "Bucheon FC 1995",
+      "kickoff_beijing": "2026-11-01T15:30:00+08:00",
+      "source_url": "https://www.kleague.com/news_view.do?orderBy=seq&page=1&seq=96653&viewOption=album",
+      "status": "REGISTER_ONLY_OUTSIDE_6_TO_12_HOUR_WINDOW",
+      "official_sporttery_handicap": "NOT_VERIFIED",
+      "opening_to_current": "NOT_CAPTURED"
+    },
+    {
+      "competition": "J1 League",
+      "home": "Yokohama F. Marinos",
+      "away": "Kawasaki Frontale",
+      "kickoff_beijing": "2026-11-01T12:00:00+08:00",
+      "source_url": "https://www.jleague.jp/en/j1/match/search-list/?category=j1&enddate=2026-11-01&period=custom&startdate=2026-10-31",
+      "status": "REGISTER_ONLY_OUTSIDE_6_TO_12_HOUR_WINDOW",
+      "official_sporttery_handicap": "NOT_VERIFIED",
+      "opening_to_current": "NOT_CAPTURED"
+    },
+    {
+      "competition": "J1 League",
+      "home": "JEF United Chiba",
+      "away": "Avispa Fukuoka",
+      "kickoff_beijing": "2026-11-01T13:00:00+08:00",
+      "source_url": "https://www.jleague.jp/en/j1/match/search-list/?category=j1&enddate=2026-11-01&period=custom&startdate=2026-10-31",
+      "status": "REGISTER_ONLY_OUTSIDE_6_TO_12_HOUR_WINDOW",
+      "official_sporttery_handicap": "NOT_VERIFIED",
+      "opening_to_current": "NOT_CAPTURED"
+    },
+    {
+      "competition": "J1 League",
+      "home": "V-Varen Nagasaki",
+      "away": "Tokyo Verdy",
+      "kickoff_beijing": "2026-11-01T13:00:00+08:00",
+      "source_url": "https://www.jleague.jp/en/j1/match/search-list/?category=j1&enddate=2026-11-01&period=custom&startdate=2026-10-31",
+      "status": "REGISTER_ONLY_OUTSIDE_6_TO_12_HOUR_WINDOW",
+      "official_sporttery_handicap": "NOT_VERIFIED",
+      "opening_to_current": "NOT_CAPTURED"
+    },
+    {
+      "competition": "J1 League",
+      "home": "FC Machida Zelvia",
+      "away": "Gamba Osaka",
+      "kickoff_beijing": "2026-11-01T15:00:00+08:00",
+      "source_url": "https://www.jleague.jp/en/j1/match/search-list/?category=j1&enddate=2026-11-01&period=custom&startdate=2026-10-31",
+      "status": "REGISTER_ONLY_OUTSIDE_6_TO_12_HOUR_WINDOW",
+      "official_sporttery_handicap": "NOT_VERIFIED",
+      "opening_to_current": "NOT_CAPTURED"
+    }
+  ],
+  "prediction_status": "No new prediction generated at 10:00 because the next confirmed fixtures were outside the 6–12 hour window.",
+  "active_1500_automation": "NOT_FOUND_IN_ACTIVE_AUTOMATIONS in the prior audit; this run did not create a new automation.",
+  "data_gaps": [
+    "Official Sporttery handicap lines and opening-to-current history not captured.",
+    "Lineups, injuries, weather, referee and pre-match xG deferred until the prediction window.",
+    "Source fetch timestamps and raw payload hashes not captured."
+  ]
+}
