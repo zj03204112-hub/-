@@ -1,0 +1,54 @@
+name: Import secondary Premier League lineups 2025-26
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data_pipeline/import_premier_league_lineups_secondary.py"
+      - ".github/workflows/import-premier-league-lineups-secondary.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-premier-league-lineups-secondary
+  cancel-in-progress: false
+
+jobs:
+  import-lineups:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install requests
+      - name: Import and audit pinned secondary lineup data
+        run: python data_pipeline/import_premier_league_lineups_secondary.py
+      - name: Commit lineup data and audit
+        run: |
+          git config user.name "football-model-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/season_match_detail/premier-league_2025_lineups_secondary.csv data/season_match_detail/premier-league_2025_lineups_audit.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git commit -m "data: import and audit EPL 2025-26 lineups"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: premier-league-2025-secondary-lineups
+          path: |
+            data/season_match_detail/premier-league_2025_lineups_secondary.csv
+            data/season_match_detail/premier-league_2025_lineups_audit.json
+          if-no-files-found: warn
+          retention-days: 90
