@@ -1,0 +1,62 @@
+{
+  "provider": "openfootball/football.json",
+  "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/en.1.json",
+  "league": "Premier League",
+  "season": "2024-25",
+  "collected_at_utc": "2026-10-31T08:00:00Z",
+  "expected_matches": 380,
+  "imported_rows": 380,
+  "unique_match_keys": 380,
+  "rows_with_full_time_score": 380,
+  "score_coverage_pct": 100,
+  "rows_with_result_label": 380,
+  "rows_with_both_starting_xi": 0,
+  "rows_with_both_actual_appearances": 0,
+  "rows_with_substitution_events": 0,
+  "rows_with_both_team_xg": 0,
+  "rows_with_both_team_xga": 0,
+  "field_coverage": {
+    "score_and_result": {
+      "count": 380,
+      "total": 380,
+      "pct": 100,
+      "status": "source_dataset_only_not_independently_cross_checked"
+    },
+    "starting_xi": {
+      "count": 0,
+      "total": 380,
+      "pct": 0,
+      "status": "not_provided_by_this_source"
+    },
+    "actual_player_appearances": {
+      "count": 0,
+      "total": 380,
+      "pct": 0,
+      "status": "not_provided_by_this_source"
+    },
+    "substitution_events_and_minutes": {
+      "count": 0,
+      "total": 380,
+      "pct": 0,
+      "status": "not_provided_by_this_source"
+    },
+    "xg": {
+      "count": 0,
+      "total": 380,
+      "pct": 0,
+      "status": "not_provided_by_this_source"
+    },
+    "xga": {
+      "count": 0,
+      "total": 380,
+      "pct": 0,
+      "status": "not_provided_by_this_source"
+    }
+  },
+  "missing_data_policy": "No missing lineup, appearance, substitution, xG or xGA values are imputed; blank fields remain blank.",
+  "limitations": [
+    "Score/result rows are imported from one public dataset and have not yet been independently cross-checked match-by-match against official or second reliable source.",
+    "This is not a complete match-detail dataset: lineups, actual appearances, substitution events/minutes, xG/xGA and stable provider match IDs remain missing.",
+    "Match identity currently relies on season, round, date, home team and away team; no stable provider match ID is supplied by this source."
+  ]
+}
