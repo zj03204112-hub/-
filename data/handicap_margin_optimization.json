@@ -1,7 +1,7 @@
 {
   "status": "completed",
   "model": "v4",
-  "sample_n": 950,
+  "sample_n": 562,
   "method": "training-only empirical outcome calibration conditioned on expected goal margin and handicap line",
   "weights": [
     0.0,
@@ -13,324 +13,324 @@
   "folds": [
     {
       "fold": 1,
-      "train_n": 380,
-      "test_n": 142,
-      "test_start": "2023-10-22T17:00",
-      "test_end": "2024-05-19T16:00",
+      "train_n": 224,
+      "test_n": 84,
+      "test_start": "2024-12-22T11:30",
+      "test_end": "2025-04-20T19:45",
       "overall": {
         "0.0": {
-          "n": 142,
-          "accuracy": 0.3451
+          "n": 84,
+          "accuracy": 0.5476
         },
         "0.15": {
-          "n": 142,
-          "accuracy": 0.3451
+          "n": 84,
+          "accuracy": 0.5476
         },
         "0.25": {
-          "n": 142,
-          "accuracy": 0.3451
+          "n": 84,
+          "accuracy": 0.5476
         },
         "0.35": {
-          "n": 142,
-          "accuracy": 0.3451
+          "n": 84,
+          "accuracy": 0.5476
         },
         "0.5": {
-          "n": 142,
-          "accuracy": 0.3451
+          "n": 84,
+          "accuracy": 0.5238
         }
       },
       "pm1": {
         "0.0": {
           "-1": {
-            "n": 77,
-            "accuracy": 0.3896
+            "n": 54,
+            "accuracy": 0.5
           },
           "1": {
-            "n": 37,
-            "accuracy": 0.1622
+            "n": 21,
+            "accuracy": 0.7143
           }
         },
         "0.15": {
           "-1": {
-            "n": 77,
-            "accuracy": 0.3896
+            "n": 54,
+            "accuracy": 0.5
           },
           "1": {
-            "n": 37,
-            "accuracy": 0.1622
+            "n": 21,
+            "accuracy": 0.7143
           }
         },
         "0.25": {
           "-1": {
-            "n": 77,
-            "accuracy": 0.3896
+            "n": 54,
+            "accuracy": 0.5
           },
           "1": {
-            "n": 37,
-            "accuracy": 0.1622
+            "n": 21,
+            "accuracy": 0.7143
           }
         },
         "0.35": {
           "-1": {
-            "n": 77,
-            "accuracy": 0.3896
+            "n": 54,
+            "accuracy": 0.5
           },
           "1": {
-            "n": 37,
-            "accuracy": 0.1622
+            "n": 21,
+            "accuracy": 0.7143
           }
         },
         "0.5": {
           "-1": {
-            "n": 77,
-            "accuracy": 0.3896
+            "n": 54,
+            "accuracy": 0.5
           },
           "1": {
-            "n": 37,
-            "accuracy": 0.1622
+            "n": 21,
+            "accuracy": 0.619
           }
         }
       }
     },
     {
       "fold": 2,
-      "train_n": 522,
-      "test_n": 142,
-      "test_start": "2024-05-19T18:00",
-      "test_end": "2025-03-08T13:00",
+      "train_n": 308,
+      "test_n": 84,
+      "test_start": "2025-04-24T20:30",
+      "test_end": "2025-10-28T17:30",
       "overall": {
         "0.0": {
-          "n": 142,
-          "accuracy": 0.4437
+          "n": 84,
+          "accuracy": 0.2976
         },
         "0.15": {
-          "n": 142,
-          "accuracy": 0.4437
+          "n": 84,
+          "accuracy": 0.2976
         },
         "0.25": {
-          "n": 142,
-          "accuracy": 0.4507
+          "n": 84,
+          "accuracy": 0.2976
         },
         "0.35": {
-          "n": 142,
-          "accuracy": 0.4507
+          "n": 84,
+          "accuracy": 0.2976
         },
         "0.5": {
-          "n": 142,
-          "accuracy": 0.4507
+          "n": 84,
+          "accuracy": 0.3214
         }
       },
       "pm1": {
         "0.0": {
           "-1": {
-            "n": 77,
-            "accuracy": 0.4156
+            "n": 40,
+            "accuracy": 0.375
           },
           "1": {
-            "n": 42,
-            "accuracy": 0.5
+            "n": 23,
+            "accuracy": 0.2609
           }
         },
         "0.15": {
           "-1": {
-            "n": 77,
-            "accuracy": 0.4156
+            "n": 40,
+            "accuracy": 0.375
           },
           "1": {
-            "n": 42,
-            "accuracy": 0.5
+            "n": 23,
+            "accuracy": 0.2609
           }
         },
         "0.25": {
           "-1": {
-            "n": 77,
-            "accuracy": 0.4156
+            "n": 40,
+            "accuracy": 0.375
           },
           "1": {
-            "n": 42,
-            "accuracy": 0.5238
+            "n": 23,
+            "accuracy": 0.2609
           }
         },
         "0.35": {
           "-1": {
-            "n": 77,
-            "accuracy": 0.4156
+            "n": 40,
+            "accuracy": 0.375
           },
           "1": {
-            "n": 42,
-            "accuracy": 0.5238
+            "n": 23,
+            "accuracy": 0.2609
           }
         },
         "0.5": {
           "-1": {
-            "n": 77,
-            "accuracy": 0.4156
+            "n": 40,
+            "accuracy": 0.375
           },
           "1": {
-            "n": 42,
-            "accuracy": 0.5238
+            "n": 23,
+            "accuracy": 0.2609
           }
         }
       }
     },
     {
       "fold": 3,
-      "train_n": 664,
-      "test_n": 142,
-      "test_start": "2025-03-08T14:00",
-      "test_end": "2025-11-29T20:05",
+      "train_n": 392,
+      "test_n": 84,
+      "test_start": "2025-10-29T17:30",
+      "test_end": "2026-02-21T15:00",
       "overall": {
         "0.0": {
-          "n": 142,
-          "accuracy": 0.3662
+          "n": 84,
+          "accuracy": 0.3095
         },
         "0.15": {
-          "n": 142,
-          "accuracy": 0.3662
+          "n": 84,
+          "accuracy": 0.3095
         },
         "0.25": {
-          "n": 142,
-          "accuracy": 0.3662
+          "n": 84,
+          "accuracy": 0.3095
         },
         "0.35": {
-          "n": 142,
-          "accuracy": 0.3662
+          "n": 84,
+          "accuracy": 0.3214
         },
         "0.5": {
-          "n": 142,
-          "accuracy": 0.3662
+          "n": 84,
+          "accuracy": 0.3095
         }
       },
       "pm1": {
         "0.0": {
           "-1": {
-            "n": 72,
-            "accuracy": 0.4167
+            "n": 43,
+            "accuracy": 0.3721
           },
           "1": {
-            "n": 38,
-            "accuracy": 0.4211
+            "n": 29,
+            "accuracy": 0.2759
           }
         },
         "0.15": {
           "-1": {
-            "n": 72,
-            "accuracy": 0.4167
+            "n": 43,
+            "accuracy": 0.3721
           },
           "1": {
-            "n": 38,
-            "accuracy": 0.4211
+            "n": 29,
+            "accuracy": 0.2759
           }
         },
         "0.25": {
           "-1": {
-            "n": 72,
-            "accuracy": 0.4167
+            "n": 43,
+            "accuracy": 0.3721
           },
           "1": {
-            "n": 38,
-            "accuracy": 0.4211
+            "n": 29,
+            "accuracy": 0.2759
           }
         },
         "0.35": {
           "-1": {
-            "n": 72,
-            "accuracy": 0.4167
+            "n": 43,
+            "accuracy": 0.3721
           },
           "1": {
-            "n": 38,
-            "accuracy": 0.4211
+            "n": 29,
+            "accuracy": 0.3103
           }
         },
         "0.5": {
           "-1": {
-            "n": 72,
-            "accuracy": 0.4167
+            "n": 43,
+            "accuracy": 0.3721
           },
           "1": {
-            "n": 38,
-            "accuracy": 0.4211
+            "n": 29,
+            "accuracy": 0.3103
           }
         }
       }
     },
     {
       "fold": 4,
-      "train_n": 806,
-      "test_n": 142,
-      "test_start": "2025-11-30T14:05",
+      "train_n": 476,
+      "test_n": 84,
+      "test_start": "2026-02-21T20:00",
       "test_end": "2026-09-19T17:30",
       "overall": {
         "0.0": {
-          "n": 142,
-          "accuracy": 0.3521
+          "n": 84,
+          "accuracy": 0.381
         },
         "0.15": {
-          "n": 142,
-          "accuracy": 0.3592
+          "n": 84,
+          "accuracy": 0.381
         },
         "0.25": {
-          "n": 142,
-          "accuracy": 0.3592
+          "n": 84,
+          "accuracy": 0.381
         },
         "0.35": {
-          "n": 142,
-          "accuracy": 0.3592
+          "n": 84,
+          "accuracy": 0.381
         },
         "0.5": {
-          "n": 142,
-          "accuracy": 0.3662
+          "n": 84,
+          "accuracy": 0.381
         }
       },
       "pm1": {
         "0.0": {
           "-1": {
-            "n": 79,
-            "accuracy": 0.3797
+            "n": 48,
+            "accuracy": 0.375
           },
           "1": {
-            "n": 47,
-            "accuracy": 0.2979
+            "n": 25,
+            "accuracy": 0.36
           }
         },
         "0.15": {
           "-1": {
-            "n": 79,
-            "accuracy": 0.3797
+            "n": 48,
+            "accuracy": 0.375
           },
           "1": {
-            "n": 47,
-            "accuracy": 0.3191
+            "n": 25,
+            "accuracy": 0.36
           }
         },
         "0.25": {
           "-1": {
-            "n": 79,
-            "accuracy": 0.3797
+            "n": 48,
+            "accuracy": 0.375
           },
           "1": {
-            "n": 47,
-            "accuracy": 0.3191
+            "n": 25,
+            "accuracy": 0.36
           }
         },
         "0.35": {
           "-1": {
-            "n": 79,
-            "accuracy": 0.3797
+            "n": 48,
+            "accuracy": 0.375
           },
           "1": {
-            "n": 47,
-            "accuracy": 0.3191
+            "n": 25,
+            "accuracy": 0.36
           }
         },
         "0.5": {
           "-1": {
-            "n": 79,
-            "accuracy": 0.3797
+            "n": 48,
+            "accuracy": 0.375
           },
           "1": {
-            "n": 47,
-            "accuracy": 0.3191
+            "n": 25,
+            "accuracy": 0.36
           }
         }
       }
@@ -338,24 +338,24 @@
   ],
   "aggregate": {
     "0.0": {
-      "n": 568,
-      "accuracy": 0.3768
+      "n": 336,
+      "accuracy": 0.3839
     },
     "0.15": {
-      "n": 568,
-      "accuracy": 0.3785
+      "n": 336,
+      "accuracy": 0.3839
     },
     "0.25": {
-      "n": 568,
-      "accuracy": 0.3803
+      "n": 336,
+      "accuracy": 0.3839
     },
     "0.35": {
-      "n": 568,
-      "accuracy": 0.3803
+      "n": 336,
+      "accuracy": 0.3869
     },
     "0.5": {
-      "n": 568,
-      "accuracy": 0.382
+      "n": 336,
+      "accuracy": 0.3839
     }
   },
   "note": "Weights are reported for validation only; no test-slice weight selection and no future data leakage."
