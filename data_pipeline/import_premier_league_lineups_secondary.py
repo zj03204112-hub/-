@@ -30,7 +30,7 @@ def norm(s):
     if s.startswith("afc "):
         s = s[4:].strip()
     aliases = {
-        "bournemouth":"bournemouth", "afc bournemouth":"bournemouth",
+        "bournemouth":"bournemouth", "afc bournemouth":"bournemouth",\n        "man utd":"manchester united", "man city":"manchester city", "nott m forest":"nottingham forest", "notts forest":"nottingham forest",
         "brighton hove albion":"brighton", "brighton and hove albion":"brighton",
         "tottenham hotspur":"tottenham", "spurs":"tottenham",
         "newcastle united":"newcastle", "west ham united":"west ham",
