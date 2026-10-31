@@ -1,0 +1,147 @@
+{
+  "report_version": "current-day-results-2026-10-31-v1",
+  "generated_at_beijing": "2026-10-31T09:58:45+08:00",
+  "beijing_date": "2026-10-31",
+  "note": "These matches finished after midnight Beijing time on 2026-10-31, although source pages often label them 2026-10-30 local/UTC. They are kept separate from the 2026-10-30 Beijing review.",
+  "confirmed_finished_count": 8,
+  "results": [
+    {
+      "competition": "La Liga",
+      "type": "domestic_league",
+      "home": "Villarreal",
+      "away": "Espanyol",
+      "score_90m": "0-1",
+      "result_source": "https://www.sofascore.com/news/villarreal-0-1-espanyol-compact-defending-one-set-piece-three-points",
+      "xg_sources": [
+        {
+          "provider": "Sofascore; model version not disclosed",
+          "home_xg": 0.84,
+          "away_xg": 0.2
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE"
+    },
+    {
+      "competition": "Ligue 1",
+      "type": "domestic_league",
+      "home": "Le Havre",
+      "away": "Paris Saint-Germain",
+      "score_90m": "1-5",
+      "result_source": "https://www.reuters.com/sports/soccer/hakimi-hat-trick-leads-psg-5-1-win-le-havre-2026-10-30/",
+      "xg_sources": [
+        {
+          "provider": "Sofascore; model version not disclosed",
+          "home_xg": 1.88,
+          "away_xg": 3.06
+        },
+        {
+          "provider": "Maxifoot; model version not disclosed",
+          "home_xg": 1.51,
+          "away_xg": 3.06
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE_MULTIPLE_SOURCES"
+    },
+    {
+      "competition": "Ligue 1",
+      "type": "domestic_league",
+      "home": "Nice",
+      "away": "Rennes",
+      "score_90m": "5-2",
+      "result_source": "https://www.reuters.com/sports/soccer/hakimi-hat-trick-leads-psg-5-1-win-le-havre-2026-10-30/",
+      "xg_sources": [
+        {
+          "provider": "Flashsport; model version not disclosed",
+          "home_xg": 3.47,
+          "away_xg": 2.66
+        },
+        {
+          "provider": "BetaPi Live; model version not disclosed",
+          "home_xg": 3.39,
+          "away_xg": 2.6
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE_MULTIPLE_SOURCES"
+    },
+    {
+      "competition": "Ligue 1",
+      "type": "domestic_league",
+      "home": "Lille",
+      "away": "Lens",
+      "score_90m": "1-0",
+      "result_source": "https://www.reuters.com/sports/soccer/hakimi-hat-trick-leads-psg-5-1-win-le-havre-2026-10-30/",
+      "xg_sources": [
+        {
+          "provider": "SweetFootball; model version not disclosed",
+          "home_xg": 2.12,
+          "away_xg": 0.4
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE",
+      "excluded_comparison": "xG.Football page showed projected/pre-match xG 1.57-1.50; excluded from full-time match xG because it is a forecast, not a post-match observation."
+    },
+    {
+      "competition": "Bundesliga",
+      "type": "domestic_league",
+      "home": "SV Elversberg",
+      "away": "FSV Mainz 05",
+      "score_90m": "4-1",
+      "result_source": "https://ontourfootball.com/results/2026-10-30",
+      "xg_status": "MISSING",
+      "missing_reason": "Only pre-match/team-average estimates found in accessible pages; no verified match-level full-time xG accepted."
+    },
+    {
+      "competition": "Eliteserien",
+      "type": "other_domestic_league",
+      "home": "Bodø/Glimt",
+      "away": "Viking",
+      "score_90m": "3-2",
+      "result_source": "https://www.reuters.com/sports/soccer/coaches-see-red-bodoglimt-edge-viking-fiery-norwegian-thriller-2026-10-30/",
+      "xg_sources": [
+        {
+          "provider": "FotMob; model version not disclosed",
+          "home_xg": 1.41,
+          "away_xg": 2.01
+        },
+        {
+          "provider": "Cornerflick; model version not disclosed",
+          "home_xg": 1.49,
+          "away_xg": 2.01
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE_MULTIPLE_SOURCES"
+    },
+    {
+      "competition": "EFL Championship",
+      "type": "other_domestic_league",
+      "home": "Sheffield United",
+      "away": "Wrexham",
+      "score_90m": "1-0",
+      "result_source": "https://www.skysports.com/football/sheffield-united-vs-wrexham/report/560648",
+      "xg_sources": [
+        {
+          "provider": "DailyGoal; model version not disclosed",
+          "home_xg": 1.14,
+          "away_xg": 0.66
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE"
+    },
+    {
+      "competition": "Liga Portugal",
+      "type": "other_domestic_league",
+      "home": "Casa Pia",
+      "away": "Sporting CP",
+      "score_90m": "0-2",
+      "result_source": "https://ontourfootball.com/results/2026-10-30",
+      "xg_status": "MISSING",
+      "missing_reason": "Accessible xG page did not provide sufficiently clear, confirmed match-level full-time values; leave missing rather than risk confusing team averages with match xG."
+    }
+  ],
+  "prediction_snapshot_audit": {
+    "immutable_snapshots_found": 0,
+    "formal_prediction_accuracy": "UNVERIFIABLE",
+    "official_sporttery_handicap": "NOT_VERIFIED"
+  },
+  "database_connection_used": false
+}
