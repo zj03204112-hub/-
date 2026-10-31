@@ -1,0 +1,131 @@
+{
+  "report_version": "xg-source-discrepancy-audit-2026-10-31-095845",
+  "generated_at_beijing": "2026-10-31T09:58:45+08:00",
+  "variants": [
+    {
+      "match": "Villarreal 0-1 Espanyol",
+      "sources": [
+        {
+          "provider": "Sofascore",
+          "xg": "0.84-0.20",
+          "url": "https://www.sofascore.com/news/villarreal-0-1-espanyol-compact-defending-one-set-piece-three-points"
+        }
+      ],
+      "status": "SINGLE_PROVIDER_ESTIMATE"
+    },
+    {
+      "match": "Le Havre 1-5 Paris Saint-Germain",
+      "sources": [
+        {
+          "provider": "Sofascore",
+          "xg": "1.88-3.06",
+          "url": "https://www.sofascore.com/news/le-havre-1-5-psg-hakimi-hits-hat-trick-in-ligue-1"
+        },
+        {
+          "provider": "Maxifoot",
+          "xg": "1.51-3.06",
+          "url": "https://www.maxifoot.fr/match/havre-paris-20261030.htm"
+        }
+      ],
+      "difference": {
+        "home_xg": 0.37,
+        "away_xg": 0
+      },
+      "status": "KEEP_PROVIDER_SPECIFIC; DO_NOT_AVERAGE"
+    },
+    {
+      "match": "Nice 5-2 Rennes",
+      "sources": [
+        {
+          "provider": "Flashsport",
+          "xg": "3.47-2.66",
+          "url": "https://flashsportapp.com/en/football/match/nice-rennes-2026-10-30-1552806/"
+        },
+        {
+          "provider": "BetaPi Live",
+          "xg": "3.39-2.60",
+          "url": "https://stats.betapilive.com/fr/football/match/nice-stade-rennais-6a39ad975e99bd05c640bdef"
+        }
+      ],
+      "difference": {
+        "home_xg": 0.08,
+        "away_xg": 0.06
+      },
+      "status": "KEEP_PROVIDER_SPECIFIC; DO_NOT_AVERAGE"
+    },
+    {
+      "match": "Lille 1-0 Lens",
+      "sources": [
+        {
+          "provider": "SweetFootball",
+          "xg": "2.12-0.40",
+          "url": "https://sweetfootball.com/match/lille-osc-vs-racing-club-de-lens-2026-10-30"
+        }
+      ],
+      "excluded": [
+        {
+          "provider": "xG.Football",
+          "xg": "1.57-1.50",
+          "reason": "Identified as projected/pre-match xG, not full-time match xG."
+        }
+      ],
+      "status": "SINGLE_POSTMATCH_PROVIDER_ESTIMATE"
+    },
+    {
+      "match": "Bodø/Glimt 3-2 Viking",
+      "sources": [
+        {
+          "provider": "FotMob",
+          "xg": "1.41-2.01",
+          "url": "https://www.fotmob.com/en-GB/matches/bodoglimt-vs-viking/2ctxg6"
+        },
+        {
+          "provider": "Cornerflick",
+          "xg": "1.49-2.01",
+          "url": "https://cornerflick.com/football/eliteserien/matches/bodoglimt-vs-viking-eliteserien-2026-10-30"
+        }
+      ],
+      "difference": {
+        "home_xg": 0.08,
+        "away_xg": 0
+      },
+      "status": "KEEP_PROVIDER_SPECIFIC; DO_NOT_AVERAGE"
+    },
+    {
+      "match": "Grêmio 2-0 Athletico Paranaense",
+      "sources": [
+        {
+          "provider": "The Pressline",
+          "xg": "1.50-1.40",
+          "url": "https://thepressline.app/match/1492436"
+        }
+      ],
+      "status": "NEW_FULLTIME_SOURCE_AFTER_PRIOR_PENDING_SNAPSHOT"
+    },
+    {
+      "match": "SV Elversberg 4-1 FSV Mainz 05",
+      "sources": [],
+      "status": "MISSING",
+      "reason": "Only pre-match/team-average estimates found; no verified match-level full-time xG accepted."
+    },
+    {
+      "match": "Sheffield United 1-0 Wrexham",
+      "sources": [
+        {
+          "provider": "DailyGoal",
+          "xg": "1.14-0.66",
+          "url": "https://dailygoal.lightcoding.com/m/9QlT0ipRsHg/sheffield-utd-vs-wrexham"
+        }
+      ],
+      "status": "SINGLE_PROVIDER_ESTIMATE"
+    },
+    {
+      "match": "Casa Pia 0-2 Sporting CP",
+      "sources": [],
+      "status": "MISSING",
+      "reason": "Available page's xG fields were ambiguous in scope; left unverified."
+    }
+  ],
+  "policy": "Supplier xG values are model estimates. Preserve supplier/version and capture time separately. Do not average across providers. Do not use post-match xG in same-match pre-match model inputs.",
+  "raw_payloads_archived": false
+}
