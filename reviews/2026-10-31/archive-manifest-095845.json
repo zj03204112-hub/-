@@ -1,0 +1,95 @@
+{
+  "report_version": "daily-football-archive-manifest-2026-10-31-095845",
+  "generated_at_beijing": "2026-10-31T09:58:45+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-10-31",
+  "base_commit": "494ae1b7a0fb37b64f8452c00779eef7c446120e",
+  "final_status": "PARTIALLY_COMPLETE; listed files were committed and read back. Official Sporttery odds, all-source raw payload hashing, full seven-league weekly coverage, and live SQLite queries remain incomplete.",
+  "validation": {
+    "json_parse_pass": true,
+    "previous_day_confirmed_results": 8,
+    "previous_day_prediction_snapshots_found": 0,
+    "current_day_confirmed_results": 8,
+    "fixtures_total": 30,
+    "fixtures_beijing_2026_10_31": 22,
+    "fixtures_beijing_2026_11_01": 8,
+    "window_candidates_1500": 17,
+    "predictions_generated": 0,
+    "xg_match_rows": 122,
+    "xg_match_unique_matches": 47,
+    "xg_team_week_provider_rows": 114,
+    "xg_team_week_coverage_rows": 94,
+    "xg_matches_with_xg": 20,
+    "xg_coverage_pct": 42.55,
+    "source_discrepancy_variants": 9,
+    "all_required_files_read_back": true,
+    "database_connection_used": false,
+    "v51_or_frozen_sample_modified": false
+  },
+  "files": [
+    {
+      "path": "reviews/2026-10-31/previous-day-review.json",
+      "blob_sha": "bb69158fc81ee4f21beba8dd5f69e56f53df0ee4",
+      "readback": true,
+      "bytes": 5913
+    },
+    {
+      "path": "reviews/2026-10-31/current-day-results.json",
+      "blob_sha": "58fca6a8b879d4edcf9bcbedf15f376ff43088e7",
+      "readback": true,
+      "bytes": 5161
+    },
+    {
+      "path": "fixtures/2026-10-31/schedule.json",
+      "blob_sha": "952ca0f4f0903669b7e3e234894f948ab807af6f",
+      "readback": true,
+      "bytes": 34468
+    },
+    {
+      "path": "fixtures/2026-10-31/prediction-window-check-095845.json",
+      "blob_sha": "1f83062499fd3a6d29f17aaa6b7030442d2f7f5c",
+      "readback": true,
+      "bytes": 9439
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-10-31/match_xg_snapshot-095845.csv",
+      "blob_sha": "3087784177ac0fb758ffd120d2eb746f11e5c832",
+      "readback": true,
+      "bytes": 79493
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-10-31/team_weekly_xg_snapshot-095845.csv",
+      "blob_sha": "32ea19e7d0bbd8ba9c1b5db4def33bb223242b9e",
+      "readback": true,
+      "bytes": 56146
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-10-31/team_weekly_coverage_snapshot-095845.csv",
+      "blob_sha": "6b2c562542e5680ec11504c73e8af4d4bc085c79",
+      "readback": true,
+      "bytes": 31911
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-10-31/xg_coverage_audit-095845.json",
+      "blob_sha": "46d17836a83e99d9309b5427d793647e2ee94c18",
+      "readback": true,
+      "bytes": 1460
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-10-31/xg_source_discrepancy_audit-095845.json",
+      "blob_sha": "34b634d19ace7c2bb5d334c724d2d5a29d88a124",
+      "readback": true,
+      "bytes": 3985
+    }
+  ],
+  "known_gaps": [
+    "No immutable pre-match prediction snapshots were found for the eight matches in the 2026-10-30 Beijing review; all prediction hit metrics remain UNVERIFIABLE.",
+    "Official Sporttery handicaps and opening-to-current odds were not captured for today's fixtures.",
+    "No predictions were generated in the 10:00 review run; 17 fixtures are candidates for a 15:00 window check, but a separate enabled 15:00 automation was not found.",
+    "xG coverage is for the reviewed repository match archive only, not all teams/fixtures in the seven core leagues.",
+    "Raw HTML/API response payloads and SHA-256 hashes were not archived; provider event IDs for new fixtures remain unresolved.",
+    "The repository contains football_model_database.sqlite, but no live SQLite connection or query was used in this run.",
+    "V5.1 and the frozen validation sample were not modified."
+  ],
+  "authoritative_policy": "Historical snapshots are append-only. Provider-specific xG values remain separate; no cross-provider averaging and no post-match xG leakage into same-match pre-match predictions."
+}
