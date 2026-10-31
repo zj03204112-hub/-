@@ -22,19 +22,29 @@ AUDIT_OUT = OUT / "premier-league_2025_lineups_audit.json"
 HEADERS = {"User-Agent": "football-model-data-audit/1.0"}
 
 def norm(s):
+    # Normalize suffixes/prefixes before aliases; otherwise e.g. "Brighton & Hove Albion FC"
+    # misses the alias for "Brighton & Hove Albion".
     s = re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+    for _ in range(2):
+        for suffix in (" football club", " fc", " afc"):
+            if s.endswith(suffix):
+                s = s[:-len(suffix)].strip()
+        for prefix in ("afc ",):
+            if s.startswith(prefix):
+                s = s[len(prefix):].strip()
     aliases = {
-        "afc bournemouth":"bournemouth", "brighton hove albion":"brighton",
-        "brighton and hove albion":"brighton", "tottenham hotspur":"tottenham",
-        "newcastle united":"newcastle", "west ham united":"west ham",
-        "wolverhampton wanderers":"wolves", "manchester united":"manchester united",
-        "manchester city":"manchester city", "leeds united":"leeds",
+        "afc bournemouth":"bournemouth", "bournemouth":"bournemouth",
+        "brighton hove albion":"brighton", "brighton and hove albion":"brighton",
+        "tottenham hotspur":"tottenham", "tottenham":"tottenham",
+        "newcastle united":"newcastle", "newcastle":"newcastle",
+        "west ham united":"west ham", "west ham":"west ham",
+        "wolverhampton wanderers":"wolves", "wolverhampton":"wolves", "wolves":"wolves",
+        "manchester united":"manchester united", "man utd":"manchester united",
+        "manchester city":"manchester city", "man city":"manchester city",
+        "leeds united":"leeds", "leeds":"leeds",
         "nottingham forest":"nottingham forest", "aston villa":"aston villa",
         "crystal palace":"crystal palace", "sunderland":"sunderland",
     }
-    for suffix in (" football club", " fc", " afc"):
-        if s.endswith(suffix):
-            s = s[:-len(suffix)].strip()
     return aliases.get(s, s)
 
 def get_text(url):
@@ -64,7 +74,7 @@ lineup_paths = sorted(x["path"] for x in entries if x["path"].startswith("data/2
 if len(fixture_paths) < 30 or len(lineup_paths) < 30:
     raise SystemExit(f"Unexpected upstream coverage: fixtures={len(fixture_paths)}, lineups={len(lineup_paths)}")
 
-fixture_map, player_rows, match_audit, errors = {}, [], [], []
+fixture_map, player_rows, match_audit, errors = {}, [], [], []\nupstream_pair_examples = []
 for path in fixture_paths:
     try:
         for m in read_csv_url(RAW + requests.utils.requote_uri(path)):
@@ -142,7 +152,7 @@ audit = {
     "match_coverage_pct":round(100*len(grouped)/len(baseline),2) if baseline else 0,
     "complete_starting_xi_coverage_pct":round(100*len(complete_matches)/len(baseline),2) if baseline else 0,
     "complete_matches":complete_matches,"incomplete_matches":invalid_matches,
-    "unmatched_matches":match_audit,"errors":errors
+    "baseline_pair_examples":baseline_pair_examples,"upstream_pair_examples":upstream_pair_examples,\n    "unmatched_matches":match_audit,"errors":errors
 }
 AUDIT_OUT.write_text(json.dumps(audit,ensure_ascii=False,indent=2),encoding="utf-8")
 print(json.dumps({k:audit[k] for k in ["baseline_match_rows","upstream_fixture_files","upstream_lineup_files","lineup_player_rows_joined","unique_baseline_matches_with_lineup_rows","complete_confirmed_starting_xi_matches","invalid_or_incomplete_starting_xi_matches","unmatched_or_ambiguous_matches","fetch_or_join_errors","match_coverage_pct","complete_starting_xi_coverage_pct"]},ensure_ascii=False))
