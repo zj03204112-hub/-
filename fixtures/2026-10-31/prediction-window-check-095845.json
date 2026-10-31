@@ -1,0 +1,280 @@
+{
+  "report_version": "prediction-window-check-2026-10-31-095845",
+  "generated_at_beijing": "2026-10-31T09:58:45+08:00",
+  "prediction_run_expected_time_beijing": "15:00",
+  "rule": "Only generate predictions for matches kicking off 6-12 hours after the actual prediction run time; at 10:00 this task registers fixtures only.",
+  "eligible_at_10am": [
+    {
+      "competition": "Premier League",
+      "home": "Chelsea",
+      "away": "Manchester United",
+      "kickoff_beijing": "2026-10-31T20:30:00+08:00",
+      "hours_from_10am": 10.5,
+      "status": "REGISTER_ONLY; not predicted in 10:00 review run"
+    },
+    {
+      "competition": "Serie A",
+      "home": "Bologna",
+      "away": "Monza",
+      "kickoff_beijing": "2026-10-31T22:00:00+08:00",
+      "hours_from_10am": 12,
+      "status": "REGISTER_ONLY; not predicted in 10:00 review run"
+    },
+    {
+      "competition": "La Liga",
+      "home": "Levante",
+      "away": "Atlético Madrid",
+      "kickoff_beijing": "2026-10-31T21:00:00+08:00",
+      "hours_from_10am": 11,
+      "status": "REGISTER_ONLY; not predicted in 10:00 review run"
+    }
+  ],
+  "eligible_at_1500": [
+    {
+      "competition": "Premier League",
+      "home": "AFC Bournemouth",
+      "away": "Leeds United",
+      "kickoff_beijing": "2026-10-31T23:00:00+08:00",
+      "hours_from_1500": 8,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Premier League",
+      "home": "Brentford",
+      "away": "Nottingham Forest",
+      "kickoff_beijing": "2026-10-31T23:00:00+08:00",
+      "hours_from_1500": 8,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Premier League",
+      "home": "Coventry City",
+      "away": "Sunderland",
+      "kickoff_beijing": "2026-10-31T23:00:00+08:00",
+      "hours_from_1500": 8,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Premier League",
+      "home": "Hull City",
+      "away": "Ipswich Town",
+      "kickoff_beijing": "2026-10-31T23:00:00+08:00",
+      "hours_from_1500": 8,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Premier League",
+      "home": "Manchester City",
+      "away": "Brighton",
+      "kickoff_beijing": "2026-10-31T23:00:00+08:00",
+      "hours_from_1500": 8,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Premier League",
+      "home": "Tottenham Hotspur",
+      "away": "Crystal Palace",
+      "kickoff_beijing": "2026-11-01T01:30:00+08:00",
+      "hours_from_1500": 10.5,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Bundesliga",
+      "home": "Augsburg",
+      "away": "Freiburg",
+      "kickoff_beijing": "2026-10-31T22:30:00+08:00",
+      "hours_from_1500": 7.5,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Bundesliga",
+      "home": "Bayer Leverkusen",
+      "away": "VfB Stuttgart",
+      "kickoff_beijing": "2026-10-31T22:30:00+08:00",
+      "hours_from_1500": 7.5,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Bundesliga",
+      "home": "Borussia Mönchengladbach",
+      "away": "SC Paderborn",
+      "kickoff_beijing": "2026-10-31T22:30:00+08:00",
+      "hours_from_1500": 7.5,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Bundesliga",
+      "home": "Schalke 04",
+      "away": "RB Leipzig",
+      "kickoff_beijing": "2026-10-31T22:30:00+08:00",
+      "hours_from_1500": 7.5,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Bundesliga",
+      "home": "Werder Bremen",
+      "away": "Hoffenheim",
+      "kickoff_beijing": "2026-10-31T22:30:00+08:00",
+      "hours_from_1500": 7.5,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Bundesliga",
+      "home": "Bayern Munich",
+      "away": "Borussia Dortmund",
+      "kickoff_beijing": "2026-11-01T01:30:00+08:00",
+      "hours_from_1500": 10.5,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Serie A",
+      "home": "Bologna",
+      "away": "Monza",
+      "kickoff_beijing": "2026-10-31T22:00:00+08:00",
+      "hours_from_1500": 7,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "Serie A",
+      "home": "Udinese",
+      "away": "Roma",
+      "kickoff_beijing": "2026-11-01T01:00:00+08:00",
+      "hours_from_1500": 10,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "La Liga",
+      "home": "Levante",
+      "away": "Atlético Madrid",
+      "kickoff_beijing": "2026-10-31T21:00:00+08:00",
+      "hours_from_1500": 6,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "La Liga",
+      "home": "Rayo Vallecano",
+      "away": "Celta Vigo",
+      "kickoff_beijing": "2026-10-31T23:15:00+08:00",
+      "hours_from_1500": 8.25,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    },
+    {
+      "competition": "La Liga",
+      "home": "Real Betis",
+      "away": "Málaga",
+      "kickoff_beijing": "2026-11-01T01:30:00+08:00",
+      "hours_from_1500": 10.5,
+      "status": "PREDICTION_CANDIDATE; requires 15:00 run and fresh input validation"
+    }
+  ],
+  "not_eligible_at_1500": [
+    {
+      "competition": "Premier League",
+      "home": "Chelsea",
+      "away": "Manchester United",
+      "kickoff_beijing": "2026-10-31T20:30:00+08:00",
+      "hours_from_1500": 5.5,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "Premier League",
+      "home": "Aston Villa",
+      "away": "Fulham",
+      "kickoff_beijing": "2026-11-01T04:00:00+08:00",
+      "hours_from_1500": 13,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "Serie A",
+      "home": "AC Milan",
+      "away": "Inter",
+      "kickoff_beijing": "2026-11-01T03:45:00+08:00",
+      "hours_from_1500": 12.75,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "La Liga",
+      "home": "Barcelona",
+      "away": "Alavés",
+      "kickoff_beijing": "2026-11-01T04:00:00+08:00",
+      "hours_from_1500": 13,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "Ligue 1",
+      "home": "Troyes",
+      "away": "Le Mans",
+      "kickoff_beijing": "2026-11-01T03:45:00+08:00",
+      "hours_from_1500": 12.75,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "K League 1",
+      "home": "Jeonbuk Hyundai Motors",
+      "away": "Daejeon Hana Citizen",
+      "kickoff_beijing": "2026-10-31T13:00:00+08:00",
+      "hours_from_1500": -2,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "K League 1",
+      "home": "Gwangju FC",
+      "away": "Gimcheon Sangmu",
+      "kickoff_beijing": "2026-10-31T15:30:00+08:00",
+      "hours_from_1500": 0.5,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "J1 League",
+      "home": "Mito Hollyhock",
+      "away": "Sanfrecce Hiroshima",
+      "kickoff_beijing": "2026-10-31T13:00:00+08:00",
+      "hours_from_1500": -2,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "J1 League",
+      "home": "Kyoto Sanga",
+      "away": "Shimizu S-Pulse",
+      "kickoff_beijing": "2026-10-31T13:00:00+08:00",
+      "hours_from_1500": -2,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "J1 League",
+      "home": "Fagiano Okayama",
+      "away": "FC Tokyo",
+      "kickoff_beijing": "2026-10-31T13:00:00+08:00",
+      "hours_from_1500": -2,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "J1 League",
+      "home": "Kashima Antlers",
+      "away": "Cerezo Osaka",
+      "kickoff_beijing": "2026-10-31T14:00:00+08:00",
+      "hours_from_1500": -1,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "J1 League",
+      "home": "Vissel Kobe",
+      "away": "Nagoya Grampus",
+      "kickoff_beijing": "2026-10-31T14:00:00+08:00",
+      "hours_from_1500": -1,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    },
+    {
+      "competition": "J1 League",
+      "home": "Kashiwa Reysol",
+      "away": "Urawa Reds",
+      "kickoff_beijing": "2026-10-31T15:00:00+08:00",
+      "hours_from_1500": 0,
+      "status": "REGISTER_ONLY_OR_OUTSIDE_6_12H_WINDOW"
+    }
+  ],
+  "predictions_generated": 0,
+  "reason": "This is the 10:00 review/schedule run. No model predictions were generated. A separate enabled 15:00 automation was not found in the current automation inventory; no new automation was created during this run.",
+  "official_sporttery_handicap_verified": false,
+  "opening_to_current_odds_captured": false
+}
