@@ -1,0 +1,26 @@
+{
+  "dataset": "Premier League 2026-27 fixture baseline",
+  "generated_at_utc": "2026-10-31T10:45:00Z",
+  "repository_path": "data/season_match_detail/premier-league_2026_fixtures_openfootball.csv",
+  "source": "openfootball/england",
+  "source_url": "https://github.com/openfootball/england/blob/master/2026-27/1-premierleague.txt",
+  "expected_matches": 380,
+  "imported_rows": 380,
+  "unique_row_key": "season + matchday + date + home_team + away_team",
+  "source_lists_full_time_score_rows": 50,
+  "score_rows_independently_verified": 0,
+  "rows_without_full_time_score": 330,
+  "starting_xi_rows": 0,
+  "actual_appearance_rows": 0,
+  "substitution_event_rows": 0,
+  "both_team_xg_rows": 0,
+  "both_team_xga_rows": 0,
+  "match_ids": "No stable provider match ID in this source; fixture row key is provisional only",
+  "limitations": [
+    "OpenFootball rows are a fixture baseline, not a verified official match feed.",
+    "Scores listed by the source are marked source_lists_result_unverified and must not be treated as confirmed until cross-checked against the Premier League or another reliable source.",
+    "Rows without scores remain blank; no results have been inferred.",
+    "Starting lineups, actual appearances, substitutions and xG/xGA have not been populated in this file."
+  ],
+  "next_missing_data": "Match-by-match official score verification, stable fixture IDs, lineups, player appearances/substitution times and xG/xGA."
+}
