@@ -1,0 +1,60 @@
+{
+  "definition": "Independent chronological holdout: completed J1/K League 1 matches on/after LEAGUE_HOLDOUT_START. No fitting, parameter selection, or draw-cause labels from this sample are allowed.",
+  "start": "2026-09-21",
+  "groups": {
+    "J1": {
+      "summary": {
+        "n": 0,
+        "accuracy": null,
+        "brier": null,
+        "logloss": null,
+        "note": "No eligible matches in this group; metrics are undefined.",
+        "actual_draws": 0,
+        "draw_pick_rate_on_actual_draws": null,
+        "mean_draw_probability_on_actual_draws": null
+      },
+      "matches": []
+    },
+    "K1": {
+      "summary": {
+        "n": 2,
+        "accuracy": 0.5,
+        "brier": 0.5373,
+        "logloss": 0.9188,
+        "actual_draws": 1,
+        "draw_pick_rate_on_actual_draws": 0.0,
+        "mean_draw_probability_on_actual_draws": 0.3086
+      },
+      "matches": [
+        {
+          "match_id": "6c5684c46a72172dd1bc",
+          "kickoff": "2026-09-26",
+          "home": "광주",
+          "away": "서울",
+          "actual": "A",
+          "p": {
+            "H": 0.19926744652418435,
+            "D": 0.2847743394590771,
+            "A": 0.5159582140167386
+          },
+          "pick": "A"
+        },
+        {
+          "match_id": "be47f25108705f8be1e6",
+          "kickoff": "2026-09-26",
+          "home": "인천",
+          "away": "전북",
+          "actual": "D",
+          "p": {
+            "H": 0.38069950853958195,
+            "D": 0.30855958712885473,
+            "A": 0.3107409043315633
+          },
+          "pick": "H"
+        }
+      ]
+    }
+  },
+  "total_n": 2,
+  "warning": "This report is descriptive validation only. It does not alter V4, fit a draw bias, or use the sample for calibration."
+}
