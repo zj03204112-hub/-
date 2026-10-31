@@ -1,0 +1,5294 @@
+{
+  "season": "2025-26",
+  "source": "FPL-Core-Insights public data integration review branch",
+  "source_repo": "https://github.com/olbauday/FPL-Core-Insights",
+  "source_commit": "0e8b5033c329459d661b2511fa376b9d82954698",
+  "source_note": "Third-party secondary lineup dataset; pinned to a specific commit for reproducibility. This import does not overwrite the baseline results or Understat xG.",
+  "baseline_source": "OpenFootball season results CSV; third-party lineup source pinned separately",
+  "baseline_match_rows": 380,
+  "upstream_fixture_files": 38,
+  "upstream_lineup_files": 38,
+  "upstream_fixture_ids": 380,
+  "lineup_player_rows_joined": 10855,
+  "unique_baseline_matches_with_lineup_rows": 272,
+  "complete_confirmed_starting_xi_matches": 272,
+  "invalid_or_incomplete_starting_xi_matches": 0,
+  "unmatched_or_ambiguous_matches": 108,
+  "fetch_or_join_errors": 0,
+  "match_coverage_pct": 71.58,
+  "complete_starting_xi_coverage_pct": 71.58,
+  "complete_matches": [
+    {
+      "date": "2025-08-16",
+      "home": "Aston Villa FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-16",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-17",
+      "home": "Chelsea FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-18",
+      "home": "Leeds United FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-15",
+      "home": "Liverpool FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-16",
+      "home": "Sunderland AFC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-16",
+      "home": "Tottenham Hotspur FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "home": "Burnley FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "home": "Crystal Palace FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "home": "Fulham FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "home": "Liverpool FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-03",
+      "home": "Sunderland AFC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "home": "Tottenham Hotspur FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-02",
+      "home": "West Ham United FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "home": "Aston Villa FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "home": "Brentford FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "home": "Chelsea FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "home": "Crystal Palace FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "home": "Everton FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "home": "Sunderland AFC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "home": "West Ham United FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "home": "AFC Bournemouth",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-23",
+      "home": "Arsenal FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "home": "Burnley FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "home": "Fulham FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-23",
+      "home": "Leeds United FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-30",
+      "home": "Aston Villa FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "home": "Brentford FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-30",
+      "home": "Chelsea FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "home": "Everton FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "home": "Sunderland AFC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "home": "Tottenham Hotspur FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-11-30",
+      "home": "West Ham United FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-02",
+      "home": "AFC Bournemouth",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-03",
+      "home": "Arsenal FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-03",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-03",
+      "home": "Burnley FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-03",
+      "home": "Leeds United FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-03",
+      "home": "Liverpool FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-02",
+      "home": "Newcastle United FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "home": "AFC Bournemouth",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "home": "Aston Villa FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-07",
+      "home": "Brighton & Hove Albion FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-07",
+      "home": "Fulham FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "home": "Leeds United FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "home": "Newcastle United FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "home": "Tottenham Hotspur FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "home": "Arsenal FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "home": "Brentford FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "home": "Burnley FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "home": "Chelsea FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "home": "Liverpool FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 19,
+        "starters": 11,
+        "confirmed_rows": 19
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "home": "Sunderland AFC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "home": "West Ham United FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "home": "AFC Bournemouth",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "home": "Everton FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "home": "Leeds United FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "home": "Newcastle United FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "home": "Tottenham Hotspur FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "home": "Arsenal FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "home": "Brentford FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "home": "Burnley FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 19,
+        "starters": 11,
+        "confirmed_rows": 19
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "home": "Chelsea FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "home": "Crystal Palace FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "home": "Liverpool FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "home": "Sunderland AFC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "home": "West Ham United FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-30",
+      "home": "Arsenal FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-01",
+      "home": "Brentford FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-30",
+      "home": "Burnley FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-30",
+      "home": "Chelsea FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-01",
+      "home": "Crystal Palace FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-01",
+      "home": "Liverpool FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-12-30",
+      "home": "West Ham United FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "home": "AFC Bournemouth",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "home": "Arsenal FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "home": "Brentford FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "home": "Burnley FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-24",
+      "home": "Everton FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-25",
+      "home": "Newcastle United FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-22",
+      "home": "West Ham United FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-03",
+      "home": "AFC Bournemouth",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-03",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-04",
+      "home": "Everton FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-04",
+      "home": "Fulham FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-04",
+      "home": "Newcastle United FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-04",
+      "home": "Tottenham Hotspur FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-03",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-07",
+      "home": "AFC Bournemouth",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-08",
+      "home": "Arsenal FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-07",
+      "home": "Brentford FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-07",
+      "home": "Crystal Palace FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-07",
+      "home": "Everton FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-07",
+      "home": "Fulham FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-07",
+      "home": "Newcastle United FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-18",
+      "home": "Aston Villa FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 19,
+        "starters": 11,
+        "confirmed_rows": 19
+      }
+    },
+    {
+      "date": "2026-01-19",
+      "home": "Brighton & Hove Albion FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "home": "Chelsea FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "home": "Leeds United FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "home": "Liverpool FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "home": "Sunderland AFC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "home": "Tottenham Hotspur FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-18",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "home": "AFC Bournemouth",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "home": "Burnley FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-25",
+      "home": "Crystal Palace FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-26",
+      "home": "Everton FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "home": "Fulham FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-25",
+      "home": "Newcastle United FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "home": "West Ham United FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "home": "Aston Villa FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "home": "Chelsea FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "home": "Leeds United FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "home": "Liverpool FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-02",
+      "home": "Sunderland AFC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "home": "AFC Bournemouth",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "home": "Arsenal FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "home": "Burnley FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "home": "Fulham FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "home": "Newcastle United FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "home": "Aston Villa FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "home": "Brentford FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-10",
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "home": "Crystal Palace FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-10",
+      "home": "Everton FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "home": "Sunderland AFC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-10",
+      "home": "Tottenham Hotspur FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "home": "Aston Villa FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "home": "Brentford FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "home": "Chelsea FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "home": "Crystal Palace FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "home": "Sunderland AFC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "home": "Tottenham Hotspur FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "home": "West Ham United FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "home": "AFC Bournemouth",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "home": "Arsenal FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "home": "Burnley FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "home": "Fulham FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "home": "Liverpool FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "home": "Newcastle United FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-03",
+      "home": "AFC Bournemouth",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-04",
+      "home": "Aston Villa FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-04",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-03",
+      "home": "Everton FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-04",
+      "home": "Fulham FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-03",
+      "home": "Leeds United FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-05",
+      "home": "Tottenham Hotspur FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-03",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-31",
+      "home": "Aston Villa FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "home": "Chelsea FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "home": "Leeds United FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-31",
+      "home": "Liverpool FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "home": "Sunderland AFC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "home": "Tottenham Hotspur FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "home": "Arsenal FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-16",
+      "home": "Brentford FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "home": "Burnley FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "home": "Chelsea FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "home": "Crystal Palace FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "home": "Liverpool FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 18,
+        "starters": 11,
+        "confirmed_rows": 18
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "home": "Sunderland AFC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "home": "Aston Villa FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "home": "Everton FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "home": "Fulham FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "home": "Leeds United FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "home": "Newcastle United FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "home": "Arsenal FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "home": "Brentford FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "home": "Burnley FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "home": "Crystal Palace FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "home": "Liverpool FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "home": "Sunderland AFC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "home": "West Ham United FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-22",
+      "home": "AFC Bournemouth",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "home": "Aston Villa FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "home": "Brentford FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 11,
+        "starters": 11,
+        "confirmed_rows": 11
+      },
+      "away_counts": {
+        "rows": 11,
+        "starters": 11,
+        "confirmed_rows": 11
+      }
+    },
+    {
+      "date": "2026-04-21",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "home": "Crystal Palace FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "home": "Everton FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 19,
+        "starters": 11,
+        "confirmed_rows": 19
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "home": "Leeds United FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "home": "Newcastle United FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "home": "Tottenham Hotspur FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "home": "Arsenal FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "home": "Fulham FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "home": "Liverpool FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "home": "West Ham United FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "home": "AFC Bournemouth",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "home": "Arsenal FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "home": "Aston Villa FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "home": "Brentford FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "home": "Leeds United FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "home": "Newcastle United FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "home": "Burnley FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "home": "Crystal Palace FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "home": "Fulham FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "home": "Liverpool FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "home": "Tottenham Hotspur FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "home": "West Ham United FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-18",
+      "home": "Arsenal FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-15",
+      "home": "Aston Villa FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "home": "Brentford FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-19",
+      "home": "Chelsea FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "home": "Everton FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "home": "Leeds United FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "home": "Newcastle United FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "home": "Burnley FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "home": "Crystal Palace FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "home": "Fulham FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "home": "Liverpool FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "home": "Sunderland AFC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "home": "Tottenham Hotspur FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "home": "West Ham United FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "home": "AFC Bournemouth",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "home": "Brentford FC",
+      "away": "Chelsea FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-14",
+      "home": "Burnley FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "home": "Crystal Palace FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "home": "Everton FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "home": "Fulham FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "home": "Newcastle United FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "home": "West Ham United FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-21",
+      "home": "AFC Bournemouth",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "home": "Fulham FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "home": "Liverpool FC",
+      "away": "Everton FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-21",
+      "home": "Sunderland AFC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "home": "West Ham United FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-28",
+      "home": "Aston Villa FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "home": "Chelsea FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "home": "Crystal Palace FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-29",
+      "home": "Everton FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "home": "Leeds United FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-28",
+      "home": "Newcastle United FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "home": "Tottenham Hotspur FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-03",
+      "home": "AFC Bournemouth",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "home": "Arsenal FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "home": "Aston Villa FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "home": "Chelsea FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "home": "Everton FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "home": "Leeds United FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Newcastle United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "home": "Burnley FC",
+      "away": "Leeds United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "home": "Crystal Palace FC",
+      "away": "AFC Bournemouth",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "home": "Fulham FC",
+      "away": "Arsenal FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "home": "Sunderland AFC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-19",
+      "home": "Tottenham Hotspur FC",
+      "away": "Aston Villa FC",
+      "home_counts": {
+        "rows": 19,
+        "starters": 11,
+        "confirmed_rows": 19
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-20",
+      "home": "West Ham United FC",
+      "away": "Brentford FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "home": "Arsenal FC",
+      "away": "Crystal Palace FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "home": "Brentford FC",
+      "away": "Liverpool FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "home": "Chelsea FC",
+      "away": "Sunderland AFC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "home": "Everton FC",
+      "away": "Tottenham Hotspur FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-24",
+      "home": "Leeds United FC",
+      "away": "West Ham United FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "home": "Newcastle United FC",
+      "away": "Fulham FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Burnley FC",
+      "home_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      },
+      "away_counts": {
+        "rows": 20,
+        "starters": 11,
+        "confirmed_rows": 20
+      }
+    }
+  ],
+  "incomplete_matches": [],
+  "unmatched_matches": [
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-arsenal",
+      "home": "Man Utd",
+      "away": "Arsenal",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "arsenal"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-brentford",
+      "home": "Nott'm Forest",
+      "away": "Brentford",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "brentford"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-wolverhampton-wanderers-vs-manchester-city",
+      "home": "Wolves",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "wolves",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-afc-bournemouth",
+      "home": "Man City",
+      "away": "Bournemouth",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "bournemouth"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-manchester-united",
+      "home": "Nott'm Forest",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-liverpool",
+      "home": "Man City",
+      "away": "Liverpool",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "liverpool"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-leeds-united",
+      "home": "Nott'm Forest",
+      "away": "Leeds",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "leeds"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-tottenham-hotspur-vs-manchester-united",
+      "home": "Spurs",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "tottenham",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-liverpool-vs-nottingham-forest",
+      "home": "Liverpool",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "liverpool",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-everton",
+      "home": "Man Utd",
+      "away": "Everton",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "everton"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-newcastle-united-vs-manchester-city",
+      "home": "Newcastle",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "newcastle",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-crystal-palace-vs-manchester-united",
+      "home": "Crystal Palace",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "crystal palace",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-leeds-united",
+      "home": "Man City",
+      "away": "Leeds",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "leeds"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-brighton-hove-albion",
+      "home": "Nott'm Forest",
+      "away": "Brighton",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "brighton"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-fulham-vs-manchester-city",
+      "home": "Fulham",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "fulham",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-west-ham-united",
+      "home": "Man Utd",
+      "away": "West Ham",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "west ham"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-wolverhampton-wanderers-vs-nottingham-forest",
+      "home": "Wolves",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "wolves",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-everton-vs-nottingham-forest",
+      "home": "Everton",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "everton",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-sunderland",
+      "home": "Man City",
+      "away": "Sunderland",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "sunderland"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-wolverhampton-wanderers-vs-manchester-united",
+      "home": "Wolves",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "wolves",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-crystal-palace-vs-manchester-city",
+      "home": "Crystal Palace",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "crystal palace",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-afc-bournemouth",
+      "home": "Man Utd",
+      "away": "Bournemouth",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "bournemouth"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-tottenham-hotspur",
+      "home": "Nott'm Forest",
+      "away": "Spurs",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "tottenham"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-aston-villa-vs-manchester-united",
+      "home": "Aston Villa",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "aston villa",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-fulham-vs-nottingham-forest",
+      "home": "Fulham",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "fulham",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-west-ham-united",
+      "home": "Man City",
+      "away": "West Ham",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "west ham"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-newcastle-united",
+      "home": "Man Utd",
+      "away": "Newcastle",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "newcastle"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-manchester-city",
+      "home": "Nott'm Forest",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-wolverhampton-wanderers",
+      "home": "Man Utd",
+      "away": "Wolves",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "wolves"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-everton",
+      "home": "Nott'm Forest",
+      "away": "Everton",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "everton"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-sunderland-vs-manchester-city",
+      "home": "Sunderland",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "sunderland",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-crystal-palace-vs-nottingham-forest",
+      "home": "Crystal Palace",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "crystal palace",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-fulham-vs-manchester-united",
+      "home": "Fulham",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "fulham",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-tottenham-hotspur",
+      "home": "Man City",
+      "away": "Spurs",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "tottenham"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-aston-villa-vs-nottingham-forest",
+      "home": "Aston Villa",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "aston villa",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-leeds-united-vs-manchester-united",
+      "home": "Leeds",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "leeds",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-chelsea",
+      "home": "Man City",
+      "away": "Chelsea",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "chelsea"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-burnley-vs-manchester-united",
+      "home": "Burnley",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "burnley",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-brighton-hove-albion",
+      "home": "Man City",
+      "away": "Brighton",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "brighton"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-west-ham-united-vs-nottingham-forest",
+      "home": "West Ham",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "west ham",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-manchester-city",
+      "home": "Man Utd",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-arsenal",
+      "home": "Nott'm Forest",
+      "away": "Arsenal",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "arsenal"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-arsenal-vs-manchester-united",
+      "home": "Arsenal",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "arsenal",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-brentford-vs-nottingham-forest",
+      "home": "Brentford",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "brentford",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-wolverhampton-wanderers",
+      "home": "Man City",
+      "away": "Wolves",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "wolves"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-fulham",
+      "home": "Man Utd",
+      "away": "Fulham",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "fulham"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-crystal-palace",
+      "home": "Nott'm Forest",
+      "away": "Crystal Palace",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "crystal palace"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-tottenham-hotspur-vs-manchester-city",
+      "home": "Spurs",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "tottenham",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-leeds-united-vs-nottingham-forest",
+      "home": "Leeds",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "leeds",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-liverpool-vs-manchester-city",
+      "home": "Liverpool",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "liverpool",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-tottenham-hotspur",
+      "home": "Man Utd",
+      "away": "Spurs",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "tottenham"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-fulham",
+      "home": "Man City",
+      "away": "Fulham",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "fulham"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-wolverhampton-wanderers",
+      "home": "Nott'm Forest",
+      "away": "Wolves",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "wolves"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-west-ham-united-vs-manchester-united",
+      "home": "West Ham",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "west ham",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-everton-vs-manchester-united",
+      "home": "Everton",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "everton",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-newcastle-united",
+      "home": "Man City",
+      "away": "Newcastle",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "newcastle"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-liverpool",
+      "home": "Nott'm Forest",
+      "away": "Liverpool",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "liverpool"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-brighton-hove-albion-vs-nottingham-forest",
+      "home": "Brighton",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "brighton",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-leeds-united-vs-manchester-city",
+      "home": "Leeds",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "leeds",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-crystal-palace",
+      "home": "Man Utd",
+      "away": "Crystal Palace",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "crystal palace"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-nottingham-forest",
+      "home": "Man City",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-newcastle-united-vs-manchester-united",
+      "home": "Newcastle",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "newcastle",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-brighton-hove-albion-vs-manchester-city",
+      "home": "Brighton",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "brighton",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-burnley",
+      "home": "Man Utd",
+      "away": "Burnley",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "burnley"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-west-ham-united",
+      "home": "Nott'm Forest",
+      "away": "West Ham",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "west ham"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-aston-villa",
+      "home": "Man Utd",
+      "away": "Aston Villa",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "aston villa"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-fulham",
+      "home": "Nott'm Forest",
+      "away": "Fulham",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "fulham"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-west-ham-united-vs-manchester-city",
+      "home": "West Ham",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "west ham",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-afc-bournemouth-vs-manchester-united",
+      "home": "Bournemouth",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "bournemouth",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-tottenham-hotspur-vs-nottingham-forest",
+      "home": "Spurs",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "tottenham",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-chelsea-vs-manchester-city",
+      "home": "Chelsea",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "chelsea",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-leeds-united",
+      "home": "Man Utd",
+      "away": "Leeds",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "leeds"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-aston-villa",
+      "home": "Nott'm Forest",
+      "away": "Aston Villa",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "aston villa"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-burnley-vs-manchester-city",
+      "home": "Burnley",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "burnley",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-chelsea-vs-manchester-united",
+      "home": "Chelsea",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "chelsea",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-arsenal",
+      "home": "Man City",
+      "away": "Arsenal",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "arsenal"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-burnley",
+      "home": "Nott'm Forest",
+      "away": "Burnley",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "burnley"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-brentford",
+      "home": "Man Utd",
+      "away": "Brentford",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "brentford"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-sunderland-vs-nottingham-forest",
+      "home": "Sunderland",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "sunderland",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-chelsea-vs-nottingham-forest",
+      "home": "Chelsea",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "chelsea",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-everton-vs-manchester-city",
+      "home": "Everton",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "everton",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-liverpool",
+      "home": "Man Utd",
+      "away": "Liverpool",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "liverpool"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-brentford",
+      "home": "Man City",
+      "away": "Brentford",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "brentford"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-crystal-palace",
+      "home": "Man City",
+      "away": "Crystal Palace",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "crystal palace"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-newcastle-united",
+      "home": "Nott'm Forest",
+      "away": "Newcastle",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "newcastle"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-sunderland-vs-manchester-united",
+      "home": "Sunderland",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "sunderland",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-afc-bournemouth-vs-manchester-city",
+      "home": "Bournemouth",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "bournemouth",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-nottingham-forest",
+      "home": "Man Utd",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-brighton-hove-albion-vs-manchester-united",
+      "home": "Brighton",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "brighton",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-aston-villa",
+      "home": "Man City",
+      "away": "Aston Villa",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "aston villa"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-afc-bournemouth",
+      "home": "Nott'm Forest",
+      "away": "Bournemouth",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "bournemouth"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-arsenal-vs-nottingham-forest",
+      "home": "Arsenal",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "arsenal",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-manchester-united",
+      "home": "Man City",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-arsenal-vs-manchester-city",
+      "home": "Arsenal",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "arsenal",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-burnley-vs-nottingham-forest",
+      "home": "Burnley",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "burnley",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-chelsea",
+      "home": "Man Utd",
+      "away": "Chelsea",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "chelsea"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-brentford-vs-manchester-united",
+      "home": "Brentford",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "brentford",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-burnley",
+      "home": "Man City",
+      "away": "Burnley",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "burnley"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-sunderland",
+      "home": "Nott'm Forest",
+      "away": "Sunderland",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "sunderland"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-brentford-vs-manchester-city",
+      "home": "Brentford",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "brentford",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-sunderland",
+      "home": "Man Utd",
+      "away": "Sunderland",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "sunderland"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-newcastle-united-vs-nottingham-forest",
+      "home": "Newcastle",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "newcastle",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-liverpool-vs-manchester-united",
+      "home": "Liverpool",
+      "away": "Man Utd",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "liverpool",
+        "man utd"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-city-vs-everton",
+      "home": "Man City",
+      "away": "Everton",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man city",
+        "everton"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-nottingham-forest-vs-chelsea",
+      "home": "Nott'm Forest",
+      "away": "Chelsea",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "nott m forest",
+        "chelsea"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-afc-bournemouth-vs-nottingham-forest",
+      "home": "Bournemouth",
+      "away": "Nott'm Forest",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "bournemouth",
+        "nott m forest"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-aston-villa-vs-manchester-city",
+      "home": "Aston Villa",
+      "away": "Man City",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "aston villa",
+        "man city"
+      ]
+    },
+    {
+      "upstream_match_id": "25-26-prem-manchester-united-vs-brighton-hove-albion",
+      "home": "Man Utd",
+      "away": "Brighton",
+      "status": "unmatched_team_pair",
+      "baseline_candidates": 0,
+      "normalized_pair": [
+        "man utd",
+        "brighton"
+      ]
+    }
+  ],
+  "errors": []
+}
