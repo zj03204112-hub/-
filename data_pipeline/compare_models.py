@@ -62,8 +62,14 @@ def metrics_add(d,p,actual):
     d["logloss"]-=math.log(max(1e-12,p[actual]))
 
 def finish(d):
-    return {"n":d["n"],"accuracy":round(d["correct"]/d["n"],4),
-            "brier":round(d["brier"]/d["n"],4),"logloss":round(d["logloss"]/d["n"],4)}
+    # Empty holdout groups are valid data-coverage outcomes; report null metrics
+    # instead of failing the entire validation workflow with ZeroDivisionError.
+    n = int(d.get("n", 0) or 0)
+    if n <= 0:
+        return {"n": 0, "accuracy": None, "brier": None, "logloss": None,
+                "note": "No eligible matches in this group; metrics are undefined."}
+    return {"n": n, "accuracy": round(d["correct"]/n,4),
+            "brier": round(d["brier"]/n,4), "logloss": round(d["logloss"]/n,4)}
 
 def real_strength_metrics(con,team,cutoff):
     x=hist(con,team,cutoff)[:10]
