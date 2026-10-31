@@ -174,7 +174,8 @@ audit = {
     "match_coverage_pct":round(100*len(grouped)/len(baseline),2) if baseline else 0,
     "complete_starting_xi_coverage_pct":round(100*len(complete_matches)/len(baseline),2) if baseline else 0,
     "complete_matches":complete_matches,"incomplete_matches":invalid_matches,
-    "baseline_pair_examples":baseline_pair_examples,"upstream_pair_examples":upstream_pair_examples,\n    "unmatched_matches":match_audit,"errors":errors
+    "baseline_pair_examples":baseline_pair_examples,"upstream_pair_examples":upstream_pair_examples,
+    "unmatched_matches":match_audit,"errors":errors
 }
 AUDIT_OUT.write_text(json.dumps(audit,ensure_ascii=False,indent=2),encoding="utf-8")
 print(json.dumps({k:audit[k] for k in ["baseline_match_rows","upstream_fixture_files","upstream_lineup_files","lineup_player_rows_joined","unique_baseline_matches_with_lineup_rows","complete_confirmed_starting_xi_matches","invalid_or_incomplete_starting_xi_matches","unmatched_or_ambiguous_matches","fetch_or_join_errors","match_coverage_pct","complete_starting_xi_coverage_pct"]},ensure_ascii=False))
