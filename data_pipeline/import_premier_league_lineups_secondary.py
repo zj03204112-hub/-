@@ -16,34 +16,31 @@ API = f"https://api.github.com/repos/{REPO}/git/trees/{REF}?recursive=1"
 RAW = f"https://raw.githubusercontent.com/{REPO}/{REF}/"
 OUT = Path("data/season_match_detail")
 OUT.mkdir(parents=True, exist_ok=True)
-BASELINE = OUT / "premier-league_2025_enriched.csv"
+BASELINE = OUT / "premier-league_2025_openfootball_results.csv"
 LINEUPS_OUT = OUT / "premier-league_2025_lineups_secondary.csv"
 AUDIT_OUT = OUT / "premier-league_2025_lineups_audit.json"
 HEADERS = {"User-Agent": "football-model-data-audit/1.0"}
 
 def norm(s):
-    # Normalize suffixes/prefixes before aliases; otherwise e.g. "Brighton & Hove Albion FC"
-    # misses the alias for "Brighton & Hove Albion".
     s = re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
-    for _ in range(2):
-        for suffix in (" football club", " fc", " afc"):
-            if s.endswith(suffix):
-                s = s[:-len(suffix)].strip()
-        for prefix in ("afc ",):
-            if s.startswith(prefix):
-                s = s[len(prefix):].strip()
+    # Normalize common suffixes/prefixes before alias lookup; source names differ.
+    for suffix in (" football club", " fc", " afc"):
+        if s.endswith(suffix):
+            s = s[:-len(suffix)].strip()
+    if s.startswith("afc "):
+        s = s[4:].strip()
     aliases = {
-        "afc bournemouth":"bournemouth", "bournemouth":"bournemouth",
+        "bournemouth":"bournemouth", "afc bournemouth":"bournemouth",
         "brighton hove albion":"brighton", "brighton and hove albion":"brighton",
-        "tottenham hotspur":"tottenham", "tottenham":"tottenham",
-        "newcastle united":"newcastle", "newcastle":"newcastle",
-        "west ham united":"west ham", "west ham":"west ham",
-        "wolverhampton wanderers":"wolves", "wolverhampton":"wolves", "wolves":"wolves",
-        "manchester united":"manchester united", "man utd":"manchester united",
-        "manchester city":"manchester city", "man city":"manchester city",
-        "leeds united":"leeds", "leeds":"leeds",
-        "nottingham forest":"nottingham forest", "aston villa":"aston villa",
-        "crystal palace":"crystal palace", "sunderland":"sunderland",
+        "tottenham hotspur":"tottenham", "spurs":"tottenham",
+        "newcastle united":"newcastle", "west ham united":"west ham",
+        "wolverhampton wanderers":"wolves", "wolverhampton":"wolves",
+        "manchester united":"manchester united", "manchester city":"manchester city",
+        "leeds united":"leeds", "nottingham forest":"nottingham forest",
+        "aston villa":"aston villa", "crystal palace":"crystal palace",
+        "sunderland":"sunderland", "liverpool":"liverpool",
+        "arsenal":"arsenal", "chelsea":"chelsea", "fulham":"fulham",
+        "brentford":"brentford", "burnley":"burnley", "everton":"everton"
     }
     return aliases.get(s, s)
 
@@ -75,7 +72,6 @@ if len(fixture_paths) < 30 or len(lineup_paths) < 30:
     raise SystemExit(f"Unexpected upstream coverage: fixtures={len(fixture_paths)}, lineups={len(lineup_paths)}")
 
 fixture_map, player_rows, match_audit, errors = {}, [], [], []
-upstream_pair_examples = []
 for path in fixture_paths:
     try:
         for m in read_csv_url(RAW + requests.utils.requote_uri(path)):
@@ -90,34 +86,58 @@ for path in fixture_paths:
     except Exception as e:
         errors.append({"path":path,"error":str(e)})
 
+# Group roster rows by upstream match first. Audit each match once (not once per player).
+rosters = {}
 for path in lineup_paths:
     try:
         for p in read_csv_url(RAW + requests.utils.requote_uri(path)):
             mid = p.get("match_id", "")
-            fx = fixture_map.get(mid)
-            if not fx:
+            if mid not in fixture_map:
                 errors.append({"path":path,"error":"lineup_match_id_missing_fixture","match_id":mid})
                 continue
-            pair = fx["pair"]
-            candidates = base_by_pair.get(pair, [])
-            # There should be exactly one EPL fixture per home/away pair in a season.
-            join_status = "matched_unique_team_pair" if len(candidates) == 1 else ("unmatched_team_pair" if not candidates else "ambiguous_team_pair")
-            if join_status != "matched_unique_team_pair":
-                match_audit.append({"upstream_match_id":mid,"home":fx["home"],"away":fx["away"],"status":join_status,"baseline_candidates":len(candidates)})
-                continue
-            b = candidates[0]
-            player_rows.append({
-                "baseline_date":b.get("date",""), "home_team":b.get("home_team",""), "away_team":b.get("away_team",""),
-                "understat_match_id":b.get("understat_match_id",""), "upstream_match_id":mid,
-                "upstream_gameweek":fx["gameweek"], "upstream_kickoff_time":fx["kickoff_time"],
-                "team_side":p.get("team_side",""), "player_id":p.get("player_id",""),
-                "player_name":p.get("player_name",""), "position":p.get("position",""),
-                "jersey_number":p.get("jersey_number",""), "is_starting":p.get("is_starting",""),
-                "formation":p.get("formation",""), "lineup_status":p.get("lineup_status",""),
-                "lineup_source_repo":REPO, "lineup_source_commit":REF
-            })
+            rosters.setdefault(mid, []).append(p)
     except Exception as e:
         errors.append({"path":path,"error":str(e)})
+
+for mid, ps in rosters.items():
+    fx = fixture_map[mid]
+    pair = fx["pair"]
+    candidates = base_by_pair.get(pair, [])
+    # If team pair is unique, additionally check date consistency (UTC/civil dates may differ by one).
+    if len(candidates) == 1:
+        b = candidates[0]
+        try:
+            fixture_date = datetime.fromisoformat(str(fx["kickoff_time"]).replace("Z","+00:00")).date()
+            baseline_date = datetime.strptime(str(b.get("date",""))[:10], "%Y-%m-%d").date()
+            date_delta = abs((fixture_date - baseline_date).days)
+        except Exception:
+            date_delta = 99
+        if date_delta > 1:
+            candidates = []
+    status = "matched_unique_team_pair" if len(candidates) == 1 else ("unmatched_team_pair" if not candidates else "ambiguous_team_pair")
+    if status != "matched_unique_team_pair":
+        match_audit.append({"upstream_match_id":mid,"home":fx["home"],"away":fx["away"],"status":status,"baseline_candidates":len(candidates),"normalized_pair":list(pair)})
+        continue
+    b = candidates[0]
+    for p in ps:
+        player_rows.append({
+            "baseline_date":b.get("date",""), "home_team":b.get("home_team",""), "away_team":b.get("away_team",""),
+            "source_match_id":b.get("source_match_id",""), "upstream_match_id":mid,
+            "upstream_gameweek":fx["gameweek"], "upstream_kickoff_time":fx["kickoff_time"],
+            "team_side":p.get("team_side",""), "player_id":p.get("player_id",""),
+            "player_name":p.get("player_name",""), "position":p.get("position",""),
+            "jersey_number":p.get("jersey_number",""), "is_starting":p.get("is_starting",""),
+            "formation":p.get("formation",""), "lineup_status":p.get("lineup_status",""),
+            "lineup_source_repo":REPO, "lineup_source_commit":REF
+        })
+
+# Diagnostics help distinguish team-alias problems from missing source coverage.
+print(json.dumps({
+    "baseline_first_pair":[baseline[0].get("home_team"),baseline[0].get("away_team")],
+    "baseline_first_pair_normalized":[norm(baseline[0].get("home_team")),norm(baseline[0].get("away_team"))],
+    "upstream_sample_pairs":[{"home":v["home"],"away":v["away"],"pair":list(v["pair"])} for v in list(fixture_map.values())[:5]],
+    "roster_match_ids":len(rosters)
+},ensure_ascii=False))
 
 # Per-match lineup completeness: exactly 11 starters for each side, plus explicit status.
 grouped = {}
@@ -144,7 +164,7 @@ audit = {
     "season":"2025-26","source":"FPL-Core-Insights public data integration review branch",
     "source_repo":f"https://github.com/{REPO}","source_commit":REF,
     "source_note":"Third-party secondary lineup dataset; pinned to a specific commit for reproducibility. This import does not overwrite the baseline results or Understat xG.",
-    "baseline_match_rows":len(baseline),"upstream_fixture_files":len(fixture_paths),"upstream_lineup_files":len(lineup_paths),
+    "baseline_source":"OpenFootball season results CSV; third-party lineup source pinned separately",\n    "baseline_match_rows":len(baseline),"upstream_fixture_files":len(fixture_paths),"upstream_lineup_files":len(lineup_paths),
     "upstream_fixture_ids":len(fixture_map),"lineup_player_rows_joined":len(player_rows),
     "unique_baseline_matches_with_lineup_rows":len(grouped),
     "complete_confirmed_starting_xi_matches":len(complete_matches),
