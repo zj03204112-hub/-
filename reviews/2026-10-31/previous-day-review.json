@@ -1,0 +1,160 @@
+{
+  "report_version": "daily-football-review-2026-10-31-v1",
+  "generated_at_beijing": "2026-10-31T09:58:45+08:00",
+  "review_date_beijing": "2026-10-30",
+  "result_policy": "Only confirmed full-time results in Beijing date 2026-10-30 are included. Extra-time and penalties are not substituted for 90-minute scores.",
+  "confirmed_results_count": 8,
+  "results_by_type": {
+    "domestic_league_core": 2,
+    "domestic_cup": 1,
+    "other_domestic_leagues": 5
+  },
+  "results": [
+    {
+      "competition": "Veikkausliiga Championship Group",
+      "type": "other_domestic_league",
+      "home": "Inter Turku",
+      "away": "HJK Helsinki",
+      "score_90m": "2-4",
+      "result_source": "https://www.veikkausliiga.com/tilastot/2026/veikkausliiga/ottelut/4353564/ryhmitys/",
+      "xg_status": "MISSING",
+      "missing_reason": "No verified match-level full-time xG captured."
+    },
+    {
+      "competition": "Allsvenskan",
+      "type": "other_domestic_league",
+      "home": "Hammarby",
+      "away": "Sirius",
+      "score_90m": "2-0",
+      "result_source": "https://scangoal.com/match/hammarby-vs-sirius-20261029",
+      "xg_sources": [
+        {
+          "provider": "ScanGoal; underlying model/version not disclosed",
+          "home_xg": 1.48,
+          "away_xg": 1.69
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE"
+    },
+    {
+      "competition": "Serie A",
+      "type": "domestic_league",
+      "home": "Frosinone",
+      "away": "Lecce",
+      "score_90m": "5-1",
+      "result_source": "https://www.flashscore.com.au/match/football/frosinone-pfo9H1Wp/lecce-G8lYsMgU/?mid=As77hb15",
+      "xg_sources": [
+        {
+          "provider": "RatingBet; underlying model/version not disclosed",
+          "home_xg": 2.79,
+          "away_xg": 1.1
+        },
+        {
+          "provider": "Flashscore; model version undisclosed",
+          "home_xg": 3.07,
+          "away_xg": 1.45
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE_MULTIPLE_SOURCES"
+    },
+    {
+      "competition": "Serie A",
+      "type": "domestic_league",
+      "home": "Fiorentina",
+      "away": "Atalanta",
+      "score_90m": "2-2",
+      "result_source": "https://results.fast/football/italy/results/2026-10-29",
+      "xg_sources": [
+        {
+          "provider": "xG.Football; model version not disclosed",
+          "home_xg": 1.67,
+          "away_xg": 1.16
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE"
+    },
+    {
+      "competition": "EFL Cup",
+      "type": "domestic_cup",
+      "home": "Everton",
+      "away": "Newcastle United",
+      "score_90m": "3-1",
+      "result_source": "https://www.fotmob.com/matches/everton-vs-newcastle-united/2yo9qd?player=188058",
+      "xg_sources": [
+        {
+          "provider": "FotMob / Opta",
+          "home_xg": 1.84,
+          "away_xg": 2.09
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE"
+    },
+    {
+      "competition": "Brasileirão Série A",
+      "type": "other_domestic_league",
+      "home": "Atlético Mineiro",
+      "away": "Cruzeiro",
+      "score_90m": "0-1",
+      "result_source": "https://www.ogol.com.br/ao-vivo/2026-10-29-atletico-mineiro-cruzeiro/11861104",
+      "xg_sources": [
+        {
+          "provider": "oGol; model version undisclosed",
+          "home_xg": 0.35,
+          "away_xg": 1.23
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE"
+    },
+    {
+      "competition": "Brasileirão Série A",
+      "type": "other_domestic_league",
+      "home": "Vasco da Gama",
+      "away": "Flamengo",
+      "score_90m": "1-4",
+      "result_source": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/10/29/vasco-x-flamengo.ghtm",
+      "xg_status": "MISSING",
+      "missing_reason": "No verified full-time match xG captured; do not infer from score."
+    },
+    {
+      "competition": "Brasileirão Série A",
+      "type": "other_domestic_league",
+      "home": "Grêmio",
+      "away": "Athletico Paranaense",
+      "score_90m": "2-0",
+      "result_source": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/10/29/gremio-athletico-brasileirao.ghtm",
+      "xg_sources": [
+        {
+          "provider": "The Pressline; model version undisclosed",
+          "home_xg": 1.5,
+          "away_xg": 1.4
+        }
+      ],
+      "xg_status": "AVAILABLE_PROVIDER_MODEL_ESTIMATE",
+      "prior_pending_status": "Earlier W44 snapshot had this match as IN_PROGRESS_NOT_FINAL; this new snapshot records the confirmed final result without altering the prior snapshot."
+    }
+  ],
+  "immutable_prediction_snapshot_audit": {
+    "repository_branch_checked": "automation/daily-football-2026-10-30",
+    "prediction_paths_found": [
+      "predictions/continental-club/2026-10-29/acl2-shanghai-shenhua-machida-v5.2-101220.json",
+      "predictions/continental-club/2026-10-29/acl2-shanghai-shenhua-machida-zelvia-v5.2.json"
+    ],
+    "snapshots_matching_reviewed_matches": 0,
+    "reviewed_matches_without_immutable_snapshot": 8,
+    "formal_accuracy_metrics": {
+      "ninety_minute_hda": "UNVERIFIABLE",
+      "first_score_exact_hit": "UNVERIFIABLE",
+      "second_score_exact_hit": "UNVERIFIABLE",
+      "sporttery_handicap_hda": "UNVERIFIABLE",
+      "half_full_time": "UNVERIFIABLE",
+      "risk_warning_hit": "UNVERIFIABLE"
+    },
+    "reason": "No immutable pre-match snapshot found for any of these eight matches. No chat-only picks were reverse-engineered. Official Sporttery handicaps were not verified, so handicap results cannot be mechanically mapped."
+  },
+  "database_connection_used": false,
+  "limitations": [
+    "No SQLite connection was used in this run; the repository contains a SQLite file, but no live database query was executed.",
+    "Raw source HTML/API payloads and SHA-256 hashes were not archived.",
+    "No formal accuracy claim is permitted for the eight matches."
+  ]
+}
