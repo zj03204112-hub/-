@@ -1,0 +1,29 @@
+{
+  "report_version": "xg-coverage-audit-2026-10-31-095845",
+  "generated_at_beijing": "2026-10-31T09:58:45+08:00",
+  "iso_week": "2026-W44",
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "reviewed_archive_unique_matches": 47,
+  "matches_with_confirmed_90m_scores": 47,
+  "unique_matches_with_any_provider_fulltime_xg": 20,
+  "unique_matches_missing_verified_fulltime_xg": 27,
+  "reviewed_archive_xg_coverage_pct": 42.55,
+  "scope_note": "This is coverage of the repository's reviewed tracked-match archive, not coverage of every fixture or every team in the seven core leagues.",
+  "team_week_records": 94,
+  "team_provider_week_records": 114,
+  "source_specific_totals": true,
+  "pre_match_leakage_check": {
+    "same_match_postmatch_xg_used_as_pre_match_input": false,
+    "pre_match_prediction_generated_in_this_run": false,
+    "note": "This run generated no predictions. New xG rows are post-match supplier estimates and must not be fed into pre-match features for those same matches."
+  },
+  "missing_coverage_reasons": [
+    "No verified match-level full-time xG source found",
+    "Some pages exposed pre-match or team-average estimates only; these were not treated as match xG",
+    "Raw HTML/API payloads and SHA-256 hashes were not archived",
+    "Official provider event IDs remain unresolved for newly added matches",
+    "Full seven-league team-week fixture coverage is not yet complete"
+  ],
+  "database_connection_used": false
+}
