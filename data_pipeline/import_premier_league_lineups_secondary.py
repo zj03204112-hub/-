@@ -74,7 +74,8 @@ lineup_paths = sorted(x["path"] for x in entries if x["path"].startswith("data/2
 if len(fixture_paths) < 30 or len(lineup_paths) < 30:
     raise SystemExit(f"Unexpected upstream coverage: fixtures={len(fixture_paths)}, lineups={len(lineup_paths)}")
 
-fixture_map, player_rows, match_audit, errors = {}, [], [], []\nupstream_pair_examples = []
+fixture_map, player_rows, match_audit, errors = {}, [], [], []
+upstream_pair_examples = []
 for path in fixture_paths:
     try:
         for m in read_csv_url(RAW + requests.utils.requote_uri(path)):
