@@ -23,18 +23,33 @@
   "corrected_files": [
     {
       "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/match_xg_snapshot-100230-corrected.csv",
-      "sha_after_write": null,
-      "correction_applied": true
+      "blob_sha": "7539bcdc478540b68f0c5e70ec54fbb7fd78dff6",
+      "bytes": 131278,
+      "readback_verified": true
     },
     {
       "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_xg_snapshot-100230-corrected.csv",
-      "sha_after_write": null,
-      "correction_applied": true
+      "blob_sha": "8149dc5949253ce3fad6aeb3079233a46b104d8e",
+      "bytes": 99270,
+      "readback_verified": true
     },
     {
       "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_coverage_snapshot-100230-corrected.csv",
-      "sha_after_write": null,
-      "correction_applied": true
+      "blob_sha": "3778c4cecac8b684dbf6f79d7f75f664379a3c2f",
+      "bytes": 58185,
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/xg_coverage_audit-100230-corrected.json",
+      "blob_sha": "0c560f4bfa54ea80e3b8642be5b6671cf27a3e6d",
+      "bytes": 2581,
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/xg_source_discrepancy_audit-100230-corrected.json",
+      "blob_sha": "1343cf799b1deff60940e5f5f32325f3f31e21f6",
+      "bytes": 5381,
+      "readback_verified": true
     }
   ],
   "counts_unchanged": true,
