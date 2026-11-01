@@ -70,4 +70,4 @@
 - 官方 J.League Data Site 赛程列表中，2026-09-19 川崎Ｆ 3-3 鹿岛对应官方比赛记录 `match_card_id=34596`。已将该 ID 和官方 Data Site 详情 URL 写入 `j1_2026_match_id_mapping.csv`，不再留空。
 - 对比 `j1_2026_match_id_mapping.csv` 与 `data/auto_results/J1_League_2026_27.csv` 时发现后者少 1 场：2026-10-31 柏 4-0 浦和。官方记录 `match_card_id=34644` 确认日期、比分、首发、替补及换人事件；已补入赛果 CSV。两表现在均为 126 场，按日期+主客队键 126/126 对齐。
 - 官方数据页复核证据：川崎Ｆ 3-3 鹿岛的 `match_card_id=34596`，以及柏 4-0 浦和的 `match_card_id=34644`。本轮未声称重新打开全部 126 个比赛详情页；其余场次保留原 CSV 中的逐场审计状态和备注，后续可按批次重新抽验/复核。
-- 韩国 K League 1 文件 `data/auto_results/K_League_1_2026_27.csv` 当前 80 行，`Date` 均为 ISO 日期，`Time` 与 `Time_UTC` 均为 HH:MM 格式；样例及全行格式检查无异常。本轮尚未完成所有 80 行的 UTC+9 时间算术独立复算，不能把格式检查等同于时区换算的逐行验证。
+- 韩国 K League 1 文件 `data/auto_results/K_League_1_2026_27.csv` 当前 80 行，`Date` 均为 ISO 日期，`Time` 与 `Time_UTC` 均为 HH:MM 格式；样例及全行格式检查无异常。已对 80/80 行完成 UTC+9 算术复算：每行 `Time` 均比 `Time_UTC` 快 540 分钟（按 24 小时取模），日期和时间格式检查 80/80 通过。此项验证的是字段之间的时区算术一致性，不等于逐场重新核对官方开球时间。
