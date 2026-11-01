@@ -99,6 +99,7 @@ def main():
             "retrieved_at_utc": datetime.now(timezone.utc).isoformat(),
             "lineup_status": "not_applicable_unfinished" if not completed else "not_retrieved",
             "xg_status": "not_applicable_unfinished" if not completed else "not_retrieved",
+            "substitution_events_status": "not_applicable_unfinished" if not completed else "not_retrieved",
         }
         if completed:
             fid = fixture.get("id")
@@ -214,6 +215,7 @@ def main():
             try:
                 events_file = CACHE / f"fixture_{fid}_events.json"
                 events_data = cached_json(events_file, lambda fid=fid: api("fixtures/events", {"fixture": fid}))
+                row["substitution_events_status"] = "ok"
                 for event in events_data.get("response", []):
                     if str(event.get("type", "")).strip().lower() not in {"subst", "substitution"}:
                         continue
@@ -251,6 +253,7 @@ def main():
                                 "retrieved_at_utc": row["retrieved_at_utc"]
                             }
             except Exception as exc:
+                row["substitution_events_status"] = "fetch_error"
                 errors.append({"fixture_id": fid, "substitution_events_error": str(exc)})
         rows.append(row)
         if n % 25 == 0:
