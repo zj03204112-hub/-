@@ -210,7 +210,6 @@ def main():
                         errors.append({"fixture_id": fid, "player_stats_error": f"Unexpected team ID in player stats response: {tid}"})
             except Exception as exc:
                 errors.append({"fixture_id": fid, "player_stats_error": str(exc)})
-            player_rows.extend(fixture_player_rows.values())
             # Preserve actual substitution events independently from the bench list and player minutes.
             try:
                 events_file = CACHE / f"fixture_{fid}_events.json"
@@ -255,6 +254,7 @@ def main():
             except Exception as exc:
                 row["substitution_events_status"] = "fetch_error"
                 errors.append({"fixture_id": fid, "substitution_events_error": str(exc)})
+            player_rows.extend(fixture_player_rows.values())
         rows.append(row)
         if n % 25 == 0:
             print(f"{league_name} {season}: processed {n}/{len(fixtures)} fixtures", flush=True)
