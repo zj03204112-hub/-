@@ -109,3 +109,10 @@
 - 本轮完成的是管线缺陷修复和工作流隔离；当前尚未运行 API-Football 采集，因此不能宣称已生成球员明细 CSV，也不能填写首发、出场或 xG 的实际覆盖率。
 - 执行采集需要仓库 Actions 中配置有效的 `API_FOOTBALL_KEY`。当前可用 GitHub 工具没有手动 dispatch 该 workflow 的动作，因此不能在本次对话里伪称已启动或已成功运行。
 - 下一步仅针对 J1：在 Actions 手动运行 `j1 / 2026`，取得真实 audit JSON 与 CSV 后再逐项验收；J1 未通过前不开始韩国联赛。
+
+
+### 第一阶段继续推进（本轮新增：J1 自动验收门）
+- 新增 `data_pipeline/audit_j1_phase1.py`，用于对实际生成的 `j1_2026.csv` 与 `j1_2026_players.csv` 进行结构/覆盖率审计：双方首发是否各 11 人、球员键和标准化姓名重复、实际出场统计响应覆盖、双方 xG 覆盖及缺失比赛 ID。
+- 更新 `.github/workflows/collect-season-match-detail.yml`：当手动选择 `j1` + `2026` 时，采集结束后先运行 J1 第一阶段审计，再进入数据提交步骤；审计 JSON 随 artifact 一并提供。
+- 新增代码提交：`ba91fba8c9ec441a425d23261287f7cb168846c4`（审计脚本）；`c3f0933daf3fa94b2d9e489321c7f0ed6b39213b`（工作流增加审计门）。
+- **当前状态仍为待运行：**尚未实际启动 Actions，因此还没有新的球员 CSV、审计 JSON 或真实覆盖率数字。启动需要 Actions 中配置有效 `API_FOOTBALL_KEY`。当前对话可用的 GitHub 工具没有 workflow dispatch 操作；工作流位于开发分支，且尚未合并默认分支。
