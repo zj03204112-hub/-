@@ -103,6 +103,8 @@ def main() -> int:
                 issues.append({"fixture_id": fid, "type": "xg_coverage", "detail": "Missing xG for one or both teams."})
             if str(m.get("home_xga", "")).strip() not in {"", "None", "null"} and str(m.get("away_xga", "")).strip() not in {"", "None", "null"}:
                 xga_both += 1
+                if str(m.get("home_xga")).strip() != str(m.get("away_xg")).strip() or str(m.get("away_xga")).strip() != str(m.get("home_xg")).strip():
+                    issues.append({"fixture_id": fid, "type": "xga_opponent_xg_mismatch", "detail": {"home_xga": m.get("home_xga"), "away_xg": m.get("away_xg"), "away_xga": m.get("away_xga"), "home_xg": m.get("home_xg")}})
             else:
                 issues.append({"fixture_id": fid, "type": "xga_coverage", "detail": "Missing xGA for one or both teams."})
             subst_status = str(m.get("substitution_events_status", "")).strip().lower()
@@ -113,6 +115,8 @@ def main() -> int:
             for event in substitutions_by_fixture.get(fid, []):
                 if not str(event.get("outgoing_player_name", "")).strip() or not str(event.get("incoming_player_name", "")).strip():
                     issues.append({"fixture_id": fid, "type": "incomplete_substitution_event", "detail": event})
+                if not str(event.get("outgoing_player_id", "")).strip() or not str(event.get("incoming_player_id", "")).strip():
+                    issues.append({"fixture_id": fid, "type": "substitution_event_missing_player_id", "detail": event})
                 if as_int(event.get("elapsed_minute")) is None:
                     issues.append({"fixture_id": fid, "type": "substitution_event_missing_minute", "detail": event})
 
