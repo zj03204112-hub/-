@@ -1,0 +1,46 @@
+{
+  "report_version": "xg-snapshot-correction-2026-11-01-v1",
+  "created_at_beijing": "2026-11-01T10:02:30+08:00",
+  "branch": "automation/daily-football-2026-11-01",
+  "reason": "Corrected J1 season typo: 2026-26 -> 2026-27 for Kashima Antlers and Cerezo Osaka.",
+  "original_files": [
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/match_xg_snapshot-095644.csv",
+      "blob_sha": "886263cf204beb75833638c7c105c04befc3cae8",
+      "preserved_unchanged": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_xg_snapshot-095644.csv",
+      "blob_sha": "5123757a001302afc35eb7234f834f4953838703",
+      "preserved_unchanged": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_coverage_snapshot-095644.csv",
+      "blob_sha": "9f5046214015a39b600c788eccf322b9427296be",
+      "preserved_unchanged": true
+    }
+  ],
+  "corrected_files": [
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/match_xg_snapshot-100230-corrected.csv",
+      "sha_after_write": null,
+      "correction_applied": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_xg_snapshot-100230-corrected.csv",
+      "sha_after_write": null,
+      "correction_applied": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_coverage_snapshot-100230-corrected.csv",
+      "sha_after_write": null,
+      "correction_applied": true
+    }
+  ],
+  "counts_unchanged": true,
+  "match_rows": 202,
+  "unique_matches": 87,
+  "weekly_summary_rows": 200,
+  "team_weekly_coverage_rows": 169,
+  "no_predictions_or_model_parameters_changed": true
+}
