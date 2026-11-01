@@ -75,5 +75,17 @@
     "The results CSV previously had 125 rows and omitted the official 2026-10-31 Kashiwa Reysol 4-0 Urawa Reds match (Data Site match_card_id=34644); this has been added.",
     "The mapping CSV's 2026-09-19 Kawasaki Frontale 3-3 Kashima Antlers row previously lacked provider_event_id; the official Data Site listing/report confirms match_card_id=34596.",
     "K League 1 date/time file separately checked: 80 rows have ISO dates and HH:MM local/UTC time fields; full timezone-offset arithmetic audit is tracked in the collection progress file."
-  ]
+  ],
+  "k_league_date_time_audit": {
+    "file": "data/auto_results/K_League_1_2026_27.csv",
+    "rows": 80,
+    "iso_date_format": "80/80",
+    "local_time_format": "80/80",
+    "utc_time_format": "80/80",
+    "local_minus_utc_offset_minutes_distribution": {
+      "540": 80
+    },
+    "status": "passed; all 80 rows have local Time exactly 9 hours ahead of Time_UTC modulo 24 hours",
+    "caveat": "This validates internal timezone arithmetic and field formatting, not an independent match-by-match official kickoff-time verification."
+  }
 }
