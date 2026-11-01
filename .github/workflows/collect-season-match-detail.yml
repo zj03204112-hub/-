@@ -1,6 +1,13 @@
 name: Collect season scores lineups and xG
 
 on:
+  push:
+    branches:
+      - audit/stable-match-id-mapping-20261101
+    paths:
+      - ".github/workflows/collect-season-match-detail.yml"
+      - "data_pipeline/fetch_season_results_lineups_xg.py"
+      - "data_pipeline/audit_j1_phase1.py"
   workflow_dispatch:
     inputs:
       league:
@@ -28,7 +35,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: season-detail-${{ inputs.league || 'premier-league' }}-${{ inputs.season || '2025' }}
+  group: season-detail-${{ inputs.league || (github.event_name == 'push' && 'j1') || 'premier-league' }}-${{ inputs.season || (github.event_name == 'push' && '2026') || '2025' }}
   cancel-in-progress: false
 
 jobs:
@@ -51,13 +58,13 @@ jobs:
       - name: Collect season match details
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-          LEAGUE_KEY: ${{ inputs.league || 'premier-league' }}
-          SEASON: ${{ inputs.season || '2025' }}
+          LEAGUE_KEY: ${{ inputs.league || (github.event_name == 'push' && 'j1') || 'premier-league' }}
+          SEASON: ${{ inputs.season || (github.event_name == 'push' && '2026') || '2025' }}
           REQUEST_PAUSE_SECONDS: "0.35"
         run: python data_pipeline/fetch_season_results_lineups_xg.py
 
       - name: Run J1 phase-one quality audit
-        if: ${{ inputs.league == 'j1' && inputs.season == '2026' }}
+        if: ${{ (inputs.league == 'j1' && inputs.season == '2026') || github.event_name == 'push' }}
         run: python data_pipeline/audit_j1_phase1.py
 
       - name: Commit season dataset and audit
@@ -78,7 +85,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: season-match-detail-${{ inputs.league || 'premier-league' }}-${{ inputs.season || '2025' }}
+          name: season-match-detail-${{ inputs.league || (github.event_name == 'push' && 'j1') || 'premier-league' }}-${{ inputs.season || (github.event_name == 'push' && '2026') || '2025' }}
           path: data/season_match_detail/
           if-no-files-found: warn
           retention-days: 90
