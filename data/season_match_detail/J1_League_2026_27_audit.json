@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-11-01",
+  "league": "J1 League",
+  "season": "2026/27",
+  "source_url": "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1&tv_relay_station_name=",
+  "source_type": "Official J.League Data Site",
+  "rows": 125,
+  "coverage_start": "2026-08-07",
+  "coverage_end": "2026-10-31",
+  "structural_validation": {
+    "date_iso_format": "125/125",
+    "scores_numeric": "125/125",
+    "home_away_present": "125/125",
+    "duplicate_date_home_away_keys": 0
+  },
+  "source_cross_checks": [
+    {
+      "date": "2026-08-07",
+      "home": "横浜FM",
+      "away": "鹿島",
+      "score": "3-4",
+      "official_match_url": "https://www.jleague.jp/match/j1/2026/080701/stats/",
+      "status": "matched"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "神戸",
+      "away": "名古屋",
+      "score": "3-1",
+      "official_match_url": "https://www.jleague.jp/en/match/j1/2026/103113/",
+      "status": "matched"
+    }
+  ],
+  "row_by_row_independent_recheck": "pending",
+  "lineups_and_actual_appearances": "not present in this results CSV; separate collection required",
+  "notes": [
+    "The CSV's source column points to the official J.League Data Site.",
+    "125 rows correspond to completed matches from 2026-08-07 through 2026-10-31; fixtures scheduled for 2026-11-01 are not included.",
+    "Structural checks passed; the two sample rows above were independently matched to official J.League match pages. Do not label the full 125-row independent recheck complete yet."
+  ]
+}
