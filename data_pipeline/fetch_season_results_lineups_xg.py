@@ -73,6 +73,7 @@ def main():
     if not fixtures:
         raise SystemExit(f"No fixtures returned for {league_name} season {season}; verify provider plan/season coverage.")
     rows = []
+    player_rows = []
     errors = []
     for n, item in enumerate(fixtures, 1):
         fixture = item.get("fixture", {})
@@ -100,18 +101,43 @@ def main():
         }
         if completed:
             fid = fixture.get("id")
+            # Normalized per-player records; listing as a substitute is not treated as an appearance.
+            fixture_player_rows = {}
+            team_info = {home.get("id"): (home.get("name"), "home"), away.get("id"): (away.get("name"), "away")}
             try:
                 lineup_file = CACHE / f"fixture_{fid}_lineups.json"
                 lineup_data = cached_json(lineup_file, lambda fid=fid: api("fixtures/lineups", {"fixture": fid}))
                 lineup_response = lineup_data.get("response", [])
                 for lineup in lineup_response:
                     team = (lineup.get("team") or {}).get("id")
+                    team_name = (lineup.get("team") or {}).get("name")
+                    side = team_info.get(team, (team_name, "unknown"))[1]
                     start = lineup.get("startXI") or []
                     subs = lineup.get("substitutes") or []
                     starters = [p.get("player", {}).get("name") for p in start if p.get("player", {}).get("name")]
-                    # API-Football lineup substitutes are listed, not proof of appearance.
                     row["home_starting_xi" if team == home.get("id") else "away_starting_xi"] = starters
-                    # Actual appearances will be resolved from player fixture statistics below.
+                    # Keep both starters and listed substitutes; actual minutes are joined from fixtures/players.
+                    for is_starting, entries in ((True, start), (False, subs)):
+                        for entry in entries:
+                            p = entry.get("player") or {}
+                            name = p.get("name")
+                            pid = p.get("id")
+                            if not name:
+                                continue
+                            pkey = (str(team), str(pid) if pid is not None else name)
+                            fixture_player_rows[pkey] = {
+                                "fixture_id": fid, "league": league_name, "season_start_year": season,
+                                "kickoff_utc": fixture.get("date"), "home_team": home.get("name"),
+                                "away_team": away.get("name"), "team_id": team, "team_name": team_name,
+                                "team_side": side, "player_id": pid, "player_name": name,
+                                "shirt_number": p.get("number"), "position": p.get("pos"),
+                                "lineup_role": "starter" if is_starting else "listed_substitute",
+                                "is_starting": is_starting, "is_listed_substitute": not is_starting,
+                                "minutes_played": None, "appeared": None,
+                                "lineup_source": "API-Football fixtures/lineups",
+                                "player_stats_source": "API-Football fixtures/players",
+                                "retrieved_at_utc": row["retrieved_at_utc"]
+                            }
                 stat_file = CACHE / f"fixture_{fid}_statistics.json"
                 stat_data = cached_json(stat_file, lambda fid=fid: api("fixtures/statistics", {"fixture": fid}))
                 stat_response = stat_data.get("response", [])
@@ -137,6 +163,7 @@ def main():
                 player_data = cached_json(player_file, lambda fid=fid: api("fixtures/players", {"fixture": fid}))
                 for team_block in player_data.get("response", []):
                     tid = (team_block.get("team") or {}).get("id")
+                    team_name, side = team_info.get(tid, ((team_block.get("team") or {}).get("name"), "unknown"))
                     appeared = []
                     for player_block in team_block.get("players") or []:
                         player = player_block.get("player") or {}
@@ -145,11 +172,33 @@ def main():
                         if stats_list:
                             games = stats_list[0].get("games") or {}
                             minutes = games.get("minutes")
-                        if minutes is not None and minutes > 0 and player.get("name"):
-                            appeared.append({"name": player["name"], "minutes": minutes, "number": player.get("number"), "position": player.get("pos")})
+                        name = player.get("name")
+                        pid = player.get("id")
+                        if name:
+                            pkey = (str(tid), str(pid) if pid is not None else name)
+                            detail = fixture_player_rows.get(pkey)
+                            if detail is None:
+                                detail = {
+                                    "fixture_id": fid, "league": league_name, "season_start_year": season,
+                                    "kickoff_utc": fixture.get("date"), "home_team": home.get("name"),
+                                    "away_team": away.get("name"), "team_id": tid, "team_name": team_name,
+                                    "team_side": side, "player_id": pid, "player_name": name,
+                                    "shirt_number": player.get("number"), "position": player.get("pos"),
+                                    "lineup_role": "not_listed_in_lineup", "is_starting": None,
+                                    "is_listed_substitute": None, "minutes_played": None, "appeared": None,
+                                    "lineup_source": "API-Football fixtures/lineups",
+                                    "player_stats_source": "API-Football fixtures/players",
+                                    "retrieved_at_utc": row["retrieved_at_utc"]
+                                }
+                                fixture_player_rows[pkey] = detail
+                            detail["minutes_played"] = minutes
+                            detail["appeared"] = (minutes > 0) if minutes is not None else None
+                        if minutes is not None and minutes > 0 and name:
+                            appeared.append({"name": name, "minutes": minutes, "number": player.get("number"), "position": player.get("pos")})
                     row["home_players_appeared" if tid == home.get("id") else "away_players_appeared"] = appeared
             except Exception as exc:
                 errors.append({"fixture_id": fid, "player_stats_error": str(exc)})
+            player_rows.extend(fixture_player_rows.values())
         rows.append(row)
         if n % 25 == 0:
             print(f"{league_name} {season}: processed {n}/{len(fixtures)} fixtures", flush=True)
@@ -158,6 +207,7 @@ def main():
 
     json_path = OUT / f"{stem}.json"
     csv_path = OUT / f"{stem}.csv"
+    players_csv_path = OUT / f"{stem}_players.csv"
     json_path.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
     columns = [k for k in rows[0].keys()]
     with csv_path.open("w", newline="", encoding="utf-8-sig") as f:
@@ -165,12 +215,37 @@ def main():
         writer.writeheader()
         for row in rows:
             writer.writerow({k: json.dumps(v, ensure_ascii=False) if isinstance(v, (list, dict)) else v for k, v in row.items()})
+    player_columns = [
+        "fixture_id","league","season_start_year","kickoff_utc","home_team","away_team",
+        "team_id","team_name","team_side","player_id","player_name","shirt_number","position",
+        "lineup_role","is_starting","is_listed_substitute","minutes_played","appeared",
+        "lineup_source","player_stats_source","retrieved_at_utc"
+    ]
+    with players_csv_path.open("w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=player_columns)
+        writer.writeheader()
+        writer.writerows(player_rows)
+    player_keys = [(p["fixture_id"], p["team_id"], p["player_id"] or p["player_name"]) for p in player_rows]
+    duplicate_player_keys = len(player_keys) - len(set(player_keys))
+    player_groups = {}
+    for p in player_rows:
+        player_groups.setdefault((p["fixture_id"], p["team_side"]), []).append(p)
+    xi_complete_fixtures = set()
+    for (fixture_id, side), group in player_groups.items():
+        starters = sum(p["is_starting"] is True for p in group)
+        if side in {"home", "away"} and starters == 11:
+            xi_complete_fixtures.add(fixture_id)
     finished = [r for r in rows if r["status"] in {"FT", "AET", "PEN"}]
     report = {
         "provider": "API-Football", "league": league_name, "league_key": league_key,
         "season_start_year": season, "fixture_count": len(rows), "completed_count": len(finished),
         "completed_with_score": sum(r["result_90m"] is not None for r in finished),
         "completed_with_both_starting_xi": sum(r["home_starting_xi"] is not None and r["away_starting_xi"] is not None for r in finished),
+        "normalized_player_rows": len(player_rows),
+        "unique_fixture_team_player_keys": len(set(player_keys)),
+        "duplicate_fixture_team_player_keys": duplicate_player_keys,
+        "fixtures_with_both_teams_exactly_11_starting_xi": sum(sum(1 for p in player_rows if p["fixture_id"] == fid and p["team_side"] == "home" and p["is_starting"] is True) == 11 and sum(1 for p in player_rows if p["fixture_id"] == fid and p["team_side"] == "away" and p["is_starting"] is True) == 11 for fid in {p["fixture_id"] for p in player_rows}),
+        "normalized_player_csv": str(players_csv_path),
         "completed_with_both_teams_appearances": sum(r["home_players_appeared"] is not None and r["away_players_appeared"] is not None for r in finished),
         "completed_with_both_xg": sum(r["home_xg"] is not None and r["away_xg"] is not None for r in finished),
         "missing_xg_count": sum(r["xg_status"] != "ok" for r in finished),
@@ -180,6 +255,7 @@ def main():
             "Provider plan may limit historical fixture/lineup/statistics endpoints.",
             "Missing provider values remain null; they are not imputed.",
             "Only actual player minutes > 0 count as appearances; starting XI comes from the lineup endpoint.",
+            "Normalized *_players.csv stores one row per fixture/team/player, separating lineup role from actual appearance. Listed substitutes are not counted as appearances without minutes > 0.",
             "90-minute outcome uses the provider's full-time goals fields; AET/PEN fixtures may require separate regulation-time verification before use as a strict 90-minute result."
         ]
     }
