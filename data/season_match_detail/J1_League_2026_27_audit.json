@@ -4,14 +4,22 @@
   "season": "2026/27",
   "source_url": "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1&tv_relay_station_name=",
   "source_type": "Official J.League Data Site",
-  "rows": 125,
+  "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
+  "results_file": "data/auto_results/J1_League_2026_27.csv",
+  "rows": 126,
   "coverage_start": "2026-08-07",
   "coverage_end": "2026-10-31",
   "structural_validation": {
-    "date_iso_format": "125/125",
-    "scores_numeric": "125/125",
-    "home_away_present": "125/125",
-    "duplicate_date_home_away_keys": 0
+    "mapping_rows": "126/126",
+    "results_rows": "126/126",
+    "date_iso_format": "126/126",
+    "scores_numeric": "126/126",
+    "home_away_present": "126/126",
+    "duplicate_date_home_away_keys": 0,
+    "duplicate_official_match_urls": 0,
+    "official_match_urls_present": "126/126",
+    "provider_event_ids_present": "126/126",
+    "mapping_to_results_match_keys": "126/126"
   },
   "source_cross_checks": [
     {
@@ -19,23 +27,53 @@
       "home": "横浜FM",
       "away": "鹿島",
       "score": "3-4",
-      "official_match_url": "https://www.jleague.jp/match/j1/2026/080701/stats/",
+      "provider_event_id": "34517",
+      "official_match_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34517",
       "status": "matched"
+    },
+    {
+      "date": "2026-09-19",
+      "home": "川崎Ｆ",
+      "away": "鹿島",
+      "score": "3-3",
+      "provider_event_id": "34596",
+      "official_match_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34596",
+      "status": "matched; provider ID confirmed from official Data Site listing and report"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "柏",
+      "away": "浦和",
+      "score": "4-0",
+      "provider_event_id": "34644",
+      "official_match_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34644",
+      "status": "matched; row added to results CSV after discrepancy audit"
     },
     {
       "date": "2026-10-31",
       "home": "神戸",
       "away": "名古屋",
       "score": "3-1",
-      "official_match_url": "https://www.jleague.jp/en/match/j1/2026/103113/",
+      "provider_event_id": "34643",
+      "official_match_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34643",
       "status": "matched"
     }
   ],
-  "row_by_row_independent_recheck": "pending",
-  "lineups_and_actual_appearances": "not present in this results CSV; separate collection required",
+  "lineup_and_appearance_audit": {
+    "csv_status_flags": {
+      "official_result_check_status": "verified 126/126",
+      "lineup_audit_status": "verified 126/126",
+      "appearance_audit_status": "verified 126/126"
+    },
+    "row_level_notes": "All 126 rows contain per-match audit notes indicating the official match report/source was inspected for date, teams, score, starting XI, substitutes and substitution events.",
+    "current_pass_scope": "This pass independently reopened the 2026-09-19 Kawasaki-Kashima and 2026-10-31 Kashiwa-Urawa official Data Site reports and confirmed starting XIs, substitutes and substitution events there. It did not reopen all 126 individual reports during this pass; the other rows' statuses and notes are inherited from the existing mapping CSV.",
+    "unresolved": 0
+  },
+  "row_by_row_independent_recheck": "Core match keys/scores cross-checked against official J.League schedule listing for 2026-08-07 through 2026-10-31; current pass found and repaired one missing results-CSV row (Kashiwa 4-0 Urawa) and one missing provider ID (Kawasaki 3-3 Kashima). This does not claim that all 126 individual lineups/events were freshly re-opened in this pass.",
   "notes": [
-    "The CSV's source column points to the official J.League Data Site.",
-    "125 rows correspond to completed matches from 2026-08-07 through 2026-10-31; fixtures scheduled for 2026-11-01 are not included.",
-    "Structural checks passed; the two sample rows above were independently matched to official J.League match pages. Do not label the full 125-row independent recheck complete yet."
+    "The 2026/27 J1 season is ongoing; 126 is the completed-match coverage in the current branch through 2026-10-31, not a full-season total.",
+    "The results CSV previously had 125 rows and omitted the official 2026-10-31 Kashiwa Reysol 4-0 Urawa Reds match (Data Site match_card_id=34644); this has been added.",
+    "The mapping CSV's 2026-09-19 Kawasaki Frontale 3-3 Kashima Antlers row previously lacked provider_event_id; the official Data Site listing/report confirms match_card_id=34596.",
+    "K League 1 date/time file separately checked: 80 rows have ISO dates and HH:MM local/UTC time fields; full timezone-offset arithmetic audit is tracked in the collection progress file."
   ]
 }
