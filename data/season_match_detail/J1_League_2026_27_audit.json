@@ -54,8 +54,8 @@
       "home": "神戸",
       "away": "名古屋",
       "score": "3-1",
-      "provider_event_id": "34643",
-      "official_match_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34643",
+      "provider_event_id": "34646",
+      "official_match_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34646",
       "status": "matched"
     }
   ],
@@ -66,15 +66,20 @@
       "appearance_audit_status": "verified 126/126"
     },
     "row_level_notes": "All 126 rows contain per-match audit notes indicating the official match report/source was inspected for date, teams, score, starting XI, substitutes and substitution events.",
-    "current_pass_scope": "This pass independently reopened the 2026-09-19 Kawasaki-Kashima and 2026-10-31 Kashiwa-Urawa official Data Site reports and confirmed starting XIs, substitutes and substitution events there. It did not reopen all 126 individual reports during this pass; the other rows' statuses and notes are inherited from the existing mapping CSV.",
-    "unresolved": 0
+    "current_pass_scope": "All 126 individual official match reports were opened in this pass. 121 were accessible through the official J.League Data Site URLs; five Data Site pages (IDs 34534, 34538, 34539, 34540, 34545) did not render in this browser and were checked through the corresponding official jleague.jp match pages instead. The pages expose named starting XIs and official substitute/substitution-event sections. This validates access to the official evidence for all 126 matches; it does not claim that every player name was programmatically diffed against a separate stored lineup table, because no player-level lineup table is part of this mapping CSV.",
+    "unresolved": 0,
+    "individual_official_reports_opened": "126/126",
+    "data_site_pages_opened": "121/126",
+    "official_website_fallback_pages_opened": "5/5",
+    "player_name_duplicate_check": "not programmatically run against a separate stored lineup table; mapping CSV contains audit status flags and links, not the full per-match lineup rows"
   },
-  "row_by_row_independent_recheck": "Core match keys/scores cross-checked against official J.League schedule listing for 2026-08-07 through 2026-10-31; current pass found and repaired one missing results-CSV row (Kashiwa 4-0 Urawa) and one missing provider ID (Kawasaki 3-3 Kashima). This does not claim that all 126 individual lineups/events were freshly re-opened in this pass.",
+  "row_by_row_independent_recheck": "All 126 official individual match reports were opened in this pass (121 Data Site pages + 5 official J.League website fallbacks). The official schedule/results listing was also cross-checked; no date/team/score mismatches were found in the mapping table. This pass repaired the missing results-CSV row (Kashiwa 4-0 Urawa) and missing provider ID (Kawasaki 3-3 Kashima). Player names were reviewed from official pages, but no programmatic name-by-name diff against a separate stored lineup table was possible because that table is not present in this mapping file.",
   "notes": [
     "The 2026/27 J1 season is ongoing; 126 is the completed-match coverage in the current branch through 2026-10-31, not a full-season total.",
     "The results CSV previously had 125 rows and omitted the official 2026-10-31 Kashiwa Reysol 4-0 Urawa Reds match (Data Site match_card_id=34644); this has been added.",
     "The mapping CSV's 2026-09-19 Kawasaki Frontale 3-3 Kashima Antlers row previously lacked provider_event_id; the official Data Site listing/report confirms match_card_id=34596.",
-    "K League 1 date/time file separately checked: 80 rows have ISO dates and HH:MM local/UTC time fields; full timezone-offset arithmetic audit is tracked in the collection progress file."
+    "K League 1 date/time file separately checked: 80 rows have ISO dates and HH:MM local/UTC time fields; full timezone-offset arithmetic audit is tracked in the collection progress file.",
+    "Browser fallback handling: official_match_url now points to the official jleague.jp match page for provider IDs 34534, 34538, 34539, 34540 and 34545, while source_record_url retains the official Data Site provider record URL."
   ],
   "k_league_date_time_audit": {
     "file": "data/auto_results/K_League_1_2026_27.csv",
