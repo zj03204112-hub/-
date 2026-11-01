@@ -1,0 +1,52 @@
+{
+  "report_version": "xg-weekly-coverage-audit-2026-11-01-v1",
+  "generated_at_beijing": "2026-11-01T10:02:30+08:00",
+  "iso_week": "2026-W44",
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "cumulative_snapshot_match_ids": 87,
+  "team_match_provider_rows": 202,
+  "unique_team_competition_season_week_records": 169,
+  "matches_with_any_supplier_xg": 25,
+  "matches_without_verified_supplier_xg": 62,
+  "match_level_xg_coverage_pct": 28.74,
+  "newly_added_match_ids": 40,
+  "newly_added_team_match_rows": 80,
+  "newly_added_matches_with_supplier_xg": 5,
+  "team_weekly_provider_rows": 200,
+  "team_weekly_coverage_rows": 169,
+  "source_disagreement_groups": 7,
+  "full_week_coverage": false,
+  "all_seven_core_leagues_full_coverage": false,
+  "audit_checks": {
+    "xgd_equals_xg_minus_xga": "PASS for all numeric rows",
+    "supplier_estimate_separated_from_missing": "PASS",
+    "postmatch_xg_used_as_same_match_prematch_input": "NO",
+    "historical_snapshots_overwritten": false,
+    "missing_xg_inferred_from_score": false,
+    "provider_values_averaged": false
+  },
+  "limitations": [
+    "Team-week fixture coverage is incomplete; the snapshot only includes reviewed/collected matches.",
+    "Most raw HTML/API payloads and SHA-256 hashes are not archived.",
+    "Provider event IDs are unresolved for newly added records.",
+    "Exact source retrieval timestamps are approximate or absent.",
+    "Post-match supplier xG is for post-match analysis only, not pre-match backtesting."
+  ],
+  "missing_xg_reason_default": "No verified match-level full-time xG captured from accessible sources; no inference from final score or team averages.",
+  "correction_notice": {
+    "status": "CORRECTED_VERSION_CREATED; original snapshot preserved",
+    "reason": "One J1 League team-week season label was mistyped as 2026-26; corrected to 2026-27 for Kashima Antlers and Cerezo Osaka.",
+    "superseded_files": [
+      "data/xg_weekly/2026-W44/snapshots/2026-11-01/match_xg_snapshot-095644.csv",
+      "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_xg_snapshot-095644.csv",
+      "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_coverage_snapshot-095644.csv"
+    ],
+    "corrected_files": [
+      "data/xg_weekly/2026-W44/snapshots/2026-11-01/match_xg_snapshot-100230-corrected.csv",
+      "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_xg_snapshot-100230-corrected.csv",
+      "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_coverage_snapshot-100230-corrected.csv"
+    ],
+    "arithmetic_and_coverage_counts_unchanged": true
+  }
+}
