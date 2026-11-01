@@ -9,6 +9,14 @@
 - 日本 J1 2026/27：125 行结构核验通过；日期、球队、比分字段完整，无重复键。已用 J.League 官方比赛页面核对首场（2026-08-07 横滨FM 3-4 鹿岛）和末场（2026-10-31 神户 3-1 名古屋）；125 行逐场独立复核仍待完成。
 - 日本 J1 2025：检查了 OpenFootball JSON 候选源；380 场赛程中仅 136 场有全场比分，244 场缺比分，故未把它作为完整赛果数据集写入。
 
+- 2025–26 五大欧洲联赛：已从仓库现有赛果源生成稳定内部 match_id 映射底表，新增英超 380、西甲 380、德甲 306、意甲 380、法甲 306，共 1,752 场。五份映射底表均按“联赛+赛季+日期+主队+客队”生成确定性内部 ID；本次结构检查均无重复日期/主客队键、无缺失全场比分。供应商 event ID、官方比赛页及逐场官方核验状态均明确保留为 pending，不将来源数据冒充官方已核验。
+  - `data/season_match_detail/premier-league_2025_26_match_id_mapping.csv`
+  - `data/season_match_detail/laliga_2025_26_match_id_mapping.csv`
+  - `data/season_match_detail/bundesliga_2025_26_match_id_mapping.csv`
+  - `data/season_match_detail/seriea_2025_26_match_id_mapping.csv`
+  - `data/season_match_detail/ligue1_2025_26_match_id_mapping.csv`
+- 英超映射底表的来源数据没有首发 XI/实际出场；西甲、德甲、意甲的 OpenFootball 源提供首发名单但尚未逐场与官方比赛报告二次核对；法甲源不提供首发 XI。五大联赛的实际出场记录均尚未完成逐场核验。
+
 ## 当前赛季 CSV 现有记录数（仅为采集行数，不代表全部已验收）
 | 联赛 | 行数 | 状态 |
 |---|---:|---|
