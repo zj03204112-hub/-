@@ -1,0 +1,99 @@
+name: Expanded five-league ingestion
+
+on:
+  push:
+    paths:
+      - "data_pipeline/collect_expanded_leagues.py"
+      - ".github/workflows/expanded-five-league-ingestion.yml"
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+  schedule:
+    - cron: "40 3 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: expanded-five-league-ingestion-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect current and previous seasons into isolated store
+        id: collect
+        continue-on-error: true
+        run: python data_pipeline/collect_expanded_leagues.py
+
+      - name: Upload audit outputs, including partial runs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: expanded-five-league-ingestion-${{ github.run_id }}
+          path: |
+            data/expanded_leagues/ingestion_report.json
+            data/expanded_leagues/expanded_matches.csv
+            data/expanded_leagues/expanded_match_mapping.csv
+            data/expanded_leagues/expanded_team_mapping.csv
+            data/expanded_leagues/expanded_samples.csv
+            data/expanded_leagues/expanded_leagues.sqlite
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Verify full coverage before persisting generated data
+        id: verify
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          p = pathlib.Path("data/expanded_leagues/ingestion_report.json")
+          if not p.exists():
+              print("NO_INGESTION_REPORT")
+              sys.exit(1)
+          report = json.loads(p.read_text(encoding="utf-8"))
+          print(json.dumps({
+              "status": report.get("status"),
+              "competition_season_count": report.get("competition_season_count"),
+              "event_count": report.get("event_count"),
+              "finished_match_count": report.get("finished_match_count"),
+              "mapping_unresolved_count": report.get("mapping_unresolved_count"),
+              "errors": report.get("errors"),
+          }, ensure_ascii=False, indent=2))
+          if (report.get("status") != "COMPLETED"
+              or report.get("competition_season_count") != 10
+              or report.get("event_count", 0) <= 0
+              or report.get("mapping_unresolved_count") != 0):
+              sys.exit(1)
+          PY
+
+      - name: Persist complete isolated dataset (only after all coverage checks pass)
+        if: success() && github.event_name != 'pull_request'
+        run: |
+          git config user.name "football-model-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/expanded_leagues
+          if git diff --cached --quiet; then
+            echo "No expanded data changes."
+            exit 0
+          fi
+          git commit -m "data: refresh isolated five-league seasons and mappings"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Fail run when data coverage is incomplete
+        if: steps.verify.outcome != 'success'
+        run: |
+          echo "Expanded league ingestion is partial or failed. No generated dataset was committed. The legacy production database is never modified."
+          exit 1
