@@ -18,6 +18,7 @@ from pathlib import Path
 ROOT = Path("data/season_match_detail")
 MATCH_FILE = ROOT / "j1_2026.csv"
 PLAYER_FILE = ROOT / "j1_2026_players.csv"
+SUBSTITUTION_FILE = ROOT / "j1_2026_substitutions.csv"
 REPORT_FILE = ROOT / "j1_2026_phase1_audit.json"
 FINISHED = {"FT", "AET", "PEN"}
 
@@ -49,6 +50,10 @@ def norm_name(value: object) -> str:
 def main() -> int:
     matches = read_csv(MATCH_FILE)
     players = read_csv(PLAYER_FILE)
+    substitutions = read_csv(SUBSTITUTION_FILE)
+    substitutions_by_fixture: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for event in substitutions:
+        substitutions_by_fixture[str(event.get("fixture_id", "")).strip()].append(event)
     by_fixture: dict[str, list[dict[str, str]]] = defaultdict(list)
     for p in players:
         by_fixture[str(p.get("fixture_id", "")).strip()].append(p)
@@ -65,6 +70,8 @@ def main() -> int:
     xi_both = 0
     appearance_both = 0
     xg_both = 0
+    xga_both = 0
+    substitution_status_ok = 0
     xi_counts: dict[str, dict[str, int]] = {}
     player_key_rows: list[tuple[str, str, str]] = []
     name_key_rows: list[tuple[str, str, str]] = []
@@ -94,6 +101,20 @@ def main() -> int:
                 xg_both += 1
             else:
                 issues.append({"fixture_id": fid, "type": "xg_coverage", "detail": "Missing xG for one or both teams."})
+            if str(m.get("home_xga", "")).strip() not in {"", "None", "null"} and str(m.get("away_xga", "")).strip() not in {"", "None", "null"}:
+                xga_both += 1
+            else:
+                issues.append({"fixture_id": fid, "type": "xga_coverage", "detail": "Missing xGA for one or both teams."})
+            subst_status = str(m.get("substitution_events_status", "")).strip().lower()
+            if subst_status == "ok":
+                substitution_status_ok += 1
+            else:
+                issues.append({"fixture_id": fid, "type": "substitution_event_coverage", "detail": subst_status or "missing_status"})
+            for event in substitutions_by_fixture.get(fid, []):
+                if not str(event.get("outgoing_player_name", "")).strip() or not str(event.get("incoming_player_name", "")).strip():
+                    issues.append({"fixture_id": fid, "type": "incomplete_substitution_event", "detail": event})
+                if as_int(event.get("elapsed_minute")) is None:
+                    issues.append({"fixture_id": fid, "type": "substitution_event_missing_minute", "detail": event})
 
         for p in group:
             team_id = str(p.get("team_id", "")).strip()
@@ -104,6 +125,8 @@ def main() -> int:
                 issues.append({"fixture_id": fid, "type": "unknown_team_side", "detail": {"team_id": team_id, "team_name": p.get("team_name"), "side": side, "player": player_name}})
             if not player_name:
                 issues.append({"fixture_id": fid, "type": "missing_player_name", "detail": {"team_id": team_id, "player_id": player_id}})
+            if not player_id:
+                issues.append({"fixture_id": fid, "type": "missing_player_id", "detail": {"team_id": team_id, "player_name": player_name}})
             # The provider player ID is preferred; name is the fallback only when ID is absent.
             player_key_rows.append((fid, team_id, player_id or norm_name(player_name)))
             name_key_rows.append((fid, team_id, norm_name(player_name)))
@@ -128,7 +151,7 @@ def main() -> int:
         "league": "J1 League",
         "season_start_year": 2026,
         "source": "API-Football collection output; official J.League mapping cross-check is a separate source layer",
-        "input_files": {"matches": str(MATCH_FILE), "players": str(PLAYER_FILE)},
+        "input_files": {"matches": str(MATCH_FILE), "players": str(PLAYER_FILE), "substitutions": str(SUBSTITUTION_FILE)},
         "coverage": {
             "fixtures_total": len(matches),
             "fixture_ids_unique_nonempty": len(matches) - len(duplicate_fixture_ids),
@@ -137,6 +160,10 @@ def main() -> int:
             "completed_with_both_teams_exactly_11_starting_xi": xi_both,
             "completed_with_both_teams_appearance_lists": appearance_both,
             "completed_with_both_team_xg": xg_both,
+            "completed_with_both_team_xga": xga_both,
+            "completed_with_substitution_endpoint_status_ok": substitution_status_ok,
+            "substitution_event_rows": len(substitutions),
+            "completed_fixtures_with_at_least_one_substitution_event": len({fid for fid, evs in substitutions_by_fixture.items() if evs}),
             "normalized_player_rows": len(players),
             "unique_fixture_team_player_keys": len(set(player_key_rows)),
             "duplicate_fixture_team_player_keys": len(duplicate_player_keys),
@@ -152,6 +179,9 @@ def main() -> int:
             "all_completed_fixtures_have_both_exact_11_xi": xi_both == len(completed),
             "all_completed_fixtures_have_appearance_lists": appearance_both == len(completed),
             "all_completed_fixtures_have_both_xg": xg_both == len(completed),
+            "all_completed_fixtures_have_both_xga": xga_both == len(completed),
+            "all_completed_fixtures_have_substitution_endpoint_status": substitution_status_ok == len(completed),
+            "all_player_ids_present": not any(i.get("type") == "missing_player_id" for i in issues),
             "coverage_gaps_are_reported_not_imputed": True,
         },
     }
