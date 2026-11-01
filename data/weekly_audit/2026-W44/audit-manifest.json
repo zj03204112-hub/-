@@ -1,0 +1,72 @@
+{
+  "audit_date": "2026-11-01",
+  "audit_cutoff_beijing": "2026-11-01T12:04:27+08:00",
+  "iso_week": "2026-W44",
+  "branch": "audit/weekly-backtest-xg-2026-W44-20261101",
+  "status": "PARTIAL_REPORT_ARCHIVED_READBACK_VERIFIED",
+  "repository": "zj03204112-hub/-",
+  "files": [
+    {
+      "path": "data/weekly_audit/2026-W44/weekly-backtest-report.md",
+      "commit_sha": "fdea3ddd1cae4cb71bf50558465850419541d47d",
+      "blob_sha": "b44a8be1b90bc211c9fe40211da44d567a812583",
+      "bytes": 3036,
+      "readback_verified": true
+    },
+    {
+      "path": "data/weekly_audit/2026-W44/completed-results.csv",
+      "commit_sha": "3ac33568f84acc05c06d86b71bea6909065b99b4",
+      "blob_sha": "4871317d8985b3b1357c18d4b537f4333425a422",
+      "rows": 44,
+      "bytes": 17303,
+      "readback_verified": true
+    },
+    {
+      "path": "data/weekly_audit/2026-W44/xg-match-detail.csv",
+      "commit_sha": "4cd45004415ca5defd55c8575f980a1caf093ea2",
+      "blob_sha": "c01c8b518b3f0a168cfb60adf8c01ab99b6b85fa",
+      "rows": 88,
+      "missing_xg_rows": 88,
+      "bytes": 21490,
+      "readback_verified": true
+    },
+    {
+      "path": "data/weekly_audit/2026-W44/team-weekly-xg-audit.csv",
+      "commit_sha": "ae221aa20370021dc16b69ef5219d23a9c3183ee",
+      "blob_sha": "b17eab7343f6e17d2bacf14cb3dce740721d149e",
+      "rows": 83,
+      "bytes": 19427,
+      "readback_verified": true
+    },
+    {
+      "path": "data/weekly_audit/2026-W44/competition-strata.csv",
+      "commit_sha": "292aed181c33c0d0339d4d3556c90fbb3644f887",
+      "blob_sha": "3e2fa2a38f8e55088b16245e569d86a605fb235b",
+      "rows": 11,
+      "bytes": 1266,
+      "readback_verified": true
+    },
+    {
+      "path": "data/weekly_audit/2026-W44/xg-integrity-audit-2026-11-01.json",
+      "commit_sha": "2dac4b2f55c70078ce37a050fb880bafc85254df",
+      "blob_sha": "5ccf20cdcfdf3a087374e9563903211306678ad4",
+      "bytes": 4629,
+      "readback_verified": true
+    }
+  ],
+  "readback_validation": {
+    "completed_results_rows": 44,
+    "team_match_xg_rows": 88,
+    "all_team_match_xg_rows_explicitly_missing": 88,
+    "team_iso_week_rows": 83,
+    "competition_strata_rows": 11,
+    "structured_audit_json_parse_ok": true,
+    "no_model_files_or_historical_predictions_modified": true
+  },
+  "caveats": [
+    "No immutable W44 pre-match prediction snapshot was found; formal V5.1 metrics are N/A.",
+    "SQLite was not connected or queried, so DB match_id joins remain unresolved.",
+    "Current-week verified provider xG details were absent; no goals were substituted for xG.",
+    "Domestic cup, continental club, and national-team result extraction was not completed; these strata remain separate."
+  ]
+}
