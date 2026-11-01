@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-11-01",
+  "league": "J1 League",
+  "season": "2025 calendar season",
+  "candidate_source": "https://raw.githubusercontent.com/openfootball/football.json/master/2025/jp.1.json",
+  "source_name": "openfootball/football.json",
+  "fixtures_in_source": 380,
+  "rows_with_full_time_score": 136,
+  "rows_without_full_time_score": 244,
+  "rows_with_half_time_score": 127,
+  "usable_as_complete_results_dataset": false,
+  "status": "candidate source rejected for final result dataset until missing scores are supplemented and independently checked",
+  "notes": [
+    "The source has 380 fixtures but only 136 provide a full-time score in the current JSON; 244 score fields are absent.",
+    "Do not treat this file as a completed 380-match result dataset or use blank scores as final results.",
+    "Official J.League Data Site remains the preferred source for score supplementation; starting lineups and actual player appearances are not supplied by this candidate."
+  ]
+}
