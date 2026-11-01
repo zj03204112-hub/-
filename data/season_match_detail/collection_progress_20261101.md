@@ -73,3 +73,12 @@
 - 韩国 K League 1 文件 `data/auto_results/K_League_1_2026_27.csv` 当前 80 行，`Date` 均为 ISO 日期，`Time` 与 `Time_UTC` 均为 HH:MM 格式；样例及全行格式检查无异常。已对 80/80 行完成 UTC+9 算术复算：每行 `Time` 均比 `Time_UTC` 快 540 分钟（按 24 小时取模），日期和时间格式检查 80/80 通过。此项验证的是字段之间的时区算术一致性，不等于逐场重新核对官方开球时间。
 
 - 首发/替补详情复核进度更新：126/126 官方详情页均可通过 Data Site 或 jleague.jp 官方页访问。5 个 Data Site 页面无法由当前浏览器直接渲染，已在映射表中为 `official_match_url` 添加官网备用地址，原 `source_record_url` 保留 Data Site provider 记录。仍需补充独立的逐场球员名单明细表，才能自动检测重复球员、错配和姓名差异。
+
+
+## 本轮追加推进（2026-11-01：球员明细数据层）
+
+- 更新 `data_pipeline/fetch_season_results_lineups_xg.py`：除原有逐场结果、首发 XI、实际出场摘要与 xG 外，新增标准化球员明细导出 `data/season_match_detail/{league}_{season}_players.csv`。
+- 球员表字段包括 fixture ID、球队/主客侧、球员 ID/姓名、号码、位置、首发/替补身份、实际出场分钟、是否实际出场、数据来源及抓取时间。
+- 规则：名单中的替补不自动视为实际出场；只有球员统计中的 minutes > 0 才记为实际出场。缺失字段保留空值，不推断补齐。
+- 审计新增：逐场球队球员键去重、标准化球员行数、双方是否各有 11 名首发等指标。
+- **状态边界：**本轮仅提交采集管线改造，没有运行 API-Football 拉取任务，因此尚未生成/更新 J1 2026 或 K League 1 2026 的标准化球员 CSV，也没有宣称球员明细已补齐。现有工作流 `.github/workflows/collect-season-match-detail.yml` 需在变更进入可运行分支后，从 GitHub Actions 手动选择联赛与赛季运行；运行结果和 API 配额/缺失字段须以实际 audit JSON 为准。
