@@ -74,6 +74,7 @@ def main():
         raise SystemExit(f"No fixtures returned for {league_name} season {season}; verify provider plan/season coverage.")
     rows = []
     player_rows = []
+    substitution_rows = []
     errors = []
     for n, item in enumerate(fixtures, 1):
         fixture = item.get("fixture", {})
@@ -209,6 +210,48 @@ def main():
             except Exception as exc:
                 errors.append({"fixture_id": fid, "player_stats_error": str(exc)})
             player_rows.extend(fixture_player_rows.values())
+            # Preserve actual substitution events independently from the bench list and player minutes.
+            try:
+                events_file = CACHE / f"fixture_{fid}_events.json"
+                events_data = cached_json(events_file, lambda fid=fid: api("fixtures/events", {"fixture": fid}))
+                for event in events_data.get("response", []):
+                    if str(event.get("type", "")).strip().lower() not in {"subst", "substitution"}:
+                        continue
+                    event_team = event.get("team") or {}
+                    tid = event_team.get("id")
+                    team_name, side = team_info.get(tid, (event_team.get("name"), "unknown"))
+                    clock = event.get("time") or {}
+                    outgoing = event.get("player") or {}
+                    incoming = event.get("assist") or {}
+                    substitution_rows.append({
+                        "fixture_id": fid, "league": league_name, "season_start_year": season,
+                        "kickoff_utc": fixture.get("date"), "home_team": home.get("name"),
+                        "away_team": away.get("name"), "team_id": tid, "team_name": team_name,
+                        "team_side": side, "elapsed_minute": clock.get("elapsed"),
+                        "extra_minute": clock.get("extra"), "outgoing_player_id": outgoing.get("id"),
+                        "outgoing_player_name": outgoing.get("name"), "incoming_player_id": incoming.get("id"),
+                        "incoming_player_name": incoming.get("name"), "event_detail": event.get("detail"),
+                        "event_comments": event.get("comments"), "source": "API-Football fixtures/events",
+                        "retrieved_at_utc": row["retrieved_at_utc"]
+                    })
+                    # If provider event identifies an incoming player absent from the lineup/stats lists,
+                    # retain an explicit identity row rather than silently losing the substitution link.
+                    if incoming.get("name"):
+                        pkey = (str(tid), str(incoming.get("id")) if incoming.get("id") is not None else incoming.get("name"))
+                        if pkey not in fixture_player_rows:
+                            fixture_player_rows[pkey] = {
+                                "fixture_id": fid, "league": league_name, "season_start_year": season,
+                                "kickoff_utc": fixture.get("date"), "home_team": home.get("name"),
+                                "away_team": away.get("name"), "team_id": tid, "team_name": team_name,
+                                "team_side": side, "player_id": incoming.get("id"), "player_name": incoming.get("name"),
+                                "shirt_number": None, "position": None, "lineup_role": "substitution_event_only",
+                                "is_starting": None, "is_listed_substitute": None, "minutes_played": None,
+                                "appeared": None, "lineup_source": "API-Football fixtures/events",
+                                "player_stats_source": "API-Football fixtures/players",
+                                "retrieved_at_utc": row["retrieved_at_utc"]
+                            }
+            except Exception as exc:
+                errors.append({"fixture_id": fid, "substitution_events_error": str(exc)})
         rows.append(row)
         if n % 25 == 0:
             print(f"{league_name} {season}: processed {n}/{len(fixtures)} fixtures", flush=True)
@@ -235,6 +278,17 @@ def main():
         writer = csv.DictWriter(f, fieldnames=player_columns)
         writer.writeheader()
         writer.writerows(player_rows)
+    substitutions_csv_path = OUT / f"{stem}_substitutions.csv"
+    substitution_columns = [
+        "fixture_id","league","season_start_year","kickoff_utc","home_team","away_team",
+        "team_id","team_name","team_side","elapsed_minute","extra_minute",
+        "outgoing_player_id","outgoing_player_name","incoming_player_id","incoming_player_name",
+        "event_detail","event_comments","source","retrieved_at_utc"
+    ]
+    with substitutions_csv_path.open("w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=substitution_columns)
+        writer.writeheader()
+        writer.writerows(substitution_rows)
     player_keys = [(p["fixture_id"], p["team_id"], p["player_id"] or p["player_name"]) for p in player_rows]
     duplicate_player_keys = len(player_keys) - len(set(player_keys))
     normalized_name_keys = [(p["fixture_id"], p["team_id"], " ".join(str(p["player_name"] or "").casefold().split())) for p in player_rows]
@@ -254,6 +308,9 @@ def main():
         "completed_with_score": sum(r["result_90m"] is not None for r in finished),
         "completed_with_both_starting_xi": sum(len(r["home_starting_xi"] or []) == 11 and len(r["away_starting_xi"] or []) == 11 for r in finished),
         "normalized_player_rows": len(player_rows),
+        "substitution_events_rows": len(substitution_rows),
+        "fixtures_with_substitution_events_data": len({r["fixture_id"] for r in substitution_rows}),
+        "normalized_substitutions_csv": str(substitutions_csv_path),
         "unique_fixture_team_player_keys": len(set(player_keys)),
         "duplicate_fixture_team_player_keys": duplicate_player_keys,
         "duplicate_fixture_team_normalized_player_names": duplicate_fixture_team_player_names,
@@ -269,6 +326,7 @@ def main():
             "Missing provider values remain null; they are not imputed.",
             "Only actual player minutes > 0 count as appearances; starting XI comes from the lineup endpoint.",
             "Normalized *_players.csv stores one row per fixture/team/player, separating lineup role from actual appearance. Listed substitutes are not counted as appearances without minutes > 0.",
+            "Normalized *_substitutions.csv stores substitution events from fixtures/events; event coverage depends on provider response and must be audited separately.",
             "90-minute outcome uses the provider's full-time goals fields; AET/PEN fixtures may require separate regulation-time verification before use as a strict 90-minute result."
         ]
     }
