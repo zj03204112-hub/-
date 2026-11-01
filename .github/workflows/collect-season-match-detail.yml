@@ -56,6 +56,10 @@ jobs:
           REQUEST_PAUSE_SECONDS: "0.35"
         run: python data_pipeline/fetch_season_results_lineups_xg.py
 
+      - name: Run J1 phase-one quality audit
+        if: ${{ inputs.league == 'j1' && inputs.season == '2026' }}
+        run: python data_pipeline/audit_j1_phase1.py
+
       - name: Commit season dataset and audit
         run: |
           git config user.name "football-model-bot"
