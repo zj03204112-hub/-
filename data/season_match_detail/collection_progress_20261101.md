@@ -48,3 +48,13 @@
 - 法甲：https://raw.githubusercontent.com/openfootball/europe/master/france/2025-26_fr1.txt
 - 日本 J1 2025 候选：https://raw.githubusercontent.com/openfootball/football.json/master/2025/jp.1.json
 - 韩国 K League 1 2025 赛果来源索引：https://fbref.com/en/comps/55/2025/schedule/2025-K-League-1-Scores-and-Fixtures
+
+- 第二批扩展联赛（2025–26，OpenFootball football.json 来源）已建立稳定内部 match_id 映射底表，共 2,233 条：英冠 557、葡超 306、荷甲 306、比甲 240、奥地利 Bundesliga 132、苏超 198、土超 306、希腊 Super League 182。底表均无重复“日期+主队+客队”键、无缺失日期。来源当前包含已赛和未来/未出结果赛程，因此“有比分”数量与总行数分开记录；官方逐场核验、供应商 event ID、首发和实际出场仍未完成，未标记为已核验。
+  - `data/season_match_detail/championship_2025_26_match_id_mapping.csv`（557 行；521 行带比分）
+  - `data/season_match_detail/primeira-liga_2025_26_match_id_mapping.csv`（306 行；287 行带比分）
+  - `data/season_match_detail/eredivisie_2025_26_match_id_mapping.csv`（306 行；295 行带比分）
+  - `data/season_match_detail/belgian-pro-league_2025_26_match_id_mapping.csv`（240 行；104 行带比分）
+  - `data/season_match_detail/austrian-bundesliga_2025_26_match_id_mapping.csv`（132 行；67 行带比分）
+  - `data/season_match_detail/scottish-premiership_2025_26_match_id_mapping.csv`（198 行；58 行带比分）
+  - `data/season_match_detail/turkish-super-lig_2025_26_match_id_mapping.csv`（306 行；90 行带比分）
+  - `data/season_match_detail/greek-super-league_2025_26_match_id_mapping.csv`（182 行；61 行带比分）
