@@ -1,0 +1,156 @@
+{
+  "generated_at_beijing": "2026-11-01T10:02:30+08:00",
+  "iso_week": "2026-W44",
+  "rule": "Do not average provider values. Group by match_id+team_id; list groups where provider xG differs by at least 0.20.",
+  "discrepancy_count": 7,
+  "discrepancies": [
+    {
+      "match_id": "match:serie-a:2026-10-28:ac-milan:bologna",
+      "team_id": "team:ac-milan",
+      "team_name": "AC Milan",
+      "providers": [
+        {
+          "provider": "Sofascore",
+          "xg": "1.71",
+          "xga": "1.88",
+          "source_url": "https://www.sofascore.com/news/ac-milan-2-4-bologna-mbangulas-hat-trick-flips-a-high-possession-duel"
+        },
+        {
+          "provider": "TotalOdds",
+          "xg": "1.97",
+          "xga": "1.99",
+          "source_url": "https://totalodds.co.uk/matches/ac-milan-vs-bologna-6743898"
+        }
+      ],
+      "max_abs_xg_delta": 0.26,
+      "status": "SOURCE_DISAGREEMENT_NOT_AVERAGED"
+    },
+    {
+      "match_id": "match:serie-a:2026-10-28:genoa:juventus",
+      "team_id": "team:genoa",
+      "team_name": "Genoa",
+      "providers": [
+        {
+          "provider": "Sofascore",
+          "xg": "0.97",
+          "xga": "1.21",
+          "source_url": "https://www.sofascore.com/news/genoa-2-0-juventus-early-goals-bijlow-stars"
+        },
+        {
+          "provider": "MatchdayGuru",
+          "xg": "1.22",
+          "xga": "1.49",
+          "source_url": "https://www.matchdayguru.com/match/19713535-genoa-vs-juventus/"
+        }
+      ],
+      "max_abs_xg_delta": 0.25,
+      "status": "SOURCE_DISAGREEMENT_NOT_AVERAGED"
+    },
+    {
+      "match_id": "match:serie-a:2026-10-28:genoa:juventus",
+      "team_id": "team:juventus",
+      "team_name": "Juventus",
+      "providers": [
+        {
+          "provider": "Sofascore",
+          "xg": "1.21",
+          "xga": "0.97",
+          "source_url": "https://www.sofascore.com/news/genoa-2-0-juventus-early-goals-bijlow-stars"
+        },
+        {
+          "provider": "MatchdayGuru",
+          "xg": "1.49",
+          "xga": "1.22",
+          "source_url": "https://www.matchdayguru.com/match/19713535-genoa-vs-juventus/"
+        }
+      ],
+      "max_abs_xg_delta": 0.28,
+      "status": "SOURCE_DISAGREEMENT_NOT_AVERAGED"
+    },
+    {
+      "match_id": "match:efl-cup:2026-10-28:manchester-city:brighton",
+      "team_id": "team:manchester-city",
+      "team_name": "Manchester City",
+      "providers": [
+        {
+          "provider": "Manchester City official match page",
+          "xg": "0.76",
+          "xga": "2.03",
+          "source_url": "https://www.mancity.com/matchday/fixtures/mens/2026/efl-cup/man-city-v-brighton-28-oct-2026"
+        },
+        {
+          "provider": "VJStats",
+          "xg": "1.43",
+          "xga": "1.84",
+          "source_url": "https://www.vjstats.com/matches/11260/manchester-city-fc-vs-brighton-hove-albion-fc"
+        }
+      ],
+      "max_abs_xg_delta": 0.67,
+      "status": "SOURCE_DISAGREEMENT_NOT_AVERAGED"
+    },
+    {
+      "match_id": "match:serie-a:2026-10-29:frosinone:lecce",
+      "team_id": "team:frosinone",
+      "team_name": "Frosinone",
+      "providers": [
+        {
+          "provider": "RatingBet match statistics; underlying xG provider/model version not disclosed",
+          "xg": "2.79",
+          "xga": "1.1",
+          "source_url": "https://ratingbet.com/football/match/frosinone-vs-lecce/"
+        },
+        {
+          "provider": "Flashscore; model version undisclosed",
+          "xg": "3.07",
+          "xga": "1.45",
+          "source_url": "https://www.flashscore.com.au/match/football/frosinone-pfo9H1Wp/lecce-G8lYsMgU/?mid=As77hb15"
+        }
+      ],
+      "max_abs_xg_delta": 0.28,
+      "status": "SOURCE_DISAGREEMENT_NOT_AVERAGED"
+    },
+    {
+      "match_id": "match:serie-a:2026-10-29:frosinone:lecce",
+      "team_id": "team:lecce",
+      "team_name": "Lecce",
+      "providers": [
+        {
+          "provider": "RatingBet match statistics; underlying xG provider/model version not disclosed",
+          "xg": "1.1",
+          "xga": "2.79",
+          "source_url": "https://ratingbet.com/football/match/frosinone-vs-lecce/"
+        },
+        {
+          "provider": "Flashscore; model version undisclosed",
+          "xg": "1.45",
+          "xga": "3.07",
+          "source_url": "https://www.flashscore.com.au/match/football/frosinone-pfo9H1Wp/lecce-G8lYsMgU/?mid=As77hb15"
+        }
+      ],
+      "max_abs_xg_delta": 0.35,
+      "status": "SOURCE_DISAGREEMENT_NOT_AVERAGED"
+    },
+    {
+      "match_id": "match:ligue-1:2026-10-30:le-havre:paris-saint-germain",
+      "team_id": "team:le-havre",
+      "team_name": "Le Havre",
+      "providers": [
+        {
+          "provider": "Sofascore; model version not disclosed",
+          "xg": "1.88",
+          "xga": "3.06",
+          "source_url": "https://www.sofascore.com/news/le-havre-1-5-psg-hakimi-hits-hat-trick-in-ligue-1"
+        },
+        {
+          "provider": "Maxifoot; model version not disclosed",
+          "xg": "1.51",
+          "xga": "3.06",
+          "source_url": "https://www.maxifoot.fr/match/havre-paris-20261030.htm"
+        }
+      ],
+      "max_abs_xg_delta": 0.37,
+      "status": "SOURCE_DISAGREEMENT_NOT_AVERAGED"
+    }
+  ],
+  "correction_notice": "The source-discrepancy data itself was not numerically changed; the corrected cumulative snapshot is in the adjacent -100230-corrected files."
+}
