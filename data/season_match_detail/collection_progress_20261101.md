@@ -116,3 +116,10 @@
 - 更新 `.github/workflows/collect-season-match-detail.yml`：当手动选择 `j1` + `2026` 时，采集结束后先运行 J1 第一阶段审计，再进入数据提交步骤；审计 JSON 随 artifact 一并提供。
 - 新增代码提交：`ba91fba8c9ec441a425d23261287f7cb168846c4`（审计脚本）；`c3f0933daf3fa94b2d9e489321c7f0ed6b39213b`（工作流增加审计门）。
 - **当前状态仍为待运行：**尚未实际启动 Actions，因此还没有新的球员 CSV、审计 JSON 或真实覆盖率数字。启动需要 Actions 中配置有效 `API_FOOTBALL_KEY`。当前对话可用的 GitHub 工具没有 workflow dispatch 操作；工作流位于开发分支，且尚未合并默认分支。
+
+
+## J1 第一阶段执行记录追加（2026-11-01）
+- 新增 `data_pipeline/audit_j1_phase1.py`（commit `c9b47efe02d617de6420ea4a24471042afc94169`）：读取 API-Football 比赛与球员明细 CSV，输出逐场问题清单、首发人数、实际出场与 xG 覆盖率、重复赛事/球员键审计到 `j1_2026_phase1_audit.json`。
+- 已确认采集工作流包含 J1 采集后审计步骤和 90 天 artifact 上传配置。
+- 本次只完成代码和流程准备；没有实际运行 Actions、没有调用 API-Football，因此当前不存在可核实的球员明细 CSV 或真实采集审计 JSON。所有首发/出场/xG覆盖率在采集运行前均标记为未验证。
+- 工作流及审计代码仍在开发分支 PR #17，尚未合并；不把开发分支中的代码准备状态记为数据采集完成。
