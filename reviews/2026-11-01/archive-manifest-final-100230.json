@@ -1,0 +1,163 @@
+{
+  "report_version": "daily-football-archive-manifest-2026-11-01-v2-corrected",
+  "generated_at_beijing": "2026-11-01T10:02:30+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-01",
+  "base_branch": "automation/daily-football-2026-10-31",
+  "immutable_history_policy": "No prior prediction snapshot or prior xG snapshot was overwritten. This run added a new date-stamped snapshot.",
+  "archive_summary": {
+    "confirmed_beijing_2026_10_31_results": 41,
+    "core_league_results": 26,
+    "additional_tracked_results": 15,
+    "early_completed_beijing_2026_11_01_queued_for_next_review": 7,
+    "upcoming_fixtures_registered": 33,
+    "candidates_for_1500_window_recheck": 18,
+    "xg_cumulative_unique_matches": 87,
+    "xg_team_match_provider_rows": 202,
+    "matches_with_any_supplier_xg": 25,
+    "matches_without_verified_supplier_xg": 62,
+    "match_level_xg_coverage_pct": 28.74,
+    "team_weekly_provider_rows": 200,
+    "team_weekly_coverage_rows": 169,
+    "xgd_arithmetic_mismatches": 0,
+    "source_disagreement_groups": 7
+  },
+  "formal_prediction_audit": {
+    "matched_immutable_pre_match_snapshots": 0,
+    "formal_hit_rates": "NOT_COMPUTABLE",
+    "official_sporttery_handicap": "NOT_CAPTURED",
+    "v5_1_changed": false,
+    "frozen_validation_sample_changed": false
+  },
+  "database": {
+    "connected": false,
+    "detail": "No SQLite or remote database connection was opened; this run wrote to GitHub only."
+  },
+  "source_quality_limits": [
+    "Result sources were checked via official league/club pages or reliable sports reporting where available; match-specific raw HTML/API responses were not archived.",
+    "Most supplier event IDs remain unresolved and raw payload SHA-256 is blank.",
+    "Exact source retrieval timestamps are approximate or absent; this is explicitly marked per row.",
+    "Weekly xG covers reviewed matches only and is not full-week fixture-complete for every team.",
+    "Post-match xG estimates are stored for post-match review only, not used as same-match pre-match inputs."
+  ],
+  "files": [
+    {
+      "path": "reviews/2026-11-01/match-registry.json",
+      "blob_sha": "1b048808de2d965b5453528c243a1610b77f2d35",
+      "bytes": 75238,
+      "readback_verified": true
+    },
+    {
+      "path": "reviews/2026-11-01/previous-day-review.json",
+      "blob_sha": "70a1b2c16076c89dafdfad44eb6c3b4a692e347e",
+      "bytes": 70994,
+      "readback_verified": true
+    },
+    {
+      "path": "results/domestic-league/2026-10-31/results.json",
+      "blob_sha": "a2dd11c9e71def0dc6219a96f817daa7ff1958fa",
+      "bytes": 43164,
+      "readback_verified": true
+    },
+    {
+      "path": "results/other-domestic-leagues/2026-10-31/results.json",
+      "blob_sha": "f440385dc2e007cfe6d126476b6bb217da261cae",
+      "bytes": 26054,
+      "readback_verified": true
+    },
+    {
+      "path": "reviews/2026-11-01/current-day-completed-results.json",
+      "blob_sha": "1d4551a75b67f7582790987726a2243b5474fa65",
+      "bytes": 6223,
+      "readback_verified": true
+    },
+    {
+      "path": "fixtures/2026-11-01/schedule.json",
+      "blob_sha": "3c0fd090436bc21cd0fe2fcc721d374dea03b8a0",
+      "bytes": 46963,
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/match_xg_snapshot-095644.csv",
+      "blob_sha": "886263cf204beb75833638c7c105c04befc3cae8",
+      "bytes": 131278,
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_xg_snapshot-095644.csv",
+      "blob_sha": "5123757a001302afc35eb7234f834f4953838703",
+      "bytes": 99270,
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_coverage_snapshot-095644.csv",
+      "blob_sha": "9f5046214015a39b600c788eccf322b9427296be",
+      "bytes": 58185,
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/xg_coverage_audit-095644.json",
+      "blob_sha": "a6afae15463ecc604ddb4876022f59bfbe5a72b8",
+      "bytes": 1661,
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/xg_source_discrepancy_audit-095644.json",
+      "blob_sha": "4537444a03d64cea630106c1935cad122538cebe",
+      "bytes": 5213,
+      "readback_verified": true
+    }
+  ],
+  "verification": {
+    "checked_file_count": 11,
+    "readback_verified": true,
+    "csv_header_and_row_width": "PASS",
+    "xgd_equals_xg_minus_xga": "PASS",
+    "duplicate_new_match_ids": "0 after filtering existing snapshot IDs",
+    "date_stamp_snapshot_preserved": "PASS",
+    "corrected_snapshot_season_label": "PASS",
+    "corrected_snapshot_xgd_arithmetic": "PASS"
+  },
+  "correction_note": "One J1 League season label typo was found after initial readback. Original xG snapshots were preserved; corrected version files were added and read back.",
+  "original_manifest_path": "reviews/2026-11-01/archive-manifest.json",
+  "correction_note_path": "reviews/2026-11-01/xg-correction-note-100230.json",
+  "corrected_files": [
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/match_xg_snapshot-100230-corrected.csv",
+      "blob_sha": "7539bcdc478540b68f0c5e70ec54fbb7fd78dff6",
+      "bytes": 131278,
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_xg_snapshot-100230-corrected.csv",
+      "blob_sha": "8149dc5949253ce3fad6aeb3079233a46b104d8e",
+      "bytes": 99270,
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_coverage_snapshot-100230-corrected.csv",
+      "blob_sha": "3778c4cecac8b684dbf6f79d7f75f664379a3c2f",
+      "bytes": 58185,
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/xg_coverage_audit-100230-corrected.json",
+      "blob_sha": "0c560f4bfa54ea80e3b8642be5b6671cf27a3e6d",
+      "bytes": 2581,
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/xg_source_discrepancy_audit-100230-corrected.json",
+      "blob_sha": "1343cf799b1deff60940e5f5f32325f3f31e21f6",
+      "bytes": 5381,
+      "readback_verified": true
+    }
+  ],
+  "authoritative_xg_files": [
+    "data/xg_weekly/2026-W44/snapshots/2026-11-01/match_xg_snapshot-100230-corrected.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_xg_snapshot-100230-corrected.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-01/team_weekly_coverage_snapshot-100230-corrected.csv",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-01/xg_coverage_audit-100230-corrected.json"
+  ],
+  "original_xg_snapshot_preserved": true
+}
