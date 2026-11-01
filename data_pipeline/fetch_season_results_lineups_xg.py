@@ -115,7 +115,12 @@ def main():
                     start = lineup.get("startXI") or []
                     subs = lineup.get("substitutes") or []
                     starters = [p.get("player", {}).get("name") for p in start if p.get("player", {}).get("name")]
-                    row["home_starting_xi" if team == home.get("id") else "away_starting_xi"] = starters
+                    if team == home.get("id"):
+                        row["home_starting_xi"] = starters
+                    elif team == away.get("id"):
+                        row["away_starting_xi"] = starters
+                    else:
+                        errors.append({"fixture_id": fid, "lineup_error": f"Unexpected team ID in lineup response: {team}"})
                     # Keep both starters and listed substitutes; actual minutes are joined from fixtures/players.
                     for is_starting, entries in ((True, start), (False, subs)):
                         for entry in entries:
@@ -151,12 +156,12 @@ def main():
                 # xGA is the opponent's xG for the same fixture; keep explicit rather than infer from goals.
                 row["home_xga"] = row["away_xg"]
                 row["away_xga"] = row["home_xg"]
-                row["lineup_status"] = "ok" if row["home_starting_xi"] is not None and row["away_starting_xi"] is not None else "missing_lineup"
+                row["lineup_status"] = "ok" if len(row["home_starting_xi"] or []) == 11 and len(row["away_starting_xi"] or []) == 11 else "missing_or_incomplete_lineup"
                 row["xg_status"] = "ok" if row["home_xg"] is not None and row["away_xg"] is not None else "missing_xg"
             except Exception as exc:
-                errors.append({"fixture_id": fid, "error": str(exc)})
-                row["lineup_status"] = "fetch_error"
-                row["xg_status"] = "fetch_error"
+                errors.append({"fixture_id": fid, "lineup_or_xg_error": str(exc)})
+                row["lineup_status"] = "ok" if len(row["home_starting_xi"] or []) == 11 and len(row["away_starting_xi"] or []) == 11 else "fetch_error_or_incomplete_lineup"
+                row["xg_status"] = "ok" if row["home_xg"] is not None and row["away_xg"] is not None else "fetch_error_or_missing_xg"
             # API-Football player statistics are a separate request and required to identify subs who actually entered.
             try:
                 player_file = CACHE / f"fixture_{fid}_players.json"
@@ -195,7 +200,12 @@ def main():
                             detail["appeared"] = (minutes > 0) if minutes is not None else None
                         if minutes is not None and minutes > 0 and name:
                             appeared.append({"name": name, "minutes": minutes, "number": player.get("number"), "position": player.get("pos")})
-                    row["home_players_appeared" if tid == home.get("id") else "away_players_appeared"] = appeared
+                    if tid == home.get("id"):
+                        row["home_players_appeared"] = appeared
+                    elif tid == away.get("id"):
+                        row["away_players_appeared"] = appeared
+                    else:
+                        errors.append({"fixture_id": fid, "player_stats_error": f"Unexpected team ID in player stats response: {tid}"})
             except Exception as exc:
                 errors.append({"fixture_id": fid, "player_stats_error": str(exc)})
             player_rows.extend(fixture_player_rows.values())
@@ -227,6 +237,8 @@ def main():
         writer.writerows(player_rows)
     player_keys = [(p["fixture_id"], p["team_id"], p["player_id"] or p["player_name"]) for p in player_rows]
     duplicate_player_keys = len(player_keys) - len(set(player_keys))
+    normalized_name_keys = [(p["fixture_id"], p["team_id"], " ".join(str(p["player_name"] or "").casefold().split())) for p in player_rows]
+    duplicate_fixture_team_player_names = len(normalized_name_keys) - len(set(normalized_name_keys))
     player_groups = {}
     for p in player_rows:
         player_groups.setdefault((p["fixture_id"], p["team_side"]), []).append(p)
@@ -240,10 +252,11 @@ def main():
         "provider": "API-Football", "league": league_name, "league_key": league_key,
         "season_start_year": season, "fixture_count": len(rows), "completed_count": len(finished),
         "completed_with_score": sum(r["result_90m"] is not None for r in finished),
-        "completed_with_both_starting_xi": sum(r["home_starting_xi"] is not None and r["away_starting_xi"] is not None for r in finished),
+        "completed_with_both_starting_xi": sum(len(r["home_starting_xi"] or []) == 11 and len(r["away_starting_xi"] or []) == 11 for r in finished),
         "normalized_player_rows": len(player_rows),
         "unique_fixture_team_player_keys": len(set(player_keys)),
         "duplicate_fixture_team_player_keys": duplicate_player_keys,
+        "duplicate_fixture_team_normalized_player_names": duplicate_fixture_team_player_names,
         "fixtures_with_both_teams_exactly_11_starting_xi": sum(sum(1 for p in player_rows if p["fixture_id"] == fid and p["team_side"] == "home" and p["is_starting"] is True) == 11 and sum(1 for p in player_rows if p["fixture_id"] == fid and p["team_side"] == "away" and p["is_starting"] is True) == 11 for fid in {p["fixture_id"] for p in player_rows}),
         "normalized_player_csv": str(players_csv_path),
         "completed_with_both_teams_appearances": sum(r["home_players_appeared"] is not None and r["away_players_appeared"] is not None for r in finished),
