@@ -24,11 +24,6 @@ on:
           - "2025"
           - "2026"
         default: "2025"
-  push:
-    paths:
-      - "data_pipeline/fetch_season_results_lineups_xg.py"
-      - ".github/workflows/collect-season-match-detail.yml"
-
 permissions:
   contents: write
 
@@ -44,7 +39,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: main
+          ref: ${{ github.ref }}
 
       - uses: actions/setup-python@v5
         with:
@@ -61,6 +56,10 @@ jobs:
           REQUEST_PAUSE_SECONDS: "0.35"
         run: python data_pipeline/fetch_season_results_lineups_xg.py
 
+      - name: Run J1 phase-one quality audit
+        if: ${{ inputs.league == 'j1' && inputs.season == '2026' }}
+        run: python data_pipeline/audit_j1_phase1.py
+
       - name: Commit season dataset and audit
         run: |
           git config user.name "football-model-bot"
@@ -71,9 +70,10 @@ jobs:
             exit 0
           fi
           git commit -m "data: collect ${{ inputs.league || 'premier-league' }} season ${{ inputs.season || '2025' }} match details"
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+          branch="${GITHUB_REF#refs/heads/}"
+          git fetch origin "$branch"
+          git rebase "origin/$branch"
+          git push origin "HEAD:$branch"
 
       - uses: actions/upload-artifact@v4
         if: always()
