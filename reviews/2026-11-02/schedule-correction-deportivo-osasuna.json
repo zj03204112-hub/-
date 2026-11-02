@@ -1,0 +1,35 @@
+{
+  "report_version": "schedule-correction-2026-11-02-v1",
+  "generated_at_beijing": "2026-11-02T10:25:10+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-02",
+  "file_updated": "fixtures/2026-11-02/schedule.json",
+  "previous_blob_sha": "9df5da01efc0cd6113770dd79b77df2bc2f6a90d",
+  "update_commit_sha": "cd7e060faac3d8304848b0f690bc426d7d5a074d",
+  "correction": {
+    "before": {
+      "match": "Deportivo Alavés vs Osasuna",
+      "competition": "La Liga",
+      "kickoff_utc": "2026-11-02T20:00:00Z",
+      "kickoff_beijing": "2026-11-03T04:00:00+08:00",
+      "hours_from_15_00": 13,
+      "status": "OUTSIDE_WINDOW"
+    },
+    "after": {
+      "match": "RC Deportivo de A Coruña vs Osasuna",
+      "competition": "La Liga",
+      "kickoff_utc": "2026-11-02T20:00:00Z",
+      "kickoff_beijing": "2026-11-03T04:00:00+08:00",
+      "hours_from_15_00": 13,
+      "status": "OUTSIDE_WINDOW",
+      "official_team_name": "RC Deportivo de A Coruña",
+      "verified_source_url": "https://www.laliga.com/en-ES/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11",
+      "source_crosscheck_status": "CONFIRMED_OFFICIAL_LALIGA_FIXTURE",
+      "note": "Official LaLiga lists RC Deportivo vs CA Osasuna on Monday 2 Nov at 21:00 CET (20:00 UTC); at the 15:00 Beijing check this is 13 hours away, outside the 6-12 hour prediction window."
+    }
+  },
+  "source": "https://www.laliga.com/en-ES/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11",
+  "rule": "The official LaLiga fixture page identifies RC Deportivo de A Coruña vs CA Osasuna for 2 Nov 2026, 21:00 CET (20:00 UTC). Deportivo Alavés vs Osasuna is a different fixture and was a mistaken name mapping.",
+  "impact": "Kickoff remains 2026-11-03 04:00 Beijing, 13 hours after the 15:00 check; still outside the 6-12 hour prediction window. No prediction generated.",
+  "old_schedule_preserved_in_git_history": true
+}
