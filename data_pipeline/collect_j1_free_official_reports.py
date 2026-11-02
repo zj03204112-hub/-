@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Audit note: official Data Site IDs are resolved in the match mapping; rerun collector after mapping changes.
 """Collect J1 2026/27 lineups and substitution events from free official J.League match reports.
 
 No paid API is used. The collector deliberately leaves player IDs and exact played
