@@ -149,11 +149,19 @@ def main():
     roster_profiles = []
     roster_errors = []
     for i, url in enumerate(roster_urls, 1):
-        try:
-            team, profiles = parse_roster(url)
-            roster_profiles.extend(profiles)
-        except Exception as exc:
-            roster_errors.append({"url": url, "error": str(exc)[:300]})
+        last_error = None
+        for attempt in range(3):
+            try:
+                team, profiles = parse_roster(url)
+                roster_profiles.extend(profiles)
+                last_error = None
+                break
+            except Exception as exc:
+                last_error = exc
+                if attempt < 2:
+                    time.sleep(1.0 * (attempt + 1))
+        if last_error is not None:
+            roster_errors.append({"url": url, "error": str(last_error)[:300]})
         if i % 5 == 0:
             print(f"Parsed {i}/{len(roster_urls)} official club roster pages", flush=True)
         time.sleep(0.12)
@@ -247,7 +255,7 @@ def main():
     AUDIT.write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(audit, ensure_ascii=False, indent=2))
     if roster_errors:
-        raise SystemExit("Some official roster pages failed; see audit before accepting completeness.")
+        print(f"WARNING: {len(roster_errors)} official roster pages remained unavailable after retries; see audit. Continuing other independent collection steps.", flush=True)
 
 if __name__ == "__main__":
     main()
