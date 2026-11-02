@@ -86,7 +86,7 @@ def parse_report(url: str, home_team: str = "", away_team: str = ""):
     # The official jleague.jp match pages use a different layout from Data Site tables.
     # Recover the 22 starters from accessible page text, accommodating both EN and JP labels.
     if not players and "jleague.jp/" in url:
-        lines = [clean(x) for x in soup.get_text("\\n").splitlines()]
+        lines = [clean(x) for x in soup.get_text("\n").splitlines()]
         lines = [x for x in lines if x]
         start = next((i for i, x in enumerate(lines)
                       if any(k in x for k in ("Starting Line-ups Announcement", "スターティングメンバー発表", "スターティングメンバー", "先発メンバー"))), None)
@@ -95,10 +95,10 @@ def parse_report(url: str, home_team: str = "", away_team: str = ""):
             # Some J.League pages emit "GK 49" and the name in adjacent nodes;
             # others concatenate position, number and name into one text node.
             for line in lines[start + 1:min(len(lines), start + 180)]:
-                chunks = re.split(r"(?=(?:GK|DF|MF|FW)\\s*\\d{1,3}(?:\\s|[^0-9]))", line, flags=re.I)
+                chunks = re.split(r"(?=(?:GK|DF|MF|FW)\s*\d{1,3}(?:\s|[^0-9]))", line, flags=re.I)
                 for chunk in chunks:
                     chunk = clean(chunk)
-                    m = re.match(r"^(GK|DF|MF|FW)\\s*(\\d{1,3})(?:\\s+|)(.*)$", chunk, re.I)
+                    m = re.match(r"^(GK|DF|MF|FW)\s*(\d{1,3})(?:\s+|)(.*)$", chunk, re.I)
                     if not m:
                         continue
                     pos, shirt, name = m.group(1).upper(), m.group(2), clean(m.group(3))
@@ -106,8 +106,8 @@ def parse_report(url: str, home_team: str = "", away_team: str = ""):
                     # the next player's position as part of this player's name.
                     if not name and len(roster) < 22:
                         continue
-                    name = re.split(r"\\s+(?:GK|DF|MF|FW)\\s*\\d{1,3}\\b", name, maxsplit=1, flags=re.I)[0].strip()
-                    name = re.sub(r"^(?:Image:.*?\\s+)?", "", name).strip()
+                    name = re.split(r"\s+(?:GK|DF|MF|FW)\s*\d{1,3}\b", name, maxsplit=1, flags=re.I)[0].strip()
+                    name = re.sub(r"^(?:Image:.*?\s+)?", "", name).strip()
                     if name and not name.lower().startswith(("image:", "formation", "sub in", "sub out")):
                         roster.append((pos, shirt, name))
                 if len(roster) >= 22:
