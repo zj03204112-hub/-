@@ -166,7 +166,12 @@ def main():
             print(f"Parsed {i}/{len(roster_urls)} official club roster pages", flush=True)
         time.sleep(0.12)
 
-    # Keep the complete official roster index until a URL-based J1-only filter is validated.
+    # Fetch participation histories only for official profiles whose normalized names
+    # appear in mapped J1 match reports. Keep all club candidates for these names so
+    # same-name collisions can still be resolved by club label below.
+    needed_name_keys = {name_key(r.get("player_name", "")) for r in player_rows if name_key(r.get("player_name", ""))}
+    roster_profiles = [p for p in roster_profiles if name_key(p.get("player_name_roster", "")) in needed_name_keys]
+    print(f"Filtered official profiles to names present in mapped J1 reports: {len(roster_profiles)}", flush=True)
 
     by_name = defaultdict(list)
     ids = {}
