@@ -244,11 +244,32 @@ def main():
                 if value not in (None, "") or prior.get(field) in (None, ""):
                     prior[field] = value
     sub_rows = list(merged_subs.values())
+    # Resolve substitution team by matching the official in/out player names to this
+    # match's verified starting XI and bench roster, not by trusting a possibly shared table heading.
+    def player_name_key(value):
+        return re.sub(r"[\\s\\u3000・･'’\\".,，．()（）\\-‐‑—]+", "", clean(value)).casefold()
+    roster_teams = {}
+    for player in player_rows:
+        player_key = player_name_key(player.get("player_name", ""))
+        team_label = clean(player.get("team_report_label", ""))
+        if player_key and team_label:
+            roster_teams.setdefault((player.get("internal_match_id", ""), player_key), set()).add(team_label)
     for row in sub_rows:
         raw_label = row.get("team_report_label_raw") or row.get("team_report_label", "")
+        match_id = row.get("internal_match_id", "")
+        out_teams = roster_teams.get((match_id, player_name_key(row.get("player_out_name", ""))), set())
+        in_teams = roster_teams.get((match_id, player_name_key(row.get("player_in_name", ""))), set())
+        resolved = set()
+        status = "unresolved_roster_name_match"
+        if len(out_teams) == 1 and len(in_teams) == 1 and out_teams == in_teams:
+            resolved, status = out_teams, "matched_out_and_in_to_official_roster"
+        elif len(out_teams) == 1 and not in_teams:
+            resolved, status = out_teams, "matched_outgoing_player_to_official_roster"
+        elif len(in_teams) == 1 and not out_teams:
+            resolved, status = in_teams, "matched_incoming_player_to_official_roster"
         row["team_report_label_raw"] = raw_label
-        row["team_report_label"] = ""
-        row["team_assignment_status"] = "unresolved_parser_team_mapping"
+        row["team_report_label"] = next(iter(resolved)) if len(resolved) == 1 else ""
+        row["team_assignment_status"] = status if len(resolved) == 1 else "unresolved_roster_name_match"
     write_csv(PLAYERS_OUT, player_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","team_report_label_raw","team_assignment_status","section","position","shirt_number","player_name","player_id","player_id_status","actual_minutes","actual_minutes_status","source_time_cell","source_url"])
     write_csv(SUBS_OUT, sub_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","team_report_label_raw","team_assignment_status","player_out_name","player_in_name","minute","player_out_id","player_in_id","source_url","source_type"])
     audit = {
