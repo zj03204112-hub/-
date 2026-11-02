@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-11-02",
+  "league": "J1 League",
+  "season": "2026/27",
+  "source": "Official J.LEAGUE individual match pages opened from the official fixtures/results index",
+  "baseline_file": "data/auto_results/J1_League_2026_27.csv",
+  "baseline_csv_blob_sha": "8d99885bf7b0d52c5fcc7c2922dd02d92450a54f",
+  "scope": "Incremental row-level verification batch; this does not mark the full 126-row baseline complete.",
+  "verified_matches": [
+    {
+      "date": "2026-10-31",
+      "home": "水戸",
+      "away": "広島",
+      "score": "0-3",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/103107/",
+      "status": "matched"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "京都",
+      "away": "清水",
+      "score": "2-0",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/103112/",
+      "status": "matched"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "岡山",
+      "away": "FC東京",
+      "score": "0-4",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/103109/",
+      "status": "matched"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "鹿島",
+      "away": "Ｃ大阪",
+      "score": "4-1",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/103110/",
+      "status": "matched"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "神戸",
+      "away": "名古屋",
+      "score": "3-1",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/103113/",
+      "status": "matched"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "柏",
+      "away": "浦和",
+      "score": "4-0",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/103111/",
+      "status": "matched"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "横浜FM",
+      "away": "川崎Ｆ",
+      "score": "4-2",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/110101/",
+      "status": "matched_outside_baseline_window"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "千葉",
+      "away": "福岡",
+      "score": "3-0",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/110102/",
+      "status": "matched_outside_baseline_window"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "長崎",
+      "away": "東京Ｖ",
+      "score": "1-2",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/110103/",
+      "status": "matched_outside_baseline_window"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "町田",
+      "away": "Ｇ大阪",
+      "score": "0-0",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/110109/",
+      "status": "matched_outside_baseline_window"
+    }
+  ],
+  "count_summary": {
+    "baseline_csv_total_rows": 130,
+    "baseline_rows_through_2026_10_31": 126,
+    "rows_on_2026_11_01_extension": 4,
+    "official_individual_match_pages_opened_this_batch": 10,
+    "baseline_rows_verified_this_batch": 6,
+    "previously_independently_checked_baseline_rows": 2,
+    "baseline_rows_pending_individual_page_verification": 118,
+    "note": "Six Oct 31 games were matched individually. One of these (Kobe-Nagoya) had already been independently checked in the prior audit; therefore this batch adds five newly verified baseline rows. Along with the prior two checks, 7 of 126 baseline rows are individually verified, leaving 119 pending."
+  },
+  "match_detail_fields": {
+    "date_and_score": "confirmed on individual official pages",
+    "starting_xi_and_substitutions": "visible on official pages; not yet extracted into structured per-match player rows in this batch",
+    "match_level_xg_xga": "not confirmed in this batch; leave null until a free source exposes explicit match-level values"
+  },
+  "next_steps": [
+    "Continue official individual match-page crosswalk for remaining baseline rows using normalized date + home + away + full-time score.",
+    "Extract both starting XIs and substitution/appearance events from official pages into separate row-level structured data.",
+    "Audit match-level xG and xGA independently; do not substitute team averages or estimated values."
+  ],
+  "integrity_rules": [
+    "Do not mark the whole baseline verified until each row has individual official evidence.",
+    "Do not infer appearances from starting XI.",
+    "Do not overwrite V5.1 or historical prediction snapshots."
+  ]
+}
