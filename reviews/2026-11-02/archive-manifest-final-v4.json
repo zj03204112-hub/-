@@ -1,0 +1,76 @@
+{
+  "report_version": "daily-football-archive-manifest-2026-11-02-v4",
+  "generated_at_beijing": "2026-11-02T10:23:54+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-02",
+  "base_manifest": "reviews/2026-11-02/archive-manifest-final-v3.json",
+  "correction": "ISO week assignment corrected using Asia/Shanghai kickoff date; prior W44 snapshot preserved.",
+  "files": [
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/match_xg_snapshot-102354-iso-boundary-corrected.csv",
+      "commit_sha": "9850b0c1cdb536be51321a5cc00e4c10f9fd7709",
+      "bytes": 166847
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_xg_snapshot-102354-iso-boundary-corrected.csv",
+      "commit_sha": "267d7317ee3ab3b08a4acbfeb3a871fd86e5e4b6",
+      "bytes": 138635
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_coverage_snapshot-102354-iso-boundary-corrected.csv",
+      "commit_sha": "95c49b1dc486b8fc2944f54c540d656a682d5de6",
+      "bytes": 77929
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_coverage_audit-102354-iso-boundary-corrected.json",
+      "commit_sha": "aaa52b7ca6c6ac2f6f236b7dad51279ef0641406",
+      "bytes": 2146
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-02/match_xg_snapshot-102354.csv",
+      "commit_sha": "c9e579c235f6569053735e3f56defb717f8ba23e",
+      "bytes": 21269
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-02/team_weekly_xg_snapshot-102354.csv",
+      "commit_sha": "bc1446ea12cca53daec99dcb68615d342a28ae43",
+      "bytes": 16571
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-02/team_weekly_coverage_snapshot-102354.csv",
+      "commit_sha": "fa15eca0a6a6c3c74b1c41c566ca3bdde00a8849",
+      "bytes": 11368
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-02/xg_coverage_audit-102354.json",
+      "commit_sha": "63948c5dbc351ca32d3535163fd654dde050c218",
+      "bytes": 2061
+    },
+    {
+      "path": "reviews/2026-11-02/iso-week-boundary-correction-102354.json",
+      "commit_sha": "a53e44d5c8b262186bedbfbfa82c05584a6bec18",
+      "bytes": 1484
+    }
+  ],
+  "counts": {
+    "original_snapshot_rows": 288,
+    "original_snapshot_unique_matches": 123,
+    "corrected_w44_rows": 256,
+    "corrected_w44_unique_matches": 107,
+    "corrected_w45_rows": 32,
+    "corrected_w45_unique_matches": 16,
+    "w44_matches_with_verified_xg": 33,
+    "w45_matches_with_verified_xg": 2,
+    "w44_xgd_arithmetic_mismatches": 0,
+    "w45_xgd_arithmetic_mismatches": 0,
+    "w44_duplicate_keys": 0,
+    "w45_duplicate_keys": 0,
+    "full_week_coverage_groups": 0
+  },
+  "limitations": [
+    "Full-week fixture coverage is not established.",
+    "No SQLite/remote DB connection.",
+    "Raw HTML/API payloads and SHA-256 hashes are not archived.",
+    "No immutable prediction snapshots or verified official Sporttery handicaps for prior-day matches."
+  ]
+}
