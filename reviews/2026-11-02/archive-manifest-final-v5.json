@@ -1,0 +1,107 @@
+{
+  "report_version": "daily-football-archive-manifest-2026-11-02-v5",
+  "generated_at_beijing": "2026-11-02T10:25:30+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-02",
+  "supersedes_manifest": "reviews/2026-11-02/archive-manifest-final-v4.json",
+  "notes": [
+    "Previous-day review uses kickoff converted to Asia/Shanghai: 28 confirmed matches for Beijing 2026-11-01.",
+    "16 matches already completed in early hours of Beijing 2026-11-02 are held in a separate current-day queue.",
+    "ISO-week xG boundary correction: Beijing 2026-11-02 fixtures are assigned to ISO week 2026-W45; original W44 snapshot remains immutable.",
+    "Schedule identity corrected from Deportivo Alavés vs Osasuna to RC Deportivo de A Coruña vs Osasuna using the official LaLiga fixture page."
+  ],
+  "files": [
+    {
+      "path": "reviews/2026-11-02/previous-day-review.json",
+      "blob_sha": "28dfb37445688b0f5179e82b66b0a2ae56b13553"
+    },
+    {
+      "path": "reviews/2026-11-02/current-day-completed-results.json",
+      "blob_sha": "2ac66e7a5271dfd917004e4dfeb5dd99a9c60302"
+    },
+    {
+      "path": "reviews/2026-11-02/correction-audit-2026-11-01.json",
+      "blob_sha": "bdd08b17c79d487465b858342a62bbd462068e6e"
+    },
+    {
+      "path": "reviews/2026-11-02/leisu-source-crosscheck.json",
+      "blob_sha": "6693107a3c71300a1083fdbe85a4d140f4115c93"
+    },
+    {
+      "path": "reviews/2026-11-02/tracked-competition-scope-audit.json",
+      "blob_sha": "7ca9517f8ee4795af864b7c01e22fe7acb55c266"
+    },
+    {
+      "path": "fixtures/2026-11-02/schedule.json",
+      "blob_sha": "26720f2a79efe3049c08f213baba30654188e7b4"
+    },
+    {
+      "path": "reviews/2026-11-02/schedule-correction-deportivo-osasuna.json",
+      "blob_sha": "353b342399b39e93f6c3758d5b0082ecb7de7a97"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/match_xg_snapshot-102354-iso-boundary-corrected.csv",
+      "blob_sha": "2ff59a23b19e66d7fe62ebd091689d86ca82cbbc"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_xg_snapshot-102354-iso-boundary-corrected.csv",
+      "blob_sha": "4d60e401921971acd4b196c47a633ea50d24002a"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_coverage_snapshot-102354-iso-boundary-corrected.csv",
+      "blob_sha": "5542f97139a653d75aace6a1d3b86c65663f7617"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_coverage_audit-102354-iso-boundary-corrected.json",
+      "blob_sha": "576a539475690fd0c34b126c5f6bf18ac7b7116f"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-02/match_xg_snapshot-102354.csv",
+      "blob_sha": "c079ff863218740c66386a22f9e4cf2e802b899a"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-02/team_weekly_xg_snapshot-102354.csv",
+      "blob_sha": "a71bc186b1663b951f61af83a3011e1b502e0346"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-02/team_weekly_coverage_snapshot-102354.csv",
+      "blob_sha": "8717d285fd398462775869fa1691a4bd11d77bf2"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-02/xg_coverage_audit-102354.json",
+      "blob_sha": "dc6d38d31dbff8244edd9d6fb4a3f4c2566cc0cb"
+    },
+    {
+      "path": "reviews/2026-11-02/iso-week-boundary-correction-102354.json",
+      "blob_sha": "1abd02176ae45cb70bb8d71c0e0d2275d6f66054"
+    },
+    {
+      "path": "reviews/2026-11-02/archive-readback-verification-v4.json",
+      "blob_sha": "454f55a6585ae2023316f34eeb6a0071bb56abdd"
+    }
+  ],
+  "counts": {
+    "beijing_2026_11_01_confirmed_results": 28,
+    "core_league_results": 24,
+    "other_tracked_results": 4,
+    "beijing_2026_11_02_early_completed_results": 16,
+    "eligible_at_1500_prediction_window": 1,
+    "immutable_prediction_snapshots_found_for_previous_day": 0,
+    "official_sporttery_handicaps_verified_for_previous_day": 0,
+    "corrected_iso_week_44_unique_matches": 107,
+    "corrected_iso_week_44_rows": 256,
+    "corrected_iso_week_44_xg_covered_matches": 33,
+    "corrected_iso_week_45_unique_matches": 16,
+    "corrected_iso_week_45_rows": 32,
+    "corrected_iso_week_45_xg_covered_matches": 2,
+    "xgd_arithmetic_mismatches": 0,
+    "duplicate_match_team_provider_keys": 0,
+    "full_week_coverage_groups": 0
+  },
+  "limitations": [
+    "No SQLite/remote database connection; the GitHub Actions DB sync run 41355312274 failed validation on two out-of-scope rows and skipped its generated-data commit.",
+    "Raw source HTML/API responses and SHA-256 hashes are not archived; most provider event IDs remain unresolved.",
+    "No immutable pre-match prediction snapshots or verified official Sporttery handicap snapshots were found for the 28 previous-day matches.",
+    "Full-week xG fixture coverage is incomplete; weekly totals and per-90 averages remain blank."
+  ]
+}
