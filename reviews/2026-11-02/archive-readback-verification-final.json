@@ -1,0 +1,47 @@
+{
+  "report_version": "archive-readback-verification-final-2026-11-02-v1",
+  "generated_at_beijing": "2026-11-02T09:56:44+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-02",
+  "verification_result": "PASS",
+  "files_read_back": 17,
+  "checks": {
+    "previous_day_matches": 28,
+    "core_league_matches": 24,
+    "other_tracked_matches": 4,
+    "current_day_early_completed_matches": 16,
+    "eligible_15_00_prediction_candidates": 1,
+    "xg_snapshot_rows": 288,
+    "xg_snapshot_unique_matches": 123,
+    "xg_arithmetic_mismatches": 0,
+    "xg_duplicate_keys": 0,
+    "previous_day_xg_coverage": 32.14,
+    "current_day_early_xg_coverage": 12.5,
+    "full_week_coverage_groups": 0
+  },
+  "readback_blob_shas": {
+    "results/domestic-league/2026-11-01/beijing-date-results.json": "26cf210d69180c07d4ff18699853e1a6aa9a90ec",
+    "results/other-domestic-leagues/2026-11-01/beijing-date-results.json": "e0fe1da1524148d0ba04daa025f11f22f1fdab21",
+    "reviews/2026-11-02/previous-day-review.json": "28dfb37445688b0f5179e82b66b0a2ae56b13553",
+    "reviews/2026-11-02/current-day-completed-results.json": "2ac66e7a5271dfd917004e4dfeb5dd99a9c60302",
+    "reviews/2026-11-02/correction-audit-2026-11-01.json": "bdd08b17c79d487465b858342a62bbd462068e6e",
+    "fixtures/2026-11-02/schedule.json": "9df5da01efc0cd6113770dd79b77df2bc2f6a90d",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/match_xg_snapshot-095644.csv": "dd0eac7e664cdc0aeacdd23a0307961e62dfb6a6",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_xg_snapshot-095644-v2.csv": "84fa0745ef1e37c9d33b675a8593da384d47317e",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_coverage_snapshot-095644-v2.csv": "62720ea395dcfe70c3db3cd92a6d8f02267ba36c",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_coverage_audit-095644.json": "2b43015091bf2e4824046f0ef26c8b7c63a63288",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_source_discrepancy_audit-095644.json": "5ca1268a77002d6c7bec9e1281e64bfe4ea043f1",
+    "reviews/2026-11-02/github-actions-data-sync-audit.json": "f2eeca543772d99405f8dc1f1c13bfc633c8831c",
+    "reviews/2026-11-02/archive-manifest-final.json": "42a7d8d78da2b656dbdfee7ae98b4f1bad36c21f",
+    "reviews/2026-11-02/archive-readback-verification.json": "dca395d2338d0dffd50c2589c7a3e446f5bf5e02",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_coverage_audit-095644-scope-split.json": "92ce8b1d5b99573d696b69f92c3f462f471301c3",
+    "reviews/2026-11-02/tracked-competition-scope-audit.json": "7ca9517f8ee4795af864b7c01e22fe7acb55c266",
+    "reviews/2026-11-02/archive-manifest-final-v2.json": "3976422a89cd4e12f2429cf3bfaa5e3d6d0a7ff0"
+  },
+  "limitations": [
+    "No database connection.",
+    "No matching immutable prediction snapshots for the 28 previous-day results.",
+    "Official JC handicap not verified.",
+    "GitHub Actions database sync failed validation and skipped its generated-data commit."
+  ]
+}
