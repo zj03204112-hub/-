@@ -6,7 +6,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-URL = "https://www.oddalerts.com/xg/j-league"
+URL = "https://footinsights.com/leagues/j1-league/"
 OUT = Path("data/season_match_detail/j1_2026_team_season_xg_free.csv")
 AUDIT = Path("data/season_match_detail/j1_2026_team_season_xg_free_audit.json")
 
@@ -59,7 +59,7 @@ def main():
     err = ""
     rows = []
     try:
-        r = requests.get(URL, timeout=30, headers={"User-Agent":"Mozilla/5.0"})
+        r = requests.get(URL, timeout=30, headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36"})
         r.raise_for_status()
         soup = BeautifulSoup(r.text, "html.parser")
         rows = parse_tables(soup, now)
