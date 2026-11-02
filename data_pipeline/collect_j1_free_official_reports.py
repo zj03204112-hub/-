@@ -172,7 +172,10 @@ def main():
             for p in players:
                 player_rows.append({"internal_match_id": result["internal_match_id"],
                     "provider_event_id": result["provider_event_id"], "match_date": result["match_date"],
-                    "team_report_label": p["team_report_label"], "section": p["section"],
+                    "team_report_label": p["team_report_label"] if p["section"] == "starting" else "",
+                    "team_report_label_raw": p["team_report_label"],
+                    "team_assignment_status": "source_report_team_label" if p["section"] == "starting" else "unresolved_parser_team_mapping",
+                    "section": p["section"],
                     "position": p["position"], "shirt_number": p["shirt_number"],
                     "player_name": p["player_name"], "player_id": p["player_id"],
                     "player_id_status": p["player_id_status"], "actual_minutes": "",
@@ -192,7 +195,7 @@ def main():
         if i % 10 == 0:
             print(f"Processed {i}/{len(matches)} official reports", flush=True)
         time.sleep(0.25)
-    write_csv(PLAYERS_OUT, player_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","section","position","shirt_number","player_name","player_id","player_id_status","actual_minutes","actual_minutes_status","source_time_cell","source_url"])
+    write_csv(PLAYERS_OUT, player_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","team_report_label_raw","team_assignment_status","section","position","shirt_number","player_name","player_id","player_id_status","actual_minutes","actual_minutes_status","source_time_cell","source_url"])
     write_csv(SUBS_OUT, sub_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","player_out_name","player_in_name","minute","player_out_id","player_in_id","source_url","source_type"])
     audit = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -204,6 +207,13 @@ def main():
         "starting_rows_extracted": sum(x["section"] == "starting" for x in player_rows),
         "bench_rows_extracted": sum(x["section"] == "bench" for x in player_rows),
         "substitution_rows_extracted": len(sub_rows),
+        "matches_with_complete_starting_xi": sum(1 for x in match_audits if x["starting_rows"] == 22),
+        "matches_without_complete_starting_xi": sum(1 for x in match_audits if x["starting_rows"] != 22),
+        "bench_rows_team_assigned": sum(1 for x in player_rows if x.get("section") == "bench" and x.get("team_report_label")),
+        "bench_rows_team_unresolved": sum(1 for x in player_rows if x.get("section") == "bench" and not x.get("team_report_label")),
+        "substitution_rows_missing_minute": sum(1 for x in sub_rows if x.get("minute") in (None, "")),
+        "substitution_rows_missing_player_out_id": sum(1 for x in sub_rows if not x.get("player_out_id")),
+        "substitution_rows_missing_player_in_id": sum(1 for x in sub_rows if not x.get("player_in_id")),
         "player_ids": "not fabricated; blank where the official source does not expose stable IDs",
         "actual_minutes": "not fabricated; blank unless published in the source; source_time_cell retained",
         "xg_xga": "not supplied by these official match reports; remains missing until a verified free source is found",
