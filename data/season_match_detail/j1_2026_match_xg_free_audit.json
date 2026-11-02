@@ -1,144 +1,898 @@
 {
-  "generated_at_utc": "2026-11-02T04:38:00Z",
+  "generated_at_utc": "2026-11-02T04:33:45.064488+00:00",
   "matches_in_mapping": 126,
-  "source_name": "ScanGoal",
-  "source_url": "https://scangoal.com/league/j-league",
-  "source_snapshot_note": "Per-match values were transcribed from public ScanGoal round listings. Rounds 1-4 were taken from the page snapshot updated 2026-09-19; rounds 5-13 were taken from the search-visible listing. Provider-specific values, not official J.League xG.",
-  "rows_transcribed": 126,
-  "rows_matched_to_internal_match_id": 126,
-  "rows_not_matched": 0,
-  "matched_keys": [
-    "2026-08-07|yokohamafm|kashima",
-    "2026-08-07|gambaosaka|urawa",
-    "2026-08-08|cerezoosaka|okayama",
-    "2026-08-08|nagoya|shimizu",
-    "2026-08-08|avispafukuoka|kobe",
-    "2026-08-08|kashiwa|mito",
-    "2026-08-08|fctokyo|machida",
-    "2026-08-08|sanfreccehiroshima|jefunitedchiba",
-    "2026-08-09|tokyoverdy|kawasaki",
-    "2026-08-14|tokyoverdy|kashiwa",
-    "2026-08-15|mito|gambaosaka",
-    "2026-08-15|kashima|nagoya",
-    "2026-08-15|shimizu|yokohamafm",
-    "2026-08-15|avispafukuoka|cerezoosaka",
-    "2026-08-15|kawasaki|kyoto",
-    "2026-08-15|urawa|sanfreccehiroshima",
-    "2026-08-15|kobe|fctokyo",
-    "2026-08-15|jefunitedchiba|machida",
-    "2026-08-21|fctokyo|jefunitedchiba",
-    "2026-08-22|kashima|avispafukuoka",
-    "2026-08-22|okayama|tokyoverdy",
-    "2026-08-22|nagoya|gambaosaka",
-    "2026-08-22|cerezoosaka|shimizu",
-    "2026-08-22|kyoto|mito",
-    "2026-08-22|sanfreccehiroshima|kawasaki",
-    "2026-08-22|yokohamafm|kobe",
-    "2026-08-23|machida|urawa",
-    "2026-08-29|mito|machida",
-    "2026-08-29|gambaosaka|sanfreccehiroshima",
-    "2026-08-29|shimizu|kashiwa",
-    "2026-08-29|kawasaki|jefunitedchiba",
-    "2026-08-29|kyoto|avispafukuoka",
-    "2026-08-29|nagoya|okayama",
-    "2026-08-29|kobe|cerezoosaka",
-    "2026-08-29|tokyoverdy|kashima",
-    "2026-08-29|urawa|yokohamafm",
-    "2026-09-02|tokyoverdy|kobe",
-    "2026-09-02|machida|kawasaki",
-    "2026-09-02|avispafukuoka|urawa",
-    "2026-09-02|cerezoosaka|kashiwa",
-    "2026-09-02|mito|kashima",
-    "2026-09-02|jefunitedchiba|okayama",
-    "2026-09-02|shimizu|fctokyo",
-    "2026-09-02|sanfreccehiroshima|nagoya",
-    "2026-09-02|yokohamafm|kyoto",
-    "2026-09-05|avispafukuoka|mito",
-    "2026-09-06|nagoya|machida",
-    "2026-09-06|okayama|sanfreccehiroshima",
-    "2026-09-06|kashima|urawa",
-    "2026-09-06|jefunitedchiba|gambaosaka",
-    "2026-09-06|cerezoosaka|tokyoverdy",
-    "2026-09-06|kashiwa|yokohamafm",
-    "2026-09-06|kawasaki|shimizu",
-    "2026-09-06|fctokyo|kyoto",
-    "2026-09-11|kyoto|kashiwa",
-    "2026-09-11|kobe|kashima",
-    "2026-09-12|mito|kawasaki",
-    "2026-09-12|shimizu|avispafukuoka",
-    "2026-09-12|gambaosaka|fctokyo",
-    "2026-09-12|machida|yokohamafm",
-    "2026-09-12|sanfreccehiroshima|cerezoosaka",
-    "2026-09-13|tokyoverdy|jefunitedchiba",
-    "2026-09-13|urawa|okayama",
-    "2026-09-19|kawasaki|kashima",
-    "2026-09-19|avispafukuoka|sanfreccehiroshima",
-    "2026-09-19|shimizu|jefunitedchiba",
-    "2026-09-19|urawa|tokyoverdy",
-    "2026-09-19|okayama|kyoto",
-    "2026-09-19|fctokyo|nagoya",
-    "2026-09-19|yokohamafm|mito",
-    "2026-09-20|machida|kashiwa",
-    "2026-09-20|gambaosaka|kobe",
-    "2026-10-09|kashiwa|kobe",
-    "2026-10-09|kashima|gambaosaka",
-    "2026-10-10|cerezoosaka|yokohamafm",
-    "2026-10-10|fctokyo|urawa",
-    "2026-10-10|avispafukuoka|okayama",
-    "2026-10-10|kyoto|machida",
-    "2026-10-11|mito|shimizu",
-    "2026-10-11|tokyoverdy|sanfreccehiroshima",
-    "2026-10-11|kawasaki|nagoya",
-    "2026-10-17|shimizu|gambaosaka",
-    "2026-10-17|jefunitedchiba|yokohamafm",
-    "2026-10-17|sanfreccehiroshima|kyoto",
-    "2026-10-17|tokyoverdy|fctokyo",
-    "2026-10-17|cerezoosaka|kawasaki",
-    "2026-10-17|mito|urawa",
-    "2026-10-17|kashiwa|nagoya",
-    "2026-10-18|okayama|kobe",
-    "2026-10-18|machida|avispafukuoka",
-    "2026-10-21|nagoya|cerezoosaka",
-    "2026-10-21|okayama|mito",
-    "2026-10-21|kawasaki|kobe",
-    "2026-10-21|kyoto|kashima",
-    "2026-10-21|shimizu|machida",
-    "2026-10-21|avispafukuoka|gambaosaka",
-    "2026-10-21|yokohamafm|tokyoverdy",
-    "2026-10-21|fctokyo|kashiwa",
-    "2026-10-21|urawa|jefunitedchiba",
-    "2026-10-24|sanfreccehiroshima|shimizu",
-    "2026-10-24|tokyoverdy|avispafukuoka",
-    "2026-10-24|kobe|machida",
-    "2026-10-24|kashima|kashiwa",
-    "2026-10-24|gambaosaka|kyoto",
-    "2026-10-25|nagoya|yokohamafm",
-    "2026-10-25|cerezoosaka|jefunitedchiba",
-    "2026-10-25|kawasaki|okayama",
-    "2026-10-25|fctokyo|mito",
-    "2026-10-31|kyoto|shimizu",
-    "2026-10-31|okayama|fctokyo",
-    "2026-10-31|mito|sanfreccehiroshima",
-    "2026-10-31|kashima|cerezoosaka",
-    "2026-10-31|kobe|nagoya",
-    "2026-10-31|kashiwa|urawa"
-  ],
-  "unmatched_examples": [
-    "2026-08-09|v-varennagasaki|kyoto",
-    "2026-08-15|okayama|v-varennagasaki",
-    "2026-08-21|kashiwa|v-varennagasaki",
-    "2026-08-29|v-varennagasaki|fctokyo",
-    "2026-09-02|v-varennagasaki|gambaosaka",
-    "2026-09-06|kobe|v-varennagasaki",
-    "2026-09-12|v-varennagasaki|nagoya",
-    "2026-09-19|v-varennagasaki|cerezoosaka",
-    "2026-10-11|jefunitedchiba|v-varennagasaki",
-    "2026-10-17|kashima|v-varennagasaki",
-    "2026-10-21|v-varennagasaki|sanfreccehiroshima"
-  ],
-  "missing_policy": "No score-based imputation. Each value is copied from the source's match xG listing and mapped by date and home/away teams.",
-  "per_match_xg_complete": true,
+  "source_url": "https://footystats.org/japan/j1-league/xg",
+  "source_policy": "free public page only; no paid API",
+  "source_methodology": "FootyStats states its J1 xG formula combines shot accuracy, shot frequency, attack dangerousness, possession and attack pressure; values are provider-specific, not official J.League xG.",
   "matches_with_xg": 126,
   "matches_missing_xg": 0,
-  "caveat": "All 126 fixtures now have values from the same provider. xGA is mapped as the opponent's same-match xG; this is not a separate defensive xGA model. Historical source pages can revise values, so this is a dated snapshot, not a live feed."
+  "source_rows_matched": 0,
+  "source_access_status": "blocked_or_unavailable",
+  "source_access_detail": "403 Client Error: Forbidden for url: https://footystats.org/japan/j1-league/xg",
+  "preserved_prior_values_when_source_blocked": true,
+  "missing_policy": "blank values only; no score-based or model-based imputation",
+  "matches": [
+    {
+      "internal_match_id": "j1-2026-2026-08-07-横浜fm-鹿島",
+      "date": "2026-08-07",
+      "home": "横浜FM",
+      "away": "鹿島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-07-g大阪-浦和",
+      "date": "2026-08-07",
+      "home": "Ｇ大阪",
+      "away": "浦和",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-c大阪-岡山",
+      "date": "2026-08-08",
+      "home": "Ｃ大阪",
+      "away": "岡山",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-名古屋-清水",
+      "date": "2026-08-08",
+      "home": "名古屋",
+      "away": "清水",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-福岡-神戸",
+      "date": "2026-08-08",
+      "home": "福岡",
+      "away": "神戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-柏-水戸",
+      "date": "2026-08-08",
+      "home": "柏",
+      "away": "水戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-fc東京-町田",
+      "date": "2026-08-08",
+      "home": "FC東京",
+      "away": "町田",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-広島-千葉",
+      "date": "2026-08-08",
+      "home": "広島",
+      "away": "千葉",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-09-東京v-川崎f",
+      "date": "2026-08-09",
+      "home": "東京Ｖ",
+      "away": "川崎Ｆ",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-09-長崎-京都",
+      "date": "2026-08-09",
+      "home": "長崎",
+      "away": "京都",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-14-東京v-柏",
+      "date": "2026-08-14",
+      "home": "東京Ｖ",
+      "away": "柏",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-水戸-g大阪",
+      "date": "2026-08-15",
+      "home": "水戸",
+      "away": "Ｇ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-鹿島-名古屋",
+      "date": "2026-08-15",
+      "home": "鹿島",
+      "away": "名古屋",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-清水-横浜fm",
+      "date": "2026-08-15",
+      "home": "清水",
+      "away": "横浜FM",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-岡山-長崎",
+      "date": "2026-08-15",
+      "home": "岡山",
+      "away": "長崎",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-福岡-c大阪",
+      "date": "2026-08-15",
+      "home": "福岡",
+      "away": "Ｃ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-川崎f-京都",
+      "date": "2026-08-15",
+      "home": "川崎Ｆ",
+      "away": "京都",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-浦和-広島",
+      "date": "2026-08-15",
+      "home": "浦和",
+      "away": "広島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-神戸-fc東京",
+      "date": "2026-08-15",
+      "home": "神戸",
+      "away": "FC東京",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-千葉-町田",
+      "date": "2026-08-15",
+      "home": "千葉",
+      "away": "町田",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-21-柏-長崎",
+      "date": "2026-08-21",
+      "home": "柏",
+      "away": "長崎",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-21-fc東京-千葉",
+      "date": "2026-08-21",
+      "home": "FC東京",
+      "away": "千葉",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-鹿島-福岡",
+      "date": "2026-08-22",
+      "home": "鹿島",
+      "away": "福岡",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-岡山-東京v",
+      "date": "2026-08-22",
+      "home": "岡山",
+      "away": "東京Ｖ",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-名古屋-g大阪",
+      "date": "2026-08-22",
+      "home": "名古屋",
+      "away": "Ｇ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-c大阪-清水",
+      "date": "2026-08-22",
+      "home": "Ｃ大阪",
+      "away": "清水",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-京都-水戸",
+      "date": "2026-08-22",
+      "home": "京都",
+      "away": "水戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-広島-川崎f",
+      "date": "2026-08-22",
+      "home": "広島",
+      "away": "川崎Ｆ",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-横浜fm-神戸",
+      "date": "2026-08-22",
+      "home": "横浜FM",
+      "away": "神戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-23-町田-浦和",
+      "date": "2026-08-23",
+      "home": "町田",
+      "away": "浦和",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-水戸-町田",
+      "date": "2026-08-29",
+      "home": "水戸",
+      "away": "町田",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-g大阪-広島",
+      "date": "2026-08-29",
+      "home": "Ｇ大阪",
+      "away": "広島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-清水-柏",
+      "date": "2026-08-29",
+      "home": "清水",
+      "away": "柏",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-長崎-fc東京",
+      "date": "2026-08-29",
+      "home": "長崎",
+      "away": "FC東京",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-川崎f-千葉",
+      "date": "2026-08-29",
+      "home": "川崎Ｆ",
+      "away": "千葉",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-京都-福岡",
+      "date": "2026-08-29",
+      "home": "京都",
+      "away": "福岡",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-名古屋-岡山",
+      "date": "2026-08-29",
+      "home": "名古屋",
+      "away": "岡山",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-神戸-c大阪",
+      "date": "2026-08-29",
+      "home": "神戸",
+      "away": "Ｃ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-東京v-鹿島",
+      "date": "2026-08-29",
+      "home": "東京Ｖ",
+      "away": "鹿島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-浦和-横浜fm",
+      "date": "2026-08-29",
+      "home": "浦和",
+      "away": "横浜FM",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-長崎-g大阪",
+      "date": "2026-09-02",
+      "home": "長崎",
+      "away": "Ｇ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-東京v-神戸",
+      "date": "2026-09-02",
+      "home": "東京Ｖ",
+      "away": "神戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-町田-川崎f",
+      "date": "2026-09-02",
+      "home": "町田",
+      "away": "川崎Ｆ",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-福岡-浦和",
+      "date": "2026-09-02",
+      "home": "福岡",
+      "away": "浦和",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-c大阪-柏",
+      "date": "2026-09-02",
+      "home": "Ｃ大阪",
+      "away": "柏",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-水戸-鹿島",
+      "date": "2026-09-02",
+      "home": "水戸",
+      "away": "鹿島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-千葉-岡山",
+      "date": "2026-09-02",
+      "home": "千葉",
+      "away": "岡山",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-清水-fc東京",
+      "date": "2026-09-02",
+      "home": "清水",
+      "away": "FC東京",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-広島-名古屋",
+      "date": "2026-09-02",
+      "home": "広島",
+      "away": "名古屋",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-横浜fm-京都",
+      "date": "2026-09-02",
+      "home": "横浜FM",
+      "away": "京都",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-05-福岡-水戸",
+      "date": "2026-09-05",
+      "home": "福岡",
+      "away": "水戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-名古屋-町田",
+      "date": "2026-09-06",
+      "home": "名古屋",
+      "away": "町田",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-岡山-広島",
+      "date": "2026-09-06",
+      "home": "岡山",
+      "away": "広島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-鹿島-浦和",
+      "date": "2026-09-06",
+      "home": "鹿島",
+      "away": "浦和",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-千葉-g大阪",
+      "date": "2026-09-06",
+      "home": "千葉",
+      "away": "Ｇ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-c大阪-東京v",
+      "date": "2026-09-06",
+      "home": "Ｃ大阪",
+      "away": "東京Ｖ",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-柏-横浜fm",
+      "date": "2026-09-06",
+      "home": "柏",
+      "away": "横浜FM",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-神戸-長崎",
+      "date": "2026-09-06",
+      "home": "神戸",
+      "away": "長崎",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-川崎f-清水",
+      "date": "2026-09-06",
+      "home": "川崎Ｆ",
+      "away": "清水",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-fc東京-京都",
+      "date": "2026-09-06",
+      "home": "FC東京",
+      "away": "京都",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-11-京都-柏",
+      "date": "2026-09-11",
+      "home": "京都",
+      "away": "柏",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-11-神戸-鹿島",
+      "date": "2026-09-11",
+      "home": "神戸",
+      "away": "鹿島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-水戸-川崎f",
+      "date": "2026-09-12",
+      "home": "水戸",
+      "away": "川崎Ｆ",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-清水-福岡",
+      "date": "2026-09-12",
+      "home": "清水",
+      "away": "福岡",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-長崎-名古屋",
+      "date": "2026-09-12",
+      "home": "長崎",
+      "away": "名古屋",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-g大阪-fc東京",
+      "date": "2026-09-12",
+      "home": "Ｇ大阪",
+      "away": "FC東京",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-町田-横浜fm",
+      "date": "2026-09-12",
+      "home": "町田",
+      "away": "横浜FM",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-広島-c大阪",
+      "date": "2026-09-12",
+      "home": "広島",
+      "away": "Ｃ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-13-東京v-千葉",
+      "date": "2026-09-13",
+      "home": "東京Ｖ",
+      "away": "千葉",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-13-浦和-岡山",
+      "date": "2026-09-13",
+      "home": "浦和",
+      "away": "岡山",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-川崎f-鹿島",
+      "date": "2026-09-19",
+      "home": "川崎Ｆ",
+      "away": "鹿島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-福岡-広島",
+      "date": "2026-09-19",
+      "home": "福岡",
+      "away": "広島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-清水-千葉",
+      "date": "2026-09-19",
+      "home": "清水",
+      "away": "千葉",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-長崎-c大阪",
+      "date": "2026-09-19",
+      "home": "長崎",
+      "away": "Ｃ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-浦和-東京v",
+      "date": "2026-09-19",
+      "home": "浦和",
+      "away": "東京Ｖ",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-岡山-京都",
+      "date": "2026-09-19",
+      "home": "岡山",
+      "away": "京都",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-fc東京-名古屋",
+      "date": "2026-09-19",
+      "home": "FC東京",
+      "away": "名古屋",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-横浜fm-水戸",
+      "date": "2026-09-19",
+      "home": "横浜FM",
+      "away": "水戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-20-町田-柏",
+      "date": "2026-09-20",
+      "home": "町田",
+      "away": "柏",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-20-g大阪-神戸",
+      "date": "2026-09-20",
+      "home": "Ｇ大阪",
+      "away": "神戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-09-柏-神戸",
+      "date": "2026-10-09",
+      "home": "柏",
+      "away": "神戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-09-鹿島-g大阪",
+      "date": "2026-10-09",
+      "home": "鹿島",
+      "away": "Ｇ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-c大阪-横浜fm",
+      "date": "2026-10-10",
+      "home": "Ｃ大阪",
+      "away": "横浜FM",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-fc東京-浦和",
+      "date": "2026-10-10",
+      "home": "FC東京",
+      "away": "浦和",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-福岡-岡山",
+      "date": "2026-10-10",
+      "home": "福岡",
+      "away": "岡山",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-京都-町田",
+      "date": "2026-10-10",
+      "home": "京都",
+      "away": "町田",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-千葉-長崎",
+      "date": "2026-10-11",
+      "home": "千葉",
+      "away": "長崎",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-水戸-清水",
+      "date": "2026-10-11",
+      "home": "水戸",
+      "away": "清水",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-東京v-広島",
+      "date": "2026-10-11",
+      "home": "東京Ｖ",
+      "away": "広島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-川崎f-名古屋",
+      "date": "2026-10-11",
+      "home": "川崎Ｆ",
+      "away": "名古屋",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-清水-g大阪",
+      "date": "2026-10-17",
+      "home": "清水",
+      "away": "Ｇ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-千葉-横浜fm",
+      "date": "2026-10-17",
+      "home": "千葉",
+      "away": "横浜FM",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-広島-京都",
+      "date": "2026-10-17",
+      "home": "広島",
+      "away": "京都",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-東京v-fc東京",
+      "date": "2026-10-17",
+      "home": "東京Ｖ",
+      "away": "FC東京",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-c大阪-川崎f",
+      "date": "2026-10-17",
+      "home": "Ｃ大阪",
+      "away": "川崎Ｆ",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-鹿島-長崎",
+      "date": "2026-10-17",
+      "home": "鹿島",
+      "away": "長崎",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-水戸-浦和",
+      "date": "2026-10-17",
+      "home": "水戸",
+      "away": "浦和",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-柏-名古屋",
+      "date": "2026-10-17",
+      "home": "柏",
+      "away": "名古屋",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-18-岡山-神戸",
+      "date": "2026-10-18",
+      "home": "岡山",
+      "away": "神戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-18-町田-福岡",
+      "date": "2026-10-18",
+      "home": "町田",
+      "away": "福岡",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-名古屋-c大阪",
+      "date": "2026-10-21",
+      "home": "名古屋",
+      "away": "Ｃ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-長崎-広島",
+      "date": "2026-10-21",
+      "home": "長崎",
+      "away": "広島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-岡山-水戸",
+      "date": "2026-10-21",
+      "home": "岡山",
+      "away": "水戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-川崎f-神戸",
+      "date": "2026-10-21",
+      "home": "川崎Ｆ",
+      "away": "神戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-京都-鹿島",
+      "date": "2026-10-21",
+      "home": "京都",
+      "away": "鹿島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-清水-町田",
+      "date": "2026-10-21",
+      "home": "清水",
+      "away": "町田",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-福岡-g大阪",
+      "date": "2026-10-21",
+      "home": "福岡",
+      "away": "Ｇ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-横浜fm-東京v",
+      "date": "2026-10-21",
+      "home": "横浜FM",
+      "away": "東京Ｖ",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-fc東京-柏",
+      "date": "2026-10-21",
+      "home": "FC東京",
+      "away": "柏",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-浦和-千葉",
+      "date": "2026-10-21",
+      "home": "浦和",
+      "away": "千葉",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-広島-清水",
+      "date": "2026-10-24",
+      "home": "広島",
+      "away": "清水",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-東京v-福岡",
+      "date": "2026-10-24",
+      "home": "東京Ｖ",
+      "away": "福岡",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-神戸-町田",
+      "date": "2026-10-24",
+      "home": "神戸",
+      "away": "町田",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-鹿島-柏",
+      "date": "2026-10-24",
+      "home": "鹿島",
+      "away": "柏",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-g大阪-京都",
+      "date": "2026-10-24",
+      "home": "Ｇ大阪",
+      "away": "京都",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-名古屋-横浜fm",
+      "date": "2026-10-25",
+      "home": "名古屋",
+      "away": "横浜FM",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-c大阪-千葉",
+      "date": "2026-10-25",
+      "home": "Ｃ大阪",
+      "away": "千葉",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-浦和-長崎",
+      "date": "2026-10-25",
+      "home": "浦和",
+      "away": "長崎",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-川崎f-岡山",
+      "date": "2026-10-25",
+      "home": "川崎Ｆ",
+      "away": "岡山",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-fc東京-水戸",
+      "date": "2026-10-25",
+      "home": "FC東京",
+      "away": "水戸",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-京都-清水",
+      "date": "2026-10-31",
+      "home": "京都",
+      "away": "清水",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-岡山-fc東京",
+      "date": "2026-10-31",
+      "home": "岡山",
+      "away": "FC東京",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-水戸-広島",
+      "date": "2026-10-31",
+      "home": "水戸",
+      "away": "広島",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-鹿島-c大阪",
+      "date": "2026-10-31",
+      "home": "鹿島",
+      "away": "Ｃ大阪",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-神戸-名古屋",
+      "date": "2026-10-31",
+      "home": "神戸",
+      "away": "名古屋",
+      "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-kashiwa-urawa",
+      "date": "2026-10-31",
+      "home": "柏",
+      "away": "浦和",
+      "status": "captured_from_free_public_page"
+    }
+  ]
 }
