@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-11-02",
+  "league": "J1 League",
+  "season": "2026/27",
+  "baseline_csv": "data/auto_results/J1_League_2026_27.csv",
+  "baseline_window": "2026-08-07 through 2026-10-31",
+  "baseline_total_matches": 126,
+  "scope_note": "Incremental audit status; not complete. Percentages use 126 baseline matches unless noted.",
+  "categories": {
+    "score_individual_official_page_verified": {
+      "completed": 9,
+      "total": 126,
+      "percent": 7.14,
+      "note": "At least 9 distinct baseline rows have individual official match-page or official match-record confirmation. 117 remain pending. Do not interpret general schedule page presence as individual page verification."
+    },
+    "starting_xi_structured": {
+      "completed": 2,
+      "total": 126,
+      "percent": 1.59,
+      "note": "Two matches have both teams' 11 starters extracted into structured JSON (44 starter entries)."
+    },
+    "substitution_events_structured": {
+      "completed": 2,
+      "total": 126,
+      "percent": 1.59,
+      "note": "Two matches have OUT/IN substitution events and minutes structured (20 events). This is not yet a complete per-player appearance-minutes dataset."
+    },
+    "actual_appearance_status": {
+      "completed": 0,
+      "total": 126,
+      "percent": 0,
+      "note": "Appearance status has not yet been stored as a full per-player table including starters, substitutes who entered, and unused substitutes. Do not claim complete."
+    },
+    "match_level_xg_pair": {
+      "completed": 6,
+      "total": 126,
+      "percent": 4.76,
+      "note": "Six baseline matches have source-visible home/away match-level xG pairs transcribed from FootyStats. Four additional Nov 1 matches are recorded separately outside the baseline."
+    },
+    "independently_verified_match_level_xga": {
+      "completed": 0,
+      "total": 126,
+      "percent": 0,
+      "note": "No independent match-level xGA field has yet passed source verification. All xGA values remain null."
+    }
+  },
+  "mismatch_list": {
+    "confirmed_mismatches": [],
+    "unresolved_rows": "117 baseline matches still need row-by-row date/home/away/score reconciliation; absence of a mismatch report is not proof that no mismatches exist."
+  },
+  "files_added": [
+    "data/season_match_detail/J1_League_2026_27_player_detail_batch_20261102.json",
+    "data/season_match_detail/J1_League_2026_27_match_xg_batch_20261102.json",
+    "data/season_match_detail/J1_League_2026_27_official_checks_batch_20261102.json"
+  ],
+  "next_priority": [
+    "Reconcile official match-record links for all remaining 117 baseline rows.",
+    "Extract full bench lists and compute per-player appearance status/minutes for all matches.",
+    "Investigate an independent free source for explicit match-level xGA; keep missing values null."
+  ],
+  "integrity_rules": [
+    "Do not use team-season xG/xGA averages as match-level values.",
+    "Do not infer player appearances from the starting XI alone.",
+    "Do not modify V5.1 or historical prediction snapshots."
+  ]
+}
