@@ -1,0 +1,87 @@
+{
+  "report_version": "daily-football-archive-manifest-2026-11-02-v1",
+  "generated_at_beijing": "2026-11-02T09:56:44+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-02",
+  "base_branch": "automation/daily-football-2026-11-01",
+  "date_policy": "All match-day buckets use kickoff instant converted to Asia/Shanghai; local date is retained separately.",
+  "counts": {
+    "previous_day_beijing_2026_11_01": {
+      "verified_finished_matches": 28,
+      "core_league_matches": 24,
+      "other_tracked_domestic_league_matches": 4,
+      "matching_immutable_prediction_snapshots": 0,
+      "formal_prediction_metrics": "NOT_COMPUTABLE"
+    },
+    "current_day_beijing_2026_11_02_early_completed_results": 16,
+    "xg_iso_week": "2026-W44",
+    "xg_cumulative_unique_matches": 123,
+    "xg_cumulative_team_match_provider_rows": 288,
+    "xg_coverage_of_this_run_results": {
+      "results_checked": 44,
+      "with_any_verified_fulltime_provider_xg": 11,
+      "coverage_pct": 25
+    },
+    "xg_xgd_arithmetic_mismatches": 0,
+    "xg_duplicate_match_team_provider_keys": 0,
+    "full_week_coverage_groups": 0
+  },
+  "files": [
+    {
+      "path": "results/domestic-league/2026-11-01/beijing-date-results.json",
+      "commit_sha": "0a11ca98af5a544bad3e9fd749401fb50b234d34"
+    },
+    {
+      "path": "results/other-domestic-leagues/2026-11-01/beijing-date-results.json",
+      "commit_sha": "5d237b8fe667818a0abe5ceb0755f34dccb06f88"
+    },
+    {
+      "path": "reviews/2026-11-02/previous-day-review.json",
+      "commit_sha": "d66bd1fcec643b8cade3a8e05e905c061f51a3d2"
+    },
+    {
+      "path": "reviews/2026-11-02/current-day-completed-results.json",
+      "commit_sha": "2fe66cdcf603627c1140cad20b7b56238a1ad282"
+    },
+    {
+      "path": "reviews/2026-11-02/correction-audit-2026-11-01.json",
+      "commit_sha": "d54349817bdf55f9a1c2365a27131d3479773380"
+    },
+    {
+      "path": "fixtures/2026-11-02/schedule.json",
+      "commit_sha": "ff472b9d5aa9c721426c59612b1c12f89f81d70e"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/match_xg_snapshot-095644.csv",
+      "commit_sha": "56165a30986557a701f2c7ab8ef8fbd57f43bb84"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_xg_snapshot-095644-v2.csv",
+      "commit_sha": "a4e2d2a6839456df8929e11d68a3c77cee7c18ff"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_coverage_snapshot-095644-v2.csv",
+      "commit_sha": "dc463c296614cbddfec9962aa289131dec58f87b"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_coverage_audit-095644.json",
+      "commit_sha": "b632f37b5655f2dbc5b7e41e7670f28854984aa6"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_source_discrepancy_audit-095644.json",
+      "commit_sha": "f2cf51644a97076f836e08b8992f00135b887606"
+    },
+    {
+      "path": "reviews/2026-11-02/github-actions-data-sync-audit.json",
+      "commit_sha": "67bfbfe83c890717f4f025c0a364122e7208e6a5"
+    }
+  ],
+  "limitations": [
+    "No matching immutable pre-match snapshots were found for the 28 Beijing 2026-11-01 results; score/90-minute/half-full-time/risk hit rates are not computable.",
+    "Official Chinese Sports Lottery handicap snapshots were not found; handicap outcomes were not inferred.",
+    "Weekly xG full-week coverage is not established; complete weekly totals and per-90 averages remain blank, with partial observed sums kept separate.",
+    "Raw source payloads and SHA-256 hashes were not archived.",
+    "No SQLite or remote database connection was opened in this run.",
+    "The latest automated DB sync failed validation on two out-of-scope matches; generated-data commit was skipped."
+  ]
+}
