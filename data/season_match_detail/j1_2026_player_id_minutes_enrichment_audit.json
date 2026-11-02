@@ -1,0 +1,17 @@
+{
+  "generated_at_utc": "2026-11-02T10:16:00.307379+00:00",
+  "source_policy": "free official J.League roster and player profile pages only",
+  "roster_index_url": "https://www.jleague.jp/news/article/33139/",
+  "official_roster_pages_discovered": 60,
+  "official_roster_pages_failed": [],
+  "unique_official_player_profiles": 2275,
+  "player_profile_fetch_errors": 0,
+  "lineup_and_bench_rows": 5197,
+  "rows_with_official_player_id": 5166,
+  "rows_without_official_player_id": 31,
+  "rows_with_verified_match_minutes": 4101,
+  "rows_without_verified_match_minutes": 1096,
+  "minutes_method": "Read from the official player's J1 participation-history row for the exact match date; no minutes inferred from substitution events.",
+  "id_method": "Match normalized official match-report player name to the current official club roster and unique official profile ID; ambiguous matches remain blank.",
+  "profile_fetch_errors_sample": {}
+}
