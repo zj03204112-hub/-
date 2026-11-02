@@ -1,0 +1,52 @@
+{
+  "report_version": "xg-weekly-iso-boundary-corrected-2026-W44-2026-11-02-v1",
+  "generated_at_beijing": "2026-11-02T10:23:54+08:00",
+  "iso_week": "2026-W44",
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "timezone_rule": "Assign ISO week from kickoff converted to Asia/Shanghai, consistent with beijing_match_date; preserve competition-local date separately.",
+  "source_snapshot": {
+    "branch": "automation/daily-football-2026-11-02",
+    "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/match_xg_snapshot-095644.csv",
+    "blob_sha": "dd0eac7e664cdc0aeacdd23a0307961e62dfb6a6",
+    "original_rows": 288,
+    "original_unique_matches": 123
+  },
+  "corrected_snapshot": {
+    "record_rows": 256,
+    "unique_matches": 107,
+    "unique_teams": 186,
+    "provider_specific_team_week_groups": 254,
+    "beijing_dates_in_snapshot": [
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-10-31",
+      "2026-11-01"
+    ]
+  },
+  "coverage": {
+    "matches_with_any_verified_provider_xg": 33,
+    "matches_missing_verified_provider_xg": 74,
+    "coverage_pct": "30.84",
+    "full_week_coverage_groups": 0
+  },
+  "integrity": {
+    "xgd_arithmetic_mismatches": 0,
+    "duplicate_match_team_provider_keys": 0,
+    "raw_payload_sha256_archived_rows": 0,
+    "provider_event_ids_resolved_rows": 0
+  },
+  "no_leakage": {
+    "post_match_xg_separated_from_pre_match_inputs": true,
+    "fulltime_xg_missing_not_inferred": true,
+    "partial_in_play_xg_rejected": true
+  },
+  "limitations": [
+    "Full-week fixture lists for all team/competition/season groups are not yet complete; weekly total xG/xGA/xGD and per-90 values remain blank.",
+    "Raw source HTML/API payloads and SHA-256 hashes were not archived.",
+    "Provider event IDs remain unresolved for most rows.",
+    "All xG values are provider model estimates, not direct measurement or official truth; different provider values remain separate."
+  ],
+  "correction_note": "This version fixes the prior snapshot's week assignment for rows with Beijing kickoff date 2026-11-02. The original snapshot remains immutable and is not deleted or overwritten."
+}
