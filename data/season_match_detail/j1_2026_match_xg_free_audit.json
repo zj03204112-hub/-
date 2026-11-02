@@ -1,20 +1,22 @@
 {
-  "generated_at_utc": "2026-11-02T08:22:19Z",
+  "generated_at_utc": "2026-11-02T08:23:25Z",
   "matches_in_mapping": 130,
   "source_url": "https://www.oddalerts.com/xg/j-league",
   "source_policy": "free public page only; no paid API",
   "source_counts_in_output": {
     "OddAlerts": 50,
-    "Tifolab": 50,
-    "ScoutingStats": 3,
+    "Tifolab": 52,
+    "ScoutingStats": 6,
+    "VJStats": 3,
     "FotMob": 1,
-    "": 26
+    "": 18
   },
   "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
   "sources_in_output": [
     "OddAlerts",
     "Tifolab",
     "ScoutingStats",
+    "VJStats",
     "FotMob"
   ],
   "source_urls_in_output": [
@@ -53,15 +55,23 @@
     "https://www.tifolab.com/matches/1556071",
     "https://www.tifolab.com/matches/1556079",
     "https://www.tifolab.com/matches/1556078",
-    "https://www.tifolab.com/matches/1556076"
+    "https://www.tifolab.com/matches/1556076",
+    "https://scoutingstats.ai/j1-league/cerezo-osaka-v-fagiano-okayama/19717269",
+    "https://vjstats.com/matches/6672/avispa-fukuoka-vs-vissel-kobe",
+    "https://www.vjstats.com/matches/6706/avispa-fukuoka-vs-cerezo-osaka",
+    "https://vjstats.com/matches/6724/vissel-kobe-vs-fc-tokyo",
+    "https://scoutingstats.ai/j1-league/kawasaki-frontale-v-jef-united/19719047?from=club-hub",
+    "https://www.tifolab.com/matches/1556048",
+    "https://www.tifolab.com/matches/1556051",
+    "https://scoutingstats.ai/j1-league/kashima-antlers-v-urawa-reds/19719069?from=club-hub"
   ],
-  "matches_with_xg": 104,
-  "matches_with_verified_xg": 104,
+  "matches_with_xg": 112,
+  "matches_with_verified_xg": 112,
   "matches_with_unverified_legacy_xg": 0,
-  "matches_missing_xg": 26,
-  "source_rows_matched": 104,
+  "matches_missing_xg": 18,
+  "source_rows_matched": 112,
   "source_access_status": "fetched",
-  "source_access_detail": "Added 5 more Tifolab match-level xG records after checking exact internal match IDs, dates and full-time scores. Provider-specific xG; not official J.League xG, no cross-provider averaging or imputation.",
+  "source_access_detail": "Added 8 provider-specific match-level xG records after checking mapped match IDs, dates and final scores. xG is source-model-specific, not official J.League xG; no cross-provider averaging or imputation.",
   "preserved_prior_values_when_source_blocked": false,
   "missing_policy": "blank values only; no score-based or model-based imputation",
   "matches": [
@@ -94,7 +104,12 @@
       "date": "2026-08-08",
       "home": "Ｃ大阪",
       "away": "岡山",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 0.6,
+      "away_xg": 0.8,
+      "source_name": "ScoutingStats",
+      "source_url": "https://scoutingstats.ai/j1-league/cerezo-osaka-v-fagiano-okayama/19717269",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-名古屋-清水",
@@ -113,7 +128,12 @@
       "date": "2026-08-08",
       "home": "福岡",
       "away": "神戸",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.1,
+      "away_xg": 1.01,
+      "source_name": "VJStats",
+      "source_url": "https://vjstats.com/matches/6672/avispa-fukuoka-vs-vissel-kobe",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-柏-水戸",
@@ -235,7 +255,12 @@
       "date": "2026-08-15",
       "home": "福岡",
       "away": "Ｃ大阪",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.48,
+      "away_xg": 0.78,
+      "source_name": "VJStats",
+      "source_url": "https://www.vjstats.com/matches/6706/avispa-fukuoka-vs-cerezo-osaka",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-川崎f-京都",
@@ -266,7 +291,12 @@
       "date": "2026-08-15",
       "home": "神戸",
       "away": "FC東京",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.57,
+      "away_xg": 1.61,
+      "source_name": "VJStats",
+      "source_url": "https://vjstats.com/matches/6724/vissel-kobe-vs-fc-tokyo",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-千葉-町田",
@@ -443,7 +473,12 @@
       "date": "2026-08-29",
       "home": "川崎Ｆ",
       "away": "千葉",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.49,
+      "away_xg": 1.88,
+      "source_name": "ScoutingStats",
+      "source_url": "https://scoutingstats.ai/j1-league/kawasaki-frontale-v-jef-united/19719047?from=club-hub",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-京都-福岡",
@@ -522,7 +557,12 @@
       "date": "2026-09-02",
       "home": "東京Ｖ",
       "away": "神戸",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 0.58,
+      "away_xg": 1.37,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556048",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-02-町田-川崎f",
@@ -620,7 +660,12 @@
       "date": "2026-09-05",
       "home": "福岡",
       "away": "水戸",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.41,
+      "away_xg": 0.8,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556051",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-名古屋-町田",
@@ -651,7 +696,12 @@
       "date": "2026-09-06",
       "home": "鹿島",
       "away": "浦和",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.19,
+      "away_xg": 0.68,
+      "source_name": "ScoutingStats",
+      "source_url": "https://scoutingstats.ai/j1-league/kashima-antlers-v-urawa-reds/19719069?from=club-hub",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-千葉-g大阪",
