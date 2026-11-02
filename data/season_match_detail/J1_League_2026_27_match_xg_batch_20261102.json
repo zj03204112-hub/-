@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-11-02",
+  "league": "J1 League",
+  "season": "2026/27",
+  "source_url": "https://footystats.org/japan/j1-league/xg",
+  "source_name": "FootyStats J1 League xG page",
+  "source_scope": "The public page lists recent results with per-match home and away xG pairs. Values below are transcribed only for rows explicitly shown there; this does not establish full historical coverage.",
+  "matches": [
+    {
+      "date": "2026-10-31",
+      "home": "水戸",
+      "away": "広島",
+      "score": "0-3",
+      "xg_home": 0.39,
+      "xg_away": 2.17,
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "null; no independently verified match-level xGA field",
+      "score_status": "official J.League match page checked"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "京都",
+      "away": "清水",
+      "score": "2-0",
+      "xg_home": 1.28,
+      "xg_away": 0.86,
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "null; no independently verified match-level xGA field",
+      "score_status": "official J.League match page checked"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "岡山",
+      "away": "FC東京",
+      "score": "0-4",
+      "xg_home": 1.41,
+      "xg_away": 2.28,
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "null; no independently verified match-level xGA field",
+      "score_status": "official J.League match page checked"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "鹿島",
+      "away": "Ｃ大阪",
+      "score": "4-1",
+      "xg_home": 1.8,
+      "xg_away": 1.54,
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "null; no independently verified match-level xGA field",
+      "score_status": "official J.League match page checked"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "神戸",
+      "away": "名古屋",
+      "score": "3-1",
+      "xg_home": 1.25,
+      "xg_away": 1.38,
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "null; no independently verified match-level xGA field",
+      "score_status": "official J.League match page checked"
+    },
+    {
+      "date": "2026-10-31",
+      "home": "柏",
+      "away": "浦和",
+      "score": "4-0",
+      "xg_home": 2.38,
+      "xg_away": 1.84,
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "null; no independently verified match-level xGA field",
+      "score_status": "official J.League match page checked"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "横浜FM",
+      "away": "川崎Ｆ",
+      "score": "4-2",
+      "xg_home": 1.99,
+      "xg_away": 1.39,
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "null; no independently verified match-level xGA field",
+      "score_status": "official J.League results index checked; outside 126-row baseline"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "千葉",
+      "away": "福岡",
+      "score": "3-0",
+      "xg_home": 1.52,
+      "xg_away": 0.92,
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "null; no independently verified match-level xGA field",
+      "score_status": "official J.League results index checked; outside 126-row baseline"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "長崎",
+      "away": "東京Ｖ",
+      "score": "1-2",
+      "xg_home": 1.87,
+      "xg_away": 1.6,
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "null; no independently verified match-level xGA field",
+      "score_status": "official J.League results index checked; outside 126-row baseline"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "町田",
+      "away": "Ｇ大阪",
+      "score": "0-0",
+      "xg_home": 1.66,
+      "xg_away": 2.32,
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "null; no independently verified match-level xGA field",
+      "score_status": "official J.League individual match page checked; outside 126-row baseline"
+    }
+  ],
+  "summary": {
+    "match_level_xg_pairs_available_in_source": 10,
+    "xg_pairs_added_to_audit_dataset": 10,
+    "xga_independently_verified": 0,
+    "baseline_matches_with_xg_added": 6,
+    "nov_1_extension_matches_with_xg_added": 4,
+    "baseline_xg_coverage_after_this_batch": "6/126 (4.76%) if previous rows had no row-level xG; confirm against current dataset before final denominator",
+    "note": "Do not use team-level seasonal xG/xGA averages as match values. Do not infer xGA fields from the opponent xG pair; keep xGA null until independently verified."
+  },
+  "caveats": [
+    "FootyStats page is dynamic; retain retrieval date and URL when ingesting values.",
+    "This file records source-visible match-level xG pairs only, not full-season coverage.",
+    "The four 2026-11-01 matches are outside the original baseline ending 2026-10-31."
+  ]
+}
