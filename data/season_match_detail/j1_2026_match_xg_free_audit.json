@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-11-02T11:24:00Z",
+  "generated_at_utc": "2026-11-02T11:27:13.360Z",
   "matches_in_mapping": 130,
   "source_url": "https://www.oddalerts.com/xg/j-league",
   "source_policy": "free public page only; no paid API",
   "verified_source_counts_in_output": {
-    "Tifolab": 21,
+    "Tifolab": 22,
     "ScoutingStats": 7,
     "VJStats": 20,
-    "FotMob": 1,
+    "FotMob": 2,
     "OddAlerts": 50
   },
   "legacy_archive_rows": 80,
@@ -70,15 +70,17 @@
     "https://scoutingstats.ai/j1-league/fc-tokyo-v-nagoya-grampus/19719090?from=club-hub",
     "https://www.vjstats.com/matches/6702/yokohama-f-marinos-vs-mito-hollyhock",
     "https://www.tifolab.com/matches/1556073",
-    "https://www.oddalerts.com/xg/j-league"
+    "https://www.oddalerts.com/xg/j-league",
+    "https://www.fotmob.com/en-GB/matches/shimizu-s-pulse-vs-nagoya-grampus/1a0mj2",
+    "https://www.tifolab.com/matches/1554012"
   ],
-  "matches_with_xg": 99,
-  "matches_with_verified_xg": 99,
+  "matches_with_xg": 101,
+  "matches_with_verified_xg": 101,
   "matches_verified_in_current_fetch": 50,
   "matches_verified_from_archived_source_snapshot": 0,
   "matches_with_unverified_legacy_xg": 0,
-  "matches_missing_or_unverified_xg_in_canonical_table": 31,
-  "matches_missing_xg": 31,
+  "matches_missing_or_unverified_xg_in_canonical_table": 29,
+  "matches_missing_xg": 29,
   "source_rows_matched": 50,
   "source_access_status": "fetched",
   "source_access_detail": "",
@@ -123,7 +125,11 @@
       "date": "2026-08-08",
       "home": "名古屋",
       "away": "清水",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_from_manual_web_access",
+      "source_name": "FotMob",
+      "source_url": "https://www.fotmob.com/en-GB/matches/shimizu-s-pulse-vs-nagoya-grampus/1a0mj2",
+      "home_xg": "0.84",
+      "away_xg": "1.36"
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-福岡-神戸",
@@ -203,7 +209,11 @@
       "date": "2026-08-15",
       "home": "水戸",
       "away": "Ｇ大阪",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_from_manual_web_access",
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1554012",
+      "home_xg": "1.86",
+      "away_xg": "1.59"
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-鹿島-名古屋",
@@ -1192,11 +1202,11 @@
       "status": "published_on_free_public_source"
     }
   ],
-  "matches_verified_from_manual_web_access": 49,
-  "manual_web_verification_rows_in_file": 49,
-  "manual_web_verification_rows_applied": 49,
+  "matches_verified_from_manual_web_access": 51,
+  "manual_web_verification_rows_in_file": 51,
+  "manual_web_verification_rows_applied": 51,
   "manual_web_verification_rows_rejected": 0,
-  "manual_web_value_discrepancies": 1,
+  "manual_web_value_discrepancies": 2,
   "manual_web_verification_audit_file": "j1_2026_match_xg_manual_web_verification_audit.json",
   "independent_match_level_xga_verified": 0,
   "xga_semantics": "home_xga/away_xga are opponent-xG-equivalents; no independent match-level xGA verified."
