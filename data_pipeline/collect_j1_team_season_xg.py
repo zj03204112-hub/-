@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Collect public ScanGoal J1 team-season xG/xGA totals; never infer missing values."""
+"""Collect public OddAlerts J1 team-season xG/xGA totals; never infer missing values."""
 import csv, json, re
 from datetime import datetime, timezone
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-URL = "https://scangoal.com/league/j-league"
+URL = "https://www.oddalerts.com/xg/j-league"
 OUT = Path("data/season_match_detail/j1_2026_team_season_xg_free.csv")
 AUDIT = Path("data/season_match_detail/j1_2026_team_season_xg_free_audit.json")
 
@@ -51,8 +51,8 @@ def main():
                     "season_xg_total":f"{xgf:.3f}","season_xga_total":f"{xgaf:.3f}",
                     "xg_per_match":f"{xgf/n:.3f}" if n else "",
                     "xga_per_match":f"{xgaf/n:.3f}" if n else "",
-                    "source_name":"ScanGoal","source_url":URL,
-                    "source_model_note":"Provider-specific season aggregate, not official J.League xG; distinct from per-match CSV",
+                    "source_name":"OddAlerts","source_url":URL,
+                    "source_model_note":"Provider-specific season aggregate from public xG table, not official J.League xG; distinct from per-match CSV",
                     "retrieved_at_utc":now
                 })
         if not rows_out:
