@@ -11,6 +11,7 @@ on:
       - "data_pipeline/collect_j1_free_official_reports.py"
       - "data_pipeline/enrich_j1_player_ids_minutes.py"
       - "data_pipeline/collect_j1_free_xg.py"
+      - "data_pipeline/verify_j1_legacy_xg_sources.py"
       - "data_pipeline/collect_j1_team_season_xg.py"
       - "data_pipeline/aggregate_j1_covered_match_xg.py"
   workflow_dispatch:
@@ -71,6 +72,10 @@ jobs:
       - name: Collect free public J1 match xG
         if: ${{ (github.event_name == 'push') || inputs.league == 'j1' }}
         run: python data_pipeline/collect_j1_free_xg.py
+
+      - name: Re-verify archived free J1 match-level xG source pages
+        if: ${{ (github.event_name == 'push') || inputs.league == 'j1' }}
+        run: python data_pipeline/verify_j1_legacy_xg_sources.py
 
       - name: Collect free public J1 team-season xG and xGA
         if: ${{ (github.event_name == 'push') || inputs.league == 'j1' }}
