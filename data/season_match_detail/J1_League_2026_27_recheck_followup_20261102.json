@@ -41,14 +41,24 @@
     "lineups_collected_for_old_125_rows": 0,
     "actual_appearances_collected_for_old_125_rows": 0,
     "xg_xga_collected_for_old_125_rows": 0,
-    "status": "baseline_located_pending_rowwise_official_reconciliation",
-    "blocker": "The baseline CSV was found at data/auto_results/J1_League_2026_27.csv rather than in data/season_match_detail/. It contains 129 data rows: 125 through 2026-10-31 and four completed matches on 2026-11-01. Row-by-row reconciliation of the original 125 records against individual official match pages is still pending; no historical rows have been marked verified.",
+    "status": "baseline_located_row_count_discrepancy_pending_official_reconciliation",
+    "blocker": "Baseline CSV found at data/auto_results/J1_League_2026_27.csv. Structural scan finds 130 data rows: 126 dated through 2026-10-31 and four on 2026-11-01. This conflicts with the earlier audit JSON claim of 125 rows through 2026-10-31 (difference +1). Required fields are complete and duplicate date+home+away keys are zero, but row-by-row official match-page reconciliation remains pending. Do not assume which count is correct until the additional row is identified against the official schedule.",
     "baseline_csv_found_at_alternate_repository_path": true,
     "baseline_csv_path": "data/auto_results/J1_League_2026_27.csv",
     "baseline_csv_blob_sha": "8d99885bf7b0d52c5fcc7c2922dd02d92450a54f",
-    "baseline_csv_data_rows": 129,
-    "baseline_rows_through_2026_10_31": 125,
-    "additional_completed_rows_on_2026_11_01": 4
+    "baseline_csv_data_rows": 130,
+    "baseline_rows_through_2026_10_31": 126,
+    "additional_completed_rows_on_2026_11_01": 4,
+    "baseline_csv_structural_audit": {
+      "total_data_rows": 130,
+      "rows_through_2026_10_31": 126,
+      "rows_on_2026_11_01": 4,
+      "missing_required_fields": 0,
+      "duplicate_date_home_away_keys": 0,
+      "distinct_dates": 27,
+      "unique_source_urls": 1,
+      "source_url": "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1&tv_relay_station_name="
+    }
   },
   "independent_official_checks_outside_baseline_window": [
     {
@@ -88,7 +98,7 @@
       "note": "Individual official match page confirms the score; outside the original baseline window ending 2026-10-31."
     }
   ],
-  "next_required_action": "Now that the baseline CSV is located at data/auto_results/J1_League_2026_27.csv, reconcile the 125 matches through 2026-10-31 by date + home + away + full-time score against individual official J.League match pages. Append per-row status, official match URL, score comparison, and evidence timestamp. Keep the four 2026-11-01 results as an extension, not part of the original 125-row baseline. Collect starting XI, substitutes, substitutions/appearance information from official match pages where published. xG/xGA must remain null unless a free source explicitly provides match-level values.",
+  "next_required_action": "Resolve the one-row discrepancy between the prior audit count (125 through 2026-10-31) and baseline CSV count (126 through 2026-10-31). Build a row-level reconciliation table for all 126 pre-November records against the official J.League schedule and individual match pages, recording normalized date, home/away aliases, score comparison, match URL, status and evidence timestamp. Keep the four 2026-11-01 matches separate from the pre-November baseline. Then collect lineups and actual appearances. xG/xGA must remain null unless a free source explicitly provides match-level values.",
   "integrity_rules": [
     "Do not mark the 123 pending rows as verified until each has an individual official source URL and score comparison.",
     "Do not infer actual appearances from starting XI.",
