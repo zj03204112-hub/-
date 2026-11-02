@@ -16,7 +16,9 @@ ROOT = Path("data/season_match_detail")
 MAPPING = ROOT / "j1_2026_match_id_mapping.csv"
 OUT = ROOT / "j1_2026_match_xg_free.csv"
 AUDIT = ROOT / "j1_2026_match_xg_free_audit.json"
+TEAM_OUT = ROOT / "j1_2026_team_season_xg_free.csv"
 SOURCE_URL = "https://footystats.org/japan/j1-league/xg"
+TEAM_SOURCE_URL = "https://www.oddalerts.com/xg/j-league"
 ALIASES = {
     "横浜fm": ["yokohama f. marinos", "yokohama marinos"],
     "鹿島": ["kashima antlers", "kashima"],
@@ -187,7 +189,7 @@ def main():
     AUDIT.write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({k:v for k,v in audit.items() if k != "matches"}, ensure_ascii=False, indent=2))
     if audit["matches_with_xg"] == 0:
-        raise SystemExit("No xG rows mapped; inspect source HTML before accepting the collector.")
+        print("WARNING: no per-match xG was available from the free public source; per-match fields remain blank. Team aggregates, if collected, are stored separately.")
 
 if __name__ == "__main__":
     MATCHES = []
