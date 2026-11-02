@@ -1,0 +1,78 @@
+{
+  "report_version": "daily-football-archive-manifest-2026-11-02-v6",
+  "generated_at_beijing": "2026-11-02T10:26:00+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-02",
+  "supersedes_manifest": "reviews/2026-11-02/archive-manifest-final-v5.json",
+  "new_findings": [
+    "Official Sporttery match-specific market could not be fetched; third-party odds/handicap pages are explicitly not treated as official.",
+    "Schedule identity for RC Deportivo de A Coruña vs Osasuna was corrected against the official LaLiga fixture page.",
+    "ISO-week boundary was corrected: Beijing 2026-11-02 results belong to 2026-W45; original snapshot preserved."
+  ],
+  "files": [
+    {
+      "path": "reviews/2026-11-02/archive-manifest-final-v5.json",
+      "blob_sha": "129682c505187511e389b820d2651882c3979057"
+    },
+    {
+      "path": "reviews/2026-11-02/market-source-audit-sassuolo-fiorentina-1026.json",
+      "blob_sha": "34b0a8e5f87f81f31aa518d6f1bbf9a7b20493c4"
+    },
+    {
+      "path": "reviews/2026-11-02/previous-day-review.json",
+      "blob_sha": "28dfb37445688b0f5179e82b66b0a2ae56b13553"
+    },
+    {
+      "path": "reviews/2026-11-02/current-day-completed-results.json",
+      "blob_sha": "2ac66e7a5271dfd917004e4dfeb5dd99a9c60302"
+    },
+    {
+      "path": "reviews/2026-11-02/leisu-source-crosscheck.json",
+      "blob_sha": "6693107a3c71300a1083fdbe85a4d140f4115c93"
+    },
+    {
+      "path": "fixtures/2026-11-02/schedule.json",
+      "blob_sha": "26720f2a79efe3049c08f213baba30654188e7b4"
+    },
+    {
+      "path": "reviews/2026-11-02/schedule-correction-deportivo-osasuna.json",
+      "blob_sha": "353b342399b39e93f6c3758d5b0082ecb7de7a97"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/match_xg_snapshot-102354-iso-boundary-corrected.csv",
+      "blob_sha": "2ff59a23b19e66d7fe62ebd091689d86ca82cbbc"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-02/match_xg_snapshot-102354.csv",
+      "blob_sha": "c079ff863218740c66386a22f9e4cf2e802b899a"
+    },
+    {
+      "path": "reviews/2026-11-02/iso-week-boundary-correction-102354.json",
+      "blob_sha": "1abd02176ae45cb70bb8d71c0e0d2275d6f66054"
+    },
+    {
+      "path": "reviews/2026-11-02/archive-readback-verification-v4.json",
+      "blob_sha": "454f55a6585ae2023316f34eeb6a0071bb56abdd"
+    }
+  ],
+  "counts": {
+    "beijing_2026_11_01_confirmed_matches": 28,
+    "beijing_2026_11_02_early_completed_matches": 16,
+    "eligible_at_1500_prediction_window": 1,
+    "previous_day_prediction_snapshots_found": 0,
+    "official_sporttery_handicaps_verified": 0,
+    "w44_corrected_unique_matches": 107,
+    "w44_xg_coverage": "33/107 (30.84%)",
+    "w45_partial_unique_matches": 16,
+    "w45_xg_coverage": "2/16 (12.50%)",
+    "xgd_arithmetic_mismatches": 0,
+    "duplicate_keys": 0,
+    "full_week_coverage_groups": 0
+  },
+  "limitations": [
+    "No SQLite/remote DB connection. GitHub Actions DB sync run 41355312274 failed validation on two out-of-scope rows and skipped generated-data commit.",
+    "Raw source HTML/API payloads and SHA-256 hashes are not archived; provider event IDs remain unresolved.",
+    "No immutable prediction snapshots or verified official Sporttery handicap snapshots for previous-day matches.",
+    "Full-week team/competition/season xG coverage is incomplete; weekly totals and per-90 averages remain blank."
+  ]
+}
