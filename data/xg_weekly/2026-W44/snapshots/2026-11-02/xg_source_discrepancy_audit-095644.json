@@ -1,0 +1,67 @@
+{
+  "report_version": "xg-source-discrepancy-audit-2026-W44-2026-11-02-v1",
+  "generated_at_beijing": "2026-11-02T09:56:44+08:00",
+  "policy": "Keep provider values separate; do not average or overwrite older observations.",
+  "discrepancies": [
+    {
+      "match_id": "match:bundesliga:2026-10-31:bayern-munich:borussia-dortmund",
+      "providers": [
+        {
+          "name": "xG-edge",
+          "home_xg": 4.18,
+          "away_xg": 0.63,
+          "url": "https://www.xg-edge.com/bundesliga/fc-bayern-munchen-vs-borussia-dortmund-2026-10-31"
+        },
+        {
+          "name": "TACTIX",
+          "home_xg": 3.97,
+          "away_xg": 0.63,
+          "url": "https://tactix.football/bundesliga/bayern-munchen-vs-borussia-dortmund-2026-10-31"
+        }
+      ],
+      "status": "STORED_PROVIDER_SPECIFIC_NO_AVERAGE"
+    },
+    {
+      "match_id": "match:la-liga:2026-11-01:racing-santander:real-madrid",
+      "providers": [
+        {
+          "name": "MatchCalendar",
+          "home_xg": 0.96,
+          "away_xg": 3.41,
+          "url": "https://matchcalendar.football/es/competition/la-liga/match/racing-santander-vs-real-madrid/"
+        },
+        {
+          "name": "OddAlerts",
+          "home_xg": 1.55,
+          "away_xg": 2.6,
+          "url": "https://www.oddalerts.com/livescores/racing-santander-vs-real-madrid/10505-10988"
+        },
+        {
+          "name": "MeasuredTake/FotMob",
+          "home_xg": 1.15,
+          "away_xg": 3.45,
+          "url": "https://measuredtake.com/article/racing-santander-vs-real-madrid-2026-11-01"
+        }
+      ],
+      "status": "LARGE_PROVIDER_DIFFERENCE_RETAIN_ALL_SEPARATELY"
+    },
+    {
+      "match_id": "match:brazil-serie-a:2026-10-31:coritiba:vitoria",
+      "providers": [
+        {
+          "name": "xG.football",
+          "home_xg": 2.16,
+          "away_xg": 0.52,
+          "url": "https://xg.football/matches/coritiba-vitoria-2026-10-28"
+        },
+        {
+          "name": "GolMates",
+          "home_xg": 2.32,
+          "away_xg": 0.53,
+          "url": "https://www.golmates.com/pt/brasil/brasileirao/2026/resultados/coritiba-vs-vitoria-2026-10-31"
+        }
+      ],
+      "status": "STORED_PROVIDER_SPECIFIC_NO_AVERAGE"
+    }
+  ]
+}
