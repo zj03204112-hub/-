@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-11-02T08:24:41Z",
+  "generated_at_utc": "2026-11-02T08:27:20Z",
   "matches_in_mapping": 130,
   "source_url": "https://www.oddalerts.com/xg/j-league",
   "source_policy": "free public page only; no paid API",
   "source_counts_in_output": {
     "OddAlerts": 50,
-    "Tifolab": 57,
-    "ScoutingStats": 6,
+    "Tifolab": 59,
+    "ScoutingStats": 8,
     "VJStats": 3,
     "FotMob": 1,
-    "": 13
+    "": 9
   },
   "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
   "sources_in_output": [
@@ -68,15 +68,19 @@
     "https://www.tifolab.com/matches/1556066",
     "https://www.tifolab.com/matches/1556070",
     "https://www.tifolab.com/matches/1556054",
-    "https://www.tifolab.com/matches/1556062"
+    "https://www.tifolab.com/matches/1556062",
+    "https://scoutingstats.ai/j1-league/kawasaki-frontale-v-shimizu-s-pulse/19719070?from=club-hub",
+    "https://scoutingstats.ai/j1-league/kawasaki-frontale-v-kashima-antlers/19719087?from=club-hub",
+    "https://www.tifolab.com/matches/1556075",
+    "https://www.tifolab.com/matches/1556073"
   ],
-  "matches_with_xg": 117,
-  "matches_with_verified_xg": 117,
+  "matches_with_xg": 121,
+  "matches_with_verified_xg": 121,
   "matches_with_unverified_legacy_xg": 0,
-  "matches_missing_xg": 13,
-  "source_rows_matched": 117,
+  "matches_missing_xg": 9,
+  "source_rows_matched": 121,
   "source_access_status": "fetched",
-  "source_access_detail": "Added 2 additional Tifolab match-level xG records after matching exact mapped IDs, dates and final scores. Provider-specific xG, not official J.League xG; no averaging or imputation.",
+  "source_access_detail": "Added 4 match-level xG records after matching mapped internal IDs, fixture dates and final scores. Values are source-model-specific; no averaging or imputation.",
   "preserved_prior_values_when_source_blocked": false,
   "missing_policy": "blank values only; no score-based or model-based imputation",
   "matches": [
@@ -761,7 +765,12 @@
       "date": "2026-09-06",
       "home": "川崎Ｆ",
       "away": "清水",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 3.92,
+      "away_xg": 1.41,
+      "source_name": "ScoutingStats",
+      "source_url": "https://scoutingstats.ai/j1-league/kawasaki-frontale-v-shimizu-s-pulse/19719070?from=club-hub",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-fc東京-京都",
@@ -890,7 +899,12 @@
       "date": "2026-09-19",
       "home": "川崎Ｆ",
       "away": "鹿島",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 2.32,
+      "away_xg": 1.09,
+      "source_name": "ScoutingStats",
+      "source_url": "https://scoutingstats.ai/j1-league/kawasaki-frontale-v-kashima-antlers/19719087?from=club-hub",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-福岡-広島",
@@ -966,14 +980,24 @@
       "date": "2026-09-20",
       "home": "町田",
       "away": "柏",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 0.82,
+      "away_xg": 1.54,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556075",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-20-g大阪-神戸",
       "date": "2026-09-20",
       "home": "Ｇ大阪",
       "away": "神戸",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 2.02,
+      "away_xg": 1.33,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556073",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-10-09-柏-神戸",
