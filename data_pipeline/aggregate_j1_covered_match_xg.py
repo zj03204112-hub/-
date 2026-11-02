@@ -19,13 +19,22 @@ def main():
     with MATCH.open(encoding="utf-8-sig",newline="") as f:
         rows=list(csv.DictReader(f))
     teams=defaultdict(lambda: {"match_count":0,"missing_xg_rows":0,"xg_sum":0.0,"xga_sum":0.0,"sources":set(),"source_urls":set()})
+    verified_match_rows = 0
+    unverified_match_rows = 0
     for r in rows:
+        # Only rows matched against the current public source fetch may enter aggregates.
+        # Retained legacy values stay in the raw CSV for audit, but must not inflate coverage.
+        verified = r.get("source_validation_status") == "verified_from_current_fetch" and r.get("source_name") == "OddAlerts"
+        if verified and r.get("home_xg") and r.get("away_xg"):
+            verified_match_rows += 1
+        else:
+            unverified_match_rows += 1
         for team,xg,xga in ((r.get("home_team",""),r.get("home_xg",""),r.get("home_xga","")),
                             (r.get("away_team",""),r.get("away_xg",""),r.get("away_xga",""))):
             if not team:
                 continue
             d=teams[team]
-            if not xg or not xga:
+            if not verified or not xg or not xga:
                 d["missing_xg_rows"]+=1
                 continue
             d["match_count"]+=1
@@ -56,10 +65,12 @@ def main():
     audit={
         "generated_at_utc":now,"match_rows_read":len(rows),
         "match_rows_with_both_sides_xg":sum(bool(r.get("home_xg") and r.get("away_xg")) for r in rows),
+        "match_rows_verified_from_current_fetch":verified_match_rows,
+        "match_rows_unverified_or_missing":unverified_match_rows,
         "teams_aggregated":len(output),
         "total_team_match_observations":sum(d["match_count"] for d in teams.values()),
         "policy":"derived only by summing source xG/xGA values; no imputation",
-        "warning":"These are aggregates over the mapped match sample only, not a complete season. Per-match xGA is the opponent's same-match xG; source model is provider-specific, not official J.League.",
+        "warning":"These are aggregates over rows verified in the current source fetch only, not a complete season. Unverified legacy values are excluded. Per-match xGA is the opponent's same-match xG; source model is provider-specific, not official J.League.",
         "source_names":sorted({s for d in teams.values() for s in d["sources"]})
     }
     AUDIT.write_text(json.dumps(audit,ensure_ascii=False,indent=2),encoding="utf-8")
