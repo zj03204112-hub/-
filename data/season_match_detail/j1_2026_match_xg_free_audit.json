@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-11-02T08:21:34Z",
+  "generated_at_utc": "2026-11-02T08:22:19Z",
   "matches_in_mapping": 130,
   "source_url": "https://www.oddalerts.com/xg/j-league",
   "source_policy": "free public page only; no paid API",
   "source_counts_in_output": {
     "OddAlerts": 50,
-    "Tifolab": 45,
+    "Tifolab": 50,
     "ScoutingStats": 3,
     "FotMob": 1,
-    "": 31
+    "": 26
   },
   "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
   "sources_in_output": [
@@ -48,15 +48,20 @@
     "https://www.tifolab.com/matches/1556063",
     "https://www.tifolab.com/matches/1556053",
     "https://www.tifolab.com/matches/1556052",
-    "https://www.tifolab.com/matches/1556064"
+    "https://www.tifolab.com/matches/1556064",
+    "https://www.tifolab.com/matches/1556068",
+    "https://www.tifolab.com/matches/1556071",
+    "https://www.tifolab.com/matches/1556079",
+    "https://www.tifolab.com/matches/1556078",
+    "https://www.tifolab.com/matches/1556076"
   ],
-  "matches_with_xg": 99,
-  "matches_with_verified_xg": 99,
+  "matches_with_xg": 104,
+  "matches_with_verified_xg": 104,
   "matches_with_unverified_legacy_xg": 0,
-  "matches_missing_xg": 31,
-  "source_rows_matched": 99,
+  "matches_missing_xg": 26,
+  "source_rows_matched": 104,
   "source_access_status": "fetched",
-  "source_access_detail": "Added 3 additional Tifolab match-level xG records after checking exact mapped internal match IDs, dates and scores; provider-specific values are not official J.League xG.",
+  "source_access_detail": "Added 5 more Tifolab match-level xG records after checking exact internal match IDs, dates and full-time scores. Provider-specific xG; not official J.League xG, no cross-provider averaging or imputation.",
   "preserved_prior_values_when_source_blocked": false,
   "missing_policy": "blank values only; no score-based or model-based imputation",
   "matches": [
@@ -786,7 +791,12 @@
       "date": "2026-09-13",
       "home": "東京Ｖ",
       "away": "千葉",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.26,
+      "away_xg": 1.37,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556068",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-13-浦和-岡山",
@@ -807,7 +817,12 @@
       "date": "2026-09-19",
       "home": "福岡",
       "away": "広島",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 0.17,
+      "away_xg": 3.91,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556071",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-清水-千葉",
@@ -821,21 +836,36 @@
       "date": "2026-09-19",
       "home": "長崎",
       "away": "Ｃ大阪",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.15,
+      "away_xg": 1.93,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556079",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-浦和-東京v",
       "date": "2026-09-19",
       "home": "浦和",
       "away": "東京Ｖ",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 0.97,
+      "away_xg": 0.11,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556078",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-岡山-京都",
       "date": "2026-09-19",
       "home": "岡山",
       "away": "京都",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 0.23,
+      "away_xg": 0.57,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556076",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-fc東京-名古屋",
