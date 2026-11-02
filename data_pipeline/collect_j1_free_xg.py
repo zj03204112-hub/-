@@ -119,18 +119,26 @@ def main():
         with OUT.open(encoding="utf-8-sig", newline="") as f:
             prior = {r.get("internal_match_id", ""): r for r in csv.DictReader(f)}
     source_rows = []
-    source_access_status = "not_attempted"
+    source_access_status = "skipped_existing_complete_data"
     source_access_detail = ""
-    try:
-        response = requests.get(SOURCE_URL, timeout=45, headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36"})
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
-        source_rows = extract_candidates(soup)
-        source_access_status = "fetched"
-    except requests.RequestException as exc:
-        source_access_status = "blocked_or_unavailable"
-        source_access_detail = str(exc)[:500]
-        print(f"Public xG source unavailable; preserving prior sourced values: {source_access_detail}", flush=True)
+    prior_complete = all(
+        prior.get(m.get("internal_match_id", ""), {}).get("home_xg")
+        and prior.get(m.get("internal_match_id", ""), {}).get("away_xg")
+        for m in matches
+    )
+    if prior_complete:
+        print("All mapped fixtures already have sourced xG values; preserving provider provenance and skipping alternate-provider fetch.", flush=True)
+    else:
+        try:
+            response = requests.get(SOURCE_URL, timeout=45, headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36"})
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, "html.parser")
+            source_rows = extract_candidates(soup)
+            source_access_status = "fetched"
+        except requests.RequestException as exc:
+            source_access_status = "blocked_or_unavailable"
+            source_access_detail = str(exc)[:500]
+            print(f"Public xG source unavailable; preserving prior sourced values: {source_access_detail}", flush=True)
     by_id = {r["match"]["internal_match_id"]: r for r in source_rows}
     output = []
     for m in matches:
@@ -177,7 +185,9 @@ def main():
         "generated_at_utc": now, "matches_in_mapping": len(matches),
         "source_url": SOURCE_URL, "source_policy": "free public page only; no paid API",
         "source_counts_in_output": {name: sum(1 for r in output if r.get("source_name") == name) for name in sorted(set(r.get("source_name", "") for r in output))},
-        "source_methodology": "FootyStats states its J1 xG formula combines shot accuracy, shot frequency, attack dangerousness, possession and attack pressure; values are provider-specific, not official J.League xG.",
+        "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
+        "sources_in_output": sorted(set(r.get("source_name", "") for r in output if r.get("source_name"))),
+        "source_urls_in_output": sorted(set(r.get("source_url", "") for r in output if r.get("source_url"))),
         "matches_with_xg": sum(bool(r["home_xg"]) for r in output),
         "matches_missing_xg": sum(not bool(r["home_xg"]) for r in output),
         "source_rows_matched": len(source_rows),
