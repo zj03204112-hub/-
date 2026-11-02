@@ -1,13 +1,20 @@
 {
-  "generated_at_utc": "2026-11-02T06:12:31.199Z",
+  "generated_at_utc": "2026-11-02T06:17:02.293273+00:00",
   "source_policy": "free official J.League pages only; no paid API",
   "matches_in_mapping": 130,
-  "reports_fetched": 126,
+  "reports_fetched": 130,
   "reports_failed": 0,
-  "player_rows_extracted": 4797,
-  "starting_rows_extracted": 2640,
-  "bench_rows_extracted": 2157,
-  "substitution_rows_extracted": 1164,
+  "player_rows_extracted": 5037,
+  "starting_rows_extracted": 2772,
+  "bench_rows_extracted": 2265,
+  "substitution_rows_extracted": 1222,
+  "matches_with_complete_starting_xi": 126,
+  "matches_without_complete_starting_xi": 4,
+  "bench_rows_team_assigned": 0,
+  "bench_rows_team_unresolved": 2265,
+  "substitution_rows_missing_minute": 37,
+  "substitution_rows_missing_player_out_id": 1222,
+  "substitution_rows_missing_player_in_id": 1222,
   "player_ids": "not fabricated; blank where the official source does not expose stable IDs",
   "actual_minutes": "not fabricated; blank unless published in the source; source_time_cell retained",
   "xg_xga": "not supplied by these official match reports; remains missing until a verified free source is found",
@@ -242,18 +249,13 @@
       "match_date": "2026-08-15",
       "home_team": "川崎Ｆ",
       "away_team": "京都",
-      "source_url": "https://www.jleague.jp/en/match/j1/2026/081507/",
+      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34534",
       "fetch_status": "fetched",
-      "player_rows": 0,
-      "starting_rows": 0,
-      "bench_rows": 0,
-      "substitution_rows": 0,
-      "issues": [
-        {
-          "type": "official_lineup_text_not_parsed",
-          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
-        }
-      ]
+      "player_rows": 40,
+      "starting_rows": 22,
+      "bench_rows": 18,
+      "substitution_rows": 10,
+      "issues": []
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-浦和-広島",
@@ -317,18 +319,13 @@
       "match_date": "2026-08-21",
       "home_team": "FC東京",
       "away_team": "千葉",
-      "source_url": "https://www.jleague.jp/en/match/j1/2026/082101/",
+      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34538",
       "fetch_status": "fetched",
-      "player_rows": 0,
-      "starting_rows": 0,
-      "bench_rows": 0,
-      "substitution_rows": 0,
-      "issues": [
-        {
-          "type": "official_lineup_text_not_parsed",
-          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
-        }
-      ]
+      "player_rows": 40,
+      "starting_rows": 22,
+      "bench_rows": 18,
+      "substitution_rows": 10,
+      "issues": []
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-鹿島-福岡",
@@ -336,18 +333,13 @@
       "match_date": "2026-08-22",
       "home_team": "鹿島",
       "away_team": "福岡",
-      "source_url": "https://www.jleague.jp/match/j1/2026/082201/",
+      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34539",
       "fetch_status": "fetched",
-      "player_rows": 0,
-      "starting_rows": 0,
-      "bench_rows": 0,
-      "substitution_rows": 0,
-      "issues": [
-        {
-          "type": "official_lineup_text_not_parsed",
-          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
-        }
-      ]
+      "player_rows": 40,
+      "starting_rows": 22,
+      "bench_rows": 18,
+      "substitution_rows": 10,
+      "issues": []
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-岡山-東京v",
@@ -355,18 +347,13 @@
       "match_date": "2026-08-22",
       "home_team": "岡山",
       "away_team": "東京Ｖ",
-      "source_url": "https://www.jleague.jp/match/j1/2026/082202/lineup/",
+      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34540",
       "fetch_status": "fetched",
-      "player_rows": 0,
-      "starting_rows": 0,
-      "bench_rows": 0,
-      "substitution_rows": 0,
-      "issues": [
-        {
-          "type": "official_lineup_text_not_parsed",
-          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
-        }
-      ]
+      "player_rows": 40,
+      "starting_rows": 22,
+      "bench_rows": 18,
+      "substitution_rows": 10,
+      "issues": []
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-名古屋-g大阪",
@@ -430,18 +417,13 @@
       "match_date": "2026-08-22",
       "home_team": "横浜FM",
       "away_team": "神戸",
-      "source_url": "https://www.jleague.jp/match/j1/2026/082207/",
+      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34545",
       "fetch_status": "fetched",
-      "player_rows": 0,
-      "starting_rows": 0,
-      "bench_rows": 0,
-      "substitution_rows": 0,
-      "issues": [
-        {
-          "type": "official_lineup_text_not_parsed",
-          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
-        }
-      ]
+      "player_rows": 40,
+      "starting_rows": 22,
+      "bench_rows": 18,
+      "substitution_rows": 9,
+      "issues": []
     },
     {
       "internal_match_id": "j1-2026-2026-08-23-町田-浦和",
@@ -1023,18 +1005,13 @@
       "match_date": "2026-09-19",
       "home_team": "川崎Ｆ",
       "away_team": "鹿島",
-      "source_url": "https://www.jleague.jp/match/j1/2026/091909/",
+      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34596",
       "fetch_status": "fetched",
-      "player_rows": 0,
-      "starting_rows": 0,
-      "bench_rows": 0,
-      "substitution_rows": 0,
-      "issues": [
-        {
-          "type": "official_lineup_text_not_parsed",
-          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
-        }
-      ]
+      "player_rows": 40,
+      "starting_rows": 22,
+      "bench_rows": 18,
+      "substitution_rows": 9,
+      "issues": []
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-福岡-広島",
@@ -1813,15 +1790,15 @@
       "home_team": "横浜FM",
       "away_team": "川崎Ｆ",
       "source_url": "https://www.jleague.jp/en/match/j1/2026/110101/",
-      "fetch_status": "pending_player_csv_normalization",
+      "fetch_status": "fetched",
       "player_rows": 0,
       "starting_rows": 0,
       "bench_rows": 0,
       "substitution_rows": 0,
       "issues": [
         {
-          "type": "new_match_not_in_original_collector_run",
-          "detail": "Official source URL is mapped; player rows not yet normalized into CSV."
+          "type": "official_site_lineup_text_not_parsed",
+          "roster_rows_found": 0
         }
       ]
     },
@@ -1832,15 +1809,15 @@
       "home_team": "千葉",
       "away_team": "福岡",
       "source_url": "https://www.jleague.jp/en/match/j1/2026/110102/",
-      "fetch_status": "pending_player_csv_normalization",
+      "fetch_status": "fetched",
       "player_rows": 0,
       "starting_rows": 0,
       "bench_rows": 0,
       "substitution_rows": 0,
       "issues": [
         {
-          "type": "new_match_not_in_original_collector_run",
-          "detail": "Official source URL is mapped; player rows not yet normalized into CSV."
+          "type": "official_site_lineup_text_not_parsed",
+          "roster_rows_found": 0
         }
       ]
     },
@@ -1851,15 +1828,15 @@
       "home_team": "長崎",
       "away_team": "東京Ｖ",
       "source_url": "https://www.jleague.jp/match/j1/2026/110103/",
-      "fetch_status": "pending_player_csv_normalization",
+      "fetch_status": "fetched",
       "player_rows": 0,
       "starting_rows": 0,
       "bench_rows": 0,
       "substitution_rows": 0,
       "issues": [
         {
-          "type": "new_match_not_in_original_collector_run",
-          "detail": "Official source URL is mapped; player rows not yet normalized into CSV."
+          "type": "official_site_lineup_text_not_parsed",
+          "roster_rows_found": 0
         }
       ]
     },
@@ -1870,56 +1847,17 @@
       "home_team": "町田",
       "away_team": "Ｇ大阪",
       "source_url": "https://www.jleague.jp/match/j1/2026/110109/",
-      "fetch_status": "pending_player_csv_normalization",
+      "fetch_status": "fetched",
       "player_rows": 0,
       "starting_rows": 0,
       "bench_rows": 0,
       "substitution_rows": 0,
       "issues": [
         {
-          "type": "new_match_not_in_original_collector_run",
-          "detail": "Official source URL is mapped; player rows not yet normalized into CSV."
+          "type": "official_site_lineup_text_not_parsed",
+          "roster_rows_found": 0
         }
       ]
     }
-  ],
-  "reports_pending": 4,
-  "matches_with_complete_starting_xi": 120,
-  "matches_without_complete_starting_xi": 10,
-  "older_matches_with_report_but_no_lineup_rows": 6,
-  "new_matches_pending_player_normalization": 4,
-  "substitution_rows_in_current_csv": 1222,
-  "substitution_rows_missing_minute": 37,
-  "substitution_rows_missing_player_out_id": 1222,
-  "substitution_rows_missing_player_in_id": 1222,
-  "validation_note": "The historical run counts above describe the successful 126-match collector run, not the current player CSV. The current player CSV is verified as 0 bytes. Do not treat this audit as passed until the collector is rerun and its generated files are re-fetched and validated.",
-  "last_successful_collector_run": {
-    "run_id": 41384520154,
-    "run_url": "https://github.com/zj03204112-hub/-/actions/runs/41384520154",
-    "commit": "2173a79",
-    "mapping_matches": 126,
-    "reports_fetched": 126,
-    "player_rows_generated": 4797,
-    "starting_rows_generated": 2640,
-    "bench_rows_generated": 2157,
-    "substitution_rows_generated": 1164,
-    "complete_starting_xi_matches": 120,
-    "report_pages_with_no_parsed_lineup": 6
-  },
-  "current_repository_file_status": {
-    "player_csv_path": "data/season_match_detail/j1_2026_players_free_official.csv",
-    "player_csv_bytes": 0,
-    "player_csv_status": "empty_after_follow-up-write; must be regenerated by collector workflow",
-    "current_mapping_matches": 130,
-    "current_substitution_csv_rows": 1222,
-    "current_substitution_rows_missing_minute": 37,
-    "current_substitution_rows_missing_player_out_id": 1222,
-    "current_substitution_rows_missing_player_in_id": 1222
-  },
-  "bench_assignment_issue": {
-    "finding": "In the last successful player CSV, all bench rows per match were assigned to only one team label by the parser; that team attribution is not reliable.",
-    "impact": "Do not use the bench team labels for team-specific features until the collector is rerun with the new quarantine logic.",
-    "fix_commit": "d3095ce2f1b90c6fc14aa19a59b3a2ddb7308c62",
-    "status": "parser_fix_committed; output regeneration not yet verified"
-  }
+  ]
 }

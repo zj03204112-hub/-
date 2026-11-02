@@ -1,9 +1,10 @@
 {
-  "generated_at_utc": "2026-11-02T04:38:14.429702+00:00",
-  "matches_in_mapping": 126,
+  "generated_at_utc": "2026-11-02T06:17:02.549376+00:00",
+  "matches_in_mapping": 130,
   "source_url": "https://footystats.org/japan/j1-league/xg",
   "source_policy": "free public page only; no paid API",
   "source_counts_in_output": {
+    "": 4,
     "ScanGoal": 126
   },
   "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
@@ -11,13 +12,14 @@
     "ScanGoal"
   ],
   "source_urls_in_output": [
+    "https://footystats.org/japan/j1-league/xg",
     "https://scangoal.com/league/j-league"
   ],
   "matches_with_xg": 126,
-  "matches_missing_xg": 0,
+  "matches_missing_xg": 4,
   "source_rows_matched": 0,
-  "source_access_status": "skipped_existing_complete_data",
-  "source_access_detail": "",
+  "source_access_status": "blocked_or_unavailable",
+  "source_access_detail": "403 Client Error: Forbidden for url: https://footystats.org/japan/j1-league/xg",
   "preserved_prior_values_when_source_blocked": true,
   "missing_policy": "blank values only; no score-based or model-based imputation",
   "matches": [
@@ -902,6 +904,34 @@
       "home": "柏",
       "away": "浦和",
       "status": "captured_from_free_public_page"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-11-01-横浜fm-川崎f",
+      "date": "2026-11-01",
+      "home": "横浜FM",
+      "away": "川崎Ｆ",
+      "status": "missing_not_exposed_in_free_source"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-11-01-千葉-福岡",
+      "date": "2026-11-01",
+      "home": "千葉",
+      "away": "福岡",
+      "status": "missing_not_exposed_in_free_source"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-11-01-長崎-東京v",
+      "date": "2026-11-01",
+      "home": "長崎",
+      "away": "東京Ｖ",
+      "status": "missing_not_exposed_in_free_source"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-11-01-町田-g大阪",
+      "date": "2026-11-01",
+      "home": "町田",
+      "away": "Ｇ大阪",
+      "status": "missing_not_exposed_in_free_source"
     }
   ]
 }
