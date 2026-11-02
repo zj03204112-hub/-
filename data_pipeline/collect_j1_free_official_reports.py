@@ -166,6 +166,10 @@ def main():
         raise FileNotFoundError(f"Missing mapping file: {MAPPING}")
     with MAPPING.open(encoding="utf-8-sig", newline="") as f:
         matches = list(csv.DictReader(f))
+    previous_sub_rows = []
+    if SUBS_OUT.exists():
+        with SUBS_OUT.open(encoding="utf-8-sig", newline="") as f:
+            previous_sub_rows = list(csv.DictReader(f))
     player_rows, sub_rows, match_audits = [], [], []
     for i, match in enumerate(matches, 1):
         url = clean(match.get("official_match_url") or match.get("source_record_url"))
@@ -217,8 +221,34 @@ def main():
         if i % 10 == 0:
             print(f"Processed {i}/{len(matches)} official reports", flush=True)
         time.sleep(0.25)
+    # Preserve previously sourced official substitution events if this parser run fails to
+    # re-extract them. Merge by match + outgoing player + incoming player; prefer nonblank fields.
+    def substitution_key(row):
+        return tuple(clean(row.get(k, "")).casefold() for k in ("internal_match_id", "player_out_name", "player_in_name"))
+    merged_subs = {}
+    for row in previous_sub_rows:
+        key = substitution_key(row)
+        if all(key):
+            merged_subs[key] = dict(row)
+    for row in sub_rows:
+        key = substitution_key(row)
+        if not all(key):
+            continue
+        if key not in merged_subs:
+            merged_subs[key] = dict(row)
+        else:
+            prior = merged_subs[key]
+            for field, value in row.items():
+                if value not in (None, "") or prior.get(field) in (None, ""):
+                    prior[field] = value
+    sub_rows = list(merged_subs.values())
+    for row in sub_rows:
+        raw_label = row.get("team_report_label_raw") or row.get("team_report_label", "")
+        row["team_report_label_raw"] = raw_label
+        row["team_report_label"] = ""
+        row["team_assignment_status"] = "unresolved_parser_team_mapping"
     write_csv(PLAYERS_OUT, player_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","team_report_label_raw","team_assignment_status","section","position","shirt_number","player_name","player_id","player_id_status","actual_minutes","actual_minutes_status","source_time_cell","source_url"])
-    write_csv(SUBS_OUT, sub_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","player_out_name","player_in_name","minute","player_out_id","player_in_id","source_url","source_type"])
+    write_csv(SUBS_OUT, sub_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","team_report_label_raw","team_assignment_status","player_out_name","player_in_name","minute","player_out_id","player_in_id","source_url","source_type"])
     audit = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "source_policy": "free official J.League pages only; no paid API",
@@ -229,6 +259,8 @@ def main():
         "starting_rows_extracted": sum(x["section"] == "starting" for x in player_rows),
         "bench_rows_extracted": sum(x["section"] == "bench" for x in player_rows),
         "substitution_rows_extracted": len(sub_rows),
+        "substitution_rows_team_assigned": sum(1 for x in sub_rows if x.get("team_report_label")),
+        "substitution_rows_team_unresolved": sum(1 for x in sub_rows if not x.get("team_report_label")),
         "matches_with_complete_starting_xi": sum(1 for x in match_audits if x["starting_rows"] == 22),
         "matches_without_complete_starting_xi": sum(1 for x in match_audits if x["starting_rows"] != 22),
         "bench_rows_team_assigned": sum(1 for x in player_rows if x.get("section") == "bench" and x.get("team_report_label")),
