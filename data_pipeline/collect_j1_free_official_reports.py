@@ -247,7 +247,7 @@ def main():
     # Resolve substitution team by matching the official in/out player names to this
     # match's verified starting XI and bench roster, not by trusting a possibly shared table heading.
     def player_name_key(value):
-        return re.sub(r"[\\s\\u3000・･'’\\".,，．()（）\\-‐‑—]+", "", clean(value)).casefold()
+        return re.sub(r"[\s\u3000・･'’.,，．()（）\-‐‑—]+", "", clean(value)).casefold()
     roster_teams = {}
     for player in player_rows:
         player_key = player_name_key(player.get("player_name", ""))
