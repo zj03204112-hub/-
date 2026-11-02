@@ -1,0 +1,124 @@
+{
+  "generated_at_utc": "2026-11-02T04:24:00Z",
+  "matches_in_mapping": 126,
+  "source_url": "https://footystats.org/japan/j1-league/xg",
+  "source_policy": "Free publicly viewable webpage only; no paid API.",
+  "source_methodology": "FootyStats states its J1 xG formula combines shot accuracy, shot frequency, attack dangerousness, possession and attack pressure. These are provider-specific xG values, not official J.League values.",
+  "source_access_note": "Automated GitHub Actions request received HTTP 403. Initial values below were transcribed from the publicly rendered page visible during this run; automated future refresh is currently blocked and must not be reported as working.",
+  "matches_with_xg": 3,
+  "matches_missing_xg": 123,
+  "coverage_percent": 2.38,
+  "xga_rule": "home_xga = away_xg; away_xga = home_xg for the same match, using the same provider values.",
+  "missing_policy": "All other matches remain blank; no goals-based or model-based imputation.",
+  "unmapped_public_rows": [
+    {
+      "date": "2026-10-31",
+      "home": "長崎",
+      "away": "東京Ｖ",
+      "score": "1-2",
+      "mapped": false
+    },
+    {
+      "date": "2026-10-31",
+      "home": "千葉",
+      "away": "福岡",
+      "score": "3-0",
+      "mapped": false
+    },
+    {
+      "date": "2026-10-31",
+      "home": "横浜FM",
+      "away": "川崎Ｆ",
+      "score": "4-2",
+      "mapped": false
+    },
+    {
+      "date": "2026-10-30",
+      "home": "鹿島",
+      "away": "Ｃ大阪",
+      "score": "4-1",
+      "mapped": false
+    },
+    {
+      "date": "2026-10-30",
+      "home": "神戸",
+      "away": "名古屋",
+      "score": "3-1",
+      "mapped": false
+    },
+    {
+      "date": "2026-10-30",
+      "home": "京都",
+      "away": "清水",
+      "score": "2-0",
+      "mapped": false
+    },
+    {
+      "date": "2026-10-30",
+      "home": "水戸",
+      "away": "広島",
+      "score": "0-3",
+      "mapped": false
+    },
+    {
+      "date": "2026-10-30",
+      "home": "岡山",
+      "away": "FC東京",
+      "score": "0-4",
+      "mapped": false
+    },
+    {
+      "date": "2026-10-24",
+      "home": "浦和",
+      "away": "長崎",
+      "score": "1-0",
+      "mapped": false
+    },
+    {
+      "date": "2026-10-24",
+      "home": "Ｃ大阪",
+      "away": "千葉",
+      "score": "2-2",
+      "mapped": false
+    },
+    {
+      "date": "2026-10-24",
+      "home": "名古屋",
+      "away": "横浜FM",
+      "score": "1-1",
+      "mapped": false
+    }
+  ],
+  "populated_matches": [
+    {
+      "internal_match_id": "j1-2026-2026-10-31-kashiwa-urawa",
+      "date": "2026-10-31",
+      "home": "柏",
+      "away": "浦和",
+      "score": "4-0",
+      "home_xg": 2.38,
+      "away_xg": 1.84,
+      "source_raw_row": "Sat 31st | 4-0 Kashiwa Reysol vs Urawa Reds | xG 2.38-1.84"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-川崎f-岡山",
+      "date": "2026-10-25",
+      "home": "川崎Ｆ",
+      "away": "岡山",
+      "score": "2-1",
+      "home_xg": 0.81,
+      "away_xg": 1.86,
+      "source_raw_row": "Sun 25th | 2-1 Kawasaki Frontale vs Fagiano Okayama | xG 0.81-1.86"
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-fc東京-水戸",
+      "date": "2026-10-25",
+      "home": "FC東京",
+      "away": "水戸",
+      "score": "6-0",
+      "home_xg": 2.6,
+      "away_xg": 1.04,
+      "source_raw_row": "Sun 25th | 6-0 FC Tokyo vs Mito Hollyhock | xG 2.60-1.04"
+    }
+  ]
+}
