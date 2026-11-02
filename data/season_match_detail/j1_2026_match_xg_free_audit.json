@@ -1,17 +1,19 @@
 {
-  "generated_at_utc": "2026-11-02T08:02:00Z",
+  "generated_at_utc": "2026-11-02T08:10:00Z",
   "matches_in_mapping": 130,
   "source_url": "https://www.oddalerts.com/xg/j-league",
   "source_policy": "free public page only; no paid API",
   "source_counts_in_output": {
     "OddAlerts": 50,
     "Tifolab": 27,
-    "": 53
+    "ScoutingStats": 2,
+    "": 51
   },
   "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
   "sources_in_output": [
     "OddAlerts",
-    "Tifolab"
+    "Tifolab",
+    "ScoutingStats"
   ],
   "source_urls_in_output": [
     "https://www.oddalerts.com/xg/j-league",
@@ -22,15 +24,16 @@
     "https://www.tifolab.com/teams/apifb-team-296-2026-27",
     "https://www.tifolab.com/teams/apifb-team-301-2027-28",
     "https://www.tifolab.com/teams/apifb-team-303-2027-28",
-    "https://www.tifolab.com/teams/apifb-team-305-2026-27"
+    "https://www.tifolab.com/teams/apifb-team-305-2026-27",
+    "https://scoutingstats.ai/clubs/3509/kyoto-sanga/fixtures?league_id=1085&season_id=28424"
   ],
-  "matches_with_xg": 77,
-  "matches_with_verified_xg": 77,
+  "matches_with_xg": 79,
+  "matches_with_verified_xg": 79,
   "matches_with_unverified_legacy_xg": 0,
-  "matches_missing_xg": 53,
-  "source_rows_matched": 77,
+  "matches_missing_xg": 51,
+  "source_rows_matched": 79,
   "source_access_status": "fetched",
-  "source_access_detail": "Added 10 Tifolab provider-specific match xG rows, date/fixture/score aligned and team-view normalized; not official J.League xG.",
+  "source_access_detail": "Added 2 ScoutingStats provider-specific xG records for Aug 9 Nagasaki-Kyoto and Aug 15 Kawasaki-Kyoto; fixture date, teams and score aligned; values not official J.League xG.",
   "preserved_prior_values_when_source_blocked": false,
   "missing_policy": "blank values only; no score-based or model-based imputation",
   "matches": [
@@ -117,7 +120,12 @@
       "date": "2026-08-09",
       "home": "長崎",
       "away": "京都",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.31,
+      "away_xg": 1.13,
+      "source_name": "ScoutingStats",
+      "source_url": "https://scoutingstats.ai/clubs/3509/kyoto-sanga/fixtures?league_id=1085&season_id=28424",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-14-東京v-柏",
@@ -181,7 +189,12 @@
       "date": "2026-08-15",
       "home": "川崎Ｆ",
       "away": "京都",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.67,
+      "away_xg": 0.7,
+      "source_name": "ScoutingStats",
+      "source_url": "https://scoutingstats.ai/clubs/3509/kyoto-sanga/fixtures?league_id=1085&season_id=28424",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-浦和-広島",
