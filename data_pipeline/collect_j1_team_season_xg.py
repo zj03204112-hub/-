@@ -1,85 +1,79 @@
 #!/usr/bin/env python3
-"""Save publicly displayed J1 team-season xG/xGA aggregates, separate from match-level data."""
+"""Collect public ScanGoal J1 team-season xG/xGA totals; never infer missing values."""
 import csv, json, re
 from datetime import datetime, timezone
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-URL = "https://footinsights.com/leagues/j1-league/"
+URL = "https://scangoal.com/league/j-league"
 OUT = Path("data/season_match_detail/j1_2026_team_season_xg_free.csv")
 AUDIT = Path("data/season_match_detail/j1_2026_team_season_xg_free_audit.json")
 
 def clean(s):
-    return re.sub(r"\\s+", " ", (s or "")).strip()
-
-def parse_tables(soup, now):
-    teams = {}
-    for table in soup.find_all("table"):
-        trs = table.find_all("tr")
-        if len(trs) < 2:
-            continue
-        headers = [clean(x.get_text(" ", strip=True)).lower() for x in trs[0].find_all(["th","td"])]
-        if not headers or not any(h == "team" for h in headers):
-            continue
-        idx = {h:i for i,h in enumerate(headers)}
-        xg_key = next((h for h in headers if h == "xg"), None)
-        xga_key = next((h for h in headers if h == "xga"), None)
-        per_key = next((h for h in headers if h in ("/90","xg /90","xg/90")), None)
-        xga_per_key = next((h for h in headers if h in ("xga /90","xga/90")), None)
-        for tr in trs[1:]:
-            cells = [clean(x.get_text(" ", strip=True)) for x in tr.find_all(["th","td"])]
-            if len(cells) < len(headers):
-                continue
-            team = cells[idx["team"]] if idx["team"] < len(cells) else ""
-            if not team or team == "#":
-                continue
-            row = teams.setdefault(team, {
-                "team_name_source": team, "played": "", "goals_for": "",
-                "season_xg": "", "xg_per90": "", "goals_minus_xg": "",
-                "season_xga": "", "xga_per90": "", "source_name": "OddAlerts",
-                "source_url": URL, "source_model_note": "Public team-season aggregate; NOT match-level xG; provider-specific model",
-                "retrieved_at_utc": now
-            })
-            def val(key):
-                return cells[idx[key]] if key and key in idx and idx[key] < len(cells) else ""
-            if xg_key:
-                row["season_xg"] = val(xg_key)
-                row["played"] = val("p")
-                row["goals_for"] = val("g")
-                row["xg_per90"] = val(per_key)
-                row["goals_minus_xg"] = val("+/-")
-            if xga_key:
-                row["season_xga"] = val(xga_key)
-                row["xga_per90"] = val(xga_per_key) or val(per_key)
-    return list(teams.values())
+    return re.sub(r"\s+", " ", (s or "")).strip()
 
 def main():
     now = datetime.now(timezone.utc).isoformat()
-    err = ""
-    rows = []
+    rows_out, error = [], ""
     try:
-        r = requests.get(URL, timeout=30, headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36"})
-        r.raise_for_status()
-        soup = BeautifulSoup(r.text, "html.parser")
-        rows = parse_tables(soup, now)
+        response = requests.get(URL, timeout=35, headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36"})
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        selected = None
+        for table in soup.find_all("table"):
+            trs = table.find_all("tr")
+            if len(trs) < 2:
+                continue
+            headers = [clean(x.get_text(" ", strip=True)).lower() for x in trs[0].find_all(["th","td"])]
+            if "team" in headers and "xg" in headers and "xga" in headers and "p" in headers:
+                selected = (trs, headers)
+                break
+        if selected:
+            trs, headers = selected
+            idx = {h:i for i,h in enumerate(headers)}
+            for tr in trs[1:]:
+                cells = [clean(x.get_text(" ", strip=True)) for x in tr.find_all(["th","td"])]
+                if len(cells) < len(headers):
+                    continue
+                team = cells[idx["team"]]
+                if not team or team == "#":
+                    continue
+                played = cells[idx["p"]]
+                xg = cells[idx["xg"]]
+                xga = cells[idx["xga"]]
+                try:
+                    n = float(played); xgf = float(xg); xgaf = float(xga)
+                except ValueError:
+                    continue
+                rows_out.append({
+                    "team_name_source":team,"matches_played_source":played,
+                    "season_xg_total":f"{xgf:.3f}","season_xga_total":f"{xgaf:.3f}",
+                    "xg_per_match":f"{xgf/n:.3f}" if n else "",
+                    "xga_per_match":f"{xgaf/n:.3f}" if n else "",
+                    "source_name":"ScanGoal","source_url":URL,
+                    "source_model_note":"Provider-specific season aggregate, not official J.League xG; distinct from per-match CSV",
+                    "retrieved_at_utc":now
+                })
+        if not rows_out:
+            error = "Public page fetched but the expected Team/P/xG/xGA table was not parsed."
     except Exception as exc:
-        err = f"{type(exc).__name__}: {exc}"[:500]
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    fields = ["team_name_source","played","goals_for","season_xg","xg_per90","goals_minus_xg","season_xga","xga_per90","source_name","source_url","source_model_note","retrieved_at_utc"]
-    if rows:
-        with OUT.open("w", encoding="utf-8-sig", newline="") as f:
-            w=csv.DictWriter(f, fieldnames=fields);w.writeheader();w.writerows(rows)
-    audit = {
-        "generated_at_utc": now, "source_url": URL, "source_access": "success" if rows else "failed_or_no_parse",
-        "source_error": err, "teams_with_public_season_aggregates": len(rows),
-        "policy": "free public page; no paid API; no extrapolation from season averages to match-level values",
-        "interpretation": "This dataset is team-season aggregate xG/xGA. It must not be merged into per-match xG fields or represented as per-match values."
+        error = f"{type(exc).__name__}: {exc}"[:500]
+    fields = ["team_name_source","matches_played_source","season_xg_total","season_xga_total","xg_per_match","xga_per_match","source_name","source_url","source_model_note","retrieved_at_utc"]
+    if rows_out:
+        with OUT.open("w",encoding="utf-8-sig",newline="") as f:
+            w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(rows_out)
+    audit={
+        "generated_at_utc":now,"source_url":URL,
+        "source_access":"success" if rows_out else "failed_or_no_parse",
+        "source_error":error,"teams_with_public_season_aggregates":len(rows_out),
+        "policy":"free public page only; no paid API; no imputation",
+        "interpretation":"Team-season aggregate totals and averages only; never fill missing match-level xG/xGA with these aggregates."
     }
-    AUDIT.write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps(audit, ensure_ascii=False, indent=2))
-    if not rows:
-        print("WARNING: provider blocked automated access; static dated snapshot, if present, remains separate and unchanged.", flush=True)
-
-if __name__ == "__main__":
+    Path("data/season_match_detail").mkdir(parents=True,exist_ok=True)
+    OUT_AUDIT=Path("data/season_match_detail/j1_2026_team_season_xg_free_audit.json")
+    OUT_AUDIT.write_text(json.dumps(audit,ensure_ascii=False,indent=2),encoding="utf-8")
+    print(json.dumps(audit,ensure_ascii=False,indent=2),flush=True)
+    # A source block/parser mismatch should not prevent match-level xG data from being saved.
+if __name__=="__main__":
     main()
