@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-11-02T04:35:00Z",
+  "generated_at_utc": "2026-11-02T04:38:00Z",
   "matches_in_mapping": 126,
   "source_name": "ScanGoal",
   "source_url": "https://scangoal.com/league/j-league",
-  "source_snapshot_note": "Values transcribed from publicly visible ScanGoal match xG listings for rounds 1-13; rounds 1-4 from page snapshot dated 2026-09-19, rounds 5-13 from search-visible current page. Values are provider-specific.",
+  "source_snapshot_note": "Per-match values were transcribed from public ScanGoal round listings. Rounds 1-4 were taken from the page snapshot updated 2026-09-19; rounds 5-13 were taken from the search-visible listing. Provider-specific values, not official J.League xG.",
   "rows_transcribed": 126,
-  "rows_matched_to_internal_match_id": 114,
-  "rows_not_matched": 12,
+  "rows_matched_to_internal_match_id": 126,
+  "rows_not_matched": 0,
   "matched_keys": [
     "2026-08-07|yokohamafm|kashima",
     "2026-08-07|gambaosaka|urawa",
@@ -136,5 +136,9 @@
     "2026-10-17|kashima|v-varennagasaki",
     "2026-10-21|v-varennagasaki|sanfreccehiroshima"
   ],
-  "missing_policy": "No score-based imputation; unmapped fixtures retain prior sourced value or blank."
+  "missing_policy": "No score-based imputation. Each value is copied from the source's match xG listing and mapped by date and home/away teams.",
+  "per_match_xg_complete": true,
+  "matches_with_xg": 126,
+  "matches_missing_xg": 0,
+  "caveat": "All 126 fixtures now have values from the same provider. xGA is mapped as the opponent's same-match xG; this is not a separate defensive xGA model. Historical source pages can revise values, so this is a dated snapshot, not a live feed."
 }
