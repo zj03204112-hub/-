@@ -156,6 +156,19 @@ def main():
                   "starting_rows": 0, "bench_rows": 0, "substitution_rows": 0, "issues": []}
         try:
             players, subs, issues = parse_report(url, clean(match.get("home_team_source")), clean(match.get("away_team_source")))
+            # If the public jleague.jp page does not expose a parseable lineup, retry the
+            # corresponding free J.League Data Site match_card_id from provider_event_id.
+            if not players and "jleague.jp/" in url and clean(match.get("provider_event_id")).isdigit():
+                data_site_url = "https://data.j-league.or.jp/SFMS02/?match_card_id=" + clean(match.get("provider_event_id"))
+                try:
+                    alt_players, alt_subs, alt_issues = parse_report(data_site_url, clean(match.get("home_team_source")), clean(match.get("away_team_source")))
+                    if alt_players:
+                        url = data_site_url
+                        players, subs = alt_players, alt_subs
+                        issues = alt_issues
+                except Exception as fallback_error:
+                    issues.append({"type": "data_site_fallback_error", "detail": str(fallback_error)[:300]})
+            result["source_url"] = url
             for p in players:
                 player_rows.append({"internal_match_id": result["internal_match_id"],
                     "provider_event_id": result["provider_event_id"], "match_date": result["match_date"],
