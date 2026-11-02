@@ -223,6 +223,7 @@ def main():
         time.sleep(0.25)
     # Preserve previously sourced official substitution events if this parser run fails to
     # re-extract them. Merge by match + outgoing player + incoming player; prefer nonblank fields.
+    # Keep this merge in place so a parser refresh cannot silently drop valid older events.
     def substitution_key(row):
         return tuple(clean(row.get(k, "")).casefold() for k in ("internal_match_id", "player_out_name", "player_in_name"))
     merged_subs = {}
