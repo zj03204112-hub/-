@@ -106,7 +106,7 @@ jobs:
             if [ -n "$conflicts" ]; then
               while IFS= read -r conflict_file; do
                 case "$conflict_file" in
-                  data/season_match_detail/j1_2026_free_official_audit.json|data/season_match_detail/j1_2026_players_free_official.csv|data/season_match_detail/j1_2026_substitutions_free_official.csv|data/season_match_detail/j1_2026_match_xg_free.csv|data/season_match_detail/j1_2026_match_xg_free_audit.json|data/season_match_detail/j1_2026_team_season_xg_free.csv|data/season_match_detail/j1_2026_team_season_xg_free_audit.json|data/season_match_detail/j1_2026_team_xg_from_covered_matches.csv|data/season_match_detail/j1_2026_team_xg_from_covered_matches_audit.json)
+                  data/season_match_detail/j1_2026_free_official_audit.json|data/season_match_detail/j1_2026_players_free_official.csv|data/season_match_detail/j1_2026_substitutions_free_official.csv|data/season_match_detail/j1_2026_match_xg_free.csv|data/season_match_detail/j1_2026_match_xg_free_audit.json|data/season_match_detail/j1_2026_match_xg_legacy_unverified.csv|data/season_match_detail/j1_2026_team_season_xg_free.csv|data/season_match_detail/j1_2026_team_season_xg_free_audit.json|data/season_match_detail/j1_2026_team_xg_from_covered_matches.csv|data/season_match_detail/j1_2026_team_xg_from_covered_matches_audit.json)
                     # These are generated collector outputs; prefer this run's regenerated data.
                     git checkout --theirs -- "$conflict_file"
                     git add "$conflict_file"
