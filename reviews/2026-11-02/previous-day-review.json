@@ -1,0 +1,922 @@
+{
+  "report_version": "daily-football-review-2026-11-02-v1",
+  "generated_at_beijing": "2026-11-02T09:56:44+08:00",
+  "review_date_beijing": "2026-11-01",
+  "date_boundary_rule": "Use kickoff instant converted to Asia/Shanghai; do not bucket by competition-local calendar date alone.",
+  "verified_finished_matches": 28,
+  "core_league_matches": 24,
+  "other_tracked_domestic_league_matches": 4,
+  "core_league_breakdown": {
+    "Premier League": 2,
+    "La Liga": 5,
+    "Bundesliga": 2,
+    "Serie A": 5,
+    "Ligue 1": 2,
+    "J1 League": 4,
+    "K League 1": 4
+  },
+  "other_league_breakdown": {
+    "Primeira Liga": 2,
+    "Brazil Série A": 1,
+    "Eliteserien": 1
+  },
+  "prediction_audit": {
+    "immutable_snapshot_search_scope": {
+      "branch": "automation/daily-football-2026-11-01",
+      "reviewed_paths": [
+        "predictions/",
+        "reviews/2026-11-01/match-registry.json"
+      ],
+      "matches_checked": 28
+    },
+    "matching_immutable_pre_match_snapshots_found": 0,
+    "matches_without_matching_snapshot": 28,
+    "official_sporttery_handicap_verified_for_matches": 0,
+    "metrics": {
+      "ninety_minute_hda_accuracy": null,
+      "first_score_exact_hit_rate": null,
+      "second_score_exact_hit_rate": null,
+      "sporttery_handicap_hda_accuracy": null,
+      "half_full_time_accuracy": null,
+      "risk_warning_hit_rate": null
+    },
+    "note": "No formal hit rates computed because matching immutable pre-match prediction snapshots and verified official JC handicap snapshots were not found. Missing is not scored as a miss. Do not infer a prediction from chat history."
+  },
+  "result_rules": {
+    "regular_time_scores_used": true,
+    "penalty_or_extra_time_not_relevant_to_these_league_results": true,
+    "handicap_mapping_not_performed_without_verified_official_jc_handicap": true,
+    "second_score_never_used_for_handicap_mapping": true
+  },
+  "source_limitations": [
+    "Some match pages show scores but do not expose an exact upstream data timestamp.",
+    "Raw HTML/API payloads and SHA-256 hashes were not archived in this run.",
+    "Stable provider event IDs are unresolved for most matches."
+  ],
+  "database": {
+    "connected": false,
+    "note": "No SQLite/remote database connection was opened in this run; files are archived in the GitHub work branch only."
+  },
+  "matches": [
+    {
+      "compId": "premier-league",
+      "competition": "Premier League",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Tottenham Hotspur",
+      "homeSlug": "tottenham-hotspur",
+      "away": "Crystal Palace",
+      "awaySlug": "crystal-palace",
+      "score": "2-0",
+      "localDate": "2026-10-31",
+      "utc": "2026-10-31T17:30:00Z",
+      "sources": [
+        "https://www.theguardian.com/football/live/2026/oct/31/tottenham-v-crystal-palace-premier-league-live",
+        "https://fulltimenote.com/en/matches/2026-11-01-tottenham-vs-crystal-palace"
+      ],
+      "match_id": "match:premier-league:2026-10-31:tottenham-hotspur:crystal-palace",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "2-0",
+      "final_score": "2-0",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.theguardian.com/football/live/2026/oct/31/tottenham-v-crystal-palace-premier-league-live",
+        "https://fulltimenote.com/en/matches/2026-11-01-tottenham-vs-crystal-palace"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "premier-league",
+      "competition": "Premier League",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Aston Villa",
+      "homeSlug": "aston-villa",
+      "away": "Fulham",
+      "awaySlug": "fulham",
+      "score": "1-1",
+      "localDate": "2026-10-31",
+      "utc": "2026-10-31T20:00:00Z",
+      "sources": [
+        "https://www.avfc.co.uk/news/2026/october/31/report-aston-villa-1-1-fulham/",
+        "https://www.skysports.com/football/aston-villa-vs-fulham/report/559524"
+      ],
+      "match_id": "match:premier-league:2026-10-31:aston-villa:fulham",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "1-1",
+      "final_score": "1-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.avfc.co.uk/news/2026/october/31/report-aston-villa-1-1-fulham/",
+        "https://www.skysports.com/football/aston-villa-vs-fulham/report/559524"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "la-liga",
+      "competition": "La Liga",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Rayo Vallecano",
+      "homeSlug": "rayo-vallecano",
+      "away": "Celta Vigo",
+      "awaySlug": "celta-vigo",
+      "score": "3-0",
+      "localDate": "2026-10-31",
+      "utc": "2026-10-31T16:15:00Z",
+      "sources": [
+        "https://www.rayovallecano.es/noticias/rayo-vallecano-3-rc-celta-0",
+        "https://www.golmates.com/es/uefa/espana/laliga/2026-2027/resultados/rayo-vallecano-vs-celta-vigo-2026-10-31"
+      ],
+      "match_id": "match:la-liga:2026-10-31:rayo-vallecano:celta-vigo",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "3-0",
+      "final_score": "3-0",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.rayovallecano.es/noticias/rayo-vallecano-3-rc-celta-0",
+        "https://www.golmates.com/es/uefa/espana/laliga/2026-2027/resultados/rayo-vallecano-vs-celta-vigo-2026-10-31"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "la-liga",
+      "competition": "La Liga",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Real Betis",
+      "homeSlug": "real-betis",
+      "away": "Málaga",
+      "awaySlug": "malaga",
+      "score": "2-1",
+      "localDate": "2026-10-31",
+      "utc": "2026-10-31T18:30:00Z",
+      "sources": [
+        "https://www.reuters.com/sports/soccer/barcelona-bounce-back-with-big-win-over-alaves-2026-10-31/"
+      ],
+      "match_id": "match:la-liga:2026-10-31:real-betis:malaga",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "2-1",
+      "final_score": "2-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.reuters.com/sports/soccer/barcelona-bounce-back-with-big-win-over-alaves-2026-10-31/"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "la-liga",
+      "competition": "La Liga",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Barcelona",
+      "homeSlug": "barcelona",
+      "away": "Alavés",
+      "awaySlug": "alaves",
+      "score": "6-1",
+      "localDate": "2026-10-31",
+      "utc": "2026-10-31T21:00:00Z",
+      "sources": [
+        "https://www.laliga.com/en-EG/match/temporada-2026-2027-laliga-easports-fc-barcelona-deportivo-alaves-11",
+        "https://www.reuters.com/sports/soccer/barcelona-bounce-back-with-big-win-over-alaves-2026-10-31/"
+      ],
+      "match_id": "match:la-liga:2026-10-31:barcelona:alaves",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "6-1",
+      "final_score": "6-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.laliga.com/en-EG/match/temporada-2026-2027-laliga-easports-fc-barcelona-deportivo-alaves-11",
+        "https://www.reuters.com/sports/soccer/barcelona-bounce-back-with-big-win-over-alaves-2026-10-31/"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "la-liga",
+      "competition": "La Liga",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Getafe",
+      "homeSlug": "getafe",
+      "away": "Sevilla",
+      "awaySlug": "sevilla",
+      "score": "3-1",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T13:00:00Z",
+      "sources": [
+        "https://www.reuters.com/sports/soccer/real-madrid-extend-winning-run-with-3-0-victory-at-racing-santander-2026-11-01/",
+        "https://nxt-football.com/en/match/getafe-vs-sevilla-fc-2026-11-01-15825"
+      ],
+      "match_id": "match:la-liga:2026-11-01:getafe:sevilla",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "3-1",
+      "final_score": "3-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.reuters.com/sports/soccer/real-madrid-extend-winning-run-with-3-0-victory-at-racing-santander-2026-11-01/",
+        "https://nxt-football.com/en/match/getafe-vs-sevilla-fc-2026-11-01-15825"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "la-liga",
+      "competition": "La Liga",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Racing Santander",
+      "homeSlug": "racing-santander",
+      "away": "Real Madrid",
+      "awaySlug": "real-madrid",
+      "score": "0-3",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T15:15:00Z",
+      "sources": [
+        "https://www.reuters.com/sports/soccer/real-madrid-extend-winning-run-with-3-0-victory-at-racing-santander-2026-11-01/",
+        "https://www.oddalerts.com/livescores/racing-santander-vs-real-madrid/10505-10988"
+      ],
+      "match_id": "match:la-liga:2026-11-01:racing-santander:real-madrid",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "0-3",
+      "final_score": "0-3",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.reuters.com/sports/soccer/real-madrid-extend-winning-run-with-3-0-victory-at-racing-santander-2026-11-01/",
+        "https://www.oddalerts.com/livescores/racing-santander-vs-real-madrid/10505-10988"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "bundesliga",
+      "competition": "Bundesliga",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Bayern München",
+      "homeSlug": "bayern-munich",
+      "away": "Borussia Dortmund",
+      "awaySlug": "borussia-dortmund",
+      "score": "2-2",
+      "localDate": "2026-10-31",
+      "utc": "2026-10-31T17:30:00Z",
+      "sources": [
+        "https://www.xg-edge.com/bundesliga/fc-bayern-munchen-vs-borussia-dortmund-2026-10-31",
+        "https://tactix.football/bundesliga/bayern-munchen-vs-borussia-dortmund-2026-10-31"
+      ],
+      "match_id": "match:bundesliga:2026-10-31:bayern-munich:borussia-dortmund",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "2-2",
+      "final_score": "2-2",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.xg-edge.com/bundesliga/fc-bayern-munchen-vs-borussia-dortmund-2026-10-31",
+        "https://tactix.football/bundesliga/bayern-munchen-vs-borussia-dortmund-2026-10-31"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "bundesliga",
+      "competition": "Bundesliga",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Union Berlin",
+      "homeSlug": "union-berlin",
+      "away": "Köln",
+      "awaySlug": "cologne",
+      "score": "1-1",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T14:30:00Z",
+      "sources": [
+        "https://www.sofascore.com/football/match/1-fc-koln-1-fc-union-berlin/Xabswdb"
+      ],
+      "match_id": "match:bundesliga:2026-11-01:union-berlin:cologne",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "1-1",
+      "final_score": "1-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.sofascore.com/football/match/1-fc-koln-1-fc-union-berlin/Xabswdb"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "serie-a",
+      "competition": "Serie A",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Udinese",
+      "homeSlug": "udinese",
+      "away": "Roma",
+      "awaySlug": "roma",
+      "score": "2-5",
+      "localDate": "2026-10-31",
+      "utc": "2026-10-31T17:00:00Z",
+      "sources": [
+        "https://english.ahram.org.eg/NewsContent/6/55/581199/Sports/World/Italy-Serie-A-results-amp%3B-fixtures-Matchday-.aspx",
+        "https://www.udinese.it/news/squadra/udinese-roma-2-5"
+      ],
+      "match_id": "match:serie-a:2026-10-31:udinese:roma",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "2-5",
+      "final_score": "2-5",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://english.ahram.org.eg/NewsContent/6/55/581199/Sports/World/Italy-Serie-A-results-amp%3B-fixtures-Matchday-.aspx",
+        "https://www.udinese.it/news/squadra/udinese-roma-2-5"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "serie-a",
+      "competition": "Serie A",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "AC Milan",
+      "homeSlug": "ac-milan",
+      "away": "Inter",
+      "awaySlug": "inter",
+      "score": "3-1",
+      "localDate": "2026-10-31",
+      "utc": "2026-10-31T19:45:00Z",
+      "sources": [
+        "https://www.acmilan.com/en/news/articles/serie-a/2026-10-31/ac-milan-wins-the-derby",
+        "https://www.reuters.com/sports/soccer/lazio-move-three-points-clear-with-cagliari-win-juventus-beat-napoli-2026-11-01/"
+      ],
+      "match_id": "match:serie-a:2026-10-31:ac-milan:inter",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "3-1",
+      "final_score": "3-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.acmilan.com/en/news/articles/serie-a/2026-10-31/ac-milan-wins-the-derby",
+        "https://www.reuters.com/sports/soccer/lazio-move-three-points-clear-with-cagliari-win-juventus-beat-napoli-2026-11-01/"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "serie-a",
+      "competition": "Serie A",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Como",
+      "homeSlug": "como",
+      "away": "Venezia",
+      "awaySlug": "venezia",
+      "score": "1-0",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T11:30:00Z",
+      "sources": [
+        "https://english.ahram.org.eg/NewsContent/6/55/581199/Sports/World/Italy-Serie-A-results-amp%3B-fixtures-Matchday-.aspx"
+      ],
+      "match_id": "match:serie-a:2026-11-01:como:venezia",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "1-0",
+      "final_score": "1-0",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://english.ahram.org.eg/NewsContent/6/55/581199/Sports/World/Italy-Serie-A-results-amp%3B-fixtures-Matchday-.aspx"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "serie-a",
+      "competition": "Serie A",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Frosinone",
+      "homeSlug": "frosinone",
+      "away": "Torino",
+      "awaySlug": "torino",
+      "score": "2-0",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T14:00:00Z",
+      "sources": [
+        "https://english.ahram.org.eg/NewsContent/6/55/581199/Sports/World/Italy-Serie-A-results-amp%3B-fixtures-Matchday-.aspx"
+      ],
+      "match_id": "match:serie-a:2026-11-01:frosinone:torino",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "2-0",
+      "final_score": "2-0",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://english.ahram.org.eg/NewsContent/6/55/581199/Sports/World/Italy-Serie-A-results-amp%3B-fixtures-Matchday-.aspx"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "serie-a",
+      "competition": "Serie A",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Lazio",
+      "homeSlug": "lazio",
+      "away": "Cagliari",
+      "awaySlug": "cagliari",
+      "score": "2-1",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T14:00:00Z",
+      "sources": [
+        "https://www.reuters.com/sports/soccer/lazio-move-three-points-clear-with-cagliari-win-juventus-beat-napoli-2026-11-01/",
+        "https://www.xg-edge.com/serie-a/lazio-vs-cagliari-2026-11-01"
+      ],
+      "match_id": "match:serie-a:2026-11-01:lazio:cagliari",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "2-1",
+      "final_score": "2-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.reuters.com/sports/soccer/lazio-move-three-points-clear-with-cagliari-win-juventus-beat-napoli-2026-11-01/",
+        "https://www.xg-edge.com/serie-a/lazio-vs-cagliari-2026-11-01"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "ligue-1",
+      "competition": "Ligue 1",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Troyes",
+      "homeSlug": "troyes",
+      "away": "Le Mans",
+      "awaySlug": "le-mans",
+      "score": "2-0",
+      "localDate": "2026-10-31",
+      "utc": "2026-10-31T19:45:00Z",
+      "sources": [
+        "https://www.livesporty.co/match/football/ligue-1/troyes-vs-le-mans/2026-10-31",
+        "https://footballboard.co.uk/match/2026-10-31-troyes-vs-le-mans"
+      ],
+      "match_id": "match:ligue-1:2026-10-31:troyes:le-mans",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "2-0",
+      "final_score": "2-0",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.livesporty.co/match/football/ligue-1/troyes-vs-le-mans/2026-10-31",
+        "https://footballboard.co.uk/match/2026-10-31-troyes-vs-le-mans"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "ligue-1",
+      "competition": "Ligue 1",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Strasbourg",
+      "homeSlug": "strasbourg",
+      "away": "Auxerre",
+      "awaySlug": "auxerre",
+      "score": "5-1",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T14:00:00Z",
+      "sources": [
+        "https://www.hyper2play.com/en/football/matches/strasbourg-vs-auxerre-2489538",
+        "https://stadiro.com/matches/france/ligue-1/2026-11-01/strasbourg-v-auxerre/"
+      ],
+      "match_id": "match:ligue-1:2026-11-01:strasbourg:auxerre",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "5-1",
+      "final_score": "5-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.hyper2play.com/en/football/matches/strasbourg-vs-auxerre-2489538",
+        "https://stadiro.com/matches/france/ligue-1/2026-11-01/strasbourg-v-auxerre/"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "j1-league",
+      "competition": "J1 League",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Yokohama F. Marinos",
+      "homeSlug": "yokohama-f-marinos",
+      "away": "Kawasaki Frontale",
+      "awaySlug": "kawasaki-frontale",
+      "score": "4-2",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T04:04:00Z",
+      "sources": [
+        "https://www.jleague.jp/en/match/j1/2026/110101/",
+        "https://www.oddalerts.com/livescores/kawasaki-frontale-vs-yokohama-f-marinos/5293-5296"
+      ],
+      "match_id": "match:j1-league:2026-11-01:yokohama-f-marinos:kawasaki-frontale",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "4-2",
+      "final_score": "4-2",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.jleague.jp/en/match/j1/2026/110101/",
+        "https://www.oddalerts.com/livescores/kawasaki-frontale-vs-yokohama-f-marinos/5293-5296"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "j1-league",
+      "competition": "J1 League",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "JEF United Chiba",
+      "homeSlug": "jef-united-chiba",
+      "away": "Avispa Fukuoka",
+      "awaySlug": "avispa-fukuoka",
+      "score": "3-0",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T05:00:00Z",
+      "sources": [
+        "https://www.jleague.jp/en/match/",
+        "https://www.livesporty.co/match/football/j1-league/jef-united-chiba-vs-avispa-fukuoka/2026-11-01"
+      ],
+      "match_id": "match:j1-league:2026-11-01:jef-united-chiba:avispa-fukuoka",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "3-0",
+      "final_score": "3-0",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.jleague.jp/en/match/",
+        "https://www.livesporty.co/match/football/j1-league/jef-united-chiba-vs-avispa-fukuoka/2026-11-01"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "j1-league",
+      "competition": "J1 League",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "V-Varen Nagasaki",
+      "homeSlug": "v-varen-nagasaki",
+      "away": "Tokyo Verdy",
+      "awaySlug": "tokyo-verdy",
+      "score": "1-2",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T05:00:00Z",
+      "sources": [
+        "https://www.oddalerts.com/livescores/tokyo-verdy-vs-v-varen-nagasaki/6093-6174",
+        "https://football2day.net/match/v-varen-nagasaki-vs-tokyo-verdy-2026-11-01"
+      ],
+      "match_id": "match:j1-league:2026-11-01:v-varen-nagasaki:tokyo-verdy",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "1-2",
+      "final_score": "1-2",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.oddalerts.com/livescores/tokyo-verdy-vs-v-varen-nagasaki/6093-6174",
+        "https://football2day.net/match/v-varen-nagasaki-vs-tokyo-verdy-2026-11-01"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "j1-league",
+      "competition": "J1 League",
+      "season": "2026-27",
+      "category": "domestic-league",
+      "home": "Machida Zelvia",
+      "homeSlug": "machida-zelvia",
+      "away": "Gamba Osaka",
+      "awaySlug": "gamba-osaka",
+      "score": "0-0",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T07:00:00Z",
+      "sources": [
+        "https://www.jleague.jp/en/match/",
+        "https://www.sofascore.com/football/match/machida-zelvia-gamba-osaka/NmbsjNr"
+      ],
+      "match_id": "match:j1-league:2026-11-01:machida-zelvia:gamba-osaka",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "0-0",
+      "final_score": "0-0",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.jleague.jp/en/match/",
+        "https://www.sofascore.com/football/match/machida-zelvia-gamba-osaka/NmbsjNr"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "k-league-1",
+      "competition": "K League 1",
+      "season": "2026",
+      "category": "domestic-league",
+      "home": "Ulsan HD",
+      "homeSlug": "ulsan-hd",
+      "away": "Gangwon FC",
+      "awaySlug": "gangwon-fc",
+      "score": "2-1",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T05:00:00Z",
+      "sources": [
+        "https://www.fotmob.com/en-GB/matches/ulsan-hd-fc-vs-gangwon-fc/khfvv0z",
+        "https://www.kovascore.com/football/match/k-league-1/ulsan-hd-gangwon-fc-4885479"
+      ],
+      "match_id": "match:k-league-1:2026-11-01:ulsan-hd:gangwon-fc",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "2-1",
+      "final_score": "2-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.fotmob.com/en-GB/matches/ulsan-hd-fc-vs-gangwon-fc/khfvv0z",
+        "https://www.kovascore.com/football/match/k-league-1/ulsan-hd-gangwon-fc-4885479"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "k-league-1",
+      "competition": "K League 1",
+      "season": "2026",
+      "category": "domestic-league",
+      "home": "Pohang Steelers",
+      "homeSlug": "pohang-steelers",
+      "away": "Jeju SK",
+      "awaySlug": "jeju-sk",
+      "score": "1-1",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T05:00:00Z",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2026_K_League_1",
+        "https://www.kleague.com/"
+      ],
+      "match_id": "match:k-league-1:2026-11-01:pohang-steelers:jeju-sk",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "1-1",
+      "final_score": "1-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/2026_K_League_1",
+        "https://www.kleague.com/"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "k-league-1",
+      "competition": "K League 1",
+      "season": "2026",
+      "category": "domestic-league",
+      "home": "FC Anyang",
+      "homeSlug": "fc-anyang",
+      "away": "Bucheon FC 1995",
+      "awaySlug": "bucheon-fc-1995",
+      "score": "2-1",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T07:30:00Z",
+      "sources": [
+        "https://matchcalendar.football/competition/k-league-1/match/anyang-vs-bucheon-1995-2026-11-01/",
+        "https://www.kleague.com/"
+      ],
+      "match_id": "match:k-league-1:2026-11-01:fc-anyang:bucheon-fc-1995",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "2-1",
+      "final_score": "2-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://matchcalendar.football/competition/k-league-1/match/anyang-vs-bucheon-1995-2026-11-01/",
+        "https://www.kleague.com/"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "k-league-1",
+      "competition": "K League 1",
+      "season": "2026",
+      "category": "domestic-league",
+      "home": "FC Seoul",
+      "homeSlug": "fc-seoul",
+      "away": "Incheon United",
+      "awaySlug": "incheon-united",
+      "score": "0-1",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T07:30:00Z",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2026_K_League_1",
+        "https://www.kleague.com/"
+      ],
+      "match_id": "match:k-league-1:2026-11-01:fc-seoul:incheon-united",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "0-1",
+      "final_score": "0-1",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/2026_K_League_1",
+        "https://www.kleague.com/"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "primeira-liga",
+      "competition": "Primeira Liga",
+      "season": "2026-27",
+      "category": "other-domestic-league",
+      "home": "FC Porto",
+      "homeSlug": "fc-porto",
+      "away": "Estoril",
+      "awaySlug": "estoril",
+      "score": "4-0",
+      "localDate": "2026-10-31",
+      "utc": "2026-10-31T20:30:00Z",
+      "sources": [
+        "https://cornerflick.com/football/primeira-liga/matches/fc-porto-vs-estoril-primeira-liga-2026-10-31",
+        "https://stadiro.com/matches/portugal/liga-portugal/2026-10-31/fc-porto-v-estoril/"
+      ],
+      "match_id": "match:primeira-liga:2026-10-31:fc-porto:estoril",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "4-0",
+      "final_score": "4-0",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://cornerflick.com/football/primeira-liga/matches/fc-porto-vs-estoril-primeira-liga-2026-10-31",
+        "https://stadiro.com/matches/portugal/liga-portugal/2026-10-31/fc-porto-v-estoril/"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "primeira-liga",
+      "competition": "Primeira Liga",
+      "season": "2026-27",
+      "category": "other-domestic-league",
+      "home": "Arouca",
+      "homeSlug": "arouca",
+      "away": "Nacional",
+      "awaySlug": "nacional",
+      "score": "1-0",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T15:30:00Z",
+      "sources": [
+        "https://matchcalendar.football/pt/competition/primeira-liga/match/arouca-vs-nacional/",
+        "https://www.cdnacional.pt/eventos/fc-arouca-x-cd-nacional/"
+      ],
+      "match_id": "match:primeira-liga:2026-11-01:arouca:nacional",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "1-0",
+      "final_score": "1-0",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://matchcalendar.football/pt/competition/primeira-liga/match/arouca-vs-nacional/",
+        "https://www.cdnacional.pt/eventos/fc-arouca-x-cd-nacional/"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "brazil-serie-a",
+      "competition": "Brazil Série A",
+      "season": "2026",
+      "category": "other-domestic-league",
+      "home": "Coritiba",
+      "homeSlug": "coritiba",
+      "away": "Vitória",
+      "awaySlug": "vitoria",
+      "score": "2-0",
+      "localDate": "2026-10-31",
+      "utc": "2026-10-31T19:00:00Z",
+      "sources": [
+        "https://xg.football/matches/coritiba-vitoria-2026-10-28",
+        "https://www.flashscore.com/football/brazil/serie-a/results/"
+      ],
+      "match_id": "match:brazil-serie-a:2026-10-31:coritiba:vitoria",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "2-0",
+      "final_score": "2-0",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://xg.football/matches/coritiba-vitoria-2026-10-28",
+        "https://www.flashscore.com/football/brazil/serie-a/results/"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    },
+    {
+      "compId": "eliteserien",
+      "competition": "Eliteserien",
+      "season": "2026",
+      "category": "other-domestic-league",
+      "home": "Brann",
+      "homeSlug": "brann",
+      "away": "Molde",
+      "awaySlug": "molde",
+      "score": "3-2",
+      "localDate": "2026-11-01",
+      "utc": "2026-11-01T12:30:00Z",
+      "sources": [
+        "https://www.brann.no/nyheter/tv-se-scoringene-som-senket-molde-pa-stadion",
+        "https://www.moldefk.no/resultater"
+      ],
+      "match_id": "match:eliteserien:2026-11-01:brann:molde",
+      "beijing_match_date": "2026-11-01",
+      "score_90min": "3-2",
+      "final_score": "3-2",
+      "score_status": "FT_CONFIRMED",
+      "result_verified": true,
+      "result_verification_status": "confirmed_final_score_from_reliable_source",
+      "prediction_snapshot_status": "not_found_in_reviewed_branch",
+      "source_urls": [
+        "https://www.brann.no/nyheter/tv-se-scoringene-som-senket-molde-pa-stadion",
+        "https://www.moldefk.no/resultater"
+      ],
+      "provider_event_id": null,
+      "provider_event_id_status": "MISSING_NOT_RESOLVED"
+    }
+  ]
+}
