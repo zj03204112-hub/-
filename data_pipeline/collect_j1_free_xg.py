@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 ROOT = Path("data/season_match_detail")
 MAPPING = ROOT / "j1_2026_match_id_mapping.csv"
 OUT = ROOT / "j1_2026_match_xg_free.csv"
+LEGACY_OUT = ROOT / "j1_2026_match_xg_legacy_unverified.csv"
 AUDIT = ROOT / "j1_2026_match_xg_free_audit.json"
 TEAM_OUT = ROOT / "j1_2026_team_season_xg_free.csv"
 SOURCE_URL = "https://www.oddalerts.com/xg/j-league"
@@ -141,6 +142,11 @@ def main():
     if OUT.exists():
         with OUT.open(encoding="utf-8-sig", newline="") as f:
             prior = {r.get("internal_match_id", ""): r for r in csv.DictReader(f)}
+    prior_legacy = {}
+    if LEGACY_OUT.exists():
+        with LEGACY_OUT.open(encoding="utf-8-sig", newline="") as f:
+            prior_legacy = {r.get("internal_match_id", ""): r for r in csv.DictReader(f)}
+    legacy_output = dict(prior_legacy)
     source_rows = []
     source_access_status = "skipped_existing_complete_data"
     source_access_detail = ""
@@ -184,20 +190,31 @@ def main():
                 "source_reverification_note": "Matched from the current successful free public page fetch.",
                 "source_raw_row": found["raw_text"], "retrieved_at_utc": now,
             }
-        elif old.get("home_xg") and old.get("away_xg"):
-            # Preserve previously sourced and audited values if the public page blocks automation.
+        elif old.get("home_xg") and old.get("away_xg") and old.get("source_validation_status") == "verified_from_current_fetch" and old.get("source_name") == "OddAlerts":
+            # Preserve previously verified provider rows when the short recent-results panel no longer shows them.
             row = dict(old)
             row.update({"internal_match_id": mid, "provider_event_id": m.get("provider_event_id",""),
                 "match_date": m.get("match_date",""), "home_team": m.get("home_team_source",""),
                 "away_team": m.get("away_team_source",""), "home_goals": m.get("home_goals",""),
                 "away_goals": m.get("away_goals","")})
-            if source_access_status != "fetched" or old.get("source_name") != "OddAlerts":
-                row["xg_status"] = "unverified_legacy_value"
-                row["source_validation_status"] = "unverified_legacy_value"
-                row["source_reverification_note"] = "Value retained for audit only; current source fetch did not re-verify this row. Exclude from model calibration until reverified."
-            else:
-                row["source_validation_status"] = old.get("source_validation_status", "pending_source_reverification")
-                row["source_reverification_note"] = old.get("source_reverification_note", "No row-level refresh was available in this run.")
+            row["source_validation_status"] = "verified_from_archived_source_snapshot"
+            row["source_reverification_note"] = "Previously verified from the public provider row; not visible in the current recent-results window. Original raw row and retrieval timestamp retained."
+        elif old.get("home_xg") and old.get("away_xg"):
+            # Unverified values from alternate/legacy sources are archived separately and blanked from the canonical training table.
+            legacy = dict(prior_legacy.get(mid, old))
+            legacy["legacy_archive_reason"] = "Unverified legacy value; current public-source row not verified. Exclude from model calibration."
+            legacy_output[mid] = legacy
+            row = {
+                "internal_match_id": mid, "provider_event_id": m.get("provider_event_id",""),
+                "match_date": m.get("match_date",""), "home_team": m.get("home_team_source",""),
+                "away_team": m.get("away_team_source",""), "home_goals": m.get("home_goals",""),
+                "away_goals": m.get("away_goals",""), "home_xg": "", "away_xg": "",
+                "home_xga": "", "away_xga": "", "xg_status": "missing_unverified_legacy_archived",
+                "source_name": "", "source_url": "", "source_model_note": "Unverified legacy values moved to j1_2026_match_xg_legacy_unverified.csv",
+                "source_validation_status": "not_available_in_current_free_source",
+                "source_reverification_note": "No verified current-source row; see separate legacy audit file.",
+                "source_raw_row": "", "retrieved_at_utc": "",
+            }
         else:
             row = {
                 "internal_match_id": mid, "provider_event_id": m.get("provider_event_id",""),
@@ -217,15 +234,25 @@ def main():
               "source_model_note","source_validation_status","source_reverification_note","source_raw_row","retrieved_at_utc"]
     with OUT.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(output)
+    legacy_fields = list(fields) + ["legacy_archive_reason"]
+    with LEGACY_OUT.open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=legacy_fields, extrasaction="ignore"); w.writeheader()
+        w.writerows(legacy_output[mid] for mid in sorted(legacy_output))
     audit = {
         "generated_at_utc": now, "matches_in_mapping": len(matches),
         "source_url": SOURCE_URL, "source_policy": "free public page only; no paid API",
-        "source_counts_in_output": {name: sum(1 for r in output if r.get("source_name") == name) for name in sorted(set(r.get("source_name", "") for r in output))},
+        "verified_source_counts_in_output": {name: sum(1 for r in output if r.get("source_validation_status") in ("verified_from_current_fetch", "verified_from_archived_source_snapshot") and r.get("source_name") == name) for name in sorted(set(r.get("source_name", "") for r in output if r.get("source_validation_status") in ("verified_from_current_fetch", "verified_from_archived_source_snapshot")))},
+        "legacy_archive_rows": len(legacy_output),
+        "unverified_values_archived_not_in_canonical_table": sum(1 for r in output if r.get("xg_status") == "missing_unverified_legacy_archived"),
         "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
         "sources_in_output": sorted(set(r.get("source_name", "") for r in output if r.get("source_name"))),
         "source_urls_in_output": sorted(set(r.get("source_url", "") for r in output if r.get("source_url"))),
         "matches_with_xg": sum(bool(r["home_xg"]) for r in output),
-        "matches_with_verified_xg": sum(r.get("source_validation_status") == "verified_from_current_fetch" for r in output),
+        "matches_with_verified_xg": sum(r.get("source_validation_status") in ("verified_from_current_fetch", "verified_from_archived_source_snapshot") for r in output),
+        "matches_verified_in_current_fetch": sum(r.get("source_validation_status") == "verified_from_current_fetch" for r in output),
+        "matches_verified_from_archived_source_snapshot": sum(r.get("source_validation_status") == "verified_from_archived_source_snapshot" for r in output),
+        "matches_with_unverified_legacy_xg": len(legacy_output),
+        "matches_missing_or_unverified_xg_in_canonical_table": sum(not r.get("home_xg") or r.get("source_validation_status") not in ("verified_from_current_fetch", "verified_from_archived_source_snapshot") for r in output),
         "matches_with_unverified_legacy_xg": sum(r.get("source_validation_status") == "unverified_legacy_value" for r in output),
         "matches_missing_xg": sum(not bool(r["home_xg"]) for r in output),
         "source_rows_matched": len(source_rows),
