@@ -137,7 +137,7 @@ def main():
         mid = m["internal_match_id"]
         found = by_id.get(mid)
         old = prior.get(mid, {})
-        if found:
+        if found and not (old.get("home_xg") and old.get("away_xg")):
             hxg, axg = found["home_xg"], found["away_xg"]
             row = {
                 "internal_match_id": mid, "provider_event_id": m.get("provider_event_id",""),
@@ -163,7 +163,7 @@ def main():
                 "away_team": m.get("away_team_source",""), "home_goals": m.get("home_goals",""),
                 "away_goals": m.get("away_goals",""), "home_xg": "", "away_xg": "",
                 "home_xga": "", "away_xga": "", "xg_status": "missing_not_exposed_in_free_source",
-                "source_name": "FootyStats", "source_url": SOURCE_URL,
+                "source_name": "", "source_url": SOURCE_URL,
                 "source_model_note": "No verified per-match value available; no imputation",
                 "source_raw_row": "", "retrieved_at_utc": "",
             }
@@ -176,6 +176,7 @@ def main():
     audit = {
         "generated_at_utc": now, "matches_in_mapping": len(matches),
         "source_url": SOURCE_URL, "source_policy": "free public page only; no paid API",
+        "source_counts_in_output": {name: sum(1 for r in output if r.get("source_name") == name) for name in sorted(set(r.get("source_name", "") for r in output))},
         "source_methodology": "FootyStats states its J1 xG formula combines shot accuracy, shot frequency, attack dangerousness, possession and attack pressure; values are provider-specific, not official J.League xG.",
         "matches_with_xg": sum(bool(r["home_xg"]) for r in output),
         "matches_missing_xg": sum(not bool(r["home_xg"]) for r in output),
