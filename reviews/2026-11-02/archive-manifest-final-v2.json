@@ -1,0 +1,103 @@
+{
+  "report_version": "daily-football-archive-manifest-2026-11-02-v2",
+  "generated_at_beijing": "2026-11-02T09:56:44+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-02",
+  "base_branch": "automation/daily-football-2026-11-01",
+  "files": [
+    {
+      "path": "results/domestic-league/2026-11-01/beijing-date-results.json",
+      "commit_sha": "0a11ca98af5a544bad3e9fd749401fb50b234d34"
+    },
+    {
+      "path": "results/other-domestic-leagues/2026-11-01/beijing-date-results.json",
+      "commit_sha": "5d237b8fe667818a0abe5ceb0755f34dccb06f88"
+    },
+    {
+      "path": "reviews/2026-11-02/previous-day-review.json",
+      "commit_sha": "d66bd1fcec643b8cade3a8e05e905c061f51a3d2"
+    },
+    {
+      "path": "reviews/2026-11-02/current-day-completed-results.json",
+      "commit_sha": "2fe66cdcf603627c1140cad20b7b56238a1ad282"
+    },
+    {
+      "path": "reviews/2026-11-02/correction-audit-2026-11-01.json",
+      "commit_sha": "d54349817bdf55f9a1c2365a27131d3479773380"
+    },
+    {
+      "path": "fixtures/2026-11-02/schedule.json",
+      "commit_sha": "ff472b9d5aa9c721426c59612b1c12f89f81d70e"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/match_xg_snapshot-095644.csv",
+      "commit_sha": "56165a30986557a701f2c7ab8ef8fbd57f43bb84"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_xg_snapshot-095644-v2.csv",
+      "commit_sha": "a4e2d2a6839456df8929e11d68a3c77cee7c18ff"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_coverage_snapshot-095644-v2.csv",
+      "commit_sha": "dc463c296614cbddfec9962aa289131dec58f87b"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_coverage_audit-095644.json",
+      "commit_sha": "b632f37b5655f2dbc5b7e41e7670f28854984aa6"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_source_discrepancy_audit-095644.json",
+      "commit_sha": "f2cf51644a97076f836e08b8992f00135b887606"
+    },
+    {
+      "path": "reviews/2026-11-02/github-actions-data-sync-audit.json",
+      "commit_sha": "67bfbfe83c890717f4f025c0a364122e7208e6a5"
+    },
+    {
+      "path": "reviews/2026-11-02/archive-manifest-final.json",
+      "commit_sha": "ac7912e5ecd8f89452e6f3d215224d6ebc1af978"
+    },
+    {
+      "path": "reviews/2026-11-02/archive-readback-verification.json",
+      "commit_sha": "638ebaae833625a8d51578e755fbe07f5724978e"
+    },
+    {
+      "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_coverage_audit-095644-scope-split.json",
+      "commit_sha": "6b17fccddb43ff444bc855a40a9192563a19bb02"
+    },
+    {
+      "path": "reviews/2026-11-02/tracked-competition-scope-audit.json",
+      "commit_sha": "513424f9b65f6b39421c4f79feb62754a85f850c"
+    }
+  ],
+  "counts": {
+    "beijing_2026_11_01_confirmed_results": 28,
+    "core_league_results": 24,
+    "other_tracked_league_results": 4,
+    "beijing_2026_11_02_early_completed_results": 16,
+    "eligible_for_1500_prediction_window": 1,
+    "immutable_prediction_snapshots_found_for_previous_day": 0,
+    "official_sporttery_handicaps_verified_for_previous_day": 0,
+    "iso_week_44_xg_cumulative_unique_matches": 123,
+    "iso_week_44_xg_cumulative_rows": 288,
+    "previous_day_xg_coverage": "9/28 (32.14%)",
+    "current_day_early_results_xg_coverage": "2/16 (12.50%)",
+    "xg_coverage_of_all_44_run_results": "11/44 (25.00%)",
+    "xgd_arithmetic_mismatches": 0,
+    "duplicate_match_team_provider_keys": 0,
+    "full_week_coverage_groups": 0
+  },
+  "critical_corrections": [
+    "Previous report had KFUM Oslo vs HamKam as 1-0; verified score is 2-2 and kickoff converts to Beijing 2026-11-02.",
+    "Previous report had Sarpsborg 08 vs Kristiansund as 1-3; verified score is 2-4 and kickoff converts to Beijing 2026-11-02.",
+    "Start vs Lillestrøm and Vålerenga vs Tromsø were also moved to Beijing 2026-11-02 based on UTC kickoff times."
+  ],
+  "limitations": [
+    "No matching immutable pre-match snapshots for the 28 previous-day matches; prediction accuracy cannot be computed.",
+    "No official JC handicap snapshot was verified for the previous-day matches or the 15:00 candidate.",
+    "Weekly xG full-week coverage is incomplete; full weekly totals and per-90 means are intentionally blank.",
+    "Raw HTML/API responses and SHA-256 hashes are not archived.",
+    "No SQLite or remote database connection was opened.",
+    "GitHub Actions database sync run 41355312274 failed validation on two out-of-scope matches and skipped the generated-data commit."
+  ]
+}
