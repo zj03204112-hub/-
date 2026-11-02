@@ -1,0 +1,28 @@
+{
+  "date_created": "2026-11-02",
+  "baseline_csv": "data/auto_results/J1_League_2026_27.csv",
+  "baseline_blob_sha": "8d99885bf7b0d52c5fcc7c2922dd02d92450a54f",
+  "batch_scope": "J1 League 2026/27, 2026-10-17 through 2026-10-18",
+  "matches": [
+    {"date":"2026-10-17","home":"清水","away":"Ｇ大阪","csv_score":"2-2","official_score":"2-2","match_card_id":34615,"official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34615","score_match":"MATCH"},
+    {"date":"2026-10-17","home":"千葉","away":"横浜FM","csv_score":"0-0","official_score":"0-0","match_card_id":34607,"official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34607","score_match":"MATCH"},
+    {"date":"2026-10-17","home":"広島","away":"京都","csv_score":"3-0","official_score":"3-0","match_card_id":34609,"official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34609","score_match":"MATCH"},
+    {"date":"2026-10-17","home":"東京Ｖ","away":"FC東京","csv_score":"0-4","official_score":"0-4","match_card_id":34608,"official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34608","score_match":"MATCH"},
+    {"date":"2026-10-17","home":"Ｃ大阪","away":"川崎Ｆ","csv_score":"2-4","official_score":"2-4","match_card_id":34610,"official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34610","score_match":"MATCH"},
+    {"date":"2026-10-17","home":"鹿島","away":"長崎","csv_score":"2-0","official_score":"2-0","match_card_id":34613,"official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34613","score_match":"MATCH"},
+    {"date":"2026-10-17","home":"水戸","away":"浦和","csv_score":"0-1","official_score":"0-1","match_card_id":34611,"official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34611","score_match":"MATCH"},
+    {"date":"2026-10-17","home":"柏","away":"名古屋","csv_score":"1-3","official_score":"1-3","match_card_id":34614,"official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34614","score_match":"MATCH"},
+    {"date":"2026-10-18","home":"岡山","away":"神户","csv_score":"0-3","official_score":"0-3","match_card_id":34616,"official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34616","score_match":"MATCH"},
+    {"date":"2026-10-18","home":"町田","away":"福冈","csv_score":"3-0","official_score":"3-0","match_card_id":34612,"official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34612","score_match":"MATCH"}
+  ],
+  "batch_result": {"matches_checked":10,"score_matches":10,"score_mismatches":0},
+  "structured_player_details_added": false,
+  "match_level_xg_added": false,
+  "match_level_xga_added": false,
+  "integrity_notes": [
+    "The official records expose the match date, final score, starting XI, substitutes and substitutions.",
+    "Player details for this batch have not yet been transcribed into structured tables.",
+    "No xG or xGA values are inferred from team averages or scores.",
+    "The source CSV, V5.1 and historical prediction snapshots were not modified."
+  ]
+}
