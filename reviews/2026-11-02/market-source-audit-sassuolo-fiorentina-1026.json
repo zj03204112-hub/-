@@ -1,0 +1,115 @@
+{
+  "report_version": "market-source-audit-sassuolo-fiorentina-2026-11-02-v1",
+  "captured_at_beijing": "2026-11-02T10:26:00+08:00",
+  "match": {
+    "competition": "Serie A",
+    "home": "Sassuolo",
+    "away": "Fiorentina",
+    "kickoff_beijing": "2026-11-03T01:30:00+08:00",
+    "prediction_window_check": "Eligible at 15:00 Beijing; not yet in the window at 10:00."
+  },
+  "sources": [
+    {
+      "source": "Chinese Sports Lottery official page",
+      "url": "https://m.sporttery.cn/mjc/jsq/zqspf/",
+      "type": "official",
+      "status": "FETCH_FAILED",
+      "http_observation": "Web fetch returned unknown status code 567",
+      "captured_at_beijing": "2026-11-02T10:26:00+08:00",
+      "official_handicap_verified": false,
+      "notes": "Could not retrieve a match-specific official Sporttery market snapshot or opening/current history."
+    },
+    {
+      "source": "17500 竞彩点播 user prediction page",
+      "url": "https://jingcai.17500.cn/articles/find/aid/15273504.html",
+      "type": "third_party_user_prediction_page",
+      "page_date": "2026-10-31",
+      "status": "VISIBLE_BUT_NOT_OFFICIAL",
+      "displayed_match": "周一002 萨索洛 vs 佛罗伦萨",
+      "displayed_kickoff": "2026-11-03 01:30",
+      "displayed_handicap": "+1",
+      "displayed_handicap_hda_odds": [
+        1.47,
+        4.1,
+        4.65
+      ],
+      "displayed_1x2_odds": [
+        2.52,
+        3.4,
+        2.23
+      ],
+      "upstream_timestamp": "NOT_EXPOSED",
+      "official_handicap_verified": false,
+      "notes": "Third-party page may be quoting Sporttery but is not the official source; cannot promote its handicap/odds to verified official data."
+    },
+    {
+      "source": "wlrwx football engine page",
+      "url": "https://wlrwx.github.io/football-engine/2026-11-02.html",
+      "type": "third_party_model_page",
+      "status": "VISIBLE_BUT_NOT_OFFICIAL",
+      "displayed_handicap": "+1",
+      "displayed_1x2_odds": [
+        2.52,
+        3.4,
+        2.23
+      ],
+      "upstream_timestamp": "NOT_EXPOSED",
+      "official_handicap_verified": false,
+      "notes": "Model output and odds summary; not a direct official Sporttery feed."
+    },
+    {
+      "source": "SteamWatch / Pinnacle",
+      "url": "https://www.steamwatch.io/match/66608b64d462d1d3deabe573c8456d86",
+      "type": "third_party_market_snapshot",
+      "status": "STALE_REFERENCE",
+      "latest_snapshot_beijing": "2026-11-01T12:02:00+08:00",
+      "age_hours_at_095644": 21.9,
+      "one_x_two_open": {
+        "home": 2.56,
+        "draw": 3.48,
+        "away": 2.62
+      },
+      "one_x_two_latest": {
+        "home": 2.9,
+        "draw": 3.82,
+        "away": 2.36
+      },
+      "total_line_open": 2.75,
+      "total_line_latest": 3,
+      "asian_handicap_open": "Sassuolo 0",
+      "asian_handicap_latest": "Sassuolo +0.25",
+      "official_handicap_verified": false,
+      "notes": "Too old to be used as current market input at the 15:00 prediction run."
+    },
+    {
+      "source": "Penwuyichen match history",
+      "url": "https://www.penwuyichen.com/soccer/match/1328158/history/",
+      "type": "third_party_aggregator",
+      "status": "UNSTAMPED_REFERENCE",
+      "displayed_average_1x2": {
+        "home": 2.79,
+        "draw": 3.61,
+        "away": 2.33
+      },
+      "displayed_asian_line": "Sassuolo receiving level/half-ball",
+      "upstream_timestamp": "NOT_EXPOSED",
+      "official_handicap_verified": false,
+      "notes": "No reliable timestamped opening-to-current movement was exposed."
+    }
+  ],
+  "conclusion": {
+    "official_sporttery_handicap": "NOT_VERIFIED",
+    "opening_to_current_official_movement": "MISSING",
+    "third_party_market_data_may_be_used_only_as_context": true,
+    "handicap_prediction_allowed": false,
+    "second_score_used_for_handicap": false,
+    "next_step": "Re-query the official source at the 15:00 window; if still unavailable, keep Sporttery handicap result as UNVERIFIABLE and do not substitute Asian handicap."
+  },
+  "other_missing_fields": [
+    "Timestamped official starting XI",
+    "official referee assignment",
+    "kickoff-time weather capture",
+    "frozen pre-match xG snapshot",
+    "verified next-opponent importance/schedule motivation"
+  ]
+}
