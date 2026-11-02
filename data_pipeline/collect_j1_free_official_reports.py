@@ -168,6 +168,7 @@ def write_csv(path, rows, fields):
         w.writeheader()
         w.writerows(rows)
 
+# Rebuild the full audit snapshot after verifying all 130 official match IDs and roster rows.
 def main():
     if not MAPPING.exists():
         raise FileNotFoundError(f"Missing mapping file: {MAPPING}")
