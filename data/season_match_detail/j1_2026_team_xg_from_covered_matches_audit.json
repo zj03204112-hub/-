@@ -1,12 +1,96 @@
 {
-  "generated_at_utc": "2026-11-02T09:18:08.548684+00:00",
+  "generated_at_utc": "2026-11-02T09:52:55.290Z",
   "match_rows_read": 130,
   "match_rows_with_both_sides_xg": 130,
+  "match_rows_verified_from_current_fetch": 50,
+  "match_rows_unverified_or_missing": 80,
   "teams_aggregated": 20,
   "total_team_match_observations": 100,
-  "policy": "derived only by summing source xG/xGA values; no imputation",
-  "warning": "These are aggregates over the mapped match sample only, not a complete season. Per-match xGA is the opponent's same-match xG; source model is provider-specific, not official J.League.",
+  "policy": "Only rows with source_validation_status=verified_from_current_fetch and source_name=OddAlerts are aggregated; unverified legacy values are excluded; no imputation.",
+  "warning": "Aggregates are over the currently source-verified match sample only, not a complete season. Per-match xGA is the opponent's same-match xG (equivalent), not an independent provider xGA field. Source model is provider-specific, not official J.League.",
   "source_names": [
     "OddAlerts"
-  ]
+  ],
+  "team_rows": {
+    "横浜FM": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "鹿島": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "Ｇ大阪": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "浦和": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "Ｃ大阪": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "岡山": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "名古屋": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "清水": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "福岡": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "神戸": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "柏": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "水戸": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "FC東京": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "町田": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "広島": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "千葉": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "東京Ｖ": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "川崎Ｆ": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "長崎": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    },
+    "京都": {
+      "verified_matches": 5,
+      "missing_or_unverified_team_match_rows": 8
+    }
+  }
 }
