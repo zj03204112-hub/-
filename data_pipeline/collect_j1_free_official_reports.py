@@ -255,28 +255,63 @@ def main():
     # match's verified starting XI and bench roster, not by trusting a possibly shared table heading.
     def player_name_key(value):
         return re.sub(r"[\s\u3000・･'’.,，．()（）\-‐‑—]+", "", clean(value)).casefold()
-    roster_teams = {}
+    def team_name_key(value):
+        text = clean(value).translate(str.maketrans({"Ｆ":"F", "Ｃ":"C", "Ｇ":"G", "Ｖ":"V"}))
+        return re.sub(r"[\s\u3000・･'’.,，．()（）\-‐‑—]+", "", text).casefold()
+
+    matches_by_id = {m.get("internal_match_id", ""): m for m in matches}
+    roster_sides = {}
+    starters_by_match = {}
     for player in player_rows:
-        player_key = player_name_key(player.get("player_name", ""))
-        team_label = clean(player.get("team_report_label", ""))
-        if player_key and team_label:
-            roster_teams.setdefault((player.get("internal_match_id", ""), player_key), set()).add(team_label)
+        if player.get("section") == "starting":
+            starters_by_match.setdefault(player.get("internal_match_id", ""), []).append(player)
+    # Data Site's official-record tables list the 11 home starters, then 11 away starters.
+    # Use that verified ordering to map full official club names to canonical match sides.
+    for match_id, starters in starters_by_match.items():
+        if len(starters) != 22:
+            continue
+        for index, player in enumerate(starters):
+            side = "home" if index < 11 else "away"
+            key = (match_id, player_name_key(player.get("player_name", "")))
+            if key[1]:
+                roster_sides.setdefault(key, set()).add(side)
+    # Bench tables are explicitly assigned by their home/away table order above; match
+    # those canonical source labels to the mapping record and add the player to that side.
+    for player in player_rows:
+        if player.get("section") != "bench":
+            continue
+        match_id = player.get("internal_match_id", "")
+        match = matches_by_id.get(match_id, {})
+        label = team_name_key(player.get("team_report_label", ""))
+        if label and label == team_name_key(match.get("home_team_source", "")):
+            side = "home"
+        elif label and label == team_name_key(match.get("away_team_source", "")):
+            side = "away"
+        else:
+            continue
+        key = (match_id, player_name_key(player.get("player_name", "")))
+        if key[1]:
+            roster_sides.setdefault(key, set()).add(side)
+
     for row in sub_rows:
         raw_label = row.get("team_report_label_raw") or row.get("team_report_label", "")
         match_id = row.get("internal_match_id", "")
-        out_teams = roster_teams.get((match_id, player_name_key(row.get("player_out_name", ""))), set())
-        in_teams = roster_teams.get((match_id, player_name_key(row.get("player_in_name", ""))), set())
-        resolved = set()
+        out_sides = roster_sides.get((match_id, player_name_key(row.get("player_out_name", ""))), set())
+        in_sides = roster_sides.get((match_id, player_name_key(row.get("player_in_name", ""))), set())
+        resolved_side = ""
         status = "unresolved_roster_name_match"
-        if len(out_teams) == 1 and len(in_teams) == 1 and out_teams == in_teams:
-            resolved, status = out_teams, "matched_out_and_in_to_official_roster"
-        elif len(out_teams) == 1 and not in_teams:
-            resolved, status = out_teams, "matched_outgoing_player_to_official_roster"
-        elif len(in_teams) == 1 and not out_teams:
-            resolved, status = in_teams, "matched_incoming_player_to_official_roster"
+        if len(out_sides) == 1 and len(in_sides) == 1 and out_sides != in_sides:
+            status = "unresolved_out_in_team_conflict"
+        elif len(out_sides) == 1:
+            resolved_side = next(iter(out_sides))
+            status = "matched_outgoing_player_to_official_roster"
+        elif len(in_sides) == 1:
+            resolved_side = next(iter(in_sides))
+            status = "matched_incoming_player_to_official_roster"
+        match = matches_by_id.get(match_id, {})
         row["team_report_label_raw"] = raw_label
-        row["team_report_label"] = next(iter(resolved)) if len(resolved) == 1 else ""
-        row["team_assignment_status"] = status if len(resolved) == 1 else "unresolved_roster_name_match"
+        row["team_report_label"] = match.get(f"{resolved_side}_team_source", "") if resolved_side else ""
+        row["team_assignment_status"] = status if resolved_side else "unresolved_roster_name_match"
     write_csv(PLAYERS_OUT, player_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","team_report_label_raw","team_assignment_status","section","position","shirt_number","player_name","player_id","player_id_status","actual_minutes","actual_minutes_status","source_time_cell","source_url"])
     write_csv(SUBS_OUT, sub_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","team_report_label_raw","team_assignment_status","player_out_name","player_in_name","minute","player_out_id","player_in_id","source_url","source_type"])
     audit = {
