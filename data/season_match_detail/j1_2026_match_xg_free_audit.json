@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-11-02T08:23:25Z",
+  "generated_at_utc": "2026-11-02T08:24:03Z",
   "matches_in_mapping": 130,
   "source_url": "https://www.oddalerts.com/xg/j-league",
   "source_policy": "free public page only; no paid API",
   "source_counts_in_output": {
     "OddAlerts": 50,
-    "Tifolab": 52,
+    "Tifolab": 55,
     "ScoutingStats": 6,
     "VJStats": 3,
     "FotMob": 1,
-    "": 18
+    "": 15
   },
   "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
   "sources_in_output": [
@@ -63,15 +63,18 @@
     "https://scoutingstats.ai/j1-league/kawasaki-frontale-v-jef-united/19719047?from=club-hub",
     "https://www.tifolab.com/matches/1556048",
     "https://www.tifolab.com/matches/1556051",
-    "https://scoutingstats.ai/j1-league/kashima-antlers-v-urawa-reds/19719069?from=club-hub"
+    "https://scoutingstats.ai/j1-league/kashima-antlers-v-urawa-reds/19719069?from=club-hub",
+    "https://www.tifolab.com/matches/1556059",
+    "https://www.tifolab.com/matches/1556066",
+    "https://www.tifolab.com/matches/1556070"
   ],
-  "matches_with_xg": 112,
-  "matches_with_verified_xg": 112,
+  "matches_with_xg": 115,
+  "matches_with_verified_xg": 115,
   "matches_with_unverified_legacy_xg": 0,
-  "matches_missing_xg": 18,
-  "source_rows_matched": 112,
+  "matches_missing_xg": 15,
+  "source_rows_matched": 115,
   "source_access_status": "fetched",
-  "source_access_detail": "Added 8 provider-specific match-level xG records after checking mapped match IDs, dates and final scores. xG is source-model-specific, not official J.League xG; no cross-provider averaging or imputation.",
+  "source_access_detail": "Added 3 more Tifolab match-level xG rows after confirming mapped IDs, dates, home/away fixtures and full-time scores. Provider-specific xG, not official J.League xG; no cross-provider averaging or imputation.",
   "preserved_prior_values_when_source_blocked": false,
   "missing_policy": "blank values only; no score-based or model-based imputation",
   "matches": [
@@ -744,7 +747,12 @@
       "date": "2026-09-06",
       "home": "神戸",
       "away": "長崎",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 2.32,
+      "away_xg": 0.55,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556059",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-川崎f-清水",
@@ -796,14 +804,24 @@
       "date": "2026-09-12",
       "home": "清水",
       "away": "福岡",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.23,
+      "away_xg": 0.6,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556066",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-12-長崎-名古屋",
       "date": "2026-09-12",
       "home": "長崎",
       "away": "名古屋",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 2.65,
+      "away_xg": 0.78,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556070",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-12-g大阪-fc東京",
