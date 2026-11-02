@@ -19,6 +19,8 @@ permissions:
 
 jobs:
   player_data:
+    # This workflow mutates the main database and calibration artifacts; never run it from an audit branch.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout latest main
