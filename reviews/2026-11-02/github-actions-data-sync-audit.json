@@ -1,0 +1,21 @@
+{
+  "report_version": "github-actions-data-sync-audit-2026-11-02-v1",
+  "generated_at_beijing": "2026-11-02T09:56:44+08:00",
+  "workflow_run_id": 41355312274,
+  "run_url": "https://github.com/zj03204112-hub/-/actions/runs/41355312274",
+  "conclusion": "failure",
+  "failed_job_id": 124993990744,
+  "failed_step": "Validate database",
+  "validation_summary": {
+    "total_matches": 8820,
+    "finished_matches": 8820,
+    "scored_matches": 8820,
+    "unknown_source_matches": 192,
+    "out_of_scope_errors": 2
+  },
+  "error": "out-of-scope matches: 2",
+  "commit_generated_data_step": "skipped",
+  "impact": "The automated database sync did not commit generated data on this run. Collection steps for the five major leagues and public Asia sources ran, but validation failure means the workflow's generated DB changes were not archived by that run.",
+  "database_connection_in_this_chat": false,
+  "next_step": "Inspect the two out-of-scope rows in scripts/validate_database.py input, fix source/date/competition mapping on a separate branch, rerun validation, and only then allow commit."
+}
