@@ -73,39 +73,59 @@ def load_mapping():
         return list(csv.DictReader(f))
 
 def extract_candidates(soup):
-    # Public page currently exposes a recent-results panel. Find the smallest DOM
-    # elements containing a completed score, both teams and two decimal xG values.
-    candidates = []
-    tags = soup.find_all(["tr", "li", "article", "div", "a"])
-    for el in tags:
-        txt = re.sub(r"\s+", " ", el.get_text(" ", strip=True)).strip()
-        if not txt or len(txt) > 1800:
+    # Parse only the public "Recent Results with xG" panel. Match on date, home/away
+    # teams, and final score so repeat fixtures cannot be assigned to the wrong round.
+    lines = [clean(x) for x in soup.get_text("\n", strip=True).splitlines()]
+    lines = [x for x in lines if x]
+    start = next((i for i, x in enumerate(lines) if x.casefold() == "recent results with xg"), None)
+    if start is None:
+        return []
+    end = next((i for i in range(start + 1, len(lines))
+                if lines[i].casefold().startswith("download this data as csv")
+                or lines[i].casefold().startswith("j-league xg table")), len(lines))
+    region = lines[start:end]
+    months = {"jan":1,"feb":2,"mar":3,"apr":4,"may":5,"jun":6,
+              "jul":7,"aug":8,"sep":9,"oct":10,"nov":11,"dec":12}
+    current_date = ""
+    out = []
+    seen = set()
+    for i, line in enumerate(region):
+        dm = re.match(r"^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s+([A-Za-z]{3})\s+(\d{1,2})$", line, re.I)
+        if dm:
+            month = months.get(dm.group(1).lower())
+            day = int(dm.group(2))
+            if month:
+                year = 2026 if month >= 7 else 2027
+                current_date = f"{year:04d}-{month:02d}-{day:02d}"
             continue
-        score = re.search(r"(?<!\d)(\d{1,2})\s*[-–]\s*(\d{1,2})(?!\d)", txt)
-        decimals = re.findall(r"(?<![\d.])(\d+\.\d{1,3})(?![\d.])", txt)
-        if not score or len(decimals) < 2:
+        score = re.fullmatch(r"(\d{1,2})\s*[-–]\s*(\d{1,2})", line)
+        if not score or not current_date or i < 2 or i + 2 >= len(region):
             continue
-        candidates.append((len(txt), txt, int(score.group(1)), int(score.group(2)), float(decimals[0]), float(decimals[1])))
-    # For each fixture, retain the smallest text node/row that has enough data.
-    out, seen = [], set()
-    for _, txt, hg, ag, hxg, axg in sorted(candidates, key=lambda x: x[0]):
-        compact = norm(txt)
+        try:
+            home_xg = float(region[i - 2])
+            away_xg = float(region[i + 2])
+        except ValueError:
+            continue
+        home_name, away_name = region[i - 1], region[i + 1]
+        home_goals, away_goals = int(score.group(1)), int(score.group(2))
         pair = None
         for match in MATCHES:
-            home_alias = team_aliases(match["home_team_source"])
-            away_alias = team_aliases(match["away_team_source"])
-            if contains_team(txt, home_alias) and contains_team(txt, away_alias):
-                if (match["home_goals"] or "").strip() and (match["away_goals"] or "").strip():
-                    if int(float(match["home_goals"])) == hg and int(float(match["away_goals"])) == ag:
-                        pair = match
-                        break
+            if match.get("match_date", "") != current_date:
+                continue
+            if int(float(match.get("home_goals", "-1"))) != home_goals:
+                continue
+            if int(float(match.get("away_goals", "-1"))) != away_goals:
+                continue
+            if contains_team(home_name, team_aliases(match.get("home_team_source", ""))) and contains_team(away_name, team_aliases(match.get("away_team_source", ""))):
+                pair = match
+                break
         if pair is None:
             continue
         mid = pair["internal_match_id"]
         if mid in seen:
             continue
-        # The source page lists fixture, home xG, away xG, then final goals.
-        out.append({"match": pair, "home_xg": hxg, "away_xg": axg, "raw_text": txt})
+        raw = f"{current_date} | {home_xg:.3f} {home_name} {home_goals}-{away_goals} {away_name} {away_xg:.3f}"
+        out.append({"match": pair, "home_xg": home_xg, "away_xg": away_xg, "raw_text": raw})
         seen.add(mid)
     return out
 
