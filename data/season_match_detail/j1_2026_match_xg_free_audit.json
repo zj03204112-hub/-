@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-11-02T08:19:59Z",
+  "generated_at_utc": "2026-11-02T08:20:29Z",
   "matches_in_mapping": 130,
   "source_url": "https://www.oddalerts.com/xg/j-league",
   "source_policy": "free public page only; no paid API",
   "source_counts_in_output": {
-    "Tifolab": 39,
-    "": 37,
+    "Tifolab": 42,
+    "": 34,
     "ScoutingStats": 3,
     "FotMob": 1,
     "OddAlerts": 50
@@ -42,15 +42,18 @@
     "https://www.tifolab.com/teams/apifb-team-296-2026-27",
     "https://www.tifolab.com/matches/1556049",
     "https://www.tifolab.com/matches/1556041",
-    "https://www.tifolab.com/teams/apifb-team-305-2026-27"
+    "https://www.tifolab.com/teams/apifb-team-305-2026-27",
+    "https://www.tifolab.com/matches/1556069",
+    "https://www.tifolab.com/matches/1556061",
+    "https://www.tifolab.com/matches/1556063"
   ],
-  "matches_with_xg": 93,
-  "matches_with_verified_xg": 93,
+  "matches_with_xg": 96,
+  "matches_with_verified_xg": 96,
   "matches_with_unverified_legacy_xg": 0,
-  "matches_missing_xg": 37,
-  "source_rows_matched": 93,
+  "matches_missing_xg": 34,
+  "source_rows_matched": 96,
   "source_access_status": "fetched",
-  "source_access_detail": "Added 5 more provider-specific match-level xG records after validating internal match_id, date, home/away teams and final score. Values are provider-specific, not official J.League xG; no cross-provider averaging or imputation. 2026-08-29 京都-福岡; 2026-08-29 神戸-Ｃ大阪; 2026-08-29 長崎-FC東京; 2026-09-02 長崎-Ｇ大阪; 2026-09-02 福岡-浦和.",
+  "source_access_detail": "Added 3 more Tifolab provider-specific match-level xG records after validating mapped match ID, date and final score. Values are not official J.League xG; no cross-provider averaging or imputation. 2026-09-11 j1-2026-2026-09-11-神戸-鹿島; 2026-09-12 j1-2026-2026-09-12-町田-横浜fm; 2026-09-12 j1-2026-2026-09-12-g大阪-fc東京.",
   "preserved_prior_values_when_source_blocked": false,
   "missing_policy": "blank values only; no score-based or model-based imputation",
   "matches": [
@@ -701,7 +704,12 @@
       "date": "2026-09-11",
       "home": "神戸",
       "away": "鹿島",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.46,
+      "away_xg": 1.31,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556069",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-12-水戸-川崎f",
@@ -729,14 +737,24 @@
       "date": "2026-09-12",
       "home": "Ｇ大阪",
       "away": "FC東京",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 0.64,
+      "away_xg": 3.21,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556061",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-12-町田-横浜fm",
       "date": "2026-09-12",
       "home": "町田",
       "away": "横浜FM",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1,
+      "away_xg": 0.66,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556063",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-09-12-広島-c大阪",
