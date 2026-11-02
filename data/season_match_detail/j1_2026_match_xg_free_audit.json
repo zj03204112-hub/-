@@ -1,17 +1,23 @@
 {
-  "generated_at_utc": "2026-11-02T04:36:45.675385+00:00",
+  "generated_at_utc": "2026-11-02T04:38:14.429702+00:00",
   "matches_in_mapping": 126,
   "source_url": "https://footystats.org/japan/j1-league/xg",
   "source_policy": "free public page only; no paid API",
   "source_counts_in_output": {
     "ScanGoal": 126
   },
-  "source_methodology": "FootyStats states its J1 xG formula combines shot accuracy, shot frequency, attack dangerousness, possession and attack pressure; values are provider-specific, not official J.League xG.",
+  "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
+  "sources_in_output": [
+    "ScanGoal"
+  ],
+  "source_urls_in_output": [
+    "https://scangoal.com/league/j-league"
+  ],
   "matches_with_xg": 126,
   "matches_missing_xg": 0,
   "source_rows_matched": 0,
-  "source_access_status": "blocked_or_unavailable",
-  "source_access_detail": "403 Client Error: Forbidden for url: https://footystats.org/japan/j1-league/xg",
+  "source_access_status": "skipped_existing_complete_data",
+  "source_access_detail": "",
   "preserved_prior_values_when_source_blocked": true,
   "missing_policy": "blank values only; no score-based or model-based imputation",
   "matches": [
