@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-02T03:43:28.648077+00:00",
+  "generated_at_utc": "2026-11-02T04:10:03.717065+00:00",
   "source_policy": "free official J.League pages only; no paid API",
   "matches_in_mapping": 126,
   "reports_fetched": 126,
@@ -248,7 +248,12 @@
       "starting_rows": 0,
       "bench_rows": 0,
       "substitution_rows": 0,
-      "issues": []
+      "issues": [
+        {
+          "type": "official_site_lineup_text_not_parsed",
+          "roster_rows_found": 0
+        }
+      ]
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-浦和-広島",
@@ -318,7 +323,12 @@
       "starting_rows": 0,
       "bench_rows": 0,
       "substitution_rows": 0,
-      "issues": []
+      "issues": [
+        {
+          "type": "official_site_lineup_text_not_parsed",
+          "roster_rows_found": 0
+        }
+      ]
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-鹿島-福岡",
