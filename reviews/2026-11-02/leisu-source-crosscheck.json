@@ -1,0 +1,60 @@
+{
+  "report_version": "leisu-crosscheck-2026-11-02-v1",
+  "captured_at_beijing": "2026-11-02T09:56:44+08:00",
+  "source_priority": "雷速体育 first, then official league/club pages and independent reliable result pages.",
+  "leisu_pages": [
+    {
+      "competition": "Premier League",
+      "url": "https://www.leisu.com/yc/fixtures",
+      "status": "visible_final_scores_for_Tottenham_2-0_Crystal_Palace_and_Aston_Villa_1-1_Fulham; Liverpool-Arsenal shown as Beijing 2026-11-02 00:30 fixture"
+    },
+    {
+      "competition": "La Liga",
+      "url": "https://www.leisu.com/xj/fixtures",
+      "status": "visible final scores for Rayo 3-0 Celta, Betis 2-1 Malaga, Barcelona 6-1 Alaves, Getafe 3-1 Sevilla, Racing Santander 0-3 Real Madrid; Elche-Valencia and Athletic-Real Sociedad appear in Beijing 2026-11-02 bucket"
+    },
+    {
+      "competition": "Bundesliga",
+      "url": "https://www.leisu.com/dj/fixtures",
+      "status": "Bayern 2-2 Dortmund visible as final; Union Berlin-Cologne page still showed not-started status despite independent final-score pages"
+    },
+    {
+      "competition": "Ligue 1",
+      "url": "https://www.leisu.com/fj/fixtures",
+      "status": "Troyes 2-0 Le Mans visible as final; Strasbourg-Auxerre still showed not-started despite multiple independent pages confirming 5-1 FT; Monday Beijing results remain separate"
+    },
+    {
+      "competition": "General live results",
+      "url": "https://www.leisu.com/",
+      "status": "Visible final scores included several Serie A and J1 results, but the page is a mixed live/results feed rather than a complete league-specific archival response"
+    },
+    {
+      "competition": "K League 1",
+      "url": "https://www.leisu.com/data/zuqiu/comp-581",
+      "status": "Stale for 2026-11-01: Ulsan-Gangwon, FC Seoul-Incheon and other fixtures still displayed no final score; did not use Leisu status as evidence that those matches were unfinished"
+    }
+  ],
+  "crosscheck_summary": {
+    "confirmed_beijing_2026_11_01_results": 28,
+    "leisu_visible_final_score_crosschecks": "Partial; the search snippets show direct final scores for the principal European matches and several J1 results.",
+    "stale_or_conflicting_leisu_entries": [
+      "Union Berlin vs Köln: Leisu showed not started; independent match pages confirmed 1-1 FT.",
+      "Strasbourg vs Auxerre: Leisu showed not started; Reuters and multiple independent pages confirmed 5-1 FT.",
+      "K League 1 Sunday fixtures: Leisu competition page still displayed no scores; other result sources were used."
+    ],
+    "no_fabrication_rule": "Where Leisu was stale or lacked a final score, use independent sources only when the final score was corroborated; otherwise keep status pending. Do not overwrite the original source status."
+  },
+  "sources_used_for_secondary_verification": [
+    "https://www.reuters.com/sports/soccer/real-madrid-extend-winning-run-with-3-0-victory-at-racing-santander-2026-11-01/",
+    "https://www.reuters.com/sports/soccer/frankfurt-cruise-3-1-home-win-over-hamburg-2026-11-01/",
+    "https://www.reuters.com/sports/soccer/lazio-move-three-points-clear-with-cagliari-win-juventus-beat-napoli-2026-11-01/",
+    "https://www.reuters.com/sports/soccer/lyon-paris-fc-win-while-marseille-continue-improve-2026-11-01/",
+    "https://www.jleague.jp/en/match/j1/2026/110101/",
+    "https://www.kleague.com/",
+    "https://www.footballsoccerapi.com/our-football-api-data/norway/eliteserien/2026"
+  ],
+  "limitations": [
+    "Leisu page-level raw HTML was not saved; only URL and observed result/status were recorded.",
+    "Exact upstream update timestamps were not exposed for all pages."
+  ]
+}
