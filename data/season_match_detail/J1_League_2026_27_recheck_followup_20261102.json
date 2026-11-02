@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-11-02",
+  "league": "J1 League",
+  "season": "2026/27",
+  "task": "row_by_row_independent_recheck_followup",
+  "free_source": {
+    "official_results_index": "https://www.jleague.jp/en/j1/match/",
+    "official_data_site": "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1",
+    "match_page_fields_observed": ["final_score", "match_date", "starting_lineup", "substitutions", "match_progress", "match_stats"]
+  },
+  "existing_audit_summary": {
+    "baseline_rows": 125,
+    "coverage_start": "2026-08-07",
+    "coverage_end": "2026-10-31",
+    "previously_independently_checked": 2,
+    "remaining_rows_claimed_pending": 123
+  },
+  "this_run": {
+    "baseline_csv_found_in_data_season_match_detail_directory_listing": false,
+    "row_level_match_keys_available_for_123_row_reconciliation": false,
+    "old_125_row_set_reconciled": false,
+    "verified_old_rows_added": 0,
+    "lineups_collected_for_old_125_rows": 0,
+    "actual_appearances_collected_for_old_125_rows": 0,
+    "xg_xga_collected_for_old_125_rows": 0,
+    "status": "blocked_pending_baseline_csv",
+    "blocker": "The repository directory listing contains J1_League_2026_27_audit.json but no J1 results CSV or match-level baseline file for the 125 rows. The audit JSON contains only two sample cross-checks and no row-level match_audit entries, so the 123 records cannot be safely identified and reconciled from the current files. No results or player data have been fabricated."
+  },
+  "independent_official_checks_outside_baseline_window": [
+    {
+      "date": "2026-11-01",
+      "home": "Yokohama F. Marinos",
+      "away": "Kawasaki Frontale",
+      "score": "4-2",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/110101/",
+      "status": "official_page_confirmed",
+      "note": "This match is outside the existing audit coverage ending 2026-10-31; do not count it among the 125 baseline rows."
+    },
+    {
+      "date": "2026-11-01",
+      "home": "JEF United Chiba",
+      "away": "Avispa Fukuoka",
+      "score": "3-0",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/110102/",
+      "status": "official_page_confirmed",
+      "note": "This match is outside the existing audit coverage ending 2026-10-31; do not count it among the 125 baseline rows."
+    }
+  ],
+  "next_required_action": "Restore or add the exact baseline CSV/source file containing the 125 J1 rows. Then reconcile each row by date + home + away + full-time score against official J.League match pages; append per-row status, official match URL, score comparison, and evidence timestamp. Collect starting XI, substitutes, substitutions/appearance information from official match pages where published. xG/xGA must remain null unless a free source explicitly provides match-level values.",
+  "integrity_rules": [
+    "Do not mark the 123 pending rows as verified until each has an individual official source URL and score comparison.",
+    "Do not infer actual appearances from starting XI.",
+    "Do not substitute goals for xG.",
+    "Do not overwrite V5.1 or prediction snapshots."
+  ]
+}
