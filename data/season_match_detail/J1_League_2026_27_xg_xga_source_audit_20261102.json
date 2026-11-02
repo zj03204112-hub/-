@@ -1,0 +1,60 @@
+{
+  "date_created": "2026-11-02",
+  "competition": "J1 League 2026/27",
+  "purpose": "Free, traceable match-level xG and independent match-level xGA source audit",
+  "rules": [
+    "Do not replace match-level values with team season averages.",
+    "Do not infer xGA from final score or fill missing values with estimates.",
+    "Keep source URL, source timestamp/date, match date, home/away team, score, field definition and provider/model identity for each accepted value."
+  ],
+  "sources_reviewed": [
+    {
+      "name": "FootyStats J1 League xG page",
+      "url": "https://footystats.org/japan/j1-league/xg",
+      "status": "PARTIAL_MATCH_LEVEL_XG",
+      "evidence": "The public page has a recent-results section with individual fixture, final score, home xG and away xG. As currently visible, the list covers only a short recent window, from Oct 24 through Nov 1; it does not expose the Oct 17-18 fixtures in the current rendered recent-results list.",
+      "match_level_xg_usable": true,
+      "independent_match_level_xga_field_verified": false,
+      "team_aggregates_accepted_as_match_values": false,
+      "limitations": "Do not extrapolate older match xG from team aggregates. The displayed recent-results values can be transcribed only when the exact match and both xG fields are visible."
+    },
+    {
+      "name": "MatchDaySync J1 League 2026-27 shots and xG",
+      "url": "https://matchdaysync.com/leagues/j1-league?tab=shots",
+      "status": "NOT_ACCEPTED_FOR_CURRENT_MATCH_LEVEL_DATA",
+      "evidence": "The page explicitly says it was restored from an Oct 11 backup and current updates are not connected; its table marks 0 matches for listed teams and has dashes for shots and xG.",
+      "match_level_xg_usable": false,
+      "independent_match_level_xga_field_verified": false,
+      "reason": "Stale snapshot with no usable match-level stats shown."
+    },
+    {
+      "name": "JPick",
+      "url": "https://jpick.jp/en",
+      "status": "CANDIDATE_NOT_YET_VERIFIED_FOR_MATCH_LEVEL_XG_XGA",
+      "evidence": "The site says its web content is free and its match/player statistics come from SportMonks, but the reviewed page does not demonstrate a publicly accessible per-match xG and separately defined xGA field for each historical J1 fixture.",
+      "match_level_xg_usable": false,
+      "independent_match_level_xga_field_verified": false,
+      "reason": "Need match-specific page/API evidence and field definitions before accepting values."
+    },
+    {
+      "name": "J.League Data Site official match records",
+      "url": "https://data.j-league.or.jp/SFMS01/search?competition_frame_ids=1&competition_years=2026&section_id=1",
+      "status": "OFFICIAL_SCORE_AND_PLAYER_EVENT_SOURCE_ONLY",
+      "evidence": "Individual official records show date, score, starters, substitutes, substitution events, shots, corners and match conditions; no xG or xGA field was observed in the reviewed record pages.",
+      "match_level_xg_usable": false,
+      "independent_match_level_xga_field_verified": false
+    }
+  ],
+  "result": {
+    "new_historical_match_level_xg_pairs_verified_in_this_audit": 0,
+    "new_independent_match_level_xga_pairs_verified_in_this_audit": 0,
+    "accepted_free_source_for_recent_match_level_xg": "FootyStats, only for exact fixtures whose values are visibly listed",
+    "accepted_free_source_for_independent_match_level_xga": null,
+    "policy": "Unverified xG/xGA remain null. No team aggregates or estimated values are written into match rows."
+  },
+  "next_steps": [
+    "Continue checking FootyStats recent-result coverage and preserve exact match-level values only where visible.",
+    "Inspect JPick/SportMonks free access and documentation for exact J1 historical match xG/xGA fields and usage limits.",
+    "Search for another free provider that explicitly exposes historical match-level xGA, rather than assuming xGA equals a separately reported opponent xG."
+  ]
+}
