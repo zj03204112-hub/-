@@ -166,33 +166,7 @@ def main():
             print(f"Parsed {i}/{len(roster_urls)} official club roster pages", flush=True)
         time.sleep(0.12)
 
-    # This audit covers only the 20 clubs in the mapped J1 season. The official
-    # directory also links J2/J3 rosters; do not fetch thousands of unrelated profiles.
-    j1_roster_names = {
-        "Kashima Antlers","Kashima","鹿島アントラーズ","鹿島",
-        "Mito Hollyhock","Mito","水戸ホーリーホック","水戸",
-        "Urawa Reds","Urawa Red Diamonds","浦和レッズ","浦和",
-        "JEF United Chiba","JEF United Ichihara Chiba","ジェフユナイテッド千葉","千葉",
-        "Kashiwa Reysol","柏レイソル","柏",
-        "FC Tokyo","FC東京",
-        "Tokyo Verdy","東京ヴェルディ","東京V",
-        "Machida Zelvia","FC Machida Zelvia","FC町田ゼルビア","町田",
-        "Kawasaki Frontale","川崎フロンターレ","川崎F",
-        "Yokohama F. Marinos","Yokohama Marinos","横浜F・マリノス","横浜FM",
-        "Shimizu S-Pulse","Shimizu S Pulse","清水エスパルス","清水",
-        "Nagoya Grampus","名古屋グランパス","名古屋",
-        "Kyoto Sanga","Kyoto Sanga F.C.","京都サンガ","京都",
-        "Gamba Osaka","ガンバ大阪","G大阪",
-        "Cerezo Osaka","セレッソ大阪","C大阪",
-        "Vissel Kobe","ヴィッセル神戸","神戸",
-        "Fagiano Okayama","ファジアーノ岡山","岡山",
-        "Sanfrecce Hiroshima","サンフレッチェ広島","広島",
-        "Avispa Fukuoka","アビスパ福岡","福岡",
-        "V-Varen Nagasaki","V・ファーレン長崎","長崎",
-    }
-    j1_keys = {name_key(x) for x in j1_roster_names}
-    roster_profiles = [p for p in roster_profiles if name_key(p.get("team_roster_name", "")) in j1_keys]
-    print(f"Filtered official roster profiles to J1 clubs: {len(roster_profiles)}", flush=True)
+    # Keep the complete official roster index until a URL-based J1-only filter is validated.
 
     by_name = defaultdict(list)
     ids = {}
