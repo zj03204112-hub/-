@@ -35,14 +35,20 @@
   },
   "this_run": {
     "baseline_csv_found_in_data_season_match_detail_directory_listing": false,
-    "row_level_match_keys_available_for_123_row_reconciliation": false,
+    "row_level_match_keys_available_for_123_row_reconciliation": true,
     "old_125_row_set_reconciled": false,
     "verified_old_rows_added": 0,
     "lineups_collected_for_old_125_rows": 0,
     "actual_appearances_collected_for_old_125_rows": 0,
     "xg_xga_collected_for_old_125_rows": 0,
-    "status": "blocked_pending_baseline_csv",
-    "blocker": "The repository directory listing contains J1_League_2026_27_audit.json but no J1 results CSV or match-level baseline file for the 125 rows. The audit JSON contains only two sample cross-checks and no row-level match_audit entries, so the 123 records cannot be safely identified and reconciled from the current files. No results or player data have been fabricated."
+    "status": "baseline_located_pending_rowwise_official_reconciliation",
+    "blocker": "The baseline CSV was found at data/auto_results/J1_League_2026_27.csv rather than in data/season_match_detail/. It contains 129 data rows: 125 through 2026-10-31 and four completed matches on 2026-11-01. Row-by-row reconciliation of the original 125 records against individual official match pages is still pending; no historical rows have been marked verified.",
+    "baseline_csv_found_at_alternate_repository_path": true,
+    "baseline_csv_path": "data/auto_results/J1_League_2026_27.csv",
+    "baseline_csv_blob_sha": "8d99885bf7b0d52c5fcc7c2922dd02d92450a54f",
+    "baseline_csv_data_rows": 129,
+    "baseline_rows_through_2026_10_31": 125,
+    "additional_completed_rows_on_2026_11_01": 4
   },
   "independent_official_checks_outside_baseline_window": [
     {
@@ -50,21 +56,39 @@
       "home": "Yokohama F. Marinos",
       "away": "Kawasaki Frontale",
       "score": "4-2",
-      "official_url": "https://www.jleague.jp/en/match/j1/2026/110101/",
-      "status": "official_page_confirmed",
-      "note": "Outside existing audit coverage ending 2026-10-31; not counted among the 125 baseline rows."
+      "official_url": "https://www.jleague.jp/en/j1/match/",
+      "status": "official_results_index_confirmed",
+      "note": "Listed on the official J.League results index; outside the original baseline window ending 2026-10-31."
     },
     {
       "date": "2026-11-01",
       "home": "JEF United Chiba",
       "away": "Avispa Fukuoka",
       "score": "3-0",
-      "official_url": "https://www.jleague.jp/en/match/j1/2026/110102/",
-      "status": "official_page_confirmed",
-      "note": "Outside existing audit coverage ending 2026-10-31; not counted among the 125 baseline rows."
+      "official_url": "https://www.jleague.jp/en/j1/match/",
+      "status": "official_results_index_confirmed",
+      "note": "Listed on the official J.League results index; outside the original baseline window ending 2026-10-31."
+    },
+    {
+      "date": "2026-11-01",
+      "home": "V-Varen Nagasaki",
+      "away": "Tokyo Verdy",
+      "score": "1-2",
+      "official_url": "https://www.jleague.jp/en/j1/match/",
+      "status": "official_results_index_confirmed",
+      "note": "Listed on the official J.League results index; outside the original baseline window ending 2026-10-31."
+    },
+    {
+      "date": "2026-11-01",
+      "home": "FC Machida Zelvia",
+      "away": "Gamba Osaka",
+      "score": "0-0",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/110109/",
+      "status": "official_match_page_confirmed",
+      "note": "Individual official match page confirms the score; outside the original baseline window ending 2026-10-31."
     }
   ],
-  "next_required_action": "Restore or add the exact baseline CSV/source file containing the 125 J1 rows. Then reconcile each row by date + home + away + full-time score against official J.League match pages; append per-row status, official match URL, score comparison, and evidence timestamp. Collect starting XI, substitutes, substitutions/appearance information from official match pages where published. xG/xGA must remain null unless a free source explicitly provides match-level values.",
+  "next_required_action": "Now that the baseline CSV is located at data/auto_results/J1_League_2026_27.csv, reconcile the 125 matches through 2026-10-31 by date + home + away + full-time score against individual official J.League match pages. Append per-row status, official match URL, score comparison, and evidence timestamp. Keep the four 2026-11-01 results as an extension, not part of the original 125-row baseline. Collect starting XI, substitutes, substitutions/appearance information from official match pages where published. xG/xGA must remain null unless a free source explicitly provides match-level values.",
   "integrity_rules": [
     "Do not mark the 123 pending rows as verified until each has an individual official source URL and score comparison.",
     "Do not infer actual appearances from starting XI.",
