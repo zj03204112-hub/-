@@ -111,19 +111,34 @@ def main():
     global MATCHES
     matches = load_mapping()
     MATCHES = matches
-    response = requests.get(SOURCE_URL, timeout=45, headers={"User-Agent":"Mozilla/5.0 (compatible; FreeJ1xGAudit/1.0)"})
-    response.raise_for_status()
-    soup = BeautifulSoup(response.text, "html.parser")
-    source_rows = extract_candidates(soup)
-    by_id = {r["match"]["internal_match_id"]: r for r in source_rows}
     now = datetime.now(timezone.utc).isoformat()
+    prior = {}
+    if OUT.exists():
+        with OUT.open(encoding="utf-8-sig", newline="") as f:
+            prior = {r.get("internal_match_id", ""): r for r in csv.DictReader(f)}
+    source_rows = []
+    source_access_status = "not_attempted"
+    source_access_detail = ""
+    try:
+        response = requests.get(SOURCE_URL, timeout=45, headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36"})
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        source_rows = extract_candidates(soup)
+        source_access_status = "fetched"
+    except requests.RequestException as exc:
+        source_access_status = "blocked_or_unavailable"
+        source_access_detail = str(exc)[:500]
+        print(f"Public xG source unavailable; preserving prior sourced values: {source_access_detail}", flush=True)
+    by_id = {r["match"]["internal_match_id"]: r for r in source_rows}
     output = []
     for m in matches:
-        found = by_id.get(m["internal_match_id"])
+        mid = m["internal_match_id"]
+        found = by_id.get(mid)
+        old = prior.get(mid, {})
         if found:
             hxg, axg = found["home_xg"], found["away_xg"]
-            output.append({
-                "internal_match_id": m["internal_match_id"], "provider_event_id": m.get("provider_event_id",""),
+            row = {
+                "internal_match_id": mid, "provider_event_id": m.get("provider_event_id",""),
                 "match_date": m.get("match_date",""), "home_team": m.get("home_team_source",""),
                 "away_team": m.get("away_team_source",""), "home_goals": m.get("home_goals",""),
                 "away_goals": m.get("away_goals",""), "home_xg": f"{hxg:.3f}", "away_xg": f"{axg:.3f}",
@@ -131,18 +146,26 @@ def main():
                 "xg_status": "published_on_free_public_source", "source_name": "FootyStats",
                 "source_url": SOURCE_URL, "source_model_note": "Provider-specific xG formula; not official J.League xG",
                 "source_raw_row": found["raw_text"], "retrieved_at_utc": now,
-            })
+            }
+        elif old.get("home_xg") and old.get("away_xg"):
+            # Preserve previously sourced and audited values if the public page blocks automation.
+            row = dict(old)
+            row.update({"internal_match_id": mid, "provider_event_id": m.get("provider_event_id",""),
+                "match_date": m.get("match_date",""), "home_team": m.get("home_team_source",""),
+                "away_team": m.get("away_team_source",""), "home_goals": m.get("home_goals",""),
+                "away_goals": m.get("away_goals","")})
         else:
-            output.append({
-                "internal_match_id": m["internal_match_id"], "provider_event_id": m.get("provider_event_id",""),
+            row = {
+                "internal_match_id": mid, "provider_event_id": m.get("provider_event_id",""),
                 "match_date": m.get("match_date",""), "home_team": m.get("home_team_source",""),
                 "away_team": m.get("away_team_source",""), "home_goals": m.get("home_goals",""),
                 "away_goals": m.get("away_goals",""), "home_xg": "", "away_xg": "",
-                "home_xga": "", "away_xga": "", "xg_status": "missing_not_exposed_in_public_recent_results",
+                "home_xga": "", "away_xga": "", "xg_status": "missing_not_exposed_in_free_source",
                 "source_name": "FootyStats", "source_url": SOURCE_URL,
-                "source_model_note": "No per-match value found in accessible public recent-results panel; no imputation",
-                "source_raw_row": "", "retrieved_at_utc": now,
-            })
+                "source_model_note": "No verified per-match value available; no imputation",
+                "source_raw_row": "", "retrieved_at_utc": "",
+            }
+        output.append(row)
     fields = ["internal_match_id","provider_event_id","match_date","home_team","away_team","home_goals","away_goals",
               "home_xg","away_xg","home_xga","away_xga","xg_status","source_name","source_url",
               "source_model_note","source_raw_row","retrieved_at_utc"]
@@ -155,6 +178,9 @@ def main():
         "matches_with_xg": sum(bool(r["home_xg"]) for r in output),
         "matches_missing_xg": sum(not bool(r["home_xg"]) for r in output),
         "source_rows_matched": len(source_rows),
+        "source_access_status": source_access_status,
+        "source_access_detail": source_access_detail,
+        "preserved_prior_values_when_source_blocked": source_access_status != "fetched",
         "missing_policy": "blank values only; no score-based or model-based imputation",
         "matches": [{"internal_match_id":r["internal_match_id"],"date":r["match_date"],"home":r["home_team"],"away":r["away_team"],"status":r["xg_status"]} for r in output],
     }
