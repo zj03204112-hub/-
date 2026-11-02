@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-01",
+  "generated_at": "2026-11-02",
   "league": "J1 League",
   "season": "2026/27",
   "source_url": "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1&tv_relay_station_name=",
   "source_type": "Official J.League Data Site",
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
-  "rows": 126,
+  "rows": 130,
   "coverage_start": "2026-08-07",
-  "coverage_end": "2026-10-31",
+  "coverage_end": "2026-11-01",
   "structural_validation": {
-    "mapping_rows": "126/126",
-    "results_rows": "126/126",
-    "date_iso_format": "126/126",
-    "scores_numeric": "126/126",
-    "home_away_present": "126/126",
+    "mapping_rows": "130/130",
+    "results_rows": "130/130",
+    "date_iso_format": "130/130 after normalizing source CSV dates",
+    "scores_numeric": "130/130",
+    "home_away_present": "130/130",
     "duplicate_date_home_away_keys": 0,
     "duplicate_official_match_urls": 0,
-    "official_match_urls_present": "126/126",
-    "provider_event_ids_present": "126/126",
-    "mapping_to_results_match_keys": "126/126"
+    "official_match_urls_present": "130/130",
+    "provider_event_ids_present": "126/130; 4 new matches use official match URLs and provider ID remains unverified",
+    "mapping_to_results_match_keys": "130/130 after date normalization and team alias normalization"
   },
   "source_cross_checks": [
     {
@@ -57,29 +57,61 @@
       "provider_event_id": "34646",
       "official_match_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34646",
       "status": "matched"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "横浜FM",
+      "away": "川崎Ｆ",
+      "score": "4-2",
+      "official_match_url": "https://www.jleague.jp/en/match/j1/2026/110101/",
+      "status": "official result confirmed; provider event ID pending"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "千葉",
+      "away": "福岡",
+      "score": "3-0",
+      "official_match_url": "https://www.jleague.jp/en/match/j1/2026/110102/",
+      "status": "official result confirmed; provider event ID pending"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "長崎",
+      "away": "東京Ｖ",
+      "score": "1-2",
+      "official_match_url": "https://www.jleague.jp/match/j1/2026/110103/",
+      "status": "official result confirmed; provider event ID pending"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "町田",
+      "away": "Ｇ大阪",
+      "score": "0-0",
+      "official_match_url": "https://www.jleague.jp/match/j1/2026/110109/",
+      "status": "official result confirmed; provider event ID pending"
     }
   ],
   "lineup_and_appearance_audit": {
     "csv_status_flags": {
-      "official_result_check_status": "verified 126/126",
-      "lineup_audit_status": "verified 126/126",
-      "appearance_audit_status": "verified 126/126"
+      "official_result_check_status": "verified 130/130 based on mapping result checks and official sources",
+      "lineup_audit_status": "126/130 carry prior verified flags; 4/130 source available but normalization pending",
+      "appearance_audit_status": "126/130 carry prior verified flags; 4/130 source available but normalization pending",
+      "standardized_player_csv": "0 rows / empty file; player-layer acceptance FAIL",
+      "substitutions_csv": "1222 rows; minute missing 37; player_out_id missing 1222; player_in_id missing 1222"
     },
-    "row_level_notes": "All 126 rows contain per-match audit notes indicating the official match report/source was inspected for date, teams, score, starting XI, substitutes and substitution events.",
-    "current_pass_scope": "All 126 individual official match reports were opened in this pass. 121 were accessible through the official J.League Data Site URLs; five Data Site pages (IDs 34534, 34538, 34539, 34540, 34545) did not render in this browser and were checked through the corresponding official jleague.jp match pages instead. The pages expose named starting XIs and official substitute/substitution-event sections. This validates access to the official evidence for all 126 matches; it does not claim that every player name was programmatically diffed against a separate stored lineup table, because no player-level lineup table is part of this mapping CSV.",
-    "unresolved": 0,
-    "individual_official_reports_opened": "126/126",
-    "data_site_pages_opened": "121/126",
-    "official_website_fallback_pages_opened": "5/5",
-    "player_name_duplicate_check": "not programmatically run against a separate stored lineup table; mapping CSV contains audit status flags and links, not the full per-match lineup rows"
+    "row_level_notes": "Official match pages expose starting XI and match progress for the four 2026-11-01 matches. However, the standardized player CSV is empty and the substitution table has field gaps; source-page availability is not equivalent to normalized player-layer completion.",
+    "unresolved": 4,
+    "individual_official_reports_opened": "126/126 prior reports recorded as opened; 4/4 new official pages inspected for date, teams and score",
+    "player_name_duplicate_check": "not completed against a populated standardized player table because the canonical player CSV is empty"
   },
-  "row_by_row_independent_recheck": "All 126 official individual match reports were opened in this pass (121 Data Site pages + 5 official J.League website fallbacks). The official schedule/results listing was also cross-checked; no date/team/score mismatches were found in the mapping table. This pass repaired the missing results-CSV row (Kashiwa 4-0 Urawa) and missing provider ID (Kawasaki 3-3 Kashima). Player names were reviewed from official pages, but no programmatic name-by-name diff against a separate stored lineup table was possible because that table is not present in this mapping file.",
+  "row_by_row_independent_recheck": "Official result/date/home-away/score checks recorded for the 126 prior mapped fixtures; four 2026-11-01 fixtures newly checked against official J.LEAGUE match pages and the official Data Site listing. Full player-level name diff is not complete because the standardized player CSV is empty. The 130-row result/mapping join must be treated as structurally aligned after date and team-name normalization, not as proof that all player and xG fields are complete.",
   "notes": [
-    "The 2026/27 J1 season is ongoing; 126 is the completed-match coverage in the current branch through 2026-10-31, not a full-season total.",
-    "The results CSV previously had 125 rows and omitted the official 2026-10-31 Kashiwa Reysol 4-0 Urawa Reds match (Data Site match_card_id=34644); this has been added.",
-    "The mapping CSV's 2026-09-19 Kawasaki Frontale 3-3 Kashima Antlers row previously lacked provider_event_id; the official Data Site listing/report confirms match_card_id=34596.",
-    "K League 1 date/time file separately checked: 80 rows have ISO dates and HH:MM local/UTC time fields; full timezone-offset arithmetic audit is tracked in the collection progress file.",
-    "Browser fallback handling: official_match_url now points to the official jleague.jp match page for provider IDs 34534, 34538, 34539, 34540 and 34545, while source_record_url retains the official Data Site provider record URL."
+    "The 2026/27 J1 season is ongoing; 130 is the completed-match coverage in the current audit branch through 2026-11-01.",
+    "Four official 2026-11-01 results were added to the mapping file; provider event IDs remain blank until confirmed from the official Data Site, so no IDs were invented.",
+    "Source CSV uses Japanese date strings while mapping uses ISO dates; all downstream joins must normalize dates and team aliases first.",
+    "The player-level CSV is currently empty, so prior lineup/appearance flags in the mapping are not sufficient to accept the player data layer.",
+    "xG CSV contains 126 numeric rows but the source audit says zero rows matched and prior recovery plan documented only 11/126 verified. All 126 values remain pending source verification and must not be used for formal calibration.",
+    "K League 1 date/time audit is separate and unchanged."
   ],
   "k_league_date_time_audit": {
     "file": "data/auto_results/K_League_1_2026_27.csv",
