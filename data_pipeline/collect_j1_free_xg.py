@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Collect publicly visible J1 match xG from FootyStats without paid APIs.
+"""Collect publicly visible J1 match xG from OddAlerts without paid APIs.
 
 Only values explicitly published in the public recent-results section are recorded.
 The source's xG model is provider-specific and is not represented as official J.League xG.
@@ -17,7 +17,7 @@ MAPPING = ROOT / "j1_2026_match_id_mapping.csv"
 OUT = ROOT / "j1_2026_match_xg_free.csv"
 AUDIT = ROOT / "j1_2026_match_xg_free_audit.json"
 TEAM_OUT = ROOT / "j1_2026_team_season_xg_free.csv"
-SOURCE_URL = "https://footystats.org/japan/j1-league/xg"
+SOURCE_URL = "https://www.oddalerts.com/xg/j-league"
 TEAM_SOURCE_URL = "https://www.oddalerts.com/xg/j-league"
 ALIASES = {
     "横浜fm": ["yokohama f. marinos", "yokohama marinos"],
@@ -125,7 +125,7 @@ def main():
         prior.get(m.get("internal_match_id", ""), {}).get("home_xg")
         and prior.get(m.get("internal_match_id", ""), {}).get("away_xg")
         and prior.get(m.get("internal_match_id", ""), {}).get("source_validation_status") == "verified_from_current_fetch"
-        and prior.get(m.get("internal_match_id", ""), {}).get("source_name") == "FootyStats"
+        and prior.get(m.get("internal_match_id", ""), {}).get("source_name") == "OddAlerts"
         for m in matches
     )
     if prior_complete:
@@ -155,8 +155,8 @@ def main():
                 "away_team": m.get("away_team_source",""), "home_goals": m.get("home_goals",""),
                 "away_goals": m.get("away_goals",""), "home_xg": f"{hxg:.3f}", "away_xg": f"{axg:.3f}",
                 "home_xga": f"{axg:.3f}", "away_xga": f"{hxg:.3f}",
-                "xg_status": "published_on_free_public_source", "source_name": "FootyStats",
-                "source_url": SOURCE_URL, "source_model_note": "Provider-specific xG formula; not official J.League xG",
+                "xg_status": "published_on_free_public_source", "source_name": "OddAlerts",
+                "source_url": SOURCE_URL, "source_model_note": "Provider-specific xG from the public recent-results panel; not official J.League xG",
                 "source_validation_status": "verified_from_current_fetch",
                 "source_reverification_note": "Matched from the current successful free public page fetch.",
                 "source_raw_row": found["raw_text"], "retrieved_at_utc": now,
@@ -168,7 +168,7 @@ def main():
                 "match_date": m.get("match_date",""), "home_team": m.get("home_team_source",""),
                 "away_team": m.get("away_team_source",""), "home_goals": m.get("home_goals",""),
                 "away_goals": m.get("away_goals","")})
-            if source_access_status != "fetched" or old.get("source_name") != "FootyStats":
+            if source_access_status != "fetched" or old.get("source_name") != "OddAlerts":
                 row["xg_status"] = "unverified_legacy_value"
                 row["source_validation_status"] = "unverified_legacy_value"
                 row["source_reverification_note"] = "Value retained for audit only; current source fetch did not re-verify this row. Exclude from model calibration until reverified."
