@@ -20,7 +20,7 @@ SUBS_OUT = ROOT / "j1_2026_substitutions_free_official.csv"
 AUDIT_OUT = ROOT / "j1_2026_free_official_audit.json"
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": "Mozilla/5.0 (compatible; J1FreeDataAudit/1.0)"})
-TIME_RE = re.compile(r"^(\d{1,3})(?:\s*\+\s*(\d{1,2}))?['’]?$")
+TIME_RE = re.compile(r"^(\d{1,3})(?:\s*['’]?\s*\+\s*(\d{1,2}))?\s*['’]?$")
 
 def clean(s: str) -> str:
     return re.sub(r"\s+", " ", s or "").strip()
@@ -29,7 +29,9 @@ def minute(s: str):
     m = TIME_RE.match(clean(s).replace("′", "'"))
     if not m:
         return None
-    return int(m.group(1)) + int(m.group(2) or 0)
+    base = int(m.group(1))
+    added = m.group(2)
+    return f"{base}+{int(added)}" if added is not None else base
 
 def cells(row):
     return [clean(c.get_text(" ", strip=True)) for c in row.find_all(["th", "td"], recursive=False)]
@@ -40,6 +42,11 @@ def parse_report(url: str, home_team: str = "", away_team: str = ""):
     soup = BeautifulSoup(response.text, "html.parser")
     players, subs, issues = [], [], []
     # Official report tables are headed by team name and sections such as 先発/控え/交代.
+    # On the Data Site, both 控え and 交代 tables follow the away starter table;
+    # their first/second tables are home/away respectively. The nearest h3 is
+    # therefore NOT a safe team label for these sections.
+    bench_table_idx = 0
+    substitution_table_idx = 0
     for table in soup.find_all("table"):
         heading = table.find_previous(["h3", "h4"])
         section = clean(heading.get_text(" ", strip=True)) if heading else ""
@@ -51,6 +58,12 @@ def parse_report(url: str, home_team: str = "", away_team: str = ""):
             continue
         section_key = section.replace(" ", "")
         if "先発" in section_key or "控え" in section_key:
+            if "控え" in section_key:
+                bench_table_idx += 1
+                if bench_table_idx == 1 and home_team:
+                    team = home_team
+                elif bench_table_idx == 2 and away_team:
+                    team = away_team
             for r in rows:
                 joined = " ".join(r)
                 if any(x in joined.upper() for x in ("POSITION", "NUMBER", "NAME", "TIME")):
@@ -64,6 +77,11 @@ def parse_report(url: str, home_team: str = "", away_team: str = ""):
                         "source_time_cell": r[3] if len(r) > 3 else "",
                     })
         elif "交代" in section_key:
+            substitution_table_idx += 1
+            if substitution_table_idx == 1 and home_team:
+                team = home_team
+            elif substitution_table_idx == 2 and away_team:
+                team = away_team
             # Official records use ▽ for OUT and ▲ for IN, usually one event per two rows.
             pending_out = None
             for r in rows:
@@ -172,9 +190,9 @@ def main():
             for p in players:
                 player_rows.append({"internal_match_id": result["internal_match_id"],
                     "provider_event_id": result["provider_event_id"], "match_date": result["match_date"],
-                    "team_report_label": p["team_report_label"] if p["section"] == "starting" else "",
+                    "team_report_label": p["team_report_label"],
                     "team_report_label_raw": p["team_report_label"],
-                    "team_assignment_status": "source_report_team_label" if p["section"] == "starting" else "unresolved_parser_team_mapping",
+                    "team_assignment_status": "source_report_team_label" if p["section"] == "starting" else ("official_table_order_home_away" if p["team_report_label"] in (clean(match.get("home_team_source")), clean(match.get("away_team_source"))) else "unresolved_parser_team_mapping"),
                     "section": p["section"],
                     "position": p["position"], "shirt_number": p["shirt_number"],
                     "player_name": p["player_name"], "player_id": p["player_id"],
