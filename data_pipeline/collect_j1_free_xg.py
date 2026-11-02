@@ -169,6 +169,7 @@ def main():
                 "away_team": m.get("away_team_source",""), "home_goals": m.get("home_goals",""),
                 "away_goals": m.get("away_goals","")})
             if source_access_status != "fetched" or old.get("source_name") != "FootyStats":
+                row["xg_status"] = "unverified_legacy_value"
                 row["source_validation_status"] = "unverified_legacy_value"
                 row["source_reverification_note"] = "Value retained for audit only; current source fetch did not re-verify this row. Exclude from model calibration until reverified."
             else:
