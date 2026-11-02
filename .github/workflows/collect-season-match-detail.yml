@@ -97,16 +97,28 @@ jobs:
           branch="${GITHUB_REF#refs/heads/}"
           git fetch origin "$branch"
           if ! git rebase "origin/$branch"; then
-            conflict_file="data/season_match_detail/j1_2026_free_official_audit.json"
             conflicts="$(git diff --name-only --diff-filter=U)"
-            if [ "$conflicts" = "$conflict_file" ]; then
-              # Prefer this run's generated collector audit; manual report updates stay in the Markdown report.
-              git checkout --theirs -- "$conflict_file"
-              git add "$conflict_file"
+            if [ -n "$conflicts" ]; then
+              while IFS= read -r conflict_file; do
+                case "$conflict_file" in
+                  data/season_match_detail/j1_2026_free_official_audit.json|data/season_match_detail/j1_2026_players_free_official.csv|data/season_match_detail/j1_2026_substitutions_free_official.csv|data/season_match_detail/j1_2026_match_xg_free.csv|data/season_match_detail/j1_2026_match_xg_free_audit.json|data/season_match_detail/j1_2026_team_season_xg_free.csv|data/season_match_detail/j1_2026_team_season_xg_free_audit.json|data/season_match_detail/j1_2026_team_xg_from_covered_matches.csv|data/season_match_detail/j1_2026_team_xg_from_covered_matches_audit.json)
+                    # These are generated collector outputs; prefer this run's regenerated data.
+                    git checkout --theirs -- "$conflict_file"
+                    git add "$conflict_file"
+                    ;;
+                  *)
+                    git rebase --abort || true
+                    echo "Unexpected rebase conflict: $conflict_file"
+                    exit 1
+                    ;;
+                esac
+              done <<EOF
+$conflicts
+EOF
               GIT_EDITOR=true git rebase --continue
             else
               git rebase --abort || true
-              echo "Unexpected rebase conflict: $conflicts"
+              echo "Rebase failed without a resolvable generated-file conflict."
               exit 1
             fi
           fi
