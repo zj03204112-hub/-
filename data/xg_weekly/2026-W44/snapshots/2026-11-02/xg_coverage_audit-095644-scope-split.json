@@ -1,0 +1,63 @@
+{
+  "report_version": "xg-daily-scope-split-2026-11-02-v1",
+  "generated_at_beijing": "2026-11-02T09:56:44+08:00",
+  "iso_week": "2026-W44",
+  "coverage_by_beijing_date": {
+    "2026-11-01": {
+      "matches": 28,
+      "with_verified_provider_xg": 9,
+      "missing_xg": 19,
+      "coverage_pct": 32.14,
+      "covered_matches": [
+        "match:premier-league:2026-10-31:tottenham-hotspur:crystal-palace",
+        "match:la-liga:2026-10-31:rayo-vallecano:celta-vigo",
+        "match:la-liga:2026-11-01:getafe:sevilla",
+        "match:la-liga:2026-11-01:racing-santander:real-madrid",
+        "match:bundesliga:2026-10-31:bayern-munich:borussia-dortmund",
+        "match:serie-a:2026-11-01:lazio:cagliari",
+        "match:j1-league:2026-11-01:yokohama-f-marinos:kawasaki-frontale",
+        "match:primeira-liga:2026-11-01:arouca:nacional",
+        "match:brazil-serie-a:2026-10-31:coritiba:vitoria"
+      ]
+    },
+    "2026-11-02_early_completed": {
+      "matches": 16,
+      "with_verified_provider_xg": 2,
+      "missing_xg": 14,
+      "coverage_pct": 12.5,
+      "covered_matches": [
+        "match:eliteserien:2026-11-01:start:lillestrom",
+        "match:eliteserien:2026-11-01:valerenga:tromso"
+      ]
+    }
+  },
+  "coverage_warning": "These percentages are for the 44 matches included in this run only, not the full weekly fixture list for all teams.",
+  "source_discrepancy_policy": "Values from different suppliers remain separate; no average is calculated.",
+  "known_source_discrepancies": [
+    {
+      "match": "Bayern München vs Borussia Dortmund",
+      "providers": [
+        "xG-edge 4.18-0.63",
+        "TACTIX 3.97-0.63"
+      ],
+      "status": "kept separate"
+    },
+    {
+      "match": "Racing Santander vs Real Madrid",
+      "providers": [
+        "MatchCalendar 0.96-3.41",
+        "OddAlerts 1.55-2.60",
+        "MeasuredTake/FotMob 1.15-3.45"
+      ],
+      "status": "kept separate"
+    },
+    {
+      "match": "Coritiba vs Vitória",
+      "providers": [
+        "xG.football 2.16-0.52",
+        "GolMates 2.32-0.53"
+      ],
+      "status": "kept separate"
+    }
+  ]
+}
