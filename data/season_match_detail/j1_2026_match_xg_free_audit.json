@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-11-02T08:28:53Z",
+  "generated_at_utc": "2026-11-02T13:00:00+08:00",
   "matches_in_mapping": 130,
   "source_url": "https://www.oddalerts.com/xg/j-league",
   "source_policy": "free public page only; no paid API",
   "source_counts_in_output": {
-    "OddAlerts": 50,
-    "Tifolab": 59,
-    "ScoutingStats": 11,
+    "Tifolab": 40,
+    "ScoutingStats": 9,
     "VJStats": 9,
-    "FotMob": 1
+    "FotMob": 1,
+    "OddAlerts": 50
   },
   "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
   "sources_in_output": [
@@ -82,13 +82,13 @@
     "https://vjstats.com/matches/7020/shimizu-s-pulse-vs-jef-united-ichihara-chiba",
     "https://www.vjstats.com/matches/6702/yokohama-f-marinos-vs-mito-hollyhock"
   ],
-  "matches_with_xg": 130,
-  "matches_with_verified_xg": 130,
+  "matches_with_xg": 109,
+  "matches_with_verified_xg": 109,
   "matches_with_unverified_legacy_xg": 0,
-  "matches_missing_xg": 0,
-  "source_rows_matched": 130,
-  "source_access_status": "fetched",
-  "source_access_detail": "All 130 mapped J1 2026 fixtures now have match-level xG from free secondary providers. Final 6 rows were populated from VJStats after exact internal ID, date, home/away and score checks. Values remain provider-specific; no cross-provider averaging or imputation.",
+  "matches_missing_xg": 21,
+  "source_rows_matched": 109,
+  "source_access_status": "partially_fetched_and_reconciled",
+  "source_access_detail": "Reconciled against the actual committed CSV on 2026-11-02: 109 of 130 mapped fixtures have both xG values; 21 mapped fixtures have no xG row in the CSV and remain missing. Earlier summary counts of 130 xG rows were stale and have been corrected. xGA is only populated on 50 rows; 59 rows have blank home_xga and away_xga. Do not impute missing values. Team/date/score join audit found no date or score mismatch among the 109 rows that join to the mapping by internal_match_id.",
   "preserved_prior_values_when_source_blocked": false,
   "missing_policy": "blank values only; no score-based or model-based imputation",
   "matches": [
@@ -102,7 +102,9 @@
       "away_xg": 3.44,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1553999",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-07-g大阪-浦和",
@@ -114,7 +116,9 @@
       "away_xg": 3.2,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1554003",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-c大阪-岡山",
@@ -126,7 +130,9 @@
       "away_xg": 0.8,
       "source_name": "ScoutingStats",
       "source_url": "https://scoutingstats.ai/j1-league/cerezo-osaka-v-fagiano-okayama/19717269",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-名古屋-清水",
@@ -138,7 +144,9 @@
       "away_xg": 1.36,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/teams/apifb-team-288-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-福岡-神戸",
@@ -150,19 +158,21 @@
       "away_xg": 1.01,
       "source_name": "VJStats",
       "source_url": "https://vjstats.com/matches/6672/avispa-fukuoka-vs-vissel-kobe",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-柏-水戸",
       "date": "2026-08-08",
       "home": "柏",
       "away": "水戸",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 1.34,
       "away_xg": 1.79,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-281-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-fc東京-町田",
@@ -174,7 +184,9 @@
       "away_xg": 2.36,
       "source_name": "ScoutingStats",
       "source_url": "https://scoutingstats.ai/j1-league/fc-tokyo-v-machida-zelvia/19717273",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-広島-千葉",
@@ -186,7 +198,9 @@
       "away_xg": 0.45,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/teams/apifb-team-282-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-09-東京v-川崎f",
@@ -198,31 +212,33 @@
       "away_xg": 1.36,
       "source_name": "FotMob",
       "source_url": "https://www.fotmob.com/en-GB/matches/tokyo-verdy-vs-kawasaki-frontale/1aq014",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-09-長崎-京都",
       "date": "2026-08-09",
       "home": "長崎",
       "away": "京都",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 1.31,
       "away_xg": 1.13,
-      "source_name": "ScoutingStats",
-      "source_url": "https://scoutingstats.ai/clubs/3509/kyoto-sanga/fixtures?league_id=1085&season_id=28424",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-14-東京v-柏",
       "date": "2026-08-14",
       "home": "東京Ｖ",
       "away": "柏",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 0.71,
       "away_xg": 1.36,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-306-2027-28",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-水戸-g大阪",
@@ -234,31 +250,33 @@
       "away_xg": 1.59,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1554012",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-鹿島-名古屋",
       "date": "2026-08-15",
       "home": "鹿島",
       "away": "名古屋",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 1.38,
       "away_xg": 0.9,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-288-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-清水-横浜fm",
       "date": "2026-08-15",
       "home": "清水",
       "away": "横浜FM",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 1.67,
       "away_xg": 1.14,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-283-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-岡山-長崎",
@@ -270,7 +288,9 @@
       "away_xg": 0.42,
       "source_name": "VJStats",
       "source_url": "https://www.vjstats.com/matches/6725/fagiano-okayama-vs-v-varen-nagasaki",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-福岡-c大阪",
@@ -282,19 +302,21 @@
       "away_xg": 0.78,
       "source_name": "VJStats",
       "source_url": "https://www.vjstats.com/matches/6706/avispa-fukuoka-vs-cerezo-osaka",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-川崎f-京都",
       "date": "2026-08-15",
       "home": "川崎Ｆ",
       "away": "京都",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 1.67,
       "away_xg": 0.7,
-      "source_name": "ScoutingStats",
-      "source_url": "https://scoutingstats.ai/clubs/3509/kyoto-sanga/fixtures?league_id=1085&season_id=28424",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-浦和-広島",
@@ -306,7 +328,9 @@
       "away_xg": 4.31,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/teams/apifb-team-282-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-神戸-fc東京",
@@ -318,43 +342,45 @@
       "away_xg": 1.61,
       "source_name": "VJStats",
       "source_url": "https://vjstats.com/matches/6724/vissel-kobe-vs-fc-tokyo",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-千葉-町田",
       "date": "2026-08-15",
       "home": "千葉",
       "away": "町田",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 0.42,
       "away_xg": 1.24,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-303-2027-28",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-21-柏-長崎",
       "date": "2026-08-21",
       "home": "柏",
       "away": "長崎",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 2.1,
       "away_xg": 0.83,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-281-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-21-fc東京-千葉",
       "date": "2026-08-21",
       "home": "FC東京",
       "away": "千葉",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 2.83,
       "away_xg": 0.51,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-301-2027-28",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-鹿島-福岡",
@@ -366,7 +392,9 @@
       "away_xg": 1.89,
       "source_name": "VJStats",
       "source_url": "https://www.vjstats.com/matches/6731/kashima-antlers-vs-avispa-fukuoka",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-岡山-東京v",
@@ -378,7 +406,9 @@
       "away_xg": 0.14,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556028",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-名古屋-g大阪",
@@ -390,7 +420,9 @@
       "away_xg": 0.9,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/teams/apifb-team-288-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-c大阪-清水",
@@ -402,7 +434,9 @@
       "away_xg": 1.19,
       "source_name": "VJStats",
       "source_url": "https://www.vjstats.com/matches/6924/cerezo-osaka-vs-shimizu-s-pulse",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-京都-水戸",
@@ -414,7 +448,9 @@
       "away_xg": 1.15,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1554017",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-広島-川崎f",
@@ -426,7 +462,9 @@
       "away_xg": 1.19,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/teams/apifb-team-282-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-横浜fm-神戸",
@@ -438,7 +476,9 @@
       "away_xg": 0.5,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556030",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-23-町田-浦和",
@@ -450,19 +490,21 @@
       "away_xg": 2.47,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1554018",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-水戸-町田",
       "date": "2026-08-29",
       "home": "水戸",
       "away": "町田",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 1.36,
       "away_xg": 1.76,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-303-2027-28",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-g大阪-広島",
@@ -474,19 +516,21 @@
       "away_xg": 1.46,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/teams/apifb-team-282-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-清水-柏",
       "date": "2026-08-29",
       "home": "清水",
       "away": "柏",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 0.61,
       "away_xg": 2.1,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-281-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-長崎-fc東京",
@@ -498,7 +542,9 @@
       "away_xg": 1.37,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556040",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-川崎f-千葉",
@@ -510,7 +556,9 @@
       "away_xg": 1.88,
       "source_name": "ScoutingStats",
       "source_url": "https://scoutingstats.ai/j1-league/kawasaki-frontale-v-jef-united/19719047?from=club-hub",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-京都-福岡",
@@ -522,19 +570,21 @@
       "away_xg": 1.34,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556033",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-名古屋-岡山",
       "date": "2026-08-29",
       "home": "名古屋",
       "away": "岡山",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 2.46,
       "away_xg": 0.87,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-288-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-神戸-c大阪",
@@ -546,31 +596,33 @@
       "away_xg": 1.09,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556039",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-東京v-鹿島",
       "date": "2026-08-29",
       "home": "東京Ｖ",
       "away": "鹿島",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 0.09,
       "away_xg": 3.54,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-281-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-浦和-横浜fm",
       "date": "2026-08-29",
       "home": "浦和",
       "away": "横浜FM",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 2.65,
       "away_xg": 1.51,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-296-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-09-02-長崎-g大阪",
@@ -582,7 +634,9 @@
       "away_xg": 1.79,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556049",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-02-東京v-神戸",
@@ -594,19 +648,21 @@
       "away_xg": 1.37,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556048",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-02-町田-川崎f",
       "date": "2026-09-02",
       "home": "町田",
       "away": "川崎Ｆ",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 1.77,
       "away_xg": 0.64,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-303-2027-28",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-09-02-福岡-浦和",
@@ -618,43 +674,45 @@
       "away_xg": 1.5,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556041",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-02-c大阪-柏",
       "date": "2026-09-02",
       "home": "Ｃ大阪",
       "away": "柏",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 1.47,
       "away_xg": 1.25,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-281-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-09-02-水戸-鹿島",
       "date": "2026-09-02",
       "home": "水戸",
       "away": "鹿島",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 1.49,
       "away_xg": 1.2,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-305-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-09-02-千葉-岡山",
       "date": "2026-09-02",
       "home": "千葉",
       "away": "岡山",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 0.56,
       "away_xg": 1.27,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-301-2027-28",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-09-02-清水-fc東京",
@@ -666,7 +724,9 @@
       "away_xg": 1.83,
       "source_name": "VJStats",
       "source_url": "https://www.vjstats.com/matches/6698/shimizu-s-pulse-vs-fc-tokyo",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-02-広島-名古屋",
@@ -678,19 +738,21 @@
       "away_xg": 0.54,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/teams/apifb-team-282-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-02-横浜fm-京都",
       "date": "2026-09-02",
       "home": "横浜FM",
       "away": "京都",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 1.73,
       "away_xg": 1.44,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-296-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-09-05-福岡-水戸",
@@ -702,19 +764,21 @@
       "away_xg": 0.8,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556051",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-名古屋-町田",
       "date": "2026-09-06",
       "home": "名古屋",
       "away": "町田",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 0.85,
       "away_xg": 3.45,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-288-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-岡山-広島",
@@ -726,7 +790,9 @@
       "away_xg": 2.03,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/teams/apifb-team-282-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-鹿島-浦和",
@@ -738,7 +804,9 @@
       "away_xg": 0.68,
       "source_name": "ScoutingStats",
       "source_url": "https://scoutingstats.ai/j1-league/kashima-antlers-v-urawa-reds/19719069?from=club-hub",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-千葉-g大阪",
@@ -750,7 +818,9 @@
       "away_xg": 1.08,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556053",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-c大阪-東京v",
@@ -762,19 +832,21 @@
       "away_xg": 1.3,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556052",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-柏-横浜fm",
       "date": "2026-09-06",
       "home": "柏",
       "away": "横浜FM",
-      "status": "verified_provider_xg",
+      "status": "missing_xg_not_in_current_csv",
       "home_xg": 1.17,
       "away_xg": 1.04,
-      "source_name": "Tifolab",
-      "source_url": "https://www.tifolab.com/teams/apifb-team-281-2026-27",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_name": null,
+      "source_url": null,
+      "source_validation_status": "missing"
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-神戸-長崎",
@@ -786,7 +858,9 @@
       "away_xg": 0.55,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556059",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-川崎f-清水",
@@ -798,7 +872,9 @@
       "away_xg": 1.41,
       "source_name": "ScoutingStats",
       "source_url": "https://scoutingstats.ai/j1-league/kawasaki-frontale-v-shimizu-s-pulse/19719070?from=club-hub",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-06-fc東京-京都",
@@ -810,7 +886,9 @@
       "away_xg": 0.93,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556054",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-11-京都-柏",
@@ -822,7 +900,9 @@
       "away_xg": 2.61,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556062",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-11-神戸-鹿島",
@@ -834,7 +914,9 @@
       "away_xg": 1.31,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556069",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-12-水戸-川崎f",
@@ -846,7 +928,9 @@
       "away_xg": 2.05,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556064",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-12-清水-福岡",
@@ -858,7 +942,9 @@
       "away_xg": 0.6,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556066",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-12-長崎-名古屋",
@@ -870,7 +956,9 @@
       "away_xg": 0.78,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556070",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-12-g大阪-fc東京",
@@ -882,7 +970,9 @@
       "away_xg": 3.21,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556061",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-12-町田-横浜fm",
@@ -894,7 +984,9 @@
       "away_xg": 0.66,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556063",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-12-広島-c大阪",
@@ -906,7 +998,9 @@
       "away_xg": 0.42,
       "source_name": "ScoutingStats",
       "source_url": "https://scoutingstats.ai/j1-league/sanfrecce-hiroshima-v-cerezo-osaka/19719072?from=club-hub",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-13-東京v-千葉",
@@ -918,7 +1012,9 @@
       "away_xg": 1.37,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556068",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-13-浦和-岡山",
@@ -930,7 +1026,9 @@
       "away_xg": 1.41,
       "source_name": "ScoutingStats",
       "source_url": "https://scoutingstats.ai/j1-league/urawa-reds-v-fagiano-okayama/19719078?from=club-hub",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-川崎f-鹿島",
@@ -942,7 +1040,9 @@
       "away_xg": 1.09,
       "source_name": "ScoutingStats",
       "source_url": "https://scoutingstats.ai/j1-league/kawasaki-frontale-v-kashima-antlers/19719087?from=club-hub",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-福岡-広島",
@@ -954,7 +1054,9 @@
       "away_xg": 3.91,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556071",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-清水-千葉",
@@ -966,7 +1068,9 @@
       "away_xg": 1.03,
       "source_name": "VJStats",
       "source_url": "https://vjstats.com/matches/7020/shimizu-s-pulse-vs-jef-united-ichihara-chiba",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-長崎-c大阪",
@@ -978,7 +1082,9 @@
       "away_xg": 1.93,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556079",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-浦和-東京v",
@@ -990,7 +1096,9 @@
       "away_xg": 0.11,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556078",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-岡山-京都",
@@ -1002,7 +1110,9 @@
       "away_xg": 0.57,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556076",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-fc東京-名古屋",
@@ -1014,7 +1124,9 @@
       "away_xg": 0.67,
       "source_name": "ScoutingStats",
       "source_url": "https://scoutingstats.ai/j1-league/fc-tokyo-v-nagoya-grampus/19719090?from=club-hub",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-横浜fm-水戸",
@@ -1026,7 +1138,9 @@
       "away_xg": 0.87,
       "source_name": "VJStats",
       "source_url": "https://www.vjstats.com/matches/6702/yokohama-f-marinos-vs-mito-hollyhock",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-20-町田-柏",
@@ -1038,7 +1152,9 @@
       "away_xg": 1.54,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556075",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-09-20-g大阪-神戸",
@@ -1050,357 +1166,740 @@
       "away_xg": 1.33,
       "source_name": "Tifolab",
       "source_url": "https://www.tifolab.com/matches/1556073",
-      "source_validation_status": "verified_secondary_source_match_and_xg"
+      "source_validation_status": "verified_secondary_source_match_and_xg",
+      "home_xga": null,
+      "away_xga": null
     },
     {
       "internal_match_id": "j1-2026-2026-10-09-柏-神戸",
       "date": "2026-10-09",
       "home": "柏",
       "away": "神戸",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.83,
+      "away_xg": 2,
+      "home_xga": 2,
+      "away_xga": 1.83,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-09-鹿島-g大阪",
       "date": "2026-10-09",
       "home": "鹿島",
       "away": "Ｇ大阪",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.25,
+      "away_xg": 0.88,
+      "home_xga": 0.88,
+      "away_xga": 1.25,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-10-c大阪-横浜fm",
       "date": "2026-10-10",
       "home": "Ｃ大阪",
       "away": "横浜FM",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.63,
+      "away_xg": 1.18,
+      "home_xga": 1.18,
+      "away_xga": 0.63,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-10-fc東京-浦和",
       "date": "2026-10-10",
       "home": "FC東京",
       "away": "浦和",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 2.32,
+      "away_xg": 0.81,
+      "home_xga": 0.81,
+      "away_xga": 2.32,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-10-福岡-岡山",
       "date": "2026-10-10",
       "home": "福岡",
       "away": "岡山",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.13,
+      "away_xg": 0.59,
+      "home_xga": 0.59,
+      "away_xga": 1.13,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-10-京都-町田",
       "date": "2026-10-10",
       "home": "京都",
       "away": "町田",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.34,
+      "away_xg": 0.94,
+      "home_xga": 0.94,
+      "away_xga": 1.34,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-11-千葉-長崎",
       "date": "2026-10-11",
       "home": "千葉",
       "away": "長崎",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.71,
+      "away_xg": 0.77,
+      "home_xga": 0.77,
+      "away_xga": 1.71,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-11-水戸-清水",
       "date": "2026-10-11",
       "home": "水戸",
       "away": "清水",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.71,
+      "away_xg": 0.89,
+      "home_xga": 0.89,
+      "away_xga": 0.71,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-11-東京v-広島",
       "date": "2026-10-11",
       "home": "東京Ｖ",
       "away": "広島",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.5,
+      "away_xg": 1.05,
+      "home_xga": 1.05,
+      "away_xga": 0.5,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-11-川崎f-名古屋",
       "date": "2026-10-11",
       "home": "川崎Ｆ",
       "away": "名古屋",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.77,
+      "away_xg": 1.24,
+      "home_xga": 1.24,
+      "away_xga": 0.77,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-17-清水-g大阪",
       "date": "2026-10-17",
       "home": "清水",
       "away": "Ｇ大阪",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.11,
+      "away_xg": 1.26,
+      "home_xga": 1.26,
+      "away_xga": 1.11,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-17-千葉-横浜fm",
       "date": "2026-10-17",
       "home": "千葉",
       "away": "横浜FM",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.79,
+      "away_xg": 0.8,
+      "home_xga": 0.8,
+      "away_xga": 0.79,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-17-広島-京都",
       "date": "2026-10-17",
       "home": "広島",
       "away": "京都",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.83,
+      "away_xg": 0.67,
+      "home_xga": 0.67,
+      "away_xga": 1.83,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-17-東京v-fc東京",
       "date": "2026-10-17",
       "home": "東京Ｖ",
       "away": "FC東京",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.1,
+      "away_xg": 2.78,
+      "home_xga": 2.78,
+      "away_xga": 0.1,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-17-c大阪-川崎f",
       "date": "2026-10-17",
       "home": "Ｃ大阪",
       "away": "川崎Ｆ",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.82,
+      "away_xg": 1.43,
+      "home_xga": 1.43,
+      "away_xga": 1.82,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-17-鹿島-長崎",
       "date": "2026-10-17",
       "home": "鹿島",
       "away": "長崎",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.08,
+      "away_xg": 1.04,
+      "home_xga": 1.04,
+      "away_xga": 1.08,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-17-水戸-浦和",
       "date": "2026-10-17",
       "home": "水戸",
       "away": "浦和",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.03,
+      "away_xg": 2.96,
+      "home_xga": 2.96,
+      "away_xga": 0.03,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-17-柏-名古屋",
       "date": "2026-10-17",
       "home": "柏",
       "away": "名古屋",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.07,
+      "away_xg": 1.62,
+      "home_xga": 1.62,
+      "away_xga": 1.07,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-18-岡山-神戸",
       "date": "2026-10-18",
       "home": "岡山",
       "away": "神戸",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.17,
+      "away_xg": 2.29,
+      "home_xga": 2.29,
+      "away_xga": 1.17,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-18-町田-福岡",
       "date": "2026-10-18",
       "home": "町田",
       "away": "福岡",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.45,
+      "away_xg": 0.88,
+      "home_xga": 0.88,
+      "away_xga": 1.45,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-21-名古屋-c大阪",
       "date": "2026-10-21",
       "home": "名古屋",
       "away": "Ｃ大阪",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.29,
+      "away_xg": 0.87,
+      "home_xga": 0.87,
+      "away_xga": 1.29,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-21-長崎-広島",
       "date": "2026-10-21",
       "home": "長崎",
       "away": "広島",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 2.36,
+      "away_xg": 1.16,
+      "home_xga": 1.16,
+      "away_xga": 2.36,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-21-岡山-水戸",
       "date": "2026-10-21",
       "home": "岡山",
       "away": "水戸",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.11,
+      "away_xg": 0.29,
+      "home_xga": 0.29,
+      "away_xga": 1.11,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-21-川崎f-神戸",
       "date": "2026-10-21",
       "home": "川崎Ｆ",
       "away": "神戸",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 2.29,
+      "away_xg": 1.48,
+      "home_xga": 1.48,
+      "away_xga": 2.29,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-21-京都-鹿島",
       "date": "2026-10-21",
       "home": "京都",
       "away": "鹿島",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.31,
+      "away_xg": 1.98,
+      "home_xga": 1.98,
+      "away_xga": 0.31,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-21-清水-町田",
       "date": "2026-10-21",
       "home": "清水",
       "away": "町田",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.16,
+      "away_xg": 3.45,
+      "home_xga": 3.45,
+      "away_xga": 0.16,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-21-福岡-g大阪",
       "date": "2026-10-21",
       "home": "福岡",
       "away": "Ｇ大阪",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.86,
+      "away_xg": 0.6,
+      "home_xga": 0.6,
+      "away_xga": 0.86,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-21-横浜fm-東京v",
       "date": "2026-10-21",
       "home": "横浜FM",
       "away": "東京Ｖ",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 2.39,
+      "away_xg": 1.93,
+      "home_xga": 1.93,
+      "away_xga": 2.39,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-21-fc東京-柏",
       "date": "2026-10-21",
       "home": "FC東京",
       "away": "柏",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.89,
+      "away_xg": 1.56,
+      "home_xga": 1.56,
+      "away_xga": 1.89,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-21-浦和-千葉",
       "date": "2026-10-21",
       "home": "浦和",
       "away": "千葉",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.25,
+      "away_xg": 1.47,
+      "home_xga": 1.47,
+      "away_xga": 1.25,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-24-広島-清水",
       "date": "2026-10-24",
       "home": "広島",
       "away": "清水",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.73,
+      "away_xg": 0.53,
+      "home_xga": 0.53,
+      "away_xga": 1.73,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-24-東京v-福岡",
       "date": "2026-10-24",
       "home": "東京Ｖ",
       "away": "福岡",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.37,
+      "away_xg": 1.35,
+      "home_xga": 1.35,
+      "away_xga": 1.37,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-24-神戸-町田",
       "date": "2026-10-24",
       "home": "神戸",
       "away": "町田",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.41,
+      "away_xg": 1.89,
+      "home_xga": 1.89,
+      "away_xga": 1.41,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-24-鹿島-柏",
       "date": "2026-10-24",
       "home": "鹿島",
       "away": "柏",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.9,
+      "away_xg": 0.81,
+      "home_xga": 0.81,
+      "away_xga": 1.9,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-24-g大阪-京都",
       "date": "2026-10-24",
       "home": "Ｇ大阪",
       "away": "京都",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.8,
+      "away_xg": 1.56,
+      "home_xga": 1.56,
+      "away_xga": 1.8,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-25-名古屋-横浜fm",
       "date": "2026-10-25",
       "home": "名古屋",
       "away": "横浜FM",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 2.84,
+      "away_xg": 1.04,
+      "home_xga": 1.04,
+      "away_xga": 2.84,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-25-c大阪-千葉",
       "date": "2026-10-25",
       "home": "Ｃ大阪",
       "away": "千葉",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.78,
+      "away_xg": 1.45,
+      "home_xga": 1.45,
+      "away_xga": 1.78,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-25-浦和-長崎",
       "date": "2026-10-25",
       "home": "浦和",
       "away": "長崎",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.46,
+      "away_xg": 1,
+      "home_xga": 1,
+      "away_xga": 1.46,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-25-川崎f-岡山",
       "date": "2026-10-25",
       "home": "川崎Ｆ",
       "away": "岡山",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.91,
+      "away_xg": 1.14,
+      "home_xga": 1.14,
+      "away_xga": 0.91,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-25-fc東京-水戸",
       "date": "2026-10-25",
       "home": "FC東京",
       "away": "水戸",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 2.67,
+      "away_xg": 0.5,
+      "home_xga": 0.5,
+      "away_xga": 2.67,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-31-京都-清水",
       "date": "2026-10-31",
       "home": "京都",
       "away": "清水",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.79,
+      "away_xg": 0.65,
+      "home_xga": 0.65,
+      "away_xga": 0.79,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-31-岡山-fc東京",
       "date": "2026-10-31",
       "home": "岡山",
       "away": "FC東京",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.08,
+      "away_xg": 3.83,
+      "home_xga": 3.83,
+      "away_xga": 1.08,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-31-水戸-広島",
       "date": "2026-10-31",
       "home": "水戸",
       "away": "広島",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 0.22,
+      "away_xg": 1.46,
+      "home_xga": 1.46,
+      "away_xga": 0.22,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-31-鹿島-c大阪",
       "date": "2026-10-31",
       "home": "鹿島",
       "away": "Ｃ大阪",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.79,
+      "away_xg": 1.49,
+      "home_xga": 1.49,
+      "away_xga": 1.79,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-31-神戸-名古屋",
       "date": "2026-10-31",
       "home": "神戸",
       "away": "名古屋",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.34,
+      "away_xg": 1.4,
+      "home_xga": 1.4,
+      "away_xga": 1.34,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-10-31-kashiwa-urawa",
       "date": "2026-10-31",
       "home": "柏",
       "away": "浦和",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.03,
+      "away_xg": 1.48,
+      "home_xga": 1.48,
+      "away_xga": 1.03,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-11-01-横浜fm-川崎f",
       "date": "2026-11-01",
       "home": "横浜FM",
       "away": "川崎Ｆ",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 2.42,
+      "away_xg": 1.66,
+      "home_xga": 1.66,
+      "away_xga": 2.42,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-11-01-千葉-福岡",
       "date": "2026-11-01",
       "home": "千葉",
       "away": "福岡",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 2.45,
+      "away_xg": 0.23,
+      "home_xga": 0.23,
+      "away_xga": 2.45,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-11-01-長崎-東京v",
       "date": "2026-11-01",
       "home": "長崎",
       "away": "東京Ｖ",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.94,
+      "away_xg": 1.49,
+      "home_xga": 1.49,
+      "away_xga": 1.94,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     },
     {
       "internal_match_id": "j1-2026-2026-11-01-町田-g大阪",
       "date": "2026-11-01",
       "home": "町田",
       "away": "Ｇ大阪",
-      "status": "published_on_free_public_source"
+      "status": "published_on_free_public_source",
+      "home_xg": 1.43,
+      "away_xg": 1.59,
+      "home_xga": 1.59,
+      "away_xga": 1.43,
+      "source_name": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/xg/j-league",
+      "source_validation_status": "verified_from_current_fetch"
     }
-  ]
+  ],
+  "xga_audit": {
+    "rows_with_home_xga": 50,
+    "rows_with_away_xga": 50,
+    "rows_missing_home_xga": 59,
+    "rows_missing_away_xga": 59,
+    "policy": "Do not derive or impute xGA until source semantics are confirmed. Keep each provider's xG/xGA model explicitly labeled."
+  },
+  "mapping_rows_missing_xg": [
+    "j1-2026-2026-08-08-柏-水戸",
+    "j1-2026-2026-08-09-長崎-京都",
+    "j1-2026-2026-08-14-東京v-柏",
+    "j1-2026-2026-08-15-鹿島-名古屋",
+    "j1-2026-2026-08-15-清水-横浜fm",
+    "j1-2026-2026-08-15-川崎f-京都",
+    "j1-2026-2026-08-15-千葉-町田",
+    "j1-2026-2026-08-21-柏-長崎",
+    "j1-2026-2026-08-21-fc東京-千葉",
+    "j1-2026-2026-08-29-水戸-町田",
+    "j1-2026-2026-08-29-清水-柏",
+    "j1-2026-2026-08-29-名古屋-岡山",
+    "j1-2026-2026-08-29-東京v-鹿島",
+    "j1-2026-2026-08-29-浦和-横浜fm",
+    "j1-2026-2026-09-02-町田-川崎f",
+    "j1-2026-2026-09-02-c大阪-柏",
+    "j1-2026-2026-09-02-水戸-鹿島",
+    "j1-2026-2026-09-02-千葉-岡山",
+    "j1-2026-2026-09-02-横浜fm-京都",
+    "j1-2026-2026-09-06-名古屋-町田",
+    "j1-2026-2026-09-06-柏-横浜fm"
+  ],
+  "source_counts_note": "Counts are calculated from the current CSV, not copied from prior summary."
 }
