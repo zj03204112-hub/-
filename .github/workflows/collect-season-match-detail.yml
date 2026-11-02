@@ -96,7 +96,20 @@ jobs:
           git commit -m "data: collect free official J1 lineup and substitution records"
           branch="${GITHUB_REF#refs/heads/}"
           git fetch origin "$branch"
-          git rebase "origin/$branch"
+          if ! git rebase "origin/$branch"; then
+            conflict_file="data/season_match_detail/j1_2026_free_official_audit.json"
+            conflicts="$(git diff --name-only --diff-filter=U)"
+            if [ "$conflicts" = "$conflict_file" ]; then
+              # Prefer this run's generated collector audit; manual report updates stay in the Markdown report.
+              git checkout --theirs -- "$conflict_file"
+              git add "$conflict_file"
+              GIT_EDITOR=true git rebase --continue
+            else
+              git rebase --abort || true
+              echo "Unexpected rebase conflict: $conflicts"
+              exit 1
+            fi
+          fi
           git push origin "HEAD:$branch"
 
       - uses: actions/upload-artifact@v4
