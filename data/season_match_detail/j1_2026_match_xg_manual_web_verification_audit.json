@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-11-02T11:25:00Z",
+  "generated_at_utc": "2026-11-02T11:27:46.661Z",
   "mapped_matches": 130,
-  "manual_rows": 49,
-  "applied_rows": 49,
+  "manual_rows": 51,
+  "applied_rows": 51,
   "rejected_rows": 0,
   "value_discrepancies": [
     {
@@ -18,6 +18,19 @@
       "canonical_status": "verified_from_manual_web_access",
       "archived_value_changed": true,
       "note": "Current page xG differs from archived row 2.02-1.33; current page value retained, discrepancy preserved for audit."
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-水戸-g大阪",
+      "source_name": "Tifolab vs VJStats",
+      "source_url": "https://www.tifolab.com/matches/1554012",
+      "match_date": "2026-08-15",
+      "home_team": "水戸",
+      "away_team": "Ｇ大阪",
+      "score": "1-1",
+      "tifolab_xg": "1.86-1.59",
+      "vjstats_xg": "1.58-1.90",
+      "canonical_status": "verified_from_manual_web_access",
+      "note": "Cross-provider disagreement retained explicitly; no averaging."
     }
   ],
   "applied": [
@@ -706,6 +719,34 @@
       "canonical_status": "verified_from_manual_web_access",
       "archived_value_changed": false,
       "note": "Current Tifolab match page explicitly shows Gamba Osaka 4-3 Urawa on 7 Aug 2026 and xG 1.08-3.20; archived row matches. Source page manually re-opened and checked."
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-名古屋-清水",
+      "source_name": "FotMob",
+      "source_url": "https://www.fotmob.com/en-GB/matches/shimizu-s-pulse-vs-nagoya-grampus/1a0mj2",
+      "match_date": "2026-08-08",
+      "home_team": "名古屋",
+      "away_team": "清水",
+      "score": "0-1",
+      "archived_xg": "",
+      "current_page_xg": "0.84-1.36",
+      "canonical_status": "verified_from_manual_web_access",
+      "archived_value_changed": false,
+      "note": "FotMob match page displays expected goals 0.84-1.36; date 2026-08-08, Nagoya 0-1 Shimizu. Provider-specific, not official J.League xG."
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-水戸-g大阪",
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1554012",
+      "match_date": "2026-08-15",
+      "home_team": "水戸",
+      "away_team": "Ｇ大阪",
+      "score": "1-1",
+      "archived_xg": "",
+      "current_page_xg": "1.86-1.59",
+      "canonical_status": "verified_from_manual_web_access",
+      "archived_value_changed": false,
+      "note": "Tifolab match page displays xG 1.86-1.59; VJStats separately reports 1.58-1.90. Canonical row keeps the Tifolab provider-specific value; no cross-provider averaging."
     }
   ],
   "verification_policy": "Manual web-access verification is recorded only for match-specific public pages whose displayed date, home/away teams, final score and xG pair were checked. Archived/current source discrepancies are retained, not silently overwritten.",
