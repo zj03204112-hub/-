@@ -4,11 +4,11 @@
   "source_url": "https://www.oddalerts.com/xg/j-league",
   "source_policy": "free public page only; no paid API",
   "source_counts_in_output": {
+    "OddAlerts": 50,
     "Tifolab": 34,
-    "": 42,
     "ScoutingStats": 3,
     "FotMob": 1,
-    "OddAlerts": 50
+    "": 42
   },
   "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
   "sources_in_output": [
@@ -40,8 +40,8 @@
     "https://www.tifolab.com/teams/apifb-team-305-2026-27"
   ],
   "matches_with_xg": 88,
-  "matches_with_verified_xg": 38,
-  "matches_with_unverified_legacy_xg": 50,
+  "matches_with_verified_xg": 88,
+  "matches_with_unverified_legacy_xg": 0,
   "matches_missing_xg": 42,
   "source_rows_matched": 88,
   "source_access_status": "fetched",
