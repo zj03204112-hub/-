@@ -34,7 +34,7 @@ def minute(s: str):
 def cells(row):
     return [clean(c.get_text(" ", strip=True)) for c in row.find_all(["th", "td"], recursive=False)]
 
-def parse_report(url: str):
+def parse_report(url: str, home_team: str = "", away_team: str = ""):
     response = SESSION.get(url, timeout=30)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
@@ -83,6 +83,34 @@ def parse_report(url: str):
                         pending_out = None
             if pending_out:
                 issues.append({"type": "unpaired_substitution_out", "team": team, **pending_out})
+    # The official jleague.jp match pages use a different layout from Data Site tables.
+    # Recover the 22 starters from its accessible text section when table parsing found none.
+    if not players and "jleague.jp/" in url:
+        lines = [clean(x) for x in soup.get_text("\\n").splitlines()]
+        lines = [x for x in lines if x]
+        start = next((i for i, x in enumerate(lines) if "Starting Line-ups Announcement" in x or "先発メンバー" in x), None)
+        if start is not None:
+            # Starting lineups are rendered as alternating home/away player position and name.
+            roster = []
+            for idx in range(start + 1, min(len(lines), start + 100)):
+                m = re.match(r"^(GK|DF|MF|FW)\\s+(\\d{1,3})$", lines[idx], re.I)
+                if m and idx + 1 < len(lines):
+                    name = lines[idx + 1]
+                    if name and not re.match(r"^(GK|DF|MF|FW)\\s+\\d+$", name, re.I):
+                        roster.append((m.group(1).upper(), m.group(2), name))
+                if len(roster) >= 22:
+                    break
+            if len(roster) >= 22:
+                for n, (pos, shirt, name) in enumerate(roster[:22]):
+                    is_home = n % 2 == 0
+                    players.append({
+                        "team_report_label": home_team if is_home else away_team,
+                        "section": "starting", "position": pos, "shirt_number": shirt,
+                        "player_name": name, "player_id": "",
+                        "player_id_status": "not_published_in_source", "source_time_cell": "",
+                    })
+            else:
+                issues.append({"type": "official_site_lineup_text_not_parsed", "roster_rows_found": len(roster)})
     return players, subs, issues
 
 def write_csv(path, rows, fields):
@@ -107,7 +135,7 @@ def main():
                   "source_url": url, "fetch_status": "pending", "player_rows": 0,
                   "starting_rows": 0, "bench_rows": 0, "substitution_rows": 0, "issues": []}
         try:
-            players, subs, issues = parse_report(url)
+            players, subs, issues = parse_report(url, clean(match.get("home_team_source")), clean(match.get("away_team_source")))
             for p in players:
                 player_rows.append({"internal_match_id": result["internal_match_id"],
                     "provider_event_id": result["provider_event_id"], "match_date": result["match_date"],
