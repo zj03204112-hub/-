@@ -1,20 +1,20 @@
 {
-  "generated_at_utc": "2026-11-02T06:18:31.979798+00:00",
+  "generated_at_utc": "2026-11-02T06:20:02.405830+00:00",
   "source_policy": "free official J.League pages only; no paid API",
   "matches_in_mapping": 130,
   "reports_fetched": 130,
   "reports_failed": 0,
-  "player_rows_extracted": 5037,
-  "starting_rows_extracted": 2772,
-  "bench_rows_extracted": 2265,
-  "substitution_rows_extracted": 1222,
-  "matches_with_complete_starting_xi": 126,
-  "matches_without_complete_starting_xi": 4,
-  "bench_rows_team_assigned": 2265,
+  "player_rows_extracted": 5017,
+  "starting_rows_extracted": 2860,
+  "bench_rows_extracted": 2157,
+  "substitution_rows_extracted": 1164,
+  "matches_with_complete_starting_xi": 130,
+  "matches_without_complete_starting_xi": 0,
+  "bench_rows_team_assigned": 2157,
   "bench_rows_team_unresolved": 0,
   "substitution_rows_missing_minute": 0,
-  "substitution_rows_missing_player_out_id": 1222,
-  "substitution_rows_missing_player_in_id": 1222,
+  "substitution_rows_missing_player_out_id": 1164,
+  "substitution_rows_missing_player_in_id": 1164,
   "player_ids": "not fabricated; blank where the official source does not expose stable IDs",
   "actual_minutes": "not fabricated; blank unless published in the source; source_time_cell retained",
   "xg_xga": "not supplied by these official match reports; remains missing until a verified free source is found",
@@ -249,12 +249,12 @@
       "match_date": "2026-08-15",
       "home_team": "川崎Ｆ",
       "away_team": "京都",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34534",
+      "source_url": "https://www.jleague.jp/en/match/j1/2026/081507/",
       "fetch_status": "fetched",
-      "player_rows": 40,
+      "player_rows": 22,
       "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 10,
+      "bench_rows": 0,
+      "substitution_rows": 0,
       "issues": []
     },
     {
@@ -319,12 +319,12 @@
       "match_date": "2026-08-21",
       "home_team": "FC東京",
       "away_team": "千葉",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34538",
+      "source_url": "https://www.jleague.jp/en/match/j1/2026/082101/",
       "fetch_status": "fetched",
-      "player_rows": 40,
+      "player_rows": 22,
       "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 10,
+      "bench_rows": 0,
+      "substitution_rows": 0,
       "issues": []
     },
     {
@@ -333,12 +333,12 @@
       "match_date": "2026-08-22",
       "home_team": "鹿島",
       "away_team": "福岡",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34539",
+      "source_url": "https://www.jleague.jp/match/j1/2026/082201/",
       "fetch_status": "fetched",
-      "player_rows": 40,
+      "player_rows": 22,
       "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 10,
+      "bench_rows": 0,
+      "substitution_rows": 0,
       "issues": []
     },
     {
@@ -347,12 +347,12 @@
       "match_date": "2026-08-22",
       "home_team": "岡山",
       "away_team": "東京Ｖ",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34540",
+      "source_url": "https://www.jleague.jp/match/j1/2026/082202/lineup/",
       "fetch_status": "fetched",
-      "player_rows": 40,
+      "player_rows": 22,
       "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 10,
+      "bench_rows": 0,
+      "substitution_rows": 0,
       "issues": []
     },
     {
@@ -417,12 +417,12 @@
       "match_date": "2026-08-22",
       "home_team": "横浜FM",
       "away_team": "神戸",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34545",
+      "source_url": "https://www.jleague.jp/match/j1/2026/082207/",
       "fetch_status": "fetched",
-      "player_rows": 40,
+      "player_rows": 22,
       "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 9,
+      "bench_rows": 0,
+      "substitution_rows": 0,
       "issues": []
     },
     {
@@ -1005,12 +1005,12 @@
       "match_date": "2026-09-19",
       "home_team": "川崎Ｆ",
       "away_team": "鹿島",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34596",
+      "source_url": "https://www.jleague.jp/match/j1/2026/091909/",
       "fetch_status": "fetched",
-      "player_rows": 40,
+      "player_rows": 22,
       "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 9,
+      "bench_rows": 0,
+      "substitution_rows": 0,
       "issues": []
     },
     {
@@ -1791,16 +1791,11 @@
       "away_team": "川崎Ｆ",
       "source_url": "https://www.jleague.jp/en/match/j1/2026/110101/",
       "fetch_status": "fetched",
-      "player_rows": 0,
-      "starting_rows": 0,
+      "player_rows": 22,
+      "starting_rows": 22,
       "bench_rows": 0,
       "substitution_rows": 0,
-      "issues": [
-        {
-          "type": "official_site_lineup_text_not_parsed",
-          "roster_rows_found": 0
-        }
-      ]
+      "issues": []
     },
     {
       "internal_match_id": "j1-2026-2026-11-01-千葉-福岡",
@@ -1810,16 +1805,11 @@
       "away_team": "福岡",
       "source_url": "https://www.jleague.jp/en/match/j1/2026/110102/",
       "fetch_status": "fetched",
-      "player_rows": 0,
-      "starting_rows": 0,
+      "player_rows": 22,
+      "starting_rows": 22,
       "bench_rows": 0,
       "substitution_rows": 0,
-      "issues": [
-        {
-          "type": "official_site_lineup_text_not_parsed",
-          "roster_rows_found": 0
-        }
-      ]
+      "issues": []
     },
     {
       "internal_match_id": "j1-2026-2026-11-01-長崎-東京v",
@@ -1829,35 +1819,25 @@
       "away_team": "東京Ｖ",
       "source_url": "https://www.jleague.jp/match/j1/2026/110103/",
       "fetch_status": "fetched",
-      "player_rows": 0,
-      "starting_rows": 0,
+      "player_rows": 22,
+      "starting_rows": 22,
       "bench_rows": 0,
       "substitution_rows": 0,
-      "issues": [
-        {
-          "type": "official_site_lineup_text_not_parsed",
-          "roster_rows_found": 0
-        }
-      ]
+      "issues": []
     },
     {
       "internal_match_id": "j1-2026-2026-11-01-町田-g大阪",
-      "provider_event_id": "",
+      "provider_event_id": "34642",
       "match_date": "2026-11-01",
       "home_team": "町田",
       "away_team": "Ｇ大阪",
       "source_url": "https://www.jleague.jp/match/j1/2026/110109/",
       "fetch_status": "fetched",
-      "player_rows": 0,
-      "starting_rows": 0,
+      "player_rows": 22,
+      "starting_rows": 22,
       "bench_rows": 0,
       "substitution_rows": 0,
-      "issues": [
-        {
-          "type": "official_site_lineup_text_not_parsed",
-          "roster_rows_found": 0
-        }
-      ]
+      "issues": []
     }
   ]
 }
