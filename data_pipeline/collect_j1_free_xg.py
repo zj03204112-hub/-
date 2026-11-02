@@ -45,16 +45,26 @@ def norm(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", s).strip()
 
 def team_aliases(name: str):
-    key = norm(name).replace(" ", "")
-    # Japanese source team names are keys; normalize full-width Latin aliases.
+    # Preserve Japanese characters when matching source keys; normalize full-width Latin letters.
+    key = (name or "").replace("Ｆ", "F").replace("Ｖ", "V").replace("Ｇ", "G").replace("Ｃ", "C").casefold().replace(" ", "")
     for k, vals in ALIASES.items():
-        if norm(k).replace(" ", "") == key:
+        kk = k.replace("Ｆ", "F").replace("Ｖ", "V").replace("Ｇ", "G").replace("Ｃ", "C").casefold().replace(" ", "")
+        if kk == key:
             return vals
     return [name.lower()]
 
 def contains_team(text: str, aliases: list[str]) -> bool:
     hay = " " + norm(text) + " "
-    return any((" " + norm(a) + " ") in hay for a in aliases)
+    for alias in aliases:
+        a = norm(alias)
+        if not a:
+            continue
+        if (" " + a + " ") in hay:
+            # Prevent bare "Tokyo" from accidentally matching Tokyo Verdy.
+            if a == "tokyo" and " tokyo verdy " in hay and " fc tokyo " not in hay:
+                continue
+            return True
+    return False
 
 def load_mapping():
     with MAPPING.open(encoding="utf-8-sig", newline="") as f:
