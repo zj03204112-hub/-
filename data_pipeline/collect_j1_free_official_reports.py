@@ -112,7 +112,8 @@ def parse_report(url: str, home_team: str = "", away_team: str = ""):
             roster = []
             # Some J.League pages emit "GK 49" and the name in adjacent nodes;
             # others concatenate position, number and name into one text node.
-            for line in lines[start + 1:min(len(lines), start + 180)]:
+            window = lines[start + 1:min(len(lines), start + 180)]
+            for line_index, line in enumerate(window):
                 chunks = re.split(r"(?=(?:GK|DF|MF|FW)\s*\d{1,3}(?:\s|[^0-9]))", line, flags=re.I)
                 for chunk in chunks:
                     chunk = clean(chunk)
@@ -120,10 +121,12 @@ def parse_report(url: str, home_team: str = "", away_team: str = ""):
                     if not m:
                         continue
                     pos, shirt, name = m.group(1).upper(), m.group(2), clean(m.group(3))
-                    # If name is in a following text node, use that node; do not treat
-                    # the next player's position as part of this player's name.
-                    if not name and len(roster) < 22:
-                        continue
+                    # On some official pages the shirt/position and player name are separate
+                    # text nodes. Accept the next line only when it is not another player token.
+                    if not name and line_index + 1 < len(window):
+                        candidate = clean(window[line_index + 1])
+                        if candidate and not re.match(r"^(?:GK|DF|MF|FW)\s*\d{1,3}\b", candidate, re.I):
+                            name = candidate
                     name = re.split(r"\s+(?:GK|DF|MF|FW)\s*\d{1,3}\b", name, maxsplit=1, flags=re.I)[0].strip()
                     name = re.sub(r"^(?:Image:.*?\s+)?", "", name).strip()
                     if name and not name.lower().startswith(("image:", "formation", "sub in", "sub out")):
