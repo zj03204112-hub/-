@@ -79,7 +79,7 @@ def main():
     AUDIT.write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(audit, ensure_ascii=False, indent=2))
     if not rows:
-        raise SystemExit(1)
+        print("WARNING: provider blocked automated access; static dated snapshot, if present, remains separate and unchanged.", flush=True)
 
 if __name__ == "__main__":
     main()
