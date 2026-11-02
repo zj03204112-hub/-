@@ -44,7 +44,7 @@ permissions:
 
 concurrency:
   group: season-detail-${{ inputs.league || (github.event_name == 'push' && 'j1') || 'premier-league' }}-${{ inputs.season || (github.event_name == 'push' && '2026') || '2025' }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   collect:
