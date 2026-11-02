@@ -1,0 +1,393 @@
+{
+  "report_version": "daily-schedule-2026-11-02-v1",
+  "generated_at_beijing": "2026-11-02T09:56:44+08:00",
+  "beijing_date": "2026-11-02",
+  "prediction_check_target_beijing": "2026-11-02T15:00:00+08:00",
+  "method": "Convert each scheduled kickoff to Beijing time; only predict if 6-12 hours remain at 15:00. This 10:00 run only registers candidates and does not emit predictions.",
+  "completed_early_on_beijing_date": [
+    {
+      "match_id": "match:premier-league:2026-11-01:liverpool:arsenal",
+      "competition": "Premier League",
+      "home": "Liverpool",
+      "away": "Arsenal",
+      "score_90min": "0-1",
+      "kickoff_utc": "2026-11-01T16:30:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.reuters.com/sports/soccer/arsenal-claim-top-spot-havertz-seals-win-liverpool-2026-11-01/"
+      ]
+    },
+    {
+      "match_id": "match:la-liga:2026-11-01:elche:valencia",
+      "competition": "La Liga",
+      "home": "Elche",
+      "away": "Valencia",
+      "score_90min": "0-1",
+      "kickoff_utc": "2026-11-01T16:30:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.reuters.com/sports/soccer/real-madrid-extend-winning-run-with-3-0-victory-at-racing-santander-2026-11-01/"
+      ]
+    },
+    {
+      "match_id": "match:la-liga:2026-11-01:athletic-bilbao:real-sociedad",
+      "competition": "La Liga",
+      "home": "Athletic Bilbao",
+      "away": "Real Sociedad",
+      "score_90min": "2-1",
+      "kickoff_utc": "2026-11-01T20:00:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.reuters.com/sports/soccer/real-madrid-extend-winning-run-with-3-0-victory-at-racing-santander-2026-11-01/"
+      ]
+    },
+    {
+      "match_id": "match:bundesliga:2026-11-01:eintracht-frankfurt:hamburger-sv",
+      "competition": "Bundesliga",
+      "home": "Eintracht Frankfurt",
+      "away": "Hamburger SV",
+      "score_90min": "3-1",
+      "kickoff_utc": "2026-11-01T16:30:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.reuters.com/sports/soccer/frankfurt-cruise-3-1-home-win-over-hamburg-2026-11-01/"
+      ]
+    },
+    {
+      "match_id": "match:serie-a:2026-11-01:lecce:genoa",
+      "competition": "Serie A",
+      "home": "Lecce",
+      "away": "Genoa",
+      "score_90min": "1-2",
+      "kickoff_utc": "2026-11-01T17:00:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.reuters.com/sports/soccer/lazio-move-three-points-clear-with-cagliari-win-juventus-beat-napoli-2026-11-01/"
+      ]
+    },
+    {
+      "match_id": "match:serie-a:2026-11-01:juventus:napoli",
+      "competition": "Serie A",
+      "home": "Juventus",
+      "away": "Napoli",
+      "score_90min": "2-0",
+      "kickoff_utc": "2026-11-01T19:45:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.reuters.com/sports/soccer/lazio-move-three-points-clear-with-cagliari-win-juventus-beat-napoli-2026-11-01/"
+      ]
+    },
+    {
+      "match_id": "match:ligue-1:2026-11-01:lyon:angers",
+      "competition": "Ligue 1",
+      "home": "Lyon",
+      "away": "Angers",
+      "score_90min": "2-0",
+      "kickoff_utc": "2026-11-01T16:15:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.footballwebpages.co.uk/french-ligue-1/fixtures-results"
+      ]
+    },
+    {
+      "match_id": "match:ligue-1:2026-11-01:paris-fc:monaco",
+      "competition": "Ligue 1",
+      "home": "Paris FC",
+      "away": "Monaco",
+      "score_90min": "3-1",
+      "kickoff_utc": "2026-11-01T16:15:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.footballwebpages.co.uk/french-ligue-1/fixtures-results"
+      ]
+    },
+    {
+      "match_id": "match:ligue-1:2026-11-01:marseille:toulouse",
+      "competition": "Ligue 1",
+      "home": "Marseille",
+      "away": "Toulouse",
+      "score_90min": "2-0",
+      "kickoff_utc": "2026-11-01T19:45:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.footballwebpages.co.uk/french-ligue-1/fixtures-results"
+      ]
+    },
+    {
+      "match_id": "match:primeira-liga:2026-11-01:academico-viseu:rio-ave",
+      "competition": "Primeira Liga",
+      "home": "Académico de Viseu",
+      "away": "Rio Ave",
+      "score_90min": "2-1",
+      "kickoff_utc": "2026-11-01T18:00:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.footballwebpages.co.uk/portuguese-primeira-liga/fixtures-results"
+      ]
+    },
+    {
+      "match_id": "match:primeira-liga:2026-11-01:maritimo:santa-clara",
+      "competition": "Primeira Liga",
+      "home": "Marítimo",
+      "away": "Santa Clara",
+      "score_90min": "0-2",
+      "kickoff_utc": "2026-11-01T18:00:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.footballwebpages.co.uk/portuguese-primeira-liga/fixtures-results"
+      ]
+    },
+    {
+      "match_id": "match:primeira-liga:2026-11-01:braga:famalicao",
+      "competition": "Primeira Liga",
+      "home": "Braga",
+      "away": "Famalicão",
+      "score_90min": "3-0",
+      "kickoff_utc": "2026-11-01T20:30:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.skysports.com/football/braga-vs-fc-famalicao/live/564251",
+        "https://www.sporttv.pt/noticias/858468/sc-braga-vinga-se-da-taca-da-liga-e-bate-famalicao"
+      ]
+    },
+    {
+      "match_id": "match:eliteserien:2026-11-01:kfum-oslo:hamkam",
+      "competition": "Eliteserien",
+      "home": "KFUM Oslo",
+      "away": "HamKam",
+      "score_90min": "2-2",
+      "kickoff_utc": "2026-11-01T16:00:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www--worldfootball--net.c.hs-data.com/match-report/co129/eliteserien/ma11797147/kfum-oslo_hamarkameratene/",
+        "https://www.viasport.no/fotball/kamp/1494792"
+      ]
+    },
+    {
+      "match_id": "match:eliteserien:2026-11-01:start:lillestrom",
+      "competition": "Eliteserien",
+      "home": "Start",
+      "away": "Lillestrøm",
+      "score_90min": "0-1",
+      "kickoff_utc": "2026-11-01T16:00:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://cornerflick.com/football/eliteserien/matches/start-vs-lillestrom-eliteserien-2026-11-01",
+        "https://www.viasport.no/fotball/kamp/1494794"
+      ]
+    },
+    {
+      "match_id": "match:eliteserien:2026-11-01:sarpsborg-08:kristiansund",
+      "competition": "Eliteserien",
+      "home": "Sarpsborg 08",
+      "away": "Kristiansund",
+      "score_90min": "2-4",
+      "kickoff_utc": "2026-11-01T16:00:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://www.oddalerts.com/livescores/kristiansund-vs-sarpsborg-08/8584-8585",
+        "https://www.viasport.no/fotball/kamp/1494793"
+      ]
+    },
+    {
+      "match_id": "match:eliteserien:2026-11-01:valerenga:tromso",
+      "competition": "Eliteserien",
+      "home": "Vålerenga",
+      "away": "Tromsø",
+      "score_90min": "4-0",
+      "kickoff_utc": "2026-11-01T18:15:00Z",
+      "beijing_match_date": "2026-11-02",
+      "source_urls": [
+        "https://cornerflick.com/football/eliteserien/matches/valerenga-vs-tromso-eliteserien-2026-11-01",
+        "https://www.viasport.no/fotball/kamp/1494795"
+      ]
+    }
+  ],
+  "eligible_at_15_00": [
+    {
+      "match_id": "match:serie-a:2026-11-02:sassuolo:fiorentina",
+      "competition": "Serie A",
+      "category": "domestic-league",
+      "home": "Sassuolo",
+      "away": "Fiorentina",
+      "kickoff_utc": "2026-11-02T17:30:00Z",
+      "kickoff_beijing": "2026-11-03T01:30:00+08:00",
+      "hours_from_15_00": 10.5,
+      "window_status": "IN_6_TO_12_HOUR_WINDOW",
+      "market": {
+        "official_sporttery_handicap": {
+          "status": "NOT_FOUND",
+          "source": null,
+          "captured_at_beijing": null
+        },
+        "third_party_open_to_latest": {
+          "source": "SteamWatch / Pinnacle",
+          "url": "https://www.steamwatch.io/match/66608b64d462d1d3deabe573c8456d86",
+          "latest_snapshot_utc": "2026-11-01T04:02:00Z",
+          "latest_snapshot_beijing": "2026-11-01T12:02:00+08:00",
+          "age_at_run_hours": 21.9,
+          "one_x_two_open": {
+            "home": 2.56,
+            "draw": 3.48,
+            "away": 2.62
+          },
+          "one_x_two_latest": {
+            "home": 2.9,
+            "draw": 3.82,
+            "away": 2.36
+          },
+          "total_line_open": 2.75,
+          "total_line_latest": 3,
+          "asian_handicap_open": "Sassuolo 0",
+          "asian_handicap_latest": "Sassuolo +0.25",
+          "status": "STALE_REFERENCE_NOT_CURRENT_ENOUGH_FOR_FINAL_PREDICTION"
+        },
+        "third_party_unstamped_reference": {
+          "source": "Oddschecker",
+          "url": "https://www.oddschecker.com/football/italy/serie-a/sassuolo-v-fiorentina/winner",
+          "prices": {
+            "home": "19/10",
+            "draw": "11/4",
+            "away": "7/5"
+          },
+          "upstream_timestamp": "NOT_EXPOSED",
+          "official_sporttery": false
+        }
+      },
+      "recent_form": {
+        "sassuolo": [
+          "Sassuolo 2-6 Lazio",
+          "Como 2-0 Sassuolo",
+          "Frosinone 4-2 Sassuolo"
+        ],
+        "fiorentina": [
+          "Fiorentina 2-2 Atalanta",
+          "Inter 2-1 Fiorentina",
+          "Fiorentina 1-3 Como"
+        ],
+        "source": "https://www.fotmob.com/matches/sassuolo-vs-fiorentina/28u7rc"
+      },
+      "injuries_and_availability": {
+        "sassuolo": [
+          "Fedde Leysen out for season",
+          "Kristian Thorstvedt suspended",
+          "Daniel Boloca returning/training status needs recheck",
+          "Ismaël Koné doubtful",
+          "Yeferson Paz status uncertain"
+        ],
+        "fiorentina": [
+          "Marin Pongračić expected out",
+          "Fabiano Parisi out",
+          "Arthur Atta doubtful",
+          "Luca Ranieri doubtful"
+        ],
+        "source": "https://www.fotmob.com/matches/sassuolo-vs-fiorentina/28u7rc",
+        "status": "PRE_MATCH_REPORT_NOT_OFFICIAL_LINEUP"
+      },
+      "tactics_reference": {
+        "sassuolo": "probable 4-3-3",
+        "fiorentina": "probable 4-3-2-1",
+        "source": "https://www.agimeg.it/sassuolo-fiorentina-serie-a-2026-pronostico/"
+      },
+      "referee": {
+        "status": "NOT_VERIFIED_FROM_OFFICIAL_ASSIGNMENT_SOURCE",
+        "name": null
+      },
+      "weather": {
+        "status": "NOT_CAPTURED_FOR_KICKOFF_TIME",
+        "source": null
+      },
+      "prematch_xg_snapshot": {
+        "status": "NOT_FROZEN_IN_ARCHIVE",
+        "note": "Do not use post-match xG; capture a time-stamped pre-kickoff source in the 15:00 run."
+      },
+      "official_lineups": {
+        "status": "NOT_YET_PUBLISHED_AT_10_00"
+      },
+      "next_opponent_importance": {
+        "status": "NOT_VERIFIED"
+      },
+      "prediction_status": "NOT_GENERATED_IN_10_00_RUN; recheck at 15:00. If official JC handicap remains unavailable, handicap H/D/A must stay unverified."
+    }
+  ],
+  "outside_6_to_12_hour_window_at_15_00": [
+    {
+      "match": "Atalanta vs Parma",
+      "competition": "Serie A",
+      "kickoff_utc": "2026-11-02T19:45:00Z",
+      "kickoff_beijing": "2026-11-03T03:45:00+08:00",
+      "hours_from_15_00": 12.75,
+      "status": "OUTSIDE_WINDOW_BY_45_MIN",
+      "market_source": "https://betwatch.io/odds/serie-a/atalanta-vs-parma-2026-11-02",
+      "market_capture_utc": "2026-11-01T10:10:00Z",
+      "official_sporttery_handicap": "NOT_FOUND",
+      "referee": "Valerio Crezzini (third-party schedule source)",
+      "referee_source": "https://www.oddsbook.com/football/italy/serie-a/atalanta-vs-parma/1550178/",
+      "injury_source": "https://nonsoloatalanta.com/2026/10/31/atalanta-parma-infermerie-agli-opposti-dieci-indisponibili-per-sarri-gilardino-ha-quasi-tutti-a-disposizione/",
+      "notes": "Atalanta injury list reportedly extensive; no prediction in this run."
+    },
+    {
+      "match": "Lorient vs Brest",
+      "competition": "Ligue 1",
+      "kickoff_utc": "2026-11-02T19:45:00Z",
+      "kickoff_beijing": "2026-11-03T03:45:00+08:00",
+      "hours_from_15_00": 12.75,
+      "status": "OUTSIDE_WINDOW_BY_45_MIN",
+      "market_source": "https://www.oddschecker.com/football/france/ligue-1/lorient-v-brest/winner",
+      "market_timestamp": "NOT_EXPOSED",
+      "official_sporttery_handicap": "NOT_FOUND",
+      "injury_source": "https://www.fotmob.com/en-GB/matches/brest-vs-lorient/2g6hwg",
+      "tactics_reference": "Lorient 3-4-2-1 vs Brest 4-2-3-1; source https://www.theyscored.com/football-predictions/france-ligue-1/lorient-vs-brest-prediction-02-november-2026_1519",
+      "notes": "Official referee and match-time weather not verified."
+    },
+    {
+      "match": "Newcastle United vs Everton",
+      "competition": "Premier League",
+      "kickoff_utc": "2026-11-02T20:00:00Z",
+      "kickoff_beijing": "2026-11-03T04:00:00+08:00",
+      "hours_from_15_00": 13,
+      "status": "OUTSIDE_WINDOW"
+    },
+    {
+      "match": "Deportivo Alavés vs Osasuna",
+      "competition": "La Liga",
+      "kickoff_utc": "2026-11-02T20:00:00Z",
+      "kickoff_beijing": "2026-11-03T04:00:00+08:00",
+      "hours_from_15_00": 13,
+      "status": "OUTSIDE_WINDOW"
+    },
+    {
+      "match": "Benfica vs Alverca",
+      "competition": "Primeira Liga",
+      "kickoff_utc": "2026-11-02T20:15:00Z",
+      "kickoff_beijing": "2026-11-03T04:15:00+08:00",
+      "hours_from_15_00": 13.25,
+      "status": "OUTSIDE_WINDOW"
+    },
+    {
+      "match": "Gil Vicente vs Vitória Guimarães",
+      "competition": "Primeira Liga",
+      "kickoff_utc": "2026-11-02T20:15:00Z",
+      "kickoff_beijing": "2026-11-03T04:15:00+08:00",
+      "hours_from_15_00": 13.25,
+      "status": "OUTSIDE_WINDOW"
+    },
+    {
+      "match": "RB Bragantino vs Santos",
+      "competition": "Brazil Série A",
+      "kickoff_utc": "2026-11-02T23:00:00Z",
+      "kickoff_beijing": "2026-11-03T07:00:00+08:00",
+      "hours_from_15_00": 16,
+      "status": "OUTSIDE_WINDOW"
+    }
+  ],
+  "missing_fields": [
+    "Official Chinese Sports Lottery handicap and opening/current movement for all candidates except third-party market references",
+    "Timestamped official starting lineups",
+    "Official referee assignment for Sassuolo-Fiorentina and Lorient-Brest",
+    "Kickoff-time weather capture",
+    "Frozen pre-match xG inputs",
+    "Verified next-opponent importance/schedule motivation for all candidates"
+  ],
+  "note": "Odds are supporting market context only and must not independently determine the result prediction."
+}
