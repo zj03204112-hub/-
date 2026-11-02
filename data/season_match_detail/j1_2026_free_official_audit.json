@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-11-02T04:38:14.188730+00:00",
+  "generated_at_utc": "2026-11-02T06:10:52.846Z",
   "source_policy": "free official J.League pages only; no paid API",
-  "matches_in_mapping": 126,
+  "matches_in_mapping": 130,
   "reports_fetched": 126,
   "reports_failed": 0,
-  "player_rows_extracted": 5037,
-  "starting_rows_extracted": 2772,
-  "bench_rows_extracted": 2265,
-  "substitution_rows_extracted": 1222,
+  "player_rows_extracted": 4797,
+  "starting_rows_extracted": 2640,
+  "bench_rows_extracted": 2157,
+  "substitution_rows_extracted": 1164,
   "player_ids": "not fabricated; blank where the official source does not expose stable IDs",
   "actual_minutes": "not fabricated; blank unless published in the source; source_time_cell retained",
   "xg_xga": "not supplied by these official match reports; remains missing until a verified free source is found",
@@ -242,13 +242,18 @@
       "match_date": "2026-08-15",
       "home_team": "川崎Ｆ",
       "away_team": "京都",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34534",
+      "source_url": "https://www.jleague.jp/en/match/j1/2026/081507/",
       "fetch_status": "fetched",
-      "player_rows": 40,
-      "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 10,
-      "issues": []
+      "player_rows": 0,
+      "starting_rows": 0,
+      "bench_rows": 0,
+      "substitution_rows": 0,
+      "issues": [
+        {
+          "type": "official_lineup_text_not_parsed",
+          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
+        }
+      ]
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-浦和-広島",
@@ -312,13 +317,18 @@
       "match_date": "2026-08-21",
       "home_team": "FC東京",
       "away_team": "千葉",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34538",
+      "source_url": "https://www.jleague.jp/en/match/j1/2026/082101/",
       "fetch_status": "fetched",
-      "player_rows": 40,
-      "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 10,
-      "issues": []
+      "player_rows": 0,
+      "starting_rows": 0,
+      "bench_rows": 0,
+      "substitution_rows": 0,
+      "issues": [
+        {
+          "type": "official_lineup_text_not_parsed",
+          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
+        }
+      ]
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-鹿島-福岡",
@@ -326,13 +336,18 @@
       "match_date": "2026-08-22",
       "home_team": "鹿島",
       "away_team": "福岡",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34539",
+      "source_url": "https://www.jleague.jp/match/j1/2026/082201/",
       "fetch_status": "fetched",
-      "player_rows": 40,
-      "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 10,
-      "issues": []
+      "player_rows": 0,
+      "starting_rows": 0,
+      "bench_rows": 0,
+      "substitution_rows": 0,
+      "issues": [
+        {
+          "type": "official_lineup_text_not_parsed",
+          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
+        }
+      ]
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-岡山-東京v",
@@ -340,13 +355,18 @@
       "match_date": "2026-08-22",
       "home_team": "岡山",
       "away_team": "東京Ｖ",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34540",
+      "source_url": "https://www.jleague.jp/match/j1/2026/082202/lineup/",
       "fetch_status": "fetched",
-      "player_rows": 40,
-      "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 10,
-      "issues": []
+      "player_rows": 0,
+      "starting_rows": 0,
+      "bench_rows": 0,
+      "substitution_rows": 0,
+      "issues": [
+        {
+          "type": "official_lineup_text_not_parsed",
+          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
+        }
+      ]
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-名古屋-g大阪",
@@ -410,13 +430,18 @@
       "match_date": "2026-08-22",
       "home_team": "横浜FM",
       "away_team": "神戸",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34545",
+      "source_url": "https://www.jleague.jp/match/j1/2026/082207/",
       "fetch_status": "fetched",
-      "player_rows": 40,
-      "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 9,
-      "issues": []
+      "player_rows": 0,
+      "starting_rows": 0,
+      "bench_rows": 0,
+      "substitution_rows": 0,
+      "issues": [
+        {
+          "type": "official_lineup_text_not_parsed",
+          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
+        }
+      ]
     },
     {
       "internal_match_id": "j1-2026-2026-08-23-町田-浦和",
@@ -998,13 +1023,18 @@
       "match_date": "2026-09-19",
       "home_team": "川崎Ｆ",
       "away_team": "鹿島",
-      "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34596",
+      "source_url": "https://www.jleague.jp/match/j1/2026/091909/",
       "fetch_status": "fetched",
-      "player_rows": 40,
-      "starting_rows": 22,
-      "bench_rows": 18,
-      "substitution_rows": 9,
-      "issues": []
+      "player_rows": 0,
+      "starting_rows": 0,
+      "bench_rows": 0,
+      "substitution_rows": 0,
+      "issues": [
+        {
+          "type": "official_lineup_text_not_parsed",
+          "detail": "Official report page was fetched, but no player rows were normalized; do not treat fetched status as lineup coverage."
+        }
+      ]
     },
     {
       "internal_match_id": "j1-2026-2026-09-19-福岡-広島",
@@ -1775,6 +1805,1294 @@
       "bench_rows": 18,
       "substitution_rows": 12,
       "issues": []
+    },
+    {
+      "internal_match_id": "j1-2026-2026-11-01-横浜fm-川崎f",
+      "provider_event_id": "",
+      "match_date": "2026-11-01",
+      "home_team": "横浜FM",
+      "away_team": "川崎Ｆ",
+      "source_url": "https://www.jleague.jp/en/match/j1/2026/110101/",
+      "fetch_status": "pending_player_csv_normalization",
+      "player_rows": 0,
+      "starting_rows": 0,
+      "bench_rows": 0,
+      "substitution_rows": 0,
+      "issues": [
+        {
+          "type": "new_match_not_in_original_collector_run",
+          "detail": "Official source URL is mapped; player rows not yet normalized into CSV."
+        }
+      ]
+    },
+    {
+      "internal_match_id": "j1-2026-2026-11-01-千葉-福岡",
+      "provider_event_id": "",
+      "match_date": "2026-11-01",
+      "home_team": "千葉",
+      "away_team": "福岡",
+      "source_url": "https://www.jleague.jp/en/match/j1/2026/110102/",
+      "fetch_status": "pending_player_csv_normalization",
+      "player_rows": 0,
+      "starting_rows": 0,
+      "bench_rows": 0,
+      "substitution_rows": 0,
+      "issues": [
+        {
+          "type": "new_match_not_in_original_collector_run",
+          "detail": "Official source URL is mapped; player rows not yet normalized into CSV."
+        }
+      ]
+    },
+    {
+      "internal_match_id": "j1-2026-2026-11-01-長崎-東京v",
+      "provider_event_id": "",
+      "match_date": "2026-11-01",
+      "home_team": "長崎",
+      "away_team": "東京Ｖ",
+      "source_url": "https://www.jleague.jp/match/j1/2026/110103/",
+      "fetch_status": "pending_player_csv_normalization",
+      "player_rows": 0,
+      "starting_rows": 0,
+      "bench_rows": 0,
+      "substitution_rows": 0,
+      "issues": [
+        {
+          "type": "new_match_not_in_original_collector_run",
+          "detail": "Official source URL is mapped; player rows not yet normalized into CSV."
+        }
+      ]
+    },
+    {
+      "internal_match_id": "j1-2026-2026-11-01-町田-g大阪",
+      "provider_event_id": "",
+      "match_date": "2026-11-01",
+      "home_team": "町田",
+      "away_team": "Ｇ大阪",
+      "source_url": "https://www.jleague.jp/match/j1/2026/110109/",
+      "fetch_status": "pending_player_csv_normalization",
+      "player_rows": 0,
+      "starting_rows": 0,
+      "bench_rows": 0,
+      "substitution_rows": 0,
+      "issues": [
+        {
+          "type": "new_match_not_in_original_collector_run",
+          "detail": "Official source URL is mapped; player rows not yet normalized into CSV."
+        }
+      ]
     }
-  ]
+  ],
+  "reports_pending": 4,
+  "matches_with_complete_starting_xi": 120,
+  "matches_without_complete_starting_xi": 10,
+  "older_matches_with_report_but_no_lineup_rows": 6,
+  "new_matches_pending_player_normalization": 4,
+  "substitution_rows_in_current_csv": 1222,
+  "substitution_rows_missing_minute": 37,
+  "substitution_rows_missing_player_out_id": 1222,
+  "substitution_rows_missing_player_in_id": 1222,
+  "bench_team_records_not_exactly_nine": [
+    {
+      "internal_match_id": "j1-2026-2026-08-07-横浜fm-鹿島",
+      "team_report_label": "横浜Ｆ・マリノス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-07-横浜fm-鹿島",
+      "team_report_label": "鹿島アントラーズ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-07-g大阪-浦和",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-07-g大阪-浦和",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-c大阪-岡山",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-c大阪-岡山",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-名古屋-清水",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-名古屋-清水",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-福岡-神戸",
+      "team_report_label": "アビスパ福岡",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-福岡-神戸",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-柏-水戸",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-柏-水戸",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-fc東京-町田",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-fc東京-町田",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-広島-千葉",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-08-広島-千葉",
+      "team_report_label": "ジェフユナイテッド千葉",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-09-東京v-川崎f",
+      "team_report_label": "東京ヴェルディ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-09-東京v-川崎f",
+      "team_report_label": "川崎フロンターレ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-09-長崎-京都",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-09-長崎-京都",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-14-東京v-柏",
+      "team_report_label": "東京ヴェルディ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-14-東京v-柏",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-水戸-g大阪",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-水戸-g大阪",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-鹿島-名古屋",
+      "team_report_label": "鹿島アントラーズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-鹿島-名古屋",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-清水-横浜fm",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-清水-横浜fm",
+      "team_report_label": "横浜Ｆ・マリノス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-岡山-長崎",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-岡山-長崎",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-福岡-c大阪",
+      "team_report_label": "アビスパ福岡",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-福岡-c大阪",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-浦和-広島",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-浦和-広島",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-神戸-fc東京",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-神戸-fc東京",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-千葉-町田",
+      "team_report_label": "ジェフユナイテッド千葉",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-15-千葉-町田",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-21-柏-長崎",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-21-柏-長崎",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-名古屋-g大阪",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-名古屋-g大阪",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-c大阪-清水",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-c大阪-清水",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-京都-水戸",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-京都-水戸",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-広島-川崎f",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-22-広島-川崎f",
+      "team_report_label": "川崎フロンターレ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-23-町田-浦和",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-23-町田-浦和",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-水戸-町田",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-水戸-町田",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-g大阪-広島",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-g大阪-広島",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-清水-柏",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-清水-柏",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-長崎-fc東京",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-長崎-fc東京",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-川崎f-千葉",
+      "team_report_label": "川崎フロンターレ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-川崎f-千葉",
+      "team_report_label": "ジェフユナイテッド千葉",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-京都-福岡",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-京都-福岡",
+      "team_report_label": "アビスパ福岡",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-名古屋-岡山",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-名古屋-岡山",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-神戸-c大阪",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-神戸-c大阪",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-東京v-鹿島",
+      "team_report_label": "東京ヴェルディ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-東京v-鹿島",
+      "team_report_label": "鹿島アントラーズ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-浦和-横浜fm",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-08-29-浦和-横浜fm",
+      "team_report_label": "横浜Ｆ・マリノス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-長崎-g大阪",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-長崎-g大阪",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-東京v-神戸",
+      "team_report_label": "東京ヴェルディ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-東京v-神戸",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-町田-川崎f",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-町田-川崎f",
+      "team_report_label": "川崎フロンターレ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-福岡-浦和",
+      "team_report_label": "アビスパ福岡",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-福岡-浦和",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-c大阪-柏",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-c大阪-柏",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-水戸-鹿島",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-水戸-鹿島",
+      "team_report_label": "鹿島アントラーズ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-千葉-岡山",
+      "team_report_label": "ジェフユナイテッド千葉",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-千葉-岡山",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-清水-fc東京",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-清水-fc東京",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-広島-名古屋",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-広島-名古屋",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-横浜fm-京都",
+      "team_report_label": "横浜Ｆ・マリノス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-02-横浜fm-京都",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-05-福岡-水戸",
+      "team_report_label": "アビスパ福岡",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-05-福岡-水戸",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-名古屋-町田",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-名古屋-町田",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-岡山-広島",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-岡山-広島",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-鹿島-浦和",
+      "team_report_label": "鹿島アントラーズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-鹿島-浦和",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-千葉-g大阪",
+      "team_report_label": "ジェフユナイテッド千葉",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-千葉-g大阪",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-c大阪-東京v",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-c大阪-東京v",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-柏-横浜fm",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-柏-横浜fm",
+      "team_report_label": "横浜Ｆ・マリノス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-神戸-長崎",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-神戸-長崎",
+      "team_report_label": "東京ヴェルディ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-川崎f-清水",
+      "team_report_label": "川崎フロンターレ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-川崎f-清水",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-fc東京-京都",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-06-fc東京-京都",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-11-京都-柏",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-11-京都-柏",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-11-神戸-鹿島",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-11-神戸-鹿島",
+      "team_report_label": "鹿島アントラーズ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-水戸-川崎f",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-水戸-川崎f",
+      "team_report_label": "川崎フロンターレ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-清水-福岡",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-清水-福岡",
+      "team_report_label": "アビスパ福岡",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-長崎-名古屋",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-長崎-名古屋",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-g大阪-fc東京",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-g大阪-fc東京",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-町田-横浜fm",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-町田-横浜fm",
+      "team_report_label": "横浜Ｆ・マリノス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-広島-c大阪",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-12-広島-c大阪",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-13-東京v-千葉",
+      "team_report_label": "東京ヴェルディ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-13-東京v-千葉",
+      "team_report_label": "ジェフユナイテッド千葉",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-13-浦和-岡山",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-13-浦和-岡山",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-福岡-広島",
+      "team_report_label": "アビスパ福岡",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-福岡-広島",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-清水-千葉",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-清水-千葉",
+      "team_report_label": "ジェフユナイテッド千葉",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-長崎-c大阪",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-長崎-c大阪",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 17
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-浦和-東京v",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-浦和-東京v",
+      "team_report_label": "東京ヴェルディ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-岡山-京都",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-岡山-京都",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-fc東京-名古屋",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-fc東京-名古屋",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-横浜fm-水戸",
+      "team_report_label": "横浜Ｆ・マリノス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-19-横浜fm-水戸",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-20-町田-柏",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-20-町田-柏",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-20-g大阪-神戸",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-09-20-g大阪-神戸",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-09-柏-神戸",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-09-柏-神戸",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-09-鹿島-g大阪",
+      "team_report_label": "鹿島アントラーズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-09-鹿島-g大阪",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-c大阪-横浜fm",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-c大阪-横浜fm",
+      "team_report_label": "横浜Ｆ・マリノス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-fc東京-浦和",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-fc東京-浦和",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-福岡-岡山",
+      "team_report_label": "アビスパ福岡",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-福岡-岡山",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-京都-町田",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-10-京都-町田",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-千葉-長崎",
+      "team_report_label": "ジェフユナイテッド千葉",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-千葉-長崎",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-水戸-清水",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-水戸-清水",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-東京v-広島",
+      "team_report_label": "東京ヴェルディ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-東京v-広島",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-川崎f-名古屋",
+      "team_report_label": "川崎フロンターレ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-11-川崎f-名古屋",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-清水-g大阪",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-清水-g大阪",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-千葉-横浜fm",
+      "team_report_label": "ジェフユナイテッド千葉",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-千葉-横浜fm",
+      "team_report_label": "横浜Ｆ・マリノス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-広島-京都",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-広島-京都",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-東京v-fc東京",
+      "team_report_label": "東京ヴェルディ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-東京v-fc東京",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-c大阪-川崎f",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-c大阪-川崎f",
+      "team_report_label": "川崎フロンターレ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-鹿島-長崎",
+      "team_report_label": "鹿島アントラーズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-鹿島-長崎",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-水戸-浦和",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-水戸-浦和",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-柏-名古屋",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-17-柏-名古屋",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-18-岡山-神戸",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-18-岡山-神戸",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-18-町田-福岡",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-18-町田-福岡",
+      "team_report_label": "アビスパ福岡",
+      "bench_rows": 17
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-名古屋-c大阪",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-名古屋-c大阪",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-長崎-広島",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-長崎-広島",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-岡山-水戸",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-岡山-水戸",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-川崎f-神戸",
+      "team_report_label": "川崎フロンターレ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-川崎f-神戸",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-京都-鹿島",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-京都-鹿島",
+      "team_report_label": "鹿島アントラーズ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-清水-町田",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-清水-町田",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 17
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-福岡-g大阪",
+      "team_report_label": "アビスパ福岡",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-福岡-g大阪",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-横浜fm-東京v",
+      "team_report_label": "横浜Ｆ・マリノス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-横浜fm-東京v",
+      "team_report_label": "東京ヴェルディ",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-fc東京-柏",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-fc東京-柏",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-浦和-千葉",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-21-浦和-千葉",
+      "team_report_label": "ジェフユナイテッド千葉",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-広島-清水",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-広島-清水",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-東京v-福岡",
+      "team_report_label": "東京ヴェルディ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-東京v-福岡",
+      "team_report_label": "アビスパ福岡",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-神戸-町田",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-神戸-町田",
+      "team_report_label": "ＦＣ町田ゼルビア",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-鹿島-柏",
+      "team_report_label": "鹿島アントラーズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-鹿島-柏",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-g大阪-京都",
+      "team_report_label": "ガンバ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-24-g大阪-京都",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-名古屋-横浜fm",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-名古屋-横浜fm",
+      "team_report_label": "横浜Ｆ・マリノス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-c大阪-千葉",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-c大阪-千葉",
+      "team_report_label": "ジェフユナイテッド千葉",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-浦和-長崎",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-浦和-長崎",
+      "team_report_label": "Ｖ・ファーレン長崎",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-川崎f-岡山",
+      "team_report_label": "川崎フロンターレ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-川崎f-岡山",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-fc東京-水戸",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-25-fc東京-水戸",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-京都-清水",
+      "team_report_label": "京都サンガF.C.",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-京都-清水",
+      "team_report_label": "清水エスパルス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-岡山-fc東京",
+      "team_report_label": "ファジアーノ岡山",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-岡山-fc東京",
+      "team_report_label": "ＦＣ東京",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-水戸-広島",
+      "team_report_label": "水戸ホーリーホック",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-水戸-広島",
+      "team_report_label": "サンフレッチェ広島",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-鹿島-c大阪",
+      "team_report_label": "鹿島アントラーズ",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-鹿島-c大阪",
+      "team_report_label": "セレッソ大阪",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-神戸-名古屋",
+      "team_report_label": "ヴィッセル神戸",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-神戸-名古屋",
+      "team_report_label": "名古屋グランパス",
+      "bench_rows": 18
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-kashiwa-urawa",
+      "team_report_label": "柏レイソル",
+      "bench_rows": 0
+    },
+    {
+      "internal_match_id": "j1-2026-2026-10-31-kashiwa-urawa",
+      "team_report_label": "浦和レッズ",
+      "bench_rows": 18
+    }
+  ],
+  "validation_note": "Counts distinguish official report page fetches from normalized player coverage. Missing rows remain missing; this audit does not imply all 130 matches have player detail."
 }
