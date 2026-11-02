@@ -6,7 +6,25 @@
   "free_source": {
     "official_results_index": "https://www.jleague.jp/en/j1/match/",
     "official_data_site": "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1",
-    "match_page_fields_observed": ["final_score", "match_date", "starting_lineup", "substitutions", "match_progress", "match_stats"]
+    "official_match_page_fields": [
+      "final_score",
+      "match_date",
+      "starting_lineup",
+      "substitutions",
+      "match_progress",
+      "match_stats"
+    ],
+    "free_lineup_candidate": {
+      "name": "JPick",
+      "url": "https://jpick.jp/en",
+      "scope": "Free web content advertises J1 live lineups and player statistics; historical match-by-match lineup and appearance export still needs checking."
+    },
+    "free_xg_candidate": {
+      "name": "FootyStats J1 xG",
+      "url": "https://footystats.org/japan/j1-league/xg",
+      "scope": "Public page exposes J1 xG/xGA team summaries and recent match xG pairs; historical row-level export and completeness need checking before ingestion."
+    },
+    "caution": "Only store row-level xG/xGA when a source provides an explicit match-level value and its URL/date. Do not backfill from team averages."
   },
   "existing_audit_summary": {
     "baseline_rows": 125,
@@ -34,7 +52,7 @@
       "score": "4-2",
       "official_url": "https://www.jleague.jp/en/match/j1/2026/110101/",
       "status": "official_page_confirmed",
-      "note": "This match is outside the existing audit coverage ending 2026-10-31; do not count it among the 125 baseline rows."
+      "note": "Outside existing audit coverage ending 2026-10-31; not counted among the 125 baseline rows."
     },
     {
       "date": "2026-11-01",
@@ -43,7 +61,7 @@
       "score": "3-0",
       "official_url": "https://www.jleague.jp/en/match/j1/2026/110102/",
       "status": "official_page_confirmed",
-      "note": "This match is outside the existing audit coverage ending 2026-10-31; do not count it among the 125 baseline rows."
+      "note": "Outside existing audit coverage ending 2026-10-31; not counted among the 125 baseline rows."
     }
   ],
   "next_required_action": "Restore or add the exact baseline CSV/source file containing the 125 J1 rows. Then reconcile each row by date + home + away + full-time score against official J.League match pages; append per-row status, official match URL, score comparison, and evidence timestamp. Collect starting XI, substitutes, substitutions/appearance information from official match pages where published. xG/xGA must remain null unless a free source explicitly provides match-level values.",
