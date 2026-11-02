@@ -1,39 +1,51 @@
 {
-  "generated_at_utc": "2026-11-02T08:10:00Z",
+  "generated_at_utc": "2026-11-02T08:18:55Z",
   "matches_in_mapping": 130,
   "source_url": "https://www.oddalerts.com/xg/j-league",
   "source_policy": "free public page only; no paid API",
   "source_counts_in_output": {
-    "OddAlerts": 50,
-    "Tifolab": 27,
-    "ScoutingStats": 2,
-    "": 51
+    "Tifolab": 34,
+    "": 42,
+    "ScoutingStats": 3,
+    "FotMob": 1,
+    "OddAlerts": 50
   },
   "source_methodology": "Provider-specific xG; not official J.League xG. See source_name, source_url and source_model_note on each row.",
   "sources_in_output": [
-    "OddAlerts",
     "Tifolab",
-    "ScoutingStats"
+    "ScoutingStats",
+    "FotMob",
+    "OddAlerts"
   ],
   "source_urls_in_output": [
+    "https://www.tifolab.com/matches/1553999",
+    "https://www.tifolab.com/matches/1554003",
     "https://www.oddalerts.com/xg/j-league",
-    "https://www.tifolab.com/teams/apifb-team-281-2026-27",
-    "https://www.tifolab.com/teams/apifb-team-282-2026-27",
-    "https://www.tifolab.com/teams/apifb-team-283-2026-27",
     "https://www.tifolab.com/teams/apifb-team-288-2026-27",
-    "https://www.tifolab.com/teams/apifb-team-296-2026-27",
-    "https://www.tifolab.com/teams/apifb-team-301-2027-28",
+    "https://www.tifolab.com/teams/apifb-team-281-2026-27",
+    "https://scoutingstats.ai/j1-league/fc-tokyo-v-machida-zelvia/19717273",
+    "https://www.tifolab.com/teams/apifb-team-282-2026-27",
+    "https://www.fotmob.com/en-GB/matches/tokyo-verdy-vs-kawasaki-frontale/1aq014",
+    "https://scoutingstats.ai/clubs/3509/kyoto-sanga/fixtures?league_id=1085&season_id=28424",
+    "https://www.tifolab.com/teams/apifb-team-306-2027-28",
+    "https://www.tifolab.com/matches/1554012",
+    "https://www.tifolab.com/teams/apifb-team-283-2026-27",
     "https://www.tifolab.com/teams/apifb-team-303-2027-28",
-    "https://www.tifolab.com/teams/apifb-team-305-2026-27",
-    "https://scoutingstats.ai/clubs/3509/kyoto-sanga/fixtures?league_id=1085&season_id=28424"
+    "https://www.tifolab.com/teams/apifb-team-301-2027-28",
+    "https://www.tifolab.com/matches/1556028",
+    "https://www.tifolab.com/matches/1554017",
+    "https://www.tifolab.com/matches/1556030",
+    "https://www.tifolab.com/matches/1554018",
+    "https://www.tifolab.com/teams/apifb-team-296-2026-27",
+    "https://www.tifolab.com/teams/apifb-team-305-2026-27"
   ],
-  "matches_with_xg": 79,
-  "matches_with_verified_xg": 79,
-  "matches_with_unverified_legacy_xg": 0,
-  "matches_missing_xg": 51,
-  "source_rows_matched": 79,
+  "matches_with_xg": 88,
+  "matches_with_verified_xg": 38,
+  "matches_with_unverified_legacy_xg": 50,
+  "matches_missing_xg": 42,
+  "source_rows_matched": 88,
   "source_access_status": "fetched",
-  "source_access_detail": "Added 2 ScoutingStats provider-specific xG records for Aug 9 Nagasaki-Kyoto and Aug 15 Kawasaki-Kyoto; fixture date, teams and score aligned; values not official J.League xG.",
+  "source_access_detail": "Added 9 provider-specific match-level xG records after checking mapped internal match_id, date, home/away teams and final score. Sources and model values are provider-specific, not official J.League xG; no cross-provider averaging or imputation. 2026-08-07 横浜FM-鹿島; 2026-08-07 Ｇ大阪-浦和; 2026-08-08 FC東京-町田; 2026-08-09 東京Ｖ-川崎Ｆ; 2026-08-15 水戸-Ｇ大阪; 2026-08-22 岡山-東京Ｖ; 2026-08-22 京都-水戸; 2026-08-22 横浜FM-神戸; 2026-08-23 町田-浦和.",
   "preserved_prior_values_when_source_blocked": false,
   "missing_policy": "blank values only; no score-based or model-based imputation",
   "matches": [
@@ -42,14 +54,24 @@
       "date": "2026-08-07",
       "home": "横浜FM",
       "away": "鹿島",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.46,
+      "away_xg": 3.44,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1553999",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-07-g大阪-浦和",
       "date": "2026-08-07",
       "home": "Ｇ大阪",
       "away": "浦和",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.08,
+      "away_xg": 3.2,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1554003",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-c大阪-岡山",
@@ -94,7 +116,12 @@
       "date": "2026-08-08",
       "home": "FC東京",
       "away": "町田",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.17,
+      "away_xg": 2.36,
+      "source_name": "ScoutingStats",
+      "source_url": "https://scoutingstats.ai/j1-league/fc-tokyo-v-machida-zelvia/19717273",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-広島-千葉",
@@ -113,7 +140,12 @@
       "date": "2026-08-09",
       "home": "東京Ｖ",
       "away": "川崎Ｆ",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 2,
+      "away_xg": 1.36,
+      "source_name": "FotMob",
+      "source_url": "https://www.fotmob.com/en-GB/matches/tokyo-verdy-vs-kawasaki-frontale/1aq014",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-09-長崎-京都",
@@ -144,7 +176,12 @@
       "date": "2026-08-15",
       "home": "水戸",
       "away": "Ｇ大阪",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.86,
+      "away_xg": 1.59,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1554012",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-15-鹿島-名古屋",
@@ -263,7 +300,12 @@
       "date": "2026-08-22",
       "home": "岡山",
       "away": "東京Ｖ",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 0.77,
+      "away_xg": 0.14,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556028",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-名古屋-g大阪",
@@ -289,7 +331,12 @@
       "date": "2026-08-22",
       "home": "京都",
       "away": "水戸",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.43,
+      "away_xg": 1.15,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1554017",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-22-広島-川崎f",
@@ -308,14 +355,24 @@
       "date": "2026-08-22",
       "home": "横浜FM",
       "away": "神戸",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 0.56,
+      "away_xg": 0.5,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1556030",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-23-町田-浦和",
       "date": "2026-08-23",
       "home": "町田",
       "away": "浦和",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_provider_xg",
+      "home_xg": 1.25,
+      "away_xg": 2.47,
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1554018",
+      "source_validation_status": "verified_secondary_source_match_and_xg"
     },
     {
       "internal_match_id": "j1-2026-2026-08-29-水戸-町田",
