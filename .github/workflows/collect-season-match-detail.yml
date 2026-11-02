@@ -112,9 +112,7 @@ jobs:
                     exit 1
                     ;;
                 esac
-              done <<EOF
-$conflicts
-EOF
+              done <<< "$conflicts"
               GIT_EDITOR=true git rebase --continue
             else
               git rebase --abort || true
