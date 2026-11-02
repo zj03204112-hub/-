@@ -32,8 +32,34 @@ def name_key(value):
     value = unicodedata.normalize("NFKC", clean(value)).casefold()
     return re.sub(r"[\s\u3000・･'’.,，．()（）\-‐—_]+", "", value)
 
+TEAM_NAME_GROUPS = {
+    "鹿島": ["鹿島", "鹿島アントラーズ"],
+    "水戸": ["水戸", "水戸ホーリーホック"],
+    "浦和": ["浦和", "浦和レッズ"],
+    "千葉": ["千葉", "ジェフユナイテッド千葉", "ジェフユナイテッド市原千葉"],
+    "柏": ["柏", "柏レイソル"],
+    "FC東京": ["FC東京", "東京FC"],
+    "東京V": ["東京V", "東京ヴェルディ"],
+    "町田": ["町田", "FC町田ゼルビア"],
+    "川崎F": ["川崎F", "川崎フロンターレ"],
+    "横浜FM": ["横浜FM", "横浜F・マリノス", "横浜Fマリノス"],
+    "清水": ["清水", "清水エスパルス"],
+    "名古屋": ["名古屋", "名古屋グランパス"],
+    "京都": ["京都", "京都サンガF.C.", "京都サンガ"],
+    "G大阪": ["G大阪", "ガンバ大阪"],
+    "C大阪": ["C大阪", "セレッソ大阪"],
+    "神戸": ["神戸", "ヴィッセル神戸"],
+    "岡山": ["岡山", "ファジアーノ岡山"],
+    "広島": ["広島", "サンフレッチェ広島"],
+    "福岡": ["福岡", "アビスパ福岡"],
+    "長崎": ["長崎", "V・ファーレン長崎"],
+}
 def team_key(value):
-    return name_key(value).replace("fc", "")
+    key = name_key(value).replace("fc", "")
+    for canonical, aliases in TEAM_NAME_GROUPS.items():
+        if key in {name_key(alias).replace("fc", "") for alias in aliases}:
+            return name_key(canonical).replace("fc", "")
+    return key
 
 def fetch(url):
     response = requests.get(url, headers=HEADERS, timeout=35)
