@@ -189,3 +189,25 @@ https://www.jleague.jp/en/j1/match/search-list/?category=j1&enddate=2026-11-01&p
 - JSON 仍将球员表空文件、换人字段缺失及 126 场 xG 来源冲突列为未通过项。
 - JSON 提交：`5a71403b4da5cb3cf3aa21b10e20bee424ed56a4`。
 - 目前只更新审计分支；没有合并到默认分支，也没有修改模型或历史预测。
+
+## 12. 免费 xG 来源检索结果（2026-11-02）
+
+本轮重新搜索并检查可公开访问的 J1 xG 页面：
+
+- FootyStats J1 xG： https://footystats.org/japan/j1-league/xg 。页面公开 2026/27 球队赛季 xG/xGA 汇总，且说明其 xG 是该站自有公式（不等同于 J.League 官方 xG）。本页可用于球队赛季汇总交叉参考，但当前可见表格不是 130 场逐场 xG 明细，不能据此恢复每场原始值。
+- The Stats Don't Lie J1 xG： https://www.thestatsdontlie.com/football/rest-of-the-world/japan/j1-league/xg/ 。公开球队级 xG 汇总，但本轮未找到足以重建 126 场逐场 xG 的公开行级证据。
+- OddAlerts J-League xG： https://www.oddalerts.com/xg/j-league 。公开球队 xG/xGA 汇总，但本轮未验证其免费页面提供完整逐场历史 xG 明细。
+- TACTIX J1 xG 表： https://tactix.football/xpts/j1-league 。页面声明有双方 xG 的比赛数及 xPts 汇总；本轮未能验证其可公开下载、可逐场追溯的 2026/27 完整比赛 xG 明细。
+- ScanGoal 页面可由公开网页搜索读取球队汇总，但 GitHub Actions 对同一 URL 的请求仍返回 HTTP 403；当前 xG CSV 的 `source_raw_row` 也不是原始网页响应，无法重放核验。
+
+**结论：**目前找到免费球队汇总来源，但没有获得可证明现有 126 行逐场 xG 数值正确的逐场原始证据。不能把球队赛季平均值拆分、按比分反推或用模型值填成单场 xG。现有 126 行继续标记为“待核验”，正式回测和校准不得使用。
+
+## 13. 当前实际完成度
+
+- 赛果映射：审计分支 130 场；11 月 1 日 4 场比分已用官方 J.LEAGUE 页面及 J.League Data Site 交叉核对。
+- 赛果审计 JSON：审计分支已同步到 130 行；默认分支仍保留 125 行旧版本，尚未合并。
+- 球员明细：标准化 CSV 仍为空，未完成。
+- 换人：1,222 行；37 条缺分钟，两个球员 ID 字段 100% 为空，未完成。
+- xG/xGA：来源检索已推进，但逐场证据仍不足；126 行全部待核验。
+- **总体验收：仍未通过。** 不能宣称全套赛季数据审计完成。
+
