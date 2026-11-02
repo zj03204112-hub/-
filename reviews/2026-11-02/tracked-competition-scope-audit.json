@@ -1,0 +1,55 @@
+{
+  "report_version": "tracked-competition-scope-audit-2026-11-02-v1",
+  "generated_at_beijing": "2026-11-02T09:56:44+08:00",
+  "beijing_date_reviewed": "2026-11-01",
+  "timezone_rule": "Kickoff instant converted to Asia/Shanghai; local calendar date is retained but not used alone for bucket assignment.",
+  "confirmed_results_by_competition": {
+    "Premier League": 2,
+    "La Liga": 5,
+    "Bundesliga": 2,
+    "Serie A": 5,
+    "Ligue 1": 2,
+    "J1 League": 4,
+    "K League 1": 4,
+    "Primeira Liga": 2,
+    "Brazil Série A": 1,
+    "Eliteserien": 1
+  },
+  "other_tracked_competitions_checked": [
+    {
+      "competition": "EFL Championship",
+      "status": "No confirmed match with kickoff inside Beijing 2026-11-01 window found in accessible schedule sources; Saturday 31 October matches before 00:00 Beijing excluded."
+    },
+    {
+      "competition": "UEFA Champions League",
+      "status": "No confirmed fixture with kickoff inside the Beijing 2026-11-01 window found."
+    },
+    {
+      "competition": "Veikkausliiga",
+      "status": "No confirmed fixture with kickoff inside the Beijing 2026-11-01 window found."
+    },
+    {
+      "competition": "UEFA Nations League",
+      "status": "No national-team fixture with kickoff inside the Beijing 2026-11-01 window found; separate Nations League archive untouched."
+    },
+    {
+      "competition": "Domestic cups",
+      "status": "No additional tracked cup match with a verified kickoff inside the Beijing 2026-11-01 window found in the sources checked."
+    },
+    {
+      "competition": "AFC continental club competitions",
+      "status": "No fixture with a verified kickoff inside the Beijing 2026-11-01 window found in the sources checked."
+    }
+  ],
+  "date_boundary_corrections": [
+    "KFUM Oslo 2-2 HamKam, Start 0-1 Lillestrøm, Sarpsborg 08 2-4 Kristiansund and Vålerenga 4-0 Tromsø have UTC kickoffs at or after 16:00 on 1 November, so they belong to Beijing 2026-11-02, not Beijing 2026-11-01.",
+    "The prior report had the wrong scores for KFUM Oslo (reported 1-0; verified 2-2) and Sarpsborg 08 (reported 1-3; verified 2-4). The old report is preserved; the correction is a separate file."
+  ],
+  "database_and_actions": {
+    "sqlite_connection": false,
+    "latest_db_sync_run": "https://github.com/zj03204112-hub/-/actions/runs/41355312274",
+    "latest_db_sync_conclusion": "failure",
+    "validation_error": "out-of-scope matches: 2",
+    "generated_data_commit_step": "skipped"
+  }
+}
