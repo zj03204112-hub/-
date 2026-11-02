@@ -124,6 +124,8 @@ def main():
     prior_complete = all(
         prior.get(m.get("internal_match_id", ""), {}).get("home_xg")
         and prior.get(m.get("internal_match_id", ""), {}).get("away_xg")
+        and prior.get(m.get("internal_match_id", ""), {}).get("source_validation_status") == "verified_from_current_fetch"
+        and prior.get(m.get("internal_match_id", ""), {}).get("source_name") == "FootyStats"
         for m in matches
     )
     if prior_complete:
@@ -145,7 +147,7 @@ def main():
         mid = m["internal_match_id"]
         found = by_id.get(mid)
         old = prior.get(mid, {})
-        if found and not (old.get("home_xg") and old.get("away_xg")):
+        if found:
             hxg, axg = found["home_xg"], found["away_xg"]
             row = {
                 "internal_match_id": mid, "provider_event_id": m.get("provider_event_id",""),
@@ -155,6 +157,8 @@ def main():
                 "home_xga": f"{axg:.3f}", "away_xga": f"{hxg:.3f}",
                 "xg_status": "published_on_free_public_source", "source_name": "FootyStats",
                 "source_url": SOURCE_URL, "source_model_note": "Provider-specific xG formula; not official J.League xG",
+                "source_validation_status": "verified_from_current_fetch",
+                "source_reverification_note": "Matched from the current successful free public page fetch.",
                 "source_raw_row": found["raw_text"], "retrieved_at_utc": now,
             }
         elif old.get("home_xg") and old.get("away_xg"):
@@ -164,6 +168,12 @@ def main():
                 "match_date": m.get("match_date",""), "home_team": m.get("home_team_source",""),
                 "away_team": m.get("away_team_source",""), "home_goals": m.get("home_goals",""),
                 "away_goals": m.get("away_goals","")})
+            if source_access_status != "fetched" or old.get("source_name") != "FootyStats":
+                row["source_validation_status"] = "unverified_legacy_value"
+                row["source_reverification_note"] = "Value retained for audit only; current source fetch did not re-verify this row. Exclude from model calibration until reverified."
+            else:
+                row["source_validation_status"] = old.get("source_validation_status", "pending_source_reverification")
+                row["source_reverification_note"] = old.get("source_reverification_note", "No row-level refresh was available in this run.")
         else:
             row = {
                 "internal_match_id": mid, "provider_event_id": m.get("provider_event_id",""),
@@ -173,12 +183,14 @@ def main():
                 "home_xga": "", "away_xga": "", "xg_status": "missing_not_exposed_in_free_source",
                 "source_name": "", "source_url": SOURCE_URL,
                 "source_model_note": "No verified per-match value available; no imputation",
+                "source_validation_status": "not_available_in_current_free_source",
+                "source_reverification_note": "No current free source row matched this fixture.",
                 "source_raw_row": "", "retrieved_at_utc": "",
             }
         output.append(row)
     fields = ["internal_match_id","provider_event_id","match_date","home_team","away_team","home_goals","away_goals",
               "home_xg","away_xg","home_xga","away_xga","xg_status","source_name","source_url",
-              "source_model_note","source_raw_row","retrieved_at_utc"]
+              "source_model_note","source_validation_status","source_reverification_note","source_raw_row","retrieved_at_utc"]
     with OUT.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(output)
     audit = {
@@ -189,6 +201,8 @@ def main():
         "sources_in_output": sorted(set(r.get("source_name", "") for r in output if r.get("source_name"))),
         "source_urls_in_output": sorted(set(r.get("source_url", "") for r in output if r.get("source_url"))),
         "matches_with_xg": sum(bool(r["home_xg"]) for r in output),
+        "matches_with_verified_xg": sum(r.get("source_validation_status") == "verified_from_current_fetch" for r in output),
+        "matches_with_unverified_legacy_xg": sum(r.get("source_validation_status") == "unverified_legacy_value" for r in output),
         "matches_missing_xg": sum(not bool(r["home_xg"]) for r in output),
         "source_rows_matched": len(source_rows),
         "source_access_status": source_access_status,
