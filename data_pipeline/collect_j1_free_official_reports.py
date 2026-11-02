@@ -84,27 +84,47 @@ def parse_report(url: str, home_team: str = "", away_team: str = ""):
             if pending_out:
                 issues.append({"type": "unpaired_substitution_out", "team": team, **pending_out})
     # The official jleague.jp match pages use a different layout from Data Site tables.
-    # Recover the 22 starters from its accessible text section when table parsing found none.
+    # Recover the 22 starters from accessible page text, accommodating both EN and JP labels.
     if not players and "jleague.jp/" in url:
         lines = [clean(x) for x in soup.get_text("\\n").splitlines()]
         lines = [x for x in lines if x]
-        start = next((i for i, x in enumerate(lines) if "Starting Line-ups Announcement" in x or "先発メンバー" in x), None)
+        start = next((i for i, x in enumerate(lines)
+                      if any(k in x for k in ("Starting Line-ups Announcement", "スターティングメンバー発表", "スターティングメンバー", "先発メンバー"))), None)
         if start is not None:
-            # Starting lineups are rendered as alternating home/away player position and name.
             roster = []
-            for idx in range(start + 1, min(len(lines), start + 100)):
-                m = re.match(r"^(GK|DF|MF|FW)\\s+(\\d{1,3})$", lines[idx], re.I)
-                if m and idx + 1 < len(lines):
-                    name = lines[idx + 1]
-                    if name and not re.match(r"^(GK|DF|MF|FW)\\s+\\d+$", name, re.I):
-                        roster.append((m.group(1).upper(), m.group(2), name))
+            # Some J.League pages emit "GK 49" and the name in adjacent nodes;
+            # others concatenate position, number and name into one text node.
+            for line in lines[start + 1:min(len(lines), start + 180)]:
+                chunks = re.split(r"(?=(?:GK|DF|MF|FW)\\s*\\d{1,3}(?:\\s|[^0-9]))", line, flags=re.I)
+                for chunk in chunks:
+                    chunk = clean(chunk)
+                    m = re.match(r"^(GK|DF|MF|FW)\\s*(\\d{1,3})(?:\\s+|)(.*)$", chunk, re.I)
+                    if not m:
+                        continue
+                    pos, shirt, name = m.group(1).upper(), m.group(2), clean(m.group(3))
+                    # If name is in a following text node, use that node; do not treat
+                    # the next player's position as part of this player's name.
+                    if not name and len(roster) < 22:
+                        continue
+                    name = re.split(r"\\s+(?:GK|DF|MF|FW)\\s*\\d{1,3}\\b", name, maxsplit=1, flags=re.I)[0].strip()
+                    name = re.sub(r"^(?:Image:.*?\\s+)?", "", name).strip()
+                    if name and not name.lower().startswith(("image:", "formation", "sub in", "sub out")):
+                        roster.append((pos, shirt, name))
                 if len(roster) >= 22:
                     break
+            # De-duplicate exact adjacent repeats occasionally introduced by alt text.
+            deduped = []
+            seen = set()
+            for row in roster:
+                key = (row[0], row[1], row[2])
+                if key not in seen:
+                    deduped.append(row)
+                    seen.add(key)
+            roster = deduped
             if len(roster) >= 22:
                 for n, (pos, shirt, name) in enumerate(roster[:22]):
-                    is_home = n % 2 == 0
                     players.append({
-                        "team_report_label": home_team if is_home else away_team,
+                        "team_report_label": home_team if n % 2 == 0 else away_team,
                         "section": "starting", "position": pos, "shirt_number": shirt,
                         "player_name": name, "player_id": "",
                         "player_id_status": "not_published_in_source", "source_time_cell": "",
