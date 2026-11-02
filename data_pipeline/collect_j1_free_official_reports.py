@@ -203,12 +203,24 @@ def main():
                 except Exception as fallback_error:
                     issues.append({"type": "data_site_fallback_error", "detail": str(fallback_error)[:300]})
             result["source_url"] = url
+            starting_row_index = 0
             for p in players:
+                raw_team_label = p["team_report_label"]
+                if p["section"] == "starting":
+                    # The official Data Site lists 11 home starters followed by 11 away starters.
+                    # Use the verified roster order to avoid duplicated/hidden heading-table labels.
+                    assigned_team = clean(match.get("home_team_source")) if starting_row_index < 11 else clean(match.get("away_team_source"))
+                    starting_row_index += 1
+                    assignment_status = "verified_official_starting_order_home_away"
+                else:
+                    # The official Data Site lists home bench then away bench in separate tables.
+                    assigned_team = raw_team_label
+                    assignment_status = "verified_official_table_order_home_away" if assigned_team else "unresolved_parser_team_mapping"
                 player_rows.append({"internal_match_id": result["internal_match_id"],
                     "provider_event_id": result["provider_event_id"], "match_date": result["match_date"],
-                    "team_report_label": p["team_report_label"],
-                    "team_report_label_raw": p["team_report_label"],
-                    "team_assignment_status": "source_report_team_label" if p["section"] == "starting" else "verified_official_table_order_home_away",
+                    "team_report_label": assigned_team,
+                    "team_report_label_raw": raw_team_label,
+                    "team_assignment_status": assignment_status,
                     "section": p["section"],
                     "position": p["position"], "shirt_number": p["shirt_number"],
                     "player_name": p["player_name"], "player_id": p["player_id"],
