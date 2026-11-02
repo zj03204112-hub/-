@@ -42,6 +42,9 @@ ALIASES = {
     "長崎": ["v-varen nagasaki", "v varen nagasaki"],
     "京都": ["kyoto sanga", "kyoto sanga fc"],
 }
+def clean(s: str) -> str:
+    return re.sub(r"\s+", " ", (s or "")).strip()
+
 def norm(s: str) -> str:
     s = (s or "").lower().replace("Ｆ", "f").replace("Ｖ", "v").replace("Ｇ", "g").replace("Ｃ", "c")
     return re.sub(r"[^a-z0-9]+", " ", s).strip()
