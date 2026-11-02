@@ -190,15 +190,20 @@ def main():
                 "source_reverification_note": "Matched from the current successful free public page fetch.",
                 "source_raw_row": found["raw_text"], "retrieved_at_utc": now,
             }
-        elif old.get("home_xg") and old.get("away_xg") and old.get("source_validation_status") == "verified_from_current_fetch" and old.get("source_name") == "OddAlerts":
-            # Preserve previously verified provider rows when the short recent-results panel no longer shows them.
+        elif old.get("home_xg") and old.get("away_xg") and old.get("source_validation_status") in {
+            "verified_from_current_fetch", "verified_from_archived_source_snapshot",
+            "verified_from_manual_web_access", "verified_from_current_legacy_source_fetch"
+        }:
+            # Preserve only rows that already carry an explicit verification status.
+            # Older verified rows can disappear from a provider's rolling results window.
             row = dict(old)
             row.update({"internal_match_id": mid, "provider_event_id": m.get("provider_event_id",""),
                 "match_date": m.get("match_date",""), "home_team": m.get("home_team_source",""),
                 "away_team": m.get("away_team_source",""), "home_goals": m.get("home_goals",""),
                 "away_goals": m.get("away_goals","")})
-            row["source_validation_status"] = "verified_from_archived_source_snapshot"
-            row["source_reverification_note"] = "Previously verified from the public provider row; not visible in the current recent-results window. Original raw row and retrieval timestamp retained."
+            if old.get("source_validation_status") == "verified_from_current_fetch" and old.get("source_name") == "OddAlerts":
+                row["source_validation_status"] = "verified_from_archived_source_snapshot"
+                row["source_reverification_note"] = "Previously verified from the public provider row; not visible in the current recent-results window. Original raw row and retrieval timestamp retained."
         elif old.get("home_xg") and old.get("away_xg"):
             # Unverified values from alternate/legacy sources are archived separately and blanked from the canonical training table.
             legacy = dict(prior_legacy.get(mid, old))
