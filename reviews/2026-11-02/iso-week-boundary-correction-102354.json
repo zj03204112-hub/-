@@ -1,0 +1,42 @@
+{
+  "report_version": "iso-week-boundary-correction-2026-11-02-v1",
+  "generated_at_beijing": "2026-11-02T10:23:54+08:00",
+  "issue": "The prior cumulative W44 xG snapshot included 16 matches whose kickoff instants convert to Beijing date 2026-11-02 (ISO week 2026-W45).",
+  "rule": "ISO week is assigned using Asia/Shanghai kickoff date, consistent with beijing_match_date. Competition-local date remains a separate field.",
+  "original_snapshot": {
+    "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/match_xg_snapshot-095644.csv",
+    "blob_sha": "dd0eac7e664cdc0aeacdd23a0307961e62dfb6a6",
+    "rows": 288,
+    "unique_matches": 123,
+    "mutated": false
+  },
+  "corrected_w44": {
+    "rows": 256,
+    "unique_matches": 107,
+    "path": "data/xg_weekly/2026-W44/snapshots/2026-11-02/match_xg_snapshot-102354-iso-boundary-corrected.csv"
+  },
+  "corrected_w45": {
+    "rows": 32,
+    "unique_matches": 16,
+    "path": "data/xg_weekly/2026-W45/snapshots/2026-11-02/match_xg_snapshot-102354.csv"
+  },
+  "coverage": {
+    "w44": {
+      "matches": 107,
+      "with_xg": 33,
+      "pct": "30.84"
+    },
+    "w45": {
+      "matches": 16,
+      "with_xg": 2,
+      "pct": "12.50"
+    }
+  },
+  "invariants": [
+    "Original snapshot preserved unchanged.",
+    "No xG inferred from final score.",
+    "No post-match xG used as pre-match model input.",
+    "Provider values kept separate.",
+    "Full-week coverage groups remain zero until full fixture coverage is established."
+  ]
+}
