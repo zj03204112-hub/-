@@ -193,9 +193,9 @@ def main():
             for p in players:
                 player_rows.append({"internal_match_id": result["internal_match_id"],
                     "provider_event_id": result["provider_event_id"], "match_date": result["match_date"],
-                    "team_report_label": p["team_report_label"],
+                    "team_report_label": p["team_report_label"] if p["section"] == "starting" else "",
                     "team_report_label_raw": p["team_report_label"],
-                    "team_assignment_status": "source_report_team_label" if p["section"] == "starting" else ("official_table_order_home_away" if p["team_report_label"] in (clean(match.get("home_team_source")), clean(match.get("away_team_source"))) else "unresolved_parser_team_mapping"),
+                    "team_assignment_status": "source_report_team_label" if p["section"] == "starting" else "unresolved_parser_team_mapping",
                     "section": p["section"],
                     "position": p["position"], "shirt_number": p["shirt_number"],
                     "player_name": p["player_name"], "player_id": p["player_id"],
