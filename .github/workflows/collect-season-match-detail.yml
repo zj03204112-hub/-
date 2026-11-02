@@ -9,6 +9,7 @@ on:
       - "data_pipeline/fetch_season_results_lineups_xg.py"
       - "data_pipeline/audit_j1_phase1.py"
       - "data_pipeline/collect_j1_free_official_reports.py"
+      - "data_pipeline/enrich_j1_player_ids_minutes.py"
       - "data_pipeline/collect_j1_free_xg.py"
       - "data_pipeline/collect_j1_team_season_xg.py"
       - "data_pipeline/aggregate_j1_covered_match_xg.py"
@@ -62,6 +63,10 @@ jobs:
       - name: Collect J1 data from free official reports
         if: ${{ (github.event_name == 'push') || inputs.league == 'j1' }}
         run: python data_pipeline/collect_j1_free_official_reports.py
+
+      - name: Enrich J1 player IDs and actual minutes from official profiles
+        if: ${{ (github.event_name == 'push') || inputs.league == 'j1' }}
+        run: python data_pipeline/enrich_j1_player_ids_minutes.py
 
       - name: Collect free public J1 match xG
         if: ${{ (github.event_name == 'push') || inputs.league == 'j1' }}
