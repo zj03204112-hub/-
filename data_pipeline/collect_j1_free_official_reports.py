@@ -46,6 +46,7 @@ def parse_report(url: str, home_team: str = "", away_team: str = ""):
     # On the Data Site, both 控え and 交代 tables follow the away starter table;
     # their first/second tables are home/away respectively. The nearest h3 is
     # therefore NOT a safe team label for these sections.
+    starting_table_idx = 0
     bench_table_idx = 0
     substitution_table_idx = 0
     for table in soup.find_all("table"):
@@ -59,6 +60,12 @@ def parse_report(url: str, home_team: str = "", away_team: str = ""):
             continue
         section_key = section.replace(" ", "")
         if "先発" in section_key or "控え" in section_key:
+            if "先発" in section_key:
+                starting_table_idx += 1
+                if starting_table_idx == 1 and home_team:
+                    team = home_team
+                elif starting_table_idx == 2 and away_team:
+                    team = away_team
             if "控え" in section_key:
                 bench_table_idx += 1
                 if bench_table_idx == 1 and home_team:
