@@ -1,0 +1,54 @@
+{
+  "report_version": "xg-weekly-coverage-audit-2026-W44-2026-11-02-v2",
+  "generated_at_beijing": "2026-11-02T09:56:44+08:00",
+  "iso_week": "2026-W44",
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "source_snapshot_base": {
+    "branch": "automation/daily-football-2026-11-01",
+    "path": "data/xg_weekly/2026-W44/snapshots/2026-11-01/match_xg_snapshot-100230-corrected.csv",
+    "blob_sha": "7539bcdc478540b68f0c5e70ec54fbb7fd78dff6",
+    "base_record_rows": 202,
+    "base_unique_matches": 87
+  },
+  "cumulative_snapshot": {
+    "record_rows": 288,
+    "unique_matches": 123,
+    "unique_teams": 213,
+    "team_week_groups": 235,
+    "provider_specific_team_week_groups": 286
+  },
+  "this_run_scope": {
+    "verified_result_matches": 44,
+    "verified_result_matches_with_any_fulltime_xg": 11,
+    "verified_result_matches_missing_fulltime_xg": 33,
+    "coverage_pct_of_run_results": 25
+  },
+  "xg_row_changes": {
+    "added_rows": 86,
+    "added_provider_rows": 30,
+    "skipped_duplicate_provider_groups": 0,
+    "missing_match_ids_added": 28
+  },
+  "integrity": {
+    "xgd_arithmetic_mismatches": 0,
+    "mismatch_examples": [],
+    "duplicate_match_team_provider_keys": 0,
+    "duplicate_key_examples": [],
+    "full_week_coverage_groups": 0,
+    "raw_payload_sha256_archived_rows": 0,
+    "provider_event_ids_resolved_rows": 0
+  },
+  "no_leakage": {
+    "post_match_xg_separated_from_pre_match_inputs": true,
+    "fulltime_xg_missing_not_inferred": true,
+    "partial_in_play_xg_rejected_for_braga_famalicao": true
+  },
+  "notes": [
+    "All provider xG values are model estimates from their respective providers; none is described as direct measurement or official truth.",
+    "Different provider values are stored separately; no cross-provider average is calculated.",
+    "Full weekly totals and per-90 means remain blank because complete team-week fixture coverage has not been established.",
+    "Raw HTML/API payloads and SHA-256 hashes are not archived in this run; this remains a data provenance gap.",
+    "Source timestamps are usually the run-time observation; upstream event/data timestamps are not exposed by many pages."
+  ]
+}
