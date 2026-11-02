@@ -182,13 +182,14 @@ def main():
                   "starting_rows": 0, "bench_rows": 0, "substitution_rows": 0, "issues": []}
         try:
             players, subs, issues = parse_report(url, clean(match.get("home_team_source")), clean(match.get("away_team_source")))
-            # If the public jleague.jp page does not expose a parseable lineup, retry the
-            # corresponding free J.League Data Site match_card_id from provider_event_id.
-            if not players and "jleague.jp/" in url and clean(match.get("provider_event_id")).isdigit():
+            # Prefer the free J.League Data Site when the public match page exposes
+            # only starters; the Data Site also contains bench lists and substitution events.
+            has_bench = any(p.get("section") == "bench" for p in players)
+            if "jleague.jp/" in url and clean(match.get("provider_event_id")).isdigit() and (not players or not has_bench or not subs):
                 data_site_url = "https://data.j-league.or.jp/SFMS02/?match_card_id=" + clean(match.get("provider_event_id"))
                 try:
                     alt_players, alt_subs, alt_issues = parse_report(data_site_url, clean(match.get("home_team_source")), clean(match.get("away_team_source")))
-                    if alt_players:
+                    if alt_players and (len(alt_players) > len(players) or len(alt_subs) > len(subs)):
                         url = data_site_url
                         players, subs = alt_players, alt_subs
                         issues = alt_issues
