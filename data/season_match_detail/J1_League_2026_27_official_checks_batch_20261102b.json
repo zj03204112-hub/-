@@ -1,0 +1,24 @@
+{
+  "date_created": "2026-11-02",
+  "baseline_csv": "data/auto_results/J1_League_2026_27.csv",
+  "baseline_blob_sha": "8d99885bf7b0d52c5fcc7c2922dd02d92450a54f",
+  "baseline_rows_through_2026-10-31": 126,
+  "official_score_records_verified_this_batch": [
+    {"date":"2026-10-25","home":"名古屋","away":"横浜FM","score":"1-1","official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34630","status":"match"},
+    {"date":"2026-10-25","home":"Ｃ大阪","away":"千葉","score":"2-2","official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34632","status":"match"},
+    {"date":"2026-10-25","home":"FC東京","away":"水戸","score":"6-0","official_url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34633","status":"match"}
+  ],
+  "score_records_verified_total": 12,
+  "score_records_pending": 114,
+  "score_verification_rate_pct": 9.52,
+  "structured_starting_xi_matches_stored": 2,
+  "structured_substitution_matches_stored": 2,
+  "complete_actual_appearance_tables_stored": 0,
+  "match_level_xga_pairs_independently_verified": 0,
+  "notes": [
+    "The three official records agree with the CSV date/team/score fields.",
+    "Official pages include lineup and substitution sections, but these three matches have not yet been fully transcribed into structured player tables.",
+    "No xG/xGA values added in this batch; no estimated values used.",
+    "This is an additive audit record. The baseline CSV, V5.1 and historical predictions are unchanged."
+  ]
+}
