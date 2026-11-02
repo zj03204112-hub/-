@@ -4,7 +4,7 @@
   "source_url": "https://www.oddalerts.com/xg/j-league",
   "source_policy": "free public page only; no paid API",
   "verified_source_counts_in_output": {
-    "Tifolab": 20,
+    "Tifolab": 21,
     "ScoutingStats": 7,
     "VJStats": 20,
     "FotMob": 1,
@@ -22,6 +22,7 @@
   ],
   "source_urls_in_output": [
     "https://www.tifolab.com/matches/1553999",
+    "https://www.tifolab.com/matches/1554003",
     "https://scoutingstats.ai/j1-league/cerezo-osaka-v-fagiano-okayama/19717269",
     "https://vjstats.com/matches/6672/avispa-fukuoka-vs-vissel-kobe",
     "https://vjstats.com/matches/6673/kashiwa-reysol-vs-mito-hollyhock",
@@ -71,13 +72,13 @@
     "https://www.tifolab.com/matches/1556073",
     "https://www.oddalerts.com/xg/j-league"
   ],
-  "matches_with_xg": 98,
-  "matches_with_verified_xg": 98,
+  "matches_with_xg": 99,
+  "matches_with_verified_xg": 99,
   "matches_verified_in_current_fetch": 50,
   "matches_verified_from_archived_source_snapshot": 0,
   "matches_with_unverified_legacy_xg": 0,
-  "matches_missing_or_unverified_xg_in_canonical_table": 32,
-  "matches_missing_xg": 32,
+  "matches_missing_or_unverified_xg_in_canonical_table": 31,
+  "matches_missing_xg": 31,
   "source_rows_matched": 50,
   "source_access_status": "fetched",
   "source_access_detail": "",
@@ -100,7 +101,11 @@
       "date": "2026-08-07",
       "home": "Ｇ大阪",
       "away": "浦和",
-      "status": "missing_not_exposed_in_free_source"
+      "status": "verified_from_manual_web_access",
+      "source_name": "Tifolab",
+      "source_url": "https://www.tifolab.com/matches/1554003",
+      "home_xg": "1.08",
+      "away_xg": "3.20"
     },
     {
       "internal_match_id": "j1-2026-2026-08-08-c大阪-岡山",
@@ -1187,9 +1192,9 @@
       "status": "published_on_free_public_source"
     }
   ],
-  "matches_verified_from_manual_web_access": 48,
-  "manual_web_verification_rows_in_file": 48,
-  "manual_web_verification_rows_applied": 48,
+  "matches_verified_from_manual_web_access": 49,
+  "manual_web_verification_rows_in_file": 49,
+  "manual_web_verification_rows_applied": 49,
   "manual_web_verification_rows_rejected": 0,
   "manual_web_value_discrepancies": 1,
   "manual_web_verification_audit_file": "j1_2026_match_xg_manual_web_verification_audit.json",
