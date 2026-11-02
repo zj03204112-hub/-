@@ -1,0 +1,16 @@
+{
+  "snapshot_date_utc": "2026-11-01T10:05:57Z",
+  "source_name": "OddAlerts",
+  "source_url": "https://www.oddalerts.com/xg/j-league",
+  "rows": 20,
+  "scope": "J1 2026/27 team-season aggregates",
+  "fields": [
+    "season_xg",
+    "season_xga",
+    "xg_per90",
+    "xga_per90"
+  ],
+  "limitation": "These are team-level season totals from a public webpage, not per-match xG/xGA. Do not populate individual match records from these aggregates.",
+  "retrieval_note": "Web-visible page content was readable in the research interface, but GitHub Actions requests returned HTTP 403. This CSV is a dated source snapshot, not an automated live feed.",
+  "no_imputation": true
+}
