@@ -327,6 +327,16 @@ def main():
         row["team_assignment_status"] = status if resolved_side else "unresolved_roster_name_match"
     write_csv(PLAYERS_OUT, player_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","team_report_label_raw","team_assignment_status","section","position","shirt_number","player_name","player_id","player_id_status","actual_minutes","actual_minutes_status","source_time_cell","source_url"])
     write_csv(SUBS_OUT, sub_rows, ["internal_match_id","provider_event_id","match_date","team_report_label","team_report_label_raw","team_assignment_status","player_out_name","player_in_name","minute","player_out_id","player_in_id","source_url","source_type"])
+    # Fail closed if the normalized player CSV did not persist correctly.
+    # A successful scrape/audit JSON is not sufficient if the player detail file is empty.
+    if not player_rows or not PLAYERS_OUT.exists() or PLAYERS_OUT.stat().st_size == 0:
+        raise RuntimeError("Player detail CSV is empty after write; refusing to mark collection successful.")
+    starter_counts = Counter(row["internal_match_id"] for row in player_rows if row.get("section") == "starting")
+    missing_starter_matches = [m.get("internal_match_id", "") for m in matches if starter_counts.get(m.get("internal_match_id", ""), 0) != 22]
+    if missing_starter_matches:
+        raise RuntimeError(f"Official starting XI validation failed for {len(missing_starter_matches)} matches: {missing_starter_matches[:10]}")
+    if any(not clean(row.get("player_name", "")) for row in player_rows):
+        raise RuntimeError("Player detail CSV contains a blank player name; refusing to mark collection successful.")
     audit = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "source_policy": "free official J.League pages only; no paid API",
