@@ -10,6 +10,7 @@ on:
       - "data_pipeline/audit_j1_phase1.py"
       - "data_pipeline/collect_j1_free_official_reports.py"
       - "data_pipeline/collect_j1_free_xg.py"
+      - "data_pipeline/collect_j1_team_season_xg.py"
   workflow_dispatch:
     inputs:
       league:
@@ -64,6 +65,10 @@ jobs:
       - name: Collect free public J1 match xG
         if: ${{ (github.event_name == 'push') || inputs.league == 'j1' }}
         run: python data_pipeline/collect_j1_free_xg.py
+
+      - name: Collect free public J1 team-season xG and xGA
+        if: ${{ (github.event_name == 'push') || inputs.league == 'j1' }}
+        run: python data_pipeline/collect_j1_team_season_xg.py
 
       - name: Collect other leagues from configured provider
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.league != 'j1' }}
