@@ -1,0 +1,52 @@
+{
+  "report_version": "archive-readback-verification-2026-11-02-v2",
+  "generated_at_beijing": "2026-11-02T09:56:44+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-02",
+  "verification_result": "PASS",
+  "verified_file_count": 19,
+  "method": "17 prior archive files were re-fetched and parsed in the preceding verification; the Leisu cross-check and final v3 manifest were separately re-fetched and parsed after commit.",
+  "counts": {
+    "core_league_results": 24,
+    "other_tracked_results": 4,
+    "previous_beijing_day_results": 28,
+    "current_beijing_day_early_results": 16,
+    "eligible_at_1500_candidates": 1,
+    "xg_cumulative_unique_matches": 123,
+    "xg_cumulative_rows": 288,
+    "xg_xgd_arithmetic_mismatches": 0,
+    "xg_duplicate_match_team_provider_keys": 0,
+    "xg_full_week_coverage_groups": 0,
+    "previous_day_xg_coverage": "9/28 (32.14%)",
+    "current_day_early_xg_coverage": "2/16 (12.50%)",
+    "all_run_results_xg_coverage": "11/44 (25.00%)"
+  },
+  "blob_sha_readback": {
+    "results/domestic-league/2026-11-01/beijing-date-results.json": "26cf210d69180c07d4ff18699853e1a6aa9a90ec",
+    "results/other-domestic-leagues/2026-11-01/beijing-date-results.json": "e0fe1da1524148d0ba04daa025f11f22f1fdab21",
+    "reviews/2026-11-02/previous-day-review.json": "28dfb37445688b0f5179e82b66b0a2ae56b13553",
+    "reviews/2026-11-02/current-day-completed-results.json": "2ac66e7a5271dfd917004e4dfeb5dd99a9c60302",
+    "reviews/2026-11-02/correction-audit-2026-11-01.json": "bdd08b17c79d487465b858342a62bbd462068e6e",
+    "fixtures/2026-11-02/schedule.json": "9df5da01efc0cd6113770dd79b77df2bc2f6a90d",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/match_xg_snapshot-095644.csv": "dd0eac7e664cdc0aeacdd23a0307961e62dfb6a6",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_xg_snapshot-095644-v2.csv": "84fa0745ef1e37c9d33b675a8593da384d47317e",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/team_weekly_coverage_snapshot-095644-v2.csv": "62720ea395dcfe70c3db3cd92a6d8f02267ba36c",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_coverage_audit-095644.json": "2b43015091bf2e4824046f0ef26c8b7c63a63288",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_source_discrepancy_audit-095644.json": "5ca1268a77002d6c7bec9e1281e64bfe4ea043f1",
+    "reviews/2026-11-02/github-actions-data-sync-audit.json": "f2eeca543772d99405f8dc1f1c13bfc633c8831c",
+    "reviews/2026-11-02/archive-manifest-final.json": "42a7d8d78da2b656dbdfee7ae98b4f1bad36c21f",
+    "reviews/2026-11-02/archive-readback-verification.json": "dca395d2338d0dffd50c2589c7a3e446f5bf5e02",
+    "data/xg_weekly/2026-W44/snapshots/2026-11-02/xg_coverage_audit-095644-scope-split.json": "92ce8b1d5b99573d696b69f92c3f462f471301c3",
+    "reviews/2026-11-02/tracked-competition-scope-audit.json": "7ca9517f8ee4795af864b7c01e22fe7acb55c266",
+    "reviews/2026-11-02/archive-manifest-final-v2.json": "3976422a89cd4e12f2429cf3bfaa5e3d6d0a7ff0",
+    "reviews/2026-11-02/leisu-source-crosscheck.json": "6693107a3c71300a1083fdbe85a4d140f4115c93",
+    "reviews/2026-11-02/archive-manifest-final-v3.json": "482c3598f8cf881d16914aed9449909a1eb66c15"
+  },
+  "limitations": [
+    "No SQLite or remote database connection.",
+    "No matching immutable prediction snapshots or official JC handicap snapshots for previous-day matches.",
+    "Weekly xG full-week coverage remains incomplete.",
+    "Raw HTML/API responses and SHA-256 hashes were not archived.",
+    "GitHub database sync run 41355312274 failed validation and skipped generated-data commit."
+  ]
+}
