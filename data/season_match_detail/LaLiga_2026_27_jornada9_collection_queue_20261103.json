@@ -28,12 +28,16 @@
       "score": "1-1",
       "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-levante-ud-9",
       "halftime_score": null,
-      "starting_xi_status": "pending",
-      "bench_status": "pending",
-      "appearance_status": "pending",
-      "substitutions_status": "pending",
-      "player_detail_batch": null,
-      "detail_status": "pending_official_lineup_and_event_audit"
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_home_12_away_11",
+      "appearance_status": "verified_9_entrants_and_14_unused_bench_players",
+      "substitutions_status": "verified_9_events",
+      "player_detail_batch": "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_deportivo_levante.json",
+      "detail_status": "complete_source_crosscheck_and_structural_audit_passed",
+      "sources": [
+        "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-levante-ud-9",
+        "https://www.skysports.com/football/deportivo-la-coruna-vs-levante/teams/563005"
+      ]
     },
     {
       "date": "2026-10-17",
@@ -164,8 +168,12 @@
   ],
   "progress": {
     "fixtures_expected": 10,
-    "fixtures_with_detail_batches": 0,
-    "fixtures_source_audited_complete": 0,
-    "remaining_without_detail_batches": 10
-  }
+    "fixtures_with_detail_batches": 1,
+    "fixtures_source_audited_complete": 1,
+    "remaining_without_detail_batches": 9
+  },
+  "completed_fixture_keys": [
+    "2026-10-16|Deportivo|Levante"
+  ],
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_deportivo_levante.json"
 }
