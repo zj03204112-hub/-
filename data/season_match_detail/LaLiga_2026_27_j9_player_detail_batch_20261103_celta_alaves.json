@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 9,
+  "match_id": "laliga-2026-27-2026-10-18-celta-alaves",
+  "date": "2026-10-18",
+  "home": "Celta",
+  "away": "Alaves",
+  "score": "2-1",
+  "halftime_score": "0-0",
+  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-celta-deportivo-alaves-9",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-celta-deportivo-alaves-9",
+    "secondary_lineups": "https://www.skysports.com/football/celta-vigo-vs-alaves/teams/563004",
+    "secondary_match_report": "https://www.theguardian.com/football/match/2026/oct/18/celtavigo-v-alaves"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Ionut Radu",
+      "Javi Rodríguez",
+      "Yoel Lago",
+      "Sebastián Cáceres",
+      "Sergio Carreira",
+      "Hugo Burcio",
+      "Ilaix Moriba Kourouma",
+      "Hugo Álvarez",
+      "Ferran Jutglà",
+      "Williot Swedberg",
+      "Couhaib Driouech"
+    ],
+    "home_bench": [
+      "Andrés Antañón",
+      "Iago Aspas",
+      "Ángel Arcos",
+      "Abdoulaye Faye",
+      "Javi Rueda García",
+      "Hugo González",
+      "Altay Bayindir",
+      "Álvaro Núñez",
+      "Iván Villar",
+      "Javi Galán Gil",
+      "Aleix Febas Pérez",
+      "Marcos Alonso"
+    ],
+    "away_starting_xi": [
+      "Antonio Sivera",
+      "Nahuel Tenaglia",
+      "Jonny Otto",
+      "Ville Koski",
+      "Nicolás Valentini",
+      "Abderrahman Rebbach",
+      "Pablo Ibáñez",
+      "Antonio Blanco",
+      "Carles Aleñá",
+      "Toni Martínez",
+      "Lucas Boyé"
+    ],
+    "away_bench": [
+      "Aitor Rodríguez",
+      "Gustav Swiderski",
+      "Youssef Lekhedim",
+      "Denis Suárez",
+      "Ander Guevara",
+      "Mariano Díaz Mejía",
+      "Hugo Novoa Ramos",
+      "Aitor Mañas",
+      "Miguel Rodríguez",
+      "Carlos Benavídez",
+      "Selu Diallo",
+      "Xanet Olaiz"
+    ],
+    "substitution_events": [
+      {
+        "team": "Celta",
+        "player_in": "Aleix Febas Pérez",
+        "player_out": "Ilaix Moriba Kourouma",
+        "minute": "45"
+      },
+      {
+        "team": "Celta",
+        "player_in": "Javi Rueda García",
+        "player_out": "Williot Swedberg",
+        "minute": "45"
+      },
+      {
+        "team": "Celta",
+        "player_in": "Iago Aspas",
+        "player_out": "Couhaib Driouech",
+        "minute": "70"
+      },
+      {
+        "team": "Celta",
+        "player_in": "Andrés Antañón",
+        "player_out": "Hugo Burcio",
+        "minute": "70"
+      },
+      {
+        "team": "Celta",
+        "player_in": "Marcos Alonso",
+        "player_out": "Sebastián Cáceres",
+        "minute": "77"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Hugo Novoa Ramos",
+        "player_out": "Jonny Otto",
+        "minute": "62"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Mariano Díaz Mejía",
+        "player_out": "Toni Martínez",
+        "minute": "62"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Denis Suárez",
+        "player_out": "Carles Aleñá",
+        "minute": "62"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Aitor Mañas",
+        "player_out": "Abderrahman Rebbach",
+        "minute": "88"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Ander Guevara",
+        "player_out": "Antonio Blanco",
+        "minute": "88"
+      }
+    ],
+    "notes": [
+      "Both starting XIs and both 12-player bench lists cross-checked against official LaLiga and Sky Sports lineup sources.",
+      "Ten substitutions are listed across the timeline, but the Celta starting XI/bench and official event list were cross-checked: two halftime changes, two at 70', one at 77', and four Alavés changes at 62'/88'.",
+      "Halftime changes are stored at 45' from detailed commentary although summary cards show 46'.",
+      "Toni Martínez is used as the official event display name for the Alavés starter shown in some roster sources as Antonio Martínez López.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
