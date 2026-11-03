@@ -54,12 +54,26 @@
       ],
       "reason": "Official LaLiga event cards display 62' and 61'; narrative commentary has underlying event times 61' and 60'. The project convention stores the displayed event-card minute.",
       "source": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11"
+    },
+    {
+      "match": "Barcelona-Alaves",
+      "field": "Alavés bench identity",
+      "before": "UNRESOLVED_SHIRT_NUMBER_27",
+      "after": "Xanet Olaiz",
+      "reason": "Free lineup cross-check identifies the shirt-number-27 substitute as Xanet Olaiz; no substitution event indicates he entered.",
+      "source": "https://www.skysports.com/football/barcelona-vs-alaves/teams/563025"
+    },
+    {
+      "match": "Villarreal-Espanyol",
+      "field": "Espanyol starting XI shirt number 15",
+      "before": "UNRESOLVED_SHIRT_NUMBER_15",
+      "after": "Bryan Zaragoza",
+      "reason": "Free lineup source identifies the shirt-number-15 starter as Bryan Zaragoza; official event timeline records Javi Puado replacing him at 77'.",
+      "source": "https://www.tycsports.com/espana/la-liga/espana-laliga-2026-2027-villarreal-vs-espanyol-fecha-11-id769054.html"
     }
   ],
   "pending_checks": [
     "Audit all 10 Jornada 11 matches one by one; batches existing does not mean audited.",
-    "Resolve Alavés substitute identity shown only as shirt number 27.",
-    "Resolve Espanyol player identity shown only as shirt number 15.",
     "Cross-check official substitution timeline against every normalized CSV event row.",
     "Do not mark non-entering substitutes as appeared/not appeared without complete, source-backed event evidence."
   ],
@@ -153,8 +167,8 @@
     "duplicate_substitution_rows_in_jornada11": 0,
     "total_player_rows": 451,
     "total_substitution_event_rows": 95,
-    "matches_with_11_starters_for_both_teams": 8,
-    "matches_with_starting_xi_or_identity_gaps": 2,
+    "matches_with_11_starters_for_both_teams": 10,
+    "matches_with_starting_xi_or_identity_gaps": 0,
     "per_match": [
       {
         "match": "Barcelona-Alaves",
@@ -165,19 +179,19 @@
         "events_batch": 10,
         "events_csv": 10,
         "issues": [
-          "Alavés bench list incomplete/one identity unresolved; verify official list."
+          "Shirt-number-27 bench identity resolved as Xanet Olaiz; still audit the entire official bench and event minute display."
         ]
       },
       {
         "match": "Villarreal-Espanyol",
         "home_starting_xi": 11,
-        "away_starting_xi": 10,
+        "away_starting_xi": 11,
         "home_bench": 10,
         "away_bench": 12,
         "events_batch": 10,
         "events_csv": 10,
         "issues": [
-          "Espanyol starting XI has only 10 named players; one starter identity unresolved; Villarreal bench count 10 needs source check."
+          "Shirt-number-15 starter resolved as Bryan Zaragoza; Villarreal bench has 10 listed entries in current source and needs final confirmation against official roster."
         ]
       },
       {
