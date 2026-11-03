@@ -2,35 +2,9 @@
   "generated_at": "2026-11-03",
   "baseline_window": "2026-08-07 to 2026-10-31",
   "baseline_matches": 126,
-  "pending_official_evidence_count": 34,
+  "pending_official_evidence_count": 32,
   "definition": "Rows without a matching entry in all stored official-check batches, including the official_score_records_verified_this_batch array in the 2026-11-02b file, after date/team alias normalization.",
   "pending_matches": [
-    {
-      "date": "2026-08-09",
-      "home": "東京Ｖ",
-      "away": "川崎Ｆ",
-      "score": "1-1",
-      "missing_official_record": true,
-      "missing_starting_xi": true,
-      "missing_both_bench_lists": true,
-      "missing_substitution_events": true,
-      "missing_player_appearance_status": true,
-      "missing_match_level_xg": true,
-      "missing_independent_match_level_xga": true
-    },
-    {
-      "date": "2026-08-09",
-      "home": "長崎",
-      "away": "京都",
-      "score": "2-1",
-      "missing_official_record": true,
-      "missing_starting_xi": true,
-      "missing_both_bench_lists": true,
-      "missing_substitution_events": true,
-      "missing_player_appearance_status": true,
-      "missing_match_level_xg": true,
-      "missing_independent_match_level_xga": true
-    },
     {
       "date": "2026-08-14",
       "home": "東京Ｖ",
@@ -497,6 +471,18 @@
       "home": "広島",
       "away": "千葉",
       "official_url": "https://www.jleague.jp/en/match/j1/2026/080806/"
+    },
+    {
+      "date": "2026-08-09",
+      "home": "東京Ｖ",
+      "away": "川崎Ｆ",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/080901/"
+    },
+    {
+      "date": "2026-08-09",
+      "home": "長崎",
+      "away": "京都",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/080902/"
     }
   ]
 }
