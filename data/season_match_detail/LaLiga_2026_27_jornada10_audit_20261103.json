@@ -15,9 +15,10 @@
       "2026-10-24|Valencia|Villarreal",
       "2026-10-24|Atletico|Deportivo",
       "2026-10-25|Athletic|Getafe",
-      "2026-10-25|Celta|Betis"
+      "2026-10-25|Celta|Betis",
+      "2026-10-25|Real Sociedad|Levante"
     ],
-    "pending_fixture_count": 3
+    "pending_fixture_count": 2
   },
   "matches": [
     {
@@ -314,6 +315,46 @@
       "sources": [
         "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rc-celta-real-betis-10",
         "https://www.skysports.com/football/celta-vigo-vs-real-betis/teams/563018"
+      ],
+      "corrections": [],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-25",
+      "home": "Real Sociedad",
+      "away": "Levante",
+      "score": "2-1",
+      "halftime_score": "2-1",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-levante-ud-10",
+        "https://www.skysports.com/football/real-sociedad-vs-levante/teams/563021"
       ],
       "corrections": [],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
