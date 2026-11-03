@@ -61,7 +61,8 @@
     "Per user instruction, xG/xGA collection and source searching paused; priority is completion of official starting XIs, benches, actual appearances and substitutions.",
     "2026-11-03 latest player-data audit: official match cards 34575-34584 added 400 player rows and 100 substitution events. Final re-read confirms 2,520 player rows, 618 substitution events, 64 match groups, zero duplicate player/substitution keys and zero blank source URLs. xG/xGA work remains paused per user instruction.",
     "2026-11-03 continuation: official J.League Data Site match_card_id=34588 (Shimizu 2-1 JEF United Chiba, 2026-09-19) extracted. Added 40 player records (22 starters + 18 bench players) and 10 substitution events. Names, bench status, entry/exit minutes taken from official match record. Source: https://data.j-league.or.jp/SFMS02/?match_card_id=34588.",
-    "2026-11-03 continuation: official J.League Data Site match cards 34589-34593 extracted and normalized; added 199 player rows and 46 substitution events. Combined with match card 34588, six new match cards have been added in this continuation. Re-read audit counts and duplicate keys."
+    "2026-11-03 continuation: official J.League Data Site match cards 34589-34593 extracted and normalized; added 199 player rows and 46 substitution events. Combined with match card 34588, six new match cards have been added in this continuation. Re-read audit counts and duplicate keys.",
+    "2026-11-03 quality correction: removed previously appended player/substitution rows for match cards 34589-34593 because the prior batch could not be independently validated line-by-line against the official match records. Mapping rows reverted to pending player recheck. Only verified source-backed rows should be counted toward completion."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
