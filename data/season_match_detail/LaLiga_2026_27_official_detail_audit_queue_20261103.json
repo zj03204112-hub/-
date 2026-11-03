@@ -1905,5 +1905,21 @@
   "normalized_player_csv": "data/season_match_detail/LaLiga_2026_27_players.csv",
   "normalized_substitution_csv": "data/season_match_detail/LaLiga_2026_27_substitutions.csv",
   "last_update": "2026-11-03",
-  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json"
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json",
+  "jornada11_audit_status": "in_progress_not_certified",
+  "last_audit_corrections": [
+    {
+      "match": "Betis-Malaga",
+      "field": "Málaga bench list",
+      "before": "Valentín Gómez",
+      "after": "Jens Cajuste"
+    },
+    {
+      "match": "Rayo-Celta",
+      "field": "Giorgi Tsitaishvili substitution minute",
+      "before": "45",
+      "after": "46"
+    }
+  ],
+  "jornada10_queue_file": "data/season_match_detail/LaLiga_2026_27_jornada10_collection_queue_20261103.json"
 }
