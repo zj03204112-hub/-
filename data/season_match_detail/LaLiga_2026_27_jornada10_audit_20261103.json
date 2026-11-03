@@ -10,9 +10,10 @@
     "duplicate_count": 0,
     "completed_fixture_keys": [
       "2026-10-23|Alaves|Malaga",
-      "2026-10-24|Rayo|Elche"
+      "2026-10-24|Rayo|Elche",
+      "2026-10-24|Racing|Espanyol"
     ],
-    "pending_fixture_count": 8
+    "pending_fixture_count": 7
   },
   "matches": [
     {
@@ -101,6 +102,46 @@
           "reason": "Detailed official commentary gives 45'; summary substitution cards show 46'."
         }
       ],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-24",
+      "home": "Racing",
+      "away": "Espanyol",
+      "score": "2-1",
+      "halftime_score": "0-0",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-rcd-espanyol-de-barcelona-10",
+        "https://www.skysports.com/football/racing-santander-vs-espanyol/teams/563019"
+      ],
+      "corrections": [],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
     }
   ],
