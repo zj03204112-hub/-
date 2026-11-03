@@ -37,7 +37,7 @@
     }
   ],
   "row_by_row_independent_recheck": "Result/mapping rows are structurally aligned 130/130; 32 baseline matches still lack complete individual official evidence. Player and xG/xGA completeness are tracked separately.",
-  "lineups_and_actual_appearances": "Incremental official extraction now includes match card 34588 (Shimizu 2-1 JEF United Chiba): 40 player rows and 10 substitution events added. Re-read and deduplicate before updating full-season counts.",
+  "lineups_and_actual_appearances": "Latest source-backed re-audit (2026-11-03): the six requested match cards 34589, 34590, 34591, 34592, 34593 and 34641 were checked against official J.League Data Site records. Their standardized player-row counts are 39, 40, 40, 40, 40 and 40 respectively; substitution-event counts are 8, 10, 8, 10, 10 and 11. Red cards in 34591 (Takahiro Ko, 68') and 34592 (Lucao, 57') are recorded as starter exit times, not substitution events. Full-season player coverage remains incomplete.",
   "notes": [
     "The CSV's source column points to the official J.League Data Site.",
     "125 rows correspond to completed matches from 2026-08-07 through 2026-10-31; fixtures scheduled for 2026-11-01 are not included.",
@@ -61,26 +61,26 @@
     "Per user instruction, xG/xGA collection and source searching paused; priority is completion of official starting XIs, benches, actual appearances and substitutions.",
     "2026-11-03 latest player-data audit: official match cards 34575-34584 added 400 player rows and 100 substitution events. Final re-read confirms 2,520 player rows, 618 substitution events, 64 match groups, zero duplicate player/substitution keys and zero blank source URLs. xG/xGA work remains paused per user instruction.",
     "2026-11-03 continuation: official J.League Data Site match_card_id=34588 (Shimizu 2-1 JEF United Chiba, 2026-09-19) extracted. Added 40 player records (22 starters + 18 bench players) and 10 substitution events. Names, bench status, entry/exit minutes taken from official match record. Source: https://data.j-league.or.jp/SFMS02/?match_card_id=34588.",
-    "2026-11-03 continuation: official J.League Data Site match cards 34589-34593 extracted and normalized; added 199 player rows and 46 substitution events. Combined with match card 34588, six new match cards have been added in this continuation. Re-read audit counts and duplicate keys.",
-    "2026-11-03 quality correction: removed previously appended player/substitution rows for match cards 34589-34593 because the prior batch could not be independently validated line-by-line against the official match records. Mapping rows reverted to pending player recheck. Only verified source-backed rows should be counted toward completion.",
+    "2026-11-03 re-audit correction: match cards 34589-34593 are present in the current standardized CSVs; an intermediate-state note about their removal is superseded by the latest source-backed re-read. Their current row/event counts are 39/8, 40/10, 40/8, 40/10 and 40/10.",
+    "Superseded intermediate-state note: the current standardized CSVs contain verified rows for match cards 34589-34593. The latest re-audit corrected only two red-card exit statuses and removed nine wrongly assigned bench rows that had been temporarily added on a review branch; those incorrect rows were not retained.",
     "2026-11-03 continued official player extraction: Chiba 3-0 Fukuoka (2026-11-01, official J.LEAGUE lineup page). Added 40 player rows (22 starters + 18 bench players) and 10 substitution events. Starting XIs, bench membership, appearances and substitution minutes normalized from official match progress. Match card 34640 lineup/appearance audit marked verified.",
     "Data-quality note for match 34640: the official lineup table displays Rocha for Erison at 90+1, while the official match-progress timeline labels the same event 45+5 (90+5). To avoid guessing, the minute is left blank in the normalized player/substitution rows pending a consistent official record.",
-    "2026-11-03 continued official lineup extraction for 2026-11-01 fixtures: Machida 0-0 Gamba Osaka added 40 player rows (22 starters + 18 bench players) and 9 substitution events, fully normalized from official J.LEAGUE lineup page. Nagasaki 1-2 Tokyo Verdy added 36 verified player rows (22 starters + 14 players listed as substitutes/appeared) and 11 official substitution events; unused bench list is incomplete because it was not fully exposed in the official page view. Mapping status explicitly preserves that limitation; no unverified unused bench players counted as complete.",
-    "Correction to 2026-11-01 Nagasaki vs Tokyo Verdy player rows: removed three misassigned/duplicate bench entries (Yamada Goki under Tokyo Verdy; Matsuhashi Yusuke and Kumatoritani Issei duplicate unused rows). The match currently contains 33 verified player rows: 22 starters plus 11 substitute appearances; unused bench list remains incomplete pending a fully accessible official source.",
-    "Additional correction: Kumatoritani Issei and Matsuhashi Yusuke are Tokyo Verdy substitutes, not Nagasaki substitutes. Their team assignments were corrected; Nagasaki vs Tokyo Verdy now records 22 starters plus 11 substitute appearances (33 player rows), matching the 11 official substitution events. Unused bench entries remain incomplete."
+    "2026-11-03 official lineup re-audit: match card 34642 has 40 player rows and 9 substitution events; match card 34641 has 40 player rows (22 starters + 18 bench players) and 11 substitution events. Both are checked against official J.LEAGUE records.",
+    "Superseded intermediate-state note: current match card 34641 has 40 verified player rows, including all 18 official bench players, 11 substitute appearances and 7 unused substitutes.",
+    "Latest re-audit confirms the team assignments for match card 34641: all nine Tokyo Verdy substitutes and all nine Nagasaki substitutes are represented; 11 substitutions are recorded separately."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
   "lineup_and_appearance_audit": {
-    "matches_with_both_teams_starting_xi_structured": 68,
-    "matches_with_both_bench_lists_structured": 66,
-    "matches_with_substitution_events_structured": 68,
-    "matches_with_complete_player_appearance_status_table": 65,
+    "matches_with_both_teams_starting_xi_structured": 76,
+    "matches_with_both_bench_lists_structured": 71,
+    "matches_with_substitution_events_structured": 76,
+    "matches_with_complete_player_appearance_status_table": 75,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-    "standardized_player_rows": 2879,
+    "standardized_player_rows": 2999,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-    "standardized_substitution_rows": 701,
-    "note": "Partial structured extraction only: re-read confirms 68 match-card groups with player rows, 68 matches with both starting XIs, 66 with both bench lists, 65 with complete player appearance-status classification, and 68 with substitution records. Official match-card URLs retained. Not full-season completion."
+    "standardized_substitution_rows": 731,
+    "note": "Current re-read of main-branch source files: 2,999 player rows across 76 match groups; 76 groups have both starting XIs, 71 have both bench lists, 75 have complete appearance-status classification, and 76 have substitution-event records. Duplicate player/substitution keys and blank player source URLs: zero. One substitution event still has an unresolved minute conflict; no minute was guessed."
   },
   "xg_xga_audit": {
     "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
@@ -91,5 +91,70 @@
     "note": "xG values remain source-attributed; no independent match-level xGA source passed verification. Do not infer xGA from opponent xG.",
     "xga_source_audit_file": "data/season_match_detail/J1_League_2026_27_xga_source_audit_20261103.json",
     "xga_source_audit_summary": "Seven source families reviewed. FootballSoccerAPI and TACTIX public API docs expose match-level xG/expected_goals but no explicit free match-level xGA field was verified. Sportmonks documents fixture-level xGA but the xG add-on is paid. No free explicit xGA source passed verification."
+  },
+  "latest_reaudit": {
+    "date": "2026-11-03",
+    "match_cards": [
+      {
+        "id": "34589",
+        "player_rows": 39,
+        "starters": 22,
+        "bench": 17,
+        "substitution_events": 8,
+        "status": "verified"
+      },
+      {
+        "id": "34590",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 10,
+        "status": "verified"
+      },
+      {
+        "id": "34591",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 8,
+        "status": "verified",
+        "discipline_note": "Takahiro Ko sent off at 68'; exit time recorded, not a substitution."
+      },
+      {
+        "id": "34592",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 10,
+        "status": "verified",
+        "discipline_note": "Lucao sent off at 57'; exit time recorded, not a substitution."
+      },
+      {
+        "id": "34593",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 10,
+        "status": "verified"
+      },
+      {
+        "id": "34641",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 11,
+        "status": "verified"
+      }
+    ],
+    "current_player_rows": 2999,
+    "current_player_match_groups": 76,
+    "current_substitution_rows": 731,
+    "current_substitution_match_groups": 76,
+    "matches_missing_player_records": 54,
+    "duplicate_player_keys": 0,
+    "duplicate_substitution_keys": 0,
+    "blank_player_source_urls": 0,
+    "blank_substitution_minutes": 1,
+    "xg_xga_search_status": "paused per user instruction; not changed"
   }
 }

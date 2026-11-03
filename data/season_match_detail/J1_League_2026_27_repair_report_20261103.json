@@ -9,13 +9,13 @@
     "unique_date_home_away_keys": 130
   },
   "player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-  "player_rows": 2640,
-  "matches_with_structured_starting_xi": 67,
-  "matches_with_both_bench_lists": 61,
-  "matches_with_player_appearance_status_table": 61,
+  "player_rows": 2999,
+  "matches_with_structured_starting_xi": 76,
+  "matches_with_both_bench_lists": 71,
+  "matches_with_player_appearance_status_table": 75,
   "substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-  "substitution_rows": 645,
-  "matches_with_structured_substitution_events": 67,
+  "substitution_rows": 731,
+  "matches_with_structured_substitution_events": 76,
   "xg_xga_file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
   "matches_with_source_attributed_match_level_xg": 12,
   "matches_with_independently_verified_match_level_xga": 0,
@@ -48,15 +48,17 @@
     "Per user instruction, xG/xGA source searching remains paused; continue prioritizing official starting XI, bench, actual appearance status and substitution records.",
     "2026-11-03 continuation added official J.League match cards 34575-34584: 400 player rows and 100 substitution events total across ten fixtures. Player and substitution files re-read after commit; 2,520 player rows, 618 substitution events, 64 match groups, zero duplicate keys and zero blank source URLs. Full-season coverage remains incomplete; 66 of 130 result fixtures have no player records.",
     "2026-11-03 continuation added official match cards 34585-34587: 120 player rows and 27 substitution events. All substitution events are now written and re-read; incoming players match the player table's substitute-appeared records.",
-    "Latest verified counts: 2,640 player rows across 67 match groups, 645 substitution events, 67 matches with structured starting XIs, 61 with both bench lists and appearance-status tables, 63 of 130 fixtures still lacking player records. Duplicate player/substitution keys: zero; blank source URLs: zero."
+    "Latest verified counts: 2,640 player rows across 67 match groups, 645 substitution events, 67 matches with structured starting XIs, 61 with both bench lists and appearance-status tables, 63 of 130 fixtures still lacking player records. Duplicate player/substitution keys: zero; blank source URLs: zero.",
+    "Latest source-backed re-audit (2026-11-03): match cards 34589, 34590, 34591, 34592, 34593 and 34641 verified. Player rows: 39, 40, 40, 40, 40, 40; substitution events: 8, 10, 8, 10, 10, 11. Two red-card exit times corrected (34591: Takahiro Ko 68'; 34592: Lucao 57'); dismissals are not substitution events.",
+    "Current standardized files re-read after correction: 2,999 player rows across 76 match groups; 731 substitution events across 76 groups; zero duplicate player keys, zero duplicate substitution keys, zero blank player names/source URLs. 54 of 130 result fixtures still lack player-detail rows; full-season player coverage is not complete."
   ],
-  "matches_missing_starting_xi": 76,
-  "matches_missing_both_bench_lists": 82,
-  "matches_missing_complete_appearance_status_table": 83,
+  "matches_missing_starting_xi": 54,
+  "matches_missing_both_bench_lists": 59,
+  "matches_missing_complete_appearance_status_table": 55,
   "matches_missing_source_attributed_match_level_xg": 118,
   "matches_missing_independently_verified_match_level_xga": 130,
   "branch_alignment_note": "The canonical results CSV is 130 rows on both main and audit/stable-match-id-mapping-20261101; ISO dates and unique date/home/away keys verified.",
-  "substitution_rows_missing_minute": 0,
+  "substitution_rows_missing_minute": 1,
   "substitution_rows_missing_player_names": 0,
   "player_detail_increment": {
     "date": "2026-11-03",
@@ -108,5 +110,41 @@
     "matches_with_independently_verified_match_level_xga": 0,
     "matches_missing_independently_verified_match_level_xga": 130,
     "note": "Added review of FootballSoccerAPI match docs and TACTIX Developer API docs. They expose match-level expected_goals/xG values in team statistics, but no explicit xGA field was verified in the free/public material. Sportmonks documents explicit fixture xGA but its xG add-on is paid."
+  },
+  "latest_verified_reaudit": {
+    "date": "2026-11-03",
+    "match_cards": [
+      "34589",
+      "34590",
+      "34591",
+      "34592",
+      "34593",
+      "34641"
+    ],
+    "player_rows_by_match": [
+      39,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "substitution_events_by_match": [
+      8,
+      10,
+      8,
+      10,
+      10,
+      11
+    ],
+    "current_player_rows": 2999,
+    "current_player_match_groups": 76,
+    "current_substitution_rows": 731,
+    "current_substitution_match_groups": 76,
+    "matches_missing_player_records": 54,
+    "duplicate_player_keys": 0,
+    "duplicate_substitution_keys": 0,
+    "blank_player_source_urls": 0,
+    "blank_substitution_minutes": 1
   }
 }
