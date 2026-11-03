@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 9,
+  "match_id": "laliga-2026-27-2026-10-18-malaga-real-sociedad",
+  "date": "2026-10-18",
+  "home": "Malaga",
+  "away": "Real Sociedad",
+  "score": "2-5",
+  "halftime_score": "0-2",
+  "official_match_url": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-real-sociedad-9",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-real-sociedad-9",
+    "secondary_lineups": "https://www.skysports.com/football/malaga-vs-real-sociedad/teams/563008",
+    "secondary_match_report": "https://www.theguardian.com/football/match/2026/oct/18/malaga-v-realsociedad"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Alfonso Herrero",
+      "Rafita",
+      "Ángel Recio",
+      "José Salinas",
+      "Fernando Calero",
+      "Pablo Martínez",
+      "Carlos Dotor",
+      "Izan Merino",
+      "David Larrubia",
+      "Chupe",
+      "Adrián Niño"
+    ],
+    "home_bench": [
+      "Einar Galilea",
+      "Joaquín Muñoz",
+      "Rafa Rodríguez",
+      "Carlos López",
+      "Carlos Puga",
+      "Dani Lorenzo",
+      "Eneko Jauregi",
+      "Álex Pastor",
+      "Adam Aznou",
+      "Ramón Enríquez",
+      "Haitam Abaida",
+      "Jens Cajuste"
+    ],
+    "away_starting_xi": [
+      "Álex Remiro",
+      "Héctor Fort",
+      "Jon Martín",
+      "Mamadou Sarr",
+      "Aihen Muñoz",
+      "Jon Gorrotxategi",
+      "Carlos Soler",
+      "Takefusa Kubo",
+      "Ander Barrenetxea",
+      "Orri Óskarsson",
+      "Mikel Oyarzabal"
+    ],
+    "away_bench": [
+      "Igor Zubeldia",
+      "Beñat Turrientes",
+      "Gonçalo Guedes",
+      "Job Ochieng",
+      "Unai Marrero",
+      "Jon Pacheco",
+      "Sergio Gómez",
+      "Arsen Zakharyan",
+      "Luka Sučić",
+      "Gorka Carrera",
+      "Alex Lebarbier",
+      "Alex Marchal"
+    ],
+    "substitution_events": [
+      {
+        "team": "Malaga",
+        "player_in": "Ramón Enríquez",
+        "player_out": "Izan Merino",
+        "minute": "45"
+      },
+      {
+        "team": "Malaga",
+        "player_in": "Adam Aznou",
+        "player_out": "José Salinas",
+        "minute": "45"
+      },
+      {
+        "team": "Malaga",
+        "player_in": "Dani Lorenzo",
+        "player_out": "Carlos Dotor",
+        "minute": "64"
+      },
+      {
+        "team": "Malaga",
+        "player_in": "Joaquín Muñoz",
+        "player_out": "David Larrubia",
+        "minute": "68"
+      },
+      {
+        "team": "Malaga",
+        "player_in": "Carlos Puga",
+        "player_out": "Adrián Niño",
+        "minute": "82"
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Gonçalo Guedes",
+        "player_out": "Ander Barrenetxea",
+        "minute": "61"
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Igor Zubeldia",
+        "player_out": "Héctor Fort",
+        "minute": "61"
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Sergio Gómez",
+        "player_out": "Aihen Muñoz",
+        "minute": "71"
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Job Ochieng",
+        "player_out": "Takefusa Kubo",
+        "minute": "71"
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Alex Marchal",
+        "player_out": "Orri Óskarsson",
+        "minute": "79"
+      }
+    ],
+    "notes": [
+      "Málaga lineup and bench were checked against official LaLiga lineups; Real Sociedad XI and bench were cross-checked with Sky Sports and other free lineup sources.",
+      "Ten substitutions verified. The two halftime changes are stored at 45' from detailed official commentary although the summary timeline cards display 46'.",
+      "The official Málaga event timeline calls the player Chupe; the roster display name is retained as Chupe.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
