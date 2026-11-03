@@ -7,20 +7,20 @@
   "extension_matches_2026_11_01": 4,
   "dedup_method": "normalized date + home team + away team; team aliases include Japanese/Chinese and full-width forms",
   "official_evidence": {
-    "any_matched": 84,
-    "individual_page_or_match_record_linked": 47,
+    "any_matched": 86,
+    "individual_page_or_match_record_linked": 49,
     "schedule_or_index_only": 37,
-    "pending": 42,
+    "pending": 40,
     "score_conflicts": 0,
     "identity_conflicts": 0,
     "duplicated_batch_records": 10
   },
   "structured_data": {
     "starting_xi_both_teams": 8,
-    "both_substitute_benches_structured": 4,
+    "both_substitute_benches_structured": 6,
     "substitution_events_structured": 8,
-    "player_appearance_status_table": 2,
-    "bench_source_caveat": "Four matches have both bench lists structured, but one (Kashiwa 0-2 Yokohama FM on 2026-09-06) uses a secondary source pending official confirmation; only three have both benches cross-checked to official pages."
+    "player_appearance_status_table": 4,
+    "bench_source_caveat": "Six matches have both bench lists structured. The 2026-09-06 Kashiwa 0-2 Yokohama FM bench lists still include secondary-source unused substitutes pending official confirmation; the two 2026-08-07 matches in the 20261103g supplement have official club/J.League sources."
   },
   "xg_xga": {
     "baseline_xg_pairs_present": 8,
@@ -107,36 +107,37 @@
   ],
   "extension_audit_file": "data/season_match_detail/J1_League_2026_27_extension_audit_20261101.json",
   "extension_audit_result": "2026-11-01 extension: 4/4 scores checked against official individual match pages; 4 third-party xG pairs recorded; 0 independently verified xGA pairs.",
-  "latest_player_detail_file": "data/season_match_detail/J1_League_2026_27_player_detail_batch_20261103d.json",
-  "latest_player_detail_result": "Added official J.League lineup/timeline transcription for Kashiwa 0-2 Yokohama F. Marinos (2026-09-06): 22 starters and 10 substitutions; both bench lists transcribed from a secondary source pending official confirmation. Full appearance table remains provisional for unused bench players.",
+  "latest_player_detail_file": "data/season_match_detail/J1_League_2026_27_player_appearance_supplement_20261103g.json",
+  "latest_player_detail_result": "Added official substitute lists and appearance status for 2026-08-07 Yokohama F. Marinos 3-4 Kashima and Gamba Osaka 4-3 Urawa; 20 substitution events cross-checked. xG/xGA remain null.",
   "pending_file_count": 42,
   "percentages": {
-    "official_evidence_any": 66.67,
-    "individual_page_or_match_record_linked": 37.3,
+    "official_evidence_any": 68.25,
+    "individual_page_or_match_record_linked": 38.89,
     "schedule_or_index_only": 29.37,
-    "pending_official_evidence": 33.33,
+    "pending_official_evidence": 31.75,
     "starting_xi_both_teams": 6.35,
-    "both_substitute_benches_structured": 3.17,
+    "both_substitute_benches_structured": 4.76,
     "substitution_events_structured": 6.35,
-    "player_appearance_status_table": 1.59,
+    "player_appearance_status_table": 3.17,
     "xg_pair_present": 6.35,
     "xga_independently_verified": 0
   },
   "missing_field_counts": {
     "starting_xi": 118,
-    "both_substitute_benches": 122,
+    "both_substitute_benches": 120,
     "substitution_events": 118,
-    "player_appearance_status_table": 124,
+    "player_appearance_status_table": 122,
     "match_level_xg_pair": 118,
     "independently_verified_match_level_xga": 126
   },
   "pending_field_missing_counts": {
-    "official_evidence": 42,
-    "starting_xi": 40,
+    "official_evidence": 40,
+    "starting_xi": 38,
     "both_substitute_benches": 42,
-    "substitution_events": 40,
-    "player_appearance_status_table": 42,
-    "match_level_xg_pair": 42,
-    "independently_verified_match_level_xga": 42
+    "substitution_events": 38,
+    "player_appearance_status_table": 40,
+    "match_level_xg_pair": 40,
+    "independently_verified_match_level_xga": 40,
+    "both_benches": 40
   }
 }
