@@ -1,0 +1,146 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 9,
+  "match_id": "laliga-2026-27-2026-10-18-osasuna-racing",
+  "date": "2026-10-18",
+  "home": "Osasuna",
+  "away": "Racing",
+  "score": "2-0",
+  "halftime_score": "1-0",
+  "official_match_url": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-r-racing-club-9",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-r-racing-club-9",
+    "secondary_lineups": "https://www.skysports.com/football/osasuna-vs-racing-santander/teams/563009",
+    "secondary_match_report": "https://www.footballwebpages.co.uk/match/2026-2027/spanish-la-liga/osasuna/racing-de-santander/577557"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Aitor Fernández",
+      "Valentin Rosier",
+      "Alejandro Catena",
+      "Enzo Boyomo",
+      "Abel Bretones",
+      "Jon Moncayola",
+      "Iker Muñoz",
+      "Moi Gómez",
+      "Rubén García",
+      "Ante Budimir",
+      "Jonathan Dubasin"
+    ],
+    "home_bench": [
+      "Sergio Herrera Pirón",
+      "Rafa Fernández Rodríguez",
+      "Lucas Torró",
+      "Raúl García",
+      "Enrique Barja Alfonso",
+      "Diego Rico Salguero",
+      "Raúl Moro Prescoli",
+      "Mauro Echegoyen",
+      "Íñigo Arguibide",
+      "Asier Osambela",
+      "Unai Santos",
+      "Rockson Yeboah"
+    ],
+    "away_starting_xi": [
+      "Julen Agirrezabala",
+      "Álvaro Mantilla",
+      "Pablo Ramón",
+      "Jeanuël Belocian",
+      "Jorge Salinas Viadero",
+      "Iván Martín",
+      "Matteo Prati",
+      "Sergio Canales",
+      "André Almeida",
+      "Iñigo Vicente Elorduy",
+      "Yassir Zabiri"
+    ],
+    "away_bench": [
+      "Laro Gómez",
+      "Aarón Martín Caricol",
+      "Íñigo Sainz-Maza",
+      "Giorgi Guliashvili",
+      "Juan Carlos Arana Gómez",
+      "Andrés Martín",
+      "Asier Villalibre Molina",
+      "Maguette Gueye",
+      "Pablo García",
+      "Facundo González",
+      "Iker Luque",
+      "Pedro Felipe"
+    ],
+    "substitution_events": [
+      {
+        "team": "Racing",
+        "player_in": "Andrés Martín",
+        "player_out": "André Almeida",
+        "minute": "45"
+      },
+      {
+        "team": "Osasuna",
+        "player_in": "Asier Osambela",
+        "player_out": "Moi Gómez",
+        "minute": "67"
+      },
+      {
+        "team": "Osasuna",
+        "player_in": "Lucas Torró",
+        "player_out": "Iker Muñoz",
+        "minute": "67"
+      },
+      {
+        "team": "Racing",
+        "player_in": "Pablo García",
+        "player_out": "Sergio Canales",
+        "minute": "69"
+      },
+      {
+        "team": "Osasuna",
+        "player_in": "Íñigo Arguibide",
+        "player_out": "Valentin Rosier",
+        "minute": "76"
+      },
+      {
+        "team": "Osasuna",
+        "player_in": "Raúl Moro Prescoli",
+        "player_out": "Jonathan Dubasin",
+        "minute": "76"
+      },
+      {
+        "team": "Racing",
+        "player_in": "Aarón Martín Caricol",
+        "player_out": "Jorge Salinas Viadero",
+        "minute": "83"
+      },
+      {
+        "team": "Racing",
+        "player_in": "Asier Villalibre Molina",
+        "player_out": "Iván Martín",
+        "minute": "83"
+      },
+      {
+        "team": "Osasuna",
+        "player_in": "Raúl García",
+        "player_out": "Rubén García",
+        "minute": "90+1"
+      },
+      {
+        "team": "Racing",
+        "player_in": "Giorgi Guliashvili",
+        "player_out": "Yassir Zabiri",
+        "minute": "90+2"
+      }
+    ],
+    "notes": [
+      "Both starting XIs and both 12-player bench lists cross-checked against official LaLiga and Sky Sports lineup sources.",
+      "Ten substitution events verified against the detailed official timeline; added-time substitutions retain 90+1 and 90+2 notation.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared after checking the complete official substitution timeline."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
