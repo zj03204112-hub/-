@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 9,
+  "status": "queued_for_collection",
+  "official_results_source": "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-9",
+  "fixture_keys": {
+    "expected": 10,
+    "unique": 10,
+    "duplicate_count": 0,
+    "pending_fixture_count": 10
+  },
+  "matches": [],
+  "final_integrity": null,
+  "rules": [
+    "Audit one fixture at a time",
+    "Each batch must match the official result key",
+    "Require 11 starters per team",
+    "Record the complete source-listed bench, even if fewer than 12",
+    "Cross-check each substitution in/out and detailed minute",
+    "Recheck duplicate keys and CSV-to-batch alignment before closing the round"
+  ]
+}
