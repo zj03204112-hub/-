@@ -27,12 +27,19 @@
       "score": "1-1",
       "official_match_url": "https://www.laliga.com/en-NG/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-malaga-cf-10",
       "official_match_url_status": "found",
-      "starting_xi_status": "pending_source_audit",
-      "bench_status": "pending_source_audit",
-      "appearance_status": "pending_source_audit",
-      "substitutions_status": "pending_source_audit",
-      "player_detail_batch": null,
-      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them."
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_both_official_lists_12",
+      "appearance_status": "verified_10_entrants_and_14_unused_bench_players",
+      "substitutions_status": "verified_10_events",
+      "player_detail_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_alaves_malaga.json",
+      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them.",
+      "official_detail_page_found": true,
+      "detail_status": "complete_source_crosscheck_and_structural_audit_passed",
+      "sources": [
+        "https://www.laliga.com/en-NG/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-malaga-cf-10",
+        "https://www.malagacf.com/partidos/temporada-2026-2027-laliga-ea-sports-10-deportivo-alaves-vs-malaga-cf-3011",
+        "https://www.skysports.com/football/alaves-vs-malaga/teams/563014"
+      ]
     },
     {
       "date": "2026-10-24",
@@ -171,5 +178,30 @@
   },
   "normalized_batches_created": 1,
   "normalized_fixtures": 1,
-  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_rayo_elche.json"
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_alaves_malaga.json",
+  "completed_fixture_keys": [
+    "2026-10-23|Alaves|Malaga"
+  ],
+  "jornada10_progress": {
+    "fixtures_expected": 10,
+    "fixtures_with_detail_batches": 2,
+    "fixtures_source_audited_complete": 1,
+    "remaining_without_detail_batches": 8,
+    "completed": [
+      "Alaves-Malaga"
+    ],
+    "in_progress": [
+      "Rayo-Elche"
+    ],
+    "remaining": [
+      "Racing-Espanyol",
+      "Valencia-Villarreal",
+      "Atletico-Deportivo",
+      "Athletic-Getafe",
+      "Celta-Betis",
+      "Real Sociedad-Levante",
+      "Barcelona-Real Madrid",
+      "Sevilla-Osasuna"
+    ]
+  }
 }
