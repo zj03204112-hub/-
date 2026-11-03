@@ -94,6 +94,30 @@
       "after": "Removed from Atlético bench list; one bench identity unresolved",
       "reason": "The same named player appears in Levante's official bench list for this match. Do not duplicate across opposing teams or guess a replacement.",
       "source": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-levante-ud-atletico-de-madrid-11"
+    },
+    {
+      "match": "Betis-Malaga",
+      "field": "Jens Cajuste appearance row",
+      "before": "missing from normalized player CSV",
+      "after": "substitute_appeared at 80'",
+      "reason": "Official LaLiga event timeline records Jens Cajuste replacing Carlos Dotor at 80'.",
+      "source": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11"
+    },
+    {
+      "match": "Deportivo-Osasuna",
+      "field": "Osasuna starting XI / substitution status",
+      "before": "Rubén García marked starter; Raúl Moro marked unused substitute",
+      "after": "Raúl Moro starter (exit 69'); Rubén García substitute (entry 69')",
+      "reason": "Official event timeline records Asier Osambela replacing Raúl Moro and Rubén García replacing Jonathan Dubasin at 69'.",
+      "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+    },
+    {
+      "match": "Deportivo-Osasuna",
+      "field": "Pierre-Emerick Aubameyang appearance row",
+      "before": "missing from normalized player CSV",
+      "after": "substitute_appeared at 69'",
+      "reason": "Official event timeline records Aubameyang replacing Luismi Cruz at 69'.",
+      "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
     }
   ],
   "pending_checks": [
