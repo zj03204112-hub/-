@@ -30,10 +30,9 @@
     "Betis-Malaga: lineup and bench names entered from official sources; unused bench appearance status remains unverified.",
     "Rayo-Celta: non-entering bench appearance status remains unverified.",
     "For matches with details, bench appearance status remains unverified for players not recorded as entering.",
-    "For matches with details, bench appearance status remains unverified for players not recorded as entering.",
-    "For matches with details, bench appearance status remains unverified for players not recorded as entering.",
     "99 fixtures still need normalized player details, official bench lists, appearance status and substitution events.",
-    "For matches with details, bench appearance status remains unverified for players not recorded as entering."
+    "Jornada 11 audit is still in progress; two source-backed corrections applied on 2026-11-03, but no match is certified fully complete.",
+    "Jornada 10 coverage queue created; player detail batches are not yet complete for these 10 fixtures."
   ],
   "policy": [
     "Free sources only",
@@ -57,5 +56,30 @@
     "https://as.com/resultados/futbol/primera/2026_2027/directo/regular_a_11_6a4496c62a79e50/alineaciones/amp/",
     "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11",
     "https://as.com/resultados/futbol/primera/2026_2027/directo/regular_a_11_6a4496c62a7a296/alineaciones/"
-  ]
+  ],
+  "jornada11_audit_update": {
+    "status": "in_progress_not_certified",
+    "verified_corrections": [
+      {
+        "match": "Betis-Malaga",
+        "field": "Málaga bench list",
+        "change": "Replaced erroneous Valentín Gómez entry with Jens Cajuste; independent source lists Valentín Gómez among Betis substitutes and match events confirm Cajuste entered at 80'.",
+        "source": "https://www.skysports.com/football/real-betis-vs-malaga/teams/563032"
+      },
+      {
+        "match": "Rayo-Celta",
+        "field": "Rayo substitution minute",
+        "change": "Giorgi Tsitaishvili for Álvaro García corrected from 45' to official LaLiga display 46' in batch and normalized CSV files.",
+        "source": "https://www.laliga.com/es-GB/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11"
+      }
+    ],
+    "unresolved": [
+      "All 10 Jornada 11 matches still require row-by-row audit of both starting XIs and full official bench lists.",
+      "Bench appearance status for unused substitutes is not certified unless the complete official event timeline supports it.",
+      "Barcelona-Alavés: one Alavés bench identity unresolved.",
+      "Villarreal-Espanyol: one Espanyol player identity unresolved.",
+      "The remaining eight matches require full cross-check of substitution in/out names and official displayed minutes."
+    ]
+  },
+  "jornada10_queue_file": "data/season_match_detail/LaLiga_2026_27_jornada10_collection_queue_20261103.json"
 }
