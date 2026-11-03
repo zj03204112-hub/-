@@ -25,7 +25,7 @@
   "official_results_page": "https://www.laliga.com/en-GB/laliga-easports/results",
   "official_match_detail_pages_found": 10,
   "detailed_player_and_substitution_files_exist": true,
-  "summary": "109 result fixtures. Four matches have player-detail batches: Barcelona-Alaves, Villarreal-Espanyol, Getafe-Sevilla, Elche-Valencia. Player CSV contains 45 rows each for Barcelona-Alaves, Getafe-Sevilla, Elche-Valencia and 43 for Villarreal-Espanyol (one starting shirt number unresolved). Substitution CSV contains 39 events. 105 other fixtures remain pending; appearance status for non-entering substitutes is intentionally left unverified.",
+  "summary": "109 result fixtures. Five matches have normalized player-detail batches. Player CSV contains 248 rows; substitution CSV contains 49 events. 104 fixtures remain pending. Unused bench appearance status remains unverified.",
   "fields_to_verify": [
     "source-backed names for 11 starters per team",
     "full official bench lists",
@@ -1777,13 +1777,15 @@
       "score": "2-1",
       "halftime_score": "2-0",
       "result_source": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
-      "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11",
+      "official_match_url": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11",
       "official_detail_page_found": true,
       "starting_xi_status": "pending_normalization",
       "bench_status": "pending_normalization",
       "appearance_status": "pending_normalization",
       "substitutions_status": "pending_normalization",
-      "notes": "Missing detailed fields must remain blank until verified from a free source."
+      "notes": "Missing detailed fields must remain blank until verified from a free source.",
+      "detail_status": "lineups_benches_and_substitutions_entered",
+      "detail_batch": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103e.json"
     },
     {
       "match_id": "laliga-2026-27-2026-10-31-barcelona-alaves",
@@ -1886,6 +1888,18 @@
       "appearance_status": "pending_normalization",
       "substitutions_status": "pending_normalization",
       "notes": "Missing detailed fields must remain blank until verified from a free source."
+    },
+    {
+      "match_id": "laliga-2026-27-2026-10-31-betis-malaga",
+      "date": "2026-10-31",
+      "home": "Betis",
+      "away": "Malaga",
+      "score": "2-1",
+      "halftime_score": "2-0",
+      "result_source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11",
+      "detail_status": "lineups_benches_and_substitutions_entered",
+      "detail_batch": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103e.json",
+      "notes": "Bench appearance status not confirmed for players absent from substitution timeline."
     }
   ],
   "normalized_player_csv": "data/season_match_detail/LaLiga_2026_27_players.csv",
