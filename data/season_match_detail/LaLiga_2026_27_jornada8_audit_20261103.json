@@ -9,9 +9,10 @@
     "unique": 10,
     "duplicate_count": 0,
     "completed_fixture_keys": [
-      "2026-10-09|Malaga|Espanyol"
+      "2026-10-09|Malaga|Espanyol",
+      "2026-10-10|Alaves|Atletico"
     ],
-    "pending_played_fixture_count": 8,
+    "pending_played_fixture_count": 7,
     "postponed_fixture_count": 1
   },
   "matches": [
@@ -61,6 +62,57 @@
             "Andrés→Andrés Céspedes"
           ],
           "reason": "Full identities retained with official display aliases documented."
+        }
+      ],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-10",
+      "home": "Alaves",
+      "away": "Atletico",
+      "score": "1-2",
+      "halftime_score": "0-1",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-atletico-de-madrid-8",
+        "https://www.skysports.com/football/alaves-vs-atletico-madrid/teams/563002"
+      ],
+      "corrections": [
+        {
+          "field": "halftime substitution minutes",
+          "players": [
+            "Aitor Mañas",
+            "Mariano Díaz Mejía",
+            "Alexander Sørloth"
+          ],
+          "stored": "45",
+          "reason": "Detailed official commentary gives 45'; summary cards may display 46'."
         }
       ],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
