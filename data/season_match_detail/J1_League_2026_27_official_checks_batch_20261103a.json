@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-03",
+  "source": "J.League Data Site official match records",
+  "baseline_csv": "data/auto_results/J1_League_2026_27.csv",
+  "matches": [
+    {"date":"2026-10-17","home":"清水","away":"Ｇ大阪","score":"2-2","match_card_id":34615},
+    {"date":"2026-10-17","home":"千葉","away":"横浜FM","score":"0-0","match_card_id":34607},
+    {"date":"2026-10-17","home":"広島","away":"京都","score":"3-0","match_card_id":34609},
+    {"date":"2026-10-17","home":"東京Ｖ","away":"FC東京","score":"0-4","match_card_id":34608},
+    {"date":"2026-10-17","home":"Ｃ大阪","away":"川崎Ｆ","score":"2-4","match_card_id":34610},
+    {"date":"2026-10-17","home":"鹿島","away":"長崎","score":"2-0","match_card_id":34613},
+    {"date":"2026-10-17","home":"水戸","away":"浦和","score":"0-1","match_card_id":34611},
+    {"date":"2026-10-17","home":"柏","away":"名古屋","score":"1-3","match_card_id":34614},
+    {"date":"2026-10-18","home":"岡山","away":"神戸","score":"0-3","match_card_id":34616},
+    {"date":"2026-10-18","home":"町田","away":"福岡","score":"3-0","match_card_id":34612}
+  ],
+  "summary": {
+    "rows_cross_checked": 10,
+    "date_home_away_score_match_csv": 10,
+    "mismatches_found": 0,
+    "official_records_include_lineups_and_substitutions": true,
+    "structured_player_rows_added": 0,
+    "match_level_xg_xga_added": false,
+    "v5_1_or_prediction_snapshots_modified": false
+  },
+  "notes": [
+    "The official match record pages were opened and cross-checked against the baseline CSV.",
+    "Lineup and substitution sections are available on the official pages but have not yet been transcribed into the structured player-detail dataset.",
+    "No missing values were estimated."
+  ]
+}
