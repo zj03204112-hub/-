@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "J1 League",
+  "season": "2026/27",
+  "scope": "2026-11-01 four-match extension, kept separate from 126-match baseline through 2026-10-31",
+  "count": 4,
+  "official_score_check": 4,
+  "score_conflicts": 0,
+  "identity_conflicts": 0,
+  "xg_pairs_with_third_party_values": 4,
+  "xga_independently_verified": 0,
+  "matches": [
+    {
+      "date": "2026-11-01",
+      "home": "横浜FM",
+      "away": "川崎Ｆ",
+      "score": "4-2",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/110101/",
+      "official_score_status": "matched_on_official_individual_match_page",
+      "xg_home": 1.99,
+      "xg_away": 1.39,
+      "xg_source": "FootyStats J1 League xG page",
+      "xg_source_url": "https://footystats.org/japan/j1-league/xg",
+      "xg_status": "third_party match-level xG reported; not official",
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "no independently verified explicit match-level xGA source"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "千葉",
+      "away": "福岡",
+      "score": "3-0",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/110102/",
+      "official_score_status": "matched_on_official_individual_match_page",
+      "xg_home": 1.52,
+      "xg_away": 0.92,
+      "xg_source": "FootyStats J1 League xG page",
+      "xg_source_url": "https://footystats.org/japan/j1-league/xg",
+      "xg_status": "third_party match-level xG reported; not official",
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "no independently verified explicit match-level xGA source"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "長崎",
+      "away": "東京Ｖ",
+      "score": "1-2",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/110103/",
+      "official_score_status": "matched_on_official_individual_match_page",
+      "xg_home": 1.87,
+      "xg_away": 1.6,
+      "xg_source": "FootyStats J1 League xG page",
+      "xg_source_url": "https://footystats.org/japan/j1-league/xg",
+      "xg_status": "third_party match-level xG reported; not official",
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "no independently verified explicit match-level xGA source"
+    },
+    {
+      "date": "2026-11-01",
+      "home": "町田",
+      "away": "Ｇ大阪",
+      "score": "0-0",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/110109/",
+      "official_score_status": "matched_on_official_individual_match_page",
+      "xg_home": 1.66,
+      "xg_away": 2.32,
+      "xg_source": "FootyStats J1 League xG page",
+      "xg_source_url": "https://footystats.org/japan/j1-league/xg",
+      "xg_status": "third_party match-level xG reported; not official",
+      "xga_home": null,
+      "xga_away": null,
+      "xga_status": "no independently verified explicit match-level xGA source"
+    }
+  ],
+  "integrity_rules": [
+    "Do not merge these four extension rows into the 126-match baseline audit denominator.",
+    "Third-party xG values are not official J.League xG.",
+    "Do not infer xGA from opponent xG; keep xGA null until a free explicit match-level source is verified."
+  ]
+}
