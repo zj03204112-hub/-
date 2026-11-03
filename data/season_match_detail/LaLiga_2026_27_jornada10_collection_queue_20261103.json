@@ -46,15 +46,21 @@
       "home": "Rayo",
       "away": "Elche",
       "score": "0-3",
-      "official_match_url": "https://www.laliga.com/es-MX/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-elche-cf-10",
+      "official_match_url": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-elche-cf-10",
       "official_match_url_status": "found",
-      "starting_xi_status": "entered_cross_checked",
-      "bench_status": "entered_cross_checked",
-      "appearance_status": "entered_from_official_event_timeline",
-      "substitutions_status": "10_events_entered_cross_checked",
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_both_official_lists_12",
+      "appearance_status": "verified_10_entrants_and_14_unused_bench_players",
+      "substitutions_status": "verified_10_events_with_detailed_commentary_minutes",
       "player_detail_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_rayo_elche.json",
       "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them.",
-      "status": "batch_created_csv_normalized"
+      "status": "batch_created_csv_normalized",
+      "official_detail_page_found": true,
+      "detail_status": "complete_source_crosscheck_and_structural_audit_passed",
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-elche-cf-10",
+        "https://www.skysports.com/football/rayo-vallecano-vs-elche/teams/563020"
+      ]
     },
     {
       "date": "2026-10-24",
@@ -180,19 +186,19 @@
   "normalized_fixtures": 1,
   "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_alaves_malaga.json",
   "completed_fixture_keys": [
-    "2026-10-23|Alaves|Malaga"
+    "2026-10-23|Alaves|Malaga",
+    "2026-10-24|Rayo|Elche"
   ],
   "jornada10_progress": {
     "fixtures_expected": 10,
     "fixtures_with_detail_batches": 2,
-    "fixtures_source_audited_complete": 1,
+    "fixtures_source_audited_complete": 2,
     "remaining_without_detail_batches": 8,
     "completed": [
-      "Alaves-Malaga"
-    ],
-    "in_progress": [
+      "Alaves-Malaga",
       "Rayo-Elche"
     ],
+    "in_progress": [],
     "remaining": [
       "Racing-Espanyol",
       "Valencia-Villarreal",
