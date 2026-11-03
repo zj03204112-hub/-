@@ -38,7 +38,8 @@
     "Structural counts and event row counts match existing batches/CSVs for all 10 matches, with no duplicate player rows or duplicate substitution rows detected. This does not certify names or minutes.",
     "Betis-Málaga event-card displayed minutes differ from commentary narrative for Antony and Chupe; CSV and batch now use official event-card display values.",
     "Jornada 11 starting XI counts now show 11 players for both teams in all 10 matches after resolving Alavés shirt number 27 as Xanet Olaiz and Espanyol shirt number 15 as Bryan Zaragoza.",
-    "Full official bench-list and substitution-minute audit is still in progress; no match certified fully complete."
+    "Full official bench-list and substitution-minute audit is still in progress; no match certified fully complete.",
+    "Racing-Real Madrid: official timeline card displays Íñigo Sainz-Maza at 61', while narrative commentary lists 60'; normalized files use 61' and the discrepancy is logged."
   ],
   "policy": [
     "Free sources only",
@@ -215,7 +216,7 @@
         "events_batch": 8,
         "events_csv": 8,
         "issues": [
-          "Cross-check all minutes against official event timeline still pending."
+          "Íñigo Sainz-Maza event normalized to 61' per official timeline card; narrative commentary says 60'. Continue final verification of full bench lists and event minutes."
         ]
       }
     ],
