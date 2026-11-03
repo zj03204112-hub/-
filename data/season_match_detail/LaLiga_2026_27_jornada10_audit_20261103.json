@@ -3,7 +3,7 @@
   "league": "LaLiga",
   "season": "2026-27",
   "matchday": 10,
-  "status": "jornada10_all_10_fixture_batches_created_pending_final_global_integrity_recheck",
+  "status": "jornada10_all_10_fixtures_source_audited_and_global_integrity_passed",
   "fixture_keys": {
     "expected": 10,
     "unique": 10,
@@ -451,5 +451,23 @@
     "Use detailed official commentary minute when summary card differs",
     "Keep event alias Chupe↔Carlos Ruiz Rubio documented",
     "Do not mark whole round complete until all 10 fixtures pass"
-  ]
+  ],
+  "final_integrity": {
+    "expected_fixtures": 10,
+    "verified_fixtures": 10,
+    "unique_fixture_keys": 10,
+    "duplicate_fixture_keys": 0,
+    "player_rows": 457,
+    "duplicate_player_rows": 0,
+    "substitution_rows": 96,
+    "duplicate_substitution_rows": 0,
+    "starters": 220,
+    "bench_entries": 237,
+    "bench_appeared": 96,
+    "bench_not_appeared": 141,
+    "event_batch_csv_mismatches": 0,
+    "detail_keys_missing_from_results": 0,
+    "result_key_normalization": "football-data team aliases normalized (Vallecano↔Rayo, Ath Madrid↔Atletico, La Coruna↔Deportivo, Santander↔Racing, Espanol↔Espanyol)",
+    "status": "passed"
+  }
 }
