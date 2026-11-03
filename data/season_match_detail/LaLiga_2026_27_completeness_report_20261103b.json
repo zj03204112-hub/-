@@ -4,13 +4,13 @@
   "season": "2026-27",
   "results_fixtures": 109,
   "unique_fixture_keys": 109,
-  "fixtures_with_normalized_player_detail": 11,
-  "player_csv_rows": 499,
-  "substitution_csv_rows": 105,
+  "fixtures_with_normalized_player_detail": 12,
+  "player_csv_rows": 545,
+  "substitution_csv_rows": 115,
   "matches_with_both_starting_xis_entered": 11,
   "matches_with_partial_unresolved_identity": 0,
-  "fully_complete_matches": 10,
-  "fixtures_without_normalized_player_detail": 98,
+  "fully_complete_matches": 11,
+  "fixtures_without_normalized_player_detail": 97,
   "batches": [
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103b.json",
@@ -27,9 +27,8 @@
   "gaps": [
     "98 other LaLiga 2026-27 fixtures remain without normalized player-detail batches.",
     "Jornada 10: Rayo-Elche is the first match with a new independent detail batch and normalized CSV rows; the other 9 Jornada 10 matches still need player-detail collection.",
-    "Jornada 10 detail collection has begun with Rayo-Elche batch; do not count it as a fully completed match until source-level audit passes.",
     "Jornada 11: all 10 fixtures passed row-level source, lineup/bench, appearance-status, substitution in/out, minute, uniqueness and CSV-vs-batch checks.",
-    "Jornada 10: Rayo-Elche batch exists as the first detail batch, but it remains outside the completed-round certification until its full source audit and the other nine fixtures are done."
+    "Jornada 10: Alavés-Málaga is source-audited complete (22 starters, 24 bench entries, 10 substitution events); Rayo-Elche has a batch awaiting final source audit; eight matches still lack detail batches."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -327,10 +326,25 @@
   },
   "jornada10_progress": {
     "fixtures_expected": 10,
-    "official_match_urls_resolved": 10,
-    "normalized_batches_created": 1,
-    "fixtures_remaining": 9,
-    "first_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_rayo_elche.json"
+    "fixtures_with_detail_batches": 2,
+    "fixtures_source_audited_complete": 1,
+    "remaining_without_detail_batches": 8,
+    "completed": [
+      "Alaves-Malaga"
+    ],
+    "in_progress": [
+      "Rayo-Elche"
+    ],
+    "remaining": [
+      "Racing-Espanyol",
+      "Valencia-Villarreal",
+      "Atletico-Deportivo",
+      "Athletic-Getafe",
+      "Celta-Betis",
+      "Real Sociedad-Levante",
+      "Barcelona-Real Madrid",
+      "Sevilla-Osasuna"
+    ]
   },
   "jornada11_source_certification_status": "complete",
   "jornada11_integrity": {
