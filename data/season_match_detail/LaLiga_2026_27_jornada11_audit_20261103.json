@@ -150,6 +150,30 @@
       "after": "Official bench list normalized to Arnau Comas, Ximo Navarro, Álvaro Ferllo, Lucas Noubi, Adama Traoré, Angeliño, Diego Villares, Jonathan Asp Jensen, Kevin Sánchez, Riki Rodríguez, Noé Carrillo Collazo, Pierre-Emerick Aubameyang",
       "reason": "Official LaLiga match page bench list cross-checked with AS and Sky Sports; Aubameyang's 69' substitution event confirms appearance.",
       "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+    },
+    {
+      "match": "Barcelona-Alaves",
+      "field": "batch roster name normalization",
+      "before": [
+        "Brian",
+        "Bernal",
+        "Balde"
+      ],
+      "after": [
+        "Brian Fariñas",
+        "Marc Bernal",
+        "Alejandro Balde"
+      ],
+      "reason": "Reconciled batch shorthand with full player names in the normalized CSV and lineup source.",
+      "source": "https://www.skysports.com/football/barcelona-vs-alaves/teams/563025"
+    },
+    {
+      "match": "Deportivo-Osasuna",
+      "field": "Deportivo bench player spelling",
+      "before": "Álvaro Ferllo",
+      "after": "Álvaro Fernández",
+      "reason": "Corrected apparent typo to match the normalized CSV spelling; retained official match source for list cross-check.",
+      "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
     }
   ],
   "pending_checks": [
@@ -477,6 +501,11 @@
         "Racing-Real Madrid: official event card shows Íñigo Sainz-Maza at 61'; narrative commentary records 60'. Normalized minute follows event card."
       ]
     },
-    "unresolved_roster_mismatches": []
+    "unresolved_roster_mismatches": [],
+    "batch_csv_name_reconciliation": {
+      "status": "applied",
+      "corrections": 4,
+      "remaining_known_issue": "Levante-Atletico batch still contains one unresolved Atlético bench identity after excluding the conflicting duplicate Hugo Sotelo; confirm complete official substitute roster before certification."
+    }
   }
 }
