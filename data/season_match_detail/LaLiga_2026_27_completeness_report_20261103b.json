@@ -7,7 +7,7 @@
   "fixtures_with_normalized_player_detail": 10,
   "player_csv_rows": 451,
   "substitution_csv_rows": 95,
-  "matches_with_both_starting_xis_entered": 3,
+  "matches_with_both_starting_xis_entered": 8,
   "matches_with_partial_unresolved_identity": 2,
   "fully_complete_matches": 0,
   "fixtures_without_normalized_player_detail": 99,
@@ -32,7 +32,11 @@
     "For matches with details, bench appearance status remains unverified for players not recorded as entering.",
     "99 fixtures still need normalized player details, official bench lists, appearance status and substitution events.",
     "Jornada 11 audit is still in progress; two source-backed corrections applied on 2026-11-03, but no match is certified fully complete.",
-    "Jornada 10 coverage queue created; player detail batches are not yet complete for these 10 fixtures."
+    "Jornada 10 coverage queue created; player detail batches are not yet complete for these 10 fixtures.",
+    "Jornada 11 structural audit found 8 matches with 11 starters entered for each side; Villarreal-Espanyol has only 10 Espanyol starters entered and requires one identity resolved.",
+    "Barcelona-Alavés bench coverage is 11 entries for Alavés; one official bench identity remains unresolved.",
+    "Structural counts and event row counts match existing batches/CSVs for all 10 matches, with no duplicate player rows or duplicate substitution rows detected. This does not certify names or minutes.",
+    "Betis-Málaga event-card displayed minutes differ from commentary narrative for Antony and Chupe; CSV and batch now use official event-card display values."
   ],
   "policy": [
     "Free sources only",
@@ -81,5 +85,138 @@
       "The remaining eight matches require full cross-check of substitution in/out names and official displayed minutes."
     ]
   },
-  "jornada10_queue_file": "data/season_match_detail/LaLiga_2026_27_jornada10_collection_queue_20261103.json"
+  "jornada10_queue_file": "data/season_match_detail/LaLiga_2026_27_jornada10_collection_queue_20261103.json",
+  "jornada11_structural_audit": {
+    "total_jornada11_batches": 10,
+    "unique_fixture_keys_in_player_detail": 10,
+    "duplicate_player_rows_in_jornada11": 0,
+    "duplicate_substitution_rows_in_jornada11": 0,
+    "total_player_rows": 451,
+    "total_substitution_event_rows": 95,
+    "matches_with_11_starters_for_both_teams": 8,
+    "matches_with_starting_xi_or_identity_gaps": 2,
+    "per_match": [
+      {
+        "match": "Barcelona-Alaves",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 11,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Alavés bench list incomplete/one identity unresolved; verify official list."
+        ]
+      },
+      {
+        "match": "Villarreal-Espanyol",
+        "home_starting_xi": 11,
+        "away_starting_xi": 10,
+        "home_bench": 10,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Espanyol starting XI has only 10 named players; one starter identity unresolved; Villarreal bench count 10 needs source check."
+        ]
+      },
+      {
+        "match": "Getafe-Sevilla",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 11,
+        "away_bench": 12,
+        "events_batch": 9,
+        "events_csv": 9,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Elche-Valencia",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Betis-Malaga",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Minute display normalized: Antony 62' and Chupe 61' according to official timeline cards; narrative commentary displays 61'/60'. Verify every other event minute and bench names."
+        ]
+      },
+      {
+        "match": "Rayo-Celta",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 11,
+        "away_bench": 11,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Official timeline card shows Giorgi Tsitaishvili at 46', while narrative commentary records 45'; keep display minute 46 and preserve source discrepancy."
+        ]
+      },
+      {
+        "match": "Levante-Atletico",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 9,
+        "events_csv": 9,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Athletic-Real Sociedad",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 9,
+        "events_csv": 9,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Racing-Real Madrid",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 11,
+        "away_bench": 11,
+        "events_batch": 8,
+        "events_csv": 8,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      }
+    ],
+    "certification_rule": "Do not mark a match fully complete until both XIs, complete official bench lists, all substitute appearance statuses, and every substitution are verified against official match records."
+  }
 }
