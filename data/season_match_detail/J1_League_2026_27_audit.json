@@ -81,20 +81,21 @@
     "2026-11-03 official player-detail increment: Kawasaki Frontale 2-2 Kyoto Sanga (2026-08-15; official page https://www.jleague.jp/en/match/j1/2026/081507/) added 22 starters, 9 confirmed incoming substitutes and 9 substitution events. Unused bench lists were not exposed in retrieved source; no names guessed. Two substitutions shown at second-half 0' were retained as HT.",
     "2026-11-03 official J.LEAGUE player-detail increment: FC Tokyo 2-0 Chiba (2026-08-21) added 22 starters, 10 incoming substitutes and 10 substitution events; unused bench list not extracted from the retrieved official page. Yokohama F. Marinos 1-0 Vissel Kobe (2026-08-22) added 22 starters, all 18 bench players with appearance status, and 9 substitution events. No missing bench names were estimated.",
     "2026-11-03 official player-detail increment: Kashima Antlers 3-2 Avispa Fukuoka (2026-08-22) added 22 starters, 10 confirmed substitutes and 10 events. Fagiano Okayama 0-0 Tokyo Verdy (2026-08-22) added 22 starters, 10 confirmed substitutes and 10 events; ambiguous unused-bench assignment was removed rather than guessed.",
-    "2026-11-03 official player-detail increment: FC Machida Zelvia 2-4 Kashiwa Reysol (2026-09-20) added 22 starters, eight confirmed substitute appearances and eight substitution events; unused bench list not extracted. Gamba Osaka 0-1 Vissel Kobe (2026-09-20) added 22 starters, all 18 bench players with appearance status and eight substitution events. Shimoda Hokuto's 65' red card is recorded as an exit after his 62' entry, not as a substitution."
+    "2026-11-03 official player-detail increment: FC Machida Zelvia 2-4 Kashiwa Reysol (2026-09-20) added 22 starters, eight confirmed substitute appearances and eight substitution events; unused bench list not extracted. Gamba Osaka 0-1 Vissel Kobe (2026-09-20) added 22 starters, all 18 bench players with appearance status and eight substitution events. Shimoda Hokuto's 65' red card is recorded as an exit after his 62' entry, not as a substitution.",
+    "2026-11-03: Official J.League Data Site transcription completed for fixtures 34605, 34600, 34606, 34601, 34602, 34603, 34604. Added 280 player rows (full starting XIs, all 18 bench players and appearance statuses per match) and 70 substitution events. No estimates used."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
   "lineup_and_appearance_audit": {
-    "matches_with_both_teams_starting_xi_structured": 84,
-    "matches_with_both_bench_lists_structured": 74,
-    "matches_with_substitution_events_structured": 84,
-    "matches_with_complete_player_appearance_status_table": 78,
+    "matches_with_both_teams_starting_xi_structured": 91,
+    "matches_with_both_bench_lists_structured": 81,
+    "matches_with_substitution_events_structured": 91,
+    "matches_with_complete_player_appearance_status_table": 85,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-    "standardized_player_rows": 3284,
+    "standardized_player_rows": 3564,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-    "standardized_substitution_rows": 805,
-    "note": "Latest re-read: 3,284 player rows across 84 match groups; 84 groups have both starting XIs and substitution-event records, 74 have both bench lists, 78 have complete appearance-status classification. Duplicate player/substitution keys and blank player source URLs: zero. Several fixtures retain partial bench coverage where official retrieved pages did not expose full unused benches; one substitution event elsewhere has unresolved minute conflict."
+    "standardized_substitution_rows": 875,
+    "note": "Latest re-read: 3564 player rows across 91 match groups; 91 groups have both starting XIs and substitution-event records, 81 have both bench lists, 85 have complete appearance-status classification. Duplicate player keys: 0; duplicate substitution keys: 0; blank player source URLs: 0. Seven fixtures from 2026-10-09 to 2026-10-11 added from official J.League Data Site records."
   },
   "xg_xga_audit": {
     "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
@@ -222,13 +223,69 @@
         "bench": 18,
         "substitution_events": 8,
         "status": "verified"
+      },
+      {
+        "id": "34605",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 10,
+        "status": "verified"
+      },
+      {
+        "id": "34600",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 10,
+        "status": "verified"
+      },
+      {
+        "id": "34606",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 9,
+        "status": "verified"
+      },
+      {
+        "id": "34601",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 11,
+        "status": "verified"
+      },
+      {
+        "id": "34602",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 10,
+        "status": "verified"
+      },
+      {
+        "id": "34603",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 10,
+        "status": "verified"
+      },
+      {
+        "id": "34604",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 10,
+        "status": "verified"
       }
     ],
-    "current_player_rows": 3284,
-    "current_player_match_groups": 84,
-    "current_substitution_rows": 805,
-    "current_substitution_match_groups": 84,
-    "matches_missing_player_records": 46,
+    "current_player_rows": 3564,
+    "current_player_match_groups": 91,
+    "current_substitution_rows": 875,
+    "current_substitution_match_groups": 91,
+    "matches_missing_player_records": 39,
     "duplicate_player_keys": 0,
     "duplicate_substitution_keys": 0,
     "blank_player_source_urls": 0,
