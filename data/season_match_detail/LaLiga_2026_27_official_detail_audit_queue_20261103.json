@@ -25,7 +25,7 @@
   "official_results_page": "https://www.laliga.com/en-GB/laliga-easports/results",
   "official_match_detail_pages_found": 10,
   "detailed_player_and_substitution_files_exist": true,
-  "summary": "109 result fixtures; normalized player CSV contains Barcelona-Alaves (45 named player rows, 10 subs) and Villarreal-Espanyol (21 Villarreal player rows, 10 subs). Two matches have partial player-detail records; 107 other fixtures pending; neither match marked fully complete.",
+  "summary": "109 result fixtures. Two matches have partial player detail. Barcelona-Alaves: 45 named player rows, 10 subs, one unresolved away bench shirt number. Villarreal-Espanyol: 43 named player rows across both teams, 10 subs, one unresolved Espanyol starting shirt number. No match marked fully complete because unresolved identity and/or appearance-status gaps remain; 107 other fixtures pending.",
   "fields_to_verify": [
     "source-backed names for 11 starters per team",
     "full official bench lists",
@@ -1728,11 +1728,11 @@
       "result_source": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
       "official_match_url": "https://www.laliga.com/en-EG/match/temporada-2026-2027-laliga-ea-sports-villarreal-cf-rcd-espanyol-de-barcelona-11",
       "official_detail_page_found": true,
-      "starting_xi_status": "partial_home_verified_away_pending",
-      "bench_status": "partial_home_10_listed_away_pending",
-      "appearance_status": "home_substitution_players_confirmed; unused-bench appearances pending",
+      "starting_xi_status": "partial_10_named_away_starters_1_unresolved",
+      "bench_status": "verified_both_teams_named_lists",
+      "appearance_status": "substitution entrants verified; non-entering bench statuses left unverified",
       "substitutions_status": "10_events_verified_official",
-      "notes": "Official LaLiga match detail extracted; Villarreal XI and 10 listed bench entries recorded, 10 substitutions verified. Espanyol XI and bench not available in extracted official page text; left blank. See LaLiga_2026_27_player_detail_batch_20261103b.json."
+      "notes": "Both teams' lineup/bench extracts cross-checked with LaLiga and AS. Espanyol starting shirt number 15 remains unresolved; not invented. See batch 20261103b."
     },
     {
       "match_id": "laliga-2026-27-2026-10-31-levante-ath-madrid",
