@@ -25,7 +25,7 @@
   "official_results_page": "https://www.laliga.com/en-GB/laliga-easports/results",
   "official_match_detail_pages_found": 10,
   "detailed_player_and_substitution_files_exist": true,
-  "summary": "109 result fixtures. Two matches have partial player detail. Barcelona-Alaves: 45 named player rows, 10 subs, one unresolved away bench shirt number. Villarreal-Espanyol: 43 named player rows across both teams, 10 subs, one unresolved Espanyol starting shirt number. No match marked fully complete because unresolved identity and/or appearance-status gaps remain; 107 other fixtures pending.",
+  "summary": "109 result fixtures. Player detail batches now cover Barcelona-Alaves (45 named rows, 10 subs), Villarreal-Espanyol (43 named rows plus one unresolved starter identity, 10 subs), and Getafe-Sevilla (45 named rows, 9 subs). 3 matches have partial/near-complete detail; other 106 fixtures pending. No match marked fully complete until all appearance statuses and unresolved identities are audited.",
   "fields_to_verify": [
     "source-backed names for 11 starters per team",
     "full official bench lists",
@@ -1813,11 +1813,11 @@
       "result_source": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
       "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11",
       "official_detail_page_found": true,
-      "starting_xi_status": "pending_normalization",
-      "bench_status": "pending_normalization",
-      "appearance_status": "pending_normalization",
-      "substitutions_status": "pending_normalization",
-      "notes": "Missing detailed fields must remain blank until verified from a free source."
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_named_lists_both_teams",
+      "appearance_status": "substitution entrants verified; unused-bench appearances left unverified",
+      "substitutions_status": "9_events_verified",
+      "notes": "Both starting XIs and bench lists entered from official LaLiga match record and secondary lineup source; substitution events verified from official timeline. See batch 20261103c."
     },
     {
       "match_id": "laliga-2026-27-2026-11-01-santander-real-madrid",
