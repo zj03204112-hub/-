@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 10,
+  "status": "in_progress",
+  "fixture_keys": {
+    "expected": 10,
+    "unique": 10,
+    "duplicate_count": 0,
+    "completed_fixture_keys": [
+      "2026-10-23|Alaves|Malaga"
+    ],
+    "in_progress_fixture_keys": [
+      "2026-10-24|Rayo|Elche"
+    ],
+    "pending_fixture_count": 8
+  },
+  "matches": [
+    {
+      "date": "2026-10-23",
+      "home": "Alaves",
+      "away": "Malaga",
+      "score": "1-1",
+      "halftime_score": "0-1",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-NG/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-malaga-cf-10",
+        "https://www.malagacf.com/partidos/temporada-2026-2027-laliga-ea-sports-10-deportivo-alaves-vs-malaga-cf-3011",
+        "https://www.skysports.com/football/alaves-vs-malaga/teams/563014"
+      ],
+      "corrections": [],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    }
+  ],
+  "rules": [
+    "Free traceable sources only",
+    "No guessed names",
+    "Use detailed official commentary minute when summary card differs",
+    "Keep event alias Chupe↔Carlos Ruiz Rubio documented",
+    "Do not mark whole round complete until all 10 fixtures pass"
+  ]
+}
