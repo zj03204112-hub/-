@@ -90,7 +90,8 @@
     "2026-11-03 rapid continuation: official J.LEAGUE match page added starting XI, seven recorded substitute appearances and seven substitution events for Vissel Kobe 3-1 Nagoya Grampus (2026-10-31). Added 29 player rows and 7 substitution rows. Source: https://www.jleague.jp/en/match/j1/2026/103113/.",
     "2026-11-03 correction pass: official match card 34522 Cerezo Osaka-Okayama had five incorrect player-team assignments and five incorrect substitution-team assignments; corrected by matching official starting XI, bench, and substitution sections. Added missing official bench records OKUDA Yuto and TIAGO ANDRADE for Cerezo Osaka. Official match card 34637 Mito-Hiroshima: added unused substitute YAMAMOTO Shunta from the official bench list. Official bench size varies by team/fixture; completeness is checked against the match card, not a fixed 18 substitutes.",
     "2026-11-03 official source correction: Kawasaki Frontale vs Kyoto (2026-08-15): corrected Apiatavia Hisashi to Kyoto, added Kato Ren as the 11' incoming substitute, and added Naga Riki and Mochiyama Kyosuke as unused bench members. Source: official Kawasaki Frontale match record. This closes the previously flagged bench-completeness item for this fixture.",
-    "2026-11-03: Verified the last blank substitution minute in Chiba vs Fukuoka (2026-11-01): Rocha replaced Erison at second-half 45+5, standardized as 90+5. Official source: https://www.jleague.jp/match/j1/2026/110102/lineup/."
+    "2026-11-03: Verified the last blank substitution minute in Chiba vs Fukuoka (2026-11-01): Rocha replaced Erison at second-half 45+5, standardized as 90+5. Official source: https://www.jleague.jp/match/j1/2026/110102/lineup/.",
+    "Correction 2026-11-03: the last missing substitution minute was initially filled incorrectly with 90+5, which is Goya's goal time. The official J.League timeline shows Rocha replaced Erison at second-half 45+1, so the substitution CSV is corrected to 90+1."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
@@ -552,7 +553,7 @@
       "verified_source": "Official J.LEAGUE match pages",
       "player_rows_added_this_pass": 190,
       "substitution_rows_added_this_pass": 59,
-      "limitations": "Official-source correction pass on 2026-11-03: fixed five player-team and five substitution-team assignments for Cerezo Osaka-Okayama; added Okuda Yuto and Tiago Andrade. Added Mito's unused substitute Yamamoto Shunta. For Kawasaki Frontale-Kyoto, corrected Apiatavia Hisashi to Kyoto, added Kato Ren as an appearing substitute, and added Naga Riki and Mochiyama Kyosuke as unused substitutes from the official Kawasaki club match record. Official bench sizes vary by fixture. No estimated names or minutes used. Final missing substitution minute was verified from the official J.League match progress for Chiba vs Fukuoka and filled as 90+5; no blank substitution minutes remain.",
+      "limitations": "Official-source correction pass on 2026-11-03: fixed five player-team and five substitution-team assignments for Cerezo Osaka-Okayama; added Okuda Yuto and Tiago Andrade. Added Mito's unused substitute Yamamoto Shunta. For Kawasaki Frontale-Kyoto, corrected Apiatavia Hisashi to Kyoto, added Kato Ren as an appearing substitute, and added Naga Riki and Mochiyama Kyosuke as unused substitutes from the official Kawasaki club match record. Official bench sizes vary by fixture. No estimated names or minutes used. Final missing substitution minute was verified from the official J.League match progress for Chiba vs Fukuoka and corrected to 90+1; no blank substitution minutes remain.",
       "player_rows_after_correction": 5197,
       "substitution_rows_after_correction": 1261,
       "bench_list_fixtures_completed": 130,
@@ -592,9 +593,9 @@
         "fixture": "2026-11-01|千叶|福冈",
         "player_in": "ホシャ",
         "player_out": "エリソン",
-        "minute": "90+5",
+        "minute": "90+1",
         "source_url": "https://www.jleague.jp/match/j1/2026/110102/lineup/",
-        "basis": "J.League official match progress lists Rocha replacing Erison at second-half 45+5."
+        "basis": "J.League official match timeline lists Rocha replacing Erison at second-half 45+1 (90+1); 90+5 was the later goal time, not the substitution time."
       }
     }
   },
