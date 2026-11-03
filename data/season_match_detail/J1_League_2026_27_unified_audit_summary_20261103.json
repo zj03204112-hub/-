@@ -1,0 +1,97 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "J1 League",
+  "baseline_file": "data/auto_results/J1_League_2026_27.csv",
+  "baseline_window": "2026-08-07 to 2026-10-31",
+  "baseline_matches": 126,
+  "extension_matches_2026_11_01": 4,
+  "dedup_method": "normalized date + home team + away team; team aliases include Japanese/Chinese and full-width forms",
+  "official_evidence": {
+    "any_matched": 81,
+    "individual_page_or_match_record_linked": 44,
+    "schedule_or_index_only": 37,
+    "pending": 45,
+    "score_conflicts": 0,
+    "identity_conflicts": 0,
+    "duplicated_batch_records": 10
+  },
+  "structured_data": {
+    "starting_xi_both_teams": 7,
+    "both_substitute_benches_structured": 3,
+    "substitution_events_structured": 7,
+    "player_appearance_status_table": 2
+  },
+  "xg_xga": {
+    "baseline_xg_pairs_present": 8,
+    "official_xg_pairs": 1,
+    "third_party_pairs": 7,
+    "independently_verified_match_level_xga_pairs": 0,
+    "note": "Third-party xG source reconciliation remains incomplete; xGA is not inferred from opponent xG and all xGA fields remain null."
+  },
+  "extension_2026_11_01": {
+    "matches": [
+      {
+        "date": "2026-11-01",
+        "home": "横浜FM",
+        "away": "川崎Ｆ",
+        "score": "4-2"
+      },
+      {
+        "date": "2026-11-01",
+        "home": "千葉",
+        "away": "福岡",
+        "score": "3-0"
+      },
+      {
+        "date": "2026-11-01",
+        "home": "長崎",
+        "away": "東京Ｖ",
+        "score": "1-2"
+      },
+      {
+        "date": "2026-11-01",
+        "home": "町田",
+        "away": "Ｇ大阪",
+        "score": "0-0"
+      }
+    ],
+    "separate_from_baseline": true
+  },
+  "discrepancies": [
+    "Legacy audit JSON reported 125 rows, while current CSV has 126 matches through 2026-10-31 plus 4 extension matches on 2026-11-01.",
+    "Ten duplicate official-check records in 2026-10-17/18 batches were deduplicated.",
+    "Zero score/identity conflicts among rows matched to current official evidence does not prove pending rows are verified."
+  ],
+  "xga_sources_reviewed": [
+    {
+      "name": "J.League official match stats",
+      "url": "https://www.jleague.jp/en/match/j1/2026/091909/live-commentary/",
+      "result": "one match-level xG pair found; no explicit match-level xGA field verified"
+    },
+    {
+      "name": "FootyStats J1 xG",
+      "url": "https://footystats.org/japan/j1-league/xg",
+      "result": "six baseline match-level xG pairs visible; xGA not independently verified"
+    },
+    {
+      "name": "VJStats",
+      "url": "https://www.vjstats.com/matches/6775/fagiano-okayama-vs-sanfrecce-hiroshima",
+      "result": "one third-party xG candidate; not official"
+    },
+    {
+      "name": "JPick",
+      "url": "https://jpick.jp/en",
+      "result": "free J.League stats site identified; explicit match-level xGA field not verified"
+    },
+    {
+      "name": "MatchDaySync",
+      "url": "https://matchdaysync.com/leagues/j1-league?tab=shots",
+      "result": "xG against appears in aggregate season tables, not accepted as match-level xGA"
+    }
+  ],
+  "integrity_rules": [
+    "Do not alter baseline CSV, V5.1, or historical prediction snapshots.",
+    "Do not estimate missing xG/xGA or player fields.",
+    "Keep 2026-11-01 four-match extension separate from baseline."
+  ]
+}
