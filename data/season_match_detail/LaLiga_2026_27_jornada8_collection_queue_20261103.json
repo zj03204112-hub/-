@@ -30,12 +30,16 @@
       "score": "1-1",
       "status": "played",
       "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-rcd-espanyol-de-barcelona-8",
-      "starting_xi_status": "pending",
-      "bench_status": "pending",
-      "appearance_status": "pending",
-      "substitutions_status": "pending",
-      "player_detail_batch": null,
-      "detail_status": "pending_official_detail_audit"
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_both_official_lists_12",
+      "appearance_status": "verified_10_entrants_and_14_unused_bench_players",
+      "substitutions_status": "verified_10_events",
+      "player_detail_batch": "data/season_match_detail/LaLiga_2026_27_j8_player_detail_batch_20261103_malaga_espanyol.json",
+      "detail_status": "complete_source_crosscheck_and_structural_audit_passed",
+      "sources": [
+        "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-rcd-espanyol-de-barcelona-8",
+        "https://www.skysports.com/football/malaga-vs-espanyol/teams/563003"
+      ]
     },
     {
       "date": "2026-10-10",
@@ -167,9 +171,13 @@
   "progress": {
     "fixtures_expected": 10,
     "played_fixtures": 9,
-    "fixtures_with_detail_batches": 0,
-    "fixtures_source_audited_complete": 0,
-    "remaining_played_without_detail_batches": 9,
+    "fixtures_with_detail_batches": 1,
+    "fixtures_source_audited_complete": 1,
+    "remaining_played_without_detail_batches": 8,
     "postponed_pending": 1
-  }
+  },
+  "completed_fixture_keys": [
+    "2026-10-09|Malaga|Espanyol"
+  ],
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j8_player_detail_batch_20261103_malaga_espanyol.json"
 }
