@@ -25,7 +25,7 @@
   "official_results_page": "https://www.laliga.com/en-GB/laliga-easports/results",
   "official_match_detail_pages_found": 10,
   "detailed_player_and_substitution_files_exist": true,
-  "summary": "LaLiga 2026-27: 109 score/result fixtures indexed. Jornada 11: all 10 matches structurally and event-audited. Jornada 10: official URLs resolved for all 10 fixtures and Rayo-Elche is the first normalized detail batch. Current season CSVs contain 499 player rows and 105 substitution events, with 0 duplicate player keys and 0 duplicate event keys. 98 fixtures remain without normalized player detail.",
+  "summary": "Jornada 11 official source review now includes Levante-Atletico and Deportivo-Osasuna; batch-to-CSV substitution event alignment remains 10/10. Final certification pending row-level unused-bench status verification and minute-discrepancy documentation.",
   "fields_to_verify": [
     "source-backed names for 11 starters per team",
     "full official bench lists",
@@ -1906,7 +1906,7 @@
   "normalized_substitution_csv": "data/season_match_detail/LaLiga_2026_27_substitutions.csv",
   "last_update": "2026-11-03",
   "last_batch_added": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json",
-  "jornada11_audit_status": "in_progress_final_source_certification",
+  "jornada11_audit_status": "in_progress_row_level_appearance_status_and_minute_convention_check",
   "last_audit_corrections": [
     {
       "match": "Betis-Malaga",
@@ -2344,12 +2344,24 @@
         "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-athletic-club-real-sociedad-11",
         "finding": "Official page lists 12 substitutes each. Detailed timeline includes Athletic changes at 6', 77', 89', 89', 89' and Real Sociedad at 61', 75', 75', 88', 89'. CSV contains 10 events and matches batch.",
         "status": "lineup_and_event_alignment_pass; continue verify unused-bench statuses"
+      },
+      {
+        "match": "Levante-Atletico",
+        "source": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-levante-ud-atletico-de-madrid-11",
+        "finding": "Official page confirms 0-2 final score, 11 starters and 12 substitutes per side, and nine substitution events. Hugo Sotelo is on Levante's bench, not Atletico's. CSV event count matches the official timeline.",
+        "status": "source_checked; unused-bench statuses still need row-level verification"
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "source": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11",
+        "finding": "Official page confirms final score 2-1 and nine substitutions. Deportivo bench list includes Aubameyang; official timeline confirms his 69' entry, resolving the previously noted roster mismatch. CSV event count matches.",
+        "status": "source_checked; unused-bench statuses still need row-level verification"
       }
     ],
     "remaining_matchday11_items": [
-      "Confirm every non-entering substitute against full official timeline/player appearance data; do not infer from bench presence alone.",
-      "Reconcile minute-display discrepancies in Rayo-Celta, Betis-Malaga, Racing-Real Madrid and retain both source displays.",
-      "Finish official source review for Levante-Atletico and Deportivo-Osasuna, then recheck all ten fixtures."
+      "Verify each unused-bench appearance status row-by-row against the complete official match timeline.",
+      "Keep the detailed-commentary minute as canonical CSV value and record event-card minute differences in audit notes: Rayo-Celta 45/46; Betis-Malaga Antony 61/62 and Chupe 60/61; Racing-Real Madrid Inigo Sainz-Maza 60/61.",
+      "Re-run all ten fixtures and retain Jornada 10 Barcelona-Real Madrid duplicate cleanup as a separate audit item."
     ],
     "note": "This is a partial official-source audit update only; Jornada 11 remains not finally certified. Jornada 10 is not advanced until final certification."
   }
