@@ -12,9 +12,10 @@
       "2026-10-09|Malaga|Espanyol",
       "2026-10-10|Alaves|Atletico",
       "2026-10-10|Barcelona|Getafe",
-      "2026-10-10|Real Madrid|Villarreal"
+      "2026-10-10|Real Madrid|Villarreal",
+      "2026-10-11|Elche|Celta"
     ],
-    "pending_played_fixture_count": 5,
+    "pending_played_fixture_count": 4,
     "postponed_fixture_count": 1
   },
   "matches": [
@@ -215,6 +216,46 @@
           "reason": "Detailed official commentary gives 45'; summary card displays 46'."
         }
       ],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-11",
+      "home": "Elche",
+      "away": "Celta",
+      "score": "0-0",
+      "halftime_score": "0-0",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 9,
+        "normalized": 9,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 9,
+        "not_appeared": 15,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 9,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-rc-celta-8",
+        "https://www.skysports.com/football/elche-vs-celta-vigo/teams/562996"
+      ],
+      "corrections": [],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
     }
   ],
