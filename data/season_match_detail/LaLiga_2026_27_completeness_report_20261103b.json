@@ -5,7 +5,7 @@
   "results_fixtures": 109,
   "unique_fixture_keys": 109,
   "fixtures_with_normalized_player_detail": 10,
-  "player_csv_rows": 453,
+  "player_csv_rows": 452,
   "substitution_csv_rows": 95,
   "matches_with_both_starting_xis_entered": 10,
   "matches_with_partial_unresolved_identity": 0,
@@ -39,7 +39,9 @@
     "Betis-Málaga event-card displayed minutes differ from commentary narrative for Antony and Chupe; CSV and batch now use official event-card display values.",
     "Jornada 11 starting XI counts now show 11 players for both teams in all 10 matches after resolving Alavés shirt number 27 as Xanet Olaiz and Espanyol shirt number 15 as Bryan Zaragoza.",
     "Full official bench-list and substitution-minute audit is still in progress; no match certified fully complete.",
-    "Racing-Real Madrid: official timeline card displays Íñigo Sainz-Maza at 61', while narrative commentary lists 60'; normalized files use 61' and the discrepancy is logged."
+    "Racing-Real Madrid: official timeline card displays Íñigo Sainz-Maza at 61', while narrative commentary lists 60'; normalized files use 61' and the discrepancy is logged.",
+    "Jornada 11 bench statuses reconciled against official substitution timelines; non-entering named substitutes marked substitute_not_appeared, and Carlos Ruiz Rubio mapped to the official event name Chupe.",
+    "Levante-Atlético: Hugo Sotelo appeared in both teams' bench lists; removed from Atlético list and left one Atlético bench identity unresolved pending a reliable source."
   ],
   "policy": [
     "Free sources only",
@@ -221,5 +223,12 @@
       }
     ],
     "certification_rule": "Do not mark a match fully complete until both XIs, complete official bench lists, all substitute appearance statuses, and every substitution are verified against official match records."
+  },
+  "jornada11_bench_status_reconciliation": {
+    "method": "After cross-checking the full official substitution timeline, every named bench player with no incoming substitution event is marked substitute_not_appeared. Exact event-name alias Carlos Ruiz Rubio/Chupe was mapped to the confirmed 61' entry. Ambiguous identity conflicts remain unresolved.",
+    "changed_to_not_appeared": 126,
+    "alias_rows_resolved": 1,
+    "removed_conflicting_duplicate_rows": 1,
+    "remaining_unresolved": "Atlético bench contains one unresolved identity after removing duplicate Hugo Sotelo."
   }
 }
