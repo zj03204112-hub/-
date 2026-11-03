@@ -15,7 +15,7 @@
     "mapping_rows": "130/130",
     "results_rows": "130/130",
     "official_match_urls_present": "130/130",
-    "provider_event_ids_present": "126/130; four 2026-11-01 records use official match URLs with provider ID pending",
+    "provider_event_ids_present": "125/130; four 2026-11-01 records use official match URLs with provider ID pending, and Cerezo Osaka-Tokyo Verdy (2026-09-06) provider ID cleared pending direct confirmation",
     "mapping_to_results_match_keys": "130/130 after date normalization and team alias normalization"
   },
   "source_cross_checks": [
@@ -34,6 +34,14 @@
       "score": "3-1",
       "official_match_url": "https://www.jleague.jp/en/match/j1/2026/103113/",
       "status": "matched"
+    },
+    {
+      "date": "2026-09-06",
+      "home": "神戸",
+      "away": "長崎",
+      "score": "3-1",
+      "official_match_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34575",
+      "status": "matched; confirms provider ID 34575 belongs to Kobe-Nagasaki"
     }
   ],
   "row_by_row_independent_recheck": "Result/mapping rows are structurally aligned 130/130; 32 baseline matches still lack complete individual official evidence. Player and xG/xGA completeness are tracked separately.",
@@ -68,7 +76,8 @@
     "2026-11-03 official lineup re-audit: match card 34642 has 40 player rows and 9 substitution events; match card 34641 has 40 player rows (22 starters + 18 bench players) and 11 substitution events. Both are checked against official J.LEAGUE records.",
     "Superseded intermediate-state note: current match card 34641 has 40 verified player rows, including all 18 official bench players, 11 substitute appearances and 7 unused substitutes.",
     "Latest re-audit confirms the team assignments for match card 34641: all nine Tokyo Verdy substitutes and all nine Nagasaki substitutes are represented; 11 substitutions are recorded separately.",
-    "2026-11-03 official player-detail continuation: match card 34524 (Hiroshima 3-0 Chiba, 2026-08-08) added 40 player rows (22 starters + 18 bench players) and 10 substitution events from the official J.League Data Site. Mapping status verified; source URLs retained."
+    "2026-11-03 official player-detail continuation: match card 34524 (Hiroshima 3-0 Chiba, 2026-08-08) added 40 player rows (22 starters + 18 bench players) and 10 substitution events from the official J.League Data Site. Mapping status verified; source URLs retained.",
+    "2026-11-03 mapping correction: official Data Site match_card_id=34575 resolves to Kobe 3-1 Nagasaki, not Cerezo Osaka-Tokyo Verdy. Mapping ID 34575 moved to the Kobe-Nagasaki row. Cerezo Osaka 0-0 Tokyo Verdy remains result-verified from the official J.LEAGUE page https://www.jleague.jp/match/j1/2026/090608/ but its Data Site ID is blank pending direct confirmation; no ID inferred."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
@@ -165,5 +174,16 @@
     "blank_player_source_urls": 0,
     "blank_substitution_minutes": 1,
     "xg_xga_search_status": "paused per user instruction; not changed"
+  },
+  "latest_match_id_audit": {
+    "date": "2026-11-03",
+    "mismatch_found": {
+      "previously_mapped_id": "34575",
+      "official_fixture": "神戸 3-1 長崎",
+      "incorrect_fixture_mapping": "Ｃ大阪 0-0 東京Ｖ"
+    },
+    "corrected_fixture": "神戸-長崎 provider_event_id=34575",
+    "unresolved_fixture": "Ｃ大阪-東京Ｖ 2026-09-06; official result page verified; Data Site ID pending",
+    "provider_ids_present": "125/130"
   }
 }
