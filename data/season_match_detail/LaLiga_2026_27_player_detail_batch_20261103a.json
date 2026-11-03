@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "match_id": "laliga-2026-27-2026-10-31-barcelona-alaves",
+  "date": "2026-10-31",
+  "home": "Barcelona",
+  "away": "Alaves",
+  "score": "6-1",
+  "halftime_score": "4-0",
+  "official_match_url": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11",
+  "verification": "partial_official_extraction",
+  "verified_data": {
+    "home_starting_xi": [
+      "Joan Garcia",
+      "Joao Cancelo",
+      "Cubarsí",
+      "Brian",
+      "F. De Jong",
+      "Rodrigo",
+      "Pedri",
+      "Fermin",
+      "Raphinha",
+      "Adeyemi",
+      "Lamine Yamal"
+    ],
+    "home_bench": [
+      "Hamza Abdelkarim",
+      "Alex Campos",
+      "Guillem Victor",
+      "Szczesny",
+      "Bernal",
+      "Ebrima Tunkara",
+      "Gerard Martín",
+      "Gavi",
+      "Balde",
+      "Anthony Gordon",
+      "Gabriel Jesus",
+      "Livakovic"
+    ],
+    "substitution_events": [
+      {
+        "team": "Barcelona",
+        "player_in": "Marc Bernal",
+        "player_out": "Pedri",
+        "minute": "45",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Gabriel Jesus",
+        "player_out": "Raphinha",
+        "minute": "62",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Alejandro Balde",
+        "player_out": "Joao Cancelo",
+        "minute": "62",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Anthony Gordon",
+        "player_out": "Lamine Yamal",
+        "minute": "74",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Gerard Martín",
+        "player_out": "F. De Jong",
+        "minute": "82",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Toni Martínez",
+        "player_out": "Carlos Protesoni",
+        "minute": "45",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Pablo Ibáñez",
+        "player_out": "Denis Suárez",
+        "minute": "55",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Aitor Mañas",
+        "player_out": "Abde Rebbach",
+        "minute": "55",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Hugo Novoa",
+        "player_out": "Ángel Pérez",
+        "minute": "74",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Mariano Díaz",
+        "player_out": "Lucas Boyé",
+        "minute": "74",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11"
+      }
+    ]
+  },
+  "not_yet_verified": {
+    "away_starting_xi": "Official page extraction exposed no away-team starting XI in the parsed lineup block; leave blank until a second source confirms.",
+    "away_bench": "Full away bench list not verified from the available parsed official page; leave blank.",
+    "appearance_status": "Home starting/substitute appearance status can be derived from listed starters and substitution events; full away-team player table remains pending."
+  },
+  "rules": [
+    "No inferred player names or minutes",
+    "No xG/xGA",
+    "Only free official source",
+    "This batch is partial and must not be counted as a complete match"
+  ]
+}
