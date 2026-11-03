@@ -50,6 +50,22 @@
       "match_level_xg": "fixture-level xG documented",
       "match_level_xga": "explicit xGA metric per fixture documented",
       "decision": "technically qualifies as a field/source candidate, but excluded because user requires free data"
+    },
+    {
+      "name": "FootballSoccerAPI match-detail documentation",
+      "url": "https://footballsoccerapi.com/documentation/match",
+      "access": "Free API key required according to docs",
+      "match_level_xg": "per-match team_figures includes xG and xg_estimate",
+      "match_level_xga": "explicit xGA field not documented in the reviewed match-detail page",
+      "decision": "not accepted for xGA; do not infer xGA from opponent xG"
+    },
+    {
+      "name": "TACTIX Developer API match-detail documentation",
+      "url": "https://tactix.football/developers",
+      "access": "Bearer API key required; public documentation reviewed",
+      "match_level_xg": "fixture endpoint includes each team's expected_goals when statistics are available",
+      "match_level_xga": "explicit xGA field not shown in documented per-team fields",
+      "decision": "not accepted for xGA; match-level xG may be a candidate only if accessible free and fixture IDs can be reconciled"
     }
   ],
   "current_dataset": {
@@ -60,11 +76,11 @@
     "matches_missing_independently_verified_match_level_xga": 130,
     "xga_values_filled_from_opponent_xg": 0
   },
-  "conclusion": "As of 2026-11-03, no free public source reviewed passed all four requirements for independent, traceable, explicit match-level xGA. Keep all 130 xGA pairs blank. Continue checking free providers for raw fixture-level xGA rather than deriving it from the opposing team's xG.",
+  "conclusion": "As of 2026-11-03, seven source families have been reviewed. No free public source reviewed passed all requirements for independent, traceable, explicit match-level xGA. FootballSoccerAPI and TACTIX docs expose match-level xG/expected_goals but do not document an explicit xGA field in the reviewed public material. Sportmonks explicitly documents fixture-level xGA but its xG add-on is paid. Keep all 130 xGA pairs blank.",
   "next_checks": [
     "Inspect JPick public match detail pages and source payloads to determine whether a per-fixture xGA field is exposed free of charge.",
     "Check whether TACTIX exposes downloadable match-level xG values with fixture IDs and traceable provider attribution rather than only aggregated xPts.",
     "Only add xGA when both teams' values and fixture identity are directly evidenced by a source; preserve URL and source timestamp."
   ],
-  "candidate_sources_reviewed": 5
+  "candidate_sources_reviewed": 7
 }
