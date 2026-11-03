@@ -10,9 +10,10 @@
     "unique": 10,
     "duplicate_count": 0,
     "completed_fixture_keys": [
-      "2026-10-16|Deportivo|Levante"
+      "2026-10-16|Deportivo|Levante",
+      "2026-10-17|Espanyol|Atletico"
     ],
-    "pending_fixture_count": 9
+    "pending_fixture_count": 8
   },
   "matches": [
     {
@@ -58,6 +59,56 @@
           "player": "Víctor García",
           "stored": "90+3",
           "reason": "Event card and independent source show 90+3; official narrative commentary rounds it to 90."
+        }
+      ],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-17",
+      "home": "Espanyol",
+      "away": "Atletico",
+      "score": "0-1",
+      "halftime_score": "0-0",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rcd-espanyol-de-barcelona-atletico-de-madrid-9",
+        "https://www.skysports.com/football/espanyol-vs-atletico-madrid/teams/563006"
+      ],
+      "corrections": [
+        {
+          "field": "halftime substitution minutes",
+          "players": [
+            "Julián Álvarez",
+            "Alejandro Grimaldo"
+          ],
+          "stored": "45",
+          "reason": "Detailed official commentary gives 45'; the official summary timeline card displays 46'."
         }
       ],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
