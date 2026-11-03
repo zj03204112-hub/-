@@ -1,0 +1,20 @@
+{
+  "correction_time_beijing": "2026-11-03T14:55:48+08:00",
+  "immutable_history": true,
+  "corrections": [
+    {
+      "old_prediction_id": "research-xg-poisson-20261103-1500-galatasaray-stuttgart",
+      "new_prediction_id": "research-xg-poisson-20261103-1500-galatasaray-stuttgart-r1",
+      "field": "projected_xg.source_url and sources[]",
+      "reason": "Canonical host is bookmakers.market, without www.",
+      "forecast_values_changed": false
+    },
+    {
+      "old_prediction_id": "research-xg-poisson-20261103-1500-shakhtar-sporting",
+      "new_prediction_id": "research-xg-poisson-20261103-1500-shakhtar-sporting-r1",
+      "field": "team_context.injuries and team_context.tactics",
+      "reason": "Removed unsupported Shakhtar injury names and unverified home formation; retained only source-supported Sporting injury reports and marked the rest unknown.",
+      "forecast_values_changed": false
+    }
+  ]
+}
