@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 8,
+  "match_id": "laliga-2026-27-2026-10-09-malaga-espanyol",
+  "date": "2026-10-09",
+  "home": "Malaga",
+  "away": "Espanyol",
+  "score": "1-1",
+  "halftime_score": "0-1",
+  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-rcd-espanyol-de-barcelona-8",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-rcd-espanyol-de-barcelona-8",
+    "secondary_lineups": "https://www.skysports.com/football/malaga-vs-espanyol/teams/563003",
+    "secondary_lineup_report": "https://elpais.com/deportes/resultados/futbol/primera/2026_2027/directo/regular-a-8-6a4496c62a77e80/alineaciones/"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Alfonso Herrero",
+      "Rafita",
+      "Carlos Puga",
+      "Ángel Recio",
+      "Fernando Calero",
+      "Joaquín Muñoz",
+      "Pablo Martínez",
+      "David Larrubia",
+      "Rafa Rodríguez",
+      "Dani Lorenzo",
+      "Chupe"
+    ],
+    "home_bench": [
+      "Einar Galilea",
+      "Juan Berrocal",
+      "Izan Merino",
+      "Adrián Niño",
+      "Carlos López",
+      "Eneko Jauregi",
+      "Álex Pastor",
+      "Andrés Céspedes",
+      "Adam Aznou",
+      "Ramón Enríquez",
+      "Haitam Abaida",
+      "Carlos Dotor"
+    ],
+    "away_starting_xi": [
+      "Ángel Fortuño",
+      "Omar El Hilali",
+      "Leandro Cabrera",
+      "Clemens Riedel",
+      "Quilindschy Hartman",
+      "Pol Lozano",
+      "Edu Expósito",
+      "Tyrhys Dolan",
+      "Javi Hernández",
+      "Bryan Zaragoza",
+      "Roberto Fernández"
+    ],
+    "away_bench": [
+      "Marko Dmitrović",
+      "Llorenç Serred",
+      "Unai Núñez",
+      "Vanja Drkušić",
+      "Roger Hinojo",
+      "Urko González de Zárate",
+      "Pere Milla",
+      "Gabriel Moscardo",
+      "Álex Calatrava Torrado",
+      "Rafel Bauzà",
+      "Javi Puado",
+      "Marcos Fernández"
+    ],
+    "substitution_events": [
+      {
+        "team": "Malaga",
+        "player_in": "Carlos Dotor",
+        "player_out": "Joaquín Muñoz",
+        "minute": "62"
+      },
+      {
+        "team": "Malaga",
+        "player_in": "Adrián Niño",
+        "player_out": "Rafa Rodríguez",
+        "minute": "62"
+      },
+      {
+        "team": "Malaga",
+        "player_in": "Adam Aznou",
+        "player_out": "Carlos Puga",
+        "minute": "62"
+      },
+      {
+        "team": "Malaga",
+        "player_in": "Izan Merino",
+        "player_out": "Fernando Calero",
+        "minute": "74"
+      },
+      {
+        "team": "Malaga",
+        "player_in": "Haitam Abaida",
+        "player_out": "Pablo Martínez",
+        "minute": "82"
+      },
+      {
+        "team": "Espanyol",
+        "player_in": "Urko González de Zárate",
+        "player_out": "Javi Hernández",
+        "minute": "57"
+      },
+      {
+        "team": "Espanyol",
+        "player_in": "Cala",
+        "player_out": "Bryan Zaragoza",
+        "minute": "73"
+      },
+      {
+        "team": "Espanyol",
+        "player_in": "Roger Hinojo",
+        "player_out": "Roberto Fernández",
+        "minute": "82"
+      },
+      {
+        "team": "Espanyol",
+        "player_in": "Pere Milla",
+        "player_out": "Edu Expósito",
+        "minute": "82"
+      },
+      {
+        "team": "Espanyol",
+        "player_in": "Marcos Fernández",
+        "player_out": "Tyrhys Dolan",
+        "minute": "82"
+      }
+    ],
+    "notes": [
+      "Both starting XIs and all 24 bench entries cross-checked against the official LaLiga match page and free lineup/report sources.",
+      "Ten substitutions verified against the detailed official event log; all minutes are stored as shown in the detailed commentary.",
+      "The Málaga bench player shown as Andrés in the LaLiga roster is identified as Andrés Céspedes by the free lineup report.",
+      "The Espanyol event display uses Cala; the full identity is Álex Calatrava Torrado, retained in the source cross-check and alias mapping.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
