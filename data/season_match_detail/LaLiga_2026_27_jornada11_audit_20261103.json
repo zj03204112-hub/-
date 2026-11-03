@@ -174,11 +174,45 @@
       "after": "Álvaro Fernández",
       "reason": "Corrected apparent typo to match the normalized CSV spelling; retained official match source for list cross-check.",
       "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+    },
+    {
+      "field": "canonical substitution minute convention",
+      "matches": [
+        {
+          "match": "Betis-Malaga",
+          "player": "Antony",
+          "before": "62",
+          "after": "61"
+        },
+        {
+          "match": "Betis-Malaga",
+          "player": "Chupe",
+          "before": "61",
+          "after": "60"
+        },
+        {
+          "match": "Rayo-Celta",
+          "player": "Giorgi Tsitaishvili",
+          "before": "46",
+          "after": "45"
+        },
+        {
+          "match": "Racing-Real Madrid",
+          "player": "Íñigo Sainz-Maza",
+          "before": "61",
+          "after": "60"
+        }
+      ],
+      "reason": "The official detailed commentary/event log provides the underlying substitution minute; summary substitution cards display the next minute in these cases. The normalized dataset now consistently uses detailed commentary minutes.",
+      "sources": [
+        "https://www.laliga.com/en-ID/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11",
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11"
+      ]
     }
   ],
   "pending_checks": [
     "Official match pages render starting lineups, bench lists and event timelines inconsistently across languages; recheck any missing names against a second free source before marking complete.",
-    "Resolve whether official event-card minute or detailed commentary minute is the canonical stored minute for Betis-Malaga (Antony, Chupe), Rayo-Celta (Tsitaishvili), and Racing-Real Madrid (Íñigo Sainz-Maza); preserve both if sources disagree.",
     "Verify Villarreal's 10-player bench and Getafe/Rayo/Celta/Racing bench list counts against official match sheets; do not infer missing substitutes.",
     "Confirm the official Atlético bench list for Levante-Atlético after the Hugo Sotelo/Dani Martínez name conflict has been corrected.",
     "After source-level issues are resolved, certify each match separately; do not mark all 10 fully complete solely because CSV and batch rows align."
@@ -523,7 +557,9 @@
         "substitute_appeared": 95
       },
       "batch_csv_event_alignment": "all 10 Jornada 11 batches have the same event count as their CSV match rows and all in/out names and minutes align after documented alias mapping; source-level discrepancies are separately retained.",
-      "fully_certified_matches": 0
-    }
+      "fully_certified_matches": 0,
+      "canonical_minute_changes": 4
+    },
+    "canonical_minute_convention": "Detailed official commentary/event log minute is canonical; summary substitution card minute is retained in audit notes only when it differs."
   }
 }
