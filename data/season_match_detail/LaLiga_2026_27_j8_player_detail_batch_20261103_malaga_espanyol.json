@@ -18,7 +18,7 @@
   "verified_data": {
     "home_starting_xi": [
       "Alfonso Herrero",
-      "Rafita",
+      "Rafael Garrido Hierro",
       "Carlos Puga",
       "Ángel Recio",
       "Fernando Calero",
@@ -65,7 +65,7 @@
       "Urko González de Zárate",
       "Pere Milla",
       "Gabriel Moscardo",
-      "Álex Calatrava Torrado",
+      "Cala",
       "Rafel Bauzà",
       "Javi Puado",
       "Marcos Fernández"
@@ -137,7 +137,25 @@
       "Ten substitutions verified against the detailed official event log; all minutes are stored as shown in the detailed commentary.",
       "The Málaga bench player shown as Andrés in the LaLiga roster is identified as Andrés Céspedes by the free lineup report.",
       "The Espanyol event display uses Cala; the full identity is Álex Calatrava Torrado, retained in the source cross-check and alias mapping.",
-      "Bench players without incoming substitution events are marked substitute_not_appeared."
+      "Bench players without incoming substitution events are marked substitute_not_appeared.",
+      "Name normalization: full name Rafael Garrido Hierro is used for the Málaga starter displayed as Rafita; Espanyol bench/event display Cala is preserved, with full identity Álex Calatrava Torrado recorded as an alias."
+    ],
+    "player_name_aliases": [
+      {
+        "official_event_display": "Rafita",
+        "full_name": "Rafael Garrido Hierro",
+        "source": "free match lineup report"
+      },
+      {
+        "official_event_display": "Cala",
+        "full_name": "Álex Calatrava Torrado",
+        "source": "free match lineup report"
+      },
+      {
+        "official_roster_display": "Andrés",
+        "full_name": "Andrés Céspedes",
+        "source": "free match lineup report"
+      }
     ]
   },
   "normalized_csv": {
