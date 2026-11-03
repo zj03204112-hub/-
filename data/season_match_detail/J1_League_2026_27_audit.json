@@ -93,14 +93,14 @@
   "results_file": "data/auto_results/J1_League_2026_27.csv",
   "lineup_and_appearance_audit": {
     "matches_with_both_teams_starting_xi_structured": 130,
-    "matches_with_both_bench_lists_structured": 118,
+    "matches_with_both_bench_lists_structured": 121,
     "matches_with_substitution_events_structured": 130,
     "matches_with_complete_player_appearance_status_table": 115,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-    "standardized_player_rows": 5099,
+    "standardized_player_rows": 5120,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
     "standardized_substitution_rows": 1261,
-    "note": "Official J.League Data Site or official club match-data pages used to add/classify unused substitutes for seven fixtures: G Osaka-Urawa (Aug 7), Yokohama FM-Kashima (Aug 7), Cerezo Osaka-Okayama (Aug 8), Nagoya-Machida (Sep 6), Kawasaki-Shimizu (Sep 6), Machida-Kashiwa (Sep 20), and Kyoto-Shimizu (Oct 31). Twelve fixtures still lack a verified complete unused-bench classification. Unknown names remain unestimated."
+    "note": "Official J.League Data Site or official club match-data pages used to add/classify unused substitutes for ten fixtures: G Osaka-Urawa (Aug 7), Yokohama FM-Kashima (Aug 7), Cerezo Osaka-Okayama (Aug 8), Nagoya-Machida (Sep 6), Kawasaki-Shimizu (Sep 6), Machida-Kashiwa (Sep 20), Kyoto-Shimizu (Oct 31), Mito-Hiroshima (Oct 31), Okayama-FC Tokyo (Oct 31), and Yokohama FM-Kawasaki (Nov 1). Nine fixtures still lack a verified complete unused-bench classification. Unknown names remain unestimated."
   },
   "xg_xga_audit": {
     "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
@@ -526,7 +526,7 @@
         "status": "verified"
       }
     ],
-    "current_player_rows": 5099,
+    "current_player_rows": 5120,
     "current_player_match_groups": 130,
     "current_substitution_rows": 1261,
     "current_substitution_match_groups": 130,
@@ -552,21 +552,18 @@
       "limitations": "Unused bench members not fully transcribed for these six fixtures; only confirmed starters and documented appearances/events are included. No inferred names or times.",
       "player_rows_after_correction": 5051,
       "substitution_rows_after_correction": 1261,
-      "bench_list_fixtures_completed": 7,
-      "bench_list_fixtures_remaining": 12,
+      "bench_list_fixtures_completed": 10,
+      "bench_list_fixtures_remaining": 9,
       "fixtures_still_missing_bench": [
         "2026-09-06|鹿島|浦和",
         "2026-08-15|川崎Ｆ|京都",
         "2026-08-21|FC東京|千葉",
         "2026-08-22|鹿島|福岡",
-        "2026-10-31|岡山|FC東京",
-        "2026-10-31|水戸|広島",
         "2026-10-31|神戸|名古屋",
         "2026-09-06|Ｃ大阪|東京Ｖ",
         "2026-09-19|川崎Ｆ|鹿島",
         "2026-10-31|鹿島|Ｃ大阪",
-        "2026-10-31|柏|浦和",
-        "2026-11-01|横浜FM|川崎Ｆ"
+        "2026-10-31|柏|浦和"
       ]
     }
   },
