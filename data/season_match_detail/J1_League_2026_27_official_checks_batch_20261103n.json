@@ -1,0 +1,32 @@
+{
+  "audit_date": "2026-11-03",
+  "league": "J1 League",
+  "season": "2026/27",
+  "baseline_file": "data/auto_results/J1_League_2026_27.csv",
+  "scope": "Official individual-page verification for the final two pending baseline fixtures dated 2026-10-25.",
+  "official_source": "J.LEAGUE official individual match pages",
+  "verified_matches": [
+    {
+      "date": "2026-10-25",
+      "home": "浦和",
+      "away": "长崎",
+      "score": "1-0",
+      "source_level": "official_individual_match_page"
+    },
+    {
+      "date": "2026-10-25",
+      "home": "川崎Ｆ",
+      "away": "岡山",
+      "score": "2-1",
+      "source_level": "official_individual_match_page"
+    }
+  ],
+  "result": {
+    "verified_count": 2,
+    "individual_match_pages": 2,
+    "score_or_identity_conflicts": 0,
+    "baseline_csv_modified": false,
+    "model_or_prediction_snapshots_modified": false
+  },
+  "next_gaps": "Official score verification queue is cleared; lineup/bench/appearance and xG/xGA audits remain incomplete and must be tracked separately."
+}
