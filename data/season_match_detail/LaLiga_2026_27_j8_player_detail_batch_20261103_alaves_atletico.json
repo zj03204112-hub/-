@@ -1,0 +1,146 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 8,
+  "match_id": "laliga-2026-27-2026-10-10-alaves-atletico",
+  "date": "2026-10-10",
+  "home": "Alaves",
+  "away": "Atletico",
+  "score": "1-2",
+  "halftime_score": "0-1",
+  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-atletico-de-madrid-8",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-atletico-de-madrid-8",
+    "secondary_lineups": "https://www.skysports.com/football/alaves-vs-atletico-madrid/teams/563002",
+    "secondary_match_report": "https://www.footballwebpages.co.uk/match/2026-2027/spanish-la-liga/alaves/atletico-madrid/593529"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Antonio Sivera",
+      "Nahuel Tenaglia",
+      "Jonny Otto",
+      "Ville Koski",
+      "Nicolás Valentini",
+      "Abderrahman Rebbach",
+      "Pablo Ibáñez",
+      "Antonio Blanco",
+      "Carles Aleñá",
+      "Toni Martínez",
+      "Lucas Boyé"
+    ],
+    "home_bench": [
+      "Aitor Rodríguez",
+      "Hugo Novoa Ramos",
+      "Youssef Lekhedim",
+      "Denis Suárez",
+      "Ander Guevara",
+      "Mariano Díaz Mejía",
+      "Aitor Mañas",
+      "Miguel Rodríguez",
+      "Carlos Benavídez",
+      "Selu Diallo",
+      "Xanet Olaiz",
+      "Gustavo Swiderski"
+    ],
+    "away_starting_xi": [
+      "Jan Oblak",
+      "Marc Pubill",
+      "Cristian Romero",
+      "Dávid Hancko",
+      "Dani Martínez",
+      "Giuliano Simeone",
+      "Pablo Barrios",
+      "Morten Hjulmand",
+      "Ademola Lookman",
+      "Jonathan David",
+      "Julián Álvarez"
+    ],
+    "away_bench": [
+      "Juan Musso",
+      "Robin Le Normand",
+      "Alejandro Grimaldo",
+      "Marcos Llorente",
+      "Lee Kang-In",
+      "Álex Baena",
+      "Alexander Sørloth",
+      "Rodrigo Mendoza",
+      "Obed Vargas",
+      "Jorge Domínguez",
+      "Arnau Ortiz Sánchez",
+      "Jorge Castillo"
+    ],
+    "substitution_events": [
+      {
+        "team": "Alaves",
+        "player_in": "Aitor Mañas",
+        "player_out": "Toni Martínez",
+        "minute": "45"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Mariano Díaz Mejía",
+        "player_out": "Abderrahman Rebbach",
+        "minute": "45"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Denis Suárez",
+        "player_out": "Antonio Blanco",
+        "minute": "65"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Ander Guevara",
+        "player_out": "Pablo Ibáñez",
+        "minute": "76"
+      },
+      {
+        "team": "Alaves",
+        "player_in": "Miguel Rodríguez",
+        "player_out": "Carles Aleñá",
+        "minute": "83"
+      },
+      {
+        "team": "Atletico",
+        "player_in": "Alexander Sørloth",
+        "player_out": "Jonathan David",
+        "minute": "45"
+      },
+      {
+        "team": "Atletico",
+        "player_in": "Lee Kang-In",
+        "player_out": "Giuliano Simeone",
+        "minute": "59"
+      },
+      {
+        "team": "Atletico",
+        "player_in": "Robin Le Normand",
+        "player_out": "Marc Pubill",
+        "minute": "68"
+      },
+      {
+        "team": "Atletico",
+        "player_in": "Álex Baena",
+        "player_out": "Dani Martínez",
+        "minute": "68"
+      },
+      {
+        "team": "Atletico",
+        "player_in": "Rodrigo Mendoza",
+        "player_out": "Pablo Barrios",
+        "minute": "85"
+      }
+    ],
+    "notes": [
+      "Both starting XIs and both 12-player bench lists cross-checked against official LaLiga and Sky Sports lineup sources.",
+      "Ten substitutions verified. Halftime changes are stored at 45' from detailed official commentary, where summary cards may display 46'.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
