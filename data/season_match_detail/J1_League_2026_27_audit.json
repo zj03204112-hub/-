@@ -37,7 +37,7 @@
     }
   ],
   "row_by_row_independent_recheck": "Result/mapping rows are structurally aligned 130/130; 32 baseline matches still lack complete individual official evidence. Player and xG/xGA completeness are tracked separately.",
-  "lineups_and_actual_appearances": "Latest source-backed re-audit (2026-11-03): the six requested match cards 34589, 34590, 34591, 34592, 34593 and 34641 were checked against official J.League Data Site records. Their standardized player-row counts are 39, 40, 40, 40, 40 and 40 respectively; substitution-event counts are 8, 10, 8, 10, 10 and 11. Red cards in 34591 (Takahiro Ko, 68') and 34592 (Lucao, 57') are recorded as starter exit times, not substitution events. Full-season player coverage remains incomplete.",
+  "lineups_and_actual_appearances": "Latest source-backed re-audit: six requested match cards 34589, 34590, 34591, 34592, 34593 and 34641 verified. Additional official match card 34524 (Hiroshima 3-0 Chiba, 2026-08-08) now added with 40 player rows and 10 substitution events. Full-season player coverage remains incomplete.",
   "notes": [
     "The CSV's source column points to the official J.League Data Site.",
     "125 rows correspond to completed matches from 2026-08-07 through 2026-10-31; fixtures scheduled for 2026-11-01 are not included.",
@@ -67,20 +67,21 @@
     "Data-quality note for match 34640: the official lineup table displays Rocha for Erison at 90+1, while the official match-progress timeline labels the same event 45+5 (90+5). To avoid guessing, the minute is left blank in the normalized player/substitution rows pending a consistent official record.",
     "2026-11-03 official lineup re-audit: match card 34642 has 40 player rows and 9 substitution events; match card 34641 has 40 player rows (22 starters + 18 bench players) and 11 substitution events. Both are checked against official J.LEAGUE records.",
     "Superseded intermediate-state note: current match card 34641 has 40 verified player rows, including all 18 official bench players, 11 substitute appearances and 7 unused substitutes.",
-    "Latest re-audit confirms the team assignments for match card 34641: all nine Tokyo Verdy substitutes and all nine Nagasaki substitutes are represented; 11 substitutions are recorded separately."
+    "Latest re-audit confirms the team assignments for match card 34641: all nine Tokyo Verdy substitutes and all nine Nagasaki substitutes are represented; 11 substitutions are recorded separately.",
+    "2026-11-03 official player-detail continuation: match card 34524 (Hiroshima 3-0 Chiba, 2026-08-08) added 40 player rows (22 starters + 18 bench players) and 10 substitution events from the official J.League Data Site. Mapping status verified; source URLs retained."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
   "lineup_and_appearance_audit": {
-    "matches_with_both_teams_starting_xi_structured": 76,
-    "matches_with_both_bench_lists_structured": 71,
-    "matches_with_substitution_events_structured": 76,
-    "matches_with_complete_player_appearance_status_table": 75,
+    "matches_with_both_teams_starting_xi_structured": 77,
+    "matches_with_both_bench_lists_structured": 72,
+    "matches_with_substitution_events_structured": 77,
+    "matches_with_complete_player_appearance_status_table": 76,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-    "standardized_player_rows": 2999,
+    "standardized_player_rows": 3039,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-    "standardized_substitution_rows": 731,
-    "note": "Current re-read of main-branch source files: 2,999 player rows across 76 match groups; 76 groups have both starting XIs, 71 have both bench lists, 75 have complete appearance-status classification, and 76 have substitution-event records. Duplicate player/substitution keys and blank player source URLs: zero. One substitution event still has an unresolved minute conflict; no minute was guessed."
+    "standardized_substitution_rows": 741,
+    "note": "Current re-read of source files: 3,039 player rows across 77 match groups; 77 groups have both starting XIs, 72 have both bench lists, 76 have complete appearance-status classification, and 77 have substitution-event records. Duplicate player/substitution keys and blank player source URLs: zero. One substitution event still has an unresolved minute conflict; no minute was guessed."
   },
   "xg_xga_audit": {
     "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
@@ -144,13 +145,21 @@
         "bench": 18,
         "substitution_events": 11,
         "status": "verified"
+      },
+      {
+        "id": "34524",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 10,
+        "status": "verified"
       }
     ],
-    "current_player_rows": 2999,
-    "current_player_match_groups": 76,
-    "current_substitution_rows": 731,
-    "current_substitution_match_groups": 76,
-    "matches_missing_player_records": 54,
+    "current_player_rows": 3039,
+    "current_player_match_groups": 77,
+    "current_substitution_rows": 741,
+    "current_substitution_match_groups": 77,
+    "matches_missing_player_records": 53,
     "duplicate_player_keys": 0,
     "duplicate_substitution_keys": 0,
     "blank_player_source_urls": 0,
