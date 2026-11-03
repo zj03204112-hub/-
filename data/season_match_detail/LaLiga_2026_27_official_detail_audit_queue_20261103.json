@@ -25,7 +25,7 @@
   "official_results_page": "https://www.laliga.com/en-GB/laliga-easports/results",
   "official_match_detail_pages_found": 10,
   "detailed_player_and_substitution_files_exist": true,
-  "summary": "Jornada 11 official source review now includes Levante-Atletico and Deportivo-Osasuna; batch-to-CSV substitution event alignment remains 10/10. Final certification pending row-level unused-bench status verification and minute-discrepancy documentation.",
+  "summary": "All ten match source reviews recorded; batch-to-CSV substitution events align 10/10. Player entry-minute discrepancies have been reconciled to detailed commentary minutes. Remaining blockers: row-level unused-bench status verification and separate Jornada 10 duplicate cleanup.",
   "fields_to_verify": [
     "source-backed names for 11 starters per team",
     "full official bench lists",
@@ -1906,7 +1906,7 @@
   "normalized_substitution_csv": "data/season_match_detail/LaLiga_2026_27_substitutions.csv",
   "last_update": "2026-11-03",
   "last_batch_added": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json",
-  "jornada11_audit_status": "in_progress_row_level_appearance_status_and_minute_convention_check",
+  "jornada11_audit_status": "in_progress_unused_bench_row_level_verification",
   "last_audit_corrections": [
     {
       "match": "Betis-Malaga",
@@ -2359,10 +2359,39 @@
       }
     ],
     "remaining_matchday11_items": [
-      "Verify each unused-bench appearance status row-by-row against the complete official match timeline.",
-      "Keep the detailed-commentary minute as canonical CSV value and record event-card minute differences in audit notes: Rayo-Celta 45/46; Betis-Malaga Antony 61/62 and Chupe 60/61; Racing-Real Madrid Inigo Sainz-Maza 60/61.",
+      "Verify every unused-bench appearance status row-by-row against the complete official match timeline.",
       "Re-run all ten fixtures and retain Jornada 10 Barcelona-Real Madrid duplicate cleanup as a separate audit item."
     ],
-    "note": "This is a partial official-source audit update only; Jornada 11 remains not finally certified. Jornada 10 is not advanced until final certification."
+    "note": "This is a partial official-source audit update only; Jornada 11 remains not finally certified. Jornada 10 is not advanced until final certification.",
+    "minute_reconciliation": {
+      "status": "csv_player_entry_minutes_aligned_to_substitution_csv_detailed_commentary",
+      "verified": [
+        {
+          "match": "Betis-Malaga",
+          "player": "Antony",
+          "minute": 61,
+          "commit": "a0812f9bd3757f5d842a9c19c41e242339fa4024"
+        },
+        {
+          "match": "Rayo-Celta",
+          "player": "Giorgi Tsitaishvili",
+          "minute": 45,
+          "commit": "f753dded1033309e83fba0b46ca20e9675279bbd"
+        },
+        {
+          "match": "Racing-Real Madrid",
+          "player": "Íñigo Sainz-Maza",
+          "minute": 60,
+          "commit": "c3e4a3e2927ad27b8cba0d080a29973f56ed1e8e"
+        },
+        {
+          "match": "Betis-Malaga",
+          "player": "Carlos Ruiz Rubio (Chupe alias)",
+          "minute": 60,
+          "commit": "7ee101ad87438c63398974879f25e5415ca4811d"
+        }
+      ],
+      "note": "Official event-card displays may be one minute later; CSV now follows detailed commentary minutes, and source display differences remain documented."
+    }
   }
 }
