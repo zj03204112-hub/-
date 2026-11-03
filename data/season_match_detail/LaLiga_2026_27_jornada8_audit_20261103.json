@@ -8,10 +8,64 @@
     "expected": 10,
     "unique": 10,
     "duplicate_count": 0,
-    "played": 9,
-    "postponed": 1
+    "completed_fixture_keys": [
+      "2026-10-09|Malaga|Espanyol"
+    ],
+    "pending_played_fixture_count": 8,
+    "postponed_fixture_count": 1
   },
-  "matches": [],
+  "matches": [
+    {
+      "date": "2026-10-09",
+      "home": "Malaga",
+      "away": "Espanyol",
+      "score": "1-1",
+      "halftime_score": "0-1",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-rcd-espanyol-de-barcelona-8",
+        "https://www.skysports.com/football/malaga-vs-espanyol/teams/563003"
+      ],
+      "corrections": [
+        {
+          "field": "player aliases",
+          "changes": [
+            "Rafita→Rafael Garrido Hierro",
+            "Cala↔Álex Calatrava Torrado",
+            "Andrés→Andrés Céspedes"
+          ],
+          "reason": "Full identities retained with official display aliases documented."
+        }
+      ],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    }
+  ],
   "rules": [
     "Do not mark round complete until all 9 played matches are source-audited and the postponed Rayo-Athletic match is later completed and audited.",
     "Check official match lineups, complete source-listed benches, all substitution events and actual appearance status.",
