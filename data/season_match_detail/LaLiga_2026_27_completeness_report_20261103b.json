@@ -4,13 +4,13 @@
   "season": "2026-27",
   "results_fixtures": 109,
   "unique_fixture_keys": 109,
-  "fixtures_with_normalized_player_detail": 12,
-  "player_csv_rows": 545,
-  "substitution_csv_rows": 115,
+  "fixtures_with_normalized_player_detail": 13,
+  "player_csv_rows": 591,
+  "substitution_csv_rows": 125,
   "matches_with_both_starting_xis_entered": 11,
   "matches_with_partial_unresolved_identity": 0,
-  "fully_complete_matches": 11,
-  "fixtures_without_normalized_player_detail": 97,
+  "fully_complete_matches": 13,
+  "fixtures_without_normalized_player_detail": 96,
   "batches": [
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103b.json",
@@ -28,7 +28,7 @@
     "98 other LaLiga 2026-27 fixtures remain without normalized player-detail batches.",
     "Jornada 10: Rayo-Elche is the first match with a new independent detail batch and normalized CSV rows; the other 9 Jornada 10 matches still need player-detail collection.",
     "Jornada 11: all 10 fixtures passed row-level source, lineup/bench, appearance-status, substitution in/out, minute, uniqueness and CSV-vs-batch checks.",
-    "Jornada 10: Alavés-Málaga and Rayo-Elche are source-audited complete; Rayo-Elche halftime substitution minutes corrected to detailed official commentary. Eight fixtures remain."
+    "Jornada 10: three fixtures source-audited complete (Alavés-Málaga, Rayo-Elche, Racing-Espanyol); seven fixtures remain without detail batches."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -327,15 +327,15 @@
   "jornada10_progress": {
     "fixtures_expected": 10,
     "fixtures_with_detail_batches": 2,
-    "fixtures_source_audited_complete": 2,
-    "remaining_without_detail_batches": 8,
+    "fixtures_source_audited_complete": 3,
+    "remaining_without_detail_batches": 7,
     "completed": [
       "Alaves-Malaga",
-      "Rayo-Elche"
+      "Rayo-Elche",
+      "Racing-Espanyol"
     ],
     "in_progress": [],
     "remaining": [
-      "Racing-Espanyol",
       "Valencia-Villarreal",
       "Atletico-Deportivo",
       "Athletic-Getafe",
