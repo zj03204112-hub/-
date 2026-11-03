@@ -4,26 +4,28 @@
   "season": "2026-27",
   "results_fixtures": 109,
   "unique_fixture_keys": 109,
-  "fixtures_with_normalized_player_detail": 5,
-  "player_csv_rows": 248,
-  "substitution_csv_rows": 49,
+  "fixtures_with_normalized_player_detail": 6,
+  "player_csv_rows": 268,
+  "substitution_csv_rows": 59,
   "matches_with_both_starting_xis_entered": 3,
   "matches_with_partial_unresolved_identity": 2,
   "fully_complete_matches": 0,
-  "fixtures_without_normalized_player_detail": 104,
+  "fixtures_without_normalized_player_detail": 103,
   "batches": [
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103b.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103c.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103d.json",
-    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103e.json"
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103e.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103f.json"
   ],
   "gaps": [
     "Barcelona-Alaves: one Alaves bench entry shown only as shirt number 27 unresolved.",
     "Villarreal-Espanyol: one Espanyol starting player shown only as shirt number 15 unresolved.",
     "Non-entering bench player appearance status remains unverified unless independently sourced.",
-    "104 fixtures still need starting XI, bench list, appearance status and substitutions.",
-    "Betis-Malaga: lineup and bench names entered from official sources; unused bench appearance status remains unverified."
+    "Betis-Malaga: lineup and bench names entered from official sources; unused bench appearance status remains unverified.",
+    "103 fixtures still need starting XI, bench list, appearance status and substitutions.",
+    "Rayo-Celta: non-entering bench appearance status remains unverified."
   ],
   "policy": [
     "Free sources only",
@@ -36,6 +38,8 @@
     "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11",
     "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-valencia-cf-11",
     "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11",
-    "https://www.malagacf.com/en/matches/season-2026-2027-laliga-ea-sports-11-real-betis-vs-malaga-cf-3029"
+    "https://www.malagacf.com/en/matches/season-2026-2027-laliga-ea-sports-11-real-betis-vs-malaga-cf-3029",
+    "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
+    "https://www.skysports.com/football/rayo-vallecano-vs-celta-vigo/teams/563031"
   ]
 }
