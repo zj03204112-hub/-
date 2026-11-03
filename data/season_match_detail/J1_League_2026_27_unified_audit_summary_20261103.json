@@ -7,10 +7,10 @@
   "extension_matches_2026_11_01": 4,
   "dedup_method": "normalized date + home team + away team; team aliases include Japanese/Chinese and full-width forms",
   "official_evidence": {
-    "any_matched": 86,
-    "individual_page_or_match_record_linked": 49,
+    "any_matched": 92,
+    "individual_page_or_match_record_linked": 55,
     "schedule_or_index_only": 37,
-    "pending": 40,
+    "pending": 34,
     "score_conflicts": 0,
     "identity_conflicts": 0,
     "duplicated_batch_records": 10
@@ -61,7 +61,8 @@
   "discrepancies": [
     "Legacy audit JSON reported 125 rows, while current CSV has 126 matches through 2026-10-31 plus 4 extension matches on 2026-11-01.",
     "Ten duplicate official-check records in 2026-10-17/18 batches were deduplicated.",
-    "Zero score/identity conflicts among rows matched to current official evidence does not prove pending rows are verified."
+    "Zero score/identity conflicts among rows matched to current official evidence does not prove pending rows are verified.",
+    "As of 2026-11-03, six additional 2026-08-08 rows were matched to individual official J.LEAGUE pages; score verification does not establish player or xG/xGA completeness."
   ],
   "xga_sources_reviewed": [
     {
@@ -109,12 +110,12 @@
   "extension_audit_result": "2026-11-01 extension: 4/4 scores checked against official individual match pages; 4 third-party xG pairs recorded; 0 independently verified xGA pairs.",
   "latest_player_detail_file": "data/season_match_detail/J1_League_2026_27_player_appearance_supplement_20261103g.json",
   "latest_player_detail_result": "Added official substitute lists and appearance status for 2026-08-07 Yokohama F. Marinos 3-4 Kashima and Gamba Osaka 4-3 Urawa; 20 substitution events cross-checked. xG/xGA remain null.",
-  "pending_file_count": 42,
+  "pending_file_count": 34,
   "percentages": {
-    "official_evidence_any": 68.25,
-    "individual_page_or_match_record_linked": 38.89,
+    "official_evidence_any": 73.02,
+    "individual_page_or_match_record_linked": 43.65,
     "schedule_or_index_only": 29.37,
-    "pending_official_evidence": 31.75,
+    "pending_official_evidence": 26.98,
     "starting_xi_both_teams": 6.35,
     "both_substitute_benches_structured": 4.76,
     "substitution_events_structured": 6.35,
@@ -131,13 +132,13 @@
     "independently_verified_match_level_xga": 126
   },
   "pending_field_missing_counts": {
-    "official_evidence": 40,
-    "starting_xi": 38,
-    "both_substitute_benches": 42,
-    "substitution_events": 38,
-    "player_appearance_status_table": 40,
-    "match_level_xg_pair": 40,
-    "independently_verified_match_level_xga": 40,
+    "official_evidence": 34,
+    "starting_xi": 32,
+    "both_substitute_benches": 34,
+    "substitution_events": 32,
+    "player_appearance_status_table": 34,
+    "match_level_xg_pair": 34,
+    "independently_verified_match_level_xga": 34,
     "both_benches": 40
   }
 }
