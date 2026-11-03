@@ -77,20 +77,21 @@
     "Superseded intermediate-state note: current match card 34641 has 40 verified player rows, including all 18 official bench players, 11 substitute appearances and 7 unused substitutes.",
     "Latest re-audit confirms the team assignments for match card 34641: all nine Tokyo Verdy substitutes and all nine Nagasaki substitutes are represented; 11 substitutions are recorded separately.",
     "2026-11-03 official player-detail continuation: match card 34524 (Hiroshima 3-0 Chiba, 2026-08-08) added 40 player rows (22 starters + 18 bench players) and 10 substitution events from the official J.League Data Site. Mapping status verified; source URLs retained.",
-    "2026-11-03 mapping correction: official Data Site match_card_id=34575 resolves to Kobe 3-1 Nagasaki, not Cerezo Osaka-Tokyo Verdy. Mapping ID 34575 moved to the Kobe-Nagasaki row. Cerezo Osaka 0-0 Tokyo Verdy remains result-verified from the official J.LEAGUE page https://www.jleague.jp/match/j1/2026/090608/ but its Data Site ID is blank pending direct confirmation; no ID inferred."
+    "2026-11-03 mapping correction: official Data Site match_card_id=34575 resolves to Kobe 3-1 Nagasaki, not Cerezo Osaka-Tokyo Verdy. Mapping ID 34575 moved to the Kobe-Nagasaki row. Cerezo Osaka 0-0 Tokyo Verdy remains result-verified from the official J.LEAGUE page https://www.jleague.jp/match/j1/2026/090608/ but its Data Site ID is blank pending direct confirmation; no ID inferred.",
+    "2026-11-03 official player-detail increment: Kawasaki Frontale 2-2 Kyoto Sanga (2026-08-15; official page https://www.jleague.jp/en/match/j1/2026/081507/) added 22 starters, 9 confirmed incoming substitutes and 9 substitution events. Unused bench lists were not exposed in retrieved source; no names guessed. Two substitutions shown at second-half 0' were retained as HT."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
   "lineup_and_appearance_audit": {
-    "matches_with_both_teams_starting_xi_structured": 77,
+    "matches_with_both_teams_starting_xi_structured": 78,
     "matches_with_both_bench_lists_structured": 72,
-    "matches_with_substitution_events_structured": 77,
+    "matches_with_substitution_events_structured": 78,
     "matches_with_complete_player_appearance_status_table": 76,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-    "standardized_player_rows": 3039,
+    "standardized_player_rows": 3070,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-    "standardized_substitution_rows": 741,
-    "note": "Current re-read of source files: 3,039 player rows across 77 match groups; 77 groups have both starting XIs, 72 have both bench lists, 76 have complete appearance-status classification, and 77 have substitution-event records. Duplicate player/substitution keys and blank player source URLs: zero. One substitution event still has an unresolved minute conflict; no minute was guessed."
+    "standardized_substitution_rows": 750,
+    "note": "Current re-read after adding Kawasaki-Kyoto 2026-08-15: 3,070 player rows across 78 match groups; 78 groups have both starting XIs and substitution-event records; 72 have both bench lists; 76 have complete appearance-status classification. Duplicate player/substitution keys and blank player source URLs: zero. One substitution event elsewhere still has an unresolved minute conflict; no minute guessed."
   },
   "xg_xga_audit": {
     "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
@@ -162,13 +163,21 @@
         "bench": 18,
         "substitution_events": 10,
         "status": "verified"
+      },
+      {
+        "id": "34534",
+        "player_rows": 31,
+        "starters": 22,
+        "bench": "not fully extracted; only 9 incoming substitutes named in official timeline",
+        "substitution_events": 9,
+        "status": "partial"
       }
     ],
-    "current_player_rows": 3039,
-    "current_player_match_groups": 77,
-    "current_substitution_rows": 741,
-    "current_substitution_match_groups": 77,
-    "matches_missing_player_records": 53,
+    "current_player_rows": 3070,
+    "current_player_match_groups": 78,
+    "current_substitution_rows": 750,
+    "current_substitution_match_groups": 78,
+    "matches_missing_player_records": 52,
     "duplicate_player_keys": 0,
     "duplicate_substitution_keys": 0,
     "blank_player_source_urls": 0,
