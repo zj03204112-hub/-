@@ -1,0 +1,35 @@
+{
+  "report_id": "market-source-audit-2026-11-03",
+  "generated_at_beijing": "2026-11-03T10:22:00+08:00",
+  "official_sporttery": {
+    "match_level_handicaps_verified": 0,
+    "opening_to_live_line_snapshots_verified": 0,
+    "status": "NOT_RETRIEVED",
+    "note": "Search of official Sporttery endpoints/pages did not return a verifiable match-level handicap snapshot for the 17 reviewed matches or the 15:00 candidates. Third-party odds were not substituted."
+  },
+  "third_party_market_data": {
+    "seen": true,
+    "used_for_predictions": false,
+    "note": "Search results included third-party Australian/Asian odds summaries; these are not official China Sporttery handicaps and were excluded."
+  },
+  "previous_day_handicaps": {
+    "matches": 17,
+    "verified": 0,
+    "status": "NOT_VERIFIABLE"
+  },
+  "prediction_window_candidates": {
+    "matches": 4,
+    "official_handicaps_verified": 0,
+    "opening_to_live_changes_verified": 0,
+    "status": "PENDING_15_00_REFRESH"
+  },
+  "missing_fields": [
+    "official竞彩让球盘口",
+    "初盘时间戳",
+    "即时盘时间戳",
+    "升降盘记录",
+    "两侧水位变化",
+    "官方赔率原始响应"
+  ],
+  "rule": "No 竞彩让球胜平负 output until the official handicap is verified. When available, derive only mechanically from the immutable first score; never use score2."
+}
