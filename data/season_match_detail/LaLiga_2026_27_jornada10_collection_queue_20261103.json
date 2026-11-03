@@ -108,14 +108,20 @@
       "home": "Atletico",
       "away": "Deportivo",
       "score": "1-0",
-      "official_match_url": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-rc-deportivo-10",
+      "official_match_url": "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-rc-deportivo-10",
       "official_match_url_status": "found",
-      "starting_xi_status": "pending_source_audit",
-      "bench_status": "pending_source_audit",
-      "appearance_status": "pending_source_audit",
-      "substitutions_status": "pending_source_audit",
-      "player_detail_batch": null,
-      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them."
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_both_official_lists_12",
+      "appearance_status": "verified_9_entrants_and_15_unused_bench_players",
+      "substitutions_status": "verified_9_events",
+      "player_detail_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_atletico_deportivo.json",
+      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them.",
+      "official_detail_page_found": true,
+      "detail_status": "complete_source_crosscheck_and_structural_audit_passed",
+      "sources": [
+        "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-rc-deportivo-10",
+        "https://www.skysports.com/football/atletico-madrid-vs-deportivo-la-coruna/teams/563016"
+      ]
     },
     {
       "date": "2026-10-25",
@@ -197,27 +203,28 @@
   },
   "normalized_batches_created": 1,
   "normalized_fixtures": 1,
-  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_valencia_villarreal.json",
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_atletico_deportivo.json",
   "completed_fixture_keys": [
     "2026-10-23|Alaves|Malaga",
     "2026-10-24|Rayo|Elche",
     "2026-10-24|Racing|Espanyol",
-    "2026-10-24|Valencia|Villarreal"
+    "2026-10-24|Valencia|Villarreal",
+    "2026-10-24|Atletico|Deportivo"
   ],
   "jornada10_progress": {
     "fixtures_expected": 10,
-    "fixtures_with_detail_batches": 4,
-    "fixtures_source_audited_complete": 4,
-    "remaining_without_detail_batches": 6,
+    "fixtures_with_detail_batches": 5,
+    "fixtures_source_audited_complete": 5,
+    "remaining_without_detail_batches": 5,
     "completed": [
       "Alaves-Malaga",
       "Rayo-Elche",
       "Racing-Espanyol",
-      "Valencia-Villarreal"
+      "Valencia-Villarreal",
+      "Atletico-Deportivo"
     ],
     "in_progress": [],
     "remaining": [
-      "Atletico-Deportivo",
       "Athletic-Getafe",
       "Celta-Betis",
       "Real Sociedad-Levante",
