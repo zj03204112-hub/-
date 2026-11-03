@@ -159,14 +159,296 @@
       "xga_home": null,
       "xga_away": null,
       "xga_status": "independent match-level xGA definition/source not verified; left null",
-      "appearance_table_status": "starting XI and visible official timeline events recorded; complete substitute bench and per-player minutes not yet complete",
+      "appearance_table_status": "player-level starter/bench/appearance events transcribed from official Data Site; exact seconds and official minutes played not inferred",
       "notes": [
         "Official J.League Data Site match_card_id 34571 confirmed by clicking the 2026-09-06 Okayama-Hiroshima result in the official schedule.",
         "Official Data Site confirms score 3-2, starting XIs, both full substitute benches, substitutions, cards and dismissal.",
         "Match-level xG values from VJStats are third-party only; they are not official league xG.",
         "xGA remains null because no independently defined match-level xGA source was verified."
       ],
-      "official_data_site_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34571"
+      "official_data_site_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34571",
+      "player_appearance_events": [
+        {
+          "team": "冈山",
+          "player": "LENNART MOSER",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "OMORI Hiroshi",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "TATSUTA Yugo",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "SUZUKI Yoshitake",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "MOTOYAMA Haruka",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "FUJITA Ibuki",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 65
+        },
+        {
+          "team": "冈山",
+          "player": "OBERDAN",
+          "status": "started_sent_off",
+          "entry_minute": 0,
+          "exit_minute": 61
+        },
+        {
+          "team": "冈山",
+          "player": "SHIRAI Kosuke",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 88
+        },
+        {
+          "team": "冈山",
+          "player": "KAWANO Kota",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 58
+        },
+        {
+          "team": "冈山",
+          "player": "LUCAO",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 65
+        },
+        {
+          "team": "冈山",
+          "player": "ESAKA Ataru",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 65
+        },
+        {
+          "team": "广岛",
+          "player": "OUCHI Issei",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "NAKANO Shuto",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "ARAKI Hayato",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 79
+        },
+        {
+          "team": "广岛",
+          "player": "SASAKI Sho",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "ARAI Naoto",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 46
+        },
+        {
+          "team": "广岛",
+          "player": "KAWABE Hayao",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "NAKAJIMA Yotaro",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 79
+        },
+        {
+          "team": "广岛",
+          "player": "HIGASHI Shunki",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 86
+        },
+        {
+          "team": "广岛",
+          "player": "KATO Mutsuki",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 58
+        },
+        {
+          "team": "广岛",
+          "player": "SUZUKI Akito",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "SEBASTIEN HALLER",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "KAWANAMI Goro",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "TAGAMI Daichi",
+          "status": "substitute_appeared",
+          "entry_minute": 88,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "MORI Soichiro",
+          "status": "substitute_appeared",
+          "entry_minute": "90+8",
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "YAMANE Towa",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "BROWN Noah Kenshin",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "MIYAMOTO Eiji",
+          "status": "substitute_appeared",
+          "entry_minute": 65,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "KAMIYA Yuta",
+          "status": "substitute_appeared",
+          "entry_minute": 65,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "NA Sangho",
+          "status": "substitute_appeared",
+          "entry_minute": 65,
+          "exit_minute": null
+        },
+        {
+          "team": "冈山",
+          "player": "LEO GAUCHO",
+          "status": "substitute_appeared",
+          "entry_minute": 58,
+          "exit_minute": "90+8"
+        },
+        {
+          "team": "广岛",
+          "player": "OSAKO Keisuke",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "KIM Ju Seong",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "OTA Hiroto",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "KAWAMURA Takumu",
+          "status": "substitute_appeared",
+          "entry_minute": 58,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "MATSUMOTO Taishi",
+          "status": "substitute_appeared",
+          "entry_minute": 79,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "SUGA Daiki",
+          "status": "substitute_appeared",
+          "entry_minute": 86,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "KOSHIMICHI Sota",
+          "status": "substitute_appeared",
+          "entry_minute": 79,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "NOGUCHI Rento",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "广岛",
+          "player": "AYUKAWA Shun",
+          "status": "substitute_appeared",
+          "entry_minute": 46,
+          "exit_minute": null
+        }
+      ]
     },
     {
       "date": "2026-09-06",
@@ -213,7 +495,6 @@
         "EDUARDO",
         "YONEKURA Koki",
         "TSUBAKI Naoki",
-        "SUMI Kohshiro",
         "GOYA Hiroto",
         "NAKATSUMI Naru",
         "ERISON",
@@ -306,7 +587,7 @@
       "xga_home": null,
       "xga_away": null,
       "xga_status": "independent match-level xGA definition/source not verified; left null",
-      "appearance_table_status": "starting XI, substitute list and visible official timeline events recorded; some substitutes may be unused; per-player appearance minutes not yet fully generated",
+      "appearance_table_status": "player-level starter/bench/appearance events transcribed from official J.League lineup page; exact seconds and official minutes played not inferred",
       "notes": [
         "Official J.League match page confirms 2-0, starting XIs, substitute list and timeline; line-up page confirms substitute players who entered.",
         "Substitutes listed but not in the substitution timeline are treated as unused substitutes, not actual appearances.",
@@ -327,7 +608,296 @@
           "away_xg": 1.52
         }
       ],
-      "official_data_site_url": null
+      "official_data_site_url": null,
+      "player_appearance_events": [
+        {
+          "team": "千叶",
+          "player": "JOSE SUAREZ",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "KAWANO Takashi",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "ISHIO Rikuto",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 78
+        },
+        {
+          "team": "千叶",
+          "player": "DANIEL HALL",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "KOBAYASHI Yusuke",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 78
+        },
+        {
+          "team": "千叶",
+          "player": "TSUKUI Takumi",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 84
+        },
+        {
+          "team": "千叶",
+          "player": "SUGIYAMA Naohiro",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "MATHEUS INDIO",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 84
+        },
+        {
+          "team": "千叶",
+          "player": "HIDAKA Masaru",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "ISHIKAWA Daichi",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "YAMURA Ken",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 61
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "ICHIMORI Jun",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "NAKATANI Shinnosuke",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "KISHIMOTO Takeru",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "NAKANO Shinya",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 59
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "SASAKI Shogo",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 59
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "ABE Shuto",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "SUZUKI Tokuma",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 59
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "ELI ADAMS",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": "90+2"
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "MESHINO Ryotaro",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": 84
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "ISSAM JEBALI",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "DENIZ HUMMET",
+          "status": "started",
+          "entry_minute": 0,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "SUZUKI Ryota",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "KUBONIWA Ryota",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "IIDA Takahiro",
+          "status": "substitute_appeared",
+          "entry_minute": 78,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "TAGUCHI Taishi",
+          "status": "substitute_appeared",
+          "entry_minute": 78,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "EDUARDO",
+          "status": "substitute_appeared",
+          "entry_minute": 84,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "YONEKURA Koki",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "TSUBAKI Naoki",
+          "status": "substitute_appeared",
+          "entry_minute": 84,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "GOYA Hiroto",
+          "status": "substitute_appeared",
+          "entry_minute": 61,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "NAKATSUMI Naru",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "ERISON",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "千叶",
+          "player": "OKAMOTO Arata",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "ARAKI Rui",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "FUKUOKA Shota",
+          "status": "substitute_appeared",
+          "entry_minute": 59,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "IKEGAYA Ginjiro",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "HATSUSE Ryo",
+          "status": "substitute_appeared",
+          "entry_minute": 59,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "KURATA Shu",
+          "status": "unused_substitute",
+          "entry_minute": null,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "TONO Taiki",
+          "status": "substitute_appeared",
+          "entry_minute": 84,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "SUMI Kohshiro",
+          "status": "substitute_appeared",
+          "entry_minute": 59,
+          "exit_minute": null
+        },
+        {
+          "team": "大阪钢巴",
+          "player": "OKAMOTO Arata",
+          "status": "substitute_appeared",
+          "entry_minute": "90+2",
+          "exit_minute": null
+        }
+      ]
     }
   ],
   "summary": {
@@ -339,7 +909,8 @@
     "substitutions_and_discipline": "reconciled against official J.League pages; Okayama-Hiroshima events additionally cross-checked to Data Site",
     "canonical_match_level_xg": "Okayama-Hiroshima third-party candidate 1.20/2.55; Chiba-Gamba withheld due conflicting sources",
     "independently_verified_match_level_xga": "0/2",
-    "caveat": "Full player appearance-minute tables and season-wide deduplicated audit remain incomplete."
+    "caveat": "Full player appearance-minute tables and season-wide deduplicated audit remain incomplete.",
+    "player_appearance_events": "both matches now include player-level started/substitute_appeared/unused_substitute records; minute fields are event times, not claimed exact minutes played"
   },
   "integrity": [
     "Official J.League URLs and line-up pages are the primary source for score, starting XI and event timeline.",
