@@ -7,7 +7,7 @@
   "fixtures_with_normalized_player_detail": 20,
   "player_csv_rows": 910,
   "substitution_csv_rows": 191,
-  "matches_with_both_starting_xis_entered": 11,
+  "matches_with_both_starting_xis_entered": 20,
   "matches_with_partial_unresolved_identity": 0,
   "fully_complete_matches": 20,
   "fixtures_without_normalized_player_detail": 89,
@@ -22,13 +22,20 @@
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103h.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103i.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json",
-    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_rayo_elche.json"
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_alaves_malaga.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_rayo_elche.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_racing_espanol.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_valencia_villarreal.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_atletico_deportivo.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_athletic_getafe.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_celta_betis.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_real_sociedad_levante.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_barcelona_real_madrid.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_sevilla_osasuna.json"
   ],
   "gaps": [
-    "98 other LaLiga 2026-27 fixtures remain without normalized player-detail batches.",
-    "Jornada 10: Rayo-Elche is the first match with a new independent detail batch and normalized CSV rows; the other 9 Jornada 10 matches still need player-detail collection.",
-    "Jornada 11: all 10 fixtures passed row-level source, lineup/bench, appearance-status, substitution in/out, minute, uniqueness and CSV-vs-batch checks.",
-    "Jornada 10: all 10 fixtures have source-audited detail batches; final global integrity recheck is underway."
+    "89 of 109 LaLiga 2026-27 result fixtures remain without normalized player-detail batches; the requested Jornada 11 and Jornada 10 rounds are complete.",
+    "Global duplicate audit passed: 0 duplicate player rows, 0 duplicate substitution rows, 20 unique detail fixture keys, and all 20 detail fixture keys map to a result fixture after normalizing source team aliases."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -365,5 +372,38 @@
       "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11",
       "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
     ]
-  }
+  },
+  "global_integrity_audit": {
+    "status": "passed",
+    "result_fixture_rows": 109,
+    "unique_result_fixture_keys": 109,
+    "detail_fixture_keys": 20,
+    "detail_fixture_keys_unique": 20,
+    "detail_keys_missing_from_results": 0,
+    "player_rows": 910,
+    "unique_player_rows": 910,
+    "duplicate_player_rows": 0,
+    "substitution_rows": 191,
+    "unique_substitution_rows": 191,
+    "duplicate_substitution_rows": 0,
+    "starting_xi_rows": 440,
+    "bench_appeared_rows": 191,
+    "bench_not_appeared_rows": 279,
+    "matches_with_event_batch_csv_mismatch": 0,
+    "jornada11": {
+      "fixtures": 10,
+      "player_rows": 453,
+      "substitution_rows": 95,
+      "unique_fixture_keys": 10,
+      "complete": true
+    },
+    "jornada10": {
+      "fixtures": 10,
+      "player_rows": 457,
+      "substitution_rows": 96,
+      "unique_fixture_keys": 10,
+      "complete": true
+    }
+  },
+  "jornada10_source_certification_status": "complete"
 }
