@@ -1,0 +1,155 @@
+{
+  "manifest_version": "2026-11-03-v1",
+  "generated_at_beijing": "2026-11-03T10:22:00+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-03",
+  "base_ref": "automation/daily-football-2026-11-02",
+  "archived_file_count": 19,
+  "files": [
+    {
+      "path": "reviews/2026-11-03/previous-day-review.json",
+      "blob_sha": "8ddcdc549f648ffd51ec4aa18953ed59daaeae11",
+      "bytes": 24722,
+      "verified": true
+    },
+    {
+      "path": "reviews/2026-11-03/current-day-completed-results.json",
+      "blob_sha": "ca017db667352704ca158fd1089f3209957db8ca",
+      "bytes": 11965,
+      "verified": true
+    },
+    {
+      "path": "reviews/2026-11-03/result-scope-correction.json",
+      "blob_sha": "3b4f62a35ec58c03aab369b25c2db4901cc915f5",
+      "bytes": 837,
+      "verified": true
+    },
+    {
+      "path": "reviews/2026-11-03/prediction-snapshot-search-audit.json",
+      "blob_sha": "30fec26176e6ee32115962255d583477a943a391",
+      "bytes": 761,
+      "verified": true
+    },
+    {
+      "path": "reviews/2026-11-03/market-source-audit.json",
+      "blob_sha": "58c9d6c4bb7bf07f1751b0855a355d914efdf6a2",
+      "bytes": 1272,
+      "verified": true
+    },
+    {
+      "path": "reviews/2026-11-03/source-quality-audit.json",
+      "blob_sha": "593470c7d6af5bfa23d518a75744d2b4d5cde775",
+      "bytes": 1884,
+      "verified": true
+    },
+    {
+      "path": "fixtures/2026-11-03/schedule.json",
+      "blob_sha": "70bf78ae19c451a031abdc4d4d74f0cc13ec2d07",
+      "bytes": 14098,
+      "verified": true
+    },
+    {
+      "path": "results/domestic-league/2026-11-02/beijing-date-results.json",
+      "blob_sha": "0cb8933acda6f19450ffe73ac7f44fb1f962b3fe",
+      "bytes": 11428,
+      "verified": true
+    },
+    {
+      "path": "results/other-domestic-leagues/2026-11-02/beijing-date-results.json",
+      "blob_sha": "b1c210ddfd87ce0d2de921f1a5b8626acfa0f0dc",
+      "bytes": 9439,
+      "verified": true
+    },
+    {
+      "path": "results/continental-club/2026-11-02/acl-elite-results.json",
+      "blob_sha": "18a88f715e6dcaecc6a88bbe7e9545cac7dd99c8",
+      "bytes": 639,
+      "verified": true
+    },
+    {
+      "path": "results/domestic-league/2026-11-03/beijing-date-results.json",
+      "blob_sha": "859ff533d950a9fa54c964f3efe1a108e791ba33",
+      "bytes": 2438,
+      "verified": true
+    },
+    {
+      "path": "results/other-domestic-leagues/2026-11-03/beijing-date-results.json",
+      "blob_sha": "91b60677d18747bada48023305a2d6ec10635350",
+      "bytes": 560,
+      "verified": true
+    },
+    {
+      "path": "results/continental-club/2026-11-03/acl-elite-results.json",
+      "blob_sha": "7d865c017420cc575144658b5ba577ca2c9ec694",
+      "bytes": 2838,
+      "verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-03/match_xg_snapshot-2026-11-03-1002-cumulative.csv",
+      "blob_sha": "0834afac6d96dc7a870674bd5fe05a6095146254",
+      "bytes": 35768,
+      "verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-03/team_weekly_xg_snapshot-2026-11-03-1002-cumulative.csv",
+      "blob_sha": "2a353b33573d36dda5e7af100483814ad9ae584a",
+      "bytes": 29172,
+      "verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-03/team_weekly_coverage_snapshot-2026-11-03-1002-cumulative.csv",
+      "blob_sha": "34683f57f75603fdf46610bbf4ef42fab7751647",
+      "bytes": 19914,
+      "verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-03/xg_coverage_audit-2026-11-03-1002.json",
+      "blob_sha": "6735d031eafc9ff166831ce0c6d3dff5490cde84",
+      "bytes": 2180,
+      "verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-03/xg_source_discrepancy_audit-2026-11-03-1002.json",
+      "blob_sha": "239d694a0353cb61275cef1ff2d59e47364bc9a9",
+      "bytes": 591,
+      "verified": true
+    },
+    {
+      "path": "reviews/2026-11-03/archive-readback-verification.json",
+      "blob_sha": "da6f7383d19ccc97355d31353ca556ded6b3430f",
+      "bytes": 4483,
+      "verified": true
+    }
+  ],
+  "summary": {
+    "previous_day_beijing_2026_11_02": {
+      "confirmed_matches": 17,
+      "matched_immutable_predictions": 0,
+      "official_sporttery_handicaps_verified": 0
+    },
+    "current_day_beijing_2026_11_03": {
+      "completed_before_1000": 11,
+      "remaining_fixtures": 6
+    },
+    "iso_week_2026_W45": {
+      "matches": 28,
+      "teams": 56,
+      "provider_xg_matches": 21,
+      "missing_xg_matches": 7,
+      "coverage_pct": 75,
+      "full_week_coverage": false
+    },
+    "prediction_window_at_1500": {
+      "eligible_candidates": 4
+    }
+  },
+  "integrity": {
+    "xgd_mismatches": 0,
+    "duplicate_match_team_provider_keys": 0,
+    "readback_verified": true
+  },
+  "database_connected": false,
+  "v51_modified": false,
+  "frozen_validation_sample_modified": false,
+  "model_rules_changed": false
+}
