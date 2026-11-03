@@ -3,7 +3,7 @@
   "league": "LaLiga",
   "season": "2026-27",
   "matchday": 9,
-  "status": "jornada9_all_10_fixture_batches_source_audited_pending_final_global_integrity_recheck",
+  "status": "jornada9_all_10_fixtures_source_audited_and_global_integrity_passed",
   "official_results_source": "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-9",
   "fixture_keys": {
     "expected": 10,
@@ -505,7 +505,23 @@
       "status": "complete_source_crosscheck_and_structural_audit_passed"
     }
   ],
-  "final_integrity": null,
+  "final_integrity": {
+    "expected_fixtures": 10,
+    "verified_fixtures": 10,
+    "unique_fixture_keys": 10,
+    "duplicate_fixture_keys": 0,
+    "player_rows": 457,
+    "duplicate_player_rows": 0,
+    "substitution_rows": 99,
+    "duplicate_substitution_rows": 0,
+    "starting_xi_rows": 220,
+    "bench_entries": 237,
+    "bench_appeared": 99,
+    "bench_not_appeared": 138,
+    "event_batch_csv_mismatches": 0,
+    "detail_keys_missing_from_results": 0,
+    "status": "passed"
+  },
   "rules": [
     "Audit one fixture at a time",
     "Each batch must match the official result key",
