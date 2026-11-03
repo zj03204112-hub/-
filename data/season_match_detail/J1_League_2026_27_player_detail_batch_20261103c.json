@@ -160,15 +160,15 @@
       "home_starting_xi": [
         "JOSE SUAREZ",
         "KAWANO Takashi",
+        "ISHIO Rikuto",
         "DANIEL HALL",
-        "ISHIKAWA Daichi",
         "KOBAYASHI Yusuke",
         "TSUKUI Takumi",
         "SUGIYAMA Naohiro",
         "MATHEUS INDIO",
         "HIDAKA Masaru",
-        "YAMURA Ken",
-        "H. GOYA"
+        "ISHIKAWA Daichi",
+        "YAMURA Ken"
       ],
       "away_starting_xi": [
         "ICHIMORI Jun",
@@ -203,8 +203,7 @@
         "IKEGAYA Ginjiro",
         "HATSUSE Ryo",
         "KURATA Shu",
-        "TONO Taiki",
-        "OKAMOTO Arata"
+        "TONO Taiki"
       ],
       "substitutions_visible_in_official_timeline": [
         {
@@ -266,7 +265,7 @@
       "xg_home": null,
       "xg_away": null,
       "xg_source_url": null,
-      "xg_source_status": "no free, traceable match-level xG value verified in this batch",
+      "xg_source_status": "conflicting third-party match-level estimates found: VJStats 1.81/1.58; Ludistat 1.57/1.52. Canonical xG left null pending source/method reconciliation.",
       "xga_home": null,
       "xga_away": null,
       "xga_status": "independent match-level xGA definition/source not verified; left null",
@@ -274,17 +273,32 @@
       "notes": [
         "Official page confirms final score 2-0, goals by Yamura Ken (1') and Tsukui Takumi (52').",
         "Lineup page lists starting players and substitute bench. Substitutes shown as appearing in timeline are not counted as unused bench players.",
-        "No match-card ID or xG values guessed."
+        "No match-card ID or xG values guessed.",
+        "Correction: starting XI excludes Hiroto Goya and Naoki Tsubaki, who entered as substitutes; 11 starters per team are listed."
+      ],
+      "xg_candidates": [
+        {
+          "source": "VJStats",
+          "url": "https://www.vjstats.com/matches/6813/jef-united-ichihara-chiba-vs-gamba-osaka",
+          "home_xg": 1.81,
+          "away_xg": 1.58
+        },
+        {
+          "source": "Ludistat",
+          "url": "https://ludistat.com/games/jef-united-chiba-vs-gamba-osaka-2026-09-06",
+          "home_xg": 1.57,
+          "away_xg": 1.52
+        }
       ]
     }
   ],
   "summary": {
     "matches_added": 2,
     "official_score_check": "2/2",
-    "starting_xi_complete": "2/2 (22 starters each; 44 starter entries)",
-    "full_substitute_bench_complete": "0/2 fully complete in the structured record (Chiba-Gamba bench list extracted but still requires exact reconciliation; Okayama-Hiroshima bench list not yet extracted)",
+    "starting_xi_complete": "2/2 matches (44 starter entries)",
+    "full_substitute_bench_complete": "Chiba bench list transcribed; Okayama-Hiroshima bench list remains unextracted",
     "data_site_match_card_id_resolved": "0/2",
-    "match_level_xg_available": "1/2, third-party VJStats only for Okayama-Hiroshima",
+    "match_level_xg_available": "1/2 canonical values retained; second match has conflicting third-party estimates and remains null pending reconciliation",
     "independently_verified_match_level_xga": "0/2",
     "caution": "Official J.League match IDs in the URL path (090604/090606) are not Data Site match_card_id values; those are kept unresolved."
   },
