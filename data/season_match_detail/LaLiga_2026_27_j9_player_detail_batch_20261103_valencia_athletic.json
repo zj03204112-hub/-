@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 9,
+  "match_id": "laliga-2026-27-2026-10-17-valencia-athletic",
+  "date": "2026-10-17",
+  "home": "Valencia",
+  "away": "Athletic",
+  "score": "0-0",
+  "halftime_score": "0-0",
+  "official_match_url": "https://www.laliga.com/en-FR/match/temporada-2026-2027-laliga-ea-sports-valencia-cf-athletic-club-9",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-FR/match/temporada-2026-2027-laliga-ea-sports-valencia-cf-athletic-club-9",
+    "official_valencia_cf": "https://www.valenciacf.com/cronica-empate-entre-el-valencia-cf-y-el-athletic-club-0-0",
+    "secondary_lineups": "https://www.skysports.com/football/valencia-vs-athletic-club/teams/563012"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Stole Dimitrievski",
+      "Pablo Maffeo",
+      "César Tárrega",
+      "Justin de Haas",
+      "José Gayà",
+      "Pepelu",
+      "Guido Rodríguez",
+      "Dani Raba",
+      "Javi Guerra",
+      "Arnaut Danjuma",
+      "Hugo Duro"
+    ],
+    "home_bench": [
+      "Kayne van Oevelen",
+      "Mouctar Diakhaby",
+      "Harvey Elliott",
+      "Luis Rioja",
+      "Aliou Dieng",
+      "Jesús Vázquez",
+      "Arnau Martínez",
+      "Filip Ugrinic",
+      "David Otorbi",
+      "Aaron Mayol",
+      "Aimar Blázquez",
+      "Ryunosuke Sato"
+    ],
+    "away_starting_xi": [
+      "Unai Simón",
+      "Hugo Rincón",
+      "Aitor Paredes",
+      "Aymeric Laporte",
+      "Johaneko Louis-Jean",
+      "Beñat Gerenabarrena",
+      "Íñigo Ruiz de Galarreta",
+      "Alex Berenguer",
+      "Peio Canales",
+      "Robert Navarro",
+      "Iñaki Williams"
+    ],
+    "away_bench": [
+      "Álex Padilla",
+      "Dani Vivian",
+      "Yeray Álvarez",
+      "Beñat Prados",
+      "Gorka Guruzeta",
+      "Jesús Areso",
+      "Yuri Berchiche",
+      "Mikel Jauregizar",
+      "Alejandro Rego",
+      "Maroan Sannadi",
+      "Nico Serrano",
+      "Christian Imga"
+    ],
+    "substitution_events": [
+      {
+        "team": "Valencia",
+        "player_in": "Luis Rioja",
+        "player_out": "Dani Raba",
+        "minute": "54"
+      },
+      {
+        "team": "Valencia",
+        "player_in": "David Otorbi",
+        "player_out": "Hugo Duro",
+        "minute": "54"
+      },
+      {
+        "team": "Valencia",
+        "player_in": "Harvey Elliott",
+        "player_out": "Justin de Haas",
+        "minute": "74"
+      },
+      {
+        "team": "Valencia",
+        "player_in": "Jesús Vázquez",
+        "player_out": "José Gayà",
+        "minute": "85"
+      },
+      {
+        "team": "Valencia",
+        "player_in": "Filip Ugrinic",
+        "player_out": "Guido Rodríguez",
+        "minute": "86"
+      },
+      {
+        "team": "Athletic",
+        "player_in": "Mikel Jauregizar",
+        "player_out": "Beñat Gerenabarrena",
+        "minute": "45"
+      },
+      {
+        "team": "Athletic",
+        "player_in": "Jesús Areso",
+        "player_out": "Johaneko Louis-Jean",
+        "minute": "63"
+      },
+      {
+        "team": "Athletic",
+        "player_in": "Gorka Guruzeta",
+        "player_out": "Iñaki Williams",
+        "minute": "63"
+      },
+      {
+        "team": "Athletic",
+        "player_in": "Alejandro Rego",
+        "player_out": "Íñigo Ruiz de Galarreta",
+        "minute": "63"
+      },
+      {
+        "team": "Athletic",
+        "player_in": "Maroan Sannadi",
+        "player_out": "Gorka Guruzeta",
+        "minute": "68"
+      }
+    ],
+    "notes": [
+      "Both starting XIs and both 12-player bench lists cross-checked against the official Valencia CF match report, LaLiga match page and Sky Sports lineup source.",
+      "Ten substitutions are recorded. The halftime change Mikel Jauregizar is stored at 45' from detailed commentary; summary-card display may show 46'.",
+      "Gorka Guruzeta entered at 63' and was replaced at 68'; both events and his entry/exit are retained.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
