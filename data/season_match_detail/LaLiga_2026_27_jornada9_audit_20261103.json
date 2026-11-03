@@ -13,9 +13,10 @@
       "2026-10-16|Deportivo|Levante",
       "2026-10-17|Espanyol|Atletico",
       "2026-10-17|Villarreal|Elche",
-      "2026-10-17|Betis|Barcelona"
+      "2026-10-17|Betis|Barcelona",
+      "2026-10-17|Valencia|Athletic"
     ],
-    "pending_fixture_count": 6
+    "pending_fixture_count": 5
   },
   "matches": [
     {
@@ -205,6 +206,54 @@
           ],
           "stored": "45",
           "reason": "Detailed official commentary gives 45'; summary cards display 46'."
+        }
+      ],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-17",
+      "home": "Valencia",
+      "away": "Athletic",
+      "score": "0-0",
+      "halftime_score": "0-0",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-FR/match/temporada-2026-2027-laliga-ea-sports-valencia-cf-athletic-club-9",
+        "https://www.valenciacf.com/cronica-empate-entre-el-valencia-cf-y-el-athletic-club-0-0",
+        "https://www.skysports.com/football/valencia-vs-athletic-club/teams/563012"
+      ],
+      "corrections": [
+        {
+          "field": "halftime substitution minute",
+          "player": "Mikel Jauregizar",
+          "stored": "45",
+          "reason": "Official detailed commentary and Valencia CF match report show the event at 45'; some summary cards show 46'."
         }
       ],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
