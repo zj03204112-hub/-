@@ -12,9 +12,10 @@
       "2026-10-23|Alaves|Malaga",
       "2026-10-24|Rayo|Elche",
       "2026-10-24|Racing|Espanyol",
-      "2026-10-24|Valencia|Villarreal"
+      "2026-10-24|Valencia|Villarreal",
+      "2026-10-24|Atletico|Deportivo"
     ],
-    "pending_fixture_count": 6
+    "pending_fixture_count": 5
   },
   "matches": [
     {
@@ -186,6 +187,46 @@
         "https://www.laliga.com/en-NL/match/temporada-2026-2027-laliga-ea-sports-valencia-cf-villarreal-cf-10",
         "https://www.valenciacf.com/en/17928660918647690",
         "https://www.skysports.com/football/valencia-vs-villarreal/teams/563023"
+      ],
+      "corrections": [],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-24",
+      "home": "Atletico",
+      "away": "Deportivo",
+      "score": "1-0",
+      "halftime_score": "0-0",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 9,
+        "normalized": 9,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 9,
+        "not_appeared": 15,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 9,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-rc-deportivo-10",
+        "https://www.skysports.com/football/atletico-madrid-vs-deportivo-la-coruna/teams/563016"
       ],
       "corrections": [],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
