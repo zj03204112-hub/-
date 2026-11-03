@@ -1,0 +1,155 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 8,
+  "match_id": "laliga-2026-27-2026-10-11-real-sociedad-deportivo",
+  "date": "2026-10-11",
+  "home": "Real Sociedad",
+  "away": "Deportivo",
+  "score": "3-2",
+  "halftime_score": "3-0",
+  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-rc-deportivo-8",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-rc-deportivo-8",
+    "secondary_lineups": "https://www.skysports.com/football/real-sociedad-vs-deportivo-la-coruna/teams/563003",
+    "secondary_match_report": "https://www.footballwebpages.co.uk/match/2026-2027/spanish-la-liga/real-sociedad/deportivo-de-a-coruna/575375"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Álex Remiro",
+      "Pablo Marín",
+      "Jon Martín",
+      "Mamadou Sarr",
+      "Sergio Gómez",
+      "Gonçalo Guedes",
+      "Carlos Soler",
+      "Yangel Herrera",
+      "Ander Barrenetxea",
+      "Luka Sučić",
+      "Arsen Zakharyan"
+    ],
+    "home_bench": [
+      "Gorka Carrera",
+      "Job Ochieng",
+      "Luken Beitia",
+      "Jon Gorrotxategi",
+      "Unai Marrero",
+      "Héctor Fort",
+      "Beñat Turrientes",
+      "Aihen Muñoz",
+      "Jon Pacheco",
+      "Takefusa Kubo",
+      "Mikel Oyarzabal",
+      "Igor Zubeldia"
+    ],
+    "away_starting_xi": [
+      "Leo Román",
+      "Ximo Navarro",
+      "José María Giménez",
+      "Bright Ede",
+      "Giacomo Quagliata",
+      "Diego Villares",
+      "Mario Soriano",
+      "David Mella",
+      "Luismi Cruz",
+      "Yeremay Hernández",
+      "Bil Nsongo"
+    ],
+    "away_bench": [
+      "Álvaro Ferllo",
+      "Adrià Altimira",
+      "Lucas Noubi",
+      "Riki Rodríguez",
+      "Miguel Loureiro",
+      "Lorenzo Amatucci",
+      "Angeliño",
+      "Jonathan Asp Jensen",
+      "Adama Traoré",
+      "Kevin Sánchez",
+      "Noé Carrillo",
+      "Martín Ochoa"
+    ],
+    "substitution_events": [
+      {
+        "team": "Deportivo",
+        "player_in": "Riki Rodríguez",
+        "player_out": "David Mella",
+        "minute": "46"
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Adrià Altimira",
+        "player_out": "Ximo Navarro",
+        "minute": "57"
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Lorenzo Amatucci",
+        "player_out": "Diego Villares",
+        "minute": "57"
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Adama Traoré",
+        "player_out": "Luismi Cruz",
+        "minute": "57"
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Job Ochieng",
+        "player_out": "Gonçalo Guedes",
+        "minute": "56"
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Mikel Oyarzabal",
+        "player_out": "Arsen Zakharyan",
+        "minute": "56"
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Igor Zubeldia",
+        "player_out": "Carlos Soler",
+        "minute": "69"
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Jonathan Asp Jensen",
+        "player_out": "Giacomo Quagliata",
+        "minute": "79"
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Héctor Fort",
+        "player_out": "Ander Barrenetxea",
+        "minute": "88"
+      }
+    ],
+    "disciplinary_events": [
+      {
+        "team": "Real Sociedad",
+        "player": "Pablo Marín",
+        "type": "red_card",
+        "minute": "66"
+      },
+      {
+        "team": "Deportivo",
+        "player": "Lorenzo Amatucci",
+        "type": "red_card",
+        "minute": "90"
+      }
+    ],
+    "notes": [
+      "Both starting XIs and both 12-player bench lists cross-checked against official LaLiga and Sky Sports lineup sources.",
+      "Nine substitutions verified; Riki Rodríguez's halftime change is stored at 46' because the official event card displays 46' and the secondary report also shows 46'.",
+      "Pablo Marín's 66' and Lorenzo Amatucci's 90' red cards are separate disciplinary events.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
