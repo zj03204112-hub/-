@@ -70,6 +70,14 @@
       "after": "Bryan Zaragoza",
       "reason": "Free lineup source identifies the shirt-number-15 starter as Bryan Zaragoza; official event timeline records Javi Puado replacing him at 77'.",
       "source": "https://www.tycsports.com/espana/la-liga/espana-laliga-2026-2027-villarreal-vs-espanyol-fecha-11-id769054.html"
+    },
+    {
+      "match": "Racing-Real Madrid",
+      "field": "official displayed substitution minute",
+      "before": "60",
+      "after": "61",
+      "reason": "Official LaLiga event timeline card displays 61'; narrative commentary records 60'. Dataset convention uses the event-card display minute.",
+      "source": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11"
     }
   ],
   "pending_checks": [
@@ -287,7 +295,7 @@
         "events_batch": 8,
         "events_csv": 8,
         "issues": [
-          "Cross-check all minutes against official event timeline still pending."
+          "Íñigo Sainz-Maza event normalized to 61' per official timeline card; narrative commentary says 60'. Continue final verification of full bench lists and event minutes."
         ]
       }
     ],
