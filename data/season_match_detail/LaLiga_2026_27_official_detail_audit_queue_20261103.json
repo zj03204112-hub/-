@@ -25,7 +25,7 @@
   "official_results_page": "https://www.laliga.com/en-GB/laliga-easports/results",
   "official_match_detail_pages_found": 10,
   "detailed_player_and_substitution_files_exist": false,
-  "summary": "Initial audit queue created. Current season result CSV has 109 unique fixtures and scores. Official LaLiga match pages were located for all 10 fixtures in matchday 11; those pages expose starting lineups, substitutes and substitution timeline. Player-level records have not yet been normalized into repository CSVs. Do not count source-page discovery as completed player-data coverage.",
+  "summary": "Initial audit queue updated with one partially extracted matchday 11 official detail batch. One match has verified home starting XI (11), home bench (12), and 10 substitution events; away starting XI and full bench remain unresolved. Other matches remain pending normalization. Do not count partial source extraction as full player-detail coverage.",
   "fields_to_verify": [
     "source-backed names for 11 starters per team",
     "full official bench lists",
@@ -1794,13 +1794,13 @@
       "score": "6-1",
       "halftime_score": "4-0",
       "result_source": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
-      "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11",
+      "official_match_url": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11",
       "official_detail_page_found": true,
-      "starting_xi_status": "pending_normalization",
-      "bench_status": "pending_normalization",
-      "appearance_status": "pending_normalization",
-      "substitutions_status": "pending_normalization",
-      "notes": "Missing detailed fields must remain blank until verified from a free source."
+      "starting_xi_status": "partial_verified_home_11_away_pending",
+      "bench_status": "partial_verified_home_12_away_pending",
+      "appearance_status": "partial_home_derived_from_events_away_pending",
+      "substitutions_status": "10_events_verified_both_teams",
+      "notes": "Official page batch saved at data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json. Match remains incomplete because away XI and full away bench were not exposed in parsed official lineup section; do not count as complete."
     },
     {
       "match_id": "laliga-2026-27-2026-11-01-getafe-sevilla",
