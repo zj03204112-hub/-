@@ -3,7 +3,7 @@
   "league": "LaLiga",
   "season": "2026-27",
   "matchday": 11,
-  "status": "jornada11_source_verified_and_integrity_checks_passed",
+  "status": "jornada11_row_level_csv_crosscheck_passed_official_source_final_review_pending",
   "scope": [
     "starting XI both teams",
     "official substitutes",
@@ -742,8 +742,8 @@
       "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11",
       "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
     ],
-    "status": "complete",
-    "certification_note": "All 10 Jornada 11 fixtures passed source-level lineup/bench review, appearance-status reconciliation, substitution event and detailed-minute checks, unique fixture key validation, and batch-to-CSV alignment. No unresolved identity or event fields remain.",
+    "status": "not_certified",
+    "certification_note": "Row-level CSV cross-check passed for all 10 fixtures: 453 player rows, 220 starters, 233 bench rows and 95 substitution events; zero appearance-status, entry-minute or starter-exit-minute mismatches. Final certification still requires a final full official-source checklist. Season-wide duplicate keys in the Jornada 10 Barcelona-Real Madrid fixture remain a separate repair item.",
     "duplicate_fixture_keys": 0,
     "source_certification": "complete"
   },
