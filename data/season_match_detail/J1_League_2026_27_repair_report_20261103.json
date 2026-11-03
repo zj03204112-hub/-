@@ -51,7 +51,8 @@
     "Latest verified counts: 2,640 player rows across 67 match groups, 645 substitution events, 67 matches with structured starting XIs, 61 with both bench lists and appearance-status tables, 63 of 130 fixtures still lacking player records. Duplicate player/substitution keys: zero; blank source URLs: zero.",
     "Latest source-backed re-audit (2026-11-03): match cards 34589, 34590, 34591, 34592, 34593 and 34641 verified. Player rows: 39, 40, 40, 40, 40, 40; substitution events: 8, 10, 8, 10, 10, 11. Two red-card exit times corrected (34591: Takahiro Ko 68'; 34592: Lucao 57'); dismissals are not substitution events.",
     "Current standardized files re-read after correction: 2,999 player rows across 76 match groups; 731 substitution events across 76 groups; zero duplicate player keys, zero duplicate substitution keys, zero blank player names/source URLs. 54 of 130 result fixtures still lack player-detail rows; full-season player coverage is not complete.",
-    "2026-11-03 official player-detail continuation: match card 34524 (Hiroshima 3-0 Chiba, 2026-08-08) added 40 player rows and 10 substitution events, source URL retained, then mapping row verified."
+    "2026-11-03 official player-detail continuation: match card 34524 (Hiroshima 3-0 Chiba, 2026-08-08) added 40 player rows and 10 substitution events, source URL retained, then mapping row verified.",
+    "2026-11-03 match-ID correction: official Data Site card 34575 is Kobe 3-1 Nagasaki. It was previously assigned to Cerezo Osaka-Tokyo Verdy. Corrected the Kobe-Nagasaki mapping; cleared the unverified provider ID for Cerezo Osaka-Tokyo Verdy while retaining its official J.LEAGUE result URL. No guessed ID used."
   ],
   "matches_missing_starting_xi": 53,
   "matches_missing_both_bench_lists": 58,
@@ -148,5 +149,12 @@
     "duplicate_substitution_keys": 0,
     "blank_player_source_urls": 0,
     "blank_substitution_minutes": 1
+  },
+  "latest_match_id_audit": {
+    "date": "2026-11-03",
+    "corrected_provider_id": "34575 -> Kobe-Nagasaki",
+    "unresolved_provider_id": "Cerezo Osaka-Tokyo Verdy, 2026-09-06",
+    "official_result_url": "https://www.jleague.jp/match/j1/2026/090608/",
+    "provider_ids_present": "125/130"
   }
 }
