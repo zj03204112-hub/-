@@ -2066,5 +2066,12 @@
       "identity": "Bryan Zaragoza",
       "source": "https://www.tycsports.com/espana/la-liga/espana-laliga-2026-2027-villarreal-vs-espanyol-fecha-11-id769054.html"
     }
-  ]
+  ],
+  "jornada11_bench_status_reconciliation": {
+    "method": "After cross-checking the full official substitution timeline, every named bench player with no incoming substitution event is marked substitute_not_appeared. Exact event-name alias Carlos Ruiz Rubio/Chupe was mapped to the confirmed 61' entry. Ambiguous identity conflicts remain unresolved.",
+    "changed_to_not_appeared": 126,
+    "alias_rows_resolved": 1,
+    "removed_conflicting_duplicate_rows": 1,
+    "remaining_unresolved": "Atlético bench contains one unresolved identity after removing duplicate Hugo Sotelo."
+  }
 }
