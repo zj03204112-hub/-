@@ -2,35 +2,9 @@
   "generated_at": "2026-11-03",
   "baseline_window": "2026-08-07 to 2026-10-31",
   "baseline_matches": 126,
-  "pending_official_evidence_count": 42,
+  "pending_official_evidence_count": 40,
   "definition": "Rows without a matching entry in all stored official-check batches, including the official_score_records_verified_this_batch array in the 2026-11-02b file, after date/team alias normalization.",
   "pending_matches": [
-    {
-      "date": "2026-08-07",
-      "home": "横浜FM",
-      "away": "鹿島",
-      "score": "3-4",
-      "missing_official_record": true,
-      "missing_starting_xi": false,
-      "missing_both_bench_lists": true,
-      "missing_substitution_events": false,
-      "missing_player_appearance_status": true,
-      "missing_match_level_xg": true,
-      "missing_independent_match_level_xga": true
-    },
-    {
-      "date": "2026-08-07",
-      "home": "Ｇ大阪",
-      "away": "浦和",
-      "score": "4-3",
-      "missing_official_record": true,
-      "missing_starting_xi": false,
-      "missing_both_bench_lists": true,
-      "missing_substitution_events": false,
-      "missing_player_appearance_status": true,
-      "missing_match_level_xg": true,
-      "missing_independent_match_level_xga": true
-    },
     {
       "date": "2026-08-08",
       "home": "Ｃ大阪",
@@ -550,6 +524,21 @@
       "missing_player_appearance_status": true,
       "missing_match_level_xg": true,
       "missing_independent_match_level_xga": true
+    }
+  ],
+  "updated_at": "2026-11-03",
+  "recently_verified": [
+    {
+      "date": "2026-08-07",
+      "home": "横浜FM",
+      "away": "鹿島",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/080701/"
+    },
+    {
+      "date": "2026-08-07",
+      "home": "Ｇ大阪",
+      "away": "浦和",
+      "official_url": "https://www.gamba-osaka.net/c/game/2627/1032.html"
     }
   ]
 }
