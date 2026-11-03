@@ -1,0 +1,82 @@
+{
+  "audit_date": "2026-11-03",
+  "league": "J1 League",
+  "season": "2026/27",
+  "baseline_file": "data/auto_results/J1_League_2026_27.csv",
+  "scope": "Official result verification for 2026-08-15 fixtures; score rows remain unchanged in baseline CSV.",
+  "official_source": "J.LEAGUE official schedule/results index and official individual Mito-Gamba match page",
+  "verified_matches": [
+    {
+      "date": "2026-08-15",
+      "home": "水戸",
+      "away": "Ｇ大阪",
+      "score": "1-1",
+      "source_level": "official_individual_match_page"
+    },
+    {
+      "date": "2026-08-15",
+      "home": "鹿島",
+      "away": "名古屋",
+      "score": "2-1",
+      "source_level": "official_results_index"
+    },
+    {
+      "date": "2026-08-15",
+      "home": "清水",
+      "away": "横浜FM",
+      "score": "0-1",
+      "source_level": "official_results_index"
+    },
+    {
+      "date": "2026-08-15",
+      "home": "岡山",
+      "away": "長崎",
+      "score": "1-0",
+      "source_level": "official_results_index"
+    },
+    {
+      "date": "2026-08-15",
+      "home": "福岡",
+      "away": "Ｃ大阪",
+      "score": "3-0",
+      "source_level": "official_results_index"
+    },
+    {
+      "date": "2026-08-15",
+      "home": "神戸",
+      "away": "FC東京",
+      "score": "2-2",
+      "source_level": "official_results_index"
+    },
+    {
+      "date": "2026-08-15",
+      "home": "川崎Ｆ",
+      "away": "京都",
+      "score": "2-2",
+      "source_level": "official_results_index"
+    },
+    {
+      "date": "2026-08-15",
+      "home": "千葉",
+      "away": "町田",
+      "score": "0-4",
+      "source_level": "official_results_index"
+    },
+    {
+      "date": "2026-08-15",
+      "home": "浦和",
+      "away": "広島",
+      "score": "1-4",
+      "source_level": "official_results_index"
+    }
+  ],
+  "result": {
+    "verified_count": 9,
+    "individual_match_pages": 1,
+    "official_index_only": 8,
+    "score_or_identity_conflicts": 0,
+    "baseline_csv_modified": false,
+    "model_or_prediction_snapshots_modified": false
+  },
+  "next_gaps": "Lineups, bench lists, substitutions, appearance status, xG and independently sourced xGA remain separate audit tasks."
+}
