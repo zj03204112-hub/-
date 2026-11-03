@@ -39,7 +39,7 @@
       "Unai Núñez",
       "Marcos Fernández",
       "Gabriel Moscardo",
-      "Álex Calatrava Torrado",
+      "Cala",
       "Tyrhys Dolan",
       "Rafel Bauzà"
     ],
@@ -109,7 +109,7 @@
       },
       {
         "team": "Espanyol",
-        "player_in": "Álex Calatrava Torrado",
+        "player_in": "Cala",
         "player_out": "Edu Expósito",
         "minute": "73"
       },
@@ -135,7 +135,15 @@
     "notes": [
       "Both starting XIs and both 12-player bench lists cross-checked against official LaLiga and Sky Sports lineup sources.",
       "Ten substitutions verified. The two halftime changes are stored at 45' from the detailed official commentary; the summary timeline cards display 46'.",
-      "Bench players without incoming substitution events are marked substitute_not_appeared after checking the complete official substitution timeline."
+      "Bench players without incoming substitution events are marked substitute_not_appeared after checking the complete official substitution timeline.",
+      "Global CSV reconciliation 2026-11-03: official event and official lineup display use 'Cala'; full identity is cross-checked as Álex Calatrava Torrado. The batch now stores the official display name and preserves the full-name alias separately."
+    ],
+    "player_name_aliases": [
+      {
+        "official_event_display": "Cala",
+        "full_name": "Álex Calatrava Torrado",
+        "source": "Sky Sports confirmed lineup"
+      }
     ]
   },
   "normalized_csv": {
