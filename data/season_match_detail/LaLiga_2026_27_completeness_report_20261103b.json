@@ -31,10 +31,20 @@
     "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_celta_betis.json",
     "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_real_sociedad_levante.json",
     "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_barcelona_real_madrid.json",
-    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_sevilla_osasuna.json"
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_sevilla_osasuna.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_deportivo_levante.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_espanyol_atletico.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_villarreal_elche.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_betis_barcelona.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_valencia_athletic.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_osasuna_racing.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_celta_alaves.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_malaga_real_sociedad.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_real_madrid_sevilla.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_getafe_rayo.json"
   ],
   "gaps": [
-    "79 of 109 LaLiga 2026-27 result fixtures remain without normalized player-detail batches; Jornada 11 and Jornada 10 are complete, Jornada 9 has 10 batches and one alias normalization is being rechecked."
+    "79 of 109 LaLiga 2026-27 result fixtures remain without normalized player-detail batches. Jornada 11, Jornada 10, and Jornada 9 are complete and passed round-level integrity checks."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -404,9 +414,11 @@
       "complete": true
     },
     "jornada9": {
-      "fixtures_with_detail": 10,
+      "fixtures": 10,
+      "player_rows": 457,
+      "substitution_rows": 99,
       "unique_fixture_keys": 10,
-      "complete_batches": 10
+      "complete": true
     }
   },
   "jornada10_source_certification_status": "complete",
@@ -416,5 +428,5 @@
     "fixtures_source_audited_complete": 10,
     "remaining_without_detail_batches": 0
   },
-  "jornada9_source_certification_status": "complete_pending_final_global_integrity_recheck"
+  "jornada9_source_certification_status": "complete"
 }
