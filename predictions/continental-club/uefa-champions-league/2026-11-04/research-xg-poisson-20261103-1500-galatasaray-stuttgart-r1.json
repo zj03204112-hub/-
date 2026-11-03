@@ -1,0 +1,99 @@
+{
+  "prediction_id": "research-xg-poisson-20261103-1500-galatasaray-stuttgart-r1",
+  "match": {
+    "competition": "UEFA Champions League",
+    "competition_type": "continental_club",
+    "home": "Galatasaray",
+    "away": "VfB Stuttgart",
+    "kickoff_utc": "2026-11-03T17:45:00Z",
+    "kickoff_beijing": "2026-11-04T01:45:00+08:00",
+    "venue": "Rams Park, Istanbul"
+  },
+  "snapshot_time_beijing": "2026-11-03T14:55:48+08:00",
+  "window_hours_at_1500": 10.75,
+  "window_eligible": true,
+  "model": {
+    "version": "RESEARCH-XG-POISSON-v1.0",
+    "status": "shadow_research_not_production",
+    "method": "Independent Poisson score grid using a third-party pre-match projected-xG pair; half-time uses 45% of expected goals. Not V5.1 or V5.2.",
+    "source_xg_type": "third_party_model_projection_not_measured_match_xg",
+    "backtest_status": "not_backtested"
+  },
+  "projected_xg": {
+    "home": 1.93,
+    "away": 1.64,
+    "source": "bookmakers.market model estimate",
+    "source_url": "https://bookmakers.market/football/europe/champions-league/galatasaray-vs-vfb-stuttgart-2026-11-03/"
+  },
+  "predictions": {
+    "top_scores": [
+      {
+        "score": "1-1",
+        "probability_pct": 8.91
+      },
+      {
+        "score": "2-1",
+        "probability_pct": 8.6
+      }
+    ],
+    "hda_pct": {
+      "home": 45,
+      "draw": 21.8,
+      "away": 33.2
+    },
+    "pick": "主胜倾向，防平",
+    "half_full_time": {
+      "pick": "胜/胜",
+      "probability_pct": 27.96,
+      "method": "45% first-half goal split; low-confidence research estimate"
+    },
+    "sporttery_handicap_result": "无法核验：官方竞彩让球盘口缺失"
+  },
+  "market": {
+    "third_party_1x2_open_current": {
+      "opening": "2.33/4.17/2.95",
+      "current_best": "2.25/4.23/3.02"
+    },
+    "third_party_total_market_movement": "Odds.Directory: total line 3.0→3.5; over 2.28→1.86, under 1.57→1.96.",
+    "official_sporttery_handicap": null,
+    "captured_at_beijing": "2026-11-03T14:55:48+08:00",
+    "upstream_tick_timestamp": "not exposed"
+  },
+  "team_context": {
+    "recent_form": {
+      "home": "WWWWL",
+      "away": "WWLDL"
+    },
+    "tactics": {
+      "home": "usual 4-3-3; may flex to 4-2-3-1",
+      "away": "4-2-3-1"
+    },
+    "injuries": "Sportradar lists Mario Lemina and Elias Jelert as missing for Galatasaray; Stuttgart missing Jeremy Arevalo, Dan-Axel Zagadou, Leo Sauer, Angelo Stiller, Josha Vagnoman and Justin Diehl. Recheck official squad.",
+    "probable_lineups": "not official; starting XIs not yet released",
+    "referee": "Chris Kavanagh (UEFA official)",
+    "weather": "Istanbul forecast around 15–17°C near kickoff with intermittent rain risk; timing/source forecasts vary.",
+    "schedule_motivation": "both are in league phase; next-opponent/rotation importance not fully verified."
+  },
+  "my_confidence_10": 5.5,
+  "data_completeness": "9/13 core fields; partial",
+  "risks": [
+    "Starting XI not official.",
+    "Injury list is third-party and requires final squad confirmation.",
+    "Third-party market aggregators disagree on price levels; upstream tick time unavailable.",
+    "Official Sporttery handicap absent.",
+    "Projected xG is a third-party model estimate, not actual match xG."
+  ],
+  "strategy_id": "RESEARCH-XG-POISSON-20261103-1500-01",
+  "sources": [
+    "https://www.uefa.com/uefachampionsleague/match/2049614--galatasaray-vs-stuttgart/",
+    "https://bookmakers.market/football/europe/champions-league/galatasaray-vs-vfb-stuttgart-2026-11-03/",
+    "https://statshub.sportradar.com/sportradar/en/match/74165978/report",
+    "https://www.datetimeonline.com/weather/turkey/istanbul"
+  ],
+  "revision": {
+    "revision": 1,
+    "supersedes": "research-xg-poisson-20261103-1500-galatasaray-stuttgart",
+    "reason": "Canonicalize the bookmakers.market source host; forecast values unchanged.",
+    "forecast_values_changed": false
+  }
+}
