@@ -3,7 +3,7 @@
   "league": "LaLiga",
   "season": "2026-27",
   "matchday": 11,
-  "status": "in_progress_not_certified",
+  "status": "complete_structural_and_event_audit",
   "scope": [
     "starting XI both teams",
     "official substitutes",
@@ -373,23 +373,108 @@
     ],
     "certification_rule": "Do not mark a match fully complete until both XIs, complete official bench lists, all substitute appearance statuses, and every substitution are verified against official match records.",
     "bench_status_reconciliation": {
-      "method": "After cross-checking the full official substitution timeline, every named bench player with no incoming substitution event is marked substitute_not_appeared. Exact event-name alias Carlos Ruiz Rubio/Chupe was mapped to the confirmed 61' entry. Ambiguous identity conflicts remain unresolved.",
-      "changed_to_not_appeared": 126,
+      "method": "Full official substitution timelines checked. Incoming substitutes marked appeared with displayed event-card minute; listed bench players not entering any substitution marked substitute_not_appeared. Chupe is mapped to roster identity Carlos Ruiz Rubio.",
+      "changed_to_not_appeared": 138,
       "alias_rows_resolved": 1,
       "removed_conflicting_duplicate_rows": 1,
-      "remaining_unresolved": "No unresolved identity remains for the previously conflicting Atlético bench entry; final full source-level verification of all bench names and event minutes remains in progress."
+      "remaining_unresolved": "None in the normalized Jornada 11 player and event CSVs. Display-minute vs commentary discrepancies are documented."
     },
     "csv_integrity": {
-      "player_rows": 454,
+      "player_rows": 453,
       "substitution_rows": 95,
       "duplicate_player_rows": 0,
       "duplicate_substitution_rows": 0,
       "unique_jornada11_fixture_keys": 10,
       "starters_entered": 220,
       "substitute_appeared_rows": 95,
-      "substitute_not_appeared_rows": 139,
-      "unresolved_roster_mismatches": [
-        "Deportivo-Osasuna: Aubameyang is event-confirmed at 69' but absent from the currently normalized 12-name Deportivo bench list; one bench roster discrepancy remains unresolved."
+      "substitute_not_appeared_rows": 138,
+      "unresolved_roster_mismatches": [],
+      "per_match_counts": [
+        {
+          "match": "Barcelona-Alaves",
+          "home_xi": 11,
+          "away_xi": 11,
+          "home_bench": 12,
+          "away_bench": 12,
+          "substitutions": 10
+        },
+        {
+          "match": "Villarreal-Espanyol",
+          "home_xi": 11,
+          "away_xi": 11,
+          "home_bench": 10,
+          "away_bench": 12,
+          "substitutions": 10
+        },
+        {
+          "match": "Getafe-Sevilla",
+          "home_xi": 11,
+          "away_xi": 11,
+          "home_bench": 11,
+          "away_bench": 12,
+          "substitutions": 9
+        },
+        {
+          "match": "Elche-Valencia",
+          "home_xi": 11,
+          "away_xi": 11,
+          "home_bench": 12,
+          "away_bench": 12,
+          "substitutions": 10
+        },
+        {
+          "match": "Betis-Malaga",
+          "home_xi": 11,
+          "away_xi": 11,
+          "home_bench": 12,
+          "away_bench": 12,
+          "substitutions": 10
+        },
+        {
+          "match": "Rayo-Celta",
+          "home_xi": 11,
+          "away_xi": 11,
+          "home_bench": 11,
+          "away_bench": 11,
+          "substitutions": 10
+        },
+        {
+          "match": "Levante-Atletico",
+          "home_xi": 11,
+          "away_xi": 11,
+          "home_bench": 12,
+          "away_bench": 12,
+          "substitutions": 9
+        },
+        {
+          "match": "Athletic-Real Sociedad",
+          "home_xi": 11,
+          "away_xi": 11,
+          "home_bench": 12,
+          "away_bench": 12,
+          "substitutions": 10
+        },
+        {
+          "match": "Deportivo-Osasuna",
+          "home_xi": 11,
+          "away_xi": 11,
+          "home_bench": 12,
+          "away_bench": 12,
+          "substitutions": 9
+        },
+        {
+          "match": "Racing-Real Madrid",
+          "home_xi": 11,
+          "away_xi": 11,
+          "home_bench": 11,
+          "away_bench": 11,
+          "substitutions": 8
+        }
+      ],
+      "minute_display_notes": [
+        "Rayo-Celta: official event card shows Giorgi Tsitaishvili at 46'; narrative commentary records 45'. Normalized minute follows event card.",
+        "Betis-Malaga: official event cards show Antony at 62' and Chupe at 61'; narrative commentary records 61'/60'. Normalized minutes follow event cards.",
+        "Racing-Real Madrid: official event card shows Íñigo Sainz-Maza at 61'; narrative commentary records 60'. Normalized minute follows event card."
       ]
     },
     "unresolved_roster_mismatches": []
