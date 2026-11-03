@@ -1,0 +1,104 @@
+{
+  "run_date_beijing": "2026-11-03",
+  "run_started_at_beijing": "2026-11-03T14:55:48+08:00",
+  "evaluation_time_beijing": "2026-11-03T15:00:00+08:00",
+  "branch": "automation/daily-football-2026-11-03",
+  "branch_latest_pre_manifest_commit": "e158ae30f511430cbad7fb35c3ea4587ddddea49",
+  "status": "PARTIAL_COMPLETE",
+  "scope": {
+    "same_beijing_date_remaining_fixtures": 6,
+    "next_beijing_date_fixtures": 20,
+    "eligible_6_to_12_hour_candidates": 4,
+    "prediction_snapshots_generated": 4,
+    "metadata_corrected_snapshots": 2,
+    "original_snapshots_preserved": true
+  },
+  "files": [
+    {
+      "path": "fixtures/2026-11-03/schedule-refresh-1500.json",
+      "blob_sha": "95f08390dc6b95c99ebf3208c7326f46e8491328",
+      "commit_sha": "21f392612dc090804c565d5e58f7b116572d1bea",
+      "readback_verified": true
+    },
+    {
+      "path": "reviews/2026-11-03/market-source-audit-1500.json",
+      "blob_sha": "826bc4dd3a4a3a5eba8625b670b20d31c7728489",
+      "commit_sha": "929869d6d6586756b7a2c84f013308af332b226d",
+      "readback_verified": true
+    },
+    {
+      "path": "reviews/2026-11-03/prediction-metadata-corrections-1500.json",
+      "blob_sha": "7965af5a4ee518daa19f1d04c4aabd74a4049732",
+      "commit_sha": "e158ae30f511430cbad7fb35c3ea4587ddddea49",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/uefa-champions-league/2026-11-04/research-xg-poisson-20261103-1500-galatasaray-stuttgart.json",
+      "blob_sha": "609391c74343116299b9aae3ea39247381e2352e",
+      "commit_sha": "d990b43e984ac2a51dea0c98286fbf7ec7ff6ded",
+      "readback_verified": true,
+      "superseded_metadata_only_by": "predictions/continental-club/uefa-champions-league/2026-11-04/research-xg-poisson-20261103-1500-galatasaray-stuttgart-r1.json"
+    },
+    {
+      "path": "predictions/continental-club/uefa-champions-league/2026-11-04/research-xg-poisson-20261103-1500-shakhtar-sporting.json",
+      "blob_sha": "b617cc706ad5afd7df6da2a5d94141dc6e8e0452",
+      "commit_sha": "556db549e71f7730c5bc621e6d7481cb175393f9",
+      "readback_verified": true,
+      "superseded_metadata_only_by": "predictions/continental-club/uefa-champions-league/2026-11-04/research-xg-poisson-20261103-1500-shakhtar-sporting-r1.json"
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-elite/2026-11-04/research-xg-poisson-20261103-1500-esteghlal-alshamal.json",
+      "blob_sha": "e18f26c823cc487121485c56175f43cd8921190c",
+      "commit_sha": "083d061bf8560037f9878b5bebbe67cb42df9469",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-elite/2026-11-04/research-xg-poisson-20261103-1500-alhilal-shabab.json",
+      "blob_sha": "f2a270666e3e457bb8da4a95fdce1bbba98a119b",
+      "commit_sha": "455a2fe2a5161e312595d3d06c1a9bf57780bfb4",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/uefa-champions-league/2026-11-04/research-xg-poisson-20261103-1500-galatasaray-stuttgart-r1.json",
+      "blob_sha": "f35decb854bde187d413ceb568772cbc1b485464",
+      "commit_sha": "9fbc7fffe584c053ca6cc5dccd57a343cea889e4",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/uefa-champions-league/2026-11-04/research-xg-poisson-20261103-1500-shakhtar-sporting-r1.json",
+      "blob_sha": "2fc7aff7a4f7eba8a180b02053eafce197d01662",
+      "commit_sha": "377746e41f57698b0bb2e500f05225f04e7a7615",
+      "readback_verified": true
+    }
+  ],
+  "prediction_method": {
+    "version": "RESEARCH-XG-POISSON-v1.0",
+    "status": "SHADOW_RESEARCH_NOT_PRODUCTION",
+    "inputs": "Third-party pre-match projected xG estimates; independent Poisson score grid; first-half expected-goal share 45%.",
+    "not_used": "No unverified official Sporttery handicap; no third-party Asian line used for 竞彩 mapping.",
+    "not_backtested": true,
+    "v5_1_changed": false,
+    "v5_2_claimed_as_run": false
+  },
+  "xg_weekly": {
+    "updated": false,
+    "reason": "No new match had completed within the 15:00 refresh at capture time. Third-party projected match xG is stored only in immutable prediction snapshots, not in actual weekly match-xG tables.",
+    "no_post_match_leakage": "No post-match xG was used as a pre-match input."
+  },
+  "missing": [
+    "Official Sporttery 1X2/让球胜平负 match-specific data and timestamp for all four candidates.",
+    "Official starting XIs not yet released at capture time.",
+    "Upstream tick timestamps for third-party bookmaker aggregators not exposed.",
+    "Full next-opponent importance/rotation audit incomplete.",
+    "AFC referee appointments were not retrieved from an AFC primary-source page.",
+    "SQLite or remote database not connected; no database write or query performed."
+  ],
+  "verification": {
+    "all_nine_files_read_back": true,
+    "json_parse_checks": "9/9 passed",
+    "predictions_count": 4,
+    "sporttery_handicap_mappings": 0,
+    "historical_snapshots_overwritten": 0,
+    "frozen_validation_samples_modified": false
+  }
+}
