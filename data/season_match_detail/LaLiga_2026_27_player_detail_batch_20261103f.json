@@ -131,8 +131,8 @@
     "notes": [
       "Official LaLiga match page used for result and event timeline; Sky Sports cross-checks both XIs and bench lists.",
       "Appearance status of substitutes not entering is not inferred.",
-      "Audit correction 2026-11-03: Rayo's halftime substitution of Giorgi Tsitaishvili is recorded as 46' on the official LaLiga match page; prior batch minute 45 was inconsistent with the official event display and has been corrected.",
-      "Canonical-minute rule set 2026-11-03: use the detailed official commentary/event log minute, not the summary substitution-card display when those differ. Giorgi Tsitaishvili is recorded at 45' in the detailed event log; summary card displays 46'."
+      "Minute discrepancy audit: LaLiga event-card display lists Giorgi Tsitaishvili for Álvaro García at 46'; the detailed commentary records the halftime change at 45'. The normalized CSV uses 45' under the project-wide detailed-commentary convention. Both source displays are retained here; this is not a missing event, but a documented display discrepancy."
     ]
-  }
+  },
+  "audit_status": "lineups_and_substitution_names_cross_checked; minute_display_discrepancy_documented"
 }
