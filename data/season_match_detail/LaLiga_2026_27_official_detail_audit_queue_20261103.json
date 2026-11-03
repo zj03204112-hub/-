@@ -25,7 +25,7 @@
   "official_results_page": "https://www.laliga.com/en-GB/laliga-easports/results",
   "official_match_detail_pages_found": 10,
   "detailed_player_and_substitution_files_exist": true,
-  "summary": "109 result fixtures. Five matches have normalized player-detail batches. Player CSV contains 248 rows; substitution CSV contains 49 events. 104 fixtures remain pending. Unused bench appearance status remains unverified.",
+  "summary": "LaLiga 2026-27: 109 score/result fixtures indexed. All 10 Jornada 11 fixtures now have player-detail batch files entered; player CSV currently has 451 data rows and substitution CSV 95 event rows. The other 99 fixtures remain without normalized player-detail batches. These are entered records, not a claim that every field is fully audited: unused bench appearance status remains unverified and some names require further source-level cross-checking.",
   "fields_to_verify": [
     "source-backed names for 11 starters per team",
     "full official bench lists",
@@ -1903,5 +1903,7 @@
     }
   ],
   "normalized_player_csv": "data/season_match_detail/LaLiga_2026_27_players.csv",
-  "normalized_substitution_csv": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  "normalized_substitution_csv": "data/season_match_detail/LaLiga_2026_27_substitutions.csv",
+  "last_update": "2026-11-03",
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json"
 }
