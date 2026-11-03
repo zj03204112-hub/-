@@ -25,7 +25,7 @@
   "official_results_page": "https://www.laliga.com/en-GB/laliga-easports/results",
   "official_match_detail_pages_found": 10,
   "detailed_player_and_substitution_files_exist": true,
-  "summary": "LaLiga 2026-27: 109 score/result fixtures indexed. Jornada 11 is structurally complete: all 10 matches have 11 starters per side, source-backed bench lists, appearance statuses, and 95 substitution events mirrored between independent batches and CSV. 453 player rows; 0 duplicate player keys; 0 duplicate substitution events. The other 99 fixtures remain without normalized player detail.",
+  "summary": "LaLiga 2026-27: 109 score/result fixtures indexed. Jornada 11: all 10 matches structurally and event-audited. Jornada 10: official URLs resolved for all 10 fixtures and Rayo-Elche is the first normalized detail batch. Current season CSVs contain 499 player rows and 105 substitution events, with 0 duplicate player keys and 0 duplicate event keys. 98 fixtures remain without normalized player detail.",
   "fields_to_verify": [
     "source-backed names for 11 starters per team",
     "full official bench lists",
@@ -2171,5 +2171,10 @@
       "Betis-Malaga: official event cards show Antony at 62' and Chupe at 61'; narrative commentary records 61'/60'. Normalized minutes follow event cards.",
       "Racing-Real Madrid: official event card shows Íñigo Sainz-Maza at 61'; narrative commentary records 60'. Normalized minute follows event card."
     ]
-  }
+  },
+  "player_csv_rows": 499,
+  "substitution_csv_rows": 105,
+  "fixtures_with_normalized_player_detail": 11,
+  "fixtures_without_normalized_player_detail": 98,
+  "jornada10_status": "in_progress_1_of_10_batches_created"
 }
