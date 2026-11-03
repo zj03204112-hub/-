@@ -19,7 +19,7 @@
     "use detailed official commentary minute when event-card display differs",
     "unresolved fields remain blank"
   ],
-  "status": "queued_for_collection",
+  "status": "complete",
   "fixtures": [
     {
       "date": "2026-10-16",
@@ -222,5 +222,19 @@
     "2026-10-19|Getafe|Rayo"
   ],
   "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_getafe_rayo.json",
-  "jornada9_audit_status": "complete"
+  "jornada9_audit_status": "complete",
+  "final_integrity_audit": {
+    "expected_fixtures": 10,
+    "verified_fixtures": 10,
+    "unique_fixture_keys": 10,
+    "duplicate_fixture_keys": 0,
+    "player_rows": 457,
+    "duplicate_player_rows": 0,
+    "substitution_rows": 99,
+    "duplicate_substitution_rows": 0,
+    "event_batch_csv_mismatches": 0,
+    "detail_keys_missing_from_results": 0,
+    "status": "passed"
+  },
+  "last_update": "2026-11-03"
 }
