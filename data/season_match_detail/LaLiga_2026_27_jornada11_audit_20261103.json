@@ -3,7 +3,7 @@
   "league": "LaLiga",
   "season": "2026-27",
   "matchday": 11,
-  "status": "jornada11_source_verified_and_integrity_checks_passed",
+  "status": "jornada11_in_progress_final_event_minute_and_bench_status_audit",
   "scope": [
     "starting XI both teams",
     "official substitutes",
@@ -22,20 +22,6 @@
       "reason": "Valentín Gómez appears in the Betis bench list in independent lineup source; Jens Cajuste is confirmed as a Málaga substitute who entered at 80'.",
       "source": "https://www.skysports.com/football/real-betis-vs-malaga/teams/563032",
       "commit": "88b30d0b86b027fb231193edd54b5e6cff24843c"
-    },
-    {
-      "match": "Rayo-Celta",
-      "file": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103f.json",
-      "field": "Giorgi Tsitaishvili substitution minute",
-      "before": "45",
-      "after": "46",
-      "reason": "Official LaLiga event display shows 46'; normalized players/substitution CSVs also corrected.",
-      "source": "https://www.laliga.com/es-GB/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
-      "commits": [
-        "016d6eb95df5a2fb2c8043b3ecf6a38d0f9a3ffe",
-        "2c4103879dfc174aa5c07e93d1fab85a8fd0fbf4",
-        "c35424d7f20c17e48f7aaa863af25465f5520b46"
-      ]
     },
     {
       "match": "Betis-Malaga",
@@ -217,6 +203,14 @@
       "after": "Álvaro Ferllo",
       "reason": "Official LaLiga match page lists substitute 'A. Ferllo'; previous expansion to Fernández was not supported and has been reverted.",
       "source": "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+    },
+    {
+      "match": "Rayo-Celta",
+      "field": "Giorgi Tsitaishvili substitution minute",
+      "before": "conflicting minute convention (45' detailed commentary vs 46' event card)",
+      "after": "45' canonical normalized minute; 46' retained as official event-card display discrepancy",
+      "reason": "The official LaLiga match page exposes both the detailed commentary and a summary event card. The normalized dataset convention selects the detailed commentary minute consistently; do not claim the two displays are identical.",
+      "source": "https://www.laliga.com/es-GB/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11"
     }
   ],
   "pending_checks": [],
@@ -382,7 +376,7 @@
         "events_batch": 10,
         "events_csv": 10,
         "issues": [
-          "Official timeline card shows Giorgi Tsitaishvili at 46', while narrative commentary records 45'; keep display minute 46 and preserve source discrepancy."
+          "Minute display discrepancy documented: detailed commentary 45', event card 46'; normalized CSV follows detailed-commentary convention. Recheck all 10 events against the official page before final certification."
         ]
       },
       {
@@ -559,7 +553,8 @@
       "substitute_not_appeared_rows": 138,
       "event_alignment": "10/10 batches and CSV event lists align exactly by team, in-player, out-player, and detailed official commentary minute"
     },
-    "canonical_minute_convention": "Detailed official commentary/event log minute is canonical; summary substitution card minute is retained in audit notes only when it differs."
+    "canonical_minute_convention": "Detailed official commentary/event log minute is canonical; summary substitution card minute is retained in audit notes only when it differs.",
+    "minute_display_notes": []
   },
   "final_result": {
     "matchday": 11,
@@ -581,6 +576,8 @@
       "https://iaas-public-front-pro.laliga.com/en-ID/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11",
       "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11",
       "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
-    ]
+    ],
+    "status": "provisional_structural_integrity_pass_only_not_final_source_certification",
+    "certification_note": "Structural uniqueness and event alignment pass, but do not describe the round as fully source-certified until all per-match bench lists, unused-substitute statuses, and displayed/commentary minute discrepancies have been reconciled against official pages."
   }
 }
