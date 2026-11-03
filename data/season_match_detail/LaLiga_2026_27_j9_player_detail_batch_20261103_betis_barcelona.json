@@ -1,0 +1,155 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 9,
+  "match_id": "laliga-2026-27-2026-10-17-betis-barcelona",
+  "date": "2026-10-17",
+  "home": "Betis",
+  "away": "Barcelona",
+  "score": "2-5",
+  "halftime_score": "1-2",
+  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-betis-fc-barcelona-9",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-betis-fc-barcelona-9",
+    "secondary_lineups": "https://www.skysports.com/football/real-betis-vs-barcelona/teams/563010",
+    "secondary_match_report": "https://www.footballwebpages.co.uk/match/2026-2027/spanish-la-liga/real-betis/barcelona/593534"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Álvaro Vallés",
+      "Héctor Bellerín",
+      "Diego Llorente",
+      "Fran García",
+      "Valentín Gómez",
+      "Facundo Bernal",
+      "Dani Ceballos",
+      "Giovani Lo Celso",
+      "Pablo Fornals",
+      "Abde Ezzalzouli",
+      "Cucho Hernández"
+    ],
+    "home_bench": [
+      "Diego Conde",
+      "Natan",
+      "Marc Bartra",
+      "Antony",
+      "Ángel Ortiz",
+      "Álvaro Fidalgo Fernández",
+      "Rodrigo Riquelme",
+      "Nelson Deossa",
+      "Troy Parrott",
+      "Marc Roca",
+      "Isco",
+      "José Antonio Morante"
+    ],
+    "away_starting_xi": [
+      "Joan García",
+      "Jules Koundé",
+      "Pau Cubarsí",
+      "Gerard Martín",
+      "Xavi Espart",
+      "Rodri",
+      "Pedri",
+      "Lamine Yamal",
+      "Fermín López",
+      "Karim Adeyemi",
+      "Gabriel Jesus"
+    ],
+    "away_bench": [
+      "Wojciech Szczęsny",
+      "Dominik Livaković",
+      "João Cancelo",
+      "Alejandro Balde",
+      "Brian Fariñas",
+      "Gavi",
+      "Raphinha",
+      "Anthony Gordon",
+      "Dani Olmo",
+      "Frenkie de Jong",
+      "Marc Bernal",
+      "Eric García"
+    ],
+    "substitution_events": [
+      {
+        "team": "Betis",
+        "player_in": "Nelson Deossa",
+        "player_out": "Dani Ceballos",
+        "minute": "45"
+      },
+      {
+        "team": "Betis",
+        "player_in": "Troy Parrott",
+        "player_out": "Cucho Hernández",
+        "minute": "64"
+      },
+      {
+        "team": "Betis",
+        "player_in": "Rodrigo Riquelme",
+        "player_out": "Giovani Lo Celso",
+        "minute": "64"
+      },
+      {
+        "team": "Betis",
+        "player_in": "Álvaro Fidalgo Fernández",
+        "player_out": "Pablo Fornals",
+        "minute": "70"
+      },
+      {
+        "team": "Betis",
+        "player_in": "Ángel Ortiz",
+        "player_out": "Héctor Bellerín",
+        "minute": "70"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Eric García",
+        "player_out": "Gerard Martín",
+        "minute": "45"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Dani Olmo",
+        "player_out": "Fermín López",
+        "minute": "62"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Anthony Gordon",
+        "player_out": "Karim Adeyemi",
+        "minute": "62"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Raphinha",
+        "player_out": "Lamine Yamal",
+        "minute": "70"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Gavi",
+        "player_out": "Gabriel Jesus",
+        "minute": "79"
+      }
+    ],
+    "disciplinary_events": [
+      {
+        "team": "Betis",
+        "player": "Facundo Bernal",
+        "type": "red_card",
+        "minute": "54"
+      }
+    ],
+    "notes": [
+      "Both starting XIs and both 12-player bench lists cross-checked against official LaLiga and Sky Sports lineup sources.",
+      "Ten substitutions verified from the detailed official commentary. Halftime substitutions are stored at 45' although summary cards display 46'.",
+      "Facundo Bernal's 54' red card is a disciplinary event, not a substitution. Eric García entered at 45' and later left injured at 90' after Barcelona had used all substitutions; this later exit is recorded in the player CSV exit-minute field.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
