@@ -43,20 +43,21 @@
     "125 rows correspond to completed matches from 2026-08-07 through 2026-10-31; fixtures scheduled for 2026-11-01 are not included.",
     "Structural checks passed; the two sample rows above were independently matched to official J.League match pages. Do not label the full 125-row independent recheck complete yet.",
     "2026-11-03 repair: default and audit branch results CSVs aligned at 130 unique fixtures with ISO dates.",
-    "Standardized player, substitution, and xG/xGA tables added on main; these contain only extracted source-backed records and explicit blanks for missing values."
+    "Standardized player, substitution, and xG/xGA tables added on main; these contain only extracted source-backed records and explicit blanks for missing values.",
+    "2026-11-03 incremental player extraction added official match cards 34597, 34598 and 34599 to the standardized player/substitution tables."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
   "lineup_and_appearance_audit": {
-    "matches_with_both_teams_starting_xi_structured": 8,
-    "matches_with_both_bench_lists_structured": 3,
-    "matches_with_substitution_events_structured": 8,
-    "matches_with_complete_player_appearance_status_table": 2,
+    "matches_with_both_teams_starting_xi_structured": 11,
+    "matches_with_both_bench_lists_structured": 6,
+    "matches_with_substitution_events_structured": 11,
+    "matches_with_complete_player_appearance_status_table": 5,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-    "standardized_player_rows": 280,
+    "standardized_player_rows": 400,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-    "standardized_substitution_rows": 80,
-    "note": "These are partial structured extractions, not full-season completion. Missing names and minutes are not imputed."
+    "standardized_substitution_rows": 110,
+    "note": "Partial structured extractions: 11 matches have both starting XIs and substitution events; 6 matches have both bench lists; 5 have full appearance-status classification. This is not full-season completion."
   },
   "xg_xga_audit": {
     "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
@@ -64,6 +65,8 @@
     "matches_missing_match_level_xg": 118,
     "matches_with_independently_verified_match_level_xga": 0,
     "matches_missing_independently_verified_match_level_xga": 130,
-    "note": "xG values remain source-attributed; no independent match-level xGA source passed verification. Do not infer xGA from opponent xG."
+    "note": "xG values remain source-attributed; no independent match-level xGA source passed verification. Do not infer xGA from opponent xG.",
+    "xga_source_audit_file": "data/season_match_detail/J1_League_2026_27_xga_source_audit_20261103.json",
+    "xga_source_audit_summary": "Four source families reviewed. No free public source with explicit match-level xGA passed verification; paid Sportmonks xG add-on documents fixture-level xGA, but is excluded by the free-only constraint."
   }
 }
