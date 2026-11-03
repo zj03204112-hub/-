@@ -25,12 +25,15 @@
     "Only structured player details from the reviewed source batches are normalized; this is not full-season player coverage.",
     "Substitution table includes only events with both incoming and outgoing player names; red cards are not misclassified as substitutions.",
     "XG values retain their source URL and status; conflicting or unaccepted candidate pairs are not silently selected.",
-    "All match-level xGA values remain blank because no explicit free match-level xGA field passed independent source verification."
+    "All match-level xGA values remain blank because no explicit free match-level xGA field passed independent source verification.",
+    "Displayed substitution time strings were restored from the official match-page extraction where minute_display was available; no minute values were estimated."
   ],
   "matches_missing_starting_xi": 122,
   "matches_missing_both_bench_lists": 127,
   "matches_missing_complete_appearance_status_table": 128,
   "matches_missing_source_attributed_match_level_xg": 118,
   "matches_missing_independently_verified_match_level_xga": 130,
-  "branch_alignment_note": "The canonical results CSV is 130 rows on both main and audit/stable-match-id-mapping-20261101; ISO dates and unique date/home/away keys verified."
+  "branch_alignment_note": "The canonical results CSV is 130 rows on both main and audit/stable-match-id-mapping-20261101; ISO dates and unique date/home/away keys verified.",
+  "substitution_rows_missing_minute": 0,
+  "substitution_rows_missing_player_names": 0
 }
