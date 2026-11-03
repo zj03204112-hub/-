@@ -1929,8 +1929,8 @@
     "duplicate_substitution_rows_in_jornada11": 0,
     "total_player_rows": 451,
     "total_substitution_event_rows": 95,
-    "matches_with_11_starters_for_both_teams": 8,
-    "matches_with_starting_xi_or_identity_gaps": 2,
+    "matches_with_11_starters_for_both_teams": 10,
+    "matches_with_starting_xi_or_identity_gaps": 0,
     "per_match": [
       {
         "match": "Barcelona-Alaves",
@@ -1941,19 +1941,19 @@
         "events_batch": 10,
         "events_csv": 10,
         "issues": [
-          "Alavés bench list incomplete/one identity unresolved; verify official list."
+          "Shirt-number-27 bench identity resolved as Xanet Olaiz; still audit the entire official bench and event minute display."
         ]
       },
       {
         "match": "Villarreal-Espanyol",
         "home_starting_xi": 11,
-        "away_starting_xi": 10,
+        "away_starting_xi": 11,
         "home_bench": 10,
         "away_bench": 12,
         "events_batch": 10,
         "events_csv": 10,
         "issues": [
-          "Espanyol starting XI has only 10 named players; one starter identity unresolved; Villarreal bench count 10 needs source check."
+          "Shirt-number-15 starter resolved as Bryan Zaragoza; Villarreal bench has 10 listed entries in current source and needs final confirmation against official roster."
         ]
       },
       {
@@ -2054,5 +2054,17 @@
       }
     ],
     "certification_rule": "Do not mark a match fully complete until both XIs, complete official bench lists, all substitute appearance statuses, and every substitution are verified against official match records."
-  }
+  },
+  "last_identity_resolutions": [
+    {
+      "match": "Barcelona-Alaves",
+      "identity": "Xanet Olaiz",
+      "source": "https://www.skysports.com/football/barcelona-vs-alaves/teams/563025"
+    },
+    {
+      "match": "Villarreal-Espanyol",
+      "identity": "Bryan Zaragoza",
+      "source": "https://www.tycsports.com/espana/la-liga/espana-laliga-2026-2027-villarreal-vs-espanyol-fecha-11-id769054.html"
+    }
+  ]
 }
