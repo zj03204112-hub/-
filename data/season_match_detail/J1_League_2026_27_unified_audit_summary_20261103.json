@@ -108,5 +108,34 @@
   "extension_audit_result": "2026-11-01 extension: 4/4 scores checked against official individual match pages; 4 third-party xG pairs recorded; 0 independently verified xGA pairs.",
   "latest_player_detail_file": "data/season_match_detail/J1_League_2026_27_player_detail_batch_20261103d.json",
   "latest_player_detail_result": "Added official J.League lineup/timeline transcription for Kashiwa 0-2 Yokohama F. Marinos (2026-09-06): 22 starters and 10 substitutions; bench list from secondary source remains pending official confirmation.",
-  "pending_file_count": 42
+  "pending_file_count": 42,
+  "percentages": {
+    "official_evidence_any": 66.67,
+    "individual_page_or_match_record_linked": 37.3,
+    "schedule_or_index_only": 29.37,
+    "pending_official_evidence": 33.33,
+    "starting_xi_both_teams": 5.56,
+    "both_substitute_benches_structured": 2.38,
+    "substitution_events_structured": 5.56,
+    "player_appearance_status_table": 1.59,
+    "xg_pair_present": 6.35,
+    "xga_independently_verified": 0
+  },
+  "missing_field_counts": {
+    "starting_xi": 119,
+    "both_substitute_benches": 123,
+    "substitution_events": 119,
+    "player_appearance_status_table": 124,
+    "match_level_xg_pair": 118,
+    "independently_verified_match_level_xga": 126
+  },
+  "pending_field_missing_counts": {
+    "official_evidence": 42,
+    "starting_xi": 40,
+    "both_substitute_benches": 42,
+    "substitution_events": 40,
+    "player_appearance_status_table": 42,
+    "match_level_xg_pair": 42,
+    "independently_verified_match_level_xga": 42
+  }
 }
