@@ -15,7 +15,7 @@
     "xGA",
     "estimated player data"
   ],
-  "status": "official_match_urls_resolved_detail_collection_pending",
+  "status": "in_progress_jornada10_details_being_collected",
   "expected_fixtures": 10,
   "unique_fixture_keys": 10,
   "duplicate_fixture_keys": 0,
@@ -41,12 +41,13 @@
       "score": "0-3",
       "official_match_url": "https://www.laliga.com/es-MX/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-elche-cf-10",
       "official_match_url_status": "found",
-      "starting_xi_status": "pending_source_audit",
-      "bench_status": "pending_source_audit",
-      "appearance_status": "pending_source_audit",
-      "substitutions_status": "pending_source_audit",
-      "player_detail_batch": null,
-      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them."
+      "starting_xi_status": "entered_cross_checked",
+      "bench_status": "entered_cross_checked",
+      "appearance_status": "entered_from_official_event_timeline",
+      "substitutions_status": "10_events_entered_cross_checked",
+      "player_detail_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_rayo_elche.json",
+      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them.",
+      "status": "batch_created_csv_normalized"
     },
     {
       "date": "2026-10-24",
@@ -167,5 +168,8 @@
     "official_match_urls_found": 10,
     "missing_urls": 0,
     "player_detail_batches_created": 0
-  }
+  },
+  "normalized_batches_created": 1,
+  "normalized_fixtures": 1,
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_rayo_elche.json"
 }
