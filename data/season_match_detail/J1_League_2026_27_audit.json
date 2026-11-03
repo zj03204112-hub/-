@@ -80,20 +80,21 @@
     "2026-11-03 mapping correction: official Data Site match_card_id=34575 resolves to Kobe 3-1 Nagasaki, not Cerezo Osaka-Tokyo Verdy. Mapping ID 34575 moved to the Kobe-Nagasaki row. Cerezo Osaka 0-0 Tokyo Verdy remains result-verified from the official J.LEAGUE page https://www.jleague.jp/match/j1/2026/090608/ but its Data Site ID is blank pending direct confirmation; no ID inferred.",
     "2026-11-03 official player-detail increment: Kawasaki Frontale 2-2 Kyoto Sanga (2026-08-15; official page https://www.jleague.jp/en/match/j1/2026/081507/) added 22 starters, 9 confirmed incoming substitutes and 9 substitution events. Unused bench lists were not exposed in retrieved source; no names guessed. Two substitutions shown at second-half 0' were retained as HT.",
     "2026-11-03 official J.LEAGUE player-detail increment: FC Tokyo 2-0 Chiba (2026-08-21) added 22 starters, 10 incoming substitutes and 10 substitution events; unused bench list not extracted from the retrieved official page. Yokohama F. Marinos 1-0 Vissel Kobe (2026-08-22) added 22 starters, all 18 bench players with appearance status, and 9 substitution events. No missing bench names were estimated.",
-    "2026-11-03 official player-detail increment: Kashima Antlers 3-2 Avispa Fukuoka (2026-08-22) added 22 starters, 10 confirmed substitutes and 10 events. Fagiano Okayama 0-0 Tokyo Verdy (2026-08-22) added 22 starters, 10 confirmed substitutes and 10 events; ambiguous unused-bench assignment was removed rather than guessed."
+    "2026-11-03 official player-detail increment: Kashima Antlers 3-2 Avispa Fukuoka (2026-08-22) added 22 starters, 10 confirmed substitutes and 10 events. Fagiano Okayama 0-0 Tokyo Verdy (2026-08-22) added 22 starters, 10 confirmed substitutes and 10 events; ambiguous unused-bench assignment was removed rather than guessed.",
+    "2026-11-03 official player-detail increment: FC Machida Zelvia 2-4 Kashiwa Reysol (2026-09-20) added 22 starters, eight confirmed substitute appearances and eight substitution events; unused bench list not extracted. Gamba Osaka 0-1 Vissel Kobe (2026-09-20) added 22 starters, all 18 bench players with appearance status and eight substitution events. Shimoda Hokuto's 65' red card is recorded as an exit after his 62' entry, not as a substitution."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
   "lineup_and_appearance_audit": {
-    "matches_with_both_teams_starting_xi_structured": 82,
-    "matches_with_both_bench_lists_structured": 73,
-    "matches_with_substitution_events_structured": 82,
-    "matches_with_complete_player_appearance_status_table": 77,
+    "matches_with_both_teams_starting_xi_structured": 84,
+    "matches_with_both_bench_lists_structured": 74,
+    "matches_with_substitution_events_structured": 84,
+    "matches_with_complete_player_appearance_status_table": 78,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-    "standardized_player_rows": 3214,
+    "standardized_player_rows": 3284,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-    "standardized_substitution_rows": 789,
-    "note": "Latest re-read: 3,214 player rows across 82 match groups; 82 groups have both starting XIs and substitution-event records, 73 have both bench lists, 77 have complete appearance-status classification. Duplicate player/substitution keys and blank player source URLs: zero. Two August 22 fixtures have partial bench coverage; an ambiguous unused-bench assignment was withheld. One substitution event elsewhere has unresolved minute conflict."
+    "standardized_substitution_rows": 805,
+    "note": "Latest re-read: 3,284 player rows across 84 match groups; 84 groups have both starting XIs and substitution-event records, 74 have both bench lists, 78 have complete appearance-status classification. Duplicate player/substitution keys and blank player source URLs: zero. Several fixtures retain partial bench coverage where official retrieved pages did not expose full unused benches; one substitution event elsewhere has unresolved minute conflict."
   },
   "xg_xga_audit": {
     "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
@@ -205,13 +206,29 @@
         "bench": "partial; one ambiguous bench assignment withheld",
         "substitution_events": 10,
         "status": "partial"
+      },
+      {
+        "id": "34594",
+        "player_rows": 30,
+        "starters": 22,
+        "bench": "only 8 confirmed substitute appearances; unused bench not extracted",
+        "substitution_events": 8,
+        "status": "partial"
+      },
+      {
+        "id": "34595",
+        "player_rows": 40,
+        "starters": 22,
+        "bench": 18,
+        "substitution_events": 8,
+        "status": "verified"
       }
     ],
-    "current_player_rows": 3214,
-    "current_player_match_groups": 82,
-    "current_substitution_rows": 789,
-    "current_substitution_match_groups": 82,
-    "matches_missing_player_records": 48,
+    "current_player_rows": 3284,
+    "current_player_match_groups": 84,
+    "current_substitution_rows": 805,
+    "current_substitution_match_groups": 84,
+    "matches_missing_player_records": 46,
     "duplicate_player_keys": 0,
     "duplicate_substitution_keys": 0,
     "blank_player_source_urls": 0,
