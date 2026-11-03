@@ -9,9 +9,7 @@
     "unique": 10,
     "duplicate_count": 0,
     "completed_fixture_keys": [
-      "2026-10-23|Alaves|Malaga"
-    ],
-    "in_progress_fixture_keys": [
+      "2026-10-23|Alaves|Malaga",
       "2026-10-24|Rayo|Elche"
     ],
     "pending_fixture_count": 8
@@ -56,6 +54,53 @@
         "https://www.skysports.com/football/alaves-vs-malaga/teams/563014"
       ],
       "corrections": [],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-24",
+      "home": "Rayo",
+      "away": "Elche",
+      "score": "0-3",
+      "halftime_score": "0-2",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-elche-cf-10",
+        "https://www.skysports.com/football/rayo-vallecano-vs-elche/teams/563020"
+      ],
+      "corrections": [
+        {
+          "field": "three halftime substitution minutes",
+          "before": "46",
+          "after": "45",
+          "reason": "Detailed official commentary gives 45'; summary substitution cards show 46'."
+        }
+      ],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
     }
   ],
