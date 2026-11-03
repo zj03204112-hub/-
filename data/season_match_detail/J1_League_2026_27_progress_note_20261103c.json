@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-03",
+  "baseline_csv": "data/auto_results/J1_League_2026_27.csv",
+  "baseline_matches_through_2026-10-31": 126,
+  "latest_batch": "data/season_match_detail/J1_League_2026_27_official_checks_batch_20261103c.json",
+  "latest_batch_count": 10,
+  "latest_batch_date_range": "2026-09-19 to 2026-09-20",
+  "latest_batch_result": "10/10 date/team/score records match official J.LEAGUE schedule; 0 mismatches",
+  "documented_official_score_records_estimate": 57,
+  "pending_official_score_records_estimate": 69,
+  "score_audit_rate_pct_estimate": 45.2,
+  "baseline_match_level_xg_pairs_estimate": 7,
+  "independently_verified_match_level_xga_pairs": 0,
+  "structured_player_detail_matches": 2,
+  "complete_actual_appearance_tables": 0,
+  "new_xg_record": {
+    "match": "Kawasaki Frontale 3-3 Kashima Antlers",
+    "date": "2026-09-19",
+    "xg_home": 1.18,
+    "xg_away": 2.05,
+    "source": "https://www.jleague.jp/match/j1/2026/091909/live-commentary/"
+  },
+  "cautions": [
+    "Official match-record counts and pending counts are provisional audit-log estimates; perform a full deduplicated reconciliation before final completeness claims.",
+    "Only one match-level xG pair added in this batch; no xGA values inferred.",
+    "No player lineups or substitution events transcribed in this batch.",
+    "Original CSV, V5.1 and historical prediction snapshots unchanged."
+  ]
+}
