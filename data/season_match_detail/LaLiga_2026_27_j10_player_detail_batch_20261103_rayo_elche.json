@@ -75,14 +75,14 @@
         "team": "Rayo",
         "player_in": "Giorgi Tsitaishvili",
         "player_out": "Jorge de Frutos",
-        "minute": "46",
+        "minute": "45",
         "source": "https://www.laliga.com/es-MX/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-elche-cf-10"
       },
       {
         "team": "Rayo",
         "player_in": "Alexandre Alemão",
         "player_out": "Sergio Camello",
-        "minute": "46",
+        "minute": "45",
         "source": "https://www.laliga.com/es-MX/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-elche-cf-10"
       },
       {
@@ -110,7 +110,7 @@
         "team": "Elche",
         "player_in": "Facundo Buonanotte",
         "player_out": "Gonzalo Villar",
-        "minute": "46",
+        "minute": "45",
         "source": "https://www.laliga.com/es-MX/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-elche-cf-10"
       },
       {
@@ -145,12 +145,13 @@
     "notes": [
       "Official LaLiga event timeline card minutes used for substitution and appearance fields.",
       "Both starting XIs and substitute lists cross-checked against the free Sky Sports confirmed-lineup page.",
-      "Non-entering bench players marked substitute_not_appeared after checking the complete official substitution timeline."
+      "Non-entering bench players marked substitute_not_appeared after checking the complete official substitution timeline.",
+      "Canonical minute audit 2026-11-03: corrected the three halftime substitutions (Giorgi Tsitaishvili, Alexandre Alemão, Facundo Buonanotte) from summary-card 46' to detailed official commentary minute 45'."
     ]
   },
   "normalized_csv": {
     "players_rows": 46,
     "substitution_rows": 10
   },
-  "status": "source_checked_batch_created"
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
 }
