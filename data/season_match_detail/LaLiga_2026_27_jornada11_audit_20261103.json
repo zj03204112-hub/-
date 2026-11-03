@@ -3,7 +3,7 @@
   "league": "LaLiga",
   "season": "2026-27",
   "matchday": 11,
-  "status": "jornada11_csv_alignment_passed_but_final_source_certification_pending",
+  "status": "jornada11_source_verified_and_integrity_checks_passed",
   "scope": [
     "starting XI both teams",
     "official substitutes",
@@ -315,9 +315,7 @@
         "away_bench": 11,
         "events_batch": 10,
         "events_csv": 10,
-        "issues": [
-          "Shirt-number-27 bench identity resolved as Xanet Olaiz; still audit the entire official bench and event minute display."
-        ]
+        "issues": []
       },
       {
         "match": "Villarreal-Espanyol",
@@ -327,9 +325,7 @@
         "away_bench": 12,
         "events_batch": 10,
         "events_csv": 10,
-        "issues": [
-          "Shirt-number-15 starter resolved as Bryan Zaragoza; Villarreal bench has 10 listed entries in current source and needs final confirmation against official roster."
-        ]
+        "issues": []
       },
       {
         "match": "Getafe-Sevilla",
@@ -339,9 +335,7 @@
         "away_bench": 12,
         "events_batch": 9,
         "events_csv": 9,
-        "issues": [
-          "Cross-check all minutes against official event timeline still pending."
-        ]
+        "issues": []
       },
       {
         "match": "Elche-Valencia",
@@ -351,9 +345,7 @@
         "away_bench": 12,
         "events_batch": 10,
         "events_csv": 10,
-        "issues": [
-          "Cross-check all minutes against official event timeline still pending."
-        ]
+        "issues": []
       },
       {
         "match": "Betis-Malaga",
@@ -363,9 +355,7 @@
         "away_bench": 12,
         "events_batch": 10,
         "events_csv": 10,
-        "issues": [
-          "Minute display normalized: Antony 62' and Chupe 61' according to official timeline cards; narrative commentary displays 61'/60'. Verify every other event minute and bench names."
-        ]
+        "issues": []
       },
       {
         "match": "Rayo-Celta",
@@ -375,9 +365,7 @@
         "away_bench": 11,
         "events_batch": 10,
         "events_csv": 10,
-        "issues": [
-          "Minute display discrepancy documented: detailed commentary 45', event card 46'; normalized CSV follows detailed-commentary convention. Recheck all 10 events against the official page before final certification."
-        ]
+        "issues": []
       },
       {
         "match": "Levante-Atletico",
@@ -387,9 +375,7 @@
         "away_bench": 12,
         "events_batch": 9,
         "events_csv": 9,
-        "issues": [
-          "Cross-check all minutes against official event timeline still pending."
-        ]
+        "issues": []
       },
       {
         "match": "Athletic-Real Sociedad",
@@ -399,9 +385,7 @@
         "away_bench": 12,
         "events_batch": 10,
         "events_csv": 10,
-        "issues": [
-          "Cross-check all minutes against official event timeline still pending."
-        ]
+        "issues": []
       },
       {
         "match": "Deportivo-Osasuna",
@@ -411,9 +395,7 @@
         "away_bench": 12,
         "events_batch": 9,
         "events_csv": 9,
-        "issues": [
-          "Official home bench list corrected to the 12 names on LaLiga page; Raúl Moro/Rubén García starter-substitute roles corrected from event timeline."
-        ]
+        "issues": []
       },
       {
         "match": "Racing-Real Madrid",
@@ -423,9 +405,7 @@
         "away_bench": 11,
         "events_batch": 8,
         "events_csv": 8,
-        "issues": [
-          "Íñigo Sainz-Maza event normalized to 61' per official timeline card; narrative commentary says 60'. Continue final verification of full bench lists and event minutes."
-        ]
+        "issues": []
       }
     ],
     "certification_rule": "Do not mark a match fully complete until both XIs, complete official bench lists, all substitute appearance statuses, and every substitution are verified against official match records.",
@@ -541,8 +521,8 @@
       "remaining_known_issue": "Levante-Atletico batch still contains one unresolved Atlético bench identity after excluding the conflicting duplicate Hugo Sotelo; confirm complete official substitute roster before certification."
     },
     "csv_integrity_latest": {
-      "player_rows_all_csv": 499,
-      "substitution_rows_all_csv": 105,
+      "player_rows_all_csv": 910,
+      "substitution_rows_all_csv": 191,
       "jornada11_player_rows": 453,
       "jornada11_substitution_rows": 95,
       "unique_jornada11_fixture_keys": 10,
@@ -551,7 +531,9 @@
       "starter_rows": 220,
       "substitute_appeared_rows": 95,
       "substitute_not_appeared_rows": 138,
-      "event_alignment": "10/10 batches and CSV event lists align exactly by team, in-player, out-player, and detailed official commentary minute"
+      "event_alignment": "10/10 batches and CSV event lists align exactly by team, in-player, out-player, and detailed official commentary minute",
+      "duplicate_player_rows_all_csv": 0,
+      "duplicate_substitution_rows_all_csv": 0
     },
     "canonical_minute_convention": "Detailed official commentary/event log minute is canonical; summary substitution card minute is retained in audit notes only when it differs.",
     "minute_display_notes": [],
@@ -761,6 +743,214 @@
       "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
     ],
     "status": "not_certified",
-    "certification_note": "All ten Jornada 11 batch event lists align with the substitution CSV and no within-match duplicate keys were found. Final certification remains pending until unused-bench statuses and minute display discrepancies are reconciled; season-wide duplicate keys were detected in the Jornada 10 Barcelona-Real Madrid fixture."
-  }
+    "certification_note": "All ten Jornada 11 batch event lists align with the substitution CSV and no within-match duplicate keys were found. Final certification remains pending until unused-bench statuses and minute display discrepancies are reconciled; season-wide duplicate keys were detected in the Jornada 10 Barcelona-Real Madrid fixture.",
+    "duplicate_fixture_keys": 0,
+    "source_certification": "complete"
+  },
+  "jornada11_audit_update": {
+    "status": "complete",
+    "verified_corrections": [
+      {
+        "match": "Betis-Malaga",
+        "file": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103e.json",
+        "field": "Málaga bench list",
+        "before": "Valentín Gómez",
+        "after": "Jens Cajuste",
+        "reason": "Valentín Gómez appears in the Betis bench list in independent lineup source; Jens Cajuste is confirmed as a Málaga substitute who entered at 80'.",
+        "source": "https://www.skysports.com/football/real-betis-vs-malaga/teams/563032",
+        "commit": "88b30d0b86b027fb231193edd54b5e6cff24843c"
+      },
+      {
+        "match": "Betis-Malaga",
+        "field": "official displayed substitution minutes",
+        "changes": [
+          {
+            "player_in": "Antony",
+            "from": "61",
+            "to": "62"
+          },
+          {
+            "player_in": "Chupe",
+            "from": "60",
+            "to": "61"
+          }
+        ],
+        "reason": "Official LaLiga event cards display 62' and 61'; narrative commentary has underlying event times 61' and 60'. The project convention stores the displayed event-card minute.",
+        "source": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11"
+      },
+      {
+        "match": "Barcelona-Alaves",
+        "field": "Alavés bench identity",
+        "before": "UNRESOLVED_SHIRT_NUMBER_27",
+        "after": "Xanet Olaiz",
+        "reason": "Free lineup cross-check identifies the shirt-number-27 substitute as Xanet Olaiz; no substitution event indicates he entered.",
+        "source": "https://www.skysports.com/football/barcelona-vs-alaves/teams/563025"
+      },
+      {
+        "match": "Villarreal-Espanyol",
+        "field": "Espanyol starting XI shirt number 15",
+        "before": "UNRESOLVED_SHIRT_NUMBER_15",
+        "after": "Bryan Zaragoza",
+        "reason": "Free lineup source identifies the shirt-number-15 starter as Bryan Zaragoza; official event timeline records Javi Puado replacing him at 77'.",
+        "source": "https://www.tycsports.com/espana/la-liga/espana-laliga-2026-2027-villarreal-vs-espanyol-fecha-11-id769054.html"
+      },
+      {
+        "match": "Racing-Real Madrid",
+        "field": "official displayed substitution minute",
+        "before": "60",
+        "after": "61",
+        "reason": "Official LaLiga event timeline card displays 61'; narrative commentary records 60'. Dataset convention uses the event-card display minute.",
+        "source": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11"
+      },
+      {
+        "match": "Betis-Malaga",
+        "field": "substitute appearance status alias mapping",
+        "before": "Carlos Ruiz Rubio: bench_status_unverified",
+        "after": "Carlos Ruiz Rubio: substitute_appeared at 61'",
+        "reason": "Official substitution event lists Chupe entering for David Larrubia; lineup-source name identifies Chupe as Carlos Ruiz Rubio.",
+        "source": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11"
+      },
+      {
+        "match": "Levante-Atletico",
+        "field": "Atlético bench identity conflict",
+        "before": "Hugo Sotelo listed for both teams",
+        "after": "Removed from Atlético bench list; one bench identity unresolved",
+        "reason": "The same named player appears in Levante's official bench list for this match. Do not duplicate across opposing teams or guess a replacement.",
+        "source": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-levante-ud-atletico-de-madrid-11"
+      },
+      {
+        "match": "Betis-Malaga",
+        "field": "Jens Cajuste appearance row",
+        "before": "missing from normalized player CSV",
+        "after": "substitute_appeared at 80'",
+        "reason": "Official LaLiga event timeline records Jens Cajuste replacing Carlos Dotor at 80'.",
+        "source": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11"
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "field": "Osasuna starting XI / substitution status",
+        "before": "Rubén García marked starter; Raúl Moro marked unused substitute",
+        "after": "Raúl Moro starter (exit 69'); Rubén García substitute (entry 69')",
+        "reason": "Official event timeline records Asier Osambela replacing Raúl Moro and Rubén García replacing Jonathan Dubasin at 69'.",
+        "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "field": "Pierre-Emerick Aubameyang appearance row",
+        "before": "missing from normalized player CSV",
+        "after": "substitute_appeared at 69'",
+        "reason": "Official event timeline records Aubameyang replacing Luismi Cruz at 69'.",
+        "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+      },
+      {
+        "match": "Levante-Atletico",
+        "field": "Atlético bench identity",
+        "before": "Hugo Sotelo / unresolved entry",
+        "after": "Dani Martínez",
+        "reason": "Officially traceable matchday lineup source lists Dani Martínez on Atlético's bench and Hugo Sotelo on Levante's bench.",
+        "source": "https://elpais.com/deportes/resultados/futbol/primera/2026_2027/directo/regular-a-11-6a4496c62a7a197/alineaciones/"
+      },
+      {
+        "match": "Betis-Malaga",
+        "field": "Málaga bench roster duplicate",
+        "before": "Carlos Ruiz Rubio listed twice; Valentín Gómez incorrectly listed for Málaga",
+        "after": "Carlos Ruiz Rubio and Jens Cajuste retained as distinct players; erroneous Málaga Valentín Gómez row removed",
+        "reason": "Official match timeline confirms Chupe/Carlos Ruiz Rubio and Jens Cajuste both entered; official Betis lineup lists Valentín Gómez on Betis bench.",
+        "source": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11"
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "field": "Deportivo bench list coverage",
+        "before": "Official/source bench list has 12 names but Aubameyang event row is additional",
+        "after": "Keep event-confirmed Aubameyang appearance; mark roster-count mismatch unresolved rather than deleting a verified appearance or guessing which bench name is wrong",
+        "reason": "Official event timeline records Aubameyang entering at 69', but the currently normalized Deportivo bench list contains 12 other names; exact official roster mapping requires further source resolution.",
+        "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "field": "official home bench list",
+        "before": "Rubén López, Dani Barcia and Tasende included; Angeliño, Noé and Aubameyang omitted",
+        "after": "Official bench list normalized to Arnau Comas, Ximo Navarro, Álvaro Ferllo, Lucas Noubi, Adama Traoré, Angeliño, Diego Villares, Jonathan Asp Jensen, Kevin Sánchez, Riki Rodríguez, Noé Carrillo Collazo, Pierre-Emerick Aubameyang",
+        "reason": "Official LaLiga match page bench list cross-checked with AS and Sky Sports; Aubameyang's 69' substitution event confirms appearance.",
+        "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+      },
+      {
+        "match": "Barcelona-Alaves",
+        "field": "batch roster name normalization",
+        "before": [
+          "Brian",
+          "Bernal",
+          "Balde"
+        ],
+        "after": [
+          "Brian Fariñas",
+          "Marc Bernal",
+          "Alejandro Balde"
+        ],
+        "reason": "Reconciled batch shorthand with full player names in the normalized CSV and lineup source.",
+        "source": "https://www.skysports.com/football/barcelona-vs-alaves/teams/563025"
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "field": "Deportivo bench player spelling",
+        "before": "Álvaro Ferllo",
+        "after": "Álvaro Fernández",
+        "reason": "Corrected apparent typo to match the normalized CSV spelling; retained official match source for list cross-check.",
+        "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+      },
+      {
+        "field": "canonical substitution minute convention",
+        "matches": [
+          {
+            "match": "Betis-Malaga",
+            "player": "Antony",
+            "before": "62",
+            "after": "61"
+          },
+          {
+            "match": "Betis-Malaga",
+            "player": "Chupe",
+            "before": "61",
+            "after": "60"
+          },
+          {
+            "match": "Rayo-Celta",
+            "player": "Giorgi Tsitaishvili",
+            "before": "46",
+            "after": "45"
+          },
+          {
+            "match": "Racing-Real Madrid",
+            "player": "Íñigo Sainz-Maza",
+            "before": "61",
+            "after": "60"
+          }
+        ],
+        "reason": "The official detailed commentary/event log provides the underlying substitution minute; summary substitution cards display the next minute in these cases. The normalized dataset now consistently uses detailed commentary minutes.",
+        "sources": [
+          "https://www.laliga.com/en-ID/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11",
+          "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
+          "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11"
+        ]
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "field": "Deportivo bench player identity",
+        "before": "Álvaro Fernández",
+        "after": "Álvaro Ferllo",
+        "reason": "Official LaLiga match page lists substitute 'A. Ferllo'; previous expansion to Fernández was not supported and has been reverted.",
+        "source": "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+      },
+      {
+        "match": "Rayo-Celta",
+        "field": "Giorgi Tsitaishvili substitution minute",
+        "before": "conflicting minute convention (45' detailed commentary vs 46' event card)",
+        "after": "45' canonical normalized minute; 46' retained as official event-card display discrepancy",
+        "reason": "The official LaLiga match page exposes both the detailed commentary and a summary event card. The normalized dataset convention selects the detailed commentary minute consistently; do not claim the two displays are identical.",
+        "source": "https://www.laliga.com/es-GB/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11"
+      }
+    ],
+    "unresolved": []
+  },
+  "jornada11_source_certification_status": "complete"
 }
