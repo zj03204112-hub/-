@@ -149,14 +149,20 @@
       "home": "Celta",
       "away": "Betis",
       "score": "0-0",
-      "official_match_url": "https://www.laliga.com/es-MX/partido/temporada-2026-2027-laliga-ea-sports-rc-celta-real-betis-10",
+      "official_match_url": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rc-celta-real-betis-10",
       "official_match_url_status": "found",
-      "starting_xi_status": "pending_source_audit",
-      "bench_status": "pending_source_audit",
-      "appearance_status": "pending_source_audit",
-      "substitutions_status": "pending_source_audit",
-      "player_detail_batch": null,
-      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them."
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_home_11_away_12_official_lists",
+      "appearance_status": "verified_10_entrants_and_13_unused_bench_players",
+      "substitutions_status": "verified_10_events",
+      "player_detail_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_celta_betis.json",
+      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them.",
+      "official_detail_page_found": true,
+      "detail_status": "complete_source_crosscheck_and_structural_audit_passed",
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rc-celta-real-betis-10",
+        "https://www.skysports.com/football/celta-vigo-vs-real-betis/teams/563018"
+      ]
     },
     {
       "date": "2026-10-25",
@@ -210,31 +216,32 @@
   },
   "normalized_batches_created": 1,
   "normalized_fixtures": 1,
-  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_athletic_getafe.json",
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_celta_betis.json",
   "completed_fixture_keys": [
     "2026-10-23|Alaves|Malaga",
     "2026-10-24|Rayo|Elche",
     "2026-10-24|Racing|Espanyol",
     "2026-10-24|Valencia|Villarreal",
     "2026-10-24|Atletico|Deportivo",
-    "2026-10-25|Athletic|Getafe"
+    "2026-10-25|Athletic|Getafe",
+    "2026-10-25|Celta|Betis"
   ],
   "jornada10_progress": {
     "fixtures_expected": 10,
-    "fixtures_with_detail_batches": 6,
-    "fixtures_source_audited_complete": 6,
-    "remaining_without_detail_batches": 4,
+    "fixtures_with_detail_batches": 7,
+    "fixtures_source_audited_complete": 7,
+    "remaining_without_detail_batches": 3,
     "completed": [
       "Alaves-Malaga",
       "Rayo-Elche",
       "Racing-Espanyol",
       "Valencia-Villarreal",
       "Atletico-Deportivo",
-      "Athletic-Getafe"
+      "Athletic-Getafe",
+      "Celta-Betis"
     ],
     "in_progress": [],
     "remaining": [
-      "Celta-Betis",
       "Real Sociedad-Levante",
       "Barcelona-Real Madrid",
       "Sevilla-Osasuna"
