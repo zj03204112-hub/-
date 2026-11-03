@@ -3,7 +3,7 @@
   "league": "LaLiga",
   "season": "2026-27",
   "matchday": 11,
-  "status": "complete_structural_and_event_audit",
+  "status": "structural_and_csv_event_crosscheck_complete_source_certification_pending",
   "scope": [
     "starting XI both teams",
     "official substitutes",
@@ -177,9 +177,11 @@
     }
   ],
   "pending_checks": [
-    "Audit all 10 Jornada 11 matches one by one; batches existing does not mean audited.",
-    "Cross-check official substitution timeline against every normalized CSV event row.",
-    "Do not mark non-entering substitutes as appeared/not appeared without complete, source-backed event evidence."
+    "Official match pages render starting lineups, bench lists and event timelines inconsistently across languages; recheck any missing names against a second free source before marking complete.",
+    "Resolve whether official event-card minute or detailed commentary minute is the canonical stored minute for Betis-Malaga (Antony, Chupe), Rayo-Celta (Tsitaishvili), and Racing-Real Madrid (Íñigo Sainz-Maza); preserve both if sources disagree.",
+    "Verify Villarreal's 10-player bench and Getafe/Rayo/Celta/Racing bench list counts against official match sheets; do not infer missing substitutes.",
+    "Confirm the official Atlético bench list for Levante-Atlético after the Hugo Sotelo/Dani Martínez name conflict has been corrected.",
+    "After source-level issues are resolved, certify each match separately; do not mark all 10 fully complete solely because CSV and batch rows align."
   ],
   "jornada10_queue_file": "data/season_match_detail/LaLiga_2026_27_jornada10_collection_queue_20261103.json",
   "jornada10_fixtures": [
@@ -506,6 +508,22 @@
       "status": "applied",
       "corrections": 4,
       "remaining_known_issue": "Levante-Atletico batch still contains one unresolved Atlético bench identity after excluding the conflicting duplicate Hugo Sotelo; confirm complete official substitute roster before certification."
+    },
+    "csv_integrity_latest": {
+      "player_rows_all_csv": 499,
+      "substitution_rows_all_csv": 105,
+      "jornada11_player_rows": 453,
+      "jornada11_substitution_rows": 95,
+      "unique_jornada11_fixture_keys": 10,
+      "duplicate_player_rows_j11": 0,
+      "duplicate_substitution_rows_j11": 0,
+      "appearance_status_counts": {
+        "started": 220,
+        "substitute_not_appeared": 138,
+        "substitute_appeared": 95
+      },
+      "batch_csv_event_alignment": "all 10 Jornada 11 batches have the same event count as their CSV match rows and all in/out names and minutes align after documented alias mapping; source-level discrepancies are separately retained.",
+      "fully_certified_matches": 0
     }
   }
 }
