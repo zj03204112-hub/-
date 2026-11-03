@@ -1,0 +1,131 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 11,
+  "status": "in_progress_not_certified",
+  "scope": [
+    "starting XI both teams",
+    "official substitutes",
+    "actual appearance status",
+    "substitution player in/out",
+    "official minute"
+  ],
+  "source_policy": "Free, traceable sources only; do not estimate or fabricate; unresolved values remain blank.",
+  "corrections_applied": [
+    {
+      "match": "Betis-Malaga",
+      "file": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103e.json",
+      "field": "Málaga bench list",
+      "before": "Valentín Gómez",
+      "after": "Jens Cajuste",
+      "reason": "Valentín Gómez appears in the Betis bench list in independent lineup source; Jens Cajuste is confirmed as a Málaga substitute who entered at 80'.",
+      "source": "https://www.skysports.com/football/real-betis-vs-malaga/teams/563032",
+      "commit": "88b30d0b86b027fb231193edd54b5e6cff24843c"
+    },
+    {
+      "match": "Rayo-Celta",
+      "file": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103f.json",
+      "field": "Giorgi Tsitaishvili substitution minute",
+      "before": "45",
+      "after": "46",
+      "reason": "Official LaLiga event display shows 46'; normalized players/substitution CSVs also corrected.",
+      "source": "https://www.laliga.com/es-GB/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
+      "commits": [
+        "016d6eb95df5a2fb2c8043b3ecf6a38d0f9a3ffe",
+        "2c4103879dfc174aa5c07e93d1fab85a8fd0fbf4",
+        "c35424d7f20c17e48f7aaa863af25465f5520b46"
+      ]
+    }
+  ],
+  "pending_checks": [
+    "Audit all 10 Jornada 11 matches one by one; batches existing does not mean audited.",
+    "Resolve Alavés substitute identity shown only as shirt number 27.",
+    "Resolve Espanyol player identity shown only as shirt number 15.",
+    "Cross-check official substitution timeline against every normalized CSV event row.",
+    "Do not mark non-entering substitutes as appeared/not appeared without complete, source-backed event evidence."
+  ],
+  "jornada10_queue_file": "data/season_match_detail/LaLiga_2026_27_jornada10_collection_queue_20261103.json",
+  "jornada10_fixtures": [
+    {
+      "date": "2026-10-23",
+      "home": "Alaves",
+      "away": "Malaga",
+      "score": "1-1",
+      "official_match_url": "https://www.laliga.com/en-NG/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-malaga-cf-10",
+      "detail_status": "pending"
+    },
+    {
+      "date": "2026-10-24",
+      "home": "Rayo",
+      "away": "Elche",
+      "score": "0-3",
+      "official_match_url": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-elche-cf-10",
+      "detail_status": "pending"
+    },
+    {
+      "date": "2026-10-24",
+      "home": "Racing",
+      "away": "Espanyol",
+      "score": "2-1",
+      "official_match_url": "https://www.laliga.com/es-GB/partido/temporada-2026-2027-laliga-ea-sports-r-racing-club-rcd-espanyol-de-barcelona-10",
+      "detail_status": "pending"
+    },
+    {
+      "date": "2026-10-24",
+      "home": "Valencia",
+      "away": "Villarreal",
+      "score": "1-2",
+      "official_match_url": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-valencia-cf-villarreal-cf-10",
+      "detail_status": "pending"
+    },
+    {
+      "date": "2026-10-24",
+      "home": "Atletico",
+      "away": "Deportivo",
+      "score": "1-0",
+      "official_match_url": null,
+      "detail_status": "pending"
+    },
+    {
+      "date": "2026-10-25",
+      "home": "Athletic",
+      "away": "Getafe",
+      "score": "4-0",
+      "official_match_url": null,
+      "detail_status": "pending"
+    },
+    {
+      "date": "2026-10-25",
+      "home": "Celta",
+      "away": "Betis",
+      "score": "0-0",
+      "official_match_url": null,
+      "detail_status": "pending"
+    },
+    {
+      "date": "2026-10-25",
+      "home": "Real Sociedad",
+      "away": "Levante",
+      "score": "2-1",
+      "official_match_url": null,
+      "detail_status": "pending"
+    },
+    {
+      "date": "2026-10-25",
+      "home": "Barcelona",
+      "away": "Real Madrid",
+      "score": "1-2",
+      "official_match_url": null,
+      "detail_status": "pending"
+    },
+    {
+      "date": "2026-10-26",
+      "home": "Sevilla",
+      "away": "Osasuna",
+      "score": "2-0",
+      "official_match_url": null,
+      "detail_status": "pending"
+    }
+  ]
+}
