@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "results_fixtures": 109,
+  "unique_fixture_keys": 109,
+  "fixtures_with_normalized_player_detail": 4,
+  "player_csv_rows": 202,
+  "substitution_csv_rows": 39,
+  "matches_with_both_starting_xis_entered": 3,
+  "matches_with_partial_unresolved_identity": 2,
+  "fully_complete_matches": 0,
+  "fixtures_without_normalized_player_detail": 105,
+  "batches": [
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103b.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103c.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103d.json"
+  ],
+  "gaps": [
+    "Barcelona-Alaves: one Alaves bench entry shown only as shirt number 27 unresolved.",
+    "Villarreal-Espanyol: one Espanyol starting player shown only as shirt number 15 unresolved.",
+    "Non-entering bench player appearance status remains unverified unless independently sourced.",
+    "105 fixtures still need starting XI, bench list, appearance status and substitutions."
+  ],
+  "policy": [
+    "Free sources only",
+    "No guessed names",
+    "No xG/xGA in this pass",
+    "Unresolved fields remain blank"
+  ],
+  "sources": [
+    "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-villarreal-cf-rcd-espanyol-de-barcelona-11",
+    "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11",
+    "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-valencia-cf-11"
+  ]
+}
