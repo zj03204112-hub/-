@@ -1,0 +1,94 @@
+{
+  "prediction_id": "research-xg-poisson-20261103-1500-shakhtar-sporting",
+  "match": {
+    "competition": "UEFA Champions League",
+    "competition_type": "continental_club",
+    "home": "Shakhtar Donetsk",
+    "away": "Sporting CP",
+    "kickoff_utc": "2026-11-03T17:45:00Z",
+    "kickoff_beijing": "2026-11-04T01:45:00+08:00",
+    "venue": "Stamford Bridge, London"
+  },
+  "snapshot_time_beijing": "2026-11-03T14:55:48+08:00",
+  "window_hours_at_1500": 10.75,
+  "window_eligible": true,
+  "model": {
+    "version": "RESEARCH-XG-POISSON-v1.0",
+    "status": "shadow_research_not_production",
+    "method": "Independent Poisson score grid using a third-party pre-match projected-xG pair; half-time uses 45% of expected goals. Not V5.1 or V5.2.",
+    "source_xg_type": "third_party_model_projection_not_measured_match_xg",
+    "backtest_status": "not_backtested"
+  },
+  "projected_xg": {
+    "home": 1.25,
+    "away": 1.7,
+    "source": "bookmakers.market model estimate",
+    "source_url": "https://bookmakers.market/football/europe/champions-league/shakhtar-donetsk-vs-sporting-cp-2026-11-03/"
+  },
+  "predictions": {
+    "top_scores": [
+      {
+        "score": "1-1",
+        "probability_pct": 11.12
+      },
+      {
+        "score": "1-2",
+        "probability_pct": 9.45
+      }
+    ],
+    "hda_pct": {
+      "home": 28.2,
+      "draw": 23.9,
+      "away": 48
+    },
+    "pick": "客胜倾向，防平",
+    "half_full_time": {
+      "pick": "负/负",
+      "probability_pct": 29.5,
+      "method": "45% first-half goal split; low-confidence research estimate"
+    },
+    "sporttery_handicap_result": "无法核验：官方竞彩让球盘口缺失"
+  },
+  "market": {
+    "third_party_1x2_open_current": {
+      "opening": "3.90/3.96/2.02",
+      "current_best": "3.90/3.96/2.02"
+    },
+    "third_party_total_market_movement": "Odds.Directory: total line 3.0→2.75; over 1.78→1.90, under 2.05→1.92.",
+    "third_party_asian_reference": "Odds.Directory reports line moved 0→Shakhtar +0.75/Sporting -0.75; reference only, not used for 竞彩 mapping.",
+    "official_sporttery_handicap": null,
+    "captured_at_beijing": "2026-11-03T14:55:48+08:00",
+    "upstream_tick_timestamp": "not exposed"
+  },
+  "team_context": {
+    "recent_form": {
+      "home": "WWLDW",
+      "away": "WLLWW"
+    },
+    "tactics": {
+      "home": "likely 4-1-4-1 / 4-2-3-1",
+      "away": "4-2-3-1"
+    },
+    "injuries": "Reports list Shakhtar Pedrinho/Eguinaldo/Marlon as unavailable or doubtful; Sporting Zeno Debast, Rodrigo Zalazar and Nuno Santos reported out, with Irankunda fitness uncertain. Not all absences independently confirmed.",
+    "probable_lineups": "not official; starting XIs not yet released",
+    "referee": "Ivan Kružliak (UEFA official)",
+    "weather": "Stamford Bridge forecast near 10°C, mostly cloudy/partly cloudy, no material rain signal around kickoff.",
+    "schedule_motivation": "neutral/relocated venue reduces Shakhtar's normal home advantage; next-opponent importance not fully verified."
+  },
+  "my_confidence_10": 5,
+  "data_completeness": "9/13 core fields; partial",
+  "risks": [
+    "Match is played at Stamford Bridge rather than Shakhtar's normal home venue.",
+    "Starting XI and several injury statuses remain unconfirmed.",
+    "Third-party odds pages show differing market levels; upstream tick time unavailable.",
+    "Official Sporttery handicap absent.",
+    "Projected xG is a third-party model estimate, not actual match xG."
+  ],
+  "strategy_id": "RESEARCH-XG-POISSON-20261103-1500-02",
+  "sources": [
+    "https://it.uefa.com/uefachampionsleague/match/2049613/",
+    "https://bookmakers.market/football/europe/champions-league/shakhtar-donetsk-vs-sporting-cp-2026-11-03/",
+    "https://legalbet.pt/centro-apostas/shakhtar-donetsk-sporting-cp-03-11-2026/",
+    "https://meteo.uk/39832/stamford-bridge/hour"
+  ]
+}
