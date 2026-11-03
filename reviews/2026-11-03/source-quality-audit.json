@@ -1,0 +1,40 @@
+{
+  "generated_at_beijing": "2026-11-03T10:22:00+08:00",
+  "leisu_checks": [
+    {
+      "competition": "Premier League",
+      "url": "https://www.leisu.com/yc/fixtures",
+      "finding": "Liverpool-Arsenal result visible; some subsequent completed fixtures still displayed as not started."
+    },
+    {
+      "competition": "La Liga",
+      "url": "https://www.leisu.com/xj/fixtures",
+      "finding": "Relevant 2026-11-02 result rows were not fully available in the page snapshot."
+    },
+    {
+      "competition": "Bundesliga",
+      "url": "https://www.leisu.com/dj/fixtures",
+      "finding": "Frankfurt-Hamburger SV still displayed as not started despite independent full-time record."
+    },
+    {
+      "competition": "Serie A",
+      "url": "https://www.leisu.com/yj/fixtures",
+      "finding": "Sassuolo-Fiorentina and Atalanta-Parma displayed stale not-started status after completion."
+    },
+    {
+      "competition": "Ligue 1",
+      "url": "https://www.leisu.com/fj/fixtures",
+      "finding": "Relevant matchday result rows incomplete."
+    }
+  ],
+  "conclusion": "Leisu was prioritized but its accessible fixture pages were stale/incomplete for several leagues at audit time. Final scores were cross-checked against FotMob match pages and AP/Reuters reporting; no stale Leisu status was treated as a final result.",
+  "xg_providers": {
+    "FotMob": "Provider match-level model estimates; FotMob match pages identify Opta-powered stats; model version not disclosed.",
+    "Cornerflick": "Third-party model estimate from preserved W45 snapshot; model version not disclosed."
+  },
+  "raw_payload_sha256_archived": 0,
+  "raw_html_api_payloads_archived": 0,
+  "provider_event_ids_resolved": 0,
+  "source_timestamp_quality": "Run-time capture timestamp recorded; upstream source publication/capture timestamp not consistently exposed.",
+  "database_connected": false
+}
