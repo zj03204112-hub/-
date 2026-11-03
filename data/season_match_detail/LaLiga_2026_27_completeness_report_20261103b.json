@@ -4,13 +4,13 @@
   "season": "2026-27",
   "results_fixtures": 109,
   "unique_fixture_keys": 109,
-  "fixtures_with_normalized_player_detail": 32,
-  "player_csv_rows": 1459,
-  "substitution_csv_rows": 310,
-  "matches_with_both_starting_xis_entered": 32,
+  "fixtures_with_normalized_player_detail": 33,
+  "player_csv_rows": 1503,
+  "substitution_csv_rows": 320,
+  "matches_with_both_starting_xis_entered": 33,
   "matches_with_partial_unresolved_identity": 0,
-  "fully_complete_matches": 32,
-  "fixtures_without_normalized_player_detail": 77,
+  "fully_complete_matches": 33,
+  "fixtures_without_normalized_player_detail": 76,
   "batches": [
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103b.json",
@@ -44,7 +44,7 @@
     "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_getafe_rayo.json"
   ],
   "gaps": [
-    "77 of 109 LaLiga 2026-27 result fixtures remain without normalized player-detail batches. Jornada 11, Jornada 10 and Jornada 9 are complete; Jornada 8 has two of nine played fixtures audited, with Rayo-Athletic postponed/rescheduled."
+    "76 of 109 LaLiga 2026-27 result fixtures remain without normalized player-detail batches. Jornada 11, Jornada 10 and Jornada 9 are complete; Jornada 8 has three of nine played fixtures audited, with Rayo-Athletic postponed/rescheduled."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -386,18 +386,18 @@
     "status": "passed",
     "result_fixture_rows": 109,
     "unique_result_fixture_keys": 109,
-    "detail_fixture_keys": 32,
-    "detail_fixture_keys_unique": 32,
+    "detail_fixture_keys": 33,
+    "detail_fixture_keys_unique": 33,
     "detail_keys_missing_from_results": 0,
-    "player_rows": 1459,
-    "unique_player_rows": 1459,
+    "player_rows": 1503,
+    "unique_player_rows": 1503,
     "duplicate_player_rows": 0,
-    "substitution_rows": 310,
-    "unique_substitution_rows": 310,
+    "substitution_rows": 320,
+    "unique_substitution_rows": 320,
     "duplicate_substitution_rows": 0,
-    "starting_xi_rows": 704,
-    "bench_appeared_rows": 310,
-    "bench_not_appeared_rows": 445,
+    "starting_xi_rows": 726,
+    "bench_appeared_rows": 320,
+    "bench_not_appeared_rows": 457,
     "matches_with_event_batch_csv_mismatch": 0,
     "jornada11": {
       "fixtures": 10,
@@ -422,8 +422,8 @@
     },
     "jornada8": {
       "played_fixtures": 9,
-      "fixtures_with_detail": 2,
-      "unique_fixture_keys": 2,
+      "fixtures_with_detail": 3,
+      "unique_fixture_keys": 3,
       "postponed_pending": 1
     }
   },
@@ -438,9 +438,9 @@
   "jornada8_progress": {
     "fixtures_expected": 10,
     "played_fixtures": 9,
-    "fixtures_with_detail_batches": 2,
-    "fixtures_source_audited_complete": 2,
-    "remaining_played_without_detail_batches": 7,
+    "fixtures_with_detail_batches": 3,
+    "fixtures_source_audited_complete": 3,
+    "remaining_played_without_detail_batches": 6,
     "postponed_pending": 1
   }
 }
