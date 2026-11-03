@@ -1921,5 +1921,138 @@
       "after": "46"
     }
   ],
-  "jornada10_queue_file": "data/season_match_detail/LaLiga_2026_27_jornada10_collection_queue_20261103.json"
+  "jornada10_queue_file": "data/season_match_detail/LaLiga_2026_27_jornada10_collection_queue_20261103.json",
+  "jornada11_structural_audit": {
+    "total_jornada11_batches": 10,
+    "unique_fixture_keys_in_player_detail": 10,
+    "duplicate_player_rows_in_jornada11": 0,
+    "duplicate_substitution_rows_in_jornada11": 0,
+    "total_player_rows": 451,
+    "total_substitution_event_rows": 95,
+    "matches_with_11_starters_for_both_teams": 8,
+    "matches_with_starting_xi_or_identity_gaps": 2,
+    "per_match": [
+      {
+        "match": "Barcelona-Alaves",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 11,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Alavés bench list incomplete/one identity unresolved; verify official list."
+        ]
+      },
+      {
+        "match": "Villarreal-Espanyol",
+        "home_starting_xi": 11,
+        "away_starting_xi": 10,
+        "home_bench": 10,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Espanyol starting XI has only 10 named players; one starter identity unresolved; Villarreal bench count 10 needs source check."
+        ]
+      },
+      {
+        "match": "Getafe-Sevilla",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 11,
+        "away_bench": 12,
+        "events_batch": 9,
+        "events_csv": 9,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Elche-Valencia",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Betis-Malaga",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Minute display normalized: Antony 62' and Chupe 61' according to official timeline cards; narrative commentary displays 61'/60'. Verify every other event minute and bench names."
+        ]
+      },
+      {
+        "match": "Rayo-Celta",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 11,
+        "away_bench": 11,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Official timeline card shows Giorgi Tsitaishvili at 46', while narrative commentary records 45'; keep display minute 46 and preserve source discrepancy."
+        ]
+      },
+      {
+        "match": "Levante-Atletico",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 9,
+        "events_csv": 9,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Athletic-Real Sociedad",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 9,
+        "events_csv": 9,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Racing-Real Madrid",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 11,
+        "away_bench": 11,
+        "events_batch": 8,
+        "events_csv": 8,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      }
+    ],
+    "certification_rule": "Do not mark a match fully complete until both XIs, complete official bench lists, all substitute appearance statuses, and every substitution are verified against official match records."
+  }
 }
