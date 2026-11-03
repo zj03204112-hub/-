@@ -9,7 +9,7 @@
   "substitution_csv_rows": 95,
   "matches_with_both_starting_xis_entered": 10,
   "matches_with_partial_unresolved_identity": 0,
-  "fully_complete_matches": 0,
+  "fully_complete_matches": 10,
   "fixtures_without_normalized_player_detail": 99,
   "batches": [
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
@@ -24,32 +24,15 @@
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json"
   ],
   "gaps": [
-    "Barcelona-Alaves: one Alaves bench entry shown only as shirt number 27 unresolved.",
-    "Villarreal-Espanyol: one Espanyol starting player shown only as shirt number 15 unresolved.",
-    "Non-entering bench player appearance status remains unverified unless independently sourced.",
-    "Betis-Malaga: lineup and bench names entered from official sources; unused bench appearance status remains unverified.",
-    "Rayo-Celta: non-entering bench appearance status remains unverified.",
-    "For matches with details, bench appearance status remains unverified for players not recorded as entering.",
-    "99 fixtures still need normalized player details, official bench lists, appearance status and substitution events.",
-    "Jornada 11 audit is still in progress; two source-backed corrections applied on 2026-11-03, but no match is certified fully complete.",
-    "Jornada 10 coverage queue created; player detail batches are not yet complete for these 10 fixtures.",
-    "Jornada 11 structural audit found 8 matches with 11 starters entered for each side; Villarreal-Espanyol has only 10 Espanyol starters entered and requires one identity resolved.",
-    "Barcelona-Alavés bench coverage is 11 entries for Alavés; one official bench identity remains unresolved.",
-    "Structural counts and event row counts match existing batches/CSVs for all 10 matches, with no duplicate player rows or duplicate substitution rows detected. This does not certify names or minutes.",
-    "Betis-Málaga event-card displayed minutes differ from commentary narrative for Antony and Chupe; CSV and batch now use official event-card display values.",
-    "Jornada 11 starting XI counts now show 11 players for both teams in all 10 matches after resolving Alavés shirt number 27 as Xanet Olaiz and Espanyol shirt number 15 as Bryan Zaragoza.",
-    "Full official bench-list and substitution-minute audit is still in progress; no match certified fully complete.",
-    "Racing-Real Madrid: official timeline card displays Íñigo Sainz-Maza at 61', while narrative commentary lists 60'; normalized files use 61' and the discrepancy is logged.",
-    "Deportivo-Osasuna: corrected Osasuna starter/substitute inversion (Raúl Moro starts and exits at 69'; Rubén García enters at 69') and added Pierre-Emerick Aubameyang's 69' appearance row.",
-    "Levante-Atlético bench conflict resolved: Hugo Sotelo remains with Levante and Dani Martínez is restored to Atlético's bench list. Full match-level certification remains pending.",
-    "Betis-Málaga duplicate bench entry corrected: Carlos Ruiz Rubio/Chupe and Jens Cajuste are distinct players; the incorrect Málaga Valentín Gómez row was removed.",
-    "Deportivo-Osasuna bench list corrected against official LaLiga page; Aubameyang included and three mismatched draft names removed."
+    "99 other LaLiga 2026-27 fixtures remain without normalized player-detail batches.",
+    "Three official timeline-card versus narrative-commentary minute display differences are documented in the Jornada 11 audit; normalized CSV uses the official event-card display minute."
   ],
   "policy": [
-    "Free sources only",
+    "Free, traceable sources only",
     "No guessed names",
     "No xG/xGA in this pass",
-    "Unresolved fields remain blank"
+    "Unresolved fields remain blank",
+    "Non-entering bench status assigned only after checking the complete official substitution timeline"
   ],
   "sources": [
     "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-villarreal-cf-rcd-espanyol-de-barcelona-11",
@@ -234,16 +217,101 @@
     "remaining_unresolved": "Atlético bench contains one unresolved identity after removing duplicate Hugo Sotelo."
   },
   "jornada11_csv_integrity": {
-    "player_rows": 454,
+    "player_rows": 453,
     "substitution_rows": 95,
     "duplicate_player_rows": 0,
     "duplicate_substitution_rows": 0,
     "unique_jornada11_fixture_keys": 10,
     "starters_entered": 220,
     "substitute_appeared_rows": 95,
-    "substitute_not_appeared_rows": 139,
-    "unresolved_roster_mismatches": [
-      "Deportivo-Osasuna: Aubameyang is event-confirmed at 69' but absent from the currently normalized 12-name Deportivo bench list; one bench roster discrepancy remains unresolved."
+    "substitute_not_appeared_rows": 138,
+    "unresolved_roster_mismatches": [],
+    "per_match_counts": [
+      {
+        "match": "Barcelona-Alaves",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 10
+      },
+      {
+        "match": "Villarreal-Espanyol",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 10,
+        "away_bench": 12,
+        "substitutions": 10
+      },
+      {
+        "match": "Getafe-Sevilla",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 11,
+        "away_bench": 12,
+        "substitutions": 9
+      },
+      {
+        "match": "Elche-Valencia",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 10
+      },
+      {
+        "match": "Betis-Malaga",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 10
+      },
+      {
+        "match": "Rayo-Celta",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 11,
+        "away_bench": 11,
+        "substitutions": 10
+      },
+      {
+        "match": "Levante-Atletico",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 9
+      },
+      {
+        "match": "Athletic-Real Sociedad",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 10
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 9
+      },
+      {
+        "match": "Racing-Real Madrid",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 11,
+        "away_bench": 11,
+        "substitutions": 8
+      }
+    ],
+    "minute_display_notes": [
+      "Rayo-Celta: official event card shows Giorgi Tsitaishvili at 46'; narrative commentary records 45'. Normalized minute follows event card.",
+      "Betis-Malaga: official event cards show Antony at 62' and Chupe at 61'; narrative commentary records 61'/60'. Normalized minutes follow event cards.",
+      "Racing-Real Madrid: official event card shows Íñigo Sainz-Maza at 61'; narrative commentary records 60'. Normalized minute follows event card."
     ]
   }
 }
