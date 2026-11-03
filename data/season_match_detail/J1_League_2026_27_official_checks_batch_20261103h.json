@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "J1 League",
+  "season": "2026/27",
+  "baseline_window": "2026-08-07 to 2026-10-31",
+  "source": "Official J.LEAGUE individual match pages",
+  "scope": "Six additional 2026-08-08 matches row-by-row checked against official match pages; score verification only, not player-detail or xG verification.",
+  "verified_matches": [
+    {
+      "date": "2026-08-08",
+      "home": "柏",
+      "away": "水戸",
+      "score": "2-1",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/080801/",
+      "status": "matched_individual_official_match_page",
+      "evidence": "Official J.LEAGUE individual match page confirms match date, home/away teams and full-time score; player details and xG/xGA require separate extraction."
+    },
+    {
+      "date": "2026-08-08",
+      "home": "FC東京",
+      "away": "町田",
+      "score": "1-5",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/080802/",
+      "status": "matched_individual_official_match_page",
+      "evidence": "Official J.LEAGUE individual match page confirms match date, home/away teams and full-time score; player details and xG/xGA require separate extraction."
+    },
+    {
+      "date": "2026-08-08",
+      "home": "名古屋",
+      "away": "清水",
+      "score": "0-1",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/080803/",
+      "status": "matched_individual_official_match_page",
+      "evidence": "Official J.LEAGUE individual match page confirms match date, home/away teams and full-time score; player details and xG/xGA require separate extraction."
+    },
+    {
+      "date": "2026-08-08",
+      "home": "Ｃ大阪",
+      "away": "岡山",
+      "score": "2-1",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/080804/",
+      "status": "matched_individual_official_match_page",
+      "evidence": "Official J.LEAGUE individual match page confirms match date, home/away teams and full-time score; player details and xG/xGA require separate extraction."
+    },
+    {
+      "date": "2026-08-08",
+      "home": "福岡",
+      "away": "神戸",
+      "score": "0-1",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/080805/",
+      "status": "matched_individual_official_match_page",
+      "evidence": "Official J.LEAGUE individual match page confirms match date, home/away teams and full-time score; player details and xG/xGA require separate extraction."
+    },
+    {
+      "date": "2026-08-08",
+      "home": "広島",
+      "away": "千葉",
+      "score": "3-0",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/080806/",
+      "status": "matched_individual_official_match_page",
+      "evidence": "Official J.LEAGUE individual match page confirms match date, home/away teams and full-time score; player details and xG/xGA require separate extraction."
+    }
+  ],
+  "count_summary": {
+    "newly_verified_baseline_rows": 6,
+    "official_individual_match_pages_opened": 6,
+    "score_conflicts": 0,
+    "identity_conflicts": 0,
+    "player_detail_records_added": 0,
+    "xg_pairs_added": 0,
+    "xga_pairs_added": 0
+  },
+  "integrity_rules": [
+    "Official score verification does not mean lineups, substitutes, actual appearances, xG or xGA are complete.",
+    "Do not estimate missing fields.",
+    "Do not overwrite baseline CSV, V5.1 or historical prediction snapshots.",
+    "Keep 2026-11-01 extension separate."
+  ]
+}
