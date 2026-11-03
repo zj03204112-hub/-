@@ -87,11 +87,25 @@
       "name": "MatchDaySync",
       "url": "https://matchdaysync.com/leagues/j1-league?tab=shots",
       "result": "xG against appears in aggregate season tables, not accepted as match-level xGA"
+    },
+    {
+      "name": "Sportmonks J.League API / xG add-on",
+      "url": "https://www.sportmonks.com/football-api/j-league-api/",
+      "result": "J1 coverage advertised, but xG is an add-on; excluded from the free-only verified xGA dataset."
+    },
+    {
+      "name": "Sportmonks xG API details",
+      "url": "https://www.sportmonks.com/football-api/xg-data/",
+      "result": "Explicit fixture-level xG/xGA metrics are documented, but xG is sold as an add-on; not accepted as a free source under the user's constraint."
     }
   ],
   "integrity_rules": [
     "Do not alter baseline CSV, V5.1, or historical prediction snapshots.",
     "Do not estimate missing xG/xGA or player fields.",
     "Keep 2026-11-01 four-match extension separate from baseline."
-  ]
+  ],
+  "extension_audit_file": "data/season_match_detail/J1_League_2026_27_extension_audit_20261101.json",
+  "extension_audit_result": "2026-11-01 extension: 4/4 scores checked against official individual match pages; 4 third-party xG pairs recorded; 0 independently verified xGA pairs.",
+  "latest_player_detail_file": "data/season_match_detail/J1_League_2026_27_player_detail_batch_20261103d.json",
+  "latest_player_detail_result": "Added official J.League lineup/timeline transcription for Kashiwa 0-2 Yokohama F. Marinos (2026-09-06): 22 starters and 10 substitutions; bench list from secondary source remains pending official confirmation."
 }
