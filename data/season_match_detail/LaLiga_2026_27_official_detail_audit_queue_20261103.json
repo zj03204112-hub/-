@@ -1906,7 +1906,7 @@
   "normalized_substitution_csv": "data/season_match_detail/LaLiga_2026_27_substitutions.csv",
   "last_update": "2026-11-03",
   "last_batch_added": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json",
-  "jornada11_audit_status": "complete",
+  "jornada11_audit_status": "in_progress_final_source_certification",
   "last_audit_corrections": [
     {
       "match": "Betis-Malaga",
@@ -2088,5 +2088,42 @@
       "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11",
       "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
     ]
+  },
+  "latest_verification": {
+    "matches_checked": [
+      "Betis-Malaga",
+      "Rayo-Celta"
+    ],
+    "source_refs": [
+      "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11",
+      "https://www.laliga.com/es-GB/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11"
+    ],
+    "checks": {
+      "Betis-Malaga": {
+        "player_rows": 46,
+        "home_starters": 11,
+        "away_starters": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitution_events": 10,
+        "csv_batch_event_alignment": "10/10",
+        "duplicate_player_rows": 0,
+        "duplicate_substitution_rows": 0,
+        "minute_convention": "detailed official commentary minutes"
+      },
+      "Rayo-Celta": {
+        "player_rows": 44,
+        "home_starters": 11,
+        "away_starters": 11,
+        "home_bench": 11,
+        "away_bench": 11,
+        "substitution_events": 10,
+        "csv_batch_event_alignment": "10/10",
+        "duplicate_player_rows": 0,
+        "duplicate_substitution_rows": 0,
+        "minute_convention": "detailed commentary 45' for Giorgi Tsitaishvili; official summary event card displays 46', discrepancy documented"
+      }
+    },
+    "note": "Structural and CSV alignment checks pass for these two matches. This is not round-wide final certification; remaining matches and unused-substitute statuses still require source-level audit."
   }
 }
