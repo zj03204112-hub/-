@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 8,
+  "match_id": "laliga-2026-27-2026-10-10-barcelona-getafe",
+  "date": "2026-10-10",
+  "home": "Barcelona",
+  "away": "Getafe",
+  "score": "3-0",
+  "halftime_score": "1-0",
+  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-getafe-cf-8",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-getafe-cf-8",
+    "official_barcelona": "https://www.fcbarcelona.com/en/matches/138372/fc-barcelona-getafe-la-liga-2026-2027",
+    "secondary_lineups": "https://www.skysports.com/football/barcelona-vs-getafe/teams/563001"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Joan García",
+      "Xavi Espart",
+      "Pau Cubarsí",
+      "Gerard Martín",
+      "João Cancelo",
+      "Rodri",
+      "Pedri",
+      "Lamine Yamal",
+      "Fermín López",
+      "Raphinha",
+      "Anthony Gordon"
+    ],
+    "home_bench": [
+      "Wojciech Szczęsny",
+      "Dominik Livaković",
+      "Alejandro Balde",
+      "Brian Fariñas",
+      "Gavi",
+      "Eric García",
+      "Gabriel Jesus",
+      "Dani Olmo",
+      "Frenkie de Jong",
+      "Marc Bernal",
+      "Karim Adeyemi",
+      "Álex Campos"
+    ],
+    "away_starting_xi": [
+      "David Soria",
+      "Dani Carvajal",
+      "Djené Dakonam Ortega",
+      "Jean Ives Valou",
+      "Johan Mojica",
+      "Kiko Femenía",
+      "Nemanja Gudelj",
+      "Mario Martín",
+      "Martín Satriano",
+      "Ramón Terrats",
+      "Enes Ünal"
+    ],
+    "away_bench": [
+      "Jiri Letácek",
+      "Diego Ferrer",
+      "Davinchi",
+      "Saba Sazonov",
+      "Abdel Abqar",
+      "Borja Mayoral Moya",
+      "Sebastián Boselli",
+      "Francho Serrano Gracia",
+      "Andrés García",
+      "Alberto Risco"
+    ],
+    "substitution_events": [
+      {
+        "team": "Barcelona",
+        "player_in": "Eric García",
+        "player_out": "Gerard Martín",
+        "minute": "45"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Anthony Gordon",
+        "player_out": "Lamine Yamal",
+        "minute": "59"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Dani Olmo",
+        "player_out": "Fermín López",
+        "minute": "59"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Frenkie de Jong",
+        "player_out": "Rodri",
+        "minute": "66"
+      },
+      {
+        "team": "Barcelona",
+        "player_in": "Gabriel Jesus",
+        "player_out": "Raphinha",
+        "minute": "79"
+      },
+      {
+        "team": "Getafe",
+        "player_in": "Borja Mayoral Moya",
+        "player_out": "Enes Ünal",
+        "minute": "62"
+      },
+      {
+        "team": "Getafe",
+        "player_in": "Andrés García",
+        "player_out": "Mario Martín",
+        "minute": "62"
+      },
+      {
+        "team": "Getafe",
+        "player_in": "Saba Sazonov",
+        "player_out": "Kiko Femenía",
+        "minute": "62"
+      },
+      {
+        "team": "Getafe",
+        "player_in": "Francho Serrano Gracia",
+        "player_out": "Ramón Terrats",
+        "minute": "75"
+      },
+      {
+        "team": "Getafe",
+        "player_in": "Davinchi",
+        "player_out": "Johan Mojica",
+        "minute": "83"
+      }
+    ],
+    "notes": [
+      "Both starting XIs and both official substitute lists cross-checked against LaLiga, Barcelona official match page and Sky Sports lineup source.",
+      "Ten substitutions verified from the detailed official event log. Eric García's halftime entry is stored at 45' although the summary card may display 46'.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
