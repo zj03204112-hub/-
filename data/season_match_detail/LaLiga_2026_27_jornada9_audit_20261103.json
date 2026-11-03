@@ -12,9 +12,10 @@
     "completed_fixture_keys": [
       "2026-10-16|Deportivo|Levante",
       "2026-10-17|Espanyol|Atletico",
-      "2026-10-17|Villarreal|Elche"
+      "2026-10-17|Villarreal|Elche",
+      "2026-10-17|Betis|Barcelona"
     ],
-    "pending_fixture_count": 7
+    "pending_fixture_count": 6
   },
   "matches": [
     {
@@ -152,6 +153,60 @@
         "https://www.skysports.com/football/villarreal-vs-elche/teams/563013"
       ],
       "corrections": [],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-17",
+      "home": "Betis",
+      "away": "Barcelona",
+      "score": "2-5",
+      "halftime_score": "1-2",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "disciplinary_events": {
+        "red_cards": 1,
+        "recorded_separately": true
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-betis-fc-barcelona-9",
+        "https://www.skysports.com/football/real-betis-vs-barcelona/teams/563010"
+      ],
+      "corrections": [
+        {
+          "field": "halftime substitution minutes",
+          "players": [
+            "Nelson Deossa",
+            "Eric García"
+          ],
+          "stored": "45",
+          "reason": "Detailed official commentary gives 45'; summary cards display 46'."
+        }
+      ],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
     }
   ],
