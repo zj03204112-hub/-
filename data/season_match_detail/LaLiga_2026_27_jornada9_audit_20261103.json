@@ -513,5 +513,27 @@
     "Record the complete source-listed bench, even if fewer than 12",
     "Cross-check each substitution in/out and detailed minute",
     "Recheck duplicate keys and CSV-to-batch alignment before closing the round"
-  ]
+  ],
+  "corrections_applied": [
+    {
+      "match": "Espanyol-Atletico",
+      "field": "bench and substitution alias normalization",
+      "before": "Álex Calatrava Torrado in batch vs Cala in CSV",
+      "after": "Cala as official display name; Álex Calatrava Torrado retained as alias",
+      "reason": "Align batch and CSV to official match event display while preserving the cross-checked full name.",
+      "source": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rcd-espanyol-de-barcelona-atletico-de-madrid-9"
+    }
+  ],
+  "final_integrity_recheck": {
+    "status": "pending_after_alias_fix",
+    "prior_findings": {
+      "player_rows": 1367,
+      "duplicate_player_rows": 0,
+      "substitution_rows": 290,
+      "duplicate_substitution_rows": 0,
+      "unique_detail_fixture_keys": 30,
+      "missing_detail_keys_from_results": 0
+    },
+    "known_issue_fixed": "Espanyol-Atletico Cala alias mismatch"
+  }
 }
