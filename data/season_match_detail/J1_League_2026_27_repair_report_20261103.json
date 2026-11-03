@@ -14,8 +14,8 @@
   "matches_with_both_bench_lists": 61,
   "matches_with_player_appearance_status_table": 61,
   "substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-  "substitution_rows": 635,
-  "matches_with_structured_substitution_events": 66,
+  "substitution_rows": 645,
+  "matches_with_structured_substitution_events": 67,
   "xg_xga_file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
   "matches_with_source_attributed_match_level_xg": 12,
   "matches_with_independently_verified_match_level_xga": 0,
@@ -47,7 +47,8 @@
     "2026-11-03 continuation added official player details for match cards 34567 and 34572; 80 player rows and 20 substitution events. Match cards 34569 and 34570 already had structured player rows, so no duplicate rows were added.",
     "Per user instruction, xG/xGA source searching remains paused; continue prioritizing official starting XI, bench, actual appearance status and substitution records.",
     "2026-11-03 continuation added official J.League match cards 34575-34584: 400 player rows and 100 substitution events total across ten fixtures. Player and substitution files re-read after commit; 2,520 player rows, 618 substitution events, 64 match groups, zero duplicate keys and zero blank source URLs. Full-season coverage remains incomplete; 66 of 130 result fixtures have no player records.",
-    "2026-11-03 continuation added player records for official match cards 34585-34587: 120 player rows. Substitution events for cards 34585 and 34586 were appended (17 events); card 34587 substitution rows are pending because a repository write was blocked. Do not treat this batch as fully reconciled until card 34587's 10 substitution events are written and re-read."
+    "2026-11-03 continuation added official match cards 34585-34587: 120 player rows and 27 substitution events. All substitution events are now written and re-read; incoming players match the player table's substitute-appeared records.",
+    "Latest verified counts: 2,640 player rows across 67 match groups, 645 substitution events, 67 matches with structured starting XIs, 61 with both bench lists and appearance-status tables, 63 of 130 fixtures still lacking player records. Duplicate player/substitution keys: zero; blank source URLs: zero."
   ],
   "matches_missing_starting_xi": 76,
   "matches_missing_both_bench_lists": 82,
