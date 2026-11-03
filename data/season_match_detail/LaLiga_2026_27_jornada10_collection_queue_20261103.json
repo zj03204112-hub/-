@@ -69,12 +69,18 @@
       "score": "2-1",
       "official_match_url": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-rcd-espanyol-de-barcelona-10",
       "official_match_url_status": "found",
-      "starting_xi_status": "pending_source_audit",
-      "bench_status": "pending_source_audit",
-      "appearance_status": "pending_source_audit",
-      "substitutions_status": "pending_source_audit",
-      "player_detail_batch": null,
-      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them."
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_both_official_lists_12",
+      "appearance_status": "verified_10_entrants_and_14_unused_bench_players",
+      "substitutions_status": "verified_10_events",
+      "player_detail_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_racing_espanol.json",
+      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them.",
+      "official_detail_page_found": true,
+      "detail_status": "complete_source_crosscheck_and_structural_audit_passed",
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-rcd-espanyol-de-barcelona-10",
+        "https://www.skysports.com/football/racing-santander-vs-espanyol/teams/563019"
+      ]
     },
     {
       "date": "2026-10-24",
@@ -184,23 +190,24 @@
   },
   "normalized_batches_created": 1,
   "normalized_fixtures": 1,
-  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_alaves_malaga.json",
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_racing_espanol.json",
   "completed_fixture_keys": [
     "2026-10-23|Alaves|Malaga",
-    "2026-10-24|Rayo|Elche"
+    "2026-10-24|Rayo|Elche",
+    "2026-10-24|Racing|Espanyol"
   ],
   "jornada10_progress": {
     "fixtures_expected": 10,
     "fixtures_with_detail_batches": 2,
-    "fixtures_source_audited_complete": 2,
-    "remaining_without_detail_batches": 8,
+    "fixtures_source_audited_complete": 3,
+    "remaining_without_detail_batches": 7,
     "completed": [
       "Alaves-Malaga",
-      "Rayo-Elche"
+      "Rayo-Elche",
+      "Racing-Espanyol"
     ],
     "in_progress": [],
     "remaining": [
-      "Racing-Espanyol",
       "Valencia-Villarreal",
       "Atletico-Deportivo",
       "Athletic-Getafe",
