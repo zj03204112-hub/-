@@ -1,0 +1,47 @@
+{
+  "report_id": "xg-weekly-2026-W45-2026-11-03-1002",
+  "generated_at_beijing": "2026-11-03T10:22:00+08:00",
+  "iso_week": "2026-W45",
+  "week_start": "2026-11-02",
+  "week_end": "2026-11-08",
+  "snapshot_rows": 56,
+  "unique_matches": 28,
+  "unique_teams": 56,
+  "matches_with_verified_provider_xg": 21,
+  "matches_missing_xg": 7,
+  "match_coverage_pct": 75,
+  "team_match_rows_with_xg": 42,
+  "team_match_rows_missing_xg": 14,
+  "provider_breakdown": {
+    "FotMob": 19,
+    "Cornerflick": 2,
+    "NOT_AVAILABLE": 7
+  },
+  "missing_matches": [
+    "match:afc-champions-league-elite:2026-11-02:pakhtakor:al-nassr",
+    "match:la-liga:2026-11-02:deportivo-coruna:osasuna",
+    "match:afc-champions-league-elite:2026-11-02:tractor:neftchi-fargona",
+    "match:afc-champions-league-elite:2026-11-02:al-sadd:al-ahli-saudi",
+    "match:afc-champions-league-elite:2026-11-02:al-wasl:al-quwa-al-jawiya",
+    "match:afc-champions-league-elite:2026-11-02:al-ittihad:al-ain",
+    "match:afc-champions-league-elite:2026-11-02:al-gharafa:al-qadsiah"
+  ],
+  "week_to_date_team_summary_rows": 56,
+  "team_coverage_rows": 56,
+  "full_week_coverage_teams": 0,
+  "xgd_arithmetic_mismatches": 0,
+  "duplicate_match_team_provider_keys": 0,
+  "pre_match_leakage_detected": false,
+  "post_match_xg_rows_used_as_pre_match_input": 0,
+  "pre_match_eligible_rows": 0,
+  "raw_payload_sha256_archived_rows": 0,
+  "raw_html_or_api_payload_archived_rows": 0,
+  "provider_event_ids_resolved_rows": 0,
+  "weekly_totals_semantics": "weekly_xg/weekly_xga/weekly_xgd and per90 are week-to-date sums/means for reviewed matches only; final full-week totals are not yet available; full_week_coverage=false.",
+  "source_notes": {
+    "FotMob": "Provider match-level model estimates; FotMob match pages identify Opta-powered stats; model version not disclosed.",
+    "Cornerflick": "Existing preserved third-party model-estimate rows; model version not disclosed.",
+    "missing": "No value inferred from score; missing rows remain blank."
+  },
+  "leakage_control": "All xG values in this snapshot are post-match review data only. They are explicitly ineligible for pre-match prediction inputs for the same match."
+}
