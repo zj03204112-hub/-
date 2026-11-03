@@ -1,0 +1,94 @@
+{
+  "prediction_id": "research-xg-poisson-20261103-1500-esteghlal-alshamal",
+  "match": {
+    "competition": "AFC Champions League Elite West",
+    "competition_type": "continental_club",
+    "home": "Esteghlal",
+    "away": "Al-Shamal",
+    "kickoff_utc": "2026-11-03T16:00:00Z",
+    "kickoff_beijing": "2026-11-04T00:00:00+08:00",
+    "venue": "Basra International Stadium, Basra"
+  },
+  "snapshot_time_beijing": "2026-11-03T14:55:48+08:00",
+  "window_hours_at_1500": 9,
+  "window_eligible": true,
+  "model": {
+    "version": "RESEARCH-XG-POISSON-v1.0",
+    "status": "shadow_research_not_production",
+    "method": "Independent Poisson score grid using a third-party pre-match projected-xG pair; half-time uses 45% of expected goals. Not V5.1 or V5.2.",
+    "source_xg_type": "third_party_model_projection_not_measured_match_xg",
+    "backtest_status": "not_backtested"
+  },
+  "projected_xg": {
+    "home": 1.37,
+    "away": 1.15,
+    "source": "bookmakers.market model estimate",
+    "source_url": "https://bookmakers.market/football/asia/afc-champions-league-elite/esteghlal-fc-vs-al-shamal-2026-11-03/"
+  },
+  "predictions": {
+    "top_scores": [
+      {
+        "score": "1-1",
+        "probability_pct": 12.68
+      },
+      {
+        "score": "1-0",
+        "probability_pct": 11.02
+      }
+    ],
+    "hda_pct": {
+      "home": 41.9,
+      "draw": 26.7,
+      "away": 31.4
+    },
+    "pick": "主胜倾向，防平",
+    "half_full_time": {
+      "pick": "胜/胜",
+      "probability_pct": 24.76,
+      "method": "45% first-half goal split; low-confidence research estimate"
+    },
+    "sporttery_handicap_result": "无法核验：官方竞彩让球盘口缺失"
+  },
+  "market": {
+    "third_party_1x2_open_current": {
+      "opening": "2.60/3.40/3.36",
+      "current_best": "2.35/3.40/3.16"
+    },
+    "third_party_total_market_movement": "No reliable same-source opening/current total-goals line retrieved.",
+    "official_sporttery_handicap": null,
+    "captured_at_beijing": "2026-11-03T14:55:48+08:00",
+    "upstream_tick_timestamp": "not exposed"
+  },
+  "team_context": {
+    "recent_form": {
+      "home": "AFC group: 2 wins, 1 loss in first 3; last AFC match 0-2 at Shabab Al-Ahli",
+      "away": "AFC group: 1 win, 2 draws in first 3; last AFC match 3-1 vs Al-Hilal"
+    },
+    "tactics": {
+      "home": "probable 3-4-3",
+      "away": "probable 4-2-3-1"
+    },
+    "injuries": "Conflicting reports: one source lists S. Touranian and Musab Kheder; another reports no injuries/suspensions. Treat as unconfirmed.",
+    "probable_lineups": "probable lineups available from third-party previews only; no official XI",
+    "referee": "Asker Nadjafaliev (reported by YSscores; official AFC confirmation not retrieved)",
+    "weather": "Basra forecast around 29–30°C, overcast, low precipitation probability near evening kickoff.",
+    "schedule_motivation": "Esteghlal seek response after first campaign defeat; Al-Shamal seek to maintain momentum after win over Al-Hilal; exact next-opponent/rotation audit incomplete."
+  },
+  "my_confidence_10": 4.5,
+  "data_completeness": "8/13 core fields; partial",
+  "risks": [
+    "Independent models disagree sharply: FulltimeStats gives 64/22/14 with projected xG 2.11/0.73, versus the selected provider estimate 1.37/1.15.",
+    "Injury reports conflict.",
+    "Referee appointment not verified from an AFC primary source.",
+    "Official Sporttery handicap absent.",
+    "Projected xG is a third-party model estimate, not actual match xG."
+  ],
+  "strategy_id": "RESEARCH-XG-POISSON-20261103-1500-03",
+  "sources": [
+    "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/preview-esteghlal-fc-irn-v-al-shamal-sc-qat",
+    "https://bookmakers.market/football/asia/afc-champions-league-elite/esteghlal-fc-vs-al-shamal-2026-11-03/",
+    "https://www.ysscores.com/en/match/6050094/Esteghlal-FC-vs-Al-Shamal-SC",
+    "https://thoitiet.online/en/iraq/basra-governorate/",
+    "https://fulltimestats.com/match/esteghlal-fc-vs-al-shamal-2026-11-03"
+  ]
+}
