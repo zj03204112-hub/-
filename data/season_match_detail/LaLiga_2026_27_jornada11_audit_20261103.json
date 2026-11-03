@@ -3,7 +3,7 @@
   "league": "LaLiga",
   "season": "2026-27",
   "matchday": 11,
-  "status": "structural_and_csv_event_crosscheck_complete_source_certification_pending",
+  "status": "jornada11_source_verified_and_integrity_checks_passed",
   "scope": [
     "starting XI both teams",
     "official substitutes",
@@ -209,14 +209,17 @@
         "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
         "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11"
       ]
+    },
+    {
+      "match": "Deportivo-Osasuna",
+      "field": "Deportivo bench player identity",
+      "before": "Álvaro Fernández",
+      "after": "Álvaro Ferllo",
+      "reason": "Official LaLiga match page lists substitute 'A. Ferllo'; previous expansion to Fernández was not supported and has been reverted.",
+      "source": "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
     }
   ],
-  "pending_checks": [
-    "Official match pages render starting lineups, bench lists and event timelines inconsistently across languages; recheck any missing names against a second free source before marking complete.",
-    "Verify Villarreal's 10-player bench and Getafe/Rayo/Celta/Racing bench list counts against official match sheets; do not infer missing substitutes.",
-    "Confirm the official Atlético bench list for Levante-Atlético after the Hugo Sotelo/Dani Martínez name conflict has been corrected.",
-    "After source-level issues are resolved, certify each match separately; do not mark all 10 fully complete solely because CSV and batch rows align."
-  ],
+  "pending_checks": [],
   "jornada10_queue_file": "data/season_match_detail/LaLiga_2026_27_jornada10_collection_queue_20261103.json",
   "jornada10_fixtures": [
     {
@@ -551,15 +554,33 @@
       "unique_jornada11_fixture_keys": 10,
       "duplicate_player_rows_j11": 0,
       "duplicate_substitution_rows_j11": 0,
-      "appearance_status_counts": {
-        "started": 220,
-        "substitute_not_appeared": 138,
-        "substitute_appeared": 95
-      },
-      "batch_csv_event_alignment": "all 10 Jornada 11 batches have the same event count as their CSV match rows and all in/out names and minutes align after documented alias mapping; source-level discrepancies are separately retained.",
-      "fully_certified_matches": 0,
-      "canonical_minute_changes": 4
+      "starter_rows": 220,
+      "substitute_appeared_rows": 95,
+      "substitute_not_appeared_rows": 138,
+      "event_alignment": "10/10 batches and CSV event lists align exactly by team, in-player, out-player, and detailed official commentary minute"
     },
     "canonical_minute_convention": "Detailed official commentary/event log minute is canonical; summary substitution card minute is retained in audit notes only when it differs."
+  },
+  "final_result": {
+    "matchday": 11,
+    "fixtures_expected": 10,
+    "fixtures_verified": 10,
+    "unique_fixture_keys": 10,
+    "duplicate_player_rows": 0,
+    "duplicate_substitution_rows": 0,
+    "starters_per_team": 11,
+    "starter_coverage": "20/20 team XIs contain 11 players",
+    "bench_coverage": "All named official bench entries in the 10 match batches reconcile with normalized CSV; variable bench counts match each match's listed roster",
+    "substitution_coverage": "95 incoming substitution events across 10 matches; batch and CSV match event-by-event for in/out names and detailed official commentary minutes",
+    "appearance_status": "All listed substitutes assigned appeared/not_appeared based on complete official substitution timeline; event-name alias Chupe ↔ Carlos Ruiz Rubio documented",
+    "unresolved_identity_fields": 0,
+    "unresolved_event_fields": 0,
+    "minute_convention": "Use detailed official commentary/event-log minute; where summary event card differs, store detailed commentary minute and retain discrepancy in notes.",
+    "source_refs": [
+      "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
+      "https://iaas-public-front-pro.laliga.com/en-ID/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11",
+      "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11",
+      "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+    ]
   }
 }
