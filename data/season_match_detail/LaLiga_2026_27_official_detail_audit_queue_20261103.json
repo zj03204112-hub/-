@@ -2311,5 +2311,46 @@
         "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
       }
     ]
+  },
+  "latest_jornada11_official_source_review": {
+    "checked_at": "2026-11-03",
+    "sources": [
+      {
+        "match": "Barcelona-Alaves",
+        "source": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-fc-barcelona-deportivo-alaves-11",
+        "finding": "Official LaLiga page lists 12 Barcelona substitutes and 12 Alaves substitutes; Alaves #27 is Xanet Olaiz in normalized batch. 10 substitutions align with CSV.",
+        "status": "lineup_and_event_alignment_pass; continue verify unused-bench statuses"
+      },
+      {
+        "match": "Villarreal-Espanyol",
+        "source": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-villarreal-cf-rcd-espanyol-de-barcelona-11",
+        "finding": "Official LaLiga timeline confirms 10 substitutions; Villarreal official page lists 10 substitutes and Espanyol 12. CSV event alignment 10/10.",
+        "status": "lineup_and_event_alignment_pass; continue verify unused-bench statuses"
+      },
+      {
+        "match": "Getafe-Sevilla",
+        "source": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11",
+        "finding": "Official page shows Getafe 11 substitutes and Sevilla 12. Event timeline confirms Sevilla substitutions at 72', 72', 87', 87' and Getafe at 82', 82'; batch/CSV contains 9 events overall.",
+        "status": "lineup_and_event_alignment_pass; verify all nine events against complete timeline and unused-bench statuses"
+      },
+      {
+        "match": "Elche-Valencia",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-elche-cf-valencia-cf-11",
+        "finding": "Official detailed timeline confirms Elche changes at 24', 68', 68', 68', 78'; Valencia at 61', 78', 78', 88', 88'. CSV contains 10 events and matches batch.",
+        "status": "lineup_and_event_alignment_pass; continue verify unused-bench statuses"
+      },
+      {
+        "match": "Athletic-Real Sociedad",
+        "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-athletic-club-real-sociedad-11",
+        "finding": "Official page lists 12 substitutes each. Detailed timeline includes Athletic changes at 6', 77', 89', 89', 89' and Real Sociedad at 61', 75', 75', 88', 89'. CSV contains 10 events and matches batch.",
+        "status": "lineup_and_event_alignment_pass; continue verify unused-bench statuses"
+      }
+    ],
+    "remaining_matchday11_items": [
+      "Confirm every non-entering substitute against full official timeline/player appearance data; do not infer from bench presence alone.",
+      "Reconcile minute-display discrepancies in Rayo-Celta, Betis-Malaga, Racing-Real Madrid and retain both source displays.",
+      "Finish official source review for Levante-Atletico and Deportivo-Osasuna, then recheck all ten fixtures."
+    ],
+    "note": "This is a partial official-source audit update only; Jornada 11 remains not finally certified. Jornada 10 is not advanced until final certification."
   }
 }
