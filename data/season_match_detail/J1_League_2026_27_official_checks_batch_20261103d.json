@@ -1,0 +1,33 @@
+{
+  "audit_date": "2026-11-03",
+  "league": "J1 League",
+  "baseline_csv": "data/auto_results/J1_League_2026_27.csv",
+  "official_source": "https://data.j-league.or.jp/SFMS01/search?competition_frame_ids=1&competition_years=2026&section_id=1",
+  "cross_check_source": "https://www.jleague.jp/en/j1/match/search-list/?enddate=2026-09-13&period=custom&startdate=2026-09-11",
+  "matches": [
+    {"date":"2026-09-11","home":"京都","away":"柏","csv_score":"2-3","official_score":"2-3"},
+    {"date":"2026-09-11","home":"神户","away":"鹿岛","csv_score":"2-1","official_score":"2-1"},
+    {"date":"2026-09-12","home":"水户","away":"川崎Ｆ","csv_score":"0-1","official_score":"0-1"},
+    {"date":"2026-09-12","home":"清水","away":"福冈","csv_score":"1-0","official_score":"1-0"},
+    {"date":"2026-09-12","home":"长崎","away":"名古屋","csv_score":"2-0","official_score":"2-0"},
+    {"date":"2026-09-12","home":"Ｇ大阪","away":"FC东京","csv_score":"0-2","official_score":"0-2"},
+    {"date":"2026-09-12","home":"町田","away":"横滨FM","csv_score":"1-1","official_score":"1-1"},
+    {"date":"2026-09-12","home":"广岛","away":"Ｃ大阪","csv_score":"6-1","official_score":"6-1"},
+    {"date":"2026-09-13","home":"东京Ｖ","away":"千叶","csv_score":"1-1","official_score":"1-1"},
+    {"date":"2026-09-13","home":"浦和","away":"冈山","csv_score":"1-2","official_score":"1-2"}
+  ],
+  "summary": {
+    "matches_checked": 10,
+    "official_schedule_score_consistency": "10/10",
+    "mismatches_found": 0,
+    "verification_level": "official league schedule/index cross-check; individual match-card IDs not yet attached in this batch",
+    "player_details_transcribed": 0,
+    "xg_xga_added": 0,
+    "v5_1_or_historical_predictions_modified": false
+  },
+  "notes": [
+    "The official J.League Data Site search result and official J.LEAGUE schedule list these fixtures and final scores.",
+    "This is an index/schedule-level confirmation, not a claim that all ten individual match-card pages were inspected.",
+    "No player, xG or xGA values were inferred."
+  ]
+}
