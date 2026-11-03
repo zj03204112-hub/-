@@ -37,7 +37,7 @@
     }
   ],
   "row_by_row_independent_recheck": "Result/mapping rows are structurally aligned 130/130; 32 baseline matches still lack complete individual official evidence. Player and xG/xGA completeness are tracked separately.",
-  "lineups_and_actual_appearances": "not present in this results CSV; separate collection required",
+  "lineups_and_actual_appearances": "Separate player table updated through official match cards 34575-34584: 2,520 player rows across 64 match groups; both starting XIs structured for 64 matches; both bench lists and player appearance-status tables structured for 58 matches; 618 substitution events. Remaining 66 of 130 result fixtures have no player records.",
   "notes": [
     "The CSV's source column points to the official J.League Data Site.",
     "125 rows correspond to completed matches from 2026-08-07 through 2026-10-31; fixtures scheduled for 2026-11-01 are not included.",
@@ -58,7 +58,8 @@
     "2026-11-03 continued official player extraction for match cards 34557–34566; 400 player rows and 91 substitution events.",
     "Per user instruction, xG/xGA collection and source searching paused; priority is completion of official starting XIs, benches, actual appearances and substitutions.",
     "2026-11-03 continued official player extraction for match cards 34567 and 34572; 80 player rows and 20 substitution events. Match cards 34569 and 34570 already had player records, so duplicate records were not added.",
-    "Per user instruction, xG/xGA collection and source searching paused; priority is completion of official starting XIs, benches, actual appearances and substitutions."
+    "Per user instruction, xG/xGA collection and source searching paused; priority is completion of official starting XIs, benches, actual appearances and substitutions.",
+    "2026-11-03 latest player-data audit: official match cards 34575-34584 added 400 player rows and 100 substitution events. Final re-read confirms 2,520 player rows, 618 substitution events, 64 match groups, zero duplicate player/substitution keys and zero blank source URLs. xG/xGA work remains paused per user instruction."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
