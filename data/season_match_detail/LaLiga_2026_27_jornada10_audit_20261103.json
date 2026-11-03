@@ -3,7 +3,7 @@
   "league": "LaLiga",
   "season": "2026-27",
   "matchday": 10,
-  "status": "in_progress",
+  "status": "jornada10_all_10_fixture_batches_created_pending_final_global_integrity_recheck",
   "fixture_keys": {
     "expected": 10,
     "unique": 10,
@@ -17,9 +17,10 @@
       "2026-10-25|Athletic|Getafe",
       "2026-10-25|Celta|Betis",
       "2026-10-25|Real Sociedad|Levante",
-      "2026-10-25|Barcelona|Real Madrid"
+      "2026-10-25|Barcelona|Real Madrid",
+      "2026-10-26|Sevilla|Osasuna"
     ],
-    "pending_fixture_count": 1
+    "pending_fixture_count": 0
   },
   "matches": [
     {
@@ -398,6 +399,47 @@
         "https://www.fcbarcelona.com/en/matches/138374/fc-barcelona-r-madrid-la-liga-2026-2027",
         "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/once-inicial-del-real-madrid-contra-el-barcelona-25-10-2026",
         "https://www.skysports.com/football/barcelona-vs-real-madrid/teams/563017"
+      ],
+      "corrections": [],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-26",
+      "home": "Sevilla",
+      "away": "Osasuna",
+      "score": "2-0",
+      "halftime_score": "1-0",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 9,
+        "normalized": 9,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 9,
+        "not_appeared": 15,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 9,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-ca-osasuna-10",
+        "https://sevillafc.es/actualidad/noticias/partido-directo-sevilla-osasuna-laliga-2026-2027",
+        "https://www.skysports.com/football/sevilla-vs-osasuna/teams/563022"
       ],
       "corrections": [],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
