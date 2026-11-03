@@ -92,15 +92,15 @@
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
   "lineup_and_appearance_audit": {
-    "matches_with_both_teams_starting_xi_structured": 121,
+    "matches_with_both_teams_starting_xi_structured": 130,
     "matches_with_both_bench_lists_structured": 111,
-    "matches_with_substitution_events_structured": 121,
+    "matches_with_substitution_events_structured": 130,
     "matches_with_complete_player_appearance_status_table": 115,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-    "standardized_player_rows": 4762,
+    "standardized_player_rows": 5050,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-    "standardized_substitution_rows": 1170,
-    "note": "Latest re-read: 4762 player rows across 121 match groups; 121 groups have both starting XIs and substitution-event records, 111 have both official bench lists, and 115 have complete appearance-status classification. Duplicate player keys: 0; duplicate substitution keys: 0; blank player source URLs: 0. Ten fixtures from 2026-10-24 to 2026-10-25 transcribed from official J.League Data Site records. Red card recorded as exit, not substitution."
+    "standardized_substitution_rows": 1259,
+    "note": "Official J.League pages used to add six previously missing fixtures. Starting XIs and confirmed substitution events now structured for all 130 fixtures. Full unused bench lists remain incomplete for 19 fixtures; unknown fields are not estimated. Player names on official English pages remain in source romanization."
   },
   "xg_xga_audit": {
     "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
@@ -526,16 +526,31 @@
         "status": "verified"
       }
     ],
-    "current_player_rows": 4762,
-    "current_player_match_groups": 121,
-    "current_substitution_rows": 1170,
-    "current_substitution_match_groups": 121,
-    "matches_missing_player_records": 9,
+    "current_player_rows": 5050,
+    "current_player_match_groups": 130,
+    "current_substitution_rows": 1259,
+    "current_substitution_match_groups": 130,
+    "matches_missing_player_records": 0,
     "duplicate_player_keys": 0,
     "duplicate_substitution_keys": 0,
     "blank_player_source_urls": 0,
     "blank_substitution_minutes": 1,
-    "xg_xga_search_status": "paused per user instruction; not changed"
+    "xg_xga_search_status": "paused per user instruction; not changed",
+    "latest_update_summary": {
+      "date": "2026-11-03",
+      "fixtures_added": [
+        "2026-09-06 Ｃ大阪-東京Ｖ",
+        "2026-09-19 川崎Ｆ-鹿島",
+        "2026-10-31 京都-清水",
+        "2026-10-31 鹿島-Ｃ大阪",
+        "2026-10-31 柏-浦和",
+        "2026-11-01 横浜FM-川崎Ｆ"
+      ],
+      "verified_source": "Official J.LEAGUE match pages",
+      "player_rows_added_this_pass": 190,
+      "substitution_rows_added_this_pass": 59,
+      "limitations": "Unused bench members not fully transcribed for these six fixtures; only confirmed starters and documented appearances/events are included. No inferred names or times."
+    }
   },
   "latest_match_id_audit": {
     "date": "2026-11-03",
