@@ -9,13 +9,13 @@
     "unique_date_home_away_keys": 130
   },
   "player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-  "player_rows": 2040,
-  "matches_with_structured_starting_xi": 52,
-  "matches_with_both_bench_lists": 46,
-  "matches_with_player_appearance_status_table": 45,
+  "player_rows": 2120,
+  "matches_with_structured_starting_xi": 54,
+  "matches_with_both_bench_lists": 48,
+  "matches_with_player_appearance_status_table": 47,
   "substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-  "substitution_rows": 498,
-  "matches_with_structured_substitution_events": 52,
+  "substitution_rows": 518,
+  "matches_with_structured_substitution_events": 54,
   "xg_xga_file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
   "matches_with_source_attributed_match_level_xg": 12,
   "matches_with_independently_verified_match_level_xga": 0,
@@ -43,11 +43,13 @@
     "2026-11-03 continuation added official player records for match cards 34551–34556: 240 player rows and 57 substitution events. Official URLs retained and files re-read after commit.",
     "Per user instruction, xG/xGA source searching remains paused; continue prioritizing official starting XI, bench, actual appearance status and substitution records.",
     "2026-11-03 continuation added official player details for match cards 34557–34561 (200 player rows, 47 substitution events) and 34562–34566 (200 player rows, 44 substitution events).",
+    "Per user instruction, xG/xGA source searching remains paused; continue prioritizing official starting XI, bench, actual appearance status and substitution records.",
+    "2026-11-03 continuation added official player details for match cards 34567 and 34572; 80 player rows and 20 substitution events. Match cards 34569 and 34570 already had structured player rows, so no duplicate rows were added.",
     "Per user instruction, xG/xGA source searching remains paused; continue prioritizing official starting XI, bench, actual appearance status and substitution records."
   ],
-  "matches_missing_starting_xi": 78,
-  "matches_missing_both_bench_lists": 84,
-  "matches_missing_complete_appearance_status_table": 85,
+  "matches_missing_starting_xi": 76,
+  "matches_missing_both_bench_lists": 82,
+  "matches_missing_complete_appearance_status_table": 83,
   "matches_missing_source_attributed_match_level_xg": 118,
   "matches_missing_independently_verified_match_level_xga": 130,
   "branch_alignment_note": "The canonical results CSV is 130 rows on both main and audit/stable-match-id-mapping-20261101; ISO dates and unique date/home/away keys verified.",
@@ -55,7 +57,7 @@
   "substitution_rows_missing_player_names": 0,
   "player_detail_increment": {
     "date": "2026-11-03",
-    "matches_added": 31,
+    "matches_added": 33,
     "match_card_ids": [
       34531,
       34532,
@@ -87,12 +89,14 @@
       34563,
       34564,
       34565,
-      34566
+      34566,
+      34567,
+      34572
     ],
-    "records_added": 1240,
-    "substitutions_added": 294,
+    "records_added": 1320,
+    "substitutions_added": 314,
     "source": "J.League Data Site official match-card records",
-    "note": "Thirty-one additional official match cards structured during this continuation. Each player and substitution row retains its official match-card URL. xG/xGA source searching paused per user instruction."
+    "note": "Thirty-three additional match cards structured during this continuation; where official data was already structured from another official match page, duplicate match rows were not added. All player/substitution rows retain a source URL. xG/xGA searching paused per user instruction."
   },
   "xga_source_audit_file": "data/season_match_detail/J1_League_2026_27_xga_source_audit_20261103.json",
   "xga_source_audit_summary": {
