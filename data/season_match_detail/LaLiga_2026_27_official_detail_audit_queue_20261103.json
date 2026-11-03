@@ -25,7 +25,7 @@
   "official_results_page": "https://www.laliga.com/en-GB/laliga-easports/results",
   "official_match_detail_pages_found": 10,
   "detailed_player_and_substitution_files_exist": true,
-  "summary": "109 result fixtures. Player detail batches now cover Barcelona-Alaves (45 named rows, 10 subs), Villarreal-Espanyol (43 named rows plus one unresolved starter identity, 10 subs), and Getafe-Sevilla (45 named rows, 9 subs). 3 matches have partial/near-complete detail; other 106 fixtures pending. No match marked fully complete until all appearance statuses and unresolved identities are audited.",
+  "summary": "109 result fixtures. Four matches have player-detail batches: Barcelona-Alaves, Villarreal-Espanyol, Getafe-Sevilla, Elche-Valencia. Player CSV contains 45 rows each for Barcelona-Alaves, Getafe-Sevilla, Elche-Valencia and 43 for Villarreal-Espanyol (one starting shirt number unresolved). Substitution CSV contains 39 events. 105 other fixtures remain pending; appearance status for non-entering substitutes is intentionally left unverified.",
   "fields_to_verify": [
     "source-backed names for 11 starters per team",
     "full official bench lists",
@@ -1847,11 +1847,11 @@
       "result_source": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
       "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-valencia-cf-11",
       "official_detail_page_found": true,
-      "starting_xi_status": "pending_normalization",
-      "bench_status": "pending_normalization",
-      "appearance_status": "pending_normalization",
-      "substitutions_status": "pending_normalization",
-      "notes": "Missing detailed fields must remain blank until verified from a free source."
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_named_lists_both_teams",
+      "appearance_status": "substitution entrants verified; non-entering bench statuses left unverified",
+      "substitutions_status": "10_events_verified",
+      "notes": "Both teams' starting XI and bench lists normalized; substitution events cross-checked against official LaLiga timeline and Valencia CF match report. See batch 20261103d."
     },
     {
       "match_id": "laliga-2026-27-2026-11-01-ath-bilbao-sociedad",
