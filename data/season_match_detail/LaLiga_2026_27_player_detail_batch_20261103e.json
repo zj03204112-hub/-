@@ -74,7 +74,7 @@
         "team": "Betis",
         "player_in": "Antony",
         "player_out": "Rodrigo Riquelme",
-        "minute": "61",
+        "minute": "62",
         "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11"
       },
       {
@@ -109,7 +109,7 @@
         "team": "Malaga",
         "player_in": "Chupe",
         "player_out": "David Larrubia",
-        "minute": "60",
+        "minute": "61",
         "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11"
       },
       {
@@ -144,7 +144,8 @@
     "notes": [
       "Official LaLiga page supplies Betis lineup and match substitutions; Málaga CF official page used to cross-check the away-team lineup and bench names.",
       "Bench players not appearing in the substitution timeline are marked bench_status_unverified rather than assumed not to have played.",
-      "Audit correction 2026-11-03: removed Valentín Gómez from Málaga bench because independent lineup source lists him among Betis substitutes; replaced with Jens Cajuste, who appears in Málaga's match events and substitute list. Non-entering substitute appearance status remains unverified."
+      "Audit correction 2026-11-03: removed Valentín Gómez from Málaga bench because independent lineup source lists him among Betis substitutes; replaced with Jens Cajuste, who appears in Málaga's match events and substitute list. Non-entering substitute appearance status remains unverified.",
+      "Minute-display audit 2026-11-03: normalized event minutes to the minute values shown in the official LaLiga match timeline cards (Antony 62', Chupe 61'); the narrative commentary separately shows the underlying event minute at 61'/60'. This distinction is retained in the audit note."
     ]
   }
 }
