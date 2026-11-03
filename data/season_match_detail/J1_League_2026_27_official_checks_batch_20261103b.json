@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-03",
+  "baseline_csv": "data/auto_results/J1_League_2026_27.csv",
+  "source": "J.League Data Site official match-card pages",
+  "matches": [
+    {"date":"2026-10-09","home":"柏","away":"神戸","csv_score":"4-2","official_score":"4-2","match_card_id":34597,"url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34597"},
+    {"date":"2026-10-09","home":"鹿島","away":"Ｇ大阪","csv_score":"2-0","official_score":"2-0","match_card_id":34605,"url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34605"},
+    {"date":"2026-10-10","home":"Ｃ大阪","away":"横浜FM","csv_score":"0-0","official_score":"0-0","match_card_id":34598,"url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34598"},
+    {"date":"2026-10-10","home":"FC東京","away":"浦和","csv_score":"3-0","official_score":"3-0","match_card_id":34599,"url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34599"},
+    {"date":"2026-10-10","home":"福岡","away":"岡山","csv_score":"2-1","official_score":"2-1","match_card_id":34600,"url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34600"},
+    {"date":"2026-10-10","home":"京都","away":"町田","csv_score":"0-1","official_score":"0-1","match_card_id":34606,"url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34606"},
+    {"date":"2026-10-11","home":"千葉","away":"長崎","csv_score":"1-1","official_score":"1-1","match_card_id":34601,"url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34601"},
+    {"date":"2026-10-11","home":"水戸","away":"清水","csv_score":"1-2","official_score":"1-2","match_card_id":34602,"url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34602"},
+    {"date":"2026-10-11","home":"東京Ｖ","away":"広島","csv_score":"0-2","official_score":"0-2","match_card_id":34603,"url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34603"},
+    {"date":"2026-10-11","home":"川崎Ｆ","away":"名古屋","csv_score":"1-2","official_score":"1-2","match_card_id":34604,"url":"https://data.j-league.or.jp/SFMS02/?match_card_id=34604"}
+  ],
+  "summary": {
+    "matches_checked": 10,
+    "date_home_away_and_score_match_csv": 10,
+    "mismatches_found": 0,
+    "official_pages_have_starting_lineups_substitutes_and_substitution_events": true,
+    "player_details_transcribed_to_structured_dataset": false,
+    "match_level_xg_xga_added": false,
+    "v5_1_and_historical_predictions_modified": false
+  },
+  "notes": [
+    "Official match-card pages were opened and checked against the baseline CSV.",
+    "Lineup and substitution information is available on the official records but has not been transcribed for these ten matches in this batch.",
+    "No missing values were estimated."
+  ]
+}
