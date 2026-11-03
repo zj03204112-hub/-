@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 9,
+  "match_id": "laliga-2026-27-2026-10-19-getafe-rayo",
+  "date": "2026-10-19",
+  "home": "Getafe",
+  "away": "Rayo",
+  "score": "1-1",
+  "halftime_score": "0-1",
+  "official_match_url": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rayo-vallecano-9",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rayo-vallecano-9",
+    "secondary_lineups": "https://www.skysports.com/football/getafe-vs-rayo-vallecano/teams/563007",
+    "secondary_match_report": "https://www.footballwebpages.co.uk/match/2026-2027/spanish-la-liga/getafe/rayo-vallecano/593536"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "David Soria",
+      "Dani Carvajal",
+      "Djené Dakonam Ortega",
+      "Jean Ives Valou",
+      "Johan Mojica",
+      "Kiko Femenía",
+      "Nemanja Gudelj",
+      "Mario Martín",
+      "Martín Satriano",
+      "Ramón Terrats",
+      "Enes Ünal"
+    ],
+    "home_bench": [
+      "Jiri Letácek",
+      "Diego Ferrer",
+      "Davinchi",
+      "Saba Sazonov",
+      "Abdel Abqar",
+      "Borja Mayoral Moya",
+      "Sebastián Boselli",
+      "Francho Serrano Gracia",
+      "Andrés García",
+      "Alberto Risco"
+    ],
+    "away_starting_xi": [
+      "Emil Audero",
+      "Iván Balliu",
+      "Florian Lejeune",
+      "Mujaid Sadick",
+      "Adrià Pedrosa",
+      "Unai López",
+      "Pathé Ciss",
+      "Isi Palazón",
+      "Sergio Camello",
+      "Álvaro García Rivera",
+      "Jorge de Frutos"
+    ],
+    "away_bench": [
+      "Dani Cárdenas",
+      "Marash Kumbulla",
+      "Pedro Díaz",
+      "Alexandre Zurawski",
+      "Giorgi Tsitaishvili",
+      "Fran Pérez Martínez",
+      "Pelayo Fernández",
+      "Óscar Valentín",
+      "Jozhua Vertrouwd",
+      "Iván Alonso",
+      "Gnangoro Bouare Samake",
+      "Rayane Belaid"
+    ],
+    "substitution_events": [
+      {
+        "team": "Getafe",
+        "player_in": "Abdel Abqar",
+        "player_out": "Ramón Terrats",
+        "minute": "32"
+      },
+      {
+        "team": "Getafe",
+        "player_in": "Andrés García",
+        "player_out": "Mario Martín",
+        "minute": "45"
+      },
+      {
+        "team": "Getafe",
+        "player_in": "Francho Serrano Gracia",
+        "player_out": "Kiko Femenía",
+        "minute": "45"
+      },
+      {
+        "team": "Getafe",
+        "player_in": "Sebastián Boselli",
+        "player_out": "Dani Carvajal",
+        "minute": "80"
+      },
+      {
+        "team": "Getafe",
+        "player_in": "Borja Mayoral Moya",
+        "player_out": "Enes Ünal",
+        "minute": "87"
+      },
+      {
+        "team": "Rayo",
+        "player_in": "Pedro Díaz",
+        "player_out": "Iván Balliu",
+        "minute": "59"
+      },
+      {
+        "team": "Rayo",
+        "player_in": "Óscar Valentín",
+        "player_out": "Isi Palazón",
+        "minute": "59"
+      },
+      {
+        "team": "Rayo",
+        "player_in": "Giorgi Tsitaishvili",
+        "player_out": "Jorge de Frutos",
+        "minute": "65"
+      },
+      {
+        "team": "Rayo",
+        "player_in": "Alexandre Zurawski",
+        "player_out": "Álvaro García Rivera",
+        "minute": "80"
+      },
+      {
+        "team": "Rayo",
+        "player_in": "Fran Pérez Martínez",
+        "player_out": "Unai López",
+        "minute": "80"
+      }
+    ],
+    "disciplinary_events": [
+      {
+        "team": "Getafe",
+        "player": "Djené Dakonam Ortega",
+        "type": "red_card",
+        "minute": "28"
+      }
+    ],
+    "notes": [
+      "Official LaLiga lineup/event page and Sky Sports confirmed lineups cross-checked. Getafe has 10 listed substitutes and Rayo has 12 listed substitutes.",
+      "Ten substitutions verified; Getafe's two halftime changes are stored at 45' from the detailed official commentary.",
+      "Djené Dakonam Ortega was sent off at 28'; this is a disciplinary event, not a substitution.",
+      "The official match event display calls Alexandre Zurawski 'Alemão'; the full name is used in the normalized CSV and this alias is documented here.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
