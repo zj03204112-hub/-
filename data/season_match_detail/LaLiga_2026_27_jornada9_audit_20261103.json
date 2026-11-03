@@ -3,15 +3,66 @@
   "league": "LaLiga",
   "season": "2026-27",
   "matchday": 9,
-  "status": "queued_for_collection",
+  "status": "in_progress",
   "official_results_source": "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-9",
   "fixture_keys": {
     "expected": 10,
     "unique": 10,
     "duplicate_count": 0,
-    "pending_fixture_count": 10
+    "completed_fixture_keys": [
+      "2026-10-16|Deportivo|Levante"
+    ],
+    "pending_fixture_count": 9
   },
-  "matches": [],
+  "matches": [
+    {
+      "date": "2026-10-16",
+      "home": "Deportivo",
+      "away": "Levante",
+      "score": "1-1",
+      "halftime_score": "0-0",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 11,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 9,
+        "normalized": 9,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 9,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 45,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 9,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-levante-ud-9",
+        "https://www.skysports.com/football/deportivo-la-coruna-vs-levante/teams/563005"
+      ],
+      "corrections": [
+        {
+          "field": "added-time substitution minute",
+          "player": "Víctor García",
+          "stored": "90+3",
+          "reason": "Event card and independent source show 90+3; official narrative commentary rounds it to 90."
+        }
+      ],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    }
+  ],
   "final_integrity": null,
   "rules": [
     "Audit one fixture at a time",
