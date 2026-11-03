@@ -15,9 +15,10 @@
       "2026-10-17|Villarreal|Elche",
       "2026-10-17|Betis|Barcelona",
       "2026-10-17|Valencia|Athletic",
-      "2026-10-18|Osasuna|Racing"
+      "2026-10-18|Osasuna|Racing",
+      "2026-10-18|Celta|Alaves"
     ],
-    "pending_fixture_count": 4
+    "pending_fixture_count": 3
   },
   "matches": [
     {
@@ -297,6 +298,56 @@
         "https://www.skysports.com/football/osasuna-vs-racing-santander/teams/563009"
       ],
       "corrections": [],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-18",
+      "home": "Celta",
+      "away": "Alaves",
+      "score": "2-1",
+      "halftime_score": "0-0",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-celta-deportivo-alaves-9",
+        "https://www.skysports.com/football/celta-vigo-vs-alaves/teams/563004"
+      ],
+      "corrections": [
+        {
+          "field": "halftime substitution minutes",
+          "players": [
+            "Aleix Febas Pérez",
+            "Javi Rueda García"
+          ],
+          "stored": "45",
+          "reason": "Detailed official commentary gives 45'; summary cards display 46'."
+        }
+      ],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
     }
   ],
