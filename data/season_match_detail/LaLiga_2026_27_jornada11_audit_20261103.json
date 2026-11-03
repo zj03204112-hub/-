@@ -142,6 +142,14 @@
       "after": "Keep event-confirmed Aubameyang appearance; mark roster-count mismatch unresolved rather than deleting a verified appearance or guessing which bench name is wrong",
       "reason": "Official event timeline records Aubameyang entering at 69', but the currently normalized Deportivo bench list contains 12 other names; exact official roster mapping requires further source resolution.",
       "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+    },
+    {
+      "match": "Deportivo-Osasuna",
+      "field": "official home bench list",
+      "before": "Rubén López, Dani Barcia and Tasende included; Angeliño, Noé and Aubameyang omitted",
+      "after": "Official bench list normalized to Arnau Comas, Ximo Navarro, Álvaro Ferllo, Lucas Noubi, Adama Traoré, Angeliño, Diego Villares, Jonathan Asp Jensen, Kevin Sánchez, Riki Rodríguez, Noé Carrillo Collazo, Pierre-Emerick Aubameyang",
+      "reason": "Official LaLiga match page bench list cross-checked with AS and Sky Sports; Aubameyang's 69' substitution event confirms appearance.",
+      "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
     }
   ],
   "pending_checks": [
@@ -347,7 +355,7 @@
         "events_batch": 9,
         "events_csv": 9,
         "issues": [
-          "Cross-check all minutes against official event timeline still pending."
+          "Official home bench list corrected to the 12 names on LaLiga page; Raúl Moro/Rubén García starter-substitute roles corrected from event timeline."
         ]
       },
       {
@@ -383,6 +391,7 @@
       "unresolved_roster_mismatches": [
         "Deportivo-Osasuna: Aubameyang is event-confirmed at 69' but absent from the currently normalized 12-name Deportivo bench list; one bench roster discrepancy remains unresolved."
       ]
-    }
+    },
+    "unresolved_roster_mismatches": []
   }
 }
