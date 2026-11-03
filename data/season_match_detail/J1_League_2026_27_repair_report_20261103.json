@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "J1 League",
+  "canonical_results_file": "data/auto_results/J1_League_2026_27.csv",
+  "canonical_results_rows": 130,
+  "main_and_audit_branch_alignment": {
+    "rows": 130,
+    "dates_iso": true,
+    "unique_date_home_away_keys": 130
+  },
+  "player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
+  "player_rows": 280,
+  "matches_with_structured_starting_xi": 8,
+  "matches_with_both_bench_lists": 3,
+  "matches_with_player_appearance_status_table": 2,
+  "substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
+  "substitution_rows": 80,
+  "matches_with_structured_substitution_events": 8,
+  "xg_xga_file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
+  "matches_with_source_attributed_match_level_xg": 12,
+  "matches_with_independently_verified_match_level_xga": 0,
+  "unresolved_player_batch_matches": [],
+  "integrity_notes": [
+    "Missing player, bench, appearance and xG/xGA fields are not imputed.",
+    "Only structured player details from the reviewed source batches are normalized; this is not full-season player coverage.",
+    "Substitution table includes only events with both incoming and outgoing player names; red cards are not misclassified as substitutions.",
+    "XG values retain their source URL and status; conflicting or unaccepted candidate pairs are not silently selected.",
+    "All match-level xGA values remain blank because no explicit free match-level xGA field passed independent source verification."
+  ]
+}
