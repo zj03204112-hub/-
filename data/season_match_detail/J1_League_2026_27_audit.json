@@ -88,7 +88,8 @@
     "2026-11-03: Added official player-detail records for ten fixtures from 2026-10-24 to 2026-10-25: 400 player rows and 98 substitution events. Gamba Osaka goalkeeper 一森 純's red-card exit in fixture 34629 is recorded as an exit, not a substitution.",
     "2026-11-03 rapid continuation: official J.LEAGUE pages added source-backed starting XIs, documented substitutes and substitution events for Okayama 0-4 FC Tokyo (2026-10-31) and Mito 0-3 Hiroshima (2026-10-31). Added 64 player rows and 20 substitution rows; unused bench names remain unfilled where not shown in the official match progress. Mito's MASE Takumi red card is recorded as exit minute 25, not as a substitution. Sources: https://www.jleague.jp/en/match/j1/2026/103109/; https://www.jleague.jp/en/match/j1/2026/103107/.",
     "2026-11-03 rapid continuation: official J.LEAGUE match page added starting XI, seven recorded substitute appearances and seven substitution events for Vissel Kobe 3-1 Nagoya Grampus (2026-10-31). Added 29 player rows and 7 substitution rows. Source: https://www.jleague.jp/en/match/j1/2026/103113/.",
-    "2026-11-03 correction pass: official match card 34522 Cerezo Osaka-Okayama had five incorrect player-team assignments and five incorrect substitution-team assignments; corrected by matching official starting XI, bench, and substitution sections. Added missing official bench records OKUDA Yuto and TIAGO ANDRADE for Cerezo Osaka. Official match card 34637 Mito-Hiroshima: added unused substitute YAMAMOTO Shunta from the official bench list. Official bench size varies by team/fixture; completeness is checked against the match card, not a fixed 18 substitutes."
+    "2026-11-03 correction pass: official match card 34522 Cerezo Osaka-Okayama had five incorrect player-team assignments and five incorrect substitution-team assignments; corrected by matching official starting XI, bench, and substitution sections. Added missing official bench records OKUDA Yuto and TIAGO ANDRADE for Cerezo Osaka. Official match card 34637 Mito-Hiroshima: added unused substitute YAMAMOTO Shunta from the official bench list. Official bench size varies by team/fixture; completeness is checked against the match card, not a fixed 18 substitutes.",
+    "2026-11-03 official source correction: Kawasaki Frontale vs Kyoto (2026-08-15): corrected Apiatavia Hisashi to Kyoto, added Kato Ren as the 11' incoming substitute, and added Naga Riki and Mochiyama Kyosuke as unused bench members. Source: official Kawasaki Frontale match record. This closes the previously flagged bench-completeness item for this fixture."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
@@ -98,10 +99,10 @@
     "matches_with_substitution_events_structured": 130,
     "matches_with_complete_player_appearance_status_table": 115,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-    "standardized_player_rows": 5194,
+    "standardized_player_rows": 5197,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
     "standardized_substitution_rows": 1261,
-    "note": "Official-source correction pass: fixed five team assignments in Cerezo Osaka vs Okayama player records and five substitution records; added the two missing Cerezo Osaka bench players (Okuda Yuto and Tiago Andrade). Added Mito's official unused substitute Yamamoto Shunta. Official bench sizes vary by fixture (some teams list eight rather than nine substitutes); do not use a blanket 18-bench-player completeness rule. Remaining gaps must be judged against each official match card."
+    "note": "Official-source correction pass: corrected team assignments and completed official bench records for Cerezo Osaka-Okayama, Mito-Hiroshima, and Kawasaki Frontale-Kyoto. Official bench sizes vary by fixture; compare each fixture against its official record, not a fixed 18-bench-player rule. No estimates used."
   },
   "xg_xga_audit": {
     "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
@@ -527,7 +528,7 @@
         "status": "verified"
       }
     ],
-    "current_player_rows": 5194,
+    "current_player_rows": 5197,
     "current_player_match_groups": 130,
     "current_substitution_rows": 1261,
     "current_substitution_match_groups": 130,
@@ -550,14 +551,12 @@
       "verified_source": "Official J.LEAGUE match pages",
       "player_rows_added_this_pass": 190,
       "substitution_rows_added_this_pass": 59,
-      "limitations": "Correction pass on 2026-11-03: fixed team assignment errors in 2026-08-08 Cerezo Osaka-Okayama player/substitution rows; added Okuda Yuto and Tiago Andrade to the official Cerezo bench list; added Yamamoto Shunta as Mito's unused substitute from official Data Site record. Official bench sizes vary by fixture. Kawasaki Frontale-Kyoto remains flagged for a fixture-level bench completeness recheck; no estimates used.",
-      "player_rows_after_correction": 5194,
+      "limitations": "Official-source correction pass on 2026-11-03: fixed five player-team and five substitution-team assignments for Cerezo Osaka-Okayama; added Okuda Yuto and Tiago Andrade. Added Mito's unused substitute Yamamoto Shunta. For Kawasaki Frontale-Kyoto, corrected Apiatavia Hisashi to Kyoto, added Kato Ren as an appearing substitute, and added Naga Riki and Mochiyama Kyosuke as unused substitutes from the official Kawasaki club match record. Official bench sizes vary by fixture. No estimated names or minutes used.",
+      "player_rows_after_correction": 5197,
       "substitution_rows_after_correction": 1261,
       "bench_list_fixtures_completed": 130,
-      "bench_list_fixtures_remaining": 1,
-      "fixtures_still_missing_bench": [
-        "2026-08-15|川崎Ｆ|京都 (official J.League page did not expose all bench members; only official club page unused substitutes added; verify roster count against official match card)"
-      ],
+      "bench_list_fixtures_remaining": 0,
+      "fixtures_still_missing_bench": [],
       "bench_list_recently_completed": [
         "2026-10-31|鹿島|Ｃ大阪",
         "2026-10-31|柏|浦和",
@@ -577,6 +576,14 @@
           "official_match_card_id": "34637",
           "bench_rows_added": 1,
           "source_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34637"
+        },
+        {
+          "fixture": "2026-08-15|川崎Ｆ|京都",
+          "official_match_card_id": "not assigned; official Kawasaki Frontale match record used",
+          "player_rows_team_assignments_corrected": 1,
+          "substitution_rows_team_assignments_corrected": 1,
+          "bench_rows_added": 3,
+          "source_url": "https://www.frontale.co.jp/goto_game/2026-27/j_league1/02.html"
         }
       ]
     }
