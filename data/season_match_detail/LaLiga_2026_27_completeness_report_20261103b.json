@@ -25,7 +25,8 @@
   ],
   "gaps": [
     "99 other LaLiga 2026-27 fixtures remain without normalized player-detail batches.",
-    "Three official timeline-card versus narrative-commentary minute display differences are documented in the Jornada 11 audit; normalized CSV uses the official event-card display minute."
+    "Three official timeline-card versus narrative-commentary minute display differences are documented in the Jornada 11 audit; normalized CSV uses the official event-card display minute.",
+    "Batch/CSV roster-name differences corrected for Barcelona and Deportivo; Levante-Atletico still has one unresolved bench identity."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -313,5 +314,10 @@
       "Betis-Malaga: official event cards show Antony at 62' and Chupe at 61'; narrative commentary records 61'/60'. Normalized minutes follow event cards.",
       "Racing-Real Madrid: official event card shows Íñigo Sainz-Maza at 61'; narrative commentary records 60'. Normalized minute follows event card."
     ]
+  },
+  "jornada11_batch_csv_name_reconciliation": {
+    "status": "applied",
+    "corrections": 4,
+    "remaining_known_issue": "Levante-Atletico batch still contains one unresolved Atlético bench identity after excluding the conflicting duplicate Hugo Sotelo; confirm complete official substitute roster before certification."
   }
 }
