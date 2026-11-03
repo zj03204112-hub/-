@@ -189,14 +189,22 @@
       "home": "Barcelona",
       "away": "Real Madrid",
       "score": "1-2",
-      "official_match_url": "https://www.fcbarcelona.com/en/matches/138374/fc-barcelona-r-madrid-la-liga-2026-2027",
+      "official_match_url": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-real-madrid-10",
       "official_match_url_status": "found",
-      "starting_xi_status": "pending_source_audit",
-      "bench_status": "pending_source_audit",
-      "appearance_status": "pending_source_audit",
-      "substitutions_status": "pending_source_audit",
-      "player_detail_batch": null,
-      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them."
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_both_official_lists_12",
+      "appearance_status": "verified_8_entrants_and_16_unused_bench_players",
+      "substitutions_status": "verified_8_events",
+      "player_detail_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_barcelona_real_madrid.json",
+      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them.",
+      "official_detail_page_found": true,
+      "detail_status": "complete_source_crosscheck_and_structural_audit_passed",
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-real-madrid-10",
+        "https://www.fcbarcelona.com/en/matches/138374/fc-barcelona-r-madrid-la-liga-2026-2027",
+        "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/once-inicial-del-real-madrid-contra-el-barcelona-25-10-2026",
+        "https://www.skysports.com/football/barcelona-vs-real-madrid/teams/563017"
+      ]
     },
     {
       "date": "2026-10-26",
@@ -222,7 +230,7 @@
   },
   "normalized_batches_created": 1,
   "normalized_fixtures": 1,
-  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_real_sociedad_levante.json",
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_barcelona_real_madrid.json",
   "completed_fixture_keys": [
     "2026-10-23|Alaves|Malaga",
     "2026-10-24|Rayo|Elche",
@@ -231,13 +239,14 @@
     "2026-10-24|Atletico|Deportivo",
     "2026-10-25|Athletic|Getafe",
     "2026-10-25|Celta|Betis",
-    "2026-10-25|Real Sociedad|Levante"
+    "2026-10-25|Real Sociedad|Levante",
+    "2026-10-25|Barcelona|Real Madrid"
   ],
   "jornada10_progress": {
     "fixtures_expected": 10,
-    "fixtures_with_detail_batches": 8,
-    "fixtures_source_audited_complete": 8,
-    "remaining_without_detail_batches": 2,
+    "fixtures_with_detail_batches": 9,
+    "fixtures_source_audited_complete": 9,
+    "remaining_without_detail_batches": 1,
     "completed": [
       "Alaves-Malaga",
       "Rayo-Elche",
@@ -246,11 +255,11 @@
       "Atletico-Deportivo",
       "Athletic-Getafe",
       "Celta-Betis",
-      "Real Sociedad-Levante"
+      "Real Sociedad-Levante",
+      "Barcelona-Real Madrid"
     ],
     "in_progress": [],
     "remaining": [
-      "Barcelona-Real Madrid",
       "Sevilla-Osasuna"
     ]
   }
