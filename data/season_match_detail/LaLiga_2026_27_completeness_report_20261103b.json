@@ -28,7 +28,7 @@
     "98 other LaLiga 2026-27 fixtures remain without normalized player-detail batches.",
     "Jornada 10: Rayo-Elche is the first match with a new independent detail batch and normalized CSV rows; the other 9 Jornada 10 matches still need player-detail collection.",
     "Jornada 11: all 10 fixtures passed row-level source, lineup/bench, appearance-status, substitution in/out, minute, uniqueness and CSV-vs-batch checks.",
-    "Jornada 10: Alavés-Málaga is source-audited complete (22 starters, 24 bench entries, 10 substitution events); Rayo-Elche has a batch awaiting final source audit; eight matches still lack detail batches."
+    "Jornada 10: Alavés-Málaga and Rayo-Elche are source-audited complete; Rayo-Elche halftime substitution minutes corrected to detailed official commentary. Eight fixtures remain."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -327,14 +327,13 @@
   "jornada10_progress": {
     "fixtures_expected": 10,
     "fixtures_with_detail_batches": 2,
-    "fixtures_source_audited_complete": 1,
+    "fixtures_source_audited_complete": 2,
     "remaining_without_detail_batches": 8,
     "completed": [
-      "Alaves-Malaga"
-    ],
-    "in_progress": [
+      "Alaves-Malaga",
       "Rayo-Elche"
     ],
+    "in_progress": [],
     "remaining": [
       "Racing-Espanyol",
       "Valencia-Villarreal",
