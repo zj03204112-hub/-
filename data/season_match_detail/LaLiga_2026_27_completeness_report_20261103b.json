@@ -9,7 +9,7 @@
   "substitution_csv_rows": 105,
   "matches_with_both_starting_xis_entered": 11,
   "matches_with_partial_unresolved_identity": 0,
-  "fully_complete_matches": 11,
+  "fully_complete_matches": 0,
   "fixtures_without_normalized_player_detail": 98,
   "batches": [
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
@@ -26,8 +26,10 @@
   ],
   "gaps": [
     "98 other LaLiga 2026-27 fixtures remain without normalized player-detail batches.",
-    "Jornada 11: all 10 matches have completed structural and event audit; three official event-card versus narrative-commentary minute differences are documented.",
-    "Jornada 10: Rayo-Elche is the first match with a new independent detail batch and normalized CSV rows; the other 9 Jornada 10 matches still need player-detail collection."
+    "Jornada 10: Rayo-Elche is the first match with a new independent detail batch and normalized CSV rows; the other 9 Jornada 10 matches still need player-detail collection.",
+    "Jornada 11 structural audit: 10 unique fixture keys, 0 duplicate player rows and 0 duplicate substitution rows; batch and CSV event rows align.",
+    "Jornada 11 source certification is still pending for some bench-count/name checks and official minute display versus narrative discrepancies; fully_complete_matches remains 0.",
+    "Jornada 10 detail collection has begun with Rayo-Elche batch; do not count it as a fully completed match until source-level audit passes."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -329,5 +331,22 @@
     "normalized_batches_created": 1,
     "fixtures_remaining": 9,
     "first_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_rayo_elche.json"
+  },
+  "jornada11_source_certification_status": "pending",
+  "jornada11_integrity": {
+    "fixtures_with_batches": 10,
+    "unique_fixture_keys": 10,
+    "duplicate_player_rows": 0,
+    "duplicate_substitution_rows": 0,
+    "starters_entered": 220,
+    "batch_csv_event_alignment": "10/10 event counts align; all in/out and minute fields align after documented aliases",
+    "official_source_certification": "not yet complete",
+    "unresolved_source_questions": [
+      "Official match pages render starting lineups, bench lists and event timelines inconsistently across languages; recheck any missing names against a second free source before marking complete.",
+      "Resolve whether official event-card minute or detailed commentary minute is the canonical stored minute for Betis-Malaga (Antony, Chupe), Rayo-Celta (Tsitaishvili), and Racing-Real Madrid (Íñigo Sainz-Maza); preserve both if sources disagree.",
+      "Verify Villarreal's 10-player bench and Getafe/Rayo/Celta/Racing bench list counts against official match sheets; do not infer missing substitutes.",
+      "Confirm the official Atlético bench list for Levante-Atlético after the Hugo Sotelo/Dani Martínez name conflict has been corrected.",
+      "After source-level issues are resolved, certify each match separately; do not mark all 10 fully complete solely because CSV and batch rows align."
+    ]
   }
 }
