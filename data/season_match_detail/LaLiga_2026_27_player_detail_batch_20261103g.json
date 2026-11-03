@@ -56,7 +56,6 @@
     "away_bench": [
       "Juan Musso",
       "Obed Vargas",
-      "Hugo Sotelo",
       "Rodrigo Mendoza",
       "Alexander Sørloth",
       "Ademola Lookman",
@@ -65,7 +64,8 @@
       "Cristian Romero",
       "Robin Le Normand",
       "Salvi Esquivel",
-      "Jorge Domínguez"
+      "Jorge Domínguez",
+      "UNRESOLVED_BENCH_ENTRY_IDENTITY_CONFLICT"
     ],
     "substitution_events": [
       {
@@ -134,7 +134,11 @@
     ],
     "notes": [
       "Starting XIs, bench lists and substitution timeline taken from LaLiga and Levante UD official match pages.",
-      "Unused bench appearance status remains unverified and is not inferred."
+      "Unused bench appearance status remains unverified and is not inferred.",
+      "Audit 2026-11-03: removed Hugo Sotelo from Atlético's bench list because the same named player is independently listed in Levante's official bench list for this same match. Atlético's twelfth bench identity is left unresolved rather than duplicated or guessed."
     ]
+  },
+  "not_yet_verified": {
+    "away_bench": "One Atlético bench identity remains unresolved because Hugo Sotelo appears in Levante's official bench list for the same match; the duplicate is excluded from the named CSV."
   }
 }
