@@ -8,8 +8,8 @@
   "away": "Espanyol",
   "score": "0-1",
   "halftime_score": "0-0",
-  "official_match_url": "https://www.laliga.com/en-EG/match/temporada-2026-2027-laliga-ea-sports-villarreal-cf-rcd-espanyol-de-barcelona-11",
-  "verification": "partial_official_extraction",
+  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-villarreal-cf-rcd-espanyol-de-barcelona-11",
+  "verification": "cross_checked_official_laliga_and_AS_lineups",
   "verified_data": {
     "home_starting_xi": [
       "Péter Gulácsi",
@@ -36,8 +36,33 @@
       "Ayoze Pérez",
       "Nizar"
     ],
-    "away_starting_xi": [],
-    "away_bench": [],
+    "away_starting_xi": [
+      "Ángel Fortuño",
+      "Leandro Cabrera",
+      "Roger Hinojo",
+      "Vanja Drkusic",
+      "Omar El Hilali",
+      "Alejandro Santiago",
+      "Edu Expósito",
+      "Rafel Bauzà",
+      "Javi Hernández",
+      "UNRESOLVED_SHIRT_NUMBER_15",
+      "Roberto Fernández"
+    ],
+    "away_bench": [
+      "Jan Peries",
+      "Adama Timera",
+      "José Ángel",
+      "Gabriel Moscardo",
+      "Marcos Fernández",
+      "Quilindschy Hartman",
+      "Javi Puado",
+      "Tyrhys Dolan",
+      "Unai Núñez",
+      "Pol Lozano",
+      "Pere Milla",
+      "Fernando Pacheco"
+    ],
     "substitution_events": [
       {
         "team": "Villarreal",
@@ -112,11 +137,11 @@
     ]
   },
   "gaps": [
-    "Official page extraction lists 11 Villarreal starters and 10 substitutes; away starting XI and bench list not visible in retrieved text and remain blank.",
-    "Appearance status of unused bench players not asserted without complete team sheet."
+    "Espanyol starting player shown as shirt number 15 in the accessible lineup extract; identity not resolved and excluded from named player CSV.",
+    "Bench player appearance statuses are recorded only where the substitution event confirms an appearance; no event is not treated as proof of unused status."
   ],
   "sources": [
-    "https://www.laliga.com/en-EG/match/temporada-2026-2027-laliga-ea-sports-villarreal-cf-rcd-espanyol-de-barcelona-11",
-    "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-villarreal-cf-rcd-espanyol-de-barcelona-11"
+    "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-villarreal-cf-rcd-espanyol-de-barcelona-11",
+    "https://en.as.com/resultados/futbol/primera/2026_2027/directo/regular_a_11_6a4496c62a7a628/alineaciones/"
   ]
 }
