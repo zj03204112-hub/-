@@ -1,0 +1,34 @@
+{
+  "audit_date": "2026-11-03",
+  "season": "2026/27",
+  "league": "J1 League",
+  "baseline_csv": "data/auto_results/J1_League_2026_27.csv",
+  "source_index": "https://data.j-league.or.jp/SFMS01/search?competition_frame_ids=1&competition_years=2026",
+  "official_league_schedule_source": "https://www.jleague.jp/en/j1/match/search-list/?enddate=2026-09-20&period=custom&startdate=2026-09-19",
+  "matches": [
+    {"date":"2026-09-19","home":"川崎Ｆ","away":"鹿島","csv_score":"3-3","official_score":"3-3","official_match_url":"https://www.jleague.jp/match/j1/2026/091909/","xg_home":1.18,"xg_away":2.05,"xg_source":"Official J.LEAGUE match stats page; page labels values as goal expectation","xg_status":"verified from official match page; xGA not independently provided"},
+    {"date":"2026-09-19","home":"福岡","away":"広島","csv_score":"0-1","official_score":"0-1","official_match_url":"https://www.jleague.jp/match/j1/2026/091903/"},
+    {"date":"2026-09-19","home":"清水","away":"千葉","csv_score":"2-1","official_score":"2-1"},
+    {"date":"2026-09-19","home":"长崎","away":"Ｃ大阪","csv_score":"1-1","official_score":"1-1"},
+    {"date":"2026-09-19","home":"浦和","away":"東京Ｖ","csv_score":"3-1","official_score":"3-1","official_match_url":"https://www.jleague.jp/en/match/j1/2026/091904/"},
+    {"date":"2026-09-19","home":"岡山","away":"京都","csv_score":"1-2","official_score":"1-2"},
+    {"date":"2026-09-19","home":"FC東京","away":"名古屋","csv_score":"1-0","official_score":"1-0"},
+    {"date":"2026-09-19","home":"横浜FM","away":"水戸","csv_score":"2-0","official_score":"2-0"},
+    {"date":"2026-09-20","home":"町田","away":"柏","csv_score":"2-4","official_score":"2-4"},
+    {"date":"2026-09-20","home":"Ｇ大阪","away":"神戸","csv_score":"0-1","official_score":"0-1"}
+  ],
+  "summary": {
+    "matches_checked_against_official_J_LEAGUE_schedule": 10,
+    "date_home_away_score_mismatches": 0,
+    "new_official_match_level_xg_pairs": 1,
+    "new_independently_verified_match_level_xga_pairs": 0,
+    "player_details_transcribed": 0,
+    "v5_1_or_historical_prediction_snapshots_modified": false
+  },
+  "notes": [
+    "The official J.LEAGUE schedule and Data Site search results list all ten fixtures and final scores for Matchweek 8 on Sep 19-20, 2026.",
+    "Only Kawasaki Frontale vs Kashima has a match-level xG pair transcribed in this batch, from its official match statistics page. Values are stored as xG/goal expectation, not xGA.",
+    "For the other nine fixtures, no xG values are inferred or filled.",
+    "Some fixtures use the official schedule/index source rather than an individual match URL in this record; do not treat the index URL as a match-specific page."
+  ]
+}
