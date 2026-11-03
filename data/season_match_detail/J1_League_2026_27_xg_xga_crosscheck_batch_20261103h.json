@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "J1 League",
+  "season": "2026/27",
+  "scope": "Candidate-only cross-check for six official-verified 2026-08-08 matches. No value promoted to accepted xG because independent-source agreement has not been established. All xGA fields remain null.",
+  "records": [
+    {
+      "date": "2026-08-08",
+      "home": "FC東京",
+      "away": "町田",
+      "score": "1-5",
+      "candidates": [
+        {
+          "source": "UnionStat",
+          "url": "https://unionstat.com/events/tokyo-machida-zelvia-08-08-2026/",
+          "home_xg": 1.17,
+          "away_xg": 2.36,
+          "explicit_fields": [
+            "xG",
+            "Opponent xG"
+          ],
+          "notes": "Page presents match-level xG metrics; 'Opponent xG' is not accepted as an explicit independent xGA field."
+        },
+        {
+          "source": "ScoutingStats",
+          "url": "https://scoutingstats.ai/j1-league/fc-tokyo-v-machida-zelvia/19717273",
+          "home_xg": 1.17,
+          "away_xg": 2.36,
+          "explicit_fields": [
+            "xG"
+          ],
+          "notes": "Same pair as UnionStat, but independent model/provider provenance not demonstrated; not counted as independent corroboration."
+        },
+        {
+          "source": "FootballAnt",
+          "url": "https://www.footballant.com/match/fc-tokyo-vs-machida-zelvia/201-10035/live",
+          "home_xg": 0.96,
+          "away_xg": 1.55,
+          "explicit_fields": [
+            "xG"
+          ],
+          "notes": "Conflicting match-level xG pair; do not average or choose one without source-method validation."
+        }
+      ],
+      "accepted_xg_home": null,
+      "accepted_xg_away": null,
+      "xga_home": null,
+      "xga_away": null,
+      "status": "xg_source_conflict_unresolved",
+      "official_result_url": "https://www.jleague.jp/en/match/j1/2026/080802/"
+    },
+    {
+      "date": "2026-08-08",
+      "home": "柏",
+      "away": "水户",
+      "score": "2-1",
+      "candidates": [
+        {
+          "source": "VJStats",
+          "url": "https://vjstats.com/matches/6673/kashiwa-reysol-vs-mito-hollyhock",
+          "home_xg": 1.36,
+          "away_xg": 1.58,
+          "explicit_fields": [
+            "xG"
+          ],
+          "notes": "One visible third-party match-level pair; independent corroboration not found in this pass."
+        }
+      ],
+      "accepted_xg_home": null,
+      "accepted_xg_away": null,
+      "xga_home": null,
+      "xga_away": null,
+      "status": "single_candidate_no_independent_confirmation",
+      "official_result_url": "https://www.jleague.jp/en/match/j1/2026/080801/"
+    },
+    {
+      "date": "2026-08-08",
+      "home": "广岛",
+      "away": "千叶",
+      "score": "3-0",
+      "candidates": [
+        {
+          "source": "UnionStat",
+          "url": "https://unionstat.com/events/sanfrecce-hiroshima-jef-united-08-08-2026/",
+          "home_xg": 3.1,
+          "away_xg": 0.43,
+          "explicit_fields": [
+            "xG",
+            "Opponent xG"
+          ],
+          "notes": "Match-level candidate pair; not accepted as xGA."
+        },
+        {
+          "source": "FotMob",
+          "url": "https://www.fotmob.com/matches/sanfrecce-hiroshima-vs-jef-united-chiba/2410d6",
+          "home_xg": 2.86,
+          "away_xg": 0.45,
+          "explicit_fields": [
+            "Expected goals (xG)"
+          ],
+          "notes": "Conflicts with UnionStat pair; no averaging or silent provider selection."
+        }
+      ],
+      "accepted_xg_home": null,
+      "accepted_xg_away": null,
+      "xga_home": null,
+      "xga_away": null,
+      "status": "xg_source_conflict_unresolved",
+      "official_result_url": "https://www.jleague.jp/en/match/j1/2026/080806/"
+    },
+    {
+      "date": "2026-08-08",
+      "home": "名古屋",
+      "away": "清水",
+      "score": "0-1",
+      "candidates": [],
+      "accepted_xg_home": null,
+      "accepted_xg_away": null,
+      "xga_home": null,
+      "xga_away": null,
+      "status": "no_accepted_match_level_xg_candidate_in_this_pass",
+      "official_result_url": "https://www.jleague.jp/en/match/j1/2026/080803/"
+    },
+    {
+      "date": "2026-08-08",
+      "home": "Ｃ大阪",
+      "away": "岡山",
+      "score": "2-1",
+      "candidates": [],
+      "accepted_xg_home": null,
+      "accepted_xg_away": null,
+      "xga_home": null,
+      "xga_away": null,
+      "status": "no_accepted_match_level_xg_candidate_in_this_pass",
+      "official_result_url": "https://www.jleague.jp/en/match/j1/2026/080804/"
+    },
+    {
+      "date": "2026-08-08",
+      "home": "福冈",
+      "away": "神户",
+      "score": "0-1",
+      "candidates": [],
+      "accepted_xg_home": null,
+      "accepted_xg_away": null,
+      "xga_home": null,
+      "xga_away": null,
+      "status": "no_accepted_match_level_xg_candidate_in_this_pass",
+      "official_result_url": "https://www.jleague.jp/en/match/j1/2026/080805/"
+    }
+  ],
+  "summary": {
+    "matches_reviewed": 6,
+    "matches_with_candidate_xg": 3,
+    "matches_with_conflicting_xg_candidates": 2,
+    "matches_with_only_one_candidate_pair": 1,
+    "accepted_xg_pairs_added": 0,
+    "accepted_independent_match_level_xga_pairs_added": 0
+  },
+  "xga_acceptance_rule": "Accept only a free, traceable source that explicitly labels match-level xGA for the fixture. Do not reinterpret 'opponent xG', infer xGA from the opponent's xG, or use season aggregates.",
+  "integrity": [
+    "Candidate values are preserved with source attribution and not written into accepted xG fields.",
+    "Conflicting source values are not averaged or silently selected.",
+    "No paid-only API is accepted.",
+    "Do not alter baseline CSV, V5.1, or historical prediction snapshots."
+  ]
+}
