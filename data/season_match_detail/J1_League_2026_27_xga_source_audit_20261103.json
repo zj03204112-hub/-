@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "J1 League",
+  "season": "2026/27",
+  "objective": "Find a free, traceable, independent source explicitly publishing match-level xGA; do not infer xGA by copying the opponent's xG.",
+  "constraints": {
+    "free_only": true,
+    "match_level_required": true,
+    "explicit_xga_field_required": true,
+    "traceable_source_required": true,
+    "opponent_xg_substitution_prohibited": true
+  },
+  "reviewed_sources": [
+    {
+      "name": "J.League Data Site official match cards",
+      "url": "https://data.j-league.or.jp/SFMS01/",
+      "access": "free",
+      "match_level_xg": "not published on reviewed official match cards",
+      "match_level_xga": "not published on reviewed official match cards",
+      "decision": "not a usable xG/xGA source; retain for score, lineup, bench and substitution verification"
+    },
+    {
+      "name": "FootyStats J1 League xG page",
+      "url": "https://footystats.org/japan/j1-league/xg",
+      "access": "public page",
+      "match_level_xg": "recent-result table exposes home and away xG pairs for displayed recent matches",
+      "match_level_xga": "aggregate xGA by team and venue shown; no explicit per-match xGA field verified on public page",
+      "decision": "usable only for individually matched displayed xG pairs; not accepted as independent explicit match-level xGA source"
+    },
+    {
+      "name": "TACTIX J1 League xG table",
+      "url": "https://tactix.football/xpts/j1-league",
+      "access": "public page",
+      "match_level_xg": "page states 169 matches with xG on both sides, source apisports_proxy",
+      "match_level_xga": "page exposes team-level xPts table, not a raw match-level xGA field",
+      "decision": "candidate for further traceability work; not accepted as match-level xGA source"
+    },
+    {
+      "name": "JPick public J.League stats",
+      "url": "https://jpick.jp/en",
+      "access": "free web content",
+      "match_level_xg": "site states data sourced from SportMonks; public match xG display not yet independently extracted for the 130-row sample",
+      "match_level_xga": "no public downloadable explicit match-level xGA field verified",
+      "decision": "not accepted yet; source lineage points to SportMonks"
+    },
+    {
+      "name": "Sportmonks xG Data API",
+      "url": "https://www.sportmonks.com/football-api/xg-data/",
+      "access": "paid xG add-on; official page lists xG Basic at EUR 15/month paid yearly",
+      "match_level_xg": "fixture-level xG documented",
+      "match_level_xga": "explicit xGA metric per fixture documented",
+      "decision": "technically qualifies as a field/source candidate, but excluded because user requires free data"
+    }
+  ],
+  "current_dataset": {
+    "total_matches": 130,
+    "matches_with_source_attributed_match_level_xg": 12,
+    "matches_missing_match_level_xg": 118,
+    "matches_with_independently_verified_match_level_xga": 0,
+    "matches_missing_independently_verified_match_level_xga": 130,
+    "xga_values_filled_from_opponent_xg": 0
+  },
+  "conclusion": "As of 2026-11-03, no free public source reviewed passed all four requirements for independent, traceable, explicit match-level xGA. Keep all 130 xGA pairs blank. Continue checking free providers for raw fixture-level xGA rather than deriving it from the opposing team's xG.",
+  "next_checks": [
+    "Inspect JPick public match detail pages and source payloads to determine whether a per-fixture xGA field is exposed free of charge.",
+    "Check whether TACTIX exposes downloadable match-level xG values with fixture IDs and traceable provider attribution rather than only aggregated xPts.",
+    "Only add xGA when both teams' values and fixture identity are directly evidenced by a source; preserve URL and source timestamp."
+  ]
+}
