@@ -14,9 +14,10 @@
       "2026-10-17|Espanyol|Atletico",
       "2026-10-17|Villarreal|Elche",
       "2026-10-17|Betis|Barcelona",
-      "2026-10-17|Valencia|Athletic"
+      "2026-10-17|Valencia|Athletic",
+      "2026-10-18|Osasuna|Racing"
     ],
-    "pending_fixture_count": 5
+    "pending_fixture_count": 4
   },
   "matches": [
     {
@@ -256,6 +257,46 @@
           "reason": "Official detailed commentary and Valencia CF match report show the event at 45'; some summary cards show 46'."
         }
       ],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-18",
+      "home": "Osasuna",
+      "away": "Racing",
+      "score": "2-0",
+      "halftime_score": "1-0",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-r-racing-club-9",
+        "https://www.skysports.com/football/osasuna-vs-racing-santander/teams/563009"
+      ],
+      "corrections": [],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
     }
   ],
