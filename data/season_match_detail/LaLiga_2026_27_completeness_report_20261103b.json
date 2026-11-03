@@ -4,13 +4,13 @@
   "season": "2026-27",
   "results_fixtures": 109,
   "unique_fixture_keys": 109,
-  "fixtures_with_normalized_player_detail": 7,
-  "player_csv_rows": 315,
-  "substitution_csv_rows": 68,
+  "fixtures_with_normalized_player_detail": 8,
+  "player_csv_rows": 361,
+  "substitution_csv_rows": 78,
   "matches_with_both_starting_xis_entered": 3,
   "matches_with_partial_unresolved_identity": 2,
   "fully_complete_matches": 0,
-  "fixtures_without_normalized_player_detail": 102,
+  "fixtures_without_normalized_player_detail": 101,
   "batches": [
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103b.json",
@@ -18,7 +18,8 @@
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103d.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103e.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103f.json",
-    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103g.json"
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103g.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103h.json"
   ],
   "gaps": [
     "Barcelona-Alaves: one Alaves bench entry shown only as shirt number 27 unresolved.",
@@ -26,7 +27,8 @@
     "Non-entering bench player appearance status remains unverified unless independently sourced.",
     "Betis-Malaga: lineup and bench names entered from official sources; unused bench appearance status remains unverified.",
     "Rayo-Celta: non-entering bench appearance status remains unverified.",
-    "102 fixtures still need normalized player details, official bench lists, appearance status and substitution events.",
+    "For matches with details, bench appearance status remains unverified for players not recorded as entering.",
+    "101 fixtures still need normalized player details, official bench lists, appearance status and substitution events.",
     "For matches with details, bench appearance status remains unverified for players not recorded as entering."
   ],
   "policy": [
@@ -44,6 +46,8 @@
     "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
     "https://www.skysports.com/football/rayo-vallecano-vs-celta-vigo/teams/563031",
     "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-levante-ud-atletico-de-madrid-11",
-    "https://www.levanteud.com/en/matches/season-2026-2027-laliga-ea-sports-11-levante-ud-vs-atletico-de-madrid-3026"
+    "https://www.levanteud.com/en/matches/season-2026-2027-laliga-ea-sports-11-levante-ud-vs-atletico-de-madrid-3026",
+    "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-athletic-club-real-sociedad-11",
+    "https://as.com/resultados/futbol/primera/2026_2027/directo/regular_a_11_6a4496c62a79b35/alineaciones/"
   ]
 }
