@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-11-03",
+  "task": "J1 League 2026/27 match-data audit",
+  "latest_batch": {
+    "file": "data/season_match_detail/J1_League_2026_27_player_detail_batch_20261103a.json",
+    "commit": "86e71d4f0a532b0d19d149754f22aafa1eab6f25",
+    "match": "2026-09-06 Kawasaki Frontale 3-1 Shimizu S-Pulse",
+    "checks": [
+      "Final score cross-checked between official J.League match page and Shimizu S-Pulse official result page",
+      "Both starting XIs transcribed (22 starters)",
+      "Both substitute lists transcribed",
+      "Recorded substitutions and the 41st-minute red card separately",
+      "Match-level xG/xGA remain null because no verified match-level values were established from these official records"
+    ]
+  },
+  "status": {
+    "structured_player_detail_matches_recorded": 3,
+    "note_on_count": "Two matches in the 2026-11-02 player-detail batch plus this one match; count reflects structured player-detail records only, not full-season completion.",
+    "full_player_appearance_table_matches": 0,
+    "match_level_xga_independently_verified": 0,
+    "season_score_audit": "Multiple date batches recorded, but prior provisional 87/126 estimate has not been fully deduplicated and should not be treated as final acceptance count."
+  },
+  "next_actions": [
+    "Continue converting official single-match records into structured player-detail rows, prioritizing matches where official pages expose both starting XIs and substitutions.",
+    "Resolve official Data Site match_card_id links for existing result-index-only checks.",
+    "Seek free, traceable match-level xG and independently defined xGA; leave fields null until evidence is verified.",
+    "Run a full deduplicated audit before publishing season-wide completion percentages."
+  ]
+}
