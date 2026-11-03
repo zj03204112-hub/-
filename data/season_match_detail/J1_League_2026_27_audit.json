@@ -52,20 +52,22 @@
     "2026-11-03 added official player details for match cards 34537, 34541, 34542, 34543 and 34544; 200 player rows and 49 substitution events.",
     "Per user instruction, xG/xGA collection and source searching paused; priority is completion of official starting XIs, benches, actual appearances and substitutions.",
     "2026-11-03 added official player details for match cards 34546, 34547, 34548, 34549 and 34550; 200 player rows and 47 substitution events.",
+    "Per user instruction, xG/xGA collection and source searching paused; priority is completion of official starting XIs, benches, actual appearances and substitutions.",
+    "2026-11-03 continuation added official player details for match cards 34551–34556; 240 player rows and 57 substitution events.",
     "Per user instruction, xG/xGA collection and source searching paused; priority is completion of official starting XIs, benches, actual appearances and substitutions."
   ],
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
   "lineup_and_appearance_audit": {
-    "matches_with_both_teams_starting_xi_structured": 36,
-    "matches_with_both_bench_lists_structured": 30,
-    "matches_with_substitution_events_structured": 36,
-    "matches_with_complete_player_appearance_status_table": 29,
+    "matches_with_both_teams_starting_xi_structured": 42,
+    "matches_with_both_bench_lists_structured": 36,
+    "matches_with_substitution_events_structured": 42,
+    "matches_with_complete_player_appearance_status_table": 35,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-    "standardized_player_rows": 1400,
+    "standardized_player_rows": 1640,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-    "standardized_substitution_rows": 350,
-    "note": "Partial structured extraction only: current official records cover 36 matches with both starting XIs, 30 with both bench lists and 29 with complete player appearance-status classification. Official match-card URLs retained. Not full-season completion."
+    "standardized_substitution_rows": 407,
+    "note": "Partial structured extraction only: current official records cover 42 matches with both starting XIs, 36 with both bench lists and 35 with complete player appearance-status classification. Official match-card URLs retained. Not full-season completion."
   },
   "xg_xga_audit": {
     "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
