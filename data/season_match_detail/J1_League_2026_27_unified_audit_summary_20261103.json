@@ -99,6 +99,11 @@
       "name": "Sportmonks xG API details",
       "url": "https://www.sportmonks.com/football-api/xg-data/",
       "result": "Explicit fixture-level xG/xGA metrics are documented, but xG is sold as an add-on; not accepted as a free source under the user's constraint."
+    },
+    {
+      "name": "UnionStat / ScoutingStats / FootballAnt / VJStats / FotMob",
+      "url": "https://unionstat.com/events/tokyo-machida-zelvia-08-08-2026/",
+      "result": "For the 2026-08-08 FC Tokyo-Machida match, xG pairs conflict across providers (UnionStat/ScoutingStats 1.17/2.36; FootballAnt 0.96/1.55). For Hiroshima-Chiba, UnionStat 3.10/0.43 conflicts with FotMob 2.86/0.45. Kashiwa-Mito has one VJStats candidate 1.36/1.58 only. None promoted to accepted xG; no source in this pass verifies explicit match-level xGA."
     }
   ],
   "integrity_rules": [
@@ -140,5 +145,7 @@
     "match_level_xg_pair": 34,
     "independently_verified_match_level_xga": 34,
     "both_benches": 34
-  }
+  },
+  "xg_xga_crosscheck_latest_file": "data/season_match_detail/J1_League_2026_27_xg_xga_crosscheck_batch_20261103h.json",
+  "xg_xga_crosscheck_latest_result": "Six 2026-08-08 matches reviewed: three have third-party xG candidates; two candidate sets conflict across providers and one has only one candidate. Accepted xG additions 0; independently verified explicit match-level xGA additions 0. All unconfirmed values remain null."
 }
