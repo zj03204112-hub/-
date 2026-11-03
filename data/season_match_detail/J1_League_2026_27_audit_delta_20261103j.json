@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-11-03",
+  "match": {
+    "date": "2026-08-14",
+    "home": "Tokyo Verdy",
+    "away": "Kashiwa Reysol",
+    "score": "1-3",
+    "official_source": "J.LEAGUE individual match page"
+  },
+  "official_result_verification": {
+    "newly_verified": 1,
+    "score_conflicts": 0,
+    "identity_conflicts": 0,
+    "pending_official_evidence_after_update": 31
+  },
+  "player_detail_review": {
+    "starting_xi_home": 11,
+    "starting_xi_away": 11,
+    "substitution_events": 10,
+    "unused_substitute_lists": "not fully extracted",
+    "complete_appearance_status_table": false
+  },
+  "xg_review": {
+    "third_party_candidate": {
+      "source": "VJStats",
+      "home_xg": 1.22,
+      "away_xg": 1.97
+    },
+    "accepted_home_xg": null,
+    "accepted_away_xg": null,
+    "reason": "Only one candidate pair found in this pass; independent corroboration not established."
+  },
+  "xga_review": {
+    "accepted_home_xga": null,
+    "accepted_away_xga": null,
+    "reason": "No free, traceable source with explicit match-level xGA verified."
+  },
+  "integrity": [
+    "Do not treat the candidate xG as accepted.",
+    "Do not infer xGA from opponent xG.",
+    "Do not modify baseline CSV, V5.1, or historical prediction snapshots."
+  ]
+}
