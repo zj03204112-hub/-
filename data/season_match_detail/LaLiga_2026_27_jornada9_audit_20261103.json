@@ -16,9 +16,10 @@
       "2026-10-17|Betis|Barcelona",
       "2026-10-17|Valencia|Athletic",
       "2026-10-18|Osasuna|Racing",
-      "2026-10-18|Celta|Alaves"
+      "2026-10-18|Celta|Alaves",
+      "2026-10-18|Malaga|Real Sociedad"
     ],
-    "pending_fixture_count": 3
+    "pending_fixture_count": 2
   },
   "matches": [
     {
@@ -343,6 +344,56 @@
           "players": [
             "Aleix Febas Pérez",
             "Javi Rueda García"
+          ],
+          "stored": "45",
+          "reason": "Detailed official commentary gives 45'; summary cards display 46'."
+        }
+      ],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-18",
+      "home": "Malaga",
+      "away": "Real Sociedad",
+      "score": "2-5",
+      "halftime_score": "0-2",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-real-sociedad-9",
+        "https://www.skysports.com/football/malaga-vs-real-sociedad/teams/563008"
+      ],
+      "corrections": [
+        {
+          "field": "halftime substitution minutes",
+          "players": [
+            "Ramón Enríquez",
+            "Adam Aznou"
           ],
           "stored": "45",
           "reason": "Detailed official commentary gives 45'; summary cards display 46'."
