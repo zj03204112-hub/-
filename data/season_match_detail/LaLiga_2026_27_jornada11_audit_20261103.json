@@ -126,6 +126,22 @@
       "after": "Dani Martínez",
       "reason": "Officially traceable matchday lineup source lists Dani Martínez on Atlético's bench and Hugo Sotelo on Levante's bench.",
       "source": "https://elpais.com/deportes/resultados/futbol/primera/2026_2027/directo/regular-a-11-6a4496c62a7a197/alineaciones/"
+    },
+    {
+      "match": "Betis-Malaga",
+      "field": "Málaga bench roster duplicate",
+      "before": "Carlos Ruiz Rubio listed twice; Valentín Gómez incorrectly listed for Málaga",
+      "after": "Carlos Ruiz Rubio and Jens Cajuste retained as distinct players; erroneous Málaga Valentín Gómez row removed",
+      "reason": "Official match timeline confirms Chupe/Carlos Ruiz Rubio and Jens Cajuste both entered; official Betis lineup lists Valentín Gómez on Betis bench.",
+      "source": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11"
+    },
+    {
+      "match": "Deportivo-Osasuna",
+      "field": "Deportivo bench list coverage",
+      "before": "Official/source bench list has 12 names but Aubameyang event row is additional",
+      "after": "Keep event-confirmed Aubameyang appearance; mark roster-count mismatch unresolved rather than deleting a verified appearance or guessing which bench name is wrong",
+      "reason": "Official event timeline records Aubameyang entering at 69', but the currently normalized Deportivo bench list contains 12 other names; exact official roster mapping requires further source resolution.",
+      "source": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
     }
   ],
   "pending_checks": [
@@ -354,6 +370,19 @@
       "alias_rows_resolved": 1,
       "removed_conflicting_duplicate_rows": 1,
       "remaining_unresolved": "No unresolved identity remains for the previously conflicting Atlético bench entry; final full source-level verification of all bench names and event minutes remains in progress."
+    },
+    "csv_integrity": {
+      "player_rows": 454,
+      "substitution_rows": 95,
+      "duplicate_player_rows": 0,
+      "duplicate_substitution_rows": 0,
+      "unique_jornada11_fixture_keys": 10,
+      "starters_entered": 220,
+      "substitute_appeared_rows": 95,
+      "substitute_not_appeared_rows": 139,
+      "unresolved_roster_mismatches": [
+        "Deportivo-Osasuna: Aubameyang is event-confirmed at 69' but absent from the currently normalized 12-name Deportivo bench list; one bench roster discrepancy remains unresolved."
+      ]
     }
   }
 }
