@@ -29,7 +29,8 @@
     "Jornada 10: Rayo-Elche is the first match with a new independent detail batch and normalized CSV rows; the other 9 Jornada 10 matches still need player-detail collection.",
     "Jornada 11 structural audit: 10 unique fixture keys, 0 duplicate player rows and 0 duplicate substitution rows; batch and CSV event rows align.",
     "Jornada 11 source certification is still pending for some bench-count/name checks and official minute display versus narrative discrepancies; fully_complete_matches remains 0.",
-    "Jornada 10 detail collection has begun with Rayo-Elche batch; do not count it as a fully completed match until source-level audit passes."
+    "Jornada 10 detail collection has begun with Rayo-Elche batch; do not count it as a fully completed match until source-level audit passes.",
+    "Jornada 11: four substitution minute values corrected to detailed official commentary minutes; summary card display discrepancies remain documented in the audit log."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -347,6 +348,7 @@
       "Verify Villarreal's 10-player bench and Getafe/Rayo/Celta/Racing bench list counts against official match sheets; do not infer missing substitutes.",
       "Confirm the official Atlético bench list for Levante-Atlético after the Hugo Sotelo/Dani Martínez name conflict has been corrected.",
       "After source-level issues are resolved, certify each match separately; do not mark all 10 fully complete solely because CSV and batch rows align."
-    ]
+    ],
+    "canonical_minute_convention": "Detailed official commentary/event log minute is canonical; summary-card differences documented."
   }
 }
