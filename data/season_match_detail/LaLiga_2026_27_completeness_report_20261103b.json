@@ -5,8 +5,8 @@
   "results_fixtures": 109,
   "unique_fixture_keys": 109,
   "fixtures_with_normalized_player_detail": 29,
-  "player_csv_rows": 1277,
-  "substitution_csv_rows": 270,
+  "player_csv_rows": 1323,
+  "substitution_csv_rows": 280,
   "matches_with_both_starting_xis_entered": 29,
   "matches_with_partial_unresolved_identity": 0,
   "fully_complete_matches": 29,
@@ -34,7 +34,7 @@
     "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_sevilla_osasuna.json"
   ],
   "gaps": [
-    "80 of 109 LaLiga 2026-27 result fixtures remain without normalized player-detail batches; Jornada 11 and Jornada 10 are complete, and eight Jornada 9 fixtures have been audited."
+    "80 of 109 LaLiga 2026-27 result fixtures remain without normalized player-detail batches; Jornada 11 and Jornada 10 are complete, and nine Jornada 9 fixtures have been audited."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -379,14 +379,14 @@
     "detail_fixture_keys": 29,
     "detail_fixture_keys_unique": 29,
     "detail_keys_missing_from_results": 0,
-    "player_rows": 1277,
-    "unique_player_rows": 1277,
+    "player_rows": 1323,
+    "unique_player_rows": 1323,
     "duplicate_player_rows": 0,
-    "substitution_rows": 270,
-    "unique_substitution_rows": 270,
+    "substitution_rows": 280,
+    "unique_substitution_rows": 280,
     "duplicate_substitution_rows": 0,
     "starting_xi_rows": 638,
-    "bench_appeared_rows": 270,
+    "bench_appeared_rows": 280,
     "bench_not_appeared_rows": 405,
     "matches_with_event_batch_csv_mismatch": 0,
     "jornada11": {
@@ -404,16 +404,16 @@
       "complete": true
     },
     "jornada9": {
-      "fixtures_with_detail": 8,
-      "unique_fixture_keys": 8,
-      "complete_batches": 8
+      "fixtures_with_detail": 9,
+      "unique_fixture_keys": 9,
+      "complete_batches": 9
     }
   },
   "jornada10_source_certification_status": "complete",
   "jornada9_progress": {
     "fixtures_expected": 10,
-    "fixtures_with_detail_batches": 8,
-    "fixtures_source_audited_complete": 8,
-    "remaining_without_detail_batches": 2
+    "fixtures_with_detail_batches": 9,
+    "fixtures_source_audited_complete": 9,
+    "remaining_without_detail_batches": 1
   }
 }
