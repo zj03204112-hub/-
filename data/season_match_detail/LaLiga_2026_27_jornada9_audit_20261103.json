@@ -3,7 +3,7 @@
   "league": "LaLiga",
   "season": "2026-27",
   "matchday": 9,
-  "status": "in_progress",
+  "status": "jornada9_all_10_fixture_batches_source_audited_pending_final_global_integrity_recheck",
   "official_results_source": "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-9",
   "fixture_keys": {
     "expected": 10,
@@ -18,9 +18,10 @@
       "2026-10-18|Osasuna|Racing",
       "2026-10-18|Celta|Alaves",
       "2026-10-18|Malaga|Real Sociedad",
-      "2026-10-18|Real Madrid|Sevilla"
+      "2026-10-18|Real Madrid|Sevilla",
+      "2026-10-19|Getafe|Rayo"
     ],
-    "pending_fixture_count": 1
+    "pending_fixture_count": 0
   },
   "matches": [
     {
@@ -445,6 +446,60 @@
           "player": "Chidera Ejuke",
           "stored": "45",
           "reason": "Detailed official commentary gives 45'; summary card displays 46'."
+        }
+      ],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-19",
+      "home": "Getafe",
+      "away": "Rayo",
+      "score": "1-1",
+      "halftime_score": "0-1",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 10,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 12,
+        "unresolved": 0
+      },
+      "disciplinary_events": {
+        "red_cards": 1,
+        "recorded_separately": true
+      },
+      "csv_integrity": {
+        "player_rows": 44,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rayo-vallecano-9",
+        "https://www.skysports.com/football/getafe-vs-rayo-vallecano/teams/563007"
+      ],
+      "corrections": [
+        {
+          "field": "halftime substitution minutes",
+          "players": [
+            "Andrés García",
+            "Francho Serrano Gracia"
+          ],
+          "stored": "45",
+          "reason": "Detailed official commentary gives 45'; summary cards display 46'."
         }
       ],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
