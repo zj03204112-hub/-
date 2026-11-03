@@ -1,0 +1,18 @@
+{
+  "generated_at_beijing": "2026-11-03T10:22:00+08:00",
+  "beijing_reviewed_date": "2026-11-02",
+  "matches_checked": 17,
+  "matched_immutable_pre_match_snapshots": 0,
+  "searched_refs": [
+    "main",
+    "automation/daily-football-2026-11-01",
+    "automation/daily-football-2026-11-02"
+  ],
+  "findings": [
+    "main: no predictions directory found",
+    "automation/daily-football-2026-11-01: no matching prediction directory found",
+    "automation/daily-football-2026-11-02: only an unrelated 2026-10-29 continental-club candidate snapshot exists; no 2026-11-02 match snapshot found"
+  ],
+  "status": "NO_MATCHING_IMMUTABLE_SNAPSHOT",
+  "consequence": "All hit-rate fields remain NOT_VERIFIABLE. No predictions reconstructed from conversation history."
+}
