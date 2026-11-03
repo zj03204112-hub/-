@@ -169,14 +169,20 @@
       "home": "Real Sociedad",
       "away": "Levante",
       "score": "2-1",
-      "official_match_url": "https://www.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-real-sociedad-levante-ud-10",
+      "official_match_url": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-levante-ud-10",
       "official_match_url_status": "found",
-      "starting_xi_status": "pending_source_audit",
-      "bench_status": "pending_source_audit",
-      "appearance_status": "pending_source_audit",
-      "substitutions_status": "pending_source_audit",
-      "player_detail_batch": null,
-      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them."
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_both_official_lists_12",
+      "appearance_status": "verified_10_entrants_and_14_unused_bench_players",
+      "substitutions_status": "verified_10_events",
+      "player_detail_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_real_sociedad_levante.json",
+      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them.",
+      "official_detail_page_found": true,
+      "detail_status": "complete_source_crosscheck_and_structural_audit_passed",
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-levante-ud-10",
+        "https://www.skysports.com/football/real-sociedad-vs-levante/teams/563021"
+      ]
     },
     {
       "date": "2026-10-25",
@@ -216,7 +222,7 @@
   },
   "normalized_batches_created": 1,
   "normalized_fixtures": 1,
-  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_celta_betis.json",
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_real_sociedad_levante.json",
   "completed_fixture_keys": [
     "2026-10-23|Alaves|Malaga",
     "2026-10-24|Rayo|Elche",
@@ -224,13 +230,14 @@
     "2026-10-24|Valencia|Villarreal",
     "2026-10-24|Atletico|Deportivo",
     "2026-10-25|Athletic|Getafe",
-    "2026-10-25|Celta|Betis"
+    "2026-10-25|Celta|Betis",
+    "2026-10-25|Real Sociedad|Levante"
   ],
   "jornada10_progress": {
     "fixtures_expected": 10,
-    "fixtures_with_detail_batches": 7,
-    "fixtures_source_audited_complete": 7,
-    "remaining_without_detail_batches": 3,
+    "fixtures_with_detail_batches": 8,
+    "fixtures_source_audited_complete": 8,
+    "remaining_without_detail_batches": 2,
     "completed": [
       "Alaves-Malaga",
       "Rayo-Elche",
@@ -238,11 +245,11 @@
       "Valencia-Villarreal",
       "Atletico-Deportivo",
       "Athletic-Getafe",
-      "Celta-Betis"
+      "Celta-Betis",
+      "Real Sociedad-Levante"
     ],
     "in_progress": [],
     "remaining": [
-      "Real Sociedad-Levante",
       "Barcelona-Real Madrid",
       "Sevilla-Osasuna"
     ]
