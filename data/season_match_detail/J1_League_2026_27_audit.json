@@ -1,17 +1,22 @@
 {
-  "generated_at": "2026-11-01",
+  "generated_at": "2026-11-03",
   "league": "J1 League",
   "season": "2026/27",
   "source_url": "https://data.j-league.or.jp/SFMS01/search?competition_years=2026&competition_frame_ids=1&tv_relay_station_name=",
   "source_type": "Official J.League Data Site",
-  "rows": 125,
+  "rows": 130,
   "coverage_start": "2026-08-07",
-  "coverage_end": "2026-10-31",
+  "coverage_end": "2026-11-01",
   "structural_validation": {
-    "date_iso_format": "125/125",
-    "scores_numeric": "125/125",
-    "home_away_present": "125/125",
-    "duplicate_date_home_away_keys": 0
+    "date_iso_format": "130/130",
+    "scores_numeric": "130/130",
+    "home_away_present": "130/130",
+    "duplicate_date_home_away_keys": 0,
+    "mapping_rows": "130/130",
+    "results_rows": "130/130",
+    "official_match_urls_present": "130/130",
+    "provider_event_ids_present": "126/130; four 2026-11-01 records use official match URLs with provider ID pending",
+    "mapping_to_results_match_keys": "130/130 after date normalization and team alias normalization"
   },
   "source_cross_checks": [
     {
@@ -31,11 +36,34 @@
       "status": "matched"
     }
   ],
-  "row_by_row_independent_recheck": "pending",
+  "row_by_row_independent_recheck": "Result/mapping rows are structurally aligned 130/130; 32 baseline matches still lack complete individual official evidence. Player and xG/xGA completeness are tracked separately.",
   "lineups_and_actual_appearances": "not present in this results CSV; separate collection required",
   "notes": [
     "The CSV's source column points to the official J.League Data Site.",
     "125 rows correspond to completed matches from 2026-08-07 through 2026-10-31; fixtures scheduled for 2026-11-01 are not included.",
-    "Structural checks passed; the two sample rows above were independently matched to official J.League match pages. Do not label the full 125-row independent recheck complete yet."
-  ]
+    "Structural checks passed; the two sample rows above were independently matched to official J.League match pages. Do not label the full 125-row independent recheck complete yet.",
+    "2026-11-03 repair: default and audit branch results CSVs aligned at 130 unique fixtures with ISO dates.",
+    "Standardized player, substitution, and xG/xGA tables added on main; these contain only extracted source-backed records and explicit blanks for missing values."
+  ],
+  "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
+  "results_file": "data/auto_results/J1_League_2026_27.csv",
+  "lineup_and_appearance_audit": {
+    "matches_with_both_teams_starting_xi_structured": 8,
+    "matches_with_both_bench_lists_structured": 3,
+    "matches_with_substitution_events_structured": 8,
+    "matches_with_complete_player_appearance_status_table": 2,
+    "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
+    "standardized_player_rows": 280,
+    "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
+    "standardized_substitution_rows": 80,
+    "note": "These are partial structured extractions, not full-season completion. Missing names and minutes are not imputed."
+  },
+  "xg_xga_audit": {
+    "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
+    "matches_with_source_attributed_match_level_xg": 12,
+    "matches_missing_match_level_xg": 118,
+    "matches_with_independently_verified_match_level_xga": 0,
+    "matches_missing_independently_verified_match_level_xga": 130,
+    "note": "xG values remain source-attributed; no independent match-level xGA source passed verification. Do not infer xGA from opponent xG."
+  }
 }
