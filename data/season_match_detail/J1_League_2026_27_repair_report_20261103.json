@@ -9,13 +9,13 @@
     "unique_date_home_away_keys": 130
   },
   "player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-  "player_rows": 1000,
-  "matches_with_structured_starting_xi": 26,
-  "matches_with_both_bench_lists": 20,
-  "matches_with_player_appearance_status_table": 19,
+  "player_rows": 1200,
+  "matches_with_structured_starting_xi": 31,
+  "matches_with_both_bench_lists": 25,
+  "matches_with_player_appearance_status_table": 24,
   "substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-  "substitution_rows": 254,
-  "matches_with_structured_substitution_events": 26,
+  "substitution_rows": 303,
+  "matches_with_structured_substitution_events": 31,
   "xg_xga_file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
   "matches_with_source_attributed_match_level_xg": 12,
   "matches_with_independently_verified_match_level_xga": 0,
@@ -33,11 +33,14 @@
     "xGA source search expanded to FootballSoccerAPI and TACTIX API docs. Neither publicly documents an explicit free fixture-level xGA field; no xGA values were populated.",
     "Additional official player extraction completed for match cards 34528, 34529 and 34530: 120 player records and 27 substitution events.",
     "2026-11-03 additional official player extraction: match cards 34531, 34532, 34533, 34535 and 34536 added 200 player records and 50 substitution events; source URLs retained and files re-read after commit.",
-    "Per user instruction, stop spending time searching for xG/xGA sources; prioritize official starting XI, bench, appearance status and substitutions. Existing xG/xGA records are left unchanged, and missing values remain blank."
+    "Per user instruction, stop spending time searching for xG/xGA sources; prioritize official starting XI, bench, appearance status and substitutions. Existing xG/xGA records are left unchanged, and missing values remain blank.",
+    "2026-11-03 additional official player extraction: match cards 34537, 34541, 34542, 34543 and 34544 added 200 player rows and 49 substitution events. Official URLs retained and files re-read after commit.",
+    "Corrected player appearance interval for a substitute who entered and was later substituted off; entry and exit minutes are both recorded in the player table.",
+    "Per user instruction, xG/xGA source search is paused; prioritize filling official lineups, benches, actual appearance status and substitution records. Existing xG/xGA data remains unchanged."
   ],
-  "matches_missing_starting_xi": 104,
-  "matches_missing_both_bench_lists": 110,
-  "matches_missing_complete_appearance_status_table": 111,
+  "matches_missing_starting_xi": 99,
+  "matches_missing_both_bench_lists": 105,
+  "matches_missing_complete_appearance_status_table": 106,
   "matches_missing_source_attributed_match_level_xg": 118,
   "matches_missing_independently_verified_match_level_xga": 130,
   "branch_alignment_note": "The canonical results CSV is 130 rows on both main and audit/stable-match-id-mapping-20261101; ISO dates and unique date/home/away keys verified.",
@@ -45,7 +48,7 @@
   "substitution_rows_missing_player_names": 0,
   "player_detail_increment": {
     "date": "2026-11-03",
-    "matches_added": 15,
+    "matches_added": 20,
     "match_card_ids": [
       34519,
       34520,
@@ -61,12 +64,17 @@
       34532,
       34533,
       34535,
-      34536
+      34536,
+      34537,
+      34541,
+      34542,
+      34543,
+      34544
     ],
-    "records_added": 600,
-    "substitutions_added": 144,
+    "records_added": 800,
+    "substitutions_added": 193,
     "source": "J.League Data Site official match-card records",
-    "note": "Fifteen match cards now structured in the incremental extraction series. Each player and substitution row retains its official match-card URL. No xG/xGA values were inferred; xG/xGA collection is paused per user instruction."
+    "note": "Twenty official match cards structured across incremental repair batches; each player and substitution row retains the official match-card URL. xG/xGA research paused per user instruction."
   },
   "xga_source_audit_file": "data/season_match_detail/J1_League_2026_27_xga_source_audit_20261103.json",
   "xga_source_audit_summary": {
