@@ -9,13 +9,13 @@
     "unique_date_home_away_keys": 130
   },
   "player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-  "player_rows": 280,
-  "matches_with_structured_starting_xi": 8,
-  "matches_with_both_bench_lists": 3,
-  "matches_with_player_appearance_status_table": 2,
+  "player_rows": 400,
+  "matches_with_structured_starting_xi": 11,
+  "matches_with_both_bench_lists": 6,
+  "matches_with_player_appearance_status_table": 5,
   "substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-  "substitution_rows": 80,
-  "matches_with_structured_substitution_events": 8,
+  "substitution_rows": 110,
+  "matches_with_structured_substitution_events": 11,
   "xg_xga_file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
   "matches_with_source_attributed_match_level_xg": 12,
   "matches_with_independently_verified_match_level_xga": 0,
@@ -26,14 +26,43 @@
     "Substitution table includes only events with both incoming and outgoing player names; red cards are not misclassified as substitutions.",
     "XG values retain their source URL and status; conflicting or unaccepted candidate pairs are not silently selected.",
     "All match-level xGA values remain blank because no explicit free match-level xGA field passed independent source verification.",
-    "Displayed substitution time strings were restored from the official match-page extraction where minute_display was available; no minute values were estimated."
+    "Displayed substitution time strings were restored from the official match-page extraction where minute_display was available; no minute values were estimated.",
+    "2026-11-03 incremental player extraction added 3 official match cards (IDs 34597–34599), 120 player rows and 30 substitution events; full-season player coverage remains incomplete.",
+    "Independent xGA source audit reviewed FootyStats, TACTIX, JPick/Sportmonks and official J.League pages; no free public source with explicit match-level xGA passed verification, so xGA remains blank."
   ],
-  "matches_missing_starting_xi": 122,
-  "matches_missing_both_bench_lists": 127,
-  "matches_missing_complete_appearance_status_table": 128,
+  "matches_missing_starting_xi": 119,
+  "matches_missing_both_bench_lists": 124,
+  "matches_missing_complete_appearance_status_table": 125,
   "matches_missing_source_attributed_match_level_xg": 118,
   "matches_missing_independently_verified_match_level_xga": 130,
   "branch_alignment_note": "The canonical results CSV is 130 rows on both main and audit/stable-match-id-mapping-20261101; ISO dates and unique date/home/away keys verified.",
   "substitution_rows_missing_minute": 0,
-  "substitution_rows_missing_player_names": 0
+  "substitution_rows_missing_player_names": 0,
+  "player_detail_increment": {
+    "date": "2026-11-03",
+    "matches_added": 3,
+    "match_card_ids": [
+      34597,
+      34598,
+      34599
+    ],
+    "records_added": 120,
+    "substitutions_added": 30,
+    "source": "J.League Data Site official match cards",
+    "source_urls": [
+      "https://data.j-league.or.jp/SFMS02/?match_card_id=34597",
+      "https://data.j-league.or.jp/SFMS02/?match_card_id=34598",
+      "https://data.j-league.or.jp/SFMS02/?match_card_id=34599"
+    ],
+    "score_and_lineup_crosscheck": "Official match-card pages checked; starting XIs, benches, and substitution timelines transcribed",
+    "caveat": "Not full-season coverage; no xG/xGA added from these official pages."
+  },
+  "xga_source_audit_file": "data/season_match_detail/J1_League_2026_27_xga_source_audit_20261103.json",
+  "xga_source_audit_summary": {
+    "candidate_sources_reviewed": 4,
+    "free_public_match_level_explicit_xga_sources_verified": 0,
+    "matches_with_independently_verified_match_level_xga": 0,
+    "matches_missing_independently_verified_match_level_xga": 130,
+    "note": "FootyStats public page exposes recent match xG pairs and aggregate xGA, not a verified explicit match-level xGA field. TACTIX page exposes team-level xPts summary sourced from apisports_proxy, not raw match-level xGA. Sportmonks explicitly documents fixture-level xGA but its xG add-on is paid. Official J.League match cards do not publish xG/xGA."
+  }
 }
