@@ -11,9 +11,10 @@
     "completed_fixture_keys": [
       "2026-10-23|Alaves|Malaga",
       "2026-10-24|Rayo|Elche",
-      "2026-10-24|Racing|Espanyol"
+      "2026-10-24|Racing|Espanyol",
+      "2026-10-24|Valencia|Villarreal"
     ],
-    "pending_fixture_count": 7
+    "pending_fixture_count": 6
   },
   "matches": [
     {
@@ -140,6 +141,51 @@
       "sources": [
         "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-rcd-espanyol-de-barcelona-10",
         "https://www.skysports.com/football/racing-santander-vs-espanyol/teams/563019"
+      ],
+      "corrections": [],
+      "status": "complete_source_crosscheck_and_structural_audit_passed"
+    },
+    {
+      "date": "2026-10-24",
+      "home": "Valencia",
+      "away": "Villarreal",
+      "score": "1-2",
+      "halftime_score": "1-0",
+      "starting_xi": {
+        "home": 11,
+        "away": 11,
+        "verified": true
+      },
+      "bench": {
+        "home": 12,
+        "away": 12,
+        "verified": true
+      },
+      "substitution_events": {
+        "expected": 10,
+        "normalized": 10,
+        "duplicate_count": 0,
+        "verified": true
+      },
+      "appearance_status": {
+        "appeared": 10,
+        "not_appeared": 14,
+        "unresolved": 0
+      },
+      "disciplinary_events": {
+        "red_cards": 2,
+        "recorded_separately": true
+      },
+      "csv_integrity": {
+        "player_rows": 46,
+        "duplicate_player_rows": 0,
+        "substitution_rows": 10,
+        "duplicate_substitution_rows": 0
+      },
+      "sources": [
+        "https://www.laliga.com/en-NL/match/temporada-2026-2027-laliga-ea-sports-valencia-cf-villarreal-cf-10",
+        "https://www.valenciacf.com/en/17928660918647690",
+        "https://www.skysports.com/football/valencia-vs-villarreal/teams/563023"
       ],
       "corrections": [],
       "status": "complete_source_crosscheck_and_structural_audit_passed"
