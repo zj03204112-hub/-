@@ -74,7 +74,7 @@
         "team": "Betis",
         "player_in": "Antony",
         "player_out": "Rodrigo Riquelme",
-        "minute": "62",
+        "minute": "61",
         "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11"
       },
       {
@@ -109,7 +109,7 @@
         "team": "Malaga",
         "player_in": "Chupe",
         "player_out": "David Larrubia",
-        "minute": "61",
+        "minute": "60",
         "source": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11"
       },
       {
@@ -149,7 +149,8 @@
       "Appearance-status audit 2026-11-03: Carlos Ruiz Rubio is the roster identity for the substitute shown in the official event timeline as Chupe; mark the roster row as appeared at 61' (timeline-card minute).",
       "Appearance reconciliation: Carlos Ruiz Rubio is recorded as appeared at 61' as the official event display labels the player Chupe; Jens Cajuste is also present on the bench and appeared at 80'.",
       "Clarification: Carlos Ruiz Rubio (known in the official event timeline as Chupe) and Jens Cajuste are two distinct Málaga substitutes. Carlos Ruiz Rubio entered at 61'; Jens Cajuste entered at 80'.",
-      "Bench list de-duplication: the second Carlos Ruiz Rubio entry was a normalization error; the two distinct entries are Carlos Ruiz Rubio (event display alias Chupe) and Jens Cajuste."
+      "Bench list de-duplication: the second Carlos Ruiz Rubio entry was a normalization error; the two distinct entries are Carlos Ruiz Rubio (event display alias Chupe) and Jens Cajuste.",
+      "Canonical-minute rule set 2026-11-03: use the detailed official commentary/event log minute, not the summary substitution-card display when those differ. Therefore Antony=61', Chupe=60'."
     ]
   }
 }
