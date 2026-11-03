@@ -268,5 +268,25 @@
     ],
     "remaining_without_detail_batches": 0,
     "remaining": []
-  }
+  },
+  "jornada10_audit_status": "complete",
+  "final_integrity_audit": {
+    "expected_fixtures": 10,
+    "verified_fixtures": 10,
+    "unique_fixture_keys": 10,
+    "duplicate_fixture_keys": 0,
+    "player_rows": 457,
+    "duplicate_player_rows": 0,
+    "substitution_rows": 96,
+    "duplicate_substitution_rows": 0,
+    "starters": 220,
+    "bench_entries": 237,
+    "bench_appeared": 96,
+    "bench_not_appeared": 141,
+    "event_batch_csv_mismatches": 0,
+    "detail_keys_missing_from_results": 0,
+    "result_key_normalization": "football-data team aliases normalized (Vallecano↔Rayo, Ath Madrid↔Atletico, La Coruna↔Deportivo, Santander↔Racing, Espanol↔Espanyol)",
+    "status": "passed"
+  },
+  "last_update": "2026-11-03"
 }
