@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "J1 League",
+  "season": "2026/27",
+  "source": "Official J.LEAGUE individual match page",
+  "scope": "Incremental player-detail extraction for one officially verified baseline match; unused bench lists not yet structured, so appearance-status table is partial.",
+  "matches": [
+    {
+      "date": "2026-08-08",
+      "home": "Ｃ大阪",
+      "away": "岡山",
+      "score": "2-1",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/080804/",
+      "status": "official_starting_xi_and_substitution_timeline_structured",
+      "home_starting_xi": [
+        "NAKAMURA Kosuke",
+        "INOUE Rikito",
+        "DION COOLS",
+        "HATANAKA Shinnosuke",
+        "NAKAMURA Takumi",
+        "MATSUMOTO Masaya",
+        "KAGAWA Shinji",
+        "TANAKA Shunta",
+        "YOKOYAMA Yumeki",
+        "ESAKA Ataru",
+        "SAKURAGAWA Solomon"
+      ],
+      "away_starting_xi": [
+        "MATSUDA Shun",
+        "OMORI Hiroshi",
+        "SUZUKI Yoshitake",
+        "TATSUTA Yugo",
+        "MIYAMOTO Eiji",
+        "SHIRAI Kosuke",
+        "BROWNE Noah Kenshin",
+        "TAKAHASHI Niko",
+        "OKAZAWA Kosei",
+        "NA Sangho",
+        "LUCAO"
+      ],
+      "home_substitutions": [
+        {
+          "out": "MATSUMOTO Masaya",
+          "in": "OBERDAN",
+          "minute": 46
+        },
+        {
+          "out": "KAGAWA Shinji",
+          "in": "LUCAS FERNANDES",
+          "minute": 58
+        },
+        {
+          "out": "ESAKA Ataru",
+          "in": "KAWANO Kota",
+          "minute": 79
+        },
+        {
+          "out": "KAWANO Kota",
+          "in": "SUEYOSHI Rui",
+          "minute": 87
+        },
+        {
+          "out": "OKAZAWA Kosei",
+          "in": "KIDA Hinata",
+          "minute": 87
+        }
+      ],
+      "away_substitutions": [
+        {
+          "out": "BROWNE Noah Kenshin",
+          "in": "YAMANE Towa",
+          "minute": 58
+        },
+        {
+          "out": "YOKOYAMA Yumeki",
+          "in": "UEJO Satoki",
+          "minute": 67
+        },
+        {
+          "out": "LUCAO",
+          "in": "ICHIMI Kazunari",
+          "minute": 67
+        },
+        {
+          "out": "TAKAHASHI Niko",
+          "in": "OHATA Ayumu",
+          "minute": 67
+        },
+        {
+          "out": "MIYAMOTO Eiji",
+          "in": "KAMIYA Yuta",
+          "minute": 67
+        }
+      ],
+      "appearance_status_scope": "All 22 starters are confirmed appeared. The ten incoming substitutes and corresponding outgoing players are confirmed from official timeline. The official page content retrieved here does not expose the full unused substitute list, so this is not counted as a complete appearance-status table.",
+      "unused_substitute_lists": null,
+      "xg_home": null,
+      "xg_away": null,
+      "xga_home": null,
+      "xga_away": null,
+      "xg_status": "No accepted free, traceable, match-level xG pair cross-checked in this batch; null retained.",
+      "xga_status": "No free, traceable source with an explicit match-level xGA field verified; null retained."
+    }
+  ],
+  "summary": {
+    "matches": 1,
+    "both_starting_xi_official": 1,
+    "starting_players_structured": 22,
+    "substitution_events_structured": 10,
+    "incoming_substitutes_confirmed": 10,
+    "unused_bench_lists_structured": 0,
+    "complete_appearance_status_tables": 0,
+    "accepted_xg_pairs_added": 0,
+    "independently_verified_match_level_xga_pairs_added": 0
+  },
+  "integrity": [
+    "The official match page confirms the score, both starting XIs and substitution timeline.",
+    "Do not mark unused substitutes as known when the retrieved official page does not expose the full list.",
+    "No xG/xGA estimates or opponent-xG substitutions.",
+    "Do not alter baseline CSV, V5.1 or historical prediction snapshots."
+  ]
+}
