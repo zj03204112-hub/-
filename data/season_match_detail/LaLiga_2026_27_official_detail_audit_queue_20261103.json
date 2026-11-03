@@ -2073,5 +2073,18 @@
     "alias_rows_resolved": 1,
     "removed_conflicting_duplicate_rows": 1,
     "remaining_unresolved": "No unresolved identity remains for the previously conflicting Atlético bench entry; final full source-level verification of all bench names and event minutes remains in progress."
+  },
+  "jornada11_csv_integrity": {
+    "player_rows": 454,
+    "substitution_rows": 95,
+    "duplicate_player_rows": 0,
+    "duplicate_substitution_rows": 0,
+    "unique_jornada11_fixture_keys": 10,
+    "starters_entered": 220,
+    "substitute_appeared_rows": 95,
+    "substitute_not_appeared_rows": 139,
+    "unresolved_roster_mismatches": [
+      "Deportivo-Osasuna: Aubameyang is event-confirmed at 69' but absent from the currently normalized 12-name Deportivo bench list; one bench roster discrepancy remains unresolved."
+    ]
   }
 }
