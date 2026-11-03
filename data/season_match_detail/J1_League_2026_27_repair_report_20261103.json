@@ -9,13 +9,13 @@
     "unique_date_home_away_keys": 130
   },
   "player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-  "player_rows": 4762,
-  "matches_with_structured_starting_xi": 121,
+  "player_rows": 5197,
+  "matches_with_structured_starting_xi": 130,
   "matches_with_both_bench_lists": 111,
-  "matches_with_player_appearance_status_table": 115,
+  "matches_with_player_appearance_status_table": 130,
   "substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
   "substitution_rows": 1170,
-  "matches_with_structured_substitution_events": 121,
+  "matches_with_structured_substitution_events": 130,
   "xg_xga_file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
   "matches_with_source_attributed_match_level_xg": 12,
   "matches_with_independently_verified_match_level_xga": 0,
@@ -60,7 +60,8 @@
     "2026-11-03: Added official player-detail records for 34605, 34600, 34606, 34601, 34602, 34603 and 34604; 280 player rows and 70 substitution events. Full bench lists and actual appearance statuses were transcribed from official J.League Data Site pages.",
     "2026-11-03: Added official player-detail records for ten fixtures dated 2026-10-17 to 2026-10-18: 399 player rows and 100 substitution events. Three dismissals were recorded as player exits, not substitution events.",
     "2026-11-03: Added official player-detail records for all ten 2026-10-21 fixtures, 399 player rows and 97 substitution events. Dismissals were not misclassified as substitutions.",
-    "2026-11-03: Added official player-detail records for ten fixtures dated 2026-10-24 to 2026-10-25: 400 player rows and 98 substitution events. Gamba Osaka goalkeeper dismissal in 34629 recorded separately from substitutions."
+    "2026-11-03: Added official player-detail records for ten fixtures dated 2026-10-24 to 2026-10-25: 400 player rows and 98 substitution events. Gamba Osaka goalkeeper dismissal in 34629 recorded separately from substitutions.",
+    "2026-11-03 latest-file reconciliation: re-read canonical players.csv and substitutions.csv after the incremental batches. Current player file has 5,197 rows across all 130 fixtures, each fixture has 22 source-backed starting players and appearance-status records; substitutions.csv has 1,170 events across all 130 fixtures, with no blank substitution minute. Previous summary counts (4,762 player rows / 121 fixtures) were stale and have been corrected here. Bench-list completeness remains separately tracked; no missing bench names are inferred."
   ],
   "matches_missing_starting_xi": 9,
   "matches_missing_both_bench_lists": 19,
@@ -68,7 +69,7 @@
   "matches_missing_source_attributed_match_level_xg": 118,
   "matches_missing_independently_verified_match_level_xga": 130,
   "branch_alignment_note": "The canonical results CSV is 130 rows on both main and audit/stable-match-id-mapping-20261101; ISO dates and unique date/home/away keys verified.",
-  "substitution_rows_missing_minute": 1,
+  "substitution_rows_missing_minute": 0,
   "substitution_rows_missing_player_names": 0,
   "player_detail_increment": {
     "date": "2026-11-03",
@@ -192,15 +193,17 @@
       10,
       11
     ],
-    "current_player_rows": 4762,
-    "current_player_match_groups": 121,
+    "current_player_rows": 5197,
+    "current_player_match_groups": 130,
     "current_substitution_rows": 1170,
-    "current_substitution_match_groups": 121,
-    "matches_missing_player_records": 9,
+    "current_substitution_match_groups": 130,
+    "matches_missing_player_records": 0,
     "duplicate_player_keys": 0,
     "duplicate_substitution_keys": 0,
     "blank_player_source_urls": 0,
-    "blank_substitution_minutes": 1
+    "blank_substitution_minutes": 0,
+    "matches_missing_starting_xi": 0,
+    "matches_missing_structured_substitution_events": 0
   },
   "latest_match_id_audit": {
     "date": "2026-11-03",
