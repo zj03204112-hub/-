@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "J1 League",
+  "season": "2026/27",
+  "source": "Official J.League match page, cross-checked with Shimizu S-Pulse official match report",
+  "scope": "Single-match player-detail extraction; not full-season completion",
+  "matches": [
+    {
+      "date": "2026-09-06",
+      "kickoff": "19:00 JST",
+      "home": "川崎前锋",
+      "away": "清水心跳",
+      "score": "3-1",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/090602/",
+      "cross_check_url": "https://www.s-pulse.co.jp/english/result/2026090602",
+      "score_check": "matched_between_JLeague_and_club_official_record",
+      "home_starting_xi": [
+        "SVEND BRODERSEN",
+        "YAMAHARA Reon",
+        "FILIP UREMOVIC",
+        "MARUYAMA Yuichi",
+        "SASAKI Asahi",
+        "TACHIBANADA Kento",
+        "YAMAMOTO Yuki",
+        "KONNO Kazuya",
+        "WAKIZAKA Yasuto",
+        "ITO Tatsuya",
+        "MOCHIYAMA Kyosuke"
+      ],
+      "away_starting_xi": [
+        "UMEDA Togo",
+        "SUGAI Hidehiro",
+        "TAKAHASHI Yuji",
+        "SUMIYOSHI Jelani Reshaun",
+        "YOSHIDA Yutaka",
+        "YUMIBA Masaki",
+        "SHIMAMOTO Yudai",
+        "GERMAIN Ryo",
+        "MATSUZAKI Kai",
+        "FUJII Tomoya",
+        "KINOSHITA Kosuke"
+      ],
+      "home_substitutes_list": [
+        "YAMAGUCHI Louis",
+        "TANIGUCHI Hiroto",
+        "PEDRO ROMANO",
+        "MIURA Sota",
+        "OZEKI Yuto",
+        "KAWAHARA So",
+        "YAMAICHI Shuto",
+        "MARCINHO",
+        "DERIK LACERDA"
+      ],
+      "away_substitutes_list": [
+        "OKI Yuya",
+        "PARK Seung Wook",
+        "MATEUS BRUNETTI",
+        "TAKAGI Sen",
+        "WON Dujae",
+        "CAPIXABA",
+        "INOUE Kenta",
+        "KOZUKA Kazuki",
+        "OH Se Hun"
+      ],
+      "home_substitutions": [
+        {
+          "out": "KONNO Kazuya",
+          "in": "MARCINHO",
+          "minute": 46
+        },
+        {
+          "out": "MOCHIYAMA Kyosuke",
+          "in": "DERIK LACERDA",
+          "minute": 46
+        },
+        {
+          "out": "TACHIBANADA Kento",
+          "in": "OZEKI Yuto",
+          "minute": 73
+        },
+        {
+          "out": "SASAKI Asahi",
+          "in": "MIURA Sota",
+          "minute": 82
+        },
+        {
+          "out": "ITO Tatsuya",
+          "in": "YAMAICHI Shuto",
+          "minute": 90
+        }
+      ],
+      "away_substitutions": [
+        {
+          "out": "SUMIYOSHI Jelani Reshaun",
+          "in": null,
+          "minute": 41,
+          "note": "sent off; red card, not a substitution"
+        },
+        {
+          "out": "MATSUZAKI Kai",
+          "in": "PARK Seung Wook",
+          "minute": 44
+        },
+        {
+          "out": "KINOSHITA Kosuke",
+          "in": "OH Se Hun",
+          "minute": 57
+        },
+        {
+          "out": "FUJII Tomoya",
+          "in": "INOUE Kenta",
+          "minute": 57
+        },
+        {
+          "out": "YOSHIDA Yutaka",
+          "in": "MATEUS BRUNETTI",
+          "minute": 57
+        },
+        {
+          "out": "SHIMAMOTO Yudai",
+          "in": "KOZUKA Kazuki",
+          "minute": 86
+        }
+      ],
+      "xg_home": null,
+      "xg_away": null,
+      "xga_home": null,
+      "xga_away": null,
+      "xg_status": "No match-level xG/xGA verified from the cited official records; left null",
+      "appearance_status": "Starting XI and recorded substitution events verified; full per-player appearance-minute table not yet generated",
+      "notes": [
+        "Official J.League page records Kawasaki Frontale 3-1 Shimizu S-Pulse on 2026-09-06.",
+        "Shimizu S-Pulse official result page cross-checks starting XIs, substitute lists and game events.",
+        "A dismissal is not treated as a substitution; player remained on the pitch until sent off."
+      ]
+    }
+  ],
+  "summary": {
+    "match_records_extracted_this_batch": 1,
+    "starting_xi_complete": "1/1 matches (22/22 starters)",
+    "substitute_lists_extracted": "1/1 matches, both teams",
+    "substitution_events_extracted": 10,
+    "score_crosscheck": "1/1 matched across official league and club records",
+    "match_level_xg_xga_verified": "0/1",
+    "caution": "This is one verified match record only; it does not imply full-season completeness."
+  },
+  "integrity": [
+    "Official starting XIs are recorded separately from actual appearances.",
+    "Substitution events use OUT/IN and minute; dismissal is separately annotated.",
+    "Missing match-level xG/xGA stays null; no estimates or team averages substituted."
+  ]
+}
