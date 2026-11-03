@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-03",
+  "baseline_csv": "data/auto_results/J1_League_2026_27.csv",
+  "baseline_matches_through_2026-10-31": 126,
+  "latest_batch": "data/season_match_detail/J1_League_2026_27_official_checks_batch_20261103b.json",
+  "latest_batch_count": 10,
+  "latest_batch_date_range": "2026-10-09 to 2026-10-11",
+  "latest_batch_result": "10/10 official score records match baseline CSV; 0 mismatches",
+  "documented_official_score_records_estimate": 47,
+  "pending_official_score_records_estimate": 79,
+  "score_audit_rate_pct_estimate": 37.3,
+  "structured_player_detail_matches": 2,
+  "complete_actual_appearance_tables": 0,
+  "baseline_match_level_xg_pairs": 6,
+  "independently_verified_match_level_xga_pairs": 0,
+  "cautions": [
+    "Count of official record pages is an audit-log count, not a claim that all other rows are verified.",
+    "No player details transcribed in the latest batch; official pages show lineups and substitutions.",
+    "No estimated xG/xGA values added.",
+    "Original CSV, V5.1 and historical prediction snapshots unchanged."
+  ]
+}
