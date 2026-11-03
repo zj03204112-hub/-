@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "J1 League",
+  "scope": "2026/27 baseline matches through 2026-10-31; 2026-11-01 four-match extension is kept separate",
+  "baseline": {
+    "match_count": 126,
+    "official_result_evidence_matched": 126,
+    "official_result_evidence_pending": 0,
+    "official_individual_match_page_evidence": 63,
+    "official_schedule_index_only_evidence": 63,
+    "verified_score_or_identity_conflicts": 0,
+    "source_csv_modified": false
+  },
+  "extension_2026_11_01": {
+    "match_count": 4,
+    "official_scores_checked": 4,
+    "kept_separate_from_baseline": true
+  },
+  "player_data": {
+    "starting_xi_structured_matches": 10,
+    "both_bench_lists_structured_matches": 6,
+    "substitution_events_structured_matches": 10,
+    "complete_player_appearance_status_tables": 4,
+    "caveat": "Counts track structured files, not merely pages where some information is visible. Unused-bench details may remain secondary-source or incomplete."
+  },
+  "xg_xga": {
+    "baseline_matches_with_accepted_xg_pairs": 8,
+    "baseline_matches_with_independently_verified_match_level_xga_pairs": 0,
+    "rule": "Do not accept uncorroborated third-party candidates as final xG; do not infer xGA from opponent xG."
+  },
+  "data_integrity": {
+    "csv_rows_read": 130,
+    "unique_date_home_away_keys": 130,
+    "duplicate_keys": 0,
+    "rows_missing_full_time_score": 0,
+    "note": "The 130-row CSV includes the 126-match baseline through Oct 31 plus the separately tracked Nov 1 four-match extension."
+  },
+  "latest_batches": [
+    "J1_League_2026_27_official_checks_batch_20261103k.json",
+    "J1_League_2026_27_official_checks_batch_20261103l.json",
+    "J1_League_2026_27_official_checks_batch_20261103m.json",
+    "J1_League_2026_27_official_checks_batch_20261103n.json"
+  ],
+  "next_priority": [
+    "Reconcile the unified audit summary file to this verified result-queue status.",
+    "Continue lineups, full substitute lists, player appearance status and substitution events, prioritizing matches where official individual pages are available.",
+    "Continue searching for free, traceable match-level xG and explicitly defined match-level xGA."
+  ],
+  "protected_assets": [
+    "Baseline score CSV was not modified.",
+    "V5.1 model files were not modified.",
+    "Historical prediction snapshots were not modified."
+  ]
+}
