@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 8,
+  "match_id": "laliga-2026-27-2026-10-10-real-madrid-villarreal",
+  "date": "2026-10-10",
+  "home": "Real Madrid",
+  "away": "Villarreal",
+  "score": "1-0",
+  "halftime_score": "0-0",
+  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-villarreal-cf-8",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-villarreal-cf-8",
+    "secondary_lineups": "https://www.skysports.com/football/real-madrid-vs-villarreal/teams/563002",
+    "secondary_match_report": "https://www.theguardian.com/football/match/2026/oct/10/realmadrid-v-villarreal"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Thibaut Courtois",
+      "Antonio Rüdiger",
+      "Trent Alexander-Arnold",
+      "Álvaro Carreras",
+      "Ibrahima Konaté",
+      "Yan Diomande",
+      "Arda Güler",
+      "Jude Bellingham",
+      "Federico Valverde",
+      "Aurélien Tchouaméni",
+      "Kylian Mbappé"
+    ],
+    "home_bench": [
+      "Andriy Lunin",
+      "Brahim Díaz",
+      "Vinícius Júnior",
+      "Eduardo Camavinga",
+      "Denzel Dumfries",
+      "Marc Cucurella",
+      "Endrick",
+      "Sergio Mestre",
+      "Carlos Espí",
+      "Thiago Pitarch",
+      "Bernardo Silva"
+    ],
+    "away_starting_xi": [
+      "Péter Gulácsi",
+      "Alex Freeman",
+      "Pau Navarro",
+      "Renato Veiga",
+      "Sergi Cardona",
+      "Santi Comesaña",
+      "Juan Foyth",
+      "Pape Gueye",
+      "Ilias Akhomach",
+      "Ayoze Pérez",
+      "Alberto Moleiro"
+    ],
+    "away_bench": [
+      "Luiz Júnior",
+      "Logan Costa",
+      "Alassane Diatta",
+      "Gerard Moreno",
+      "Georges Mikautadze",
+      "Santiago Mouriño",
+      "Carlos Macià",
+      "Carlos Romero",
+      "Tani Oluwaseyi",
+      "Nathan Saliba",
+      "Nizar El Jmili",
+      "Joselillo Gaitán Díaz"
+    ],
+    "substitution_events": [
+      {
+        "team": "Real Madrid",
+        "player_in": "Marc Cucurella",
+        "player_out": "Álvaro Carreras",
+        "minute": "45"
+      },
+      {
+        "team": "Real Madrid",
+        "player_in": "Vinícius Júnior",
+        "player_out": "Trent Alexander-Arnold",
+        "minute": "52"
+      },
+      {
+        "team": "Real Madrid",
+        "player_in": "Eduardo Camavinga",
+        "player_out": "Arda Güler",
+        "minute": "77"
+      },
+      {
+        "team": "Real Madrid",
+        "player_in": "Denzel Dumfries",
+        "player_out": "Yan Diomande",
+        "minute": "86"
+      },
+      {
+        "team": "Villarreal",
+        "player_in": "Nathan Saliba",
+        "player_out": "Santi Comesaña",
+        "minute": "56"
+      },
+      {
+        "team": "Villarreal",
+        "player_in": "Carlos Romero",
+        "player_out": "Juan Foyth",
+        "minute": "56"
+      },
+      {
+        "team": "Villarreal",
+        "player_in": "Gerard Moreno",
+        "player_out": "Ilias Akhomach",
+        "minute": "67"
+      },
+      {
+        "team": "Villarreal",
+        "player_in": "Georges Mikautadze",
+        "player_out": "Sergi Cardona",
+        "minute": "67"
+      },
+      {
+        "team": "Villarreal",
+        "player_in": "Nizar El Jmili",
+        "player_out": "Alberto Moleiro",
+        "minute": "86"
+      }
+    ],
+    "disciplinary_events": [
+      {
+        "team": "Real Madrid",
+        "player": "Vinícius Júnior",
+        "type": "red_card",
+        "minute": "72"
+      }
+    ],
+    "notes": [
+      "Official LaLiga page was used as the canonical source for both starting XIs, the 11-player Real Madrid bench, Villarreal's 12-player bench and detailed event minutes.",
+      "Nine substitutions were recorded; Vinícius Júnior's 72' red card is a separate disciplinary event.",
+      "The official summary card shows Marc Cucurella at 46'; detailed commentary gives the halftime change at 45', which is stored in the normalized event record.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
