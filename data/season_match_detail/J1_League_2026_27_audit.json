@@ -65,15 +65,15 @@
   "mapping_file": "data/season_match_detail/j1_2026_match_id_mapping.csv",
   "results_file": "data/auto_results/J1_League_2026_27.csv",
   "lineup_and_appearance_audit": {
-    "matches_with_both_teams_starting_xi_structured": 55,
-    "matches_with_both_bench_lists_structured": 49,
-    "matches_with_substitution_events_structured": 55,
-    "matches_with_complete_player_appearance_status_table": 48,
+    "matches_with_both_teams_starting_xi_structured": 63,
+    "matches_with_both_bench_lists_structured": 61,
+    "matches_with_substitution_events_structured": 63,
+    "matches_with_complete_player_appearance_status_table": 60,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
     "standardized_player_rows": 2680,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
     "standardized_substitution_rows": 655,
-    "note": "Partial structured extraction only: current official records cover 54 matches with both starting XIs, 48 with both bench lists and 47 with complete player appearance-status classification. Official match-card URLs retained. Not full-season completion."
+    "note": "Partial structured extraction only: re-read confirms 63 match-card groups with player rows, 63 matches with both starting XIs, 61 with both bench lists, 60 with complete player appearance-status classification, and 63 with substitution records. Official match-card URLs retained. Not full-season completion."
   },
   "xg_xga_audit": {
     "file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
