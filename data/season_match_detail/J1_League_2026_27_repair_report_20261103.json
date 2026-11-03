@@ -9,13 +9,13 @@
     "unique_date_home_away_keys": 130
   },
   "player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-  "player_rows": 400,
-  "matches_with_structured_starting_xi": 11,
-  "matches_with_both_bench_lists": 6,
-  "matches_with_player_appearance_status_table": 5,
+  "player_rows": 680,
+  "matches_with_structured_starting_xi": 18,
+  "matches_with_both_bench_lists": 13,
+  "matches_with_player_appearance_status_table": 12,
   "substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
-  "substitution_rows": 110,
-  "matches_with_structured_substitution_events": 11,
+  "substitution_rows": 177,
+  "matches_with_structured_substitution_events": 18,
   "xg_xga_file": "data/season_match_detail/J1_League_2026_27_xg_xga.csv",
   "matches_with_source_attributed_match_level_xg": 12,
   "matches_with_independently_verified_match_level_xga": 0,
@@ -28,11 +28,13 @@
     "All match-level xGA values remain blank because no explicit free match-level xGA field passed independent source verification.",
     "Displayed substitution time strings were restored from the official match-page extraction where minute_display was available; no minute values were estimated.",
     "2026-11-03 incremental player extraction added 3 official match cards (IDs 34597–34599), 120 player rows and 30 substitution events; full-season player coverage remains incomplete.",
-    "Independent xGA source audit reviewed FootyStats, TACTIX, JPick/Sportmonks and official J.League pages; no free public source with explicit match-level xGA passed verification, so xGA remains blank."
+    "Independent xGA source audit reviewed FootyStats, TACTIX, JPick/Sportmonks and official J.League pages; no free public source with explicit match-level xGA passed verification, so xGA remains blank.",
+    "2026-11-03 additional official player extraction: 7 match cards (34519–34527, excluding already processed IDs) added 280 player records and 67 substitution events. Official source URLs retained for each player row and event.",
+    "xGA source search expanded to FootballSoccerAPI and TACTIX API docs. Neither publicly documents an explicit free fixture-level xGA field; no xGA values were populated."
   ],
-  "matches_missing_starting_xi": 119,
-  "matches_missing_both_bench_lists": 124,
-  "matches_missing_complete_appearance_status_table": 125,
+  "matches_missing_starting_xi": 112,
+  "matches_missing_both_bench_lists": 117,
+  "matches_missing_complete_appearance_status_table": 118,
   "matches_missing_source_attributed_match_level_xg": 118,
   "matches_missing_independently_verified_match_level_xga": 130,
   "branch_alignment_note": "The canonical results CSV is 130 rows on both main and audit/stable-match-id-mapping-20261101; ISO dates and unique date/home/away keys verified.",
@@ -40,29 +42,65 @@
   "substitution_rows_missing_player_names": 0,
   "player_detail_increment": {
     "date": "2026-11-03",
-    "matches_added": 3,
+    "matches_added": 7,
     "match_card_ids": [
-      34597,
-      34598,
-      34599
+      34521,
+      34523,
+      34519,
+      34520,
+      34525,
+      34526,
+      34527
     ],
-    "records_added": 120,
-    "substitutions_added": 30,
-    "source": "J.League Data Site official match cards",
-    "source_urls": [
-      "https://data.j-league.or.jp/SFMS02/?match_card_id=34597",
-      "https://data.j-league.or.jp/SFMS02/?match_card_id=34598",
-      "https://data.j-league.or.jp/SFMS02/?match_card_id=34599"
+    "records_added": 280,
+    "substitutions_added": 67,
+    "official_sources": [
+      {
+        "match": "名古屋 vs 清水",
+        "date": "2026-08-08",
+        "url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34521"
+      },
+      {
+        "match": "福岡 vs 神戸",
+        "date": "2026-08-08",
+        "url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34523"
+      },
+      {
+        "match": "柏 vs 水戸",
+        "date": "2026-08-08",
+        "url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34519"
+      },
+      {
+        "match": "FC東京 vs 町田",
+        "date": "2026-08-08",
+        "url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34520"
+      },
+      {
+        "match": "東京Ｖ vs 川崎Ｆ",
+        "date": "2026-08-09",
+        "url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34525"
+      },
+      {
+        "match": "長崎 vs 京都",
+        "date": "2026-08-09",
+        "url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34526"
+      },
+      {
+        "match": "東京Ｖ vs 柏",
+        "date": "2026-08-14",
+        "url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34527"
+      }
     ],
-    "score_and_lineup_crosscheck": "Official match-card pages checked; starting XIs, benches, and substitution timelines transcribed",
-    "caveat": "Not full-season coverage; no xG/xGA added from these official pages."
+    "source": "J.League Data Site official match-card records",
+    "integrity_note": "Starting XI, both bench lists and recorded substitutions were transcribed from the official match cards. The Nagasaki-Kyoto match includes a concussion substitution chain; Nagata Kouta's 46' entry and 76' exit are both recorded. Red-card exit is kept as a player exit, not a substitution.",
+    "caveat": "Still partial season coverage; no xG/xGA added from these official pages."
   },
   "xga_source_audit_file": "data/season_match_detail/J1_League_2026_27_xga_source_audit_20261103.json",
   "xga_source_audit_summary": {
-    "candidate_sources_reviewed": 4,
+    "candidate_sources_reviewed": 7,
     "free_public_match_level_explicit_xga_sources_verified": 0,
     "matches_with_independently_verified_match_level_xga": 0,
     "matches_missing_independently_verified_match_level_xga": 130,
-    "note": "FootyStats public page exposes recent match xG pairs and aggregate xGA, not a verified explicit match-level xGA field. TACTIX page exposes team-level xPts summary sourced from apisports_proxy, not raw match-level xGA. Sportmonks explicitly documents fixture-level xGA but its xG add-on is paid. Official J.League match cards do not publish xG/xGA."
+    "note": "Added review of FootballSoccerAPI match docs and TACTIX Developer API docs. They expose match-level expected_goals/xG values in team statistics, but no explicit xGA field was verified in the free/public material. Sportmonks documents explicit fixture xGA but its xG add-on is paid."
   }
 }
