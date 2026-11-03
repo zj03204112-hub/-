@@ -4,13 +4,13 @@
   "season": "2026-27",
   "results_fixtures": 109,
   "unique_fixture_keys": 109,
-  "fixtures_with_normalized_player_detail": 10,
-  "player_csv_rows": 453,
-  "substitution_csv_rows": 95,
-  "matches_with_both_starting_xis_entered": 10,
+  "fixtures_with_normalized_player_detail": 11,
+  "player_csv_rows": 499,
+  "substitution_csv_rows": 105,
+  "matches_with_both_starting_xis_entered": 11,
   "matches_with_partial_unresolved_identity": 0,
-  "fully_complete_matches": 10,
-  "fixtures_without_normalized_player_detail": 99,
+  "fully_complete_matches": 11,
+  "fixtures_without_normalized_player_detail": 98,
   "batches": [
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103b.json",
@@ -21,12 +21,13 @@
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103g.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103h.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103i.json",
-    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json"
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_rayo_elche.json"
   ],
   "gaps": [
-    "99 other LaLiga 2026-27 fixtures remain without normalized player-detail batches.",
-    "Three official timeline-card versus narrative-commentary minute display differences are documented in the Jornada 11 audit; normalized CSV uses the official event-card display minute.",
-    "Batch/CSV roster-name differences corrected for Barcelona and Deportivo; Levante-Atletico still has one unresolved bench identity."
+    "98 other LaLiga 2026-27 fixtures remain without normalized player-detail batches.",
+    "Jornada 11: all 10 matches have completed structural and event audit; three official event-card versus narrative-commentary minute differences are documented.",
+    "Jornada 10: Rayo-Elche is the first match with a new independent detail batch and normalized CSV rows; the other 9 Jornada 10 matches still need player-detail collection."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -313,11 +314,20 @@
       "Rayo-Celta: official event card shows Giorgi Tsitaishvili at 46'; narrative commentary records 45'. Normalized minute follows event card.",
       "Betis-Malaga: official event cards show Antony at 62' and Chupe at 61'; narrative commentary records 61'/60'. Normalized minutes follow event cards.",
       "Racing-Real Madrid: official event card shows Íñigo Sainz-Maza at 61'; narrative commentary records 60'. Normalized minute follows event card."
-    ]
+    ],
+    "player_rows_in_season_csv": 499,
+    "substitution_rows_in_season_csv": 105
   },
   "jornada11_batch_csv_name_reconciliation": {
     "status": "applied",
     "corrections": 4,
     "remaining_known_issue": "Levante-Atletico batch still contains one unresolved Atlético bench identity after excluding the conflicting duplicate Hugo Sotelo; confirm complete official substitute roster before certification."
+  },
+  "jornada10_progress": {
+    "fixtures_expected": 10,
+    "official_match_urls_resolved": 10,
+    "normalized_batches_created": 1,
+    "fixtures_remaining": 9,
+    "first_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_rayo_elche.json"
   }
 }
