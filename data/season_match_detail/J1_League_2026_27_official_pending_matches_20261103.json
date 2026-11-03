@@ -2,8 +2,8 @@
   "generated_at": "2026-11-03",
   "baseline_window": "2026-08-07 to 2026-10-31",
   "baseline_matches": 126,
-  "pending_official_evidence_count": 45,
-  "definition": "Rows without a matching entry in all currently stored official-check batches after date/team alias normalization. Other missing fields are listed per row; they are not assumed to be missing for every row.",
+  "pending_official_evidence_count": 42,
+  "definition": "Rows without a matching entry in all stored official-check batches, including the official_score_records_verified_this_batch array in the 2026-11-02b file, after date/team alias normalization.",
   "pending_matches": [
     {
       "date": "2026-08-07",
@@ -527,32 +527,6 @@
     },
     {
       "date": "2026-10-25",
-      "home": "名古屋",
-      "away": "横浜FM",
-      "score": "1-1",
-      "missing_official_record": true,
-      "missing_starting_xi": true,
-      "missing_both_bench_lists": true,
-      "missing_substitution_events": true,
-      "missing_player_appearance_status": true,
-      "missing_match_level_xg": true,
-      "missing_independent_match_level_xga": true
-    },
-    {
-      "date": "2026-10-25",
-      "home": "Ｃ大阪",
-      "away": "千葉",
-      "score": "2-2",
-      "missing_official_record": true,
-      "missing_starting_xi": true,
-      "missing_both_bench_lists": true,
-      "missing_substitution_events": true,
-      "missing_player_appearance_status": true,
-      "missing_match_level_xg": true,
-      "missing_independent_match_level_xga": true
-    },
-    {
-      "date": "2026-10-25",
       "home": "浦和",
       "away": "長崎",
       "score": "1-0",
@@ -569,19 +543,6 @@
       "home": "川崎Ｆ",
       "away": "岡山",
       "score": "2-1",
-      "missing_official_record": true,
-      "missing_starting_xi": true,
-      "missing_both_bench_lists": true,
-      "missing_substitution_events": true,
-      "missing_player_appearance_status": true,
-      "missing_match_level_xg": true,
-      "missing_independent_match_level_xga": true
-    },
-    {
-      "date": "2026-10-25",
-      "home": "FC東京",
-      "away": "水戸",
-      "score": "6-0",
       "missing_official_record": true,
       "missing_starting_xi": true,
       "missing_both_bench_lists": true,
