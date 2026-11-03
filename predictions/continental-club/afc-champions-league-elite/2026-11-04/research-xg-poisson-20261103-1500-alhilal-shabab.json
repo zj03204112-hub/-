@@ -1,0 +1,94 @@
+{
+  "prediction_id": "research-xg-poisson-20261103-1500-alhilal-shabab",
+  "match": {
+    "competition": "AFC Champions League Elite West",
+    "competition_type": "continental_club",
+    "home": "Al Hilal",
+    "away": "Shabab Al-Ahli Dubai FC",
+    "kickoff_utc": "2026-11-03T18:15:00Z",
+    "kickoff_beijing": "2026-11-04T02:15:00+08:00",
+    "venue": "Kingdom Arena, Riyadh"
+  },
+  "snapshot_time_beijing": "2026-11-03T14:55:48+08:00",
+  "window_hours_at_1500": 11.25,
+  "window_eligible": true,
+  "model": {
+    "version": "RESEARCH-XG-POISSON-v1.0",
+    "status": "shadow_research_not_production",
+    "method": "Independent Poisson score grid using a third-party pre-match projected-xG pair; half-time uses 45% of expected goals. Not V5.1 or V5.2.",
+    "source_xg_type": "third_party_model_projection_not_measured_match_xg",
+    "backtest_status": "not_backtested"
+  },
+  "projected_xg": {
+    "home": 2.26,
+    "away": 0.9,
+    "source": "bookmakers.market model estimate",
+    "source_url": "https://bookmakers.market/football/asia/afc-champions-league-elite/al-hilal-saudi-fc-vs-shabab-al-ahli-dubai-2026-11-03/"
+  },
+  "predictions": {
+    "top_scores": [
+      {
+        "score": "2-0",
+        "probability_pct": 10.83
+      },
+      {
+        "score": "2-1",
+        "probability_pct": 9.75
+      }
+    ],
+    "hda_pct": {
+      "home": 68.1,
+      "draw": 18.4,
+      "away": 13.5
+    },
+    "pick": "主胜",
+    "half_full_time": {
+      "pick": "胜/胜",
+      "probability_pct": 45.46,
+      "method": "45% first-half goal split; low-confidence research estimate"
+    },
+    "sporttery_handicap_result": "无法核验：官方竞彩让球盘口缺失"
+  },
+  "market": {
+    "third_party_1x2_open_current": {
+      "opening": "1.42/4.80/5.55",
+      "current_best": "1.43/4.90/7.10"
+    },
+    "third_party_total_market_movement": "No reliable same-source opening/current total-goals line retrieved.",
+    "official_sporttery_handicap": null,
+    "captured_at_beijing": "2026-11-03T14:55:48+08:00",
+    "upstream_tick_timestamp": "not exposed"
+  },
+  "team_context": {
+    "recent_form": {
+      "home": "4 wins in last 5; latest 2-0 vs Al-Fateh, after 1-3 loss to Al-Shamal",
+      "away": "5 consecutive competitive wins reported; 3 wins in first 3 AFC matches"
+    },
+    "tactics": {
+      "home": "probable 4-3-3",
+      "away": "probable 4-2-3-1"
+    },
+    "injuries": "Al Hilal coach Simone Inzaghi reportedly confirmed four absences: Crysencio Summerville, Rúben Neves, Gabriel Martinelli and Salem Al-Dawsari. Shabab Al-Ahli injury status not fully confirmed.",
+    "probable_lineups": "not official; predicted XIs conflict with latest injury conference information",
+    "referee": "Adham Makhadmeh (reported by YSscores; primary AFC appointment notice not retrieved)",
+    "weather": "Riyadh forecast around 29°C at 21:00 local, dry; dust/sandstorm alerts differ by provider.",
+    "schedule_motivation": "Al Hilal on 6 points vs Shabab Al-Ahli on 9; both have meaningful West Region table incentives. Coach cited congested schedule and rotation decisions."
+  },
+  "my_confidence_10": 5.5,
+  "data_completeness": "9/13 core fields; partial",
+  "risks": [
+    "Four key Al Hilal attacking/midfield absences materially weaken the nominal xG edge.",
+    "Predicted lineups published before the latest press conference may be stale.",
+    "Official Sporttery handicap absent.",
+    "Weather dust warning varies by source.",
+    "Projected xG is a third-party model estimate, not actual match xG."
+  ],
+  "strategy_id": "RESEARCH-XG-POISSON-20261103-1500-04",
+  "sources": [
+    "https://bookmakers.market/football/asia/afc-champions-league-elite/al-hilal-saudi-fc-vs-shabab-al-ahli-dubai-2026-11-03/",
+    "https://african.football/inzaghi-confirms-four-key-absences-for-al-hilals-clash-with-shabab-al-ahli-dubai/",
+    "https://www.ysscores.com/en/news/14083145/mohammed-alkhalaf-to-officiate-al-hilal-vs-shabab-al-ahli-in-the-asian-elite",
+    "https://football-mania.com/match/al-hilal-vs-shabab-al-ahli-3941114",
+    "https://weather5days.com/en/table/riyadh%20saudi%20arabia/2day"
+  ]
+}
