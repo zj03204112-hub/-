@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 10,
+  "match_id": "laliga-2026-27-2026-10-26-sevilla-osasuna",
+  "date": "2026-10-26",
+  "home": "Sevilla",
+  "away": "Osasuna",
+  "score": "2-0",
+  "halftime_score": "1-0",
+  "official_match_url": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-ca-osasuna-10",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-ca-osasuna-10",
+    "official_sevilla_fc": "https://sevillafc.es/actualidad/noticias/partido-directo-sevilla-osasuna-laliga-2026-2027",
+    "secondary_lineups": "https://www.skysports.com/football/sevilla-vs-osasuna/teams/563022"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Odysseas Vlachodimos",
+      "Andrés Castrín",
+      "Gabriel Suazo",
+      "Kike Salas",
+      "Juan Iglesias",
+      "Chidera Ejuke",
+      "Lucien Agoumé",
+      "Félix Correia",
+      "Youssouf Fofana",
+      "Isaac Romero",
+      "Lucas Stassin"
+    ],
+    "home_bench": [
+      "Alfon González",
+      "Peque Fernández",
+      "Robbie Ure",
+      "Arouna Sangante",
+      "Rubén Vargas",
+      "José Ángel Carmona",
+      "Manu Bueno",
+      "Giorgi Kochorashvili",
+      "Julio Díaz del Romo",
+      "Jon Guridi",
+      "Fran González",
+      "Fábio Cardoso"
+    ],
+    "away_starting_xi": [
+      "Aitor Fernández",
+      "Valentin Rosier",
+      "Alejandro Catena",
+      "Enzo Boyomo",
+      "Abel Bretones",
+      "Jon Moncayola",
+      "Lucas Torró",
+      "Moi Gómez",
+      "Rubén García",
+      "Ante Budimir",
+      "Jonathan Dubasin"
+    ],
+    "away_bench": [
+      "Sergio Herrera Pirón",
+      "Rafa Fernández Rodríguez",
+      "Iker Muñoz",
+      "Raúl García",
+      "Enrique Barja Alfonso",
+      "Diego Rico Salguero",
+      "Mauro Echegoyen",
+      "Raúl Moro Prescoli",
+      "Iñigo Arguibide",
+      "Asier Osambela",
+      "Uriel Santos",
+      "Rockson Yeboah"
+    ],
+    "substitution_events": [
+      {
+        "team": "Sevilla",
+        "player_in": "Robbie Ure",
+        "player_out": "Lucas Stassin",
+        "minute": "63"
+      },
+      {
+        "team": "Sevilla",
+        "player_in": "Rubén Vargas",
+        "player_out": "Chidera Ejuke",
+        "minute": "71"
+      },
+      {
+        "team": "Sevilla",
+        "player_in": "Manu Bueno",
+        "player_out": "Isaac Romero",
+        "minute": "71"
+      },
+      {
+        "team": "Sevilla",
+        "player_in": "José Ángel Carmona",
+        "player_out": "Félix Correia",
+        "minute": "86"
+      },
+      {
+        "team": "Osasuna",
+        "player_in": "Raúl Moro Prescoli",
+        "player_out": "Rubén García",
+        "minute": "63"
+      },
+      {
+        "team": "Osasuna",
+        "player_in": "Raúl García",
+        "player_out": "Jonathan Dubasin",
+        "minute": "63"
+      },
+      {
+        "team": "Osasuna",
+        "player_in": "Asier Osambela",
+        "player_out": "Lucas Torró",
+        "minute": "79"
+      },
+      {
+        "team": "Osasuna",
+        "player_in": "Enrique Barja Alfonso",
+        "player_out": "Moi Gómez",
+        "minute": "79"
+      },
+      {
+        "team": "Osasuna",
+        "player_in": "Iñigo Arguibide",
+        "player_out": "Valentin Rosier",
+        "minute": "79"
+      }
+    ],
+    "notes": [
+      "Official LaLiga and Sevilla FC match sources cross-checked with Sky Sports lineup source.",
+      "Nine substitutions verified from the detailed official event log. Bench players without incoming substitution events are marked substitute_not_appeared."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "source_crosscheck_complete_pending_global_integrity_recheck"
+}
