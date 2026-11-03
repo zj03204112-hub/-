@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-11-04",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "audit_scope": "player lineup and substitution data; free traceable sources only; no xG/xGA or inferred fields",
+  "source_files": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv",
+    "matchday9": "data/season_match_detail/LaLiga_2026_27_jornada9_audit_20261103.json",
+    "matchday10": "data/season_match_detail/LaLiga_2026_27_jornada10_audit_20261103.json",
+    "matchday11": "data/season_match_detail/LaLiga_2026_27_jornada11_audit_20261103.json"
+  },
+  "csv_integrity": {
+    "player_rows": 1367,
+    "substitution_rows": 290,
+    "unique_fixture_keys": 30,
+    "duplicate_player_keys": 0,
+    "duplicate_substitution_keys": 0,
+    "unresolved_appearance_status_rows": 0,
+    "starting_xi_rows": 660,
+    "fixtures_with_22_starters": 30,
+    "matchdays_with_player_detail": [
+      9,
+      10,
+      11
+    ],
+    "note": "Computed from the current repository CSVs. This is a structural audit, not a substitute for per-match official-source certification."
+  },
+  "matchday_status": {
+    "9": "10/10 fixture records present; per-match audit records show source cross-check and structural checks passed; global CSV duplicate check passed.",
+    "10": "10/10 fixture records present; per-match audit records show source cross-check and structural checks passed; global CSV duplicate check passed.",
+    "11": "10/10 fixture records present; CSV structural checks passed; final official source checklist still pending for some roster/event display discrepancies."
+  },
+  "next_step": "Create matchday 8 player-detail batches for the nine completed fixtures. Keep Rayo-Athletic pending because the official league page lists it as postponed to 2026-12-09.",
+  "sources": [
+    "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-8",
+    "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-9",
+    "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-10",
+    "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-11"
+  ]
+}
