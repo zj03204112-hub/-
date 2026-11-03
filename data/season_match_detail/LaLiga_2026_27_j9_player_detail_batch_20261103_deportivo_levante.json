@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 9,
+  "match_id": "laliga-2026-27-2026-10-16-deportivo-levante",
+  "date": "2026-10-16",
+  "home": "Deportivo",
+  "away": "Levante",
+  "score": "1-1",
+  "halftime_score": "0-0",
+  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-levante-ud-9",
+  "sources": {
+    "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-levante-ud-9",
+    "secondary_lineups": "https://www.skysports.com/football/deportivo-la-coruna-vs-levante/teams/563005",
+    "secondary_match_report": "https://www.footballwebpages.co.uk/match/2026-2027/spanish-la-liga/deportivo-de-a-coruna/levante/593531"
+  },
+  "verified_data": {
+    "home_starting_xi": [
+      "Leo Román",
+      "José María Giménez",
+      "Bright Ede",
+      "Giacomo Quagliata",
+      "Ximo Navarro",
+      "Diego Villares",
+      "Luismi Cruz",
+      "Riki Rodríguez",
+      "Mario Soriano",
+      "Yeremay Hernández",
+      "Bil Nsongo"
+    ],
+    "home_bench": [
+      "Adrià Altimira",
+      "Lucas Noubi",
+      "David Mella",
+      "Miguel Loureiro",
+      "Yayo González",
+      "Angeliño",
+      "Jonathan Asp Jensen",
+      "Adama Traoré",
+      "Martín Ochoa",
+      "Kevin Sánchez",
+      "Noé Carrillo",
+      "Álvaro Ferllo"
+    ],
+    "away_starting_xi": [
+      "Mathew Ryan",
+      "Nacho Pérez",
+      "Adrián de la Fuente",
+      "Ifeanyi Ndukwe",
+      "Manu Sánchez",
+      "Enzo Bardeli",
+      "Oriol Rey",
+      "Dani Requena",
+      "Roger Brugué",
+      "Iván Romero",
+      "Thiago Fernández"
+    ],
+    "away_bench": [
+      "Pablo Cuñat",
+      "Igor Galdin",
+      "Aïssa Mandi",
+      "Jon Ander Olasagasti",
+      "Petar Ratkov",
+      "Yanis Musuayi",
+      "Jorge Cabello",
+      "Axel Tape",
+      "Víctor García",
+      "Jeremy Toljan",
+      "Paco Cortés"
+    ],
+    "substitution_events": [
+      {
+        "team": "Deportivo",
+        "player_in": "Adama Traoré",
+        "player_out": "Luismi Cruz",
+        "minute": "62"
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Adrià Altimira",
+        "player_out": "Ximo Navarro",
+        "minute": "62"
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Jonathan Asp Jensen",
+        "player_out": "Yeremay Hernández",
+        "minute": "80"
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Angeliño",
+        "player_out": "Riki Rodríguez",
+        "minute": "80"
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Miguel Loureiro",
+        "player_out": "Bright Ede",
+        "minute": "85"
+      },
+      {
+        "team": "Levante",
+        "player_in": "Jon Ander Olasagasti",
+        "player_out": "Enzo Bardeli",
+        "minute": "69"
+      },
+      {
+        "team": "Levante",
+        "player_in": "Petar Ratkov",
+        "player_out": "Oriol Rey",
+        "minute": "69"
+      },
+      {
+        "team": "Levante",
+        "player_in": "Jeremy Toljan",
+        "player_out": "Nacho Pérez",
+        "minute": "76"
+      },
+      {
+        "team": "Levante",
+        "player_in": "Víctor García",
+        "player_out": "Thiago Fernández",
+        "minute": "90+3"
+      }
+    ],
+    "notes": [
+      "Official LaLiga match page and Sky Sports confirmed lineup list cross-checked. Deportivo has 12 listed substitutes; Levante has 11 listed substitutes in the lineup source.",
+      "Nine substitutions are recorded. Víctor García's added-time change is stored as 90+3, matching the event-card display and independent match report; the official narrative commentary rounds this event to 90'.",
+      "Bench players without incoming substitution events are marked substitute_not_appeared after checking the complete official substitution timeline."
+    ]
+  },
+  "normalized_csv": {
+    "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+  },
+  "status": "complete_source_crosscheck_and_structural_audit_passed"
+}
