@@ -4,13 +4,13 @@
   "season": "2026-27",
   "results_fixtures": 109,
   "unique_fixture_keys": 109,
-  "fixtures_with_normalized_player_detail": 15,
-  "player_csv_rows": 683,
-  "substitution_csv_rows": 144,
+  "fixtures_with_normalized_player_detail": 16,
+  "player_csv_rows": 727,
+  "substitution_csv_rows": 154,
   "matches_with_both_starting_xis_entered": 11,
   "matches_with_partial_unresolved_identity": 0,
-  "fully_complete_matches": 15,
-  "fixtures_without_normalized_player_detail": 94,
+  "fully_complete_matches": 16,
+  "fixtures_without_normalized_player_detail": 93,
   "batches": [
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103b.json",
@@ -28,7 +28,7 @@
     "98 other LaLiga 2026-27 fixtures remain without normalized player-detail batches.",
     "Jornada 10: Rayo-Elche is the first match with a new independent detail batch and normalized CSV rows; the other 9 Jornada 10 matches still need player-detail collection.",
     "Jornada 11: all 10 fixtures passed row-level source, lineup/bench, appearance-status, substitution in/out, minute, uniqueness and CSV-vs-batch checks.",
-    "Jornada 10: five fixtures source-audited complete (Alavés-Málaga, Rayo-Elche, Racing-Espanyol, Valencia-Villarreal, Atlético-Deportivo); five fixtures remain without detail batches."
+    "Jornada 10: six fixtures source-audited complete; four fixtures remain without detail batches."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -326,19 +326,19 @@
   },
   "jornada10_progress": {
     "fixtures_expected": 10,
-    "fixtures_with_detail_batches": 5,
-    "fixtures_source_audited_complete": 5,
-    "remaining_without_detail_batches": 5,
+    "fixtures_with_detail_batches": 6,
+    "fixtures_source_audited_complete": 6,
+    "remaining_without_detail_batches": 4,
     "completed": [
       "Alaves-Malaga",
       "Rayo-Elche",
       "Racing-Espanyol",
       "Valencia-Villarreal",
-      "Atletico-Deportivo"
+      "Atletico-Deportivo",
+      "Athletic-Getafe"
     ],
     "in_progress": [],
     "remaining": [
-      "Athletic-Getafe",
       "Celta-Betis",
       "Real Sociedad-Levante",
       "Barcelona-Real Madrid",
