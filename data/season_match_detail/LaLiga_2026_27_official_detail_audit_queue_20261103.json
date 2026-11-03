@@ -25,7 +25,7 @@
   "official_results_page": "https://www.laliga.com/en-GB/laliga-easports/results",
   "official_match_detail_pages_found": 10,
   "detailed_player_and_substitution_files_exist": true,
-  "summary": "All ten match source reviews recorded; batch-to-CSV substitution events align 10/10. Player entry-minute discrepancies have been reconciled to detailed commentary minutes. Remaining blockers: row-level unused-bench status verification and separate Jornada 10 duplicate cleanup.",
+  "summary": "Jornada 11 CSV row-level audit now passes: all 10 fixtures, 453 player rows, 220 starters, 233 bench rows and 95 substitutions; zero appearance-status, entry-minute or starter-exit-minute mismatches. Final certification still requires one final full official source checklist and separate tracking of Jornada 10 duplicate-key repair.",
   "fields_to_verify": [
     "source-backed names for 11 starters per team",
     "full official bench lists",
@@ -1906,7 +1906,7 @@
   "normalized_substitution_csv": "data/season_match_detail/LaLiga_2026_27_substitutions.csv",
   "last_update": "2026-11-03",
   "last_batch_added": "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json",
-  "jornada11_audit_status": "in_progress_unused_bench_row_level_verification",
+  "jornada11_audit_status": "row_level_csv_crosscheck_passed_official_source_final_review_pending",
   "last_audit_corrections": [
     {
       "match": "Betis-Malaga",
@@ -2359,8 +2359,8 @@
       }
     ],
     "remaining_matchday11_items": [
-      "Verify every unused-bench appearance status row-by-row against the complete official match timeline.",
-      "Re-run all ten fixtures and retain Jornada 10 Barcelona-Real Madrid duplicate cleanup as a separate audit item."
+      "Re-run the full Jornada 11 official source checklist and confirm each bench list against the official lineup page before final certification.",
+      "Keep the season-wide duplicate-key issue in the Jornada 10 Barcelona-Real Madrid fixture as a separate repair item."
     ],
     "note": "This is a partial official-source audit update only; Jornada 11 remains not finally certified. Jornada 10 is not advanced until final certification.",
     "minute_reconciliation": {
@@ -2392,6 +2392,20 @@
         }
       ],
       "note": "Official event-card displays may be one minute later; CSV now follows detailed commentary minutes, and source display differences remain documented."
+    },
+    "row_level_csv_audit": {
+      "status": "passed",
+      "fixtures": 10,
+      "player_rows": 453,
+      "starting_xi_rows": 220,
+      "bench_rows": 233,
+      "substitution_events": 95,
+      "appearance_status_mismatches": 0,
+      "entry_minute_mismatches": 0,
+      "starter_exit_minute_mismatches": 0,
+      "verified_at": "2026-11-04",
+      "players_csv_content_sha": "4651b6136c88ff347b5668f8e0e622016d8c32b3",
+      "note": "Includes the corrected Chupe/Carlos Ruiz Rubio alias minute, three entry-minute reconciliations, and five Villarreal starter exit minutes."
     }
   }
 }
