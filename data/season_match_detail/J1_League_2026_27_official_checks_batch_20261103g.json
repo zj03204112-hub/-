@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-11-03",
+  "league": "J1 League",
+  "season": "2026/27",
+  "baseline_window": "2026-08-07 to 2026-10-31",
+  "source": "Official J.LEAGUE individual match page and official club match pages",
+  "scope": "Incremental verification for two previously pending rows; no baseline CSV/model/history changed.",
+  "verified_matches": [
+    {
+      "date": "2026-08-07",
+      "home": "横浜FM",
+      "away": "鹿島",
+      "score": "3-4",
+      "official_url": "https://www.jleague.jp/en/match/j1/2026/080701/",
+      "secondary_official_url": "https://www.f-marinos.com/matches/20260807/matchdata",
+      "official_data_site_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34517",
+      "status": "matched_individual_official_match_page",
+      "evidence": [
+        "official J.League match page: date, teams, score, starters, substitutes and substitution timeline",
+        "official Yokohama F. Marinos match data page cross-checks score, benches, substitutions and cards"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "home": "Ｇ大阪",
+      "away": "浦和",
+      "score": "4-3",
+      "official_url": "https://www.gamba-osaka.net/c/game/2627/1032.html",
+      "secondary_official_url": "https://www.gamba-osaka.net/english/report/index/no/1032/",
+      "official_data_site_url": "https://data.j-league.or.jp/SFMS02/?match_card_id=34518",
+      "status": "matched_individual_official_club_match_page",
+      "evidence": [
+        "official Gamba Osaka match page: date, teams, score, starters, substitutes and full substitution timeline",
+        "official J.League Data Site match record ID 34518 used for player detail cross-reference"
+      ]
+    }
+  ],
+  "count_summary": {
+    "newly_verified_baseline_rows": 2,
+    "official_individual_match_pages_or_club_match_pages": 2,
+    "score_conflicts": 0,
+    "identity_conflicts": 0,
+    "xg_pairs_added": 0,
+    "xga_pairs_added": 0
+  },
+  "integrity_rules": [
+    "Match identity requires date + home + away + score agreement.",
+    "Official score verification does not imply xG/xGA is available.",
+    "Do not infer missing xG/xGA.",
+    "Do not overwrite V5.1 or historical prediction snapshots.",
+    "The 2026-11-01 four-match extension remains separate."
+  ]
+}
