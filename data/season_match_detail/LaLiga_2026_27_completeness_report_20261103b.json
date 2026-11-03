@@ -4,13 +4,13 @@
   "season": "2026-27",
   "results_fixtures": 109,
   "unique_fixture_keys": 109,
-  "fixtures_with_normalized_player_detail": 19,
-  "player_csv_rows": 864,
-  "substitution_csv_rows": 182,
+  "fixtures_with_normalized_player_detail": 20,
+  "player_csv_rows": 910,
+  "substitution_csv_rows": 191,
   "matches_with_both_starting_xis_entered": 11,
   "matches_with_partial_unresolved_identity": 0,
-  "fully_complete_matches": 19,
-  "fixtures_without_normalized_player_detail": 90,
+  "fully_complete_matches": 20,
+  "fixtures_without_normalized_player_detail": 89,
   "batches": [
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
     "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103b.json",
@@ -28,7 +28,7 @@
     "98 other LaLiga 2026-27 fixtures remain without normalized player-detail batches.",
     "Jornada 10: Rayo-Elche is the first match with a new independent detail batch and normalized CSV rows; the other 9 Jornada 10 matches still need player-detail collection.",
     "Jornada 11: all 10 fixtures passed row-level source, lineup/bench, appearance-status, substitution in/out, minute, uniqueness and CSV-vs-batch checks.",
-    "Jornada 10: nine fixtures source-audited complete; Sevilla-Osasuna is the only fixture without a detail batch."
+    "Jornada 10: all 10 fixtures have source-audited detail batches; final global integrity recheck is underway."
   ],
   "policy": [
     "Free, traceable sources only",
@@ -326,9 +326,8 @@
   },
   "jornada10_progress": {
     "fixtures_expected": 10,
-    "fixtures_with_detail_batches": 9,
-    "fixtures_source_audited_complete": 9,
-    "remaining_without_detail_batches": 1,
+    "fixtures_with_detail_batches": 10,
+    "fixtures_source_audited_complete": 10,
     "completed": [
       "Alaves-Malaga",
       "Rayo-Elche",
@@ -338,12 +337,11 @@
       "Athletic-Getafe",
       "Celta-Betis",
       "Real Sociedad-Levante",
-      "Barcelona-Real Madrid"
-    ],
-    "in_progress": [],
-    "remaining": [
+      "Barcelona-Real Madrid",
       "Sevilla-Osasuna"
-    ]
+    ],
+    "remaining_without_detail_batches": 0,
+    "remaining": []
   },
   "jornada11_source_certification_status": "complete",
   "jornada11_integrity": {
