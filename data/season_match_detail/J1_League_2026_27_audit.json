@@ -93,11 +93,11 @@
   "results_file": "data/auto_results/J1_League_2026_27.csv",
   "lineup_and_appearance_audit": {
     "matches_with_both_teams_starting_xi_structured": 130,
-    "matches_with_both_bench_lists_structured": 124,
+    "matches_with_both_bench_lists_structured": 130,
     "matches_with_substitution_events_structured": 130,
     "matches_with_complete_player_appearance_status_table": 115,
     "standardized_player_file": "data/season_match_detail/J1_League_2026_27_players.csv",
-    "standardized_player_rows": 5145,
+    "standardized_player_rows": 5191,
     "standardized_substitution_file": "data/season_match_detail/J1_League_2026_27_substitutions.csv",
     "standardized_substitution_rows": 1261,
     "note": "Official J.League Data Site or official club match-data pages used to add/classify unused substitutes for thirteen fixtures. Nine initial missing fixtures have been reduced to six remaining; the exact list is in latest_reaudit.latest_update_summary.fixtures_still_missing_bench. Unknown names remain unestimated."
@@ -526,7 +526,7 @@
         "status": "verified"
       }
     ],
-    "current_player_rows": 5145,
+    "current_player_rows": 5191,
     "current_player_match_groups": 130,
     "current_substitution_rows": 1261,
     "current_substitution_match_groups": 130,
@@ -552,16 +552,9 @@
       "limitations": "Unused bench members not fully transcribed for these six fixtures; only confirmed starters and documented appearances/events are included. No inferred names or times.",
       "player_rows_after_correction": 5051,
       "substitution_rows_after_correction": 1261,
-      "bench_list_fixtures_completed": 13,
-      "bench_list_fixtures_remaining": 6,
-      "fixtures_still_missing_bench": [
-        "2026-09-06|鹿島|浦和",
-        "2026-08-15|川崎Ｆ|京都",
-        "2026-08-21|FC東京|千葉",
-        "2026-08-22|鹿島|福岡",
-        "2026-09-06|Ｃ大阪|東京Ｖ",
-        "2026-09-19|川崎Ｆ|鹿島"
-      ],
+      "bench_list_fixtures_completed": 130,
+      "bench_list_fixtures_remaining": 0,
+      "fixtures_still_missing_bench": [],
       "bench_list_recently_completed": [
         "2026-10-31|鹿島|Ｃ大阪",
         "2026-10-31|柏|浦和",
