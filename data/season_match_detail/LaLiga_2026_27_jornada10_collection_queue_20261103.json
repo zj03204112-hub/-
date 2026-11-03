@@ -213,12 +213,19 @@
       "score": "2-0",
       "official_match_url": "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-ca-osasuna-10",
       "official_match_url_status": "found",
-      "starting_xi_status": "pending_source_audit",
-      "bench_status": "pending_source_audit",
-      "appearance_status": "pending_source_audit",
-      "substitutions_status": "pending_source_audit",
-      "player_detail_batch": null,
-      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them."
+      "starting_xi_status": "verified_both_teams_11",
+      "bench_status": "verified_both_official_lists_12",
+      "appearance_status": "verified_9_entrants_and_15_unused_bench_players",
+      "substitutions_status": "verified_9_events",
+      "player_detail_batch": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_sevilla_osasuna.json",
+      "notes": "Do not fill missing names or events by inference; leave unresolved fields blank until a free source confirms them.",
+      "official_detail_page_found": true,
+      "detail_status": "complete_source_crosscheck_and_structural_audit_passed",
+      "sources": [
+        "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-ca-osasuna-10",
+        "https://sevillafc.es/actualidad/noticias/partido-directo-sevilla-osasuna-laliga-2026-2027",
+        "https://www.skysports.com/football/sevilla-vs-osasuna/teams/563022"
+      ]
     }
   ],
   "source_note": "All 10 Jornada 10 fixtures now have a traceable official league or club match page. Player-detail collection has not yet been completed; each lineup, bench list, appearance status, and substitution event must still be verified and normalized.",
@@ -230,7 +237,7 @@
   },
   "normalized_batches_created": 1,
   "normalized_fixtures": 1,
-  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_barcelona_real_madrid.json",
+  "last_batch_added": "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_sevilla_osasuna.json",
   "completed_fixture_keys": [
     "2026-10-23|Alaves|Malaga",
     "2026-10-24|Rayo|Elche",
@@ -240,13 +247,13 @@
     "2026-10-25|Athletic|Getafe",
     "2026-10-25|Celta|Betis",
     "2026-10-25|Real Sociedad|Levante",
-    "2026-10-25|Barcelona|Real Madrid"
+    "2026-10-25|Barcelona|Real Madrid",
+    "2026-10-26|Sevilla|Osasuna"
   ],
   "jornada10_progress": {
     "fixtures_expected": 10,
-    "fixtures_with_detail_batches": 9,
-    "fixtures_source_audited_complete": 9,
-    "remaining_without_detail_batches": 1,
+    "fixtures_with_detail_batches": 10,
+    "fixtures_source_audited_complete": 10,
     "completed": [
       "Alaves-Malaga",
       "Rayo-Elche",
@@ -256,11 +263,10 @@
       "Athletic-Getafe",
       "Celta-Betis",
       "Real Sociedad-Levante",
-      "Barcelona-Real Madrid"
-    ],
-    "in_progress": [],
-    "remaining": [
+      "Barcelona-Real Madrid",
       "Sevilla-Osasuna"
-    ]
+    ],
+    "remaining_without_detail_batches": 0,
+    "remaining": []
   }
 }
