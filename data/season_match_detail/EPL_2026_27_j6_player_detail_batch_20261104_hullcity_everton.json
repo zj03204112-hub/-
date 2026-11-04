@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "epl-2026-27-2026-10-11-hullcity-everton",
+ "date": "2026-10-11",
+ "home": "Hull City",
+ "away": "Everton",
+ "score": "2-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795470",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795470"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Konstantinos Tzolakis",
+   "Semi Ajayi",
+   "John Egan",
+   "Nobel Mendy",
+   "Lewie Coyle",
+   "Ryan Giles",
+   "Joe Gelhardt",
+   "Matt Crooks",
+   "Regan Slater",
+   "Sorba Thomas",
+   "Oli McBurnie"
+  ],
+  "home_bench": [
+   "Elliot Stroud",
+   "Mohamed Belloumi",
+   "Tim Iroegbunam",
+   "Hidemasa Morita",
+   "Robinio Vaz",
+   "Dillon Phillips",
+   "Lucas Herrington",
+   "Paddy McNair",
+   "Brooke Norton-Cuffy"
+  ],
+  "away_starting_xi": [
+   "Jordan Pickford",
+   "Ainsley Maitland-Niles",
+   "James Tarkowski",
+   "Michael Keane",
+   "Jarrad Branthwaite",
+   "James Garner",
+   "Harrison Armstrong",
+   "Brennan Johnson",
+   "Kiernan Dewsbury-Hall",
+   "Jack Grealish",
+   "Thierno Barry"
+  ],
+  "away_bench": [
+   "Tyrique George",
+   "Jake O'Brien",
+   "Hayden Hackney",
+   "Charly Alcaraz",
+   "Tyler Dibling",
+   "Mark Travers",
+   "Merlin Röhl",
+   "Christian Nørgaard",
+   "Braiden Graham"
+  ],
+  "substitution_events": [
+   {
+    "team": "Hull City",
+    "in": "Elliot Stroud",
+    "out": "Ryan Giles",
+    "minute": "64"
+   },
+   {
+    "team": "Hull City",
+    "in": "Mohamed Belloumi",
+    "out": "Joe Gelhardt",
+    "minute": "64"
+   },
+   {
+    "team": "Hull City",
+    "in": "Tim Iroegbunam",
+    "out": "Matt Crooks",
+    "minute": "65"
+   },
+   {
+    "team": "Hull City",
+    "in": "Hidemasa Morita",
+    "out": "Regan Slater",
+    "minute": "75"
+   },
+   {
+    "team": "Hull City",
+    "in": "Robinio Vaz",
+    "out": "Sorba Thomas",
+    "minute": "86"
+   },
+   {
+    "team": "Everton",
+    "in": "Tyrique George",
+    "out": "Brennan Johnson",
+    "minute": "66"
+   },
+   {
+    "team": "Everton",
+    "in": "Hayden Hackney",
+    "out": "Harrison Armstrong",
+    "minute": "78"
+   },
+   {
+    "team": "Everton",
+    "in": "Jake O'Brien",
+    "out": "Ainsley Maitland-Niles",
+    "minute": "78"
+   },
+   {
+    "team": "Everton",
+    "in": "Charly Alcaraz",
+    "out": "Thierno Barry",
+    "minute": "86"
+   },
+   {
+    "team": "Everton",
+    "in": "Tyler Dibling",
+    "out": "Jack Grealish",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Michael Salisbury",
+  "attendance": 24458,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

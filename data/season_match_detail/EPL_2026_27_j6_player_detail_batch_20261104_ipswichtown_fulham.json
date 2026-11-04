@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "epl-2026-27-2026-10-10-ipswichtown-fulham",
+ "date": "2026-10-10",
+ "home": "Ipswich Town",
+ "away": "Fulham",
+ "score": "2-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795471",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795471"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Christian Walton",
+   "Abdoul Ouattara",
+   "Issa Diop",
+   "Dara O'Shea",
+   "Leif Davis",
+   "Florentino",
+   "Saša Lukić",
+   "Daizen Maeda",
+   "Julio Enciso",
+   "Jaden Philogene-Bidace",
+   "Emersonn"
+  ],
+  "home_bench": [
+   "Exequiel Palacios",
+   "Jack Clarke",
+   "Chuba Akpom",
+   "Zian Flemming",
+   "Sindre Walle Egeli",
+   "Kjell Scherpen",
+   "Darnell Furlong",
+   "Jacob Greaves",
+   "Azor Matusiwa"
+  ],
+  "away_starting_xi": [
+   "Bernd Leno",
+   "Kenny Tete",
+   "David Affengruber",
+   "Calvin Bassey",
+   "Ryan Sessegnon",
+   "Shea Charles",
+   "Sander Berge",
+   "Oscar Bobb",
+   "Joshua King",
+   "Alex Iwobi",
+   "Gonzalo García"
+  ],
+  "away_bench": [
+   "Manuel Ángel",
+   "Kevin",
+   "Rodrigo Muniz",
+   "Emile Smith Rowe",
+   "Hugo Larsson",
+   "Benjamin Lecomte",
+   "Joachim Andersen",
+   "Timothy Castagne",
+   "César Palacios"
+  ],
+  "substitution_events": [
+   {
+    "team": "Ipswich Town",
+    "in": "Jack Clarke",
+    "out": "Jaden Philogene-Bidace",
+    "minute": "63"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Exequiel Palacios",
+    "out": "Florentino",
+    "minute": "63"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Chuba Akpom",
+    "out": "Julio Enciso",
+    "minute": "71"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Zian Flemming",
+    "out": "Emersonn",
+    "minute": "71"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Sindre Walle Egeli",
+    "out": "Daizen Maeda",
+    "minute": "81"
+   },
+   {
+    "team": "Fulham",
+    "in": "Manuel Ángel",
+    "out": "Shea Charles",
+    "minute": "71"
+   },
+   {
+    "team": "Fulham",
+    "in": "Kevin",
+    "out": "Oscar Bobb",
+    "minute": "76"
+   },
+   {
+    "team": "Fulham",
+    "in": "Rodrigo Muniz",
+    "out": "Joshua King",
+    "minute": "76"
+   },
+   {
+    "team": "Fulham",
+    "in": "Hugo Larsson",
+    "out": "Gonzalo García",
+    "minute": "87"
+   },
+   {
+    "team": "Fulham",
+    "in": "Emile Smith Rowe",
+    "out": "Alex Iwobi",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Lewis Smith",
+  "attendance": 29445,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

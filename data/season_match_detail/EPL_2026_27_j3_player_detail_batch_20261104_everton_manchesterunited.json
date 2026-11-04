@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "epl-2026-27-2026-09-06-everton-manchesterunited",
+ "date": "2026-09-06",
+ "home": "Everton",
+ "away": "Manchester United",
+ "score": "2-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795438",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795438"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jordan Pickford",
+   "Merlin Röhl",
+   "James Tarkowski",
+   "Jarrad Branthwaite",
+   "Vitaliy Mykolenko",
+   "Harrison Armstrong",
+   "James Garner",
+   "Brennan Johnson",
+   "Kiernan Dewsbury-Hall",
+   "Tyrique George",
+   "Thierno Barry"
+  ],
+  "home_bench": [
+   "Jack Grealish",
+   "Hayden Hackney",
+   "Ainsley Maitland-Niles",
+   "Mark Travers",
+   "Jake O'Brien",
+   "Michael Keane",
+   "Charly Alcaraz",
+   "Braiden Graham",
+   "Tyler Dibling"
+  ],
+  "away_starting_xi": [
+   "Senne Lammens",
+   "Diogo Dalot",
+   "Harry Maguire",
+   "Lisandro Martínez",
+   "Luke Shaw",
+   "Kobbie Mainoo",
+   "Youri Tielemans",
+   "Bryan Mbeumo",
+   "Bruno Fernandes",
+   "Marcus Rashford",
+   "Matheus Cunha"
+  ],
+  "away_bench": [
+   "Benjamin Šeško",
+   "Patrick Dorgu",
+   "Leny Yoro",
+   "Andrey Santos",
+   "Noussair Mazraoui",
+   "Karl Darlow",
+   "Ayden Heaven",
+   "Mason Mount",
+   "Joshua Zirkzee"
+  ],
+  "substitution_events": [
+   {
+    "team": "Everton",
+    "in": "Jack Grealish",
+    "out": "Brennan Johnson",
+    "minute": "66"
+   },
+   {
+    "team": "Everton",
+    "in": "Hayden Hackney",
+    "out": "Merlin Röhl",
+    "minute": "75"
+   },
+   {
+    "team": "Everton",
+    "in": "Ainsley Maitland-Niles",
+    "out": "James Garner",
+    "minute": "77"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Benjamin Šeško",
+    "out": "Matheus Cunha",
+    "minute": "70"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Patrick Dorgu",
+    "out": "Marcus Rashford",
+    "minute": "70"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Leny Yoro",
+    "out": "Diogo Dalot",
+    "minute": "84"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Andrey Santos",
+    "out": "Kobbie Mainoo",
+    "minute": "84"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Noussair Mazraoui",
+    "out": "Luke Shaw",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "John Brooks",
+  "attendance": 52302,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

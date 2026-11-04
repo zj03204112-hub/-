@@ -1,0 +1,129 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "epl-2026-27-2026-09-12-sunderland-arsenal",
+ "date": "2026-09-12",
+ "home": "Sunderland",
+ "away": "Arsenal",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795453",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795453"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Robin Roefs",
+   "Nordi Mukiele",
+   "Kevin Danso",
+   "Daniel Ballard",
+   "Reinildo",
+   "Granit Xhaka",
+   "Noah Sadiki",
+   "Thomas Meunier",
+   "Enzo Le Fée",
+   "Nilson Angulo",
+   "Brian Brobbey"
+  ],
+  "home_bench": [
+   "Wilson Isidor",
+   "Malick Fofana",
+   "Melker Ellborg",
+   "Luke O'Nien",
+   "Omar Alderete",
+   "Trai Hume",
+   "Chris Rigg",
+   "Dayann Méthalie",
+   "Chemsdine Talbi"
+  ],
+  "away_starting_xi": [
+   "David Raya",
+   "Ben White",
+   "Ezri Konsa",
+   "Gabriel",
+   "Riccardo Calafiori",
+   "Declan Rice",
+   "Myles Lewis-Skelly",
+   "Bukayo Saka",
+   "Martin Ødegaard",
+   "Christos Tzolis",
+   "Kai Havertz"
+  ],
+  "away_bench": [
+   "Jurriën Timber",
+   "Bruno Guimarães",
+   "Eberechi Eze",
+   "Martín Zubimendi",
+   "Mikel Merino",
+   "Kepa Arrizabalaga",
+   "Piero Hincapié",
+   "Noni Madueke",
+   "Viktor Gyökeres"
+  ],
+  "substitution_events": [
+   {
+    "team": "Sunderland",
+    "in": "Wilson Isidor",
+    "out": "Nilson Angulo",
+    "minute": "70"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Malick Fofana",
+    "out": "Thomas Meunier",
+    "minute": "76"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Jurriën Timber",
+    "out": "Ben White",
+    "minute": "46"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Bruno Guimarães",
+    "out": "Myles Lewis-Skelly",
+    "minute": "46"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Eberechi Eze",
+    "out": "Christos Tzolis",
+    "minute": "81"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Martín Zubimendi",
+    "out": "Declan Rice",
+    "minute": "81"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Mikel Merino",
+    "out": "Martin Ødegaard",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "John Brooks",
+  "attendance": 46861,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

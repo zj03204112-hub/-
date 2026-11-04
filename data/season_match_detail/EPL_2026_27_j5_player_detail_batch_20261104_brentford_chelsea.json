@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "epl-2026-27-2026-09-18-brentford-chelsea",
+ "date": "2026-09-18",
+ "home": "Brentford",
+ "away": "Chelsea",
+ "score": "3-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795456",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795456"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Caoimhín Kelleher",
+   "Michael Kayode",
+   "Jannik Schuster",
+   "Kristoffer Ajer",
+   "Keane Lewis-Potter",
+   "Yehor Yarmoliuk",
+   "Vitaly Janelt",
+   "Jaidon Anthony",
+   "Mikkel Damsgaard",
+   "Kevin Schade",
+   "Igor Thiago"
+  ],
+  "home_bench": [
+   "Aaron Hickey",
+   "Mamadou Sangaré",
+   "Malick Diouf",
+   "Dango Ouattara",
+   "Fábio Carvalho",
+   "Ellery Balcombe",
+   "Benjamin Fredrick",
+   "Rico Henry",
+   "Callum Wilson"
+  ],
+  "away_starting_xi": [
+   "Emiliano Martínez",
+   "Wesley Fofana",
+   "Maxence Lacroix",
+   "Levi Colwill",
+   "Pedro Neto",
+   "Jordan Henderson",
+   "Valentín Barco",
+   "Pep Chavarría",
+   "Cole Palmer",
+   "Morgan Rogers",
+   "Danny Welbeck"
+  ],
+  "away_bench": [
+   "Josh Acheampong",
+   "Geovany Quenda",
+   "Mahdi Nicoll-Jazuli",
+   "Estêvão",
+   "Mike Penders",
+   "Jorrel Hato",
+   "Malo Gusto",
+   "Roméo Lavia",
+   "Jamie Gittens"
+  ],
+  "substitution_events": [
+   {
+    "team": "Brentford",
+    "in": "Aaron Hickey",
+    "out": "Michael Kayode",
+    "minute": "69"
+   },
+   {
+    "team": "Brentford",
+    "in": "Mamadou Sangaré",
+    "out": "Yehor Yarmoliuk",
+    "minute": "69"
+   },
+   {
+    "team": "Brentford",
+    "in": "Dango Ouattara",
+    "out": "Jaidon Anthony",
+    "minute": "81"
+   },
+   {
+    "team": "Brentford",
+    "in": "Malick Diouf",
+    "out": "Keane Lewis-Potter",
+    "minute": "81"
+   },
+   {
+    "team": "Brentford",
+    "in": "Fábio Carvalho",
+    "out": "Mikkel Damsgaard",
+    "minute": "87"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Geovany Quenda",
+    "out": "Danny Welbeck",
+    "minute": "71"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Josh Acheampong",
+    "out": "Wesley Fofana",
+    "minute": "71"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Estêvão",
+    "out": "Pedro Neto",
+    "minute": "87"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Mahdi Nicoll-Jazuli",
+    "out": "Valentín Barco",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 0
+  },
+  "provider_score": "3-0",
+  "score_consistent_with_events": true,
+  "referee": "Andy Madley",
+  "attendance": 17193,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "epl-2026-27-2026-09-05-manchestercity-coventrycity",
+ "date": "2026-09-05",
+ "home": "Manchester City",
+ "away": "Coventry City",
+ "score": "1-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795442",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795442"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Gianluigi Donnarumma",
+   "Abdukodir Khusanov",
+   "Rúben Dias",
+   "Marc Guéhi",
+   "Joško Gvardiol",
+   "Elliot Anderson",
+   "Antoine Semenyo",
+   "Enzo Fernández",
+   "Rayan Cherki",
+   "Iliman Ndiaye",
+   "Erling Haaland"
+  ],
+  "home_bench": [
+   "Phil Foden",
+   "Ayyoub Bouaddi",
+   "Ryan McAidoo",
+   "Gerónimo Rulli",
+   "Matheus Nunes",
+   "Rayan Aït-Nouri",
+   "Rico Lewis",
+   "Floyd Samba",
+   "Mateo Kovačić"
+  ],
+  "away_starting_xi": [
+   "Carl Rushworth",
+   "Aurèle Amenda",
+   "Bobby Thomas",
+   "Ethan Pinnock",
+   "Milan van Ewijk",
+   "Frank Onyeka",
+   "Matt Grimes",
+   "Jay Dasilva",
+   "Jack Rudoni",
+   "Taiwo Awoniyi",
+   "Ephron Mason-Clark"
+  ],
+  "away_bench": [
+   "Caleb Yirenkyi",
+   "Loum Tchaouna",
+   "Brandon Thomas-Asante",
+   "Ellis Simms",
+   "Gustavo Hamer",
+   "Daniel Bentley",
+   "Joel Latibeaudiere",
+   "Victor Torp",
+   "Tatsuhiro Sakamoto"
+  ],
+  "substitution_events": [
+   {
+    "team": "Manchester City",
+    "in": "Phil Foden",
+    "out": "Rayan Cherki",
+    "minute": "66"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Ayyoub Bouaddi",
+    "out": "Enzo Fernández",
+    "minute": "76"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Ryan McAidoo",
+    "out": "Iliman Ndiaye",
+    "minute": "87"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Loum Tchaouna",
+    "out": "Jack Rudoni",
+    "minute": "63"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Caleb Yirenkyi",
+    "out": "Frank Onyeka",
+    "minute": "63"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Ellis Simms",
+    "out": "Taiwo Awoniyi",
+    "minute": "71"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Brandon Thomas-Asante",
+    "out": "Ephron Mason-Clark",
+    "minute": "71"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Gustavo Hamer",
+    "out": "Jay Dasilva",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Paul Tierney",
+  "attendance": 60765,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

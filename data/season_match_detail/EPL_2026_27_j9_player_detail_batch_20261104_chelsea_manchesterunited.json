@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "epl-2026-27-2026-10-31-chelsea-manchesterunited",
+ "date": "2026-10-31",
+ "home": "Chelsea",
+ "away": "Manchester United",
+ "score": "2-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795498",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795498"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mike Penders",
+   "Josh Acheampong",
+   "Wesley Fofana",
+   "Levi Colwill",
+   "Marco Palestra",
+   "Roméo Lavia",
+   "Moisés Caicedo",
+   "Estêvão",
+   "Cole Palmer",
+   "Morgan Rogers",
+   "Pedro Neto"
+  ],
+  "home_bench": [
+   "Pep Chavarría",
+   "Malo Gusto",
+   "Valentín Barco",
+   "Danny Welbeck",
+   "Geovany Quenda",
+   "Teddy Sharman-Lowe",
+   "Olutayo Subuloye",
+   "Mahdi Nicoll-Jazuli",
+   "Emanuel Emegha"
+  ],
+  "away_starting_xi": [
+   "Senne Lammens",
+   "Leny Yoro",
+   "Harry Maguire",
+   "Lisandro Martínez",
+   "Diogo Dalot",
+   "Carlos Baleba",
+   "Andrey Santos",
+   "Amad Diallo",
+   "Bruno Fernandes",
+   "Matheus Cunha",
+   "Bryan Mbeumo"
+  ],
+  "away_bench": [
+   "Kobbie Mainoo",
+   "Ayden Heaven",
+   "Mason Mount",
+   "Joshua Zirkzee",
+   "Karl Darlow",
+   "Matthijs de Ligt",
+   "Noussair Mazraoui",
+   "Youri Tielemans",
+   "Shea Lacey"
+  ],
+  "substitution_events": [
+   {
+    "team": "Chelsea",
+    "in": "Pep Chavarría",
+    "out": "Marco Palestra",
+    "minute": "74"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Danny Welbeck",
+    "out": "Moisés Caicedo",
+    "minute": "87"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Valentín Barco",
+    "out": "Pedro Neto",
+    "minute": "87"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Malo Gusto",
+    "out": "Estêvão",
+    "minute": "87"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Geovany Quenda",
+    "out": "Cole Palmer",
+    "minute": "90"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Kobbie Mainoo",
+    "out": "Carlos Baleba",
+    "minute": "58"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Ayden Heaven",
+    "out": "Matheus Cunha",
+    "minute": "66"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Mason Mount",
+    "out": "Andrey Santos",
+    "minute": "66"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Joshua Zirkzee",
+    "out": "Amad Diallo",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Peter Bankes",
+  "attendance": 39503,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

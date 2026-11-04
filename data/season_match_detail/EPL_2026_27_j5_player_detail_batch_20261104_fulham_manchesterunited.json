@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "epl-2026-27-2026-09-20-fulham-manchesterunited",
+ "date": "2026-09-20",
+ "home": "Fulham",
+ "away": "Manchester United",
+ "score": "1-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795459",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795459"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bernd Leno",
+   "Timothy Castagne",
+   "David Affengruber",
+   "Calvin Bassey",
+   "Antonee Robinson",
+   "Sander Berge",
+   "Shea Charles",
+   "Oscar Bobb",
+   "Joshua King",
+   "Alex Iwobi",
+   "Gonzalo García"
+  ],
+  "home_bench": [
+   "César Palacios",
+   "Kevin",
+   "Hugo Larsson",
+   "Joachim Andersen",
+   "Rodrigo Muniz",
+   "Benjamin Lecomte",
+   "Ryan Sessegnon",
+   "Emile Smith Rowe",
+   "Manuel Ángel"
+  ],
+  "away_starting_xi": [
+   "Senne Lammens",
+   "Diogo Dalot",
+   "Harry Maguire",
+   "Lisandro Martínez",
+   "Luke Shaw",
+   "Youri Tielemans",
+   "Kobbie Mainoo",
+   "Bryan Mbeumo",
+   "Bruno Fernandes",
+   "Marcus Rashford",
+   "Matheus Cunha"
+  ],
+  "away_bench": [
+   "Joshua Zirkzee",
+   "Mason Mount",
+   "Patrick Dorgu",
+   "Karl Darlow",
+   "Leny Yoro",
+   "Noussair Mazraoui",
+   "Andrey Santos",
+   "Carlos Baleba",
+   "Shea Lacey"
+  ],
+  "substitution_events": [
+   {
+    "team": "Fulham",
+    "in": "Kevin",
+    "out": "Oscar Bobb",
+    "minute": "71"
+   },
+   {
+    "team": "Fulham",
+    "in": "César Palacios",
+    "out": "Alex Iwobi",
+    "minute": "71"
+   },
+   {
+    "team": "Fulham",
+    "in": "Hugo Larsson",
+    "out": "Sander Berge",
+    "minute": "77"
+   },
+   {
+    "team": "Fulham",
+    "in": "Rodrigo Muniz",
+    "out": "Gonzalo García",
+    "minute": "80"
+   },
+   {
+    "team": "Fulham",
+    "in": "Joachim Andersen",
+    "out": "Joshua King",
+    "minute": "80"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Joshua Zirkzee",
+    "out": "Marcus Rashford",
+    "minute": "77"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Mason Mount",
+    "out": "Kobbie Mainoo",
+    "minute": "80"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Patrick Dorgu",
+    "out": "Luke Shaw",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Peter Bankes",
+  "attendance": 27563,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

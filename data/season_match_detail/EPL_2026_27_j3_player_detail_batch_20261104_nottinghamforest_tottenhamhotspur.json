@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "epl-2026-27-2026-09-05-nottinghamforest-tottenhamhotspur",
+ "date": "2026-09-05",
+ "home": "Nottingham Forest",
+ "away": "Tottenham Hotspur",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795444",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795444"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Matz Sels",
+   "Jair Cunha",
+   "Nikola Milenković",
+   "Murillo",
+   "Ola Aina",
+   "Xaver Schlager",
+   "James McAtee",
+   "Neco Williams",
+   "Dan Ndoye",
+   "Morgan Gibbs-White",
+   "Liam Delap"
+  ],
+  "home_bench": [
+   "Daniel Muñoz",
+   "Igor Jesus",
+   "Chris Wood",
+   "Ousmane Diomande",
+   "John Victor",
+   "Luca Netz",
+   "Nicolás Dominguez",
+   "Ryan Yates",
+   "Callum Hudson-Odoi"
+  ],
+  "away_starting_xi": [
+   "Antonín Kinský",
+   "Pedro Porro",
+   "Jan Paul van Hecke",
+   "Micky van de Ven",
+   "Destiny Udogie",
+   "Sandro Tonali",
+   "Rodrigo Bentancur",
+   "Sávio",
+   "Conor Gallagher",
+   "Mathys Tel",
+   "Omar Marmoush"
+  ],
+  "away_bench": [
+   "Andrew Robertson",
+   "Mohammed Kudus",
+   "Mykhaylo Mudryk",
+   "Mateus Fernandes",
+   "Dominic Solanke",
+   "Martin Dúbravka",
+   "Marcos Senesi",
+   "Archie Gray",
+   "Lucas Bergvall"
+  ],
+  "substitution_events": [
+   {
+    "team": "Nottingham Forest",
+    "in": "Daniel Muñoz",
+    "out": "Ola Aina",
+    "minute": "59"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Igor Jesus",
+    "out": "Dan Ndoye",
+    "minute": "59"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Chris Wood",
+    "out": "Liam Delap",
+    "minute": "74"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Ousmane Diomande",
+    "out": "Murillo",
+    "minute": "90"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Andrew Robertson",
+    "out": "Destiny Udogie",
+    "minute": "61"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Mohammed Kudus",
+    "out": "Sávio",
+    "minute": "61"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Mykhaylo Mudryk",
+    "out": "Mathys Tel",
+    "minute": "74"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Mateus Fernandes",
+    "out": "Conor Gallagher",
+    "minute": "83"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Dominic Solanke",
+    "out": "Omar Marmoush",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Craig Pawson",
+  "attendance": 30686,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

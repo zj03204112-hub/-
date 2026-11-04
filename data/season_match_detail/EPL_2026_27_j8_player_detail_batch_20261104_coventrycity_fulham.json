@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "epl-2026-27-2026-10-24-coventrycity-fulham",
+ "date": "2026-10-24",
+ "home": "Coventry City",
+ "away": "Fulham",
+ "score": "0-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795488",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795488"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Carl Rushworth",
+   "Milan van Ewijk",
+   "Bobby Thomas",
+   "Ethan Pinnock",
+   "Jay Dasilva",
+   "Caleb Yirenkyi",
+   "Matt Grimes",
+   "Tatsuhiro Sakamoto",
+   "Jack Rudoni",
+   "Brandon Thomas-Asante",
+   "Sidiki Cherif"
+  ],
+  "home_bench": [
+   "Stephen Mfuni",
+   "Frank Onyeka",
+   "Ephron Mason-Clark",
+   "Taiwo Awoniyi",
+   "Gustavo Hamer",
+   "Daniel Bentley",
+   "Kaine Kesler-Hayden",
+   "Victor Torp",
+   "Yann Gboho"
+  ],
+  "away_starting_xi": [
+   "Bernd Leno",
+   "Timothy Castagne",
+   "David Affengruber",
+   "Calvin Bassey",
+   "Antonee Robinson",
+   "Shea Charles",
+   "Hugo Larsson",
+   "Oscar Bobb",
+   "Joshua King",
+   "Alex Iwobi",
+   "Gonzalo García"
+  ],
+  "away_bench": [
+   "Sander Berge",
+   "César Palacios",
+   "Rodrigo Muniz",
+   "Kenny Tete",
+   "Tom Cairney",
+   "Benjamin Lecomte",
+   "Joachim Andersen",
+   "Manuel Ángel",
+   "Kevin"
+  ],
+  "substitution_events": [
+   {
+    "team": "Coventry City",
+    "in": "Stephen Mfuni",
+    "out": "Bobby Thomas",
+    "minute": "60"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Frank Onyeka",
+    "out": "Caleb Yirenkyi",
+    "minute": "67"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Taiwo Awoniyi",
+    "out": "Sidiki Cherif",
+    "minute": "67"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Ephron Mason-Clark",
+    "out": "Brandon Thomas-Asante",
+    "minute": "67"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Gustavo Hamer",
+    "out": "Tatsuhiro Sakamoto",
+    "minute": "86"
+   },
+   {
+    "team": "Fulham",
+    "in": "Sander Berge",
+    "out": "Hugo Larsson",
+    "minute": "63"
+   },
+   {
+    "team": "Fulham",
+    "in": "Rodrigo Muniz",
+    "out": "Gonzalo García",
+    "minute": "74"
+   },
+   {
+    "team": "Fulham",
+    "in": "César Palacios",
+    "out": "Alex Iwobi",
+    "minute": "74"
+   },
+   {
+    "team": "Fulham",
+    "in": "Kenny Tete",
+    "out": "Oscar Bobb",
+    "minute": "81"
+   },
+   {
+    "team": "Fulham",
+    "in": "Tom Cairney",
+    "out": "Joshua King",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Adam Herczeg",
+  "attendance": 31449,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

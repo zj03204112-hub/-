@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "epl-2026-27-2026-10-11-liverpool-manchestercity",
+ "date": "2026-10-11",
+ "home": "Liverpool",
+ "away": "Manchester City",
+ "score": "0-3",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795472",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795472"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alisson Becker",
+   "Ronald Araujo",
+   "Jérémy Jacquet",
+   "Virgil van Dijk",
+   "Miloš Kerkez",
+   "Ryan Gravenberch",
+   "Alexis Mac Allister",
+   "Víctor Muñoz",
+   "Florian Wirtz",
+   "Bradley Barcola",
+   "Lewis Koumas"
+  ],
+  "home_bench": [
+   "Trey Nyoni",
+   "Jeremie Frimpong",
+   "Rio Ngumoha",
+   "Joseph Gomez",
+   "Federico Chiesa",
+   "Giorgi Mamardashvili",
+   "Konstantinos Tsimikas",
+   "Wataru Endo",
+   "James McConnell"
+  ],
+  "away_starting_xi": [
+   "Gianluigi Donnarumma",
+   "Matheus Nunes",
+   "Rúben Dias",
+   "Marc Guéhi",
+   "Nico O'Reilly",
+   "Elliot Anderson",
+   "Iliman Ndiaye",
+   "Rayan Cherki",
+   "Enzo Fernández",
+   "Antoine Semenyo",
+   "Erling Haaland"
+  ],
+  "away_bench": [
+   "Jérémy Doku",
+   "Joško Gvardiol",
+   "Ayyoub Bouaddi",
+   "Allan",
+   "Gerónimo Rulli",
+   "Abdukodir Khusanov",
+   "Rico Lewis",
+   "Vitor Reis",
+   "Mateo Kovačić"
+  ],
+  "substitution_events": [
+   {
+    "team": "Liverpool",
+    "in": "Trey Nyoni",
+    "out": "Florian Wirtz",
+    "minute": "66"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Jeremie Frimpong",
+    "out": "Ronald Araujo",
+    "minute": "75"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Rio Ngumoha",
+    "out": "Lewis Koumas",
+    "minute": "75"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Joseph Gomez",
+    "out": "Jérémy Jacquet",
+    "minute": "88"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Federico Chiesa",
+    "out": "Bradley Barcola",
+    "minute": "88"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Jérémy Doku",
+    "out": "Iliman Ndiaye",
+    "minute": "56"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Joško Gvardiol",
+    "out": "Nico O'Reilly",
+    "minute": "66"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Allan",
+    "out": "Erling Haaland",
+    "minute": "80"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Ayyoub Bouaddi",
+    "out": "Enzo Fernández",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 3
+  },
+  "provider_score": "0-3",
+  "score_consistent_with_events": true,
+  "referee": "Chris Kavanagh",
+  "attendance": 60338,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

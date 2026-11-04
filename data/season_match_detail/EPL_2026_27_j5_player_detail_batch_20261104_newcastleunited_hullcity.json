@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "epl-2026-27-2026-09-19-newcastleunited-hullcity",
+ "date": "2026-09-19",
+ "home": "Newcastle United",
+ "away": "Hull City",
+ "score": "2-1",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795462",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795462"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lukás Hornícek",
+   "Lewis Miley",
+   "Malick Thiaw",
+   "Sven Botman",
+   "Lewis Hall",
+   "Sean Steur",
+   "Jacob Murphy",
+   "Yoane Wissa",
+   "Joseph Willock",
+   "Harvey Barnes",
+   "Matias Fernandez-Pardo"
+  ],
+  "home_bench": [
+   "Fabian Schär",
+   "Bazoumana Touré",
+   "Aladji Bamba",
+   "Nick Pope",
+   "Mason Miley",
+   "Miodrag Pivaš",
+   "Kyran Thompson",
+   "Michael Mills",
+   "Vakhtang Salia"
+  ],
+  "away_starting_xi": [
+   "Konstantinos Tzolakis",
+   "Semi Ajayi",
+   "John Egan",
+   "Lucas Herrington",
+   "Lewie Coyle",
+   "Ryan Giles",
+   "Mohamed Belloumi",
+   "Regan Slater",
+   "Matt Crooks",
+   "Sorba Thomas",
+   "Oli McBurnie"
+  ],
+  "away_bench": [
+   "Tim Iroegbunam",
+   "Mohamed-Ali Cho",
+   "Lucas Gourna-Douath",
+   "Robinio Vaz",
+   "Joe Gelhardt",
+   "Dillon Phillips",
+   "Paddy McNair",
+   "Elliot Stroud",
+   "Jens Hjertø-Dahl"
+  ],
+  "substitution_events": [
+   {
+    "team": "Newcastle United",
+    "in": "Fabian Schär",
+    "out": "Sean Steur",
+    "minute": "66"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Bazoumana Touré",
+    "out": "Matias Fernandez-Pardo",
+    "minute": "74"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Aladji Bamba",
+    "out": "Joseph Willock",
+    "minute": "87"
+   },
+   {
+    "team": "Hull City",
+    "in": "Tim Iroegbunam",
+    "out": "Matt Crooks",
+    "minute": "46"
+   },
+   {
+    "team": "Hull City",
+    "in": "Mohamed-Ali Cho",
+    "out": "Sorba Thomas",
+    "minute": "63"
+   },
+   {
+    "team": "Hull City",
+    "in": "Lucas Gourna-Douath",
+    "out": "Regan Slater",
+    "minute": "78"
+   },
+   {
+    "team": "Hull City",
+    "in": "Robinio Vaz",
+    "out": "John Egan",
+    "minute": "78"
+   },
+   {
+    "team": "Hull City",
+    "in": "Joe Gelhardt",
+    "out": "Mohamed Belloumi",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Tony Harrington",
+  "attendance": 52647,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

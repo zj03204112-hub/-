@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "epl-2026-27-2026-08-22-brentford-tottenhamhotspur",
+ "date": "2026-08-22",
+ "home": "Brentford",
+ "away": "Tottenham Hotspur",
+ "score": "3-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795368",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795368"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Caoimhín Kelleher",
+   "Michael Kayode",
+   "Kristoffer Ajer",
+   "Nathan Collins",
+   "Keane Lewis-Potter",
+   "Mamadou Sangaré",
+   "Vitaly Janelt",
+   "Dango Ouattara",
+   "Mathias Jensen",
+   "Kevin Schade",
+   "Igor Thiago"
+  ],
+  "home_bench": [
+   "Yehor Yarmoliuk",
+   "Jaidon Anthony",
+   "Aaron Hickey",
+   "Mikkel Damsgaard",
+   "Callum Wilson",
+   "Hákon Rafn Valdimarsson",
+   "Ethan Pinnock",
+   "Jannik Schuster",
+   "Rico Henry"
+  ],
+  "away_starting_xi": [
+   "Antonín Kinsky",
+   "Archie Gray",
+   "Jan Paul van Hecke",
+   "Marcos Senesi",
+   "Andrew Robertson",
+   "Sandro Tonali",
+   "Lucas Bergvall",
+   "Mikey Moore",
+   "Conor Gallagher",
+   "Mathys Tel",
+   "Richarlison"
+  ],
+  "away_bench": [
+   "Mateus Fernandes",
+   "Rodrigo Bentancur",
+   "James Maddison",
+   "Dominic Solanke",
+   "Destiny Udogie",
+   "Martin Dúbravka",
+   "Ben Davies",
+   "Kevin Danso",
+   "Luca Williams-Barnett"
+  ],
+  "substitution_events": [
+   {
+    "team": "Brentford",
+    "in": "Yehor Yarmoliuk",
+    "out": "Mathias Jensen",
+    "minute": "67"
+   },
+   {
+    "team": "Brentford",
+    "in": "Jaidon Anthony",
+    "out": "Dango Ouattara",
+    "minute": "67"
+   },
+   {
+    "team": "Brentford",
+    "in": "Aaron Hickey",
+    "out": "Michael Kayode",
+    "minute": "76"
+   },
+   {
+    "team": "Brentford",
+    "in": "Mikkel Damsgaard",
+    "out": "Mamadou Sangaré",
+    "minute": "76"
+   },
+   {
+    "team": "Brentford",
+    "in": "Callum Wilson",
+    "out": "Igor Thiago",
+    "minute": "83"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Rodrigo Bentancur",
+    "out": "Lucas Bergvall",
+    "minute": "46"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Mateus Fernandes",
+    "out": "Conor Gallagher",
+    "minute": "46"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Dominic Solanke",
+    "out": "Richarlison",
+    "minute": "68"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "James Maddison",
+    "out": "Mikey Moore",
+    "minute": "68"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Destiny Udogie",
+    "out": "Archie Gray",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 0
+  },
+  "provider_score": "3-0",
+  "score_consistent_with_events": true,
+  "referee": "Michael Oliver",
+  "attendance": 17180,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

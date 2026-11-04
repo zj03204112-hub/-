@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "epl-2026-27-2026-09-06-arsenal-chelsea",
+ "date": "2026-09-06",
+ "home": "Arsenal",
+ "away": "Chelsea",
+ "score": "2-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795435",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795435"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "David Raya",
+   "Ben White",
+   "Ezri Konsa",
+   "Gabriel",
+   "Riccardo Calafiori",
+   "Declan Rice",
+   "Myles Lewis-Skelly",
+   "Bukayo Saka",
+   "Martin Ødegaard",
+   "Christos Tzolis",
+   "Kai Havertz"
+  ],
+  "home_bench": [
+   "Piero Hincapié",
+   "Martín Zubimendi",
+   "Mikel Merino",
+   "Viktor Gyökeres",
+   "Noni Madueke",
+   "Kepa Arrizabalaga",
+   "Bruno Guimarães",
+   "Eberechi Eze",
+   "Max Dowman"
+  ],
+  "away_starting_xi": [
+   "Emiliano Martínez",
+   "Josh Acheampong",
+   "Maxence Lacroix",
+   "Wesley Fofana",
+   "Pedro Neto",
+   "Roméo Lavia",
+   "Reece James",
+   "Jorrel Hato",
+   "Cole Palmer",
+   "Morgan Rogers",
+   "João Pedro"
+  ],
+  "away_bench": [
+   "Malo Gusto",
+   "Pep Chavarría",
+   "Estêvão",
+   "Danny Welbeck",
+   "Mike Penders",
+   "Levi Colwill",
+   "Valentín Barco",
+   "Geovany Quenda",
+   "Jamie Gittens"
+  ],
+  "substitution_events": [
+   {
+    "team": "Arsenal",
+    "in": "Piero Hincapié",
+    "out": "Riccardo Calafiori",
+    "minute": "67"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Martín Zubimendi",
+    "out": "Myles Lewis-Skelly",
+    "minute": "67"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Mikel Merino",
+    "out": "Martin Ødegaard",
+    "minute": "77"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Viktor Gyökeres",
+    "out": "Kai Havertz",
+    "minute": "78"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Noni Madueke",
+    "out": "Bukayo Saka",
+    "minute": "90"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Pep Chavarría",
+    "out": "Jorrel Hato",
+    "minute": "60"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Malo Gusto",
+    "out": "Roméo Lavia",
+    "minute": "60"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Estêvão",
+    "out": "Pedro Neto",
+    "minute": "81"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Danny Welbeck",
+    "out": "Morgan Rogers",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Chris Kavanagh",
+  "attendance": 60240,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

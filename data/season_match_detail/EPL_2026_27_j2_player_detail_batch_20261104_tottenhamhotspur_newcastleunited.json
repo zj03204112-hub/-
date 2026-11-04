@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "epl-2026-27-2026-08-29-tottenhamhotspur-newcastleunited",
+ "date": "2026-08-29",
+ "home": "Tottenham Hotspur",
+ "away": "Newcastle United",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795434",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795434"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Antonín Kinský",
+   "Archie Gray",
+   "Jan Paul van Hecke",
+   "Micky van de Ven",
+   "Andrew Robertson",
+   "Rodrigo Bentancur",
+   "Sandro Tonali",
+   "Pedro Porro",
+   "Mateus Fernandes",
+   "Mathys Tel",
+   "Omar Marmoush"
+  ],
+  "home_bench": [
+   "Destiny Udogie",
+   "Mikey Moore",
+   "Mohammed Kudus",
+   "Dominic Solanke",
+   "Martin Dúbravka",
+   "Ben Davies",
+   "Marcos Senesi",
+   "Conor Gallagher",
+   "Lucas Bergvall"
+  ],
+  "away_starting_xi": [
+   "Lukás Hornícek",
+   "Amar Dedić",
+   "Malick Thiaw",
+   "Sven Botman",
+   "Lewis Hall",
+   "Nico González",
+   "Lewis Miley",
+   "Anthony Elanga",
+   "Joseph Willock",
+   "Harvey Barnes",
+   "Yoane Wissa"
+  ],
+  "away_bench": [
+   "Sean Steur",
+   "Nick Woltemade",
+   "Jacob Ramsey",
+   "Jacob Murphy",
+   "Bazoumana Touré",
+   "Ewen Jaouen",
+   "Fabian Schär",
+   "Leo Shahar",
+   "Aladji Bamba"
+  ],
+  "substitution_events": [
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Mikey Moore",
+    "out": "Archie Gray",
+    "minute": "68"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Mohammed Kudus",
+    "out": "Mathys Tel",
+    "minute": "68"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Destiny Udogie",
+    "out": "Andrew Robertson",
+    "minute": "68"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Dominic Solanke",
+    "out": "Sandro Tonali",
+    "minute": "75"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Sean Steur",
+    "out": "Nico González",
+    "minute": "71"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Nick Woltemade",
+    "out": "Joseph Willock",
+    "minute": "71"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Jacob Ramsey",
+    "out": "Yoane Wissa",
+    "minute": "82"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Jacob Murphy",
+    "out": "Anthony Elanga",
+    "minute": "82"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Bazoumana Touré",
+    "out": "Harvey Barnes",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Peter Bankes",
+  "attendance": 61025,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

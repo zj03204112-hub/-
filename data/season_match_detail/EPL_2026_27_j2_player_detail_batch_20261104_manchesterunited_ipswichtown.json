@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "epl-2026-27-2026-08-30-manchesterunited-ipswichtown",
+ "date": "2026-08-30",
+ "home": "Manchester United",
+ "away": "Ipswich Town",
+ "score": "5-2",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795432",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795432"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Senne Lammens",
+   "Diogo Dalot",
+   "Harry Maguire",
+   "Lisandro Martínez",
+   "Luke Shaw",
+   "Youri Tielemans",
+   "Kobbie Mainoo",
+   "Bryan Mbeumo",
+   "Bruno Fernandes",
+   "Marcus Rashford",
+   "Matheus Cunha"
+  ],
+  "home_bench": [
+   "Noussair Mazraoui",
+   "Leny Yoro",
+   "Andrey Santos",
+   "Benjamin Sesko",
+   "Patrick Dorgu",
+   "Karl Darlow",
+   "Ayden Heaven",
+   "Joshua Zirkzee",
+   "Shea Lacey"
+  ],
+  "away_starting_xi": [
+   "Kjell Scherpen",
+   "Dara O'Shea",
+   "Issa Diop",
+   "Jacob Greaves",
+   "Leif Davis",
+   "Marcelino Núñez",
+   "Sasa Lukic",
+   "Abdul Fatawu",
+   "Julio Enciso",
+   "Daizen Maeda",
+   "Emersonn"
+  ],
+  "away_bench": [
+   "Chuba Akpom",
+   "Exequiel Palacios",
+   "Abdoul Ouattara",
+   "Darnell Furlong",
+   "Kasey McAteer",
+   "Christian Walton",
+   "Cédric Kipré",
+   "Jack Clarke",
+   "Sindre Walle Egeli"
+  ],
+  "substitution_events": [
+   {
+    "team": "Manchester United",
+    "in": "Noussair Mazraoui",
+    "out": "Luke Shaw",
+    "minute": "73"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Leny Yoro",
+    "out": "Diogo Dalot",
+    "minute": "74"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Andrey Santos",
+    "out": "Kobbie Mainoo",
+    "minute": "80"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Patrick Dorgu",
+    "out": "Marcus Rashford",
+    "minute": "80"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Benjamin Sesko",
+    "out": "Matheus Cunha",
+    "minute": "80"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Chuba Akpom",
+    "out": "Emersonn",
+    "minute": "46"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Exequiel Palacios",
+    "out": "Marcelino Núñez",
+    "minute": "62"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Darnell Furlong",
+    "out": "Daizen Maeda",
+    "minute": "73"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Abdoul Ouattara",
+    "out": "Sasa Lukic",
+    "minute": "73"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Kasey McAteer",
+    "out": "Abdul Fatawu",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 2
+  },
+  "provider_score": "5-2",
+  "score_consistent_with_events": true,
+  "referee": "Craig Pawson",
+  "attendance": 74148,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

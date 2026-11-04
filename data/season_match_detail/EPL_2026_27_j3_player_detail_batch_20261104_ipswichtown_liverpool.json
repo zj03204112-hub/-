@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "epl-2026-27-2026-09-04-ipswichtown-liverpool",
+ "date": "2026-09-04",
+ "home": "Ipswich Town",
+ "away": "Liverpool",
+ "score": "0-2",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5795441",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795441"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kjell Scherpen",
+   "Dara O'Shea",
+   "Issa Diop",
+   "Jacob Greaves",
+   "Leif Davis",
+   "Saša Lukić",
+   "Exequiel Palacios",
+   "Abdul Fatawu",
+   "Julio Enciso",
+   "Daizen Maeda",
+   "Emersonn"
+  ],
+  "home_bench": [
+   "Jack Clarke",
+   "Zian Flemming",
+   "Abdoul Ouattara",
+   "Kasey McAteer",
+   "Christian Walton",
+   "Cédric Kipré",
+   "Darnell Furlong",
+   "Florentino",
+   "Marcelino Núñez"
+  ],
+  "away_starting_xi": [
+   "Alisson Becker",
+   "Ronald Araujo",
+   "Jérémy Jacquet",
+   "Virgil van Dijk",
+   "Miloš Kerkez",
+   "Dominik Szoboszlai",
+   "Alexis Mac Allister",
+   "Víctor Muñoz",
+   "Florian Wirtz",
+   "Cody Gakpo",
+   "Alexander Isak"
+  ],
+  "away_bench": [
+   "Ryan Gravenberch",
+   "Bradley Barcola",
+   "Trey Nyoni",
+   "Lewis Koumas",
+   "Giorgi Mamardashvili",
+   "Jeremie Frimpong",
+   "Wataru Endo",
+   "Konstantinos Tsimikas",
+   "Rio Ngumoha"
+  ],
+  "substitution_events": [
+   {
+    "team": "Ipswich Town",
+    "in": "Jack Clarke",
+    "out": "Daizen Maeda",
+    "minute": "66"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Zian Flemming",
+    "out": "Emersonn",
+    "minute": "66"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Abdoul Ouattara",
+    "out": "Exequiel Palacios",
+    "minute": "78"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Kasey McAteer",
+    "out": "Abdul Fatawu",
+    "minute": "79"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Ryan Gravenberch",
+    "out": "Alexander Isak",
+    "minute": "64"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Bradley Barcola",
+    "out": "Víctor Muñoz",
+    "minute": "64"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Trey Nyoni",
+    "out": "Alexis Mac Allister",
+    "minute": "84"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Lewis Koumas",
+    "out": "Florian Wirtz",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Darren England",
+  "attendance": 30019,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

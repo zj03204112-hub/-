@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "epl-2026-27-2026-10-31-astonvilla-fulham",
+ "date": "2026-10-31",
+ "home": "Aston Villa",
+ "away": "Fulham",
+ "score": "1-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795496",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795496"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Zion Suzuki",
+   "Matty Cash",
+   "Victor Nilsson Lindelöf",
+   "Pau Torres",
+   "Ian Maatsen",
+   "Boubacar Kamara",
+   "Leon Goretzka",
+   "Alysson Edward",
+   "John McGinn",
+   "Johan Manzambi",
+   "Nicolas Jackson"
+  ],
+  "home_bench": [
+   "João Gomes",
+   "Emiliano Buendía",
+   "Ibrahim Mbaye",
+   "Ross Barkley",
+   "Alejandro Garnacho",
+   "Marco Bizot",
+   "Taylor Harwood-Bellis",
+   "Tyrone Mings",
+   "Brian Madjo"
+  ],
+  "away_starting_xi": [
+   "Bernd Leno",
+   "Timothy Castagne",
+   "David Affengruber",
+   "Calvin Bassey",
+   "Antonee Robinson",
+   "Sander Berge",
+   "Shea Charles",
+   "Oscar Bobb",
+   "Joshua King",
+   "Alex Iwobi",
+   "Gonzalo García"
+  ],
+  "away_bench": [
+   "Tom Cairney",
+   "Kenny Tete",
+   "César Palacios",
+   "Hugo Larsson",
+   "Rodrigo Muniz",
+   "Benjamin Lecomte",
+   "Joachim Andersen",
+   "Manuel Ángel",
+   "Kevin"
+  ],
+  "substitution_events": [
+   {
+    "team": "Aston Villa",
+    "in": "Ibrahim Mbaye",
+    "out": "Leon Goretzka",
+    "minute": "66"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Emiliano Buendía",
+    "out": "Alysson Edward",
+    "minute": "66"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "João Gomes",
+    "out": "Johan Manzambi",
+    "minute": "66"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Ross Barkley",
+    "out": "Boubacar Kamara",
+    "minute": "79"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Alejandro Garnacho",
+    "out": "John McGinn",
+    "minute": "87"
+   },
+   {
+    "team": "Fulham",
+    "in": "Tom Cairney",
+    "out": "Alex Iwobi",
+    "minute": "75"
+   },
+   {
+    "team": "Fulham",
+    "in": "Kenny Tete",
+    "out": "Oscar Bobb",
+    "minute": "79"
+   },
+   {
+    "team": "Fulham",
+    "in": "César Palacios",
+    "out": "Joshua King",
+    "minute": "79"
+   },
+   {
+    "team": "Fulham",
+    "in": "Rodrigo Muniz",
+    "out": "Gonzalo García",
+    "minute": "87"
+   },
+   {
+    "team": "Fulham",
+    "in": "Hugo Larsson",
+    "out": "Timothy Castagne",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Samuel Barrott",
+  "attendance": 34649,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

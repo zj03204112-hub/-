@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "epl-2026-27-2026-10-12-coventrycity-newcastleunited",
+ "date": "2026-10-12",
+ "home": "Coventry City",
+ "away": "Newcastle United",
+ "score": "4-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795468",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795468"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Carl Rushworth",
+   "Milan van Ewijk",
+   "Bobby Thomas",
+   "Ethan Pinnock",
+   "Jay Dasilva",
+   "Caleb Yirenkyi",
+   "Matt Grimes",
+   "Brandon Thomas-Asante",
+   "Jack Rudoni",
+   "Ephron Mason-Clark",
+   "Sidiki Cherif"
+  ],
+  "home_bench": [
+   "Tatsuhiro Sakamoto",
+   "Frank Onyeka",
+   "Ellis Simms",
+   "Stephen Mfuni",
+   "Victor Torp",
+   "Daniel Bentley",
+   "Joel Latibeaudiere",
+   "Yann Gboho",
+   "Gustavo Hamer"
+  ],
+  "away_starting_xi": [
+   "Lukás Hornícek",
+   "Lewis Miley",
+   "Malick Thiaw",
+   "Sven Botman",
+   "Lewis Hall",
+   "Nico González",
+   "Joseph Willock",
+   "Jacob Murphy",
+   "Yoane Wissa",
+   "Harvey Barnes",
+   "Matias Fernandez-Pardo"
+  ],
+  "away_bench": [
+   "Amar Dedić",
+   "Joelinton",
+   "Bazoumana Touré",
+   "William Osula",
+   "Daniel Burn",
+   "Nick Pope",
+   "Fabian Schär",
+   "Aladji Bamba",
+   "Sean Steur"
+  ],
+  "substitution_events": [
+   {
+    "team": "Coventry City",
+    "in": "Tatsuhiro Sakamoto",
+    "out": "Ephron Mason-Clark",
+    "minute": "61"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Frank Onyeka",
+    "out": "Caleb Yirenkyi",
+    "minute": "78"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Ellis Simms",
+    "out": "Sidiki Cherif",
+    "minute": "78"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Victor Torp",
+    "out": "Jack Rudoni",
+    "minute": "83"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Stephen Mfuni",
+    "out": "Matt Grimes",
+    "minute": "83"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Amar Dedić",
+    "out": "Lewis Miley",
+    "minute": "59"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Joelinton",
+    "out": "Joseph Willock",
+    "minute": "59"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Bazoumana Touré",
+    "out": "Jacob Murphy",
+    "minute": "59"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "William Osula",
+    "out": "Yoane Wissa",
+    "minute": "78"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Daniel Burn",
+    "out": "Bazoumana Touré",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 1
+  },
+  "provider_score": "4-1",
+  "score_consistent_with_events": true,
+  "referee": "John Brooks",
+  "attendance": 30811,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

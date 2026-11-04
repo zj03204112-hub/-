@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "epl-2026-27-2026-08-30-leedsunited-brentford",
+ "date": "2026-08-30",
+ "home": "Leeds United",
+ "away": "Brentford",
+ "score": "1-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795430",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795430"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "James Trafford",
+   "Joe Rodon",
+   "Jaka Bijol",
+   "Tarik Muharemovic",
+   "Jayden Bogle",
+   "Ethan Ampadu",
+   "Anton Stach",
+   "James Justin",
+   "Brenden Aaronson",
+   "Noah Okafor",
+   "Dominic Calvert-Lewin"
+  ],
+  "home_bench": [
+   "Nico Elvedi",
+   "Ao Tanaka",
+   "Harry Wilson",
+   "Daniel James",
+   "Lukas Nmecha",
+   "Alex Cairns",
+   "Gabriel Gudmundsson",
+   "Sean Longstaff",
+   "Wilfried Gnonto"
+  ],
+  "away_starting_xi": [
+   "Caoimhín Kelleher",
+   "Michael Kayode",
+   "Kristoffer Ajer",
+   "Nathan Collins",
+   "Keane Lewis-Potter",
+   "Mamadou Sangaré",
+   "Vitaly Janelt",
+   "Jaidon Anthony",
+   "Mikkel Damsgaard",
+   "Kevin Schade",
+   "Igor Thiago"
+  ],
+  "away_bench": [
+   "Dango Ouattara",
+   "Yehor Yarmoliuk",
+   "Aaron Hickey",
+   "Rico Henry",
+   "Callum Wilson",
+   "Hákon Rafn Valdimarsson",
+   "Jannik Schuster",
+   "Malick Diouf",
+   "Fábio Carvalho"
+  ],
+  "substitution_events": [
+   {
+    "team": "Leeds United",
+    "in": "Nico Elvedi",
+    "out": "Joe Rodon",
+    "minute": "34"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Harry Wilson",
+    "out": "Brenden Aaronson",
+    "minute": "46"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Ao Tanaka",
+    "out": "Jaka Bijol",
+    "minute": "46"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Lukas Nmecha",
+    "out": "Noah Okafor",
+    "minute": "68"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Daniel James",
+    "out": "Jayden Bogle",
+    "minute": "68"
+   },
+   {
+    "team": "Brentford",
+    "in": "Dango Ouattara",
+    "out": "Jaidon Anthony",
+    "minute": "61"
+   },
+   {
+    "team": "Brentford",
+    "in": "Yehor Yarmoliuk",
+    "out": "Mikkel Damsgaard",
+    "minute": "69"
+   },
+   {
+    "team": "Brentford",
+    "in": "Callum Wilson",
+    "out": "Michael Kayode",
+    "minute": "88"
+   },
+   {
+    "team": "Brentford",
+    "in": "Rico Henry",
+    "out": "Keane Lewis-Potter",
+    "minute": "88"
+   },
+   {
+    "team": "Brentford",
+    "in": "Aaron Hickey",
+    "out": "Kevin Schade",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Tony Harrington",
+  "attendance": 35974,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

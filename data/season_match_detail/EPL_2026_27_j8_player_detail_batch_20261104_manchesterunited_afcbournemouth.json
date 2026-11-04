@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "epl-2026-27-2026-10-25-manchesterunited-afcbournemouth",
+ "date": "2026-10-25",
+ "home": "Manchester United",
+ "away": "AFC Bournemouth",
+ "score": "0-3",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5795493",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795493"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Senne Lammens",
+   "Leny Yoro",
+   "Harry Maguire",
+   "Ayden Heaven",
+   "Diogo Dalot",
+   "Andrey Santos",
+   "Carlos Baleba",
+   "Amad Diallo",
+   "Youri Tielemans",
+   "Mason Mount",
+   "Bryan Mbeumo"
+  ],
+  "home_bench": [
+   "Matheus Cunha",
+   "Lisandro Martínez",
+   "Joshua Zirkzee",
+   "Shea Lacey",
+   "Karl Darlow",
+   "Matthijs de Ligt",
+   "Noussair Mazraoui",
+   "Bruno Fernandes",
+   "Tyler Fletcher"
+  ],
+  "away_starting_xi": [
+   "Djordje Petrović",
+   "Adam Smith",
+   "James Hill",
+   "António Silva",
+   "Adrien Truffert",
+   "Tyler Adams",
+   "Lewis Cook",
+   "Rayan",
+   "Justin Kluivert",
+   "Marcus Tavernier",
+   "Evanilson"
+  ],
+  "away_bench": [
+   "Ben Gannon-Doak",
+   "Ryan Christie",
+   "Bafodé Diakité",
+   "Junior Kroupi",
+   "Amine Adli",
+   "Michele Di Gregorio",
+   "Julio Soler",
+   "Álvaro Rodriguez",
+   "David Brooks"
+  ],
+  "substitution_events": [
+   {
+    "team": "Manchester United",
+    "in": "Matheus Cunha",
+    "out": "Youri Tielemans",
+    "minute": "46"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Lisandro Martínez",
+    "out": "Ayden Heaven",
+    "minute": "65"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Joshua Zirkzee",
+    "out": "Carlos Baleba",
+    "minute": "72"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Shea Lacey",
+    "out": "Amad Diallo",
+    "minute": "78"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Ben Gannon-Doak",
+    "out": "Justin Kluivert",
+    "minute": "63"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Ryan Christie",
+    "out": "Lewis Cook",
+    "minute": "75"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Amine Adli",
+    "out": "Marcus Tavernier",
+    "minute": "87"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Bafodé Diakité",
+    "out": "Adam Smith",
+    "minute": "87"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Junior Kroupi",
+    "out": "Evanilson",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 3
+  },
+  "provider_score": "0-3",
+  "score_consistent_with_events": true,
+  "referee": "Jarred Gillett",
+  "attendance": 74142,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

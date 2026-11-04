@@ -1,0 +1,117 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "epl-2026-27-2026-09-20-manchestercity-sunderland",
+ "date": "2026-09-20",
+ "home": "Manchester City",
+ "away": "Sunderland",
+ "score": "5-3",
+ "halftime_score": "3-2",
+ "official_match_url": "https://www.fotmob.com/matches/5795461",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795461"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Gianluigi Donnarumma",
+   "Matheus Nunes",
+   "Rúben Dias",
+   "Marc Guéhi",
+   "Joško Gvardiol",
+   "Enzo Fernández",
+   "Elliot Anderson",
+   "Iliman Ndiaye",
+   "Rayan Cherki",
+   "Antoine Semenyo",
+   "Erling Haaland"
+  ],
+  "home_bench": [
+   "Jérémy Doku",
+   "Nico O'Reilly",
+   "Gerónimo Rulli",
+   "Abdukodir Khusanov",
+   "Rayan Aït-Nouri",
+   "Rico Lewis",
+   "Ayyoub Bouaddi",
+   "Mateo Kovačić",
+   "Allan"
+  ],
+  "away_starting_xi": [
+   "Robin Roefs",
+   "Nordi Mukiele",
+   "Kevin Danso",
+   "Daniel Ballard",
+   "Dayann Méthalie",
+   "Granit Xhaka",
+   "Noah Sadiki",
+   "Thomas Meunier",
+   "Enzo Le Fée",
+   "Nilson Angulo",
+   "Brian Brobbey"
+  ],
+  "away_bench": [
+   "Malick Fofana",
+   "Wilson Isidor",
+   "Trai Hume",
+   "Melker Ellborg",
+   "Luke O'Nien",
+   "Omar Alderete",
+   "Jules Ahoka",
+   "Chemsdine Talbi",
+   "Chris Rigg"
+  ],
+  "substitution_events": [
+   {
+    "team": "Manchester City",
+    "in": "Jérémy Doku",
+    "out": "Iliman Ndiaye",
+    "minute": "75"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Nico O'Reilly",
+    "out": "Rayan Cherki",
+    "minute": "85"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Malick Fofana",
+    "out": "Nilson Angulo",
+    "minute": "60"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Wilson Isidor",
+    "out": "Noah Sadiki",
+    "minute": "68"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Trai Hume",
+    "out": "Thomas Meunier",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 3
+  },
+  "provider_score": "5-3",
+  "score_consistent_with_events": true,
+  "referee": "Robert Jones",
+  "attendance": 60312,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

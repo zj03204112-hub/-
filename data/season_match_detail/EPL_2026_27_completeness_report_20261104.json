@@ -1,0 +1,53 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026/27",
+ "scheduled_fixtures_scanned": 120,
+ "completed_fixtures": 90,
+ "upcoming_fixtures": 30,
+ "fixtures_with_player_detail": 90,
+ "player_rows": 3599,
+ "starting_xi_rows": 1980,
+ "substitution_rows": 791,
+ "event_rows": 635,
+ "events_by_type": {
+  "goal": 220,
+  "yellow_card": 374,
+  "own_goal": 12,
+  "red_card": 10,
+  "penalty_goal": 11,
+  "second_yellow": 8
+ },
+ "shot_rows": 2475,
+ "shot_goals": 243,
+ "event_goals": 243,
+ "match_meta_rows": 90,
+ "meta_missing": {
+  "ManagerHome": 0,
+  "ManagerAway": 0,
+  "Venue": 0,
+  "Referee": 0
+ },
+ "xg_shots_with_value": 2463,
+ "xg_total": 262.19,
+ "score_crosscheck": {
+  "reference": "https://www.football-data.co.uk/mmz4281/2627/E0.csv",
+  "rows": 90,
+  "matched": 90,
+  "mismatches": 0,
+  "result": "all matched scorelines agree"
+ },
+ "sources": {
+  "fixtures_lineups_events_shots": "FotMob public match API",
+  "scores_crosscheck": "football-data.co.uk E0 season export (independent provider)"
+ },
+ "known_gaps": [
+  "Lineups, cards and shots come from a single provider (FotMob); no official Premier League lineup cross-check has been performed.",
+  "Assists are part of the same provider payload and are labelled through AssistSource.",
+  "30 fixtures are scheduled but not yet played, so they have no detail rows."
+ ],
+ "pipeline": [
+  "data_pipeline/collect_epl_fotmob.py",
+  "data_pipeline/crosscheck_epl_scores_football_data.py"
+ ]
+}

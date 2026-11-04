@@ -1,0 +1,129 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "epl-2026-27-2026-10-31-coventrycity-sunderland",
+ "date": "2026-10-31",
+ "home": "Coventry City",
+ "away": "Sunderland",
+ "score": "3-1",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795499",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795499"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Carl Rushworth",
+   "Milan van Ewijk",
+   "Stephen Mfuni",
+   "Ethan Pinnock",
+   "Jay Dasilva",
+   "Caleb Yirenkyi",
+   "Victor Torp",
+   "Tatsuhiro Sakamoto",
+   "Jack Rudoni",
+   "Yann Gboho",
+   "Taiwo Awoniyi"
+  ],
+  "home_bench": [
+   "Brandon Thomas-Asante",
+   "Sidiki Cherif",
+   "Matt Grimes",
+   "Daniel Bentley",
+   "Joel Latibeaudiere",
+   "Ellis Simms",
+   "Ephron Mason-Clark",
+   "Gustavo Hamer",
+   "Kaine Kesler-Hayden"
+  ],
+  "away_starting_xi": [
+   "Robin Roefs",
+   "Trai Hume",
+   "Luke O'Nien",
+   "Omar Alderete",
+   "Reinildo",
+   "Noah Sadiki",
+   "Granit Xhaka",
+   "Chris Rigg",
+   "Enzo Le Fée",
+   "Nilson Angulo",
+   "Brian Brobbey"
+  ],
+  "away_bench": [
+   "Chemsdine Talbi",
+   "Wilson Isidor",
+   "Thomas Meunier",
+   "Malick Fofana",
+   "Melker Ellborg",
+   "Kevin Danso",
+   "Dayann Méthalie",
+   "Jules Ahoka",
+   "Jocelin Ta Bi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Coventry City",
+    "in": "Sidiki Cherif",
+    "out": "Taiwo Awoniyi",
+    "minute": "72"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Brandon Thomas-Asante",
+    "out": "Yann Gboho",
+    "minute": "72"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Matt Grimes",
+    "out": "Victor Torp",
+    "minute": "83"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Wilson Isidor",
+    "out": "Nilson Angulo",
+    "minute": "57"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Chemsdine Talbi",
+    "out": "Chris Rigg",
+    "minute": "57"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Thomas Meunier",
+    "out": "Trai Hume",
+    "minute": "75"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Malick Fofana",
+    "out": "Noah Sadiki",
+    "minute": "75"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 1
+  },
+  "provider_score": "3-1",
+  "score_consistent_with_events": true,
+  "referee": "Simon Hooper",
+  "attendance": 31455,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

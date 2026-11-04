@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "epl-2026-27-2026-10-10-astonvilla-brentford",
+ "date": "2026-10-10",
+ "home": "Aston Villa",
+ "away": "Brentford",
+ "score": "2-2",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795466",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795466"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Zion Suzuki",
+   "Matty Cash",
+   "Victor Nilsson Lindelöf",
+   "Tyrone Mings",
+   "Matteo Ruggeri",
+   "Boubacar Kamara",
+   "João Gomes",
+   "John McGinn",
+   "Emiliano Buendía",
+   "Johan Manzambi",
+   "Nicolas Jackson"
+  ],
+  "home_bench": [
+   "Aaron Wan-Bissaka",
+   "Ibrahim Mbaye",
+   "Ross Barkley",
+   "Alysson Edward",
+   "Marco Bizot",
+   "Pau Torres",
+   "Lamare Bogarde",
+   "Alejandro Garnacho",
+   "Tammy Abraham"
+  ],
+  "away_starting_xi": [
+   "Caoimhín Kelleher",
+   "Michael Kayode",
+   "Kristoffer Ajer",
+   "Jannik Schuster",
+   "Malick Diouf",
+   "Yehor Yarmoliuk",
+   "Vitaly Janelt",
+   "Jaidon Anthony",
+   "Keane Lewis-Potter",
+   "Kevin Schade",
+   "Igor Thiago"
+  ],
+  "away_bench": [
+   "Aaron Hickey",
+   "Mamadou Sangaré",
+   "Mathias Jensen",
+   "Dango Ouattara",
+   "Callum Wilson",
+   "Hákon Rafn Valdimarsson",
+   "Benjamin Fredrick",
+   "Sepp van den Berg",
+   "Fábio Carvalho"
+  ],
+  "substitution_events": [
+   {
+    "team": "Aston Villa",
+    "in": "Aaron Wan-Bissaka",
+    "out": "Matteo Ruggeri",
+    "minute": "46"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Ibrahim Mbaye",
+    "out": "Emiliano Buendía",
+    "minute": "64"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Ross Barkley",
+    "out": "João Gomes",
+    "minute": "86"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Alysson Edward",
+    "out": "Johan Manzambi",
+    "minute": "86"
+   },
+   {
+    "team": "Brentford",
+    "in": "Aaron Hickey",
+    "out": "Jannik Schuster",
+    "minute": "46"
+   },
+   {
+    "team": "Brentford",
+    "in": "Mamadou Sangaré",
+    "out": "Kevin Schade",
+    "minute": "52"
+   },
+   {
+    "team": "Brentford",
+    "in": "Dango Ouattara",
+    "out": "Keane Lewis-Potter",
+    "minute": "67"
+   },
+   {
+    "team": "Brentford",
+    "in": "Mathias Jensen",
+    "out": "Yehor Yarmoliuk",
+    "minute": "67"
+   },
+   {
+    "team": "Brentford",
+    "in": "Callum Wilson",
+    "out": "Jaidon Anthony",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Craig Pawson",
+  "attendance": 36636,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

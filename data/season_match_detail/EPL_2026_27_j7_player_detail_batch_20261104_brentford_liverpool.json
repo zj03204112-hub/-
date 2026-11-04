@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "epl-2026-27-2026-10-17-brentford-liverpool",
+ "date": "2026-10-17",
+ "home": "Brentford",
+ "away": "Liverpool",
+ "score": "1-2",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795476",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795476"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Caoimhín Kelleher",
+   "Michael Kayode",
+   "Sepp van den Berg",
+   "Kristoffer Ajer",
+   "Keane Lewis-Potter",
+   "Yehor Yarmoliuk",
+   "Vitaly Janelt",
+   "Dango Ouattara",
+   "Mathias Jensen",
+   "Jaidon Anthony",
+   "Igor Thiago"
+  ],
+  "home_bench": [
+   "Mamadou Sangaré",
+   "Kevin Schade",
+   "Aaron Hickey",
+   "Malick Diouf",
+   "Mikkel Damsgaard",
+   "Hákon Rafn Valdimarsson",
+   "Nathan Collins",
+   "Fábio Carvalho",
+   "Callum Wilson"
+  ],
+  "away_starting_xi": [
+   "Alisson Becker",
+   "Ronald Araujo",
+   "Jérémy Jacquet",
+   "Virgil van Dijk",
+   "Miloš Kerkez",
+   "Alexis Mac Allister",
+   "Dominik Szoboszlai",
+   "Víctor Muñoz",
+   "Florian Wirtz",
+   "Bradley Barcola",
+   "Alexander Isak"
+  ],
+  "away_bench": [
+   "Trey Nyoni",
+   "Jeremie Frimpong",
+   "Rio Ngumoha",
+   "Joseph Gomez",
+   "Lewis Koumas",
+   "Giorgi Mamardashvili",
+   "Konstantinos Tsimikas",
+   "Wataru Endo",
+   "Cody Gakpo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Brentford",
+    "in": "Kevin Schade",
+    "out": "Dango Ouattara",
+    "minute": "46"
+   },
+   {
+    "team": "Brentford",
+    "in": "Mamadou Sangaré",
+    "out": "Mathias Jensen",
+    "minute": "46"
+   },
+   {
+    "team": "Brentford",
+    "in": "Aaron Hickey",
+    "out": "Sepp van den Berg",
+    "minute": "71"
+   },
+   {
+    "team": "Brentford",
+    "in": "Malick Diouf",
+    "out": "Keane Lewis-Potter",
+    "minute": "77"
+   },
+   {
+    "team": "Brentford",
+    "in": "Mikkel Damsgaard",
+    "out": "Jaidon Anthony",
+    "minute": "77"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Trey Nyoni",
+    "out": "Dominik Szoboszlai",
+    "minute": "32"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Jeremie Frimpong",
+    "out": "Ronald Araujo",
+    "minute": "46"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Rio Ngumoha",
+    "out": "Jeremie Frimpong",
+    "minute": "52"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Lewis Koumas",
+    "out": "Alexander Isak",
+    "minute": "79"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Joseph Gomez",
+    "out": "Víctor Muñoz",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "John Brooks",
+  "attendance": 17232,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "epl-2026-27-2026-09-05-fulham-crystalpalace",
+ "date": "2026-09-05",
+ "home": "Fulham",
+ "away": "Crystal Palace",
+ "score": "2-3",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795439",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795439"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bernd Leno",
+   "Timothy Castagne",
+   "Joachim Andersen",
+   "Calvin Bassey",
+   "Antonee Robinson",
+   "Shea Charles",
+   "Alex Iwobi",
+   "Oscar Bobb",
+   "Joshua King",
+   "César Palacios",
+   "Gonzalo García"
+  ],
+  "home_bench": [
+   "Sander Berge",
+   "Ryan Sessegnon",
+   "Emile Smith Rowe",
+   "Hugo Larsson",
+   "Rodrigo Muniz",
+   "Benjamin Lecomte",
+   "David Affengruber",
+   "Manuel Ángel",
+   "Kevin"
+  ],
+  "away_starting_xi": [
+   "Dean Henderson",
+   "Chris Richards",
+   "Axel Disasi",
+   "Jaydee Canvot",
+   "Anan Khalaili",
+   "Quinten Timber",
+   "Adam Wharton",
+   "Tyrick Mitchell",
+   "Daichi Kamada",
+   "Yéremi Pino",
+   "Edward Nketiah"
+  ],
+  "away_bench": [
+   "Jørgen Strand Larsen",
+   "Ben Chilwell",
+   "Will Hughes",
+   "Darío Osorio",
+   "Óscar Mingueza",
+   "Walter Benítez",
+   "Takehiro Tomiyasu",
+   "Cheick Oumar Doucouré",
+   "Zavier Gozo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Fulham",
+    "in": "Sander Berge",
+    "out": "César Palacios",
+    "minute": "62"
+   },
+   {
+    "team": "Fulham",
+    "in": "Ryan Sessegnon",
+    "out": "Antonee Robinson",
+    "minute": "79"
+   },
+   {
+    "team": "Fulham",
+    "in": "Hugo Larsson",
+    "out": "Oscar Bobb",
+    "minute": "79"
+   },
+   {
+    "team": "Fulham",
+    "in": "Emile Smith Rowe",
+    "out": "Shea Charles",
+    "minute": "79"
+   },
+   {
+    "team": "Fulham",
+    "in": "Rodrigo Muniz",
+    "out": "Alex Iwobi",
+    "minute": "83"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Jørgen Strand Larsen",
+    "out": "Edward Nketiah",
+    "minute": "46"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Will Hughes",
+    "out": "Quinten Timber",
+    "minute": "74"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Ben Chilwell",
+    "out": "Tyrick Mitchell",
+    "minute": "74"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Óscar Mingueza",
+    "out": "Yéremi Pino",
+    "minute": "89"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Darío Osorio",
+    "out": "Daichi Kamada",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "Samuel Barrott",
+  "attendance": 27014,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

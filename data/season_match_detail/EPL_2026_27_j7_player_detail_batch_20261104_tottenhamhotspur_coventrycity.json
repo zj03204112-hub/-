@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "epl-2026-27-2026-10-19-tottenhamhotspur-coventrycity",
+ "date": "2026-10-19",
+ "home": "Tottenham Hotspur",
+ "away": "Coventry City",
+ "score": "3-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795484",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795484"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Antonín Kinský",
+   "Jan Paul van Hecke",
+   "Tosin Adarabioyo",
+   "Micky van de Ven",
+   "Andrew Robertson",
+   "Sandro Tonali",
+   "Archie Gray",
+   "James Maddison",
+   "Mohammed Kudus",
+   "Dominic Solanke",
+   "Omar Marmoush"
+  ],
+  "home_bench": [
+   "Ben Davies",
+   "Conor Gallagher",
+   "Mateus Fernandes",
+   "Dejan Kulusevski",
+   "Mathys Tel",
+   "Martin Dúbravka",
+   "Marcos Senesi",
+   "Callum Olusesi",
+   "Luca Williams-Barnett"
+  ],
+  "away_starting_xi": [
+   "Carl Rushworth",
+   "Milan van Ewijk",
+   "Bobby Thomas",
+   "Ethan Pinnock",
+   "Jay Dasilva",
+   "Caleb Yirenkyi",
+   "Matt Grimes",
+   "Tatsuhiro Sakamoto",
+   "Jack Rudoni",
+   "Brandon Thomas-Asante",
+   "Sidiki Cherif"
+  ],
+  "away_bench": [
+   "Frank Onyeka",
+   "Taiwo Awoniyi",
+   "Ephron Mason-Clark",
+   "Gustavo Hamer",
+   "Kaine Kesler-Hayden",
+   "Daniel Bentley",
+   "Stephen Mfuni",
+   "Victor Torp",
+   "Ellis Simms"
+  ],
+  "substitution_events": [
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Ben Davies",
+    "out": "Andrew Robertson",
+    "minute": "69"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Conor Gallagher",
+    "out": "James Maddison",
+    "minute": "69"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Mateus Fernandes",
+    "out": "Tosin Adarabioyo",
+    "minute": "71"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Dejan Kulusevski",
+    "out": "Mohammed Kudus",
+    "minute": "87"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Mathys Tel",
+    "out": "Omar Marmoush",
+    "minute": "87"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Taiwo Awoniyi",
+    "out": "Sidiki Cherif",
+    "minute": "60"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Frank Onyeka",
+    "out": "Caleb Yirenkyi",
+    "minute": "60"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Ephron Mason-Clark",
+    "out": "Brandon Thomas-Asante",
+    "minute": "78"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Gustavo Hamer",
+    "out": "Tatsuhiro Sakamoto",
+    "minute": "78"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Kaine Kesler-Hayden",
+    "out": "Jack Rudoni",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 1
+  },
+  "provider_score": "3-1",
+  "score_consistent_with_events": true,
+  "referee": "Andy Madley",
+  "attendance": 60913,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

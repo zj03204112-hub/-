@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "epl-2026-27-2026-10-31-manchestercity-brightonhovealbion",
+ "date": "2026-10-31",
+ "home": "Manchester City",
+ "away": "Brighton & Hove Albion",
+ "score": "0-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795502",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795502"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Gianluigi Donnarumma",
+   "Matheus Nunes",
+   "Abdukodir Khusanov",
+   "Rúben Dias",
+   "Joško Gvardiol",
+   "Ayyoub Bouaddi",
+   "Elliot Anderson",
+   "Iliman Ndiaye",
+   "Enzo Fernández",
+   "Jérémy Doku",
+   "Erling Haaland"
+  ],
+  "home_bench": [
+   "Rayan Cherki",
+   "Nico O'Reilly",
+   "Phil Foden",
+   "Allan",
+   "Gerónimo Rulli",
+   "Marc Guéhi",
+   "Rico Lewis",
+   "Vitor Reis",
+   "Mateo Kovačić"
+  ],
+  "away_starting_xi": [
+   "Bart Verbruggen",
+   "Costinha",
+   "Luka Vušković",
+   "Lewis Dunk",
+   "Olivier Boscagli",
+   "Pascal Groß",
+   "Chema Andrés",
+   "Diego Gómez",
+   "Yasin Ayari",
+   "Maxim De Cuyper",
+   "Charalampos Kostoulas"
+  ],
+  "away_bench": [
+   "Jaouen Hadjam",
+   "Mats Wieffer",
+   "Jack Hinshelwood",
+   "Malick Junior Yalcouyé",
+   "Georginio Rutter",
+   "Jason Steele",
+   "Michael Svoboda",
+   "Matthew O'Riley",
+   "Yankuba Minteh"
+  ],
+  "substitution_events": [
+   {
+    "team": "Manchester City",
+    "in": "Rayan Cherki",
+    "out": "Ayyoub Bouaddi",
+    "minute": "55"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Nico O'Reilly",
+    "out": "Enzo Fernández",
+    "minute": "64"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Allan",
+    "out": "Iliman Ndiaye",
+    "minute": "79"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Phil Foden",
+    "out": "Joško Gvardiol",
+    "minute": "79"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Jaouen Hadjam",
+    "out": "Olivier Boscagli",
+    "minute": "64"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Mats Wieffer",
+    "out": "Chema Andrés",
+    "minute": "64"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Malick Junior Yalcouyé",
+    "out": "Maxim De Cuyper",
+    "minute": "72"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Jack Hinshelwood",
+    "out": "Charalampos Kostoulas",
+    "minute": "72"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Georginio Rutter",
+    "out": "Diego Gómez",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Craig Pawson",
+  "attendance": "",
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

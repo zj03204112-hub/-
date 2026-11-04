@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "epl-2026-27-2026-10-10-manchesterunited-tottenhamhotspur",
+ "date": "2026-10-10",
+ "home": "Manchester United",
+ "away": "Tottenham Hotspur",
+ "score": "1-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795473",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795473"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Senne Lammens",
+   "Leny Yoro",
+   "Harry Maguire",
+   "Lisandro Martínez",
+   "Luke Shaw",
+   "Youri Tielemans",
+   "Kobbie Mainoo",
+   "Amad Diallo",
+   "Bruno Fernandes",
+   "Matheus Cunha",
+   "Bryan Mbeumo"
+  ],
+  "home_bench": [
+   "Diogo Dalot",
+   "Carlos Baleba",
+   "Joshua Zirkzee",
+   "Ayden Heaven",
+   "Marcus Rashford",
+   "Karl Darlow",
+   "Andrey Santos",
+   "Mason Mount",
+   "Shea Lacey"
+  ],
+  "away_starting_xi": [
+   "Antonín Kinský",
+   "Archie Gray",
+   "Jan Paul van Hecke",
+   "Marcos Senesi",
+   "Destiny Udogie",
+   "Lucas Bergvall",
+   "Sandro Tonali",
+   "Mohammed Kudus",
+   "Conor Gallagher",
+   "Sávio",
+   "Dominic Solanke"
+  ],
+  "away_bench": [
+   "Rodrigo Bentancur",
+   "Omar Marmoush",
+   "Micky van de Ven",
+   "James Maddison",
+   "Mateus Fernandes",
+   "Martin Dúbravka",
+   "Ben Davies",
+   "Tosin Adarabioyo",
+   "Mathys Tel"
+  ],
+  "substitution_events": [
+   {
+    "team": "Manchester United",
+    "in": "Joshua Zirkzee",
+    "out": "Amad Diallo",
+    "minute": "59"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Diogo Dalot",
+    "out": "Leny Yoro",
+    "minute": "59"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Carlos Baleba",
+    "out": "Youri Tielemans",
+    "minute": "59"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Ayden Heaven",
+    "out": "Luke Shaw",
+    "minute": "90"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Marcus Rashford",
+    "out": "Matheus Cunha",
+    "minute": "90"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Rodrigo Bentancur",
+    "out": "Lucas Bergvall",
+    "minute": "66"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Omar Marmoush",
+    "out": "Mohammed Kudus",
+    "minute": "66"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "James Maddison",
+    "out": "Conor Gallagher",
+    "minute": "74"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Micky van de Ven",
+    "out": "Destiny Udogie",
+    "minute": "74"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Mateus Fernandes",
+    "out": "Marcos Senesi",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Stuart Attwell",
+  "attendance": 74129,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

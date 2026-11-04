@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "epl-2026-27-2026-10-10-sunderland-brightonhovealbion",
+ "date": "2026-10-10",
+ "home": "Sunderland",
+ "away": "Brighton & Hove Albion",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795474",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795474"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Robin Roefs",
+   "Trai Hume",
+   "Nordi Mukiele",
+   "Kevin Danso",
+   "Reinildo",
+   "Granit Xhaka",
+   "Noah Sadiki",
+   "Thomas Meunier",
+   "Enzo Le Fée",
+   "Nilson Angulo",
+   "Wilson Isidor"
+  ],
+  "home_bench": [
+   "Malick Fofana",
+   "Dayann Méthalie",
+   "Jocelin Ta Bi",
+   "Juan Riquelme Angulo",
+   "Melker Ellborg",
+   "Luke O'Nien",
+   "Omar Alderete",
+   "Chris Rigg",
+   "Chemsdine Talbi"
+  ],
+  "away_starting_xi": [
+   "Bart Verbruggen",
+   "Ferdi Kadıoğlu",
+   "Luka Vušković",
+   "Pascal Struijk",
+   "Olivier Boscagli",
+   "Pascal Groß",
+   "Chema Andrés",
+   "Diego Gómez",
+   "Yasin Ayari",
+   "Maxim De Cuyper",
+   "Charalampos Kostoulas"
+  ],
+  "away_bench": [
+   "Lewis Dunk",
+   "Costinha",
+   "Malick Junior Yalcouyé",
+   "Jaouen Hadjam",
+   "Georginio Rutter",
+   "Jason Steele",
+   "Matthew O'Riley",
+   "Ibrahim Osman",
+   "Promise David"
+  ],
+  "substitution_events": [
+   {
+    "team": "Sunderland",
+    "in": "Malick Fofana",
+    "out": "Thomas Meunier",
+    "minute": "34"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Dayann Méthalie",
+    "out": "Reinildo",
+    "minute": "73"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Jocelin Ta Bi",
+    "out": "Nilson Angulo",
+    "minute": "73"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Juan Riquelme Angulo",
+    "out": "Enzo Le Fée",
+    "minute": "81"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Lewis Dunk",
+    "out": "Charalampos Kostoulas",
+    "minute": "60"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Costinha",
+    "out": "Olivier Boscagli",
+    "minute": "68"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Malick Junior Yalcouyé",
+    "out": "Maxim De Cuyper",
+    "minute": "68"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Jaouen Hadjam",
+    "out": "Diego Gómez",
+    "minute": "88"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Georginio Rutter",
+    "out": "Yasin Ayari",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Thomas Bramall",
+  "attendance": 47196,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

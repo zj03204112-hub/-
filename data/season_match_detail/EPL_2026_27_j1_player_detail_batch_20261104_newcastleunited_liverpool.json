@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "epl-2026-27-2026-08-23-newcastleunited-liverpool",
+ "date": "2026-08-23",
+ "home": "Newcastle United",
+ "away": "Liverpool",
+ "score": "2-2",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795371",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795371"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lukás Hornícek",
+   "Amar Dedic",
+   "Malick Thiaw",
+   "Sven Botman",
+   "Lewis Hall",
+   "Sean Steur",
+   "Lewis Miley",
+   "Anthony Elanga",
+   "Yoane Wissa",
+   "Harvey Barnes",
+   "William Osula"
+  ],
+  "home_bench": [
+   "Jacob Ramsey",
+   "Joseph Willock",
+   "Aladji Bamba",
+   "Jacob Murphy",
+   "Fabian Schär",
+   "Ewen Jaouen",
+   "Leo Shahar",
+   "Bazoumana Touré",
+   "Nick Woltemade"
+  ],
+  "away_starting_xi": [
+   "Alisson Becker",
+   "Jeremie Frimpong",
+   "Jérémy Jacquet",
+   "Virgil van Dijk",
+   "Milos Kerkez",
+   "Ryan Gravenberch",
+   "Dominik Szoboszlai",
+   "Rio Ngumoha",
+   "Florian Wirtz",
+   "Cody Gakpo",
+   "Alexander Isak"
+  ],
+  "away_bench": [
+   "Alexis Mac Allister",
+   "Víctor Muñoz",
+   "Ronald Araujo",
+   "Lewis Koumas",
+   "Giorgi Mamardashvili",
+   "James McConnell",
+   "Konstantinos Tsimikas",
+   "Trey Nyoni",
+   "Wataru Endo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Newcastle United",
+    "in": "Jacob Ramsey",
+    "out": "Sean Steur",
+    "minute": "56"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Joseph Willock",
+    "out": "William Osula",
+    "minute": "56"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Jacob Murphy",
+    "out": "Anthony Elanga",
+    "minute": "76"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Aladji Bamba",
+    "out": "Lewis Miley",
+    "minute": "76"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Fabian Schär",
+    "out": "Yoane Wissa",
+    "minute": "90"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Alexis Mac Allister",
+    "out": "Florian Wirtz",
+    "minute": "63"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Víctor Muñoz",
+    "out": "Rio Ngumoha",
+    "minute": "63"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Ronald Araujo",
+    "out": "Jérémy Jacquet",
+    "minute": "70"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Lewis Koumas",
+    "out": "Ryan Gravenberch",
+    "minute": "78"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Stuart Attwell",
+  "attendance": 52630,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

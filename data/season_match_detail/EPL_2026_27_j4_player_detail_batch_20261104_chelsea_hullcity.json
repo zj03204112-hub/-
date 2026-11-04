@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "epl-2026-27-2026-09-12-chelsea-hullcity",
+ "date": "2026-09-12",
+ "home": "Chelsea",
+ "away": "Hull City",
+ "score": "2-2",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5795447",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795447"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Emiliano Martínez",
+   "Malo Gusto",
+   "Wesley Fofana",
+   "Levi Colwill",
+   "Jorrel Hato",
+   "Reece James",
+   "Roméo Lavia",
+   "Pedro Neto",
+   "Cole Palmer",
+   "Morgan Rogers",
+   "João Pedro"
+  ],
+  "home_bench": [
+   "Pep Chavarría",
+   "Valentín Barco",
+   "Danny Welbeck",
+   "Maxence Lacroix",
+   "Estêvão",
+   "Mike Penders",
+   "Josh Acheampong",
+   "Geovany Quenda",
+   "Jamie Gittens"
+  ],
+  "away_starting_xi": [
+   "Konstantinos Tzolakis",
+   "Semi Ajayi",
+   "John Egan",
+   "Nobel Mendy",
+   "Lewie Coyle",
+   "Matt Crooks",
+   "Regan Slater",
+   "Ryan Giles",
+   "Mohamed Belloumi",
+   "Oli McBurnie",
+   "Elliot Stroud"
+  ],
+  "away_bench": [
+   "Lucas Herrington",
+   "Mohamed-Ali Cho",
+   "Sorba Thomas",
+   "Tim Iroegbunam",
+   "Brooke Norton-Cuffy",
+   "Robinio Vaz",
+   "Dillon Phillips",
+   "Matt Targett",
+   "Lucas Gourna-Douath"
+  ],
+  "substitution_events": [
+   {
+    "team": "Chelsea",
+    "in": "Pep Chavarría",
+    "out": "Jorrel Hato",
+    "minute": "46"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Valentín Barco",
+    "out": "Roméo Lavia",
+    "minute": "70"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Danny Welbeck",
+    "out": "Malo Gusto",
+    "minute": "78"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Maxence Lacroix",
+    "out": "Wesley Fofana",
+    "minute": "86"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Estêvão",
+    "out": "Pedro Neto",
+    "minute": "86"
+   },
+   {
+    "team": "Hull City",
+    "in": "Lucas Herrington",
+    "out": "Nobel Mendy",
+    "minute": "59"
+   },
+   {
+    "team": "Hull City",
+    "in": "Mohamed-Ali Cho",
+    "out": "Mohamed Belloumi",
+    "minute": "60"
+   },
+   {
+    "team": "Hull City",
+    "in": "Sorba Thomas",
+    "out": "Elliot Stroud",
+    "minute": "60"
+   },
+   {
+    "team": "Hull City",
+    "in": "Tim Iroegbunam",
+    "out": "Matt Crooks",
+    "minute": "69"
+   },
+   {
+    "team": "Hull City",
+    "in": "Robinio Vaz",
+    "out": "Oli McBurnie",
+    "minute": "82"
+   },
+   {
+    "team": "Hull City",
+    "in": "Brooke Norton-Cuffy",
+    "out": "Lewie Coyle",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Farai Hallam",
+  "attendance": 39352,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

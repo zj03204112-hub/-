@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "epl-2026-27-2026-08-22-everton-crystalpalace",
+ "date": "2026-08-22",
+ "home": "Everton",
+ "away": "Crystal Palace",
+ "score": "2-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795365",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795365"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jordan Pickford",
+   "Merlin Röhl",
+   "James Tarkowski",
+   "Jarrad Branthwaite",
+   "Vitaliy Mykolenko",
+   "Harrison Armstrong",
+   "Hayden Hackney",
+   "Iliman Ndiaye",
+   "Kiernan Dewsbury-Hall",
+   "Tyrique George",
+   "Thierno Barry"
+  ],
+  "home_bench": [
+   "James Garner",
+   "Beto",
+   "Brennan Johnson",
+   "Charly Alcaraz",
+   "Mark Travers",
+   "Jake O'Brien",
+   "Michael Keane",
+   "Nathan Patterson",
+   "Tyler Dibling"
+  ],
+  "away_starting_xi": [
+   "Dean Henderson",
+   "Jaydee Canvot",
+   "Chris Richards",
+   "Chadi Riad",
+   "Daniel Muñoz",
+   "Adam Wharton",
+   "Daichi Kamada",
+   "Tyrick Mitchell",
+   "Dwight McNeil",
+   "Edward Nketiah",
+   "Jean-Philippe Mateta"
+  ],
+  "away_bench": [
+   "Anan Khalaili",
+   "Yéremi Pino",
+   "Evann Guessand",
+   "Jørgen Strand Larsen",
+   "Takehiro Tomiyasu",
+   "Walter Benítez",
+   "Borna Sosa",
+   "Óscar Mingueza",
+   "Will Hughes"
+  ],
+  "substitution_events": [
+   {
+    "team": "Everton",
+    "in": "Beto",
+    "out": "Thierno Barry",
+    "minute": "79"
+   },
+   {
+    "team": "Everton",
+    "in": "James Garner",
+    "out": "Hayden Hackney",
+    "minute": "79"
+   },
+   {
+    "team": "Everton",
+    "in": "Brennan Johnson",
+    "out": "Tyrique George",
+    "minute": "84"
+   },
+   {
+    "team": "Everton",
+    "in": "Charly Alcaraz",
+    "out": "Kiernan Dewsbury-Hall",
+    "minute": "90"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Anan Khalaili",
+    "out": "Daniel Muñoz",
+    "minute": "55"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Yéremi Pino",
+    "out": "Edward Nketiah",
+    "minute": "55"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Evann Guessand",
+    "out": "Dwight McNeil",
+    "minute": "63"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Jørgen Strand Larsen",
+    "out": "Jean-Philippe Mateta",
+    "minute": "63"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Takehiro Tomiyasu",
+    "out": "Chadi Riad",
+    "minute": "72"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Paul Tierney",
+  "attendance": 51820,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

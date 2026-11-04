@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "epl-2026-27-2026-09-19-everton-ipswichtown",
+ "date": "2026-09-19",
+ "home": "Everton",
+ "away": "Ipswich Town",
+ "score": "1-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795458",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795458"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jordan Pickford",
+   "Ainsley Maitland-Niles",
+   "James Tarkowski",
+   "Jarrad Branthwaite",
+   "Vitaliy Mykolenko",
+   "Harrison Armstrong",
+   "James Garner",
+   "Brennan Johnson",
+   "Kiernan Dewsbury-Hall",
+   "Jack Grealish",
+   "Thierno Barry"
+  ],
+  "home_bench": [
+   "Tyler Dibling",
+   "Tyrique George",
+   "Jake O'Brien",
+   "Hayden Hackney",
+   "Mark Travers",
+   "Tom King",
+   "Michael Keane",
+   "Charly Alcaraz",
+   "Braiden Graham"
+  ],
+  "away_starting_xi": [
+   "Christian Walton",
+   "Abdoul Ouattara",
+   "Issa Diop",
+   "Dara O'Shea",
+   "Leif Davis",
+   "Saša Lukić",
+   "Exequiel Palacios",
+   "Abdul Fatawu",
+   "Julio Enciso",
+   "Jack Clarke",
+   "Emersonn"
+  ],
+  "away_bench": [
+   "Jaden Philogene-Bidace",
+   "Florentino",
+   "Daizen Maeda",
+   "Chuba Akpom",
+   "Zian Flemming",
+   "Kjell Scherpen",
+   "Darnell Furlong",
+   "Jacob Greaves",
+   "Marcelino Núñez"
+  ],
+  "substitution_events": [
+   {
+    "team": "Everton",
+    "in": "Tyler Dibling",
+    "out": "Brennan Johnson",
+    "minute": "66"
+   },
+   {
+    "team": "Everton",
+    "in": "Tyrique George",
+    "out": "Jack Grealish",
+    "minute": "79"
+   },
+   {
+    "team": "Everton",
+    "in": "Hayden Hackney",
+    "out": "Kiernan Dewsbury-Hall",
+    "minute": "90"
+   },
+   {
+    "team": "Everton",
+    "in": "Jake O'Brien",
+    "out": "Ainsley Maitland-Niles",
+    "minute": "90"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Jaden Philogene-Bidace",
+    "out": "Jack Clarke",
+    "minute": "66"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Florentino",
+    "out": "Saša Lukić",
+    "minute": "73"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Daizen Maeda",
+    "out": "Julio Enciso",
+    "minute": "74"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Zian Flemming",
+    "out": "Emersonn",
+    "minute": "81"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Chuba Akpom",
+    "out": "Exequiel Palacios",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Stuart Attwell",
+  "attendance": 52008,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

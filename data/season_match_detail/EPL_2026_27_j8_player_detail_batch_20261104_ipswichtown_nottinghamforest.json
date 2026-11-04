@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "epl-2026-27-2026-10-23-ipswichtown-nottinghamforest",
+ "date": "2026-10-23",
+ "home": "Ipswich Town",
+ "away": "Nottingham Forest",
+ "score": "1-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795491",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795491"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Christian Walton",
+   "Abdoul Ouattara",
+   "Issa Diop",
+   "Dara O'Shea",
+   "Leif Davis",
+   "Exequiel Palacios",
+   "Florentino",
+   "Abdul Fatawu",
+   "Julio Enciso",
+   "Jaden Philogene-Bidace",
+   "Emersonn"
+  ],
+  "home_bench": [
+   "Zian Flemming",
+   "Jack Clarke",
+   "Daizen Maeda",
+   "Azor Matusiwa",
+   "Chuba Akpom",
+   "Kjell Scherpen",
+   "Darnell Furlong",
+   "Jacob Greaves",
+   "Marcelino Núñez"
+  ],
+  "away_starting_xi": [
+   "Matz Sels",
+   "Jair Cunha",
+   "Nikola Milenković",
+   "Murillo",
+   "Daniel Muñoz",
+   "James McAtee",
+   "Xaver Schlager",
+   "Neco Williams",
+   "Morgan Gibbs-White",
+   "Dan Ndoye",
+   "Liam Delap"
+  ],
+  "away_bench": [
+   "Callum Hudson-Odoi",
+   "Luca Netz",
+   "Chris Wood",
+   "John Victor",
+   "Ola Aina",
+   "Ousmane Diomande",
+   "Ibrahim Sangaré",
+   "Ryan Yates",
+   "Arnaud Kalimuendo-Muinga"
+  ],
+  "substitution_events": [
+   {
+    "team": "Ipswich Town",
+    "in": "Zian Flemming",
+    "out": "Emersonn",
+    "minute": "60"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Jack Clarke",
+    "out": "Jaden Philogene-Bidace",
+    "minute": "61"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Daizen Maeda",
+    "out": "Abdul Fatawu",
+    "minute": "73"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Azor Matusiwa",
+    "out": "Florentino",
+    "minute": "85"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Chuba Akpom",
+    "out": "Julio Enciso",
+    "minute": "86"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Callum Hudson-Odoi",
+    "out": "Dan Ndoye",
+    "minute": "69"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Luca Netz",
+    "out": "Neco Williams",
+    "minute": "84"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Chris Wood",
+    "out": "Liam Delap",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Thomas Bramall",
+  "attendance": 29198,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

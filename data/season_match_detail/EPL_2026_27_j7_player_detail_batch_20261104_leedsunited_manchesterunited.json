@@ -1,0 +1,117 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "epl-2026-27-2026-10-18-leedsunited-manchesterunited",
+ "date": "2026-10-18",
+ "home": "Leeds United",
+ "away": "Manchester United",
+ "score": "1-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795480",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795480"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "James Trafford",
+   "James Justin",
+   "Nico Elvedi",
+   "Tarik Muharemović",
+   "Jayden Bogle",
+   "Ethan Ampadu",
+   "Ao Tanaka",
+   "Gabriel Gudmundsson",
+   "Anton Stach",
+   "Noah Okafor",
+   "Dominic Calvert-Lewin"
+  ],
+  "home_bench": [
+   "Lukas Nmecha",
+   "Sean Longstaff",
+   "Michael Zetterer",
+   "Jaka Bijol",
+   "Melvin Bard",
+   "Brenden Aaronson",
+   "Ilia Gruev",
+   "Harry Wilson",
+   "Jean-Mattéo Bahoya"
+  ],
+  "away_starting_xi": [
+   "Senne Lammens",
+   "Leny Yoro",
+   "Harry Maguire",
+   "Lisandro Martínez",
+   "Diogo Dalot",
+   "Andrey Santos",
+   "Carlos Baleba",
+   "Amad Diallo",
+   "Youri Tielemans",
+   "Bruno Fernandes",
+   "Bryan Mbeumo"
+  ],
+  "away_bench": [
+   "Noussair Mazraoui",
+   "Mason Mount",
+   "Matheus Cunha",
+   "Karl Darlow",
+   "Matthijs de Ligt",
+   "Harry Amass",
+   "Joshua Zirkzee",
+   "Marcus Rashford",
+   "Shea Lacey"
+  ],
+  "substitution_events": [
+   {
+    "team": "Leeds United",
+    "in": "Lukas Nmecha",
+    "out": "Noah Okafor",
+    "minute": "74"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Sean Longstaff",
+    "out": "Ao Tanaka",
+    "minute": "81"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Noussair Mazraoui",
+    "out": "Lisandro Martínez",
+    "minute": "46"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Mason Mount",
+    "out": "Carlos Baleba",
+    "minute": "74"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Matheus Cunha",
+    "out": "Youri Tielemans",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Darren England",
+  "attendance": 36983,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

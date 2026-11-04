@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "epl-2026-27-2026-08-29-coventrycity-hullcity",
+ "date": "2026-08-29",
+ "home": "Coventry City",
+ "away": "Hull City",
+ "score": "0-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795428",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795428"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Carl Rushworth",
+   "Milan van Ewijk",
+   "Bobby Thomas",
+   "Aurèle Amenda",
+   "Jay Dasilva",
+   "Caleb Yirenkyi",
+   "Matt Grimes",
+   "Loum Tchaouna",
+   "Jack Rudoni",
+   "Ephron Mason-Clark",
+   "Taiwo Awoniyi"
+  ],
+  "home_bench": [
+   "Brandon Thomas-Asante",
+   "Tatsuhiro Sakamoto",
+   "Victor Torp",
+   "Gustavo Hamer",
+   "Ethan Pinnock",
+   "Daniel Bentley",
+   "Joel Latibeaudiere",
+   "Liam Kitching",
+   "Ellis Simms"
+  ],
+  "away_starting_xi": [
+   "Konstantinos Tzolakis",
+   "Semi Ajayi",
+   "John Egan",
+   "Nobel Mendy",
+   "Lewie Coyle",
+   "Regan Slater",
+   "Hidemasa Morita",
+   "Ryan Giles",
+   "Mohamed Belloumi",
+   "Oli McBurnie",
+   "Elliot Stroud"
+  ],
+  "away_bench": [
+   "Cody Drameh",
+   "Lucas Gourna-Douath",
+   "Lucas Herrington",
+   "Liam Millar",
+   "Mohamed-Ali Cho",
+   "Dillon Phillips",
+   "Matt Targett",
+   "Paddy McNair",
+   "Jens Hjertø-Dahl"
+  ],
+  "substitution_events": [
+   {
+    "team": "Coventry City",
+    "in": "Brandon Thomas-Asante",
+    "out": "Ephron Mason-Clark",
+    "minute": "58"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Tatsuhiro Sakamoto",
+    "out": "Loum Tchaouna",
+    "minute": "59"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Victor Torp",
+    "out": "Caleb Yirenkyi",
+    "minute": "71"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Gustavo Hamer",
+    "out": "Jack Rudoni",
+    "minute": "71"
+   },
+   {
+    "team": "Coventry City",
+    "in": "Ethan Pinnock",
+    "out": "Bobby Thomas",
+    "minute": "78"
+   },
+   {
+    "team": "Hull City",
+    "in": "Lucas Gourna-Douath",
+    "out": "Hidemasa Morita",
+    "minute": "46"
+   },
+   {
+    "team": "Hull City",
+    "in": "Cody Drameh",
+    "out": "Lewie Coyle",
+    "minute": "46"
+   },
+   {
+    "team": "Hull City",
+    "in": "Liam Millar",
+    "out": "Elliot Stroud",
+    "minute": "59"
+   },
+   {
+    "team": "Hull City",
+    "in": "Lucas Herrington",
+    "out": "Nobel Mendy",
+    "minute": "59"
+   },
+   {
+    "team": "Hull City",
+    "in": "Mohamed-Ali Cho",
+    "out": "Mohamed Belloumi",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Josh Smith",
+  "attendance": 31239,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "epl-2026-27-2026-10-31-afcbournemouth-leedsunited",
+ "date": "2026-10-31",
+ "home": "AFC Bournemouth",
+ "away": "Leeds United",
+ "score": "2-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795495",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795495"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Djordje Petrović",
+   "Adam Smith",
+   "James Hill",
+   "António Silva",
+   "Adrien Truffert",
+   "Tyler Adams",
+   "Ryan Christie",
+   "Rayan",
+   "Justin Kluivert",
+   "Marcus Tavernier",
+   "Evanilson"
+  ],
+  "home_bench": [
+   "Junior Kroupi",
+   "Lewis Cook",
+   "Álvaro Rodriguez",
+   "Bafodé Diakité",
+   "Amine Adli",
+   "Michele Di Gregorio",
+   "Julio Soler",
+   "Ben Gannon-Doak",
+   "David Brooks"
+  ],
+  "away_starting_xi": [
+   "James Trafford",
+   "James Justin",
+   "Nico Elvedi",
+   "Tarik Muharemović",
+   "Jayden Bogle",
+   "Ethan Ampadu",
+   "Ao Tanaka",
+   "Gabriel Gudmundsson",
+   "Harry Wilson",
+   "Daniel James",
+   "Dominic Calvert-Lewin"
+  ],
+  "away_bench": [
+   "Anton Stach",
+   "Sean Longstaff",
+   "Lukas Nmecha",
+   "Brenden Aaronson",
+   "Jean-Mattéo Bahoya",
+   "Michael Zetterer",
+   "Jaka Bijol",
+   "Melvin Bard",
+   "Ilia Gruev"
+  ],
+  "substitution_events": [
+   {
+    "team": "AFC Bournemouth",
+    "in": "Junior Kroupi",
+    "out": "Justin Kluivert",
+    "minute": "68"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Lewis Cook",
+    "out": "Ryan Christie",
+    "minute": "68"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Álvaro Rodriguez",
+    "out": "Evanilson",
+    "minute": "76"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Bafodé Diakité",
+    "out": "Adam Smith",
+    "minute": "88"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Amine Adli",
+    "out": "Rayan",
+    "minute": "88"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Sean Longstaff",
+    "out": "Ao Tanaka",
+    "minute": "65"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Anton Stach",
+    "out": "Daniel James",
+    "minute": "65"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Lukas Nmecha",
+    "out": "Gabriel Gudmundsson",
+    "minute": "65"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Jean-Mattéo Bahoya",
+    "out": "James Justin",
+    "minute": "84"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Brenden Aaronson",
+    "out": "Harry Wilson",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Michael Salisbury",
+  "attendance": 12041,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

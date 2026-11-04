@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "epl-2026-27-2026-08-30-sunderland-fulham",
+ "date": "2026-08-30",
+ "home": "Sunderland",
+ "away": "Fulham",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795433",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795433"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Robin Roefs",
+   "Thomas Meunier",
+   "Nordi Mukiele",
+   "Daniel Ballard",
+   "Reinildo",
+   "Granit Xhaka",
+   "Noah Sadiki",
+   "Trai Hume",
+   "Enzo Le Fée",
+   "Nilson Angulo",
+   "Brian Brobbey"
+  ],
+  "home_bench": [
+   "Wilson Isidor",
+   "Habib Diarra",
+   "Chris Rigg",
+   "Romaine Mundle",
+   "Melker Ellborg",
+   "Luke O'Nien",
+   "Omar Alderete",
+   "Jules Ahoka",
+   "Chemsdine Talbi"
+  ],
+  "away_starting_xi": [
+   "Bernd Leno",
+   "Timothy Castagne",
+   "Joachim Andersen",
+   "Calvin Bassey",
+   "Antonee Robinson",
+   "Sander Berge",
+   "Alex Iwobi",
+   "Oscar Bobb",
+   "Joshua King",
+   "César Palacios",
+   "Gonzalo García"
+  ],
+  "away_bench": [
+   "Ryan Sessegnon",
+   "Shea Charles",
+   "Emile Smith Rowe",
+   "Kevin",
+   "Benjamin Lecomte",
+   "Jorge Cuenca",
+   "Harrison Reed",
+   "Macauley Zepa",
+   "Rodrigo Muniz"
+  ],
+  "substitution_events": [
+   {
+    "team": "Sunderland",
+    "in": "Wilson Isidor",
+    "out": "Brian Brobbey",
+    "minute": "64"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Habib Diarra",
+    "out": "Nilson Angulo",
+    "minute": "65"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Chris Rigg",
+    "out": "Habib Diarra",
+    "minute": "83"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Romaine Mundle",
+    "out": "Enzo Le Fée",
+    "minute": "90"
+   },
+   {
+    "team": "Fulham",
+    "in": "Shea Charles",
+    "out": "Oscar Bobb",
+    "minute": "68"
+   },
+   {
+    "team": "Fulham",
+    "in": "Ryan Sessegnon",
+    "out": "Timothy Castagne",
+    "minute": "68"
+   },
+   {
+    "team": "Fulham",
+    "in": "Emile Smith Rowe",
+    "out": "César Palacios",
+    "minute": "77"
+   },
+   {
+    "team": "Fulham",
+    "in": "Kevin",
+    "out": "Sander Berge",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Michael Salisbury",
+  "attendance": 46781,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

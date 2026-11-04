@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "epl-2026-27-2026-10-10-arsenal-leedsunited",
+ "date": "2026-10-10",
+ "home": "Arsenal",
+ "away": "Leeds United",
+ "score": "2-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795465",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795465"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "David Raya",
+   "Ben White",
+   "Ezri Konsa",
+   "Gabriel",
+   "Riccardo Calafiori",
+   "Declan Rice",
+   "Myles Lewis-Skelly",
+   "Bukayo Saka",
+   "Martin Ødegaard",
+   "Noni Madueke",
+   "Kai Havertz"
+  ],
+  "home_bench": [
+   "Jurriën Timber",
+   "Bruno Guimarães",
+   "Viktor Gyökeres",
+   "Piero Hincapié",
+   "Mikel Merino",
+   "Kepa Arrizabalaga",
+   "Eberechi Eze",
+   "Martín Zubimendi",
+   "Max Dowman"
+  ],
+  "away_starting_xi": [
+   "James Trafford",
+   "James Justin",
+   "Nico Elvedi",
+   "Tarik Muharemović",
+   "Jayden Bogle",
+   "Anton Stach",
+   "Ethan Ampadu",
+   "Ao Tanaka",
+   "Gabriel Gudmundsson",
+   "Dominic Calvert-Lewin",
+   "Noah Okafor"
+  ],
+  "away_bench": [
+   "Brenden Aaronson",
+   "Harry Wilson",
+   "Lukas Nmecha",
+   "Jaka Bijol",
+   "Jean-Mattéo Bahoya",
+   "Michael Zetterer",
+   "Melvin Bard",
+   "Ilia Gruev",
+   "Sean Longstaff"
+  ],
+  "substitution_events": [
+   {
+    "team": "Arsenal",
+    "in": "Jurriën Timber",
+    "out": "Ben White",
+    "minute": "63"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Viktor Gyökeres",
+    "out": "Kai Havertz",
+    "minute": "63"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Bruno Guimarães",
+    "out": "Myles Lewis-Skelly",
+    "minute": "63"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Piero Hincapié",
+    "out": "Riccardo Calafiori",
+    "minute": "82"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Mikel Merino",
+    "out": "Martin Ødegaard",
+    "minute": "90"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Harry Wilson",
+    "out": "Ao Tanaka",
+    "minute": "71"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Brenden Aaronson",
+    "out": "Noah Okafor",
+    "minute": "71"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Lukas Nmecha",
+    "out": "James Justin",
+    "minute": "79"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Jean-Mattéo Bahoya",
+    "out": "Jayden Bogle",
+    "minute": "86"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Jaka Bijol",
+    "out": "Nico Elvedi",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Paul Tierney",
+  "attendance": 60315,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

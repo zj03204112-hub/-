@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "epl-2026-27-2026-08-29-liverpool-nottinghamforest",
+ "date": "2026-08-29",
+ "home": "Liverpool",
+ "away": "Nottingham Forest",
+ "score": "2-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795431",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795431"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alisson Becker",
+   "Jeremie Frimpong",
+   "Jérémy Jacquet",
+   "Virgil van Dijk",
+   "Milos Kerkez",
+   "Alexis Mac Allister",
+   "Dominik Szoboszlai",
+   "Cody Gakpo",
+   "Florian Wirtz",
+   "Víctor Muñoz",
+   "Alexander Isak"
+  ],
+  "home_bench": [
+   "Konstantinos Tsimikas",
+   "Ryan Gravenberch",
+   "Rio Ngumoha",
+   "Ronald Araujo",
+   "Trey Nyoni",
+   "Giorgi Mamardashvili",
+   "James McConnell",
+   "Wataru Endo",
+   "Lewis Koumas"
+  ],
+  "away_starting_xi": [
+   "Matz Sels",
+   "Jair Cunha",
+   "Nikola Milenkovic",
+   "Murillo",
+   "Ola Aina",
+   "Xaver Schlager",
+   "James McAtee",
+   "Neco Williams",
+   "Morgan Gibbs-White",
+   "Dan Ndoye",
+   "Igor Jesus"
+  ],
+  "away_bench": [
+   "Liam Delap",
+   "Luca Netz",
+   "Nicolás Dominguez",
+   "Callum Hudson-Odoi",
+   "John Victor",
+   "Ousmane Diomande",
+   "Zach Abbott",
+   "Ryan Yates",
+   "Chris Wood"
+  ],
+  "substitution_events": [
+   {
+    "team": "Liverpool",
+    "in": "Konstantinos Tsimikas",
+    "out": "Milos Kerkez",
+    "minute": "71"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Rio Ngumoha",
+    "out": "Cody Gakpo",
+    "minute": "71"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Ryan Gravenberch",
+    "out": "Jeremie Frimpong",
+    "minute": "71"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Ronald Araujo",
+    "out": "Jérémy Jacquet",
+    "minute": "77"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Trey Nyoni",
+    "out": "Alexis Mac Allister",
+    "minute": "77"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Liam Delap",
+    "out": "Dan Ndoye",
+    "minute": "66"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Luca Netz",
+    "out": "Ola Aina",
+    "minute": "86"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Callum Hudson-Odoi",
+    "out": "James McAtee",
+    "minute": "90"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Nicolás Dominguez",
+    "out": "Igor Jesus",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Samuel Barrott",
+  "attendance": 60415,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

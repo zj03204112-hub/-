@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "epl-2026-27-2026-10-24-chelsea-tottenhamhotspur",
+ "date": "2026-10-24",
+ "home": "Chelsea",
+ "away": "Tottenham Hotspur",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795487",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795487"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mike Penders",
+   "Josh Acheampong",
+   "Maxence Lacroix",
+   "Levi Colwill",
+   "Pedro Neto",
+   "Moisés Caicedo",
+   "Jordan Henderson",
+   "Jorrel Hato",
+   "Cole Palmer",
+   "Geovany Quenda",
+   "Morgan Rogers"
+  ],
+  "home_bench": [
+   "Marco Palestra",
+   "Estêvão",
+   "Danny Welbeck",
+   "Teddy Sharman-Lowe",
+   "Malo Gusto",
+   "Wesley Fofana",
+   "Mahdi Nicoll-Jazuli",
+   "Roméo Lavia",
+   "Valentín Barco"
+  ],
+  "away_starting_xi": [
+   "Antonín Kinský",
+   "Archie Gray",
+   "Jan Paul van Hecke",
+   "Micky van de Ven",
+   "Andrew Robertson",
+   "Sandro Tonali",
+   "Mateus Fernandes",
+   "Mohammed Kudus",
+   "James Maddison",
+   "Mathys Tel",
+   "Omar Marmoush"
+  ],
+  "away_bench": [
+   "Conor Gallagher",
+   "Pedro Porro",
+   "Dominic Solanke",
+   "Ben Davies",
+   "Dejan Kulusevski",
+   "Martin Dúbravka",
+   "Marcos Senesi",
+   "Callum Olusesi",
+   "Luca Williams-Barnett"
+  ],
+  "substitution_events": [
+   {
+    "team": "Chelsea",
+    "in": "Marco Palestra",
+    "out": "Jorrel Hato",
+    "minute": "65"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Estêvão",
+    "out": "Geovany Quenda",
+    "minute": "72"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Danny Welbeck",
+    "out": "Pedro Neto",
+    "minute": "88"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Conor Gallagher",
+    "out": "James Maddison",
+    "minute": "51"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Pedro Porro",
+    "out": "Andrew Robertson",
+    "minute": "65"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Dominic Solanke",
+    "out": "Omar Marmoush",
+    "minute": "65"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Ben Davies",
+    "out": "Mathys Tel",
+    "minute": "89"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Dejan Kulusevski",
+    "out": "Mohammed Kudus",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Chris Kavanagh",
+  "attendance": 39402,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

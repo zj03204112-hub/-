@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "epl-2026-27-2026-10-31-brentford-nottinghamforest",
+ "date": "2026-10-31",
+ "home": "Brentford",
+ "away": "Nottingham Forest",
+ "score": "2-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795497",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795497"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Caoimhín Kelleher",
+   "Michael Kayode",
+   "Kristoffer Ajer",
+   "Sepp van den Berg",
+   "Keane Lewis-Potter",
+   "Mamadou Sangaré",
+   "Vitaly Janelt",
+   "Dango Ouattara",
+   "Mathias Jensen",
+   "Kevin Schade",
+   "Igor Thiago"
+  ],
+  "home_bench": [
+   "Aaron Hickey",
+   "Mikkel Damsgaard",
+   "Jaidon Anthony",
+   "Callum Wilson",
+   "Hákon Rafn Valdimarsson",
+   "Jannik Schuster",
+   "Malick Diouf",
+   "Nathan Collins",
+   "Gustavo Nunes"
+  ],
+  "away_starting_xi": [
+   "Matz Sels",
+   "Jair Cunha",
+   "Nikola Milenković",
+   "Murillo",
+   "Ola Aina",
+   "James McAtee",
+   "Xaver Schlager",
+   "Neco Williams",
+   "Dan Ndoye",
+   "Morgan Gibbs-White",
+   "Liam Delap"
+  ],
+  "away_bench": [
+   "Daniel Muñoz",
+   "Ryan Yates",
+   "Arnaud Kalimuendo-Muinga",
+   "Chris Wood",
+   "John Victor",
+   "Ousmane Diomande",
+   "Ibrahim Sangaré",
+   "Luca Netz",
+   "Callum Hudson-Odoi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Brentford",
+    "in": "Mikkel Damsgaard",
+    "out": "Mathias Jensen",
+    "minute": "62"
+   },
+   {
+    "team": "Brentford",
+    "in": "Aaron Hickey",
+    "out": "Mamadou Sangaré",
+    "minute": "62"
+   },
+   {
+    "team": "Brentford",
+    "in": "Jaidon Anthony",
+    "out": "Dango Ouattara",
+    "minute": "72"
+   },
+   {
+    "team": "Brentford",
+    "in": "Callum Wilson",
+    "out": "Kevin Schade",
+    "minute": "84"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Daniel Muñoz",
+    "out": "Ola Aina",
+    "minute": "46"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Ryan Yates",
+    "out": "Xaver Schlager",
+    "minute": "46"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Chris Wood",
+    "out": "Liam Delap",
+    "minute": "65"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Arnaud Kalimuendo-Muinga",
+    "out": "Dan Ndoye",
+    "minute": "65"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Darren England",
+  "attendance": 17108,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

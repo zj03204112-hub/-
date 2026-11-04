@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "epl-2026-27-2026-08-29-afcbournemouth-everton",
+ "date": "2026-08-29",
+ "home": "AFC Bournemouth",
+ "away": "Everton",
+ "score": "1-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795425",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795425"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Djordje Petrovic",
+   "Adam Smith",
+   "James Hill",
+   "António Silva",
+   "Adrien Truffert",
+   "Lewis Cook",
+   "Alex Scott",
+   "Rayan",
+   "Justin Kluivert",
+   "Marcus Tavernier",
+   "Evanilson"
+  ],
+  "home_bench": [
+   "Tyler Adams",
+   "Álvaro Rodriguez",
+   "David Brooks",
+   "Ryan Christie",
+   "Michele Di Gregorio",
+   "Bafodé Diakité",
+   "Julio Soler",
+   "Ben Gannon-Doak",
+   "Daniel Jebbison"
+  ],
+  "away_starting_xi": [
+   "Jordan Pickford",
+   "Merlin Röhl",
+   "James Tarkowski",
+   "Jarrad Branthwaite",
+   "Vitaliy Mykolenko",
+   "Harrison Armstrong",
+   "James Garner",
+   "Iliman Ndiaye",
+   "Kiernan Dewsbury-Hall",
+   "Tyrique George",
+   "Thierno Barry"
+  ],
+  "away_bench": [
+   "Brennan Johnson",
+   "Hayden Hackney",
+   "Beto",
+   "Charly Alcaraz",
+   "Tim Iroegbunam",
+   "Mark Travers",
+   "Jake O'Brien",
+   "Michael Keane",
+   "Tyler Dibling"
+  ],
+  "substitution_events": [
+   {
+    "team": "AFC Bournemouth",
+    "in": "Tyler Adams",
+    "out": "Lewis Cook",
+    "minute": "69"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Álvaro Rodriguez",
+    "out": "Evanilson",
+    "minute": "81"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "David Brooks",
+    "out": "Justin Kluivert",
+    "minute": "81"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Ryan Christie",
+    "out": "Alex Scott",
+    "minute": "87"
+   },
+   {
+    "team": "Everton",
+    "in": "Hayden Hackney",
+    "out": "James Garner",
+    "minute": "62"
+   },
+   {
+    "team": "Everton",
+    "in": "Brennan Johnson",
+    "out": "Tyrique George",
+    "minute": "62"
+   },
+   {
+    "team": "Everton",
+    "in": "Beto",
+    "out": "Thierno Barry",
+    "minute": "70"
+   },
+   {
+    "team": "Everton",
+    "in": "Charly Alcaraz",
+    "out": "Harrison Armstrong",
+    "minute": "87"
+   },
+   {
+    "team": "Everton",
+    "in": "Tim Iroegbunam",
+    "out": "Merlin Röhl",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Chris Kavanagh",
+  "attendance": 11135,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

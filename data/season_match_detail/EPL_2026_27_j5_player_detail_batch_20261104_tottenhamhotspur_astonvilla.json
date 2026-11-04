@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "epl-2026-27-2026-09-19-tottenhamhotspur-astonvilla",
+ "date": "2026-09-19",
+ "home": "Tottenham Hotspur",
+ "away": "Aston Villa",
+ "score": "2-3",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795464",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795464"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Antonín Kinský",
+   "Pedro Porro",
+   "Jan Paul van Hecke",
+   "Micky van de Ven",
+   "Andrew Robertson",
+   "Rodrigo Bentancur",
+   "Sandro Tonali",
+   "Sávio",
+   "Mateus Fernandes",
+   "Omar Marmoush",
+   "Dominic Solanke"
+  ],
+  "home_bench": [
+   "Archie Gray",
+   "Mohammed Kudus",
+   "James Maddison",
+   "Conor Gallagher",
+   "Lucas Bergvall",
+   "Martin Dúbravka",
+   "Destiny Udogie",
+   "Marcos Senesi",
+   "Tosin Adarabioyo"
+  ],
+  "away_starting_xi": [
+   "Zion Suzuki",
+   "Aaron Wan-Bissaka",
+   "Victor Nilsson Lindelöf",
+   "Tyrone Mings",
+   "Matteo Ruggeri",
+   "Boubacar Kamara",
+   "João Gomes",
+   "John McGinn",
+   "Johan Manzambi",
+   "Emiliano Buendía",
+   "Nicolas Jackson"
+  ],
+  "away_bench": [
+   "Matty Cash",
+   "George Hemmings",
+   "Ross Barkley",
+   "Ibrahim Mbaye",
+   "Tammy Abraham",
+   "James Wright",
+   "Taylor Harwood-Bellis",
+   "Lamare Bogarde",
+   "Alejandro Garnacho"
+  ],
+  "substitution_events": [
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Archie Gray",
+    "out": "Pedro Porro",
+    "minute": "19"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Mohammed Kudus",
+    "out": "Mateus Fernandes",
+    "minute": "46"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "James Maddison",
+    "out": "Dominic Solanke",
+    "minute": "66"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Conor Gallagher",
+    "out": "Sandro Tonali",
+    "minute": "84"
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "in": "Lucas Bergvall",
+    "out": "Rodrigo Bentancur",
+    "minute": "84"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Matty Cash",
+    "out": "Aaron Wan-Bissaka",
+    "minute": "46"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "George Hemmings",
+    "out": "Johan Manzambi",
+    "minute": "72"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Ross Barkley",
+    "out": "John McGinn",
+    "minute": "84"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Ibrahim Mbaye",
+    "out": "Boubacar Kamara",
+    "minute": "84"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Tammy Abraham",
+    "out": "Nicolas Jackson",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "Samuel Barrott",
+  "attendance": 60920,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

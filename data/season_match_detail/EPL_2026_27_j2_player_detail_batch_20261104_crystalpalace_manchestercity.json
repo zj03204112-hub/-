@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "epl-2026-27-2026-08-28-crystalpalace-manchestercity",
+ "date": "2026-08-28",
+ "home": "Crystal Palace",
+ "away": "Manchester City",
+ "score": "1-4",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795429",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795429"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dean Henderson",
+   "Jaydee Canvot",
+   "Chris Richards",
+   "Takehiro Tomiyasu",
+   "Anan Khalaili",
+   "Adam Wharton",
+   "Daichi Kamada",
+   "Tyrick Mitchell",
+   "Yéremi Pino",
+   "Edward Nketiah",
+   "Jørgen Strand Larsen"
+  ],
+  "home_bench": [
+   "Evann Guessand",
+   "Zavier Gozo",
+   "Dwight McNeil",
+   "Axel Disasi",
+   "Óscar Mingueza",
+   "Walter Benítez",
+   "Daniel Muñoz",
+   "Jefferson Lerma",
+   "Will Hughes"
+  ],
+  "away_starting_xi": [
+   "Gianluigi Donnarumma",
+   "Abdukodir Khusanov",
+   "Rúben Dias",
+   "Marc Guéhi",
+   "Joško Gvardiol",
+   "Nico O'Reilly",
+   "Elliot Anderson",
+   "Phil Foden",
+   "Rayan Cherki",
+   "Antoine Semenyo",
+   "Erling Haaland"
+  ],
+  "away_bench": [
+   "Mateo Kovačić",
+   "Ayyoub Bouaddi",
+   "Ryan McAidoo",
+   "Kaden Braithwaite",
+   "Vitor Reis",
+   "Gerónimo Rulli",
+   "Rayan Aït-Nouri",
+   "Rico Lewis",
+   "Claudio Echeverri"
+  ],
+  "substitution_events": [
+   {
+    "team": "Crystal Palace",
+    "in": "Evann Guessand",
+    "out": "Jørgen Strand Larsen",
+    "minute": "63"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Dwight McNeil",
+    "out": "Edward Nketiah",
+    "minute": "68"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Zavier Gozo",
+    "out": "Yéremi Pino",
+    "minute": "68"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Axel Disasi",
+    "out": "Takehiro Tomiyasu",
+    "minute": "74"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Óscar Mingueza",
+    "out": "Anan Khalaili",
+    "minute": "75"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Mateo Kovačić",
+    "out": "Joško Gvardiol",
+    "minute": "75"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Ryan McAidoo",
+    "out": "Rayan Cherki",
+    "minute": "82"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Ayyoub Bouaddi",
+    "out": "Elliot Anderson",
+    "minute": "82"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Kaden Braithwaite",
+    "out": "Nico O'Reilly",
+    "minute": "89"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Vitor Reis",
+    "out": "Abdukodir Khusanov",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 4
+  },
+  "provider_score": "1-4",
+  "score_consistent_with_events": true,
+  "referee": "Andy Madley",
+  "attendance": 25149,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

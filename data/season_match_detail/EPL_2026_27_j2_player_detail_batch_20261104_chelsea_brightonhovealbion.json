@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "epl-2026-27-2026-08-30-chelsea-brightonhovealbion",
+ "date": "2026-08-30",
+ "home": "Chelsea",
+ "away": "Brighton & Hove Albion",
+ "score": "4-3",
+ "halftime_score": "3-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795427",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795427"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Emiliano Martínez",
+   "Wesley Fofana",
+   "Maxence Lacroix",
+   "Levi Colwill",
+   "Pedro Neto",
+   "Malo Gusto",
+   "Roméo Lavia",
+   "Jorrel Hato",
+   "Cole Palmer",
+   "Morgan Rogers",
+   "João Pedro"
+  ],
+  "home_bench": [
+   "Josh Acheampong",
+   "Reece James",
+   "Moisés Caicedo",
+   "Pep Chavarría",
+   "Valentín Barco",
+   "Mike Penders",
+   "Danny Welbeck",
+   "Estêvão",
+   "Jamie Gittens"
+  ],
+  "away_starting_xi": [
+   "Bart Verbruggen",
+   "Mats Wieffer",
+   "Luka Vuskovic",
+   "Lewis Dunk",
+   "Ferdi Kadioglu",
+   "Pascal Groß",
+   "Olivier Boscagli",
+   "Diego Gómez",
+   "Malick Junior Yalcouyé",
+   "Maxim De Cuyper",
+   "Charalampos Kostoulas"
+  ],
+  "away_bench": [
+   "Ibrahim Osman",
+   "Costinha",
+   "Promise David",
+   "Jason Steele",
+   "Jaouen Hadjam",
+   "Pascal Struijk",
+   "Matthew O'Riley",
+   "Amario Cozier-Duberry",
+   "Nehemiah Oriola"
+  ],
+  "substitution_events": [
+   {
+    "team": "Chelsea",
+    "in": "Reece James",
+    "out": "Roméo Lavia",
+    "minute": "68"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Moisés Caicedo",
+    "out": "Pedro Neto",
+    "minute": "68"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Josh Acheampong",
+    "out": "Wesley Fofana",
+    "minute": "68"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Pep Chavarría",
+    "out": "Levi Colwill",
+    "minute": "72"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Valentín Barco",
+    "out": "Moisés Caicedo",
+    "minute": "82"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Ibrahim Osman",
+    "out": "Malick Junior Yalcouyé",
+    "minute": "74"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Promise David",
+    "out": "Charalampos Kostoulas",
+    "minute": "80"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Costinha",
+    "out": "Mats Wieffer",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 3
+  },
+  "provider_score": "4-3",
+  "score_consistent_with_events": true,
+  "referee": "Michael Oliver",
+  "attendance": 39494,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

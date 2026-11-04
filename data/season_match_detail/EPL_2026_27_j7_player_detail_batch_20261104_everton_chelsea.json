@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "epl-2026-27-2026-10-17-everton-chelsea",
+ "date": "2026-10-17",
+ "home": "Everton",
+ "away": "Chelsea",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795478",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795478"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jordan Pickford",
+   "Ainsley Maitland-Niles",
+   "James Tarkowski",
+   "Jarrad Branthwaite",
+   "Vitaliy Mykolenko",
+   "Harrison Armstrong",
+   "James Garner",
+   "Merlin Röhl",
+   "Kiernan Dewsbury-Hall",
+   "Jack Grealish",
+   "Thierno Barry"
+  ],
+  "home_bench": [
+   "Tyrique George",
+   "Christian Nørgaard",
+   "Brennan Johnson",
+   "Mark Travers",
+   "Jake O'Brien",
+   "Charly Alcaraz",
+   "Hayden Hackney",
+   "Braiden Graham",
+   "Tyler Dibling"
+  ],
+  "away_starting_xi": [
+   "Emiliano Martínez",
+   "Josh Acheampong",
+   "Maxence Lacroix",
+   "Levi Colwill",
+   "Jorrel Hato",
+   "Moisés Caicedo",
+   "Jordan Henderson",
+   "Pedro Neto",
+   "Cole Palmer",
+   "Morgan Rogers",
+   "João Pedro"
+  ],
+  "away_bench": [
+   "Mike Penders",
+   "Marco Palestra",
+   "Roméo Lavia",
+   "Danny Welbeck",
+   "Geovany Quenda",
+   "Wesley Fofana",
+   "Mahdi Nicoll-Jazuli",
+   "Valentín Barco",
+   "Estêvão"
+  ],
+  "substitution_events": [
+   {
+    "team": "Everton",
+    "in": "Tyrique George",
+    "out": "Ainsley Maitland-Niles",
+    "minute": "55"
+   },
+   {
+    "team": "Everton",
+    "in": "Christian Nørgaard",
+    "out": "Harrison Armstrong",
+    "minute": "85"
+   },
+   {
+    "team": "Everton",
+    "in": "Brennan Johnson",
+    "out": "Jack Grealish",
+    "minute": "85"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Mike Penders",
+    "out": "Emiliano Martínez",
+    "minute": "75"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Danny Welbeck",
+    "out": "João Pedro",
+    "minute": "90"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Marco Palestra",
+    "out": "Jorrel Hato",
+    "minute": "90"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Roméo Lavia",
+    "out": "Moisés Caicedo",
+    "minute": "90"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Geovany Quenda",
+    "out": "Pedro Neto",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Paul Tierney",
+  "attendance": 52271,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

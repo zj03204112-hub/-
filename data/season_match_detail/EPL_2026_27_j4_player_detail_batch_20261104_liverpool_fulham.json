@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "epl-2026-27-2026-09-12-liverpool-fulham",
+ "date": "2026-09-12",
+ "home": "Liverpool",
+ "away": "Fulham",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795451",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795451"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alisson Becker",
+   "Ronald Araujo",
+   "Jérémy Jacquet",
+   "Virgil van Dijk",
+   "Konstantinos Tsimikas",
+   "Dominik Szoboszlai",
+   "Ryan Gravenberch",
+   "Víctor Muñoz",
+   "Florian Wirtz",
+   "Bradley Barcola",
+   "Alexander Isak"
+  ],
+  "home_bench": [
+   "Miloš Kerkez",
+   "Alexis Mac Allister",
+   "Cody Gakpo",
+   "Jeremie Frimpong",
+   "Rio Ngumoha",
+   "Giorgi Mamardashvili",
+   "Wataru Endo",
+   "Trey Nyoni",
+   "Lewis Koumas"
+  ],
+  "away_starting_xi": [
+   "Bernd Leno",
+   "Timothy Castagne",
+   "David Affengruber",
+   "Calvin Bassey",
+   "Antonee Robinson",
+   "Sander Berge",
+   "Shea Charles",
+   "Oscar Bobb",
+   "Joshua King",
+   "Alex Iwobi",
+   "Gonzalo García"
+  ],
+  "away_bench": [
+   "Kenny Tete",
+   "Kevin",
+   "Emile Smith Rowe",
+   "Hugo Larsson",
+   "Rodrigo Muniz",
+   "Benjamin Lecomte",
+   "Joachim Andersen",
+   "Manuel Ángel",
+   "César Palacios"
+  ],
+  "substitution_events": [
+   {
+    "team": "Liverpool",
+    "in": "Miloš Kerkez",
+    "out": "Konstantinos Tsimikas",
+    "minute": "46"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Cody Gakpo",
+    "out": "Víctor Muñoz",
+    "minute": "60"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Alexis Mac Allister",
+    "out": "Ryan Gravenberch",
+    "minute": "60"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Rio Ngumoha",
+    "out": "Bradley Barcola",
+    "minute": "72"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Jeremie Frimpong",
+    "out": "Ronald Araujo",
+    "minute": "72"
+   },
+   {
+    "team": "Fulham",
+    "in": "Kenny Tete",
+    "out": "Oscar Bobb",
+    "minute": "63"
+   },
+   {
+    "team": "Fulham",
+    "in": "Kevin",
+    "out": "Timothy Castagne",
+    "minute": "72"
+   },
+   {
+    "team": "Fulham",
+    "in": "Rodrigo Muniz",
+    "out": "Gonzalo García",
+    "minute": "77"
+   },
+   {
+    "team": "Fulham",
+    "in": "Emile Smith Rowe",
+    "out": "Joshua King",
+    "minute": "77"
+   },
+   {
+    "team": "Fulham",
+    "in": "Hugo Larsson",
+    "out": "Alex Iwobi",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Thomas Bramall",
+  "attendance": 60160,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

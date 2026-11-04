@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "epl-2026-27-2026-10-17-manchestercity-ipswichtown",
+ "date": "2026-10-17",
+ "home": "Manchester City",
+ "away": "Ipswich Town",
+ "score": "3-2",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795481",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795481"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Gianluigi Donnarumma",
+   "Matheus Nunes",
+   "Rúben Dias",
+   "Marc Guéhi",
+   "Nico O'Reilly",
+   "Mateo Kovačić",
+   "Ayyoub Bouaddi",
+   "Iliman Ndiaye",
+   "Phil Foden",
+   "Jérémy Doku",
+   "Erling Haaland"
+  ],
+  "home_bench": [
+   "Enzo Fernández",
+   "Joško Gvardiol",
+   "Abdukodir Khusanov",
+   "Elliot Anderson",
+   "Antoine Semenyo",
+   "Gerónimo Rulli",
+   "Rayan Aït-Nouri",
+   "Rayan Cherki",
+   "Allan"
+  ],
+  "away_starting_xi": [
+   "Christian Walton",
+   "Dara O'Shea",
+   "Issa Diop",
+   "Jacob Greaves",
+   "Abdoul Ouattara",
+   "Florentino",
+   "Exequiel Palacios",
+   "Leif Davis",
+   "Daizen Maeda",
+   "Julio Enciso",
+   "Emersonn"
+  ],
+  "away_bench": [
+   "Azor Matusiwa",
+   "Abdul Fatawu",
+   "Chuba Akpom",
+   "Zian Flemming",
+   "Jack Clarke",
+   "Kjell Scherpen",
+   "Cédric Kipré",
+   "Darnell Furlong",
+   "Jaden Philogene-Bidace"
+  ],
+  "substitution_events": [
+   {
+    "team": "Manchester City",
+    "in": "Enzo Fernández",
+    "out": "Mateo Kovačić",
+    "minute": "50"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Joško Gvardiol",
+    "out": "Nico O'Reilly",
+    "minute": "61"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Abdukodir Khusanov",
+    "out": "Matheus Nunes",
+    "minute": "76"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Elliot Anderson",
+    "out": "Phil Foden",
+    "minute": "77"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Antoine Semenyo",
+    "out": "Jérémy Doku",
+    "minute": "77"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Azor Matusiwa",
+    "out": "Florentino",
+    "minute": "71"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Abdul Fatawu",
+    "out": "Daizen Maeda",
+    "minute": "71"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Zian Flemming",
+    "out": "Emersonn",
+    "minute": "78"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Chuba Akpom",
+    "out": "Julio Enciso",
+    "minute": "78"
+   },
+   {
+    "team": "Ipswich Town",
+    "in": "Jack Clarke",
+    "out": "Jacob Greaves",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Farai Hallam",
+  "attendance": 60817,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

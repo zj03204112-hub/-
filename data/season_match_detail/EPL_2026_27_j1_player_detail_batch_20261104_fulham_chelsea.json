@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "epl-2026-27-2026-08-24-fulham-chelsea",
+ "date": "2026-08-24",
+ "home": "Fulham",
+ "away": "Chelsea",
+ "score": "2-3",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5795372",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795372"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bernd Leno",
+   "Timothy Castagne",
+   "Calvin Bassey",
+   "Jorge Cuenca",
+   "Antonee Robinson",
+   "Sander Berge",
+   "Alex Iwobi",
+   "Oscar Bobb",
+   "Joshua King",
+   "César Palacios",
+   "Gonzalo García"
+  ],
+  "home_bench": [
+   "Shea Charles",
+   "Ryan Sessegnon",
+   "Kevin",
+   "Rodrigo Muniz",
+   "Benjamin Lecomte",
+   "Kenny Tete",
+   "Luc De Fougerolles",
+   "Emile Smith Rowe",
+   "Harrison Reed"
+  ],
+  "away_starting_xi": [
+   "Robert Sánchez",
+   "Josh Acheampong",
+   "Maxence Lacroix",
+   "Levi Colwill",
+   "Malo Gusto",
+   "Reece James",
+   "Roméo Lavia",
+   "Jorrel Hato",
+   "Cole Palmer",
+   "Morgan Rogers",
+   "João Pedro"
+  ],
+  "away_bench": [
+   "Pep Chavarría",
+   "Enzo Fernández",
+   "Pedro Neto",
+   "Geovany Quenda",
+   "Estêvão",
+   "Mike Penders",
+   "Valentín Barco",
+   "Danny Welbeck",
+   "Jamie Gittens"
+  ],
+  "substitution_events": [
+   {
+    "team": "Fulham",
+    "in": "Shea Charles",
+    "out": "Oscar Bobb",
+    "minute": "67"
+   },
+   {
+    "team": "Fulham",
+    "in": "Kevin",
+    "out": "César Palacios",
+    "minute": "73"
+   },
+   {
+    "team": "Fulham",
+    "in": "Ryan Sessegnon",
+    "out": "Sander Berge",
+    "minute": "73"
+   },
+   {
+    "team": "Fulham",
+    "in": "Rodrigo Muniz",
+    "out": "Antonee Robinson",
+    "minute": "82"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Enzo Fernández",
+    "out": "Roméo Lavia",
+    "minute": "65"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Pep Chavarría",
+    "out": "Jorrel Hato",
+    "minute": "65"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Pedro Neto",
+    "out": "Malo Gusto",
+    "minute": "76"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Geovany Quenda",
+    "out": "Morgan Rogers",
+    "minute": "82"
+   },
+   {
+    "team": "Chelsea",
+    "in": "Estêvão",
+    "out": "Cole Palmer",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "John Brooks",
+  "attendance": 27461,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

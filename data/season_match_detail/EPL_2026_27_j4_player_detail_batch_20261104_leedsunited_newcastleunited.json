@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "epl-2026-27-2026-09-14-leedsunited-newcastleunited",
+ "date": "2026-09-14",
+ "home": "Leeds United",
+ "away": "Newcastle United",
+ "score": "4-1",
+ "halftime_score": "3-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795450",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795450"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "James Trafford",
+   "James Justin",
+   "Nico Elvedi",
+   "Tarik Muharemović",
+   "Jayden Bogle",
+   "Anton Stach",
+   "Ethan Ampadu",
+   "Ao Tanaka",
+   "Gabriel Gudmundsson",
+   "Dominic Calvert-Lewin",
+   "Noah Okafor"
+  ],
+  "home_bench": [
+   "Melvin Bard",
+   "Brenden Aaronson",
+   "Harry Wilson",
+   "Lukas Nmecha",
+   "Daniel James",
+   "Sean Longstaff",
+   "Michael Zetterer",
+   "Jaka Bijol",
+   "Jean-Mattéo Bahoya"
+  ],
+  "away_starting_xi": [
+   "Lukás Hornícek",
+   "Amar Dedić",
+   "Malick Thiaw",
+   "Sven Botman",
+   "Lewis Hall",
+   "Lewis Miley",
+   "Nico González",
+   "Jacob Murphy",
+   "Matias Fernandez-Pardo",
+   "Harvey Barnes",
+   "Yoane Wissa"
+  ],
+  "away_bench": [
+   "Sean Steur",
+   "Joseph Willock",
+   "Bazoumana Touré",
+   "Valentino Livramento",
+   "Aladji Bamba",
+   "Nick Pope",
+   "Fabian Schär",
+   "Mason Miley",
+   "Jacob Ramsey"
+  ],
+  "substitution_events": [
+   {
+    "team": "Leeds United",
+    "in": "Brenden Aaronson",
+    "out": "Ao Tanaka",
+    "minute": "72"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Melvin Bard",
+    "out": "Gabriel Gudmundsson",
+    "minute": "72"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Harry Wilson",
+    "out": "Noah Okafor",
+    "minute": "72"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Lukas Nmecha",
+    "out": "Dominic Calvert-Lewin",
+    "minute": "78"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Daniel James",
+    "out": "Jayden Bogle",
+    "minute": "83"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Sean Longstaff",
+    "out": "Anton Stach",
+    "minute": "88"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Sean Steur",
+    "out": "Nico González",
+    "minute": "19"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Bazoumana Touré",
+    "out": "Jacob Murphy",
+    "minute": "57"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Joseph Willock",
+    "out": "Matias Fernandez-Pardo",
+    "minute": "57"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Valentino Livramento",
+    "out": "Amar Dedić",
+    "minute": "58"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Aladji Bamba",
+    "out": "Lewis Miley",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 1
+  },
+  "provider_score": "4-1",
+  "score_consistent_with_events": true,
+  "referee": "Michael Salisbury",
+  "attendance": 36693,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

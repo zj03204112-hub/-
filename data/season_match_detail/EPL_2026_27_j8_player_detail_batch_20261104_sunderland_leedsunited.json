@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "epl-2026-27-2026-10-25-sunderland-leedsunited",
+ "date": "2026-10-25",
+ "home": "Sunderland",
+ "away": "Leeds United",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795494",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795494"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Robin Roefs",
+   "Trai Hume",
+   "Nordi Mukiele",
+   "Luke O'Nien",
+   "Reinildo",
+   "Granit Xhaka",
+   "Noah Sadiki",
+   "Chris Rigg",
+   "Enzo Le Fée",
+   "Nilson Angulo",
+   "Brian Brobbey"
+  ],
+  "home_bench": [
+   "Omar Alderete",
+   "Timur Tuterov",
+   "Habib Diarra",
+   "Chemsdine Talbi",
+   "Melker Ellborg",
+   "Dayann Méthalie",
+   "Jules Ahoka",
+   "Juan Riquelme Angulo",
+   "Malick Fofana"
+  ],
+  "away_starting_xi": [
+   "James Trafford",
+   "James Justin",
+   "Jaka Bijol",
+   "Tarik Muharemović",
+   "Jayden Bogle",
+   "Ethan Ampadu",
+   "Ao Tanaka",
+   "Gabriel Gudmundsson",
+   "Harry Wilson",
+   "Brenden Aaronson",
+   "Dominic Calvert-Lewin"
+  ],
+  "away_bench": [
+   "Noah Okafor",
+   "Anton Stach",
+   "Lukas Nmecha",
+   "Sean Longstaff",
+   "Michael Zetterer",
+   "Melvin Bard",
+   "Alfie Cresswell",
+   "Ilia Gruev",
+   "Jean-Mattéo Bahoya"
+  ],
+  "substitution_events": [
+   {
+    "team": "Sunderland",
+    "in": "Omar Alderete",
+    "out": "Nordi Mukiele",
+    "minute": "52"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Timur Tuterov",
+    "out": "Brian Brobbey",
+    "minute": "65"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Chemsdine Talbi",
+    "out": "Nilson Angulo",
+    "minute": "79"
+   },
+   {
+    "team": "Sunderland",
+    "in": "Habib Diarra",
+    "out": "Enzo Le Fée",
+    "minute": "79"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Noah Okafor",
+    "out": "Brenden Aaronson",
+    "minute": "65"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Anton Stach",
+    "out": "Harry Wilson",
+    "minute": "66"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Lukas Nmecha",
+    "out": "Dominic Calvert-Lewin",
+    "minute": "85"
+   },
+   {
+    "team": "Leeds United",
+    "in": "Sean Longstaff",
+    "out": "Ao Tanaka",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Stuart Attwell",
+  "attendance": 46182,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

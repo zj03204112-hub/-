@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "epl-2026-27-2026-08-23-brightonhovealbion-astonvilla",
+ "date": "2026-08-23",
+ "home": "Brighton & Hove Albion",
+ "away": "Aston Villa",
+ "score": "4-0",
+ "halftime_score": "4-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795369",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795369"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bart Verbruggen",
+   "Mats Wieffer",
+   "Luka Vuskovic",
+   "Lewis Dunk",
+   "Olivier Boscagli",
+   "Pascal Groß",
+   "Yasin Ayari",
+   "Diego Gómez",
+   "Jack Hinshelwood",
+   "Maxim De Cuyper",
+   "Georginio Rutter"
+  ],
+  "home_bench": [
+   "Costinha",
+   "Charalampos Kostoulas",
+   "Ibrahim Osman",
+   "Zadok Yohanna",
+   "Malick Junior Yalcouyé",
+   "Jason Steele",
+   "Michael Svoboda",
+   "Pascal Struijk",
+   "Promise David"
+  ],
+  "away_starting_xi": [
+   "Marco Bizot",
+   "Matty Cash",
+   "Victor Nilsson Lindelöf",
+   "Pau Torres",
+   "Ian Maatsen",
+   "Boubacar Kamara",
+   "João Gomes",
+   "John McGinn",
+   "Ross Barkley",
+   "George Hemmings",
+   "Emiliano Buendía"
+  ],
+  "away_bench": [
+   "Tyrone Mings",
+   "Lamare Bogarde",
+   "Matteo Ruggeri",
+   "Alysson Edward",
+   "Alejandro Garnacho",
+   "Zion Suzuki",
+   "Luka Lynch",
+   "Triston Rowe",
+   "Bradley Burrowes"
+  ],
+  "substitution_events": [
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Charalampos Kostoulas",
+    "out": "Jack Hinshelwood",
+    "minute": "64"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Costinha",
+    "out": "Yasin Ayari",
+    "minute": "64"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Zadok Yohanna",
+    "out": "Mats Wieffer",
+    "minute": "78"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Ibrahim Osman",
+    "out": "Maxim De Cuyper",
+    "minute": "78"
+   },
+   {
+    "team": "Brighton & Hove Albion",
+    "in": "Malick Junior Yalcouyé",
+    "out": "Diego Gómez",
+    "minute": "86"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Lamare Bogarde",
+    "out": "Ross Barkley",
+    "minute": "74"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Tyrone Mings",
+    "out": "Pau Torres",
+    "minute": "74"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Matteo Ruggeri",
+    "out": "Ian Maatsen",
+    "minute": "81"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Alysson Edward",
+    "out": "John McGinn",
+    "minute": "82"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Alejandro Garnacho",
+    "out": "Emiliano Buendía",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 0
+  },
+  "provider_score": "4-0",
+  "score_consistent_with_events": true,
+  "referee": "Peter Bankes",
+  "attendance": 31746,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

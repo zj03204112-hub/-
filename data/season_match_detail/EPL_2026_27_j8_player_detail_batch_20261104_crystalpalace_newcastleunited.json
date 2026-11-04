@@ -1,0 +1,129 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "epl-2026-27-2026-10-25-crystalpalace-newcastleunited",
+ "date": "2026-10-25",
+ "home": "Crystal Palace",
+ "away": "Newcastle United",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795489",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795489"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Walter Benítez",
+   "Chris Richards",
+   "Axel Disasi",
+   "Jaydee Canvot",
+   "Anan Khalaili",
+   "Adam Wharton",
+   "Daichi Kamada",
+   "Tyrick Mitchell",
+   "Dwight McNeil",
+   "Yéremi Pino",
+   "Jean-Philippe Mateta"
+  ],
+  "home_bench": [
+   "Edward Nketiah",
+   "Darío Osorio",
+   "Remi Matthews",
+   "Ben Chilwell",
+   "Cheick Oumar Doucouré",
+   "Jefferson Lerma",
+   "Óscar Mingueza",
+   "Will Hughes",
+   "Evann Guessand"
+  ],
+  "away_starting_xi": [
+   "Lukás Hornícek",
+   "Amar Dedić",
+   "Fabian Schär",
+   "Daniel Burn",
+   "Lewis Hall",
+   "Nico González",
+   "Joelinton",
+   "Jacob Murphy",
+   "Joseph Willock",
+   "Harvey Barnes",
+   "William Osula"
+  ],
+  "away_bench": [
+   "Jacob Ramsey",
+   "Anthony Elanga",
+   "Yoane Wissa",
+   "Sean Steur",
+   "Malick Thiaw",
+   "Nick Pope",
+   "Sven Botman",
+   "Aladji Bamba",
+   "Bazoumana Touré"
+  ],
+  "substitution_events": [
+   {
+    "team": "Crystal Palace",
+    "in": "Edward Nketiah",
+    "out": "Jean-Philippe Mateta",
+    "minute": "62"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Darío Osorio",
+    "out": "Dwight McNeil",
+    "minute": "63"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Anthony Elanga",
+    "out": "Harvey Barnes",
+    "minute": "77"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Jacob Ramsey",
+    "out": "Joseph Willock",
+    "minute": "77"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Yoane Wissa",
+    "out": "William Osula",
+    "minute": "77"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Sean Steur",
+    "out": "Joelinton",
+    "minute": "85"
+   },
+   {
+    "team": "Newcastle United",
+    "in": "Malick Thiaw",
+    "out": "Amar Dedić",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Paul Tierney",
+  "attendance": 25018,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

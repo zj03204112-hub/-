@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "epl-2026-27-2026-10-17-fulham-hullcity",
+ "date": "2026-10-17",
+ "home": "Fulham",
+ "away": "Hull City",
+ "score": "1-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795479",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795479"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bernd Leno",
+   "Timothy Castagne",
+   "David Affengruber",
+   "Calvin Bassey",
+   "Antonee Robinson",
+   "Sander Berge",
+   "Shea Charles",
+   "Oscar Bobb",
+   "Joshua King",
+   "Alex Iwobi",
+   "Gonzalo García"
+  ],
+  "home_bench": [
+   "Ryan Sessegnon",
+   "Tom Cairney",
+   "César Palacios",
+   "Benjamin Lecomte",
+   "Joachim Andersen",
+   "Kenny Tete",
+   "Manuel Ángel",
+   "Kevin",
+   "Rodrigo Muniz"
+  ],
+  "away_starting_xi": [
+   "Konstantinos Tzolakis",
+   "Semi Ajayi",
+   "John Egan",
+   "Lucas Herrington",
+   "Lewie Coyle",
+   "Brooke Norton-Cuffy",
+   "Mohamed Belloumi",
+   "Matt Crooks",
+   "Regan Slater",
+   "Sorba Thomas",
+   "Oli McBurnie"
+  ],
+  "away_bench": [
+   "Tim Iroegbunam",
+   "Ryan Giles",
+   "Joe Gelhardt",
+   "Robinio Vaz",
+   "Hidemasa Morita",
+   "Dillon Phillips",
+   "Paddy McNair",
+   "Elliot Stroud",
+   "Jens Hjertø-Dahl"
+  ],
+  "substitution_events": [
+   {
+    "team": "Fulham",
+    "in": "Tom Cairney",
+    "out": "Oscar Bobb",
+    "minute": "78"
+   },
+   {
+    "team": "Fulham",
+    "in": "Ryan Sessegnon",
+    "out": "Joshua King",
+    "minute": "78"
+   },
+   {
+    "team": "Fulham",
+    "in": "César Palacios",
+    "out": "Gonzalo García",
+    "minute": "85"
+   },
+   {
+    "team": "Hull City",
+    "in": "Tim Iroegbunam",
+    "out": "Lucas Herrington",
+    "minute": "46"
+   },
+   {
+    "team": "Hull City",
+    "in": "Robinio Vaz",
+    "out": "Matt Crooks",
+    "minute": "68"
+   },
+   {
+    "team": "Hull City",
+    "in": "Joe Gelhardt",
+    "out": "Sorba Thomas",
+    "minute": "68"
+   },
+   {
+    "team": "Hull City",
+    "in": "Ryan Giles",
+    "out": "Brooke Norton-Cuffy",
+    "minute": "68"
+   },
+   {
+    "team": "Hull City",
+    "in": "Hidemasa Morita",
+    "out": "Regan Slater",
+    "minute": "75"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Chris Kavanagh",
+  "attendance": 27531,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

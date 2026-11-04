@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "epl-2026-27-2026-09-05-hullcity-astonvilla",
+ "date": "2026-09-05",
+ "home": "Hull City",
+ "away": "Aston Villa",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5795440",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795440"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Konstantinos Tzolakis",
+   "Semi Ajayi",
+   "John Egan",
+   "Nobel Mendy",
+   "Lewie Coyle",
+   "Ryan Giles",
+   "Mohamed Belloumi",
+   "Regan Slater",
+   "Lucas Gourna-Douath",
+   "Elliot Stroud",
+   "Oli McBurnie"
+  ],
+  "home_bench": [
+   "Sorba Thomas",
+   "Brooke Norton-Cuffy",
+   "Lucas Herrington",
+   "Jens Hjertø-Dahl",
+   "Mohamed-Ali Cho",
+   "Dillon Phillips",
+   "Matt Targett",
+   "Christos Mouzakitis",
+   "Robinio Vaz"
+  ],
+  "away_starting_xi": [
+   "Zion Suzuki",
+   "Matty Cash",
+   "Victor Nilsson Lindelöf",
+   "Tyrone Mings",
+   "Ian Maatsen",
+   "Boubacar Kamara",
+   "Ross Barkley",
+   "John McGinn",
+   "Emiliano Buendía",
+   "George Hemmings",
+   "Nicolas Jackson"
+  ],
+  "away_bench": [
+   "Matteo Ruggeri",
+   "Alejandro Garnacho",
+   "Alysson Edward",
+   "Aaron Wan-Bissaka",
+   "Tammy Abraham",
+   "Marco Bizot",
+   "Pau Torres",
+   "Lamare Bogarde",
+   "Ibrahim Mbaye"
+  ],
+  "substitution_events": [
+   {
+    "team": "Hull City",
+    "in": "Sorba Thomas",
+    "out": "Elliot Stroud",
+    "minute": "63"
+   },
+   {
+    "team": "Hull City",
+    "in": "Brooke Norton-Cuffy",
+    "out": "Lewie Coyle",
+    "minute": "64"
+   },
+   {
+    "team": "Hull City",
+    "in": "Lucas Herrington",
+    "out": "Nobel Mendy",
+    "minute": "71"
+   },
+   {
+    "team": "Hull City",
+    "in": "Jens Hjertø-Dahl",
+    "out": "Lucas Gourna-Douath",
+    "minute": "82"
+   },
+   {
+    "team": "Hull City",
+    "in": "Mohamed-Ali Cho",
+    "out": "Mohamed Belloumi",
+    "minute": "82"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Alejandro Garnacho",
+    "out": "Emiliano Buendía",
+    "minute": "75"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Alysson Edward",
+    "out": "George Hemmings",
+    "minute": "75"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Matteo Ruggeri",
+    "out": "Ian Maatsen",
+    "minute": "75"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Tammy Abraham",
+    "out": "Nicolas Jackson",
+    "minute": "85"
+   },
+   {
+    "team": "Aston Villa",
+    "in": "Aaron Wan-Bissaka",
+    "out": "Matty Cash",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Michael Oliver",
+  "attendance": 24425,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

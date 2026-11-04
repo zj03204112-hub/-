@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "epl-2026-27-2026-10-11-crystalpalace-nottinghamforest",
+ "date": "2026-10-11",
+ "home": "Crystal Palace",
+ "away": "Nottingham Forest",
+ "score": "3-1",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795469",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795469"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Walter Benítez",
+   "Jefferson Lerma",
+   "Chris Richards",
+   "Jaydee Canvot",
+   "Anan Khalaili",
+   "Adam Wharton",
+   "Quinten Timber",
+   "Tyrick Mitchell",
+   "Daichi Kamada",
+   "Yéremi Pino",
+   "Jørgen Strand Larsen"
+  ],
+  "home_bench": [
+   "Honest Ahanor",
+   "Edward Nketiah",
+   "Ismaïla Sarr",
+   "Dwight McNeil",
+   "Remi Matthews",
+   "Cheick Oumar Doucouré",
+   "Óscar Mingueza",
+   "Will Hughes",
+   "Evann Guessand"
+  ],
+  "away_starting_xi": [
+   "Matz Sels",
+   "Ola Aina",
+   "Ousmane Diomande",
+   "Murillo",
+   "Daniel Muñoz",
+   "Xaver Schlager",
+   "James McAtee",
+   "Neco Williams",
+   "Morgan Gibbs-White",
+   "Dan Ndoye",
+   "Liam Delap"
+  ],
+  "away_bench": [
+   "Ibrahim Sangaré",
+   "Callum Hudson-Odoi",
+   "Chris Wood",
+   "Arnaud Kalimuendo-Muinga",
+   "John Victor",
+   "Jair Cunha",
+   "Luca Netz",
+   "Nicolás Dominguez",
+   "Ryan Yates"
+  ],
+  "substitution_events": [
+   {
+    "team": "Crystal Palace",
+    "in": "Honest Ahanor",
+    "out": "Jefferson Lerma",
+    "minute": "72"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Edward Nketiah",
+    "out": "Jørgen Strand Larsen",
+    "minute": "83"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Ismaïla Sarr",
+    "out": "Yéremi Pino",
+    "minute": "83"
+   },
+   {
+    "team": "Crystal Palace",
+    "in": "Dwight McNeil",
+    "out": "Daichi Kamada",
+    "minute": "90"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Ibrahim Sangaré",
+    "out": "Xaver Schlager",
+    "minute": "66"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Callum Hudson-Odoi",
+    "out": "Dan Ndoye",
+    "minute": "72"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Chris Wood",
+    "out": "Liam Delap",
+    "minute": "72"
+   },
+   {
+    "team": "Nottingham Forest",
+    "in": "Arnaud Kalimuendo-Muinga",
+    "out": "Ola Aina",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 1
+  },
+  "provider_score": "3-1",
+  "score_consistent_with_events": true,
+  "referee": "Peter Bankes",
+  "attendance": 25120,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

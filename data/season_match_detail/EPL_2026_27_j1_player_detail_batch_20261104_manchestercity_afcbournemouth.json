@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Premier League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "epl-2026-27-2026-08-23-manchestercity-afcbournemouth",
+ "date": "2026-08-23",
+ "home": "Manchester City",
+ "away": "AFC Bournemouth",
+ "score": "2-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5795370",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5795370"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Gianluigi Donnarumma",
+   "Rico Lewis",
+   "Abdukodir Khusanov",
+   "Rúben Dias",
+   "Josko Gvardiol",
+   "Elliot Anderson",
+   "Marc Guéhi",
+   "Phil Foden",
+   "Nico O'Reilly",
+   "Antoine Semenyo",
+   "Erling Haaland"
+  ],
+  "home_bench": [
+   "Matheus Nunes",
+   "Mateo Kovacic",
+   "Rayan Cherki",
+   "Jack Grealish",
+   "Gerónimo Rulli",
+   "Rayan Aït-Nouri",
+   "Vitor Reis",
+   "Nico González",
+   "Omar Marmoush"
+  ],
+  "away_starting_xi": [
+   "Djordje Petrovic",
+   "Adam Smith",
+   "James Hill",
+   "António Silva",
+   "Adrien Truffert",
+   "Lewis Cook",
+   "Alex Scott",
+   "Rayan",
+   "Justin Kluivert",
+   "Marcus Tavernier",
+   "Evanilson"
+  ],
+  "away_bench": [
+   "Alex Tóth",
+   "Tyler Adams",
+   "Daniel Jebbison",
+   "Ben Gannon-Doak",
+   "Will Dennis",
+   "Bafodé Diakité",
+   "Juanlu Sánchez",
+   "Álvaro Rodriguez",
+   "David Brooks"
+  ],
+  "substitution_events": [
+   {
+    "team": "Manchester City",
+    "in": "Matheus Nunes",
+    "out": "Rico Lewis",
+    "minute": "57"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Mateo Kovacic",
+    "out": "Elliot Anderson",
+    "minute": "63"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Rayan Cherki",
+    "out": "Nico O'Reilly",
+    "minute": "63"
+   },
+   {
+    "team": "Manchester City",
+    "in": "Jack Grealish",
+    "out": "Phil Foden",
+    "minute": "82"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Alex Tóth",
+    "out": "Justin Kluivert",
+    "minute": "75"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Daniel Jebbison",
+    "out": "Evanilson",
+    "minute": "75"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Tyler Adams",
+    "out": "Lewis Cook",
+    "minute": "75"
+   },
+   {
+    "team": "AFC Bournemouth",
+    "in": "Ben Gannon-Doak",
+    "out": "Rayan",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Jarred Gillett",
+  "attendance": 60645,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EPL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EPL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}
