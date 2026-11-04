@@ -1,0 +1,43 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "J1 League",
+ "season": "2026/27",
+ "baseline_matches": 130,
+ "fixtures_with_player_detail": 130,
+ "player_rows": 5197,
+ "substitution_rows": 1261,
+ "event_rows": 764,
+ "events_by_type": {
+  "goal": 391,
+  "yellow_card": 373
+ },
+ "match_meta_rows": 130,
+ "meta_missing": {
+  "ManagerHome": 1,
+  "ManagerAway": 1,
+  "Venue": 1,
+  "Referee": 1,
+  "Attendance": 1
+ },
+ "xg_rows_filled": 130,
+ "xg_total": 362.37,
+ "goals_vs_scoreline": "391 goal events across 130 fixtures, 0 mismatches against the result table",
+ "sources": {
+  "players": "J.League Data Site official match records (pre-existing)",
+  "substitutions": "J.League Data Site official match records (pre-existing)",
+  "events": "J.League Data Site official match records (goals, yellow cards)",
+  "match_meta": "J.League Data Site official match records (coaches, venue, referee, attendance)",
+  "xg_xga": "FotMob public match API, shot level xG summed per team (secondary; J.League publishes no xG)"
+ },
+ "known_gaps": [
+  "Red cards: the official match page renders 0 dismissal events across all 130 matches while FotMob reports some; the dismissal block is not exposed in the parsed sections, so red cards are left empty instead of being guessed.",
+  "Assists: the official J.League match record does not publish an assisting player, so the column stays blank.",
+  "Formations: not published on the official match record page, so both formation columns stay blank.",
+  "Coaches/venue/referee/attendance are missing for 1 fixture each (page layout variant).",
+  "xG is a third party derived value, not an official J.League figure."
+ ],
+ "pipeline": [
+  "data_pipeline/collect_j1_official_events.py",
+  "data_pipeline/fill_j1_match_xg_from_fotmob.py"
+ ]
+}

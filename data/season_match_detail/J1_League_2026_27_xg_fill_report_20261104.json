@@ -1,0 +1,34 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "J1 League",
+ "season": "2026/27",
+ "table": "J1_League_2026_27_xg_xga.csv",
+ "method": "sum of FotMob shot level expected goals per team",
+ "source": "FotMob public match API (secondary, J.League does not publish xG)",
+ "rows_filled": 130,
+ "rows_without_fotmob_match": 0,
+ "samples": [
+  [
+   "2026-08-07",
+   "横浜FM",
+   "鹿島",
+   "1.46",
+   "3.59"
+  ],
+  [
+   "2026-08-07",
+   "Ｇ大阪",
+   "浦和",
+   "1.08",
+   "3.24"
+  ],
+  [
+   "2026-08-08",
+   "Ｃ大阪",
+   "岡山",
+   "0.78",
+   "1.35"
+  ]
+ ],
+ "caveat": "xG is a third party derived value, not an official J.League figure; xGA is the opponent's summed xG for the same match."
+}
