@@ -1,0 +1,126 @@
+{
+  "report_date_beijing": "2026-11-04",
+  "classification": "current-date early-completed shadow-snapshot diagnostic; excluded from previous-day formal accuracy",
+  "model": "RESEARCH-XG-POISSON-v1.0",
+  "production_accuracy_excluded": true,
+  "matches": [
+    {
+      "match": "Galatasaray vs VfB Stuttgart",
+      "snapshot_path": "predictions/continental-club/uefa-champions-league/2026-11-04/research-xg-poisson-20261103-1500-galatasaray-stuttgart.json",
+      "strategy_id": "RESEARCH-XG-POISSON-20261103-1500-01",
+      "confidence_10": 5.5,
+      "predicted_scores": [
+        "1-1",
+        "2-1"
+      ],
+      "actual_ht": "2-0",
+      "actual_ft": "2-0",
+      "predicted_hda": "HOME",
+      "actual_hda": "HOME",
+      "predicted_half_full": "胜/胜",
+      "actual_half_full": "胜/胜",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": true,
+      "half_full_hit": true,
+      "official_sporttery_handicap": null,
+      "handicap_status": "UNVERIFIABLE",
+      "risk_status": "CONTEXTUAL_NOT_BINARY",
+      "result_source": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/"
+    },
+    {
+      "match": "Shakhtar Donetsk vs Sporting CP",
+      "snapshot_path": "predictions/continental-club/uefa-champions-league/2026-11-04/research-xg-poisson-20261103-1500-shakhtar-sporting.json",
+      "strategy_id": "RESEARCH-XG-POISSON-20261103-1500-02",
+      "confidence_10": 5,
+      "predicted_scores": [
+        "1-1",
+        "1-2"
+      ],
+      "actual_ht": "0-0",
+      "actual_ft": "0-1",
+      "predicted_hda": "AWAY",
+      "actual_hda": "AWAY",
+      "predicted_half_full": "负/负",
+      "actual_half_full": "平/负",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": true,
+      "half_full_hit": false,
+      "official_sporttery_handicap": null,
+      "handicap_status": "UNVERIFIABLE",
+      "risk_status": "CONTEXTUAL_WARNING_CORROBORATED",
+      "risk_review": "Stamford Bridge neutral venue rather than Shakhtar's usual home was correctly flagged.",
+      "result_source": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/"
+    },
+    {
+      "match": "Esteghlal vs Al-Shamal",
+      "snapshot_path": "predictions/continental-club/afc-champions-league-elite/2026-11-04/research-xg-poisson-20261103-1500-esteghlal-alshamal.json",
+      "strategy_id": "RESEARCH-XG-POISSON-20261103-1500-03",
+      "confidence_10": 4.5,
+      "predicted_scores": [
+        "1-1",
+        "1-0"
+      ],
+      "actual_ht": "0-0",
+      "actual_ft": "1-0",
+      "predicted_hda": "HOME",
+      "actual_hda": "HOME",
+      "predicted_half_full": "胜/胜",
+      "actual_half_full": "平/胜",
+      "score1_hit": false,
+      "score2_hit": true,
+      "hda_hit": true,
+      "half_full_hit": false,
+      "official_sporttery_handicap": null,
+      "handicap_status": "UNVERIFIABLE",
+      "risk_status": "CONTEXTUAL_NOT_BINARY",
+      "risk_review": "Large model disagreement and conflicting injury reports were real pre-match uncertainties, not a binary event.",
+      "result_source": "https://darbah.com/en/match/esteghlal-fc-vs-al-shamal-1629971/"
+    },
+    {
+      "match": "Al-Hilal vs Shabab Al-Ahli Dubai",
+      "snapshot_path": "predictions/continental-club/afc-champions-league-elite/2026-11-04/research-xg-poisson-20261103-1500-alhilal-shabab.json",
+      "strategy_id": "RESEARCH-XG-POISSON-20261103-1500-04",
+      "confidence_10": 5.5,
+      "predicted_scores": [
+        "2-0",
+        "2-1"
+      ],
+      "actual_ht": "1-0",
+      "actual_ft": "2-0",
+      "predicted_hda": "HOME",
+      "actual_hda": "HOME",
+      "predicted_half_full": "胜/胜",
+      "actual_half_full": "胜/胜",
+      "score1_hit": true,
+      "score2_hit": false,
+      "hda_hit": true,
+      "half_full_hit": true,
+      "official_sporttery_handicap": null,
+      "handicap_status": "UNVERIFIABLE",
+      "risk_status": "CORROBORATED",
+      "risk_review": "The four-player absence warning is supported by the published XI/bench: Salem Al-Dawsari, Rúben Neves, Gabriel Martinelli and Crysencio Summerville were not listed in the matchday squad.",
+      "result_source": "https://www.soccermag.com/match/al-hilal-vs-shabab-al-ahli-dubai-2026-11-03/"
+    }
+  ],
+  "summary": {
+    "matches": 4,
+    "hda_hits": 4,
+    "hda_rate_pct": 100,
+    "first_score_hits": 1,
+    "first_score_rate_pct": 25,
+    "second_score_hits": 1,
+    "second_score_rate_pct": 25,
+    "half_full_hits": 2,
+    "half_full_rate_pct": 50,
+    "official_sporttery_handicap_verified": 0,
+    "handicap_results": "NOT_VERIFIABLE",
+    "risk_flags": {
+      "corroborated_or_contextually_confirmed": 2,
+      "contextual_not_binary": 2
+    },
+    "note": "These four are shadow research snapshots, not V5.1 or validated production-model accuracy."
+  },
+  "created_at_beijing": "2026-11-04T10:22:00+08:00"
+}
