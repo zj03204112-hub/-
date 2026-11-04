@@ -1,0 +1,122 @@
+{
+  "schema_version": "immutable-prediction-snapshot-v1",
+  "prediction_id": "match:uefa-champions-league:2026-11-04:aek-athens:real-madrid:RESEARCH-XG-POISSON-v1.0:2026-11-04T15:00+08:00",
+  "created_at_beijing": "2026-11-04T15:00:00+08:00",
+  "match_id": "match:uefa-champions-league:2026-11-04:aek-athens:real-madrid",
+  "competition_id": "uefa-champions-league",
+  "competition": "UEFA Champions League",
+  "competition_type": "continental_club",
+  "season": "2026-27",
+  "home_team": "AEK Athens",
+  "away_team": "Real Madrid",
+  "kickoff_utc": "2026-11-04T17:45:00Z",
+  "kickoff_beijing": "2026-11-05T01:45:00+08:00",
+  "prediction_window_hours_before_kickoff": 10.75,
+  "market": {
+    "official_sporttery_status": "UNVERIFIED_OFFICIAL_SOURCE_UNAVAILABLE",
+    "official_sporttery_handicap": null,
+    "official_sporttery_1x2": null,
+    "opening_to_current_official_sporttery": null,
+    "official_capture_timestamp": null,
+    "third_party_market_observations": [
+      {
+        "source": "Stake第三方赔率页",
+        "odds": "7.80/6.20/1.30",
+        "timestamp": "页面当前展示，未披露精确抓取时间",
+        "url": "https://stake1021.com/zh/sports/soccer/international-clubs/uefa-champions-league/46853706-aek-athens-real-madrid",
+        "used_for_prediction": false
+      },
+      {
+        "source": "Moneyball model consensus",
+        "odds": "Madrid win model consensus 73%",
+        "timestamp": "赛前模型页，精确抓取时间未披露",
+        "url": "https://moneyball-odds.com/previews/aek-athens-vs-real-madrid-2026-11-04",
+        "used_for_prediction": false
+      }
+    ],
+    "usage_rule": "Third-party prices are stored only as context and were not used to determine the prediction or the Poisson lambdas."
+  },
+  "prematch_inputs": {
+    "selected_provider_projected_xg": {
+      "provider": "xG.Football projected xG model",
+      "provider_model_version": "not_disclosed",
+      "home_xg": 1.73,
+      "away_xg": 1.76,
+      "type": "provider_model_estimate",
+      "source_url": "https://xg.football/matches/aek-athens-fc-real-madrid-2026-11-04",
+      "source_capture_time": "page available by 2026-11-04 15:00 Beijing; exact upstream timestamp not disclosed"
+    },
+    "recent_form_last3": {
+      "home": "近3场 D-W-W（第三方赛前资料）",
+      "away": "近3场 L-W-W（第三方赛前资料）"
+    },
+    "injuries": "AEK：Thomas Strakosha伤情待定/缺阵，Dereck Kutesa、João Mário等停赛或缺阵报告；Real Madrid：Vinícius Jr停赛，Raúl Asencio、Rodrygo伤缺，Tchouaméni/Arda Güler有轮休报告；名单来源之间存在差异",
+    "starting_lineup_status": "OFFICIAL_STARTING_XI_NOT_YET_PUBLISHED; probable lineup data not treated as confirmed",
+    "tactics": "Madrid预测阵型4-2-3-1；AEK预计名单未核实；不视为官方首发",
+    "weather": "Athens开赛约16°C、干燥",
+    "referee": "Maurizio Mariani（第三方赛前指派报道，待UEFA页面最终确认）",
+    "schedule_motivation": "双方均约3天休息；Madrid需要积分维持前八竞争，AEK主场抢分；下一轮联赛安排需临场再核",
+    "professional_commentator_analysis": "未取得可追溯的专业足球评论员原始分析；未编造评论员观点。",
+    "missing_fields": [
+      "官方竞彩盘口及初盘/即时盘",
+      "正式首发11人",
+      "部分伤停的官方确认",
+      "部分裁判原始指派",
+      "部分天气/战术/下一场对手核验",
+      "上游xG抓取时间及原始响应"
+    ]
+  },
+  "model": {
+    "model_version": "RESEARCH-XG-POISSON-v1.0",
+    "production_status": "RESEARCH_ONLY_NOT_PRODUCTION; NOT_V5.1",
+    "method": "Independent Poisson score matrix from one selected provider projected-xG source per match; no cross-provider xG averaging and no odds-derived lambdas.",
+    "lambda_home": 1.73,
+    "lambda_away": 1.76,
+    "probabilities_90m_percent": {
+      "home_win": 38.2,
+      "draw": 22.3,
+      "away_win": 39.5
+    },
+    "most_likely_scores": [
+      {
+        "score": "1-1",
+        "probability_percent": 9.29
+      },
+      {
+        "score": "1-2",
+        "probability_percent": 8.17
+      }
+    ],
+    "halftime_model": {
+      "first_half_lambda_share": 0.45,
+      "second_half_lambda_share": 0.55,
+      "assumption": "Research assumption; not calibrated as a production halftime model."
+    },
+    "most_likely_half_full_time": {
+      "result": "负负",
+      "probability_percent": 24
+    },
+    "personal_confidence_0_to_10": 4,
+    "strategy_id": "RXP-20261104-1500-AEK_ATHENS_REAL_MADRID",
+    "risk": "xG.Football的1.73/1.76与Moneyball另一模型1.22/2.70差异很大；另一模型给Madrid约73%胜率。本预测只采用xG.Football单一来源，不混合供应商；AEK和Madrid均有多名球员缺阵/轮休不确定。",
+    "data_completeness_percent": 70
+  },
+  "prediction": {
+    "first_score": "1-1",
+    "second_score": "1-2",
+    "result_90m": "客胜",
+    "handicap_1x2": "无法核验",
+    "handicap_mapping_status": "NOT_CALCULATED; official Sporttery handicap missing",
+    "half_full_time": "负负"
+  },
+  "provenance": {
+    "source_urls": [
+      "https://xg.football/matches/aek-athens-fc-real-madrid-2026-11-04",
+      "https://stake1021.com/zh/sports/soccer/international-clubs/uefa-champions-league/46853706-aek-athens-real-madrid",
+      "https://moneyball-odds.com/previews/aek-athens-vs-real-madrid-2026-11-04"
+    ],
+    "immutable": true,
+    "post_match_xg_used_as_same_match_prematch_input": false,
+    "model_change": "No V5.1 or frozen validation sample change."
+  }
+}
