@@ -1,0 +1,160 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "aclelite-2026-27-2026-10-27-shanghaiport-conganhanoi",
+ "date": "2026-10-27",
+ "home": "Shanghai Port",
+ "away": "Công An Hà Nội",
+ "score": "2-3",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/6049995",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6049995"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Junling Yan",
+   "Miguel Campos",
+   "Tyias Browning",
+   "Umidjan Yusup",
+   "Alex Yang",
+   "Shuai Li",
+   "Jiwen Kuai",
+   "Óscar Melendo",
+   "Jaume Grau",
+   "Prince Ampem",
+   "Lei Wu"
+  ],
+  "home_bench": [
+   "Mateus Vital",
+   "Zhurun Liu",
+   "Leonardo",
+   "Yuan Zhang",
+   "Xinxiang Li",
+   "Wei Chen",
+   "Huan Fu",
+   "Shenchao Wang",
+   "Xin Yue",
+   "Zhen Wei",
+   "Zhenao Wang",
+   "Jean Claude"
+  ],
+  "away_starting_xi": [
+   "Nguyễn Filip",
+   "Frans Putros",
+   "Leygley Adou",
+   "Doàn Văn Hậu",
+   "Jason Pendant",
+   "Damià Sabater",
+   "Lê Văn Dô",
+   "Alan Grafite",
+   "Stefan Mauk",
+   "Brayan Perea",
+   "Léo Artur"
+  ],
+  "away_bench": [
+   "Phan Ngọc Tín",
+   "Lê Phạm Thành Long",
+   "Nguyễn Quang Hải",
+   "Hoàng Văn Toản",
+   "Đinh Thanh Bình",
+   "Vũ Thành Vinh",
+   "Y Êli Niê",
+   "Hà Văn Phương",
+   "Bùi Xuân Thịnh"
+  ],
+  "substitution_events": [
+   {
+    "team": "Shanghai Port",
+    "in": "Leonardo",
+    "out": "Lei Wu",
+    "minute": "61"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Zhurun Liu",
+    "out": "Jiwen Kuai",
+    "minute": "61"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Mateus Vital",
+    "out": "Jaume Grau",
+    "minute": "61"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Xinxiang Li",
+    "out": "Miguel Campos",
+    "minute": "89"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Yuan Zhang",
+    "out": "Óscar Melendo",
+    "minute": "89"
+   },
+   {
+    "team": "Công An Hà Nội",
+    "in": "Nguyễn Quang Hải",
+    "out": "Damià Sabater",
+    "minute": "66"
+   },
+   {
+    "team": "Công An Hà Nội",
+    "in": "Lê Phạm Thành Long",
+    "out": "Alan Grafite",
+    "minute": "66"
+   },
+   {
+    "team": "Công An Hà Nội",
+    "in": "Phan Ngọc Tín",
+    "out": "Lê Văn Dô",
+    "minute": "66"
+   },
+   {
+    "team": "Công An Hà Nội",
+    "in": "Hoàng Văn Toản",
+    "out": "Stefan Mauk",
+    "minute": "88"
+   },
+   {
+    "team": "Công An Hà Nội",
+    "in": "Đinh Thanh Bình",
+    "out": "Léo Artur",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "Choi Hyun-Jae",
+  "attendance": 10399,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-3"
+  }
+ }
+}

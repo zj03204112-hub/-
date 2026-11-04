@@ -1,0 +1,150 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "aclelite-2026-27-2026-09-14-neftchifargona-alquwaaljawiya",
+ "date": "2026-09-14",
+ "home": "Neftchi Fargona",
+ "away": "Al Quwa Al Jawiya",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6050064",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050064"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Botirali Ergashev",
+   "Farrukh Sayfiev",
+   "Nurmukhammad Abduganiev",
+   "Bojan Ciger",
+   "Koffi Kouao",
+   "Abrorbek Ismoilov",
+   "Ratinho",
+   "Yan Sasse",
+   "Ikrom Alibaev",
+   "Stipe Perica",
+   "Alisher Odilov"
+  ],
+  "home_bench": [
+   "Bilolkhon Toshmirzaev",
+   "Zoran Marušić",
+   "Khurshid Giyosov",
+   "Anvar Gofurov",
+   "Akbar Turaev",
+   "Ibrokhim Shokirov",
+   "Michel",
+   "Mushinjon Ubaydullaev",
+   "Rustambek Fomin",
+   "Azizbek Muratov",
+   "Marcus Forss",
+   "Nurbek Sarsenbaev"
+  ],
+  "away_starting_xi": [
+   "Mohammed Salih",
+   "Ruslan Hanoon",
+   "Saed Al-Rosan",
+   "Muslim Moussa",
+   "Mohanad Jeahze",
+   "Al Hareth Hatam",
+   "Saad Abdul-Amir",
+   "Ali Saad",
+   "Abbas Fawzi",
+   "Tuisila Kisinda",
+   "Mohammed Jawad"
+  ],
+  "away_bench": [
+   "Mujtabo Aeel",
+   "Murad Mohammad",
+   "Moses Orkuma",
+   "Haythem Jouini",
+   "Mohammed Ziyadi",
+   "Zainulabdeen Nassif",
+   "Abbas Adel",
+   "Karar Ali Hassan",
+   "Sipan Sediq",
+   "Mohammed Sami",
+   "Tomás Andrade"
+  ],
+  "substitution_events": [
+   {
+    "team": "Neftchi Fargona",
+    "in": "Bilolkhon Toshmirzaev",
+    "out": "Abrorbek Ismoilov",
+    "minute": "46"
+   },
+   {
+    "team": "Neftchi Fargona",
+    "in": "Zoran Marušić",
+    "out": "Yan Sasse",
+    "minute": "56"
+   },
+   {
+    "team": "Neftchi Fargona",
+    "in": "Khurshid Giyosov",
+    "out": "Stipe Perica",
+    "minute": "72"
+   },
+   {
+    "team": "Neftchi Fargona",
+    "in": "Anvar Gofurov",
+    "out": "Alisher Odilov",
+    "minute": "88"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Murad Mohammad",
+    "out": "Tuisila Kisinda",
+    "minute": "63"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Mujtabo Aeel",
+    "out": "Al Hareth Hatam",
+    "minute": "63"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Moses Orkuma",
+    "out": "Ali Saad",
+    "minute": "72"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Haythem Jouini",
+    "out": "Mohammed Jawad",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Adel Al Naqbi",
+  "attendance": 17250,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-0"
+  }
+ }
+}

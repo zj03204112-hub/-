@@ -1,0 +1,156 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "aclelite-2026-27-2026-10-13-alsadd-alhilal",
+ "date": "2026-10-13",
+ "home": "Al-Sadd",
+ "away": "Al Hilal",
+ "score": "0-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/6050078",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050078"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Meshaal Barsham",
+   "Pedro Miguel",
+   "Alessio Romagnoli",
+   "Boualem Khoukhi",
+   "Paulo Otávio",
+   "Agustín Soría",
+   "Claudinho",
+   "Hashim Ali",
+   "Roberto Firmino",
+   "Akram Afif",
+   "Mohamed Manai"
+  ],
+  "home_bench": [
+   "Saad Al Sheeb",
+   "Mohamed Camara",
+   "Giovani",
+   "Yusuf Abdurisag",
+   "Yousef Abdulla Baliadeh",
+   "Mohammed Waad",
+   "Tarek Salman",
+   "Youcef Atal",
+   "Younes El Hannach",
+   "Hassan Al-Haydos",
+   "Mustafa Mashaal"
+  ],
+  "away_starting_xi": [
+   "Yassine Bounou",
+   "Mohammed Mahzari",
+   "Kalidou Koulibaly",
+   "Yusuf Akçiçek",
+   "Moteb Al-Harbi",
+   "Sergej Milinković-Savić",
+   "Rúben Neves",
+   "Mohamed Kanno",
+   "Sultan Mandash",
+   "Ollie Watkins",
+   "Gabriel Martinelli"
+  ],
+  "away_bench": [
+   "Murad Al-Hawsawi",
+   "Theo Hernández",
+   "Mohamed Meïté",
+   "Sabri Dahal",
+   "Ali Lajami",
+   "Mohammed Al Owais",
+   "Mohammed Al-Yami",
+   "Mishaal Al Dawood",
+   "Mohamed Al-Sarnukh",
+   "Saïmon Bouabré",
+   "Suhayb Al-Zaid",
+   "Nawaf Al Habashi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Al-Sadd",
+    "in": "Saad Al Sheeb",
+    "out": "Meshaal Barsham",
+    "minute": "66"
+   },
+   {
+    "team": "Al-Sadd",
+    "in": "Giovani",
+    "out": "Hashim Ali",
+    "minute": "67"
+   },
+   {
+    "team": "Al-Sadd",
+    "in": "Mohamed Camara",
+    "out": "Agustín Soría",
+    "minute": "67"
+   },
+   {
+    "team": "Al-Sadd",
+    "in": "Yusuf Abdurisag",
+    "out": "Mohamed Manai",
+    "minute": "74"
+   },
+   {
+    "team": "Al Hilal",
+    "in": "Murad Al-Hawsawi",
+    "out": "Mohamed Kanno",
+    "minute": "66"
+   },
+   {
+    "team": "Al Hilal",
+    "in": "Theo Hernández",
+    "out": "Moteb Al-Harbi",
+    "minute": "74"
+   },
+   {
+    "team": "Al Hilal",
+    "in": "Sabri Dahal",
+    "out": "Sultan Mandash",
+    "minute": "74"
+   },
+   {
+    "team": "Al Hilal",
+    "in": "Mohamed Meïté",
+    "out": "Ollie Watkins",
+    "minute": "74"
+   },
+   {
+    "team": "Al Hilal",
+    "in": "Ali Lajami",
+    "out": "Kalidou Koulibaly",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Yusuke Araki",
+  "attendance": 11223,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-2"
+  }
+ }
+}

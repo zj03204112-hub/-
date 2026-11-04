@@ -1,0 +1,149 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "aclelite-2026-27-2026-10-26-alqadsiah-alsadd",
+ "date": "2026-10-26",
+ "home": "Al Qadsiah",
+ "away": "Al-Sadd",
+ "score": "1-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6050084",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050084"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Koen Casteels",
+   "Mohammed Abu Al Shamat",
+   "Gaston Álvarez",
+   "Yasir Al Shahrani",
+   "Mohammed Hamad Al Qahtani",
+   "Sani Suleiman",
+   "Julian Weigl",
+   "Ahmed Al Siyahi",
+   "Musab Al-Juwayr",
+   "Julián Quiñones",
+   "Mateo Retegui"
+  ],
+  "home_bench": [
+   "Christopher Bonsu Baah",
+   "Tijjani Reijnders",
+   "Jehad Thakri",
+   "Turki Al Ammar",
+   "Ahmed Ali Al Kassar",
+   "Meshary Sanyor",
+   "Abdulmalik Al-Jaber",
+   "Elias Sheikh",
+   "Eyad Houssa",
+   "Abdullah Al Salem",
+   "Mahamadou Sangaré"
+  ],
+  "away_starting_xi": [
+   "Meshaal Barsham",
+   "Pedro Miguel",
+   "Tarek Salman",
+   "Boualem Khoukhi",
+   "Paulo Otávio",
+   "Mohamed Camara",
+   "Claudinho",
+   "Hashim Ali",
+   "Yusuf Abdurisag",
+   "Akram Afif",
+   "Roberto Firmino"
+  ],
+  "away_bench": [
+   "Giovani",
+   "Mohamed Manai",
+   "Mohammed Waad",
+   "Mustafa Mashaal",
+   "Saad Al Sheeb",
+   "Yousef Abdulla Baliadeh",
+   "Abdessamed Bounacer",
+   "Youcef Atal",
+   "Younes El Hannach",
+   "Guilherme",
+   "Hassan Al-Haydos"
+  ],
+  "substitution_events": [
+   {
+    "team": "Al Qadsiah",
+    "in": "Tijjani Reijnders",
+    "out": "Mohammed Hamad Al Qahtani",
+    "minute": "55"
+   },
+   {
+    "team": "Al Qadsiah",
+    "in": "Christopher Bonsu Baah",
+    "out": "Sani Suleiman",
+    "minute": "55"
+   },
+   {
+    "team": "Al Qadsiah",
+    "in": "Jehad Thakri",
+    "out": "Ahmed Al Siyahi",
+    "minute": "68"
+   },
+   {
+    "team": "Al Qadsiah",
+    "in": "Turki Al Ammar",
+    "out": "Mohammed Abu Al Shamat",
+    "minute": "68"
+   },
+   {
+    "team": "Al-Sadd",
+    "in": "Giovani",
+    "out": "Hashim Ali",
+    "minute": "46"
+   },
+   {
+    "team": "Al-Sadd",
+    "in": "Mohamed Manai",
+    "out": "Yusuf Abdurisag",
+    "minute": "61"
+   },
+   {
+    "team": "Al-Sadd",
+    "in": "Mohammed Waad",
+    "out": "Paulo Otávio",
+    "minute": "75"
+   },
+   {
+    "team": "Al-Sadd",
+    "in": "Mustafa Mashaal",
+    "out": "Roberto Firmino",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Omar Al Ali",
+  "attendance": 7812,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-1"
+  }
+ }
+}

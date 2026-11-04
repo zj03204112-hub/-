@@ -1,0 +1,162 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "aclelite-2026-27-2026-09-15-ratchaburifc-shanghaiport",
+ "date": "2026-09-15",
+ "home": "Ratchaburi FC",
+ "away": "Shanghai Port",
+ "score": "4-6",
+ "halftime_score": "0-3",
+ "official_match_url": "https://www.fotmob.com/matches/6049979",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6049979"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kampol Pathomakkakul",
+   "Jesse Curran",
+   "Jonathan Khemdee",
+   "Tarek Aggoun",
+   "Sai van Wermeskerken",
+   "Roque Mesa",
+   "Scott Allardice",
+   "Tana",
+   "Jonathan Viera",
+   "Rafael Bilu",
+   "Bruno Mendes"
+  ],
+  "home_bench": [
+   "Tossawat Limwanasthien",
+   "Daniel Sang Ting",
+   "Chotipat Poomkaew",
+   "Ekanit Panya",
+   "Njiva Rakotoharimalala",
+   "Nopphon Lakhonphon",
+   "Ukrit Wongmeema",
+   "Adisorn Promrak",
+   "Sanchai Nonthasila",
+   "Phongsakorn Sangkasopha",
+   "Sorawit Panthong"
+  ],
+  "away_starting_xi": [
+   "Junling Yan",
+   "Miguel",
+   "Tyias Browning",
+   "Zhen Wei",
+   "Zhenao Wang",
+   "Óscar Melendo",
+   "Jaume Grau",
+   "Mateus Vital",
+   "Xin Yue",
+   "Lei Wu",
+   "Prince Ampem"
+  ],
+  "away_bench": [
+   "Zhurun Liu",
+   "Leonardo",
+   "Huan Fu",
+   "Jean Claude",
+   "Matthew Orr",
+   "Wei Chen",
+   "Zhiliang Li",
+   "Linpeng Zhang",
+   "Shenchao Wang",
+   "Shiyuan Yang",
+   "Yongtao Lu",
+   "Yuan Zhang"
+  ],
+  "substitution_events": [
+   {
+    "team": "Ratchaburi FC",
+    "in": "Tossawat Limwanasthien",
+    "out": "Scott Allardice",
+    "minute": "46"
+   },
+   {
+    "team": "Ratchaburi FC",
+    "in": "Ekanit Panya",
+    "out": "Tana",
+    "minute": "55"
+   },
+   {
+    "team": "Ratchaburi FC",
+    "in": "Chotipat Poomkaew",
+    "out": "Rafael Bilu",
+    "minute": "55"
+   },
+   {
+    "team": "Ratchaburi FC",
+    "in": "Daniel Sang Ting",
+    "out": "Jesse Curran",
+    "minute": "55"
+   },
+   {
+    "team": "Ratchaburi FC",
+    "in": "Njiva Rakotoharimalala",
+    "out": "Bruno Mendes",
+    "minute": "66"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Leonardo",
+    "out": "Lei Wu",
+    "minute": "63"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Zhurun Liu",
+    "out": "Prince Ampem",
+    "minute": "63"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Huan Fu",
+    "out": "Xin Yue",
+    "minute": "70"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Jean Claude",
+    "out": "Miguel",
+    "minute": "71"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Matthew Orr",
+    "out": "Óscar Melendo",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 6
+  },
+  "provider_score": "4-6",
+  "score_consistent_with_events": true,
+  "referee": "Kim Jong-Hyeok",
+  "attendance": 2974,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "4-6"
+  }
+ }
+}

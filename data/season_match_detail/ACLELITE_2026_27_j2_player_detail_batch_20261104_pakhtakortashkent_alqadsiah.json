@@ -1,0 +1,156 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "aclelite-2026-27-2026-10-12-pakhtakortashkent-alqadsiah",
+ "date": "2026-10-12",
+ "home": "Pakhtakor Tashkent",
+ "away": "Al Qadsiah",
+ "score": "1-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/6050072",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050072"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Vladimir Nazarov",
+   "Mukhammadrasul Abdumazhidov",
+   "Morteza Pouraliganji",
+   "Zaid Tahseen",
+   "Sherzod Nasrulloev",
+   "Akmal Mozgovoy",
+   "Abdurauf Buriev",
+   "Khoziakbar Alidzhanov",
+   "Flamarion",
+   "Bashar Resan",
+   "Stephen Chinedu"
+  ],
+  "home_bench": [
+   "Oybek Bozorov",
+   "Ayman Hussein",
+   "Dostonbek Khamdamov",
+   "Sardor Sabirkhodjaev",
+   "Ibrokhim Ibrokhimov",
+   "Maksim Murkaev",
+   "Sanjar Kuvvatov",
+   "Dilshod Abdullaev",
+   "Dilshod Saitov",
+   "Miraziz Abdukarimov",
+   "Mukhammad-Bobur Karimov",
+   "Sardor Mirkobilov"
+  ],
+  "away_starting_xi": [
+   "Koen Casteels",
+   "Jehad Thakri",
+   "Gaston Álvarez",
+   "Ali Diabaté",
+   "Nahitan Nández",
+   "Tijjani Reijnders",
+   "Julian Weigl",
+   "Musab Al-Juwayr",
+   "Christopher Bonsu Baah",
+   "Julián Quiñones",
+   "Mateo Retegui"
+  ],
+  "away_bench": [
+   "Yasir Al Shahrani",
+   "Mohammed Hamad Al Qahtani",
+   "Sani Suleiman",
+   "Abdullah Al Salem",
+   "Ahmed Ali Al Kassar",
+   "Meshary Sanyor",
+   "Abdulmalik Al-Jaber",
+   "Ahmed Al Siyahi",
+   "Eyad Houssa",
+   "Turki Al Ammar",
+   "Mahamadou Sangaré"
+  ],
+  "substitution_events": [
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Dostonbek Khamdamov",
+    "out": "Bashar Resan",
+    "minute": "77"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Ayman Hussein",
+    "out": "Stephen Chinedu",
+    "minute": "77"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Oybek Bozorov",
+    "out": "Flamarion",
+    "minute": "77"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Sardor Sabirkhodjaev",
+    "out": "Morteza Pouraliganji",
+    "minute": "82"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Ibrokhim Ibrokhimov",
+    "out": "Akmal Mozgovoy",
+    "minute": "90"
+   },
+   {
+    "team": "Al Qadsiah",
+    "in": "Mohammed Hamad Al Qahtani",
+    "out": "Musab Al-Juwayr",
+    "minute": "69"
+   },
+   {
+    "team": "Al Qadsiah",
+    "in": "Yasir Al Shahrani",
+    "out": "Ali Diabaté",
+    "minute": "69"
+   },
+   {
+    "team": "Al Qadsiah",
+    "in": "Sani Suleiman",
+    "out": "Christopher Bonsu Baah",
+    "minute": "81"
+   },
+   {
+    "team": "Al Qadsiah",
+    "in": "Abdullah Al Salem",
+    "out": "Mateo Retegui",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Choi Hyun-Jae",
+  "attendance": 2650,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-1"
+  }
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "aclelite-2026-27-2026-11-02-algharafa-alqadsiah",
+ "date": "2026-11-02",
+ "home": "Al-Gharafa",
+ "away": "Al Qadsiah",
+ "score": "0-5",
+ "halftime_score": "0-4",
+ "official_match_url": "https://www.fotmob.com/matches/6050092",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050092"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Ahmed Kone",
+   "Mason Holgate",
+   "Hyun-Soo Jang",
+   "Ayoub Al Oui",
+   "Abdulrahman Al Rashidi",
+   "Amro Abdelfatah Ali Surag",
+   "Amjad Nassar Mohamed",
+   "Abdirashid Saeed Hassan",
+   "Fabricio Díaz",
+   "Jamal Hamed",
+   "Frank Magri"
+  ],
+  "home_bench": [
+   "Khalifa N'Diaye",
+   "Mahmoud Gamal",
+   "Damé Traoré",
+   "Saifeldeen Fadlalla",
+   "Ferjani Sassi",
+   "Jamil Friarkh",
+   "Rayyan Faragalla",
+   "Yousef Saaed Ahmed",
+   "Florinel Coman",
+   "Yacine Brahimi"
+  ],
+  "away_starting_xi": [
+   "Koen Casteels",
+   "Ahmed Al Siyahi",
+   "Gaston Álvarez",
+   "Yasir Al Shahrani",
+   "Julian Weigl",
+   "Mohammed Abu Al Shamat",
+   "Tijjani Reijnders",
+   "Musab Al-Juwayr",
+   "Christopher Bonsu Baah",
+   "Julián Quiñones",
+   "Abdullah Al Salem"
+  ],
+  "away_bench": [
+   "Ahmed Ali Al Kassar",
+   "Meshary Sanyor",
+   "Abdulelah Al-Quwayzan",
+   "Abdulmalik Al-Jaber",
+   "Elias Sheikh",
+   "Eyad Houssa",
+   "Mohammed Hamad Al Qahtani",
+   "Turki Al Ammar",
+   "Mahamadou Sangaré",
+   "Sani Suleiman"
+  ],
+  "substitution_events": [],
+  "goals": {
+   "home": 0,
+   "away": 5
+  },
+  "provider_score": "0-5",
+  "score_consistent_with_events": true,
+  "referee": "Kim Jong-Hyeok",
+  "attendance": 430,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-5"
+  }
+ }
+}

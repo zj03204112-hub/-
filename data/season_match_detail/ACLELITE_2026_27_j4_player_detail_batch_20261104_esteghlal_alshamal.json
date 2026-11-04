@@ -1,0 +1,129 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "aclelite-2026-27-2026-11-03-esteghlal-alshamal",
+ "date": "2026-11-03",
+ "home": "Esteghlal",
+ "away": "Al-Shamal",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6050094",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050094"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Habib Far Abbasi",
+   "Saman Fallah",
+   "Roozbeh Cheshmi",
+   "Aref Aghasi",
+   "Saleh Hardani",
+   "Jaloliddin Masharipov",
+   "Amirmohammad Razzaghinia",
+   "Hossein Goudarzi",
+   "Jasir Asani",
+   "Saeid Saharkhizan",
+   "Esmaeil Gholizadeh"
+  ],
+  "home_bench": [
+   "Mohammadhossein Eslami",
+   "Mohammad Reza Azadi",
+   "Rustamjon Ashurmatov",
+   "Ahoora Nabizadeh",
+   "Seyed Aria Hosseinifard",
+   "Abolfazl Zamani",
+   "Abolfazl Zoleykhaei",
+   "Iliya Ebrahimi",
+   "Mehdi Heydari",
+   "Mehran Ahmadi"
+  ],
+  "away_starting_xi": [
+   "Babacar Seck",
+   "Youssouf Sabaly",
+   "Michel Termanini",
+   "Pablo Marí",
+   "Nassim Benaïssa",
+   "Tiago Silva",
+   "Federico Bais",
+   "Riyad Mahrez",
+   "Mohamed Ali Ben Romdhane",
+   "Wesley Saïd",
+   "Baghdad Bounedjah"
+  ],
+  "away_bench": [
+   "Ahmed Suhail",
+   "Omar Ali",
+   "Abdalla El-Rady",
+   "Saoud Al Khater",
+   "Abdelkarim Hasan Fadlalla",
+   "Fahad Waad",
+   "Mouafak Awad",
+   "Musab Kheder",
+   "Abdullah Alahrak",
+   "Ali Assadalla"
+  ],
+  "substitution_events": [
+   {
+    "team": "Esteghlal",
+    "in": "Mohammad Reza Azadi",
+    "out": "Saeid Saharkhizan",
+    "minute": "74"
+   },
+   {
+    "team": "Esteghlal",
+    "in": "Mohammadhossein Eslami",
+    "out": "Esmaeil Gholizadeh",
+    "minute": "74"
+   },
+   {
+    "team": "Esteghlal",
+    "in": "Rustamjon Ashurmatov",
+    "out": "Jasir Asani",
+    "minute": "90"
+   },
+   {
+    "team": "Al-Shamal",
+    "in": "Ahmed Suhail",
+    "out": "Nassim Benaïssa",
+    "minute": "84"
+   },
+   {
+    "team": "Al-Shamal",
+    "in": "Omar Ali",
+    "out": "Wesley Saïd",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Asker Nadjafaliev",
+  "attendance": "",
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-0"
+  }
+ }
+}

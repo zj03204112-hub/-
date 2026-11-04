@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "aclelite-2026-27-2026-10-12-alwasl-alahli",
+ "date": "2026-10-12",
+ "home": "Al-Wasl",
+ "away": "Al Ahli",
+ "score": "1-3",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/6050073",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050073"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dinko Horkaš",
+   "Pedro Malheiro",
+   "Soufian Bouftiny",
+   "Adryelson",
+   "Hugo",
+   "Siaka Sidibe",
+   "Ridwan Popoola",
+   "Brahian Palacios",
+   "Nicolás Giménez",
+   "Serginho",
+   "Mehdi Taremi"
+  ],
+  "home_bench": [
+   "Saša Ivković",
+   "Cameron Puertas",
+   "Leandro Spadacio",
+   "Renato Júnior",
+   "Matheus Saldanha",
+   "Suhail Abdulla",
+   "Yann Llahona",
+   "Abdelrahman Saleh Khamis",
+   "Rodrigo",
+   "Renato Tapia",
+   "Yahia Nader",
+   "Fábio Lima"
+  ],
+  "away_starting_xi": [
+   "Abdulrahman Al-Sanbi",
+   "Saeed Baattia",
+   "Merih Demiral",
+   "Roger Ibañez",
+   "Saad Balobaid",
+   "Valentin Atangana Edoa",
+   "Ziyad Al-Johani",
+   "Trincão",
+   "Eduard Spertsyan",
+   "Saleh Abu Al-Shamat",
+   "Ivan Toney"
+  ],
+  "away_bench": [
+   "Artem Bondarenko",
+   "Firas Al-Buraikan",
+   "Ibrahima Diaby",
+   "Mohammed Sulaiman",
+   "Abdullah Abdo",
+   "Salman Al-Jadany",
+   "Rayan Hamed",
+   "Faisal Fallatah",
+   "Ramez Al-Attar",
+   "Abdullah Radif",
+   "Matheus Gonçalves",
+   "Meshal Al-Mutairi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Al-Wasl",
+    "in": "Saša Ivković",
+    "out": "Adryelson",
+    "minute": "46"
+   },
+   {
+    "team": "Al-Wasl",
+    "in": "Cameron Puertas",
+    "out": "Siaka Sidibe",
+    "minute": "59"
+   },
+   {
+    "team": "Al-Wasl",
+    "in": "Leandro Spadacio",
+    "out": "Brahian Palacios",
+    "minute": "59"
+   },
+   {
+    "team": "Al-Wasl",
+    "in": "Renato Júnior",
+    "out": "Nicolás Giménez",
+    "minute": "68"
+   },
+   {
+    "team": "Al-Wasl",
+    "in": "Matheus Saldanha",
+    "out": "Mehdi Taremi",
+    "minute": "79"
+   },
+   {
+    "team": "Al Ahli",
+    "in": "Artem Bondarenko",
+    "out": "Ziyad Al-Johani",
+    "minute": "46"
+   },
+   {
+    "team": "Al Ahli",
+    "in": "Firas Al-Buraikan",
+    "out": "Ivan Toney",
+    "minute": "59"
+   },
+   {
+    "team": "Al Ahli",
+    "in": "Ibrahima Diaby",
+    "out": "Eduard Spertsyan",
+    "minute": "68"
+   },
+   {
+    "team": "Al Ahli",
+    "in": "Mohammed Sulaiman",
+    "out": "Saleh Abu Al-Shamat",
+    "minute": "72"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "Abdulrahman Al Jassim",
+  "attendance": 6585,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-3"
+  }
+ }
+}

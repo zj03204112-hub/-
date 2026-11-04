@@ -1,0 +1,139 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "aclelite-2026-27-2026-10-14-visselkobe-jeonbukhyundaimotorsfc",
+ "date": "2026-10-14",
+ "home": "Vissel Kobe",
+ "away": "Jeonbuk Hyundai Motors FC",
+ "score": "2-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/6049985",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6049985"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Shuichi Gonda",
+   "Gotoku Sakai",
+   "Tetsushi Yamakawa",
+   "Caetano",
+   "Diego",
+   "Yoshinori Muto",
+   "Yosuke Ideguchi",
+   "Yuya Kuwasaki",
+   "Katsuya Nagato",
+   "Yuya Osako",
+   "Erik"
+  ],
+  "home_bench": [
+   "Mitsuki Hidaka",
+   "Jean Patrick",
+   "Daiya Maekawa",
+   "Shota Arai",
+   "Kaito Yamada",
+   "Matheus Thuler",
+   "Nanasei Iino",
+   "Takuya Iwanami",
+   "Kota Watanabe",
+   "Yuta Goke",
+   "Hyoei Kawabata",
+   "Ren Komatsu"
+  ],
+  "away_starting_xi": [
+   "Bum-Keun Song",
+   "Tae-Hyun Kim",
+   "Ji-Soo Park",
+   "Young-Bin Kim",
+   "Woo-Jin Choi",
+   "Jin-Gyu Kim",
+   "Seong-Ung Maeng",
+   "Seung-Sub Kim",
+   "Sang-Yun Kang",
+   "Italo",
+   "Bruno Mota"
+  ],
+  "away_bench": [
+   "Seung-Woo Lee",
+   "João Gamboa",
+   "Yeong-Jae Lee",
+   "Tiago Orobó",
+   "Ju-Hyeon Lee",
+   "Je-Woon Yeon",
+   "Jeong-Hyeok Seo",
+   "Seung-Jun Hwang",
+   "Wi-Je Cho",
+   "Dodô",
+   "Andrea Compagno",
+   "Dong-Jun Lee"
+  ],
+  "substitution_events": [
+   {
+    "team": "Vissel Kobe",
+    "in": "Jean Patrick",
+    "out": "Katsuya Nagato",
+    "minute": "71"
+   },
+   {
+    "team": "Vissel Kobe",
+    "in": "Mitsuki Hidaka",
+    "out": "Yuya Kuwasaki",
+    "minute": "71"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Seung-Woo Lee",
+    "out": "Seung-Sub Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Yeong-Jae Lee",
+    "out": "Jin-Gyu Kim",
+    "minute": "72"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "João Gamboa",
+    "out": "Seong-Ung Maeng",
+    "minute": "72"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Tiago Orobó",
+    "out": "Italo",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Omar Al Ali",
+  "attendance": 7136,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-0"
+  }
+ }
+}

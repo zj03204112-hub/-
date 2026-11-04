@@ -1,0 +1,151 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "aclelite-2026-27-2026-10-26-alquwaaljawiya-pakhtakortashkent",
+ "date": "2026-10-26",
+ "home": "Al Quwa Al Jawiya",
+ "away": "Pakhtakor Tashkent",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6050085",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050085"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mohammed Salih",
+   "Ruslan Hanoon",
+   "Saed Al-Rosan",
+   "Achref Boudrama",
+   "Muslim Moussa",
+   "Tuisila Kisinda",
+   "Saad Abdul-Amir",
+   "Moses Orkuma",
+   "Ali Saad",
+   "Abbas Adel",
+   "Mohammed Jawad"
+  ],
+  "home_bench": [
+   "Mohammed Sami",
+   "Mujtabo Aeel",
+   "Mohanad Jeahze",
+   "Anthony Okpotu",
+   "Karar Ali Hassan",
+   "Mohammed Ziyadi",
+   "Zainulabdeen Nassif",
+   "Sipan Sediq",
+   "Al Hareth Hatam",
+   "Ali Akbar Taher",
+   "Haythem Jouini",
+   "Murad Mohammad"
+  ],
+  "away_starting_xi": [
+   "Sanjar Kuvvatov",
+   "Dilshod Saitov",
+   "Mukhammadrasul Abdumazhidov",
+   "Morteza Pouraliganji",
+   "Mukhammad-Bobur Karimov",
+   "Abdurauf Buriev",
+   "Sardor Sabirkhodjaev",
+   "Flamarion",
+   "Ibrokhim Ibrokhimov",
+   "Bashar Resan",
+   "Ayman Hussein"
+  ],
+  "away_bench": [
+   "Dostonbek Khamdamov",
+   "Khoziakbar Alidzhanov",
+   "Stephen Chinedu",
+   "Vladimir Nazarov",
+   "Dilshod Abdullaev",
+   "Diyor Ermanov",
+   "Muhammadali Dilshodbekov",
+   "Kuvanishbek Saydaliev",
+   "Oybek Bozorov",
+   "Sardor Mirkobilov",
+   "Abubakir Shukurullaev",
+   "Davron Tulaganov"
+  ],
+  "substitution_events": [
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Mohammed Sami",
+    "out": "Ali Saad",
+    "minute": "64"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Mujtabo Aeel",
+    "out": "Abbas Adel",
+    "minute": "64"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Anthony Okpotu",
+    "out": "Mohammed Jawad",
+    "minute": "79"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Mohanad Jeahze",
+    "out": "Moses Orkuma",
+    "minute": "79"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Karar Ali Hassan",
+    "out": "Saad Abdul-Amir",
+    "minute": "88"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Dostonbek Khamdamov",
+    "out": "Ibrokhim Ibrokhimov",
+    "minute": "71"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Khoziakbar Alidzhanov",
+    "out": "Bashar Resan",
+    "minute": "81"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Stephen Chinedu",
+    "out": "Flamarion",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Salman Ahmad Falahi",
+  "attendance": 4372,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-0"
+  }
+ }
+}

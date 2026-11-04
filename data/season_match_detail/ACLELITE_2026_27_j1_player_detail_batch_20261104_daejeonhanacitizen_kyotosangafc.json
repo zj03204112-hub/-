@@ -1,0 +1,162 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "aclelite-2026-27-2026-09-15-daejeonhanacitizen-kyotosangafc",
+ "date": "2026-09-15",
+ "home": "Daejeon Hana Citizen",
+ "away": "Kyoto Sanga FC",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6049976",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6049976"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Chang-Geun Lee",
+   "Yoon-Sung Kang",
+   "Chang-Rae Ha",
+   "Anton Krivotsyuk",
+   "Myung-Jae Lee",
+   "Soon-Min Lee",
+   "Victor Bobsin",
+   "Jae-Hee Jeong",
+   "Masatoshi Ishida",
+   "Gustav Ludwigson",
+   "Min-Kyu Joo"
+  ],
+  "home_bench": [
+   "Diogo",
+   "Jin-Su Seo",
+   "Bong-Soo Kim",
+   "Won-Sang Um",
+   "Jun-Beom Kim",
+   "Jun-Seo Lee",
+   "Min-Soo Kim",
+   "Jin-Ya Kim",
+   "Kyu-Hyun Park",
+   "Min-Deok Kim",
+   "Byung-Chan Park",
+   "João Victor"
+  ],
+  "away_starting_xi": [
+   "Halls",
+   "Kyo Sato",
+   "Hisashi Tawiah",
+   "Yusuke Ishida",
+   "Kodai Nagata",
+   "Shimpei Fukuoka",
+   "Thiago",
+   "Haruki Arai",
+   "Maceió",
+   "Temma Matsuda",
+   "Shun Nagasawa"
+  ],
+  "away_bench": [
+   "Alex Negueba",
+   "Ren Kato",
+   "João Pedro",
+   "Ryuma Nakano",
+   "Rafael Elias",
+   "Gakuji Ota",
+   "Kentaro Kakoi",
+   "Yoshinori Suzuki",
+   "Takaaki Shichi",
+   "David Silva",
+   "Sora Hiraga"
+  ],
+  "substitution_events": [
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Jin-Su Seo",
+    "out": "Jae-Hee Jeong",
+    "minute": "68"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Diogo",
+    "out": "Min-Kyu Joo",
+    "minute": "68"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Won-Sang Um",
+    "out": "Victor Bobsin",
+    "minute": "80"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Bong-Soo Kim",
+    "out": "Masatoshi Ishida",
+    "minute": "80"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Jun-Beom Kim",
+    "out": "Gustav Ludwigson",
+    "minute": "90"
+   },
+   {
+    "team": "Kyoto Sanga FC",
+    "in": "Alex Negueba",
+    "out": "Maceió",
+    "minute": "46"
+   },
+   {
+    "team": "Kyoto Sanga FC",
+    "in": "Ren Kato",
+    "out": "Temma Matsuda",
+    "minute": "57"
+   },
+   {
+    "team": "Kyoto Sanga FC",
+    "in": "João Pedro",
+    "out": "Shimpei Fukuoka",
+    "minute": "63"
+   },
+   {
+    "team": "Kyoto Sanga FC",
+    "in": "Ryuma Nakano",
+    "out": "Thiago",
+    "minute": "63"
+   },
+   {
+    "team": "Kyoto Sanga FC",
+    "in": "Rafael Elias",
+    "out": "Shun Nagasawa",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Alex King",
+  "attendance": 7998,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-0"
+  }
+ }
+}

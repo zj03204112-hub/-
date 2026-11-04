@@ -1,0 +1,145 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "aclelite-2026-27-2026-09-15-alain-alnassrfc",
+ "date": "2026-09-15",
+ "home": "Al-Ain",
+ "away": "Al Nassr FC",
+ "score": "4-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/6050070",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050070"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Khalid Eisa",
+   "Yahya Ben Khaleq",
+   "Rami Rabia",
+   "Djordje Skoko",
+   "Valentino Lazaro",
+   "Rafael Rodrigues",
+   "Alejandro Romero",
+   "Abdoul Traoré",
+   "Matías Palacios",
+   "Houssine Rahimi",
+   "Soufiane Rahimi"
+  ],
+  "home_bench": [
+   "Erik",
+   "Georgios Giakoumakis",
+   "Ibrahima Ndiaye",
+   "Adis Jašić",
+   "Ismaila Okpoti",
+   "Hassan Sani Muhammed",
+   "Mohamad Saeed",
+   "Amadou Niang",
+   "Marcos André",
+   "Joshua Udoh",
+   "Mohammed Hamid",
+   "Baba Bello Ilou"
+  ],
+  "away_starting_xi": [
+   "Nawaf Al-Aqidi",
+   "Mohamed Simakan",
+   "Abdulelah Al Amri",
+   "Iñigo Martínez",
+   "Nawaf Al-Boushail",
+   "Samú",
+   "Abdullah Al-Khaibari",
+   "Sadio Mané",
+   "Saad Al-Nasser",
+   "Joao Félix",
+   "Cristiano Ronaldo"
+  ],
+  "away_bench": [
+   "Rakan Al-Ghamdi",
+   "Ângelo",
+   "Abdullah Al-Hamdan",
+   "Abdulrahman Al Otaibi",
+   "Bento Krepski",
+   "Sultan Almas",
+   "Awad Aman",
+   "Majed Qasheesh",
+   "Nader Abdullah Al Sharari",
+   "Hayder Abdulkareem",
+   "Saad Haqawi",
+   "Sami Al-Najei"
+  ],
+  "substitution_events": [
+   {
+    "team": "Al-Ain",
+    "in": "Georgios Giakoumakis",
+    "out": "Houssine Rahimi",
+    "minute": "69"
+   },
+   {
+    "team": "Al-Ain",
+    "in": "Erik",
+    "out": "Rafael Rodrigues",
+    "minute": "69"
+   },
+   {
+    "team": "Al-Ain",
+    "in": "Ibrahima Ndiaye",
+    "out": "Alejandro Romero",
+    "minute": "77"
+   },
+   {
+    "team": "Al-Ain",
+    "in": "Adis Jašić",
+    "out": "Matías Palacios",
+    "minute": "90"
+   },
+   {
+    "team": "Al Nassr FC",
+    "in": "Rakan Al-Ghamdi",
+    "out": "Saad Al-Nasser",
+    "minute": "46"
+   },
+   {
+    "team": "Al Nassr FC",
+    "in": "Ângelo",
+    "out": "Samú",
+    "minute": "74"
+   },
+   {
+    "team": "Al Nassr FC",
+    "in": "Abdullah Al-Hamdan",
+    "out": "Abdulelah Al Amri",
+    "minute": "74"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 0
+  },
+  "provider_score": "4-0",
+  "score_consistent_with_events": true,
+  "referee": "Ilgiz Tantashev",
+  "attendance": 17433,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "4-0"
+  }
+ }
+}

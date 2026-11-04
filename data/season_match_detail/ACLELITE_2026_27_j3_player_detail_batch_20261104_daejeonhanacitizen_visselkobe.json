@@ -1,0 +1,160 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "aclelite-2026-27-2026-10-27-daejeonhanacitizen-visselkobe",
+ "date": "2026-10-27",
+ "home": "Daejeon Hana Citizen",
+ "away": "Vissel Kobe",
+ "score": "0-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6049992",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6049992"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Chang-Geun Lee",
+   "Moon-Hwan Kim",
+   "Sung-Kwon Jo",
+   "Anton Krivotsyuk",
+   "Myung-Jae Lee",
+   "Bong-Soo Kim",
+   "Soon-Min Lee",
+   "Jae-Hee Jeong",
+   "Jun-Beom Kim",
+   "João Victor",
+   "Diogo"
+  ],
+  "home_bench": [
+   "Won-Sang Um",
+   "Gustav Ludwigson",
+   "Jin-Su Seo",
+   "Min-Kyu Joo",
+   "Byung-Chan Park",
+   "Jun-Seo Lee",
+   "Min-Soo Kim",
+   "Jin-Ya Kim",
+   "Kyu-Hyun Park",
+   "Min-Deok Kim",
+   "Yoon-Sung Kang"
+  ],
+  "away_starting_xi": [
+   "Shuichi Gonda",
+   "Gotoku Sakai",
+   "Tetsushi Yamakawa",
+   "Takuya Iwanami",
+   "Mitsuki Hidaka",
+   "Kota Watanabe",
+   "Yuya Kuwasaki",
+   "Yuta Goke",
+   "Jean Patrick",
+   "Ren Komatsu",
+   "Katsuya Nagato"
+  ],
+  "away_bench": [
+   "Hyoei Kawabata",
+   "Diego",
+   "Yosuke Ideguchi",
+   "Caetano",
+   "Yoshinori Muto",
+   "Daiya Maekawa",
+   "Shota Arai",
+   "Kaito Yamada",
+   "Ryotaro Inouchi",
+   "Sota Ito"
+  ],
+  "substitution_events": [
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Gustav Ludwigson",
+    "out": "João Victor",
+    "minute": "65"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Won-Sang Um",
+    "out": "Jae-Hee Jeong",
+    "minute": "65"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Jin-Su Seo",
+    "out": "Jun-Beom Kim",
+    "minute": "65"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Min-Kyu Joo",
+    "out": "Diogo",
+    "minute": "84"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Byung-Chan Park",
+    "out": "Soon-Min Lee",
+    "minute": "88"
+   },
+   {
+    "team": "Vissel Kobe",
+    "in": "Hyoei Kawabata",
+    "out": "Mitsuki Hidaka",
+    "minute": "59"
+   },
+   {
+    "team": "Vissel Kobe",
+    "in": "Yosuke Ideguchi",
+    "out": "Kota Watanabe",
+    "minute": "70"
+   },
+   {
+    "team": "Vissel Kobe",
+    "in": "Diego",
+    "out": "Katsuya Nagato",
+    "minute": "70"
+   },
+   {
+    "team": "Vissel Kobe",
+    "in": "Caetano",
+    "out": "Takuya Iwanami",
+    "minute": "85"
+   },
+   {
+    "team": "Vissel Kobe",
+    "in": "Yoshinori Muto",
+    "out": "Ren Komatsu",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Nazmi Nasaruddin",
+  "attendance": 6278,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-1"
+  }
+ }
+}

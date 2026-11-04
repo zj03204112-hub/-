@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "aclelite-2026-27-2026-11-03-newcastlejets-shanghaiport",
+ "date": "2026-11-03",
+ "home": "Newcastle Jets",
+ "away": "Shanghai Port",
+ "score": "2-4",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/6050000",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050000"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "James Delianov",
+   "Joel Bertolissio",
+   "Thomas Aquilina",
+   "Alexander Grant",
+   "Daniel Wilmering",
+   "Max Burgess",
+   "Joe Lolley",
+   "Zane Schreiber",
+   "Julian Recchia",
+   "Xavier Bertoncello",
+   "Patrick Wood"
+  ],
+  "home_bench": [
+   "Alexander Badolato",
+   "Nikolaos Vergos",
+   "Zach Clough",
+   "Will Dobson",
+   "Jordan Baylis",
+   "Angus Reid",
+   "Joe Shaughnessy",
+   "Alex Nunes",
+   "Nicholas Badolato",
+   "Ethan Debono",
+   "Jesse Hill",
+   "Oscar Gonzalez"
+  ],
+  "away_starting_xi": [
+   "Junling Yan",
+   "Zhen Wei",
+   "Tyias Browning",
+   "Umidjan Yusup",
+   "Jaume Grau",
+   "Mateus Vital",
+   "Alex Yang",
+   "Óscar Melendo",
+   "Shuai Li",
+   "Prince Ampem",
+   "Leonardo"
+  ],
+  "away_bench": [
+   "Xinxiang Li",
+   "Zhurun Liu",
+   "Xin Yue",
+   "Miguel Campos",
+   "Jean Claude",
+   "Wei Chen",
+   "Huan Fu",
+   "Linpeng Zhang",
+   "Shenchao Wang",
+   "Zhenao Wang",
+   "Yuan Zhang",
+   "Lei Wu"
+  ],
+  "substitution_events": [
+   {
+    "team": "Newcastle Jets",
+    "in": "Alexander Badolato",
+    "out": "Zane Schreiber",
+    "minute": "55"
+   },
+   {
+    "team": "Newcastle Jets",
+    "in": "Nikolaos Vergos",
+    "out": "Julian Recchia",
+    "minute": "68"
+   },
+   {
+    "team": "Newcastle Jets",
+    "in": "Zach Clough",
+    "out": "Joe Lolley",
+    "minute": "68"
+   },
+   {
+    "team": "Newcastle Jets",
+    "in": "Will Dobson",
+    "out": "Xavier Bertoncello",
+    "minute": "88"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Xinxiang Li",
+    "out": "Prince Ampem",
+    "minute": "76"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Zhurun Liu",
+    "out": "Jaume Grau",
+    "minute": "76"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Xin Yue",
+    "out": "Shuai Li",
+    "minute": "81"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Jean Claude",
+    "out": "Óscar Melendo",
+    "minute": "88"
+   },
+   {
+    "team": "Shanghai Port",
+    "in": "Miguel Campos",
+    "out": "Tyias Browning",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 4
+  },
+  "provider_score": "2-4",
+  "score_consistent_with_events": true,
+  "referee": "Omar Al Ali",
+  "attendance": 1614,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-4"
+  }
+ }
+}

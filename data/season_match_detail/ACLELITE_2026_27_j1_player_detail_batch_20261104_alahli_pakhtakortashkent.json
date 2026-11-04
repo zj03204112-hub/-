@@ -1,0 +1,161 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "aclelite-2026-27-2026-09-14-alahli-pakhtakortashkent",
+ "date": "2026-09-14",
+ "home": "Al Ahli",
+ "away": "Pakhtakor Tashkent",
+ "score": "1-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6050068",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050068"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Édouard Mendy",
+   "Saeed Baattia",
+   "Merih Demiral",
+   "Rayan Hamed",
+   "Saad Balobaid",
+   "Naif Masoud",
+   "Ibrahima Diaby",
+   "Saleh Abu Al-Shamat",
+   "Matheus Gonçalves",
+   "Wenderson Galeno",
+   "Ivan Toney"
+  ],
+  "home_bench": [
+   "Eduard Spertsyan",
+   "Meshal Al-Mutairi",
+   "Valentin Atangana Edoa",
+   "Mohammed Sulaiman",
+   "Firas Al-Buraikan",
+   "Abdullah Abdo",
+   "Salman Al-Jadany",
+   "Roger Ibañez",
+   "Faisal Fallatah",
+   "Trincão",
+   "Abdullah Radif"
+  ],
+  "away_starting_xi": [
+   "Vladimir Nazarov",
+   "Dilshod Saitov",
+   "Mukhammadrasul Abdumazhidov",
+   "Zaid Tahseen",
+   "Sherzod Nasrulloev",
+   "Ibrokhim Ibrokhimov",
+   "Abdurauf Buriev",
+   "Dostonbek Khamdamov",
+   "Akmal Mozgovoy",
+   "Bashar Resan",
+   "Ayman Hussein"
+  ],
+  "away_bench": [
+   "Morteza Pouraliganji",
+   "Flamarion",
+   "Stephen Chinedu",
+   "Khoziakbar Alidzhanov",
+   "Muhammadali Dilshodbekov",
+   "Rasul Mamatov",
+   "Sanjar Kuvvatov",
+   "Diyor Ermanov",
+   "Kuvanishbek Saydaliev",
+   "Sardor Mirkobilov",
+   "Davron Tulaganov"
+  ],
+  "substitution_events": [
+   {
+    "team": "Al Ahli",
+    "in": "Eduard Spertsyan",
+    "out": "Naif Masoud",
+    "minute": "46"
+   },
+   {
+    "team": "Al Ahli",
+    "in": "Meshal Al-Mutairi",
+    "out": "Wenderson Galeno",
+    "minute": "53"
+   },
+   {
+    "team": "Al Ahli",
+    "in": "Valentin Atangana Edoa",
+    "out": "Ibrahima Diaby",
+    "minute": "62"
+   },
+   {
+    "team": "Al Ahli",
+    "in": "Firas Al-Buraikan",
+    "out": "Ivan Toney",
+    "minute": "68"
+   },
+   {
+    "team": "Al Ahli",
+    "in": "Mohammed Sulaiman",
+    "out": "Merih Demiral",
+    "minute": "68"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Morteza Pouraliganji",
+    "out": "Zaid Tahseen",
+    "minute": "46"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Flamarion",
+    "out": "Dostonbek Khamdamov",
+    "minute": "69"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Stephen Chinedu",
+    "out": "Ayman Hussein",
+    "minute": "69"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Khoziakbar Alidzhanov",
+    "out": "Sherzod Nasrulloev",
+    "minute": "78"
+   },
+   {
+    "team": "Pakhtakor Tashkent",
+    "in": "Muhammadali Dilshodbekov",
+    "out": "Akmal Mozgovoy",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Abdullah Jamali",
+  "attendance": 15145,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-1"
+  }
+ }
+}

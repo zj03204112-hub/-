@@ -1,0 +1,163 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "aclelite-2026-27-2026-09-15-beijingguoan-pohangsteelers",
+ "date": "2026-09-15",
+ "home": "Beijing Guoan",
+ "away": "Pohang Steelers",
+ "score": "3-1",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/6049980",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6049980"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Sen Hou",
+   "Tze-Nam Yue",
+   "Gang Wang",
+   "Guilherme Ramos",
+   "Jiefu Deng",
+   "Jeremy Dudziak",
+   "Dawhan",
+   "Sai Erjini'ao",
+   "Xizhe Zhang",
+   "Béni Nkololo",
+   "Chadrac Akolo"
+  ],
+  "home_bench": [
+   "Liyu Yang",
+   "Abduhamit Abdugheni",
+   "Lei Li",
+   "Yu Wang",
+   "Fábio Abreu",
+   "Shaoziyang Liu",
+   "Shuangjie Fan",
+   "Uroš Spajić",
+   "Haoran Zhang",
+   "Xi Cheng",
+   "Xiaoyu Xia",
+   "Zhongguo Chi"
+  ],
+  "away_starting_xi": [
+   "Pyung-Gook Yoon",
+   "Si-Woo Jin",
+   "Sung-Wook Jo",
+   "Ho-Jin Kim",
+   "Chang-Woo Lee",
+   "Ye-Sung Kim",
+   "Han-Min Jung",
+   "Kento Nishiya",
+   "Seung-Ho Kim",
+   "Jae-Joon An",
+   "Jakob Tranziska"
+  ],
+  "away_bench": [
+   "Wanderson",
+   "Jorge Teixeira",
+   "Juninho",
+   "Dong-Jin Kim",
+   "Kwang-Hoon Shin",
+   "Sung-Min Hong",
+   "Chan-Yong Park",
+   "Min-Kwang Jeon",
+   "Gwang-Won Kim",
+   "Seo-Woong Hwang",
+   "Ki-Jong Won",
+   "Sang-Hyeok Cho"
+  ],
+  "substitution_events": [
+   {
+    "team": "Beijing Guoan",
+    "in": "Liyu Yang",
+    "out": "Chadrac Akolo",
+    "minute": "34"
+   },
+   {
+    "team": "Beijing Guoan",
+    "in": "Lei Li",
+    "out": "Gang Wang",
+    "minute": "69"
+   },
+   {
+    "team": "Beijing Guoan",
+    "in": "Abduhamit Abdugheni",
+    "out": "Xizhe Zhang",
+    "minute": "69"
+   },
+   {
+    "team": "Beijing Guoan",
+    "in": "Fábio Abreu",
+    "out": "Béni Nkololo",
+    "minute": "82"
+   },
+   {
+    "team": "Beijing Guoan",
+    "in": "Yu Wang",
+    "out": "Jeremy Dudziak",
+    "minute": "82"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Juninho",
+    "out": "Jae-Joon An",
+    "minute": "46"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Wanderson",
+    "out": "Ye-Sung Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Jorge Teixeira",
+    "out": "Ho-Jin Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Dong-Jin Kim",
+    "out": "Han-Min Jung",
+    "minute": "58"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Kwang-Hoon Shin",
+    "out": "Chang-Woo Lee",
+    "minute": "73"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 1
+  },
+  "provider_score": "3-1",
+  "score_consistent_with_events": true,
+  "referee": "Abdulrahman Al Jassim",
+  "attendance": 27999,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "3-1"
+  }
+ }
+}

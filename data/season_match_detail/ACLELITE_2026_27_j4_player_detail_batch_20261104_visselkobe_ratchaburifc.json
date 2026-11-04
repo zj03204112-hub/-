@@ -1,0 +1,160 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "aclelite-2026-27-2026-11-03-visselkobe-ratchaburifc",
+ "date": "2026-11-03",
+ "home": "Vissel Kobe",
+ "away": "Ratchaburi FC",
+ "score": "3-2",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/6050003",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050003"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Shota Arai",
+   "Nanasei Iino",
+   "Takuya Iwanami",
+   "Caetano",
+   "Katsuya Nagato",
+   "Kota Watanabe",
+   "Yuya Kuwasaki",
+   "Yuta Goke",
+   "Kento Hamasaki",
+   "Ren Komatsu",
+   "Jean Patrick"
+  ],
+  "home_bench": [
+   "Tetsushi Yamakawa",
+   "Yosuke Ideguchi",
+   "Erik",
+   "Yoshinori Muto",
+   "Yuya Osako",
+   "Daiya Maekawa",
+   "Shuichi Gonda",
+   "Diego",
+   "Gotoku Sakai",
+   "Matheus Thuler",
+   "Mitsuki Hidaka",
+   "Hyoei Kawabata"
+  ],
+  "away_starting_xi": [
+   "Kampol Pathomakkakul",
+   "Sanchai Nonthasila",
+   "Adisorn Promrak",
+   "Pablo Insua",
+   "Daniel Sang Ting",
+   "Tossawat Limwanasthien",
+   "Scott Allardice",
+   "Ekanit Panya",
+   "Tana",
+   "Sidcley",
+   "Phongsakorn Sangkasopha"
+  ],
+  "away_bench": [
+   "Sai van Wermeskerken",
+   "Tarek Aggoun",
+   "Thanawat Suengchitthawon",
+   "Njiva Rakotoharimalala",
+   "Jesse Curran",
+   "Ukrit Wongmeema",
+   "Sorawit Panthong",
+   "Bruno Mendes",
+   "Chotipat Poomkaew"
+  ],
+  "substitution_events": [
+   {
+    "team": "Vissel Kobe",
+    "in": "Yosuke Ideguchi",
+    "out": "Kota Watanabe",
+    "minute": "46"
+   },
+   {
+    "team": "Vissel Kobe",
+    "in": "Tetsushi Yamakawa",
+    "out": "Caetano",
+    "minute": "46"
+   },
+   {
+    "team": "Vissel Kobe",
+    "in": "Erik",
+    "out": "Yuta Goke",
+    "minute": "62"
+   },
+   {
+    "team": "Vissel Kobe",
+    "in": "Yoshinori Muto",
+    "out": "Kento Hamasaki",
+    "minute": "69"
+   },
+   {
+    "team": "Vissel Kobe",
+    "in": "Yuya Osako",
+    "out": "Ren Komatsu",
+    "minute": "69"
+   },
+   {
+    "team": "Ratchaburi FC",
+    "in": "Tarek Aggoun",
+    "out": "Adisorn Promrak",
+    "minute": "46"
+   },
+   {
+    "team": "Ratchaburi FC",
+    "in": "Sai van Wermeskerken",
+    "out": "Sanchai Nonthasila",
+    "minute": "46"
+   },
+   {
+    "team": "Ratchaburi FC",
+    "in": "Thanawat Suengchitthawon",
+    "out": "Tossawat Limwanasthien",
+    "minute": "72"
+   },
+   {
+    "team": "Ratchaburi FC",
+    "in": "Njiva Rakotoharimalala",
+    "out": "Sidcley",
+    "minute": "78"
+   },
+   {
+    "team": "Ratchaburi FC",
+    "in": "Jesse Curran",
+    "out": "Scott Allardice",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Ahmad Al Ali",
+  "attendance": "",
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "3-2"
+  }
+ }
+}

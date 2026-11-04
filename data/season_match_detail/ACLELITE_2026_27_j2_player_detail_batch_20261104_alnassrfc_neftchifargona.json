@@ -1,0 +1,154 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "aclelite-2026-27-2026-10-12-alnassrfc-neftchifargona",
+ "date": "2026-10-12",
+ "home": "Al Nassr FC",
+ "away": "Neftchi Fargona",
+ "score": "3-1",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/6050076",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050076"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bento Krepski",
+   "Nawaf Al-Boushail",
+   "Mohamed Simakan",
+   "Iñigo Martínez",
+   "Awad Aman",
+   "Kingsley Coman",
+   "Samú",
+   "Ângelo",
+   "Sadio Mané",
+   "Joao Félix",
+   "Cristiano Ronaldo"
+  ],
+  "home_bench": [
+   "Ayman Yahya",
+   "Nader Abdullah Al Sharari",
+   "Abdullah Al-Khaibari",
+   "Abdullah Al-Hamdan",
+   "Abdulrahman Al Otaibi",
+   "Sultan Almas",
+   "Hayder Abdulkareem",
+   "Saad Haqawi",
+   "Sami Al-Najei"
+  ],
+  "away_starting_xi": [
+   "Botirali Ergashev",
+   "Michel",
+   "Anvar Gofurov",
+   "Bojan Ciger",
+   "Koffi Kouao",
+   "Ibrokhimkhalil Yuldoshev",
+   "Abrorbek Ismoilov",
+   "Ikrom Alibaev",
+   "Jamshid Iskandarov",
+   "Yan Sasse",
+   "Marcus Forss"
+  ],
+  "away_bench": [
+   "Farrukh Sayfiev",
+   "Alisher Odilov",
+   "Asilbek Jumayev",
+   "Stipe Perica",
+   "Ratinho",
+   "Akbar Turaev",
+   "Nurmukhammad Abduganiev",
+   "Khurshid Giyosov",
+   "Mushinjon Ubaydullaev",
+   "Vladimir Jovović",
+   "Bilolkhon Toshmirzaev",
+   "Zoran Marušić"
+  ],
+  "substitution_events": [
+   {
+    "team": "Al Nassr FC",
+    "in": "Ayman Yahya",
+    "out": "Kingsley Coman",
+    "minute": "13"
+   },
+   {
+    "team": "Al Nassr FC",
+    "in": "Nader Abdullah Al Sharari",
+    "out": "Mohamed Simakan",
+    "minute": "72"
+   },
+   {
+    "team": "Al Nassr FC",
+    "in": "Abdullah Al-Khaibari",
+    "out": "Ayman Yahya",
+    "minute": "72"
+   },
+   {
+    "team": "Al Nassr FC",
+    "in": "Abdullah Al-Hamdan",
+    "out": "Sadio Mané",
+    "minute": "81"
+   },
+   {
+    "team": "Neftchi Fargona",
+    "in": "Farrukh Sayfiev",
+    "out": "Ibrokhimkhalil Yuldoshev",
+    "minute": "46"
+   },
+   {
+    "team": "Neftchi Fargona",
+    "in": "Alisher Odilov",
+    "out": "Yan Sasse",
+    "minute": "46"
+   },
+   {
+    "team": "Neftchi Fargona",
+    "in": "Asilbek Jumayev",
+    "out": "Abrorbek Ismoilov",
+    "minute": "62"
+   },
+   {
+    "team": "Neftchi Fargona",
+    "in": "Stipe Perica",
+    "out": "Marcus Forss",
+    "minute": "63"
+   },
+   {
+    "team": "Neftchi Fargona",
+    "in": "Ratinho",
+    "out": "Michel",
+    "minute": "70"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 1
+  },
+  "provider_score": "3-1",
+  "score_consistent_with_events": true,
+  "referee": "Ma Ning",
+  "attendance": 7108,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "3-1"
+  }
+ }
+}

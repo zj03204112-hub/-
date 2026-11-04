@@ -1,0 +1,163 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "aclelite-2026-27-2026-10-12-alquwaaljawiya-alain",
+ "date": "2026-10-12",
+ "home": "Al Quwa Al Jawiya",
+ "away": "Al-Ain",
+ "score": "1-4",
+ "halftime_score": "0-4",
+ "official_match_url": "https://www.fotmob.com/matches/6050077",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6050077"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mohammed Salih",
+   "Ruslan Hanoon",
+   "Saed Al-Rosan",
+   "Achref Boudrama",
+   "Abbas Adel",
+   "Mohanad Jeahze",
+   "Tuisila Kisinda",
+   "Saad Abdul-Amir",
+   "Abbas Fawzi",
+   "Haythem Jouini",
+   "Mohammed Jawad"
+  ],
+  "home_bench": [
+   "Muslim Moussa",
+   "Al Hareth Hatam",
+   "Moses Orkuma",
+   "Ali Saad",
+   "Mohammed Sami",
+   "Mohammed Ziyadi",
+   "Karar Ali Hassan",
+   "Sipan Sediq",
+   "Mujtabo Aeel",
+   "Ali Akbar Taher",
+   "Anthony Okpotu",
+   "Murad Mohammad"
+  ],
+  "away_starting_xi": [
+   "Khalid Eisa",
+   "Yahya Ben Khaleq",
+   "Rami Rabia",
+   "Djordje Skoko",
+   "Valentino Lazaro",
+   "Rafael Rodrigues",
+   "Alejandro Romero",
+   "Abdoul Traoré",
+   "Matías Palacios",
+   "Soufiane Rahimi",
+   "Houssine Rahimi"
+  ],
+  "away_bench": [
+   "Adis Jašić",
+   "Teun Gijselhart",
+   "Baba Bello Ilou",
+   "Ibrahima Ndiaye",
+   "Marcos André",
+   "Ismaila Okpoti",
+   "Abdallah Hassani",
+   "Hassan Sani Muhammed",
+   "Amadou Niang",
+   "Erik",
+   "Hazem Mohammad",
+   "Joshua Udoh"
+  ],
+  "substitution_events": [
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Al Hareth Hatam",
+    "out": "Abbas Adel",
+    "minute": "46"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Moses Orkuma",
+    "out": "Tuisila Kisinda",
+    "minute": "46"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Muslim Moussa",
+    "out": "Haythem Jouini",
+    "minute": "46"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Ali Saad",
+    "out": "Mohanad Jeahze",
+    "minute": "62"
+   },
+   {
+    "team": "Al Quwa Al Jawiya",
+    "in": "Mohammed Sami",
+    "out": "Saad Abdul-Amir",
+    "minute": "77"
+   },
+   {
+    "team": "Al-Ain",
+    "in": "Adis Jašić",
+    "out": "Rafael Rodrigues",
+    "minute": "64"
+   },
+   {
+    "team": "Al-Ain",
+    "in": "Baba Bello Ilou",
+    "out": "Houssine Rahimi",
+    "minute": "64"
+   },
+   {
+    "team": "Al-Ain",
+    "in": "Teun Gijselhart",
+    "out": "Valentino Lazaro",
+    "minute": "64"
+   },
+   {
+    "team": "Al-Ain",
+    "in": "Ibrahima Ndiaye",
+    "out": "Alejandro Romero",
+    "minute": "80"
+   },
+   {
+    "team": "Al-Ain",
+    "in": "Marcos André",
+    "out": "Djordje Skoko",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 4
+  },
+  "provider_score": "1-4",
+  "score_consistent_with_events": true,
+  "referee": "Jin Jingyuan",
+  "attendance": 4762,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-4"
+  }
+ }
+}

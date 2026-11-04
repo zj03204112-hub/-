@@ -1,0 +1,158 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "AFC Champions League Elite",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "aclelite-2026-27-2026-10-13-conganhanoi-kashimaantlers",
+ "date": "2026-10-13",
+ "home": "Công An Hà Nội",
+ "away": "Kashima Antlers",
+ "score": "0-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6049991",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6049991"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nguyễn Filip",
+   "Leygley Adou",
+   "Bùi Hoàng Việt Anh",
+   "Doàn Văn Hậu",
+   "Jason Pendant",
+   "Stefan Mauk",
+   "Nguyễn Quang Hải",
+   "Lê Phạm Thành Long",
+   "Nguyễn Dình Bắc",
+   "Brayan Perea",
+   "Léo Artur"
+  ],
+  "home_bench": [
+   "Damià Sabater",
+   "Alan Grafite",
+   "Đinh Thanh Bình",
+   "Hoàng Văn Toản",
+   "Phan Ngọc Tín",
+   "Vũ Thành Vinh",
+   "Bùi Xuân Thịnh"
+  ],
+  "away_starting_xi": [
+   "Tomoki Hayakawa",
+   "Keisuke Tsukui",
+   "Naomichi Ueda",
+   "Tae-Hyeon Kim",
+   "Ryoya Ogawa",
+   "Yuta Matsumura",
+   "Kento Misao",
+   "Matheus Bueno",
+   "José Elber",
+   "Yuma Suzuki",
+   "Léo"
+  ],
+  "away_bench": [
+   "Gaku Shibasaki",
+   "Aleksandar Čavrić",
+   "Sho Omori",
+   "Minato Yoshida",
+   "Homare Tokuda",
+   "Taiki Yamada",
+   "Yuji Kajikawa",
+   "Anthony Motosuna",
+   "Ikuma Sekigawa",
+   "Kaito Chida",
+   "Haruki Hayashi",
+   "Yugo Okawa"
+  ],
+  "substitution_events": [
+   {
+    "team": "Công An Hà Nội",
+    "in": "Damià Sabater",
+    "out": "Lê Phạm Thành Long",
+    "minute": "56"
+   },
+   {
+    "team": "Công An Hà Nội",
+    "in": "Alan Grafite",
+    "out": "Brayan Perea",
+    "minute": "56"
+   },
+   {
+    "team": "Công An Hà Nội",
+    "in": "Đinh Thanh Bình",
+    "out": "Stefan Mauk",
+    "minute": "72"
+   },
+   {
+    "team": "Công An Hà Nội",
+    "in": "Hoàng Văn Toản",
+    "out": "Nguyễn Quang Hải",
+    "minute": "73"
+   },
+   {
+    "team": "Công An Hà Nội",
+    "in": "Phan Ngọc Tín",
+    "out": "Bùi Hoàng Việt Anh",
+    "minute": "78"
+   },
+   {
+    "team": "Kashima Antlers",
+    "in": "Gaku Shibasaki",
+    "out": "Matheus Bueno",
+    "minute": "46"
+   },
+   {
+    "team": "Kashima Antlers",
+    "in": "Aleksandar Čavrić",
+    "out": "José Elber",
+    "minute": "63"
+   },
+   {
+    "team": "Kashima Antlers",
+    "in": "Minato Yoshida",
+    "out": "Léo",
+    "minute": "77"
+   },
+   {
+    "team": "Kashima Antlers",
+    "in": "Sho Omori",
+    "out": "Ryoya Ogawa",
+    "minute": "77"
+   },
+   {
+    "team": "Kashima Antlers",
+    "in": "Homare Tokuda",
+    "out": "Yuma Suzuki",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Mooud Bonyadifard",
+  "attendance": 5168,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ACLELITE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ACLELITE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/asia/afc-champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-1"
+  }
+ }
+}
