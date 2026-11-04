@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "aleague-2026-27-2026-10-24-newcastlejets-macarthurfc",
+ "date": "2026-10-24",
+ "home": "Newcastle Jets",
+ "away": "Macarthur FC",
+ "score": "1-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/1000017564",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/1000017564"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "James Delianov",
+   "Joel Bertolissio",
+   "Thomas Aquilina",
+   "Alexander Grant",
+   "Daniel Wilmering",
+   "Max Burgess",
+   "Zach Clough",
+   "Zane Schreiber",
+   "Julian Recchia",
+   "Xavier Bertoncello",
+   "Nikolaos Vergos"
+  ],
+  "home_bench": [
+   "Joe Shaughnessy",
+   "Will Dobson",
+   "Joe Lolley",
+   "Patrick Wood",
+   "Alex Badolato",
+   "Jordan Baylis",
+   "Ethan Debono"
+  ],
+  "away_starting_xi": [
+   "Alex Robinson",
+   "Callum Talbot",
+   "Tatsuki Nara",
+   "Jonathan Aspropotamitis",
+   "Nathan Paull",
+   "Liam Rose",
+   "Oliver Randazzo",
+   "Connor Pain",
+   "Dean Bosnjak",
+   "Bernardo Oliveira",
+   "Apostolos Stamatelopoulos"
+  ],
+  "away_bench": [
+   "Dylan Rose",
+   "Ryan Fraser",
+   "Luke Vickery",
+   "Ben Gibson",
+   "Musa Touré",
+   "Joshua Lakkis",
+   "Sebastian Kršlović"
+  ],
+  "substitution_events": [
+   {
+    "team": "Newcastle Jets",
+    "in": "Joe Shaughnessy",
+    "out": "Alexander Grant",
+    "minute": "59"
+   },
+   {
+    "team": "Newcastle Jets",
+    "in": "Will Dobson",
+    "out": "Julian Recchia",
+    "minute": "59"
+   },
+   {
+    "team": "Newcastle Jets",
+    "in": "Patrick Wood",
+    "out": "Nikolaos Vergos",
+    "minute": "67"
+   },
+   {
+    "team": "Newcastle Jets",
+    "in": "Joe Lolley",
+    "out": "Xavier Bertoncello",
+    "minute": "67"
+   },
+   {
+    "team": "Newcastle Jets",
+    "in": "Alex Badolato",
+    "out": "Max Burgess",
+    "minute": "77"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Dylan Rose",
+    "out": "Oliver Randazzo",
+    "minute": "46"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Ryan Fraser",
+    "out": "Connor Pain",
+    "minute": "46"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Luke Vickery",
+    "out": "Bernardo Oliveira",
+    "minute": "56"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Ben Gibson",
+    "out": "Dean Bosnjak",
+    "minute": "63"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Musa Touré",
+    "out": "Apostolos Stamatelopoulos",
+    "minute": "69"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Alex King",
+  "attendance": 7293,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ALEAGUE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ALEAGUE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/australia/a-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/australia/a-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-1"
+  }
+ }
+}

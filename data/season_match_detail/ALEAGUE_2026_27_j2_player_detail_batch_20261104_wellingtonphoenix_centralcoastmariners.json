@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "aleague-2026-27-2026-10-25-wellingtonphoenix-centralcoastmariners",
+ "date": "2026-10-25",
+ "home": "Wellington Phoenix",
+ "away": "Central Coast Mariners",
+ "score": "2-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/1000017567",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/1000017567"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Henry Gray",
+   "Matthew Sheridan",
+   "Bill Poni Tuiloma",
+   "Lukas Kelly-Heald",
+   "James McGarry",
+   "Bryce Duke",
+   "Max Anderson",
+   "Alex Rufer",
+   "Kazuki Nagasawa",
+   "Corban Piper",
+   "Rafael Durán"
+  ],
+  "home_bench": [
+   "Riley Bidois",
+   "Luke Mitchell",
+   "Nathan Walker",
+   "Alby Kelly-Heald",
+   "Walter Scott",
+   "Dylan Gardiner",
+   "Tze-Xuan Loke"
+  ],
+  "away_starting_xi": [
+   "Andrew Redmayne",
+   "Ty Mckibbin",
+   "Diesel Herrington",
+   "Noah McCann",
+   "Lucas Mauragis",
+   "Chris Donnell",
+   "Ali Auglah",
+   "Bailey Brandtman",
+   "Haine Eames",
+   "Alexander Jesse Bolton",
+   "Oli Lavale"
+  ],
+  "away_bench": [
+   "Arthur De Lima",
+   "Jesse Mantell",
+   "Shumba Mutokoyi",
+   "Luke Becvinovski",
+   "Max Naylor",
+   "Jai Ajanovic",
+   "Callum McCaskey"
+  ],
+  "substitution_events": [
+   {
+    "team": "Wellington Phoenix",
+    "in": "Riley Bidois",
+    "out": "Rafael Durán",
+    "minute": "70"
+   },
+   {
+    "team": "Wellington Phoenix",
+    "in": "Luke Mitchell",
+    "out": "Corban Piper",
+    "minute": "84"
+   },
+   {
+    "team": "Wellington Phoenix",
+    "in": "Nathan Walker",
+    "out": "Bryce Duke",
+    "minute": "84"
+   },
+   {
+    "team": "Central Coast Mariners",
+    "in": "Arthur De Lima",
+    "out": "Alexander Jesse Bolton",
+    "minute": "46"
+   },
+   {
+    "team": "Central Coast Mariners",
+    "in": "Jesse Mantell",
+    "out": "Haine Eames",
+    "minute": "61"
+   },
+   {
+    "team": "Central Coast Mariners",
+    "in": "Shumba Mutokoyi",
+    "out": "Ty Mckibbin",
+    "minute": "62"
+   },
+   {
+    "team": "Central Coast Mariners",
+    "in": "Luke Becvinovski",
+    "out": "Bailey Brandtman",
+    "minute": "62"
+   },
+   {
+    "team": "Central Coast Mariners",
+    "in": "Max Naylor",
+    "out": "Ali Auglah",
+    "minute": "72"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Sam Kelly",
+  "attendance": 5301,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ALEAGUE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ALEAGUE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/australia/a-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/australia/a-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-0"
+  }
+ }
+}

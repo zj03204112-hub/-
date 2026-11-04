@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "aleague-2026-27-2026-10-30-brisbaneroarfc-aucklandfc",
+ "date": "2026-10-30",
+ "home": "Brisbane Roar FC",
+ "away": "Auckland FC",
+ "score": "1-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/1000017569",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/1000017569"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "George Plusnin",
+   "Milorad Stajić",
+   "Tom Aldred",
+   "Joel King",
+   "Tate Russell",
+   "Nam Tae-Hee",
+   "Noah Maieroni",
+   "Tyrese Francois",
+   "Sabit James Ngor",
+   "Justin Vidić",
+   "Virgiliu Postolachi"
+  ],
+  "home_bench": [
+   "Marko Ilic",
+   "Emin Durakovic",
+   "Nathan Amanatidis",
+   "Jordan Lauton",
+   "Dean Bouzanis",
+   "Hosine Bility",
+   "Jacob Nasso"
+  ],
+  "away_starting_xi": [
+   "Michael Woud",
+   "Hiroki Sakai",
+   "Ronan Wynne",
+   "Nando Pijnaker",
+   "Francis De Vries",
+   "Lachlan Brook",
+   "Luis Gallegos",
+   "Jake Brimmer",
+   "Logan Rogerson",
+   "Jonty Bidois",
+   "Lachlan Bayliss"
+  ],
+  "away_bench": [
+   "Callan Elliot",
+   "Isa Prins",
+   "Daniel Normann",
+   "Van Fitzharris",
+   "Joseph Knowles",
+   "Luka Vicelich",
+   "Marley Leuluai"
+  ],
+  "substitution_events": [
+   {
+    "team": "Brisbane Roar FC",
+    "in": "Marko Ilic",
+    "out": "Virgiliu Postolachi",
+    "minute": "58"
+   },
+   {
+    "team": "Brisbane Roar FC",
+    "in": "Emin Durakovic",
+    "out": "Milorad Stajić",
+    "minute": "75"
+   },
+   {
+    "team": "Brisbane Roar FC",
+    "in": "Nathan Amanatidis",
+    "out": "Sabit James Ngor",
+    "minute": "76"
+   },
+   {
+    "team": "Brisbane Roar FC",
+    "in": "Jordan Lauton",
+    "out": "Tyrese Francois",
+    "minute": "82"
+   },
+   {
+    "team": "Auckland FC",
+    "in": "Callan Elliot",
+    "out": "Lachlan Brook",
+    "minute": "72"
+   },
+   {
+    "team": "Auckland FC",
+    "in": "Isa Prins",
+    "out": "Jonty Bidois",
+    "minute": "72"
+   },
+   {
+    "team": "Auckland FC",
+    "in": "Daniel Normann",
+    "out": "Jake Brimmer",
+    "minute": "89"
+   },
+   {
+    "team": "Auckland FC",
+    "in": "Van Fitzharris",
+    "out": "Lachlan Bayliss",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Lachlan Keevers",
+  "attendance": 7284,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ALEAGUE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ALEAGUE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/australia/a-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/australia/a-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-1"
+  }
+ }
+}

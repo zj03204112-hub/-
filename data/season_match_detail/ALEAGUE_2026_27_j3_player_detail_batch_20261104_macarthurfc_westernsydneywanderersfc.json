@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "aleague-2026-27-2026-10-31-macarthurfc-westernsydneywanderersfc",
+ "date": "2026-10-31",
+ "home": "Macarthur FC",
+ "away": "Western Sydney Wanderers FC",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/1000017572",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/1000017572"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alex Robinson",
+   "Callum Talbot",
+   "Tatsuki Nara",
+   "Jonathan Aspropotamitis",
+   "Nathan Paull",
+   "Luke Vickery",
+   "Dylan Rose",
+   "Liam Rose",
+   "Connor Pain",
+   "Dean Bosnjak",
+   "Apostolos Stamatelopoulos"
+  ],
+  "home_bench": [
+   "Ben Gibson",
+   "Musa Touré",
+   "Ryan Fraser",
+   "Zane Helweh",
+   "Joshua Lakkis",
+   "Sebastian Kršlović",
+   "Oliver Randazzo"
+  ],
+  "away_starting_xi": [
+   "Lawrence Thomas",
+   "Panashe Madanha",
+   "Germán Ferreyra",
+   "Nathan Barrie",
+   "Jarrod Carluccio",
+   "Dylan Scicluna",
+   "Angus Thurgate",
+   "Nicolas Milanović",
+   "Miguel Di Pizio",
+   "Liam Gillion",
+   "Brandon Borrello"
+  ],
+  "away_bench": [
+   "Aydan Hammond",
+   "Atiya Waraga",
+   "Hiroshi Ibusuki",
+   "Marcus Savic",
+   "Jordan Holmes",
+   "Steven Ugarković",
+   "Jai Rose"
+  ],
+  "substitution_events": [
+   {
+    "team": "Macarthur FC",
+    "in": "Ben Gibson",
+    "out": "Dean Bosnjak",
+    "minute": "53"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Ryan Fraser",
+    "out": "Connor Pain",
+    "minute": "60"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Musa Touré",
+    "out": "Luke Vickery",
+    "minute": "60"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Zane Helweh",
+    "out": "Apostolos Stamatelopoulos",
+    "minute": "83"
+   },
+   {
+    "team": "Western Sydney Wanderers FC",
+    "in": "Atiya Waraga",
+    "out": "Liam Gillion",
+    "minute": "54"
+   },
+   {
+    "team": "Western Sydney Wanderers FC",
+    "in": "Aydan Hammond",
+    "out": "Brandon Borrello",
+    "minute": "54"
+   },
+   {
+    "team": "Western Sydney Wanderers FC",
+    "in": "Hiroshi Ibusuki",
+    "out": "Nicolas Milanović",
+    "minute": "71"
+   },
+   {
+    "team": "Western Sydney Wanderers FC",
+    "in": "Marcus Savic",
+    "out": "Jarrod Carluccio",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Daniel Elder",
+  "attendance": 6232,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ALEAGUE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ALEAGUE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/australia/a-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/australia/a-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-0"
+  }
+ }
+}

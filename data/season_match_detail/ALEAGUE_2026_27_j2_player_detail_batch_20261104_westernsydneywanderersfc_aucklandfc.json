@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "aleague-2026-27-2026-10-24-westernsydneywanderersfc-aucklandfc",
+ "date": "2026-10-24",
+ "home": "Western Sydney Wanderers FC",
+ "away": "Auckland FC",
+ "score": "5-2",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/1000017565",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/1000017565"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lawrence Thomas",
+   "Panashe Madanha",
+   "Germán Ferreyra",
+   "Anthony Pantazopoulos",
+   "Jarrod Carluccio",
+   "Angus Thurgate",
+   "Dylan Scicluna",
+   "Miguel Di Pizio",
+   "Nicolas Milanović",
+   "Brandon Borrello",
+   "Liam Gillion"
+  ],
+  "home_bench": [
+   "Atiya Waraga",
+   "Aydan Hammond",
+   "Hiroshi Ibusuki",
+   "Jordan Holmes",
+   "Nathan Barrie",
+   "Steven Ugarković",
+   "Jai Rose"
+  ],
+  "away_starting_xi": [
+   "Michael Woud",
+   "Hiroki Sakai",
+   "Luka Vicelich",
+   "Nando Pijnaker",
+   "Francis De Vries",
+   "Lachlan Brook",
+   "Luis Gallegos",
+   "Jake Brimmer",
+   "Logan Rogerson",
+   "Sam Cosgrove",
+   "Lachlan Bayliss"
+  ],
+  "away_bench": [
+   "Daniel Normann",
+   "Van Fitzharris",
+   "Callan Elliot",
+   "Jonty Bidois",
+   "Joseph Knowles",
+   "Ronan Wynne",
+   "Isa Prins"
+  ],
+  "substitution_events": [
+   {
+    "team": "Western Sydney Wanderers FC",
+    "in": "Atiya Waraga",
+    "out": "Liam Gillion",
+    "minute": "59"
+   },
+   {
+    "team": "Western Sydney Wanderers FC",
+    "in": "Aydan Hammond",
+    "out": "Nicolas Milanović",
+    "minute": "70"
+   },
+   {
+    "team": "Western Sydney Wanderers FC",
+    "in": "Hiroshi Ibusuki",
+    "out": "Brandon Borrello",
+    "minute": "84"
+   },
+   {
+    "team": "Auckland FC",
+    "in": "Daniel Normann",
+    "out": "Jake Brimmer",
+    "minute": "71"
+   },
+   {
+    "team": "Auckland FC",
+    "in": "Van Fitzharris",
+    "out": "Lachlan Bayliss",
+    "minute": "71"
+   },
+   {
+    "team": "Auckland FC",
+    "in": "Callan Elliot",
+    "out": "Hiroki Sakai",
+    "minute": "82"
+   },
+   {
+    "team": "Auckland FC",
+    "in": "Jonty Bidois",
+    "out": "Logan Rogerson",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 2
+  },
+  "provider_score": "5-2",
+  "score_consistent_with_events": true,
+  "referee": "Shaun Evans",
+  "attendance": 8283,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ALEAGUE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ALEAGUE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/australia/a-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/australia/a-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "5-2"
+  }
+ }
+}

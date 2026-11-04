@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "aleague-2026-27-2026-10-31-melbournecityfc-sydneyfc",
+ "date": "2026-10-31",
+ "home": "Melbourne City FC",
+ "away": "Sydney FC",
+ "score": "2-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/1000017571",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/1000017571"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "James Nieuwenhuizen",
+   "Nathaniel Atkinson",
+   "Julio Cascante",
+   "Harrison Delbridge",
+   "Aziz Behich",
+   "Besian Kutleshi",
+   "Kavian Rahmani",
+   "Medin Memeti",
+   "Quinn Macnicol",
+   "Awer Mabil",
+   "Andrew Nabbout"
+  ],
+  "home_bench": [
+   "Emiliano Marcondes",
+   "Matthew Leckie",
+   "Takeshi Kanamori",
+   "Liam Bonetig",
+   "Roland Ballah",
+   "Jonty Benfield",
+   "Beckham Baker"
+  ],
+  "away_starting_xi": [
+   "Harrison Devenish-Meares",
+   "Rhyan Grant",
+   "Alexandar Popović",
+   "Jordan Courtney-Perkins",
+   "Benjamin Garuccio",
+   "Rhys Youlley",
+   "Wataru Kamijo",
+   "Al Hassan Touré",
+   "Takahiro Sekine",
+   "Akol Akon",
+   "Oriola Sunday"
+  ],
+  "away_bench": [
+   "Tiago Quintal",
+   "James Overy",
+   "Joseph Lacey",
+   "Mathias Macallister",
+   "Alexander Zaverdinos",
+   "Ethan Dyer",
+   "Gabriel Popović"
+  ],
+  "substitution_events": [
+   {
+    "team": "Melbourne City FC",
+    "in": "Emiliano Marcondes",
+    "out": "Besian Kutleshi",
+    "minute": "46"
+   },
+   {
+    "team": "Melbourne City FC",
+    "in": "Matthew Leckie",
+    "out": "Quinn Macnicol",
+    "minute": "63"
+   },
+   {
+    "team": "Melbourne City FC",
+    "in": "Takeshi Kanamori",
+    "out": "Medin Memeti",
+    "minute": "64"
+   },
+   {
+    "team": "Melbourne City FC",
+    "in": "Liam Bonetig",
+    "out": "Julio Cascante",
+    "minute": "73"
+   },
+   {
+    "team": "Melbourne City FC",
+    "in": "Roland Ballah",
+    "out": "Andrew Nabbout",
+    "minute": "79"
+   },
+   {
+    "team": "Sydney FC",
+    "in": "Tiago Quintal",
+    "out": "Al Hassan Touré",
+    "minute": "64"
+   },
+   {
+    "team": "Sydney FC",
+    "in": "Joseph Lacey",
+    "out": "Wataru Kamijo",
+    "minute": "73"
+   },
+   {
+    "team": "Sydney FC",
+    "in": "James Overy",
+    "out": "Akol Akon",
+    "minute": "73"
+   },
+   {
+    "team": "Sydney FC",
+    "in": "Mathias Macallister",
+    "out": "Takahiro Sekine",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Benjamin Abraham",
+  "attendance": 4888,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ALEAGUE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ALEAGUE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/australia/a-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/australia/a-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-1"
+  }
+ }
+}

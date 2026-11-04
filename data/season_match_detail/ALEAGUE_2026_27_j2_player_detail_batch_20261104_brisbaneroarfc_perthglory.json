@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "aleague-2026-27-2026-10-23-brisbaneroarfc-perthglory",
+ "date": "2026-10-23",
+ "home": "Brisbane Roar FC",
+ "away": "Perth Glory",
+ "score": "2-1",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/1000017563",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/1000017563"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "George Plusnin",
+   "Milorad Stajić",
+   "Tom Aldred",
+   "Joel King",
+   "Tate Russell",
+   "Nam Tae-Hee",
+   "Noah Maieroni",
+   "Tyrese Francois",
+   "Sabit James Ngor",
+   "Virgiliu Postolachi",
+   "Justin Vidić"
+  ],
+  "home_bench": [
+   "Hosine Bility",
+   "Marko Ilic",
+   "Emmett Shaw",
+   "Nathan Amanatidis",
+   "Jacob Nasso",
+   "Dean Bouzanis",
+   "Emin Durakovic"
+  ],
+  "away_starting_xi": [
+   "Matthew Sutton",
+   "Tadiwanashe Kuzamba",
+   "Cher Deng",
+   "Lachlan Jackson",
+   "Andriano Lebib",
+   "Stefan Colakovski",
+   "Sebastian Despotovski",
+   "Lucas Scicluna",
+   "Sam Sutton",
+   "Pieter Jacobsz",
+   "Tom Lawrence"
+  ],
+  "away_bench": [
+   "Jaiden Kucharski",
+   "Matthew Ellis",
+   "Giovanni De Abreu",
+   "Sebastian Kukucka",
+   "Jay O'Shea",
+   "Daniel Solsky",
+   "Riley Foxe"
+  ],
+  "substitution_events": [
+   {
+    "team": "Brisbane Roar FC",
+    "in": "Hosine Bility",
+    "out": "Milorad Stajić",
+    "minute": "65"
+   },
+   {
+    "team": "Brisbane Roar FC",
+    "in": "Marko Ilic",
+    "out": "Virgiliu Postolachi",
+    "minute": "65"
+   },
+   {
+    "team": "Brisbane Roar FC",
+    "in": "Nathan Amanatidis",
+    "out": "Sabit James Ngor",
+    "minute": "75"
+   },
+   {
+    "team": "Brisbane Roar FC",
+    "in": "Emmett Shaw",
+    "out": "Tyrese Francois",
+    "minute": "75"
+   },
+   {
+    "team": "Brisbane Roar FC",
+    "in": "Jacob Nasso",
+    "out": "Tate Russell",
+    "minute": "80"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Jaiden Kucharski",
+    "out": "Andriano Lebib",
+    "minute": "46"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Giovanni De Abreu",
+    "out": "Sebastian Despotovski",
+    "minute": "59"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Matthew Ellis",
+    "out": "Pieter Jacobsz",
+    "minute": "59"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Sebastian Kukucka",
+    "out": "Stefan Colakovski",
+    "minute": "75"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Jay O'Shea",
+    "out": "Tom Lawrence",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Alireza Faghani",
+  "attendance": 6497,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ALEAGUE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ALEAGUE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/australia/a-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/australia/a-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-1"
+  }
+ }
+}

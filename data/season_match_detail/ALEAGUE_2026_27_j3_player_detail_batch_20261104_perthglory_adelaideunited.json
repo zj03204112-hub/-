@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "aleague-2026-27-2026-11-01-perthglory-adelaideunited",
+ "date": "2026-11-01",
+ "home": "Perth Glory",
+ "away": "Adelaide United",
+ "score": "4-0",
+ "halftime_score": "3-0",
+ "official_match_url": "https://www.fotmob.com/matches/1000017574",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/1000017574"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Daniel Solsky",
+   "Tadiwanashe Kuzamba",
+   "Cher Deng",
+   "Lachlan Jackson",
+   "Sam Sutton",
+   "Jaiden Kucharski",
+   "Lucas Scicluna",
+   "William Freney",
+   "Stefan Colakovski",
+   "Pieter Jacobsz",
+   "Tom Lawrence"
+  ],
+  "home_bench": [
+   "Giovanni De Abreu",
+   "Sebastian Despotovski",
+   "Sebastian Kukucka",
+   "Jay O'Shea",
+   "Matthew Ellis",
+   "Matthew Sutton",
+   "Andriano Lebib"
+  ],
+  "away_starting_xi": [
+   "Joshua Smits",
+   "Jay Barnett",
+   "Feyzo Kasumovic",
+   "Panagiotis Kikianis",
+   "Fabian Talladira",
+   "Joey Garuccio",
+   "Luke Đuzel",
+   "Ethan Alagich",
+   "Amlani Tatu",
+   "Brody Burkitt",
+   "Jonny Yull"
+  ],
+  "away_bench": [
+   "Juan Muñiz",
+   "Ajak Riak",
+   "Harry Crawford",
+   "Ryan Kitto",
+   "Anselmo",
+   "Ethan Cox",
+   "Sotiri Phillis"
+  ],
+  "substitution_events": [
+   {
+    "team": "Perth Glory",
+    "in": "Giovanni De Abreu",
+    "out": "Jaiden Kucharski",
+    "minute": "60"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Sebastian Kukucka",
+    "out": "Stefan Colakovski",
+    "minute": "61"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Sebastian Despotovski",
+    "out": "Pieter Jacobsz",
+    "minute": "61"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Jay O'Shea",
+    "out": "William Freney",
+    "minute": "65"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Matthew Ellis",
+    "out": "Tom Lawrence",
+    "minute": "76"
+   },
+   {
+    "team": "Adelaide United",
+    "in": "Ajak Riak",
+    "out": "Brody Burkitt",
+    "minute": "46"
+   },
+   {
+    "team": "Adelaide United",
+    "in": "Harry Crawford",
+    "out": "Luke Đuzel",
+    "minute": "46"
+   },
+   {
+    "team": "Adelaide United",
+    "in": "Juan Muñiz",
+    "out": "Ethan Alagich",
+    "minute": "46"
+   },
+   {
+    "team": "Adelaide United",
+    "in": "Ryan Kitto",
+    "out": "Fabian Talladira",
+    "minute": "67"
+   },
+   {
+    "team": "Adelaide United",
+    "in": "Anselmo",
+    "out": "Jonny Yull",
+    "minute": "67"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 0
+  },
+  "provider_score": "4-0",
+  "score_consistent_with_events": true,
+  "referee": "Thomas Dale",
+  "attendance": 7670,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ALEAGUE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ALEAGUE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/australia/a-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/australia/a-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "4-0"
+  }
+ }
+}

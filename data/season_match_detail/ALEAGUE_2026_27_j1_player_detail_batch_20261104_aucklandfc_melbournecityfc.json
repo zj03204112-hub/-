@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "aleague-2026-27-2026-10-17-aucklandfc-melbournecityfc",
+ "date": "2026-10-17",
+ "home": "Auckland FC",
+ "away": "Melbourne City FC",
+ "score": "3-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/1000017558",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/1000017558"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Michael Woud",
+   "Hiroki Sakai",
+   "Luka Vicelich",
+   "Nando Pijnaker",
+   "Francis De Vries",
+   "Luis Gallegos",
+   "Jake Brimmer",
+   "Lachlan Brook",
+   "Lachlan Bayliss",
+   "Logan Rogerson",
+   "Sam Cosgrove"
+  ],
+  "home_bench": [
+   "Van Fitzharris",
+   "Isa Prins",
+   "Daniel Normann",
+   "Callan Elliot",
+   "Joe Knowles",
+   "Ronan Wynne",
+   "Jonty Bidois"
+  ],
+  "away_starting_xi": [
+   "Macklin Freke",
+   "Nathaniel Atkinson",
+   "Liam Bonetig",
+   "Harrison Delbridge",
+   "Aziz Behich",
+   "Besian Kutleshi",
+   "Kavian Rahmani",
+   "Medin Memeti",
+   "Quinn Macnicol",
+   "Awer Mabil",
+   "Andrew Nabbout"
+  ],
+  "away_bench": [
+   "Max Caputo",
+   "Lawrence Wong",
+   "Matthew Leckie",
+   "James Nieuwenhuizen",
+   "Peter Antoniou",
+   "Takeshi Kanamori",
+   "Roland Ballah"
+  ],
+  "substitution_events": [
+   {
+    "team": "Auckland FC",
+    "in": "Van Fitzharris",
+    "out": "Lachlan Bayliss",
+    "minute": "80"
+   },
+   {
+    "team": "Auckland FC",
+    "in": "Daniel Normann",
+    "out": "Jake Brimmer",
+    "minute": "88"
+   },
+   {
+    "team": "Auckland FC",
+    "in": "Isa Prins",
+    "out": "Lachlan Brook",
+    "minute": "88"
+   },
+   {
+    "team": "Auckland FC",
+    "in": "Callan Elliot",
+    "out": "Sam Cosgrove",
+    "minute": "89"
+   },
+   {
+    "team": "Melbourne City FC",
+    "in": "Max Caputo",
+    "out": "Andrew Nabbout",
+    "minute": "67"
+   },
+   {
+    "team": "Melbourne City FC",
+    "in": "Matthew Leckie",
+    "out": "Besian Kutleshi",
+    "minute": "75"
+   },
+   {
+    "team": "Melbourne City FC",
+    "in": "Lawrence Wong",
+    "out": "Quinn Macnicol",
+    "minute": "75"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 1
+  },
+  "provider_score": "3-1",
+  "score_consistent_with_events": true,
+  "referee": "Tim Danaskos",
+  "attendance": 20635,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ALEAGUE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ALEAGUE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/australia/a-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/australia/a-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "3-1"
+  }
+ }
+}

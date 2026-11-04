@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "aleague-2026-27-2026-10-17-macarthurfc-perthglory",
+ "date": "2026-10-17",
+ "home": "Macarthur FC",
+ "away": "Perth Glory",
+ "score": "2-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/1000017559",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/1000017559"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alex Robinson",
+   "Callum Talbot",
+   "Tatsuki Nara",
+   "Jonathan Aspropotamitis",
+   "Nathan Paull",
+   "Liam Rose",
+   "Oliver Randazzo",
+   "Luke Vickery",
+   "Ben Gibson",
+   "Connor Pain",
+   "Apostolos Stamatelopoulos"
+  ],
+  "home_bench": [
+   "Bernardo Oliveira",
+   "Ryan Fraser",
+   "Musa Touré",
+   "Jing Reec",
+   "Dean Bosnjak",
+   "Joshua Lakkis",
+   "Dylan Rose"
+  ],
+  "away_starting_xi": [
+   "Matthew Sutton",
+   "Tadiwanashe Kuzamba",
+   "Cher Deng",
+   "Lachlan Jackson",
+   "Andriano Lebib",
+   "Henry Hore",
+   "Lucas Scicluna",
+   "William Freney",
+   "Stefan Colakovski",
+   "Tom Lawrence",
+   "Sebastian Despotovski"
+  ],
+  "away_bench": [
+   "Jaiden Kucharski",
+   "Sam Sutton",
+   "Pieter Jacobsz",
+   "Giovanni De Abreu",
+   "Calem Nieuwenhof",
+   "Daniel Solsky",
+   "Sebastian Kukucka"
+  ],
+  "substitution_events": [
+   {
+    "team": "Macarthur FC",
+    "in": "Bernardo Oliveira",
+    "out": "Connor Pain",
+    "minute": "55"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Ryan Fraser",
+    "out": "Luke Vickery",
+    "minute": "55"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Musa Touré",
+    "out": "Apostolos Stamatelopoulos",
+    "minute": "64"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Jing Reec",
+    "out": "Ben Gibson",
+    "minute": "73"
+   },
+   {
+    "team": "Macarthur FC",
+    "in": "Dean Bosnjak",
+    "out": "Oliver Randazzo",
+    "minute": "73"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Jaiden Kucharski",
+    "out": "Henry Hore",
+    "minute": "52"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Sam Sutton",
+    "out": "Stefan Colakovski",
+    "minute": "63"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Pieter Jacobsz",
+    "out": "Tom Lawrence",
+    "minute": "63"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Calem Nieuwenhof",
+    "out": "William Freney",
+    "minute": "73"
+   },
+   {
+    "team": "Perth Glory",
+    "in": "Giovanni De Abreu",
+    "out": "Sebastian Despotovski",
+    "minute": "73"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Shaun Evans",
+  "attendance": 3441,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ALEAGUE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ALEAGUE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/australia/a-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/australia/a-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-1"
+  }
+ }
+}

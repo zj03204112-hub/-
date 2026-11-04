@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "aleague-2026-27-2026-10-18-wellingtonphoenix-melbournevictory",
+ "date": "2026-10-18",
+ "home": "Wellington Phoenix",
+ "away": "Melbourne Victory",
+ "score": "2-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/1000017561",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/1000017561"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Henry Gray",
+   "Matthew Sheridan",
+   "Bill Poni Tuiloma",
+   "Lukas Kelly-Heald",
+   "James McGarry",
+   "Max Anderson",
+   "Kazuki Nagasawa",
+   "Luke Mitchell",
+   "Bryce Duke",
+   "Corban Piper",
+   "Rafael Durán"
+  ],
+  "home_bench": [
+   "Nathan Walker",
+   "Walter Scott",
+   "Riley Bidois",
+   "Alby Kelly-Heald",
+   "Dylan Gardiner",
+   "Anaru Cassidy",
+   "Tze-Xuan Loke"
+  ],
+  "away_starting_xi": [
+   "Jack Duncan",
+   "Joshua Inserra",
+   "Philipp Ziereis",
+   "Jason Davidson",
+   "Franco Lino",
+   "Clarismario Santos",
+   "Jordi Valadon",
+   "Denis Genreau",
+   "Matthew Grimaldi",
+   "Guillermo May",
+   "Charles Nduka"
+  ],
+  "away_bench": [
+   "Tom Lockyer",
+   "Keegan Jelacic",
+   "Xavier Stella",
+   "Michael Ghossaini",
+   "Brendan Hamill",
+   "Jack Warshawsky",
+   "Harrison Shillington"
+  ],
+  "substitution_events": [
+   {
+    "team": "Wellington Phoenix",
+    "in": "Nathan Walker",
+    "out": "Rafael Durán",
+    "minute": "28"
+   },
+   {
+    "team": "Wellington Phoenix",
+    "in": "Walter Scott",
+    "out": "James McGarry",
+    "minute": "62"
+   },
+   {
+    "team": "Wellington Phoenix",
+    "in": "Riley Bidois",
+    "out": "Luke Mitchell",
+    "minute": "77"
+   },
+   {
+    "team": "Melbourne Victory",
+    "in": "Keegan Jelacic",
+    "out": "Clarismario Santos",
+    "minute": "62"
+   },
+   {
+    "team": "Melbourne Victory",
+    "in": "Tom Lockyer",
+    "out": "Philipp Ziereis",
+    "minute": "62"
+   },
+   {
+    "team": "Melbourne Victory",
+    "in": "Xavier Stella",
+    "out": "Guillermo May",
+    "minute": "74"
+   },
+   {
+    "team": "Melbourne Victory",
+    "in": "Michael Ghossaini",
+    "out": "Matthew Grimaldi",
+    "minute": "74"
+   },
+   {
+    "team": "Melbourne Victory",
+    "in": "Brendan Hamill",
+    "out": "Charles Nduka",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Lachlan Keevers",
+  "attendance": 8254,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/ALEAGUE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/ALEAGUE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/australia/a-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/australia/a-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-1"
+  }
+ }
+}

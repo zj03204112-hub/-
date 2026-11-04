@@ -1,0 +1,52 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "A-League",
+ "season": "2026/27",
+ "scheduled_fixtures_scanned": 30,
+ "completed_fixtures": 17,
+ "upcoming_fixtures": 13,
+ "fixtures_with_player_detail": 17,
+ "player_rows": 612,
+ "starting_xi_rows": 374,
+ "substitution_rows": 147,
+ "event_rows": 106,
+ "events_by_type": {
+  "yellow_card": 58,
+  "goal": 42,
+  "penalty_goal": 3,
+  "own_goal": 2,
+  "red_card": 1
+ },
+ "shot_rows": 400,
+ "shot_goals": 47,
+ "event_goals": 47,
+ "match_meta_rows": 17,
+ "meta_missing": {
+  "ManagerHome": 0,
+  "ManagerAway": 0,
+  "Venue": 0,
+  "Referee": 0
+ },
+ "xg_shots_with_value": 398,
+ "xg_total": 44.12,
+ "score_crosscheck": {
+  "reference": "https://www.flashscore.com/football/australia/a-league/",
+  "batches": 17,
+  "matched": 17,
+  "mismatches": 0,
+  "unmatched": 0,
+  "result": "all matched scorelines agree"
+ },
+ "sources": {
+  "fixtures_lineups_events_shots": "FotMob public match API",
+  "scores_crosscheck": "Flashscore competition feed (football-data does not cover the A-League)"
+ },
+ "known_gaps": [
+  "Lineups, cards and shots remain single provider (FotMob).",
+  "13 fixtures are scheduled but not yet played."
+ ],
+ "pipeline": [
+  "data_pipeline/collect_aleague_fotmob.py",
+  "data_pipeline/crosscheck_aleague_scores_flashscore.py"
+ ]
+}
