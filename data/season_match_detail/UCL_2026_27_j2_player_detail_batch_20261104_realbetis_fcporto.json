@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "ucl-2026-27-2026-10-14-realbetis-fcporto",
+ "date": "2026-10-14",
+ "home": "Real Betis",
+ "away": "FC Porto",
+ "score": "3-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106299",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106299"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Álvaro Vallés",
+   "Ángel Ortiz",
+   "Marc Bartra",
+   "Natan",
+   "Fran García",
+   "Marc Roca",
+   "Nelson Deossa",
+   "Antony",
+   "Isco",
+   "Abdessamad Ezzalzouli",
+   "Troy Parrott"
+  ],
+  "home_bench": [
+   "Dani Ceballos",
+   "Juan Hernández",
+   "Facundo Bernal",
+   "Pablo Fornals",
+   "Rodrigo Riquelme",
+   "Diego Conde",
+   "Diego Llorente",
+   "Héctor Bellerín",
+   "Valentín Gómez",
+   "Álvaro Fidalgo",
+   "Giovani Lo Celso",
+   "José Antonio Morante"
+  ],
+  "away_starting_xi": [
+   "Diogo Costa",
+   "Martim Fernandes",
+   "Pablo Rosario",
+   "Jakub Kiwior",
+   "Francisco Moura",
+   "Victor Froholdt",
+   "Alan Varela",
+   "Gabriel Veiga",
+   "Borja Sainz",
+   "André Silva",
+   "Pepê"
+  ],
+  "away_bench": [
+   "Alberto Costa",
+   "Oskar Pietuszewski",
+   "Samuel Aghehowa",
+   "In-Beom Hwang",
+   "Santiago Giménez",
+   "Cláudio Ramos",
+   "Luís Gomes",
+   "Nehuén Pérez",
+   "Souza",
+   "Zaidu Sanusi",
+   "João Teixeira",
+   "Seko Fofana"
+  ],
+  "substitution_events": [
+   {
+    "team": "Real Betis",
+    "in": "Dani Ceballos",
+    "out": "Nelson Deossa",
+    "minute": "62"
+   },
+   {
+    "team": "Real Betis",
+    "in": "Juan Hernández",
+    "out": "Troy Parrott",
+    "minute": "62"
+   },
+   {
+    "team": "Real Betis",
+    "in": "Facundo Bernal",
+    "out": "Isco",
+    "minute": "87"
+   },
+   {
+    "team": "Real Betis",
+    "in": "Pablo Fornals",
+    "out": "Marc Roca",
+    "minute": "87"
+   },
+   {
+    "team": "Real Betis",
+    "in": "Rodrigo Riquelme",
+    "out": "Antony",
+    "minute": "90"
+   },
+   {
+    "team": "FC Porto",
+    "in": "Oskar Pietuszewski",
+    "out": "Borja Sainz",
+    "minute": "59"
+   },
+   {
+    "team": "FC Porto",
+    "in": "Samuel Aghehowa",
+    "out": "André Silva",
+    "minute": "59"
+   },
+   {
+    "team": "FC Porto",
+    "in": "Alberto Costa",
+    "out": "Martim Fernandes",
+    "minute": "59"
+   },
+   {
+    "team": "FC Porto",
+    "in": "In-Beom Hwang",
+    "out": "Gabriel Veiga",
+    "minute": "71"
+   },
+   {
+    "team": "FC Porto",
+    "in": "Santiago Giménez",
+    "out": "Pepê",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Clément Turpin",
+  "attendance": 67114,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

@@ -1,0 +1,126 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "ucl-2026-27-2026-09-08-aekathens-lask",
+ "date": "2026-09-08",
+ "home": "AEK Athens",
+ "away": "LASK",
+ "score": "1-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106404",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106404"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alberto Brignoli",
+   "Lazaros Rota",
+   "Harold Moukoudi",
+   "Filipe Relvas",
+   "Stavros Pilios",
+   "Lovro Majer",
+   "Milán Vitális",
+   "Răzvan Marin",
+   "Aboubakary Koïta",
+   "Barnabás Varga",
+   "Luka Jović"
+  ],
+  "home_bench": [
+   "Zine",
+   "Kervin Arriaga",
+   "Mijat Gaćinović",
+   "Marios Balamotis",
+   "Charalambos Lykogiannis",
+   "Domagoj Vida",
+   "Kaan Kairinen",
+   "Petros Mantalos",
+   "Joao Mário",
+   "Oleksandr Zubkov"
+  ],
+  "away_starting_xi": [
+   "Lukas Jungwirth",
+   "Xavier Mbuyamba",
+   "Alemão",
+   "Andrés Andrade",
+   "Kasper Jørgensen",
+   "Robert Ljubičić",
+   "Melayro Bogarde",
+   "Sascha Horvath",
+   "George Bello",
+   "Moses Usor",
+   "Christoph Lang"
+  ],
+  "away_bench": [
+   "Florian Flecker",
+   "Alessandro Schöpf",
+   "Saša Kalajdžić",
+   "Fabian Schillinger",
+   "Tobias Schützenauer",
+   "Daniel Elfadli",
+   "Manoël Verhaeghe",
+   "Miguel Freckleton",
+   "Yvan Dibango",
+   "Kryštof Daněk",
+   "Naël Kane"
+  ],
+  "substitution_events": [
+   {
+    "team": "AEK Athens",
+    "in": "Zine",
+    "out": "Luka Jović",
+    "minute": "82"
+   },
+   {
+    "team": "AEK Athens",
+    "in": "Mijat Gaćinović",
+    "out": "Aboubakary Koïta",
+    "minute": "90"
+   },
+   {
+    "team": "AEK Athens",
+    "in": "Kervin Arriaga",
+    "out": "Lovro Majer",
+    "minute": "90"
+   },
+   {
+    "team": "LASK",
+    "in": "Florian Flecker",
+    "out": "Kasper Jørgensen",
+    "minute": "65"
+   },
+   {
+    "team": "LASK",
+    "in": "Alessandro Schöpf",
+    "out": "Robert Ljubičić",
+    "minute": "66"
+   },
+   {
+    "team": "LASK",
+    "in": "Saša Kalajdžić",
+    "out": "Christoph Lang",
+    "minute": "74"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Luís Godinho",
+  "attendance": 30221,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

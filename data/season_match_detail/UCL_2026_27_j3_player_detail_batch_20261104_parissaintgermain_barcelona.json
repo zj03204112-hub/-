@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ucl-2026-27-2026-10-20-parissaintgermain-barcelona",
+ "date": "2026-10-20",
+ "home": "Paris Saint-Germain",
+ "away": "Barcelona",
+ "score": "4-2",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106234",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106234"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Matvey Safonov",
+   "Achraf Hakimi",
+   "Marquinhos",
+   "Willian Pacho",
+   "Lucas Hernández",
+   "João Neves",
+   "Vítinha",
+   "Fabián Ruiz",
+   "Désiré Doué",
+   "Ousmane Dembélé",
+   "Khvicha Kvaratskhelia"
+  ],
+  "home_bench": [
+   "Ferrán Torres",
+   "Ilya Zabarnyi",
+   "Maghnes Akliouche",
+   "Senny Mayulu",
+   "Warren Zaïre-Emery",
+   "Adam Mouak",
+   "Lucas Chevalier",
+   "Lucas Digne",
+   "Dro Fernández",
+   "Lucas Beraldo",
+   "Mika Godts",
+   "Quentin Ndjantou"
+  ],
+  "away_starting_xi": [
+   "Joan García",
+   "Xavi Espart",
+   "Pau Cubarsí",
+   "Gerard Martín",
+   "João Cancelo",
+   "Marc Bernal",
+   "Pedri",
+   "Lamine Yamal",
+   "Dani Olmo",
+   "Anthony Gordon",
+   "Raphinha"
+  ],
+  "away_bench": [
+   "Fermín López",
+   "Gavi",
+   "Rodri",
+   "Karim Adeyemi",
+   "Alejandro Balde",
+   "Dominik Livaković",
+   "Wojciech Szczęsny",
+   "Álex Campos",
+   "Brian Fariñas",
+   "Frenkie de Jong",
+   "Gabriel Jesus",
+   "Hamza Abdelkarim"
+  ],
+  "substitution_events": [
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Ferrán Torres",
+    "out": "Ousmane Dembélé",
+    "minute": "20"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Ilya Zabarnyi",
+    "out": "Marquinhos",
+    "minute": "59"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Maghnes Akliouche",
+    "out": "Khvicha Kvaratskhelia",
+    "minute": "59"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Warren Zaïre-Emery",
+    "out": "Lucas Hernández",
+    "minute": "78"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Senny Mayulu",
+    "out": "Désiré Doué",
+    "minute": "78"
+   },
+   {
+    "team": "Barcelona",
+    "in": "Fermín López",
+    "out": "Dani Olmo",
+    "minute": "27"
+   },
+   {
+    "team": "Barcelona",
+    "in": "Karim Adeyemi",
+    "out": "Raphinha",
+    "minute": "60"
+   },
+   {
+    "team": "Barcelona",
+    "in": "Gavi",
+    "out": "Pedri",
+    "minute": "60"
+   },
+   {
+    "team": "Barcelona",
+    "in": "Rodri",
+    "out": "Marc Bernal",
+    "minute": "60"
+   },
+   {
+    "team": "Barcelona",
+    "in": "Alejandro Balde",
+    "out": "Xavi Espart",
+    "minute": "74"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 2
+  },
+  "provider_score": "4-2",
+  "score_consistent_with_events": true,
+  "referee": "Michael Oliver",
+  "attendance": 47421,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

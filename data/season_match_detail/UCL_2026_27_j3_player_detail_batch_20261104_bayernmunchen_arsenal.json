@@ -1,0 +1,143 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ucl-2026-27-2026-10-21-bayernmunchen-arsenal",
+ "date": "2026-10-21",
+ "home": "Bayern München",
+ "away": "Arsenal",
+ "score": "2-2",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/6106238",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106238"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Manuel Neuer",
+   "Konrad Laimer",
+   "Dayot Upamecano",
+   "Min-Jae Kim",
+   "Josip Stanišić",
+   "Tom Bischof",
+   "Aleksandar Pavlović",
+   "Serge Gnabry",
+   "Ismael Saibari",
+   "Alphonso Davies",
+   "Harry Kane"
+  ],
+  "home_bench": [
+   "Jonathan Tah",
+   "Lennart Karl",
+   "Luis Díaz",
+   "Nathaniel Brown",
+   "Bara Ndiaye",
+   "Jonas Urbig",
+   "Sven Ulreich",
+   "Hiroki Ito",
+   "Sacha Boey",
+   "Tim Binder"
+  ],
+  "away_starting_xi": [
+   "David Raya",
+   "Jurriën Timber",
+   "Ezri Konsa",
+   "Gabriel",
+   "Riccardo Calafiori",
+   "Declan Rice",
+   "Bruno Guimarães",
+   "Bukayo Saka",
+   "Martin Ødegaard",
+   "Noni Madueke",
+   "Kai Havertz"
+  ],
+  "away_bench": [
+   "Eberechi Eze",
+   "Myles Lewis-Skelly",
+   "Viktor Gyökeres",
+   "Mikel Merino",
+   "Illan Meslier",
+   "Kepa Arrizabalaga",
+   "Ben White",
+   "Cristhian Mosquera",
+   "Martín Zubimendi",
+   "Max Dowman"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bayern München",
+    "in": "Jonathan Tah",
+    "out": "Min-Jae Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Luis Díaz",
+    "out": "Ismael Saibari",
+    "minute": "68"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Lennart Karl",
+    "out": "Serge Gnabry",
+    "minute": "68"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Nathaniel Brown",
+    "out": "Alphonso Davies",
+    "minute": "85"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Bara Ndiaye",
+    "out": "Luis Díaz",
+    "minute": "90"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Eberechi Eze",
+    "out": "Bukayo Saka",
+    "minute": "10"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Viktor Gyökeres",
+    "out": "Kai Havertz",
+    "minute": "68"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Myles Lewis-Skelly",
+    "out": "Bruno Guimarães",
+    "minute": "68"
+   },
+   {
+    "team": "Arsenal",
+    "in": "Mikel Merino",
+    "out": "Martin Ødegaard",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Davide Massa",
+  "attendance": 75000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

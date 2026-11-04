@@ -1,0 +1,150 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "ucl-2026-27-2026-11-03-manchesterunited-roma",
+ "date": "2026-11-03",
+ "home": "Manchester United",
+ "away": "Roma",
+ "score": "3-2",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/6106291",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106291"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Senne Lammens",
+   "Leny Yoro",
+   "Harry Maguire",
+   "Ayden Heaven",
+   "Diogo Dalot",
+   "Carlos Baleba",
+   "Kobbie Mainoo",
+   "Amad Diallo",
+   "Bruno Fernandes",
+   "Matheus Cunha",
+   "Bryan Mbeumo"
+  ],
+  "home_bench": [
+   "Youri Tielemans",
+   "Lisandro Martínez",
+   "Shea Lacey",
+   "Matthijs de Ligt",
+   "Mason Mount",
+   "Karl Darlow",
+   "Tom Heaton",
+   "Noussair Mazraoui",
+   "Andrey Santos",
+   "Harry Amass",
+   "Tyler Fletcher",
+   "Joshua Zirkzee"
+  ],
+  "away_starting_xi": [
+   "Devis Vásquez",
+   "Gianluca Mancini",
+   "Leonardo Balerdi",
+   "Mario Hermoso",
+   "Devyne Rensch",
+   "Bryan Cristante",
+   "Marten de Roon",
+   "Wesley",
+   "Matias Soulé",
+   "Rodrigo Mora",
+   "Donyell Malen"
+  ],
+  "away_bench": [
+   "Emanuele Lulli",
+   "Niccolò Pisilli",
+   "Daniele Ghilardi",
+   "Evan N'Dicka",
+   "Santiago Castro",
+   "Giorgio De Marzi",
+   "Konstantinos Koulierakis",
+   "Nahuel Molina",
+   "Alessandro Di Nunzio"
+  ],
+  "substitution_events": [
+   {
+    "team": "Manchester United",
+    "in": "Youri Tielemans",
+    "out": "Carlos Baleba",
+    "minute": "51"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Lisandro Martínez",
+    "out": "Ayden Heaven",
+    "minute": "75"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Shea Lacey",
+    "out": "Amad Diallo",
+    "minute": "75"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Matthijs de Ligt",
+    "out": "Harry Maguire",
+    "minute": "88"
+   },
+   {
+    "team": "Manchester United",
+    "in": "Mason Mount",
+    "out": "Bruno Fernandes",
+    "minute": "88"
+   },
+   {
+    "team": "Roma",
+    "in": "Emanuele Lulli",
+    "out": "Devyne Rensch",
+    "minute": "21"
+   },
+   {
+    "team": "Roma",
+    "in": "Niccolò Pisilli",
+    "out": "Rodrigo Mora",
+    "minute": "46"
+   },
+   {
+    "team": "Roma",
+    "in": "Daniele Ghilardi",
+    "out": "Gianluca Mancini",
+    "minute": "75"
+   },
+   {
+    "team": "Roma",
+    "in": "Evan N'Dicka",
+    "out": "Mario Hermoso",
+    "minute": "76"
+   },
+   {
+    "team": "Roma",
+    "in": "Santiago Castro",
+    "out": "Donyell Malen",
+    "minute": "78"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Jesús Gil Manzano",
+  "attendance": 73747,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

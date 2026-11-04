@@ -1,0 +1,139 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "ucl-2026-27-2026-09-10-fenerbahce-roma",
+ "date": "2026-09-10",
+ "home": "Fenerbahçe",
+ "away": "Roma",
+ "score": "1-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/6106331",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106331"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Ederson",
+   "Mert Müldür",
+   "Milan Škriniar",
+   "Nathan Aké",
+   "Archie Brown",
+   "N'Golo Kanté",
+   "Ismail Yüksek",
+   "Bartuğ Elmaz",
+   "Mason Greenwood",
+   "Vedat Muriqi",
+   "Kerem Aktürkoglu"
+  ],
+  "home_bench": [
+   "Levent Mercan",
+   "Oğuz Aydın",
+   "Romelu Lukaku",
+   "Mert Günok",
+   "Tarık Çetin",
+   "Kojo Peprah Oppong",
+   "Nélson Semedo",
+   "Ognjen Mimović",
+   "Yiğit Efe Demir",
+   "Dorgeles Nene",
+   "İrfan Kahveci"
+  ],
+  "away_starting_xi": [
+   "Mile Svilar",
+   "Gianluca Mancini",
+   "Evan N'Dicka",
+   "Mario Hermoso",
+   "Devyne Rensch",
+   "Bryan Cristante",
+   "Manu Koné",
+   "Wesley",
+   "Paulo Dybala",
+   "Matias Soulé",
+   "Donyell Malen"
+  ],
+  "away_bench": [
+   "Niccolò Pisilli",
+   "Leonardo Balerdi",
+   "Nahuel Molina",
+   "Rodrigo Mora",
+   "Marten de Roon",
+   "Giorgio De Marzi",
+   "Pierluigi Gollini",
+   "Daniele Ghilardi",
+   "Konstantinos Koulierakis",
+   "Emanuele Lulli",
+   "Santiago Castro"
+  ],
+  "substitution_events": [
+   {
+    "team": "Fenerbahçe",
+    "in": "Levent Mercan",
+    "out": "Bartuğ Elmaz",
+    "minute": "62"
+   },
+   {
+    "team": "Fenerbahçe",
+    "in": "Romelu Lukaku",
+    "out": "Vedat Muriqi",
+    "minute": "72"
+   },
+   {
+    "team": "Fenerbahçe",
+    "in": "Oğuz Aydın",
+    "out": "Kerem Aktürkoglu",
+    "minute": "72"
+   },
+   {
+    "team": "Roma",
+    "in": "Niccolò Pisilli",
+    "out": "Manu Koné",
+    "minute": "53"
+   },
+   {
+    "team": "Roma",
+    "in": "Nahuel Molina",
+    "out": "Devyne Rensch",
+    "minute": "74"
+   },
+   {
+    "team": "Roma",
+    "in": "Leonardo Balerdi",
+    "out": "Gianluca Mancini",
+    "minute": "74"
+   },
+   {
+    "team": "Roma",
+    "in": "Rodrigo Mora",
+    "out": "Matias Soulé",
+    "minute": "74"
+   },
+   {
+    "team": "Roma",
+    "in": "Marten de Roon",
+    "out": "Donyell Malen",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Jesús Gil Manzano",
+  "attendance": 40577,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

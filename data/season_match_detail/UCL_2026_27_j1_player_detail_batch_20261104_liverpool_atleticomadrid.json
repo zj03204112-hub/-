@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "ucl-2026-27-2026-09-09-liverpool-atleticomadrid",
+ "date": "2026-09-09",
+ "home": "Liverpool",
+ "away": "Atlético Madrid",
+ "score": "2-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/6106246",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106246"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alisson Becker",
+   "Ronald Araujo",
+   "Jérémy Jacquet",
+   "Virgil van Dijk",
+   "Miloš Kerkez",
+   "Dominik Szoboszlai",
+   "Alexis Mac Allister",
+   "Bradley Barcola",
+   "Florian Wirtz",
+   "Rio Ngumoha",
+   "Alexander Isak"
+  ],
+  "home_bench": [
+   "Jeremie Frimpong",
+   "Víctor Muñoz",
+   "Ryan Gravenberch",
+   "Konstantinos Tsimikas",
+   "Lewis Koumas",
+   "Freddie Woodman",
+   "Giorgi Mamardashvili",
+   "James McConnell",
+   "Luke Chambers",
+   "Trey Nyoni",
+   "Jayden Danns"
+  ],
+  "away_starting_xi": [
+   "Jan Oblak",
+   "Marc Pubill",
+   "Cristian Romero",
+   "Dávid Hancko",
+   "Marcos Llorente",
+   "Pablo Barrios",
+   "Koke",
+   "Giuliano Simeone",
+   "Kang-In Lee",
+   "Álex Baena",
+   "Julián Álvarez"
+  ],
+  "away_bench": [
+   "Ademola Lookman",
+   "Alejandro Grimaldo",
+   "Jonathan David",
+   "Robin Le Normand",
+   "Morten Hjulmand",
+   "Juan Musso",
+   "Dani Martínez",
+   "Jorge Domínguez",
+   "Johnny Cardoso",
+   "Jorge Castillo",
+   "Obed Vargas",
+   "Rodrigo Mendoza"
+  ],
+  "substitution_events": [
+   {
+    "team": "Liverpool",
+    "in": "Víctor Muñoz",
+    "out": "Bradley Barcola",
+    "minute": "60"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Jeremie Frimpong",
+    "out": "Rio Ngumoha",
+    "minute": "60"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Ryan Gravenberch",
+    "out": "Alexis Mac Allister",
+    "minute": "69"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Lewis Koumas",
+    "out": "Alexander Isak",
+    "minute": "88"
+   },
+   {
+    "team": "Liverpool",
+    "in": "Konstantinos Tsimikas",
+    "out": "Miloš Kerkez",
+    "minute": "88"
+   },
+   {
+    "team": "Atlético Madrid",
+    "in": "Alejandro Grimaldo",
+    "out": "Kang-In Lee",
+    "minute": "59"
+   },
+   {
+    "team": "Atlético Madrid",
+    "in": "Ademola Lookman",
+    "out": "Koke",
+    "minute": "59"
+   },
+   {
+    "team": "Atlético Madrid",
+    "in": "Jonathan David",
+    "out": "Álex Baena",
+    "minute": "73"
+   },
+   {
+    "team": "Atlético Madrid",
+    "in": "Robin Le Normand",
+    "out": "Cristian Romero",
+    "minute": "77"
+   },
+   {
+    "team": "Atlético Madrid",
+    "in": "Morten Hjulmand",
+    "out": "Pablo Barrios",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Davide Massa",
+  "attendance": 59870,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

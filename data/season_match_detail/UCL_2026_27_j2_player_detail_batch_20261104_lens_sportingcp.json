@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "ucl-2026-27-2026-10-13-lens-sportingcp",
+ "date": "2026-10-13",
+ "home": "Lens",
+ "away": "Sporting CP",
+ "score": "0-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/6106414",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106414"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Robin Risser",
+   "Ismaëlo Ganiou",
+   "Samson Baidoo",
+   "Kyllian Antonio",
+   "Saud Abdulhamid",
+   "Michaël Cuisance",
+   "Amadou Haidara",
+   "Matthieu Udol",
+   "Florian Thauvin",
+   "Junior Kadile",
+   "Franjo Ivanović"
+  ],
+  "home_bench": [
+   "Ruben Aguilar",
+   "Odsonne Édouard",
+   "Mezian Mesloub Soares",
+   "Michał Skóras",
+   "Yacine Titraoui",
+   "Mathieu Gorgelin",
+   "Jean-Clair Todibo",
+   "Nidal Čelik",
+   "Souleymane Sagnan",
+   "Andrija Bulatović",
+   "Florian Sotoca",
+   "Thorgan Hazard"
+  ],
+  "away_starting_xi": [
+   "Kaique Pereira",
+   "Iván Fresneda",
+   "Eduardo Quaresma",
+   "Gonçalo Inácio",
+   "Maxi Araújo",
+   "João Simões",
+   "Sergi Altimira",
+   "Issa Doumbia",
+   "Geny Catamo",
+   "Luis Suárez",
+   "Nestory Irankunda"
+  ],
+  "away_bench": [
+   "Luís Guilherme",
+   "Silas Andersen",
+   "Jesse Derry",
+   "Pedro Lima",
+   "Fotis Ioannidis",
+   "Rui Silva",
+   "Georgios Vagiannidis",
+   "Ibrahima Ba",
+   "Moncef Zekri",
+   "Eduardo Felicíssimo",
+   "Flávio Gonçalves",
+   "Rafael Nel"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lens",
+    "in": "Odsonne Édouard",
+    "out": "Franjo Ivanović",
+    "minute": "57"
+   },
+   {
+    "team": "Lens",
+    "in": "Ruben Aguilar",
+    "out": "Samson Baidoo",
+    "minute": "57"
+   },
+   {
+    "team": "Lens",
+    "in": "Michał Skóras",
+    "out": "Saud Abdulhamid",
+    "minute": "68"
+   },
+   {
+    "team": "Lens",
+    "in": "Mezian Mesloub Soares",
+    "out": "Junior Kadile",
+    "minute": "68"
+   },
+   {
+    "team": "Lens",
+    "in": "Yacine Titraoui",
+    "out": "Amadou Haidara",
+    "minute": "80"
+   },
+   {
+    "team": "Sporting CP",
+    "in": "Luís Guilherme",
+    "out": "Geny Catamo",
+    "minute": "66"
+   },
+   {
+    "team": "Sporting CP",
+    "in": "Silas Andersen",
+    "out": "João Simões",
+    "minute": "73"
+   },
+   {
+    "team": "Sporting CP",
+    "in": "Jesse Derry",
+    "out": "Nestory Irankunda",
+    "minute": "73"
+   },
+   {
+    "team": "Sporting CP",
+    "in": "Pedro Lima",
+    "out": "Issa Doumbia",
+    "minute": "85"
+   },
+   {
+    "team": "Sporting CP",
+    "in": "Fotis Ioannidis",
+    "out": "Luis Suárez",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Igor Pajač",
+  "attendance": 37548,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

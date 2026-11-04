@@ -1,0 +1,139 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "ucl-2026-27-2026-10-13-rbleipzig-psveindhoven",
+ "date": "2026-10-13",
+ "home": "RB Leipzig",
+ "away": "PSV Eindhoven",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106323",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106323"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Maarten Vandevoordt",
+   "Ridle Baku",
+   "Willi Orbán",
+   "Castello Lukeba",
+   "David Raum",
+   "Neil El Aynaoui",
+   "Ezechiel Banzuzi",
+   "Brajan Gruda",
+   "Christopher Nkunku",
+   "Antonio Nusa",
+   "Rômulo"
+  ],
+  "home_bench": [
+   "Tidiam Gomis",
+   "Rocco Reitz",
+   "Lukas Klostermann",
+   "Nicolas Seiwald",
+   "Ørjan Håskjold Nyland",
+   "Abdoul Koné",
+   "Benjamin Henrichs",
+   "Max Finkgräfe",
+   "Maxime Estève",
+   "Andrija Maksimović",
+   "Johan Bakayoko"
+  ],
+  "away_starting_xi": [
+   "Matěj Kovár",
+   "Sergiño Dest",
+   "Lutsharel Geertruida",
+   "Armando Obispo",
+   "Filip Kostić",
+   "Kodai Sano",
+   "Mauro Júnior",
+   "Ivan Perišić",
+   "Guus Til",
+   "Ruben van Bommel",
+   "Sven Mijnans"
+  ],
+  "away_bench": [
+   "Ryan Flamingo",
+   "Yarek Gąsiorowski",
+   "Ayoni Santos",
+   "Mikkel Bro",
+   "Nick Olij",
+   "Tijn Smolenaars",
+   "Noah Fernandez",
+   "Shuryjano Cornecion",
+   "Amir Bouhamdi",
+   "Dennis Man",
+   "Esmir Bajraktarević"
+  ],
+  "substitution_events": [
+   {
+    "team": "RB Leipzig",
+    "in": "Tidiam Gomis",
+    "out": "Rômulo",
+    "minute": "62"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Rocco Reitz",
+    "out": "Brajan Gruda",
+    "minute": "76"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Nicolas Seiwald",
+    "out": "Ridle Baku",
+    "minute": "86"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Lukas Klostermann",
+    "out": "Ezechiel Banzuzi",
+    "minute": "86"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Yarek Gąsiorowski",
+    "out": "Filip Kostić",
+    "minute": "77"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Ryan Flamingo",
+    "out": "Lutsharel Geertruida",
+    "minute": "77"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Ayoni Santos",
+    "out": "Ruben van Bommel",
+    "minute": "84"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Mikkel Bro",
+    "out": "Sven Mijnans",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Nick Walsh",
+  "attendance": 43187,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

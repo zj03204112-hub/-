@@ -1,0 +1,123 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "ucl-2026-27-2026-11-03-bodglimt-lille",
+ "date": "2026-11-03",
+ "home": "Bodø/Glimt",
+ "away": "Lille",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106316",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106316"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nikita Haikin",
+   "Fredrik Sjøvold",
+   "Odin Lurås Bjørtuft",
+   "Haitam Aleesami",
+   "Fredrik André Bjørkan",
+   "Sondre Auklend",
+   "Patrick Berg",
+   "Sondre Brunstad Fet",
+   "Ole Blomberg",
+   "Andreas Helmersen",
+   "Jens Petter Hauge"
+  ],
+  "home_bench": [
+   "Ola Brynhildsen",
+   "Ulrik Saltnes",
+   "Jostein Gundersen",
+   "Julian Faye Lund",
+   "Isak Dybvik Määttä",
+   "Magnus Bech Riisnæs",
+   "Villads Nielsen",
+   "Joshua Kitolano",
+   "Joel Mvuka"
+  ],
+  "away_starting_xi": [
+   "Berke Özer",
+   "Nathan Ngoy",
+   "Tanguy Nianzou",
+   "Isaac Cossier",
+   "Calvin Verdonk",
+   "Ngal Ayel Mukau",
+   "Maurits Kjærgaard",
+   "Benjamin André",
+   "Dilane Bakwa",
+   "Hákon Arnar Haraldsson",
+   "Soriba Diaoune"
+  ],
+  "away_bench": [
+   "Olivier Giroud",
+   "Osame Sahraoui",
+   "Gaëtan Perrin",
+   "Orlando Gill",
+   "Zadig Lanssade",
+   "Alexsandro Ribeiro",
+   "Loun Srdanovic",
+   "Maxima Goffi",
+   "Yéli Traoré"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bodø/Glimt",
+    "in": "Ola Brynhildsen",
+    "out": "Andreas Helmersen",
+    "minute": "70"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Ulrik Saltnes",
+    "out": "Sondre Auklend",
+    "minute": "81"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Jostein Gundersen",
+    "out": "Haitam Aleesami",
+    "minute": "88"
+   },
+   {
+    "team": "Lille",
+    "in": "Olivier Giroud",
+    "out": "Maurits Kjærgaard",
+    "minute": "70"
+   },
+   {
+    "team": "Lille",
+    "in": "Osame Sahraoui",
+    "out": "Soriba Diaoune",
+    "minute": "81"
+   },
+   {
+    "team": "Lille",
+    "in": "Gaëtan Perrin",
+    "out": "Dilane Bakwa",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "João Pinheiro",
+  "attendance": 7737,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

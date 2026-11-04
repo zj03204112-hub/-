@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ucl-2026-27-2026-10-21-inter-shakhtardonetsk",
+ "date": "2026-10-21",
+ "home": "Inter",
+ "away": "Shakhtar Donetsk",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106252",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106252"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Josep Martínez",
+   "Manuel Akanji",
+   "Alessandro Bastoni",
+   "Carlos Augusto",
+   "Djed Spence",
+   "Nicolò Barella",
+   "Hakan Çalhanoglu",
+   "Petar Sučić",
+   "Federico Dimarco",
+   "Marcus Thuram",
+   "Ange-Yoan Bonny"
+  ],
+  "home_bench": [
+   "Yann Aurel Bisseck",
+   "Andy Diouf",
+   "Piotr Zieliński",
+   "Luis Henrique",
+   "Henrikh Mkhitaryan",
+   "Ivan Provedel",
+   "Raffaele Di Gennaro",
+   "Francesco Stante",
+   "Leonardo Bovio",
+   "Aleksandar Stanković",
+   "Francesco Pio Esposito",
+   "Mattia Mosconi"
+  ],
+  "away_starting_xi": [
+   "Dmytro Riznyk",
+   "Vinícius Tobias",
+   "Valeriy Bondar",
+   "Mykola Matviyenko",
+   "Pedro Henrique",
+   "Oleg Ocheretko",
+   "Alisson Santana",
+   "Pedrinho",
+   "Marlon Gomes",
+   "Gleiker Mendoza",
+   "Kauã Elias"
+  ],
+  "away_bench": [
+   "Yegor Nazaryna",
+   "Isaque",
+   "Lassina Traoré",
+   "Newerton",
+   "Bruninho",
+   "Kiril Fesyun",
+   "Alaa Ghram",
+   "Oleksandr Karavaev",
+   "Dmytro Kryskiv",
+   "Gabriel Carvalho",
+   "Luca Meirelles",
+   "Lucas Ferreira"
+  ],
+  "substitution_events": [
+   {
+    "team": "Inter",
+    "in": "Piotr Zieliński",
+    "out": "Hakan Çalhanoglu",
+    "minute": "59"
+   },
+   {
+    "team": "Inter",
+    "in": "Yann Aurel Bisseck",
+    "out": "Federico Dimarco",
+    "minute": "59"
+   },
+   {
+    "team": "Inter",
+    "in": "Andy Diouf",
+    "out": "Djed Spence",
+    "minute": "59"
+   },
+   {
+    "team": "Inter",
+    "in": "Luis Henrique",
+    "out": "Petar Sučić",
+    "minute": "73"
+   },
+   {
+    "team": "Inter",
+    "in": "Henrikh Mkhitaryan",
+    "out": "Ange-Yoan Bonny",
+    "minute": "75"
+   },
+   {
+    "team": "Shakhtar Donetsk",
+    "in": "Yegor Nazaryna",
+    "out": "Pedrinho",
+    "minute": "32"
+   },
+   {
+    "team": "Shakhtar Donetsk",
+    "in": "Isaque",
+    "out": "Oleg Ocheretko",
+    "minute": "72"
+   },
+   {
+    "team": "Shakhtar Donetsk",
+    "in": "Newerton",
+    "out": "Gleiker Mendoza",
+    "minute": "72"
+   },
+   {
+    "team": "Shakhtar Donetsk",
+    "in": "Lassina Traoré",
+    "out": "Kauã Elias",
+    "minute": "72"
+   },
+   {
+    "team": "Shakhtar Donetsk",
+    "in": "Bruninho",
+    "out": "Alisson Santana",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Harm Osmers",
+  "attendance": 73352,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

@@ -1,0 +1,149 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "ucl-2026-27-2026-09-10-bayernmunchen-bodglimt",
+ "date": "2026-09-10",
+ "home": "Bayern München",
+ "away": "Bodø/Glimt",
+ "score": "5-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106240",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106240"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Manuel Neuer",
+   "Konrad Laimer",
+   "Dayot Upamecano",
+   "Jonathan Tah",
+   "Alphonso Davies",
+   "Joshua Kimmich",
+   "Aleksandar Pavlović",
+   "Michael Olise",
+   "Jamal Musiala",
+   "Luis Díaz",
+   "Harry Kane"
+  ],
+  "home_bench": [
+   "Josip Stanišić",
+   "Ismael Saibari",
+   "Hiroki Ito",
+   "Tom Bischof",
+   "Lennart Karl",
+   "Jonas Urbig",
+   "Sven Ulreich",
+   "Min-Jae Kim",
+   "Nathaniel Brown",
+   "Sacha Boey",
+   "Bara Ndiaye"
+  ],
+  "away_starting_xi": [
+   "Nikita Haikin",
+   "Fredrik Sjøvold",
+   "Villads Nielsen",
+   "Odin Lurås Bjørtuft",
+   "Fredrik André Bjørkan",
+   "Joshua Kitolano",
+   "Patrick Berg",
+   "Sondre Brunstad Fet",
+   "Sondre Auklend",
+   "Andreas Helmersen",
+   "Ole Blomberg"
+  ],
+  "away_bench": [
+   "Julian Faye Lund",
+   "Jens Petter Hauge",
+   "Ulrik Saltnes",
+   "Isak Dybvik Määttä",
+   "Ola Brynhildsen",
+   "Haitam Aleesami",
+   "Kasper Johansen Solhaug",
+   "Assan Sanyang",
+   "Joel Mvuka"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bayern München",
+    "in": "Josip Stanišić",
+    "out": "Konrad Laimer",
+    "minute": "65"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Ismael Saibari",
+    "out": "Jamal Musiala",
+    "minute": "65"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Lennart Karl",
+    "out": "Luis Díaz",
+    "minute": "80"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Hiroki Ito",
+    "out": "Alphonso Davies",
+    "minute": "80"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Tom Bischof",
+    "out": "Joshua Kimmich",
+    "minute": "80"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Julian Faye Lund",
+    "out": "Nikita Haikin",
+    "minute": "46"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Jens Petter Hauge",
+    "out": "Sondre Brunstad Fet",
+    "minute": "65"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Ulrik Saltnes",
+    "out": "Joshua Kitolano",
+    "minute": "71"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Isak Dybvik Määttä",
+    "out": "Fredrik André Bjørkan",
+    "minute": "80"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Ola Brynhildsen",
+    "out": "Andreas Helmersen",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 0
+  },
+  "provider_score": "5-0",
+  "score_consistent_with_events": true,
+  "referee": "Rade Obrenović",
+  "attendance": 75000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

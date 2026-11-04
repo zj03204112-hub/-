@@ -1,0 +1,149 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "ucl-2026-27-2026-11-03-villarreal-parissaintgermain",
+ "date": "2026-11-03",
+ "home": "Villarreal",
+ "away": "Paris Saint-Germain",
+ "score": "0-6",
+ "halftime_score": "0-4",
+ "official_match_url": "https://www.fotmob.com/matches/6106326",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106326"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Péter Gulácsi",
+   "Alex Freeman",
+   "Santiago Mouriño",
+   "Renato Veiga",
+   "Carlos Romero",
+   "Santi Comesaña",
+   "Carlos Maciá",
+   "Pape Gueye",
+   "Tajon Buchanan",
+   "Nicolas Pépé",
+   "Ayoze Pérez"
+  ],
+  "home_bench": [
+   "Sergi Cardona",
+   "Alberto Moleiro",
+   "Georges Mikautadze",
+   "Tani Oluwaseyi",
+   "Pau Navarro",
+   "Luíz Júnior",
+   "Rubén Gómez",
+   "Logan Costa",
+   "Nizar El Jmili",
+   "Joselillo Gaitán"
+  ],
+  "away_starting_xi": [
+   "Matvey Safonov",
+   "Achraf Hakimi",
+   "Ilya Zabarnyi",
+   "Willian Pacho",
+   "Lucas Hernández",
+   "João Neves",
+   "Vítinha",
+   "Fabián Ruiz",
+   "Maghnes Akliouche",
+   "Senny Mayulu",
+   "Désiré Doué"
+  ],
+  "away_bench": [
+   "Ferrán Torres",
+   "Mika Godts",
+   "David Boly",
+   "Lucas Beraldo",
+   "Quentin Ndjantou",
+   "Arthur Bar",
+   "Lucas Chevalier",
+   "Lucas Digne",
+   "Dro Fernández",
+   "Warren Zaïre-Emery"
+  ],
+  "substitution_events": [
+   {
+    "team": "Villarreal",
+    "in": "Sergi Cardona",
+    "out": "Nicolas Pépé",
+    "minute": "46"
+   },
+   {
+    "team": "Villarreal",
+    "in": "Alberto Moleiro",
+    "out": "Santi Comesaña",
+    "minute": "63"
+   },
+   {
+    "team": "Villarreal",
+    "in": "Georges Mikautadze",
+    "out": "Ayoze Pérez",
+    "minute": "63"
+   },
+   {
+    "team": "Villarreal",
+    "in": "Tani Oluwaseyi",
+    "out": "Carlos Romero",
+    "minute": "63"
+   },
+   {
+    "team": "Villarreal",
+    "in": "Pau Navarro",
+    "out": "Alex Freeman",
+    "minute": "79"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Ferrán Torres",
+    "out": "Senny Mayulu",
+    "minute": "60"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Mika Godts",
+    "out": "Maghnes Akliouche",
+    "minute": "60"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Quentin Ndjantou",
+    "out": "Désiré Doué",
+    "minute": "74"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "David Boly",
+    "out": "Achraf Hakimi",
+    "minute": "74"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Lucas Beraldo",
+    "out": "Vítinha",
+    "minute": "74"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 6
+  },
+  "provider_score": "0-6",
+  "score_consistent_with_events": true,
+  "referee": "Felix Zwayer",
+  "attendance": 20036,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

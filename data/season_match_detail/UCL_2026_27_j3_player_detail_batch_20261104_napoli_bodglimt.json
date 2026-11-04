@@ -1,0 +1,140 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ucl-2026-27-2026-10-20-napoli-bodglimt",
+ "date": "2026-10-20",
+ "home": "Napoli",
+ "away": "Bodø/Glimt",
+ "score": "4-3",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/6106320",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106320"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alex Meret",
+   "Giovanni Di Lorenzo",
+   "Amir Rrahmani",
+   "Rafa Marín",
+   "Leonardo Spinazzola",
+   "Frank Anguissa",
+   "Kevin De Bruyne",
+   "Scott McTominay",
+   "Matteo Politano",
+   "Rasmus Højlund",
+   "Noa Lang"
+  ],
+  "home_bench": [
+   "Stanislav Lobotka",
+   "Mathías Olivera",
+   "Sam Beukema",
+   "Giovane Nascimento",
+   "Nikita Contini",
+   "Vanja Milinković-Savić",
+   "Benoît Badiashile",
+   "Billy Gilmour",
+   "Lorenzo Lucca"
+  ],
+  "away_starting_xi": [
+   "Nikita Haikin",
+   "Fredrik Sjøvold",
+   "Jostein Gundersen",
+   "Odin Lurås Bjørtuft",
+   "Fredrik André Bjørkan",
+   "Sondre Auklend",
+   "Patrick Berg",
+   "Sondre Brunstad Fet",
+   "Ole Blomberg",
+   "Andreas Helmersen",
+   "Jens Petter Hauge"
+  ],
+  "away_bench": [
+   "Ola Brynhildsen",
+   "Ulrik Saltnes",
+   "Haitam Aleesami",
+   "Isak Dybvik Määttä",
+   "Joel Mvuka",
+   "Julian Faye Lund",
+   "Villads Nielsen",
+   "Joshua Kitolano"
+  ],
+  "substitution_events": [
+   {
+    "team": "Napoli",
+    "in": "Stanislav Lobotka",
+    "out": "Frank Anguissa",
+    "minute": "59"
+   },
+   {
+    "team": "Napoli",
+    "in": "Mathías Olivera",
+    "out": "Matteo Politano",
+    "minute": "79"
+   },
+   {
+    "team": "Napoli",
+    "in": "Sam Beukema",
+    "out": "Leonardo Spinazzola",
+    "minute": "79"
+   },
+   {
+    "team": "Napoli",
+    "in": "Giovane Nascimento",
+    "out": "Noa Lang",
+    "minute": "79"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Ola Brynhildsen",
+    "out": "Andreas Helmersen",
+    "minute": "76"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Ulrik Saltnes",
+    "out": "Sondre Auklend",
+    "minute": "83"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Haitam Aleesami",
+    "out": "Jostein Gundersen",
+    "minute": "84"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Joel Mvuka",
+    "out": "Ole Blomberg",
+    "minute": "84"
+   },
+   {
+    "team": "Bodø/Glimt",
+    "in": "Isak Dybvik Määttä",
+    "out": "Fredrik André Bjørkan",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 3
+  },
+  "provider_score": "4-3",
+  "score_consistent_with_events": true,
+  "referee": "José María Sánchez Martínez",
+  "attendance": 35096,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

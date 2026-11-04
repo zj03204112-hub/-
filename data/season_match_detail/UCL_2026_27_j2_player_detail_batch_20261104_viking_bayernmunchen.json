@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "ucl-2026-27-2026-10-13-viking-bayernmunchen",
+ "date": "2026-10-13",
+ "home": "Viking",
+ "away": "Bayern München",
+ "score": "3-3",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106417",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106417"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Arild Østbø",
+   "Henrik Heggheim",
+   "Gianni Stensness",
+   "Henrik Falchener",
+   "Kristoffer Haugen",
+   "Henrik Rørvik Bjørdal",
+   "Joe Bell",
+   "Kristoffer Askildsen",
+   "Peter Christiansen",
+   "Erik Botheim",
+   "Zlatko Tripić"
+  ],
+  "home_bench": [
+   "Jesper Daland",
+   "Herman Haugen",
+   "Viljar Vevatne",
+   "Simen Kvia-Egeskog",
+   "Tobias Moi",
+   "Lubomír Belko",
+   "Essien Bassey",
+   "Vetle Auklend",
+   "Jakob Segadal Hansen",
+   "Amin Cosic",
+   "Niklas Fuglestad",
+   "Romano Postema"
+  ],
+  "away_starting_xi": [
+   "Jonas Urbig",
+   "Konrad Laimer",
+   "Jonathan Tah",
+   "Min-Jae Kim",
+   "Nathaniel Brown",
+   "Joshua Kimmich",
+   "Tom Bischof",
+   "Michael Olise",
+   "Lennart Karl",
+   "Luis Díaz",
+   "Harry Kane"
+  ],
+  "away_bench": [
+   "Alphonso Davies",
+   "Dayot Upamecano",
+   "Ismael Saibari",
+   "Josip Stanišić",
+   "Hiroki Ito",
+   "David Podar-Știube",
+   "Manuel Neuer",
+   "Sven Ulreich",
+   "Sacha Boey",
+   "Aleksandar Pavlović",
+   "Bara Ndiaye",
+   "Serge Gnabry"
+  ],
+  "substitution_events": [
+   {
+    "team": "Viking",
+    "in": "Jesper Daland",
+    "out": "Kristoffer Haugen",
+    "minute": "59"
+   },
+   {
+    "team": "Viking",
+    "in": "Herman Haugen",
+    "out": "Henrik Rørvik Bjørdal",
+    "minute": "72"
+   },
+   {
+    "team": "Viking",
+    "in": "Simen Kvia-Egeskog",
+    "out": "Joe Bell",
+    "minute": "85"
+   },
+   {
+    "team": "Viking",
+    "in": "Tobias Moi",
+    "out": "Erik Botheim",
+    "minute": "85"
+   },
+   {
+    "team": "Viking",
+    "in": "Viljar Vevatne",
+    "out": "Henrik Heggheim",
+    "minute": "85"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Dayot Upamecano",
+    "out": "Jonathan Tah",
+    "minute": "46"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Ismael Saibari",
+    "out": "Lennart Karl",
+    "minute": "46"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Alphonso Davies",
+    "out": "Nathaniel Brown",
+    "minute": "46"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Josip Stanišić",
+    "out": "Luis Díaz",
+    "minute": "77"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Hiroki Ito",
+    "out": "Ismael Saibari",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 3
+  },
+  "provider_score": "3-3",
+  "score_consistent_with_events": true,
+  "referee": "Georgi Kabakov",
+  "attendance": 15466,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

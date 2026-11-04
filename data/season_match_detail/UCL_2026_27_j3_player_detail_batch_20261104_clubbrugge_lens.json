@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ucl-2026-27-2026-10-21-clubbrugge-lens",
+ "date": "2026-10-21",
+ "home": "Club Brugge",
+ "away": "Lens",
+ "score": "3-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106297",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106297"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Yann Sommer",
+   "Kyriani Sabbe",
+   "Jorne Spileers",
+   "Brandon Mechele",
+   "Joaquin Seys",
+   "Félix Lemaréchal",
+   "Freddie Potts",
+   "Hans Vanaken",
+   "Carlos Forbs",
+   "Nicolò Tresoldi",
+   "Jan Virgili"
+  ],
+  "home_bench": [
+   "Hugo Vetlesen",
+   "Mamadou Diakhon",
+   "Hugo Siquet",
+   "Milan Robberechts",
+   "Romeo Vermant",
+   "Argus Vanden Driessche",
+   "Nordin Jackers",
+   "Han-Beom Lee",
+   "Matteo Dams",
+   "Cheveyo Tsawa",
+   "Andrej Vasović",
+   "Tian Nai Koren"
+  ],
+  "away_starting_xi": [
+   "Robin Risser",
+   "Ruben Aguilar",
+   "Samson Baidoo",
+   "Matthieu Udol",
+   "Saud Abdulhamid",
+   "Michaël Cuisance",
+   "Amadou Haidara",
+   "Michał Skóras",
+   "Junior Kadile",
+   "Thorgan Hazard",
+   "Franjo Ivanović"
+  ],
+  "away_bench": [
+   "Jean-Clair Todibo",
+   "Florian Thauvin",
+   "Odsonne Édouard",
+   "Yacine Titraoui",
+   "Kyllian Antonio",
+   "Mathieu Gorgelin",
+   "Régis Gurtner",
+   "Nidal Čelik",
+   "Souleymane Sagnan",
+   "Andrija Bulatović",
+   "Florian Sotoca",
+   "Mezian Mesloub Soares"
+  ],
+  "substitution_events": [
+   {
+    "team": "Club Brugge",
+    "in": "Hugo Vetlesen",
+    "out": "Félix Lemaréchal",
+    "minute": "67"
+   },
+   {
+    "team": "Club Brugge",
+    "in": "Mamadou Diakhon",
+    "out": "Jan Virgili",
+    "minute": "73"
+   },
+   {
+    "team": "Club Brugge",
+    "in": "Romeo Vermant",
+    "out": "Nicolò Tresoldi",
+    "minute": "82"
+   },
+   {
+    "team": "Club Brugge",
+    "in": "Hugo Siquet",
+    "out": "Kyriani Sabbe",
+    "minute": "82"
+   },
+   {
+    "team": "Club Brugge",
+    "in": "Milan Robberechts",
+    "out": "Carlos Forbs",
+    "minute": "82"
+   },
+   {
+    "team": "Lens",
+    "in": "Jean-Clair Todibo",
+    "out": "Samson Baidoo",
+    "minute": "46"
+   },
+   {
+    "team": "Lens",
+    "in": "Florian Thauvin",
+    "out": "Thorgan Hazard",
+    "minute": "58"
+   },
+   {
+    "team": "Lens",
+    "in": "Odsonne Édouard",
+    "out": "Franjo Ivanović",
+    "minute": "58"
+   },
+   {
+    "team": "Lens",
+    "in": "Yacine Titraoui",
+    "out": "Amadou Haidara",
+    "minute": "70"
+   },
+   {
+    "team": "Lens",
+    "in": "Kyllian Antonio",
+    "out": "Ruben Aguilar",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 0
+  },
+  "provider_score": "3-0",
+  "score_consistent_with_events": true,
+  "referee": "Luís Godinho",
+  "attendance": 26023,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

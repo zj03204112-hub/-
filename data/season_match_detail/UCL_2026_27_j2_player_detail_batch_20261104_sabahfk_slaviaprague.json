@@ -1,0 +1,146 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "ucl-2026-27-2026-10-13-sabahfk-slaviaprague",
+ "date": "2026-10-13",
+ "home": "Sabah FK",
+ "away": "Slavia Prague",
+ "score": "2-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106424",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106424"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Stas Pokatilov",
+   "Akim Zedadka",
+   "Steve Solvet",
+   "Aden McCarthy",
+   "Tymoteusz Puchacz",
+   "Umarali Rakhmonaliev",
+   "Ivan Lepinjica",
+   "Kaheem Parris",
+   "Du Queiroz",
+   "Veljko Simić",
+   "Joy-Lance Mickels"
+  ],
+  "home_bench": [
+   "Rəhman Daşdəmirov",
+   "Orphé Mbina",
+   "Christian Nwachukwu",
+   "Abdulakh Khaybulaev",
+   "Amin Ramazanov",
+   "Rəvan Mirzəmmədov",
+   "Almeida",
+   "Aleksey İsayev",
+   "Rauf Rüstamli",
+   "Rodrigo Fernandes",
+   "Tellur Mütallimov",
+   "Xander Severina"
+  ],
+  "away_starting_xi": [
+   "Jakub Markovič",
+   "Tomás Holeš",
+   "David Zima",
+   "Ange N'Guessan",
+   "Tomás Vlček",
+   "David Moses",
+   "Michal Sadílek",
+   "Emmanuel Ayaosi",
+   "Lukás Provod",
+   "Danijel Šturm",
+   "Tomás Chorý"
+  ],
+  "away_bench": [
+   "Mubarak Suleiman",
+   "Wiktor Nowak",
+   "Samuel Isife",
+   "Mojmír Chytil",
+   "Oskar Kubiak",
+   "Adam Rezek",
+   "Nazar Domchak",
+   "David Barčot",
+   "Toumani Diakité",
+   "Matěj Kotrba",
+   "Petr Potměšil"
+  ],
+  "substitution_events": [
+   {
+    "team": "Sabah FK",
+    "in": "Rəhman Daşdəmirov",
+    "out": "Steve Solvet",
+    "minute": "73"
+   },
+   {
+    "team": "Sabah FK",
+    "in": "Christian Nwachukwu",
+    "out": "Du Queiroz",
+    "minute": "73"
+   },
+   {
+    "team": "Sabah FK",
+    "in": "Orphé Mbina",
+    "out": "Kaheem Parris",
+    "minute": "73"
+   },
+   {
+    "team": "Sabah FK",
+    "in": "Abdulakh Khaybulaev",
+    "out": "Veljko Simić",
+    "minute": "86"
+   },
+   {
+    "team": "Slavia Prague",
+    "in": "Mubarak Suleiman",
+    "out": "Tomás Holeš",
+    "minute": "62"
+   },
+   {
+    "team": "Slavia Prague",
+    "in": "Wiktor Nowak",
+    "out": "Michal Sadílek",
+    "minute": "62"
+   },
+   {
+    "team": "Slavia Prague",
+    "in": "Mojmír Chytil",
+    "out": "Tomás Chorý",
+    "minute": "73"
+   },
+   {
+    "team": "Slavia Prague",
+    "in": "Samuel Isife",
+    "out": "Tomás Vlček",
+    "minute": "73"
+   },
+   {
+    "team": "Slavia Prague",
+    "in": "Oskar Kubiak",
+    "out": "Ange N'Guessan",
+    "minute": "76"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Sebastian Gishamer",
+  "attendance": 29670,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

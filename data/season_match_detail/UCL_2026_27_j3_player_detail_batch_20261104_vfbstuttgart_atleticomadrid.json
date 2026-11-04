@@ -1,0 +1,146 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ucl-2026-27-2026-10-20-vfbstuttgart-atleticomadrid",
+ "date": "2026-10-20",
+ "home": "VfB Stuttgart",
+ "away": "Atlético Madrid",
+ "score": "1-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106397",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106397"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dennis Seimen",
+   "Josha Vagnoman",
+   "Ramon Hendriks",
+   "Jeff Chabot",
+   "Maximilian Mittelstädt",
+   "Grischa Prömel",
+   "Angelo Stiller",
+   "Jamie Leweling",
+   "Bilal El Khannouss",
+   "Chris Führich",
+   "Deniz Undav"
+  ],
+  "home_bench": [
+   "Lorenz Assignon",
+   "Ermedin Demirović",
+   "Dženan Pejčinović",
+   "Leo Sauer",
+   "Fabian Bredlow",
+   "Marius Funk",
+   "Ameen Al Dakhil",
+   "Finn Jeltsch",
+   "Luca Jaquez",
+   "Atakan Karazor",
+   "Nikolas Nartey"
+  ],
+  "away_starting_xi": [
+   "Jan Oblak",
+   "Marcos Llorente",
+   "Marc Pubill",
+   "Dávid Hancko",
+   "Alejandro Grimaldo",
+   "Giuliano Simeone",
+   "Morten Hjulmand",
+   "Pablo Barrios",
+   "Álex Baena",
+   "Jonathan David",
+   "Julián Álvarez"
+  ],
+  "away_bench": [
+   "Ademola Lookman",
+   "Johnny Cardoso",
+   "Robin Le Normand",
+   "Obed Vargas",
+   "Alexander Sørloth",
+   "Juan Musso",
+   "Dani Martínez",
+   "Jorge Domínguez",
+   "Jorge Castillo",
+   "Rodrigo Mendoza",
+   "Arnau Ortiz",
+   "Kang-In Lee"
+  ],
+  "substitution_events": [
+   {
+    "team": "VfB Stuttgart",
+    "in": "Lorenz Assignon",
+    "out": "Josha Vagnoman",
+    "minute": "52"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Ermedin Demirović",
+    "out": "Jamie Leweling",
+    "minute": "72"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Dženan Pejčinović",
+    "out": "Deniz Undav",
+    "minute": "87"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Leo Sauer",
+    "out": "Chris Führich",
+    "minute": "87"
+   },
+   {
+    "team": "Atlético Madrid",
+    "in": "Ademola Lookman",
+    "out": "Jonathan David",
+    "minute": "46"
+   },
+   {
+    "team": "Atlético Madrid",
+    "in": "Johnny Cardoso",
+    "out": "Álex Baena",
+    "minute": "69"
+   },
+   {
+    "team": "Atlético Madrid",
+    "in": "Obed Vargas",
+    "out": "Julián Álvarez",
+    "minute": "78"
+   },
+   {
+    "team": "Atlético Madrid",
+    "in": "Robin Le Normand",
+    "out": "Pablo Barrios",
+    "minute": "78"
+   },
+   {
+    "team": "Atlético Madrid",
+    "in": "Alexander Sørloth",
+    "out": "Giuliano Simeone",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Serdar Gözübüyük",
+  "attendance": 58000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

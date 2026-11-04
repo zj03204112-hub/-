@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ucl-2026-27-2026-10-20-fenerbahce-slaviaprague",
+ "date": "2026-10-20",
+ "home": "Fenerbahçe",
+ "away": "Slavia Prague",
+ "score": "2-2",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/6106333",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106333"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Ederson",
+   "Nélson Semedo",
+   "Milan Škriniar",
+   "Nathan Aké",
+   "Archie Brown",
+   "N'Golo Kanté",
+   "Mattéo Guendouzi",
+   "Oğuz Aydın",
+   "Mason Greenwood",
+   "Kerem Aktürkoglu",
+   "Vedat Muriqi"
+  ],
+  "home_bench": [
+   "Kojo Peprah Oppong",
+   "Dorgeles Nene",
+   "Romelu Lukaku",
+   "Ismail Yüksek",
+   "İrfan Kahveci",
+   "Mert Günok",
+   "Tarık Çetin",
+   "Levent Mercan",
+   "Ognjen Mimović",
+   "Yiğit Efe Demir",
+   "Bartuğ Elmaz"
+  ],
+  "away_starting_xi": [
+   "Jakub Markovič",
+   "Tomás Vlček",
+   "David Zima",
+   "Ange N'Guessan",
+   "Mubarak Suleiman",
+   "David Moses",
+   "Wiktor Nowak",
+   "Oskar Kubiak",
+   "Emmanuel Ayaosi",
+   "Danijel Šturm",
+   "Lukás Provod"
+  ],
+  "away_bench": [
+   "Samuel Isife",
+   "Mojmír Chytil",
+   "Toumani Diakité",
+   "Michal Sadílek",
+   "Pavel Kačor",
+   "Adam Rezek",
+   "Nazar Domchak",
+   "David Barčot",
+   "Mikulás Konečný",
+   "Tomás Holeš",
+   "Matěj Kotrba",
+   "Petr Potměšil"
+  ],
+  "substitution_events": [
+   {
+    "team": "Fenerbahçe",
+    "in": "Kojo Peprah Oppong",
+    "out": "Nathan Aké",
+    "minute": "21"
+   },
+   {
+    "team": "Fenerbahçe",
+    "in": "Romelu Lukaku",
+    "out": "Vedat Muriqi",
+    "minute": "63"
+   },
+   {
+    "team": "Fenerbahçe",
+    "in": "Dorgeles Nene",
+    "out": "Oğuz Aydın",
+    "minute": "63"
+   },
+   {
+    "team": "Fenerbahçe",
+    "in": "İrfan Kahveci",
+    "out": "Mason Greenwood",
+    "minute": "82"
+   },
+   {
+    "team": "Fenerbahçe",
+    "in": "Ismail Yüksek",
+    "out": "Kerem Aktürkoglu",
+    "minute": "82"
+   },
+   {
+    "team": "Slavia Prague",
+    "in": "Mojmír Chytil",
+    "out": "Danijel Šturm",
+    "minute": "62"
+   },
+   {
+    "team": "Slavia Prague",
+    "in": "Samuel Isife",
+    "out": "Tomás Vlček",
+    "minute": "62"
+   },
+   {
+    "team": "Slavia Prague",
+    "in": "Toumani Diakité",
+    "out": "Oskar Kubiak",
+    "minute": "75"
+   },
+   {
+    "team": "Slavia Prague",
+    "in": "Pavel Kačor",
+    "out": "Mubarak Suleiman",
+    "minute": "85"
+   },
+   {
+    "team": "Slavia Prague",
+    "in": "Michal Sadílek",
+    "out": "Lukás Provod",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Ricardo de Burgos Bengoetxea",
+  "attendance": 40147,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}

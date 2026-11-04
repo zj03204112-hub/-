@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Champions League",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ucl-2026-27-2026-10-20-roma-slovanbratislava",
+ "date": "2026-10-20",
+ "home": "Roma",
+ "away": "Slovan Bratislava",
+ "score": "4-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/6106277",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6106277"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Pierluigi Gollini",
+   "Daniele Ghilardi",
+   "Leonardo Balerdi",
+   "Mario Hermoso",
+   "Nahuel Molina",
+   "Marten de Roon",
+   "Niccolò Pisilli",
+   "Wesley",
+   "Rodrigo Mora",
+   "Lorenzo Pellegrini",
+   "Donyell Malen"
+  ],
+  "home_bench": [
+   "Matias Soulé",
+   "Devyne Rensch",
+   "Santiago Castro",
+   "Gianluca Mancini",
+   "Konstantinos Koulierakis",
+   "Devis Vásquez",
+   "Giorgio De Marzi",
+   "Evan N'Dicka",
+   "Alessandro Di Nunzio",
+   "Bryan Cristante",
+   "Emanuele Lulli"
+  ],
+  "away_starting_xi": [
+   "Dominik Takác",
+   "César Blackman",
+   "Kenan Bajrič",
+   "Svetozar Marković",
+   "Sandro Cruz",
+   "Peter Pokorný",
+   "Tigran Barseghyan",
+   "Rahim Ibrahim",
+   "Artur Gajdoš",
+   "Suleiman Camara",
+   "Nino Marcelli"
+  ],
+  "away_bench": [
+   "Alasana Yirajang",
+   "Alen Mustafić",
+   "Cristian Martínez",
+   "Alexej Maroš",
+   "Kevin Wimmer",
+   "Aleksandar Popović",
+   "Róbert Tománek",
+   "Sahmkou Camara",
+   "Samuel Kozlovský",
+   "Daiki Matsuoka",
+   "Danylo Ignatenko",
+   "Leo Hofstädter"
+  ],
+  "substitution_events": [
+   {
+    "team": "Roma",
+    "in": "Matias Soulé",
+    "out": "Lorenzo Pellegrini",
+    "minute": "51"
+   },
+   {
+    "team": "Roma",
+    "in": "Santiago Castro",
+    "out": "Donyell Malen",
+    "minute": "59"
+   },
+   {
+    "team": "Roma",
+    "in": "Devyne Rensch",
+    "out": "Wesley",
+    "minute": "59"
+   },
+   {
+    "team": "Roma",
+    "in": "Konstantinos Koulierakis",
+    "out": "Mario Hermoso",
+    "minute": "77"
+   },
+   {
+    "team": "Roma",
+    "in": "Gianluca Mancini",
+    "out": "Marten de Roon",
+    "minute": "77"
+   },
+   {
+    "team": "Slovan Bratislava",
+    "in": "Alasana Yirajang",
+    "out": "Tigran Barseghyan",
+    "minute": "55"
+   },
+   {
+    "team": "Slovan Bratislava",
+    "in": "Alen Mustafić",
+    "out": "Rahim Ibrahim",
+    "minute": "69"
+   },
+   {
+    "team": "Slovan Bratislava",
+    "in": "Alexej Maroš",
+    "out": "Suleiman Camara",
+    "minute": "69"
+   },
+   {
+    "team": "Slovan Bratislava",
+    "in": "Cristian Martínez",
+    "out": "Artur Gajdoš",
+    "minute": "69"
+   },
+   {
+    "team": "Slovan Bratislava",
+    "in": "Kevin Wimmer",
+    "out": "Sandro Cruz",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 0
+  },
+  "provider_score": "4-0",
+  "score_consistent_with_events": true,
+  "referee": "Sandro Schärer",
+  "attendance": 64399,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "UEFA does not publish a free machine readable equivalent reachable from this environment, so no official or independent cross-check has been performed yet.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/UCL_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+}
