@@ -1,0 +1,64 @@
+{
+ "generated_at": "2026-11-04T11:25:24Z",
+ "definition": "Component-wise evaluation of the described pipeline: recent xG lambda, market prior, fitted blend, and a deliberately leaky squad-continuity upper bound. Weight and coefficient are fitted on the training segment only.",
+ "window": 5,
+ "holdout_start": "2026-09-14",
+ "fitted": {
+  "blend_weight": 0.7,
+  "squad_coefficient": -0.1,
+  "note": "squad coefficient is leaky by construction"
+ },
+ "coverage": {
+  "records": 662,
+  "with_market": 378,
+  "train": 74,
+  "holdout": 304
+ },
+ "metrics": {
+  "model_xg": {
+   "n": 304,
+   "accuracy": 0.5,
+   "brier": 0.613,
+   "logloss": 1.0211
+  },
+  "market": {
+   "n": 304,
+   "accuracy": 0.5625,
+   "brier": 0.562,
+   "logloss": 0.9496
+  },
+  "blend": {
+   "n": 304,
+   "accuracy": 0.5691,
+   "brier": 0.5698,
+   "logloss": 0.9622
+  },
+  "blend_squad": {
+   "n": 304,
+   "accuracy": 0.5658,
+   "brier": 0.5695,
+   "logloss": 0.9616
+  }
+ },
+ "handicap_three_way": {
+  "model_3way": {
+   "n": 77,
+   "accuracy": 0.3506,
+   "brier": 0.7212,
+   "logloss": 1.1771
+  }
+ },
+ "blend_weight_curve": {
+  "0.0": 0.613,
+  "0.1": 0.6047,
+  "0.2": 0.5971,
+  "0.3": 0.5902,
+  "0.4": 0.5841,
+  "0.5": 0.5786,
+  "0.6": 0.5739,
+  "0.7": 0.5698,
+  "0.8": 0.5665,
+  "0.9": 0.5639,
+  "1.0": 0.562
+ }
+}
