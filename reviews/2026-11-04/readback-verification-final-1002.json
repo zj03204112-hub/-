@@ -1,0 +1,57 @@
+{
+  "verification_version": "final-readback-verification-2026-11-04-1002-v1",
+  "branch": "automation/daily-football-2026-11-04",
+  "final_branch_commit_sha_after_cleanup": "34dd782d9e6b46e53abb33eef42f0a50da4656d9",
+  "temporary_test_file_removed": true,
+  "core_files_read_back": 9,
+  "all_core_files_readable": true,
+  "files": [
+    {
+      "path": "reviews/2026-11-04/archive-manifest-1002.json",
+      "sha": "e6df5841ac30ed0478d117d6883900e292f95d87",
+      "bytes": 3632
+    },
+    {
+      "path": "reviews/2026-11-04/previous-day-review.json",
+      "sha": "d5beab84d10f094d5aea97c5e691d0f405fff0fd",
+      "bytes": 924
+    },
+    {
+      "path": "reviews/2026-11-04/current-day-early-prediction-check.json",
+      "sha": "8fbddb562cffbebf08013ed04c1795e7e2945aca",
+      "bytes": 4972
+    },
+    {
+      "path": "fixtures/2026-11-04/schedule.json",
+      "sha": "58db16c5c0089ec83c0260da8300a2f879b96f4c",
+      "bytes": 34431
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_snapshot-1002.csv",
+      "sha": "e3e930b5e1375b8d2eaf8271dfc5a7911d6d2cc1",
+      "bytes": 85640
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/team_weekly_xg_snapshot-1002.csv",
+      "sha": "32f69f5d62d74b21c214f6e0e25e816f246bd98c",
+      "bytes": 56910
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/team_weekly_coverage_snapshot-1002.csv",
+      "sha": "e8ef7e5268caf4ad0425bc659c80344a070367dc",
+      "bytes": 38317
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/xg_coverage_audit-1002.json",
+      "sha": "eabaf32d09785a3a45a258bad987d39e9ddfb3cb",
+      "bytes": 7636
+    },
+    {
+      "path": "reviews/2026-11-04/readback-verification-1002.json",
+      "sha": "5055638d2f9f954876c15a97c81583e527b5ce7c",
+      "bytes": 772
+    }
+  ],
+  "verified_at_beijing": "2026-11-04T10:23:00+08:00",
+  "database_connected": false
+}
