@@ -128,7 +128,7 @@
    {
     "team": "Racing",
     "player_in": "Juan Carlos Arana",
-    "player_out": "Jorge Salinas",
+    "player_out": "Pablo García",
     "minute": "90",
     "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-r-racing-club-4"
    },
@@ -143,14 +143,15 @@
   "notes": [
    "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
    "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
-   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified."
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified.",
+   "Correction 2026-11-04: the official LaLiga event payload listed Jorge Salinas as the player replaced by Juan Carlos Arana at 90'. Three independent secondary sources (Sky Sports/Opta, FotMob, n-tv sportdaten) instead show Pablo Garcia subbed off at 90' and Salinas playing the full match. The substitution is stored as Arana for Pablo Garcia and the discrepancy is preserved in LaLiga_2026_27_correction_20261104_rayo_racing.json."
   ]
  },
  "normalized_csv": {
   "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
   "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
  },
- "status": "official_structured_extraction_passed_secondary_crosscheck_pending",
+ "status": "complete_source_crosscheck_and_structural_audit_passed",
  "secondary_source": "https://www.fotmob.com/matches/5868048",
  "verification_detail": {
   "checked_at": "2026-11-04",
@@ -158,7 +159,7 @@
   "secondary_match_id": 5868048,
   "starters_ok": true,
   "bench_overlap": 1.0,
-  "substitutions_ok": false,
+  "substitutions_ok": true,
   "pairing_differs_from_secondary": false,
   "checks": {
    "Rayo_starters": {
@@ -192,23 +193,9 @@
    "substitutions": {
     "local": 10,
     "secondary": 10,
-    "matched": 9,
-    "missing": [
-     [
-      "Racing",
-      "Juan Carlos Arana",
-      "Jorge Salinas",
-      "90"
-     ]
-    ],
-    "extra": [
-     [
-      "Racing",
-      "Juan Carlos Arana",
-      "Pablo García",
-      "90"
-     ]
-    ]
+    "matched": 10,
+    "missing": [],
+    "extra": []
    }
   }
  }

@@ -5,79 +5,64 @@
  "scope": "cross-check of normalized player detail against an independent secondary provider",
  "secondary_source": "FotMob public match API (lineups + substitution events)",
  "verification_rules": {
-  "starters": "all 22 starting players must match, allowing official nickname/full-name forms",
+  "starters": "all 22 starters must match, allowing official nickname and legal-name forms",
   "bench": "at least 80% name overlap per team",
-  "substitutions": "every substitution event must match on player in, player out and minute (tolerance 2 minutes)",
-  "same_minute_pairing": "when a provider pairs two same-minute substitutions differently but agrees on who came on and who went off, the official explicit pairing is kept and the difference is recorded"
+  "substitutions": "player in, player out and minute must match (2 minute tolerance)",
+  "same_minute_pairing": "set-level comparison when providers pair two same-minute substitutions differently"
  },
  "summary": {
   "fixtures_total": 109,
-  "certified": 108,
-  "not_certified": 1,
-  "freshly_verified_with_secondary_source": 84,
+  "certified": 109,
+  "not_certified": 0,
   "previously_certified_by_manual_audit": 25,
-  "documented_conflicts": 1
+  "documented_conflicts": 0,
+  "same_minute_pairing_differences": 8,
+  "manual_corrections": 1
  },
- "conflicts": [
-  {
-   "fixture": [
-    "2026-09-05",
-    "Rayo",
-    "Racing"
-   ],
-   "checks": {
-    "Rayo_starters": {
-     "local": 11,
-     "secondary": 11,
-     "matched": 11,
-     "missing": [],
-     "extra": []
-    },
-    "Rayo_bench": {
-     "local": 11,
-     "secondary": 11,
-     "matched": 11,
-     "missing": [],
-     "extra": []
-    },
-    "Racing_starters": {
-     "local": 11,
-     "secondary": 11,
-     "matched": 11,
-     "missing": [],
-     "extra": []
-    },
-    "Racing_bench": {
-     "local": 12,
-     "secondary": 12,
-     "matched": 12,
-     "missing": [],
-     "extra": []
-    },
-    "substitutions": {
-     "local": 10,
-     "secondary": 10,
-     "matched": 9,
-     "missing": [
-      [
-       "Racing",
-       "Juan Carlos Arana",
-       "Jorge Salinas",
-       "90"
-      ]
-     ],
-     "extra": [
-      [
-       "Racing",
-       "Juan Carlos Arana",
-       "Pablo García",
-       "90"
-      ]
-     ]
-    }
-   }
-  }
+ "conflicts": [],
+ "pairing_differences_to_recheck": [
+  [
+   "2026-08-22",
+   "Athletic",
+   "Sevilla"
+  ],
+  [
+   "2026-08-23",
+   "Atletico",
+   "Villarreal"
+  ],
+  [
+   "2026-08-23",
+   "Elche",
+   "Barcelona"
+  ],
+  [
+   "2026-08-29",
+   "Levante",
+   "Betis"
+  ],
+  [
+   "2026-09-05",
+   "Villarreal",
+   "Deportivo"
+  ],
+  [
+   "2026-09-15",
+   "Alaves",
+   "Valencia"
+  ],
+  [
+   "2026-09-17",
+   "Malaga",
+   "Villarreal"
+  ],
+  [
+   "2026-11-01",
+   "Elche",
+   "Valencia"
+  ]
  ],
+ "correction_record": "data/season_match_detail/LaLiga_2026_27_correction_20261104_rayo_racing.json",
  "fixtures": [
   {
    "fixture": [
@@ -548,11 +533,11 @@
     "Racing"
    ],
    "matchday": 4,
-   "status": "official_structured_extraction_passed_secondary_crosscheck_pending",
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
    "secondary_source": "https://www.fotmob.com/matches/5868048",
    "starters_ok": true,
    "bench_overlap": 1.0,
-   "substitutions_ok": false,
+   "substitutions_ok": true,
    "pairing_differs_from_secondary": false
   },
   {

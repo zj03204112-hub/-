@@ -1,0 +1,44 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 4,
+ "date": "2026-09-05",
+ "home": "Rayo",
+ "away": "Racing",
+ "score": "2-2",
+ "issue": "The official LaLiga event payload pairs the 90th minute substitution (Juan Carlos Arana on) with Jorge Salinas going off. Three independent secondary sources show Pablo Garcia as the player replaced, with Salinas playing the full match.",
+ "official_claim": {
+  "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-r-racing-club-4",
+  "player_in": "Juan Carlos Arana",
+  "player_out": "Jorge Salinas",
+  "minute": "90"
+ },
+ "independent_sources": [
+  {
+   "source": "Sky Sports (Opta)",
+   "url": "https://www.skysports.com/football/rayo-vallecano-vs-racing-santander/teams/562960",
+   "evidence": "P Garcia annotated 'Subbed off 90'; J Salinas carries no substitution annotation"
+  },
+  {
+   "source": "FotMob public match API",
+   "url": "https://www.fotmob.com/api/data/matchDetails?matchId=5868081",
+   "evidence": "substitution incident: swap [Juan Carlos Arana, Pablo Garcia] at minute 90"
+  },
+  {
+   "source": "n-tv sportdaten",
+   "url": "https://sportdaten.n-tv.de/app/fussball/primera-division/ma12187876/rayo-vallecano_racing-santander/aufstellung/",
+   "evidence": "Pablo Garcia rendered with the playing-substitute-out marker, Salinas without it"
+  }
+ ],
+ "decision": "The substitution is stored as Juan Carlos Arana replacing Pablo Garcia at 90'; Jorge Salinas is marked as having played the full match. The official claim is preserved in this record rather than discarded.",
+ "applied_changes": [
+  "players CSV: Jorge Salinas ExitMinute 90 -> blank",
+  "players CSV: Pablo Garcia ExitMinute blank -> 90",
+  "substitutions CSV: PlayerOut Jorge Salinas -> Pablo Garcia for the 90' Arana substitution",
+  "batch JSON: verified_data.substitution_events updated and the correction documented in notes"
+ ],
+ "still_open": [
+  "Same-minute substitution pairings in eight other fixtures disagree between the official payload and FotMob; those were previously kept as official. This correction shows the official pairing can be wrong, so those eight should be re-checked against Sky/n-tv before they are treated as final."
+ ]
+}
