@@ -1,0 +1,38 @@
+{
+ "generated_at": "2026-11-04T11:44:40Z",
+ "definition": "V5.2 market-lambda engine fed with de-vigged 1X2 and 2.5 goals opening prices, compared with the 1X2 market alone on identical matches. Only the calibrated part of the engine is used; the experimental tail reweighting is not applied.",
+ "engine_settings": {
+  "steps": 301,
+  "max_goals": 12,
+  "note": "coarser grid than the default engine for runtime only"
+ },
+ "coverage": {
+  "quoted_matches": 5028,
+  "holdout": 1509
+ },
+ "failures": {
+  "lambda_bounds": 0,
+  "other": 0
+ },
+ "metrics": {
+  "market_1x2": {
+   "n": 1509,
+   "accuracy": 0.5308,
+   "brier": 0.588,
+   "logloss": 0.9865
+  },
+  "v5_2": {
+   "n": 1509,
+   "accuracy": 0.5295,
+   "brier": 0.5887,
+   "logloss": 0.9877
+  },
+  "v5_2_handicap_3way": {
+   "n": 352,
+   "accuracy": 0.3551,
+   "brier": 0.6707,
+   "logloss": 1.1053
+  }
+ },
+ "delta_brier": 0.0007
+}
