@@ -1,0 +1,233 @@
+{
+ "generated_at": "2026-11-04T11:38:11Z",
+ "definition": "The repository's existing V3/V4 models measured against de-vigged opening bookmaker prices on the legacy database sample (2023-11 to 2026-09), matched via historical football-data seasons. Chronological split, last 30% held out. Blend weights fitted on the training segment only.",
+ "seasons": [
+  "2324",
+  "2425",
+  "2526",
+  "2627"
+ ],
+ "feeds": {
+  "E0": "EPL",
+  "D1": "BUNDESLIGA",
+  "SP1": "LALIGA",
+  "F1": "LIGUE1",
+  "I1": "SERIEA"
+ },
+ "coverage": {
+  "legacy_matches": 5505,
+  "with_market": 5028,
+  "train": 3519,
+  "holdout": 1509,
+  "cutoff": "2025-11-07"
+ },
+ "fitted": {
+  "v3": {
+   "weight": 1.0,
+   "train_brier": 0.5725
+  },
+  "v4": {
+   "weight": 1.0,
+   "train_brier": 0.5725
+  }
+ },
+ "metrics": {
+  "market": {
+   "n": 1509,
+   "accuracy": 0.5308,
+   "brier": 0.588,
+   "logloss": 0.9865
+  },
+  "v3": {
+   "n": 1509,
+   "accuracy": 0.4997,
+   "brier": 0.6166,
+   "logloss": 1.0295
+  },
+  "v3_blend": {
+   "n": 1509,
+   "accuracy": 0.5308,
+   "brier": 0.588,
+   "logloss": 0.9865
+  },
+  "v4": {
+   "n": 1509,
+   "accuracy": 0.503,
+   "brier": 0.6155,
+   "logloss": 1.0282
+  },
+  "v4_blend": {
+   "n": 1509,
+   "accuracy": 0.5308,
+   "brier": 0.588,
+   "logloss": 0.9865
+  }
+ },
+ "by_league": {
+  "market": {
+   "LALIGA": {
+    "n": 339,
+    "accuracy": 0.5487,
+    "brier": 0.573,
+    "logloss": 0.9668
+   },
+   "EPL": {
+    "n": 330,
+    "accuracy": 0.4758,
+    "brier": 0.625,
+    "logloss": 1.0361
+   },
+   "SERIEA": {
+    "n": 329,
+    "accuracy": 0.5532,
+    "brier": 0.5728,
+    "logloss": 0.9669
+   },
+   "BUNDESLIGA": {
+    "n": 260,
+    "accuracy": 0.5385,
+    "brier": 0.5719,
+    "logloss": 0.9642
+   },
+   "LIGUE1": {
+    "n": 251,
+    "accuracy": 0.5418,
+    "brier": 0.596,
+    "logloss": 0.9968
+   }
+  },
+  "v3": {
+   "LALIGA": {
+    "n": 339,
+    "accuracy": 0.4808,
+    "brier": 0.6135,
+    "logloss": 1.0239
+   },
+   "EPL": {
+    "n": 330,
+    "accuracy": 0.4636,
+    "brier": 0.642,
+    "logloss": 1.0673
+   },
+   "SERIEA": {
+    "n": 329,
+    "accuracy": 0.538,
+    "brier": 0.5967,
+    "logloss": 1.0008
+   },
+   "BUNDESLIGA": {
+    "n": 260,
+    "accuracy": 0.5423,
+    "brier": 0.6076,
+    "logloss": 1.0192
+   },
+   "LIGUE1": {
+    "n": 251,
+    "accuracy": 0.4781,
+    "brier": 0.6226,
+    "logloss": 1.0356
+   }
+  },
+  "v3_blend": {
+   "LALIGA": {
+    "n": 339,
+    "accuracy": 0.5487,
+    "brier": 0.573,
+    "logloss": 0.9668
+   },
+   "EPL": {
+    "n": 330,
+    "accuracy": 0.4758,
+    "brier": 0.625,
+    "logloss": 1.0361
+   },
+   "SERIEA": {
+    "n": 329,
+    "accuracy": 0.5532,
+    "brier": 0.5728,
+    "logloss": 0.9669
+   },
+   "BUNDESLIGA": {
+    "n": 260,
+    "accuracy": 0.5385,
+    "brier": 0.5719,
+    "logloss": 0.9642
+   },
+   "LIGUE1": {
+    "n": 251,
+    "accuracy": 0.5418,
+    "brier": 0.596,
+    "logloss": 0.9968
+   }
+  },
+  "v4": {
+   "LALIGA": {
+    "n": 339,
+    "accuracy": 0.4897,
+    "brier": 0.6126,
+    "logloss": 1.0233
+   },
+   "EPL": {
+    "n": 330,
+    "accuracy": 0.4667,
+    "brier": 0.6387,
+    "logloss": 1.0631
+   },
+   "SERIEA": {
+    "n": 329,
+    "accuracy": 0.5289,
+    "brier": 0.5994,
+    "logloss": 1.0049
+   },
+   "BUNDESLIGA": {
+    "n": 260,
+    "accuracy": 0.5462,
+    "brier": 0.6036,
+    "logloss": 1.0126
+   },
+   "LIGUE1": {
+    "n": 251,
+    "accuracy": 0.49,
+    "brier": 0.6222,
+    "logloss": 1.0358
+   }
+  },
+  "v4_blend": {
+   "LALIGA": {
+    "n": 339,
+    "accuracy": 0.5487,
+    "brier": 0.573,
+    "logloss": 0.9668
+   },
+   "EPL": {
+    "n": 330,
+    "accuracy": 0.4758,
+    "brier": 0.625,
+    "logloss": 1.0361
+   },
+   "SERIEA": {
+    "n": 329,
+    "accuracy": 0.5532,
+    "brier": 0.5728,
+    "logloss": 0.9669
+   },
+   "BUNDESLIGA": {
+    "n": 260,
+    "accuracy": 0.5385,
+    "brier": 0.5719,
+    "logloss": 0.9642
+   },
+   "LIGUE1": {
+    "n": 251,
+    "accuracy": 0.5418,
+    "brier": 0.596,
+    "logloss": 0.9968
+   }
+  }
+ },
+ "caveats": [
+  "Opening prices, not T-12h snapshots.",
+  "J1 and K League 1 have no odds in this feed and are excluded.",
+  "Model lambdas come from compare_models.py unchanged, including its lineup and schedule tables, so this measures the model as shipped rather than a variant."
+ ]
+}
