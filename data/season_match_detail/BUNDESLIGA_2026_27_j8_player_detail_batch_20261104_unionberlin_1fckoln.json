@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "bundesliga-2026-27-2026-11-01-unionberlin-1fckoln",
+ "date": "2026-11-01",
+ "home": "Union Berlin",
+ "away": "1. FC Köln",
+ "score": "1-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881213",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881213"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Frederik Rønnow",
+   "Janik Haberer",
+   "Zeno Van Den Bosch",
+   "Marvin Friedrich",
+   "Derrick Köhn",
+   "András Schäfer",
+   "Rani Khedira",
+   "Livan Burcu",
+   "Michel Aebischer",
+   "Kastriot Imeri",
+   "Tim Skarke"
+  ],
+  "home_bench": [
+   "Aljoscha Kemlein",
+   "Oliver Burke",
+   "Christopher Trimmel",
+   "Woo-Yeong Jeong",
+   "Emmanuel Latte Lath",
+   "Matheo Raab",
+   "Leopold Querfeld",
+   "Tom Rothe",
+   "Mekhi Gray"
+  ],
+  "away_starting_xi": [
+   "Marvin Schwäbe",
+   "Sebastian Sebulonsen",
+   "Joël Schmied",
+   "Jahmai Simpson-Pusey",
+   "Borna Sosa",
+   "Linton Maina",
+   "Paul Okon-Engstler",
+   "Tom Krauß",
+   "Ísak Jóhannesson",
+   "Marius Bülter",
+   "Saïd El Mala"
+  ],
+  "away_bench": [
+   "Alessio Castro-Montes",
+   "Mikey Moore",
+   "Malek El Mala",
+   "Ron-Robert Zieler",
+   "Gideon Mensah",
+   "Luka Lochoshvili",
+   "Jan Thielmann",
+   "Gian-Luca Waldschmidt",
+   "Reigan Heskey"
+  ],
+  "substitution_events": [
+   {
+    "team": "Union Berlin",
+    "in": "Oliver Burke",
+    "out": "Tim Skarke",
+    "minute": "61"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Aljoscha Kemlein",
+    "out": "Kastriot Imeri",
+    "minute": "61"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Woo-Yeong Jeong",
+    "out": "Livan Burcu",
+    "minute": "74"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Christopher Trimmel",
+    "out": "Janik Haberer",
+    "minute": "74"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Emmanuel Latte Lath",
+    "out": "Michel Aebischer",
+    "minute": "84"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Alessio Castro-Montes",
+    "out": "Sebastian Sebulonsen",
+    "minute": "61"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Mikey Moore",
+    "out": "Ísak Jóhannesson",
+    "minute": "61"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Malek El Mala",
+    "out": "Linton Maina",
+    "minute": "72"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Richard Hempel",
+  "attendance": 22012,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

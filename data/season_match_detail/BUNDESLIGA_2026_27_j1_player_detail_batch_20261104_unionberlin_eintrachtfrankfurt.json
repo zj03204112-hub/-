@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "bundesliga-2026-27-2026-08-29-unionberlin-eintrachtfrankfurt",
+ "date": "2026-08-29",
+ "home": "Union Berlin",
+ "away": "Eintracht Frankfurt",
+ "score": "3-3",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5881151",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881151"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Matheo Raab",
+   "Josip Juranovic",
+   "Zeno Van Den Bosch",
+   "Leopold Querfeld",
+   "Tom Rothe",
+   "András Schäfer",
+   "Rani Khedira",
+   "Aljoscha Kemlein",
+   "Michel Aebischer",
+   "Marin Ljubicic",
+   "Emmanuel Latte Lath"
+  ],
+  "home_bench": [
+   "Woo-Yeong Jeong",
+   "Livan Burcu",
+   "Tim Skarke",
+   "Janik Haberer",
+   "Derrick Köhn",
+   "Carl Klaus",
+   "Felix Uduokhai",
+   "Christopher Trimmel",
+   "Linus Guether"
+  ],
+  "away_starting_xi": [
+   "Noah Atubolu",
+   "Keita Kosugi",
+   "Robin Koch",
+   "Jeremiaha Maluze",
+   "Elias Baum",
+   "Farès Chaïbi",
+   "Ayoube Amaimouni-Echghouyab",
+   "Raphael Onyedika",
+   "Can Uzun",
+   "Younes Ebnoutalib",
+   "Jonathan Burkardt"
+  ],
+  "away_bench": [
+   "Malik Pimpong",
+   "Oscar Højlund",
+   "Love Arrhov",
+   "Otávio",
+   "Kauã",
+   "Mario Götze",
+   "Noël Aséko",
+   "Timothy Chandler",
+   "Jean-Mattéo Bahoya"
+  ],
+  "substitution_events": [
+   {
+    "team": "Union Berlin",
+    "in": "Livan Burcu",
+    "out": "Michel Aebischer",
+    "minute": "61"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Tim Skarke",
+    "out": "Emmanuel Latte Lath",
+    "minute": "61"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Woo-Yeong Jeong",
+    "out": "András Schäfer",
+    "minute": "61"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Janik Haberer",
+    "out": "Aljoscha Kemlein",
+    "minute": "76"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Derrick Köhn",
+    "out": "Marin Ljubicic",
+    "minute": "82"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Malik Pimpong",
+    "out": "Jonathan Burkardt",
+    "minute": "66"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Oscar Højlund",
+    "out": "Ayoube Amaimouni-Echghouyab",
+    "minute": "79"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Love Arrhov",
+    "out": "Can Uzun",
+    "minute": "79"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Otávio",
+    "out": "Younes Ebnoutalib",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 3
+  },
+  "provider_score": "3-3",
+  "score_consistent_with_events": true,
+  "referee": "Bastian Dankert",
+  "attendance": 22012,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

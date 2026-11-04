@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "bundesliga-2026-27-2026-10-24-borussiadortmund-eintrachtfrankfurt",
+ "date": "2026-10-24",
+ "home": "Borussia Dortmund",
+ "away": "Eintracht Frankfurt",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881198",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881198"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Gregor Kobel",
+   "Waldemar Anton",
+   "Nico Schlotterbeck",
+   "Ramy Bensebaini",
+   "Julian Ryerson",
+   "Joey Veerman",
+   "Felix Nmecha",
+   "Daniel Svensson",
+   "Marcel Sabitzer",
+   "Fábio Silva",
+   "Serhou Guirassy"
+  ],
+  "home_bench": [
+   "Carney Chukwuemeka",
+   "Ethan Nwaneri",
+   "Maximilian Beier",
+   "Jobe Bellingham",
+   "Joane Gadou",
+   "Alexander Meyer",
+   "Filippo Mane",
+   "Enzo Duarte",
+   "Samuele Inácio"
+  ],
+  "away_starting_xi": [
+   "Noah Atubolu",
+   "Nnamdi Collins",
+   "Robin Koch",
+   "Lilian Brassier",
+   "Elias Baum",
+   "Ritsu Doan",
+   "Noël Aséko",
+   "Raphael Onyedika",
+   "Farès Chaïbi",
+   "Younes Ebnoutalib",
+   "Jonathan Burkardt"
+  ],
+  "away_bench": [
+   "Can Uzun",
+   "Ansgar Knauff",
+   "Mario Götze",
+   "Love Arrhov",
+   "Ayoube Amaimouni-Echghouyab",
+   "Kauã",
+   "Jeremiaha Maluze",
+   "Keita Kosugi",
+   "Oscar Højlund"
+  ],
+  "substitution_events": [
+   {
+    "team": "Borussia Dortmund",
+    "in": "Maximilian Beier",
+    "out": "Daniel Svensson",
+    "minute": "68"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Carney Chukwuemeka",
+    "out": "Marcel Sabitzer",
+    "minute": "68"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Ethan Nwaneri",
+    "out": "Fábio Silva",
+    "minute": "68"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Jobe Bellingham",
+    "out": "Felix Nmecha",
+    "minute": "79"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Joane Gadou",
+    "out": "Julian Ryerson",
+    "minute": "90"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Can Uzun",
+    "out": "Younes Ebnoutalib",
+    "minute": "77"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Ansgar Knauff",
+    "out": "Jonathan Burkardt",
+    "minute": "77"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Love Arrhov",
+    "out": "Farès Chaïbi",
+    "minute": "84"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Mario Götze",
+    "out": "Noël Aséko",
+    "minute": "84"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Ayoube Amaimouni-Echghouyab",
+    "out": "Ritsu Doan",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Sven Jablonski",
+  "attendance": 81365,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "bundesliga-2026-27-2026-10-31-augsburg-freiburg",
+ "date": "2026-10-31",
+ "home": "Augsburg",
+ "away": "Freiburg",
+ "score": "1-2",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881206",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881206"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Finn Dahmen",
+   "Yannik Keitel",
+   "Jeffrey Gouweleeuw",
+   "Chrislain Matsima",
+   "Robin Fellhauer",
+   "Han-Noah Massengo",
+   "Fabian Rieder",
+   "Hennes Behrens",
+   "Anton Kade",
+   "Arijon Ibrahimović",
+   "Michael Gregoritsch"
+  ],
+  "home_bench": [
+   "Mert Kömür",
+   "Rodrigo Ribeiro",
+   "Alexis Claude-Maurice",
+   "Marius Wolf",
+   "Uchenna Ogundu",
+   "Nediljko Labrović",
+   "Young-Woo Seol",
+   "Loris Husic",
+   "Tim Schnitzer"
+  ],
+  "away_starting_xi": [
+   "Mio Backhaus",
+   "Lukas Kübler",
+   "Matthias Ginter",
+   "Philipp Lienhart",
+   "Jordy Makengo",
+   "Maximilian Eggestein",
+   "Yannik Engelhardt",
+   "Jan-Niklas Beste",
+   "Yuito Suzuki",
+   "Derry Scherhant",
+   "Lucas Höler"
+  ],
+  "away_bench": [
+   "Igor Matanović",
+   "Keisuke Goto",
+   "Vincenzo Grifo",
+   "Max Rosenfelder",
+   "Cyriaque Irié",
+   "Jannik Huth",
+   "Anthony Jung",
+   "Christian Günter",
+   "Patrick Osterhage"
+  ],
+  "substitution_events": [
+   {
+    "team": "Augsburg",
+    "in": "Mert Kömür",
+    "out": "Anton Kade",
+    "minute": "76"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Rodrigo Ribeiro",
+    "out": "Michael Gregoritsch",
+    "minute": "76"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Alexis Claude-Maurice",
+    "out": "Arijon Ibrahimović",
+    "minute": "83"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Marius Wolf",
+    "out": "Han-Noah Massengo",
+    "minute": "83"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Uchenna Ogundu",
+    "out": "Yannik Keitel",
+    "minute": "88"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Igor Matanović",
+    "out": "Lucas Höler",
+    "minute": "46"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Keisuke Goto",
+    "out": "Yuito Suzuki",
+    "minute": "62"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Vincenzo Grifo",
+    "out": "Derry Scherhant",
+    "minute": "62"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Max Rosenfelder",
+    "out": "Lukas Kübler",
+    "minute": "76"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Cyriaque Irié",
+    "out": "Jan-Niklas Beste",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Christian Dingert",
+  "attendance": 30660,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

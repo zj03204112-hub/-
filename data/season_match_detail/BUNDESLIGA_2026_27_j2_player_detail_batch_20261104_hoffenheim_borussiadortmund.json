@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "bundesliga-2026-27-2026-09-05-hoffenheim-borussiadortmund",
+ "date": "2026-09-05",
+ "home": "Hoffenheim",
+ "away": "Borussia Dortmund",
+ "score": "2-3",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881156",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881156"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Oliver Baumann",
+   "Vladimír Coufal",
+   "Ozan Kabak",
+   "Albian Hajdari",
+   "Mats Rots",
+   "Patrick Wimmer",
+   "Leon Avdullahu",
+   "Wouter Burger",
+   "Adam Daghim",
+   "Adam Hložek",
+   "Tim Lemperle"
+  ],
+  "home_bench": [
+   "Andrej Kramarić",
+   "Bambasé Conté",
+   "Robin Hranác",
+   "Nathan De Cat",
+   "Max Moerstedt",
+   "Luca Philipp",
+   "Bernardo",
+   "Cajetan Lenz",
+   "Valentin Gendrey"
+  ],
+  "away_starting_xi": [
+   "Gregor Kobel",
+   "Joane Gadou",
+   "Waldemar Anton",
+   "Filippo Mane",
+   "Julian Ryerson",
+   "Jobe Bellingham",
+   "Felix Nmecha",
+   "Daniel Svensson",
+   "Konstantinos Karetsas",
+   "Maximilian Beier",
+   "Serhou Guirassy"
+  ],
+  "away_bench": [
+   "Ethan Nwaneri",
+   "Joey Veerman",
+   "Luca Reggiani",
+   "Fábio Silva",
+   "Marcel Sabitzer",
+   "Alexander Meyer",
+   "Kauã Prates",
+   "Carney Chukwuemeka",
+   "Mathis Albert"
+  ],
+  "substitution_events": [
+   {
+    "team": "Hoffenheim",
+    "in": "Andrej Kramarić",
+    "out": "Adam Hložek",
+    "minute": "73"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Bambasé Conté",
+    "out": "Patrick Wimmer",
+    "minute": "73"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Robin Hranác",
+    "out": "Ozan Kabak",
+    "minute": "79"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Nathan De Cat",
+    "out": "Wouter Burger",
+    "minute": "79"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Max Moerstedt",
+    "out": "Tim Lemperle",
+    "minute": "84"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Ethan Nwaneri",
+    "out": "Filippo Mane",
+    "minute": "32"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Joey Veerman",
+    "out": "Felix Nmecha",
+    "minute": "46"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Fábio Silva",
+    "out": "Konstantinos Karetsas",
+    "minute": "62"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Luca Reggiani",
+    "out": "Joane Gadou",
+    "minute": "62"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Marcel Sabitzer",
+    "out": "Serhou Guirassy",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "Dr. Matthias Jöllenbeck",
+  "attendance": 30150,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "bundesliga-2026-27-2026-09-06-hamburgersv-mainz05",
+ "date": "2026-09-06",
+ "home": "Hamburger SV",
+ "away": "Mainz 05",
+ "score": "0-5",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5881155",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881155"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Daniel Heuer Fernandes",
+   "Nicolás Capaldo",
+   "Sebastiaan Bornauw",
+   "Jordan Torunarigha",
+   "Zakaria El Ouahdi",
+   "Bilal Nadir",
+   "Nicolai Remberg",
+   "David Møller Wolfe",
+   "Martin Adeline",
+   "Albert Grønbæk",
+   "Terem Moffi"
+  ],
+  "home_bench": [
+   "Shafiq Nandja",
+   "Fábio Vieira",
+   "Patson Daka",
+   "Otto Stange",
+   "Louis Lemke",
+   "Sander Tangvik",
+   "Bakery Jatta",
+   "Kofi Amoako",
+   "Yussuf Poulsen"
+  ],
+  "away_starting_xi": [
+   "Alexander Schwolow",
+   "Stefan Posch",
+   "Fabio Gruber",
+   "Kacper Potulski",
+   "Anthony Caci",
+   "Jae-Sung Lee",
+   "Kaishu Sano",
+   "Nadiem Amiri",
+   "Phillipp Mwene",
+   "Phillip Tietz",
+   "Sheraldo Becker"
+  ],
+  "away_bench": [
+   "Ransford Königsdörffer",
+   "Danny da Costa",
+   "Rael Nakuzola",
+   "Lennard Maloney",
+   "Otto Ruoppi",
+   "Maximilian Kinzig",
+   "Stefan Bell",
+   "Sota Kawasaki",
+   "Benedict Hollerbach"
+  ],
+  "substitution_events": [
+   {
+    "team": "Hamburger SV",
+    "in": "Fábio Vieira",
+    "out": "Bilal Nadir",
+    "minute": "46"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Shafiq Nandja",
+    "out": "Jordan Torunarigha",
+    "minute": "46"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Patson Daka",
+    "out": "Martin Adeline",
+    "minute": "46"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Otto Stange",
+    "out": "Terem Moffi",
+    "minute": "64"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Louis Lemke",
+    "out": "David Møller Wolfe",
+    "minute": "84"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Ransford Königsdörffer",
+    "out": "Sheraldo Becker",
+    "minute": "68"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Danny da Costa",
+    "out": "Anthony Caci",
+    "minute": "81"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Lennard Maloney",
+    "out": "Kaishu Sano",
+    "minute": "88"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Otto Ruoppi",
+    "out": "Jae-Sung Lee",
+    "minute": "88"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Rael Nakuzola",
+    "out": "Stefan Posch",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 5
+  },
+  "provider_score": "0-5",
+  "score_consistent_with_events": true,
+  "referee": "Tobias Reichel",
+  "attendance": 57000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

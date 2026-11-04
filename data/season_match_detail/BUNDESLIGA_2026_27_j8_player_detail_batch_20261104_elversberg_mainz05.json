@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "bundesliga-2026-27-2026-10-30-elversberg-mainz05",
+ "date": "2026-10-30",
+ "home": "Elversberg",
+ "away": "Mainz 05",
+ "score": "4-1",
+ "halftime_score": "3-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881211",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881211"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nicolas Kristof",
+   "Luca Sirch",
+   "Lukas Pinckert",
+   "Maximilian Rohr",
+   "Lasse Günther",
+   "Felix Keidel",
+   "Łukasz Poręba",
+   "Lukas Petkov",
+   "Francis Onyeka",
+   "Maurice Krattenmacher",
+   "David Mokwa"
+  ],
+  "home_bench": [
+   "Nicholas Mickelson",
+   "Frederik Schmahl",
+   "Cole Campbell",
+   "Raif Adam",
+   "Luca Schnellbacher",
+   "Tim Boss",
+   "Florian Le Joncour",
+   "Amara Condé",
+   "Noel Futkeu"
+  ],
+  "away_starting_xi": [
+   "Robin Zentner",
+   "Danny da Costa",
+   "Stefan Posch",
+   "Kacper Potulski",
+   "Anthony Caci",
+   "Paul Nebel",
+   "Kaishu Sano",
+   "Nadiem Amiri",
+   "Phillipp Mwene",
+   "Sheraldo Becker",
+   "Phillip Tietz"
+  ],
+  "away_bench": [
+   "Lennard Maloney",
+   "Silvan Widmer",
+   "Benedict Hollerbach",
+   "Ransford Königsdörffer",
+   "Eric Martel",
+   "Alexander Schwolow",
+   "Fabio Gruber",
+   "Stefan Bell",
+   "Jae-Sung Lee"
+  ],
+  "substitution_events": [
+   {
+    "team": "Elversberg",
+    "in": "Nicholas Mickelson",
+    "out": "Lasse Günther",
+    "minute": "68"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Frederik Schmahl",
+    "out": "Francis Onyeka",
+    "minute": "77"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Cole Campbell",
+    "out": "Maurice Krattenmacher",
+    "minute": "77"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Luca Schnellbacher",
+    "out": "David Mokwa",
+    "minute": "88"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Raif Adam",
+    "out": "Lukas Petkov",
+    "minute": "88"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Benedict Hollerbach",
+    "out": "Nadiem Amiri",
+    "minute": "63"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Ransford Königsdörffer",
+    "out": "Phillip Tietz",
+    "minute": "63"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Lennard Maloney",
+    "out": "Paul Nebel",
+    "minute": "63"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Silvan Widmer",
+    "out": "Phillipp Mwene",
+    "minute": "63"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Eric Martel",
+    "out": "Kaishu Sano",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 1
+  },
+  "provider_score": "4-1",
+  "score_consistent_with_events": true,
+  "referee": "Sascha Stegemann",
+  "attendance": 9307,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

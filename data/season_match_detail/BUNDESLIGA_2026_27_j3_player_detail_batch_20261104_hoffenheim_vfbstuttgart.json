@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "bundesliga-2026-27-2026-09-12-hoffenheim-vfbstuttgart",
+ "date": "2026-09-12",
+ "home": "Hoffenheim",
+ "away": "VfB Stuttgart",
+ "score": "2-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881166",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881166"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Oliver Baumann",
+   "Vladimír Coufal",
+   "Ozan Kabak",
+   "Albian Hajdari",
+   "Mats Rots",
+   "Leon Avdullahu",
+   "Bambasé Conté",
+   "Adam Hložek",
+   "Wouter Burger",
+   "Adam Daghim",
+   "Tim Lemperle"
+  ],
+  "home_bench": [
+   "Patrick Wimmer",
+   "Koki Machida",
+   "Valentin Gendrey",
+   "Andrej Kramarić",
+   "Fisnik Asllani",
+   "Luca Philipp",
+   "Robin Hranác",
+   "Nathan De Cat",
+   "Max Moerstedt"
+  ],
+  "away_starting_xi": [
+   "Fabian Bredlow",
+   "Finn Jeltsch",
+   "Jeff Chabot",
+   "Ramon Hendriks",
+   "Josha Vagnoman",
+   "Grischa Prömel",
+   "Angelo Stiller",
+   "Maximilian Mittelstädt",
+   "Ermedin Demirović",
+   "Chris Führich",
+   "Dženan Pejčinović"
+  ],
+  "away_bench": [
+   "Yanik Spalt",
+   "Bilal El Khannouss",
+   "Deniz Undav",
+   "Jamie Leweling",
+   "Leo Sauer",
+   "Marius Funk",
+   "Leonidas Stergiou",
+   "Maximilian Herwerth",
+   "Atakan Karazor"
+  ],
+  "substitution_events": [
+   {
+    "team": "Hoffenheim",
+    "in": "Patrick Wimmer",
+    "out": "Bambasé Conté",
+    "minute": "55"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Valentin Gendrey",
+    "out": "Vladimír Coufal",
+    "minute": "69"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Koki Machida",
+    "out": "Mats Rots",
+    "minute": "69"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Fisnik Asllani",
+    "out": "Tim Lemperle",
+    "minute": "82"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Andrej Kramarić",
+    "out": "Adam Hložek",
+    "minute": "82"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Yanik Spalt",
+    "out": "Angelo Stiller",
+    "minute": "35"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Bilal El Khannouss",
+    "out": "Chris Führich",
+    "minute": "65"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Deniz Undav",
+    "out": "Ermedin Demirović",
+    "minute": "65"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Leo Sauer",
+    "out": "Ramon Hendriks",
+    "minute": "81"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Jamie Leweling",
+    "out": "Josha Vagnoman",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Sven Jablonski",
+  "attendance": 30150,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

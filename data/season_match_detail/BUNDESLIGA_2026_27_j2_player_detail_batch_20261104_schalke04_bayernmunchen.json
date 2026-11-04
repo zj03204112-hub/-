@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "bundesliga-2026-27-2026-09-05-schalke04-bayernmunchen",
+ "date": "2026-09-05",
+ "home": "Schalke 04",
+ "away": "Bayern München",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881158",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881158"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Loris Karius",
+   "Timo Becker",
+   "Nikola Katić",
+   "Hasan Kuruçay",
+   "Junior Dina Ebimbe",
+   "Soufian El-Faouzi",
+   "Satoshi Tanaka",
+   "Robin Gosens",
+   "Dejan Ljubičić",
+   "Adil Aouchiche",
+   "Moussa Sylla"
+  ],
+  "home_bench": [
+   "Mertcan Ayhan",
+   "Vitalie Becker",
+   "Maximilian Wöber",
+   "Luca Vozar",
+   "Kenan Karaman",
+   "Kevin Müller",
+   "Janik Bachmann",
+   "Chukwubuike Adamu",
+   "Edin Džeko"
+  ],
+  "away_starting_xi": [
+   "Manuel Neuer",
+   "Konrad Laimer",
+   "Dayot Upamecano",
+   "Jonathan Tah",
+   "Alphonso Davies",
+   "Joshua Kimmich",
+   "Aleksandar Pavlović",
+   "Lennart Karl",
+   "Nathaniel Brown",
+   "Luis Díaz",
+   "Ismael Saibari"
+  ],
+  "away_bench": [
+   "Harry Kane",
+   "Jamal Musiala",
+   "Michael Olise",
+   "Tom Bischof",
+   "Jonas Urbig",
+   "Hiroki Ito",
+   "Josip Stanišić",
+   "Min-Jae Kim",
+   "Bara Ndiaye"
+  ],
+  "substitution_events": [
+   {
+    "team": "Schalke 04",
+    "in": "Vitalie Becker",
+    "out": "Robin Gosens",
+    "minute": "65"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Mertcan Ayhan",
+    "out": "Junior Dina Ebimbe",
+    "minute": "65"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Luca Vozar",
+    "out": "Dejan Ljubičić",
+    "minute": "74"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Maximilian Wöber",
+    "out": "Hasan Kuruçay",
+    "minute": "74"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Kenan Karaman",
+    "out": "Adil Aouchiche",
+    "minute": "84"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Harry Kane",
+    "out": "Nathaniel Brown",
+    "minute": "46"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Michael Olise",
+    "out": "Ismael Saibari",
+    "minute": "57"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Jamal Musiala",
+    "out": "Lennart Karl",
+    "minute": "57"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Tom Bischof",
+    "out": "Aleksandar Pavlović",
+    "minute": "74"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Robert Schröder",
+  "attendance": 62094,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

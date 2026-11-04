@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "bundesliga-2026-27-2026-10-17-werderbremen-paderborn",
+ "date": "2026-10-17",
+ "home": "Werder Bremen",
+ "away": "Paderborn",
+ "score": "2-2",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5881196",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881196"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Karl Hein",
+   "Amos Pieper",
+   "Marco Friedl",
+   "Olivier Deman",
+   "Arthur",
+   "Ludovit Reis",
+   "Youri Regeer",
+   "Marco Grüll",
+   "Eren Dinkçi",
+   "Chuki",
+   "Niclas Füllkrug"
+  ],
+  "home_bench": [
+   "Mitchell Weiser",
+   "Cedric Itten",
+   "Dariusz Stalmach",
+   "Paul Erevbenagie",
+   "Alexander Schlager",
+   "Mick Schmetgens",
+   "Niklas Stark",
+   "Oskar Wójcik",
+   "Darwin Soylu"
+  ],
+  "away_starting_xi": [
+   "Nahuel Noll",
+   "Jano ter Horst",
+   "Tjark Scheller",
+   "Mattes Hansen",
+   "Laurin Curda",
+   "Santiago Castañeda",
+   "Raphael Obermair",
+   "Laurin Ulrich",
+   "Gabriel Vidović",
+   "Steffen Tigges",
+   "Stefano Marino"
+  ],
+  "away_bench": [
+   "Tom Baack",
+   "Rayan Philippe",
+   "Ruben Müller",
+   "Marvin Pieringer",
+   "Jonah Sticker",
+   "Markus Schubert",
+   "Clemens Lippmann",
+   "Sven Michel",
+   "Deniz Zeitler"
+  ],
+  "substitution_events": [
+   {
+    "team": "Werder Bremen",
+    "in": "Mitchell Weiser",
+    "out": "Chuki",
+    "minute": "46"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Cedric Itten",
+    "out": "Eren Dinkçi",
+    "minute": "63"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Dariusz Stalmach",
+    "out": "Ludovit Reis",
+    "minute": "80"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Paul Erevbenagie",
+    "out": "Youri Regeer",
+    "minute": "88"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Tom Baack",
+    "out": "Laurin Ulrich",
+    "minute": "66"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Rayan Philippe",
+    "out": "Stefano Marino",
+    "minute": "66"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Ruben Müller",
+    "out": "Gabriel Vidović",
+    "minute": "75"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Marvin Pieringer",
+    "out": "Steffen Tigges",
+    "minute": "75"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Jonah Sticker",
+    "out": "Mattes Hansen",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Robert Schröder",
+  "attendance": 40517,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "bundesliga-2026-27-2026-08-30-freiburg-werderbremen",
+ "date": "2026-08-30",
+ "home": "Freiburg",
+ "away": "Werder Bremen",
+ "score": "4-1",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881148",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881148"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mio Backhaus",
+   "Lukas Kübler",
+   "Matthias Ginter",
+   "Philipp Lienhart",
+   "Jordy Makengo",
+   "Maximilian Eggestein",
+   "Yannik Engelhardt",
+   "Jan-Niklas Beste",
+   "Yuito Suzuki",
+   "Derry Scherhant",
+   "Igor Matanovic"
+  ],
+  "home_bench": [
+   "Cyriaque Irié",
+   "Max Rosenfelder",
+   "Philipp Treu",
+   "Lucas Höler",
+   "Keisuke Goto",
+   "Florian Müller",
+   "Berkay Yilmaz",
+   "Christian Günter",
+   "Vincenzo Grifo"
+  ],
+  "away_starting_xi": [
+   "Karl Hein",
+   "Mick Schmetgens",
+   "Amos Pieper",
+   "Marco Friedl",
+   "Olivier Deman",
+   "Senne Lynen",
+   "Justin Njinmah",
+   "Chuki",
+   "Ludovit Reis",
+   "Marco Grüll",
+   "Niclas Füllkrug"
+  ],
+  "away_bench": [
+   "Dariusz Stalmach",
+   "Cedric Itten",
+   "Salim Musah",
+   "Eren Dinkçi",
+   "Patrice Covic",
+   "Alexander Schlager",
+   "Julián Malatini",
+   "Paul Erevbenagie",
+   "Samuel Mbangula"
+  ],
+  "substitution_events": [
+   {
+    "team": "Freiburg",
+    "in": "Cyriaque Irié",
+    "out": "Jan-Niklas Beste",
+    "minute": "46"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Max Rosenfelder",
+    "out": "Philipp Lienhart",
+    "minute": "69"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Philipp Treu",
+    "out": "Lukas Kübler",
+    "minute": "69"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Lucas Höler",
+    "out": "Igor Matanovic",
+    "minute": "73"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Keisuke Goto",
+    "out": "Yuito Suzuki",
+    "minute": "79"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Dariusz Stalmach",
+    "out": "Senne Lynen",
+    "minute": "46"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Salim Musah",
+    "out": "Justin Njinmah",
+    "minute": "61"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Cedric Itten",
+    "out": "Niclas Füllkrug",
+    "minute": "61"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Patrice Covic",
+    "out": "Marco Grüll",
+    "minute": "85"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Eren Dinkçi",
+    "out": "Ludovit Reis",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 1
+  },
+  "provider_score": "4-1",
+  "score_consistent_with_events": true,
+  "referee": "Daniel Siebert",
+  "attendance": 34700,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

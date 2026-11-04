@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "bundesliga-2026-27-2026-09-13-elversberg-bayernmunchen",
+ "date": "2026-09-13",
+ "home": "Elversberg",
+ "away": "Bayern München",
+ "score": "1-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881163",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881163"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nicolas Kristof",
+   "Jan Gyamerah",
+   "Lukas Pinckert",
+   "Maximilian Rohr",
+   "Lasse Günther",
+   "Felix Keidel",
+   "Łukasz Poręba",
+   "Lukas Petkov",
+   "Francis Onyeka",
+   "Cole Campbell",
+   "David Mokwa"
+  ],
+  "home_bench": [
+   "Noah Darvich",
+   "Maurice Krattenmacher",
+   "Amara Condé",
+   "Noel Futkeu",
+   "Luca Schnellbacher",
+   "Tim Boss",
+   "Florian Le Joncour",
+   "Luca Sirch",
+   "Nicholas Mickelson"
+  ],
+  "away_starting_xi": [
+   "Jonas Urbig",
+   "Josip Stanišić",
+   "Dayot Upamecano",
+   "Min-Jae Kim",
+   "Nathaniel Brown",
+   "Aleksandar Pavlović",
+   "Tom Bischof",
+   "Lennart Karl",
+   "Michael Olise",
+   "Ismael Saibari",
+   "Harry Kane"
+  ],
+  "away_bench": [
+   "Alphonso Davies",
+   "Jamal Musiala",
+   "Joshua Kimmich",
+   "Luis Díaz",
+   "Manuel Neuer",
+   "Hiroki Ito",
+   "Jonathan Tah",
+   "Konrad Laimer",
+   "Serge Gnabry"
+  ],
+  "substitution_events": [
+   {
+    "team": "Elversberg",
+    "in": "Noah Darvich",
+    "out": "Francis Onyeka",
+    "minute": "11"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Maurice Krattenmacher",
+    "out": "Cole Campbell",
+    "minute": "46"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Amara Condé",
+    "out": "Felix Keidel",
+    "minute": "73"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Noel Futkeu",
+    "out": "David Mokwa",
+    "minute": "74"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Luca Schnellbacher",
+    "out": "Lukas Petkov",
+    "minute": "83"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Alphonso Davies",
+    "out": "Nathaniel Brown",
+    "minute": "65"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Luis Díaz",
+    "out": "Ismael Saibari",
+    "minute": "65"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Jamal Musiala",
+    "out": "Lennart Karl",
+    "minute": "65"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Joshua Kimmich",
+    "out": "Tom Bischof",
+    "minute": "65"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Sascha Stegemann",
+  "attendance": 9307,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

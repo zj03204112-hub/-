@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "bundesliga-2026-27-2026-10-31-werderbremen-hoffenheim",
+ "date": "2026-10-31",
+ "home": "Werder Bremen",
+ "away": "Hoffenheim",
+ "score": "2-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881214",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881214"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Karl Hein",
+   "Arthur",
+   "Amos Pieper",
+   "Marco Friedl",
+   "Olivier Deman",
+   "Ludovit Reis",
+   "Youri Regeer",
+   "Mitchell Weiser",
+   "Chuki",
+   "Marco Grüll",
+   "Niclas Füllkrug"
+  ],
+  "home_bench": [
+   "Eren Dinkçi",
+   "Mick Schmetgens",
+   "Senne Lynen",
+   "Oskar Wójcik",
+   "Dariusz Stalmach",
+   "Alexander Schlager",
+   "Cedric Itten",
+   "Justin Njinmah",
+   "Kenny Quetant"
+  ],
+  "away_starting_xi": [
+   "Oliver Baumann",
+   "Ozan Kabak",
+   "Koki Machida",
+   "Mats Rots",
+   "Natnael Abraha",
+   "Andrej Kramarić",
+   "Leon Avdullahu",
+   "Wouter Burger",
+   "Adam Daghim",
+   "Adam Hložek",
+   "Fisnik Asllani"
+  ],
+  "away_bench": [
+   "Tim Lemperle",
+   "Cajetan Lenz",
+   "Jykese Fields",
+   "Yasin Zor",
+   "Valentin Lässig",
+   "Luca Philipp",
+   "Bernardo",
+   "Klaus Gjasula",
+   "Oskar Hencke"
+  ],
+  "substitution_events": [
+   {
+    "team": "Werder Bremen",
+    "in": "Eren Dinkçi",
+    "out": "Mitchell Weiser",
+    "minute": "16"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Mick Schmetgens",
+    "out": "Olivier Deman",
+    "minute": "73"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Senne Lynen",
+    "out": "Chuki",
+    "minute": "73"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Oskar Wójcik",
+    "out": "Niclas Füllkrug",
+    "minute": "90"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Dariusz Stalmach",
+    "out": "Ludovit Reis",
+    "minute": "90"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Tim Lemperle",
+    "out": "Adam Hložek",
+    "minute": "60"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Cajetan Lenz",
+    "out": "Leon Avdullahu",
+    "minute": "87"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Yasin Zor",
+    "out": "Andrej Kramarić",
+    "minute": "87"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Jykese Fields",
+    "out": "Fisnik Asllani",
+    "minute": "87"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Valentin Lässig",
+    "out": "Mats Rots",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Tobias Reichel",
+  "attendance": 40000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

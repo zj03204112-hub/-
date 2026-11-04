@@ -1,0 +1,53 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026/27",
+ "scheduled_fixtures_scanned": 99,
+ "completed_fixtures": 72,
+ "upcoming_fixtures": 27,
+ "fixtures_with_player_detail": 72,
+ "player_rows": 2881,
+ "starting_xi_rows": 1584,
+ "substitution_rows": 674,
+ "event_rows": 534,
+ "events_by_type": {
+  "goal": 237,
+  "own_goal": 6,
+  "yellow_card": 272,
+  "red_card": 4,
+  "second_yellow": 6,
+  "penalty_goal": 9
+ },
+ "shot_rows": 2192,
+ "shot_goals": 252,
+ "event_goals": 252,
+ "match_meta_rows": 72,
+ "meta_missing": {
+  "ManagerHome": 0,
+  "ManagerAway": 0,
+  "Venue": 0,
+  "Referee": 0
+ },
+ "xg_shots_with_value": 2185,
+ "xg_total": 257.17,
+ "score_crosscheck": {
+  "reference": "https://www.football-data.co.uk/mmz4281/2627/D1.csv",
+  "rows": 72,
+  "matched": 72,
+  "mismatches": 0,
+  "result": "all matched scorelines agree"
+ },
+ "sources": {
+  "fixtures_lineups_events_shots": "FotMob public match API",
+  "scores_crosscheck": "football-data.co.uk D1 season export (independent provider)"
+ },
+ "known_gaps": [
+  "Lineups, cards and shots come from a single provider (FotMob); no official Bundesliga lineup cross-check yet.",
+  "Assists come from the same payload and are labelled through AssistSource.",
+  "27 fixtures are scheduled but not yet played."
+ ],
+ "pipeline": [
+  "data_pipeline/collect_bundesliga_fotmob.py",
+  "data_pipeline/crosscheck_bundesliga_scores_football_data.py"
+ ]
+}

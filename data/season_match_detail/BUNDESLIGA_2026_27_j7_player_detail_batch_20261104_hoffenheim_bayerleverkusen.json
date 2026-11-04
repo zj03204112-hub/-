@@ -1,0 +1,142 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "bundesliga-2026-27-2026-10-25-hoffenheim-bayerleverkusen",
+ "date": "2026-10-25",
+ "home": "Hoffenheim",
+ "away": "Bayer Leverkusen",
+ "score": "3-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881201",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881201"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Oliver Baumann",
+   "Vladimír Coufal",
+   "Ozan Kabak",
+   "Koki Machida",
+   "Mats Rots",
+   "Leon Avdullahu",
+   "Wouter Burger",
+   "Alexander Prass",
+   "Adam Hložek",
+   "Adam Daghim",
+   "Fisnik Asllani"
+  ],
+  "home_bench": [
+   "Andrej Kramarić",
+   "Bambasé Conté",
+   "Robin Hranác",
+   "Max Moerstedt",
+   "Luca Philipp",
+   "Bernardo",
+   "Natnael Abraha",
+   "Valentin Gendrey",
+   "Cajetan Lenz",
+   "Tim Lemperle"
+  ],
+  "away_starting_xi": [
+   "Mark Flekken",
+   "Jarell Quansah",
+   "Edmond Tapsoba",
+   "Facundo Medina",
+   "Miguel Gutiérrez",
+   "Aleix García",
+   "Equi Fernández",
+   "Moussa Diaby",
+   "Ibrahim Maza",
+   "Nathan Tella",
+   "Patrik Schick"
+  ],
+  "away_bench": [
+   "Malik Tillman",
+   "Loic Badé",
+   "Robert Andrich",
+   "Afonso Moreira",
+   "Jonas Hofmann",
+   "Janis Blaswich",
+   "Tim Oermann",
+   "Lucas Vázquez",
+   "Victor Okoh Boniface"
+  ],
+  "substitution_events": [
+   {
+    "team": "Hoffenheim",
+    "in": "Andrej Kramarić",
+    "out": "Adam Hložek",
+    "minute": "65"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Bambasé Conté",
+    "out": "Wouter Burger",
+    "minute": "72"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Robin Hranác",
+    "out": "Fisnik Asllani",
+    "minute": "84"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Max Moerstedt",
+    "out": "Adam Daghim",
+    "minute": "84"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Malik Tillman",
+    "out": "Moussa Diaby",
+    "minute": "41"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Robert Andrich",
+    "out": "Equi Fernández",
+    "minute": "64"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Afonso Moreira",
+    "out": "Nathan Tella",
+    "minute": "64"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Loic Badé",
+    "out": "Jarell Quansah",
+    "minute": "64"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Jonas Hofmann",
+    "out": "Facundo Medina",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 0
+  },
+  "provider_score": "3-0",
+  "score_consistent_with_events": true,
+  "referee": "Daniel Siebert",
+  "attendance": 27378,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

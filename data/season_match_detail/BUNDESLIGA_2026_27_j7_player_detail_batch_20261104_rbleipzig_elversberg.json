@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "bundesliga-2026-27-2026-10-24-rbleipzig-elversberg",
+ "date": "2026-10-24",
+ "home": "RB Leipzig",
+ "away": "Elversberg",
+ "score": "4-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881204",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881204"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Ørjan Håskjold Nyland",
+   "Benjamin Henrichs",
+   "Willi Orbán",
+   "Maxime Estève",
+   "Max Finkgräfe",
+   "Andrija Maksimović",
+   "Rocco Reitz",
+   "Neil El Aynaoui",
+   "Ezechiel Banzuzi",
+   "Antonio Nusa",
+   "Tidiam Gomis"
+  ],
+  "home_bench": [
+   "Rômulo",
+   "Brajan Gruda",
+   "Christoph Baumgartner",
+   "Nicolas Seiwald",
+   "Abdoul Koné",
+   "Maarten Vandevoordt",
+   "Castello Lukeba",
+   "David Raum",
+   "Ridle Baku"
+  ],
+  "away_starting_xi": [
+   "Nicolas Kristof",
+   "Jan Gyamerah",
+   "Lukas Pinckert",
+   "Maximilian Rohr",
+   "Lasse Günther",
+   "Felix Keidel",
+   "Łukasz Poręba",
+   "Lukas Petkov",
+   "Frederik Schmahl",
+   "Maurice Krattenmacher",
+   "David Mokwa"
+  ],
+  "away_bench": [
+   "Luca Sirch",
+   "Raif Adam",
+   "Francis Onyeka",
+   "Noel Futkeu",
+   "Cole Campbell",
+   "Tim Boss",
+   "Florian Le Joncour",
+   "Nicholas Mickelson",
+   "Amara Condé"
+  ],
+  "substitution_events": [
+   {
+    "team": "RB Leipzig",
+    "in": "Rômulo",
+    "out": "Andrija Maksimović",
+    "minute": "46"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Brajan Gruda",
+    "out": "Rocco Reitz",
+    "minute": "62"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Nicolas Seiwald",
+    "out": "Ezechiel Banzuzi",
+    "minute": "72"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Christoph Baumgartner",
+    "out": "Antonio Nusa",
+    "minute": "72"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Abdoul Koné",
+    "out": "Tidiam Gomis",
+    "minute": "87"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Luca Sirch",
+    "out": "Jan Gyamerah",
+    "minute": "59"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Raif Adam",
+    "out": "Maurice Krattenmacher",
+    "minute": "59"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Francis Onyeka",
+    "out": "Frederik Schmahl",
+    "minute": "71"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Noel Futkeu",
+    "out": "David Mokwa",
+    "minute": "71"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Cole Campbell",
+    "out": "Lasse Günther",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 0
+  },
+  "provider_score": "4-0",
+  "score_consistent_with_events": true,
+  "referee": "Bastian Dankert",
+  "attendance": 41129,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

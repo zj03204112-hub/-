@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "bundesliga-2026-27-2026-09-19-vfbstuttgart-borussiadortmund",
+ "date": "2026-09-19",
+ "home": "VfB Stuttgart",
+ "away": "Borussia Dortmund",
+ "score": "0-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881177",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881177"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Fabian Bredlow",
+   "Finn Jeltsch",
+   "Jeff Chabot",
+   "Maximilian Mittelstädt",
+   "Josha Vagnoman",
+   "Grischa Prömel",
+   "Angelo Stiller",
+   "Chris Führich",
+   "Bilal El Khannouss",
+   "Deniz Undav",
+   "Ermedin Demirović"
+  ],
+  "home_bench": [
+   "Dženan Pejčinović",
+   "Jamie Leweling",
+   "Nikolas Nartey",
+   "Leo Sauer",
+   "Marius Funk",
+   "Ameen Al Dakhil",
+   "Ramon Hendriks",
+   "Atakan Karazor",
+   "Yanik Spalt"
+  ],
+  "away_starting_xi": [
+   "Gregor Kobel",
+   "Joane Gadou",
+   "Waldemar Anton",
+   "Nico Schlotterbeck",
+   "Julian Ryerson",
+   "Joey Veerman",
+   "Felix Nmecha",
+   "Daniel Svensson",
+   "Ethan Nwaneri",
+   "Maximilian Beier",
+   "Serhou Guirassy"
+  ],
+  "away_bench": [
+   "Jobe Bellingham",
+   "Konstantinos Karetsas",
+   "Fábio Silva",
+   "Ramy Bensebaini",
+   "Marcel Sabitzer",
+   "Alexander Meyer",
+   "Luca Reggiani",
+   "Carney Chukwuemeka",
+   "Samuele Inácio"
+  ],
+  "substitution_events": [
+   {
+    "team": "VfB Stuttgart",
+    "in": "Jamie Leweling",
+    "out": "Chris Führich",
+    "minute": "64"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Dženan Pejčinović",
+    "out": "Deniz Undav",
+    "minute": "64"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Leo Sauer",
+    "out": "Bilal El Khannouss",
+    "minute": "84"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Nikolas Nartey",
+    "out": "Grischa Prömel",
+    "minute": "84"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Jobe Bellingham",
+    "out": "Joey Veerman",
+    "minute": "62"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Konstantinos Karetsas",
+    "out": "Ethan Nwaneri",
+    "minute": "62"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Fábio Silva",
+    "out": "Serhou Guirassy",
+    "minute": "74"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Marcel Sabitzer",
+    "out": "Maximilian Beier",
+    "minute": "82"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Ramy Bensebaini",
+    "out": "Julian Ryerson",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Tobias Stieler",
+  "attendance": 60000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

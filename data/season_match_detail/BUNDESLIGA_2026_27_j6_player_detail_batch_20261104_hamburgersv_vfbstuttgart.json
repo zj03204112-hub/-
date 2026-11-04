@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "bundesliga-2026-27-2026-10-17-hamburgersv-vfbstuttgart",
+ "date": "2026-10-17",
+ "home": "Hamburger SV",
+ "away": "VfB Stuttgart",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881193",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881193"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Daniel Heuer Fernandes",
+   "Nicolás Capaldo",
+   "Sebastiaan Bornauw",
+   "Warmed Omari",
+   "David Møller Wolfe",
+   "Martin Adeline",
+   "Bilal Nadir",
+   "Miro Muheim",
+   "Louis Lemke",
+   "Fábio Vieira",
+   "Yussuf Poulsen"
+  ],
+  "home_bench": [
+   "Otto Stange",
+   "Zakaria El Ouahdi",
+   "Albert Grønbæk",
+   "Terem Moffi",
+   "Kofi Amoako",
+   "Sander Tangvik",
+   "Jordan Torunarigha",
+   "Shafiq Nandja",
+   "Alexander Røssing"
+  ],
+  "away_starting_xi": [
+   "Dennis Seimen",
+   "Josha Vagnoman",
+   "Finn Jeltsch",
+   "Jeff Chabot",
+   "Ramon Hendriks",
+   "Atakan Karazor",
+   "Angelo Stiller",
+   "Bilal El Khannouss",
+   "Deniz Undav",
+   "Jamie Leweling",
+   "Ermedin Demirović"
+  ],
+  "away_bench": [
+   "Chris Führich",
+   "Grischa Prömel",
+   "Dženan Pejčinović",
+   "Leo Sauer",
+   "Lorenz Assignon",
+   "Fabian Bredlow",
+   "Leonidas Stergiou",
+   "Luca Jaquez",
+   "Yanik Spalt"
+  ],
+  "substitution_events": [
+   {
+    "team": "Hamburger SV",
+    "in": "Otto Stange",
+    "out": "Yussuf Poulsen",
+    "minute": "61"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Zakaria El Ouahdi",
+    "out": "Louis Lemke",
+    "minute": "78"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Terem Moffi",
+    "out": "Fábio Vieira",
+    "minute": "78"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Albert Grønbæk",
+    "out": "Martin Adeline",
+    "minute": "78"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Kofi Amoako",
+    "out": "Bilal Nadir",
+    "minute": "84"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Chris Führich",
+    "out": "Bilal El Khannouss",
+    "minute": "67"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Grischa Prömel",
+    "out": "Atakan Karazor",
+    "minute": "67"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Leo Sauer",
+    "out": "Jamie Leweling",
+    "minute": "77"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Dženan Pejčinović",
+    "out": "Ermedin Demirović",
+    "minute": "77"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Lorenz Assignon",
+    "out": "Ramon Hendriks",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Robert Hartmann",
+  "attendance": 57000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

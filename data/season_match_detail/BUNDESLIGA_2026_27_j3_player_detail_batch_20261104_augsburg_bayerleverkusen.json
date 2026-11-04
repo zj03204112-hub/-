@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "bundesliga-2026-27-2026-09-12-augsburg-bayerleverkusen",
+ "date": "2026-09-12",
+ "home": "Augsburg",
+ "away": "Bayer Leverkusen",
+ "score": "2-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881161",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881161"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Finn Dahmen",
+   "Noahkai Banks",
+   "Chrislain Matsima",
+   "Calvin Brackelmann",
+   "Marius Wolf",
+   "Han-Noah Massengo",
+   "Fabian Rieder",
+   "Hennes Behrens",
+   "Robin Fellhauer",
+   "Arijon Ibrahimović",
+   "Michael Gregoritsch"
+  ],
+  "home_bench": [
+   "Alexis Claude-Maurice",
+   "Young-Woo Seol",
+   "Mert Kömür",
+   "Yannik Keitel",
+   "Rodrigo Ribeiro",
+   "Nediljko Labrović",
+   "Jeffrey Gouweleeuw",
+   "Juma Bah",
+   "Uchenna Ogundu"
+  ],
+  "away_starting_xi": [
+   "Mark Flekken",
+   "Jarell Quansah",
+   "Edmond Tapsoba",
+   "Facundo Medina",
+   "Miguel Gutiérrez",
+   "Equi Fernández",
+   "Aleix García",
+   "Moussa Diaby",
+   "Ibrahim Maza",
+   "Afonso Moreira",
+   "Christian Kofane"
+  ],
+  "away_bench": [
+   "Guéla Doué",
+   "Patrik Schick",
+   "Malik Tillman",
+   "Martin Terrier",
+   "Lucas Vázquez",
+   "Janis Blaswich",
+   "Loic Badé",
+   "Robert Andrich",
+   "Jonas Hofmann"
+  ],
+  "substitution_events": [
+   {
+    "team": "Augsburg",
+    "in": "Alexis Claude-Maurice",
+    "out": "Arijon Ibrahimović",
+    "minute": "58"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Mert Kömür",
+    "out": "Robin Fellhauer",
+    "minute": "77"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Young-Woo Seol",
+    "out": "Marius Wolf",
+    "minute": "77"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Rodrigo Ribeiro",
+    "out": "Michael Gregoritsch",
+    "minute": "85"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Yannik Keitel",
+    "out": "Han-Noah Massengo",
+    "minute": "85"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Patrik Schick",
+    "out": "Christian Kofane",
+    "minute": "63"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Guéla Doué",
+    "out": "Jarell Quansah",
+    "minute": "63"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Malik Tillman",
+    "out": "Afonso Moreira",
+    "minute": "75"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Martin Terrier",
+    "out": "Equi Fernández",
+    "minute": "76"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Lucas Vázquez",
+    "out": "Facundo Medina",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Daniel Siebert",
+  "attendance": 29775,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

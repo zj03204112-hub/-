@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "bundesliga-2026-27-2026-10-16-eintrachtfrankfurt-1fckoln",
+ "date": "2026-10-16",
+ "home": "Eintracht Frankfurt",
+ "away": "1. FC Köln",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881191",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881191"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Noah Atubolu",
+   "Nnamdi Collins",
+   "Robin Koch",
+   "Lilian Brassier",
+   "Keita Kosugi",
+   "Ritsu Doan",
+   "Raphael Onyedika",
+   "Mario Götze",
+   "Farès Chaïbi",
+   "Jonathan Burkardt",
+   "Younes Ebnoutalib"
+  ],
+  "home_bench": [
+   "Noël Aséko",
+   "Ansgar Knauff",
+   "Elias Baum",
+   "Kauã",
+   "Jeremiaha Maluze",
+   "Can Uzun",
+   "Timothy Chandler",
+   "Ayoube Amaimouni-Echghouyab",
+   "Love Arrhov"
+  ],
+  "away_starting_xi": [
+   "Marvin Schwäbe",
+   "Joël Schmied",
+   "Jahmai Simpson-Pusey",
+   "Luka Lochoshvili",
+   "Sebastian Sebulonsen",
+   "Ísak Jóhannesson",
+   "Tom Krauß",
+   "Borna Sosa",
+   "Linton Maina",
+   "Saïd El Mala",
+   "Marius Bülter"
+  ],
+  "away_bench": [
+   "Alessio Castro-Montes",
+   "Paul Okon-Engstler",
+   "Mikey Moore",
+   "Gian-Luca Waldschmidt",
+   "Reigan Heskey",
+   "Ron-Robert Zieler",
+   "Assad Kotya Fofana",
+   "Gideon Mensah",
+   "Jan Thielmann"
+  ],
+  "substitution_events": [
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Noël Aséko",
+    "out": "Mario Götze",
+    "minute": "71"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Ansgar Knauff",
+    "out": "Nnamdi Collins",
+    "minute": "71"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Elias Baum",
+    "out": "Jonathan Burkardt",
+    "minute": "82"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Paul Okon-Engstler",
+    "out": "Ísak Jóhannesson",
+    "minute": "68"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Mikey Moore",
+    "out": "Linton Maina",
+    "minute": "68"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Alessio Castro-Montes",
+    "out": "Joël Schmied",
+    "minute": "68"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Reigan Heskey",
+    "out": "Saïd El Mala",
+    "minute": "84"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Gian-Luca Waldschmidt",
+    "out": "Sebastian Sebulonsen",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Benjamin Brand",
+  "attendance": 59600,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

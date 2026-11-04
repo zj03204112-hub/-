@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "bundesliga-2026-27-2026-10-11-1fckoln-borussiamonchengladbach",
+ "date": "2026-10-11",
+ "home": "1. FC Köln",
+ "away": "Borussia Mönchengladbach",
+ "score": "2-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881181",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881181"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Marvin Schwäbe",
+   "Sebastian Sebulonsen",
+   "Jahmai Simpson-Pusey",
+   "Luka Lochoshvili",
+   "Borna Sosa",
+   "Ísak Jóhannesson",
+   "Ellyes Skhiri",
+   "Linton Maina",
+   "Mikey Moore",
+   "Marius Bülter",
+   "Saïd El Mala"
+  ],
+  "home_bench": [
+   "Tom Krauß",
+   "Joël Schmied",
+   "Jan Thielmann",
+   "Imad Rondić",
+   "Gian-Luca Waldschmidt",
+   "Ron-Robert Zieler",
+   "Gideon Mensah",
+   "Paul Okon-Engstler",
+   "Reigan Heskey"
+  ],
+  "away_starting_xi": [
+   "Moritz Nicolas",
+   "Daiki Hashioka",
+   "Kevin Diks",
+   "Jan Leszczyński",
+   "Joseph Scally",
+   "Philipp Sander",
+   "Florian Neuhaus",
+   "Lukas Ullrich",
+   "Hugo Bolin",
+   "Robin Hack",
+   "Isac Lidberg"
+  ],
+  "away_bench": [
+   "Wael Mohya",
+   "Shuto Machino",
+   "Zento Uno",
+   "Fabio Chiarodia",
+   "Fritz Fleck",
+   "Daniel Batz",
+   "David Herold",
+   "Yukhym Konoplya",
+   "Mathieu Nguefack"
+  ],
+  "substitution_events": [
+   {
+    "team": "1. FC Köln",
+    "in": "Tom Krauß",
+    "out": "Ellyes Skhiri",
+    "minute": "46"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Jan Thielmann",
+    "out": "Saïd El Mala",
+    "minute": "78"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Joël Schmied",
+    "out": "Luka Lochoshvili",
+    "minute": "78"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Imad Rondić",
+    "out": "Mikey Moore",
+    "minute": "85"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Gian-Luca Waldschmidt",
+    "out": "Linton Maina",
+    "minute": "90"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Wael Mohya",
+    "out": "Robin Hack",
+    "minute": "64"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Shuto Machino",
+    "out": "Isac Lidberg",
+    "minute": "65"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Zento Uno",
+    "out": "Florian Neuhaus",
+    "minute": "68"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Fritz Fleck",
+    "out": "Daiki Hashioka",
+    "minute": "80"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Fabio Chiarodia",
+    "out": "Jan Leszczyński",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Florian Badstübner",
+  "attendance": 50000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

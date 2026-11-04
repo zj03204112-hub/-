@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "bundesliga-2026-27-2026-10-17-bayernmunchen-rbleipzig",
+ "date": "2026-10-17",
+ "home": "Bayern München",
+ "away": "RB Leipzig",
+ "score": "6-1",
+ "halftime_score": "3-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881189",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881189"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jonas Urbig",
+   "Konrad Laimer",
+   "Dayot Upamecano",
+   "Min-Jae Kim",
+   "Nathaniel Brown",
+   "Joshua Kimmich",
+   "Aleksandar Pavlović",
+   "Michael Olise",
+   "Ismael Saibari",
+   "Luis Díaz",
+   "Harry Kane"
+  ],
+  "home_bench": [
+   "Josip Stanišić",
+   "Tom Bischof",
+   "Serge Gnabry",
+   "Lennart Karl",
+   "Sacha Boey",
+   "Sven Ulreich",
+   "Alphonso Davies",
+   "Hiroki Ito",
+   "Jonathan Tah"
+  ],
+  "away_starting_xi": [
+   "Maarten Vandevoordt",
+   "Lukas Klostermann",
+   "Willi Orbán",
+   "Castello Lukeba",
+   "David Raum",
+   "Brajan Gruda",
+   "Rocco Reitz",
+   "Neil El Aynaoui",
+   "Ezechiel Banzuzi",
+   "Antonio Nusa",
+   "Christopher Nkunku"
+  ],
+  "away_bench": [
+   "Nicolas Seiwald",
+   "Tidiam Gomis",
+   "Benjamin Henrichs",
+   "Rômulo",
+   "Andrija Maksimović",
+   "Ørjan Håskjold Nyland",
+   "Max Finkgräfe",
+   "Maxime Estève",
+   "Ridle Baku"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bayern München",
+    "in": "Tom Bischof",
+    "out": "Aleksandar Pavlović",
+    "minute": "59"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Serge Gnabry",
+    "out": "Ismael Saibari",
+    "minute": "59"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Josip Stanišić",
+    "out": "Konrad Laimer",
+    "minute": "59"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Lennart Karl",
+    "out": "Harry Kane",
+    "minute": "59"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Sacha Boey",
+    "out": "Min-Jae Kim",
+    "minute": "77"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Nicolas Seiwald",
+    "out": "Ezechiel Banzuzi",
+    "minute": "46"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Tidiam Gomis",
+    "out": "Christopher Nkunku",
+    "minute": "46"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Benjamin Henrichs",
+    "out": "Lukas Klostermann",
+    "minute": "59"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Rômulo",
+    "out": "Antonio Nusa",
+    "minute": "60"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Andrija Maksimović",
+    "out": "Rocco Reitz",
+    "minute": "71"
+   }
+  ],
+  "goals": {
+   "home": 6,
+   "away": 1
+  },
+  "provider_score": "6-1",
+  "score_consistent_with_events": true,
+  "referee": "Tobias Stieler",
+  "attendance": 75000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

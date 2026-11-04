@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "bundesliga-2026-27-2026-09-19-werderbremen-augsburg",
+ "date": "2026-09-19",
+ "home": "Werder Bremen",
+ "away": "Augsburg",
+ "score": "3-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881178",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881178"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Karl Hein",
+   "Amos Pieper",
+   "Marco Friedl",
+   "Olivier Deman",
+   "Arthur",
+   "Ludovit Reis",
+   "Youri Regeer",
+   "Marco Grüll",
+   "Eren Dinkçi",
+   "Niclas Füllkrug",
+   "Chuki"
+  ],
+  "home_bench": [
+   "Mitchell Weiser",
+   "Salim Musah",
+   "Oskar Wójcik",
+   "Mick Schmetgens",
+   "Alexander Schlager",
+   "Niklas Stark",
+   "Dariusz Stalmach",
+   "Cedric Itten",
+   "Paul Erevbenagie"
+  ],
+  "away_starting_xi": [
+   "Finn Dahmen",
+   "Noahkai Banks",
+   "Chrislain Matsima",
+   "Calvin Brackelmann",
+   "Marius Wolf",
+   "Han-Noah Massengo",
+   "Fabian Rieder",
+   "Hennes Behrens",
+   "Robin Fellhauer",
+   "Mert Kömür",
+   "Michael Gregoritsch"
+  ],
+  "away_bench": [
+   "Alexis Claude-Maurice",
+   "Yannik Keitel",
+   "Rodrigo Ribeiro",
+   "Young-Woo Seol",
+   "Jeffrey Gouweleeuw",
+   "Nediljko Labrović",
+   "Juma Bah",
+   "Arijon Ibrahimović",
+   "Uchenna Ogundu"
+  ],
+  "substitution_events": [
+   {
+    "team": "Werder Bremen",
+    "in": "Mitchell Weiser",
+    "out": "Eren Dinkçi",
+    "minute": "68"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Salim Musah",
+    "out": "Ludovit Reis",
+    "minute": "78"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Oskar Wójcik",
+    "out": "Amos Pieper",
+    "minute": "79"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Mick Schmetgens",
+    "out": "Arthur",
+    "minute": "90"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Yannik Keitel",
+    "out": "Han-Noah Massengo",
+    "minute": "53"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Rodrigo Ribeiro",
+    "out": "Michael Gregoritsch",
+    "minute": "53"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Alexis Claude-Maurice",
+    "out": "Mert Kömür",
+    "minute": "53"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Young-Woo Seol",
+    "out": "Marius Wolf",
+    "minute": "74"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Jeffrey Gouweleeuw",
+    "out": "Calvin Brackelmann",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Bastian Dankert",
+  "attendance": 39745,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

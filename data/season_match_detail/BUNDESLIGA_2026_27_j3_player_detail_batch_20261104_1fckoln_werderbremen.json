@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "bundesliga-2026-27-2026-09-12-1fckoln-werderbremen",
+ "date": "2026-09-12",
+ "home": "1. FC Köln",
+ "away": "Werder Bremen",
+ "score": "1-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881164",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881164"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Marvin Schwäbe",
+   "Alessio Castro-Montes",
+   "Jahmai Simpson-Pusey",
+   "Luka Lochoshvili",
+   "Gideon Mensah",
+   "Ellyes Skhiri",
+   "Tom Krauß",
+   "Linton Maina",
+   "Mikey Moore",
+   "Marius Bülter",
+   "Thijs Dallinga"
+  ],
+  "home_bench": [
+   "Sebastian Sebulonsen",
+   "Ísak Jóhannesson",
+   "Ragnar Ache",
+   "Saïd El Mala",
+   "Paul Okon-Engstler",
+   "Ron-Robert Zieler",
+   "Joël Schmied",
+   "Borna Sosa",
+   "Jan Thielmann"
+  ],
+  "away_starting_xi": [
+   "Karl Hein",
+   "Arthur",
+   "Amos Pieper",
+   "Marco Friedl",
+   "Olivier Deman",
+   "Youri Regeer",
+   "Ludovit Reis",
+   "Eren Dinkçi",
+   "Chuki",
+   "Marco Grüll",
+   "Niclas Füllkrug"
+  ],
+  "away_bench": [
+   "Dariusz Stalmach",
+   "Mick Schmetgens",
+   "Cedric Itten",
+   "Mitchell Weiser",
+   "Paul Erevbenagie",
+   "Alexander Schlager",
+   "Niklas Stark",
+   "Oskar Wójcik",
+   "Salim Musah"
+  ],
+  "substitution_events": [
+   {
+    "team": "1. FC Köln",
+    "in": "Sebastian Sebulonsen",
+    "out": "Alessio Castro-Montes",
+    "minute": "64"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Ísak Jóhannesson",
+    "out": "Linton Maina",
+    "minute": "65"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Ragnar Ache",
+    "out": "Thijs Dallinga",
+    "minute": "65"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Saïd El Mala",
+    "out": "Mikey Moore",
+    "minute": "74"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Paul Okon-Engstler",
+    "out": "Tom Krauß",
+    "minute": "90"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Dariusz Stalmach",
+    "out": "Ludovit Reis",
+    "minute": "70"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Mick Schmetgens",
+    "out": "Arthur",
+    "minute": "81"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Cedric Itten",
+    "out": "Niclas Füllkrug",
+    "minute": "81"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Mitchell Weiser",
+    "out": "Youri Regeer",
+    "minute": "83"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Paul Erevbenagie",
+    "out": "Eren Dinkçi",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Florian Exner",
+  "attendance": 50000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

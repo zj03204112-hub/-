@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "bundesliga-2026-27-2026-09-19-eintrachtfrankfurt-freiburg",
+ "date": "2026-09-19",
+ "home": "Eintracht Frankfurt",
+ "away": "Freiburg",
+ "score": "2-2",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881173",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881173"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Noah Atubolu",
+   "Elias Baum",
+   "Robin Koch",
+   "Lilian Brassier",
+   "Keita Kosugi",
+   "Ritsu Doan",
+   "Noël Aséko",
+   "Raphael Onyedika",
+   "Can Uzun",
+   "Younes Ebnoutalib",
+   "Jonathan Burkardt"
+  ],
+  "home_bench": [
+   "Oscar Højlund",
+   "Nnamdi Collins",
+   "Ansgar Knauff",
+   "Mario Götze",
+   "Ayoube Amaimouni-Echghouyab",
+   "Kauã",
+   "Otávio",
+   "Timothy Chandler",
+   "Malik Pimpong"
+  ],
+  "away_starting_xi": [
+   "Mio Backhaus",
+   "Philipp Treu",
+   "Matthias Ginter",
+   "Philipp Lienhart",
+   "Jordy Makengo",
+   "Maximilian Eggestein",
+   "Yannik Engelhardt",
+   "Jan-Niklas Beste",
+   "Yuito Suzuki",
+   "Derry Scherhant",
+   "Igor Matanović"
+  ],
+  "away_bench": [
+   "Lukas Kübler",
+   "Vincenzo Grifo",
+   "Keisuke Goto",
+   "Lucas Höler",
+   "Florian Müller",
+   "Berkay Yılmaz",
+   "Christian Günter",
+   "Max Rosenfelder",
+   "Cyriaque Irié"
+  ],
+  "substitution_events": [
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Oscar Højlund",
+    "out": "Noël Aséko",
+    "minute": "46"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Nnamdi Collins",
+    "out": "Elias Baum",
+    "minute": "61"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Ansgar Knauff",
+    "out": "Ritsu Doan",
+    "minute": "61"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Mario Götze",
+    "out": "Can Uzun",
+    "minute": "89"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Ayoube Amaimouni-Echghouyab",
+    "out": "Jonathan Burkardt",
+    "minute": "89"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Vincenzo Grifo",
+    "out": "Derry Scherhant",
+    "minute": "71"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Lukas Kübler",
+    "out": "Jan-Niklas Beste",
+    "minute": "71"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Keisuke Goto",
+    "out": "Igor Matanović",
+    "minute": "84"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Lucas Höler",
+    "out": "Yuito Suzuki",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Sören Storks",
+  "attendance": 60100,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

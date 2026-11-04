@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "bundesliga-2026-27-2026-09-05-paderborn-freiburg",
+ "date": "2026-09-05",
+ "home": "Paderborn",
+ "away": "Freiburg",
+ "score": "0-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881157",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881157"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nahuel Noll",
+   "Jano ter Horst",
+   "Tjark Scheller",
+   "Mattes Hansen",
+   "Laurin Curda",
+   "Santiago Castañeda",
+   "Raphael Obermair",
+   "Laurin Ulrich",
+   "Gabriel Vidović",
+   "Marvin Pieringer",
+   "Rayan Philippe"
+  ],
+  "home_bench": [
+   "Steffen Tigges",
+   "Oliver Batista Meier",
+   "Jonah Sticker",
+   "Stefano Marino",
+   "Niklas Mohr",
+   "Markus Schubert",
+   "Clemens Lippmann",
+   "Luka Djuric",
+   "Tom Baack"
+  ],
+  "away_starting_xi": [
+   "Mio Backhaus",
+   "Philipp Treu",
+   "Matthias Ginter",
+   "Philipp Lienhart",
+   "Jordy Makengo",
+   "Maximilian Eggestein",
+   "Yannik Engelhardt",
+   "Jan-Niklas Beste",
+   "Yuito Suzuki",
+   "Derry Scherhant",
+   "Igor Matanović"
+  ],
+  "away_bench": [
+   "Lukas Kübler",
+   "Vincenzo Grifo",
+   "Berkay Yılmaz",
+   "Keisuke Goto",
+   "Florian Müller",
+   "Bruno Ogbus",
+   "Christian Günter",
+   "Max Rosenfelder",
+   "Cyriaque Irié"
+  ],
+  "substitution_events": [
+   {
+    "team": "Paderborn",
+    "in": "Steffen Tigges",
+    "out": "Rayan Philippe",
+    "minute": "46"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Oliver Batista Meier",
+    "out": "Laurin Ulrich",
+    "minute": "74"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Jonah Sticker",
+    "out": "Jano ter Horst",
+    "minute": "82"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Stefano Marino",
+    "out": "Marvin Pieringer",
+    "minute": "82"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Niklas Mohr",
+    "out": "Mattes Hansen",
+    "minute": "89"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Lukas Kübler",
+    "out": "Jan-Niklas Beste",
+    "minute": "74"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Vincenzo Grifo",
+    "out": "Derry Scherhant",
+    "minute": "74"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Berkay Yılmaz",
+    "out": "Yannik Engelhardt",
+    "minute": "82"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Keisuke Goto",
+    "out": "Yuito Suzuki",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Max Burda",
+  "attendance": 15000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

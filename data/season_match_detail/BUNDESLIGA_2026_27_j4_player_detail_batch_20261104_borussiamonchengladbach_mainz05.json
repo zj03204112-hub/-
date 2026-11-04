@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "bundesliga-2026-27-2026-09-19-borussiamonchengladbach-mainz05",
+ "date": "2026-09-19",
+ "home": "Borussia Mönchengladbach",
+ "away": "Mainz 05",
+ "score": "3-4",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5881172",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881172"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Moritz Nicolas",
+   "Ko Itakura",
+   "Jan Leszczyński",
+   "Kevin Diks",
+   "Joseph Scally",
+   "Hugo Bolin",
+   "Philipp Sander",
+   "Lukas Ullrich",
+   "Franck Honorat",
+   "Florian Neuhaus",
+   "Isac Lidberg"
+  ],
+  "home_bench": [
+   "Wael Mohya",
+   "Daiki Hashioka",
+   "Kevin Stöger",
+   "Robin Hack",
+   "Shuto Machino",
+   "Daniel Batz",
+   "David Herold",
+   "Fabio Chiarodia",
+   "Mathieu Nguefack"
+  ],
+  "away_starting_xi": [
+   "Alexander Schwolow",
+   "Stefan Posch",
+   "Fabio Gruber",
+   "Kacper Potulski",
+   "Anthony Caci",
+   "Nadiem Amiri",
+   "Kaishu Sano",
+   "Jae-Sung Lee",
+   "Phillipp Mwene",
+   "Phillip Tietz",
+   "Sheraldo Becker"
+  ],
+  "away_bench": [
+   "Danny da Costa",
+   "Eric Martel",
+   "Ransford Königsdörffer",
+   "Lennard Maloney",
+   "Maximilian Kinzig",
+   "Rael Nakuzola",
+   "Stefan Bell",
+   "Otto Ruoppi",
+   "Benedict Hollerbach"
+  ],
+  "substitution_events": [
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Wael Mohya",
+    "out": "Florian Neuhaus",
+    "minute": "64"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Daiki Hashioka",
+    "out": "Joseph Scally",
+    "minute": "76"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Kevin Stöger",
+    "out": "Franck Honorat",
+    "minute": "76"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Shuto Machino",
+    "out": "Ko Itakura",
+    "minute": "84"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Robin Hack",
+    "out": "Hugo Bolin",
+    "minute": "84"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Danny da Costa",
+    "out": "Anthony Caci",
+    "minute": "65"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Eric Martel",
+    "out": "Jae-Sung Lee",
+    "minute": "65"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Ransford Königsdörffer",
+    "out": "Sheraldo Becker",
+    "minute": "76"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Lennard Maloney",
+    "out": "Nadiem Amiri",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 4
+  },
+  "provider_score": "3-4",
+  "score_consistent_with_events": true,
+  "referee": "Robert Hartmann",
+  "attendance": 50717,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

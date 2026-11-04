@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "bundesliga-2026-27-2026-09-18-bayernmunchen-unionberlin",
+ "date": "2026-09-18",
+ "home": "Bayern München",
+ "away": "Union Berlin",
+ "score": "7-0",
+ "halftime_score": "3-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881171",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881171"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Manuel Neuer",
+   "Josip Stanišić",
+   "Dayot Upamecano",
+   "Jonathan Tah",
+   "Alphonso Davies",
+   "Joshua Kimmich",
+   "Aleksandar Pavlović",
+   "Michael Olise",
+   "Jamal Musiala",
+   "Luis Díaz",
+   "Harry Kane"
+  ],
+  "home_bench": [
+   "Min-Jae Kim",
+   "Tom Bischof",
+   "Ismael Saibari",
+   "Serge Gnabry",
+   "Nathaniel Brown",
+   "Jonas Urbig",
+   "Hiroki Ito",
+   "Bara Ndiaye",
+   "Lennart Karl"
+  ],
+  "away_starting_xi": [
+   "Frederik Rønnow",
+   "Christopher Trimmel",
+   "Leopold Querfeld",
+   "Felix Uduokhai",
+   "Tom Rothe",
+   "Rani Khedira",
+   "Michel Aebischer",
+   "Janik Haberer",
+   "Woo-Yeong Jeong",
+   "András Schäfer",
+   "Emmanuel Latte Lath"
+  ],
+  "away_bench": [
+   "Tim Skarke",
+   "Aljoscha Kemlein",
+   "Livan Burcu",
+   "Zeno Van Den Bosch",
+   "Derrick Köhn",
+   "Matheo Raab",
+   "Robert Skov",
+   "Kastriot Imeri",
+   "Marin Ljubičić"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bayern München",
+    "in": "Min-Jae Kim",
+    "out": "Dayot Upamecano",
+    "minute": "46"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Tom Bischof",
+    "out": "Aleksandar Pavlović",
+    "minute": "63"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Ismael Saibari",
+    "out": "Luis Díaz",
+    "minute": "63"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Serge Gnabry",
+    "out": "Harry Kane",
+    "minute": "77"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Nathaniel Brown",
+    "out": "Alphonso Davies",
+    "minute": "83"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Tim Skarke",
+    "out": "Emmanuel Latte Lath",
+    "minute": "46"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Aljoscha Kemlein",
+    "out": "Janik Haberer",
+    "minute": "60"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Livan Burcu",
+    "out": "Woo-Yeong Jeong",
+    "minute": "60"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Zeno Van Den Bosch",
+    "out": "Christopher Trimmel",
+    "minute": "71"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Derrick Köhn",
+    "out": "András Schäfer",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 7,
+   "away": 0
+  },
+  "provider_score": "7-0",
+  "score_consistent_with_events": true,
+  "referee": "Benjamin Brand",
+  "attendance": 75000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

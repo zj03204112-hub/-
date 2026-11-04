@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "bundesliga-2026-27-2026-10-31-schalke04-rbleipzig",
+ "date": "2026-10-31",
+ "home": "Schalke 04",
+ "away": "RB Leipzig",
+ "score": "0-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881212",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881212"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Loris Karius",
+   "Timo Becker",
+   "Nikola Katić",
+   "Hasan Kuruçay",
+   "Vitalie Becker",
+   "Satoshi Tanaka",
+   "Mertcan Ayhan",
+   "Adil Aouchiche",
+   "Chukwubuike Adamu",
+   "Kenan Karaman",
+   "Hee-Chan Hwang"
+  ],
+  "home_bench": [
+   "Dejan Ljubičić",
+   "Edin Džeko",
+   "Bryan Lasme",
+   "Junior Dina Ebimbe",
+   "Johannes Siebeking",
+   "Kevin Müller",
+   "Edion Gashi",
+   "Finn Porath",
+   "Jean-Paul Ndiaye"
+  ],
+  "away_starting_xi": [
+   "Maarten Vandevoordt",
+   "Benjamin Henrichs",
+   "Willi Orbán",
+   "Castello Lukeba",
+   "David Raum",
+   "Brajan Gruda",
+   "Rocco Reitz",
+   "Neil El Aynaoui",
+   "Ezechiel Banzuzi",
+   "Antonio Nusa",
+   "Rômulo"
+  ],
+  "away_bench": [
+   "Christoph Baumgartner",
+   "Ridle Baku",
+   "Tidiam Gomis",
+   "Johan Bakayoko",
+   "Nicolas Seiwald",
+   "Ørjan Håskjold Nyland",
+   "Abdoul Koné",
+   "Max Finkgräfe",
+   "Christopher Nkunku"
+  ],
+  "substitution_events": [
+   {
+    "team": "Schalke 04",
+    "in": "Dejan Ljubičić",
+    "out": "Chukwubuike Adamu",
+    "minute": "57"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Edin Džeko",
+    "out": "Mertcan Ayhan",
+    "minute": "68"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Junior Dina Ebimbe",
+    "out": "Timo Becker",
+    "minute": "83"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Bryan Lasme",
+    "out": "Hee-Chan Hwang",
+    "minute": "83"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Christoph Baumgartner",
+    "out": "Rocco Reitz",
+    "minute": "61"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Tidiam Gomis",
+    "out": "Brajan Gruda",
+    "minute": "76"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Ridle Baku",
+    "out": "Benjamin Henrichs",
+    "minute": "76"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Johan Bakayoko",
+    "out": "Rômulo",
+    "minute": "85"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Nicolas Seiwald",
+    "out": "Ezechiel Banzuzi",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Max Burda",
+  "attendance": 61581,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

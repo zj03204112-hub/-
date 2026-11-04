@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "bundesliga-2026-27-2026-08-29-borussiadortmund-hamburgersv",
+ "date": "2026-08-29",
+ "home": "Borussia Dortmund",
+ "away": "Hamburger SV",
+ "score": "2-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881145",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881145"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Gregor Kobel",
+   "Joane Gadou",
+   "Waldemar Anton",
+   "Daniel Svensson",
+   "Julian Ryerson",
+   "Jobe Bellingham",
+   "Felix Nmecha",
+   "Maximilian Beier",
+   "Konstantinos Karetsas",
+   "Giannis Konstantelias",
+   "Serhou Guirassy"
+  ],
+  "home_bench": [
+   "Marcel Sabitzer",
+   "Filippo Mane",
+   "Joey Veerman",
+   "Samuele Inácio",
+   "Kauã Prates",
+   "Alexander Meyer",
+   "Luca Reggiani",
+   "Fábio Silva",
+   "Mathis Albert"
+  ],
+  "away_starting_xi": [
+   "Daniel Heuer Fernandes",
+   "Nicolás Capaldo",
+   "Sebastiaan Bornauw",
+   "Jordan Torunarigha",
+   "Bakery Jatta",
+   "Albert Sambi Lokonga",
+   "Nicolai Remberg",
+   "Louis Lemke",
+   "Martin Adeline",
+   "Albert Grønbæk",
+   "Patson Daka"
+  ],
+  "away_bench": [
+   "Otto Stange",
+   "Terem Moffi",
+   "Bilal Nadir",
+   "Yussuf Poulsen",
+   "Rayan Philippe",
+   "Sander Tangvik",
+   "Daniel Elfadli",
+   "Shafiq Nandja",
+   "Kofi Amoako"
+  ],
+  "substitution_events": [
+   {
+    "team": "Borussia Dortmund",
+    "in": "Marcel Sabitzer",
+    "out": "Giannis Konstantelias",
+    "minute": "54"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Joey Veerman",
+    "out": "Felix Nmecha",
+    "minute": "74"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Samuele Inácio",
+    "out": "Konstantinos Karetsas",
+    "minute": "74"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Filippo Mane",
+    "out": "Julian Ryerson",
+    "minute": "74"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Kauã Prates",
+    "out": "Maximilian Beier",
+    "minute": "84"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Terem Moffi",
+    "out": "Patson Daka",
+    "minute": "67"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Otto Stange",
+    "out": "Martin Adeline",
+    "minute": "67"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Bilal Nadir",
+    "out": "Jordan Torunarigha",
+    "minute": "82"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Yussuf Poulsen",
+    "out": "Bakery Jatta",
+    "minute": "82"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Rayan Philippe",
+    "out": "Louis Lemke",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Felix Zwayer",
+  "attendance": 81365,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

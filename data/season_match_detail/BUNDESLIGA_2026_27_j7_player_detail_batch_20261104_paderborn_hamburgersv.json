@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "bundesliga-2026-27-2026-10-24-paderborn-hamburgersv",
+ "date": "2026-10-24",
+ "home": "Paderborn",
+ "away": "Hamburger SV",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881203",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881203"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nahuel Noll",
+   "Jano ter Horst",
+   "Tjark Scheller",
+   "Mattes Hansen",
+   "Laurin Curda",
+   "Laurin Ulrich",
+   "Santiago Castañeda",
+   "Gabriel Vidović",
+   "Raphael Obermair",
+   "Stefano Marino",
+   "Steffen Tigges"
+  ],
+  "home_bench": [
+   "Tom Baack",
+   "Felix Götze",
+   "Marvin Pieringer",
+   "Rayan Philippe",
+   "Sven Michel",
+   "Markus Schubert",
+   "Jonah Sticker",
+   "Ruben Müller",
+   "Deniz Zeitler"
+  ],
+  "away_starting_xi": [
+   "Daniel Heuer Fernandes",
+   "Shafiq Nandja",
+   "Sebastiaan Bornauw",
+   "Warmed Omari",
+   "Zakaria El Ouahdi",
+   "Martin Adeline",
+   "Bilal Nadir",
+   "Miro Muheim",
+   "David Møller Wolfe",
+   "Yussuf Poulsen",
+   "Fábio Vieira"
+  ],
+  "away_bench": [
+   "Otto Stange",
+   "Terem Moffi",
+   "Albert Grønbæk",
+   "Albert Sambi Lokonga",
+   "Alexander Røssing",
+   "Sander Tangvik",
+   "Jason Dean Bissi Mouelle",
+   "Kofi Amoako",
+   "Louis Lemke"
+  ],
+  "substitution_events": [
+   {
+    "team": "Paderborn",
+    "in": "Tom Baack",
+    "out": "Gabriel Vidović",
+    "minute": "46"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Marvin Pieringer",
+    "out": "Steffen Tigges",
+    "minute": "62"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Felix Götze",
+    "out": "Jano ter Horst",
+    "minute": "62"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Rayan Philippe",
+    "out": "Laurin Ulrich",
+    "minute": "70"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Sven Michel",
+    "out": "Stefano Marino",
+    "minute": "79"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Otto Stange",
+    "out": "Fábio Vieira",
+    "minute": "13"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Terem Moffi",
+    "out": "Yussuf Poulsen",
+    "minute": "46"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Albert Grønbæk",
+    "out": "Bilal Nadir",
+    "minute": "71"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Albert Sambi Lokonga",
+    "out": "Miro Muheim",
+    "minute": "71"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Alexander Røssing",
+    "out": "Otto Stange",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Martin Petersen",
+  "attendance": 15000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

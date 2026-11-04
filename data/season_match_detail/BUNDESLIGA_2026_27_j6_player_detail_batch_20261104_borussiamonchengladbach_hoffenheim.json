@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "bundesliga-2026-27-2026-10-18-borussiamonchengladbach-hoffenheim",
+ "date": "2026-10-18",
+ "home": "Borussia Mönchengladbach",
+ "away": "Hoffenheim",
+ "score": "1-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881190",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881190"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Moritz Nicolas",
+   "Philipp Sander",
+   "Kevin Diks",
+   "Fabio Chiarodia",
+   "Lukas Ullrich",
+   "Joseph Scally",
+   "Zento Uno",
+   "Florian Neuhaus",
+   "Wael Mohya",
+   "Hugo Bolin",
+   "Isac Lidberg"
+  ],
+  "home_bench": [
+   "Shuto Machino",
+   "Daiki Hashioka",
+   "Iaia Manco Danfa",
+   "Robin Hack",
+   "Mathieu Nguefack",
+   "Daniel Batz",
+   "David Herold",
+   "Yukhym Konoplya",
+   "Kevin Stöger"
+  ],
+  "away_starting_xi": [
+   "Oliver Baumann",
+   "Vladimír Coufal",
+   "Robin Hranác",
+   "Koki Machida",
+   "Mats Rots",
+   "Leon Avdullahu",
+   "Alexander Prass",
+   "Bambasé Conté",
+   "Fisnik Asllani",
+   "Adam Hložek",
+   "Tim Lemperle"
+  ],
+  "away_bench": [
+   "Adam Daghim",
+   "Ozan Kabak",
+   "Andrej Kramarić",
+   "Luca Philipp",
+   "Valentin Lässig",
+   "Cajetan Lenz",
+   "Valentin Gendrey",
+   "Wouter Burger",
+   "Max Moerstedt"
+  ],
+  "substitution_events": [
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Shuto Machino",
+    "out": "Isac Lidberg",
+    "minute": "51"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Daiki Hashioka",
+    "out": "Florian Neuhaus",
+    "minute": "60"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Robin Hack",
+    "out": "Hugo Bolin",
+    "minute": "78"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Iaia Manco Danfa",
+    "out": "Fabio Chiarodia",
+    "minute": "78"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Mathieu Nguefack",
+    "out": "Zento Uno",
+    "minute": "79"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Adam Daghim",
+    "out": "Fisnik Asllani",
+    "minute": "69"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Andrej Kramarić",
+    "out": "Adam Hložek",
+    "minute": "78"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Ozan Kabak",
+    "out": "Tim Lemperle",
+    "minute": "78"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Sören Storks",
+  "attendance": 43712,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

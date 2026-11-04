@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "bundesliga-2026-27-2026-09-04-vfbstuttgart-1fckoln",
+ "date": "2026-09-04",
+ "home": "VfB Stuttgart",
+ "away": "1. FC Köln",
+ "score": "4-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881159",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881159"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Fabian Bredlow",
+   "Josha Vagnoman",
+   "Finn Jeltsch",
+   "Jeff Chabot",
+   "Maximilian Mittelstädt",
+   "Bilal El Khannouss",
+   "Grischa Prömel",
+   "Angelo Stiller",
+   "Chris Führich",
+   "Dženan Pejčinović",
+   "Deniz Undav"
+  ],
+  "home_bench": [
+   "Ermedin Demirović",
+   "Jamie Leweling",
+   "Ramon Hendriks",
+   "Leo Sauer",
+   "Yanik Spalt",
+   "Marius Funk",
+   "Ameen Al Dakhil",
+   "Leonidas Stergiou",
+   "Atakan Karazor"
+  ],
+  "away_starting_xi": [
+   "Marvin Schwäbe",
+   "Alessio Castro-Montes",
+   "Jahmai Simpson-Pusey",
+   "Luka Lochoshvili",
+   "Gideon Mensah",
+   "Ísak Jóhannesson",
+   "Tom Krauß",
+   "Paul Okon-Engstler",
+   "Jan Thielmann",
+   "Ragnar Ache",
+   "Linton Maina"
+  ],
+  "away_bench": [
+   "Ellyes Skhiri",
+   "Mikey Moore",
+   "Marius Bülter",
+   "Reigan Heskey",
+   "Imad Rondić",
+   "Ron-Robert Zieler",
+   "Joël Schmied",
+   "Rav van den Berg",
+   "Borna Sosa"
+  ],
+  "substitution_events": [
+   {
+    "team": "VfB Stuttgart",
+    "in": "Jamie Leweling",
+    "out": "Chris Führich",
+    "minute": "70"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Ermedin Demirović",
+    "out": "Deniz Undav",
+    "minute": "70"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Leo Sauer",
+    "out": "Bilal El Khannouss",
+    "minute": "78"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Ramon Hendriks",
+    "out": "Maximilian Mittelstädt",
+    "minute": "78"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Yanik Spalt",
+    "out": "Angelo Stiller",
+    "minute": "90"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Ellyes Skhiri",
+    "out": "Paul Okon-Engstler",
+    "minute": "46"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Mikey Moore",
+    "out": "Jan Thielmann",
+    "minute": "46"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Reigan Heskey",
+    "out": "Linton Maina",
+    "minute": "75"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Marius Bülter",
+    "out": "Ragnar Ache",
+    "minute": "75"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Imad Rondić",
+    "out": "Tom Krauß",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 1
+  },
+  "provider_score": "4-1",
+  "score_consistent_with_events": true,
+  "referee": "Christian Dingert",
+  "attendance": 60058,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

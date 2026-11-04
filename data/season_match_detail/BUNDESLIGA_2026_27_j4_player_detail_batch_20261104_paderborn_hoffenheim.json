@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "bundesliga-2026-27-2026-09-20-paderborn-hoffenheim",
+ "date": "2026-09-20",
+ "home": "Paderborn",
+ "away": "Hoffenheim",
+ "score": "3-1",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881175",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881175"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nahuel Noll",
+   "Jano ter Horst",
+   "Tjark Scheller",
+   "Mattes Hansen",
+   "Laurin Curda",
+   "Laurin Ulrich",
+   "Santiago Castañeda",
+   "Gabriel Vidović",
+   "Raphael Obermair",
+   "Marvin Pieringer",
+   "Stefano Marino"
+  ],
+  "home_bench": [
+   "Steffen Tigges",
+   "Jonah Sticker",
+   "Tom Baack",
+   "Rayan Philippe",
+   "Felix Götze",
+   "Markus Schubert",
+   "Ruben Müller",
+   "Sven Michel",
+   "Deniz Zeitler"
+  ],
+  "away_starting_xi": [
+   "Oliver Baumann",
+   "Vladimír Coufal",
+   "Ozan Kabak",
+   "Koki Machida",
+   "Mats Rots",
+   "Bambasé Conté",
+   "Leon Avdullahu",
+   "Wouter Burger",
+   "Adam Daghim",
+   "Adam Hložek",
+   "Max Moerstedt"
+  ],
+  "away_bench": [
+   "Albian Hajdari",
+   "Patrick Wimmer",
+   "Tim Lemperle",
+   "Andrej Kramarić",
+   "Fisnik Asllani",
+   "Luca Philipp",
+   "Robin Hranác",
+   "Nathan De Cat",
+   "Valentin Gendrey"
+  ],
+  "substitution_events": [
+   {
+    "team": "Paderborn",
+    "in": "Steffen Tigges",
+    "out": "Marvin Pieringer",
+    "minute": "46"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Jonah Sticker",
+    "out": "Raphael Obermair",
+    "minute": "63"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Rayan Philippe",
+    "out": "Stefano Marino",
+    "minute": "73"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Tom Baack",
+    "out": "Gabriel Vidović",
+    "minute": "73"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Felix Götze",
+    "out": "Mattes Hansen",
+    "minute": "75"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Albian Hajdari",
+    "out": "Mats Rots",
+    "minute": "46"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Tim Lemperle",
+    "out": "Max Moerstedt",
+    "minute": "62"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Patrick Wimmer",
+    "out": "Adam Hložek",
+    "minute": "62"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Andrej Kramarić",
+    "out": "Adam Daghim",
+    "minute": "80"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Fisnik Asllani",
+    "out": "Leon Avdullahu",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 1
+  },
+  "provider_score": "3-1",
+  "score_consistent_with_events": true,
+  "referee": "Daniel Schlager",
+  "attendance": 14224,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

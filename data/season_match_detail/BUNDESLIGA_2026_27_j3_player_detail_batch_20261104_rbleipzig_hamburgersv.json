@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "bundesliga-2026-27-2026-09-13-rbleipzig-hamburgersv",
+ "date": "2026-09-13",
+ "home": "RB Leipzig",
+ "away": "Hamburger SV",
+ "score": "5-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881168",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881168"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Maarten Vandevoordt",
+   "Benjamin Henrichs",
+   "Willi Orbán",
+   "Castello Lukeba",
+   "David Raum",
+   "Ezechiel Banzuzi",
+   "Neil El Aynaoui",
+   "Assan Ouédraogo",
+   "Brajan Gruda",
+   "Tidiam Gomis",
+   "Antonio Nusa"
+  ],
+  "home_bench": [
+   "Christopher Nkunku",
+   "Maxime Estève",
+   "Ridle Baku",
+   "Rômulo",
+   "Max Finkgräfe",
+   "Ørjan Håskjold Nyland",
+   "Andrija Maksimović",
+   "Nicolas Seiwald",
+   "Marc Guiu"
+  ],
+  "away_starting_xi": [
+   "Daniel Heuer Fernandes",
+   "Shafiq Nandja",
+   "Jordan Torunarigha",
+   "Nicolás Capaldo",
+   "Zakaria El Ouahdi",
+   "Albert Sambi Lokonga",
+   "Nicolai Remberg",
+   "David Møller Wolfe",
+   "Patson Daka",
+   "Albert Grønbæk",
+   "Yussuf Poulsen"
+  ],
+  "away_bench": [
+   "Terem Moffi",
+   "Fábio Vieira",
+   "Warmed Omari",
+   "Otto Stange",
+   "Bakery Jatta",
+   "Sander Tangvik",
+   "Bilal Nadir",
+   "Louis Lemke",
+   "Martin Adeline"
+  ],
+  "substitution_events": [
+   {
+    "team": "RB Leipzig",
+    "in": "Christopher Nkunku",
+    "out": "Assan Ouédraogo",
+    "minute": "35"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Maxime Estève",
+    "out": "Castello Lukeba",
+    "minute": "73"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Ridle Baku",
+    "out": "Benjamin Henrichs",
+    "minute": "74"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Rômulo",
+    "out": "Tidiam Gomis",
+    "minute": "74"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Max Finkgräfe",
+    "out": "Antonio Nusa",
+    "minute": "78"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Terem Moffi",
+    "out": "Yussuf Poulsen",
+    "minute": "46"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Fábio Vieira",
+    "out": "Patson Daka",
+    "minute": "72"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Warmed Omari",
+    "out": "Shafiq Nandja",
+    "minute": "73"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Otto Stange",
+    "out": "Albert Sambi Lokonga",
+    "minute": "78"
+   },
+   {
+    "team": "Hamburger SV",
+    "in": "Bakery Jatta",
+    "out": "Zakaria El Ouahdi",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 0
+  },
+  "provider_score": "5-0",
+  "score_consistent_with_events": true,
+  "referee": "Florian Badstübner",
+  "attendance": 47800,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

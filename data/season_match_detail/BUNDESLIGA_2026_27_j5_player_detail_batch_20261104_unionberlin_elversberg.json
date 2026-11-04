@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "bundesliga-2026-27-2026-10-10-unionberlin-elversberg",
+ "date": "2026-10-10",
+ "home": "Union Berlin",
+ "away": "Elversberg",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881187",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881187"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Frederik Rønnow",
+   "Janik Haberer",
+   "Zeno Van Den Bosch",
+   "Felix Uduokhai",
+   "Tom Rothe",
+   "Rani Khedira",
+   "András Schäfer",
+   "Woo-Yeong Jeong",
+   "Kastriot Imeri",
+   "Michel Aebischer",
+   "Tim Skarke"
+  ],
+  "home_bench": [
+   "Livan Burcu",
+   "Christopher Trimmel",
+   "Mekhi Gray",
+   "Oliver Burke",
+   "Aljoscha Kemlein",
+   "Matheo Raab",
+   "Leopold Querfeld",
+   "Derrick Köhn",
+   "Marin Ljubičić"
+  ],
+  "away_starting_xi": [
+   "Nicolas Kristof",
+   "Luca Sirch",
+   "Lukas Pinckert",
+   "Maximilian Rohr",
+   "Lasse Günther",
+   "Felix Keidel",
+   "Łukasz Poręba",
+   "Lukas Petkov",
+   "Noah Darvich",
+   "Tom Zimmerschied",
+   "Noel Futkeu"
+  ],
+  "away_bench": [
+   "Maurice Krattenmacher",
+   "Cole Campbell",
+   "David Mokwa",
+   "Nicholas Mickelson",
+   "Frederik Schmahl",
+   "Tim Boss",
+   "Florian Le Joncour",
+   "Amara Condé",
+   "Luca Schnellbacher"
+  ],
+  "substitution_events": [
+   {
+    "team": "Union Berlin",
+    "in": "Livan Burcu",
+    "out": "Kastriot Imeri",
+    "minute": "58"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Christopher Trimmel",
+    "out": "Michel Aebischer",
+    "minute": "77"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Mekhi Gray",
+    "out": "Woo-Yeong Jeong",
+    "minute": "78"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Oliver Burke",
+    "out": "Tim Skarke",
+    "minute": "78"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Aljoscha Kemlein",
+    "out": "András Schäfer",
+    "minute": "90"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Maurice Krattenmacher",
+    "out": "Tom Zimmerschied",
+    "minute": "59"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Cole Campbell",
+    "out": "Noel Futkeu",
+    "minute": "70"
+   },
+   {
+    "team": "Elversberg",
+    "in": "David Mokwa",
+    "out": "Noah Darvich",
+    "minute": "70"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Nicholas Mickelson",
+    "out": "Lasse Günther",
+    "minute": "71"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Frederik Schmahl",
+    "out": "Luca Sirch",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Tobias Reichel",
+  "attendance": 22012,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "bundesliga-2026-27-2026-09-11-unionberlin-schalke04",
+ "date": "2026-09-11",
+ "home": "Union Berlin",
+ "away": "Schalke 04",
+ "score": "1-3",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881169",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881169"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Frederik Rønnow",
+   "Josip Juranović",
+   "Leopold Querfeld",
+   "Felix Uduokhai",
+   "Tom Rothe",
+   "Michel Aebischer",
+   "Aljoscha Kemlein",
+   "Woo-Yeong Jeong",
+   "Rani Khedira",
+   "Livan Burcu",
+   "Emmanuel Latte Lath"
+  ],
+  "home_bench": [
+   "András Schäfer",
+   "Marin Ljubičić",
+   "Tim Skarke",
+   "Janik Haberer",
+   "Robert Skov",
+   "Matheo Raab",
+   "Zeno Van Den Bosch",
+   "Christopher Trimmel",
+   "Linus Guether"
+  ],
+  "away_starting_xi": [
+   "Loris Karius",
+   "Timo Becker",
+   "Nikola Katić",
+   "Hasan Kuruçay",
+   "Dejan Ljubičić",
+   "Soufian El-Faouzi",
+   "Satoshi Tanaka",
+   "Robin Gosens",
+   "Kenan Karaman",
+   "Adil Aouchiche",
+   "Chukwubuike Adamu"
+  ],
+  "away_bench": [
+   "Junior Dina Ebimbe",
+   "Maximilian Wöber",
+   "Edin Džeko",
+   "Hee-Chan Hwang",
+   "Janik Bachmann",
+   "Kevin Müller",
+   "Mertcan Ayhan",
+   "Luca Vozar",
+   "Vitalie Becker"
+  ],
+  "substitution_events": [
+   {
+    "team": "Union Berlin",
+    "in": "András Schäfer",
+    "out": "Aljoscha Kemlein",
+    "minute": "46"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Marin Ljubičić",
+    "out": "Livan Burcu",
+    "minute": "46"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Tim Skarke",
+    "out": "Emmanuel Latte Lath",
+    "minute": "76"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Janik Haberer",
+    "out": "Michel Aebischer",
+    "minute": "85"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Robert Skov",
+    "out": "Woo-Yeong Jeong",
+    "minute": "90"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Junior Dina Ebimbe",
+    "out": "Dejan Ljubičić",
+    "minute": "21"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Edin Džeko",
+    "out": "Kenan Karaman",
+    "minute": "80"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Hee-Chan Hwang",
+    "out": "Chukwubuike Adamu",
+    "minute": "80"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Maximilian Wöber",
+    "out": "Robin Gosens",
+    "minute": "80"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Janik Bachmann",
+    "out": "Adil Aouchiche",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "Timo Gerach",
+  "attendance": 20012,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

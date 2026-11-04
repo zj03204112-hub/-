@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "bundesliga-2026-27-2026-10-18-bayerleverkusen-freiburg",
+ "date": "2026-10-18",
+ "home": "Bayer Leverkusen",
+ "away": "Freiburg",
+ "score": "2-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881188",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881188"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mark Flekken",
+   "Jarell Quansah",
+   "Edmond Tapsoba",
+   "Facundo Medina",
+   "Miguel Gutiérrez",
+   "Aleix García",
+   "Equi Fernández",
+   "Moussa Diaby",
+   "Ibrahim Maza",
+   "Afonso Moreira",
+   "Patrik Schick"
+  ],
+  "home_bench": [
+   "Nathan Tella",
+   "Malik Tillman",
+   "Jonas Hofmann",
+   "Janis Blaswich",
+   "Loic Badé",
+   "Robert Andrich",
+   "Tim Oermann",
+   "Lucas Vázquez",
+   "Victor Okoh Boniface"
+  ],
+  "away_starting_xi": [
+   "Mio Backhaus",
+   "Philipp Treu",
+   "Matthias Ginter",
+   "Philipp Lienhart",
+   "Jordy Makengo",
+   "Maximilian Eggestein",
+   "Yannik Engelhardt",
+   "Jan-Niklas Beste",
+   "Keisuke Goto",
+   "Derry Scherhant",
+   "Igor Matanović"
+  ],
+  "away_bench": [
+   "Lukas Kübler",
+   "Lucas Höler",
+   "Patrick Osterhage",
+   "Cyriaque Irié",
+   "Vincenzo Grifo",
+   "Florian Müller",
+   "Christian Günter",
+   "Max Rosenfelder",
+   "Rihito Yamamoto"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Nathan Tella",
+    "out": "Afonso Moreira",
+    "minute": "59"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Malik Tillman",
+    "out": "Moussa Diaby",
+    "minute": "73"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Jonas Hofmann",
+    "out": "Ibrahim Maza",
+    "minute": "84"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Lukas Kübler",
+    "out": "Philipp Treu",
+    "minute": "64"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Lucas Höler",
+    "out": "Keisuke Goto",
+    "minute": "64"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Cyriaque Irié",
+    "out": "Jan-Niklas Beste",
+    "minute": "77"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Patrick Osterhage",
+    "out": "Yannik Engelhardt",
+    "minute": "77"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Vincenzo Grifo",
+    "out": "Derry Scherhant",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Florian Badstübner",
+  "attendance": 30210,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

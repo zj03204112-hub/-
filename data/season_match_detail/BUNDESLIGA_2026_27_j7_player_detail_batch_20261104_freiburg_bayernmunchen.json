@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "bundesliga-2026-27-2026-10-25-freiburg-bayernmunchen",
+ "date": "2026-10-25",
+ "home": "Freiburg",
+ "away": "Bayern München",
+ "score": "1-3",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5881200",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881200"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mio Backhaus",
+   "Philipp Treu",
+   "Matthias Ginter",
+   "Philipp Lienhart",
+   "Jordy Makengo",
+   "Maximilian Eggestein",
+   "Patrick Osterhage",
+   "Jan-Niklas Beste",
+   "Yuito Suzuki",
+   "Derry Scherhant",
+   "Lucas Höler"
+  ],
+  "home_bench": [
+   "Igor Matanović",
+   "Rihito Yamamoto",
+   "Cyriaque Irié",
+   "Max Rosenfelder",
+   "Vincenzo Grifo",
+   "Florian Müller",
+   "Christian Günter",
+   "Lukas Kübler",
+   "Keisuke Goto"
+  ],
+  "away_starting_xi": [
+   "Jonas Urbig",
+   "Josip Stanišić",
+   "Dayot Upamecano",
+   "Jonathan Tah",
+   "Nathaniel Brown",
+   "Konrad Laimer",
+   "Tom Bischof",
+   "Michael Olise",
+   "Lennart Karl",
+   "Serge Gnabry",
+   "Harry Kane"
+  ],
+  "away_bench": [
+   "Sacha Boey",
+   "Ismael Saibari",
+   "Alphonso Davies",
+   "Hiroki Ito",
+   "Jannis Bärtl",
+   "Sven Ulreich",
+   "Cassiano Kiala",
+   "David Santos Daiber",
+   "Tim Binder"
+  ],
+  "substitution_events": [
+   {
+    "team": "Freiburg",
+    "in": "Igor Matanović",
+    "out": "Lucas Höler",
+    "minute": "57"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Rihito Yamamoto",
+    "out": "Patrick Osterhage",
+    "minute": "58"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Cyriaque Irié",
+    "out": "Jan-Niklas Beste",
+    "minute": "64"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Vincenzo Grifo",
+    "out": "Derry Scherhant",
+    "minute": "77"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Max Rosenfelder",
+    "out": "Philipp Lienhart",
+    "minute": "77"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Ismael Saibari",
+    "out": "Serge Gnabry",
+    "minute": "61"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Sacha Boey",
+    "out": "Josip Stanišić",
+    "minute": "61"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Alphonso Davies",
+    "out": "Nathaniel Brown",
+    "minute": "74"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Hiroki Ito",
+    "out": "Lennart Karl",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "Felix Zwayer",
+  "attendance": 34700,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "bundesliga-2026-27-2026-08-29-mainz05-paderborn",
+ "date": "2026-08-29",
+ "home": "Mainz 05",
+ "away": "Paderborn",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881149",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881149"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Robin Zentner",
+   "Danny da Costa",
+   "Fabio Gruber",
+   "Dominik Kohr",
+   "Anthony Caci",
+   "Kaishu Sano",
+   "Phillipp Mwene",
+   "Jae-Sung Lee",
+   "Nadiem Amiri",
+   "Sheraldo Becker",
+   "Phillip Tietz"
+  ],
+  "home_bench": [
+   "Otto Ruoppi",
+   "Ransford Königsdörffer",
+   "Silvan Widmer",
+   "Kacper Potulski",
+   "Alexander Schwolow",
+   "Rael Nakuzola",
+   "Stefan Posch",
+   "Lennard Maloney",
+   "Sota Kawasaki"
+  ],
+  "away_starting_xi": [
+   "Nahuel Noll",
+   "Jano ter Horst",
+   "Tjark Scheller",
+   "Mattes Hansen",
+   "Laurin Curda",
+   "Laurin Ulrich",
+   "Santiago Castañeda",
+   "Raphael Obermair",
+   "Stefano Marino",
+   "Marvin Pieringer",
+   "Gabriel Vidović"
+  ],
+  "away_bench": [
+   "Steffen Tigges",
+   "Jonah Sticker",
+   "Tom Baack",
+   "Clemens Lippmann",
+   "Markus Schubert",
+   "Niklas Mohr",
+   "Luka Djuric",
+   "Deniz Zeitler",
+   "Oliver Batista Meier"
+  ],
+  "substitution_events": [
+   {
+    "team": "Mainz 05",
+    "in": "Ransford Königsdörffer",
+    "out": "Jae-Sung Lee",
+    "minute": "68"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Otto Ruoppi",
+    "out": "Sheraldo Becker",
+    "minute": "68"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Silvan Widmer",
+    "out": "Anthony Caci",
+    "minute": "73"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Kacper Potulski",
+    "out": "Dominik Kohr",
+    "minute": "80"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Steffen Tigges",
+    "out": "Stefano Marino",
+    "minute": "67"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Jonah Sticker",
+    "out": "Mattes Hansen",
+    "minute": "75"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Tom Baack",
+    "out": "Laurin Ulrich",
+    "minute": "75"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Clemens Lippmann",
+    "out": "Marvin Pieringer",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Tobias Stieler",
+  "attendance": 33305,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

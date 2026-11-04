@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "bundesliga-2026-27-2026-09-12-mainz05-eintrachtfrankfurt",
+ "date": "2026-09-12",
+ "home": "Mainz 05",
+ "away": "Eintracht Frankfurt",
+ "score": "1-3",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5881167",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881167"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Robin Zentner",
+   "Stefan Posch",
+   "Fabio Gruber",
+   "Kacper Potulski",
+   "Kaishu Sano",
+   "Anthony Caci",
+   "Jae-Sung Lee",
+   "Nadiem Amiri",
+   "Phillipp Mwene",
+   "Sheraldo Becker",
+   "Phillip Tietz"
+  ],
+  "home_bench": [
+   "Ransford Königsdörffer",
+   "Danny da Costa",
+   "Rael Nakuzola",
+   "Benedict Hollerbach",
+   "Otto Ruoppi",
+   "Alexander Schwolow",
+   "Stefan Bell",
+   "Lennard Maloney",
+   "Sota Kawasaki"
+  ],
+  "away_starting_xi": [
+   "Noah Atubolu",
+   "Jeremiaha Maluze",
+   "Robin Koch",
+   "Lilian Brassier",
+   "Elias Baum",
+   "Noël Aséko",
+   "Raphael Onyedika",
+   "Keita Kosugi",
+   "Ritsu Doan",
+   "Can Uzun",
+   "Jonathan Burkardt"
+  ],
+  "away_bench": [
+   "Mario Götze",
+   "Younes Ebnoutalib",
+   "Timothy Chandler",
+   "Ayoube Amaimouni-Echghouyab",
+   "Kauã",
+   "Nnamdi Collins",
+   "Otávio",
+   "Love Arrhov",
+   "Malik Pimpong"
+  ],
+  "substitution_events": [
+   {
+    "team": "Mainz 05",
+    "in": "Ransford Königsdörffer",
+    "out": "Jae-Sung Lee",
+    "minute": "46"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Danny da Costa",
+    "out": "Anthony Caci",
+    "minute": "62"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Rael Nakuzola",
+    "out": "Phillipp Mwene",
+    "minute": "74"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Benedict Hollerbach",
+    "out": "Sheraldo Becker",
+    "minute": "74"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Otto Ruoppi",
+    "out": "Nadiem Amiri",
+    "minute": "85"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Mario Götze",
+    "out": "Noël Aséko",
+    "minute": "59"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Younes Ebnoutalib",
+    "out": "Jonathan Burkardt",
+    "minute": "74"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Ayoube Amaimouni-Echghouyab",
+    "out": "Can Uzun",
+    "minute": "87"
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "in": "Timothy Chandler",
+    "out": "Elias Baum",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "Felix Zwayer",
+  "attendance": 33305,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

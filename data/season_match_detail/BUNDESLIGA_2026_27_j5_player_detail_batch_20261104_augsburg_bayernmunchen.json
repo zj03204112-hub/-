@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "bundesliga-2026-27-2026-10-10-augsburg-bayernmunchen",
+ "date": "2026-10-10",
+ "home": "Augsburg",
+ "away": "Bayern München",
+ "score": "2-2",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881179",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881179"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Finn Dahmen",
+   "Juma Bah",
+   "Chrislain Matsima",
+   "Calvin Brackelmann",
+   "Young-Woo Seol",
+   "Han-Noah Massengo",
+   "Fabian Rieder",
+   "Hennes Behrens",
+   "Robin Fellhauer",
+   "Arijon Ibrahimović",
+   "Rodrigo Ribeiro"
+  ],
+  "home_bench": [
+   "Anton Kade",
+   "Mert Kömür",
+   "Michael Gregoritsch",
+   "Jeffrey Gouweleeuw",
+   "Nediljko Labrović",
+   "Sima Suso",
+   "Tim Schnitzer",
+   "Yannik Keitel",
+   "Uchenna Ogundu"
+  ],
+  "away_starting_xi": [
+   "Manuel Neuer",
+   "Josip Stanišić",
+   "Dayot Upamecano",
+   "Jonathan Tah",
+   "Alphonso Davies",
+   "Joshua Kimmich",
+   "Aleksandar Pavlović",
+   "Michael Olise",
+   "Ismael Saibari",
+   "Luis Díaz",
+   "Harry Kane"
+  ],
+  "away_bench": [
+   "Nathaniel Brown",
+   "Serge Gnabry",
+   "Tom Bischof",
+   "Lennart Karl",
+   "Jonas Urbig",
+   "Hiroki Ito",
+   "Min-Jae Kim",
+   "Sacha Boey",
+   "Bara Ndiaye"
+  ],
+  "substitution_events": [
+   {
+    "team": "Augsburg",
+    "in": "Anton Kade",
+    "out": "Young-Woo Seol",
+    "minute": "62"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Mert Kömür",
+    "out": "Rodrigo Ribeiro",
+    "minute": "75"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Michael Gregoritsch",
+    "out": "Arijon Ibrahimović",
+    "minute": "81"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Jeffrey Gouweleeuw",
+    "out": "Juma Bah",
+    "minute": "82"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Nathaniel Brown",
+    "out": "Josip Stanišić",
+    "minute": "67"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Serge Gnabry",
+    "out": "Ismael Saibari",
+    "minute": "67"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Tom Bischof",
+    "out": "Aleksandar Pavlović",
+    "minute": "87"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Lennart Karl",
+    "out": "Luis Díaz",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Sven Jablonski",
+  "attendance": 30660,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "bundesliga-2026-27-2026-10-31-borussiamonchengladbach-paderborn",
+ "date": "2026-10-31",
+ "home": "Borussia Mönchengladbach",
+ "away": "Paderborn",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881209",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881209"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Daniel Batz",
+   "Daiki Hashioka",
+   "Philipp Sander",
+   "Fabio Chiarodia",
+   "Joseph Scally",
+   "Zento Uno",
+   "Florian Neuhaus",
+   "Lukas Ullrich",
+   "Robin Hack",
+   "Wael Mohya",
+   "Shuto Machino"
+  ],
+  "home_bench": [
+   "Isac Lidberg",
+   "Ko Itakura",
+   "Jens Castrop",
+   "Nicolas-Gerrit Kühn",
+   "Jan Olschowsky",
+   "David Herold",
+   "Yukhym Konoplya",
+   "Kevin Stöger",
+   "Mathieu Nguefack"
+  ],
+  "away_starting_xi": [
+   "Nahuel Noll",
+   "Jano ter Horst",
+   "Tjark Scheller",
+   "Mattes Hansen",
+   "Santiago Castañeda",
+   "Laurin Curda",
+   "Tom Baack",
+   "Gabriel Vidović",
+   "Raphael Obermair",
+   "Marvin Pieringer",
+   "Stefano Marino"
+  ],
+  "away_bench": [
+   "Steffen Tigges",
+   "Felix Götze",
+   "Laurin Ulrich",
+   "Rayan Philippe",
+   "Markus Schubert",
+   "Clemens Lippmann",
+   "Jonah Sticker",
+   "Ruben Müller",
+   "Deniz Zeitler"
+  ],
+  "substitution_events": [
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Isac Lidberg",
+    "out": "Shuto Machino",
+    "minute": "69"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Nicolas-Gerrit Kühn",
+    "out": "Robin Hack",
+    "minute": "77"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Ko Itakura",
+    "out": "Florian Neuhaus",
+    "minute": "77"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Jens Castrop",
+    "out": "Wael Mohya",
+    "minute": "77"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Steffen Tigges",
+    "out": "Marvin Pieringer",
+    "minute": "52"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Felix Götze",
+    "out": "Jano ter Horst",
+    "minute": "68"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Laurin Ulrich",
+    "out": "Tom Baack",
+    "minute": "68"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Rayan Philippe",
+    "out": "Stefano Marino",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Timo Gerach",
+  "attendance": 51581,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

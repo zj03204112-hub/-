@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "bundesliga-2026-27-2026-08-29-rbleipzig-borussiamonchengladbach",
+ "date": "2026-08-29",
+ "home": "RB Leipzig",
+ "away": "Borussia Mönchengladbach",
+ "score": "3-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881150",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881150"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Maarten Vandevoordt",
+   "Ridle Baku",
+   "Willi Orbán",
+   "Castello Lukeba",
+   "David Raum",
+   "Rocco Reitz",
+   "Nicolas Seiwald",
+   "Ezechiel Banzuzi",
+   "Brajan Gruda",
+   "Tidiam Gomis",
+   "Antonio Nusa"
+  ],
+  "home_bench": [
+   "Christopher Nkunku",
+   "Benjamin Henrichs",
+   "Johan Bakayoko",
+   "Arthur Vermeeren",
+   "Conrad Harder",
+   "Leopold Zingerle",
+   "Max Finkgräfe",
+   "Maxime Estève",
+   "Andrija Maksimovic"
+  ],
+  "away_starting_xi": [
+   "Moritz Nicolas",
+   "Daiki Hashioka",
+   "Ko Itakura",
+   "Kevin Diks",
+   "Lukas Ullrich",
+   "Kevin Stöger",
+   "Philipp Sander",
+   "Robin Hack",
+   "Hugo Bolin",
+   "Wael Mohya",
+   "Tim Kleindienst"
+  ],
+  "away_bench": [
+   "David Herold",
+   "Mathieu Nguefack",
+   "Franck Honorat",
+   "Isac Lidberg",
+   "Joseph Scally",
+   "Daniel Batz",
+   "Jan Leszczynski",
+   "Enzo Leopold",
+   "Shuto Machino"
+  ],
+  "substitution_events": [
+   {
+    "team": "RB Leipzig",
+    "in": "Christopher Nkunku",
+    "out": "Tidiam Gomis",
+    "minute": "65"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Johan Bakayoko",
+    "out": "Brajan Gruda",
+    "minute": "73"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Benjamin Henrichs",
+    "out": "Ridle Baku",
+    "minute": "73"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Arthur Vermeeren",
+    "out": "Rocco Reitz",
+    "minute": "83"
+   },
+   {
+    "team": "RB Leipzig",
+    "in": "Conrad Harder",
+    "out": "Ezechiel Banzuzi",
+    "minute": "83"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Isac Lidberg",
+    "out": "Robin Hack",
+    "minute": "64"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Franck Honorat",
+    "out": "Wael Mohya",
+    "minute": "64"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "David Herold",
+    "out": "Lukas Ullrich",
+    "minute": "64"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Mathieu Nguefack",
+    "out": "Kevin Stöger",
+    "minute": "64"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Joseph Scally",
+    "out": "Daiki Hashioka",
+    "minute": "75"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 0
+  },
+  "provider_score": "3-0",
+  "score_consistent_with_events": true,
+  "referee": "Sven Jablonski",
+  "attendance": 47800,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

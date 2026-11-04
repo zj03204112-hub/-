@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "bundesliga-2026-27-2026-10-24-augsburg-unionberlin",
+ "date": "2026-10-24",
+ "home": "Augsburg",
+ "away": "Union Berlin",
+ "score": "1-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881197",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881197"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Finn Dahmen",
+   "Juma Bah",
+   "Chrislain Matsima",
+   "Calvin Brackelmann",
+   "Marius Wolf",
+   "Han-Noah Massengo",
+   "Fabian Rieder",
+   "Hennes Behrens",
+   "Anton Kade",
+   "Arijon Ibrahimović",
+   "Michael Gregoritsch"
+  ],
+  "home_bench": [
+   "Jeffrey Gouweleeuw",
+   "Mert Kömür",
+   "Robin Fellhauer",
+   "Rodrigo Ribeiro",
+   "Uchenna Ogundu",
+   "Nediljko Labrović",
+   "Young-Woo Seol",
+   "Tim Schnitzer",
+   "Yannik Keitel"
+  ],
+  "away_starting_xi": [
+   "Frederik Rønnow",
+   "Janik Haberer",
+   "Zeno Van Den Bosch",
+   "Felix Uduokhai",
+   "Tom Rothe",
+   "András Schäfer",
+   "Rani Khedira",
+   "Woo-Yeong Jeong",
+   "Michel Aebischer",
+   "Livan Burcu",
+   "Tim Skarke"
+  ],
+  "away_bench": [
+   "Leopold Querfeld",
+   "Mekhi Gray",
+   "Oliver Burke",
+   "Aljoscha Kemlein",
+   "Matheo Raab",
+   "Christopher Trimmel",
+   "Derrick Köhn",
+   "Emmanuel Latte Lath",
+   "Marin Ljubičić"
+  ],
+  "substitution_events": [
+   {
+    "team": "Augsburg",
+    "in": "Jeffrey Gouweleeuw",
+    "out": "Calvin Brackelmann",
+    "minute": "12"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Robin Fellhauer",
+    "out": "Marius Wolf",
+    "minute": "72"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Mert Kömür",
+    "out": "Arijon Ibrahimović",
+    "minute": "72"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Rodrigo Ribeiro",
+    "out": "Anton Kade",
+    "minute": "89"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Uchenna Ogundu",
+    "out": "Han-Noah Massengo",
+    "minute": "89"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Leopold Querfeld",
+    "out": "Livan Burcu",
+    "minute": "25"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Mekhi Gray",
+    "out": "Tim Skarke",
+    "minute": "46"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Oliver Burke",
+    "out": "Woo-Yeong Jeong",
+    "minute": "76"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Aljoscha Kemlein",
+    "out": "Michel Aebischer",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Robin Braun",
+  "attendance": 30051,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

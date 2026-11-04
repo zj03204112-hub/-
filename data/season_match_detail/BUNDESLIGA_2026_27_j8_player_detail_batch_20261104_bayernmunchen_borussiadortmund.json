@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "bundesliga-2026-27-2026-10-31-bayernmunchen-borussiadortmund",
+ "date": "2026-10-31",
+ "home": "Bayern München",
+ "away": "Borussia Dortmund",
+ "score": "2-2",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881208",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881208"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jonas Urbig",
+   "Konrad Laimer",
+   "Dayot Upamecano",
+   "Min-Jae Kim",
+   "Alphonso Davies",
+   "Joshua Kimmich",
+   "Aleksandar Pavlović",
+   "Michael Olise",
+   "Ismael Saibari",
+   "Serge Gnabry",
+   "Harry Kane"
+  ],
+  "home_bench": [
+   "Nathaniel Brown",
+   "Josip Stanišić",
+   "Lennart Karl",
+   "Sven Ulreich",
+   "Hiroki Ito",
+   "Jonathan Tah",
+   "Sacha Boey",
+   "Tom Bischof",
+   "Tim Binder"
+  ],
+  "away_starting_xi": [
+   "Gregor Kobel",
+   "Joane Gadou",
+   "Waldemar Anton",
+   "Nico Schlotterbeck",
+   "Maximilian Beier",
+   "Joey Veerman",
+   "Felix Nmecha",
+   "Daniel Svensson",
+   "Jobe Bellingham",
+   "Carney Chukwuemeka",
+   "Serhou Guirassy"
+  ],
+  "away_bench": [
+   "Marcel Sabitzer",
+   "Konstantinos Karetsas",
+   "Fábio Silva",
+   "Julian Ryerson",
+   "Samuele Inácio",
+   "Alexander Meyer",
+   "Filippo Mane",
+   "Ramy Bensebaini",
+   "Ethan Nwaneri"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bayern München",
+    "in": "Nathaniel Brown",
+    "out": "Ismael Saibari",
+    "minute": "29"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Josip Stanišić",
+    "out": "Serge Gnabry",
+    "minute": "31"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Lennart Karl",
+    "out": "Michael Olise",
+    "minute": "84"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Konstantinos Karetsas",
+    "out": "Maximilian Beier",
+    "minute": "67"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Marcel Sabitzer",
+    "out": "Carney Chukwuemeka",
+    "minute": "67"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Fábio Silva",
+    "out": "Felix Nmecha",
+    "minute": "76"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Samuele Inácio",
+    "out": "Jobe Bellingham",
+    "minute": "87"
+   },
+   {
+    "team": "Borussia Dortmund",
+    "in": "Julian Ryerson",
+    "out": "Joane Gadou",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Tobias Stieler",
+  "attendance": 75000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

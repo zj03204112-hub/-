@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "bundesliga-2026-27-2026-08-29-elversberg-bayerleverkusen",
+ "date": "2026-08-29",
+ "home": "Elversberg",
+ "away": "Bayer Leverkusen",
+ "score": "3-2",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881146",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881146"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nicolas Kristof",
+   "Jan Gyamerah",
+   "Lukas Pinckert",
+   "Maximilian Rohr",
+   "Lasse Günther",
+   "Felix Keidel",
+   "Lukasz Poreba",
+   "Lukas Petkov",
+   "Francis Onyeka",
+   "Cole Campbell",
+   "David Mokwa"
+  ],
+  "home_bench": [
+   "Maurice Krattenmacher",
+   "Noah Darvich",
+   "Luca Sirch",
+   "Luca Schnellbacher",
+   "Florian Le Joncour",
+   "Tim Boss",
+   "Nicholas Mickelson",
+   "Amara Condé",
+   "Noel Futkeu"
+  ],
+  "away_starting_xi": [
+   "Mark Flekken",
+   "Lucas Vázquez",
+   "Loic Badé",
+   "Edmond Tapsoba",
+   "Miguel Gutiérrez",
+   "Equi Fernández",
+   "Aleix García",
+   "Ibrahim Maza",
+   "Malik Tillman",
+   "Afonso Moreira",
+   "Patrik Schick"
+  ],
+  "away_bench": [
+   "Facundo Medina",
+   "Jarell Quansah",
+   "Christian Kofane",
+   "Jonas Hofmann",
+   "Victor Okoh Boniface",
+   "Janis Blaswich",
+   "Jeanuël Belocian",
+   "Robert Andrich",
+   "Arthur"
+  ],
+  "substitution_events": [
+   {
+    "team": "Elversberg",
+    "in": "Noah Darvich",
+    "out": "Francis Onyeka",
+    "minute": "65"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Maurice Krattenmacher",
+    "out": "Cole Campbell",
+    "minute": "65"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Luca Schnellbacher",
+    "out": "David Mokwa",
+    "minute": "75"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Luca Sirch",
+    "out": "Jan Gyamerah",
+    "minute": "75"
+   },
+   {
+    "team": "Elversberg",
+    "in": "Florian Le Joncour",
+    "out": "Maximilian Rohr",
+    "minute": "82"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Jarell Quansah",
+    "out": "Loic Badé",
+    "minute": "55"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Facundo Medina",
+    "out": "Equi Fernández",
+    "minute": "55"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Christian Kofane",
+    "out": "Lucas Vázquez",
+    "minute": "55"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Jonas Hofmann",
+    "out": "Malik Tillman",
+    "minute": "65"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Victor Okoh Boniface",
+    "out": "Afonso Moreira",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Robert Hartmann",
+  "attendance": 9307,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

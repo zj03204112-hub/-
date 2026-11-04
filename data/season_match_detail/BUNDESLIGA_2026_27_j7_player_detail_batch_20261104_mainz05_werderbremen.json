@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "bundesliga-2026-27-2026-10-24-mainz05-werderbremen",
+ "date": "2026-10-24",
+ "home": "Mainz 05",
+ "away": "Werder Bremen",
+ "score": "2-3",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5881202",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881202"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alexander Schwolow",
+   "Danny da Costa",
+   "Stefan Posch",
+   "Kacper Potulski",
+   "Anthony Caci",
+   "Jae-Sung Lee",
+   "Kaishu Sano",
+   "Nadiem Amiri",
+   "Phillipp Mwene",
+   "Sheraldo Becker",
+   "Phillip Tietz"
+  ],
+  "home_bench": [
+   "Silvan Widmer",
+   "Ransford Königsdörffer",
+   "Paul Nebel",
+   "Benedict Hollerbach",
+   "Eric Martel",
+   "Maximilian Kinzig",
+   "Fabio Gruber",
+   "Lennard Maloney",
+   "Rael Nakuzola"
+  ],
+  "away_starting_xi": [
+   "Karl Hein",
+   "Arthur",
+   "Amos Pieper",
+   "Marco Friedl",
+   "Olivier Deman",
+   "Ludovit Reis",
+   "Youri Regeer",
+   "Mitchell Weiser",
+   "Chuki",
+   "Marco Grüll",
+   "Niclas Füllkrug"
+  ],
+  "away_bench": [
+   "Mick Schmetgens",
+   "Oskar Wójcik",
+   "Eren Dinkçi",
+   "Cedric Itten",
+   "Alexander Schlager",
+   "Dariusz Stalmach",
+   "Senne Lynen",
+   "Kenny Quetant",
+   "Paul Erevbenagie"
+  ],
+  "substitution_events": [
+   {
+    "team": "Mainz 05",
+    "in": "Silvan Widmer",
+    "out": "Anthony Caci",
+    "minute": "75"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Ransford Königsdörffer",
+    "out": "Jae-Sung Lee",
+    "minute": "75"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Paul Nebel",
+    "out": "Sheraldo Becker",
+    "minute": "85"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Benedict Hollerbach",
+    "out": "Danny da Costa",
+    "minute": "85"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Eric Martel",
+    "out": "Kaishu Sano",
+    "minute": "90"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Mick Schmetgens",
+    "out": "Olivier Deman",
+    "minute": "46"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Oskar Wójcik",
+    "out": "Mitchell Weiser",
+    "minute": "59"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Eren Dinkçi",
+    "out": "Chuki",
+    "minute": "72"
+   },
+   {
+    "team": "Werder Bremen",
+    "in": "Cedric Itten",
+    "out": "Niclas Füllkrug",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "Florian Badstübner",
+  "attendance": 33305,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

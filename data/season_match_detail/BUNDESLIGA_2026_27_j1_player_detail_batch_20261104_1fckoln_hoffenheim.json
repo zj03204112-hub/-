@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "bundesliga-2026-27-2026-08-29-1fckoln-hoffenheim",
+ "date": "2026-08-29",
+ "home": "1. FC Köln",
+ "away": "Hoffenheim",
+ "score": "3-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881147",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881147"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Marvin Schwäbe",
+   "Alessio Castro-Montes",
+   "Jahmai Simpson-Pusey",
+   "Luka Lochoshvili",
+   "Gideon Mensah",
+   "Ísak Jóhannesson",
+   "Tom Krauß",
+   "Paul Okon-Engstler",
+   "Jan Thielmann",
+   "Ragnar Ache",
+   "Saïd El Mala"
+  ],
+  "home_bench": [
+   "Ellyes Skhiri",
+   "Linton Maina",
+   "Thijs Dallinga",
+   "Marius Bülter",
+   "Joël Schmied",
+   "Ron-Robert Zieler",
+   "Jonathan Friemel",
+   "Rav van den Berg",
+   "Reigan Heskey"
+  ],
+  "away_starting_xi": [
+   "Oliver Baumann",
+   "Vladimír Coufal",
+   "Ozan Kabak",
+   "Albian Hajdari",
+   "Bernardo",
+   "Patrick Wimmer",
+   "Wouter Burger",
+   "Leon Avdullahu",
+   "Adam Daghim",
+   "Adam Hlozek",
+   "Bambasé Conté"
+  ],
+  "away_bench": [
+   "Robin Hranác",
+   "Max Moerstedt",
+   "Nathan De Cat",
+   "Mats Rots",
+   "Andrej Kramaric",
+   "Luca Philipp",
+   "Natnael Abraha",
+   "Cajetan Lenz",
+   "Valentin Gendrey"
+  ],
+  "substitution_events": [
+   {
+    "team": "1. FC Köln",
+    "in": "Linton Maina",
+    "out": "Saïd El Mala",
+    "minute": "65"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Ellyes Skhiri",
+    "out": "Paul Okon-Engstler",
+    "minute": "65"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Thijs Dallinga",
+    "out": "Ragnar Ache",
+    "minute": "65"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Marius Bülter",
+    "out": "Tom Krauß",
+    "minute": "90"
+   },
+   {
+    "team": "1. FC Köln",
+    "in": "Joël Schmied",
+    "out": "Alessio Castro-Montes",
+    "minute": "90"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Robin Hranác",
+    "out": "Bernardo",
+    "minute": "53"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Max Moerstedt",
+    "out": "Adam Hlozek",
+    "minute": "53"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Nathan De Cat",
+    "out": "Patrick Wimmer",
+    "minute": "71"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Andrej Kramaric",
+    "out": "Adam Daghim",
+    "minute": "87"
+   },
+   {
+    "team": "Hoffenheim",
+    "in": "Mats Rots",
+    "out": "Albian Hajdari",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Florian Badstübner",
+  "attendance": 49700,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

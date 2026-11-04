@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "bundesliga-2026-27-2026-10-23-vfbstuttgart-borussiamonchengladbach",
+ "date": "2026-10-23",
+ "home": "VfB Stuttgart",
+ "away": "Borussia Mönchengladbach",
+ "score": "2-3",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881205",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881205"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dennis Seimen",
+   "Lorenz Assignon",
+   "Finn Jeltsch",
+   "Ramon Hendriks",
+   "Maximilian Mittelstädt",
+   "Atakan Karazor",
+   "Angelo Stiller",
+   "Leo Sauer",
+   "Ermedin Demirović",
+   "Chris Führich",
+   "Dženan Pejčinović"
+  ],
+  "home_bench": [
+   "Bilal El Khannouss",
+   "Deniz Undav",
+   "Jamie Leweling",
+   "Grischa Prömel",
+   "Jeff Chabot",
+   "Fabian Bredlow",
+   "Ameen Al Dakhil",
+   "Leonidas Stergiou",
+   "Yanik Spalt"
+  ],
+  "away_starting_xi": [
+   "Moritz Nicolas",
+   "Daiki Hashioka",
+   "Philipp Sander",
+   "Fabio Chiarodia",
+   "Joseph Scally",
+   "Zento Uno",
+   "Florian Neuhaus",
+   "Lukas Ullrich",
+   "Hugo Bolin",
+   "Wael Mohya",
+   "Shuto Machino"
+  ],
+  "away_bench": [
+   "Yukhym Konoplya",
+   "Robin Hack",
+   "David Herold",
+   "Lion Schweers",
+   "Mathieu Nguefack",
+   "Daniel Batz",
+   "Josiah Uwakhonye",
+   "Kevin Stöger",
+   "Iaia Manco Danfa"
+  ],
+  "substitution_events": [
+   {
+    "team": "VfB Stuttgart",
+    "in": "Jamie Leweling",
+    "out": "Leo Sauer",
+    "minute": "55"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Bilal El Khannouss",
+    "out": "Lorenz Assignon",
+    "minute": "55"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Deniz Undav",
+    "out": "Dženan Pejčinović",
+    "minute": "55"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Grischa Prömel",
+    "out": "Atakan Karazor",
+    "minute": "64"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Jeff Chabot",
+    "out": "Finn Jeltsch",
+    "minute": "90"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Yukhym Konoplya",
+    "out": "Joseph Scally",
+    "minute": "70"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Robin Hack",
+    "out": "Wael Mohya",
+    "minute": "70"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "David Herold",
+    "out": "Fabio Chiarodia",
+    "minute": "76"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Lion Schweers",
+    "out": "Shuto Machino",
+    "minute": "84"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Mathieu Nguefack",
+    "out": "Hugo Bolin",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "Dr. Matthias Jöllenbeck",
+  "attendance": 60000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

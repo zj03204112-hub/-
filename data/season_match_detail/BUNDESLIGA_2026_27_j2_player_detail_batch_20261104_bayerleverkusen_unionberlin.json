@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "bundesliga-2026-27-2026-09-05-bayerleverkusen-unionberlin",
+ "date": "2026-09-05",
+ "home": "Bayer Leverkusen",
+ "away": "Union Berlin",
+ "score": "4-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881152",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881152"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mark Flekken",
+   "Jarell Quansah",
+   "Edmond Tapsoba",
+   "Facundo Medina",
+   "Miguel Gutiérrez",
+   "Aleix García",
+   "Equi Fernández",
+   "Afonso Moreira",
+   "Malik Tillman",
+   "Ibrahim Maza",
+   "Patrik Schick"
+  ],
+  "home_bench": [
+   "Christian Kofane",
+   "Moussa Diaby",
+   "Loic Badé",
+   "Robert Andrich",
+   "Lucas Vázquez",
+   "Janis Blaswich",
+   "Tim Oermann",
+   "Jonas Hofmann",
+   "Victor Okoh Boniface"
+  ],
+  "away_starting_xi": [
+   "Frederik Rønnow",
+   "Josip Juranović",
+   "Zeno Van Den Bosch",
+   "Felix Uduokhai",
+   "Tom Rothe",
+   "Aljoscha Kemlein",
+   "Michel Aebischer",
+   "Livan Burcu",
+   "Rani Khedira",
+   "Marin Ljubičić",
+   "Emmanuel Latte Lath"
+  ],
+  "away_bench": [
+   "Janik Haberer",
+   "Woo-Yeong Jeong",
+   "Tim Skarke",
+   "Christopher Trimmel",
+   "András Schäfer",
+   "Matheo Raab",
+   "Leopold Querfeld",
+   "Robert Skov",
+   "Derrick Köhn"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Christian Kofane",
+    "out": "Patrik Schick",
+    "minute": "67"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Moussa Diaby",
+    "out": "Malik Tillman",
+    "minute": "67"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Robert Andrich",
+    "out": "Equi Fernández",
+    "minute": "70"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Loic Badé",
+    "out": "Facundo Medina",
+    "minute": "70"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Lucas Vázquez",
+    "out": "Miguel Gutiérrez",
+    "minute": "83"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Tim Skarke",
+    "out": "Emmanuel Latte Lath",
+    "minute": "63"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Woo-Yeong Jeong",
+    "out": "Michel Aebischer",
+    "minute": "63"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Janik Haberer",
+    "out": "Aljoscha Kemlein",
+    "minute": "63"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "Christopher Trimmel",
+    "out": "Josip Juranović",
+    "minute": "74"
+   },
+   {
+    "team": "Union Berlin",
+    "in": "András Schäfer",
+    "out": "Livan Burcu",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 0
+  },
+  "provider_score": "4-0",
+  "score_consistent_with_events": true,
+  "referee": "Robin Braun",
+  "attendance": 29629,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

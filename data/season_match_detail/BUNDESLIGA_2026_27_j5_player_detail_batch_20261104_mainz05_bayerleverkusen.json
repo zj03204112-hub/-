@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "bundesliga-2026-27-2026-10-10-mainz05-bayerleverkusen",
+ "date": "2026-10-10",
+ "home": "Mainz 05",
+ "away": "Bayer Leverkusen",
+ "score": "3-4",
+ "halftime_score": "2-2",
+ "official_match_url": "https://www.fotmob.com/matches/5881184",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881184"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alexander Schwolow",
+   "Stefan Posch",
+   "Fabio Gruber",
+   "Kacper Potulski",
+   "Anthony Caci",
+   "Eric Martel",
+   "Kaishu Sano",
+   "Nadiem Amiri",
+   "Phillipp Mwene",
+   "Phillip Tietz",
+   "Sheraldo Becker"
+  ],
+  "home_bench": [
+   "Danny da Costa",
+   "Jae-Sung Lee",
+   "Ransford Königsdörffer",
+   "Benedict Hollerbach",
+   "Lennard Maloney",
+   "Maximilian Kinzig",
+   "Rael Nakuzola",
+   "Stefan Bell",
+   "Sota Kawasaki"
+  ],
+  "away_starting_xi": [
+   "Mark Flekken",
+   "Jarell Quansah",
+   "Edmond Tapsoba",
+   "Facundo Medina",
+   "Miguel Gutiérrez",
+   "Robert Andrich",
+   "Aleix García",
+   "Moussa Diaby",
+   "Ibrahim Maza",
+   "Afonso Moreira",
+   "Patrik Schick"
+  ],
+  "away_bench": [
+   "Martin Terrier",
+   "Malik Tillman",
+   "Nathan Tella",
+   "Equi Fernández",
+   "Jonas Hofmann",
+   "Janis Blaswich",
+   "Loic Badé",
+   "Lucas Vázquez",
+   "Victor Okoh Boniface"
+  ],
+  "substitution_events": [
+   {
+    "team": "Mainz 05",
+    "in": "Jae-Sung Lee",
+    "out": "Eric Martel",
+    "minute": "70"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Danny da Costa",
+    "out": "Anthony Caci",
+    "minute": "70"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Ransford Königsdörffer",
+    "out": "Kacper Potulski",
+    "minute": "70"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Benedict Hollerbach",
+    "out": "Sheraldo Becker",
+    "minute": "78"
+   },
+   {
+    "team": "Mainz 05",
+    "in": "Lennard Maloney",
+    "out": "Kaishu Sano",
+    "minute": "81"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Martin Terrier",
+    "out": "Ibrahim Maza",
+    "minute": "66"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Malik Tillman",
+    "out": "Moussa Diaby",
+    "minute": "75"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Nathan Tella",
+    "out": "Afonso Moreira",
+    "minute": "75"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Jonas Hofmann",
+    "out": "Patrik Schick",
+    "minute": "84"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Equi Fernández",
+    "out": "Aleix García",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 4
+  },
+  "provider_score": "3-4",
+  "score_consistent_with_events": true,
+  "referee": "Max Burda",
+  "attendance": 33000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

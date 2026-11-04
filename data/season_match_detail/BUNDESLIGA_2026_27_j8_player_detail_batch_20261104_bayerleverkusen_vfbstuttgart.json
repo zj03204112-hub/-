@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "bundesliga-2026-27-2026-10-31-bayerleverkusen-vfbstuttgart",
+ "date": "2026-10-31",
+ "home": "Bayer Leverkusen",
+ "away": "VfB Stuttgart",
+ "score": "2-4",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5881207",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881207"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mark Flekken",
+   "Jarell Quansah",
+   "Edmond Tapsoba",
+   "Facundo Medina",
+   "Miguel Gutiérrez",
+   "Equi Fernández",
+   "Aleix García",
+   "Lucas Vázquez",
+   "Ibrahim Maza",
+   "Afonso Moreira",
+   "Patrik Schick"
+  ],
+  "home_bench": [
+   "Jonas Hofmann",
+   "Robert Andrich",
+   "Malik Tillman",
+   "Victor Okoh Boniface",
+   "Janis Blaswich",
+   "Tim Oermann",
+   "Kenan Doganay",
+   "Montrell Culbreath",
+   "Dustin Buck"
+  ],
+  "away_starting_xi": [
+   "Dennis Seimen",
+   "Jamie Leweling",
+   "Luca Jaquez",
+   "Jeff Chabot",
+   "Ramon Hendriks",
+   "Atakan Karazor",
+   "Grischa Prömel",
+   "Bilal El Khannouss",
+   "Deniz Undav",
+   "Chris Führich",
+   "Ermedin Demirović"
+  ],
+  "away_bench": [
+   "Finn Jeltsch",
+   "Maximilian Mittelstädt",
+   "Nikolas Nartey",
+   "Ameen Al Dakhil",
+   "Dženan Pejčinović",
+   "Fabian Bredlow",
+   "Lorenz Assignon",
+   "Yanik Spalt",
+   "Tiago Tomás"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Jonas Hofmann",
+    "out": "Lucas Vázquez",
+    "minute": "62"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Robert Andrich",
+    "out": "Equi Fernández",
+    "minute": "75"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Malik Tillman",
+    "out": "Afonso Moreira",
+    "minute": "75"
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "in": "Victor Okoh Boniface",
+    "out": "Aleix García",
+    "minute": "83"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Maximilian Mittelstädt",
+    "out": "Chris Führich",
+    "minute": "65"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Finn Jeltsch",
+    "out": "Luca Jaquez",
+    "minute": "65"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Nikolas Nartey",
+    "out": "Deniz Undav",
+    "minute": "72"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Dženan Pejčinović",
+    "out": "Bilal El Khannouss",
+    "minute": "85"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Ameen Al Dakhil",
+    "out": "Jamie Leweling",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 4
+  },
+  "provider_score": "2-4",
+  "score_consistent_with_events": true,
+  "referee": "Benjamin Brand",
+  "attendance": 30210,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

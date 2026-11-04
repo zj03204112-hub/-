@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "bundesliga-2026-27-2026-10-10-paderborn-vfbstuttgart",
+ "date": "2026-10-10",
+ "home": "Paderborn",
+ "away": "VfB Stuttgart",
+ "score": "0-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5881185",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881185"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nahuel Noll",
+   "Jano ter Horst",
+   "Tjark Scheller",
+   "Mattes Hansen",
+   "Laurin Curda",
+   "Laurin Ulrich",
+   "Santiago Castañeda",
+   "Gabriel Vidović",
+   "Raphael Obermair",
+   "Marvin Pieringer",
+   "Stefano Marino"
+  ],
+  "home_bench": [
+   "Rayan Philippe",
+   "Steffen Tigges",
+   "Oliver Batista Meier",
+   "Felix Götze",
+   "Jonah Sticker",
+   "Markus Schubert",
+   "Ruben Müller",
+   "Sven Michel",
+   "Tom Baack"
+  ],
+  "away_starting_xi": [
+   "Dennis Seimen",
+   "Ramon Hendriks",
+   "Jeff Chabot",
+   "Maximilian Mittelstädt",
+   "Josha Vagnoman",
+   "Atakan Karazor",
+   "Angelo Stiller",
+   "Chris Führich",
+   "Jamie Leweling",
+   "Deniz Undav",
+   "Ermedin Demirović"
+  ],
+  "away_bench": [
+   "Finn Jeltsch",
+   "Bilal El Khannouss",
+   "Dženan Pejčinović",
+   "Grischa Prömel",
+   "Leo Sauer",
+   "Fabian Bredlow",
+   "Leonidas Stergiou",
+   "Lorenz Assignon",
+   "Yanik Spalt"
+  ],
+  "substitution_events": [
+   {
+    "team": "Paderborn",
+    "in": "Steffen Tigges",
+    "out": "Stefano Marino",
+    "minute": "70"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Rayan Philippe",
+    "out": "Marvin Pieringer",
+    "minute": "70"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Oliver Batista Meier",
+    "out": "Laurin Ulrich",
+    "minute": "80"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Jonah Sticker",
+    "out": "Tjark Scheller",
+    "minute": "85"
+   },
+   {
+    "team": "Paderborn",
+    "in": "Felix Götze",
+    "out": "Mattes Hansen",
+    "minute": "85"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Finn Jeltsch",
+    "out": "Jeff Chabot",
+    "minute": "71"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Dženan Pejčinović",
+    "out": "Ermedin Demirović",
+    "minute": "77"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Bilal El Khannouss",
+    "out": "Jamie Leweling",
+    "minute": "77"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Grischa Prömel",
+    "out": "Deniz Undav",
+    "minute": "85"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Leo Sauer",
+    "out": "Chris Führich",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Felix Zwayer",
+  "attendance": 15000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

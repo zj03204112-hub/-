@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "bundesliga-2026-27-2026-09-12-freiburg-borussiamonchengladbach",
+ "date": "2026-09-12",
+ "home": "Freiburg",
+ "away": "Borussia Mönchengladbach",
+ "score": "5-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881165",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881165"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mio Backhaus",
+   "Philipp Treu",
+   "Matthias Ginter",
+   "Philipp Lienhart",
+   "Jordy Makengo",
+   "Maximilian Eggestein",
+   "Yannik Engelhardt",
+   "Jan-Niklas Beste",
+   "Yuito Suzuki",
+   "Derry Scherhant",
+   "Igor Matanović"
+  ],
+  "home_bench": [
+   "Vincenzo Grifo",
+   "Keisuke Goto",
+   "Lucas Höler",
+   "Lukas Kübler",
+   "Cyriaque Irié",
+   "Florian Müller",
+   "Berkay Yılmaz",
+   "Christian Günter",
+   "Max Rosenfelder"
+  ],
+  "away_starting_xi": [
+   "Moritz Nicolas",
+   "Joseph Scally",
+   "Ko Itakura",
+   "Kevin Diks",
+   "David Herold",
+   "Philipp Sander",
+   "Kevin Stöger",
+   "Franck Honorat",
+   "Hugo Bolin",
+   "Robin Hack",
+   "Tim Kleindienst"
+  ],
+  "away_bench": [
+   "Shuto Machino",
+   "Wael Mohya",
+   "Isac Lidberg",
+   "Mathieu Nguefack",
+   "Daniel Batz",
+   "Fabio Chiarodia",
+   "Jan Leszczyński",
+   "Lukas Ullrich",
+   "Florian Neuhaus"
+  ],
+  "substitution_events": [
+   {
+    "team": "Freiburg",
+    "in": "Vincenzo Grifo",
+    "out": "Derry Scherhant",
+    "minute": "67"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Lucas Höler",
+    "out": "Igor Matanović",
+    "minute": "78"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Keisuke Goto",
+    "out": "Yuito Suzuki",
+    "minute": "78"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Lukas Kübler",
+    "out": "Philipp Treu",
+    "minute": "82"
+   },
+   {
+    "team": "Freiburg",
+    "in": "Cyriaque Irié",
+    "out": "Jan-Niklas Beste",
+    "minute": "82"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Shuto Machino",
+    "out": "Hugo Bolin",
+    "minute": "46"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Wael Mohya",
+    "out": "Robin Hack",
+    "minute": "67"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Isac Lidberg",
+    "out": "Franck Honorat",
+    "minute": "67"
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "in": "Mathieu Nguefack",
+    "out": "Kevin Stöger",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 0
+  },
+  "provider_score": "5-0",
+  "score_consistent_with_events": true,
+  "referee": "Richard Hempel",
+  "attendance": 34700,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

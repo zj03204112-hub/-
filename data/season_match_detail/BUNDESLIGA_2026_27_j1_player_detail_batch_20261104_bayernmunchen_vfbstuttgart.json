@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "bundesliga-2026-27-2026-08-28-bayernmunchen-vfbstuttgart",
+ "date": "2026-08-28",
+ "home": "Bayern München",
+ "away": "VfB Stuttgart",
+ "score": "5-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881143",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881143"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Manuel Neuer",
+   "Konrad Laimer",
+   "Dayot Upamecano",
+   "Min-Jae Kim",
+   "Alphonso Davies",
+   "Joshua Kimmich",
+   "Aleksandar Pavlovic",
+   "Michael Olise",
+   "Nathaniel Brown",
+   "Luis Díaz",
+   "Harry Kane"
+  ],
+  "home_bench": [
+   "Ismael Saibari",
+   "Josip Stanisic",
+   "Jonathan Tah",
+   "Tom Bischof",
+   "Lennart Karl",
+   "Jonas Urbig",
+   "Hiroki Ito",
+   "Arijon Ibrahimovic",
+   "Bara Ndiaye"
+  ],
+  "away_starting_xi": [
+   "Fabian Bredlow",
+   "Finn Jeltsch",
+   "Jeff Chabot",
+   "Ramon Hendriks",
+   "Josha Vagnoman",
+   "Grischa Prömel",
+   "Angelo Stiller",
+   "Maximilian Mittelstädt",
+   "Dzenan Pejcinovic",
+   "Deniz Undav",
+   "Tiago Tomás"
+  ],
+  "away_bench": [
+   "Ermedin Demirovic",
+   "Jamie Leweling",
+   "Leonidas Stergiou",
+   "Bilal El Khannouss",
+   "Chema Andrés",
+   "Marius Funk",
+   "Ameen Al Dakhil",
+   "Atakan Karazor",
+   "Badredine Bouanani"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bayern München",
+    "in": "Ismael Saibari",
+    "out": "Nathaniel Brown",
+    "minute": "61"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Josip Stanisic",
+    "out": "Alphonso Davies",
+    "minute": "74"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Jonathan Tah",
+    "out": "Min-Jae Kim",
+    "minute": "84"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Lennart Karl",
+    "out": "Harry Kane",
+    "minute": "84"
+   },
+   {
+    "team": "Bayern München",
+    "in": "Tom Bischof",
+    "out": "Aleksandar Pavlovic",
+    "minute": "84"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Ermedin Demirovic",
+    "out": "Dzenan Pejcinovic",
+    "minute": "62"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Jamie Leweling",
+    "out": "Tiago Tomás",
+    "minute": "62"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Bilal El Khannouss",
+    "out": "Deniz Undav",
+    "minute": "74"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Leonidas Stergiou",
+    "out": "Jeff Chabot",
+    "minute": "74"
+   },
+   {
+    "team": "VfB Stuttgart",
+    "in": "Chema Andrés",
+    "out": "Angelo Stiller",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 1
+  },
+  "provider_score": "5-1",
+  "score_consistent_with_events": true,
+  "referee": "Sören Storks",
+  "attendance": 75000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

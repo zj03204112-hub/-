@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Bundesliga",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "bundesliga-2026-27-2026-08-30-augsburg-schalke04",
+ "date": "2026-08-30",
+ "home": "Augsburg",
+ "away": "Schalke 04",
+ "score": "3-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5881144",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5881144"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Finn Dahmen",
+   "Noahkai Banks",
+   "Chrislain Matsima",
+   "Calvin Brackelmann",
+   "Marius Wolf",
+   "Han-Noah Massengo",
+   "Fabian Rieder",
+   "Hennes Behrens",
+   "Anton Kade",
+   "Robin Fellhauer",
+   "Michael Gregoritsch"
+  ],
+  "home_bench": [
+   "Mert Kömür",
+   "Yannik Keitel",
+   "Rodrigo Ribeiro",
+   "Jeffrey Gouweleeuw",
+   "Young-Woo Seol",
+   "Nediljko Labrović",
+   "Tim Schnitzer",
+   "Nathanaël Mbuku",
+   "Uchenna Ogundu"
+  ],
+  "away_starting_xi": [
+   "Loris Karius",
+   "Timo Becker",
+   "Nikola Katić",
+   "Hasan Kuruçay",
+   "Dejan Ljubičić",
+   "Soufian El-Faouzi",
+   "Ron Schallenberg",
+   "Vitalie Becker",
+   "Chukwubuike Adamu",
+   "Adil Aouchiche",
+   "Moussa Sylla"
+  ],
+  "away_bench": [
+   "Maximilian Wöber",
+   "Robin Gosens",
+   "Junior Dina Ebimbe",
+   "Edin Džeko",
+   "Mertcan Ayhan",
+   "Kevin Müller",
+   "Janik Bachmann",
+   "Luca Vozar",
+   "Satoshi Tanaka"
+  ],
+  "substitution_events": [
+   {
+    "team": "Augsburg",
+    "in": "Mert Kömür",
+    "out": "Robin Fellhauer",
+    "minute": "76"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Rodrigo Ribeiro",
+    "out": "Michael Gregoritsch",
+    "minute": "83"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Yannik Keitel",
+    "out": "Fabian Rieder",
+    "minute": "83"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Jeffrey Gouweleeuw",
+    "out": "Calvin Brackelmann",
+    "minute": "90"
+   },
+   {
+    "team": "Augsburg",
+    "in": "Young-Woo Seol",
+    "out": "Marius Wolf",
+    "minute": "90"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Maximilian Wöber",
+    "out": "Hasan Kuruçay",
+    "minute": "62"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Junior Dina Ebimbe",
+    "out": "Chukwubuike Adamu",
+    "minute": "62"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Robin Gosens",
+    "out": "Vitalie Becker",
+    "minute": "62"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Edin Džeko",
+    "out": "Nikola Katić",
+    "minute": "76"
+   },
+   {
+    "team": "Schalke 04",
+    "in": "Mertcan Ayhan",
+    "out": "Adil Aouchiche",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 0
+  },
+  "provider_score": "3-0",
+  "score_consistent_with_events": true,
+  "referee": "Sascha Stegemann",
+  "attendance": 30660,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/BUNDESLIGA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/BUNDESLIGA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}
