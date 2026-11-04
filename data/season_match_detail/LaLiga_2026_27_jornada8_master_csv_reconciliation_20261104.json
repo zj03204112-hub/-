@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-11-04",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 8,
+  "audit_scope": "Reconcile normalized master CSV directly against actual fixture keys, rather than relying on earlier partial audit summaries.",
+  "source_of_fixture_list": "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-8",
+  "official_result_crosscheck": "LaLiga official results page lists nine completed fixtures and Rayo Vallecano-Athletic Club rescheduled to 2026-12-09.",
+  "master_csv_snapshot": {
+    "players_csv": "data/season_match_detail/LaLiga_2026_27_players.csv",
+    "players_blob_sha": "a7626f406efcb911f47457891a53a21a12fb8525",
+    "player_rows_for_matchday8_dates": 273,
+    "fixtures_with_player_rows": 6,
+    "substitutions_csv": "data/season_match_detail/LaLiga_2026_27_substitutions.csv",
+    "substitutions_blob_sha": "63bb7550acf5eca5ab57ba81d2f9da0f7f9e6c1a",
+    "fixture_counts": [
+      {
+        "match": "Malaga-Espanyol",
+        "player_rows": 46,
+        "home_starters": 11,
+        "away_starters": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitution_rows": 10
+      },
+      {
+        "match": "Alaves-Atletico",
+        "player_rows": 46,
+        "home_starters": 11,
+        "away_starters": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitution_rows": 10
+      },
+      {
+        "match": "Barcelona-Getafe",
+        "player_rows": 44,
+        "home_starters": 11,
+        "away_starters": 11,
+        "home_bench": 12,
+        "away_bench": 10,
+        "substitution_rows": 10
+      },
+      {
+        "match": "RealMadrid-Villarreal",
+        "player_rows": 45,
+        "home_starters": 11,
+        "away_starters": 11,
+        "home_bench": 11,
+        "away_bench": 12,
+        "substitution_rows": 9
+      },
+      {
+        "match": "Elche-Celta",
+        "player_rows": 46,
+        "home_starters": 11,
+        "away_starters": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitution_rows": 9
+      },
+      {
+        "match": "RealSociedad-Deportivo",
+        "player_rows": 46,
+        "home_starters": 11,
+        "away_starters": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitution_rows": 0
+      }
+    ],
+    "player_rows_added_this_audit": 0,
+    "substitution_rows_added_this_audit": 0
+  },
+  "findings": [
+    "Earlier Jornada 8 partial-audit notes stating zero master CSV rows were stale or inaccurate: six fixture keys already exist in the current players CSV.",
+    "Five of the six fixture keys have substitution rows in the current substitution CSV.",
+    "Real Sociedad-Deportivo has 46 player rows but zero substitution rows; this is a high-priority event completeness gap and must not be treated as complete.",
+    "The three other completed Jornada 8 fixtures (Betis-Osasuna, Racing-Valencia, Levante-Sevilla) were not found in the inspected master CSV fixture keys.",
+    "Rayo-Athletic is postponed/rescheduled to 2026-12-09 and must remain outside completed-match appearance and substitution records until played."
+  ],
+  "certification": "Structural presence only. This report does not certify all names, bench identities, appearance status, or minute accuracy. Official match-page cross-check remains required.",
+  "next_actions": [
+    "Audit the five existing substitution event sets against official event timelines.",
+    "Recover and audit all substitution events for Real Sociedad-Deportivo.",
+    "Collect complete player and substitution records for Betis-Osasuna, Racing-Valencia, Levante-Sevilla.",
+    "Cross-check official starting XIs, full bench lists, appearance statuses and event minutes before marking each match complete."
+  ],
+  "sources": [
+    "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-8",
+    "https://www.laliga.com/en-ES/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-getafe-cf-8",
+    "https://rfef.es/es/resultados?competition=33836084&group=33836085&journey=8"
+  ]
+}
