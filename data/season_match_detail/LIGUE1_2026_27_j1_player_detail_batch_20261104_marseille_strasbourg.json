@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "ligue1-2026-27-2026-08-21-marseille-strasbourg",
+ "date": "2026-08-21",
+ "home": "Marseille",
+ "away": "Strasbourg",
+ "score": "4-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802905",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802905"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jeffrey De Lange",
+   "Timothy Weah",
+   "CJ Egan-Riley",
+   "Geoffrey Kondogbia",
+   "Emerson",
+   "Himad Abdelli",
+   "Pierre-Emile Højbjerg",
+   "Angel Gomes",
+   "Amine Harit",
+   "Amine Gouiri",
+   "Igor Paixão"
+  ],
+  "home_bench": [
+   "Nayef Aguerd",
+   "Derek Cornelius",
+   "Tochukwu Nnadi",
+   "Keyliane Abdallah",
+   "Neal Maupay",
+   "Théo Vermot",
+   "Kelyann Bezahaf",
+   "Ulisses Garcia",
+   "Tadjidine Mmadi"
+  ],
+  "away_starting_xi": [
+   "Filip Jörgensen",
+   "Guéla Doué",
+   "Andrew Omobamidele",
+   "Lucas Høgsberg",
+   "Genesis Antwi",
+   "Diogo Sousa",
+   "Samir El Mourabet",
+   "Samuel Amo-Ameyaw",
+   "Sebastian Nanasi",
+   "Gessime Yassine",
+   "Sékou Mara"
+  ],
+  "away_bench": [
+   "Giovanni Reyna",
+   "Pape Demba Diop",
+   "Jacobo Ortega",
+   "Mateo Del Blanco",
+   "Fabio Baldé",
+   "Miłosz Piekutowski",
+   "Jeyland Mitchell",
+   "Mathis Amougou",
+   "Ghianny Kodia Ladji"
+  ],
+  "substitution_events": [
+   {
+    "team": "Marseille",
+    "in": "Nayef Aguerd",
+    "out": "CJ Egan-Riley",
+    "minute": "75"
+   },
+   {
+    "team": "Marseille",
+    "in": "Derek Cornelius",
+    "out": "Geoffrey Kondogbia",
+    "minute": "83"
+   },
+   {
+    "team": "Marseille",
+    "in": "Tochukwu Nnadi",
+    "out": "Himad Abdelli",
+    "minute": "83"
+   },
+   {
+    "team": "Marseille",
+    "in": "Keyliane Abdallah",
+    "out": "Amine Harit",
+    "minute": "83"
+   },
+   {
+    "team": "Marseille",
+    "in": "Neal Maupay",
+    "out": "Angel Gomes",
+    "minute": "90"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Pape Demba Diop",
+    "out": "Diogo Sousa",
+    "minute": "69"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Giovanni Reyna",
+    "out": "Samuel Amo-Ameyaw",
+    "minute": "69"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Jacobo Ortega",
+    "out": "Sékou Mara",
+    "minute": "69"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Mateo Del Blanco",
+    "out": "Genesis Antwi",
+    "minute": "79"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Fabio Baldé",
+    "out": "Sebastian Nanasi",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 0
+  },
+  "provider_score": "4-0",
+  "score_consistent_with_events": true,
+  "referee": "Ruddy Buquet",
+  "attendance": 65089,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

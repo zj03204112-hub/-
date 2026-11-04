@@ -1,0 +1,129 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "ligue1-2026-27-2026-10-18-lorient-monaco",
+ "date": "2026-10-18",
+ "home": "Lorient",
+ "away": "Monaco",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802959",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802959"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Yvon Mvogo",
+   "Nathaniel Adjei",
+   "Montassar Talbi",
+   "Souleymane Touré",
+   "Dembo Sylla",
+   "Noah Cadiou",
+   "Arthur Avom",
+   "Arsène Kouassi",
+   "Jean-Victor Makengo",
+   "Ibrahima Baldé",
+   "Gabin Bernardeau"
+  ],
+  "home_bench": [
+   "Mamadou Koné",
+   "Souleymane Faye",
+   "Bingourou Kamara",
+   "Alec Georgen",
+   "Nosa Edward Obaretin",
+   "Srdjan Kuzmić",
+   "Panos Katseris",
+   "Théo Le Bris",
+   "Aiyegun Tosin"
+  ],
+  "away_starting_xi": [
+   "Lukás Hrádecky",
+   "Vanderson",
+   "Sadibou Sané",
+   "Mohammed Salisu",
+   "Flávio Nazinho",
+   "Lamine Camara",
+   "Denis Zakaria",
+   "Takumi Minamino",
+   "Aleksandr Golovin",
+   "Ansu Fati",
+   "Matthis Abline"
+  ],
+  "away_bench": [
+   "Edan Diop",
+   "Christian Mawissa",
+   "Folarin Balogun",
+   "Mathys Detourbet",
+   "Mika Biereth",
+   "Philipp Köhn",
+   "Jordan Teze",
+   "Mamadou Coulibaly",
+   "Pape Cabral"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lorient",
+    "in": "Mamadou Koné",
+    "out": "Ibrahima Baldé",
+    "minute": "71"
+   },
+   {
+    "team": "Lorient",
+    "in": "Souleymane Faye",
+    "out": "Gabin Bernardeau",
+    "minute": "79"
+   },
+   {
+    "team": "Monaco",
+    "in": "Edan Diop",
+    "out": "Takumi Minamino",
+    "minute": "52"
+   },
+   {
+    "team": "Monaco",
+    "in": "Folarin Balogun",
+    "out": "Ansu Fati",
+    "minute": "66"
+   },
+   {
+    "team": "Monaco",
+    "in": "Mathys Detourbet",
+    "out": "Denis Zakaria",
+    "minute": "66"
+   },
+   {
+    "team": "Monaco",
+    "in": "Christian Mawissa",
+    "out": "Mohammed Salisu",
+    "minute": "66"
+   },
+   {
+    "team": "Monaco",
+    "in": "Mika Biereth",
+    "out": "Matthis Abline",
+    "minute": "75"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Marc Bollengier",
+  "attendance": 15626,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

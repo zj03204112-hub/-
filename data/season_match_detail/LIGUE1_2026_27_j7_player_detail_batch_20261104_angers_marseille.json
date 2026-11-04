@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "ligue1-2026-27-2026-10-18-angers-marseille",
+ "date": "2026-10-18",
+ "home": "Angers",
+ "away": "Marseille",
+ "score": "2-5",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5802955",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802955"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Anthony Lopes",
+   "Carlens Arcus",
+   "Emmanuel Biumla",
+   "Mael Gernigon",
+   "Lilian Rao-Lisoa",
+   "Yassin Belkhdim",
+   "Branco van den Boomen",
+   "Jim Allevinah",
+   "Louis Mouton",
+   "Amine Sbaï",
+   "Amine El Ouazzani"
+  ],
+  "home_bench": [
+   "Prosper Peter",
+   "Joseph Kalulu",
+   "Harouna Djibirin",
+   "Anthony Bermont",
+   "Bane Diatta",
+   "Oumar Pona",
+   "Marius Louër",
+   "Jules Bouffandeau",
+   "Usman Simbakoli"
+  ],
+  "away_starting_xi": [
+   "Jeffrey De Lange",
+   "Timothy Weah",
+   "CJ Egan-Riley",
+   "Geoffrey Kondogbia",
+   "Emerson",
+   "Tochukwu Nnadi",
+   "Nouhoum Kamissoko",
+   "Amine Harit",
+   "Himad Abdelli",
+   "Igor Paixão",
+   "Amine Gouiri"
+  ],
+  "away_bench": [
+   "Nayef Aguerd",
+   "Angel Gomes",
+   "Keyliane Abdallah",
+   "Ulisses Garcia",
+   "Neal Maupay",
+   "Théo Vermot",
+   "Bamo Meité",
+   "Kelyann Bezahaf",
+   "Tadjidine Mmadi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Angers",
+    "in": "Prosper Peter",
+    "out": "Louis Mouton",
+    "minute": "57"
+   },
+   {
+    "team": "Angers",
+    "in": "Joseph Kalulu",
+    "out": "Emmanuel Biumla",
+    "minute": "72"
+   },
+   {
+    "team": "Angers",
+    "in": "Harouna Djibirin",
+    "out": "Jim Allevinah",
+    "minute": "72"
+   },
+   {
+    "team": "Angers",
+    "in": "Bane Diatta",
+    "out": "Amine El Ouazzani",
+    "minute": "89"
+   },
+   {
+    "team": "Angers",
+    "in": "Anthony Bermont",
+    "out": "Amine Sbaï",
+    "minute": "89"
+   },
+   {
+    "team": "Marseille",
+    "in": "Nayef Aguerd",
+    "out": "Geoffrey Kondogbia",
+    "minute": "60"
+   },
+   {
+    "team": "Marseille",
+    "in": "Keyliane Abdallah",
+    "out": "Himad Abdelli",
+    "minute": "80"
+   },
+   {
+    "team": "Marseille",
+    "in": "Angel Gomes",
+    "out": "Nouhoum Kamissoko",
+    "minute": "80"
+   },
+   {
+    "team": "Marseille",
+    "in": "Ulisses Garcia",
+    "out": "Amine Harit",
+    "minute": "90"
+   },
+   {
+    "team": "Marseille",
+    "in": "Neal Maupay",
+    "out": "Tochukwu Nnadi",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 5
+  },
+  "provider_score": "2-5",
+  "score_consistent_with_events": true,
+  "referee": "Jérémie Pignard",
+  "attendance": 10553,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

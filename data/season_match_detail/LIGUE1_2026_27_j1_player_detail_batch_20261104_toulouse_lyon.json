@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "ligue1-2026-27-2026-08-22-toulouse-lyon",
+ "date": "2026-08-22",
+ "home": "Toulouse",
+ "away": "Lyon",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802908",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802908"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Guillaume Restes",
+   "Ismaïl Diallo",
+   "Mark McKenzie",
+   "Rasmus Nicolaisen",
+   "Christ Tapé",
+   "Cristian Cásseres",
+   "Niklas Schmidt",
+   "Julián Vignolo",
+   "Thomas Jørgensen",
+   "Yann Gboho",
+   "Santiago Hidalgo"
+  ],
+  "home_bench": [
+   "Rafik Messali",
+   "Ilyas Azizi",
+   "Jacen Russell-Rowe",
+   "Sion Oppong",
+   "Mathis Saka",
+   "Mathys Niflore",
+   "David Odogu",
+   "Seny Koumbassa",
+   "Mário Sauer"
+  ],
+  "away_starting_xi": [
+   "Rémy Descamps",
+   "Zachary Athekame",
+   "Felix Bacher",
+   "Clinton Mata",
+   "Mohamed Ouédraogo",
+   "Mads Bidstrup",
+   "Mathys de Carvalho",
+   "Noah Nartey",
+   "Kaïl Boudache",
+   "Rémi Himbert",
+   "Julien Duranville"
+  ],
+  "away_bench": [
+   "Malick Fofana",
+   "Pavel Sulc",
+   "Corentin Tolisso",
+   "Tyler Morton",
+   "Tanner Tessmann",
+   "Dominik Greif",
+   "Nicolás Tagliafico",
+   "Ernest Nuamah",
+   "Loïs Openda"
+  ],
+  "substitution_events": [
+   {
+    "team": "Toulouse",
+    "in": "Ilyas Azizi",
+    "out": "Julián Vignolo",
+    "minute": "71"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Rafik Messali",
+    "out": "Ismaïl Diallo",
+    "minute": "71"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Jacen Russell-Rowe",
+    "out": "Santiago Hidalgo",
+    "minute": "71"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Sion Oppong",
+    "out": "Yann Gboho",
+    "minute": "80"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Mathis Saka",
+    "out": "Niklas Schmidt",
+    "minute": "86"
+   },
+   {
+    "team": "Lyon",
+    "in": "Malick Fofana",
+    "out": "Julien Duranville",
+    "minute": "63"
+   },
+   {
+    "team": "Lyon",
+    "in": "Pavel Sulc",
+    "out": "Rémi Himbert",
+    "minute": "63"
+   },
+   {
+    "team": "Lyon",
+    "in": "Corentin Tolisso",
+    "out": "Mathys de Carvalho",
+    "minute": "69"
+   },
+   {
+    "team": "Lyon",
+    "in": "Tyler Morton",
+    "out": "Noah Nartey",
+    "minute": "69"
+   },
+   {
+    "team": "Lyon",
+    "in": "Tanner Tessmann",
+    "out": "Mads Bidstrup",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Guillaume Paradis",
+  "attendance": 25837,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

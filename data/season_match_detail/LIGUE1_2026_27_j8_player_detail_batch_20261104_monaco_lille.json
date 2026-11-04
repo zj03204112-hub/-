@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "ligue1-2026-27-2026-10-25-monaco-lille",
+ "date": "2026-10-25",
+ "home": "Monaco",
+ "away": "Lille",
+ "score": "1-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802969",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802969"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lukás Hrádecky",
+   "Vanderson",
+   "Sadibou Sané",
+   "Jordan Teze",
+   "Flávio Nazinho",
+   "Lamine Camara",
+   "Denis Zakaria",
+   "Mamadou Coulibaly",
+   "Aleksandr Golovin",
+   "Ansu Fati",
+   "Paris Brunner"
+  ],
+  "home_bench": [
+   "Mathys Detourbet",
+   "Edan Diop",
+   "Matthis Abline",
+   "Folarin Balogun",
+   "Philipp Köhn",
+   "Christian Mawissa",
+   "Ilane Touré",
+   "Mohammed Salisu",
+   "Takumi Minamino"
+  ],
+  "away_starting_xi": [
+   "Berke Özer",
+   "Nathan Ngoy",
+   "Tanguy Nianzou",
+   "Alexsandro Ribeiro",
+   "Romain Perraud",
+   "Ngal Ayel Mukau",
+   "Benjamin André",
+   "Nabil Bentaleb",
+   "Ethan Mbappé",
+   "Hákon Arnar Haraldsson",
+   "Soriba Diaoune"
+  ],
+  "away_bench": [
+   "Isaac Cossier",
+   "Maxima Goffi",
+   "Maurits Kjærgaard",
+   "Angel Yondjo",
+   "Orlando Gill",
+   "Calvin Verdonk",
+   "Dilane Bakwa",
+   "Gaëtan Perrin",
+   "Olivier Giroud"
+  ],
+  "substitution_events": [
+   {
+    "team": "Monaco",
+    "in": "Mathys Detourbet",
+    "out": "Ansu Fati",
+    "minute": "15"
+   },
+   {
+    "team": "Monaco",
+    "in": "Matthis Abline",
+    "out": "Mamadou Coulibaly",
+    "minute": "46"
+   },
+   {
+    "team": "Monaco",
+    "in": "Edan Diop",
+    "out": "Denis Zakaria",
+    "minute": "46"
+   },
+   {
+    "team": "Monaco",
+    "in": "Folarin Balogun",
+    "out": "Mathys Detourbet",
+    "minute": "90"
+   },
+   {
+    "team": "Lille",
+    "in": "Isaac Cossier",
+    "out": "Soriba Diaoune",
+    "minute": "63"
+   },
+   {
+    "team": "Lille",
+    "in": "Maxima Goffi",
+    "out": "Ethan Mbappé",
+    "minute": "69"
+   },
+   {
+    "team": "Lille",
+    "in": "Maurits Kjærgaard",
+    "out": "Nabil Bentaleb",
+    "minute": "80"
+   },
+   {
+    "team": "Lille",
+    "in": "Angel Yondjo",
+    "out": "Hákon Arnar Haraldsson",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "François Letexier",
+  "attendance": 11041,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

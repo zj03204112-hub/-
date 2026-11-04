@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "ligue1-2026-27-2026-11-02-lorient-brest",
+ "date": "2026-11-02",
+ "home": "Lorient",
+ "away": "Brest",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802975",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802975"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Yvon Mvogo",
+   "Nathaniel Adjei",
+   "Montassar Talbi",
+   "Souleymane Touré",
+   "Dembo Sylla",
+   "Arthur Avom",
+   "Noah Cadiou",
+   "Arsène Kouassi",
+   "Jean-Victor Makengo",
+   "Souleymane Faye",
+   "Ibrahima Baldé"
+  ],
+  "home_bench": [
+   "Gabin Bernardeau",
+   "Aiyegun Tosin",
+   "Noah Mbamba",
+   "Théo Le Bris",
+   "Srdjan Kuzmić",
+   "Bingourou Kamara",
+   "Nosa Edward Obaretin",
+   "Alec Georgen",
+   "Isak Steiner Jensen"
+  ],
+  "away_starting_xi": [
+   "Egil Selvik",
+   "Kenny Lala",
+   "Lucas Tousart",
+   "Gautier Lloris",
+   "Bradley Locko",
+   "Joris Chotard",
+   "Hugo Magnetti",
+   "Mama Baldé",
+   "Kamory Doumbia",
+   "Pathé Mboup",
+   "Ludovic Ajorque"
+  ],
+  "away_bench": [
+   "Noah Edjouma",
+   "Giovani Versini",
+   "Mamady Diambou",
+   "Mathieu Patouillet",
+   "Justin Bourgault",
+   "Luck Zogbé",
+   "Joseph Boende",
+   "Djylian N'Guessan",
+   "Ibrahim Kanté"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lorient",
+    "in": "Aiyegun Tosin",
+    "out": "Ibrahima Baldé",
+    "minute": "66"
+   },
+   {
+    "team": "Lorient",
+    "in": "Gabin Bernardeau",
+    "out": "Souleymane Faye",
+    "minute": "66"
+   },
+   {
+    "team": "Lorient",
+    "in": "Théo Le Bris",
+    "out": "Jean-Victor Makengo",
+    "minute": "79"
+   },
+   {
+    "team": "Lorient",
+    "in": "Noah Mbamba",
+    "out": "Noah Cadiou",
+    "minute": "79"
+   },
+   {
+    "team": "Lorient",
+    "in": "Srdjan Kuzmić",
+    "out": "Dembo Sylla",
+    "minute": "86"
+   },
+   {
+    "team": "Brest",
+    "in": "Giovani Versini",
+    "out": "Kamory Doumbia",
+    "minute": "76"
+   },
+   {
+    "team": "Brest",
+    "in": "Noah Edjouma",
+    "out": "Mama Baldé",
+    "minute": "76"
+   },
+   {
+    "team": "Brest",
+    "in": "Mamady Diambou",
+    "out": "Pathé Mboup",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Jérémie Pignard",
+  "attendance": 14075,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

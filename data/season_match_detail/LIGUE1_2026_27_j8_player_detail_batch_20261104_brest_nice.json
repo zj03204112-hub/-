@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "ligue1-2026-27-2026-10-23-brest-nice",
+ "date": "2026-10-23",
+ "home": "Brest",
+ "away": "Nice",
+ "score": "1-2",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802966",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802966"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Egil Selvik",
+   "Kenny Lala",
+   "Lucas Tousart",
+   "Gautier Lloris",
+   "Bradley Locko",
+   "Joris Chotard",
+   "Hugo Magnetti",
+   "Mama Baldé",
+   "Kamory Doumbia",
+   "Pathé Mboup",
+   "Ludovic Ajorque"
+  ],
+  "home_bench": [
+   "Joseph Boende",
+   "Noah Edjouma",
+   "Mamady Diambou",
+   "Ibrahim Kanté",
+   "Mathis Laine",
+   "Mathieu Patouillet",
+   "Justin Bourgault",
+   "Luck Zogbé",
+   "Djylian N'Guessan"
+  ],
+  "away_starting_xi": [
+   "Yéhvann Diouf",
+   "Alidu Seidu",
+   "Youssouf Ndayishimiye",
+   "Mohamed Abdelmonem",
+   "Jonathan Clauss",
+   "Axel Witsel",
+   "Hicham Boudaoui",
+   "Niels Nkounkou",
+   "Gauthier Hein",
+   "Mohamed Amoura",
+   "Elye Wahi"
+  ],
+  "away_bench": [
+   "Hamza Koutoune",
+   "Sofiane Diop",
+   "Djibril Coulibaly",
+   "Isak Jansson",
+   "Teddy Boulhendi",
+   "Xavier Mandza",
+   "Morgan Sanson",
+   "Djelan Morana",
+   "Nathan N'Goumou"
+  ],
+  "substitution_events": [
+   {
+    "team": "Brest",
+    "in": "Joseph Boende",
+    "out": "Mama Baldé",
+    "minute": "70"
+   },
+   {
+    "team": "Brest",
+    "in": "Noah Edjouma",
+    "out": "Pathé Mboup",
+    "minute": "70"
+   },
+   {
+    "team": "Brest",
+    "in": "Ibrahim Kanté",
+    "out": "Kamory Doumbia",
+    "minute": "80"
+   },
+   {
+    "team": "Brest",
+    "in": "Mamady Diambou",
+    "out": "Joris Chotard",
+    "minute": "80"
+   },
+   {
+    "team": "Brest",
+    "in": "Mathis Laine",
+    "out": "Hugo Magnetti",
+    "minute": "87"
+   },
+   {
+    "team": "Nice",
+    "in": "Hamza Koutoune",
+    "out": "Jonathan Clauss",
+    "minute": "54"
+   },
+   {
+    "team": "Nice",
+    "in": "Sofiane Diop",
+    "out": "Gauthier Hein",
+    "minute": "63"
+   },
+   {
+    "team": "Nice",
+    "in": "Djibril Coulibaly",
+    "out": "Axel Witsel",
+    "minute": "76"
+   },
+   {
+    "team": "Nice",
+    "in": "Isak Jansson",
+    "out": "Mohamed Amoura",
+    "minute": "76"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Guillaume Paradis",
+  "attendance": 13036,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

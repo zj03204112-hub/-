@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "ligue1-2026-27-2026-11-01-parisfc-monaco",
+ "date": "2026-11-01",
+ "home": "Paris FC",
+ "away": "Monaco",
+ "score": "3-1",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802979",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802979"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kevin Trapp",
+   "Hamari Traoré",
+   "Samir Chergui",
+   "Diego Coppola",
+   "Otávio",
+   "Maxime Lopez",
+   "Pierre Lees-Melou",
+   "Ilan Kebbal",
+   "Pablo Pagis",
+   "Moses Simon",
+   "Lassine Sinayoko"
+  ],
+  "home_bench": [
+   "Mamadou Mbow",
+   "Patrick Zabi",
+   "Rudy Matondo",
+   "Omar Sissoko",
+   "Emmanuel Mbemba",
+   "Obed Nkambadio",
+   "Thibault De Smet",
+   "Vincent Marchetti",
+   "Jean-Philippe Krasso"
+  ],
+  "away_starting_xi": [
+   "Lukás Hrádecky",
+   "Vanderson",
+   "Sadibou Sané",
+   "Eric Dier",
+   "Flávio Nazinho",
+   "Lamine Camara",
+   "Denis Zakaria",
+   "Edan Diop",
+   "Aleksandr Golovin",
+   "Matthis Abline",
+   "Paris Brunner"
+  ],
+  "away_bench": [
+   "Christian Mawissa",
+   "Folarin Balogun",
+   "Takumi Minamino",
+   "Mathys Detourbet",
+   "Jordan Teze",
+   "Philipp Köhn",
+   "Ilane Touré",
+   "Mamadou Coulibaly",
+   "Pape Cabral"
+  ],
+  "substitution_events": [
+   {
+    "team": "Paris FC",
+    "in": "Mamadou Mbow",
+    "out": "Samir Chergui",
+    "minute": "46"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Rudy Matondo",
+    "out": "Moses Simon",
+    "minute": "73"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Patrick Zabi",
+    "out": "Ilan Kebbal",
+    "minute": "73"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Omar Sissoko",
+    "out": "Lassine Sinayoko",
+    "minute": "79"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Emmanuel Mbemba",
+    "out": "Hamari Traoré",
+    "minute": "89"
+   },
+   {
+    "team": "Monaco",
+    "in": "Christian Mawissa",
+    "out": "Edan Diop",
+    "minute": "46"
+   },
+   {
+    "team": "Monaco",
+    "in": "Folarin Balogun",
+    "out": "Paris Brunner",
+    "minute": "46"
+   },
+   {
+    "team": "Monaco",
+    "in": "Takumi Minamino",
+    "out": "Denis Zakaria",
+    "minute": "55"
+   },
+   {
+    "team": "Monaco",
+    "in": "Mathys Detourbet",
+    "out": "Flávio Nazinho",
+    "minute": "64"
+   },
+   {
+    "team": "Monaco",
+    "in": "Jordan Teze",
+    "out": "Sadibou Sané",
+    "minute": "75"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 1
+  },
+  "provider_score": "3-1",
+  "score_consistent_with_events": true,
+  "referee": "Jeremy Stinat",
+  "attendance": 19087,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

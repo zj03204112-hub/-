@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "ligue1-2026-27-2026-08-30-monaco-marseille",
+ "date": "2026-08-30",
+ "home": "Monaco",
+ "away": "Marseille",
+ "score": "2-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802914",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802914"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lukás Hrádecky",
+   "Vanderson",
+   "Sadibou Sané",
+   "Eric Dier",
+   "Flávio Nazinho",
+   "Lamine Camara",
+   "Denis Zakaria",
+   "Mamadou Coulibaly",
+   "Aleksandr Golovin",
+   "Stanis Idumbo",
+   "Paris Brunner"
+  ],
+  "home_bench": [
+   "Anis Soubeir",
+   "Matthis Abline",
+   "Mika Biereth",
+   "Mathys Detourbet",
+   "Philipp Köhn",
+   "Christian Mawissa",
+   "Thilo Kehrer",
+   "Jordan Teze",
+   "Safouane Benzahra"
+  ],
+  "away_starting_xi": [
+   "Jeffrey De Lange",
+   "Timothy Weah",
+   "CJ Egan-Riley",
+   "Geoffrey Kondogbia",
+   "Emerson",
+   "Himad Abdelli",
+   "Pierre-Emile Højbjerg",
+   "Amine Harit",
+   "Angel Gomes",
+   "Quinten Timber",
+   "Amine Gouiri"
+  ],
+  "away_bench": [
+   "Tochukwu Nnadi",
+   "Keyliane Abdallah",
+   "Nayef Aguerd",
+   "Neal Maupay",
+   "Faris Moumbagna",
+   "Théo Vermot",
+   "Derek Cornelius",
+   "Ulisses Garcia",
+   "Tadjidine Mmadi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Monaco",
+    "in": "Matthis Abline",
+    "out": "Aleksandr Golovin",
+    "minute": "81"
+   },
+   {
+    "team": "Monaco",
+    "in": "Mika Biereth",
+    "out": "Paris Brunner",
+    "minute": "81"
+   },
+   {
+    "team": "Monaco",
+    "in": "Anis Soubeir",
+    "out": "Mamadou Coulibaly",
+    "minute": "81"
+   },
+   {
+    "team": "Monaco",
+    "in": "Mathys Detourbet",
+    "out": "Stanis Idumbo",
+    "minute": "85"
+   },
+   {
+    "team": "Marseille",
+    "in": "Tochukwu Nnadi",
+    "out": "Himad Abdelli",
+    "minute": "46"
+   },
+   {
+    "team": "Marseille",
+    "in": "Keyliane Abdallah",
+    "out": "Quinten Timber",
+    "minute": "46"
+   },
+   {
+    "team": "Marseille",
+    "in": "Nayef Aguerd",
+    "out": "Geoffrey Kondogbia",
+    "minute": "58"
+   },
+   {
+    "team": "Marseille",
+    "in": "Neal Maupay",
+    "out": "Tochukwu Nnadi",
+    "minute": "73"
+   },
+   {
+    "team": "Marseille",
+    "in": "Faris Moumbagna",
+    "out": "Angel Gomes",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Willy Delajod",
+  "attendance": 7080,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "ligue1-2026-27-2026-08-22-lemans-brest",
+ "date": "2026-08-22",
+ "home": "Le Mans",
+ "away": "Brest",
+ "score": "2-2",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802903",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802903"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nicolas Kocik",
+   "Noa Boissé",
+   "Théo Eyoum",
+   "Rayan Bamba",
+   "Lucas Buadés",
+   "Adil Bourabaa",
+   "Alexandre Lauray",
+   "Yasser Larouci",
+   "Louis Mafouta",
+   "Dame Gueye",
+   "Antoine Rabillard"
+  ],
+  "home_bench": [
+   "Lucas Bretelle",
+   "Erwan Colas",
+   "Billal Brahimi",
+   "William Harhouz",
+   "Lucas Calodat",
+   "Ewan Hatfout",
+   "Raúl Torrente",
+   "Djibril Sidibé",
+   "Milan Robin"
+  ],
+  "away_starting_xi": [
+   "Egil Selvik",
+   "Kenny Lala",
+   "Lucas Tousart",
+   "Raphaël Le Guen",
+   "Bradley Locko",
+   "Joris Chotard",
+   "Joseph Boende",
+   "Romain Del Castillo",
+   "Kamory Doumbia",
+   "Pathé Mboup",
+   "Ludovic Ajorque"
+  ],
+  "away_bench": [
+   "Mamady Diambou",
+   "Axel Camblan",
+   "Mama Baldé",
+   "Mathis Laine",
+   "Romain Cagnon",
+   "Evan Mailly",
+   "Gautier Lloris",
+   "Luck Zogbé",
+   "Hamidou Makalou"
+  ],
+  "substitution_events": [
+   {
+    "team": "Le Mans",
+    "in": "Erwan Colas",
+    "out": "Louis Mafouta",
+    "minute": "63"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Lucas Bretelle",
+    "out": "Alexandre Lauray",
+    "minute": "63"
+   },
+   {
+    "team": "Le Mans",
+    "in": "William Harhouz",
+    "out": "Dame Gueye",
+    "minute": "72"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Billal Brahimi",
+    "out": "Adil Bourabaa",
+    "minute": "72"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Lucas Calodat",
+    "out": "Yasser Larouci",
+    "minute": "81"
+   },
+   {
+    "team": "Brest",
+    "in": "Mamady Diambou",
+    "out": "Joseph Boende",
+    "minute": "63"
+   },
+   {
+    "team": "Brest",
+    "in": "Axel Camblan",
+    "out": "Pathé Mboup",
+    "minute": "71"
+   },
+   {
+    "team": "Brest",
+    "in": "Mama Baldé",
+    "out": "Romain Del Castillo",
+    "minute": "71"
+   },
+   {
+    "team": "Brest",
+    "in": "Mathis Laine",
+    "out": "Kamory Doumbia",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Aurélien Petit",
+  "attendance": 19809,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

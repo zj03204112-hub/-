@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "ligue1-2026-27-2026-10-10-lille-lehavre",
+ "date": "2026-10-10",
+ "home": "Lille",
+ "away": "Le Havre",
+ "score": "1-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802948",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802948"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Berke Özer",
+   "Tiago Santos",
+   "Tanguy Nianzou",
+   "Alexsandro Ribeiro",
+   "Romain Perraud",
+   "Nabil Bentaleb",
+   "Maurits Kjærgaard",
+   "Dilane Bakwa",
+   "Ngal Ayel Mukau",
+   "Gaëtan Perrin",
+   "Olivier Giroud"
+  ],
+  "home_bench": [
+   "Maxima Goffi",
+   "Hákon Arnar Haraldsson",
+   "Ayase Ueda",
+   "Calvin Verdonk",
+   "Osame Sahraoui",
+   "Orlando Gill",
+   "Isaac Cossier",
+   "Benjamin André",
+   "Soriba Diaoune"
+  ],
+  "away_starting_xi": [
+   "Gauthier Gallon",
+   "Djibril Ouziad",
+   "Ayumu Seko",
+   "Ahmed Touba",
+   "Lamine N'Diaye",
+   "Simon Ebonog",
+   "Amir Richardson",
+   "Sota Nakamura",
+   "Rassoul Ndiaye",
+   "Mbwana Samatta",
+   "Josh Maja"
+  ],
+  "away_bench": [
+   "Junior Mwanga",
+   "Rayan Fofana",
+   "Kaito Mizuta",
+   "Arnaud Bodart",
+   "Enzo Koffi",
+   "Vincent Sasso",
+   "Daren Mosengo",
+   "Guy Zohouri",
+   "Ismaïl Bouneb"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lille",
+    "in": "Maxima Goffi",
+    "out": "Tiago Santos",
+    "minute": "22"
+   },
+   {
+    "team": "Lille",
+    "in": "Hákon Arnar Haraldsson",
+    "out": "Gaëtan Perrin",
+    "minute": "57"
+   },
+   {
+    "team": "Lille",
+    "in": "Ayase Ueda",
+    "out": "Olivier Giroud",
+    "minute": "57"
+   },
+   {
+    "team": "Lille",
+    "in": "Calvin Verdonk",
+    "out": "Romain Perraud",
+    "minute": "73"
+   },
+   {
+    "team": "Lille",
+    "in": "Osame Sahraoui",
+    "out": "Ngal Ayel Mukau",
+    "minute": "73"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Rayan Fofana",
+    "out": "Sota Nakamura",
+    "minute": "69"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Junior Mwanga",
+    "out": "Josh Maja",
+    "minute": "69"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Kaito Mizuta",
+    "out": "Amir Richardson",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Bastien Dechepy",
+  "attendance": 41268,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

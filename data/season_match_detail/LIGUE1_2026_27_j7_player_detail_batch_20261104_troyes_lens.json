@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "ligue1-2026-27-2026-10-17-troyes-lens",
+ "date": "2026-10-17",
+ "home": "Troyes",
+ "away": "Lens",
+ "score": "1-3",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5802963",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802963"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Patrick Beach",
+   "Lucas Maronnier",
+   "Adrien Monfray",
+   "Michel Diaz",
+   "Paolo Gozzi",
+   "Antoine Mille",
+   "Mouhamed Diop",
+   "Dermane Karim",
+   "Merwan Ifnaou",
+   "Renaud Ripart",
+   "Timothé Nkada"
+  ],
+  "home_bench": [
+   "Kandet Diawara",
+   "Noah Donkor",
+   "Iron Gomis",
+   "Jérémy Le Douaron",
+   "Hillel Konaté",
+   "Lassana Simakha",
+   "Alexandre Phliponeau",
+   "Hugo Picard",
+   "Christ Batola"
+  ],
+  "away_starting_xi": [
+   "Robin Risser",
+   "Kyllian Antonio",
+   "Ismaëlo Ganiou",
+   "Jean-Clair Todibo",
+   "Ruben Aguilar",
+   "Yacine Titraoui",
+   "Andrija Bulatović",
+   "Michał Skóras",
+   "Florian Thauvin",
+   "Florian Sotoca",
+   "Odsonne Édouard"
+  ],
+  "away_bench": [
+   "Samson Baidoo",
+   "Amadou Haidara",
+   "Mezian Mesloub Soares",
+   "Franjo Ivanović",
+   "Saud Abdulhamid",
+   "Mathieu Gorgelin",
+   "Michaël Cuisance",
+   "Junior Kadile",
+   "Thorgan Hazard"
+  ],
+  "substitution_events": [
+   {
+    "team": "Troyes",
+    "in": "Kandet Diawara",
+    "out": "Timothé Nkada",
+    "minute": "60"
+   },
+   {
+    "team": "Troyes",
+    "in": "Noah Donkor",
+    "out": "Paolo Gozzi",
+    "minute": "64"
+   },
+   {
+    "team": "Troyes",
+    "in": "Jérémy Le Douaron",
+    "out": "Mouhamed Diop",
+    "minute": "79"
+   },
+   {
+    "team": "Troyes",
+    "in": "Iron Gomis",
+    "out": "Lucas Maronnier",
+    "minute": "79"
+   },
+   {
+    "team": "Lens",
+    "in": "Samson Baidoo",
+    "out": "Jean-Clair Todibo",
+    "minute": "60"
+   },
+   {
+    "team": "Lens",
+    "in": "Mezian Mesloub Soares",
+    "out": "Florian Thauvin",
+    "minute": "67"
+   },
+   {
+    "team": "Lens",
+    "in": "Franjo Ivanović",
+    "out": "Odsonne Édouard",
+    "minute": "67"
+   },
+   {
+    "team": "Lens",
+    "in": "Amadou Haidara",
+    "out": "Yacine Titraoui",
+    "minute": "67"
+   },
+   {
+    "team": "Lens",
+    "in": "Saud Abdulhamid",
+    "out": "Ruben Aguilar",
+    "minute": "72"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "Hakim Ben El Hadj",
+  "attendance": 14928,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

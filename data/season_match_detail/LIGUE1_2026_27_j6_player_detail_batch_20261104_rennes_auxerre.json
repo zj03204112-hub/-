@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "ligue1-2026-27-2026-10-11-rennes-auxerre",
+ "date": "2026-10-11",
+ "home": "Rennes",
+ "away": "Auxerre",
+ "score": "4-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802953",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802953"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Brice Samba",
+   "Bryan Reynolds",
+   "Charlie Cresswell",
+   "Anthony Rouault",
+   "Mahamadou Nagida",
+   "Adrien Thomasson",
+   "Valentin Rongier",
+   "Mahdi Camara",
+   "Mousa Tamari",
+   "Estéban Lepaul",
+   "Issa Soumaré"
+  ],
+  "home_bench": [
+   "Djaoui Cissé",
+   "Eliezer Mayenda",
+   "Ludovic Blas",
+   "Boulaye Dia",
+   "Przemysław Frankowski",
+   "Nicolas Lemaître",
+   "Abdelhamid Aït Boudlal",
+   "Sebastian Szymański",
+   "Henrick Do Marcolino"
+  ],
+  "away_starting_xi": [
+   "Mamadou Diop",
+   "Arthur Piedfort",
+   "Axel Tuanzebe",
+   "Clément Akpa",
+   "Lamine Sy",
+   "Naouirou Ahamada",
+   "Kévin Danois",
+   "Fredrik Oppegård",
+   "Romain Faivre",
+   "Danny Namaso",
+   "Cameron Archer"
+  ],
+  "away_bench": [
+   "Elikya Legros",
+   "Pierre Ekwah",
+   "Rémy Lascary",
+   "Aristide Zossou",
+   "Youssef Khoudda",
+   "Paul Nardi",
+   "Salimou Danfakha",
+   "Sinaly Diomandé",
+   "Lamfia Dioubate"
+  ],
+  "substitution_events": [
+   {
+    "team": "Rennes",
+    "in": "Djaoui Cissé",
+    "out": "Adrien Thomasson",
+    "minute": "67"
+   },
+   {
+    "team": "Rennes",
+    "in": "Eliezer Mayenda",
+    "out": "Mousa Tamari",
+    "minute": "67"
+   },
+   {
+    "team": "Rennes",
+    "in": "Boulaye Dia",
+    "out": "Estéban Lepaul",
+    "minute": "77"
+   },
+   {
+    "team": "Rennes",
+    "in": "Ludovic Blas",
+    "out": "Issa Soumaré",
+    "minute": "77"
+   },
+   {
+    "team": "Rennes",
+    "in": "Przemysław Frankowski",
+    "out": "Mahamadou Nagida",
+    "minute": "85"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Elikya Legros",
+    "out": "Clément Akpa",
+    "minute": "76"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Rémy Lascary",
+    "out": "Danny Namaso",
+    "minute": "77"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Pierre Ekwah",
+    "out": "Naouirou Ahamada",
+    "minute": "77"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Aristide Zossou",
+    "out": "Arthur Piedfort",
+    "minute": "82"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Youssef Khoudda",
+    "out": "Romain Faivre",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 1
+  },
+  "provider_score": "4-1",
+  "score_consistent_with_events": true,
+  "referee": "Willy Delajod",
+  "attendance": 27005,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

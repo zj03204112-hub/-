@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "ligue1-2026-27-2026-08-30-parisfc-nice",
+ "date": "2026-08-30",
+ "home": "Paris FC",
+ "away": "Nice",
+ "score": "3-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802915",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802915"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kevin Trapp",
+   "Adama Camara",
+   "Samir Chergui",
+   "Diego Coppola",
+   "Otávio",
+   "Pierre Lees-Melou",
+   "Maxime Lopez",
+   "Ilan Kebbal",
+   "Pablo Pagis",
+   "Moses Simon",
+   "Lassine Sinayoko"
+  ],
+  "home_bench": [
+   "Rudy Matondo",
+   "Patrick Zabi",
+   "Hamari Traoré",
+   "Vincent Marchetti",
+   "Obed Nkambadio",
+   "Mamadou Mbow",
+   "Thibault De Smet",
+   "Jean-Philippe Krasso",
+   "Omar Sissoko"
+  ],
+  "away_starting_xi": [
+   "Yéhvann Diouf",
+   "Mohamed Abdelmonem",
+   "Youssouf Ndayishimiye",
+   "Xavier Mandza",
+   "Jonathan Clauss",
+   "Djibril Coulibaly",
+   "Axel Witsel",
+   "Melvin Bard",
+   "Gauthier Hein",
+   "Sofiane Diop",
+   "Nathan N'Goumou"
+  ],
+  "away_bench": [
+   "Elye Wahi",
+   "Antoine Mendy",
+   "Isak Jansson",
+   "Hamza Koutoune",
+   "Djelan Morana",
+   "Teddy Boulhendi",
+   "Aboulaye Camara",
+   "Everton",
+   "Zoumana Diallo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Paris FC",
+    "in": "Rudy Matondo",
+    "out": "Moses Simon",
+    "minute": "63"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Patrick Zabi",
+    "out": "Pablo Pagis",
+    "minute": "72"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Hamari Traoré",
+    "out": "Ilan Kebbal",
+    "minute": "83"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Vincent Marchetti",
+    "out": "Otávio",
+    "minute": "83"
+   },
+   {
+    "team": "Nice",
+    "in": "Elye Wahi",
+    "out": "Nathan N'Goumou",
+    "minute": "63"
+   },
+   {
+    "team": "Nice",
+    "in": "Antoine Mendy",
+    "out": "Mohamed Abdelmonem",
+    "minute": "73"
+   },
+   {
+    "team": "Nice",
+    "in": "Isak Jansson",
+    "out": "Axel Witsel",
+    "minute": "73"
+   },
+   {
+    "team": "Nice",
+    "in": "Hamza Koutoune",
+    "out": "Jonathan Clauss",
+    "minute": "82"
+   },
+   {
+    "team": "Nice",
+    "in": "Djelan Morana",
+    "out": "Melvin Bard",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 0
+  },
+  "provider_score": "3-0",
+  "score_consistent_with_events": true,
+  "referee": "Jeremy Stinat",
+  "attendance": 16373,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

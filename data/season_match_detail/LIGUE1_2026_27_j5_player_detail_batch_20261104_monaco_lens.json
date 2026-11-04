@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "ligue1-2026-27-2026-09-18-monaco-lens",
+ "date": "2026-09-18",
+ "home": "Monaco",
+ "away": "Lens",
+ "score": "2-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802941",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802941"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lukás Hrádecky",
+   "Vanderson",
+   "Sadibou Sané",
+   "Eric Dier",
+   "Flávio Nazinho",
+   "Lamine Camara",
+   "Denis Zakaria",
+   "Edan Diop",
+   "Aleksandr Golovin",
+   "Matthis Abline",
+   "Paris Brunner"
+  ],
+  "home_bench": [
+   "Mathys Detourbet",
+   "Pape Cabral",
+   "Folarin Balogun",
+   "Mohammed Salisu",
+   "Philipp Köhn",
+   "Christian Mawissa",
+   "Ilane Touré",
+   "Takumi Minamino",
+   "Safouane Benzahra"
+  ],
+  "away_starting_xi": [
+   "Robin Risser",
+   "Kyllian Antonio",
+   "Jean-Clair Todibo",
+   "Matthieu Udol",
+   "Ruben Aguilar",
+   "Amadou Haidara",
+   "Michaël Cuisance",
+   "Junior Kadile",
+   "Florian Thauvin",
+   "Mezian Mesloub Soares",
+   "Abdallah Sima"
+  ],
+  "away_bench": [
+   "Jonathan Gradit",
+   "Thorgan Hazard",
+   "Odsonne Édouard",
+   "Michał Skóras",
+   "Andrija Bulatović",
+   "Mathieu Gorgelin",
+   "Souleymane Sagnan",
+   "Florian Sotoca",
+   "Franjo Ivanović"
+  ],
+  "substitution_events": [
+   {
+    "team": "Monaco",
+    "in": "Mathys Detourbet",
+    "out": "Edan Diop",
+    "minute": "62"
+   },
+   {
+    "team": "Monaco",
+    "in": "Folarin Balogun",
+    "out": "Matthis Abline",
+    "minute": "76"
+   },
+   {
+    "team": "Monaco",
+    "in": "Pape Cabral",
+    "out": "Denis Zakaria",
+    "minute": "76"
+   },
+   {
+    "team": "Monaco",
+    "in": "Mohammed Salisu",
+    "out": "Paris Brunner",
+    "minute": "90"
+   },
+   {
+    "team": "Lens",
+    "in": "Jonathan Gradit",
+    "out": "Jean-Clair Todibo",
+    "minute": "46"
+   },
+   {
+    "team": "Lens",
+    "in": "Odsonne Édouard",
+    "out": "Abdallah Sima",
+    "minute": "58"
+   },
+   {
+    "team": "Lens",
+    "in": "Thorgan Hazard",
+    "out": "Mezian Mesloub Soares",
+    "minute": "58"
+   },
+   {
+    "team": "Lens",
+    "in": "Michał Skóras",
+    "out": "Junior Kadile",
+    "minute": "69"
+   },
+   {
+    "team": "Lens",
+    "in": "Andrija Bulatović",
+    "out": "Amadou Haidara",
+    "minute": "72"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Clément Turpin",
+  "attendance": 8035,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "ligue1-2026-27-2026-08-23-lehavre-monaco",
+ "date": "2026-08-23",
+ "home": "Le Havre",
+ "away": "Monaco",
+ "score": "0-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802902",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802902"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lionel Mpasi-Nzau",
+   "Timothée Pembélé",
+   "Ayumu Seko",
+   "Vincent Sasso",
+   "Fodé Doucouré",
+   "Simon Ebonog",
+   "Junior Mwanga",
+   "Yanis Zouaoui",
+   "Rassoul Ndiaye",
+   "Mbwana Samatta",
+   "Amir Richardson"
+  ],
+  "home_bench": [
+   "Enzo Koffi",
+   "Elias Jelert",
+   "Sota Nakamura",
+   "Josh Maja",
+   "Kaito Mizuta",
+   "Mory Diaw",
+   "Djibril Ouziad",
+   "Daren Mosengo",
+   "Ismaïl Bouneb"
+  ],
+  "away_starting_xi": [
+   "Lukás Hrádecky",
+   "Vanderson",
+   "Sadibou Sané",
+   "Eric Dier",
+   "Flávio Nazinho",
+   "Lamine Camara",
+   "Denis Zakaria",
+   "Mamadou Coulibaly",
+   "Aleksandr Golovin",
+   "Stanis Idumbo",
+   "Paris Brunner"
+  ],
+  "away_bench": [
+   "Anis Soubeir",
+   "Mika Biereth",
+   "Ilane Touré",
+   "Oumar Konaté",
+   "Thilo Kehrer",
+   "Philipp Köhn",
+   "Pape Cabral",
+   "Safouane Benzahra",
+   "Mathys Detourbet"
+  ],
+  "substitution_events": [
+   {
+    "team": "Le Havre",
+    "in": "Enzo Koffi",
+    "out": "Yanis Zouaoui",
+    "minute": "40"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Sota Nakamura",
+    "out": "Timothée Pembélé",
+    "minute": "70"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Elias Jelert",
+    "out": "Fodé Doucouré",
+    "minute": "70"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Josh Maja",
+    "out": "Mbwana Samatta",
+    "minute": "70"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Kaito Mizuta",
+    "out": "Simon Ebonog",
+    "minute": "88"
+   },
+   {
+    "team": "Monaco",
+    "in": "Anis Soubeir",
+    "out": "Mamadou Coulibaly",
+    "minute": "57"
+   },
+   {
+    "team": "Monaco",
+    "in": "Mika Biereth",
+    "out": "Paris Brunner",
+    "minute": "57"
+   },
+   {
+    "team": "Monaco",
+    "in": "Ilane Touré",
+    "out": "Flávio Nazinho",
+    "minute": "80"
+   },
+   {
+    "team": "Monaco",
+    "in": "Oumar Konaté",
+    "out": "Stanis Idumbo",
+    "minute": "81"
+   },
+   {
+    "team": "Monaco",
+    "in": "Thilo Kehrer",
+    "out": "Vanderson",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Jeremie Pignard",
+  "attendance": 18956,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

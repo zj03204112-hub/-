@@ -1,0 +1,129 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "ligue1-2026-27-2026-10-25-toulouse-troyes",
+ "date": "2026-10-25",
+ "home": "Toulouse",
+ "away": "Troyes",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802971",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802971"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Guillaume Restes",
+   "Rafik Messali",
+   "Mark McKenzie",
+   "Rasmus Nicolaisen",
+   "Christ Tapé",
+   "Aron Dønnum",
+   "Cristian Cásseres",
+   "Niko Sigur",
+   "Thomas Jørgensen",
+   "Jacen Russell-Rowe",
+   "Casper Tengstedt"
+  ],
+  "home_bench": [
+   "Alexis Vossah",
+   "Ilyas Azizi",
+   "Niklas Schmidt",
+   "Santiago Hidalgo",
+   "Theo Collin",
+   "Ismaïl Diallo",
+   "Seny Koumbassa",
+   "Mathis Amougou",
+   "Julián Vignolo"
+  ],
+  "away_starting_xi": [
+   "Hillel Konaté",
+   "Lucas Maronnier",
+   "Adrien Monfray",
+   "Michel Diaz",
+   "Paolo Gozzi",
+   "Antoine Mille",
+   "Dermane Karim",
+   "Mouhamed Diop",
+   "Merwan Ifnaou",
+   "Renaud Ripart",
+   "Timothé Nkada"
+  ],
+  "away_bench": [
+   "Jérémy Le Douaron",
+   "Kandet Diawara",
+   "Iron Gomis",
+   "Patrick Beach",
+   "Lassana Simakha",
+   "Noah Donkor",
+   "Alexandre Phliponeau",
+   "Hugo Picard",
+   "Idrissa Soukouna"
+  ],
+  "substitution_events": [
+   {
+    "team": "Toulouse",
+    "in": "Alexis Vossah",
+    "out": "Rafik Messali",
+    "minute": "58"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Ilyas Azizi",
+    "out": "Aron Dønnum",
+    "minute": "67"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Santiago Hidalgo",
+    "out": "Jacen Russell-Rowe",
+    "minute": "84"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Niklas Schmidt",
+    "out": "Thomas Jørgensen",
+    "minute": "84"
+   },
+   {
+    "team": "Troyes",
+    "in": "Jérémy Le Douaron",
+    "out": "Renaud Ripart",
+    "minute": "73"
+   },
+   {
+    "team": "Troyes",
+    "in": "Kandet Diawara",
+    "out": "Timothé Nkada",
+    "minute": "73"
+   },
+   {
+    "team": "Troyes",
+    "in": "Iron Gomis",
+    "out": "Mouhamed Diop",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Geoffrey Kubler",
+  "attendance": 23499,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

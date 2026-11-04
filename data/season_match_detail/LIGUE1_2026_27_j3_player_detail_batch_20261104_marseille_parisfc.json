@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ligue1-2026-27-2026-09-06-marseille-parisfc",
+ "date": "2026-09-06",
+ "home": "Marseille",
+ "away": "Paris FC",
+ "score": "2-3",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5802923",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802923"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jeffrey De Lange",
+   "Timothy Weah",
+   "CJ Egan-Riley",
+   "Nayef Aguerd",
+   "Emerson",
+   "Himad Abdelli",
+   "Pierre-Emile Højbjerg",
+   "Amine Harit",
+   "Angel Gomes",
+   "Igor Paixão",
+   "Amine Gouiri"
+  ],
+  "home_bench": [
+   "Tadjidine Mmadi",
+   "Derek Cornelius",
+   "Keyliane Abdallah",
+   "Ulisses Garcia",
+   "Faris Moumbagna",
+   "Théo Vermot",
+   "Bamo Meité",
+   "Nouhoum Kamissoko",
+   "Neal Maupay"
+  ],
+  "away_starting_xi": [
+   "Kevin Trapp",
+   "Samir Chergui",
+   "Diego Coppola",
+   "Hamari Traoré",
+   "Adama Camara",
+   "Luca Koleosho",
+   "Ilan Kebbal",
+   "Maxime Lopez",
+   "Pierre Lees-Melou",
+   "Pablo Pagis",
+   "Lassine Sinayoko"
+  ],
+  "away_bench": [
+   "Rudy Matondo",
+   "Patrick Zabi",
+   "Moses Simon",
+   "Mamadou Mbow",
+   "Omar Sissoko",
+   "Obed Nkambadio",
+   "Yoan Koré",
+   "Vincent Marchetti",
+   "Jean-Philippe Krasso"
+  ],
+  "substitution_events": [
+   {
+    "team": "Marseille",
+    "in": "Tadjidine Mmadi",
+    "out": "Igor Paixão",
+    "minute": "72"
+   },
+   {
+    "team": "Marseille",
+    "in": "Keyliane Abdallah",
+    "out": "Angel Gomes",
+    "minute": "73"
+   },
+   {
+    "team": "Marseille",
+    "in": "Derek Cornelius",
+    "out": "Nayef Aguerd",
+    "minute": "73"
+   },
+   {
+    "team": "Marseille",
+    "in": "Ulisses Garcia",
+    "out": "Emerson",
+    "minute": "90"
+   },
+   {
+    "team": "Marseille",
+    "in": "Faris Moumbagna",
+    "out": "Himad Abdelli",
+    "minute": "90"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Rudy Matondo",
+    "out": "Pablo Pagis",
+    "minute": "64"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Moses Simon",
+    "out": "Luca Koleosho",
+    "minute": "77"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Patrick Zabi",
+    "out": "Ilan Kebbal",
+    "minute": "77"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Mamadou Mbow",
+    "out": "Maxime Lopez",
+    "minute": "90"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Omar Sissoko",
+    "out": "Lassine Sinayoko",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "Clément Turpin",
+  "attendance": 55955,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "ligue1-2026-27-2026-10-11-troyes-marseille",
+ "date": "2026-10-11",
+ "home": "Troyes",
+ "away": "Marseille",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802954",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802954"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Patrick Beach",
+   "Lucas Maronnier",
+   "Adrien Monfray",
+   "Michel Diaz",
+   "Paolo Gozzi",
+   "Mouhamed Diop",
+   "Dermane Karim",
+   "Antoine Mille",
+   "Iron Gomis",
+   "Kandet Diawara",
+   "Jérémy Le Douaron"
+  ],
+  "home_bench": [
+   "Renaud Ripart",
+   "Hugo Picard",
+   "Alexandre Phliponeau",
+   "Christ Batola",
+   "Timothé Nkada",
+   "Hillel Konaté",
+   "Lassana Simakha",
+   "Noah Donkor",
+   "Merwan Ifnaou"
+  ],
+  "away_starting_xi": [
+   "Jeffrey De Lange",
+   "Kelyann Bezahaf",
+   "CJ Egan-Riley",
+   "Nayef Aguerd",
+   "Emerson",
+   "Nouhoum Kamissoko",
+   "Himad Abdelli",
+   "Amine Harit",
+   "Angel Gomes",
+   "Igor Paixão",
+   "Amine Gouiri"
+  ],
+  "away_bench": [
+   "Keyliane Abdallah",
+   "Neal Maupay",
+   "Tochukwu Nnadi",
+   "Geoffrey Kondogbia",
+   "Faris Moumbagna",
+   "Théo Vermot",
+   "Alexi Koum",
+   "Bamo Meité",
+   "Ulisses Garcia"
+  ],
+  "substitution_events": [
+   {
+    "team": "Troyes",
+    "in": "Renaud Ripart",
+    "out": "Iron Gomis",
+    "minute": "61"
+   },
+   {
+    "team": "Troyes",
+    "in": "Hugo Picard",
+    "out": "Kandet Diawara",
+    "minute": "69"
+   },
+   {
+    "team": "Troyes",
+    "in": "Alexandre Phliponeau",
+    "out": "Jérémy Le Douaron",
+    "minute": "77"
+   },
+   {
+    "team": "Troyes",
+    "in": "Christ Batola",
+    "out": "Dermane Karim",
+    "minute": "78"
+   },
+   {
+    "team": "Troyes",
+    "in": "Timothé Nkada",
+    "out": "Mouhamed Diop",
+    "minute": "78"
+   },
+   {
+    "team": "Marseille",
+    "in": "Neal Maupay",
+    "out": "Amine Gouiri",
+    "minute": "63"
+   },
+   {
+    "team": "Marseille",
+    "in": "Keyliane Abdallah",
+    "out": "Amine Harit",
+    "minute": "63"
+   },
+   {
+    "team": "Marseille",
+    "in": "Tochukwu Nnadi",
+    "out": "Nouhoum Kamissoko",
+    "minute": "73"
+   },
+   {
+    "team": "Marseille",
+    "in": "Faris Moumbagna",
+    "out": "Igor Paixão",
+    "minute": "87"
+   },
+   {
+    "team": "Marseille",
+    "in": "Geoffrey Kondogbia",
+    "out": "Angel Gomes",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Guillaume Paradis",
+  "attendance": 19022,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

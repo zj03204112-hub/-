@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "ligue1-2026-27-2026-10-24-lens-parisfc",
+ "date": "2026-10-24",
+ "home": "Lens",
+ "away": "Paris FC",
+ "score": "2-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802967",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802967"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Robin Risser",
+   "Ruben Aguilar",
+   "Samson Baidoo",
+   "Jean-Clair Todibo",
+   "Saud Abdulhamid",
+   "Michaël Cuisance",
+   "Amadou Haidara",
+   "Matthieu Udol",
+   "Florian Thauvin",
+   "Florian Sotoca",
+   "Franjo Ivanović"
+  ],
+  "home_bench": [
+   "Kyllian Antonio",
+   "Thorgan Hazard",
+   "Yacine Titraoui",
+   "Michał Skóras",
+   "Junior Kadile",
+   "Mathieu Gorgelin",
+   "Nidal Čelik",
+   "Andrija Bulatović",
+   "Mezian Mesloub Soares"
+  ],
+  "away_starting_xi": [
+   "Obed Nkambadio",
+   "Adama Camara",
+   "Mamadou Mbow",
+   "Diego Coppola",
+   "Otávio",
+   "Maxime Lopez",
+   "Pierre Lees-Melou",
+   "Ilan Kebbal",
+   "Pablo Pagis",
+   "Luca Koleosho",
+   "Lassine Sinayoko"
+  ],
+  "away_bench": [
+   "Emmanuel Mbemba",
+   "Rudy Matondo",
+   "Moses Simon",
+   "Patrick Zabi",
+   "Thibault De Smet",
+   "Ibrahim Meite",
+   "Yoan Koré",
+   "Jean-Philippe Krasso",
+   "Omar Sissoko"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lens",
+    "in": "Kyllian Antonio",
+    "out": "Jean-Clair Todibo",
+    "minute": "61"
+   },
+   {
+    "team": "Lens",
+    "in": "Thorgan Hazard",
+    "out": "Franjo Ivanović",
+    "minute": "61"
+   },
+   {
+    "team": "Lens",
+    "in": "Yacine Titraoui",
+    "out": "Amadou Haidara",
+    "minute": "71"
+   },
+   {
+    "team": "Lens",
+    "in": "Junior Kadile",
+    "out": "Florian Sotoca",
+    "minute": "85"
+   },
+   {
+    "team": "Lens",
+    "in": "Michał Skóras",
+    "out": "Saud Abdulhamid",
+    "minute": "85"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Emmanuel Mbemba",
+    "out": "Luca Koleosho",
+    "minute": "46"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Moses Simon",
+    "out": "Adama Camara",
+    "minute": "67"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Rudy Matondo",
+    "out": "Pablo Pagis",
+    "minute": "67"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Patrick Zabi",
+    "out": "Ilan Kebbal",
+    "minute": "76"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Thibault De Smet",
+    "out": "Rudy Matondo",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Mathieu Vernice",
+  "attendance": 37819,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

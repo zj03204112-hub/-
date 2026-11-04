@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "ligue1-2026-27-2026-08-23-rennes-parissaintgermain",
+ "date": "2026-08-23",
+ "home": "Rennes",
+ "away": "Paris Saint-Germain",
+ "score": "2-2",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5803105",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5803105"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Brice Samba",
+   "Przemyslaw Frankowski",
+   "Charlie Cresswell",
+   "Abdelhamid Aït Boudlal",
+   "Mahamadou Nagida",
+   "Sebastian Szymanski",
+   "Valentin Rongier",
+   "Adrien Thomasson",
+   "Mousa Tamari",
+   "Estéban Lepaul",
+   "Issa Soumaré"
+  ],
+  "home_bench": [
+   "Ludovic Blas",
+   "Quentin Merlin",
+   "Henrick Do Marcolino",
+   "Bryan Reynolds",
+   "Arnaud Nordin",
+   "Kilian Belazzoug",
+   "Anthony Rouault",
+   "Elías Legendre",
+   "Eliezer Mayenda"
+  ],
+  "away_starting_xi": [
+   "Matvey Safonov",
+   "Achraf Hakimi",
+   "Marquinhos",
+   "Willian Pacho",
+   "Lucas Hernández",
+   "Warren Zaïre-Emery",
+   "Vítinha",
+   "João Neves",
+   "Désiré Doué",
+   "Ousmane Dembélé",
+   "Khvicha Kvaratskhelia"
+  ],
+  "away_bench": [
+   "Ferrán Torres",
+   "Mika Godts",
+   "Fabián Ruiz",
+   "Maghnes Akliouche",
+   "Lucas Beraldo",
+   "Lucas Chevalier",
+   "Ilya Zabarnyi",
+   "Lucas Digne",
+   "Dro Fernández"
+  ],
+  "substitution_events": [
+   {
+    "team": "Rennes",
+    "in": "Ludovic Blas",
+    "out": "Mousa Tamari",
+    "minute": "72"
+   },
+   {
+    "team": "Rennes",
+    "in": "Quentin Merlin",
+    "out": "Mahamadou Nagida",
+    "minute": "78"
+   },
+   {
+    "team": "Rennes",
+    "in": "Henrick Do Marcolino",
+    "out": "Sebastian Szymanski",
+    "minute": "78"
+   },
+   {
+    "team": "Rennes",
+    "in": "Arnaud Nordin",
+    "out": "Issa Soumaré",
+    "minute": "88"
+   },
+   {
+    "team": "Rennes",
+    "in": "Bryan Reynolds",
+    "out": "Przemyslaw Frankowski",
+    "minute": "88"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Ferrán Torres",
+    "out": "Ousmane Dembélé",
+    "minute": "46"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Mika Godts",
+    "out": "Khvicha Kvaratskhelia",
+    "minute": "46"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Fabián Ruiz",
+    "out": "João Neves",
+    "minute": "60"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Maghnes Akliouche",
+    "out": "Warren Zaïre-Emery",
+    "minute": "60"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Lucas Beraldo",
+    "out": "Vítinha",
+    "minute": "69"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Bastien Dechepy",
+  "attendance": 28255,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

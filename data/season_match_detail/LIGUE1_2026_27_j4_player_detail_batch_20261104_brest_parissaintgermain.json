@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "ligue1-2026-27-2026-09-13-brest-parissaintgermain",
+ "date": "2026-09-13",
+ "home": "Brest",
+ "away": "Paris Saint-Germain",
+ "score": "0-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802929",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802929"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Egil Selvik",
+   "Kenny Lala",
+   "Raphaël Le Guen",
+   "Gautier Lloris",
+   "Bradley Locko",
+   "Joris Chotard",
+   "Hugo Magnetti",
+   "Giovani Versini",
+   "Kamory Doumbia",
+   "Pathé Mboup",
+   "Ludovic Ajorque"
+  ],
+  "home_bench": [
+   "Joseph Boende",
+   "Lucas Tousart",
+   "Djylian N'Guessan",
+   "Justin Bourgault",
+   "Mathieu Patouillet",
+   "Luck Zogbé",
+   "Enzo Monchatre",
+   "Ibrahim Kanté",
+   "Mathis Laine"
+  ],
+  "away_starting_xi": [
+   "Matvey Safonov",
+   "Achraf Hakimi",
+   "Marquinhos",
+   "Willian Pacho",
+   "Nuno Mendes",
+   "João Neves",
+   "Vítinha",
+   "Warren Zaïre-Emery",
+   "Ousmane Dembélé",
+   "Ferrán Torres",
+   "Khvicha Kvaratskhelia"
+  ],
+  "away_bench": [
+   "Fabián Ruiz",
+   "Désiré Doué",
+   "Maghnes Akliouche",
+   "Dro Fernández",
+   "Mika Godts",
+   "Lucas Chevalier",
+   "Lucas Beraldo",
+   "Lucas Digne",
+   "Lucas Hernández"
+  ],
+  "substitution_events": [
+   {
+    "team": "Brest",
+    "in": "Joseph Boende",
+    "out": "Giovani Versini",
+    "minute": "66"
+   },
+   {
+    "team": "Brest",
+    "in": "Djylian N'Guessan",
+    "out": "Kamory Doumbia",
+    "minute": "78"
+   },
+   {
+    "team": "Brest",
+    "in": "Lucas Tousart",
+    "out": "Joris Chotard",
+    "minute": "78"
+   },
+   {
+    "team": "Brest",
+    "in": "Justin Bourgault",
+    "out": "Bradley Locko",
+    "minute": "88"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Fabián Ruiz",
+    "out": "Achraf Hakimi",
+    "minute": "39"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Maghnes Akliouche",
+    "out": "Ousmane Dembélé",
+    "minute": "66"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Désiré Doué",
+    "out": "Khvicha Kvaratskhelia",
+    "minute": "66"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Mika Godts",
+    "out": "Ferrán Torres",
+    "minute": "77"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Dro Fernández",
+    "out": "Warren Zaïre-Emery",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Willy Delajod",
+  "attendance": 14944,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

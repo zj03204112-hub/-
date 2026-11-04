@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "ligue1-2026-27-2026-10-09-lens-lyon",
+ "date": "2026-10-09",
+ "home": "Lens",
+ "away": "Lyon",
+ "score": "2-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802947",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802947"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Robin Risser",
+   "Jonathan Gradit",
+   "Ismaëlo Ganiou",
+   "Kyllian Antonio",
+   "Ruben Aguilar",
+   "Michaël Cuisance",
+   "Yacine Titraoui",
+   "Matthieu Udol",
+   "Florian Thauvin",
+   "Florian Sotoca",
+   "Odsonne Édouard"
+  ],
+  "home_bench": [
+   "Samson Baidoo",
+   "Amadou Haidara",
+   "Franjo Ivanović",
+   "Junior Kadile",
+   "Andrija Bulatović",
+   "Mathieu Gorgelin",
+   "Mezian Mesloub Soares",
+   "Michał Skóras",
+   "Saud Abdulhamid"
+  ],
+  "away_starting_xi": [
+   "Dominik Greif",
+   "Zachary Athekame",
+   "Felix Bacher",
+   "Ruben Kluivert",
+   "Abner",
+   "Mads Bidstrup",
+   "Tyler Morton",
+   "Corentin Tolisso",
+   "Ernest Nuamah",
+   "Pavel Šulc",
+   "Loïs Openda"
+  ],
+  "away_bench": [
+   "Noah Nartey",
+   "Keito Nakamura",
+   "Kaïl Boudache",
+   "Khalis Merah",
+   "Tanner Tessmann",
+   "Rémy Descamps",
+   "Clinton Mata",
+   "Noham Kamara",
+   "Julien Duranville"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lens",
+    "in": "Samson Baidoo",
+    "out": "Jonathan Gradit",
+    "minute": "53"
+   },
+   {
+    "team": "Lens",
+    "in": "Amadou Haidara",
+    "out": "Yacine Titraoui",
+    "minute": "54"
+   },
+   {
+    "team": "Lens",
+    "in": "Franjo Ivanović",
+    "out": "Odsonne Édouard",
+    "minute": "69"
+   },
+   {
+    "team": "Lens",
+    "in": "Junior Kadile",
+    "out": "Florian Sotoca",
+    "minute": "69"
+   },
+   {
+    "team": "Lens",
+    "in": "Andrija Bulatović",
+    "out": "Michaël Cuisance",
+    "minute": "83"
+   },
+   {
+    "team": "Lyon",
+    "in": "Keito Nakamura",
+    "out": "Loïs Openda",
+    "minute": "60"
+   },
+   {
+    "team": "Lyon",
+    "in": "Noah Nartey",
+    "out": "Mads Bidstrup",
+    "minute": "60"
+   },
+   {
+    "team": "Lyon",
+    "in": "Kaïl Boudache",
+    "out": "Ernest Nuamah",
+    "minute": "71"
+   },
+   {
+    "team": "Lyon",
+    "in": "Tanner Tessmann",
+    "out": "Tyler Morton",
+    "minute": "77"
+   },
+   {
+    "team": "Lyon",
+    "in": "Khalis Merah",
+    "out": "Pavel Šulc",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Jeremy Stinat",
+  "attendance": 38153,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ligue1-2026-27-2026-09-06-angers-rennes",
+ "date": "2026-09-06",
+ "home": "Angers",
+ "away": "Rennes",
+ "score": "1-2",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5802919",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802919"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Anthony Lopes",
+   "Carlens Arcus",
+   "Ousmane Camara",
+   "Jordan Lefort",
+   "Joseph Kalulu",
+   "Yassin Belkhdim",
+   "Branco van den Boomen",
+   "Jim Allevinah",
+   "Anthony Bermont",
+   "Amine Sbaï",
+   "Amine El Ouazzani"
+  ],
+  "home_bench": [
+   "Bane Diatta",
+   "Harouna Djibirin",
+   "Prosper Peter",
+   "Lilian Rao-Lisoa",
+   "Usman Simbakoli",
+   "Oumar Pona",
+   "Emmanuel Biumla",
+   "Mael Gernigon",
+   "Marius Louër"
+  ],
+  "away_starting_xi": [
+   "Brice Samba",
+   "Przemysław Frankowski",
+   "Charlie Cresswell",
+   "Anthony Rouault",
+   "Quentin Merlin",
+   "Valentin Rongier",
+   "Ludovic Blas",
+   "Sebastian Szymański",
+   "Mahdi Camara",
+   "Mousa Tamari",
+   "Estéban Lepaul"
+  ],
+  "away_bench": [
+   "Mahamadou Nagida",
+   "Issa Soumaré",
+   "Adrien Thomasson",
+   "Eliezer Mayenda",
+   "Boulaye Dia",
+   "Nicolas Lemaître",
+   "Bryan Reynolds",
+   "Gonçalo Oliveira",
+   "Arnaud Nordin"
+  ],
+  "substitution_events": [
+   {
+    "team": "Angers",
+    "in": "Bane Diatta",
+    "out": "Anthony Bermont",
+    "minute": "46"
+   },
+   {
+    "team": "Angers",
+    "in": "Prosper Peter",
+    "out": "Amine El Ouazzani",
+    "minute": "76"
+   },
+   {
+    "team": "Angers",
+    "in": "Harouna Djibirin",
+    "out": "Jim Allevinah",
+    "minute": "76"
+   },
+   {
+    "team": "Angers",
+    "in": "Usman Simbakoli",
+    "out": "Amine Sbaï",
+    "minute": "83"
+   },
+   {
+    "team": "Angers",
+    "in": "Lilian Rao-Lisoa",
+    "out": "Carlens Arcus",
+    "minute": "83"
+   },
+   {
+    "team": "Rennes",
+    "in": "Issa Soumaré",
+    "out": "Mousa Tamari",
+    "minute": "68"
+   },
+   {
+    "team": "Rennes",
+    "in": "Mahamadou Nagida",
+    "out": "Quentin Merlin",
+    "minute": "68"
+   },
+   {
+    "team": "Rennes",
+    "in": "Adrien Thomasson",
+    "out": "Sebastian Szymański",
+    "minute": "77"
+   },
+   {
+    "team": "Rennes",
+    "in": "Eliezer Mayenda",
+    "out": "Ludovic Blas",
+    "minute": "77"
+   },
+   {
+    "team": "Rennes",
+    "in": "Boulaye Dia",
+    "out": "Estéban Lepaul",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Geoffrey Kubler",
+  "attendance": 11594,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

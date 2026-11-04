@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "ligue1-2026-27-2026-09-19-parisfc-strasbourg",
+ "date": "2026-09-19",
+ "home": "Paris FC",
+ "away": "Strasbourg",
+ "score": "2-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802943",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802943"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kevin Trapp",
+   "Adama Camara",
+   "Mamadou Mbow",
+   "Diego Coppola",
+   "Hamari Traoré",
+   "Pierre Lees-Melou",
+   "Maxime Lopez",
+   "Ilan Kebbal",
+   "Pablo Pagis",
+   "Luca Koleosho",
+   "Lassine Sinayoko"
+  ],
+  "home_bench": [
+   "Thibault De Smet",
+   "Rudy Matondo",
+   "Jonathan Ikoné",
+   "Vincent Marchetti",
+   "Patrick Zabi",
+   "Obed Nkambadio",
+   "Yoan Koré",
+   "Jean-Philippe Krasso",
+   "Moses Simon"
+  ],
+  "away_starting_xi": [
+   "Filip Jörgensen",
+   "Genesis Antwi",
+   "Jeyland Mitchell",
+   "Ismaël Doukouré",
+   "Oso",
+   "Samir El Mourabet",
+   "Diogo Sousa",
+   "Gessime Yassine",
+   "Giovanni Reyna",
+   "Sebastian Nanasi",
+   "Jacobo Ortega"
+  ],
+  "away_bench": [
+   "Conrad Harder",
+   "Dário Essugo",
+   "Pape Demba Diop",
+   "Samuel Amo-Ameyaw",
+   "Yaya Dieme",
+   "Miłosz Piekutowski",
+   "Karim Coulibaly",
+   "Lucas Høgsberg",
+   "Tyrese Noubissie"
+  ],
+  "substitution_events": [
+   {
+    "team": "Paris FC",
+    "in": "Thibault De Smet",
+    "out": "Hamari Traoré",
+    "minute": "54"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Rudy Matondo",
+    "out": "Ilan Kebbal",
+    "minute": "68"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Jonathan Ikoné",
+    "out": "Pablo Pagis",
+    "minute": "68"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Vincent Marchetti",
+    "out": "Maxime Lopez",
+    "minute": "86"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Patrick Zabi",
+    "out": "Lassine Sinayoko",
+    "minute": "87"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Conrad Harder",
+    "out": "Jacobo Ortega",
+    "minute": "58"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Dário Essugo",
+    "out": "Giovanni Reyna",
+    "minute": "67"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Pape Demba Diop",
+    "out": "Samir El Mourabet",
+    "minute": "67"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Samuel Amo-Ameyaw",
+    "out": "Sebastian Nanasi",
+    "minute": "67"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Yaya Dieme",
+    "out": "Gessime Yassine",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Jeremy Stinat",
+  "attendance": 17236,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

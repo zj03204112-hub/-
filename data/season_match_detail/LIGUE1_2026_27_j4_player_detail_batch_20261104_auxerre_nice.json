@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "ligue1-2026-27-2026-09-12-auxerre-nice",
+ "date": "2026-09-12",
+ "home": "Auxerre",
+ "away": "Nice",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802928",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802928"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mamadou Diop",
+   "Christ Makosso",
+   "Axel Tuanzebe",
+   "Clément Akpa",
+   "Lamine Sy",
+   "Arthur Piedfort",
+   "Kévin Danois",
+   "Fredrik Oppegård",
+   "Danny Namaso",
+   "Rémy Lascary",
+   "Cameron Archer"
+  ],
+  "home_bench": [
+   "Romain Faivre",
+   "Naouirou Ahamada",
+   "Pierre Ekwah",
+   "Rayan Mandengue",
+   "Paul Nardi",
+   "Elikya Legros",
+   "Sinaly Diomandé",
+   "Lamfia Dioubate",
+   "Aristide Zossou"
+  ],
+  "away_starting_xi": [
+   "Yéhvann Diouf",
+   "Mohamed Abdelmonem",
+   "Youssouf Ndayishimiye",
+   "Xavier Mandza",
+   "Jonathan Clauss",
+   "Djibril Coulibaly",
+   "Axel Witsel",
+   "Niels Nkounkou",
+   "Gauthier Hein",
+   "Elye Wahi",
+   "Mohamed Amoura"
+  ],
+  "away_bench": [
+   "Ali Abdi",
+   "Hicham Boudaoui",
+   "Sofiane Diop",
+   "Isak Jansson",
+   "Nathan N'Goumou",
+   "Teddy Boulhendi",
+   "Everton",
+   "Issiaga Camara",
+   "Djelan Morana"
+  ],
+  "substitution_events": [
+   {
+    "team": "Auxerre",
+    "in": "Romain Faivre",
+    "out": "Rémy Lascary",
+    "minute": "71"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Naouirou Ahamada",
+    "out": "Danny Namaso",
+    "minute": "81"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Pierre Ekwah",
+    "out": "Arthur Piedfort",
+    "minute": "82"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Rayan Mandengue",
+    "out": "Cameron Archer",
+    "minute": "87"
+   },
+   {
+    "team": "Nice",
+    "in": "Ali Abdi",
+    "out": "Niels Nkounkou",
+    "minute": "72"
+   },
+   {
+    "team": "Nice",
+    "in": "Nathan N'Goumou",
+    "out": "Mohamed Amoura",
+    "minute": "86"
+   },
+   {
+    "team": "Nice",
+    "in": "Sofiane Diop",
+    "out": "Elye Wahi",
+    "minute": "86"
+   },
+   {
+    "team": "Nice",
+    "in": "Hicham Boudaoui",
+    "out": "Axel Witsel",
+    "minute": "86"
+   },
+   {
+    "team": "Nice",
+    "in": "Isak Jansson",
+    "out": "Mohamed Abdelmonem",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "François Letexier",
+  "attendance": 15656,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

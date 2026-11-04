@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "ligue1-2026-27-2026-10-17-strasbourg-parissaintgermain",
+ "date": "2026-10-17",
+ "home": "Strasbourg",
+ "away": "Paris Saint-Germain",
+ "score": "1-3",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802962",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802962"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Filip Jörgensen",
+   "Genesis Antwi",
+   "Jeyland Mitchell",
+   "Karim Coulibaly",
+   "Oso",
+   "Dário Essugo",
+   "Pape Demba Diop",
+   "Gessime Yassine",
+   "Giovanni Reyna",
+   "Fabio Baldé",
+   "Conrad Harder"
+  ],
+  "home_bench": [
+   "Samuel Amo-Ameyaw",
+   "Samir El Mourabet",
+   "Jacobo Ortega",
+   "Yaya Dieme",
+   "Miłosz Piekutowski",
+   "Lucas Høgsberg",
+   "Yoann Becker",
+   "Diogo Sousa",
+   "Tyrese Noubissie"
+  ],
+  "away_starting_xi": [
+   "Matvey Safonov",
+   "Warren Zaïre-Emery",
+   "Ilya Zabarnyi",
+   "Lucas Hernández",
+   "Lucas Digne",
+   "João Neves",
+   "Dro Fernández",
+   "Lucas Beraldo",
+   "Maghnes Akliouche",
+   "Ferrán Torres",
+   "Khvicha Kvaratskhelia"
+  ],
+  "away_bench": [
+   "Nuno Mendes",
+   "Vítinha",
+   "Désiré Doué",
+   "Achraf Hakimi",
+   "Ousmane Dembélé",
+   "Lucas Chevalier",
+   "Willian Pacho",
+   "Fabián Ruiz",
+   "Mika Godts"
+  ],
+  "substitution_events": [
+   {
+    "team": "Strasbourg",
+    "in": "Samuel Amo-Ameyaw",
+    "out": "Fabio Baldé",
+    "minute": "60"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Samir El Mourabet",
+    "out": "Pape Demba Diop",
+    "minute": "75"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Jacobo Ortega",
+    "out": "Conrad Harder",
+    "minute": "83"
+   },
+   {
+    "team": "Strasbourg",
+    "in": "Yaya Dieme",
+    "out": "Gessime Yassine",
+    "minute": "83"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Nuno Mendes",
+    "out": "Lucas Digne",
+    "minute": "53"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Vítinha",
+    "out": "Lucas Beraldo",
+    "minute": "54"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Désiré Doué",
+    "out": "Dro Fernández",
+    "minute": "54"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Achraf Hakimi",
+    "out": "João Neves",
+    "minute": "63"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Ousmane Dembélé",
+    "out": "Khvicha Kvaratskhelia",
+    "minute": "63"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "Willy Delajod",
+  "attendance": 31331,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ligue1-2026-27-2026-09-03-toulouse-lille",
+ "date": "2026-09-03",
+ "home": "Toulouse",
+ "away": "Lille",
+ "score": "0-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802926",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802926"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Guillaume Restes",
+   "Rafik Messali",
+   "Mark McKenzie",
+   "Rasmus Nicolaisen",
+   "Christ Tapé",
+   "Cristian Cásseres",
+   "Alexis Vossah",
+   "Santiago Hidalgo",
+   "Thomas Jørgensen",
+   "Ilyas Azizi",
+   "Jacen Russell-Rowe"
+  ],
+  "home_bench": [
+   "Julián Vignolo",
+   "Casper Tengstedt",
+   "Ismaïl Diallo",
+   "Mathys Niflore",
+   "Niklas Schmidt",
+   "Niko Sigur",
+   "Seny Koumbassa",
+   "Mathis Amougou",
+   "Sion Oppong"
+  ],
+  "away_starting_xi": [
+   "Berke Özer",
+   "Tiago Santos",
+   "Nathan Ngoy",
+   "Alexsandro Ribeiro",
+   "Calvin Verdonk",
+   "Benjamin André",
+   "Nabil Bentaleb",
+   "Ethan Mbappé",
+   "Hákon Arnar Haraldsson",
+   "Osame Sahraoui",
+   "Olivier Giroud"
+  ],
+  "away_bench": [
+   "Romain Perraud",
+   "Dilane Bakwa",
+   "Ngal Ayel Mukau",
+   "Ayase Ueda",
+   "Başar Önal",
+   "Orlando Gill",
+   "Isaac Cossier",
+   "Maurits Kjærgaard",
+   "Gaëtan Perrin"
+  ],
+  "substitution_events": [
+   {
+    "team": "Toulouse",
+    "in": "Julián Vignolo",
+    "out": "Santiago Hidalgo",
+    "minute": "57"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Casper Tengstedt",
+    "out": "Jacen Russell-Rowe",
+    "minute": "65"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Ismaïl Diallo",
+    "out": "Rafik Messali",
+    "minute": "66"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Mathys Niflore",
+    "out": "Guillaume Restes",
+    "minute": "71"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Niklas Schmidt",
+    "out": "Alexis Vossah",
+    "minute": "72"
+   },
+   {
+    "team": "Lille",
+    "in": "Dilane Bakwa",
+    "out": "Osame Sahraoui",
+    "minute": "46"
+   },
+   {
+    "team": "Lille",
+    "in": "Romain Perraud",
+    "out": "Calvin Verdonk",
+    "minute": "46"
+   },
+   {
+    "team": "Lille",
+    "in": "Ayase Ueda",
+    "out": "Olivier Giroud",
+    "minute": "57"
+   },
+   {
+    "team": "Lille",
+    "in": "Ngal Ayel Mukau",
+    "out": "Ethan Mbappé",
+    "minute": "57"
+   },
+   {
+    "team": "Lille",
+    "in": "Başar Önal",
+    "out": "Nabil Bentaleb",
+    "minute": "71"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Mathieu Vernice",
+  "attendance": 19453,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

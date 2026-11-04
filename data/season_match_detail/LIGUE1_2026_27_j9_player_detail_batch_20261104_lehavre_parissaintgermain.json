@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "ligue1-2026-27-2026-10-30-lehavre-parissaintgermain",
+ "date": "2026-10-30",
+ "home": "Le Havre",
+ "away": "Paris Saint-Germain",
+ "score": "1-5",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5802973",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802973"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Arnaud Bodart",
+   "Ayumu Seko",
+   "Junior Mwanga",
+   "Ahmed Touba",
+   "Djibril Ouziad",
+   "Simon Ebonog",
+   "Amir Richardson",
+   "Lamine N'Diaye",
+   "Rayan Fofana",
+   "Sota Nakamura",
+   "Josh Maja"
+  ],
+  "home_bench": [
+   "Enzo Koffi",
+   "Rassoul Ndiaye",
+   "Mbwana Samatta",
+   "Hakim Dongopandji",
+   "Daren Mosengo",
+   "Gauthier Gallon",
+   "Vincent Sasso",
+   "Guy Zohouri",
+   "Kaito Mizuta"
+  ],
+  "away_starting_xi": [
+   "Matvey Safonov",
+   "Achraf Hakimi",
+   "Ilya Zabarnyi",
+   "Lucas Hernández",
+   "Lucas Digne",
+   "Senny Mayulu",
+   "Warren Zaïre-Emery",
+   "Dro Fernández",
+   "Maghnes Akliouche",
+   "Ferrán Torres",
+   "Mika Godts"
+  ],
+  "away_bench": [
+   "Lucas Beraldo",
+   "David Boly",
+   "Quentin Ndjantou",
+   "Lucas Chevalier",
+   "Willian Pacho",
+   "Fabián Ruiz",
+   "João Neves",
+   "Vítinha",
+   "Désiré Doué"
+  ],
+  "substitution_events": [
+   {
+    "team": "Le Havre",
+    "in": "Mbwana Samatta",
+    "out": "Sota Nakamura",
+    "minute": "65"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Rassoul Ndiaye",
+    "out": "Lamine N'Diaye",
+    "minute": "65"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Enzo Koffi",
+    "out": "Amir Richardson",
+    "minute": "65"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Hakim Dongopandji",
+    "out": "Rayan Fofana",
+    "minute": "79"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Daren Mosengo",
+    "out": "Simon Ebonog",
+    "minute": "83"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Lucas Beraldo",
+    "out": "Maghnes Akliouche",
+    "minute": "63"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Quentin Ndjantou",
+    "out": "Mika Godts",
+    "minute": "71"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "David Boly",
+    "out": "Achraf Hakimi",
+    "minute": "71"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 5
+  },
+  "provider_score": "1-5",
+  "score_consistent_with_events": true,
+  "referee": "François Letexier",
+  "attendance": 23714,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

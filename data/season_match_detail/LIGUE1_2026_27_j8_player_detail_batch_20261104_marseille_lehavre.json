@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "ligue1-2026-27-2026-10-25-marseille-lehavre",
+ "date": "2026-10-25",
+ "home": "Marseille",
+ "away": "Le Havre",
+ "score": "4-3",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802968",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802968"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jeffrey De Lange",
+   "Timothy Weah",
+   "CJ Egan-Riley",
+   "Nayef Aguerd",
+   "Emerson",
+   "Tochukwu Nnadi",
+   "Pierre-Emile Højbjerg",
+   "Amine Harit",
+   "Himad Abdelli",
+   "Igor Paixão",
+   "Amine Gouiri"
+  ],
+  "home_bench": [
+   "Keyliane Abdallah",
+   "Neal Maupay",
+   "Angel Gomes",
+   "Nouhoum Kamissoko",
+   "Ulisses Garcia",
+   "Théo Vermot",
+   "Bamo Meité",
+   "Kelyann Bezahaf",
+   "Geoffrey Kondogbia"
+  ],
+  "away_starting_xi": [
+   "Gauthier Gallon",
+   "Ayumu Seko",
+   "Junior Mwanga",
+   "Ahmed Touba",
+   "Djibril Ouziad",
+   "Enzo Koffi",
+   "Rassoul Ndiaye",
+   "Simon Ebonog",
+   "Amir Richardson",
+   "Rayan Fofana",
+   "Mbwana Samatta"
+  ],
+  "away_bench": [
+   "Sota Nakamura",
+   "Josh Maja",
+   "Lamine N'Diaye",
+   "Daren Mosengo",
+   "Kaito Mizuta",
+   "Arnaud Bodart",
+   "Vincent Sasso",
+   "Guy Zohouri",
+   "Hakim Dongopandji"
+  ],
+  "substitution_events": [
+   {
+    "team": "Marseille",
+    "in": "Neal Maupay",
+    "out": "Amine Gouiri",
+    "minute": "78"
+   },
+   {
+    "team": "Marseille",
+    "in": "Keyliane Abdallah",
+    "out": "Amine Harit",
+    "minute": "78"
+   },
+   {
+    "team": "Marseille",
+    "in": "Nouhoum Kamissoko",
+    "out": "Himad Abdelli",
+    "minute": "84"
+   },
+   {
+    "team": "Marseille",
+    "in": "Angel Gomes",
+    "out": "Pierre-Emile Højbjerg",
+    "minute": "84"
+   },
+   {
+    "team": "Marseille",
+    "in": "Ulisses Garcia",
+    "out": "Igor Paixão",
+    "minute": "90"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Josh Maja",
+    "out": "Rassoul Ndiaye",
+    "minute": "61"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Sota Nakamura",
+    "out": "Mbwana Samatta",
+    "minute": "61"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Daren Mosengo",
+    "out": "Amir Richardson",
+    "minute": "77"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Lamine N'Diaye",
+    "out": "Enzo Koffi",
+    "minute": "77"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Kaito Mizuta",
+    "out": "Rayan Fofana",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 3
+  },
+  "provider_score": "4-3",
+  "score_consistent_with_events": true,
+  "referee": "Clément Turpin",
+  "attendance": 51767,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

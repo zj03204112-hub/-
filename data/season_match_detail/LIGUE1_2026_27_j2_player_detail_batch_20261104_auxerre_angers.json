@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "ligue1-2026-27-2026-08-29-auxerre-angers",
+ "date": "2026-08-29",
+ "home": "Auxerre",
+ "away": "Angers",
+ "score": "1-3",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802910",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802910"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mamadou Diop",
+   "Lamine Sy",
+   "Sinaly Diomandé",
+   "Elikya Legros",
+   "Clément Akpa",
+   "Arthur Piedfort",
+   "Naouirou Ahamada",
+   "Kévin Danois",
+   "Romain Faivre",
+   "Danny Namaso",
+   "Rémy Lascary"
+  ],
+  "home_bench": [
+   "Fredrik Oppegård",
+   "Aristide Zossou",
+   "Josué Casimir",
+   "Thelonius Bair",
+   "Lamfia Dioubate",
+   "Paul Nardi",
+   "Telli Siwe",
+   "Pierre Ekwah",
+   "Rayan Mandengue"
+  ],
+  "away_starting_xi": [
+   "Anthony Lopes",
+   "Carlens Arcus",
+   "Ousmane Camara",
+   "Jordan Lefort",
+   "Joseph Kalulu",
+   "Yassin Belkhdim",
+   "Branco van den Boomen",
+   "Jim Allevinah",
+   "Anthony Bermont",
+   "Amine Sbaï",
+   "Amine El Ouazzani"
+  ],
+  "away_bench": [
+   "Prosper Peter",
+   "Harouna Djibirin",
+   "Usman Simbakoli",
+   "Marius Louër",
+   "Bane Diatta",
+   "Oumar Pona",
+   "Emmanuel Biumla",
+   "Mael Gernigon",
+   "Jules Bouffandeau"
+  ],
+  "substitution_events": [
+   {
+    "team": "Auxerre",
+    "in": "Fredrik Oppegård",
+    "out": "Rémy Lascary",
+    "minute": "61"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Aristide Zossou",
+    "out": "Elikya Legros",
+    "minute": "62"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Josué Casimir",
+    "out": "Romain Faivre",
+    "minute": "71"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Thelonius Bair",
+    "out": "Danny Namaso",
+    "minute": "71"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Lamfia Dioubate",
+    "out": "Arthur Piedfort",
+    "minute": "80"
+   },
+   {
+    "team": "Angers",
+    "in": "Prosper Peter",
+    "out": "Jim Allevinah",
+    "minute": "67"
+   },
+   {
+    "team": "Angers",
+    "in": "Harouna Djibirin",
+    "out": "Anthony Bermont",
+    "minute": "68"
+   },
+   {
+    "team": "Angers",
+    "in": "Usman Simbakoli",
+    "out": "Amine Sbaï",
+    "minute": "81"
+   },
+   {
+    "team": "Angers",
+    "in": "Marius Louër",
+    "out": "Carlens Arcus",
+    "minute": "87"
+   },
+   {
+    "team": "Angers",
+    "in": "Bane Diatta",
+    "out": "Amine El Ouazzani",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "Hakim Ben El Hadj",
+  "attendance": 15044,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

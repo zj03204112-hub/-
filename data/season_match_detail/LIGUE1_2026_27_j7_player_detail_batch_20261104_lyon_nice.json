@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "ligue1-2026-27-2026-10-18-lyon-nice",
+ "date": "2026-10-18",
+ "home": "Lyon",
+ "away": "Nice",
+ "score": "2-1",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802960",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802960"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Rémy Descamps",
+   "Zachary Athekame",
+   "Clinton Mata",
+   "Moussa Niakhaté",
+   "Abner",
+   "Tanner Tessmann",
+   "Mads Bidstrup",
+   "Kaïl Boudache",
+   "Noah Nartey",
+   "Julien Duranville",
+   "Pavel Šulc"
+  ],
+  "home_bench": [
+   "Corentin Tolisso",
+   "Keito Nakamura",
+   "Felix Bacher",
+   "Ruben Kluivert",
+   "Khalis Merah",
+   "Dominik Greif",
+   "Tyler Morton",
+   "Ernest Nuamah",
+   "Rémi Himbert"
+  ],
+  "away_starting_xi": [
+   "Yéhvann Diouf",
+   "Mohamed Abdelmonem",
+   "Youssouf Ndayishimiye",
+   "Xavier Mandza",
+   "Jonathan Clauss",
+   "Axel Witsel",
+   "Hicham Boudaoui",
+   "Niels Nkounkou",
+   "Gauthier Hein",
+   "Mohamed Amoura",
+   "Elye Wahi"
+  ],
+  "away_bench": [
+   "Alidu Seidu",
+   "Morgan Sanson",
+   "Sofiane Diop",
+   "Isak Jansson",
+   "Teddy Boulhendi",
+   "Hamza Koutoune",
+   "Djibril Coulibaly",
+   "Djelan Morana",
+   "Nathan N'Goumou"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lyon",
+    "in": "Corentin Tolisso",
+    "out": "Noah Nartey",
+    "minute": "61"
+   },
+   {
+    "team": "Lyon",
+    "in": "Keito Nakamura",
+    "out": "Julien Duranville",
+    "minute": "61"
+   },
+   {
+    "team": "Lyon",
+    "in": "Felix Bacher",
+    "out": "Kaïl Boudache",
+    "minute": "75"
+   },
+   {
+    "team": "Lyon",
+    "in": "Khalis Merah",
+    "out": "Pavel Šulc",
+    "minute": "81"
+   },
+   {
+    "team": "Lyon",
+    "in": "Ruben Kluivert",
+    "out": "Abner",
+    "minute": "81"
+   },
+   {
+    "team": "Nice",
+    "in": "Alidu Seidu",
+    "out": "Mohamed Abdelmonem",
+    "minute": "81"
+   },
+   {
+    "team": "Nice",
+    "in": "Sofiane Diop",
+    "out": "Xavier Mandza",
+    "minute": "87"
+   },
+   {
+    "team": "Nice",
+    "in": "Morgan Sanson",
+    "out": "Axel Witsel",
+    "minute": "87"
+   },
+   {
+    "team": "Nice",
+    "in": "Isak Jansson",
+    "out": "Gauthier Hein",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "François Letexier",
+  "attendance": 43633,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

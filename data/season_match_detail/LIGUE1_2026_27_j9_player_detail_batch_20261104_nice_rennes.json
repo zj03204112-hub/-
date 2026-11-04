@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "ligue1-2026-27-2026-10-30-nice-rennes",
+ "date": "2026-10-30",
+ "home": "Nice",
+ "away": "Rennes",
+ "score": "5-2",
+ "halftime_score": "3-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802978",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802978"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Yéhvann Diouf",
+   "Mohamed Abdelmonem",
+   "Youssouf Ndayishimiye",
+   "Xavier Mandza",
+   "Jonathan Clauss",
+   "Djibril Coulibaly",
+   "Hicham Boudaoui",
+   "Niels Nkounkou",
+   "Sofiane Diop",
+   "Mohamed Amoura",
+   "Elye Wahi"
+  ],
+  "home_bench": [
+   "Gauthier Hein",
+   "Morgan Sanson",
+   "Hamza Koutoune",
+   "Nathan N'Goumou",
+   "Teddy Boulhendi",
+   "Everton",
+   "Issiaga Camara",
+   "Djelan Morana",
+   "Isak Jansson"
+  ],
+  "away_starting_xi": [
+   "Nicolas Lemaître",
+   "Abdelhamid Aït Boudlal",
+   "Charlie Cresswell",
+   "Anthony Rouault",
+   "Przemysław Frankowski",
+   "Sebastian Szymański",
+   "Valentin Rongier",
+   "Adrien Thomasson",
+   "Mahamadou Nagida",
+   "Mousa Tamari",
+   "Boulaye Dia"
+  ],
+  "away_bench": [
+   "Bryan Reynolds",
+   "Mahdi Camara",
+   "Djaoui Cissé",
+   "Issa Soumaré",
+   "Eliezer Mayenda",
+   "Kilian Belazzoug",
+   "Gonçalo Oliveira",
+   "Quentin Merlin",
+   "Ludovic Blas"
+  ],
+  "substitution_events": [
+   {
+    "team": "Nice",
+    "in": "Gauthier Hein",
+    "out": "Sofiane Diop",
+    "minute": "68"
+   },
+   {
+    "team": "Nice",
+    "in": "Morgan Sanson",
+    "out": "Djibril Coulibaly",
+    "minute": "74"
+   },
+   {
+    "team": "Nice",
+    "in": "Hamza Koutoune",
+    "out": "Jonathan Clauss",
+    "minute": "85"
+   },
+   {
+    "team": "Nice",
+    "in": "Nathan N'Goumou",
+    "out": "Elye Wahi",
+    "minute": "85"
+   },
+   {
+    "team": "Rennes",
+    "in": "Bryan Reynolds",
+    "out": "Przemysław Frankowski",
+    "minute": "46"
+   },
+   {
+    "team": "Rennes",
+    "in": "Mahdi Camara",
+    "out": "Adrien Thomasson",
+    "minute": "46"
+   },
+   {
+    "team": "Rennes",
+    "in": "Djaoui Cissé",
+    "out": "Valentin Rongier",
+    "minute": "68"
+   },
+   {
+    "team": "Rennes",
+    "in": "Issa Soumaré",
+    "out": "Boulaye Dia",
+    "minute": "68"
+   },
+   {
+    "team": "Rennes",
+    "in": "Eliezer Mayenda",
+    "out": "Mousa Tamari",
+    "minute": "74"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 2
+  },
+  "provider_score": "5-2",
+  "score_consistent_with_events": true,
+  "referee": "Eric Wattellier",
+  "attendance": 18573,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

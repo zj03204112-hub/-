@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "ligue1-2026-27-2026-08-22-troyes-parisfc",
+ "date": "2026-08-22",
+ "home": "Troyes",
+ "away": "Paris FC",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802909",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802909"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Patrick Beach",
+   "Yvann Titi",
+   "Adrien Monfray",
+   "Michel Diaz",
+   "Anis Ouzenadji",
+   "Iron Gomis",
+   "Mouhamed Diop",
+   "Hugo Picard",
+   "Merwan Ifnaou",
+   "Renaud Ripart",
+   "Kandet Diawara"
+  ],
+  "home_bench": [
+   "Noah Donkor",
+   "Antoine Mille",
+   "Alexandre Phliponeau",
+   "Yacouba Kone",
+   "Hillel Konaté",
+   "Paolo Gozzi",
+   "Dermane Karim",
+   "Idrissa Soukouna",
+   "Christ Batola"
+  ],
+  "away_starting_xi": [
+   "Kevin Trapp",
+   "Adama Camara",
+   "Diego Coppola",
+   "Mamadou Mbow",
+   "Otávio",
+   "Rudy Matondo",
+   "Pierre Lees-Melou",
+   "Ilan Kebbal",
+   "Pablo Pagis",
+   "Luca Koleosho",
+   "Lassine Sinayoko"
+  ],
+  "away_bench": [
+   "Moses Simon",
+   "Maxime Lopez",
+   "Omar Sissoko",
+   "Patrick Zabi",
+   "Obed Nkambadio",
+   "Hamari Traoré",
+   "Samir Chergui",
+   "Thibault De Smet",
+   "Vincent Marchetti"
+  ],
+  "substitution_events": [
+   {
+    "team": "Troyes",
+    "in": "Noah Donkor",
+    "out": "Yvann Titi",
+    "minute": "55"
+   },
+   {
+    "team": "Troyes",
+    "in": "Antoine Mille",
+    "out": "Kandet Diawara",
+    "minute": "75"
+   },
+   {
+    "team": "Troyes",
+    "in": "Alexandre Phliponeau",
+    "out": "Iron Gomis",
+    "minute": "76"
+   },
+   {
+    "team": "Troyes",
+    "in": "Yacouba Kone",
+    "out": "Renaud Ripart",
+    "minute": "86"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Moses Simon",
+    "out": "Luca Koleosho",
+    "minute": "46"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Maxime Lopez",
+    "out": "Rudy Matondo",
+    "minute": "63"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Omar Sissoko",
+    "out": "Lassine Sinayoko",
+    "minute": "79"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Patrick Zabi",
+    "out": "Pablo Pagis",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Marc Bollengier",
+  "attendance": 11655,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

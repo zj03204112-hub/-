@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "ligue1-2026-27-2026-08-29-lorient-troyes",
+ "date": "2026-08-29",
+ "home": "Lorient",
+ "away": "Troyes",
+ "score": "1-2",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5802912",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802912"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Yvon Mvogo",
+   "Dembo Sylla",
+   "Montassar Talbi",
+   "Nathaniel Adjei",
+   "Théo Le Bris",
+   "Arthur Avom",
+   "Noah Cadiou",
+   "Arsène Kouassi",
+   "Gabin Bernardeau",
+   "Jean-Victor Makengo",
+   "Mamadou Koné"
+  ],
+  "home_bench": [
+   "Aiyegun Tosin",
+   "Isak Steiner Jensen",
+   "Panos Katseris",
+   "Souleymane Faye",
+   "Noah Mbamba",
+   "Bingourou Kamara",
+   "Alec Georgen",
+   "Nosa Edward Obaretin",
+   "Souleymane Touré"
+  ],
+  "away_starting_xi": [
+   "Patrick Beach",
+   "Lucas Maronnier",
+   "Adrien Monfray",
+   "Michel Diaz",
+   "Anis Ouzenadji",
+   "Antoine Mille",
+   "Mouhamed Diop",
+   "Merwan Ifnaou",
+   "Hugo Picard",
+   "Iron Gomis",
+   "Renaud Ripart"
+  ],
+  "away_bench": [
+   "Kandet Diawara",
+   "Dermane Karim",
+   "Alexandre Phliponeau",
+   "Noah Donkor",
+   "Yacouba Kone",
+   "Hillel Konaté",
+   "Paolo Gozzi",
+   "Idrissa Soukouna",
+   "Christ Batola"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lorient",
+    "in": "Aiyegun Tosin",
+    "out": "Mamadou Koné",
+    "minute": "66"
+   },
+   {
+    "team": "Lorient",
+    "in": "Isak Steiner Jensen",
+    "out": "Gabin Bernardeau",
+    "minute": "66"
+   },
+   {
+    "team": "Lorient",
+    "in": "Panos Katseris",
+    "out": "Théo Le Bris",
+    "minute": "73"
+   },
+   {
+    "team": "Lorient",
+    "in": "Souleymane Faye",
+    "out": "Jean-Victor Makengo",
+    "minute": "73"
+   },
+   {
+    "team": "Lorient",
+    "in": "Noah Mbamba",
+    "out": "Noah Cadiou",
+    "minute": "84"
+   },
+   {
+    "team": "Troyes",
+    "in": "Kandet Diawara",
+    "out": "Hugo Picard",
+    "minute": "67"
+   },
+   {
+    "team": "Troyes",
+    "in": "Dermane Karim",
+    "out": "Antoine Mille",
+    "minute": "78"
+   },
+   {
+    "team": "Troyes",
+    "in": "Alexandre Phliponeau",
+    "out": "Iron Gomis",
+    "minute": "85"
+   },
+   {
+    "team": "Troyes",
+    "in": "Noah Donkor",
+    "out": "Lucas Maronnier",
+    "minute": "86"
+   },
+   {
+    "team": "Troyes",
+    "in": "Yacouba Kone",
+    "out": "Renaud Ripart",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Azzedine Souifi",
+  "attendance": 12711,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

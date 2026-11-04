@@ -1,0 +1,123 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "ligue1-2026-27-2026-09-12-parisfc-lyon",
+ "date": "2026-09-12",
+ "home": "Paris FC",
+ "away": "Lyon",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802934",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802934"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kevin Trapp",
+   "Samir Chergui",
+   "Diego Coppola",
+   "Hamari Traoré",
+   "Adama Camara",
+   "Maxime Lopez",
+   "Pierre Lees-Melou",
+   "Luca Koleosho",
+   "Ilan Kebbal",
+   "Pablo Pagis",
+   "Lassine Sinayoko"
+  ],
+  "home_bench": [
+   "Rudy Matondo",
+   "Moses Simon",
+   "Jonathan Ikoné",
+   "Obed Nkambadio",
+   "Mamadou Mbow",
+   "Yoan Koré",
+   "Patrick Zabi",
+   "Vincent Marchetti",
+   "Omar Sissoko"
+  ],
+  "away_starting_xi": [
+   "Dominik Greif",
+   "Zachary Athekame",
+   "Felix Bacher",
+   "Moussa Niakhaté",
+   "Abner",
+   "Mads Bidstrup",
+   "Tyler Morton",
+   "Ernest Nuamah",
+   "Pavel Šulc",
+   "Corentin Tolisso",
+   "Loïs Openda"
+  ],
+  "away_bench": [
+   "Keito Nakamura",
+   "Tanner Tessmann",
+   "Kaïl Boudache",
+   "Rémy Descamps",
+   "Clinton Mata",
+   "Nicolás Tagliafico",
+   "Ruben Kluivert",
+   "Khalis Merah",
+   "Noah Nartey"
+  ],
+  "substitution_events": [
+   {
+    "team": "Paris FC",
+    "in": "Moses Simon",
+    "out": "Pablo Pagis",
+    "minute": "79"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Rudy Matondo",
+    "out": "Luca Koleosho",
+    "minute": "79"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Jonathan Ikoné",
+    "out": "Ilan Kebbal",
+    "minute": "87"
+   },
+   {
+    "team": "Lyon",
+    "in": "Keito Nakamura",
+    "out": "Loïs Openda",
+    "minute": "75"
+   },
+   {
+    "team": "Lyon",
+    "in": "Tanner Tessmann",
+    "out": "Mads Bidstrup",
+    "minute": "87"
+   },
+   {
+    "team": "Lyon",
+    "in": "Kaïl Boudache",
+    "out": "Ernest Nuamah",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Jérôme Brisard",
+  "attendance": 17992,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

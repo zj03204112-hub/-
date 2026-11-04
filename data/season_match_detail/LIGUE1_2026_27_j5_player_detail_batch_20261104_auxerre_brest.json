@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "ligue1-2026-27-2026-09-20-auxerre-brest",
+ "date": "2026-09-20",
+ "home": "Auxerre",
+ "away": "Brest",
+ "score": "2-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802938",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802938"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mamadou Diop",
+   "Christ Makosso",
+   "Axel Tuanzebe",
+   "Clément Akpa",
+   "Lamine Sy",
+   "Arthur Piedfort",
+   "Kévin Danois",
+   "Fredrik Oppegård",
+   "Danny Namaso",
+   "Rémy Lascary",
+   "Cameron Archer"
+  ],
+  "home_bench": [
+   "Naouirou Ahamada",
+   "Romain Faivre",
+   "Rayan Mandengue",
+   "Pierre Ekwah",
+   "Paul Nardi",
+   "Elikya Legros",
+   "Sékou Fofana",
+   "Sinaly Diomandé",
+   "Lamfia Dioubate"
+  ],
+  "away_starting_xi": [
+   "Egil Selvik",
+   "Kenny Lala",
+   "Raphaël Le Guen",
+   "Gautier Lloris",
+   "Bradley Locko",
+   "Joris Chotard",
+   "Hugo Magnetti",
+   "Giovani Versini",
+   "Kamory Doumbia",
+   "Pathé Mboup",
+   "Ludovic Ajorque"
+  ],
+  "away_bench": [
+   "Mama Baldé",
+   "Lucas Tousart",
+   "Djylian N'Guessan",
+   "Joseph Boende",
+   "Mathis Laine",
+   "Mathieu Patouillet",
+   "Justin Bourgault",
+   "Luck Zogbé",
+   "Ibrahim Kanté"
+  ],
+  "substitution_events": [
+   {
+    "team": "Auxerre",
+    "in": "Romain Faivre",
+    "out": "Rémy Lascary",
+    "minute": "46"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Naouirou Ahamada",
+    "out": "Arthur Piedfort",
+    "minute": "46"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Rayan Mandengue",
+    "out": "Fredrik Oppegård",
+    "minute": "86"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Pierre Ekwah",
+    "out": "Danny Namaso",
+    "minute": "87"
+   },
+   {
+    "team": "Brest",
+    "in": "Mama Baldé",
+    "out": "Giovani Versini",
+    "minute": "68"
+   },
+   {
+    "team": "Brest",
+    "in": "Lucas Tousart",
+    "out": "Gautier Lloris",
+    "minute": "78"
+   },
+   {
+    "team": "Brest",
+    "in": "Djylian N'Guessan",
+    "out": "Pathé Mboup",
+    "minute": "78"
+   },
+   {
+    "team": "Brest",
+    "in": "Joseph Boende",
+    "out": "Joris Chotard",
+    "minute": "86"
+   },
+   {
+    "team": "Brest",
+    "in": "Mathis Laine",
+    "out": "Ludovic Ajorque",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Guillaume Paradis",
+  "attendance": 15086,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

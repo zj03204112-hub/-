@@ -1,0 +1,128 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "ligue1-2026-27-2026-10-17-lille-brest",
+ "date": "2026-10-17",
+ "home": "Lille",
+ "away": "Brest",
+ "score": "1-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802958",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802958"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Orlando Gill",
+   "Maxima Goffi",
+   "Nathan Ngoy",
+   "Tanguy Nianzou",
+   "Romain Perraud",
+   "Benjamin André",
+   "Ngal Ayel Mukau",
+   "Ethan Mbappé",
+   "Hákon Arnar Haraldsson",
+   "Dilane Bakwa",
+   "Olivier Giroud"
+  ],
+  "home_bench": [
+   "Calvin Verdonk",
+   "Nabil Bentaleb",
+   "Soriba Diaoune",
+   "Maurits Kjærgaard",
+   "Zadig Lanssade",
+   "Isaac Cossier",
+   "Başar Önal",
+   "Angel Yondjo",
+   "Gaëtan Perrin"
+  ],
+  "away_starting_xi": [
+   "Egil Selvik",
+   "Kenny Lala",
+   "Lucas Tousart",
+   "Gautier Lloris",
+   "Bradley Locko",
+   "Joris Chotard",
+   "Hugo Magnetti",
+   "Mama Baldé",
+   "Kamory Doumbia",
+   "Pathé Mboup",
+   "Ludovic Ajorque"
+  ],
+  "away_bench": [
+   "Joseph Boende",
+   "Ibrahim Kanté",
+   "Mamady Diambou",
+   "Mathieu Patouillet",
+   "Justin Bourgault",
+   "Luck Zogbé",
+   "Djylian N'Guessan",
+   "Enzo Monchatre"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lille",
+    "in": "Calvin Verdonk",
+    "out": "Romain Perraud",
+    "minute": "54"
+   },
+   {
+    "team": "Lille",
+    "in": "Nabil Bentaleb",
+    "out": "Benjamin André",
+    "minute": "66"
+   },
+   {
+    "team": "Lille",
+    "in": "Soriba Diaoune",
+    "out": "Dilane Bakwa",
+    "minute": "66"
+   },
+   {
+    "team": "Lille",
+    "in": "Maurits Kjærgaard",
+    "out": "Ngal Ayel Mukau",
+    "minute": "77"
+   },
+   {
+    "team": "Brest",
+    "in": "Joseph Boende",
+    "out": "Mama Baldé",
+    "minute": "46"
+   },
+   {
+    "team": "Brest",
+    "in": "Ibrahim Kanté",
+    "out": "Pathé Mboup",
+    "minute": "77"
+   },
+   {
+    "team": "Brest",
+    "in": "Mamady Diambou",
+    "out": "Kamory Doumbia",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Clément Turpin",
+  "attendance": 40779,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

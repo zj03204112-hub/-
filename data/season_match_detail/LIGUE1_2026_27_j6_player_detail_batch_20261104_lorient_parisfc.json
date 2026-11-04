@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "ligue1-2026-27-2026-10-10-lorient-parisfc",
+ "date": "2026-10-10",
+ "home": "Lorient",
+ "away": "Paris FC",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802949",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802949"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Yvon Mvogo",
+   "Nathaniel Adjei",
+   "Montassar Talbi",
+   "Souleymane Touré",
+   "Dembo Sylla",
+   "Noah Cadiou",
+   "Alec Georgen",
+   "Arsène Kouassi",
+   "Jean-Victor Makengo",
+   "Isak Steiner Jensen",
+   "Mamadou Koné"
+  ],
+  "home_bench": [
+   "Gabin Bernardeau",
+   "Ibrahima Baldé",
+   "Arthur Avom",
+   "Nosa Edward Obaretin",
+   "Bingourou Kamara",
+   "Srdjan Kuzmić",
+   "Théo Le Bris",
+   "Samir Haribou",
+   "Souleymane Faye"
+  ],
+  "away_starting_xi": [
+   "Kevin Trapp",
+   "Adama Camara",
+   "Samir Chergui",
+   "Diego Coppola",
+   "Hamari Traoré",
+   "Maxime Lopez",
+   "Pierre Lees-Melou",
+   "Ilan Kebbal",
+   "Pablo Pagis",
+   "Luca Koleosho",
+   "Lassine Sinayoko"
+  ],
+  "away_bench": [
+   "Patrick Zabi",
+   "Rudy Matondo",
+   "Otávio",
+   "Omar Sissoko",
+   "Jean-Philippe Krasso",
+   "Obed Nkambadio",
+   "Emmanuel Mbemba",
+   "Mamadou Mbow",
+   "Thibault De Smet"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lorient",
+    "in": "Ibrahima Baldé",
+    "out": "Mamadou Koné",
+    "minute": "66"
+   },
+   {
+    "team": "Lorient",
+    "in": "Gabin Bernardeau",
+    "out": "Isak Steiner Jensen",
+    "minute": "66"
+   },
+   {
+    "team": "Lorient",
+    "in": "Arthur Avom",
+    "out": "Alec Georgen",
+    "minute": "78"
+   },
+   {
+    "team": "Lorient",
+    "in": "Nosa Edward Obaretin",
+    "out": "Souleymane Touré",
+    "minute": "87"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Rudy Matondo",
+    "out": "Adama Camara",
+    "minute": "65"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Patrick Zabi",
+    "out": "Ilan Kebbal",
+    "minute": "65"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Otávio",
+    "out": "Samir Chergui",
+    "minute": "66"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Omar Sissoko",
+    "out": "Pierre Lees-Melou",
+    "minute": "78"
+   },
+   {
+    "team": "Paris FC",
+    "in": "Jean-Philippe Krasso",
+    "out": "Lassine Sinayoko",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Jérôme Brisard",
+  "attendance": 14072,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

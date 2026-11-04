@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "ligue1-2026-27-2026-10-31-troyes-lemans",
+ "date": "2026-10-31",
+ "home": "Troyes",
+ "away": "Le Mans",
+ "score": "2-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802981",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802981"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hillel Konaté",
+   "Lucas Maronnier",
+   "Adrien Monfray",
+   "Michel Diaz",
+   "Paolo Gozzi",
+   "Antoine Mille",
+   "Dermane Karim",
+   "Mouhamed Diop",
+   "Merwan Ifnaou",
+   "Renaud Ripart",
+   "Timothé Nkada"
+  ],
+  "home_bench": [
+   "Kandet Diawara",
+   "Ismaël Boura",
+   "Iron Gomis",
+   "Jérémy Le Douaron",
+   "Hugo Picard",
+   "Patrick Beach",
+   "Yvann Titi",
+   "Alexandre Phliponeau",
+   "Idrissa Soukouna"
+  ],
+  "away_starting_xi": [
+   "Nicolas Kocik",
+   "Noa Boissé",
+   "Samuel Yohou",
+   "Raúl Torrente",
+   "Alexandre Lauray",
+   "Lucas Buadés",
+   "Antoine Rabillard",
+   "Lucas Bretelle",
+   "Lucas Calodat",
+   "Louis Mafouta",
+   "Habibou Mouhamadou Diallo"
+  ],
+  "away_bench": [
+   "Billal Brahimi",
+   "Dame Gueye",
+   "Jean Vercruysse",
+   "Yasser Larouci",
+   "William Harhouz",
+   "Ewan Hatfout",
+   "Harold Voyer",
+   "Daouda Traoré",
+   "Rayan Bamba"
+  ],
+  "substitution_events": [
+   {
+    "team": "Troyes",
+    "in": "Kandet Diawara",
+    "out": "Timothé Nkada",
+    "minute": "46"
+   },
+   {
+    "team": "Troyes",
+    "in": "Ismaël Boura",
+    "out": "Paolo Gozzi",
+    "minute": "66"
+   },
+   {
+    "team": "Troyes",
+    "in": "Jérémy Le Douaron",
+    "out": "Renaud Ripart",
+    "minute": "79"
+   },
+   {
+    "team": "Troyes",
+    "in": "Iron Gomis",
+    "out": "Mouhamed Diop",
+    "minute": "79"
+   },
+   {
+    "team": "Troyes",
+    "in": "Hugo Picard",
+    "out": "Merwan Ifnaou",
+    "minute": "90"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Billal Brahimi",
+    "out": "Habibou Mouhamadou Diallo",
+    "minute": "46"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Dame Gueye",
+    "out": "Antoine Rabillard",
+    "minute": "46"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Jean Vercruysse",
+    "out": "Alexandre Lauray",
+    "minute": "60"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Yasser Larouci",
+    "out": "Lucas Calodat",
+    "minute": "74"
+   },
+   {
+    "team": "Le Mans",
+    "in": "William Harhouz",
+    "out": "Louis Mafouta",
+    "minute": "74"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Azzedine Souifi",
+  "attendance": 9994,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

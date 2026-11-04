@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "ligue1-2026-27-2026-08-23-angers-lille",
+ "date": "2026-08-23",
+ "home": "Angers",
+ "away": "Lille",
+ "score": "0-2",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5802901",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802901"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Anthony Lopes",
+   "Lilian Rao-Lisoa",
+   "Ousmane Camara",
+   "Jordan Lefort",
+   "Jacques Ekomié",
+   "Yassin Belkhdim",
+   "Branco van den Boomen",
+   "Jim Allevinah",
+   "Anthony Bermont",
+   "Amine Sbaï",
+   "Amine El Ouazzani"
+  ],
+  "home_bench": [
+   "Prosper Peter",
+   "Harouna Djibirin",
+   "Usman Simbakoli",
+   "Carlens Arcus",
+   "Bane Diatta",
+   "Melvin Zinga",
+   "Emmanuel Biumla",
+   "Joseph Kalulu",
+   "Mael Gernigon"
+  ],
+  "away_starting_xi": [
+   "Berke Özer",
+   "Tiago Santos",
+   "Nathan Ngoy",
+   "Alexsandro Ribeiro",
+   "Romain Perraud",
+   "Ngal Ayel Mukau",
+   "Nabil Bentaleb",
+   "Ethan Mbappé",
+   "Hákon Arnar Haraldsson",
+   "Basar Önal",
+   "Olivier Giroud"
+  ],
+  "away_bench": [
+   "Félix Correia",
+   "Gaëtan Perrin",
+   "Osame Sahraoui",
+   "Calvin Verdonk",
+   "Isaac Cossier",
+   "Arnaud Bodart",
+   "Loun Srdanovic",
+   "Soriba Diaoune",
+   "Noah Edjouma"
+  ],
+  "substitution_events": [
+   {
+    "team": "Angers",
+    "in": "Prosper Peter",
+    "out": "Anthony Bermont",
+    "minute": "57"
+   },
+   {
+    "team": "Angers",
+    "in": "Harouna Djibirin",
+    "out": "Jim Allevinah",
+    "minute": "73"
+   },
+   {
+    "team": "Angers",
+    "in": "Usman Simbakoli",
+    "out": "Amine El Ouazzani",
+    "minute": "73"
+   },
+   {
+    "team": "Angers",
+    "in": "Carlens Arcus",
+    "out": "Lilian Rao-Lisoa",
+    "minute": "85"
+   },
+   {
+    "team": "Angers",
+    "in": "Bane Diatta",
+    "out": "Yassin Belkhdim",
+    "minute": "85"
+   },
+   {
+    "team": "Lille",
+    "in": "Félix Correia",
+    "out": "Basar Önal",
+    "minute": "57"
+   },
+   {
+    "team": "Lille",
+    "in": "Osame Sahraoui",
+    "out": "Ethan Mbappé",
+    "minute": "63"
+   },
+   {
+    "team": "Lille",
+    "in": "Gaëtan Perrin",
+    "out": "Olivier Giroud",
+    "minute": "63"
+   },
+   {
+    "team": "Lille",
+    "in": "Isaac Cossier",
+    "out": "Hákon Arnar Haraldsson",
+    "minute": "76"
+   },
+   {
+    "team": "Lille",
+    "in": "Calvin Verdonk",
+    "out": "Romain Perraud",
+    "minute": "76"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Jeremy Stinat",
+  "attendance": 12330,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

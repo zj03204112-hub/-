@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "ligue1-2026-27-2026-10-16-lemans-toulouse",
+ "date": "2026-10-16",
+ "home": "Le Mans",
+ "away": "Toulouse",
+ "score": "0-3",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802957",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802957"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nicolas Kocik",
+   "Djibril Sidibé",
+   "Samuel Yohou",
+   "Harold Voyer",
+   "Lucas Bretelle",
+   "Lucas Buadés",
+   "Daouda Traoré",
+   "Jean Vercruysse",
+   "Yasser Larouci",
+   "Dame Gueye",
+   "Louis Mafouta"
+  ],
+  "home_bench": [
+   "Billal Brahimi",
+   "Lucas Calodat",
+   "Habibou Mouhamadou Diallo",
+   "Rayan Bamba",
+   "Noa Boissé",
+   "Ewan Hatfout",
+   "Alexandre Lauray",
+   "Antoine Rabillard",
+   "William Harhouz"
+  ],
+  "away_starting_xi": [
+   "Guillaume Restes",
+   "Rafik Messali",
+   "Mark McKenzie",
+   "Rasmus Nicolaisen",
+   "Christ Tapé",
+   "Cristian Cásseres",
+   "Niko Sigur",
+   "Aron Dønnum",
+   "Casper Tengstedt",
+   "Thomas Jørgensen",
+   "Jacen Russell-Rowe"
+  ],
+  "away_bench": [
+   "Alexis Vossah",
+   "Julián Vignolo",
+   "Seny Koumbassa",
+   "Theo Collin",
+   "David Odogu",
+   "Ismaïl Diallo",
+   "Mathis Amougou",
+   "Niklas Schmidt",
+   "Santiago Hidalgo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Le Mans",
+    "in": "Billal Brahimi",
+    "out": "Daouda Traoré",
+    "minute": "61"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Lucas Calodat",
+    "out": "Yasser Larouci",
+    "minute": "61"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Habibou Mouhamadou Diallo",
+    "out": "Dame Gueye",
+    "minute": "61"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Rayan Bamba",
+    "out": "Lucas Buadés",
+    "minute": "69"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Noa Boissé",
+    "out": "Harold Voyer",
+    "minute": "77"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Alexis Vossah",
+    "out": "Aron Dønnum",
+    "minute": "64"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Julián Vignolo",
+    "out": "Jacen Russell-Rowe",
+    "minute": "76"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Seny Koumbassa",
+    "out": "Rasmus Nicolaisen",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 3
+  },
+  "provider_score": "0-3",
+  "score_consistent_with_events": true,
+  "referee": "Aurélien Petit",
+  "attendance": 19230,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

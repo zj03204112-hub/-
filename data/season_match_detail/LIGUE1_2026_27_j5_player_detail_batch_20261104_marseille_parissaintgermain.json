@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "ligue1-2026-27-2026-09-20-marseille-parissaintgermain",
+ "date": "2026-09-20",
+ "home": "Marseille",
+ "away": "Paris Saint-Germain",
+ "score": "1-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802945",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802945"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jeffrey De Lange",
+   "Timothy Weah",
+   "CJ Egan-Riley",
+   "Nayef Aguerd",
+   "Emerson",
+   "Amine Harit",
+   "Pierre-Emile Højbjerg",
+   "Himad Abdelli",
+   "Igor Paixão",
+   "Neal Maupay",
+   "Amine Gouiri"
+  ],
+  "home_bench": [
+   "Angel Gomes",
+   "Keyliane Abdallah",
+   "Kelyann Bezahaf",
+   "Ulisses Garcia",
+   "Faris Moumbagna",
+   "Théo Vermot",
+   "Alexi Koum",
+   "Derek Cornelius",
+   "Tadjidine Mmadi"
+  ],
+  "away_starting_xi": [
+   "Matvey Safonov",
+   "Warren Zaïre-Emery",
+   "Marquinhos",
+   "Willian Pacho",
+   "Nuno Mendes",
+   "João Neves",
+   "Vítinha",
+   "Fabián Ruiz",
+   "Désiré Doué",
+   "Ousmane Dembélé",
+   "Khvicha Kvaratskhelia"
+  ],
+  "away_bench": [
+   "Ferrán Torres",
+   "Maghnes Akliouche",
+   "Lucas Beraldo",
+   "Mika Godts",
+   "Lucas Chevalier",
+   "Ilya Zabarnyi",
+   "Lucas Digne",
+   "Dro Fernández",
+   "Senny Mayulu"
+  ],
+  "substitution_events": [
+   {
+    "team": "Marseille",
+    "in": "Angel Gomes",
+    "out": "Igor Paixão",
+    "minute": "30"
+   },
+   {
+    "team": "Marseille",
+    "in": "Keyliane Abdallah",
+    "out": "Amine Harit",
+    "minute": "63"
+   },
+   {
+    "team": "Marseille",
+    "in": "Kelyann Bezahaf",
+    "out": "Himad Abdelli",
+    "minute": "84"
+   },
+   {
+    "team": "Marseille",
+    "in": "Faris Moumbagna",
+    "out": "Neal Maupay",
+    "minute": "84"
+   },
+   {
+    "team": "Marseille",
+    "in": "Ulisses Garcia",
+    "out": "Emerson",
+    "minute": "84"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Ferrán Torres",
+    "out": "Khvicha Kvaratskhelia",
+    "minute": "59"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Maghnes Akliouche",
+    "out": "Fabián Ruiz",
+    "minute": "65"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Mika Godts",
+    "out": "Ousmane Dembélé",
+    "minute": "79"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Lucas Beraldo",
+    "out": "Désiré Doué",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "François Letexier",
+  "attendance": 61499,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,129 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "ligue1-2026-27-2026-10-18-lehavre-auxerre",
+ "date": "2026-10-18",
+ "home": "Le Havre",
+ "away": "Auxerre",
+ "score": "1-3",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802956",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802956"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Gauthier Gallon",
+   "Djibril Ouziad",
+   "Junior Mwanga",
+   "Ahmed Touba",
+   "Lamine N'Diaye",
+   "Rassoul Ndiaye",
+   "Simon Ebonog",
+   "Amir Richardson",
+   "Sota Nakamura",
+   "Josh Maja",
+   "Mbwana Samatta"
+  ],
+  "home_bench": [
+   "Enzo Koffi",
+   "Hakim Dongopandji",
+   "Rayan Fofana",
+   "Kaito Mizuta",
+   "Guy Zohouri",
+   "Arnaud Bodart",
+   "Vincent Sasso",
+   "Daren Mosengo",
+   "Ismaïl Bouneb"
+  ],
+  "away_starting_xi": [
+   "Paul Nardi",
+   "Christ Makosso",
+   "Axel Tuanzebe",
+   "Clément Akpa",
+   "Lamine Sy",
+   "Naouirou Ahamada",
+   "Kévin Danois",
+   "Fredrik Oppegård",
+   "Romain Faivre",
+   "Cameron Archer",
+   "Danny Namaso"
+  ],
+  "away_bench": [
+   "Arthur Piedfort",
+   "Elikya Legros",
+   "Mamadou Diop",
+   "Sinaly Diomandé",
+   "Lamfia Dioubate",
+   "Pierre Ekwah",
+   "Aristide Zossou",
+   "Mamoudou Cissokho",
+   "Youssef Khoudda"
+  ],
+  "substitution_events": [
+   {
+    "team": "Le Havre",
+    "in": "Rayan Fofana",
+    "out": "Sota Nakamura",
+    "minute": "62"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Hakim Dongopandji",
+    "out": "Josh Maja",
+    "minute": "62"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Enzo Koffi",
+    "out": "Lamine N'Diaye",
+    "minute": "62"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Kaito Mizuta",
+    "out": "Djibril Ouziad",
+    "minute": "84"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Guy Zohouri",
+    "out": "Rassoul Ndiaye",
+    "minute": "85"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Arthur Piedfort",
+    "out": "Naouirou Ahamada",
+    "minute": "82"
+   },
+   {
+    "team": "Auxerre",
+    "in": "Elikya Legros",
+    "out": "Lamine Sy",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "Eric Wattellier",
+  "attendance": 16867,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

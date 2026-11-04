@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "ligue1-2026-27-2026-08-28-lille-parissaintgermain",
+ "date": "2026-08-28",
+ "home": "Lille",
+ "away": "Paris Saint-Germain",
+ "score": "2-2",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802918",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802918"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Berke Özer",
+   "Tiago Santos",
+   "Nathan Ngoy",
+   "Alexsandro Ribeiro",
+   "Romain Perraud",
+   "Benjamin André",
+   "Nabil Bentaleb",
+   "Ethan Mbappé",
+   "Hákon Arnar Haraldsson",
+   "Félix Correia",
+   "Olivier Giroud"
+  ],
+  "home_bench": [
+   "Ngal Ayel Mukau",
+   "Gaëtan Perrin",
+   "Dilane Bakwa",
+   "Calvin Verdonk",
+   "Arnaud Bodart",
+   "Isaac Cossier",
+   "Basar Önal",
+   "Soriba Diaoune",
+   "Osame Sahraoui"
+  ],
+  "away_starting_xi": [
+   "Matvey Safonov",
+   "Achraf Hakimi",
+   "Marquinhos",
+   "Willian Pacho",
+   "Warren Zaïre-Emery",
+   "Vítinha",
+   "Lucas Beraldo",
+   "Fabián Ruiz",
+   "Maghnes Akliouche",
+   "Ferrán Torres",
+   "Désiré Doué"
+  ],
+  "away_bench": [
+   "Khvicha Kvaratskhelia",
+   "Mika Godts",
+   "Lucas Digne",
+   "Senny Mayulu",
+   "Dro Fernández",
+   "Alessandro Longoni",
+   "Lucas Chevalier",
+   "Ilya Zabarnyi",
+   "Lucas Hernández"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lille",
+    "in": "Ngal Ayel Mukau",
+    "out": "Benjamin André",
+    "minute": "61"
+   },
+   {
+    "team": "Lille",
+    "in": "Gaëtan Perrin",
+    "out": "Félix Correia",
+    "minute": "61"
+   },
+   {
+    "team": "Lille",
+    "in": "Dilane Bakwa",
+    "out": "Ethan Mbappé",
+    "minute": "68"
+   },
+   {
+    "team": "Lille",
+    "in": "Calvin Verdonk",
+    "out": "Hákon Arnar Haraldsson",
+    "minute": "80"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Khvicha Kvaratskhelia",
+    "out": "Désiré Doué",
+    "minute": "46"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Mika Godts",
+    "out": "Lucas Beraldo",
+    "minute": "63"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Senny Mayulu",
+    "out": "Ferrán Torres",
+    "minute": "72"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Lucas Digne",
+    "out": "Fabián Ruiz",
+    "minute": "72"
+   },
+   {
+    "team": "Paris Saint-Germain",
+    "in": "Dro Fernández",
+    "out": "Maghnes Akliouche",
+    "minute": "78"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Eric Wattellier",
+  "attendance": 47793,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

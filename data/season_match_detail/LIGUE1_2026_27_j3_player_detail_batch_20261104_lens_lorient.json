@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ligue1-2026-27-2026-09-05-lens-lorient",
+ "date": "2026-09-05",
+ "home": "Lens",
+ "away": "Lorient",
+ "score": "0-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802921",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802921"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Robin Risser",
+   "Kyllian Antonio",
+   "Ismaëlo Ganiou",
+   "Matthieu Udol",
+   "Ruben Aguilar",
+   "Amadou Haidara",
+   "Yacine Titraoui",
+   "Michał Skóras",
+   "Florian Thauvin",
+   "Thorgan Hazard",
+   "Abdallah Sima"
+  ],
+  "home_bench": [
+   "Souleymane Sagnan",
+   "Andrija Bulatović",
+   "Michaël Cuisance",
+   "Florian Sotoca",
+   "Odsonne Édouard",
+   "Mathieu Gorgelin",
+   "Jonathan Gradit",
+   "Mezian Soares",
+   "Franjo Ivanović"
+  ],
+  "away_starting_xi": [
+   "Yvon Mvogo",
+   "Dembo Sylla",
+   "Montassar Talbi",
+   "Nathaniel Adjei",
+   "Panos Katseris",
+   "Noah Mbamba",
+   "Noah Cadiou",
+   "Arsène Kouassi",
+   "Gabin Bernardeau",
+   "Jean-Victor Makengo",
+   "Mamadou Koné"
+  ],
+  "away_bench": [
+   "Arthur Avom",
+   "Théo Le Bris",
+   "Ibrahima Baldé",
+   "Isak Steiner Jensen",
+   "Bingourou Kamara",
+   "Alec Georgen",
+   "Nosa Edward Obaretin",
+   "Aiyegun Tosin",
+   "Souleymane Faye"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lens",
+    "in": "Souleymane Sagnan",
+    "out": "Matthieu Udol",
+    "minute": "24"
+   },
+   {
+    "team": "Lens",
+    "in": "Andrija Bulatović",
+    "out": "Yacine Titraoui",
+    "minute": "60"
+   },
+   {
+    "team": "Lens",
+    "in": "Michaël Cuisance",
+    "out": "Amadou Haidara",
+    "minute": "61"
+   },
+   {
+    "team": "Lens",
+    "in": "Florian Sotoca",
+    "out": "Ruben Aguilar",
+    "minute": "70"
+   },
+   {
+    "team": "Lens",
+    "in": "Odsonne Édouard",
+    "out": "Thorgan Hazard",
+    "minute": "70"
+   },
+   {
+    "team": "Lorient",
+    "in": "Théo Le Bris",
+    "out": "Panos Katseris",
+    "minute": "67"
+   },
+   {
+    "team": "Lorient",
+    "in": "Ibrahima Baldé",
+    "out": "Mamadou Koné",
+    "minute": "67"
+   },
+   {
+    "team": "Lorient",
+    "in": "Arthur Avom",
+    "out": "Noah Mbamba",
+    "minute": "67"
+   },
+   {
+    "team": "Lorient",
+    "in": "Isak Steiner Jensen",
+    "out": "Gabin Bernardeau",
+    "minute": "75"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Eric Wattellier",
+  "attendance": 37356,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

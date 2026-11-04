@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "ligue1-2026-27-2026-11-01-marseille-toulouse",
+ "date": "2026-11-01",
+ "home": "Marseille",
+ "away": "Toulouse",
+ "score": "2-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802977",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802977"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jeffrey De Lange",
+   "Timothy Weah",
+   "CJ Egan-Riley",
+   "Nayef Aguerd",
+   "Emerson",
+   "Pierre-Emile Højbjerg",
+   "Amine Harit",
+   "Himad Abdelli",
+   "Tochukwu Nnadi",
+   "Igor Paixão",
+   "Amine Gouiri"
+  ],
+  "home_bench": [
+   "Ulisses Garcia",
+   "Kelyann Bezahaf",
+   "Geoffrey Kondogbia",
+   "Angel Gomes",
+   "Neal Maupay",
+   "Théo Vermot",
+   "Bamo Meité",
+   "Nouhoum Kamissoko",
+   "Tadjidine Mmadi"
+  ],
+  "away_starting_xi": [
+   "Guillaume Restes",
+   "Ismaïl Diallo",
+   "Mark McKenzie",
+   "Rasmus Nicolaisen",
+   "Christ Tapé",
+   "Aron Dønnum",
+   "Cristian Cásseres",
+   "Niko Sigur",
+   "Thomas Jørgensen",
+   "Jacen Russell-Rowe",
+   "Casper Tengstedt"
+  ],
+  "away_bench": [
+   "Sion Oppong",
+   "Santiago Hidalgo",
+   "Niklas Schmidt",
+   "Seny Koumbassa",
+   "Julián Vignolo",
+   "Theo Collin",
+   "Alexis Vossah",
+   "Mathis Amougou",
+   "Ilyas Azizi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Marseille",
+    "in": "Ulisses Garcia",
+    "out": "Emerson",
+    "minute": "19"
+   },
+   {
+    "team": "Marseille",
+    "in": "Kelyann Bezahaf",
+    "out": "Amine Harit",
+    "minute": "73"
+   },
+   {
+    "team": "Marseille",
+    "in": "Geoffrey Kondogbia",
+    "out": "Himad Abdelli",
+    "minute": "73"
+   },
+   {
+    "team": "Marseille",
+    "in": "Angel Gomes",
+    "out": "Tochukwu Nnadi",
+    "minute": "87"
+   },
+   {
+    "team": "Marseille",
+    "in": "Neal Maupay",
+    "out": "Amine Gouiri",
+    "minute": "87"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Sion Oppong",
+    "out": "Aron Dønnum",
+    "minute": "46"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Santiago Hidalgo",
+    "out": "Jacen Russell-Rowe",
+    "minute": "57"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Niklas Schmidt",
+    "out": "Ismaïl Diallo",
+    "minute": "67"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Seny Koumbassa",
+    "out": "Rasmus Nicolaisen",
+    "minute": "89"
+   },
+   {
+    "team": "Toulouse",
+    "in": "Julián Vignolo",
+    "out": "Niko Sigur",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Hakim Ben El Hadj",
+  "attendance": 39094,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

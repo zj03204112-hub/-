@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "ligue1-2026-27-2026-11-01-lyon-angers",
+ "date": "2026-11-01",
+ "home": "Lyon",
+ "away": "Angers",
+ "score": "2-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802976",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802976"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dominik Greif",
+   "Zachary Athekame",
+   "Felix Bacher",
+   "Moussa Niakhaté",
+   "Abner",
+   "Mads Bidstrup",
+   "Tanner Tessmann",
+   "Corentin Tolisso",
+   "Julien Duranville",
+   "Ernest Nuamah",
+   "Keito Nakamura"
+  ],
+  "home_bench": [
+   "Kaïl Boudache",
+   "Khalis Merah",
+   "Noah Nartey",
+   "Nicolás Tagliafico",
+   "Rémy Descamps",
+   "Clinton Mata",
+   "Ruben Kluivert",
+   "Cluver Sambi Mbungu",
+   "Alejandro Gomes Rodríguez"
+  ],
+  "away_starting_xi": [
+   "Anthony Lopes",
+   "Carlens Arcus",
+   "Ousmane Camara",
+   "Jordan Lefort",
+   "Lilian Rao-Lisoa",
+   "Joseph Kalulu",
+   "Yassin Belkhdim",
+   "Haris Belkebla",
+   "Branco van den Boomen",
+   "Amine Sbaï",
+   "Prosper Peter"
+  ],
+  "away_bench": [
+   "Harouna Djibirin",
+   "Usman Simbakoli",
+   "Anthony Bermont",
+   "Louis Mouton",
+   "Jim Allevinah",
+   "Melvin Zinga",
+   "Emmanuel Biumla",
+   "Mael Gernigon",
+   "Marius Louër"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lyon",
+    "in": "Kaïl Boudache",
+    "out": "Julien Duranville",
+    "minute": "63"
+   },
+   {
+    "team": "Lyon",
+    "in": "Noah Nartey",
+    "out": "Mads Bidstrup",
+    "minute": "75"
+   },
+   {
+    "team": "Lyon",
+    "in": "Khalis Merah",
+    "out": "Ernest Nuamah",
+    "minute": "75"
+   },
+   {
+    "team": "Lyon",
+    "in": "Nicolás Tagliafico",
+    "out": "Corentin Tolisso",
+    "minute": "88"
+   },
+   {
+    "team": "Angers",
+    "in": "Harouna Djibirin",
+    "out": "Haris Belkebla",
+    "minute": "69"
+   },
+   {
+    "team": "Angers",
+    "in": "Usman Simbakoli",
+    "out": "Prosper Peter",
+    "minute": "69"
+   },
+   {
+    "team": "Angers",
+    "in": "Louis Mouton",
+    "out": "Branco van den Boomen",
+    "minute": "84"
+   },
+   {
+    "team": "Angers",
+    "in": "Jim Allevinah",
+    "out": "Lilian Rao-Lisoa",
+    "minute": "84"
+   },
+   {
+    "team": "Angers",
+    "in": "Anthony Bermont",
+    "out": "Amine Sbaï",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Marc Bollengier",
+  "attendance": 40579,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

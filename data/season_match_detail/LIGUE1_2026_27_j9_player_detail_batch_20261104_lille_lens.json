@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "ligue1-2026-27-2026-10-30-lille-lens",
+ "date": "2026-10-30",
+ "home": "Lille",
+ "away": "Lens",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5802974",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802974"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Berke Özer",
+   "Maxima Goffi",
+   "Nathan Ngoy",
+   "Alexsandro Ribeiro",
+   "Romain Perraud",
+   "Ngal Ayel Mukau",
+   "Nabil Bentaleb",
+   "Benjamin André",
+   "Ethan Mbappé",
+   "Hákon Arnar Haraldsson",
+   "Soriba Diaoune"
+  ],
+  "home_bench": [
+   "Dilane Bakwa",
+   "Olivier Giroud",
+   "Calvin Verdonk",
+   "Gaëtan Perrin",
+   "Orlando Gill",
+   "Isaac Cossier",
+   "Başar Önal",
+   "Maurits Kjærgaard",
+   "Osame Sahraoui"
+  ],
+  "away_starting_xi": [
+   "Robin Risser",
+   "Ruben Aguilar",
+   "Samson Baidoo",
+   "Jean-Clair Todibo",
+   "Saud Abdulhamid",
+   "Amadou Haidara",
+   "Michaël Cuisance",
+   "Matthieu Udol",
+   "Florian Thauvin",
+   "Florian Sotoca",
+   "Thorgan Hazard"
+  ],
+  "away_bench": [
+   "Kyllian Antonio",
+   "Junior Kadile",
+   "Yacine Titraoui",
+   "Franjo Ivanović",
+   "Andrija Bulatović",
+   "Mathieu Gorgelin",
+   "Jonathan Gradit",
+   "Mezian Mesloub Soares",
+   "Michał Skóras"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lille",
+    "in": "Olivier Giroud",
+    "out": "Ethan Mbappé",
+    "minute": "73"
+   },
+   {
+    "team": "Lille",
+    "in": "Dilane Bakwa",
+    "out": "Ngal Ayel Mukau",
+    "minute": "73"
+   },
+   {
+    "team": "Lille",
+    "in": "Calvin Verdonk",
+    "out": "Romain Perraud",
+    "minute": "78"
+   },
+   {
+    "team": "Lille",
+    "in": "Gaëtan Perrin",
+    "out": "Hákon Arnar Haraldsson",
+    "minute": "90"
+   },
+   {
+    "team": "Lens",
+    "in": "Kyllian Antonio",
+    "out": "Jean-Clair Todibo",
+    "minute": "62"
+   },
+   {
+    "team": "Lens",
+    "in": "Junior Kadile",
+    "out": "Florian Sotoca",
+    "minute": "62"
+   },
+   {
+    "team": "Lens",
+    "in": "Franjo Ivanović",
+    "out": "Thorgan Hazard",
+    "minute": "69"
+   },
+   {
+    "team": "Lens",
+    "in": "Yacine Titraoui",
+    "out": "Michaël Cuisance",
+    "minute": "69"
+   },
+   {
+    "team": "Lens",
+    "in": "Andrija Bulatović",
+    "out": "Amadou Haidara",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Jérôme Brisard",
+  "attendance": 45632,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

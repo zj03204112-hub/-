@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "ligue1-2026-27-2026-08-30-rennes-lemans",
+ "date": "2026-08-30",
+ "home": "Rennes",
+ "away": "Le Mans",
+ "score": "3-2",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802916",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802916"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nicolas Lemaître",
+   "Przemysław Frankowski",
+   "Charlie Cresswell",
+   "Abdelhamid Aït Boudlal",
+   "Quentin Merlin",
+   "Sebastian Szymański",
+   "Valentin Rongier",
+   "Adrien Thomasson",
+   "Mousa Tamari",
+   "Estéban Lepaul",
+   "Issa Soumaré"
+  ],
+  "home_bench": [
+   "Mahdi Camara",
+   "Arnaud Nordin",
+   "Ludovic Blas",
+   "Eliezer Mayenda",
+   "Mahamadou Nagida",
+   "Kilian Belazzoug",
+   "Anthony Rouault",
+   "Bryan Reynolds",
+   "Henrick Do Marcolino"
+  ],
+  "away_starting_xi": [
+   "Nicolas Kocik",
+   "Théo Eyoum",
+   "Noa Boissé",
+   "Harold Voyer",
+   "Lucas Buadés",
+   "Lucas Bretelle",
+   "Alexandre Lauray",
+   "Adil Bourabaa",
+   "Lucas Calodat",
+   "Dame Gueye",
+   "Louis Mafouta"
+  ],
+  "away_bench": [
+   "Jean Vercruysse",
+   "Djibril Sidibé",
+   "Antoine Rabillard",
+   "Ewan Hatfout",
+   "Milan Robin",
+   "Raúl Torrente",
+   "Billal Brahimi",
+   "Daouda Traoré",
+   "William Harhouz"
+  ],
+  "substitution_events": [
+   {
+    "team": "Rennes",
+    "in": "Mahdi Camara",
+    "out": "Sebastian Szymański",
+    "minute": "60"
+   },
+   {
+    "team": "Rennes",
+    "in": "Arnaud Nordin",
+    "out": "Issa Soumaré",
+    "minute": "60"
+   },
+   {
+    "team": "Rennes",
+    "in": "Ludovic Blas",
+    "out": "Valentin Rongier",
+    "minute": "74"
+   },
+   {
+    "team": "Rennes",
+    "in": "Eliezer Mayenda",
+    "out": "Mousa Tamari",
+    "minute": "74"
+   },
+   {
+    "team": "Rennes",
+    "in": "Mahamadou Nagida",
+    "out": "Quentin Merlin",
+    "minute": "78"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Jean Vercruysse",
+    "out": "Lucas Bretelle",
+    "minute": "60"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Djibril Sidibé",
+    "out": "Lucas Calodat",
+    "minute": "68"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Antoine Rabillard",
+    "out": "Dame Gueye",
+    "minute": "68"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Milan Robin",
+    "out": "Adil Bourabaa",
+    "minute": "81"
+   },
+   {
+    "team": "Le Mans",
+    "in": "Ewan Hatfout",
+    "out": "Nicolas Kocik",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Romain Lissorgue",
+  "attendance": 25727,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

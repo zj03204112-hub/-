@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Ligue 1",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "ligue1-2026-27-2026-09-05-lehavre-brest",
+ "date": "2026-09-05",
+ "home": "Le Havre",
+ "away": "Brest",
+ "score": "1-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5802920",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5802920"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lionel Mpasi-Nzau",
+   "Ayumu Seko",
+   "Junior Mwanga",
+   "Ahmed Touba",
+   "Elias Jelert",
+   "Simon Ebonog",
+   "Amir Richardson",
+   "Timothée Pembélé",
+   "Rassoul Ndiaye",
+   "Mbwana Samatta",
+   "Josh Maja"
+  ],
+  "home_bench": [
+   "Sota Nakamura",
+   "Enzo Koffi",
+   "Rayan Fofana",
+   "Djibril Ouziad",
+   "Gauthier Gallon",
+   "Vincent Sasso",
+   "Daren Mosengo",
+   "Ismaïl Bouneb",
+   "Kaito Mizuta"
+  ],
+  "away_starting_xi": [
+   "Egil Selvik",
+   "Kenny Lala",
+   "Raphaël Le Guen",
+   "Gautier Lloris",
+   "Bradley Locko",
+   "Joris Chotard",
+   "Hugo Magnetti",
+   "Mama Baldé",
+   "Kamory Doumbia",
+   "Pathé Mboup",
+   "Ludovic Ajorque"
+  ],
+  "away_bench": [
+   "Luck Zogbé",
+   "Noah Edjouma",
+   "Joseph Boende",
+   "Lucas Tousart",
+   "Giovani Versini",
+   "Mathieu Patouillet",
+   "Justin Bourgault",
+   "Djylian N'Guessan",
+   "Mathis Laine"
+  ],
+  "substitution_events": [
+   {
+    "team": "Le Havre",
+    "in": "Sota Nakamura",
+    "out": "Rassoul Ndiaye",
+    "minute": "46"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Enzo Koffi",
+    "out": "Timothée Pembélé",
+    "minute": "62"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Rayan Fofana",
+    "out": "Josh Maja",
+    "minute": "62"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Djibril Ouziad",
+    "out": "Elias Jelert",
+    "minute": "79"
+   },
+   {
+    "team": "Le Havre",
+    "in": "Gauthier Gallon",
+    "out": "Lionel Mpasi-Nzau",
+    "minute": "90"
+   },
+   {
+    "team": "Brest",
+    "in": "Luck Zogbé",
+    "out": "Kenny Lala",
+    "minute": "22"
+   },
+   {
+    "team": "Brest",
+    "in": "Noah Edjouma",
+    "out": "Mama Baldé",
+    "minute": "67"
+   },
+   {
+    "team": "Brest",
+    "in": "Joseph Boende",
+    "out": "Hugo Magnetti",
+    "minute": "75"
+   },
+   {
+    "team": "Brest",
+    "in": "Giovani Versini",
+    "out": "Pathé Mboup",
+    "minute": "75"
+   },
+   {
+    "team": "Brest",
+    "in": "Lucas Tousart",
+    "out": "Kamory Doumbia",
+    "minute": "75"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Marc Bollengier",
+  "attendance": 15984,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LIGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LIGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}
