@@ -52,5 +52,27 @@
  "pipeline": [
   "data_pipeline/collect_aclelite_fotmob.py",
   "data_pipeline/crosscheck_aclelite_scores_flashscore.py"
- ]
+ ],
+ "team_level_stats": {
+  "table": "data/season_match_detail/ACLELITE_2026_27_team_stats.csv",
+  "rows": 4392,
+  "metrics": 36,
+  "available": [
+   "BallPossesion",
+   "total_shots",
+   "ShotsOnTarget",
+   "big_chance",
+   "accurate_passes",
+   "touches_opp_box",
+   "Offsides",
+   "Corners",
+   "Fouls"
+  ],
+  "still_missing": [
+   "shot coordinates",
+   "xG / xGOT"
+  ],
+  "sql_table": "dsl_team_stats",
+  "note": "FotMob publishes this competition at coverage level 'ratings', so the shot map is empty and no xG exists. The team statistics block is complete though, so shots, shots on target, possession and big chances are captured instead of leaving the shot dimension empty."
+ }
 }

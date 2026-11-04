@@ -136,7 +136,17 @@ CREATE TABLE IF NOT EXISTS dsl_assists (
     status TEXT,
     source TEXT
 );
+CREATE TABLE IF NOT EXISTS dsl_team_stats (
+    match_key TEXT NOT NULL,
+    period TEXT,
+    team TEXT,
+    metric_key TEXT,
+    metric_title TEXT,
+    value TEXT,
+    source TEXT
+);
 CREATE INDEX IF NOT EXISTS idx_dsl_players_key ON dsl_players(match_key);
+CREATE INDEX IF NOT EXISTS idx_dsl_team_stats_key ON dsl_team_stats(match_key);
 CREATE INDEX IF NOT EXISTS idx_dsl_events_key ON dsl_events(match_key);
 CREATE INDEX IF NOT EXISTS idx_dsl_shots_key ON dsl_shots(match_key);
 CREATE INDEX IF NOT EXISTS idx_dsl_subs_key ON dsl_substitutions(match_key);
@@ -199,6 +209,7 @@ def main() -> int:
         meta = read_csv(os.path.join(SEASON_DIR, f"{prefix}_match_meta.csv"))
         shots = read_csv(os.path.join(SEASON_DIR, f"{prefix}_shots.csv"))
         assists = read_csv(os.path.join(SEASON_DIR, f"{prefix}_assists.csv"))
+        team_stats = read_csv(os.path.join(SEASON_DIR, f"{prefix}_team_stats.csv"))
         scores = load_scores(prefix)
 
         match_keys = {}
@@ -219,6 +230,7 @@ def main() -> int:
         connection.execute("DELETE FROM dsl_shots WHERE match_key IN (SELECT match_key FROM dsl_matches WHERE league_code=?)", (league_code,))
         connection.execute("DELETE FROM dsl_assists WHERE match_key IN (SELECT match_key FROM dsl_matches WHERE league_code=?)", (league_code,))
         connection.execute("DELETE FROM dsl_match_meta WHERE match_key IN (SELECT match_key FROM dsl_matches WHERE league_code=?)", (league_code,))
+        connection.execute("DELETE FROM dsl_team_stats WHERE match_key IN (SELECT match_key FROM dsl_matches WHERE league_code=?)", (league_code,))
         connection.execute("DELETE FROM dsl_matches WHERE league_code=?", (league_code,))
 
         connection.executemany(
@@ -279,15 +291,24 @@ def main() -> int:
               r.get("Team", ""), r.get("Scorer", ""), r.get("Assist", ""), r.get("Status", ""),
               r.get("Source", "")) for r in assists])
 
+        if team_stats:
+            connection.executemany(
+                "INSERT INTO dsl_team_stats (match_key, period, team, metric_key, metric_title,"
+                " value, source) VALUES (?,?,?,?,?,?,?)",
+                [(match_keys[(r["Date"], r["HomeTeam"], r["AwayTeam"])], r.get("Period", ""),
+                  r.get("Team", ""), r.get("MetricKey", ""), r.get("MetricTitle", ""),
+                  r.get("Value", ""), r.get("Source", "")) for r in team_stats])
+
         connection.commit()
         summary.append({"league": league_code, "fixtures": len(match_keys),
                         "players": len(players), "subs": len(subs), "events": len(events),
-                        "shots": len(shots), "assists": len(assists), "meta": len(meta)})
+                        "shots": len(shots), "assists": len(assists), "meta": len(meta),
+                        "team_stats": len(team_stats)})
 
     counts = {}
     if not args.dry_run:
         for table in ("dsl_matches", "dsl_players", "dsl_substitutions", "dsl_events",
-                      "dsl_match_meta", "dsl_shots", "dsl_assists"):
+                      "dsl_match_meta", "dsl_shots", "dsl_assists", "dsl_team_stats"):
             counts[table] = connection.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
         report = {
             "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
