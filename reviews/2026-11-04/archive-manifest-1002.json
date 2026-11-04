@@ -1,0 +1,111 @@
+{
+  "manifest_version": "daily-football-archive-2026-11-04-1002-v1",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-04",
+  "run_started_at_beijing": "2026-11-04T10:02:10+08:00",
+  "finalized_at_beijing": "2026-11-04T10:22:00+08:00",
+  "summary": {
+    "previous_beijing_date_confirmed_matches": 18,
+    "current_date_early_confirmed_matches": 21,
+    "current_and_next_date_upcoming_fixtures": 32,
+    "pending_status_unverified": 1,
+    "eligible_at_15_00": 9,
+    "shadow_predictions_audited": 4,
+    "xg_cumulative_unique_matches": 55,
+    "xg_cumulative_fulltime_matches": 16,
+    "xg_cumulative_coverage_pct": "29.09",
+    "xg_match_snapshot_rows": 126
+  },
+  "checks": {
+    "all_json_parse_ok": true,
+    "schedule_current_date_count": 6,
+    "schedule_next_date_count": 26,
+    "prediction_hda_hits": 4,
+    "prediction_first_score_hits": 1,
+    "prediction_second_score_hits": 1,
+    "prediction_half_full_hits": 2,
+    "database_connected": false,
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false
+  },
+  "files": [
+    {
+      "path": "reviews/2026-11-04/previous-day-review.json",
+      "blob_sha": "d5beab84d10f094d5aea97c5e691d0f405fff0fd",
+      "bytes": 924,
+      "parse_ok": true
+    },
+    {
+      "path": "reviews/2026-11-04/current-day-early-results.json",
+      "blob_sha": "6475ebdbde20b4db7cc021b53e9574a0ba0efb62",
+      "bytes": 643,
+      "parse_ok": true
+    },
+    {
+      "path": "reviews/2026-11-04/current-day-early-prediction-check.json",
+      "blob_sha": "8fbddb562cffbebf08013ed04c1795e7e2945aca",
+      "bytes": 4972,
+      "parse_ok": true
+    },
+    {
+      "path": "reviews/2026-11-04/source-and-scope-audit.json",
+      "blob_sha": "128c318710b03dba3a39a5efa6e8120790635315",
+      "bytes": 1594,
+      "parse_ok": true
+    },
+    {
+      "path": "fixtures/2026-11-04/schedule.json",
+      "blob_sha": "58db16c5c0089ec83c0260da8300a2f879b96f4c",
+      "bytes": 34431,
+      "parse_ok": true
+    },
+    {
+      "path": "results/domestic-league/2026-11-03/results.json",
+      "blob_sha": "425069aad009de52ac71eb280b5a139d2b89d168",
+      "bytes": 2331,
+      "parse_ok": true
+    },
+    {
+      "path": "results/continental-club/2026-11-03/results.json",
+      "blob_sha": "9545af877b565de72527ccaff63390a26badcb92",
+      "bytes": 5140,
+      "parse_ok": true
+    },
+    {
+      "path": "results/continental-club/2026-11-04/early-results.json",
+      "blob_sha": "f1b58e2653fe62930bbb1467a83b645228e155bd",
+      "bytes": 5314,
+      "parse_ok": true
+    },
+    {
+      "path": "results/other-domestic-leagues/efl-championship/2026-11-04/early-results.json",
+      "blob_sha": "fae5753f0952db7d871d418e860dfb19a9dfaab9",
+      "bytes": 3538,
+      "parse_ok": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_snapshot-1002.csv",
+      "blob_sha": "e3e930b5e1375b8d2eaf8271dfc5a7911d6d2cc1",
+      "bytes": 85640,
+      "parse_ok": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/team_weekly_xg_snapshot-1002.csv",
+      "blob_sha": "32f69f5d62d74b21c214f6e0e25e816f246bd98c",
+      "bytes": 56910,
+      "parse_ok": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/team_weekly_coverage_snapshot-1002.csv",
+      "blob_sha": "e8ef7e5268caf4ad0425bc659c80344a070367dc",
+      "bytes": 38317,
+      "parse_ok": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/xg_coverage_audit-1002.json",
+      "blob_sha": "eabaf32d09785a3a45a258bad987d39e9ddfb3cb",
+      "bytes": 7636,
+      "parse_ok": true
+    }
+  ]
+}
