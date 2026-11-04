@@ -46,5 +46,36 @@
  "certification_status": "109 of 109 completed fixtures cross-checked against an independent secondary source; one official-payload pairing error corrected after three-source confirmation (Rayo-Racing 2026-09-05)",
  "certification_note": "Secondary lineup and event cross-check completed for 84 fixtures by data_pipeline/verify_laliga_player_detail.py; 25 fixtures were already certified by the repository manual audit. Same-minute substitution pairing differences are recorded instead of overwriting the official timeline.",
  "verification_report": "data/season_match_detail/LaLiga_2026_27_verification_report_20261104.json",
- "correction_record": "data/season_match_detail/LaLiga_2026_27_correction_20261104_rayo_racing.json"
+ "correction_record": "data/season_match_detail/LaLiga_2026_27_correction_20261104_rayo_racing.json",
+ "additional_tables": {
+  "events": {
+   "path": "data/season_match_detail/LaLiga_2026_27_events.csv",
+   "rows": 887,
+   "source": "official LaLiga match payload",
+   "content": "goals, penalties, own goals, VAR awards, VAR disallowed goals, yellow/red/second yellow cards"
+  },
+  "match_meta": {
+   "path": "data/season_match_detail/LaLiga_2026_27_match_meta.csv",
+   "rows": 109,
+   "source": "official LaLiga match payload",
+   "content": "formation per team, both coaches, venue, referee"
+  },
+  "shots": {
+   "path": "data/season_match_detail/LaLiga_2026_27_shots.csv",
+   "rows": 2949,
+   "source": "FotMob public match API (secondary, xG not published by LaLiga)",
+   "content": "shot coordinates, xG, xGOT, shot type, situation, on target / blocked flags"
+  },
+  "assists": {
+   "path": "data/season_match_detail/LaLiga_2026_27_assists.csv",
+   "rows": 221,
+   "source": "FotMob public match API (secondary, assists not published by LaLiga)",
+   "content": "assist provider per goal, 220 matched into the events table"
+  }
+ },
+ "reconciliation": {
+  "goals_vs_score": "317 goals plus 11 own goals equal every match score (0 mismatches)",
+  "shots_goal_events": "FotMob shotmap 'Goal' shots (328) equal the official goal total",
+  "var_goal_awarded": "18 VAR 'Goal awarded' markers are stored as var_goal_awarded and excluded from goal counts"
+ }
 }

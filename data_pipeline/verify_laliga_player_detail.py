@@ -57,6 +57,8 @@ NICKNAMES = {
     "chupe": "carlosruizrubio",
     "juani": "juanfernandez",
     "yusi": "youssefenriquez",
+    "raphinha": "raphaeldiasbelloli",
+    "pedri": "pedrogonzalezlopez",
 }
 
 # FotMob team names are club-branded rather than official; map them onto the
