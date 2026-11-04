@@ -17,6 +17,14 @@
  "goals_event_total": 247,
  "score_mismatches": [],
  "score_consistency": "63/63 fixtures where goal events reproduce the provider score",
- "certification_status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending",
- "certification_note": "Single source. A secondary cross-check is still required; uefa.com and Sofascore are not reachable from this environment."
+ "certification_status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_crosscheck_pending",
+ "certification_note": "Scorelines for all 63 fixtures are independently confirmed by the Flashscore competition feed (63/63, zero mismatches). Lineups, cards and shot data still come from a single provider (FotMob) and have no independent cross-check, so they must not be treated as officially certified.",
+ "score_crosscheck": {
+  "reference": "https://www.flashscore.com/football/europe/champions-league/",
+  "batches": 63,
+  "matched": 63,
+  "mismatches": 0,
+  "result": "all matched scorelines agree",
+  "scope": "scoreline only; lineups, cards and shots remain single provider"
+ }
 }

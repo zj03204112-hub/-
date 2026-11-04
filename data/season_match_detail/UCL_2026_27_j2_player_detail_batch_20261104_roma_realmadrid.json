@@ -10,7 +10,7 @@
  "score": "3-4",
  "halftime_score": "1-1",
  "official_match_url": "https://www.fotmob.com/matches/6106274",
- "verification": "fotmob_single_source_structurally_validated",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
  "sources": {
   "fotmob": "https://www.fotmob.com/matches/6106274"
  },
@@ -148,5 +148,15 @@
   "players": "data/season_match_detail/UCL_2026_27_players.csv",
   "substitutions": "data/season_match_detail/UCL_2026_27_substitutions.csv"
  },
- "status": "fotmob_single_source_structurally_validated_secondary_crosscheck_pending"
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_crosscheck_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/europe/champions-league/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/europe/champions-league/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "3-4"
+  }
+ }
 }
