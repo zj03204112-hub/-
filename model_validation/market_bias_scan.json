@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-11-04T12:16:19Z",
+ "definition": "Systematic bias scan on de-vigged opening prices. Outcomes are grouped into segments; each segment is tested for realised frequency differing from implied probability. Discovery uses the first two seasons, validation the last two, and Benjamini-Hochberg controls the discovery false discovery rate at 10%. A finding is only 'confirmed' when the validation segment keeps the sign, at least half the magnitude, and has at least 60 matches.",
+ "discovery_seasons": [
+  "2324",
+  "2425"
+ ],
+ "validation_seasons": [
+  "2526",
+  "2627"
+ ],
+ "counts": {
+  "matches": 5708,
+  "discovery": 3504,
+  "validation": 2204,
+  "segments_tested": 180,
+  "discovery_significant": 3,
+  "confirmed": 0
+ },
+ "findings": [
+  {
+   "dimension": "line",
+   "value": "-0.25",
+   "outcome": "home",
+   "n": 577,
+   "implied": 0.495,
+   "realised": 0.4003,
+   "edge": -0.0946,
+   "z": -4.55,
+   "p": 5.475923711082335e-06,
+   "roi": -0.2151,
+   "q": 0.0005,
+   "validation": {
+    "dimension": "line",
+    "value": "-0.25",
+    "outcome": "home",
+    "n": 368,
+    "implied": 0.4942,
+    "realised": 0.4701,
+    "edge": -0.0241,
+    "z": -0.93,
+    "p": 0.35494439537437994,
+    "roi": -0.0873
+   },
+   "confirmed": false
+  },
+  {
+   "dimension": "line",
+   "value": "-0.25",
+   "outcome": "away",
+   "n": 577,
+   "implied": 0.505,
+   "realised": 0.5997,
+   "edge": 0.0946,
+   "z": 4.55,
+   "p": 5.475923711082058e-06,
+   "roi": 0.1529,
+   "q": 0.0005,
+   "validation": {
+    "dimension": "line",
+    "value": "-0.25",
+    "outcome": "away",
+    "n": 368,
+    "implied": 0.5058,
+    "realised": 0.5299,
+    "edge": 0.0241,
+    "z": 0.93,
+    "p": 0.35494439537438327,
+    "roi": 0.0051
+   },
+   "confirmed": false
+  },
+  {
+   "dimension": "prob",
+   "value": "0.10-0.15",
+   "outcome": "A",
+   "n": 386,
+   "implied": 0.1262,
+   "realised": 0.0725,
+   "edge": -0.0537,
+   "z": -3.18,
+   "p": 0.0014923909747399156,
+   "roi": -0.4573,
+   "q": 0.0895,
+   "validation": {
+    "dimension": "prob",
+    "value": "0.10-0.15",
+    "outcome": "A",
+    "n": 191,
+    "implied": 0.1269,
+    "realised": 0.1099,
+    "edge": -0.0169,
+    "z": -0.7,
+    "p": 0.48234940014475586,
+    "roi": -0.1728
+   },
+   "confirmed": false
+  }
+ ],
+ "note": "ROI is flat-stake at the observed opening price, before any commission."
+}
