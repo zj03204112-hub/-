@@ -151,6 +151,48 @@ def parse_feed(code: str, text: str) -> list[dict]:
     return rows
 
 
+def devig_two(home_odds: float, away_odds: float) -> float | None:
+    """Home cover probability from a two-way Asian handicap market."""
+    if not (math.isfinite(home_odds) and math.isfinite(away_odds)):
+        return None
+    if home_odds <= 1.0 or away_odds <= 1.0:
+        return None
+    a, b = 1.0 / home_odds, 1.0 / away_odds
+    total = a + b
+    return a / total if total > 0 else None
+
+
+def parse_ah_feed(text: str) -> list[dict]:
+    """Rows with the Asian handicap line and de-vigged home cover probabilities."""
+    rows = []
+    for raw in csv.DictReader(io.StringIO(text)):
+        date_text = (raw.get("Date") or "").strip()
+        try:
+            match_date = datetime.strptime(date_text, "%d/%m/%Y").date().isoformat()
+        except ValueError:
+            try:
+                match_date = datetime.strptime(date_text, "%d/%m/%y").date().isoformat()
+            except ValueError:
+                continue
+        try:
+            line = float(raw.get("AHh"))
+        except (TypeError, ValueError):
+            continue
+        record = {"date": match_date, "home": (raw.get("HomeTeam") or "").strip(),
+                  "away": (raw.get("AwayTeam") or "").strip(), "line": line}
+        try:
+            record["p_b365"] = devig_two(float(raw.get("B365AHH")), float(raw.get("B365AHA")))
+        except (TypeError, ValueError):
+            record["p_b365"] = None
+        try:
+            record["p_avg"] = devig_two(float(raw.get("AvgAHH")), float(raw.get("AvgAHA")))
+        except (TypeError, ValueError):
+            record["p_avg"] = None
+        if record["p_b365"] is not None or record["p_avg"] is not None:
+            rows.append(record)
+    return rows
+
+
 def score(probabilities: dict[str, float], actual: str) -> tuple[int, float, float]:
     y = {k: 0.0 for k in probabilities}
     y[actual] = 1.0
