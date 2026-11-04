@@ -1,0 +1,143 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "seriea-2026-27-2026-09-12-atalanta-cagliari",
+ "date": "2026-09-12",
+ "home": "Atalanta",
+ "away": "Cagliari",
+ "score": "1-2",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5749670",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749670"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Marco Carnesecchi",
+   "Raoul Bellanova",
+   "Odilon Kossounou",
+   "Giorgio Scalvini",
+   "Sead Kolašinac",
+   "Lazar Samardžić",
+   "Franck Kessié",
+   "Éderson",
+   "Charles De Ketelaere",
+   "Gianluca Scamacca",
+   "Jonathan Rowe"
+  ],
+  "home_bench": [
+   "Lorenzo Bernasconi",
+   "Nikola Krstović",
+   "Giacomo Raspadori",
+   "Mario Pašalić",
+   "Marco Sportiello",
+   "Thomas Pompei",
+   "Relja Obrić",
+   "Thomas Kristensen",
+   "Davide Zappacosta",
+   "Eljif Elmas",
+   "Nicola Zalewski"
+  ],
+  "away_starting_xi": [
+   "Elia Caprile",
+   "Zé Pedro",
+   "Alessandro Deiola",
+   "Juan Rodríguez",
+   "Adam Obert",
+   "Michel Ndary Adopo",
+   "Alessandro Romano",
+   "Harry Winks",
+   "Jacopo Fazzini",
+   "Daniel Maldini",
+   "Paul Mendy"
+  ],
+  "away_bench": [
+   "Alieu Fadera",
+   "Yukinari Sugawara",
+   "Raphael Kofler",
+   "Kevin Carlos",
+   "Alen Sherri",
+   "Boris Radunović",
+   "Yerry Mina",
+   "Demi Akarakiri",
+   "Giuseppe Aurelio",
+   "Ivan Sulev",
+   "Joseph Liteta",
+   "Riccardo Ciervo",
+   "Roberto Gagliardini",
+   "Yanis Massolin",
+   "Alessandro Sugamele"
+  ],
+  "substitution_events": [
+   {
+    "team": "Atalanta",
+    "in": "Nikola Krstović",
+    "out": "Gianluca Scamacca",
+    "minute": "68"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Lorenzo Bernasconi",
+    "out": "Sead Kolašinac",
+    "minute": "68"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Giacomo Raspadori",
+    "out": "Lazar Samardžić",
+    "minute": "76"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Mario Pašalić",
+    "out": "Franck Kessié",
+    "minute": "86"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Alieu Fadera",
+    "out": "Jacopo Fazzini",
+    "minute": "57"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Yukinari Sugawara",
+    "out": "Zé Pedro",
+    "minute": "68"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Kevin Carlos",
+    "out": "Paul Mendy",
+    "minute": "79"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Raphael Kofler",
+    "out": "Daniel Maldini",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Alberto Arena",
+  "attendance": 21977,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

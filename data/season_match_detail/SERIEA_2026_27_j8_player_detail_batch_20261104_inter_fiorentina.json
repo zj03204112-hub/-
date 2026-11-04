@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "seriea-2026-27-2026-10-25-inter-fiorentina",
+ "date": "2026-10-25",
+ "home": "Inter",
+ "away": "Fiorentina",
+ "score": "2-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749714",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749714"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Ivan Provedel",
+   "Yann Aurel Bisseck",
+   "Manuel Akanji",
+   "Alessandro Bastoni",
+   "Andy Diouf",
+   "Nicolò Barella",
+   "Hakan Çalhanoglu",
+   "Henrikh Mkhitaryan",
+   "Carlos Augusto",
+   "Marcus Thuram",
+   "Francesco Pio Esposito"
+  ],
+  "home_bench": [
+   "Ange-Yoan Bonny",
+   "Federico Dimarco",
+   "Petar Sučić",
+   "Piotr Zieliński",
+   "Matteo Lavelli",
+   "Josep Martínez",
+   "Raffaele Di Gennaro",
+   "Djed Spence",
+   "Leon Jakirović",
+   "Leonardo Bovio",
+   "Aleksandar Stanković",
+   "Mattia Mosconi"
+  ],
+  "away_starting_xi": [
+   "David de Gea",
+   "Álex Jiménez",
+   "Radu Drăgușin",
+   "Marin Pongračić",
+   "Valde",
+   "Cher Ndour",
+   "Nicolò Fagioli",
+   "Marco Brescianini",
+   "Franco Mastantuono",
+   "Mateo Pellegrino",
+   "Alieu Njie"
+  ],
+  "away_bench": [
+   "Viery",
+   "Dodô",
+   "Wilfried Gnonto",
+   "João Mário",
+   "Beto",
+   "Luca Lezzerini",
+   "Oliver Christensen",
+   "Arnis Ademi",
+   "Christ Inao Oulaï",
+   "Antonio Pirrò",
+   "Brando Mazzeo",
+   "Pote"
+  ],
+  "substitution_events": [
+   {
+    "team": "Inter",
+    "in": "Ange-Yoan Bonny",
+    "out": "Francesco Pio Esposito",
+    "minute": "64"
+   },
+   {
+    "team": "Inter",
+    "in": "Federico Dimarco",
+    "out": "Alessandro Bastoni",
+    "minute": "78"
+   },
+   {
+    "team": "Inter",
+    "in": "Piotr Zieliński",
+    "out": "Hakan Çalhanoglu",
+    "minute": "78"
+   },
+   {
+    "team": "Inter",
+    "in": "Petar Sučić",
+    "out": "Henrikh Mkhitaryan",
+    "minute": "78"
+   },
+   {
+    "team": "Inter",
+    "in": "Matteo Lavelli",
+    "out": "Nicolò Barella",
+    "minute": "85"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Viery",
+    "out": "Marin Pongračić",
+    "minute": "51"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Wilfried Gnonto",
+    "out": "Franco Mastantuono",
+    "minute": "75"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Dodô",
+    "out": "Álex Jiménez",
+    "minute": "75"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Beto",
+    "out": "Mateo Pellegrino",
+    "minute": "82"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "João Mário",
+    "out": "Alieu Njie",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Maurizio Mariani",
+  "attendance": 74642,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

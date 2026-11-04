@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "10",
+ "match_id": "seriea-2026-27-2026-10-31-udinese-roma",
+ "date": "2026-10-31",
+ "home": "Udinese",
+ "away": "Roma",
+ "score": "2-5",
+ "halftime_score": "0-4",
+ "official_match_url": "https://www.fotmob.com/matches/5749739",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749739"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Maduka Okoye",
+   "James Abankwah",
+   "Christian Kabasele",
+   "Matteo Palma",
+   "Mërgim Vojvoda",
+   "Jesper Karlström",
+   "Lennon Miller",
+   "Hassane Kamara",
+   "Nicolò Zaniolo",
+   "Jurgen Ekkelenkamp",
+   "Keinan Davis"
+  ],
+  "home_bench": [
+   "Giorgi Chakvetadze",
+   "Unai Gómez",
+   "Jakub Piotrowski",
+   "Juan Arizala",
+   "Lazar Jovanović",
+   "Bartosz Mrozek",
+   "Daniele Padelli",
+   "Enzo Ebosse",
+   "Nicolò Bertola",
+   "Oier Zarraga",
+   "Sandi Lovrić",
+   "Giulio Vinciati"
+  ],
+  "away_starting_xi": [
+   "Pierluigi Gollini",
+   "Daniele Ghilardi",
+   "Evan N'Dicka",
+   "Mario Hermoso",
+   "Nahuel Molina",
+   "Bryan Cristante",
+   "Marten de Roon",
+   "Wesley",
+   "Matias Soulé",
+   "Rodrigo Mora",
+   "Donyell Malen"
+  ],
+  "away_bench": [
+   "Niccolò Pisilli",
+   "Santiago Castro",
+   "Gianluca Mancini",
+   "Devyne Rensch",
+   "Konstantinos Koulierakis",
+   "Devis Vásquez",
+   "Giorgio De Marzi",
+   "Leonardo Balerdi",
+   "Alessandro Di Nunzio",
+   "Emanuele Lulli",
+   "Mandjou Camara"
+  ],
+  "substitution_events": [
+   {
+    "team": "Udinese",
+    "in": "Unai Gómez",
+    "out": "Keinan Davis",
+    "minute": "56"
+   },
+   {
+    "team": "Udinese",
+    "in": "Giorgi Chakvetadze",
+    "out": "Jurgen Ekkelenkamp",
+    "minute": "56"
+   },
+   {
+    "team": "Udinese",
+    "in": "Jakub Piotrowski",
+    "out": "Nicolò Zaniolo",
+    "minute": "67"
+   },
+   {
+    "team": "Udinese",
+    "in": "Lazar Jovanović",
+    "out": "Jesper Karlström",
+    "minute": "82"
+   },
+   {
+    "team": "Udinese",
+    "in": "Juan Arizala",
+    "out": "Hassane Kamara",
+    "minute": "82"
+   },
+   {
+    "team": "Roma",
+    "in": "Niccolò Pisilli",
+    "out": "Rodrigo Mora",
+    "minute": "59"
+   },
+   {
+    "team": "Roma",
+    "in": "Santiago Castro",
+    "out": "Donyell Malen",
+    "minute": "59"
+   },
+   {
+    "team": "Roma",
+    "in": "Gianluca Mancini",
+    "out": "Matias Soulé",
+    "minute": "79"
+   },
+   {
+    "team": "Roma",
+    "in": "Devyne Rensch",
+    "out": "Wesley",
+    "minute": "79"
+   },
+   {
+    "team": "Roma",
+    "in": "Konstantinos Koulierakis",
+    "out": "Mario Hermoso",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 5
+  },
+  "provider_score": "2-5",
+  "score_consistent_with_events": true,
+  "referee": "Fabio Maresca",
+  "attendance": 24824,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

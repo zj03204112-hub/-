@@ -1,0 +1,149 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "seriea-2026-27-2026-10-28-venezia-inter",
+ "date": "2026-10-28",
+ "home": "Venezia",
+ "away": "Inter",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749729",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749729"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Filip Stanković",
+   "Redouane Halhal",
+   "Matías Moreno",
+   "Juan Jesus",
+   "Antoine Hainaut",
+   "Kike Pérez",
+   "Simon Sohm",
+   "Thórir Helgason",
+   "Pasquale Mazzocchi",
+   "Akor Adams",
+   "Lion Lauberbach"
+  ],
+  "home_bench": [
+   "Gianluca Busio",
+   "Toma Bašić",
+   "John Yeboah",
+   "Ridgeciano Haps",
+   "Lorenzo Montipò",
+   "Armel Bella-Kotchap",
+   "Joël Schingtienne",
+   "Alfred Duncan",
+   "Lamine Fanne",
+   "Matteo Dagasso",
+   "Richie Sagrado",
+   "Toni Fernández",
+   "Albion Rrahmani",
+   "Kornel Lisman"
+  ],
+  "away_starting_xi": [
+   "Ivan Provedel",
+   "Yann Aurel Bisseck",
+   "Alessandro Bastoni",
+   "Carlos Augusto",
+   "Andy Diouf",
+   "Petar Sučić",
+   "Aleksandar Stanković",
+   "Piotr Zieliński",
+   "Federico Dimarco",
+   "Ange-Yoan Bonny",
+   "Marcus Thuram"
+  ],
+  "away_bench": [
+   "Manuel Akanji",
+   "Hakan Çalhanoglu",
+   "Nicolò Barella",
+   "Francesco Pio Esposito",
+   "Djed Spence",
+   "Josep Martínez",
+   "Raffaele Di Gennaro",
+   "Leon Jakirović",
+   "Leonardo Bovio",
+   "Henrikh Mkhitaryan",
+   "Matteo Lavelli",
+   "Mattia Mosconi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Venezia",
+    "in": "Gianluca Busio",
+    "out": "Kike Pérez",
+    "minute": "61"
+   },
+   {
+    "team": "Venezia",
+    "in": "Toma Bašić",
+    "out": "Thórir Helgason",
+    "minute": "68"
+   },
+   {
+    "team": "Venezia",
+    "in": "John Yeboah",
+    "out": "Lion Lauberbach",
+    "minute": "69"
+   },
+   {
+    "team": "Venezia",
+    "in": "Ridgeciano Haps",
+    "out": "Pasquale Mazzocchi",
+    "minute": "76"
+   },
+   {
+    "team": "Inter",
+    "in": "Nicolò Barella",
+    "out": "Petar Sučić",
+    "minute": "46"
+   },
+   {
+    "team": "Inter",
+    "in": "Hakan Çalhanoglu",
+    "out": "Aleksandar Stanković",
+    "minute": "46"
+   },
+   {
+    "team": "Inter",
+    "in": "Manuel Akanji",
+    "out": "Yann Aurel Bisseck",
+    "minute": "46"
+   },
+   {
+    "team": "Inter",
+    "in": "Francesco Pio Esposito",
+    "out": "Ange-Yoan Bonny",
+    "minute": "65"
+   },
+   {
+    "team": "Inter",
+    "in": "Djed Spence",
+    "out": "Marcus Thuram",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Luca Pairetto",
+  "attendance": 12048,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

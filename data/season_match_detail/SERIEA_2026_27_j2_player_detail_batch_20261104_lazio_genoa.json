@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "seriea-2026-27-2026-08-30-lazio-genoa",
+ "date": "2026-08-30",
+ "home": "Lazio",
+ "away": "Genoa",
+ "score": "1-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749655",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749655"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Christos Mandas",
+   "Romano Floriani Mussolini",
+   "Danilho Doekhi",
+   "Oliver Provstgaard",
+   "Nuno Tavares",
+   "Davide Frattesi",
+   "Nicolò Rovella",
+   "Kenneth Taylor",
+   "Matteo Cancellieri",
+   "Boulaye Dia",
+   "Mattia Zaccagni"
+  ],
+  "home_bench": [
+   "Reda Belahyane",
+   "Alfonso Pedraza",
+   "Gustav Isaksen",
+   "Manuel Lazzari",
+   "Andrea Pinamonti",
+   "Davide Renzetti",
+   "Edoardo Motta",
+   "Alessio Romagnoli",
+   "Josip Sutalo",
+   "Ricardo Bordon",
+   "Adrian Przyborek",
+   "Valerio Farcomeni",
+   "Federico Serra",
+   "Tijjani Noslin"
+  ],
+  "away_starting_xi": [
+   "Justin Bijlow",
+   "Alessandro Marcandalli",
+   "Leo Østigard",
+   "Johan Vásquez",
+   "Mikael Egill Ellertsson",
+   "Morten Frendrup",
+   "Djibril Sow",
+   "Brooke Norton-Cuffy",
+   "Tommaso Baldanzi",
+   "Vítinha",
+   "Lorenzo Colombo"
+  ],
+  "away_bench": [
+   "Junior Messias",
+   "Milutin Osmajic",
+   "Amorim",
+   "Franz-Ethan Meichtry",
+   "Daniele Sommariva",
+   "Franz Stolz",
+   "David Puczka",
+   "Mamedi Doucouré",
+   "Marcelo Vaz",
+   "Mario Mitaj",
+   "Sebastian Otoa",
+   "Aarón Martín",
+   "Samuel Wiafe",
+   "Stefano Sabelli",
+   "Elias Havel"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lazio",
+    "in": "Reda Belahyane",
+    "out": "Nicolò Rovella",
+    "minute": "37"
+   },
+   {
+    "team": "Lazio",
+    "in": "Gustav Isaksen",
+    "out": "Matteo Cancellieri",
+    "minute": "63"
+   },
+   {
+    "team": "Lazio",
+    "in": "Alfonso Pedraza",
+    "out": "Nuno Tavares",
+    "minute": "63"
+   },
+   {
+    "team": "Lazio",
+    "in": "Manuel Lazzari",
+    "out": "Romano Floriani Mussolini",
+    "minute": "80"
+   },
+   {
+    "team": "Lazio",
+    "in": "Andrea Pinamonti",
+    "out": "Boulaye Dia",
+    "minute": "81"
+   },
+   {
+    "team": "Genoa",
+    "in": "Junior Messias",
+    "out": "Djibril Sow",
+    "minute": "58"
+   },
+   {
+    "team": "Genoa",
+    "in": "Milutin Osmajic",
+    "out": "Vítinha",
+    "minute": "63"
+   },
+   {
+    "team": "Genoa",
+    "in": "Amorim",
+    "out": "Johan Vásquez",
+    "minute": "78"
+   },
+   {
+    "team": "Genoa",
+    "in": "Franz-Ethan Meichtry",
+    "out": "Tommaso Baldanzi",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Ermanno Feliciani",
+  "attendance": 6058,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

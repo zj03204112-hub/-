@@ -1,0 +1,158 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "seriea-2026-27-2026-10-24-cagliari-bologna",
+ "date": "2026-10-24",
+ "home": "Cagliari",
+ "away": "Bologna",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749711",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749711"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Elia Caprile",
+   "Zé Pedro",
+   "Alessandro Deiola",
+   "Juan Rodríguez",
+   "Adam Obert",
+   "Alessandro Romano",
+   "Harry Winks",
+   "Michel Ndary Adopo",
+   "Yanis Massolin",
+   "Daniel Maldini",
+   "Paul Mendy"
+  ],
+  "home_bench": [
+   "Yukinari Sugawara",
+   "Roberto Gagliardini",
+   "Kevin Carlos",
+   "Alieu Fadera",
+   "Giuseppe Aurelio",
+   "Alen Sherri",
+   "Boris Radunović",
+   "Raphael Kofler",
+   "Yerry Mina",
+   "Ivan Sulev",
+   "Joseph Liteta",
+   "Riccardo Ciervo",
+   "Alessandro Sugamele",
+   "Jacopo Fazzini",
+   "M'Bala Nzola"
+  ],
+  "away_starting_xi": [
+   "Łukasz Skorupski",
+   "Matteo Darmian",
+   "Nicolò Casale",
+   "Arthur Theate",
+   "Nadir Zortea",
+   "Lewis Ferguson",
+   "Tommaso Pobega",
+   "Juan Miranda",
+   "Federico Bernardeschi",
+   "Jens Odgaard",
+   "Nicolò Cambiaghi"
+  ],
+  "away_bench": [
+   "Rahim Alhassane",
+   "Marco Libra",
+   "Mikel Amondarain",
+   "Martin Vitík",
+   "Samuel Mbangula",
+   "Massimo Pessina",
+   "Ukko Happonen",
+   "Eivind Helland",
+   "Lorenzo De Silvestri",
+   "Torbjørn Heggem",
+   "Nikola Moro",
+   "Oussama El Azzouzi",
+   "Artem Dovbyk",
+   "Jay Enem"
+  ],
+  "substitution_events": [
+   {
+    "team": "Cagliari",
+    "in": "Yukinari Sugawara",
+    "out": "Zé Pedro",
+    "minute": "46"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Roberto Gagliardini",
+    "out": "Harry Winks",
+    "minute": "46"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Kevin Carlos",
+    "out": "Daniel Maldini",
+    "minute": "67"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Alieu Fadera",
+    "out": "Alessandro Romano",
+    "minute": "75"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Giuseppe Aurelio",
+    "out": "Yanis Massolin",
+    "minute": "86"
+   },
+   {
+    "team": "Bologna",
+    "in": "Marco Libra",
+    "out": "Nadir Zortea",
+    "minute": "75"
+   },
+   {
+    "team": "Bologna",
+    "in": "Mikel Amondarain",
+    "out": "Jens Odgaard",
+    "minute": "75"
+   },
+   {
+    "team": "Bologna",
+    "in": "Rahim Alhassane",
+    "out": "Juan Miranda",
+    "minute": "75"
+   },
+   {
+    "team": "Bologna",
+    "in": "Martin Vitík",
+    "out": "Matteo Darmian",
+    "minute": "85"
+   },
+   {
+    "team": "Bologna",
+    "in": "Samuel Mbangula",
+    "out": "Federico Bernardeschi",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Kevin Bonacina",
+  "attendance": 16161,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

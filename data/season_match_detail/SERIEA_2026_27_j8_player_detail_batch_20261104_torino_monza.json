@@ -1,0 +1,156 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "seriea-2026-27-2026-10-23-torino-monza",
+ "date": "2026-10-23",
+ "home": "Torino",
+ "away": "Monza",
+ "score": "3-2",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749718",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749718"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lucas Perri",
+   "Saúl Coco",
+   "Ardian Ismajli",
+   "Pietro Comuzzo",
+   "Rafik Belghali",
+   "Nikola Vlašić",
+   "Rolando Mandragora",
+   "Kian Fitz-Jim",
+   "Alessio Cacciamani",
+   "Ché Adams",
+   "Giovanni Simeone"
+  ],
+  "home_bench": [
+   "Gvidas Gineitis",
+   "Nathan Patterson",
+   "Daniel Bragança",
+   "Sandro Kulenović",
+   "Zakaria Aboukhlal",
+   "Diego Mascardi",
+   "Lapo Siviero",
+   "Eray Cömert",
+   "Cesare Casadei",
+   "Cristiano Biraghi",
+   "Duván Zapata",
+   "Gaetano Oristanio",
+   "Pietro Pellegri"
+  ],
+  "away_starting_xi": [
+   "Noel Törnqvist",
+   "Saba Goglichidze",
+   "Lorenzo Lucchesi",
+   "Andrea Carboni",
+   "Samuele Birindelli",
+   "Foe Ondoa",
+   "Ebenezer Akinsanmiro",
+   "Ricardo Mangas",
+   "Dany Mota",
+   "Jay Robinson",
+   "Gustavo Varela"
+  ],
+  "away_bench": [
+   "Eddy Kouadio",
+   "Michael Folorunsho",
+   "Cyril Ngonge",
+   "Patrick Cutrone",
+   "Mathis Mout",
+   "Aljaž Strajnar",
+   "Demba Thiam",
+   "Valentin Antov",
+   "Adam Bakoune",
+   "Andrea Colpani",
+   "Idrissa Touré",
+   "Omari Forson",
+   "Patrick Ciurria",
+   "Exequiel Zeballos"
+  ],
+  "substitution_events": [
+   {
+    "team": "Torino",
+    "in": "Gvidas Gineitis",
+    "out": "Rolando Mandragora",
+    "minute": "51"
+   },
+   {
+    "team": "Torino",
+    "in": "Sandro Kulenović",
+    "out": "Giovanni Simeone",
+    "minute": "71"
+   },
+   {
+    "team": "Torino",
+    "in": "Nathan Patterson",
+    "out": "Alessio Cacciamani",
+    "minute": "71"
+   },
+   {
+    "team": "Torino",
+    "in": "Daniel Bragança",
+    "out": "Kian Fitz-Jim",
+    "minute": "71"
+   },
+   {
+    "team": "Torino",
+    "in": "Zakaria Aboukhlal",
+    "out": "Rafik Belghali",
+    "minute": "84"
+   },
+   {
+    "team": "Monza",
+    "in": "Eddy Kouadio",
+    "out": "Lorenzo Lucchesi",
+    "minute": "63"
+   },
+   {
+    "team": "Monza",
+    "in": "Michael Folorunsho",
+    "out": "Foe Ondoa",
+    "minute": "63"
+   },
+   {
+    "team": "Monza",
+    "in": "Cyril Ngonge",
+    "out": "Dany Mota",
+    "minute": "79"
+   },
+   {
+    "team": "Monza",
+    "in": "Patrick Cutrone",
+    "out": "Jay Robinson",
+    "minute": "79"
+   },
+   {
+    "team": "Monza",
+    "in": "Mathis Mout",
+    "out": "Andrea Carboni",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Matteo Marchetti",
+  "attendance": 19096,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,158 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "seriea-2026-27-2026-08-22-parma-cagliari",
+ "date": "2026-08-22",
+ "home": "Parma",
+ "away": "Cagliari",
+ "score": "0-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749646",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749646"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Edoardo Corvi",
+   "Enrico Del Prato",
+   "Mariano Troilo",
+   "Abdoulaye Ndiaye",
+   "Emanuele Valeri",
+   "Adrián Bernabé",
+   "Abdou-Salam Konate",
+   "Christian Ordóñez",
+   "Mandela Keita",
+   "El Bilal Touré",
+   "Simone Lontani"
+  ],
+  "home_bench": [
+   "Pontus Almqvist",
+   "Ousmane Diallo",
+   "Rachid Kouda",
+   "Benjamín Cremaschi",
+   "Nesta Elphege",
+   "Alessandro Mazzocchi",
+   "Giovanni Daffara",
+   "Dominik Drobnic",
+   "Lautaro Valenti",
+   "Franco Carboni",
+   "Oliver Sørensen",
+   "David Romero",
+   "Matija Frigan",
+   "Thomás de Martis"
+  ],
+  "away_starting_xi": [
+   "Elia Caprile",
+   "Zé Pedro",
+   "Alessandro Deiola",
+   "Juan Rodríguez",
+   "Adam Obert",
+   "Alessandro Romano",
+   "Harry Winks",
+   "Michel Ndary Adopo",
+   "Daniel Maldini",
+   "Jacopo Fazzini",
+   "Paul Mendy"
+  ],
+  "away_bench": [
+   "Gabriele Zappa",
+   "Mattia Felici",
+   "Gennaro Borrelli",
+   "Giuseppe Aurelio",
+   "Kingstone Mutandwa",
+   "Alen Sherri",
+   "Boris Radunovic",
+   "Raphael Kofler",
+   "Yerry Mina",
+   "Ivan Sulev",
+   "Joseph Liteta",
+   "Matteo Prati",
+   "Nicolò Cavuoti",
+   "Alieu Fadera",
+   "Kevin Carlos"
+  ],
+  "substitution_events": [
+   {
+    "team": "Parma",
+    "in": "Pontus Almqvist",
+    "out": "Adrián Bernabé",
+    "minute": "66"
+   },
+   {
+    "team": "Parma",
+    "in": "Ousmane Diallo",
+    "out": "Simone Lontani",
+    "minute": "75"
+   },
+   {
+    "team": "Parma",
+    "in": "Rachid Kouda",
+    "out": "Mandela Keita",
+    "minute": "76"
+   },
+   {
+    "team": "Parma",
+    "in": "Nesta Elphege",
+    "out": "Abdou-Salam Konate",
+    "minute": "85"
+   },
+   {
+    "team": "Parma",
+    "in": "Benjamín Cremaschi",
+    "out": "Mariano Troilo",
+    "minute": "85"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Gennaro Borrelli",
+    "out": "Paul Mendy",
+    "minute": "66"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Mattia Felici",
+    "out": "Jacopo Fazzini",
+    "minute": "66"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Gabriele Zappa",
+    "out": "Zé Pedro",
+    "minute": "66"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Giuseppe Aurelio",
+    "out": "Adam Obert",
+    "minute": "87"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Kingstone Mutandwa",
+    "out": "Daniel Maldini",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Daniele Perenzoni",
+  "attendance": 15365,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

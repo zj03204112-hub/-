@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "seriea-2026-27-2026-09-14-torino-roma",
+ "date": "2026-09-14",
+ "home": "Torino",
+ "away": "Roma",
+ "score": "0-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5749678",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749678"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lucas Perri",
+   "Eray Cömert",
+   "Saúl Coco",
+   "Pietro Comuzzo",
+   "Rafik Belghali",
+   "Gvidas Gineitis",
+   "Rolando Mandragora",
+   "Kian Fitz-Jim",
+   "Niccolò Fortini",
+   "Nikola Vlašić",
+   "Giovanni Simeone"
+  ],
+  "home_bench": [
+   "Alessio Cacciamani",
+   "Daniel Bragança",
+   "Emirhan İlkhan",
+   "Ricardo Rodríguez",
+   "Duván Zapata",
+   "Diego Mascardi",
+   "Lapo Siviero",
+   "Ardian Ismajli",
+   "Nathan Patterson",
+   "Cristiano Biraghi",
+   "Zakaria Aboukhlal",
+   "Gaetano Oristanio",
+   "Sandro Kulenović"
+  ],
+  "away_starting_xi": [
+   "Mile Svilar",
+   "Gianluca Mancini",
+   "Leonardo Balerdi",
+   "Mario Hermoso",
+   "Emanuele Lulli",
+   "Bryan Cristante",
+   "Niccolò Pisilli",
+   "Nahuel Molina",
+   "Matias Soulé",
+   "Paulo Dybala",
+   "Donyell Malen"
+  ],
+  "away_bench": [
+   "Rodrigo Mora",
+   "Santiago Castro",
+   "Manu Koné",
+   "Marten de Roon",
+   "Devyne Rensch",
+   "Giorgio De Marzi",
+   "Pierluigi Gollini",
+   "Daniele Ghilardi",
+   "Konstantinos Koulierakis",
+   "Lorenzo Pellegrini",
+   "Wesley"
+  ],
+  "substitution_events": [
+   {
+    "team": "Torino",
+    "in": "Alessio Cacciamani",
+    "out": "Rafik Belghali",
+    "minute": "46"
+   },
+   {
+    "team": "Torino",
+    "in": "Daniel Bragança",
+    "out": "Gvidas Gineitis",
+    "minute": "46"
+   },
+   {
+    "team": "Torino",
+    "in": "Emirhan İlkhan",
+    "out": "Kian Fitz-Jim",
+    "minute": "59"
+   },
+   {
+    "team": "Torino",
+    "in": "Ricardo Rodríguez",
+    "out": "Niccolò Fortini",
+    "minute": "73"
+   },
+   {
+    "team": "Torino",
+    "in": "Duván Zapata",
+    "out": "Rolando Mandragora",
+    "minute": "84"
+   },
+   {
+    "team": "Roma",
+    "in": "Rodrigo Mora",
+    "out": "Matias Soulé",
+    "minute": "57"
+   },
+   {
+    "team": "Roma",
+    "in": "Santiago Castro",
+    "out": "Donyell Malen",
+    "minute": "57"
+   },
+   {
+    "team": "Roma",
+    "in": "Manu Koné",
+    "out": "Bryan Cristante",
+    "minute": "64"
+   },
+   {
+    "team": "Roma",
+    "in": "Marten de Roon",
+    "out": "Paulo Dybala",
+    "minute": "64"
+   },
+   {
+    "team": "Roma",
+    "in": "Devyne Rensch",
+    "out": "Emanuele Lulli",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Fabio Maresca",
+  "attendance": 21294,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

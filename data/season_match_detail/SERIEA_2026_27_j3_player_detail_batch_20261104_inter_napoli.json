@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "seriea-2026-27-2026-09-05-inter-napoli",
+ "date": "2026-09-05",
+ "home": "Inter",
+ "away": "Napoli",
+ "score": "3-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749666",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749666"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Josep Martínez",
+   "Yann Aurel Bisseck",
+   "Manuel Akanji",
+   "Alessandro Bastoni",
+   "Andy Diouf",
+   "Nicolò Barella",
+   "Piotr Zieliński",
+   "Petar Sučić",
+   "Federico Dimarco",
+   "Francesco Pio Esposito",
+   "Lautaro Martínez"
+  ],
+  "home_bench": [
+   "Curtis Jones",
+   "Marcus Thuram",
+   "Carlos Augusto",
+   "Hakan Çalhanoglu",
+   "Ange-Yoan Bonny",
+   "Ivan Provedel",
+   "Raffaele Di Gennaro",
+   "Benjamin Pavard",
+   "John Stones",
+   "Aleksandar Stanković",
+   "Henrikh Mkhitaryan",
+   "Luis Henrique"
+  ],
+  "away_starting_xi": [
+   "Alex Meret",
+   "Giovanni Di Lorenzo",
+   "Amir Rrahmani",
+   "Rafa Marín",
+   "Leonardo Spinazzola",
+   "Frank Anguissa",
+   "Stanislav Lobotka",
+   "Antonio Vergara",
+   "Matteo Politano",
+   "Rasmus Højlund",
+   "Alisson Santos"
+  ],
+  "away_bench": [
+   "David Neres",
+   "Kevin De Bruyne",
+   "Lorenzo Lucca",
+   "Billy Gilmour",
+   "Benoît Badiashile",
+   "Nikita Contini",
+   "Vanja Milinković-Savić",
+   "Mathías Olivera",
+   "Sam Beukema",
+   "Costantino Favasuli",
+   "Noa Lang"
+  ],
+  "substitution_events": [
+   {
+    "team": "Inter",
+    "in": "Marcus Thuram",
+    "out": "Francesco Pio Esposito",
+    "minute": "46"
+   },
+   {
+    "team": "Inter",
+    "in": "Curtis Jones",
+    "out": "Petar Sučić",
+    "minute": "46"
+   },
+   {
+    "team": "Inter",
+    "in": "Carlos Augusto",
+    "out": "Federico Dimarco",
+    "minute": "62"
+   },
+   {
+    "team": "Inter",
+    "in": "Hakan Çalhanoglu",
+    "out": "Piotr Zieliński",
+    "minute": "71"
+   },
+   {
+    "team": "Inter",
+    "in": "Ange-Yoan Bonny",
+    "out": "Alessandro Bastoni",
+    "minute": "79"
+   },
+   {
+    "team": "Napoli",
+    "in": "Kevin De Bruyne",
+    "out": "Antonio Vergara",
+    "minute": "62"
+   },
+   {
+    "team": "Napoli",
+    "in": "David Neres",
+    "out": "Matteo Politano",
+    "minute": "62"
+   },
+   {
+    "team": "Napoli",
+    "in": "Lorenzo Lucca",
+    "out": "Rasmus Højlund",
+    "minute": "72"
+   },
+   {
+    "team": "Napoli",
+    "in": "Billy Gilmour",
+    "out": "Stanislav Lobotka",
+    "minute": "79"
+   },
+   {
+    "team": "Napoli",
+    "in": "Benoît Badiashile",
+    "out": "Alisson Santos",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Simone Sozza",
+  "attendance": 75423,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

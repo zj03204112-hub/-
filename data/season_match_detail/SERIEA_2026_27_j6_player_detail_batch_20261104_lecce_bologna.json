@@ -1,0 +1,156 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "seriea-2026-27-2026-10-11-lecce-bologna",
+ "date": "2026-10-11",
+ "home": "Lecce",
+ "away": "Bologna",
+ "score": "1-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5749696",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749696"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Wladimiro Falcone",
+   "Danilo Veiga",
+   "Jamil Siebert",
+   "Tiago Gabriel",
+   "Antonino Gallo",
+   "Lassana Coulibaly",
+   "Ivan Ilić",
+   "Youssef Maleh",
+   "Santiago Pierotti",
+   "Paco Esteban",
+   "Amar Fatah"
+  ],
+  "home_bench": [
+   "Oumar Ngom",
+   "Konan N’Dri",
+   "Willem Geubbels",
+   "Omri Gandelman",
+   "Joël Monteiro",
+   "Alexandru Borbei",
+   "Marco Bleve",
+   "Ali Dembélé",
+   "Corrie Ndaba",
+   "Gaby Jean",
+   "Kialonda Gaspar",
+   "Mohamed Kaba",
+   "Olaf Gorter",
+   "Sadik Fofana"
+  ],
+  "away_starting_xi": [
+   "Massimo Pessina",
+   "Matteo Darmian",
+   "Nicolò Casale",
+   "Torbjørn Heggem",
+   "Nadir Zortea",
+   "Lewis Ferguson",
+   "Tommaso Pobega",
+   "Juan Miranda",
+   "Riccardo Orsolini",
+   "Roberto Piccoli",
+   "Nicolò Cambiaghi"
+  ],
+  "away_bench": [
+   "Eivind Helland",
+   "Oussama El Azzouzi",
+   "Jay Enem",
+   "Rahim Alhassane",
+   "Federico Bernardeschi",
+   "Łukasz Skorupski",
+   "Ukko Happonen",
+   "Lorenzo De Silvestri",
+   "Martin Vitík",
+   "Marco Libra",
+   "Mikel Amondarain",
+   "Nikola Moro",
+   "Artem Dovbyk"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lecce",
+    "in": "Oumar Ngom",
+    "out": "Ivan Ilić",
+    "minute": "36"
+   },
+   {
+    "team": "Lecce",
+    "in": "Willem Geubbels",
+    "out": "Paco Esteban",
+    "minute": "63"
+   },
+   {
+    "team": "Lecce",
+    "in": "Konan N’Dri",
+    "out": "Santiago Pierotti",
+    "minute": "63"
+   },
+   {
+    "team": "Lecce",
+    "in": "Joël Monteiro",
+    "out": "Amar Fatah",
+    "minute": "79"
+   },
+   {
+    "team": "Lecce",
+    "in": "Omri Gandelman",
+    "out": "Youssef Maleh",
+    "minute": "79"
+   },
+   {
+    "team": "Bologna",
+    "in": "Eivind Helland",
+    "out": "Torbjørn Heggem",
+    "minute": "54"
+   },
+   {
+    "team": "Bologna",
+    "in": "Jay Enem",
+    "out": "Roberto Piccoli",
+    "minute": "62"
+   },
+   {
+    "team": "Bologna",
+    "in": "Oussama El Azzouzi",
+    "out": "Tommaso Pobega",
+    "minute": "62"
+   },
+   {
+    "team": "Bologna",
+    "in": "Federico Bernardeschi",
+    "out": "Nicolò Cambiaghi",
+    "minute": "81"
+   },
+   {
+    "team": "Bologna",
+    "in": "Rahim Alhassane",
+    "out": "Juan Miranda",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Luca Pairetto",
+  "attendance": 25797,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

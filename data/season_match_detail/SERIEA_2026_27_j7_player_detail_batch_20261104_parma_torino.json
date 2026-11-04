@@ -1,0 +1,156 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "seriea-2026-27-2026-10-19-parma-torino",
+ "date": "2026-10-19",
+ "home": "Parma",
+ "away": "Torino",
+ "score": "0-3",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5749707",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749707"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Edoardo Corvi",
+   "Diego Carlos",
+   "Mariano Troilo",
+   "Enrico Del Prato",
+   "Sascha Britschgi",
+   "Adrián Bernabé",
+   "Mandela Keita",
+   "Giovanni Fabbian",
+   "Emanuele Valeri",
+   "David Romero",
+   "El Bilal Touré"
+  ],
+  "home_bench": [
+   "Dominik Drobnič",
+   "Simone Lontani",
+   "Matija Frigan",
+   "Ousmane Diallo",
+   "Christian Ordóñez",
+   "Giovanni Daffara",
+   "Simone Ghidotti",
+   "Abdoulaye Ndiaye",
+   "Abdou-Salam Konaté",
+   "Franco Carboni",
+   "Vincent Sierro",
+   "Benjamín Cremaschi",
+   "Thomás de Martis"
+  ],
+  "away_starting_xi": [
+   "Lucas Perri",
+   "Saúl Coco",
+   "Ardian Ismajli",
+   "Pietro Comuzzo",
+   "Rafik Belghali",
+   "Rolando Mandragora",
+   "Daniel Bragança",
+   "Alessio Cacciamani",
+   "Nikola Vlašić",
+   "Giovanni Simeone",
+   "Ché Adams"
+  ],
+  "away_bench": [
+   "Gvidas Gineitis",
+   "Sandro Kulenović",
+   "Cesare Casadei",
+   "Zakaria Aboukhlal",
+   "Duván Zapata",
+   "Diego Mascardi",
+   "Lapo Siviero",
+   "Eray Cömert",
+   "Nathan Patterson",
+   "Ricardo Rodríguez",
+   "Cristiano Biraghi",
+   "Kian Fitz-Jim",
+   "Gaetano Oristanio",
+   "Pietro Pellegri"
+  ],
+  "substitution_events": [
+   {
+    "team": "Parma",
+    "in": "Dominik Drobnič",
+    "out": "Diego Carlos",
+    "minute": "46"
+   },
+   {
+    "team": "Parma",
+    "in": "Simone Lontani",
+    "out": "Giovanni Fabbian",
+    "minute": "46"
+   },
+   {
+    "team": "Parma",
+    "in": "Matija Frigan",
+    "out": "El Bilal Touré",
+    "minute": "70"
+   },
+   {
+    "team": "Parma",
+    "in": "Ousmane Diallo",
+    "out": "Sascha Britschgi",
+    "minute": "70"
+   },
+   {
+    "team": "Parma",
+    "in": "Christian Ordóñez",
+    "out": "Adrián Bernabé",
+    "minute": "80"
+   },
+   {
+    "team": "Torino",
+    "in": "Gvidas Gineitis",
+    "out": "Rolando Mandragora",
+    "minute": "63"
+   },
+   {
+    "team": "Torino",
+    "in": "Sandro Kulenović",
+    "out": "Ché Adams",
+    "minute": "63"
+   },
+   {
+    "team": "Torino",
+    "in": "Zakaria Aboukhlal",
+    "out": "Rafik Belghali",
+    "minute": "73"
+   },
+   {
+    "team": "Torino",
+    "in": "Cesare Casadei",
+    "out": "Nikola Vlašić",
+    "minute": "73"
+   },
+   {
+    "team": "Torino",
+    "in": "Duván Zapata",
+    "out": "Giovanni Simeone",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 3
+  },
+  "provider_score": "0-3",
+  "score_consistent_with_events": true,
+  "referee": "Giovanni Ayroldi",
+  "attendance": 15170,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

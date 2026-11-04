@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "seriea-2026-27-2026-10-10-napoli-frosinone",
+ "date": "2026-10-10",
+ "home": "Napoli",
+ "away": "Frosinone",
+ "score": "3-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749697",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749697"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alex Meret",
+   "Rafa Marín",
+   "Amir Rrahmani",
+   "Benoît Badiashile",
+   "Giovanni Di Lorenzo",
+   "Kevin De Bruyne",
+   "Stanislav Lobotka",
+   "Leonardo Spinazzola",
+   "David Neres",
+   "Rasmus Højlund",
+   "Noa Lang"
+  ],
+  "home_bench": [
+   "Scott McTominay",
+   "Lorenzo Lucca",
+   "Billy Gilmour",
+   "Giovane Nascimento",
+   "Matteo Politano",
+   "Nikita Contini",
+   "Vanja Milinković-Savić",
+   "Luca Marianucci",
+   "Sam Beukema",
+   "Milton Pereyra"
+  ],
+  "away_starting_xi": [
+   "Lorenzo Palmisani",
+   "Anthony Oyono",
+   "Gabriele Calvani",
+   "Giorgio Cittadini",
+   "Gabriele Bracaglia",
+   "Patrizio Masini",
+   "Giacomo Calò",
+   "Farès Ghedjemis",
+   "Romano Schmid",
+   "Giorgi Kvernadze",
+   "Antonio Raimondo"
+  ],
+  "away_bench": [
+   "Aleksa Terzić",
+   "Seydou Fini",
+   "Tomás Bobček",
+   "Matteo Cichella",
+   "Alessio Zerbin",
+   "Matteo Pisseri",
+   "Sebastiano Desplanches",
+   "Enzo Tchato",
+   "Ilario Monterisi",
+   "Kevin Akpoguma",
+   "Omar Fayed",
+   "Wisdom Amey",
+   "Anouar El Azzouzi",
+   "Luis Hasa"
+  ],
+  "substitution_events": [
+   {
+    "team": "Napoli",
+    "in": "Lorenzo Lucca",
+    "out": "Rasmus Højlund",
+    "minute": "61"
+   },
+   {
+    "team": "Napoli",
+    "in": "Scott McTominay",
+    "out": "David Neres",
+    "minute": "61"
+   },
+   {
+    "team": "Napoli",
+    "in": "Billy Gilmour",
+    "out": "Stanislav Lobotka",
+    "minute": "71"
+   },
+   {
+    "team": "Napoli",
+    "in": "Giovane Nascimento",
+    "out": "Noa Lang",
+    "minute": "72"
+   },
+   {
+    "team": "Napoli",
+    "in": "Matteo Politano",
+    "out": "Leonardo Spinazzola",
+    "minute": "81"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Aleksa Terzić",
+    "out": "Patrizio Masini",
+    "minute": "46"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Seydou Fini",
+    "out": "Farès Ghedjemis",
+    "minute": "63"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Tomás Bobček",
+    "out": "Antonio Raimondo",
+    "minute": "63"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Matteo Cichella",
+    "out": "Gabriele Bracaglia",
+    "minute": "76"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Alessio Zerbin",
+    "out": "Romano Schmid",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 0
+  },
+  "provider_score": "3-0",
+  "score_consistent_with_events": true,
+  "referee": "Ermanno Feliciani",
+  "attendance": 50463,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

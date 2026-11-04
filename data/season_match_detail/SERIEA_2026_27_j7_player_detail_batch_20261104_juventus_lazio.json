@@ -1,0 +1,148 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "seriea-2026-27-2026-10-18-juventus-lazio",
+ "date": "2026-10-18",
+ "home": "Juventus",
+ "away": "Lazio",
+ "score": "0-3",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5749705",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749705"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Guglielmo Vicario",
+   "Pierre Kalulu",
+   "Gleison Bremer",
+   "Jhon Lucumí",
+   "Zeki Çelik",
+   "Douglas Luiz",
+   "Pape Sarr",
+   "Nicolás González",
+   "Weston McKennie",
+   "Kerim Alajbegović",
+   "Randal Kolo Muani"
+  ],
+  "home_bench": [
+   "Nick Woltemade",
+   "Edon Zhegrova",
+   "Francisco Conceição",
+   "Andrea Cambiaso",
+   "Jérémie Boga",
+   "Carlo Pinsoglio",
+   "Neto",
+   "Daniele Rugani",
+   "Federico Gatti",
+   "Lloyd Kelly",
+   "Teun Koopmeiners",
+   "Juan Cabal"
+  ],
+  "away_starting_xi": [
+   "Christos Mandas",
+   "Romano Floriani Mussolini",
+   "Josip Šutalo",
+   "Oliver Provstgaard",
+   "Nuno Tavares",
+   "Davide Frattesi",
+   "Reda Belahyane",
+   "Kenneth Taylor",
+   "Gustav Isaksen",
+   "Tijjani Noslin",
+   "Mattia Zaccagni"
+  ],
+  "away_bench": [
+   "Fisayo Dele-Bashiru",
+   "Andrea Pinamonti",
+   "Manuel Lazzari",
+   "Alfonso Pedraza",
+   "Davide Renzetti",
+   "Edoardo Motta",
+   "Danilho Doekhi",
+   "Diogo Leite",
+   "Luca Pellegrini",
+   "Adrian Przyborek",
+   "Danilo Cataldi",
+   "Valerio Farcomeni",
+   "Federico Serra"
+  ],
+  "substitution_events": [
+   {
+    "team": "Juventus",
+    "in": "Nick Woltemade",
+    "out": "Kerim Alajbegović",
+    "minute": "46"
+   },
+   {
+    "team": "Juventus",
+    "in": "Francisco Conceição",
+    "out": "Douglas Luiz",
+    "minute": "67"
+   },
+   {
+    "team": "Juventus",
+    "in": "Edon Zhegrova",
+    "out": "Nicolás González",
+    "minute": "67"
+   },
+   {
+    "team": "Juventus",
+    "in": "Andrea Cambiaso",
+    "out": "Zeki Çelik",
+    "minute": "74"
+   },
+   {
+    "team": "Juventus",
+    "in": "Jérémie Boga",
+    "out": "Pape Sarr",
+    "minute": "87"
+   },
+   {
+    "team": "Lazio",
+    "in": "Fisayo Dele-Bashiru",
+    "out": "Kenneth Taylor",
+    "minute": "69"
+   },
+   {
+    "team": "Lazio",
+    "in": "Andrea Pinamonti",
+    "out": "Tijjani Noslin",
+    "minute": "69"
+   },
+   {
+    "team": "Lazio",
+    "in": "Manuel Lazzari",
+    "out": "Gustav Isaksen",
+    "minute": "79"
+   },
+   {
+    "team": "Lazio",
+    "in": "Alfonso Pedraza",
+    "out": "Mattia Zaccagni",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 3
+  },
+  "provider_score": "0-3",
+  "score_consistent_with_events": true,
+  "referee": "Davide Massa",
+  "attendance": 41112,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

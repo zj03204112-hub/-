@@ -1,0 +1,150 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "seriea-2026-27-2026-10-24-napoli-roma",
+ "date": "2026-10-24",
+ "home": "Napoli",
+ "away": "Roma",
+ "score": "3-3",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749717",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749717"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alex Meret",
+   "Giovanni Di Lorenzo",
+   "Rafa Marín",
+   "Benoît Badiashile",
+   "Mathías Olivera",
+   "Frank Anguissa",
+   "Kevin De Bruyne",
+   "Scott McTominay",
+   "Matteo Politano",
+   "Rasmus Højlund",
+   "Noa Lang"
+  ],
+  "home_bench": [
+   "Sam Beukema",
+   "Giovane Nascimento",
+   "Antonio Vergara",
+   "Leonardo Spinazzola",
+   "Stanislav Lobotka",
+   "Nikita Contini",
+   "Vanja Milinković-Savić",
+   "Luca Marianucci",
+   "Billy Gilmour",
+   "Lorenzo Lucca"
+  ],
+  "away_starting_xi": [
+   "Pierluigi Gollini",
+   "Gianluca Mancini",
+   "Evan N'Dicka",
+   "Mario Hermoso",
+   "Devyne Rensch",
+   "Marten de Roon",
+   "Bryan Cristante",
+   "Wesley",
+   "Matias Soulé",
+   "Niccolò Pisilli",
+   "Donyell Malen"
+  ],
+  "away_bench": [
+   "Leonardo Balerdi",
+   "Nahuel Molina",
+   "Santiago Castro",
+   "Daniele Ghilardi",
+   "Rodrigo Mora",
+   "Devis Vásquez",
+   "Giorgio De Marzi",
+   "Konstantinos Koulierakis",
+   "Alessandro Di Nunzio",
+   "Emanuele Lulli",
+   "Mandjou Camara"
+  ],
+  "substitution_events": [
+   {
+    "team": "Napoli",
+    "in": "Sam Beukema",
+    "out": "Benoît Badiashile",
+    "minute": "52"
+   },
+   {
+    "team": "Napoli",
+    "in": "Giovane Nascimento",
+    "out": "Matteo Politano",
+    "minute": "66"
+   },
+   {
+    "team": "Napoli",
+    "in": "Antonio Vergara",
+    "out": "Noa Lang",
+    "minute": "79"
+   },
+   {
+    "team": "Napoli",
+    "in": "Stanislav Lobotka",
+    "out": "Kevin De Bruyne",
+    "minute": "80"
+   },
+   {
+    "team": "Napoli",
+    "in": "Leonardo Spinazzola",
+    "out": "Giovanni Di Lorenzo",
+    "minute": "80"
+   },
+   {
+    "team": "Roma",
+    "in": "Nahuel Molina",
+    "out": "Devyne Rensch",
+    "minute": "58"
+   },
+   {
+    "team": "Roma",
+    "in": "Santiago Castro",
+    "out": "Niccolò Pisilli",
+    "minute": "58"
+   },
+   {
+    "team": "Roma",
+    "in": "Leonardo Balerdi",
+    "out": "Mario Hermoso",
+    "minute": "58"
+   },
+   {
+    "team": "Roma",
+    "in": "Rodrigo Mora",
+    "out": "Donyell Malen",
+    "minute": "84"
+   },
+   {
+    "team": "Roma",
+    "in": "Daniele Ghilardi",
+    "out": "Gianluca Mancini",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 3
+  },
+  "provider_score": "3-3",
+  "score_consistent_with_events": true,
+  "referee": "Andrea Colombo",
+  "attendance": 42000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

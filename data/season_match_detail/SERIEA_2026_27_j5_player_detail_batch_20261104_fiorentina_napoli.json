@@ -1,0 +1,144 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "seriea-2026-27-2026-09-20-fiorentina-napoli",
+ "date": "2026-09-20",
+ "home": "Fiorentina",
+ "away": "Napoli",
+ "score": "1-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5749683",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749683"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "David de Gea",
+   "Álex Jiménez",
+   "Radu Drăgușin",
+   "Luca Ranieri",
+   "Viery",
+   "Cher Ndour",
+   "Nicolò Fagioli",
+   "Arthur Atta",
+   "Franco Mastantuono",
+   "Mateo Pellegrino",
+   "Alieu Njie"
+  ],
+  "home_bench": [
+   "Valde",
+   "Beto",
+   "Pote",
+   "Wilfried Gnonto",
+   "Marin Pongračić",
+   "Luca Lezzerini",
+   "Oliver Christensen",
+   "Dodô",
+   "João Mário",
+   "Christ Inao Oulaï",
+   "Marco Brescianini",
+   "Brando Mazzeo"
+  ],
+  "away_starting_xi": [
+   "Vanja Milinković-Savić",
+   "Giovanni Di Lorenzo",
+   "Amir Rrahmani",
+   "Rafa Marín",
+   "Mathías Olivera",
+   "Stanislav Lobotka",
+   "Billy Gilmour",
+   "Matteo Politano",
+   "Kevin De Bruyne",
+   "Noa Lang",
+   "Rasmus Højlund"
+  ],
+  "away_bench": [
+   "David Neres",
+   "Lorenzo Lucca",
+   "Costantino Favasuli",
+   "Frank Anguissa",
+   "Claudio Pugliese",
+   "Nikita Contini",
+   "Benoît Badiashile",
+   "Sam Beukema",
+   "Antonio Vergara"
+  ],
+  "substitution_events": [
+   {
+    "team": "Fiorentina",
+    "in": "Valde",
+    "out": "Viery",
+    "minute": "46"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Pote",
+    "out": "Arthur Atta",
+    "minute": "66"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Beto",
+    "out": "Mateo Pellegrino",
+    "minute": "66"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Wilfried Gnonto",
+    "out": "Alieu Njie",
+    "minute": "80"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Marin Pongračić",
+    "out": "Luca Ranieri",
+    "minute": "85"
+   },
+   {
+    "team": "Napoli",
+    "in": "Lorenzo Lucca",
+    "out": "Rasmus Højlund",
+    "minute": "58"
+   },
+   {
+    "team": "Napoli",
+    "in": "David Neres",
+    "out": "Noa Lang",
+    "minute": "58"
+   },
+   {
+    "team": "Napoli",
+    "in": "Costantino Favasuli",
+    "out": "Matteo Politano",
+    "minute": "72"
+   },
+   {
+    "team": "Napoli",
+    "in": "Frank Anguissa",
+    "out": "Stanislav Lobotka",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Daniele Doveri",
+  "attendance": 22567,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,158 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "seriea-2026-27-2026-10-11-sassuolo-milan",
+ "date": "2026-10-11",
+ "home": "Sassuolo",
+ "away": "Milan",
+ "score": "1-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749698",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749698"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Arijanet Murić",
+   "Ignace Van Der Brempt",
+   "Duje Ćaleta-Car",
+   "Fedde Leysen",
+   "Josh Doig",
+   "Vasilije Adžić",
+   "Nemanja Matić",
+   "Darryl Bakola",
+   "Domenico Berardi",
+   "Sebastiano Esposito",
+   "Armand Laurienté"
+  ],
+  "home_bench": [
+   "Cas Odenthal",
+   "Kristian Thorstvedt",
+   "Kieron Bowie",
+   "Simone Cinquegrano",
+   "Luca Lipani",
+   "Giacomo Satalino",
+   "Stefano Turati",
+   "Fali Candé",
+   "Sebastian Walukiewicz",
+   "Andrea Ghion",
+   "Ibrahim Sulemana",
+   "Rafael Obrador",
+   "Benja Domínguez",
+   "Cristian Volpato",
+   "Laurs Skjellerup"
+  ],
+  "away_starting_xi": [
+   "Mike Maignan",
+   "Mario Gila",
+   "Matteo Gabbia",
+   "Strahinja Pavlović",
+   "Samuel Chukwueze",
+   "Yunus Musah",
+   "Adrien Rabiot",
+   "Pervis Estupinán",
+   "Christian Pulisic",
+   "Diego Moreira",
+   "Gonçalo Ramos"
+  ],
+  "away_bench": [
+   "Koni De Winter",
+   "Luka Modrić",
+   "Alphadjo Cissè",
+   "Ardon Jashari",
+   "Omari Hutchinson",
+   "Leo Paul Bouyer",
+   "Lorenzo Torriani",
+   "Fikayo Tomori",
+   "Filippo Terracciano",
+   "Sankhoun Diawara",
+   "Christian Comotto",
+   "Davide Bartesaghi",
+   "Ruben Loftus-Cheek",
+   "Francesco Camarda"
+  ],
+  "substitution_events": [
+   {
+    "team": "Sassuolo",
+    "in": "Cas Odenthal",
+    "out": "Fedde Leysen",
+    "minute": "26"
+   },
+   {
+    "team": "Sassuolo",
+    "in": "Kieron Bowie",
+    "out": "Sebastiano Esposito",
+    "minute": "60"
+   },
+   {
+    "team": "Sassuolo",
+    "in": "Kristian Thorstvedt",
+    "out": "Vasilije Adžić",
+    "minute": "60"
+   },
+   {
+    "team": "Sassuolo",
+    "in": "Simone Cinquegrano",
+    "out": "Ignace Van Der Brempt",
+    "minute": "79"
+   },
+   {
+    "team": "Sassuolo",
+    "in": "Luca Lipani",
+    "out": "Nemanja Matić",
+    "minute": "79"
+   },
+   {
+    "team": "Milan",
+    "in": "Koni De Winter",
+    "out": "Matteo Gabbia",
+    "minute": "19"
+   },
+   {
+    "team": "Milan",
+    "in": "Luka Modrić",
+    "out": "Pervis Estupinán",
+    "minute": "46"
+   },
+   {
+    "team": "Milan",
+    "in": "Ardon Jashari",
+    "out": "Yunus Musah",
+    "minute": "78"
+   },
+   {
+    "team": "Milan",
+    "in": "Alphadjo Cissè",
+    "out": "Christian Pulisic",
+    "minute": "78"
+   },
+   {
+    "team": "Milan",
+    "in": "Omari Hutchinson",
+    "out": "Samuel Chukwueze",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Francesco Fourneau",
+  "attendance": 20347,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

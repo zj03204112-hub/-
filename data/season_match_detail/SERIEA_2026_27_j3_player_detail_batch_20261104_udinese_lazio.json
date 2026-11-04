@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "seriea-2026-27-2026-09-07-udinese-lazio",
+ "date": "2026-09-07",
+ "home": "Udinese",
+ "away": "Lazio",
+ "score": "1-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749669",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749669"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Maduka Okoye",
+   "James Abankwah",
+   "Oumar Solet",
+   "Enzo Ebosse",
+   "Mërgim Vojvoda",
+   "Jesper Karlström",
+   "Jakub Piotrowski",
+   "Hassane Kamara",
+   "Jurgen Ekkelenkamp",
+   "Unai Gómez",
+   "Keinan Davis"
+  ],
+  "home_bench": [
+   "Lennon Miller",
+   "Christian Kabasele",
+   "Vakoun Issouf Bayo",
+   "Nicolò Bertola",
+   "Oier Zarraga",
+   "Bartosz Mrozek",
+   "Daniele Padelli",
+   "Giorgi Chakvetadze",
+   "Sandi Lovrić",
+   "Giulio Vinciati",
+   "Idrissa Gueye",
+   "Lazar Jovanović"
+  ],
+  "away_starting_xi": [
+   "Christos Mandas",
+   "Romano Floriani Mussolini",
+   "Danilho Doekhi",
+   "Oliver Provstgaard",
+   "Nuno Tavares",
+   "Davide Frattesi",
+   "Reda Belahyane",
+   "Kenneth Taylor",
+   "Gustav Isaksen",
+   "Andrea Pinamonti",
+   "Mattia Zaccagni"
+  ],
+  "away_bench": [
+   "Matteo Cancellieri",
+   "Tijjani Noslin",
+   "Albert Guðmundsson",
+   "Alfonso Pedraza",
+   "Davide Renzetti",
+   "Edoardo Motta",
+   "Josip Šutalo",
+   "Manuel Lazzari",
+   "Ricardo Bordon",
+   "Adrian Przyborek",
+   "Valerio Farcomeni",
+   "Federico Serra"
+  ],
+  "substitution_events": [
+   {
+    "team": "Udinese",
+    "in": "Lennon Miller",
+    "out": "Jakub Piotrowski",
+    "minute": "15"
+   },
+   {
+    "team": "Udinese",
+    "in": "Christian Kabasele",
+    "out": "Oumar Solet",
+    "minute": "38"
+   },
+   {
+    "team": "Udinese",
+    "in": "Vakoun Issouf Bayo",
+    "out": "Unai Gómez",
+    "minute": "46"
+   },
+   {
+    "team": "Udinese",
+    "in": "Oier Zarraga",
+    "out": "Keinan Davis",
+    "minute": "76"
+   },
+   {
+    "team": "Udinese",
+    "in": "Nicolò Bertola",
+    "out": "James Abankwah",
+    "minute": "76"
+   },
+   {
+    "team": "Lazio",
+    "in": "Tijjani Noslin",
+    "out": "Andrea Pinamonti",
+    "minute": "53"
+   },
+   {
+    "team": "Lazio",
+    "in": "Matteo Cancellieri",
+    "out": "Gustav Isaksen",
+    "minute": "53"
+   },
+   {
+    "team": "Lazio",
+    "in": "Albert Guðmundsson",
+    "out": "Davide Frattesi",
+    "minute": "80"
+   },
+   {
+    "team": "Lazio",
+    "in": "Alfonso Pedraza",
+    "out": "Mattia Zaccagni",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Paride Tremolada",
+  "attendance": 23312,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

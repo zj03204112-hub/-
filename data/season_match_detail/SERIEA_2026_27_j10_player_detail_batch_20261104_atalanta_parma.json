@@ -1,0 +1,145 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "10",
+ "match_id": "seriea-2026-27-2026-11-02-atalanta-parma",
+ "date": "2026-11-02",
+ "home": "Atalanta",
+ "away": "Parma",
+ "score": "0-3",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5749731",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749731"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Marco Carnesecchi",
+   "Davide Zappacosta",
+   "Giorgio Scalvini",
+   "Relja Obrić",
+   "Lorenzo Bernasconi",
+   "Éderson",
+   "Mario Pašalić",
+   "Nicola Zalewski",
+   "Charles De Ketelaere",
+   "Jonathan Rowe",
+   "Nikola Krstović"
+  ],
+  "home_bench": [
+   "Eljif Elmas",
+   "Kamaldeen Sulemana",
+   "Javison Idele",
+   "Lazar Samardžić",
+   "Marco Sportiello",
+   "Mattia Sonzogni",
+   "Matteo Plaia",
+   "Sergej Levak"
+  ],
+  "away_starting_xi": [
+   "Giovanni Daffara",
+   "Enrico Del Prato",
+   "Mariano Troilo",
+   "Dominik Drobnič",
+   "Sascha Britschgi",
+   "Giovanni Fabbian",
+   "Vincent Sierro",
+   "Mandela Keita",
+   "Emanuele Valeri",
+   "El Bilal Touré",
+   "Simone Lontani"
+  ],
+  "away_bench": [
+   "Abdoulaye Ndiaye",
+   "Christian Ordóñez",
+   "Matija Frigan",
+   "Nesta Elphege",
+   "Hans Nicolussi Caviglia",
+   "Edoardo Corvi",
+   "Simone Ghidotti",
+   "Diego Carlos",
+   "Abdou-Salam Konaté",
+   "Franco Carboni",
+   "Pontus Almqvist",
+   "Benjamín Cremaschi",
+   "David Romero",
+   "Ousmane Diallo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Atalanta",
+    "in": "Eljif Elmas",
+    "out": "Éderson",
+    "minute": "62"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Kamaldeen Sulemana",
+    "out": "Jonathan Rowe",
+    "minute": "67"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Javison Idele",
+    "out": "Davide Zappacosta",
+    "minute": "75"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Lazar Samardžić",
+    "out": "Nicola Zalewski",
+    "minute": "76"
+   },
+   {
+    "team": "Parma",
+    "in": "Abdoulaye Ndiaye",
+    "out": "Dominik Drobnič",
+    "minute": "46"
+   },
+   {
+    "team": "Parma",
+    "in": "Christian Ordóñez",
+    "out": "Simone Lontani",
+    "minute": "67"
+   },
+   {
+    "team": "Parma",
+    "in": "Nesta Elphege",
+    "out": "El Bilal Touré",
+    "minute": "74"
+   },
+   {
+    "team": "Parma",
+    "in": "Matija Frigan",
+    "out": "Giovanni Fabbian",
+    "minute": "74"
+   },
+   {
+    "team": "Parma",
+    "in": "Hans Nicolussi Caviglia",
+    "out": "Vincent Sierro",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 3
+  },
+  "provider_score": "0-3",
+  "score_consistent_with_events": true,
+  "referee": "Valerio Crezzini",
+  "attendance": 20947,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,150 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "seriea-2026-27-2026-08-22-inter-monza",
+ "date": "2026-08-22",
+ "home": "Inter",
+ "away": "Monza",
+ "score": "4-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5749645",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749645"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Josep Martínez",
+   "Yann Aurel Bisseck",
+   "Manuel Akanji",
+   "Alessandro Bastoni",
+   "Andy Diouf",
+   "Nicolò Barella",
+   "Hakan Çalhanoglu",
+   "Piotr Zielinski",
+   "Federico Dimarco",
+   "Francesco Pio Esposito",
+   "Lautaro Martínez"
+  ],
+  "home_bench": [
+   "Petar Sucic",
+   "Ange-Yoan Bonny",
+   "John Stones",
+   "Luis Henrique",
+   "Aleksandar Stankovic",
+   "Ivan Provedel",
+   "Raffaele Di Gennaro",
+   "Benjamin Pavard",
+   "Carlos Augusto",
+   "Leonardo Bovio",
+   "Jamal Iddrissou",
+   "Marcus Thuram"
+  ],
+  "away_starting_xi": [
+   "Semuel Pizzignacco",
+   "Eddy Kouadio",
+   "Lorenzo Lucchesi",
+   "Andrea Carboni",
+   "Adam Bakoune",
+   "Foe Ondoa",
+   "Mathis Mout",
+   "Samuele Birindelli",
+   "Andrea Colpani",
+   "Ricardo Mangas",
+   "Gustavo Varela"
+  ],
+  "away_bench": [
+   "Nicolas Galazzi",
+   "Omari Forson",
+   "Patrick Cutrone",
+   "Jay Robinson",
+   "Filippo Delli Carri",
+   "Aleksandr Ballabio",
+   "Aljaz Strajnar",
+   "Valentin Antov",
+   "Solomon Loubao"
+  ],
+  "substitution_events": [
+   {
+    "team": "Inter",
+    "in": "Petar Sucic",
+    "out": "Hakan Çalhanoglu",
+    "minute": "54"
+   },
+   {
+    "team": "Inter",
+    "in": "Ange-Yoan Bonny",
+    "out": "Lautaro Martínez",
+    "minute": "54"
+   },
+   {
+    "team": "Inter",
+    "in": "John Stones",
+    "out": "Manuel Akanji",
+    "minute": "75"
+   },
+   {
+    "team": "Inter",
+    "in": "Luis Henrique",
+    "out": "Andy Diouf",
+    "minute": "75"
+   },
+   {
+    "team": "Inter",
+    "in": "Aleksandar Stankovic",
+    "out": "Piotr Zielinski",
+    "minute": "83"
+   },
+   {
+    "team": "Monza",
+    "in": "Omari Forson",
+    "out": "Andrea Colpani",
+    "minute": "70"
+   },
+   {
+    "team": "Monza",
+    "in": "Nicolas Galazzi",
+    "out": "Mathis Mout",
+    "minute": "70"
+   },
+   {
+    "team": "Monza",
+    "in": "Patrick Cutrone",
+    "out": "Adam Bakoune",
+    "minute": "70"
+   },
+   {
+    "team": "Monza",
+    "in": "Jay Robinson",
+    "out": "Gustavo Varela",
+    "minute": "83"
+   },
+   {
+    "team": "Monza",
+    "in": "Filippo Delli Carri",
+    "out": "Lorenzo Lucchesi",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 1
+  },
+  "provider_score": "4-1",
+  "score_consistent_with_events": true,
+  "referee": "Livio Marinelli",
+  "attendance": 75013,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

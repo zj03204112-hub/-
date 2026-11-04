@@ -1,0 +1,155 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "seriea-2026-27-2026-10-29-frosinone-lecce",
+ "date": "2026-10-29",
+ "home": "Frosinone",
+ "away": "Lecce",
+ "score": "5-1",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749723",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749723"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lorenzo Palmisani",
+   "Anthony Oyono",
+   "Gabriele Calvani",
+   "Ilario Monterisi",
+   "Aleksa Terzić",
+   "Giacomo Calò",
+   "Matteo Cichella",
+   "Farès Ghedjemis",
+   "Romano Schmid",
+   "Giorgi Kvernadze",
+   "Antonio Raimondo"
+  ],
+  "home_bench": [
+   "Daniel Bîrligea",
+   "Seydou Fini",
+   "Anouar El Azzouzi",
+   "Luis Hasa",
+   "Omar Fayed",
+   "Giorgio Cittadini",
+   "Matteo Pisseri",
+   "Sebastiano Desplanches",
+   "Enzo Tchato",
+   "Gabriele Bracaglia",
+   "Kevin Akpoguma",
+   "Wisdom Amey",
+   "Alessio Zerbin",
+   "Patrizio Masini",
+   "Tomás Bobček"
+  ],
+  "away_starting_xi": [
+   "Wladimiro Falcone",
+   "Jamil Siebert",
+   "Tiago Gabriel",
+   "Corrie Ndaba",
+   "Danilo Veiga",
+   "Youssef Maleh",
+   "Oumar Ngom",
+   "Antonino Gallo",
+   "Omri Gandelman",
+   "Joël Monteiro",
+   "Paco Esteban"
+  ],
+  "away_bench": [
+   "Amar Fatah",
+   "Nikola Štulić",
+   "Olaf Gorter",
+   "Konan N’Dri",
+   "Mohamed Kaba",
+   "Alexandru Borbei",
+   "Marco Bleve",
+   "Ali Dembélé",
+   "Elijah Scott",
+   "Gaby Jean",
+   "Sadik Fofana"
+  ],
+  "substitution_events": [
+   {
+    "team": "Frosinone",
+    "in": "Daniel Bîrligea",
+    "out": "Antonio Raimondo",
+    "minute": "70"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Seydou Fini",
+    "out": "Farès Ghedjemis",
+    "minute": "70"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Anouar El Azzouzi",
+    "out": "Giacomo Calò",
+    "minute": "77"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Luis Hasa",
+    "out": "Romano Schmid",
+    "minute": "77"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Omar Fayed",
+    "out": "Gabriele Calvani",
+    "minute": "81"
+   },
+   {
+    "team": "Lecce",
+    "in": "Amar Fatah",
+    "out": "Corrie Ndaba",
+    "minute": "46"
+   },
+   {
+    "team": "Lecce",
+    "in": "Nikola Štulić",
+    "out": "Paco Esteban",
+    "minute": "57"
+   },
+   {
+    "team": "Lecce",
+    "in": "Olaf Gorter",
+    "out": "Youssef Maleh",
+    "minute": "58"
+   },
+   {
+    "team": "Lecce",
+    "in": "Konan N’Dri",
+    "out": "Omri Gandelman",
+    "minute": "58"
+   },
+   {
+    "team": "Lecce",
+    "in": "Mohamed Kaba",
+    "out": "Joël Monteiro",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 1
+  },
+  "provider_score": "5-1",
+  "score_consistent_with_events": true,
+  "referee": "Rosario Abisso",
+  "attendance": 13286,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

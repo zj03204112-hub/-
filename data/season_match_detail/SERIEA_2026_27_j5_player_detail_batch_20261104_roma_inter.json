@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "seriea-2026-27-2026-09-19-roma-inter",
+ "date": "2026-09-19",
+ "home": "Roma",
+ "away": "Inter",
+ "score": "2-2",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749681",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749681"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mile Svilar",
+   "Gianluca Mancini",
+   "Leonardo Balerdi",
+   "Mario Hermoso",
+   "Wesley",
+   "Bryan Cristante",
+   "Manu Koné",
+   "Nahuel Molina",
+   "Paulo Dybala",
+   "Matias Soulé",
+   "Donyell Malen"
+  ],
+  "home_bench": [
+   "Evan N'Dicka",
+   "Devyne Rensch",
+   "Niccolò Pisilli",
+   "Daniele Ghilardi",
+   "Konstantinos Koulierakis",
+   "Giorgio De Marzi",
+   "Pierluigi Gollini",
+   "Emanuele Lulli",
+   "Lorenzo Pellegrini",
+   "Marten de Roon",
+   "Rodrigo Mora",
+   "Santiago Castro"
+  ],
+  "away_starting_xi": [
+   "Josep Martínez",
+   "Yann Aurel Bisseck",
+   "Manuel Akanji",
+   "Alessandro Bastoni",
+   "Piotr Zieliński",
+   "Andy Diouf",
+   "Nicolò Barella",
+   "Curtis Jones",
+   "Federico Dimarco",
+   "Lautaro Martínez",
+   "Marcus Thuram"
+  ],
+  "away_bench": [
+   "Carlos Augusto",
+   "Petar Sučić",
+   "Luis Henrique",
+   "Ange-Yoan Bonny",
+   "Francesco Pio Esposito",
+   "Ivan Provedel",
+   "Raffaele Di Gennaro",
+   "Benjamin Pavard",
+   "Leonardo Bovio",
+   "Aleksandar Stanković",
+   "Henrikh Mkhitaryan",
+   "Mattia Mosconi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Roma",
+    "in": "Evan N'Dicka",
+    "out": "Gianluca Mancini",
+    "minute": "60"
+   },
+   {
+    "team": "Roma",
+    "in": "Niccolò Pisilli",
+    "out": "Manu Koné",
+    "minute": "60"
+   },
+   {
+    "team": "Roma",
+    "in": "Devyne Rensch",
+    "out": "Nahuel Molina",
+    "minute": "60"
+   },
+   {
+    "team": "Roma",
+    "in": "Daniele Ghilardi",
+    "out": "Leonardo Balerdi",
+    "minute": "66"
+   },
+   {
+    "team": "Roma",
+    "in": "Konstantinos Koulierakis",
+    "out": "Mario Hermoso",
+    "minute": "81"
+   },
+   {
+    "team": "Inter",
+    "in": "Petar Sučić",
+    "out": "Curtis Jones",
+    "minute": "54"
+   },
+   {
+    "team": "Inter",
+    "in": "Carlos Augusto",
+    "out": "Federico Dimarco",
+    "minute": "54"
+   },
+   {
+    "team": "Inter",
+    "in": "Luis Henrique",
+    "out": "Alessandro Bastoni",
+    "minute": "63"
+   },
+   {
+    "team": "Inter",
+    "in": "Ange-Yoan Bonny",
+    "out": "Marcus Thuram",
+    "minute": "90"
+   },
+   {
+    "team": "Inter",
+    "in": "Francesco Pio Esposito",
+    "out": "Lautaro Martínez",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Davide Massa",
+  "attendance": 66241,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

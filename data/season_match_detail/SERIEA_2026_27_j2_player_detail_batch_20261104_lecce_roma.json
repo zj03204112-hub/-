@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "seriea-2026-27-2026-08-31-lecce-roma",
+ "date": "2026-08-31",
+ "home": "Lecce",
+ "away": "Roma",
+ "score": "0-4",
+ "halftime_score": "0-3",
+ "official_match_url": "https://www.fotmob.com/matches/5749656",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749656"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Wladimiro Falcone",
+   "Jamil Siebert",
+   "Kialonda Gaspar",
+   "Tiago Gabriel",
+   "Danilo Veiga",
+   "Lassana Coulibaly",
+   "Oumar Ngom",
+   "Olaf Gorter",
+   "Corrie Ndaba",
+   "Santiago Pierotti",
+   "Willem Geubbels"
+  ],
+  "home_bench": [
+   "Youssef Maleh",
+   "Konan N’Dri",
+   "Nikola Stulic",
+   "Ivan Ilic",
+   "Amar Fatah",
+   "Marco Bleve",
+   "Plamen Penev",
+   "Ali Dembélé",
+   "Antonino Gallo",
+   "Elijah Scott",
+   "Medon Berisha",
+   "Omri Gandelman",
+   "Sadik Fofana",
+   "Hjalte Laerke",
+   "Paco Esteban"
+  ],
+  "away_starting_xi": [
+   "Mile Svilar",
+   "Daniele Ghilardi",
+   "Gianluca Mancini",
+   "Mario Hermoso",
+   "Emanuele Lulli",
+   "Bryan Cristante",
+   "Manu Koné",
+   "Wesley",
+   "Matias Soulé",
+   "Paulo Dybala",
+   "Donyell Malen"
+  ],
+  "away_bench": [
+   "Nahuel Molina",
+   "Rodrigo Mora",
+   "Niccolò Pisilli",
+   "Santiago Castro",
+   "Marten de Roon",
+   "Giorgio De Marzi",
+   "Pierluigi Gollini",
+   "Konstantinos Koulierakis",
+   "Leonardo Balerdi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lecce",
+    "in": "Konan N’Dri",
+    "out": "Tiago Gabriel",
+    "minute": "46"
+   },
+   {
+    "team": "Lecce",
+    "in": "Youssef Maleh",
+    "out": "Olaf Gorter",
+    "minute": "46"
+   },
+   {
+    "team": "Lecce",
+    "in": "Nikola Stulic",
+    "out": "Willem Geubbels",
+    "minute": "54"
+   },
+   {
+    "team": "Lecce",
+    "in": "Amar Fatah",
+    "out": "Santiago Pierotti",
+    "minute": "72"
+   },
+   {
+    "team": "Lecce",
+    "in": "Ivan Ilic",
+    "out": "Oumar Ngom",
+    "minute": "72"
+   },
+   {
+    "team": "Roma",
+    "in": "Nahuel Molina",
+    "out": "Wesley",
+    "minute": "60"
+   },
+   {
+    "team": "Roma",
+    "in": "Rodrigo Mora",
+    "out": "Matias Soulé",
+    "minute": "60"
+   },
+   {
+    "team": "Roma",
+    "in": "Niccolò Pisilli",
+    "out": "Manu Koné",
+    "minute": "67"
+   },
+   {
+    "team": "Roma",
+    "in": "Santiago Castro",
+    "out": "Donyell Malen",
+    "minute": "67"
+   },
+   {
+    "team": "Roma",
+    "in": "Marten de Roon",
+    "out": "Paulo Dybala",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 4
+  },
+  "provider_score": "0-4",
+  "score_consistent_with_events": true,
+  "referee": "Daniele Chiffi",
+  "attendance": 27031,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,156 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "seriea-2026-27-2026-10-28-genoa-juventus",
+ "date": "2026-10-28",
+ "home": "Genoa",
+ "away": "Juventus",
+ "score": "2-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749724",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749724"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Justin Bijlow",
+   "Alessandro Marcandalli",
+   "Leo Østigard",
+   "Johan Vásquez",
+   "Kingsley Ehizibue",
+   "Amorim",
+   "Morten Frendrup",
+   "Mikael Egill Ellertsson",
+   "Vítinha",
+   "Tommaso Baldanzi",
+   "Milutin Osmajić"
+  ],
+  "home_bench": [
+   "Mario Mitaj",
+   "Franz-Ethan Meichtry",
+   "Junior Messias",
+   "Samuel Wiafe",
+   "Lorenzo Colombo",
+   "Daniele Sommariva",
+   "Franz Stolz",
+   "David Puczka",
+   "Lukas Klisys",
+   "Sebastian Otoa",
+   "Djibril Sow",
+   "Hamed Traorè",
+   "Stefano Sabelli",
+   "Stephan El Shaarawy",
+   "Robinho Júnior"
+  ],
+  "away_starting_xi": [
+   "Guglielmo Vicario",
+   "Federico Gatti",
+   "Gleison Bremer",
+   "Jhon Lucumí",
+   "Pierre Kalulu",
+   "Douglas Luiz",
+   "Pape Sarr",
+   "Andrea Cambiaso",
+   "Weston McKennie",
+   "Kerim Alajbegović",
+   "Randal Kolo Muani"
+  ],
+  "away_bench": [
+   "Edon Zhegrova",
+   "Nick Woltemade",
+   "Juan Cabal",
+   "Jérémie Boga",
+   "Teun Koopmeiners",
+   "Carlo Pinsoglio",
+   "Neto",
+   "Daniele Rugani",
+   "Lloyd Kelly",
+   "Augusto Owusu",
+   "Filippo Pagnucco",
+   "Arman Durmiši"
+  ],
+  "substitution_events": [
+   {
+    "team": "Genoa",
+    "in": "Mario Mitaj",
+    "out": "Mikael Egill Ellertsson",
+    "minute": "41"
+   },
+   {
+    "team": "Genoa",
+    "in": "Junior Messias",
+    "out": "Tommaso Baldanzi",
+    "minute": "69"
+   },
+   {
+    "team": "Genoa",
+    "in": "Franz-Ethan Meichtry",
+    "out": "Kingsley Ehizibue",
+    "minute": "69"
+   },
+   {
+    "team": "Genoa",
+    "in": "Lorenzo Colombo",
+    "out": "Milutin Osmajić",
+    "minute": "81"
+   },
+   {
+    "team": "Genoa",
+    "in": "Samuel Wiafe",
+    "out": "Amorim",
+    "minute": "81"
+   },
+   {
+    "team": "Juventus",
+    "in": "Edon Zhegrova",
+    "out": "Kerim Alajbegović",
+    "minute": "46"
+   },
+   {
+    "team": "Juventus",
+    "in": "Nick Woltemade",
+    "out": "Federico Gatti",
+    "minute": "46"
+   },
+   {
+    "team": "Juventus",
+    "in": "Jérémie Boga",
+    "out": "Pape Sarr",
+    "minute": "59"
+   },
+   {
+    "team": "Juventus",
+    "in": "Juan Cabal",
+    "out": "Andrea Cambiaso",
+    "minute": "59"
+   },
+   {
+    "team": "Juventus",
+    "in": "Teun Koopmeiners",
+    "out": "Douglas Luiz",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Daniele Doveri",
+  "attendance": 30657,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

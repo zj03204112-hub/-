@@ -1,0 +1,159 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "10",
+ "match_id": "seriea-2026-27-2026-11-01-lazio-cagliari",
+ "date": "2026-11-01",
+ "home": "Lazio",
+ "away": "Cagliari",
+ "score": "2-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5749736",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749736"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Christos Mandas",
+   "Romano Floriani",
+   "Josip Šutalo",
+   "Oliver Provstgaard",
+   "Nuno Tavares",
+   "Davide Frattesi",
+   "Reda Belahyane",
+   "Kenneth Taylor",
+   "Gustav Isaksen",
+   "Tijjani Noslin",
+   "Mattia Zaccagni"
+  ],
+  "home_bench": [
+   "Alfonso Pedraza",
+   "Fisayo Dele-Bashiru",
+   "Andrea Pinamonti",
+   "Diogo Leite",
+   "Danilo Cataldi",
+   "Davide Renzetti",
+   "Edoardo Motta",
+   "Danilho Doekhi",
+   "Filipe Bordon",
+   "Luca Pellegrini",
+   "Manuel Lazzari",
+   "Ricardo Bordon",
+   "Adrian Przyborek",
+   "Valerio Farcomeni",
+   "Matteo Cancellieri"
+  ],
+  "away_starting_xi": [
+   "Elia Caprile",
+   "Zé Pedro",
+   "Alessandro Deiola",
+   "Juan Rodríguez",
+   "Adam Obert",
+   "Michel Ndary Adopo",
+   "Alessandro Romano",
+   "Alieu Fadera",
+   "Jacopo Fazzini",
+   "Daniel Maldini",
+   "M'Bala Nzola"
+  ],
+  "away_bench": [
+   "Raphael Kofler",
+   "Paul Mendy",
+   "Joseph Liteta",
+   "Yael Trepy",
+   "Kevin Carlos",
+   "Alen Sherri",
+   "Boris Radunović",
+   "Yerry Mina",
+   "Giuseppe Aurelio",
+   "Harry Winks",
+   "Ivan Sulev",
+   "Riccardo Ciervo",
+   "Roberto Gagliardini",
+   "Yanis Massolin",
+   "Yukinari Sugawara"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lazio",
+    "in": "Fisayo Dele-Bashiru",
+    "out": "Davide Frattesi",
+    "minute": "55"
+   },
+   {
+    "team": "Lazio",
+    "in": "Alfonso Pedraza",
+    "out": "Nuno Tavares",
+    "minute": "55"
+   },
+   {
+    "team": "Lazio",
+    "in": "Andrea Pinamonti",
+    "out": "Mattia Zaccagni",
+    "minute": "56"
+   },
+   {
+    "team": "Lazio",
+    "in": "Diogo Leite",
+    "out": "Oliver Provstgaard",
+    "minute": "75"
+   },
+   {
+    "team": "Lazio",
+    "in": "Danilo Cataldi",
+    "out": "Reda Belahyane",
+    "minute": "81"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Raphael Kofler",
+    "out": "Alieu Fadera",
+    "minute": "32"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Paul Mendy",
+    "out": "M'Bala Nzola",
+    "minute": "46"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Yael Trepy",
+    "out": "Daniel Maldini",
+    "minute": "64"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Joseph Liteta",
+    "out": "Jacopo Fazzini",
+    "minute": "64"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Kevin Carlos",
+    "out": "Alessandro Deiola",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Andrea Colombo",
+  "attendance": 12649,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

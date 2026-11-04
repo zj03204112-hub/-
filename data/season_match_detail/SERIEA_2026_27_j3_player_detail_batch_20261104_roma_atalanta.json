@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "seriea-2026-27-2026-09-05-roma-atalanta",
+ "date": "2026-09-05",
+ "home": "Roma",
+ "away": "Atalanta",
+ "score": "2-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749660",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749660"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mile Svilar",
+   "Evan N'Dicka",
+   "Gianluca Mancini",
+   "Mario Hermoso",
+   "Emanuele Lulli",
+   "Bryan Cristante",
+   "Manu Koné",
+   "Wesley",
+   "Rodrigo Mora",
+   "Paulo Dybala",
+   "Donyell Malen"
+  ],
+  "home_bench": [
+   "Nahuel Molina",
+   "Matias Soulé",
+   "Daniele Ghilardi",
+   "Santiago Castro",
+   "Leonardo Balerdi",
+   "Giorgio De Marzi",
+   "Pierluigi Gollini",
+   "Konstantinos Koulierakis",
+   "Devyne Rensch",
+   "Marten de Roon",
+   "Niccolò Pisilli",
+   "Antonio Arena"
+  ],
+  "away_starting_xi": [
+   "Marco Carnesecchi",
+   "Raoul Bellanova",
+   "Odilon Kossounou",
+   "Giorgio Scalvini",
+   "Sead Kolašinac",
+   "Lazar Samardžić",
+   "Gianluca Gaetano",
+   "Éderson",
+   "Charles De Ketelaere",
+   "Gianluca Scamacca",
+   "Eljif Elmas"
+  ],
+  "away_bench": [
+   "Nikola Krstović",
+   "Mario Pašalić",
+   "Nicola Zalewski",
+   "Davide Zappacosta",
+   "Franck Kessié",
+   "Marco Sportiello",
+   "Thomas Pompei",
+   "Relja Obrić",
+   "Thomas Kristensen",
+   "Giacomo Raspadori",
+   "Lorenzo Bernasconi",
+   "Jonathan Rowe"
+  ],
+  "substitution_events": [
+   {
+    "team": "Roma",
+    "in": "Nahuel Molina",
+    "out": "Emanuele Lulli",
+    "minute": "54"
+   },
+   {
+    "team": "Roma",
+    "in": "Matias Soulé",
+    "out": "Rodrigo Mora",
+    "minute": "55"
+   },
+   {
+    "team": "Roma",
+    "in": "Daniele Ghilardi",
+    "out": "Gianluca Mancini",
+    "minute": "62"
+   },
+   {
+    "team": "Roma",
+    "in": "Santiago Castro",
+    "out": "Donyell Malen",
+    "minute": "63"
+   },
+   {
+    "team": "Roma",
+    "in": "Leonardo Balerdi",
+    "out": "Evan N'Dicka",
+    "minute": "67"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Nikola Krstović",
+    "out": "Gianluca Scamacca",
+    "minute": "46"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Nicola Zalewski",
+    "out": "Eljif Elmas",
+    "minute": "66"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Mario Pašalić",
+    "out": "Lazar Samardžić",
+    "minute": "66"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Davide Zappacosta",
+    "out": "Sead Kolašinac",
+    "minute": "73"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Franck Kessié",
+    "out": "Éderson",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Andrea Colombo",
+  "attendance": 67279,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

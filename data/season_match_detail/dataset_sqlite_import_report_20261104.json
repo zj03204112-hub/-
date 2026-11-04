@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-11-04",
+ "database": "football_model_database.sqlite",
+ "namespace": "dsl_*",
+ "leagues": [
+  {
+   "league": "LALIGA",
+   "fixtures": 109,
+   "players": 4969,
+   "subs": 1057,
+   "events": 887,
+   "shots": 2949,
+   "assists": 221,
+   "meta": 109
+  },
+  {
+   "league": "EPL",
+   "fixtures": 90,
+   "players": 3599,
+   "subs": 791,
+   "events": 635,
+   "shots": 2475,
+   "assists": 231,
+   "meta": 90
+  },
+  {
+   "league": "BUNDESLIGA",
+   "fixtures": 72,
+   "players": 2881,
+   "subs": 674,
+   "events": 534,
+   "shots": 2192,
+   "assists": 246,
+   "meta": 72
+  },
+  {
+   "league": "SERIEA",
+   "fixtures": 100,
+   "players": 4790,
+   "subs": 978,
+   "events": 659,
+   "shots": 2904,
+   "assists": 309,
+   "meta": 100
+  },
+  {
+   "league": "UCL",
+   "fixtures": 63,
+   "players": 2794,
+   "subs": 593,
+   "events": 482,
+   "shots": 1844,
+   "assists": 239,
+   "meta": 63
+  },
+  {
+   "league": "KLEAGUE1",
+   "fixtures": 204,
+   "players": 8141,
+   "subs": 1910,
+   "events": 1274,
+   "shots": 5116,
+   "assists": 495,
+   "meta": 204
+  },
+  {
+   "league": "J1",
+   "fixtures": 130,
+   "players": 5197,
+   "subs": 1261,
+   "events": 764,
+   "shots": 0,
+   "assists": 0,
+   "meta": 130
+  }
+ ],
+ "table_counts": {
+  "dsl_matches": 768,
+  "dsl_players": 32371,
+  "dsl_substitutions": 7264,
+  "dsl_events": 5235,
+  "dsl_match_meta": 768,
+  "dsl_shots": 17480,
+  "dsl_assists": 1741
+ },
+ "notes": [
+  "The legacy matches/results/player_match_stats tables are untouched.",
+  "match_key is league:season:date:home:away and is the join key everywhere.",
+  "Source columns carry the original provider so nothing loses provenance."
+ ]
+}

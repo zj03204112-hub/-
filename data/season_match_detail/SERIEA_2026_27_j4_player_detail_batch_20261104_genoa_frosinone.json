@@ -1,0 +1,158 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "seriea-2026-27-2026-09-12-genoa-frosinone",
+ "date": "2026-09-12",
+ "home": "Genoa",
+ "away": "Frosinone",
+ "score": "1-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5749672",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749672"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Justin Bijlow",
+   "Alessandro Marcandalli",
+   "Leo Østigard",
+   "Johan Vásquez",
+   "Kingsley Ehizibue",
+   "Morten Frendrup",
+   "Tommaso Baldanzi",
+   "Djibril Sow",
+   "Mikael Egill Ellertsson",
+   "Lorenzo Colombo",
+   "Milutin Osmajić"
+  ],
+  "home_bench": [
+   "Junior Messias",
+   "Stephan El Shaarawy",
+   "Vítinha",
+   "Amorim",
+   "Franz-Ethan Meichtry",
+   "Daniele Sommariva",
+   "Franz Stolz",
+   "Cody Drameh",
+   "David Puczka",
+   "Mario Mitaj",
+   "Sebastian Otoa",
+   "Hamed Traorè",
+   "Samuel Wiafe",
+   "Stefano Sabelli"
+  ],
+  "away_starting_xi": [
+   "Lorenzo Palmisani",
+   "Anthony Oyono",
+   "Gabriele Calvani",
+   "Giorgio Cittadini",
+   "Gabriele Bracaglia",
+   "Patrizio Masini",
+   "Romano Schmid",
+   "Giacomo Calò",
+   "Farès Ghedjemis",
+   "Antonio Raimondo",
+   "Giorgi Kvernadze"
+  ],
+  "away_bench": [
+   "Ilario Monterisi",
+   "Luis Hasa",
+   "Seydou Fini",
+   "Tomás Bobček",
+   "Alessio Zerbin",
+   "Matteo Pisseri",
+   "Sebastiano Desplanches",
+   "Aleksa Terzić",
+   "Enzo Tchato",
+   "Kevin Akpoguma",
+   "Omar Fayed",
+   "Wisdom Amey",
+   "Anouar El Azzouzi",
+   "Matteo Cichella",
+   "Daniel Bîrligea"
+  ],
+  "substitution_events": [
+   {
+    "team": "Genoa",
+    "in": "Junior Messias",
+    "out": "Tommaso Baldanzi",
+    "minute": "46"
+   },
+   {
+    "team": "Genoa",
+    "in": "Stephan El Shaarawy",
+    "out": "Kingsley Ehizibue",
+    "minute": "60"
+   },
+   {
+    "team": "Genoa",
+    "in": "Vítinha",
+    "out": "Lorenzo Colombo",
+    "minute": "70"
+   },
+   {
+    "team": "Genoa",
+    "in": "Amorim",
+    "out": "Djibril Sow",
+    "minute": "79"
+   },
+   {
+    "team": "Genoa",
+    "in": "Franz-Ethan Meichtry",
+    "out": "Mikael Egill Ellertsson",
+    "minute": "79"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Ilario Monterisi",
+    "out": "Giorgio Cittadini",
+    "minute": "46"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Luis Hasa",
+    "out": "Romano Schmid",
+    "minute": "71"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Seydou Fini",
+    "out": "Farès Ghedjemis",
+    "minute": "72"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Tomás Bobček",
+    "out": "Antonio Raimondo",
+    "minute": "72"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Alessio Zerbin",
+    "out": "Giorgi Kvernadze",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Antonio Rapuano",
+  "attendance": 29305,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

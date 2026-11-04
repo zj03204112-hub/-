@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "seriea-2026-27-2026-08-30-napoli-como",
+ "date": "2026-08-30",
+ "home": "Napoli",
+ "away": "Como",
+ "score": "1-2",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5749658",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749658"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Alex Meret",
+   "Giovanni Di Lorenzo",
+   "Amir Rrahmani",
+   "Rafa Marín",
+   "Mathías Olivera",
+   "Frank Anguissa",
+   "Stanislav Lobotka",
+   "Scott McTominay",
+   "Matteo Politano",
+   "Rasmus Højlund",
+   "Noa Lang"
+  ],
+  "home_bench": [
+   "Alisson Santos",
+   "Kevin De Bruyne",
+   "Leonardo Spinazzola",
+   "David Neres",
+   "Lorenzo Lucca",
+   "Nikita Contini",
+   "Vanja Milinkovic-Savic",
+   "Christian Garofalo",
+   "Sam Beukema",
+   "Antonio Vergara",
+   "Billy Gilmour",
+   "Costantino Favasuli",
+   "Giovane Nascimento"
+  ],
+  "away_starting_xi": [
+   "Jean Butez",
+   "Yan Couto",
+   "Jacobo Ramón",
+   "Trevoh Chalobah",
+   "Álex Valle",
+   "Luis Milla",
+   "Lucas Da Cunha",
+   "Assane Diao",
+   "Nico Paz",
+   "Martin Baturina",
+   "Anastasios Douvikas"
+  ],
+  "away_bench": [
+   "Ivan Smolcic",
+   "Maxence Caqueret",
+   "Marc-Oliver Kempf",
+   "Máximo Perrone",
+   "Kaiki",
+   "Emil Audero",
+   "Mauro Vigorito",
+   "Alberto Dossena",
+   "Edoardo Goldaniga",
+   "Willy Kambwala",
+   "Mattia Liberali",
+   "Samuele Ricci",
+   "Adrian Lahdo",
+   "Iván Azon",
+   "Jesús Rodríguez"
+  ],
+  "substitution_events": [
+   {
+    "team": "Napoli",
+    "in": "Kevin De Bruyne",
+    "out": "Scott McTominay",
+    "minute": "56"
+   },
+   {
+    "team": "Napoli",
+    "in": "Alisson Santos",
+    "out": "Noa Lang",
+    "minute": "56"
+   },
+   {
+    "team": "Napoli",
+    "in": "Leonardo Spinazzola",
+    "out": "Mathías Olivera",
+    "minute": "56"
+   },
+   {
+    "team": "Napoli",
+    "in": "David Neres",
+    "out": "Frank Anguissa",
+    "minute": "80"
+   },
+   {
+    "team": "Napoli",
+    "in": "Lorenzo Lucca",
+    "out": "Rasmus Højlund",
+    "minute": "80"
+   },
+   {
+    "team": "Como",
+    "in": "Maxence Caqueret",
+    "out": "Martin Baturina",
+    "minute": "58"
+   },
+   {
+    "team": "Como",
+    "in": "Ivan Smolcic",
+    "out": "Yan Couto",
+    "minute": "58"
+   },
+   {
+    "team": "Como",
+    "in": "Marc-Oliver Kempf",
+    "out": "Assane Diao",
+    "minute": "65"
+   },
+   {
+    "team": "Como",
+    "in": "Máximo Perrone",
+    "out": "Lucas Da Cunha",
+    "minute": "66"
+   },
+   {
+    "team": "Como",
+    "in": "Kaiki",
+    "out": "Nico Paz",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Luca Pairetto",
+  "attendance": 45000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

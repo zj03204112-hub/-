@@ -1,0 +1,156 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "seriea-2026-27-2026-10-28-milan-bologna",
+ "date": "2026-10-28",
+ "home": "Milan",
+ "away": "Bologna",
+ "score": "2-4",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5749720",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749720"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mike Maignan",
+   "Fikayo Tomori",
+   "Koni De Winter",
+   "Strahinja Pavlović",
+   "Pervis Estupinán",
+   "Yunus Musah",
+   "Ardon Jashari",
+   "Omari Hutchinson",
+   "Alphadjo Cissè",
+   "Davide Bartesaghi",
+   "Gonçalo Ramos"
+  ],
+  "home_bench": [
+   "Luka Modrić",
+   "Sankhoun Diawara",
+   "Christian Pulisic",
+   "Francesco Camarda",
+   "Christian Comotto",
+   "Leo Paul Bouyer",
+   "Lorenzo Torriani",
+   "El Hadji Cisse",
+   "Filippo Terracciano",
+   "Nirash Perera",
+   "Valeri Vladimirov",
+   "Lorenzo Ossola",
+   "Luca Menon",
+   "Silvano Vos"
+  ],
+  "away_starting_xi": [
+   "Łukasz Skorupski",
+   "Matteo Darmian",
+   "Nicolò Casale",
+   "Arthur Theate",
+   "Nadir Zortea",
+   "Tommaso Pobega",
+   "Lewis Ferguson",
+   "Rahim Alhassane",
+   "Federico Bernardeschi",
+   "Samuel Mbangula",
+   "Jens Odgaard"
+  ],
+  "away_bench": [
+   "Juan Miranda",
+   "Martin Vitík",
+   "Nicolò Cambiaghi",
+   "Torbjørn Heggem",
+   "Eivind Helland",
+   "Massimo Pessina",
+   "Ukko Happonen",
+   "Luca Lo Monaco",
+   "Marco Libra",
+   "Mikel Amondarain",
+   "Nikola Moro",
+   "Oussama El Azzouzi",
+   "Artem Dovbyk"
+  ],
+  "substitution_events": [
+   {
+    "team": "Milan",
+    "in": "Luka Modrić",
+    "out": "Fikayo Tomori",
+    "minute": "46"
+   },
+   {
+    "team": "Milan",
+    "in": "Christian Pulisic",
+    "out": "Omari Hutchinson",
+    "minute": "58"
+   },
+   {
+    "team": "Milan",
+    "in": "Sankhoun Diawara",
+    "out": "Pervis Estupinán",
+    "minute": "58"
+   },
+   {
+    "team": "Milan",
+    "in": "Francesco Camarda",
+    "out": "Davide Bartesaghi",
+    "minute": "63"
+   },
+   {
+    "team": "Milan",
+    "in": "Christian Comotto",
+    "out": "Gonçalo Ramos",
+    "minute": "87"
+   },
+   {
+    "team": "Bologna",
+    "in": "Juan Miranda",
+    "out": "Rahim Alhassane",
+    "minute": "59"
+   },
+   {
+    "team": "Bologna",
+    "in": "Nicolò Cambiaghi",
+    "out": "Federico Bernardeschi",
+    "minute": "59"
+   },
+   {
+    "team": "Bologna",
+    "in": "Martin Vitík",
+    "out": "Matteo Darmian",
+    "minute": "59"
+   },
+   {
+    "team": "Bologna",
+    "in": "Torbjørn Heggem",
+    "out": "Arthur Theate",
+    "minute": "70"
+   },
+   {
+    "team": "Bologna",
+    "in": "Eivind Helland",
+    "out": "Nicolò Casale",
+    "minute": "78"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 4
+  },
+  "provider_score": "2-4",
+  "score_consistent_with_events": true,
+  "referee": "Juan Luca Sacchi",
+  "attendance": 72825,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

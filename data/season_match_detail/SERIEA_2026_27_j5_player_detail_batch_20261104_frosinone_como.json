@@ -1,0 +1,158 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "seriea-2026-27-2026-09-20-frosinone-como",
+ "date": "2026-09-20",
+ "home": "Frosinone",
+ "away": "Como",
+ "score": "2-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749684",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749684"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lorenzo Palmisani",
+   "Anthony Oyono",
+   "Gabriele Calvani",
+   "Ilario Monterisi",
+   "Gabriele Bracaglia",
+   "Patrizio Masini",
+   "Giacomo Calò",
+   "Farès Ghedjemis",
+   "Romano Schmid",
+   "Giorgi Kvernadze",
+   "Antonio Raimondo"
+  ],
+  "home_bench": [
+   "Giorgio Cittadini",
+   "Alessio Zerbin",
+   "Matteo Cichella",
+   "Wisdom Amey",
+   "Anouar El Azzouzi",
+   "Matteo Pisseri",
+   "Sebastiano Desplanches",
+   "Enzo Tchato",
+   "Kevin Akpoguma",
+   "Omar Fayed",
+   "Luis Hasa",
+   "Daniel Bîrligea",
+   "Seydou Fini",
+   "Tomás Bobček"
+  ],
+  "away_starting_xi": [
+   "Jean Butez",
+   "Yan Couto",
+   "Jacobo Ramón",
+   "Trevoh Chalobah",
+   "Álex Valle",
+   "Luis Milla",
+   "Lucas Da Cunha",
+   "Assane Diao",
+   "Nico Paz",
+   "Martin Baturina",
+   "Anastasios Douvikas"
+  ],
+  "away_bench": [
+   "Samuele Ricci",
+   "Jesús Rodríguez",
+   "Moise Kean",
+   "Kaiki",
+   "Máximo Perrone",
+   "Mauro Vigorito",
+   "Robert Sánchez",
+   "Alberto Dossena",
+   "Edoardo Goldaniga",
+   "Ivan Smolčić",
+   "Marc-Oliver Kempf",
+   "Willy Kambwala",
+   "Mattia Liberali",
+   "Maxence Caqueret",
+   "Jayden Addai"
+  ],
+  "substitution_events": [
+   {
+    "team": "Frosinone",
+    "in": "Giorgio Cittadini",
+    "out": "Ilario Monterisi",
+    "minute": "53"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Matteo Cichella",
+    "out": "Giacomo Calò",
+    "minute": "80"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Alessio Zerbin",
+    "out": "Giorgi Kvernadze",
+    "minute": "80"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Wisdom Amey",
+    "out": "Farès Ghedjemis",
+    "minute": "88"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Anouar El Azzouzi",
+    "out": "Romano Schmid",
+    "minute": "88"
+   },
+   {
+    "team": "Como",
+    "in": "Samuele Ricci",
+    "out": "Lucas Da Cunha",
+    "minute": "46"
+   },
+   {
+    "team": "Como",
+    "in": "Moise Kean",
+    "out": "Anastasios Douvikas",
+    "minute": "46"
+   },
+   {
+    "team": "Como",
+    "in": "Jesús Rodríguez",
+    "out": "Martin Baturina",
+    "minute": "46"
+   },
+   {
+    "team": "Como",
+    "in": "Máximo Perrone",
+    "out": "Luis Milla",
+    "minute": "73"
+   },
+   {
+    "team": "Como",
+    "in": "Kaiki",
+    "out": "Álex Valle",
+    "minute": "73"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Daniele Chiffi",
+  "attendance": 14525,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

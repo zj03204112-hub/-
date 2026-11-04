@@ -1,0 +1,159 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "seriea-2026-27-2026-09-06-frosinone-venezia",
+ "date": "2026-09-06",
+ "home": "Frosinone",
+ "away": "Venezia",
+ "score": "3-2",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749664",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749664"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lorenzo Palmisani",
+   "Anthony Oyono",
+   "Gabriele Calvani",
+   "Giorgio Cittadini",
+   "Gabriele Bracaglia",
+   "Giacomo Calò",
+   "Patrizio Masini",
+   "Seydou Fini",
+   "Romano Schmid",
+   "Giorgi Kvernadze",
+   "Antonio Raimondo"
+  ],
+  "home_bench": [
+   "Matteo Cichella",
+   "Farès Ghedjemis",
+   "Ilario Monterisi",
+   "Daniel Bîrligea",
+   "Wisdom Amey",
+   "Matteo Pisseri",
+   "Sebastiano Desplanches",
+   "Aleksa Terzić",
+   "Enzo Tchato",
+   "Omar Fayed",
+   "Alessio Zerbin",
+   "Anouar El Azzouzi",
+   "Florian Grillitsch",
+   "Luis Hasa",
+   "Tomás Bobček"
+  ],
+  "away_starting_xi": [
+   "Filip Stanković",
+   "Joël Schingtienne",
+   "Armel Bella-Kotchap",
+   "Redouane Halhal",
+   "Antoine Hainaut",
+   "Kike Pérez",
+   "Gianluca Busio",
+   "Simon Sohm",
+   "Ridgeciano Haps",
+   "Albion Rrahmani",
+   "Akor Adams"
+  ],
+  "away_bench": [
+   "Richie Sagrado",
+   "Toni Fernández",
+   "John Yeboah",
+   "Lion Lauberbach",
+   "Matías Moreno",
+   "Lorenzo Montipò",
+   "Ale Gomes",
+   "Thierry Correia",
+   "Lamine Fanne",
+   "Lorenzo Berardi",
+   "Matteo Dagasso",
+   "Pasquale Mazzocchi",
+   "Simone Panada",
+   "Thórir Helgason",
+   "Kornel Lisman"
+  ],
+  "substitution_events": [
+   {
+    "team": "Frosinone",
+    "in": "Farès Ghedjemis",
+    "out": "Seydou Fini",
+    "minute": "57"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Matteo Cichella",
+    "out": "Romano Schmid",
+    "minute": "57"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Ilario Monterisi",
+    "out": "Giorgio Cittadini",
+    "minute": "79"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Daniel Bîrligea",
+    "out": "Antonio Raimondo",
+    "minute": "80"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Wisdom Amey",
+    "out": "Giacomo Calò",
+    "minute": "88"
+   },
+   {
+    "team": "Venezia",
+    "in": "Richie Sagrado",
+    "out": "Armel Bella-Kotchap",
+    "minute": "17"
+   },
+   {
+    "team": "Venezia",
+    "in": "John Yeboah",
+    "out": "Albion Rrahmani",
+    "minute": "46"
+   },
+   {
+    "team": "Venezia",
+    "in": "Toni Fernández",
+    "out": "Simon Sohm",
+    "minute": "46"
+   },
+   {
+    "team": "Venezia",
+    "in": "Lion Lauberbach",
+    "out": "Akor Adams",
+    "minute": "71"
+   },
+   {
+    "team": "Venezia",
+    "in": "Matías Moreno",
+    "out": "Ridgeciano Haps",
+    "minute": "75"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Mario Perri",
+  "attendance": 13117,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

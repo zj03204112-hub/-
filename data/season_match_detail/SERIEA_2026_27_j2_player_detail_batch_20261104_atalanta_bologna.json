@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "seriea-2026-27-2026-08-31-atalanta-bologna",
+ "date": "2026-08-31",
+ "home": "Atalanta",
+ "away": "Bologna",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749651",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749651"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Marco Carnesecchi",
+   "Davide Zappacosta",
+   "Odilon Kossounou",
+   "Giorgio Scalvini",
+   "Sead Kolasinac",
+   "Mario Pasalic",
+   "Gianluca Gaetano",
+   "Éderson",
+   "Charles De Ketelaere",
+   "Gianluca Scamacca",
+   "Giacomo Raspadori"
+  ],
+  "home_bench": [
+   "Eljif Elmas",
+   "Nicola Zalewski",
+   "Lazar Samardzic",
+   "Nikola Krstovic",
+   "Raoul Bellanova",
+   "Marco Sportiello",
+   "Paolo Vismara",
+   "Relja Obric",
+   "Federico Cassa",
+   "Ibrahim Sulemana",
+   "Lorenzo Bernasconi"
+  ],
+  "away_starting_xi": [
+   "Lukasz Skorupski",
+   "Emil Holm",
+   "Eivind Helland",
+   "Torbjørn Heggem",
+   "Rahim Alhassane",
+   "Tommaso Pobega",
+   "Lewis Ferguson",
+   "Federico Bernardeschi",
+   "Jens Odgaard",
+   "Nicolò Cambiaghi",
+   "Roberto Piccoli"
+  ],
+  "away_bench": [
+   "Artem Dovbyk",
+   "Riccardo Orsolini",
+   "Nadir Zortea",
+   "Mikel Amondarain",
+   "Nikola Moro",
+   "Massimo Pessina",
+   "Ukko Happonen",
+   "Arthur Theate",
+   "Juan Miranda",
+   "Lorenzo De Silvestri",
+   "Martin Vitík",
+   "Nicolò Casale",
+   "Marco Libra"
+  ],
+  "substitution_events": [
+   {
+    "team": "Atalanta",
+    "in": "Nicola Zalewski",
+    "out": "Charles De Ketelaere",
+    "minute": "56"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Eljif Elmas",
+    "out": "Giacomo Raspadori",
+    "minute": "56"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Nikola Krstovic",
+    "out": "Gianluca Scamacca",
+    "minute": "68"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Lazar Samardzic",
+    "out": "Éderson",
+    "minute": "68"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Raoul Bellanova",
+    "out": "Sead Kolasinac",
+    "minute": "78"
+   },
+   {
+    "team": "Bologna",
+    "in": "Riccardo Orsolini",
+    "out": "Jens Odgaard",
+    "minute": "60"
+   },
+   {
+    "team": "Bologna",
+    "in": "Artem Dovbyk",
+    "out": "Roberto Piccoli",
+    "minute": "60"
+   },
+   {
+    "team": "Bologna",
+    "in": "Nadir Zortea",
+    "out": "Emil Holm",
+    "minute": "72"
+   },
+   {
+    "team": "Bologna",
+    "in": "Mikel Amondarain",
+    "out": "Tommaso Pobega",
+    "minute": "72"
+   },
+   {
+    "team": "Bologna",
+    "in": "Nikola Moro",
+    "out": "Riccardo Orsolini",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Daniele Doveri",
+  "attendance": 21586,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

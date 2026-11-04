@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "seriea-2026-27-2026-09-19-udinese-cagliari",
+ "date": "2026-09-19",
+ "home": "Udinese",
+ "away": "Cagliari",
+ "score": "0-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749688",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749688"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Maduka Okoye",
+   "James Abankwah",
+   "Christian Kabasele",
+   "Enzo Ebosse",
+   "Mërgim Vojvoda",
+   "Lennon Miller",
+   "Jesper Karlström",
+   "Hassane Kamara",
+   "Nicolò Zaniolo",
+   "Keinan Davis",
+   "Jurgen Ekkelenkamp"
+  ],
+  "home_bench": [
+   "Idrissa Gueye",
+   "Giorgi Chakvetadze",
+   "Unai Gómez",
+   "Alessandro Zanoli",
+   "Vakoun Issouf Bayo",
+   "Bartosz Mrozek",
+   "Daniele Padelli",
+   "Nicolò Bertola",
+   "Oier Zarraga",
+   "Sandi Lovrić"
+  ],
+  "away_starting_xi": [
+   "Elia Caprile",
+   "Zé Pedro",
+   "Yerry Mina",
+   "Juan Rodríguez",
+   "Adam Obert",
+   "Alessandro Romano",
+   "Harry Winks",
+   "Alessandro Deiola",
+   "Michel Ndary Adopo",
+   "Daniel Maldini",
+   "Paul Mendy"
+  ],
+  "away_bench": [
+   "Yukinari Sugawara",
+   "Kevin Carlos",
+   "Roberto Gagliardini",
+   "Alieu Fadera",
+   "Alen Sherri",
+   "Boris Radunović",
+   "Raphael Kofler",
+   "Giuseppe Aurelio",
+   "Ivan Sulev",
+   "Jacopo Fazzini",
+   "Joseph Liteta",
+   "Riccardo Ciervo",
+   "Yanis Massolin",
+   "Alessandro Sugamele"
+  ],
+  "substitution_events": [
+   {
+    "team": "Udinese",
+    "in": "Idrissa Gueye",
+    "out": "Keinan Davis",
+    "minute": "38"
+   },
+   {
+    "team": "Udinese",
+    "in": "Giorgi Chakvetadze",
+    "out": "Nicolò Zaniolo",
+    "minute": "46"
+   },
+   {
+    "team": "Udinese",
+    "in": "Unai Gómez",
+    "out": "Lennon Miller",
+    "minute": "57"
+   },
+   {
+    "team": "Udinese",
+    "in": "Alessandro Zanoli",
+    "out": "Hassane Kamara",
+    "minute": "71"
+   },
+   {
+    "team": "Udinese",
+    "in": "Vakoun Issouf Bayo",
+    "out": "Christian Kabasele",
+    "minute": "71"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Yukinari Sugawara",
+    "out": "Juan Rodríguez",
+    "minute": "59"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Kevin Carlos",
+    "out": "Daniel Maldini",
+    "minute": "59"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Roberto Gagliardini",
+    "out": "Alessandro Romano",
+    "minute": "85"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Alieu Fadera",
+    "out": "Paul Mendy",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Gianluca Manganiello",
+  "attendance": 23282,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

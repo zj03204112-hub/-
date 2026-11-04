@@ -1,0 +1,159 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "seriea-2026-27-2026-10-16-frosinone-sassuolo",
+ "date": "2026-10-16",
+ "home": "Frosinone",
+ "away": "Sassuolo",
+ "score": "4-2",
+ "halftime_score": "3-2",
+ "official_match_url": "https://www.fotmob.com/matches/5749704",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749704"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lorenzo Palmisani",
+   "Anthony Oyono",
+   "Giorgio Cittadini",
+   "Ilario Monterisi",
+   "Gabriele Bracaglia",
+   "Patrizio Masini",
+   "Giacomo Calò",
+   "Farès Ghedjemis",
+   "Romano Schmid",
+   "Giorgi Kvernadze",
+   "Antonio Raimondo"
+  ],
+  "home_bench": [
+   "Omar Fayed",
+   "Alessio Zerbin",
+   "Wisdom Amey",
+   "Matteo Cichella",
+   "Daniel Bîrligea",
+   "Matteo Pisseri",
+   "Sebastiano Desplanches",
+   "Aleksa Terzić",
+   "Enzo Tchato",
+   "Gabriele Calvani",
+   "Kevin Akpoguma",
+   "Anouar El Azzouzi",
+   "Luis Hasa",
+   "Seydou Fini",
+   "Tomás Bobček"
+  ],
+  "away_starting_xi": [
+   "Arijanet Murić",
+   "Ignace Van Der Brempt",
+   "Cas Odenthal",
+   "Duje Ćaleta-Car",
+   "Josh Doig",
+   "Nemanja Matić",
+   "Darryl Bakola",
+   "Domenico Berardi",
+   "Kristian Thorstvedt",
+   "Armand Laurienté",
+   "Sebastiano Esposito"
+  ],
+  "away_bench": [
+   "Kieron Bowie",
+   "Luca Lipani",
+   "Rafael Obrador",
+   "Benja Domínguez",
+   "Cristian Volpato",
+   "Giacomo Satalino",
+   "Stefano Turati",
+   "Edoardo Pieragnolo",
+   "Fali Candé",
+   "Sebastian Walukiewicz",
+   "Simone Cinquegrano",
+   "Andrea Ghion",
+   "Ibrahim Sulemana",
+   "Vasilije Adžić",
+   "Laurs Skjellerup"
+  ],
+  "substitution_events": [
+   {
+    "team": "Frosinone",
+    "in": "Omar Fayed",
+    "out": "Ilario Monterisi",
+    "minute": "74"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Alessio Zerbin",
+    "out": "Giorgi Kvernadze",
+    "minute": "74"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Wisdom Amey",
+    "out": "Anthony Oyono",
+    "minute": "80"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Matteo Cichella",
+    "out": "Giacomo Calò",
+    "minute": "80"
+   },
+   {
+    "team": "Frosinone",
+    "in": "Daniel Bîrligea",
+    "out": "Antonio Raimondo",
+    "minute": "90"
+   },
+   {
+    "team": "Sassuolo",
+    "in": "Kieron Bowie",
+    "out": "Kristian Thorstvedt",
+    "minute": "58"
+   },
+   {
+    "team": "Sassuolo",
+    "in": "Benja Domínguez",
+    "out": "Sebastiano Esposito",
+    "minute": "68"
+   },
+   {
+    "team": "Sassuolo",
+    "in": "Rafael Obrador",
+    "out": "Josh Doig",
+    "minute": "68"
+   },
+   {
+    "team": "Sassuolo",
+    "in": "Luca Lipani",
+    "out": "Nemanja Matić",
+    "minute": "68"
+   },
+   {
+    "team": "Sassuolo",
+    "in": "Cristian Volpato",
+    "out": "Armand Laurienté",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 2
+  },
+  "provider_score": "4-2",
+  "score_consistent_with_events": true,
+  "referee": "Matteo Marchetti",
+  "attendance": 13390,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

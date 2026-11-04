@@ -1,0 +1,154 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "seriea-2026-27-2026-08-24-roma-fiorentina",
+ "date": "2026-08-24",
+ "home": "Roma",
+ "away": "Fiorentina",
+ "score": "4-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749640",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749640"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mile Svilar",
+   "Gianluca Mancini",
+   "Evan N'Dicka",
+   "Mario Hermoso",
+   "Emanuele Lulli",
+   "Bryan Cristante",
+   "Manu Koné",
+   "Wesley",
+   "Paulo Dybala",
+   "Rodrigo Mora",
+   "Donyell Malen"
+  ],
+  "home_bench": [
+   "Matias Soulé",
+   "Konstantinos Koulierakis",
+   "Santiago Castro",
+   "Neil El Aynaoui",
+   "Niccolò Pisilli",
+   "Giorgio De Marzi",
+   "Pierluigi Gollini",
+   "Daniele Ghilardi",
+   "Jan Ziólkowski",
+   "Nahuel Molina",
+   "Robinio Vaz"
+  ],
+  "away_starting_xi": [
+   "David de Gea",
+   "Dodô",
+   "Radu Dragusin",
+   "Luca Ranieri",
+   "João Mário",
+   "Cher Ndour",
+   "Nicolò Fagioli",
+   "Marco Brescianini",
+   "Franco Mastantuono",
+   "Arthur Atta",
+   "Mateo Pellegrino"
+  ],
+  "away_bench": [
+   "Álex Jiménez",
+   "Christ Inao Oulaï",
+   "Moise Kean",
+   "Rolando Mandragora",
+   "Valde",
+   "Luca Lezzerini",
+   "Oliver Christensen",
+   "Eman Kospo",
+   "Marin Pongracic",
+   "Viery",
+   "Giovanni Fabbian",
+   "Albert Gudmundsson",
+   "Brando Mazzeo",
+   "Federico Croci"
+  ],
+  "substitution_events": [
+   {
+    "team": "Roma",
+    "in": "Matias Soulé",
+    "out": "Rodrigo Mora",
+    "minute": "54"
+   },
+   {
+    "team": "Roma",
+    "in": "Santiago Castro",
+    "out": "Donyell Malen",
+    "minute": "68"
+   },
+   {
+    "team": "Roma",
+    "in": "Konstantinos Koulierakis",
+    "out": "Mario Hermoso",
+    "minute": "68"
+   },
+   {
+    "team": "Roma",
+    "in": "Neil El Aynaoui",
+    "out": "Paulo Dybala",
+    "minute": "79"
+   },
+   {
+    "team": "Roma",
+    "in": "Niccolò Pisilli",
+    "out": "Manu Koné",
+    "minute": "79"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Álex Jiménez",
+    "out": "Marco Brescianini",
+    "minute": "62"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Christ Inao Oulaï",
+    "out": "Nicolò Fagioli",
+    "minute": "62"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Moise Kean",
+    "out": "Franco Mastantuono",
+    "minute": "63"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Rolando Mandragora",
+    "out": "Arthur Atta",
+    "minute": "74"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Valde",
+    "out": "João Mário",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 0
+  },
+  "provider_score": "4-0",
+  "score_consistent_with_events": true,
+  "referee": "Matteo Marcenaro",
+  "attendance": 67598,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

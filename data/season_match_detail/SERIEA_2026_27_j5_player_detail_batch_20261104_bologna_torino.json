@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "seriea-2026-27-2026-09-19-bologna-torino",
+ "date": "2026-09-19",
+ "home": "Bologna",
+ "away": "Torino",
+ "score": "1-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749682",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749682"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Łukasz Skorupski",
+   "Eivind Helland",
+   "Torbjørn Heggem",
+   "Arthur Theate",
+   "Nadir Zortea",
+   "Lewis Ferguson",
+   "Tommaso Pobega",
+   "Juan Miranda",
+   "Federico Bernardeschi",
+   "Nicolò Cambiaghi",
+   "Roberto Piccoli"
+  ],
+  "home_bench": [
+   "Lorenzo De Silvestri",
+   "Jens Odgaard",
+   "Riccardo Orsolini",
+   "Nikola Moro",
+   "Emil Holm",
+   "Massimo Pessina",
+   "Ukko Happonen",
+   "Martin Vitík",
+   "Nicolò Casale",
+   "Rahim Bonkano",
+   "Marco Libra",
+   "Mikel Amondarain",
+   "Oussama El Azzouzi",
+   "Jay Enem",
+   "Samuel Mbangula"
+  ],
+  "away_starting_xi": [
+   "Lucas Perri",
+   "Eray Cömert",
+   "Ardian Ismajli",
+   "Saúl Coco",
+   "Niccolò Fortini",
+   "Daniel Bragança",
+   "Rolando Mandragora",
+   "Kian Fitz-Jim",
+   "Alessio Cacciamani",
+   "Giovanni Simeone",
+   "Nikola Vlašić"
+  ],
+  "away_bench": [
+   "Nathan Patterson",
+   "Sandro Kulenović",
+   "Emirhan İlkhan",
+   "Rafik Belghali",
+   "Gaetano Oristanio",
+   "Diego Mascardi",
+   "Lapo Siviero",
+   "Pietro Comuzzo",
+   "Ricardo Rodríguez",
+   "Cristiano Biraghi",
+   "Gvidas Gineitis",
+   "Zakaria Aboukhlal",
+   "Duván Zapata"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bologna",
+    "in": "Jens Odgaard",
+    "out": "Nicolò Cambiaghi",
+    "minute": "58"
+   },
+   {
+    "team": "Bologna",
+    "in": "Lorenzo De Silvestri",
+    "out": "Eivind Helland",
+    "minute": "58"
+   },
+   {
+    "team": "Bologna",
+    "in": "Riccardo Orsolini",
+    "out": "Federico Bernardeschi",
+    "minute": "76"
+   },
+   {
+    "team": "Bologna",
+    "in": "Nikola Moro",
+    "out": "Tommaso Pobega",
+    "minute": "77"
+   },
+   {
+    "team": "Bologna",
+    "in": "Emil Holm",
+    "out": "Nadir Zortea",
+    "minute": "85"
+   },
+   {
+    "team": "Torino",
+    "in": "Nathan Patterson",
+    "out": "Niccolò Fortini",
+    "minute": "46"
+   },
+   {
+    "team": "Torino",
+    "in": "Sandro Kulenović",
+    "out": "Kian Fitz-Jim",
+    "minute": "55"
+   },
+   {
+    "team": "Torino",
+    "in": "Gaetano Oristanio",
+    "out": "Nikola Vlašić",
+    "minute": "68"
+   },
+   {
+    "team": "Torino",
+    "in": "Emirhan İlkhan",
+    "out": "Daniel Bragança",
+    "minute": "68"
+   },
+   {
+    "team": "Torino",
+    "in": "Rafik Belghali",
+    "out": "Eray Cömert",
+    "minute": "68"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Marco Guida",
+  "attendance": 26413,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

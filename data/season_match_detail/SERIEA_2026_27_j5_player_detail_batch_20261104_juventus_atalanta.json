@@ -1,0 +1,146 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "seriea-2026-27-2026-09-20-juventus-atalanta",
+ "date": "2026-09-20",
+ "home": "Juventus",
+ "away": "Atalanta",
+ "score": "2-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749685",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749685"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Guglielmo Vicario",
+   "Pierre Kalulu",
+   "Gleison Bremer",
+   "Jhon Lucumí",
+   "Nicolás González",
+   "Weston McKennie",
+   "Douglas Luiz",
+   "Zeki Çelik",
+   "Francisco Conceição",
+   "Kerim Alajbegović",
+   "Randal Kolo Muani"
+  ],
+  "home_bench": [
+   "Pape Sarr",
+   "Edon Zhegrova",
+   "Teun Koopmeiners",
+   "Nick Woltemade",
+   "Lloyd Kelly",
+   "Carlo Pinsoglio",
+   "Riccardo Radu",
+   "Daniele Rugani",
+   "Federico Gatti",
+   "Filippo Pagnucco",
+   "Grady Makiobo"
+  ],
+  "away_starting_xi": [
+   "Marco Carnesecchi",
+   "Raoul Bellanova",
+   "Thomas Kristensen",
+   "Giorgio Scalvini",
+   "Lorenzo Bernasconi",
+   "Lazar Samardžić",
+   "Franck Kessié",
+   "Éderson",
+   "Charles De Ketelaere",
+   "Nikola Krstović",
+   "Jonathan Rowe"
+  ],
+  "away_bench": [
+   "Giacomo Raspadori",
+   "Gianluca Scamacca",
+   "Gianluca Gaetano",
+   "Eljif Elmas",
+   "Marco Sportiello",
+   "Thomas Pompei",
+   "Jacopo Mirra",
+   "Relja Obrić",
+   "Sead Kolašinac",
+   "Davide Zappacosta",
+   "Mario Pašalić",
+   "Nicola Zalewski"
+  ],
+  "substitution_events": [
+   {
+    "team": "Juventus",
+    "in": "Pape Sarr",
+    "out": "Kerim Alajbegović",
+    "minute": "46"
+   },
+   {
+    "team": "Juventus",
+    "in": "Edon Zhegrova",
+    "out": "Francisco Conceição",
+    "minute": "71"
+   },
+   {
+    "team": "Juventus",
+    "in": "Teun Koopmeiners",
+    "out": "Nicolás González",
+    "minute": "72"
+   },
+   {
+    "team": "Juventus",
+    "in": "Nick Woltemade",
+    "out": "Weston McKennie",
+    "minute": "86"
+   },
+   {
+    "team": "Juventus",
+    "in": "Lloyd Kelly",
+    "out": "Randal Kolo Muani",
+    "minute": "89"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Giacomo Raspadori",
+    "out": "Lazar Samardžić",
+    "minute": "63"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Gianluca Scamacca",
+    "out": "Nikola Krstović",
+    "minute": "72"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Gianluca Gaetano",
+    "out": "Franck Kessié",
+    "minute": "73"
+   },
+   {
+    "team": "Atalanta",
+    "in": "Eljif Elmas",
+    "out": "Jonathan Rowe",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Luca Zufferli",
+  "attendance": 40351,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

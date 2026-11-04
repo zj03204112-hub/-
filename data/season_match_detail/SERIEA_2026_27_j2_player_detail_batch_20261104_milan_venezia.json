@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "seriea-2026-27-2026-08-28-milan-venezia",
+ "date": "2026-08-28",
+ "home": "Milan",
+ "away": "Venezia",
+ "score": "2-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749650",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749650"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mike Maignan",
+   "Mario Gila",
+   "Koni De Winter",
+   "Strahinja Pavlovic",
+   "Samuel Chukwueze",
+   "Luka Modric",
+   "Yunus Musah",
+   "Davide Bartesaghi",
+   "Ruben Loftus-Cheek",
+   "Alphadjo Cissè",
+   "Gonçalo Ramos"
+  ],
+  "home_bench": [
+   "Adrien Rabiot",
+   "Alexis Saelemaekers",
+   "Ardon Jashari",
+   "Matteo Gabbia",
+   "Pervis Estupinán",
+   "Lorenzo Torriani",
+   "Pietro Terracciano",
+   "Filippo Terracciano",
+   "Sankhoun Diawara",
+   "Christian Comotto",
+   "Christian Pulisic",
+   "Diego Moreira",
+   "Francesco Camarda"
+  ],
+  "away_starting_xi": [
+   "Filip Stankovic",
+   "Joël Schingtienne",
+   "Armel Bella-Kotchap",
+   "Bartol Franjic",
+   "Antoine Hainaut",
+   "Kike Pérez",
+   "Gianluca Busio",
+   "Toma Basic",
+   "Ridgeciano Haps",
+   "John Yeboah",
+   "Akor Adams"
+  ],
+  "away_bench": [
+   "Redouane Halhal",
+   "Thierry Correia",
+   "Simon Sohm",
+   "Albion Rrahmani",
+   "Lion Lauberbach",
+   "Lorenzo Montipò",
+   "Matteo Grandi",
+   "Ale Gomes",
+   "Lamine Fanne",
+   "Matteo Dagasso",
+   "Richie Sagrado",
+   "Simone Panada",
+   "Thórir Helgason",
+   "Alvin Okoro",
+   "Marko Lawk Farji"
+  ],
+  "substitution_events": [
+   {
+    "team": "Milan",
+    "in": "Adrien Rabiot",
+    "out": "Alphadjo Cissè",
+    "minute": "59"
+   },
+   {
+    "team": "Milan",
+    "in": "Alexis Saelemaekers",
+    "out": "Ruben Loftus-Cheek",
+    "minute": "59"
+   },
+   {
+    "team": "Milan",
+    "in": "Ardon Jashari",
+    "out": "Luka Modric",
+    "minute": "74"
+   },
+   {
+    "team": "Milan",
+    "in": "Pervis Estupinán",
+    "out": "Davide Bartesaghi",
+    "minute": "87"
+   },
+   {
+    "team": "Milan",
+    "in": "Matteo Gabbia",
+    "out": "Mario Gila",
+    "minute": "87"
+   },
+   {
+    "team": "Venezia",
+    "in": "Redouane Halhal",
+    "out": "Bartol Franjic",
+    "minute": "45"
+   },
+   {
+    "team": "Venezia",
+    "in": "Thierry Correia",
+    "out": "Ridgeciano Haps",
+    "minute": "65"
+   },
+   {
+    "team": "Venezia",
+    "in": "Simon Sohm",
+    "out": "Toma Basic",
+    "minute": "66"
+   },
+   {
+    "team": "Venezia",
+    "in": "Lion Lauberbach",
+    "out": "John Yeboah",
+    "minute": "80"
+   },
+   {
+    "team": "Venezia",
+    "in": "Albion Rrahmani",
+    "out": "Kike Pérez",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Gianluca Manganiello",
+  "attendance": 75141,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

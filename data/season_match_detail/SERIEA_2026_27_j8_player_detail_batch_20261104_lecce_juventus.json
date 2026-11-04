@@ -1,0 +1,145 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "seriea-2026-27-2026-10-25-lecce-juventus",
+ "date": "2026-10-25",
+ "home": "Lecce",
+ "away": "Juventus",
+ "score": "0-2",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5749716",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749716"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Wladimiro Falcone",
+   "Danilo Veiga",
+   "Kialonda Gaspar",
+   "Tiago Gabriel",
+   "Antonino Gallo",
+   "Mohamed Kaba",
+   "Oumar Ngom",
+   "Youssef Maleh",
+   "Konan N’Dri",
+   "Willem Geubbels",
+   "Amar Fatah"
+  ],
+  "home_bench": [
+   "Jamil Siebert",
+   "Joël Monteiro",
+   "Corrie Ndaba",
+   "Paco Esteban",
+   "Nikola Štulić",
+   "Alexandru Borbei",
+   "Marco Bleve",
+   "Ali Dembélé",
+   "Elijah Scott",
+   "Gaby Jean",
+   "Olaf Gorter",
+   "Omri Gandelman",
+   "Sadik Fofana"
+  ],
+  "away_starting_xi": [
+   "Guglielmo Vicario",
+   "Federico Gatti",
+   "Gleison Bremer",
+   "Jhon Lucumí",
+   "Pierre Kalulu",
+   "Weston McKennie",
+   "Douglas Luiz",
+   "Teun Koopmeiners",
+   "Andrea Cambiaso",
+   "Nick Woltemade",
+   "Randal Kolo Muani"
+  ],
+  "away_bench": [
+   "Juan Cabal",
+   "Jérémie Boga",
+   "Pape Sarr",
+   "Kerim Alajbegović",
+   "Carlo Pinsoglio",
+   "Neto",
+   "Daniele Rugani",
+   "Lloyd Kelly",
+   "Edon Zhegrova"
+  ],
+  "substitution_events": [
+   {
+    "team": "Lecce",
+    "in": "Joël Monteiro",
+    "out": "Amar Fatah",
+    "minute": "46"
+   },
+   {
+    "team": "Lecce",
+    "in": "Jamil Siebert",
+    "out": "Mohamed Kaba",
+    "minute": "46"
+   },
+   {
+    "team": "Lecce",
+    "in": "Corrie Ndaba",
+    "out": "Tiago Gabriel",
+    "minute": "60"
+   },
+   {
+    "team": "Lecce",
+    "in": "Paco Esteban",
+    "out": "Willem Geubbels",
+    "minute": "71"
+   },
+   {
+    "team": "Lecce",
+    "in": "Nikola Štulić",
+    "out": "Konan N’Dri",
+    "minute": "86"
+   },
+   {
+    "team": "Juventus",
+    "in": "Juan Cabal",
+    "out": "Andrea Cambiaso",
+    "minute": "68"
+   },
+   {
+    "team": "Juventus",
+    "in": "Jérémie Boga",
+    "out": "Randal Kolo Muani",
+    "minute": "68"
+   },
+   {
+    "team": "Juventus",
+    "in": "Pape Sarr",
+    "out": "Douglas Luiz",
+    "minute": "83"
+   },
+   {
+    "team": "Juventus",
+    "in": "Kerim Alajbegović",
+    "out": "Weston McKennie",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Fabio Maresca",
+  "attendance": 27130,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

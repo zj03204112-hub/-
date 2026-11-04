@@ -1,0 +1,154 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "seriea-2026-27-2026-10-27-roma-cagliari",
+ "date": "2026-10-27",
+ "home": "Roma",
+ "away": "Cagliari",
+ "score": "4-2",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5749721",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749721"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Pierluigi Gollini",
+   "Gianluca Mancini",
+   "Evan N'Dicka",
+   "Konstantinos Koulierakis",
+   "Emanuele Lulli",
+   "Bryan Cristante",
+   "Marten de Roon",
+   "Niccolò Pisilli",
+   "Nahuel Molina",
+   "Matias Soulé",
+   "Santiago Castro"
+  ],
+  "home_bench": [
+   "Wesley",
+   "Rodrigo Mora",
+   "Donyell Malen",
+   "Devyne Rensch",
+   "Daniele Ghilardi",
+   "Devis Vásquez",
+   "Giorgio De Marzi",
+   "Leonardo Balerdi",
+   "Mario Hermoso",
+   "Alessandro Di Nunzio",
+   "Mandjou Camara"
+  ],
+  "away_starting_xi": [
+   "Elia Caprile",
+   "Zé Pedro",
+   "Yerry Mina",
+   "Juan Rodríguez",
+   "Yukinari Sugawara",
+   "Alessandro Romano",
+   "Alessandro Deiola",
+   "Michel Ndary Adopo",
+   "Adam Obert",
+   "Alieu Fadera",
+   "M'Bala Nzola"
+  ],
+  "away_bench": [
+   "Paul Mendy",
+   "Joseph Liteta",
+   "Daniel Maldini",
+   "Yanis Massolin",
+   "Yael Trepy",
+   "Alen Sherri",
+   "Boris Radunović",
+   "Raphael Kofler",
+   "Giuseppe Aurelio",
+   "Ivan Sulev",
+   "Riccardo Ciervo",
+   "Roberto Gagliardini",
+   "Jacopo Fazzini",
+   "Kevin Carlos"
+  ],
+  "substitution_events": [
+   {
+    "team": "Roma",
+    "in": "Wesley",
+    "out": "Nahuel Molina",
+    "minute": "46"
+   },
+   {
+    "team": "Roma",
+    "in": "Rodrigo Mora",
+    "out": "Marten de Roon",
+    "minute": "56"
+   },
+   {
+    "team": "Roma",
+    "in": "Donyell Malen",
+    "out": "Santiago Castro",
+    "minute": "56"
+   },
+   {
+    "team": "Roma",
+    "in": "Devyne Rensch",
+    "out": "Emanuele Lulli",
+    "minute": "76"
+   },
+   {
+    "team": "Roma",
+    "in": "Daniele Ghilardi",
+    "out": "Gianluca Mancini",
+    "minute": "81"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Paul Mendy",
+    "out": "M'Bala Nzola",
+    "minute": "63"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Daniel Maldini",
+    "out": "Alieu Fadera",
+    "minute": "76"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Joseph Liteta",
+    "out": "Alessandro Deiola",
+    "minute": "76"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Yanis Massolin",
+    "out": "Michel Ndary Adopo",
+    "minute": "90"
+   },
+   {
+    "team": "Cagliari",
+    "in": "Yael Trepy",
+    "out": "Yukinari Sugawara",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 2
+  },
+  "provider_score": "4-2",
+  "score_consistent_with_events": true,
+  "referee": "Ermanno Feliciani",
+  "attendance": 61780,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "seriea-2026-27-2026-10-25-genoa-venezia",
+ "date": "2026-10-25",
+ "home": "Genoa",
+ "away": "Venezia",
+ "score": "1-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749713",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749713"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Justin Bijlow",
+   "Sebastian Otoa",
+   "Leo Østigard",
+   "Johan Vásquez",
+   "Mikael Egill Ellertsson",
+   "Hamed Traorè",
+   "Samuel Wiafe",
+   "Mario Mitaj",
+   "Junior Messias",
+   "Milutin Osmajić",
+   "Stephan El Shaarawy"
+  ],
+  "home_bench": [
+   "Morten Frendrup",
+   "Lorenzo Colombo",
+   "Alessandro Marcandalli",
+   "David Puczka",
+   "Amorim",
+   "Daniele Sommariva",
+   "Franz Stolz",
+   "Cody Drameh",
+   "Lukas Klisys",
+   "Stefano Sabelli",
+   "Tommaso Baldanzi",
+   "Franz-Ethan Meichtry",
+   "Robinho Júnior",
+   "Vítinha"
+  ],
+  "away_starting_xi": [
+   "Filip Stanković",
+   "Redouane Halhal",
+   "Matías Moreno",
+   "Juan Jesus",
+   "Antoine Hainaut",
+   "Kike Pérez",
+   "Simon Sohm",
+   "Toma Bašić",
+   "Ridgeciano Haps",
+   "John Yeboah",
+   "Akor Adams"
+  ],
+  "away_bench": [
+   "Matteo Dagasso",
+   "Pasquale Mazzocchi",
+   "Albion Rrahmani",
+   "Lion Lauberbach",
+   "Lorenzo Montipò",
+   "Ale Gomes",
+   "Armel Bella-Kotchap",
+   "Joël Schingtienne",
+   "Alfred Duncan",
+   "Gianluca Busio",
+   "Lamine Fanne",
+   "Richie Sagrado",
+   "Thórir Helgason",
+   "Toni Fernández",
+   "Kornel Lisman"
+  ],
+  "substitution_events": [
+   {
+    "team": "Genoa",
+    "in": "Morten Frendrup",
+    "out": "Junior Messias",
+    "minute": "62"
+   },
+   {
+    "team": "Genoa",
+    "in": "Lorenzo Colombo",
+    "out": "Stephan El Shaarawy",
+    "minute": "62"
+   },
+   {
+    "team": "Genoa",
+    "in": "Alessandro Marcandalli",
+    "out": "Sebastian Otoa",
+    "minute": "70"
+   },
+   {
+    "team": "Genoa",
+    "in": "David Puczka",
+    "out": "Mario Mitaj",
+    "minute": "80"
+   },
+   {
+    "team": "Genoa",
+    "in": "Amorim",
+    "out": "Samuel Wiafe",
+    "minute": "81"
+   },
+   {
+    "team": "Venezia",
+    "in": "Pasquale Mazzocchi",
+    "out": "Ridgeciano Haps",
+    "minute": "71"
+   },
+   {
+    "team": "Venezia",
+    "in": "Matteo Dagasso",
+    "out": "Toma Bašić",
+    "minute": "71"
+   },
+   {
+    "team": "Venezia",
+    "in": "Albion Rrahmani",
+    "out": "Antoine Hainaut",
+    "minute": "79"
+   },
+   {
+    "team": "Venezia",
+    "in": "Lion Lauberbach",
+    "out": "Simon Sohm",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Simone Sozza",
+  "attendance": 28979,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

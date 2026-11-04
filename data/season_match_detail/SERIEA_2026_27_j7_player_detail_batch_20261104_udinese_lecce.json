@@ -1,0 +1,158 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "seriea-2026-27-2026-10-18-udinese-lecce",
+ "date": "2026-10-18",
+ "home": "Udinese",
+ "away": "Lecce",
+ "score": "0-3",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5749708",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749708"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Maduka Okoye",
+   "Oumar Solet",
+   "David Alaba",
+   "Enzo Ebosse",
+   "Mërgim Vojvoda",
+   "Jesper Karlström",
+   "Oier Zarraga",
+   "Hassane Kamara",
+   "Jurgen Ekkelenkamp",
+   "Giorgi Chakvetadze",
+   "Keinan Davis"
+  ],
+  "home_bench": [
+   "Matteo Palma",
+   "Jakub Piotrowski",
+   "Juan Arizala",
+   "Alessandro Zanoli",
+   "Unai Gómez",
+   "Bartosz Mrozek",
+   "Daniele Padelli",
+   "Christian Kabasele",
+   "James Abankwah",
+   "Nicolò Bertola",
+   "Lennon Miller",
+   "Sandi Lovrić",
+   "Giulio Vinciati",
+   "Lazar Jovanović"
+  ],
+  "away_starting_xi": [
+   "Wladimiro Falcone",
+   "Danilo Veiga",
+   "Kialonda Gaspar",
+   "Tiago Gabriel",
+   "Antonino Gallo",
+   "Lassana Coulibaly",
+   "Oumar Ngom",
+   "Youssef Maleh",
+   "Konan N’Dri",
+   "Willem Geubbels",
+   "Amar Fatah"
+  ],
+  "away_bench": [
+   "Mohamed Kaba",
+   "Santiago Pierotti",
+   "Paco Esteban",
+   "Jamil Siebert",
+   "Joël Monteiro",
+   "Alexandru Borbei",
+   "Marco Bleve",
+   "Ali Dembélé",
+   "Corrie Ndaba",
+   "Elijah Scott",
+   "Gaby Jean",
+   "Olaf Gorter",
+   "Omri Gandelman",
+   "Sadik Fofana",
+   "Nikola Štulić"
+  ],
+  "substitution_events": [
+   {
+    "team": "Udinese",
+    "in": "Matteo Palma",
+    "out": "David Alaba",
+    "minute": "46"
+   },
+   {
+    "team": "Udinese",
+    "in": "Juan Arizala",
+    "out": "Hassane Kamara",
+    "minute": "46"
+   },
+   {
+    "team": "Udinese",
+    "in": "Jakub Piotrowski",
+    "out": "Oier Zarraga",
+    "minute": "46"
+   },
+   {
+    "team": "Udinese",
+    "in": "Unai Gómez",
+    "out": "Giorgi Chakvetadze",
+    "minute": "64"
+   },
+   {
+    "team": "Udinese",
+    "in": "Alessandro Zanoli",
+    "out": "Enzo Ebosse",
+    "minute": "64"
+   },
+   {
+    "team": "Lecce",
+    "in": "Mohamed Kaba",
+    "out": "Lassana Coulibaly",
+    "minute": "41"
+   },
+   {
+    "team": "Lecce",
+    "in": "Santiago Pierotti",
+    "out": "Amar Fatah",
+    "minute": "69"
+   },
+   {
+    "team": "Lecce",
+    "in": "Paco Esteban",
+    "out": "Willem Geubbels",
+    "minute": "70"
+   },
+   {
+    "team": "Lecce",
+    "in": "Joël Monteiro",
+    "out": "Konan N’Dri",
+    "minute": "82"
+   },
+   {
+    "team": "Lecce",
+    "in": "Jamil Siebert",
+    "out": "Youssef Maleh",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 3
+  },
+  "provider_score": "0-3",
+  "score_consistent_with_events": true,
+  "referee": "Marco Guida",
+  "attendance": 23175,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

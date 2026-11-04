@@ -1,0 +1,52 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026/27",
+ "scheduled_fixtures_scanned": 130,
+ "completed_fixtures": 100,
+ "upcoming_fixtures": 30,
+ "fixtures_with_player_detail": 100,
+ "player_rows": 4790,
+ "starting_xi_rows": 2200,
+ "substitution_rows": 978,
+ "event_rows": 659,
+ "events_by_type": {
+  "yellow_card": 330,
+  "goal": 295,
+  "own_goal": 9,
+  "red_card": 7,
+  "penalty_goal": 14,
+  "second_yellow": 4
+ },
+ "shot_rows": 2904,
+ "shot_goals": 318,
+ "event_goals": 318,
+ "match_meta_rows": 100,
+ "meta_missing": {
+  "ManagerHome": 0,
+  "ManagerAway": 0,
+  "Venue": 0,
+  "Referee": 0
+ },
+ "xg_shots_with_value": 2895,
+ "xg_total": 312.54,
+ "score_crosscheck": {
+  "reference": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+  "rows": 100,
+  "matched": 100,
+  "mismatches": 0,
+  "result": "all matched scorelines agree"
+ },
+ "sources": {
+  "fixtures_lineups_events_shots": "FotMob public match API",
+  "scores_crosscheck": "football-data.co.uk I1 season export (independent provider)"
+ },
+ "known_gaps": [
+  "Lineups, cards and shots remain single provider (FotMob).",
+  "30 fixtures are scheduled but not yet played."
+ ],
+ "pipeline": [
+  "data_pipeline/collect_seriea_fotmob.py",
+  "data_pipeline/crosscheck_seriea_scores_football_data.py"
+ ]
+}

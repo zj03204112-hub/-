@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "seriea-2026-27-2026-10-10-genoa-fiorentina",
+ "date": "2026-10-10",
+ "home": "Genoa",
+ "away": "Fiorentina",
+ "score": "2-1",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749693",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749693"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Justin Bijlow",
+   "Sebastian Otoa",
+   "Leo Østigard",
+   "Johan Vásquez",
+   "Kingsley Ehizibue",
+   "Mikael Egill Ellertsson",
+   "Hamed Traorè",
+   "Morten Frendrup",
+   "Junior Messias",
+   "Stephan El Shaarawy",
+   "Milutin Osmajić"
+  ],
+  "home_bench": [
+   "Samuel Wiafe",
+   "Vítinha",
+   "Alessandro Marcandalli",
+   "David Puczka",
+   "Stefano Sabelli",
+   "Daniele Sommariva",
+   "Franz Stolz",
+   "Cody Drameh",
+   "Lukas Klisys",
+   "Mario Mitaj",
+   "Gaël Lafont",
+   "Tommaso Baldanzi",
+   "Robinho Júnior"
+  ],
+  "away_starting_xi": [
+   "David de Gea",
+   "Álex Jiménez",
+   "Radu Drăgușin",
+   "Luca Ranieri",
+   "Valde",
+   "Cher Ndour",
+   "Christ Inao Oulaï",
+   "Nicolò Fagioli",
+   "Franco Mastantuono",
+   "Beto",
+   "Wilfried Gnonto"
+  ],
+  "away_bench": [
+   "Viery",
+   "Alieu Njie",
+   "Mateo Pellegrino",
+   "Dodô",
+   "Pote",
+   "Luca Lezzerini",
+   "Oliver Christensen",
+   "João Mário",
+   "Marin Pongračić",
+   "Marco Brescianini",
+   "Brando Mazzeo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Genoa",
+    "in": "Vítinha",
+    "out": "Junior Messias",
+    "minute": "56"
+   },
+   {
+    "team": "Genoa",
+    "in": "Samuel Wiafe",
+    "out": "Stephan El Shaarawy",
+    "minute": "56"
+   },
+   {
+    "team": "Genoa",
+    "in": "Alessandro Marcandalli",
+    "out": "Sebastian Otoa",
+    "minute": "66"
+   },
+   {
+    "team": "Genoa",
+    "in": "David Puczka",
+    "out": "Kingsley Ehizibue",
+    "minute": "81"
+   },
+   {
+    "team": "Genoa",
+    "in": "Stefano Sabelli",
+    "out": "Mikael Egill Ellertsson",
+    "minute": "82"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Alieu Njie",
+    "out": "Christ Inao Oulaï",
+    "minute": "46"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Viery",
+    "out": "Luca Ranieri",
+    "minute": "46"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Mateo Pellegrino",
+    "out": "Beto",
+    "minute": "64"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Dodô",
+    "out": "Álex Jiménez",
+    "minute": "80"
+   },
+   {
+    "team": "Fiorentina",
+    "in": "Pote",
+    "out": "Wilfried Gnonto",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Fabio Maresca",
+  "attendance": 31630,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

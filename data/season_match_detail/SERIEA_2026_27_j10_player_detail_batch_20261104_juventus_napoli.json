@@ -1,0 +1,151 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Serie A",
+ "season": "2026-27",
+ "matchday": "10",
+ "match_id": "seriea-2026-27-2026-11-01-juventus-napoli",
+ "date": "2026-11-01",
+ "home": "Juventus",
+ "away": "Napoli",
+ "score": "2-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5749735",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5749735"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Guglielmo Vicario",
+   "Pierre Kalulu",
+   "Gleison Bremer",
+   "Jhon Lucumí",
+   "Juan Cabal",
+   "Weston McKennie",
+   "Douglas Luiz",
+   "Teun Koopmeiners",
+   "Kerim Alajbegović",
+   "Randal Kolo Muani",
+   "Nick Woltemade"
+  ],
+  "home_bench": [
+   "Federico Gatti",
+   "Edon Zhegrova",
+   "Lloyd Kelly",
+   "Jérémie Boga",
+   "Andrea Cambiaso",
+   "Carlo Pinsoglio",
+   "Neto",
+   "Daniele Rugani",
+   "Pape Sarr",
+   "Jeff Ekhator"
+  ],
+  "away_starting_xi": [
+   "Alex Meret",
+   "Giovanni Di Lorenzo",
+   "Luca Marianucci",
+   "Rafa Marín",
+   "Mathías Olivera",
+   "Frank Anguissa",
+   "Kevin De Bruyne",
+   "Scott McTominay",
+   "Matteo Politano",
+   "Lorenzo Lucca",
+   "Noa Lang"
+  ],
+  "away_bench": [
+   "Amir Rrahmani",
+   "Billy Gilmour",
+   "Antonio Vergara",
+   "Sam Beukema",
+   "Giovane Nascimento",
+   "Claudio Lieto",
+   "David Spinelli",
+   "Nikita Contini",
+   "Nikita Melnyk",
+   "Andrea Chiummariello",
+   "Francisco Baridó",
+   "Milton Pereyra"
+  ],
+  "substitution_events": [
+   {
+    "team": "Juventus",
+    "in": "Federico Gatti",
+    "out": "Weston McKennie",
+    "minute": "46"
+   },
+   {
+    "team": "Juventus",
+    "in": "Edon Zhegrova",
+    "out": "Randal Kolo Muani",
+    "minute": "59"
+   },
+   {
+    "team": "Juventus",
+    "in": "Jérémie Boga",
+    "out": "Kerim Alajbegović",
+    "minute": "72"
+   },
+   {
+    "team": "Juventus",
+    "in": "Lloyd Kelly",
+    "out": "Jhon Lucumí",
+    "minute": "72"
+   },
+   {
+    "team": "Juventus",
+    "in": "Andrea Cambiaso",
+    "out": "Juan Cabal",
+    "minute": "83"
+   },
+   {
+    "team": "Napoli",
+    "in": "Amir Rrahmani",
+    "out": "Giovanni Di Lorenzo",
+    "minute": "46"
+   },
+   {
+    "team": "Napoli",
+    "in": "Billy Gilmour",
+    "out": "Kevin De Bruyne",
+    "minute": "46"
+   },
+   {
+    "team": "Napoli",
+    "in": "Antonio Vergara",
+    "out": "Matteo Politano",
+    "minute": "61"
+   },
+   {
+    "team": "Napoli",
+    "in": "Giovane Nascimento",
+    "out": "Frank Anguissa",
+    "minute": "79"
+   },
+   {
+    "team": "Napoli",
+    "in": "Sam Beukema",
+    "out": "Mathías Olivera",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Simone Sozza",
+  "attendance": 41691,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/SERIEA_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/SERIEA_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}
