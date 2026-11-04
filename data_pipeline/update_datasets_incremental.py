@@ -234,6 +234,17 @@ def main() -> int:
     log("[J1] manual pass required: fixtures are keyed by an official match_card_id")
     summary.append({"league": "J1", "status": "manual: match_card_id lookup required"})
 
+    log("[SPORTTERY] snapshotting on-sale jingcai handicap odds")
+    if not args.dry_run:
+        result = subprocess.run([sys.executable,
+                                 os.path.join(PIPELINE, "collect_sporttery_odds.py")],
+                                capture_output=True, text=True)
+        tail = (result.stdout or "").strip().splitlines()[-2:]
+        log("  " + " | ".join(tail) if tail else "  no output")
+        summary.append({"league": "SPORTTERY", "status": "snapshot taken", "tail": tail})
+    else:
+        summary.append({"league": "SPORTTERY", "status": "dry run"})
+
     if not args.dry_run and not args.skip_import:
         log("[SQLITE] refreshing the analysis layer")
         result = subprocess.run([sys.executable,
