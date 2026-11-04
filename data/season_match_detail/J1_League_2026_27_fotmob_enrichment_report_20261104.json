@@ -1,0 +1,24 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "J1 League",
+ "season": "2026/27",
+ "method": "FotMob player id -> shirt number -> official Japanese roster name",
+ "stats": {
+  "fixtures": 130,
+  "formations": 130,
+  "red_cards": 21,
+  "assists": 277,
+  "shots": 3513,
+  "unmapped_card": 0,
+  "unmapped_shot": 0,
+  "unmapped_assist": 0,
+  "skipped": 0
+ },
+ "fields_added": [
+  "formation",
+  "red cards",
+  "assists",
+  "shots with xG"
+ ],
+ "unmapped_policy": "rows whose shirt number cannot be resolved are skipped and counted, never written with a romaji name"
+}

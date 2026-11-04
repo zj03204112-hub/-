@@ -6,10 +6,12 @@
  "fixtures_with_player_detail": 130,
  "player_rows": 5197,
  "substitution_rows": 1261,
- "event_rows": 764,
+ "event_rows": 785,
  "events_by_type": {
   "goal": 391,
-  "yellow_card": 373
+  "yellow_card": 373,
+  "second_yellow": 7,
+  "red_card": 14
  },
  "match_meta_rows": 130,
  "meta_missing": {
@@ -30,11 +32,10 @@
   "xg_xga": "FotMob public match API, shot level xG summed per team (secondary; J.League publishes no xG)"
  },
  "known_gaps": [
-  "Red cards: the official match page renders 0 dismissal events across all 130 matches while FotMob reports some; the dismissal block is not exposed in the parsed sections, so red cards are left empty instead of being guessed.",
-  "Assists: the official J.League match record does not publish an assisting player, so the column stays blank.",
-  "Formations: not published on the official match record page, so both formation columns stay blank.",
-  "Coaches/venue/referee/attendance are missing for 1 fixture each (page layout variant).",
-  "xG is a third party derived value, not an official J.League figure."
+  "Assists exist for 277 of 391 goals; the rest have no assist in the source (penalties, solo goals).",
+  "Red and second-yellow cards now come from FotMob through the shirt-number bridge; the official page itself still publishes none.",
+  "Team names, player names and all other fields remain the official Japanese ones.",
+  "37 fixtures are scheduled but not yet played."
  ],
  "pipeline": [
   "data_pipeline/collect_j1_official_events.py",
@@ -48,5 +49,24 @@
    "disagreements": 10,
    "official_preferred": 10
   }
+ },
+ "assists_filled": 277,
+ "shot_rows": 3513,
+ "shot_goals": 391,
+ "formation_missing": 0,
+ "fotmob_enrichment": {
+  "method": "FotMob player id -> shirt number -> official J.League roster number -> Japanese name",
+  "stats": {
+   "fixtures": 130,
+   "formations": 130,
+   "red_cards": 21,
+   "assists": 277,
+   "shots": 3513,
+   "unmapped_card": 0,
+   "unmapped_shot": 0,
+   "unmapped_assist": 0,
+   "skipped": 0
+  },
+  "note": "Adds the four fields the official site does not publish while keeping the Japanese naming: formations, red cards and second yellows, assists, and a shot table with xG. No romaji name was written and no row was guessed."
  }
 }
