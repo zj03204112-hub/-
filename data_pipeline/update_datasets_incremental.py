@@ -50,10 +50,8 @@ FOTMOB_LEAGUES = [
     ("SERIEA", "SERIEA_2026_27", [55], "collect_seriea_fotmob"),
     ("LIGUE1", "LIGUE1_2026_27", [53], "collect_ligue1_fotmob"),
     ("EREDIVISIE", "EREDIVISIE_2026_27", [937276], "collect_eredivisie_fotmob"),
-    ("UCL", "UCL_2026_27", [943230], "collect_ucl_fotmob"),
     ("KLEAGUE1", "KLEAGUE1_2026_27", [919356, 955135, 955147], "collect_kleague1_fotmob"),
     ("ALEAGUE", "ALEAGUE_2026_27", [1000001678], "collect_aleague_fotmob"),
-    ("ACLELITE", "ACLELITE_2026_27", [943983, 943984], "collect_aclelite_fotmob"),
 ]
 
 TABLES = {
