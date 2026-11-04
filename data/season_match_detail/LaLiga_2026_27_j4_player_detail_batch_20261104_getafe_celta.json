@@ -1,0 +1,149 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 4,
+ "match_id": "laliga-2026-27-2026-09-07-getafe-cf-rc-celta",
+ "date": "2026-09-07",
+ "home": "Getafe",
+ "away": "Celta",
+ "score": "1-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4",
+ "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "sources": {
+  "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "David Soria",
+   "Nemanja Gudelj",
+   "Djené Dakonam",
+   "Johan Mojica",
+   "Francisco Femenía Far",
+   "Zaid Romero",
+   "Mario Martín",
+   "Orel Mangala",
+   "Ramón Terrats",
+   "Martín Satriano",
+   "Enes Ünal"
+  ],
+  "home_bench": [
+   "David Cordón Mancha",
+   "Óscar López",
+   "Jean Valou",
+   "Ebrahima Drammeh",
+   "Diego Ferrer",
+   "Mohamed Hamdoune",
+   "Sebastián Boselli",
+   "Andrés García",
+   "Jirí Letácek",
+   "Iván Azón",
+   "Saba Sazonov",
+   "Borja Mayoral"
+  ],
+  "away_starting_xi": [
+   "Ionut Radu",
+   "Marcos Alonso",
+   "Carl Starfelt",
+   "Yoel Lago",
+   "Moriba Kourouma Kourouma",
+   "Miguel Román",
+   "Jones El Abdellaoui",
+   "Javi Galán",
+   "Iago Aspas",
+   "Hugo González",
+   "Pablo Durán"
+  ],
+  "away_bench": [
+   "Sergio Carreira",
+   "Álvaro Núñez",
+   "Altay Bayindir",
+   "Ferran Jutglà",
+   "Javi Rueda",
+   "Couhaib Driouech",
+   "Williot Swedberg",
+   "Hugo Álvarez",
+   "Sebastián Cáceres",
+   "Javi Rodríguez",
+   "Borja Iglesias",
+   "Hugo Burcio"
+  ],
+  "substitution_events": [
+   {
+    "team": "Getafe",
+    "player_in": "Andrés García",
+    "player_out": "Francisco Femenía Far",
+    "minute": "8",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4"
+   },
+   {
+    "team": "Getafe",
+    "player_in": "Iván Azón",
+    "player_out": "Martín Satriano",
+    "minute": "73",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4"
+   },
+   {
+    "team": "Getafe",
+    "player_in": "Óscar López",
+    "player_out": "Ramón Terrats",
+    "minute": "94",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4"
+   },
+   {
+    "team": "Getafe",
+    "player_in": "Sebastián Boselli",
+    "player_out": "Orel Mangala",
+    "minute": "94",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4"
+   },
+   {
+    "team": "Celta",
+    "player_in": "Javi Rueda",
+    "player_out": "Javi Galán",
+    "minute": "64",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4"
+   },
+   {
+    "team": "Celta",
+    "player_in": "Sergio Carreira",
+    "player_out": "Iago Aspas",
+    "minute": "64",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4"
+   },
+   {
+    "team": "Celta",
+    "player_in": "Couhaib Driouech",
+    "player_out": "Jones El Abdellaoui",
+    "minute": "65",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4"
+   },
+   {
+    "team": "Celta",
+    "player_in": "Borja Iglesias",
+    "player_out": "Pablo Durán",
+    "minute": "69",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4"
+   },
+   {
+    "team": "Celta",
+    "player_in": "Ferran Jutglà",
+    "player_out": "Hugo González",
+    "minute": "83",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4"
+   }
+  ],
+  "notes": [
+   "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
+   "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified.",
+   "Official source spelling kept; the master CSV already stored a different spelling for: Ionut Radu (CSV: Ionuț Radu)."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+ },
+ "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+}

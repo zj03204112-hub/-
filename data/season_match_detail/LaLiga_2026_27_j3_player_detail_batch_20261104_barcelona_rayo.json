@@ -1,0 +1,154 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 3,
+ "match_id": "laliga-2026-27-2026-08-31-fc-barcelona-rayo-vallecano",
+ "date": "2026-08-31",
+ "home": "Barcelona",
+ "away": "Rayo",
+ "score": "5-2",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3",
+ "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "sources": {
+  "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Joan García",
+   "Andreas Christensen",
+   "Jules Koundé",
+   "Xavi Espart",
+   "Pau Cubarsí",
+   "Dani Olmo",
+   "Anthony Gordon",
+   "Marc Bernal",
+   "Pedro González López",
+   "Lamine Yamal Nasraoui Ebana",
+   "Raphael Dias Belloli"
+  ],
+  "home_bench": [
+   "Hamza Mohamed Abdelkarim Elsayed Selim",
+   "Wojciech Szczesny",
+   "Eder Aller",
+   "Fermín López",
+   "Gerard Martín",
+   "Brian Fariñas",
+   "Alejandro Balde",
+   "Karim Adeyemi",
+   "Eric García",
+   "Rodrigo Hernández Cascante",
+   "João Pedro Cavaco Cancelo"
+  ],
+  "away_starting_xi": [
+   "Dani Cárdenas",
+   "Iván Balliu",
+   "Florian Lejeune",
+   "Jozhua Vertrouwd",
+   "Pathé Ciss",
+   "Gnangoro Bouare Samake",
+   "Óscar Valentín",
+   "Jorge de Frutos",
+   "Unai López",
+   "Álvaro García",
+   "Sergio Camello"
+  ],
+  "away_bench": [
+   "Pedro Díaz",
+   "Adrià Pedrosa",
+   "Randy Nteka",
+   "Giorgi Tsitaishvili",
+   "Fran Pérez",
+   "Andrei Ratiu",
+   "Alexandre Zurawski",
+   "Pelayo Fernández",
+   "Marco de Las Sias",
+   "Adrián Molina",
+   "Marco Román"
+  ],
+  "substitution_events": [
+   {
+    "team": "Barcelona",
+    "player_in": "Fermín López",
+    "player_out": "Dani Olmo",
+    "minute": "64",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3"
+   },
+   {
+    "team": "Barcelona",
+    "player_in": "Rodrigo Hernández Cascante",
+    "player_out": "Marc Bernal",
+    "minute": "64",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3"
+   },
+   {
+    "team": "Barcelona",
+    "player_in": "Karim Adeyemi",
+    "player_out": "Anthony Gordon",
+    "minute": "77",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3"
+   },
+   {
+    "team": "Barcelona",
+    "player_in": "João Pedro Cavaco Cancelo",
+    "player_out": "Pedro González López",
+    "minute": "78",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3"
+   },
+   {
+    "team": "Barcelona",
+    "player_in": "Hamza Mohamed Abdelkarim Elsayed Selim",
+    "player_out": "Raphael Dias Belloli",
+    "minute": "86",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3"
+   },
+   {
+    "team": "Rayo",
+    "player_in": "Adrià Pedrosa",
+    "player_out": "Jozhua Vertrouwd",
+    "minute": "33",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3"
+   },
+   {
+    "team": "Rayo",
+    "player_in": "Pedro Díaz",
+    "player_out": "Gnangoro Bouare Samake",
+    "minute": "57",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3"
+   },
+   {
+    "team": "Rayo",
+    "player_in": "Fran Pérez",
+    "player_out": "Jorge de Frutos",
+    "minute": "58",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3"
+   },
+   {
+    "team": "Rayo",
+    "player_in": "Alexandre Zurawski",
+    "player_out": "Sergio Camello",
+    "minute": "75",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3"
+   },
+   {
+    "team": "Rayo",
+    "player_in": "Randy Nteka",
+    "player_out": "Unai López",
+    "minute": "75",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-vallecano-3"
+   }
+  ],
+  "notes": [
+   "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
+   "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified.",
+   "Official source spelling kept; the master CSV already stored a different spelling for: Joan García (CSV: Joan Garcia); Wojciech Szczesny (CSV: Wojciech Szczęsny)."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+ },
+ "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+}

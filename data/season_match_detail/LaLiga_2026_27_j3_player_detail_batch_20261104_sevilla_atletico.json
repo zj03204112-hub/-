@@ -1,0 +1,149 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 3,
+ "match_id": "laliga-2026-27-2026-08-29-sevilla-fc-atletico-de-madrid",
+ "date": "2026-08-29",
+ "home": "Sevilla",
+ "away": "Atletico",
+ "score": "1-3",
+ "halftime_score": "0-3",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-atletico-de-madrid-3",
+ "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "sources": {
+  "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-atletico-de-madrid-3"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Odysseas Vlachodimos",
+   "Gabriel Suazo",
+   "Juan Iglesias",
+   "Andrés López Gallo",
+   "Kike Salas",
+   "Jon Guridi",
+   "Miguel Sierra",
+   "Lucien Agoumé",
+   "Gerard Fernández Castellano",
+   "Julio Díaz",
+   "Robbie Ure"
+  ],
+  "home_bench": [
+   "Manuel Ángel Castillo",
+   "Nico Guillén",
+   "Isaac Romero",
+   "Fran González",
+   "Iker Munoz",
+   "Ibrahima Sow",
+   "Manu Bueno",
+   "José Ángel Carmona",
+   "Arouna Sangante",
+   "Alfon González",
+   "Giorgi Kochorashvili",
+   "Chidera Ejuke"
+  ],
+  "away_starting_xi": [
+   "Jan Oblak",
+   "Alejandro Grimaldo",
+   "Marc Pubill",
+   "Marcos Llorente",
+   "Dávid Hancko",
+   "Morten Hjulmand",
+   "Pablo Barrios",
+   "Giuliano Simeone",
+   "Ademola Lookman",
+   "Álex Baena",
+   "Kang-In Lee"
+  ],
+  "away_bench": [
+   "Cristian Romero",
+   "Jorge Resurrección Merodio",
+   "Johnny Cardoso",
+   "José María Giménez",
+   "Carlos Martín",
+   "Arnau Ortiz",
+   "Juan Musso",
+   "Rodrigo Mendoza",
+   "Jorge Castillo",
+   "Dani Martinez",
+   "Miguel Llorente Cubo",
+   "Jorge Domínguez"
+  ],
+  "substitution_events": [
+   {
+    "team": "Sevilla",
+    "player_in": "Chidera Ejuke",
+    "player_out": "Julio Díaz",
+    "minute": "55",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-atletico-de-madrid-3"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Giorgi Kochorashvili",
+    "player_out": "Jon Guridi",
+    "minute": "55",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-atletico-de-madrid-3"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Isaac Romero",
+    "player_out": "Gerard Fernández Castellano",
+    "minute": "68",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-atletico-de-madrid-3"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Alfon González",
+    "player_out": "Miguel Sierra",
+    "minute": "80",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-atletico-de-madrid-3"
+   },
+   {
+    "team": "Atletico",
+    "player_in": "José María Giménez",
+    "player_out": "Marcos Llorente",
+    "minute": "66",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-atletico-de-madrid-3"
+   },
+   {
+    "team": "Atletico",
+    "player_in": "Arnau Ortiz",
+    "player_out": "Ademola Lookman",
+    "minute": "66",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-atletico-de-madrid-3"
+   },
+   {
+    "team": "Atletico",
+    "player_in": "Jorge Resurrección Merodio",
+    "player_out": "Kang-In Lee",
+    "minute": "72",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-atletico-de-madrid-3"
+   },
+   {
+    "team": "Atletico",
+    "player_in": "Johnny Cardoso",
+    "player_out": "Morten Hjulmand",
+    "minute": "85",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-atletico-de-madrid-3"
+   },
+   {
+    "team": "Atletico",
+    "player_in": "Rodrigo Mendoza",
+    "player_out": "Álex Baena",
+    "minute": "85",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-atletico-de-madrid-3"
+   }
+  ],
+  "notes": [
+   "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
+   "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified.",
+   "Official source spelling kept; the master CSV already stored a different spelling for: Dani Martinez (CSV: Dani Martínez)."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+ },
+ "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+}

@@ -1,0 +1,140 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 3,
+ "match_id": "laliga-2026-27-2026-08-30-real-madrid-malaga-cf",
+ "date": "2026-08-30",
+ "home": "Real Madrid",
+ "away": "Malaga",
+ "score": "4-0",
+ "halftime_score": "3-0",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-malaga-cf-3",
+ "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "sources": {
+  "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-malaga-cf-3"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Thibaut Courtois",
+   "Antonio Rüdiger",
+   "Dean Huijsen",
+   "Trent Alexander-Arnold",
+   "Marc Cucurella",
+   "Jude Bellingham",
+   "Eduardo Camavinga",
+   "Vinícius José Paixão de Oliveira Júnior",
+   "Federico Valverde",
+   "Brahim Díaz",
+   "Kylian Mbappé"
+  ],
+  "home_bench": [
+   "Andrii Lunin",
+   "Ibrahima Konaté",
+   "Denzel Dumfries",
+   "Jorge Cestero Sancho",
+   "Álvaro Carreras",
+   "Arda Güler",
+   "Bernardo Mota Veiga de Carvalho e Silva",
+   "Mario Rivas",
+   "Carlos Espí",
+   "Javi Navarro",
+   "Yan Diomande",
+   "Alexis Ciria"
+  ],
+  "away_starting_xi": [
+   "Alfonso Herrero",
+   "Einar Galilea",
+   "Rafael Garrido Hierro",
+   "Carlos Puga",
+   "Ángel Recio",
+   "Joaquín Muñoz",
+   "Izan Merino",
+   "David Larrubia",
+   "Rafa Rodríguez",
+   "Carlos Dotor",
+   "Carlos Ruiz Rubio"
+  ],
+  "away_bench": [
+   "Joseph Otu",
+   "Juan Francisco Fernández Martin",
+   "Carlos López",
+   "Álex Pastor",
+   "José Salinas",
+   "Julen Lobete",
+   "Ramón Enríquez",
+   "Haitam Abaida",
+   "Juan Cruz",
+   "Pablo Martínez",
+   "Eneko Jauregi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Real Madrid",
+    "player_in": "Yan Diomande",
+    "player_out": "Brahim Díaz",
+    "minute": "65",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-malaga-cf-3"
+   },
+   {
+    "team": "Real Madrid",
+    "player_in": "Bernardo Mota Veiga de Carvalho e Silva",
+    "player_out": "Federico Valverde",
+    "minute": "77",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-malaga-cf-3"
+   },
+   {
+    "team": "Real Madrid",
+    "player_in": "Arda Güler",
+    "player_out": "Jude Bellingham",
+    "minute": "87",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-malaga-cf-3"
+   },
+   {
+    "team": "Malaga",
+    "player_in": "Pablo Martínez",
+    "player_out": "Rafa Rodríguez",
+    "minute": "45",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-malaga-cf-3"
+   },
+   {
+    "team": "Malaga",
+    "player_in": "José Salinas",
+    "player_out": "Carlos Puga",
+    "minute": "60",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-malaga-cf-3"
+   },
+   {
+    "team": "Malaga",
+    "player_in": "Juan Cruz",
+    "player_out": "Joaquín Muñoz",
+    "minute": "61",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-malaga-cf-3"
+   },
+   {
+    "team": "Malaga",
+    "player_in": "Haitam Abaida",
+    "player_out": "Einar Galilea",
+    "minute": "74",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-malaga-cf-3"
+   },
+   {
+    "team": "Malaga",
+    "player_in": "Ramón Enríquez",
+    "player_out": "Izan Merino",
+    "minute": "87",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-malaga-cf-3"
+   }
+  ],
+  "notes": [
+   "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
+   "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+ },
+ "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+}

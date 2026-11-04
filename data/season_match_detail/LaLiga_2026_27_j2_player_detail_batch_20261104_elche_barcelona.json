@@ -1,0 +1,156 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 2,
+ "match_id": "laliga-2026-27-2026-08-23-elche-c-f-fc-barcelona",
+ "date": "2026-08-23",
+ "home": "Elche",
+ "away": "Barcelona",
+ "score": "0-5",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2",
+ "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "sources": {
+  "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Matías Dituro",
+   "Buba Sangaré",
+   "Federico Redondo",
+   "Germán Valera",
+   "Víctor Chust",
+   "David Affengruber",
+   "Marc Aguado",
+   "Ali Houary",
+   "Gonzalo Villar",
+   "José Antonio Morente Oliva",
+   "Fer Niño"
+  ],
+  "home_bench": [
+   "Martim Carvalho Neto",
+   "Pedro Bigas",
+   "Alejandro Iturbe",
+   "José Antonio Ferrández Pomares",
+   "Facundo Buonanotte",
+   "Lucas Cepeda",
+   "Matia Barzic",
+   "Grady Diangana",
+   "Ezequiel Ponce",
+   "Umaru Konare Tounkara",
+   "Javi Morcillo",
+   "Álvaro Padilla"
+  ],
+  "away_starting_xi": [
+   "Joan García",
+   "Andreas Christensen",
+   "Eric García",
+   "Xavi Espart",
+   "Gerard Martín",
+   "Marc Bernal",
+   "Karim Adeyemi",
+   "Pablo Páez Gavira",
+   "Fermín López",
+   "Lamine Yamal Nasraoui Ebana",
+   "Raphael Dias Belloli"
+  ],
+  "away_bench": [
+   "Brian Fariñas",
+   "Jordi Pesquer",
+   "Hamza Mohamed Abdelkarim Elsayed Selim",
+   "Eder Aller",
+   "Álvaro Cortés",
+   "Pau Cubarsí",
+   "Wojciech Szczesny",
+   "Pedro González López",
+   "Anthony Gordon",
+   "Jules Koundé",
+   "Dani Olmo",
+   "João Pedro Cavaco Cancelo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Elche",
+    "player_in": "Lucas Cepeda",
+    "player_out": "José Antonio Morente Oliva",
+    "minute": "64",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2"
+   },
+   {
+    "team": "Elche",
+    "player_in": "Facundo Buonanotte",
+    "player_out": "Ali Houary",
+    "minute": "64",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2"
+   },
+   {
+    "team": "Elche",
+    "player_in": "Martim Carvalho Neto",
+    "player_out": "Marc Aguado",
+    "minute": "64",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2"
+   },
+   {
+    "team": "Elche",
+    "player_in": "Ezequiel Ponce",
+    "player_out": "Fer Niño",
+    "minute": "69",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2"
+   },
+   {
+    "team": "Elche",
+    "player_in": "Pedro Bigas",
+    "player_out": "Federico Redondo",
+    "minute": "81",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2"
+   },
+   {
+    "team": "Barcelona",
+    "player_in": "Pedro González López",
+    "player_out": "Pablo Páez Gavira",
+    "minute": "45",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2"
+   },
+   {
+    "team": "Barcelona",
+    "player_in": "Dani Olmo",
+    "player_out": "Karim Adeyemi",
+    "minute": "65",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2"
+   },
+   {
+    "team": "Barcelona",
+    "player_in": "Anthony Gordon",
+    "player_out": "Lamine Yamal Nasraoui Ebana",
+    "minute": "65",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2"
+   },
+   {
+    "team": "Barcelona",
+    "player_in": "Jules Koundé",
+    "player_out": "Marc Bernal",
+    "minute": "80",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2"
+   },
+   {
+    "team": "Barcelona",
+    "player_in": "João Pedro Cavaco Cancelo",
+    "player_out": "Raphael Dias Belloli",
+    "minute": "80",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-fc-barcelona-2"
+   }
+  ],
+  "notes": [
+   "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
+   "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified.",
+   "Official source spelling kept; the master CSV already stored a different spelling for: Joan García (CSV: Joan Garcia); Matia Barzic (CSV: Matia Barzić); Wojciech Szczesny (CSV: Wojciech Szczęsny)."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+ },
+ "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+}

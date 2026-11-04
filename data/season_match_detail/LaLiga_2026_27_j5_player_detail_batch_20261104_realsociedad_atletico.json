@@ -1,0 +1,149 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 5,
+ "match_id": "laliga-2026-27-2026-09-13-real-sociedad-atletico-de-madrid",
+ "date": "2026-09-13",
+ "home": "Real Sociedad",
+ "away": "Atletico",
+ "score": "0-3",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5",
+ "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "sources": {
+  "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Álex Remiro",
+   "Sergio Gómez",
+   "Luken Beitia",
+   "Jon Aramburu",
+   "Mamadou Sarr",
+   "Gonçalo Manuel Ganchinho Guedes",
+   "Carlos Soler",
+   "Yangel Herrera",
+   "Luka Sucic",
+   "Ander Barrenetxea",
+   "Mikel Oyarzabal"
+  ],
+  "home_bench": [
+   "Alex Marchal",
+   "Gorka Carrera",
+   "Job Ochieng",
+   "Jon Gorrotxategi",
+   "Unai Marrero",
+   "Orri Óskarsson",
+   "Héctor Fort",
+   "Beñat Turrientes",
+   "Arsen Zakharyan",
+   "Aihen Muñoz",
+   "Jon Pacheco",
+   "Takefusa Kubo"
+  ],
+  "away_starting_xi": [
+   "Jan Oblak",
+   "Marc Pubill",
+   "Cristian Romero",
+   "Dávid Hancko",
+   "Alejandro Grimaldo",
+   "Marcos Llorente",
+   "Giuliano Simeone",
+   "Morten Hjulmand",
+   "Kang-In Lee",
+   "Álex Baena",
+   "Ademola Lookman"
+  ],
+  "away_bench": [
+   "Jonathan David",
+   "Jorge Resurrección Merodio",
+   "Robin Le Normand",
+   "Johnny Cardoso",
+   "Obed Vargas",
+   "Salvi Esquivel",
+   "Arnau Ortiz",
+   "Juan Musso",
+   "Rodrigo Mendoza",
+   "Dani Martinez",
+   "Javier Gil",
+   "Jorge Domínguez"
+  ],
+  "substitution_events": [
+   {
+    "team": "Real Sociedad",
+    "player_in": "Job Ochieng",
+    "player_out": "Ander Barrenetxea",
+    "minute": "72",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5"
+   },
+   {
+    "team": "Real Sociedad",
+    "player_in": "Takefusa Kubo",
+    "player_out": "Gonçalo Manuel Ganchinho Guedes",
+    "minute": "72",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5"
+   },
+   {
+    "team": "Real Sociedad",
+    "player_in": "Jon Gorrotxategi",
+    "player_out": "Carlos Soler",
+    "minute": "78",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5"
+   },
+   {
+    "team": "Real Sociedad",
+    "player_in": "Orri Óskarsson",
+    "player_out": "Mikel Oyarzabal",
+    "minute": "79",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5"
+   },
+   {
+    "team": "Real Sociedad",
+    "player_in": "Arsen Zakharyan",
+    "player_out": "Yangel Herrera",
+    "minute": "85",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5"
+   },
+   {
+    "team": "Atletico",
+    "player_in": "Johnny Cardoso",
+    "player_out": "Álex Baena",
+    "minute": "59",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5"
+   },
+   {
+    "team": "Atletico",
+    "player_in": "Jonathan David",
+    "player_out": "Marcos Llorente",
+    "minute": "60",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5"
+   },
+   {
+    "team": "Atletico",
+    "player_in": "Jorge Resurrección Merodio",
+    "player_out": "Kang-In Lee",
+    "minute": "60",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5"
+   },
+   {
+    "team": "Atletico",
+    "player_in": "Arnau Ortiz",
+    "player_out": "Ademola Lookman",
+    "minute": "76",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5"
+   }
+  ],
+  "notes": [
+   "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
+   "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified.",
+   "Official source spelling kept; the master CSV already stored a different spelling for: Dani Martinez (CSV: Dani Martínez)."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+ },
+ "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+}

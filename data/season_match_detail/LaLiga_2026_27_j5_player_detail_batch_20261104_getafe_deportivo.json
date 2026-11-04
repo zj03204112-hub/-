@@ -1,0 +1,134 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 5,
+ "match_id": "laliga-2026-27-2026-09-13-getafe-cf-rc-deportivo",
+ "date": "2026-09-13",
+ "home": "Getafe",
+ "away": "Deportivo",
+ "score": "1-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-deportivo-5",
+ "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "sources": {
+  "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-deportivo-5"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "David Soria",
+   "Djené Dakonam",
+   "Johan Mojica",
+   "Nemanja Gudelj",
+   "Sebastián Boselli",
+   "Orel Mangala",
+   "Martín Satriano",
+   "Ramón Terrats",
+   "Mario Martín",
+   "Enes Ünal",
+   "Iván Azón"
+  ],
+  "home_bench": [
+   "Diego Ferrer",
+   "Moha Achraf",
+   "Jean Valou",
+   "Óscar López",
+   "David Cordón Mancha",
+   "Ebrahima Drammeh",
+   "Mohamed Hamdoune",
+   "José Luis Pérez del Amo",
+   "Jirí Letácek",
+   "Francho Serrano",
+   "Saba Sazonov",
+   "Borja Mayoral"
+  ],
+  "away_starting_xi": [
+   "Leo Román",
+   "Joaquín Navarro Jiménez",
+   "José María Giménez",
+   "Lucas Noubi",
+   "Giacomo Quagliata",
+   "Mario Soriano",
+   "Lorenzo Amatucci",
+   "Luismi Cruz",
+   "Marc Casadó",
+   "Pierre-Emerick Aubameyang",
+   "Bil Nsongo"
+  ],
+  "away_bench": [
+   "Adrià Altimira",
+   "Zakaria Eddahchouri",
+   "Riki Rodríguez",
+   "Miguel Loureiro",
+   "Yeremay Hernández",
+   "Álvaro Fernández Llorente",
+   "Adama Traoré",
+   "David Mella",
+   "Diego Villares",
+   "Jonathan Asp Jensen",
+   "José Ángel Esmoris Tasende",
+   "Bright Ede"
+  ],
+  "substitution_events": [
+   {
+    "team": "Getafe",
+    "player_in": "Francho Serrano",
+    "player_out": "Iván Azón",
+    "minute": "76",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-deportivo-5"
+   },
+   {
+    "team": "Getafe",
+    "player_in": "José Luis Pérez del Amo",
+    "player_out": "Ramón Terrats",
+    "minute": "84",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-deportivo-5"
+   },
+   {
+    "team": "Getafe",
+    "player_in": "Saba Sazonov",
+    "player_out": "Sebastián Boselli",
+    "minute": "84",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-deportivo-5"
+   },
+   {
+    "team": "Getafe",
+    "player_in": "David Cordón Mancha",
+    "player_out": "Martín Satriano",
+    "minute": "89",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-deportivo-5"
+   },
+   {
+    "team": "Deportivo",
+    "player_in": "Adama Traoré",
+    "player_out": "Marc Casadó",
+    "minute": "62",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-deportivo-5"
+   },
+   {
+    "team": "Deportivo",
+    "player_in": "Yeremay Hernández",
+    "player_out": "Luismi Cruz",
+    "minute": "71",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-deportivo-5"
+   },
+   {
+    "team": "Deportivo",
+    "player_in": "Zakaria Eddahchouri",
+    "player_out": "Bil Nsongo",
+    "minute": "71",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-deportivo-5"
+   }
+  ],
+  "notes": [
+   "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
+   "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+ },
+ "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+}

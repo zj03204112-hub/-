@@ -1,0 +1,48 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "results_fixtures": 110,
+ "completed_fixtures": 109,
+ "postponed_fixtures": [
+  {
+   "date": null,
+   "home": "Rayo Vallecano",
+   "away": "Athletic Club",
+   "note": "listed as PreMatch on gameweek 8; officially rescheduled to 2026-12-09"
+  }
+ ],
+ "fixtures_with_normalized_player_detail": 109,
+ "player_csv_rows": 4969,
+ "substitution_csv_rows": 1057,
+ "starting_xi_rows": 2398,
+ "fixtures_with_22_starters": 109,
+ "duplicate_player_keys": 0,
+ "duplicate_substitution_keys": 0,
+ "unresolved_appearance_status_rows": 0,
+ "matchdays_with_player_detail": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "detail_batches": 99,
+ "coverage_gap": "none among completed fixtures; Rayo Vallecano-Athletic Club stays pending until played",
+ "collection_pipeline": "data_pipeline/collect_laliga_official_player_detail.py",
+ "source": "official LaLiga match pages (structured __NEXT_DATA__ match payload: lineups, bench, event timeline)",
+ "appearance_status_policy": {
+  "started": "player is in the official starting XI",
+  "substitute_appeared": "bench player with an official incoming substitution event, EntryMinute set",
+  "substitute_not_appeared": "bench player without any incoming substitution event"
+ },
+ "minute_source": "official event timeline 'time' value; stoppage-time display clocks are not stored",
+ "certification_status": "official_source_structured_extraction_passed; secondary_source_crosscheck_pending",
+ "certification_note": "Each batch carries verification and status fields stating that club-site/AS/Sky cross-check has not been done for the automated backfill; treat as structurally verified, not fully certified."
+}

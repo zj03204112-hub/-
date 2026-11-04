@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 8,
+ "match_id": "laliga-2026-27-2026-10-12-levante-ud-sevilla-fc",
+ "date": "2026-10-12",
+ "home": "Levante",
+ "away": "Sevilla",
+ "score": "3-3",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-sevilla-fc-8",
+ "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "sources": {
+  "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-sevilla-fc-8"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mathew Ryan",
+   "Jeremy Toljan",
+   "Adrián de la Fuente",
+   "Manu Sánchez",
+   "Ifeanyi Ndukwe",
+   "Oriol Rey",
+   "Roger Brugué",
+   "Víctor García",
+   "Jon Ander Olasagasti",
+   "Iván Romero",
+   "Yanis Musuayi"
+  ],
+  "home_bench": [
+   "Ihor Galdin",
+   "Aïssa Mandi",
+   "Nacho Pérez",
+   "Axel Tape",
+   "Jorge Cabello",
+   "Paco Cortés",
+   "Dani Requena",
+   "Thiago Fernández",
+   "Petar Ratkov",
+   "Pablo Campos",
+   "Enzo Bardeli"
+  ],
+  "away_starting_xi": [
+   "Odysseas Vlachodimos",
+   "Andrés López Gallo",
+   "Gabriel Suazo",
+   "Kike Salas",
+   "Juan Iglesias",
+   "Lucien Agoumé",
+   "Miguel Sierra",
+   "Youssouf Fofana",
+   "Félix Alexandre Andrade Sanches Correia",
+   "Giorgi Kochorashvili",
+   "Robbie Ure"
+  ],
+  "away_bench": [
+   "Alfon González",
+   "Rubén Vargas",
+   "Gerard Fernández Castellano",
+   "Arouna Sangante",
+   "José Ángel Carmona",
+   "Manu Bueno",
+   "Chidera Ejuke",
+   "Julio Díaz",
+   "Jon Guridi",
+   "Fran González",
+   "Isaac Romero",
+   "Fábio Rafael Rodrigues Cardoso"
+  ],
+  "substitution_events": [
+   {
+    "team": "Levante",
+    "player_in": "Petar Ratkov",
+    "player_out": "Yanis Musuayi",
+    "minute": "56",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-sevilla-fc-8"
+   },
+   {
+    "team": "Levante",
+    "player_in": "Thiago Fernández",
+    "player_out": "Víctor García",
+    "minute": "56",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-sevilla-fc-8"
+   },
+   {
+    "team": "Levante",
+    "player_in": "Dani Requena",
+    "player_out": "Oriol Rey",
+    "minute": "68",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-sevilla-fc-8"
+   },
+   {
+    "team": "Levante",
+    "player_in": "Nacho Pérez",
+    "player_out": "Jeremy Toljan",
+    "minute": "90",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-sevilla-fc-8"
+   },
+   {
+    "team": "Levante",
+    "player_in": "Paco Cortés",
+    "player_out": "Jon Ander Olasagasti",
+    "minute": "90",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-sevilla-fc-8"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Alfon González",
+    "player_out": "Miguel Sierra",
+    "minute": "68",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-sevilla-fc-8"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Isaac Romero",
+    "player_out": "Robbie Ure",
+    "minute": "68",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-sevilla-fc-8"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Julio Díaz",
+    "player_out": "Félix Alexandre Andrade Sanches Correia",
+    "minute": "72",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-sevilla-fc-8"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Jon Guridi",
+    "player_out": "Giorgi Kochorashvili",
+    "minute": "88",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-sevilla-fc-8"
+   }
+  ],
+  "notes": [
+   "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
+   "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+ },
+ "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+}

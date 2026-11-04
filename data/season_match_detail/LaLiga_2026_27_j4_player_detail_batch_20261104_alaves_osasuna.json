@@ -1,0 +1,149 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 4,
+ "match_id": "laliga-2026-27-2026-09-06-d-alaves-c-a-osasuna",
+ "date": "2026-09-06",
+ "home": "Alaves",
+ "away": "Osasuna",
+ "score": "5-2",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4",
+ "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "sources": {
+  "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Antonio Sivera",
+   "Jonny Otto",
+   "Nahuel Tenaglia",
+   "Ville Koski",
+   "Carles Aleñá",
+   "Ángel Pérez",
+   "Antonio Blanco",
+   "Abde Rebbach",
+   "Pablo Ibáñez",
+   "Mariano Díaz",
+   "Lucas Boyé"
+  ],
+  "home_bench": [
+   "Izei Hernández",
+   "Denis Suárez",
+   "Selu Diallo",
+   "Youssef Enriquez",
+   "Xanet Oláiz",
+   "Aitor Mañas",
+   "Nicolás Valentini",
+   "Miguel Rodríguez",
+   "Hugo Novoa",
+   "Adrián Rodríguez",
+   "Ander Guevara",
+   "Carlos Protesoni"
+  ],
+  "away_starting_xi": [
+   "Sergio Herrera",
+   "Abel Bretones",
+   "Iñigo Arguibide",
+   "Alejandro Catena",
+   "Enzo Boyomo",
+   "Iker Muñoz",
+   "Moi Gómez",
+   "Rubén García",
+   "Jon Moncayola",
+   "Ante Budimir",
+   "Raúl García"
+  ],
+  "away_bench": [
+   "Asier Osambela",
+   "Mauro Echegoyen",
+   "Asier Bonel",
+   "Aitor Fernández",
+   "Rockson Yeboah",
+   "Unai Santos",
+   "Jonathan Dubasin",
+   "Raúl Moro",
+   "Romain Del Castillo",
+   "Kike Barja",
+   "Diego Rico",
+   "Lucas Torró"
+  ],
+  "substitution_events": [
+   {
+    "team": "Alaves",
+    "player_in": "Aitor Mañas",
+    "player_out": "Mariano Díaz",
+    "minute": "71",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4"
+   },
+   {
+    "team": "Alaves",
+    "player_in": "Denis Suárez",
+    "player_out": "Carles Aleñá",
+    "minute": "71",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4"
+   },
+   {
+    "team": "Alaves",
+    "player_in": "Youssef Enriquez",
+    "player_out": "Abde Rebbach",
+    "minute": "71",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4"
+   },
+   {
+    "team": "Alaves",
+    "player_in": "Xanet Oláiz",
+    "player_out": "Jonny Otto",
+    "minute": "80",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4"
+   },
+   {
+    "team": "Alaves",
+    "player_in": "Miguel Rodríguez",
+    "player_out": "Lucas Boyé",
+    "minute": "85",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4"
+   },
+   {
+    "team": "Osasuna",
+    "player_in": "Rockson Yeboah",
+    "player_out": "Enzo Boyomo",
+    "minute": "60",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4"
+   },
+   {
+    "team": "Osasuna",
+    "player_in": "Raúl Moro",
+    "player_out": "Moi Gómez",
+    "minute": "60",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4"
+   },
+   {
+    "team": "Osasuna",
+    "player_in": "Jonathan Dubasin",
+    "player_out": "Rubén García",
+    "minute": "61",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4"
+   },
+   {
+    "team": "Osasuna",
+    "player_in": "Asier Osambela",
+    "player_out": "Iñigo Arguibide",
+    "minute": "85",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4"
+   }
+  ],
+  "notes": [
+   "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
+   "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified.",
+   "Official source spelling kept; the master CSV already stored a different spelling for: Miguel Rodríguez (CSV: Miguel Rodriguez); Xanet Oláiz (CSV: Xanet Olaiz)."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+ },
+ "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+}

@@ -1,0 +1,139 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 7,
+ "match_id": "laliga-2026-27-2026-09-20-getafe-cf-malaga-cf",
+ "date": "2026-09-20",
+ "home": "Getafe",
+ "away": "Malaga",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-malaga-cf-7",
+ "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "sources": {
+  "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-malaga-cf-7"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "David Soria",
+   "Djené Dakonam",
+   "Andrés García",
+   "Zaid Romero",
+   "Johan Mojica",
+   "Martín Satriano",
+   "Francho Serrano",
+   "Iván Azón",
+   "Ramón Terrats",
+   "Nemanja Gudelj",
+   "Enes Ünal"
+  ],
+  "home_bench": [
+   "Jirí Letácek",
+   "David Cordón Mancha",
+   "Jean Valou",
+   "Diego Ferrer",
+   "Alberto Risco",
+   "Mohamed Hamdoune",
+   "Sebastián Boselli",
+   "Saba Sazonov",
+   "Borja Mayoral",
+   "Orel Mangala"
+  ],
+  "away_starting_xi": [
+   "Alfonso Herrero",
+   "José Salinas",
+   "Rafael Garrido Hierro",
+   "Ángel Recio",
+   "Juan Berrocal",
+   "Joaquín Muñoz",
+   "Carlos Dotor",
+   "David Larrubia",
+   "Rafa Rodríguez",
+   "Dani Lorenzo",
+   "Eneko Jauregi"
+  ],
+  "away_bench": [
+   "Juan Francisco Fernández Martin",
+   "Izan Merino",
+   "Carlos Ruiz Rubio",
+   "Adrián Niño",
+   "Carlos López",
+   "Carlos Puga",
+   "Álex Pastor",
+   "Einar Galilea",
+   "Andrés Céspedes",
+   "Ramón Enríquez",
+   "Juan Cruz",
+   "Pablo Martínez"
+  ],
+  "substitution_events": [
+   {
+    "team": "Getafe",
+    "player_in": "Orel Mangala",
+    "player_out": "Djené Dakonam",
+    "minute": "65",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-malaga-cf-7"
+   },
+   {
+    "team": "Getafe",
+    "player_in": "Saba Sazonov",
+    "player_out": "Iván Azón",
+    "minute": "89",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-malaga-cf-7"
+   },
+   {
+    "team": "Getafe",
+    "player_in": "David Cordón Mancha",
+    "player_out": "Martín Satriano",
+    "minute": "94",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-malaga-cf-7"
+   },
+   {
+    "team": "Malaga",
+    "player_in": "Adrián Niño",
+    "player_out": "Eneko Jauregi",
+    "minute": "45",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-malaga-cf-7"
+   },
+   {
+    "team": "Malaga",
+    "player_in": "Pablo Martínez",
+    "player_out": "Dani Lorenzo",
+    "minute": "67",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-malaga-cf-7"
+   },
+   {
+    "team": "Malaga",
+    "player_in": "Carlos Ruiz Rubio",
+    "player_out": "Joaquín Muñoz",
+    "minute": "67",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-malaga-cf-7"
+   },
+   {
+    "team": "Malaga",
+    "player_in": "Ramón Enríquez",
+    "player_out": "Rafa Rodríguez",
+    "minute": "74",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-malaga-cf-7"
+   },
+   {
+    "team": "Malaga",
+    "player_in": "Juan Cruz",
+    "player_out": "Juan Berrocal",
+    "minute": "89",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-malaga-cf-7"
+   }
+  ],
+  "notes": [
+   "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
+   "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+ },
+ "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+}

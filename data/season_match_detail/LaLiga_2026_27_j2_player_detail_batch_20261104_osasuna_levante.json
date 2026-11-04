@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "matchday": 2,
+ "match_id": "laliga-2026-27-2026-08-24-c-a-osasuna-levante-ud",
+ "date": "2026-08-24",
+ "home": "Osasuna",
+ "away": "Levante",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-levante-ud-2",
+ "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "sources": {
+  "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-levante-ud-2"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Sergio Herrera",
+   "Iñigo Arguibide",
+   "Alejandro Catena",
+   "Jorge Herrando",
+   "Abel Bretones",
+   "Moi Gómez",
+   "Rubén García",
+   "Jon Moncayola",
+   "Iker Muñoz",
+   "Ante Budimir",
+   "Aimar Oroz"
+  ],
+  "home_bench": [
+   "Rafa Fernández",
+   "Aitor Fernández",
+   "Unai Santos",
+   "Mauro Echegoyen",
+   "Asier Osambela",
+   "Jonathan Dubasin",
+   "Raúl García",
+   "Raúl Moro",
+   "Enzo Boyomo",
+   "Kike Barja",
+   "Diego Rico",
+   "Lucas Torró"
+  ],
+  "away_starting_xi": [
+   "Mathew Ryan",
+   "Nacho Pérez",
+   "Adrián de la Fuente",
+   "Manu Sánchez",
+   "Aïssa Mandi",
+   "Oriol Rey",
+   "Roger Brugué",
+   "Thiago Fernández",
+   "Enzo Bardeli",
+   "Jon Ander Olasagasti",
+   "Iván Romero"
+  ],
+  "away_bench": [
+   "Carlos Álvarez",
+   "Pablo Campos",
+   "Hugo Sotelo",
+   "Víctor García",
+   "Karl Etta Eyong",
+   "Ifeanyi Ndukwe",
+   "Dani Requena",
+   "Paco Cortés",
+   "Jorge Cabello",
+   "Jeremy Toljan",
+   "Marc Santos"
+  ],
+  "substitution_events": [
+   {
+    "team": "Osasuna",
+    "player_in": "Raúl Moro",
+    "player_out": "Rubén García",
+    "minute": "72",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-levante-ud-2"
+   },
+   {
+    "team": "Osasuna",
+    "player_in": "Raúl García",
+    "player_out": "Aimar Oroz",
+    "minute": "72",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-levante-ud-2"
+   },
+   {
+    "team": "Osasuna",
+    "player_in": "Jonathan Dubasin",
+    "player_out": "Ante Budimir",
+    "minute": "80",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-levante-ud-2"
+   },
+   {
+    "team": "Osasuna",
+    "player_in": "Lucas Torró",
+    "player_out": "Iñigo Arguibide",
+    "minute": "81",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-levante-ud-2"
+   },
+   {
+    "team": "Osasuna",
+    "player_in": "Kike Barja",
+    "player_out": "Moi Gómez",
+    "minute": "87",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-levante-ud-2"
+   },
+   {
+    "team": "Levante",
+    "player_in": "Víctor García",
+    "player_out": "Thiago Fernández",
+    "minute": "78",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-levante-ud-2"
+   },
+   {
+    "team": "Levante",
+    "player_in": "Jeremy Toljan",
+    "player_out": "Nacho Pérez",
+    "minute": "78",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-levante-ud-2"
+   },
+   {
+    "team": "Levante",
+    "player_in": "Karl Etta Eyong",
+    "player_out": "Iván Romero",
+    "minute": "90",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-levante-ud-2"
+   },
+   {
+    "team": "Levante",
+    "player_in": "Hugo Sotelo",
+    "player_out": "Oriol Rey",
+    "minute": "90",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-levante-ud-2"
+   }
+  ],
+  "notes": [
+   "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
+   "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
+   "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
+ },
+ "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+}
