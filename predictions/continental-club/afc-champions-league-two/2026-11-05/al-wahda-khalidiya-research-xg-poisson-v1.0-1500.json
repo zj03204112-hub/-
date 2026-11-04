@@ -1,0 +1,114 @@
+{
+  "schema_version": "immutable-prediction-snapshot-v1",
+  "prediction_id": "match:afc-champions-league-two:2026-11-04:al-wahda:khalidiya:RESEARCH-XG-POISSON-v1.0:2026-11-04T15:00+08:00",
+  "created_at_beijing": "2026-11-04T15:00:00+08:00",
+  "match_id": "match:afc-champions-league-two:2026-11-04:al-wahda:khalidiya",
+  "competition_id": "afc-champions-league-two",
+  "competition": "AFC Champions League Two",
+  "competition_type": "continental_club",
+  "season": "2026-27",
+  "home_team": "Al Wahda",
+  "away_team": "Al-Khaldiya",
+  "kickoff_utc": "2026-11-04T16:00:00Z",
+  "kickoff_beijing": "2026-11-05T00:00:00+08:00",
+  "prediction_window_hours_before_kickoff": 9,
+  "market": {
+    "official_sporttery_status": "UNVERIFIED_OFFICIAL_SOURCE_UNAVAILABLE",
+    "official_sporttery_handicap": null,
+    "official_sporttery_1x2": null,
+    "opening_to_current_official_sporttery": null,
+    "official_capture_timestamp": null,
+    "third_party_market_observations": [
+      {
+        "source": "FootballVis model odds reference",
+        "odds": "主胜参考1.55（未见完整1X2）",
+        "timestamp": "页面未披露精确时间",
+        "url": "https://footballvis.com/match/al-wahda-vs-khalidiya-2026-11-04",
+        "used_for_prediction": false
+      }
+    ],
+    "usage_rule": "Third-party prices are stored only as context and were not used to determine the prediction or the Poisson lambdas."
+  },
+  "prematch_inputs": {
+    "selected_provider_projected_xg": {
+      "provider": "ForzaPitch / API-Sports projected xG",
+      "provider_model_version": "not_disclosed",
+      "home_xg": 0.79,
+      "away_xg": 0.7,
+      "type": "provider_model_estimate",
+      "source_url": "https://forzapitch.com/matches/al-wahda-fc-vs-khalidiya-2026-11-04",
+      "source_capture_time": "page available by 2026-11-04 15:00 Beijing; exact upstream timestamp not disclosed"
+    },
+    "recent_form_last3": {
+      "home": "近3场 W-W-W（AFC小组赛）",
+      "away": "近3场 L-L-D（AFC小组赛）"
+    },
+    "injuries": "未找到可核实的双方完整伤停名单；首发未公布",
+    "starting_lineup_status": "OFFICIAL_STARTING_XI_NOT_YET_PUBLISHED; probable lineup data not treated as confirmed",
+    "tactics": "阵型/具体战术未核实",
+    "weather": "未取得可靠的开赛时天气",
+    "referee": "Sadullo Gulmurodi（赛程资料列示，尚未取得AFC原始指派页）",
+    "schedule_motivation": "A组Al Wahda 9分第1，Khalidiya 1分第4；主队保持小组领先，客队需要抢分",
+    "professional_commentator_analysis": "未取得可追溯的专业足球评论员原始分析；未编造评论员观点。",
+    "missing_fields": [
+      "官方竞彩盘口及初盘/即时盘",
+      "正式首发11人",
+      "部分伤停的官方确认",
+      "部分裁判原始指派",
+      "部分天气/战术/下一场对手核验",
+      "上游xG抓取时间及原始响应"
+    ]
+  },
+  "model": {
+    "model_version": "RESEARCH-XG-POISSON-v1.0",
+    "production_status": "RESEARCH_ONLY_NOT_PRODUCTION; NOT_V5.1",
+    "method": "Independent Poisson score matrix from one selected provider projected-xG source per match; no cross-provider xG averaging and no odds-derived lambdas.",
+    "lambda_home": 0.79,
+    "lambda_away": 0.7,
+    "probabilities_90m_percent": {
+      "home_win": 34.2,
+      "draw": 36.8,
+      "away_win": 28.9
+    },
+    "most_likely_scores": [
+      {
+        "score": "0-0",
+        "probability_percent": 22.54
+      },
+      {
+        "score": "1-0",
+        "probability_percent": 17.8
+      }
+    ],
+    "halftime_model": {
+      "first_half_lambda_share": 0.45,
+      "second_half_lambda_share": 0.55,
+      "assumption": "Research assumption; not calibrated as a production halftime model."
+    },
+    "most_likely_half_full_time": {
+      "result": "平平",
+      "probability_percent": 29.5
+    },
+    "personal_confidence_0_to_10": 3.5,
+    "strategy_id": "RXP-20261104-1500-AL_WAHDA_KHALIDIYA",
+    "risk": "ForzaPitch xG 0.79/0.70对应低进球分布；FootballVis另一模型给主胜60%和2-1，差异较大。此处采用单一ForzaPitch xG作Poisson，不采用第三方胜率。",
+    "data_completeness_percent": 57
+  },
+  "prediction": {
+    "first_score": "0-0",
+    "second_score": "1-0",
+    "result_90m": "平局",
+    "handicap_1x2": "无法核验",
+    "handicap_mapping_status": "NOT_CALCULATED; official Sporttery handicap missing",
+    "half_full_time": "平平"
+  },
+  "provenance": {
+    "source_urls": [
+      "https://forzapitch.com/matches/al-wahda-fc-vs-khalidiya-2026-11-04",
+      "https://footballvis.com/match/al-wahda-vs-khalidiya-2026-11-04"
+    ],
+    "immutable": true,
+    "post_match_xg_used_as_same_match_prematch_input": false,
+    "model_change": "No V5.1 or frozen validation sample change."
+  }
+}
