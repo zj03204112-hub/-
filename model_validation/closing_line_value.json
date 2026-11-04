@@ -1,0 +1,61 @@
+{
+ "generated_at": "2026-11-04T13:16:50Z",
+ "definition": "Closing-line value test. Q1 checks whether closing prices beat opening prices on the same matches. Q2 fits a linear model of the probability movement (close minus open) on opening prices, rest days, month and league, then measures forecast error and how often the model picks the same outcome as the largest realised move. Q3 bets at opening prices when the predicted move exceeds a threshold and reports expected value at closing prices (result independent) plus realised return.",
+ "discovery_seasons": [
+  "2324",
+  "2425"
+ ],
+ "validation_seasons": [
+  "2526",
+  "2627"
+ ],
+ "coverage": {
+  "matches": 5708,
+  "discovery": 3504,
+  "validation": 2204
+ },
+ "q1_sharper": {
+  "open": 0.5793,
+  "close": 0.5788
+ },
+ "q2_movement": {
+  "model_mae": 0.0176,
+  "baseline_mae": 0.0175,
+  "direction_accuracy": 0.3371
+ },
+ "q3_strategies": [
+  {
+   "strategy": "always_home",
+   "bets": 2204,
+   "ev_vs_close": -0.0594,
+   "realised_roi": -0.0594
+  },
+  {
+   "strategy": "always_favourite",
+   "bets": 2204,
+   "ev_vs_close": -0.0564,
+   "realised_roi": -0.0171
+  },
+  {
+   "strategy": "model_move_gt_0.005",
+   "bets": 152,
+   "ev_vs_close": -0.0259,
+   "realised_roi": -0.401
+  },
+  {
+   "strategy": "model_move_gt_0.010",
+   "bets": 5,
+   "ev_vs_close": 0.2215,
+   "realised_roi": -1.0
+  },
+  {
+   "strategy": "model_move_gt_0.020",
+   "bets": 0
+  },
+  {
+   "strategy": "model_move_gt_0.030",
+   "bets": 0
+  }
+ ],
+ "note": "ev_vs_close is the accepted edge measure: positive means the opening price was better than the closing line."
+}
