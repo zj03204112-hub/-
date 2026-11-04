@@ -1,0 +1,41 @@
+{
+  "report_date_beijing": "2026-11-04",
+  "run_time_beijing": "2026-11-04T10:02:10+08:00",
+  "previous_beijing_date_confirmed_results": 18,
+  "current_beijing_date_early_confirmed_results": 21,
+  "previous_day_immutable_prediction_snapshots_found": 0,
+  "current_day_shadow_snapshots_audited": 4,
+  "official_sporttery_handicaps_verified": 0,
+  "free_sources_used": [
+    "UEFA official match centre and fixture page",
+    "Reuters AFC Champions League roundup",
+    "J.League/AFC match pages",
+    "Football Web Pages Championship results",
+    "FlashSportApp",
+    "Stadiro",
+    "Darbah",
+    "NXT Football",
+    "OddAlerts",
+    "FotMob",
+    "Cornerflick",
+    "OnelightScore",
+    "GlobalScoreX",
+    "StatsBet",
+    "Scoretable"
+  ],
+  "missing_or_limited": [
+    "Official Sporttery match-level handicap feed and opening-to-current timestamp history unavailable",
+    "Raw HTML/API payloads and SHA-256 not archived",
+    "Upstream source capture times not exposed by many third-party pages",
+    "Some AFC provider event IDs unresolved",
+    "Some halftime scores are not independently captured for matches without snapshots",
+    "One Brazil Serie A fixture (Internacional vs Coritiba) had kickoff passed but final status/score not reliably confirmed at 10:02; excluded from completed results"
+  ],
+  "database_connected": false,
+  "sqlite_or_remote_db_write": "NOT_CONNECTED",
+  "v5_1_modified": false,
+  "frozen_validation_sample_modified": false,
+  "own_model_xg_added": false,
+  "post_match_xg_used_as_prematch_input": false,
+  "created_at_beijing": "2026-11-04T10:22:00+08:00"
+}
