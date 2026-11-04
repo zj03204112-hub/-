@@ -1,0 +1,73 @@
+{
+  "audit_version": "weekly-xg-audit-2026-11-04-v2-1500",
+  "iso_week": "2026-W45",
+  "week_start": "2026-11-02",
+  "week_end": "2026-11-08",
+  "base_snapshot_path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_snapshot-1002.csv",
+  "base_snapshot_blob_sha": "e3e930b5e1375b8d2eaf8271dfc5a7911d6d2cc1",
+  "delta_snapshot_path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_delta-1500.csv",
+  "delta_rows": 6,
+  "merged_view_note": "Base snapshot plus this immutable delta yields 132 team-provider rows. The base file is not overwritten.",
+  "unique_matches": 55,
+  "team_provider_rows_after_delta": 132,
+  "fulltime_xg_matches_after_delta": 17,
+  "partial_inplay_matches": 2,
+  "missing_fulltime_xg_matches": 38,
+  "fulltime_xg_coverage_pct": "30.91",
+  "team_provider_summary_rows_after_delta": 132,
+  "team_week_coverage_rows_after_delta": 114,
+  "new_provider_discrepancy_groups": [
+    {
+      "match_id": "match:uefa-champions-league:2026-11-03:shakhtar-donetsk:sporting-cp",
+      "providers": [
+        {
+          "provider": "FootballEdge UK",
+          "home_xg": 1.97,
+          "away_xg": 1.24
+        },
+        {
+          "provider": "Shotify",
+          "home_xg": 1.96,
+          "away_xg": 1.3
+        }
+      ]
+    },
+    {
+      "match_id": "match:uefa-champions-league:2026-11-03:galatasaray:vfb-stuttgart",
+      "providers": [
+        {
+          "provider": "Darbah",
+          "home_xg": 1.1,
+          "away_xg": 1.83
+        },
+        {
+          "provider": "Shotify",
+          "home_xg": 1.01,
+          "away_xg": 1.77
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "xgd_arithmetic_mismatches": 0,
+    "duplicate_match_team_provider_keys": 0,
+    "full_iso_week_fixture_coverage_verified": false,
+    "weekly_totals_and_per90_recomputed": false,
+    "post_match_xg_used_as_same_match_prematch_input": false,
+    "own_model_xg_mixed_with_provider_estimates": false
+  },
+  "missing_fields": [
+    "Provider event IDs unresolved",
+    "Upstream timestamps not exposed for most providers; run-time capture only",
+    "Raw HTML/API payloads and SHA-256 not archived",
+    "Full ISO-week fixture coverage for each team not yet verified",
+    "Weekly totals and per90 values remain blank until full-week coverage is verified"
+  ],
+  "notes": [
+    "All numeric values are third-party provider/model estimates, not direct measurements.",
+    "FootballEdge UK, Shotify and Darbah values are kept in separate rows; no cross-provider averaging.",
+    "Shakhtar-Sporting newly raises full-time xG coverage by one unique match; Galatasaray-Shotify is an additional provider for an already-covered match.",
+    "Al-Hilal vs Shabab Al-Ahli remains missing xG; no score-based estimate was created.",
+    "Post-match xG is archived only for weekly review and never fed into same-match pre-match inputs."
+  ]
+}
