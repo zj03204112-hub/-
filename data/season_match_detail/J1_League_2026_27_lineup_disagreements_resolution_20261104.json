@@ -1,0 +1,683 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "J1 League",
+ "season": "2026/27",
+ "scope": "lineup disagreements found by the shirt-number cross-check against FotMob",
+ "checked_source": "FotMob public match API",
+ "authoritative_source": "J.League Data Site (official match record)",
+ "policy": "official_preferred: the league record wins over an aggregator, and the disagreement is recorded instead of silently overwritten",
+ "data_files_modified": [],
+ "summary": {
+  "disagreements": 11,
+  "official_preferred": 10,
+  "needs_mapping": 1
+ },
+ "entries": [
+  {
+   "fixture": [
+    "2026-08-08",
+    "名古屋",
+    "清水"
+   ],
+   "kind": "bench_number_diff",
+   "sides": {
+    "awayTeam": "bench_number_diff"
+   },
+   "decision": "official_preferred",
+   "rationale": "The official J.League Data Site is the league's own match record and outranks an aggregator, so the official starter/bench split is kept and the CSV is left unchanged. The disagreement is preserved here for review.",
+   "evidence": {
+    "homeTeam": {
+     "starters_only_official": null,
+     "starters_only_fotmob": null,
+     "bench_only_official": null,
+     "bench_only_fotmob": null
+    },
+    "awayTeam": {
+     "starters_only_official": null,
+     "starters_only_fotmob": null,
+     "bench_only_official": [
+      "37"
+     ],
+     "bench_only_fotmob": [
+      "6"
+     ]
+    }
+   }
+  },
+  {
+   "fixture": [
+    "2026-08-15",
+    "岡山",
+    "長崎"
+   ],
+   "kind": "same_squad_swap",
+   "sides": {
+    "homeTeam": "same_squad_swap",
+    "awayTeam": "same_squad_swap"
+   },
+   "decision": "official_preferred",
+   "rationale": "The official J.League Data Site is the league's own match record and outranks an aggregator, so the official starter/bench split is kept and the CSV is left unchanged. The disagreement is preserved here for review.",
+   "evidence": {
+    "homeTeam": {
+     "starters_only_official": [
+      "10",
+      "41",
+      "51",
+      "8",
+      "99"
+     ],
+     "starters_only_fotmob": [
+      "22",
+      "24",
+      "5",
+      "66",
+      "9"
+     ],
+     "bench_only_official": [
+      "22",
+      "24",
+      "5",
+      "66",
+      "9"
+     ],
+     "bench_only_fotmob": [
+      "10",
+      "41",
+      "51",
+      "8",
+      "99"
+     ]
+    },
+    "awayTeam": {
+     "starters_only_official": [
+      "18",
+      "3",
+      "4",
+      "5",
+      "8"
+     ],
+     "starters_only_fotmob": [
+      "23",
+      "29",
+      "34",
+      "39",
+      "9"
+     ],
+     "bench_only_official": [
+      "23",
+      "29",
+      "34",
+      "39",
+      "9"
+     ],
+     "bench_only_fotmob": [
+      "18",
+      "3",
+      "4",
+      "5",
+      "8"
+     ]
+    }
+   }
+  },
+  {
+   "fixture": [
+    "2026-08-15",
+    "千葉",
+    "町田"
+   ],
+   "kind": "same_squad_swap",
+   "sides": {
+    "homeTeam": "same_squad_swap",
+    "awayTeam": "same_squad_swap"
+   },
+   "decision": "official_preferred",
+   "rationale": "The official J.League Data Site is the league's own match record and outranks an aggregator, so the official starter/bench split is kept and the CSV is left unchanged. The disagreement is preserved here for review.",
+   "evidence": {
+    "homeTeam": {
+     "starters_only_official": [
+      "22",
+      "25",
+      "30",
+      "37",
+      "4"
+     ],
+     "starters_only_fotmob": [
+      "15",
+      "20",
+      "29",
+      "45",
+      "7"
+     ],
+     "bench_only_official": [
+      "15",
+      "20",
+      "29",
+      "45",
+      "7"
+     ],
+     "bench_only_fotmob": [
+      "22",
+      "25",
+      "30",
+      "37",
+      "4"
+     ]
+    },
+    "awayTeam": {
+     "starters_only_official": [
+      "15",
+      "31",
+      "7",
+      "88",
+      "99"
+     ],
+     "starters_only_fotmob": [
+      "18",
+      "20",
+      "34",
+      "6",
+      "9"
+     ],
+     "bench_only_official": [
+      "18",
+      "20",
+      "34",
+      "6",
+      "9"
+     ],
+     "bench_only_fotmob": [
+      "15",
+      "31",
+      "7",
+      "88",
+      "99"
+     ]
+    }
+   }
+  },
+  {
+   "fixture": [
+    "2026-09-06",
+    "Ｃ大阪",
+    "東京Ｖ"
+   ],
+   "kind": "missing_official_page",
+   "sides": {
+    "homeTeam": "missing_official_page",
+    "awayTeam": "missing_official_page"
+   },
+   "decision": "needs_mapping",
+   "rationale": "Mapping row has no match_card_id, so the official page was never fetched. This is a data gap in the mapping table, not a provider disagreement.",
+   "evidence": {
+    "homeTeam": {
+     "starters_only_official": [],
+     "starters_only_fotmob": [
+      "10",
+      "11",
+      "14",
+      "2",
+      "23",
+      "27",
+      "36",
+      "4",
+      "41",
+      "44",
+      "66"
+     ],
+     "bench_only_official": [],
+     "bench_only_fotmob": [
+      "16",
+      "19",
+      "28",
+      "31",
+      "7",
+      "77",
+      "8",
+      "9",
+      "97"
+     ]
+    },
+    "awayTeam": {
+     "starters_only_official": [],
+     "starters_only_fotmob": [
+      "1",
+      "14",
+      "15",
+      "16",
+      "18",
+      "29",
+      "40",
+      "5",
+      "71",
+      "8",
+      "9"
+     ],
+     "bench_only_official": [],
+     "bench_only_fotmob": [
+      "13",
+      "2",
+      "20",
+      "21",
+      "22",
+      "25",
+      "36",
+      "38",
+      "7"
+     ]
+    }
+   }
+  },
+  {
+   "fixture": [
+    "2026-09-19",
+    "横浜FM",
+    "水戸"
+   ],
+   "kind": "same_squad_swap",
+   "sides": {
+    "homeTeam": "same_squad_swap",
+    "awayTeam": "same_squad_swap"
+   },
+   "decision": "official_preferred",
+   "rationale": "The official J.League Data Site is the league's own match record and outranks an aggregator, so the official starter/bench split is kept and the CSV is left unchanged. The disagreement is preserved here for review.",
+   "evidence": {
+    "homeTeam": {
+     "starters_only_official": [
+      "24",
+      "41"
+     ],
+     "starters_only_fotmob": [
+      "40",
+      "47"
+     ],
+     "bench_only_official": [
+      "40",
+      "47"
+     ],
+     "bench_only_fotmob": [
+      "24",
+      "41"
+     ]
+    },
+    "awayTeam": {
+     "starters_only_official": [
+      "10",
+      "15",
+      "18",
+      "22"
+     ],
+     "starters_only_fotmob": [
+      "30",
+      "39",
+      "4",
+      "9"
+     ],
+     "bench_only_official": [
+      "30",
+      "39",
+      "4",
+      "9"
+     ],
+     "bench_only_fotmob": [
+      "10",
+      "15",
+      "18",
+      "22"
+     ]
+    }
+   }
+  },
+  {
+   "fixture": [
+    "2026-10-10",
+    "Ｃ大阪",
+    "横浜FM"
+   ],
+   "kind": "same_squad_swap",
+   "sides": {
+    "homeTeam": "same_squad_swap",
+    "awayTeam": "same_squad_swap"
+   },
+   "decision": "official_preferred",
+   "rationale": "The official J.League Data Site is the league's own match record and outranks an aggregator, so the official starter/bench split is kept and the CSV is left unchanged. The disagreement is preserved here for review.",
+   "evidence": {
+    "homeTeam": {
+     "starters_only_official": [
+      "14",
+      "15",
+      "19",
+      "77"
+     ],
+     "starters_only_fotmob": [
+      "28",
+      "41",
+      "8",
+      "97"
+     ],
+     "bench_only_official": [
+      "28",
+      "41",
+      "8",
+      "97"
+     ],
+     "bench_only_fotmob": [
+      "14",
+      "15",
+      "19",
+      "77"
+     ]
+    },
+    "awayTeam": {
+     "starters_only_official": [
+      "23",
+      "24",
+      "40",
+      "41",
+      "9"
+     ],
+     "starters_only_fotmob": [
+      "11",
+      "14",
+      "18",
+      "43",
+      "7"
+     ],
+     "bench_only_official": [
+      "11",
+      "14",
+      "18",
+      "43",
+      "7"
+     ],
+     "bench_only_fotmob": [
+      "23",
+      "24",
+      "40",
+      "41",
+      "9"
+     ]
+    }
+   }
+  },
+  {
+   "fixture": [
+    "2026-10-10",
+    "FC東京",
+    "浦和"
+   ],
+   "kind": "same_squad_swap",
+   "sides": {
+    "homeTeam": "same_squad_swap",
+    "awayTeam": "same_squad_swap"
+   },
+   "decision": "official_preferred",
+   "rationale": "The official J.League Data Site is the league's own match record and outranks an aggregator, so the official starter/bench split is kept and the CSV is left unchanged. The disagreement is preserved here for review.",
+   "evidence": {
+    "homeTeam": {
+     "starters_only_official": [
+      "33",
+      "6"
+     ],
+     "starters_only_fotmob": [
+      "10",
+      "15"
+     ],
+     "bench_only_official": [
+      "10",
+      "15"
+     ],
+     "bench_only_fotmob": [
+      "33",
+      "6"
+     ]
+    },
+    "awayTeam": {
+     "starters_only_official": [
+      "12",
+      "42"
+     ],
+     "starters_only_fotmob": [
+      "13",
+      "45"
+     ],
+     "bench_only_official": [
+      "13",
+      "45"
+     ],
+     "bench_only_fotmob": [
+      "12",
+      "42"
+     ]
+    }
+   }
+  },
+  {
+   "fixture": [
+    "2026-10-10",
+    "福岡",
+    "岡山"
+   ],
+   "kind": "same_squad_swap",
+   "sides": {
+    "homeTeam": "same_squad_swap",
+    "awayTeam": "same_squad_swap"
+   },
+   "decision": "official_preferred",
+   "rationale": "The official J.League Data Site is the league's own match record and outranks an aggregator, so the official starter/bench split is kept and the CSV is left unchanged. The disagreement is preserved here for review.",
+   "evidence": {
+    "homeTeam": {
+     "starters_only_official": [
+      "16",
+      "2",
+      "6"
+     ],
+     "starters_only_fotmob": [
+      "25",
+      "33",
+      "47"
+     ],
+     "bench_only_official": [
+      "25",
+      "33",
+      "47"
+     ],
+     "bench_only_fotmob": [
+      "16",
+      "2",
+      "6"
+     ]
+    },
+    "awayTeam": {
+     "starters_only_official": [
+      "20",
+      "33",
+      "51",
+      "88"
+     ],
+     "starters_only_fotmob": [
+      "28",
+      "41",
+      "79",
+      "8"
+     ],
+     "bench_only_official": [
+      "28",
+      "41",
+      "79",
+      "8"
+     ],
+     "bench_only_fotmob": [
+      "20",
+      "33",
+      "51",
+      "88"
+     ]
+    }
+   }
+  },
+  {
+   "fixture": [
+    "2026-10-10",
+    "京都",
+    "町田"
+   ],
+   "kind": "same_squad_swap",
+   "sides": {
+    "homeTeam": "same_squad_swap",
+    "awayTeam": "same_squad_swap"
+   },
+   "decision": "official_preferred",
+   "rationale": "The official J.League Data Site is the league's own match record and outranks an aggregator, so the official starter/bench split is kept and the CSV is left unchanged. The disagreement is preserved here for review.",
+   "evidence": {
+    "homeTeam": {
+     "starters_only_official": [
+      "24",
+      "26",
+      "48",
+      "9"
+     ],
+     "starters_only_fotmob": [
+      "11",
+      "17",
+      "25",
+      "38"
+     ],
+     "bench_only_official": [
+      "11",
+      "17",
+      "25",
+      "38"
+     ],
+     "bench_only_fotmob": [
+      "24",
+      "26",
+      "48",
+      "9"
+     ]
+    },
+    "awayTeam": {
+     "starters_only_official": [
+      "20",
+      "8",
+      "88",
+      "99"
+     ],
+     "starters_only_fotmob": [
+      "15",
+      "31",
+      "33",
+      "6"
+     ],
+     "bench_only_official": [
+      "15",
+      "31",
+      "33",
+      "6"
+     ],
+     "bench_only_fotmob": [
+      "20",
+      "8",
+      "88",
+      "99"
+     ]
+    }
+   }
+  },
+  {
+   "fixture": [
+    "2026-10-17",
+    "清水",
+    "Ｇ大阪"
+   ],
+   "kind": "same_squad_swap",
+   "sides": {
+    "homeTeam": "same_squad_swap",
+    "awayTeam": "same_squad_swap"
+   },
+   "decision": "official_preferred",
+   "rationale": "The official J.League Data Site is the league's own match record and outranks an aggregator, so the official starter/bench split is kept and the CSV is left unchanged. The disagreement is preserved here for review.",
+   "evidence": {
+    "homeTeam": {
+     "starters_only_official": [
+      "21",
+      "25",
+      "8",
+      "9"
+     ],
+     "starters_only_fotmob": [
+      "14",
+      "28",
+      "47",
+      "50"
+     ],
+     "bench_only_official": [
+      "14",
+      "28",
+      "47",
+      "50"
+     ],
+     "bench_only_fotmob": [
+      "21",
+      "25",
+      "8",
+      "9"
+     ]
+    },
+    "awayTeam": {
+     "starters_only_official": [
+      "2",
+      "41",
+      "97"
+     ],
+     "starters_only_fotmob": [
+      "24",
+      "7",
+      "8"
+     ],
+     "bench_only_official": [
+      "24",
+      "7",
+      "8"
+     ],
+     "bench_only_fotmob": [
+      "2",
+      "41",
+      "97"
+     ]
+    }
+   }
+  },
+  {
+   "fixture": [
+    "2026-10-21",
+    "川崎Ｆ",
+    "神戸"
+   ],
+   "kind": "bench_number_diff",
+   "sides": {
+    "awayTeam": "bench_number_diff"
+   },
+   "decision": "official_preferred",
+   "rationale": "The official J.League Data Site is the league's own match record and outranks an aggregator, so the official starter/bench split is kept and the CSV is left unchanged. The disagreement is preserved here for review.",
+   "evidence": {
+    "homeTeam": {
+     "starters_only_official": null,
+     "starters_only_fotmob": null,
+     "bench_only_official": null,
+     "bench_only_fotmob": null
+    },
+    "awayTeam": {
+     "starters_only_official": null,
+     "starters_only_fotmob": null,
+     "bench_only_official": [
+      "20"
+     ],
+     "bench_only_fotmob": [
+      "53"
+     ]
+    }
+   }
+  }
+ ]
+}
