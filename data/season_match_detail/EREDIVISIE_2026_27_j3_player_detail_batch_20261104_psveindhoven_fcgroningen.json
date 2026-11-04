@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "eredivisie-2026-27-2026-08-23-psveindhoven-fcgroningen",
+ "date": "2026-08-23",
+ "home": "PSV Eindhoven",
+ "away": "FC Groningen",
+ "score": "5-1",
+ "halftime_score": "3-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781714",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781714"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Matej Kovár",
+   "Sergiño Dest",
+   "Armando Obispo",
+   "Ryan Flamingo",
+   "Mauro Júnior",
+   "Guus Til",
+   "Kodai Sano",
+   "Noah Fernandez",
+   "Ivan Perisic",
+   "Ricardo Pepi",
+   "Ruben van Bommel"
+  ],
+  "home_bench": [
+   "Paul Wanner",
+   "Amir Bouhamdi",
+   "Filip Kostic",
+   "Dennis Man",
+   "Lutsharel Geertruida",
+   "Khadim Ngom",
+   "Nick Olij",
+   "Kilian Sildillia",
+   "Yarek Gasiorowski",
+   "Sven Mijnans",
+   "Esmir Bajraktarevic"
+  ],
+  "away_starting_xi": [
+   "Etienne Vaessen",
+   "Jorg Schreuders",
+   "Thijmen Blokzijl",
+   "Márk Csinger",
+   "Wouter Prins",
+   "Tika de Jonge",
+   "Tygo Land",
+   "David van der Werff",
+   "Thom van Bergen",
+   "Pelle Clement",
+   "Brynjólfur Willumsson"
+  ],
+  "away_bench": [
+   "Marco Rente",
+   "Nikolas Brandis",
+   "Elvis van der Laan",
+   "Jacob Ondrejka",
+   "Travis Hernes",
+   "Lovro Stubljar",
+   "Rijk Janse",
+   "Jesper Mosselaar",
+   "Alvin Nordin",
+   "Jahelille Hall",
+   "Jismerai Dillema",
+   "Oskar Zawada"
+  ],
+  "substitution_events": [
+   {
+    "team": "PSV Eindhoven",
+    "in": "Paul Wanner",
+    "out": "Noah Fernandez",
+    "minute": "68"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Amir Bouhamdi",
+    "out": "Ruben van Bommel",
+    "minute": "68"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Dennis Man",
+    "out": "Ivan Perisic",
+    "minute": "76"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Filip Kostic",
+    "out": "Mauro Júnior",
+    "minute": "76"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Lutsharel Geertruida",
+    "out": "Armando Obispo",
+    "minute": "85"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Marco Rente",
+    "out": "Jorg Schreuders",
+    "minute": "46"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Nikolas Brandis",
+    "out": "Marco Rente",
+    "minute": "54"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Elvis van der Laan",
+    "out": "Brynjólfur Willumsson",
+    "minute": "67"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Jacob Ondrejka",
+    "out": "David van der Werff",
+    "minute": "67"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Travis Hernes",
+    "out": "Tika de Jonge",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 1
+  },
+  "provider_score": "5-1",
+  "score_consistent_with_events": true,
+  "referee": "Allard Lindhout",
+  "attendance": 34800,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

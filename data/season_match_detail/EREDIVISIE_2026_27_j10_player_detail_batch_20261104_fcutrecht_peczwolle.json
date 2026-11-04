@@ -1,0 +1,140 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "10",
+ "match_id": "eredivisie-2026-27-2026-10-24-fcutrecht-peczwolle",
+ "date": "2026-10-24",
+ "home": "FC Utrecht",
+ "away": "PEC Zwolle",
+ "score": "1-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781784",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781784"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Sergio Padt",
+   "Siebe Horemans",
+   "Matisse Didden",
+   "Nikolas Panayiotou",
+   "Arthur Zagré",
+   "Joris van Overeem",
+   "Oualid Agougil",
+   "Niklas Vesterlund",
+   "Yoann Cathline",
+   "Ángel Alarcon",
+   "Dani de Wit"
+  ],
+  "home_bench": [
+   "Adrian Blake",
+   "Artem Stepanov",
+   "Sem van Duijn",
+   "Davy van den Berg",
+   "Nordin Amrabat",
+   "Kevin Gadellaa",
+   "Mees Eppink",
+   "Guus Offerhaus",
+   "Jakov Medić",
+   "Neville Ogidi Nwankwo",
+   "Per Kloosterboer"
+  ],
+  "away_starting_xi": [
+   "Jasper Schendelaar",
+   "Olivier Aertssen",
+   "Simon Graves",
+   "Nick Viergever",
+   "Damian van der Haar",
+   "Ryan Thomas",
+   "Tobias Sommer",
+   "Gilles van der Wal",
+   "Thijs Oosting",
+   "Dylan Mbayo",
+   "Sydney van Hooijdonk"
+  ],
+  "away_bench": [
+   "Elias Sørensen",
+   "Jan Bürger",
+   "Koen Kostons",
+   "Duke Verduin",
+   "Tom de Graaff",
+   "Dylan Ruward",
+   "Tijs Velthuis",
+   "Jadiel Pereira da Gama",
+   "Nick Fichtinger",
+   "Gabriël Reiziger",
+   "Ibrahim Cissoko",
+   "Younes Namli"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Utrecht",
+    "in": "Adrian Blake",
+    "out": "Niklas Vesterlund",
+    "minute": "62"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Artem Stepanov",
+    "out": "Ángel Alarcon",
+    "minute": "74"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Sem van Duijn",
+    "out": "Yoann Cathline",
+    "minute": "74"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Nordin Amrabat",
+    "out": "Siebe Horemans",
+    "minute": "83"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Davy van den Berg",
+    "out": "Oualid Agougil",
+    "minute": "83"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Elias Sørensen",
+    "out": "Dylan Mbayo",
+    "minute": "46"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Jan Bürger",
+    "out": "Damian van der Haar",
+    "minute": "71"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Koen Kostons",
+    "out": "Gilles van der Wal",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Martijn Vos",
+  "attendance": 22444,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

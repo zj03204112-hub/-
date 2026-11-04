@@ -1,0 +1,150 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "eredivisie-2026-27-2026-09-08-necnijmegen-excelsior",
+ "date": "2026-09-08",
+ "home": "NEC Nijmegen",
+ "away": "Excelsior",
+ "score": "2-2",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781720",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781720"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Nikolas Polster",
+   "Gabriel Brás",
+   "Tobias Storm",
+   "Bram Nuytinck",
+   "Adam Tahaui",
+   "Jamiro Monteiro",
+   "Dennis Geiger",
+   "Ayodele Thomas",
+   "Willum Willumsson",
+   "Isak Hansen-Aarøen",
+   "Dušan Tadić"
+  ],
+  "home_bench": [
+   "Perr Schuurs",
+   "Philippe Sandler",
+   "Noé Lebreton",
+   "Kevin Kers",
+   "Clement Bischoff",
+   "Gonzalo Crettaz",
+   "Joep Geneste",
+   "Almugera Kabar",
+   "Tjaronn Chery",
+   "Kaj Sierhuis"
+  ],
+  "away_starting_xi": [
+   "Stijn van Gassel",
+   "Rick Meissen",
+   "Casper Widell",
+   "Jan Plug",
+   "Eric da Silva Moreira",
+   "Irakli Yegoian",
+   "Lennard Hartjes",
+   "Simon Janssen",
+   "Ilano Silva Timas",
+   "Ágúst Thorsteinsson",
+   "David Garden"
+  ],
+  "away_bench": [
+   "Kasey Bos",
+   "Aymen Sliti",
+   "Nesto Groen",
+   "Valentin Sulzbacher",
+   "Alireza Jahanbakhsh",
+   "Celton Biai",
+   "Guilliano Cairo",
+   "Osman Mohamed Turay",
+   "Daniël van Vianen",
+   "Mario Domínguez",
+   "Yaqub Finey"
+  ],
+  "substitution_events": [
+   {
+    "team": "NEC Nijmegen",
+    "in": "Perr Schuurs",
+    "out": "Jamiro Monteiro",
+    "minute": "46"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Philippe Sandler",
+    "out": "Bram Nuytinck",
+    "minute": "46"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Kevin Kers",
+    "out": "Isak Hansen-Aarøen",
+    "minute": "63"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Noé Lebreton",
+    "out": "Dennis Geiger",
+    "minute": "63"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Clement Bischoff",
+    "out": "Gabriel Brás",
+    "minute": "87"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Kasey Bos",
+    "out": "Simon Janssen",
+    "minute": "46"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Aymen Sliti",
+    "out": "Ágúst Thorsteinsson",
+    "minute": "67"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Nesto Groen",
+    "out": "David Garden",
+    "minute": "67"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Valentin Sulzbacher",
+    "out": "Eric da Silva Moreira",
+    "minute": "71"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Alireza Jahanbakhsh",
+    "out": "Ilano Silva Timas",
+    "minute": "81"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Erwin Blank",
+  "attendance": 12344,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

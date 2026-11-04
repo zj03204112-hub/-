@@ -1,0 +1,139 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "eredivisie-2026-27-2026-10-18-fctwente-fcutrecht",
+ "date": "2026-10-18",
+ "home": "FC Twente",
+ "away": "FC Utrecht",
+ "score": "1-2",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781773",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781773"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Joël Drommel",
+   "Bart van Rooij",
+   "Robin Pröpper",
+   "Ruud Nijstad",
+   "Aske Adelgaard",
+   "Ramiz Zerrouki",
+   "Daouda Weidmann",
+   "Daan Rots",
+   "Kristian Hlynsson",
+   "Sondre Ørjasæter",
+   "Wout Weghorst"
+  ],
+  "home_bench": [
+   "Marko Pjaca",
+   "Thomas van den Belt",
+   "Younes Taha",
+   "Lucas Vennegoor of Hesselink",
+   "Remko Pasveer",
+   "Yannick Gerritsen",
+   "Jip Meilink",
+   "Krzysztof Kurowski",
+   "Michał Rosiak",
+   "Jordy Bawuah",
+   "Filip Thorvaldsen"
+  ],
+  "away_starting_xi": [
+   "Sergio Padt",
+   "Siebe Horemans",
+   "Matisse Didden",
+   "Nikolas Panayiotou",
+   "Niklas Vesterlund",
+   "Joris van Overeem",
+   "Oualid Agougil",
+   "Arthur Zagré",
+   "Yoann Cathline",
+   "Dani de Wit",
+   "Ángel Alarcon"
+  ],
+  "away_bench": [
+   "Davy van den Berg",
+   "Nordin Amrabat",
+   "Adrian Blake",
+   "Sem van Duijn",
+   "Kevin Gadellaa",
+   "Mees Eppink",
+   "Guus Offerhaus",
+   "Jakov Medić",
+   "Neville Ogidi Nwankwo",
+   "Per Kloosterboer",
+   "Emmanuel Chigozie Owen"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Twente",
+    "in": "Marko Pjaca",
+    "out": "Daan Rots",
+    "minute": "46"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Thomas van den Belt",
+    "out": "Robin Pröpper",
+    "minute": "62"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Younes Taha",
+    "out": "Kristian Hlynsson",
+    "minute": "62"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Lucas Vennegoor of Hesselink",
+    "out": "Aske Adelgaard",
+    "minute": "73"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Nordin Amrabat",
+    "out": "Oualid Agougil",
+    "minute": "64"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Davy van den Berg",
+    "out": "Siebe Horemans",
+    "minute": "64"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Adrian Blake",
+    "out": "Yoann Cathline",
+    "minute": "72"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Sem van Duijn",
+    "out": "Ángel Alarcon",
+    "minute": "72"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Allard Lindhout",
+  "attendance": 28500,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

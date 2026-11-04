@@ -1,0 +1,142 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "eredivisie-2026-27-2026-08-08-psveindhoven-fortunasittard",
+ "date": "2026-08-08",
+ "home": "PSV Eindhoven",
+ "away": "Fortuna Sittard",
+ "score": "2-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781700",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781700"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Matej Kovár",
+   "Ivan Perisic",
+   "Ryan Flamingo",
+   "Armando Obispo",
+   "Mauro Júnior",
+   "Paul Wanner",
+   "Noah Fernandez",
+   "Guus Til",
+   "Sven Mijnans",
+   "Ruben van Bommel",
+   "Ricardo Pepi"
+  ],
+  "home_bench": [
+   "Amir Bouhamdi",
+   "Alassane Pléa",
+   "Dennis Man",
+   "Kilian Sildillia",
+   "Nick Olij",
+   "Tijn Smolenaars",
+   "Essien Bassey",
+   "Fabian Merién",
+   "Yarek Gasiorowski",
+   "Joël van den Berg",
+   "Esmir Bajraktarevic"
+  ],
+  "away_starting_xi": [
+   "Mattijs Branderhorst",
+   "Ivo Pinto",
+   "Syb van Ottele",
+   "Justin Hubner",
+   "Siebe Wylin",
+   "Jasper Dahlhaus",
+   "Mohammed Ihattaren",
+   "Philip Brittijn",
+   "Yassin Oukili",
+   "Lequincio Zeefuik",
+   "Ole Romeny"
+  ],
+  "away_bench": [
+   "Édouard Michut",
+   "Anthony Descotte",
+   "Nick de Groot",
+   "Gani Buyukhan",
+   "Moussa Gbemou",
+   "Kaylen Reitmaier",
+   "Luuk Koopmans",
+   "Kevin van Burgsteden"
+  ],
+  "substitution_events": [
+   {
+    "team": "PSV Eindhoven",
+    "in": "Amir Bouhamdi",
+    "out": "Ruben van Bommel",
+    "minute": "46"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Alassane Pléa",
+    "out": "Guus Til",
+    "minute": "68"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Dennis Man",
+    "out": "Sven Mijnans",
+    "minute": "69"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Kilian Sildillia",
+    "out": "Ricardo Pepi",
+    "minute": "80"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Édouard Michut",
+    "out": "Lequincio Zeefuik",
+    "minute": "61"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Anthony Descotte",
+    "out": "Syb van Ottele",
+    "minute": "78"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Nick de Groot",
+    "out": "Philip Brittijn",
+    "minute": "79"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Gani Buyukhan",
+    "out": "Jasper Dahlhaus",
+    "minute": "87"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Moussa Gbemou",
+    "out": "Yassin Oukili",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Alex Bos",
+  "attendance": 33400,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

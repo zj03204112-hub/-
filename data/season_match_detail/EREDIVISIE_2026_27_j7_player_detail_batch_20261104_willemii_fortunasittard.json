@@ -1,0 +1,137 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "eredivisie-2026-27-2026-09-19-willemii-fortunasittard",
+ "date": "2026-09-19",
+ "home": "Willem II",
+ "away": "Fortuna Sittard",
+ "score": "0-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781758",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781758"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Maxime Delanghe",
+   "Hidde ter Avest",
+   "Finn Stam",
+   "Maxim Dekker",
+   "Nathan Tjoe-A-On",
+   "Calvin Twigt",
+   "Tonny Vilhena",
+   "Eser Gürbüz",
+   "Uriël van Aalst",
+   "Jaden Slory",
+   "Devin Haen"
+  ],
+  "home_bench": [
+   "Per van Loon",
+   "Vito van Crooij",
+   "Chido Obi",
+   "Thomas Verheijdt",
+   "Mats Lemmens",
+   "Karst de Leeuw",
+   "Wouter van der Steen",
+   "Alessandro Ciranni",
+   "Jens Mathijsen",
+   "Anass Zarrouk",
+   "Jari Schuurman"
+  ],
+  "away_starting_xi": [
+   "Mattijs Branderhorst",
+   "Ivo Pinto",
+   "Rodrigo Guth",
+   "Justin Hubner",
+   "Jasper Dahlhaus",
+   "Philip Brittijn",
+   "Édouard Michut",
+   "Shiloh Zand",
+   "Mohammed Ihattaren",
+   "Anthony Descotte",
+   "Ole Romeny"
+  ],
+  "away_bench": [
+   "Lequincio Zeefuik",
+   "Syb van Ottele",
+   "Kristoffer Peterson",
+   "Kaylen Reitmaier",
+   "Luuk Koopmans",
+   "Kevin van Burgsteden",
+   "Nick de Groot",
+   "Gani Buyukhan",
+   "Moussa Gbemou"
+  ],
+  "substitution_events": [
+   {
+    "team": "Willem II",
+    "in": "Per van Loon",
+    "out": "Nathan Tjoe-A-On",
+    "minute": "71"
+   },
+   {
+    "team": "Willem II",
+    "in": "Vito van Crooij",
+    "out": "Eser Gürbüz",
+    "minute": "71"
+   },
+   {
+    "team": "Willem II",
+    "in": "Chido Obi",
+    "out": "Jaden Slory",
+    "minute": "82"
+   },
+   {
+    "team": "Willem II",
+    "in": "Thomas Verheijdt",
+    "out": "Tonny Vilhena",
+    "minute": "82"
+   },
+   {
+    "team": "Willem II",
+    "in": "Mats Lemmens",
+    "out": "Calvin Twigt",
+    "minute": "89"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Lequincio Zeefuik",
+    "out": "Ole Romeny",
+    "minute": "59"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Syb van Ottele",
+    "out": "Shiloh Zand",
+    "minute": "83"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Kristoffer Peterson",
+    "out": "Anthony Descotte",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "Dennis Higler",
+  "attendance": 14900,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

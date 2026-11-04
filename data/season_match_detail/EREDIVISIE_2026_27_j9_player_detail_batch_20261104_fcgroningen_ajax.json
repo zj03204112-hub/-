@@ -1,0 +1,146 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "eredivisie-2026-27-2026-10-18-fcgroningen-ajax",
+ "date": "2026-10-18",
+ "home": "FC Groningen",
+ "away": "Ajax",
+ "score": "2-5",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5781772",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781772"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Etienne Vaessen",
+   "Jorg Schreuders",
+   "Thijmen Blokzijl",
+   "Marco Rente",
+   "Hans Hateboer",
+   "Tika de Jonge",
+   "Pelle Clement",
+   "David van der Werff",
+   "Thom van Bergen",
+   "Jacob Ondrejka",
+   "Brynjólfur Willumsson"
+  ],
+  "home_bench": [
+   "Márk Csinger",
+   "Wouter Prins",
+   "Tygo Land",
+   "Nils Eggens",
+   "Ryan Metu",
+   "Lovro Štubljar",
+   "Pelle Boevink",
+   "Jesper Mosselaar",
+   "Alvin Nordin",
+   "Jismerai Dillema",
+   "Travis Hernes",
+   "Oskar Zawada"
+  ],
+  "away_starting_xi": [
+   "Marc ter Stegen",
+   "Lucas Rosa",
+   "Aaron Bouwman",
+   "Dies Janse",
+   "Owen Wijndal",
+   "Davy Klaassen",
+   "Sofyan Amrabat",
+   "Jorthy Mokio",
+   "Julian Brandt",
+   "Marcos Leonardo",
+   "Oscar Gloukh"
+  ],
+  "away_bench": [
+   "Abdellah Ouazane",
+   "Tolu Arokodare",
+   "Yves Bissouma",
+   "Rayane Bounida",
+   "Charlie Setford",
+   "Maarten Paes",
+   "Jofre Torrents",
+   "Thilo Kehrer",
+   "Youri Baas",
+   "Mohamed Abdalla",
+   "Viktor Tsigankov"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Groningen",
+    "in": "Márk Csinger",
+    "out": "Jacob Ondrejka",
+    "minute": "67"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Tygo Land",
+    "out": "Brynjólfur Willumsson",
+    "minute": "83"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Ryan Metu",
+    "out": "David van der Werff",
+    "minute": "83"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Nils Eggens",
+    "out": "Tika de Jonge",
+    "minute": "83"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Wouter Prins",
+    "out": "Marco Rente",
+    "minute": "83"
+   },
+   {
+    "team": "Ajax",
+    "in": "Tolu Arokodare",
+    "out": "Marcos Leonardo",
+    "minute": "74"
+   },
+   {
+    "team": "Ajax",
+    "in": "Abdellah Ouazane",
+    "out": "Julian Brandt",
+    "minute": "74"
+   },
+   {
+    "team": "Ajax",
+    "in": "Rayane Bounida",
+    "out": "Oscar Gloukh",
+    "minute": "82"
+   },
+   {
+    "team": "Ajax",
+    "in": "Yves Bissouma",
+    "out": "Davy Klaassen",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 5
+  },
+  "provider_score": "2-5",
+  "score_consistent_with_events": true,
+  "referee": "Dennis Higler",
+  "attendance": 22525,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

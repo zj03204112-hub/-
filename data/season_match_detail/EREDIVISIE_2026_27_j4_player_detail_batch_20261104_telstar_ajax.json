@@ -1,0 +1,151 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "eredivisie-2026-27-2026-08-30-telstar-ajax",
+ "date": "2026-08-30",
+ "home": "Telstar",
+ "away": "Ajax",
+ "score": "0-4",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781730",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781730"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Ronald Koeman",
+   "Sem Valk",
+   "Abdelnor Soualhia",
+   "Marvin Peersman",
+   "Gerald Alders",
+   "Nils Rossen",
+   "Tyrone Owusu",
+   "Jeff Hardeveld",
+   "Rui Mendes",
+   "Patrick Brouwer",
+   "Jelani Seedorf"
+  ],
+  "home_bench": [
+   "Prince Aning",
+   "Fabiano Rust",
+   "Fofin Turay",
+   "Gabi Caschili",
+   "Emirhan Demircan",
+   "Daan Reiziger",
+   "Finn Mulder",
+   "Nigel Ogidi Nwankwo",
+   "Harrie Kuster",
+   "Isaiah Ahmed",
+   "Noach Shenkman",
+   "Rojendro Oudsten"
+  ],
+  "away_starting_xi": [
+   "Marc ter Stegen",
+   "Anton Gaaei",
+   "Aaron Bouwman",
+   "Dies Janse",
+   "Caio Henrique",
+   "Davy Klaassen",
+   "Jorthy Mokio",
+   "Julian Brandt",
+   "Steven Berghuis",
+   "Tolu Arokodare",
+   "Oscar Gloukh"
+  ],
+  "away_bench": [
+   "Abdellah Ouazane",
+   "Youri Baas",
+   "Marcos Leonardo",
+   "Oliver Edvardsen",
+   "Jofre Torrents",
+   "Joeri Heerkens",
+   "Maarten Paes",
+   "Owen Wijndal",
+   "Mohamed Abdalla",
+   "Kasper Dolberg"
+  ],
+  "substitution_events": [
+   {
+    "team": "Telstar",
+    "in": "Fabiano Rust",
+    "out": "Rui Mendes",
+    "minute": "65"
+   },
+   {
+    "team": "Telstar",
+    "in": "Fofin Turay",
+    "out": "Jelani Seedorf",
+    "minute": "65"
+   },
+   {
+    "team": "Telstar",
+    "in": "Prince Aning",
+    "out": "Jeff Hardeveld",
+    "minute": "65"
+   },
+   {
+    "team": "Telstar",
+    "in": "Gabi Caschili",
+    "out": "Gerald Alders",
+    "minute": "74"
+   },
+   {
+    "team": "Telstar",
+    "in": "Emirhan Demircan",
+    "out": "Marvin Peersman",
+    "minute": "77"
+   },
+   {
+    "team": "Ajax",
+    "in": "Abdellah Ouazane",
+    "out": "Davy Klaassen",
+    "minute": "65"
+   },
+   {
+    "team": "Ajax",
+    "in": "Youri Baas",
+    "out": "Julian Brandt",
+    "minute": "66"
+   },
+   {
+    "team": "Ajax",
+    "in": "Marcos Leonardo",
+    "out": "Steven Berghuis",
+    "minute": "73"
+   },
+   {
+    "team": "Ajax",
+    "in": "Oliver Edvardsen",
+    "out": "Oscar Gloukh",
+    "minute": "73"
+   },
+   {
+    "team": "Ajax",
+    "in": "Jofre Torrents",
+    "out": "Caio Henrique",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 4
+  },
+  "provider_score": "0-4",
+  "score_consistent_with_events": true,
+  "referee": "Dennis Higler",
+  "attendance": 5146,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

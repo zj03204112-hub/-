@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "10",
+ "match_id": "eredivisie-2026-27-2026-10-23-goaheadeagles-telstar",
+ "date": "2026-10-23",
+ "home": "Go Ahead Eagles",
+ "away": "Telstar",
+ "score": "3-2",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781781",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781781"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kjetil Haug",
+   "Alfons Sampsted",
+   "Julius Dirksen",
+   "Joris Kramer",
+   "Dean James",
+   "Melle Meulensteen",
+   "Evert Linthorst",
+   "Oskar Siira Sivertsen",
+   "Søren Tengstedt",
+   "Mathis Suray",
+   "Victor Edvardsen"
+  ],
+  "home_bench": [
+   "Tomas Galvez",
+   "Thibo Baeten",
+   "Stefán Sigurðarson",
+   "Robbin Weijenberg",
+   "Yassir Salah Rahmouni",
+   "Jasper Cillessen",
+   "Nando Verdoni",
+   "Gerrit Nauber",
+   "Giovanni van Zwam",
+   "Tino Jukić",
+   "Erik Flataker",
+   "Richonell Margaret"
+  ],
+  "away_starting_xi": [
+   "Ronald Koeman",
+   "Gabi Caschili",
+   "Sem Valk",
+   "Abdelnor Soualhia",
+   "Marvin Peersman",
+   "Nils Rossen",
+   "Noach Shenkman",
+   "Arjany Martha",
+   "Tyrone Owusu",
+   "Patrick Brouwer",
+   "Nökkvi Thorisson"
+  ],
+  "away_bench": [
+   "Isaiah Ahmed",
+   "Rui Mendes",
+   "Rojendro Oudsten",
+   "Harrie Kuster",
+   "Jelani Seedorf",
+   "Daan Reiziger",
+   "Finn Mulder",
+   "Prince Aning",
+   "Jeff Hardeveld",
+   "Emirhan Demircan",
+   "Fofin Turay"
+  ],
+  "substitution_events": [
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Tomas Galvez",
+    "out": "Mathis Suray",
+    "minute": "63"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Thibo Baeten",
+    "out": "Dean James",
+    "minute": "63"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Stefán Sigurðarson",
+    "out": "Oskar Siira Sivertsen",
+    "minute": "76"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Yassir Salah Rahmouni",
+    "out": "Melle Meulensteen",
+    "minute": "84"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Robbin Weijenberg",
+    "out": "Søren Tengstedt",
+    "minute": "84"
+   },
+   {
+    "team": "Telstar",
+    "in": "Isaiah Ahmed",
+    "out": "Noach Shenkman",
+    "minute": "67"
+   },
+   {
+    "team": "Telstar",
+    "in": "Rui Mendes",
+    "out": "Arjany Martha",
+    "minute": "67"
+   },
+   {
+    "team": "Telstar",
+    "in": "Rojendro Oudsten",
+    "out": "Gabi Caschili",
+    "minute": "74"
+   },
+   {
+    "team": "Telstar",
+    "in": "Harrie Kuster",
+    "out": "Nils Rossen",
+    "minute": "79"
+   },
+   {
+    "team": "Telstar",
+    "in": "Jelani Seedorf",
+    "out": "Nökkvi Thorisson",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "Robin Hensgens",
+  "attendance": 9283,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

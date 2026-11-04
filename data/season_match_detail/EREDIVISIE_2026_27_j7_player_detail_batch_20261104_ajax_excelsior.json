@@ -1,0 +1,145 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "eredivisie-2026-27-2026-09-19-ajax-excelsior",
+ "date": "2026-09-19",
+ "home": "Ajax",
+ "away": "Excelsior",
+ "score": "2-2",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781757",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781757"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Marc ter Stegen",
+   "Anton Gaaei",
+   "Thilo Kehrer",
+   "Youri Baas",
+   "Caio Henrique",
+   "Davy Klaassen",
+   "Jorthy Mokio",
+   "Viktor Tsigankov",
+   "Julian Brandt",
+   "Oscar Gloukh",
+   "Kasper Dolberg"
+  ],
+  "home_bench": [
+   "Owen Wijndal",
+   "Oliver Edvardsen",
+   "Tolu Arokodare",
+   "Sofyan Amrabat",
+   "Abdellah Ouazane",
+   "Charlie Setford",
+   "Maarten Paes",
+   "Dies Janse",
+   "Jofre Torrents",
+   "Lucas Rosa",
+   "Marcos Leonardo",
+   "Rayane Bounida"
+  ],
+  "away_starting_xi": [
+   "Stijn van Gassel",
+   "Eric da Silva Moreira",
+   "Casper Widell",
+   "Jan Plug",
+   "Simon Janssen",
+   "Rick Meissen",
+   "Aymen Sliti",
+   "Irakli Yegoian",
+   "Lennard Hartjes",
+   "Ágúst Thorsteinsson",
+   "David Garden"
+  ],
+  "away_bench": [
+   "Kasey Bos",
+   "Alireza Jahanbakhsh",
+   "Ilano Silva Timas",
+   "Mario Domínguez",
+   "Celton Biai",
+   "Guilliano Cairo",
+   "Osman Mohamed Turay",
+   "Daniël van Vianen",
+   "Valentin Sulzbacher",
+   "Nesto Groen"
+  ],
+  "substitution_events": [
+   {
+    "team": "Ajax",
+    "in": "Owen Wijndal",
+    "out": "Caio Henrique",
+    "minute": "23"
+   },
+   {
+    "team": "Ajax",
+    "in": "Oliver Edvardsen",
+    "out": "Viktor Tsigankov",
+    "minute": "61"
+   },
+   {
+    "team": "Ajax",
+    "in": "Tolu Arokodare",
+    "out": "Kasper Dolberg",
+    "minute": "62"
+   },
+   {
+    "team": "Ajax",
+    "in": "Sofyan Amrabat",
+    "out": "Jorthy Mokio",
+    "minute": "76"
+   },
+   {
+    "team": "Ajax",
+    "in": "Abdellah Ouazane",
+    "out": "Davy Klaassen",
+    "minute": "77"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Kasey Bos",
+    "out": "Eric da Silva Moreira",
+    "minute": "65"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Alireza Jahanbakhsh",
+    "out": "Aymen Sliti",
+    "minute": "71"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Ilano Silva Timas",
+    "out": "Ágúst Thorsteinsson",
+    "minute": "71"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Mario Domínguez",
+    "out": "David Garden",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Jannick van der Laan",
+  "attendance": 54175,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

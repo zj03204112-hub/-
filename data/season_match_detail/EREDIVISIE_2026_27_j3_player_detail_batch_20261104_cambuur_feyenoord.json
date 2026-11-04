@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "eredivisie-2026-27-2026-08-23-cambuur-feyenoord",
+ "date": "2026-08-23",
+ "home": "Cambuur",
+ "away": "Feyenoord",
+ "score": "2-5",
+ "halftime_score": "0-4",
+ "official_match_url": "https://www.fotmob.com/matches/5781721",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781721"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Thijs Jansen",
+   "Wiebe Kooistra",
+   "Ismaël Baouf",
+   "Jamal Amofa",
+   "Lucas Jetten",
+   "Rafik El Arguioui",
+   "Nicky Souren",
+   "Skye Vink",
+   "Iwan Henstra",
+   "Sami Bouhoudane",
+   "Ilyès Hamache"
+  ],
+  "home_bench": [
+   "Morgan Costarelli",
+   "Ethan Apkakou",
+   "Fabian Kvam",
+   "Nicolas Binder",
+   "Devid Eugene Bouah",
+   "Jasper Meijster",
+   "Matthijs Kalisvaart",
+   "Buddy Vogelzang",
+   "Jorn Berkhout",
+   "Rik Mulders",
+   "Damian Westerhof",
+   "Wessel van der Goot"
+  ],
+  "away_starting_xi": [
+   "Tjark Ernst",
+   "Givairo Read",
+   "Tsuyoshi Watanabe",
+   "Jeremiah St. Juste",
+   "Mika Mármol",
+   "Gjivai Zechiël",
+   "Charles Vanhoutte",
+   "Luciano Valente",
+   "Anis Hadj Moussa",
+   "Ayase Ueda",
+   "Gaoussou Diarra"
+  ],
+  "away_bench": [
+   "Javi López",
+   "Oussama Targhalline",
+   "Nacho Ferri",
+   "Jordan Lotomba",
+   "Shaqueel van Persie",
+   "Liam Bossin",
+   "Mats Deijl",
+   "Thijs Kraaijeveld",
+   "Jivayno Zinhagel",
+   "Sem Steijn",
+   "Casper Tengstedt",
+   "Tobias van den Elshout"
+  ],
+  "substitution_events": [
+   {
+    "team": "Cambuur",
+    "in": "Ethan Apkakou",
+    "out": "Ilyès Hamache",
+    "minute": "46"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Morgan Costarelli",
+    "out": "Skye Vink",
+    "minute": "46"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Nicolas Binder",
+    "out": "Sami Bouhoudane",
+    "minute": "62"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Fabian Kvam",
+    "out": "Lucas Jetten",
+    "minute": "62"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Devid Eugene Bouah",
+    "out": "Iwan Henstra",
+    "minute": "84"
+   },
+   {
+    "team": "Feyenoord",
+    "in": "Oussama Targhalline",
+    "out": "Gaoussou Diarra",
+    "minute": "67"
+   },
+   {
+    "team": "Feyenoord",
+    "in": "Javi López",
+    "out": "Tsuyoshi Watanabe",
+    "minute": "67"
+   },
+   {
+    "team": "Feyenoord",
+    "in": "Nacho Ferri",
+    "out": "Ayase Ueda",
+    "minute": "67"
+   },
+   {
+    "team": "Feyenoord",
+    "in": "Jordan Lotomba",
+    "out": "Givairo Read",
+    "minute": "81"
+   },
+   {
+    "team": "Feyenoord",
+    "in": "Shaqueel van Persie",
+    "out": "Anis Hadj Moussa",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 5
+  },
+  "provider_score": "2-5",
+  "score_consistent_with_events": true,
+  "referee": "Danny Makkelie",
+  "attendance": 14817,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

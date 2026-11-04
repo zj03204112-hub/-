@@ -1,0 +1,151 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "11",
+ "match_id": "eredivisie-2026-27-2026-11-01-telstar-fcutrecht",
+ "date": "2026-11-01",
+ "home": "Telstar",
+ "away": "FC Utrecht",
+ "score": "4-2",
+ "halftime_score": "3-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781790",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781790"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Ronald Koeman",
+   "Gabi Caschili",
+   "Sem Valk",
+   "Abdelnor Soualhia",
+   "Marvin Peersman",
+   "Isaiah Ahmed",
+   "Nils Rossen",
+   "Arjany Martha",
+   "Tyrone Owusu",
+   "Emirhan Demircan",
+   "Nökkvi Thorisson"
+  ],
+  "home_bench": [
+   "Jeff Hardeveld",
+   "Rojendro Oudsten",
+   "Noach Shenkman",
+   "Fabiano Rust",
+   "Fofin Turay",
+   "Daan Reiziger",
+   "Finn Mulder",
+   "Nigel Ogidi Nwankwo",
+   "Prince Aning",
+   "Harrie Kuster"
+  ],
+  "away_starting_xi": [
+   "Sergio Padt",
+   "Siebe Horemans",
+   "Matisse Didden",
+   "Nikolas Panayiotou",
+   "Arthur Zagré",
+   "Joris van Overeem",
+   "Oualid Agougil",
+   "Niklas Vesterlund",
+   "Marius Broholm",
+   "Yoann Cathline",
+   "Dani de Wit"
+  ],
+  "away_bench": [
+   "Per Kloosterboer",
+   "Ángel Alarcon",
+   "Artem Stepanov",
+   "Adrian Blake",
+   "Sem van Duijn",
+   "Mees Eppink",
+   "Vasilios Barkas",
+   "Guus Offerhaus",
+   "Jakov Medić",
+   "Neville Ogidi Nwankwo",
+   "Davy van den Berg",
+   "Nordin Amrabat"
+  ],
+  "substitution_events": [
+   {
+    "team": "Telstar",
+    "in": "Rojendro Oudsten",
+    "out": "Gabi Caschili",
+    "minute": "61"
+   },
+   {
+    "team": "Telstar",
+    "in": "Jeff Hardeveld",
+    "out": "Marvin Peersman",
+    "minute": "61"
+   },
+   {
+    "team": "Telstar",
+    "in": "Noach Shenkman",
+    "out": "Emirhan Demircan",
+    "minute": "70"
+   },
+   {
+    "team": "Telstar",
+    "in": "Fofin Turay",
+    "out": "Arjany Martha",
+    "minute": "77"
+   },
+   {
+    "team": "Telstar",
+    "in": "Fabiano Rust",
+    "out": "Nökkvi Thorisson",
+    "minute": "77"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Ángel Alarcon",
+    "out": "Siebe Horemans",
+    "minute": "37"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Per Kloosterboer",
+    "out": "Arthur Zagré",
+    "minute": "37"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Artem Stepanov",
+    "out": "Oualid Agougil",
+    "minute": "46"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Adrian Blake",
+    "out": "Marius Broholm",
+    "minute": "74"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Sem van Duijn",
+    "out": "Nikolas Panayiotou",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 2
+  },
+  "provider_score": "4-2",
+  "score_consistent_with_events": true,
+  "referee": "Richard Martens",
+  "attendance": 4750,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

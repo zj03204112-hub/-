@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "eredivisie-2026-27-2026-08-08-necnijmegen-telstar",
+ "date": "2026-08-08",
+ "home": "NEC Nijmegen",
+ "away": "Telstar",
+ "score": "1-2",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5781698",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781698"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Gonzalo Crettaz",
+   "Brayann Pereira",
+   "Darko Nejasmic",
+   "Deveron Fonville",
+   "Sami Ouaissa",
+   "Jamiro Monteiro",
+   "Isak Hansen-Aarøen",
+   "Clement Bischoff",
+   "Tjaronn Chery",
+   "Noé Lebreton",
+   "Dusan Tadic"
+  ],
+  "home_bench": [
+   "Kaj Sierhuis",
+   "Philippe Sandler",
+   "Willum Willumsson",
+   "Bryan Linssen",
+   "Emre Mor",
+   "Freek Entius",
+   "Joep Geneste",
+   "Merijn van de Wiel",
+   "Thomas Ouwejan",
+   "Tobias Storm",
+   "Adam Tahaui",
+   "Kevin Kers"
+  ],
+  "away_starting_xi": [
+   "Ronald Koeman",
+   "Gerald Alders",
+   "Abdelnor Soualhia",
+   "Marvin Peersman",
+   "Jeff Hardeveld",
+   "Tyrone Owusu",
+   "Nils Rossen",
+   "Rui Mendes",
+   "Patrick Brouwer",
+   "Soufiane Hetli",
+   "Jelani Seedorf"
+  ],
+  "away_bench": [
+   "Emirhan Demircan",
+   "Prince Aning",
+   "Isaiah Ahmed",
+   "Noach Shenkman",
+   "Gabi Caschili",
+   "Daan Reiziger",
+   "Finn Mulder",
+   "Nigel Ogidi Nwankwo",
+   "Harrie Kuster",
+   "Rojendro Oudsten",
+   "Fabiano Rust",
+   "Fofin Turay"
+  ],
+  "substitution_events": [
+   {
+    "team": "NEC Nijmegen",
+    "in": "Kaj Sierhuis",
+    "out": "Darko Nejasmic",
+    "minute": "46"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Bryan Linssen",
+    "out": "Tjaronn Chery",
+    "minute": "64"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Philippe Sandler",
+    "out": "Jamiro Monteiro",
+    "minute": "64"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Willum Willumsson",
+    "out": "Noé Lebreton",
+    "minute": "64"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Emre Mor",
+    "out": "Sami Ouaissa",
+    "minute": "79"
+   },
+   {
+    "team": "Telstar",
+    "in": "Emirhan Demircan",
+    "out": "Rui Mendes",
+    "minute": "55"
+   },
+   {
+    "team": "Telstar",
+    "in": "Prince Aning",
+    "out": "Soufiane Hetli",
+    "minute": "63"
+   },
+   {
+    "team": "Telstar",
+    "in": "Isaiah Ahmed",
+    "out": "Gerald Alders",
+    "minute": "64"
+   },
+   {
+    "team": "Telstar",
+    "in": "Noach Shenkman",
+    "out": "Nils Rossen",
+    "minute": "64"
+   },
+   {
+    "team": "Telstar",
+    "in": "Gabi Caschili",
+    "out": "Tyrone Owusu",
+    "minute": "70"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Martijn Vos",
+  "attendance": 12650,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

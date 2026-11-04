@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "eredivisie-2026-27-2026-08-08-azalkmaar-adodenhaag",
+ "date": "2026-08-08",
+ "home": "AZ Alkmaar",
+ "away": "ADO Den Haag",
+ "score": "2-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781699",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781699"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jari De Busser",
+   "Elijah Dijkstra",
+   "Wouter Goes",
+   "Lewis Schouten",
+   "Mateo Chávez",
+   "Dave Kwakman",
+   "Peer Koopmeiners",
+   "Weslley Pinto",
+   "Kees Smit",
+   "Ro-Zangelo Daal",
+   "Mexx Meerdink"
+  ],
+  "home_bench": [
+   "Calvin Stengs",
+   "Troy Parrott",
+   "Hessel de Wit",
+   "Mees de Wit",
+   "Ayoub Oufkir",
+   "Hobie Verhulst",
+   "Rome Owusu-Oduro",
+   "Billy van Duijl",
+   "Rion Ichihara",
+   "Seiya Maikuma",
+   "Julian Oerip",
+   "Bendegúz Kovács",
+   "Isak Steiner Jensen"
+  ],
+  "away_starting_xi": [
+   "Kilian Nikièma",
+   "Milan Hokke",
+   "Pascal Mulder",
+   "Matteo Waem",
+   "Sékou Sylla",
+   "Daryl van Mieghem",
+   "Finn de Bruin",
+   "Juho Kilo",
+   "Jalen Hawkings",
+   "Evan Rottier",
+   "Yannick Eduardo"
+  ],
+  "away_bench": [
+   "Mylian Jiménez",
+   "Illaijh de Ruijter",
+   "Jesse Bal",
+   "Nigel Thomas",
+   "Lasse Wilhelm",
+   "Caleb Kramer",
+   "Sem Eekhout",
+   "Jan Zamburek",
+   "Dani van Leonen",
+   "Luka Reischl",
+   "Sanyika Bergtop"
+  ],
+  "substitution_events": [
+   {
+    "team": "AZ Alkmaar",
+    "in": "Calvin Stengs",
+    "out": "Weslley Pinto",
+    "minute": "57"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Troy Parrott",
+    "out": "Mexx Meerdink",
+    "minute": "57"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Hessel de Wit",
+    "out": "Kees Smit",
+    "minute": "72"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Mees de Wit",
+    "out": "Mateo Chávez",
+    "minute": "73"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Ayoub Oufkir",
+    "out": "Ro-Zangelo Daal",
+    "minute": "81"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Illaijh de Ruijter",
+    "out": "Jalen Hawkings",
+    "minute": "57"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Mylian Jiménez",
+    "out": "Finn de Bruin",
+    "minute": "57"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Nigel Thomas",
+    "out": "Daryl van Mieghem",
+    "minute": "64"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Jesse Bal",
+    "out": "Evan Rottier",
+    "minute": "64"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Lasse Wilhelm",
+    "out": "Pascal Mulder",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "Erwin Blank",
+  "attendance": 17170,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

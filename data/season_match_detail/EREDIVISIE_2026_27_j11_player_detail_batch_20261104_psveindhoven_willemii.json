@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "11",
+ "match_id": "eredivisie-2026-27-2026-10-31-psveindhoven-willemii",
+ "date": "2026-10-31",
+ "home": "PSV Eindhoven",
+ "away": "Willem II",
+ "score": "7-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781793",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781793"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Matěj Kovár",
+   "Lutsharel Geertruida",
+   "Armando Obispo",
+   "Yarek Gąsiorowski",
+   "Sergiño Dest",
+   "Kodai Sano",
+   "Guus Til",
+   "Mauro Júnior",
+   "Ivan Perišić",
+   "Ruben van Bommel",
+   "Sven Mijnans"
+  ],
+  "home_bench": [
+   "Noah Fernandez",
+   "Ricardo Pepi",
+   "Ayoni Santos",
+   "Esmir Bajraktarević",
+   "Shuryjano Cornecion",
+   "Nick Olij",
+   "Filip Kostić",
+   "Kilian Sildillia",
+   "Ryan Flamingo",
+   "Amir Bouhamdi",
+   "Dennis Man",
+   "Mikkel Bro"
+  ],
+  "away_starting_xi": [
+   "Maxime Delanghe",
+   "Finn Stam",
+   "Mats Lemmens",
+   "Maxim Dekker",
+   "Nathan Tjoe-A-On",
+   "Hidde ter Avest",
+   "Calvin Twigt",
+   "Anass Zarrouk",
+   "Vito van Crooij",
+   "Uriël van Aalst",
+   "Devin Haen"
+  ],
+  "away_bench": [
+   "Per van Loon",
+   "Kasper Boogaard",
+   "Tonny Vilhena",
+   "Alessandro Ciranni",
+   "Amine Et-Taïbi",
+   "Karst de Leeuw",
+   "Wouter van der Steen",
+   "Armin Culum",
+   "Jari Schuurman",
+   "Chido Obi",
+   "Eser Gürbüz",
+   "Thomas Verheijdt"
+  ],
+  "substitution_events": [
+   {
+    "team": "PSV Eindhoven",
+    "in": "Noah Fernandez",
+    "out": "Mauro Júnior",
+    "minute": "60"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Ricardo Pepi",
+    "out": "Ivan Perišić",
+    "minute": "60"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Esmir Bajraktarević",
+    "out": "Sergiño Dest",
+    "minute": "71"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Ayoni Santos",
+    "out": "Ruben van Bommel",
+    "minute": "71"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Shuryjano Cornecion",
+    "out": "Guus Til",
+    "minute": "78"
+   },
+   {
+    "team": "Willem II",
+    "in": "Per van Loon",
+    "out": "Hidde ter Avest",
+    "minute": "62"
+   },
+   {
+    "team": "Willem II",
+    "in": "Kasper Boogaard",
+    "out": "Anass Zarrouk",
+    "minute": "74"
+   },
+   {
+    "team": "Willem II",
+    "in": "Tonny Vilhena",
+    "out": "Vito van Crooij",
+    "minute": "75"
+   },
+   {
+    "team": "Willem II",
+    "in": "Alessandro Ciranni",
+    "out": "Uriël van Aalst",
+    "minute": "80"
+   },
+   {
+    "team": "Willem II",
+    "in": "Amine Et-Taïbi",
+    "out": "Finn Stam",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 7,
+   "away": 0
+  },
+  "provider_score": "7-0",
+  "score_consistent_with_events": true,
+  "referee": "Danny Makkelie",
+  "attendance": 34800,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

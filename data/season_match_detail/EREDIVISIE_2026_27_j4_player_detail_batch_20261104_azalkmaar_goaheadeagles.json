@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "eredivisie-2026-27-2026-08-29-azalkmaar-goaheadeagles",
+ "date": "2026-08-29",
+ "home": "AZ Alkmaar",
+ "away": "Go Ahead Eagles",
+ "score": "5-2",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781724",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781724"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jari De Busser",
+   "Elijah Dijkstra",
+   "Wouter Goes",
+   "Lewis Schouten",
+   "Mateo Chávez",
+   "Dave Kwakman",
+   "Peer Koopmeiners",
+   "Weslley Pinto",
+   "Kees Smit",
+   "Ro-Zangelo Daal",
+   "Mexx Meerdink"
+  ],
+  "home_bench": [
+   "Jordy Clasie",
+   "Calvin Stengs",
+   "Seiya Maikuma",
+   "Ayoub Oufkir",
+   "Mees de Wit",
+   "Ismail Ka",
+   "Rome Owusu-Oduro",
+   "Andrea Natali",
+   "Rion Ichihara",
+   "Hessel de Wit",
+   "Bendegúz Kovács",
+   "Jizz Hornkamp"
+  ],
+  "away_starting_xi": [
+   "Kjetil Haug",
+   "Alfons Sampsted",
+   "Julius Dirksen",
+   "Joris Kramer",
+   "Dean James",
+   "Evert Linthorst",
+   "Melle Meulensteen",
+   "Søren Tengstedt",
+   "Victor Edvardsen",
+   "Mathis Suray",
+   "Erik Flataker"
+  ],
+  "away_bench": [
+   "Stefán Sigurdarson",
+   "Eus Waayers",
+   "Richonell Margaret",
+   "Thibo Baeten",
+   "Oskar Siira Sivertsen",
+   "Nando Verdoni",
+   "Thomas Hulleman",
+   "Terence Lantveld",
+   "Tino Jukic",
+   "Yassir Salah Rahmouni",
+   "Dani Tijman",
+   "Ofosu Boakye"
+  ],
+  "substitution_events": [
+   {
+    "team": "AZ Alkmaar",
+    "in": "Calvin Stengs",
+    "out": "Weslley Pinto",
+    "minute": "64"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Jordy Clasie",
+    "out": "Dave Kwakman",
+    "minute": "64"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Ayoub Oufkir",
+    "out": "Kees Smit",
+    "minute": "77"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Seiya Maikuma",
+    "out": "Elijah Dijkstra",
+    "minute": "77"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Mees de Wit",
+    "out": "Mateo Chávez",
+    "minute": "83"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Stefán Sigurdarson",
+    "out": "Erik Flataker",
+    "minute": "46"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Eus Waayers",
+    "out": "Alfons Sampsted",
+    "minute": "59"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Richonell Margaret",
+    "out": "Victor Edvardsen",
+    "minute": "59"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Thibo Baeten",
+    "out": "Søren Tengstedt",
+    "minute": "69"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Oskar Siira Sivertsen",
+    "out": "Dean James",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 2
+  },
+  "provider_score": "5-2",
+  "score_consistent_with_events": true,
+  "referee": "Alex Bos",
+  "attendance": 18213,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

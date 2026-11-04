@@ -1,0 +1,146 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "eredivisie-2026-27-2026-09-09-fctwente-telstar",
+ "date": "2026-09-09",
+ "home": "FC Twente",
+ "away": "Telstar",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781722",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781722"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lars Unnerstall",
+   "Bart van Rooij",
+   "Max Bruns",
+   "Ruud Nijstad",
+   "Aske Adelgaard",
+   "Ramiz Zerrouki",
+   "Daouda Weidmann",
+   "Daan Rots",
+   "Younes Taha",
+   "Sondre Ørjasæter",
+   "Wout Weghorst"
+  ],
+  "home_bench": [
+   "Filip Thorvaldsen",
+   "Robin Pröpper",
+   "Thomas van den Belt",
+   "Marko Pjaca",
+   "Joël Drommel",
+   "Remko Pasveer",
+   "Krzysztof Kurowski",
+   "Michał Rosiak",
+   "Jordy Bawuah",
+   "Lucas Vennegoor of Hesselink",
+   "Naci Ünüvar"
+  ],
+  "away_starting_xi": [
+   "Ronald Koeman",
+   "Sem Valk",
+   "Abdelnor Soualhia",
+   "Marvin Peersman",
+   "Gerald Alders",
+   "Nils Rossen",
+   "Tyrone Owusu",
+   "Jeff Hardeveld",
+   "Rui Mendes",
+   "Patrick Brouwer",
+   "Nökkvi Thorisson"
+  ],
+  "away_bench": [
+   "Noach Shenkman",
+   "Jelani Seedorf",
+   "Rojendro Oudsten",
+   "Harrie Kuster",
+   "Arjany Martha",
+   "Daan Reiziger",
+   "Finn Mulder",
+   "Nigel Ogidi Nwankwo",
+   "Prince Aning",
+   "Isaiah Ahmed",
+   "Emirhan Demircan",
+   "Fofin Turay"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Twente",
+    "in": "Filip Thorvaldsen",
+    "out": "Daan Rots",
+    "minute": "62"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Robin Pröpper",
+    "out": "Younes Taha",
+    "minute": "73"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Thomas van den Belt",
+    "out": "Aske Adelgaard",
+    "minute": "73"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Marko Pjaca",
+    "out": "Sondre Ørjasæter",
+    "minute": "79"
+   },
+   {
+    "team": "Telstar",
+    "in": "Jelani Seedorf",
+    "out": "Nökkvi Thorisson",
+    "minute": "61"
+   },
+   {
+    "team": "Telstar",
+    "in": "Noach Shenkman",
+    "out": "Tyrone Owusu",
+    "minute": "61"
+   },
+   {
+    "team": "Telstar",
+    "in": "Rojendro Oudsten",
+    "out": "Gerald Alders",
+    "minute": "62"
+   },
+   {
+    "team": "Telstar",
+    "in": "Harrie Kuster",
+    "out": "Jeff Hardeveld",
+    "minute": "74"
+   },
+   {
+    "team": "Telstar",
+    "in": "Arjany Martha",
+    "out": "Rui Mendes",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Richard Martens",
+  "attendance": 29000,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

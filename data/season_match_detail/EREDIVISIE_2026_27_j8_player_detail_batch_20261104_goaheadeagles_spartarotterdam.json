@@ -1,0 +1,139 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "eredivisie-2026-27-2026-10-10-goaheadeagles-spartarotterdam",
+ "date": "2026-10-10",
+ "home": "Go Ahead Eagles",
+ "away": "Sparta Rotterdam",
+ "score": "3-3",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781765",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781765"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kjetil Haug",
+   "Alfons Sampsted",
+   "Giovanni van Zwam",
+   "Joris Kramer",
+   "Dean James",
+   "Melle Meulensteen",
+   "Evert Linthorst",
+   "Søren Tengstedt",
+   "Victor Edvardsen",
+   "Mathis Suray",
+   "Stefán Sigurðarson"
+  ],
+  "home_bench": [
+   "Yassir Salah Rahmouni",
+   "Thibo Baeten",
+   "Tino Jukić",
+   "Oskar Siira Sivertsen",
+   "Erik Flataker",
+   "Nando Verdoni",
+   "Thomas Hulleman",
+   "Eus Waayers",
+   "Gerrit Nauber",
+   "Robbin Weijenberg",
+   "Tomas Galvez",
+   "Richonell Margaret"
+  ],
+  "away_starting_xi": [
+   "Michael Brouwer",
+   "Lushendry Martes",
+   "Marvin Young",
+   "Bruno Martins Indi",
+   "Bas Kuipers",
+   "Nick Verschuren",
+   "Robin van Cruijsen",
+   "Jens Toornstra",
+   "Cedric Hatenboer",
+   "Isaac Babadi",
+   "Milan Zonneveld"
+  ],
+  "away_bench": [
+   "Teo Quintero",
+   "Casper Terho",
+   "Andrej Kostić",
+   "Filip Bednarek",
+   "Pascal Kuiper",
+   "Boyd Reith",
+   "Giannino Vianello",
+   "Alwande Roaldsøy",
+   "Julian Baas",
+   "Joel Ideho"
+  ],
+  "substitution_events": [
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Yassir Salah Rahmouni",
+    "out": "Evert Linthorst",
+    "minute": "46"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Thibo Baeten",
+    "out": "Dean James",
+    "minute": "57"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Tino Jukić",
+    "out": "Alfons Sampsted",
+    "minute": "73"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Oskar Siira Sivertsen",
+    "out": "Stefán Sigurðarson",
+    "minute": "74"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Erik Flataker",
+    "out": "Søren Tengstedt",
+    "minute": "85"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Casper Terho",
+    "out": "Robin van Cruijsen",
+    "minute": "62"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Teo Quintero",
+    "out": "Jens Toornstra",
+    "minute": "62"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Andrej Kostić",
+    "out": "Bruno Martins Indi",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 3
+  },
+  "provider_score": "3-3",
+  "score_consistent_with_events": true,
+  "referee": "Jeroen Manschot",
+  "attendance": 9371,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

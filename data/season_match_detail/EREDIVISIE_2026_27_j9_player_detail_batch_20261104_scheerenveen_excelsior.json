@@ -1,0 +1,151 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "eredivisie-2026-27-2026-10-16-scheerenveen-excelsior",
+ "date": "2026-10-16",
+ "home": "SC Heerenveen",
+ "away": "Excelsior",
+ "score": "4-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781769",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781769"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bernt Klaverboer",
+   "Oliver Braude",
+   "Sam Kersten",
+   "Maas Willemsen",
+   "Vasilios Zagaritis",
+   "Marcus Linday",
+   "Nolhan Courtens",
+   "Jacob Trenskow",
+   "Levi Smans",
+   "Maxence Rivera",
+   "Dylan Vente"
+  ],
+  "home_bench": [
+   "Marko Lawk Farji",
+   "Ringo Meerveld",
+   "Luca Oyen",
+   "Roberts Uldriķis",
+   "Hristiyan Petrov",
+   "Andries Noppert",
+   "Timo Schreuder",
+   "Mats Egbring",
+   "Mees Hilgers",
+   "Anass Bouziane",
+   "Darling Bladi",
+   "Lanroy Machine"
+  ],
+  "away_starting_xi": [
+   "Stijn van Gassel",
+   "Eric da Silva Moreira",
+   "Casper Widell",
+   "Jan Plug",
+   "Simon Janssen",
+   "Irakli Yegoian",
+   "Rick Meissen",
+   "Lennard Hartjes",
+   "Aymen Sliti",
+   "David Garden",
+   "Ágúst Thorsteinsson"
+  ],
+  "away_bench": [
+   "Mario Domínguez",
+   "Osman Mohamed Turay",
+   "Valentin Sulzbacher",
+   "Ilano Silva Timas",
+   "Noah Naujoks",
+   "Celton Biai",
+   "Guilliano Cairo",
+   "Daniël van Vianen",
+   "Alireza Jahanbakhsh",
+   "Nesto Groen"
+  ],
+  "substitution_events": [
+   {
+    "team": "SC Heerenveen",
+    "in": "Marko Lawk Farji",
+    "out": "Maxence Rivera",
+    "minute": "73"
+   },
+   {
+    "team": "SC Heerenveen",
+    "in": "Ringo Meerveld",
+    "out": "Levi Smans",
+    "minute": "82"
+   },
+   {
+    "team": "SC Heerenveen",
+    "in": "Roberts Uldriķis",
+    "out": "Dylan Vente",
+    "minute": "82"
+   },
+   {
+    "team": "SC Heerenveen",
+    "in": "Luca Oyen",
+    "out": "Nolhan Courtens",
+    "minute": "82"
+   },
+   {
+    "team": "SC Heerenveen",
+    "in": "Hristiyan Petrov",
+    "out": "Maas Willemsen",
+    "minute": "86"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Mario Domínguez",
+    "out": "David Garden",
+    "minute": "46"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Ilano Silva Timas",
+    "out": "Ágúst Thorsteinsson",
+    "minute": "66"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Osman Mohamed Turay",
+    "out": "Simon Janssen",
+    "minute": "66"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Valentin Sulzbacher",
+    "out": "Aymen Sliti",
+    "minute": "66"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Noah Naujoks",
+    "out": "Eric da Silva Moreira",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 4,
+   "away": 0
+  },
+  "provider_score": "4-0",
+  "score_consistent_with_events": true,
+  "referee": "Robin Hensgens",
+  "attendance": 23068,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

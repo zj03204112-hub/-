@@ -1,0 +1,146 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "eredivisie-2026-27-2026-08-14-telstar-spartarotterdam",
+ "date": "2026-08-14",
+ "home": "Telstar",
+ "away": "Sparta Rotterdam",
+ "score": "1-3",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781710",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781710"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Ronald Koeman",
+   "Gabi Caschili",
+   "Abdelnor Soualhia",
+   "Marvin Peersman",
+   "Jeff Hardeveld",
+   "Nils Rossen",
+   "Tyrone Owusu",
+   "Rui Mendes",
+   "Patrick Brouwer",
+   "Soufiane Hetli",
+   "Jelani Seedorf"
+  ],
+  "home_bench": [
+   "Rojendro Oudsten",
+   "Emirhan Demircan",
+   "Prince Aning",
+   "Noach Shenkman",
+   "Daan Reiziger",
+   "Finn Mulder",
+   "Nigel Ogidi Nwankwo",
+   "Harrie Kuster",
+   "Isaiah Ahmed",
+   "Fabiano Rust",
+   "Fofin Turay"
+  ],
+  "away_starting_xi": [
+   "Filip Bednarek",
+   "Lushendry Martes",
+   "Marvin Young",
+   "Nick Verschuren",
+   "Bas Kuipers",
+   "Julian Baas",
+   "Jens Toornstra",
+   "Casper Terho",
+   "Shunsuke Mito",
+   "Ayoni Santos",
+   "Nökkvi Thorisson"
+  ],
+  "away_bench": [
+   "Mitchell van Bergen",
+   "Alwande Roaldsøy",
+   "Robin van Cruijsen",
+   "Teo Quintero",
+   "Milan Zonneveld",
+   "Duncan Lindhout",
+   "Rik Suur",
+   "Boyd Reith",
+   "Bruno Martins Indi",
+   "Giannino Vianello",
+   "Younes El Meftahi",
+   "Joel Ideho"
+  ],
+  "substitution_events": [
+   {
+    "team": "Telstar",
+    "in": "Rojendro Oudsten",
+    "out": "Gabi Caschili",
+    "minute": "57"
+   },
+   {
+    "team": "Telstar",
+    "in": "Emirhan Demircan",
+    "out": "Rui Mendes",
+    "minute": "57"
+   },
+   {
+    "team": "Telstar",
+    "in": "Noach Shenkman",
+    "out": "Jelani Seedorf",
+    "minute": "64"
+   },
+   {
+    "team": "Telstar",
+    "in": "Prince Aning",
+    "out": "Jeff Hardeveld",
+    "minute": "64"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Mitchell van Bergen",
+    "out": "Casper Terho",
+    "minute": "62"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Alwande Roaldsøy",
+    "out": "Shunsuke Mito",
+    "minute": "76"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Robin van Cruijsen",
+    "out": "Jens Toornstra",
+    "minute": "76"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Milan Zonneveld",
+    "out": "Nökkvi Thorisson",
+    "minute": "85"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Teo Quintero",
+    "out": "Julian Baas",
+    "minute": "85"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "Ingmar Oostrom",
+  "attendance": 5320,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

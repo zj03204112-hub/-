@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "eredivisie-2026-27-2026-10-18-cambuur-azalkmaar",
+ "date": "2026-10-18",
+ "home": "Cambuur",
+ "away": "AZ Alkmaar",
+ "score": "2-2",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781771",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781771"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Thijs Jansen",
+   "Devid Eugene Bouah",
+   "Ismaël Baouf",
+   "Billy van Duijl",
+   "Morgan Costarelli",
+   "Mathieu Maertens",
+   "Nicky Souren",
+   "Jason Çeka",
+   "Rafik El Arguioui",
+   "Ilyès Hamache",
+   "Nicolas Binder"
+  ],
+  "home_bench": [
+   "Rik Mulders",
+   "Sami Bouhoudane",
+   "Jorn Berkhout",
+   "Wiebe Kooistra",
+   "Iwan Henstra",
+   "Luca Plogmann",
+   "Matthijs Kalisvaart",
+   "Lucas Jetten",
+   "Damian Westerhof",
+   "Ethan Apkakou",
+   "Fabian Kvam",
+   "Skye Vink"
+  ],
+  "away_starting_xi": [
+   "Jari De Busser",
+   "Elijah Dijkstra",
+   "Wouter Goes",
+   "Lewis Schouten",
+   "Mateo Chávez",
+   "Jordy Clasie",
+   "Peer Koopmeiners",
+   "Ayoub Oufkir",
+   "Calvin Stengs",
+   "Ro-Zangelo Daal",
+   "Mexx Meerdink"
+  ],
+  "away_bench": [
+   "Mees de Wit",
+   "Dave Kwakman",
+   "Valdemar Byskov",
+   "Bendegúz Kovács",
+   "Jerolldino Bergraaf",
+   "Rome Owusu-Oduro",
+   "Denso Kasius",
+   "Rion Ichihara",
+   "Seiya Maikuma",
+   "Wesley Hoedt",
+   "Wassim Bouziane",
+   "Weslley Pinto"
+  ],
+  "substitution_events": [
+   {
+    "team": "Cambuur",
+    "in": "Rik Mulders",
+    "out": "Jason Çeka",
+    "minute": "57"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Sami Bouhoudane",
+    "out": "Nicolas Binder",
+    "minute": "74"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Iwan Henstra",
+    "out": "Ilyès Hamache",
+    "minute": "84"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Jorn Berkhout",
+    "out": "Mathieu Maertens",
+    "minute": "84"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Wiebe Kooistra",
+    "out": "Rafik El Arguioui",
+    "minute": "84"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Dave Kwakman",
+    "out": "Wouter Goes",
+    "minute": "64"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Bendegúz Kovács",
+    "out": "Ayoub Oufkir",
+    "minute": "64"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Mees de Wit",
+    "out": "Mateo Chávez",
+    "minute": "64"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Valdemar Byskov",
+    "out": "Jordy Clasie",
+    "minute": "64"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Jerolldino Bergraaf",
+    "out": "Calvin Stengs",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Stan Teuben",
+  "attendance": 14741,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

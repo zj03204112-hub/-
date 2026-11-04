@@ -1,0 +1,137 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "eredivisie-2026-27-2026-09-05-willemii-excelsior",
+ "date": "2026-09-05",
+ "home": "Willem II",
+ "away": "Excelsior",
+ "score": "0-3",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5781739",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781739"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Maxime Delanghe",
+   "Hidde ter Avest",
+   "Finn Stam",
+   "Mats Lemmens",
+   "Nathan Tjoe-A-On",
+   "Kasper Boogaard",
+   "Calvin Twigt",
+   "Eser Gürbüz",
+   "Uriël van Aalst",
+   "Jaden Slory",
+   "Devin Haen"
+  ],
+  "home_bench": [
+   "Maxim Dekker",
+   "Tonny Vilhena",
+   "Thomas Verheijdt",
+   "Chido Obi",
+   "Karst de Leeuw",
+   "Wouter van der Steen",
+   "Alessandro Ciranni",
+   "Amine Et-Taïbi",
+   "Jens Mathijsen",
+   "Per van Loon"
+  ],
+  "away_starting_xi": [
+   "Stijn van Gassel",
+   "Rick Meissen",
+   "Jan Plug",
+   "Casper Widell",
+   "Eric da Silva Moreira",
+   "Simon Janssen",
+   "Aymen Sliti",
+   "Irakli Yegoian",
+   "Lennard Hartjes",
+   "Ágúst Thorsteinsson",
+   "David Garden"
+  ],
+  "away_bench": [
+   "Ilano Silva Timas",
+   "Daniël van Vianen",
+   "Nesto Groen",
+   "Guilliano Cairo",
+   "Tijmen Holla",
+   "Kasey Bos",
+   "Osman Mohamed Turay",
+   "Mario Domínguez",
+   "Valentin Sulzbacher",
+   "Yaqub Finey"
+  ],
+  "substitution_events": [
+   {
+    "team": "Willem II",
+    "in": "Tonny Vilhena",
+    "out": "Eser Gürbüz",
+    "minute": "46"
+   },
+   {
+    "team": "Willem II",
+    "in": "Maxim Dekker",
+    "out": "Mats Lemmens",
+    "minute": "46"
+   },
+   {
+    "team": "Willem II",
+    "in": "Thomas Verheijdt",
+    "out": "Kasper Boogaard",
+    "minute": "63"
+   },
+   {
+    "team": "Willem II",
+    "in": "Chido Obi",
+    "out": "Jaden Slory",
+    "minute": "82"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Ilano Silva Timas",
+    "out": "Aymen Sliti",
+    "minute": "64"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Daniël van Vianen",
+    "out": "Eric da Silva Moreira",
+    "minute": "65"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Nesto Groen",
+    "out": "Ágúst Thorsteinsson",
+    "minute": "71"
+   },
+   {
+    "team": "Excelsior",
+    "in": "Guilliano Cairo",
+    "out": "David Garden",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 3
+  },
+  "provider_score": "0-3",
+  "score_consistent_with_events": true,
+  "referee": "Robin Hensgens",
+  "attendance": 14600,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

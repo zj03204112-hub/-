@@ -1,0 +1,150 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "eredivisie-2026-27-2026-09-12-fortunasittard-ajax",
+ "date": "2026-09-12",
+ "home": "Fortuna Sittard",
+ "away": "Ajax",
+ "score": "1-5",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781747",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781747"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mattijs Branderhorst",
+   "Philip Brittijn",
+   "Rodrigo Guth",
+   "Justin Hubner",
+   "Ivo Pinto",
+   "Jasper Dahlhaus",
+   "Mohammed Ihattaren",
+   "Shiloh Zand",
+   "Édouard Michut",
+   "Lequincio Zeefuik",
+   "Ole Romeny"
+  ],
+  "home_bench": [
+   "Anthony Descotte",
+   "Nick de Groot",
+   "Syb van Ottele",
+   "Moussa Gbemou",
+   "Kevin van Burgsteden",
+   "Kaylen Reitmaier",
+   "Luuk Koopmans",
+   "Gani Buyukhan",
+   "David Stockbrink"
+  ],
+  "away_starting_xi": [
+   "Marc ter Stegen",
+   "Anton Gaaei",
+   "Thilo Kehrer",
+   "Youri Baas",
+   "Caio Henrique",
+   "Jorthy Mokio",
+   "Sofyan Amrabat",
+   "Steven Berghuis",
+   "Julian Brandt",
+   "Oliver Edvardsen",
+   "Tolu Arokodare"
+  ],
+  "away_bench": [
+   "Abdellah Ouazane",
+   "Davy Klaassen",
+   "Viktor Tsigankov",
+   "Oscar Gloukh",
+   "Kasper Dolberg",
+   "Joeri Heerkens",
+   "Maarten Paes",
+   "Dies Janse",
+   "Jofre Torrents",
+   "Lucas Rosa",
+   "Owen Wijndal",
+   "Marcos Leonardo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Fortuna Sittard",
+    "in": "Anthony Descotte",
+    "out": "Lequincio Zeefuik",
+    "minute": "46"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Nick de Groot",
+    "out": "Jasper Dahlhaus",
+    "minute": "76"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Syb van Ottele",
+    "out": "Mohammed Ihattaren",
+    "minute": "76"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Moussa Gbemou",
+    "out": "Édouard Michut",
+    "minute": "86"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Kevin van Burgsteden",
+    "out": "Ole Romeny",
+    "minute": "89"
+   },
+   {
+    "team": "Ajax",
+    "in": "Abdellah Ouazane",
+    "out": "Oliver Edvardsen",
+    "minute": "57"
+   },
+   {
+    "team": "Ajax",
+    "in": "Davy Klaassen",
+    "out": "Jorthy Mokio",
+    "minute": "58"
+   },
+   {
+    "team": "Ajax",
+    "in": "Viktor Tsigankov",
+    "out": "Steven Berghuis",
+    "minute": "68"
+   },
+   {
+    "team": "Ajax",
+    "in": "Kasper Dolberg",
+    "out": "Tolu Arokodare",
+    "minute": "74"
+   },
+   {
+    "team": "Ajax",
+    "in": "Oscar Gloukh",
+    "out": "Julian Brandt",
+    "minute": "74"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 5
+  },
+  "provider_score": "1-5",
+  "score_consistent_with_events": true,
+  "referee": "Jeroen Manschot",
+  "attendance": 12162,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

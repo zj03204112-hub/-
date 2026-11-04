@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "eredivisie-2026-27-2026-09-13-peczwolle-feyenoord",
+ "date": "2026-09-13",
+ "home": "PEC Zwolle",
+ "away": "Feyenoord",
+ "score": "0-7",
+ "halftime_score": "0-3",
+ "official_match_url": "https://www.fotmob.com/matches/5781749",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781749"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jasper Schendelaar",
+   "Olivier Aertssen",
+   "Simon Graves",
+   "Nick Viergever",
+   "Damian van der Haar",
+   "Nick Fichtinger",
+   "Tobias Sommer",
+   "Dylan Mbayo",
+   "Odysseus Velanas",
+   "Ibrahim Cissoko",
+   "Koen Kostons"
+  ],
+  "home_bench": [
+   "Tijs Velthuis",
+   "Elias Sørensen",
+   "Sydney van Hooijdonk",
+   "Thijs Oosting",
+   "Jan Bürger",
+   "Duke Verduin",
+   "Tom de Graaff",
+   "Dylan Ruward",
+   "Gilles van der Wal",
+   "Jadiel Pereira da Gama",
+   "Gabriël Reiziger"
+  ],
+  "away_starting_xi": [
+   "Tjark Ernst",
+   "Givairo Read",
+   "Tsuyoshi Watanabe",
+   "Jeremiah St. Juste",
+   "Mika Mármol",
+   "Gjivai Zechiël",
+   "Charles Vanhoutte",
+   "Anis Hadj Moussa",
+   "Luciano Valente",
+   "Oussama Targhalline",
+   "Nacho Ferri"
+  ],
+  "away_bench": [
+   "Sem Steijn",
+   "Shaqueel van Persie",
+   "Jivayno Zinhagel",
+   "Mats Deijl",
+   "Thijs Kraaijeveld",
+   "Florian Kastenmeier",
+   "Liam Bossin",
+   "Javi López",
+   "Tijme Wessels",
+   "Gaoussou Diarra",
+   "Jerayno Schaken",
+   "Tobias van den Elshout"
+  ],
+  "substitution_events": [
+   {
+    "team": "PEC Zwolle",
+    "in": "Sydney van Hooijdonk",
+    "out": "Odysseus Velanas",
+    "minute": "46"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Tijs Velthuis",
+    "out": "Nick Fichtinger",
+    "minute": "46"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Elias Sørensen",
+    "out": "Ibrahim Cissoko",
+    "minute": "46"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Thijs Oosting",
+    "out": "Koen Kostons",
+    "minute": "70"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Jan Bürger",
+    "out": "Olivier Aertssen",
+    "minute": "79"
+   },
+   {
+    "team": "Feyenoord",
+    "in": "Shaqueel van Persie",
+    "out": "Nacho Ferri",
+    "minute": "64"
+   },
+   {
+    "team": "Feyenoord",
+    "in": "Sem Steijn",
+    "out": "Charles Vanhoutte",
+    "minute": "64"
+   },
+   {
+    "team": "Feyenoord",
+    "in": "Jivayno Zinhagel",
+    "out": "Luciano Valente",
+    "minute": "65"
+   },
+   {
+    "team": "Feyenoord",
+    "in": "Mats Deijl",
+    "out": "Givairo Read",
+    "minute": "75"
+   },
+   {
+    "team": "Feyenoord",
+    "in": "Thijs Kraaijeveld",
+    "out": "Jeremiah St. Juste",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 7
+  },
+  "provider_score": "0-7",
+  "score_consistent_with_events": true,
+  "referee": "Alex Bos",
+  "attendance": 13826,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

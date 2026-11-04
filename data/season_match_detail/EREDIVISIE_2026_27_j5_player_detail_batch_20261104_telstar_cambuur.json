@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "eredivisie-2026-27-2026-09-06-telstar-cambuur",
+ "date": "2026-09-06",
+ "home": "Telstar",
+ "away": "Cambuur",
+ "score": "2-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781734",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781734"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Ronald Koeman",
+   "Sem Valk",
+   "Abdelnor Soualhia",
+   "Marvin Peersman",
+   "Gerald Alders",
+   "Nils Rossen",
+   "Tyrone Owusu",
+   "Jeff Hardeveld",
+   "Rui Mendes",
+   "Patrick Brouwer",
+   "Nökkvi Thorisson"
+  ],
+  "home_bench": [
+   "Jelani Seedorf",
+   "Prince Aning",
+   "Harrie Kuster",
+   "Noach Shenkman",
+   "Rojendro Oudsten",
+   "Daan Reiziger",
+   "Finn Mulder",
+   "Nigel Ogidi Nwankwo",
+   "Isaiah Ahmed",
+   "Arjany Martha",
+   "Emirhan Demircan",
+   "Fofin Turay"
+  ],
+  "away_starting_xi": [
+   "Thijs Jansen",
+   "Devid Eugene Bouah",
+   "Ismaël Baouf",
+   "Billy van Duijl",
+   "Morgan Costarelli",
+   "Jamal Amofa",
+   "Nicky Souren",
+   "Fabian Kvam",
+   "Rafik El Arguioui",
+   "Ilyès Hamache",
+   "Nicolas Binder"
+  ],
+  "away_bench": [
+   "Sami Bouhoudane",
+   "Jason Çeka",
+   "Mathieu Maertens",
+   "Lucas Jetten",
+   "Rik Mulders",
+   "Luca Plogmann",
+   "Matthijs Kalisvaart",
+   "Jorn Berkhout",
+   "Wiebe Kooistra",
+   "Ethan Apkakou",
+   "Iwan Henstra",
+   "Skye Vink"
+  ],
+  "substitution_events": [
+   {
+    "team": "Telstar",
+    "in": "Jelani Seedorf",
+    "out": "Rui Mendes",
+    "minute": "60"
+   },
+   {
+    "team": "Telstar",
+    "in": "Harrie Kuster",
+    "out": "Nils Rossen",
+    "minute": "66"
+   },
+   {
+    "team": "Telstar",
+    "in": "Prince Aning",
+    "out": "Jeff Hardeveld",
+    "minute": "66"
+   },
+   {
+    "team": "Telstar",
+    "in": "Noach Shenkman",
+    "out": "Tyrone Owusu",
+    "minute": "87"
+   },
+   {
+    "team": "Telstar",
+    "in": "Rojendro Oudsten",
+    "out": "Gerald Alders",
+    "minute": "87"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Sami Bouhoudane",
+    "out": "Ismaël Baouf",
+    "minute": "42"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Mathieu Maertens",
+    "out": "Nicolas Binder",
+    "minute": "68"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Jason Çeka",
+    "out": "Fabian Kvam",
+    "minute": "68"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Rik Mulders",
+    "out": "Morgan Costarelli",
+    "minute": "72"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Lucas Jetten",
+    "out": "Devid Eugene Bouah",
+    "minute": "72"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Joey Kooij",
+  "attendance": 5002,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,138 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "eredivisie-2026-27-2026-09-06-adodenhaag-fortunasittard",
+ "date": "2026-09-06",
+ "home": "ADO Den Haag",
+ "away": "Fortuna Sittard",
+ "score": "2-3",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5781740",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781740"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kilian Nikièma",
+   "Othniël Raterink",
+   "Pascal Mulder",
+   "Milan Hokke",
+   "Sékou Sylla",
+   "Juho Kilo",
+   "Mylian Jiménez",
+   "Daryl van Mieghem",
+   "Evan Rottier",
+   "Nigel Thomas",
+   "Yannick Eduardo"
+  ],
+  "home_bench": [
+   "Jonas Jensen-Abbew",
+   "Jalen Hawkings",
+   "Jesse Bal",
+   "Luka Reischl",
+   "Illaijh de Ruijter",
+   "Caleb Kramer",
+   "Niclas Thiede",
+   "Lasse Wilhelm",
+   "Matteo Waem",
+   "Sanyika Bergtop",
+   "Finn de Bruin",
+   "Jan Žambůrek"
+  ],
+  "away_starting_xi": [
+   "Mattijs Branderhorst",
+   "Philip Brittijn",
+   "Rodrigo Guth",
+   "Justin Hubner",
+   "Ivo Pinto",
+   "Jasper Dahlhaus",
+   "Mohammed Ihattaren",
+   "Édouard Michut",
+   "Shiloh Zand",
+   "Anthony Descotte",
+   "Lequincio Zeefuik"
+  ],
+  "away_bench": [
+   "Syb van Ottele",
+   "Yassin Oukili",
+   "Nick de Groot",
+   "Kaylen Reitmaier",
+   "Luuk Koopmans",
+   "Kevin van Burgsteden",
+   "Gani Buyukhan",
+   "Moussa Gbemou",
+   "David Stockbrink"
+  ],
+  "substitution_events": [
+   {
+    "team": "ADO Den Haag",
+    "in": "Jalen Hawkings",
+    "out": "Daryl van Mieghem",
+    "minute": "46"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Jonas Jensen-Abbew",
+    "out": "Sékou Sylla",
+    "minute": "46"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Jesse Bal",
+    "out": "Mylian Jiménez",
+    "minute": "53"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Luka Reischl",
+    "out": "Yannick Eduardo",
+    "minute": "64"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Illaijh de Ruijter",
+    "out": "Nigel Thomas",
+    "minute": "72"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Syb van Ottele",
+    "out": "Anthony Descotte",
+    "minute": "64"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Yassin Oukili",
+    "out": "Mohammed Ihattaren",
+    "minute": "74"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Nick de Groot",
+    "out": "Yassin Oukili",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "Ingmar Oostrom",
+  "attendance": 13596,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

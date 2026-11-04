@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "eredivisie-2026-27-2026-08-16-fctwente-peczwolle",
+ "date": "2026-08-16",
+ "home": "FC Twente",
+ "away": "PEC Zwolle",
+ "score": "3-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781705",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781705"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Lars Unnerstall",
+   "Bart van Rooij",
+   "Robin Pröpper",
+   "Ruud Nijstad",
+   "Aske Adelgaard",
+   "Ramiz Zerrouki",
+   "Daouda Weidmann",
+   "Marko Pjaca",
+   "Daan Rots",
+   "Sondre Ørjasæter",
+   "Wout Weghorst"
+  ],
+  "home_bench": [
+   "Guilherme Peixoto",
+   "Kristian Hlynsson",
+   "Thomas van den Belt",
+   "Filip Thorvaldsen",
+   "Sam Lammers",
+   "Joël Drommel",
+   "Remko Pasveer",
+   "Krzysztof Kurowski",
+   "Mathias Kjølø",
+   "Younes Taha",
+   "Lucas Vennegoor of Hesselink",
+   "Naci Ünüvar"
+  ],
+  "away_starting_xi": [
+   "Jasper Schendelaar",
+   "Olivier Aertssen",
+   "Simon Graves",
+   "Nick Viergever",
+   "Damian van der Haar",
+   "Tobias Sommer",
+   "Ryan Thomas",
+   "Dylan Mbayo",
+   "Thijs Oosting",
+   "Elias Sørensen",
+   "Koen Kostons"
+  ],
+  "away_bench": [
+   "Gabriel Reiziger",
+   "Ibrahim Cissoko",
+   "Odysseus Velanas",
+   "Nick Fichtinger",
+   "Tijs Velthuis",
+   "Duke Verduin",
+   "Tom de Graaff",
+   "Dylan Ruward",
+   "Jan Bürger",
+   "Gilles van der Wal",
+   "Givaro Rahajaän",
+   "Jadiel Pereira da Gama"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Twente",
+    "in": "Kristian Hlynsson",
+    "out": "Marko Pjaca",
+    "minute": "69"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Guilherme Peixoto",
+    "out": "Bart van Rooij",
+    "minute": "69"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Filip Thorvaldsen",
+    "out": "Sondre Ørjasæter",
+    "minute": "80"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Thomas van den Belt",
+    "out": "Daouda Weidmann",
+    "minute": "80"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Sam Lammers",
+    "out": "Wout Weghorst",
+    "minute": "82"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Gabriel Reiziger",
+    "out": "Thijs Oosting",
+    "minute": "65"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Ibrahim Cissoko",
+    "out": "Dylan Mbayo",
+    "minute": "66"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Odysseus Velanas",
+    "out": "Elias Sørensen",
+    "minute": "66"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Nick Fichtinger",
+    "out": "Ryan Thomas",
+    "minute": "78"
+   },
+   {
+    "team": "PEC Zwolle",
+    "in": "Tijs Velthuis",
+    "out": "Damian van der Haar",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 1
+  },
+  "provider_score": "3-1",
+  "score_consistent_with_events": true,
+  "referee": "Allard Lindhout",
+  "attendance": 29500,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

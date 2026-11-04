@@ -1,0 +1,140 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "10",
+ "match_id": "eredivisie-2026-27-2026-10-25-necnijmegen-fcgroningen",
+ "date": "2026-10-25",
+ "home": "NEC Nijmegen",
+ "away": "FC Groningen",
+ "score": "2-2",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5781777",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781777"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Gonzalo Crettaz",
+   "Ahmetcan Kaplan",
+   "Perr Schuurs",
+   "Deveron Fonville",
+   "Kevin Kers",
+   "Darko Nejašmić",
+   "Jamiro Monteiro",
+   "Clement Bischoff",
+   "Tjaronn Chery",
+   "Noé Lebreton",
+   "Bryan Linssen"
+  ],
+  "home_bench": [
+   "Tobias Storm",
+   "Kaj Sierhuis",
+   "Mitchel Bakker",
+   "Adam Tahaui",
+   "Freek Entius",
+   "Nikolas Polster",
+   "Gabriel Brás",
+   "Almugera Kabar",
+   "Dennis Geiger",
+   "Isak Hansen-Aarøen",
+   "Willum Willumsson"
+  ],
+  "away_starting_xi": [
+   "Etienne Vaessen",
+   "Hans Hateboer",
+   "Thijmen Blokzijl",
+   "Márk Csinger",
+   "Marco Rente",
+   "Tika de Jonge",
+   "Pelle Clement",
+   "Jorg Schreuders",
+   "Thom van Bergen",
+   "David van der Werff",
+   "Brynjólfur Willumsson"
+  ],
+  "away_bench": [
+   "Wouter Prins",
+   "Nils Eggens",
+   "Tygo Land",
+   "Travis Hernes",
+   "Lovro Štubljar",
+   "Pelle Boevink",
+   "Jesper Mosselaar",
+   "Nikolas Brandis",
+   "Alvin Nordin",
+   "Jismerai Dillema",
+   "Jacob Ondrejka",
+   "Oskar Zawada"
+  ],
+  "substitution_events": [
+   {
+    "team": "NEC Nijmegen",
+    "in": "Tobias Storm",
+    "out": "Perr Schuurs",
+    "minute": "46"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Kaj Sierhuis",
+    "out": "Ahmetcan Kaplan",
+    "minute": "56"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Mitchel Bakker",
+    "out": "Deveron Fonville",
+    "minute": "56"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Adam Tahaui",
+    "out": "Kevin Kers",
+    "minute": "68"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Wouter Prins",
+    "out": "Márk Csinger",
+    "minute": "72"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Nils Eggens",
+    "out": "Brynjólfur Willumsson",
+    "minute": "72"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Tygo Land",
+    "out": "Tika de Jonge",
+    "minute": "73"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Travis Hernes",
+    "out": "David van der Werff",
+    "minute": "76"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Martin van den Kerkhof",
+  "attendance": 12650,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

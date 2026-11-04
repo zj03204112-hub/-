@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "7",
+ "match_id": "eredivisie-2026-27-2026-09-19-adodenhaag-cambuur",
+ "date": "2026-09-19",
+ "home": "ADO Den Haag",
+ "away": "Cambuur",
+ "score": "1-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781755",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781755"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kilian Nikièma",
+   "Jonas Jensen-Abbew",
+   "Pascal Mulder",
+   "Matteo Waem",
+   "Milan Hokke",
+   "Jalen Hawkings",
+   "Juho Kilo",
+   "Matěj Sín",
+   "Nigel Thomas",
+   "Yannick Eduardo",
+   "Evan Rottier"
+  ],
+  "home_bench": [
+   "Daryl van Mieghem",
+   "Othniël Raterink",
+   "Donat Barany",
+   "Jesse Bal",
+   "Sékou Sylla",
+   "Niclas Thiede",
+   "Sem Eekhout",
+   "Lasse Wilhelm",
+   "Finn de Bruin",
+   "Jan Žambůrek",
+   "Illaijh de Ruijter"
+  ],
+  "away_starting_xi": [
+   "Thijs Jansen",
+   "Devid Eugene Bouah",
+   "Ismaël Baouf",
+   "Billy van Duijl",
+   "Morgan Costarelli",
+   "Mathieu Maertens",
+   "Nicky Souren",
+   "Fabian Kvam",
+   "Rafik El Arguioui",
+   "Ilyès Hamache",
+   "Sami Bouhoudane"
+  ],
+  "away_bench": [
+   "Wiebe Kooistra",
+   "Jamal Amofa",
+   "Iwan Henstra",
+   "Skye Vink",
+   "Ethan Apkakou",
+   "Jasper Meijster",
+   "Luca Plogmann",
+   "Lucas Jetten",
+   "Rik Mulders",
+   "Damian Westerhof",
+   "Jorn Berkhout",
+   "Jason Çeka"
+  ],
+  "substitution_events": [
+   {
+    "team": "ADO Den Haag",
+    "in": "Daryl van Mieghem",
+    "out": "Nigel Thomas",
+    "minute": "28"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Othniël Raterink",
+    "out": "Jonas Jensen-Abbew",
+    "minute": "69"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Donat Barany",
+    "out": "Matěj Sín",
+    "minute": "69"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Jesse Bal",
+    "out": "Jalen Hawkings",
+    "minute": "69"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Sékou Sylla",
+    "out": "Milan Hokke",
+    "minute": "81"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Wiebe Kooistra",
+    "out": "Sami Bouhoudane",
+    "minute": "58"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Iwan Henstra",
+    "out": "Ilyès Hamache",
+    "minute": "73"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Skye Vink",
+    "out": "Fabian Kvam",
+    "minute": "73"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Jamal Amofa",
+    "out": "Mathieu Maertens",
+    "minute": "73"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Ethan Apkakou",
+    "out": "Devid Eugene Bouah",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Allard Lindhout",
+  "attendance": 13764,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

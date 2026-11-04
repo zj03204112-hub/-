@@ -1,0 +1,145 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "11",
+ "match_id": "eredivisie-2026-27-2026-10-31-scheerenveen-necnijmegen",
+ "date": "2026-10-31",
+ "home": "SC Heerenveen",
+ "away": "NEC Nijmegen",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781791",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781791"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bernt Klaverboer",
+   "Oliver Braude",
+   "Sam Kersten",
+   "Maas Willemsen",
+   "Vasilios Zagaritis",
+   "Marcus Linday",
+   "Nolhan Courtens",
+   "Jacob Trenskow",
+   "Levi Smans",
+   "Maxence Rivera",
+   "Dylan Vente"
+  ],
+  "home_bench": [
+   "Ringo Meerveld",
+   "Dirk Proper",
+   "Luca Oyen",
+   "Marko Lawk Farji",
+   "Andries Noppert",
+   "Timo Schreuder",
+   "Hristiyan Petrov",
+   "Mats Egbring",
+   "Mees Hilgers",
+   "Darling Bladi",
+   "Lanroy Machine",
+   "Roberts Uldriķis"
+  ],
+  "away_starting_xi": [
+   "Gonzalo Crettaz",
+   "Tobias Storm",
+   "Perr Schuurs",
+   "Ahmetcan Kaplan",
+   "Darko Nejašmić",
+   "Kevin Kers",
+   "Noé Lebreton",
+   "Jamiro Monteiro",
+   "Clement Bischoff",
+   "Tjaronn Chery",
+   "Bryan Linssen"
+  ],
+  "away_bench": [
+   "Ayodele Thomas",
+   "Kaj Sierhuis",
+   "Gabriel Brás",
+   "Adam Tahaui",
+   "Willum Willumsson",
+   "Freek Entius",
+   "Nikolas Polster",
+   "Yassin Moslih",
+   "Almugera Kabar",
+   "Isak Hansen-Aarøen"
+  ],
+  "substitution_events": [
+   {
+    "team": "SC Heerenveen",
+    "in": "Ringo Meerveld",
+    "out": "Maxence Rivera",
+    "minute": "62"
+   },
+   {
+    "team": "SC Heerenveen",
+    "in": "Dirk Proper",
+    "out": "Nolhan Courtens",
+    "minute": "78"
+   },
+   {
+    "team": "SC Heerenveen",
+    "in": "Luca Oyen",
+    "out": "Levi Smans",
+    "minute": "78"
+   },
+   {
+    "team": "SC Heerenveen",
+    "in": "Marko Lawk Farji",
+    "out": "Jacob Trenskow",
+    "minute": "90"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Ayodele Thomas",
+    "out": "Clement Bischoff",
+    "minute": "73"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Kaj Sierhuis",
+    "out": "Perr Schuurs",
+    "minute": "73"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Gabriel Brás",
+    "out": "Tobias Storm",
+    "minute": "79"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Adam Tahaui",
+    "out": "Kevin Kers",
+    "minute": "85"
+   },
+   {
+    "team": "NEC Nijmegen",
+    "in": "Willum Willumsson",
+    "out": "Jamiro Monteiro",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Sander van der Eijk",
+  "attendance": 24288,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

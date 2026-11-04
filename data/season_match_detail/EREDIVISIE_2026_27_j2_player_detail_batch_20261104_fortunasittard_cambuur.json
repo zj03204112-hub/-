@@ -1,0 +1,150 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "2",
+ "match_id": "eredivisie-2026-27-2026-08-15-fortunasittard-cambuur",
+ "date": "2026-08-15",
+ "home": "Fortuna Sittard",
+ "away": "Cambuur",
+ "score": "3-1",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781713",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781713"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mattijs Branderhorst",
+   "Ivo Pinto",
+   "Syb van Ottele",
+   "Justin Hubner",
+   "Siebe Wylin",
+   "Philip Brittijn",
+   "Yassin Oukili",
+   "Jasper Dahlhaus",
+   "Mohammed Ihattaren",
+   "Ole Romeny",
+   "Lequincio Zeefuik"
+  ],
+  "home_bench": [
+   "Édouard Michut",
+   "Nick de Groot",
+   "Shiloh Zand",
+   "Anthony Descotte",
+   "Moussa Gbemou",
+   "Kaylen Reitmaier",
+   "Luuk Koopmans",
+   "Kevin van Burgsteden",
+   "Gani Buyukhan"
+  ],
+  "away_starting_xi": [
+   "Thijs Jansen",
+   "Morgan Costarelli",
+   "Ismaël Baouf",
+   "Jamal Amofa",
+   "Lucas Jetten",
+   "Rafik El Arguioui",
+   "Sami Bouhoudane",
+   "Nicky Souren",
+   "Iwan Henstra",
+   "Skye Vink",
+   "Ilyès Hamache"
+  ],
+  "away_bench": [
+   "Wiebe Kooistra",
+   "Fabian Kvam",
+   "Nicolas Binder",
+   "Wessel van der Goot",
+   "Rik Mulders",
+   "Jasper Meijster",
+   "Matthijs Kalisvaart",
+   "Buddy Vogelzang",
+   "Jorn Berkhout",
+   "Ethan Apkakou",
+   "Ryan van de Pavert",
+   "Wiebe van der Heide"
+  ],
+  "substitution_events": [
+   {
+    "team": "Fortuna Sittard",
+    "in": "Édouard Michut",
+    "out": "Siebe Wylin",
+    "minute": "46"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Nick de Groot",
+    "out": "Jasper Dahlhaus",
+    "minute": "72"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Shiloh Zand",
+    "out": "Mohammed Ihattaren",
+    "minute": "72"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Anthony Descotte",
+    "out": "Ole Romeny",
+    "minute": "72"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Moussa Gbemou",
+    "out": "Lequincio Zeefuik",
+    "minute": "90"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Wiebe Kooistra",
+    "out": "Morgan Costarelli",
+    "minute": "46"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Fabian Kvam",
+    "out": "Iwan Henstra",
+    "minute": "76"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Nicolas Binder",
+    "out": "Skye Vink",
+    "minute": "76"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Wessel van der Goot",
+    "out": "Jamal Amofa",
+    "minute": "82"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Rik Mulders",
+    "out": "Ilyès Hamache",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 1
+  },
+  "provider_score": "3-1",
+  "score_consistent_with_events": true,
+  "referee": "Martin van den Kerkhof",
+  "attendance": 9547,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

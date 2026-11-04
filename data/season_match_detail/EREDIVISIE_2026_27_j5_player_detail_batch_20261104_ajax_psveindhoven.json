@@ -1,0 +1,163 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "5",
+ "match_id": "eredivisie-2026-27-2026-09-05-ajax-psveindhoven",
+ "date": "2026-09-05",
+ "home": "Ajax",
+ "away": "PSV Eindhoven",
+ "score": "1-3",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5781735",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781735"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Marc ter Stegen",
+   "Anton Gaaei",
+   "Aaron Bouwman",
+   "Youri Baas",
+   "Caio Henrique",
+   "Davy Klaassen",
+   "Jorthy Mokio",
+   "Julian Brandt",
+   "Steven Berghuis",
+   "Tolu Arokodare",
+   "Oscar Gloukh"
+  ],
+  "home_bench": [
+   "Sofyan Amrabat",
+   "Marcos Leonardo",
+   "Kasper Dolberg",
+   "Viktor Tsigankov",
+   "Abdellah Ouazane",
+   "Thilo Kehrer",
+   "Maarten Paes",
+   "Dies Janse",
+   "Jofre Torrents",
+   "Lucas Rosa",
+   "Owen Wijndal",
+   "Oliver Edvardsen"
+  ],
+  "away_starting_xi": [
+   "Matěj Kovár",
+   "Sergiño Dest",
+   "Lutsharel Geertruida",
+   "Armando Obispo",
+   "Mauro Júnior",
+   "Kodai Sano",
+   "Noah Fernandez",
+   "Ivan Perišić",
+   "Guus Til",
+   "Ruben van Bommel",
+   "Ricardo Pepi"
+  ],
+  "away_bench": [
+   "Paul Wanner",
+   "Sven Mijnans",
+   "Esmir Bajraktarević",
+   "Filip Kostić",
+   "Ryan Flamingo",
+   "Yarek Gąsiorowski",
+   "Khadim Ngom",
+   "Nick Olij",
+   "Ayoni Santos",
+   "Amir Bouhamdi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Ajax",
+    "in": "Sofyan Amrabat",
+    "out": "Davy Klaassen",
+    "minute": "54"
+   },
+   {
+    "team": "Ajax",
+    "in": "Marcos Leonardo",
+    "out": "Oscar Gloukh",
+    "minute": "54"
+   },
+   {
+    "team": "Ajax",
+    "in": "Kasper Dolberg",
+    "out": "Tolu Arokodare",
+    "minute": "61"
+   },
+   {
+    "team": "Ajax",
+    "in": "Viktor Tsigankov",
+    "out": "Steven Berghuis",
+    "minute": "61"
+   },
+   {
+    "team": "Ajax",
+    "in": "Abdellah Ouazane",
+    "out": "Jorthy Mokio",
+    "minute": "73"
+   },
+   {
+    "team": "Ajax",
+    "in": "Thilo Kehrer",
+    "out": "Aaron Bouwman",
+    "minute": "84"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Paul Wanner",
+    "out": "Noah Fernandez",
+    "minute": "46"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Esmir Bajraktarević",
+    "out": "Ricardo Pepi",
+    "minute": "63"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Sven Mijnans",
+    "out": "Ivan Perišić",
+    "minute": "63"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Filip Kostić",
+    "out": "Mauro Júnior",
+    "minute": "73"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Ryan Flamingo",
+    "out": "Lutsharel Geertruida",
+    "minute": "73"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Yarek Gąsiorowski",
+    "out": "Armando Obispo",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "Sander van der Eijk",
+  "attendance": 53332,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

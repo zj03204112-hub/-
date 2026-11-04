@@ -1,0 +1,148 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "eredivisie-2026-27-2026-08-30-fcutrecht-psveindhoven",
+ "date": "2026-08-30",
+ "home": "FC Utrecht",
+ "away": "PSV Eindhoven",
+ "score": "1-6",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5781726",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781726"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Vasilios Barkas",
+   "Siebe Horemans",
+   "Guus Offerhaus",
+   "Neville Ogidi Nwankwo",
+   "Niklas Vesterlund",
+   "Dani de Wit",
+   "Davy van den Berg",
+   "Arthur Zagré",
+   "Ángel Alarcon",
+   "Artem Stepanov",
+   "Yoann Cathline"
+  ],
+  "home_bench": [
+   "Per Kloosterboer",
+   "Zidane Iqbal",
+   "Adrian Blake",
+   "Emmanuel Chigozie Owen",
+   "Sem van Duijn",
+   "Kevin Gadellaa",
+   "Michael Brouwer",
+   "Ferdinand Pohl",
+   "Jamie Schuldes",
+   "Viggo Plantinga"
+  ],
+  "away_starting_xi": [
+   "Matej Kovár",
+   "Sergiño Dest",
+   "Ryan Flamingo",
+   "Armando Obispo",
+   "Mauro Júnior",
+   "Noah Fernandez",
+   "Kodai Sano",
+   "Ivan Perisic",
+   "Guus Til",
+   "Ruben van Bommel",
+   "Ricardo Pepi"
+  ],
+  "away_bench": [
+   "Paul Wanner",
+   "Esmir Bajraktarevic",
+   "Sven Mijnans",
+   "Amir Bouhamdi",
+   "Yarek Gasiorowski",
+   "Khadim Ngom",
+   "Nick Olij",
+   "Lutsharel Geertruida",
+   "Filip Kostic"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Utrecht",
+    "in": "Per Kloosterboer",
+    "out": "Niklas Vesterlund",
+    "minute": "56"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Adrian Blake",
+    "out": "Ángel Alarcon",
+    "minute": "61"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Zidane Iqbal",
+    "out": "Davy van den Berg",
+    "minute": "61"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Sem van Duijn",
+    "out": "Yoann Cathline",
+    "minute": "84"
+   },
+   {
+    "team": "FC Utrecht",
+    "in": "Emmanuel Chigozie Owen",
+    "out": "Arthur Zagré",
+    "minute": "84"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Paul Wanner",
+    "out": "Noah Fernandez",
+    "minute": "65"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Esmir Bajraktarevic",
+    "out": "Ivan Perisic",
+    "minute": "65"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Amir Bouhamdi",
+    "out": "Ruben van Bommel",
+    "minute": "78"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Sven Mijnans",
+    "out": "Ricardo Pepi",
+    "minute": "78"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Yarek Gasiorowski",
+    "out": "Armando Obispo",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 6
+  },
+  "provider_score": "1-6",
+  "score_consistent_with_events": true,
+  "referee": "Jeroen Manschot",
+  "attendance": 22948,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,144 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "6",
+ "match_id": "eredivisie-2026-27-2026-09-11-azalkmaar-willemii",
+ "date": "2026-09-11",
+ "home": "AZ Alkmaar",
+ "away": "Willem II",
+ "score": "1-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781742",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781742"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jari De Busser",
+   "Elijah Dijkstra",
+   "Wouter Goes",
+   "Lewis Schouten",
+   "Mateo Chávez",
+   "Jordy Clasie",
+   "Peer Koopmeiners",
+   "Calvin Stengs",
+   "Dave Kwakman",
+   "Ro-Zangelo Daal",
+   "Mexx Meerdink"
+  ],
+  "home_bench": [
+   "Valdemar Byskov",
+   "Weslley Pinto",
+   "Jizz Hornkamp",
+   "Ayoub Oufkir",
+   "Bendegúz Kovács",
+   "Hobie Verhulst",
+   "Rome Owusu-Oduro",
+   "Mees de Wit",
+   "Rion Ichihara",
+   "Seiya Maikuma",
+   "Wesley Hoedt"
+  ],
+  "away_starting_xi": [
+   "Maxime Delanghe",
+   "Hidde ter Avest",
+   "Finn Stam",
+   "Maxim Dekker",
+   "Nathan Tjoe-A-On",
+   "Tonny Vilhena",
+   "Calvin Twigt",
+   "Per van Loon",
+   "Uriël van Aalst",
+   "Jaden Slory",
+   "Devin Haen"
+  ],
+  "away_bench": [
+   "Alessandro Ciranni",
+   "Kasper Boogaard",
+   "Thomas Verheijdt",
+   "Mats Lemmens",
+   "Karst de Leeuw",
+   "Wouter van der Steen",
+   "Amine Et-Taïbi",
+   "Jens Mathijsen",
+   "Chido Obi",
+   "Eser Gürbüz"
+  ],
+  "substitution_events": [
+   {
+    "team": "AZ Alkmaar",
+    "in": "Weslley Pinto",
+    "out": "Calvin Stengs",
+    "minute": "64"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Valdemar Byskov",
+    "out": "Jordy Clasie",
+    "minute": "64"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Jizz Hornkamp",
+    "out": "Mexx Meerdink",
+    "minute": "78"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Bendegúz Kovács",
+    "out": "Dave Kwakman",
+    "minute": "88"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Ayoub Oufkir",
+    "out": "Ro-Zangelo Daal",
+    "minute": "88"
+   },
+   {
+    "team": "Willem II",
+    "in": "Kasper Boogaard",
+    "out": "Tonny Vilhena",
+    "minute": "70"
+   },
+   {
+    "team": "Willem II",
+    "in": "Alessandro Ciranni",
+    "out": "Per van Loon",
+    "minute": "70"
+   },
+   {
+    "team": "Willem II",
+    "in": "Thomas Verheijdt",
+    "out": "Jaden Slory",
+    "minute": "88"
+   },
+   {
+    "team": "Willem II",
+    "in": "Mats Lemmens",
+    "out": "Maxim Dekker",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Martin van den Kerkhof",
+  "attendance": 18540,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

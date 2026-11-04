@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "11",
+ "match_id": "eredivisie-2026-27-2026-11-01-fcgroningen-spartarotterdam",
+ "date": "2026-11-01",
+ "home": "FC Groningen",
+ "away": "Sparta Rotterdam",
+ "score": "2-3",
+ "halftime_score": "2-2",
+ "official_match_url": "https://www.fotmob.com/matches/5781789",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781789"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Etienne Vaessen",
+   "Hans Hateboer",
+   "Thijmen Blokzijl",
+   "Marco Rente",
+   "Márk Csinger",
+   "Pelle Clement",
+   "Tika de Jonge",
+   "Jorg Schreuders",
+   "Thom van Bergen",
+   "Jacob Ondrejka",
+   "Brynjólfur Willumsson"
+  ],
+  "home_bench": [
+   "Tygo Land",
+   "Wouter Prins",
+   "Jismerai Dillema",
+   "Nils Eggens",
+   "Oskar Zawada",
+   "Lovro Štubljar",
+   "Pelle Boevink",
+   "Jesper Mosselaar",
+   "Nikolas Brandis",
+   "Tyrique Mercera",
+   "Alvin Nordin",
+   "Jahelille Hall"
+  ],
+  "away_starting_xi": [
+   "Michael Brouwer",
+   "Marvin Young",
+   "Nick Verschuren",
+   "Bruno Martins Indi",
+   "Lushendry Martes",
+   "Bas Kuipers",
+   "Mitchell van Bergen",
+   "Cedric Hatenboer",
+   "Jens Toornstra",
+   "Isaac Babadi",
+   "Milan Zonneveld"
+  ],
+  "away_bench": [
+   "Teo Quintero",
+   "Robin van Cruijsen",
+   "Andrej Kostić",
+   "Shunsuke Mito",
+   "Giannino Vianello",
+   "Filip Bednarek",
+   "Pascal Kuiper",
+   "Boyd Reith",
+   "Alwande Roaldsøy",
+   "Julian Baas",
+   "Casper Terho",
+   "Joel Ideho"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Groningen",
+    "in": "Tygo Land",
+    "out": "Thom van Bergen",
+    "minute": "76"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Jismerai Dillema",
+    "out": "Brynjólfur Willumsson",
+    "minute": "83"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Nils Eggens",
+    "out": "Jacob Ondrejka",
+    "minute": "83"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Wouter Prins",
+    "out": "Jorg Schreuders",
+    "minute": "83"
+   },
+   {
+    "team": "FC Groningen",
+    "in": "Oskar Zawada",
+    "out": "Marco Rente",
+    "minute": "87"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Teo Quintero",
+    "out": "Nick Verschuren",
+    "minute": "46"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Robin van Cruijsen",
+    "out": "Jens Toornstra",
+    "minute": "54"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Shunsuke Mito",
+    "out": "Isaac Babadi",
+    "minute": "71"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Andrej Kostić",
+    "out": "Milan Zonneveld",
+    "minute": "71"
+   },
+   {
+    "team": "Sparta Rotterdam",
+    "in": "Giannino Vianello",
+    "out": "Mitchell van Bergen",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "Martijn Vos",
+  "attendance": 22525,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

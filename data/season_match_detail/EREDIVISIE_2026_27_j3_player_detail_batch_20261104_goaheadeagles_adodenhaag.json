@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "eredivisie-2026-27-2026-08-23-goaheadeagles-adodenhaag",
+ "date": "2026-08-23",
+ "home": "Go Ahead Eagles",
+ "away": "ADO Den Haag",
+ "score": "3-1",
+ "halftime_score": "1-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781717",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781717"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kjetil Haug",
+   "Alfons Sampsted",
+   "Julius Dirksen",
+   "Joris Kramer",
+   "Dean James",
+   "Evert Linthorst",
+   "Melle Meulensteen",
+   "Søren Tengstedt",
+   "Victor Edvardsen",
+   "Mathis Suray",
+   "Erik Flataker"
+  ],
+  "home_bench": [
+   "Oskar Siira Sivertsen",
+   "Giovanni van Zwam",
+   "Yassir Salah Rahmouni",
+   "Stefán Sigurdarson",
+   "Thibo Baeten",
+   "Nando Verdoni",
+   "Nick Marsman",
+   "Eus Waayers",
+   "Dani Tijman",
+   "Ofosu Boakye",
+   "Richonell Margaret"
+  ],
+  "away_starting_xi": [
+   "Kilian Nikièma",
+   "Othniël Raterink",
+   "Pascal Mulder",
+   "Milan Hokke",
+   "Sékou Sylla",
+   "Daryl van Mieghem",
+   "Jan Zamburek",
+   "Juho Kilo",
+   "Nigel Thomas",
+   "Evan Rottier",
+   "Yannick Eduardo"
+  ],
+  "away_bench": [
+   "Finn de Bruin",
+   "Illaijh de Ruijter",
+   "Matteo Waem",
+   "Jesse Bal",
+   "Jalen Hawkings",
+   "Caleb Kramer",
+   "Niclas Thiede",
+   "Lasse Wilhelm",
+   "Mylian Jiménez",
+   "Dani van Leonen",
+   "Luka Reischl",
+   "Sanyika Bergtop"
+  ],
+  "substitution_events": [
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Oskar Siira Sivertsen",
+    "out": "Erik Flataker",
+    "minute": "67"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Yassir Salah Rahmouni",
+    "out": "Melle Meulensteen",
+    "minute": "76"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Stefán Sigurdarson",
+    "out": "Victor Edvardsen",
+    "minute": "76"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Giovanni van Zwam",
+    "out": "Julius Dirksen",
+    "minute": "76"
+   },
+   {
+    "team": "Go Ahead Eagles",
+    "in": "Thibo Baeten",
+    "out": "Søren Tengstedt",
+    "minute": "89"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Finn de Bruin",
+    "out": "Jan Zamburek",
+    "minute": "61"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Illaijh de Ruijter",
+    "out": "Daryl van Mieghem",
+    "minute": "61"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Jesse Bal",
+    "out": "Yannick Eduardo",
+    "minute": "66"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Matteo Waem",
+    "out": "Sékou Sylla",
+    "minute": "66"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Jalen Hawkings",
+    "out": "Nigel Thomas",
+    "minute": "71"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 1
+  },
+  "provider_score": "3-1",
+  "score_consistent_with_events": true,
+  "referee": "Sander van der Eijk",
+  "attendance": 9524,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

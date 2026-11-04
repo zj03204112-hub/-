@@ -1,0 +1,145 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "eredivisie-2026-27-2026-10-17-adodenhaag-psveindhoven",
+ "date": "2026-10-17",
+ "home": "ADO Den Haag",
+ "away": "PSV Eindhoven",
+ "score": "2-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5781776",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781776"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kilian Nikièma",
+   "Lasse Wilhelm",
+   "Pascal Mulder",
+   "Matteo Waem",
+   "Jonas Jensen-Abbew",
+   "Sékou Sylla",
+   "Jan Žambůrek",
+   "Juho Kilo",
+   "Evan Rottier",
+   "Yannick Eduardo",
+   "Jesse Bal"
+  ],
+  "home_bench": [
+   "Othniël Raterink",
+   "Jalen Hawkings",
+   "Matěj Sín",
+   "Daryl van Mieghem",
+   "Alex Pozo",
+   "Caleb Kramer",
+   "Niclas Thiede",
+   "Finn de Bruin",
+   "Mylian Jiménez",
+   "Cameron Peupion",
+   "Illaijh de Ruijter",
+   "Nigel Thomas"
+  ],
+  "away_starting_xi": [
+   "Matěj Kovár",
+   "Sergiño Dest",
+   "Lutsharel Geertruida",
+   "Armando Obispo",
+   "Filip Kostić",
+   "Kodai Sano",
+   "Mauro Júnior",
+   "Dennis Man",
+   "Guus Til",
+   "Ayoni Santos",
+   "Sven Mijnans"
+  ],
+  "away_bench": [
+   "Mikkel Bro",
+   "Ryan Flamingo",
+   "Amir Bouhamdi",
+   "Shuryjano Cornecion",
+   "Nick Olij",
+   "Tijn Smolenaars",
+   "Yarek Gąsiorowski",
+   "Noah Fernandez",
+   "Esmir Bajraktarević",
+   "Ivan Perišić"
+  ],
+  "substitution_events": [
+   {
+    "team": "ADO Den Haag",
+    "in": "Matěj Sín",
+    "out": "Jan Žambůrek",
+    "minute": "46"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Othniël Raterink",
+    "out": "Sékou Sylla",
+    "minute": "46"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Jalen Hawkings",
+    "out": "Lasse Wilhelm",
+    "minute": "46"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Daryl van Mieghem",
+    "out": "Jesse Bal",
+    "minute": "66"
+   },
+   {
+    "team": "ADO Den Haag",
+    "in": "Alex Pozo",
+    "out": "Jonas Jensen-Abbew",
+    "minute": "70"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Mikkel Bro",
+    "out": "Guus Til",
+    "minute": "40"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Ryan Flamingo",
+    "out": "Dennis Man",
+    "minute": "46"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Amir Bouhamdi",
+    "out": "Ayoni Santos",
+    "minute": "58"
+   },
+   {
+    "team": "PSV Eindhoven",
+    "in": "Shuryjano Cornecion",
+    "out": "Mauro Júnior",
+    "minute": "69"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Martin van den Kerkhof",
+  "attendance": 14216,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

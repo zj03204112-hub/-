@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "10",
+ "match_id": "eredivisie-2026-27-2026-10-24-willemii-cambuur",
+ "date": "2026-10-24",
+ "home": "Willem II",
+ "away": "Cambuur",
+ "score": "1-6",
+ "halftime_score": "0-3",
+ "official_match_url": "https://www.fotmob.com/matches/5781785",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781785"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Thomas Didillon-Hödl",
+   "Hidde ter Avest",
+   "Finn Stam",
+   "Maxim Dekker",
+   "Nathan Tjoe-A-On",
+   "Calvin Twigt",
+   "Tonny Vilhena",
+   "Jaden Slory",
+   "Uriël van Aalst",
+   "Vito van Crooij",
+   "Devin Haen"
+  ],
+  "home_bench": [
+   "Anass Zarrouk",
+   "Armin Culum",
+   "Thomas Verheijdt",
+   "Mats Lemmens",
+   "Karst de Leeuw",
+   "Maxime Delanghe",
+   "Alessandro Ciranni",
+   "Amine Et-Taïbi",
+   "Jari Schuurman",
+   "Kasper Boogaard",
+   "Chido Obi",
+   "Eser Gürbüz"
+  ],
+  "away_starting_xi": [
+   "Thijs Jansen",
+   "Rik Mulders",
+   "Ismaël Baouf",
+   "Billy van Duijl",
+   "Morgan Costarelli",
+   "Mathieu Maertens",
+   "Nicky Souren",
+   "Jason Çeka",
+   "Rafik El Arguioui",
+   "Ilyès Hamache",
+   "Nicolas Binder"
+  ],
+  "away_bench": [
+   "Jorn Berkhout",
+   "Lucas Jetten",
+   "Iwan Henstra",
+   "Wiebe Kooistra",
+   "Skye Vink",
+   "Luca Plogmann",
+   "Matthijs Kalisvaart",
+   "Buddy Vogelzang",
+   "Ethan Apkakou",
+   "Wiebe van der Heide",
+   "Fabian Kvam",
+   "Sami Bouhoudane"
+  ],
+  "substitution_events": [
+   {
+    "team": "Willem II",
+    "in": "Anass Zarrouk",
+    "out": "Tonny Vilhena",
+    "minute": "46"
+   },
+   {
+    "team": "Willem II",
+    "in": "Thomas Verheijdt",
+    "out": "Maxim Dekker",
+    "minute": "46"
+   },
+   {
+    "team": "Willem II",
+    "in": "Armin Culum",
+    "out": "Vito van Crooij",
+    "minute": "46"
+   },
+   {
+    "team": "Willem II",
+    "in": "Mats Lemmens",
+    "out": "Jaden Slory",
+    "minute": "68"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Iwan Henstra",
+    "out": "Mathieu Maertens",
+    "minute": "65"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Jorn Berkhout",
+    "out": "Billy van Duijl",
+    "minute": "65"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Lucas Jetten",
+    "out": "Morgan Costarelli",
+    "minute": "65"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Wiebe Kooistra",
+    "out": "Rik Mulders",
+    "minute": "72"
+   },
+   {
+    "team": "Cambuur",
+    "in": "Skye Vink",
+    "out": "Nicolas Binder",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 6
+  },
+  "provider_score": "1-6",
+  "score_consistent_with_events": true,
+  "referee": "Dennis Higler",
+  "attendance": 5262,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

@@ -1,0 +1,52 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026/27",
+ "scheduled_fixtures_scanned": 126,
+ "completed_fixtures": 99,
+ "upcoming_fixtures": 27,
+ "fixtures_with_player_detail": 99,
+ "player_rows": 4407,
+ "starting_xi_rows": 2178,
+ "substitution_rows": 912,
+ "event_rows": 677,
+ "events_by_type": {
+  "goal": 350,
+  "yellow_card": 291,
+  "red_card": 5,
+  "own_goal": 10,
+  "penalty_goal": 18,
+  "second_yellow": 3
+ },
+ "shot_rows": 2961,
+ "shot_goals": 378,
+ "event_goals": 378,
+ "match_meta_rows": 99,
+ "meta_missing": {
+  "ManagerHome": 0,
+  "ManagerAway": 0,
+  "Venue": 0,
+  "Referee": 0
+ },
+ "xg_shots_with_value": 2951,
+ "xg_total": 345.59,
+ "score_crosscheck": {
+  "reference": "https://www.football-data.co.uk/mmz4281/2627/N1.csv",
+  "rows": 99,
+  "matched": 99,
+  "mismatches": 0,
+  "result": "all matched scorelines agree"
+ },
+ "sources": {
+  "fixtures_lineups_events_shots": "FotMob public match API",
+  "scores_crosscheck": "football-data.co.uk N1 season export (independent provider)"
+ },
+ "known_gaps": [
+  "Lineups, cards and shots remain single provider (FotMob).",
+  "27 fixtures are scheduled but not yet played."
+ ],
+ "pipeline": [
+  "data_pipeline/collect_eredivisie_fotmob.py",
+  "data_pipeline/crosscheck_eredivisie_scores_football_data.py"
+ ]
+}

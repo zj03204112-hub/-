@@ -1,0 +1,150 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "3",
+ "match_id": "eredivisie-2026-27-2026-08-22-fortunasittard-azalkmaar",
+ "date": "2026-08-22",
+ "home": "Fortuna Sittard",
+ "away": "AZ Alkmaar",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781716",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781716"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Mattijs Branderhorst",
+   "Philip Brittijn",
+   "Syb van Ottele",
+   "Justin Hubner",
+   "Siebe Wylin",
+   "Shiloh Zand",
+   "Édouard Michut",
+   "Nick de Groot",
+   "Anthony Descotte",
+   "Ole Romeny",
+   "Lequincio Zeefuik"
+  ],
+  "home_bench": [
+   "Ivo Pinto",
+   "Jasper Dahlhaus",
+   "Mohammed Ihattaren",
+   "Yassin Oukili",
+   "Rodrigo Guth",
+   "Kaylen Reitmaier",
+   "Luuk Koopmans",
+   "Moussa Gbemou",
+   "David Stockbrink"
+  ],
+  "away_starting_xi": [
+   "Jari De Busser",
+   "Elijah Dijkstra",
+   "Wouter Goes",
+   "Lewis Schouten",
+   "Mateo Chávez",
+   "Dave Kwakman",
+   "Peer Koopmeiners",
+   "Weslley Pinto",
+   "Kees Smit",
+   "Ro-Zangelo Daal",
+   "Mexx Meerdink"
+  ],
+  "away_bench": [
+   "Calvin Stengs",
+   "Jizz Hornkamp",
+   "Jordy Clasie",
+   "Seiya Maikuma",
+   "Ayoub Oufkir",
+   "Hobie Verhulst",
+   "Rome Owusu-Oduro",
+   "Billy van Duijl",
+   "Mees de Wit",
+   "Rion Ichihara",
+   "Sam De Grand",
+   "Bendegúz Kovács"
+  ],
+  "substitution_events": [
+   {
+    "team": "Fortuna Sittard",
+    "in": "Ivo Pinto",
+    "out": "Anthony Descotte",
+    "minute": "46"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Jasper Dahlhaus",
+    "out": "Nick de Groot",
+    "minute": "66"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Mohammed Ihattaren",
+    "out": "Shiloh Zand",
+    "minute": "66"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Yassin Oukili",
+    "out": "Syb van Ottele",
+    "minute": "67"
+   },
+   {
+    "team": "Fortuna Sittard",
+    "in": "Rodrigo Guth",
+    "out": "Siebe Wylin",
+    "minute": "75"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Calvin Stengs",
+    "out": "Weslley Pinto",
+    "minute": "46"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Jizz Hornkamp",
+    "out": "Dave Kwakman",
+    "minute": "46"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Jordy Clasie",
+    "out": "Kees Smit",
+    "minute": "69"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Ayoub Oufkir",
+    "out": "Mexx Meerdink",
+    "minute": "86"
+   },
+   {
+    "team": "AZ Alkmaar",
+    "in": "Seiya Maikuma",
+    "out": "Elijah Dijkstra",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Serdar Gözübüyük",
+  "attendance": 10132,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}

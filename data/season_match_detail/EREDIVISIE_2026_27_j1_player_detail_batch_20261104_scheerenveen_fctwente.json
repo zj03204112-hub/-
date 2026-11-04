@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "Eredivisie",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "eredivisie-2026-27-2026-08-09-scheerenveen-fctwente",
+ "date": "2026-08-09",
+ "home": "SC Heerenveen",
+ "away": "FC Twente",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5781703",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5781703"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bernt Klaverboer",
+   "Mats Egbring",
+   "Sam Kersten",
+   "Maas Willemsen",
+   "Vasilios Zagaritis",
+   "Dirk Proper",
+   "Jacob Trenskow",
+   "Marcus Linday",
+   "Ringo Meerveld",
+   "Lanroy Machine",
+   "Dylan Vente"
+  ],
+  "home_bench": [
+   "Luca Oyen",
+   "Nolhan Courtens",
+   "Hristiyan Petrov",
+   "Nikolai Hopland",
+   "Darling Bladi",
+   "Andries Noppert",
+   "Timo Schreuder",
+   "Jimte Scholten",
+   "Kirayno Schaken",
+   "Levi Smans",
+   "Luuk Brouwers",
+   "Maxence Rivera"
+  ],
+  "away_starting_xi": [
+   "Lars Unnerstall",
+   "Bart van Rooij",
+   "Max Bruns",
+   "Robin Pröpper",
+   "Aske Adelgaard",
+   "Thomas van den Belt",
+   "Ramiz Zerrouki",
+   "Marko Pjaca",
+   "Daan Rots",
+   "Sondre Ørjasæter",
+   "Wout Weghorst"
+  ],
+  "away_bench": [
+   "Younes Taha",
+   "Mathias Kjølø",
+   "Lucas Vennegoor of Hesselink",
+   "Kristian Hlynsson",
+   "Sam Lammers",
+   "Joël Drommel",
+   "Remko Pasveer",
+   "Guilherme Peixoto",
+   "Krzysztof Kurowski",
+   "Ruud Nijstad",
+   "Naci Ünüvar"
+  ],
+  "substitution_events": [
+   {
+    "team": "SC Heerenveen",
+    "in": "Luca Oyen",
+    "out": "Lanroy Machine",
+    "minute": "46"
+   },
+   {
+    "team": "SC Heerenveen",
+    "in": "Nolhan Courtens",
+    "out": "Ringo Meerveld",
+    "minute": "55"
+   },
+   {
+    "team": "SC Heerenveen",
+    "in": "Hristiyan Petrov",
+    "out": "Mats Egbring",
+    "minute": "68"
+   },
+   {
+    "team": "SC Heerenveen",
+    "in": "Darling Bladi",
+    "out": "Sam Kersten",
+    "minute": "83"
+   },
+   {
+    "team": "SC Heerenveen",
+    "in": "Nikolai Hopland",
+    "out": "Jacob Trenskow",
+    "minute": "83"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Younes Taha",
+    "out": "Sondre Ørjasæter",
+    "minute": "57"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Mathias Kjølø",
+    "out": "Thomas van den Belt",
+    "minute": "68"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Lucas Vennegoor of Hesselink",
+    "out": "Marko Pjaca",
+    "minute": "68"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Kristian Hlynsson",
+    "out": "Ramiz Zerrouki",
+    "minute": "77"
+   },
+   {
+    "team": "FC Twente",
+    "in": "Sam Lammers",
+    "out": "Aske Adelgaard",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Marc Nagtegaal",
+  "attendance": 21022,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against football-data.co.uk.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/EREDIVISIE_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/EREDIVISIE_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_and_events_with_football_data_score_crosscheck_lineup_secondary_pending"
+}
