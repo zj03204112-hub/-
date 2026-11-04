@@ -43,6 +43,7 @@
   "substitute_not_appeared": "bench player without any incoming substitution event"
  },
  "minute_source": "official event timeline 'time' value; stoppage-time display clocks are not stored",
- "certification_status": "official_source_structured_extraction_passed; secondary_source_crosscheck_pending",
- "certification_note": "Each batch carries verification and status fields stating that club-site/AS/Sky cross-check has not been done for the automated backfill; treat as structurally verified, not fully certified."
+ "certification_status": "108 of 109 completed fixtures cross-checked against an independent secondary source (FotMob); 1 documented substitution conflict (Rayo-Racing 2026-09-05)",
+ "certification_note": "Secondary lineup and event cross-check completed for 84 fixtures by data_pipeline/verify_laliga_player_detail.py; 25 fixtures were already certified by the repository manual audit. Same-minute substitution pairing differences are recorded instead of overwriting the official timeline.",
+ "verification_report": "data/season_match_detail/LaLiga_2026_27_verification_report_20261104.json"
 }

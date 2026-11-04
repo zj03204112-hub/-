@@ -10,7 +10,7 @@
  "score": "2-2",
  "halftime_score": "0-0",
  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-villarreal-cf-2",
- "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "verification": "official_laliga_structured_extraction_cross_checked_with_fotmob_lineups_and_events",
  "sources": {
   "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-villarreal-cf-2"
  },
@@ -145,12 +145,87 @@
    "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
    "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
    "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified.",
-   "Official source spelling kept; the master CSV already stored a different spelling for: Dani Martinez (CSV: Dani Martínez); Nicolas Pépé (CSV: Nicolas Pepe)."
+   "Official source spelling kept; the master CSV already stored a different spelling for: Dani Martinez (CSV: Dani Martínez); Nicolas Pépé (CSV: Nicolas Pepe).",
+   "Secondary source pairs the same-minute substitutions differently; the explicit pairing of the official LaLiga event timeline is retained."
   ]
  },
  "normalized_csv": {
   "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
   "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
  },
- "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+ "status": "complete_source_crosscheck_and_structural_audit_passed",
+ "secondary_source": "https://www.fotmob.com/matches/5868022",
+ "verification_detail": {
+  "checked_at": "2026-11-04",
+  "secondary_source": "FotMob public match API",
+  "secondary_match_id": 5868022,
+  "starters_ok": true,
+  "bench_overlap": 1.0,
+  "substitutions_ok": true,
+  "pairing_differs_from_secondary": true,
+  "checks": {
+   "Atletico_starters": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Atletico_bench": {
+    "local": 12,
+    "secondary": 12,
+    "matched": 12,
+    "missing": [],
+    "extra": []
+   },
+   "Villarreal_starters": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Villarreal_bench": {
+    "local": 12,
+    "secondary": 12,
+    "matched": 12,
+    "missing": [],
+    "extra": []
+   },
+   "substitutions": {
+    "local": 10,
+    "secondary": 10,
+    "matched": 8,
+    "missing": [
+     [
+      "Villarreal",
+      "Carlos Maciá",
+      "Nicolas Pépé",
+      "79"
+     ],
+     [
+      "Villarreal",
+      "Ilias Akhomach",
+      "Georges Mikautadze",
+      "79"
+     ]
+    ],
+    "extra": [
+     [
+      "Villarreal",
+      "Carlos Maciá",
+      "Georges Mikautadze",
+      "79"
+     ],
+     [
+      "Villarreal",
+      "Ilias Akhomach",
+      "Nicolas Pépé",
+      "79"
+     ]
+    ],
+    "pairing_differs_from_secondary": true
+   }
+  }
+ }
 }

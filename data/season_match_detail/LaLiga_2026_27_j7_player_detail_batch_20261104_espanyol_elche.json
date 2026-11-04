@@ -10,7 +10,7 @@
  "score": "1-3",
  "halftime_score": "0-2",
  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rcd-espanyol-de-barcelona-elche-cf-7",
- "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "verification": "official_laliga_structured_extraction_cross_checked_with_fotmob_lineups_and_events",
  "sources": {
   "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rcd-espanyol-de-barcelona-elche-cf-7"
  },
@@ -152,5 +152,55 @@
   "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
   "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
  },
- "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+ "status": "complete_source_crosscheck_and_structural_audit_passed",
+ "secondary_source": "https://www.fotmob.com/matches/5868075",
+ "verification_detail": {
+  "checked_at": "2026-11-04",
+  "secondary_source": "FotMob public match API",
+  "secondary_match_id": 5868075,
+  "starters_ok": true,
+  "bench_overlap": 0.917,
+  "substitutions_ok": true,
+  "checks": {
+   "Espanyol_starters": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Espanyol_bench": {
+    "local": 12,
+    "secondary": 12,
+    "matched": 12,
+    "missing": [],
+    "extra": []
+   },
+   "Elche_starters": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Elche_bench": {
+    "local": 12,
+    "secondary": 12,
+    "matched": 11,
+    "missing": [
+     "José Antonio Ferrández Pomares"
+    ],
+    "extra": [
+     "Josan"
+    ]
+   },
+   "substitutions": {
+    "local": 10,
+    "secondary": 10,
+    "matched": 10,
+    "missing": [],
+    "extra": []
+   }
+  }
+ }
 }

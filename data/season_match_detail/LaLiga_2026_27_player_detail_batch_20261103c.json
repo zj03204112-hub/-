@@ -1,140 +1,187 @@
 {
-  "generated_at": "2026-11-03",
-  "league": "LaLiga",
-  "season": "2026-27",
-  "match_id": "laliga-2026-27-2026-11-01-getafe-sevilla",
-  "date": "2026-11-01",
-  "home": "Getafe",
-  "away": "Sevilla",
-  "score": "3-1",
-  "halftime_score": "0-1",
-  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11",
-  "verification": "official_laliga_match_events_cross_checked_with_secondary_lineup_source",
-  "sources": [
-    "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11",
-    "https://www.mundodeportivo.com/futbol/laliga/20261101/1004243852/getafe-sevilla-directo-laliga-ea-sports-ext-pau.html"
+ "generated_at": "2026-11-03",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "match_id": "laliga-2026-27-2026-11-01-getafe-sevilla",
+ "date": "2026-11-01",
+ "home": "Getafe",
+ "away": "Sevilla",
+ "score": "3-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11",
+ "verification": "official_laliga_structured_extraction_cross_checked_with_fotmob_lineups_and_events",
+ "sources": [
+  "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11",
+  "https://www.mundodeportivo.com/futbol/laliga/20261101/1004243852/getafe-sevilla-directo-laliga-ea-sports-ext-pau.html"
+ ],
+ "verified_data": {
+  "home_starting_xi": [
+   "David Soria",
+   "Jean Valou",
+   "Dani Carvajal",
+   "Djené Dakonam",
+   "Sebastián Boselli",
+   "Nemanja Gudelj",
+   "Andrés García",
+   "Ramón Terrats",
+   "Francho Serrano",
+   "Martín Satriano",
+   "Enes Ünal"
   ],
-  "verified_data": {
-    "home_starting_xi": [
-      "David Soria",
-      "Jean Valou",
-      "Dani Carvajal",
-      "Djené Dakonam",
-      "Sebastián Boselli",
-      "Nemanja Gudelj",
-      "Andrés García",
-      "Ramón Terrats",
-      "Francho Serrano",
-      "Martín Satriano",
-      "Enes Ünal"
-    ],
-    "away_starting_xi": [
-      "Odysseas Vlachodimos",
-      "Gabriel Suazo",
-      "Kike Salas",
-      "Andrés Castrín",
-      "Juan Iglesias",
-      "Youssouf Fofana",
-      "Lucien Agoumé",
-      "Félix Correia",
-      "Chidera Ejuke",
-      "Lucas Stassin",
-      "Isaac Romero"
-    ],
-    "home_bench": [
-      "Saba Sazonov",
-      "Abdel Abqar",
-      "Iván Azón",
-      "Jirí Letácek",
-      "Borja Mayoral",
-      "Orel Mangala",
-      "Alberto Risco",
-      "Diego Ferrer",
-      "Kiko Femenía",
-      "Davinchi",
-      "Ibrahima Danfakha"
-    ],
-    "away_bench": [
-      "Fran González",
-      "Julio Díaz",
-      "Alfon González",
-      "Giorgi Kochorashvili",
-      "Robbie Ure",
-      "Peque Fernández",
-      "Rubén Vargas",
-      "Arouna Sangante",
-      "Manu Bueno",
-      "Fábio Cardoso",
-      "Jon Guridi",
-      "José Ángel Carmona"
-    ],
-    "substitution_events": [
-      {
-        "team": "Getafe",
-        "player_in": "Orel Mangala",
-        "player_out": "Francho Serrano",
-        "minute": "46",
-        "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
-      },
-      {
-        "team": "Getafe",
-        "player_in": "Davinchi",
-        "player_out": "Jean Valou",
-        "minute": "46",
-        "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
-      },
-      {
-        "team": "Getafe",
-        "player_in": "Iván Azón",
-        "player_out": "Enes Ünal",
-        "minute": "82",
-        "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
-      },
-      {
-        "team": "Getafe",
-        "player_in": "Kiko Femenía",
-        "player_out": "Ramón Terrats",
-        "minute": "82",
-        "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
-      },
-      {
-        "team": "Sevilla",
-        "player_in": "Manu Bueno",
-        "player_out": "Isaac Romero",
-        "minute": "27",
-        "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
-      },
-      {
-        "team": "Sevilla",
-        "player_in": "Rubén Vargas",
-        "player_out": "Félix Correia",
-        "minute": "72",
-        "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
-      },
-      {
-        "team": "Sevilla",
-        "player_in": "Robbie Ure",
-        "player_out": "Youssouf Fofana",
-        "minute": "72",
-        "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
-      },
-      {
-        "team": "Sevilla",
-        "player_in": "Giorgi Kochorashvili",
-        "player_out": "Lucien Agoumé",
-        "minute": "87",
-        "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
-      },
-      {
-        "team": "Sevilla",
-        "player_in": "Julio Díaz",
-        "player_out": "Gabriel Suazo",
-        "minute": "87",
-        "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
-      }
-    ]
-  },
-  "gaps": [
-    "Appearance status of listed substitutes who did not enter is not separately asserted without a confirmed appearance record."
+  "away_starting_xi": [
+   "Odysseas Vlachodimos",
+   "Gabriel Suazo",
+   "Kike Salas",
+   "Andrés Castrín",
+   "Juan Iglesias",
+   "Youssouf Fofana",
+   "Lucien Agoumé",
+   "Félix Correia",
+   "Chidera Ejuke",
+   "Lucas Stassin",
+   "Isaac Romero"
+  ],
+  "home_bench": [
+   "Saba Sazonov",
+   "Abdel Abqar",
+   "Iván Azón",
+   "Jirí Letácek",
+   "Borja Mayoral",
+   "Orel Mangala",
+   "Alberto Risco",
+   "Diego Ferrer",
+   "Kiko Femenía",
+   "Davinchi",
+   "Ibrahima Danfakha"
+  ],
+  "away_bench": [
+   "Fran González",
+   "Julio Díaz",
+   "Alfon González",
+   "Giorgi Kochorashvili",
+   "Robbie Ure",
+   "Peque Fernández",
+   "Rubén Vargas",
+   "Arouna Sangante",
+   "Manu Bueno",
+   "Fábio Cardoso",
+   "Jon Guridi",
+   "José Ángel Carmona"
+  ],
+  "substitution_events": [
+   {
+    "team": "Getafe",
+    "player_in": "Orel Mangala",
+    "player_out": "Francho Serrano",
+    "minute": "46",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
+   },
+   {
+    "team": "Getafe",
+    "player_in": "Davinchi",
+    "player_out": "Jean Valou",
+    "minute": "46",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
+   },
+   {
+    "team": "Getafe",
+    "player_in": "Iván Azón",
+    "player_out": "Enes Ünal",
+    "minute": "82",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
+   },
+   {
+    "team": "Getafe",
+    "player_in": "Kiko Femenía",
+    "player_out": "Ramón Terrats",
+    "minute": "82",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Manu Bueno",
+    "player_out": "Isaac Romero",
+    "minute": "27",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Rubén Vargas",
+    "player_out": "Félix Correia",
+    "minute": "72",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Robbie Ure",
+    "player_out": "Youssouf Fofana",
+    "minute": "72",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Giorgi Kochorashvili",
+    "player_out": "Lucien Agoumé",
+    "minute": "87",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
+   },
+   {
+    "team": "Sevilla",
+    "player_in": "Julio Díaz",
+    "player_out": "Gabriel Suazo",
+    "minute": "87",
+    "source": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11"
+   }
   ]
+ },
+ "gaps": [
+  "Appearance status of listed substitutes who did not enter is not separately asserted without a confirmed appearance record."
+ ],
+ "secondary_source": "https://www.fotmob.com/matches/5868116",
+ "verification_detail": {
+  "checked_at": "2026-11-04",
+  "secondary_source": "FotMob public match API",
+  "secondary_match_id": 5868116,
+  "starters_ok": true,
+  "bench_overlap": 1.0,
+  "substitutions_ok": true,
+  "checks": {
+   "Getafe_starters": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Getafe_bench": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Sevilla_starters": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Sevilla_bench": {
+    "local": 12,
+    "secondary": 12,
+    "matched": 12,
+    "missing": [],
+    "extra": []
+   },
+   "substitutions": {
+    "local": 9,
+    "secondary": 9,
+    "matched": 9,
+    "missing": [],
+    "extra": []
+   }
+  }
+ },
+ "status": "complete_source_crosscheck_and_structural_audit_passed"
 }

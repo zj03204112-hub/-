@@ -1,138 +1,186 @@
 {
-  "generated_at": "2026-11-03",
-  "league": "LaLiga",
-  "season": "2026-27",
-  "match_id": "laliga-2026-27-2026-10-31-rayo-celta",
-  "date": "2026-10-31",
-  "home": "Rayo",
-  "away": "Celta",
-  "score": "3-0",
-  "halftime_score": "1-0",
-  "official_match_url": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
-  "sources": [
-    "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
-    "https://www.skysports.com/football/rayo-vallecano-vs-celta-vigo/teams/563031"
+ "generated_at": "2026-11-03",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "match_id": "laliga-2026-27-2026-10-31-rayo-celta",
+ "date": "2026-10-31",
+ "home": "Rayo",
+ "away": "Celta",
+ "score": "3-0",
+ "halftime_score": "1-0",
+ "official_match_url": "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
+ "sources": [
+  "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
+  "https://www.skysports.com/football/rayo-vallecano-vs-celta-vigo/teams/563031"
+ ],
+ "verified_data": {
+  "home_starting_xi": [
+   "Emil Audero",
+   "Florian Lejeune",
+   "Mujaid Sadick",
+   "Adrià Pedrosa",
+   "Andrei Ratiu",
+   "Unai López",
+   "Óscar Valentín",
+   "Pedro Díaz",
+   "Álvaro García",
+   "Jorge de Frutos",
+   "Sergio Camello"
   ],
-  "verified_data": {
-    "home_starting_xi": [
-      "Emil Audero",
-      "Florian Lejeune",
-      "Mujaid Sadick",
-      "Adrià Pedrosa",
-      "Andrei Ratiu",
-      "Unai López",
-      "Óscar Valentín",
-      "Pedro Díaz",
-      "Álvaro García",
-      "Jorge de Frutos",
-      "Sergio Camello"
-    ],
-    "away_starting_xi": [
-      "Ionuț Radu",
-      "Javi Rodríguez",
-      "Yoel Lago",
-      "Sebastián Cáceres",
-      "Javi Rueda",
-      "Ilaix Moriba",
-      "Aleix Febas",
-      "Javi Galán",
-      "Hugo Álvarez",
-      "Ferran Jutglà",
-      "Hugo González"
-    ],
-    "home_bench": [
-      "Gnangoro Bouare Samake",
-      "Rayane Belaid",
-      "Jozhua Vertrouwd",
-      "Pelayo Fernández",
-      "Dani Cárdenas",
-      "Alexandre Alemão",
-      "Fran Pérez",
-      "Giorgi Tsitaishvili",
-      "Randy Nteka",
-      "Isi Palazón",
-      "Iván Balliu"
-    ],
-    "away_bench": [
-      "Altay Bayındır",
-      "Iván Villar",
-      "Marcos Alonso",
-      "Abdoulaye Faye",
-      "Sergio Carreira",
-      "Iago Aspas",
-      "Pablo Durán",
-      "Williot Swedberg",
-      "Couhaib Driouech",
-      "Andrés Antañón",
-      "Hugo Burcio"
-    ],
-    "substitution_events": [
-      [
-        "Rayo",
-        "Giorgi Tsitaishvili",
-        "Álvaro García",
-        "45"
-      ],
-      [
-        "Rayo",
-        "Jozhua Vertrouwd",
-        "Adrià Pedrosa",
-        "61"
-      ],
-      [
-        "Rayo",
-        "Isi Palazón",
-        "Sergio Camello",
-        "61"
-      ],
-      [
-        "Rayo",
-        "Gnangoro Bouare Samake",
-        "Óscar Valentín",
-        "64"
-      ],
-      [
-        "Rayo",
-        "Alexandre Alemão",
-        "Unai López",
-        "79"
-      ],
-      [
-        "Celta",
-        "Pablo Durán",
-        "Hugo González",
-        "43"
-      ],
-      [
-        "Celta",
-        "Iago Aspas",
-        "Javi Galán",
-        "61"
-      ],
-      [
-        "Celta",
-        "Sergio Carreira",
-        "Ferran Jutglà",
-        "61"
-      ],
-      [
-        "Celta",
-        "Williot Swedberg",
-        "Sebastián Cáceres",
-        "61"
-      ],
-      [
-        "Celta",
-        "Couhaib Driouech",
-        "Hugo Álvarez",
-        "75"
-      ]
-    ],
-    "notes": [
-      "Official LaLiga match page used for result and event timeline; Sky Sports cross-checks both XIs and bench lists.",
-      "Appearance status of substitutes not entering is not inferred.",
-      "Minute discrepancy audit: LaLiga event-card display lists Giorgi Tsitaishvili for Álvaro García at 46'; the detailed commentary records the halftime change at 45'. The normalized CSV uses 45' under the project-wide detailed-commentary convention. Both source displays are retained here; this is not a missing event, but a documented display discrepancy."
-    ]
-  },
-  "audit_status": "lineups_and_substitution_names_cross_checked; minute_display_discrepancy_documented"
+  "away_starting_xi": [
+   "Ionuț Radu",
+   "Javi Rodríguez",
+   "Yoel Lago",
+   "Sebastián Cáceres",
+   "Javi Rueda",
+   "Ilaix Moriba",
+   "Aleix Febas",
+   "Javi Galán",
+   "Hugo Álvarez",
+   "Ferran Jutglà",
+   "Hugo González"
+  ],
+  "home_bench": [
+   "Gnangoro Bouare Samake",
+   "Rayane Belaid",
+   "Jozhua Vertrouwd",
+   "Pelayo Fernández",
+   "Dani Cárdenas",
+   "Alexandre Alemão",
+   "Fran Pérez",
+   "Giorgi Tsitaishvili",
+   "Randy Nteka",
+   "Isi Palazón",
+   "Iván Balliu"
+  ],
+  "away_bench": [
+   "Altay Bayındır",
+   "Iván Villar",
+   "Marcos Alonso",
+   "Abdoulaye Faye",
+   "Sergio Carreira",
+   "Iago Aspas",
+   "Pablo Durán",
+   "Williot Swedberg",
+   "Couhaib Driouech",
+   "Andrés Antañón",
+   "Hugo Burcio"
+  ],
+  "substitution_events": [
+   [
+    "Rayo",
+    "Giorgi Tsitaishvili",
+    "Álvaro García",
+    "45"
+   ],
+   [
+    "Rayo",
+    "Jozhua Vertrouwd",
+    "Adrià Pedrosa",
+    "61"
+   ],
+   [
+    "Rayo",
+    "Isi Palazón",
+    "Sergio Camello",
+    "61"
+   ],
+   [
+    "Rayo",
+    "Gnangoro Bouare Samake",
+    "Óscar Valentín",
+    "64"
+   ],
+   [
+    "Rayo",
+    "Alexandre Alemão",
+    "Unai López",
+    "79"
+   ],
+   [
+    "Celta",
+    "Pablo Durán",
+    "Hugo González",
+    "43"
+   ],
+   [
+    "Celta",
+    "Iago Aspas",
+    "Javi Galán",
+    "61"
+   ],
+   [
+    "Celta",
+    "Sergio Carreira",
+    "Ferran Jutglà",
+    "61"
+   ],
+   [
+    "Celta",
+    "Williot Swedberg",
+    "Sebastián Cáceres",
+    "61"
+   ],
+   [
+    "Celta",
+    "Couhaib Driouech",
+    "Hugo Álvarez",
+    "75"
+   ]
+  ],
+  "notes": [
+   "Official LaLiga match page used for result and event timeline; Sky Sports cross-checks both XIs and bench lists.",
+   "Appearance status of substitutes not entering is not inferred.",
+   "Minute discrepancy audit: LaLiga event-card display lists Giorgi Tsitaishvili for Álvaro García at 46'; the detailed commentary records the halftime change at 45'. The normalized CSV uses 45' under the project-wide detailed-commentary convention. Both source displays are retained here; this is not a missing event, but a documented display discrepancy."
+  ]
+ },
+ "audit_status": "lineups_and_substitution_names_cross_checked; minute_display_discrepancy_documented",
+ "verification": "official_laliga_structured_extraction_cross_checked_with_fotmob_lineups_and_events",
+ "secondary_source": "https://www.fotmob.com/matches/5868119",
+ "verification_detail": {
+  "checked_at": "2026-11-04",
+  "secondary_source": "FotMob public match API",
+  "secondary_match_id": 5868119,
+  "starters_ok": true,
+  "bench_overlap": 1.0,
+  "substitutions_ok": true,
+  "checks": {
+   "Rayo_starters": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Rayo_bench": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Celta_starters": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Celta_bench": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "substitutions": {
+    "local": 10,
+    "secondary": 10,
+    "matched": 10,
+    "missing": [],
+    "extra": []
+   }
+  }
+ },
+ "status": "complete_source_crosscheck_and_structural_audit_passed"
 }

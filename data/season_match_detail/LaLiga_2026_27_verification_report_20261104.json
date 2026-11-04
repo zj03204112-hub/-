@@ -1,0 +1,1534 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "LaLiga",
+ "season": "2026-27",
+ "scope": "cross-check of normalized player detail against an independent secondary provider",
+ "secondary_source": "FotMob public match API (lineups + substitution events)",
+ "verification_rules": {
+  "starters": "all 22 starting players must match, allowing official nickname/full-name forms",
+  "bench": "at least 80% name overlap per team",
+  "substitutions": "every substitution event must match on player in, player out and minute (tolerance 2 minutes)",
+  "same_minute_pairing": "when a provider pairs two same-minute substitutions differently but agrees on who came on and who went off, the official explicit pairing is kept and the difference is recorded"
+ },
+ "summary": {
+  "fixtures_total": 109,
+  "certified": 108,
+  "not_certified": 1,
+  "freshly_verified_with_secondary_source": 84,
+  "previously_certified_by_manual_audit": 25,
+  "documented_conflicts": 1
+ },
+ "conflicts": [
+  {
+   "fixture": [
+    "2026-09-05",
+    "Rayo",
+    "Racing"
+   ],
+   "checks": {
+    "Rayo_starters": {
+     "local": 11,
+     "secondary": 11,
+     "matched": 11,
+     "missing": [],
+     "extra": []
+    },
+    "Rayo_bench": {
+     "local": 11,
+     "secondary": 11,
+     "matched": 11,
+     "missing": [],
+     "extra": []
+    },
+    "Racing_starters": {
+     "local": 11,
+     "secondary": 11,
+     "matched": 11,
+     "missing": [],
+     "extra": []
+    },
+    "Racing_bench": {
+     "local": 12,
+     "secondary": 12,
+     "matched": 12,
+     "missing": [],
+     "extra": []
+    },
+    "substitutions": {
+     "local": 10,
+     "secondary": 10,
+     "matched": 9,
+     "missing": [
+      [
+       "Racing",
+       "Juan Carlos Arana",
+       "Jorge Salinas",
+       "90"
+      ]
+     ],
+     "extra": [
+      [
+       "Racing",
+       "Juan Carlos Arana",
+       "Pablo García",
+       "90"
+      ]
+     ]
+    }
+   }
+  }
+ ],
+ "fixtures": [
+  {
+   "fixture": [
+    "2026-08-15",
+    "Alaves",
+    "Getafe"
+   ],
+   "matchday": 1,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868011",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-15",
+    "Sevilla",
+    "Rayo"
+   ],
+   "matchday": 1,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868019",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-16",
+    "Espanyol",
+    "Levante"
+   ],
+   "matchday": 1,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868015",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-16",
+    "Racing",
+    "Villarreal"
+   ],
+   "matchday": 1,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868017",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-17",
+    "Deportivo",
+    "Elche"
+   ],
+   "matchday": 1,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868014",
+   "starters_ok": true,
+   "bench_overlap": 0.917,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-19",
+    "Atletico",
+    "Malaga"
+   ],
+   "matchday": 1,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868012",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-20",
+    "Rayo",
+    "Alaves"
+   ],
+   "matchday": 2,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868029",
+   "starters_ok": true,
+   "bench_overlap": 0.909,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-21",
+    "Betis",
+    "Real Sociedad"
+   ],
+   "matchday": 2,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868023",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-22",
+    "Athletic",
+    "Sevilla"
+   ],
+   "matchday": 2,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868021",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": true
+  },
+  {
+   "fixture": [
+    "2026-08-22",
+    "Espanyol",
+    "Real Madrid"
+   ],
+   "matchday": 2,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868025",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-22",
+    "Valencia",
+    "Celta"
+   ],
+   "matchday": 2,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868030",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-23",
+    "Atletico",
+    "Villarreal"
+   ],
+   "matchday": 2,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868022",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": true
+  },
+  {
+   "fixture": [
+    "2026-08-23",
+    "Elche",
+    "Barcelona"
+   ],
+   "matchday": 2,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868024",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": true
+  },
+  {
+   "fixture": [
+    "2026-08-23",
+    "Getafe",
+    "Racing"
+   ],
+   "matchday": 2,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868026",
+   "starters_ok": true,
+   "bench_overlap": 0.909,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-24",
+    "Malaga",
+    "Deportivo"
+   ],
+   "matchday": 2,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868027",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-24",
+    "Osasuna",
+    "Levante"
+   ],
+   "matchday": 2,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868028",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-25",
+    "Valencia",
+    "Betis"
+   ],
+   "matchday": 1,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868020",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-26",
+    "Real Madrid",
+    "Real Sociedad"
+   ],
+   "matchday": 1,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868018",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-27",
+    "Barcelona",
+    "Athletic"
+   ],
+   "matchday": 1,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868016",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-27",
+    "Celta",
+    "Osasuna"
+   ],
+   "matchday": 1,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868013",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-28",
+    "Alaves",
+    "Villarreal"
+   ],
+   "matchday": 3,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868031",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-28",
+    "Racing",
+    "Elche"
+   ],
+   "matchday": 3,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868037",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-29",
+    "Levante",
+    "Betis"
+   ],
+   "matchday": 3,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868035",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": true
+  },
+  {
+   "fixture": [
+    "2026-08-29",
+    "Real Sociedad",
+    "Espanyol"
+   ],
+   "matchday": 3,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868039",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-29",
+    "Sevilla",
+    "Atletico"
+   ],
+   "matchday": 3,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868040",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-30",
+    "Celta",
+    "Athletic"
+   ],
+   "matchday": 3,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868032",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-30",
+    "Deportivo",
+    "Valencia"
+   ],
+   "matchday": 3,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868033",
+   "starters_ok": true,
+   "bench_overlap": 0.917,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-30",
+    "Real Madrid",
+    "Malaga"
+   ],
+   "matchday": 3,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868038",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-31",
+    "Barcelona",
+    "Rayo"
+   ],
+   "matchday": 3,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868034",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-08-31",
+    "Osasuna",
+    "Getafe"
+   ],
+   "matchday": 3,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868036",
+   "starters_ok": true,
+   "bench_overlap": 0.917,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-03",
+    "Real Sociedad",
+    "Celta"
+   ],
+   "matchday": 6,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868070",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-04",
+    "Betis",
+    "Real Madrid"
+   ],
+   "matchday": 4,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868043",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-05",
+    "Athletic",
+    "Atletico"
+   ],
+   "matchday": 4,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868042",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-05",
+    "Rayo",
+    "Racing"
+   ],
+   "matchday": 4,
+   "status": "official_structured_extraction_passed_secondary_crosscheck_pending",
+   "secondary_source": "https://www.fotmob.com/matches/5868048",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": false,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-05",
+    "Villarreal",
+    "Deportivo"
+   ],
+   "matchday": 4,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868050",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": true
+  },
+  {
+   "fixture": [
+    "2026-09-06",
+    "Alaves",
+    "Osasuna"
+   ],
+   "matchday": 4,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868041",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-06",
+    "Espanyol",
+    "Sevilla"
+   ],
+   "matchday": 4,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868045",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-06",
+    "Malaga",
+    "Levante"
+   ],
+   "matchday": 4,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868047",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-06",
+    "Valencia",
+    "Barcelona"
+   ],
+   "matchday": 4,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868049",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-07",
+    "Elche",
+    "Real Sociedad"
+   ],
+   "matchday": 4,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868044",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-07",
+    "Getafe",
+    "Celta"
+   ],
+   "matchday": 4,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868046",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-11",
+    "Sevilla",
+    "Valencia"
+   ],
+   "matchday": 5,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868059",
+   "starters_ok": true,
+   "bench_overlap": 0.917,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-12",
+    "Athletic",
+    "Elche"
+   ],
+   "matchday": 5,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868051",
+   "starters_ok": true,
+   "bench_overlap": 0.917,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-12",
+    "Osasuna",
+    "Espanyol"
+   ],
+   "matchday": 5,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868055",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-12",
+    "Racing",
+    "Alaves"
+   ],
+   "matchday": 5,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868056",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-12",
+    "Real Madrid",
+    "Rayo"
+   ],
+   "matchday": 5,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868057",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-13",
+    "Celta",
+    "Malaga"
+   ],
+   "matchday": 5,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868052",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-13",
+    "Getafe",
+    "Deportivo"
+   ],
+   "matchday": 5,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868053",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-13",
+    "Levante",
+    "Barcelona"
+   ],
+   "matchday": 5,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868054",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-13",
+    "Real Sociedad",
+    "Atletico"
+   ],
+   "matchday": 5,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868058",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-14",
+    "Villarreal",
+    "Betis"
+   ],
+   "matchday": 5,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868060",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-15",
+    "Alaves",
+    "Valencia"
+   ],
+   "matchday": 6,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868061",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": true
+  },
+  {
+   "fixture": [
+    "2026-09-15",
+    "Elche",
+    "Real Madrid"
+   ],
+   "matchday": 6,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868065",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-15",
+    "Rayo",
+    "Espanyol"
+   ],
+   "matchday": 6,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868069",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-16",
+    "Atletico",
+    "Osasuna"
+   ],
+   "matchday": 6,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868062",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-16",
+    "Barcelona",
+    "Racing"
+   ],
+   "matchday": 6,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868066",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-16",
+    "Deportivo",
+    "Sevilla"
+   ],
+   "matchday": 6,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868064",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-17",
+    "Betis",
+    "Getafe"
+   ],
+   "matchday": 6,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868063",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-17",
+    "Malaga",
+    "Villarreal"
+   ],
+   "matchday": 6,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868068",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": true
+  },
+  {
+   "fixture": [
+    "2026-09-18",
+    "Espanyol",
+    "Elche"
+   ],
+   "matchday": 7,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868075",
+   "starters_ok": true,
+   "bench_overlap": 0.917,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-19",
+    "Athletic",
+    "Alaves"
+   ],
+   "matchday": 7,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868071",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-19",
+    "Celta",
+    "Racing"
+   ],
+   "matchday": 7,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868073",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-19",
+    "Osasuna",
+    "Rayo"
+   ],
+   "matchday": 7,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868077",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-19",
+    "Sevilla",
+    "Barcelona"
+   ],
+   "matchday": 7,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868078",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-20",
+    "Atletico",
+    "Real Madrid"
+   ],
+   "matchday": 7,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868072",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-20",
+    "Deportivo",
+    "Betis"
+   ],
+   "matchday": 7,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868074",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-20",
+    "Getafe",
+    "Malaga"
+   ],
+   "matchday": 7,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868076",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-20",
+    "Valencia",
+    "Real Sociedad"
+   ],
+   "matchday": 7,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868079",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-09-20",
+    "Villarreal",
+    "Levante"
+   ],
+   "matchday": 7,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868080",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-10-09",
+    "Malaga",
+    "Espanyol"
+   ],
+   "matchday": 8,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-10",
+    "Alaves",
+    "Atletico"
+   ],
+   "matchday": 8,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-10",
+    "Barcelona",
+    "Getafe"
+   ],
+   "matchday": 8,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-10",
+    "Real Madrid",
+    "Villarreal"
+   ],
+   "matchday": 8,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-11",
+    "Betis",
+    "Osasuna"
+   ],
+   "matchday": 8,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868082",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-10-11",
+    "Elche",
+    "Celta"
+   ],
+   "matchday": 8,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-11",
+    "Racing",
+    "Valencia"
+   ],
+   "matchday": 8,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868087",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-10-11",
+    "Real Sociedad",
+    "Deportivo"
+   ],
+   "matchday": 8,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-12",
+    "Levante",
+    "Sevilla"
+   ],
+   "matchday": 8,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868085",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-10-16",
+    "Deportivo",
+    "Levante"
+   ],
+   "matchday": 9,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-17",
+    "Betis",
+    "Barcelona"
+   ],
+   "matchday": 9,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-17",
+    "Espanyol",
+    "Atletico"
+   ],
+   "matchday": 9,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-17",
+    "Valencia",
+    "Athletic"
+   ],
+   "matchday": 9,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-17",
+    "Villarreal",
+    "Elche"
+   ],
+   "matchday": 9,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-18",
+    "Celta",
+    "Alaves"
+   ],
+   "matchday": 9,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-18",
+    "Malaga",
+    "Real Sociedad"
+   ],
+   "matchday": 9,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-18",
+    "Osasuna",
+    "Racing"
+   ],
+   "matchday": 9,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-18",
+    "Real Madrid",
+    "Sevilla"
+   ],
+   "matchday": 9,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-19",
+    "Getafe",
+    "Rayo"
+   ],
+   "matchday": 9,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-21",
+    "Levante",
+    "Athletic"
+   ],
+   "matchday": 6,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868067",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-10-23",
+    "Alaves",
+    "Malaga"
+   ],
+   "matchday": 10,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-24",
+    "Atletico",
+    "Deportivo"
+   ],
+   "matchday": 10,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-24",
+    "Racing",
+    "Espanyol"
+   ],
+   "matchday": 10,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-24",
+    "Rayo",
+    "Elche"
+   ],
+   "matchday": 10,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-24",
+    "Valencia",
+    "Villarreal"
+   ],
+   "matchday": 10,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-25",
+    "Athletic",
+    "Getafe"
+   ],
+   "matchday": 10,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-25",
+    "Barcelona",
+    "Real Madrid"
+   ],
+   "matchday": 10,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-25",
+    "Celta",
+    "Betis"
+   ],
+   "matchday": 10,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-25",
+    "Real Sociedad",
+    "Levante"
+   ],
+   "matchday": 10,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": null,
+   "verification": "certified_by_repository_manual_audit (pre-existing)"
+  },
+  {
+   "fixture": [
+    "2026-10-26",
+    "Sevilla",
+    "Osasuna"
+   ],
+   "matchday": 10,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868109",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-10-30",
+    "Villarreal",
+    "Espanyol"
+   ],
+   "matchday": null,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868120",
+   "starters_ok": true,
+   "bench_overlap": 0.917,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-10-31",
+    "Barcelona",
+    "Alaves"
+   ],
+   "matchday": null,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868115",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-10-31",
+    "Betis",
+    "Malaga"
+   ],
+   "matchday": null,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868112",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-10-31",
+    "Levante",
+    "Atletico"
+   ],
+   "matchday": null,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868117",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-10-31",
+    "Rayo",
+    "Celta"
+   ],
+   "matchday": null,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868119",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-11-01",
+    "Athletic",
+    "Real Sociedad"
+   ],
+   "matchday": null,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868111",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-11-01",
+    "Elche",
+    "Valencia"
+   ],
+   "matchday": null,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868114",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": true
+  },
+  {
+   "fixture": [
+    "2026-11-01",
+    "Getafe",
+    "Sevilla"
+   ],
+   "matchday": null,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868116",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-11-01",
+    "Racing",
+    "Real Madrid"
+   ],
+   "matchday": null,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868118",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  },
+  {
+   "fixture": [
+    "2026-11-02",
+    "Deportivo",
+    "Osasuna"
+   ],
+   "matchday": null,
+   "status": "complete_source_crosscheck_and_structural_audit_passed",
+   "secondary_source": "https://www.fotmob.com/matches/5868113",
+   "starters_ok": true,
+   "bench_overlap": 1.0,
+   "substitutions_ok": true,
+   "pairing_differs_from_secondary": false
+  }
+ ]
+}

@@ -10,7 +10,7 @@
  "score": "1-3",
  "halftime_score": "0-1",
  "official_match_url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-athletic-club-sevilla-fc-2",
- "verification": "official_laliga_match_page_structured_extraction;secondary_source_crosscheck_pending",
+ "verification": "official_laliga_structured_extraction_cross_checked_with_fotmob_lineups_and_events",
  "sources": {
   "official_laliga": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-athletic-club-sevilla-fc-2"
  },
@@ -145,12 +145,87 @@
    "Starting XIs, bench lists and appearance status extracted from the structured match payload of the official LaLiga match page.",
    "Substitution minutes use the official event timeline 'time' value; stoppage-time display clocks are not used as the stored minute.",
    "Secondary lineup cross-check (club site / AS / Sky) is still pending for this match; do not treat it as fully certified.",
-   "Official source spelling kept; the master CSV already stored a different spelling for: Alex Berenguer (CSV: Álex Berenguer); Iñigo Ruiz de Galarreta (CSV: Íñigo Ruiz de Galarreta)."
+   "Official source spelling kept; the master CSV already stored a different spelling for: Alex Berenguer (CSV: Álex Berenguer); Iñigo Ruiz de Galarreta (CSV: Íñigo Ruiz de Galarreta).",
+   "Secondary source pairs the same-minute substitutions differently; the explicit pairing of the official LaLiga event timeline is retained."
   ]
  },
  "normalized_csv": {
   "players": "data/season_match_detail/LaLiga_2026_27_players.csv",
   "substitutions": "data/season_match_detail/LaLiga_2026_27_substitutions.csv"
  },
- "status": "official_structured_extraction_passed_secondary_crosscheck_pending"
+ "status": "complete_source_crosscheck_and_structural_audit_passed",
+ "secondary_source": "https://www.fotmob.com/matches/5868021",
+ "verification_detail": {
+  "checked_at": "2026-11-04",
+  "secondary_source": "FotMob public match API",
+  "secondary_match_id": 5868021,
+  "starters_ok": true,
+  "bench_overlap": 1.0,
+  "substitutions_ok": true,
+  "pairing_differs_from_secondary": true,
+  "checks": {
+   "Athletic_starters": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Athletic_bench": {
+    "local": 12,
+    "secondary": 12,
+    "matched": 12,
+    "missing": [],
+    "extra": []
+   },
+   "Sevilla_starters": {
+    "local": 11,
+    "secondary": 11,
+    "matched": 11,
+    "missing": [],
+    "extra": []
+   },
+   "Sevilla_bench": {
+    "local": 12,
+    "secondary": 12,
+    "matched": 12,
+    "missing": [],
+    "extra": []
+   },
+   "substitutions": {
+    "local": 10,
+    "secondary": 10,
+    "matched": 8,
+    "missing": [
+     [
+      "Sevilla",
+      "Nico Guillén",
+      "Gerard Fernández Castellano",
+      "45"
+     ],
+     [
+      "Sevilla",
+      "Isaac Romero",
+      "Jon Guridi",
+      "45"
+     ]
+    ],
+    "extra": [
+     [
+      "Sevilla",
+      "Isaac Romero",
+      "Peque Fernández",
+      "46"
+     ],
+     [
+      "Sevilla",
+      "Nico Guillen",
+      "Jon Guridi",
+      "46"
+     ]
+    ],
+    "pairing_differs_from_secondary": true
+   }
+  }
+ }
 }
