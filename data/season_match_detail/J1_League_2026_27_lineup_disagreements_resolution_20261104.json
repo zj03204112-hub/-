@@ -8,9 +8,8 @@
  "policy": "official_preferred: the league record wins over an aggregator, and the disagreement is recorded instead of silently overwritten",
  "data_files_modified": [],
  "summary": {
-  "disagreements": 11,
-  "official_preferred": 10,
-  "needs_mapping": 1
+  "disagreements": 10,
+  "official_preferred": 10
  },
  "entries": [
   {
@@ -192,78 +191,6 @@
       "7",
       "88",
       "99"
-     ]
-    }
-   }
-  },
-  {
-   "fixture": [
-    "2026-09-06",
-    "Ｃ大阪",
-    "東京Ｖ"
-   ],
-   "kind": "missing_official_page",
-   "sides": {
-    "homeTeam": "missing_official_page",
-    "awayTeam": "missing_official_page"
-   },
-   "decision": "needs_mapping",
-   "rationale": "Mapping row has no match_card_id, so the official page was never fetched. This is a data gap in the mapping table, not a provider disagreement.",
-   "evidence": {
-    "homeTeam": {
-     "starters_only_official": [],
-     "starters_only_fotmob": [
-      "10",
-      "11",
-      "14",
-      "2",
-      "23",
-      "27",
-      "36",
-      "4",
-      "41",
-      "44",
-      "66"
-     ],
-     "bench_only_official": [],
-     "bench_only_fotmob": [
-      "16",
-      "19",
-      "28",
-      "31",
-      "7",
-      "77",
-      "8",
-      "9",
-      "97"
-     ]
-    },
-    "awayTeam": {
-     "starters_only_official": [],
-     "starters_only_fotmob": [
-      "1",
-      "14",
-      "15",
-      "16",
-      "18",
-      "29",
-      "40",
-      "5",
-      "71",
-      "8",
-      "9"
-     ],
-     "bench_only_official": [],
-     "bench_only_fotmob": [
-      "13",
-      "2",
-      "20",
-      "21",
-      "22",
-      "25",
-      "36",
-      "38",
-      "7"
      ]
     }
    }
