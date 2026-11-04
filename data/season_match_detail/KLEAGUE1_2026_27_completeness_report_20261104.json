@@ -36,14 +36,34 @@
  "xg_shots_with_value": 5100,
  "xg_total": 592.85,
  "score_crosscheck": {
-  "reference": "https://www.flashscore.com/football/south-korea/k-league-1/",
-  "batches": 204,
-  "matched": 105,
-  "mismatches": 0,
-  "unmatched": 99,
-  "result": "review required"
+  "independent_sources": [
+   {
+    "source": "Flashscore competition feed",
+    "window": "2026-07-12 onward",
+    "matched": 105,
+    "mismatches": 0
+   },
+   {
+    "source": "matchesio.com baseline CSV (repo)",
+    "window": "2026-02-28 to 2026-05-12",
+    "matched": 80,
+    "mismatches": 0
+   }
+  ],
+  "combined_coverage": "185/204 fixtures",
+  "coverage_percent": 90.7,
+  "mismatches_total": 0,
+  "unverified": {
+   "count": 19,
+   "by_month": {
+    "2026-05": 10,
+    "2026-07": 9
+   },
+   "reason": "gap between the matchesio baseline end (2026-05-12) and the Flashscore window start (2026-07-12)"
+  },
+  "coverage_file": "data/season_match_detail/KLEAGUE1_2026_27_verification_coverage.json"
  },
- "verification_gap": "Flashscore's K League feed only reaches back to 2026-07-12, so 99 early-season fixtures (Feb to early July) have no independent scoreline reference yet. The repository baseline from matchesio.com mixes K League 1 and 2 rows and uses float score strings, so it was not used.",
+ "verification_gap": "185 of 204 fixtures have an independent scoreline reference (Flashscore for July onward, matchesio baseline for February to mid-May). The remaining 19 fall in the window neither source covers.",
  "sources": {
   "fixtures_lineups_events_shots": "FotMob public match API",
   "scores_crosscheck_partial": "Flashscore competition feed (July onward)"
