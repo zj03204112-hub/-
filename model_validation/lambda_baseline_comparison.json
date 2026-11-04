@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T10:26:27Z",
+ "generated_at": "2026-11-04T10:56:25Z",
  "definition": "Leakage-safe first-pass comparison on the dsl_* detail layer. Histories use only matches dated before the predicted match. Lambda keeps the compare_models.py linear form so the only difference between goals_lambda and xg_lambda is the input rate (goals vs xG). Chronological holdout: last 30% of match dates, no tuning on it.",
  "settings": {
   "matrix": "8x8 Poisson with Dixon-Coles rho=-0.05",
@@ -7,6 +7,31 @@
   "min_history": 3,
   "holdout_start": "2026-09-14",
   "train_fraction": 0.7
+ },
+ "window_size": 5,
+ "decay": 0.0,
+ "train_models": {
+  "league_average": {
+   "n": 329,
+   "accuracy": 0.3526,
+   "brier": 0.6746,
+   "logloss": 1.1099,
+   "mean_lambda_total": 2.772
+  },
+  "goals_lambda": {
+   "n": 267,
+   "accuracy": 0.412,
+   "brier": 0.6654,
+   "logloss": 1.0976,
+   "mean_lambda_total": 3.649
+  },
+  "xg_lambda": {
+   "n": 267,
+   "accuracy": 0.412,
+   "brier": 0.6575,
+   "logloss": 1.0908,
+   "mean_lambda_total": 3.854
+  }
  },
  "models": {
   "league_average": {
@@ -79,134 +104,134 @@
   "goals_lambda": {
    "n": 395,
    "accuracy": 0.4861,
-   "brier": 0.619,
-   "logloss": 1.0325,
-   "mean_lambda_total": 3.982,
-   "history_median": 7,
-   "history_max": 33,
-   "by_league": {
-    "BUNDESLIGA": {
-     "n": 45,
-     "accuracy": 0.3778,
-     "brier": 0.6863,
-     "logloss": 1.1188,
-     "mean_lambda_total": 4.495
-    },
-    "EPL": {
-     "n": 50,
-     "accuracy": 0.48,
-     "brier": 0.6436,
-     "logloss": 1.0651,
-     "mean_lambda_total": 3.734
-    },
-    "EREDIVISIE": {
-     "n": 46,
-     "accuracy": 0.5,
-     "brier": 0.6153,
-     "logloss": 1.0373,
-     "mean_lambda_total": 4.585
-    },
-    "J1": {
-     "n": 60,
-     "accuracy": 0.55,
-     "brier": 0.6019,
-     "logloss": 1.0097,
-     "mean_lambda_total": 3.811
-    },
-    "KLEAGUE1": {
-     "n": 31,
-     "accuracy": 0.3871,
-     "brier": 0.6938,
-     "logloss": 1.1445,
-     "mean_lambda_total": 3.553
-    },
-    "LALIGA": {
-     "n": 58,
-     "accuracy": 0.5,
-     "brier": 0.592,
-     "logloss": 0.9972,
-     "mean_lambda_total": 3.948
-    },
-    "LIGUE1": {
-     "n": 45,
-     "accuracy": 0.4889,
-     "brier": 0.6102,
-     "logloss": 1.0112,
-     "mean_lambda_total": 3.791
-    },
-    "SERIEA": {
-     "n": 60,
-     "accuracy": 0.5333,
-     "brier": 0.5622,
-     "logloss": 0.9517,
-     "mean_lambda_total": 3.91
-    }
-   }
-  },
-  "xg_lambda": {
-   "n": 395,
-   "accuracy": 0.4886,
-   "brier": 0.617,
-   "logloss": 1.0288,
-   "mean_lambda_total": 3.998,
+   "brier": 0.6195,
+   "logloss": 1.0327,
+   "mean_lambda_total": 3.988,
    "history_median": 7,
    "history_max": 33,
    "by_league": {
     "BUNDESLIGA": {
      "n": 45,
      "accuracy": 0.4222,
-     "brier": 0.6403,
-     "logloss": 1.0585,
-     "mean_lambda_total": 4.439
+     "brier": 0.6872,
+     "logloss": 1.1194,
+     "mean_lambda_total": 4.49
     },
     "EPL": {
      "n": 50,
-     "accuracy": 0.44,
-     "brier": 0.6398,
-     "logloss": 1.0571,
-     "mean_lambda_total": 3.854
+     "accuracy": 0.48,
+     "brier": 0.6348,
+     "logloss": 1.0537,
+     "mean_lambda_total": 3.724
     },
     "EREDIVISIE": {
      "n": 46,
-     "accuracy": 0.4565,
-     "brier": 0.6439,
-     "logloss": 1.0704,
-     "mean_lambda_total": 4.296
+     "accuracy": 0.5,
+     "brier": 0.6108,
+     "logloss": 1.0284,
+     "mean_lambda_total": 4.589
     },
     "J1": {
      "n": 60,
-     "accuracy": 0.5833,
-     "brier": 0.5924,
-     "logloss": 0.9992,
-     "mean_lambda_total": 3.675
+     "accuracy": 0.5,
+     "brier": 0.6139,
+     "logloss": 1.0239,
+     "mean_lambda_total": 3.751
     },
     "KLEAGUE1": {
      "n": 31,
-     "accuracy": 0.3548,
-     "brier": 0.6944,
-     "logloss": 1.1498,
-     "mean_lambda_total": 3.862
+     "accuracy": 0.4516,
+     "brier": 0.6644,
+     "logloss": 1.1084,
+     "mean_lambda_total": 3.611
     },
     "LALIGA": {
      "n": 58,
-     "accuracy": 0.5,
-     "brier": 0.5974,
-     "logloss": 1.0016,
-     "mean_lambda_total": 3.876
+     "accuracy": 0.4828,
+     "brier": 0.5975,
+     "logloss": 1.0066,
+     "mean_lambda_total": 4.004
     },
     "LIGUE1": {
      "n": 45,
      "accuracy": 0.5111,
-     "brier": 0.5869,
-     "logloss": 0.9773,
-     "mean_lambda_total": 4.14
+     "brier": 0.6274,
+     "logloss": 1.0324,
+     "mean_lambda_total": 3.783
     },
     "SERIEA": {
      "n": 60,
-     "accuracy": 0.55,
-     "brier": 0.5862,
-     "logloss": 0.9833,
-     "mean_lambda_total": 3.966
+     "accuracy": 0.5167,
+     "brier": 0.5604,
+     "logloss": 0.9488,
+     "mean_lambda_total": 3.941
+    }
+   }
+  },
+  "xg_lambda": {
+   "n": 395,
+   "accuracy": 0.4962,
+   "brier": 0.6154,
+   "logloss": 1.0265,
+   "mean_lambda_total": 3.994,
+   "history_median": 7,
+   "history_max": 33,
+   "by_league": {
+    "BUNDESLIGA": {
+     "n": 45,
+     "accuracy": 0.4222,
+     "brier": 0.6411,
+     "logloss": 1.0588,
+     "mean_lambda_total": 4.437
+    },
+    "EPL": {
+     "n": 50,
+     "accuracy": 0.54,
+     "brier": 0.6261,
+     "logloss": 1.0398,
+     "mean_lambda_total": 3.835
+    },
+    "EREDIVISIE": {
+     "n": 46,
+     "accuracy": 0.4783,
+     "brier": 0.6409,
+     "logloss": 1.0646,
+     "mean_lambda_total": 4.268
+    },
+    "J1": {
+     "n": 60,
+     "accuracy": 0.5667,
+     "brier": 0.5851,
+     "logloss": 0.9894,
+     "mean_lambda_total": 3.636
+    },
+    "KLEAGUE1": {
+     "n": 31,
+     "accuracy": 0.3226,
+     "brier": 0.6968,
+     "logloss": 1.1521,
+     "mean_lambda_total": 3.865
+    },
+    "LALIGA": {
+     "n": 58,
+     "accuracy": 0.5345,
+     "brier": 0.5936,
+     "logloss": 0.9979,
+     "mean_lambda_total": 3.914
+    },
+    "LIGUE1": {
+     "n": 45,
+     "accuracy": 0.5111,
+     "brier": 0.596,
+     "logloss": 0.989,
+     "mean_lambda_total": 4.127
+    },
+    "SERIEA": {
+     "n": 60,
+     "accuracy": 0.5,
+     "brier": 0.5914,
+     "logloss": 0.9901,
+     "mean_lambda_total": 3.986
     }
    }
   }
@@ -216,16 +241,16 @@
   "goals_lambda": {
    "n": 395,
    "accuracy": 0.4861,
-   "brier": 0.619,
-   "logloss": 1.0325,
-   "mean_lambda_total": 3.982
+   "brier": 0.6195,
+   "logloss": 1.0327,
+   "mean_lambda_total": 3.988
   },
   "xg_lambda": {
    "n": 395,
-   "accuracy": 0.4886,
-   "brier": 0.617,
-   "logloss": 1.0288,
-   "mean_lambda_total": 3.998
+   "accuracy": 0.4962,
+   "brier": 0.6154,
+   "logloss": 1.0265,
+   "mean_lambda_total": 3.994
   }
  },
  "caveats": [

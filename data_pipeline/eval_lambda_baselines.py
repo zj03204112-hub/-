@@ -32,10 +32,13 @@ from datetime import datetime, timezone
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(REPO_ROOT, "football_model_database.sqlite")
-OUT = os.path.join(REPO_ROOT, "model_validation", "lambda_baseline_comparison.json")
+OUT = os.path.join(REPO_ROOT, "model_validation",
+                   os.getenv("LAMBDA_OUT", "lambda_baseline_comparison.json"))
 N = 8
 RHO = -0.05
 MIN_HISTORY = 3
+WINDOW_SIZE = int(os.getenv("LAMBDA_WINDOW", "30"))
+WINDOW_DECAY = float(os.getenv("LAMBDA_DECAY", "0.12"))
 
 
 def log(message: str) -> None:
@@ -75,13 +78,16 @@ def outcome_probs(grid: list[list[float]]) -> dict[str, float]:
     return {"H": home, "D": draw, "A": away}
 
 
-def decayed(history: list[tuple[float, float]], rate: float = 0.12) -> tuple[float, float]:
-    if not history:
+def decayed(history: list[tuple[float, float]], rate: float = 0.12,
+            window: int = 30) -> tuple[float, float]:
+    """Newest-first history, truncated to `window` matches before weighting."""
+    sample = history[:window] if window > 0 else history
+    if not sample:
         return 0.0, 0.0
-    weights = [math.exp(-rate * i) for i in range(len(history))]
+    weights = [math.exp(-rate * i) for i in range(len(sample))]
     total = sum(weights)
-    return (sum(h[0] * w for h, w in zip(history, weights)) / total,
-            sum(h[1] * w for h, w in zip(history, weights)) / total)
+    return (sum(h[0] * w for h, w in zip(sample, weights)) / total,
+            sum(h[1] * w for h, w in zip(sample, weights)) / total)
 
 
 def lambdas(attack_for: float, attack_against: float, defence_for: float,
@@ -145,8 +151,8 @@ def main() -> int:
         league_mean = sum(avg) / len(avg) if len(avg) >= 20 else None
 
         if eligible_goals:
-            h_gf, h_ga = decayed(hg)
-            a_gf, a_ga = decayed(ag)
+            h_gf, h_ga = decayed(hg, WINDOW_DECAY, WINDOW_SIZE)
+            a_gf, a_ga = decayed(ag, WINDOW_DECAY, WINDOW_SIZE)
             lh, la = lambdas(h_gf, h_ga, a_gf, a_ga)
             p = outcome_probs(matrix(lh, la))
             c, b, l = score(p, "H" if fh > fa else "D" if fh == fa else "A")
@@ -156,8 +162,8 @@ def main() -> int:
                             "history": len(hg)})
 
         if eligible_xg:
-            h_gf, h_ga = decayed(hx)
-            a_gf, a_ga = decayed(ax)
+            h_gf, h_ga = decayed(hx, WINDOW_DECAY, WINDOW_SIZE)
+            a_gf, a_ga = decayed(ax, WINDOW_DECAY, WINDOW_SIZE)
             lh, la = lambdas(h_gf, h_ga, a_gf, a_ga)
             p = outcome_probs(matrix(lh, la))
             c, b, l = score(p, "H" if fh > fa else "D" if fh == fa else "A")
@@ -207,6 +213,13 @@ def main() -> int:
             "mean_lambda_total": round(sum(r["lambda_home"] + r["lambda_away"] for r in rows) / n, 3),
         }
 
+    train = [r for r in records if r["date"] <= cutoff_date]
+
+    train_models = {}
+    for name in ("league_average", "goals_lambda", "xg_lambda"):
+        rows = [r for r in train if r["model"] == name]
+        train_models[name] = summarise(rows)
+
     models = {}
     for name in ("league_average", "goals_lambda", "xg_lambda"):
         rows = [r for r in holdout if r["model"] == name]
@@ -240,6 +253,9 @@ def main() -> int:
         "settings": {"matrix": f"{N}x{N} Poisson with Dixon-Coles rho={RHO}",
                      "decay": 0.12, "min_history": MIN_HISTORY,
                      "holdout_start": cutoff_date, "train_fraction": 0.70},
+        "window_size": WINDOW_SIZE,
+        "decay": WINDOW_DECAY,
+        "train_models": train_models,
         "models": models,
         "pairwise_goals_vs_xg": pair,
         "caveats": [

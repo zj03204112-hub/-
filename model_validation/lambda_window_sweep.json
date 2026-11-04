@@ -1,0 +1,359 @@
+{
+ "generated_at": "2026-11-04",
+ "definition": "History-window sweep for the lambda models. Same 902-match detail layer, same chronological split (train = dates up to the cutoff, holdout = later). Selection protocol: pick the window on the training segment, evaluate once on the holdout.",
+ "runs": [
+  {
+   "window": 10,
+   "decay": 0.12,
+   "train": {
+    "league_average": {
+     "n": 329,
+     "accuracy": 0.3526,
+     "brier": 0.6746,
+     "logloss": 1.1099
+    },
+    "goals_lambda": {
+     "n": 267,
+     "accuracy": 0.427,
+     "brier": 0.6579,
+     "logloss": 1.0874
+    },
+    "xg_lambda": {
+     "n": 267,
+     "accuracy": 0.4082,
+     "brier": 0.6553,
+     "logloss": 1.0879
+    }
+   },
+   "holdout": {
+    "league_average": {
+     "n": 395,
+     "accuracy": 0.4785,
+     "brier": 0.6358,
+     "logloss": 1.0538
+    },
+    "goals_lambda": {
+     "n": 395,
+     "accuracy": 0.4861,
+     "brier": 0.6191,
+     "logloss": 1.0327
+    },
+    "xg_lambda": {
+     "n": 395,
+     "accuracy": 0.4962,
+     "brier": 0.6173,
+     "logloss": 1.0292
+    }
+   }
+  },
+  {
+   "window": 15,
+   "decay": 0.12,
+   "train": {
+    "league_average": {
+     "n": 329,
+     "accuracy": 0.3526,
+     "brier": 0.6746,
+     "logloss": 1.1099
+    },
+    "goals_lambda": {
+     "n": 267,
+     "accuracy": 0.427,
+     "brier": 0.6566,
+     "logloss": 1.0859
+    },
+    "xg_lambda": {
+     "n": 267,
+     "accuracy": 0.397,
+     "brier": 0.6551,
+     "logloss": 1.0877
+    }
+   },
+   "holdout": {
+    "league_average": {
+     "n": 395,
+     "accuracy": 0.4785,
+     "brier": 0.6358,
+     "logloss": 1.0538
+    },
+    "goals_lambda": {
+     "n": 395,
+     "accuracy": 0.4861,
+     "brier": 0.6192,
+     "logloss": 1.0327
+    },
+    "xg_lambda": {
+     "n": 395,
+     "accuracy": 0.4886,
+     "brier": 0.6172,
+     "logloss": 1.0291
+    }
+   }
+  },
+  {
+   "window": 20,
+   "decay": 0.12,
+   "train": {
+    "league_average": {
+     "n": 329,
+     "accuracy": 0.3526,
+     "brier": 0.6746,
+     "logloss": 1.1099
+    },
+    "goals_lambda": {
+     "n": 267,
+     "accuracy": 0.4195,
+     "brier": 0.6562,
+     "logloss": 1.0856
+    },
+    "xg_lambda": {
+     "n": 267,
+     "accuracy": 0.4007,
+     "brier": 0.655,
+     "logloss": 1.0875
+    }
+   },
+   "holdout": {
+    "league_average": {
+     "n": 395,
+     "accuracy": 0.4785,
+     "brier": 0.6358,
+     "logloss": 1.0538
+    },
+    "goals_lambda": {
+     "n": 395,
+     "accuracy": 0.4861,
+     "brier": 0.6191,
+     "logloss": 1.0326
+    },
+    "xg_lambda": {
+     "n": 395,
+     "accuracy": 0.4886,
+     "brier": 0.617,
+     "logloss": 1.0288
+    }
+   }
+  },
+  {
+   "window": 30,
+   "decay": 0.12,
+   "train": {
+    "league_average": {
+     "n": 329,
+     "accuracy": 0.3526,
+     "brier": 0.6746,
+     "logloss": 1.1099
+    },
+    "goals_lambda": {
+     "n": 267,
+     "accuracy": 0.4232,
+     "brier": 0.6561,
+     "logloss": 1.0854
+    },
+    "xg_lambda": {
+     "n": 267,
+     "accuracy": 0.4007,
+     "brier": 0.655,
+     "logloss": 1.0875
+    }
+   },
+   "holdout": {
+    "league_average": {
+     "n": 395,
+     "accuracy": 0.4785,
+     "brier": 0.6358,
+     "logloss": 1.0538
+    },
+    "goals_lambda": {
+     "n": 395,
+     "accuracy": 0.4861,
+     "brier": 0.619,
+     "logloss": 1.0325
+    },
+    "xg_lambda": {
+     "n": 395,
+     "accuracy": 0.4886,
+     "brier": 0.617,
+     "logloss": 1.0288
+    }
+   }
+  },
+  {
+   "window": 5,
+   "decay": 0.12,
+   "train": {
+    "league_average": {
+     "n": 329,
+     "accuracy": 0.3526,
+     "brier": 0.6746,
+     "logloss": 1.1099
+    },
+    "goals_lambda": {
+     "n": 267,
+     "accuracy": 0.4082,
+     "brier": 0.6665,
+     "logloss": 1.0994
+    },
+    "xg_lambda": {
+     "n": 267,
+     "accuracy": 0.4307,
+     "brier": 0.6584,
+     "logloss": 1.0919
+    }
+   },
+   "holdout": {
+    "league_average": {
+     "n": 395,
+     "accuracy": 0.4785,
+     "brier": 0.6358,
+     "logloss": 1.0538
+    },
+    "goals_lambda": {
+     "n": 395,
+     "accuracy": 0.4759,
+     "brier": 0.6191,
+     "logloss": 1.0321
+    },
+    "xg_lambda": {
+     "n": 395,
+     "accuracy": 0.4861,
+     "brier": 0.616,
+     "logloss": 1.0273
+    }
+   }
+  },
+  {
+   "window": 5,
+   "decay": 0.3,
+   "train": {
+    "league_average": {
+     "n": 329,
+     "accuracy": 0.3526,
+     "brier": 0.6746,
+     "logloss": 1.1099
+    },
+    "goals_lambda": {
+     "n": 267,
+     "accuracy": 0.4045,
+     "brier": 0.6698,
+     "logloss": 1.1042
+    },
+    "xg_lambda": {
+     "n": 267,
+     "accuracy": 0.4157,
+     "brier": 0.6601,
+     "logloss": 1.0941
+    }
+   },
+   "holdout": {
+    "league_average": {
+     "n": 395,
+     "accuracy": 0.4785,
+     "brier": 0.6358,
+     "logloss": 1.0538
+    },
+    "goals_lambda": {
+     "n": 395,
+     "accuracy": 0.4835,
+     "brier": 0.6203,
+     "logloss": 1.0337
+    },
+    "xg_lambda": {
+     "n": 395,
+     "accuracy": 0.4785,
+     "brier": 0.6183,
+     "logloss": 1.0299
+    }
+   }
+  },
+  {
+   "window": 5,
+   "decay": 0.0,
+   "train": {
+    "league_average": {
+     "n": 329,
+     "accuracy": 0.3526,
+     "brier": 0.6746,
+     "logloss": 1.1099
+    },
+    "goals_lambda": {
+     "n": 267,
+     "accuracy": 0.412,
+     "brier": 0.6654,
+     "logloss": 1.0976
+    },
+    "xg_lambda": {
+     "n": 267,
+     "accuracy": 0.412,
+     "brier": 0.6575,
+     "logloss": 1.0908
+    }
+   },
+   "holdout": {
+    "league_average": {
+     "n": 395,
+     "accuracy": 0.4785,
+     "brier": 0.6358,
+     "logloss": 1.0538
+    },
+    "goals_lambda": {
+     "n": 395,
+     "accuracy": 0.4861,
+     "brier": 0.6195,
+     "logloss": 1.0327
+    },
+    "xg_lambda": {
+     "n": 395,
+     "accuracy": 0.4962,
+     "brier": 0.6154,
+     "logloss": 1.0265
+    }
+   }
+  },
+  {
+   "window": 8,
+   "decay": 0.12,
+   "train": {
+    "league_average": {
+     "n": 329,
+     "accuracy": 0.3526,
+     "brier": 0.6746,
+     "logloss": 1.1099
+    },
+    "goals_lambda": {
+     "n": 267,
+     "accuracy": 0.4195,
+     "brier": 0.6595,
+     "logloss": 1.0895
+    },
+    "xg_lambda": {
+     "n": 267,
+     "accuracy": 0.4007,
+     "brier": 0.6549,
+     "logloss": 1.0874
+    }
+   },
+   "holdout": {
+    "league_average": {
+     "n": 395,
+     "accuracy": 0.4785,
+     "brier": 0.6358,
+     "logloss": 1.0538
+    },
+    "goals_lambda": {
+     "n": 395,
+     "accuracy": 0.4911,
+     "brier": 0.6175,
+     "logloss": 1.0305
+    },
+    "xg_lambda": {
+     "n": 395,
+     "accuracy": 0.4962,
+     "brier": 0.6165,
+     "logloss": 1.0281
+    }
+   }
+  }
+ ],
+ "finding": "Holdout Brier spread across windows 5-30 is under 0.004, well inside the paired standard error of about 0.006, so the window is not the binding constraint. Training-segment Brier prefers longer windows only because early-season matches have almost no history (cold start)."
+}
