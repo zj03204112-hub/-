@@ -1,0 +1,85 @@
+{
+  "schema_version": "daily-football-15-00-run-v1",
+  "report_date_beijing": "2026-11-04",
+  "captured_at_beijing": "2026-11-04T15:00:00+08:00",
+  "schedule_scope": {
+    "current_beijing_date": "2026-11-04",
+    "next_beijing_date": "2026-11-05",
+    "registered_future_matches": 32,
+    "eligible_6_to_12_hour_matches": 9,
+    "predictions_saved": 9
+  },
+  "candidates": {
+    "afc_champions_league_two": 6,
+    "uefa_europa_league": 1,
+    "uefa_champions_league": 2
+  },
+  "predictions": {
+    "model_version": "RESEARCH-XG-POISSON-v1.0",
+    "status": "research_only_not_production",
+    "official_sporttery_handicap_verified": 0,
+    "official_sporttery_handicap_missing": 9,
+    "handicap_1x2_output": "UNVERIFIABLE_FOR_ALL_9; no third-party Asian handicap substituted",
+    "half_full_time": "research estimate based on 45%/55% half-goal split; not production-calibrated",
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false
+  },
+  "market": {
+    "official_sporttery_source": "sporttery.cn direct pages timed out/502 or were inaccessible",
+    "third_party_market": "stored separately as contextual evidence only; not used to determine lambdas or predictions",
+    "opening_to_current_official_sporttery": "unavailable for all 9"
+  },
+  "lineup_and_team_news": {
+    "official_starting_xi": "not yet published at 15:00; probable lineup/injury sources treated as unconfirmed",
+    "verified_referee": "AEK Athens vs Real Madrid: Maurizio Mariani (third-party appointment report); Fenerbahce vs Liverpool: Clement Turpin (third-party match page/report). No current-match referee assignment verified for Rennes-Olympiacos or the six AFC Champions League Two matches.",
+    "weather_available": [
+      "Rennes",
+      "AEK Athens",
+      "Fenerbahce",
+      "Al-Kuwait"
+    ],
+    "remaining_weather_missing": [
+      "Arkadag",
+      "Al-Wahda",
+      "Al-Rayyan",
+      "Muharraq",
+      "Al-Taawoun"
+    ],
+    "recent_form_and_group_motivation": "captured from public match-model/fixture pages; source-specific differences retained",
+    "professional_commentary": "not retrieved as traceable original commentary; no invented commentary used",
+    "referee_correction_note": "Earlier Al-Wahda and Al-Kuwait referee names were traced to unrelated prior AFC fixtures and have been removed in r1 corrected snapshots."
+  },
+  "xg_weekly": {
+    "iso_week": "2026-W45",
+    "base_unique_matches": 55,
+    "base_fulltime_xg_matches": 16,
+    "delta_new_unique_fulltime_xg_matches": 1,
+    "fulltime_xg_matches_after_delta": 17,
+    "fulltime_xg_coverage_pct_after_delta": 30.91,
+    "base_team_provider_rows": 126,
+    "delta_team_provider_rows": 6,
+    "merged_team_provider_rows": 132,
+    "partial_inplay_matches": 2,
+    "missing_fulltime_xg_matches_after_delta": 38,
+    "xgd_arithmetic_mismatches": 0,
+    "duplicate_match_team_provider_keys": 0,
+    "full_iso_week_coverage_verified": false,
+    "weekly_totals_per90_recomputed": false,
+    "post_match_xg_fed_to_same_match_prematch": false
+  },
+  "archive": {
+    "branch": "automation/daily-football-2026-11-04-1500",
+    "database_connected": false,
+    "base_branch": "automation/daily-football-2026-11-04",
+    "immutable_files": true
+  },
+  "missing_fields": [
+    "Official Sporttery handicap and opening-to-current odds for all 9 candidates",
+    "Official starting XI for all 9 at 15:00",
+    "Some injury reports and referee assignments lack primary official confirmation",
+    "Weather missing for five AFC2 matches",
+    "Several team tactical plans and next-opponent importance not independently verified",
+    "Provider event IDs, upstream capture timestamps, raw HTML/API payloads and SHA-256 are incomplete",
+    "Full ISO-week fixtures and weekly totals/per90 are not yet verified"
+  ]
+}
