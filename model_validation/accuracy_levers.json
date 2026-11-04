@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-11-04T12:01:09Z",
+ "definition": "Accuracy levers measured on the legacy sample with a chronological holdout. Calibration parameters are fitted on the training segment only. Selective prediction reports accuracy as a function of how many matches are actually bet.",
+ "coverage": {
+  "paired": 5028,
+  "train": 3519,
+  "holdout": 1509,
+  "cutoff": "2025-11-07"
+ },
+ "fitted": {
+  "temperature": 0.8,
+  "draw_shift": 0.4,
+  "blend_weight": 1.0
+ },
+ "results": [
+  {
+   "name": "v4_baseline",
+   "n": 1509,
+   "accuracy": 0.503,
+   "brier": 0.6155,
+   "logloss": 1.0282
+  },
+  {
+   "name": "v4_temperature",
+   "n": 1509,
+   "accuracy": 0.503,
+   "brier": 0.612,
+   "logloss": 1.0249
+  },
+  {
+   "name": "v4_draw_calibration",
+   "n": 1509,
+   "accuracy": 0.503,
+   "brier": 0.6089,
+   "logloss": 1.0173
+  },
+  {
+   "name": "v4_both",
+   "n": 1509,
+   "accuracy": 0.503,
+   "brier": 0.6062,
+   "logloss": 1.0145
+  },
+  {
+   "name": "market",
+   "n": 1509,
+   "accuracy": 0.5308,
+   "brier": 0.588,
+   "logloss": 0.9865
+  },
+  {
+   "name": "v4_temperature_blend_market",
+   "n": 1509,
+   "accuracy": 0.5308,
+   "brier": 0.588,
+   "logloss": 0.9865
+  }
+ ],
+ "selective_curve": [
+  {
+   "threshold": 0.0,
+   "coverage": 1.0,
+   "accuracy": 0.503,
+   "n": 1509
+  },
+  {
+   "threshold": 0.35,
+   "coverage": 1.0,
+   "accuracy": 0.503,
+   "n": 1509
+  },
+  {
+   "threshold": 0.4,
+   "coverage": 0.8966,
+   "accuracy": 0.5285,
+   "n": 1353
+  },
+  {
+   "threshold": 0.45,
+   "coverage": 0.5991,
+   "accuracy": 0.5741,
+   "n": 904
+  },
+  {
+   "threshold": 0.5,
+   "coverage": 0.3645,
+   "accuracy": 0.6345,
+   "n": 550
+  },
+  {
+   "threshold": 0.55,
+   "coverage": 0.1935,
+   "accuracy": 0.6918,
+   "n": 292
+  },
+  {
+   "threshold": 0.6,
+   "coverage": 0.0855,
+   "accuracy": 0.7674,
+   "n": 129
+  }
+ ]
+}
