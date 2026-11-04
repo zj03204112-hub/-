@@ -1,0 +1,25 @@
+{
+  "schema_version": "prediction-correction-note-v1",
+  "report_date_beijing": "2026-11-04",
+  "created_at_beijing": "2026-11-04T15:00:00+08:00",
+  "reason": "A source page listed referees for previous AFC Champions League Two fixtures, not the current Al-Wahda vs Al-Khaldiya or Al-Kuwait vs Nasaf fixtures. The earlier referee names were therefore not valid evidence for these two upcoming matches.",
+  "corrections": [
+    {
+      "match": "Al-Wahda vs Al-Khaldiya",
+      "original_path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-wahda-khalidiya-research-xg-poisson-v1.0-1500.json",
+      "corrected_path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-wahda-khalidiya-research-xg-poisson-v1.0-1500-r1-corrected.json",
+      "corrected_referee": null,
+      "referee_status": "NOT_VERIFIED_FOR_THIS_MATCH",
+      "prediction_values_unchanged": true
+    },
+    {
+      "match": "Al-Kuwait vs Nasaf",
+      "original_path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-kuwait-nasaf-research-xg-poisson-v1.0-1500.json",
+      "corrected_path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-kuwait-nasaf-research-xg-poisson-v1.0-1500-r1-corrected.json",
+      "corrected_referee": null,
+      "referee_status": "NOT_VERIFIED_FOR_THIS_MATCH",
+      "prediction_values_unchanged": true
+    }
+  ],
+  "immutable_policy": "Original snapshots remain unchanged for audit; corrected r1 snapshots supersede only the referee field."
+}
