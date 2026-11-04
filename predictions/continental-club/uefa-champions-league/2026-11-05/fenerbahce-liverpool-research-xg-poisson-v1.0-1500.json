@@ -1,0 +1,114 @@
+{
+  "schema_version": "immutable-prediction-snapshot-v1",
+  "prediction_id": "match:uefa-champions-league:2026-11-04:fenerbahce:liverpool:RESEARCH-XG-POISSON-v1.0:2026-11-04T15:00+08:00",
+  "created_at_beijing": "2026-11-04T15:00:00+08:00",
+  "match_id": "match:uefa-champions-league:2026-11-04:fenerbahce:liverpool",
+  "competition_id": "uefa-champions-league",
+  "competition": "UEFA Champions League",
+  "competition_type": "continental_club",
+  "season": "2026-27",
+  "home_team": "Fenerbahçe",
+  "away_team": "Liverpool",
+  "kickoff_utc": "2026-11-04T17:45:00Z",
+  "kickoff_beijing": "2026-11-05T01:45:00+08:00",
+  "prediction_window_hours_before_kickoff": 10.75,
+  "market": {
+    "official_sporttery_status": "UNVERIFIED_OFFICIAL_SOURCE_UNAVAILABLE",
+    "official_sporttery_handicap": null,
+    "official_sporttery_1x2": null,
+    "opening_to_current_official_sporttery": null,
+    "official_capture_timestamp": null,
+    "third_party_market_observations": [
+      {
+        "source": "Moneyball model consensus",
+        "odds": "Liverpool win consensus 59%",
+        "timestamp": "赛前模型页，精确抓取时间未披露",
+        "url": "https://moneyball-odds.com/previews/fenerbahce-vs-liverpool-2026-11-04",
+        "used_for_prediction": false
+      }
+    ],
+    "usage_rule": "Third-party prices are stored only as context and were not used to determine the prediction or the Poisson lambdas."
+  },
+  "prematch_inputs": {
+    "selected_provider_projected_xg": {
+      "provider": "FulltimeStats Dixon-Coles projected xG model",
+      "provider_model_version": "not_disclosed",
+      "home_xg": 1.26,
+      "away_xg": 1.8,
+      "type": "provider_model_estimate",
+      "source_url": "https://fulltimestats.com/match/fenerbahce-vs-liverpool-2026-11-04",
+      "source_capture_time": "page available by 2026-11-04 15:00 Beijing; exact upstream timestamp not disclosed"
+    },
+    "recent_form_last3": {
+      "home": "近3场 L-L-D（欧战样本）；全赛事近况另有差异",
+      "away": "近3场 L-D-W（欧战样本）；全赛事近况另有差异"
+    },
+    "injuries": "Fenerbahçe：A. Diouf、A. Fall、J. Oosterwolde、M. Asensio、M. Yandaş、N. Aké等7人缺阵/停赛；Liverpool：A. Nallo、C. Bradley、F. Chiesa、G. Leoni、H. Ekitike、J. Frimpong、R. Gravenberch、W. Endo等缺阵报告；以最终名单为准",
+    "starting_lineup_status": "OFFICIAL_STARTING_XI_NOT_YET_PUBLISHED; probable lineup data not treated as confirmed",
+    "tactics": "赛前分析称Fenerbahçe偏向边路推进与传中，Liverpool空中球及定位球威胁较强；非官方战术确认",
+    "weather": "Istanbul约13°C，有雨，降水约0.9mm，风约22km/h",
+    "referee": "Clement Turpin（第三方报道/比赛页一致）",
+    "schedule_motivation": "两队欧冠积分差距较大，Liverpool排名靠前；双方伤停数量多，轮换和体能影响需留意",
+    "professional_commentator_analysis": "未取得可追溯的专业足球评论员原始分析；未编造评论员观点。",
+    "missing_fields": [
+      "官方竞彩盘口及初盘/即时盘",
+      "正式首发11人",
+      "部分伤停的官方确认",
+      "部分裁判原始指派",
+      "部分天气/战术/下一场对手核验",
+      "上游xG抓取时间及原始响应"
+    ]
+  },
+  "model": {
+    "model_version": "RESEARCH-XG-POISSON-v1.0",
+    "production_status": "RESEARCH_ONLY_NOT_PRODUCTION; NOT_V5.1",
+    "method": "Independent Poisson score matrix from one selected provider projected-xG source per match; no cross-provider xG averaging and no odds-derived lambdas.",
+    "lambda_home": 1.26,
+    "lambda_away": 1.8,
+    "probabilities_90m_percent": {
+      "home_win": 26.8,
+      "draw": 23.1,
+      "away_win": 50.1
+    },
+    "most_likely_scores": [
+      {
+        "score": "1-1",
+        "probability_percent": 10.63
+      },
+      {
+        "score": "1-2",
+        "probability_percent": 9.57
+      }
+    ],
+    "halftime_model": {
+      "first_half_lambda_share": 0.45,
+      "second_half_lambda_share": 0.55,
+      "assumption": "Research assumption; not calibrated as a production halftime model."
+    },
+    "most_likely_half_full_time": {
+      "result": "负负",
+      "probability_percent": 31.2
+    },
+    "personal_confidence_0_to_10": 4.5,
+    "strategy_id": "RXP-20261104-1500-FENERBAHCE_LIVERPOOL",
+    "risk": "FulltimeStats xG 1.26/1.80与xG.Football 1.83/1.74差异明显；本预测只采用FulltimeStats单一模型。双方均有大量伤停，且天气有雨。",
+    "data_completeness_percent": 74
+  },
+  "prediction": {
+    "first_score": "1-1",
+    "second_score": "1-2",
+    "result_90m": "客胜",
+    "handicap_1x2": "无法核验",
+    "handicap_mapping_status": "NOT_CALCULATED; official Sporttery handicap missing",
+    "half_full_time": "负负"
+  },
+  "provenance": {
+    "source_urls": [
+      "https://fulltimestats.com/match/fenerbahce-vs-liverpool-2026-11-04",
+      "https://moneyball-odds.com/previews/fenerbahce-vs-liverpool-2026-11-04"
+    ],
+    "immutable": true,
+    "post_match_xg_used_as_same_match_prematch_input": false,
+    "model_change": "No V5.1 or frozen validation sample change."
+  }
+}
