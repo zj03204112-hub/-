@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-11-04",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "matchday": 8,
+  "fixture": "Real Sociedad 3-2 RC Deportivo",
+  "date": "2026-10-11",
+  "official_source": "https://www.laliga.com/es-CA/partido/temporada-2026-2027-laliga-ea-sports-real-sociedad-rc-deportivo-8",
+  "verification": {
+    "official_event_timeline_checked": true,
+    "substitutions": [
+      {
+        "team": "Real Sociedad",
+        "player_in": "Job Ochieng",
+        "player_out": "Gonçalo Guedes",
+        "minute": 56
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Mikel Oyarzabal",
+        "player_out": "Arsen Zakharyan",
+        "minute": 56
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Igor Zubeldia",
+        "player_out": "Carlos Soler",
+        "minute": 69
+      },
+      {
+        "team": "Real Sociedad",
+        "player_in": "Héctor Fort",
+        "player_out": "Ander Barrenetxea",
+        "minute": 88
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Riki Rodríguez",
+        "player_out": "David Mella",
+        "minute": 45
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Adrià Alti",
+        "player_out": "Ximo Navarro",
+        "minute": 57
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Lorenzo Amatucci",
+        "player_out": "Diego Villares",
+        "minute": 57
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Adama Traoré",
+        "player_out": "Luismi Cruz",
+        "minute": 57
+      },
+      {
+        "team": "Deportivo",
+        "player_in": "Jonathan Asp Jensen",
+        "player_out": "Giacomo Quagliata",
+        "minute": 79
+      }
+    ],
+    "disciplinary_events": [
+      {
+        "team": "Real Sociedad",
+        "player": "Pablo Marín",
+        "type": "red_card",
+        "minute": 66
+      },
+      {
+        "team": "Deportivo",
+        "player": "Lorenzo Amatucci",
+        "type": "red_card",
+        "minute": 90
+      }
+    ],
+    "minute_policy": "Use official LaLiga match timeline card minutes. Red cards are not substitutions.",
+    "csv_write": {
+      "path": "data/season_match_detail/LaLiga_2026_27_substitutions.csv",
+      "rows_added": 9,
+      "verified_fixture_rows": 9
+    },
+    "player_csv_changed": false,
+    "completeness": "Substitution timeline now recorded. Player CSV already contains 46 rows (11 starters + 12 bench for each team); full identity/bench cross-check remains separate from event completion."
+  }
+}
