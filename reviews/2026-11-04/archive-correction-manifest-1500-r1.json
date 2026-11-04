@@ -1,0 +1,61 @@
+{
+  "schema_version": "daily-football-correction-manifest-v1",
+  "report_date_beijing": "2026-11-04",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-04-1500",
+  "original_manifest": "reviews/2026-11-04/archive-manifest-1500.json",
+  "correction_note": "reviews/2026-11-04/prediction-correction-1500-r1.json",
+  "correction_reason": "Remove two referee assignments incorrectly carried over from unrelated AFC fixtures; preserve all original files and predictions.",
+  "corrected_files": [
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-wahda-khalidiya-research-xg-poisson-v1.0-1500-r1-corrected.json",
+      "blob_sha": "aa55e867d323877fb3417be6bd765972ac6d3847",
+      "referee": null,
+      "referee_status": "NOT_VERIFIED_FOR_THIS_MATCH",
+      "probabilities": {
+        "home_win": 34.2,
+        "draw": 36.8,
+        "away_win": 28.9
+      },
+      "handicap": "无法核验"
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-kuwait-nasaf-research-xg-poisson-v1.0-1500-r1-corrected.json",
+      "blob_sha": "88075ccc40e25a6aa8422697ded34d9d485fe7f5",
+      "referee": null,
+      "referee_status": "NOT_VERIFIED_FOR_THIS_MATCH",
+      "probabilities": {
+        "home_win": 44,
+        "draw": 26.7,
+        "away_win": 29.3
+      },
+      "handicap": "无法核验"
+    },
+    {
+      "path": "reviews/2026-11-04/prediction-correction-1500-r1.json",
+      "blob_sha": "9381e3a782653f558100d375622dc09438450b4a",
+      "parse": "ok"
+    },
+    {
+      "path": "reviews/2026-11-04/prediction-run-1500-r1.json",
+      "blob_sha": "6068d5bf82af718b190961d1ae7e4434702a272f",
+      "parse": "ok"
+    },
+    {
+      "path": "fixtures/2026-11-04/schedule-refresh-1500-r2.json",
+      "blob_sha": "ea5e4bfc1639a1447de8b09c097bada4584973d6",
+      "candidates": 9,
+      "alwahda_path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-wahda-khalidiya-research-xg-poisson-v1.0-1500-r1-corrected.json",
+      "alkuwait_path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-kuwait-nasaf-research-xg-poisson-v1.0-1500-r1-corrected.json"
+    }
+  ],
+  "readback_checks": {
+    "corrected_snapshots_json_valid": true,
+    "corrected_referee_fields_null": true,
+    "corrected_referee_status_not_verified": true,
+    "prediction_probabilities_unchanged": true,
+    "official_handicap_still_unverifiable": true,
+    "schedule_has_9_candidates": true,
+    "schedule_references_corrected_snapshots": true
+  }
+}
