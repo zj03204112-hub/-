@@ -1,0 +1,136 @@
+{
+  "schema_version": "daily-football-archive-manifest-v1",
+  "report_date_beijing": "2026-11-04",
+  "archive_created_at_beijing": "2026-11-04T15:00:00+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-04-1500",
+  "base_branch": "automation/daily-football-2026-11-04",
+  "parent_commit_before_manifest": "f58e458e802f848d15395deb23e35eb1e16b80d8",
+  "archive_type": "15:00 schedule refresh, immutable research predictions, market audit, W45 xG delta",
+  "file_count_before_manifest": 17,
+  "files": [
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-04/arkadag-gol-gohar-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "fae6ab7a7bb040bab3840f50208b30d19257e83a",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/uefa-europa-league/2026-11-04/rennes-olympiacos-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "b8c7710d86daaee40b62a234b697a686cf3481b6",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/uefa-champions-league/2026-11-05/aek-athens-real-madrid-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "bfde03d884271abdc2c9a0a01b8b8bf52cdd2b4e",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/uefa-champions-league/2026-11-05/fenerbahce-liverpool-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "1f3367dd3576a02c67d7bd8665d92721bbab19ea",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-wahda-khalidiya-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "b4a8eb59368e5cb8198f7bbdf40a88b16a8db027",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-kuwait-nasaf-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "d74f70c4c62bd9c78826822e0bc624ebe1102fb4",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-rayyan-al-nahda-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "f0915e2ca4acfa791ffbe7c4a2c7aa753b323189",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/muharraq-al-jazira-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "842f6077d27e6fb685ac04fc561c3cc691e65390",
+      "readback_verified": true
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-taawoun-al-faisaly-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "8502d8b3aa333565821d1fbb0bd40e95c39d6ee0",
+      "readback_verified": true
+    },
+    {
+      "path": "reviews/2026-11-04/market-source-audit-1500.json",
+      "blob_sha": "8a46997677311fdee93517eafcdce822fcb529bd",
+      "readback_verified": true
+    },
+    {
+      "path": "fixtures/2026-11-04/schedule-refresh-1500.json",
+      "blob_sha": "73a5cccafbf16945324cf2b00fbf1fb590cf6d94",
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_delta-1500.csv",
+      "blob_sha": "a2df4d06933bb21e2b5f0c0154245de555024f06",
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/team_weekly_xg_delta-1500.csv",
+      "blob_sha": "a07e4b9b7019eb5ceac099afd4f4c72bfbbd5304",
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/team_weekly_coverage_delta-1500.csv",
+      "blob_sha": "3eccf8a981b0d0f3d07ee64d8a4c6d619876df5e",
+      "readback_verified": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/xg_coverage_audit-1500.json",
+      "blob_sha": "219422380c69c07865a3800f70e2c5e5fa377ad7",
+      "readback_verified": true
+    },
+    {
+      "path": "reviews/2026-11-04/prediction-run-1500.json",
+      "blob_sha": "0a34ada23d795e635c590b3e00c36edc650d1fbf",
+      "readback_verified": true
+    },
+    {
+      "path": "reviews/2026-11-04/readback-verification-1500.json",
+      "blob_sha": "af631bdd9ecf0b384d547dfa99db5430712fd257",
+      "readback_verified": true
+    }
+  ],
+  "verification_summary": {
+    "files_read_back_before_manifest": 17,
+    "all_prediction_json_valid": true,
+    "all_prediction_probabilities_sum_to_100": true,
+    "all_9_official_sporttery_handicaps_null_and_marked_unverifiable": true,
+    "schedule_rows": {
+      "current_beijing_date": 6,
+      "next_beijing_date": 26,
+      "window_candidates": 9
+    },
+    "xg": {
+      "unique_matches": 55,
+      "fulltime_xg_matches": 17,
+      "coverage_pct": "30.91",
+      "team_provider_rows_after_delta": 132,
+      "xgd_arithmetic_mismatches": 0,
+      "duplicate_keys": 0,
+      "full_week_coverage_verified": false,
+      "weekly_totals_per90_recomputed": false,
+      "post_match_leakage": false
+    }
+  },
+  "unresolved": {
+    "official_sporttery_handicap_and_opening_current_for_9_matches": true,
+    "official_starting_xi_at_15_00": true,
+    "some_referee_weather_injury_tactical_fields": true,
+    "full_iso_week_xg_coverage": true,
+    "provider_event_ids_and_raw_payload_sha256": true,
+    "sqlite_or_remote_database_connected": false
+  },
+  "model_safety": {
+    "model_version": "RESEARCH-XG-POISSON-v1.0",
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "third_party_odds_used_as_model_input": false,
+    "third_party_xg_sources_mixed": false
+  },
+  "note": "Historical 10:00 branch files remain unchanged. New 15:00 files are additional immutable paths on this separate work branch."
+}
