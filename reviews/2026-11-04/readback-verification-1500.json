@@ -1,0 +1,116 @@
+{
+  "schema_version": "github-readback-verification-v1",
+  "branch": "automation/daily-football-2026-11-04-1500",
+  "captured_at_beijing": "2026-11-04T15:00:00+08:00",
+  "files_read_back": 16,
+  "prediction_files": [
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-04/arkadag-gol-gohar-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "fae6ab7a7bb040bab3840f50208b30d19257e83a",
+      "probability_sum": 100,
+      "official_handicap_null": true,
+      "handicap_unverifiable": true,
+      "top_scores": true
+    },
+    {
+      "path": "predictions/continental-club/uefa-europa-league/2026-11-04/rennes-olympiacos-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "b8c7710d86daaee40b62a234b697a686cf3481b6",
+      "probability_sum": 100,
+      "official_handicap_null": true,
+      "handicap_unverifiable": true,
+      "top_scores": true
+    },
+    {
+      "path": "predictions/continental-club/uefa-champions-league/2026-11-05/aek-athens-real-madrid-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "bfde03d884271abdc2c9a0a01b8b8bf52cdd2b4e",
+      "probability_sum": 100,
+      "official_handicap_null": true,
+      "handicap_unverifiable": true,
+      "top_scores": true
+    },
+    {
+      "path": "predictions/continental-club/uefa-champions-league/2026-11-05/fenerbahce-liverpool-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "1f3367dd3576a02c67d7bd8665d92721bbab19ea",
+      "probability_sum": 100,
+      "official_handicap_null": true,
+      "handicap_unverifiable": true,
+      "top_scores": true
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-wahda-khalidiya-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "b4a8eb59368e5cb8198f7bbdf40a88b16a8db027",
+      "probability_sum": 99.9,
+      "official_handicap_null": true,
+      "handicap_unverifiable": true,
+      "top_scores": true
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-kuwait-nasaf-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "d74f70c4c62bd9c78826822e0bc624ebe1102fb4",
+      "probability_sum": 100,
+      "official_handicap_null": true,
+      "handicap_unverifiable": true,
+      "top_scores": true
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-rayyan-al-nahda-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "f0915e2ca4acfa791ffbe7c4a2c7aa753b323189",
+      "probability_sum": 99.9,
+      "official_handicap_null": true,
+      "handicap_unverifiable": true,
+      "top_scores": true
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/muharraq-al-jazira-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "842f6077d27e6fb685ac04fc561c3cc691e65390",
+      "probability_sum": 100,
+      "official_handicap_null": true,
+      "handicap_unverifiable": true,
+      "top_scores": true
+    },
+    {
+      "path": "predictions/continental-club/afc-champions-league-two/2026-11-05/al-taawoun-al-faisaly-research-xg-poisson-v1.0-1500.json",
+      "blob_sha": "8502d8b3aa333565821d1fbb0bd40e95c39d6ee0",
+      "probability_sum": 100,
+      "official_handicap_null": true,
+      "handicap_unverifiable": true,
+      "top_scores": true
+    }
+  ],
+  "checks": {
+    "all_json_parse": true,
+    "all_prediction_probabilities_sum_to_100": true,
+    "all_official_handicap_fields_null": true,
+    "all_handicap_outputs_unverifiable": true,
+    "all_have_two_score_predictions": true,
+    "schedule_current_date_rows": 6,
+    "schedule_next_date_rows": 26,
+    "schedule_window_candidates": 9,
+    "xg_unique_matches": 55,
+    "xg_fulltime_matches": 17,
+    "xg_coverage_pct": "30.91",
+    "xgd_arithmetic_mismatches": 0,
+    "duplicate_match_team_provider_keys": 0,
+    "full_iso_week_coverage_verified": false,
+    "weekly_totals_per90_recomputed": false,
+    "post_match_xg_leakage": false
+  },
+  "readback_blob_shas": {
+    "predictions/continental-club/afc-champions-league-two/2026-11-04/arkadag-gol-gohar-research-xg-poisson-v1.0-1500.json": "fae6ab7a7bb040bab3840f50208b30d19257e83a",
+    "predictions/continental-club/uefa-europa-league/2026-11-04/rennes-olympiacos-research-xg-poisson-v1.0-1500.json": "b8c7710d86daaee40b62a234b697a686cf3481b6",
+    "predictions/continental-club/uefa-champions-league/2026-11-05/aek-athens-real-madrid-research-xg-poisson-v1.0-1500.json": "bfde03d884271abdc2c9a0a01b8b8bf52cdd2b4e",
+    "predictions/continental-club/uefa-champions-league/2026-11-05/fenerbahce-liverpool-research-xg-poisson-v1.0-1500.json": "1f3367dd3576a02c67d7bd8665d92721bbab19ea",
+    "predictions/continental-club/afc-champions-league-two/2026-11-05/al-wahda-khalidiya-research-xg-poisson-v1.0-1500.json": "b4a8eb59368e5cb8198f7bbdf40a88b16a8db027",
+    "predictions/continental-club/afc-champions-league-two/2026-11-05/al-kuwait-nasaf-research-xg-poisson-v1.0-1500.json": "d74f70c4c62bd9c78826822e0bc624ebe1102fb4",
+    "predictions/continental-club/afc-champions-league-two/2026-11-05/al-rayyan-al-nahda-research-xg-poisson-v1.0-1500.json": "f0915e2ca4acfa791ffbe7c4a2c7aa753b323189",
+    "predictions/continental-club/afc-champions-league-two/2026-11-05/muharraq-al-jazira-research-xg-poisson-v1.0-1500.json": "842f6077d27e6fb685ac04fc561c3cc691e65390",
+    "predictions/continental-club/afc-champions-league-two/2026-11-05/al-taawoun-al-faisaly-research-xg-poisson-v1.0-1500.json": "8502d8b3aa333565821d1fbb0bd40e95c39d6ee0",
+    "reviews/2026-11-04/market-source-audit-1500.json": "8a46997677311fdee93517eafcdce822fcb529bd",
+    "fixtures/2026-11-04/schedule-refresh-1500.json": "73a5cccafbf16945324cf2b00fbf1fb590cf6d94",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_delta-1500.csv": "a2df4d06933bb21e2b5f0c0154245de555024f06",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-04/team_weekly_xg_delta-1500.csv": "a07e4b9b7019eb5ceac099afd4f4c72bfbbd5304",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-04/team_weekly_coverage_delta-1500.csv": "3eccf8a981b0d0f3d07ee64d8a4c6d619876df5e",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-04/xg_coverage_audit-1500.json": "219422380c69c07865a3800f70e2c5e5fa377ad7",
+    "reviews/2026-11-04/prediction-run-1500.json": "0a34ada23d795e635c590b3e00c36edc650d1fbf"
+  }
+}
