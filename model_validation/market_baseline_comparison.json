@@ -1,0 +1,248 @@
+{
+ "generated_at": "2026-11-04T11:12:47Z",
+ "definition": "Market baseline from football-data.co.uk opening prices, de-vigged per book and scored on the same holdout matches as the lambda models. Opening odds are a conservative stand-in for a T-12h snapshot: they carry less information than the closing line, so any gap against the market here is a lower bound.",
+ "holdout_start": "2026-09-14",
+ "feeds": {
+  "SP1": "LALIGA",
+  "E0": "EPL",
+  "D1": "BUNDESLIGA",
+  "I1": "SERIEA",
+  "F1": "LIGUE1",
+  "N1": "EREDIVISIE"
+ },
+ "coverage": {
+  "holdout_matches": 395,
+  "matched_market_matches": 304,
+  "unmatched_feed_rows": 0
+ },
+ "metrics": {
+  "b365": {
+   "n": 304,
+   "accuracy": 0.5625,
+   "brier": 0.562,
+   "logloss": 0.9496
+  },
+  "average": {
+   "n": 304,
+   "accuracy": 0.5625,
+   "brier": 0.5628,
+   "logloss": 0.951
+  },
+  "goals_lambda": {
+   "n": 304,
+   "accuracy": 0.4868,
+   "brier": 0.616,
+   "logloss": 1.0268
+  },
+  "xg_lambda": {
+   "n": 304,
+   "accuracy": 0.5,
+   "brier": 0.613,
+   "logloss": 1.0211
+  },
+  "league_average": {
+   "n": 304,
+   "accuracy": 0.4934,
+   "brier": 0.6307,
+   "logloss": 1.0463
+  }
+ },
+ "by_league": {
+  "b365": {
+   "LALIGA": {
+    "n": 58,
+    "accuracy": 0.6034,
+    "brier": 0.5092,
+    "logloss": 0.8734
+   },
+   "EPL": {
+    "n": 50,
+    "accuracy": 0.5,
+    "brier": 0.5957,
+    "logloss": 0.9997
+   },
+   "BUNDESLIGA": {
+    "n": 45,
+    "accuracy": 0.5111,
+    "brier": 0.6341,
+    "logloss": 1.0482
+   },
+   "SERIEA": {
+    "n": 60,
+    "accuracy": 0.6333,
+    "brier": 0.5264,
+    "logloss": 0.9078
+   },
+   "LIGUE1": {
+    "n": 45,
+    "accuracy": 0.6667,
+    "brier": 0.4996,
+    "logloss": 0.8591
+   },
+   "EREDIVISIE": {
+    "n": 46,
+    "accuracy": 0.4348,
+    "brier": 0.6291,
+    "logloss": 1.038
+   }
+  },
+  "average": {
+   "LALIGA": {
+    "n": 58,
+    "accuracy": 0.6034,
+    "brier": 0.511,
+    "logloss": 0.8765
+   },
+   "EPL": {
+    "n": 50,
+    "accuracy": 0.5,
+    "brier": 0.5958,
+    "logloss": 0.9995
+   },
+   "BUNDESLIGA": {
+    "n": 45,
+    "accuracy": 0.5111,
+    "brier": 0.6335,
+    "logloss": 1.0475
+   },
+   "SERIEA": {
+    "n": 60,
+    "accuracy": 0.6333,
+    "brier": 0.5282,
+    "logloss": 0.9097
+   },
+   "LIGUE1": {
+    "n": 45,
+    "accuracy": 0.6444,
+    "brier": 0.4996,
+    "logloss": 0.8601
+   },
+   "EREDIVISIE": {
+    "n": 46,
+    "accuracy": 0.4565,
+    "brier": 0.6299,
+    "logloss": 1.0409
+   }
+  },
+  "goals_lambda": {
+   "LALIGA": {
+    "n": 58,
+    "accuracy": 0.4828,
+    "brier": 0.5975,
+    "logloss": 1.0066
+   },
+   "EPL": {
+    "n": 50,
+    "accuracy": 0.48,
+    "brier": 0.6348,
+    "logloss": 1.0537
+   },
+   "BUNDESLIGA": {
+    "n": 45,
+    "accuracy": 0.4222,
+    "brier": 0.6872,
+    "logloss": 1.1194
+   },
+   "SERIEA": {
+    "n": 60,
+    "accuracy": 0.5167,
+    "brier": 0.5604,
+    "logloss": 0.9488
+   },
+   "LIGUE1": {
+    "n": 45,
+    "accuracy": 0.5111,
+    "brier": 0.6274,
+    "logloss": 1.0324
+   },
+   "EREDIVISIE": {
+    "n": 46,
+    "accuracy": 0.5,
+    "brier": 0.6108,
+    "logloss": 1.0284
+   }
+  },
+  "xg_lambda": {
+   "LALIGA": {
+    "n": 58,
+    "accuracy": 0.5345,
+    "brier": 0.5936,
+    "logloss": 0.9979
+   },
+   "EPL": {
+    "n": 50,
+    "accuracy": 0.54,
+    "brier": 0.6261,
+    "logloss": 1.0398
+   },
+   "BUNDESLIGA": {
+    "n": 45,
+    "accuracy": 0.4222,
+    "brier": 0.6411,
+    "logloss": 1.0588
+   },
+   "SERIEA": {
+    "n": 60,
+    "accuracy": 0.5,
+    "brier": 0.5914,
+    "logloss": 0.9901
+   },
+   "LIGUE1": {
+    "n": 45,
+    "accuracy": 0.5111,
+    "brier": 0.596,
+    "logloss": 0.989
+   },
+   "EREDIVISIE": {
+    "n": 46,
+    "accuracy": 0.4783,
+    "brier": 0.6409,
+    "logloss": 1.0646
+   }
+  },
+  "league_average": {
+   "LALIGA": {
+    "n": 58,
+    "accuracy": 0.4655,
+    "brier": 0.6389,
+    "logloss": 1.0578
+   },
+   "EPL": {
+    "n": 50,
+    "accuracy": 0.46,
+    "brier": 0.6398,
+    "logloss": 1.0588
+   },
+   "BUNDESLIGA": {
+    "n": 45,
+    "accuracy": 0.4667,
+    "brier": 0.6399,
+    "logloss": 1.0607
+   },
+   "SERIEA": {
+    "n": 60,
+    "accuracy": 0.5,
+    "brier": 0.6224,
+    "logloss": 1.032
+   },
+   "LIGUE1": {
+    "n": 45,
+    "accuracy": 0.6444,
+    "brier": 0.584,
+    "logloss": 0.9793
+   },
+   "EREDIVISIE": {
+    "n": 46,
+    "accuracy": 0.4348,
+    "brier": 0.6576,
+    "logloss": 1.0882
+   }
+  }
+ },
+ "unmatched_sample": [],
+ "caveats": [
+  "No odds feed for K League 1, J1 or the A-League, so those matches are excluded from the comparison rather than compared against nothing.",
+  "Opening prices, not T-12h snapshots; see definition.",
+  "Holdout is roughly one third of a three-month window, so treat differences under 0.005 Brier as noise."
+ ]
+}
