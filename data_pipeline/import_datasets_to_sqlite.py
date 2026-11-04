@@ -167,22 +167,70 @@ def to_float(value):
 
 
 def load_scores(prefix: str) -> dict[tuple, str]:
-    """(date, home, away) -> 'x-y' from the per-match batch JSON files."""
+    """(date, home, away) -> 'x-y' from any batch JSON that carries a score.
+
+    Batch naming differs per competition: most store one match per file, J1 stores
+    aggregate files (official_checks_batch, match_xg_batch). Both shapes are accepted
+    and only a well formed 'x-y' value is kept.
+    """
     scores: dict[tuple, str] = {}
-    for path in glob.glob(os.path.join(SEASON_DIR, f"{prefix}*player_detail_batch*.json")):
+
+    def put(date, home, away, value) -> None:
+        if not (date and home and away):
+            return
+        if not isinstance(value, str):
+            return
+        text = value.strip()
+        if "-" not in text or text == "-":
+            return
+        scores.setdefault((date, home, away), text)
+
+    for path in glob.glob(os.path.join(SEASON_DIR, f"{prefix}*batch*.json")):
         try:
             payload = json.load(open(path, encoding="utf-8"))
         except json.JSONDecodeError:
             continue
         if not isinstance(payload, dict):
             continue
-        if "date" in payload and "home" in payload:          # one file per match
-            scores[(payload["date"], payload["home"], payload["away"])] = payload.get("score", "")
-        elif isinstance(payload.get("matches"), list):        # aggregated batch (J1)
+        if "date" in payload and "home" in payload:
+            put(payload["date"], payload["home"], payload["away"], payload.get("score"))
+        elif isinstance(payload.get("matches"), list):
             for item in payload["matches"]:
-                if item.get("date") and item.get("home"):
-                    scores[(item["date"], item["home"], item["away"])] = (
-                        item.get("score") or f'{item.get("home_goals", "")}-{item.get("away_goals", "")}')
+                put(item.get("date"), item.get("home"), item.get("away"),
+                    item.get("score") or f'{item.get("home_goals", "")}-{item.get("away_goals", "")}')
+    # J1 keeps its official score columns in the match-id mapping file instead of the
+    # per-match batches, so read them from there as well.
+    for path in glob.glob(os.path.join(SEASON_DIR, "j1_*_match_id_mapping.csv")):
+        try:
+            rows = list(csv.DictReader(open(path, encoding="utf-8-sig")))
+        except (OSError, csv.Error):
+            continue
+        for row in rows:
+            home_goals, away_goals = (row.get("home_goals") or "").strip(), (row.get("away_goals") or "").strip()
+            if home_goals.isdigit() and away_goals.isdigit():
+                put(row.get("match_date"), row.get("home_team_source"), row.get("away_team_source"),
+                    f"{home_goals}-{away_goals}")
+    # Last resort: derive the score from the event layer, but only for fixtures that
+    # actually have events recorded, so an unprocessed match is never written as 0-0.
+    events_path = os.path.join(SEASON_DIR, f"{prefix}_events.csv")
+    if os.path.exists(events_path):
+        try:
+            event_rows = list(csv.DictReader(open(events_path, encoding="utf-8-sig")))
+        except (OSError, csv.Error):
+            event_rows = []
+        goals: dict[tuple, dict[str, int]] = {}
+        seen: set[tuple] = set()
+        for row in event_rows:
+            key = (row.get("Date"), row.get("HomeTeam"), row.get("AwayTeam"))
+            seen.add(key)
+            if row.get("EventType") in ("goal", "penalty_goal"):
+                team_goals = goals.setdefault(key, {})
+                team_goals[row.get("Team")] = team_goals.get(row.get("Team"), 0) + 1
+        for key in seen:
+            if key in scores:
+                continue
+            team_goals = goals.get(key, {})
+            put(key[0], key[1], key[2], f"{team_goals.get(key[1], 0)}-{team_goals.get(key[2], 0)}")
     return scores
 
 
