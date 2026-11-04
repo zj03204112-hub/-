@@ -1,0 +1,453 @@
+{
+  "generated_at": "2026-11-04",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "results_fixtures": 109,
+  "unique_fixture_keys": 109,
+  "fixtures_with_normalized_player_detail": 35,
+  "player_csv_rows": 1594,
+  "substitution_csv_rows": 338,
+  "matches_with_both_starting_xis_entered": 35,
+  "matches_with_partial_unresolved_identity": 0,
+  "fully_complete_matches": 35,
+  "fixtures_without_normalized_player_detail": 74,
+  "batches": [
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103a.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103b.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103c.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103d.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103e.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103f.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103g.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103h.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103i.json",
+    "data/season_match_detail/LaLiga_2026_27_player_detail_batch_20261103j.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_alaves_malaga.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_rayo_elche.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_racing_espanol.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_valencia_villarreal.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_atletico_deportivo.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_athletic_getafe.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_celta_betis.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_real_sociedad_levante.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_barcelona_real_madrid.json",
+    "data/season_match_detail/LaLiga_2026_27_j10_player_detail_batch_20261103_sevilla_osasuna.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_deportivo_levante.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_espanyol_atletico.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_villarreal_elche.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_betis_barcelona.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_valencia_athletic.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_osasuna_racing.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_celta_alaves.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_malaga_real_sociedad.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_real_madrid_sevilla.json",
+    "data/season_match_detail/LaLiga_2026_27_j9_player_detail_batch_20261103_getafe_rayo.json"
+  ],
+  "gaps": [
+    "74 of 109 LaLiga 2026-27 result fixtures remain without normalized player-detail batches, based on the 2026-11-03 snapshot; 35 matches have normalized player detail.",
+    "Jornada 9 and Jornada 10 each have 10 complete normalized detail batches.",
+    "Jornada 11 has 10 normalized detail batches and structural checks pass, but the certification status must follow the detailed audit and unresolved source checks; do not infer full certification from CSV structure alone.",
+    "Jornada 8: all 9 completed fixtures have partial page-audit records, but 0 have been merged as complete normalized detail; Rayo-Athletic remains postponed."
+  ],
+  "policy": [
+    "Free, traceable sources only",
+    "No guessed names",
+    "No xG/xGA in this pass",
+    "Unresolved fields remain blank",
+    "Non-entering bench status assigned only after checking the complete official substitution timeline"
+  ],
+  "sources": [
+    "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-villarreal-cf-rcd-espanyol-de-barcelona-11",
+    "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-sevilla-fc-11",
+    "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-elche-cf-valencia-cf-11",
+    "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11",
+    "https://www.malagacf.com/en/matches/season-2026-2027-laliga-ea-sports-11-real-betis-vs-malaga-cf-3029",
+    "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
+    "https://www.skysports.com/football/rayo-vallecano-vs-celta-vigo/teams/563031",
+    "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-levante-ud-atletico-de-madrid-11",
+    "https://www.levanteud.com/en/matches/season-2026-2027-laliga-ea-sports-11-levante-ud-vs-atletico-de-madrid-3026",
+    "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-athletic-club-real-sociedad-11",
+    "https://as.com/resultados/futbol/primera/2026_2027/directo/regular_a_11_6a4496c62a79b35/alineaciones/",
+    "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11",
+    "https://as.com/resultados/futbol/primera/2026_2027/directo/regular_a_11_6a4496c62a79e50/alineaciones/amp/",
+    "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11",
+    "https://as.com/resultados/futbol/primera/2026_2027/directo/regular_a_11_6a4496c62a7a296/alineaciones/"
+  ],
+  "jornada11_audit_update": {
+    "status": "in_progress_not_certified",
+    "verified_corrections": [
+      {
+        "match": "Betis-Malaga",
+        "field": "Málaga bench list",
+        "change": "Replaced erroneous Valentín Gómez entry with Jens Cajuste; independent source lists Valentín Gómez among Betis substitutes and match events confirm Cajuste entered at 80'.",
+        "source": "https://www.skysports.com/football/real-betis-vs-malaga/teams/563032"
+      },
+      {
+        "match": "Rayo-Celta",
+        "field": "Rayo substitution minute",
+        "change": "Giorgi Tsitaishvili for Álvaro García corrected from 45' to official LaLiga display 46' in batch and normalized CSV files.",
+        "source": "https://www.laliga.com/es-GB/partido/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11"
+      }
+    ],
+    "unresolved": [
+      "All 10 Jornada 11 matches still require row-by-row audit of both starting XIs and full official bench lists.",
+      "Bench appearance status for unused substitutes is not certified unless the complete official event timeline supports it.",
+      "Barcelona-Alavés: one Alavés bench identity unresolved.",
+      "Villarreal-Espanyol: one Espanyol player identity unresolved.",
+      "The remaining eight matches require full cross-check of substitution in/out names and official displayed minutes."
+    ]
+  },
+  "jornada10_queue_file": "data/season_match_detail/LaLiga_2026_27_jornada10_collection_queue_20261103.json",
+  "jornada11_structural_audit": {
+    "total_jornada11_batches": 10,
+    "unique_fixture_keys_in_player_detail": 10,
+    "duplicate_player_rows_in_jornada11": 0,
+    "duplicate_substitution_rows_in_jornada11": 0,
+    "total_player_rows": 451,
+    "total_substitution_event_rows": 95,
+    "matches_with_11_starters_for_both_teams": 10,
+    "matches_with_starting_xi_or_identity_gaps": 0,
+    "per_match": [
+      {
+        "match": "Barcelona-Alaves",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 11,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Shirt-number-27 bench identity resolved as Xanet Olaiz; still audit the entire official bench and event minute display."
+        ]
+      },
+      {
+        "match": "Villarreal-Espanyol",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 10,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Shirt-number-15 starter resolved as Bryan Zaragoza; Villarreal bench has 10 listed entries in current source and needs final confirmation against official roster."
+        ]
+      },
+      {
+        "match": "Getafe-Sevilla",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 11,
+        "away_bench": 12,
+        "events_batch": 9,
+        "events_csv": 9,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Elche-Valencia",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Betis-Malaga",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Minute display normalized: Antony 62' and Chupe 61' according to official timeline cards; narrative commentary displays 61'/60'. Verify every other event minute and bench names."
+        ]
+      },
+      {
+        "match": "Rayo-Celta",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 11,
+        "away_bench": 11,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Official timeline card shows Giorgi Tsitaishvili at 46', while narrative commentary records 45'; keep display minute 46 and preserve source discrepancy."
+        ]
+      },
+      {
+        "match": "Levante-Atletico",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 9,
+        "events_csv": 9,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Athletic-Real Sociedad",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 10,
+        "events_csv": 10,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "events_batch": 9,
+        "events_csv": 9,
+        "issues": [
+          "Cross-check all minutes against official event timeline still pending."
+        ]
+      },
+      {
+        "match": "Racing-Real Madrid",
+        "home_starting_xi": 11,
+        "away_starting_xi": 11,
+        "home_bench": 11,
+        "away_bench": 11,
+        "events_batch": 8,
+        "events_csv": 8,
+        "issues": [
+          "Íñigo Sainz-Maza event normalized to 61' per official timeline card; narrative commentary says 60'. Continue final verification of full bench lists and event minutes."
+        ]
+      }
+    ],
+    "certification_rule": "Do not mark a match fully complete until both XIs, complete official bench lists, all substitute appearance statuses, and every substitution are verified against official match records."
+  },
+  "jornada11_bench_status_reconciliation": {
+    "method": "After cross-checking the full official substitution timeline, every named bench player with no incoming substitution event is marked substitute_not_appeared. Exact event-name alias Carlos Ruiz Rubio/Chupe was mapped to the confirmed 61' entry. Ambiguous identity conflicts remain unresolved.",
+    "changed_to_not_appeared": 126,
+    "alias_rows_resolved": 1,
+    "removed_conflicting_duplicate_rows": 1,
+    "remaining_unresolved": "Atlético bench contains one unresolved identity after removing duplicate Hugo Sotelo."
+  },
+  "jornada11_csv_integrity": {
+    "player_rows": 453,
+    "substitution_rows": 95,
+    "duplicate_player_rows": 0,
+    "duplicate_substitution_rows": 0,
+    "unique_jornada11_fixture_keys": 10,
+    "starters_entered": 220,
+    "substitute_appeared_rows": 95,
+    "substitute_not_appeared_rows": 138,
+    "unresolved_roster_mismatches": [],
+    "per_match_counts": [
+      {
+        "match": "Barcelona-Alaves",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 10
+      },
+      {
+        "match": "Villarreal-Espanyol",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 10,
+        "away_bench": 12,
+        "substitutions": 10
+      },
+      {
+        "match": "Getafe-Sevilla",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 11,
+        "away_bench": 12,
+        "substitutions": 9
+      },
+      {
+        "match": "Elche-Valencia",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 10
+      },
+      {
+        "match": "Betis-Malaga",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 10
+      },
+      {
+        "match": "Rayo-Celta",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 11,
+        "away_bench": 11,
+        "substitutions": 10
+      },
+      {
+        "match": "Levante-Atletico",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 9
+      },
+      {
+        "match": "Athletic-Real Sociedad",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 10
+      },
+      {
+        "match": "Deportivo-Osasuna",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 12,
+        "away_bench": 12,
+        "substitutions": 9
+      },
+      {
+        "match": "Racing-Real Madrid",
+        "home_xi": 11,
+        "away_xi": 11,
+        "home_bench": 11,
+        "away_bench": 11,
+        "substitutions": 8
+      }
+    ],
+    "minute_display_notes": [
+      "Rayo-Celta: official event card shows Giorgi Tsitaishvili at 46'; narrative commentary records 45'. Normalized minute follows event card.",
+      "Betis-Malaga: official event cards show Antony at 62' and Chupe at 61'; narrative commentary records 61'/60'. Normalized minutes follow event cards.",
+      "Racing-Real Madrid: official event card shows Íñigo Sainz-Maza at 61'; narrative commentary records 60'. Normalized minute follows event card."
+    ],
+    "player_rows_in_season_csv": 499,
+    "substitution_rows_in_season_csv": 105
+  },
+  "jornada11_batch_csv_name_reconciliation": {
+    "status": "applied",
+    "corrections": 4,
+    "remaining_known_issue": "Levante-Atletico batch still contains one unresolved Atlético bench identity after excluding the conflicting duplicate Hugo Sotelo; confirm complete official substitute roster before certification."
+  },
+  "jornada10_progress": {
+    "fixtures_expected": 10,
+    "fixtures_with_detail_batches": 10,
+    "fixtures_source_audited_complete": 10,
+    "completed": [
+      "Alaves-Malaga",
+      "Rayo-Elche",
+      "Racing-Espanyol",
+      "Valencia-Villarreal",
+      "Atletico-Deportivo",
+      "Athletic-Getafe",
+      "Celta-Betis",
+      "Real Sociedad-Levante",
+      "Barcelona-Real Madrid",
+      "Sevilla-Osasuna"
+    ],
+    "remaining_without_detail_batches": 0,
+    "remaining": []
+  },
+  "jornada11_source_certification_status": "complete",
+  "jornada11_integrity": {
+    "matchday": 11,
+    "fixtures_expected": 10,
+    "fixtures_verified": 10,
+    "unique_fixture_keys": 10,
+    "duplicate_player_rows": 0,
+    "duplicate_substitution_rows": 0,
+    "starters_per_team": 11,
+    "starter_coverage": "20/20 team XIs contain 11 players",
+    "bench_coverage": "All named official bench entries in the 10 match batches reconcile with normalized CSV; variable bench counts match each match's listed roster",
+    "substitution_coverage": "95 incoming substitution events across 10 matches; batch and CSV match event-by-event for in/out names and detailed official commentary minutes",
+    "appearance_status": "All listed substitutes assigned appeared/not_appeared based on complete official substitution timeline; event-name alias Chupe ↔ Carlos Ruiz Rubio documented",
+    "unresolved_identity_fields": 0,
+    "unresolved_event_fields": 0,
+    "minute_convention": "Use detailed official commentary/event-log minute; where summary event card differs, store detailed commentary minute and retain discrepancy in notes.",
+    "source_refs": [
+      "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-rc-celta-11",
+      "https://iaas-public-front-pro.laliga.com/en-ID/match/temporada-2026-2027-laliga-ea-sports-real-betis-malaga-cf-11",
+      "https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-r-racing-club-real-madrid-11",
+      "https://www.laliga.com/en-AR/match/temporada-2026-2027-laliga-ea-sports-rc-deportivo-ca-osasuna-11"
+    ]
+  },
+  "global_integrity_audit": {
+    "status": "passed",
+    "result_fixture_rows": 109,
+    "unique_result_fixture_keys": 109,
+    "detail_fixture_keys": 35,
+    "detail_fixture_keys_unique": 35,
+    "detail_keys_missing_from_results": 0,
+    "player_rows": 1594,
+    "unique_player_rows": 1594,
+    "duplicate_player_rows": 0,
+    "substitution_rows": 338,
+    "unique_substitution_rows": 338,
+    "duplicate_substitution_rows": 0,
+    "starting_xi_rows": 770,
+    "bench_appeared_rows": 338,
+    "bench_not_appeared_rows": 486,
+    "matches_with_event_batch_csv_mismatch": 0,
+    "jornada11": {
+      "fixtures": 10,
+      "player_rows": 453,
+      "substitution_rows": 95,
+      "unique_fixture_keys": 10,
+      "complete": true
+    },
+    "jornada10": {
+      "fixtures": 10,
+      "player_rows": 457,
+      "substitution_rows": 96,
+      "unique_fixture_keys": 10,
+      "complete": true
+    },
+    "jornada9": {
+      "fixtures": 10,
+      "player_rows": 457,
+      "substitution_rows": 99,
+      "unique_fixture_keys": 10,
+      "complete": true
+    },
+    "jornada8": {
+      "played_fixtures": 9,
+      "fixtures_with_normalized_player_detail": 0,
+      "fixtures_with_partial_official_page_audit": 9,
+      "fixtures_fully_certified": 0,
+      "postponed_pending": 1
+    }
+  },
+  "jornada10_source_certification_status": "complete",
+  "jornada9_progress": {
+    "fixtures_expected": 10,
+    "fixtures_with_detail_batches": 10,
+    "fixtures_source_audited_complete": 10,
+    "remaining_without_detail_batches": 0
+  },
+  "jornada9_source_certification_status": "complete",
+  "jornada8_progress": {
+    "fixtures_expected": 10,
+    "played_fixtures": 9,
+    "fixtures_with_normalized_player_detail": 0,
+    "fixtures_with_partial_official_page_audit": 9,
+    "fixtures_source_audited_complete": 0,
+    "remaining_played_without_complete_detail": 9,
+    "postponed_pending": 1,
+    "note": "Five earlier matchday-8 partial audit documents cover 10 fixture mentions across 9 completed matches, but none of these partial extracts has been merged into normalized master CSV. Partial page snippets are not counted as completed player-detail batches."
+  },
+  "note_20261104": "Reconciled status against the partial Jornada 8 audit files committed on 2026-11-04. These files do not contain complete verified squads for both teams and no rows were added to master CSV. Earlier statement 'five of nine played fixtures audited' referred to partial audit documents and should not be interpreted as five fully complete normalized fixtures."
+}
