@@ -1,0 +1,163 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "20",
+ "match_id": "kleague1-2026-27-2026-07-25-pohangsteelers-jeonbukhyundaimotorsfc",
+ "date": "2026-07-25",
+ "home": "Pohang Steelers",
+ "away": "Jeonbuk Hyundai Motors FC",
+ "score": "0-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5139977",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139977"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "In-Jae Hwang",
+   "Kwang-Hoon Shin",
+   "Chan-Yong Park",
+   "Ho-Jin Kim",
+   "Jeong-Won Eo",
+   "Sung-Yueng Ki",
+   "Dong-Jin Kim",
+   "Wanderson",
+   "Seo-Woong Hwang",
+   "Sang-Hyeok Cho",
+   "Jakob Tranziska"
+  ],
+  "home_bench": [
+   "Kento Nishiya",
+   "Ho-Jae Lee",
+   "Seung-Ho Kim",
+   "Chang-Woo Lee",
+   "Heon-Jae Lee",
+   "Sung-Wook Jo",
+   "Sung-Min Hong",
+   "Si-Woo Jin",
+   "Jae-Joon An"
+  ],
+  "away_starting_xi": [
+   "Bum-Keun Song",
+   "Tae-Hwan Kim",
+   "Wi-Je Cho",
+   "Young-Bin Kim",
+   "Woo-Jin Choi",
+   "Sang-Yun Kang",
+   "Oberdan",
+   "Jin-Gyu Kim",
+   "Dong-Jun Lee",
+   "Gytis Paulauskas",
+   "Seung-Woo Lee"
+  ],
+  "away_bench": [
+   "Ye-Geon Kim",
+   "João Gamboa",
+   "Bruno Mota",
+   "Ji-Soo Park",
+   "Seung-Sub Kim",
+   "Je-Woon Yeon",
+   "Ju-Hyeon Lee",
+   "Sang-Myung Lee",
+   "Seong-Ung Maeng"
+  ],
+  "substitution_events": [
+   {
+    "team": "Pohang Steelers",
+    "in": "Kento Nishiya",
+    "out": "Sung-Yueng Ki",
+    "minute": "46"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Ho-Jae Lee",
+    "out": "Seo-Woong Hwang",
+    "minute": "46"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Seung-Ho Kim",
+    "out": "Dong-Jin Kim",
+    "minute": "70"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Chang-Woo Lee",
+    "out": "Kwang-Hoon Shin",
+    "minute": "90"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Heon-Jae Lee",
+    "out": "Sang-Hyeok Cho",
+    "minute": "90"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Ye-Geon Kim",
+    "out": "Dong-Jun Lee",
+    "minute": "25"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Bruno Mota",
+    "out": "Gytis Paulauskas",
+    "minute": "75"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "João Gamboa",
+    "out": "Jin-Gyu Kim",
+    "minute": "75"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Seung-Sub Kim",
+    "out": "Seung-Woo Lee",
+    "minute": "81"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Ji-Soo Park",
+    "out": "Wi-Je Cho",
+    "minute": "81"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Je-Woon Yeon",
+    "out": "Young-Bin Kim",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 13147,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-2"
+  }
+ }
+}

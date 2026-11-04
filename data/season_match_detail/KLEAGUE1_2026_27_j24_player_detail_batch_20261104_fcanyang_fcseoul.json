@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "24",
+ "match_id": "kleague1-2026-27-2026-08-22-fcanyang-fcseoul",
+ "date": "2026-08-22",
+ "home": "FC Anyang",
+ "away": "FC Seoul",
+ "score": "0-7",
+ "halftime_score": "0-5",
+ "official_match_url": "https://www.fotmob.com/matches/5140000",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140000"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jeong-Hoon Kim",
+   "Ji-Hun Kang",
+   "Chang-Yong Lee",
+   "Kyung-Won Kwon",
+   "Dong-Jin Kim",
+   "Matheus Oliveira Santos",
+   "Jeong-Hyun Kim",
+   "Branislav Knezevic",
+   "Hyun-Woo Chae",
+   "Woon Kim",
+   "Airton Moisés"
+  ],
+  "home_bench": [
+   "Jin-Yong Lee",
+   "Ka-Ram Han",
+   "Gang Kim",
+   "Geon-Joo Choi",
+   "Young-Chan Kim",
+   "Da-Sol Kim",
+   "Jae-Hyeon Kim",
+   "Blaise Tsague",
+   "Bo-Kyung Kim"
+  ],
+  "away_starting_xi": [
+   "Sung-Yun Gu",
+   "Soo-Il Park",
+   "Yazan Abu Al-Arab",
+   "Juan Antonio",
+   "Jin-Su Kim",
+   "Seung-Won Jung",
+   "Seung-Mo Lee",
+   "Hrvoje Babec",
+   "Seon-Min Moon",
+   "Anderson Oliveira",
+   "Patryk Klimala"
+  ],
+  "away_bench": [
+   "Jun Choi",
+   "Jeong-Beom Son",
+   "Min-Kyu Song",
+   "Seong-Hoon Cheon",
+   "Do-Yoon Hwang",
+   "Hyeon-Mu Kang",
+   "Han-Do Lee",
+   "Seong-Hun Park",
+   "Jang Han-Gyeol Park"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Anyang",
+    "in": "Jin-Yong Lee",
+    "out": "Branislav Knezevic",
+    "minute": "46"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Ka-Ram Han",
+    "out": "Jeong-Hyun Kim",
+    "minute": "46"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Geon-Joo Choi",
+    "out": "Airton Moisés",
+    "minute": "59"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Gang Kim",
+    "out": "Hyun-Woo Chae",
+    "minute": "59"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Young-Chan Kim",
+    "out": "Matheus Oliveira Santos",
+    "minute": "69"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Jun Choi",
+    "out": "Soo-Il Park",
+    "minute": "62"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Min-Kyu Song",
+    "out": "Seon-Min Moon",
+    "minute": "62"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Jeong-Beom Son",
+    "out": "Seung-Mo Lee",
+    "minute": "62"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Seong-Hoon Cheon",
+    "out": "Patryk Klimala",
+    "minute": "71"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Do-Yoon Hwang",
+    "out": "Hrvoje Babec",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 7
+  },
+  "provider_score": "0-7",
+  "score_consistent_with_events": true,
+  "referee": "Kim Dae-Yong",
+  "attendance": 8856,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-7"
+  }
+ }
+}

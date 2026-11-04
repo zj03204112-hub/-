@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "34",
+ "match_id": "kleague1-2026-27-2026-11-01-ulsanhdfc-gangwonfc",
+ "date": "2026-11-01",
+ "home": "Ulsan HD FC",
+ "away": "Gangwon FC",
+ "score": "2-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/6503833",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6503833"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Byeong-Geun Hwang",
+   "Jong-Gyu Yeun",
+   "Seung-Hyeon Jung",
+   "Young-Gwon Kim",
+   "Hyun-Taek Cho",
+   "Yong-Woo Park",
+   "Thomas Kotte",
+   "Jin-Hyun Lee",
+   "Gyu-Sung Lee",
+   "Heui-Kyun Lee",
+   "Dong-Gyeong Lee"
+  ],
+  "home_bench": [
+   "Yago Cariello",
+   "Erick Farias",
+   "Darijan Bojanić",
+   "Sang-Min Sim",
+   "In-Woo Back",
+   "Seong-Min Ryu",
+   "Jae-Ik Lee",
+   "Miłosz Trojak",
+   "Woo-Jin Park"
+  ],
+  "away_starting_xi": [
+   "Chung-Hyo Park",
+   "Joon-hyuck Kang",
+   "Min-Ha Shin",
+   "Gi-Hyuk Lee",
+   "Abdelkarim Mammar Chaouche",
+   "Jae-Hyeon Mo",
+   "You-Hyeon Lee",
+   "Min-Woo Seo",
+   "Dae-Won Kim",
+   "Byeong-Chan Choi",
+   "Young-Joon Goh"
+  ],
+  "away_bench": [
+   "Chul Hong",
+   "Seung-Won Lee",
+   "Eun-Ho Lee",
+   "Gun-Hee Kim",
+   "Abdalla Halaihal",
+   "Yoo-Sung Kim",
+   "Ho-Young Park",
+   "Dong-Hyun Kim",
+   "Ji-Ho Lee"
+  ],
+  "substitution_events": [
+   {
+    "team": "Ulsan HD FC",
+    "in": "Yago Cariello",
+    "out": "Gyu-Sung Lee",
+    "minute": "46"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Erick Farias",
+    "out": "Heui-Kyun Lee",
+    "minute": "57"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Darijan Bojanić",
+    "out": "Yong-Woo Park",
+    "minute": "67"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "In-Woo Back",
+    "out": "Jin-Hyun Lee",
+    "minute": "86"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Sang-Min Sim",
+    "out": "Jong-Gyu Yeun",
+    "minute": "86"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Chul Hong",
+    "out": "Abdelkarim Mammar Chaouche",
+    "minute": "64"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Eun-Ho Lee",
+    "out": "Young-Joon Goh",
+    "minute": "75"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Seung-Won Lee",
+    "out": "Min-Woo Seo",
+    "minute": "75"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Gun-Hee Kim",
+    "out": "Dae-Won Kim",
+    "minute": "75"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Abdalla Halaihal",
+    "out": "Byeong-Chan Choi",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Kim Yong-Woo",
+  "attendance": 7038,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-1"
+  }
+ }
+}

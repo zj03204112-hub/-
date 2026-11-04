@@ -1,0 +1,145 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "29",
+ "match_id": "kleague1-2026-27-2026-09-12-bucheonfc1995-jejusk",
+ "date": "2026-09-12",
+ "home": "Bucheon FC 1995",
+ "away": "Jeju SK",
+ "score": "2-2",
+ "halftime_score": "1-2",
+ "official_match_url": "https://www.fotmob.com/matches/5140030",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140030"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hyung-Keun Kim",
+   "Patrick",
+   "Dong-Gyu Baek",
+   "Sung-Wook Hong",
+   "Tae-Hyun An",
+   "Bit-Garam Yoon",
+   "Ye-Geon Sung",
+   "Seung-Bin Kim",
+   "Rodrigo Bassani da Cruz",
+   "Gustavo Nescau",
+   "Galego"
+  ],
+  "home_bench": [
+   "Jong-Woo Kim",
+   "Thiaguinho Santos",
+   "Sang-Jun Kim",
+   "Min-Jun Kim",
+   "Seong-Jun Jo",
+   "Sang-Hyeon Lee",
+   "Ho-Jin Jeong",
+   "Jong-Min Kim",
+   "Eui-Hyeong Lee"
+  ],
+  "away_starting_xi": [
+   "Dong-Jun Kim",
+   "Min-Jae Park",
+   "Tobias Figueiredo",
+   "Julien Célestine",
+   "In-Soo Yu",
+   "Su-Bin Park",
+   "Italo",
+   "Min-Kyu Jang",
+   "Sang-Eun Shin",
+   "Eraldo Çinari",
+   "Matheus Aiás"
+  ],
+  "away_bench": [
+   "Byung-Wook Choi",
+   "Jae-Min Kim",
+   "Shin-Jin Kim",
+   "Ja-Ung Heo",
+   "Jae-Woo Kim",
+   "Kang-Jun Heo",
+   "Woon Jeong",
+   "Dong-Hwi Kang",
+   "In-Jung Jo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Jong-Woo Kim",
+    "out": "Ye-Geon Sung",
+    "minute": "52"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Thiaguinho Santos",
+    "out": "Gustavo Nescau",
+    "minute": "61"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Sang-Jun Kim",
+    "out": "Bit-Garam Yoon",
+    "minute": "90"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Seong-Jun Jo",
+    "out": "Tae-Hyun An",
+    "minute": "90"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Min-Jun Kim",
+    "out": "Seung-Bin Kim",
+    "minute": "90"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Byung-Wook Choi",
+    "out": "Eraldo Çinari",
+    "minute": "61"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Jae-Min Kim",
+    "out": "Sang-Eun Shin",
+    "minute": "72"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Shin-Jin Kim",
+    "out": "Su-Bin Park",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Ko Hyung-Jin",
+  "attendance": 6269,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-2"
+  }
+ }
+}

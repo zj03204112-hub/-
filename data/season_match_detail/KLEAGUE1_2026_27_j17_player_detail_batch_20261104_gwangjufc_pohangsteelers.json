@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "17",
+ "match_id": "kleague1-2026-27-2026-07-11-gwangjufc-pohangsteelers",
+ "date": "2026-07-11",
+ "home": "Gwangju FC",
+ "away": "Pohang Steelers",
+ "score": "0-3",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5139959",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139959"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kyeong-Min Kim",
+   "Seong-Yun Kwon",
+   "Teun van Grunsven",
+   "Young-Kyu Ahn",
+   "Seung-Un Ha",
+   "Se-Jong Joo",
+   "Yong-Jun Hong",
+   "Je-Ho Yu",
+   "Min-Seo Moon",
+   "Ji-Hoon Jeong",
+   "John Iredale"
+  ],
+  "home_bench": [
+   "João Pedro",
+   "Adriel Ba Loua",
+   "Hólmbert Fridjónsson",
+   "Jin-Woo Bae",
+   "Won-Jae Park",
+   "Dong-Hwa Kim",
+   "Seung-Gyeom Im",
+   "Seong-Hyun Park",
+   "Woo-Jin Kim"
+  ],
+  "away_starting_xi": [
+   "Sung-Min Hong",
+   "Jeong-Won Eo",
+   "Chan-Yong Park",
+   "Min-Kwang Jeon",
+   "Wanderson",
+   "Dong-Jin Kim",
+   "Sung-Yueng Ki",
+   "Kento Nishiya",
+   "Jae-Joon An",
+   "Ho-Jae Lee",
+   "Jakob Tranziska"
+  ],
+  "away_bench": [
+   "Sang-Hyeok Cho",
+   "Han-Min Jung",
+   "Ho-Jin Kim",
+   "Seo-Woong Hwang",
+   "Seung-Ho Kim",
+   "In-Jae Hwang",
+   "Si-Woo Jin",
+   "Ye-Sung Kim",
+   "Chang-Woo Lee"
+  ],
+  "substitution_events": [
+   {
+    "team": "Gwangju FC",
+    "in": "João Pedro",
+    "out": "Yong-Jun Hong",
+    "minute": "46"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Hólmbert Fridjónsson",
+    "out": "Se-Jong Joo",
+    "minute": "46"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Adriel Ba Loua",
+    "out": "Young-Kyu Ahn",
+    "minute": "46"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Jin-Woo Bae",
+    "out": "Seong-Yun Kwon",
+    "minute": "55"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Won-Jae Park",
+    "out": "Ji-Hoon Jeong",
+    "minute": "72"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Sang-Hyeok Cho",
+    "out": "Jae-Joon An",
+    "minute": "46"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Han-Min Jung",
+    "out": "Jakob Tranziska",
+    "minute": "61"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Ho-Jin Kim",
+    "out": "Dong-Jin Kim",
+    "minute": "68"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Seo-Woong Hwang",
+    "out": "Ho-Jae Lee",
+    "minute": "68"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Seung-Ho Kim",
+    "out": "Sung-Yueng Ki",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 3
+  },
+  "provider_score": "0-3",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 3633,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

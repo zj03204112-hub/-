@@ -1,0 +1,60 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026",
+ "scheduled_fixtures_scanned": 222,
+ "completed_fixtures": 204,
+ "upcoming_fixtures": 18,
+ "competition_segments": {
+  "K-League 1": 198,
+  "K-League 1 Final Group A": 12,
+  "K-League 1 Final Group B": 12
+ },
+ "fixtures_with_player_detail": 204,
+ "player_rows": 8141,
+ "starting_xi_rows": 4488,
+ "substitution_rows": 1910,
+ "event_rows": 1274,
+ "events_by_type": {
+  "goal": 454,
+  "yellow_card": 731,
+  "red_card": 25,
+  "second_yellow": 11,
+  "penalty_goal": 41,
+  "own_goal": 12
+ },
+ "shot_rows": 5116,
+ "shot_goals": 507,
+ "event_goals": 507,
+ "match_meta_rows": 204,
+ "meta_missing": {
+  "ManagerHome": 0,
+  "ManagerAway": 0,
+  "Venue": 0,
+  "Referee": 131
+ },
+ "xg_shots_with_value": 5100,
+ "xg_total": 592.85,
+ "score_crosscheck": {
+  "reference": "https://www.flashscore.com/football/south-korea/k-league-1/",
+  "batches": 204,
+  "matched": 105,
+  "mismatches": 0,
+  "unmatched": 99,
+  "result": "review required"
+ },
+ "verification_gap": "Flashscore's K League feed only reaches back to 2026-07-12, so 99 early-season fixtures (Feb to early July) have no independent scoreline reference yet. The repository baseline from matchesio.com mixes K League 1 and 2 rows and uses float score strings, so it was not used.",
+ "sources": {
+  "fixtures_lineups_events_shots": "FotMob public match API",
+  "scores_crosscheck_partial": "Flashscore competition feed (July onward)"
+ },
+ "known_gaps": [
+  "99 early-season fixtures lack an independent scoreline check.",
+  "Lineups, cards and shots come from a single provider (FotMob).",
+  "18 fixtures remain unplayed."
+ ],
+ "pipeline": [
+  "data_pipeline/collect_kleague1_fotmob.py",
+  "data_pipeline/crosscheck_kleague1_scores_flashscore.py"
+ ]
+}

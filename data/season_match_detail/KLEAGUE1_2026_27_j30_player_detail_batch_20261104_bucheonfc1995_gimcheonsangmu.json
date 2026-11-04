@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "30",
+ "match_id": "kleague1-2026-27-2026-09-19-bucheonfc1995-gimcheonsangmu",
+ "date": "2026-09-19",
+ "home": "Bucheon FC 1995",
+ "away": "Gimcheon Sangmu",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5140036",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140036"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hyung-Keun Kim",
+   "Ho-Jin Jeong",
+   "Patrick",
+   "Sung-Wook Hong",
+   "Thiaguinho Santos",
+   "Bit-Garam Yoon",
+   "Sang-Jun Kim",
+   "Tae-Hyun An",
+   "Rodrigo Bassani da Cruz",
+   "Galego",
+   "Seung-Bin Kim"
+  ],
+  "home_bench": [
+   "Gustavo Nescau",
+   "Jong-Woo Kim",
+   "Min-Jun Kim",
+   "Jong-Min Kim",
+   "Ye-Geon Sung",
+   "Sang-Hyeon Lee",
+   "Dong-Gyu Baek",
+   "Eui-Hyeong Lee",
+   "Seong-Jun Jo"
+  ],
+  "away_starting_xi": [
+   "Man-Ho Park",
+   "Tae-Hwan Kim",
+   "Hyun-Woo Kim",
+   "Jung-Taek Lee",
+   "Cheol-Woo Park",
+   "Jae-Hyun Go",
+   "Tae-Joon Park",
+   "Soo-Bin Lee",
+   "Yun-Sang Hong",
+   "Sang-Heon Lee",
+   "Jae-Min Jeong"
+  ],
+  "away_bench": [
+   "Kang-Hyeon Lee",
+   "Kun-Hee Lee",
+   "Se-Jin Park",
+   "Yi-Seok Kim",
+   "Min-Kyu Kim",
+   "Joon-Soo Ahn",
+   "Min-Seo Park",
+   "Si-Hoo Hong",
+   "Jae-Seok Yoon"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Gustavo Nescau",
+    "out": "Seung-Bin Kim",
+    "minute": "70"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Jong-Woo Kim",
+    "out": "Sang-Jun Kim",
+    "minute": "80"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Min-Jun Kim",
+    "out": "Rodrigo Bassani da Cruz",
+    "minute": "80"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Jong-Min Kim",
+    "out": "Tae-Hyun An",
+    "minute": "90"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Ye-Geon Sung",
+    "out": "Bit-Garam Yoon",
+    "minute": "90"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Kun-Hee Lee",
+    "out": "Jae-Min Jeong",
+    "minute": "62"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Kang-Hyeon Lee",
+    "out": "Soo-Bin Lee",
+    "minute": "62"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Se-Jin Park",
+    "out": "Sang-Heon Lee",
+    "minute": "62"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Yi-Seok Kim",
+    "out": "Tae-Joon Park",
+    "minute": "80"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Min-Kyu Kim",
+    "out": "Hyun-Woo Kim",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Lee Dong-Jun",
+  "attendance": 4602,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-2"
+  }
+ }
+}

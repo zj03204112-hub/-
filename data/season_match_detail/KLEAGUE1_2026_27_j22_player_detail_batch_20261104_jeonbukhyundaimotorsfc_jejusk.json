@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "22",
+ "match_id": "kleague1-2026-27-2026-08-08-jeonbukhyundaimotorsfc-jejusk",
+ "date": "2026-08-08",
+ "home": "Jeonbuk Hyundai Motors FC",
+ "away": "Jeju SK",
+ "score": "1-3",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5139992",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139992"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bum-Keun Song",
+   "Tae-Hwan Kim",
+   "Wi-Je Cho",
+   "Young-Bin Kim",
+   "Woo-Jin Choi",
+   "Seong-Ung Maeng",
+   "Jin-Gyu Kim",
+   "Dong-Jun Lee",
+   "Sang-Yun Kang",
+   "Seung-Woo Lee",
+   "Gytis Paulauskas"
+  ],
+  "home_bench": [
+   "Andrea Compagno",
+   "Yeong-Jae Lee",
+   "Italo",
+   "Tae-Hyun Kim",
+   "Ye-Geon Kim",
+   "Ju-Hyeon Lee",
+   "Ji-Soo Park",
+   "João Gamboa",
+   "Seung-Sub Kim"
+  ],
+  "away_starting_xi": [
+   "Dong-Jun Kim",
+   "In-Soo Yu",
+   "Tobias Figueiredo",
+   "Julien Célestine",
+   "In-Jung Jo",
+   "Min-Kyu Jang",
+   "Byung-Wook Choi",
+   "Italo",
+   "Chang-Min Lee",
+   "Negueba",
+   "Shin-Jin Kim"
+  ],
+  "away_bench": [
+   "Matheus Aiás",
+   "Chang-Jun Park",
+   "Gi-Min Kwon",
+   "Woon Jeong",
+   "Min-Jae Park",
+   "Jae-Won Heo",
+   "Jae-Woo Kim",
+   "Dong-Hwi Kang",
+   "Sang-Eun Shin"
+  ],
+  "substitution_events": [
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Andrea Compagno",
+    "out": "Gytis Paulauskas",
+    "minute": "67"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Yeong-Jae Lee",
+    "out": "Seong-Ung Maeng",
+    "minute": "77"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Italo",
+    "out": "Dong-Jun Lee",
+    "minute": "77"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Ye-Geon Kim",
+    "out": "Sang-Yun Kang",
+    "minute": "87"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Tae-Hyun Kim",
+    "out": "Tae-Hwan Kim",
+    "minute": "87"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Matheus Aiás",
+    "out": "Shin-Jin Kim",
+    "minute": "17"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Chang-Jun Park",
+    "out": "Byung-Wook Choi",
+    "minute": "62"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Woon Jeong",
+    "out": "In-Jung Jo",
+    "minute": "68"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Gi-Min Kwon",
+    "out": "Chang-Min Lee",
+    "minute": "68"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Min-Jae Park",
+    "out": "In-Soo Yu",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "Min-Seok Song",
+  "attendance": 10246,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-3"
+  }
+ }
+}

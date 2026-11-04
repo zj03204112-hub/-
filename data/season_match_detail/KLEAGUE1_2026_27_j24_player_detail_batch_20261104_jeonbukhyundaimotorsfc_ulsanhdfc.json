@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "24",
+ "match_id": "kleague1-2026-27-2026-08-22-jeonbukhyundaimotorsfc-ulsanhdfc",
+ "date": "2026-08-22",
+ "home": "Jeonbuk Hyundai Motors FC",
+ "away": "Ulsan HD FC",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5140002",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140002"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bum-Keun Song",
+   "Tae-Hwan Kim",
+   "Wi-Je Cho",
+   "Young-Bin Kim",
+   "Woo-Jin Choi",
+   "Seong-Ung Maeng",
+   "Jin-Gyu Kim",
+   "Dong-Jun Lee",
+   "Sang-Yun Kang",
+   "Seung-Woo Lee",
+   "Bruno Mota"
+  ],
+  "home_bench": [
+   "Tae-Hyun Kim",
+   "Tiago Orobó",
+   "João Gamboa",
+   "Italo",
+   "Seung-Sub Kim",
+   "Ju-Hyeon Lee",
+   "Ha-Jun Kim",
+   "Ji-Soo Park",
+   "Yeong-Jae Lee"
+  ],
+  "away_starting_xi": [
+   "Hyeon-Woo Jo",
+   "Myeong-Kwan Seo",
+   "Seung-Hyeon Jung",
+   "Young-Gwon Kim",
+   "Sang-Min Sim",
+   "Gyu-Sung Lee",
+   "Thomas Kotte",
+   "Hyun-Taek Cho",
+   "Jin-Hyun Lee",
+   "Dong-Gyeong Lee",
+   "Heui-Kyun Lee"
+  ],
+  "away_bench": [
+   "Jae-Ik Lee",
+   "Marcão",
+   "Darijan Bojanic",
+   "Si-Young Jang",
+   "Benji Michel",
+   "Byeong-Geun Hwang",
+   "Seok-Hyeon Choi",
+   "Min-Seo Jo",
+   "Sang-Woo Kang"
+  ],
+  "substitution_events": [
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Tae-Hyun Kim",
+    "out": "Woo-Jin Choi",
+    "minute": "46"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Tiago Orobó",
+    "out": "Bruno Mota",
+    "minute": "65"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "João Gamboa",
+    "out": "Seong-Ung Maeng",
+    "minute": "76"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Italo",
+    "out": "Seung-Woo Lee",
+    "minute": "76"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Seung-Sub Kim",
+    "out": "Dong-Jun Lee",
+    "minute": "82"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Jae-Ik Lee",
+    "out": "Young-Gwon Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Marcão",
+    "out": "Heui-Kyun Lee",
+    "minute": "60"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Darijan Bojanic",
+    "out": "Jin-Hyun Lee",
+    "minute": "64"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Benji Michel",
+    "out": "Gyu-Sung Lee",
+    "minute": "82"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Si-Young Jang",
+    "out": "Sang-Min Sim",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "Ko Hyung-Jin",
+  "attendance": 18841,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-0"
+  }
+ }
+}

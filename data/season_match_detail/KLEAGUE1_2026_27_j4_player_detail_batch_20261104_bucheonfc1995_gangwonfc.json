@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "kleague1-2026-27-2026-03-18-bucheonfc1995-gangwonfc",
+ "date": "2026-03-18",
+ "home": "Bucheon FC 1995",
+ "away": "Gangwon FC",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5139881",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139881"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hyeon-Yeop Kim",
+   "Ho-Jin Jeong",
+   "Patrick",
+   "Sung-Wook Hong",
+   "Thiaguinho Santos",
+   "Kazuki Takahashi",
+   "Sang-Jun Kim",
+   "Tae-Hyun An",
+   "Eui-Hyeong Lee",
+   "Ji-Ho Han",
+   "John Montaño"
+  ],
+  "home_bench": [
+   "Galego",
+   "Dong-Hyun Kim",
+   "Jae-Won Shin",
+   "Hyung-Keun Kim",
+   "Dong-Gyu Baek",
+   "Sang-Hyeok Lee",
+   "Bit-Garam Yoon",
+   "Shin Seong",
+   "Dam Uh"
+  ],
+  "away_starting_xi": [
+   "Chung-Hyo Park",
+   "Do-Hyun Kim",
+   "Min-Ha Shin",
+   "Marko Tuci",
+   "Jun-Seok Song",
+   "Jae-Hyeon Mo",
+   "Min-Woo Seo",
+   "Gi-Hyuk Lee",
+   "Dae-Won Kim",
+   "Seung-Won Lee",
+   "Sang-Hyeok Park"
+  ],
+  "away_bench": [
+   "Joon-hyuck Kang",
+   "Abdalla Halaihal",
+   "You-Hyeon Lee",
+   "Ji-Ho Lee",
+   "Byeong-Chan Choi",
+   "Jung-Hoon Kim",
+   "Ho-Young Park",
+   "Hyun-Tae Jo",
+   "Yun-Gu Kang"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Galego",
+    "out": "Ji-Ho Han",
+    "minute": "61"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Dong-Hyun Kim",
+    "out": "Eui-Hyeong Lee",
+    "minute": "76"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Jae-Won Shin",
+    "out": "Thiaguinho Santos",
+    "minute": "89"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Abdalla Halaihal",
+    "out": "Sang-Hyeok Park",
+    "minute": "55"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Joon-hyuck Kang",
+    "out": "Jun-Seok Song",
+    "minute": "55"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "You-Hyeon Lee",
+    "out": "Min-Woo Seo",
+    "minute": "64"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Byeong-Chan Choi",
+    "out": "Do-Hyun Kim",
+    "minute": "86"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Ji-Ho Lee",
+    "out": "Dae-Won Kim",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 3132,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

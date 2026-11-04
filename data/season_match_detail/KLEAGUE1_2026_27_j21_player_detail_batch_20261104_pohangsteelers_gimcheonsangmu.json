@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "21",
+ "match_id": "kleague1-2026-27-2026-08-01-pohangsteelers-gimcheonsangmu",
+ "date": "2026-08-01",
+ "home": "Pohang Steelers",
+ "away": "Gimcheon Sangmu",
+ "score": "0-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5139984",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139984"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Sung-Min Hong",
+   "Kwang-Hoon Shin",
+   "Chan-Yong Park",
+   "Ho-Jin Kim",
+   "Jeong-Won Eo",
+   "Dong-Jin Kim",
+   "Sung-Yueng Ki",
+   "Wanderson",
+   "Jae-Joon An",
+   "Sang-Hyeok Cho",
+   "Jakob Tranziska"
+  ],
+  "home_bench": [
+   "Kento Nishiya",
+   "Seo-Woong Hwang",
+   "Ki-Jong Won",
+   "Seung-Ho Kim",
+   "Gwang-Won Kim",
+   "Pyung-Gook Yoon",
+   "Min-Jun Kang",
+   "Si-Woo Jin",
+   "Chang-Woo Lee"
+  ],
+  "away_starting_xi": [
+   "Jong-Beom Baek",
+   "Tae-Hwan Kim",
+   "Jun-Soo Byeon",
+   "Jung-Taek Lee",
+   "Cheol-Woo Park",
+   "Kang-Hyeon Lee",
+   "Jae-Hyun Go",
+   "Se-Jin Park",
+   "Tae-Joon Park",
+   "Yun-Sang Hong",
+   "Jae-Min Jeong"
+  ],
+  "away_bench": [
+   "Joo-Chan Kim",
+   "Yi-Seok Kim",
+   "Si-Hoo Hong",
+   "Byung-Kwan Jeon",
+   "Soo-Bin Lee",
+   "Hyeon-Ho Moon",
+   "Deok-Geun Lim",
+   "Jin-Seong Park",
+   "In-Kyun Kim"
+  ],
+  "substitution_events": [
+   {
+    "team": "Pohang Steelers",
+    "in": "Seo-Woong Hwang",
+    "out": "Ho-Jin Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Kento Nishiya",
+    "out": "Jae-Joon An",
+    "minute": "46"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Ki-Jong Won",
+    "out": "Sang-Hyeok Cho",
+    "minute": "56"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Seung-Ho Kim",
+    "out": "Sung-Yueng Ki",
+    "minute": "72"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Gwang-Won Kim",
+    "out": "Kwang-Hoon Shin",
+    "minute": "80"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Yi-Seok Kim",
+    "out": "Se-Jin Park",
+    "minute": "66"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Joo-Chan Kim",
+    "out": "Yun-Sang Hong",
+    "minute": "66"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Byung-Kwan Jeon",
+    "out": "Jae-Hyun Go",
+    "minute": "78"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Si-Hoo Hong",
+    "out": "Tae-Hwan Kim",
+    "minute": "78"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Soo-Bin Lee",
+    "out": "Kang-Hyeon Lee",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 5316,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-1"
+  }
+ }
+}

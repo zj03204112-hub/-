@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "kleague1-2026-27-2026-03-01-jeonbukhyundaimotorsfc-bucheonfc1995",
+ "date": "2026-03-01",
+ "home": "Jeonbuk Hyundai Motors FC",
+ "away": "Bucheon FC 1995",
+ "score": "2-3",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5139865",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139865"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Bum-Keun Song",
+   "Tae-Hwan Kim",
+   "Ji-Soo Park",
+   "Young-Bin Kim",
+   "Tae-Hyun Kim",
+   "Oberdan",
+   "Seong-Ung Maeng",
+   "Dong-Jun Lee",
+   "Jin-Gyu Kim",
+   "Seung-Sub Kim",
+   "Bruno Mota"
+  ],
+  "home_bench": [
+   "Seung-Woo Lee",
+   "Tiago Orobó",
+   "Patrick Twumasi",
+   "Yeong-Jae Lee",
+   "Ju-Hyeon Lee",
+   "Je-Woon Yeon",
+   "Wi-Je Cho",
+   "Woo-Jin Choi",
+   "Tae-Ho Jin"
+  ],
+  "away_starting_xi": [
+   "Hyung-Keun Kim",
+   "Sung-Wook Hong",
+   "Dong-Gyu Baek",
+   "Patrick",
+   "Jae-Won Shin",
+   "Bit-Garam Yoon",
+   "Kazuki Takahashi",
+   "Seung-Bin Kim",
+   "Tae-Hyun An",
+   "Rodrigo Bassani da Cruz",
+   "John Montaño"
+  ],
+  "away_bench": [
+   "Galego",
+   "Jong-Woo Kim",
+   "Ji-Ho Han",
+   "Sang-Jun Kim",
+   "Hyeon-Yeop Kim",
+   "Jong-Min Kim",
+   "Seung-Hyun Yu",
+   "Ye-Chan Lee",
+   "Chung-Hyun Lee"
+  ],
+  "substitution_events": [
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Seung-Woo Lee",
+    "out": "Jin-Gyu Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Tiago Orobó",
+    "out": "Bruno Mota",
+    "minute": "75"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Patrick Twumasi",
+    "out": "Dong-Jun Lee",
+    "minute": "90"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Yeong-Jae Lee",
+    "out": "Seong-Ung Maeng",
+    "minute": "90"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Galego",
+    "out": "Seung-Bin Kim",
+    "minute": "15"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Jong-Woo Kim",
+    "out": "Kazuki Takahashi",
+    "minute": "63"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Ji-Ho Han",
+    "out": "Rodrigo Bassani da Cruz",
+    "minute": "76"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Sang-Jun Kim",
+    "out": "Bit-Garam Yoon",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 20681,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

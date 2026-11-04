@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "27",
+ "match_id": "kleague1-2026-27-2026-09-06-fcanyang-gangwonfc",
+ "date": "2026-09-06",
+ "home": "FC Anyang",
+ "away": "Gangwon FC",
+ "score": "0-3",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5140022",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140022"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jeong-Hoon Kim",
+   "Hyun-Woo Joo",
+   "Chang-Yong Lee",
+   "Kyung-Won Kwon",
+   "Dong-Jin Kim",
+   "Matheus Oliveira Santos",
+   "Jeong-Hyun Kim",
+   "Danny Bakker",
+   "Hyun-Woo Chae",
+   "Woon Kim",
+   "Airton Moisés"
+  ],
+  "home_bench": [
+   "Jae-Hyeon Kim",
+   "Branislav Knežević",
+   "Geon-Joo Choi",
+   "Blaise Tsague",
+   "Seong-Woo Moon",
+   "Da-Sol Kim",
+   "Ji-Hun Kang",
+   "Young-Chan Kim",
+   "Bo-Kyung Kim"
+  ],
+  "away_starting_xi": [
+   "Chung-Hyo Park",
+   "You-Hyeon Lee",
+   "Ho-Young Park",
+   "Abdelkarim Mammar Chaouche",
+   "Joon-hyuck Kang",
+   "Jae-Hyeon Mo",
+   "Dong-Hyun Kim",
+   "Min-Woo Seo",
+   "Do-Hyun Kim",
+   "Gun-Hee Kim",
+   "Jesse Sekidika"
+  ],
+  "away_bench": [
+   "Abdalla Halaihal",
+   "Sang-Hyeok Park",
+   "Won-Woo Cho",
+   "Eun-Seok Ko",
+   "Seung-Bin Jung",
+   "Min-Kyu Cho",
+   "Seong-Yun Kang",
+   "Dae-Won Kim",
+   "Tae-Hwan Kim"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Anyang",
+    "in": "Geon-Joo Choi",
+    "out": "Hyun-Woo Chae",
+    "minute": "46"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Jae-Hyeon Kim",
+    "out": "Dong-Jin Kim",
+    "minute": "46"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Branislav Knežević",
+    "out": "Jeong-Hyun Kim",
+    "minute": "46"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Blaise Tsague",
+    "out": "Woon Kim",
+    "minute": "59"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Seong-Woo Moon",
+    "out": "Matheus Oliveira Santos",
+    "minute": "76"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Won-Woo Cho",
+    "out": "Jae-Hyeon Mo",
+    "minute": "90"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Abdalla Halaihal",
+    "out": "Gun-Hee Kim",
+    "minute": "90"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Sang-Hyeok Park",
+    "out": "Jesse Sekidika",
+    "minute": "90"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Eun-Seok Ko",
+    "out": "Min-Woo Seo",
+    "minute": "90"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Seung-Bin Jung",
+    "out": "Joon-hyuck Kang",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 3
+  },
+  "provider_score": "0-3",
+  "score_consistent_with_events": true,
+  "referee": "Park Byung-Jin",
+  "attendance": 6044,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-3"
+  }
+ }
+}

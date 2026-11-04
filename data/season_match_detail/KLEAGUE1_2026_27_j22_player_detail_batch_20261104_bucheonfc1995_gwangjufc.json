@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "22",
+ "match_id": "kleague1-2026-27-2026-08-08-bucheonfc1995-gwangjufc",
+ "date": "2026-08-08",
+ "home": "Bucheon FC 1995",
+ "away": "Gwangju FC",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5139989",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139989"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hyeon-Yeop Kim",
+   "Patrick",
+   "Dong-Gyu Baek",
+   "Sung-Wook Hong",
+   "Bong-Hun Yeo",
+   "Ye-Geon Sung",
+   "Sang-Jun Kim",
+   "Tae-Hyun An",
+   "Rodrigo Bassani da Cruz",
+   "Vitor Gabriel",
+   "Galego"
+  ],
+  "home_bench": [
+   "Jong-Woo Kim",
+   "Thiaguinho Santos",
+   "Seung-Bin Kim",
+   "Jeong-In Park",
+   "Min-Jun Kim",
+   "Chan-Young Kim",
+   "Ho-Jin Jeong",
+   "Jae-Won Lee",
+   "Eui-Hyeong Lee"
+  ],
+  "away_starting_xi": [
+   "Kyeong-Min Kim",
+   "Seong-Yun Kwon",
+   "Teun van Grunsven",
+   "Young-Kyu Ahn",
+   "João Pedro",
+   "Chang-Moo Sin",
+   "Yong-Jik Ri",
+   "Je-Ho Yu",
+   "Woo-Jin Kim",
+   "Hólmbert Fridjónsson",
+   "John Iredale"
+  ],
+  "away_bench": [
+   "Min-Seo Moon",
+   "Adriel Ba Loua",
+   "Jong-Seok Kim",
+   "Seok-Hwan Jang",
+   "Seung-Un Ha",
+   "Dong-Hwa Kim",
+   "Min-Gi Lee",
+   "Seung-Gyeom Im",
+   "Se-Jong Joo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Seung-Bin Kim",
+    "out": "Galego",
+    "minute": "66"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Jong-Woo Kim",
+    "out": "Sang-Jun Kim",
+    "minute": "66"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Thiaguinho Santos",
+    "out": "Bong-Hun Yeo",
+    "minute": "66"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Jeong-In Park",
+    "out": "Vitor Gabriel",
+    "minute": "81"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Min-Jun Kim",
+    "out": "Rodrigo Bassani da Cruz",
+    "minute": "90"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Min-Seo Moon",
+    "out": "Woo-Jin Kim",
+    "minute": "58"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Adriel Ba Loua",
+    "out": "Chang-Moo Sin",
+    "minute": "58"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Jong-Seok Kim",
+    "out": "Je-Ho Yu",
+    "minute": "68"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Seok-Hwan Jang",
+    "out": "Young-Kyu Ahn",
+    "minute": "88"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Seung-Un Ha",
+    "out": "Hólmbert Fridjónsson",
+    "minute": "88"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "Yong-Jun Shin",
+  "attendance": 5187,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-0"
+  }
+ }
+}

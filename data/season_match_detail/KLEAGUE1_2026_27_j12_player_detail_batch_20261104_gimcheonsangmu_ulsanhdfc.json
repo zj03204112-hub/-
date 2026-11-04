@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "12",
+ "match_id": "kleague1-2026-27-2026-05-05-gimcheonsangmu-ulsanhdfc",
+ "date": "2026-05-05",
+ "home": "Gimcheon Sangmu",
+ "away": "Ulsan HD FC",
+ "score": "1-2",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5139932",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139932"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hyeon-Ho Moon",
+   "Chan-Wook Lee",
+   "Deok-Geun Lim",
+   "Jung-Taek Lee",
+   "Si-Hoo Hong",
+   "Se-Jin Park",
+   "Kang-Hyeon Lee",
+   "Cheol-Woo Park",
+   "Jae-Hyun Go",
+   "Kun-Hee Lee",
+   "Joo-Chan Kim"
+  ],
+  "home_bench": [
+   "Sang-Heon Lee",
+   "In-Kyun Kim",
+   "Tae-Joon Park",
+   "Jun-Soo Byeon",
+   "Tae-Hwan Kim",
+   "Jong-Beom Baek",
+   "Jin-Seong Park",
+   "Soo-Bin Lee",
+   "Jae-Seok Yoon"
+  ],
+  "away_starting_xi": [
+   "Hyeon-Woo Jo",
+   "Seok-Hyeon Choi",
+   "Myeong-Kwan Seo",
+   "Jae-Ik Lee",
+   "Hyun-Taek Cho",
+   "Milosz Trojak",
+   "Jin-Hyun Lee",
+   "Dong-Gyeong Lee",
+   "Darijan Bojanic",
+   "Sang-Woo Kang",
+   "Marcão"
+  ],
+  "away_bench": [
+   "Gyu-Sung Lee",
+   "Yago Cariello",
+   "Young-Gwon Kim",
+   "Heui-Kyun Lee",
+   "Benji Michel",
+   "Seong-Min Ryu",
+   "Sang-Min Sim",
+   "Seung-Hyeon Jung",
+   "In-Woo Back"
+  ],
+  "substitution_events": [
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Sang-Heon Lee",
+    "out": "Joo-Chan Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "In-Kyun Kim",
+    "out": "Se-Jin Park",
+    "minute": "58"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Tae-Joon Park",
+    "out": "Kang-Hyeon Lee",
+    "minute": "59"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Jun-Soo Byeon",
+    "out": "Jung-Taek Lee",
+    "minute": "82"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Tae-Hwan Kim",
+    "out": "Si-Hoo Hong",
+    "minute": "85"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Gyu-Sung Lee",
+    "out": "Darijan Bojanic",
+    "minute": "9"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Yago Cariello",
+    "out": "Marcão",
+    "minute": "59"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Young-Gwon Kim",
+    "out": "Milosz Trojak",
+    "minute": "78"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Heui-Kyun Lee",
+    "out": "Dong-Gyeong Lee",
+    "minute": "78"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Benji Michel",
+    "out": "Sang-Woo Kang",
+    "minute": "78"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 3603,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

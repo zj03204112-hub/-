@@ -1,0 +1,151 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "17",
+ "match_id": "kleague1-2026-27-2026-07-12-incheonunited-fcanyang",
+ "date": "2026-07-12",
+ "home": "Incheon United",
+ "away": "FC Anyang",
+ "score": "0-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5139961",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139961"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dong-Heon Kim",
+   "Myung-Soon Kim",
+   "Gun-Hee Kim",
+   "Juan Ibiza",
+   "Ju-Yong Lee",
+   "Dong-Ryul Lee",
+   "Jae-Min Seo",
+   "Young-Whan Kim",
+   "Gerso Fernandes",
+   "Chung-Yong Lee",
+   "Morgan Ferrier"
+  ],
+  "home_bench": [
+   "Stefan Mugosa",
+   "Chi-In Jung",
+   "Seung-Gu Choi",
+   "Iker Undabarrena",
+   "Tae-Hee Lee",
+   "Kyung-Sub Park",
+   "Sang-Ki Lee",
+   "Seong-Min Kim",
+   "Seung-Ho Park"
+  ],
+  "away_starting_xi": [
+   "Jeong-Hoon Kim",
+   "Tae-Hee Lee",
+   "Chang-Yong Lee",
+   "Kyung-Won Kwon",
+   "Jae-Hyeon Kim",
+   "Matheus Oliveira Santos",
+   "Jeong-Hyun Kim",
+   "Gyu-Hyeon Choe",
+   "Geon-Joo Choi",
+   "Breno Herculano",
+   "Hyun-Woo Chae"
+  ],
+  "away_bench": [
+   "Seong-Woo Moon",
+   "Woon Kim",
+   "Jin-Yong Lee",
+   "Ji-Hun Kang",
+   "Branislav Knezevic",
+   "Da-Sol Kim",
+   "Dong-Jin Kim",
+   "Young-Chan Kim",
+   "Bo-Kyung Kim"
+  ],
+  "substitution_events": [
+   {
+    "team": "Incheon United",
+    "in": "Stefan Mugosa",
+    "out": "Gerso Fernandes",
+    "minute": "46"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Chi-In Jung",
+    "out": "Dong-Ryul Lee",
+    "minute": "65"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Iker Undabarrena",
+    "out": "Young-Whan Kim",
+    "minute": "78"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Seung-Gu Choi",
+    "out": "Myung-Soon Kim",
+    "minute": "78"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Woon Kim",
+    "out": "Breno Herculano",
+    "minute": "60"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Seong-Woo Moon",
+    "out": "Geon-Joo Choi",
+    "minute": "60"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Jin-Yong Lee",
+    "out": "Jeong-Hyun Kim",
+    "minute": "65"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Branislav Knezevic",
+    "out": "Gyu-Hyeon Choe",
+    "minute": "82"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Ji-Hun Kang",
+    "out": "Hyun-Woo Chae",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 1
+  },
+  "provider_score": "0-1",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 10616,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-1"
+  }
+ }
+}

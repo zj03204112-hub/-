@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "17",
+ "match_id": "kleague1-2026-27-2026-07-12-jejusk-daejeonhanacitizen",
+ "date": "2026-07-12",
+ "home": "Jeju SK",
+ "away": "Daejeon Hana Citizen",
+ "score": "0-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5139962",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139962"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dong-Jun Kim",
+   "Gi-Min Kwon",
+   "Tobias Figueiredo",
+   "Julien Célestine",
+   "In-Soo Yu",
+   "Italo",
+   "Chang-Woo Rim",
+   "Ryun-Sung Kim",
+   "Jae-Hyeok Oh",
+   "Chang-Jun Park",
+   "Tae-Hee Nam"
+  ],
+  "home_bench": [
+   "Jun-Ha Kim",
+   "Min-Kyu Jang",
+   "Sang-Eun Shin",
+   "Byung-Wook Choi",
+   "In-Jung Jo",
+   "Chan-Gi An",
+   "Geon-Woong Kim",
+   "Chang-Min Lee",
+   "Shin-Jin Kim"
+  ],
+  "away_starting_xi": [
+   "Chang-Geun Lee",
+   "Moon-Hwan Kim",
+   "Chang-Rae Ha",
+   "Sung-Kwon Jo",
+   "Yoon-Sung Kang",
+   "Bong-Soo Kim",
+   "Jin-Su Seo",
+   "Myung-Jae Lee",
+   "João Victor",
+   "Min-Kyu Joo",
+   "Gustav Ludwigson"
+  ],
+  "away_bench": [
+   "Won-Sang Um",
+   "Diogo",
+   "Hyun-Sik Lee",
+   "Kang-Hyun Yoo",
+   "Jae-Hee Jeong",
+   "Min-Soo Kim",
+   "Do-Yeon Kim",
+   "Jin-Ya Kim",
+   "Jong-Eun Lim"
+  ],
+  "substitution_events": [
+   {
+    "team": "Jeju SK",
+    "in": "Jun-Ha Kim",
+    "out": "Chang-Woo Rim",
+    "minute": "34"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Min-Kyu Jang",
+    "out": "Gi-Min Kwon",
+    "minute": "46"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Sang-Eun Shin",
+    "out": "Chang-Jun Park",
+    "minute": "66"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Byung-Wook Choi",
+    "out": "Tae-Hee Nam",
+    "minute": "89"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "In-Jung Jo",
+    "out": "Ryun-Sung Kim",
+    "minute": "89"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Won-Sang Um",
+    "out": "João Victor",
+    "minute": "46"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Diogo",
+    "out": "Min-Kyu Joo",
+    "minute": "64"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Hyun-Sik Lee",
+    "out": "Moon-Hwan Kim",
+    "minute": "70"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Kang-Hyun Yoo",
+    "out": "Jin-Su Seo",
+    "minute": "70"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Jae-Hee Jeong",
+    "out": "Gustav Ludwigson",
+    "minute": "89"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 0
+  },
+  "provider_score": "0-0",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 4028,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-0"
+  }
+ }
+}

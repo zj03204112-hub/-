@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "kleague1-2026-27-2026-04-18-bucheonfc1995-incheonunited",
+ "date": "2026-04-18",
+ "home": "Bucheon FC 1995",
+ "away": "Incheon United",
+ "score": "2-2",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5139906",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139906"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hyung-Keun Kim",
+   "Ho-Jin Jeong",
+   "Dong-Gyu Baek",
+   "Sung-Wook Hong",
+   "Thiaguinho Santos",
+   "Sang-Jun Kim",
+   "Kazuki Takahashi",
+   "Jae-Won Shin",
+   "Galego",
+   "Min-Jun Kim",
+   "John Montaño"
+  ],
+  "home_bench": [
+   "Vitor Gabriel",
+   "Shin Seong",
+   "Ji-Ho Han",
+   "Tae-Hyun An",
+   "Hyeon-Yeop Kim",
+   "Jae-Won Lee",
+   "Sang-Hyeok Lee",
+   "Bit-Garam Yoon",
+   "Dam Uh"
+  ],
+  "away_starting_xi": [
+   "Tae-Hee Lee",
+   "Myung-Soon Kim",
+   "Kyung-Sub Park",
+   "Juan Ibiza",
+   "Seung-Won Yeo",
+   "Gerso Fernandes",
+   "Myeong-Ju Lee",
+   "Jae-Min Seo",
+   "Chung-Yong Lee",
+   "Stefan Mugosa",
+   "Morgan Ferrier"
+  ],
+  "away_bench": [
+   "Ju-Yong Lee",
+   "Chi-In Jung",
+   "Dong-Ryul Lee",
+   "Ho-Min Park",
+   "Hu-Seong Oh",
+   "Dong-Heon Kim",
+   "Gun-Hee Kim",
+   "Iker Undabarrena",
+   "Seung-Gu Choi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Vitor Gabriel",
+    "out": "Min-Jun Kim",
+    "minute": "62"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Ji-Ho Han",
+    "out": "Kazuki Takahashi",
+    "minute": "79"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Shin Seong",
+    "out": "Thiaguinho Santos",
+    "minute": "79"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Tae-Hyun An",
+    "out": "Jae-Won Shin",
+    "minute": "88"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Ju-Yong Lee",
+    "out": "Myung-Soon Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Dong-Ryul Lee",
+    "out": "Morgan Ferrier",
+    "minute": "57"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Chi-In Jung",
+    "out": "Chung-Yong Lee",
+    "minute": "57"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Ho-Min Park",
+    "out": "Gerso Fernandes",
+    "minute": "89"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Hu-Seong Oh",
+    "out": "Stefan Mugosa",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 9314,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

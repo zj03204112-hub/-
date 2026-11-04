@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "31",
+ "match_id": "kleague1-2026-27-2026-10-09-incheonunited-pohangsteelers",
+ "date": "2026-10-09",
+ "home": "Incheon United",
+ "away": "Pohang Steelers",
+ "score": "3-0",
+ "halftime_score": "3-0",
+ "official_match_url": "https://www.fotmob.com/matches/5140044",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140044"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dong-Heon Kim",
+   "Myung-Soon Kim",
+   "Gun-Hee Kim",
+   "Juan Ibiza",
+   "Ju-Yong Lee",
+   "Seong-Min Kim",
+   "Myeong-Ju Lee",
+   "Min-Hyuk Lee",
+   "Leandro",
+   "Chung-Yong Lee",
+   "Stefan Mugoša"
+  ],
+  "home_bench": [
+   "Dong-Ryul Lee",
+   "Gerso Fernandes",
+   "Morgan Ferrier",
+   "Jae-Min Seo",
+   "Seung-Ho Park",
+   "Tae-Hee Lee",
+   "Kyung-Sub Park",
+   "Sang-Ki Lee",
+   "Seung-Gu Choi"
+  ],
+  "away_starting_xi": [
+   "In-Jae Hwang",
+   "Kwang-Hoon Shin",
+   "Min-Kwang Jeon",
+   "Chan-Yong Park",
+   "Jeong-Won Eo",
+   "Wanderson",
+   "Kento Nishiya",
+   "Sung-Yueng Ki",
+   "Dong-Jin Kim",
+   "Juninho",
+   "Jorge Teixeira"
+  ],
+  "away_bench": [
+   "Jakob Tranziska",
+   "Seung-Ho Kim",
+   "Han-Min Jung",
+   "Jae-Joon An",
+   "Min-Jun Kang",
+   "Sung-Min Hong",
+   "Si-Woo Jin",
+   "Ye-Sung Kim",
+   "Chang-Woo Lee"
+  ],
+  "substitution_events": [
+   {
+    "team": "Incheon United",
+    "in": "Dong-Ryul Lee",
+    "out": "Seong-Min Kim",
+    "minute": "63"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Morgan Ferrier",
+    "out": "Stefan Mugoša",
+    "minute": "71"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Gerso Fernandes",
+    "out": "Leandro",
+    "minute": "71"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Jae-Min Seo",
+    "out": "Myeong-Ju Lee",
+    "minute": "81"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Seung-Ho Park",
+    "out": "Chung-Yong Lee",
+    "minute": "81"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Jakob Tranziska",
+    "out": "Kwang-Hoon Shin",
+    "minute": "46"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Seung-Ho Kim",
+    "out": "Kento Nishiya",
+    "minute": "65"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Han-Min Jung",
+    "out": "Sung-Yueng Ki",
+    "minute": "65"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Jae-Joon An",
+    "out": "Jorge Teixeira",
+    "minute": "77"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Min-Jun Kang",
+    "out": "Jeong-Won Eo",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 0
+  },
+  "provider_score": "3-0",
+  "score_consistent_with_events": true,
+  "referee": "Ko Hyung-Jin",
+  "attendance": 12189,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "3-0"
+  }
+ }
+}

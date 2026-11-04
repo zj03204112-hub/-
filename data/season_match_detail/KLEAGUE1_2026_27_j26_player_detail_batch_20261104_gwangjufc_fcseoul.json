@@ -1,0 +1,151 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "26",
+ "match_id": "kleague1-2026-27-2026-08-30-gwangjufc-fcseoul",
+ "date": "2026-08-30",
+ "home": "Gwangju FC",
+ "away": "FC Seoul",
+ "score": "2-5",
+ "halftime_score": "1-3",
+ "official_match_url": "https://www.fotmob.com/matches/5140014",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140014"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dong-Hwa Kim",
+   "Seong-Yun Kwon",
+   "Yong-Jik Ri",
+   "Young-Kyu Ahn",
+   "João Pedro",
+   "Chang-Moo Sin",
+   "Je-Ho Yu",
+   "Kyoung-Rok Choi",
+   "Woo-Jin Kim",
+   "Adriel Ba Loua",
+   "Min-Seo Moon"
+  ],
+  "home_bench": [
+   "John Iredale",
+   "Won-Jae Park",
+   "Ji-Hoon Jeong",
+   "Seok-Hwan Jang",
+   "Yong-Hyuk Kim",
+   "Kyeong-Min Kim",
+   "Sang-Ki Min",
+   "Se-Jong Joo",
+   "Hólmbert Fridjónsson"
+  ],
+  "away_starting_xi": [
+   "Sung-Yun Gu",
+   "Jun Choi",
+   "Yazan Abu Al-Arab",
+   "Juan Antonio",
+   "Jin-Su Kim",
+   "Seung-Won Jung",
+   "Seung-Mo Lee",
+   "Hrvoje Babec",
+   "Anderson Oliveira",
+   "Jeong-Beom Son",
+   "Patryk Klimala"
+  ],
+  "away_bench": [
+   "Seon-Min Moon",
+   "Seong-Hun Park",
+   "Soo-Il Park",
+   "Do-Yoon Hwang",
+   "Hyeon-Mu Kang",
+   "Han-Do Lee",
+   "Jae-Min Ahn",
+   "Jang Han-Gyeol Park",
+   "Seong-Hoon Cheon"
+  ],
+  "substitution_events": [
+   {
+    "team": "Gwangju FC",
+    "in": "John Iredale",
+    "out": "Min-Seo Moon",
+    "minute": "46"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Won-Jae Park",
+    "out": "João Pedro",
+    "minute": "66"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Ji-Hoon Jeong",
+    "out": "Adriel Ba Loua",
+    "minute": "79"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Seok-Hwan Jang",
+    "out": "Seong-Yun Kwon",
+    "minute": "86"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Yong-Hyuk Kim",
+    "out": "Je-Ho Yu",
+    "minute": "86"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Seon-Min Moon",
+    "out": "Jeong-Beom Son",
+    "minute": "63"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Seong-Hun Park",
+    "out": "Yazan Abu Al-Arab",
+    "minute": "73"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Soo-Il Park",
+    "out": "Anderson Oliveira",
+    "minute": "84"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Do-Yoon Hwang",
+    "out": "Seung-Mo Lee",
+    "minute": "84"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 5
+  },
+  "provider_score": "2-5",
+  "score_consistent_with_events": true,
+  "referee": "Song Min-Seok",
+  "attendance": 1770,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-5"
+  }
+ }
+}

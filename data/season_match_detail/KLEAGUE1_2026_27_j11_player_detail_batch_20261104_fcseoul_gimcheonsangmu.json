@@ -1,0 +1,141 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "11",
+ "match_id": "kleague1-2026-27-2026-05-02-fcseoul-gimcheonsangmu",
+ "date": "2026-05-02",
+ "home": "FC Seoul",
+ "away": "Gimcheon Sangmu",
+ "score": "2-3",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5139922",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139922"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Sung-Yun Gu",
+   "Jun Choi",
+   "Yazan Abu Al-Arab",
+   "Juan Antonio",
+   "Jin-Su Kim",
+   "Seon-Min Moon",
+   "Do-Yoon Hwang",
+   "Hrvoje Babec",
+   "Min-Kyu Song",
+   "Patryk Klimala",
+   "Anderson Oliveira"
+  ],
+  "home_bench": [
+   "Seung-Won Jung",
+   "Seung-Mo Lee",
+   "Young-Wook Cho",
+   "Seong-Hun Park",
+   "Hyeon-Mu Kang",
+   "Han-Do Lee",
+   "Jae-Min Ahn",
+   "Jang Han-Gyeol Park",
+   "Gbato Seloh Samuel"
+  ],
+  "away_starting_xi": [
+   "Jong-Beom Baek",
+   "Tae-Hwan Kim",
+   "Jun-Soo Byeon",
+   "Jung-Taek Lee",
+   "Cheol-Woo Park",
+   "Jae-Hyun Go",
+   "Soo-Bin Lee",
+   "Tae-Joon Park",
+   "Joo-Chan Kim",
+   "Sang-Heon Lee",
+   "Min-Geu Kang"
+  ],
+  "away_bench": [
+   "Kun-Hee Lee",
+   "Deok-Geun Lim",
+   "In-Kyun Kim",
+   "Si-Hoo Hong",
+   "Se-Jin Park",
+   "Hyeon-Ho Moon",
+   "Chan-Wook Lee",
+   "Kang-Hyeon Lee",
+   "Jae-Seok Yoon"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Seoul",
+    "in": "Seung-Won Jung",
+    "out": "Seon-Min Moon",
+    "minute": "61"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Young-Wook Cho",
+    "out": "Anderson Oliveira",
+    "minute": "76"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Seung-Mo Lee",
+    "out": "Do-Yoon Hwang",
+    "minute": "76"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Seong-Hun Park",
+    "out": "Yazan Abu Al-Arab",
+    "minute": "85"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Kun-Hee Lee",
+    "out": "Min-Geu Kang",
+    "minute": "46"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Deok-Geun Lim",
+    "out": "Soo-Bin Lee",
+    "minute": "61"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "In-Kyun Kim",
+    "out": "Joo-Chan Kim",
+    "minute": "69"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Si-Hoo Hong",
+    "out": "Jae-Hyun Go",
+    "minute": "69"
+   },
+   {
+    "team": "Gimcheon Sangmu",
+    "in": "Se-Jin Park",
+    "out": "Sang-Heon Lee",
+    "minute": "82"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 3
+  },
+  "provider_score": "2-3",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 22337,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

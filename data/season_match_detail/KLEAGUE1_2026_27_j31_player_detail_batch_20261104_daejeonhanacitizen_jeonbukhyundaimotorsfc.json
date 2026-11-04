@@ -1,0 +1,169 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "31",
+ "match_id": "kleague1-2026-27-2026-10-09-daejeonhanacitizen-jeonbukhyundaimotorsfc",
+ "date": "2026-10-09",
+ "home": "Daejeon Hana Citizen",
+ "away": "Jeonbuk Hyundai Motors FC",
+ "score": "2-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/5140042",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140042"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jun-Seo Lee",
+   "Moon-Hwan Kim",
+   "Chang-Rae Ha",
+   "Sung-Kwon Jo",
+   "Myung-Jae Lee",
+   "Soon-Min Lee",
+   "Victor Bobsin",
+   "Won-Sang Um",
+   "Jun-Beom Kim",
+   "Gustav Ludwigson",
+   "Min-Kyu Joo"
+  ],
+  "home_bench": [
+   "Bong-Soo Kim",
+   "Masatoshi Ishida",
+   "Diogo",
+   "Jin-Su Seo",
+   "Yoon-Sung Kang",
+   "Byung-Chan Park",
+   "Chang-Geun Lee",
+   "Geon-Ho Moon",
+   "Min-Deok Kim"
+  ],
+  "away_starting_xi": [
+   "Bum-Keun Song",
+   "Tae-Hwan Kim",
+   "Ji-Soo Park",
+   "Wi-Je Cho",
+   "Tae-Hyun Kim",
+   "João Gamboa",
+   "Jin-Gyu Kim",
+   "Dong-Jun Lee",
+   "Yeong-Jae Lee",
+   "Seung-Woo Lee",
+   "Tiago Orobó"
+  ],
+  "away_bench": [
+   "Sang-Yun Kang",
+   "Italo",
+   "Dodô",
+   "Seung-Sub Kim",
+   "Je-Woon Yeon",
+   "Woo-Jin Choi",
+   "Ju-Hyeon Lee",
+   "Seong-Ung Maeng",
+   "Bruno Mota"
+  ],
+  "substitution_events": [
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Masatoshi Ishida",
+    "out": "Soon-Min Lee",
+    "minute": "46"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Bong-Soo Kim",
+    "out": "Jun-Beom Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Diogo",
+    "out": "Min-Kyu Joo",
+    "minute": "68"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Jin-Su Seo",
+    "out": "Gustav Ludwigson",
+    "minute": "79"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Yoon-Sung Kang",
+    "out": "Moon-Hwan Kim",
+    "minute": "86"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Byung-Chan Park",
+    "out": "Victor Bobsin",
+    "minute": "90"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Sang-Yun Kang",
+    "out": "Jin-Gyu Kim",
+    "minute": "62"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Italo",
+    "out": "Dong-Jun Lee",
+    "minute": "62"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Dodô",
+    "out": "João Gamboa",
+    "minute": "76"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Seung-Sub Kim",
+    "out": "Seung-Woo Lee",
+    "minute": "77"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Je-Woon Yeon",
+    "out": "Ji-Soo Park",
+    "minute": "80"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Woo-Jin Choi",
+    "out": "Tae-Hyun Kim",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Kim Dae-Yong",
+  "attendance": 15420,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-1"
+  }
+ }
+}

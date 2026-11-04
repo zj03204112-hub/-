@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "9",
+ "match_id": "kleague1-2026-27-2026-04-21-fcseoul-bucheonfc1995",
+ "date": "2026-04-21",
+ "home": "FC Seoul",
+ "away": "Bucheon FC 1995",
+ "score": "3-0",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5139912",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139912"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Sung-Yun Gu",
+   "Jin-Su Kim",
+   "Juan Antonio",
+   "Seong-Hun Park",
+   "Jun Choi",
+   "Seon-Min Moon",
+   "Hrvoje Babec",
+   "Do-Yoon Hwang",
+   "Seung-Won Jung",
+   "Patryk Klimala",
+   "Leonardo Ruiz"
+  ],
+  "home_bench": [
+   "Han-Do Lee",
+   "Yazan Abu Al-Arab",
+   "Jeong-Beom Son",
+   "Seung-Mo Lee",
+   "Min-Kyu Song",
+   "Hyeon-Mu Kang",
+   "Jae-Min Ahn",
+   "Gbato Seloh Samuel",
+   "Seong-Hoon Cheon"
+  ],
+  "away_starting_xi": [
+   "Hyung-Keun Kim",
+   "Sung-Wook Hong",
+   "Dong-Gyu Baek",
+   "Jae-Won Lee",
+   "Jae-Won Shin",
+   "Shin Seong",
+   "Kazuki Takahashi",
+   "Tae-Hyun An",
+   "Min-Jun Kim",
+   "John Montaño",
+   "Ji-Ho Han"
+  ],
+  "away_bench": [
+   "Bit-Garam Yoon",
+   "Sang-Jun Kim",
+   "Galego",
+   "Vitor Gabriel",
+   "Thiaguinho Santos",
+   "Hyeon-Yeop Kim",
+   "Ho-Jin Jeong",
+   "Sang-Hyeok Lee",
+   "Dam Uh"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Seoul",
+    "in": "Han-Do Lee",
+    "out": "Hrvoje Babec",
+    "minute": "61"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Yazan Abu Al-Arab",
+    "out": "Seong-Hun Park",
+    "minute": "61"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Jeong-Beom Son",
+    "out": "Do-Yoon Hwang",
+    "minute": "80"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Min-Kyu Song",
+    "out": "Patryk Klimala",
+    "minute": "83"
+   },
+   {
+    "team": "FC Seoul",
+    "in": "Seung-Mo Lee",
+    "out": "Juan Antonio",
+    "minute": "83"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Galego",
+    "out": "Ji-Ho Han",
+    "minute": "46"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Sang-Jun Kim",
+    "out": "Kazuki Takahashi",
+    "minute": "46"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Bit-Garam Yoon",
+    "out": "Shin Seong",
+    "minute": "46"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Vitor Gabriel",
+    "out": "Min-Jun Kim",
+    "minute": "56"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Thiaguinho Santos",
+    "out": "Jae-Won Shin",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 0
+  },
+  "provider_score": "3-0",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 10257,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "28",
+ "match_id": "kleague1-2026-27-2026-09-08-incheonunited-bucheonfc1995",
+ "date": "2026-09-08",
+ "home": "Incheon United",
+ "away": "Bucheon FC 1995",
+ "score": "2-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5140024",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140024"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dong-Heon Kim",
+   "Myung-Soon Kim",
+   "Yeon-Su Kim",
+   "Juan Ibiza",
+   "Ju-Yong Lee",
+   "Dong-Ryul Lee",
+   "Jae-Min Seo",
+   "Myeong-Ju Lee",
+   "Leandro",
+   "Stefan Mugoša",
+   "Morgan Ferrier"
+  ],
+  "home_bench": [
+   "Gerso Fernandes",
+   "Min-Hyuk Lee",
+   "Chung-Yong Lee",
+   "Seung-Gu Choi",
+   "Seong-Min Kim",
+   "Tae-Hee Lee",
+   "Sang-Ki Lee",
+   "Ji-Hwan Moon",
+   "Young-Whan Kim"
+  ],
+  "away_starting_xi": [
+   "Hyung-Keun Kim",
+   "Sung-Wook Hong",
+   "Patrick",
+   "Ho-Jin Jeong",
+   "Tae-Hyun An",
+   "Ye-Geon Sung",
+   "Kazuki Takahashi",
+   "Seung-Bin Kim",
+   "Rodrigo Bassani da Cruz",
+   "Gustavo Nescau",
+   "Galego"
+  ],
+  "away_bench": [
+   "Eui-Hyeong Lee",
+   "Bit-Garam Yoon",
+   "Sang-Jun Kim",
+   "Min-Jun Kim",
+   "Seong-Jun Jo",
+   "Sang-Hyeon Lee",
+   "Dong-Gyu Baek",
+   "Bong-Hun Yeo",
+   "Dong-Hyun Kim"
+  ],
+  "substitution_events": [
+   {
+    "team": "Incheon United",
+    "in": "Gerso Fernandes",
+    "out": "Leandro",
+    "minute": "56"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Chung-Yong Lee",
+    "out": "Dong-Ryul Lee",
+    "minute": "69"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Min-Hyuk Lee",
+    "out": "Jae-Min Seo",
+    "minute": "69"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Seung-Gu Choi",
+    "out": "Myung-Soon Kim",
+    "minute": "88"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Seong-Min Kim",
+    "out": "Morgan Ferrier",
+    "minute": "88"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Eui-Hyeong Lee",
+    "out": "Gustavo Nescau",
+    "minute": "69"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Bit-Garam Yoon",
+    "out": "Kazuki Takahashi",
+    "minute": "74"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Seong-Jun Jo",
+    "out": "Tae-Hyun An",
+    "minute": "86"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Min-Jun Kim",
+    "out": "Rodrigo Bassani da Cruz",
+    "minute": "86"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Sang-Jun Kim",
+    "out": "Ye-Geon Sung",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Kim Woo-Sung",
+  "attendance": 5794,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-1"
+  }
+ }
+}

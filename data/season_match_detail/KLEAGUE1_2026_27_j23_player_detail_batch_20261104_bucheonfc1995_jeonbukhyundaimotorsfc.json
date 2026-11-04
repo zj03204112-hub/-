@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "23",
+ "match_id": "kleague1-2026-27-2026-08-16-bucheonfc1995-jeonbukhyundaimotorsfc",
+ "date": "2026-08-16",
+ "home": "Bucheon FC 1995",
+ "away": "Jeonbuk Hyundai Motors FC",
+ "score": "3-2",
+ "halftime_score": "2-0",
+ "official_match_url": "https://www.fotmob.com/matches/5139997",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139997"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hyeon-Yeop Kim",
+   "Patrick",
+   "Dong-Gyu Baek",
+   "Sung-Wook Hong",
+   "Thiaguinho Santos",
+   "Ye-Geon Sung",
+   "Jong-Woo Kim",
+   "Tae-Hyun An",
+   "Galego",
+   "Gustavo Nescau",
+   "Rodrigo Bassani da Cruz"
+  ],
+  "home_bench": [
+   "Jeong-In Park",
+   "Sang-Jun Kim",
+   "Min-Jun Kim",
+   "Ho-Jin Jeong",
+   "Jong-Min Kim",
+   "Sang-Hyeon Lee",
+   "Bong-Hun Yeo",
+   "Dong-Hyun Kim",
+   "Seung-Bin Kim"
+  ],
+  "away_starting_xi": [
+   "Bum-Keun Song",
+   "Tae-Hwan Kim",
+   "Wi-Je Cho",
+   "Young-Bin Kim",
+   "Woo-Jin Choi",
+   "Seong-Ung Maeng",
+   "Jin-Gyu Kim",
+   "Dong-Jun Lee",
+   "Ye-Geon Kim",
+   "Seung-Woo Lee",
+   "Bruno Mota"
+  ],
+  "away_bench": [
+   "Ji-Soo Park",
+   "Andrea Compagno",
+   "Italo",
+   "Yeong-Jae Lee",
+   "Seung-Sub Kim",
+   "Ju-Hyeon Lee",
+   "Je-Woon Yeon",
+   "Tae-Hyun Kim",
+   "João Gamboa"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Jeong-In Park",
+    "out": "Gustavo Nescau",
+    "minute": "70"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Sang-Jun Kim",
+    "out": "Jong-Woo Kim",
+    "minute": "76"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Min-Jun Kim",
+    "out": "Rodrigo Bassani da Cruz",
+    "minute": "77"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Jong-Min Kim",
+    "out": "Galego",
+    "minute": "88"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Ho-Jin Jeong",
+    "out": "Thiaguinho Santos",
+    "minute": "88"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Ji-Soo Park",
+    "out": "Wi-Je Cho",
+    "minute": "46"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Andrea Compagno",
+    "out": "Dong-Jun Lee",
+    "minute": "60"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Italo",
+    "out": "Ye-Geon Kim",
+    "minute": "60"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Yeong-Jae Lee",
+    "out": "Jin-Gyu Kim",
+    "minute": "77"
+   },
+   {
+    "team": "Jeonbuk Hyundai Motors FC",
+    "in": "Seung-Sub Kim",
+    "out": "Tae-Hwan Kim",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 3,
+   "away": 2
+  },
+  "provider_score": "3-2",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 9268,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "3-2"
+  }
+ }
+}

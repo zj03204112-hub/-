@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "10",
+ "match_id": "kleague1-2026-27-2026-04-25-incheonunited-jejusk",
+ "date": "2026-04-25",
+ "home": "Incheon United",
+ "away": "Jeju SK",
+ "score": "1-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5139918",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139918"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Tae-Hee Lee",
+   "Myung-Soon Kim",
+   "Kyung-Sub Park",
+   "Juan Ibiza",
+   "Ju-Yong Lee",
+   "Gerso Fernandes",
+   "Myeong-Ju Lee",
+   "Jae-Min Seo",
+   "Dong-Ryul Lee",
+   "Stefan Mugosa",
+   "Chung-Yong Lee"
+  ],
+  "home_bench": [
+   "Iker Undabarrena",
+   "Morgan Ferrier",
+   "Seong-Min Kim",
+   "Gun-Hee Kim",
+   "Seung-Gu Choi",
+   "Dong-Heon Kim",
+   "Sang-Gi Lee",
+   "Ho-Min Park",
+   "Seung-Ho Park"
+  ],
+  "away_starting_xi": [
+   "Dong-Jun Kim",
+   "In-Soo Yu",
+   "Gi-Min Kwon",
+   "Jae-Woo Kim",
+   "Ryun-Sung Kim",
+   "Chang-Hoon Kwon",
+   "Jae-Hyeok Oh",
+   "Min-Kyu Jang",
+   "Chang-Jun Park",
+   "Negueba",
+   "Jun-Ha Kim"
+  ],
+  "away_bench": [
+   "Tae-Hee Nam",
+   "Geon-Woong Kim",
+   "Gytis Paulauskas",
+   "Jae-Won Heo",
+   "Chang-Woo Rim",
+   "Woon Jeong",
+   "Byung-Wook Choi",
+   "Jae-Min Kim",
+   "Shin-Jin Kim"
+  ],
+  "substitution_events": [
+   {
+    "team": "Incheon United",
+    "in": "Iker Undabarrena",
+    "out": "Myeong-Ju Lee",
+    "minute": "46"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Morgan Ferrier",
+    "out": "Gerso Fernandes",
+    "minute": "61"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Seong-Min Kim",
+    "out": "Dong-Ryul Lee",
+    "minute": "76"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Seung-Gu Choi",
+    "out": "Myung-Soon Kim",
+    "minute": "88"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Gun-Hee Kim",
+    "out": "Kyung-Sub Park",
+    "minute": "88"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Tae-Hee Nam",
+    "out": "Chang-Jun Park",
+    "minute": "59"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Geon-Woong Kim",
+    "out": "Gi-Min Kwon",
+    "minute": "66"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Gytis Paulauskas",
+    "out": "Chang-Hoon Kwon",
+    "minute": "78"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 0
+  },
+  "provider_score": "1-0",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 8371,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

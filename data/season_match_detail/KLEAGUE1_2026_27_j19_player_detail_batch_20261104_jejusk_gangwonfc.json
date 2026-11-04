@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "19",
+ "match_id": "kleague1-2026-27-2026-07-21-jejusk-gangwonfc",
+ "date": "2026-07-21",
+ "home": "Jeju SK",
+ "away": "Gangwon FC",
+ "score": "1-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5139970",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139970"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dong-Jun Kim",
+   "In-Soo Yu",
+   "Gi-Min Kwon",
+   "Julien Célestine",
+   "In-Jung Jo",
+   "Italo",
+   "Chang-Min Lee",
+   "Ryun-Sung Kim",
+   "Jun-Ha Kim",
+   "Negueba",
+   "Shin-Jin Kim"
+  ],
+  "home_bench": [
+   "Byung-Wook Choi",
+   "Chang-Jun Park",
+   "Sang-Eun Shin",
+   "Jae-Hyeok Oh",
+   "Jae-Woo Kim",
+   "Chan-Gi An",
+   "Geon-Woong Kim",
+   "Woon Jeong",
+   "Min-Kyu Jang"
+  ],
+  "away_starting_xi": [
+   "Chung-Hyo Park",
+   "Joon-hyuck Kang",
+   "Marko Tuci",
+   "Gi-Hyuk Lee",
+   "Do-Hyun Kim",
+   "Sang-Hyeok Park",
+   "You-Hyeon Lee",
+   "Min-Woo Seo",
+   "Dae-Won Kim",
+   "Byeong-Chan Choi",
+   "Young-Joon Goh"
+  ],
+  "away_bench": [
+   "Min-Ha Shin",
+   "Abdalla Halaihal",
+   "Gun-Hee Kim",
+   "Chul Hong",
+   "Seung-Won Lee",
+   "Jin-Hyeok Hong",
+   "Dong-Hyun Kim",
+   "Jae-Hyeon Mo",
+   "Jesse Sekidika"
+  ],
+  "substitution_events": [
+   {
+    "team": "Jeju SK",
+    "in": "Sang-Eun Shin",
+    "out": "Negueba",
+    "minute": "63"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Byung-Wook Choi",
+    "out": "Shin-Jin Kim",
+    "minute": "63"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Chang-Jun Park",
+    "out": "Ryun-Sung Kim",
+    "minute": "63"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Jae-Hyeok Oh",
+    "out": "Chang-Min Lee",
+    "minute": "73"
+   },
+   {
+    "team": "Jeju SK",
+    "in": "Jae-Woo Kim",
+    "out": "Gi-Min Kwon",
+    "minute": "88"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Min-Ha Shin",
+    "out": "Sang-Hyeok Park",
+    "minute": "46"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Gun-Hee Kim",
+    "out": "Young-Joon Goh",
+    "minute": "68"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Abdalla Halaihal",
+    "out": "Byeong-Chan Choi",
+    "minute": "68"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Chul Hong",
+    "out": "Do-Hyun Kim",
+    "minute": "75"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Seung-Won Lee",
+    "out": "Min-Woo Seo",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 3107,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-1"
+  }
+ }
+}

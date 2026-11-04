@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "22",
+ "match_id": "kleague1-2026-27-2026-08-08-pohangsteelers-ulsanhdfc",
+ "date": "2026-08-08",
+ "home": "Pohang Steelers",
+ "away": "Ulsan HD FC",
+ "score": "0-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5139993",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139993"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Sung-Min Hong",
+   "Si-Woo Jin",
+   "Chan-Yong Park",
+   "Ho-Jin Kim",
+   "Min-Jun Kang",
+   "Seung-Ho Kim",
+   "Dong-Jin Kim",
+   "Wanderson",
+   "Seo-Woong Hwang",
+   "Jakob Tranziska",
+   "Ki-Jong Won"
+  ],
+  "home_bench": [
+   "Sung-Yueng Ki",
+   "Gwang-Won Kim",
+   "Sang-Hyeok Cho",
+   "Chang-Woo Lee",
+   "Jeong-Won Eo",
+   "Pyung-Gook Yoon",
+   "Kwang-Hoon Shin",
+   "Ye-Sung Kim",
+   "Han-Min Jung"
+  ],
+  "away_starting_xi": [
+   "Hyeon-Woo Jo",
+   "Myeong-Kwan Seo",
+   "Seung-Hyeon Jung",
+   "Young-Gwon Kim",
+   "Si-Young Jang",
+   "Darijan Bojanic",
+   "Thomas Kotte",
+   "Hyun-Taek Cho",
+   "Jin-Hyun Lee",
+   "Dong-Gyeong Lee",
+   "Erick Farias"
+  ],
+  "away_bench": [
+   "Gyu-Sung Lee",
+   "Yago Cariello",
+   "Sang-Woo Kang",
+   "Sang-Min Sim",
+   "Jae-Ik Lee",
+   "Seong-Min Ryu",
+   "Heui-Kyun Lee",
+   "In-Woo Back",
+   "Pedrinho"
+  ],
+  "substitution_events": [
+   {
+    "team": "Pohang Steelers",
+    "in": "Sung-Yueng Ki",
+    "out": "Seo-Woong Hwang",
+    "minute": "63"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Gwang-Won Kim",
+    "out": "Jakob Tranziska",
+    "minute": "71"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Sang-Hyeok Cho",
+    "out": "Ho-Jin Kim",
+    "minute": "71"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Jeong-Won Eo",
+    "out": "Dong-Jin Kim",
+    "minute": "84"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Chang-Woo Lee",
+    "out": "Seung-Ho Kim",
+    "minute": "84"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Yago Cariello",
+    "out": "Darijan Bojanic",
+    "minute": "54"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Gyu-Sung Lee",
+    "out": "Jin-Hyun Lee",
+    "minute": "54"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Sang-Woo Kang",
+    "out": "Erick Farias",
+    "minute": "63"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Sang-Min Sim",
+    "out": "Si-Young Jang",
+    "minute": "64"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Jae-Ik Lee",
+    "out": "Seung-Hyeon Jung",
+    "minute": "71"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 2
+  },
+  "provider_score": "0-2",
+  "score_consistent_with_events": true,
+  "referee": "Dong-Jun Lee",
+  "attendance": 11453,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-2"
+  }
+ }
+}

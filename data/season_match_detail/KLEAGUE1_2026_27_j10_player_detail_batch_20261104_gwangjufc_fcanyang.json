@@ -1,0 +1,146 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "10",
+ "match_id": "kleague1-2026-27-2026-04-26-gwangjufc-fcanyang",
+ "date": "2026-04-26",
+ "home": "Gwangju FC",
+ "away": "FC Anyang",
+ "score": "2-5",
+ "halftime_score": "0-3",
+ "official_match_url": "https://www.fotmob.com/matches/5139920",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139920"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Kyeong-Min Kim",
+   "Seung-Un Ha",
+   "Bae-Hyeon Gong",
+   "Young-Kyu Ahn",
+   "Min-Gi Lee",
+   "Hyeok-Joo An",
+   "Hui-Su Kang",
+   "Min-Seo Moon",
+   "Se-Jong Joo",
+   "Ji-Hoon Jeong",
+   "Yun-Ho Kim"
+  ],
+  "home_bench": [
+   "Seong-Yun Kwon",
+   "Hólmbert Fridjónsson",
+   "Sang-Ki Min",
+   "Yong-Jun Hong",
+   "Sung-Hoon Kwak",
+   "Hee-Dong Roh",
+   "Jin-Ho Kim",
+   "Seong-Hyun Park"
+  ],
+  "away_starting_xi": [
+   "Jeong-Hoon Kim",
+   "Ji-Hun Kang",
+   "Chang-Yong Lee",
+   "Kyung-Won Kwon",
+   "Hyun-Woo Joo",
+   "Matheus Oliveira Santos",
+   "Jeong-Hyun Kim",
+   "Thomas Kotte",
+   "Hyun-Woo Chae",
+   "Breno Herculano",
+   "Jeong-Hun Park"
+  ],
+  "away_bench": [
+   "Young-Chan Kim",
+   "Airton Moisés",
+   "Tae-Hee Lee",
+   "York Rafael",
+   "Woon Kim",
+   "Byeong-Geun Hwang",
+   "Dong-Jin Kim",
+   "Ka-Ram Han",
+   "Geon-Joo Choi"
+  ],
+  "substitution_events": [
+   {
+    "team": "Gwangju FC",
+    "in": "Seong-Yun Kwon",
+    "out": "Hui-Su Kang",
+    "minute": "46"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Hólmbert Fridjónsson",
+    "out": "Yun-Ho Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Yong-Jun Hong",
+    "out": "Hyeok-Joo An",
+    "minute": "85"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Sang-Ki Min",
+    "out": "Bae-Hyeon Gong",
+    "minute": "85"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Sung-Hoon Kwak",
+    "out": "Se-Jong Joo",
+    "minute": "89"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Airton Moisés",
+    "out": "Hyun-Woo Chae",
+    "minute": "46"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Young-Chan Kim",
+    "out": "Kyung-Won Kwon",
+    "minute": "46"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Tae-Hee Lee",
+    "out": "Hyun-Woo Joo",
+    "minute": "57"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "York Rafael",
+    "out": "Jeong-Hun Park",
+    "minute": "65"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Woon Kim",
+    "out": "Breno Herculano",
+    "minute": "78"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 5
+  },
+  "provider_score": "2-5",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 2667,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

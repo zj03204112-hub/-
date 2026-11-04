@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "25",
+ "match_id": "kleague1-2026-27-2026-08-26-gangwonfc-gwangjufc",
+ "date": "2026-08-26",
+ "home": "Gangwon FC",
+ "away": "Gwangju FC",
+ "score": "2-2",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5140011",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140011"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Chung-Hyo Park",
+   "Do-Hyun Kim",
+   "Marko Tuci",
+   "Gi-Hyuk Lee",
+   "Chul Hong",
+   "Yun-Gu Kang",
+   "Young-Joon Goh",
+   "Dong-Hyun Kim",
+   "Dae-Won Kim",
+   "Sang-Hyeok Park",
+   "Won-Woo Cho"
+  ],
+  "home_bench": [
+   "Seung-Won Lee",
+   "Jesse Sekidika",
+   "Gun-Hee Kim",
+   "Ho-Young Park",
+   "Jae-Hyeon Mo",
+   "Min-Kyu Cho",
+   "Min-Ha Shin",
+   "Abdelkarim Mammar Chaouche",
+   "Tae-Hwan Kim"
+  ],
+  "away_starting_xi": [
+   "Dong-Hwa Kim",
+   "Won-Jae Park",
+   "Sang-Ki Min",
+   "Seok-Hwan Jang",
+   "João Pedro",
+   "Adriel Ba Loua",
+   "Je-Ho Yu",
+   "Yong-Hyuk Kim",
+   "Woo-Jin Kim",
+   "Min-Seo Moon",
+   "Ji-Hoon Jeong"
+  ],
+  "away_bench": [
+   "Se-Jong Joo",
+   "Seung-Gyeom Im",
+   "Hólmbert Fridjónsson",
+   "John Iredale",
+   "Min-Gi Lee",
+   "Kyeong-Min Kim",
+   "Yong-Jun Hong",
+   "Emir Saitoski",
+   "Hyeok-Joo An"
+  ],
+  "substitution_events": [
+   {
+    "team": "Gangwon FC",
+    "in": "Seung-Won Lee",
+    "out": "Young-Joon Goh",
+    "minute": "22"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Gun-Hee Kim",
+    "out": "Sang-Hyeok Park",
+    "minute": "57"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Jesse Sekidika",
+    "out": "Yun-Gu Kang",
+    "minute": "57"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Jae-Hyeon Mo",
+    "out": "Won-Woo Cho",
+    "minute": "73"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Ho-Young Park",
+    "out": "Seung-Won Lee",
+    "minute": "73"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Se-Jong Joo",
+    "out": "Yong-Hyuk Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Seung-Gyeom Im",
+    "out": "Sang-Ki Min",
+    "minute": "53"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "John Iredale",
+    "out": "Ji-Hoon Jeong",
+    "minute": "68"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Hólmbert Fridjónsson",
+    "out": "Woo-Jin Kim",
+    "minute": "68"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Min-Gi Lee",
+    "out": "Won-Jae Park",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Kim Woo-Sung",
+  "attendance": 3836,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-2"
+  }
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "15",
+ "match_id": "kleague1-2026-27-2026-05-17-bucheonfc1995-pohangsteelers",
+ "date": "2026-05-17",
+ "home": "Bucheon FC 1995",
+ "away": "Pohang Steelers",
+ "score": "2-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5139950",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139950"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hyung-Keun Kim",
+   "Sung-Wook Hong",
+   "Dong-Gyu Baek",
+   "Ho-Jin Jeong",
+   "Tae-Hyun An",
+   "Sang-Jun Kim",
+   "Jong-Woo Kim",
+   "Galego",
+   "Bit-Garam Yoon",
+   "Vitor Gabriel",
+   "Min-Jun Kim"
+  ],
+  "home_bench": [
+   "Thiaguinho Santos",
+   "Ji-Ho Han",
+   "Kazuki Takahashi",
+   "Eui-Hyeong Lee",
+   "Jong-Min Kim",
+   "Chan-Young Kim",
+   "Sang-Hyeok Lee",
+   "Shin Seong",
+   "Dong-Hyun Kim"
+  ],
+  "away_starting_xi": [
+   "In-Jae Hwang",
+   "Kwang-Hoon Shin",
+   "Chan-Yong Park",
+   "Ho-Jin Kim",
+   "Ye-Sung Kim",
+   "Juninho",
+   "Kento Nishiya",
+   "Dong-Jin Kim",
+   "Seung-Ho Kim",
+   "Ho-Jae Lee",
+   "Jae-Joon An"
+  ],
+  "away_bench": [
+   "Min-Kwang Jeon",
+   "Sung-Yueng Ki",
+   "Jae-Hwan Hwang",
+   "Sang-Hyeok Cho",
+   "Seo-Woong Hwang",
+   "Pyung-Gook Yoon",
+   "Hyeon-Seo Han",
+   "Jeong-Won Eo",
+   "Min-Jun Kang"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Ji-Ho Han",
+    "out": "Vitor Gabriel",
+    "minute": "46"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Thiaguinho Santos",
+    "out": "Bit-Garam Yoon",
+    "minute": "46"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Kazuki Takahashi",
+    "out": "Jong-Woo Kim",
+    "minute": "71"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Eui-Hyeong Lee",
+    "out": "Min-Jun Kim",
+    "minute": "78"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Jong-Min Kim",
+    "out": "Ho-Jin Jeong",
+    "minute": "89"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Sung-Yueng Ki",
+    "out": "Seung-Ho Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Min-Kwang Jeon",
+    "out": "Ye-Sung Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Jae-Hwan Hwang",
+    "out": "Jae-Joon An",
+    "minute": "60"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Sang-Hyeok Cho",
+    "out": "Kento Nishiya",
+    "minute": "67"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Seo-Woong Hwang",
+    "out": "Dong-Jin Kim",
+    "minute": "86"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 6421,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

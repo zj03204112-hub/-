@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "27",
+ "match_id": "kleague1-2026-27-2026-09-05-bucheonfc1995-daejeonhanacitizen",
+ "date": "2026-09-05",
+ "home": "Bucheon FC 1995",
+ "away": "Daejeon Hana Citizen",
+ "score": "0-5",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5140018",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140018"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hyung-Keun Kim",
+   "Patrick",
+   "Dong-Gyu Baek",
+   "Sung-Wook Hong",
+   "Thiaguinho Santos",
+   "Sang-Jun Kim",
+   "Jong-Woo Kim",
+   "Bong-Hun Yeo",
+   "Rodrigo Bassani da Cruz",
+   "Gustavo Nescau",
+   "Galego"
+  ],
+  "home_bench": [
+   "Ho-Jin Jeong",
+   "Seung-Bin Kim",
+   "Ye-Geon Sung",
+   "Eui-Hyeong Lee",
+   "Min-Jun Kim",
+   "Sang-Hyeon Lee",
+   "Jong-Min Kim",
+   "Seung-Hyun Yu",
+   "Bit-Garam Yoon"
+  ],
+  "away_starting_xi": [
+   "Chang-Geun Lee",
+   "Yoon-Sung Kang",
+   "Sung-Kwon Jo",
+   "Anton Krivotsyuk",
+   "Myung-Jae Lee",
+   "Soon-Min Lee",
+   "Victor Bobsin",
+   "Jae-Hee Jeong",
+   "Masatoshi Ishida",
+   "Jin-Su Seo",
+   "Diogo"
+  ],
+  "away_bench": [
+   "Hyun-Sik Lee",
+   "Gustav Ludwigson",
+   "Jun-Beom Kim",
+   "Byung-Chan Park",
+   "Min-Kyu Joo",
+   "Min-Soo Kim",
+   "Chang-Rae Ha",
+   "Kyu-Hyun Park",
+   "Kang-Hyun Yoo"
+  ],
+  "substitution_events": [
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Ho-Jin Jeong",
+    "out": "Dong-Gyu Baek",
+    "minute": "46"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Seung-Bin Kim",
+    "out": "Thiaguinho Santos",
+    "minute": "46"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Ye-Geon Sung",
+    "out": "Jong-Woo Kim",
+    "minute": "58"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Min-Jun Kim",
+    "out": "Gustavo Nescau",
+    "minute": "79"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Eui-Hyeong Lee",
+    "out": "Rodrigo Bassani da Cruz",
+    "minute": "79"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Hyun-Sik Lee",
+    "out": "Victor Bobsin",
+    "minute": "61"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Jun-Beom Kim",
+    "out": "Masatoshi Ishida",
+    "minute": "76"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Gustav Ludwigson",
+    "out": "Jin-Su Seo",
+    "minute": "76"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Byung-Chan Park",
+    "out": "Diogo",
+    "minute": "83"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Min-Kyu Joo",
+    "out": "Jae-Hee Jeong",
+    "minute": "83"
+   }
+  ],
+  "goals": {
+   "home": 0,
+   "away": 5
+  },
+  "provider_score": "0-5",
+  "score_consistent_with_events": true,
+  "referee": "Kim Jong-Hyeok",
+  "attendance": 5623,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "0-5"
+  }
+ }
+}

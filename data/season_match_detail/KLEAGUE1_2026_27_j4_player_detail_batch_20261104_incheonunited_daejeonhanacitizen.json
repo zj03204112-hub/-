@@ -1,0 +1,146 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "4",
+ "match_id": "kleague1-2026-27-2026-03-18-incheonunited-daejeonhanacitizen",
+ "date": "2026-03-18",
+ "home": "Incheon United",
+ "away": "Daejeon Hana Citizen",
+ "score": "1-3",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5139882",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139882"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Dong-Heon Kim",
+   "Myung-Soon Kim",
+   "Gun-Hee Kim",
+   "Juan Ibiza",
+   "Ju-Yong Lee",
+   "Gerso Fernandes",
+   "Iker Undabarrena",
+   "Jae-Min Seo",
+   "Chi-In Jung",
+   "Stefan Mugosa",
+   "Hu-Seong Oh"
+  ],
+  "home_bench": [
+   "Chung-Yong Lee",
+   "Morgan Ferrier",
+   "Dong-Ryul Lee",
+   "Myeong-Ju Lee",
+   "Seung-Gu Choi",
+   "Tae-Hee Lee",
+   "Kyung-Sub Park",
+   "Sang-Gi Lee",
+   "Seong-Min Kim"
+  ],
+  "away_starting_xi": [
+   "Chang-Geun Lee",
+   "Moon-Hwan Kim",
+   "Chang-Rae Ha",
+   "Sung-Kwon Jo",
+   "Kyu-Hyun Park",
+   "João Victor",
+   "Bong-Soo Kim",
+   "Masatoshi Ishida",
+   "Soon-Min Lee",
+   "Jin-Su Seo",
+   "Min-Kyu Joo"
+  ],
+  "away_bench": [
+   "Min-Deok Kim",
+   "Gustav Ludwigson",
+   "Victor Bobsin",
+   "Diogo",
+   "Won-Sang Um",
+   "Min-Soo Kim",
+   "Yoon-Sung Kang",
+   "Hyun-Sik Lee"
+  ],
+  "substitution_events": [
+   {
+    "team": "Incheon United",
+    "in": "Chung-Yong Lee",
+    "out": "Chi-In Jung",
+    "minute": "21"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Morgan Ferrier",
+    "out": "Gerso Fernandes",
+    "minute": "72"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Dong-Ryul Lee",
+    "out": "Hu-Seong Oh",
+    "minute": "89"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Myeong-Ju Lee",
+    "out": "Iker Undabarrena",
+    "minute": "90"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Seung-Gu Choi",
+    "out": "Myung-Soon Kim",
+    "minute": "90"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Min-Deok Kim",
+    "out": "Chang-Rae Ha",
+    "minute": "28"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Gustav Ludwigson",
+    "out": "Jin-Su Seo",
+    "minute": "46"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Victor Bobsin",
+    "out": "Masatoshi Ishida",
+    "minute": "60"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Diogo",
+    "out": "Min-Kyu Joo",
+    "minute": "60"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Won-Sang Um",
+    "out": "João Victor",
+    "minute": "77"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 3
+  },
+  "provider_score": "1-3",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 6360,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

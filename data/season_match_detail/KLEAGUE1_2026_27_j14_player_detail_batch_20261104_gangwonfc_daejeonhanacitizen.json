@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "14",
+ "match_id": "kleague1-2026-27-2026-05-12-gangwonfc-daejeonhanacitizen",
+ "date": "2026-05-12",
+ "home": "Gangwon FC",
+ "away": "Daejeon Hana Citizen",
+ "score": "2-0",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5139940",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139940"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Chung-Hyo Park",
+   "Joon-hyuck Kang",
+   "Marko Tuci",
+   "Gi-Hyuk Lee",
+   "Jun-Seok Song",
+   "Jae-Hyeon Mo",
+   "You-Hyeon Lee",
+   "Min-Woo Seo",
+   "Dae-Won Kim",
+   "Byeong-Chan Choi",
+   "Young-Joon Goh"
+  ],
+  "home_bench": [
+   "Abdalla Halaihal",
+   "Gun-Hee Kim",
+   "Min-Ha Shin",
+   "Do-Hyun Kim",
+   "Dong-Hyun Kim",
+   "Jung-Hoon Kim",
+   "Ho-Young Park",
+   "Seung-Won Lee",
+   "Yun-Gu Kang"
+  ],
+  "away_starting_xi": [
+   "Chang-Geun Lee",
+   "Moon-Hwan Kim",
+   "Min-Deok Kim",
+   "Anton Krivotsyuk",
+   "Kyu-Hyun Park",
+   "Yoon-Sung Kang",
+   "Bong-Soo Kim",
+   "Jae-Hee Jung",
+   "Jin-Su Seo",
+   "Gustav Ludwigson",
+   "Diogo"
+  ],
+  "away_bench": [
+   "João Victor",
+   "Kang-Hyun Yoo",
+   "Victor Bobsin",
+   "Myung-Jae Lee",
+   "Min-Kyu Joo",
+   "Jun-Seo Lee",
+   "Jong-Eun Lim",
+   "Hyeon-Ug Kim",
+   "Hyun-Sik Lee"
+  ],
+  "substitution_events": [
+   {
+    "team": "Gangwon FC",
+    "in": "Abdalla Halaihal",
+    "out": "Byeong-Chan Choi",
+    "minute": "66"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Gun-Hee Kim",
+    "out": "Young-Joon Goh",
+    "minute": "66"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Min-Ha Shin",
+    "out": "Dae-Won Kim",
+    "minute": "90"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Dong-Hyun Kim",
+    "out": "Min-Woo Seo",
+    "minute": "90"
+   },
+   {
+    "team": "Gangwon FC",
+    "in": "Do-Hyun Kim",
+    "out": "Jae-Hyeon Mo",
+    "minute": "90"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "João Victor",
+    "out": "Jae-Hee Jung",
+    "minute": "60"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Kang-Hyun Yoo",
+    "out": "Diogo",
+    "minute": "60"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Victor Bobsin",
+    "out": "Moon-Hwan Kim",
+    "minute": "76"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Myung-Jae Lee",
+    "out": "Kyu-Hyun Park",
+    "minute": "77"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Min-Kyu Joo",
+    "out": "Gustav Ludwigson",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 0
+  },
+  "provider_score": "2-0",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 4618,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

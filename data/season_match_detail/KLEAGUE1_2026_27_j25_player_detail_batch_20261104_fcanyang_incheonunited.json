@@ -1,0 +1,157 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "25",
+ "match_id": "kleague1-2026-27-2026-08-26-fcanyang-incheonunited",
+ "date": "2026-08-26",
+ "home": "FC Anyang",
+ "away": "Incheon United",
+ "score": "2-1",
+ "halftime_score": "1-1",
+ "official_match_url": "https://www.fotmob.com/matches/5140009",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140009"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Da-Sol Kim",
+   "Hyun-Woo Joo",
+   "Chang-Yong Lee",
+   "Kyung-Won Kwon",
+   "Jae-Hyeon Kim",
+   "Matheus Oliveira Santos",
+   "Ka-Ram Han",
+   "Jin-Yong Lee",
+   "Geon-Joo Choi",
+   "Woon Kim",
+   "Hyun-Woo Chae"
+  ],
+  "home_bench": [
+   "Jeong-Hyun Kim",
+   "Danny Bakker",
+   "Airton Moisés",
+   "Dong-Jin Kim",
+   "Blaise Tsague",
+   "Jeong-Hoon Kim",
+   "Ji-Hun Kang",
+   "Young-Chan Kim",
+   "Bo-Kyung Kim"
+  ],
+  "away_starting_xi": [
+   "Dong-Heon Kim",
+   "Seung-Gu Choi",
+   "Gun-Hee Kim",
+   "Juan Ibiza",
+   "Ju-Yong Lee",
+   "Dong-Ryul Lee",
+   "Jae-Min Seo",
+   "Min-Hyuk Lee",
+   "Gerso Fernandes",
+   "Young-Whan Kim",
+   "Morgan Ferrier"
+  ],
+  "away_bench": [
+   "Chung-Yong Lee",
+   "Leandro",
+   "Stefan Mugosa",
+   "Myeong-Ju Lee",
+   "Seong-Min Kim",
+   "Tae-Hee Lee",
+   "Kyung-Sub Park",
+   "Myung-Soon Kim",
+   "Chi-In Jung"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Anyang",
+    "in": "Jeong-Hyun Kim",
+    "out": "Ka-Ram Han",
+    "minute": "64"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Danny Bakker",
+    "out": "Jin-Yong Lee",
+    "minute": "75"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Airton Moisés",
+    "out": "Geon-Joo Choi",
+    "minute": "75"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Dong-Jin Kim",
+    "out": "Jae-Hyeon Kim",
+    "minute": "81"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Blaise Tsague",
+    "out": "Woon Kim",
+    "minute": "81"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Chung-Yong Lee",
+    "out": "Young-Whan Kim",
+    "minute": "46"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Leandro",
+    "out": "Gerso Fernandes",
+    "minute": "53"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Stefan Mugosa",
+    "out": "Morgan Ferrier",
+    "minute": "53"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Myeong-Ju Lee",
+    "out": "Min-Hyuk Lee",
+    "minute": "72"
+   },
+   {
+    "team": "Incheon United",
+    "in": "Seong-Min Kim",
+    "out": "Dong-Ryul Lee",
+    "minute": "79"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Lee Dong-Jun",
+  "attendance": 4596,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-1"
+  }
+ }
+}

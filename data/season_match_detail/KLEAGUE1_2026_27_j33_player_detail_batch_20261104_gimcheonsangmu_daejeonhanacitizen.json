@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "33",
+ "match_id": "kleague1-2026-27-2026-10-24-gimcheonsangmu-daejeonhanacitizen",
+ "date": "2026-10-24",
+ "home": "Gimcheon Sangmu",
+ "away": "Daejeon Hana Citizen",
+ "score": "1-2",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5140056",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140056"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Joon-Soo Ahn",
+   "Kyeong-Hyeon Min",
+   "Jun-Soo Byeon",
+   "Min-Kyu Kim",
+   "Jin-Seong Park",
+   "Yun-Sang Hong",
+   "Tae-Joon Park",
+   "Kang-Hyeon Lee",
+   "In-Kyun Kim",
+   "Sang-Heon Lee",
+   "Min-Geu Kang"
+  ],
+  "home_bench": [
+   "Man-Ho Park",
+   "Jin-Ho Kim",
+   "Min-Seo Park",
+   "Sang-Hyeok Lee",
+   "Ju-Hyeok Kang",
+   "Kyung-Ho Roh",
+   "Ma-Ho Chung",
+   "Jae-Min Jeong",
+   "Jae-Seok Yoon"
+  ],
+  "away_starting_xi": [
+   "Chang-Geun Lee",
+   "Moon-Hwan Kim",
+   "Jung-Taek Lee",
+   "Anton Krivotsyuk",
+   "Myung-Jae Lee",
+   "Bong-Soo Kim",
+   "Yoon-Sung Kang",
+   "Won-Sang Um",
+   "Jun-Beom Kim",
+   "Jin-Su Seo",
+   "Min-Kyu Joo"
+  ],
+  "away_bench": [
+   "Min-Soo Kim",
+   "Jin-Ya Kim",
+   "Min-Deok Kim",
+   "Byung-Chan Park",
+   "Hyun-Sik Lee",
+   "Soon-Min Lee",
+   "Diogo",
+   "Gustav Ludwigson",
+   "Jae-Hee Jeong"
+  ],
+  "substitution_events": [],
+  "goals": {
+   "home": 1,
+   "away": 2
+  },
+  "provider_score": "1-2",
+  "score_consistent_with_events": true,
+  "referee": "Kim Jong-Hyeok",
+  "attendance": 1614,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "1-2"
+  }
+ }
+}

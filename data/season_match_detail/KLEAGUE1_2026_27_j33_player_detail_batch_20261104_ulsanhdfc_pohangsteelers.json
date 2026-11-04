@@ -1,0 +1,133 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "33",
+ "match_id": "kleague1-2026-27-2026-10-24-ulsanhdfc-pohangsteelers",
+ "date": "2026-10-24",
+ "home": "Ulsan HD FC",
+ "away": "Pohang Steelers",
+ "score": "2-2",
+ "halftime_score": "0-2",
+ "official_match_url": "https://www.fotmob.com/matches/5140059",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5140059"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hyeon-Woo Jo",
+   "Seok-Hyeon Choi",
+   "Jae-Ik Lee",
+   "Young-Gwon Kim",
+   "Hyun-Taek Cho",
+   "Darijan Bojanić",
+   "Thomas Kotte",
+   "Jin-Hyun Lee",
+   "Dong-Gyeong Lee",
+   "Erick Farias",
+   "Yago Cariello"
+  ],
+  "home_bench": [
+   "Heui-Kyun Lee",
+   "Yong-Woo Park",
+   "Seong-Min Ryu",
+   "Jong-Gyu Yeun",
+   "Gyu-Sung Lee",
+   "In-Woo Back",
+   "Miłosz Trojak",
+   "Si-Young Jang",
+   "Woo-Jin Park"
+  ],
+  "away_starting_xi": [
+   "In-Jae Hwang",
+   "Kwang-Hoon Shin",
+   "Min-Kwang Jeon",
+   "Chan-Yong Park",
+   "Min-Jun Kang",
+   "Dong-Jin Kim",
+   "Seung-Ho Kim",
+   "Wanderson",
+   "Kento Nishiya",
+   "Jakob Tranziska",
+   "Jorge Teixeira"
+  ],
+  "away_bench": [
+   "Sang-Hyeok Cho",
+   "Han-Min Jung",
+   "Sung-Wook Jo",
+   "Ye-Sung Kim",
+   "Pyung-Gook Yoon",
+   "Ho-Jin Kim",
+   "Chang-Woo Lee",
+   "Gwang-Won Kim",
+   "Yong-Hak Kim"
+  ],
+  "substitution_events": [
+   {
+    "team": "Ulsan HD FC",
+    "in": "Heui-Kyun Lee",
+    "out": "Erick Farias",
+    "minute": "46"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Yong-Woo Park",
+    "out": "Darijan Bojanić",
+    "minute": "64"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Sang-Hyeok Cho",
+    "out": "Jakob Tranziska",
+    "minute": "61"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Han-Min Jung",
+    "out": "Kento Nishiya",
+    "minute": "77"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Sung-Wook Jo",
+    "out": "Min-Jun Kang",
+    "minute": "90"
+   },
+   {
+    "team": "Pohang Steelers",
+    "in": "Ye-Sung Kim",
+    "out": "Kwang-Hoon Shin",
+    "minute": "90"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 2
+  },
+  "provider_score": "2-2",
+  "score_consistent_with_events": true,
+  "referee": "Park Byung-Jin",
+  "attendance": 15228,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-2"
+  }
+ }
+}

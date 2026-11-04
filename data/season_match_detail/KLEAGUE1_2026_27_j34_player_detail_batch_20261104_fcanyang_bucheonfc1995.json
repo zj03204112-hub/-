@@ -1,0 +1,145 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "34",
+ "match_id": "kleague1-2026-27-2026-11-01-fcanyang-bucheonfc1995",
+ "date": "2026-11-01",
+ "home": "FC Anyang",
+ "away": "Bucheon FC 1995",
+ "score": "2-1",
+ "halftime_score": "0-1",
+ "official_match_url": "https://www.fotmob.com/matches/6503950",
+ "verification": "fotmob_lineups_with_flashscore_score_crosscheck",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/6503950"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Jeong-Hoon Kim",
+   "Ji-Hun Kang",
+   "Ji-Hun Kim",
+   "Kyung-Won Kwon",
+   "Dong-Jin Kim",
+   "Matheus Oliveira Santos",
+   "Danny Bakker",
+   "Branislav Knežević",
+   "Hyun-Woo Chae",
+   "Woon Kim",
+   "Ivan Jukić"
+  ],
+  "home_bench": [
+   "Breno Herculano",
+   "Geon-Joo Choi",
+   "Jin-Yong Lee",
+   "Jeong-Hyun Kim",
+   "Jeong-Wan Yu",
+   "Da-Sol Kim",
+   "Jae-Hyeon Kim",
+   "Young-Chan Kim",
+   "Bo-Kyung Kim"
+  ],
+  "away_starting_xi": [
+   "Hyeon-Yeop Kim",
+   "Ho-Jin Jeong",
+   "Dong-Gyu Baek",
+   "Sung-Wook Hong",
+   "Thiaguinho Santos",
+   "Ye-Geon Sung",
+   "Jong-Woo Kim",
+   "Tae-Hyun An",
+   "Rodrigo Bassani da Cruz",
+   "Jeong-In Park",
+   "Seung-Bin Kim"
+  ],
+  "away_bench": [
+   "Galego",
+   "Gustavo Nescau",
+   "Sang-Jun Kim",
+   "Sang-Hyeon Lee",
+   "Jae-Won Lee",
+   "Bit-Garam Yoon",
+   "Seong-Jun Jo",
+   "Dong-Hyun Kim",
+   "Min-Jun Kim"
+  ],
+  "substitution_events": [
+   {
+    "team": "FC Anyang",
+    "in": "Geon-Joo Choi",
+    "out": "Hyun-Woo Chae",
+    "minute": "66"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Breno Herculano",
+    "out": "Woon Kim",
+    "minute": "66"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Jin-Yong Lee",
+    "out": "Ji-Hun Kang",
+    "minute": "81"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Jeong-Hyun Kim",
+    "out": "Branislav Knežević",
+    "minute": "86"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Jeong-Wan Yu",
+    "out": "Ivan Jukić",
+    "minute": "87"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Galego",
+    "out": "Seung-Bin Kim",
+    "minute": "72"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Gustavo Nescau",
+    "out": "Jeong-In Park",
+    "minute": "72"
+   },
+   {
+    "team": "Bucheon FC 1995",
+    "in": "Sang-Jun Kim",
+    "out": "Jong-Woo Kim",
+    "minute": "80"
+   }
+  ],
+  "goals": {
+   "home": 2,
+   "away": 1
+  },
+  "provider_score": "2-1",
+  "score_consistent_with_events": true,
+  "referee": "Song Min-Seok",
+  "attendance": 4464,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending",
+ "secondary_score_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+ "verification_detail": {
+  "score_crosscheck": {
+   "checked_at": "2026-11-04",
+   "secondary_source": "https://www.flashscore.com/football/south-korea/k-league-1/",
+   "provider": "Flashscore competition feed",
+   "matched": true,
+   "score": "2-1"
+  }
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "1",
+ "match_id": "kleague1-2026-27-2026-03-02-daejeonhanacitizen-fcanyang",
+ "date": "2026-03-02",
+ "home": "Daejeon Hana Citizen",
+ "away": "FC Anyang",
+ "score": "1-1",
+ "halftime_score": "0-0",
+ "official_match_url": "https://www.fotmob.com/matches/5139867",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139867"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Chang-Geun Lee",
+   "Moon-Hwan Kim",
+   "Chang-Rae Ha",
+   "Min-Deok Kim",
+   "Myung-Jae Lee",
+   "João Victor",
+   "Bong-Soo Kim",
+   "Soon-Min Lee",
+   "Gustav Ludwigson",
+   "Min-Kyu Joo",
+   "Jin-Su Seo"
+  ],
+  "home_bench": [
+   "Victor Bobsin",
+   "Diogo",
+   "Hyeon-Ug Kim",
+   "Masatoshi Ishida",
+   "Jun-Seo Lee",
+   "Jong-Eun Lim",
+   "Yoon-Sung Kang"
+  ],
+  "away_starting_xi": [
+   "Jeong-Hoon Kim",
+   "Chang-Yong Lee",
+   "Kyung-Won Kwon",
+   "Thomas Kotte",
+   "Tae-Hee Lee",
+   "Jeong-Hyun Kim",
+   "Gyu-Hyeon Choe",
+   "Dong-Jin Kim",
+   "Geon-Joo Choi",
+   "Ivan Jukic",
+   "Matheus Oliveira Santos"
+  ],
+  "away_bench": [
+   "Jin-Yong Lee",
+   "Ji-Hun Kim",
+   "Breno Herculano",
+   "Young-Chan Kim",
+   "Hyun-Woo Chae",
+   "Byeong-Geun Hwang",
+   "Bo-Kyung Kim",
+   "Hyun-Woo Joo",
+   "Ji-Hun Kang"
+  ],
+  "substitution_events": [
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Victor Bobsin",
+    "out": "Jin-Su Seo",
+    "minute": "67"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Diogo",
+    "out": "Soon-Min Lee",
+    "minute": "67"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Hyeon-Ug Kim",
+    "out": "Min-Kyu Joo",
+    "minute": "79"
+   },
+   {
+    "team": "Daejeon Hana Citizen",
+    "in": "Masatoshi Ishida",
+    "out": "João Victor",
+    "minute": "87"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Jin-Yong Lee",
+    "out": "Jeong-Hyun Kim",
+    "minute": "71"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Ji-Hun Kim",
+    "out": "Chang-Yong Lee",
+    "minute": "79"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Breno Herculano",
+    "out": "Ivan Jukic",
+    "minute": "79"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Young-Chan Kim",
+    "out": "Geon-Joo Choi",
+    "minute": "87"
+   },
+   {
+    "team": "FC Anyang",
+    "in": "Hyun-Woo Chae",
+    "out": "Gyu-Hyeon Choe",
+    "minute": "87"
+   }
+  ],
+  "goals": {
+   "home": 1,
+   "away": 1
+  },
+  "provider_score": "1-1",
+  "score_consistent_with_events": true,
+  "referee": "Yong-Jun Shin",
+  "attendance": 14787,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}

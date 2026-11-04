@@ -1,0 +1,147 @@
+{
+ "generated_at": "2026-11-04",
+ "league": "K League 1",
+ "season": "2026-27",
+ "matchday": "8",
+ "match_id": "kleague1-2026-27-2026-04-19-ulsanhdfc-gwangjufc",
+ "date": "2026-04-19",
+ "home": "Ulsan HD FC",
+ "away": "Gwangju FC",
+ "score": "5-1",
+ "halftime_score": "2-1",
+ "official_match_url": "https://www.fotmob.com/matches/5139908",
+ "verification": "fotmob_single_source_structurally_validated",
+ "sources": {
+  "fotmob": "https://www.fotmob.com/matches/5139908"
+ },
+ "verified_data": {
+  "home_starting_xi": [
+   "Hyeon-Woo Jo",
+   "Sang-Min Sim",
+   "Seung-Hyeon Jung",
+   "Jae-Ik Lee",
+   "Hyun-Taek Cho",
+   "Si-Young Jang",
+   "Heui-Kyun Lee",
+   "Gyu-Sung Lee",
+   "Darijan Bojanic",
+   "Sang-Woo Kang",
+   "Marcão"
+  ],
+  "home_bench": [
+   "Min-Hyuk Lee",
+   "Dong-Gyeong Lee",
+   "Pedrinho",
+   "Seok-Hyeon Choi",
+   "Yool Heo",
+   "Seong-Min Ryu",
+   "Myeong-Kwan Seo",
+   "Jae-Sang Jeong",
+   "Woo-Jin Park"
+  ],
+  "away_starting_xi": [
+   "Hee-Dong Roh",
+   "Jin-Ho Kim",
+   "Yong-Hyuk Kim",
+   "Young-Kyu Ahn",
+   "Min-Gi Lee",
+   "Chang-Moo Sin",
+   "Se-Jong Joo",
+   "Kyoung-Rok Choi",
+   "Seung-Un Ha",
+   "Hyeok-Joo An",
+   "Ji-Hoon Jeong"
+  ],
+  "away_bench": [
+   "Min-Seo Moon",
+   "Seong-Yun Kwon",
+   "Yong-Jun Hong",
+   "Seong-Hyun Park",
+   "Yun-Ho Kim",
+   "Dong-Hwa Kim",
+   "Bae-Hyeon Gong",
+   "Sang-Ki Min",
+   "Hui-Su Kang"
+  ],
+  "substitution_events": [
+   {
+    "team": "Ulsan HD FC",
+    "in": "Min-Hyuk Lee",
+    "out": "Heui-Kyun Lee",
+    "minute": "64"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Dong-Gyeong Lee",
+    "out": "Darijan Bojanic",
+    "minute": "64"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Pedrinho",
+    "out": "Si-Young Jang",
+    "minute": "69"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Yool Heo",
+    "out": "Marcão",
+    "minute": "79"
+   },
+   {
+    "team": "Ulsan HD FC",
+    "in": "Seok-Hyeon Choi",
+    "out": "Sang-Min Sim",
+    "minute": "79"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Min-Seo Moon",
+    "out": "Chang-Moo Sin",
+    "minute": "38"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Seong-Yun Kwon",
+    "out": "Jin-Ho Kim",
+    "minute": "63"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Yong-Jun Hong",
+    "out": "Kyoung-Rok Choi",
+    "minute": "66"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Seong-Hyun Park",
+    "out": "Ji-Hoon Jeong",
+    "minute": "71"
+   },
+   {
+    "team": "Gwangju FC",
+    "in": "Yun-Ho Kim",
+    "out": "Seung-Un Ha",
+    "minute": "71"
+   }
+  ],
+  "goals": {
+   "home": 5,
+   "away": 1
+  },
+  "provider_score": "5-1",
+  "score_consistent_with_events": true,
+  "referee": "",
+  "attendance": 9022,
+  "notes": [
+   "Lineups, bench, events and shot data come from the FotMob public match API.",
+   "Lineups come from FotMob; scores are cross-checked against the Flashscore competition feed.",
+   "Halftime score is derived from first half goal events, not from a provider field."
+  ]
+ },
+ "normalized_csv": {
+  "players": "data/season_match_detail/KLEAGUE1_2026_27_players.csv",
+  "substitutions": "data/season_match_detail/KLEAGUE1_2026_27_substitutions.csv"
+ },
+ "status": "fotmob_lineups_with_flashscore_score_crosscheck_secondary_lineup_pending"
+}
