@@ -1,0 +1,105 @@
+{
+  "schema_version": "immutable-prediction-snapshot-v1",
+  "prediction_id": "match:afc-champions-league-two:2026-11-04:al-kuwait:nasaf:RESEARCH-XG-POISSON-v1.0:2026-11-04T15:00+08:00",
+  "created_at_beijing": "2026-11-04T15:00:00+08:00",
+  "match_id": "match:afc-champions-league-two:2026-11-04:al-kuwait:nasaf",
+  "competition_id": "afc-champions-league-two",
+  "competition": "AFC Champions League Two",
+  "competition_type": "continental_club",
+  "season": "2026-27",
+  "home_team": "Al-Kuwait",
+  "away_team": "Nasaf",
+  "kickoff_utc": "2026-11-04T16:00:00Z",
+  "kickoff_beijing": "2026-11-05T00:00:00+08:00",
+  "prediction_window_hours_before_kickoff": 9,
+  "market": {
+    "official_sporttery_status": "UNVERIFIED_OFFICIAL_SOURCE_UNAVAILABLE",
+    "official_sporttery_handicap": null,
+    "official_sporttery_1x2": null,
+    "opening_to_current_official_sporttery": null,
+    "official_capture_timestamp": null,
+    "third_party_market_observations": [],
+    "usage_rule": "Third-party prices are stored only as context and were not used to determine the prediction or the Poisson lambdas."
+  },
+  "prematch_inputs": {
+    "selected_provider_projected_xg": {
+      "provider": "MatchPulseStats 7-model ensemble projected xG",
+      "provider_model_version": "not_disclosed",
+      "home_xg": 1.4,
+      "away_xg": 1.09,
+      "type": "provider_model_estimate",
+      "source_url": "https://matchpulsestats.com/en/match/1630394",
+      "source_capture_time": "page available by 2026-11-04 15:00 Beijing; exact upstream timestamp not disclosed"
+    },
+    "recent_form_last3": {
+      "home": "近3场 W-W-L（AFC小组赛）",
+      "away": "近3场 L-L-D（AFC小组赛）"
+    },
+    "injuries": "未取得可核实的完整伤停名单；首发未公布",
+    "starting_lineup_status": "OFFICIAL_STARTING_XI_NOT_YET_PUBLISHED; probable lineup data not treated as confirmed",
+    "tactics": "阵型/具体战术未核实",
+    "weather": "Kuwait City约30.6°C，多云，风速约6km/h（ForzaPitch页面）",
+    "referee": "Resul Mämmedow（赛程资料列示，尚未取得AFC原始指派页）",
+    "schedule_motivation": "A组Al-Kuwait 6分第2，Nasaf 1分第3；争取前两名出线位置，直接竞争",
+    "professional_commentator_analysis": "未取得可追溯的专业足球评论员原始分析；未编造评论员观点。",
+    "missing_fields": [
+      "官方竞彩盘口及初盘/即时盘",
+      "正式首发11人",
+      "部分伤停的官方确认",
+      "部分裁判原始指派",
+      "部分天气/战术/下一场对手核验",
+      "上游xG抓取时间及原始响应"
+    ]
+  },
+  "model": {
+    "model_version": "RESEARCH-XG-POISSON-v1.0",
+    "production_status": "RESEARCH_ONLY_NOT_PRODUCTION; NOT_V5.1",
+    "method": "Independent Poisson score matrix from one selected provider projected-xG source per match; no cross-provider xG averaging and no odds-derived lambdas.",
+    "lambda_home": 1.4,
+    "lambda_away": 1.09,
+    "probabilities_90m_percent": {
+      "home_win": 44,
+      "draw": 26.7,
+      "away_win": 29.3
+    },
+    "most_likely_scores": [
+      {
+        "score": "1-1",
+        "probability_percent": 12.65
+      },
+      {
+        "score": "1-0",
+        "probability_percent": 11.61
+      }
+    ],
+    "halftime_model": {
+      "first_half_lambda_share": 0.45,
+      "second_half_lambda_share": 0.55,
+      "assumption": "Research assumption; not calibrated as a production halftime model."
+    },
+    "most_likely_half_full_time": {
+      "result": "胜胜",
+      "probability_percent": 26.2
+    },
+    "personal_confidence_0_to_10": 4,
+    "strategy_id": "RXP-20261104-1500-AL_KUWAIT_NASAF",
+    "risk": "MatchPulse xG 1.40/1.09与ForzaPitch另一来源1.36/0.42明显不同；本预测只使用MatchPulse单一来源，不能将不同供应商数据平均。",
+    "data_completeness_percent": 63
+  },
+  "prediction": {
+    "first_score": "1-1",
+    "second_score": "1-0",
+    "result_90m": "主胜",
+    "handicap_1x2": "无法核验",
+    "handicap_mapping_status": "NOT_CALCULATED; official Sporttery handicap missing",
+    "half_full_time": "胜胜"
+  },
+  "provenance": {
+    "source_urls": [
+      "https://matchpulsestats.com/en/match/1630394"
+    ],
+    "immutable": true,
+    "post_match_xg_used_as_same_match_prematch_input": false,
+    "model_change": "No V5.1 or frozen validation sample change."
+  }
+}
