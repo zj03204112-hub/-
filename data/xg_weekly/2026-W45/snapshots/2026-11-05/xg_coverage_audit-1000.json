@@ -1,0 +1,148 @@
+{
+  "audit_version": "weekly-xg-audit-2026-11-05-v1-1000",
+  "iso_week": "2026-W45",
+  "week_start": "2026-11-02",
+  "week_end": "2026-11-08",
+  "generated_at_beijing": "2026-11-05T09:57:21+08:00",
+  "base_snapshot": {
+    "branch": "automation/daily-football-2026-11-04-1500",
+    "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_snapshot-1002.csv",
+    "blob_sha": "e3e930b5e1375b8d2eaf8271dfc5a7911d6d2cc1",
+    "unique_matches": 55,
+    "team_provider_rows": 126,
+    "fulltime_xg_matches": 16,
+    "partial_inplay_matches": 2,
+    "missing_fulltime_xg_matches": 39
+  },
+  "prior_delta": {
+    "branch": "automation/daily-football-2026-11-04-1500",
+    "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_delta-1500.csv",
+    "blob_sha": "a2df4d06933bb21e2b5f0c0154245de555024f06",
+    "rows": 6,
+    "unique_matches_after_delta": 55,
+    "fulltime_xg_matches_after_delta": 17,
+    "partial_inplay_matches": 2,
+    "missing_fulltime_xg_matches_after_delta": 38
+  },
+  "new_delta": {
+    "path": "data/xg_weekly/2026-W45/snapshots/2026-11-05/match_xg_delta-1000.csv",
+    "rows": 72,
+    "unique_match_ids": 33,
+    "team_provider_rows": 72,
+    "team_weekly_summary_rows": 72,
+    "team_week_coverage_rows": 66
+  },
+  "cumulative": {
+    "unique_matches": 81,
+    "fulltime_xg_matches": 28,
+    "partial_inplay_matches": 2,
+    "missing_fulltime_xg_matches": 53,
+    "fulltime_xg_coverage_pct": 34.57,
+    "team_provider_rows_after_delta": 204,
+    "team_weekly_summary_rows_after_delta": 204,
+    "team_week_coverage_rows_after_delta": 180
+  },
+  "previous_beijing_date": {
+    "date": "2026-11-04",
+    "matches": 19,
+    "fulltime_xg_matches": 15,
+    "missing_xg_matches": 4,
+    "coverage_pct": 78.95
+  },
+  "current_beijing_date_early_completed": {
+    "date": "2026-11-05",
+    "matches": 19,
+    "fulltime_xg_captured": 0,
+    "missing_xg_matches": 19,
+    "coverage_pct": 0
+  },
+  "source_discrepancy_groups": [
+    {
+      "match_id": "match:uefa-champions-league:2026-11-03:shakhtar-donetsk:sporting-cp",
+      "providers": [
+        {
+          "provider": "FootballEdge UK",
+          "home_xg": 1.97,
+          "away_xg": 1.24
+        },
+        {
+          "provider": "Shotify",
+          "home_xg": 1.96,
+          "away_xg": 1.3
+        }
+      ],
+      "stored_separately": true
+    },
+    {
+      "match_id": "match:uefa-champions-league:2026-11-03:galatasaray:vfb-stuttgart",
+      "providers": [
+        {
+          "provider": "Darbah",
+          "home_xg": 1.1,
+          "away_xg": 1.83
+        },
+        {
+          "provider": "Shotify",
+          "home_xg": 1.01,
+          "away_xg": 1.77
+        }
+      ],
+      "stored_separately": true
+    },
+    {
+      "match_id": "match:uefa-champions-league:2026-11-03:bodo-glimt:lille",
+      "providers": [
+        {
+          "provider": "Canliskor",
+          "home_xg": 0.54,
+          "away_xg": 0.6
+        },
+        {
+          "provider": "Futbol24",
+          "home_xg": 0.6,
+          "away_xg": 0.74
+        }
+      ],
+      "stored_separately": true
+    },
+    {
+      "match_id": "match:uefa-champions-league:2026-11-03:lask:slovan-bratislava",
+      "providers": [
+        {
+          "provider": "Shotify",
+          "home_xg": 4.69,
+          "away_xg": 0.47
+        },
+        {
+          "provider": "StatsBet",
+          "home_xg": 3.92,
+          "away_xg": 0.74
+        }
+      ],
+      "stored_separately": true
+    },
+    {
+      "match_id": "match:brazil-serie-a:2026-11-04:internacional:coritiba",
+      "providers": [
+        {
+          "provider": "MatchdayGuru",
+          "home_xg": 1.68,
+          "away_xg": 0.57
+        },
+        {
+          "provider": "Shotify",
+          "home_xg": 1.59,
+          "away_xg": 0.64
+        }
+      ],
+      "stored_separately": true
+    }
+  ],
+  "xgd_arithmetic_mismatches": 0,
+  "duplicate_delta_match_team_provider_keys": 0,
+  "full_iso_week_fixture_coverage": false,
+  "weekly_totals_published": false,
+  "weekly_per90_published": false,
+  "post_match_xg_used_as_same_match_prematch_input": false,
+  "missing_policy": "Missing xG remains blank with reason; pre-match projections are not treated as actual xG; provider model estimates are clearly labelled and never averaged across vendors."
+}
