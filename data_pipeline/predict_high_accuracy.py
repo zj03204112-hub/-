@@ -92,7 +92,13 @@ def main() -> int:
             tier = tier_for(strength)
             safe_side = "主不败" if favourite == 0 else "客不败"
             three_side = ["主胜", "平局", "客胜"][favourite]
+            safe_probability = probabilities[favourite] + probabilities[1]
             picks.append({
+                "p_home": round(probabilities[0], 4),
+                "p_draw": round(probabilities[1], 4),
+                "p_away": round(probabilities[2], 4),
+                "safe_probability": round(safe_probability, 4),
+                "safe_fair_odds": round(1.0 / safe_probability, 3),
                 "num": item.get("matchNumStr"), "league": league,
                 "home": item.get("homeTeamAbbName"), "away": item.get("awayTeamAbbName"),
                 "kickoff": f"{item.get('matchDate')} {item.get('matchTime')}",
@@ -127,15 +133,15 @@ def main() -> int:
     open(OUT, "a", encoding="utf-8").write("\n")
 
     log(f"在售 {len(picks)} 场达到 {args.min_prob:.2f} 门槛\n")
-    print(f"{'编号':8s} {'联赛':8s} {'比赛':22s} {'热门概率':>8s} {'推荐':>6s} "
-          f"{'历史命中':>8s} {'三选一':>6s} {'历史命中':>8s}")
+    print(f"{'编号':8s} {'比赛':20s} {'主胜':>6s} {'平':>6s} {'客胜':>6s} "
+          f"{'推荐':>6s} {'不败概率':>8s} {'公平赔率':>8s} {'历史命中':>8s}")
     for pick in picks:
         match = f"{pick['home'][:8]}-{pick['away'][:8]}"
-        print(f"{pick['num']:8s} {pick['league'][:6]:8s} {match:22s} "
-              f"{pick['favourite_probability']:8.3f} {pick['safe_pick']:>6s} "
-              f"{100 * (pick['historical_safe_rate'] or 0):7.1f}% "
-              f"{pick['three_way_pick']:>6s} "
-              f"{100 * (pick['historical_three_way_rate'] or 0):7.1f}%")
+        print(f"{pick['num']:8s} {match:20s} "
+              f"{100 * pick['p_home']:5.1f}% {100 * pick['p_draw']:5.1f}% "
+              f"{100 * pick['p_away']:5.1f}% {pick['safe_pick']:>6s} "
+              f"{100 * pick['safe_probability']:7.1f}% {pick['safe_fair_odds']:8.2f} "
+              f"{100 * (pick['historical_safe_rate'] or 0):7.1f}%")
     log(f"\nreport: {os.path.relpath(OUT, REPO_ROOT)}")
     return 0
 

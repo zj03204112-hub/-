@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-05T04:17:49Z",
- "min_probability": 0.75,
+ "generated_at": "2026-11-05T04:42:48Z",
+ "min_probability": 0.6,
  "definition": "High-accuracy output. The pick is the favourite not losing (主不败/客不败), whose historical hit rate by strength tier is shown per match. Accuracy is the only objective here; the odds column is informational, not a profitability claim.",
  "tiers_reference": [
   {
@@ -36,6 +36,11 @@
  ],
  "picks": [
   {
+   "p_home": 0.7979,
+   "p_draw": 0.1416,
+   "p_away": 0.0605,
+   "safe_probability": 0.9395,
+   "safe_fair_odds": 1.064,
    "num": "周四013",
    "league": "巴甲",
    "home": "帕梅拉斯",
@@ -60,6 +65,161 @@
    "tier": "0.75-0.80",
    "historical_safe_rate": 0.938,
    "historical_three_way_rate": 0.789
+  },
+  {
+   "p_home": 0.7375,
+   "p_draw": 0.1656,
+   "p_away": 0.097,
+   "safe_probability": 0.903,
+   "safe_fair_odds": 1.107,
+   "num": "周四001",
+   "league": "亚冠乙",
+   "home": "町田泽维",
+   "away": "上海申花",
+   "kickoff": "2026-11-05 18:00:00",
+   "odds": [
+    1.19,
+    5.3,
+    9.05
+   ],
+   "probabilities": [
+    0.7375,
+    0.1656,
+    0.097
+   ],
+   "favourite": "home",
+   "favourite_probability": 0.7375,
+   "safe_pick": "主不败",
+   "safe_odds": 1.19,
+   "three_way_pick": "主胜",
+   "three_way_odds": 1.19,
+   "tier": "0.70-0.75",
+   "historical_safe_rate": 0.917,
+   "historical_three_way_rate": 0.76
+  },
+  {
+   "p_home": 0.7253,
+   "p_draw": 0.1714,
+   "p_away": 0.1033,
+   "safe_probability": 0.8967,
+   "safe_fair_odds": 1.115,
+   "num": "周四006",
+   "league": "欧罗巴",
+   "home": "AC米兰",
+   "away": "费伦茨",
+   "kickoff": "2026-11-06 01:45:00",
+   "odds": [
+    1.21,
+    5.12,
+    8.5
+   ],
+   "probabilities": [
+    0.7253,
+    0.1714,
+    0.1033
+   ],
+   "favourite": "home",
+   "favourite_probability": 0.7253,
+   "safe_pick": "主不败",
+   "safe_odds": 1.21,
+   "three_way_pick": "主胜",
+   "three_way_odds": 1.21,
+   "tier": "0.70-0.75",
+   "historical_safe_rate": 0.917,
+   "historical_three_way_rate": 0.76
+  },
+  {
+   "p_home": 0.7191,
+   "p_draw": 0.1625,
+   "p_away": 0.1184,
+   "safe_probability": 0.8816,
+   "safe_fair_odds": 1.134,
+   "num": "周四012",
+   "league": "欧罗巴",
+   "home": "勒沃库森",
+   "away": "马赛",
+   "kickoff": "2026-11-06 04:00:00",
+   "odds": [
+    1.22,
+    5.4,
+    7.41
+   ],
+   "probabilities": [
+    0.7191,
+    0.1625,
+    0.1184
+   ],
+   "favourite": "home",
+   "favourite_probability": 0.7191,
+   "safe_pick": "主不败",
+   "safe_odds": 1.22,
+   "three_way_pick": "主胜",
+   "three_way_odds": 1.22,
+   "tier": "0.70-0.75",
+   "historical_safe_rate": 0.917,
+   "historical_three_way_rate": 0.76
+  },
+  {
+   "p_home": 0.6854,
+   "p_draw": 0.1928,
+   "p_away": 0.1218,
+   "safe_probability": 0.8782,
+   "safe_fair_odds": 1.139,
+   "num": "周四008",
+   "league": "欧罗巴",
+   "home": "桑德兰",
+   "away": "萨迪纳摩",
+   "kickoff": "2026-11-06 04:00:00",
+   "odds": [
+    1.28,
+    4.55,
+    7.2
+   ],
+   "probabilities": [
+    0.6854,
+    0.1928,
+    0.1218
+   ],
+   "favourite": "home",
+   "favourite_probability": 0.6854,
+   "safe_pick": "主不败",
+   "safe_odds": 1.28,
+   "three_way_pick": "主胜",
+   "three_way_odds": 1.28,
+   "tier": "0.65-0.70",
+   "historical_safe_rate": 0.886,
+   "historical_three_way_rate": 0.725
+  },
+  {
+   "p_home": 0.1515,
+   "p_draw": 0.183,
+   "p_away": 0.6655,
+   "safe_probability": 0.8485,
+   "safe_fair_odds": 1.178,
+   "num": "周四003",
+   "league": "欧罗巴",
+   "home": "布斯巴达",
+   "away": "伯恩茅斯",
+   "kickoff": "2026-11-06 01:45:00",
+   "odds": [
+    5.8,
+    4.8,
+    1.32
+   ],
+   "probabilities": [
+    0.1515,
+    0.183,
+    0.6655
+   ],
+   "favourite": "away",
+   "favourite_probability": 0.6655,
+   "safe_pick": "客不败",
+   "safe_odds": 1.32,
+   "three_way_pick": "客胜",
+   "three_way_odds": 1.32,
+   "tier": "0.65-0.70",
+   "historical_safe_rate": 0.886,
+   "historical_three_way_rate": 0.725
   }
  ]
 }
