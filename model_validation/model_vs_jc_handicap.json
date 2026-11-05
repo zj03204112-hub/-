@@ -1,0 +1,74 @@
+{
+ "definition": "V4 model versus the archived jingcai handicap market, 2025-2026, five European leagues. Model probabilities come from the shipped V4 lambdas through an independent Poisson matrix using the official handicap line. Market side is the de-vigged three-way price. ROI is a flat stake on each side's own top pick.",
+ "matched": 1714,
+ "model": {
+  "n": 1714,
+  "accuracy": 0.4883,
+  "brier": 0.6325,
+  "logloss": 1.0507,
+  "roi": -0.0815
+ },
+ "market": {
+  "n": 1714,
+  "accuracy": 0.5064,
+  "brier": 0.6098,
+  "logloss": 1.0177,
+  "roi": -0.0815
+ },
+ "same_pick_share": 0.8221,
+ "model_return_sum": -139.67,
+ "market_return_sum": -139.65,
+ "by_line": {
+  "-2": {
+   "n": 87,
+   "model": {
+    "n": 87,
+    "accuracy": 0.4253,
+    "brier": 0.7168,
+    "logloss": 1.166,
+    "roi": -0.0644
+   },
+   "market": {
+    "n": 87,
+    "accuracy": 0.4253,
+    "brier": 0.6392,
+    "logloss": 1.0583,
+    "roi": -0.1283
+   }
+  },
+  "-1": {
+   "n": 1031,
+   "model": {
+    "n": 1031,
+    "accuracy": 0.4859,
+    "brier": 0.6333,
+    "logloss": 1.0519,
+    "roi": -0.0786
+   },
+   "market": {
+    "n": 1031,
+    "accuracy": 0.5044,
+    "brier": 0.6116,
+    "logloss": 1.0204,
+    "roi": -0.0855
+   }
+  },
+  "+1": {
+   "n": 567,
+   "model": {
+    "n": 567,
+    "accuracy": 0.4974,
+    "brier": 0.6205,
+    "logloss": 1.0342,
+    "roi": -0.1035
+   },
+   "market": {
+    "n": 567,
+    "accuracy": 0.5132,
+    "brier": 0.6039,
+    "logloss": 1.0095,
+    "roi": -0.0926
+   }
+  }
+ }
+}
