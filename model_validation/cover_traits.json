@@ -1,0 +1,586 @@
+{
+ "definition": "Cover = the favourite (higher 1X2 implied probability) wins the jingcai handicap. 让平 is a payable third outcome in jingcai, so it is kept in the denominator and reported as push_rate rather than excluded. Only bins with at least 50 matches are shown.",
+ "matches": 12698,
+ "usable": 12698,
+ "pushes": 0,
+ "overall_cover_rate": 0.291,
+ "overall_push_rate": 0.2437,
+ "traits": {
+  "favourite_strength": {
+   ">=0.65": {
+    "n": 2241,
+    "cover_rate": 0.4145,
+    "push_rate": 0.2334,
+    "miss_rate": 0.3521
+   },
+   "<0.65": {
+    "n": 977,
+    "cover_rate": 0.3644,
+    "push_rate": 0.2784,
+    "miss_rate": 0.3572
+   },
+   "<0.6": {
+    "n": 1284,
+    "cover_rate": 0.3084,
+    "push_rate": 0.2702,
+    "miss_rate": 0.4213
+   },
+   "<0.4": {
+    "n": 2276,
+    "cover_rate": 0.2816,
+    "push_rate": 0.2184,
+    "miss_rate": 0.5
+   },
+   "<0.55": {
+    "n": 1639,
+    "cover_rate": 0.2715,
+    "push_rate": 0.2685,
+    "miss_rate": 0.46
+   },
+   "<0.5": {
+    "n": 1920,
+    "cover_rate": 0.2281,
+    "push_rate": 0.25,
+    "miss_rate": 0.5219
+   },
+   "<0.45": {
+    "n": 2361,
+    "cover_rate": 0.2075,
+    "push_rate": 0.227,
+    "miss_rate": 0.5654
+   }
+  },
+  "line_depth": {
+   "-3": {
+    "n": 104,
+    "cover_rate": 0.4135,
+    "push_rate": 0.1635,
+    "miss_rate": 0.4231
+   },
+   "-2": {
+    "n": 774,
+    "cover_rate": 0.3475,
+    "push_rate": 0.2183,
+    "miss_rate": 0.4341
+   },
+   "+2": {
+    "n": 217,
+    "cover_rate": 0.3318,
+    "push_rate": 0.2074,
+    "miss_rate": 0.4608
+   },
+   "-1": {
+    "n": 7560,
+    "cover_rate": 0.2853,
+    "push_rate": 0.2507,
+    "miss_rate": 0.464
+   },
+   "+1": {
+    "n": 3994,
+    "cover_rate": 0.2849,
+    "push_rate": 0.2414,
+    "miss_rate": 0.4737
+   },
+   "+3": {
+    "n": 20
+   },
+   "-4": {
+    "n": 15
+   },
+   "-5": {
+    "n": 7
+   },
+   "+4": {
+    "n": 2
+   },
+   "+5": {
+    "n": 4
+   },
+   "-7": {
+    "n": 1
+   }
+  },
+  "favourite_side": {
+   "away": {
+    "n": 4347,
+    "cover_rate": 0.2958,
+    "push_rate": 0.2365,
+    "miss_rate": 0.4677
+   },
+   "home": {
+    "n": 8351,
+    "cover_rate": 0.2885,
+    "push_rate": 0.2475,
+    "miss_rate": 0.464
+   }
+  },
+  "draw_price_band": {
+   "<0.22": {
+    "n": 2894,
+    "cover_rate": 0.4053,
+    "push_rate": 0.2398,
+    "miss_rate": 0.3549
+   },
+   "<0.25": {
+    "n": 2177,
+    "cover_rate": 0.3174,
+    "push_rate": 0.2559,
+    "miss_rate": 0.4267
+   },
+   "<0.28": {
+    "n": 4043,
+    "cover_rate": 0.2543,
+    "push_rate": 0.2379,
+    "miss_rate": 0.5078
+   },
+   ">=0.28": {
+    "n": 3584,
+    "cover_rate": 0.2241,
+    "push_rate": 0.2461,
+    "miss_rate": 0.5299
+   }
+  },
+  "total_goals_line": {
+   ">=2.9": {
+    "n": 2301,
+    "cover_rate": 0.3503,
+    "push_rate": 0.2208,
+    "miss_rate": 0.4289
+   },
+   "<2.6": {
+    "n": 9390,
+    "cover_rate": 0.2834,
+    "push_rate": 0.2473,
+    "miss_rate": 0.4693
+   },
+   "<2.4": {
+    "n": 1007,
+    "cover_rate": 0.2264,
+    "push_rate": 0.2632,
+    "miss_rate": 0.5104
+   }
+  },
+  "season_month": {
+   "10": {
+    "n": 1155,
+    "cover_rate": 0.3377,
+    "push_rate": 0.2225,
+    "miss_rate": 0.4398
+   },
+   "08": {
+    "n": 1257,
+    "cover_rate": 0.3111,
+    "push_rate": 0.2379,
+    "miss_rate": 0.4511
+   },
+   "09": {
+    "n": 1043,
+    "cover_rate": 0.3097,
+    "push_rate": 0.2464,
+    "miss_rate": 0.4439
+   },
+   "02": {
+    "n": 1093,
+    "cover_rate": 0.2973,
+    "push_rate": 0.2479,
+    "miss_rate": 0.4547
+   },
+   "11": {
+    "n": 1465,
+    "cover_rate": 0.286,
+    "push_rate": 0.2546,
+    "miss_rate": 0.4594
+   },
+   "01": {
+    "n": 1330,
+    "cover_rate": 0.2857,
+    "push_rate": 0.2211,
+    "miss_rate": 0.4932
+   },
+   "12": {
+    "n": 1133,
+    "cover_rate": 0.2816,
+    "push_rate": 0.2542,
+    "miss_rate": 0.4643
+   },
+   "03": {
+    "n": 1259,
+    "cover_rate": 0.2812,
+    "push_rate": 0.2645,
+    "miss_rate": 0.4543
+   },
+   "06": {
+    "n": 700,
+    "cover_rate": 0.2771,
+    "push_rate": 0.2343,
+    "miss_rate": 0.4886
+   },
+   "07": {
+    "n": 670,
+    "cover_rate": 0.2701,
+    "push_rate": 0.2552,
+    "miss_rate": 0.4746
+   },
+   "05": {
+    "n": 819,
+    "cover_rate": 0.2662,
+    "push_rate": 0.2295,
+    "miss_rate": 0.5043
+   },
+   "04": {
+    "n": 774,
+    "cover_rate": 0.2597,
+    "push_rate": 0.2584,
+    "miss_rate": 0.4819
+   }
+  },
+  "league": {
+   "国际赛": {
+    "n": 72,
+    "cover_rate": 0.4167,
+    "push_rate": 0.1806,
+    "miss_rate": 0.4028
+   },
+   "俄超": {
+    "n": 134,
+    "cover_rate": 0.3955,
+    "push_rate": 0.209,
+    "miss_rate": 0.3955
+   },
+   "德国杯": {
+    "n": 67,
+    "cover_rate": 0.3881,
+    "push_rate": 0.2239,
+    "miss_rate": 0.3881
+   },
+   "英锦标赛": {
+    "n": 67,
+    "cover_rate": 0.3881,
+    "push_rate": 0.2687,
+    "miss_rate": 0.3433
+   },
+   "欧冠": {
+    "n": 471,
+    "cover_rate": 0.3715,
+    "push_rate": 0.242,
+    "miss_rate": 0.3864
+   },
+   "亚冠": {
+    "n": 136,
+    "cover_rate": 0.3676,
+    "push_rate": 0.1765,
+    "miss_rate": 0.4559
+   },
+   "挪超": {
+    "n": 358,
+    "cover_rate": 0.3547,
+    "push_rate": 0.1983,
+    "miss_rate": 0.4469
+   },
+   "英联赛杯": {
+    "n": 89,
+    "cover_rate": 0.3483,
+    "push_rate": 0.2584,
+    "miss_rate": 0.3933
+   },
+   "世界杯": {
+    "n": 64,
+    "cover_rate": 0.3438,
+    "push_rate": 0.1875,
+    "miss_rate": 0.4688
+   },
+   "世俱杯": {
+    "n": 73,
+    "cover_rate": 0.3425,
+    "push_rate": 0.1918,
+    "miss_rate": 0.4658
+   },
+   "瑞超": {
+    "n": 364,
+    "cover_rate": 0.3379,
+    "push_rate": 0.2253,
+    "miss_rate": 0.4368
+   },
+   "欧预赛": {
+    "n": 113,
+    "cover_rate": 0.3363,
+    "push_rate": 0.2212,
+    "miss_rate": 0.4425
+   },
+   "德甲": {
+    "n": 640,
+    "cover_rate": 0.3344,
+    "push_rate": 0.1922,
+    "miss_rate": 0.4734
+   },
+   "英足总杯": {
+    "n": 139,
+    "cover_rate": 0.3309,
+    "push_rate": 0.2086,
+    "miss_rate": 0.4604
+   },
+   "荷乙": {
+    "n": 310,
+    "cover_rate": 0.329,
+    "push_rate": 0.2032,
+    "miss_rate": 0.4677
+   },
+   "世预赛": {
+    "n": 297,
+    "cover_rate": 0.3064,
+    "push_rate": 0.2559,
+    "miss_rate": 0.4377
+   },
+   "英甲": {
+    "n": 85,
+    "cover_rate": 0.3059,
+    "push_rate": 0.3059,
+    "miss_rate": 0.3882
+   },
+   "葡超": {
+    "n": 512,
+    "cover_rate": 0.3047,
+    "push_rate": 0.2637,
+    "miss_rate": 0.4316
+   },
+   "英超": {
+    "n": 933,
+    "cover_rate": 0.3033,
+    "push_rate": 0.2176,
+    "miss_rate": 0.4791
+   },
+   "国王杯": {
+    "n": 53,
+    "cover_rate": 0.3019,
+    "push_rate": 0.2642,
+    "miss_rate": 0.434
+   },
+   "荷甲": {
+    "n": 471,
+    "cover_rate": 0.2951,
+    "push_rate": 0.2208,
+    "miss_rate": 0.4841
+   },
+   "亚青赛": {
+    "n": 51,
+    "cover_rate": 0.2941,
+    "push_rate": 0.1569,
+    "miss_rate": 0.549
+   },
+   "芬兰超级联赛": {
+    "n": 75,
+    "cover_rate": 0.2933,
+    "push_rate": 0.2533,
+    "miss_rate": 0.4533
+   },
+   "欧罗巴": {
+    "n": 323,
+    "cover_rate": 0.291,
+    "push_rate": 0.2724,
+    "miss_rate": 0.4365
+   },
+   "解放者杯": {
+    "n": 92,
+    "cover_rate": 0.2826,
+    "push_rate": 0.1957,
+    "miss_rate": 0.5217
+   },
+   "法甲": {
+    "n": 577,
+    "cover_rate": 0.2825,
+    "push_rate": 0.2513,
+    "miss_rate": 0.4662
+   },
+   "意甲": {
+    "n": 804,
+    "cover_rate": 0.2823,
+    "push_rate": 0.2836,
+    "miss_rate": 0.4341
+   },
+   "欧协联": {
+    "n": 57,
+    "cover_rate": 0.2807,
+    "push_rate": 0.3333,
+    "miss_rate": 0.386
+   },
+   "日联赛杯": {
+    "n": 82,
+    "cover_rate": 0.2805,
+    "push_rate": 0.2683,
+    "miss_rate": 0.4512
+   },
+   "澳超": {
+    "n": 301,
+    "cover_rate": 0.2791,
+    "push_rate": 0.206,
+    "miss_rate": 0.515
+   },
+   "沙特职业联赛": {
+    "n": 101,
+    "cover_rate": 0.2772,
+    "push_rate": 0.2574,
+    "miss_rate": 0.4653
+   },
+   "日职": {
+    "n": 404,
+    "cover_rate": 0.2748,
+    "push_rate": 0.2401,
+    "miss_rate": 0.4851
+   },
+   "西甲": {
+    "n": 774,
+    "cover_rate": 0.27,
+    "push_rate": 0.2959,
+    "miss_rate": 0.4341
+   },
+   "德乙": {
+    "n": 395,
+    "cover_rate": 0.2532,
+    "push_rate": 0.2304,
+    "miss_rate": 0.5165
+   },
+   "美职足": {
+    "n": 550,
+    "cover_rate": 0.2509,
+    "push_rate": 0.2455,
+    "miss_rate": 0.5036
+   },
+   "欧国联": {
+    "n": 141,
+    "cover_rate": 0.2482,
+    "push_rate": 0.227,
+    "miss_rate": 0.5248
+   },
+   "英冠": {
+    "n": 748,
+    "cover_rate": 0.246,
+    "push_rate": 0.2594,
+    "miss_rate": 0.4947
+   },
+   "非洲杯": {
+    "n": 67,
+    "cover_rate": 0.2388,
+    "push_rate": 0.3582,
+    "miss_rate": 0.403
+   },
+   "法国杯": {
+    "n": 55,
+    "cover_rate": 0.2364,
+    "push_rate": 0.1818,
+    "miss_rate": 0.5818
+   },
+   "法乙": {
+    "n": 380,
+    "cover_rate": 0.2316,
+    "push_rate": 0.3,
+    "miss_rate": 0.4684
+   },
+   "日乙": {
+    "n": 368,
+    "cover_rate": 0.2228,
+    "push_rate": 0.2201,
+    "miss_rate": 0.5571
+   },
+   "欧洲协会联赛": {
+    "n": 83,
+    "cover_rate": 0.2169,
+    "push_rate": 0.3494,
+    "miss_rate": 0.4337
+   },
+   "韩职": {
+    "n": 285,
+    "cover_rate": 0.207,
+    "push_rate": 0.2702,
+    "miss_rate": 0.5228
+   },
+   "巴甲": {
+    "n": 146,
+    "cover_rate": 0.1918,
+    "push_rate": 0.2397,
+    "miss_rate": 0.5685
+   },
+   "荷兰杯": {
+    "n": 35
+   },
+   "亚洲冠军乙级联赛": {
+    "n": 34
+   },
+   "巴西杯": {
+    "n": 24
+   },
+   "西超杯": {
+    "n": 10
+   },
+   "意超杯": {
+    "n": 8
+   },
+   "意大利杯": {
+    "n": 46
+   },
+   "公开赛杯": {
+    "n": 9
+   },
+   "天皇杯": {
+    "n": 40
+   },
+   "亚预赛": {
+    "n": 2
+   },
+   "韩足总杯": {
+    "n": 8
+   },
+   "女四强赛": {
+    "n": 12
+   },
+   "四强赛": {
+    "n": 12
+   },
+   "澳杯": {
+    "n": 4
+   },
+   "社区盾杯": {
+    "n": 3
+   },
+   "德超杯": {
+    "n": 3
+   },
+   "法超杯": {
+    "n": 1
+   },
+   "欧超杯": {
+    "n": 3
+   },
+   "女世界杯": {
+    "n": 16
+   },
+   "亚运男足": {
+    "n": 24
+   },
+   "亚运女足": {
+    "n": 5
+   },
+   "挪威杯": {
+    "n": 1
+   },
+   "杯赛": {
+    "n": 5
+   },
+   "葡萄牙杯": {
+    "n": 1
+   },
+   "U20亚洲杯": {
+    "n": 1
+   },
+   "欧青赛": {
+    "n": 28
+   },
+   "金杯赛": {
+    "n": 31
+   },
+   "世青赛": {
+    "n": 25
+   }
+  }
+ },
+ "caveat": "These are descriptive splits, not a model. A spread of a few points across bins of similar size is noise."
+}
