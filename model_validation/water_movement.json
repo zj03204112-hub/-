@@ -1,0 +1,331 @@
+{
+ "definition": "Water and line movement versus the handicap result. A cover is decided against the current line, pushes excluded. The sample is one or two trading days, so numbers are descriptive and every rule reports its own n.",
+ "matches": 37,
+ "mean_delta_water": 0.0119,
+ "share_water_dropped": 0.4324,
+ "rules": [
+  {
+   "rule": "follow_water",
+   "n": 36,
+   "hit_rate": 0.4722,
+   "z_vs_coinflip": -0.33
+  },
+  {
+   "rule": "follow_water_gt_003",
+   "n": 27,
+   "hit_rate": 0.5185,
+   "z_vs_coinflip": 0.19
+  },
+  {
+   "rule": "follow_line",
+   "n": 27,
+   "hit_rate": 0.3704,
+   "z_vs_coinflip": -1.35
+  },
+  {
+   "rule": "radar_signal",
+   "n": 22,
+   "hit_rate": 0.8182,
+   "z_vs_coinflip": 2.98
+  }
+ ],
+ "records": [
+  {
+   "match": "墨尔本胜利-万隆",
+   "margin": -1,
+   "line_cur": 0.25,
+   "delta_water": -0.01,
+   "delta_line": -0.25,
+   "result": "away"
+  },
+  {
+   "match": "叶尼塞-下诺夫哥罗德",
+   "margin": -1,
+   "line_cur": -1.375,
+   "delta_water": 0.085,
+   "delta_line": 0.125,
+   "result": "away"
+  },
+  {
+   "match": "浦项制铁-大阪钢巴",
+   "margin": 0,
+   "line_cur": -0.25,
+   "delta_water": 0.04,
+   "delta_line": 0.125,
+   "result": "away"
+  },
+  {
+   "match": "FC首尔-越电信",
+   "margin": 3,
+   "line_cur": 2.5,
+   "delta_water": -0.075,
+   "delta_line": 0.75,
+   "result": "home"
+  },
+  {
+   "match": "列宁格勒达-SKA哈巴罗夫斯克",
+   "margin": 0,
+   "line_cur": 0.25,
+   "delta_water": -0.015,
+   "delta_line": 0.125,
+   "result": "home"
+  },
+  {
+   "match": "博莱拉兹-斯卡利卡",
+   "margin": -2,
+   "line_cur": -1.875,
+   "delta_water": -0.045,
+   "delta_line": 0.0,
+   "result": "away"
+  },
+  {
+   "match": "武里南联-鹿岛鹿角",
+   "margin": 0,
+   "line_cur": -0.25,
+   "delta_water": 0.105,
+   "delta_line": 0.25,
+   "result": "away"
+  },
+  {
+   "match": "阿卡达格-高尔高赫",
+   "margin": 1,
+   "line_cur": 0.5,
+   "delta_water": 0.205,
+   "delta_line": 0.25,
+   "result": "home"
+  },
+  {
+   "match": "马哈拉-艾德瀚德",
+   "margin": -1,
+   "line_cur": 0.0,
+   "delta_water": 0.06,
+   "delta_line": 0.0,
+   "result": "away"
+  },
+  {
+   "match": "雷恩-奥林匹亚科斯",
+   "margin": 0,
+   "line_cur": 0.25,
+   "delta_water": 0.01,
+   "delta_line": 0.0,
+   "result": "home"
+  },
+  {
+   "match": "科威特竞技-纳萨夫",
+   "margin": -1,
+   "line_cur": -0.5,
+   "delta_water": 0.07,
+   "delta_line": -0.5,
+   "result": "away"
+  },
+  {
+   "match": "赖扬-拿达",
+   "margin": 2,
+   "line_cur": 1.75,
+   "delta_water": -0.06,
+   "delta_line": 0.25,
+   "result": "home"
+  },
+  {
+   "match": "拜斯迪卡-特伦辛",
+   "margin": 1,
+   "line_cur": 0.0,
+   "delta_water": 0.03,
+   "delta_line": -0.25,
+   "result": "home"
+  },
+  {
+   "match": "AEK雅典-皇家马德里",
+   "margin": -1,
+   "line_cur": -2.0,
+   "delta_water": 0.125,
+   "delta_line": -0.5,
+   "result": "away"
+  },
+  {
+   "match": "圣卡洛斯-波士顿河",
+   "margin": -2,
+   "line_cur": -1.25,
+   "delta_water": -0.11,
+   "delta_line": 0.25,
+   "result": "away"
+  },
+  {
+   "match": "慕哈瑞克-阿布扎比半岛",
+   "margin": -3,
+   "line_cur": -0.5,
+   "delta_water": -0.075,
+   "delta_line": 0.25,
+   "result": "away"
+  },
+  {
+   "match": "布赖代合作-阿尔费萨里安曼",
+   "margin": 2,
+   "line_cur": 1.25,
+   "delta_water": 0.115,
+   "delta_line": 0.5,
+   "result": "home"
+  },
+  {
+   "match": "卡迪夫城-西汉姆联",
+   "margin": 0,
+   "line_cur": -0.5,
+   "delta_water": -0.03,
+   "delta_line": 0.0,
+   "result": "away"
+  },
+  {
+   "match": "雷克瑟姆-米德尔斯堡",
+   "margin": 2,
+   "line_cur": -0.75,
+   "delta_water": -0.08,
+   "delta_line": -0.25,
+   "result": "home"
+  },
+  {
+   "match": "布里斯托城-狼队",
+   "margin": -1,
+   "line_cur": -0.5,
+   "delta_water": -0.1,
+   "delta_line": -0.25,
+   "result": "away"
+  },
+  {
+   "match": "RB莱比锡-曼彻斯特城",
+   "margin": -1,
+   "line_cur": -1.0,
+   "delta_water": -0.025,
+   "delta_line": -0.125,
+   "result": "away"
+  },
+  {
+   "match": "布拉格斯拉维亚-阿森纳",
+   "margin": -1,
+   "line_cur": -1.5,
+   "delta_water": 0.09,
+   "delta_line": 0.25,
+   "result": "away"
+  },
+  {
+   "match": "埃因霍温-布鲁日",
+   "margin": -1,
+   "line_cur": 0.5,
+   "delta_water": -0.01,
+   "delta_line": 0.25,
+   "result": "away"
+  },
+  {
+   "match": "多特蒙德-皇家贝蒂斯",
+   "margin": 1,
+   "line_cur": 1.0,
+   "delta_water": 0.0,
+   "delta_line": 0.25,
+   "result": "home"
+  },
+  {
+   "match": "波尔图-那不勒斯",
+   "margin": 3,
+   "line_cur": 0.5,
+   "delta_water": 0.095,
+   "delta_line": 0.25,
+   "result": "home"
+  },
+  {
+   "match": "朗斯-科莫",
+   "margin": -8,
+   "line_cur": -0.5,
+   "delta_water": 0.055,
+   "delta_line": -0.375,
+   "result": "away"
+  },
+  {
+   "match": "维京-萨巴赫",
+   "margin": 3,
+   "line_cur": 1.25,
+   "delta_water": 0.125,
+   "delta_line": 0.25,
+   "result": "home"
+  },
+  {
+   "match": "特拉斯卡拉-拉巴斯竞技",
+   "margin": -1,
+   "line_cur": 0.0,
+   "delta_water": 0.01,
+   "delta_line": 0.0,
+   "result": "away"
+  },
+  {
+   "match": "FC美利达-莫雷利亚",
+   "margin": -1,
+   "line_cur": 0.25,
+   "delta_water": -0.09,
+   "delta_line": 0.0,
+   "result": "away"
+  },
+  {
+   "match": "艾美利亚诺体育-亚松森瓜拉尼",
+   "margin": -1,
+   "line_cur": -0.25,
+   "delta_water": 0.02,
+   "delta_line": 0.0,
+   "result": "away"
+  },
+  {
+   "match": "亚松森自由-波特诺山丘",
+   "margin": -1,
+   "line_cur": 0.25,
+   "delta_water": 0.06,
+   "delta_line": 0.25,
+   "result": "away"
+  },
+  {
+   "match": "巴拉纳竞技-瓦斯科达伽马",
+   "margin": -2,
+   "line_cur": 0.0,
+   "delta_water": -0.195,
+   "delta_line": -0.25,
+   "result": "away"
+  },
+  {
+   "match": "弗拉门戈-格雷米奥",
+   "margin": 2,
+   "line_cur": 2.25,
+   "delta_water": 0.015,
+   "delta_line": 0.375,
+   "result": "home"
+  },
+  {
+   "match": "基多体育大学-基多天主大学",
+   "margin": -1,
+   "line_cur": 0.5,
+   "delta_water": 0.04,
+   "delta_line": 0.0,
+   "result": "away"
+  },
+  {
+   "match": "费罗卡里尔-乌拉圭民族",
+   "margin": -1,
+   "line_cur": -2.0,
+   "delta_water": -0.06,
+   "delta_line": 0.0,
+   "result": "away"
+  },
+  {
+   "match": "亚松森奥林匹亚-雷科莱塔",
+   "margin": 3,
+   "line_cur": 1.5,
+   "delta_water": -0.03,
+   "delta_line": 0.0,
+   "result": "home"
+  },
+  {
+   "match": "博塔弗戈-米内罗竞技",
+   "margin": 1,
+   "line_cur": 1.0,
+   "delta_water": 0.095,
+   "delta_line": 0.5,
+   "result": "home"
+  }
+ ],
+ "caveat": "This is a harness, not a result: the sample is far too small to conclude."
+}

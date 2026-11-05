@@ -245,6 +245,17 @@ def main() -> int:
     else:
         summary.append({"league": "SPORTTERY", "status": "dry run"})
 
+    log("[RADAR] snapshotting the jc-daily-report radar page")
+    if not args.dry_run:
+        result = subprocess.run([sys.executable,
+                                 os.path.join(PIPELINE, "collect_jc_radar.py")],
+                                capture_output=True, text=True, encoding="utf-8", errors="replace")
+        tail = (result.stdout or "").strip().splitlines()[-2:]
+        log("  " + " | ".join(tail) if tail else "  no output")
+        summary.append({"league": "RADAR", "status": "snapshot taken", "tail": tail})
+    else:
+        summary.append({"league": "RADAR", "status": "dry run"})
+
     if not args.dry_run and not args.skip_import:
         log("[SQLITE] refreshing the analysis layer")
         result = subprocess.run([sys.executable,
