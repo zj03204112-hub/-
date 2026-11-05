@@ -1,0 +1,67 @@
+{
+ "definition": "Last-five-match form plus European odds, as described. The market's log-probabilities are the starting point and a linear correction on form features (points, goals for, goals against, win rate, rest days, all as home minus away) is fitted on 2022-2023 and evaluated once on 2025-2026.",
+ "window": 5,
+ "features": [
+  "points_diff",
+  "goals_for_diff",
+  "goals_against_diff",
+  "win_rate_diff",
+  "rest_days_diff"
+ ],
+ "train": {
+  "n": 4428,
+  "accuracy": 0.5142,
+  "brier": 0.6048,
+  "logloss": 1.0105
+ },
+ "train_with_form": {
+  "n": 4428,
+  "accuracy": 0.5138,
+  "brier": 0.6045,
+  "logloss": 1.0101
+ },
+ "test_market": {
+  "n": 5009,
+  "accuracy": 0.5123,
+  "brier": 0.6076,
+  "logloss": 1.015
+ },
+ "test_market_plus_form": {
+  "n": 5009,
+  "accuracy": 0.5117,
+  "brier": 0.6078,
+  "logloss": 1.0152
+ },
+ "test_form_only": {
+  "n": 5009,
+  "accuracy": 0.4083,
+  "brier": 0.653,
+  "logloss": 1.0776
+ },
+ "learned_weights": [
+  [
+   0.0066,
+   0.002,
+   -0.0178,
+   -0.0126,
+   -0.015,
+   -0.0109
+  ],
+  [
+   0.001,
+   -0.0168,
+   -0.0068,
+   -0.0067,
+   0.0212,
+   0.003
+  ],
+  [
+   -0.0076,
+   0.0148,
+   0.0246,
+   0.0193,
+   -0.0061,
+   0.0079
+  ]
+ ]
+}
