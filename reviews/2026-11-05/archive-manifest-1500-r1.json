@@ -1,0 +1,29 @@
+{
+  "schema_version": "daily_archive_manifest_v2",
+  "generated_at_beijing": "2026-11-05T15:00:00+08:00",
+  "branch": "automation/daily-football-2026-11-05-1500",
+  "data_commit_sha": "857cd2c3d375983e254ed0dc65af10febd65fe47",
+  "correction_commit_sha": "9f3ad95da4c01239fafbf25818d7adafb06be9ce",
+  "files": [
+    "fixtures/2026-11-05-06/schedule-refresh-1500.json",
+    "predictions/continental-club/uefa-europa-league/2026-11-06/research-gfga-poisson-v1.0-1500.json",
+    "predictions/continental-club/uefa-conference-league/2026-11-06/research-gfga-poisson-v1.0-1500.json",
+    "predictions/continental-club/uefa-europa-league/2026-11-06/research-gfga-poisson-v1.0-1500-r1.json",
+    "predictions/continental-club/uefa-conference-league/2026-11-06/research-gfga-poisson-v1.0-1500-r1.json",
+    "reviews/2026-11-05/market-source-audit-1500.json",
+    "reviews/2026-11-05/missing-fields-1500.json",
+    "reviews/2026-11-05/prediction-run-1500.json",
+    "reviews/2026-11-05/prediction-run-1500-r1.json",
+    "reviews/2026-11-05/prediction-correction-1500-r1.json",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-05/prematch_model_estimates-1500.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-05/prematch_model_estimates_audit-1500.json"
+  ],
+  "prediction_snapshots": 17,
+  "fixture_count": 42,
+  "prematch_projection_rows": 34,
+  "official_jczq_verified": 0,
+  "actual_weekly_xg_snapshot_overwritten": false,
+  "production_model_modified": false,
+  "frozen_validation_sample_modified": false,
+  "original_r0_snapshots_preserved": true
+}
