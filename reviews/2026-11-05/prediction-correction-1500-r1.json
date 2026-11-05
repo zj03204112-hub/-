@@ -1,0 +1,17 @@
+{
+  "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+  "revision": "r1",
+  "reason": "Initial probability matrix truncated the goal grid at 7 goals and omitted a small upper-tail mass. Recomputed with a 20-goal grid and normalized each H/D/A distribution to 100%.",
+  "original_files_immutable": true,
+  "corrected_files": [
+    "predictions/continental-club/uefa-europa-league/2026-11-06/research-gfga-poisson-v1.0-1500-r1.json",
+    "predictions/continental-club/uefa-conference-league/2026-11-06/research-gfga-poisson-v1.0-1500-r1.json"
+  ],
+  "checks": {
+    "predictions": 17,
+    "hda_sum_pct": 100,
+    "score_count_each": 2,
+    "poisson_grid_goals": 20
+  },
+  "model_version_unchanged": true
+}
