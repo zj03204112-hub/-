@@ -1,0 +1,121 @@
+{
+ "generated_at": "2026-11-05",
+ "database": "football_model_database.sqlite",
+ "namespace": "dsl_*",
+ "leagues": [
+  {
+   "league": "LALIGA",
+   "fixtures": 109,
+   "players": 4969,
+   "subs": 1057,
+   "events": 887,
+   "shots": 2949,
+   "assists": 221,
+   "meta": 109,
+   "team_stats": 0
+  },
+  {
+   "league": "EPL",
+   "fixtures": 90,
+   "players": 3599,
+   "subs": 791,
+   "events": 635,
+   "shots": 2475,
+   "assists": 231,
+   "meta": 90,
+   "team_stats": 0
+  },
+  {
+   "league": "BUNDESLIGA",
+   "fixtures": 72,
+   "players": 2881,
+   "subs": 674,
+   "events": 534,
+   "shots": 2192,
+   "assists": 246,
+   "meta": 72,
+   "team_stats": 0
+  },
+  {
+   "league": "SERIEA",
+   "fixtures": 100,
+   "players": 4790,
+   "subs": 978,
+   "events": 659,
+   "shots": 2904,
+   "assists": 309,
+   "meta": 100,
+   "team_stats": 0
+  },
+  {
+   "league": "KLEAGUE1",
+   "fixtures": 204,
+   "players": 8141,
+   "subs": 1910,
+   "events": 1274,
+   "shots": 5116,
+   "assists": 495,
+   "meta": 204,
+   "team_stats": 0
+  },
+  {
+   "league": "LIGUE1",
+   "fixtures": 81,
+   "players": 3237,
+   "subs": 751,
+   "events": 554,
+   "shots": 2179,
+   "assists": 238,
+   "meta": 81,
+   "team_stats": 0
+  },
+  {
+   "league": "EREDIVISIE",
+   "fixtures": 99,
+   "players": 4407,
+   "subs": 912,
+   "events": 677,
+   "shots": 2961,
+   "assists": 368,
+   "meta": 99,
+   "team_stats": 0
+  },
+  {
+   "league": "ALEAGUE",
+   "fixtures": 17,
+   "players": 612,
+   "subs": 147,
+   "events": 106,
+   "shots": 400,
+   "assists": 45,
+   "meta": 17,
+   "team_stats": 0
+  },
+  {
+   "league": "J1",
+   "fixtures": 130,
+   "players": 5197,
+   "subs": 1261,
+   "events": 785,
+   "shots": 3513,
+   "assists": 0,
+   "meta": 130,
+   "team_stats": 0
+  }
+ ],
+ "table_counts": {
+  "dsl_matches": 902,
+  "dsl_players": 37833,
+  "dsl_substitutions": 8481,
+  "dsl_events": 6111,
+  "dsl_match_meta": 902,
+  "dsl_shots": 24689,
+  "dsl_assists": 2153,
+  "dsl_team_stats": 0
+ },
+ "notes": [
+  "The legacy matches/results/player_match_stats tables are untouched.",
+  "match_key is league:season:date:home:away and is the join key everywhere.",
+  "Source columns carry the original provider so nothing loses provenance."
+ ]
+}

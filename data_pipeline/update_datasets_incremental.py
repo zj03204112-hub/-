@@ -224,7 +224,7 @@ def main() -> int:
     if not args.dry_run:
         result = subprocess.run([sys.executable,
                                  os.path.join(PIPELINE, "collect_laliga_official_player_detail.py"),
-                                 "--all"], capture_output=True, text=True)
+                                 "--all"], capture_output=True, text=True, encoding="utf-8", errors="replace")
         tail = (result.stdout or "").strip().splitlines()[-3:]
         log("  " + " | ".join(tail) if tail else "  no output")
         summary.append({"league": "LALIGA", "status": "collector ran", "tail": tail})
@@ -238,7 +238,7 @@ def main() -> int:
     if not args.dry_run:
         result = subprocess.run([sys.executable,
                                  os.path.join(PIPELINE, "collect_sporttery_odds.py")],
-                                capture_output=True, text=True)
+                                capture_output=True, text=True, encoding="utf-8", errors="replace")
         tail = (result.stdout or "").strip().splitlines()[-2:]
         log("  " + " | ".join(tail) if tail else "  no output")
         summary.append({"league": "SPORTTERY", "status": "snapshot taken", "tail": tail})
@@ -249,7 +249,7 @@ def main() -> int:
         log("[SQLITE] refreshing the analysis layer")
         result = subprocess.run([sys.executable,
                                  os.path.join(PIPELINE, "import_datasets_to_sqlite.py")],
-                                capture_output=True, text=True)
+                                capture_output=True, text=True, encoding="utf-8", errors="replace")
         tail = (result.stdout or "").strip().splitlines()[-2:]
         log("  " + " | ".join(tail) if tail else "  no output")
 
