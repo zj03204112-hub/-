@@ -1,0 +1,24 @@
+{
+  "iso_week": "2026-W45",
+  "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+  "actual_weekly_snapshot_unchanged": true,
+  "base_snapshot": "automation/daily-football-2026-11-05-1000/data/xg_weekly/2026-W45/snapshots/2026-11-05/xg_coverage_audit-1000.json",
+  "base_metrics": {
+    "unique_matches": 81,
+    "fulltime_xg_matches": 28,
+    "partial_inplay_matches": 2,
+    "missing_fulltime_xg_matches": 53,
+    "coverage_pct": 34.57
+  },
+  "new_completed_matches_since_1000": 0,
+  "actual_weekly_totals_published": false,
+  "actual_weekly_per90_published": false,
+  "prematch_model_estimates": {
+    "matches": 17,
+    "team_rows": 34,
+    "actual_provider_xg_available": 0,
+    "included_in_actual_weekly_totals": false,
+    "xgd_arithmetic_mismatches": 0
+  },
+  "leakage_check": "未使用赛后xG作为赛前输入；预测投影与供应商实测/估算xG分开保存。"
+}
