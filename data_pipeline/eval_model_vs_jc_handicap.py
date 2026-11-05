@@ -154,7 +154,7 @@ def main() -> int:
 
     candidates = [dict(r) for r in connection.execute("""
         SELECT matchnum, match_date, league, home, away, home_score, away_score,
-               handicap_line, hhad_h, hhad_d, hhad_a, result_hhad
+               handicap_line, hhad_h, hhad_d, hhad_a, result_hhad, win, draw, lost, result_spf
         FROM jc_history
         WHERE substr(match_date, 1, 4) IN ('2025', '2026')
           AND hhad_h IS NOT NULL AND home_score >= 0 AND away_score >= 0
@@ -213,6 +213,24 @@ def main() -> int:
                 "probability": probabilities,
             }
         record["same_pick"] = record["model"]["pick"] == record["market"]["pick"]
+
+        # plain 1X2 on the same fixtures
+        model_1x2, _ = cm.run_model(connection, "v4", tuple(fixture))
+        market_1x2 = devig([jc_row["win"], jc_row["draw"], jc_row["lost"]])
+        if market_1x2 and jc_row["result_spf"] in labels:
+            actual_1x2 = labels.index(jc_row["result_spf"])
+            plain = {"actual": actual_1x2}
+            for name, probabilities in (("model", list(model_1x2.values())),
+                                        ("market", market_1x2)):
+                pick = max(range(3), key=lambda i: probabilities[i])
+                y = [1.0 if i == actual_1x2 else 0.0 for i in range(3)]
+                plain[name] = {
+                    "pick": pick,
+                    "brier": sum((probabilities[i] - y[i]) ** 2 for i in range(3)),
+                    "logloss": -math.log(max(1e-12, probabilities[actual_1x2])),
+                    "return": 0.0,
+                }
+            record["plain"] = plain
         rows.append(record)
 
     summary = {
@@ -239,10 +257,21 @@ def main() -> int:
     json.dump(summary, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     open(OUT, "a", encoding="utf-8").write("\n")
 
-    for name in ("model", "market"):
-        m = summary[name]
-        log(f"  {name:7s} n={m['n']:4d} acc={m['accuracy']:.3f} brier={m['brier']:.4f} "
-            f"logloss={m['logloss']:.4f} roi={m['roi']:+.4f}")
+    plain_rows = [r["plain"] for r in rows if "plain" in r]
+    summary["plain_1x2"] = {
+        "n": len(plain_rows),
+        "model": {k: v for k, v in metrics(plain_rows, "model").items() if k != "roi"},
+        "market": {k: v for k, v in metrics(plain_rows, "market").items() if k != "roi"},
+    }
+    json.dump(summary, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+    for block, label in (("plain_1x2", "1X2"), (None, "让球三选一")):
+        source = summary[block] if block else summary
+        log(f"  {label}:")
+        for name in ("model", "market"):
+            m = source[name]
+            log(f"    {name:7s} n={m['n']:4d} acc={m['accuracy']:.3f} brier={m['brier']:.4f} "
+                f"logloss={m['logloss']:.4f}" + (f" roi={m['roi']:+.4f}" if "roi" in m else ""))
     log(f"report: {os.path.relpath(OUT, REPO_ROOT)}")
     return 0
 
