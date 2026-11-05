@@ -1,0 +1,86 @@
+{
+ "source": "data/cache/jc_daily_report.html (one trading day snapshot)",
+ "matches": 101,
+ "bookmaker_quotes": 2086,
+ "one_two_X": {
+  "absolute_move": {
+   "home": {
+    "n": 2086,
+    "mean": 0.3582,
+    "median": 0.15,
+    "p90": 0.73
+   },
+   "draw": {
+    "n": 2086,
+    "mean": 0.3131,
+    "median": 0.15,
+    "p90": 0.8
+   },
+   "away": {
+    "n": 2086,
+    "mean": 0.5728,
+    "median": 0.2,
+    "p90": 1.21
+   }
+  },
+  "relative_move": {
+   "home": {
+    "n": 2086,
+    "mean": 0.1018,
+    "median": 0.0676,
+    "p90": 0.2341
+   },
+   "draw": {
+    "n": 2086,
+    "mean": 0.0719,
+    "median": 0.0417,
+    "p90": 0.1786
+   },
+   "away": {
+    "n": 2086,
+    "mean": 0.1239,
+    "median": 0.0813,
+    "p90": 0.2565
+   }
+  },
+  "share_of_quotes_that_moved": {
+   "home": 0.9334,
+   "draw": 0.8375,
+   "away": 0.9262
+  }
+ },
+ "asian_water": {
+  "n": 342,
+  "mean": 0.0941,
+  "median": 0.08,
+  "p90": 0.2
+ },
+ "asian_line_changed_share": 0.5234,
+ "over_under_water": {
+  "n": 1585,
+  "mean": 0.1911,
+  "median": 0.09,
+  "p90": 0.55
+ },
+ "median_series_range": {
+  "home": {
+   "n": 92,
+   "mean": 1.1697,
+   "median": 0.49,
+   "p90": 2.86
+  },
+  "draw": {
+   "n": 92,
+   "mean": 0.9487,
+   "median": 0.64,
+   "p90": 1.9
+  },
+  "away": {
+   "n": 92,
+   "mean": 1.5529,
+   "median": 0.77,
+   "p90": 2.73
+  }
+ },
+ "note": "Relative movement is the fair comparison across components because home, draw and away prices sit at different levels."
+}
