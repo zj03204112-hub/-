@@ -256,6 +256,17 @@ def main() -> int:
     else:
         summary.append({"league": "RADAR", "status": "dry run"})
 
+    log("[INJURIES] snapshotting unavailable players for upcoming fixtures")
+    if not args.dry_run:
+        result = subprocess.run([sys.executable,
+                                 os.path.join(PIPELINE, "collect_injuries_fotmob.py")],
+                                capture_output=True, text=True, encoding="utf-8", errors="replace")
+        tail = (result.stdout or "").strip().splitlines()[-3:]
+        log("  " + " | ".join(tail) if tail else "  no output")
+        summary.append({"league": "INJURIES", "status": "snapshot taken", "tail": tail})
+    else:
+        summary.append({"league": "INJURIES", "status": "dry run"})
+
     if not args.dry_run and not args.skip_import:
         log("[SQLITE] refreshing the analysis layer")
         result = subprocess.run([sys.executable,
