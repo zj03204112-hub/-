@@ -1,0 +1,786 @@
+[
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-europa-league:2026-11-05:ac-milan:ferencv-ros:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-europa-league:2026-11-05:ac-milan:ferencv-ros",
+    "competition": {
+      "id": "uefa-europa-league",
+      "name": "UEFA Europa League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "AC Milan",
+      "away": "Ferencváros",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.7,
+      "away_lambda": 1.25,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 47.96,
+      "draw_pct": 23.86,
+      "away_win_pct": 28.18,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 11.12
+      },
+      {
+        "rank": 2,
+        "score": "2-1",
+        "probability_pct": 9.45
+      }
+    ],
+    "half_full_time": {
+      "prediction": "胜胜",
+      "probability_pct": 29.5,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4.2,
+      "data_completeness_pct": 68
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-01",
+    "risk_notes": [
+      "Milan伤停名单较长，含多名后卫及攻击手；Ferencváros近期进攻效率高。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Milan近5场3胜2负；Ferencváros近5场4胜1平。",
+      "injuries": "FotMob列Milan 7名、Ferencváros 2名缺阵；首发未公布。",
+      "tactics": "Milan预测3-4-2-1；Ferencváros阵型待确认。",
+      "weather": "米兰约11°C；赛时预报。",
+      "referee": "Urs Schnyder",
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/matches/ferencvaros-vs-milan/2bw0kf"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-europa-league:2026-11-05:sparta-prague:afc-bournemouth:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-europa-league:2026-11-05:sparta-prague:afc-bournemouth",
+    "competition": {
+      "id": "uefa-europa-league",
+      "name": "UEFA Europa League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Sparta Prague",
+      "away": "AFC Bournemouth",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1,
+      "away_lambda": 1.8,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 20.79,
+      "draw_pct": 23.06,
+      "away_win_pct": 56.15,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 10.95
+      },
+      {
+        "rank": 2,
+        "score": "0-1",
+        "probability_pct": 10.95
+      }
+    ],
+    "half_full_time": {
+      "prediction": "负负",
+      "probability_pct": 35.33,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4.8,
+      "data_completeness_pct": 68
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-02",
+    "risk_notes": [
+      "Bournemouth近5场全胜且连续零封；Sparta近5场进攻产出偏低。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Sparta近5场1胜2平2负；Bournemouth近5场5连胜。",
+      "injuries": "双方完整官方伤停交叉确认未完成。",
+      "tactics": "Sparta预测4-2-3-1；Bournemouth阵型待确认。",
+      "weather": "布拉格约5°C；赛时预报。",
+      "referee": "Erik Lambrechts",
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/en-GB/matches/afc-bournemouth-vs-sparta-prague/2ymnbl"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-europa-league:2026-11-05:crystal-palace:tsg-hoffenheim:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-europa-league:2026-11-05:crystal-palace:tsg-hoffenheim",
+    "competition": {
+      "id": "uefa-europa-league",
+      "name": "UEFA Europa League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Crystal Palace",
+      "away": "TSG Hoffenheim",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.25,
+      "away_lambda": 1.35,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 34.48,
+      "draw_pct": 26.35,
+      "away_win_pct": 39.17,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 12.53
+      },
+      {
+        "rank": 2,
+        "score": "0-1",
+        "probability_pct": 10.03
+      }
+    ],
+    "half_full_time": {
+      "prediction": "负负",
+      "probability_pct": 23.03,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4,
+      "data_completeness_pct": 72
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-03",
+    "risk_notes": [
+      "Palace近5场1胜1平3负；Hoffenheim近5场3胜1平1负。双方均有伤停。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Palace近5场1胜1平3负；Hoffenheim近5场3胜1平1负。",
+      "injuries": "FotMob列Palace 3名、Hoffenheim 8名缺阵；名单待复核。",
+      "tactics": "Palace预测3-4-2-1；Hoffenheim阵型待确认。",
+      "weather": "伦敦约9°C；赛时预报。",
+      "referee": "Horațiu Feșnic",
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/matches/hoffenheim-vs-crystal-palace/2p0pt8"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-europa-league:2026-11-05:lillestr-m:viktoria-plze:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-europa-league:2026-11-05:lillestr-m:viktoria-plze",
+    "competition": {
+      "id": "uefa-europa-league",
+      "name": "UEFA Europa League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Lillestrøm",
+      "away": "Viktoria Plzeň",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 0.9,
+      "away_lambda": 1.55,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 21.87,
+      "draw_pct": 25.58,
+      "away_win_pct": 52.55,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "0-1",
+        "probability_pct": 13.38
+      },
+      {
+        "rank": 2,
+        "score": "1-1",
+        "probability_pct": 12.04
+      }
+    ],
+    "half_full_time": {
+      "prediction": "负负",
+      "probability_pct": 32.13,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 3.8,
+      "data_completeness_pct": 61
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-04",
+    "risk_notes": [
+      "两队欧联前三轮均未取胜；Lillestrøm失9球，Plzeň失7球。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Lillestrøm上一场1-0胜Start；Plzeň上一场4-0胜Baník；两队欧战开局弱。",
+      "injuries": "完整双方官方伤停名单未取得。",
+      "tactics": "Lillestrøm预测4-3-3；Plzeň预测4-1-2-1-2。",
+      "weather": "逐小时天气未取得。",
+      "referee": null,
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.sportsgambler.com/betting-tips/football/lillestrom-vs-viktoria-plzen-prediction-lineups-odds-2026-11-05/"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-europa-league:2026-11-05:nec-nijmegen:omonia-nicosia:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-europa-league:2026-11-05:nec-nijmegen:omonia-nicosia",
+    "competition": {
+      "id": "uefa-europa-league",
+      "name": "UEFA Europa League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "NEC Nijmegen",
+      "away": "Omonia Nicosia",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.55,
+      "away_lambda": 1.35,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 42.14,
+      "draw_pct": 24.64,
+      "away_win_pct": 33.22,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 11.51
+      },
+      {
+        "rank": 2,
+        "score": "2-1",
+        "probability_pct": 8.92
+      }
+    ],
+    "half_full_time": {
+      "prediction": "胜胜",
+      "probability_pct": 25.35,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4,
+      "data_completeness_pct": 72
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-05",
+    "risk_notes": [
+      "NEC伤停人数较多，后防及中场轮换受影响；Omonia也有伤员。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "NEC近5场1胜3平1负；Omonia近5场2胜1平2负。",
+      "injuries": "FotMob列NEC 5名、Omonia 2名缺阵。",
+      "tactics": "官方首发未公布；阵型未独立确认。",
+      "weather": "奈梅亨约6°C；赛时预报。",
+      "referee": "Goga Kikacheishvili",
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/matches/omonia-nicosia-vs-nec-nijmegen/294thy"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-europa-league:2026-11-05:levski-sofia:jagiellonia-bia-ystok:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-europa-league:2026-11-05:levski-sofia:jagiellonia-bia-ystok",
+    "competition": {
+      "id": "uefa-europa-league",
+      "name": "UEFA Europa League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Levski Sofia",
+      "away": "Jagiellonia Białystok",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.45,
+      "away_lambda": 0.95,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 48.7,
+      "draw_pct": 26.59,
+      "away_win_pct": 24.71,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-0",
+        "probability_pct": 13.15
+      },
+      {
+        "rank": 2,
+        "score": "1-1",
+        "probability_pct": 12.5
+      }
+    ],
+    "half_full_time": {
+      "prediction": "胜胜",
+      "probability_pct": 29.31,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4.4,
+      "data_completeness_pct": 70
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-06",
+    "risk_notes": [
+      "Levski近10场6胜1负3平、场均失球0.6；Jagiellonia近10场4胜6负，客场近况弱。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Levski近10场6胜1负3平；Jagiellonia近10场4胜6负。",
+      "injuries": "完整官方伤停名单未取得。",
+      "tactics": "媒体预测阵型，非官方首发。",
+      "weather": "索非亚逐小时天气未取得。",
+      "referee": null,
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.sportsgambler.com/betting-tips/football/levski-sofia-vs-jagiellonia-bialystok-prediction-lineups-odds-2026-11-05/"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-europa-league:2026-11-05:real-sociedad:lyon:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-europa-league:2026-11-05:real-sociedad:lyon",
+    "competition": {
+      "id": "uefa-europa-league",
+      "name": "UEFA Europa League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Real Sociedad",
+      "away": "Lyon",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.65,
+      "away_lambda": 1.35,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 44.57,
+      "draw_pct": 24.01,
+      "away_win_pct": 31.42,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 11.09
+      },
+      {
+        "rank": 2,
+        "score": "2-1",
+        "probability_pct": 9.15
+      }
+    ],
+    "half_full_time": {
+      "prediction": "胜胜",
+      "probability_pct": 27.15,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4.5,
+      "data_completeness_pct": 72
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-07",
+    "risk_notes": [
+      "Sociedad近期进攻状态较好；Lyon缺阵人数较多，阵容完整性受影响。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Sociedad近5场3胜1平1负；Lyon近5场2胜3负。",
+      "injuries": "FotMob列Sociedad 3名、Lyon 7名缺阵。",
+      "tactics": "Sociedad预测4-4-2；Lyon阵型待确认。",
+      "weather": "圣塞巴斯蒂安约12°C；赛时预报。",
+      "referee": "Anastasios Papapetrou",
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/matches/real-sociedad-vs-lyon/2rsgym"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-europa-league:2026-11-05:anderlecht:rb-salzburg:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-europa-league:2026-11-05:anderlecht:rb-salzburg",
+    "competition": {
+      "id": "uefa-europa-league",
+      "name": "UEFA Europa League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Anderlecht",
+      "away": "RB Salzburg",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.65,
+      "away_lambda": 1.55,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 40.44,
+      "draw_pct": 23.4,
+      "away_win_pct": 36.16,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 10.42
+      },
+      {
+        "rank": 2,
+        "score": "2-1",
+        "probability_pct": 8.6
+      }
+    ],
+    "half_full_time": {
+      "prediction": "胜胜",
+      "probability_pct": 24.46,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4.4,
+      "data_completeness_pct": 74
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-08",
+    "risk_notes": [
+      "Salzburg近10场场均进球2.3；Anderlecht近10场6胜3负1平，双方均有轮换可能。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Anderlecht近10场6胜3负1平；Salzburg近10场6胜3平1负。",
+      "injuries": "媒体预测首发；官方伤停交叉确认不完整。",
+      "tactics": "Anderlecht预测4-3-3；Salzburg预测4-2-3-1。",
+      "weather": "布鲁塞尔逐小时天气未取得。",
+      "referee": null,
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.sportsgambler.com/betting-tips/football/anderlecht-vs-red-bull-salzburg-prediction-lineups-odds-2026-11-05/"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  }
+]
