@@ -1,0 +1,65 @@
+{
+ "generated_at": "2026-11-05T04:17:49Z",
+ "min_probability": 0.75,
+ "definition": "High-accuracy output. The pick is the favourite not losing (主不败/客不败), whose historical hit rate by strength tier is shown per match. Accuracy is the only objective here; the odds column is informational, not a profitability claim.",
+ "tiers_reference": [
+  {
+   "range": "0.80+",
+   "share": "3.4%",
+   "safe": 0.97,
+   "three_way": 0.902
+  },
+  {
+   "range": "0.75-0.80",
+   "share": "3.3%",
+   "safe": 0.938,
+   "three_way": 0.789
+  },
+  {
+   "range": "0.70-0.75",
+   "share": "4.7%",
+   "safe": 0.917,
+   "three_way": 0.76
+  },
+  {
+   "range": "0.65-0.70",
+   "share": "6.2%",
+   "safe": 0.886,
+   "three_way": 0.725
+  },
+  {
+   "range": "0.60-0.65",
+   "share": "7.7%",
+   "safe": 0.858,
+   "three_way": 0.649
+  }
+ ],
+ "picks": [
+  {
+   "num": "周四013",
+   "league": "巴甲",
+   "home": "帕梅拉斯",
+   "away": "里莫",
+   "kickoff": "2026-11-06 06:30:00",
+   "odds": [
+    1.1,
+    6.2,
+    14.5
+   ],
+   "probabilities": [
+    0.7979,
+    0.1416,
+    0.0605
+   ],
+   "favourite": "home",
+   "favourite_probability": 0.7979,
+   "safe_pick": "主不败",
+   "safe_odds": 1.1,
+   "three_way_pick": "主胜",
+   "three_way_odds": 1.1,
+   "tier": "0.75-0.80",
+   "historical_safe_rate": 0.938,
+   "historical_three_way_rate": 0.789
+  }
+ ]
+}
