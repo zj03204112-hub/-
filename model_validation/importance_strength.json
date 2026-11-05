@@ -1,0 +1,36 @@
+{
+ "definition": "Team strength (Elo, rolling form, table gap) and match importance (season phase, cup tie, stakes) tested chronologically: trained on 2022-2024, scored on 2025-2026, with the market's own probability as the baseline.",
+ "matches": {
+  "train": 6913,
+  "test": 5785
+ },
+ "draw_rate": {
+  "train": 0.2446,
+  "test": 0.2368
+ },
+ "draw_prediction": {
+  "market_only": {
+   "auc": 0.5899,
+   "brier": 0.17738,
+   "top_decile_precision": 0.3235,
+   "top_decile_lift_pp": 8.67
+  },
+  "features_only": {
+   "auc": 0.5216,
+   "brier": 0.18059,
+   "top_decile_precision": 0.2526,
+   "top_decile_lift_pp": 1.58
+  },
+  "market_plus_features": {
+   "auc": 0.5847,
+   "brier": 0.17769,
+   "top_decile_precision": 0.2958,
+   "top_decile_lift_pp": 5.9
+  }
+ },
+ "three_way_accuracy": {
+  "market": 0.5443,
+  "market_plus_draw_model": 0.5443
+ },
+ "caveat": "A gain has to survive out of sample to matter; the market baseline is already calibrated."
+}
