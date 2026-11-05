@@ -1,0 +1,105 @@
+{
+  "verification_version": "daily-football-readback-2026-11-05-1000-v1",
+  "verified_at_beijing": "2026-11-05T09:57:21+08:00",
+  "branch": "automation/daily-football-2026-11-05-1000",
+  "branch_commit_before_verification": "1239bccce8a88dd5b72e41672db105e1b06ac1c5",
+  "checks": {
+    "json_files_parse": true,
+    "previous_day_matches": 19,
+    "immutable_prediction_snapshots": 6,
+    "no_snapshot_matches": 13,
+    "current_day_early_results": 19,
+    "fixtures_2026_11_05_06": 42,
+    "match_xg_delta_rows": 72,
+    "team_weekly_xg_delta_rows": 72,
+    "team_weekly_coverage_delta_rows": 66,
+    "unique_match_ids_in_delta": 33,
+    "duplicate_match_team_provider_keys": 0,
+    "duplicate_coverage_match_team_keys": 0,
+    "xgd_arithmetic_mismatches": 0,
+    "prior_day_prediction_metrics": {
+      "hda": "4/6",
+      "first_score": "1/6",
+      "second_score": "2/6",
+      "half_full": "2/6",
+      "official_handicap": "0/6 verified; all unverified"
+    },
+    "cumulative_iso_week_45": {
+      "unique_matches": 81,
+      "fulltime_xg_matches": 28,
+      "partial_inplay_matches": 2,
+      "missing_fulltime_xg_matches": 53,
+      "coverage_pct": 34.57,
+      "full_week_coverage": false,
+      "weekly_totals_published": false,
+      "weekly_per90_published": false
+    },
+    "no_post_match_xg_leakage": true,
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "sqlite_live_connection": false,
+    "sqlite_direct_query": false
+  },
+  "files": [
+    [
+      "reviews/2026-11-05/previous-day-review.json",
+      "bf4abd92091b1eb0955821c0e1ab03ca49462454"
+    ],
+    [
+      "results/continental-club/uefa-champions-league/2026-11-04/results.json",
+      "87d4b482c5e790ff0b1d07124679de51e8981c6e"
+    ],
+    [
+      "results/continental-club/afc-champions-league-elite/2026-11-04/results.json",
+      "75ef9ad8ea4319a3b2a97c6a0d45aa6001e262bc"
+    ],
+    [
+      "results/continental-club/afc-champions-league-two/2026-11-04/results.json",
+      "1fce357f4137de6607e06e1eeec2b42290a649c3"
+    ],
+    [
+      "results/continental-club/uefa-europa-league/2026-11-04/results.json",
+      "de833cd7dcc247eefb00f2a37c66654ca7295b30"
+    ],
+    [
+      "results/domestic-league/brazil-serie-a/2026-11-04/results.json",
+      "083820010a40787246a016f9feabf08895e10dc4"
+    ],
+    [
+      "reviews/2026-11-05/current-day-early-results.json",
+      "bb1cd3a4682dd4ee779f90b3b150051176bc9bcc"
+    ],
+    [
+      "fixtures/2026-11-05-06/schedule.json",
+      "83096416fdf886c206ad1a2242722708eec1aaa3"
+    ],
+    [
+      "data/xg_weekly/2026-W45/snapshots/2026-11-05/match_xg_delta-1000.csv",
+      "418e7ef9921a182b53f93c771ee197387ced210e"
+    ],
+    [
+      "data/xg_weekly/2026-W45/snapshots/2026-11-05/team_weekly_xg_delta-1000.csv",
+      "dff462007b2dfc960f503b7e58fed01e0bea9e5c"
+    ],
+    [
+      "data/xg_weekly/2026-W45/snapshots/2026-11-05/team_weekly_coverage_delta-1000.csv",
+      "a214603143c8e4e2f19920705319aa99f0b87d88"
+    ],
+    [
+      "data/xg_weekly/2026-W45/snapshots/2026-11-05/xg_coverage_audit-1000.json",
+      "01b261b1c245ac3cf10f849f38f553ca1e6b8a2c"
+    ],
+    [
+      "data/xg_weekly/2026-W45/snapshots/2026-11-05/xg_source_discrepancy_audit-1000.json",
+      "97b2a57311c1b581959bb306baebd1a4bd94c442"
+    ],
+    [
+      "reviews/2026-11-05/repo-season-data-audit.json",
+      "4a0514bbc2a7f7673b433f45d4b07817491004e0"
+    ],
+    [
+      "reviews/2026-11-05/archive-manifest-1000.json",
+      "726d76db67066d27dcb0002b2c52105078dc7465"
+    ]
+  ]
+}
