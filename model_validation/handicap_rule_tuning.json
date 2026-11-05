@@ -1,0 +1,525 @@
+{
+ "definition": "Handicap decision rules tuned on 2022-2023 and evaluated once on 2025-2026. The draw-tolerant rule takes 让平 when its probability reaches X times the top probability; X is chosen on the training segment by accuracy. ROI is a flat stake at the archived prices.",
+ "counts": {
+  "total": 12629,
+  "train": 6467,
+  "test": 5726
+ },
+ "argmax": {
+  "train": {
+   "n": 6467,
+   "accuracy": 0.5182,
+   "roi": -0.0878
+  },
+  "test": {
+   "n": 5726,
+   "accuracy": 0.5098,
+   "roi": -0.082
+  }
+ },
+ "draw_tolerant": {
+  "threshold": 0.83,
+  "train": {
+   "n": 6467,
+   "accuracy": 0.5183,
+   "roi": -0.0872
+  },
+  "test": {
+   "n": 5726,
+   "accuracy": 0.5098,
+   "roi": -0.082
+  },
+  "test_draw_picks": 0,
+  "test_actual_draws": 1419,
+  "test_draw_pick_share": 0.0
+ },
+ "ev_max": {
+  "test": {
+   "n": 5726,
+   "accuracy": 0.317,
+   "roi": -0.1631
+  }
+ },
+ "tuning_curve": [
+  {
+   "threshold": 0.2,
+   "train_accuracy": 0.242,
+   "train_roi": -0.1327,
+   "pick_share_draw": 1.0
+  },
+  {
+   "threshold": 0.21,
+   "train_accuracy": 0.242,
+   "train_roi": -0.1327,
+   "pick_share_draw": 1.0
+  },
+  {
+   "threshold": 0.22,
+   "train_accuracy": 0.242,
+   "train_roi": -0.1327,
+   "pick_share_draw": 1.0
+  },
+  {
+   "threshold": 0.23,
+   "train_accuracy": 0.242,
+   "train_roi": -0.1327,
+   "pick_share_draw": 1.0
+  },
+  {
+   "threshold": 0.24,
+   "train_accuracy": 0.242,
+   "train_roi": -0.1327,
+   "pick_share_draw": 1.0
+  },
+  {
+   "threshold": 0.25,
+   "train_accuracy": 0.242,
+   "train_roi": -0.1327,
+   "pick_share_draw": 1.0
+  },
+  {
+   "threshold": 0.26,
+   "train_accuracy": 0.2425,
+   "train_roi": -0.1326,
+   "pick_share_draw": 0.9992
+  },
+  {
+   "threshold": 0.27,
+   "train_accuracy": 0.2426,
+   "train_roi": -0.1324,
+   "pick_share_draw": 0.9991
+  },
+  {
+   "threshold": 0.28,
+   "train_accuracy": 0.2431,
+   "train_roi": -0.1328,
+   "pick_share_draw": 0.998
+  },
+  {
+   "threshold": 0.29,
+   "train_accuracy": 0.2434,
+   "train_roi": -0.1334,
+   "pick_share_draw": 0.9968
+  },
+  {
+   "threshold": 0.3,
+   "train_accuracy": 0.2445,
+   "train_roi": -0.1334,
+   "pick_share_draw": 0.9946
+  },
+  {
+   "threshold": 0.31,
+   "train_accuracy": 0.2473,
+   "train_roi": -0.1312,
+   "pick_share_draw": 0.9909
+  },
+  {
+   "threshold": 0.32,
+   "train_accuracy": 0.2499,
+   "train_roi": -0.1299,
+   "pick_share_draw": 0.985
+  },
+  {
+   "threshold": 0.33,
+   "train_accuracy": 0.2534,
+   "train_roi": -0.1322,
+   "pick_share_draw": 0.9754
+  },
+  {
+   "threshold": 0.34,
+   "train_accuracy": 0.2589,
+   "train_roi": -0.1335,
+   "pick_share_draw": 0.961
+  },
+  {
+   "threshold": 0.35,
+   "train_accuracy": 0.267,
+   "train_roi": -0.1333,
+   "pick_share_draw": 0.9409
+  },
+  {
+   "threshold": 0.36,
+   "train_accuracy": 0.279,
+   "train_roi": -0.1292,
+   "pick_share_draw": 0.916
+  },
+  {
+   "threshold": 0.37,
+   "train_accuracy": 0.2882,
+   "train_roi": -0.1306,
+   "pick_share_draw": 0.8907
+  },
+  {
+   "threshold": 0.38,
+   "train_accuracy": 0.3,
+   "train_roi": -0.1298,
+   "pick_share_draw": 0.8611
+  },
+  {
+   "threshold": 0.39,
+   "train_accuracy": 0.3097,
+   "train_roi": -0.1295,
+   "pick_share_draw": 0.8339
+  },
+  {
+   "threshold": 0.4,
+   "train_accuracy": 0.3215,
+   "train_roi": -0.133,
+   "pick_share_draw": 0.7984
+  },
+  {
+   "threshold": 0.41,
+   "train_accuracy": 0.336,
+   "train_roi": -0.1211,
+   "pick_share_draw": 0.7691
+  },
+  {
+   "threshold": 0.42,
+   "train_accuracy": 0.3456,
+   "train_roi": -0.1195,
+   "pick_share_draw": 0.7407
+  },
+  {
+   "threshold": 0.43,
+   "train_accuracy": 0.3558,
+   "train_roi": -0.1195,
+   "pick_share_draw": 0.7094
+  },
+  {
+   "threshold": 0.44,
+   "train_accuracy": 0.3662,
+   "train_roi": -0.1197,
+   "pick_share_draw": 0.6753
+  },
+  {
+   "threshold": 0.45,
+   "train_accuracy": 0.3771,
+   "train_roi": -0.1138,
+   "pick_share_draw": 0.6467
+  },
+  {
+   "threshold": 0.46,
+   "train_accuracy": 0.3881,
+   "train_roi": -0.11,
+   "pick_share_draw": 0.6134
+  },
+  {
+   "threshold": 0.47,
+   "train_accuracy": 0.3986,
+   "train_roi": -0.1062,
+   "pick_share_draw": 0.5823
+  },
+  {
+   "threshold": 0.48,
+   "train_accuracy": 0.4082,
+   "train_roi": -0.1015,
+   "pick_share_draw": 0.554
+  },
+  {
+   "threshold": 0.49,
+   "train_accuracy": 0.4194,
+   "train_roi": -0.095,
+   "pick_share_draw": 0.5227
+  },
+  {
+   "threshold": 0.5,
+   "train_accuracy": 0.4314,
+   "train_roi": -0.0829,
+   "pick_share_draw": 0.4942
+  },
+  {
+   "threshold": 0.51,
+   "train_accuracy": 0.4393,
+   "train_roi": -0.0843,
+   "pick_share_draw": 0.4589
+  },
+  {
+   "threshold": 0.52,
+   "train_accuracy": 0.4436,
+   "train_roi": -0.0875,
+   "pick_share_draw": 0.4336
+  },
+  {
+   "threshold": 0.53,
+   "train_accuracy": 0.4489,
+   "train_roi": -0.0899,
+   "pick_share_draw": 0.4065
+  },
+  {
+   "threshold": 0.54,
+   "train_accuracy": 0.4546,
+   "train_roi": -0.0933,
+   "pick_share_draw": 0.3762
+  },
+  {
+   "threshold": 0.55,
+   "train_accuracy": 0.4593,
+   "train_roi": -0.098,
+   "pick_share_draw": 0.3462
+  },
+  {
+   "threshold": 0.56,
+   "train_accuracy": 0.4682,
+   "train_roi": -0.0872,
+   "pick_share_draw": 0.3227
+  },
+  {
+   "threshold": 0.57,
+   "train_accuracy": 0.4755,
+   "train_roi": -0.0829,
+   "pick_share_draw": 0.2946
+  },
+  {
+   "threshold": 0.58,
+   "train_accuracy": 0.4834,
+   "train_roi": -0.074,
+   "pick_share_draw": 0.2678
+  },
+  {
+   "threshold": 0.59,
+   "train_accuracy": 0.4862,
+   "train_roi": -0.0792,
+   "pick_share_draw": 0.242
+  },
+  {
+   "threshold": 0.6,
+   "train_accuracy": 0.4899,
+   "train_roi": -0.0804,
+   "pick_share_draw": 0.2197
+  },
+  {
+   "threshold": 0.61,
+   "train_accuracy": 0.4939,
+   "train_roi": -0.0828,
+   "pick_share_draw": 0.1939
+  },
+  {
+   "threshold": 0.62,
+   "train_accuracy": 0.4964,
+   "train_roi": -0.0852,
+   "pick_share_draw": 0.1724
+  },
+  {
+   "threshold": 0.63,
+   "train_accuracy": 0.4987,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.1512
+  },
+  {
+   "threshold": 0.64,
+   "train_accuracy": 0.5012,
+   "train_roi": -0.0896,
+   "pick_share_draw": 0.1304
+  },
+  {
+   "threshold": 0.65,
+   "train_accuracy": 0.5052,
+   "train_roi": -0.0861,
+   "pick_share_draw": 0.1124
+  },
+  {
+   "threshold": 0.66,
+   "train_accuracy": 0.5077,
+   "train_roi": -0.0856,
+   "pick_share_draw": 0.097
+  },
+  {
+   "threshold": 0.67,
+   "train_accuracy": 0.5098,
+   "train_roi": -0.0854,
+   "pick_share_draw": 0.0815
+  },
+  {
+   "threshold": 0.68,
+   "train_accuracy": 0.5114,
+   "train_roi": -0.0848,
+   "pick_share_draw": 0.0714
+  },
+  {
+   "threshold": 0.69,
+   "train_accuracy": 0.5138,
+   "train_roi": -0.0833,
+   "pick_share_draw": 0.0575
+  },
+  {
+   "threshold": 0.7,
+   "train_accuracy": 0.5128,
+   "train_roi": -0.0892,
+   "pick_share_draw": 0.0489
+  },
+  {
+   "threshold": 0.71,
+   "train_accuracy": 0.5131,
+   "train_roi": -0.0911,
+   "pick_share_draw": 0.0399
+  },
+  {
+   "threshold": 0.72,
+   "train_accuracy": 0.5132,
+   "train_roi": -0.0932,
+   "pick_share_draw": 0.0323
+  },
+  {
+   "threshold": 0.73,
+   "train_accuracy": 0.5145,
+   "train_roi": -0.0913,
+   "pick_share_draw": 0.0266
+  },
+  {
+   "threshold": 0.74,
+   "train_accuracy": 0.516,
+   "train_roi": -0.0891,
+   "pick_share_draw": 0.0204
+  },
+  {
+   "threshold": 0.75,
+   "train_accuracy": 0.5158,
+   "train_roi": -0.0901,
+   "pick_share_draw": 0.0165
+  },
+  {
+   "threshold": 0.76,
+   "train_accuracy": 0.516,
+   "train_roi": -0.0906,
+   "pick_share_draw": 0.0127
+  },
+  {
+   "threshold": 0.77,
+   "train_accuracy": 0.5171,
+   "train_roi": -0.0884,
+   "pick_share_draw": 0.0097
+  },
+  {
+   "threshold": 0.78,
+   "train_accuracy": 0.5171,
+   "train_roi": -0.0889,
+   "pick_share_draw": 0.0073
+  },
+  {
+   "threshold": 0.79,
+   "train_accuracy": 0.5177,
+   "train_roi": -0.0881,
+   "pick_share_draw": 0.0048
+  },
+  {
+   "threshold": 0.8,
+   "train_accuracy": 0.5176,
+   "train_roi": -0.0887,
+   "pick_share_draw": 0.0037
+  },
+  {
+   "threshold": 0.81,
+   "train_accuracy": 0.518,
+   "train_roi": -0.0877,
+   "pick_share_draw": 0.0026
+  },
+  {
+   "threshold": 0.82,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0875,
+   "pick_share_draw": 0.0015
+  },
+  {
+   "threshold": 0.83,
+   "train_accuracy": 0.5183,
+   "train_roi": -0.0872,
+   "pick_share_draw": 0.0009
+  },
+  {
+   "threshold": 0.84,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0877,
+   "pick_share_draw": 0.0003
+  },
+  {
+   "threshold": 0.85,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.86,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.87,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.88,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.89,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.9,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.91,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.92,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.93,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.94,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.95,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.96,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.97,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.98,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  },
+  {
+   "threshold": 0.99,
+   "train_accuracy": 0.5182,
+   "train_roi": -0.0878,
+   "pick_share_draw": 0.0
+  }
+ ]
+}
