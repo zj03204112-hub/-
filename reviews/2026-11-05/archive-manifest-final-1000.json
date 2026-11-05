@@ -1,0 +1,62 @@
+{
+  "manifest_version": "daily-football-archive-2026-11-05-1000-final-v1",
+  "generated_at_beijing": "2026-11-05T09:57:21+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-05-1000",
+  "base_commit": "2ba724cdfd89c18bb3762368d682d58c00bc0b2b",
+  "initial_manifest_path": "reviews/2026-11-05/archive-manifest-1000.json",
+  "initial_manifest_blob_sha": "726d76db67066d27dcb0002b2c52105078dc7465",
+  "readback_verification_path": "reviews/2026-11-05/readback-verification-1000.json",
+  "readback_verification_commit_sha": "87eb306c855cb89a94014cb716d889ab1c5b7201",
+  "prior_xg_snapshot_lineage": [
+    {
+      "branch": "automation/daily-football-2026-11-04-1500",
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_snapshot-1002.csv",
+      "blob_sha": "e3e930b5e1375b8d2eaf8271dfc5a7911d6d2cc1"
+    },
+    {
+      "branch": "automation/daily-football-2026-11-04-1500",
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_delta-1500.csv",
+      "blob_sha": "a2df4d06933bb21e2b5f0c0154245de555024f06"
+    },
+    {
+      "branch": "automation/daily-football-2026-11-04-1500",
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/team_weekly_xg_snapshot-1002.csv",
+      "blob_sha": "32f69f5d62d74b21c214f6e0e25e816f246bd98c"
+    },
+    {
+      "branch": "automation/daily-football-2026-11-04-1500",
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/team_weekly_xg_delta-1500.csv",
+      "blob_sha": "a07e4b9b7019eb5ceac099afd4f4c72bfbbd5304"
+    }
+  ],
+  "current_run_counts": {
+    "previous_day_confirmed_matches": 19,
+    "previous_day_immutable_snapshots": 6,
+    "current_day_early_completed_matches": 19,
+    "fixtures_2026_11_05_06": 42,
+    "xg_delta_rows": 72,
+    "weekly_xg_delta_rows": 72,
+    "coverage_delta_rows": 66
+  },
+  "current_iso_week_xg": {
+    "unique_matches": 81,
+    "fulltime_xg_matches": 28,
+    "partial_inplay_matches": 2,
+    "missing_fulltime_xg_matches": 53,
+    "coverage_pct": 34.57,
+    "full_week_coverage": false
+  },
+  "git_readback_verified": true,
+  "database": {
+    "sqlite_file_present": true,
+    "latest_actions_update_success": true,
+    "live_connection": false,
+    "direct_query": false
+  },
+  "protections": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "production_model_modified": false
+  }
+}
