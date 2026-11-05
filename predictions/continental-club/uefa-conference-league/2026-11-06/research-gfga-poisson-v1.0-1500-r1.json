@@ -1,0 +1,888 @@
+[
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-conference-league:2026-11-05:agf-aarhus:braga:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-conference-league:2026-11-05:agf-aarhus:braga",
+    "competition": {
+      "id": "uefa-conference-league",
+      "name": "UEFA Conference League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "AGF Aarhus",
+      "away": "Braga",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.05,
+      "away_lambda": 1.25,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 30.98,
+      "draw_pct": 28.19,
+      "away_win_pct": 40.83,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 13.16
+      },
+      {
+        "rank": 2,
+        "score": "0-1",
+        "probability_pct": 12.53
+      }
+    ],
+    "half_full_time": {
+      "prediction": "负负",
+      "probability_pct": 23.8,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 3.6,
+      "data_completeness_pct": 69
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-09",
+    "risk_notes": [
+      "AGF近10场2胜4负4平；Braga近10场4胜5负1平，双方稳定性不足。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "AGF近10场2胜4负4平；Braga近10场4胜5负1平。",
+      "injuries": "媒体预测阵容；官方伤停未完整确认。",
+      "tactics": "AGF预测3-4-3；Braga预测4-2-3-1。",
+      "weather": "Randers逐小时天气未取得。",
+      "referee": null,
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.sportsgambler.com/betting-tips/football/agf-vs-braga-prediction-lineups-odds-2026-11-05/"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-conference-league:2026-11-05:atalanta:kairat-almaty:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-conference-league:2026-11-05:atalanta:kairat-almaty",
+    "competition": {
+      "id": "uefa-conference-league",
+      "name": "UEFA Conference League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Atalanta",
+      "away": "Kairat Almaty",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.95,
+      "away_lambda": 0.85,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 63.16,
+      "draw_pct": 21.19,
+      "away_win_pct": 15.65,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-0",
+        "probability_pct": 11.86
+      },
+      {
+        "rank": 2,
+        "score": "2-0",
+        "probability_pct": 11.56
+      }
+    ],
+    "half_full_time": {
+      "prediction": "胜胜",
+      "probability_pct": 40.78,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4.7,
+      "data_completeness_pct": 78
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-10",
+    "risk_notes": [
+      "Atalanta近5场未胜且失14球，多名伤员；主场实力优势仍明显。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Atalanta近5场0胜2平3负；Kairat近5场2胜2平1负。",
+      "injuries": "FotMob列Atalanta多名伤员；Kairat也有伤停。",
+      "tactics": "预计Atalanta主导控球；阵型待官方首发。",
+      "weather": "贝加莫约9°C；赛时预报。",
+      "referee": "Julian Weinberger",
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/matches/kairat-almaty-vs-atalanta/29nlqt"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-conference-league:2026-11-05:fc-midtjylland:ajax:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-conference-league:2026-11-05:fc-midtjylland:ajax",
+    "competition": {
+      "id": "uefa-conference-league",
+      "name": "UEFA Conference League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "FC Midtjylland",
+      "away": "Ajax",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.55,
+      "away_lambda": 1.7,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 35.24,
+      "draw_pct": 23.16,
+      "away_win_pct": 41.6,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 10.22
+      },
+      {
+        "rank": 2,
+        "score": "1-2",
+        "probability_pct": 8.68
+      }
+    ],
+    "half_full_time": {
+      "prediction": "负负",
+      "probability_pct": 25.31,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4.1,
+      "data_completeness_pct": 72
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-11",
+    "risk_notes": [
+      "两队近5场均有进攻输出；双方均有多名伤员。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Midtjylland近5场4胜1负；Ajax近5场4胜1负。",
+      "injuries": "FotMob列双方各有多名缺阵；需赛前复核。",
+      "tactics": "Midtjylland预测3-5-2；Ajax预测4-3-3。",
+      "weather": "Herning约5°C；赛时预报。",
+      "referee": "Paweł Raczkowski",
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/en-GB/matches/fc-midtjylland-vs-ajax/2b3aus"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-conference-league:2026-11-05:thun:hearts:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-conference-league:2026-11-05:thun:hearts",
+    "competition": {
+      "id": "uefa-conference-league",
+      "name": "UEFA Conference League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Thun",
+      "away": "Hearts",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.15,
+      "away_lambda": 1.5,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 29.09,
+      "draw_pct": 25.63,
+      "away_win_pct": 45.28,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 12.19
+      },
+      {
+        "rank": 2,
+        "score": "0-1",
+        "probability_pct": 10.6
+      }
+    ],
+    "half_full_time": {
+      "prediction": "负负",
+      "probability_pct": 27.25,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 3.3,
+      "data_completeness_pct": 50
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-12",
+    "risk_notes": [
+      "双方完整近5场和伤停名单未取得足够独立数据；Hearts欧战负于Trabzonspor，Thun负于Hajduk。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "可核验欧战近况：Thun 0-1 Hajduk；Hearts 0-2 Trabzonspor；完整近5场未完成。",
+      "injuries": "双方伤停未取得完整可靠名单。",
+      "tactics": "官方及可靠预测阵型未取得。",
+      "weather": "逐小时天气未取得。",
+      "referee": null,
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://dailysports.net/predictions/thun-vs-hearts-prediction-facts-betting-tips-and-h2h-november-5-2026/"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-conference-league:2026-11-05:crvena-zvezda:inter-club-d-escaldes:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-conference-league:2026-11-05:crvena-zvezda:inter-club-d-escaldes",
+    "competition": {
+      "id": "uefa-conference-league",
+      "name": "UEFA Conference League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Crvena Zvezda",
+      "away": "Inter Club d'Escaldes",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 2.6,
+      "away_lambda": 0.45,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 83.43,
+      "draw_pct": 12.12,
+      "away_win_pct": 4.45,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "2-0",
+        "probability_pct": 16.01
+      },
+      {
+        "rank": 2,
+        "score": "3-0",
+        "probability_pct": 13.87
+      }
+    ],
+    "half_full_time": {
+      "prediction": "胜胜",
+      "probability_pct": 59.72,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4.6,
+      "data_completeness_pct": 67
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-13",
+    "risk_notes": [
+      "主队实力与主场优势明显；Inter近期欧战连败，进攻输出下降。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Crvena近5场3胜1平1负、进14失8；Inter最近两场欧战连败。",
+      "injuries": "双方完整伤停及首发未获官方确认。",
+      "tactics": "主队预计主动压迫；阵型待官方首发。",
+      "weather": "贝尔格莱德逐小时天气未取得。",
+      "referee": null,
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/en-GB/teams/8687/overview/fk-crvena-zvezda",
+      "https://www.fotmob.com/teams/10050/overview",
+      "https://www.dailysports.net/predictions/crvena-zvezda-vs-inter-club-descaldes-uefa-conference-league-prediction-facts-and-betting-tips/"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-conference-league:2026-11-05:kups:gent:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-conference-league:2026-11-05:kups:gent",
+    "competition": {
+      "id": "uefa-conference-league",
+      "name": "UEFA Conference League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "KuPS",
+      "away": "Gent",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.05,
+      "away_lambda": 1.45,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 27.36,
+      "draw_pct": 26.35,
+      "away_win_pct": 46.29,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 12.5
+      },
+      {
+        "rank": 2,
+        "score": "0-1",
+        "probability_pct": 11.9
+      }
+    ],
+    "half_full_time": {
+      "prediction": "负负",
+      "probability_pct": 27.76,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 3.5,
+      "data_completeness_pct": 61
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-14",
+    "risk_notes": [
+      "KuPS欧战前两场失6球；Gent前两场1胜1负。缺少完整近期联赛xG与进攻数据。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "欧战前两场KuPS 0分；Gent 3分；完整近5场未全部取得。",
+      "injuries": "FotMob列Gent两名缺阵；KuPS暂无缺阵。",
+      "tactics": "官方首发及阵型未公布。",
+      "weather": "Tampere逐小时天气未取得。",
+      "referee": "Robert Harvey（第三方列示）",
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/nl/matches/kups-vs-gent/14ncdd",
+      "https://www.futbol24.com/betting-tips/preview/05-11-2026-kuopion-ps-kaa-gent-betting-tip/"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-conference-league:2026-11-05:lincoln-red-imps:hajduk-split:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-conference-league:2026-11-05:lincoln-red-imps:hajduk-split",
+    "competition": {
+      "id": "uefa-conference-league",
+      "name": "UEFA Conference League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Lincoln Red Imps",
+      "away": "Hajduk Split",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 0.75,
+      "away_lambda": 1.85,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 14.56,
+      "draw_pct": 21.91,
+      "away_win_pct": 63.53,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "0-1",
+        "probability_pct": 13.74
+      },
+      {
+        "rank": 2,
+        "score": "0-2",
+        "probability_pct": 12.71
+      }
+    ],
+    "half_full_time": {
+      "prediction": "负负",
+      "probability_pct": 40.72,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4.9,
+      "data_completeness_pct": 82
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-15",
+    "risk_notes": [
+      "Hajduk近5场4胜1平；Lincoln主场为人工草皮，场地适应与客队阵容缺口是变量。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Lincoln近5场1胜1平3负；Hajduk近5场4胜1平。",
+      "injuries": "FotMob列Lincoln暂无缺阵；Hajduk 5名缺阵。",
+      "tactics": "Lincoln预测4-4-2；Hajduk阵型待确认。",
+      "weather": "Gibraltar约19°C；赛时预报。",
+      "referee": "Patryk Gryckiewicz",
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/matches/hajduk-split-vs-lincoln-red-imps-fc/1ysmeyv9"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-conference-league:2026-11-05:mj-llby:borac-banja-luka:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-conference-league:2026-11-05:mj-llby:borac-banja-luka",
+    "competition": {
+      "id": "uefa-conference-league",
+      "name": "UEFA Conference League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Mjällby",
+      "away": "Borac Banja Luka",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.35,
+      "away_lambda": 1.55,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 33.22,
+      "draw_pct": 24.64,
+      "away_win_pct": 42.14,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 11.51
+      },
+      {
+        "rank": 2,
+        "score": "1-2",
+        "probability_pct": 8.92
+      }
+    ],
+    "half_full_time": {
+      "prediction": "负负",
+      "probability_pct": 25.35,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 3.7,
+      "data_completeness_pct": 77
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-16",
+    "risk_notes": [
+      "Mjällby近5场1胜2平2负；Borac近5场4胜1负，客队状态更好。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Mjällby近5场1胜2平2负；Borac近5场4胜1负。",
+      "injuries": "FotMob列Mjällby两名伤员；Borac暂无缺阵。",
+      "tactics": "预测阵型未取得可靠交叉确认。",
+      "weather": "Helsingborg约7°C；赛时预报。",
+      "referee": "Gal Leibovitz",
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/en-GB/matches/mjallby-vs-borac-banja-luka/2r2z39",
+      "https://www.fotmob.com/teams/8127/overview/mjllby"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  },
+  {
+    "schema_version": "research_prediction_snapshot_v1",
+    "prediction_id": "pred:match:uefa-conference-league:2026-11-05:trabzonspor:freiburg:research-gfga-poisson-v1.0:2026-11-05T1500+08:00",
+    "match_id": "match:uefa-conference-league:2026-11-05:trabzonspor:freiburg",
+    "competition": {
+      "id": "uefa-conference-league",
+      "name": "UEFA Conference League",
+      "type": "continental_club"
+    },
+    "fixture": {
+      "home": "Trabzonspor",
+      "away": "Freiburg",
+      "kickoff_utc": "2026-11-05T17:45:00Z",
+      "kickoff_beijing": "2026-11-06T01:45:00.000+08:00"
+    },
+    "snapshot": {
+      "captured_at_beijing": "2026-11-05T15:00:00+08:00",
+      "immutable": true,
+      "hours_before_kickoff": 10.75
+    },
+    "model": {
+      "name": "RESEARCH-GFGA-POISSON",
+      "version": "v1.0",
+      "production": false,
+      "not_v5_1": true,
+      "not_v5_2": true,
+      "description": "独立研究层；依据近期进失球、主客场、阵容及赛程信息形成预期进球λ，再用Poisson矩阵计算比分与90分钟概率。"
+    },
+    "expected_goals": {
+      "home_lambda": 1.7,
+      "away_lambda": 1.3,
+      "semantics": "self_model_estimated_expected_goals",
+      "not_provider_xg": true,
+      "not_observed_xg": true,
+      "method_note": "近期进失球与球队强度的研究估计代理值，不是供应商射门位置xG；与供应商xG分开保存。"
+    },
+    "probabilities": {
+      "home_win_pct": 46.85,
+      "draw_pct": 23.78,
+      "away_win_pct": 29.37,
+      "sum_pct": 100
+    },
+    "most_likely_scores": [
+      {
+        "rank": 1,
+        "score": "1-1",
+        "probability_pct": 11
+      },
+      {
+        "rank": 2,
+        "score": "2-1",
+        "probability_pct": 9.35
+      }
+    ],
+    "half_full_time": {
+      "prediction": "胜胜",
+      "probability_pct": 28.76,
+      "method": "Poisson半场/全场分段估计，上半场λ=45%、下半场λ=55%。"
+    },
+    "handicap": {
+      "official_sporttery_handicap": null,
+      "official_handicap_result": null,
+      "status": "UNVERIFIED_OFFICIAL_JCZQ_LINE",
+      "mechanical_mapping_performed": false,
+      "third_party_asian_handicap_substituted": false
+    },
+    "confidence": {
+      "my_confidence_10": 4.1,
+      "data_completeness_pct": 82
+    },
+    "strategy_id": "RESEARCH-GFGA-POISSON-20261105-1500-17",
+    "risk_notes": [
+      "Trabzonspor近5场全胜但有8名伤员；Freiburg近5场2胜3负并有3名伤员。"
+    ],
+    "prematch_inputs": {
+      "recent_form": "Trabzonspor近5场5连胜、进14失5；Freiburg近5场2胜3负、进7失11。",
+      "injuries": "FotMob列Trabzonspor 8名、Freiburg 3名缺阵或存疑。",
+      "tactics": "Trabzonspor预测4-1-4-1；Freiburg预测4-2-3-1。",
+      "weather": "Trabzon约13°C；赛时预报。",
+      "referee": "Kristo Tohver",
+      "next_opponent_importance": "not fully verified",
+      "official_starting_xi": "not published at capture"
+    },
+    "missing_fields": [
+      "official_jczq_handicap",
+      "official_opening_to_current_jczq_odds",
+      "confirmed_starting_xi",
+      "full_independent_injury_crosscheck",
+      "provider_prematch_xg",
+      "next_opponent_importance",
+      "provider_team_ids"
+    ],
+    "source_urls": [
+      "https://www.fotmob.com/matches/freiburg-vs-trabzonspor/2pn6yh"
+    ],
+    "captured_market_data_used_for_result_direction": false,
+    "revision": "r1_probability_tail_normalization"
+  }
+]
