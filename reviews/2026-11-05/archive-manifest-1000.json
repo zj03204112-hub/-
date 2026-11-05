@@ -1,0 +1,108 @@
+{
+  "manifest_version": "daily-football-archive-2026-11-05-1000-v1",
+  "generated_at_beijing": "2026-11-05T09:57:21+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-05-1000",
+  "base_commit": "2ba724cdfd89c18bb3762368d682d58c00bc0b2b",
+  "created_files": [
+    {
+      "path": "reviews/2026-11-05/previous-day-review.json",
+      "commit_sha": "0725551a8039cd3bdd58f18880972f7cef9d4313",
+      "chars": 23068
+    },
+    {
+      "path": "results/continental-club/uefa-champions-league/2026-11-04/results.json",
+      "commit_sha": "636da41c63e64039ef72d06838d2a923d129b6fa",
+      "chars": 5426
+    },
+    {
+      "path": "results/continental-club/afc-champions-league-elite/2026-11-04/results.json",
+      "commit_sha": "d01059e0267d071fe04887466672f28bcbb9b671",
+      "chars": 2677
+    },
+    {
+      "path": "results/continental-club/afc-champions-league-two/2026-11-04/results.json",
+      "commit_sha": "66b135aa5a8bd5c60d71dea991a790f8ff505d1a",
+      "chars": 2654
+    },
+    {
+      "path": "results/continental-club/uefa-europa-league/2026-11-04/results.json",
+      "commit_sha": "b8a349e6c44fb412bf2bf89d992c96a2be80b31f",
+      "chars": 728
+    },
+    {
+      "path": "results/domestic-league/brazil-serie-a/2026-11-04/results.json",
+      "commit_sha": "87f9b9802c740de7568a47c19f6f6a64bd2a58d3",
+      "chars": 681
+    },
+    {
+      "path": "reviews/2026-11-05/current-day-early-results.json",
+      "commit_sha": "09090c28ba21c22f2d5abfe3262fbf3d189dc567",
+      "chars": 12650
+    },
+    {
+      "path": "fixtures/2026-11-05-06/schedule.json",
+      "commit_sha": "fbf369c21c74627ba8979bbeff5fd4f4595f5860",
+      "chars": 38552
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-05/match_xg_delta-1000.csv",
+      "commit_sha": "d0b0f983d4121a9b92fa5139ec1b7e5055593967",
+      "chars": 49513
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-05/team_weekly_xg_delta-1000.csv",
+      "commit_sha": "884de9f2680315aecd9c4bf20f8e961bd1a8cd86",
+      "chars": 30579
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-05/team_weekly_coverage_delta-1000.csv",
+      "commit_sha": "974d357ecede04d810be19e63e6edc32a553c92c",
+      "chars": 25629
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-05/xg_coverage_audit-1000.json",
+      "commit_sha": "dfb760d87be70fca7555ece705c053365e8a27f4",
+      "chars": 4268
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-05/xg_source_discrepancy_audit-1000.json",
+      "commit_sha": "58871d441a96acde71ee1c2dc078448d78abf52b",
+      "chars": 2117
+    },
+    {
+      "path": "reviews/2026-11-05/repo-season-data-audit.json",
+      "commit_sha": "21c741ad4c8afc4525553254a85687deb5255b40",
+      "chars": 5284
+    }
+  ],
+  "counts": {
+    "previous_day_confirmed_matches": 19,
+    "previous_day_immutable_prediction_snapshots": 6,
+    "previous_day_no_snapshot": 13,
+    "previous_day_xg_fulltime_coverage": "15/19",
+    "current_day_early_completed_matches": 19,
+    "fixtures_2026_11_05_06": 42,
+    "xg_delta_team_provider_rows": 72,
+    "team_weekly_xg_delta_rows": 72,
+    "team_weekly_coverage_delta_rows": 66
+  },
+  "xg_cumulative_summary": {
+    "unique_matches": 81,
+    "fulltime_xg_matches": 28,
+    "partial_inplay_matches": 2,
+    "missing_fulltime_xg_matches": 53,
+    "coverage_pct": 34.57
+  },
+  "database": {
+    "live_connection": false,
+    "direct_query": false,
+    "sqlite_file_present": true,
+    "latest_actions_workflow_success": true
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "production_model_updated": false
+  }
+}
