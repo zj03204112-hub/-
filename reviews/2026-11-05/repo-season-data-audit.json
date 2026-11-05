@@ -1,0 +1,169 @@
+{
+  "audit_version": "repo-season-data-audit-2026-11-05-v1",
+  "source_branch": "main",
+  "main_head_commit": "2ba724cdfd89c18bb3762368d682d58c00bc0b2b",
+  "reports_snapshot_date": "2026-11-04",
+  "core_leagues": {
+    "premier_league": {
+      "season": "2026/27",
+      "scheduled_fixtures": 120,
+      "completed": 90,
+      "player_detail": 90,
+      "player_rows": 3599,
+      "starting_xi_rows": 1980,
+      "substitutions": 791,
+      "events": 635,
+      "shots": 2475,
+      "shots_with_xg": 2463,
+      "independent_score_check": "90/90 matched",
+      "limitations": [
+        "FotMob single provider for lineups/cards/shots; no official PL lineup cross-check.",
+        "30 fixtures remain unplayed."
+      ]
+    },
+    "la_liga": {
+      "season": "2026/27",
+      "results_fixtures": 109,
+      "player_detail": 35,
+      "player_rows": 1594,
+      "missing_player_detail": 74,
+      "limitations": [
+        "Jornada 8 partial page audit not merged as complete normalized detail.",
+        "Jornada 11 certification must follow detailed audit."
+      ]
+    },
+    "bundesliga": {
+      "season": "2026/27",
+      "scheduled_fixtures": 99,
+      "completed": 72,
+      "player_detail": 72,
+      "player_rows": 2881,
+      "starting_xi_rows": 1584,
+      "substitutions": 674,
+      "events": 534,
+      "shots": 2192,
+      "shots_with_xg": 2185,
+      "independent_score_check": "72/72 matched",
+      "limitations": [
+        "FotMob single provider; no official Bundesliga lineup cross-check.",
+        "27 fixtures remain unplayed."
+      ]
+    },
+    "serie_a": {
+      "season": "2026/27",
+      "scheduled_fixtures": 130,
+      "completed": 100,
+      "player_detail": 100,
+      "player_rows": 4790,
+      "starting_xi_rows": 2200,
+      "substitutions": 978,
+      "events": 659,
+      "shots": 2904,
+      "shots_with_xg": 2895,
+      "independent_score_check": "100/100 matched",
+      "limitations": [
+        "FotMob single provider for lineups/cards/shots.",
+        "30 fixtures remain unplayed."
+      ]
+    },
+    "ligue_1": {
+      "season": "2026/27",
+      "scheduled_fixtures": 108,
+      "completed": 81,
+      "player_detail": 81,
+      "player_rows": 3237,
+      "starting_xi_rows": 1782,
+      "substitutions": 751,
+      "events": 554,
+      "shots": 2179,
+      "shots_with_xg": 2170,
+      "independent_score_check": "81/81 matched",
+      "limitations": [
+        "FotMob single provider for lineups/cards/shots.",
+        "27 fixtures remain unplayed."
+      ]
+    },
+    "k_league_1": {
+      "season": "2026",
+      "scheduled_fixtures": 222,
+      "completed": 204,
+      "player_detail": 204,
+      "player_rows": 8141,
+      "starting_xi_rows": 4488,
+      "substitutions": 1910,
+      "events": 1274,
+      "shots": 5116,
+      "shots_with_xg": 5100,
+      "independent_score_check": "185/204 matched; 19 unverified",
+      "referee_missing": 131,
+      "unplayed_fixtures": 18,
+      "limitations": [
+        "19 early-season scorelines remain outside independent-source coverage window.",
+        "FotMob single provider for lineups/cards/shots."
+      ]
+    },
+    "j1_league": {
+      "season": "2026/27",
+      "scheduled_fixtures": 130,
+      "player_detail": 130,
+      "player_rows": 5197,
+      "substitutions": 1261,
+      "events": 785,
+      "shots": 3513,
+      "xg_match_rows": 130,
+      "official_lineup_crosscheck": {
+        "passed": 120,
+        "disagreements": 10,
+        "resolution": "official preferred"
+      },
+      "unplayed_fixtures": 37,
+      "limitations": [
+        "ManagerHome/ManagerAway/Venue/Referee/Attendance each have one missing record.",
+        "Assists available for 277/391 goals."
+      ]
+    }
+  },
+  "database": {
+    "sqlite_file": "football_model_database.sqlite",
+    "present_in_main": true,
+    "size_bytes": 63372000,
+    "size_note": "GitHub Actions warning reported 60.40 MB, above the 50 MB recommended threshold.",
+    "latest_commit": "2ba724cdfd89c18bb3762368d682d58c00bc0b2b",
+    "latest_workflow_run_id": 41950035551,
+    "workflow_name": "Football player data verification",
+    "conclusion": "success",
+    "player_data_push": "PLAYER_DATA_PUSH_OK",
+    "live_sqlite_connection_in_this_run": false,
+    "direct_sqlite_query_in_this_run": false
+  },
+  "workflow_diagnostics": {
+    "jc_daily_report_parser": {
+      "n_source_cards": 0,
+      "n_target_league_cards": 0,
+      "n": 0,
+      "handicap_signal_cards": 0,
+      "ou_lines": 0,
+      "local_db_overlap": 0,
+      "meaning": "source parser currently yields no usable daily cards; no accuracy claim"
+    },
+    "draw_absence_retrospective": {
+      "matches_checked": 128,
+      "provider_lineups_found": 0,
+      "pre_match_safe": false,
+      "meaning": "retrospective only; not safe as pre-match injury input"
+    },
+    "j1_k1_holdout": {
+      "j1_n": 0,
+      "k1_n": 2,
+      "k1_accuracy": 0.5,
+      "k1_brier": 0.5373,
+      "k1_logloss": 0.9188,
+      "meaning": "too small for performance conclusion"
+    }
+  },
+  "links": {
+    "workflow": "https://github.com/zj03204112-hub/-/actions/runs/41950035551",
+    "database": "https://github.com/zj03204112-hub/-/blob/main/football_model_database.sqlite",
+    "reports": "https://github.com/zj03204112-hub/-/tree/main/data/season_match_detail"
+  }
+}
