@@ -1,0 +1,49 @@
+{
+  "run_date_beijing": "2026-11-06",
+  "branch": "automation/daily-football-2026-11-06-1000",
+  "verified_at_beijing": "2026-11-06T11:04:14+08:00",
+  "checks": {
+    "previous_day_review_22_confirmed_ft": true,
+    "previous_day_prediction_snapshot_count": 0,
+    "xg_r1_rows": 46,
+    "xg_r1_weekly_rows": 46,
+    "schedule_r2_future_fixtures": 73,
+    "schedule_r2_prediction_window_candidates_at_1500": 0,
+    "early_prediction_snapshot_matches": 9,
+    "early_prediction_metrics": {
+      "matched": 9,
+      "ninety_minute_hits": 3,
+      "first_score_hits": 1,
+      "second_score_hits": 2,
+      "top_two_score_hits": 3
+    },
+    "v5_1_unchanged": true,
+    "frozen_sample_unchanged": true
+  },
+  "files": [
+    {
+      "path": "fixtures/2026-11-06-07/schedule-r2.json",
+      "blob_sha": "c9acbf4fb95d0195d6c7f32786154b93b1eb2a25",
+      "bytes": 79553,
+      "valid_json": true
+    },
+    {
+      "path": "reviews/2026-11-06/schedule-time-correction-1000-r2.json",
+      "blob_sha": "35ef09964a90406ecd74a7b8dd8fe88cce19dfb9",
+      "bytes": 1675,
+      "valid_json": true
+    },
+    {
+      "path": "reviews/2026-11-06/early-snapshot-audit-1000.json",
+      "blob_sha": "075bf674686e2e9fa75d3ca64b9a193f919aad3d",
+      "bytes": 10464,
+      "valid_json": true
+    },
+    {
+      "path": "reviews/2026-11-06/archive-addendum-1000-r2.json",
+      "blob_sha": "b4e47e339eb5302227c7327f9d9abcc0aaa45dc0",
+      "bytes": 2355,
+      "valid_json": true
+    }
+  ]
+}
