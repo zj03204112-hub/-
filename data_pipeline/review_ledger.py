@@ -82,6 +82,33 @@ def review(connection) -> int:
     return settled
 
 
+def full_table(connection, limit_days: int = 1) -> None:
+    """Print every settled prediction for the most recent match days."""
+    days = [r["match_date"] for r in connection.execute(
+        """SELECT DISTINCT match_date FROM prediction_ledger
+           WHERE correct IS NOT NULL ORDER BY match_date DESC LIMIT ?""", (limit_days,))]
+    if not days:
+        return
+    log("\n逐场复盘:")
+    for day in sorted(days):
+        rows = list(connection.execute(
+            """SELECT match_num, home, away, market, pick, pick_probability,
+                      result_score, result_outcome, correct
+               FROM prediction_ledger
+               WHERE match_date = ? AND correct IS NOT NULL
+               ORDER BY match_num, market""", (day,)))
+        if not rows:
+            continue
+        log(f"  {day}:")
+        for row in rows:
+            mark = "OK " if row["correct"] else "MISS"
+            market = {"spf": "胜平负", "hhad": "让球", "hhad_draw": "让平"}[row["market"]]
+            log(f"    {row['match_num']:8s} {row['home'][:7] + '-' + row['away'][:7]:15s} "
+                f"{market:4s} {row['pick']:3s} {100 * row['pick_probability']:5.1f}%  "
+                f"{row['result_score']:5s} {row['result_outcome']:3s} {mark}")
+    log("")
+
+
 def report(connection) -> None:
     total = connection.execute("SELECT COUNT(*) FROM prediction_ledger").fetchone()[0]
     settled = connection.execute(
@@ -116,6 +143,8 @@ def report(connection) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--review", action="store_true")
+    parser.add_argument("--days", type=int, default=1,
+                        help="how many recent match days to print in the per-match review")
     args = parser.parse_args()
 
     connection = sqlite3.connect(DB)
@@ -123,6 +152,7 @@ def main() -> int:
     if args.review:
         review(connection)
     report(connection)
+    full_table(connection, limit_days=args.days)
     return 0
 
 
