@@ -20,15 +20,21 @@
   "prediction_window_candidates_at_1500": 2,
   "xg_weekly": {
     "iso_week": "2026-W45",
-    "matches_in_batch": 22,
+    "matches_in_review_batch": 22,
     "unique_teams": 44,
-    "matches_with_provider_xg": 7,
-    "match_coverage_pct": 31.82,
-    "provider_model_estimate_sets": 12,
-    "team_match_provider_rows": 54,
-    "weekly_summary_rows": 54,
+    "matches_with_full_match_provider_xg": 5,
+    "match_coverage_pct": 22.73,
+    "provider_model_estimate_sets": 6,
+    "team_match_provider_rows": 46,
+    "weekly_summary_rows": 46,
     "full_iso_week_complete": false,
-    "week_totals_published": false
+    "week_totals_published": false,
+    "authoritative_revision": "r1",
+    "superseded_original_files": [
+      "data/xg_weekly/2026-W45/snapshots/2026-11-06/match_xg_delta-1000.csv",
+      "data/xg_weekly/2026-W45/snapshots/2026-11-06/team_weekly_xg_delta-1000.csv",
+      "data/xg_weekly/2026-W45/snapshots/2026-11-06/xg_coverage_audit-1000.json"
+    ]
   },
   "database_status": "football_model_database.sqlite is present in repository, but SQLite was not opened or queried in this run; no live database connection.",
   "model_protection": {
@@ -46,7 +52,13 @@
     "xg_weekly_delta": "ebca111dd2137d7c826d8ad11eaf35400ed81ea5",
     "xg_audit": "441b1b619143039696d97b2a57c6fdbeb586e2e5",
     "current_day_early_results": "835b634dacbc155c5003e1caaa204c430e92bbd7",
-    "schedule": "d7d64c8d5f5820ade7148936e91e63f87ced5a40"
+    "schedule": "d7d64c8d5f5820ade7148936e91e63f87ced5a40",
+    "ucl_results_corrected": "b28f417e76d134168256783c109bfb6f666675fb",
+    "previous_day_review_corrected": "af7e5cbd33cb34fbd0388b103b3609debbcc3c45",
+    "xg_r1_match": "b9d7b4f9d961fe91cecc19e67da2f50649fd7740",
+    "xg_r1_weekly": "8544eddab1b362a1042b106759e5db641db29c68",
+    "xg_r1_audit": "ca0e9b7f333773039122e63f6130c7d4f55638c4",
+    "xg_correction_note": "32f64c69ac4bf876310b30ad2cb483d306714530"
   },
   "files": [
     "results/continental-club/uefa-champions-league/2026-11-05/results.json",
@@ -59,7 +71,17 @@
     "data/xg_weekly/2026-W45/snapshots/2026-11-06/match_xg_delta-1000.csv",
     "data/xg_weekly/2026-W45/snapshots/2026-11-06/team_weekly_xg_delta-1000.csv",
     "data/xg_weekly/2026-W45/snapshots/2026-11-06/xg_coverage_audit-1000.json",
-    "reviews/2026-11-06/archive-manifest-1000.json"
+    "reviews/2026-11-06/archive-manifest-1000.json",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/match_xg_delta-1000-r1.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/team_weekly_xg_delta-1000-r1.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/xg_coverage_audit-1000-r1.json",
+    "reviews/2026-11-06/xg-classification-correction-1000-r1.json"
   ],
-  "time_correction_note": "AEK Athens-Real Madrid and Fenerbahce-Liverpool kickoff UTC values corrected to 17:45Z (01:45 Beijing) after match-specific schedule verification; results and review files updated append-only via new commits."
+  "time_correction_note": "AEK Athens-Real Madrid and Fenerbahce-Liverpool UTC kickoffs corrected to 17:45Z / 01:45 Beijing after match-specific schedule verification; original result and review files were preserved as prior revisions and updated in new commits.",
+  "xg_classification_correction": "r1排除了赛前预测投影、进行中部分xG和无法回读的搜索摘要；Sao Paulo O Gol值修正为1.25-1.06。原始增量未覆盖，保留作审计。",
+  "authoritative_xg_files": [
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/match_xg_delta-1000-r1.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/team_weekly_xg_delta-1000-r1.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/xg_coverage_audit-1000-r1.json"
+  ]
 }
