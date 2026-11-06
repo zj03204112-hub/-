@@ -264,7 +264,7 @@ def main() -> int:
         result = subprocess.run([sys.executable,
                                  os.path.join(PIPELINE, "collect_jc_history_500.py"),
                                  "--start", start, "--end", end, "--revisit",
-                                 "--quiet", "--delay", "2"],
+                                 "--delay", "2"],
                                 capture_output=True, text=True, encoding="utf-8", errors="replace")
         tail = (result.stdout or "").strip().splitlines()[-2:]
         log("  " + " | ".join(tail) if tail else "  no output")
