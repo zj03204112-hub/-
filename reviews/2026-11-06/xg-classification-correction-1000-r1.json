@@ -1,0 +1,22 @@
+{
+  "date_beijing": "2026-11-06",
+  "supersedes": [
+    "match_xg_delta-1000.csv",
+    "team_weekly_xg_delta-1000.csv",
+    "xg_coverage_audit-1000.json"
+  ],
+  "reason": "原始增量中混入赛前预测投影和未完成比赛的部分xG，不能作为全场比赛级xG。原始文件保留，新增r1修正版作为本轮权威快照。",
+  "r1_authoritative_files": [
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/match_xg_delta-1000-r1.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/team_weekly_xg_delta-1000-r1.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/xg_coverage_audit-1000-r1.json"
+  ],
+  "matches_with_full_match_provider_xg": 5,
+  "coverage_pct": 22.73,
+  "excluded": [
+    "Flamengo pre-match model projections",
+    "Botafogo partial in-play xG",
+    "unverifiable search-only xG snippets"
+  ],
+  "corrected_value": "Sao Paulo-O Gol: xG 1.25-1.06"
+}
