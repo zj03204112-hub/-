@@ -1,0 +1,51 @@
+{
+  "run_at_beijing": "2026-11-06T14:56:03+08:00",
+  "run_type": "15:00 refresh and prediction",
+  "schedule": {
+    "prior_unique_fixtures": 73,
+    "added_fixtures": 6,
+    "refreshed_unique_fixtures": 79,
+    "prediction_window_candidates": 5,
+    "window_rule_hours": [
+      6,
+      12
+    ]
+  },
+  "predictions": {
+    "generated": 5,
+    "competitions": [
+      "2. Bundesliga",
+      "Allsvenskan",
+      "Ligue 2",
+      "Eredivisie",
+      "Eerste Divisie"
+    ],
+    "model_version": "RESEARCH-POISSON-EXTERNAL-XG-v1.0"
+  },
+  "official_jc": {
+    "verified_lines": 0,
+    "all_5_handicap_predictions": "unverifiable",
+    "third_party_mirror_records": 5
+  },
+  "lineups": {
+    "official_confirmed": 0,
+    "predicted_lineup_sources": 2
+  },
+  "xg": {
+    "actual_weekly_coverage_pct": 34.57,
+    "prematch_projection_rows": 10,
+    "actual_weekly_xg_rows_added": 0
+  },
+  "missing": [
+    "官方竞彩原始盘口",
+    "5场官方首发",
+    "部分伤停/裁判/天气",
+    "下一场对手重要性",
+    "SQLite/远程数据库实时连接"
+  ],
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "production_rules_changed": false
+  }
+}
