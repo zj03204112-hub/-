@@ -1,0 +1,45 @@
+{
+  "run_date_beijing": "2026-11-06",
+  "revision": "r2",
+  "supersedes": "fixtures/2026-11-06-07/schedule-r1.json",
+  "corrections": [
+    {
+      "match": "Sevilla vs Alaves",
+      "previous": {
+        "kickoff_utc": "2026-11-06T19:00:00Z",
+        "kickoff_beijing": "2026-11-07T03:00:00+08:00",
+        "hours_from_1500": 12
+      },
+      "corrected": {
+        "kickoff_utc": "2026-11-06T20:00:00Z",
+        "kickoff_beijing": "2026-11-07T04:00:00+08:00",
+        "hours_from_1500": 13
+      },
+      "source_urls": [
+        "https://sevillafc.es/actualidad/noticias/horario-sevilla-alaves-j12-laliga-2627",
+        "https://www.laliga.com/en-NL/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-deportivo-alaves-12"
+      ]
+    },
+    {
+      "match": "Venezia vs Udinese",
+      "previous": {
+        "kickoff_utc": "2026-11-06T18:45:00Z",
+        "kickoff_beijing": "2026-11-07T02:45:00+08:00",
+        "hours_from_1500": 11.75
+      },
+      "corrected": {
+        "kickoff_utc": "2026-11-06T19:45:00Z",
+        "kickoff_beijing": "2026-11-07T03:45:00+08:00",
+        "hours_from_1500": 12.75
+      },
+      "source_urls": [
+        "https://www.udinese.it/news/squad/udineses-october-and-november-fixtures",
+        "https://www.veneziafc.it/news/serie-a-enilive-la-designazione-arbitrale-per-venezia-fc-udinese",
+        "https://en.legaseriea.it/serie-a/fixtures-results"
+      ]
+    }
+  ],
+  "prediction_window_candidates_at_1500_before": 2,
+  "prediction_window_candidates_at_1500_after": 0,
+  "note": "Both kickoffs were one hour later than the earlier schedule snapshot. After correction, neither falls within the 6–12 hour window at 15:00 Beijing."
+}
