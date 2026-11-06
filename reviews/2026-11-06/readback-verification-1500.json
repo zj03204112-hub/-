@@ -1,0 +1,56 @@
+{
+  "verified_at_beijing": "2026-11-06T14:56:03+08:00",
+  "branch": "automation/daily-football-2026-11-06-1500",
+  "status": "passed",
+  "checks": {
+    "schedule": {
+      "file": "fixtures/2026-11-06-07/schedule-refresh-1500-r1.json",
+      "json_parse": true,
+      "fixtures": 79,
+      "unique_match_ids": 79,
+      "window_candidates": 5,
+      "outside_window": 74,
+      "inside_outside_partition_valid": true
+    },
+    "predictions": {
+      "count": 5,
+      "json_parse_all": true,
+      "each_has_two_scores": true,
+      "each_has_1x2_probabilities": true,
+      "probability_sum_tolerance": 0.001,
+      "all_within_6_to_12_hours": true,
+      "official_jc_handicap_verified": 0,
+      "handicap_outputs_all_unverifiable": true
+    },
+    "market_audit": {
+      "json_parse": true,
+      "third_party_mirrors_separated_from_official": true
+    },
+    "xg_pre_match_csv": {
+      "file": "data/xg_weekly/2026-W45/snapshots/2026-11-06/prematch_provider_model_estimates-1500.csv",
+      "header_valid": true,
+      "data_rows": 10,
+      "source_and_type_per_row": true,
+      "measured_flags_all_false": true
+    },
+    "xg_weekly_audit": {
+      "json_parse": true,
+      "actual_weekly_snapshot_unchanged": true,
+      "post_match_leakage_detected": false
+    },
+    "run_report": {
+      "json_parse": true,
+      "predictions": 5
+    }
+  },
+  "limitations": [
+    "官方竞彩原始盘口未验证",
+    "SQLite/远程数据库未连接",
+    "部分首发、伤停、天气、裁判及赛程动机未核实"
+  ],
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "production_rules_changed": false
+  }
+}
