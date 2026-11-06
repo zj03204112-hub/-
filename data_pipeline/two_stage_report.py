@@ -29,6 +29,7 @@ import sys
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
+from devig import power_devig, power_devig_map  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(REPO_ROOT, "football_model_database.sqlite")
@@ -47,11 +48,7 @@ def log(message: str) -> None:
 
 
 def devig(values: list[float]) -> list[float] | None:
-    if any(v is None or v <= 1.0 for v in values):
-        return None
-    inverse = [1.0 / v for v in values]
-    total = sum(inverse)
-    return [x / total for x in inverse]
+    return power_devig(values)
 
 
 def main() -> int:

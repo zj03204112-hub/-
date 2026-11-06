@@ -256,6 +256,22 @@ def main() -> int:
     else:
         summary.append({"league": "RADAR", "status": "dry run"})
 
+    log("[JCH] refreshing the jingcai archive for the last two days")
+    if not args.dry_run:
+        today = datetime.now().date()
+        start = (today - timedelta(days=2)).isoformat()
+        end = today.isoformat()
+        result = subprocess.run([sys.executable,
+                                 os.path.join(PIPELINE, "collect_jc_history_500.py"),
+                                 "--start", start, "--end", end, "--revisit",
+                                 "--quiet", "--delay", "2"],
+                                capture_output=True, text=True, encoding="utf-8", errors="replace")
+        tail = (result.stdout or "").strip().splitlines()[-2:]
+        log("  " + " | ".join(tail) if tail else "  no output")
+        summary.append({"league": "JCH", "status": "archive refreshed", "tail": tail})
+    else:
+        summary.append({"league": "JCH", "status": "dry run"})
+
     log("[INJURIES] snapshotting unavailable players for upcoming fixtures")
     if not args.dry_run:
         result = subprocess.run([sys.executable,
@@ -266,6 +282,18 @@ def main() -> int:
         summary.append({"league": "INJURIES", "status": "snapshot taken", "tail": tail})
     else:
         summary.append({"league": "INJURIES", "status": "dry run"})
+
+    log("[LEDGER] recording today's card and settling yesterday's")
+    if not args.dry_run:
+        for script, extra in (("log_predictions.py", []), ("review_ledger.py", ["--review"])):
+            result = subprocess.run([sys.executable, os.path.join(PIPELINE, script)] + extra,
+                                    capture_output=True, text=True, encoding="utf-8",
+                                    errors="replace")
+            tail = (result.stdout or "").strip().splitlines()[-1:] 
+            log("  " + (tail[0] if tail else "no output"))
+        summary.append({"league": "LEDGER", "status": "logged and reviewed"})
+    else:
+        summary.append({"league": "LEDGER", "status": "dry run"})
 
     if not args.dry_run and not args.skip_import:
         log("[SQLITE] refreshing the analysis layer")

@@ -25,6 +25,7 @@ import sys
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
+from devig import power_devig, power_devig_map  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(REPO_ROOT, "model_validation", "handicap_card.json")
@@ -70,9 +71,9 @@ def main() -> int:
                 continue
             if any(o <= 1.0 for o in odds):
                 continue
-            inverse = [1.0 / o for o in odds]
-            total = sum(inverse)
-            probabilities = [x / total for x in inverse]
+            probabilities = power_devig(odds)
+            if not probabilities:
+                continue
             order = sorted(range(3), key=lambda i: -probabilities[i])
             gap = probabilities[order[0]] - probabilities[order[1]]
             tier = next((t for t in GAP_TIERS if t[0] <= gap < t[1]), None)

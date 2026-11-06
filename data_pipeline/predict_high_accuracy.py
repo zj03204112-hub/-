@@ -28,6 +28,7 @@ import sys
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
+from devig import power_devig, power_devig_map  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(REPO_ROOT, "model_validation", "high_accuracy_picks.json")
@@ -87,9 +88,9 @@ def main() -> int:
                 continue
             if any(o <= 1.0 for o in odds):
                 continue
-            inverse = [1.0 / o for o in odds]
-            total = sum(inverse)
-            probabilities = [x / total for x in inverse]
+            probabilities = power_devig(odds)
+            if not probabilities:
+                continue
             favourite = 0 if probabilities[0] > probabilities[2] else 2
             strength = probabilities[favourite]
             if strength < args.min_prob:

@@ -28,6 +28,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
+from devig import power_devig, power_devig_map  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(REPO_ROOT, "model_validation", "half_full_probabilities.json")
@@ -72,7 +73,7 @@ def fetch_card() -> list[dict]:
                     odds[key] = value
             if len(odds) != 9:
                 continue
-            inverse = {k: 1.0 / v for k, v in odds.items()}
+            inverse = power_devig_map(odds) or {}
             total = sum(inverse.values())
             rows.append({
                 "num": item.get("matchNumStr"), "league": item.get("leagueAbbName"),

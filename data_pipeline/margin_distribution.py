@@ -29,6 +29,7 @@ import sys
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
+from devig import power_devig, power_devig_map  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(REPO_ROOT, "model_validation", "margin_distribution.json")
@@ -96,7 +97,7 @@ def main() -> int:
                     odds[key] = price
             if len(odds) < 20:
                 continue
-            inverse = {k: 1.0 / v for k, v in odds.items()}
+            inverse = power_devig_map(odds) or {}
             total = sum(inverse.values())
             probabilities = {k: v / total for k, v in inverse.items()}
 
@@ -153,8 +154,30 @@ def main() -> int:
                     else:
                         derived["让负"] += probability
 
+            # two-stage view: first the result, then the margin conditional on that result
+            p_home_win = sum(buckets[b] for b in ("主赢1", "主赢2", "主赢3", "主赢4+"))
+            p_draw = buckets["平局"]
+            p_away_win = sum(buckets[b] for b in ("客赢1", "客赢2", "客赢3", "客赢4+"))
+            if p_home_win >= p_away_win:
+                winner, winner_probability = "主胜", p_home_win
+                conditional = {b: (buckets[b] / p_home_win if p_home_win else 0)
+                               for b in ("主赢1", "主赢2", "主赢3", "主赢4+")}
+            else:
+                winner, winner_probability = "客胜", p_away_win
+                conditional = {b: (buckets[b] / p_away_win if p_away_win else 0)
+                               for b in ("客赢1", "客赢2", "客赢3", "客赢4+")}
+            draw_is_largest = p_draw > max(p_home_win, p_away_win)
+            conditional_sorted = sorted(conditional.items(), key=lambda kv: -kv[1])
+
             rows.append({
                 "line": line, "derived_handicap": derived,
+                "p_home_win": round(p_home_win, 4), "p_draw": round(p_draw, 4),
+                "p_away_win": round(p_away_win, 4),
+                "winner": winner, "winner_probability": round(winner_probability, 4),
+                "draw_is_largest": draw_is_largest,
+                "conditional_margins": {k: round(v, 4) for k, v in conditional_sorted},
+                "conditional_mode": conditional_sorted[0][0],
+                "conditional_mode_probability": round(conditional_sorted[0][1], 4),
                 "num": item.get("matchNumStr"), "league": league,
                 "home": item.get("homeTeamAbbName"), "away": item.get("awayTeamAbbName"),
                 "kickoff": f"{item.get('matchDate')} {item.get('matchTime')}",
@@ -182,8 +205,17 @@ def main() -> int:
         line2 = (f"平局 {100 * buckets['平局']:4.1f}%  客赢1 {100 * buckets['客赢1']:4.1f}%  "
                  f"客赢2 {100 * buckets['客赢2']:4.1f}%  客赢3 {100 * buckets['客赢3']:4.1f}%  "
                  f"客赢4+ {100 * buckets['客赢4+']:4.1f}%")
-        log(f"{row['num']} {row['league']} {row['home']}-{row['away']}")
-        log(f"  最可能: {row['mode']} {100 * row['mode_probability']:.1f}%")
+        log(f"{row['num']} {row['league']} {row['home']}-{row['away']}"
+            + (f"  让{row['line']:+.0f}" if row['line'] is not None else ""))
+        log(f"  ① 胜平负: 主胜 {100 * row['p_home_win']:.1f}%  平 {100 * row['p_draw']:.1f}%  "
+            f"客胜 {100 * row['p_away_win']:.1f}%  → {row['winner']} {100 * row['winner_probability']:.1f}%"
+            + ("  ⚠平局概率最高" if row['draw_is_largest'] else ""))
+        cond = row["conditional_margins"]
+        log("  ② 若" + row["winner"] + "，赢几球: "
+            + "  ".join(f"{k.replace('主赢', '赢').replace('客赢', '赢')} {100 * v:.1f}%"
+                        for k, v in cond.items())
+            + f"   → 最可能 {row['conditional_mode']} {100 * row['conditional_mode_probability']:.1f}%")
+        log(f"  参考(无条件): {row['mode']} {100 * row['mode_probability']:.1f}%")
         log(f"  {line}")
         log(f"  {line2}")
         if row["derived_handicap"]:

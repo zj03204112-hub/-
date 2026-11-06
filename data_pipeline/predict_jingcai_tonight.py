@@ -31,6 +31,7 @@ import sys
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from devig import power_devig, power_devig_map  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(REPO_ROOT, "data_pipeline"))
@@ -54,9 +55,7 @@ def fetch() -> dict:
 
 
 def devig(odds: list[float]) -> list[float]:
-    inverse = [1.0 / o for o in odds]
-    total = sum(inverse)
-    return [x / total for x in inverse]
+    return power_devig(values)
 
 
 def poisson(lam: float, n: int = 13) -> list[float]:
