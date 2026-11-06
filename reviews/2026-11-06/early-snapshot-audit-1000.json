@@ -1,0 +1,346 @@
+{
+  "run_date_beijing": "2026-11-06",
+  "as_of_beijing": "2026-11-06T11:04:14+08:00",
+  "scope": "supplemental review of current-Beijing-day early results; not part of the 2026-11-05 previous-day review",
+  "snapshot": {
+    "path": "model_validation/full_prediction.json",
+    "blob_sha": "d316bd75b623be40b55762d3d7be23f95c405f55",
+    "commit_sha": "fb439cea597599090703fa0ce06642606fa91152",
+    "generated_at_utc": "2026-11-05T11:14:49Z",
+    "generated_at_beijing": "2026-11-05T19:14:49+08:00",
+    "match_count": 9,
+    "model_version": "not_exposed_in_snapshot",
+    "qualifying_window": "All 9 fixtures were 6h30m11s or 8h45m11s after snapshot generation."
+  },
+  "results_batch": {
+    "confirmed_ft_count": 36,
+    "not_confirmed_ft_count": 1,
+    "uel_matches": 17,
+    "uecl_matches": 18,
+    "brazil_confirmed_ft_matches": 1
+  },
+  "coverage": {
+    "predicted_uel_matches": 9,
+    "uel_without_snapshot": 8,
+    "uecl_without_snapshot": 18
+  },
+  "metrics": {
+    "ninety_minute_result": {
+      "hit": 3,
+      "eligible": 9,
+      "rate": 0.3333333333333333
+    },
+    "first_score_exact": {
+      "hit": 1,
+      "eligible": 9,
+      "rate": 0.1111111111111111
+    },
+    "second_score_exact": {
+      "hit": 2,
+      "eligible": 9,
+      "rate": 0.2222222222222222
+    },
+    "top_two_score_exact": {
+      "hit": 3,
+      "eligible": 9,
+      "rate": 0.3333333333333333
+    },
+    "half_full_time": {
+      "hit": null,
+      "eligible": 0,
+      "unverifiable": 9
+    },
+    "official_jc_handicap": {
+      "hit": null,
+      "eligible": 0,
+      "unverifiable": 9
+    },
+    "risk_prompt": {
+      "hit": null,
+      "eligible": 0,
+      "unverifiable": 9
+    }
+  },
+  "handicap_note": "The snapshot contains a line field and identifies the hhad collector, but the raw hhad update timestamp is not exposed and SQLite was not queried. No official handicap settlement is calculated.",
+  "matches": [
+    {
+      "fixture_no": "周四006",
+      "home": "AC米兰",
+      "away": "费伦茨",
+      "kickoff_beijing": "2026-11-06 01:45:00",
+      "actual_score": "0-2",
+      "actual_1x2": "A",
+      "predicted_1x2": "H",
+      "probabilities_1x2": {
+        "home": 0.7106,
+        "draw": 0.1623,
+        "away": 0.1271
+      },
+      "first_score": "2-1",
+      "second_score": "2-0",
+      "first_score_hit": false,
+      "second_score_hit": false,
+      "top_two_score_hit": false,
+      "predicted_half_full_top": [
+        "胜胜",
+        0.5045
+      ],
+      "actual_half_full_status": "not_verified_from_current_early_result_record",
+      "official_jc_line_field": -1,
+      "official_jc_line_status": "not_independently_verified",
+      "handicap_result": null,
+      "risk_hit_status": "not_scored_no_structured_pre_match_risk_event_schema",
+      "result_source_urls": [
+        "https://www.uefa.com/uefaeuropaleague/fixtures-results/"
+      ]
+    },
+    {
+      "fixture_no": "周四012",
+      "home": "勒沃库森",
+      "away": "马赛",
+      "kickoff_beijing": "2026-11-06 04:00:00",
+      "actual_score": "0-1",
+      "actual_1x2": "A",
+      "predicted_1x2": "H",
+      "probabilities_1x2": {
+        "home": 0.7232,
+        "draw": 0.1546,
+        "away": 0.1222
+      },
+      "first_score": "2-1",
+      "second_score": "2-0",
+      "first_score_hit": false,
+      "second_score_hit": false,
+      "top_two_score_hit": false,
+      "predicted_half_full_top": [
+        "胜胜",
+        0.492
+      ],
+      "actual_half_full_status": "not_verified_from_current_early_result_record",
+      "official_jc_line_field": -1,
+      "official_jc_line_status": "not_independently_verified",
+      "handicap_result": null,
+      "risk_hit_status": "not_scored_no_structured_pre_match_risk_event_schema",
+      "result_source_urls": [
+        "https://www.uefa.com/uefaeuropaleague/fixtures-results/"
+      ]
+    },
+    {
+      "fixture_no": "周四003",
+      "home": "布斯巴达",
+      "away": "伯恩茅斯",
+      "kickoff_beijing": "2026-11-06 01:45:00",
+      "actual_score": "1-3",
+      "actual_1x2": "A",
+      "predicted_1x2": "A",
+      "probabilities_1x2": {
+        "home": 0.1328,
+        "draw": 0.1652,
+        "away": 0.7019
+      },
+      "first_score": "1-2",
+      "second_score": "0-2",
+      "first_score_hit": false,
+      "second_score_hit": false,
+      "top_two_score_hit": false,
+      "predicted_half_full_top": [
+        "负负",
+        0.4688
+      ],
+      "actual_half_full_status": "not_verified_from_current_early_result_record",
+      "official_jc_line_field": 1,
+      "official_jc_line_status": "not_independently_verified",
+      "handicap_result": null,
+      "risk_hit_status": "not_scored_no_structured_pre_match_risk_event_schema",
+      "result_source_urls": [
+        "https://www.uefa.com/uefaeuropaleague/fixtures-results/"
+      ]
+    },
+    {
+      "fixture_no": "周四008",
+      "home": "桑德兰",
+      "away": "萨迪纳摩",
+      "kickoff_beijing": "2026-11-06 04:00:00",
+      "actual_score": "0-2",
+      "actual_1x2": "A",
+      "predicted_1x2": "H",
+      "probabilities_1x2": {
+        "home": 0.6689,
+        "draw": 0.1837,
+        "away": 0.1474
+      },
+      "first_score": "2-0",
+      "second_score": "2-1",
+      "first_score_hit": false,
+      "second_score_hit": false,
+      "top_two_score_hit": false,
+      "predicted_half_full_top": [
+        "胜胜",
+        0.4337
+      ],
+      "actual_half_full_status": "not_verified_from_current_early_result_record",
+      "official_jc_line_field": -1,
+      "official_jc_line_status": "not_independently_verified",
+      "handicap_result": null,
+      "risk_hit_status": "not_scored_no_structured_pre_match_risk_event_schema",
+      "result_source_urls": [
+        "https://www.uefa.com/uefaeuropaleague/fixtures-results/"
+      ]
+    },
+    {
+      "fixture_no": "周四005",
+      "home": "皇家社会",
+      "away": "里昂",
+      "kickoff_beijing": "2026-11-06 01:45:00",
+      "actual_score": "1-1",
+      "actual_1x2": "D",
+      "predicted_1x2": "H",
+      "probabilities_1x2": {
+        "home": 0.5985,
+        "draw": 0.1996,
+        "away": 0.2019
+      },
+      "first_score": "2-1",
+      "second_score": "1-1",
+      "first_score_hit": false,
+      "second_score_hit": true,
+      "top_two_score_hit": true,
+      "predicted_half_full_top": [
+        "胜胜",
+        0.3708
+      ],
+      "actual_half_full_status": "not_verified_from_current_early_result_record",
+      "official_jc_line_field": -1,
+      "official_jc_line_status": "not_independently_verified",
+      "handicap_result": null,
+      "risk_hit_status": "not_scored_no_structured_pre_match_risk_event_schema",
+      "result_source_urls": [
+        "https://www.uefa.com/uefaeuropaleague/fixtures-results/"
+      ]
+    },
+    {
+      "fixture_no": "周四004",
+      "home": "奈梅亨",
+      "away": "奥莫尼亚",
+      "kickoff_beijing": "2026-11-06 01:45:00",
+      "actual_score": "3-1",
+      "actual_1x2": "H",
+      "predicted_1x2": "H",
+      "probabilities_1x2": {
+        "home": 0.5485,
+        "draw": 0.214,
+        "away": 0.2375
+      },
+      "first_score": "2-1",
+      "second_score": "1-1",
+      "first_score_hit": false,
+      "second_score_hit": false,
+      "top_two_score_hit": false,
+      "predicted_half_full_top": [
+        "胜胜",
+        0.3126
+      ],
+      "actual_half_full_status": "not_verified_from_current_early_result_record",
+      "official_jc_line_field": -1,
+      "official_jc_line_status": "not_independently_verified",
+      "handicap_result": null,
+      "risk_hit_status": "not_scored_no_structured_pre_match_risk_event_schema",
+      "result_source_urls": [
+        "https://www.uefa.com/uefaeuropaleague/fixtures-results/"
+      ]
+    },
+    {
+      "fixture_no": "周四011",
+      "home": "阿尔克马",
+      "away": "尤文图斯",
+      "kickoff_beijing": "2026-11-06 04:00:00",
+      "actual_score": "1-2",
+      "actual_1x2": "A",
+      "predicted_1x2": "A",
+      "probabilities_1x2": {
+        "home": 0.2787,
+        "draw": 0.2272,
+        "away": 0.4942
+      },
+      "first_score": "1-2",
+      "second_score": "1-1",
+      "first_score_hit": true,
+      "second_score_hit": false,
+      "top_two_score_hit": true,
+      "predicted_half_full_top": [
+        "负负",
+        0.2847
+      ],
+      "actual_half_full_status": "not_verified_from_current_early_result_record",
+      "official_jc_line_field": 1,
+      "official_jc_line_status": "not_independently_verified",
+      "handicap_result": null,
+      "risk_hit_status": "not_scored_no_structured_pre_match_risk_event_schema",
+      "result_source_urls": [
+        "https://www.uefa.com/uefaeuropaleague/fixtures-results/"
+      ]
+    },
+    {
+      "fixture_no": "周四002",
+      "home": "水晶宫",
+      "away": "霍芬海姆",
+      "kickoff_beijing": "2026-11-06 01:45:00",
+      "actual_score": "1-1",
+      "actual_1x2": "D",
+      "predicted_1x2": "H",
+      "probabilities_1x2": {
+        "home": 0.5147,
+        "draw": 0.2149,
+        "away": 0.2705
+      },
+      "first_score": "2-1",
+      "second_score": "1-1",
+      "first_score_hit": false,
+      "second_score_hit": true,
+      "top_two_score_hit": true,
+      "predicted_half_full_top": [
+        "胜胜",
+        0.2849
+      ],
+      "actual_half_full_status": "not_verified_from_current_early_result_record",
+      "official_jc_line_field": -1,
+      "official_jc_line_status": "not_independently_verified",
+      "handicap_result": null,
+      "risk_hit_status": "not_scored_no_structured_pre_match_risk_event_schema",
+      "result_source_urls": [
+        "https://www.uefa.com/uefaeuropaleague/fixtures-results/"
+      ]
+    },
+    {
+      "fixture_no": "周四009",
+      "home": "塞尔塔",
+      "away": "圣吉联合",
+      "kickoff_beijing": "2026-11-06 04:00:00",
+      "actual_score": "1-2",
+      "actual_1x2": "A",
+      "predicted_1x2": "H",
+      "probabilities_1x2": {
+        "home": 0.4306,
+        "draw": 0.2583,
+        "away": 0.3111
+      },
+      "first_score": "1-1",
+      "second_score": "2-1",
+      "first_score_hit": false,
+      "second_score_hit": false,
+      "top_two_score_hit": false,
+      "predicted_half_full_top": [
+        "胜胜",
+        0.1993
+      ],
+      "actual_half_full_status": "not_verified_from_current_early_result_record",
+      "official_jc_line_field": -1,
+      "official_jc_line_status": "not_independently_verified",
+      "handicap_result": null,
+      "risk_hit_status": "not_scored_no_structured_pre_match_risk_event_schema",
+      "result_source_urls": [
+        "https://www.uefa.com/uefaeuropaleague/fixtures-results/"
+      ]
+    }
+  ]
+}
