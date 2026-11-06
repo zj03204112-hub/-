@@ -1,0 +1,27 @@
+{
+  "date_beijing": "2026-11-06",
+  "iso_week": "2026-W45",
+  "matches_in_batch": 22,
+  "unique_teams": 44,
+  "matches_with_provider_xg": 5,
+  "matches_missing_provider_xg": 17,
+  "match_coverage_pct": 22.73,
+  "provider_model_estimate_sets": 6,
+  "provider_model_estimate_team_rows": 12,
+  "missing_team_match_rows": 34,
+  "measured_xg_sets": 0,
+  "self_model_estimate_sets": 0,
+  "source_discrepancy_matches": [
+    "Bristol City-Wolverhampton Wanderers"
+  ],
+  "xgd_arithmetic_errors": 0,
+  "duplicate_match_team_provider_keys": 0,
+  "provider_event_ids_present": 3,
+  "provider_event_ids_missing": 19,
+  "full_iso_week_complete": false,
+  "week_totals_published": false,
+  "week_per90_published": false,
+  "reason_week_totals_withheld": "未完成ISO第45周全部球队的周内赛程、比赛ID和供应商覆盖核对；周总xG/xGA/xGD及每90均值留空。",
+  "classification_correction": "已排除Flamengo的赛前预测投影、Botafogo的进行中部分xG及无法直接回读的搜索摘要；这些不计入全场比赛级xG覆盖。Sao Paulo的O Gol全场xG修正为1.25-1.06。",
+  "leakage_check": "未将赛后xG回填为同场赛前输入；所有保留值均标记provider_model_estimate，自有模型估算为空。"
+}
