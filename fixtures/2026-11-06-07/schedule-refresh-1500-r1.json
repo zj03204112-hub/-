@@ -1,0 +1,3083 @@
+{
+  "as_of_beijing": "2026-11-06T14:56:03+08:00",
+  "beijing_dates": [
+    "2026-11-06",
+    "2026-11-07"
+  ],
+  "timezone_rule": "所有开球时间保留UTC，并按UTC+08:00换算为北京时间；比赛按北京时间日期归档。",
+  "core_leagues": [
+    "Premier League",
+    "La Liga",
+    "Bundesliga",
+    "Serie A",
+    "Ligue 1",
+    "K League 1",
+    "J1 League"
+  ],
+  "additional_tracked": [
+    "EFL Championship",
+    "Primeira Liga",
+    "Eliteserien",
+    "Brazil Serie A",
+    "FA Cup",
+    "UEFA Champions League",
+    "UEFA Europa League",
+    "UEFA Conference League",
+    "AFC Champions League Two"
+  ],
+  "veikkausliiga_status": "本轮所查免费赛程来源未找到2026-11-06或2026-11-07的Veikkausliiga比赛。",
+  "current_day_early_results": {
+    "uefa_europa_league": 17,
+    "uefa_conference_league": 18,
+    "brazil_confirmed_ft": 1,
+    "brazil_not_confirmed_ft": 1,
+    "review_due": "2026-11-07 10:00"
+  },
+  "future_fixture_count": 79,
+  "prediction_window_candidates_at_1500": 5,
+  "matches": [
+    {
+      "match_id": "internal:2026-11-06:a-league:sydney-fc:central-coast-mariners",
+      "competition": "A-League Men",
+      "competition_type": "domestic_league",
+      "home": "Sydney FC",
+      "away": "Central Coast Mariners",
+      "kickoff_utc": "2026-11-06T08:40:00Z",
+      "kickoff_beijing": "2026-11-06T16:40:00+08:00",
+      "beijing_date": "2026-11-06",
+      "source_local_kickoff": "19:40",
+      "source_timezone": "AEDT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 1.67,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "official_jc_handicap_status": "not_verified",
+      "missing_fields": [
+        "official_jc_handicap",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "referee",
+        "prematch_xg",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://zx.500star.com/jczq/worth/",
+        "https://zq.gzpxm.cn/articles/daily/2026-11-06"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:2-bundesliga:eintracht-braunschweig:energie-cottbus",
+      "competition": "2. Bundesliga",
+      "competition_type": "domestic_league",
+      "home": "Eintracht Braunschweig",
+      "away": "Energie Cottbus",
+      "kickoff_utc": "2026-11-06T17:30:00Z",
+      "kickoff_beijing": "2026-11-07T01:30:00+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "18:30",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 10.5,
+      "prediction_window_at_1500": true,
+      "official_jc_handicap": null,
+      "official_jc_handicap_status": "not_verified",
+      "third_party_jc_mirror_line": {
+        "handicap": -1,
+        "source": "500star/乐彩网镜像",
+        "verified_official": false
+      },
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_market_timestamp",
+        "confirmed_starting_lineups",
+        "weather",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://zx.500star.com/jczq/worth/",
+        "https://m.17500.cn/zq/match/bonus-4566624-101",
+        "https://footypulse.org/matches/2-bundesliga/eintracht-braunschweig-vs-energie-cottbus-2026-11-06"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:allsvenskan:hammarby:elfsborg",
+      "competition": "Allsvenskan",
+      "competition_type": "domestic_league",
+      "home": "Hammarby",
+      "away": "Elfsborg",
+      "kickoff_utc": "2026-11-06T18:00:00Z",
+      "kickoff_beijing": "2026-11-07T02:00:00+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "19:00",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 11,
+      "prediction_window_at_1500": true,
+      "official_jc_handicap": null,
+      "official_jc_handicap_status": "not_verified",
+      "third_party_jc_mirror_line": {
+        "handicap": -1,
+        "source": "500star/乐彩网镜像",
+        "verified_official": false
+      },
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_market_timestamp",
+        "confirmed_starting_lineups",
+        "referee",
+        "next_opponent_motivation"
+      ],
+      "source_urls": [
+        "https://zx.500star.com/jczq/worth/",
+        "https://m.17500.cn/zq/match/bonus-4467221-101",
+        "https://xg.football/matches/hammarby-ff-if-elfsborg-2026-11-06"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:ligue-2:montpellier:metz",
+      "competition": "Ligue 2",
+      "competition_type": "domestic_league",
+      "home": "Montpellier",
+      "away": "Metz",
+      "kickoff_utc": "2026-11-06T19:00:00Z",
+      "kickoff_beijing": "2026-11-07T03:00:00+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "20:00",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 12,
+      "prediction_window_at_1500": true,
+      "official_jc_handicap": null,
+      "official_jc_handicap_status": "not_verified",
+      "third_party_jc_mirror_line": {
+        "handicap": -1,
+        "source": "500star/乐彩网镜像",
+        "verified_official": false
+      },
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_market_timestamp",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "weather",
+        "next_opponent_motivation"
+      ],
+      "source_urls": [
+        "https://zx.500star.com/jczq/worth/",
+        "https://m.17500.cn/zq/match/bonus-4553239-101",
+        "https://fulltimestats.com/match/montpellier-vs-metz-2026-11-06"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:eredivisie:willem-ii:pec-zwolle",
+      "competition": "Eredivisie",
+      "competition_type": "domestic_league",
+      "home": "Willem II",
+      "away": "PEC Zwolle",
+      "kickoff_utc": "2026-11-06T19:00:00Z",
+      "kickoff_beijing": "2026-11-07T03:00:00+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "20:00",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 12,
+      "prediction_window_at_1500": true,
+      "official_jc_handicap": null,
+      "official_jc_handicap_status": "not_verified",
+      "third_party_jc_mirror_line": {
+        "handicap": 1,
+        "source": "500star/乐彩网镜像",
+        "verified_official": false
+      },
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_market_timestamp",
+        "confirmed_starting_lineups",
+        "referee",
+        "weather",
+        "next_opponent_motivation"
+      ],
+      "source_urls": [
+        "https://zx.500star.com/jczq/worth/",
+        "https://m.17500.cn/zq/match/bonus-4552246-101",
+        "https://lineupstoday.com/eredivisie/willem-ii-pec-zwolle-06-11-2026/",
+        "https://oddalerts.com/livescores/pec-zwolle-vs-willem-ii/9699-9547"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:eerste-divisie:top-oss:rkc-waalwijk",
+      "competition": "Eerste Divisie",
+      "competition_type": "domestic_league",
+      "home": "TOP Oss",
+      "away": "RKC Waalwijk",
+      "kickoff_utc": "2026-11-06T19:00:00Z",
+      "kickoff_beijing": "2026-11-07T03:00:00+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "20:00",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 12,
+      "prediction_window_at_1500": true,
+      "official_jc_handicap": null,
+      "official_jc_handicap_status": "not_verified",
+      "third_party_jc_mirror_line": {
+        "handicap": 1,
+        "source": "500star/乐彩网镜像",
+        "verified_official": false
+      },
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_market_timestamp",
+        "confirmed_starting_lineups",
+        "referee",
+        "next_opponent_motivation"
+      ],
+      "source_urls": [
+        "https://zx.500star.com/jczq/worth/",
+        "https://m.17500.cn/zq/match/bonus-4551902-404",
+        "https://lineupstoday.com/eerste-divisie/top-oss-rkc-waalwijk-06-11-2026/",
+        "https://xg.football/matches/fc-oss-waalwijk-2026-11-06"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:bundesliga:hamburger-sv:borussia-monchengladbach",
+      "competition": "Bundesliga",
+      "competition_type": "domestic_league",
+      "home": "Hamburger SV",
+      "away": "Borussia Monchengladbach",
+      "kickoff_utc": "2026-11-06T19:30:00Z",
+      "kickoff_beijing": "2026-11-07T03:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "20:30",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 12.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.bundesliga.com/en/bundesliga/matchday"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:bristol-rovers:cambridge-united",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Bristol Rovers",
+      "away": "Cambridge United",
+      "kickoff_utc": "2026-11-06T19:30:00Z",
+      "kickoff_beijing": "2026-11-07T03:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "19:30",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 12.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:serie-a:venezia:udinese",
+      "competition": "Serie A",
+      "competition_type": "domestic_league",
+      "home": "Venezia",
+      "away": "Udinese",
+      "kickoff_utc": "2026-11-06T19:45:00Z",
+      "kickoff_beijing": "2026-11-07T03:45:00+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "20:45",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 12.75,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.udinese.it/news/squad/udineses-october-and-november-fixtures",
+        "https://www.veneziafc.it/news/serie-a-enilive-la-designazione-arbitrale-per-venezia-fc-udinese",
+        "https://en.legaseriea.it/serie-a/fixtures-results"
+      ],
+      "time_correction_note": "Official club/league fixture confirms 20:45 CET = 19:45 UTC = 03:45 Beijing; previous schedule used 18:45 UTC and was one hour early."
+    },
+    {
+      "match_id": "internal:2026-11-07:ligue-1:toulouse:strasbourg",
+      "competition": "Ligue 1",
+      "competition_type": "domestic_league",
+      "home": "Toulouse",
+      "away": "Strasbourg",
+      "kickoff_utc": "2026-11-06T19:45:00Z",
+      "kickoff_beijing": "2026-11-07T03:45:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "20:45",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 12.75,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://ligue1.com/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:oxford-city:leicester-city",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Oxford City",
+      "away": "Leicester City",
+      "kickoff_utc": "2026-11-06T19:45:00Z",
+      "kickoff_beijing": "2026-11-07T03:45:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "19:45",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 12.75,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:premier-league:everton:coventry-city",
+      "competition": "Premier League",
+      "competition_type": "domestic_league",
+      "home": "Everton",
+      "away": "Coventry City",
+      "kickoff_utc": "2026-11-06T20:00:00Z",
+      "kickoff_beijing": "2026-11-07T04:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "20:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 13,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.premierleague.com/en/fixtures"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:la-liga:sevilla:alaves",
+      "competition": "La Liga",
+      "competition_type": "domestic_league",
+      "home": "Sevilla",
+      "away": "Alaves",
+      "kickoff_utc": "2026-11-06T20:00:00Z",
+      "kickoff_beijing": "2026-11-07T04:00:00+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "21:00",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 13,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://sevillafc.es/actualidad/noticias/horario-sevilla-alaves-j12-laliga-2627",
+        "https://www.laliga.com/en-NL/match/temporada-2026-2027-laliga-ea-sports-sevilla-fc-deportivo-alaves-12"
+      ],
+      "time_correction_note": "Official club confirms 21:00 CET = 20:00 UTC = 04:00 Beijing; previous schedule used 19:00 UTC and was one hour early."
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:derby-county:bolton-wanderers",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "Derby County",
+      "away": "Bolton Wanderers",
+      "kickoff_utc": "2026-11-06T20:00:00Z",
+      "kickoff_beijing": "2026-11-07T04:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "20:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 13,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:primeira-liga:famalicao:arouca",
+      "competition": "Primeira Liga",
+      "competition_type": "domestic_league",
+      "home": "Famalicao",
+      "away": "Arouca",
+      "kickoff_utc": "2026-11-06T20:45:00Z",
+      "kickoff_beijing": "2026-11-07T04:45:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "20:45",
+      "source_timezone": "WET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 13.75,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.footballwebpages.co.uk/portuguese-primeira-liga/fixtures-results"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:brazil-serie-a:vitoria:fluminense",
+      "competition": "Brazil Serie A",
+      "competition_type": "domestic_league",
+      "home": "Vitoria",
+      "away": "Fluminense",
+      "kickoff_utc": "2026-11-06T23:00:00Z",
+      "kickoff_beijing": "2026-11-07T07:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "20:00",
+      "source_timezone": "BRT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 16,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://matchscan.co/en/matches/brasileirao"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:shimizu-s-pulse:tokyo-verdy",
+      "competition": "J1 League",
+      "competition_type": "domestic_league",
+      "home": "Shimizu S-Pulse",
+      "away": "Tokyo Verdy",
+      "kickoff_utc": "2026-11-07T04:00:00Z",
+      "kickoff_beijing": "2026-11-07T12:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "13:00 JST",
+      "source_timezone": "JST",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 21,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.jleague.jp/en/j1/match/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:k-league-1:jeju-sk:gwangju-fc",
+      "competition": "K League 1",
+      "competition_type": "domestic_league",
+      "home": "Jeju SK",
+      "away": "Gwangju FC",
+      "kickoff_utc": "2026-11-07T05:00:00Z",
+      "kickoff_beijing": "2026-11-07T13:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "05:00",
+      "source_timezone": "UTC",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 22,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://tv.kleague.com/en-int/page/k-league-1"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:yokohama-f-marinos:fagiano-okayama",
+      "competition": "J1 League",
+      "competition_type": "domestic_league",
+      "home": "Yokohama F. Marinos",
+      "away": "Fagiano Okayama",
+      "kickoff_utc": "2026-11-07T05:00:00Z",
+      "kickoff_beijing": "2026-11-07T13:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "14:00 JST",
+      "source_timezone": "JST",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 22,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.jleague.jp/en/j1/match/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:nagoya-grampus:kyoto-sanga",
+      "competition": "J1 League",
+      "competition_type": "domestic_league",
+      "home": "Nagoya Grampus",
+      "away": "Kyoto Sanga",
+      "kickoff_utc": "2026-11-07T05:00:00Z",
+      "kickoff_beijing": "2026-11-07T13:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "14:00 JST",
+      "source_timezone": "JST",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 22,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.jleague.jp/en/j1/match/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:fc-tokyo:kashima-antlers",
+      "competition": "J1 League",
+      "competition_type": "domestic_league",
+      "home": "FC Tokyo",
+      "away": "Kashima Antlers",
+      "kickoff_utc": "2026-11-07T06:00:00Z",
+      "kickoff_beijing": "2026-11-07T14:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00 JST",
+      "source_timezone": "JST",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 23,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.jleague.jp/en/j1/match/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:avispa-fukuoka:v-varen-nagasaki",
+      "competition": "J1 League",
+      "competition_type": "domestic_league",
+      "home": "Avispa Fukuoka",
+      "away": "V-Varen Nagasaki",
+      "kickoff_utc": "2026-11-07T06:00:00Z",
+      "kickoff_beijing": "2026-11-07T14:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00 JST",
+      "source_timezone": "JST",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 23,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.jleague.jp/en/j1/match/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:kashiwa-reysol:kawasaki-frontale",
+      "competition": "J1 League",
+      "competition_type": "domestic_league",
+      "home": "Kashiwa Reysol",
+      "away": "Kawasaki Frontale",
+      "kickoff_utc": "2026-11-07T07:00:00Z",
+      "kickoff_beijing": "2026-11-07T15:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "16:00 JST",
+      "source_timezone": "JST",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 24,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.jleague.jp/en/j1/match/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:k-league-1:gimcheon-sangmu:fc-anyang",
+      "competition": "K League 1",
+      "competition_type": "domestic_league",
+      "home": "Gimcheon Sangmu",
+      "away": "FC Anyang",
+      "kickoff_utc": "2026-11-07T07:30:00Z",
+      "kickoff_beijing": "2026-11-07T15:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "07:30",
+      "source_timezone": "UTC",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 24.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://tv.kleague.com/en-int/page/k-league-1"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:premier-league:leeds-united:tottenham-hotspur",
+      "competition": "Premier League",
+      "competition_type": "domestic_league",
+      "home": "Leeds United",
+      "away": "Tottenham Hotspur",
+      "kickoff_utc": "2026-11-07T12:30:00Z",
+      "kickoff_beijing": "2026-11-07T20:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "12:30",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 29.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.premierleague.com/en/fixtures"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:bristol-city:norwich-city",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "Bristol City",
+      "away": "Norwich City",
+      "kickoff_utc": "2026-11-07T12:30:00Z",
+      "kickoff_beijing": "2026-11-07T20:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "12:30",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 29.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:portsmouth:stoke-city",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "Portsmouth",
+      "away": "Stoke City",
+      "kickoff_utc": "2026-11-07T12:30:00Z",
+      "kickoff_beijing": "2026-11-07T20:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "12:30",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 29.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:wrexham:wolverhampton-wanderers",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "Wrexham",
+      "away": "Wolverhampton Wanderers",
+      "kickoff_utc": "2026-11-07T12:30:00Z",
+      "kickoff_beijing": "2026-11-07T20:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "12:30",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 29.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:la-liga:malaga:racing-santander",
+      "competition": "La Liga",
+      "competition_type": "domestic_league",
+      "home": "Malaga",
+      "away": "Racing Santander",
+      "kickoff_utc": "2026-11-07T13:00:00Z",
+      "kickoff_beijing": "2026-11-07T21:00:00+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "14:00",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 30,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.laliga.com/en-US/laliga-easports"
+      ],
+      "time_correction_note": "LaLiga/club source confirms 14:00 CET = 13:00 UTC = 21:00 Beijing."
+    },
+    {
+      "match_id": "internal:2026-11-07:serie-a:cagliari:frosinone",
+      "competition": "Serie A",
+      "competition_type": "domestic_league",
+      "home": "Cagliari",
+      "away": "Frosinone",
+      "kickoff_utc": "2026-11-07T13:00:00Z",
+      "kickoff_beijing": "2026-11-07T21:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "14:00",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 30,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://en.legaseriea.it/serie-a/fixtures-results"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:serie-a:torino:lecce",
+      "competition": "Serie A",
+      "competition_type": "domestic_league",
+      "home": "Torino",
+      "away": "Lecce",
+      "kickoff_utc": "2026-11-07T13:00:00Z",
+      "kickoff_beijing": "2026-11-07T21:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "14:00",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 30,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://en.legaseriea.it/serie-a/fixtures-results"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:bundesliga:borussia-dortmund:sv-elversberg",
+      "competition": "Bundesliga",
+      "competition_type": "domestic_league",
+      "home": "Borussia Dortmund",
+      "away": "SV Elversberg",
+      "kickoff_utc": "2026-11-07T13:30:00Z",
+      "kickoff_beijing": "2026-11-07T21:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "14:30",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 30.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.bundesliga.com/en/bundesliga/matchday"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:bundesliga:rb-leipzig:fc-augsburg",
+      "competition": "Bundesliga",
+      "competition_type": "domestic_league",
+      "home": "RB Leipzig",
+      "away": "FC Augsburg",
+      "kickoff_utc": "2026-11-07T13:30:00Z",
+      "kickoff_beijing": "2026-11-07T21:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "14:30",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 30.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.bundesliga.com/en/bundesliga/matchday"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:bundesliga:mainz-05:bayern-munich",
+      "competition": "Bundesliga",
+      "competition_type": "domestic_league",
+      "home": "Mainz 05",
+      "away": "Bayern Munich",
+      "kickoff_utc": "2026-11-07T13:30:00Z",
+      "kickoff_beijing": "2026-11-07T21:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "14:30",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 30.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.bundesliga.com/en/bundesliga/matchday"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:bundesliga:sc-paderborn-07:eintracht-frankfurt",
+      "competition": "Bundesliga",
+      "competition_type": "domestic_league",
+      "home": "SC Paderborn 07",
+      "away": "Eintracht Frankfurt",
+      "kickoff_utc": "2026-11-07T13:30:00Z",
+      "kickoff_beijing": "2026-11-07T21:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "14:30",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 30.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.bundesliga.com/en/bundesliga/matchday"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:la-liga:espanyol:deportivo-la-coruna",
+      "competition": "La Liga",
+      "competition_type": "domestic_league",
+      "home": "Espanyol",
+      "away": "Deportivo La Coruna",
+      "kickoff_utc": "2026-11-07T14:15:00Z",
+      "kickoff_beijing": "2026-11-07T22:15:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:15",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 31.25,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.laliga.com/en-US/laliga-easports"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:premier-league:arsenal:hull-city",
+      "competition": "Premier League",
+      "competition_type": "domestic_league",
+      "home": "Arsenal",
+      "away": "Hull City",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.premierleague.com/en/fixtures"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:premier-league:fulham:newcastle-united",
+      "competition": "Premier League",
+      "competition_type": "domestic_league",
+      "home": "Fulham",
+      "away": "Newcastle United",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.premierleague.com/en/fixtures"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:birmingham-city:swansea-city",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "Birmingham City",
+      "away": "Swansea City",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:blackburn-rovers:west-ham-united",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "Blackburn Rovers",
+      "away": "West Ham United",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:cardiff-city:burnley",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "Cardiff City",
+      "away": "Burnley",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:charlton-athletic:sheffield-united",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "Charlton Athletic",
+      "away": "Sheffield United",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:preston-north-end:southampton",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "Preston North End",
+      "away": "Southampton",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:queens-park-rangers:lincoln-city",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "Queens Park Rangers",
+      "away": "Lincoln City",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:watford:middlesbrough",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "Watford",
+      "away": "Middlesbrough",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:west-bromwich-albion:millwall",
+      "competition": "EFL Championship",
+      "competition_type": "domestic_league",
+      "home": "West Bromwich Albion",
+      "away": "Millwall",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.efl.com/competitions/efl-championship/fixtures/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:eliteserien:kristiansund:valerenga",
+      "competition": "Eliteserien",
+      "competition_type": "domestic_league",
+      "home": "Kristiansund",
+      "away": "Valerenga",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "16:00",
+      "source_timezone": "CET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.eliteserien.no/terminliste/"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:dover-athletic:wealdstone",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Dover Athletic",
+      "away": "Wealdstone",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:mansfield-town:macclesfield",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Mansfield Town",
+      "away": "Macclesfield",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:huddersfield-town:exeter-city",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Huddersfield Town",
+      "away": "Exeter City",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:luton-town:forest-green-rovers",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Luton Town",
+      "away": "Forest Green Rovers",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:kidderminster-harriers:doncaster-rovers",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Kidderminster Harriers",
+      "away": "Doncaster Rovers",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:leyton-orient:harborough-town",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Leyton Orient",
+      "away": "Harborough Town",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:accrington-stanley:wycombe-wanderers",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Accrington Stanley",
+      "away": "Wycombe Wanderers",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:milton-keynes-dons:swindon-town",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Milton Keynes Dons",
+      "away": "Swindon Town",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:newport-county:walsall",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Newport County",
+      "away": "Walsall",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:bromley:rotherham-united",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Bromley",
+      "away": "Rotherham United",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:barnet:tranmere-rovers",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Barnet",
+      "away": "Tranmere Rovers",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:fleetwood-town:rochdale",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Fleetwood Town",
+      "away": "Rochdale",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:barnsley:aldershot-town",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Barnsley",
+      "away": "Aldershot Town",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:chesterfield:yeovil-town",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Chesterfield",
+      "away": "Yeovil Town",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:gillingham:barrow",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Gillingham",
+      "away": "Barrow",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:harrogate-town:afc-fylde",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Harrogate Town",
+      "away": "AFC Fylde",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:crewe-alexandra:afc-wimbledon",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Crewe Alexandra",
+      "away": "AFC Wimbledon",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:oxford-united:stevenage",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Oxford United",
+      "away": "Stevenage",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:burton-albion:afc-rushden-diamonds",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Burton Albion",
+      "away": "AFC Rushden & Diamonds",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:port-vale:scunthorpe-united",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Port Vale",
+      "away": "Scunthorpe United",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:cheltenham-town:fc-halifax-town",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Cheltenham Town",
+      "away": "FC Halifax Town",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:colchester-united:worcester-city",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Colchester United",
+      "away": "Worcester City",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:eastleigh:shrewsbury-town",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Eastleigh",
+      "away": "Shrewsbury Town",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:plymouth-argyle:alvechurch",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Plymouth Argyle",
+      "away": "Alvechurch",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:hornchurch:blackpool",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Hornchurch",
+      "away": "Blackpool",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:guiseley-afc:sutton-united",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Guiseley AFC",
+      "away": "Sutton United",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:bradford-city:marine",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Bradford City",
+      "away": "Marine",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:york-city:northampton-town",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "York City",
+      "away": "Northampton Town",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:boreham-wood:wigan-athletic",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Boreham Wood",
+      "away": "Wigan Athletic",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:carlisle-united:salford-city",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Carlisle United",
+      "away": "Salford City",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:salisbury:sholing",
+      "competition": "FA Cup",
+      "competition_type": "domestic_cup",
+      "home": "Salisbury",
+      "away": "Sholing",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "kickoff_beijing": "2026-11-07T23:00:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:00",
+      "source_timezone": "GMT",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.thefa.com/competitions/thefacup/fixtures?sc_lid=336717822&sc_uid=3naymIntQr"
+      ]
+    },
+    {
+      "match_id": "internal:2026-11-07:primeira-liga:nacional:academico-de-viseu",
+      "competition": "Primeira Liga",
+      "competition_type": "domestic_league",
+      "home": "Nacional",
+      "away": "Academico de Viseu",
+      "kickoff_utc": "2026-11-07T15:30:00Z",
+      "kickoff_beijing": "2026-11-07T23:30:00.000+08:00",
+      "beijing_date": "2026-11-07",
+      "source_local_kickoff": "15:30",
+      "source_timezone": "WET",
+      "status": "scheduled",
+      "hours_from_2026_11_06_1500": 32.5,
+      "prediction_window_at_1500": false,
+      "official_jc_handicap": null,
+      "missing_fields": [
+        "official_jc_handicap",
+        "opening_to_live_odds_history",
+        "confirmed_starting_lineups",
+        "verified_injuries",
+        "last3_form",
+        "tactics",
+        "weather",
+        "referee",
+        "prematch_supplier_xg",
+        "player_form",
+        "news",
+        "schedule_motivation_next_opponent"
+      ],
+      "source_urls": [
+        "https://www.footballwebpages.co.uk/portuguese-primeira-liga/fixtures-results"
+      ]
+    }
+  ],
+  "time_correction_note": "r2 corrects Sevilla-Alaves and Venezia-Udinese UTC offsets from official club/league schedules. Both move beyond 12 hours from 15:00 Beijing; current confirmed candidate count is zero.",
+  "authoritative_revision": "r2",
+  "refresh_note": "15:00批次于14:56:03+08:00预刷新；基于10:00已核验的73场次日赛程，新增6场当日/次日竞彩赛程，去重后79场。所有UTC与北京时间分开保存。",
+  "current_day_and_next_day_refresh": {
+    "date_range_beijing": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "prior_10am_schedule": "fixtures/2026-11-06-07/schedule-r2.json",
+    "newly_added_fixtures": 6,
+    "newly_added_window_candidates": 5,
+    "window_rule": "6 <= hours_to_kickoff <= 12",
+    "official_jc_original_site": "unavailable_or_unverified",
+    "third_party_jc_mirror": "500彩票网/乐彩网; reference only, not treated as official"
+  },
+  "prediction_window_match_ids": [
+    "internal:2026-11-07:2-bundesliga:eintracht-braunschweig:energie-cottbus",
+    "internal:2026-11-07:allsvenskan:hammarby:elfsborg",
+    "internal:2026-11-07:ligue-2:montpellier:metz",
+    "internal:2026-11-07:eredivisie:willem-ii:pec-zwolle",
+    "internal:2026-11-07:eerste-divisie:top-oss:rkc-waalwijk"
+  ],
+  "matches_checked_but_outside_window": [
+    {
+      "match_id": "internal:2026-11-06:a-league:sydney-fc:central-coast-mariners",
+      "hours_from_2026_11_06_1500": 1.67,
+      "beijing_kickoff": "2026-11-06T16:40:00+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:bundesliga:hamburger-sv:borussia-monchengladbach",
+      "hours_from_2026_11_06_1500": 12.5,
+      "beijing_kickoff": "2026-11-07T03:30:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:bristol-rovers:cambridge-united",
+      "hours_from_2026_11_06_1500": 12.5,
+      "beijing_kickoff": "2026-11-07T03:30:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:serie-a:venezia:udinese",
+      "hours_from_2026_11_06_1500": 12.75,
+      "beijing_kickoff": "2026-11-07T03:45:00+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:ligue-1:toulouse:strasbourg",
+      "hours_from_2026_11_06_1500": 12.75,
+      "beijing_kickoff": "2026-11-07T03:45:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:oxford-city:leicester-city",
+      "hours_from_2026_11_06_1500": 12.75,
+      "beijing_kickoff": "2026-11-07T03:45:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:premier-league:everton:coventry-city",
+      "hours_from_2026_11_06_1500": 13,
+      "beijing_kickoff": "2026-11-07T04:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:la-liga:sevilla:alaves",
+      "hours_from_2026_11_06_1500": 13,
+      "beijing_kickoff": "2026-11-07T04:00:00+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:derby-county:bolton-wanderers",
+      "hours_from_2026_11_06_1500": 13,
+      "beijing_kickoff": "2026-11-07T04:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:primeira-liga:famalicao:arouca",
+      "hours_from_2026_11_06_1500": 13.75,
+      "beijing_kickoff": "2026-11-07T04:45:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:brazil-serie-a:vitoria:fluminense",
+      "hours_from_2026_11_06_1500": 16,
+      "beijing_kickoff": "2026-11-07T07:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:shimizu-s-pulse:tokyo-verdy",
+      "hours_from_2026_11_06_1500": 21,
+      "beijing_kickoff": "2026-11-07T12:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:k-league-1:jeju-sk:gwangju-fc",
+      "hours_from_2026_11_06_1500": 22,
+      "beijing_kickoff": "2026-11-07T13:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:yokohama-f-marinos:fagiano-okayama",
+      "hours_from_2026_11_06_1500": 22,
+      "beijing_kickoff": "2026-11-07T13:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:nagoya-grampus:kyoto-sanga",
+      "hours_from_2026_11_06_1500": 22,
+      "beijing_kickoff": "2026-11-07T13:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:fc-tokyo:kashima-antlers",
+      "hours_from_2026_11_06_1500": 23,
+      "beijing_kickoff": "2026-11-07T14:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:avispa-fukuoka:v-varen-nagasaki",
+      "hours_from_2026_11_06_1500": 23,
+      "beijing_kickoff": "2026-11-07T14:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:j1-league:kashiwa-reysol:kawasaki-frontale",
+      "hours_from_2026_11_06_1500": 24,
+      "beijing_kickoff": "2026-11-07T15:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:k-league-1:gimcheon-sangmu:fc-anyang",
+      "hours_from_2026_11_06_1500": 24.5,
+      "beijing_kickoff": "2026-11-07T15:30:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:premier-league:leeds-united:tottenham-hotspur",
+      "hours_from_2026_11_06_1500": 29.5,
+      "beijing_kickoff": "2026-11-07T20:30:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:bristol-city:norwich-city",
+      "hours_from_2026_11_06_1500": 29.5,
+      "beijing_kickoff": "2026-11-07T20:30:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:portsmouth:stoke-city",
+      "hours_from_2026_11_06_1500": 29.5,
+      "beijing_kickoff": "2026-11-07T20:30:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:wrexham:wolverhampton-wanderers",
+      "hours_from_2026_11_06_1500": 29.5,
+      "beijing_kickoff": "2026-11-07T20:30:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:la-liga:malaga:racing-santander",
+      "hours_from_2026_11_06_1500": 30,
+      "beijing_kickoff": "2026-11-07T21:00:00+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:serie-a:cagliari:frosinone",
+      "hours_from_2026_11_06_1500": 30,
+      "beijing_kickoff": "2026-11-07T21:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:serie-a:torino:lecce",
+      "hours_from_2026_11_06_1500": 30,
+      "beijing_kickoff": "2026-11-07T21:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:bundesliga:borussia-dortmund:sv-elversberg",
+      "hours_from_2026_11_06_1500": 30.5,
+      "beijing_kickoff": "2026-11-07T21:30:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:bundesliga:rb-leipzig:fc-augsburg",
+      "hours_from_2026_11_06_1500": 30.5,
+      "beijing_kickoff": "2026-11-07T21:30:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:bundesliga:mainz-05:bayern-munich",
+      "hours_from_2026_11_06_1500": 30.5,
+      "beijing_kickoff": "2026-11-07T21:30:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:bundesliga:sc-paderborn-07:eintracht-frankfurt",
+      "hours_from_2026_11_06_1500": 30.5,
+      "beijing_kickoff": "2026-11-07T21:30:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:la-liga:espanyol:deportivo-la-coruna",
+      "hours_from_2026_11_06_1500": 31.25,
+      "beijing_kickoff": "2026-11-07T22:15:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:premier-league:arsenal:hull-city",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:premier-league:fulham:newcastle-united",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:birmingham-city:swansea-city",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:blackburn-rovers:west-ham-united",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:cardiff-city:burnley",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:charlton-athletic:sheffield-united",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:preston-north-end:southampton",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:queens-park-rangers:lincoln-city",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:watford:middlesbrough",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:efl-championship:west-bromwich-albion:millwall",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:eliteserien:kristiansund:valerenga",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:dover-athletic:wealdstone",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:mansfield-town:macclesfield",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:huddersfield-town:exeter-city",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:luton-town:forest-green-rovers",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:kidderminster-harriers:doncaster-rovers",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:leyton-orient:harborough-town",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:accrington-stanley:wycombe-wanderers",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:milton-keynes-dons:swindon-town",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:newport-county:walsall",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:bromley:rotherham-united",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:barnet:tranmere-rovers",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:fleetwood-town:rochdale",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:barnsley:aldershot-town",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:chesterfield:yeovil-town",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:gillingham:barrow",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:harrogate-town:afc-fylde",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:crewe-alexandra:afc-wimbledon",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:oxford-united:stevenage",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:burton-albion:afc-rushden-diamonds",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:port-vale:scunthorpe-united",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:cheltenham-town:fc-halifax-town",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:colchester-united:worcester-city",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:eastleigh:shrewsbury-town",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:plymouth-argyle:alvechurch",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:hornchurch:blackpool",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:guiseley-afc:sutton-united",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:bradford-city:marine",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:york-city:northampton-town",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:boreham-wood:wigan-athletic",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:carlisle-united:salford-city",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:fa-cup:salisbury:sholing",
+      "hours_from_2026_11_06_1500": 32,
+      "beijing_kickoff": "2026-11-07T23:00:00.000+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:primeira-liga:nacional:academico-de-viseu",
+      "hours_from_2026_11_06_1500": 32.5,
+      "beijing_kickoff": "2026-11-07T23:30:00.000+08:00"
+    }
+  ],
+  "revision": "r1",
+  "supersedes": "fixtures/2026-11-06-07/schedule-refresh-1500.json",
+  "correction_note": "修正首版中的列表字段命名错误：5场预测窗口候选不属于窗口外比赛。原始首版保留不可变；本r1作为有效赛程快照。",
+  "outside_window_fixture_count": 74,
+  "prediction_window_candidates": [
+    {
+      "match_id": "internal:2026-11-07:2-bundesliga:eintracht-braunschweig:energie-cottbus",
+      "hours_from_2026_11_06_1500": 10.5,
+      "beijing_kickoff": "2026-11-07T01:30:00+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:allsvenskan:hammarby:elfsborg",
+      "hours_from_2026_11_06_1500": 11,
+      "beijing_kickoff": "2026-11-07T02:00:00+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:ligue-2:montpellier:metz",
+      "hours_from_2026_11_06_1500": 12,
+      "beijing_kickoff": "2026-11-07T03:00:00+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:eredivisie:willem-ii:pec-zwolle",
+      "hours_from_2026_11_06_1500": 12,
+      "beijing_kickoff": "2026-11-07T03:00:00+08:00"
+    },
+    {
+      "match_id": "internal:2026-11-07:eerste-divisie:top-oss:rkc-waalwijk",
+      "hours_from_2026_11_06_1500": 12,
+      "beijing_kickoff": "2026-11-07T03:00:00+08:00"
+    }
+  ]
+}
