@@ -1,0 +1,90 @@
+{
+  "run_date_beijing": "2026-11-06",
+  "batch": "15:00",
+  "branch": "automation/daily-football-2026-11-06-1500",
+  "status": "committed_and_readback_verified",
+  "base_branch": "automation/daily-football-2026-11-06-1000",
+  "files": [
+    {
+      "path": "fixtures/2026-11-06-07/schedule-refresh-1500-r1.json",
+      "status": "created_and_readback_verified",
+      "commit_sha": "241885c8dcafd9097b8d285d59acc5ae804fc267"
+    },
+    {
+      "path": "predictions/domestic-league/2-bundesliga/2026-11-07/research-poisson-external-xg-v1.0-1500-braunschweig-cottbus.json",
+      "status": "created_and_readback_verified",
+      "commit_sha": "8c44fb6a1a96032582fcab6e806019da23088260"
+    },
+    {
+      "path": "predictions/domestic-league/allsvenskan/2026-11-07/research-poisson-external-xg-v1.0-1500-hammarby-elfsborg.json",
+      "status": "created_and_readback_verified",
+      "commit_sha": "51269ebfefb2ba77625570d0caa7ad012cc454b6"
+    },
+    {
+      "path": "predictions/domestic-league/ligue-2/2026-11-07/research-poisson-external-xg-v1.0-1500-montpellier-metz.json",
+      "status": "created_and_readback_verified",
+      "commit_sha": "9aa8c332c7a18223123f0664587012dee47c806b"
+    },
+    {
+      "path": "predictions/domestic-league/eredivisie/2026-11-07/research-poisson-external-xg-v1.0-1500-willem-ii-pec-zwolle.json",
+      "status": "created_and_readback_verified",
+      "commit_sha": "17a9f72d7a92b3523049546b425391abe974a901"
+    },
+    {
+      "path": "predictions/domestic-league/eerste-divisie/2026-11-07/research-poisson-external-xg-v1.0-1500-top-oss-rkc-waalwijk.json",
+      "status": "created_and_readback_verified",
+      "commit_sha": "b017bea6806fac172bb07a0f695d7423ca327702"
+    },
+    {
+      "path": "reviews/2026-11-06/market-source-audit-1500.json",
+      "status": "created_and_readback_verified",
+      "commit_sha": "8f58d15587733b282a408bec47effe2b426f43b1"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-06/prematch_provider_model_estimates-1500.csv",
+      "status": "created_and_readback_verified",
+      "commit_sha": "fcce4dc8b44d87f67b875c23fc956fdcf5c0ffb5"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-06/xg_coverage_audit-1500.json",
+      "status": "created_and_readback_verified",
+      "commit_sha": "51a0b5496ff3fd543da3cf75109a9da4490b46cf"
+    },
+    {
+      "path": "reviews/2026-11-06/prediction-run-1500.json",
+      "status": "created_and_readback_verified",
+      "commit_sha": "45a60669216d8d2b41e70bfe6f1c10de20df647f"
+    },
+    {
+      "path": "reviews/2026-11-06/readback-verification-1500.json",
+      "status": "created",
+      "commit_sha": "ff7c841f5356534912cf6b70ec7c2a5ca5fdbc2a"
+    }
+  ],
+  "schedule_summary": {
+    "prior_fixtures": 73,
+    "new_fixtures": 6,
+    "total_unique": 79,
+    "window_candidates": 5
+  },
+  "prediction_summary": {
+    "count": 5,
+    "model_version": "RESEARCH-POISSON-EXTERNAL-XG-v1.0"
+  },
+  "official_jc": {
+    "verified_handicaps": 0,
+    "all_prediction_handicaps": "unverifiable"
+  },
+  "xg_weekly": {
+    "actual_weekly_snapshot_unchanged": true,
+    "prematch_projection_rows": 10,
+    "actual_weekly_xg_rows_added": 0,
+    "prior_full_match_coverage_pct": 34.57
+  },
+  "database_status": "SQLite/remote database not connected or queried",
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "production_rules_changed": false
+  }
+}
