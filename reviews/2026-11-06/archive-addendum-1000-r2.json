@@ -1,0 +1,71 @@
+{
+  "run_date_beijing": "2026-11-06",
+  "run_time_beijing": "11:04:14",
+  "branch": "automation/daily-football-2026-11-06-1000",
+  "reviewed_date_beijing": "2026-11-05",
+  "previous_day_review": {
+    "confirmed_ft": 22,
+    "competition_counts": {
+      "uefa-champions-league": 9,
+      "english-championship": 3,
+      "brazil-serie-a": 4,
+      "afc-champions-league-two": 6
+    },
+    "immutable_prediction_snapshots_found": 0,
+    "official_jc_handicap_lines_verified": 0,
+    "metrics": "All six review dimensions unverifiable for all 22 matches because no matching immutable pre-match snapshot was found."
+  },
+  "current_day_early_results": {
+    "confirmed_ft": 36,
+    "not_confirmed_ft": 1,
+    "uel": 17,
+    "uecl": 18,
+    "brazil_confirmed_ft": 1,
+    "separate_snapshot_audit": "reviews/2026-11-06/early-snapshot-audit-1000.json",
+    "snapshot_audit_metrics": {
+      "matched": 9,
+      "ninety_minute_hits": 3,
+      "first_score_hits": 1,
+      "second_score_hits": 2,
+      "top_two_score_hits": 3
+    }
+  },
+  "schedule": {
+    "future_fixture_count": 73,
+    "authoritative_file": "fixtures/2026-11-06-07/schedule-r2.json",
+    "corrected_1500_prediction_window_candidates": 0
+  },
+  "xg_weekly": {
+    "iso_week": "2026-W45",
+    "review_batch_matches": 22,
+    "unique_teams": 44,
+    "matches_with_provider_model_estimate_xg": 5,
+    "provider_model_estimate_sets": 6,
+    "matches_missing_full_match_xg": 17,
+    "coverage_pct": 22.73,
+    "measured_xg_sets": 0,
+    "self_model_estimate_sets": 0,
+    "full_week_complete": false,
+    "week_totals_and_per90_withheld": true
+  },
+  "database_status": "football_model_database.sqlite is present in repository but was not opened or queried; no live SQLite/remote database connection.",
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "production_rules_changed": false
+  },
+  "created_files": [
+    {
+      "path": "fixtures/2026-11-06-07/schedule-r2.json",
+      "commit_sha": "86ba1c730cbe288cc3a6e6444b2ddc45e5e65829"
+    },
+    {
+      "path": "reviews/2026-11-06/schedule-time-correction-1000-r2.json",
+      "commit_sha": "d70fc221e27303fd33edc6bd6e9b97c39ddffe1f"
+    },
+    {
+      "path": "reviews/2026-11-06/early-snapshot-audit-1000.json",
+      "commit_sha": "3ea8aa24aad5989c229679f3eb9d7daa98acb293"
+    }
+  ]
+}
