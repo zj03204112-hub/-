@@ -58,7 +58,9 @@
     "xg_r1_match": "b9d7b4f9d961fe91cecc19e67da2f50649fd7740",
     "xg_r1_weekly": "8544eddab1b362a1042b106759e5db641db29c68",
     "xg_r1_audit": "ca0e9b7f333773039122e63f6130c7d4f55638c4",
-    "xg_correction_note": "32f64c69ac4bf876310b30ad2cb483d306714530"
+    "xg_correction_note": "32f64c69ac4bf876310b30ad2cb483d306714530",
+    "schedule_r1": "7b46af6f8dd03dce1d66881fd451a535b859a2ca",
+    "schedule_time_correction": "2f0660b843454b99caf149cf2bc56b79834181ef"
   },
   "files": [
     "results/continental-club/uefa-champions-league/2026-11-05/results.json",
@@ -75,7 +77,9 @@
     "data/xg_weekly/2026-W45/snapshots/2026-11-06/match_xg_delta-1000-r1.csv",
     "data/xg_weekly/2026-W45/snapshots/2026-11-06/team_weekly_xg_delta-1000-r1.csv",
     "data/xg_weekly/2026-W45/snapshots/2026-11-06/xg_coverage_audit-1000-r1.json",
-    "reviews/2026-11-06/xg-classification-correction-1000-r1.json"
+    "reviews/2026-11-06/xg-classification-correction-1000-r1.json",
+    "fixtures/2026-11-06-07/schedule-r1.json",
+    "reviews/2026-11-06/schedule-time-correction-1000-r1.json"
   ],
   "time_correction_note": "AEK Athens-Real Madrid and Fenerbahce-Liverpool UTC kickoffs corrected to 17:45Z / 01:45 Beijing after match-specific schedule verification; original result and review files were preserved as prior revisions and updated in new commits.",
   "xg_classification_correction": "r1排除了赛前预测投影、进行中部分xG和无法回读的搜索摘要；Sao Paulo O Gol值修正为1.25-1.06。原始增量未覆盖，保留作审计。",
@@ -83,5 +87,7 @@
     "data/xg_weekly/2026-W45/snapshots/2026-11-06/match_xg_delta-1000-r1.csv",
     "data/xg_weekly/2026-W45/snapshots/2026-11-06/team_weekly_xg_delta-1000-r1.csv",
     "data/xg_weekly/2026-W45/snapshots/2026-11-06/xg_coverage_audit-1000-r1.json"
-  ]
+  ],
+  "authoritative_schedule_file": "fixtures/2026-11-06-07/schedule-r1.json",
+  "schedule_correction": "Malaga-Racing UTC kickoff corrected to 13:00Z / 21:00 Beijing (14:00 CET); original schedule preserved."
 }
