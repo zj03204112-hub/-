@@ -1,5 +1,64 @@
 {
   "run_date_beijing": "2026-11-06",
-  "status": "initial_archive_manifest",
-  "note": "Will be updated after remaining files are committed."
+  "run_time_beijing": "10:02:36",
+  "branch": "automation/daily-football-2026-11-06-1000",
+  "base_commit": "bf2bc32f212c85361c72a968fc1f3faf4adfe7c0",
+  "reviewed_date_beijing": "2026-11-05",
+  "reviewed_match_count": 22,
+  "confirmed_ft_count": 22,
+  "immutable_prediction_snapshots_found": 0,
+  "official_jc_handicap_lines_found": 0,
+  "current_day_early_results": {
+    "total": 37,
+    "confirmed_ft": 36,
+    "not_confirmed_ft": 1,
+    "uel": 17,
+    "uecl": 18,
+    "brazil_confirmed_ft": 1
+  },
+  "future_fixtures_beijing_2026_11_07": 73,
+  "prediction_window_candidates_at_1500": 2,
+  "xg_weekly": {
+    "iso_week": "2026-W45",
+    "matches_in_batch": 22,
+    "unique_teams": 44,
+    "matches_with_provider_xg": 7,
+    "match_coverage_pct": 31.82,
+    "provider_model_estimate_sets": 12,
+    "team_match_provider_rows": 54,
+    "weekly_summary_rows": 54,
+    "full_iso_week_complete": false,
+    "week_totals_published": false
+  },
+  "database_status": "football_model_database.sqlite is present in repository, but SQLite was not opened or queried in this run; no live database connection.",
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "production_model_rules_changed": false
+  },
+  "file_commits": {
+    "ucl_results": "aa214516952bff604fea86101eb4b8e895434fd5",
+    "efl_results": "f55095b727c57fde3d7451142b2255f6a790ccdd",
+    "brazil_results": "89599f05555b9089be18081b6cde177c64c5e143",
+    "afc2_results": "cb3b5d2a2334c83afae348c222e8eed7544bcccd",
+    "previous_day_review": "d89ced058fe8a7e0a700a49e85f9db8ec70674f3",
+    "xg_match_delta": "222bfc69633650c35c3d00a5b19df7492e8db510",
+    "xg_weekly_delta": "ebca111dd2137d7c826d8ad11eaf35400ed81ea5",
+    "xg_audit": "441b1b619143039696d97b2a57c6fdbeb586e2e5",
+    "current_day_early_results": "835b634dacbc155c5003e1caaa204c430e92bbd7",
+    "schedule": "d7d64c8d5f5820ade7148936e91e63f87ced5a40"
+  },
+  "files": [
+    "results/continental-club/uefa-champions-league/2026-11-05/results.json",
+    "results/domestic-league/english-championship/2026-11-05/results.json",
+    "results/domestic-league/brazil-serie-a/2026-11-05/results.json",
+    "results/continental-club/afc-champions-league-two/2026-11-05/results.json",
+    "reviews/2026-11-06/previous-day-review.json",
+    "results/current-day-early/2026-11-06/early-results-and-pending-review.json",
+    "fixtures/2026-11-06-07/schedule.json",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/match_xg_delta-1000.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/team_weekly_xg_delta-1000.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-06/xg_coverage_audit-1000.json",
+    "reviews/2026-11-06/archive-manifest-1000.json"
+  ]
 }
