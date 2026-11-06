@@ -1,0 +1,88 @@
+{
+  "id": "research-xg-poisson-20261106-1500-05",
+  "match_id": "internal:2026-11-07:eerste-divisie:top-oss:rkc-waalwijk",
+  "competition": "Eerste Divisie",
+  "competition_type": "domestic_league",
+  "home": "TOP Oss",
+  "away": "RKC Waalwijk",
+  "kickoff_utc": "2026-11-06T19:00:00Z",
+  "kickoff_beijing": "2026-11-07T03:00:00+08:00",
+  "hours_to_kickoff": 12,
+  "model_version": "RESEARCH-POISSON-EXTERNAL-XG-v1.0",
+  "strategy_id": "RESEARCH-XG-POISSON-20261106-1500-05",
+  "lambda": {
+    "home": 1.62,
+    "away": 1.54,
+    "source": "xG.Football projected xG; provider model projection, not measured xG"
+  },
+  "score1": {
+    "score": "1-1",
+    "probability_pct": 10.5844
+  },
+  "score2": {
+    "score": "2-1",
+    "probability_pct": 8.5733
+  },
+  "one_x_two_pct": {
+    "home": 39.9312,
+    "draw": 23.5742,
+    "away": 36.4946
+  },
+  "half_full_time": {
+    "result": "胜胜",
+    "probability_pct": 24.0772,
+    "method": "independent Poisson halves, first-half goal share 45%; research estimate"
+  },
+  "confidence_10": 3.5,
+  "risk": [
+    "供应商模型分歧明显：xG.Football投影1.62-1.54，StatsBet页面另一投影1.82-0.69；本次只采用xG.Football，不跨源平均。",
+    "市场镜像客队价格更低，与xG模型接近均势的判断存在分歧。",
+    "TOP Oss近五场L-D-L-W-W；RKC近五场L-D-D-L-D。",
+    "TOP Oss预测阵容4-3-3；RKC预测阵容4-3-3；RKC的Bjarn Zorgdrager缺阵。"
+  ],
+  "team_context": {
+    "home_last5": "L-D-L-W-W",
+    "away_last5": "L-D-D-L-D",
+    "tactics": "双方预计4-3-3（依据最近一场阵型，非官方首发）",
+    "referee": "Stan Teuben（Betshoot资料，未获赛事官方指派确认）",
+    "weather": "约7°C（xG.Football页面）",
+    "next_opponent_motivation": "未核实"
+  },
+  "market": {
+    "official_jc_handicap": null,
+    "official_status": "无法核验；竞彩让球结果不输出",
+    "third_party_jc_mirror": {
+      "line": 1,
+      "one_x_two_average": [
+        3.54,
+        3.67,
+        1.85
+      ],
+      "handicap_initial": [
+        1.93,
+        3.65,
+        2.88
+      ],
+      "handicap_latest": [
+        1.93,
+        3.65,
+        2.88
+      ],
+      "timestamp": "镜像页面未显示采集时间",
+      "source": "500star竞彩奖金走势镜像；非官方原站验证；17500北单赔率另列，不混用"
+    }
+  },
+  "data_completeness_pct": 74,
+  "missing_fields": [
+    "官方竞彩原始盘口及采集时间",
+    "官方首发",
+    "赛事官方裁判指派",
+    "下一场对手战意"
+  ],
+  "sources": [
+    "https://xg.football/matches/fc-oss-waalwijk-2026-11-06",
+    "https://lineupstoday.com/eerste-divisie/top-oss-rkc-waalwijk-06-11-2026/",
+    "https://zx.500star.com/jczq/jjzs.php?play=1",
+    "https://m.17500.cn/zq/match/bonus-4551902-404"
+  ]
+}
