@@ -1,0 +1,31 @@
+{
+  "as_of_beijing": "2026-11-06T14:56:03+08:00",
+  "iso_week": "2026-W45",
+  "actual_weekly_snapshot_unchanged": true,
+  "prior_10am_actual_coverage": {
+    "unique_matches": 81,
+    "full_match_provider_xg": 28,
+    "partial_in_play_xg": 2,
+    "missing_full_match_xg": 53,
+    "full_match_coverage_pct": 34.57
+  },
+  "new_completed_matches_since_10am": 0,
+  "actual_xg_rows_added": 0,
+  "prematch_projection_rows_added": 10,
+  "projection_matches": 5,
+  "projection_type": "provider_model_projection_or_derived_from_provider_model_stats",
+  "measured_xg_sets_added": 0,
+  "week_totals_and_per90_withheld": true,
+  "leakage_check": "No post-match xG was used as pre-match input; prematch projections are stored separately from actual weekly xG.",
+  "quality_checks": {
+    "xgd_arithmetic_errors": 0,
+    "duplicate_match_team_source_keys": 0,
+    "cross_provider_values_averaged": false
+  },
+  "missing": [
+    "完整ISO周赛程/球队覆盖",
+    "若干供应商原始响应与事件ID",
+    "上游精确抓取时间",
+    "真实测量型xG"
+  ]
+}
