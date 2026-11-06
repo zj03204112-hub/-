@@ -1,0 +1,16 @@
+{
+  "date_beijing": "2026-11-06",
+  "supersedes": "fixtures/2026-11-06-07/schedule.json",
+  "match": "Malaga vs Racing Santander",
+  "old": {
+    "kickoff_utc": "2026-11-07T12:00:00Z",
+    "kickoff_beijing": "2026-11-07T20:00:00+08:00"
+  },
+  "corrected": {
+    "kickoff_utc": "2026-11-07T13:00:00Z",
+    "kickoff_beijing": "2026-11-07T21:00:00+08:00",
+    "source_local_kickoff": "14:00 CET"
+  },
+  "source_url": "https://www.malagacf.com/en/matches/season-2026-2027-laliga-easports-12-malaga-cf-vs-r-racing-club-3035",
+  "note": "原schedule.json不覆盖；schedule-r1.json作为本轮权威版本。预测窗口候选数量不变，仍为2场。"
+}
