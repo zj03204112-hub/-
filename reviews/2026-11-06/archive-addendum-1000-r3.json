@@ -1,0 +1,82 @@
+{
+  "run_date_beijing": "2026-11-06",
+  "branch": "automation/daily-football-2026-11-06-1000",
+  "revision": "r3",
+  "previous_day_review": {
+    "reviewed_beijing_date": "2026-11-05",
+    "confirmed_ft": 22,
+    "competition_counts": {
+      "uefa-champions-league": 9,
+      "english-championship": 3,
+      "brazil-serie-a": 4,
+      "afc-champions-league-two": 6
+    },
+    "immutable_prediction_snapshots_found": 0,
+    "official_jc_handicap_lines_verified": 0,
+    "formal_metrics": "90-minute result, score1, score2, handicap, half/full-time and risk all unverifiable for 22/22 due no matching immutable prediction snapshot."
+  },
+  "current_day_early_results": {
+    "confirmed_ft": 36,
+    "not_confirmed_ft": 1,
+    "competition_counts": {
+      "uefa-europa-league": 17,
+      "uefa-conference-league": 18,
+      "brazil-serie-a": 1
+    },
+    "supplemental_audits": [
+      {
+        "file": "reviews/2026-11-06/research-17-snapshot-audit-1000.json",
+        "model": "RESEARCH-GFGA-POISSON-v1.0",
+        "matches": 17,
+        "one_x_two_hits": 7,
+        "score1_hits": 4,
+        "score2_hits": 0,
+        "top_two_score_hits": 4,
+        "handicap_unverifiable": 17,
+        "half_full_unverifiable": 17,
+        "risk_unscored": 17
+      },
+      {
+        "file": "reviews/2026-11-06/early-snapshot-audit-1000.json",
+        "model": "model_validation/full_prediction.json; model version not exposed",
+        "matches": 9,
+        "one_x_two_hits": 3,
+        "score1_hits": 1,
+        "score2_hits": 2,
+        "top_two_score_hits": 3,
+        "handicap_unverifiable": 9,
+        "half_full_unverifiable": 9,
+        "risk_unscored": 9
+      }
+    ],
+    "note": "The 17-match research set and 9-match consolidated set overlap; they are separate snapshots and not combined."
+  },
+  "schedule": {
+    "future_fixture_count": 73,
+    "authoritative_file": "fixtures/2026-11-06-07/schedule-r2.json",
+    "corrected_prediction_window_candidates_at_1500": 0,
+    "time_corrections": [
+      "Sevilla-Alaves",
+      "Venezia-Udinese"
+    ]
+  },
+  "xg_weekly": {
+    "iso_week": "2026-W45",
+    "batch_matches": 22,
+    "unique_teams": 44,
+    "matches_with_provider_model_estimate_xg": 5,
+    "provider_model_estimate_sets": 6,
+    "missing_full_match_xg_matches": 17,
+    "measured_xg_sets": 0,
+    "self_model_estimate_sets": 0,
+    "batch_coverage_pct": 22.73,
+    "week_totals_and_per90_withheld": true
+  },
+  "database_status": "football_model_database.sqlite exists in repository but was not opened or queried; no live SQLite/remote database connection.",
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "production_rules_changed": false
+  },
+  "research_audit_commit": "e10f465574b0da929a247a9d3322fed471dcc83f"
+}
