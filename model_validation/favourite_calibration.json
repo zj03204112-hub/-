@@ -1,0 +1,145 @@
+{
+ "definition": "A two-parameter logit correction fitted on 2022-2024 and applied unchanged to 2025-2026, so the scores on the held-out seasons are honest. The other two outcomes are rescaled to keep the triple summing to one.",
+ "correction": {
+  "intercept": -0.0134,
+  "slope": 1.0071
+ },
+ "train_matches": 6913,
+ "test_matches": 5808,
+ "before": {
+  "n": 5808,
+  "accuracy": 0.5439,
+  "brier": 0.57048,
+  "log_loss": 0.96023
+ },
+ "after": {
+  "n": 5808,
+  "accuracy": 0.5425,
+  "brier": 0.57056,
+  "log_loss": 0.96033
+ },
+ "calibration_before": {
+  "0.35": {
+   "n": 895,
+   "predicted": 0.3796,
+   "actual": 0.4112,
+   "bias_pp": 3.16
+  },
+  "0.40": {
+   "n": 1072,
+   "predicted": 0.4236,
+   "actual": 0.4328,
+   "bias_pp": 0.92
+  },
+  "0.45": {
+   "n": 865,
+   "predicted": 0.4747,
+   "actual": 0.4763,
+   "bias_pp": 0.16
+  },
+  "0.50": {
+   "n": 682,
+   "predicted": 0.5251,
+   "actual": 0.5073,
+   "bias_pp": -1.78
+  },
+  "0.55": {
+   "n": 600,
+   "predicted": 0.5734,
+   "actual": 0.5617,
+   "bias_pp": -1.17
+  },
+  "0.60": {
+   "n": 466,
+   "predicted": 0.6248,
+   "actual": 0.633,
+   "bias_pp": 0.82
+  },
+  "0.65": {
+   "n": 353,
+   "predicted": 0.6737,
+   "actual": 0.711,
+   "bias_pp": 3.73
+  },
+  "0.70": {
+   "n": 310,
+   "predicted": 0.7236,
+   "actual": 0.7452,
+   "bias_pp": 2.15
+  },
+  "0.75": {
+   "n": 226,
+   "predicted": 0.7739,
+   "actual": 0.7876,
+   "bias_pp": 1.37
+  },
+  "0.80": {
+   "n": 151,
+   "predicted": 0.8222,
+   "actual": 0.8146,
+   "bias_pp": -0.77
+  }
+ },
+ "calibration_after": {
+  "0.35": {
+   "n": 961,
+   "predicted": 0.3787,
+   "actual": 0.41,
+   "bias_pp": 3.13
+  },
+  "0.40": {
+   "n": 1044,
+   "predicted": 0.4234,
+   "actual": 0.4253,
+   "bias_pp": 0.18
+  },
+  "0.45": {
+   "n": 840,
+   "predicted": 0.4742,
+   "actual": 0.4857,
+   "bias_pp": 1.15
+  },
+  "0.50": {
+   "n": 688,
+   "predicted": 0.525,
+   "actual": 0.5102,
+   "bias_pp": -1.48
+  },
+  "0.55": {
+   "n": 573,
+   "predicted": 0.5731,
+   "actual": 0.5602,
+   "bias_pp": -1.29
+  },
+  "0.60": {
+   "n": 461,
+   "predicted": 0.6241,
+   "actual": 0.6421,
+   "bias_pp": 1.8
+  },
+  "0.65": {
+   "n": 345,
+   "predicted": 0.673,
+   "actual": 0.7072,
+   "bias_pp": 3.42
+  },
+  "0.70": {
+   "n": 310,
+   "predicted": 0.723,
+   "actual": 0.7484,
+   "bias_pp": 2.54
+  },
+  "0.75": {
+   "n": 222,
+   "predicted": 0.7735,
+   "actual": 0.7838,
+   "bias_pp": 1.03
+  },
+  "0.80": {
+   "n": 151,
+   "predicted": 0.8219,
+   "actual": 0.8146,
+   "bias_pp": -0.73
+  }
+ }
+}
