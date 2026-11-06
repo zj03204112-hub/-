@@ -1,0 +1,376 @@
+{
+ "definition": "Four de-vig methods scored on all archived matches with 1X2 prices. Calibration compares the predicted favourite probability with the realised win rate in each band.",
+ "scores": {
+  "proportional": {
+   "n": 12721,
+   "accuracy": 0.5382,
+   "brier": 0.57386,
+   "log_loss": 0.96534
+  },
+  "power": {
+   "n": 12721,
+   "accuracy": 0.5382,
+   "brier": 0.5733,
+   "log_loss": 0.96426
+  },
+  "shin": {
+   "n": 12721,
+   "accuracy": 0.5382,
+   "brier": 0.57339,
+   "log_loss": 0.96435
+  },
+  "odds_ratio": {
+   "n": 12721,
+   "accuracy": 0.5382,
+   "brier": 0.57386,
+   "log_loss": 0.96534
+  }
+ },
+ "calibration": {
+  "proportional": {
+   "0.30": {
+    "n": 96,
+    "predicted": 0.344,
+    "actual": 0.2812,
+    "bias_pp": -6.27
+   },
+   "0.35": {
+    "n": 2185,
+    "predicted": 0.3782,
+    "actual": 0.4009,
+    "bias_pp": 2.27
+   },
+   "0.40": {
+    "n": 2364,
+    "predicted": 0.4238,
+    "actual": 0.4239,
+    "bias_pp": 0.01
+   },
+   "0.45": {
+    "n": 1922,
+    "predicted": 0.4737,
+    "actual": 0.4776,
+    "bias_pp": 0.39
+   },
+   "0.50": {
+    "n": 1642,
+    "predicted": 0.5249,
+    "actual": 0.5396,
+    "bias_pp": 1.47
+   },
+   "0.55": {
+    "n": 1287,
+    "predicted": 0.5735,
+    "actual": 0.5781,
+    "bias_pp": 0.46
+   },
+   "0.60": {
+    "n": 980,
+    "predicted": 0.6237,
+    "actual": 0.649,
+    "bias_pp": 2.52
+   },
+   "0.65": {
+    "n": 784,
+    "predicted": 0.6745,
+    "actual": 0.7258,
+    "bias_pp": 5.13
+   },
+   "0.70": {
+    "n": 600,
+    "predicted": 0.7234,
+    "actual": 0.76,
+    "bias_pp": 3.66
+   },
+   "0.75": {
+    "n": 422,
+    "predicted": 0.7722,
+    "actual": 0.7891,
+    "bias_pp": 1.69
+   },
+   "0.80": {
+    "n": 275,
+    "predicted": 0.8228,
+    "actual": 0.8727,
+    "bias_pp": 5.0
+   },
+   "0.85": {
+    "n": 110,
+    "predicted": 0.8728,
+    "actual": 0.9545,
+    "bias_pp": 8.18
+   },
+   "0.90": {
+    "n": 45,
+    "predicted": 0.9227,
+    "actual": 0.9333,
+    "bias_pp": 1.07
+   },
+   "0.95": {
+    "n": 9,
+    "predicted": 0.9556,
+    "actual": 1.0,
+    "bias_pp": 4.44
+   }
+  },
+  "power": {
+   "0.30": {
+    "n": 80,
+    "predicted": 0.3435,
+    "actual": 0.275,
+    "bias_pp": -6.85
+   },
+   "0.35": {
+    "n": 1979,
+    "predicted": 0.3786,
+    "actual": 0.3946,
+    "bias_pp": 1.6
+   },
+   "0.40": {
+    "n": 2287,
+    "predicted": 0.4241,
+    "actual": 0.4281,
+    "bias_pp": 0.39
+   },
+   "0.45": {
+    "n": 1867,
+    "predicted": 0.4745,
+    "actual": 0.466,
+    "bias_pp": -0.85
+   },
+   "0.50": {
+    "n": 1532,
+    "predicted": 0.5251,
+    "actual": 0.5189,
+    "bias_pp": -0.62
+   },
+   "0.55": {
+    "n": 1343,
+    "predicted": 0.5737,
+    "actual": 0.5666,
+    "bias_pp": -0.71
+   },
+   "0.60": {
+    "n": 1014,
+    "predicted": 0.6244,
+    "actual": 0.6085,
+    "bias_pp": -1.59
+   },
+   "0.65": {
+    "n": 786,
+    "predicted": 0.6742,
+    "actual": 0.6985,
+    "bias_pp": 2.43
+   },
+   "0.70": {
+    "n": 657,
+    "predicted": 0.7234,
+    "actual": 0.758,
+    "bias_pp": 3.46
+   },
+   "0.75": {
+    "n": 499,
+    "predicted": 0.7735,
+    "actual": 0.7695,
+    "bias_pp": -0.4
+   },
+   "0.80": {
+    "n": 332,
+    "predicted": 0.8231,
+    "actual": 0.8072,
+    "bias_pp": -1.59
+   },
+   "0.85": {
+    "n": 213,
+    "predicted": 0.8721,
+    "actual": 0.9155,
+    "bias_pp": 4.33
+   },
+   "0.90": {
+    "n": 79,
+    "predicted": 0.9204,
+    "actual": 0.9494,
+    "bias_pp": 2.89
+   },
+   "0.95": {
+    "n": 53,
+    "predicted": 0.9747,
+    "actual": 0.9245,
+    "bias_pp": -5.02
+   }
+  },
+  "shin": {
+   "0.30": {
+    "n": 83,
+    "predicted": 0.3436,
+    "actual": 0.2771,
+    "bias_pp": -6.65
+   },
+   "0.35": {
+    "n": 2029,
+    "predicted": 0.3786,
+    "actual": 0.3977,
+    "bias_pp": 1.91
+   },
+   "0.40": {
+    "n": 2308,
+    "predicted": 0.424,
+    "actual": 0.4255,
+    "bias_pp": 0.14
+   },
+   "0.45": {
+    "n": 1877,
+    "predicted": 0.4741,
+    "actual": 0.4688,
+    "bias_pp": -0.53
+   },
+   "0.50": {
+    "n": 1576,
+    "predicted": 0.5249,
+    "actual": 0.5266,
+    "bias_pp": 0.18
+   },
+   "0.55": {
+    "n": 1355,
+    "predicted": 0.5738,
+    "actual": 0.5653,
+    "bias_pp": -0.85
+   },
+   "0.60": {
+    "n": 995,
+    "predicted": 0.6247,
+    "actual": 0.6261,
+    "bias_pp": 0.15
+   },
+   "0.65": {
+    "n": 796,
+    "predicted": 0.6747,
+    "actual": 0.7085,
+    "bias_pp": 3.39
+   },
+   "0.70": {
+    "n": 646,
+    "predicted": 0.7241,
+    "actual": 0.7632,
+    "bias_pp": 3.91
+   },
+   "0.75": {
+    "n": 474,
+    "predicted": 0.7739,
+    "actual": 0.7722,
+    "bias_pp": -0.17
+   },
+   "0.80": {
+    "n": 311,
+    "predicted": 0.8234,
+    "actual": 0.8232,
+    "bias_pp": -0.03
+   },
+   "0.85": {
+    "n": 169,
+    "predicted": 0.8702,
+    "actual": 0.929,
+    "bias_pp": 5.88
+   },
+   "0.90": {
+    "n": 71,
+    "predicted": 0.9198,
+    "actual": 0.9296,
+    "bias_pp": 0.98
+   },
+   "0.95": {
+    "n": 31,
+    "predicted": 0.9633,
+    "actual": 0.9677,
+    "bias_pp": 0.45
+   }
+  },
+  "odds_ratio": {
+   "0.30": {
+    "n": 96,
+    "predicted": 0.344,
+    "actual": 0.2812,
+    "bias_pp": -6.27
+   },
+   "0.35": {
+    "n": 2185,
+    "predicted": 0.3782,
+    "actual": 0.4009,
+    "bias_pp": 2.27
+   },
+   "0.40": {
+    "n": 2364,
+    "predicted": 0.4238,
+    "actual": 0.4239,
+    "bias_pp": 0.01
+   },
+   "0.45": {
+    "n": 1922,
+    "predicted": 0.4737,
+    "actual": 0.4776,
+    "bias_pp": 0.39
+   },
+   "0.50": {
+    "n": 1642,
+    "predicted": 0.5249,
+    "actual": 0.5396,
+    "bias_pp": 1.47
+   },
+   "0.55": {
+    "n": 1287,
+    "predicted": 0.5735,
+    "actual": 0.5781,
+    "bias_pp": 0.46
+   },
+   "0.60": {
+    "n": 980,
+    "predicted": 0.6237,
+    "actual": 0.649,
+    "bias_pp": 2.52
+   },
+   "0.65": {
+    "n": 784,
+    "predicted": 0.6745,
+    "actual": 0.7258,
+    "bias_pp": 5.13
+   },
+   "0.70": {
+    "n": 600,
+    "predicted": 0.7234,
+    "actual": 0.76,
+    "bias_pp": 3.66
+   },
+   "0.75": {
+    "n": 422,
+    "predicted": 0.7722,
+    "actual": 0.7891,
+    "bias_pp": 1.69
+   },
+   "0.80": {
+    "n": 275,
+    "predicted": 0.8228,
+    "actual": 0.8727,
+    "bias_pp": 5.0
+   },
+   "0.85": {
+    "n": 110,
+    "predicted": 0.8728,
+    "actual": 0.9545,
+    "bias_pp": 8.18
+   },
+   "0.90": {
+    "n": 45,
+    "predicted": 0.9227,
+    "actual": 0.9333,
+    "bias_pp": 1.07
+   },
+   "0.95": {
+    "n": 9,
+    "predicted": 0.9556,
+    "actual": 1.0,
+    "bias_pp": 4.44
+   }
+  }
+ },
+ "bands": {}
+}
