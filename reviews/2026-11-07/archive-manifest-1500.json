@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-07-1500-run11",
+  "base_ref": "automation/daily-football-2026-11-07-1000-run11",
+  "canonical_files": [
+    {
+      "path": "fixtures/2026-11-07-08/schedule-refresh-1500-r1.json",
+      "kind": "schedule_refresh"
+    },
+    {
+      "path": "predictions/batch/2026-11-07/research-prematch-xg-poisson-v1.1-1500.json",
+      "kind": "immutable_prediction_batch"
+    },
+    {
+      "path": "reviews/2026-11-07/market-source-audit-1500.json",
+      "kind": "market_audit",
+      "commit_sha": "545355ef1fc54ce5c8606759a19a9898d527e0e0"
+    },
+    {
+      "path": "reviews/2026-11-07/prediction-data-quality-1500.json",
+      "kind": "data_quality",
+      "commit_sha": "2f99656d2cb30cae3d89f7c32eac4b6bf06a5de1"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/prematch_provider_xg_1500.csv",
+      "kind": "prematch_xg",
+      "commit_sha": "1bf87bcb62de4cf0d876c52c734f3a5cf9e0c659"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/team_weekly_prematch_projection_1500.csv",
+      "kind": "team_weekly_projection",
+      "commit_sha": "cc9e518dad5c615f97507517854f79b095d77012"
+    }
+  ],
+  "summary": {
+    "schedule_records": 102,
+    "window_candidates": 58,
+    "predictions": 23,
+    "deferred": 35,
+    "prematch_xg_team_rows": 116,
+    "provider_projection_rows": 46,
+    "missing_xg_rows": 70,
+    "official_handicap_verified": 0,
+    "sqlite_connected": false,
+    "v5_1_modified": false,
+    "frozen_validation_modified": false
+  },
+  "notes": [
+    "The batch JSON contains 23 distinct prediction_id records and is the canonical immutable snapshot for this run.",
+    "Earlier individual prediction files were also created before the connector call limit; the consolidated batch is the canonical readback target.",
+    "Historical 10:00 actual-xG snapshots were not overwritten.",
+    "Provider projected xG is stored separately from measured/actual xG and self-model estimates.",
+    "No SQLite connection or database write occurred."
+  ]
+}
