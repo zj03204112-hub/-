@@ -1,0 +1,106 @@
+{
+  "run_date_beijing": "2026-11-07",
+  "capture_time_beijing": "2026-11-07T10:30:13+08:00",
+  "result_sources": [
+    {
+      "competition": "UEFA Europa League",
+      "url": "https://www.uefa.com/uefaeuropaleague/fixtures-results/",
+      "role": "official_full_time_results"
+    },
+    {
+      "competition": "UEFA Conference League",
+      "url": "https://www.uefa.com/uefaconferenceleague/fixtures-results/",
+      "role": "official_full_time_results"
+    },
+    {
+      "competition": "UEFA halftime cross-check",
+      "url": "https://sportybell.com/football/2026-11-05/",
+      "role": "secondary_halftime_results"
+    },
+    {
+      "competition": "Brazil Serie A",
+      "url": "https://sportybell.com/football/2026-11-05/",
+      "role": "secondary_full_time_and_halftime"
+    },
+    {
+      "competition": "A-League Men",
+      "url": "https://www.sportinglife.com/football/fixtures-results/competitions/australian-a-league-men/17/2026-11",
+      "role": "secondary_full_time_result"
+    },
+    {
+      "competition": "Current-day Vitória-Fluminense",
+      "url": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/06-11-2026/vitoria-fluminense.ghtml",
+      "role": "reliable_match_report"
+    }
+  ],
+  "official_sporttery_market_snapshot": {
+    "file": "model_validation/risk_card.json",
+    "sha": "1d70765edfe161443a9c94d66a77f3a297fe44a6",
+    "generated_at_utc": "2026-11-07T02:00:08Z",
+    "generated_at_beijing": "2026-11-07T10:00:08+08:00",
+    "cards": 23,
+    "official_api": "https://webapi.sporttery.cn/gateway/jc/football/getMatchCalculatorV1.qry",
+    "source_script": "data_pipeline/risk_card.py",
+    "source_script_sha": "4622e0aa2d0409008bfae4a0d1b5c338ae798019",
+    "source_script_pool_codes": [
+      "had",
+      "hhad"
+    ],
+    "note": "Official market data available for 23 cards only; not a complete line snapshot for all 143 future fixtures."
+  },
+  "historical_handicap_snapshot": {
+    "file": "model_validation/handicap_card.json",
+    "sha": "ced683938f1e3d8cbf4f835cf26e896a969bdfb7",
+    "generated_at_utc": "2026-11-05T05:36:59Z",
+    "generated_at_beijing": "2026-11-05T13:36:59+08:00",
+    "cards": 13,
+    "definition": "Jingcai handicap three-way from the official hhad pool, de-vigged. The historical rate is the measured hit rate for the confidence tier of that specific gap, not a guarantee for the individual match.",
+    "used_for": "Retrospective mechanical handicap mapping for raw8 and full_prediction9; only first predicted score used."
+  },
+  "prediction_snapshot_sources": {
+    "raw8": {
+      "file": "GPT预测/2026-11-05_欧联杯原始预测.md",
+      "sha": "9c04e6bb0bff6a3c216d45aeccf9dde3113eb345"
+    },
+    "full9": {
+      "file": "model_validation/full_prediction.json",
+      "sha": "d316bd75b623be40b55762d3d7be23f95c405f55",
+      "generated_at_utc": "2026-11-05T11:14:49Z"
+    },
+    "current_day_13": {
+      "file": "GPT预测/2026-11-07_竞彩预测.md",
+      "sha": "b7109abcfe296d9257e87099e808ea50c21a85d3"
+    },
+    "research5": {
+      "branch": "automation/daily-football-2026-11-06-1500",
+      "files": [
+        {
+          "path": "predictions/domestic-league/2-bundesliga/2026-11-07/research-poisson-external-xg-v1.0-1500-braunschweig-cottbus.json",
+          "sha": "f5ee8d9de63d1f0b3daa95ff9f7c2ad27d3a9c8c"
+        },
+        {
+          "path": "predictions/domestic-league/allsvenskan/2026-11-07/research-poisson-external-xg-v1.0-1500-hammarby-elfsborg.json",
+          "sha": "3c8874c53a7e0753ad05558b7b00a128fc4041d3"
+        },
+        {
+          "path": "predictions/domestic-league/ligue-2/2026-11-07/research-poisson-external-xg-v1.0-1500-montpellier-metz.json",
+          "sha": "255a29569cab18d20e87320ce99e37dfe8f38f42"
+        },
+        {
+          "path": "predictions/domestic-league/eredivisie/2026-11-07/research-poisson-external-xg-v1.0-1500-willem-ii-pec-zwolle.json",
+          "sha": "84f55c54eafb4472af8ba00f8a7885a1dd4ef958"
+        },
+        {
+          "path": "predictions/domestic-league/eerste-divisie/2026-11-07/research-poisson-external-xg-v1.0-1500-top-oss-rkc-waalwijk.json",
+          "sha": "9abf889500c01e432be88011dd430a1ad10f9f10"
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Official market snapshot is limited to 23 future cards; no line is inferred for other fixtures.",
+    "For current-day early 13 predictions, official pre-match hhad snapshots were not found; all handicap outcomes remain unverifiable.",
+    "Risk prompt hit rate is not scored because no structured event criteria were defined.",
+    "The 2026-11-06 previous-day review contains 38 confirmed results; only the 8 raw Europa League and 9 full_prediction snapshots were found and audited."
+  ]
+}
