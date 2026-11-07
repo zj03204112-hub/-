@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "prediction_id": "ligue-1:2026-11-08:auxerre-paris-fc:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+  "match_id": "ligue-1:2026-11-08:auxerre-paris-fc",
+  "competition": "Ligue 1",
+  "competition_category": "domestic_league_core",
+  "home": "Auxerre",
+  "away": "Paris FC",
+  "kickoff_utc": "2026-11-07T17:00Z",
+  "kickoff_beijing": "2026-11-08T01:00+08:00",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "forecast_window_hours": "9.98",
+  "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-14",
+  "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+  "model_type": "independent_poisson_from_single_provider_projected_xg",
+  "prematch_projected_xg": {
+    "home": 1.27,
+    "away": 1.68,
+    "provider": "xG.Football",
+    "source_url": "https://xg.football/de/matches/auxerre-paris-fc-2026-11-07",
+    "value_type": "provider_model_estimate_not_measured_xg"
+  },
+  "score_predictions": [
+    {
+      "rank": 1,
+      "score": "1-1",
+      "probability_pct": 11.17
+    },
+    {
+      "rank": 2,
+      "score": "1-2",
+      "probability_pct": 9.38
+    }
+  ],
+  "full_time_probabilities_pct": {
+    "home_win": 28.99,
+    "draw": 23.98,
+    "away_win": 47.04
+  },
+  "half_time_full_time": {
+    "most_likely": "负负",
+    "probability_pct": 28.84,
+    "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+  },
+  "my_confidence_10": 4,
+  "data_completeness_pct": 70,
+  "risk": "Auxerre上轮5-1失利，Paris FC排名更高且客场xGA较低；双方都有伤停，Auxerre后防人手受限。",
+  "pre_match_context": {
+    "recent_form": "Auxerre last five mixed, recent 1-5 defeat at Strasbourg; Paris FC won 3-1 over Monaco",
+    "tactics": "Auxerre may use 3-4-2-1; Paris FC likely 4-2-3-1",
+    "probable_lineup_status": "probable_only",
+    "absences_and_doubts": "Auxerre: Assane Dioussé, Bryan Okoh out; Sekou Fofana doubtful; Axel Tuanzebe uncertain; Lamfia Dioubaté suspended. Paris FC: Adama Camara, Jonathan Ikoné, Luca Koleosho, Nhoa Sangui reported out/doubtful.",
+    "weather": "+8°C",
+    "referee": "not verified"
+  },
+  "market": {
+    "official_sporttery_handicap": null,
+    "official_market_source": null,
+    "official_capture_time": null,
+    "opening_to_current_movement": null,
+    "handicap_prediction": "无法核验",
+    "third_party_asian_handicap_used": false,
+    "odds_used_as_result_determinant": false
+  },
+  "data_gaps": [
+    "官方竞彩让球盘口及采集时间未取得",
+    "初盘至即时盘同源记录未取得",
+    "正式首发尚未公布/未核实",
+    "完整赛前供应商原始响应及版本哈希未取得"
+  ],
+  "sources": [
+    {
+      "name": "xG.Football",
+      "url": "https://xg.football/de/matches/auxerre-paris-fc-2026-11-07",
+      "type": "provider_model_estimate"
+    },
+    {
+      "name": "Guardian / Ligue 1 fixtures",
+      "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+      "type": "fixture"
+    }
+  ]
+}
