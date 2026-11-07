@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.1",
+  "revision": "r2",
+  "captured_at": "2026-11-07T02:59:42Z",
+  "beijing_date_reviewed": "2026-11-06",
+  "timezone_rule": "Asia/Shanghai UTC+08:00; match date assigned by converted kickoff, not source local calendar label.",
+  "counts": {
+    "confirmed_finished": 39,
+    "uefa_europa_league": 17,
+    "uefa_conference_league": 18,
+    "other_domestic_leagues": 4,
+    "core_seven_domestic_leagues": 0,
+    "unconfirmed_excluded": 0
+  },
+  "included_other_matches": [
+    "Palmeiras 6-1 Remo (Brazil Serie A)",
+    "Aldosivi 0-2 River Plate (Argentina Liga Profesional)",
+    "Gimnasia La Plata 2-1 Belgrano (Argentina Liga Profesional)",
+    "Sydney FC 4-1 Central Coast Mariners (A-League Men; official club report)"
+  ],
+  "result_source_register": [
+    {
+      "name": "UEFA Europa League official matchday results",
+      "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-results/"
+    },
+    {
+      "name": "UEFA Conference League official matchday results",
+      "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
+    },
+    {
+      "name": "Score+90 match detail - Palmeiras/Remo",
+      "url": "https://scoreplus90.com/en/match/1492447"
+    },
+    {
+      "name": "Score+90 match detail - Aldosivi/River",
+      "url": "https://scoreplus90.com/en/match/1493227"
+    },
+    {
+      "name": "Score+90 match detail - Gimnasia/Belgrano",
+      "url": "https://scoreplus90.com/en/match/1493233"
+    },
+    {
+      "name": "Sydney FC official match report",
+      "url": "https://sydneyfc.com/news/toure-hat-trick-fires-sky-blues-to-emphatic-mariners-win/"
+    }
+  ],
+  "prediction_audit": {
+    "repository_snapshots": [
+      {
+        "name": "GPT raw Europa League snapshot",
+        "path": "GPT预测/2026-11-05_欧联杯原始预测.md",
+        "blob_sha": "9c04e6bb0bff6a3c216d45aeccf9dde3113eb345",
+        "sample": 8,
+        "model": "RESEARCH-GFGA-POISSON-v1.0",
+        "metrics": {
+          "one_x_two": "5/8",
+          "first_score": "4/8",
+          "second_score": "0/8",
+          "half_full": "2/8",
+          "official_handicap": "not recorded"
+        }
+      },
+      {
+        "name": "Full prediction",
+        "path": "model_validation/full_prediction.json",
+        "blob_sha": "d316bd75b623be40b55762d3d7be23f95c405f55",
+        "sample": 9,
+        "generated_at": "2026-11-05T11:14:49Z",
+        "metrics": {
+          "one_x_two": "3/9",
+          "first_score": "1/9",
+          "second_score": "2/9",
+          "half_full": "1/9",
+          "first_score_mechanical_handicap": "2/9"
+        }
+      },
+      {
+        "name": "Two-stage report",
+        "path": "model_validation/two_stage_report.json",
+        "blob_sha": "42f84db288c39aeafd1c7b276ff1fbcc063cc498",
+        "sample": 9,
+        "generated_at": "2026-11-05T11:59:53Z",
+        "metrics": {
+          "one_x_two": "3/9"
+        },
+        "overlaps": "full_prediction; do not pool"
+      },
+      {
+        "name": "Tonight report",
+        "path": "model_validation/tonight_report.json",
+        "blob_sha": "119c320b9af999fe1bd26bc29dcdfba49fb303a4",
+        "sample": 12,
+        "generated_at": "2026-11-05T07:02:03Z",
+        "metrics": {
+          "one_x_two": "5/12"
+        },
+        "note": "market/odds report; no score predictions; includes Sydney FC and is not an independent model validation"
+      },
+      {
+        "name": "Half/full probabilities",
+        "path": "model_validation/half_full_probabilities.json",
+        "blob_sha": "0cc1528415c50659bddb66f5adaa8f89b27d2175",
+        "sample": 12,
+        "generated_at": "2026-11-05T04:12:21Z",
+        "metrics": {
+          "half_full": "3/12"
+        },
+        "note": "market-derived HT/FT pool; Beijing 5 Nov match excluded"
+      },
+      {
+        "name": "Handicap card",
+        "path": "model_validation/handicap_card.json",
+        "blob_sha": "ced683938f1e3d8cbf4f835cf26e896a969bdfb7",
+        "sample": 12,
+        "generated_at": "2026-11-05T05:36:59Z",
+        "metrics": {
+          "market_handicap_pick": "5/12"
+        },
+        "note": "file definition identifies official Jingcai hhad pool; this market-card pick is not first-score mechanical model output"
+      },
+      {
+        "name": "Margin distribution",
+        "path": "model_validation/margin_distribution.json",
+        "blob_sha": "c62455c84df50a05cf5b33e70aab2a73b18b1652",
+        "sample": 13,
+        "metrics": {
+          "first_score_mechanical_handicap": "not applicable"
+        },
+        "note": "contains both completed 6 Nov Beijing matches and future 7 Nov matches; no separate score-first pick was present"
+      }
+    ],
+    "immutable_prediction_coverage": {
+      "unique_results": 39,
+      "unique_matches_with_any_pre_match_snapshot": 16,
+      "matches_without_any_snapshot": 23,
+      "note": "Unique coverage union across the seven repository artifacts; overlapping datasets are not pooled."
+    },
+    "mechanical_handicap_audit": {
+      "sample": 9,
+      "lines_source": "model_validation/handicap_card.json (file definition: official Jingcai hhad pool); lines cross-checked against full_prediction.json",
+      "predicted_from_first_score_only": {
+        "let_win": 0,
+        "let_draw": 7,
+        "let_loss": 2
+      },
+      "actual_outcomes": {
+        "let_win": 1,
+        "let_draw": 1,
+        "let_loss": 7
+      },
+      "hits": "2/9",
+      "method": "Map scores_top[0] through the archived line. Second score is excluded."
+    },
+    "risk_hits": "not scored; immutable files do not contain a pre-defined structured risk-event dictionary."
+  },
+  "separate_current_beijing_date_diagnostic": {
+    "beijing_date": "2026-11-07",
+    "source": "previous 15:00 assistant response in chat; no matching immutable GitHub prediction file found",
+    "matches": [
+      {
+        "home": "Eintracht Braunschweig",
+        "away": "Energie Cottbus",
+        "score": "0-0",
+        "half_time": "0-0",
+        "predicted_scores": [
+          "1-1",
+          "2-1"
+        ],
+        "predicted_direction": "主胜",
+        "actual_direction": "平局",
+        "predicted_half_full": "胜胜",
+        "actual_half_full": "平平"
+      },
+      {
+        "home": "Hammarby",
+        "away": "Elfsborg",
+        "score": "4-1",
+        "half_time": "1-0",
+        "predicted_scores": [
+          "1-1",
+          "0-1"
+        ],
+        "predicted_direction": "客胜",
+        "actual_direction": "主胜",
+        "predicted_half_full": "负负",
+        "actual_half_full": "胜胜"
+      },
+      {
+        "home": "Montpellier",
+        "away": "Metz",
+        "score": "2-3",
+        "half_time": "0-2",
+        "predicted_scores": [
+          "1-0",
+          "2-0"
+        ],
+        "predicted_direction": "主胜",
+        "actual_direction": "客胜",
+        "predicted_half_full": "胜胜",
+        "actual_half_full": "负负"
+      },
+      {
+        "home": "Willem II",
+        "away": "PEC Zwolle",
+        "score": "1-1",
+        "half_time": "1-1",
+        "predicted_scores": [
+          "1-1",
+          "1-2"
+        ],
+        "predicted_direction": "客胜",
+        "actual_direction": "平局",
+        "predicted_half_full": "负负",
+        "actual_half_full": "平平"
+      },
+      {
+        "home": "TOP Oss",
+        "away": "RKC Waalwijk",
+        "score": "1-1",
+        "half_time": "1-0",
+        "predicted_scores": [
+          "1-1",
+          "0-0"
+        ],
+        "predicted_direction": "主胜",
+        "actual_direction": "平局",
+        "predicted_half_full": "胜胜",
+        "actual_half_full": "胜平"
+      }
+    ],
+    "metrics": {
+      "one_x_two": "0/5",
+      "first_score": "2/5",
+      "second_score": "0/5",
+      "half_full": "0/5",
+      "official_handicap": "0/5 verified"
+    },
+    "note": "These five matches kicked off on Beijing 7 Nov, so they are not included in the 6 Nov previous-day denominator. This is a conversation-level diagnostic, not a frozen validation sample."
+  },
+  "limitations": [
+    "The prior 17-match RESEARCH-GFGA-POISSON-v1.0 response was not found as a persisted immutable file in the repository; it is not included in formal GitHub metrics.",
+    "No SQLite connection was opened; team IDs in new xG files are derived internal slugs pending mapping to database team IDs.",
+    "Official Jingcai lines exist in the repository's pre-match handicap card for the nine full_prediction matches; the original official source page was not independently re-fetched in this run."
+  ]
+}
