@@ -1,0 +1,55 @@
+{
+  "captured_at": "2026-11-07T02:59:42Z",
+  "branch": "automation/daily-football-2026-11-07-1000-run11",
+  "manifest_path": "reviews/2026-11-07/archive-manifest-1000.json",
+  "manifest_blob_sha": "e112ffe4814d1fda2283b66be7bb4ee822079262",
+  "manifest_files": 27,
+  "manifest_files_read_back": 27,
+  "failed_reads": 0,
+  "result_checks": {
+    "previous_beijing_day_confirmed": 39,
+    "uel": 17,
+    "uecl": 18,
+    "other_domestic": 4,
+    "early_beijing_7_supplement": 5
+  },
+  "schedule_checks": {
+    "fixtures": 102,
+    "unique_match_ids": 102,
+    "core_leagues": 45,
+    "other_tracked": 57,
+    "15_00_window_candidates": 59
+  },
+  "xg_checks": {
+    "match_rows": 132,
+    "team_weekly_rows": 132,
+    "unique_matches": 44,
+    "matches_with_supplier_xg": 22,
+    "coverage_pct": 50,
+    "source_groups": 44,
+    "duplicate_match_team_provider_keys": 0,
+    "duplicate_team_weekly_keys": 0,
+    "xgd_arithmetic_errors": 0,
+    "missing_rows_with_bad_fields": 0,
+    "measured_official_xg_rows": 0,
+    "self_model_estimate_rows": 0
+  },
+  "prediction_audit_checks": {
+    "repository_snapshot_union": 16,
+    "missing_snapshot_matches": 23,
+    "raw_europa_direction": "5/8",
+    "full_prediction_direction": "3/9",
+    "full_prediction_first_score": "1/9",
+    "full_prediction_second_score": "2/9",
+    "first_score_mechanical_handicap": "2/9",
+    "risk_hits": "not scored"
+  },
+  "database_connected": false,
+  "v5_1_modified": false,
+  "frozen_validation_modified": false,
+  "notes": [
+    "All 27 manifest paths were fetched successfully from the working branch.",
+    "Initial xG and audit snapshots remain immutable; correction and cumulative revisions are separate files.",
+    "No SQLite connection or database write occurred."
+  ]
+}
