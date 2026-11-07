@@ -1,0 +1,571 @@
+{
+  "run_date_beijing": "2026-11-07",
+  "reviewed_beijing_date": "2026-11-06",
+  "confirmed_finished_matches": 38,
+  "breakdown": {
+    "uefa_europa_league": 17,
+    "uefa_conference_league": 18,
+    "brasileirao_serie_a": 2,
+    "a_league_men": 1
+  },
+  "prediction_audits": [
+    {
+      "snapshot_id": "gpt-europa-raw8-2026-11-05",
+      "source_file": "GPT预测/2026-11-05_欧联杯原始预测.md",
+      "source_sha": "9c04e6bb0bff6a3c216d45aeccf9dde3113eb345",
+      "model_version": "RESEARCH-GFGA-POISSON-v1.0",
+      "summary": {
+        "matches": 8,
+        "one_x_two_hits": 5,
+        "score1_hits": 4,
+        "score2_hits": 0,
+        "half_full_hits": 2,
+        "handicap_eligible": 5,
+        "handicap_hits": 3,
+        "handicap_unverifiable": 3
+      },
+      "matches": [
+        {
+          "home": "AC米兰",
+          "away": "费伦茨瓦罗斯",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            47.96,
+            23.86,
+            28.18
+          ],
+          "actual_1x2": "负",
+          "score1": "1-1",
+          "score2": "2-1",
+          "actual_score": "0-2",
+          "actual_half_time": "0-0",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "平负",
+          "hits": {
+            "one_x_two": false,
+            "score1": false,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": -1,
+          "predicted_handicap_from_score1": "让负",
+          "actual_handicap_from_actual_score": "让负",
+          "handicap_hit": true
+        },
+        {
+          "home": "布拉格斯巴达",
+          "away": "伯恩茅斯",
+          "predicted_1x2": "负",
+          "predicted_1x2_probability": [
+            20.79,
+            23.06,
+            56.15
+          ],
+          "actual_1x2": "负",
+          "score1": "1-1",
+          "score2": "0-1",
+          "actual_score": "1-3",
+          "actual_half_time": "1-0",
+          "predicted_half_full": "负负",
+          "actual_half_full": "胜负",
+          "hits": {
+            "one_x_two": true,
+            "score1": false,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": 1,
+          "predicted_handicap_from_score1": "让胜",
+          "actual_handicap_from_actual_score": "让负",
+          "handicap_hit": false
+        },
+        {
+          "home": "水晶宫",
+          "away": "霍芬海姆",
+          "predicted_1x2": "负",
+          "predicted_1x2_probability": [
+            34.48,
+            26.35,
+            39.17
+          ],
+          "actual_1x2": "平",
+          "score1": "1-1",
+          "score2": "0-1",
+          "actual_score": "1-1",
+          "actual_half_time": "0-1",
+          "predicted_half_full": "负负",
+          "actual_half_full": "负平",
+          "hits": {
+            "one_x_two": false,
+            "score1": true,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": -1,
+          "predicted_handicap_from_score1": "让负",
+          "actual_handicap_from_actual_score": "让负",
+          "handicap_hit": true
+        },
+        {
+          "home": "利勒斯特罗姆",
+          "away": "比尔森胜利",
+          "predicted_1x2": "负",
+          "predicted_1x2_probability": [
+            21.87,
+            25.58,
+            52.55
+          ],
+          "actual_1x2": "负",
+          "score1": "0-1",
+          "score2": "1-1",
+          "actual_score": "0-1",
+          "actual_half_time": "0-1",
+          "predicted_half_full": "负负",
+          "actual_half_full": "负负",
+          "hits": {
+            "one_x_two": true,
+            "score1": true,
+            "score2": false,
+            "half_full": true
+          },
+          "official_jingcai_line": null,
+          "predicted_handicap_from_score1": null,
+          "actual_handicap_from_actual_score": null,
+          "handicap_hit": null
+        },
+        {
+          "home": "奈梅亨",
+          "away": "奥莫尼亚",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            42.14,
+            24.64,
+            33.22
+          ],
+          "actual_1x2": "胜",
+          "score1": "1-1",
+          "score2": "2-1",
+          "actual_score": "3-1",
+          "actual_half_time": "0-1",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "负胜",
+          "hits": {
+            "one_x_two": true,
+            "score1": false,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": -1,
+          "predicted_handicap_from_score1": "让负",
+          "actual_handicap_from_actual_score": "让胜",
+          "handicap_hit": false
+        },
+        {
+          "home": "列夫斯基索非亚",
+          "away": "雅盖隆",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            48.7,
+            26.59,
+            24.71
+          ],
+          "actual_1x2": "胜",
+          "score1": "1-0",
+          "score2": "1-1",
+          "actual_score": "1-0",
+          "actual_half_time": "0-0",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "平胜",
+          "hits": {
+            "one_x_two": true,
+            "score1": true,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": null,
+          "predicted_handicap_from_score1": null,
+          "actual_handicap_from_actual_score": null,
+          "handicap_hit": null
+        },
+        {
+          "home": "皇家社会",
+          "away": "里昂",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            44.57,
+            24.01,
+            31.42
+          ],
+          "actual_1x2": "平",
+          "score1": "1-1",
+          "score2": "2-1",
+          "actual_score": "1-1",
+          "actual_half_time": "1-0",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "胜平",
+          "hits": {
+            "one_x_two": false,
+            "score1": true,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": -1,
+          "predicted_handicap_from_score1": "让负",
+          "actual_handicap_from_actual_score": "让负",
+          "handicap_hit": true
+        },
+        {
+          "home": "安德莱赫特",
+          "away": "萨尔茨堡",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            40.44,
+            23.4,
+            36.16
+          ],
+          "actual_1x2": "胜",
+          "score1": "1-1",
+          "score2": "2-1",
+          "actual_score": "2-0",
+          "actual_half_time": "1-0",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "胜胜",
+          "hits": {
+            "one_x_two": true,
+            "score1": false,
+            "score2": false,
+            "half_full": true
+          },
+          "official_jingcai_line": null,
+          "predicted_handicap_from_score1": null,
+          "actual_handicap_from_actual_score": null,
+          "handicap_hit": null
+        }
+      ],
+      "risk_prompt_status": "NOT_SCORED",
+      "risk_prompt_reason": "No structured risk-event IDs or predeclared hit criteria."
+    },
+    {
+      "snapshot_id": "full-prediction-9-2026-11-05",
+      "source_file": "model_validation/full_prediction.json",
+      "source_sha": "d316bd75b623be40b55762d3d7be23f95c405f55",
+      "generated_at_utc": "2026-11-05T11:14:49Z",
+      "model_version": "NOT_DECLARED_IN_FILE",
+      "summary": {
+        "matches": 9,
+        "one_x_two_hits": 3,
+        "score1_hits": 1,
+        "score2_hits": 2,
+        "half_full_hits": 1,
+        "handicap_eligible": 9,
+        "handicap_hits": 2,
+        "handicap_unverifiable": 0,
+        "handicap_method": "first predicted score only + verified pre-kickoff official hhad line",
+        "handicap_hit_rate": "2/9"
+      },
+      "matches": [
+        {
+          "match_num": "周四006",
+          "home": "AC米兰",
+          "away": "费伦茨",
+          "kickoff_beijing": "2026-11-06 01:45:00",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            0.7565,
+            0.154,
+            0.0895
+          ],
+          "actual_1x2": "负",
+          "score1": "2-1",
+          "score2": "2-0",
+          "actual_score": "0-2",
+          "actual_half_time": "0-0",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "平负",
+          "hits": {
+            "one_x_two": false,
+            "score1": false,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": -1,
+          "predicted_handicap_from_score1": "让平",
+          "actual_handicap_from_actual_score": "让负",
+          "handicap_hit": false,
+          "line_source_file": "model_validation/handicap_card.json",
+          "line_snapshot_beijing": "2026-11-05T13:36:59+08:00"
+        },
+        {
+          "match_num": "周四012",
+          "home": "勒沃库森",
+          "away": "马赛",
+          "kickoff_beijing": "2026-11-06 04:00:00",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            0.7565,
+            0.1526,
+            0.0909
+          ],
+          "actual_1x2": "负",
+          "score1": "2-1",
+          "score2": "2-0",
+          "actual_score": "0-1",
+          "actual_half_time": "0-0",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "平负",
+          "hits": {
+            "one_x_two": false,
+            "score1": false,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": -1,
+          "predicted_handicap_from_score1": "让平",
+          "actual_handicap_from_actual_score": "让负",
+          "handicap_hit": false,
+          "line_source_file": "model_validation/handicap_card.json",
+          "line_snapshot_beijing": "2026-11-05T13:36:59+08:00"
+        },
+        {
+          "match_num": "周四003",
+          "home": "布斯巴达",
+          "away": "伯恩茅斯",
+          "kickoff_beijing": "2026-11-06 01:45:00",
+          "predicted_1x2": "负",
+          "predicted_1x2_probability": [
+            0.1254,
+            0.1722,
+            0.7024
+          ],
+          "actual_1x2": "负",
+          "score1": "1-2",
+          "score2": "0-2",
+          "actual_score": "1-3",
+          "actual_half_time": "1-0",
+          "predicted_half_full": "负负",
+          "actual_half_full": "胜负",
+          "hits": {
+            "one_x_two": true,
+            "score1": false,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": 1,
+          "predicted_handicap_from_score1": "让平",
+          "actual_handicap_from_actual_score": "让负",
+          "handicap_hit": false,
+          "line_source_file": "model_validation/handicap_card.json",
+          "line_snapshot_beijing": "2026-11-05T13:36:59+08:00"
+        },
+        {
+          "match_num": "周四008",
+          "home": "桑德兰",
+          "away": "萨迪纳摩",
+          "kickoff_beijing": "2026-11-06 04:00:00",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            0.6962,
+            0.1828,
+            0.121
+          ],
+          "actual_1x2": "负",
+          "score1": "2-0",
+          "score2": "2-1",
+          "actual_score": "0-2",
+          "actual_half_time": "0-2",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "负负",
+          "hits": {
+            "one_x_two": false,
+            "score1": false,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": -1,
+          "predicted_handicap_from_score1": "让胜",
+          "actual_handicap_from_actual_score": "让负",
+          "handicap_hit": false,
+          "line_source_file": "model_validation/handicap_card.json",
+          "line_snapshot_beijing": "2026-11-05T13:36:59+08:00"
+        },
+        {
+          "match_num": "周四005",
+          "home": "皇家社会",
+          "away": "里昂",
+          "kickoff_beijing": "2026-11-06 01:45:00",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            0.6223,
+            0.1972,
+            0.1805
+          ],
+          "actual_1x2": "平",
+          "score1": "2-1",
+          "score2": "1-1",
+          "actual_score": "1-1",
+          "actual_half_time": "1-0",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "胜平",
+          "hits": {
+            "one_x_two": false,
+            "score1": false,
+            "score2": true,
+            "half_full": false
+          },
+          "official_jingcai_line": -1,
+          "predicted_handicap_from_score1": "让平",
+          "actual_handicap_from_actual_score": "让负",
+          "handicap_hit": false,
+          "line_source_file": "model_validation/handicap_card.json",
+          "line_snapshot_beijing": "2026-11-05T13:36:59+08:00"
+        },
+        {
+          "match_num": "周四004",
+          "home": "奈梅亨",
+          "away": "奥莫尼亚",
+          "kickoff_beijing": "2026-11-06 01:45:00",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            0.566,
+            0.2309,
+            0.2031
+          ],
+          "actual_1x2": "胜",
+          "score1": "2-1",
+          "score2": "1-1",
+          "actual_score": "3-1",
+          "actual_half_time": "0-1",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "负胜",
+          "hits": {
+            "one_x_two": true,
+            "score1": false,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": -1,
+          "predicted_handicap_from_score1": "让平",
+          "actual_handicap_from_actual_score": "让胜",
+          "handicap_hit": false,
+          "line_source_file": "model_validation/handicap_card.json",
+          "line_snapshot_beijing": "2026-11-05T13:36:59+08:00"
+        },
+        {
+          "match_num": "周四011",
+          "home": "阿尔克马",
+          "away": "尤文图斯",
+          "kickoff_beijing": "2026-11-06 04:00:00",
+          "predicted_1x2": "负",
+          "predicted_1x2_probability": [
+            0.2279,
+            0.2371,
+            0.535
+          ],
+          "actual_1x2": "负",
+          "score1": "1-2",
+          "score2": "1-1",
+          "actual_score": "1-2",
+          "actual_half_time": "0-2",
+          "predicted_half_full": "负负",
+          "actual_half_full": "负负",
+          "hits": {
+            "one_x_two": true,
+            "score1": true,
+            "score2": false,
+            "half_full": true
+          },
+          "official_jingcai_line": 1,
+          "predicted_handicap_from_score1": "让平",
+          "actual_handicap_from_actual_score": "让平",
+          "handicap_hit": true,
+          "line_source_file": "model_validation/handicap_card.json",
+          "line_snapshot_beijing": "2026-11-05T13:36:59+08:00"
+        },
+        {
+          "match_num": "周四002",
+          "home": "水晶宫",
+          "away": "霍芬海姆",
+          "kickoff_beijing": "2026-11-06 01:45:00",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            0.5255,
+            0.2472,
+            0.2273
+          ],
+          "actual_1x2": "平",
+          "score1": "2-1",
+          "score2": "1-1",
+          "actual_score": "1-1",
+          "actual_half_time": "0-1",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "负平",
+          "hits": {
+            "one_x_two": false,
+            "score1": false,
+            "score2": true,
+            "half_full": false
+          },
+          "official_jingcai_line": -1,
+          "predicted_handicap_from_score1": "让平",
+          "actual_handicap_from_actual_score": "让负",
+          "handicap_hit": false,
+          "line_source_file": "model_validation/handicap_card.json",
+          "line_snapshot_beijing": "2026-11-05T13:36:59+08:00"
+        },
+        {
+          "match_num": "周四009",
+          "home": "塞尔塔",
+          "away": "圣吉联合",
+          "kickoff_beijing": "2026-11-06 04:00:00",
+          "predicted_1x2": "胜",
+          "predicted_1x2_probability": [
+            0.4179,
+            0.2742,
+            0.3079
+          ],
+          "actual_1x2": "负",
+          "score1": "1-1",
+          "score2": "2-1",
+          "actual_score": "1-2",
+          "actual_half_time": "1-1",
+          "predicted_half_full": "胜胜",
+          "actual_half_full": "平负",
+          "hits": {
+            "one_x_two": false,
+            "score1": false,
+            "score2": false,
+            "half_full": false
+          },
+          "official_jingcai_line": -1,
+          "predicted_handicap_from_score1": "让负",
+          "actual_handicap_from_actual_score": "让负",
+          "handicap_hit": true,
+          "line_source_file": "model_validation/handicap_card.json",
+          "line_snapshot_beijing": "2026-11-05T13:36:59+08:00"
+        }
+      ],
+      "risk_prompt_status": "NOT_SCORED",
+      "risk_prompt_reason": "No structured risk-event IDs or predeclared hit criteria."
+    }
+  ],
+  "official_handicap_line_source": {
+    "file": "model_validation/handicap_card.json",
+    "sha": "ced683938f1e3d8cbf4f835cf26e896a969bdfb7",
+    "generated_at_utc": "2026-11-05T05:36:59Z",
+    "generated_at_beijing": "2026-11-05T13:36:59+08:00",
+    "definition": "Jingcai handicap three-way from the official hhad pool, de-vigged. The historical rate is the measured hit rate for the confidence tier of that specific gap, not a guarantee for the individual match.",
+    "source_script": "data_pipeline/risk_card.py",
+    "official_api": "https://webapi.sporttery.cn/gateway/jc/football/getMatchCalculatorV1.qry",
+    "note": "Only first predicted score used for handicap mapping. The line snapshot is official and pre-kickoff, but earlier than the later full_prediction snapshot; exact contemporaneous line at prediction time is not independently proven.",
+    "card_count": 13,
+    "source_script_sha": "4622e0aa2d0409008bfae4a0d1b5c338ae798019"
+  },
+  "rules": {
+    "one_x_two_independent": true,
+    "handicap_uses_score1_only": true,
+    "score2_used_for_handicap": false,
+    "official_jingcai_required": true,
+    "third_party_asian_handicap_used": false
+  },
+  "supersedes": "reviews/2026-11-07/previous-day-review.json"
+}
