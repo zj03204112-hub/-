@@ -1,0 +1,40 @@
+{
+  "run_date_beijing": "2026-11-07",
+  "scope": "2026-11-06 results, provider match-level xG only",
+  "comparison_status": "single-source-per-match-for-most-games; no provider values averaged",
+  "records": [
+    {
+      "match": "Lillestrom vs Viktoria Plzen",
+      "provider": "Shotify",
+      "xg_home": 0.53,
+      "xg_away": 1.7,
+      "source": "https://www.shotifystats.com/match/lillestrom-vs-viktoria-plzen-2026-11-05/report",
+      "note": "Excluded VJStats and OddAlerts season/pre-match form averages from match-level xG."
+    },
+    {
+      "match": "Trabzonspor vs Freiburg",
+      "provider": "Shotify",
+      "xg_home": 1.67,
+      "xg_away": 0.99,
+      "source": "https://www.shotifystats.com/match/trabzonspor-vs-freiburg-2026-11-05/report",
+      "note": "Excluded VJStats team-season xG averages."
+    },
+    {
+      "match": "Atalanta vs Kairat",
+      "provider": "StatsBet",
+      "xg_home": 1.99,
+      "xg_away": 0.46,
+      "source": "https://statsbet.org/football/matches/atalanta-vs-kairat-2026-11-05",
+      "note": "Excluded Shotify last-five shot-map summary; it was not match-level xG."
+    },
+    {
+      "match": "Palmeiras vs Remo",
+      "provider": "Shotify",
+      "xg_home": 4.78,
+      "xg_away": 0.32,
+      "source": "https://www.shotifystats.com/match/palmeiras-vs-remo-2026-11-05/report",
+      "note": "Excluded OddAlerts season/form xG averages."
+    }
+  ],
+  "source_consistency_note": "Most captured matches have one match-level supplier only, so independent cross-provider consistency cannot be assessed for the full batch. Where a source was only team-season form or a last-five shot map, it was excluded from match-level xG."
+}
