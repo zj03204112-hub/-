@@ -1,0 +1,218 @@
+{
+  "run_date_beijing": "2026-11-07",
+  "iso_week": "2026-W45",
+  "week_start": "2026-11-02",
+  "week_end": "2026-11-08",
+  "new_batch": {
+    "matches": 38,
+    "with_full_match_level_provider_xg": 20,
+    "missing_full_match_level_provider_xg": 18,
+    "coverage": 0.5263157894736842,
+    "rows": 76,
+    "provider_model_estimate_rows": 40,
+    "missing_team_rows": 36
+  },
+  "raw_snapshot_reconciliation": {
+    "source_files": [
+      {
+        "batch": "d4",
+        "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_snapshot-1002.csv",
+        "rows": 126,
+        "unique_matches": 55
+      },
+      {
+        "batch": "d4p",
+        "path": "data/xg_weekly/2026-W45/snapshots/2026-11-04/match_xg_delta-1500.csv",
+        "rows": 6,
+        "unique_matches": 2
+      },
+      {
+        "batch": "d5",
+        "path": "data/xg_weekly/2026-W45/snapshots/2026-11-05/match_xg_delta-1000.csv",
+        "rows": 72,
+        "unique_matches": 33
+      },
+      {
+        "batch": "d6",
+        "path": "data/xg_weekly/2026-W45/snapshots/2026-11-06/match_xg_delta-1000-r1.csv",
+        "rows": 46,
+        "unique_matches": 22
+      },
+      {
+        "batch": "new",
+        "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/match_xg_delta-1000-r1.csv",
+        "rows": 76,
+        "unique_matches": 38
+      }
+    ],
+    "raw_rows_before_dedup": 326,
+    "unique_match_ids": 141,
+    "duplicate_source_rows_removed": 0,
+    "with_full_provider_xg": 53,
+    "partial_only_matches": 0,
+    "matches_with_any_partial_observation": 2,
+    "partial_observation_rows": 4,
+    "missing_full_xg_matches": 88,
+    "coverage": 0.375886524822695
+  },
+  "previous_report_discrepancy": {
+    "previously_reported_cumulative": {
+      "matches": 81,
+      "full_xg": 28,
+      "partial": 2,
+      "missing": 53
+    },
+    "recomputed_from_preserved_raw_csv": {
+      "matches": 103,
+      "full_xg": 33,
+      "partial_only": 0,
+      "matches_with_any_partial": 2,
+      "missing": 70
+    },
+    "difference_in_match_count": 22,
+    "difference_in_full_xg_matches": 5,
+    "note": "Previous summary totals do not reconcile with preserved raw CSVs; raw file row counts were recomputed from the 2026-11-04 snapshot, 2026-11-04 delta, 2026-11-05 delta and 2026-11-06 delta."
+  },
+  "previous_2026_11_06_batch_discrepancy": {
+    "previous_audit_reported_with_xg": 7,
+    "raw_csv_recomputed_with_full_xg": 5,
+    "matches": 22,
+    "note": "The preserved 2026-11-06 delta CSV has five unique match IDs with full-time provider xG."
+  },
+  "total_after_merge": {
+    "matches": 141,
+    "with_full_provider_xg": 53,
+    "partial_only_matches": 0,
+    "matches_with_any_partial_observation": 2,
+    "partial_observation_rows": 4,
+    "missing_full_xg_matches": 88,
+    "coverage": 0.375886524822695
+  },
+  "competition_coverage": {
+    "premier-league": {
+      "matches": 2,
+      "with_full_xg": 1,
+      "missing": 1
+    },
+    "la-liga": {
+      "matches": 3,
+      "with_full_xg": 1,
+      "missing": 2
+    },
+    "bundesliga": {
+      "matches": 1,
+      "with_full_xg": 0,
+      "missing": 1
+    },
+    "serie-a": {
+      "matches": 4,
+      "with_full_xg": 2,
+      "missing": 2
+    },
+    "ligue-1": {
+      "matches": 4,
+      "with_full_xg": 1,
+      "missing": 3
+    },
+    "primeira-liga": {
+      "matches": 3,
+      "with_full_xg": 0,
+      "missing": 3
+    },
+    "eliteserien": {
+      "matches": 4,
+      "with_full_xg": 2,
+      "missing": 2
+    },
+    "brazil-serie-a": {
+      "matches": 4,
+      "with_full_xg": 2,
+      "missing": 2
+    },
+    "afc-champions-league-elite": {
+      "matches": 15,
+      "with_full_xg": 7,
+      "missing": 8
+    },
+    "afc-champions-league-two": {
+      "matches": 10,
+      "with_full_xg": 2,
+      "missing": 8
+    },
+    "uefa-champions-league": {
+      "matches": 18,
+      "with_full_xg": 9,
+      "missing": 9
+    },
+    "efl-championship": {
+      "matches": 12,
+      "with_full_xg": 0,
+      "missing": 12
+    },
+    "uefa-europa-league": {
+      "matches": 1,
+      "with_full_xg": 1,
+      "missing": 0
+    },
+    "comp:uefa-ucl-2026-27": {
+      "matches": 9,
+      "with_full_xg": 0,
+      "missing": 9
+    },
+    "comp:efl-championship-2026-27": {
+      "matches": 3,
+      "with_full_xg": 3,
+      "missing": 0
+    },
+    "comp:brazil-serie-a-2026": {
+      "matches": 4,
+      "with_full_xg": 2,
+      "missing": 2
+    },
+    "comp:afc-cl-two-2026-27": {
+      "matches": 6,
+      "with_full_xg": 0,
+      "missing": 6
+    },
+    "uefa-europa-league-2026-27": {
+      "matches": 17,
+      "with_full_xg": 11,
+      "missing": 6
+    },
+    "uefa-conference-league-2026-27": {
+      "matches": 18,
+      "with_full_xg": 7,
+      "missing": 11
+    },
+    "brasileirao-serie-a-2026": {
+      "matches": 2,
+      "with_full_xg": 2,
+      "missing": 0
+    },
+    "a-league-men-2026-27": {
+      "matches": 1,
+      "with_full_xg": 0,
+      "missing": 1
+    }
+  },
+  "quality": {
+    "xgd_arithmetic_errors": 0,
+    "postmatch_data_leakage_rows": 0,
+    "duplicate_source_keys_after_dedup": 0,
+    "provider_model_version_missing": 280,
+    "provider_update_timestamp_missing": 326,
+    "raw_payload_sha256_missing": 326,
+    "full_iso_week_coverage_complete": false,
+    "weekly_totals_published": false,
+    "measured_xg_rows": 0,
+    "self_model_estimate_rows": 0,
+    "all_new_batch_xg_are_match_level": true
+  },
+  "limitations": [
+    "All 20 new match-level xG values are provider model estimates, not measured official xG.",
+    "The earlier draft delta contained several non-match-level season averages/shot-map values; r1 removes them and retains only match-level post-match pages.",
+    "Exact provider update timestamps and raw payload hashes are not available for most sources.",
+    "Full ISO week totals and full-week per90 averages remain blank because all fixtures and teams for 2026-W45 are not yet audited.",
+    "Post-match xG is never marked usable for pre-match prediction."
+  ]
+}
