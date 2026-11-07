@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "prediction_id": "bundesliga:2026-11-08:vfb-stuttgart-werder-bremen:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+  "match_id": "bundesliga:2026-11-08:vfb-stuttgart-werder-bremen",
+  "competition": "Bundesliga",
+  "competition_category": "domestic_league_core",
+  "home": "VfB Stuttgart",
+  "away": "Werder Bremen",
+  "kickoff_utc": "2026-11-07T17:30Z",
+  "kickoff_beijing": "2026-11-08T01:30+08:00",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "forecast_window_hours": "10.48",
+  "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-13",
+  "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+  "model_type": "independent_poisson_from_single_provider_projected_xg",
+  "prematch_projected_xg": {
+    "home": 2.12,
+    "away": 1.47,
+    "provider": "xG.Football",
+    "source_url": "https://xg.football/de/matches/vfb-stuttgart-werder-bremen-2026-11-07",
+    "value_type": "provider_model_estimate_not_measured_xg"
+  },
+  "score_predictions": [
+    {
+      "rank": 1,
+      "score": "2-1",
+      "probability_pct": 9.12
+    },
+    {
+      "rank": 2,
+      "score": "1-1",
+      "probability_pct": 8.6
+    }
+  ],
+  "full_time_probabilities_pct": {
+    "home_win": 52.54,
+    "draw": 20.9,
+    "away_win": 26.57
+  },
+  "half_time_full_time": {
+    "most_likely": "胜胜",
+    "probability_pct": 33.55,
+    "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+  },
+  "my_confidence_10": 4.3,
+  "data_completeness_pct": 73,
+  "risk": "Stuttgart周中欧冠后休息较短，Stiller、Vagnoman、Zagadou等缺阵；Werder连续不败，阵容伤停人数多。",
+  "pre_match_context": {
+    "recent_form": "Stuttgart last five L-W-L-L-W; Werder last five W-D-D-W-W",
+    "tactics": "Stuttgart probable 3-4-2-1; Bremen probable 3-4-2-1",
+    "probable_lineup_status": "official_league_probable_xi_not_confirmed",
+    "absences_and_doubts": "Stuttgart: Diehl, Malanga, Sauer, Stiller, Vagnoman, Zagadou out; Karazor doubtful. Bremen: Agu, Alvero, Erevbenagie, Musah, Ndiaye, Stage, Stark, Topp, Weiser out.",
+    "weather": "not verified",
+    "referee": "not verified"
+  },
+  "market": {
+    "official_sporttery_handicap": null,
+    "official_market_source": null,
+    "official_capture_time": null,
+    "opening_to_current_movement": null,
+    "handicap_prediction": "无法核验",
+    "third_party_asian_handicap_used": false,
+    "odds_used_as_result_determinant": false
+  },
+  "data_gaps": [
+    "官方竞彩让球盘口及采集时间未取得",
+    "初盘至即时盘同源记录未取得",
+    "正式首发尚未公布/未核实",
+    "完整赛前供应商原始响应及版本哈希未取得"
+  ],
+  "sources": [
+    {
+      "name": "xG.Football",
+      "url": "https://xg.football/de/matches/vfb-stuttgart-werder-bremen-2026-11-07",
+      "type": "provider_model_estimate"
+    },
+    {
+      "name": "Bundesliga official fixtures",
+      "url": "https://products.bundesliga.com/fixtures",
+      "type": "fixture"
+    }
+  ]
+}
