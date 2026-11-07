@@ -1,0 +1,30 @@
+{
+  "captured_at": "2026-11-07T02:59:42Z",
+  "beijing_date": "2026-11-06",
+  "iso_week": "2026-W45",
+  "unique_matches": 38,
+  "matches_with_at_least_one_supplier_xg": 16,
+  "missing_match_count": 22,
+  "match_level_coverage_pct": 42.11,
+  "supplier_match_source_groups": 34,
+  "team_provider_rows": 112,
+  "team_weekly_rows": 112,
+  "source_model_estimates_only": true,
+  "measured_official_xg_rows": 0,
+  "self_model_estimate_rows": 0,
+  "duplicate_match_team_provider_keys": 0,
+  "xgd_arithmetic_errors": 0,
+  "leakage_audit": "All records are post-match supplier estimates and are flagged input_eligible_for_same_match_prematch_prediction=false; no post-match xG is used as a pre-match feature.",
+  "team_id_limitation": "team_id uses deterministic internal slug because SQLite was not connected; map to canonical database team IDs in a later DB-connected audit.",
+  "missing_reason": "No free traceable match-level xG source located in this run; values remain null. Supplier model estimates and own-model estimates are not mixed.",
+  "supplier_discrepancy_groups": [
+    "Lillestrom-Viktoria Plzen",
+    "Levski Sofia-Jagiellonia",
+    "Trabzonspor-Freiburg",
+    "Twente-Pafos",
+    "Crvena Zvezda-Inter Club d'Escaldes",
+    "Lugano-Kauno Zalgiris",
+    "Aldosivi-River Plate"
+  ],
+  "whole_week_status": "incomplete; do not publish full-week sums or per-90 averages until all fixtures and team IDs are audited."
+}
