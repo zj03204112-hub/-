@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "prediction_id": "serie-a:2026-11-08:parma-bologna:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+  "match_id": "serie-a:2026-11-08:parma-bologna",
+  "competition": "Serie A",
+  "competition_category": "domestic_league_core",
+  "home": "Parma",
+  "away": "Bologna",
+  "kickoff_utc": "2026-11-07T17:00Z",
+  "kickoff_beijing": "2026-11-08T01:00+08:00",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "forecast_window_hours": "9.98",
+  "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-10",
+  "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+  "model_type": "independent_poisson_from_single_provider_projected_xg",
+  "prematch_projected_xg": {
+    "home": 1.11,
+    "away": 1.56,
+    "provider": "xG.Football",
+    "source_url": "https://xg.football/de/matches/parma-bologna-2026-11-07",
+    "value_type": "provider_model_estimate_not_measured_xg"
+  },
+  "score_predictions": [
+    {
+      "rank": 1,
+      "score": "1-1",
+      "probability_pct": 11.99
+    },
+    {
+      "rank": 2,
+      "score": "0-1",
+      "probability_pct": 10.8
+    }
+  ],
+  "full_time_probabilities_pct": {
+    "home_win": 27.06,
+    "draw": 25.22,
+    "away_win": 47.72
+  },
+  "half_time_full_time": {
+    "most_likely": "负负",
+    "probability_pct": 28.99,
+    "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+  },
+  "my_confidence_10": 3.8,
+  "data_completeness_pct": 68,
+  "risk": "Bologna近5场4胜1负，xG表现明显好于Parma；Parma近期进球偏少，Bologna也有后卫/前锋伤病。",
+  "pre_match_context": {
+    "recent_form": "Parma last five W-D-L-L-L; Bologna W-W-W-L-W",
+    "tactics": "Parma likely 3-5-2; Bologna 3-4-2-1",
+    "probable_lineup_status": "probable_only",
+    "absences_and_doubts": "Parma: Adrián Bernabé out; Nesta Elphege recent surgery/availability; Drobnic doubtful. Bologna: Emil Holm, De Silvestri, Roberto Piccoli reported unavailable/doubtful.",
+    "weather": "+9°C cloudy, wind 2 km/h",
+    "referee": "not verified"
+  },
+  "market": {
+    "official_sporttery_handicap": null,
+    "official_market_source": null,
+    "official_capture_time": null,
+    "opening_to_current_movement": null,
+    "handicap_prediction": "无法核验",
+    "third_party_asian_handicap_used": false,
+    "odds_used_as_result_determinant": false
+  },
+  "data_gaps": [
+    "官方竞彩让球盘口及采集时间未取得",
+    "初盘至即时盘同源记录未取得",
+    "正式首发尚未公布/未核实",
+    "完整赛前供应商原始响应及版本哈希未取得"
+  ],
+  "sources": [
+    {
+      "name": "xG.Football",
+      "url": "https://xg.football/de/matches/parma-bologna-2026-11-07",
+      "type": "provider_model_estimate"
+    },
+    {
+      "name": "Lega Serie A",
+      "url": "https://www.legaseriea.it/serie-a/calendario-risultati",
+      "type": "fixture"
+    }
+  ]
+}
