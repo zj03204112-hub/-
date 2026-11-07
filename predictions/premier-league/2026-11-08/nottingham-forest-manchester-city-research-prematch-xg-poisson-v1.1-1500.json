@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "prediction_id": "premier-league:2026-11-08:nottingham-forest-manchester-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+  "match_id": "premier-league:2026-11-08:nottingham-forest-manchester-city",
+  "competition": "Premier League",
+  "competition_category": "domestic_league_core",
+  "home": "Nottingham Forest",
+  "away": "Manchester City",
+  "kickoff_utc": "2026-11-07T17:30Z",
+  "kickoff_beijing": "2026-11-08T01:30+08:00",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "forecast_window_hours": "10.48",
+  "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-11",
+  "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+  "model_type": "independent_poisson_from_single_provider_projected_xg",
+  "prematch_projected_xg": {
+    "home": 1.22,
+    "away": 1.49,
+    "provider": "xG.Football",
+    "source_url": "https://xg.football/matches/nottingham-forest-manchester-city-2026-11-07",
+    "value_type": "provider_model_estimate_not_measured_xg"
+  },
+  "score_predictions": [
+    {
+      "rank": 1,
+      "score": "1-1",
+      "probability_pct": 12.1
+    },
+    {
+      "rank": 2,
+      "score": "0-1",
+      "probability_pct": 9.91
+    }
+  ],
+  "full_time_probabilities_pct": {
+    "home_win": 31.06,
+    "draw": 25.49,
+    "away_win": 43.45
+  },
+  "half_time_full_time": {
+    "most_likely": "负负",
+    "probability_pct": 26.05,
+    "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+  },
+  "my_confidence_10": 3.8,
+  "data_completeness_pct": 66,
+  "risk": "Forest主场进球困难，近5场1平4负；City近期联赛连续失利但进攻火力仍强。客队有Semenyo缺阵报道，赛程动机较高。",
+  "pre_match_context": {
+    "recent_form": "Forest last five 0W1D4L; City lost last two league matches, Haaland 14 goals across PL/UCL per preview",
+    "tactics": "Forest likely compact block/counter; City possession-based",
+    "probable_lineup_status": "not_confirmed",
+    "absences_and_doubts": "Forest reportedly missing three players; Manchester City without Semenyo per pre-match update; full official list not verified.",
+    "weather": "not verified",
+    "referee": "not verified"
+  },
+  "market": {
+    "official_sporttery_handicap": null,
+    "official_market_source": null,
+    "official_capture_time": null,
+    "opening_to_current_movement": null,
+    "handicap_prediction": "无法核验",
+    "third_party_asian_handicap_used": false,
+    "odds_used_as_result_determinant": false
+  },
+  "data_gaps": [
+    "官方竞彩让球盘口及采集时间未取得",
+    "初盘至即时盘同源记录未取得",
+    "正式首发尚未公布/未核实",
+    "完整赛前供应商原始响应及版本哈希未取得"
+  ],
+  "sources": [
+    {
+      "name": "xG.Football",
+      "url": "https://xg.football/matches/nottingham-forest-manchester-city-2026-11-07",
+      "type": "provider_model_estimate"
+    },
+    {
+      "name": "Premier League",
+      "url": "https://www.premierleague.com/en/news/4725574/fixture-amendments-for-premier-league-matches-in-november",
+      "type": "fixture"
+    }
+  ]
+}
