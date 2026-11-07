@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "prediction_id": "efl-championship:2026-11-07:blackburn-rovers-west-ham-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+  "match_id": "efl-championship:2026-11-07:blackburn-rovers-west-ham-united",
+  "competition": "EFL Championship",
+  "competition_category": "domestic_league_other",
+  "home": "Blackburn Rovers",
+  "away": "West Ham United",
+  "kickoff_utc": "2026-11-07T15:00Z",
+  "kickoff_beijing": "2026-11-07T23:00+08:00",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "forecast_window_hours": "7.98",
+  "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-16",
+  "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+  "model_type": "independent_poisson_from_single_provider_projected_xg",
+  "prematch_projected_xg": {
+    "home": 1.25,
+    "away": 1.85,
+    "provider": "xG.Football",
+    "source_url": "https://xg.football/matches/blackburn-west-ham-2026-11-07",
+    "value_type": "provider_model_estimate_not_measured_xg"
+  },
+  "score_predictions": [
+    {
+      "rank": 1,
+      "score": "1-1",
+      "probability_pct": 10.42
+    },
+    {
+      "rank": 2,
+      "score": "1-2",
+      "probability_pct": 9.64
+    }
+  ],
+  "full_time_probabilities_pct": {
+    "home_win": 25.81,
+    "draw": 22.74,
+    "away_win": 51.46
+  },
+  "half_time_full_time": {
+    "most_likely": "负负",
+    "probability_pct": 32.22,
+    "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+  },
+  "my_confidence_10": 3.6,
+  "data_completeness_pct": 65,
+  "risk": "West Ham近期xG和进攻产量明显更高；Blackburn主场表现起伏，客队防线仍有被反击打穿风险。",
+  "pre_match_context": {
+    "recent_form": "Blackburn last six xGD negative; West Ham last six xGD positive",
+    "tactics": "West Ham more progressive attack; Blackburn transition threat",
+    "probable_lineup_status": "not_verified",
+    "absences_and_doubts": "No complete confirmed XI/absence list captured.",
+    "weather": "+8°C per xGEdge recent-form preview",
+    "referee": "not verified"
+  },
+  "market": {
+    "official_sporttery_handicap": null,
+    "official_market_source": null,
+    "official_capture_time": null,
+    "opening_to_current_movement": null,
+    "handicap_prediction": "无法核验",
+    "third_party_asian_handicap_used": false,
+    "odds_used_as_result_determinant": false
+  },
+  "data_gaps": [
+    "官方竞彩让球盘口及采集时间未取得",
+    "初盘至即时盘同源记录未取得",
+    "正式首发尚未公布/未核实",
+    "完整赛前供应商原始响应及版本哈希未取得"
+  ],
+  "sources": [
+    {
+      "name": "xG.Football",
+      "url": "https://xg.football/matches/blackburn-west-ham-2026-11-07",
+      "type": "provider_model_estimate"
+    },
+    {
+      "name": "Guardian fixtures",
+      "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+      "type": "fixture"
+    }
+  ]
+}
