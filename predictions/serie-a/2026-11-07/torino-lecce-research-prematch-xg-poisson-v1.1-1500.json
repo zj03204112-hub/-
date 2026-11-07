@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "prediction_id": "serie-a:2026-11-07:torino-lecce:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+  "match_id": "serie-a:2026-11-07:torino-lecce",
+  "competition": "Serie A",
+  "competition_category": "domestic_league_core",
+  "home": "Torino",
+  "away": "Lecce",
+  "kickoff_utc": "2026-11-07T14:00Z",
+  "kickoff_beijing": "2026-11-07T22:00+08:00",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "forecast_window_hours": "6.98",
+  "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-02",
+  "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+  "model_type": "independent_poisson_from_single_provider_projected_xg",
+  "prematch_projected_xg": {
+    "home": 1.54,
+    "away": 1.5,
+    "provider": "xG.Football",
+    "source_url": "https://xg.football/de/matches/torino-lecce-2026-11-07",
+    "value_type": "provider_model_estimate_not_measured_xg"
+  },
+  "score_predictions": [
+    {
+      "rank": 1,
+      "score": "1-1",
+      "probability_pct": 11.05
+    },
+    {
+      "rank": 2,
+      "score": "2-1",
+      "probability_pct": 8.51
+    }
+  ],
+  "full_time_probabilities_pct": {
+    "home_win": 38.82,
+    "draw": 24.11,
+    "away_win": 37.07
+  },
+  "half_time_full_time": {
+    "most_likely": "胜胜",
+    "probability_pct": 23.21,
+    "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+  },
+  "my_confidence_10": 3.6,
+  "data_completeness_pct": 66,
+  "risk": "双方预期进球接近；Torino有中场及边翼卫伤疑，Mandragora缺阵，Lecce近期失球偏多。",
+  "pre_match_context": {
+    "recent_form": "Torino last five 3W0D2L; Lecce last five 1W0D4L",
+    "tactics": "Torino shape not confirmed; likely compact midfield; Lecce probable 4-2-3-1",
+    "probable_lineup_status": "not_confirmed",
+    "absences_and_doubts": "Torino: Pellegri out; Belghali, Cacciamani and Rodriguez doubts; Mandragora likely out. Lecce: Coulibaly reported out by one source, another feed lists no absences; Gaspar returned from suspension.",
+    "weather": "+12°C cloudy, wind 4 km/h",
+    "referee": "not verified"
+  },
+  "market": {
+    "official_sporttery_handicap": null,
+    "official_market_source": null,
+    "official_capture_time": null,
+    "opening_to_current_movement": null,
+    "handicap_prediction": "无法核验",
+    "third_party_asian_handicap_used": false,
+    "odds_used_as_result_determinant": false
+  },
+  "data_gaps": [
+    "官方竞彩让球盘口及采集时间未取得",
+    "初盘至即时盘同源记录未取得",
+    "正式首发尚未公布/未核实",
+    "完整赛前供应商原始响应及版本哈希未取得"
+  ],
+  "sources": [
+    {
+      "name": "xG.Football",
+      "url": "https://xg.football/de/matches/torino-lecce-2026-11-07",
+      "type": "provider_model_estimate"
+    },
+    {
+      "name": "Lega Serie A",
+      "url": "https://www.legaseriea.it/serie-a/calendario-risultati",
+      "type": "fixture"
+    }
+  ]
+}
