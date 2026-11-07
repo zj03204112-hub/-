@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "prediction_id": "la-liga:2026-11-07:espanyol-deportivo-de-la-coruna:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+  "match_id": "la-liga:2026-11-07:espanyol-deportivo-de-la-coruna",
+  "competition": "La Liga",
+  "competition_category": "domestic_league_core",
+  "home": "Espanyol",
+  "away": "Deportivo de La Coruña",
+  "kickoff_utc": "2026-11-07T15:15Z",
+  "kickoff_beijing": "2026-11-07T23:15+08:00",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "forecast_window_hours": "8.23",
+  "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-09",
+  "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+  "model_type": "independent_poisson_from_single_provider_projected_xg",
+  "prematch_projected_xg": {
+    "home": 1.05,
+    "away": 1.48,
+    "provider": "xG.Football",
+    "source_url": "https://xg.football/de/matches/espanyol-deportivo-la-coruna-2026-11-08",
+    "value_type": "provider_model_estimate_not_measured_xg"
+  },
+  "score_predictions": [
+    {
+      "rank": 1,
+      "score": "1-1",
+      "probability_pct": 12.38
+    },
+    {
+      "rank": 2,
+      "score": "0-1",
+      "probability_pct": 11.79
+    }
+  ],
+  "full_time_probabilities_pct": {
+    "home_win": 26.85,
+    "draw": 26.07,
+    "away_win": 47.08
+  },
+  "half_time_full_time": {
+    "most_likely": "负负",
+    "probability_pct": 28.35,
+    "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+  },
+  "my_confidence_10": 3.6,
+  "data_completeness_pct": 61,
+  "risk": "Espanyol主场近期进攻产量偏低；Deportivo最近客场仍有失球，但整体预期进球更高。客队休息天数较少。",
+  "pre_match_context": {
+    "recent_form": "Espanyol last five 1W1D3L at home; Deportivo recent five 3W? provider shows 1.89 xG/1.24 xGA per match over four",
+    "tactics": "probable formations not independently confirmed",
+    "probable_lineup_status": "probable_only",
+    "absences_and_doubts": "Espanyol: Jofre Carreras, Kike García injured; Roger Hinojo suspended. Deportivo: Bright Ede, Marc Casadó, Zakaria Eddahchouri injury concerns; Aubameyang return uncertain.",
+    "weather": "+18°C",
+    "referee": "not verified"
+  },
+  "market": {
+    "official_sporttery_handicap": null,
+    "official_market_source": null,
+    "official_capture_time": null,
+    "opening_to_current_movement": null,
+    "handicap_prediction": "无法核验",
+    "third_party_asian_handicap_used": false,
+    "odds_used_as_result_determinant": false
+  },
+  "data_gaps": [
+    "官方竞彩让球盘口及采集时间未取得",
+    "初盘至即时盘同源记录未取得",
+    "正式首发尚未公布/未核实",
+    "完整赛前供应商原始响应及版本哈希未取得"
+  ],
+  "sources": [
+    {
+      "name": "xG.Football",
+      "url": "https://xg.football/de/matches/espanyol-deportivo-la-coruna-2026-11-08",
+      "type": "provider_model_estimate"
+    },
+    {
+      "name": "Guardian CET fixtures",
+      "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+      "type": "fixture"
+    }
+  ]
+}
