@@ -1,0 +1,184 @@
+{
+  "run_date_beijing": "2026-11-07",
+  "run_type": "10:00_daily_review_schedule_xg_archive",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-07-1000-r1",
+  "status": "files_created_and_ready_for_readback",
+  "files": [
+    {
+      "path": "results/continental-club/2026-11-06/results.json",
+      "sha": "5ce0c6904bcb745606b407cd2d1f861b9f5fa61e",
+      "bytes": 24273,
+      "format": "json",
+      "rows": null,
+      "summary": 35
+    },
+    {
+      "path": "results/domestic-leagues/2026-11-06/results.json",
+      "sha": "d30e84b34ebe4af3ab18bb66402423370177d3d9",
+      "bytes": 1883,
+      "format": "json",
+      "rows": null,
+      "summary": 3
+    },
+    {
+      "path": "fixtures/2026-11-07-08/schedule.json",
+      "sha": "473b858e3d78c6ed603904872faa90c08bde8455",
+      "bytes": 132104,
+      "format": "json",
+      "rows": null,
+      "summary": 143
+    },
+    {
+      "path": "fixtures/2026-11-07-08/official-market-card-join-1000-r1.json",
+      "sha": "f1def61dde132155b3a18d5b2407eb61f7d87b37",
+      "bytes": 18623,
+      "format": "json",
+      "rows": null,
+      "summary": {
+        "cards": 23,
+        "matched": 22
+      }
+    },
+    {
+      "path": "fixtures/2026-11-07-08/schedule-audit-1000-r1.json",
+      "sha": "6538d364a0f7af228aeb96bb2e0b62dc368694ae",
+      "bytes": 1386,
+      "format": "json",
+      "rows": null,
+      "summary": null
+    },
+    {
+      "path": "reviews/2026-11-07/previous-day-review-1000-r2.json",
+      "sha": "1f2868f241a6b5ca4b2c13d20224f7f369e4aadb",
+      "bytes": 18420,
+      "format": "json",
+      "rows": null,
+      "summary": {
+        "matches": 38,
+        "snapshot_coverage": {
+          "confirmed_matches": 38,
+          "unique_matches_with_at_least_one_prediction_snapshot": 12,
+          "matches_without_prediction_snapshot": 26,
+          "coverage": 0.3157894736842105,
+          "overlap_between_raw8_and_full9": 5,
+          "note": "The raw8 and full9 snapshots overlap on five fixtures; do not sum their sample sizes or hit counts."
+        }
+      }
+    },
+    {
+      "path": "reviews/2026-11-07/current-day-early-results-1000-r2.json",
+      "sha": "c94bb72ac604ee52ea2fb3d817040e44b6ed19e7",
+      "bytes": 14564,
+      "format": "json",
+      "rows": null,
+      "summary": {
+        "gpt13": {
+          "matches": 13,
+          "one_x_two_hits": 8,
+          "score1_hits": 1,
+          "score2_hits": 2,
+          "half_full_eligible": 12,
+          "half_full_hits": 3,
+          "handicap_eligible": 0,
+          "handicap_unverifiable": 13
+        },
+        "research5": {
+          "matches": 5,
+          "one_x_two_hits": 0,
+          "score1_hits": 2,
+          "score2_hits": 0,
+          "half_full_hits": 0,
+          "handicap_eligible": 0,
+          "handicap_unverifiable": 5
+        }
+      }
+    },
+    {
+      "path": "reviews/2026-11-07/source-audit-1000-r1.json",
+      "sha": "aa7b57073eeaeafe985852c7f9eb29bcd5e186b8",
+      "bytes": 4694,
+      "format": "json",
+      "rows": null,
+      "summary": null
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/match_xg_delta-1000-r1.csv",
+      "sha": "818f3b39204ba639a83eb1f5da7b0fe3b44cbd02",
+      "bytes": 49133,
+      "format": "csv",
+      "rows": 76,
+      "summary": null
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/match_xg_snapshot-cumulative-1000-r1.csv",
+      "sha": "c310e79621c2c5604c85f7b253eba9e48859ee2c",
+      "bytes": 163744,
+      "format": "csv",
+      "rows": 326,
+      "summary": null
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/team_weekly_xg_snapshot-cumulative-1000-r1.csv",
+      "sha": "1067f40e87c5eac41f0dcbf99e0ecbbb154f3757",
+      "bytes": 113853,
+      "format": "csv",
+      "rows": 326,
+      "summary": null
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/xg_coverage_audit-1000-r1.json",
+      "sha": "01fe2a150a2d70ebede26722f3e733325f619a76",
+      "bytes": 5966,
+      "format": "json",
+      "rows": null,
+      "summary": {
+        "matches": 141,
+        "with_full_provider_xg": 53,
+        "partial_only_matches": 0,
+        "matches_with_any_partial_observation": 2,
+        "partial_observation_rows": 4,
+        "missing_full_xg_matches": 88,
+        "coverage": 0.375886524822695
+      }
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/xg_source_discrepancy_audit-1000-r1.json",
+      "sha": "c128f4112b51846e27e67f75dec36b5b11d60acb",
+      "bytes": 1681,
+      "format": "json",
+      "rows": null,
+      "summary": null
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/xg_provider_source_audit-1000-r1.json",
+      "sha": "c28503fc1a0c5f69e5b35d6b0d9f918328e6722f",
+      "bytes": 11976,
+      "format": "json",
+      "rows": null,
+      "summary": 20
+    }
+  ],
+  "superseded_drafts": [
+    "reviews/2026-11-07/previous-day-review.json",
+    "reviews/2026-11-07/previous-day-review-1000-r1.json",
+    "reviews/2026-11-07/current-day-early-results.json",
+    "reviews/2026-11-07/current-day-early-results-1000-r1.json",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-07/match_xg_delta-1000.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-07/match_xg_snapshot-cumulative-1000.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-07/team_weekly_xg_snapshot-cumulative-1000.csv",
+    "data/xg_weekly/2026-W45/snapshots/2026-11-07/xg_coverage_audit-1000.json"
+  ],
+  "supersession_reasons": [
+    "Corrected the full_prediction handicap summary from 0 to 2/9.",
+    "Linked the five immutable 2026-11-06 15:00 research snapshots and corrected their score1 summary.",
+    "Removed non-match-level team-season and shot-map values from the 2026-11-07 xG delta.",
+    "Recomputed cumulative ISO week 45 counts from preserved raw CSVs; previous summary counts were inconsistent."
+  ],
+  "database_status": "No direct SQLite or remote database connection in this run; GitHub archive and the existing official Sporttery risk_card snapshot were read.",
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "production_model_rules_changed": false
+  }
+}
