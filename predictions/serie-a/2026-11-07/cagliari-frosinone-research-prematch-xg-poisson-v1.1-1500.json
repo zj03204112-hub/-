@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "prediction_id": "serie-a:2026-11-07:cagliari-frosinone:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+  "match_id": "serie-a:2026-11-07:cagliari-frosinone",
+  "competition": "Serie A",
+  "competition_category": "domestic_league_core",
+  "home": "Cagliari",
+  "away": "Frosinone",
+  "kickoff_utc": "2026-11-07T14:00Z",
+  "kickoff_beijing": "2026-11-07T22:00+08:00",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "forecast_window_hours": "6.98",
+  "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-01",
+  "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+  "model_type": "independent_poisson_from_single_provider_projected_xg",
+  "prematch_projected_xg": {
+    "home": 1.73,
+    "away": 1.84,
+    "provider": "xG.Football",
+    "source_url": "https://xg.football/de/matches/cagliari-frosinone-2026-11-07",
+    "value_type": "provider_model_estimate_not_measured_xg"
+  },
+  "score_predictions": [
+    {
+      "rank": 1,
+      "score": "1-1",
+      "probability_pct": 8.96
+    },
+    {
+      "rank": 2,
+      "score": "1-2",
+      "probability_pct": 8.25
+    }
+  ],
+  "full_time_probabilities_pct": {
+    "home_win": 36.76,
+    "draw": 22.01,
+    "away_win": 41.23
+  },
+  "half_time_full_time": {
+    "most_likely": "负负",
+    "probability_pct": 25.31,
+    "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+  },
+  "my_confidence_10": 4,
+  "data_completeness_pct": 72,
+  "risk": "主队近5场1平4负；客队近5场3胜1平1负，进攻效率明显占优。Frosinone头号射手Raimondo伤停消息与另一数据源的缺阵名单不一致。",
+  "pre_match_context": {
+    "recent_form": "Cagliari last five 1D4L; Frosinone last five 3W1D1L",
+    "tactics": "Cagliari probable 4-3-2-1; Frosinone probable 4-2-3-1",
+    "probable_lineup_status": "probable_only",
+    "absences_and_doubts": "Cagliari: Riyad Idrissi out; Adam Obert suspension and Fadera/Deiola doubts reported by another preview. Frosinone: Antonio Raimondo and Florian Grillitsch reported out by one preview; provider injury feed shows no absences, conflict retained.",
+    "weather": "+19°C, dry/light wind",
+    "referee": "Giovanni Ayroldi"
+  },
+  "market": {
+    "official_sporttery_handicap": null,
+    "official_market_source": null,
+    "official_capture_time": null,
+    "opening_to_current_movement": null,
+    "handicap_prediction": "无法核验",
+    "third_party_asian_handicap_used": false,
+    "odds_used_as_result_determinant": false
+  },
+  "data_gaps": [
+    "官方竞彩让球盘口及采集时间未取得",
+    "初盘至即时盘同源记录未取得",
+    "正式首发尚未公布/未核实",
+    "完整赛前供应商原始响应及版本哈希未取得"
+  ],
+  "sources": [
+    {
+      "name": "xG.Football",
+      "url": "https://xg.football/de/matches/cagliari-frosinone-2026-11-07",
+      "type": "provider_model_estimate"
+    },
+    {
+      "name": "Lega Serie A",
+      "url": "https://www.legaseriea.it/serie-a/calendario-risultati",
+      "type": "fixture"
+    }
+  ]
+}
