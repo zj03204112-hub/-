@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "candidate_count": 58,
+  "forecasted": 23,
+  "deferred": 35,
+  "forecast_by_competition": {
+    "Serie A": 3,
+    "Bundesliga": 5,
+    "Premier League": 3,
+    "La Liga": 2,
+    "Ligue 1": 1,
+    "EFL Championship": 7,
+    "Primeira Liga": 2
+  },
+  "deferred_by_competition": {
+    "EFL Championship": 1,
+    "FA Cup": 32,
+    "Eliteserien": 2
+  },
+  "confirmed_official_starting_xi": 0,
+  "probable_lineup_from_official_league_preview": 5,
+  "official_handicap_verified": 0,
+  "opening_to_current_verified": 0,
+  "provider_projected_xg_team_rows": 46,
+  "missing_prematch_xg_team_rows": 70,
+  "sqlite_connected": false,
+  "v5_1_modified": false,
+  "frozen_validation_modified": false,
+  "limitations": [
+    "35 of 58 window candidates deferred because free, traceable match-level pre-match inputs were insufficient.",
+    "Provider projected xG is not measured match xG and is stored separately.",
+    "Official starting XI not yet published/verified at capture.",
+    "No official Sporttery handicap or same-source opening/current movement verified.",
+    "Weather, referee, tactics and injury coverage varies by match."
+  ]
+}
