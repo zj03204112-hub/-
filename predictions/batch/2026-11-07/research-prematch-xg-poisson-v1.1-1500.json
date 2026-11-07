@@ -1,0 +1,1921 @@
+{
+  "schema_version": "1.1",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+  "calculation": {
+    "score_distribution": "independent Poisson from single provider projected xG; truncated at 12 and renormalized",
+    "half_full": "45% first-half and 55% second-half goal split; independent Poisson; research estimate"
+  },
+  "count": 23,
+  "predictions": [
+    {
+      "schema_version": "1.1",
+      "prediction_id": "serie-a:2026-11-07:cagliari-frosinone:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "serie-a:2026-11-07:cagliari-frosinone",
+      "competition": "Serie A",
+      "competition_category": "domestic_league_core",
+      "home": "Cagliari",
+      "away": "Frosinone",
+      "kickoff_utc": "2026-11-07T14:00Z",
+      "kickoff_beijing": "2026-11-07T22:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "6.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-01",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.73,
+        "away": 1.84,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/cagliari-frosinone-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 8.96
+        },
+        {
+          "rank": 2,
+          "score": "1-2",
+          "probability_pct": 8.25
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 36.76,
+        "draw": 22.01,
+        "away_win": 41.23
+      },
+      "half_time_full_time": {
+        "most_likely": "负负",
+        "probability_pct": 25.31,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 4,
+      "data_completeness_pct": 72,
+      "risk": "主队近5场1平4负；客队近5场3胜1平1负，进攻效率明显占优。Frosinone头号射手Raimondo伤停消息与另一数据源的缺阵名单不一致。",
+      "pre_match_context": {
+        "recent_form": "Cagliari last five 1D4L; Frosinone last five 3W1D1L",
+        "tactics": "Cagliari probable 4-3-2-1; Frosinone probable 4-2-3-1",
+        "probable_lineup_status": "probable_only",
+        "absences_and_doubts": "Cagliari: Riyad Idrissi out; Adam Obert suspension and Fadera/Deiola doubts reported by another preview. Frosinone: Antonio Raimondo and Florian Grillitsch reported out by one preview; provider injury feed shows no absences, conflict retained.",
+        "weather": "+19°C, dry/light wind",
+        "referee": "Giovanni Ayroldi"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/cagliari-frosinone-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Lega Serie A",
+          "url": "https://www.legaseriea.it/serie-a/calendario-risultati",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "serie-a:2026-11-07:torino-lecce:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "serie-a:2026-11-07:torino-lecce",
+      "competition": "Serie A",
+      "competition_category": "domestic_league_core",
+      "home": "Torino",
+      "away": "Lecce",
+      "kickoff_utc": "2026-11-07T14:00Z",
+      "kickoff_beijing": "2026-11-07T22:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "6.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-02",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.54,
+        "away": 1.5,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/torino-lecce-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 11.05
+        },
+        {
+          "rank": 2,
+          "score": "2-1",
+          "probability_pct": 8.51
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 38.82,
+        "draw": 24.11,
+        "away_win": 37.07
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 23.21,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.6,
+      "data_completeness_pct": 66,
+      "risk": "双方预期进球接近；Torino有中场及边翼卫伤疑，Mandragora缺阵，Lecce近期失球偏多。",
+      "pre_match_context": {
+        "recent_form": "Torino last five 3W0D2L; Lecce last five 1W0D4L",
+        "tactics": "Torino shape not confirmed; likely compact midfield; Lecce probable 4-2-3-1",
+        "probable_lineup_status": "not_confirmed",
+        "absences_and_doubts": "Torino: Pellegri out; Belghali, Cacciamani and Rodriguez doubts; Mandragora likely out. Lecce: Coulibaly reported out by one source, another feed lists no absences; Gaspar returned from suspension.",
+        "weather": "+12°C cloudy, wind 4 km/h",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/torino-lecce-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Lega Serie A",
+          "url": "https://www.legaseriea.it/serie-a/calendario-risultati",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "bundesliga:2026-11-07:borussia-dortmund-sv-elversberg:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "bundesliga:2026-11-07:borussia-dortmund-sv-elversberg",
+      "competition": "Bundesliga",
+      "competition_category": "domestic_league_core",
+      "home": "Borussia Dortmund",
+      "away": "SV Elversberg",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.48",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-03",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 2.07,
+        "away": 1.27,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/borussia-dortmund-sv-elversberg-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "2-1",
+          "probability_pct": 9.64
+        },
+        {
+          "rank": 2,
+          "score": "1-1",
+          "probability_pct": 9.32
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 55.83,
+        "draw": 21.1,
+        "away_win": 23.07
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 35.8,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 4.6,
+      "data_completeness_pct": 75,
+      "risk": "Dortmund midweek Champions League load; Guirassy unavailable, so finishing/central striker role changes. Elversberg away defence allows high xGA.",
+      "pre_match_context": {
+        "recent_form": "Dortmund last five 4W1D; Elversberg 2W0D3L",
+        "tactics": "Dortmund probable 3-4-2-1; Elversberg probable 4-2-3-1",
+        "probable_lineup_status": "official_league_probable_xi_not_confirmed",
+        "absences_and_doubts": "Dortmund: Guirassy, Can, Konstantelias, Lerma out per Bundesliga probable-team page; Elversberg: Gyamerah, Seifert, Zimmerschied out; Darvich doubtful.",
+        "weather": "not independently verified",
+        "referee": "Harm Osmers"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/borussia-dortmund-sv-elversberg-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Bundesliga official fixtures",
+          "url": "https://products.bundesliga.com/fixtures",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "bundesliga:2026-11-07:mainz-05-bayern-munich:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "bundesliga:2026-11-07:mainz-05-bayern-munich",
+      "competition": "Bundesliga",
+      "competition_category": "domestic_league_core",
+      "home": "Mainz 05",
+      "away": "Bayern Munich",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.48",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-04",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.43,
+        "away": 2.39,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/fsv-mainz-05-bayern-munchen-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-2",
+          "probability_pct": 8.96
+        },
+        {
+          "rank": 2,
+          "score": "1-1",
+          "probability_pct": 7.49
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 22.09,
+        "draw": 19.12,
+        "away_win": 58.79
+      },
+      "half_time_full_time": {
+        "most_likely": "负负",
+        "probability_pct": 38.64,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 4.5,
+      "data_completeness_pct": 74,
+      "risk": "Bayern客场进攻强，但Díaz、Gnabry、Musiala等缺阵/状态受限；Mainz后防停赛和伤病集中，存在大比分尾部风险。",
+      "pre_match_context": {
+        "recent_form": "Mainz last five all competitions 1W4L; Bayern recent xG attack 3.27 per match over five",
+        "tactics": "Mainz probable 3-5-2; Bayern probable 4-2-3-1",
+        "probable_lineup_status": "official_league_probable_xi_not_confirmed",
+        "absences_and_doubts": "Mainz: Kohr out, Mwene and Posch suspended, Silas out; Bayern: Díaz, Gnabry, Musiala and others unavailable/doubtful per probable-team report.",
+        "weather": "+12°C",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/fsv-mainz-05-bayern-munchen-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Bundesliga official fixtures",
+          "url": "https://products.bundesliga.com/fixtures",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "bundesliga:2026-11-07:rb-leipzig-fc-augsburg:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "bundesliga:2026-11-07:rb-leipzig-fc-augsburg",
+      "competition": "Bundesliga",
+      "competition_category": "domestic_league_core",
+      "home": "RB Leipzig",
+      "away": "FC Augsburg",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.48",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-05",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 2.53,
+        "away": 1.68,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/rb-leipzig-fc-augsburg-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "2-1",
+          "probability_pct": 7.98
+        },
+        {
+          "rank": 2,
+          "score": "3-1",
+          "probability_pct": 6.73
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 56.32,
+        "draw": 18.67,
+        "away_win": 25.01
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 37.03,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 4.7,
+      "data_completeness_pct": 78,
+      "risk": "Leipzig周中欧冠刚结束，主场攻击力强但防线并非完全稳定；Augsburg连续不胜且缺阵较多，双方进球风险偏高。",
+      "pre_match_context": {
+        "recent_form": "Leipzig last five 3W0D2L; Augsburg last five 1W2D2L",
+        "tactics": "Leipzig probable 4-2-3-1; Augsburg probable 3-4-2-1",
+        "probable_lineup_status": "official_league_probable_xi_not_confirmed",
+        "absences_and_doubts": "Leipzig: Gebel, Guiu, Ouédraogo out; Nusa doubtful. Augsburg: Bah suspended; Banks, Brackelmann, Breithaupt, Mounié, Sakar out.",
+        "weather": "+9°C cloudy, wind 3 km/h",
+        "referee": "Daniel Schlager"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/rb-leipzig-fc-augsburg-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Bundesliga official fixtures",
+          "url": "https://products.bundesliga.com/fixtures",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "bundesliga:2026-11-07:sc-paderborn-eintracht-frankfurt:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "bundesliga:2026-11-07:sc-paderborn-eintracht-frankfurt",
+      "competition": "Bundesliga",
+      "competition_category": "domestic_league_core",
+      "home": "SC Paderborn",
+      "away": "Eintracht Frankfurt",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.48",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-06",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.6,
+        "away": 1.66,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/sc-paderborn-07-eintracht-frankfurt-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 10.2
+        },
+        {
+          "rank": 2,
+          "score": "1-2",
+          "probability_pct": 8.46
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 37.14,
+        "draw": 23.17,
+        "away_win": 39.68
+      },
+      "half_time_full_time": {
+        "most_likely": "负负",
+        "probability_pct": 23.99,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.9,
+      "data_completeness_pct": 73,
+      "risk": "Paderborn近期防守改善但进攻产量低；Frankfurt客场防守脆弱，Koch膝部情况有疑问，Götze缺阵。",
+      "pre_match_context": {
+        "recent_form": "Paderborn last five 1W2D2L; Frankfurt last five 3W0D2L per match data",
+        "tactics": "Paderborn probable 3-5-2; Frankfurt probable 4-4-2",
+        "probable_lineup_status": "official_league_probable_xi_not_confirmed",
+        "absences_and_doubts": "Paderborn: Awortwie-Grant, Batista Meier, Gayret, Hoffmeier, Klaas out; Pieringer doubtful. Frankfurt: Ngankam out; Koch doubtful, Götze unavailable reported by another source.",
+        "weather": "+7°C",
+        "referee": "Bastian Dankert"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/sc-paderborn-07-eintracht-frankfurt-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Bundesliga official fixtures",
+          "url": "https://products.bundesliga.com/fixtures",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "premier-league:2026-11-07:arsenal-hull-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "premier-league:2026-11-07:arsenal-hull-city",
+      "competition": "Premier League",
+      "competition_category": "domestic_league_core",
+      "home": "Arsenal",
+      "away": "Hull City",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-07",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.57,
+        "away": 0.94,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/matches/arsenal-hull-city-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-0",
+          "probability_pct": 12.76
+        },
+        {
+          "rank": 2,
+          "score": "1-1",
+          "probability_pct": 11.99
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 52.06,
+        "draw": 25.34,
+        "away_win": 22.6
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 31.87,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 4.4,
+      "data_completeness_pct": 68,
+      "risk": "Arsenal周中欧冠消耗，Saka缺阵、Dowman停赛；Hull前9轮有5场平局，低位防守可能压缩主队空间。",
+      "pre_match_context": {
+        "recent_form": "Arsenal 1st with 24 points after 9; Hull 11th with 11 points; Hull drew five of first nine",
+        "tactics": "Arsenal possession/territorial control; Hull likely compact low block",
+        "probable_lineup_status": "not_confirmed",
+        "absences_and_doubts": "Arsenal: Bukayo Saka out; Max Dowman suspended. Hull: no reliable confirmed absence list captured.",
+        "weather": "+10°C drizzle, 0.4mm, wind 7 km/h",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/matches/arsenal-hull-city-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Premier League",
+          "url": "https://www.premierleague.com/en/news/4725574/fixture-amendments-for-premier-league-matches-in-november",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "premier-league:2026-11-07:fulham-newcastle-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "premier-league:2026-11-07:fulham-newcastle-united",
+      "competition": "Premier League",
+      "competition_category": "domestic_league_core",
+      "home": "Fulham",
+      "away": "Newcastle United",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-08",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.66,
+        "away": 1.29,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/matches/fulham-newcastle-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 11.21
+        },
+        {
+          "rank": 2,
+          "score": "2-1",
+          "probability_pct": 9.3
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 46.11,
+        "draw": 24.08,
+        "away_win": 29.81
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 28.18,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 4,
+      "data_completeness_pct": 70,
+      "risk": "Fulham近3场拿7分；Newcastle中场Joelinton伤缺、Jacob Ramsey停赛，Fernandez-Pardo待评估。客队中场拦截和轮换受影响。",
+      "pre_match_context": {
+        "recent_form": "Fulham last five D-W-W-L-D; Newcastle L-W-L-L-W",
+        "tactics": "Fulham improving home transition; Newcastle midfield availability weakened",
+        "probable_lineup_status": "not_confirmed",
+        "absences_and_doubts": "Fulham: Tom Cairney and Ryan Sessegnon reported out. Newcastle: Joelinton injured, Jacob Ramsey suspended, Matias Fernandez-Pardo illness assessment.",
+        "weather": "not verified",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/matches/fulham-newcastle-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Premier League",
+          "url": "https://www.premierleague.com/en/news/4725574/fixture-amendments-for-premier-league-matches-in-november",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "la-liga:2026-11-07:espanyol-deportivo-de-la-coruna:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "la-liga:2026-11-07:espanyol-deportivo-de-la-coruna",
+      "competition": "La Liga",
+      "competition_category": "domestic_league_core",
+      "home": "Espanyol",
+      "away": "Deportivo de La Coruña",
+      "kickoff_utc": "2026-11-07T15:15Z",
+      "kickoff_beijing": "2026-11-07T23:15+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "8.23",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-09",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.05,
+        "away": 1.48,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/espanyol-deportivo-la-coruna-2026-11-08",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 12.38
+        },
+        {
+          "rank": 2,
+          "score": "0-1",
+          "probability_pct": 11.79
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 26.85,
+        "draw": 26.07,
+        "away_win": 47.08
+      },
+      "half_time_full_time": {
+        "most_likely": "负负",
+        "probability_pct": 28.35,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.6,
+      "data_completeness_pct": 61,
+      "risk": "Espanyol主场近期进攻产量偏低；Deportivo最近客场仍有失球，但整体预期进球更高。客队休息天数较少。",
+      "pre_match_context": {
+        "recent_form": "Espanyol last five 1W1D3L at home; Deportivo recent five 3W? provider shows 1.89 xG/1.24 xGA per match over four",
+        "tactics": "probable formations not independently confirmed",
+        "probable_lineup_status": "probable_only",
+        "absences_and_doubts": "Espanyol: Jofre Carreras, Kike García injured; Roger Hinojo suspended. Deportivo: Bright Ede, Marc Casadó, Zakaria Eddahchouri injury concerns; Aubameyang return uncertain.",
+        "weather": "+18°C",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/espanyol-deportivo-la-coruna-2026-11-08",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Guardian CET fixtures",
+          "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "serie-a:2026-11-08:parma-bologna:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "serie-a:2026-11-08:parma-bologna",
+      "competition": "Serie A",
+      "competition_category": "domestic_league_core",
+      "home": "Parma",
+      "away": "Bologna",
+      "kickoff_utc": "2026-11-07T17:00Z",
+      "kickoff_beijing": "2026-11-08T01:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "9.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-10",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.11,
+        "away": 1.56,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/parma-bologna-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 11.99
+        },
+        {
+          "rank": 2,
+          "score": "0-1",
+          "probability_pct": 10.8
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 27.06,
+        "draw": 25.22,
+        "away_win": 47.72
+      },
+      "half_time_full_time": {
+        "most_likely": "负负",
+        "probability_pct": 28.99,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.8,
+      "data_completeness_pct": 68,
+      "risk": "Bologna近5场4胜1负，xG表现明显好于Parma；Parma近期进球偏少，Bologna也有后卫/前锋伤病。",
+      "pre_match_context": {
+        "recent_form": "Parma last five W-D-L-L-L; Bologna W-W-W-L-W",
+        "tactics": "Parma likely 3-5-2; Bologna 3-4-2-1",
+        "probable_lineup_status": "probable_only",
+        "absences_and_doubts": "Parma: Adrián Bernabé out; Nesta Elphege recent surgery/availability; Drobnic doubtful. Bologna: Emil Holm, De Silvestri, Roberto Piccoli reported unavailable/doubtful.",
+        "weather": "+9°C cloudy, wind 2 km/h",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/parma-bologna-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Lega Serie A",
+          "url": "https://www.legaseriea.it/serie-a/calendario-risultati",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "premier-league:2026-11-08:nottingham-forest-manchester-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "premier-league:2026-11-08:nottingham-forest-manchester-city",
+      "competition": "Premier League",
+      "competition_category": "domestic_league_core",
+      "home": "Nottingham Forest",
+      "away": "Manchester City",
+      "kickoff_utc": "2026-11-07T17:30Z",
+      "kickoff_beijing": "2026-11-08T01:30+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "10.48",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-11",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.22,
+        "away": 1.49,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/matches/nottingham-forest-manchester-city-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 12.1
+        },
+        {
+          "rank": 2,
+          "score": "0-1",
+          "probability_pct": 9.91
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 31.06,
+        "draw": 25.49,
+        "away_win": 43.45
+      },
+      "half_time_full_time": {
+        "most_likely": "负负",
+        "probability_pct": 26.05,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.8,
+      "data_completeness_pct": 66,
+      "risk": "Forest主场进球困难，近5场1平4负；City近期联赛连续失利但进攻火力仍强。客队有Semenyo缺阵报道，赛程动机较高。",
+      "pre_match_context": {
+        "recent_form": "Forest last five 0W1D4L; City lost last two league matches, Haaland 14 goals across PL/UCL per preview",
+        "tactics": "Forest likely compact block/counter; City possession-based",
+        "probable_lineup_status": "not_confirmed",
+        "absences_and_doubts": "Forest reportedly missing three players; Manchester City without Semenyo per pre-match update; full official list not verified.",
+        "weather": "not verified",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/matches/nottingham-forest-manchester-city-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Premier League",
+          "url": "https://www.premierleague.com/en/news/4725574/fixture-amendments-for-premier-league-matches-in-november",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "la-liga:2026-11-08:osasuna-athletic-club:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "la-liga:2026-11-08:osasuna-athletic-club",
+      "competition": "La Liga",
+      "competition_category": "domestic_league_core",
+      "home": "Osasuna",
+      "away": "Athletic Club",
+      "kickoff_utc": "2026-11-07T17:30Z",
+      "kickoff_beijing": "2026-11-08T01:30+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "10.48",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-12",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.15,
+        "away": 1.23,
+        "provider": "xGEdge",
+        "source_url": "https://www.xg-edge.com/la-liga/osasuna-vs-athletic-club-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 13.09
+        },
+        {
+          "rank": 2,
+          "score": "0-1",
+          "probability_pct": 11.38
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 34.17,
+        "draw": 27.77,
+        "away_win": 38.06
+      },
+      "half_time_full_time": {
+        "most_likely": "负负",
+        "probability_pct": 22.06,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.4,
+      "data_completeness_pct": 62,
+      "risk": "两队胜率接近；Athletic近期xGD较好，Osasuna主场防守波动，裁判尚未指派。",
+      "pre_match_context": {
+        "recent_form": "Osasuna last five L-L-W-L-D; Athletic last five W-W-L-D-D",
+        "tactics": "Athletic higher press/transition; Osasuna compact home block",
+        "probable_lineup_status": "not_confirmed",
+        "absences_and_doubts": "No absences reported in one injury list; final club confirmation not obtained.",
+        "weather": "+12°C",
+        "referee": "not appointed as of source update"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xGEdge",
+          "url": "https://www.xg-edge.com/la-liga/osasuna-vs-athletic-club-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Guardian CET fixtures",
+          "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "bundesliga:2026-11-08:vfb-stuttgart-werder-bremen:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "bundesliga:2026-11-08:vfb-stuttgart-werder-bremen",
+      "competition": "Bundesliga",
+      "competition_category": "domestic_league_core",
+      "home": "VfB Stuttgart",
+      "away": "Werder Bremen",
+      "kickoff_utc": "2026-11-07T17:30Z",
+      "kickoff_beijing": "2026-11-08T01:30+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "10.48",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-13",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 2.12,
+        "away": 1.47,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/vfb-stuttgart-werder-bremen-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "2-1",
+          "probability_pct": 9.12
+        },
+        {
+          "rank": 2,
+          "score": "1-1",
+          "probability_pct": 8.6
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 52.54,
+        "draw": 20.9,
+        "away_win": 26.57
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 33.55,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 4.3,
+      "data_completeness_pct": 73,
+      "risk": "Stuttgart周中欧冠后休息较短，Stiller、Vagnoman、Zagadou等缺阵；Werder连续不败，阵容伤停人数多。",
+      "pre_match_context": {
+        "recent_form": "Stuttgart last five L-W-L-L-W; Werder last five W-D-D-W-W",
+        "tactics": "Stuttgart probable 3-4-2-1; Bremen probable 3-4-2-1",
+        "probable_lineup_status": "official_league_probable_xi_not_confirmed",
+        "absences_and_doubts": "Stuttgart: Diehl, Malanga, Sauer, Stiller, Vagnoman, Zagadou out; Karazor doubtful. Bremen: Agu, Alvero, Erevbenagie, Musah, Ndiaye, Stage, Stark, Topp, Weiser out.",
+        "weather": "not verified",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/vfb-stuttgart-werder-bremen-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Bundesliga official fixtures",
+          "url": "https://products.bundesliga.com/fixtures",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "ligue-1:2026-11-08:auxerre-paris-fc:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "ligue-1:2026-11-08:auxerre-paris-fc",
+      "competition": "Ligue 1",
+      "competition_category": "domestic_league_core",
+      "home": "Auxerre",
+      "away": "Paris FC",
+      "kickoff_utc": "2026-11-07T17:00Z",
+      "kickoff_beijing": "2026-11-08T01:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "9.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-14",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.27,
+        "away": 1.68,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/auxerre-paris-fc-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 11.17
+        },
+        {
+          "rank": 2,
+          "score": "1-2",
+          "probability_pct": 9.38
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 28.99,
+        "draw": 23.98,
+        "away_win": 47.04
+      },
+      "half_time_full_time": {
+        "most_likely": "负负",
+        "probability_pct": 28.84,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 4,
+      "data_completeness_pct": 70,
+      "risk": "Auxerre上轮5-1失利，Paris FC排名更高且客场xGA较低；双方都有伤停，Auxerre后防人手受限。",
+      "pre_match_context": {
+        "recent_form": "Auxerre last five mixed, recent 1-5 defeat at Strasbourg; Paris FC won 3-1 over Monaco",
+        "tactics": "Auxerre may use 3-4-2-1; Paris FC likely 4-2-3-1",
+        "probable_lineup_status": "probable_only",
+        "absences_and_doubts": "Auxerre: Assane Dioussé, Bryan Okoh out; Sekou Fofana doubtful; Axel Tuanzebe uncertain; Lamfia Dioubaté suspended. Paris FC: Adama Camara, Jonathan Ikoné, Luca Koleosho, Nhoa Sangui reported out/doubtful.",
+        "weather": "+8°C",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/auxerre-paris-fc-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Guardian / Ligue 1 fixtures",
+          "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "efl-championship:2026-11-07:birmingham-city-swansea-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "efl-championship:2026-11-07:birmingham-city-swansea-city",
+      "competition": "EFL Championship",
+      "competition_category": "domestic_league_other",
+      "home": "Birmingham City",
+      "away": "Swansea City",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-15",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.74,
+        "away": 1.16,
+        "provider": "Metis",
+        "source_url": "https://metisfootball.com/match/championship/birmingham-city-vs-swansea-city-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 11.11
+        },
+        {
+          "rank": 2,
+          "score": "2-1",
+          "probability_pct": 9.66
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 50.96,
+        "draw": 23.64,
+        "away_win": 25.4
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 31.61,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.2,
+      "data_completeness_pct": 55,
+      "risk": "Birmingham主场不败时间较长，但Swansea积分排名更高，客场表现波动；两队风格对位存在不确定性。",
+      "pre_match_context": {
+        "recent_form": "Birmingham last five home unbeaten streak 10; Swansea away results mixed per preview",
+        "tactics": "not independently verified",
+        "probable_lineup_status": "not_verified",
+        "absences_and_doubts": "No reliable match-specific injury/lineup source captured.",
+        "weather": "not verified",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "Metis",
+          "url": "https://metisfootball.com/match/championship/birmingham-city-vs-swansea-city-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Guardian fixtures",
+          "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "efl-championship:2026-11-07:blackburn-rovers-west-ham-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "efl-championship:2026-11-07:blackburn-rovers-west-ham-united",
+      "competition": "EFL Championship",
+      "competition_category": "domestic_league_other",
+      "home": "Blackburn Rovers",
+      "away": "West Ham United",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-16",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.25,
+        "away": 1.85,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/matches/blackburn-west-ham-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 10.42
+        },
+        {
+          "rank": 2,
+          "score": "1-2",
+          "probability_pct": 9.64
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 25.81,
+        "draw": 22.74,
+        "away_win": 51.46
+      },
+      "half_time_full_time": {
+        "most_likely": "负负",
+        "probability_pct": 32.22,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.6,
+      "data_completeness_pct": 65,
+      "risk": "West Ham近期xG和进攻产量明显更高；Blackburn主场表现起伏，客队防线仍有被反击打穿风险。",
+      "pre_match_context": {
+        "recent_form": "Blackburn last six xGD negative; West Ham last six xGD positive",
+        "tactics": "West Ham more progressive attack; Blackburn transition threat",
+        "probable_lineup_status": "not_verified",
+        "absences_and_doubts": "No complete confirmed XI/absence list captured.",
+        "weather": "+8°C per xGEdge recent-form preview",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/matches/blackburn-west-ham-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Guardian fixtures",
+          "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "efl-championship:2026-11-07:cardiff-city-burnley:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "efl-championship:2026-11-07:cardiff-city-burnley",
+      "competition": "EFL Championship",
+      "competition_category": "domestic_league_other",
+      "home": "Cardiff City",
+      "away": "Burnley",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-17",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.88,
+        "away": 1.45,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/matches/cardiff-burnley-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 9.76
+        },
+        {
+          "rank": 2,
+          "score": "2-1",
+          "probability_pct": 9.17
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 47.77,
+        "draw": 22.38,
+        "away_win": 29.85
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 29.76,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.5,
+      "data_completeness_pct": 61,
+      "risk": "Cardiff主场进攻强但防守稳定性不足；Burnley积分靠后但反击有威胁，不同预测源的胜平负分布差异较大。",
+      "pre_match_context": {
+        "recent_form": "Cardiff last five 2W2D1L; strong home scoring streak",
+        "tactics": "Cardiff likely proactive home attack; Burnley compact/transition",
+        "probable_lineup_status": "not_verified",
+        "absences_and_doubts": "No complete confirmed XI/absence list captured.",
+        "weather": "+10°C mostly clear per ForzaPitch, source time 16:00 UK; forecast may differ",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/matches/cardiff-burnley-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Guardian fixtures",
+          "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "efl-championship:2026-11-07:charlton-athletic-sheffield-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "efl-championship:2026-11-07:charlton-athletic-sheffield-united",
+      "competition": "EFL Championship",
+      "competition_category": "domestic_league_other",
+      "home": "Charlton Athletic",
+      "away": "Sheffield United",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-18",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.08,
+        "away": 1.48,
+        "provider": "Metis",
+        "source_url": "https://metisfootball.com/match/championship/charlton-athletic-vs-sheffield-united-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 12.36
+        },
+        {
+          "rank": 2,
+          "score": "0-1",
+          "probability_pct": 11.44
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 27.63,
+        "draw": 25.99,
+        "away_win": 46.37
+      },
+      "half_time_full_time": {
+        "most_likely": "负负",
+        "probability_pct": 27.9,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.2,
+      "data_completeness_pct": 57,
+      "risk": "双方实力接近，Sheffield United略占优；平局概率不低，缺少完整伤停和临场阵容。",
+      "pre_match_context": {
+        "recent_form": "limited last-five detail; xG source model update 4 Nov",
+        "tactics": "not independently verified",
+        "probable_lineup_status": "not_verified",
+        "absences_and_doubts": "No reliable match-specific injury/lineup source captured.",
+        "weather": "not verified",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "Metis",
+          "url": "https://metisfootball.com/match/championship/charlton-athletic-vs-sheffield-united-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Guardian fixtures",
+          "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "efl-championship:2026-11-07:preston-north-end-southampton:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "efl-championship:2026-11-07:preston-north-end-southampton",
+      "competition": "EFL Championship",
+      "competition_category": "domestic_league_other",
+      "home": "Preston North End",
+      "away": "Southampton",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-19",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.32,
+        "away": 1.69,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/preston-southampton-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 11
+        },
+        {
+          "rank": 2,
+          "score": "1-2",
+          "probability_pct": 9.29
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 30.01,
+        "draw": 23.81,
+        "away_win": 46.18
+      },
+      "half_time_full_time": {
+        "most_likely": "负负",
+        "probability_pct": 28.29,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.7,
+      "data_completeness_pct": 66,
+      "risk": "Preston排名垫底且失球多，Southampton进攻效率高；主队伤停和防线人手不足是主要风险。",
+      "pre_match_context": {
+        "recent_form": "Preston 12:30 goals after 14 matches; Southampton 29:14; xG recent five 0.85/2.11 vs 1.71/1.38",
+        "tactics": "Preston likely defensive block; Southampton higher press",
+        "probable_lineup_status": "not_verified",
+        "absences_and_doubts": "Preston multiple defensive/midfield absences reported by preview; exact complete list not independently confirmed.",
+        "weather": "+9°C",
+        "referee": "T. Nield per TheyScored; official appointment not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/preston-southampton-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Guardian fixtures",
+          "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "efl-championship:2026-11-07:queens-park-rangers-lincoln-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "efl-championship:2026-11-07:queens-park-rangers-lincoln-city",
+      "competition": "EFL Championship",
+      "competition_category": "domestic_league_other",
+      "home": "Queens Park Rangers",
+      "away": "Lincoln City",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-20",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.83,
+        "away": 1,
+        "provider": "Metis",
+        "source_url": "https://metisfootball.com/match/championship/qpr-vs-lincoln-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-0",
+          "probability_pct": 10.8
+        },
+        {
+          "rank": 2,
+          "score": "1-1",
+          "probability_pct": 10.8
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 56.84,
+        "draw": 22.77,
+        "away_win": 20.39
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 35.89,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.8,
+      "data_completeness_pct": 64,
+      "risk": "QPR主场进攻强且近期不败，Lincoln客场近况偏弱；主队仍有防守转换风险。",
+      "pre_match_context": {
+        "recent_form": "QPR last five home includes 5-0 and 4-1 wins; Lincoln three away matches without win",
+        "tactics": "QPR proactive home approach; Lincoln compact away",
+        "probable_lineup_status": "not_verified",
+        "absences_and_doubts": "No reliable match-specific injury/lineup source captured.",
+        "weather": "partly cloudy 11.2°C per ForzaPitch",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "Metis",
+          "url": "https://metisfootball.com/match/championship/qpr-vs-lincoln-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Guardian fixtures",
+          "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "efl-championship:2026-11-07:west-bromwich-albion-millwall:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "efl-championship:2026-11-07:west-bromwich-albion-millwall",
+      "competition": "EFL Championship",
+      "competition_category": "domestic_league_other",
+      "home": "West Bromwich Albion",
+      "away": "Millwall",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "7.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-21",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.65,
+        "away": 1.16,
+        "provider": "Metis",
+        "source_url": "https://metisfootball.com/match/championship/west-brom-vs-millwall-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 11.52
+        },
+        {
+          "rank": 2,
+          "score": "1-0",
+          "probability_pct": 9.93
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 48.8,
+        "draw": 24.38,
+        "away_win": 26.82
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 29.93,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.4,
+      "data_completeness_pct": 60,
+      "risk": "West Brom主场表现稳定，但历史交锋平局偏多；Millwall客场进攻不稳，比分分布较分散。",
+      "pre_match_context": {
+        "recent_form": "West Brom last five W-W-D-W-D; Millwall L-D-L-W-L",
+        "tactics": "West Brom possession and wide attacks; Millwall compact block",
+        "probable_lineup_status": "not_verified",
+        "absences_and_doubts": "No complete confirmed XI/absence list captured.",
+        "weather": "not verified",
+        "referee": "Thomas Bramall listed by one data source; official appointment not cross-checked"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "Metis",
+          "url": "https://metisfootball.com/match/championship/west-brom-vs-millwall-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Guardian fixtures",
+          "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "primeira-liga:2026-11-08:nacional-academico-de-viseu:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "primeira-liga:2026-11-08:nacional-academico-de-viseu",
+      "competition": "Primeira Liga",
+      "competition_category": "domestic_league_other",
+      "home": "Nacional",
+      "away": "Academico de Viseu",
+      "kickoff_utc": "2026-11-07T16:30Z",
+      "kickoff_beijing": "2026-11-08T00:30+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "9.48",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-22",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.35,
+        "away": 1.18,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/nacional-academico-viseu-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 12.69
+        },
+        {
+          "rank": 2,
+          "score": "1-0",
+          "probability_pct": 10.75
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 40.68,
+        "draw": 26.7,
+        "away_win": 32.63
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 23.96,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3,
+      "data_completeness_pct": 48,
+      "risk": "Nacional联赛排名较低且失球多，Academico积分明显更高；样本仅3场xG，可靠性不足。",
+      "pre_match_context": {
+        "recent_form": "Nacional 10 goals for/19 against after 10; Academico 15/12 after 10",
+        "tactics": "not independently verified",
+        "probable_lineup_status": "not_verified",
+        "absences_and_doubts": "No reliable match-specific injury/lineup source captured.",
+        "weather": "+20°C",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/nacional-academico-viseu-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Sky Sports fixtures",
+          "url": "https://www.skysports.com/portuguese-liga-scores-fixtures",
+          "type": "fixture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1",
+      "prediction_id": "primeira-liga:2026-11-08:alverca-casa-pia:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+      "match_id": "primeira-liga:2026-11-08:alverca-casa-pia",
+      "competition": "Primeira Liga",
+      "competition_category": "domestic_league_other",
+      "home": "Alverca",
+      "away": "Casa Pia",
+      "kickoff_utc": "2026-11-07T19:00Z",
+      "kickoff_beijing": "2026-11-08T03:00+08:00",
+      "captured_at": "2026-11-07T07:01:22Z",
+      "forecast_window_hours": "11.98",
+      "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-23",
+      "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+      "model_type": "independent_poisson_from_single_provider_projected_xg",
+      "prematch_projected_xg": {
+        "home": 1.49,
+        "away": 1.08,
+        "provider": "xG.Football",
+        "source_url": "https://xg.football/de/matches/alverca-casa-pia-2026-11-07",
+        "value_type": "provider_model_estimate_not_measured_xg"
+      },
+      "score_predictions": [
+        {
+          "rank": 1,
+          "score": "1-1",
+          "probability_pct": 12.32
+        },
+        {
+          "rank": 2,
+          "score": "1-0",
+          "probability_pct": 11.4
+        }
+      ],
+      "full_time_probabilities_pct": {
+        "home_win": 46.63,
+        "draw": 25.91,
+        "away_win": 27.46
+      },
+      "half_time_full_time": {
+        "most_likely": "胜胜",
+        "probability_pct": 28.09,
+        "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+      },
+      "my_confidence_10": 3.1,
+      "data_completeness_pct": 50,
+      "risk": "Alverca主场进攻产量一般；Casa Pia客场近期失球少，多个模型给出的平局概率不同，谨慎处理。",
+      "pre_match_context": {
+        "recent_form": "Alverca last five mixed; Casa Pia away last five under 3.5 goals in eight consecutive matches per preview",
+        "tactics": "both sides described as low block/direct by one preview",
+        "probable_lineup_status": "not_verified",
+        "absences_and_doubts": "No reliable match-specific injury/lineup source captured.",
+        "weather": "not independently verified",
+        "referee": "not verified"
+      },
+      "market": {
+        "official_sporttery_handicap": null,
+        "official_market_source": null,
+        "official_capture_time": null,
+        "opening_to_current_movement": null,
+        "handicap_prediction": "无法核验",
+        "third_party_asian_handicap_used": false,
+        "odds_used_as_result_determinant": false
+      },
+      "data_gaps": [
+        "官方竞彩让球盘口及采集时间未取得",
+        "初盘至即时盘同源记录未取得",
+        "正式首发尚未公布/未核实",
+        "完整赛前供应商原始响应及版本哈希未取得"
+      ],
+      "sources": [
+        {
+          "name": "xG.Football",
+          "url": "https://xg.football/de/matches/alverca-casa-pia-2026-11-07",
+          "type": "provider_model_estimate"
+        },
+        {
+          "name": "Sky Sports fixtures",
+          "url": "https://www.skysports.com/portuguese-liga-scores-fixtures",
+          "type": "fixture"
+        }
+      ]
+    }
+  ]
+}
