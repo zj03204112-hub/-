@@ -1,0 +1,43 @@
+{
+  "run_date_beijing": "2026-11-07",
+  "schedule_file": "fixtures/2026-11-07-08/schedule.json",
+  "schedule_sha": "473b858e3d78c6ed603904872faa90c08bde8455",
+  "total_future_fixtures": 143,
+  "core_fixtures": 59,
+  "additional_fixtures": 84,
+  "competition_counts": {
+    "premier-league": 9,
+    "laliga": 9,
+    "bundesliga": 8,
+    "serie-a": 9,
+    "ligue-1": 8,
+    "k-league-1": 6,
+    "j1-league": 10,
+    "2-bundesliga": 7,
+    "eredivisie": 8,
+    "eliteserien": 8,
+    "championship": 11,
+    "fa-cup": 37,
+    "primeira-liga": 8,
+    "a-league-men": 5
+  },
+  "official_market_join_file": "fixtures/2026-11-07-08/official-market-card-join-1000-r1.json",
+  "market_join_sha": "f1def61dde132155b3a18d5b2407eb61f7d87b37",
+  "official_market_cards": 23,
+  "matched_tracked_fixtures": 22,
+  "out_of_scope_cards": 1,
+  "market_capture_time_beijing": "2026-11-07T10:00:08+08:00",
+  "market_fields_available": [
+    "official_hhad_line",
+    "had_probabilities",
+    "current_market_odds"
+  ],
+  "market_fields_missing": [
+    "initial_to_current_hhad_history",
+    "full_waterfall_price_timestamp_series",
+    "official_starting_xi",
+    "confirmed_injuries_for_all_fixtures",
+    "complete_prematch_xg"
+  ],
+  "note": "The official Sporttery snapshot maps to 22 tracked fixtures; the remaining card is J2 Sagan Tosu vs Kataller Toyama and is outside the requested core J1 scope."
+}
