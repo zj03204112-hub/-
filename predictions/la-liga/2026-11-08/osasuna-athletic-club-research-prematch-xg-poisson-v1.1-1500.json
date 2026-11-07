@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "prediction_id": "la-liga:2026-11-08:osasuna-athletic-club:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+  "match_id": "la-liga:2026-11-08:osasuna-athletic-club",
+  "competition": "La Liga",
+  "competition_category": "domestic_league_core",
+  "home": "Osasuna",
+  "away": "Athletic Club",
+  "kickoff_utc": "2026-11-07T17:30Z",
+  "kickoff_beijing": "2026-11-08T01:30+08:00",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "forecast_window_hours": "10.48",
+  "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-12",
+  "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+  "model_type": "independent_poisson_from_single_provider_projected_xg",
+  "prematch_projected_xg": {
+    "home": 1.15,
+    "away": 1.23,
+    "provider": "xGEdge",
+    "source_url": "https://www.xg-edge.com/la-liga/osasuna-vs-athletic-club-2026-11-07",
+    "value_type": "provider_model_estimate_not_measured_xg"
+  },
+  "score_predictions": [
+    {
+      "rank": 1,
+      "score": "1-1",
+      "probability_pct": 13.09
+    },
+    {
+      "rank": 2,
+      "score": "0-1",
+      "probability_pct": 11.38
+    }
+  ],
+  "full_time_probabilities_pct": {
+    "home_win": 34.17,
+    "draw": 27.77,
+    "away_win": 38.06
+  },
+  "half_time_full_time": {
+    "most_likely": "负负",
+    "probability_pct": 22.06,
+    "method": "independent Poisson split 45% first half / 55% second half; research estimate"
+  },
+  "my_confidence_10": 3.4,
+  "data_completeness_pct": 62,
+  "risk": "两队胜率接近；Athletic近期xGD较好，Osasuna主场防守波动，裁判尚未指派。",
+  "pre_match_context": {
+    "recent_form": "Osasuna last five L-L-W-L-D; Athletic last five W-W-L-D-D",
+    "tactics": "Athletic higher press/transition; Osasuna compact home block",
+    "probable_lineup_status": "not_confirmed",
+    "absences_and_doubts": "No absences reported in one injury list; final club confirmation not obtained.",
+    "weather": "+12°C",
+    "referee": "not appointed as of source update"
+  },
+  "market": {
+    "official_sporttery_handicap": null,
+    "official_market_source": null,
+    "official_capture_time": null,
+    "opening_to_current_movement": null,
+    "handicap_prediction": "无法核验",
+    "third_party_asian_handicap_used": false,
+    "odds_used_as_result_determinant": false
+  },
+  "data_gaps": [
+    "官方竞彩让球盘口及采集时间未取得",
+    "初盘至即时盘同源记录未取得",
+    "正式首发尚未公布/未核实",
+    "完整赛前供应商原始响应及版本哈希未取得"
+  ],
+  "sources": [
+    {
+      "name": "xGEdge",
+      "url": "https://www.xg-edge.com/la-liga/osasuna-vs-athletic-club-2026-11-07",
+      "type": "provider_model_estimate"
+    },
+    {
+      "name": "Guardian CET fixtures",
+      "url": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+      "type": "fixture"
+    }
+  ]
+}
