@@ -1,0 +1,161 @@
+{
+  "run_date_beijing": "2026-11-07",
+  "branch": "automation/daily-football-2026-11-07-1000-r1",
+  "status": "PASS",
+  "files_read_back": 15,
+  "all_json_parse_ok": true,
+  "csv_row_counts": {
+    "match_xg_delta": 76,
+    "cumulative_match_xg": 326,
+    "cumulative_team_weekly_xg": 326
+  },
+  "assertions": {
+    "previous_day_confirmed_results": 38,
+    "unique_prediction_snapshot_matches": 12,
+    "raw8_handicap_hits": "3/5; 3 unverified",
+    "full9_handicap_hits": "2/9",
+    "current_day_gpt13_hda": "8/13",
+    "current_day_research5_hda": "0/5",
+    "schedule_fixtures": 143,
+    "core_fixtures": 59,
+    "additional_fixtures": 84,
+    "official_market_cards": 23,
+    "official_market_cards_joined_to_tracked_fixtures": 22,
+    "xg_cumulative_matches": 141,
+    "xg_cumulative_full_provider_xg": 53,
+    "xg_cumulative_missing": 88,
+    "xg_coverage_percent": 37.59,
+    "xgd_arithmetic_errors": 0,
+    "postmatch_data_leakage_rows": 0,
+    "duplicate_source_keys": 0,
+    "weekly_totals_published": false
+  },
+  "limitations": [
+    "No direct SQLite/remote DB connection was opened in this run.",
+    "ISO week 2026-W45 is incomplete; full weekly totals and full-week per90 values remain blank.",
+    "Provider update timestamps and raw payload hashes are missing for most xG records.",
+    "Official current market snapshot covers 23 cards, not all 143 fixtures; opening-to-current price history is unavailable."
+  ],
+  "files": [
+    {
+      "path": "results/continental-club/2026-11-06/results.json",
+      "sha": "5ce0c6904bcb745606b407cd2d1f861b9f5fa61e",
+      "bytes": 24273,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    },
+    {
+      "path": "results/domestic-leagues/2026-11-06/results.json",
+      "sha": "d30e84b34ebe4af3ab18bb66402423370177d3d9",
+      "bytes": 1883,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    },
+    {
+      "path": "fixtures/2026-11-07-08/schedule.json",
+      "sha": "473b858e3d78c6ed603904872faa90c08bde8455",
+      "bytes": 132104,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    },
+    {
+      "path": "fixtures/2026-11-07-08/official-market-card-join-1000-r1.json",
+      "sha": "f1def61dde132155b3a18d5b2407eb61f7d87b37",
+      "bytes": 18623,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    },
+    {
+      "path": "fixtures/2026-11-07-08/schedule-audit-1000-r1.json",
+      "sha": "6538d364a0f7af228aeb96bb2e0b62dc368694ae",
+      "bytes": 1386,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    },
+    {
+      "path": "reviews/2026-11-07/previous-day-review-1000-r2.json",
+      "sha": "1f2868f241a6b5ca4b2c13d20224f7f369e4aadb",
+      "bytes": 18420,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    },
+    {
+      "path": "reviews/2026-11-07/current-day-early-results-1000-r2.json",
+      "sha": "c94bb72ac604ee52ea2fb3d817040e44b6ed19e7",
+      "bytes": 14564,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    },
+    {
+      "path": "reviews/2026-11-07/source-audit-1000-r1.json",
+      "sha": "aa7b57073eeaeafe985852c7f9eb29bcd5e186b8",
+      "bytes": 4694,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/match_xg_delta-1000-r1.csv",
+      "sha": "818f3b39204ba639a83eb1f5da7b0fe3b44cbd02",
+      "bytes": 49133,
+      "type": "csv",
+      "rows": 76,
+      "parse_ok": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/match_xg_snapshot-cumulative-1000-r1.csv",
+      "sha": "c310e79621c2c5604c85f7b253eba9e48859ee2c",
+      "bytes": 163744,
+      "type": "csv",
+      "rows": 326,
+      "parse_ok": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/team_weekly_xg_snapshot-cumulative-1000-r1.csv",
+      "sha": "1067f40e87c5eac41f0dcbf99e0ecbbb154f3757",
+      "bytes": 113853,
+      "type": "csv",
+      "rows": 326,
+      "parse_ok": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/xg_coverage_audit-1000-r1.json",
+      "sha": "01fe2a150a2d70ebede26722f3e733325f619a76",
+      "bytes": 5966,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/xg_source_discrepancy_audit-1000-r1.json",
+      "sha": "c128f4112b51846e27e67f75dec36b5b11d60acb",
+      "bytes": 1681,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/xg_provider_source_audit-1000-r1.json",
+      "sha": "c28503fc1a0c5f69e5b35d6b0d9f918328e6722f",
+      "bytes": 11976,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    },
+    {
+      "path": "reviews/2026-11-07/archive-manifest-1000-r1.json",
+      "sha": "b3e8813ab26e06e97f977a60fcb3decd28f04320",
+      "bytes": 6206,
+      "type": "json",
+      "rows": null,
+      "parse_ok": true
+    }
+  ]
+}
