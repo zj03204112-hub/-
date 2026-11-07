@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-07T07:01:22Z",
+  "branch": "automation/daily-football-2026-11-07-1500-run11",
+  "checked_files": [
+    {
+      "path": "fixtures/2026-11-07-08/schedule-refresh-1500-r1.json",
+      "blob_sha": "4143de1842ae2a8acccc764d1d187199e113418f",
+      "parsed": true,
+      "summary": "102 fixtures; 58 in window; 23 forecast; 35 deferred"
+    },
+    {
+      "path": "predictions/batch/2026-11-07/research-prematch-xg-poisson-v1.1-1500.json",
+      "blob_sha": "6ccaa46a1da6bf0d43b390181a7d326516d70afe",
+      "parsed": true,
+      "summary": "23 unique prediction IDs; all H/D/A probability sums within 0.03 percentage points of 100"
+    },
+    {
+      "path": "reviews/2026-11-07/market-source-audit-1500.json",
+      "blob_sha": "1ed5afa10098c61e44699de59f0566a4bb8ca3ba",
+      "parsed": true,
+      "summary": "23 market rows; 0 official handicap verified"
+    },
+    {
+      "path": "reviews/2026-11-07/prediction-data-quality-1500.json",
+      "blob_sha": "a2cce0fa11dab9a981f04e70fdfeae77b76de672",
+      "parsed": true,
+      "summary": "23 forecast; 35 deferred"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/prematch_provider_xg_1500.csv",
+      "blob_sha": "8cc0668088af1d84c56d4e3968349c4f2ccc7645",
+      "parsed": true,
+      "summary": "116 team-match rows; 46 provider model projection rows; 70 null/missing rows"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-07/team_weekly_prematch_projection_1500.csv",
+      "blob_sha": "d0277434bfe9196da03616d7c250aabf915a1ae7",
+      "parsed": true,
+      "summary": "116 rows; actual weekly fields intentionally null; projections segregated"
+    },
+    {
+      "path": "reviews/2026-11-07/archive-manifest-1500.json",
+      "blob_sha": "719e56c66549856a2658234e441c6c26755c8da6",
+      "parsed": true,
+      "summary": "Manifest parsed; 6 canonical files listed"
+    }
+  ],
+  "checks": {
+    "json_parse_failures": 0,
+    "duplicate_prediction_ids": 0,
+    "probability_sum_failures": 0,
+    "duplicate_xg_team_match_provider_keys": 0,
+    "xgd_arithmetic_errors": 0,
+    "official_handicap_claims": 0,
+    "sqlite_connected": false,
+    "v5_1_modified": false,
+    "frozen_validation_modified": false
+  },
+  "notes": [
+    "Readback verifies GitHub branch persistence only.",
+    "No SQLite or remote database connection was established.",
+    "Historical 10:00 actual xG snapshots were not overwritten."
+  ]
+}
