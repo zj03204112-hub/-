@@ -19,6 +19,8 @@ permissions:
 
 jobs:
   player_data:
+    # Audit-only branches must not launch the main player-data/model-validation writer.
+    if: github.ref == 'refs/heads/main' || github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout latest main
