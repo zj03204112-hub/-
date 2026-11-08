@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-08T01:59:44Z",
+  "iso_week": "2026-W45",
+  "week_window_beijing": "2026-11-02/2026-11-08",
+  "unique_matches": 118,
+  "matches_with_any_xg": 48,
+  "matches_missing_xg": 70,
+  "coverage": 0.4067796610169492,
+  "added_2026_11_07_bjt": {
+    "matches": 61,
+    "with_xg": 15,
+    "missing": 46
+  },
+  "added_2026_11_08_early_bjt": {
+    "matches": 13,
+    "with_xg": 11,
+    "missing": 2
+  },
+  "new_team_rows": 158,
+  "provider_row_counts": {
+    "SoccerGhost": 10,
+    "Shotify": 48,
+    "StatsBet": 4,
+    "VJStats": 14,
+    "Squawka": 2,
+    "OddAlerts": 22,
+    "xGscore": 2,
+    "TotalOdds": 6,
+    "FootballWebPages": 2,
+    "SportsLife": 2,
+    "Golify": 2,
+    "FotMob": 2,
+    "Flashscore": 2,
+    "SureBetExpert": 4,
+    "Xgoals": 2,
+    "VI.nl": 2,
+    "BetGolazo": 2,
+    "Cornerflick": 4,
+    "SKORGOL": 2,
+    "NextMatch": 2,
+    "GolazoNews": 10,
+    "xG.Football": 4
+  },
+  "xgd_arithmetic_errors": 0,
+  "duplicate_match_team_provider_keys": 0,
+  "team_week_summary_rows": 290,
+  "summary_recomputed_from_match_detail": true,
+  "all_new_xg_values_supplier_model_estimates": true,
+  "measured_values": 0,
+  "own_model_estimates": 0,
+  "providers_kept_separate": true,
+  "post_match_xg_used_as_prematch_input": false,
+  "prior_immutable_snapshots_modified": false,
+  "team_ids": "Derived team:<slug>; canonical database/provider IDs pending mapping.",
+  "missing_reason": "No free traceable match-level xG source found in this pass; no estimates inserted.",
+  "notes": [
+    "11月7日北京日期61场中仅15场有至少一个供应商xG来源。",
+    "11月8日北京时间10:00前13场已完赛，其中11场有xG来源，2场缺失。",
+    "同场多供应商不求平均；provider_version未披露时记not_disclosed。"
+  ]
+}
