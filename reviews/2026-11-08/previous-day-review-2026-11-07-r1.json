@@ -1,0 +1,4558 @@
+{
+  "schema_version": "1.0",
+  "review_id": "review-2026-11-07-bjt-asof-2026-11-08-1000-r1",
+  "review_date_beijing": "2026-11-07",
+  "reviewed_at_beijing": "2026-11-08T09:59:44+08:00",
+  "source_prediction_snapshot": {
+    "path": "predictions/batch/2026-11-07/research-prematch-xg-poisson-v1.1-1500.json",
+    "sha": "6ccaa46a1da6bf0d43b390181a7d326516d70afe",
+    "ref": "automation/daily-football-2026-11-07-1500-run11",
+    "immutable": true,
+    "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1"
+  },
+  "scope": {
+    "confirmed_finished": 61,
+    "immutable_prediction_matches": 16,
+    "no_snapshot_matches": 45,
+    "by_category_counts": {
+      "domestic_league_core": 18,
+      "domestic_league_other": 12,
+      "domestic_cup": 31
+    }
+  },
+  "metrics": {
+    "wdl": {
+      "hits": 8,
+      "denominator": 16
+    },
+    "first_score": {
+      "hits": 0,
+      "denominator": 16
+    },
+    "second_score": {
+      "hits": 0,
+      "denominator": 16
+    },
+    "half_full": {
+      "hits": 3,
+      "denominator": 16
+    },
+    "handicap": {
+      "verified": 0,
+      "unverifiable": 16
+    },
+    "risk_qualitative": {
+      "not_observed": 6,
+      "hit": 6,
+      "partial": 4
+    }
+  },
+  "rules": {
+    "handicap": "仅第一比分+真实官方竞彩盘口机械映射；第二比分和90分钟胜平负不得参与。官方盘口缺失时无法核验。",
+    "risk": "定性hit/partial/not_observed，不作为概率指标。"
+  },
+  "matches": [
+    {
+      "match_id": "serie-a:2026-11-07:cagliari-frosinone",
+      "competition": "Serie A",
+      "competition_id": "serie-a",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:00Z",
+      "kickoff_beijing": "2026-11-07T22:00+08:00",
+      "home": "Cagliari",
+      "away": "Frosinone",
+      "match_status": "confirmed_final",
+      "actual_score": "1-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-0",
+      "actual_half_time_full_time": "胜胜",
+      "result_sources": [
+        "https://www.sofascore.com/football/match/frosinone-cagliari/uebsbgb"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "serie-a:2026-11-07:cagliari-frosinone:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-01",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 36.76,
+          "draw": 22.01,
+          "away_win": 41.23
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 4,
+        "data_completeness_pct": 72,
+        "risk_note": "主队近5场1平4负；客队近5场3胜1平1负，进攻效率明显占优。Frosinone头号射手Raimondo伤停消息与另一数据源的缺阵名单不一致。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "not_observed",
+        "risk_note": "客队近况优势未转化为进球；主队以1-0取胜，伤停来源冲突未能独立证实。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "serie-a:2026-11-07:torino-lecce",
+      "competition": "Serie A",
+      "competition_id": "serie-a",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:00Z",
+      "kickoff_beijing": "2026-11-07T22:00+08:00",
+      "home": "Torino",
+      "away": "Lecce",
+      "match_status": "confirmed_final",
+      "actual_score": "1-1",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平平",
+      "result_sources": [
+        "https://www.ysscores.com/en/match/5749748/Torino-FC-vs-US-Lecce"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "serie-a:2026-11-07:torino-lecce:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-02",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 38.82,
+          "draw": 24.11,
+          "away_win": 37.07
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.6,
+        "data_completeness_pct": 66,
+        "risk_note": "双方预期进球接近；Torino有中场及边翼卫伤疑，Mandragora缺阵，Lecce近期失球偏多。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "hit",
+        "risk_note": "双方预期进球接近，最终1-1；主胜方向未覆盖平局。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "bundesliga:2026-11-07:borussia-dortmund-sv-elversberg",
+      "competition": "Bundesliga",
+      "competition_id": "bundesliga",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "home": "Borussia Dortmund",
+      "away": "SV Elversberg",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.sports360news.com/en/football/borussia-dortmund-vs-sv-elversberg-match-s360-football-europe-domestic-hp1/11146134"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "bundesliga:2026-11-07:borussia-dortmund-sv-elversberg:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-03",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 55.83,
+          "draw": 21.1,
+          "away_win": 23.07
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 4.6,
+        "data_completeness_pct": 75,
+        "risk_note": "Dortmund midweek Champions League load; Guirassy unavailable, so finishing/central striker role changes. Elversberg away defence allows high xGA."
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": false,
+        "risk_status": "partial",
+        "risk_note": "半场0-0、主队下半场才打开局面并在81分钟被追一球，赛程消耗提示部分体现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "bundesliga:2026-11-07:mainz-05-bayern-munich",
+      "competition": "Bundesliga",
+      "competition_id": "bundesliga",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "home": "Mainz 05",
+      "away": "Bayern Munich",
+      "match_status": "confirmed_final",
+      "actual_score": "1-2",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": "0-1",
+      "actual_half_time_full_time": "负负",
+      "result_sources": [
+        "https://www.bundesliga.com/en/bundesliga/news/mainz-bayern-munich-match-report-highlights-matchday-9-39922"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "bundesliga:2026-11-07:mainz-05-bayern-munich:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-04",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 22.09,
+          "draw": 19.12,
+          "away_win": 58.79
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 4.5,
+        "data_completeness_pct": 74,
+        "risk_note": "Bayern客场进攻强，但Díaz、Gnabry、Musiala等缺阵/状态受限；Mainz后防停赛和伤病集中，存在大比分尾部风险。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": true,
+        "risk_status": "not_observed",
+        "risk_note": "拜仁仍以2-1取胜，没有出现预警中可能的大比分尾部。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "bundesliga:2026-11-07:rb-leipzig-fc-augsburg",
+      "competition": "Bundesliga",
+      "competition_id": "bundesliga",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "home": "RB Leipzig",
+      "away": "FC Augsburg",
+      "match_status": "confirmed_final",
+      "actual_score": "5-2",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "3-1",
+      "actual_half_time_full_time": "胜胜",
+      "result_sources": [
+        "https://www.sofascore.com/football/match/rb-leipzig-fc-augsburg/acbskCo"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "bundesliga:2026-11-07:rb-leipzig-fc-augsburg:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-05",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 56.32,
+          "draw": 18.67,
+          "away_win": 25.01
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 4.7,
+        "data_completeness_pct": 78,
+        "risk_note": "Leipzig周中欧冠刚结束，主场攻击力强但防线并非完全稳定；Augsburg连续不胜且缺阵较多，双方进球风险偏高。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": true,
+        "risk_status": "hit",
+        "risk_note": "最终5-2共7球，防线波动与高比分风险兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "bundesliga:2026-11-07:sc-paderborn-eintracht-frankfurt",
+      "competition": "Bundesliga",
+      "competition_id": "bundesliga",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "home": "SC Paderborn",
+      "away": "Eintracht Frankfurt",
+      "match_status": "confirmed_final",
+      "actual_score": "2-2",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": "1-1",
+      "actual_half_time_full_time": "平平",
+      "result_sources": [
+        "https://www.skysports.com/football/sc-paderborn-07-vs-eintracht-frankfurt/563387"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "bundesliga:2026-11-07:sc-paderborn-eintracht-frankfurt:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-06",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 37.14,
+          "draw": 23.17,
+          "away_win": 39.68
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.9,
+        "data_completeness_pct": 73,
+        "risk_note": "Paderborn近期防守改善但进攻产量低；Frankfurt客场防守脆弱，Koch膝部情况有疑问，Götze缺阵。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "hit",
+        "risk_note": "最终2-2共4球，客队防守不稳及平局风险兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "premier-league:2026-11-07:arsenal-hull-city",
+      "competition": "Premier League",
+      "competition_id": "premier-league",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Arsenal",
+      "away": "Hull City",
+      "match_status": "confirmed_final",
+      "actual_score": "1-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.skorgol.com/en/match/arsenal-vs-hull-city-07-11-2026"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "premier-league:2026-11-07:arsenal-hull-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-07",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 52.06,
+          "draw": 25.34,
+          "away_win": 22.6
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 4.4,
+        "data_completeness_pct": 68,
+        "risk_note": "Arsenal周中欧冠消耗，Saka缺阵、Dowman停赛；Hull前9轮有5场平局，低位防守可能压缩主队空间。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": false,
+        "risk_status": "hit",
+        "risk_note": "半场0-0、72分钟才打入制胜球，低位防守使比赛维持小比分。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "premier-league:2026-11-07:fulham-newcastle-united",
+      "competition": "Premier League",
+      "competition_id": "premier-league",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Fulham",
+      "away": "Newcastle United",
+      "match_status": "confirmed_final",
+      "actual_score": "1-1",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平平",
+      "result_sources": [
+        "https://www.livesporty.co/match/football/premier-league/fulham-vs-newcastle-united/2026-11-07"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "premier-league:2026-11-07:fulham-newcastle-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-08",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 46.11,
+          "draw": 24.08,
+          "away_win": 29.81
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 4,
+        "data_completeness_pct": 70,
+        "risk_note": "Fulham近3场拿7分；Newcastle中场Joelinton伤缺、Jacob Ramsey停赛，Fernandez-Pardo待评估。客队中场拦截和轮换受影响。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "partial",
+        "risk_note": "半场0-0，80与83分钟连入两球；纽卡中场缺阵风险部分体现，但不作因果归因。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:birmingham-city-swansea-city",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Birmingham City",
+      "away": "Swansea City",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-0",
+      "actual_half_time_full_time": "胜胜",
+      "result_sources": [
+        "https://www.skysports.com/football/birmingham-vs-swansea/report/560666"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:birmingham-city-swansea-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-15",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 50.96,
+          "draw": 23.64,
+          "away_win": 25.4
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.2,
+        "data_completeness_pct": 55,
+        "risk_note": "Birmingham主场不败时间较长，但Swansea积分排名更高，客场表现波动；两队风格对位存在不确定性。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": true,
+        "risk_status": "not_observed",
+        "risk_note": "主胜方向正确，但红牌和乌龙未被赛前风险提示明确量化。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:blackburn-rovers-west-ham-united",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Blackburn Rovers",
+      "away": "West Ham United",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.whufc.com/en/news/match-report-or-hammers-suffer-defeat-at-blackburn"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:blackburn-rovers-west-ham-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-16",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 25.81,
+          "draw": 22.74,
+          "away_win": 51.46
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.6,
+        "data_completeness_pct": 65,
+        "risk_note": "West Ham近期xG和进攻产量明显更高；Blackburn主场表现起伏，客队防线仍有被反击打穿风险。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "partial",
+        "risk_note": "西汉姆控球64%、射门20比5仍告负，客队效率风险部分兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:cardiff-city-burnley",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Cardiff City",
+      "away": "Burnley",
+      "match_status": "confirmed_final",
+      "actual_score": "5-4",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-2",
+      "actual_half_time_full_time": "负胜",
+      "result_sources": [
+        "https://www.livesporty.co/match/football/championship/cardiff-city-vs-burnley/2026-11-07"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:cardiff-city-burnley:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-17",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 47.77,
+          "draw": 22.38,
+          "away_win": 29.85
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.5,
+        "data_completeness_pct": 61,
+        "risk_note": "Cardiff主场进攻强但防守稳定性不足；Burnley积分靠后但反击有威胁，不同预测源的胜平负分布差异较大。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": false,
+        "risk_status": "hit",
+        "risk_note": "最终5-4，双方防守波动及高比分风险明确兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:charlton-athletic-sheffield-united",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Charlton Athletic",
+      "away": "Sheffield United",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-1",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.skysports.com/football/charlton-vs-sheff-utd/report/560670"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:charlton-athletic-sheffield-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-18",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 27.63,
+          "draw": 25.99,
+          "away_win": 46.37
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.2,
+        "data_completeness_pct": 57,
+        "risk_note": "双方实力接近，Sheffield United略占优；平局概率不低，缺少完整伤停和临场阵容。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "partial",
+        "risk_note": "双方实力接近，主队79分钟才打入制胜球；平局风险部分体现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:preston-north-end-southampton",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Preston North End",
+      "away": "Southampton",
+      "match_status": "confirmed_final",
+      "actual_score": "1-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-0",
+      "actual_half_time_full_time": "胜胜",
+      "result_sources": [
+        "https://saintsfc.com/match-reports/2026-11-07-preston-north-end-vs-southampton/"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:preston-north-end-southampton:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-19",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 30.01,
+          "draw": 23.81,
+          "away_win": 46.18
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.7,
+        "data_completeness_pct": 66,
+        "risk_note": "Preston排名垫底且失球多，Southampton进攻效率高；主队伤停和防线人手不足是主要风险。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "not_observed",
+        "risk_note": "南安普顿23次射门、8次射正仍未进球；普雷斯顿低进攻风险未兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:queens-park-rangers-lincoln-city",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Queens Park Rangers",
+      "away": "Lincoln City",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-1",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.qpr.co.uk/news/2026/november/07/qpr-lincoln-report/"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:queens-park-rangers-lincoln-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-20",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 56.84,
+          "draw": 22.77,
+          "away_win": 20.39
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.8,
+        "data_completeness_pct": 64,
+        "risk_note": "QPR主场进攻强且近期不败，Lincoln客场近况偏弱；主队仍有防守转换风险。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": false,
+        "risk_status": "not_observed",
+        "risk_note": "QPR主场优势兑现，未观察到明显反击风险事件。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:west-bromwich-albion-millwall",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "West Bromwich Albion",
+      "away": "Millwall",
+      "match_status": "confirmed_final",
+      "actual_score": "3-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.skysports.com/football/west-brom-vs-millwall/report/560676"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:west-bromwich-albion-millwall:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-21",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 48.8,
+          "draw": 24.38,
+          "away_win": 26.82
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.4,
+        "data_completeness_pct": 60,
+        "risk_note": "West Brom主场表现稳定，但历史交锋平局偏多；Millwall客场进攻不稳，比分分布较分散。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": false,
+        "risk_status": "not_observed",
+        "risk_note": "交锋平局风险未兑现，最终3-0。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "la-liga:2026-11-07:espanyol-deportivo-de-la-coruna",
+      "competition": "La Liga",
+      "competition_id": "la-liga",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:15Z",
+      "kickoff_beijing": "2026-11-07T23:15+08:00",
+      "home": "Espanyol",
+      "away": "Deportivo de La Coruña",
+      "match_status": "confirmed_final",
+      "actual_score": "0-0",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平平",
+      "result_sources": [
+        "https://www.livesporty.co/match/football/laliga/espanyol-vs-deportivo/2026-11-07"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "la-liga:2026-11-07:espanyol-deportivo-de-la-coruna:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-09",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 26.85,
+          "draw": 26.07,
+          "away_win": 47.08
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.6,
+        "data_completeness_pct": 61,
+        "risk_note": "Espanyol主场近期进攻产量偏低；Deportivo最近客场仍有失球，但整体预期进球更高。客队休息天数较少。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "hit",
+        "risk_note": "最终0-0，主队进攻产出不足风险兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    }
+  ],
+  "all_confirmed_results": [
+    {
+      "match_id": "j1-league:2026-11-07:shimizu-s-pulse-tokyo-verdy",
+      "competition": "J1 League",
+      "competition_id": "j1-league",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T04:00Z",
+      "kickoff_beijing": "2026-11-07T12:00+08:00",
+      "home": "Shimizu S-Pulse",
+      "away": "Tokyo Verdy",
+      "match_status": "confirmed_final",
+      "actual_score": "0-1",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://www.jleague.jp/en/j1/match/"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "k-league-1:2026-11-07:jeju-sk-gwangju-fc",
+      "competition": "K League 1",
+      "competition_id": "k-league-1",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T05:00Z",
+      "kickoff_beijing": "2026-11-07T13:00+08:00",
+      "home": "Jeju SK",
+      "away": "Gwangju FC",
+      "match_status": "confirmed_final",
+      "actual_score": "1-1",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://tv.kleague.com/en-int",
+        "https://www.skorgol.com/en/league/k-league-1"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "j1-league:2026-11-07:yokohama-f-marinos-fagiano-okayama",
+      "competition": "J1 League",
+      "competition_id": "j1-league",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T05:00Z",
+      "kickoff_beijing": "2026-11-07T13:00+08:00",
+      "home": "Yokohama F. Marinos",
+      "away": "Fagiano Okayama",
+      "match_status": "confirmed_final",
+      "actual_score": "1-1",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://www.jleague.jp/en/j1/match/"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "j1-league:2026-11-07:nagoya-grampus-kyoto-sanga",
+      "competition": "J1 League",
+      "competition_id": "j1-league",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T05:00Z",
+      "kickoff_beijing": "2026-11-07T13:00+08:00",
+      "home": "Nagoya Grampus",
+      "away": "Kyoto Sanga",
+      "match_status": "confirmed_final",
+      "actual_score": "0-2",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://www.jleague.jp/en/j1/match/"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "j1-league:2026-11-07:fc-tokyo-kashima-antlers",
+      "competition": "J1 League",
+      "competition_id": "j1-league",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T06:00Z",
+      "kickoff_beijing": "2026-11-07T14:00+08:00",
+      "home": "FC Tokyo",
+      "away": "Kashima Antlers",
+      "match_status": "confirmed_final",
+      "actual_score": "2-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://www.jleague.jp/en/j1/match/"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "j1-league:2026-11-07:avispa-fukuoka-v-varen-nagasaki",
+      "competition": "J1 League",
+      "competition_id": "j1-league",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T06:00Z",
+      "kickoff_beijing": "2026-11-07T14:00+08:00",
+      "home": "Avispa Fukuoka",
+      "away": "V-Varen Nagasaki",
+      "match_status": "confirmed_final",
+      "actual_score": "1-1",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://www.jleague.jp/en/j1/match/"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "j1-league:2026-11-07:kashiwa-reysol-kawasaki-frontale",
+      "competition": "J1 League",
+      "competition_id": "j1-league",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T07:00Z",
+      "kickoff_beijing": "2026-11-07T15:00+08:00",
+      "home": "Kashiwa Reysol",
+      "away": "Kawasaki Frontale",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://www.jleague.jp/en/j1/match/"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "k-league-1:2026-11-07:gimcheon-sangmu-fc-anyang",
+      "competition": "K League 1",
+      "competition_id": "k-league-1",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T07:30Z",
+      "kickoff_beijing": "2026-11-07T15:30+08:00",
+      "home": "Gimcheon Sangmu",
+      "away": "FC Anyang",
+      "match_status": "confirmed_final",
+      "actual_score": "1-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://tv.kleague.com/en-int",
+        "https://www.skorgol.com/en/league/k-league-1"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "premier-league:2026-11-07:leeds-united-tottenham-hotspur",
+      "competition": "Premier League",
+      "competition_id": "premier-league",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T12:30Z",
+      "kickoff_beijing": "2026-11-07T20:30+08:00",
+      "home": "Leeds United",
+      "away": "Tottenham Hotspur",
+      "match_status": "confirmed_final",
+      "actual_score": "1-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:bristol-city-norwich-city",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T12:30Z",
+      "kickoff_beijing": "2026-11-07T20:30+08:00",
+      "home": "Bristol City",
+      "away": "Norwich City",
+      "match_status": "confirmed_final",
+      "actual_score": "0-5",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:portsmouth-stoke-city",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T12:30Z",
+      "kickoff_beijing": "2026-11-07T20:30+08:00",
+      "home": "Portsmouth",
+      "away": "Stoke City",
+      "match_status": "confirmed_final",
+      "actual_score": "1-2",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:wrexham-wolverhampton-wanderers",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T12:30Z",
+      "kickoff_beijing": "2026-11-07T20:30+08:00",
+      "home": "Wrexham",
+      "away": "Wolverhampton Wanderers",
+      "match_status": "confirmed_final",
+      "actual_score": "1-1",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "segunda-division:2026-11-07:malaga-racing-santander",
+      "competition": "Segunda Division",
+      "competition_id": "segunda-division",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T13:00Z",
+      "kickoff_beijing": "2026-11-07T21:00+08:00",
+      "home": "Malaga",
+      "away": "Racing Santander",
+      "match_status": "confirmed_final",
+      "actual_score": "1-2",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "serie-a:2026-11-07:cagliari-frosinone",
+      "competition": "Serie A",
+      "competition_id": "serie-a",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:00Z",
+      "kickoff_beijing": "2026-11-07T22:00+08:00",
+      "home": "Cagliari",
+      "away": "Frosinone",
+      "match_status": "confirmed_final",
+      "actual_score": "1-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-0",
+      "actual_half_time_full_time": "胜胜",
+      "result_sources": [
+        "https://www.sofascore.com/football/match/frosinone-cagliari/uebsbgb"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "serie-a:2026-11-07:cagliari-frosinone:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-01",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 36.76,
+          "draw": 22.01,
+          "away_win": 41.23
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 4,
+        "data_completeness_pct": 72,
+        "risk_note": "主队近5场1平4负；客队近5场3胜1平1负，进攻效率明显占优。Frosinone头号射手Raimondo伤停消息与另一数据源的缺阵名单不一致。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "not_observed",
+        "risk_note": "客队近况优势未转化为进球；主队以1-0取胜，伤停来源冲突未能独立证实。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "serie-a:2026-11-07:torino-lecce",
+      "competition": "Serie A",
+      "competition_id": "serie-a",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:00Z",
+      "kickoff_beijing": "2026-11-07T22:00+08:00",
+      "home": "Torino",
+      "away": "Lecce",
+      "match_status": "confirmed_final",
+      "actual_score": "1-1",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平平",
+      "result_sources": [
+        "https://www.ysscores.com/en/match/5749748/Torino-FC-vs-US-Lecce"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "serie-a:2026-11-07:torino-lecce:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-02",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 38.82,
+          "draw": 24.11,
+          "away_win": 37.07
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.6,
+        "data_completeness_pct": 66,
+        "risk_note": "双方预期进球接近；Torino有中场及边翼卫伤疑，Mandragora缺阵，Lecce近期失球偏多。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "hit",
+        "risk_note": "双方预期进球接近，最终1-1；主胜方向未覆盖平局。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "bundesliga:2026-11-07:borussia-dortmund-sv-elversberg",
+      "competition": "Bundesliga",
+      "competition_id": "bundesliga",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "home": "Borussia Dortmund",
+      "away": "SV Elversberg",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.sports360news.com/en/football/borussia-dortmund-vs-sv-elversberg-match-s360-football-europe-domestic-hp1/11146134"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "bundesliga:2026-11-07:borussia-dortmund-sv-elversberg:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-03",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 55.83,
+          "draw": 21.1,
+          "away_win": 23.07
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 4.6,
+        "data_completeness_pct": 75,
+        "risk_note": "Dortmund midweek Champions League load; Guirassy unavailable, so finishing/central striker role changes. Elversberg away defence allows high xGA."
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": false,
+        "risk_status": "partial",
+        "risk_note": "半场0-0、主队下半场才打开局面并在81分钟被追一球，赛程消耗提示部分体现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "bundesliga:2026-11-07:mainz-05-bayern-munich",
+      "competition": "Bundesliga",
+      "competition_id": "bundesliga",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "home": "Mainz 05",
+      "away": "Bayern Munich",
+      "match_status": "confirmed_final",
+      "actual_score": "1-2",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": "0-1",
+      "actual_half_time_full_time": "负负",
+      "result_sources": [
+        "https://www.bundesliga.com/en/bundesliga/news/mainz-bayern-munich-match-report-highlights-matchday-9-39922"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "bundesliga:2026-11-07:mainz-05-bayern-munich:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-04",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 22.09,
+          "draw": 19.12,
+          "away_win": 58.79
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 4.5,
+        "data_completeness_pct": 74,
+        "risk_note": "Bayern客场进攻强，但Díaz、Gnabry、Musiala等缺阵/状态受限；Mainz后防停赛和伤病集中，存在大比分尾部风险。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": true,
+        "risk_status": "not_observed",
+        "risk_note": "拜仁仍以2-1取胜，没有出现预警中可能的大比分尾部。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "bundesliga:2026-11-07:rb-leipzig-fc-augsburg",
+      "competition": "Bundesliga",
+      "competition_id": "bundesliga",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "home": "RB Leipzig",
+      "away": "FC Augsburg",
+      "match_status": "confirmed_final",
+      "actual_score": "5-2",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "3-1",
+      "actual_half_time_full_time": "胜胜",
+      "result_sources": [
+        "https://www.sofascore.com/football/match/rb-leipzig-fc-augsburg/acbskCo"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "bundesliga:2026-11-07:rb-leipzig-fc-augsburg:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-05",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 56.32,
+          "draw": 18.67,
+          "away_win": 25.01
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 4.7,
+        "data_completeness_pct": 78,
+        "risk_note": "Leipzig周中欧冠刚结束，主场攻击力强但防线并非完全稳定；Augsburg连续不胜且缺阵较多，双方进球风险偏高。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": true,
+        "risk_status": "hit",
+        "risk_note": "最终5-2共7球，防线波动与高比分风险兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "bundesliga:2026-11-07:sc-paderborn-eintracht-frankfurt",
+      "competition": "Bundesliga",
+      "competition_id": "bundesliga",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T14:30Z",
+      "kickoff_beijing": "2026-11-07T22:30+08:00",
+      "home": "SC Paderborn",
+      "away": "Eintracht Frankfurt",
+      "match_status": "confirmed_final",
+      "actual_score": "2-2",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": "1-1",
+      "actual_half_time_full_time": "平平",
+      "result_sources": [
+        "https://www.skysports.com/football/sc-paderborn-07-vs-eintracht-frankfurt/563387"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "bundesliga:2026-11-07:sc-paderborn-eintracht-frankfurt:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-06",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 37.14,
+          "draw": 23.17,
+          "away_win": 39.68
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.9,
+        "data_completeness_pct": 73,
+        "risk_note": "Paderborn近期防守改善但进攻产量低；Frankfurt客场防守脆弱，Koch膝部情况有疑问，Götze缺阵。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "hit",
+        "risk_note": "最终2-2共4球，客队防守不稳及平局风险兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "premier-league:2026-11-07:arsenal-hull-city",
+      "competition": "Premier League",
+      "competition_id": "premier-league",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Arsenal",
+      "away": "Hull City",
+      "match_status": "confirmed_final",
+      "actual_score": "1-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.skorgol.com/en/match/arsenal-vs-hull-city-07-11-2026"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "premier-league:2026-11-07:arsenal-hull-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-07",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 52.06,
+          "draw": 25.34,
+          "away_win": 22.6
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 4.4,
+        "data_completeness_pct": 68,
+        "risk_note": "Arsenal周中欧冠消耗，Saka缺阵、Dowman停赛；Hull前9轮有5场平局，低位防守可能压缩主队空间。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": false,
+        "risk_status": "hit",
+        "risk_note": "半场0-0、72分钟才打入制胜球，低位防守使比赛维持小比分。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "premier-league:2026-11-07:fulham-newcastle-united",
+      "competition": "Premier League",
+      "competition_id": "premier-league",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Fulham",
+      "away": "Newcastle United",
+      "match_status": "confirmed_final",
+      "actual_score": "1-1",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平平",
+      "result_sources": [
+        "https://www.livesporty.co/match/football/premier-league/fulham-vs-newcastle-united/2026-11-07"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "premier-league:2026-11-07:fulham-newcastle-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-08",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 46.11,
+          "draw": 24.08,
+          "away_win": 29.81
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 4,
+        "data_completeness_pct": 70,
+        "risk_note": "Fulham近3场拿7分；Newcastle中场Joelinton伤缺、Jacob Ramsey停赛，Fernandez-Pardo待评估。客队中场拦截和轮换受影响。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "partial",
+        "risk_note": "半场0-0，80与83分钟连入两球；纽卡中场缺阵风险部分体现，但不作因果归因。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:birmingham-city-swansea-city",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Birmingham City",
+      "away": "Swansea City",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-0",
+      "actual_half_time_full_time": "胜胜",
+      "result_sources": [
+        "https://www.skysports.com/football/birmingham-vs-swansea/report/560666"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:birmingham-city-swansea-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-15",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 50.96,
+          "draw": 23.64,
+          "away_win": 25.4
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.2,
+        "data_completeness_pct": 55,
+        "risk_note": "Birmingham主场不败时间较长，但Swansea积分排名更高，客场表现波动；两队风格对位存在不确定性。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": true,
+        "risk_status": "not_observed",
+        "risk_note": "主胜方向正确，但红牌和乌龙未被赛前风险提示明确量化。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:blackburn-rovers-west-ham-united",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Blackburn Rovers",
+      "away": "West Ham United",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.whufc.com/en/news/match-report-or-hammers-suffer-defeat-at-blackburn"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:blackburn-rovers-west-ham-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-16",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 25.81,
+          "draw": 22.74,
+          "away_win": 51.46
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.6,
+        "data_completeness_pct": 65,
+        "risk_note": "West Ham近期xG和进攻产量明显更高；Blackburn主场表现起伏，客队防线仍有被反击打穿风险。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "partial",
+        "risk_note": "西汉姆控球64%、射门20比5仍告负，客队效率风险部分兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:cardiff-city-burnley",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Cardiff City",
+      "away": "Burnley",
+      "match_status": "confirmed_final",
+      "actual_score": "5-4",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-2",
+      "actual_half_time_full_time": "负胜",
+      "result_sources": [
+        "https://www.livesporty.co/match/football/championship/cardiff-city-vs-burnley/2026-11-07"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:cardiff-city-burnley:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-17",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 47.77,
+          "draw": 22.38,
+          "away_win": 29.85
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.5,
+        "data_completeness_pct": 61,
+        "risk_note": "Cardiff主场进攻强但防守稳定性不足；Burnley积分靠后但反击有威胁，不同预测源的胜平负分布差异较大。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": false,
+        "risk_status": "hit",
+        "risk_note": "最终5-4，双方防守波动及高比分风险明确兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:charlton-athletic-sheffield-united",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Charlton Athletic",
+      "away": "Sheffield United",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-1",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.skysports.com/football/charlton-vs-sheff-utd/report/560670"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:charlton-athletic-sheffield-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-18",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 27.63,
+          "draw": 25.99,
+          "away_win": 46.37
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.2,
+        "data_completeness_pct": 57,
+        "risk_note": "双方实力接近，Sheffield United略占优；平局概率不低，缺少完整伤停和临场阵容。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "partial",
+        "risk_note": "双方实力接近，主队79分钟才打入制胜球；平局风险部分体现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:preston-north-end-southampton",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Preston North End",
+      "away": "Southampton",
+      "match_status": "confirmed_final",
+      "actual_score": "1-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-0",
+      "actual_half_time_full_time": "胜胜",
+      "result_sources": [
+        "https://saintsfc.com/match-reports/2026-11-07-preston-north-end-vs-southampton/"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:preston-north-end-southampton:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-19",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 30.01,
+          "draw": 23.81,
+          "away_win": 46.18
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.7,
+        "data_completeness_pct": 66,
+        "risk_note": "Preston排名垫底且失球多，Southampton进攻效率高；主队伤停和防线人手不足是主要风险。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "not_observed",
+        "risk_note": "南安普顿23次射门、8次射正仍未进球；普雷斯顿低进攻风险未兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:queens-park-rangers-lincoln-city",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Queens Park Rangers",
+      "away": "Lincoln City",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "1-1",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.qpr.co.uk/news/2026/november/07/qpr-lincoln-report/"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:queens-park-rangers-lincoln-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-20",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 56.84,
+          "draw": 22.77,
+          "away_win": 20.39
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.8,
+        "data_completeness_pct": 64,
+        "risk_note": "QPR主场进攻强且近期不败，Lincoln客场近况偏弱；主队仍有防守转换风险。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": false,
+        "risk_status": "not_observed",
+        "risk_note": "QPR主场优势兑现，未观察到明显反击风险事件。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:watford-middlesbrough",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Watford",
+      "away": "Middlesbrough",
+      "match_status": "confirmed_final",
+      "actual_score": "0-0",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "efl-championship:2026-11-07:west-bromwich-albion-millwall",
+      "competition": "EFL Championship",
+      "competition_id": "efl-championship",
+      "competition_category": "domestic_league_other",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "West Bromwich Albion",
+      "away": "Millwall",
+      "match_status": "confirmed_final",
+      "actual_score": "3-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平胜",
+      "result_sources": [
+        "https://www.skysports.com/football/west-brom-vs-millwall/report/560676"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "efl-championship:2026-11-07:west-bromwich-albion-millwall:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-21",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "home_win",
+        "wdl_probabilities_pct": {
+          "home_win": 48.8,
+          "draw": 24.38,
+          "away_win": 26.82
+        },
+        "half_full": "胜胜",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.4,
+        "data_completeness_pct": 60,
+        "risk_note": "West Brom主场表现稳定，但历史交锋平局偏多；Millwall客场进攻不稳，比分分布较分散。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": true,
+        "half_full": false,
+        "risk_status": "not_observed",
+        "risk_note": "交锋平局风险未兑现，最终3-0。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:accrington-stanley-wycombe-wanderers",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Accrington Stanley",
+      "away": "Wycombe Wanderers",
+      "match_status": "confirmed_final",
+      "actual_score": "0-2",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:barnet-tranmere-rovers",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Barnet",
+      "away": "Tranmere Rovers",
+      "match_status": "confirmed_final",
+      "actual_score": "3-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:barnsley-aldershot-town",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Barnsley",
+      "away": "Aldershot Town",
+      "match_status": "confirmed_final",
+      "actual_score": "7-2",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:boreham-wood-wigan-athletic",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Boreham Wood",
+      "away": "Wigan Athletic",
+      "match_status": "confirmed_final",
+      "actual_score": "0-3",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:bradford-city-marine",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Bradford City",
+      "away": "Marine",
+      "match_status": "confirmed_final",
+      "actual_score": "7-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:bromley-rotherham-united",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Bromley",
+      "away": "Rotherham United",
+      "match_status": "confirmed_final",
+      "actual_score": "0-2",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:burton-albion-afc-rushden-diamonds",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Burton Albion",
+      "away": "AFC Rushden & Diamonds",
+      "match_status": "confirmed_final",
+      "actual_score": "4-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:carlisle-united-salford-city",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Carlisle United",
+      "away": "Salford City",
+      "match_status": "confirmed_final",
+      "actual_score": "1-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:cheltenham-town-fc-halifax-town",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Cheltenham Town",
+      "away": "FC Halifax Town",
+      "match_status": "confirmed_final",
+      "actual_score": "2-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:chesterfield-yeovil-town",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Chesterfield",
+      "away": "Yeovil Town",
+      "match_status": "confirmed_final",
+      "actual_score": "4-3",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:colchester-united-worcester-city",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Colchester United",
+      "away": "Worcester City",
+      "match_status": "confirmed_final",
+      "actual_score": "1-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:crewe-alexandra-afc-wimbledon",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Crewe Alexandra",
+      "away": "AFC Wimbledon",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:dover-athletic-wealdstone",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Dover Athletic",
+      "away": "Wealdstone",
+      "match_status": "confirmed_final",
+      "actual_score": "2-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:eastleigh-shrewsbury-town",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Eastleigh",
+      "away": "Shrewsbury Town",
+      "match_status": "confirmed_final",
+      "actual_score": "1-2",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:fleetwood-town-rochdale",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Fleetwood Town",
+      "away": "Rochdale",
+      "match_status": "confirmed_final",
+      "actual_score": "1-2",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:gillingham-barrow",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Gillingham",
+      "away": "Barrow",
+      "match_status": "confirmed_final",
+      "actual_score": "0-1",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:guiseley-sutton-united",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Guiseley",
+      "away": "Sutton United",
+      "match_status": "confirmed_final",
+      "actual_score": "1-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:harrogate-town-afc-fylde",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Harrogate Town",
+      "away": "AFC Fylde",
+      "match_status": "confirmed_final",
+      "actual_score": "1-4",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:hornchurch-blackpool",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Hornchurch",
+      "away": "Blackpool",
+      "match_status": "confirmed_final",
+      "actual_score": "1-2",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:huddersfield-town-exeter-city",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Huddersfield Town",
+      "away": "Exeter City",
+      "match_status": "confirmed_final",
+      "actual_score": "1-2",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:kidderminster-harriers-doncaster-rovers",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Kidderminster Harriers",
+      "away": "Doncaster Rovers",
+      "match_status": "confirmed_final",
+      "actual_score": "3-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:leyton-orient-harborough-town",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Leyton Orient",
+      "away": "Harborough Town",
+      "match_status": "confirmed_final",
+      "actual_score": "5-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:luton-town-forest-green-rovers",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Luton Town",
+      "away": "Forest Green Rovers",
+      "match_status": "confirmed_final",
+      "actual_score": "2-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:mk-dons-swindon-town",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "MK Dons",
+      "away": "Swindon Town",
+      "match_status": "confirmed_final",
+      "actual_score": "2-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:mansfield-town-macclesfield-fc",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Mansfield Town",
+      "away": "Macclesfield FC",
+      "match_status": "confirmed_final",
+      "actual_score": "3-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:newport-county-walsall",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Newport County",
+      "away": "Walsall",
+      "match_status": "confirmed_final",
+      "actual_score": "3-1",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:oxford-united-stevenage",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Oxford United",
+      "away": "Stevenage",
+      "match_status": "confirmed_final",
+      "actual_score": "0-1",
+      "actual_90m_wdl": "away_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:plymouth-argyle-alvechurch",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Plymouth Argyle",
+      "away": "Alvechurch",
+      "match_status": "confirmed_final",
+      "actual_score": "4-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:port-vale-scunthorpe-united",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Port Vale",
+      "away": "Scunthorpe United",
+      "match_status": "confirmed_final",
+      "actual_score": "4-2",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:salisbury-sholing",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "Salisbury",
+      "away": "Sholing",
+      "match_status": "confirmed_final",
+      "actual_score": "6-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "fa-cup:2026-11-07:york-city-northampton-town",
+      "competition": "FA Cup",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:00Z",
+      "kickoff_beijing": "2026-11-07T23:00+08:00",
+      "home": "York City",
+      "away": "Northampton Town",
+      "match_status": "confirmed_final",
+      "actual_score": "4-0",
+      "actual_90m_wdl": "home_win",
+      "actual_half_time_score": null,
+      "actual_half_time_full_time": null,
+      "result_sources": [
+        "https://scoreplus90.com/en/matches/2026-11-07"
+      ],
+      "prediction_snapshot_status": "no_immutable_snapshot_found"
+    },
+    {
+      "match_id": "la-liga:2026-11-07:espanyol-deportivo-de-la-coruna",
+      "competition": "La Liga",
+      "competition_id": "la-liga",
+      "competition_category": "domestic_league_core",
+      "beijing_date": "2026-11-07",
+      "kickoff_utc": "2026-11-07T15:15Z",
+      "kickoff_beijing": "2026-11-07T23:15+08:00",
+      "home": "Espanyol",
+      "away": "Deportivo de La Coruña",
+      "match_status": "confirmed_final",
+      "actual_score": "0-0",
+      "actual_90m_wdl": "draw",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平平",
+      "result_sources": [
+        "https://www.livesporty.co/match/football/laliga/espanyol-vs-deportivo/2026-11-07"
+      ],
+      "prediction_snapshot_status": "immutable_snapshot_found",
+      "prediction": {
+        "prediction_id": "la-liga:2026-11-07:espanyol-deportivo-de-la-coruna:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+        "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-09",
+        "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+        "first_score": null,
+        "second_score": null,
+        "wdl": "away_win",
+        "wdl_probabilities_pct": {
+          "home_win": 26.85,
+          "draw": 26.07,
+          "away_win": 47.08
+        },
+        "half_full": "负负",
+        "confidence_1_to_5": null,
+        "confidence_10": 3.6,
+        "data_completeness_pct": 61,
+        "risk_note": "Espanyol主场近期进攻产量偏低；Deportivo最近客场仍有失球，但整体预期进球更高。客队休息天数较少。"
+      },
+      "hits": {
+        "first_score": false,
+        "second_score": false,
+        "wdl": false,
+        "half_full": false,
+        "risk_status": "hit",
+        "risk_note": "最终0-0，主队进攻产出不足风险兑现。"
+      },
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+      }
+    }
+  ],
+  "results_by_category": {
+    "domestic_league_core": [
+      {
+        "match_id": "j1-league:2026-11-07:shimizu-s-pulse-tokyo-verdy",
+        "competition": "J1 League",
+        "competition_id": "j1-league",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T04:00Z",
+        "kickoff_beijing": "2026-11-07T12:00+08:00",
+        "home": "Shimizu S-Pulse",
+        "away": "Tokyo Verdy",
+        "match_status": "confirmed_final",
+        "actual_score": "0-1",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://www.jleague.jp/en/j1/match/"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "k-league-1:2026-11-07:jeju-sk-gwangju-fc",
+        "competition": "K League 1",
+        "competition_id": "k-league-1",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T05:00Z",
+        "kickoff_beijing": "2026-11-07T13:00+08:00",
+        "home": "Jeju SK",
+        "away": "Gwangju FC",
+        "match_status": "confirmed_final",
+        "actual_score": "1-1",
+        "actual_90m_wdl": "draw",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://tv.kleague.com/en-int",
+          "https://www.skorgol.com/en/league/k-league-1"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "j1-league:2026-11-07:yokohama-f-marinos-fagiano-okayama",
+        "competition": "J1 League",
+        "competition_id": "j1-league",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T05:00Z",
+        "kickoff_beijing": "2026-11-07T13:00+08:00",
+        "home": "Yokohama F. Marinos",
+        "away": "Fagiano Okayama",
+        "match_status": "confirmed_final",
+        "actual_score": "1-1",
+        "actual_90m_wdl": "draw",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://www.jleague.jp/en/j1/match/"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "j1-league:2026-11-07:nagoya-grampus-kyoto-sanga",
+        "competition": "J1 League",
+        "competition_id": "j1-league",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T05:00Z",
+        "kickoff_beijing": "2026-11-07T13:00+08:00",
+        "home": "Nagoya Grampus",
+        "away": "Kyoto Sanga",
+        "match_status": "confirmed_final",
+        "actual_score": "0-2",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://www.jleague.jp/en/j1/match/"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "j1-league:2026-11-07:fc-tokyo-kashima-antlers",
+        "competition": "J1 League",
+        "competition_id": "j1-league",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T06:00Z",
+        "kickoff_beijing": "2026-11-07T14:00+08:00",
+        "home": "FC Tokyo",
+        "away": "Kashima Antlers",
+        "match_status": "confirmed_final",
+        "actual_score": "2-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://www.jleague.jp/en/j1/match/"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "j1-league:2026-11-07:avispa-fukuoka-v-varen-nagasaki",
+        "competition": "J1 League",
+        "competition_id": "j1-league",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T06:00Z",
+        "kickoff_beijing": "2026-11-07T14:00+08:00",
+        "home": "Avispa Fukuoka",
+        "away": "V-Varen Nagasaki",
+        "match_status": "confirmed_final",
+        "actual_score": "1-1",
+        "actual_90m_wdl": "draw",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://www.jleague.jp/en/j1/match/"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "j1-league:2026-11-07:kashiwa-reysol-kawasaki-frontale",
+        "competition": "J1 League",
+        "competition_id": "j1-league",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T07:00Z",
+        "kickoff_beijing": "2026-11-07T15:00+08:00",
+        "home": "Kashiwa Reysol",
+        "away": "Kawasaki Frontale",
+        "match_status": "confirmed_final",
+        "actual_score": "2-1",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://www.jleague.jp/en/j1/match/"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "k-league-1:2026-11-07:gimcheon-sangmu-fc-anyang",
+        "competition": "K League 1",
+        "competition_id": "k-league-1",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T07:30Z",
+        "kickoff_beijing": "2026-11-07T15:30+08:00",
+        "home": "Gimcheon Sangmu",
+        "away": "FC Anyang",
+        "match_status": "confirmed_final",
+        "actual_score": "1-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://tv.kleague.com/en-int",
+          "https://www.skorgol.com/en/league/k-league-1"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "premier-league:2026-11-07:leeds-united-tottenham-hotspur",
+        "competition": "Premier League",
+        "competition_id": "premier-league",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T12:30Z",
+        "kickoff_beijing": "2026-11-07T20:30+08:00",
+        "home": "Leeds United",
+        "away": "Tottenham Hotspur",
+        "match_status": "confirmed_final",
+        "actual_score": "1-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "serie-a:2026-11-07:cagliari-frosinone",
+        "competition": "Serie A",
+        "competition_id": "serie-a",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T14:00Z",
+        "kickoff_beijing": "2026-11-07T22:00+08:00",
+        "home": "Cagliari",
+        "away": "Frosinone",
+        "match_status": "confirmed_final",
+        "actual_score": "1-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": "1-0",
+        "actual_half_time_full_time": "胜胜",
+        "result_sources": [
+          "https://www.sofascore.com/football/match/frosinone-cagliari/uebsbgb"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "serie-a:2026-11-07:cagliari-frosinone:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-01",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "away_win",
+          "wdl_probabilities_pct": {
+            "home_win": 36.76,
+            "draw": 22.01,
+            "away_win": 41.23
+          },
+          "half_full": "负负",
+          "confidence_1_to_5": null,
+          "confidence_10": 4,
+          "data_completeness_pct": 72,
+          "risk_note": "主队近5场1平4负；客队近5场3胜1平1负，进攻效率明显占优。Frosinone头号射手Raimondo伤停消息与另一数据源的缺阵名单不一致。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": false,
+          "half_full": false,
+          "risk_status": "not_observed",
+          "risk_note": "客队近况优势未转化为进球；主队以1-0取胜，伤停来源冲突未能独立证实。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "serie-a:2026-11-07:torino-lecce",
+        "competition": "Serie A",
+        "competition_id": "serie-a",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T14:00Z",
+        "kickoff_beijing": "2026-11-07T22:00+08:00",
+        "home": "Torino",
+        "away": "Lecce",
+        "match_status": "confirmed_final",
+        "actual_score": "1-1",
+        "actual_90m_wdl": "draw",
+        "actual_half_time_score": "0-0",
+        "actual_half_time_full_time": "平平",
+        "result_sources": [
+          "https://www.ysscores.com/en/match/5749748/Torino-FC-vs-US-Lecce"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "serie-a:2026-11-07:torino-lecce:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-02",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "home_win",
+          "wdl_probabilities_pct": {
+            "home_win": 38.82,
+            "draw": 24.11,
+            "away_win": 37.07
+          },
+          "half_full": "胜胜",
+          "confidence_1_to_5": null,
+          "confidence_10": 3.6,
+          "data_completeness_pct": 66,
+          "risk_note": "双方预期进球接近；Torino有中场及边翼卫伤疑，Mandragora缺阵，Lecce近期失球偏多。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": false,
+          "half_full": false,
+          "risk_status": "hit",
+          "risk_note": "双方预期进球接近，最终1-1；主胜方向未覆盖平局。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "bundesliga:2026-11-07:borussia-dortmund-sv-elversberg",
+        "competition": "Bundesliga",
+        "competition_id": "bundesliga",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T14:30Z",
+        "kickoff_beijing": "2026-11-07T22:30+08:00",
+        "home": "Borussia Dortmund",
+        "away": "SV Elversberg",
+        "match_status": "confirmed_final",
+        "actual_score": "2-1",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": "0-0",
+        "actual_half_time_full_time": "平胜",
+        "result_sources": [
+          "https://www.sports360news.com/en/football/borussia-dortmund-vs-sv-elversberg-match-s360-football-europe-domestic-hp1/11146134"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "bundesliga:2026-11-07:borussia-dortmund-sv-elversberg:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-03",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "home_win",
+          "wdl_probabilities_pct": {
+            "home_win": 55.83,
+            "draw": 21.1,
+            "away_win": 23.07
+          },
+          "half_full": "胜胜",
+          "confidence_1_to_5": null,
+          "confidence_10": 4.6,
+          "data_completeness_pct": 75,
+          "risk_note": "Dortmund midweek Champions League load; Guirassy unavailable, so finishing/central striker role changes. Elversberg away defence allows high xGA."
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": true,
+          "half_full": false,
+          "risk_status": "partial",
+          "risk_note": "半场0-0、主队下半场才打开局面并在81分钟被追一球，赛程消耗提示部分体现。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "bundesliga:2026-11-07:mainz-05-bayern-munich",
+        "competition": "Bundesliga",
+        "competition_id": "bundesliga",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T14:30Z",
+        "kickoff_beijing": "2026-11-07T22:30+08:00",
+        "home": "Mainz 05",
+        "away": "Bayern Munich",
+        "match_status": "confirmed_final",
+        "actual_score": "1-2",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": "0-1",
+        "actual_half_time_full_time": "负负",
+        "result_sources": [
+          "https://www.bundesliga.com/en/bundesliga/news/mainz-bayern-munich-match-report-highlights-matchday-9-39922"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "bundesliga:2026-11-07:mainz-05-bayern-munich:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-04",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "away_win",
+          "wdl_probabilities_pct": {
+            "home_win": 22.09,
+            "draw": 19.12,
+            "away_win": 58.79
+          },
+          "half_full": "负负",
+          "confidence_1_to_5": null,
+          "confidence_10": 4.5,
+          "data_completeness_pct": 74,
+          "risk_note": "Bayern客场进攻强，但Díaz、Gnabry、Musiala等缺阵/状态受限；Mainz后防停赛和伤病集中，存在大比分尾部风险。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": true,
+          "half_full": true,
+          "risk_status": "not_observed",
+          "risk_note": "拜仁仍以2-1取胜，没有出现预警中可能的大比分尾部。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "bundesliga:2026-11-07:rb-leipzig-fc-augsburg",
+        "competition": "Bundesliga",
+        "competition_id": "bundesliga",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T14:30Z",
+        "kickoff_beijing": "2026-11-07T22:30+08:00",
+        "home": "RB Leipzig",
+        "away": "FC Augsburg",
+        "match_status": "confirmed_final",
+        "actual_score": "5-2",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": "3-1",
+        "actual_half_time_full_time": "胜胜",
+        "result_sources": [
+          "https://www.sofascore.com/football/match/rb-leipzig-fc-augsburg/acbskCo"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "bundesliga:2026-11-07:rb-leipzig-fc-augsburg:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-05",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "home_win",
+          "wdl_probabilities_pct": {
+            "home_win": 56.32,
+            "draw": 18.67,
+            "away_win": 25.01
+          },
+          "half_full": "胜胜",
+          "confidence_1_to_5": null,
+          "confidence_10": 4.7,
+          "data_completeness_pct": 78,
+          "risk_note": "Leipzig周中欧冠刚结束，主场攻击力强但防线并非完全稳定；Augsburg连续不胜且缺阵较多，双方进球风险偏高。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": true,
+          "half_full": true,
+          "risk_status": "hit",
+          "risk_note": "最终5-2共7球，防线波动与高比分风险兑现。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "bundesliga:2026-11-07:sc-paderborn-eintracht-frankfurt",
+        "competition": "Bundesliga",
+        "competition_id": "bundesliga",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T14:30Z",
+        "kickoff_beijing": "2026-11-07T22:30+08:00",
+        "home": "SC Paderborn",
+        "away": "Eintracht Frankfurt",
+        "match_status": "confirmed_final",
+        "actual_score": "2-2",
+        "actual_90m_wdl": "draw",
+        "actual_half_time_score": "1-1",
+        "actual_half_time_full_time": "平平",
+        "result_sources": [
+          "https://www.skysports.com/football/sc-paderborn-07-vs-eintracht-frankfurt/563387"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "bundesliga:2026-11-07:sc-paderborn-eintracht-frankfurt:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-06",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "away_win",
+          "wdl_probabilities_pct": {
+            "home_win": 37.14,
+            "draw": 23.17,
+            "away_win": 39.68
+          },
+          "half_full": "负负",
+          "confidence_1_to_5": null,
+          "confidence_10": 3.9,
+          "data_completeness_pct": 73,
+          "risk_note": "Paderborn近期防守改善但进攻产量低；Frankfurt客场防守脆弱，Koch膝部情况有疑问，Götze缺阵。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": false,
+          "half_full": false,
+          "risk_status": "hit",
+          "risk_note": "最终2-2共4球，客队防守不稳及平局风险兑现。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "premier-league:2026-11-07:arsenal-hull-city",
+        "competition": "Premier League",
+        "competition_id": "premier-league",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Arsenal",
+        "away": "Hull City",
+        "match_status": "confirmed_final",
+        "actual_score": "1-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": "0-0",
+        "actual_half_time_full_time": "平胜",
+        "result_sources": [
+          "https://www.skorgol.com/en/match/arsenal-vs-hull-city-07-11-2026"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "premier-league:2026-11-07:arsenal-hull-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-07",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "home_win",
+          "wdl_probabilities_pct": {
+            "home_win": 52.06,
+            "draw": 25.34,
+            "away_win": 22.6
+          },
+          "half_full": "胜胜",
+          "confidence_1_to_5": null,
+          "confidence_10": 4.4,
+          "data_completeness_pct": 68,
+          "risk_note": "Arsenal周中欧冠消耗，Saka缺阵、Dowman停赛；Hull前9轮有5场平局，低位防守可能压缩主队空间。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": true,
+          "half_full": false,
+          "risk_status": "hit",
+          "risk_note": "半场0-0、72分钟才打入制胜球，低位防守使比赛维持小比分。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "premier-league:2026-11-07:fulham-newcastle-united",
+        "competition": "Premier League",
+        "competition_id": "premier-league",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Fulham",
+        "away": "Newcastle United",
+        "match_status": "confirmed_final",
+        "actual_score": "1-1",
+        "actual_90m_wdl": "draw",
+        "actual_half_time_score": "0-0",
+        "actual_half_time_full_time": "平平",
+        "result_sources": [
+          "https://www.livesporty.co/match/football/premier-league/fulham-vs-newcastle-united/2026-11-07"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "premier-league:2026-11-07:fulham-newcastle-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-08",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "home_win",
+          "wdl_probabilities_pct": {
+            "home_win": 46.11,
+            "draw": 24.08,
+            "away_win": 29.81
+          },
+          "half_full": "胜胜",
+          "confidence_1_to_5": null,
+          "confidence_10": 4,
+          "data_completeness_pct": 70,
+          "risk_note": "Fulham近3场拿7分；Newcastle中场Joelinton伤缺、Jacob Ramsey停赛，Fernandez-Pardo待评估。客队中场拦截和轮换受影响。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": false,
+          "half_full": false,
+          "risk_status": "partial",
+          "risk_note": "半场0-0，80与83分钟连入两球；纽卡中场缺阵风险部分体现，但不作因果归因。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "la-liga:2026-11-07:espanyol-deportivo-de-la-coruna",
+        "competition": "La Liga",
+        "competition_id": "la-liga",
+        "competition_category": "domestic_league_core",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:15Z",
+        "kickoff_beijing": "2026-11-07T23:15+08:00",
+        "home": "Espanyol",
+        "away": "Deportivo de La Coruña",
+        "match_status": "confirmed_final",
+        "actual_score": "0-0",
+        "actual_90m_wdl": "draw",
+        "actual_half_time_score": "0-0",
+        "actual_half_time_full_time": "平平",
+        "result_sources": [
+          "https://www.livesporty.co/match/football/laliga/espanyol-vs-deportivo/2026-11-07"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "la-liga:2026-11-07:espanyol-deportivo-de-la-coruna:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-09",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "away_win",
+          "wdl_probabilities_pct": {
+            "home_win": 26.85,
+            "draw": 26.07,
+            "away_win": 47.08
+          },
+          "half_full": "负负",
+          "confidence_1_to_5": null,
+          "confidence_10": 3.6,
+          "data_completeness_pct": 61,
+          "risk_note": "Espanyol主场近期进攻产量偏低；Deportivo最近客场仍有失球，但整体预期进球更高。客队休息天数较少。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": false,
+          "half_full": false,
+          "risk_status": "hit",
+          "risk_note": "最终0-0，主队进攻产出不足风险兑现。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      }
+    ],
+    "domestic_league_other": [
+      {
+        "match_id": "efl-championship:2026-11-07:bristol-city-norwich-city",
+        "competition": "EFL Championship",
+        "competition_id": "efl-championship",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T12:30Z",
+        "kickoff_beijing": "2026-11-07T20:30+08:00",
+        "home": "Bristol City",
+        "away": "Norwich City",
+        "match_status": "confirmed_final",
+        "actual_score": "0-5",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "efl-championship:2026-11-07:portsmouth-stoke-city",
+        "competition": "EFL Championship",
+        "competition_id": "efl-championship",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T12:30Z",
+        "kickoff_beijing": "2026-11-07T20:30+08:00",
+        "home": "Portsmouth",
+        "away": "Stoke City",
+        "match_status": "confirmed_final",
+        "actual_score": "1-2",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "efl-championship:2026-11-07:wrexham-wolverhampton-wanderers",
+        "competition": "EFL Championship",
+        "competition_id": "efl-championship",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T12:30Z",
+        "kickoff_beijing": "2026-11-07T20:30+08:00",
+        "home": "Wrexham",
+        "away": "Wolverhampton Wanderers",
+        "match_status": "confirmed_final",
+        "actual_score": "1-1",
+        "actual_90m_wdl": "draw",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "segunda-division:2026-11-07:malaga-racing-santander",
+        "competition": "Segunda Division",
+        "competition_id": "segunda-division",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T13:00Z",
+        "kickoff_beijing": "2026-11-07T21:00+08:00",
+        "home": "Malaga",
+        "away": "Racing Santander",
+        "match_status": "confirmed_final",
+        "actual_score": "1-2",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "efl-championship:2026-11-07:birmingham-city-swansea-city",
+        "competition": "EFL Championship",
+        "competition_id": "efl-championship",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Birmingham City",
+        "away": "Swansea City",
+        "match_status": "confirmed_final",
+        "actual_score": "2-1",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": "1-0",
+        "actual_half_time_full_time": "胜胜",
+        "result_sources": [
+          "https://www.skysports.com/football/birmingham-vs-swansea/report/560666"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "efl-championship:2026-11-07:birmingham-city-swansea-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-15",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "home_win",
+          "wdl_probabilities_pct": {
+            "home_win": 50.96,
+            "draw": 23.64,
+            "away_win": 25.4
+          },
+          "half_full": "胜胜",
+          "confidence_1_to_5": null,
+          "confidence_10": 3.2,
+          "data_completeness_pct": 55,
+          "risk_note": "Birmingham主场不败时间较长，但Swansea积分排名更高，客场表现波动；两队风格对位存在不确定性。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": true,
+          "half_full": true,
+          "risk_status": "not_observed",
+          "risk_note": "主胜方向正确，但红牌和乌龙未被赛前风险提示明确量化。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "efl-championship:2026-11-07:blackburn-rovers-west-ham-united",
+        "competition": "EFL Championship",
+        "competition_id": "efl-championship",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Blackburn Rovers",
+        "away": "West Ham United",
+        "match_status": "confirmed_final",
+        "actual_score": "2-1",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": "0-0",
+        "actual_half_time_full_time": "平胜",
+        "result_sources": [
+          "https://www.whufc.com/en/news/match-report-or-hammers-suffer-defeat-at-blackburn"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "efl-championship:2026-11-07:blackburn-rovers-west-ham-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-16",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "away_win",
+          "wdl_probabilities_pct": {
+            "home_win": 25.81,
+            "draw": 22.74,
+            "away_win": 51.46
+          },
+          "half_full": "负负",
+          "confidence_1_to_5": null,
+          "confidence_10": 3.6,
+          "data_completeness_pct": 65,
+          "risk_note": "West Ham近期xG和进攻产量明显更高；Blackburn主场表现起伏，客队防线仍有被反击打穿风险。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": false,
+          "half_full": false,
+          "risk_status": "partial",
+          "risk_note": "西汉姆控球64%、射门20比5仍告负，客队效率风险部分兑现。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "efl-championship:2026-11-07:cardiff-city-burnley",
+        "competition": "EFL Championship",
+        "competition_id": "efl-championship",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Cardiff City",
+        "away": "Burnley",
+        "match_status": "confirmed_final",
+        "actual_score": "5-4",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": "1-2",
+        "actual_half_time_full_time": "负胜",
+        "result_sources": [
+          "https://www.livesporty.co/match/football/championship/cardiff-city-vs-burnley/2026-11-07"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "efl-championship:2026-11-07:cardiff-city-burnley:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-17",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "home_win",
+          "wdl_probabilities_pct": {
+            "home_win": 47.77,
+            "draw": 22.38,
+            "away_win": 29.85
+          },
+          "half_full": "胜胜",
+          "confidence_1_to_5": null,
+          "confidence_10": 3.5,
+          "data_completeness_pct": 61,
+          "risk_note": "Cardiff主场进攻强但防守稳定性不足；Burnley积分靠后但反击有威胁，不同预测源的胜平负分布差异较大。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": true,
+          "half_full": false,
+          "risk_status": "hit",
+          "risk_note": "最终5-4，双方防守波动及高比分风险明确兑现。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "efl-championship:2026-11-07:charlton-athletic-sheffield-united",
+        "competition": "EFL Championship",
+        "competition_id": "efl-championship",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Charlton Athletic",
+        "away": "Sheffield United",
+        "match_status": "confirmed_final",
+        "actual_score": "2-1",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": "1-1",
+        "actual_half_time_full_time": "平胜",
+        "result_sources": [
+          "https://www.skysports.com/football/charlton-vs-sheff-utd/report/560670"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "efl-championship:2026-11-07:charlton-athletic-sheffield-united:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-18",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "away_win",
+          "wdl_probabilities_pct": {
+            "home_win": 27.63,
+            "draw": 25.99,
+            "away_win": 46.37
+          },
+          "half_full": "负负",
+          "confidence_1_to_5": null,
+          "confidence_10": 3.2,
+          "data_completeness_pct": 57,
+          "risk_note": "双方实力接近，Sheffield United略占优；平局概率不低，缺少完整伤停和临场阵容。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": false,
+          "half_full": false,
+          "risk_status": "partial",
+          "risk_note": "双方实力接近，主队79分钟才打入制胜球；平局风险部分体现。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "efl-championship:2026-11-07:preston-north-end-southampton",
+        "competition": "EFL Championship",
+        "competition_id": "efl-championship",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Preston North End",
+        "away": "Southampton",
+        "match_status": "confirmed_final",
+        "actual_score": "1-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": "1-0",
+        "actual_half_time_full_time": "胜胜",
+        "result_sources": [
+          "https://saintsfc.com/match-reports/2026-11-07-preston-north-end-vs-southampton/"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "efl-championship:2026-11-07:preston-north-end-southampton:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-19",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "away_win",
+          "wdl_probabilities_pct": {
+            "home_win": 30.01,
+            "draw": 23.81,
+            "away_win": 46.18
+          },
+          "half_full": "负负",
+          "confidence_1_to_5": null,
+          "confidence_10": 3.7,
+          "data_completeness_pct": 66,
+          "risk_note": "Preston排名垫底且失球多，Southampton进攻效率高；主队伤停和防线人手不足是主要风险。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": false,
+          "half_full": false,
+          "risk_status": "not_observed",
+          "risk_note": "南安普顿23次射门、8次射正仍未进球；普雷斯顿低进攻风险未兑现。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "efl-championship:2026-11-07:queens-park-rangers-lincoln-city",
+        "competition": "EFL Championship",
+        "competition_id": "efl-championship",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Queens Park Rangers",
+        "away": "Lincoln City",
+        "match_status": "confirmed_final",
+        "actual_score": "2-1",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": "1-1",
+        "actual_half_time_full_time": "平胜",
+        "result_sources": [
+          "https://www.qpr.co.uk/news/2026/november/07/qpr-lincoln-report/"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "efl-championship:2026-11-07:queens-park-rangers-lincoln-city:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-20",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "home_win",
+          "wdl_probabilities_pct": {
+            "home_win": 56.84,
+            "draw": 22.77,
+            "away_win": 20.39
+          },
+          "half_full": "胜胜",
+          "confidence_1_to_5": null,
+          "confidence_10": 3.8,
+          "data_completeness_pct": 64,
+          "risk_note": "QPR主场进攻强且近期不败，Lincoln客场近况偏弱；主队仍有防守转换风险。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": true,
+          "half_full": false,
+          "risk_status": "not_observed",
+          "risk_note": "QPR主场优势兑现，未观察到明显反击风险事件。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      },
+      {
+        "match_id": "efl-championship:2026-11-07:watford-middlesbrough",
+        "competition": "EFL Championship",
+        "competition_id": "efl-championship",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Watford",
+        "away": "Middlesbrough",
+        "match_status": "confirmed_final",
+        "actual_score": "0-0",
+        "actual_90m_wdl": "draw",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "efl-championship:2026-11-07:west-bromwich-albion-millwall",
+        "competition": "EFL Championship",
+        "competition_id": "efl-championship",
+        "competition_category": "domestic_league_other",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "West Bromwich Albion",
+        "away": "Millwall",
+        "match_status": "confirmed_final",
+        "actual_score": "3-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": "0-0",
+        "actual_half_time_full_time": "平胜",
+        "result_sources": [
+          "https://www.skysports.com/football/west-brom-vs-millwall/report/560676"
+        ],
+        "prediction_snapshot_status": "immutable_snapshot_found",
+        "prediction": {
+          "prediction_id": "efl-championship:2026-11-07:west-bromwich-albion-millwall:research-prematch-xg-poisson-v1.1:2026-11-07T15:01:22+08:00",
+          "strategy_id": "RESEARCH-XG-POISSON-20261107-1500-21",
+          "model_version": "RESEARCH-POISSON-PREMATCH-XG-v1.1",
+          "first_score": null,
+          "second_score": null,
+          "wdl": "home_win",
+          "wdl_probabilities_pct": {
+            "home_win": 48.8,
+            "draw": 24.38,
+            "away_win": 26.82
+          },
+          "half_full": "胜胜",
+          "confidence_1_to_5": null,
+          "confidence_10": 3.4,
+          "data_completeness_pct": 60,
+          "risk_note": "West Brom主场表现稳定，但历史交锋平局偏多；Millwall客场进攻不稳，比分分布较分散。"
+        },
+        "hits": {
+          "first_score": false,
+          "second_score": false,
+          "wdl": true,
+          "half_full": false,
+          "risk_status": "not_observed",
+          "risk_note": "交锋平局风险未兑现，最终3-0。"
+        },
+        "handicap": {
+          "official_sporttery_line": null,
+          "actual_handicap_result": null,
+          "status": "无法核验",
+          "reason": "赛前快照无可核验官方竞彩让球数；不以第三方亚洲盘替代，不反推。只允许第一比分+官方盘口机械映射。"
+        }
+      }
+    ],
+    "domestic_cup": [
+      {
+        "match_id": "fa-cup:2026-11-07:accrington-stanley-wycombe-wanderers",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Accrington Stanley",
+        "away": "Wycombe Wanderers",
+        "match_status": "confirmed_final",
+        "actual_score": "0-2",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:barnet-tranmere-rovers",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Barnet",
+        "away": "Tranmere Rovers",
+        "match_status": "confirmed_final",
+        "actual_score": "3-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:barnsley-aldershot-town",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Barnsley",
+        "away": "Aldershot Town",
+        "match_status": "confirmed_final",
+        "actual_score": "7-2",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:boreham-wood-wigan-athletic",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Boreham Wood",
+        "away": "Wigan Athletic",
+        "match_status": "confirmed_final",
+        "actual_score": "0-3",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:bradford-city-marine",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Bradford City",
+        "away": "Marine",
+        "match_status": "confirmed_final",
+        "actual_score": "7-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:bromley-rotherham-united",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Bromley",
+        "away": "Rotherham United",
+        "match_status": "confirmed_final",
+        "actual_score": "0-2",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:burton-albion-afc-rushden-diamonds",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Burton Albion",
+        "away": "AFC Rushden & Diamonds",
+        "match_status": "confirmed_final",
+        "actual_score": "4-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:carlisle-united-salford-city",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Carlisle United",
+        "away": "Salford City",
+        "match_status": "confirmed_final",
+        "actual_score": "1-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:cheltenham-town-fc-halifax-town",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Cheltenham Town",
+        "away": "FC Halifax Town",
+        "match_status": "confirmed_final",
+        "actual_score": "2-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:chesterfield-yeovil-town",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Chesterfield",
+        "away": "Yeovil Town",
+        "match_status": "confirmed_final",
+        "actual_score": "4-3",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:colchester-united-worcester-city",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Colchester United",
+        "away": "Worcester City",
+        "match_status": "confirmed_final",
+        "actual_score": "1-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:crewe-alexandra-afc-wimbledon",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Crewe Alexandra",
+        "away": "AFC Wimbledon",
+        "match_status": "confirmed_final",
+        "actual_score": "2-1",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:dover-athletic-wealdstone",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Dover Athletic",
+        "away": "Wealdstone",
+        "match_status": "confirmed_final",
+        "actual_score": "2-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:eastleigh-shrewsbury-town",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Eastleigh",
+        "away": "Shrewsbury Town",
+        "match_status": "confirmed_final",
+        "actual_score": "1-2",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:fleetwood-town-rochdale",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Fleetwood Town",
+        "away": "Rochdale",
+        "match_status": "confirmed_final",
+        "actual_score": "1-2",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:gillingham-barrow",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Gillingham",
+        "away": "Barrow",
+        "match_status": "confirmed_final",
+        "actual_score": "0-1",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:guiseley-sutton-united",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Guiseley",
+        "away": "Sutton United",
+        "match_status": "confirmed_final",
+        "actual_score": "1-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:harrogate-town-afc-fylde",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Harrogate Town",
+        "away": "AFC Fylde",
+        "match_status": "confirmed_final",
+        "actual_score": "1-4",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:hornchurch-blackpool",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Hornchurch",
+        "away": "Blackpool",
+        "match_status": "confirmed_final",
+        "actual_score": "1-2",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:huddersfield-town-exeter-city",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Huddersfield Town",
+        "away": "Exeter City",
+        "match_status": "confirmed_final",
+        "actual_score": "1-2",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:kidderminster-harriers-doncaster-rovers",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Kidderminster Harriers",
+        "away": "Doncaster Rovers",
+        "match_status": "confirmed_final",
+        "actual_score": "3-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:leyton-orient-harborough-town",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Leyton Orient",
+        "away": "Harborough Town",
+        "match_status": "confirmed_final",
+        "actual_score": "5-1",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:luton-town-forest-green-rovers",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Luton Town",
+        "away": "Forest Green Rovers",
+        "match_status": "confirmed_final",
+        "actual_score": "2-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:mk-dons-swindon-town",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "MK Dons",
+        "away": "Swindon Town",
+        "match_status": "confirmed_final",
+        "actual_score": "2-1",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:mansfield-town-macclesfield-fc",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Mansfield Town",
+        "away": "Macclesfield FC",
+        "match_status": "confirmed_final",
+        "actual_score": "3-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:newport-county-walsall",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Newport County",
+        "away": "Walsall",
+        "match_status": "confirmed_final",
+        "actual_score": "3-1",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:oxford-united-stevenage",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Oxford United",
+        "away": "Stevenage",
+        "match_status": "confirmed_final",
+        "actual_score": "0-1",
+        "actual_90m_wdl": "away_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:plymouth-argyle-alvechurch",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Plymouth Argyle",
+        "away": "Alvechurch",
+        "match_status": "confirmed_final",
+        "actual_score": "4-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:port-vale-scunthorpe-united",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Port Vale",
+        "away": "Scunthorpe United",
+        "match_status": "confirmed_final",
+        "actual_score": "4-2",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:salisbury-sholing",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "Salisbury",
+        "away": "Sholing",
+        "match_status": "confirmed_final",
+        "actual_score": "6-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      },
+      {
+        "match_id": "fa-cup:2026-11-07:york-city-northampton-town",
+        "competition": "FA Cup",
+        "competition_id": "fa-cup",
+        "competition_category": "domestic_cup",
+        "beijing_date": "2026-11-07",
+        "kickoff_utc": "2026-11-07T15:00Z",
+        "kickoff_beijing": "2026-11-07T23:00+08:00",
+        "home": "York City",
+        "away": "Northampton Town",
+        "match_status": "confirmed_final",
+        "actual_score": "4-0",
+        "actual_90m_wdl": "home_win",
+        "actual_half_time_score": null,
+        "actual_half_time_full_time": null,
+        "result_sources": [
+          "https://scoreplus90.com/en/matches/2026-11-07"
+        ],
+        "prediction_snapshot_status": "no_immutable_snapshot_found"
+      }
+    ]
+  },
+  "current_date_early_results": [
+    {
+      "match_id": "serie-a:2026-11-08:parma-bologna",
+      "competition_id": "serie-a",
+      "home": "Parma",
+      "away": "Bologna",
+      "kickoff_utc": "2026-11-07T17:00:00Z",
+      "kickoff_beijing": "2026-11-08T01:00+08:00",
+      "actual_score": "1-2",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "serie-a:2026-11-08:as-roma-sassuolo",
+      "competition_id": "serie-a",
+      "home": "AS Roma",
+      "away": "Sassuolo",
+      "kickoff_utc": "2026-11-07T19:45:00Z",
+      "kickoff_beijing": "2026-11-08T03:45+08:00",
+      "actual_score": "3-0",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "ligue-1:2026-11-08:auxerre-paris-fc",
+      "competition_id": "ligue-1",
+      "home": "Auxerre",
+      "away": "Paris FC",
+      "kickoff_utc": "2026-11-07T17:00:00Z",
+      "kickoff_beijing": "2026-11-08T01:00+08:00",
+      "actual_score": "0-1",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "ligue-1:2026-11-08:paris-saint-germain-estac-troyes",
+      "competition_id": "ligue-1",
+      "home": "Paris Saint-Germain",
+      "away": "Estac Troyes",
+      "kickoff_utc": "2026-11-07T20:05:00Z",
+      "kickoff_beijing": "2026-11-08T04:05+08:00",
+      "actual_score": "1-0",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "premier-league:2026-11-08:nottingham-forest-manchester-city",
+      "competition_id": "premier-league",
+      "home": "Nottingham Forest",
+      "away": "Manchester City",
+      "kickoff_utc": "2026-11-07T17:30:00Z",
+      "kickoff_beijing": "2026-11-08T01:30+08:00",
+      "actual_score": "3-1",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "la-liga:2026-11-08:osasuna-athletic-club",
+      "competition_id": "la-liga",
+      "home": "Osasuna",
+      "away": "Athletic Club",
+      "kickoff_utc": "2026-11-07T17:30:00Z",
+      "kickoff_beijing": "2026-11-08T01:30+08:00",
+      "actual_score": "1-1",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "la-liga:2026-11-08:valencia-real-madrid",
+      "competition_id": "la-liga",
+      "home": "Valencia",
+      "away": "Real Madrid",
+      "kickoff_utc": "2026-11-07T20:00:00Z",
+      "kickoff_beijing": "2026-11-08T04:00+08:00",
+      "actual_score": "0-3",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "bundesliga:2026-11-08:vfb-stuttgart-werder-bremen",
+      "competition_id": "bundesliga",
+      "home": "VfB Stuttgart",
+      "away": "Werder Bremen",
+      "kickoff_utc": "2026-11-07T17:30:00Z",
+      "kickoff_beijing": "2026-11-08T01:30+08:00",
+      "actual_score": "1-0",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "primeira-liga:2026-11-08:alverca-casa-pia",
+      "competition_id": "primeira-liga",
+      "home": "Alverca",
+      "away": "Casa Pia",
+      "kickoff_utc": "2026-11-07T19:00:00Z",
+      "kickoff_beijing": "2026-11-08T03:00+08:00",
+      "actual_score": "1-1",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "primeira-liga:2026-11-08:sporting-cp-moreirense",
+      "competition_id": "primeira-liga",
+      "home": "Sporting CP",
+      "away": "Moreirense",
+      "kickoff_utc": "2026-11-07T21:30:00Z",
+      "kickoff_beijing": "2026-11-08T05:30+08:00",
+      "actual_score": "1-0",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "eliteserien:2026-11-08:rosenborg-start",
+      "competition_id": "eliteserien",
+      "home": "Rosenborg",
+      "away": "Start",
+      "kickoff_utc": "2026-11-07T17:00:00Z",
+      "kickoff_beijing": "2026-11-08T01:00+08:00",
+      "actual_score": "4-1",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "fa-cup:2026-11-08:altrincham-notts-county",
+      "competition_id": "fa-cup",
+      "home": "Altrincham",
+      "away": "Notts County",
+      "kickoff_utc": "2026-11-07T17:30:00Z",
+      "kickoff_beijing": "2026-11-08T01:30+08:00",
+      "actual_score": "2-2",
+      "status": "confirmed_final"
+    },
+    {
+      "match_id": "fa-cup:2026-11-08:peterborough-united-reading",
+      "competition_id": "fa-cup",
+      "home": "Peterborough United",
+      "away": "Reading",
+      "kickoff_utc": "2026-11-07T20:00:00Z",
+      "kickoff_beijing": "2026-11-08T04:00+08:00",
+      "actual_score": "0-5",
+      "status": "confirmed_final"
+    }
+  ],
+  "early_prediction_status": [
+    {
+      "match_id": "serie-a:2026-11-08:parma-bologna",
+      "home": "Parma",
+      "away": "Bologna",
+      "status": "finished_pending_next_review"
+    },
+    {
+      "match_id": "premier-league:2026-11-08:nottingham-forest-manchester-city",
+      "home": "Nottingham Forest",
+      "away": "Manchester City",
+      "status": "finished_pending_next_review"
+    },
+    {
+      "match_id": "la-liga:2026-11-08:osasuna-athletic-club",
+      "home": "Osasuna",
+      "away": "Athletic Club",
+      "status": "finished_pending_next_review"
+    },
+    {
+      "match_id": "bundesliga:2026-11-08:vfb-stuttgart-werder-bremen",
+      "home": "VfB Stuttgart",
+      "away": "Werder Bremen",
+      "status": "finished_pending_next_review"
+    },
+    {
+      "match_id": "ligue-1:2026-11-08:auxerre-paris-fc",
+      "home": "Auxerre",
+      "away": "Paris FC",
+      "status": "finished_pending_next_review"
+    },
+    {
+      "match_id": "primeira-liga:2026-11-08:nacional-academico-de-viseu",
+      "home": "Nacional",
+      "away": "Academico de Viseu",
+      "status": "invalidated_by_postponement_and_reschedule"
+    },
+    {
+      "match_id": "primeira-liga:2026-11-08:alverca-casa-pia",
+      "home": "Alverca",
+      "away": "Casa Pia",
+      "status": "finished_pending_next_review"
+    }
+  ],
+  "postponed": [
+    {
+      "match_id": "primeira-liga:2026-11-08:nacional-academico-de-viseu",
+      "home": "Nacional",
+      "away": "Academico Viseu",
+      "status": "postponed_then_rescheduled",
+      "new_kickoff_utc": "2026-11-08T15:30:00Z",
+      "new_kickoff_beijing": "2026-11-08T23:30+08:00",
+      "old_prediction_snapshot_must_not_be_reused": true
+    }
+  ],
+  "limitations": [
+    "45场无不可变赛前预测快照，不计入命中率。",
+    "16场均缺真实官方竞彩让球盘，未用亚洲盘替代。",
+    "当前日期早场13场单独记录，不混入11月7日复盘。"
+  ]
+}
