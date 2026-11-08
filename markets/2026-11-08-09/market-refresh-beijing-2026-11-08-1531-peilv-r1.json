@@ -1,0 +1,535 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "market-refresh-2026-11-08-1531-peilv-r1",
+  "captured_at": "2026-11-08T15:31:23+08:00",
+  "timezone": "Asia/Shanghai",
+  "source_update_timestamp_exposed": false,
+  "sources": [
+    {
+      "name": "peilv.net",
+      "url": "https://peilv.net/date/2026-11-08/",
+      "type": "third_party_odds_aggregator",
+      "fields": "opening/current 1X2, Asian handicap, O/U"
+    },
+    {
+      "name": "peilv.net",
+      "url": "https://peilv.net/date/2026-11-09/",
+      "type": "third_party_odds_aggregator",
+      "fields": "opening/current 1X2, Asian handicap, O/U"
+    }
+  ],
+  "field_semantics": {
+    "one_x_two_order": "home_draw_away",
+    "pair_order": "opening_then_current",
+    "asian_handicap": "third_party_asian_only_not_China_Sports_Lottery_handicap",
+    "totals": "opening_line_then_current_line"
+  },
+  "official_jc_handicap_verified_count": 0,
+  "note": "页面未公开逐公司更新时间；captured_at表示本轮读取页面时间，不代表供应商报价的精确更新时间。所有亚洲盘均为第三方盘口，不用于竞彩让球映射。",
+  "quotes": [
+    {
+      "match": "布莱顿-布伦特福德",
+      "beijing_kickoff": "2026-11-08T22:00:00+08:00",
+      "one_x_two_open": [
+        1.85,
+        3.8,
+        3.8
+      ],
+      "one_x_two_current": [
+        1.95,
+        3.7,
+        3.4
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "水晶宫-利物浦",
+      "beijing_kickoff": "2026-11-08T22:00:00+08:00",
+      "one_x_two_open": [
+        5.25,
+        4.33,
+        1.6
+      ],
+      "one_x_two_current": [
+        4.5,
+        4.2,
+        1.62
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "2.5",
+      "ou_current": "3.5"
+    },
+    {
+      "match": "伊普斯维奇-伯恩茅斯",
+      "beijing_kickoff": "2026-11-08T22:00:00+08:00",
+      "one_x_two_open": [
+        3.8,
+        3.75,
+        1.91
+      ],
+      "one_x_two_current": [
+        3,
+        3.4,
+        2.2
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "桑德兰-切尔西",
+      "beijing_kickoff": "2026-11-08T22:00:00+08:00",
+      "one_x_two_open": [
+        3.6,
+        3.6,
+        2
+      ],
+      "one_x_two_current": [
+        4.1,
+        3.5,
+        1.83
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "皇家社会-巴列卡诺",
+      "beijing_kickoff": "2026-11-08T23:15:00+08:00",
+      "one_x_two_open": [
+        1.65,
+        4.2,
+        4.75
+      ],
+      "one_x_two_current": [
+        1.85,
+        3.6,
+        3.9
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "热那亚-AC米兰",
+      "beijing_kickoff": "2026-11-08T22:00:00+08:00",
+      "one_x_two_open": [
+        4.5,
+        3.6,
+        1.8
+      ],
+      "one_x_two_current": [
+        4.5,
+        3.5,
+        1.75
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "蒙扎-亚特兰大",
+      "beijing_kickoff": "2026-11-08T22:00:00+08:00",
+      "one_x_two_open": [
+        3.5,
+        3.6,
+        2.05
+      ],
+      "one_x_two_current": [
+        3.3,
+        3.5,
+        2.05
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "3.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "科隆-勒沃库森",
+      "beijing_kickoff": "2026-11-08T22:30:00+08:00",
+      "one_x_two_open": [
+        4.33,
+        4.2,
+        1.73
+      ],
+      "one_x_two_current": [
+        4.33,
+        4.2,
+        1.65
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "3.5",
+      "ou_current": "3.5"
+    },
+    {
+      "match": "雷恩-里尔",
+      "beijing_kickoff": "2026-11-08T22:00:00+08:00",
+      "one_x_two_open": [
+        2.1,
+        3.6,
+        3.3
+      ],
+      "one_x_two_current": [
+        2.05,
+        3.7,
+        3.3
+      ],
+      "asian_open": "0",
+      "asian_current": "0",
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "埃斯托里尔-马里迪莫",
+      "beijing_kickoff": "2026-11-08T23:30:00+08:00",
+      "one_x_two_open": [
+        2.05,
+        3.4,
+        3.6
+      ],
+      "one_x_two_current": [
+        2.1,
+        3.4,
+        3.3
+      ],
+      "asian_open": "0",
+      "asian_current": "0",
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "圣克拉拉-吉尔维森特",
+      "beijing_kickoff": "2026-11-08T23:30:00+08:00",
+      "one_x_two_open": [
+        2.25,
+        3.1,
+        3.4
+      ],
+      "one_x_two_current": [
+        2.25,
+        3,
+        3.4
+      ],
+      "asian_open": "0",
+      "asian_current": "0",
+      "ou_open": "1.5",
+      "ou_current": "1.5"
+    },
+    {
+      "match": "曼联-阿斯顿维拉",
+      "beijing_kickoff": "2026-11-09T00:30:00+08:00",
+      "one_x_two_open": [
+        2.15,
+        3.6,
+        3.2
+      ],
+      "one_x_two_current": [
+        2.25,
+        3.6,
+        2.88
+      ],
+      "asian_open": "0",
+      "asian_current": "home +0.25",
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "弗赖堡-柏林联合",
+      "beijing_kickoff": "2026-11-09T00:30:00+08:00",
+      "one_x_two_open": [
+        1.48,
+        4.33,
+        6.25
+      ],
+      "one_x_two_current": [
+        1.5,
+        4.33,
+        5.75
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "国际米兰-科莫",
+      "beijing_kickoff": "2026-11-09T01:00:00+08:00",
+      "one_x_two_open": [
+        1.91,
+        4.2,
+        3.4
+      ],
+      "one_x_two_current": [
+        1.73,
+        4,
+        4.1
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "3.5",
+      "ou_current": "3.5"
+    },
+    {
+      "match": "塞尔塔-莱万特",
+      "beijing_kickoff": "2026-11-09T01:30:00+08:00",
+      "one_x_two_open": [
+        1.85,
+        3.5,
+        4.33
+      ],
+      "one_x_two_current": [
+        1.83,
+        3.5,
+        4.2
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "比利亚雷亚尔-赫塔费",
+      "beijing_kickoff": "2026-11-09T01:30:00+08:00",
+      "one_x_two_open": [
+        1.42,
+        4.5,
+        8
+      ],
+      "one_x_two_current": [
+        1.48,
+        4.1,
+        6.5
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "霍芬海姆-沙尔克04",
+      "beijing_kickoff": "2026-11-09T02:30:00+08:00",
+      "one_x_two_open": [
+        1.6,
+        4.33,
+        5.25
+      ],
+      "one_x_two_current": [
+        1.62,
+        4.1,
+        4.75
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "3.5",
+      "ou_current": "3.5"
+    },
+    {
+      "match": "昂热-尼斯",
+      "beijing_kickoff": "2026-11-09T00:15:00+08:00",
+      "one_x_two_open": [
+        3.5,
+        3.6,
+        2.05
+      ],
+      "one_x_two_current": [
+        3.3,
+        3.5,
+        2.05
+      ],
+      "asian_open": "0",
+      "asian_current": "0",
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "布雷斯特-里昂",
+      "beijing_kickoff": "2026-11-09T00:15:00+08:00",
+      "one_x_two_open": [
+        2.8,
+        3.5,
+        2.45
+      ],
+      "one_x_two_current": [
+        2.88,
+        3.6,
+        2.3
+      ],
+      "asian_open": "home +0.25",
+      "asian_current": "home +0.25",
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "勒阿弗尔-洛里昂",
+      "beijing_kickoff": "2026-11-09T00:15:00+08:00",
+      "one_x_two_open": [
+        2.8,
+        3.3,
+        2.55
+      ],
+      "one_x_two_current": [
+        2.75,
+        3.25,
+        2.5
+      ],
+      "asian_open": "home +0.25",
+      "asian_current": "home +0.25",
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "勒芒-摩纳哥",
+      "beijing_kickoff": "2026-11-09T00:15:00+08:00",
+      "one_x_two_open": [
+        4.5,
+        4,
+        1.73
+      ],
+      "one_x_two_current": [
+        4.2,
+        3.75,
+        1.75
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "维多利亚SC-波尔图",
+      "beijing_kickoff": "2026-11-09T02:00:00+08:00",
+      "one_x_two_open": [
+        5,
+        4,
+        1.62
+      ],
+      "one_x_two_current": [
+        5,
+        4,
+        1.62
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "2.5",
+      "ou_current": "2.5"
+    },
+    {
+      "match": "汉坎-萨尔普斯堡08",
+      "beijing_kickoff": "2026-11-09T00:00:00+08:00",
+      "one_x_two_open": [
+        2.9,
+        3.75,
+        2.1
+      ],
+      "one_x_two_current": [
+        2.9,
+        3.75,
+        2.1
+      ],
+      "asian_open": "0",
+      "asian_current": "0",
+      "ou_open": "3.5",
+      "ou_current": "3.5"
+    },
+    {
+      "match": "利勒斯特罗姆-奥勒松",
+      "beijing_kickoff": "2026-11-09T00:00:00+08:00",
+      "one_x_two_open": [
+        1.75,
+        4.1,
+        3.7
+      ],
+      "one_x_two_current": [
+        1.75,
+        4.1,
+        3.7
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "3.5",
+      "ou_current": "3.5"
+    },
+    {
+      "match": "桑德菲杰-莫尔德",
+      "beijing_kickoff": "2026-11-09T00:00:00+08:00",
+      "one_x_two_open": [
+        3.8,
+        4.2,
+        1.7
+      ],
+      "one_x_two_current": [
+        3.8,
+        4.2,
+        1.7
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "3.5",
+      "ou_current": "3.5"
+    },
+    {
+      "match": "维京-KFUM奥斯陆",
+      "beijing_kickoff": "2026-11-09T00:00:00+08:00",
+      "one_x_two_open": [
+        1.22,
+        6.5,
+        8.5
+      ],
+      "one_x_two_current": [
+        1.22,
+        6.5,
+        8.5
+      ],
+      "asian_open": null,
+      "asian_current": null,
+      "ou_open": "3.5",
+      "ou_current": "3.5"
+    },
+    {
+      "match": "腓特烈斯塔-布兰",
+      "beijing_kickoff": "2026-11-09T02:15:00+08:00",
+      "one_x_two_open": [
+        2.55,
+        3.6,
+        2.4
+      ],
+      "one_x_two_current": [
+        2.6,
+        3.6,
+        2.35
+      ],
+      "asian_open": "0",
+      "asian_current": "0",
+      "ou_open": "3.5",
+      "ou_current": "3.5"
+    }
+  ],
+  "missing_quotes": [
+    {
+      "match": "国民队-维塞乌学院",
+      "reason": "本次peilv.net页面未找到可核实欧赔初盘/即时盘；旧快照也标记缺失"
+    },
+    {
+      "match": "奥尔德姆-谢菲尔德星期三",
+      "reason": "本次peilv.net页面未找到可核实市场报价"
+    },
+    {
+      "match": "克雷流浪者-斯托克港",
+      "reason": "来源方向冲突，未生成预测；市场报价缺失"
+    },
+    {
+      "match": "温伯恩镇-克劳利",
+      "reason": "缺少可追溯统一xG及市场报价，未生成预测"
+    }
+  ]
+}
