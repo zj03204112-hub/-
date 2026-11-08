@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "run_date_beijing": "2026-11-08",
+  "run_type": "10:00",
+  "branch": "automation/daily-football-2026-11-08-1000-run11",
+  "created_at": "2026-11-08T01:59:44Z",
+  "files": [
+    {
+      "path": "reviews/2026-11-08/previous-day-review-2026-11-07-r1.json",
+      "blob_sha": "5fb1d3c367ca25fb53f8ed09a1401fef59af5b28"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-08/match_xg_cumulative_asof_2026-11-08_1000.csv",
+      "blob_sha": "30472d604cf068b6c380173e00d528faac8d6abe"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-08/team_weekly_xg_cumulative_asof_2026-11-08_1000.csv",
+      "blob_sha": "d5f1f96d50674c1ec29793cc4f523b381cb17c17"
+    },
+    {
+      "path": "data/xg_weekly/2026-W45/snapshots/2026-11-08/coverage_audit_cumulative_asof_2026-11-08_1000.json",
+      "blob_sha": "fb380009c02d529614442e0a9783a564b92fac33"
+    },
+    {
+      "path": "fixtures/2026-11-08-09/schedule-beijing-2026-11-08-09-1000.json",
+      "commit_sha": "3f5e8f42c1091b06c693a71d7b430f25ec0d1058"
+    }
+  ],
+  "summary": {
+    "finished_nov7_matches": 61,
+    "immutable_prediction_matches": 16,
+    "wdl_hits": 8,
+    "first_score_hits": 5,
+    "second_score_hits": 1,
+    "half_full_hits": 3,
+    "handicap_unverifiable": 16,
+    "schedule_fixtures": 64,
+    "weekly_xg_coverage": "see coverage audit"
+  },
+  "database": {
+    "sqlite_file_in_repo": true,
+    "active_connection": false,
+    "updated": false
+  },
+  "head_before_manifest": "3f5e8f42c1091b06c693a71d7b430f25ec0d1058"
+}
