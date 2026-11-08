@@ -1,0 +1,2287 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "predictions-6-12h-2026-11-08-1504-r1",
+  "captured_at": "2026-11-08T15:04:00+08:00",
+  "window_definition": "kickoff 6–12 hours after capture time; Beijing time",
+  "window_matches": 32,
+  "predictions_generated": 30,
+  "not_generated": [
+    {
+      "match_name": "克雷流浪者 vs 斯托克港",
+      "competition": "足总杯",
+      "kickoff_beijing": "2026-11-08T22:15:00+08:00",
+      "reason": "独立来源对方向给出极端相反结论；Cray样本不足，拒绝强行合成",
+      "risk": [
+        "EagleEye模型偏主胜45%，多家市场模型偏客胜约80%",
+        "主队历史样本不足，双方级别差距大",
+        "来源冲突，本轮不生成正式预测"
+      ],
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "prediction_generated": false
+    },
+    {
+      "match_name": "温伯恩镇 vs 克劳利",
+      "competition": "足总杯",
+      "kickoff_beijing": "2026-11-08T23:00:00+08:00",
+      "reason": "模型方向与xG输入不一致，数据质量不足",
+      "risk": [
+        "不同来源方向相反",
+        "缺少可追溯的统一比赛级xG输入"
+      ],
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "prediction_generated": false
+    }
+  ],
+  "strategy_id": "S15-20261108-XGPOISSON-R1",
+  "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+  "methodology": "Independent Poisson recalculation from provider projected xG; HT/FT split assumes 45% first-half and 55% second-half expected goals. This is an exploratory research overlay, not V5.1 and not a validated production upgrade.",
+  "model_guardrails": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "official_handicap_mapping_performed": false,
+    "second_score_used_for_handicap": false
+  },
+  "predictions": [
+    {
+      "prediction_id": "pred-20261108-1504-001",
+      "match_id": "premier-league:2026-11-08:brighton-and-hove-albion-brentford",
+      "competition": "英超",
+      "category": "国内联赛",
+      "home": "布莱顿",
+      "away": "布伦特福德",
+      "kickoff_beijing": "2026-11-08T22:00:00+08:00",
+      "kickoff_utc": "2026-11-08T14:00:00Z",
+      "hours_to_kickoff_at_run": 6.93,
+      "xg_input": {
+        "home": 1.91,
+        "away": 1.2,
+        "total": 3.11,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/premier-league/brighton-hove-albion-vs-brentford-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 53.9,
+        "draw_pct": 22.3,
+        "away_win_pct": 23.8
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 10.22
+        },
+        {
+          "score": "2-1",
+          "probability_pct": 9.76
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 34.1
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 3.11,
+        "over_2_5_pct": 60.1,
+        "both_teams_to_score_pct": 59.5
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 4.6,
+      "data_completeness_pct": 65,
+      "risk_flags": [
+        "xG模型与其他供应商有分歧",
+        "多名伤停；首发未发布",
+        "官方竞彩盘口未核验"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": "布莱顿Mitoma、Tzimas、Yohanna、Ferguson缺阵；Struijk/Azeez恢复中，Kadioglu待评估；布伦特福德Henry、Dasilva、Furo、Carvalho、Milambo缺阵，Yarmolyuk停赛",
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-01",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-002",
+      "match_id": "premier-league:2026-11-08:crystal-palace-liverpool",
+      "competition": "英超",
+      "category": "国内联赛",
+      "home": "水晶宫",
+      "away": "利物浦",
+      "kickoff_beijing": "2026-11-08T22:00:00+08:00",
+      "kickoff_utc": "2026-11-08T14:00:00Z",
+      "hours_to_kickoff_at_run": 6.93,
+      "xg_input": {
+        "home": 1.17,
+        "away": 1.7,
+        "total": 2.87,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/premier-league/crystal-palace-vs-liverpool-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 26.3,
+        "draw_pct": 24,
+        "away_win_pct": 49.8
+      },
+      "predicted_90m_result": "负",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 11.28
+        },
+        {
+          "score": "0-1",
+          "probability_pct": 9.64
+        }
+      ],
+      "predicted_htft": {
+        "result": "负负",
+        "probability_pct": 30.7
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.87,
+        "over_2_5_pct": 54.7,
+        "both_teams_to_score_pct": 56.4
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "+1",
+        "odds": [
+          2.48,
+          3.7,
+          2.15
+        ],
+        "updated": "2026-11-08 15:02",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-08/2042624",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 4.5,
+      "data_completeness_pct": 64,
+      "risk_flags": [
+        "利物浦方向优势",
+        "大小球盘口2.5→3.5异常，需复核",
+        "竞彩镜像候选+1，非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-02",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-003",
+      "match_id": "premier-league:2026-11-08:ipswich-town-afc-bournemouth",
+      "competition": "英超",
+      "category": "国内联赛",
+      "home": "伊普斯维奇",
+      "away": "伯恩茅斯",
+      "kickoff_beijing": "2026-11-08T22:00:00+08:00",
+      "kickoff_utc": "2026-11-08T14:00:00Z",
+      "hours_to_kickoff_at_run": 6.93,
+      "xg_input": {
+        "home": 1.12,
+        "away": 1.66,
+        "total": 2.78,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/premier-league/ipswich-town-vs-bournemouth-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 25.7,
+        "draw_pct": 24.3,
+        "away_win_pct": 50
+      },
+      "predicted_90m_result": "负",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 11.53
+        },
+        {
+          "score": "0-1",
+          "probability_pct": 10.3
+        }
+      ],
+      "predicted_htft": {
+        "result": "负负",
+        "probability_pct": 30.7
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.78,
+        "over_2_5_pct": 52.6,
+        "both_teams_to_score_pct": 54.6
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "+1",
+        "odds": [
+          1.92,
+          3.65,
+          2.9
+        ],
+        "updated": "2026-11-08 14:58",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-08/2042623",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 3.7,
+      "data_completeness_pct": 58,
+      "risk_flags": [
+        "主队数据库仅9场，低于10场阈值",
+        "市场与模型方向反向",
+        "竞彩镜像候选+1，非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-03",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-004",
+      "match_id": "premier-league:2026-11-08:sunderland-chelsea",
+      "competition": "英超",
+      "category": "国内联赛",
+      "home": "桑德兰",
+      "away": "切尔西",
+      "kickoff_beijing": "2026-11-08T22:00:00+08:00",
+      "kickoff_utc": "2026-11-08T14:00:00Z",
+      "hours_to_kickoff_at_run": 6.93,
+      "xg_input": {
+        "home": 1.35,
+        "away": 1.34,
+        "total": 2.69,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/premier-league/sunderland-vs-chelsea-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 37.3,
+        "draw_pct": 25.9,
+        "away_win_pct": 36.8
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 12.28
+        },
+        {
+          "score": "1-0",
+          "probability_pct": 9.16
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 21.9
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.69,
+        "over_2_5_pct": 50.4,
+        "both_teams_to_score_pct": 54.7
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "+1",
+        "odds": [
+          1.82,
+          3.7,
+          3.13
+        ],
+        "updated": "2026-11-08 14:57",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-08/2042622",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 3.7,
+      "data_completeness_pct": 63,
+      "risk_flags": [
+        "胜负接近，平局风险高",
+        "切尔西中场伤停/疑问",
+        "竞彩镜像候选+1，非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": "切尔西Reece James、João Pedro、Maxence Lacroix伤缺，Caicedo出战存疑",
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-04",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-005",
+      "match_id": "la-liga:2026-11-08:real-sociedad-rayo-vallecano",
+      "competition": "西甲",
+      "category": "国内联赛",
+      "home": "皇家社会",
+      "away": "巴列卡诺",
+      "kickoff_beijing": "2026-11-08T23:15:00+08:00",
+      "kickoff_utc": "2026-11-08T15:15:00Z",
+      "hours_to_kickoff_at_run": 8.18,
+      "xg_input": {
+        "home": 1.63,
+        "away": 1.47,
+        "total": 3.1,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/la-liga/real-sociedad-vs-rayo-vallecano-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 41.6,
+        "draw_pct": 23.8,
+        "away_win_pct": 34.7
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 10.79
+        },
+        {
+          "score": "2-1",
+          "probability_pct": 8.8
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 25.2
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 3.1,
+        "over_2_5_pct": 59.9,
+        "both_teams_to_score_pct": 61.9
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "-1",
+        "odds": [
+          2.74,
+          3.4,
+          2.08
+        ],
+        "updated": "2026-11-08 15:02",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-08/2042628",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 4,
+      "data_completeness_pct": 68,
+      "risk_flags": [
+        "欧战后短休",
+        "Sarr伤缺、Oyarzabal待评估",
+        "竞彩镜像候选-1，非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": "皇家社会Odriozola、Sarr缺阵，Oyarzabal因病待评估；Rayo的Batalla、Luiz Felipe、Álvaro García、Kumbulla、Óscar Valentín缺阵",
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-05",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-006",
+      "match_id": "serie-a:2026-11-08:genoa-ac-milan",
+      "competition": "意甲",
+      "category": "国内联赛",
+      "home": "热那亚",
+      "away": "AC米兰",
+      "kickoff_beijing": "2026-11-08T22:00:00+08:00",
+      "kickoff_utc": "2026-11-08T14:00:00Z",
+      "hours_to_kickoff_at_run": 6.93,
+      "xg_input": {
+        "home": 1.06,
+        "away": 1.29,
+        "total": 2.35,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/serie-a/genoa-vs-milan-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 30.5,
+        "draw_pct": 27.8,
+        "away_win_pct": 41.7
+      },
+      "predicted_90m_result": "负",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 13.04
+        },
+        {
+          "score": "0-1",
+          "probability_pct": 12.3
+        }
+      ],
+      "predicted_htft": {
+        "result": "负负",
+        "probability_pct": 24.5
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.35,
+        "over_2_5_pct": 41.7,
+        "both_teams_to_score_pct": 47.4
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "+1",
+        "odds": [
+          1.93,
+          3.32,
+          3.12
+        ],
+        "updated": "2026-11-08 15:07",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-08/2042626",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 3.9,
+      "data_completeness_pct": 67,
+      "risk_flags": [
+        "客队小优，平局概率偏高",
+        "热那亚伤停信息不完整",
+        "竞彩镜像候选+1，非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": "公开预览提及Genoa的L. Venturino膝伤；其他缺阵名单待俱乐部确认",
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-06",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-007",
+      "match_id": "serie-a:2026-11-08:monza-atalanta",
+      "competition": "意甲",
+      "category": "国内联赛",
+      "home": "蒙扎",
+      "away": "亚特兰大",
+      "kickoff_beijing": "2026-11-08T22:00:00+08:00",
+      "kickoff_utc": "2026-11-08T14:00:00Z",
+      "hours_to_kickoff_at_run": 6.93,
+      "xg_input": {
+        "home": 1.57,
+        "away": 1.53,
+        "total": 3.1,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/serie-a/monza-vs-atalanta-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 38.9,
+        "draw_pct": 23.8,
+        "away_win_pct": 37.2
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 10.82
+        },
+        {
+          "score": "2-1",
+          "probability_pct": 8.49
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 23.4
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 3.1,
+        "over_2_5_pct": 59.9,
+        "both_teams_to_score_pct": 62
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "+1",
+        "odds": [
+          1.78,
+          3.8,
+          3.18
+        ],
+        "updated": "2026-11-08 15:07",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-08/2042625",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 3.8,
+      "data_completeness_pct": 63,
+      "risk_flags": [
+        "两队xG接近，平局风险",
+        "其他供应商方向分歧",
+        "大小球3.5→2.5异常；竞彩候选+1非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-07",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-008",
+      "match_id": "bundesliga:2026-11-08:1-fc-koln-bayer-leverkusen",
+      "competition": "德甲",
+      "category": "国内联赛",
+      "home": "科隆",
+      "away": "勒沃库森",
+      "kickoff_beijing": "2026-11-08T22:30:00+08:00",
+      "kickoff_utc": "2026-11-08T14:30:00Z",
+      "hours_to_kickoff_at_run": 7.43,
+      "xg_input": {
+        "home": 1.71,
+        "away": 1.68,
+        "total": 3.39,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/bundesliga/1-fc-koln-vs-bayer-leverkusen-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 39.3,
+        "draw_pct": 22.7,
+        "away_win_pct": 38
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 9.68
+        },
+        {
+          "score": "2-1",
+          "probability_pct": 8.28
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 23.8
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 3.39,
+        "over_2_5_pct": 65.8,
+        "both_teams_to_score_pct": 66.6
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "+1",
+        "odds": [
+          2.05,
+          3.75,
+          2.6
+        ],
+        "updated": "2026-11-08 15:02",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-08/2042627",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 3.8,
+      "data_completeness_pct": 62,
+      "risk_flags": [
+        "双方预期进球接近，平局风险",
+        "欧赔客胜价格下降，与主队微弱xG优势相反",
+        "竞彩镜像候选+1，非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-08",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-009",
+      "match_id": "ligue-1:2026-11-08:rennes-lille",
+      "competition": "法甲",
+      "category": "国内联赛",
+      "home": "雷恩",
+      "away": "里尔",
+      "kickoff_beijing": "2026-11-08T22:00:00+08:00",
+      "kickoff_utc": "2026-11-08T14:00:00Z",
+      "hours_to_kickoff_at_run": 6.93,
+      "xg_input": {
+        "home": 1.6,
+        "away": 1.43,
+        "total": 3.03,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/ligue-1/stade-rennais-vs-lille-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 41.7,
+        "draw_pct": 24.1,
+        "away_win_pct": 34.2
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 11.05
+        },
+        {
+          "score": "2-1",
+          "probability_pct": 8.84
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 25.2
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 3.03,
+        "over_2_5_pct": 58.3,
+        "both_teams_to_score_pct": 60.7
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 4,
+      "data_completeness_pct": 63,
+      "risk_flags": [
+        "主队轻微优势但平局概率24%",
+        "大小球2.5→3.5异常",
+        "官方竞彩盘口缺失"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-09",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-010",
+      "match_id": "primeira-liga:2026-11-08:nacional-academico-viseu",
+      "competition": "葡超",
+      "category": "国内联赛",
+      "home": "国民队",
+      "away": "维塞乌学院",
+      "kickoff_beijing": "2026-11-08T23:30:00+08:00",
+      "kickoff_utc": "2026-11-08T15:30:00Z",
+      "hours_to_kickoff_at_run": 8.43,
+      "xg_input": {
+        "home": 1.3,
+        "away": 1.5,
+        "total": 2.8,
+        "provider": "Forepitch",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://forepitch.com/football/match/nacional-academico-viseu-2026-11-08/",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 32.9,
+        "draw_pct": 25.1,
+        "away_win_pct": 42
+      },
+      "predicted_90m_result": "负",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 11.86
+        },
+        {
+          "score": "0-1",
+          "probability_pct": 9.12
+        }
+      ],
+      "predicted_htft": {
+        "result": "负负",
+        "probability_pct": 25.1
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.8,
+        "over_2_5_pct": 53.1,
+        "both_teams_to_score_pct": 56.5
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 3.2,
+      "data_completeness_pct": 48,
+      "risk_flags": [
+        "xG源更新时间为11月7日18:24 UTC+3",
+        "缺少盘口、阵容和伤停核验",
+        "低置信"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-10",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-011",
+      "match_id": "primeira-liga:2026-11-08:estoril-praia-maritimo",
+      "competition": "葡超",
+      "category": "国内联赛",
+      "home": "埃斯托里尔",
+      "away": "马里迪莫",
+      "kickoff_beijing": "2026-11-08T23:30:00+08:00",
+      "kickoff_utc": "2026-11-08T15:30:00Z",
+      "hours_to_kickoff_at_run": 8.43,
+      "xg_input": {
+        "home": 1.33,
+        "away": 1.2,
+        "total": 2.53,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/liga-portugal/estoril-praia-vs-maritimo-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 39.7,
+        "draw_pct": 26.7,
+        "away_win_pct": 33.5
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 12.71
+        },
+        {
+          "score": "1-0",
+          "probability_pct": 10.59
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 23.3
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.53,
+        "over_2_5_pct": 46.4,
+        "both_teams_to_score_pct": 51.4
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 4,
+      "data_completeness_pct": 58,
+      "risk_flags": [
+        "主队仅轻微优势，平局风险",
+        "盘口稳定但没有官方竞彩让球"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-11",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-012",
+      "match_id": "primeira-liga:2026-11-08:santa-clara-gil-vicente",
+      "competition": "葡超",
+      "category": "国内联赛",
+      "home": "圣克拉拉",
+      "away": "吉尔维森特",
+      "kickoff_beijing": "2026-11-08T23:30:00+08:00",
+      "kickoff_utc": "2026-11-08T15:30:00Z",
+      "hours_to_kickoff_at_run": 8.43,
+      "xg_input": {
+        "home": 1.18,
+        "away": 0.86,
+        "total": 2.04,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/liga-portugal/santa-clara-vs-gil-vicente-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 43.3,
+        "draw_pct": 29.9,
+        "away_win_pct": 26.8
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-0",
+          "probability_pct": 15.34
+        },
+        {
+          "score": "1-1",
+          "probability_pct": 13.2
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 25.1
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.04,
+        "over_2_5_pct": 33.4,
+        "both_teams_to_score_pct": 40
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 4.3,
+      "data_completeness_pct": 60,
+      "risk_flags": [
+        "预期总进球偏低",
+        "平局风险29.9%",
+        "官方竞彩盘口缺失"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-12",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-013",
+      "match_id": "eliteserien:2026-11-08:tromso-bodo-glimt",
+      "competition": "挪超",
+      "category": "国内联赛",
+      "home": "特罗姆瑟",
+      "away": "博德闪耀",
+      "kickoff_beijing": "2026-11-08T21:30:00+08:00",
+      "kickoff_utc": "2026-11-08T13:30:00Z",
+      "hours_to_kickoff_at_run": 6.43,
+      "xg_input": {
+        "home": 1.05,
+        "away": 1.6,
+        "total": 2.65,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/eliteserien/tromso-vs-bodo-glimt-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 24.9,
+        "draw_pct": 25,
+        "away_win_pct": 50.1
+      },
+      "predicted_90m_result": "负",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 11.87
+        },
+        {
+          "score": "0-1",
+          "probability_pct": 11.3
+        }
+      ],
+      "predicted_htft": {
+        "result": "负负",
+        "probability_pct": 30.7
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.65,
+        "over_2_5_pct": 49.4,
+        "both_teams_to_score_pct": 51.9
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 3.5,
+      "data_completeness_pct": 55,
+      "risk_flags": [
+        "xGEdge与PredictVantage主队xG分歧较大",
+        "客队方向优势但低置信",
+        "裁判/天气未核验"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-13",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-014",
+      "match_id": "premier-league:2026-11-09:manchester-united-aston-villa",
+      "competition": "英超",
+      "category": "国内联赛",
+      "home": "曼联",
+      "away": "阿斯顿维拉",
+      "kickoff_beijing": "2026-11-09T00:30:00+08:00",
+      "kickoff_utc": "2026-11-08T16:30:00Z",
+      "hours_to_kickoff_at_run": 9.43,
+      "xg_input": {
+        "home": 1.93,
+        "away": 1.21,
+        "total": 3.14,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/premier-league/manchester-united-vs-aston-villa-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 54.2,
+        "draw_pct": 22.1,
+        "away_win_pct": 23.7
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 10.11
+        },
+        {
+          "score": "2-1",
+          "probability_pct": 9.75
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 34.3
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 3.14,
+        "over_2_5_pct": 60.7,
+        "both_teams_to_score_pct": 60
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 4.3,
+      "data_completeness_pct": 66,
+      "risk_flags": [
+        "市场从平手转为主队受让0.25，方向与模型主胜相反",
+        "曼联多名伤停/停赛，维拉Cash停赛",
+        "竞彩官方盘口未核验"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": "曼联Lisandro Martínez停赛，Baleba、Rashford、Sesko、Shaw、Ugarte伤缺，Dorgu存疑；维拉Cash停赛，Onana、Ruggeri缺阵，Wan-Bissaka存疑",
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-14",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-015",
+      "match_id": "la-liga:2026-11-09:celta-vigo-levante",
+      "competition": "西甲",
+      "category": "国内联赛",
+      "home": "维戈塞尔塔",
+      "away": "莱万特",
+      "kickoff_beijing": "2026-11-09T01:30:00+08:00",
+      "kickoff_utc": "2026-11-08T17:30:00Z",
+      "hours_to_kickoff_at_run": 10.43,
+      "xg_input": {
+        "home": 1.19,
+        "away": 1.24,
+        "total": 2.43,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/la-liga/celta-vigo-vs-levante-ud-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 35.1,
+        "draw_pct": 27.4,
+        "away_win_pct": 37.5
+      },
+      "predicted_90m_result": "负",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 12.99
+        },
+        {
+          "score": "0-1",
+          "probability_pct": 10.92
+        }
+      ],
+      "predicted_htft": {
+        "result": "负负",
+        "probability_pct": 21.7
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.43,
+        "over_2_5_pct": 43.8,
+        "both_teams_to_score_pct": 49.4
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "-1",
+        "odds": [
+          3.14,
+          3.3,
+          1.93
+        ],
+        "updated": "2026-11-08 15:07",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-08/2042636",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 3.5,
+      "data_completeness_pct": 62,
+      "risk_flags": [
+        "胜负几乎均衡，平局概率27.4%",
+        "模型与市场都未形成强方向",
+        "竞彩镜像候选-1，非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-15",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-016",
+      "match_id": "la-liga:2026-11-09:villarreal-getafe",
+      "competition": "西甲",
+      "category": "国内联赛",
+      "home": "比利亚雷亚尔",
+      "away": "赫塔费",
+      "kickoff_beijing": "2026-11-09T01:30:00+08:00",
+      "kickoff_utc": "2026-11-08T17:30:00Z",
+      "hours_to_kickoff_at_run": 10.43,
+      "xg_input": {
+        "home": 1.55,
+        "away": 0.69,
+        "total": 2.24,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/la-liga/villarreal-vs-getafe-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 58,
+        "draw_pct": 25.5,
+        "away_win_pct": 16.5
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-0",
+          "probability_pct": 16.5
+        },
+        {
+          "score": "2-0",
+          "probability_pct": 12.79
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 35.8
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.24,
+        "over_2_5_pct": 38.8,
+        "both_teams_to_score_pct": 39.3
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "-1",
+        "odds": [
+          2,
+          3.4,
+          2.9
+        ],
+        "updated": "2026-11-08 15:02",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-09/2042635",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 4.8,
+      "data_completeness_pct": 63,
+      "risk_flags": [
+        "主胜概率较高，但主胜欧赔由1.42升至1.48",
+        "客胜价格下降，需防冷",
+        "竞彩镜像候选-1，非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-16",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-017",
+      "match_id": "serie-a:2026-11-09:inter-como",
+      "competition": "意甲",
+      "category": "国内联赛",
+      "home": "国际米兰",
+      "away": "科莫",
+      "kickoff_beijing": "2026-11-09T01:00:00+08:00",
+      "kickoff_utc": "2026-11-08T17:00:00Z",
+      "hours_to_kickoff_at_run": 9.93,
+      "xg_input": {
+        "home": 1.79,
+        "away": 1.34,
+        "total": 3.13,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/serie-a/inter-vs-como-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 48.1,
+        "draw_pct": 23.1,
+        "away_win_pct": 28.8
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 10.49
+        },
+        {
+          "score": "2-1",
+          "probability_pct": 9.39
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 29.8
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 3.13,
+        "over_2_5_pct": 60.5,
+        "both_teams_to_score_pct": 61.5
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "-1",
+        "odds": [
+          3.18,
+          3.75,
+          1.79
+        ],
+        "updated": "2026-11-08 15:07",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-09/2042634",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 4.3,
+      "data_completeness_pct": 65,
+      "risk_flags": [
+        "xGEdge与另一xG页面估计差异较大",
+        "主胜欧赔下降但另一市场页面显示反向，市场源分歧",
+        "竞彩镜像候选-1，非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-17",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-018",
+      "match_id": "bundesliga:2026-11-09:sc-freiburg-union-berlin",
+      "competition": "德甲",
+      "category": "国内联赛",
+      "home": "弗赖堡",
+      "away": "柏林联合",
+      "kickoff_beijing": "2026-11-09T00:30:00+08:00",
+      "kickoff_utc": "2026-11-08T16:30:00Z",
+      "hours_to_kickoff_at_run": 9.43,
+      "xg_input": {
+        "home": 1.77,
+        "away": 0.97,
+        "total": 2.74,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/bundesliga/sc-freiburg-vs-1-fc-union-berlin-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 56.2,
+        "draw_pct": 23.3,
+        "away_win_pct": 20.5
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-0",
+          "probability_pct": 11.43
+        },
+        {
+          "score": "1-1",
+          "probability_pct": 11.09
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 35.3
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.74,
+        "over_2_5_pct": 51.6,
+        "both_teams_to_score_pct": 51.5
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "-1",
+        "odds": [
+          2.01,
+          3.6,
+          2.75
+        ],
+        "updated": "2026-11-08 15:07",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-09/2042633",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 4.8,
+      "data_completeness_pct": 64,
+      "risk_flags": [
+        "主胜倾向明显，主胜赔率略升",
+        "官方竞彩盘口未核验；镜像候选-1"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-18",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-019",
+      "match_id": "bundesliga:2026-11-09:tsg-hoffenheim-schalke-04",
+      "competition": "德甲",
+      "category": "国内联赛",
+      "home": "霍芬海姆",
+      "away": "沙尔克04",
+      "kickoff_beijing": "2026-11-09T02:30:00+08:00",
+      "kickoff_utc": "2026-11-08T18:30:00Z",
+      "hours_to_kickoff_at_run": 11.43,
+      "xg_input": {
+        "home": 2.04,
+        "away": 1,
+        "total": 3.04,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/bundesliga/tsg-hoffenheim-vs-fc-schalke-04-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 61.4,
+        "draw_pct": 20.8,
+        "away_win_pct": 17.8
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "2-0",
+          "probability_pct": 9.95
+        },
+        {
+          "score": "2-1",
+          "probability_pct": 9.95
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 39.8
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 3.04,
+        "over_2_5_pct": 58.6,
+        "both_teams_to_score_pct": 55
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 5,
+      "data_completeness_pct": 62,
+      "risk_flags": [
+        "主胜倾向较强",
+        "客胜赔率下降，存在市场反向信号",
+        "官方竞彩盘口缺失"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-19",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-020",
+      "match_id": "ligue-1:2026-11-09:angers-nice",
+      "competition": "法甲",
+      "category": "国内联赛",
+      "home": "昂热",
+      "away": "尼斯",
+      "kickoff_beijing": "2026-11-09T00:15:00+08:00",
+      "kickoff_utc": "2026-11-08T16:15:00Z",
+      "hours_to_kickoff_at_run": 9.18,
+      "xg_input": {
+        "home": 1.35,
+        "away": 1.34,
+        "total": 2.69,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/ligue-1/angers-vs-nice-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 37.3,
+        "draw_pct": 25.9,
+        "away_win_pct": 36.8
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 12.28
+        },
+        {
+          "score": "1-0",
+          "probability_pct": 9.16
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 21.9
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.69,
+        "over_2_5_pct": 50.4,
+        "both_teams_to_score_pct": 54.7
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 3.6,
+      "data_completeness_pct": 61,
+      "risk_flags": [
+        "双方xG接近，平局概率25.9%",
+        "主胜赔率缩短，方向仍接近",
+        "官方竞彩盘口缺失"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-20",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-021",
+      "match_id": "ligue-1:2026-11-09:brest-lyon",
+      "competition": "法甲",
+      "category": "国内联赛",
+      "home": "布雷斯特",
+      "away": "里昂",
+      "kickoff_beijing": "2026-11-09T00:15:00+08:00",
+      "kickoff_utc": "2026-11-08T16:15:00Z",
+      "hours_to_kickoff_at_run": 9.18,
+      "xg_input": {
+        "home": 1.44,
+        "away": 1.21,
+        "total": 2.65,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/ligue-1/stade-brestois-vs-olympique-lyonnais-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 42.4,
+        "draw_pct": 25.9,
+        "away_win_pct": 31.7
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 12.31
+        },
+        {
+          "score": "1-0",
+          "probability_pct": 10.17
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 25.3
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.65,
+        "over_2_5_pct": 49.4,
+        "both_teams_to_score_pct": 53.6
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 4,
+      "data_completeness_pct": 64,
+      "risk_flags": [
+        "模型主队小优，市场客胜价格缩短",
+        "里昂休息时间较短",
+        "亚洲盘受平/半仅作市场参考"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": "公开预览提示里昂赛程间隔约3天；具体首发/伤停待俱乐部确认",
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-21",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-022",
+      "match_id": "ligue-1:2026-11-09:le-havre-lorient",
+      "competition": "法甲",
+      "category": "国内联赛",
+      "home": "勒阿弗尔",
+      "away": "洛里昂",
+      "kickoff_beijing": "2026-11-09T00:15:00+08:00",
+      "kickoff_utc": "2026-11-08T16:15:00Z",
+      "hours_to_kickoff_at_run": 9.18,
+      "xg_input": {
+        "home": 1.51,
+        "away": 1.14,
+        "total": 2.65,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/ligue-1/le-havre-vs-lorient-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 45.8,
+        "draw_pct": 25.6,
+        "away_win_pct": 28.7
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 12.16
+        },
+        {
+          "score": "1-0",
+          "probability_pct": 10.67
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 27.6
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.65,
+        "over_2_5_pct": 49.4,
+        "both_teams_to_score_pct": 53
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 4.2,
+      "data_completeness_pct": 62,
+      "risk_flags": [
+        "主队轻微优势，平局概率25.6%",
+        "总进球预期2.65",
+        "官方竞彩盘口缺失"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-22",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-023",
+      "match_id": "ligue-1:2026-11-09:le-mans-monaco",
+      "competition": "法甲",
+      "category": "国内联赛",
+      "home": "勒芒",
+      "away": "摩纳哥",
+      "kickoff_beijing": "2026-11-09T00:15:00+08:00",
+      "kickoff_utc": "2026-11-08T16:15:00Z",
+      "hours_to_kickoff_at_run": 9.18,
+      "xg_input": {
+        "home": 1.3,
+        "away": 1.46,
+        "total": 2.76,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/ligue-1/le-mans-vs-as-monaco-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 33.7,
+        "draw_pct": 25.4,
+        "away_win_pct": 40.9
+      },
+      "predicted_90m_result": "负",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 12.01
+        },
+        {
+          "score": "0-1",
+          "probability_pct": 9.24
+        }
+      ],
+      "predicted_htft": {
+        "result": "负负",
+        "probability_pct": 24.4
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.76,
+        "over_2_5_pct": 52.1,
+        "both_teams_to_score_pct": 55.9
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "+1",
+        "odds": [
+          2.12,
+          3.5,
+          2.62
+        ],
+        "updated": "2026-11-08 15:07",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-09/2042631",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 3.8,
+      "data_completeness_pct": 60,
+      "risk_flags": [
+        "客队小优，平局概率25.4%",
+        "主胜欧赔缩短，客胜略升",
+        "竞彩镜像候选+1，非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-23",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-024",
+      "match_id": "primeira-liga:2026-11-09:vitoria-sc-porto",
+      "competition": "葡超",
+      "category": "国内联赛",
+      "home": "吉马良斯",
+      "away": "波尔图",
+      "kickoff_beijing": "2026-11-09T02:00:00+08:00",
+      "kickoff_utc": "2026-11-08T18:00:00Z",
+      "hours_to_kickoff_at_run": 10.93,
+      "xg_input": {
+        "home": 1.15,
+        "away": 1.22,
+        "total": 2.37,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/liga-portugal/vitoria-sc-vs-fc-porto-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 34.4,
+        "draw_pct": 27.8,
+        "away_win_pct": 37.8
+      },
+      "predicted_90m_result": "负",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 13.12
+        },
+        {
+          "score": "0-1",
+          "probability_pct": 11.4
+        }
+      ],
+      "predicted_htft": {
+        "result": "负负",
+        "probability_pct": 21.9
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.37,
+        "over_2_5_pct": 42.2,
+        "both_teams_to_score_pct": 48.2
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": {
+        "line": "+1",
+        "odds": [
+          2.55,
+          3.35,
+          2.23
+        ],
+        "updated": "2026-11-08 15:02",
+        "url": "https://zq.gzpxm.cn/matches/2026-11-09/2042637",
+        "official": false,
+        "eligible_for_handicap_mapping": false
+      },
+      "model_confidence_0_to_10": 3.5,
+      "data_completeness_pct": 56,
+      "risk_flags": [
+        "xGEdge与xGenius估计分歧较大",
+        "市场客队赔率明显偏低但xG接近",
+        "竞彩镜像候选+1，非官方"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-24",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-025",
+      "match_id": "fa-cup:2026-11-09:oldham-athletic-sheffield-wednesday",
+      "competition": "足总杯",
+      "category": "国内杯赛",
+      "home": "奥尔德姆",
+      "away": "谢菲尔德星期三",
+      "kickoff_beijing": "2026-11-09T01:15:00+08:00",
+      "kickoff_utc": "2026-11-08T17:15:00Z",
+      "hours_to_kickoff_at_run": 10.18,
+      "xg_input": {
+        "home": 1.2,
+        "away": 1.41,
+        "total": 2.61,
+        "provider": "FulltimeStats",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://fulltimestats.com/match/oldham-vs-sheffield-wednesday-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 32,
+        "draw_pct": 26.2,
+        "away_win_pct": 41.8
+      },
+      "predicted_90m_result": "负",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 12.44
+        },
+        {
+          "score": "0-1",
+          "probability_pct": 10.37
+        }
+      ],
+      "predicted_htft": {
+        "result": "负负",
+        "probability_pct": 24.8
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.61,
+        "over_2_5_pct": 48.4,
+        "both_teams_to_score_pct": 52.8
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 3.1,
+      "data_completeness_pct": 48,
+      "risk_flags": [
+        "外部模型样本/口径有限",
+        "客队小优，平局概率26.2%",
+        "官方竞彩盘口和市场变动缺失"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-25",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-026",
+      "match_id": "eliteserien:2026-11-09:hamkam-sarpsborg-08",
+      "competition": "挪超",
+      "category": "国内联赛",
+      "home": "汉坎",
+      "away": "萨尔普斯堡08",
+      "kickoff_beijing": "2026-11-09T00:00:00+08:00",
+      "kickoff_utc": "2026-11-08T16:00:00Z",
+      "hours_to_kickoff_at_run": 8.93,
+      "xg_input": {
+        "home": 1.3,
+        "away": 1.61,
+        "total": 2.91,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/eliteserien/hamkam-vs-sarpsborg-08-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 30.9,
+        "draw_pct": 24.4,
+        "away_win_pct": 44.7
+      },
+      "predicted_90m_result": "负",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 11.4
+        },
+        {
+          "score": "1-2",
+          "probability_pct": 9.18
+        }
+      ],
+      "predicted_htft": {
+        "result": "负负",
+        "probability_pct": 27.1
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.91,
+        "over_2_5_pct": 55.6,
+        "both_teams_to_score_pct": 58.2
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 4,
+      "data_completeness_pct": 59,
+      "risk_flags": [
+        "客队小优，平局概率24.4%",
+        "其他供应商xG接近",
+        "裁判/天气待核验"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-26",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-027",
+      "match_id": "eliteserien:2026-11-09:lillestrom-aalesund",
+      "competition": "挪超",
+      "category": "国内联赛",
+      "home": "利勒斯特罗姆",
+      "away": "奥勒松",
+      "kickoff_beijing": "2026-11-09T00:00:00+08:00",
+      "kickoff_utc": "2026-11-08T16:00:00Z",
+      "hours_to_kickoff_at_run": 8.93,
+      "xg_input": {
+        "home": 1.96,
+        "away": 1.44,
+        "total": 3.4,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/eliteserien/lillestrom-vs-aalesund-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 49.8,
+        "draw_pct": 21.9,
+        "away_win_pct": 28.3
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 9.42
+        },
+        {
+          "score": "2-1",
+          "probability_pct": 9.23
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 31.3
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 3.4,
+        "over_2_5_pct": 66,
+        "both_teams_to_score_pct": 65.6
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 4.4,
+      "data_completeness_pct": 56,
+      "risk_flags": [
+        "主队略优但进球预期较高",
+        "不同供应商xG有明显差异",
+        "裁判/天气待核验"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-27",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-028",
+      "match_id": "eliteserien:2026-11-09:sandefjord-molde",
+      "competition": "挪超",
+      "category": "国内联赛",
+      "home": "桑德菲杰",
+      "away": "莫尔德",
+      "kickoff_beijing": "2026-11-09T00:00:00+08:00",
+      "kickoff_utc": "2026-11-08T16:00:00Z",
+      "hours_to_kickoff_at_run": 8.93,
+      "xg_input": {
+        "home": 1.5,
+        "away": 1.78,
+        "total": 3.28,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/eliteserien/sandefjord-vs-molde-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 32.7,
+        "draw_pct": 22.9,
+        "away_win_pct": 44.5
+      },
+      "predicted_90m_result": "负",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 10.05
+        },
+        {
+          "score": "1-2",
+          "probability_pct": 8.94
+        }
+      ],
+      "predicted_htft": {
+        "result": "负负",
+        "probability_pct": 27.3
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 3.28,
+        "over_2_5_pct": 63.7,
+        "both_teams_to_score_pct": 64.6
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 3.5,
+      "data_completeness_pct": 54,
+      "risk_flags": [
+        "不同供应商对客队xG差异大",
+        "总进球预期3.28",
+        "客队方向优势但低置信"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-28",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-029",
+      "match_id": "eliteserien:2026-11-09:viking-kfum-oslo",
+      "competition": "挪超",
+      "category": "国内联赛",
+      "home": "维京",
+      "away": "KFUM奥斯陆",
+      "kickoff_beijing": "2026-11-09T00:00:00+08:00",
+      "kickoff_utc": "2026-11-08T16:00:00Z",
+      "hours_to_kickoff_at_run": 8.93,
+      "xg_input": {
+        "home": 2.07,
+        "away": 0.97,
+        "total": 3.04,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/eliteserien/viking-vs-kfum-oslo-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 62.7,
+        "draw_pct": 20.4,
+        "away_win_pct": 16.8
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "2-0",
+          "probability_pct": 10.25
+        },
+        {
+          "score": "2-1",
+          "probability_pct": 9.94
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 40.8
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 3.04,
+        "over_2_5_pct": 58.6,
+        "both_teams_to_score_pct": 54.3
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 4.9,
+      "data_completeness_pct": 57,
+      "risk_flags": [
+        "主胜倾向明显",
+        "其他供应商客队xG略高，需防模型差异",
+        "裁判/天气待核验"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-29",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    },
+    {
+      "prediction_id": "pred-20261108-1504-030",
+      "match_id": "eliteserien:2026-11-09:fredrikstad-brann",
+      "competition": "挪超",
+      "category": "国内联赛",
+      "home": "腓特烈斯塔",
+      "away": "布兰",
+      "kickoff_beijing": "2026-11-09T02:15:00+08:00",
+      "kickoff_utc": "2026-11-08T18:15:00Z",
+      "hours_to_kickoff_at_run": 11.18,
+      "xg_input": {
+        "home": 1.49,
+        "away": 1.42,
+        "total": 2.91,
+        "provider": "xGEdge",
+        "provider_type": "model_estimate_not_measured_xg",
+        "source_url": "https://www.xg-edge.com/eliteserien/fredrikstad-fk-vs-sk-brann-2026-11-08",
+        "source_asof": "2026-11-08; exact timezone/update minute not exposed"
+      },
+      "probabilities": {
+        "home_win_pct": 39.2,
+        "draw_pct": 24.7,
+        "away_win_pct": 36.1
+      },
+      "predicted_90m_result": "胜",
+      "top_scores": [
+        {
+          "score": "1-1",
+          "probability_pct": 11.53
+        },
+        {
+          "score": "2-1",
+          "probability_pct": 8.59
+        }
+      ],
+      "predicted_htft": {
+        "result": "胜胜",
+        "probability_pct": 23.4
+      },
+      "goal_probabilities": {
+        "expected_total_goals": 2.91,
+        "over_2_5_pct": 55.6,
+        "both_teams_to_score_pct": 58.7
+      },
+      "official_jc_handicap": {
+        "verified": false,
+        "line": null,
+        "prediction": "无法核验",
+        "reason": "未取得可直接回读的中国竞彩网官方让球数；不得以第三方亚洲盘代替"
+      },
+      "jcs_secondary_mirror_candidate": null,
+      "model_confidence_0_to_10": 3.8,
+      "data_completeness_pct": 58,
+      "risk_flags": [
+        "胜负接近，平局概率24.7%",
+        "欧赔客胜略降",
+        "裁判/天气待核验"
+      ],
+      "lineup_status": "confirmed_starting_XI_not_yet_verified",
+      "injury_news": null,
+      "weather_status": "not_verified_no_weather_adjustment",
+      "referee_status": "not_verified",
+      "tactics_status": "not_verified_no_tactical_adjustment",
+      "schedule_density_status": "not_calculated",
+      "next_opponent_importance_status": "not_calculated",
+      "strategy_id": "S15-20261108-XGPOISSON-R1-30",
+      "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+      "production_model": "V5.1_read_only_not_run",
+      "immutable": true
+    }
+  ]
+}
