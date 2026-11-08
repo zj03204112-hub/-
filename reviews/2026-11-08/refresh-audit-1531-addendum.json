@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-08-1500-run11",
+  "addendum_id": "refresh-audit-2026-11-08-1531-r1",
+  "captured_at": "2026-11-08T15:31:23+08:00",
+  "immutable_prior_snapshots": [
+    "markets/2026-11-08-09/market-snapshot-beijing-2026-11-08-1500-r2.json",
+    "predictions/2026-11-08-09/predictions-6-12h-beijing-2026-11-08-1500.json",
+    "fixtures/2026-11-08-09/schedule-beijing-2026-11-08-09-1500-r2.json"
+  ],
+  "count_reconciliation": {
+    "as_of_1504": {
+      "window_fixtures": 32,
+      "predictions_file_actual_count": 30,
+      "abstentions": 2
+    },
+    "prior_schedule_json_window_summary_reported_predictions": 29,
+    "prior_schedule_json_missing_xg_split_count": 1,
+    "verified_correction": "predictions file contains 30 records; all 30 have both home and away provider xG values and all 30 kickoff times are inside the 15:04 six-to-twelve-hour window. Two and only two fixtures are in not_generated. The schedule summary count 29 and missing_xg_split=1 are incorrect; do not rewrite old snapshot, use this append-only correction.",
+    "as_of_1531": {
+      "window_fixtures": 31,
+      "existing_predictions_still_inside_window": 29,
+      "abstentions": 2,
+      "prior_tromso_prediction_now_under_6h": true
+    }
+  },
+  "prediction_model": {
+    "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+    "strategy_id_prefix": "S15-20261108-XGPOISSON-R1",
+    "provider_xg_estimates_used": 30,
+    "measured_match_xg_added": 0,
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "official_handicap_mapping_performed": false
+  },
+  "official_jc_handicap": {
+    "verified_count": 0,
+    "secondary_mirror_candidates": 13,
+    "all_predictions": "无法核验",
+    "third_party_asian_handicap_used_for_jc_mapping": false
+  },
+  "data_gaps": {
+    "starting_xi": "not confirmed for upcoming European fixtures",
+    "injury_news": "partial; verified only for selected matches",
+    "weather": "not verified; no weather correction",
+    "referee": "partial; Brighton-Brentford and Manchester United-Aston Villa only from secondary previews",
+    "tactics": "not sufficiently verified for most matches",
+    "schedule_density": "not calculated systematically",
+    "next_opponent_importance": "not calculated systematically",
+    "provider_market_update_time": "not exposed by peilv.net; capture time is page retrieval time, not bookmaker timestamp",
+    "official_sporttery_line": "not available for direct verification"
+  },
+  "database": {
+    "sqlite_connected": false,
+    "write_attempted": false,
+    "reason": "No active SQLite connection was available; repository database file not modified."
+  },
+  "sources": [
+    "https://peilv.net/date/2026-11-08/",
+    "https://peilv.net/date/2026-11-09/",
+    "https://portal.kleague.com/main/schedule/calendar.do",
+    "https://www.jleague.jp/en/j1/match/",
+    "https://sports.yahoo.com/articles/brighton-vs-brentford-match-preview-050000556.html",
+    "https://www.liverpoolfc.com/news/crystal-palace-liverpool-team-news-premier-league",
+    "https://www.theguardian.com/football/2026/nov/07/chelsea-xabi-alonso-midfield-problem-area",
+    "https://www.mundodeportivo.com/futbol/real-sociedad/20261107/1004248255/matarazzo-no-recupera-pilar-e-incluye-carrera-convocatoria-25.html",
+    "https://as.com/futbol/primera/alineacion-posible-de-la-real-sociedad-ante-el-rayo-vallecano-en-laliga-ea-sports-f202611-n/",
+    "https://sports.yahoo.com/articles/manchester-united-vs-aston-villa-050000638.html",
+    "https://www.radioemscherlippe.de/artikel/rueckkehrer-fuer-hoffenheim-spiel-2800213",
+    "https://ogcnissa.com/articles-18635-angers-nice-les-echos"
+  ]
+}
