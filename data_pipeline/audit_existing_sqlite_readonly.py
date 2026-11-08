@@ -1,4 +1,5 @@
 """Read-only audit of the repository SQLite database. Does not modify the database."""
+# W45 scheduled weekly audit trigger; database access remains read-only.
 import json, os, sqlite3, hashlib
 from pathlib import Path
 from datetime import datetime, timezone
@@ -32,7 +33,6 @@ def main():
             cols = [dict(r) for r in con.execute(f'PRAGMA table_info("{t}")')]
             count = con.execute(f'SELECT COUNT(*) FROM "{t}"').fetchone()[0]
             report["tables"].append({"name": t, "rows": count, "columns": [c["name"] for c in cols]})
-        # Identify likely match/result tables from schema; do not guess joins.
         match_candidates = []
         for item in report["tables"]:
             names = {c.lower() for c in item["columns"]}
