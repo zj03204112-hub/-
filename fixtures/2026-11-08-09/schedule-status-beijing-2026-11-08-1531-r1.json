@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "schedule-status-2026-11-08-1531-r1",
+  "captured_at": "2026-11-08T15:31:23+08:00",
+  "timezone": "Asia/Shanghai",
+  "prior_schedule_snapshot": "fixtures/2026-11-08-09/schedule-beijing-2026-11-08-09-1500-r2.json",
+  "prior_schedule_scope": {
+    "total": 64,
+    "beijing_2026_11_08": 42,
+    "beijing_2026_11_09": 22,
+    "confirmed_final_as_of_1504": 13,
+    "scheduled_future_as_of_1504": 51
+  },
+  "current_prediction_window": {
+    "from": "2026-11-08T21:31:23+08:00",
+    "to": "2026-11-09T03:31:23+08:00",
+    "fixture_count": 31,
+    "existing_immutable_predictions_in_window": 29,
+    "abstentions": 2,
+    "previously_eligible_now_under_6h": 1
+  },
+  "j1_official_status": {
+    "source": "https://www.jleague.jp/en/j1/match/",
+    "timezone": "JST",
+    "fixtures": [
+      {
+        "match": "町田泽维亚-广岛三箭",
+        "kickoff_jst": "2026-11-08T14:00:00+09:00",
+        "kickoff_beijing": "2026-11-08T13:00:00+08:00",
+        "official_page_status": "Starting XI displayed; final score not visible in captured text"
+      },
+      {
+        "match": "神户胜利船-浦和红钻",
+        "kickoff_jst": "2026-11-08T14:00:00+09:00",
+        "kickoff_beijing": "2026-11-08T13:00:00+08:00",
+        "official_page_status": "Starting XI displayed; final score not visible in captured text"
+      },
+      {
+        "match": "大阪钢巴-大阪樱花",
+        "kickoff_jst": "2026-11-08T15:00:00+09:00",
+        "kickoff_beijing": "2026-11-08T14:00:00+08:00",
+        "official_page_status": "Starting XI displayed; final score not visible in captured text"
+      },
+      {
+        "match": "千叶市原-水户蜀葵",
+        "kickoff_jst": "2026-11-08T17:00:00+09:00",
+        "kickoff_beijing": "2026-11-08T16:00:00+08:00",
+        "official_page_status": "scheduled; no confirmed XI in captured text"
+      }
+    ],
+    "prediction_window": "all J1 fixtures on 8 Nov are outside 6–12h window at capture time"
+  },
+  "k_league_1_official_status": {
+    "source": "https://portal.kleague.com/main/schedule/calendar.do",
+    "timezone": "KST",
+    "fixtures": [
+      {
+        "match": "首尔FC-蔚山HD",
+        "kickoff_kst": "2026-11-08T14:00:00+09:00",
+        "kickoff_beijing": "2026-11-08T13:00:00+08:00",
+        "status": "official score displayed 1-2"
+      },
+      {
+        "match": "大田市民-仁川联",
+        "kickoff_kst": "2026-11-08T14:00:00+09:00",
+        "kickoff_beijing": "2026-11-08T13:00:00+08:00",
+        "status": "official score displayed 2-0"
+      },
+      {
+        "match": "江原FC-全北现代",
+        "kickoff_kst": "2026-11-08T16:30:00+09:00",
+        "kickoff_beijing": "2026-11-08T15:30:00+08:00",
+        "status": "kickoff time reached; no final score displayed"
+      },
+      {
+        "match": "富川FC 1995-浦项制铁",
+        "kickoff_kst": "2026-11-08T16:30:00+09:00",
+        "kickoff_beijing": "2026-11-08T15:30:00+08:00",
+        "status": "kickoff time reached; no final score displayed"
+      }
+    ],
+    "prediction_window": "all K League 1 fixtures on 8 Nov are outside 6–12h window at capture time"
+  },
+  "schedule_data_quality": {
+    "stable_supplier_event_id": "missing for some fixtures",
+    "official_jc_handicap": "0 fixtures directly verified",
+    "lineups": "official lineups not yet published/verified for upcoming European matches",
+    "weather": "not verified",
+    "referee": "partial only",
+    "tactics": "no reliable match-specific tactical source for most fixtures",
+    "schedule_density": "not systematically calculated",
+    "next_opponent_importance": "not systematically calculated"
+  }
+}
