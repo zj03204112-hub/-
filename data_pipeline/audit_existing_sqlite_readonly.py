@@ -75,6 +75,51 @@ def main():
             report["limitations"].append("No obvious match table found by column names; manual schema mapping required.")
         if not report["league_summary"]:
             report["limitations"].append("Could not infer league column and embedded score columns together; result joins require manual schema mapping.")
+        # W44 scope query: read-only, using the stored kickoff date as recorded.
+        wstart, wend = "2026-10-26", "2026-11-01"
+        def scalar(sql, params=()):
+            try:
+                return con.execute(sql, params).fetchone()[0]
+            except sqlite3.Error as exc:
+                return {"query_error": str(exc)}
+        matches_min = scalar("SELECT MIN(kickoff) FROM matches")
+        matches_max = scalar("SELECT MAX(kickoff) FROM matches")
+        results_min = scalar("SELECT MIN(completed_at) FROM results")
+        results_max = scalar("SELECT MAX(completed_at) FROM results")
+        pred_min = scalar("SELECT MIN(snapshot_time) FROM prediction_snapshot")
+        pred_max = scalar("SELECT MAX(snapshot_time) FROM prediction_snapshot")
+        w44_matches = scalar("SELECT COUNT(*) FROM matches WHERE substr(kickoff,1,10) BETWEEN ? AND ?", (wstart, wend))
+        w44_results = scalar("SELECT COUNT(*) FROM results r JOIN matches m ON m.match_id=r.match_id WHERE substr(m.kickoff,1,10) BETWEEN ? AND ? AND r.ft_home IS NOT NULL AND r.ft_away IS NOT NULL", (wstart, wend))
+        w44_predictions = scalar("SELECT COUNT(*) FROM prediction_snapshot p JOIN matches m ON m.match_id=p.match_id WHERE substr(m.kickoff,1,10) BETWEEN ? AND ?", (wstart, wend))
+        w44_markets = scalar("SELECT COUNT(*) FROM sporttery_market s JOIN matches m ON m.match_id=s.match_id WHERE substr(m.kickoff,1,10) BETWEEN ? AND ?", (wstart, wend))
+        pred_cols = next((x["columns"] for x in report["tables"] if x["name"] == "prediction_snapshot"), [])
+        xg_candidates = []
+        for item in report["tables"]:
+            cols = {c.lower() for c in item["columns"]}
+            if "match_id" in cols and any(c in cols for c in ("xg","xga","xg_for","xg_against","squad_xg90")):
+                role = "PLAYER_LEVEL" if item["name"] == "player_match_stats" else ("AGGREGATED_FEATURE" if item["name"] in ("team_features","advanced_team_features") else "UNCLASSIFIED")
+                xg_candidates.append({"table": item["name"], "rows": item["rows"], "columns": item["columns"], "role": role})
+        report["w44_database_scope"] = {
+            "iso_week": "2026-W44", "week_start": wstart, "week_end": wend,
+            "matches": w44_matches, "completed_results_with_ft_score": w44_results,
+            "prediction_snapshot_rows": w44_predictions, "sporttery_market_rows": w44_markets,
+            "database_match_kickoff_min": matches_min, "database_match_kickoff_max": matches_max,
+            "database_result_completed_at_min": results_min, "database_result_completed_at_max": results_max,
+            "prediction_snapshot_time_min": pred_min, "prediction_snapshot_time_max": pred_max
+        }
+        report["prediction_snapshot_capability"] = {
+            "columns": pred_cols,
+            "model_version_field": "model_version" in pred_cols,
+            "ninety_minute_probability_fields": [c for c in pred_cols if any(k in c.lower() for k in ("prob","home_win","draw","away_win"))],
+            "lambda_fields": [c for c in pred_cols if "lambda" in c.lower()],
+            "git_sha_field": any("sha" in c.lower() for c in pred_cols),
+            "sporttery_handicap_field": "handicap" in pred_cols,
+            "score1_field": "score_1" in pred_cols,
+            "score2_field": "score_2" in pred_cols
+        }
+        report["xg_table_candidates"] = xg_candidates
+        report["limitations"].append("The database prediction_snapshot table has no model_version, independent 90-minute probability, lambda or Git SHA fields; the table cannot support version-stratified Brier/Log Loss.")
+        report["limitations"].append("player_match_stats.xg is player-level; team_features.xg_for/xg_against and advanced_team_features.squad_xg90 are feature aggregates, not supplier-published match-level team xG observations.")
         report["status"] = "AUDIT_COMPLETE_READ_ONLY" if integrity == "ok" else "DATABASE_INTEGRITY_WARNING"
     finally:
         con.close()
