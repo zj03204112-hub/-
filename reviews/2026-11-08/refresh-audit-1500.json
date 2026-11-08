@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-08-1500-run11",
+  "captured_at": "2026-11-08T15:04:00+08:00",
+  "schedule": {
+    "total": 64,
+    "beijing_2026_11_08": 42,
+    "beijing_2026_11_09": 22,
+    "eligible_6_12h": 32,
+    "predictions_generated": 30,
+    "not_generated_due_to_source_conflict": 2
+  },
+  "prediction_quality": {
+    "model_version": "RESEARCH-MULTI-SOURCE-POISSON-RECALC-v1.0",
+    "strategy_id": "S15-20261108-XGPOISSON-R1",
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false
+  },
+  "market": {
+    "official_jc_handicap_verified": 0,
+    "secondary_mirror_candidates": 13,
+    "third_party_asian_handicap_used_for_jc_mapping": false,
+    "opening_current_market_coverage": 27
+  },
+  "missing_fields": {
+    "official_jc_handicap": "all 32 matches; direct official source not verified",
+    "confirmed_starting_XI": "not yet available/verified for upcoming matches",
+    "injury_news": "partial; only a subset of teams verified",
+    "weather": "not verified; no weather correction applied",
+    "referee": "not verified for most fixtures",
+    "tactics": "no reliable match-specific tactical source captured",
+    "schedule_density": "not calculated systematically",
+    "next_opponent_importance": "not calculated systematically",
+    "market_open_current": "missing for lower-tier cup matches and Nacional/Oldham"
+  },
+  "xg": {
+    "provider_model_estimates_used": 30,
+    "measured_match_xg_added": 0,
+    "weekly_xg_dataset_modified": false,
+    "post_match_xg_leakage": "not applicable; only pre-match provider estimates stored in prediction snapshots"
+  },
+  "database": {
+    "sqlite_connected": false,
+    "write_attempted": false,
+    "reason": "No active SQLite connection was available in this run; repository database file was not modified."
+  },
+  "limitations": [
+    "xGEdge model explicitly states it does not incorporate lineups, injuries, suspensions, motivation, weather or fixture congestion.",
+    "xGEdge sample for Ipswich is 9 matches, below its own 10-match reliability threshold.",
+    "Source disagreement prevented forecasts for Cray Wanderers-Stockport and Wimborne-Crawley.",
+    "All JCS handicap predictions remain unavailable because the accessible mirror is not the official Sporttery platform."
+  ],
+  "source_urls": [
+    "https://www.xg-edge.com/",
+    "https://peilv.net/date/2026-11-09/",
+    "https://2026peilv.com/day/2026-11-08/",
+    "https://www.jleague.jp/en/match/j1/2026/1108/",
+    "https://www.kleague.com/schedule.do"
+  ]
+}
