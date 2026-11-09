@@ -159,7 +159,7 @@ def evaluate(rows,draw_bias=0.0,multipliers=None):
     for r in rows:
         adj=normalize_grid(r["grid"],draw_bias,multipliers)
         p,g=probs(adj)
-        out.append((p,g,r["actual_gb"],r["actual_gb"],sum((h+a)*v for h,a,v in adj),r["actual_total"],r["net"]))
+        out.append((p,r["actual"],g,r["actual_gb"],sum((h+a)*v for h,a,v in adj),r["actual_total"],r["net"]))
     return metrics(out)
 
 def fit_draw_bias(rows):
