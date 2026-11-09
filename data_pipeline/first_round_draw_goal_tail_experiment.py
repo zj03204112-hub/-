@@ -114,14 +114,16 @@ def build_predictions(matches):
     for m in matches:
         mid,ko,home,away,fh,fa=m
         cutoff=ko-timedelta(hours=12)
-        # The sorted stream only contains fixtures with kickoff <= cutoff.
-        prior=[x for x in all_hist if x[0] < cutoff]
+        # Add a 3-hour result-availability buffer; kickoff alone does not prove
+        # the previous match result was already final at the T-12 snapshot.
+        history_cutoff=cutoff-timedelta(hours=3)
+        prior=[x for x in all_hist if x[0] < history_cutoff]
         if len(prior)<30:
             # Still retain early matches for history, but mark insufficient baseline.
             pass
         league_h=sum(x[3] for x in prior)/max(1,len(prior))
         league_a=sum(x[4] for x in prior)/max(1,len(prior))
-        hh=[(gf,ga) for t,gf,ga in home_hist[home] if t < cutoff]
+        hh=[(gf,ga) for t,gf,ga in home_hist[home] if t < history_cutoff]
         aa=[(gf,ga) for t,gf,ga in away_hist[away] if t < cutoff]
         # Shrink team splits toward the contemporaneous league mean.
         def avg(vals,idx,base):
@@ -203,7 +205,8 @@ def main():
       "sample":{"finished_joined":len(matches),"eligible_t12_predictions":n,
         "development_n":len(dev),"calibration_n":len(cal),"untouched_test_n":len(test),
         "time_start":rows[0]["kickoff"],"time_end":rows[-1]["kickoff"],
-        "split":"chronological 60% development / 20% calibration / 20% untouched test"},
+        "split":"chronological 60% development / 20% calibration / 20% untouched test",
+        "feature_cutoff":"T-12h with an additional 3h result-availability buffer for prior fixtures"},
       "baseline_test":evaluate(test),
       "draw_only_test":evaluate(test,draw_bias=draw_bias),
       "goal_tail_only_test":evaluate(test,multipliers=multipliers),
