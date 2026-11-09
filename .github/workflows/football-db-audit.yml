@@ -25,8 +25,7 @@ jobs:
       - name: Locate database without modifying it
         shell: bash
         run: |
-          find . -type f \( -name 'football_model_database.sqlite' -o -name '*.sqlite' -o -name '*.db' \) -printf '%p %s bytes
-' | sort | tee database_files.txt
+          find . -type f \( -name 'football_model_database.sqlite' -o -name '*.sqlite' -o -name '*.db' \) -printf '%p %s bytes\\n' | sort | tee database_files.txt
       - name: Run existing read-only audit
         env:
           FOOTBALL_DB_PATH: football_model_database.sqlite
