@@ -121,7 +121,8 @@ def build_predictions(matches):
             pass
         league_h=sum(x[3] for x in prior)/max(1,len(prior))
         league_a=sum(x[4] for x in prior)/max(1,len(prior))
-        hh=list(home_hist[home]); aa=list(away_hist[away])
+        hh=[(gf,ga) for t,gf,ga in home_hist[home] if t < cutoff]
+        aa=[(gf,ga) for t,gf,ga in away_hist[away] if t < cutoff]
         # Shrink team splits toward the contemporaneous league mean.
         def avg(vals,idx,base):
             if not vals: return base
@@ -146,8 +147,8 @@ def build_predictions(matches):
               "actual_gb":actual_gb,"actual_total":fh+fa,"expected_total":exp_total,
               "net":fh-fa,"base_p":base_p,"base_g":base_g,"lh":lh,"la":la})
         # Add completed score to rolling histories only after its kickoff.
-        home_hist[home].append((fh,fa))
-        away_hist[away].append((fa,fh))
+        home_hist[home].append((ko,fh,fa))
+        away_hist[away].append((ko,fa,fh))
         all_hist.append((ko,home,away,fh,fa))
     return output
 
