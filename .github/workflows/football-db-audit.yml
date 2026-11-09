@@ -25,7 +25,8 @@ jobs:
       - name: Locate database without modifying it
         shell: bash
         run: |
-          find . -type f \( -name 'football_model_database.sqlite' -o -name '*.sqlite' -o -name '*.db' \) -printf '%p %s bytes\n' | sort | tee database_files.txt
+          find . -type f \( -name 'football_model_database.sqlite' -o -name '*.sqlite' -o -name '*.db' \) -printf '%p %s bytes
+' | sort | tee database_files.txt
       - name: Run existing read-only audit
         env:
           FOOTBALL_DB_PATH: football_model_database.sqlite
@@ -33,7 +34,12 @@ jobs:
         run: python data_pipeline/audit_existing_sqlite_readonly.py
       - name: Run relational integrity audit
         run: python data_pipeline/audit_existing_sqlite_relations.py | tee database_relational_audit.json
-      - name: Audit draw-odds movement coverage (read-only)\n        env:\n          FOOTBALL_DB_PATH: football_model_database.sqlite\n          ODDS_MOVEMENT_AUDIT_OUT: draw_odds_movement_audit.json\n        run: python data_pipeline/audit_draw_odds_movement.py\n      - name: Run first-round isolated draw and goal-tail experiment
+      - name: Audit draw-odds movement coverage (read-only)
+        env:
+          FOOTBALL_DB_PATH: football_model_database.sqlite
+          ODDS_MOVEMENT_AUDIT_OUT: draw_odds_movement_audit.json
+        run: python data_pipeline/audit_draw_odds_movement.py
+      - name: Run first-round isolated draw and goal-tail experiment
         env:
           FOOTBALL_DB_PATH: football_model_database.sqlite
           EXPERIMENT_OUT: first_round_draw_goal_tail_report.json
@@ -46,6 +52,7 @@ jobs:
             database_audit_report.json
             database_relational_audit.json
             database_files.txt
-            first_round_draw_goal_tail_report.json\n            draw_odds_movement_audit.json
+            first_round_draw_goal_tail_report.json
+            draw_odds_movement_audit.json
           if-no-files-found: warn
           retention-days: 30
