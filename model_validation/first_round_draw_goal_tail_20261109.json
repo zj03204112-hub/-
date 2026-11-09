@@ -1,0 +1,110 @@
+{
+  "experiment": "V5.2-first-round-draw-and-goal-tail",
+  "run_date": "2026-11-09",
+  "status": "COMPLETED_SHADOW_EXPERIMENT_NOT_ACCEPTED",
+  "production_v5_1_changed": false,
+  "database": "football_model_database.sqlite",
+  "database_audit": {
+    "size_bytes": 63332352,
+    "sqlite_integrity_check": "ok",
+    "matches": 5505,
+    "results": 5505,
+    "missing_results": 0,
+    "missing_full_time_scores": 0,
+    "duplicate_match_ids": 0,
+    "orphan_results": 0,
+    "provider_event_map": 710,
+    "sporttery_market": 51622,
+    "prediction_snapshot": 9989
+  },
+  "sample": {
+    "finished_joined": 5505,
+    "eligible_t12_predictions": 5009,
+    "development_n": 3005,
+    "calibration_n": 1002,
+    "untouched_test_n": 1002,
+    "time_start": "2023-12-02T17:30:00",
+    "time_end": "2026-09-20T20:00:00",
+    "split": "chronological 60% development / 20% calibration / 20% untouched test",
+    "feature_cutoff": "T-12h plus 3h result-availability buffer"
+  },
+  "baseline_test": {
+    "n": 1002,
+    "accuracy": 0.499,
+    "brier_1x2": 0.60649,
+    "logloss_1x2": 1.01306,
+    "draw_recall": 0.01908,
+    "draw_precision": 0.41667,
+    "mean_predicted_draw_probability": 0.25634,
+    "total_goal_bucket_logloss": 1.413507,
+    "expected_total_goals_mae": 1.29258,
+    "actual_net_goal_bin_counts": {
+      "0": 262,
+      "1": 405,
+      "2": 185,
+      "3+": 150
+    }
+  },
+  "draw_only_test": {
+    "n": 1002,
+    "accuracy": 0.499,
+    "brier_1x2": 0.60649,
+    "logloss_1x2": 1.01306,
+    "draw_recall": 0.01908,
+    "draw_precision": 0.41667,
+    "mean_predicted_draw_probability": 0.25634
+  },
+  "goal_tail_only_test": {
+    "n": 1002,
+    "accuracy": 0.5,
+    "brier_1x2": 0.606428,
+    "logloss_1x2": 1.012983,
+    "draw_recall": 0.01527,
+    "draw_precision": 0.5,
+    "mean_predicted_draw_probability": 0.2504,
+    "total_goal_bucket_logloss": 1.420996,
+    "expected_total_goals_mae": 1.29063
+  },
+  "combined_shadow_test": {
+    "n": 1002,
+    "accuracy": 0.5,
+    "brier_1x2": 0.606428,
+    "logloss_1x2": 1.012983,
+    "draw_recall": 0.01527,
+    "draw_precision": 0.5,
+    "mean_predicted_draw_probability": 0.2504,
+    "total_goal_bucket_logloss": 1.420996,
+    "expected_total_goals_mae": 1.29063
+  },
+  "calibration_parameters": {
+    "draw_logit_bias": 0,
+    "total_goal_bucket_multipliers": {
+      "2": 1,
+      "0-1": 0.95,
+      "3-4": 1.2,
+      "5-6": 0.95,
+      "7+": 0.65
+    }
+  },
+  "acceptance_gate": {
+    "brier_not_worse": true,
+    "logloss_not_worse": true,
+    "draw_recall_improved_or_equal": false,
+    "total_goal_bucket_logloss_improved": false,
+    "promotion": "REJECTED_FOR_PRODUCTION; keep V5.1 unchanged"
+  },
+  "interpretation": [
+    "The baseline selects a draw as its top 1X2 outcome in very few cases: test draw recall is 1.91%, despite mean predicted draw probability of 25.63%.",
+    "Calibration-only draw logit adjustment selected zero bias, so the probability-only draw correction did not solve the decision/recall problem.",
+    "Goal-tail multipliers fitted on the calibration slice did not transfer to the untouched test slice: total-goal bucket log loss worsened from 1.413507 to 1.420996.",
+    "Do not promote either adjustment. Next iteration should test a calibration-only draw decision threshold/three-class decision rule and regularized tail calibration with per-bucket reliability diagnostics."
+  ],
+  "limitations": [
+    "Uses legacy matches/results only; dsl_* detail rows were not assumed to share the same IDs.",
+    "No bookmaker O/U or 1X2 odds were used in this experiment.",
+    "Net-goal bin counts are observed test-set counts; separate predicted net-goal distribution calibration remains a follow-up."
+  ],
+  "workflow_run_id": 42571712289,
+  "workflow_url": "https://github.com/zj03204112-hub/-/actions/runs/42571712289",
+  "code_commit": "e36c7b95a35881647851fa7e1273e13f17eb51fb"
+}
