@@ -1,0 +1,60 @@
+{
+  "audit_date": "2026-11-09",
+  "status": "AUDITED_NO_DRAW_ODDS_TIME_SERIES",
+  "database": "football_model_database.sqlite",
+  "workflow_run_id": 42573473831,
+  "workflow_url": "https://github.com/zj03204112-hub/-/actions/runs/42573473831",
+  "workflow_commit": "ea905e23cd32b86199f2af0b03b7327a462be3fa",
+  "database_integrity": "ok",
+  "market_table": {
+    "total_rows": 51622,
+    "columns": [
+      "market_id",
+      "match_id",
+      "pool_code",
+      "handicap",
+      "home_value",
+      "draw_value",
+      "away_value",
+      "captured_at",
+      "source_status"
+    ],
+    "pool_breakdown": [
+      {
+        "pool_code": "football_data_ah_close",
+        "rows": 46594,
+        "matches": 1824,
+        "rows_with_draw": 0,
+        "first_capture": "2023-11-04",
+        "last_capture": "2026-09-20",
+        "max_rows_per_match": 34
+      },
+      {
+        "pool_code": "asian_handicap_avg",
+        "rows": 5028,
+        "matches": 5028,
+        "rows_with_draw": 0,
+        "first_capture": "2023-11-03",
+        "last_capture": "2026-09-20",
+        "max_rows_per_match": 1
+      }
+    ],
+    "distinct_draw_price_multirow_groups": 0,
+    "provider_or_bookmaker_dimension": false,
+    "timestamp_precision": "captured_at is date-level only; no intraday provider update timestamp"
+  },
+  "conclusion": {
+    "raw_draw_odds_change_0_5_test": "BLOCKED_NO_DATA",
+    "de_vig_draw_probability_change_test": "BLOCKED_NO_DATA",
+    "reason": "All 51,622 current market rows have draw_value=NULL and represent two-way Asian-handicap records, not 1X2 home/draw/away odds. There are no comparable time-ordered draw-odds observations per fixture/bookmaker.",
+    "do_not_infer": "Do not reinterpret Asian-handicap prices as draw odds or derive historical opening/live odds from results."
+  },
+  "next_required_data": [
+    "same bookmaker/provider 1X2 home/draw/away odds",
+    "at least two pre-kickoff snapshots per fixture (opening and later snapshot)",
+    "provider update timestamp and retrieval timestamp kept separately",
+    "stable match_id plus provider event ID and bookmaker ID",
+    "raw payload/source URL and payload hash"
+  ],
+  "production_v5_1_changed": false
+}
