@@ -7,6 +7,7 @@ on:
       - "data_pipeline/audit_existing_sqlite_readonly.py"
       - "data_pipeline/audit_existing_sqlite_relations.py"
       - "data_pipeline/first_round_draw_goal_tail_experiment.py"
+      - "data_pipeline/audit_draw_odds_movement.py"
       - ".github/workflows/football-db-audit.yml"
 
 permissions:
@@ -32,7 +33,7 @@ jobs:
         run: python data_pipeline/audit_existing_sqlite_readonly.py
       - name: Run relational integrity audit
         run: python data_pipeline/audit_existing_sqlite_relations.py | tee database_relational_audit.json
-      - name: Run first-round isolated draw and goal-tail experiment
+      - name: Audit draw-odds movement coverage (read-only)\n        env:\n          FOOTBALL_DB_PATH: football_model_database.sqlite\n          ODDS_MOVEMENT_AUDIT_OUT: draw_odds_movement_audit.json\n        run: python data_pipeline/audit_draw_odds_movement.py\n      - name: Run first-round isolated draw and goal-tail experiment
         env:
           FOOTBALL_DB_PATH: football_model_database.sqlite
           EXPERIMENT_OUT: first_round_draw_goal_tail_report.json
@@ -45,6 +46,6 @@ jobs:
             database_audit_report.json
             database_relational_audit.json
             database_files.txt
-            first_round_draw_goal_tail_report.json
+            first_round_draw_goal_tail_report.json\n            draw_odds_movement_audit.json
           if-no-files-found: warn
           retention-days: 30
