@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-10-1000-run11",
+  "captured_at_beijing": "2026-11-10T10:29:52+08:00",
+  "branch": "automation/daily-football-2026-11-10-1000-run11",
+  "previous_beijing_date_reviewed": "2026-11-09",
+  "review": {
+    "confirmed_finished_matches": 22,
+    "immutable_prediction_snapshot_matches": 17,
+    "matches_without_snapshot": 5,
+    "wdl": {
+      "hits": 8,
+      "denominator": 17,
+      "accuracy_pct": 47.06,
+      "actual_draws": 6,
+      "predicted_draws": 0,
+      "draw_recall_pct": 0
+    },
+    "first_score": {
+      "hits": 2,
+      "denominator": 17,
+      "accuracy_pct": 11.76
+    },
+    "second_score": {
+      "hits": 2,
+      "denominator": 17,
+      "accuracy_pct": 11.76
+    },
+    "half_full": {
+      "hits": 5,
+      "denominator": 17,
+      "accuracy_pct": 29.41
+    },
+    "risk_flags": {
+      "hit": 4,
+      "partial": 5,
+      "not_observed": 8,
+      "denominator": 17,
+      "qualitative_only": true
+    },
+    "handicap": {
+      "official_line_verified": 0,
+      "unverifiable": 22,
+      "scored": 0,
+      "rule": "Only first score plus verified official Sporttery line; no second-score input and no third-party Asian line substitution."
+    },
+    "missing_snapshot_matches": [
+      "马德里竞技-巴塞罗那",
+      "佛罗伦萨-尤文图斯",
+      "朗斯-马赛",
+      "里奥阿维-布拉加",
+      "阿马多拉之星-本菲卡"
+    ],
+    "result_source_crosscheck_addendum": "results/2026-11-09/source-crosscheck-addendum-2026-11-10-1029-r1.json"
+  },
+  "schedule": {
+    "date_range_beijing": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "records": 42,
+    "records_by_beijing_date": {
+      "2026-11-10": 4,
+      "2026-11-11": 38
+    },
+    "statuses": {
+      "confirmed_final": 1,
+      "scheduled": 29,
+      "scheduled_candidate_time_unverified": 3,
+      "secondary_schedule_candidate": 9
+    },
+    "categories": {
+      "domestic_league_core": 0,
+      "other_domestic_leagues": 2,
+      "domestic_cup": 31,
+      "continental_club": 6,
+      "national_team_other": 3
+    },
+    "detail": {
+      "efl_trophy": {
+        "official_listing": 12,
+        "secondary_only_candidates": 7
+      },
+      "copa_del_rey": {
+        "time_verified": 4,
+        "secondary_only_time_unverified": 2
+      },
+      "j_league_cup_official": 4,
+      "uefa_womens_champions_league_official": 5,
+      "uefa_womens_europa_cup_official": 1,
+      "copa_colombia_official": 2,
+      "national_team_friendlies_time_unverified": 3
+    },
+    "nations_league": 0,
+    "schedule_file": "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000-r4.json"
+  },
+  "weekly_xg": {
+    "iso_week": "2026-W46",
+    "matches": 22,
+    "matches_with_any_supplier_xg": 21,
+    "matches_missing_xg": 1,
+    "coverage_pct": 95.45,
+    "match_detail_rows": 100,
+    "team_provider_summary_rows": 100,
+    "unique_teams": 44,
+    "team_directories": 44,
+    "providers_kept_separate": true,
+    "provider_rows": {
+      "TheSportsGuru": 2,
+      "Shotify": 20,
+      "SoccerGhost": 12,
+      "OddAlerts": 22,
+      "Kickly": 18,
+      "xGEdge": 2,
+      "TotalOdds": 4,
+      "Statz.ai": 2,
+      "VJStats": 4,
+      "xG.Football": 4,
+      "FullTimeStats": 4,
+      "StatsBet": 4,
+      "none": 2
+    },
+    "measured_values": 0,
+    "own_model_estimates": 0,
+    "available_values_type": "post_match_supplier_estimate",
+    "missing_match": "fa-cup:2026-11-09:oldham-athletic-sheffield-wednesday",
+    "missing_reason": "No free traceable post-match match-level xG source located; values remain blank.",
+    "duplicate_keys": 0,
+    "xgd_arithmetic_errors": 0,
+    "aggregate_recomputed_from_match_detail": true,
+    "post_match_xg_used_as_prematch_input": false,
+    "team_id_mapping": "Explicit ASCII internal slugs are stable within this archive; canonical database ID mapping remains pending."
+  },
+  "database": {
+    "sqlite_file_in_repository": true,
+    "active_sqlite_connection": false,
+    "database_updated": false,
+    "reason": "No active SQLite connection was available; repository database file was not modified."
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "immutable_prediction_snapshot_modified": false,
+    "historical_xg_snapshot_overwritten": false
+  },
+  "readback": {
+    "archive_manifest_readback": true,
+    "result_files_readback": true,
+    "review_file_readback": true,
+    "fixture_file_readback": true,
+    "xg_files_readback": true,
+    "source_crosscheck_addendum_readback": true
+  }
+}
