@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-10-1500-run11",
+  "captured_at_beijing": "2026-11-10T15:21:18+08:00",
+  "branch": "automation/daily-football-2026-11-10-1500-run11",
+  "schedule_refresh": {
+    "core_league_fixtures_found": 0,
+    "official_uwcl_fixtures_on_beijing_2026_11_11": 5,
+    "official_jleague_levain_cup_fixtures": 4,
+    "official_efl_trophy_fixtures": 12,
+    "efl_secondary_only_candidates_without_verified_time": 7
+  },
+  "prediction_window": {
+    "eligible_matches": 14,
+    "generated": 2,
+    "not_generated_in_window": 12,
+    "early_register_only": {
+      "uwcl_later_kickoffs": 3,
+      "jleague_cup": 4,
+      "efl_secondary_only_time_unverified": 7
+    }
+  },
+  "prediction_ids": [
+    "pred-20261110-1521-uwcl-001",
+    "pred-20261110-1521-uwcl-002"
+  ],
+  "official_handicap": {
+    "verified_lines": 0,
+    "unverifiable_predictions": 2,
+    "mapping_performed": false,
+    "third_party_asian_lines_used_as_substitute": false
+  },
+  "xg": {
+    "pre_match_xg_inputs_verified": 0,
+    "post_match_xg_backfilled": 0,
+    "note": "No match-specific free, traceable pre-kickoff xG verified for either UWCL match. No post-match values used."
+  },
+  "model_guardrails": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "production_v5_1_executed": false,
+    "research_overlay_version": "RESEARCH-MARKET-FORM-POISSON-REF-v1.0"
+  },
+  "database": {
+    "sqlite_file_present_in_repository": true,
+    "active_sqlite_connection": false,
+    "sqlite_write_performed": false,
+    "reason": "No live SQLite connection established in this run; GitHub append-only files are not represented as SQLite writes."
+  },
+  "github": {
+    "write_status": "pending",
+    "readback_status": "pending",
+    "required": "Only report archived after successful create and exact-path readback."
+  }
+}
