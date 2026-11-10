@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "correction_id": "sporttery-audit-correction-2026-11-10-1500-r2",
+  "captured_at_beijing": "2026-11-10T15:12:00+08:00",
+  "base_file": "markets/2026-11-10/official-sporttery-audit-2026-11-10-1500-r1.json",
+  "base_file_immutable": true,
+  "reason": "The Bromley-MK Dons mirror snippet exposes the +1 line and outcome percentages, but does not provide a complete three-way odds tuple. The earlier r1 placeholder value 1.00 for the third outcome was invalid and must not be used.",
+  "corrected_mirror_only": {
+    "match": "Bromley-MK Dons",
+    "match_number": "周二002",
+    "kickoff_beijing": "2026-11-11T03:30:00+08:00",
+    "hhad_line": 1,
+    "hhad_odds": null,
+    "hhad_outcome_percentages": [
+      24,
+      35,
+      41
+    ],
+    "official_status": "unverified"
+  },
+  "impact": {
+    "official_handicap_verified_matches": 0,
+    "handicap_mapping_permitted": false,
+    "r1_bromley_hhad_odds_tuple": "invalid; superseded by this correction"
+  },
+  "rule": "Retain the original snapshot for audit traceability; use this correction as the controlling interpretation."
+}
