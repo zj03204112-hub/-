@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-10-1500-run11",
+  "captured_at_beijing": "2026-11-10T15:04:54+08:00",
+  "timezone": "Asia/Shanghai",
+  "base_snapshot": "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000-r4.json",
+  "base_snapshot_immutable": true,
+  "date_range_beijing": [
+    "2026-11-10",
+    "2026-11-11"
+  ],
+  "prediction_window_beijing": {
+    "starts": "2026-11-10T21:04:54+08:00",
+    "ends": "2026-11-11T03:04:54+08:00",
+    "rule": "kickoff 6-12 hours after capture"
+  },
+  "core_leagues": {
+    "competitions": [
+      "Premier League",
+      "LaLiga",
+      "Bundesliga",
+      "Serie A",
+      "Ligue 1",
+      "K League 1",
+      "J1 League"
+    ],
+    "status": "No core domestic-league fixtures confirmed for 2026-11-10 or 2026-11-11",
+    "verification": [
+      "GenUI soccer schedule source for EPL, LaLiga, Bundesliga, Serie A and Ligue 1; all returned no games for both dates",
+      "K League 1 prior official schedule audit shows next round 2026-11-21/22",
+      "J.LEAGUE official schedule distinguishes 2026-11-11 Levain Cup from J1 league fixtures"
+    ],
+    "note": "J1 Levain Cup fixtures are filed under domestic cup, not J1 league."
+  },
+  "confirmed_fixture_updates": {
+    "efl_trophy": {
+      "official_19_00_gmt_matches": 13,
+      "beijing_kickoff": "2026-11-11T03:00:00+08:00",
+      "matches": [
+        {
+          "home": "Barnet",
+          "away": "Leyton Orient",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Bristol Rovers",
+          "away": "Reading",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Burton Albion",
+          "away": "Notts County",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Crewe Alexandra",
+          "away": "Wigan Athletic",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Grimsby Town",
+          "away": "Nottingham Forest U21",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Huddersfield Town",
+          "away": "Liverpool U21",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Leicester City",
+          "away": "Walsall",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Mansfield Town",
+          "away": "Chesterfield",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Northampton Town",
+          "away": "Gillingham",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Oxford United",
+          "away": "Cheltenham Town",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Plymouth Argyle",
+          "away": "Swindon Town",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Stevenage",
+          "away": "Fulham U21",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        },
+        {
+          "home": "Stockport County",
+          "away": "Tranmere Rovers",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "status": "confirmed_by_EFL_listing"
+        }
+      ],
+      "later_matches_outside_window": [
+        "Bradford City-York City 03:30 Beijing",
+        "Bromley-MK Dons 03:30 Beijing",
+        "Crawley Town-Brentford U21 03:30 Beijing",
+        "Colchester United-Ipswich Town U21 03:45 Beijing"
+      ],
+      "source": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+      "secondary_crosscheck": "https://www.lineup-builder.co.uk/fixtures/2026-11-10"
+    },
+    "copa_del_rey": {
+      "official_match_count": 6,
+      "matches": [
+        {
+          "home": "CD Pamplona",
+          "away": "SD Eibar",
+          "kickoff_utc": "2026-11-10T18:00:00Z",
+          "kickoff_beijing": "2026-11-11T02:00:00+08:00",
+          "window": "inside"
+        },
+        {
+          "home": "CD Anaitasuna",
+          "away": "Deportivo Alavés",
+          "kickoff_utc": "2026-11-10T18:00:00Z",
+          "kickoff_beijing": "2026-11-11T02:00:00+08:00",
+          "window": "inside"
+        },
+        {
+          "home": "CP Mijas Las Lagunas",
+          "away": "Real Jaén CF",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "window": "inside"
+        },
+        {
+          "home": "CF Trival Valderas Alcorcón",
+          "away": "CD Leganés",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "window": "inside"
+        },
+        {
+          "home": "SD Amorebieta",
+          "away": "UD Logroñés",
+          "kickoff_utc": "2026-11-10T19:00:00Z",
+          "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+          "window": "inside"
+        },
+        {
+          "home": "CFUE Tavernes de la Valldigna",
+          "away": "Valencia CF",
+          "kickoff_utc": "2026-11-10T20:00:00Z",
+          "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+          "window": "outside_by_55m"
+        }
+      ],
+      "source": "https://rfef.es/es/noticias/actualizado-el-calendario-de-los-partidos-aplazados-de-la-copa-del-rey-mapfre-y-de-la-copa"
+    },
+    "uefa_womens_champions_league": {
+      "official_matches": [
+        {
+          "home": "Häcken Women",
+          "away": "Chelsea Women",
+          "kickoff_utc": "2026-11-10T17:45:00Z",
+          "kickoff_beijing": "2026-11-11T01:45:00+08:00",
+          "window": "inside"
+        },
+        {
+          "home": "Real Madrid Women",
+          "away": "Paris FC Women",
+          "kickoff_utc": "2026-11-10T17:45:00Z",
+          "kickoff_beijing": "2026-11-11T01:45:00+08:00",
+          "window": "inside"
+        },
+        {
+          "home": "Roma Women",
+          "away": "Servette Women",
+          "kickoff_utc": "2026-11-10T20:00:00Z",
+          "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+          "window": "outside_by_55m"
+        },
+        {
+          "home": "Inter Women",
+          "away": "Manchester City Women",
+          "kickoff_utc": "2026-11-10T20:00:00Z",
+          "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+          "window": "outside_by_55m"
+        },
+        {
+          "home": "Paris Saint-Germain Women",
+          "away": "Bayern Munich Women",
+          "kickoff_utc": "2026-11-10T20:00:00Z",
+          "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+          "window": "outside_by_55m"
+        }
+      ],
+      "source": "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fix/"
+    },
+    "uefa_womens_europa_cup": {
+      "match": {
+        "home": "Feyenoord Women",
+        "away": "VfL Wolfsburg Women",
+        "kickoff_utc": "2026-11-10T18:00:00Z",
+        "kickoff_beijing": "2026-11-11T02:00:00+08:00"
+      },
+      "source": "https://www.uefa.com/womenseuropacup/news/02aa-21bb12f8f1a8-489e511576db-1000--uefa-womens-europa-cup-knockout-phase-fixtures-and-results/"
+    },
+    "j_league_cup": {
+      "fixtures": [
+        {
+          "home": "Kawasaki Frontale",
+          "away": "Kashiwa Reysol",
+          "kickoff_jst": "2026-11-11T19:00:00+09:00",
+          "kickoff_beijing": "2026-11-11T18:00:00+08:00"
+        },
+        {
+          "home": "Yokohama F. Marinos",
+          "away": "Kashima Antlers",
+          "kickoff_jst": "2026-11-11T19:00:00+09:00",
+          "kickoff_beijing": "2026-11-11T18:00:00+08:00"
+        },
+        {
+          "home": "Vissel Kobe",
+          "away": "FC Machida Zelvia",
+          "kickoff_jst": "2026-11-11T19:00:00+09:00",
+          "kickoff_beijing": "2026-11-11T18:00:00+08:00"
+        },
+        {
+          "home": "Urawa Reds",
+          "away": "Cerezo Osaka",
+          "kickoff_jst": "2026-11-11T19:30:00+09:00",
+          "kickoff_beijing": "2026-11-11T18:30:00+08:00"
+        }
+      ],
+      "source": "https://www.jleague.jp/en/leaguecup/"
+    },
+    "national_team_other": {
+      "fixtures": [
+        {
+          "home": "Qatar U23",
+          "away": "Singapore U23",
+          "kickoff_utc": "2026-11-10T08:00:00Z",
+          "kickoff_beijing": "2026-11-10T16:00:00+08:00",
+          "status": "scheduled_secondary_confirmed",
+          "window": "less_than_6h"
+        },
+        {
+          "home": "Vietnam U23",
+          "away": "Thailand U23",
+          "kickoff_utc": "2026-11-10T12:00:00Z",
+          "kickoff_beijing": "2026-11-10T20:00:00+08:00",
+          "status": "VFF_tournament_schedule",
+          "window": "less_than_6h"
+        }
+      ],
+      "sources": [
+        "https://en.vff.org.vn/vietnam-u23-to-face-arch-rivals-thailand-at-gia-lai-vtv-cup-2026-international-u23-football-tournament/",
+        "https://footynomad.com/team/6802-qatar-u23"
+      ]
+    }
+  },
+  "official_jczq_status": {
+    "sporttery_upstream": "https://webapi.sporttery.cn/gateway/jc/football/getMatchCalculatorV1.qry",
+    "live_response": "not retrieved from this runtime; official endpoint inaccessible",
+    "third_party_mirror_only": [
+      {
+        "match": "Burton Albion-Notts County",
+        "match_number": "周二001",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "mirrored_handicap": -1,
+        "officially_verified": false
+      },
+      {
+        "match": "Bromley-MK Dons",
+        "match_number": "周二002",
+        "kickoff_beijing": "2026-11-11T03:30:00+08:00",
+        "mirrored_handicap": 1,
+        "officially_verified": false
+      }
+    ],
+    "rule": "Do not use third-party mirror lines as official; all handicap W/D/L outputs remain unverifiable until official Sporttery response is archived."
+  },
+  "window_match_count": 21,
+  "early_or_outside_window": [
+    "Bromley-MK Dons 2026-11-11 03:30 Beijing: 12h25 after capture, outside window",
+    "CFUE Tavernes-Valencia 2026-11-11 04:00 Beijing: 12h55 after capture, outside window",
+    "Roma Women-Servette, Inter Women-Manchester City, PSG Women-Bayern Women 2026-11-11 04:00 Beijing: outside window",
+    "Qatar U23-Singapore U23 2026-11-10 16:00 Beijing: less than 6h",
+    "Vietnam U23-Thailand U23 2026-11-10 20:00 Beijing: less than 6h",
+    "J.League Cup 2026-11-11 18:00/18:30 Beijing: early registration only"
+  ],
+  "sources": [
+    {
+      "name": "EFL official Jersey Mike's Trophy",
+      "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+      "quality": "official"
+    },
+    {
+      "name": "RFEF rescheduled Copa del Rey fixtures",
+      "url": "https://rfef.es/es/noticias/actualizado-el-calendario-de-los-partidos-aplazados-de-la-copa-del-rey-mapfre-y-de-la-copa",
+      "quality": "official"
+    },
+    {
+      "name": "UEFA Women's Champions League schedule",
+      "url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fix/",
+      "quality": "official"
+    },
+    {
+      "name": "UEFA Women's Europa Cup schedule",
+      "url": "https://www.uefa.com/womenseuropacup/news/02aa-21bb12f8f1a8-489e511576db-1000--uefa-womens-europa-cup-knockout-phase-fixtures-and-results/",
+      "quality": "official"
+    },
+    {
+      "name": "J.LEAGUE Levain Cup",
+      "url": "https://www.jleague.jp/en/leaguecup/",
+      "quality": "official"
+    },
+    {
+      "name": "VFF U23 tournament schedule",
+      "url": "https://en.vff.org.vn/vietnam-u23-to-face-arch-rivals-thailand-at-gia-lai-vtv-cup-2026-international-u23-football-tournament/",
+      "quality": "official"
+    },
+    {
+      "name": "Burton Albion club preview",
+      "url": "https://www.burtonalbionfc.co.uk/news/2026/november/09/preview--burton-albion-v-notts-county/",
+      "quality": "official_club"
+    },
+    {
+      "name": "Leganés manager press conference",
+      "url": "https://campusytorneos.cdleganes.com/rp-luis-carrion-previa-trival-leganes-copa-del-rey-r1",
+      "quality": "official_club"
+    }
+  ]
+}
