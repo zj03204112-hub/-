@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "captured_at_beijing": "2026-11-10T10:02:25+08:00",
+  "iso_week": "2026-W46",
+  "week_window_beijing": "2026-11-09/2026-11-15",
+  "added_2026_11_09_bjt": {
+    "unique_matches": 22,
+    "matches_with_any_xg": 21,
+    "matches_missing_xg": 1,
+    "coverage": 0.9545454545454546
+  },
+  "match_xg_rows": 100,
+  "team_week_summary_rows": 100,
+  "provider_row_counts": {
+    "TheSportsGuru": 2,
+    "Shotify": 20,
+    "SoccerGhost": 12,
+    "OddAlerts": 22,
+    "Kickly": 18,
+    "xGEdge": 2,
+    "none": 2,
+    "TotalOdds": 4,
+    "Statz.ai": 2,
+    "VJStats": 4,
+    "xG.Football": 4,
+    "FullTimeStats": 4,
+    "StatsBet": 4
+  },
+  "xgd_arithmetic_errors": 0,
+  "duplicate_match_team_provider_keys": 42,
+  "summary_recomputed_from_match_detail": true,
+  "all_available_values_supplier_model_estimates": true,
+  "measured_values": 0,
+  "own_model_estimates": 0,
+  "providers_kept_separate": true,
+  "post_match_xg_used_as_prematch_input": false,
+  "prior_immutable_snapshots_modified": false,
+  "team_ids": "Derived team:<slug>; canonical provider/database IDs pending mapping because the SQLite connection is not active.",
+  "missing_match_ids": [
+    "fa-cup:2026-11-09:oldham-athletic-sheffield-wednesday"
+  ],
+  "missing_reason": "Oldham-Sheffield Wednesday: no free traceable match-level xG located. Do not estimate or backfill. All other matches have at least one provider model-estimated post-match xG source.",
+  "notes": [
+    "Every xG row in this snapshot is post-match provider model estimate, not measured tracking data.",
+    "Provider values remain separate; no average or consensus column is created.",
+    "No post-match xG is fed into the pre-match prediction snapshot.",
+    "Team weekly values are recomputable from the match-detail CSV."
+  ]
+}
