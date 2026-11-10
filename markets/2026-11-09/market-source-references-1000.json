@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "review_date_beijing": "2026-11-09",
+  "captured_at_beijing": "2026-11-10T10:10:00+08:00",
+  "source_snapshots": [
+    {
+      "path": "markets/2026-11-08-09/market-snapshot-beijing-2026-11-08-1500-r2.json",
+      "blob_sha": "f8cc22c24ad4aa758e44386b901586343fe609b8",
+      "snapshot_id": "market-snapshot-2026-11-08-1504-r2",
+      "captured_at": "2026-11-08T15:04:00+08:00",
+      "source_names": [
+        {
+          "name": "2026peilv.com",
+          "url": "https://2026peilv.com/day/2026-11-08/",
+          "type": "third_party_bookmaker_aggregate",
+          "fields": "1X2/Asian/O-U opening-current"
+        },
+        {
+          "name": "peilv.net",
+          "url": "https://peilv.net/date/2026-11-09/",
+          "type": "third_party_bookmaker_aggregate",
+          "fields": "1X2/Asian/O-U opening-current"
+        },
+        {
+          "name": "竞彩雷达",
+          "url": "https://zq.gzpxm.cn/",
+          "type": "secondary_mirror_claiming_China_Sports_Lottery_data",
+          "official": false,
+          "fields": "candidate JCS 让球/胜平负"
+        },
+        {
+          "name": "xGEdge",
+          "url": "https://www.xg-edge.com/",
+          "type": "provider_model_estimate",
+          "fields": "pre-match xG projections"
+        }
+      ],
+      "match_records": 32,
+      "official_jc_handicap_verified_count": 0,
+      "mirror_candidate_count": 13,
+      "exact_bookmaker_update_timestamp_exposed": false,
+      "source_exact_update_time_field": "not_exposed_for_aggregated_odds"
+    },
+    {
+      "path": "markets/2026-11-08-09/market-refresh-beijing-2026-11-08-1531-peilv-r1.json",
+      "blob_sha": "0110e5aa7aa69e9f56de239850122c3a0a46e640",
+      "snapshot_id": "market-refresh-2026-11-08-1531-peilv-r1",
+      "captured_at": "2026-11-08T15:31:23+08:00",
+      "source_names": [
+        {
+          "name": "peilv.net",
+          "url": "https://peilv.net/date/2026-11-08/",
+          "type": "third_party_odds_aggregator",
+          "fields": "opening/current 1X2, Asian handicap, O/U"
+        },
+        {
+          "name": "peilv.net",
+          "url": "https://peilv.net/date/2026-11-09/",
+          "type": "third_party_odds_aggregator",
+          "fields": "opening/current 1X2, Asian handicap, O/U"
+        }
+      ],
+      "quote_records": 27,
+      "missing_quote_records": 4,
+      "official_jc_handicap_verified_count": 0,
+      "source_update_timestamp_exposed": false
+    }
+  ],
+  "policy": "These are pre-match market snapshots from the original 8 Nov 15:04 and 15:31 Beijing runs. Preserve timestamps as captured; do not replace with closing odds. Aggregated source capture time is not the same as an individual bookmaker quote update time.",
+  "handicap_rule": "Official Sporttery handicap verified count is zero in both snapshots. Mirror candidates are not official; no handicap result is computed."
+}
