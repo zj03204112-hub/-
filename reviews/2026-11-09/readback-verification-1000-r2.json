@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "verified_at_beijing": "2026-11-10T10:04:30+08:00",
+  "branch": "automation/daily-football-2026-11-10-1000-run11",
+  "files": [
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/match_xg_cumulative_asof_2026-11-10_1000-r2.csv",
+      "exact": true,
+      "sha": "15b45cd62127c85ffe30d44eb38cf8b05ffe4d9d"
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/team_weekly_xg_cumulative_asof_2026-11-10_1000-r2.csv",
+      "exact": true,
+      "sha": "3f4d6ed7fd1e21329bcc000214d11f320175287f"
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_cumulative_asof_2026-11-10_1000-r2.json",
+      "exact": true,
+      "sha": "34014fbc74820d4afd191412637e6678c0b21e47"
+    }
+  ],
+  "checks": {
+    "all_corrected_xg_files_exact_readback": true,
+    "duplicate_match_team_provider_keys": 0,
+    "xgd_arithmetic_errors": 0,
+    "unique_team_ids": 44,
+    "team_week_summary_rows": 100,
+    "match_xg_rows": 100
+  },
+  "historical_policy": {
+    "r1_files_retained": true,
+    "r2_files_append_only": true,
+    "pre_match_prediction_snapshots_modified": false
+  }
+}
