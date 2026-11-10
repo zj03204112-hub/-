@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "pred-20261110-1521-uwcl-real-madrid-paris-r1",
+  "prediction_id": "pred-20261110-1521-uwcl-001",
+  "immutable": true,
+  "captured_at_beijing": "2026-11-10T15:21:18+08:00",
+  "competition": "UEFA Women's Champions League",
+  "category": "洲际俱乐部",
+  "match_id": "uwcl:2026-11-11:real-madrid-w-paris-fc-w",
+  "supplier_event_ids": {
+    "uefa_match_id": "2050557",
+    "genui_schedule_id": "74371836"
+  },
+  "match_name": "Real Madrid Women vs Paris FC Women",
+  "home": "Real Madrid Women",
+  "away": "Paris FC Women",
+  "kickoff_utc": "2026-11-10T17:45:00Z",
+  "kickoff_beijing": "2026-11-11T01:45:00+08:00",
+  "hours_to_kickoff_at_capture": 10.395,
+  "window_definition": "6-12 hours before kickoff, Beijing time",
+  "official_sporttery_handicap": {
+    "verified": false,
+    "official_match_number": null,
+    "line": null,
+    "prediction": "无法核验",
+    "reason": "未找到中国竞彩网官方受注场次编号及让球数；第三方亚洲盘不替代官方竞彩盘口。"
+  },
+  "market_snapshot": {
+    "source": "BettingView multi-bookmaker monitor",
+    "source_url": "https://bettingview.com/en/es/odds/soccer/international-clubs/uefa-champions-league-women-696/real-madrid-vs-paris-fc/1000069674371836/full-time-result",
+    "captured_at_utc": "2026-11-10T07:05:00Z",
+    "captured_at_beijing": "2026-11-10T15:05:00+08:00",
+    "one_x_two_best_prices_across_books": {
+      "home": 1.35,
+      "draw": 6,
+      "away": 6.5
+    },
+    "historical_snapshots": [
+      {
+        "asof_utc": "2026-11-07T14:33:00Z",
+        "best_prices": {
+          "home": 1.41,
+          "draw": 5.4,
+          "away": 6.8
+        }
+      },
+      {
+        "asof_utc": "2026-11-09T19:45:00Z",
+        "best_prices": {
+          "home": 1.45,
+          "draw": 6,
+          "away": 6.5
+        }
+      }
+    ],
+    "totals": {
+      "line": 3.25,
+      "asof_utc": "2026-11-10T06:52:00Z",
+      "over_price_range": [
+        1.86,
+        1.93
+      ],
+      "under_price_range": [
+        1.76,
+        1.82
+      ],
+      "direction": "under slightly shorter"
+    },
+    "movement_note": "Best-price snapshots aggregate different bookmakers and are not a same-book opening-to-current series. The provider also reports mixed draw shortening across books; market signal is not treated as a deterministic result.",
+    "money_flow": "No verified handle, matched volume, or public money-flow series found."
+  },
+  "recent_form_last_three": {
+    "home": [
+      {
+        "date": "2026-11-07",
+        "opponent": "Athletic Club Women",
+        "score": "1-1",
+        "result": "D"
+      },
+      {
+        "date": "2026-11-01",
+        "opponent": "Sevilla Women",
+        "score": "3-1",
+        "result": "W"
+      },
+      {
+        "date": "2026-10-28",
+        "opponent": "Bayern Munich Women",
+        "score": "2-2",
+        "result": "D"
+      }
+    ],
+    "away": [
+      {
+        "date": "2026-11-06",
+        "opponent": "Montpellier Women",
+        "score": "5-0",
+        "result": "W"
+      },
+      {
+        "date": "2026-11-01",
+        "opponent": "Paris Saint-Germain Women",
+        "score": "1-1",
+        "result": "D"
+      },
+      {
+        "date": "2026-10-29",
+        "opponent": "BK Häcken Women",
+        "score": "1-1",
+        "result": "D"
+      }
+    ],
+    "source_urls": [
+      "https://www.skysports.com/football/real-madrid-women-vs-paris-fc-women/578262",
+      "https://parisfc.fr/en/pro-women/calendars-results/"
+    ]
+  },
+  "lineup_and_availability": {
+    "starting_xi": "not yet released at capture time",
+    "home_injuries": "No current official match-specific injury list found; do not infer absences.",
+    "away_discipline": "Clara Mateo was sent off at 90' in the 2026-10-29 match vs Häcken. Her availability/suspension for this fixture was not confirmed by a current official matchday lineup at capture time.",
+    "official_squad_list": "UEFA tournament squad lists are available but are not starting lineups or matchday confirmation.",
+    "source_urls": [
+      "https://www.uefa.com/womenschampionsleague/match/2050557--real-madrid-vs-paris/lineups/",
+      "https://www.skysports.com/football/paris-fc-women-vs-bk-hacken-women/7515836570069449232"
+    ]
+  },
+  "tactical_read": {
+    "home": "Expected to seek territorial control, high pressing and fast wide/vertical attacks; this is a tactical assessment, not a confirmed formation.",
+    "away": "Expected to protect central lanes with a compact block and attack depth in transition; Mateo's disciplinary status is a material uncertainty.",
+    "status": "analyst/coach-context reference only; not a confirmed XI or tactical announcement",
+    "source_urls": [
+      "https://www.realmadrid.com/fr-FR/actualites/football/equipe-premiere/preliminaires/real-madrid-paris-fc-a-por-la-victoria-en-el-di-stefano-10-11-2026",
+      "https://www.madridfemeninoxtra.com/en/noticias/real-madrid-paris-fc-previa-uwcl-jornada-4-2026-27"
+    ]
+  },
+  "referee": {
+    "name": "Emily Heaslip",
+    "source_url": "https://www.uefa.com/womenschampionsleague/match/2050557--real-madrid-vs-paris/matchinfo/",
+    "source_quality": "UEFA official"
+  },
+  "weather": {
+    "venue": "Estadio Alfredo Di Stéfano, Madrid",
+    "forecast_at_local": "2026-11-10T08:22:00+01:00",
+    "kickoff_temperature_c_range": [
+      14,
+      15
+    ],
+    "condition": "showers/partly cloudy",
+    "precipitation_chance_evening_pct_range": [
+      63,
+      70
+    ],
+    "source": "weather_live_source"
+  },
+  "schedule_density_and_next_opponent": {
+    "home_next": "Real Madrid Women vs FC Badalona, 2026-11-14, official club calendar",
+    "away_next": "Le Havre Women vs Paris FC Women, 2026-11-14, official Paris FC calendar",
+    "rest_days_to_next_match": 4,
+    "importance": "Both teams have a league fixture four days later; no verified postponement or extra travel emergency found.",
+    "source_urls": [
+      "https://www.realmadrid.com/en-US/football/womens-team",
+      "https://parisfc.fr/en/pro-women/calendars-results/"
+    ]
+  },
+  "pre_match_xg": {
+    "home": null,
+    "away": null,
+    "total": null,
+    "type": null,
+    "reason": "No free, traceable, match-specific pre-kickoff xG estimate with source and timestamp was verified. No post-match xG was backfilled."
+  },
+  "model": {
+    "model_version": "RESEARCH-MARKET-FORM-POISSON-REF-v1.0",
+    "production_model": "V5.1_read_only_not_run",
+    "method": "Exploratory independent Poisson reference using last-three match scoring/conceding context, home advantage, and the 3.25 total-goals market as a calibration check. No xG input; bookmaker odds are not used as the sole winner selector. First-half/second-half goal split uses 45%/55%.",
+    "goal_rate_model_lambda": {
+      "home": 1.9,
+      "away": 1.1,
+      "total": 3
+    },
+    "probabilities_90m_pct": {
+      "home_win": 56,
+      "draw": 22.3,
+      "away_win": 21.7
+    },
+    "predicted_90m_result": "胜",
+    "top_scores": [
+      {
+        "score": "1-1",
+        "probability_pct": 10.41
+      },
+      {
+        "score": "2-1",
+        "probability_pct": 9.89
+      }
+    ],
+    "goal_probabilities_pct": {
+      "over_2_5": 57.7,
+      "both_teams_to_score": 56.7
+    },
+    "predicted_half_full": "胜胜",
+    "half_full_probability_pct": 35.5,
+    "confidence_0_to_10": 5.8,
+    "data_completeness_pct": 63
+  },
+  "strategy_id": "S15-20261110-MARKETFORM-R1-01",
+  "risk_flags": [
+    "Real Madrid have drawn all three previous league-phase matches; draw risk is materially elevated.",
+    "Paris FC are on a six-match unbeaten run according to the club preview.",
+    "Official starting lineups and current injury list not yet available.",
+    "Clara Mateo red-card suspension status requires final official confirmation.",
+    "No verified pre-match xG input.",
+    "No official Chinese JZ handicap line; handicap outcome cannot be calculated.",
+    "Evening showers may affect passing and finishing."
+  ],
+  "data_sources": [
+    {
+      "name": "UEFA fixture and match info",
+      "url": "https://www.uefa.com/womenschampionsleague/match/2050557--real-madrid-vs-paris/"
+    },
+    {
+      "name": "Real Madrid official preview",
+      "url": "https://www.realmadrid.com/fr-FR/actualites/football/equipe-premiere/preliminaires/real-madrid-paris-fc-a-por-la-victoria-en-el-di-stefano-10-11-2026"
+    },
+    {
+      "name": "BettingView odds monitor",
+      "url": "https://bettingview.com/en/es/odds/soccer/international-clubs/uefa-champions-league-women-696/real-madrid-vs-paris-fc/1000069674371836/full-time-result"
+    },
+    {
+      "name": "Sky Sports form",
+      "url": "https://www.skysports.com/football/real-madrid-women-vs-paris-fc-women/578262"
+    }
+  ],
+  "guardrails": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "official_handicap_mapping_performed": false,
+    "second_score_used_for_handicap": false,
+    "post_match_data_used": false
+  },
+  "immutable_snapshot_status": "append_only_research_prediction_not_V5_1_production"
+}
