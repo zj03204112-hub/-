@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "snapshot_type": "team_weekly_xg_provider_separated",
+  "snapshot_date_beijing": "2026-11-10",
+  "captured_at_beijing": "2026-11-10T10:02:25+08:00",
+  "team_id": "team:monaco",
+  "team_id_type": "derived_internal_slug_pending_database_mapping",
+  "team_name": "摩纳哥",
+  "competition_id": "ligue-1",
+  "season": "2026/27",
+  "iso_week": "2026-W46",
+  "providers": [
+    {
+      "provider": "Kickly",
+      "match_count": 1,
+      "xg_match_count": 1,
+      "missing_match_count": 0,
+      "sum_xg": 0.77,
+      "sum_xga": 1.48,
+      "sum_xgd": -0.71,
+      "xg_per90": 0.77,
+      "xga_per90": 1.48,
+      "xgd_per90": -0.71,
+      "data_type": "post_match_supplier_estimate",
+      "is_measured": false,
+      "status": "available",
+      "missing_reason": null
+    },
+    {
+      "provider": "OddAlerts",
+      "match_count": 1,
+      "xg_match_count": 1,
+      "missing_match_count": 0,
+      "sum_xg": 0.98,
+      "sum_xga": 1.78,
+      "sum_xgd": -0.8,
+      "xg_per90": 0.98,
+      "xga_per90": 1.78,
+      "xgd_per90": -0.8,
+      "data_type": "post_match_supplier_estimate",
+      "is_measured": false,
+      "status": "available",
+      "missing_reason": null
+    }
+  ],
+  "match_details": [
+    {
+      "match_id": "ligue-1:2026-11-09:le-mans-monaco",
+      "match_date_beijing": "2026-11-09",
+      "opponent": "勒芒",
+      "venue": "away",
+      "provider": "Kickly",
+      "provider_version": "not_disclosed",
+      "data_type": "post_match_supplier_estimate",
+      "is_measured": false,
+      "xg": 0.77,
+      "xga": 1.48,
+      "xgd": -0.71,
+      "match_minutes": 90,
+      "source_url": "https://kicklyapp.com/zh/match/le-mans-monaco-IcqGY9Xa",
+      "source_captured_at": "2026-11-10T02:02:25Z",
+      "provider_updated_at": null,
+      "status": "available",
+      "missing_reason": null
+    },
+    {
+      "match_id": "ligue-1:2026-11-09:le-mans-monaco",
+      "match_date_beijing": "2026-11-09",
+      "opponent": "勒芒",
+      "venue": "away",
+      "provider": "OddAlerts",
+      "provider_version": "not_disclosed",
+      "data_type": "post_match_supplier_estimate",
+      "is_measured": false,
+      "xg": 0.98,
+      "xga": 1.78,
+      "xgd": -0.8,
+      "match_minutes": 90,
+      "source_url": "https://www.oddalerts.com/livescores/le-mans-vs-monaco/5722-8139",
+      "source_captured_at": "2026-11-10T02:02:25Z",
+      "provider_updated_at": null,
+      "status": "available",
+      "missing_reason": null
+    }
+  ],
+  "aggregation_policy": "Provider rows remain separate; no cross-provider blend or consensus average.",
+  "leakage_policy": "All included values are post-match supplier model estimates and are prohibited as same-match pre-match inputs.",
+  "source_files": [
+    "data/xg_weekly/2026-W46/snapshots/2026-11-10/match_xg_cumulative_asof_2026-11-10_1000-r2.csv",
+    "data/xg_weekly/2026-W46/snapshots/2026-11-10/team_weekly_xg_cumulative_asof_2026-11-10_1000-r2.csv"
+  ]
+}
