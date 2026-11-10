@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "run_date_beijing": "2026-11-10",
+  "run_type": "10:00-xg-correction",
+  "branch": "automation/daily-football-2026-11-10-1000-run11",
+  "supersedes": "reviews/2026-11-09/archive-manifest-1000.json",
+  "correction": "r1 xG files are retained unchanged but superseded because the first pass created duplicate empty team slugs. r2 files use explicit stable ASCII slugs and are exact-readback verified.",
+  "files": [
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/match_xg_cumulative_asof_2026-11-10_1000-r2.csv",
+      "commit_sha": "c3c6ba2e2dbd0d82e585c99449b31b90270f8f9a"
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/team_weekly_xg_cumulative_asof_2026-11-10_1000-r2.csv",
+      "commit_sha": "6534e93ebf3893fa4bae6a7e64f56a40bc1317c4"
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_cumulative_asof_2026-11-10_1000-r2.json",
+      "commit_sha": "7efb2aed906d1fb6b19a9bc87dbae6dddff963d6"
+    }
+  ],
+  "checks": {
+    "exact_readback": true,
+    "duplicate_match_team_provider_keys": 0,
+    "xgd_arithmetic_errors": 0,
+    "unique_team_ids": 44,
+    "team_week_summary_rows": 100,
+    "match_xg_rows": 100
+  }
+}
