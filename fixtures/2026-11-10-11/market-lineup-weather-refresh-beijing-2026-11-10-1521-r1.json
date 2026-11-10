@@ -1,0 +1,349 @@
+{
+  "schema_version": "1.0",
+  "captured_at_beijing": "2026-11-10T15:21:18+08:00",
+  "timezone": "Asia/Shanghai",
+  "requested_beijing_dates": [
+    "2026-11-10",
+    "2026-11-11"
+  ],
+  "core_leagues": {
+    "Premier League": {
+      "status": "no_games_found",
+      "source": "competition schedule lookup"
+    },
+    "LaLiga": {
+      "status": "no_games_found",
+      "source": "competition schedule lookup"
+    },
+    "Bundesliga": {
+      "status": "no_games_found",
+      "source": "competition schedule lookup"
+    },
+    "Serie A": {
+      "status": "no_games_found",
+      "source": "competition schedule lookup"
+    },
+    "Ligue 1": {
+      "status": "no_games_found",
+      "source": "competition schedule lookup"
+    },
+    "K League 1": {
+      "status": "no_games_found_in_current_official_calendar_lookup",
+      "source_url": "https://portal.kleague.com/main/schedule/calendar.do",
+      "note": "Official calendar endpoint timed out on page expansion; no fixture was returned for 10-11 Nov."
+    },
+    "J1 League": {
+      "status": "no_J1_league_match_found",
+      "note": "J.League official all-J1-competitions schedule shows Levain Cup only on 11 Nov; cup matches are kept separate.",
+      "source_url": "https://www.jleague.jp/en/j1/match/"
+    }
+  },
+  "fixtures_beijing_2026_11_11": {
+    "continental_club": [
+      {
+        "match_id": "uwcl:2026-11-11:real-madrid-w-paris-fc-w",
+        "uefa_match_id": "2050557",
+        "genui_event_id": "74371836",
+        "competition": "UEFA Women's Champions League",
+        "category": "continental_club",
+        "home": "Real Madrid Women",
+        "away": "Paris FC Women",
+        "kickoff_utc": "2026-11-10T17:45:00Z",
+        "kickoff_beijing": "2026-11-11T01:45:00+08:00",
+        "source_url": "https://www.uefa.com/womenschampionsleague/match/2050557--real-madrid-vs-paris/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "uwcl:2026-11-11:hacken-w-chelsea-w",
+        "uefa_match_id": "2050558",
+        "genui_event_id": "74371838",
+        "competition": "UEFA Women's Champions League",
+        "category": "continental_club",
+        "home": "BK Häcken Women",
+        "away": "Chelsea Women",
+        "kickoff_utc": "2026-11-10T17:45:00Z",
+        "kickoff_beijing": "2026-11-11T01:45:00+08:00",
+        "source_url": "https://www.uefa.com/womenschampionsleague/match/2050558--hacken-vs-chelsea/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "uwcl:2026-11-11:psg-w-bayern-w",
+        "uefa_match_id": null,
+        "genui_event_id": "74371840",
+        "competition": "UEFA Women's Champions League",
+        "category": "continental_club",
+        "home": "Paris Saint-Germain Women",
+        "away": "Bayern Munich Women",
+        "kickoff_utc": "2026-11-10T20:00:00Z",
+        "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+        "source_url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848f7da926-3a3e3eaeb78e-1000--women-s-champions-league-spielplan-der-ligaphase/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "uwcl:2026-11-11:roma-w-servette-w",
+        "uefa_match_id": null,
+        "genui_event_id": "74371842",
+        "competition": "UEFA Women's Champions League",
+        "category": "continental_club",
+        "home": "AS Roma Women",
+        "away": "Servette Chênois Women",
+        "kickoff_utc": "2026-11-10T20:00:00Z",
+        "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+        "source_url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848f7da926-3a3e3eaeb78e-1000--women-s-champions-league-spielplan-der-ligaphase/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "uwcl:2026-11-11:inter-w-man-city-w",
+        "uefa_match_id": null,
+        "genui_event_id": "74371844",
+        "competition": "UEFA Women's Champions League",
+        "category": "continental_club",
+        "home": "Inter Women",
+        "away": "Manchester City Women",
+        "kickoff_utc": "2026-11-10T20:00:00Z",
+        "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+        "source_url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848f7da926-3a3e3eaeb78e-1000--women-s-champions-league-spielplan-der-ligaphase/",
+        "source_quality": "official"
+      }
+    ],
+    "domestic_cup": [
+      {
+        "match_id": "jleague-levain:2026-11-11:kawasaki-frontale-kashiwa-reysol",
+        "competition": "J.League Levain Cup Quarter-final First Leg",
+        "home": "Kawasaki Frontale",
+        "away": "Kashiwa Reysol",
+        "kickoff_jst": "2026-11-11T19:00:00+09:00",
+        "kickoff_beijing": "2026-11-11T18:00:00+08:00",
+        "source_url": "https://www.jleague.jp/en/leaguecup/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "jleague-levain:2026-11-11:yokohama-f-marinos-kashima-antlers",
+        "competition": "J.League Levain Cup Quarter-final First Leg",
+        "home": "Yokohama F. Marinos",
+        "away": "Kashima Antlers",
+        "kickoff_jst": "2026-11-11T19:00:00+09:00",
+        "kickoff_beijing": "2026-11-11T18:00:00+08:00",
+        "source_url": "https://www.jleague.jp/en/leaguecup/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "jleague-levain:2026-11-11:vissel-kobe-machida-zelvia",
+        "competition": "J.League Levain Cup Quarter-final First Leg",
+        "home": "Vissel Kobe",
+        "away": "Machida Zelvia",
+        "kickoff_jst": "2026-11-11T19:00:00+09:00",
+        "kickoff_beijing": "2026-11-11T18:00:00+08:00",
+        "source_url": "https://www.jleague.jp/en/leaguecup/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "jleague-levain:2026-11-11:urawa-reds-cerezo-osaka",
+        "competition": "J.League Levain Cup Quarter-final First Leg",
+        "home": "Urawa Reds",
+        "away": "Cerezo Osaka",
+        "kickoff_jst": "2026-11-11T19:30:00+09:00",
+        "kickoff_beijing": "2026-11-11T18:30:00+08:00",
+        "source_url": "https://www.jleague.jp/en/leaguecup/",
+        "source_quality": "official"
+      }
+    ],
+    "efl_trophy": [
+      {
+        "match_id": "efl-trophy:2026-11-11:burton-albion-notts-county",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Burton Albion",
+        "away": "Notts County",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "efl-trophy:2026-11-11:barnet-leyton-orient",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Barnet",
+        "away": "Leyton Orient",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "efl-trophy:2026-11-11:bristol-rovers-reading",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Bristol Rovers",
+        "away": "Reading",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "efl-trophy:2026-11-11:crewe-alexandra-wigan-athletic",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Crewe Alexandra",
+        "away": "Wigan Athletic",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "efl-trophy:2026-11-11:grimsby-town-nottingham-forest-u21",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Grimsby Town",
+        "away": "Nottingham Forest U21",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "efl-trophy:2026-11-11:huddersfield-town-liverpool-u21",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Huddersfield Town",
+        "away": "Liverpool U21",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "efl-trophy:2026-11-11:leicester-city-walsall",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Leicester City",
+        "away": "Walsall",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "efl-trophy:2026-11-11:mansfield-town-chesterfield",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Mansfield Town",
+        "away": "Chesterfield",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "efl-trophy:2026-11-11:northampton-town-gillingham",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Northampton Town",
+        "away": "Gillingham",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "efl-trophy:2026-11-11:oxford-united-cheltenham-town",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Oxford United",
+        "away": "Cheltenham Town",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "efl-trophy:2026-11-11:plymouth-argyle-swindon-town",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Plymouth Argyle",
+        "away": "Swindon Town",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      },
+      {
+        "match_id": "efl-trophy:2026-11-11:stevenage-fulham-u21",
+        "competition": "Jersey Mike's Trophy / EFL Trophy",
+        "category": "domestic_cup",
+        "home": "Stevenage",
+        "away": "Fulham U21",
+        "kickoff_utc": "2026-11-10T19:00:00Z",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "hours_to_kickoff_at_capture": 11.65,
+        "source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "source_quality": "official"
+      }
+    ],
+    "efl_secondary_candidates_without_verified_kickoff": [
+      "Bromley vs Milton Keynes Dons",
+      "Sheffield Wednesday vs Accrington Stanley",
+      "Stockport County vs Tranmere Rovers",
+      "Barnsley vs Oldham Athletic",
+      "Bradford City vs York City",
+      "Crawley Town vs Brentford U21",
+      "Colchester United vs Ipswich Town U21"
+    ]
+  },
+  "window_filter": {
+    "capture_time_beijing": "2026-11-10T15:21:18+08:00",
+    "eligible_6_to_12_hours": [
+      "Real Madrid Women vs Paris FC Women",
+      "BK Häcken Women vs Chelsea Women",
+      "12 EFL Trophy fixtures at 2026-11-11 03:00 Beijing"
+    ],
+    "outside_window_or_early_register": [
+      "PSG Women vs Bayern Munich Women",
+      "AS Roma Women vs Servette Chênois Women",
+      "Inter Women vs Manchester City Women",
+      "4 J.League Levain Cup fixtures"
+    ],
+    "note": "The three UWCL fixtures at 21:00 CET on 10 Nov convert to 04:00 Beijing on 11 Nov, 12h39 after capture; J.League Cup fixtures are more than 26h away."
+  },
+  "schedule_sources": [
+    {
+      "name": "UEFA",
+      "url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848f7da926-3a3e3eaeb78e-1000--women-s-champions-league-all-the-league-phase-fixtures/",
+      "quality": "official"
+    },
+    {
+      "name": "J.League",
+      "url": "https://www.jleague.jp/en/leaguecup/",
+      "quality": "official"
+    },
+    {
+      "name": "EFL",
+      "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+      "quality": "official"
+    },
+    {
+      "name": "K League official calendar",
+      "url": "https://portal.kleague.com/main/schedule/calendar.do",
+      "quality": "official_endpoint_partial_timeout"
+    }
+  ],
+  "unresolved": {
+    "official_sporttery_match_numbers_and_handicaps": "not found for the two UWCL fixtures or the EFL Trophy fixtures in this run",
+    "EFL_secondary_candidates": "7 records remain without verified kickoff times",
+    "K_League_calendar": "official endpoint returned no match records in this lookup and timed out on expansion"
+  }
+}
