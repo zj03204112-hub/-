@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "date_beijing": "2026-11-10",
+  "category": "domestic_cup",
+  "captured_at_beijing": "2026-11-10T10:29:52+08:00",
+  "matches": [
+    {
+      "match_id": "fa-cup:2026-11-10:plymouth-parkway-berkhamsted",
+      "competition": "英格兰足总杯",
+      "competition_id": "fa-cup",
+      "season": "2026/27",
+      "kickoff_utc": "2026-11-09T19:30:00Z",
+      "kickoff_beijing": "2026-11-10T03:30:00+08:00",
+      "home": "Plymouth Parkway",
+      "away": "Berkhamsted",
+      "status": "confirmed_final_after_extra_time",
+      "actual_score_90m": "1-1",
+      "actual_score_after_extra_time": "2-1",
+      "actual_90m_wdl": "平",
+      "actual_half_time_score": "0-0",
+      "actual_half_time_full_time": "平平",
+      "result_sources": [
+        {
+          "name": "The FA official match report",
+          "url": "https://www.thefa.com/news/2026/nov/09/emirates-fa-cup-first-round-plymouth-parkway-berkhamsted-20261109",
+          "quality": "official_competition"
+        },
+        {
+          "name": "Sky Sports match centre",
+          "url": "https://www.skysports.com/football/plymouth-parkway-vs-berkhamsted/9203346245192773232",
+          "quality": "reliable_broadcaster"
+        },
+        {
+          "name": "YSScores event timeline",
+          "url": "https://www.ysscores.com/en/match/6469292/Plymouth-Parkway-FC-vs-Berkhamsted-FC-events",
+          "quality": "independent_match_data"
+        }
+      ],
+      "prediction_snapshot_status": "no_immutable_pre_match_prediction_snapshot_found",
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "No official Sporttery handicap line captured; no third-party Asian handicap substitution."
+      },
+      "xg_status": "missing",
+      "xg_missing_reason": "No free traceable post-match match-level xG located. StatsBet 1.12-0.78 and SoccerGhost projected values are pre-match supplier model estimates, not post-match xG; not inserted into the weekly post-match xG layer.",
+      "pre_match_estimate_references": [
+        {
+          "provider": "StatsBet",
+          "url": "https://statsbet.org/football/matches/plymouth-parkway-vs-berkhamsted-2026-11-09",
+          "data_type": "pre_match_supplier_model_estimate",
+          "values": "1.12-0.78",
+          "eligible_for_post_match_weekly_xg": false
+        },
+        {
+          "provider": "SoccerGhost",
+          "url": "https://soccerghost.com/match/346299/plymouth-parkway-vs-berkhamsted",
+          "data_type": "pre_match_supplier_model_estimate",
+          "eligible_for_post_match_weekly_xg": false
+        }
+      ],
+      "note": "90-minute W/D/L and HT/FT are based on 1-1 after 90 minutes. 2-1 is the after-extra-time score and must not replace the 90-minute result."
+    }
+  ]
+}
