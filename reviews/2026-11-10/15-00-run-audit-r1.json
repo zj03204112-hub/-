@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-10-1500-run11",
+  "captured_at_beijing": "2026-11-10T15:04:54+08:00",
+  "branch": "automation/daily-football-2026-11-10-1500-run11",
+  "result": {
+    "schedule_refresh": "completed_with_append_only_update",
+    "confirmed_fixtures_inside_6_12h_window": 21,
+    "provisional_previews_written": 21,
+    "core_league_fixtures_2026_11_10_11": 0,
+    "j1_cup_fixtures_early_registered": 4,
+    "national_u23_fixtures_outside_window": 2,
+    "official_jczq_handicap_verified": 0,
+    "official_lineups_verified": 0,
+    "match_level_prematch_xg_verified": 0,
+    "same_provider_open_to_live_odds_series": 0
+  },
+  "data_completeness": {
+    "source_coverage": "varies by match; see prediction rows",
+    "common_missing": [
+      "official Sporttery payload",
+      "confirmed XI",
+      "match-level pre-match xG",
+      "same-provider opening-to-live odds",
+      "referee/weather for most fixtures",
+      "full player availability for several lower-tier teams"
+    ],
+    "weather_partial": {
+      "Leganes-Trival": "club source warns of rain at kickoff",
+      "Mijas-Real Jaen": "public forecast indicates mostly cloudy around 20:00 local; not official weather source",
+      "Madrid": "public forecast indicates light rain risk; not official weather source",
+      "Burton": "no trustworthy date-matched forecast verified",
+      "Rotterdam": "public forecast data not sufficiently time-matched for final use"
+    }
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "v5_1_executed": false,
+    "frozen_validation_sample_modified": false,
+    "immutable_prediction_snapshots_overwritten": false,
+    "model_version_change": false
+  },
+  "database": {
+    "sqlite_file_in_repository": true,
+    "active_connection": false,
+    "sqlite_updated": false,
+    "reason": "No active SQLite connection in this runtime"
+  },
+  "archive_policy": {
+    "append_only": true,
+    "no_retroactive_odds_replacement": true,
+    "no_post_match_xg_as_prematch_input": true,
+    "official_handicap_required_for_hhad_mapping": true
+  }
+}
