@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "snapshot_type": "team_weekly_xg_provider_separated",
+  "snapshot_date_beijing": "2026-11-10",
+  "captured_at_beijing": "2026-11-10T10:02:25+08:00",
+  "team_id": "team:fiorentina",
+  "team_id_type": "derived_internal_slug_pending_database_mapping",
+  "team_name": "佛罗伦萨",
+  "competition_id": "serie-a",
+  "season": "2026/27",
+  "iso_week": "2026-W46",
+  "providers": [
+    {
+      "provider": "Kickly",
+      "match_count": 1,
+      "xg_match_count": 1,
+      "missing_match_count": 0,
+      "sum_xg": 2.11,
+      "sum_xga": 2.43,
+      "sum_xgd": -0.32,
+      "xg_per90": 2.11,
+      "xga_per90": 2.43,
+      "xgd_per90": -0.32,
+      "data_type": "post_match_supplier_estimate",
+      "is_measured": false,
+      "status": "available",
+      "missing_reason": null
+    }
+  ],
+  "match_details": [
+    {
+      "match_id": "serie-a:2026-11-09:fiorentina-juventus",
+      "match_date_beijing": "2026-11-09",
+      "opponent": "尤文图斯",
+      "venue": "home",
+      "provider": "Kickly",
+      "provider_version": "not_disclosed",
+      "data_type": "post_match_supplier_estimate",
+      "is_measured": false,
+      "xg": 2.11,
+      "xga": 2.43,
+      "xgd": -0.32,
+      "match_minutes": 90,
+      "source_url": "https://kicklyapp.com/zh/match/fiorentina-juventus-l2iCQrDl",
+      "source_captured_at": "2026-11-10T02:02:25Z",
+      "provider_updated_at": null,
+      "status": "available",
+      "missing_reason": null
+    }
+  ],
+  "aggregation_policy": "Provider rows are separate. No supplier blending, no measured-data claim, and no own-model estimate in this snapshot.",
+  "leakage_policy": "All included values are post-match supplier model estimates; prohibited as same-match pre-match inputs.",
+  "source_files": [
+    "data/xg_weekly/2026-W46/snapshots/2026-11-10/match_xg_cumulative_asof_2026-11-10_1000-r2.csv",
+    "data/xg_weekly/2026-W46/snapshots/2026-11-10/team_weekly_xg_cumulative_asof_2026-11-10_1000-r2.csv"
+  ]
+}
