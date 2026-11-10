@@ -1,0 +1,1413 @@
+{
+  "schema_version": "1.2",
+  "captured_at_beijing": "2026-11-10T10:02:25+08:00",
+  "timezone": "Asia/Shanghai",
+  "date_range_beijing": [
+    "2026-11-10",
+    "2026-11-11"
+  ],
+  "active_scope": [
+    "英超",
+    "西甲",
+    "德甲",
+    "意甲",
+    "法甲",
+    "K League 1",
+    "J1 League",
+    "EFL Championship",
+    "Segunda Division",
+    "Primeira Liga",
+    "Eliteserien",
+    "Veikkausliiga",
+    "FA Cup",
+    "domestic cups",
+    "continental club competitions",
+    "national teams; UEFA Nations League kept separate"
+  ],
+  "counts": {
+    "core_league_fixtures": 0,
+    "other_previously_tracked_leagues": 0,
+    "records_beijing_2026_11_10": 4,
+    "records_beijing_2026_11_11": 38,
+    "total_records": 42,
+    "efl_trophy_candidates": 19,
+    "efl_trophy_official_listing": 12,
+    "efl_trophy_secondary_only": 7,
+    "copa_del_rey_candidates": 6,
+    "copa_del_rey_time_verified": 4,
+    "copa_del_rey_secondary_only_time_unverified": 2,
+    "uefa_wcl": 5,
+    "uefa_womens_europa_cup": 1,
+    "copa_colombia": 2,
+    "j_league_cup": 4,
+    "nations_league": 0
+  },
+  "by_category": {
+    "domestic_league_core": 0,
+    "other_domestic_league": 2,
+    "domestic_cup": 31,
+    "continental_club": 6,
+    "national_team_other": 3
+  },
+  "fixtures": [
+    {
+      "match_id": "colombia-primera-a:2026-11-10:junior-c-cuta-deportivo",
+      "competition": "哥伦比亚甲级联赛",
+      "competition_id": "colombia-primera-a",
+      "competition_category": "other_domestic_league",
+      "beijing_date": "2026-11-10",
+      "home": "Junior",
+      "away": "Cúcuta Deportivo",
+      "kickoff_utc": "2026-11-10T00:00:00Z",
+      "kickoff_beijing": "2026-11-10T08:00:00+08:00",
+      "source": {
+        "name": "Dimayor",
+        "url": "https://dimayor.com.co/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "current_status_unconfirmed",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "final_score",
+        "official_jincai_handicap",
+        "lineups_archive",
+        "xg",
+        "current_match_status",
+        "source_status_timestamp"
+      ],
+      "source_status_snapshot": {
+        "score": "1-0",
+        "minute": "86",
+        "timestamp": "not_disclosed"
+      },
+      "tracking_status": "discovery_only_outside_core_league_set"
+    },
+    {
+      "match_id": "international-friendlies-u23:2026-11-10:-u23--u23",
+      "competition": "国际友谊赛U23",
+      "competition_id": "international-friendlies-u23",
+      "competition_category": "national_team_other",
+      "beijing_date": "2026-11-10",
+      "home": "卡塔尔U23",
+      "away": "新加坡U23",
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_time_zone_unresolved"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled_candidate_time_unverified",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_match_report",
+        "lineups",
+        "xg"
+      ],
+      "tracking_status": "national_team_other_discovery"
+    },
+    {
+      "match_id": "international-friendlies-u23:2026-11-10:-u23--u23",
+      "competition": "国际友谊赛U23",
+      "competition_id": "international-friendlies-u23",
+      "competition_category": "national_team_other",
+      "beijing_date": "2026-11-10",
+      "home": "越南U23",
+      "away": "泰国U23",
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_time_zone_unresolved"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled_candidate_time_unverified",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_match_report",
+        "lineups",
+        "xg"
+      ],
+      "tracking_status": "national_team_other_discovery"
+    },
+    {
+      "match_id": "international-friendlies-women:2026-11-10:---",
+      "competition": "国际友谊赛女足",
+      "competition_id": "international-friendlies-women",
+      "competition_category": "national_team_other",
+      "beijing_date": "2026-11-10",
+      "home": "刚果女足",
+      "away": "中非女足",
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_time_zone_unresolved"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled_candidate_time_unverified",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_match_report",
+        "lineups",
+        "xg"
+      ],
+      "tracking_status": "national_team_other_discovery"
+    },
+    {
+      "match_id": "uefa-womens-champions-league:2026-11-11:h-cken-w-chelsea-w",
+      "competition": "欧足联女足冠军联赛",
+      "competition_id": "uefa-womens-champions-league",
+      "competition_category": "continental_club",
+      "beijing_date": "2026-11-11",
+      "home": "Häcken W",
+      "away": "Chelsea W",
+      "kickoff_utc": "2026-11-10T17:45:00Z",
+      "kickoff_beijing": "2026-11-11T01:45:00+08:00",
+      "source": {
+        "name": "UEFA",
+        "url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fixtu/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "uefa-womens-champions-league:2026-11-11:--paris-fc-w",
+      "competition": "欧足联女足冠军联赛",
+      "competition_id": "uefa-womens-champions-league",
+      "competition_category": "continental_club",
+      "beijing_date": "2026-11-11",
+      "home": "皇家马德里女足",
+      "away": "Paris FC W",
+      "kickoff_utc": "2026-11-10T17:45:00Z",
+      "kickoff_beijing": "2026-11-11T01:45:00+08:00",
+      "source": {
+        "name": "UEFA",
+        "url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fixtu/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "uefa-womens-champions-league:2026-11-11:--servette-ch-nois-w",
+      "competition": "欧足联女足冠军联赛",
+      "competition_id": "uefa-womens-champions-league",
+      "competition_category": "continental_club",
+      "beijing_date": "2026-11-11",
+      "home": "罗马女足",
+      "away": "Servette Chênois W",
+      "kickoff_utc": "2026-11-10T20:00:00Z",
+      "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+      "source": {
+        "name": "UEFA",
+        "url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fixtu/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "uefa-womens-champions-league:2026-11-11:---",
+      "competition": "欧足联女足冠军联赛",
+      "competition_id": "uefa-womens-champions-league",
+      "competition_category": "continental_club",
+      "beijing_date": "2026-11-11",
+      "home": "国际米兰女足",
+      "away": "曼城女足",
+      "kickoff_utc": "2026-11-10T20:00:00Z",
+      "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+      "source": {
+        "name": "UEFA",
+        "url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fixtu/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "uefa-womens-champions-league:2026-11-11:---",
+      "competition": "欧足联女足冠军联赛",
+      "competition_id": "uefa-womens-champions-league",
+      "competition_category": "continental_club",
+      "beijing_date": "2026-11-11",
+      "home": "巴黎圣日耳曼女足",
+      "away": "拜仁女足",
+      "kickoff_utc": "2026-11-10T20:00:00Z",
+      "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+      "source": {
+        "name": "UEFA",
+        "url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fixtu/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "uefa-womens-europa-cup:2026-11-11:feyenoord-w-wolfsburg-w",
+      "competition": "欧足联女足欧洲杯",
+      "competition_id": "uefa-womens-europa-cup",
+      "competition_category": "continental_club",
+      "beijing_date": "2026-11-11",
+      "home": "Feyenoord W",
+      "away": "Wolfsburg W",
+      "kickoff_utc": "2026-11-10T18:00:00Z",
+      "kickoff_beijing": "2026-11-11T02:00:00+08:00",
+      "source": {
+        "name": "UEFA",
+        "url": "https://www.uefa.com/womenseuropacup/news/02aa-21bb12f8f1a8-489e511576db-1000--uefa-women-s-europa-cup-knockout-phase-fixtures-and-results/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "copa-del-rey:2026-11-11:pamplona-eibar",
+      "competition": "西班牙国王杯",
+      "competition_id": "copa-del-rey",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Pamplona",
+      "away": "Eibar",
+      "kickoff_utc": "2026-11-10T18:00:00Z",
+      "kickoff_beijing": "2026-11-11T02:00:00+08:00",
+      "source": {
+        "name": "MatchCalendar / FootyNomad",
+        "url": "https://matchcalendar.football/fr/today/2026-11-10/",
+        "quality": "secondary_cross_checked"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "copa-del-rey:2026-11-11:anaitasuna-alav-s",
+      "competition": "西班牙国王杯",
+      "competition_id": "copa-del-rey",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Anaitasuna",
+      "away": "Alavés",
+      "kickoff_utc": "2026-11-10T18:00:00Z",
+      "kickoff_beijing": "2026-11-11T02:00:00+08:00",
+      "source": {
+        "name": "MatchCalendar / FootyNomad",
+        "url": "https://matchcalendar.football/fr/today/2026-11-10/",
+        "quality": "secondary_cross_checked"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "copa-del-rey:2026-11-11:amorebieta-ud-logro-s",
+      "competition": "西班牙国王杯",
+      "competition_id": "copa-del-rey",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Amorebieta",
+      "away": "UD Logroñés",
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_only_time_unverified"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "secondary_schedule_candidate",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_fixture_confirmation",
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather"
+      ],
+      "kickoff_source_time": "19:00",
+      "source_timezone": null
+    },
+    {
+      "match_id": "copa-del-rey:2026-11-11:trival-valderas-legan-s",
+      "competition": "西班牙国王杯",
+      "competition_id": "copa-del-rey",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Trival Valderas",
+      "away": "Leganés",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "MatchCalendar / FootyNomad",
+        "url": "https://matchcalendar.football/fr/today/2026-11-10/",
+        "quality": "secondary_cross_checked"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "copa-del-rey:2026-11-11:mijas-las-lagunas-real-ja-n",
+      "competition": "西班牙国王杯",
+      "competition_id": "copa-del-rey",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Mijas Las Lagunas",
+      "away": "Real Jaén",
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_only_time_unverified"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "secondary_schedule_candidate",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_fixture_confirmation",
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather"
+      ],
+      "kickoff_source_time": "19:00",
+      "source_timezone": null
+    },
+    {
+      "match_id": "copa-del-rey:2026-11-11:tavernes-valencia",
+      "competition": "西班牙国王杯",
+      "competition_id": "copa-del-rey",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Tavernes",
+      "away": "Valencia",
+      "kickoff_utc": "2026-11-10T20:00:00Z",
+      "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+      "source": {
+        "name": "MatchCalendar / FootyNomad",
+        "url": "https://matchcalendar.football/fr/today/2026-11-10/",
+        "quality": "secondary_cross_checked"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:burton-albion-notts-county",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Burton Albion",
+      "away": "Notts County",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ],
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)"
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:bromley-milton-keynes-dons",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Bromley",
+      "away": "Milton Keynes Dons",
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad / Leisu discovery",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_only_time_unverified"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "secondary_schedule_candidate",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_fixture_confirmation",
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather"
+      ],
+      "kickoff_source_time": "19:30",
+      "source_timezone": null
+    },
+    {
+      "match_id": "copa-colombia:2026-11-11:internacional-de-bogot--am-rica-de-cali",
+      "competition": "哥伦比亚杯",
+      "competition_id": "copa-colombia",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Internacional de Bogotá",
+      "away": "América de Cali",
+      "kickoff_utc": "2026-11-10T23:30:00Z",
+      "kickoff_beijing": "2026-11-11T07:30:00+08:00",
+      "source": {
+        "name": "DIMAYOR",
+        "url": "https://dimayor.com.co/copa-betplay-dimayor/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "copa-colombia:2026-11-11:once-caldas-atl-tico-nacional",
+      "competition": "哥伦比亚杯",
+      "competition_id": "copa-colombia",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Once Caldas",
+      "away": "Atlético Nacional",
+      "kickoff_utc": "2026-11-11T01:30:00Z",
+      "kickoff_beijing": "2026-11-11T09:30:00+08:00",
+      "source": {
+        "name": "DIMAYOR",
+        "url": "https://dimayor.com.co/copa-betplay-dimayor/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "j-league-cup:2026-11-11:---",
+      "competition": "日本联赛杯",
+      "competition_id": "j-league-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "川崎前锋",
+      "away": "柏雷索尔",
+      "kickoff_utc": "2026-11-11T10:00:00Z",
+      "kickoff_beijing": "2026-11-11T18:00:00+08:00",
+      "source": {
+        "name": "J.League Official",
+        "url": "https://www.jleague.jp/leaguecup/match/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "j-league-cup:2026-11-11:---",
+      "competition": "日本联赛杯",
+      "competition_id": "j-league-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "横滨水手",
+      "away": "鹿岛鹿角",
+      "kickoff_utc": "2026-11-11T10:00:00Z",
+      "kickoff_beijing": "2026-11-11T18:00:00+08:00",
+      "source": {
+        "name": "J.League Official",
+        "url": "https://www.jleague.jp/leaguecup/match/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "j-league-cup:2026-11-11:---",
+      "competition": "日本联赛杯",
+      "competition_id": "j-league-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "神户胜利船",
+      "away": "町田泽维亚",
+      "kickoff_utc": "2026-11-11T10:00:00Z",
+      "kickoff_beijing": "2026-11-11T18:00:00+08:00",
+      "source": {
+        "name": "J.League Official",
+        "url": "https://www.jleague.jp/leaguecup/match/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "j-league-cup:2026-11-11:---",
+      "competition": "日本联赛杯",
+      "competition_id": "j-league-cup",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "浦和红钻",
+      "away": "大阪樱花",
+      "kickoff_utc": "2026-11-11T10:30:00Z",
+      "kickoff_beijing": "2026-11-11T18:30:00+08:00",
+      "source": {
+        "name": "J.League Official",
+        "url": "https://www.jleague.jp/leaguecup/match/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:02:25+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_jincai_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:barnet-leyton-orient",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Barnet",
+      "away": "Leyton Orient",
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:bristol-rovers-reading",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Bristol Rovers",
+      "away": "Reading",
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:crewe-alexandra-wigan-athletic",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Crewe Alexandra",
+      "away": "Wigan Athletic",
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:grimsby-town-nottingham-forest-u21",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Grimsby Town",
+      "away": "Nottingham Forest U21",
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:huddersfield-town-liverpool-u21",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Huddersfield Town",
+      "away": "Liverpool U21",
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:leicester-city-walsall",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Leicester City",
+      "away": "Walsall",
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:mansfield-town-chesterfield",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Mansfield Town",
+      "away": "Chesterfield",
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:northampton-town-gillingham",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Northampton Town",
+      "away": "Gillingham",
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:oxford-united-cheltenham-town",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Oxford United",
+      "away": "Cheltenham Town",
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:plymouth-argyle-swindon-town",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Plymouth Argyle",
+      "away": "Swindon Town",
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:stevenage-fulham-u21",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Stevenage",
+      "away": "Fulham U21",
+      "kickoff_source_time": "19:00",
+      "source_timezone": "Europe/London (GMT)",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "source": {
+        "name": "EFL Official",
+        "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:sheffield-wednesday-accrington-stanley",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Sheffield Wednesday",
+      "away": "Accrington Stanley",
+      "kickoff_source_time": "19:00",
+      "source_timezone": null,
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_only_not_in_official_efl_listing"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "secondary_schedule_candidate",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_fixture_confirmation",
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:stockport-county-tranmere-rovers",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Stockport County",
+      "away": "Tranmere Rovers",
+      "kickoff_source_time": "19:00",
+      "source_timezone": null,
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_only_not_in_official_efl_listing"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "secondary_schedule_candidate",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_fixture_confirmation",
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:barnsley-oldham-athletic",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Barnsley",
+      "away": "Oldham Athletic",
+      "kickoff_source_time": "19:00",
+      "source_timezone": null,
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_only_not_in_official_efl_listing"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "secondary_schedule_candidate",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_fixture_confirmation",
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:bradford-city-york-city",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Bradford City",
+      "away": "York City",
+      "kickoff_source_time": "19:30",
+      "source_timezone": null,
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_only_not_in_official_efl_listing"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "secondary_schedule_candidate",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_fixture_confirmation",
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:crawley-town-brentford-u21",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Crawley Town",
+      "away": "Brentford U21",
+      "kickoff_source_time": "19:30",
+      "source_timezone": null,
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_only_not_in_official_efl_listing"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "secondary_schedule_candidate",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_fixture_confirmation",
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:colchester-united-ipswich-town-u21",
+      "competition": "英格兰足球联赛锦标赛",
+      "competition_id": "efl-trophy",
+      "competition_category": "domestic_cup",
+      "beijing_date": "2026-11-11",
+      "home": "Colchester United",
+      "away": "Ipswich Town U21",
+      "kickoff_source_time": "19:45",
+      "source_timezone": null,
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "source": {
+        "name": "FootyNomad",
+        "url": "https://footynomad.com/fixtures/2026-11-10",
+        "quality": "secondary_only_not_in_official_efl_listing"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "secondary_schedule_candidate",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "missing_fields": [
+        "official_fixture_confirmation",
+        "source_timezone",
+        "verified_utc",
+        "verified_beijing",
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather"
+      ]
+    },
+    {
+      "match_id": "torneo-betplay:2026-11-11:envigado-boca-juniors-cali",
+      "competition": "哥伦比亚乙级联赛 Torneo BetPlay",
+      "competition_id": "torneo-betplay",
+      "competition_category": "other_domestic_league",
+      "beijing_date": "2026-11-11",
+      "home": "Envigado",
+      "away": "Boca Juniors de Cali",
+      "kickoff_source_time": "15:30",
+      "source_timezone": "America/Bogota (UTC-5)",
+      "kickoff_utc": "2026-11-10T20:30:00Z",
+      "kickoff_beijing": "2026-11-11T04:30:00+08:00",
+      "source": {
+        "name": "DIMAYOR",
+        "url": "https://dimayor.com.co/",
+        "quality": "official"
+      },
+      "source_captured_at_beijing": "2026-11-10T10:06:00+08:00",
+      "status": "scheduled",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_published_or_not_verified",
+      "tracking_status": "other_domestic_league_discovery",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "lineups",
+        "injuries",
+        "match_xg_pre_match",
+        "referee",
+        "weather",
+        "opening_to_live_odds_sequence"
+      ]
+    }
+  ],
+  "scope_notes": [
+    "The 10-11 Nov Beijing snapshot is a filtered tracking-scope capture, not a claim to enumerate every global fixture listed by general aggregators.",
+    "No fixtures found in the seven core domestic leagues, EFL Championship, Segunda, Primeira, Eliteserien or Veikkausliiga for these two Beijing dates.",
+    "J.League Cup is filed as domestic cup, not J1 league. Women's UEFA competitions are filed as continental club competitions.",
+    "UEFA Women's Champions League and Europa Cup times were converted from CET; J.League Cup from JST; Copa Colombia from Colombia local time (UTC-5); EFL Trophy from UK GMT.",
+    "U23 and women's international friendlies were surfaced by FootyNomad but timezone was not exposed in the source display; UTC and Beijing times are intentionally left blank pending confirmation.",
+    "UEFA Women's Europa Cup seven other second legs on 11 Nov CET, UEFA Women's Champions League three 11 Nov CET fixtures, AFCON qualifiers and Supercopa Internacional fall on 12 Nov Beijing and are outside this two-date window."
+  ],
+  "sources": [
+    {
+      "name": "Leisu",
+      "url": "https://www.leisu.com/?pc=1",
+      "use": "EFL Trophy discovery and cross-check"
+    },
+    {
+      "name": "J.League Official",
+      "url": "https://www.jleague.jp/leaguecup/match/",
+      "use": "Official 11 Nov 2026 J.League Cup fixtures; local times 19:00/19:30 JST"
+    },
+    {
+      "name": "UEFA Women's Champions League",
+      "url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fixtu/",
+      "use": "Official 10 Nov CET matchday 4; CET converted to UTC and Beijing"
+    },
+    {
+      "name": "UEFA Women's Europa Cup",
+      "url": "https://www.uefa.com/womenseuropacup/news/02aa-21bb12f8f1a8-489e511576db-1000--uefa-women-s-europa-cup-knockout-phase-fixtures-and-results/",
+      "use": "Official 10 Nov second-leg Feyenoord-Wolfsburg; other 11 Nov CET legs fall on 12 Nov Beijing"
+    },
+    {
+      "name": "DIMAYOR",
+      "url": "https://dimayor.com.co/copa-betplay-dimayor/",
+      "use": "Official Copa Colombia local kickoff and Junior-Cúcuta kickoff"
+    },
+    {
+      "name": "MatchCalendar",
+      "url": "https://matchcalendar.football/today/2026-11-10/",
+      "use": "Copa del Rey fixture discovery and UTC kickoff labels"
+    },
+    {
+      "name": "FootyNomad",
+      "url": "https://footynomad.com/fixtures/2026-11-10",
+      "use": "U23/women's friendly discovery only; timezone unresolved"
+    },
+    {
+      "name": "EFL Official",
+      "url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+      "use": "Official 12-fixture EFL Trophy list; local 19:00 GMT converted to Beijing"
+    },
+    {
+      "name": "FootyNomad",
+      "url": "https://footynomad.com/fixtures/2026-11-10",
+      "use": "Additional EFL Trophy and Copa del Rey discovery candidates only; seven EFL and two Copa del Rey entries remain unverified"
+    }
+  ],
+  "supersedes": "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000-r2.json",
+  "correction_notes": [
+    "Clarified the Junior-Cúcuta source state: the source snapshot displayed 1-0 at 86', but that status timestamp is not exposed and cannot be asserted as live at the 10:02 capture. The official kickoff time is retained; current/final status is unconfirmed.",
+    "Separated fixtures with verified kickoff conversions from international friendly discoveries whose source timezone is not disclosed.",
+    "Corrected category count labels; no match was marked confirmed-finished merely because its kickoff date was confirmed.",
+    "Expanded the EFL Trophy to all 19 fixture candidates shown by FootyNomad: 12 are also listed by the official EFL competition page; 7 are retained as secondary-only candidates, with kickoff timezone/time conversion left blank where not confirmed.",
+    "Expanded the Colombian domestic league schedule with the official DIMAYOR Torneo BetPlay fixture Envigado vs Boca Juniors de Cali.",
+    "For Copa del Rey, four kickoffs are UTC-labelled on MatchCalendar; two additional fixtures are retained from FootyNomad as secondary-only with UTC/Beijing times left blank."
+  ]
+}
