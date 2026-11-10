@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "snapshot_type": "team_weekly_xg_provider_separated",
+  "snapshot_date_beijing": "2026-11-10",
+  "captured_at_beijing": "2026-11-10T10:02:25+08:00",
+  "team_id": "team:getafe",
+  "team_id_type": "derived_internal_slug_pending_database_mapping",
+  "team_name": "赫塔费",
+  "competition_id": "la-liga",
+  "season": "2026/27",
+  "iso_week": "2026-W46",
+  "providers": [
+    {
+      "provider": "Shotify",
+      "match_count": 1,
+      "xg_match_count": 1,
+      "missing_match_count": 0,
+      "sum_xg": 0.62,
+      "sum_xga": 2.3,
+      "sum_xgd": -1.68,
+      "xg_per90": 0.62,
+      "xga_per90": 2.3,
+      "xgd_per90": -1.68,
+      "data_type": "post_match_supplier_estimate",
+      "is_measured": false,
+      "status": "available",
+      "missing_reason": null
+    },
+    {
+      "provider": "OddAlerts",
+      "match_count": 1,
+      "xg_match_count": 1,
+      "missing_match_count": 0,
+      "sum_xg": 0.79,
+      "sum_xga": 2.1,
+      "sum_xgd": -1.31,
+      "xg_per90": 0.79,
+      "xga_per90": 2.1,
+      "xgd_per90": -1.31,
+      "data_type": "post_match_supplier_estimate",
+      "is_measured": false,
+      "status": "available",
+      "missing_reason": null
+    }
+  ],
+  "match_details": [
+    {
+      "match_id": "la-liga:2026-11-09:villarreal-getafe",
+      "match_date_beijing": "2026-11-09",
+      "opponent": "比利亚雷亚尔",
+      "venue": "away",
+      "provider": "Shotify",
+      "provider_version": "not_disclosed",
+      "data_type": "post_match_supplier_estimate",
+      "is_measured": false,
+      "xg": 0.62,
+      "xga": 2.3,
+      "xgd": -1.68,
+      "match_minutes": 90,
+      "source_url": "https://www.shotifystats.com/match/villarreal-vs-getafe-2026-11-08/report",
+      "source_captured_at": "2026-11-10T02:02:25Z",
+      "provider_updated_at": null,
+      "status": "available",
+      "missing_reason": null
+    },
+    {
+      "match_id": "la-liga:2026-11-09:villarreal-getafe",
+      "match_date_beijing": "2026-11-09",
+      "opponent": "比利亚雷亚尔",
+      "venue": "away",
+      "provider": "OddAlerts",
+      "provider_version": "not_disclosed",
+      "data_type": "post_match_supplier_estimate",
+      "is_measured": false,
+      "xg": 0.79,
+      "xga": 2.1,
+      "xgd": -1.31,
+      "match_minutes": 90,
+      "source_url": "https://www.oddalerts.com/livescores/getafe-vs-villarreal/10342-4168",
+      "source_captured_at": "2026-11-10T02:02:25Z",
+      "provider_updated_at": null,
+      "status": "available",
+      "missing_reason": null
+    }
+  ],
+  "aggregation_policy": "Provider rows are separate. No supplier blending, no measured-data claim, and no own-model estimate in this snapshot.",
+  "leakage_policy": "All included values are post-match supplier model estimates; prohibited as same-match pre-match inputs.",
+  "source_files": [
+    "data/xg_weekly/2026-W46/snapshots/2026-11-10/match_xg_cumulative_asof_2026-11-10_1000-r2.csv",
+    "data/xg_weekly/2026-W46/snapshots/2026-11-10/team_weekly_xg_cumulative_asof_2026-11-10_1000-r2.csv"
+  ]
+}
