@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "captured_at_beijing": "2026-11-10T10:29:52+08:00",
+  "iso_week": "2026-W46",
+  "base_snapshot": "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_cumulative_asof_2026-11-10_1000-r2.json",
+  "base_snapshot_immutable": true,
+  "base_match_count": 22,
+  "additional_match_count": 1,
+  "cumulative_match_count": 23,
+  "matches_with_any_xg": 21,
+  "matches_missing_xg": 2,
+  "coverage": 0.9130434782608695,
+  "coverage_pct": 91.3043,
+  "match_detail_rows": 102,
+  "team_week_summary_rows": 102,
+  "unique_teams": 46,
+  "duplicate_match_team_provider_keys": 0,
+  "xgd_arithmetic_errors": 0,
+  "summary_recomputed_from_match_detail": true,
+  "providers_kept_separate": true,
+  "measured_values": 0,
+  "own_model_estimates": 0,
+  "all_available_values_supplier_model_estimates": true,
+  "post_match_xg_used_as_prematch_input": false,
+  "prior_immutable_snapshots_modified": false,
+  "missing_match_ids": [
+    {
+      "match_id": "fa-cup:2026-11-09:oldham-athletic-sheffield-wednesday",
+      "reason": "No free traceable post-match match-level xG source located."
+    },
+    {
+      "match_id": "fa-cup:2026-11-10:plymouth-parkway-berkhamsted",
+      "reason": "No free traceable post-match match-level xG located. StatsBet 1.12-0.78 and SoccerGhost projected values are pre-match supplier model estimates, not post-match xG; not inserted into the weekly post-match xG layer."
+    }
+  ],
+  "additional_provider_rows": {
+    "none": 2
+  },
+  "team_id_policy": "Explicit stable ASCII internal slugs; canonical database ID mapping remains pending until SQLite connection is restored."
+}
