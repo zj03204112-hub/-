@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "date_beijing": "2026-11-10",
+  "category": "other_domestic_leagues",
+  "captured_at_beijing": "2026-11-10T10:29:52+08:00",
+  "matches": [
+    {
+      "match_id": "colombia-primera-a:2026-11-10:junior-c-cuta-deportivo",
+      "competition": "哥伦比亚甲级联赛",
+      "competition_id": "colombia-primera-a",
+      "season": "2026",
+      "kickoff_utc": "2026-11-10T00:00:00Z",
+      "kickoff_beijing": "2026-11-10T08:00:00+08:00",
+      "home": "Junior",
+      "away": "Cúcuta Deportivo",
+      "status": "confirmed_final",
+      "actual_score_90m": "2-0",
+      "actual_90m_wdl": "胜",
+      "actual_half_time_score": "1-0",
+      "actual_half_time_full_time": "胜胜",
+      "result_sources": [
+        {
+          "name": "DIMAYOR official",
+          "url": "https://dimayor.com.co/",
+          "quality": "official",
+          "detail": "Official match status snapshot recorded final, 2-0."
+        },
+        {
+          "name": "El Universal",
+          "url": "https://www.eluniversal.com.co/deportes/2026/11/09/junior-de-barranquilla-se-despidio-del-romelio-martinez-con-triunfo-ante-cucuta/",
+          "quality": "reliable_local_press",
+          "detail": "Reports Junior won 2-0; goals at 35 and 50 minutes; identifies local match date as Monday 9 November."
+        },
+        {
+          "name": "MatchCalendar",
+          "url": "https://matchcalendar.football/competition/primera-a/match/junior-vs-cucuta/",
+          "quality": "independent_fixture_time_reference",
+          "detail": "Kick-off 00:00 UTC on 10 November, corresponding to 08:00 Beijing time."
+        }
+      ],
+      "prediction_snapshot_status": "no_immutable_pre_match_prediction_snapshot_found",
+      "handicap": {
+        "official_sporttery_line": null,
+        "actual_handicap_result": null,
+        "status": "无法核验",
+        "reason": "No official Sporttery handicap line captured."
+      },
+      "xg_status": "missing",
+      "xg_missing_reason": "No free traceable full-time post-match match-level xG located. FullTimeStats 1.93-0.99 is a pre-match model estimate and SureBetExpert 0.55-0.44 is a partial live estimate; neither is accepted as post-match xG.",
+      "pre_match_or_live_estimate_references": [
+        {
+          "provider": "FullTimeStats",
+          "url": "https://fulltimestats.com/match/junior-vs-cucuta-2026-11-08",
+          "data_type": "pre_match_supplier_model_estimate",
+          "values": "1.93-0.99",
+          "eligible_for_post_match_weekly_xg": false
+        },
+        {
+          "provider": "SureBetExpert",
+          "url": "https://surebetexpert.com/football/match/junior-vs-cucuta-1549860",
+          "data_type": "partial_live_estimate",
+          "values": "0.55-0.44 at 52 minutes",
+          "eligible_for_post_match_weekly_xg": false
+        }
+      ],
+      "note": "The article's local Colombian date is 9 November; the match's 00:00 UTC kickoff is 08:00 Beijing time on 10 November. This match is not part of the 2026-11-09 Beijing-date review."
+    }
+  ]
+}
