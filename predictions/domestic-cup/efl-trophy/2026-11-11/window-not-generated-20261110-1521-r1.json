@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "captured_at_beijing": "2026-11-10T15:21:18+08:00",
+  "competition": "Jersey Mike's Trophy / EFL Trophy",
+  "category": "国内杯赛",
+  "beijing_date": "2026-11-11",
+  "official_fixtures_within_6_to_12h": [
+    "Burton Albion vs Notts County",
+    "Barnet vs Leyton Orient",
+    "Bristol Rovers vs Reading",
+    "Crewe Alexandra vs Wigan Athletic",
+    "Grimsby Town vs Nottingham Forest U21",
+    "Huddersfield Town vs Liverpool U21",
+    "Leicester City vs Walsall",
+    "Mansfield Town vs Chesterfield",
+    "Northampton Town vs Gillingham",
+    "Oxford United vs Cheltenham Town",
+    "Plymouth Argyle vs Swindon Town",
+    "Stevenage vs Fulham U21"
+  ],
+  "kickoff_utc": "2026-11-10T19:00:00Z",
+  "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+  "hours_to_kickoff_at_capture": 11.65,
+  "prediction_generated": false,
+  "reason": "比赛处于6-12小时窗口，但本轮未取得足以支撑逐场预测的可追溯近3场数据、同源初盘至即时欧赔/大小球序列、阵容伤停和逐场赛前xG；也未找到官方中国竞彩受注编号及真实让球数。为避免猜测，不生成正式预测。",
+  "missing_fields": [
+    "逐场近3场官方赛果交叉核验",
+    "可追溯初盘至即时盘及大小球变化",
+    "官方首发与替补名单",
+    "可靠伤停与球员状态",
+    "比赛级赛前xG/进球概率",
+    "裁判与天气",
+    "官方中国竞彩比赛编号及让球盘口"
+  ],
+  "official_source_url": "https://www.efl.com/competitions/jersey-mikes-trophy/",
+  "secondary_only_candidates_without_verified_kickoff": [
+    "Bromley vs Milton Keynes Dons",
+    "Sheffield Wednesday vs Accrington Stanley",
+    "Stockport County vs Tranmere Rovers",
+    "Barnsley vs Oldham Athletic",
+    "Bradford City vs York City",
+    "Crawley Town vs Brentford U21",
+    "Colchester United vs Ipswich Town U21"
+  ],
+  "note": "7条二级来源候选缺少已核实UTC/北京时间，不判断其是否进入预测窗口。"
+}
