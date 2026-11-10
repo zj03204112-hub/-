@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "correction_id": "schedule-correction-2026-11-10-1030-r1",
+  "captured_at_beijing": "2026-11-10T10:29:52+08:00",
+  "base_snapshot": "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000-r4.json",
+  "base_snapshot_immutable": true,
+  "base_record_count": 42,
+  "additional_records": 1,
+  "corrected_record_count": 43,
+  "corrected_records_by_beijing_date": {
+    "2026-11-10": 5,
+    "2026-11-11": 38
+  },
+  "reason": "The official FA fixture listing and result page identify Plymouth Parkway v Berkhamsted at 19:30 GMT on 9 November. This converts to 03:30 Beijing time on 10 November and was missing from the 10:02 schedule snapshot.",
+  "supplemental_fixtures": [
+    {
+      "match_id": "fa-cup:2026-11-10:plymouth-parkway-berkhamsted",
+      "competition": "英格兰足总杯",
+      "competition_id": "fa-cup",
+      "competition_category": "domestic_cup",
+      "season": "2026/27",
+      "beijing_date": "2026-11-10",
+      "home": "Plymouth Parkway",
+      "away": "Berkhamsted",
+      "kickoff_utc": "2026-11-09T19:30:00Z",
+      "kickoff_beijing": "2026-11-10T03:30:00+08:00",
+      "status": "confirmed_final_after_extra_time",
+      "actual_score_90m": "1-1",
+      "actual_score_after_extra_time": "2-1",
+      "actual_half_time_score": "0-0",
+      "official_sporttery_handicap_status": "not_verified",
+      "lineup_status": "not_verified_as_official",
+      "missing_fields": [
+        "official_sporttery_handicap",
+        "post_match_match_level_xg"
+      ],
+      "result_sources": [
+        {
+          "name": "The FA official match report",
+          "url": "https://www.thefa.com/news/2026/nov/09/emirates-fa-cup-first-round-plymouth-parkway-berkhamsted-20261109",
+          "quality": "official_competition"
+        },
+        {
+          "name": "The FA official fixture listing",
+          "url": "https://www.thefa.com/competitions/thefacup/fixtures",
+          "quality": "official_competition"
+        },
+        {
+          "name": "Sky Sports match centre",
+          "url": "https://www.skysports.com/football/plymouth-parkway-vs-berkhamsted/9203346245192773232",
+          "quality": "reliable_broadcaster"
+        }
+      ],
+      "source_captured_at_beijing": "2026-11-10T10:29:52+08:00",
+      "note": "This match belongs to Beijing date 2026-11-10, not the 2026-11-09 previous-day review. It will enter the next day's review with no immutable prediction snapshot."
+    }
+  ]
+}
