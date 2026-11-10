@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "verified_at_beijing": "2026-11-10T10:08:00+08:00",
+  "branch": "automation/daily-football-2026-11-10-1000-run11",
+  "manifest": {
+    "path": "reviews/2026-11-09/archive-manifest-1000-final-r2.json",
+    "blob_sha": "7350cb82b39c80dd1de111e1a3f781d6c612c276",
+    "exact_readback": true
+  },
+  "active_files": [
+    {
+      "path": "reviews/2026-11-09/previous-day-review-2026-11-09-r1.json",
+      "blob_sha": "da845b6a66f3211e23145d1aca3b6f5100fd39d2",
+      "exact_readback": true
+    },
+    {
+      "path": "results/2026-11-09/domestic-league-core.json",
+      "blob_sha": "e1c64703471d76490216b1ce841d8219df64705a",
+      "exact_readback": true
+    },
+    {
+      "path": "results/2026-11-09/other-domestic-leagues.json",
+      "blob_sha": "15ec569fc5506879fc49e4c076937ffd8ba038f5",
+      "exact_readback": true
+    },
+    {
+      "path": "results/2026-11-09/domestic-cup.json",
+      "blob_sha": "3c77e3bb07bcaba24248fe5ea9bc86204e0e7190",
+      "exact_readback": true
+    },
+    {
+      "path": "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000-r3.json",
+      "blob_sha": "c5cf2067ca6bf45744b655199cfc71ffa5f59b23",
+      "exact_readback": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/match_xg_cumulative_asof_2026-11-10_1000-r2.csv",
+      "blob_sha": "15b45cd62127c85ffe30d44eb38cf8b05ffe4d9d",
+      "exact_readback": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/team_weekly_xg_cumulative_asof_2026-11-10_1000-r2.csv",
+      "blob_sha": "3f4d6ed7fd1e21329bcc000214d11f320175287f",
+      "exact_readback": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_cumulative_asof_2026-11-10_1000-r2.json",
+      "blob_sha": "34014fbc74820d4afd191412637e6678c0b21e47",
+      "exact_readback": true
+    },
+    {
+      "path": "reviews/2026-11-09/archive-manifest-1000-r2.json",
+      "blob_sha": "b93215d6460cbc94349c3fa233ba3eca8e9c1bfd",
+      "exact_readback": true
+    },
+    {
+      "path": "reviews/2026-11-09/readback-verification-1000-r2.json",
+      "blob_sha": "b0f00a57322f3a2f35b7c13f550523284a04c17a",
+      "exact_readback": true
+    },
+    {
+      "path": "reviews/2026-11-09/schedule-readback-verification-1000-r3.json",
+      "blob_sha": "8a51355c457ffbca474a62223d327a6a5ed5efc5",
+      "exact_readback": true
+    }
+  ],
+  "checks": {
+    "all_active_files_present": true,
+    "all_active_files_nonempty": true,
+    "manifest_exact_readback": true,
+    "xg_duplicate_keys": 0,
+    "xgd_arithmetic_errors": 0,
+    "schedule_records": 42,
+    "schedule_time_unverified": 12
+  },
+  "database": {
+    "sqlite_file_in_repository": true,
+    "active_connection": false,
+    "updated": false
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "pre_match_snapshot_overwritten": false
+  }
+}
