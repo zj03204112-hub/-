@@ -48,8 +48,17 @@
     "reason": "No live SQLite connection established in this run; GitHub append-only files are not represented as SQLite writes."
   },
   "github": {
-    "write_status": "pending",
-    "readback_status": "pending",
-    "required": "Only report archived after successful create and exact-path readback."
+    "write_status": "success",
+    "readback_status": "success",
+    "required": "Only report archived after successful create and exact-path readback.",
+    "readback_verified_paths": [
+      "fixtures/2026-11-10-11/market-lineup-weather-refresh-beijing-2026-11-10-1521-r1.json",
+      "predictions/continental-club/uefa-womens-champions-league/2026-11-11/real-madrid-w-paris-fc-w-20261110-1521-r1.json",
+      "predictions/continental-club/uefa-womens-champions-league/2026-11-11/hacken-w-chelsea-w-20261110-1521-r1.json",
+      "predictions/domestic-cup/efl-trophy/2026-11-11/window-not-generated-20261110-1521-r1.json",
+      "reviews/2026-11-10/15-00-run-final-verification-r1.json"
+    ],
+    "latest_pre_audit_commit": "6c56ec35668ca70c66dfba59eaf9e8598b3cdcd4",
+    "final_verification": "All five paths fetched from the target branch and parsed as JSON after commit."
   }
 }
