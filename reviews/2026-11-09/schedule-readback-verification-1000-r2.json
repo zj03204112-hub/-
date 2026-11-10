@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "verified_at_beijing": "2026-11-10T10:05:00+08:00",
+  "branch": "automation/daily-football-2026-11-10-1000-run11",
+  "files": [
+    {
+      "path": "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000-r2.json",
+      "sha": "f52fc751dbefe0a43db4ce9ba95e9b1c7b62eada",
+      "exact_readback": true
+    }
+  ],
+  "checks": {
+    "schedule_records": 24,
+    "beijing_2026_11_10": 4,
+    "beijing_2026_11_11": 20,
+    "core_league_fixtures": 0,
+    "unverified_time_zone_records": 3
+  },
+  "notes": [
+    "No 10:00 or 15:00 prediction generated in this run; this is the 10:00 review/schedule batch.",
+    "Unverified friendly kickoff times remain blank; no timezone inferred."
+  ]
+}
