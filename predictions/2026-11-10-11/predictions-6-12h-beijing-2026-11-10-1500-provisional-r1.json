@@ -1,0 +1,1153 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-10-1500-run11",
+  "captured_at_beijing": "2026-11-10T15:04:54+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": "provisional_manual_preview_only",
+  "prediction_window_beijing": {
+    "from": "2026-11-10T21:04:54+08:00",
+    "to": "2026-11-11T03:04:54+08:00",
+    "matches": 21
+  },
+  "model": {
+    "production_model": "V5.1",
+    "v5_1_execution": "not_run",
+    "v5_1_modified": false,
+    "reason": "SQLite active connection unavailable and match-level pre-match xG/odds history incomplete",
+    "provisional_method": "P15 evidence-based manual preview; uses confirmed schedule, recent form/group position, available team news and tactical context; odds only a secondary cross-check",
+    "version": "P15-PROVISIONAL-0.1",
+    "calibrated": false,
+    "probabilities_are_not_v5_1_output": true
+  },
+  "prediction_fields": {
+    "probability_order": "home/draw/away",
+    "confidence_scale": "0-100 subjective provisional confidence, not calibrated probability",
+    "handicap_rule": "Only first predicted score + verified official Sporttery handicap. No official line verified in this run; handicap result is null for all 21.",
+    "half_full": "90-minute half-time/full-time outcome"
+  },
+  "predictions": [
+    {
+      "match_id": "efl-trophy:2026-11-11:barnet-leyton-orient",
+      "competition": "EFL Trophy",
+      "home": "Barnet",
+      "away": "Leyton Orient",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "1-1",
+      "second_score": "1-2",
+      "ninety_minute": {
+        "pick": "平",
+        "probabilities_pct": [
+          32,
+          29,
+          39
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平平",
+        "second": "平负"
+      },
+      "confidence": 46,
+      "strategy_id": "S15-EFL-GROUP-MOTIVATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 27,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority",
+        "full_tactical_report"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:bristol-rovers-reading",
+      "competition": "EFL Trophy",
+      "home": "Bristol Rovers",
+      "away": "Reading",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "0-2",
+      "second_score": "1-2",
+      "ninety_minute": {
+        "pick": "负",
+        "probabilities_pct": [
+          22,
+          26,
+          52
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "负负",
+        "second": "平负"
+      },
+      "confidence": 56,
+      "strategy_id": "S15-EFL-GROUP-MOTIVATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 36,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:burton-albion-notts-county",
+      "competition": "EFL Trophy",
+      "home": "Burton Albion",
+      "away": "Notts County",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "1-1",
+      "second_score": "2-1",
+      "ninety_minute": {
+        "pick": "平",
+        "probabilities_pct": [
+          36,
+          32,
+          32
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平平",
+        "second": "平胜"
+      },
+      "confidence": 51,
+      "strategy_id": "S15-EFL-GROUP-ROTATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 55,
+      "missing_fields": [
+        "confirmed_lineups",
+        "full_tactical_report",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "official_sporttery_response"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:crewe-alexandra-wigan-athletic",
+      "competition": "EFL Trophy",
+      "home": "Crewe Alexandra",
+      "away": "Wigan Athletic",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "1-2",
+      "second_score": "1-1",
+      "ninety_minute": {
+        "pick": "负",
+        "probabilities_pct": [
+          29,
+          28,
+          43
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平负",
+        "second": "平平"
+      },
+      "confidence": 50,
+      "strategy_id": "S15-EFL-GROUP-MOTIVATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 36,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:grimsby-town-nottingham-forest-u21",
+      "competition": "EFL Trophy",
+      "home": "Grimsby Town",
+      "away": "Nottingham Forest U21",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "2-2",
+      "second_score": "3-2",
+      "ninety_minute": {
+        "pick": "平",
+        "probabilities_pct": [
+          44,
+          25,
+          31
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平平",
+        "second": "胜胜"
+      },
+      "confidence": 43,
+      "strategy_id": "S15-EFL-YOUTH-VARIANCE",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 27,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority",
+        "youth_player_availability"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:huddersfield-town-liverpool-u21",
+      "competition": "EFL Trophy",
+      "home": "Huddersfield Town",
+      "away": "Liverpool U21",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "3-1",
+      "second_score": "2-0",
+      "ninety_minute": {
+        "pick": "胜",
+        "probabilities_pct": [
+          63,
+          21,
+          16
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "胜胜",
+        "second": "平胜"
+      },
+      "confidence": 61,
+      "strategy_id": "S15-EFL-GROUP-QUALIFICATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 36,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:leicester-city-walsall",
+      "competition": "EFL Trophy",
+      "home": "Leicester City",
+      "away": "Walsall",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "2-1",
+      "second_score": "2-0",
+      "ninety_minute": {
+        "pick": "胜",
+        "probabilities_pct": [
+          52,
+          26,
+          22
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平胜",
+        "second": "胜胜"
+      },
+      "confidence": 52,
+      "strategy_id": "S15-EFL-GROUP-QUALIFICATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 36,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:mansfield-town-chesterfield",
+      "competition": "EFL Trophy",
+      "home": "Mansfield Town",
+      "away": "Chesterfield",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "1-1",
+      "second_score": "1-2",
+      "ninety_minute": {
+        "pick": "平",
+        "probabilities_pct": [
+          30,
+          30,
+          40
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平平",
+        "second": "平负"
+      },
+      "confidence": 45,
+      "strategy_id": "S15-EFL-DERBY-ROTATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 36,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:northampton-town-gillingham",
+      "competition": "EFL Trophy",
+      "home": "Northampton Town",
+      "away": "Gillingham",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "0-1",
+      "second_score": "1-2",
+      "ninety_minute": {
+        "pick": "负",
+        "probabilities_pct": [
+          27,
+          28,
+          45
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平负",
+        "second": "负负"
+      },
+      "confidence": 48,
+      "strategy_id": "S15-EFL-GROUP-ELIMINATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 36,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:oxford-united-cheltenham-town",
+      "competition": "EFL Trophy",
+      "home": "Oxford United",
+      "away": "Cheltenham Town",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "1-1",
+      "second_score": "2-1",
+      "ninety_minute": {
+        "pick": "平",
+        "probabilities_pct": [
+          37,
+          31,
+          32
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平平",
+        "second": "平胜"
+      },
+      "confidence": 43,
+      "strategy_id": "S15-EFL-LOW-SAMPLE",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 27,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:plymouth-argyle-swindon-town",
+      "competition": "EFL Trophy",
+      "home": "Plymouth Argyle",
+      "away": "Swindon Town",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "2-1",
+      "second_score": "3-1",
+      "ninety_minute": {
+        "pick": "胜",
+        "probabilities_pct": [
+          59,
+          23,
+          18
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平胜",
+        "second": "胜胜"
+      },
+      "confidence": 57,
+      "strategy_id": "S15-EFL-GROUP-QUALIFICATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 36,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:stevenage-fulham-u21",
+      "competition": "EFL Trophy",
+      "home": "Stevenage",
+      "away": "Fulham U21",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "3-0",
+      "second_score": "3-1",
+      "ninety_minute": {
+        "pick": "胜",
+        "probabilities_pct": [
+          66,
+          20,
+          14
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "胜胜",
+        "second": "胜胜"
+      },
+      "confidence": 62,
+      "strategy_id": "S15-EFL-GROUP-QUALIFICATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 36,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority",
+        "youth_player_availability"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "efl-trophy:2026-11-11:stockport-county-tranmere-rovers",
+      "competition": "EFL Trophy",
+      "home": "Stockport County",
+      "away": "Tranmere Rovers",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "2-0",
+      "second_score": "2-1",
+      "ninety_minute": {
+        "pick": "胜",
+        "probabilities_pct": [
+          60,
+          24,
+          16
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "胜胜",
+        "second": "平胜"
+      },
+      "confidence": 57,
+      "strategy_id": "S15-EFL-GROUP-QUALIFICATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 36,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "copa-del-rey:2026-11-11:cd-anaitasuna-deportivo-alav-s",
+      "competition": "Copa del Rey",
+      "home": "CD Anaitasuna",
+      "away": "Deportivo Alavés",
+      "kickoff_beijing": "2026-11-11T02:00:00+08:00",
+      "kickoff_utc": "2026-11-10T18:00:00Z",
+      "first_score": "0-2",
+      "second_score": "0-3",
+      "ninety_minute": {
+        "pick": "负",
+        "probabilities_pct": [
+          10,
+          16,
+          74
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "负负",
+        "second": "平负"
+      },
+      "confidence": 67,
+      "strategy_id": "S15-COPA-TIER-GAP-ROTATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 45,
+      "missing_fields": [
+        "confirmed_lineups",
+        "official_injury_list",
+        "referee",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "copa-del-rey:2026-11-11:cd-pamplona-sd-eibar",
+      "competition": "Copa del Rey",
+      "home": "CD Pamplona",
+      "away": "SD Eibar",
+      "kickoff_beijing": "2026-11-11T02:00:00+08:00",
+      "kickoff_utc": "2026-11-10T18:00:00Z",
+      "first_score": "0-2",
+      "second_score": "1-2",
+      "ninety_minute": {
+        "pick": "负",
+        "probabilities_pct": [
+          16,
+          22,
+          62
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "负负",
+        "second": "平负"
+      },
+      "confidence": 56,
+      "strategy_id": "S15-COPA-TIER-GAP-ROTATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 45,
+      "missing_fields": [
+        "confirmed_lineups",
+        "complete_official_injury_list",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "copa-del-rey:2026-11-11:cp-mijas-las-lagunas-real-ja-n-cf",
+      "competition": "Copa del Rey",
+      "home": "CP Mijas Las Lagunas",
+      "away": "Real Jaén CF",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "1-1",
+      "second_score": "2-1",
+      "ninety_minute": {
+        "pick": "平",
+        "probabilities_pct": [
+          34,
+          31,
+          35
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平平",
+        "second": "平胜"
+      },
+      "confidence": 44,
+      "strategy_id": "S15-COPA-REST-AND-ABSENCES",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 55,
+      "missing_fields": [
+        "confirmed_lineups",
+        "referee",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "copa-del-rey:2026-11-11:cf-trival-valderas-alcorc-n-cd-legan-s",
+      "competition": "Copa del Rey",
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "CD Leganés",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "0-2",
+      "second_score": "0-3",
+      "ninety_minute": {
+        "pick": "负",
+        "probabilities_pct": [
+          12,
+          20,
+          68
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "负负",
+        "second": "平负"
+      },
+      "confidence": 64,
+      "strategy_id": "S15-COPA-TIER-GAP-ROTATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 55,
+      "missing_fields": [
+        "confirmed_lineups",
+        "referee",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "copa-del-rey:2026-11-11:sd-amorebieta-ud-logro-s",
+      "competition": "Copa del Rey",
+      "home": "SD Amorebieta",
+      "away": "UD Logroñés",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "first_score": "1-1",
+      "second_score": "0-1",
+      "ninety_minute": {
+        "pick": "负",
+        "probabilities_pct": [
+          27,
+          29,
+          44
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平平",
+        "second": "平负"
+      },
+      "confidence": 46,
+      "strategy_id": "S15-COPA-RECENT-FORM",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 36,
+      "missing_fields": [
+        "confirmed_lineups",
+        "injury_status",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "uefa-women-s-champions-league:2026-11-11:h-cken-women-chelsea-women",
+      "competition": "UEFA Women's Champions League",
+      "home": "Häcken Women",
+      "away": "Chelsea Women",
+      "kickoff_beijing": "2026-11-11T01:45:00+08:00",
+      "kickoff_utc": "2026-11-10T17:45:00Z",
+      "first_score": "0-2",
+      "second_score": "1-2",
+      "ninety_minute": {
+        "pick": "负",
+        "probabilities_pct": [
+          18,
+          23,
+          59
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "负负",
+        "second": "平负"
+      },
+      "confidence": 58,
+      "strategy_id": "S15-WCL-AVAILABILITY-AND-DEFENCE",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 45,
+      "missing_fields": [
+        "confirmed_lineups",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "uefa-women-s-champions-league:2026-11-11:real-madrid-women-paris-fc-women",
+      "competition": "UEFA Women's Champions League",
+      "home": "Real Madrid Women",
+      "away": "Paris FC Women",
+      "kickoff_beijing": "2026-11-11T01:45:00+08:00",
+      "kickoff_utc": "2026-11-10T17:45:00Z",
+      "first_score": "2-1",
+      "second_score": "1-1",
+      "ninety_minute": {
+        "pick": "胜",
+        "probabilities_pct": [
+          42,
+          30,
+          28
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "平胜",
+        "second": "平平"
+      },
+      "confidence": 51,
+      "strategy_id": "S15-WCL-FORM-AND-ABSENCES",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 45,
+      "missing_fields": [
+        "confirmed_lineups",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    },
+    {
+      "match_id": "uefa-women-s-europa-cup:2026-11-11:feyenoord-women-vfl-wolfsburg-women",
+      "competition": "UEFA Women's Europa Cup",
+      "home": "Feyenoord Women",
+      "away": "VfL Wolfsburg Women",
+      "kickoff_beijing": "2026-11-11T02:00:00+08:00",
+      "kickoff_utc": "2026-11-10T18:00:00Z",
+      "first_score": "0-2",
+      "second_score": "1-2",
+      "ninety_minute": {
+        "pick": "负",
+        "probabilities_pct": [
+          12,
+          20,
+          68
+        ],
+        "order": [
+          "home",
+          "draw",
+          "away"
+        ]
+      },
+      "official_sporttery_handicap": {
+        "line": null,
+        "status": "not_verified",
+        "predicted_handicap_result": null,
+        "note": "Third-party Asian handicap is not substituted; third-party Jczq mirror is not treated as official."
+      },
+      "half_full": {
+        "first": "负负",
+        "second": "平负"
+      },
+      "confidence": 65,
+      "strategy_id": "S15-UWEC-AGGREGATE-ROTATION",
+      "model_version": "P15-PROVISIONAL-0.1 (V5.1 not executed)",
+      "data_completeness_pct": 55,
+      "missing_fields": [
+        "confirmed_lineups",
+        "referee",
+        "weather",
+        "same_source_open_to_live_odds",
+        "prematch_xg",
+        "next_opponent_priority"
+      ],
+      "risk_flags": [
+        "official lineups not yet verified",
+        "no traceable pre-match match-level xG",
+        "no same-provider opening-to-live odds sequence",
+        "official Sporttery API response unavailable"
+      ]
+    }
+  ],
+  "match_specific_notes": {
+    "Burton Albion-Notts County": {
+      "team_news": "Burton official preview: Toby Sibbick and Gbemi Arubi away on international duty; Harvey Araujo available after suspension; Joe Lewis returning from injury. Notts County already qualified; Burton need a positive result to progress.",
+      "referee": "Isaac Searle (club preview)",
+      "official_jczq_mirror": "周二001; mirrored home handicap -1; not officially verified",
+      "market_snapshot": "Third-party mirrors show 1X2 around 2.18/3.30/2.65 and -1 line prices 4.60/3.85/1.51; no capture timestamp and not official-verified",
+      "dated_bookmaker_reference": "OddsFilter average 2.19/3.49/2.86 captured 2026-11-08 00:30 UTC; stale, not live",
+      "weather": "No trustworthy 2026-11-10 19:00 local forecast verified",
+      "next_match": "Burton next scheduled league match 2026-11-14; Notts next opponent not verified in this run"
+    },
+    "CF Trival Valderas Alcorcón-CD Leganés": {
+      "team_news": "Leganés coach says internationals Diawara and Gharbi unavailable; Lalo and Andrés had fitness doubts; possible rotation but Copa progression described as vital.",
+      "tactics": "Leganés coach highlighted Trival's transition play and consolidated shape; Leganés identified pressing/defensive-transition issues.",
+      "weather": "Leganés official club note expected rain around kickoff.",
+      "referee": "Not verified"
+    },
+    "Häcken Women-Chelsea Women": {
+      "team_news": "Preview source lists Häcken absences Lisa Löwing, Helena Sampaio and Elin Rubensson; Chelsea absences Mayra Ramírez and Lauren James, Naomi Girma doubtful.",
+      "tactics": "Preview source anticipates 3-4-3 for both; predicted XI only, not official lineup."
+    },
+    "Real Madrid Women-Paris FC Women": {
+      "team_news": "Preview source lists Sandie Toletti out, Linda Caicedo doubtful for Real Madrid; Paris FC forward Clara Mateo suspended.",
+      "form": "Real Madrid unbeaten in five all competitions; Paris FC unbeaten in six all competitions per preview."
+    },
+    "Feyenoord Women-VfL Wolfsburg Women": {
+      "aggregate": "Wolfsburg lead 7-0 after first leg.",
+      "team_news": "Feyenoord goalkeeper Claire Dinkla still unavailable; Wolfsburg coach says Lena Lattwein available, Lou Bogaert not ready, long-term absentees Giovanna Hoffmann and Weronika Arasniewicz remain out.",
+      "rotation": "Wolfsburg coach explicitly says squad rotation/minute management is likely; upcoming league match vs Bayern on 14 November."
+    }
+  },
+  "limitations": [
+    "No official Sporttery live payload was obtained; no official handicap result issued.",
+    "No confirmed starting XI available at capture time.",
+    "Pre-match xG/xGA and shot-based probabilities were not independently verified.",
+    "Most EFL and Copa del Rey fixtures have incomplete injury/referee/weather/tactical coverage.",
+    "This provisional preview must not be merged into the immutable V5.1 validation sample as a V5.1 prediction."
+  ]
+}
