@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "snapshot_type": "team_weekly_xg_provider_separated",
+  "snapshot_date_beijing": "2026-11-10",
+  "captured_at_beijing": "2026-11-10T10:29:52+08:00",
+  "team_id": "team:cucuta-deportivo",
+  "team_id_type": "derived_internal_slug_pending_database_mapping",
+  "team_name": "Cúcuta Deportivo",
+  "competition_id": "colombia-primera-a",
+  "season": "2026",
+  "iso_week": "2026-W46",
+  "providers": [
+    {
+      "provider": "none",
+      "match_count": 1,
+      "xg_match_count": 0,
+      "missing_match_count": 1,
+      "sum_xg": null,
+      "sum_xga": null,
+      "sum_xgd": null,
+      "xg_per90": null,
+      "xga_per90": null,
+      "xgd_per90": null,
+      "data_type": "missing",
+      "is_measured": false,
+      "status": "missing",
+      "missing_reason": "No free traceable full-time post-match match-level xG located. FullTimeStats 1.93-0.99 is a pre-match model estimate and SureBetExpert 0.55-0.44 is a partial live estimate; neither is accepted as post-match xG."
+    }
+  ],
+  "match_details": [
+    {
+      "match_id": "colombia-primera-a:2026-11-10:junior-c-cuta-deportivo",
+      "match_date_beijing": "2026-11-10",
+      "opponent": "Junior",
+      "venue": "away",
+      "provider": "none",
+      "provider_version": "not_available",
+      "data_type": "missing",
+      "is_measured": false,
+      "xg": null,
+      "xga": null,
+      "xgd": null,
+      "match_minutes": 90,
+      "source_url": "https://www.eluniversal.com.co/deportes/2026/11/09/junior-de-barranquilla-se-despidio-del-romelio-martinez-con-triunfo-ante-cucuta/",
+      "source_captured_at": "2026-11-10T02:29:52Z",
+      "provider_updated_at": null,
+      "status": "missing",
+      "missing_reason": "No free traceable full-time post-match match-level xG located. FullTimeStats 1.93-0.99 is a pre-match model estimate and SureBetExpert 0.55-0.44 is a partial live estimate; neither is accepted as post-match xG."
+    }
+  ],
+  "aggregation_policy": "Provider rows remain separate. No partial live estimate or pre-match estimate is treated as post-match xG.",
+  "leakage_policy": "No post-match value is used as a same-match pre-match input.",
+  "source_files": [
+    "data/xg_weekly/2026-W46/snapshots/2026-11-10/match_xg_addendum-2026-11-10-1031-r2.csv",
+    "data/xg_weekly/2026-W46/snapshots/2026-11-10/team_weekly_xg_addendum-2026-11-10-1031-r2.csv"
+  ]
+}
