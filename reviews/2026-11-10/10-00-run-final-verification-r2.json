@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-10-1000-run11",
+  "captured_at_beijing": "2026-11-10T10:29:52+08:00",
+  "branch": "automation/daily-football-2026-11-10-1000-run11",
+  "review_date_beijing": "2026-11-09",
+  "previous_day_review": {
+    "confirmed_finished_matches": 22,
+    "snapshot_matches": 17,
+    "missing_snapshot_matches": 5,
+    "wdl": {
+      "hits": 8,
+      "total": 17,
+      "accuracy_pct": 47.06,
+      "actual_draws": 6,
+      "predicted_draws": 0,
+      "draw_recall_pct": 0
+    },
+    "first_score": {
+      "hits": 2,
+      "total": 17,
+      "accuracy_pct": 11.76,
+      "first_score_1_1_count": 13
+    },
+    "second_score": {
+      "hits": 2,
+      "total": 17,
+      "accuracy_pct": 11.76
+    },
+    "half_full": {
+      "hits": 5,
+      "total": 17,
+      "accuracy_pct": 29.41
+    },
+    "risk_flags": {
+      "hit": 4,
+      "partial": 5,
+      "not_observed": 8,
+      "qualitative_only": true
+    },
+    "official_sporttery_handicap_lines": 0,
+    "handicap_results_scored": 0,
+    "handicap_unverifiable_matches": 22,
+    "missing_snapshot_match_names": [
+      "马德里竞技-巴塞罗那",
+      "佛罗伦萨-尤文图斯",
+      "朗斯-马赛",
+      "里奥阿维-布拉加",
+      "阿马多拉之星-本菲卡"
+    ],
+    "source_crosscheck_addendum": "results/2026-11-09/source-crosscheck-addendum-2026-11-10-1029-r1.json",
+    "immutable_prediction_snapshot": "predictions/2026-11-08-09/predictions-6-12h-beijing-2026-11-08-1500.json",
+    "review_file": "reviews/2026-11-09/previous-day-review-2026-11-09-r1.json"
+  },
+  "schedule": {
+    "date_range_beijing": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "original_snapshot_records": 42,
+    "append_only_corrections": 1,
+    "corrected_total_records": 43,
+    "records_by_beijing_date": {
+      "2026-11-10": 5,
+      "2026-11-11": 38
+    },
+    "statuses": {
+      "confirmed_final": 1,
+      "confirmed_final_after_extra_time": 1,
+      "scheduled": 29,
+      "scheduled_candidate_time_unverified": 3,
+      "secondary_schedule_candidate": 9
+    },
+    "categories": {
+      "domestic_league_core": 0,
+      "other_domestic_leagues": 2,
+      "domestic_cup": 31,
+      "continental_club": 6,
+      "national_team_other": 3
+    },
+    "nations_league": 0,
+    "official_schedule_sources": [
+      "The FA",
+      "J.LEAGUE",
+      "K LEAGUE",
+      "DIMAYOR",
+      "UEFA"
+    ],
+    "schedule_base": "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000-r4.json",
+    "schedule_correction": "fixtures/2026-11-10-11/schedule-correction-beijing-2026-11-10-1030-r1.json"
+  },
+  "current_day_completed_matches": [
+    {
+      "match_id": "fa-cup:2026-11-10:plymouth-parkway-berkhamsted",
+      "match": "Plymouth Parkway-Berkhamsted",
+      "score_90m": "1-1",
+      "score_after_extra_time": "2-1",
+      "prediction_snapshot": "none"
+    },
+    {
+      "match_id": "colombia-primera-a:2026-11-10:junior-c-cuta-deportivo",
+      "match": "Junior-Cúcuta Deportivo",
+      "score_90m": "2-0",
+      "prediction_snapshot": "none"
+    }
+  ],
+  "weekly_xg": {
+    "iso_week": "2026-W46",
+    "cumulative_matches": 24,
+    "matches_with_any_xg": 21,
+    "missing_matches": 3,
+    "coverage_pct": 87.5,
+    "match_detail_rows": 104,
+    "team_weekly_provider_rows": 104,
+    "unique_teams": 48,
+    "team_directories": 48,
+    "providers_separated": true,
+    "measured_values": 0,
+    "own_model_estimates": 0,
+    "all_available_values_supplier_model_estimates": true,
+    "missing_match_ids": [
+      "fa-cup:2026-11-09:oldham-athletic-sheffield-wednesday",
+      "fa-cup:2026-11-10:plymouth-parkway-berkhamsted",
+      "colombia-primera-a:2026-11-10:junior-c-cuta-deportivo"
+    ],
+    "duplicate_keys": 0,
+    "xgd_arithmetic_errors": 0,
+    "post_match_xg_used_as_prematch_input": false,
+    "canonical_team_database_id_mapping_pending": true,
+    "coverage_addendum": "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_addendum_cumulative_asof_2026-11-10_1031-r2.json"
+  },
+  "database": {
+    "sqlite_file_in_repository": true,
+    "active_connection": false,
+    "updated": false
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "immutable_prediction_snapshot_modified": false,
+    "historical_xg_snapshots_overwritten": false
+  },
+  "readback_verified": true,
+  "correction_chain": [
+    "reviews/2026-11-10/10-00-run-verification-r1.json",
+    "reviews/2026-11-10/10-00-run-correction-1030-r1.json",
+    "reviews/2026-11-10/10-00-run-correction-1031-r2.json"
+  ]
+}
