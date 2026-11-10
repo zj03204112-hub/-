@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-10-1500-run11",
+  "captured_at_beijing": "2026-11-10T15:04:54+08:00",
+  "official_endpoint": {
+    "url": "https://webapi.sporttery.cn/gateway/jc/football/getMatchCalculatorV1.qry",
+    "result": "not_accessible_from_current_runtime",
+    "official_payload_saved": false,
+    "official_handicap_verified": false
+  },
+  "mirror_only": {
+    "source": "https://zcai.cn/tool_jc?id=13&wf=%E8%AE%A9%E7%90%83&yxm=%E7%AB%9E%E5%BD%A9%E8%B6%B3%E7%90%83",
+    "source_type": "third_party_mirror",
+    "matches": [
+      {
+        "match": "Burton Albion-Notts County",
+        "match_number": "周二001",
+        "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+        "had": [
+          2.18,
+          3.3,
+          2.65
+        ],
+        "hhad_line": -1,
+        "hhad": [
+          4.6,
+          3.85,
+          1.51
+        ],
+        "capture_time": "not exposed by page",
+        "official_status": "unverified"
+      },
+      {
+        "match": "Bromley-MK Dons",
+        "match_number": "周二002",
+        "kickoff_beijing": "2026-11-11T03:30:00+08:00",
+        "had": [
+          4.05,
+          3.92,
+          1.57
+        ],
+        "hhad_line": 1,
+        "hhad": [
+          2.02,
+          3.67,
+          1
+        ],
+        "capture_time": "not exposed by page",
+        "official_status": "unverified"
+      }
+    ],
+    "warning": "These values are not treated as official Sporttery evidence. No handicap mapping is generated from them."
+  },
+  "external_bookmaker_reference": {
+    "match": "Burton Albion-Notts County",
+    "source": "https://oddsfilter.com/event/1001588846-burton-albion-notts-county",
+    "captured_at_utc": "2026-11-08T00:30:00Z",
+    "average_1x2": [
+      2.19,
+      3.49,
+      2.86
+    ],
+    "average_over_under_2_5": [
+      1.74,
+      2.01
+    ],
+    "status": "stale_reference_only"
+  },
+  "movement_analysis": {
+    "opening_odds": null,
+    "current_odds_same_provider": null,
+    "line_movement": null,
+    "conclusion": "No same-company opening-to-live sequence verified; do not infer drift, steam, market money flow or sharp action."
+  }
+}
