@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "verified_at_beijing": "2026-11-10T10:10:30+08:00",
+  "branch": "automation/daily-football-2026-11-10-1000-run11",
+  "manifest": {
+    "path": "reviews/2026-11-09/archive-manifest-1000-final-r4.json",
+    "blob_sha": "4780c5feef7a5b06812020ffcf1149b01b22932e",
+    "exact_readback": true
+  },
+  "checked_files": [
+    {
+      "path": "reviews/2026-11-09/previous-day-review-2026-11-09-r1.json",
+      "sha": "da845b6a66f3211e23145d1aca3b6f5100fd39d2",
+      "readback": true
+    },
+    {
+      "path": "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000-r4.json",
+      "sha": "1a1a85ba72345ab8d4c630ce3899f0e34a33c452",
+      "readback": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_cumulative_asof_2026-11-10_1000-r2.json",
+      "sha": "34014fbc74820d4afd191412637e6678c0b21e47",
+      "readback": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/team-index-asof-2026-11-10-1000.json",
+      "sha": "854d653d2c92324cc772873a9d4a554d81fe576c",
+      "readback": true
+    }
+  ],
+  "team_directories": {
+    "expected": 44,
+    "listed": 44,
+    "all_present": true,
+    "tree_sha": "8a9c131c4d51293fa5f2d5a3e3964b1da605c728",
+    "sample_file_exact": true
+  },
+  "checks": {
+    "manifest_exact_readback": true,
+    "xg_duplicate_match_team_provider_keys": 0,
+    "xgd_arithmetic_errors": 0,
+    "schedule_records": 42
+  },
+  "database": {
+    "sqlite_file_in_repository": true,
+    "active_connection": false,
+    "updated": false
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "pre_match_snapshot_overwritten": false
+  }
+}
