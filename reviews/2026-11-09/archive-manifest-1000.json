@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "run_date_beijing": "2026-11-10",
+  "run_type": "10:00",
+  "branch": "automation/daily-football-2026-11-10-1000-run11",
+  "created_at_utc": "2026-11-10T02:02:25Z",
+  "source_snapshot": {
+    "path": "predictions/2026-11-08-09/predictions-6-12h-beijing-2026-11-08-1500.json",
+    "sha": "8dd91f014c5cf6dcc216c9cdee1db33a57cd495b",
+    "immutable": true
+  },
+  "files": [
+    {
+      "path": "reviews/2026-11-09/previous-day-review-2026-11-09-r1.json",
+      "commit_sha": "2e88ba7a84eedbe4b64246c92c70e16722298d2d",
+      "content_length": 61209
+    },
+    {
+      "path": "results/2026-11-09/domestic-league-core.json",
+      "commit_sha": "d8039fc82839a8df6b0cd87e22329902a0bbfe5c",
+      "content_length": 13291
+    },
+    {
+      "path": "results/2026-11-09/other-domestic-leagues.json",
+      "commit_sha": "c3af582cf1ffaaafaa4f94f61812f144521fa8f2",
+      "content_length": 7717
+    },
+    {
+      "path": "results/2026-11-09/domestic-cup.json",
+      "commit_sha": "b0ce714e46749b0690474696921f9178d41f1f4e",
+      "content_length": 907
+    },
+    {
+      "path": "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000.json",
+      "commit_sha": "6f52862a39262b0eb7e87e5af886e9c87e14c712",
+      "content_length": 27219
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/match_xg_cumulative_asof_2026-11-10_1000.csv",
+      "commit_sha": "77dc5a916bfd1f941c1f0d51c831a457db1b3ea9",
+      "content_length": 32229
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/team_weekly_xg_cumulative_asof_2026-11-10_1000.csv",
+      "commit_sha": "27fe3c3c7840b9b49c9c826a64a2c1db030df39a",
+      "content_length": 13251
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_cumulative_asof_2026-11-10_1000.json",
+      "commit_sha": "e27e6e9c18e88ba63d8504b4dec491f10d37ce74",
+      "content_length": 1793
+    }
+  ],
+  "summary": {
+    "finished_2026_11_09": 22,
+    "prediction_matches": 17,
+    "no_snapshot_matches": 5,
+    "wdl_hits": 8,
+    "first_score_hits": 2,
+    "second_score_hits": 2,
+    "half_full_hits": 5,
+    "handicap_unverifiable": 17,
+    "xg_matches": 21,
+    "xg_missing_matches": 1,
+    "schedule_records": 24,
+    "core_league_fixtures": 0,
+    "sqlite_file_in_repo": true,
+    "active_sqlite_connection": false,
+    "sqlite_updated": false
+  }
+}
