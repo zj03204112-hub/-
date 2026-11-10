@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "pred-20261110-1521-uwcl-hacken-chelsea-r1",
+  "prediction_id": "pred-20261110-1521-uwcl-002",
+  "immutable": true,
+  "captured_at_beijing": "2026-11-10T15:21:18+08:00",
+  "competition": "UEFA Women's Champions League",
+  "category": "洲际俱乐部",
+  "match_id": "uwcl:2026-11-11:hacken-w-chelsea-w",
+  "supplier_event_ids": {
+    "uefa_match_id": "2050558",
+    "genui_schedule_id": "74371838"
+  },
+  "match_name": "BK Häcken Women vs Chelsea Women",
+  "home": "BK Häcken Women",
+  "away": "Chelsea Women",
+  "kickoff_utc": "2026-11-10T17:45:00Z",
+  "kickoff_beijing": "2026-11-11T01:45:00+08:00",
+  "hours_to_kickoff_at_capture": 10.395,
+  "window_definition": "6-12 hours before kickoff, Beijing time",
+  "official_sporttery_handicap": {
+    "verified": false,
+    "official_match_number": null,
+    "line": null,
+    "prediction": "无法核验",
+    "reason": "未找到中国竞彩网官方受注场次编号及让球数；第三方亚洲盘不替代官方竞彩盘口。"
+  },
+  "market_snapshot": {
+    "source": "BettingView multi-bookmaker monitor",
+    "source_url": "https://bettingview.com/en/es/odds/soccer/international-clubs/uefa-champions-league-women-696/hacken-gothenburg-vs-chelsea-fc/1000069674371838/full-time-result",
+    "one_x_two_asof_utc": "2026-11-10T06:50:00Z",
+    "one_x_two_asof_beijing": "2026-11-10T14:50:00+08:00",
+    "one_x_two_current_ranges": {
+      "home": [
+        9.5,
+        13
+      ],
+      "draw": [
+        5.75,
+        7.75
+      ],
+      "away": [
+        1.14,
+        1.23
+      ]
+    },
+    "historical_snapshots": [
+      {
+        "asof_utc": "2026-11-07T14:33:00Z",
+        "best_prices": {
+          "home": 14,
+          "draw": 7,
+          "away": 1.14
+        }
+      },
+      {
+        "asof_utc": "2026-11-09T19:45:00Z",
+        "best_prices": {
+          "home": 11.09,
+          "draw": 7.5,
+          "away": 1.24
+        }
+      }
+    ],
+    "totals": {
+      "line": 3.25,
+      "asof_utc": "2026-11-10T07:18:00Z",
+      "over_price_range": [
+        1.86,
+        1.9
+      ],
+      "under_price_range": [
+        1.8,
+        1.85
+      ],
+      "direction": "latest prices close; earlier under shortening has partially reversed"
+    },
+    "movement_note": "Häcken's best price shortened materially in earlier snapshots while Chelsea remains a strong favourite. Different-book best prices are not a same-book time series; do not interpret this as confirmed money flow.",
+    "money_flow": "No verified handle, matched volume, or public money-flow series found."
+  },
+  "recent_form_last_three": {
+    "home": [
+      {
+        "date": "2026-10-29",
+        "opponent": "Paris FC Women",
+        "score": "1-1",
+        "result": "D"
+      },
+      {
+        "date": "2026-09-30",
+        "opponent": "Juventus Women",
+        "score": "0-3",
+        "result": "L"
+      },
+      {
+        "date": "2026-09-22",
+        "opponent": "Inter Women",
+        "score": "0-1",
+        "result": "L"
+      }
+    ],
+    "away": [
+      {
+        "date": "2026-11-07",
+        "opponent": "Everton Women",
+        "score": "1-1",
+        "result": "D"
+      },
+      {
+        "date": "2026-11-01",
+        "opponent": "Charlton Athletic Women",
+        "score": "6-0",
+        "result": "W"
+      },
+      {
+        "date": "2026-10-28",
+        "opponent": "Roma Women",
+        "score": "2-0",
+        "result": "W"
+      }
+    ],
+    "source_urls": [
+      "https://www.skysports.com/football/bk-hacken-women-vs-chelsea-women/578259",
+      "https://www.chelseafc.com/en/news/article/chelsea-women-travelling-squad-confirmed-for-hacken"
+    ]
+  },
+  "lineup_and_availability": {
+    "starting_xi": "not yet released at capture time",
+    "chelsea_official_travelling_squad": "23-player travelling squad confirmed",
+    "chelsea_confirmed_absences": [
+      "Lauren James",
+      "Naomi Girma"
+    ],
+    "chelsea_returning_player": "Erin Cuthbert returned to the European travelling squad after recovery",
+    "chelsea_other": "Mayra Ramírez is not named in the official 23-player travelling squad; no absence reason inferred.",
+    "hacken_availability": "A third-party preview lists Lisa Löwing and Helena Sampaio injured and Elin Rubensson unavailable/fitness-limited. Anna Anvegård fitness doubt appears in secondary reporting only. No current official club confirmation of these statuses found.",
+    "source_urls": [
+      "https://www.chelseafc.com/en/news/article/chelsea-women-travelling-squad-confirmed-for-hacken",
+      "https://www.uefa.com/womenschampionsleague/match/2050558--hacken-vs-chelsea/lineups/",
+      "https://www.thestatszone.com/hacken-vs-chelsea-preview-team-news-prediction-2026-27-uefa-womens-champions-league-league-phase-237289",
+      "https://tipstop.co/es/match/football/6148607/bk-haecken-ff-vs-chelsea-fc-women"
+    ]
+  },
+  "tactical_read": {
+    "home": "Likely to use a compact mid/low block and counter; predicted 3-4-3 shape is analyst estimate, not confirmed.",
+    "away": "Likely 3-4-3 with high pressing, wing-back width and vertical attacks. Rotation is possible with a high-priority WSL match against Manchester City four days later.",
+    "status": "analyst reference only; not official formation",
+    "source_urls": [
+      "https://www.thestatszone.com/hacken-vs-chelsea-preview-team-news-prediction-2026-27-uefa-womens-champions-league-league-phase-237289",
+      "https://tips.gg/article/hacken-w-vs-chelsea-w-10-11-2026/"
+    ]
+  },
+  "referee": {
+    "name": "Fabienne Michel",
+    "source_url": "https://www.uefa.com/womenschampionsleague/match/2050558--hacken-vs-chelsea/matchinfo/",
+    "source_quality": "UEFA official"
+  },
+  "weather": {
+    "venue": "Hisingen Arena, Gothenburg",
+    "forecast_at_local": "2026-11-10T08:22:00+01:00",
+    "kickoff_temperature_c_range": [
+      6,
+      7
+    ],
+    "condition": "mostly cloudy with showers possible",
+    "precipitation_chance_evening_pct_range": [
+      34,
+      52
+    ],
+    "source": "weather_live_source"
+  },
+  "schedule_density_and_next_opponent": {
+    "home_next": "BK Häcken Women vs Piteå, 2026-11-15 14:00 local",
+    "away_next": "Chelsea Women vs Manchester City Women, 2026-11-14 13:30 UK time",
+    "rest_days_to_next_match": {
+      "home": 5,
+      "away": 4
+    },
+    "importance": "Chelsea's next match is a high-importance domestic clash against WSL leaders Manchester City; rotation risk is elevated but not confirmed.",
+    "source_urls": [
+      "https://bkhacken.se/lag/dam/matcher",
+      "https://www.chelseafc.com/en/news/article/chelsea-women-travelling-squad-confirmed-for-hacken"
+    ]
+  },
+  "pre_match_xg": {
+    "home": null,
+    "away": null,
+    "total": null,
+    "type": null,
+    "reason": "No free, traceable, match-specific pre-kickoff xG estimate with source and timestamp was verified. No post-match xG was backfilled."
+  },
+  "model": {
+    "model_version": "RESEARCH-MARKET-FORM-POISSON-REF-v1.0",
+    "production_model": "V5.1_read_only_not_run",
+    "method": "Exploratory independent Poisson reference using last-three match scoring/conceding context, home/away strength, squad availability and the 3.25 total-goals market as a calibration check. No xG input; odds are not the sole winner selector. First-half/second-half goal split uses 45%/55%.",
+    "goal_rate_model_lambda": {
+      "home": 0.65,
+      "away": 2.15,
+      "total": 2.8
+    },
+    "probabilities_90m_pct": {
+      "home_win": 9.9,
+      "draw": 18.1,
+      "away_win": 72
+    },
+    "predicted_90m_result": "负",
+    "top_scores": [
+      {
+        "score": "0-2",
+        "probability_pct": 14.05
+      },
+      {
+        "score": "0-1",
+        "probability_pct": 13.07
+      }
+    ],
+    "goal_probabilities_pct": {
+      "over_2_5": 53.1,
+      "both_teams_to_score": 42.2
+    },
+    "predicted_half_full": "负负",
+    "half_full_probability_pct": 48.2,
+    "confidence_0_to_10": 7.1,
+    "data_completeness_pct": 72
+  },
+  "strategy_id": "S15-20261110-MARKETFORM-R1-02",
+  "risk_flags": [
+    "Chelsea have a high-importance WSL match against Manchester City four days later; rotation risk.",
+    "Lauren James and Naomi Girma are confirmed absent from the travelling squad.",
+    "Häcken market prices shortened toward the home side in earlier snapshots, though Chelsea remain a strong favourite.",
+    "Häcken injury reports are partly secondary and not fully confirmed by the club.",
+    "Official starting lineups not yet released.",
+    "No verified pre-match xG input.",
+    "No official Chinese JZ handicap line; handicap outcome cannot be calculated.",
+    "Cold weather and possible showers."
+  ],
+  "data_sources": [
+    {
+      "name": "UEFA fixture and match info",
+      "url": "https://www.uefa.com/womenschampionsleague/match/2050558--hacken-vs-chelsea/"
+    },
+    {
+      "name": "Chelsea official travelling squad",
+      "url": "https://www.chelseafc.com/en/news/article/chelsea-women-travelling-squad-confirmed-for-hacken"
+    },
+    {
+      "name": "BettingView odds monitor",
+      "url": "https://bettingview.com/en/es/odds/soccer/international-clubs/uefa-champions-league-women-696/hacken-gothenburg-vs-chelsea-fc/1000069674371838/full-time-result"
+    },
+    {
+      "name": "Sky Sports recent form",
+      "url": "https://www.skysports.com/football/bk-hacken-women-vs-chelsea-women/578259"
+    }
+  ],
+  "guardrails": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "official_handicap_mapping_performed": false,
+    "second_score_used_for_handicap": false,
+    "post_match_data_used": false
+  },
+  "immutable_snapshot_status": "append_only_research_prediction_not_V5_1_production"
+}
