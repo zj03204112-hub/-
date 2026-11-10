@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-10-1000-run11",
+  "captured_at_beijing": "2026-11-10T10:29:52+08:00",
+  "correction": "The 10:02 fixture snapshot omitted Plymouth Parkway v Berkhamsted. The FA official schedule and report confirm the fixture at 19:30 GMT on 2026-11-09, which is 03:30 Beijing time on 2026-11-10.",
+  "schedule_correction": "fixtures/2026-11-10-11/schedule-correction-beijing-2026-11-10-1030-r1.json",
+  "result_record": "results/2026-11-10/domestic-cup-early-result-r1.json",
+  "corrected_schedule_counts": {
+    "total_records": 43,
+    "beijing_2026_11_10": 5,
+    "beijing_2026_11_11": 38
+  },
+  "current_day_match": {
+    "match_id": "fa-cup:2026-11-10:plymouth-parkway-berkhamsted",
+    "score_90m": "1-1",
+    "score_after_extra_time": "2-1",
+    "status": "confirmed_final_after_extra_time",
+    "prediction_snapshot": "none",
+    "handicap": "无法核验"
+  },
+  "xg_correction": "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_addendum_cumulative_asof_2026-11-10_1030-r1.json",
+  "corrected_weekly_xg": {
+    "matches": 23,
+    "matches_with_any_xg": 21,
+    "matches_missing_xg": 2,
+    "coverage_pct": 91.3043,
+    "measured": 0,
+    "own_model_estimates": 0,
+    "post_match_supplier_estimates_only": true
+  },
+  "missing_xg_reason": "No free traceable post-match match-level xG located. StatsBet 1.12-0.78 and SoccerGhost projected values are pre-match supplier model estimates, not post-match xG; not inserted into the weekly post-match xG layer.",
+  "previous_day_review_2026_11_09_unchanged": true,
+  "immutable_prediction_snapshot_unchanged": true,
+  "v5_1_modified": false,
+  "frozen_validation_sample_modified": false,
+  "sqlite": {
+    "active_connection": false,
+    "updated": false
+  },
+  "correction_policy": "Append-only. Do not rewrite the 10:02 fixture snapshot, original result ledger, original xG snapshots, or immutable predictions."
+}
