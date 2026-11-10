@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "verified_at_beijing": "2026-11-10T10:03:10+08:00",
+  "branch": "automation/daily-football-2026-11-10-1000-run11",
+  "files": [
+    {
+      "path": "reviews/2026-11-09/previous-day-review-2026-11-09-r1.json",
+      "sha": "da845b6a66f3211e23145d1aca3b6f5100fd39d2",
+      "content_matches": true
+    },
+    {
+      "path": "results/2026-11-09/domestic-league-core.json",
+      "sha": "e1c64703471d76490216b1ce841d8219df64705a",
+      "content_matches": true
+    },
+    {
+      "path": "results/2026-11-09/other-domestic-leagues.json",
+      "sha": "15ec569fc5506879fc49e4c076937ffd8ba038f5",
+      "content_matches": true
+    },
+    {
+      "path": "results/2026-11-09/domestic-cup.json",
+      "sha": "3c77e3bb07bcaba24248fe5ea9bc86204e0e7190",
+      "content_matches": true
+    },
+    {
+      "path": "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000.json",
+      "sha": "4504f27254c874c7ae9f04aa3f0934efd57182e2",
+      "content_matches": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/match_xg_cumulative_asof_2026-11-10_1000.csv",
+      "sha": "c148d7b2b53082389990c88c4c5ddff86b69605a",
+      "content_matches": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/team_weekly_xg_cumulative_asof_2026-11-10_1000.csv",
+      "sha": "d2f30803114c59500991187df9915befb2b6c8df",
+      "content_matches": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_cumulative_asof_2026-11-10_1000.json",
+      "sha": "14e6e4e12b1b809155a8cbf11177c7d671d773e6",
+      "content_matches": true
+    }
+  ],
+  "checks": {
+    "all_primary_files_read_back_exactly": true,
+    "review_matches": 22,
+    "prediction_matches": 17,
+    "wdl_hits": 8,
+    "first_score_hits": 2,
+    "second_score_hits": 2,
+    "half_full_hits": 5,
+    "xg_rows": 100,
+    "team_summary_rows": 100,
+    "xgd_arithmetic_errors": 0,
+    "duplicate_match_team_provider_keys": 42
+  },
+  "database": {
+    "sqlite_file_in_repo": true,
+    "active_sqlite_connection": false,
+    "updated": false
+  },
+  "notes": [
+    "The repository contains a SQLite file, but this run did not establish an active SQLite connection; no database mutation is claimed.",
+    "Only primary files are listed in the exact read-back check; manifest and verification are separately written and then checked below."
+  ]
+}
