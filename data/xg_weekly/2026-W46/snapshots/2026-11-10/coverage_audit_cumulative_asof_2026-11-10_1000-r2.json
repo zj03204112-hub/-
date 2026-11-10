@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "supersedes": "coverage_audit_cumulative_asof_2026-11-10_1000.json",
+  "correction_reason": "r1 team_id generation used Chinese names through an ASCII-only slugifier, creating empty team slugs and duplicate team IDs. This r2 snapshot maps every team name to a stable explicit ASCII slug. r1 files remain untouched for audit history.",
+  "captured_at_beijing": "2026-11-10T10:04:00+08:00",
+  "iso_week": "2026-W46",
+  "match_count": 22,
+  "matches_with_any_xg": 21,
+  "matches_missing_xg": 1,
+  "coverage": 0.9545454545454546,
+  "match_xg_rows": 100,
+  "team_week_summary_rows": 100,
+  "unique_team_ids": 44,
+  "duplicate_match_team_provider_keys": 0,
+  "xgd_arithmetic_errors": 0,
+  "summary_recomputed_from_match_detail": true,
+  "providers_kept_separate": true,
+  "measured_values": 0,
+  "own_model_estimates": 0,
+  "all_available_values_supplier_model_estimates": true,
+  "post_match_xg_used_as_prematch_input": false,
+  "prior_immutable_snapshots_modified": false,
+  "canonical_database_mapping_pending": true,
+  "missing_match_ids": [
+    "fa-cup:2026-11-09:oldham-athletic-sheffield-wednesday"
+  ],
+  "missing_reason": "Oldham-Sheffield Wednesday: no free traceable post-match match-level xG source found.",
+  "team_id_policy": "team:<explicit-stable-ascii-slug>; awaiting canonical database IDs when SQLite connection is restored."
+}
