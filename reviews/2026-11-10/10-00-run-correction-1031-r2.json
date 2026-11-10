@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-10-1000-run11",
+  "captured_at_beijing": "2026-11-10T10:29:52+08:00",
+  "current_day_result": "Junior 2-0 Cúcuta Deportivo; kickoff 00:00 UTC / 08:00 Beijing on 2026-11-10; HT 1-0; confirmed final by DIMAYOR source snapshot and corroborating local report.",
+  "result_record": "results/2026-11-10/other-domestic-leagues-early-result-2026-11-10-1031-r1.json",
+  "current_day_matches_not_in_previous_day_review": [
+    {
+      "match_id": "fa-cup:2026-11-10:plymouth-parkway-berkhamsted",
+      "score_90m": "1-1",
+      "after_extra_time": "2-1",
+      "prediction_snapshot": "none"
+    },
+    {
+      "match_id": "colombia-primera-a:2026-11-10:junior-c-cuta-deportivo",
+      "score_90m": "2-0",
+      "prediction_snapshot": "none"
+    }
+  ],
+  "weekly_xg_correction": "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_addendum_cumulative_asof_2026-11-10_1031-r2.json",
+  "corrected_weekly_xg": {
+    "matches": 24,
+    "matches_with_any_xg": 21,
+    "matches_missing_xg": 3,
+    "coverage_pct": 87.5,
+    "measured": 0,
+    "own_model_estimates": 0
+  },
+  "missing_xg_reason": "No free traceable full-time post-match match-level xG located. FullTimeStats 1.93-0.99 is a pre-match model estimate and SureBetExpert 0.55-0.44 is a partial live estimate; neither is accepted as post-match xG.",
+  "previous_day_review_2026_11_09_unchanged": true,
+  "immutable_prediction_snapshot_unchanged": true,
+  "v5_1_modified": false,
+  "frozen_validation_sample_modified": false,
+  "sqlite": {
+    "active_connection": false,
+    "updated": false
+  },
+  "correction_policy": "Append-only; earlier schedule, result, prediction, and weekly xG snapshots are not overwritten."
+}
