@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.4",
+  "run_date_beijing": "2026-11-10",
+  "run_type": "10:00",
+  "branch": "automation/daily-football-2026-11-10-1000-run11",
+  "created_at_beijing": "2026-11-10T10:11:00+08:00",
+  "active_files": [
+    {
+      "path": "reviews/2026-11-09/previous-day-review-2026-11-09-r1.json",
+      "blob_sha": "da845b6a66f3211e23145d1aca3b6f5100fd39d2",
+      "bytes": 61209,
+      "readback": true
+    },
+    {
+      "path": "results/2026-11-09/domestic-league-core.json",
+      "blob_sha": "e1c64703471d76490216b1ce841d8219df64705a",
+      "bytes": 13291,
+      "readback": true
+    },
+    {
+      "path": "results/2026-11-09/other-domestic-leagues.json",
+      "blob_sha": "15ec569fc5506879fc49e4c076937ffd8ba038f5",
+      "bytes": 7717,
+      "readback": true
+    },
+    {
+      "path": "results/2026-11-09/domestic-cup.json",
+      "blob_sha": "3c77e3bb07bcaba24248fe5ea9bc86204e0e7190",
+      "bytes": 907,
+      "readback": true
+    },
+    {
+      "path": "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000-r4.json",
+      "blob_sha": "1a1a85ba72345ab8d4c630ce3899f0e34a33c452",
+      "bytes": 50662,
+      "readback": true
+    },
+    {
+      "path": "markets/2026-11-09/market-source-references-1000.json",
+      "blob_sha": "1509116dc535a20fdcec6d2c5f901bd7a4658de7",
+      "bytes": 2878,
+      "readback": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/match_xg_cumulative_asof_2026-11-10_1000-r2.csv",
+      "blob_sha": "15b45cd62127c85ffe30d44eb38cf8b05ffe4d9d",
+      "bytes": 33040,
+      "readback": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/team_weekly_xg_cumulative_asof_2026-11-10_1000-r2.csv",
+      "blob_sha": "3f4d6ed7fd1e21329bcc000214d11f320175287f",
+      "bytes": 14062,
+      "readback": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_cumulative_asof_2026-11-10_1000-r2.json",
+      "blob_sha": "34014fbc74820d4afd191412637e6678c0b21e47",
+      "bytes": 1371,
+      "readback": true
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/team-index-asof-2026-11-10-1000.json",
+      "blob_sha": "854d653d2c92324cc772873a9d4a554d81fe576c",
+      "bytes": 8690,
+      "readback": true
+    }
+  ],
+  "team_directory": {
+    "count": 44,
+    "index_path": "data/xg_weekly/2026-W46/team-index-asof-2026-11-10-1000.json",
+    "team_index_blob_sha": "854d653d2c92324cc772873a9d4a554d81fe576c",
+    "team_tree_sha": "8a9c131c4d51293fa5f2d5a3e3964b1da605c728",
+    "team_commit_sha": "d87e1e3908d3ab39fba277b5dd4209600087b7fe",
+    "all_44_directories_listed": true,
+    "sample_team_file_exact_readback": true
+  },
+  "market_timestamps": [
+    {
+      "path": "markets/2026-11-08-09/market-snapshot-beijing-2026-11-08-1500-r2.json",
+      "blob_sha": "f8cc22c24ad4aa758e44386b901586343fe609b8",
+      "captured_at": "2026-11-08T15:04:00+08:00",
+      "record_count": 32,
+      "official_jc_handicap_verified_count": 0
+    },
+    {
+      "path": "markets/2026-11-08-09/market-refresh-beijing-2026-11-08-1531-peilv-r1.json",
+      "blob_sha": "0110e5aa7aa69e9f56de239850122c3a0a46e640",
+      "captured_at": "2026-11-08T15:31:23+08:00",
+      "record_count": 27,
+      "official_jc_handicap_verified_count": 0
+    }
+  ],
+  "superseded_but_retained": [
+    "data/xg_weekly/2026-W46/snapshots/2026-11-10/match_xg_cumulative_asof_2026-11-10_1000.csv",
+    "data/xg_weekly/2026-W46/snapshots/2026-11-10/team_weekly_xg_cumulative_asof_2026-11-10_1000.csv",
+    "data/xg_weekly/2026-W46/snapshots/2026-11-10/coverage_audit_cumulative_asof_2026-11-10_1000.json",
+    "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000.json",
+    "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000-r2.json",
+    "fixtures/2026-11-10-11/schedule-beijing-2026-11-10-11-1000-r3.json"
+  ],
+  "summary": {
+    "reviewed_finished_matches": 22,
+    "immutable_prediction_matches": 17,
+    "no_snapshot_matches": 5,
+    "wdl_hits": 8,
+    "wdl_accuracy": 0.47058823529411764,
+    "first_score_hits": 2,
+    "second_score_hits": 2,
+    "half_full_hits": 5,
+    "actual_draws": 6,
+    "draw_recall": 0,
+    "handicap_unverifiable": 17,
+    "xg_matches_with_any_provider": 21,
+    "xg_matches_missing": 1,
+    "xg_match_rows": 100,
+    "team_week_rows": 100,
+    "unique_team_ids": 44,
+    "xg_duplicate_keys": 0,
+    "xgd_arithmetic_errors": 0,
+    "schedule_records": 42,
+    "nov10_records": 4,
+    "nov11_records": 38,
+    "schedule_by_category": {
+      "domestic_league_core": 0,
+      "other_domestic_league": 2,
+      "domestic_cup": 31,
+      "continental_club": 6,
+      "national_team_other": 3
+    },
+    "efl_trophy_official": 12,
+    "efl_trophy_secondary": 7,
+    "schedule_time_unverified": 12,
+    "market_snapshots": 2,
+    "market_quote_records": 59,
+    "sqlite_file_in_repository": true,
+    "active_sqlite_connection": false,
+    "sqlite_updated": false,
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false
+  }
+}
