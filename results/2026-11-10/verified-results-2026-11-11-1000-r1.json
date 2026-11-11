@@ -1,0 +1,157 @@
+{
+  "schema_version": "football-result-review/v1",
+  "batch_id": "2026-11-11-1000-r1",
+  "collected_at_utc": "2026-11-11T01:57:43Z",
+  "timezone_policy": "All review scope dates are Beijing calendar dates; kickoff_utc and kickoff_beijing are stored separately.",
+  "review_date_beijing": "2026-11-10",
+  "matches": [
+    {
+      "provisional_fixture_key": "fa-cup-2026-11-10-plymouth-parkway-berkhamsted",
+      "competition": "Emirates FA Cup",
+      "category": "domestic_cup",
+      "kickoff_utc": "2026-11-09T19:30:00Z",
+      "kickoff_beijing": "2026-11-10T03:30:00+08:00",
+      "home": "Plymouth Parkway",
+      "away": "Berkhamsted",
+      "halftime_score": "0-0",
+      "score_90": {
+        "home": 1,
+        "away": 1
+      },
+      "score_after_extra_time": {
+        "home": 2,
+        "away": 1
+      },
+      "result_status": "confirmed_finished",
+      "sources": [
+        "https://www.thefa.com/news/2026/nov/09/emirates-fa-cup-first-round-plymouth-parkway-berkhamsted-20261109",
+        "https://www.ppfc.co.uk/the-report-parkway-vs-berkhamsted/",
+        "https://www.skysports.com/football/plymouth-parkway-vs-berkhamsted/9203346245192773232",
+        "https://scoremondo.com/en/match/plymouth-parkway-fc-berkhamsted-fc-31417222"
+      ],
+      "result_note": "90 minutes ended 1-1; Plymouth Parkway won 2-1 after extra time. Do not substitute the AET score for the 90-minute result.",
+      "prediction_snapshot_status": "not_found_in_verified_repository_branch",
+      "official_sporttery_match_number": null,
+      "official_jingcai_handicap": null,
+      "handicap_review_status": "unverifiable_missing_official_jingcai_line",
+      "prediction_hit_metrics_status": "not_computable_missing_immutable_pre_match_snapshot"
+    },
+    {
+      "provisional_fixture_key": "colombia-primera-a-2026-11-10-junior-cucuta",
+      "competition": "Colombia Primera A / Liga BetPlay",
+      "category": "domestic_league",
+      "kickoff_utc": "2026-11-10T00:00:00Z",
+      "kickoff_beijing": "2026-11-10T08:00:00+08:00",
+      "home": "Junior de Barranquilla",
+      "away": "Cúcuta Deportivo",
+      "halftime_score": "1-0",
+      "score_90": {
+        "home": 2,
+        "away": 0
+      },
+      "result_status": "confirmed_finished",
+      "sources": [
+        "https://www.scorestv.com/es/partido/atletico-junior-barranquilla-cucuta-deportivo-24701",
+        "https://golmetro.com/match/junior-vs-cucuta/1549860",
+        "https://promatch24.com/match/2799880/"
+      ],
+      "result_note": "Two independent score pages agree on 2-0; no official DIMAYOR match report was located in this run.",
+      "prediction_snapshot_status": "not_found_in_verified_repository_branch",
+      "official_sporttery_match_number": null,
+      "official_jingcai_handicap": null,
+      "handicap_review_status": "unverifiable_missing_official_jingcai_line",
+      "prediction_hit_metrics_status": "not_computable_missing_immutable_pre_match_snapshot"
+    },
+    {
+      "provisional_fixture_key": "international-u23-friendly-2026-11-10-qatar-singapore",
+      "competition": "International U23 Friendly",
+      "category": "national_team_other",
+      "kickoff_utc": "2026-11-10T08:00:00Z",
+      "kickoff_beijing": "2026-11-10T16:00:00+08:00",
+      "home": "Qatar U23",
+      "away": "Singapore U23",
+      "halftime_score": "0-0",
+      "score_90": {
+        "home": 0,
+        "away": 0
+      },
+      "result_status": "confirmed_finished",
+      "sources": [
+        "https://www.scorestv.com/es/partido/qatar-u23-singapore-u23-2767143",
+        "https://www.futbol24.com/international/International/Friendly-U23/2026/results",
+        "https://www.plaibook.live/intl/teams/qatar-u23"
+      ],
+      "result_note": "ScoresTV records the match as finished 0-0; the page also exposes an extra-time segment, but no shootout result is used here.",
+      "prediction_snapshot_status": "not_found_in_verified_repository_branch",
+      "official_sporttery_match_number": null,
+      "official_jingcai_handicap": null,
+      "handicap_review_status": "unverifiable_missing_official_jingcai_line",
+      "prediction_hit_metrics_status": "not_computable_missing_immutable_pre_match_snapshot"
+    },
+    {
+      "provisional_fixture_key": "gia-lai-vtv-u23-2026-11-10-vietnam-thailand",
+      "competition": "Gia Lai U-23 VTV Cup 2026",
+      "category": "national_team_other",
+      "kickoff_utc": "2026-11-10T12:00:00Z",
+      "kickoff_beijing": "2026-11-10T20:00:00+08:00",
+      "home": "Vietnam U23",
+      "away": "Thailand U23",
+      "halftime_score": "2-0",
+      "score_90": {
+        "home": 3,
+        "away": 0
+      },
+      "result_status": "confirmed_finished",
+      "sources": [
+        "https://en.vff.org.vn/vietnam-u23-to-face-arch-rivals-thailand-at-gia-lai-vtv-cup-2026-international-u23-football-tournament/",
+        "https://www.scorestv.com/es/partido/vietnam-u23-thailand-u23-2767144",
+        "https://www.kovascore.com/football/match/u23-friendly-international/vietnam-u23-thailand-u23-4892158"
+      ],
+      "result_note": "VFF confirms the tournament and fixture; independent match pages confirm the 3-0 result and 2-0 halftime score.",
+      "prediction_snapshot_status": "not_found_in_verified_repository_branch",
+      "official_sporttery_match_number": null,
+      "official_jingcai_handicap": null,
+      "handicap_review_status": "unverifiable_missing_official_jingcai_line",
+      "prediction_hit_metrics_status": "not_computable_missing_immutable_pre_match_snapshot"
+    },
+    {
+      "provisional_fixture_key": "other-friendly-2026-11-10-east-coast-bays-tonga",
+      "competition": "International Friendly (scope candidate)",
+      "category": "other",
+      "kickoff_utc": "2026-11-10T06:00:00Z",
+      "kickoff_beijing": "2026-11-10T14:00:00+08:00",
+      "home": "East Coast Bays",
+      "away": "Tonga",
+      "halftime_score": "3-0",
+      "score_90": {
+        "home": 11,
+        "away": 0
+      },
+      "result_status": "confirmed_by_secondary_score_sources",
+      "sources": [
+        "https://www.scorestv.com/es/partido/east-coast-bays-tonga-2774480",
+        "https://www.sportscore.id/football/match/tonga-vs-east-coast-bays/zp5rzgh3j3n4q82/"
+      ],
+      "result_note": "Retained separately as an other-friendly candidate; it is not a core professional league/cup fixture and is excluded from the core competition denominator.",
+      "tracking_scope_status": "other_candidate_not_core_professional_scope",
+      "prediction_snapshot_status": "not_found_in_verified_repository_branch",
+      "official_sporttery_match_number": null,
+      "official_jingcai_handicap": null,
+      "handicap_review_status": "unverifiable_missing_official_jingcai_line",
+      "prediction_hit_metrics_status": "not_computable_missing_immutable_pre_match_snapshot"
+    }
+  ],
+  "aggregate": {
+    "confirmed_results_in_review_date": 5,
+    "core_tracked_competition_results": 4,
+    "other_scope_candidates": 1,
+    "immutable_pre_match_snapshots_found": 0,
+    "ninety_minute_prediction_accuracy": null,
+    "first_score_accuracy": null,
+    "second_score_accuracy": null,
+    "jingcai_handicap_accuracy": null,
+    "half_full_accuracy": null,
+    "risk_prompt_accuracy": null,
+    "reason": "No corresponding immutable pre-match prediction snapshot was found in the verified repository branch. Do not reconstruct picks or infer handicap lines."
+  }
+}
