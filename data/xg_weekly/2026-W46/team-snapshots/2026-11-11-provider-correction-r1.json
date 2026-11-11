@@ -1,0 +1,67 @@
+{
+  "schema_version": "team-week-xg-correction/v1",
+  "batch_id": "2026-11-11-1000-r1",
+  "iso_week": "2026-W46",
+  "correction_id": "team-week-provider-attribution-plymouth-berkhamsted-2026-11-11-r1",
+  "captured_at_utc": "2026-11-11T01:57:43Z",
+  "supersedes_provider_rows": [
+    {
+      "team_id": "provisional:plymouth-parkway",
+      "competition_id": "provisional:fa-cup",
+      "season": "2026-27",
+      "provider": "Dave.sport"
+    },
+    {
+      "team_id": "provisional:berkhamsted",
+      "competition_id": "provisional:fa-cup",
+      "season": "2026-27",
+      "provider": "Dave.sport"
+    }
+  ],
+  "corrected_active_rows": [
+    {
+      "team_id": "provisional:plymouth-parkway",
+      "team_id_status": "provisional_alias",
+      "competition_id": "provisional:fa-cup",
+      "season": "2026-27",
+      "iso_week": "2026-W46",
+      "provider": "Opta via FotMob",
+      "matches_total": 1,
+      "matches_with_xg": 1,
+      "xg_sum": 2.93,
+      "xga_sum": 0.83,
+      "xgd_sum": 2.1,
+      "xg_per90": null,
+      "xga_per90": null,
+      "xgd_per90": null,
+      "per90_status": "not_calculated_period_scope_not_explicit",
+      "data_type": "provider_model_estimate_postmatch",
+      "missing_reason": "May include extra-time shots; source does not define period scope."
+    },
+    {
+      "team_id": "provisional:berkhamsted",
+      "team_id_status": "provisional_alias",
+      "competition_id": "provisional:fa-cup",
+      "season": "2026-27",
+      "iso_week": "2026-W46",
+      "provider": "Opta via FotMob",
+      "matches_total": 1,
+      "matches_with_xg": 1,
+      "xg_sum": 0.83,
+      "xga_sum": 2.93,
+      "xgd_sum": -2.1,
+      "xg_per90": null,
+      "xga_per90": null,
+      "xgd_per90": null,
+      "per90_status": "not_calculated_period_scope_not_explicit",
+      "data_type": "provider_model_estimate_postmatch",
+      "missing_reason": "May include extra-time shots; source does not define period scope."
+    }
+  ],
+  "audit": {
+    "old_rows_retained_for_history": true,
+    "old_provider_attribution_active": false,
+    "active_provider_for_match": "Opta via FotMob",
+    "canonical_team_ids_resolved": false
+  }
+}
