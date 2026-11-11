@@ -1,0 +1,37 @@
+{
+  "schema_version": "xg-provider-correction/v1",
+  "batch_id": "2026-11-11-1000-r1",
+  "iso_week": "2026-W46",
+  "correction_id": "xg-provider-attribution-plymouth-berkhamsted-2026-11-11-r1",
+  "captured_at_utc": "2026-11-11T01:57:43Z",
+  "supersedes": {
+    "original_file": "data/xg_weekly/2026-W46/match-observations/2026-11-11-addendum-r1.json",
+    "original_provider": "Dave.sport",
+    "original_observation_key": "fa-cup-2026-11-10-plymouth-parkway-berkhamsted|Dave.sport",
+    "status": "superseded_attribution_not_deleted"
+  },
+  "corrected_observation": {
+    "fixture_key": "fa-cup-2026-11-10-plymouth-parkway-berkhamsted",
+    "provider": "Opta via FotMob",
+    "provider_source_url": "https://www.fotmob.com/en-GB/matches/plymouth-parkway-vs-berkhamsted/fesld1p8",
+    "provider_evidence": "FotMob match page exposes xG 2.93-0.83 and states its extensive match stats are powered by Opta.",
+    "data_type": "provider_model_estimate_postmatch",
+    "home_team": "Plymouth Parkway",
+    "away_team": "Berkhamsted",
+    "home_xg": 2.93,
+    "away_xg": 0.83,
+    "home_xga": 0.83,
+    "away_xga": 2.93,
+    "home_xgd": 2.1,
+    "away_xgd": -2.1,
+    "period_scope": "match-total scope not explicitly defined; match included extra time, so 90-minute-only scope must not be assumed",
+    "match_id": null,
+    "team_ids_status": "provisional_aliases_only",
+    "missing_reason": "Provider does not specify whether extra-time shots are included in the displayed match xG."
+  },
+  "policy": {
+    "do_not_merge_with_other_suppliers": true,
+    "do_not_use_as_same_match_pre_kickoff_input": true,
+    "per90_calculation": "not calculated because match-period scope is not explicit"
+  }
+}
