@@ -1,0 +1,45 @@
+{
+  "schema_version": "daily-run-verification/v1",
+  "batch_id": "2026-11-11-1000-r1",
+  "collected_at_utc": "2026-11-11T01:57:43Z",
+  "repository": "zj03204112-hub/-",
+  "default_branch": "main",
+  "base_commit": "d040560fe89d53405cfb7762a445d78e4bdd052b",
+  "working_branch": "automation/daily-football-2026-11-11-1000-run11",
+  "working_branch_created": true,
+  "sqlite": {
+    "repository_binary_present": true,
+    "active_connection": false,
+    "actual_sqlite_write_performed": false,
+    "canonical_team_ids_resolved": false,
+    "reason": "The GitHub connector returned no binary payload for the SQLite file, so no database connection or direct SQLite audit/write could be performed."
+  },
+  "results_review": {
+    "beijing_date": "2026-11-10",
+    "confirmed_matches": 5,
+    "immutable_snapshots_found": 0,
+    "prediction_hit_rates_computed": false,
+    "official_jingcai_handicap_lines_found": 0
+  },
+  "xg": {
+    "iso_week": "2026-W46",
+    "match_observations": 6,
+    "provider_estimates": 3,
+    "missing_match_records": 3,
+    "team_provider_rows": 12,
+    "canonical_team_ids_resolved": 0,
+    "supplier_series_merged": false,
+    "post_match_leakage_detected": false
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "model_version_changed": false
+  },
+  "caveats": [
+    "The previously referenced automation branch automation/daily-football-2026-11-10-1500-run11 and commit f1821a20d11e6f57145cca079a0ac8454cf7cbcf were not found in the repository; they were not used as immutable evidence.",
+    "The displayed prior-turn UCL women's forecasts are not used as immutable archived predictions because their alleged repository snapshots could not be read back.",
+    "No official Jingcai handicap was found for any match in the 2026-11-10 Beijing review date.",
+    "Provisional team aliases do not replace canonical SQLite team IDs."
+  ]
+}
