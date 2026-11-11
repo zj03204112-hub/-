@@ -1,0 +1,77 @@
+{
+  "schema_version": "daily-review/v1",
+  "batch_id": "2026-11-11-1000-r1",
+  "review_date_beijing": "2026-11-10",
+  "generated_at_utc": "2026-11-11T01:57:43Z",
+  "scope": {
+    "core_leagues": [
+      "Premier League",
+      "La Liga",
+      "Bundesliga",
+      "Serie A",
+      "Ligue 1",
+      "K League 1",
+      "J1 League"
+    ],
+    "other_categories": [
+      "domestic_league",
+      "domestic_cup",
+      "continental_club",
+      "national_team_other",
+      "other"
+    ],
+    "nations_league": "separate category; no confirmed UEFA Nations League fixture fell within 2026-11-10 Beijing date in this review."
+  },
+  "result_count": 5,
+  "snapshot_comparison": {
+    "immutable_snapshots_found": 0,
+    "matches_without_snapshot": 5,
+    "metrics": {
+      "ninety_minute_1x2": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      },
+      "first_score": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      },
+      "second_score": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      },
+      "official_jingcai_handicap": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      },
+      "half_full": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      },
+      "risk_prompts": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      }
+    },
+    "missing_reason": "The accessible GitHub default branch contains no dated 2026-11-10 prediction files. The previously cited 2026-11-10 15:00 automation branch/commit could not be found or read back from the repository. SQLite binary content could not be read through the available GitHub file connector, and no active SQLite connection was established.",
+    "no_reconstruction": true
+  },
+  "handicap_policy": {
+    "official_jingcai_lines_found": 0,
+    "third_party_asian_handicaps_substituted": 0,
+    "mapping_executed": false,
+    "rule": "Only map the first predicted score against a verified official Jingcai handicap. Never use second score or infer a line."
+  },
+  "error_cause_policy": "No prediction-side error cause can be assigned without the original immutable prediction. Result-side facts are recorded separately."
+}
