@@ -1,0 +1,105 @@
+{
+  "schema_version": "daily-run-verification/v6",
+  "batch_id": "2026-11-11-1000-r6",
+  "collected_at_utc": "2026-11-11T02:05:30Z",
+  "repository": "zj03204112-hub/-",
+  "working_branch": "automation/daily-football-2026-11-11-1000-run11",
+  "base_commit": "d040560fe89d53405cfb7762a445d78e4bdd052b",
+  "archive_files_before_this_verification": [
+    "results/2026-11-10/verified-results-2026-11-11-1000-r1.json",
+    "reviews/2026-11-10/previous-beijing-day-review-2026-11-10-r1.json",
+    "fixtures/2026-11-11-12/schedule-beijing-2026-11-11-12-1000-r1.json",
+    "data/xg_weekly/2026-W46/match-observations/2026-11-11-addendum-r1.json",
+    "data/xg_weekly/2026-W46/team-snapshots/2026-11-11-addendum-r1.json",
+    "results/2026-11-11/early-continental-results-2026-11-11-1000-r1.json",
+    "fixtures/2026-11-11-12/uefa-womens-europa-cup-timezone-pending-2026-11-11-r1.json",
+    "results/2026-11-11/early-domestic-cup-results-addendum-2026-11-11-1000-r1.json",
+    "data/xg_weekly/2026-W46/corrections/2026-11-11-plymouth-berkhamsted-provider-correction-r1.json",
+    "data/xg_weekly/2026-W46/team-snapshots/2026-11-11-provider-correction-r1.json",
+    "fixtures/2026-11-11-12/source-url-correction-sportpremi-2026-11-11-r1.json",
+    "reviews/2026-11-11/10-00-run-final-verification-r2.json",
+    "results/2026-11-10/national-team-women-results-addendum-2026-11-11-1000-r2.json",
+    "reviews/2026-11-10/previous-beijing-day-review-correction-r2.json",
+    "data/xg_weekly/2026-W46/match-observations/2026-11-11-missing-women-friendly-addendum-r2.json",
+    "data/xg_weekly/2026-W46/team-snapshots/2026-11-11-missing-women-friendly-addendum-r2.json",
+    "reviews/2026-11-11/10-00-run-final-verification-r3.json",
+    "fixtures/2026-11-11-12/once-caldas-live-status-2026-11-11-1000-r2.json",
+    "reviews/2026-11-11/10-00-run-final-verification-r4.json",
+    "reviews/2026-11-11/10-00-run-final-verification-r5.json",
+    "fixtures/2026-11-11-12/uwcl-benfica-austria-kickoff-tbc-correction-2026-11-11-r1.json"
+  ],
+  "expected_total_archive_files_including_this_file": 22,
+  "previous_beijing_date_review": {
+    "date": "2026-11-10",
+    "confirmed_results": 7,
+    "core_tracked_results": 6,
+    "other_friendly_candidate": 1,
+    "immutable_snapshots_found": 0,
+    "official_jingcai_lines_found": 0,
+    "hit_rates_computed": false
+  },
+  "current_beijing_day_results": {
+    "date": "2026-11-11",
+    "completed_results": 29,
+    "breakdown": {
+      "efl_trophy": 17,
+      "copa_del_rey": 6,
+      "uefa_womens_champions_league": 5,
+      "uefa_womens_europa_cup": 1
+    },
+    "live_fixtures": [
+      {
+        "fixture": "Once Caldas vs Atlético Nacional",
+        "minute": 34,
+        "score": "0-0"
+      }
+    ]
+  },
+  "schedule": {
+    "primary_records": 32,
+    "confirmed_upcoming_2026_11_12_beijing": 8,
+    "kickoff_time_pending_records": 8,
+    "secondary_schedule_candidate": 1,
+    "live_status_updates": 1,
+    "core_league_fixtures_found": 0,
+    "correction": "UEFA official schedule marks Benfica Women vs Austria Wien Women as TBC; its prior secondary 04:00 Beijing kickoff is not confirmed."
+  },
+  "xg": {
+    "iso_week": "2026-W46",
+    "reviewed_matches": 7,
+    "matches_with_provider_xg": 2,
+    "matches_missing_xg": 5,
+    "active_provider_observation_rows": 8,
+    "active_provider_estimate_rows": 3,
+    "missing_observation_rows": 5,
+    "active_team_provider_rows": 16,
+    "history_rows_including_superseded_attribution": 18,
+    "measured_xg_records": 0,
+    "active_providers": [
+      "Opta via FotMob",
+      "Golmetro",
+      "Sportmeridian"
+    ],
+    "canonical_team_ids_resolved": 0,
+    "provider_series_merged": false,
+    "post_match_data_used_as_same_match_pre_kickoff_input": false
+  },
+  "sqlite": {
+    "repository_binary_present": true,
+    "active_connection": false,
+    "actual_sqlite_write_performed": false
+  },
+  "repository_integrity": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "all_prior_files_read_back": true,
+    "benfica_kickoff_correction_read_back": true
+  },
+  "limitations": [
+    "No immutable prediction snapshot or official Jingcai handicap line was found for the seven matches in the 2026-11-10 Beijing review.",
+    "Canonical SQLite team and competition IDs remain unresolved; provisional aliases are marked as such.",
+    "Seven UEFA Women's Europa Cup fixture kickoff times remain unconverted because the source timezone is not verified.",
+    "Benfica Women vs Austria Wien Women kickoff is officially TBC; it is not counted among the eight confirmed upcoming kickoffs.",
+    "Long-tail non-core tracked competition completeness cannot be guaranteed without the canonical tracking database."
+  ]
+}
