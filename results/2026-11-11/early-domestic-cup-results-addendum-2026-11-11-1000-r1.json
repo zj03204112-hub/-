@@ -1,0 +1,79 @@
+{
+  "schema_version": "early-current-beijing-day-results-addendum/v1",
+  "batch_id": "2026-11-11-1000-r1",
+  "beijing_date": "2026-11-11",
+  "collected_at_utc": "2026-11-11T01:57:43Z",
+  "note": "These Copa del Rey matches were played on 2026-11-10 local Spanish date but their kickoffs convert to 2026-11-11 Beijing. They are not part of the 2026-11-10 Beijing previous-day review.",
+  "timezone_conversion": "SportPremi lists kickoff in WAT (UTC+1); UTC is WAT minus one hour, Beijing is UTC plus eight hours.",
+  "matches": [
+    {
+      "fixture_key": "copa-del-rey-2026-11-11-beijing-anaitasuna-alaves",
+      "home": "Anaitasuna",
+      "away": "Deportivo Alavés",
+      "kickoff_source": "2026-11-10 19:00 WAT",
+      "kickoff_utc": "2026-11-10T18:00:00Z",
+      "kickoff_beijing": "2026-11-11T02:00:00+08:00",
+      "score_90": "1-6",
+      "status": "confirmed_finished",
+      "source": "https://sportpremi.com/match/anaitasuna-vs-alaves-1644336"
+    },
+    {
+      "fixture_key": "copa-del-rey-2026-11-11-beijing-pamplona-eibar",
+      "home": "Pamplona",
+      "away": "SD Eibar",
+      "kickoff_source": "2026-11-10 19:00 WAT",
+      "kickoff_utc": "2026-11-10T18:00:00Z",
+      "kickoff_beijing": "2026-11-11T02:00:00+08:00",
+      "score_90": "0-3",
+      "status": "confirmed_finished",
+      "source": "https://sportpremi.com/match/pamplona-vs-eibar-1644365"
+    },
+    {
+      "fixture_key": "copa-del-rey-2026-11-11-beijing-amorebieta-logrones",
+      "home": "Amorebieta",
+      "away": "UD Logroñés",
+      "kickoff_source": "2026-11-10 20:00 WAT",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "score_90": "1-0",
+      "status": "confirmed_finished",
+      "source": "https://sportpremi.com/match/amorebieta-vs-ud-logrones-1644335"
+    },
+    {
+      "fixture_key": "copa-del-rey-2026-11-11-beijing-mijas-real-jaen",
+      "home": "Mijas Las Lagunas",
+      "away": "Real Jaén",
+      "kickoff_source": "2026-11-10 20:00 WAT",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "score_90": "1-2",
+      "status": "confirmed_finished",
+      "source": "https://sportpremi.com/match/mijas-las-lagunas-vs-real-jaen-1644362"
+    },
+    {
+      "fixture_key": "copa-del-rey-2026-11-11-beijing-trival-leganes",
+      "home": "Trival Valderas",
+      "away": "CD Leganés",
+      "kickoff_source": "2026-11-10 20:00 WAT",
+      "kickoff_utc": "2026-11-10T19:00:00Z",
+      "kickoff_beijing": "2026-11-11T03:00:00+08:00",
+      "score_90": "0-1",
+      "status": "confirmed_finished",
+      "source": "https://sportpremi.com/match/trival-valderas-vs-leganes-1644382"
+    },
+    {
+      "fixture_key": "copa-del-rey-2026-11-11-beijing-tavernes-valencia",
+      "home": "Tavernes",
+      "away": "Valencia CF",
+      "kickoff_source": "2026-11-10 21:00 WAT",
+      "kickoff_utc": "2026-11-10T20:00:00Z",
+      "kickoff_beijing": "2026-11-11T04:00:00+08:00",
+      "score_90": "0-6",
+      "status": "confirmed_finished",
+      "source": "https://sportpremi.com/match/tavernes-vs-valencia-1644380"
+    }
+  ],
+  "prediction_snapshot_status": "not_found_in_verified_repository_branch",
+  "official_jingcai_handicap_status": "not_found",
+  "review_date_note": "Keep separate from 2026-11-10 Beijing review; these belong to 2026-11-11 Beijing date."
+}
