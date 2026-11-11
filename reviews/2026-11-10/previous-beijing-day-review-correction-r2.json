@@ -1,0 +1,58 @@
+{
+  "schema_version": "daily-review-correction/v1",
+  "batch_id": "2026-11-11-1000-r2",
+  "review_date_beijing": "2026-11-10",
+  "collected_at_utc": "2026-11-11T01:57:43Z",
+  "supersedes_aggregate_in": "reviews/2026-11-10/previous-beijing-day-review-2026-11-10-r1.json",
+  "corrected_aggregate": {
+    "confirmed_results_in_review_date": 7,
+    "core_tracked_competition_results": 6,
+    "other_scope_candidates": 1,
+    "immutable_pre_match_snapshots_found": 0,
+    "matches_without_snapshot": 7,
+    "metrics": {
+      "ninety_minute_1x2": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      },
+      "first_score": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      },
+      "second_score": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      },
+      "official_jingcai_handicap": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      },
+      "half_full": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      },
+      "risk_prompts": {
+        "hits": null,
+        "denominator": 0,
+        "rate": null,
+        "status": "not_computable"
+      }
+    }
+  },
+  "added_matches": [
+    "international-friendly-women-2026-11-10-congo-central-africa",
+    "international-friendly-women-2026-11-10-gabon-chad"
+  ],
+  "no_reconstruction": true,
+  "reason": "No immutable prediction snapshot was located for either added match. No official Jingcai handicap line was located."
+}
