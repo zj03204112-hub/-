@@ -1,0 +1,109 @@
+{
+  "schema_version": "daily-run-verification/v4",
+  "batch_id": "2026-11-11-1000-r4",
+  "collected_at_utc": "2026-11-11T02:04:30Z",
+  "repository": "zj03204112-hub/-",
+  "default_branch": "main",
+  "base_commit": "d040560fe89d53405cfb7762a445d78e4bdd052b",
+  "working_branch": "automation/daily-football-2026-11-11-1000-run11",
+  "archive_files_before_this_verification": [
+    "results/2026-11-10/verified-results-2026-11-11-1000-r1.json",
+    "reviews/2026-11-10/previous-beijing-day-review-2026-11-10-r1.json",
+    "fixtures/2026-11-11-12/schedule-beijing-2026-11-11-12-1000-r1.json",
+    "data/xg_weekly/2026-W46/match-observations/2026-11-11-addendum-r1.json",
+    "data/xg_weekly/2026-W46/team-snapshots/2026-11-11-addendum-r1.json",
+    "results/2026-11-11/early-continental-results-2026-11-11-1000-r1.json",
+    "fixtures/2026-11-11-12/uefa-womens-europa-cup-timezone-pending-2026-11-11-r1.json",
+    "results/2026-11-11/early-domestic-cup-results-addendum-2026-11-11-1000-r1.json",
+    "data/xg_weekly/2026-W46/corrections/2026-11-11-plymouth-berkhamsted-provider-correction-r1.json",
+    "data/xg_weekly/2026-W46/team-snapshots/2026-11-11-provider-correction-r1.json",
+    "fixtures/2026-11-11-12/source-url-correction-sportpremi-2026-11-11-r1.json",
+    "reviews/2026-11-11/10-00-run-final-verification-r2.json",
+    "results/2026-11-10/national-team-women-results-addendum-2026-11-11-1000-r2.json",
+    "reviews/2026-11-10/previous-beijing-day-review-correction-r2.json",
+    "data/xg_weekly/2026-W46/match-observations/2026-11-11-missing-women-friendly-addendum-r2.json",
+    "data/xg_weekly/2026-W46/team-snapshots/2026-11-11-missing-women-friendly-addendum-r2.json",
+    "reviews/2026-11-11/10-00-run-final-verification-r3.json",
+    "fixtures/2026-11-11-12/once-caldas-live-status-2026-11-11-1000-r2.json"
+  ],
+  "expected_total_archive_files_including_this_file": 19,
+  "results_review": {
+    "beijing_date": "2026-11-10",
+    "confirmed_results": 7,
+    "core_tracked_results": 6,
+    "other_friendly_candidate": 1,
+    "immutable_pre_match_snapshots_found": 0,
+    "official_jingcai_lines_found": 0,
+    "hit_rates_computed": false,
+    "note": "The 7-match corrected denominator includes two women's national-team friendlies added on the second pass."
+  },
+  "current_beijing_day": {
+    "completed_results": 29,
+    "breakdown": {
+      "efl_trophy": 17,
+      "copa_del_rey": 6,
+      "uefa_womens_champions_league": 5,
+      "uefa_womens_europa_cup": 1
+    },
+    "live_fixtures": [
+      {
+        "fixture": "Once Caldas vs Atlético Nacional",
+        "minute": 34,
+        "score": "0-0",
+        "status": "live"
+      }
+    ],
+    "excluded_from_previous_day_review": true
+  },
+  "schedule": {
+    "primary_records": 32,
+    "additional_copa_del_rey_results": 6,
+    "additional_early_continental_results": 6,
+    "uefa_womens_europa_cup_timezone_pending_fixtures": 7,
+    "confirmed_upcoming_for_2026_11_12_beijing": 9,
+    "secondary_or_timezone_pending_candidates": 8,
+    "source_url_correction_records": 1,
+    "core_league_fixtures_found": 0
+  },
+  "xg": {
+    "iso_week": "2026-W46",
+    "reviewed_matches": 7,
+    "matches_with_provider_xg": 2,
+    "matches_missing_traceable_postmatch_xg": 5,
+    "active_provider_observation_rows": 8,
+    "active_provider_estimate_rows": 3,
+    "missing_observation_rows": 5,
+    "active_team_provider_rows": 16,
+    "historical_rows_including_superseded_attribution": 18,
+    "measured_xg_records": 0,
+    "active_providers": [
+      "Opta via FotMob",
+      "Golmetro",
+      "Sportmeridian"
+    ],
+    "canonical_team_ids_resolved": 0,
+    "provisional_aliases_used": true,
+    "provider_series_merged": false,
+    "post_match_data_used_as_same_match_pre_kickoff_input": false
+  },
+  "sqlite": {
+    "repository_binary_present": true,
+    "active_connection": false,
+    "actual_sqlite_write_performed": false,
+    "reason": "SQLite binary payload was unavailable through the GitHub connector; no active database connection or write."
+  },
+  "repository_integrity": {
+    "previous_claimed_2026_11_10_1500_branch_found": false,
+    "previous_claimed_commit_found": false,
+    "all_new_files_read_back": false,
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false
+  },
+  "limitations": [
+    "No immutable prediction snapshot was found for any of the seven 2026-11-10 Beijing matches; prediction hit rates remain not computable.",
+    "No official Jingcai handicap was found for those matches; no third-party Asian handicap substitution was made.",
+    "Canonical team and competition IDs remain unresolved because SQLite could not be opened.",
+    "Seven UEFA Women's Europa Cup fixtures retain null UTC/Beijing kickoff until source timezone is confirmed.",
+    "Long-tail non-core tracked competition completeness cannot be guaranteed without the canonical tracking database."
+  ]
+}
