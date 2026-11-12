@@ -1,0 +1,184 @@
+{
+  "schema_version": "market-team-news-correction.v1",
+  "run_id": "2026-11-12-1500-run11-correction-r3",
+  "captured_at_beijing": "2026-11-12T15:25:00+08:00",
+  "snapshots_immutable": true,
+  "market_corrections": [
+    {
+      "match": "Armenia-Cyprus",
+      "bookmaker": "Betmaster",
+      "source_url": "https://betmaster.com/en/sportsbook/sports/soccer/match/4538334",
+      "current_1x2": {
+        "home": 2.29,
+        "draw": 3.2,
+        "away": 3.1
+      },
+      "asian_handicap": {
+        "home": "Armenia -0.5",
+        "home_odds": 2.29,
+        "away": "Cyprus +0.5",
+        "away_odds": 1.63
+      },
+      "total_2_5": {
+        "over": 2.11,
+        "under": 1.77
+      },
+      "source_capture": "15:23 Beijing; provider page timestamp not exposed",
+      "supersedes_market_snapshot_value": {
+        "home": 2.34,
+        "draw": 3.15,
+        "away": 3.05
+      },
+      "reason": "同一Betmaster页面重新读取后盘口已变，采用此较新页面快照；旧值保留为历史采集。"
+    },
+    {
+      "match": "Türkiye-Belgium",
+      "bookmaker": "Betmaster co.mz",
+      "source_url": "https://betmaster.co.mz/en/sportsbook/sports/soccer/match/4538342",
+      "current_1x2": {
+        "home": 3.81,
+        "draw": 3.73,
+        "away": 1.87
+      },
+      "asian_handicap": {
+        "home": "Türkiye +0.5",
+        "home_odds": 1.98,
+        "away": "Belgium -0.5",
+        "away_odds": 1.87
+      },
+      "total_2_5": {
+        "over": 1.57,
+        "under": 2.68
+      },
+      "source_capture": "15:23 Beijing; provider page timestamp not exposed",
+      "note": "与Betmaster.dk/Betmaster.eu区域页报价分开保存，不拼接为同一盘口序列。"
+    },
+    {
+      "match": "Malta-Eswatini",
+      "bookmaker": "Betmaster DK",
+      "source_url": "https://betmaster.dk/en/sportsbook/sports/soccer/match/4592327",
+      "current_1x2": {
+        "home": 1.55,
+        "draw": 3.7,
+        "away": 5.2
+      },
+      "total_2_5": {
+        "over": 2.08,
+        "under": 1.67
+      },
+      "source_capture": "本轮页面采集；provider timestamp not exposed",
+      "note": "前一市场文件将Betmaster.eu URL与Betmaster.dk的大小球数值混配；本条给出匹配的页面URL。"
+    },
+    {
+      "match": "Uzbekistan-Russia",
+      "bookmaker": "Olimpbet",
+      "source_url": "https://www.olimp.bet/line/futbol-1/tovarischeskie-matchi-sbornye-14769/uzbekistan-rossiya-12-11-2026-86127493",
+      "current_1x2": {
+        "home": 3.78,
+        "draw": 3.48,
+        "away": 1.99
+      },
+      "asian_handicap": {
+        "home": "Uzbekistan 0",
+        "home_odds": 2.71,
+        "away": "Russia 0",
+        "away_odds": 1.46
+      },
+      "total_2_5": {
+        "over": 2.2,
+        "under": 1.67
+      },
+      "source_capture": "本轮页面采集；provider timestamp not exposed"
+    },
+    {
+      "match": "Barcelona Women-Arsenal Women",
+      "bookmaker": "Oddschecker",
+      "source_url": "https://www.oddschecker.com/football/womens-club/womens-champions-league/barcelona-women-v-arsenal-women/winner",
+      "source_last_updated_utc": "2026-11-12T07:16:00Z",
+      "current_1x2_fractional": {
+        "home": "2/9",
+        "draw": "6/1",
+        "away": "10/1"
+      },
+      "current_1x2_decimal": {
+        "home": 1.222,
+        "draw": 7,
+        "away": 11
+      },
+      "correct_score_market": {
+        "home_3_0": "9/1",
+        "home_3_1": "19/2"
+      },
+      "note": "以该页07:16 UTC更新值为当前参考；旧页面报价不覆盖。"
+    }
+  ],
+  "team_news_corrections": [
+    {
+      "match": "Türkiye-Belgium",
+      "official_referee": "Sandro Schärer (UEFA match-info)",
+      "form_5": {
+        "home": "1W-0D-4L, 5 scored, 13 conceded",
+        "away": "2W-0D-3L, 7 scored, 7 conceded"
+      },
+      "confirmed_team_news": "Türkiye: Abdülkerim Bardakcı suspended; Zeki Çelik and Ferdi Kadıoğlu doubtful; Uğurcan Çakır, Arda Güler and Barış Alper Yılmaz available. Belgium: Romelu Lukaku officially out with a hip issue; Roméo Lavia suspended; Doku returns; De Bruyne and Tielemans available.",
+      "probable_shape": "both 4-2-3-1 per Eurosport preview; not confirmed lineups",
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/match/2047873--turkiye-vs-belgium/matchinfo/",
+        "https://www.reuters.com/sports/soccer/belgium-get-doku-back-lukaku-out-with-hip-problem-2026-11-11/",
+        "https://www.eurosport.it/scommesse/turchia-belgio-pronostico-consigli-sulle-scommesse-12-11-2026/"
+      ]
+    },
+    {
+      "match": "Armenia-Cyprus",
+      "official_referee": "Orel Grinfeeld (UEFA match-info)",
+      "official_kickoff_utc": "2026-11-12T17:00:00Z",
+      "form_6": {
+        "home": "1W-1D-4L, 0.83 scored and 2.50 conceded per match",
+        "away": "3W-1D-2L, 1.50 scored and 0.83 conceded per match"
+      },
+      "confirmed_team_news": "Armenia: Eduard Spertsyan out; Henri Avagyan, Sergey Muradyan, Julio Bueno and Finn Geragusyan absent; Bichakhchyan, Simonyan and Hovhannisyan not fully ready. Cyprus: Andronikos Kakoullis injured, Kostas Pileas suspended.",
+      "probable_shape": "both 4-2-3-1 per Forebet preview; not confirmed lineups",
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/match/2047876--armenia-vs-cyprus/matchinfo/",
+        "https://www.forebet.com/en/football-match-previews/32348-armenia-look-to-reset-against-cyprus-after-one-sided-defeat-in-nicosia"
+      ]
+    },
+    {
+      "match": "Uzbekistan-Russia",
+      "recent_three": {
+        "home": [
+          "South Korea 2-0 Uzbekistan (2026-10-06)",
+          "Uzbekistan 4-1 Syria (2026-10-01)",
+          "Uzbekistan 3-1 Iran (2026-09-24)"
+        ],
+        "away": [
+          "Russia 3-3 Nigeria (2026-10-06)",
+          "Russia 6-0 Namibia (2026-10-03)",
+          "Russia 2-0 Iran (2026-09-29)"
+        ]
+      },
+      "injury_note": "Khusanov and Golovin reported absent; Barinov/Krivtsov availability remains secondary-source only.",
+      "next_fixture": "Russia vs Venezuela on 2026-11-17; Uzbekistan next fixture not verified.",
+      "source_urls": [
+        "https://www.skysports.com/football/uzbekistan-vs-football-union-of-russia/578947",
+        "https://www.plaibook.live/intl/teams/russia"
+      ]
+    },
+    {
+      "match": "Malta-Eswatini",
+      "confirmed_team_news": "Malta defender Jean Borg misses the November squad while recovering from an operation. Alexander Satariano's suspension applies to the 16 Nov Nations League match against Gibraltar, not automatically to this friendly.",
+      "source_url": "https://www.maltafootball.com/2026/11/08/de-leo-names-28-man-squad-for-november-fixtures/"
+    },
+    {
+      "match": "Barcelona Women-Arsenal Women",
+      "official_kickoff_local": "2026-11-12 18:45 peninsular Spain time",
+      "next_fixtures": "Barcelona at Deportivo Abanca on 15 Nov; Arsenal hosts London City Lionesses on 14 Nov.",
+      "source_urls": [
+        "https://www.fcbarcelona.com/en/football/womens-football/schedule",
+        "https://www.thestatszone.com/barcelona-vs-arsenal-preview-team-news-prediction-2026-27-uefa-womens-champions-league-league-phase-237305"
+      ]
+    }
+  ],
+  "official_jz_status": "仍未取得中国竞彩网官方hhad/goalLine原始回包；以上博彩公司亚洲盘仅为市场参考，不作为竞彩让球数，不做让球胜平负映射。",
+  "no_prediction_changes": "所有既有预测快照保持不变；本条只追加市场/球队情报的更正记录。"
+}
