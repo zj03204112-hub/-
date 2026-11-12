@@ -1,0 +1,2252 @@
+{
+  "schema_version": "beijing-fixture-schedule.v2",
+  "run_id": "2026-11-12-1000-run11",
+  "generated_at_beijing": "2026-11-12T10:45:00+08:00",
+  "current_beijing_date": "2026-11-12",
+  "next_beijing_date": "2026-11-13",
+  "timezone_rules": {
+    "beijing": "UTC+08:00",
+    "uk_november": "GMT=UTC",
+    "central_europe": "CET=UTC+01:00",
+    "conversion": "UTC + 8 hours; official CET times first converted to UTC before Beijing."
+  },
+  "discovery_counts": {
+    "flashsport_12_nov_uk_date": {
+      "matches": 101,
+      "competitions": 41,
+      "source": "https://flashsportapp.com/en/football/matches/2026-11-12/"
+    },
+    "flashsport_13_nov_uk_date": {
+      "matches": 211,
+      "competitions": 94,
+      "source": "https://flashsportapp.com/en/football/matches/2026-11-13/"
+    },
+    "note": "These are broad public discovery-page counts, not the canonical user tracking registry."
+  },
+  "core_league_scan": [
+    {
+      "competition": "Premier League",
+      "beijing_dates": [
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "fixtures_found": 0
+    },
+    {
+      "competition": "La Liga",
+      "beijing_dates": [
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "fixtures_found": 0
+    },
+    {
+      "competition": "Bundesliga",
+      "beijing_dates": [
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "fixtures_found": 0
+    },
+    {
+      "competition": "Serie A",
+      "beijing_dates": [
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "fixtures_found": 0
+    },
+    {
+      "competition": "Ligue 1",
+      "beijing_dates": [
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "fixtures_found": 0
+    },
+    {
+      "competition": "K League 1",
+      "beijing_dates": [
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "fixtures_found": 0
+    },
+    {
+      "competition": "J1 League",
+      "beijing_dates": [
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "fixtures_found": 0,
+      "note": "11 Nov Levain Cup fixtures are archived separately; they are not J1 league matches."
+    }
+  ],
+  "completed_current_day_results": {
+    "count": 19,
+    "path": "results/2026-11-12/early-completed-results-2026-11-12-1000-run11.json",
+    "note": "Current Beijing date only; not included in 11 Nov review."
+  },
+  "upcoming_beijing_12_nov": [
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "New Zealand",
+      "away": "India",
+      "kickoff_utc": "2026-11-12T06:00:00Z",
+      "kickoff_beijing": "2026-11-12T14:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/",
+        "https://www.nzfootball.co.nz/"
+      ],
+      "note": "UTC 06:00; NZ Football announcement confirms fixture date; time source cross-checked.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "U23 International Friendly",
+      "category": "national_team",
+      "home": "Thailand U23",
+      "away": "Qatar U23",
+      "kickoff_utc": "2026-11-12T08:00:00Z",
+      "kickoff_beijing": "2026-11-12T16:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Australian Championship",
+      "category": "other",
+      "home": "Wests APIA",
+      "away": "Adelaide City",
+      "kickoff_utc": "2026-11-12T08:30:00Z",
+      "kickoff_beijing": "2026-11-12T16:30:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Ýokary Liga",
+      "category": "other",
+      "home": "Arkadag",
+      "away": "Altyn Asyr",
+      "kickoff_utc": "2026-11-12T10:00:00Z",
+      "kickoff_beijing": "2026-11-12T18:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "WK-League",
+      "category": "other",
+      "home": "Hwacheon KSPO Women",
+      "away": "Gyeongju KHNP Women",
+      "kickoff_utc": "2026-11-12T10:00:00Z",
+      "kickoff_beijing": "2026-11-12T18:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "U23 International Friendly",
+      "category": "national_team",
+      "home": "Singapore U23",
+      "away": "Vietnam U23",
+      "kickoff_utc": "2026-11-12T12:00:00Z",
+      "kickoff_beijing": "2026-11-12T20:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/",
+        "https://vff.org.vn/"
+      ],
+      "note": "VFF confirms 12 Nov fixture; UTC 12:00 corresponds 20:00 Beijing.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA U21 Championship Qualification",
+      "category": "national_team",
+      "home": "Iceland U21",
+      "away": "Greece U21",
+      "kickoff_utc": "2026-11-12T13:00:00Z",
+      "kickoff_beijing": "2026-11-12T21:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA U21 International Friendly",
+      "category": "national_team",
+      "home": "Scotland U21",
+      "away": "Ukraine U21",
+      "kickoff_utc": "2026-11-12T13:00:00Z",
+      "kickoff_beijing": "2026-11-12T21:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA U19 Championship Qualification",
+      "category": "national_team",
+      "home": "Germany U19",
+      "away": "Sweden U19",
+      "kickoff_utc": "2026-11-12T13:00:00Z",
+      "kickoff_beijing": "2026-11-12T21:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "CAF U23 Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Ethiopia U23",
+      "away": "Morocco U23",
+      "kickoff_utc": "2026-11-12T13:00:00Z",
+      "kickoff_beijing": "2026-11-12T21:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/caf-u-23-africa-cup-of-nations/news/u-23-afcon-qualifiers-nigeria-dr-congo-and-ghana-libya-headline-high-stakes-second-round-ties/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Oman FA Cup",
+      "category": "domestic_cup",
+      "home": "Oman Club",
+      "away": "Al Nasr",
+      "kickoff_utc": "2026-11-12T13:50:00Z",
+      "kickoff_beijing": "2026-11-12T21:50:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Oman FA Cup",
+      "category": "domestic_cup",
+      "home": "Sur",
+      "away": "Dhofar",
+      "kickoff_utc": "2026-11-12T13:50:00Z",
+      "kickoff_beijing": "2026-11-12T21:50:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Oman FA Cup",
+      "category": "domestic_cup",
+      "home": "Smail",
+      "away": "Bahla",
+      "kickoff_utc": "2026-11-12T13:55:00Z",
+      "kickoff_beijing": "2026-11-12T21:55:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "Uzbekistan",
+      "away": "Russia",
+      "kickoff_utc": "2026-11-12T15:00:00Z",
+      "kickoff_beijing": "2026-11-12T23:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/",
+        "https://www.beinsports.com/"
+      ],
+      "note": "UTC 15:00; official federation time not independently captured.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA U19 Championship Qualification",
+      "category": "national_team",
+      "home": "Portugal U19",
+      "away": "Lithuania U19",
+      "kickoff_utc": "2026-11-12T15:00:00Z",
+      "kickoff_beijing": "2026-11-12T23:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "CAF U23 Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Angola U23",
+      "away": "Congo U23",
+      "kickoff_utc": "2026-11-12T15:00:00Z",
+      "kickoff_beijing": "2026-11-12T23:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/caf-u-23-africa-cup-of-nations/news/u-23-afcon-qualifiers-nigeria-dr-congo-and-ghana-libya-headline-high-stakes-second-round-ties/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Ghana",
+      "away": "Somalia",
+      "kickoff_utc": "2026-11-12T15:00:00Z",
+      "kickoff_beijing": "2026-11-12T23:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/",
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA U17 Championship Qualification",
+      "category": "national_team",
+      "home": "Bulgaria U17",
+      "away": "Serbia U17",
+      "kickoff_utc": "2026-11-12T15:00:00Z",
+      "kickoff_beijing": "2026-11-12T23:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA U17 Championship Qualification",
+      "category": "national_team",
+      "home": "Portugal U17",
+      "away": "Andorra U17",
+      "kickoff_utc": "2026-11-12T15:00:00Z",
+      "kickoff_beijing": "2026-11-12T23:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Club Friendly",
+      "category": "other",
+      "home": "BK Häcken",
+      "away": "Fredrikstad",
+      "kickoff_utc": "2026-11-12T15:00:00Z",
+      "kickoff_beijing": "2026-11-12T23:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    }
+  ],
+  "upcoming_beijing_13_nov": [
+    {
+      "competition": "UEFA Nations League",
+      "category": "national_team",
+      "home": "Türkiye",
+      "away": "Belgium",
+      "kickoff_utc": "2026-11-12T17:00:00Z",
+      "kickoff_beijing": "2026-11-13T01:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures/"
+      ],
+      "note": "UEFA kickoff 18:00 CET.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA Nations League",
+      "category": "national_team",
+      "home": "Armenia",
+      "away": "Cyprus",
+      "kickoff_utc": "2026-11-12T17:00:00Z",
+      "kickoff_beijing": "2026-11-13T01:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures/"
+      ],
+      "note": "UEFA kickoff 18:00 CET.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Copa del Rey",
+      "category": "domestic_cup",
+      "home": "Calvo Sotelo",
+      "away": "Albacete",
+      "kickoff_utc": "2026-11-12T16:30:00Z",
+      "kickoff_beijing": "2026-11-13T00:30:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.laliga.com/en-GB/",
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": "LaLiga lists 17:30 CET; FlashSport UK-time display differs by one hour. Use official CET conversion.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Copa del Rey",
+      "category": "domestic_cup",
+      "home": "Navalcarnero",
+      "away": "Real Betis",
+      "kickoff_utc": "2026-11-12T18:00:00Z",
+      "kickoff_beijing": "2026-11-13T02:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.laliga.com/en-GB/",
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": "LaLiga lists 19:00 CET.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Copa del Rey",
+      "category": "domestic_cup",
+      "home": "Tarancón",
+      "away": "Levante",
+      "kickoff_utc": "2026-11-12T18:00:00Z",
+      "kickoff_beijing": "2026-11-13T02:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.laliga.com/en-GB/",
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": "LaLiga lists 19:00 CET.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Coupe de France",
+      "category": "domestic_cup",
+      "home": "Chambéry",
+      "away": "Grenoble",
+      "kickoff_utc": "2026-11-12T18:00:00Z",
+      "kickoff_beijing": "2026-11-13T02:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": "UTC time from FlashSport; FFF time not independently retrieved.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA Women's Champions League",
+      "category": "continental_club",
+      "home": "Barcelona Women",
+      "away": "Arsenal Women",
+      "kickoff_utc": "2026-11-12T17:45:00Z",
+      "kickoff_beijing": "2026-11-13T01:45:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-women-s-champions-league-all-the-league-phase-fix/"
+      ],
+      "note": "UEFA kickoff 18:45 CET.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA Women's Champions League",
+      "category": "continental_club",
+      "home": "Benfica Women",
+      "away": "Austria Wien Women",
+      "kickoff_utc": "2026-11-12T20:00:00Z",
+      "kickoff_beijing": "2026-11-13T04:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-women-s-champions-league-all-the-league-phase-fix/"
+      ],
+      "note": "UEFA official schedule now confirms 21:00 CET; prior TBC status superseded by current official schedule.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA Nations League",
+      "category": "national_team",
+      "home": "Italy",
+      "away": "France",
+      "kickoff_utc": "2026-11-12T19:45:00Z",
+      "kickoff_beijing": "2026-11-13T03:45:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures/"
+      ],
+      "note": "UEFA kickoff 20:45 CET.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA Nations League",
+      "category": "national_team",
+      "home": "Czechia",
+      "away": "Spain",
+      "kickoff_utc": "2026-11-12T19:45:00Z",
+      "kickoff_beijing": "2026-11-13T03:45:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures/"
+      ],
+      "note": "UEFA kickoff 20:45 CET.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA Nations League",
+      "category": "national_team",
+      "home": "England",
+      "away": "Croatia",
+      "kickoff_utc": "2026-11-12T19:45:00Z",
+      "kickoff_beijing": "2026-11-13T03:45:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures/"
+      ],
+      "note": "UEFA kickoff 20:45 CET.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA Nations League",
+      "category": "national_team",
+      "home": "Albania",
+      "away": "Finland",
+      "kickoff_utc": "2026-11-12T19:45:00Z",
+      "kickoff_beijing": "2026-11-13T03:45:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures/"
+      ],
+      "note": "UEFA kickoff 20:45 CET.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA Nations League",
+      "category": "national_team",
+      "home": "San Marino",
+      "away": "Belarus",
+      "kickoff_utc": "2026-11-12T19:45:00Z",
+      "kickoff_beijing": "2026-11-13T03:45:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures/"
+      ],
+      "note": "UEFA kickoff 20:45 CET.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "UEFA Nations League",
+      "category": "national_team",
+      "home": "Montenegro",
+      "away": "Latvia",
+      "kickoff_utc": "2026-11-12T19:45:00Z",
+      "kickoff_beijing": "2026-11-13T03:45:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures/"
+      ],
+      "note": "UEFA kickoff 20:45 CET.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Congo DR",
+      "away": "Sierra Leone",
+      "kickoff_utc": "2026-11-12T16:00:00Z",
+      "kickoff_beijing": "2026-11-13T00:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/",
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Equatorial Guinea",
+      "away": "Zimbabwe",
+      "kickoff_utc": "2026-11-12T16:00:00Z",
+      "kickoff_beijing": "2026-11-13T00:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/",
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Guinea",
+      "away": "Eritrea",
+      "kickoff_utc": "2026-11-12T16:00:00Z",
+      "kickoff_beijing": "2026-11-13T00:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/",
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Madagascar",
+      "away": "Guinea-Bissau",
+      "kickoff_utc": "2026-11-12T16:00:00Z",
+      "kickoff_beijing": "2026-11-13T00:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/",
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Benin",
+      "away": "Central African Republic",
+      "kickoff_utc": "2026-11-12T19:00:00Z",
+      "kickoff_beijing": "2026-11-13T03:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/",
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Cameroon",
+      "away": "Namibia",
+      "kickoff_utc": "2026-11-12T19:00:00Z",
+      "kickoff_beijing": "2026-11-13T03:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/",
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Ivory Coast",
+      "away": "Gambia",
+      "kickoff_utc": "2026-11-12T19:00:00Z",
+      "kickoff_beijing": "2026-11-13T03:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/",
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Senegal",
+      "away": "Sudan",
+      "kickoff_utc": "2026-11-12T19:00:00Z",
+      "kickoff_beijing": "2026-11-13T03:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/",
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "category": "national_team",
+      "home": "Barbados",
+      "away": "Guadeloupe",
+      "kickoff_utc": "2026-11-12T19:00:00Z",
+      "kickoff_beijing": "2026-11-13T03:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "category": "national_team",
+      "home": "Cayman Islands",
+      "away": "Guyana",
+      "kickoff_utc": "2026-11-12T19:00:00Z",
+      "kickoff_beijing": "2026-11-13T03:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "category": "national_team",
+      "home": "Bonaire",
+      "away": "Cuba",
+      "kickoff_utc": "2026-11-12T20:00:00Z",
+      "kickoff_beijing": "2026-11-13T04:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "category": "national_team",
+      "home": "Aruba",
+      "away": "Martinique",
+      "kickoff_utc": "2026-11-12T22:00:00Z",
+      "kickoff_beijing": "2026-11-13T06:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "CAF U23 Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Tunisia U23",
+      "away": "Gabon U23",
+      "kickoff_utc": "2026-11-12T17:00:00Z",
+      "kickoff_beijing": "2026-11-13T01:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.cafonline.com/caf-u-23-africa-cup-of-nations/news/u-23-afcon-qualifiers-nigeria-dr-congo-and-ghana-libya-headline-high-stakes-second-round-ties/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "U20 Elite League",
+      "category": "national_team",
+      "home": "Italy U20",
+      "away": "Portugal U20",
+      "kickoff_utc": "2026-11-12T16:00:00Z",
+      "kickoff_beijing": "2026-11-13T00:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "U20 Elite League",
+      "category": "national_team",
+      "home": "England U20",
+      "away": "Czechia U20",
+      "kickoff_utc": "2026-11-12T19:30:00Z",
+      "kickoff_beijing": "2026-11-13T03:30:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "France U20",
+      "away": "Denmark U20",
+      "kickoff_utc": "2026-11-12T16:00:00Z",
+      "kickoff_beijing": "2026-11-13T00:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "Lithuania",
+      "away": "Suriname",
+      "kickoff_utc": "2026-11-12T17:00:00Z",
+      "kickoff_beijing": "2026-11-13T01:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "Malta",
+      "away": "Eswatini",
+      "kickoff_utc": "2026-11-12T17:30:00Z",
+      "kickoff_beijing": "2026-11-13T01:30:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-12/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "CAF U23 Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "DR Congo U23",
+      "away": "Nigeria U23",
+      "kickoff_utc": "2026-11-13T13:00:00Z",
+      "kickoff_beijing": "2026-11-13T21:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official",
+      "source_urls": [
+        "https://www.cafonline.com/caf-u-23-africa-cup-of-nations/news/u-23-afcon-qualifiers-nigeria-dr-congo-and-ghana-libya-headline-high-stakes-second-round-ties/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Comoros",
+      "away": "Congo",
+      "kickoff_utc": "2026-11-13T13:00:00Z",
+      "kickoff_beijing": "2026-11-13T21:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Mozambique",
+      "away": "Ethiopia",
+      "kickoff_utc": "2026-11-13T13:00:00Z",
+      "kickoff_beijing": "2026-11-13T21:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Africa Cup of Nations Qualification",
+      "category": "national_team",
+      "home": "Zambia",
+      "away": "Burundi",
+      "kickoff_utc": "2026-11-13T13:00:00Z",
+      "kickoff_beijing": "2026-11-13T21:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "official_date_secondary_time",
+      "source_urls": [
+        "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "Czechia U18",
+      "away": "Poland U18",
+      "kickoff_utc": "2026-11-13T11:00:00Z",
+      "kickoff_beijing": "2026-11-13T19:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-13/",
+        "https://www.fas.org.sg/"
+      ],
+      "note": "Singapore-Paraguay is scheduled 20:00 Singapore time; other times from FlashSport UTC listing.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "Singapore",
+      "away": "Paraguay",
+      "kickoff_utc": "2026-11-13T12:00:00Z",
+      "kickoff_beijing": "2026-11-13T20:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-13/",
+        "https://www.fas.org.sg/"
+      ],
+      "note": "Singapore-Paraguay is scheduled 20:00 Singapore time; other times from FlashSport UTC listing.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "Chinese Taipei",
+      "away": "Kyrgyzstan",
+      "kickoff_utc": "2026-11-13T12:00:00Z",
+      "kickoff_beijing": "2026-11-13T20:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-13/",
+        "https://www.fas.org.sg/"
+      ],
+      "note": "Singapore-Paraguay is scheduled 20:00 Singapore time; other times from FlashSport UTC listing.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "Kuwait",
+      "away": "Syria",
+      "kickoff_utc": "2026-11-13T14:00:00Z",
+      "kickoff_beijing": "2026-11-13T22:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-13/",
+        "https://www.fas.org.sg/"
+      ],
+      "note": "Singapore-Paraguay is scheduled 20:00 Singapore time; other times from FlashSport UTC listing.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "United Arab Emirates",
+      "away": "Honduras",
+      "kickoff_utc": "2026-11-13T14:10:00Z",
+      "kickoff_beijing": "2026-11-13T22:10:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-13/",
+        "https://www.fas.org.sg/"
+      ],
+      "note": "Singapore-Paraguay is scheduled 20:00 Singapore time; other times from FlashSport UTC listing.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "Saudi Arabia",
+      "away": "South Korea",
+      "kickoff_utc": "2026-11-13T14:30:00Z",
+      "kickoff_beijing": "2026-11-13T22:30:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-13/",
+        "https://www.fas.org.sg/"
+      ],
+      "note": "Singapore-Paraguay is scheduled 20:00 Singapore time; other times from FlashSport UTC listing.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "International Friendly",
+      "category": "national_team",
+      "home": "Qatar",
+      "away": "Australia",
+      "kickoff_utc": "2026-11-13T14:45:00Z",
+      "kickoff_beijing": "2026-11-13T22:45:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-13/",
+        "https://www.fas.org.sg/"
+      ],
+      "note": "Singapore-Paraguay is scheduled 20:00 Singapore time; other times from FlashSport UTC listing.",
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Club Friendly",
+      "category": "other",
+      "home": "Västerås SK",
+      "away": "Brommapojkarna",
+      "kickoff_utc": "2026-11-13T11:00:00Z",
+      "kickoff_beijing": "2026-11-13T19:00:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-13/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    },
+    {
+      "competition": "Club Friendly",
+      "category": "other",
+      "home": "TPS Turku",
+      "away": "Ilves",
+      "kickoff_utc": "2026-11-13T11:30:00Z",
+      "kickoff_beijing": "2026-11-13T19:30:00.000+08:00",
+      "source_timezone": "UTC (UK GMT or source explicitly UTC)",
+      "time_verification": "secondary",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-13/"
+      ],
+      "note": null,
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap": null,
+      "odds_history": null,
+      "missing_fields": [
+        "竞彩官方比赛编号/让球数",
+        "竞彩官方让球赔率与采集时间",
+        "欧赔初盘至即时盘时间序列",
+        "亚洲盘与大小球水位时间序列",
+        "双方官方首发/替补",
+        "伤停及球员状态",
+        "双方近3场可复核明细",
+        "战术/教练信息",
+        "天气",
+        "裁判",
+        "赛前xG与进球概率",
+        "赛程密度及下一场对手重要性",
+        "新闻与可靠评论员交叉核验"
+      ]
+    }
+  ],
+  "status_unknown": [
+    {
+      "competition": "Liga de Expansión MX",
+      "home": "Piratas",
+      "away": "CA La Paz",
+      "kickoff_beijing": "2026-11-12T10:00:00+08:00",
+      "status": "source status not provided; do not mark finished"
+    },
+    {
+      "competition": "UEFA Women's Europa Cup",
+      "home": "Torreense Women",
+      "away": "Sparta Praha Women",
+      "kickoff_beijing": "2026-11-12T02:00:00+08:00",
+      "status": "source status not provided"
+    },
+    {
+      "competition": "WSL Cup",
+      "count": 6,
+      "kickoff_beijing_window": "2026-11-12T03:00:00+08:00",
+      "status": "status not independently confirmed"
+    }
+  ],
+  "source_urls": [
+    "https://flashsportapp.com/en/football/matches/2026-11-12/",
+    "https://flashsportapp.com/en/football/matches/2026-11-13/",
+    "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures/",
+    "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-women-s-champions-league-all-the-league-phase-fix/",
+    "https://www.laliga.com/en-GB/",
+    "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/",
+    "https://www.cafonline.com/caf-u-23-africa-cup-of-nations/news/u-23-afcon-qualifiers-nigeria-dr-congo-and-ghana-libya-headline-high-stakes-second-round-ties/",
+    "https://www.efl.com/news/2026/november/11/eleven-goals-across-jersey-mike-s-trophy-group-finales-as-accrington-top-northern-group-a/",
+    "https://www.nzfootball.co.nz/",
+    "https://vff.org.vn/",
+    "https://www.fas.org.sg/"
+  ],
+  "missing_fields": [
+    "竞彩官方比赛编号/让球数",
+    "竞彩官方让球赔率与采集时间",
+    "欧赔初盘至即时盘时间序列",
+    "亚洲盘与大小球水位时间序列",
+    "双方官方首发/替补",
+    "伤停及球员状态",
+    "双方近3场可复核明细",
+    "战术/教练信息",
+    "天气",
+    "裁判",
+    "赛前xG与进球概率",
+    "赛程密度及下一场对手重要性",
+    "新闻与可靠评论员交叉核验"
+  ],
+  "limitations": {
+    "official_sporttery_lines": "not retrieved in 10:00 run; no third-party Asian handicap substitution",
+    "opening_to_live_odds": "not retrieved; scheduled for 15:00 refresh",
+    "lineups_injuries_weather_referee_tactics_last3_prematch_xg_news": "not collected in this 10:00 schedule pass",
+    "canonical_tracking_registry": "SQLite unavailable; selected categories are broad tracked candidates, not proof of full global scope"
+  }
+}
