@@ -1,0 +1,226 @@
+{
+  "schema_version": "xg-week-coverage-audit.v2",
+  "run_id": "2026-11-12-1000-run11-xg-coverage-correction-r1",
+  "iso_week": "2026-W46",
+  "generated_at_beijing": "2026-11-12T11:11:21+08:00",
+  "source_capture_time_utc": "2026-11-12T03:11:21Z",
+  "batch_counts": {
+    "previous_beijing_day_tracked_matches": 34,
+    "previous_beijing_day_tracked_matches_with_any_xg": 16,
+    "previous_beijing_day_tracked_matches_missing_xg": 18,
+    "current_beijing_day_early_completed_matches": 17,
+    "current_beijing_day_early_matches_with_any_xg": 3,
+    "current_beijing_day_early_matches_missing_xg": 14,
+    "additional_national_and_continental_candidates": 61,
+    "date_reclassified_slovak_cup_candidates": 2,
+    "total_matches_in_weekly_audit_batch": 114,
+    "unique_matches_with_any_provider_xg": 19,
+    "matches_missing_all_provider_xg": 95
+  },
+  "provider_counts": {
+    "new_provider_match_series": 18,
+    "existing_provider_match_series_retained": 2,
+    "total_provider_match_series": 20,
+    "new_provider_team_observation_rows": 36,
+    "total_provider_team_observation_rows_with_xg": 40,
+    "unique_team_match_rows_with_any_xg": 38,
+    "unique_team_match_rows_missing_all_provider_xg": 190,
+    "provider_counts": {
+      "Xgoals.io": 16,
+      "SportingTimes": 1,
+      "Tipste": 1,
+      "SportingTimes (upstream xG model not disclosed)": 2
+    },
+    "per90_known_provider_match_series": 16,
+    "per90_unknown_provider_match_series": 4,
+    "measured_xg_matches": 0,
+    "provider_model_estimate_series": 20,
+    "own_model_estimate_matches": 0
+  },
+  "coverage_by_competition": {
+    "EFL Trophy": "13/17; 12 Xgoals post-match match-level estimates plus existing SportingTimes Stevenage estimate; four missing",
+    "UEFA Women's Champions League": "3/5 for previous Beijing day; Xgoals for Häcken/Chelsea and PSG/Bayern, SportingTimes for Inter/Manchester City",
+    "UEFA Women's Europa Cup": "0/1; direct Xgoals page exposed pre-match xG only",
+    "Copa del Rey": "0/6; only team/season aggregates found, not match-level post-match xG",
+    "J League Cup": "0/4; only team-season aggregates or pre-match material found",
+    "Copa Colombia": "0/1; no traceable match-level post-match xG found",
+    "Current-day early EFL": "2/2; Xgoals post-match match-level values",
+    "Current-day early WCL": "1/2; Tipste Juventus-Lyon; OH Leuven-HB Køge search snippet not accepted because direct page returned 403",
+    "Additional national/continental candidates": "0/61; no free traceable match-level xG found in this pass",
+    "Date-reclassified Slovak Cup candidates": "0/2; no free traceable match-level xG found in this pass"
+  },
+  "missing_match_ids": [
+    "provisional:efl-trophy:2026-11-10:grimsby-town-nottingham-forest-u21",
+    "provisional:efl-trophy:2026-11-10:huddersfield-town-liverpool-u21",
+    "provisional:efl-trophy:2026-11-10:crawley-town-brentford-u21",
+    "provisional:efl-trophy:2026-11-10:colchester-united-ipswich-town-u21",
+    "provisional:copa-del-rey:2026-11-10:cd-anaitasuna-deportivo-alaves",
+    "provisional:copa-del-rey:2026-11-10:cd-pamplona-sd-eibar",
+    "provisional:copa-del-rey:2026-11-10:cp-mijas-las-lagunas-real-jaen-cf",
+    "provisional:copa-del-rey:2026-11-10:cf-trival-valderas-alcorcon-cd-leganes",
+    "provisional:copa-del-rey:2026-11-10:sd-amorebieta-ud-logrones",
+    "provisional:copa-del-rey:2026-11-10:tavernes-valencia-cf",
+    "provisional:uefa-women-s-champions-league:2026-11-10:real-madrid-women-paris-fc-women",
+    "provisional:uefa-women-s-champions-league:2026-11-10:roma-women-servette-women",
+    "provisional:uefa-women-s-europa-cup:2026-11-10:feyenoord-women-vfl-wolfsburg-women",
+    "provisional:copa-colombia:2026-11-11:once-caldas-atletico-nacional",
+    "provisional:j-league-cup:2026-11-11:kawasaki-frontale-kashiwa-reysol",
+    "provisional:j-league-cup:2026-11-11:vissel-kobe-machida-zelvia",
+    "provisional:j-league-cup:2026-11-11:yokohama-f-marinos-kashima-antlers",
+    "provisional:j-league-cup:2026-11-11:urawa-reds-cerezo-osaka",
+    "provisional:copa-uruguay:2026-11-11:liverpool-montevideo-juventud",
+    "provisional:international-friendlies:2026-11-11:sint-maarten-anguilla",
+    "provisional:international-friendlies:2026-11-11:china-u19-vietnam-u19",
+    "provisional:international-friendlies:2026-11-11:vietnam-chinese-taipei",
+    "provisional:international-friendlies:2026-11-11:england-u18-netherlands-u18",
+    "provisional:international-friendlies:2026-11-11:switzerland-u18-norway-u19",
+    "provisional:afc-u17-asian-cup:2026-11-11:guam-u17-palestine-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:maldives-u17-hong-kong-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:mongolia-u17-yemen-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:cambodia-u17-afghanistan-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:philippines-u17-indonesia-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:pakistan-u17-iran-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:macau-u17-syria-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:chinese-taipei-u17-thailand-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:northern-mariana-islands-u17-kyrgyzstan-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:sri-lanka-u17-jordan-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:lebanon-u17-oman-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:singapore-u17-india-u17",
+    "provisional:afc-u17-asian-cup:2026-11-11:bhutan-u17-united-arab-emirates-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:luxembourg-u17-italy-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:hungary-u17-north-macedonia-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:germany-u17-azerbaijan-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:latvia-u17-croatia-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:netherlands-u17-norway-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:france-u17-armenia-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:ireland-u17-estonia-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:belgium-u17-kosovo-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:austria-u17-georgia-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:turkiye-u17-san-marino-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:sweden-u17-albania-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:slovakia-u17-malta-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:finland-u17-scotland-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:montenegro-u17-england-u17",
+    "provisional:uefa-u17-championship-qualification:2026-11-11:lithuania-u17-northern-ireland-u17",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:georgia-u19-denmark-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:estonia-u19-liechtenstein-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:azerbaijan-u19-montenegro-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:croatia-u19-hungary-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:andorra-u19-poland-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:belgium-u19-kosovo-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:slovenia-u19-england-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:north-macedonia-u19-northern-ireland-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:albania-u19-cyprus-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:latvia-u19-moldova-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:czechia-u19-netherlands-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:turkiye-u19-slovakia-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:bulgaria-u19-gibraltar-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:ireland-u19-greece-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:switzerland-u19-malta-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:italy-u19-romania-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:spain-u19-iceland-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:bosnia-and-herzegovina-u19-san-marino-u19",
+    "provisional:uefa-u19-championship-qualification:2026-11-11:kazakhstan-u19-scotland-u19",
+    "provisional:saff-championship:2026-11-11:india-maldives",
+    "provisional:saff-championship:2026-11-11:bangladesh-sri-lanka",
+    "provisional:caf-women-s-champions-league:2026-11-11:far-rabat-women-lekie-filles-women",
+    "provisional:caf-women-s-champions-league:2026-11-11:mamelodi-sundowns-women-kawempe-muslim-women",
+    "provisional:caf-u23-cup-of-nations:2026-11-11:kenya-u23-cote-d-ivoire-u23",
+    "provisional:caf-u23-cup-of-nations-classification-pending:2026-11-11:south-sudan-u23-senegal-u23",
+    "provisional:caf-u23-cup-of-nations-classification-pending:2026-11-11:zimbabwe-u23-mali-u23",
+    "provisional:caf-u23-cup-of-nations-classification-pending:2026-11-11:eswatini-u23-algeria-u23",
+    "provisional:uefa-women-s-champions-league:2026-11-11:oh-leuven-women-hb-k-ge-women",
+    "provisional:uefa-women-s-europa-cup:2026-11-11:czarni-sosnowiec-women-brann-women",
+    "provisional:uefa-women-s-europa-cup:2026-11-11:br-ndby-women-rosenborg-women",
+    "provisional:uefa-women-s-europa-cup:2026-11-11:fenerbahce-women-real-sociedad-women",
+    "provisional:uefa-women-s-europa-cup:2026-11-11:eintracht-frankfurt-women-psv-women",
+    "provisional:uefa-women-s-europa-cup:2026-11-11:hammarby-women-spartak-myjava-women",
+    "provisional:uefa-women-s-europa-cup:2026-11-11:malmo-ff-women-ajax-women",
+    "provisional:premier-league-international-cup:2026-11-11:sunderland-u21-paris-saint-germain-u21",
+    "provisional:premier-league-international-cup:2026-11-11:west-ham-united-u21-juventus-u21",
+    "provisional:slovak-cup:2026-11-11:nove-zamky-zemplin-michalovce",
+    "provisional:slovak-cup:2026-11-11:podbrezova-zlate-moravce",
+    "provisional:czech-cup:2026-11-11:artis-brno-fk-jablonec",
+    "provisional:lithuanian-cup:2026-11-11:babrungas-minija",
+    "provisional:copa-fares-lopes:2026-11-11:tirol-cefat-fortaleza-b",
+    "provisional:caf-u23-cup-of-nations:2026-11-11:libya-u23-ghana-u23",
+    "provisional:caf-u23-cup-of-nations:2026-11-11:burkina-faso-u23-zambia-u23"
+  ],
+  "provider_discrepancy_audit": [
+    {
+      "match_id": "provisional:efl-trophy:2026-11-10:stockport-county-tranmere-rovers",
+      "providers": [
+        "SportingTimes(existing)",
+        "Xgoals.io"
+      ],
+      "xg_values": {
+        "sportingtimes": [
+          0.88,
+          1.45
+        ],
+        "xgoals": [
+          0.88,
+          1.45
+        ]
+      },
+      "absolute_difference": [
+        0,
+        0
+      ],
+      "flag": "same displayed values; not independent model validation"
+    }
+  ],
+  "excluded_source_candidates": [
+    {
+      "provider": "SmartBet Predictions",
+      "match": "OH Leuven Women-HB Køge Women",
+      "displayed_xg": [
+        1.19,
+        3.11
+      ],
+      "source_url": "https://smartbetpredictions.com/football/match/oh-leuven-w-vs-koge-w-1638318",
+      "acceptance": "not ingested",
+      "reason": "direct page returned 403; search snippet alone insufficient"
+    },
+    {
+      "provider": "FootyStats",
+      "competitions": [
+        "Copa del Rey",
+        "J League Cup"
+      ],
+      "acceptance": "not ingested",
+      "reason": "only team/season aggregates visible"
+    },
+    {
+      "provider": "Xgoals direct match pages",
+      "matches": [
+        "Roma Women-Servette Women",
+        "Feyenoord Women-VfL Wolfsburg Women"
+      ],
+      "acceptance": "not ingested",
+      "reason": "direct pages show pre-match xG only"
+    }
+  ],
+  "quality_and_leakage": {
+    "all_new_values_classified_as": "provider_model_estimate",
+    "measured_xg_matches": 0,
+    "own_model_estimate_matches": 0,
+    "providers_kept_separate": true,
+    "no_cross_provider_averaging": true,
+    "xg_per90_only_populated_when_full_90m_scope_confirmed": true,
+    "post_match_xg_used_as_same_match_prematch_input": false,
+    "prematch_prediction_snapshots_modified": false,
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_rows_overwritten": false,
+    "canonical_team_ids_resolved": false,
+    "canonical_competition_ids_resolved": false,
+    "sqlite_connected": false,
+    "weekly_snapshot_status": "partial",
+    "missing_reason": "SQLite/规范赛事注册表未连接；缺失字段留空，不反推、不用赛后xG回填赛前"
+  },
+  "archive_paths": {
+    "match_observations": "data/xg_weekly/2026-W46/match-observations/2026-11-12-1000-provider-xg-expansion-run11-r1.json",
+    "team_snapshots": "data/xg_weekly/2026-W46/team-snapshots/2026-11-12-1000-provider-xg-expansion-run11-r1.json"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "xg-provider-source-register.v1",
+  "run_id": "2026-11-12-1000-run11-provider-xg-source-register-r1",
+  "captured_at_beijing": "2026-11-12T11:11:21+08:00",
+  "providers": [
+    {
+      "provider": "Xgoals.io",
+      "provider_model_type": "provider_model_estimate",
+      "model_notes": "Public xG daily pages show post-match match-level xG; only post-match values ingested.",
+      "period_scope": "full-match 90 minutes for listed regular-time fixtures; xg_per90 equals match xG",
+      "urls": [
+        "https://xgoals.io/football/xg-daily/2026-11-10/",
+        "https://xgoals.io/football/xg-daily/2026-11-11/"
+      ]
+    },
+    {
+      "provider": "SportingTimes",
+      "provider_model_type": "provider_model_estimate",
+      "model_notes": "Match-level xG displayed; upstream model and timestamp/version not disclosed.",
+      "period_scope": "unknown; per90 null",
+      "urls": [
+        "https://sportingtimes.net/game/inter-milano-w-vs-manchester-city-w-1638308"
+      ]
+    },
+    {
+      "provider": "Tipste",
+      "provider_model_type": "provider_model_estimate",
+      "model_notes": "Match-level xG displayed for Juventus-Lyon; upstream model not disclosed.",
+      "period_scope": "unknown; per90 null",
+      "urls": [
+        "https://tipste.com/es/matches/match/juventus-vs-olympique-lyonnais"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "provider": "SmartBet Predictions",
+      "url": "https://smartbetpredictions.com/football/match/oh-leuven-w-vs-koge-w-1638318",
+      "reason": "direct fetch 403; search snippet showed xG but not accepted"
+    },
+    {
+      "provider": "FootyStats",
+      "urls": [
+        "https://footystats.org/es/spain/copa-del-rey/xg",
+        "https://footystats.org/se/japan/j-league-cup/xg"
+      ],
+      "reason": "only team/season aggregates visible, not match-level post-match xG"
+    },
+    {
+      "provider": "Xgoals.io",
+      "urls": [
+        "https://xgoals.io/football/europe/europa-cup-women/feyenoord-w-v-vfl-wolfsburg-w-2026-11-10/",
+        "https://xgoals.io/football/europe/champions-league-women/roma-w-vs-servette-chenois-w-2026-11-10/"
+      ],
+      "reason": "direct match pages show pre-match xG only"
+    }
+  ],
+  "note": "No provider series averaged or merged; all ingested xG values are model estimates, not measured raw xG."
+}
