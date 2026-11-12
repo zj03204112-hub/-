@@ -1,0 +1,57 @@
+{
+  "schema_version": "football-results-date-correction.v1",
+  "run_id": "2026-11-12-1000-run11-date-correction-r1",
+  "corrected_beijing_date": "2026-11-11",
+  "count": 2,
+  "results": [
+    {
+      "match_id": "provisional:slovak-cup:2026-11-11:nov-z-mky-zempl-n-michalovce",
+      "match_id_status": "provisional_alias_database_id_unresolved",
+      "competition_id": "provisional:slovak-cup",
+      "competition": "Slovak Cup",
+      "category": "domestic_cup",
+      "season": "2026-27",
+      "match_date_beijing": "2026-11-11",
+      "kickoff_utc": "2026-11-11T12:00:00Z",
+      "kickoff_beijing": "2026-11-11T20:00:00+08:00",
+      "home_team_id": "provisional:nov-z-mky",
+      "away_team_id": "provisional:zempl-n-michalovce",
+      "home": "Nové Zámky",
+      "away": "Zemplín Michalovce",
+      "score_90": "0-2",
+      "half_time_score": null,
+      "actual_90m_outcome": "负",
+      "result_status": "confirmed_full_time",
+      "scope_status": "broad_scan_candidate_pending_registry",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-11/"
+      ],
+      "source_note": "FlashSport times are UK GMT; 12:00 and 15:00 UTC convert to 20:00 and 23:00 Beijing on 11 Nov, not 12 Nov."
+    },
+    {
+      "match_id": "provisional:slovak-cup:2026-11-11:podbrezov--zlat-moravce",
+      "match_id_status": "provisional_alias_database_id_unresolved",
+      "competition_id": "provisional:slovak-cup",
+      "competition": "Slovak Cup",
+      "category": "domestic_cup",
+      "season": "2026-27",
+      "match_date_beijing": "2026-11-11",
+      "kickoff_utc": "2026-11-11T15:00:00Z",
+      "kickoff_beijing": "2026-11-11T23:00:00+08:00",
+      "home_team_id": "provisional:podbrezov-",
+      "away_team_id": "provisional:zlat-moravce",
+      "home": "Podbrezová",
+      "away": "Zlaté Moravce",
+      "score_90": "2-0",
+      "half_time_score": null,
+      "actual_90m_outcome": "胜",
+      "result_status": "confirmed_full_time",
+      "scope_status": "broad_scan_candidate_pending_registry",
+      "source_urls": [
+        "https://flashsportapp.com/en/football/matches/2026-11-11/"
+      ],
+      "source_note": "FlashSport times are UK GMT; 12:00 and 15:00 UTC convert to 20:00 and 23:00 Beijing on 11 Nov, not 12 Nov."
+    }
+  ],
+  "reason": "The source page is in UK GMT. These two Slovak Cup kickoffs at 12:00 and 15:00 UTC are 20:00 and 23:00 Beijing on 11 Nov, not 12 Nov."
+}
