@@ -1,0 +1,95 @@
+{
+  "schema_version": "market-correction.v1",
+  "run_id": "2026-11-12-1500-run11-market-correction-r1",
+  "captured_at_beijing": "2026-11-12T15:19:00+08:00",
+  "prediction_snapshots_unchanged": true,
+  "corrections": [
+    {
+      "match": "Armenia-Cyprus",
+      "current_1x2": {
+        "home": 2.34,
+        "draw": 3.15,
+        "away": 3.05
+      },
+      "bookmaker": "Betmaster",
+      "asian_handicap": {
+        "home": "Armenia -0.5",
+        "home_odds": 2.34,
+        "away": "Cyprus +0.5",
+        "away_odds": 1.6
+      },
+      "total_2_5": {
+        "over": 2.11,
+        "under": 1.77
+      },
+      "source": "https://betmaster.com/en/sportsbook/sports/soccer/match/4538334",
+      "note": "替代先前market-refresh中2.16/3.40/3.07的Oddsrun参考报价作为当前Betmaster快照；先前报价保留为不同来源参考，不覆盖。"
+    },
+    {
+      "match": "Türkiye-Belgium",
+      "current_1x2": {
+        "home": 3.81,
+        "draw": 3.73,
+        "away": 1.87
+      },
+      "bookmaker": "Betmaster",
+      "asian_handicap": {
+        "home": "Türkiye +0.5",
+        "home_odds": 1.98,
+        "away": "Belgium -0.5",
+        "away_odds": 1.87
+      },
+      "total_2_5": {
+        "over": 1.57,
+        "under": 2.68
+      },
+      "source": "https://betmaster.eu/en/sportsbook/sports/soccer/match/4538342"
+    },
+    {
+      "match": "Uzbekistan-Russia",
+      "current_1x2": {
+        "home": 3.78,
+        "draw": 3.48,
+        "away": 1.99
+      },
+      "bookmaker": "Olimpbet",
+      "asian_handicap": {
+        "home": "Uzbekistan 0",
+        "home_odds": 2.71,
+        "away": "Russia 0",
+        "away_odds": 1.46
+      },
+      "total_2_5": {
+        "over": 2.2,
+        "under": 1.67
+      },
+      "source": "https://www.olimp.bet/line/futbol-1/tovarischeskie-matchi-sbornye-14769/uzbekistan-rossiya-12-11-2026-86127493"
+    },
+    {
+      "match": "Malta-Eswatini",
+      "current_1x2": {
+        "home": 1.55,
+        "draw": 3.7,
+        "away": 5.2
+      },
+      "bookmaker": "Betmaster",
+      "total_2_5": {
+        "over": 2.08,
+        "under": 1.67
+      },
+      "source": "https://betmaster.eu/en/sportsbook/sports/soccer/match/4592327"
+    },
+    {
+      "match": "Barcelona Women-Arsenal Women",
+      "current_best_1x2": {
+        "home": 1.27,
+        "draw": 6,
+        "away": 9.75
+      },
+      "provider": "Oddschecker",
+      "source": "https://www.oddschecker.com/football/womens-champions-league/barcelona-w-v-arsenal-w/winner",
+      "note": "没有同一家机构可比的初盘至即时盘序列；旧OddsFilter快照仍标记为过时。"
+    }
+  ],
+  "official_jz_status": "官方Sporttery接口仍未读取成功；以上均为博彩公司市场参考，不是官方竞彩hhad。任何第三方亚洲盘均未用于竞彩让球映射。"
+}
