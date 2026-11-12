@@ -1,0 +1,132 @@
+{
+  "schema_version": "daily-football-run-audit.v2",
+  "run_id": "2026-11-12-1000-run11",
+  "generated_at_beijing": "2026-11-12T10:46:00+08:00",
+  "previous_beijing_date": "2026-11-11",
+  "results": {
+    "prior_run_tracked_slate_confirmed": 34,
+    "immutable_prediction_snapshots": 2,
+    "provisional_manual_preview_records": 19,
+    "tracked_slate_matches_without_snapshot": 13,
+    "additional_national_team_continental_candidates": 61,
+    "additional_candidates_classification_pending": 3,
+    "current_beijing_date_early_confirmed_results": 19,
+    "current_day_status_unknown_fixtures": 3
+  },
+  "review_metrics_authoritative_file": "reviews/2026-11-12/previous-beijing-day-review-correction-2026-11-12-1000-run11-r1.json",
+  "review_metrics": {
+    "immutable": {
+      "sample": 2,
+      "ninety_minute": "1/2",
+      "first_score": "0/2",
+      "second_score": "0/2",
+      "half_full": "0/2",
+      "official_handicap": "0 verified; 2 unverified",
+      "risk_warning": "not scored"
+    },
+    "provisional_diagnostic_only": {
+      "sample": 19,
+      "ninety_minute": "9/19",
+      "first_score": "3/19",
+      "second_score": "1/19",
+      "half_full": "5/19",
+      "official_handicap": "0 verified; 19 unverified",
+      "risk_warning": "not scored"
+    },
+    "combined_diagnostic_not_v5_1": {
+      "sample": 21,
+      "ninety_minute": "10/21 (47.6%)",
+      "first_score": "3/21 (14.3%)",
+      "second_score": "1/21 (4.8%)",
+      "half_full": "5/21 (23.8%)",
+      "actual_draws": 4,
+      "correctly_predicted_draws": 0,
+      "matches_with_5_or_more_total_goals": 3
+    }
+  },
+  "handicap_audit": {
+    "official_sporttery_lines_verified": 0,
+    "third_party_asian_lines_substituted": 0,
+    "second_score_used_for_handicap": false,
+    "mapping_performed": false,
+    "reason": "No official Sporttery handicap line was retrieved for these matches; all handicap outcomes remain unverified."
+  },
+  "xg_audit": {
+    "iso_week": "2026-W46",
+    "matches_in_batch": 114,
+    "team_match_observations": 228,
+    "matches_with_provider_model_estimate": 2,
+    "matches_missing_xg": 112,
+    "measured_xg_matches": 0,
+    "own_model_estimate_matches": 0,
+    "team_week_snapshot_rows": 228,
+    "team_rows_with_xg": 4,
+    "team_rows_missing_xg": 224,
+    "provider_series_separated": true,
+    "xg_per90_values_written": 0,
+    "per90_reason": "SportingTimes does not expose a sufficiently explicit period definition on the retrieved match pages.",
+    "weekly_coverage": "partial; canonical full-week match registry and SQLite are not connected",
+    "postmatch_data_used_as_same_match_prematch_input": false,
+    "known_provider_estimates": [
+      {
+        "match": "Stockport County-Tranmere Rovers",
+        "home_xg": 0.88,
+        "away_xg": 1.45,
+        "source": "https://sportingtimes.net/game/stockport-county-vs-tranmere-1588840"
+      },
+      {
+        "match": "Stevenage-Fulham U21",
+        "home_xg": 4.43,
+        "away_xg": 1.39,
+        "source": "https://sportingtimes.net/game/stevenage-vs-fulham-u21-1588873"
+      }
+    ]
+  },
+  "schedule_audit": {
+    "current_beijing_date": "2026-11-12",
+    "next_beijing_date": "2026-11-13",
+    "confirmed_upcoming_today": 20,
+    "confirmed_upcoming_next_date": 45,
+    "early_completed_today": 19,
+    "status_unknown": 3,
+    "core_leagues_with_fixtures": 0,
+    "core_leagues_scanned": [
+      "Premier League",
+      "La Liga",
+      "Bundesliga",
+      "Serie A",
+      "Ligue 1",
+      "K League 1",
+      "J1 League"
+    ],
+    "schedule_file": "fixtures/2026-11-12-13/schedule-beijing-2026-11-12-13-1000-run11.json",
+    "official_sporttery_handicap_checked": false,
+    "opening_to_live_odds_checked": false,
+    "lineups_injuries_weather_referee_tactics_last3_prematch_xg_news_checked": false
+  },
+  "repository_and_database": {
+    "repository": "zj03204112-hub/-",
+    "branch": "automation/daily-football-2026-11-12-1000-run11",
+    "sqlite_connected": false,
+    "canonical_team_and_competition_ids_resolved": false,
+    "tracking_registry_resolved": false,
+    "files_are_append_only": true,
+    "initial_review_correction_policy": "Original review file retained; correction is appended and is authoritative."
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "model_rules_changed": false
+  },
+  "coverage_caveat": "The 34-match previous tracked slate is sourced from the prior schedule archive. A wider scan added 61 national-team/continental candidates, but SQLite is unavailable, so the exact canonical tracking whitelist and global long-tail completeness cannot be asserted.",
+  "files_written": [
+    "results/2026-11-11/tracked-slate-results-2026-11-12-1000-run11.json",
+    "results/2026-11-11/additional-national-team-and-continental-candidates-2026-11-12-1000-run11.json",
+    "results/2026-11-12/early-completed-results-2026-11-12-1000-run11.json",
+    "reviews/2026-11-12/previous-beijing-day-review-2026-11-11-1000-run11.json",
+    "reviews/2026-11-12/previous-beijing-day-review-correction-2026-11-12-1000-run11-r1.json",
+    "data/xg_weekly/2026-W46/match-observations/2026-11-12-1000-addendum-run11.json",
+    "data/xg_weekly/2026-W46/team-snapshots/2026-11-12-1000-addendum-run11.json",
+    "fixtures/2026-11-12-13/schedule-beijing-2026-11-12-13-1000-run11.json"
+  ]
+}
