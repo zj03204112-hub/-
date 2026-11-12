@@ -1,0 +1,55 @@
+{
+  "schema_version": "core-league-scan-evidence.v1",
+  "run_id": "2026-11-12-1000-run11",
+  "beijing_window": [
+    "2026-11-12",
+    "2026-11-13"
+  ],
+  "scan_result": "No core-league fixtures found in the two Beijing dates. J.League Cup on 11 Nov is classified as a domestic cup, not J1 league.",
+  "leagues": [
+    {
+      "competition": "Premier League",
+      "fixtures_found": 0,
+      "source_url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27",
+      "evidence": "Next listed matchday begins 21 Nov."
+    },
+    {
+      "competition": "La Liga",
+      "fixtures_found": 0,
+      "source_url": "https://www.laliga.com/en-GB/",
+      "evidence": "No 12-13 Nov fixture surfaced in official-site/public schedule scan; retain source-level uncertainty."
+    },
+    {
+      "competition": "Bundesliga",
+      "fixtures_found": 0,
+      "source_url": "https://www.uefa.com/nationalassociations/GER/domestic/league/1039/matches/",
+      "evidence": "Published calendar proceeds from 8 Nov to 20 Nov."
+    },
+    {
+      "competition": "Serie A",
+      "fixtures_found": 0,
+      "source_url": "https://www.legaseriea.it/serie-a/calendario-risultati",
+      "evidence": "Official Matchday 12 begins 21 Nov."
+    },
+    {
+      "competition": "Ligue 1",
+      "fixtures_found": 0,
+      "source_url": "https://ligue1.com/en/articles/l1_article_5292-ligue-1-mcdonald-s-le-calendrier-de-la-saison-26-27",
+      "evidence": "Official calendar lists 7-8 Nov then 20-21 Nov."
+    },
+    {
+      "competition": "K League 1",
+      "fixtures_found": 0,
+      "source_url": "https://portal.kleague.com/main/schedule/calendar.do",
+      "evidence": "Official calendar current date 12 Nov; next K League 1 fixtures shown 21-22 Nov."
+    },
+    {
+      "competition": "J1 League",
+      "fixtures_found": 0,
+      "source_url": "https://www.jleague.jp/en/j1/match/",
+      "evidence": "Official schedule shows 11 Nov Levain Cup quarter-final first legs; next J1 league matchweek is later. Levain Cup is not counted as J1 league."
+    }
+  ],
+  "other_categories_separate": true,
+  "source_timezone_note": "Premier League and Serie A sources use UK/UTC-like schedules; Bundesliga/Ligue1 pages use local league dates. No fixture fell within the two Beijing dates."
+}
