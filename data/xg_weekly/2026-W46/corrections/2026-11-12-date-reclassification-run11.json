@@ -1,0 +1,76 @@
+{
+  "schema_version": "xg-date-correction.v1",
+  "run_id": "2026-11-12-1000-run11-date-correction-r1",
+  "iso_week": "2026-W46",
+  "generated_at_beijing": "2026-11-12T10:48:00+08:00",
+  "supersedes_wrong_match_date_rows": true,
+  "correction_reason": "Two Slovak Cup matches were initially placed on 12 Nov Beijing because their source display time was read without applying UK GMT conversion. They belong to 11 Nov Beijing. ISO week remains W46; weekly team aggregates are unchanged.",
+  "corrected_matches": [
+    {
+      "match_id": "provisional:slovak-cup:2026-11-11:nov-z-mky-zempl-n-michalovce",
+      "match_date_beijing": "2026-11-11",
+      "kickoff_utc": "2026-11-11T12:00:00Z",
+      "kickoff_beijing": "2026-11-11T20:00:00+08:00",
+      "home": "Nové Zámky",
+      "away": "Zemplín Michalovce",
+      "score_90": "0-2",
+      "team_observation_rows": [
+        {
+          "team_id": "provisional:nov-z-mky",
+          "team": "Nové Zámky",
+          "venue": "home",
+          "xg": null,
+          "xga": null,
+          "xgd": null,
+          "provider": null,
+          "estimation_type": "missing",
+          "missing_reason": "No free traceable match-level xG retrieved."
+        },
+        {
+          "team_id": "provisional:zempl-n-michalovce",
+          "team": "Zemplín Michalovce",
+          "venue": "away",
+          "xg": null,
+          "xga": null,
+          "xgd": null,
+          "provider": null,
+          "estimation_type": "missing",
+          "missing_reason": "No free traceable match-level xG retrieved."
+        }
+      ]
+    },
+    {
+      "match_id": "provisional:slovak-cup:2026-11-11:podbrezov--zlat-moravce",
+      "match_date_beijing": "2026-11-11",
+      "kickoff_utc": "2026-11-11T15:00:00Z",
+      "kickoff_beijing": "2026-11-11T23:00:00+08:00",
+      "home": "Podbrezová",
+      "away": "Zlaté Moravce",
+      "score_90": "2-0",
+      "team_observation_rows": [
+        {
+          "team_id": "provisional:podbrezov-",
+          "team": "Podbrezová",
+          "venue": "home",
+          "xg": null,
+          "xga": null,
+          "xgd": null,
+          "provider": null,
+          "estimation_type": "missing",
+          "missing_reason": "No free traceable match-level xG retrieved."
+        },
+        {
+          "team_id": "provisional:zlat-moravce",
+          "team": "Zlaté Moravce",
+          "venue": "away",
+          "xg": null,
+          "xga": null,
+          "xgd": null,
+          "provider": null,
+          "estimation_type": "missing",
+          "missing_reason": "No free traceable match-level xG retrieved."
+        }
+      ]
+    }
+  ]
+}
