@@ -1,0 +1,25 @@
+{
+  "schema_version": "football-results-date-reclassification.v1",
+  "run_id": "2026-11-12-1000-run11-date-correction-r1",
+  "original_file": "results/2026-11-12/early-completed-results-2026-11-12-1000-run11.json",
+  "superseded_match_ids": [
+    "provisional:slovak-cup:2026-11-11:nov-z-mky-zempl-n-michalovce",
+    "provisional:slovak-cup:2026-11-11:podbrezov--zlat-moravce"
+  ],
+  "superseded_matches": [
+    {
+      "home": "Nové Zámky",
+      "away": "Zemplín Michalovce",
+      "score_90": "0-2",
+      "correct_beijing_date": "2026-11-11"
+    },
+    {
+      "home": "Podbrezová",
+      "away": "Zlaté Moravce",
+      "score_90": "2-0",
+      "correct_beijing_date": "2026-11-11"
+    }
+  ],
+  "final_current_day_confirmed_results": 17,
+  "final_current_day_result_file_note": "Original append-only file has 19 rows; subtract these two reclassified Slovak Cup matches. Remaining 17 belong to 12 Nov Beijing."
+}
