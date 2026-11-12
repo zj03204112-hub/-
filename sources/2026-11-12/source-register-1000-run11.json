@@ -1,0 +1,110 @@
+{
+  "schema_version": "football-source-register.v1",
+  "run_id": "2026-11-12-1000-run11",
+  "generated_at_beijing": "2026-11-12T10:46:00+08:00",
+  "sources": [
+    {
+      "name": "FlashSport daily results and fixtures",
+      "type": "secondary discovery/results",
+      "url": "https://flashsportapp.com/en/football/matches/2026-11-11/",
+      "used_for": "11 Nov candidate national-team, youth and cup results; times shown in UK timezone."
+    },
+    {
+      "name": "FlashSport 12 Nov fixtures",
+      "type": "secondary schedule discovery",
+      "url": "https://flashsportapp.com/en/football/matches/2026-11-12/",
+      "used_for": "12 Nov and late-12-Nov schedule discovery."
+    },
+    {
+      "name": "FlashSport 13 Nov fixtures",
+      "type": "secondary schedule discovery",
+      "url": "https://flashsportapp.com/en/football/matches/2026-11-13/",
+      "used_for": "13 Nov early UTC fixtures and daytime friendlies."
+    },
+    {
+      "name": "EFL official",
+      "type": "official",
+      "url": "https://www.efl.com/news/2026/november/11/eleven-goals-across-jersey-mike-s-trophy-group-finales-as-accrington-top-northern-group-a/",
+      "used_for": "11 Nov UK EFL Trophy results."
+    },
+    {
+      "name": "UEFA Women's Champions League",
+      "type": "official",
+      "url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-women-s-champions-league-all-the-league-phase-fix/",
+      "used_for": "12 Nov UK Barcelona-Arsenal and Benfica-Austria fixtures; official kickoff confirmation."
+    },
+    {
+      "name": "UEFA Nations League",
+      "type": "official",
+      "url": "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures/",
+      "used_for": "12 Nov UK UEFA Nations League fixtures and CET kickoff times."
+    },
+    {
+      "name": "LaLiga",
+      "type": "official",
+      "url": "https://www.laliga.com/en-GB/",
+      "used_for": "Copa del Rey official local kickoff times; Calvo Sotelo-Albacete time differs by one hour from secondary UK-time display."
+    },
+    {
+      "name": "CAF AFCON",
+      "type": "official",
+      "url": "https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/",
+      "used_for": "AFCON qualifier date window."
+    },
+    {
+      "name": "CAF U23",
+      "type": "official",
+      "url": "https://www.cafonline.com/caf-u-23-africa-cup-of-nations/news/u-23-afcon-qualifiers-nigeria-dr-congo-and-ghana-libya-headline-high-stakes-second-round-ties/",
+      "used_for": "CAF U23 official fixtures."
+    },
+    {
+      "name": "J.League",
+      "type": "official/league",
+      "url": "https://www.jleague.jp/en/",
+      "used_for": "J.League Cup category context; scores cross-checked against match calendar."
+    },
+    {
+      "name": "Win Sports",
+      "type": "reliable sports media",
+      "url": "https://www.winsports.co/",
+      "used_for": "Once Caldas-Atlético Nacional result."
+    },
+    {
+      "name": "MatchCalendar",
+      "type": "secondary match centre",
+      "url": "https://matchcalendar.football/today/2026-11-11/",
+      "used_for": "J.League Cup and UEFA Women's Champions League score/half-time cross-check."
+    },
+    {
+      "name": "SportingTimes Stockport match",
+      "type": "provider match stats",
+      "url": "https://sportingtimes.net/game/stockport-county-vs-tranmere-1588840",
+      "used_for": "Post-match provider-estimated xG 0.88-1.45."
+    },
+    {
+      "name": "SportingTimes Stevenage match",
+      "type": "provider match stats",
+      "url": "https://sportingtimes.net/game/stevenage-vs-fulham-u21-1588873",
+      "used_for": "Post-match provider-estimated xG 4.43-1.39."
+    },
+    {
+      "name": "New Zealand Football",
+      "type": "official association",
+      "url": "https://www.nzfootball.co.nz/",
+      "used_for": "New Zealand-India friendly date confirmation."
+    },
+    {
+      "name": "Vietnam Football Federation",
+      "type": "official association",
+      "url": "https://vff.org.vn/",
+      "used_for": "Singapore U23-Vietnam U23 date confirmation."
+    },
+    {
+      "name": "Football Association of Singapore",
+      "type": "official association",
+      "url": "https://www.fas.org.sg/",
+      "used_for": "Singapore-Paraguay friendly reference."
+    }
+  ],
+  "provenance_note": "All xG values retrieved are post-match provider estimates, not measured tracking data and not eligible as same-match pre-kickoff inputs. Missing values remain null."
+}
