@@ -1,0 +1,38 @@
+{
+  "schema_version": "daily-football-run-audit-correction.v1",
+  "run_id": "2026-11-12-1000-run11-date-correction-r1",
+  "corrects": "audits/2026-11-12/10-00-run-final-verification-run11.json",
+  "correction_reason": "Corrected UK GMT to Beijing date conversion for two Slovak Cup results.",
+  "final_counts": {
+    "previous_day_tracked_slate": 34,
+    "previous_day_additional_candidates": 63,
+    "current_day_early_confirmed_results": 17,
+    "total_xg_match_records": 114,
+    "team_match_observation_rows": 228,
+    "team_week_snapshot_rows": 228,
+    "xg_matches_with_provider_estimates": 2,
+    "xg_matches_missing": 112,
+    "upcoming_today": 20,
+    "upcoming_next_date": 45
+  },
+  "corrected_matches": [
+    {
+      "home": "Nové Zámky",
+      "away": "Zemplín Michalovce",
+      "score_90": "0-2",
+      "match_date_beijing": "2026-11-11"
+    },
+    {
+      "home": "Podbrezová",
+      "away": "Zlaté Moravce",
+      "score_90": "2-0",
+      "match_date_beijing": "2026-11-11"
+    }
+  ],
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false
+  },
+  "sqlite_connected": false,
+  "authoritative_audit_file": "audits/2026-11-12/10-00-run-final-correction-run11-r1.json"
+}
