@@ -1,0 +1,92 @@
+{
+  "schema_version": "schedule-window-correction.v1",
+  "run_id": "2026-11-12-1500-run11-window-correction-r1",
+  "captured_at_beijing": "2026-11-12T15:26:00+08:00",
+  "prediction_window_start_beijing": "2026-11-12T21:17:00+08:00",
+  "prediction_window_end_beijing": "2026-11-13T03:17:00+08:00",
+  "too_close_less_than_6h_count": 9,
+  "too_close_less_than_6h": [
+    {
+      "competition": "U23 International Friendly",
+      "home": "Thailand U23",
+      "away": "Qatar U23",
+      "kickoff_beijing": "2026-11-12T16:00:00+08:00",
+      "kickoff_utc": "2026-11-12T08:00:00Z",
+      "time_verification": "secondary"
+    },
+    {
+      "competition": "Australian Championship",
+      "home": "Wests APIA",
+      "away": "Adelaide City",
+      "kickoff_beijing": "2026-11-12T16:30:00+08:00",
+      "kickoff_utc": "2026-11-12T08:30:00Z",
+      "time_verification": "secondary"
+    },
+    {
+      "competition": "Ýokary Liga",
+      "home": "Arkadag",
+      "away": "Altyn Asyr",
+      "kickoff_beijing": "2026-11-12T18:00:00+08:00",
+      "kickoff_utc": "2026-11-12T10:00:00Z",
+      "time_verification": "secondary"
+    },
+    {
+      "competition": "WK-League",
+      "home": "Hwacheon KSPO Women",
+      "away": "Gyeongju KHNP Women",
+      "kickoff_beijing": "2026-11-12T18:00:00+08:00",
+      "kickoff_utc": "2026-11-12T10:00:00Z",
+      "time_verification": "secondary"
+    },
+    {
+      "competition": "U23 International Friendly",
+      "home": "Singapore U23",
+      "away": "Vietnam U23",
+      "kickoff_beijing": "2026-11-12T20:00:00+08:00",
+      "kickoff_utc": "2026-11-12T12:00:00Z",
+      "time_verification": "official_date_secondary_time"
+    },
+    {
+      "competition": "UEFA U21 Championship Qualification",
+      "home": "Iceland U21",
+      "away": "Greece U21",
+      "kickoff_beijing": "2026-11-12T21:00:00+08:00",
+      "kickoff_utc": "2026-11-12T13:00:00Z",
+      "time_verification": "secondary"
+    },
+    {
+      "competition": "UEFA U21 International Friendly",
+      "home": "Scotland U21",
+      "away": "Ukraine U21",
+      "kickoff_beijing": "2026-11-12T21:00:00+08:00",
+      "kickoff_utc": "2026-11-12T13:00:00Z",
+      "time_verification": "secondary"
+    },
+    {
+      "competition": "UEFA U19 Championship Qualification",
+      "home": "Germany U19",
+      "away": "Sweden U19",
+      "kickoff_beijing": "2026-11-12T21:00:00+08:00",
+      "kickoff_utc": "2026-11-12T13:00:00Z",
+      "time_verification": "secondary"
+    },
+    {
+      "competition": "CAF U23 Cup of Nations Qualification",
+      "home": "Ethiopia U23",
+      "away": "Morocco U23",
+      "kickoff_beijing": "2026-11-12T21:00:00+08:00",
+      "kickoff_utc": "2026-11-12T13:00:00Z",
+      "time_verification": "official_date_secondary_time"
+    }
+  ],
+  "handling": "以上9场开赛距15:17采集时不足6小时，不生成预测；保留赛程并标记为late_window_excluded，赛后进入次日复盘。不得用临近开赛的时间窗口规则补做早期预测。",
+  "revised_window_accounting": {
+    "schedule_records": 65,
+    "less_than_6h": 9,
+    "within_6_to_12h": 32,
+    "greater_than_12h_and_before_2026_11_13_12_00": 10,
+    "later_than_2026_11_13_12_00": 14,
+    "within_window_predictions": 5,
+    "within_window_withheld": 27
+  }
+}
