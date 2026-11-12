@@ -1,0 +1,86 @@
+{
+  "schema_version": "prematch-prediction-snapshot.v1",
+  "snapshot_status": "immutable_individual_snapshot",
+  "immutable": true,
+  "captured_at_beijing": "2026-11-12T15:17:00+08:00",
+  "model_version": "P15-PROVISIONAL-0.1",
+  "model_scope_note": "研究参考预测；未执行V5.1正式模型，不修改V5.1参数或冻结验证样本。当前SQLite未连接，未进行正式模型回测或概率校准。",
+  "prediction_method": "以可追溯的赛前赔率、近况、已知伤停、赛程与战术信息作定性融合；不以赔率单独决定胜负。",
+  "official_sporttery_handicap": {
+    "verified": false,
+    "official_match_number": null,
+    "line": null,
+    "predicted_hhad": "无法核验",
+    "mapping_performed": false,
+    "reason": "本轮未能从中国竞彩网官方接口读取该场hhad/goalLine。第三方镜像或亚洲盘不替代官方竞彩盘口。"
+  },
+  "prediction_id": "pred-20261112-1517-int-uzb-rus-03",
+  "strategy_id": "S15-20261112-INT-UZB-RUS-03",
+  "match": {
+    "home": "Uzbekistan",
+    "away": "Russia",
+    "competition": "International Friendly",
+    "category": "national_team",
+    "kickoff_utc": "2026-11-12T15:00:00Z",
+    "kickoff_beijing": "2026-11-12T23:00:00+08:00",
+    "venue": "Pakhtakor Stadium, Tashkent"
+  },
+  "market": {
+    "bookmaker_1x2": {
+      "home": 3.78,
+      "draw": 3.48,
+      "away": 1.99,
+      "source": "Olimpbet",
+      "captured_at_beijing": "2026-11-12T15:17:00+08:00"
+    },
+    "cross_book_reference": {
+      "home": 3.9,
+      "draw": 3.4,
+      "away": 2.15,
+      "source": "OddsBash",
+      "provider_updated_at": "2026-11-11 21:49（页面未明确时区）"
+    },
+    "total_2_5": {
+      "over": 2.2,
+      "under": 1.67,
+      "source": "Olimpbet",
+      "captured_at_beijing": "2026-11-12T15:17:00+08:00"
+    },
+    "same_book_open_to_live": "未取得；不同机构报价不拼接为赔率走势。",
+    "official_sporttery": "未找到可核验官方竞彩受注场次/让球数。"
+  },
+  "prediction": {
+    "first_score": "0-1",
+    "second_score": "1-1",
+    "ninety_minute": "负",
+    "half_full": "平负",
+    "model_confidence": 56,
+    "confidence_definition": "模型置信度，不代表实际命中概率。"
+  },
+  "context": {
+    "form": "次级数据页近5场：乌兹别克斯坦2胜3负；俄罗斯4胜1平。未逐场完成官方比赛ID核对。",
+    "team_news": "Abdukodir Khusanov与Aleksandr Golovin缺席；Dmitriy Barinov、Nikita Krivtsov状态存疑，另有俄罗斯球员缺阵报道。",
+    "tactics": "两队预计首发与阵型尚无可靠确认；友谊赛可能试阵，不推定固定阵型。",
+    "referee": "Sadullo Gulmurodi（次级赛程资料）。",
+    "weather": "Tashkent晚间约8°C降至6°C，风弱、无降水预报。",
+    "lineups": "官方首发尚未发布。",
+    "next_match_importance": "未找到双方下一场比赛的可靠、同一口径赛程证据；本场按友谊赛处理，轮换风险高。"
+  },
+  "risk_flags": [
+    "双方关键球员缺席，尤其Khusanov与Golovin。",
+    "友谊赛轮换、换人幅度可能大于正式赛事。",
+    "俄罗斯近期状态较好但客场环境和中场缺员增加不确定性。",
+    "没有官方竞彩盘口、官方首发或赛前xG。"
+  ],
+  "data_completeness_pct": 50,
+  "missing_fields": [
+    "双方逐场近3场比分及比赛ID",
+    "官方首发/替补",
+    "赛前xG/xGA与自有模型λ",
+    "官方竞彩hhad盘口及赔率时间戳",
+    "同一机构初盘至即时盘序列",
+    "正式确认裁判任命",
+    "下一场对手重要性资料",
+    "已核验的球队/赛事规范ID"
+  ]
+}

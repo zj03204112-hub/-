@@ -1,0 +1,176 @@
+{
+  "schema_version": "market-refresh.v2",
+  "run_id": "2026-11-12-1500-run11",
+  "captured_at_beijing": "2026-11-12T15:17:00+08:00",
+  "official_sporttery_api": {
+    "status": "not_retrieved",
+    "reason": "本轮官方webapi.sporttery.cn接口访问失败；第三方镜像数据不升级为官方数据。"
+  },
+  "matches": [
+    {
+      "match": "Türkiye-Belgium",
+      "market_1x2": {
+        "home": 3.81,
+        "draw": 3.73,
+        "away": 1.87,
+        "bookmaker": "Betmaster"
+      },
+      "market_movement": {
+        "open": {
+          "home": 3.23,
+          "draw": 4.12,
+          "away": 1.88
+        },
+        "latest": {
+          "home": 3.77,
+          "draw": 3.96,
+          "away": 1.83
+        },
+        "provider": "足彩网百家指数第三方聚合",
+        "provider_timestamp": "not exposed"
+      },
+      "asian_handicap": {
+        "line": "Belgium -0.5",
+        "odds": 1.75,
+        "opponent_line": "Türkiye +0.5",
+        "opponent_odds": 2.01,
+        "bookmaker": "Stake.com"
+      },
+      "total_2_5": {
+        "over": 1.57,
+        "under": 2.68,
+        "bookmaker": "Betmaster"
+      },
+      "official_jz": {
+        "line": null,
+        "status": "无法核验"
+      },
+      "third_party_mirror": {
+        "line": "+1",
+        "used": false
+      }
+    },
+    {
+      "match": "Armenia-Cyprus",
+      "market_1x2": {
+        "home": 2.16,
+        "draw": 3.4,
+        "away": 3.07,
+        "provider": "Oddsrun aggregator"
+      },
+      "market_movement": {
+        "open": {
+          "home": 2.17,
+          "draw": 3.42,
+          "away": 3.01
+        },
+        "latest": {
+          "home": 2.33,
+          "draw": 3.18,
+          "away": 3
+        },
+        "provider": "足彩网百家指数第三方聚合",
+        "provider_timestamp": "not exposed"
+      },
+      "asian_handicap": null,
+      "total_2_5": null,
+      "official_jz": {
+        "line": null,
+        "status": "无法核验"
+      },
+      "third_party_mirror": {
+        "line": "Armenia -1",
+        "used": false
+      }
+    },
+    {
+      "match": "Uzbekistan-Russia",
+      "market_1x2": {
+        "home": 3.78,
+        "draw": 3.48,
+        "away": 1.99,
+        "bookmaker": "Olimpbet"
+      },
+      "cross_book_reference": {
+        "home": 3.9,
+        "draw": 3.4,
+        "away": 2.15,
+        "bookmaker": "OddsBash",
+        "provider_updated_at": "2026-11-11 21:49; timezone unspecified"
+      },
+      "total_2_5": {
+        "over": 2.2,
+        "under": 1.67,
+        "bookmaker": "Olimpbet"
+      },
+      "same_book_open_to_live": null,
+      "official_jz": {
+        "line": null,
+        "status": "无法核验"
+      }
+    },
+    {
+      "match": "Malta-Eswatini",
+      "market_1x2": {
+        "home": 1.55,
+        "draw": 3.7,
+        "away": 5.2,
+        "bookmaker": "Betmaster"
+      },
+      "market_movement": {
+        "open": {
+          "home": 1.56,
+          "draw": 3.83,
+          "away": 5.34
+        },
+        "latest": {
+          "home": 1.54,
+          "draw": 3.89,
+          "away": 5.5
+        },
+        "provider": "OddsFilter multi-book average",
+        "provider_capture_utc": "2026-11-11T12:01:00Z",
+        "stale_at_1500": true
+      },
+      "total_2_5": {
+        "over": 2.1,
+        "under": 1.73,
+        "provider": "StatsBet"
+      },
+      "official_jz": {
+        "line": null,
+        "status": "无法核验"
+      }
+    },
+    {
+      "match": "Barcelona Women-Arsenal Women",
+      "market_1x2": {
+        "home": 1.27,
+        "draw": 6,
+        "away": 9.75,
+        "provider": "Oddschecker best price"
+      },
+      "reference_average": {
+        "home": 1.24,
+        "draw": 5.86,
+        "away": 8.51,
+        "provider": "OddsFilter",
+        "provider_capture_utc": "2026-11-11T12:11:00Z",
+        "stale_at_1500": true
+      },
+      "reference_total_2_5": {
+        "over": 1.24,
+        "under": 3.67,
+        "provider": "OddsFilter",
+        "provider_capture_utc": "2026-11-11T12:11:00Z",
+        "stale_at_1500": true
+      },
+      "same_book_open_to_live": null,
+      "official_jz": {
+        "line": null,
+        "status": "无法核验"
+      }
+    }
+  ],
+  "odds_policy": "第三方欧赔/亚洲盘/大小球只作市场参考，不替代官方竞彩hhad；不同机构报价不拼接成同一家公司的初盘至即时盘走势。"
+}

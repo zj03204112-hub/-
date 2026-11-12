@@ -1,0 +1,102 @@
+{
+  "schema_version": "prematch-prediction-snapshot.v1",
+  "snapshot_status": "immutable_individual_snapshot",
+  "immutable": true,
+  "captured_at_beijing": "2026-11-12T15:17:00+08:00",
+  "model_version": "P15-PROVISIONAL-0.1",
+  "model_scope_note": "研究参考预测；未执行V5.1正式模型，不修改V5.1参数或冻结验证样本。当前SQLite未连接，未进行正式模型回测或概率校准。",
+  "prediction_method": "以可追溯的赛前赔率、近况、已知伤停、赛程与战术信息作定性融合；不以赔率单独决定胜负。",
+  "official_sporttery_handicap": {
+    "verified": false,
+    "official_match_number": null,
+    "line": null,
+    "predicted_hhad": "无法核验",
+    "mapping_performed": false,
+    "reason": "本轮未能从中国竞彩网官方接口读取该场hhad/goalLine。第三方镜像或亚洲盘不替代官方竞彩盘口。"
+  },
+  "prediction_id": "pred-20261112-1517-nl-tur-bel-01",
+  "strategy_id": "S15-20261112-NL-TUR-BEL-01",
+  "match": {
+    "home": "Türkiye",
+    "away": "Belgium",
+    "competition": "UEFA Nations League A1",
+    "category": "national_team",
+    "official_kickoff_utc": "2026-11-12T17:00:00Z",
+    "kickoff_beijing": "2026-11-13T01:00:00+08:00"
+  },
+  "market": {
+    "bookmaker_1x2": {
+      "home": 3.81,
+      "draw": 3.73,
+      "away": 1.87,
+      "source": "Betmaster",
+      "captured_at_beijing": "2026-11-12T15:17:00+08:00"
+    },
+    "market_average_open_to_latest": {
+      "open": {
+        "home": 3.23,
+        "draw": 4.12,
+        "away": 1.88
+      },
+      "latest": {
+        "home": 3.77,
+        "draw": 3.96,
+        "away": 1.83
+      },
+      "source": "足彩网百家指数第三方聚合",
+      "provider_timestamp": "页面未显示",
+      "captured_at_beijing": "2026-11-12T15:17:00+08:00"
+    },
+    "bookmaker_asian_line": {
+      "home": "+0.5",
+      "away": "-0.5",
+      "home_odds": 2.01,
+      "away_odds": 1.75,
+      "source": "Stake.com",
+      "captured_at_beijing": "2026-11-12T15:17:00+08:00"
+    },
+    "total_2_5": {
+      "over": 1.57,
+      "under": 2.68,
+      "source": "Betmaster",
+      "captured_at_beijing": "2026-11-12T15:17:00+08:00"
+    },
+    "third_party_jz_mirror_line": {
+      "line": "+1",
+      "accepted": false,
+      "reason": "仅第三方竞彩镜像，不视为官方盘口，不参与让球映射。"
+    }
+  },
+  "prediction": {
+    "first_score": "1-2",
+    "second_score": "0-1",
+    "ninety_minute": "负",
+    "half_full": "平负",
+    "model_confidence": 59,
+    "confidence_definition": "模型置信度，不代表实际命中概率。"
+  },
+  "context": {
+    "form": "土耳其近5场序列为1胜4负；比利时近5场为2胜2平1负（来源报道序列，未完成逐场比分ID核验）。",
+    "team_news": "土耳其新帅Sergen Yalçın首战；比利时Romelu Lukaku因髋部问题缺席，Jeremy Doku回归，Kevin De Bruyne与Youri Tielemans恢复可用，Roméo Lavia停赛。",
+    "tactics": "双方预计4-2-3-1；比利时中前场创造力回升，但缺少Lukaku后中锋终结点需重新分配。",
+    "referee": "Sandro Schärer（UEFA官方比赛信息）。",
+    "weather": "Izmir附近第三方比赛天气页约18.3°C、湿度77%、风约16.2km/h；天气源非官方且与常规天气页口径不完全一致。",
+    "lineups": "官方首发尚未发布；仅有预计阵型，不能当作确认首发。",
+    "next_match_importance": "比利时下一场对意大利（11月15日），仍有争取小组前二的积分压力；土耳其处于小组末位，主帅首战有战意但稳定性未知。"
+  },
+  "risk_flags": [
+    "土耳其换帅首战，战术与人员使用存在不确定性。",
+    "Lukaku缺席削弱比利时中锋支点；Doku回归不等于比赛状态完全恢复。",
+    "土耳其主场与天气信息存在不确定性。",
+    "没有官方首发、赛前xG及官方竞彩让球数。"
+  ],
+  "data_completeness_pct": 58,
+  "missing_fields": [
+    "双方逐场近3场比分及比赛ID",
+    "官方首发/替补",
+    "赛前xG/xGA与自有模型λ",
+    "官方竞彩hhad盘口及赔率时间戳",
+    "同一机构完整初盘至即时盘序列",
+    "已核验的球队/赛事规范ID"
+  ]
+}

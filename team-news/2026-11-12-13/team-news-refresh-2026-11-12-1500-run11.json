@@ -1,0 +1,99 @@
+{
+  "schema_version": "prematch-context-refresh.v2",
+  "run_id": "2026-11-12-1500-run11",
+  "captured_at_beijing": "2026-11-12T15:17:00+08:00",
+  "matches": [
+    {
+      "match": "Türkiye-Belgium",
+      "last5_form": {
+        "home": "W-L-L-L-L (secondary sequence; exact last-three score IDs not checked)",
+        "away": "L-W-L-W-L (secondary sequence; exact last-three score IDs not checked)"
+      },
+      "injuries": "Lukaku out (hip); Doku returns; De Bruyne and Tielemans available; Lavia suspended; Turkey new coach debut; no official XI.",
+      "probable_tactics": "both 4-2-3-1 (media probable, not official)",
+      "referee": "Sandro Schärer; UEFA official",
+      "weather": "near venue secondary match page 18.3°C, humidity77%, wind16.2km/h; source disagreement risk",
+      "next_fixture_context": "Belgium next faces Italy on 15 Nov; high group-stage importance.",
+      "prematch_xg": "no traceable provider match-level xG; own λ not generated"
+    },
+    {
+      "match": "Armenia-Cyprus",
+      "last5_form": {
+        "home": "D-W-L-L-D (UEFA)",
+        "away": "W-L-D-W-W (UEFA)"
+      },
+      "injuries": "Armenia: Eduard Spertsyan out; several recently returned players uncertain. Cyprus: Andronikos Kakoullis injured, Kostas Pileas suspended.",
+      "probable_tactics": "both 4-2-3-1; Armenia without primary creator, Cyprus likely compact/transitional (preview analysis)",
+      "referee": "Orel Grinfeld; secondary match-calendar source, official UEFA appointment page not retrieved",
+      "weather": "Yerevan about 7°C at 18:00 local, near-zero wind, no rain",
+      "next_fixture_context": "Armenia-Latvia and Cyprus-Montenegro on 15 Nov.",
+      "prematch_xg": "no traceable provider match-level xG; own λ not generated"
+    },
+    {
+      "match": "Uzbekistan-Russia",
+      "last5_form": {
+        "home": "2W-0D-3L (secondary source)",
+        "away": "4W-1D-0L (secondary source)"
+      },
+      "injuries": "Khusanov and Golovin absent; Barinov and Krivtsov doubtful per secondary reports.",
+      "probable_tactics": "not reliably verified; friendly rotation risk",
+      "referee": "Sadullo Gulmurodi; secondary source only",
+      "weather": "Tashkent around 8°C early evening, 6°C late evening, light wind and no rain",
+      "next_fixture_context": "next-opponent importance not verified",
+      "prematch_xg": "no traceable provider match-level xG; own λ not generated"
+    },
+    {
+      "match": "Malta-Eswatini",
+      "last5_form": {
+        "home": "W-D-W-W-W; 8 scored, 2 conceded",
+        "away": "L-L-L-D-L; 3 scored, 11 conceded"
+      },
+      "injuries": "Malta FA published 28-player squad; no confirmed matchday injury bulletin found.",
+      "probable_tactics": "not verified",
+      "referee": "not found",
+      "weather": "Ta' Qali about 21°C, clear, wind 8-10km/h, low rain chance",
+      "next_fixture_context": "Malta plays Gibraltar on 16 Nov in a decisive Nations League group match; rotation/preparation risk.",
+      "prematch_xg": "Kings Odds provider model estimate 1.75-0.57; not measured and not our own model"
+    },
+    {
+      "match": "Barcelona Women-Arsenal Women",
+      "last5_form": {
+        "home": "last five average 6.3 goals scored, 0.7 conceded",
+        "away": "last five average 2.0 goals scored, 0.7 conceded; Arsenal last WSL match 2-1 Liverpool"
+      },
+      "injuries": "Barcelona: Aleixandri, Kika Nazareth, Vicky López, Kerolin reported out. Arsenal: Reid, Caldentey, Kelly, Agyemang, Cerci out; Hinds and Blackstenius doubtful.",
+      "probable_tactics": "Barcelona 4-3-3, Arsenal 4-2-3-1 (media probable)",
+      "referee": "Ivana Martinčić; secondary appointment database",
+      "weather": "Barcelona about 17°C at 18:00, wind 2m/s, no rain expected",
+      "next_fixture_context": "Barcelona at Deportivo Abanca 15 Nov; Arsenal hosts London City Lionesses 14 Nov.",
+      "prematch_xg": "no traceable provider match-level xG; odds model expected-goal figure not used as measured xG"
+    },
+    {
+      "match": "Benfica Women-Austria Wien Women",
+      "status": "early_registration_only",
+      "kickoff_beijing": "2026-11-13T04:00:00+08:00",
+      "hours_from_capture": 12.72,
+      "market_1x2": {
+        "home": 1.65,
+        "draw": 4.1,
+        "away": 4.75,
+        "provider": "StatsBet"
+      },
+      "total_2_5": {
+        "over": 1.8,
+        "under": 2.32,
+        "provider": "StatsBet"
+      },
+      "referee": "Caroline Lanssens; secondary appointment source",
+      "team_news": "Benfica official says match postponed from 11 Nov to 12 Nov 20:00 local due to weather alert; training routine adjusted.",
+      "forecast": "outside 6–12h window; no prediction generated."
+    }
+  ],
+  "global_missing": [
+    "official starting lineups and substitutes not yet released",
+    "exact recent-three match scores with stable match IDs incomplete",
+    "pre-match xG/xGA and own λ unavailable",
+    "official Sporttery hhad data unavailable",
+    "some referees/weather/next-opponent importance only secondary or missing"
+  ]
+}

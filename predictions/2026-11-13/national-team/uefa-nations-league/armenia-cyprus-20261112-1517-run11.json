@@ -1,0 +1,91 @@
+{
+  "schema_version": "prematch-prediction-snapshot.v1",
+  "snapshot_status": "immutable_individual_snapshot",
+  "immutable": true,
+  "captured_at_beijing": "2026-11-12T15:17:00+08:00",
+  "model_version": "P15-PROVISIONAL-0.1",
+  "model_scope_note": "研究参考预测；未执行V5.1正式模型，不修改V5.1参数或冻结验证样本。当前SQLite未连接，未进行正式模型回测或概率校准。",
+  "prediction_method": "以可追溯的赛前赔率、近况、已知伤停、赛程与战术信息作定性融合；不以赔率单独决定胜负。",
+  "official_sporttery_handicap": {
+    "verified": false,
+    "official_match_number": null,
+    "line": null,
+    "predicted_hhad": "无法核验",
+    "mapping_performed": false,
+    "reason": "本轮未能从中国竞彩网官方接口读取该场hhad/goalLine。第三方镜像或亚洲盘不替代官方竞彩盘口。"
+  },
+  "prediction_id": "pred-20261112-1517-nl-arm-cyp-02",
+  "strategy_id": "S15-20261112-NL-ARM-CYP-02",
+  "match": {
+    "home": "Armenia",
+    "away": "Cyprus",
+    "competition": "UEFA Nations League C2",
+    "category": "national_team",
+    "official_kickoff_utc": "2026-11-12T17:00:00Z",
+    "kickoff_beijing": "2026-11-13T01:00:00+08:00"
+  },
+  "market": {
+    "market_average_open_to_latest": {
+      "open": {
+        "home": 2.17,
+        "draw": 3.42,
+        "away": 3.01
+      },
+      "latest": {
+        "home": 2.33,
+        "draw": 3.18,
+        "away": 3
+      },
+      "source": "足彩网百家指数第三方聚合",
+      "provider_timestamp": "页面未显示",
+      "captured_at_beijing": "2026-11-12T15:17:00+08:00"
+    },
+    "market_1x2_reference": {
+      "home": 2.16,
+      "draw": 3.4,
+      "away": 3.07,
+      "source": "Oddsrun聚合页",
+      "captured_at_beijing": "2026-11-12T15:17:00+08:00"
+    },
+    "third_party_jz_mirror_line": {
+      "line": "-1",
+      "accepted": false,
+      "reason": "仅第三方竞彩镜像，不视为官方盘口，不参与让球映射。"
+    },
+    "asian_handicap": "未取得可核验的同一机构亚洲盘线。",
+    "total_goals": "未取得可核验的当前大小球线。"
+  },
+  "prediction": {
+    "first_score": "1-1",
+    "second_score": "0-1",
+    "ninety_minute": "平",
+    "half_full": "平平",
+    "model_confidence": 48,
+    "confidence_definition": "模型置信度，不代表实际命中概率。"
+  },
+  "context": {
+    "form": "UEFA官方近5场状态序列：亚美尼亚D-W-L-L-D；塞浦路斯W-L-D-W-W。",
+    "team_news": "亚美尼亚Eduard Spertsyan因伤缺席；Vahan Bichakhchyan、Erik Simonyan、Kamo Hovhannisyan近期伤愈情况仍有不确定性。塞浦路斯Andronikos Kakoullis受伤缺席，Kostas Pileas停赛。",
+    "tactics": "预计双方4-2-3-1；亚美尼亚需要在缺少Spertsyan时分担组织，塞浦路斯可能保持紧凑防线并寻找转换与定位球机会。",
+    "referee": "Orel Grinfeld（次级赛程/裁判资料，未在本轮取得UEFA官方任命页）。",
+    "weather": "Yerevan约7°C（晚间继续降温），低风、无明显降水预报。",
+    "lineups": "官方首发尚未发布；阵型仅为预计。",
+    "next_match_importance": "亚美尼亚11月15日对拉脱维亚，塞浦路斯11月15日对黑山；本场关系到小组第二及后续排名。"
+  },
+  "risk_flags": [
+    "亚美尼亚核心组织者Spertsyan缺席。",
+    "塞浦路斯近期状态更好，且首回合曾2-0击败亚美尼亚。",
+    "两队得分效率与比赛节奏存在较大波动，平局方向置信度低。",
+    "官方首发、赛前xG、大小球和竞彩盘口缺失。"
+  ],
+  "data_completeness_pct": 54,
+  "missing_fields": [
+    "双方逐场近3场比分及比赛ID",
+    "官方首发/替补",
+    "赛前xG/xGA与自有模型λ",
+    "官方竞彩hhad盘口及赔率时间戳",
+    "同一机构大小球初盘至即时盘序列",
+    "UEFA官方裁判任命页",
+    "已核验的球队/赛事规范ID"
+  ]
+}

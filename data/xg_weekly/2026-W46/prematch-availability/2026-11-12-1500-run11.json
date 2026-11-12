@@ -1,0 +1,70 @@
+{
+  "schema_version": "prematch-xg-availability.v1",
+  "run_id": "2026-11-12-1500-run11",
+  "iso_week": "2026-W46",
+  "captured_at_beijing": "2026-11-12T15:17:00+08:00",
+  "scope": "The five provisional prediction matches in the 6–12 hour window",
+  "records": [
+    {
+      "match": "Türkiye-Belgium",
+      "match_id": null,
+      "home_xg": null,
+      "away_xg": null,
+      "home_xga": null,
+      "away_xga": null,
+      "source": null,
+      "measured_or_provider_estimate": null,
+      "own_model_estimate": null,
+      "missing_reason": "未取得可追溯的赛前逐场xG/xGA；不以赛后xG回填，不以赔率隐含总进球代替xG。"
+    },
+    {
+      "match": "Armenia-Cyprus",
+      "match_id": null,
+      "home_xg": null,
+      "away_xg": null,
+      "home_xga": null,
+      "away_xga": null,
+      "source": null,
+      "measured_or_provider_estimate": null,
+      "own_model_estimate": null,
+      "missing_reason": "未取得可追溯的赛前逐场xG/xGA；不以赛后xG回填，不以赔率隐含总进球代替xG。"
+    },
+    {
+      "match": "Uzbekistan-Russia",
+      "match_id": null,
+      "home_xg": null,
+      "away_xg": null,
+      "home_xga": null,
+      "away_xga": null,
+      "source": null,
+      "measured_or_provider_estimate": null,
+      "own_model_estimate": null,
+      "missing_reason": "未取得可追溯的赛前逐场xG/xGA；不以赛后xG回填，不以赔率隐含总进球代替xG。"
+    },
+    {
+      "match": "Malta-Eswatini",
+      "match_id": null,
+      "home_xg": null,
+      "away_xg": null,
+      "home_xga": null,
+      "away_xga": null,
+      "source": null,
+      "measured_or_provider_estimate": null,
+      "own_model_estimate": null,
+      "missing_reason": "未取得可追溯的赛前逐场xG/xGA；不以赛后xG回填，不以赔率隐含总进球代替xG。"
+    },
+    {
+      "match": "Barcelona Women-Arsenal Women",
+      "match_id": null,
+      "home_xg": null,
+      "away_xg": null,
+      "home_xga": null,
+      "away_xga": null,
+      "source": null,
+      "measured_or_provider_estimate": null,
+      "own_model_estimate": null,
+      "missing_reason": "未取得可追溯的赛前逐场xG/xGA；不以赛后xG回填，不以赔率隐含总进球代替xG。"
+    }
+  ],
+  "separation_policy": "Kings Odds Malta 1.75-0.57 is stored as a provider model estimate in team-news; it is not measured xG and not our own model estimate. No such values are merged into weekly measured-xG snapshots."
+}

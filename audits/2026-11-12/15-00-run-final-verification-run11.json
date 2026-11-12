@@ -1,0 +1,88 @@
+{
+  "schema_version": "daily-football-run-audit.v3",
+  "run_id": "2026-11-12-1500-run11",
+  "generated_at_beijing": "2026-11-12T15:17:00+08:00",
+  "ten_am_review_reference": "automation/daily-football-2026-11-12-1000-run11",
+  "ten_am_review": {
+    "previous_beijing_date": "2026-11-11",
+    "tracked_matches": 34,
+    "immutable_snapshots": 2,
+    "provisional_preview_records": 19,
+    "matches_without_snapshot": 13,
+    "immutable": {
+      "ninety_minute": "1/2",
+      "first_score": "0/2",
+      "second_score": "0/2",
+      "half_full": "0/2",
+      "official_handicap": "0 verified; 2 unverified",
+      "risk_flags": "not scored"
+    },
+    "provisional_only": {
+      "ninety_minute": "9/19",
+      "first_score": "3/19",
+      "second_score": "1/19",
+      "half_full": "5/19",
+      "official_handicap": "0 verified; 19 unverified",
+      "risk_flags": "not scored"
+    },
+    "combined_diagnostic_not_v5_1": {
+      "ninety_minute": "10/21 (47.6%)",
+      "actual_draws": 4,
+      "correctly_predicted_draws": 0,
+      "matches_with_5_or_more_goals": 3
+    }
+  },
+  "fifteen_pm": {
+    "today_and_next_day_schedule": {
+      "today": 20,
+      "next_day": 45,
+      "window_matches": 32,
+      "predictions": 5,
+      "withheld": 27,
+      "early_outside_window": 10,
+      "core_league_fixtures": 0
+    },
+    "official_jz_lines_verified": 0,
+    "third_party_asian_lines_used_as_jz": false,
+    "official_lineup_confirmed": 0,
+    "prematch_xg_verified": 0,
+    "provider_model_xg_estimates_used_as_own": false
+  },
+  "xg_weekly_reference": {
+    "iso_week": "2026-W46",
+    "matches_in_audit_batch": 114,
+    "matches_with_any_provider_xg": 19,
+    "matches_missing_all_provider_xg": 95,
+    "provider_series": 20,
+    "team_observations_with_xg": 40,
+    "team_observations_missing": 190,
+    "measured_xg_matches": 0,
+    "own_model_estimate_matches": 0,
+    "weekly_snapshot_rows": 228,
+    "per90_written": 0,
+    "per90_missing_reason": "period definition not sufficiently explicit in source pages",
+    "canonical_team_competition_ids_resolved": false
+  },
+  "repository": {
+    "repository": "zj03204112-hub/-",
+    "base_branch": "automation/daily-football-2026-11-12-1000-run11",
+    "new_branch": "automation/daily-football-2026-11-12-1500-run11",
+    "sqlite_file_present_in_repository": true,
+    "sqlite_file_bytes": 63332352,
+    "sqlite_connection_active": false,
+    "sqlite_write_performed": false,
+    "files_append_only": true
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "model_rule_changes": false,
+    "production_v5_1_run": false
+  },
+  "limitations": [
+    "官方Sporttery接口本轮未成功读取；第三方镜像盘口不作为官方竞彩盘口。",
+    "SQLite二进制文件存在于仓库，但当前运行环境未建立数据库连接，不能验证/写入规范ID。",
+    "32场进入6–12小时窗口，仅5场有足够的公开资料作研究参考预测；其余27场明确不预测。",
+    "官方首发未发布；部分近3场、裁判、天气与盘口时间序列缺失。"
+  ]
+}
