@@ -1,0 +1,106 @@
+{
+  "schema_version": "prematch-prediction-snapshot.v1",
+  "snapshot_status": "immutable_individual_snapshot",
+  "immutable": true,
+  "captured_at_beijing": "2026-11-12T15:21:00+08:00",
+  "model_version": "P15-PROVISIONAL-0.1",
+  "model_scope_note": "研究参考预测；未执行V5.1正式模型，不修改V5.1参数或冻结验证样本。当前SQLite未连接，未进行正式模型回测或概率校准。",
+  "prediction_method": "以可追溯的赛前赔率、近况、已知伤停、赛程与战术信息作定性融合；不以赔率单独决定胜负。",
+  "official_sporttery_handicap": {
+    "verified": false,
+    "official_match_number": null,
+    "line": null,
+    "predicted_hhad": "无法核验",
+    "mapping_performed": false,
+    "reason": "本轮未能从中国竞彩网官方接口读取该场hhad/goalLine。第三方镜像或亚洲盘不替代官方竞彩盘口。"
+  },
+  "prediction_id": "pred-20261112-1521-uwcl-bar-ars-05-r2",
+  "strategy_id": "S15-20261112-UWCL-BAR-ARS-05",
+  "match": {
+    "home": "Barcelona Women",
+    "away": "Arsenal Women",
+    "competition": "UEFA Women's Champions League League Phase MD4",
+    "category": "continental_club",
+    "kickoff_utc": "2026-11-12T17:45:00Z",
+    "kickoff_beijing": "2026-11-13T01:45:00+08:00",
+    "venue": "Spotify Camp Nou"
+  },
+  "market": {
+    "current_best_1x2": {
+      "home": 1.222,
+      "draw": 7,
+      "away": 11,
+      "fractional": {
+        "home": "2/9",
+        "draw": "6/1",
+        "away": "10/1"
+      },
+      "source": "Oddschecker",
+      "source_url": "https://www.oddschecker.com/football/womens-club/womens-champions-league/barcelona-women-v-arsenal-women/winner",
+      "source_last_updated_utc": "2026-11-12T07:16:00Z",
+      "captured_at_beijing": "2026-11-12T15:21:00+08:00"
+    },
+    "reference_average_1x2": {
+      "home": 1.24,
+      "draw": 5.86,
+      "away": 8.51,
+      "source": "OddsFilter",
+      "source_capture_utc": "2026-11-11T12:11:00Z",
+      "note": "较早快照，不视为当前盘口。"
+    },
+    "reference_total_2_5": {
+      "over": 1.24,
+      "under": 3.67,
+      "source": "OddsFilter",
+      "source_capture_utc": "2026-11-11T12:11:00Z",
+      "note": "较早快照；不作为当前即时盘。"
+    },
+    "same_book_open_to_live": "未取得可比的同一机构初盘至即时盘时间序列。",
+    "official_sporttery": "未找到可核验官方竞彩受注场次/让球数。",
+    "correct_score_market_top": {
+      "first": "3-0",
+      "first_odds": "9/1",
+      "second": "3-1",
+      "second_odds": "19/2",
+      "source": "Oddschecker",
+      "source_last_updated_utc": "2026-11-12T07:16:00Z"
+    }
+  },
+  "prediction": {
+    "first_score": "3-0",
+    "second_score": "3-1",
+    "ninety_minute": "胜",
+    "half_full": "胜胜",
+    "model_confidence": 73,
+    "confidence_definition": "模型置信度，不代表实际命中概率。"
+  },
+  "context": {
+    "form": "Barcelona近5场场均进6.3球、失0.7球；Arsenal近5场场均进2球、失0.7球。Arsenal最近一场WSL 2-1击败Liverpool。",
+    "team_news": "Barcelona预计缺少Laia Aleixandri、Kika Nazareth、Vicky López、Kerolin；Arsenal预计缺少Katie Reid、Mariona Caldentey、Chloe Kelly、Michelle Agyemang、Selina Cerci，Hinds与Blackstenius出场存疑。",
+    "tactics": "Barcelona预计4-3-3，以控球与高位压迫为主；Arsenal预计4-2-3-1，更多依赖边路推进与转换。以上为媒体预计，不是官方首发。",
+    "referee": "Ivana Martinčić（女足欧冠裁判指派资料）。",
+    "weather": "Barcelona约17°C，风约2m/s，晚间无明显降水预报。",
+    "lineups": "双方官方首发尚未发布；仅有媒体预计阵容。",
+    "next_match_importance": "Barcelona 11月15日客战Deportivo Abanca；Arsenal 11月14日迎战London City Lionesses，间隔较短，存在轮换/负荷管理风险。"
+  },
+  "risk_flags": [
+    "Barcelona与Arsenal均有多名伤员，实际可用攻击手会影响进球分布。",
+    "Barcelona优势明显，但强势市场价格可能压低冷门与平局概率。",
+    "总进球市场偏高，但不可把大球赔率直接等同于高比分确定性。",
+    "赛前xG未取得可追溯逐场供应商输入；官方竞彩盘口缺失。",
+    "两队均有数日内的国内联赛任务。",
+    "r2比分排序依据15:16北京时间的最新Oddschecker胜平负与正确比分市场快照调整；不代表V5.1重算。"
+  ],
+  "data_completeness_pct": 68,
+  "missing_fields": [
+    "双方逐场近3场比分及比赛ID",
+    "官方首发/替补",
+    "赛前xG/xGA与自有模型λ",
+    "官方竞彩hhad盘口及赔率时间戳",
+    "同一机构初盘至即时盘时间序列",
+    "已核验的球队/赛事规范ID"
+  ],
+  "supersedes_prediction_id": "pred-20261112-1517-uwcl-bar-ars-05",
+  "snapshot_revision": "r2",
+  "revision_reason": "追加核实Oddschecker当前页面，页面最后更新时间为2026-11-12 07:16 UTC（北京时间15:16），当前胜平负最佳价为2/9、6/1、10/1，正确比分市场优先列出Barcelona 3-0与3-1。原r1快照保留不覆盖；本次只追加新市场快照与比分排序，不修改V5.1或模型规则。"
+}
