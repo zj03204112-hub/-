@@ -1,0 +1,70 @@
+{
+  "schema_version": "venue-weather-correction.v1",
+  "run_id": "2026-11-12-1500-run11-weather-correction-r1",
+  "captured_at_beijing": "2026-11-12T15:27:00+08:00",
+  "matches": [
+    {
+      "match": "Türkiye-Belgium",
+      "venue_city": "Izmir",
+      "local_kickoff": "20:00",
+      "forecast": {
+        "temperature_c": 19.4,
+        "conditions": "partly cloudy",
+        "wind_kmh": 18,
+        "rain": "no significant rain indicated"
+      },
+      "source": "https://www.timeanddate.com/weather/turkey/izmir/hourly"
+    },
+    {
+      "match": "Armenia-Cyprus",
+      "venue_city": "Yerevan",
+      "local_kickoff": "21:00",
+      "forecast": {
+        "temperature_c": 3,
+        "conditions": "partly cloudy/clear",
+        "wind_ms": 0,
+        "rain_mm": 0
+      },
+      "source": "https://weather.rambler.ru/v-erevane/12-november/",
+      "note": "修正早先按傍晚7°C估计；开球时段约3°C。"
+    },
+    {
+      "match": "Uzbekistan-Russia",
+      "venue_city": "Tashkent",
+      "local_kickoff": "20:00",
+      "forecast": {
+        "temperature_c": 8,
+        "conditions": "clear to partly cloudy",
+        "wind_ms": 1,
+        "rain_mm": 0
+      },
+      "source": "https://weather.rambler.ru/v-tashkente/12-november/"
+    },
+    {
+      "match": "Malta-Eswatini",
+      "venue_city": "Ta' Qali",
+      "local_kickoff": "18:30",
+      "forecast": {
+        "temperature_c": 22,
+        "conditions": "partly cloudy",
+        "wind_kmh": 27,
+        "rain_probability_pct": 3
+      },
+      "source": "https://weather.com/de-DE/wetter/stundlich/l/Valletta%2BValletta%2BVLT%2BMalta?canonicalCityId=d24f96375ac401d2e88f8031dac7187d",
+      "note": "修正早先8–10km/h的风速估计；当前逐小时预报约24–27km/h南偏西风。"
+    },
+    {
+      "match": "Barcelona Women-Arsenal Women",
+      "venue_city": "Barcelona",
+      "local_kickoff": "18:45",
+      "forecast": {
+        "temperature_c": 17,
+        "conditions": "clear",
+        "wind_ms": 1,
+        "rain_mm": 0
+      },
+      "source": "https://weather.rambler.ru/v-barselone/12-november/"
+    }
+  ],
+  "impact": "仅更新天气字段与风险说明，不改变任何预测方向、比分、置信度或策略编号；历史预测快照不覆盖。"
+}
