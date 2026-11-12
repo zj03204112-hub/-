@@ -1,0 +1,138 @@
+{
+  "schema_version": "github-archive-readback-verification.v1",
+  "run_id": "2026-11-12-1000-run11",
+  "verified_at_beijing": "2026-11-12T10:50:00+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-12-1000-run11",
+  "pre_verification_head_sha": "6fc2d2441c9565d2a1251d490146f876a66287fc",
+  "readback_file_count": 16,
+  "all_json_parse": true,
+  "all_paths_present": true,
+  "record_counts": {
+    "previous_day_tracked_slate": 34,
+    "additional_candidates_original": 61,
+    "additional_candidate_date_correction": 2,
+    "previous_day_broad_scan_total": 97,
+    "current_day_early_results_original": 19,
+    "current_day_reclassified_out": 2,
+    "current_day_early_final": 17,
+    "prediction_records": 21,
+    "immutable_snapshots": 2,
+    "provisional_previews": 19,
+    "no_snapshot_in_tracked_slate": 13,
+    "xg_matches": 114,
+    "xg_team_match_observations": 228,
+    "team_week_snapshot_rows": 228,
+    "xg_provider_estimate_matches": 2,
+    "xg_missing_matches": 112,
+    "team_rows_with_xg": 4,
+    "team_rows_missing_xg": 224,
+    "upcoming_today": 20,
+    "upcoming_next_beijing_date": 45
+  },
+  "files": [
+    {
+      "path": "results/2026-11-11/tracked-slate-results-2026-11-12-1000-run11.json",
+      "sha": "7452af56d4c991d3a2c6090b286fffbc7239af71",
+      "parsed": true,
+      "records": 34
+    },
+    {
+      "path": "results/2026-11-11/additional-national-team-and-continental-candidates-2026-11-12-1000-run11.json",
+      "sha": "7195442fba51dbda9d26753535bedea6a78a084b",
+      "parsed": true,
+      "records": 61
+    },
+    {
+      "path": "results/2026-11-12/early-completed-results-2026-11-12-1000-run11.json",
+      "sha": "f742ce2b54c7b9476d56a9c1f23376f9ec599814",
+      "parsed": true,
+      "records": 19
+    },
+    {
+      "path": "reviews/2026-11-12/previous-beijing-day-review-2026-11-11-1000-run11.json",
+      "sha": "0636f5e77898bfbbaa36aac334463306ce64a101",
+      "parsed": true,
+      "records": 21
+    },
+    {
+      "path": "reviews/2026-11-12/previous-beijing-day-review-correction-2026-11-12-1000-run11-r1.json",
+      "sha": "99456f26345f48934b8600396a8c9d47df29e28a",
+      "parsed": true,
+      "records": 13
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/match-observations/2026-11-12-1000-addendum-run11.json",
+      "sha": "18d46860c19f110c298ed6bb07c6ca8a977accb9",
+      "parsed": true,
+      "records": 228
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/team-snapshots/2026-11-12-1000-addendum-run11.json",
+      "sha": "1f1fba6495b7a122c860378f3e6586ac158e0045",
+      "parsed": true,
+      "records": 228
+    },
+    {
+      "path": "fixtures/2026-11-12-13/schedule-beijing-2026-11-12-13-1000-run11.json",
+      "sha": "28dcf4f44c14ec1052b03325e951cb0b4875ed86",
+      "parsed": true,
+      "records": 65
+    },
+    {
+      "path": "sources/2026-11-12/source-register-1000-run11.json",
+      "sha": "164f571a6a3c4df5c0f0ba5d02ce0ca9febe08fa",
+      "parsed": true,
+      "records": 17
+    },
+    {
+      "path": "audits/2026-11-12/10-00-run-final-verification-run11.json",
+      "sha": "27231e7ff829c3e0747cf6a6be40736fe41c13b0",
+      "parsed": true,
+      "records": 14
+    },
+    {
+      "path": "results/2026-11-11/additional-domestic-cup-candidates-date-correction-2026-11-12-1000-run11.json",
+      "sha": "6b79fb3e6d59253b7d7744d579e09ba07609c102",
+      "parsed": true,
+      "records": 2
+    },
+    {
+      "path": "results/2026-11-12/early-completed-results-date-correction-2026-11-12-1000-run11.json",
+      "sha": "790e9fa9b44f2469b8e40845febfb419d74864ea",
+      "parsed": true,
+      "records": 2
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/corrections/2026-11-12-date-reclassification-run11.json",
+      "sha": "b434f790b8a103297efbc25791a67c34aa5eea95",
+      "parsed": true,
+      "records": 2
+    },
+    {
+      "path": "fixtures/2026-11-12-13/schedule-count-correction-run11.json",
+      "sha": "a39a2aae74f8676f6febf0c90e958502c31c6174",
+      "parsed": true,
+      "records": 8
+    },
+    {
+      "path": "audits/2026-11-12/10-00-run-final-correction-run11-r1.json",
+      "sha": "de6a9196c5e1a7e642d81403b866082f21345347",
+      "parsed": true,
+      "records": 2
+    },
+    {
+      "path": "fixtures/2026-11-12-13/core-league-scan-evidence-run11.json",
+      "sha": "15e70062b7b3ea188d867a306b3d74fa1336f722",
+      "parsed": true,
+      "records": 7
+    }
+  ],
+  "final_policy_checks": {
+    "append_only": true,
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "postmatch_xg_used_as_prematch_input": false,
+    "official_handicap_guessed": false
+  }
+}
