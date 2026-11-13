@@ -1,0 +1,30 @@
+{
+  "schema_version": "source-url-correction.v1",
+  "run_id": "2026-11-13-1000-run11-r1",
+  "generated_at_beijing": "2026-11-13T09:58:54+08:00",
+  "corrections": [
+    {
+      "path": "results/2026-11-12/verified-results-2026-11-13-1000-run11.json",
+      "field": "results[Wests APIA-Adelaide City].source_urls",
+      "change": "replaced unverified URL with official Australian Championship article and exact Kickly match page"
+    },
+    {
+      "path": "results/2026-11-12/verified-results-2026-11-13-1000-run11.json",
+      "field": "results[Ghana-Somalia].source_urls",
+      "change": "removed unverified CAF URL; retained Reuters"
+    },
+    {
+      "path": "fixtures/2026-11-13-14/schedule-beijing-2026-11-13-14-1000-run11.json",
+      "field": "source_urls",
+      "change": "replaced mistyped WorldFootball and unverified CAF schedule URLs with exact retrieved URLs"
+    },
+    {
+      "path": "sources/2026-11-13/source-register-1000-run11.json",
+      "field": "sources",
+      "change": "removed unverified EFL URL; corrected CAF U23, AFCON, WCL and WorldFootball source URLs"
+    }
+  ],
+  "historical_prediction_snapshots_changed": false,
+  "historical_xg_snapshots_changed": false,
+  "v5_1_modified": false
+}
