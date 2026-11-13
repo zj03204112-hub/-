@@ -1,0 +1,330 @@
+{
+  "schema_version": "daily-football-review.v2",
+  "run_id": "2026-11-13-1000-run11",
+  "generated_at_beijing": "2026-11-13T09:58:54+08:00",
+  "previous_beijing_date": "2026-11-12",
+  "result_scope": {
+    "confirmed_full_time": 35,
+    "excluded_postponed_or_cancelled": 2
+  },
+  "immutable_snapshot_count": 1,
+  "matches_without_immutable_snapshot": 34,
+  "immutable_predictions": [
+    {
+      "prediction_id": "pred-20261112-1517-int-uzb-rus-03",
+      "snapshot_path": "predictions/2026-11-12/national-team/friendlies/uzbekistan-russia-20261112-1517-run11.json",
+      "snapshot_status": "immutable_individual_snapshot",
+      "immutable": true,
+      "captured_at_beijing": "2026-11-12T15:17:00+08:00",
+      "strategy_id": "S15-20261112-INT-UZB-RUS-03",
+      "model_version": "P15-PROVISIONAL-0.1",
+      "match": {
+        "home": "Uzbekistan",
+        "away": "Russia",
+        "competition": "International Friendly",
+        "category": "national_team",
+        "kickoff_utc": "2026-11-12T15:00:00Z",
+        "kickoff_beijing": "2026-11-12T23:00:00+08:00",
+        "venue": "Pakhtakor Stadium, Tashkent"
+      },
+      "prediction": {
+        "first_score": "0-1",
+        "second_score": "1-1",
+        "ninety_minute": "负",
+        "half_full": "平负",
+        "model_confidence": 56,
+        "confidence_definition": "模型置信度，不代表实际命中概率。"
+      },
+      "official_sporttery_handicap": {
+        "verified": false,
+        "official_match_number": null,
+        "line": null,
+        "predicted_hhad": "无法核验",
+        "mapping_performed": false,
+        "reason": "本轮未能从中国竞彩网官方接口读取该场hhad/goalLine。第三方镜像或亚洲盘不替代官方竞彩盘口。"
+      },
+      "actual": {
+        "score_90": "2-3",
+        "half_time_score": "1-0",
+        "ninety_minute": "负",
+        "half_full": "胜负"
+      },
+      "evaluation": {
+        "ninety_minute_hit": true,
+        "first_score_hit": false,
+        "second_score_hit": false,
+        "half_full_hit": false,
+        "official_handicap_result": "无法核验",
+        "risk_warning_hit": null,
+        "error_reason": "方向命中，但比分分布明显低估进球尾部：第一比分总进球1、第二比分总进球2，实际总进球5；半全场预测平负，实际胜负。赛前xG、官方首发和同一机构完整初即盘序列缺失。"
+      }
+    }
+  ],
+  "authoritative_metrics": {
+    "sample_size": 1,
+    "ninety_minute": {
+      "hits": 1,
+      "total": 1,
+      "rate_pct": 100
+    },
+    "first_score": {
+      "hits": 0,
+      "total": 1,
+      "rate_pct": 0
+    },
+    "second_score": {
+      "hits": 0,
+      "total": 1,
+      "rate_pct": 0
+    },
+    "half_full": {
+      "hits": 0,
+      "total": 1,
+      "rate_pct": 0
+    },
+    "official_handicap": {
+      "verified": 0,
+      "unverified": 1,
+      "mapping_performed": 0
+    },
+    "risk_warning": {
+      "scored": 0,
+      "not_scored": 1
+    },
+    "probability_metrics": {
+      "brier": null,
+      "log_loss": null,
+      "reason": "该不可变快照未保存独立90分钟概率分布，且只有1个正式快照。"
+    }
+  },
+  "no_snapshot_matches": [
+    {
+      "match_id": "provisional:uefa-women-s-champions-league:2026-11-11:oh-leuven-women-hb-k-ge-women",
+      "home": "OH Leuven Women",
+      "away": "HB Køge Women",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-women-s-champions-league:2026-11-11:juventus-women-ol-lyonnes",
+      "home": "Juventus Women",
+      "away": "OL Lyonnes",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-women-s-europa-cup:2026-11-11:czarni-sosnowiec-women-brann-women",
+      "home": "Czarni Sosnowiec Women",
+      "away": "Brann Women",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-women-s-europa-cup:2026-11-11:br-ndby-women-rosenborg-women",
+      "home": "Brøndby Women",
+      "away": "Rosenborg Women",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-women-s-europa-cup:2026-11-11:fenerbahce-women-real-sociedad-women",
+      "home": "Fenerbahçe Women",
+      "away": "Real Sociedad Women",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-women-s-europa-cup:2026-11-11:eintracht-frankfurt-women-psv-women",
+      "home": "Eintracht Frankfurt Women",
+      "away": "PSV Women",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-women-s-europa-cup:2026-11-11:hammarby-women-spartak-myjava-women",
+      "home": "Hammarby Women",
+      "away": "Spartak Myjava Women",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-women-s-europa-cup:2026-11-11:malmo-ff-women-ajax-women",
+      "home": "Malmö FF Women",
+      "away": "Ajax Women",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:efl-trophy:2026-11-11:sheffield-wednesday-accrington-stanley",
+      "home": "Sheffield Wednesday",
+      "away": "Accrington Stanley",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:efl-trophy:2026-11-11:barnsley-oldham-athletic",
+      "home": "Barnsley",
+      "away": "Oldham Athletic",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:premier-league-international-cup:2026-11-11:sunderland-u21-paris-saint-germain-u21",
+      "home": "Sunderland U21",
+      "away": "Paris Saint-Germain U21",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:premier-league-international-cup:2026-11-11:west-ham-united-u21-juventus-u21",
+      "home": "West Ham United U21",
+      "away": "Juventus U21",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:czech-cup:2026-11-11:artis-brno-fk-jablonec",
+      "home": "Artis Brno",
+      "away": "FK Jablonec",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:lithuanian-cup:2026-11-11:babrungas-minija",
+      "home": "Babrungas",
+      "away": "Minija",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:copa-fares-lopes:2026-11-11:tirol-cefat-fortaleza-b",
+      "home": "Tirol/CEFAT",
+      "away": "Fortaleza B",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:caf-u23-cup-of-nations:2026-11-11:libya-u23-ghana-u23",
+      "home": "Libya U23",
+      "away": "Ghana U23",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:caf-u23-cup-of-nations:2026-11-11:burkina-faso-u23-zambia-u23",
+      "home": "Burkina Faso U23",
+      "away": "Zambia U23",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:international-friendly:2026-11-12:new-zealand-india",
+      "home": "New Zealand",
+      "away": "India",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:u23-international-friendly:2026-11-12:thailand-u23-qatar-u23",
+      "home": "Thailand U23",
+      "away": "Qatar U23",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:australian-championship:2026-11-12:wests-apia-adelaide-city",
+      "home": "Wests APIA",
+      "away": "Adelaide City",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:wk-league:2026-11-12:hwacheon-kspo-women-gyeongju-khnp-women",
+      "home": "Hwacheon KSPO Women",
+      "away": "Gyeongju KHNP Women",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:u23-international-friendly:2026-11-12:singapore-u23-vietnam-u23",
+      "home": "Singapore U23",
+      "away": "Vietnam U23",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-u21-championship-qualification:2026-11-12:iceland-u21-greece-u21",
+      "home": "Iceland U21",
+      "away": "Greece U21",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-u21-international-friendly:2026-11-12:scotland-u21-ukraine-u21",
+      "home": "Scotland U21",
+      "away": "Ukraine U21",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-u19-championship-qualification:2026-11-12:germany-u19-sweden-u19",
+      "home": "Germany U19",
+      "away": "Sweden U19",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:caf-u23-cup-of-nations-qualification:2026-11-12:ethiopia-u23-morocco-u23",
+      "home": "Ethiopia U23",
+      "away": "Morocco U23",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:oman-fa-cup:2026-11-12:oman-club-al-nasr",
+      "home": "Oman Club",
+      "away": "Al Nasr",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:oman-fa-cup:2026-11-12:sur-dhofar",
+      "home": "Sur",
+      "away": "Dhofar",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:oman-fa-cup:2026-11-12:smail-bahla",
+      "home": "Smail",
+      "away": "Bahla",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:international-friendly:2026-11-12:uzbekistan-russia",
+      "home": "Uzbekistan",
+      "away": "Russia",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-u19-championship-qualification:2026-11-12:portugal-u19-lithuania-u19",
+      "home": "Portugal U19",
+      "away": "Lithuania U19",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:caf-u23-cup-of-nations-qualification:2026-11-12:angola-u23-congo-u23",
+      "home": "Angola U23",
+      "away": "Congo U23",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:africa-cup-of-nations-qualification:2026-11-12:ghana-somalia",
+      "home": "Ghana",
+      "away": "Somalia",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-u17-championship-qualification:2026-11-12:bulgaria-u17-serbia-u17",
+      "home": "Bulgaria U17",
+      "away": "Serbia U17",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    },
+    {
+      "match_id": "provisional:uefa-u17-championship-qualification:2026-11-12:portugal-u17-andorra-u17",
+      "home": "Portugal U17",
+      "away": "Andorra U17",
+      "reason": "未找到不可变赛前预测快照；不反推预测，不纳入命中率分母。"
+    }
+  ],
+  "handicap_audit": {
+    "official_sporttery_lines_verified": 0,
+    "third_party_asian_lines_substituted": 0,
+    "second_score_used": false,
+    "mapping_performed": false,
+    "reason": "该场快照明确未取得官方竞彩hhad/goalLine；其他比赛也未找到可核验官方竞彩盘口。"
+  },
+  "error_analysis": [
+    "唯一不可变预测的90分钟方向命中，但第一/第二比分均未命中。",
+    "实际总进球5，两个预测比分总进球仅1和2，属于高进球尾部低估个案。",
+    "半全场预测平负，实际胜负；上半场主队领先未被识别。",
+    "友谊赛轮换风险虽已提示，但风险命中缺少事前可操作定义，故不计分。"
+  ],
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "model_rules_changed": false
+  }
+}

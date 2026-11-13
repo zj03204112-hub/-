@@ -1,0 +1,84 @@
+{
+  "schema_version": "daily-football-run-audit.v4",
+  "run_id": "2026-11-13-1000-run11",
+  "generated_at_beijing": "2026-11-13T09:58:54+08:00",
+  "previous_beijing_date": "2026-11-12",
+  "review": {
+    "confirmed_full_time_matches": 35,
+    "non_completed_excluded": 2,
+    "immutable_prediction_snapshots": 1,
+    "matches_without_immutable_snapshot": 34,
+    "ninety_minute": "1/1",
+    "first_score": "0/1",
+    "second_score": "0/1",
+    "half_full": "0/1",
+    "official_handicap": "0 verified; 1 unverified for the only immutable snapshot",
+    "risk_warning": "not scored; no objective predeclared grading criteria",
+    "no_snapshot_matches_excluded_from_accuracy_denominator": true
+  },
+  "handicap_audit": {
+    "official_sporttery_lines_verified": 0,
+    "third_party_asian_substituted": 0,
+    "second_score_used": false,
+    "mapping_performed": false
+  },
+  "xg_audit": {
+    "iso_week": "2026-W46",
+    "matches_in_batch": 35,
+    "provider_matches_with_any_xg": 3,
+    "provider_match_series": 4,
+    "team_observation_rows": 72,
+    "team_rows_with_xg": 8,
+    "team_rows_missing": 64,
+    "measured_xg_matches": 0,
+    "own_model_estimate_matches": 0,
+    "xg_per90_values_written": 8,
+    "provider_series_separated": true,
+    "weekly_coverage": "partial; canonical full-week match registry and SQLite are not connected",
+    "postmatch_data_used_as_same_match_prematch_input": false
+  },
+  "schedule_audit": {
+    "current_beijing_date": "2026-11-13",
+    "next_beijing_date": "2026-11-14",
+    "current_date_candidate_records": 45,
+    "current_date_remaining_scheduled": 13,
+    "next_date_candidate_records": 52,
+    "core_league_fixtures": 0,
+    "official_sporttery_checked": false,
+    "opening_to_live_odds_checked": false
+  },
+  "repository_and_database": {
+    "repository": "zj03204112-hub/-",
+    "base_branch": "automation/daily-football-2026-11-12-1500-run11",
+    "branch": "automation/daily-football-2026-11-13-1000-run11",
+    "sqlite_file_present_in_repository": true,
+    "sqlite_connection_active": false,
+    "sqlite_write_performed": false,
+    "canonical_team_and_competition_ids_resolved": false,
+    "tracking_registry_resolved": false,
+    "files_are_append_only": true
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "model_rules_changed": false,
+    "production_v5_1_run": false
+  },
+  "limitations": [
+    "官方Sporttery竞彩接口本轮未取得真实受注编号和hhad盘口；未做让球映射。",
+    "SQLite文件存在于仓库，但当前未建立数据库连接，规范ID和跟踪白名单未解析。",
+    "35场完赛记录覆盖已归档候选范围，不代表全球长尾比赛全量。",
+    "部分赛程时间来自二级来源；法国杯和部分友谊赛仍有时间字段空缺。",
+    "赛后xG只有3场取得供应商模型估算；其余32场xG留空并写缺失原因。"
+  ],
+  "files_written": [
+    "results/2026-11-12/verified-results-2026-11-13-1000-run11.json",
+    "reviews/2026-11-13/previous-beijing-day-review-2026-11-12-run11.json",
+    "fixtures/2026-11-13-14/schedule-beijing-2026-11-13-14-1000-run11.json",
+    "data/xg_weekly/2026-W46/match-observations/2026-11-13-1000-run11.json",
+    "data/xg_weekly/2026-W46/team-snapshots/2026-11-13-1000-run11.json",
+    "sources/2026-11-13/source-register-1000-run11.json",
+    "audits/2026-11-13/10-00-run-final-verification-run11.json",
+    "reports/2026-11-13/10-00-run-report-run11.md"
+  ]
+}
