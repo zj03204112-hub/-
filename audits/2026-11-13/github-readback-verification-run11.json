@@ -1,0 +1,148 @@
+{
+  "schema_version": "github-readback-verification.v1",
+  "run_id": "2026-11-13-1000-run11",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-13-1000-run11",
+  "verified_branch_head_sha": "6f1494237c7f5539817b1323ac7b53460e2f3e9f",
+  "verified_at_beijing": "2026-11-13T09:58:54+08:00",
+  "verified_files": [
+    {
+      "path": "results/2026-11-12/verified-results-2026-11-13-1000-run11.json",
+      "readback_ok": true,
+      "bytes": 40818,
+      "keys": [
+        "schema_version",
+        "run_id",
+        "generated_at_beijing",
+        "beijing_date",
+        "confirmed_full_time_count",
+        "excluded_non_completed_count",
+        "scope_note",
+        "results"
+      ],
+      "result_count": 35,
+      "xg_rows": null,
+      "fixture_count": null
+    },
+    {
+      "path": "reviews/2026-11-13/previous-beijing-day-review-2026-11-12-run11.json",
+      "readback_ok": true,
+      "bytes": 10937,
+      "keys": [
+        "schema_version",
+        "run_id",
+        "generated_at_beijing",
+        "previous_beijing_date",
+        "result_scope",
+        "immutable_snapshot_count",
+        "matches_without_immutable_snapshot",
+        "immutable_predictions"
+      ],
+      "result_count": 35,
+      "xg_rows": null,
+      "fixture_count": null
+    },
+    {
+      "path": "fixtures/2026-11-13-14/schedule-beijing-2026-11-13-14-1000-run11.json",
+      "readback_ok": true,
+      "bytes": 111005,
+      "keys": [
+        "schema_version",
+        "run_id",
+        "generated_at_beijing",
+        "current_beijing_date",
+        "next_beijing_date",
+        "core_leagues_scanned",
+        "core_league_fixtures_found",
+        "current_date"
+      ],
+      "result_count": null,
+      "xg_rows": null,
+      "fixture_count": 45
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/match-observations/2026-11-13-1000-run11.json",
+      "readback_ok": true,
+      "bytes": 110842,
+      "keys": [
+        "schema_version",
+        "run_id",
+        "iso_week",
+        "generated_at_beijing",
+        "source_capture_time_utc",
+        "match_count",
+        "team_observation_count",
+        "provider_matches_with_xg"
+      ],
+      "result_count": 35,
+      "xg_rows": 72,
+      "fixture_count": null
+    },
+    {
+      "path": "data/xg_weekly/2026-W46/team-snapshots/2026-11-13-1000-run11.json",
+      "readback_ok": true,
+      "bytes": 85722,
+      "keys": [
+        "schema_version",
+        "run_id",
+        "iso_week",
+        "generated_at_beijing",
+        "team_snapshot_count",
+        "teams",
+        "scope_note"
+      ],
+      "result_count": null,
+      "xg_rows": 72,
+      "fixture_count": null
+    },
+    {
+      "path": "sources/2026-11-13/source-register-1000-run11.json",
+      "readback_ok": true,
+      "bytes": 2678,
+      "keys": [
+        "schema_version",
+        "run_id",
+        "generated_at_beijing",
+        "sources"
+      ],
+      "result_count": null,
+      "xg_rows": null,
+      "fixture_count": null
+    },
+    {
+      "path": "audits/2026-11-13/10-00-run-final-verification-run11.json",
+      "readback_ok": true,
+      "bytes": 3206,
+      "keys": [
+        "schema_version",
+        "run_id",
+        "generated_at_beijing",
+        "previous_beijing_date",
+        "review",
+        "handicap_audit",
+        "xg_audit",
+        "schedule_audit"
+      ],
+      "result_count": null,
+      "xg_rows": null,
+      "fixture_count": null
+    },
+    {
+      "path": "reports/2026-11-13/10-00-run-report-run11.md",
+      "readback_ok": true,
+      "bytes": 825,
+      "keys": null,
+      "result_count": null,
+      "xg_rows": null,
+      "fixture_count": null
+    }
+  ],
+  "all_files_read_back": true,
+  "sqlite_connected": false,
+  "sqlite_write_performed": false,
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false
+  },
+  "note": "All listed files were fetched back from the target working branch after commit; this proves GitHub content readback, not SQLite database write."
+}
