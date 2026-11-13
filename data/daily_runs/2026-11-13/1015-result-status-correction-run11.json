@@ -1,0 +1,325 @@
+{
+  "schema_version": "football-daily-followup.v1",
+  "run_id": "2026-11-13-1015-run11",
+  "generated_at_beijing": "2026-11-13T10:15:50+08:00",
+  "base_schedule_snapshot": "fixtures/2026-11-13-14/schedule-beijing-2026-11-13-14-1000-run11.json",
+  "beijing_date": "2026-11-13",
+  "scope_note": "This is an append-only follow-up to the 10:00 schedule snapshot. These matches belong to Beijing date 2026-11-13 and are not part of the 2026-11-12 previous-day review.",
+  "pending_at_1000": 9,
+  "confirmed_finished_followup": 8,
+  "unresolved_after_followup": 1,
+  "results": [
+    {
+      "match_id": "provisional:2026-11-13:coupe-de-france:chambery-grenoble",
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "season": "2026-27",
+      "kickoff_utc": "2026-11-12T18:00:00Z",
+      "kickoff_beijing": "2026-11-13T02:00:00+08:00",
+      "home_team_id": "provisional:team:chambery",
+      "home": "Chambéry",
+      "away_team_id": "provisional:team:grenoble",
+      "away": "Grenoble",
+      "score_90": {
+        "home": 0,
+        "away": 2
+      },
+      "half_time_score": {
+        "home": 0,
+        "away": 0
+      },
+      "result_status": "finished_confirmed",
+      "source_evidence": [
+        {
+          "provider": "Le Quotidien du Sport",
+          "url": "https://www.lequotidiendusport.fr/djitte-et-magnin-qualifient-grenoble-chambery-battu-2-0-en-coupe-de-france/",
+          "type": "match report"
+        },
+        {
+          "provider": "YSScores",
+          "url": "https://www.ysscores.com/en/match/6533839/Chamb%C3%A9ry-Savoie-Football-vs-Grenoble-Foot-38-events",
+          "type": "match result"
+        }
+      ],
+      "source_quality": "two independent secondary sources"
+    },
+    {
+      "match_id": "provisional:2026-11-13:concacaf-nations-league:barbados-guadeloupe",
+      "category": "national_team",
+      "competition": "CONCACAF Nations League",
+      "season": "2026-27",
+      "kickoff_utc": "2026-11-12T19:00:00Z",
+      "kickoff_beijing": "2026-11-13T03:00:00+08:00",
+      "home_team_id": "provisional:team:barbados",
+      "home": "Barbados",
+      "away_team_id": "provisional:team:guadeloupe",
+      "away": "Guadeloupe",
+      "score_90": {
+        "home": 0,
+        "away": 3
+      },
+      "half_time_score": {
+        "home": 0,
+        "away": 2
+      },
+      "result_status": "finished_confirmed",
+      "source_evidence": [
+        {
+          "provider": "YSScores",
+          "url": "https://www.ysscores.com/en/match/6375162/Barbados-vs-Guadeloupe",
+          "type": "match result"
+        }
+      ],
+      "source_quality": "secondary source; official recap not used because its displayed publication time is after this follow-up cutoff"
+    },
+    {
+      "match_id": "provisional:2026-11-13:concacaf-nations-league:cayman-guyana",
+      "category": "national_team",
+      "competition": "CONCACAF Nations League",
+      "season": "2026-27",
+      "kickoff_utc": "2026-11-12T19:00:00Z",
+      "kickoff_beijing": "2026-11-13T03:00:00+08:00",
+      "home_team_id": "provisional:team:cayman-islands",
+      "home": "Cayman Islands",
+      "away_team_id": "provisional:team:guyana",
+      "away": "Guyana",
+      "score_90": {
+        "home": 0,
+        "away": 6
+      },
+      "half_time_score": {
+        "home": 0,
+        "away": 4
+      },
+      "result_status": "finished_confirmed",
+      "source_evidence": [
+        {
+          "provider": "FlashSport",
+          "url": "https://flashsportapp.com/en/football/match/cayman-islands-guyana-2026-11-12-1640008/",
+          "type": "match report and xG"
+        },
+        {
+          "provider": "YSScores",
+          "url": "https://www.ysscores.com/en/match/6375158/Cayman-Islands-vs-Guyana",
+          "type": "match result"
+        }
+      ],
+      "source_quality": "two independent secondary sources"
+    },
+    {
+      "match_id": "provisional:2026-11-13:concacaf-nations-league:bonaire-cuba",
+      "category": "national_team",
+      "competition": "CONCACAF Nations League",
+      "season": "2026-27",
+      "kickoff_utc": "2026-11-12T20:00:00Z",
+      "kickoff_beijing": "2026-11-13T04:00:00+08:00",
+      "home_team_id": "provisional:team:bonaire",
+      "home": "Bonaire",
+      "away_team_id": "provisional:team:cuba",
+      "away": "Cuba",
+      "score_90": {
+        "home": 1,
+        "away": 7
+      },
+      "half_time_score": {
+        "home": 0,
+        "away": 0
+      },
+      "result_status": "finished_confirmed",
+      "source_evidence": [
+        {
+          "provider": "YSScores",
+          "url": "https://www.ysscores.com/en/match/6375166/Bonaire-vs-Cuba",
+          "type": "match result"
+        },
+        {
+          "provider": "KQBD AZ",
+          "url": "https://kqbdaz.com/tran-dau/bonaire-vs-cuba-pxwrxlhyd4gvryk",
+          "type": "match result and events"
+        }
+      ],
+      "source_quality": "two independent secondary sources"
+    },
+    {
+      "match_id": "provisional:2026-11-13:caf-u23-qualifying:tunisia-gabon",
+      "category": "national_team",
+      "competition": "CAF U23 Cup of Nations Qualification",
+      "season": "2026-27",
+      "kickoff_utc": "2026-11-12T17:00:00Z",
+      "kickoff_beijing": "2026-11-13T01:00:00+08:00",
+      "home_team_id": "provisional:team:tunisia-u23",
+      "home": "Tunisia U23",
+      "away_team_id": "provisional:team:gabon-u23",
+      "away": "Gabon U23",
+      "score_90": {
+        "home": 2,
+        "away": 1
+      },
+      "half_time_score": {
+        "home": 1,
+        "away": 0
+      },
+      "result_status": "finished_confirmed",
+      "source_evidence": [
+        {
+          "provider": "ScoreBat",
+          "url": "https://www.scorebat.com/gabon-u23-vs-tunisia-u23-live-stream/",
+          "type": "match report"
+        },
+        {
+          "provider": "AiScore",
+          "url": "https://www.aiscore.com/nn/head-to-head/soccer-gabon-u23-vs-tunisia-u23",
+          "type": "match result"
+        }
+      ],
+      "source_quality": "two independent secondary sources"
+    },
+    {
+      "match_id": "provisional:2026-11-13:u20-elite-league:italy-portugal",
+      "category": "national_team",
+      "competition": "U20 Elite League",
+      "season": "2026-27",
+      "kickoff_utc": "2026-11-12T16:00:00Z",
+      "kickoff_beijing": "2026-11-13T00:00:00+08:00",
+      "home_team_id": "provisional:team:italy-u20",
+      "home": "Italy U20",
+      "away_team_id": "provisional:team:portugal-u20",
+      "away": "Portugal U20",
+      "score_90": {
+        "home": 1,
+        "away": 0
+      },
+      "half_time_score": {
+        "home": 1,
+        "away": 0
+      },
+      "result_status": "finished_confirmed",
+      "source_evidence": [
+        {
+          "provider": "Sky Sport Italia",
+          "url": "https://sport.sky.it/calcio/nazionale/2026/11/12/italia-portogallo-under-20-risultato-gol-tabellino",
+          "type": "match report"
+        },
+        {
+          "provider": "ZeroZero",
+          "url": "https://www.zerozero.pt/live-ao-minuto/2026-11-12-italia-portugal/12595709",
+          "type": "match result and final whistle"
+        }
+      ],
+      "source_quality": "two independent sources"
+    },
+    {
+      "match_id": "provisional:2026-11-13:u20-elite-league:england-czechia",
+      "category": "national_team",
+      "competition": "U20 Elite League",
+      "season": "2026-27",
+      "kickoff_utc": "2026-11-12T19:30:00Z",
+      "kickoff_beijing": "2026-11-13T03:30:00+08:00",
+      "home_team_id": "provisional:team:england-u20",
+      "home": "England U20",
+      "away_team_id": "provisional:team:czechia-u20",
+      "away": "Czechia U20",
+      "score_90": {
+        "home": 6,
+        "away": 1
+      },
+      "half_time_score": {
+        "home": 4,
+        "away": 0
+      },
+      "result_status": "finished_confirmed",
+      "source_evidence": [
+        {
+          "provider": "England Football",
+          "url": "https://www.englandfootball.com/articles/2026/Nov/12/england-mu20s-v-czechia-match-report-20261211",
+          "type": "official national association match report"
+        },
+        {
+          "provider": "ScoreBat",
+          "url": "https://www.scorebat.com/czech-republic-u20-vs-england-u20-live-stream/",
+          "type": "match result"
+        }
+      ],
+      "source_quality": "official association report plus independent secondary source"
+    },
+    {
+      "match_id": "provisional:2026-11-13:international-friendly-u20:france-denmark",
+      "category": "national_team",
+      "competition": "International Friendly U20",
+      "season": "2026",
+      "kickoff_utc": "2026-11-12T16:00:00Z",
+      "kickoff_beijing": "2026-11-13T00:00:00+08:00",
+      "home_team_id": "provisional:team:france-u20",
+      "home": "France U20",
+      "away_team_id": "provisional:team:denmark-u20",
+      "away": "Denmark U20",
+      "score_90": {
+        "home": 0,
+        "away": 1
+      },
+      "half_time_score": {
+        "home": 0,
+        "away": 1
+      },
+      "result_status": "finished_confirmed",
+      "source_evidence": [
+        {
+          "provider": "FootyNomad",
+          "url": "https://footynomad.com/fixture/1572176-france-u20-vs-denmark-u20",
+          "type": "match result"
+        },
+        {
+          "provider": "AiScore",
+          "url": "https://m.aiscore.com/match-france-u20-denmark-u20/34kgmig2g3nheko",
+          "type": "live match result at 90+'"
+        }
+      ],
+      "source_quality": "two independent secondary sources"
+    }
+  ],
+  "unresolved": [
+    {
+      "match_id": "provisional:2026-11-13:concacaf-nations-league:aruba-martinique",
+      "competition": "CONCACAF Nations League Play-In",
+      "home": "Aruba",
+      "away": "Martinique",
+      "kickoff_utc": "2026-11-12T22:00:00Z",
+      "kickoff_beijing": "2026-11-13T06:00:00+08:00",
+      "candidate_score": {
+        "home": 0,
+        "away": 0
+      },
+      "result_status": "not_confirmed",
+      "evidence": [
+        {
+          "provider": "LiveScores",
+          "url": "https://www.livescores.com/?tz=0",
+          "observation": "search result still showed 46' at 0-0"
+        },
+        {
+          "provider": "CONCACAF official match page",
+          "url": "https://www.concacaf.com/competitions/nations-league/matches/3b75ef2e6cc3437882e1992a1ea43dc7/aruba-vs-martinique",
+          "observation": "fixture page did not expose a final score in the retrieved content"
+        }
+      ],
+      "reason": "A secondary search snippet showed 0-0, but the available live feed still showed 46' and no independent full-time confirmation was obtained. Keep excluded until FT is confirmed."
+    }
+  ],
+  "updated_current_date_status_counts": {
+    "total_candidates": 45,
+    "finished_confirmed_after_followup": 30,
+    "unresolved_result_status": 1,
+    "postponed": 1,
+    "future_scheduled": 13
+  },
+  "limitations": [
+    "No official Sporttery match number or official Jincai handicap was found for these matches.",
+    "No immutable pre-match prediction snapshot was found for these 8 follow-up matches; do not calculate model hit rates.",
+    "Match and team IDs in this follow-up are provisional aliases, not canonical database IDs."
+  ],
+  "protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "prior_result_or_xg_snapshots_overwritten": false
+  }
+}
