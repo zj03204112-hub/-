@@ -1,0 +1,208 @@
+{
+  "schema_version": "postmatch-review.v2",
+  "run_id": "2026-11-14-1000-run12",
+  "captured_at_beijing": "2026-11-14T11:16:56+08:00",
+  "review_date_beijing": "2026-11-13",
+  "review_rule": "只纳入北京时间11月13日开球且已确认完赛的比赛；90分钟结果独立记录；竞彩让球仅允许使用第一比分+真实官方竞彩让球数机械映射；第二比分不得参与。",
+  "scope_audit": {
+    "original_1000_schedule_candidates": 45,
+    "additional_discovered_matches": 2,
+    "rescheduled_out_of_review_date": 1,
+    "unique_fixture_records_after_correction": 46,
+    "completed_confirmed": 35,
+    "result_pending_reconciliation": 5,
+    "postponed": 1,
+    "scheduled_or_not_yet_verified": 5,
+    "sqlite_connected": false,
+    "global_census": false,
+    "coverage_note": "本轮不是全球全赛事普查；发现原45条候选中漏掉2场CONCACAF赛事，且Kuwait-Syria应修正至11月14日00:30北京时间。"
+  },
+  "prediction_snapshot_audit": {
+    "confirmed_matches": 35,
+    "immutable_snapshots_found": 3,
+    "no_snapshot_or_not_found": 32,
+    "snapshot_coverage_pct": 8.5714,
+    "missing_snapshot_rule": "无原始快照不回顾性重建、不计入正式命中率。",
+    "predictions": [
+      {
+        "match": "United Arab Emirates vs Honduras",
+        "match_key": "friendly-uae-honduras-2026-11-13",
+        "kickoff_beijing": "2026-11-13T22:10:00+08:00",
+        "prediction_timestamp_beijing": "2026-11-13T15:34:00+08:00",
+        "prediction_snapshot_path": "predictions/2026-11-13/p15-market-form-2026-11-13-1534-run11.json",
+        "prediction_snapshot_sha256": "a9331f35b2ba2ca6ea8d7d63dabf833006bd9df9",
+        "model_version": "P15-MKT-FORM-v0.1",
+        "predicted_score1": "1-1",
+        "predicted_score2": "1-0",
+        "predicted_wdl": "home",
+        "probabilities": {
+          "home": 0.41,
+          "draw": 0.27,
+          "away": 0.32
+        },
+        "predicted_htft": "主/主",
+        "actual_score90": "3-1",
+        "actual_half_time": "1-0",
+        "actual_wdl": "home",
+        "actual_htft": "主/主",
+        "wdl_hit": true,
+        "score1_hit": false,
+        "score2_hit": false,
+        "htft_hit": true,
+        "official_jincai_handicap": null,
+        "handicap_result": null,
+        "handicap_status": "无法核验：官方竞彩编号/让球数/赔率时间戳未取得",
+        "risk_review": {
+          "confirmed_context": [
+            "UAE新帅Dalic首场执教，赛前已明确有考察新人/试阵背景"
+          ],
+          "unverified": [
+            "Moncada伤情仅有媒体报道，未取得官方赛前医疗名单"
+          ],
+          "risk_hit_binary": null
+        }
+      },
+      {
+        "match": "Saudi Arabia vs South Korea",
+        "match_key": "friendly-saudi-korea-2026-11-13",
+        "kickoff_beijing": "2026-11-13T22:30:00+08:00",
+        "prediction_timestamp_beijing": "2026-11-13T15:34:00+08:00",
+        "prediction_snapshot_path": "predictions/2026-11-13/p15-market-form-2026-11-13-1534-run11.json",
+        "prediction_snapshot_sha256": "a9331f35b2ba2ca6ea8d7d63dabf833006bd9df9",
+        "model_version": "P15-MKT-FORM-v0.1",
+        "predicted_score1": "0-1",
+        "predicted_score2": "1-1",
+        "predicted_wdl": "away",
+        "probabilities": {
+          "home": 0.23,
+          "draw": 0.26,
+          "away": 0.51
+        },
+        "predicted_htft": "客/客",
+        "actual_score90": "3-2",
+        "actual_half_time": "1-0",
+        "actual_wdl": "home",
+        "actual_htft": "主/主",
+        "wdl_hit": false,
+        "score1_hit": false,
+        "score2_hit": false,
+        "htft_hit": false,
+        "official_jincai_handicap": null,
+        "handicap_result": null,
+        "handicap_status": "无法核验：官方竞彩编号/让球数/赔率时间戳未取得",
+        "risk_review": {
+          "confirmed_context": [
+            "Salem Al-Dawsari未入选本期名单；赛前新闻已公开报道"
+          ],
+          "韩国队内部意见分歧已被队长公开表示解决": "",
+          "risk_hit_binary": null
+        }
+      },
+      {
+        "match": "Qatar vs Australia",
+        "match_key": "friendly-qatar-australia-2026-11-13",
+        "kickoff_beijing": "2026-11-13T22:45:00+08:00",
+        "prediction_timestamp_beijing": "2026-11-13T15:34:00+08:00",
+        "prediction_snapshot_path": "predictions/2026-11-13/p15-market-form-2026-11-13-1534-run11.json",
+        "prediction_snapshot_sha256": "a9331f35b2ba2ca6ea8d7d63dabf833006bd9df9",
+        "model_version": "P15-MKT-FORM-v0.1",
+        "predicted_score1": "1-1",
+        "predicted_score2": "0-1",
+        "predicted_wdl": "away",
+        "probabilities": {
+          "home": 0.3,
+          "draw": 0.27,
+          "away": 0.43
+        },
+        "predicted_htft": "客/客",
+        "actual_score90": "0-3",
+        "actual_half_time": "0-3",
+        "actual_wdl": "away",
+        "actual_htft": "客/客",
+        "wdl_hit": true,
+        "score1_hit": false,
+        "score2_hit": false,
+        "htft_hit": true,
+        "official_jincai_handicap": null,
+        "handicap_result": null,
+        "handicap_status": "无法核验：官方竞彩编号/让球数/赔率时间戳未取得",
+        "risk_review": {
+          "confirmed_context": [],
+          "unverified": [
+            "Australia可能派出较弱阵容的赛前说法未由官方首发/名单核实；本场不能把赛果反推为该风险已命中"
+          ],
+          "risk_hit_binary": null
+        }
+      }
+    ]
+  },
+  "prediction_metrics": {
+    "sample_size": 3,
+    "wdl_direction": {
+      "hits": 2,
+      "total": 3,
+      "accuracy_pct": 66.6667
+    },
+    "score1_exact": {
+      "hits": 0,
+      "total": 3,
+      "accuracy_pct": 0
+    },
+    "score2_exact": {
+      "hits": 0,
+      "total": 3,
+      "accuracy_pct": 0
+    },
+    "half_full_time": {
+      "hits": 2,
+      "total": 3,
+      "accuracy_pct": 66.6667
+    },
+    "official_jincai_handicap": {
+      "verified_lines": 0,
+      "unverifiable": 3,
+      "settled": 0
+    },
+    "risk_context": {
+      "confirmed_context_cues": 2,
+      "unverified_context_cues": 1,
+      "binary_risk_hit_rate": null,
+      "reason": "风险提示是情境/不确定性标记，不能把结果输赢反推成风险命中。"
+    },
+    "probability_metrics": {
+      "multiclass_brier_sum_mean": 0.6439333333,
+      "log_loss": 1.0684147199,
+      "warning": "仅3场、且P15-MKT-FORM-v0.1为临时独立估算；不纳入V5.1正式验证、不据此校准。"
+    }
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "experimental_model_version": "P15-MKT-FORM-v0.1",
+    "formal_v5_1_accuracy_inclusion": false
+  },
+  "unresolved": {
+    "pending_matches": [
+      "Chambéry vs Grenoble",
+      "Tunisia U23 vs Gabon U23",
+      "Italy U20 vs Portugal U20",
+      "England U20 vs Czechia U20",
+      "France U20 vs Denmark U20"
+    ],
+    "postponed_matches": [
+      "Benfica Women vs Austria Wien Women"
+    ],
+    "still_scheduled_or_not_verified": [
+      "DR Congo U23 vs Nigeria U23",
+      "Czechia U18 vs Poland U18",
+      "Chinese Taipei vs Kyrgyzstan",
+      "Västerås SK vs Brommapojkarna",
+      "TPS Turku vs Ilves"
+    ],
+    "rescheduled": [
+      "Kuwait vs Syria: corrected from 2026-11-13 22:00 to 2026-11-14 00:30 Beijing; final score not verified in this run"
+    ]
+  },
+  "source_priority_note": "雷速体育本轮未取得可复核的逐场赛果页面；改用UEFA、LaLiga、CONCACAF官方页面及Reuters/WorldFootball/Sky Sports等可靠赛果页交叉核验。"
+}
