@@ -12,7 +12,7 @@
     },
     {
       "path": "markets/2026-11-14/national-team/uefa-nations-league-1500.json",
-      "last_content_commit": "98b94e065d7b608928939e8c557f61d3f568949e"
+      "last_content_commit": "1aeff69bc8d785a23f4fd0fb9879fbc4a012e924"
     },
     {
       "path": "features/2026-11-14/national-team/uefa-nations-league-1500.json",
@@ -20,7 +20,7 @@
     },
     {
       "path": "predictions/2026-11-14/national-team/uefa-nations-league-provisional-1500.json",
-      "last_content_commit": "56402102a67e12d319b14dca2f4ff4ddf3aabc37"
+      "last_content_commit": "7c406a807d1aa7b7249351cb918a84c9244ee1fd"
     }
   ],
   "run_result": {
@@ -49,14 +49,8 @@
     "The three displayed forecasts are quarantined provisional analyst outputs, not V5.1 production forecasts, because SQLite and canonical internal match IDs are unavailable.",
     "No confirmed starting XI was available at the capture time; predicted formations are explicitly marked provisional.",
     "Opening-to-current odds movement was captured only for Georgia-Hungary; other market pages lack a reliable provider event timestamp or opening series.",
-    "The 15 Nov schedule includes only matches whose Beijing-local dates fall on 15 Nov; later UTC kickoffs falling on 16 Nov Beijing are excluded from this two-date window."
+    "The 15 Nov schedule includes only matches whose Beijing-local dates fall on 15 Nov; later UTC kickoffs falling on 16 Nov Beijing are excluded from this two-date window.",
+    "Kosovo and Norway odds movement data were added after the first market pass; Norway's opening-to-last-snapshot series is stale (last 2026-11-13T12:48Z), not a live quote."
   ],
-  "readback_verification_status": "PASS",
-  "readback_verification": {
-    "checked_at_beijing": "2026-11-14T15:03:07+08:00",
-    "files_checked": 5,
-    "json_parse_success": 5,
-    "branch": "automation/daily-football-2026-11-14-1500-run11",
-    "method": "fetch each artifact from target branch and parse returned JSON"
-  }
+  "readback_verification_status": "PENDING_FINAL"
 }
