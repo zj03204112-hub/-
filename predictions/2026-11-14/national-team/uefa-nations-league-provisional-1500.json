@@ -20,16 +20,16 @@
       "kickoff_beijing": "2026-11-14T22:00:00+08:00",
       "lead_minutes": 417,
       "strategy_id": "INT-46-KOS-01",
-      "lambda_home": 1.2,
-      "lambda_away": 0.8,
+      "lambda_home": 1.45,
+      "lambda_away": 1.05,
       "lambda_type": "own_provisional_goal_model_estimate_not_supplier_xG",
       "home_win_prob": 0.49,
-      "draw_prob": 0.28,
-      "away_win_prob": 0.23,
-      "score1": "1-0",
-      "score1_probability_approx": 0.162,
-      "score2": "0-0",
-      "score2_probability_approx": 0.135,
+      "draw_prob": 0.26,
+      "away_win_prob": 0.25,
+      "score1": "1-1",
+      "score1_probability_approx": 0.125,
+      "score2": "1-0",
+      "score2_probability_approx": 0.119,
       "predicted_90min_result": "主胜",
       "predicted_handicap_result": null,
       "sporttery_handicap_line": null,
@@ -44,7 +44,13 @@
         "官方竞彩让球盘口缺失"
       ],
       "data_completeness": 0.68,
-      "source_cutoff_beijing": "2026-11-14T15:03:07+08:00"
+      "source_cutoff_beijing": "2026-11-14T15:03:07+08:00",
+      "goal_expectation_total": 2.5,
+      "goal_total_distribution": {
+        "over_2_5": 0.456,
+        "under_2_5": 0.544,
+        "source": "own provisional Poisson estimate; market 2.5 line is close to balanced"
+      }
     },
     {
       "prediction_id": "P15-20261114-UEFA-2047893-r1",
@@ -59,16 +65,16 @@
       "kickoff_beijing": "2026-11-15T01:00:00+08:00",
       "lead_minutes": 597,
       "strategy_id": "INT-46-NOR-02",
-      "lambda_home": 1.95,
-      "lambda_away": 0.75,
+      "lambda_home": 2.25,
+      "lambda_away": 0.85,
       "lambda_type": "own_provisional_goal_model_estimate; external model xG retained separately at 2.69/0.72",
-      "home_win_prob": 0.71,
-      "draw_prob": 0.18,
+      "home_win_prob": 0.72,
+      "draw_prob": 0.17,
       "away_win_prob": 0.11,
-      "score1": "1-0",
-      "score1_probability_approx": 0.131,
-      "score2": "2-0",
-      "score2_probability_approx": 0.128,
+      "score1": "2-0",
+      "score1_probability_approx": 0.114,
+      "score2": "1-0",
+      "score2_probability_approx": 0.101,
       "predicted_90min_result": "主胜",
       "predicted_handicap_result": null,
       "sporttery_handicap_line": null,
@@ -84,7 +90,13 @@
         "官方竞彩让球盘口缺失"
       ],
       "data_completeness": 0.76,
-      "source_cutoff_beijing": "2026-11-14T15:03:07+08:00"
+      "source_cutoff_beijing": "2026-11-14T15:03:07+08:00",
+      "goal_expectation_total": 3.1,
+      "goal_total_distribution": {
+        "over_2_5": 0.599,
+        "under_2_5": 0.401,
+        "source": "own provisional Poisson estimate; external model estimate is 2.69-0.72"
+      }
     },
     {
       "prediction_id": "P15-20261114-UEFA-2047895-r1",
@@ -99,21 +111,21 @@
       "kickoff_beijing": "2026-11-15T01:00:00+08:00",
       "lead_minutes": 597,
       "strategy_id": "INT-46-GEO-03",
-      "lambda_home": 0.85,
-      "lambda_away": 1.1,
+      "lambda_home": 0.95,
+      "lambda_away": 1.2,
       "lambda_type": "own_provisional_goal_model_estimate_not_supplier_xG",
       "home_win_prob": 0.3,
-      "draw_prob": 0.31,
-      "away_win_prob": 0.39,
+      "draw_prob": 0.3,
+      "away_win_prob": 0.4,
       "score1": "0-1",
-      "score1_probability_approx": 0.157,
-      "score2": "0-0",
-      "score2_probability_approx": 0.142,
+      "score1_probability_approx": 0.14,
+      "score2": "1-1",
+      "score2_probability_approx": 0.133,
       "predicted_90min_result": "客胜",
       "predicted_handicap_result": null,
       "sporttery_handicap_line": null,
       "handicap_status": "无法核验：未取得官方竞彩让球数及SP；不得以亚洲盘代替",
-      "predicted_half_full": "平/客",
+      "predicted_half_full": "客/客",
       "confidence": 54,
       "risk_flags": [
         "Kvaratskhelia伤缺",
@@ -124,7 +136,13 @@
         "官方竞彩让球盘口缺失"
       ],
       "data_completeness": 0.74,
-      "source_cutoff_beijing": "2026-11-14T15:03:07+08:00"
+      "source_cutoff_beijing": "2026-11-14T15:03:07+08:00",
+      "goal_expectation_total": 2.15,
+      "goal_total_distribution": {
+        "over_2_5": 0.364,
+        "under_2_5": 0.636,
+        "source": "own provisional Poisson estimate; bookmaker average Under 2.5 price 1.53"
+      }
     }
   ],
   "excluded_from_prediction_window": [
@@ -166,5 +184,6 @@
     "v5_1_modified": false,
     "frozen_validation_samples_modified": false,
     "historical_prediction_snapshots_overwritten": false
-  }
+  },
+  "method_note": "Goal expectation was cross-checked against available O/U information where available; the forecast is not forced into a low-goal profile. Kosovo total lambda 2.50 is near the balanced 2.5 market, Norway total lambda 3.10 retains a higher-goal tail, and Georgia total lambda 2.15 reflects the under-2.5 market signal. Probabilities are a 50/50 blend of a provisional Poisson estimate and secondary-market no-margin probabilities, rounded; this is not V5.1."
 }
