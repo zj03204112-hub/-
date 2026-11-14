@@ -8,28 +8,23 @@
   "files": [
     {
       "path": "reviews/2026-11-13/summary.json",
-      "commit_sha": "01ae80021570b01a5f78092300e992ba28269729",
-      "bytes": 6893
+      "commit_sha": "00ec525399678e3c2be32e28896a7b42c36feabb"
     },
     {
       "path": "reviews/2026-11-13/results-by-category.json",
-      "commit_sha": "33383b86ea137f4ae397ac1e1d433ffc1c22728b",
-      "bytes": 19772
+      "commit_sha": "3d804fe2dc966fb947e412d9bea59bb83a268981"
     },
     {
       "path": "fixtures/2026-11-14-15/schedule-refresh.json",
-      "commit_sha": "fe36794a2e846c74e3674a88a5738d96cd99d898",
-      "bytes": 88058
+      "commit_sha": "031606416d6aaf4330006a2557c37a9738b9e6b4"
     },
     {
       "path": "xg/weekly/2026-W46/match-observations.json",
-      "commit_sha": "07b7a47f17d21a72351f5cb28eba987d4019291d",
-      "bytes": 27469
+      "commit_sha": "24a378758823105abd8e0f40ad92ecb7ac67b1a0"
     },
     {
       "path": "xg/weekly/2026-W46/team-weekly-snapshot.json",
-      "commit_sha": "b240ad7ad6ed777689b68413390452c8c03bbfa5",
-      "bytes": 53933
+      "commit_sha": "7180827eeb3740874a0d25cf27e78e55e8f4a4ce"
     }
   ],
   "sqlite_connected": false,
@@ -45,6 +40,19 @@
     "Kuwait-Syria kickoff corrected to 14 Nov 00:30 Beijing",
     "2 CONCACAF fixtures were discovered outside the original 45-candidate scan",
     "ISO week 46 is not fully covered for 9-12 Nov",
-    "no live SQLite connection"
-  ]
+    "no live SQLite connection",
+    "current-day Colombia/Ecuador/Peru match status was live/result-updating at capture; Peru final not confirmed"
+  ],
+  "readback_verification": {
+    "passed": true,
+    "verified_at_beijing": "2026-11-14T11:16:56+08:00",
+    "verified_files": [
+      "reviews/2026-11-13/summary.json",
+      "reviews/2026-11-13/results-by-category.json",
+      "fixtures/2026-11-14-15/schedule-refresh.json",
+      "xg/weekly/2026-W46/match-observations.json",
+      "xg/weekly/2026-W46/team-weekly-snapshot.json"
+    ],
+    "method": "fetch_file and JSON parse; all five payload files readable on the work branch"
+  }
 }
