@@ -1,0 +1,315 @@
+{
+  "schema_version": "daily-football-schedule-refresh.v1",
+  "run_id": "2026-11-14-1500-run11",
+  "captured_at_beijing": "2026-11-14T15:03:07+08:00",
+  "date_basis": "Asia/Shanghai",
+  "source_priority": [
+    "official competition/federation",
+    "reliable fixture providers"
+  ],
+  "core_league_status": {
+    "premier_league": {
+      "status": "no_fixture_in_2026-11-14_or_2026-11-15",
+      "note": "November international break; next round after 20 Nov"
+    },
+    "la_liga": {
+      "status": "no_fixture_in_2026-11-14_or_2026-11-15",
+      "note": "November international break; resumes 20 Nov"
+    },
+    "bundesliga": {
+      "status": "no_fixture_in_2026-11-14_or_2026-11-15",
+      "note": "November international break; resumes 20 Nov"
+    },
+    "serie_a": {
+      "status": "no_fixture_in_2026-11-14_or_2026-11-15",
+      "note": "November international break; resumes 21 Nov"
+    },
+    "ligue_1": {
+      "status": "no_fixture_in_2026-11-14_or_2026-11-15",
+      "note": "November international break; resumes 20 Nov"
+    },
+    "k_league_1": {
+      "status": "no_fixture_in_2026-11-14_or_2026-11-15",
+      "note": "Next listed K League 1 round is 21-22 Nov; K League portal calendar mixes K1/K2, so unclassified 14 Nov entries were not mislabelled as K1"
+    },
+    "j1_league": {
+      "status": "no_regular_league_fixture_in_2026-11-14_or_2026-11-15",
+      "note": "J1 regular season resumes 20 Nov; four Levain Cup quarter-final second legs on 15 Nov are domestic cup, not J1 league"
+    }
+  },
+  "fixtures": [
+    {
+      "competition": "UEFA Nations League",
+      "competition_type": "national_team",
+      "group": "B3",
+      "home": "Kosovo",
+      "away": "Israel",
+      "uefa_event_id": "2047896",
+      "kickoff_utc": "2026-11-14T14:00:00Z",
+      "kickoff_beijing": "2026-11-14T22:00:00+08:00",
+      "kickoff_source_timezone": "CET",
+      "venue": "Stadiumi Fadil Vokrri, Pristina",
+      "window_status": "IN_6_TO_12_HOURS",
+      "lead_minutes_at_capture": 417,
+      "source": "UEFA official fixtures",
+      "source_url": "https://www.uefa.com/uefanationsleague/match/2047896--kosovo-vs-israel/"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "competition_type": "national_team",
+      "group": "A4",
+      "home": "Norway",
+      "away": "Wales",
+      "uefa_event_id": "2047893",
+      "kickoff_utc": "2026-11-14T17:00:00Z",
+      "kickoff_beijing": "2026-11-15T01:00:00+08:00",
+      "kickoff_source_timezone": "CET",
+      "venue": "Ullevaal Stadion, Oslo",
+      "window_status": "IN_6_TO_12_HOURS",
+      "lead_minutes_at_capture": 597,
+      "source": "UEFA official fixtures",
+      "source_url": "https://www.uefa.com/uefanationsleague/match/2047893--norway-vs-wales/"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "competition_type": "national_team",
+      "group": "B2",
+      "home": "Georgia",
+      "away": "Hungary",
+      "uefa_event_id": "2047895",
+      "kickoff_utc": "2026-11-14T17:00:00Z",
+      "kickoff_beijing": "2026-11-15T01:00:00+08:00",
+      "kickoff_source_timezone": "CET",
+      "venue": "Mikheil Meskhi Stadium, Tbilisi",
+      "window_status": "IN_6_TO_12_HOURS",
+      "lead_minutes_at_capture": 597,
+      "source": "UEFA official fixtures",
+      "source_url": "https://www.uefa.com/uefanationsleague/match/2047895--georgia-vs-hungary/"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "competition_type": "national_team",
+      "group": "A4",
+      "home": "Portugal",
+      "away": "Denmark",
+      "uefa_event_id": "2047892",
+      "kickoff_utc": "2026-11-14T19:45:00Z",
+      "kickoff_beijing": "2026-11-15T03:45:00+08:00",
+      "kickoff_source_timezone": "CET",
+      "venue": "Estádio Municipal de Braga, Braga",
+      "window_status": "OUT_OF_WINDOW_EARLY",
+      "lead_minutes_at_capture": 762,
+      "eligible_after_beijing": "2026-11-14T15:45:00+08:00",
+      "source": "UEFA official fixtures",
+      "source_url": "https://www.uefa.com/uefanationsleague/match/2047892--portugal-vs-denmark/"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "competition_type": "national_team",
+      "group": "B2",
+      "home": "Northern Ireland",
+      "away": "Ukraine",
+      "uefa_event_id": "2047897",
+      "kickoff_utc": "2026-11-14T19:45:00Z",
+      "kickoff_beijing": "2026-11-15T03:45:00+08:00",
+      "kickoff_source_timezone": "CET",
+      "venue": "Windsor Park, Belfast",
+      "window_status": "OUT_OF_WINDOW_EARLY",
+      "lead_minutes_at_capture": 762,
+      "eligible_after_beijing": "2026-11-14T15:45:00+08:00",
+      "source": "UEFA official fixtures",
+      "source_url": "https://www.uefa.com/uefanationsleague/match/2047897--northern-ireland-vs-ukraine/"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "competition_type": "national_team",
+      "group": "B3",
+      "home": "Austria",
+      "away": "Republic of Ireland",
+      "uefa_event_id": "2047894",
+      "kickoff_utc": "2026-11-14T19:45:00Z",
+      "kickoff_beijing": "2026-11-15T03:45:00+08:00",
+      "kickoff_source_timezone": "CET",
+      "venue": "Raiffeisen Arena, Linz",
+      "window_status": "OUT_OF_WINDOW_EARLY",
+      "lead_minutes_at_capture": 762,
+      "eligible_after_beijing": "2026-11-14T15:45:00+08:00",
+      "source": "UEFA official fixtures",
+      "source_url": "https://www.uefa.com/uefanationsleague/match/2047894--austria-vs-republic-of-ireland/"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "competition_type": "national_team",
+      "group": "B4",
+      "home": "Romania",
+      "away": "Poland",
+      "uefa_event_id": "2047891",
+      "kickoff_utc": "2026-11-14T19:45:00Z",
+      "kickoff_beijing": "2026-11-15T03:45:00+08:00",
+      "kickoff_source_timezone": "CET",
+      "venue": "National Arena, Bucharest",
+      "window_status": "OUT_OF_WINDOW_EARLY",
+      "lead_minutes_at_capture": 762,
+      "eligible_after_beijing": "2026-11-14T15:45:00+08:00",
+      "source": "UEFA official fixtures",
+      "source_url": "https://www.uefa.com/uefanationsleague/match/2047891--romania-vs-poland/"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "competition_type": "national_team",
+      "group": "B4",
+      "home": "Sweden",
+      "away": "Bosnia and Herzegovina",
+      "uefa_event_id": "2047890",
+      "kickoff_utc": "2026-11-14T19:45:00Z",
+      "kickoff_beijing": "2026-11-15T03:45:00+08:00",
+      "kickoff_source_timezone": "CET",
+      "venue": "Strawberry Arena, Solna",
+      "window_status": "OUT_OF_WINDOW_EARLY",
+      "lead_minutes_at_capture": 762,
+      "eligible_after_beijing": "2026-11-14T15:45:00+08:00",
+      "source": "UEFA official fixtures",
+      "source_url": "https://www.uefa.com/uefanationsleague/match/2047890--sweden-vs-bosnia-and-herzegovina/"
+    },
+    {
+      "competition": "International Friendly",
+      "competition_type": "national_team_friendly",
+      "home": "Japan",
+      "away": "Brazil",
+      "kickoff_utc": "2026-11-14T10:15:00Z",
+      "kickoff_beijing": "2026-11-14T18:15:00+08:00",
+      "venue": "Singapore National Stadium, Singapore",
+      "window_status": "TOO_CLOSE_LT_6H",
+      "lead_minutes_at_capture": 192,
+      "source": "J.League official schedule / Japanese broadcaster listing",
+      "source_url": "https://www.jleague.jp/en/j1/match/"
+    },
+    {
+      "competition": "CFA Guangzhou International Football Invitational",
+      "competition_type": "national_team_friendly",
+      "home": "China PR",
+      "away": "Malaysia",
+      "kickoff_utc": "2026-11-14T12:00:00Z",
+      "kickoff_beijing": "2026-11-14T20:00:00+08:00",
+      "venue": "Tianhe Sports Centre Stadium, Guangzhou, China",
+      "window_status": "TOO_CLOSE_LT_6H",
+      "lead_minutes_at_capture": 297,
+      "source": "Chinese Football Association official notice",
+      "source_url": "https://www.thecfa.cn/qttz/20261016/38285.html"
+    },
+    {
+      "competition": "International Friendly",
+      "competition_type": "national_team_friendly",
+      "home": "Bahrain",
+      "away": "Yemen",
+      "kickoff_utc": "2026-11-14T06:00:00Z",
+      "kickoff_beijing": "2026-11-14T14:00:00+08:00",
+      "window_status": "ALREADY_STARTED_AT_CAPTURE",
+      "lead_minutes_at_capture": -63,
+      "source": "BBC fixture index; kickoff cross-check required",
+      "source_url": "https://bbctodays.pages.dev/sport/football/international-friendlies/scores-fixtures/2026-11"
+    },
+    {
+      "competition": "International Friendly",
+      "competition_type": "national_team_friendly",
+      "home": "Palestine",
+      "away": "Iran",
+      "kickoff_utc": null,
+      "kickoff_beijing": null,
+      "window_status": "TIME_TBC",
+      "missing_fields": [
+        "kickoff_utc",
+        "kickoff_beijing",
+        "venue"
+      ],
+      "source": "BBC fixture index",
+      "source_url": "https://bbctodays.pages.dev/sport/football/international-friendlies/scores-fixtures/2026-11"
+    },
+    {
+      "competition": "J.League YBC Levain Cup",
+      "competition_type": "domestic_cup",
+      "home": "FC Machida Zelvia",
+      "away": "Vissel Kobe",
+      "kickoff_utc": "2026-11-15T04:00:00Z",
+      "kickoff_beijing": "2026-11-15T13:00:00+08:00",
+      "kickoff_local_jst": "2026-11-15T14:00:00+09:00",
+      "venue": "Machida GION Stadium",
+      "window_status": "EARLY_REGISTER_ONLY",
+      "source": "J.League official",
+      "source_url": "https://www.jleague.jp/leaguecup/match/"
+    },
+    {
+      "competition": "J.League YBC Levain Cup",
+      "competition_type": "domestic_cup",
+      "home": "Kashima Antlers",
+      "away": "Yokohama F. Marinos",
+      "kickoff_utc": "2026-11-15T05:00:00Z",
+      "kickoff_beijing": "2026-11-15T14:00:00+08:00",
+      "kickoff_local_jst": "2026-11-15T15:00:00+09:00",
+      "venue": "Mercari Stadium",
+      "window_status": "EARLY_REGISTER_ONLY",
+      "source": "J.League official",
+      "source_url": "https://www.jleague.jp/leaguecup/match/"
+    },
+    {
+      "competition": "J.League YBC Levain Cup",
+      "competition_type": "domestic_cup",
+      "home": "Cerezo Osaka",
+      "away": "Urawa Reds",
+      "kickoff_utc": "2026-11-15T05:00:00Z",
+      "kickoff_beijing": "2026-11-15T14:00:00+08:00",
+      "kickoff_local_jst": "2026-11-15T15:00:00+09:00",
+      "venue": "HANASAKA YANMAR HANASAKA STADIUM",
+      "window_status": "EARLY_REGISTER_ONLY",
+      "source": "J.League official",
+      "source_url": "https://www.jleague.jp/leaguecup/match/"
+    },
+    {
+      "competition": "J.League YBC Levain Cup",
+      "competition_type": "domestic_cup",
+      "home": "Kashiwa Reysol",
+      "away": "Kawasaki Frontale",
+      "kickoff_utc": "2026-11-15T07:00:00Z",
+      "kickoff_beijing": "2026-11-15T16:00:00+08:00",
+      "kickoff_local_jst": "2026-11-15T17:00:00+09:00",
+      "venue": "SANKYO FRONTIER Kashiwa Stadium",
+      "window_status": "EARLY_REGISTER_ONLY",
+      "source": "J.League official",
+      "source_url": "https://www.jleague.jp/leaguecup/match/"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "competition_type": "national_team",
+      "group": "C2",
+      "home": "Cyprus",
+      "away": "Montenegro",
+      "kickoff_utc": "2026-11-15T14:00:00Z",
+      "kickoff_beijing": "2026-11-15T22:00:00+08:00",
+      "kickoff_source_timezone": "CET",
+      "window_status": "EARLY_REGISTER_ONLY",
+      "source": "UEFA official fixtures",
+      "source_url": "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000/"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "competition_type": "national_team",
+      "group": "C2",
+      "home": "Latvia",
+      "away": "Armenia",
+      "kickoff_utc": "2026-11-15T14:00:00Z",
+      "kickoff_beijing": "2026-11-15T22:00:00+08:00",
+      "kickoff_source_timezone": "CET",
+      "window_status": "EARLY_REGISTER_ONLY",
+      "source": "UEFA official fixtures",
+      "source_url": "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000/"
+    }
+  ],
+  "missing_or_conflicting": [
+    "No official Sporttery/Jingcai handicap line or official handicap SP was captured for the eight UEFA Nations League matches; no Asian handicap was substituted.",
+    "No reliable opening-to-current odds time series was retrieved for Kosovo-Israel or Norway-Wales.",
+    "For five UEFA matches kicking off 03:45 Beijing on 15 Nov, lead time at 15:03 is 12h42; they remain early and enter the 6-12h window at 15:45 Beijing.",
+    "Japan-Brazil and China-Malaysia are less than six hours away at capture; no prediction generated.",
+    "Bahrain-Yemen had already kicked off at capture; no prediction generated.",
+    "Palestine-Iran remains without a confirmed kickoff time in the retrieved fixture index."
+  ]
+}
