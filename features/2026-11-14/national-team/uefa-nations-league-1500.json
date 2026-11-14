@@ -1,0 +1,576 @@
+{
+  "schema_version": "football-feature-snapshots.v1",
+  "run_id": "2026-11-14-1500-run11",
+  "cutoff_beijing": "2026-11-14T15:03:07+08:00",
+  "matches": [
+    {
+      "fixture": "Kosovo vs Israel",
+      "uefa_event_id": "2047896",
+      "referee": "Ivan Kružliak (SVK)",
+      "referee_source": "UEFA official match info",
+      "recent_3": {
+        "home": [
+          [
+            "Kosovo",
+            "1-1",
+            "Austria",
+            "2026-10-04"
+          ],
+          [
+            "Israel",
+            "0-0",
+            "Kosovo",
+            "2026-10-01"
+          ],
+          [
+            "Austria",
+            "3-1",
+            "Kosovo",
+            "2026-09-27"
+          ]
+        ],
+        "away": [
+          [
+            "Republic of Ireland",
+            "1-1",
+            "Israel",
+            "2026-10-04"
+          ],
+          [
+            "Israel",
+            "0-0",
+            "Kosovo",
+            "2026-10-01"
+          ],
+          [
+            "Israel",
+            "0-3",
+            "Republic of Ireland",
+            "2026-09-27"
+          ]
+        ]
+      },
+      "likely_tactics": {
+        "home": "4-4-2 expected; use Muriqi/Asllani as central outlets, attack wide channels",
+        "away": "3-4-2-1 expected; recent back-three shape improved defensive stability"
+      },
+      "lineup_status": "NOT_CONFIRMED; projected XI only",
+      "injuries_and_availability": {
+        "home": [
+          "Albian Hajdari injured",
+          "Lumbardh Dellova left camp after medical examination",
+          "Edon Zhegrova availability is inconsistent across previews; do not assume he starts"
+        ],
+        "away": [
+          "Anan Khalaili unavailable",
+          "Eliel Peretz and Tai Baribo unavailable/not called up",
+          "Manor Solomon doubtful",
+          "Roy Revivo doubtful",
+          "Stav Lemkin and Or Blorian reported unavailable"
+        ]
+      },
+      "weather": {
+        "venue": "Pristina",
+        "forecast": "cold around 4-9°C; light rain/showers and wind possible",
+        "confidence": "LOW_CONFLICTING_SOURCES",
+        "source_urls": [
+          "https://www.wetter.com/wetter_aktuell/wettervorhersage/16_tagesvorhersage/kosovo/pristina/RK0XZ0002.html",
+          "https://www.timeanddate.com/weather/kosovo/pristina/ext"
+        ]
+      },
+      "prematch_xg": {
+        "home": null,
+        "away": null,
+        "type": null,
+        "missing_reason": "No verified pre-match xG source with clear provider definition was retrieved; do not reuse post-match xG."
+      },
+      "schedule_density": {
+        "next_match": "Kosovo vs Republic of Ireland",
+        "next_match_beijing": "2026-11-18 (local kickoff time not normalized here)",
+        "rest_days_approx": 3,
+        "next_opponent_importance": "high; Kosovo and Ireland level on 5 points behind Austria, promotion/quarter-final position at stake"
+      },
+      "source_urls": [
+        "https://tipsters.net/matches/soccer/14-11-2026-kosovo-israel",
+        "https://www.uefa.com/uefanationsleague/match/2047896--kosovo-vs-israel/matchinfo/"
+      ]
+    },
+    {
+      "fixture": "Norway vs Wales",
+      "uefa_event_id": "2047893",
+      "referee": "Oleksii Derevinskyi (UKR)",
+      "referee_source": "UEFA official match info",
+      "recent_3": {
+        "home": [
+          [
+            "Portugal",
+            "2-1",
+            "Norway",
+            "2026-10-04"
+          ],
+          [
+            "Wales",
+            "2-1",
+            "Norway",
+            "2026-10-01"
+          ],
+          [
+            "Norway",
+            "1-2",
+            "Portugal",
+            "2026-09-27"
+          ]
+        ],
+        "away": [
+          [
+            "Wales",
+            "0-1",
+            "Denmark",
+            "2026-10-04"
+          ],
+          [
+            "Wales",
+            "2-1",
+            "Norway",
+            "2026-10-01"
+          ],
+          [
+            "Denmark",
+            "2-0",
+            "Wales",
+            "2026-09-27"
+          ]
+        ]
+      },
+      "likely_tactics": {
+        "home": "4-2-3-1 expected; Haaland as central target, wide runners and high attacking volume",
+        "away": "4-2-3-1 expected; likely compact mid/low block and transition attacks"
+      },
+      "lineup_status": "NOT_CONFIRMED; projected XI only",
+      "injuries_and_availability": {
+        "home": [
+          "Martin Ødegaard doubtful, not confirmed absent",
+          "Fredrik Aursnes withdrew from squad",
+          "Sondre Langås unavailable",
+          "Jørgen Strand Larsen withdrew; Alexander Sørloth returned but not expected to manage two full 90-minute matches"
+        ],
+        "away": [
+          "Kieffer Moore withdrew injured",
+          "Ben Cabango suspended",
+          "Sorba Thomas suspended",
+          "Jordan James injured"
+        ]
+      },
+      "weather": {
+        "venue": "Oslo",
+        "forecast": null,
+        "confidence": "UNAVAILABLE",
+        "missing_reason": "No reliable date-specific hourly forecast for Ullevaal at kickoff was confirmed in this retrieval."
+      },
+      "prematch_xg": {
+        "home": 2.69,
+        "away": 0.72,
+        "type": "external_model_estimate",
+        "provider": "Poznavach",
+        "source_url": "https://www.poznavach.com/en/football-predictions/norway-wales-prediction-14-11-2026",
+        "note": "Third-party model estimate only; not our V5.1 xG and not supplier-measured match xG."
+      },
+      "schedule_density": {
+        "next_match": "Denmark vs Norway / Wales vs Portugal",
+        "next_match_beijing": "2026-11-18",
+        "rest_days_approx": 3,
+        "next_opponent_importance": "very high; both teams have 3 points and are in the bottom two, relegation pressure"
+      },
+      "source_urls": [
+        "https://www.fotball.no/landslag/norge-a-herrer/2026/herrelandslagets-tropp-til-nations-league-kamper/",
+        "https://www.skysports.com/football/news/13607854/wales-craig-bellamy-announces-26-man-squad-for-uefa-nations-league-matches-against-norway-and-portugal",
+        "https://www.poznavach.com/en/football-predictions/norway-wales-prediction-14-11-2026",
+        "https://www.uefa.com/uefanationsleague/match/2047893--norway-vs-wales/matchinfo/"
+      ]
+    },
+    {
+      "fixture": "Georgia vs Hungary",
+      "uefa_event_id": "2047895",
+      "referee": "Ondřej Berka (CZE)",
+      "referee_source": "UEFA official match info",
+      "recent_3": {
+        "home": [
+          [
+            "Northern Ireland",
+            "0-0",
+            "Georgia",
+            "2026-10-05"
+          ],
+          [
+            "Hungary",
+            "1-0",
+            "Georgia",
+            "2026-10-02"
+          ],
+          [
+            "Georgia",
+            "0-0",
+            "Ukraine",
+            "2026-09-28"
+          ]
+        ],
+        "away": [
+          [
+            "Ukraine",
+            "1-2",
+            "Hungary",
+            "2026-10-05"
+          ],
+          [
+            "Hungary",
+            "1-0",
+            "Georgia",
+            "2026-10-02"
+          ],
+          [
+            "Northern Ireland",
+            "0-0",
+            "Hungary",
+            "2026-09-28"
+          ]
+        ]
+      },
+      "likely_tactics": {
+        "home": "4-2-3-1 expected; likely compact midfield and counter-attacks, reduced individual progression without Kvaratskhelia",
+        "away": "4-2-3-1 expected; Hungary can control central possession and attack second balls"
+      },
+      "lineup_status": "NOT_CONFIRMED; projected XI only",
+      "injuries_and_availability": {
+        "home": [
+          "Khvicha Kvaratskhelia injured",
+          "Giorgi Kochorashvili suspended"
+        ],
+        "away": [
+          "Dominik Szoboszlai reported doubtful; not confirmed absent",
+          "No official final XI yet"
+        ]
+      },
+      "weather": {
+        "venue": "Tbilisi",
+        "forecast": "cloudy, around 16-18°C near kickoff, low/no rain signal in retrieved hourly forecast",
+        "confidence": "MEDIUM",
+        "source_url": "https://www.timeanddate.com/weather/georgia/tbilisi/hourly"
+      },
+      "prematch_xg": {
+        "home": null,
+        "away": null,
+        "type": null,
+        "missing_reason": "No verified provider xG pair with a clear measurement definition was retrieved."
+      },
+      "schedule_density": {
+        "next_match": "Hungary vs Northern Ireland / Ukraine vs Georgia",
+        "next_match_beijing": "2026-11-18",
+        "rest_days_approx": 3,
+        "next_opponent_importance": "high; Hungary chasing top-two/promotion, Georgia needs points to escape bottom"
+      },
+      "source_urls": [
+        "https://news.22bet.com/predictions/georgia-vs-hungary-prediction-booking-code-14-11-2026/",
+        "https://oddsfilter.com/event/1001528973-georgia-hungary",
+        "https://www.uefa.com/uefanationsleague/match/2047895--georgia-vs-hungary/matchinfo/"
+      ]
+    },
+    {
+      "fixture": "Portugal vs Denmark",
+      "uefa_event_id": "2047892",
+      "referee": "Rade Obrenovič (SVN)",
+      "lineup_status": "NOT_CONFIRMED; early register only",
+      "recent_3": {
+        "home": [
+          [
+            "Portugal",
+            "2-1",
+            "Norway",
+            "2026-10-04"
+          ],
+          [
+            "Denmark",
+            "2-4",
+            "Portugal",
+            "2026-10-01"
+          ],
+          [
+            "Norway",
+            "1-2",
+            "Portugal",
+            "2026-09-27"
+          ]
+        ],
+        "away": [
+          [
+            "Wales",
+            "0-1",
+            "Denmark",
+            "2026-10-04"
+          ],
+          [
+            "Denmark",
+            "2-4",
+            "Portugal",
+            "2026-10-01"
+          ],
+          [
+            "Denmark",
+            "2-0",
+            "Wales",
+            "2026-09-27"
+          ]
+        ]
+      },
+      "injuries_and_availability": {
+        "home": [
+          "No complete official injury list captured"
+        ],
+        "away": [
+          "Patrick Dorgu ruled out after medical review; not fit for Portugal/Norway window"
+        ]
+      },
+      "market_note": "Third-party 1X2 available; no official Sporttery handicap or reliable opening-to-current time series.",
+      "next_match": "Wales vs Portugal / Denmark vs Norway on 17 Nov"
+    },
+    {
+      "fixture": "Northern Ireland vs Ukraine",
+      "uefa_event_id": "2047897",
+      "referee": "François Letexier (FRA)",
+      "lineup_status": "NOT_CONFIRMED; early register only",
+      "recent_3": {
+        "home": [
+          [
+            "Northern Ireland",
+            "0-0",
+            "Georgia",
+            "2026-10-05"
+          ],
+          [
+            "Ukraine",
+            "0-3",
+            "Northern Ireland",
+            "2026-10-02"
+          ],
+          [
+            "Northern Ireland",
+            "0-0",
+            "Hungary",
+            "2026-09-28"
+          ]
+        ],
+        "away": [
+          [
+            "Ukraine",
+            "1-2",
+            "Hungary",
+            "2026-10-05"
+          ],
+          [
+            "Ukraine",
+            "0-3",
+            "Northern Ireland",
+            "2026-10-02"
+          ],
+          [
+            "Georgia",
+            "0-0",
+            "Ukraine",
+            "2026-09-28"
+          ]
+        ]
+      },
+      "injuries_and_availability": {
+        "home": [
+          "Dan Ballard, Conor Bradley, Eoin Toal, Ali McCann, Jamie McDonnell reported unavailable"
+        ],
+        "away": [
+          "Mykola Shaparenko and Valerii Bondar reported unavailable"
+        ]
+      },
+      "likely_tactics": {
+        "home": "compact 3-4-2-1 expected",
+        "away": "4-4-2/4-2-3-1 alternatives; final selection not confirmed"
+      },
+      "next_match": "Hungary vs Northern Ireland / Ukraine vs Georgia on 17 Nov"
+    },
+    {
+      "fixture": "Austria vs Republic of Ireland",
+      "uefa_event_id": "2047894",
+      "referee": "Irfan Peljto (BIH)",
+      "lineup_status": "NOT_CONFIRMED; early register only",
+      "recent_3": {
+        "home": [
+          [
+            "Austria",
+            "1-1",
+            "Kosovo",
+            "2026-10-04"
+          ],
+          [
+            "Republic of Ireland",
+            "2-2",
+            "Austria",
+            "2026-10-01"
+          ],
+          [
+            "Austria",
+            "3-1",
+            "Kosovo",
+            "2026-09-27"
+          ]
+        ],
+        "away": [
+          [
+            "Republic of Ireland",
+            "1-1",
+            "Israel",
+            "2026-10-04"
+          ],
+          [
+            "Republic of Ireland",
+            "2-2",
+            "Austria",
+            "2026-10-01"
+          ],
+          [
+            "Israel",
+            "0-3",
+            "Republic of Ireland",
+            "2026-09-27"
+          ]
+        ]
+      },
+      "injuries_and_availability": {
+        "home": [
+          "David Alaba, Maximilian Wöber, Patrick Wimmer, Florian Grillitsch, Xaver Schlager and Alexander Prass reported unavailable; Christoph Baumgartner returned"
+        ],
+        "away": [
+          "No major injury list verified in this run; Séamus Coleman is with squad in hybrid coaching role"
+        ]
+      },
+      "tactics": "Austria under Rangnick expected to press aggressively; Ireland likely to defend compactly and counter",
+      "next_match": "Israel vs Austria / Republic of Ireland vs Kosovo on 17 Nov"
+    },
+    {
+      "fixture": "Romania vs Poland",
+      "uefa_event_id": "2047891",
+      "referee": "Sebastian Gishamer (AUT)",
+      "lineup_status": "NOT_CONFIRMED; early register only",
+      "recent_3": {
+        "home": [
+          [
+            "Poland",
+            "6-0",
+            "Romania",
+            "2026-10-02"
+          ],
+          [
+            "Sweden",
+            "1-0",
+            "Romania",
+            "2026-10-05"
+          ],
+          [
+            "Romania",
+            "2-4",
+            "Bosnia and Herzegovina",
+            "2026-09-28"
+          ]
+        ],
+        "away": [
+          [
+            "Bosnia and Herzegovina",
+            "1-0",
+            "Poland",
+            "2026-10-05"
+          ],
+          [
+            "Poland",
+            "6-0",
+            "Romania",
+            "2026-10-02"
+          ],
+          [
+            "Romania",
+            "0-1",
+            "Sweden",
+            "2026-09-28"
+          ]
+        ]
+      },
+      "injuries_and_availability": {
+        "home": [
+          "Nicolae Stanciu and Valentin Mihăilă withdrew injured; Ionuț Radu reported unavailable; Răzvan Marin suspended"
+        ],
+        "away": [
+          "Jan Bednarek suspended; Marcin Bułka and Kamil Grabara injured; Piotr Zieliński reported doubtful"
+        ]
+      },
+      "next_match": "Bosnia and Herzegovina vs Romania / Poland vs Sweden on 17 Nov"
+    },
+    {
+      "fixture": "Sweden vs Bosnia and Herzegovina",
+      "uefa_event_id": "2047890",
+      "referee": "Simone Sozza (ITA)",
+      "lineup_status": "NOT_CONFIRMED; early register only",
+      "recent_3": {
+        "home": [
+          [
+            "Romania",
+            "0-1",
+            "Sweden",
+            "2026-10-05"
+          ],
+          [
+            "Bosnia and Herzegovina",
+            "1-1",
+            "Sweden",
+            "2026-10-02"
+          ],
+          [
+            "Sweden",
+            "3-1",
+            "Poland",
+            "2026-09-28"
+          ]
+        ],
+        "away": [
+          [
+            "Bosnia and Herzegovina",
+            "1-0",
+            "Poland",
+            "2026-10-05"
+          ],
+          [
+            "Bosnia and Herzegovina",
+            "1-1",
+            "Sweden",
+            "2026-10-02"
+          ],
+          [
+            "Romania",
+            "2-4",
+            "Bosnia and Herzegovina",
+            "2026-09-28"
+          ]
+        ]
+      },
+      "injuries_and_availability": {
+        "home": [
+          "Dejan Kulusevski named in squad after long injury absence; Anthony Elanga returned; Emil Holm not selected"
+        ],
+        "away": [
+          "Muharemović suspended; other key absences not confirmed"
+        ]
+      },
+      "next_match": "Poland vs Sweden / Bosnia and Herzegovina vs Romania on 17 Nov"
+    }
+  ],
+  "data_gaps": [
+    "No official confirmed starting XI at the 15:03 capture time; all lineup references are projected only.",
+    "No canonical SQLite feature snapshot or stable internal match_id is available in this runtime.",
+    "Pre-match xG is missing for Kosovo-Israel and Georgia-Hungary; Norway-Wales only has a third-party model estimate.",
+    "Weather is low-confidence or unavailable for several venues.",
+    "Some injury lists are secondary-source reports and contain conflicting player availability."
+  ]
+}
