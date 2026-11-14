@@ -20,17 +20,18 @@
     },
     {
       "path": "predictions/2026-11-14/national-team/uefa-nations-league-provisional-1500.json",
-      "last_content_commit": "61ce3d0e1d470852ed913ae8ee9962a03563ef8c"
+      "last_content_commit": "56402102a67e12d319b14dca2f4ff4ddf3aabc37"
     }
   ],
   "run_result": {
-    "schedule_fixtures_recorded": 16,
+    "schedule_fixtures_recorded": 18,
     "eligible_6_to_12_hour_forecasts": 3,
     "early_uefa_fixtures_not_predicted": 5,
     "friendlies_not_predicted_due_window_or_already_started": 3,
     "official_sporttery_handicap_verified": 0,
     "third_party_asian_handicap_substituted": false,
-    "official_lineup_confirmed": 0
+    "official_lineup_confirmed": 0,
+    "provisional_forecasts_updated_after_goal_market_crosscheck": 3
   },
   "data_integrity": {
     "sqlite_connected": false,
@@ -50,12 +51,5 @@
     "Opening-to-current odds movement was captured only for Georgia-Hungary; other market pages lack a reliable provider event timestamp or opening series.",
     "The 15 Nov schedule includes only matches whose Beijing-local dates fall on 15 Nov; later UTC kickoffs falling on 16 Nov Beijing are excluded from this two-date window."
   ],
-  "readback_verification_status": "PASS",
-  "readback_verification": {
-    "checked_at_beijing": "2026-11-14T15:03:07+08:00",
-    "files_checked": 5,
-    "json_parse_success": 5,
-    "branch": "automation/daily-football-2026-11-14-1500-run11",
-    "method": "fetch each committed file from the target branch and JSON.parse the returned UTF-8 content"
-  }
+  "readback_verification_status": "PENDING_FINAL"
 }
