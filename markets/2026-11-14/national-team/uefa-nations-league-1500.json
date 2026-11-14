@@ -2,41 +2,8 @@
   "schema_version": "football-market-snapshots.v1",
   "run_id": "2026-11-14-1500-run11",
   "retrieved_at_beijing": "2026-11-14T15:03:07+08:00",
-  "timestamp_policy": "provider event timestamps are recorded only when explicitly available; otherwise retrieval time only",
+  "timestamp_policy": "Provider event timestamps are recorded only when explicitly available. A retrieval timestamp does not imply a live feed; stale snapshots are explicitly marked.",
   "snapshots": [
-    {
-      "fixture": "Kosovo vs Israel",
-      "provider": "PokerStars Sports",
-      "market_type": "third_party_1x2",
-      "odds": {
-        "home": 1.75,
-        "draw": 3.5,
-        "away": 4
-      },
-      "source_url": "https://www.pokerstars.fr/en/sports/soccer/1/uefa-nations-league-b/12288805/kosovo-v-israel/36190251/",
-      "provider_event_timestamp_utc": null,
-      "retrieved_at_utc": "2026-11-14T07:03:07Z",
-      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
-      "quality_status": "SECONDARY_MARKET_REFERENCE"
-    },
-    {
-      "fixture": "Kosovo vs Israel",
-      "provider": "SportyTrader bookmaker comparison",
-      "market_type": "third_party_1x2_and_ou",
-      "odds": {
-        "home": 1.93,
-        "draw": 3.76,
-        "away": 4.4,
-        "over_2_5": 1.96,
-        "under_2_5": 1.92
-      },
-      "source_url": "https://www.sportytrader.com/en/odds/kosovo-israel-8318363/",
-      "provider_event_timestamp_utc": null,
-      "retrieved_at_utc": "2026-11-14T07:03:07Z",
-      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
-      "quality_status": "SECONDARY_MARKET_REFERENCE",
-      "note": "Provider prices differ materially from PokerStars; retain both, do not average as if same book/time."
-    },
     {
       "fixture": "Norway vs Wales",
       "provider": "Betmaster",
@@ -159,6 +126,103 @@
         "under_2_5": 2.55
       },
       "source_url": "https://betmaster.com/en/sportsbook/sports/soccer/match/4538330",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+      "quality_status": "SECONDARY_MARKET_REFERENCE"
+    },
+    {
+      "fixture": "Kosovo vs Israel",
+      "provider": "Betmaster",
+      "market_type": "third_party_1x2_and_ou",
+      "odds": {
+        "home": 1.86,
+        "draw": 3.4,
+        "away": 4.2,
+        "over_2_5": 1.92,
+        "under_2_5": 1.92
+      },
+      "source_url": "https://betmaster.com/es/sportsbook/sports/soccer/match/4538332",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+      "quality_status": "SECONDARY_MARKET_REFERENCE"
+    },
+    {
+      "fixture": "Kosovo vs Israel",
+      "provider": "OddSeek bookmaker comparison",
+      "market_type": "third_party_1x2_and_ou",
+      "odds": {
+        "home": 1.89,
+        "draw": 3.75,
+        "away": 4.4,
+        "over_2_5": 1.94,
+        "under_2_5": 1.97
+      },
+      "source_url": "https://oddseek.com/zh/football/kosovo-vs-israel-13626798",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+      "quality_status": "SECONDARY_MARKET_REFERENCE"
+    },
+    {
+      "fixture": "Kosovo vs Israel",
+      "provider": "Betrend / The Odds API (1xBet line)",
+      "market_type": "third_party_1x2_open_to_current",
+      "odds": {
+        "home": 1.81,
+        "draw": 3.82,
+        "away": 4.6
+      },
+      "opening_to_current": {
+        "home": "1.89 -> 1.81",
+        "draw": null,
+        "away": null
+      },
+      "provider_capture_label": "updated 02:15; timezone not specified",
+      "source_url": "https://betrend.im/pt/matches/kosovo-israel-2026-11-14/odds",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "PROVIDER_LABEL_TIMEZONE_UNSPECIFIED",
+      "quality_status": "SECONDARY_MARKET_REFERENCE"
+    },
+    {
+      "fixture": "Norway vs Wales",
+      "provider": "SteamWatch / Pinnacle",
+      "market_type": "third_party_1x2_and_total_open_to_last_snapshot",
+      "odds": {
+        "home": 1.22,
+        "draw": 7.37,
+        "away": 12.06,
+        "over_3_25": 1.83,
+        "under_3_25": 2.05
+      },
+      "opening_to_current": {
+        "home": "1.24 -> 1.22",
+        "draw": "6.98 -> 7.37",
+        "away": "11.22 -> 12.06",
+        "over_3_25": "1.92 -> 1.83",
+        "under_3_25": "1.95 -> 2.05"
+      },
+      "provider_event_timestamp_utc": "2026-11-13T12:48:00Z",
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "STALE_LAST_PREMATCH_SNAPSHOT",
+      "source_url": "https://www.steamwatch.io/match/8d67c473dbea0c85b30eefee4bca53d9",
+      "quality_status": "SECONDARY_MARKET_REFERENCE",
+      "note": "Last recorded snapshot is 18h+ older than this run; not represented as current."
+    },
+    {
+      "fixture": "Norway vs Wales",
+      "provider": "Betmaster",
+      "market_type": "third_party_1x2_and_ou",
+      "odds": {
+        "home": 1.23,
+        "draw": 6.4,
+        "away": 9.8,
+        "over_2_5": 1.45,
+        "under_2_5": 2.85
+      },
+      "source_url": "https://betmaster.com/en/sportsbook/sports/soccer/match/4538327",
       "provider_event_timestamp_utc": null,
       "retrieved_at_utc": "2026-11-14T07:03:07Z",
       "timestamp_quality": "RETRIEVAL_TIME_ONLY",
