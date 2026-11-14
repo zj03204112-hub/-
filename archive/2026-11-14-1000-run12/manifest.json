@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "reviews/2026-11-13/summary.json",
-      "commit_sha": "00ec525399678e3c2be32e28896a7b42c36feabb"
+      "commit_sha": "e7fcbf95b86ce0e159851adcdc404d6d2c6d02c6"
     },
     {
       "path": "reviews/2026-11-13/results-by-category.json",
@@ -51,8 +51,10 @@
       "reviews/2026-11-13/results-by-category.json",
       "fixtures/2026-11-14-15/schedule-refresh.json",
       "xg/weekly/2026-W46/match-observations.json",
-      "xg/weekly/2026-W46/team-weekly-snapshot.json"
+      "xg/weekly/2026-W46/team-weekly-snapshot.json",
+      "reviews/2026-11-13/summary.json"
     ],
     "method": "fetch_file and JSON parse; all five payload files readable on the work branch"
-  }
+  },
+  "final_note": "UAE risk review corrected after checking the official match line-up: Moncada started and played until 82'; the reported injury concern did not materialize."
 }
