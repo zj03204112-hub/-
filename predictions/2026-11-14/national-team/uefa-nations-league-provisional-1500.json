@@ -185,5 +185,6 @@
     "frozen_validation_samples_modified": false,
     "historical_prediction_snapshots_overwritten": false
   },
-  "method_note": "Goal expectation was cross-checked against available O/U information where available; the forecast is not forced into a low-goal profile. Kosovo total lambda 2.50 is near the balanced 2.5 market, Norway total lambda 3.10 retains a higher-goal tail, and Georgia total lambda 2.15 reflects the under-2.5 market signal. Probabilities are a 50/50 blend of a provisional Poisson estimate and secondary-market no-margin probabilities, rounded; this is not V5.1."
+  "method_note": "Goal expectation was cross-checked against available O/U information where available; the forecast is not forced into a low-goal profile. Kosovo total lambda 2.50 is near the balanced 2.5 market, Norway total lambda 3.10 retains a higher-goal tail, and Georgia total lambda 2.15 reflects the under-2.5 market signal. Probabilities are a 50/50 blend of a provisional Poisson estimate and secondary-market no-margin probabilities, rounded; this is not V5.1.",
+  "data_completeness_method": "Manual completeness rubric across fixture identity, kickoff, market, recent form, team news, referee, weather, pre-match xG, confirmed lineup and official Sporttery handicap; these percentages are not database coverage metrics."
 }
