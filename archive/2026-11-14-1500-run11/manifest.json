@@ -51,5 +51,12 @@
     "Opening-to-current odds movement was captured only for Georgia-Hungary; other market pages lack a reliable provider event timestamp or opening series.",
     "The 15 Nov schedule includes only matches whose Beijing-local dates fall on 15 Nov; later UTC kickoffs falling on 16 Nov Beijing are excluded from this two-date window."
   ],
-  "readback_verification_status": "PENDING_FINAL"
+  "readback_verification_status": "PASS",
+  "readback_verification": {
+    "checked_at_beijing": "2026-11-14T15:03:07+08:00",
+    "files_checked": 5,
+    "json_parse_success": 5,
+    "branch": "automation/daily-football-2026-11-14-1500-run11",
+    "method": "fetch each artifact from target branch and parse returned JSON"
+  }
 }
