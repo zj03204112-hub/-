@@ -25,6 +25,42 @@
     {
       "path": "xg/weekly/2026-W46/team-weekly-snapshot.json",
       "commit_sha": "7180827eeb3740874a0d25cf27e78e55e8f4a4ce"
+    },
+    {
+      "path": "reviews/2026-11-13/national-team/uefa-nations-league.json",
+      "commit_sha": "36f71b5409ce61423f134ef84d7048d6ddc20a99"
+    },
+    {
+      "path": "reviews/2026-11-13/national-team/afcon-qualifiers.json",
+      "commit_sha": "66ff27062027f0f2e68c31f0fde395376014b713"
+    },
+    {
+      "path": "reviews/2026-11-13/national-team/concacaf-nations-league.json",
+      "commit_sha": "0f913e252d1751aa3e81b07d08b214fde9c5d0bf"
+    },
+    {
+      "path": "reviews/2026-11-13/national-team/international-friendlies.json",
+      "commit_sha": "4181e5c8816a91016949ed79a45599899cae9180"
+    },
+    {
+      "path": "reviews/2026-11-13/domestic-cup/results.json",
+      "commit_sha": "4bf07557799bdbc37b548d18707bd415661c065a"
+    },
+    {
+      "path": "reviews/2026-11-13/continental-club/results.json",
+      "commit_sha": "298ab7b26874ca8606f79ff25b96b450979289e0"
+    },
+    {
+      "path": "reviews/2026-11-13/domestic-league/coverage.json",
+      "commit_sha": "1991f71e90df7e0bad2b8fe4d79de27e4d2ef3fa"
+    },
+    {
+      "path": "reviews/2026-11-13/other/status-not-confirmed.json",
+      "commit_sha": "cb62f079443c60a7f90c35969a95702534024264"
+    },
+    {
+      "path": "teams/_provisional-name-key/2026-W46/team-index.json",
+      "commit_sha": "9a56aa194359cfa5b6b1319d0b855d3dd6288248"
     }
   ],
   "sqlite_connected": false,
@@ -51,9 +87,19 @@
       "reviews/2026-11-13/results-by-category.json",
       "fixtures/2026-11-14-15/schedule-refresh.json",
       "xg/weekly/2026-W46/match-observations.json",
-      "xg/weekly/2026-W46/team-weekly-snapshot.json"
+      "xg/weekly/2026-W46/team-weekly-snapshot.json",
+      "reviews/2026-11-13/national-team/uefa-nations-league.json",
+      "reviews/2026-11-13/national-team/afcon-qualifiers.json",
+      "reviews/2026-11-13/national-team/concacaf-nations-league.json",
+      "reviews/2026-11-13/national-team/international-friendlies.json",
+      "reviews/2026-11-13/domestic-cup/results.json",
+      "reviews/2026-11-13/continental-club/results.json",
+      "reviews/2026-11-13/domestic-league/coverage.json",
+      "reviews/2026-11-13/other/status-not-confirmed.json",
+      "teams/_provisional-name-key/2026-W46/team-index.json"
     ],
-    "method": "fetch_file and JSON parse; all five payload files readable on the work branch"
+    "method": "all 14 payload files fetched from work branch and parsed as JSON"
   },
-  "final_note": "UAE risk review corrected after checking the official match line-up: Moncada started and played until 82'; the reported injury concern did not materialize."
+  "final_note": "UAE risk review corrected after checking the official match line-up: Moncada started and played until 82'; the reported injury concern did not materialize.",
+  "directory_structure_note": "按日期与类型创建独立目录；球队周度记录先存入teams/_provisional-name-key/2026-W46，canonical team_id目录因SQLite映射未连接而未创建。"
 }
