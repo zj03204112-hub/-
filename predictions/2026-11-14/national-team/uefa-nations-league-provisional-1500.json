@@ -65,16 +65,16 @@
       "kickoff_beijing": "2026-11-15T01:00:00+08:00",
       "lead_minutes": 597,
       "strategy_id": "INT-46-NOR-02",
-      "lambda_home": 2.25,
-      "lambda_away": 0.85,
+      "lambda_home": 2.4,
+      "lambda_away": 0.9,
       "lambda_type": "own_provisional_goal_model_estimate; external model xG retained separately at 2.69/0.72",
-      "home_win_prob": 0.72,
-      "draw_prob": 0.17,
+      "home_win_prob": 0.73,
+      "draw_prob": 0.16,
       "away_win_prob": 0.11,
       "score1": "2-0",
-      "score1_probability_approx": 0.114,
-      "score2": "1-0",
-      "score2_probability_approx": 0.101,
+      "score1_probability_approx": 0.106,
+      "score2": "2-1",
+      "score2_probability_approx": 0.096,
       "predicted_90min_result": "主胜",
       "predicted_handicap_result": null,
       "sporttery_handicap_line": null,
@@ -91,11 +91,11 @@
       ],
       "data_completeness": 0.76,
       "source_cutoff_beijing": "2026-11-14T15:03:07+08:00",
-      "goal_expectation_total": 3.1,
+      "goal_expectation_total": 3.3,
       "goal_total_distribution": {
-        "over_2_5": 0.599,
-        "under_2_5": 0.401,
-        "source": "own provisional Poisson estimate; external model estimate is 2.69-0.72"
+        "over_2_5": 0.641,
+        "under_2_5": 0.359,
+        "source": "own provisional Poisson estimate; third-party market has Over 2.5 1.45 / Under 2.5 2.85 and an older 3.25-line over price shortening"
       }
     },
     {
@@ -185,6 +185,6 @@
     "frozen_validation_samples_modified": false,
     "historical_prediction_snapshots_overwritten": false
   },
-  "method_note": "Goal expectation was cross-checked against available O/U information where available; the forecast is not forced into a low-goal profile. Kosovo total lambda 2.50 is near the balanced 2.5 market, Norway total lambda 3.10 retains a higher-goal tail, and Georgia total lambda 2.15 reflects the under-2.5 market signal. Probabilities are a 50/50 blend of a provisional Poisson estimate and secondary-market no-margin probabilities, rounded; this is not V5.1.",
+  "method_note": "Goal expectation was cross-checked against available O/U information where available; the forecast is not forced into a low-goal profile. Kosovo total lambda 2.50 is near the balanced 2.5 market, Norway total lambda 3.30 retains a higher-goal tail consistent with the available over signals and external model xG 2.69-0.72, and Georgia total lambda 2.15 reflects the under-2.5 market signal. Probabilities are a 50/50 blend of a provisional Poisson estimate and secondary-market no-margin probabilities, rounded; this is not V5.1.",
   "data_completeness_method": "Manual completeness rubric across fixture identity, kickoff, market, recent form, team news, referee, weather, pre-match xG, confirmed lineup and official Sporttery handicap; these percentages are not database coverage metrics."
 }
