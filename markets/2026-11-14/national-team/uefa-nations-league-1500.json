@@ -1,0 +1,175 @@
+{
+  "schema_version": "football-market-snapshots.v1",
+  "run_id": "2026-11-14-1500-run11",
+  "retrieved_at_beijing": "2026-11-14T15:03:07+08:00",
+  "timestamp_policy": "provider event timestamps are recorded only when explicitly available; otherwise retrieval time only",
+  "snapshots": [
+    {
+      "fixture": "Kosovo vs Israel",
+      "provider": "PokerStars Sports",
+      "market_type": "third_party_1x2",
+      "odds": {
+        "home": 1.75,
+        "draw": 3.5,
+        "away": 4
+      },
+      "source_url": "https://www.pokerstars.fr/en/sports/soccer/1/uefa-nations-league-b/12288805/kosovo-v-israel/36190251/",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+      "quality_status": "SECONDARY_MARKET_REFERENCE"
+    },
+    {
+      "fixture": "Kosovo vs Israel",
+      "provider": "SportyTrader bookmaker comparison",
+      "market_type": "third_party_1x2_and_ou",
+      "odds": {
+        "home": 1.93,
+        "draw": 3.76,
+        "away": 4.4,
+        "over_2_5": 1.96,
+        "under_2_5": 1.92
+      },
+      "source_url": "https://www.sportytrader.com/en/odds/kosovo-israel-8318363/",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+      "quality_status": "SECONDARY_MARKET_REFERENCE",
+      "note": "Provider prices differ materially from PokerStars; retain both, do not average as if same book/time."
+    },
+    {
+      "fixture": "Norway vs Wales",
+      "provider": "Betmaster",
+      "market_type": "third_party_1x2",
+      "odds": {
+        "home": 1.23,
+        "draw": 6.4,
+        "away": 9.8
+      },
+      "source_url": "https://betmaster.com/en/sportsbook/sports/soccer/match/4538327",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+      "quality_status": "SECONDARY_MARKET_REFERENCE"
+    },
+    {
+      "fixture": "Georgia vs Hungary",
+      "provider": "OddsFilter bookmaker average",
+      "market_type": "third_party_1x2_and_ou",
+      "odds": {
+        "home": 3.03,
+        "draw": 3.05,
+        "away": 2.45,
+        "over_2_5": 2.48,
+        "under_2_5": 1.53
+      },
+      "provider_event_timestamp_utc": "2026-11-14T02:34:00Z",
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "PROVIDER_TIMESTAMPED",
+      "quality_status": "SECONDARY_MARKET_REFERENCE",
+      "source_url": "https://oddsfilter.com/event/1001528973-georgia-hungary",
+      "opening_to_current": {
+        "home": "3.18 -> 3.03 (-4.7%)",
+        "draw": "3.04 -> 3.03 (-0.3%)",
+        "away": "2.35 -> 2.45 (+4.3%)"
+      },
+      "note": "Bookmaker average; provider says prices refresh about every 3 hours. This is not official Sporttery."
+    },
+    {
+      "fixture": "Portugal vs Denmark",
+      "provider": "Betmaster DK",
+      "market_type": "third_party_1x2",
+      "odds": {
+        "home": 1.52,
+        "draw": 4.39,
+        "away": 5.45
+      },
+      "source_url": "https://betmaster.dk/en/sportsbook/sports/soccer/match/4538325",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+      "quality_status": "SECONDARY_MARKET_REFERENCE"
+    },
+    {
+      "fixture": "Northern Ireland vs Ukraine",
+      "provider": "Betmaster",
+      "market_type": "third_party_1x2",
+      "odds": {
+        "home": 2.5,
+        "draw": 2.9,
+        "away": 3.05
+      },
+      "source_url": "https://betmaster.com/en/sportsbook/sports/soccer/match/4549878",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+      "quality_status": "SECONDARY_MARKET_REFERENCE"
+    },
+    {
+      "fixture": "Austria vs Republic of Ireland",
+      "provider": "Bzzoiro matched-market page",
+      "market_type": "third_party_1x2_and_money_distribution",
+      "odds": {
+        "home": 1.67,
+        "draw": 4.3,
+        "away": 6.2,
+        "over_2_5": 1.95,
+        "under_2_5": 2.06
+      },
+      "matched_amount_eur": 22527,
+      "provider_capture_label": "captured 1 minute before page search",
+      "market_distribution_percent": {
+        "home": 81.8,
+        "draw": 8.2,
+        "away": 10.1
+      },
+      "source_url": "https://sports.bzzoiro.com/matches/212708/",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+      "quality_status": "SECONDARY_MARKET_REFERENCE",
+      "note": "Provider's matched-market split is not an official exchange audit and must not be treated as verified betting flow."
+    },
+    {
+      "fixture": "Romania vs Poland",
+      "provider": "Betmaster",
+      "market_type": "third_party_1x2_and_ou",
+      "odds": {
+        "home": 3.85,
+        "draw": 3.55,
+        "away": 1.88,
+        "over_2_5": 2.1,
+        "under_2_5": 1.66
+      },
+      "source_url": "https://betmaster.com/en/sportsbook/sports/soccer/match/4538319",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+      "quality_status": "SECONDARY_MARKET_REFERENCE"
+    },
+    {
+      "fixture": "Sweden vs Bosnia and Herzegovina",
+      "provider": "Betmaster",
+      "market_type": "third_party_1x2_and_ou",
+      "odds": {
+        "home": 1.53,
+        "draw": 4.3,
+        "away": 5.4,
+        "over_2_5": 1.62,
+        "under_2_5": 2.55
+      },
+      "source_url": "https://betmaster.com/en/sportsbook/sports/soccer/match/4538330",
+      "provider_event_timestamp_utc": null,
+      "retrieved_at_utc": "2026-11-14T07:03:07Z",
+      "timestamp_quality": "RETRIEVAL_TIME_ONLY",
+      "quality_status": "SECONDARY_MARKET_REFERENCE"
+    }
+  ],
+  "official_sporttery": {
+    "verified_fixture_count": 0,
+    "official_handicap_lines": [],
+    "official_handicap_sp": [],
+    "status": "NOT_CAPTURED",
+    "rule": "Do not substitute bookmaker Asian handicap for official Jingcai handicap."
+  }
+}
