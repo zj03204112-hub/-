@@ -1,0 +1,54 @@
+{
+  "schema_version": "daily-football-run-manifest.v1",
+  "run_id": "2026-11-14-1500-run11",
+  "captured_at_beijing": "2026-11-14T15:03:07+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-14-1500-run11",
+  "base_branch": "automation/daily-football-2026-11-14-1000-run12",
+  "artifacts": [
+    {
+      "path": "fixtures/2026-11-14-15/schedule-refresh-1500.json",
+      "last_content_commit": "0a4369958ed064c049f2daf2f0b401d64d5ce76b"
+    },
+    {
+      "path": "markets/2026-11-14/national-team/uefa-nations-league-1500.json",
+      "last_content_commit": "98b94e065d7b608928939e8c557f61d3f568949e"
+    },
+    {
+      "path": "features/2026-11-14/national-team/uefa-nations-league-1500.json",
+      "last_content_commit": "012b061077c11ca04b41f53ce529db5dad85ca07"
+    },
+    {
+      "path": "predictions/2026-11-14/national-team/uefa-nations-league-provisional-1500.json",
+      "last_content_commit": "61ce3d0e1d470852ed913ae8ee9962a03563ef8c"
+    }
+  ],
+  "run_result": {
+    "schedule_fixtures_recorded": 16,
+    "eligible_6_to_12_hour_forecasts": 3,
+    "early_uefa_fixtures_not_predicted": 5,
+    "friendlies_not_predicted_due_window_or_already_started": 3,
+    "official_sporttery_handicap_verified": 0,
+    "third_party_asian_handicap_substituted": false,
+    "official_lineup_confirmed": 0
+  },
+  "data_integrity": {
+    "sqlite_connected": false,
+    "canonical_internal_match_ids_available": false,
+    "canonical_production_snapshots_written": false,
+    "provisional_forecasts_written_to_git_only": true,
+    "v5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "historic_prediction_snapshots_overwritten": false,
+    "postmatch_xg_used_as_prematch_input": false,
+    "weekly_xg_snapshot_updated": false
+  },
+  "caveats": [
+    "No official Sporttery/Jingcai handicap lines/SP were captured for the UEFA fixtures; all handicap outcomes remain unverified.",
+    "The three displayed forecasts are quarantined provisional analyst outputs, not V5.1 production forecasts, because SQLite and canonical internal match IDs are unavailable.",
+    "No confirmed starting XI was available at the capture time; predicted formations are explicitly marked provisional.",
+    "Opening-to-current odds movement was captured only for Georgia-Hungary; other market pages lack a reliable provider event timestamp or opening series.",
+    "The 15 Nov schedule includes only matches whose Beijing-local dates fall on 15 Nov; later UTC kickoffs falling on 16 Nov Beijing are excluded from this two-date window."
+  ],
+  "readback_verification_status": "PENDING"
+}
