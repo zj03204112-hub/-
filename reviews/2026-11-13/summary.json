@@ -15,7 +15,8 @@
     "scheduled_or_not_yet_verified": 5,
     "sqlite_connected": false,
     "global_census": false,
-    "coverage_note": "本轮不是全球全赛事普查；发现原45条候选中漏掉2场CONCACAF赛事，且Kuwait-Syria应修正至11月14日00:30北京时间。"
+    "coverage_note": "本轮不是全球全赛事普查；发现原45条候选中漏掉2场CONCACAF赛事，且Kuwait-Syria应修正至11月14日00:30北京时间。",
+    "time_correction_note": "Kuwait-Syria原10:00候选时间22:00与后续来源不一致；按worldfootball显示17:30 CET换算为00:30北京时间，实际3-0，归入11月14日。"
   },
   "prediction_snapshot_audit": {
     "confirmed_matches": 35,
@@ -92,10 +93,12 @@
         "handicap_status": "无法核验：官方竞彩编号/让球数/赔率时间戳未取得",
         "risk_review": {
           "confirmed_context": [
-            "Salem Al-Dawsari未入选本期名单；赛前新闻已公开报道"
+            "Salem Al-Dawsari未入选本期名单；赛前已有公开报道",
+            "韩国队内部意见分歧在赛前已由队长公开表示得到解决"
           ],
-          "韩国队内部意见分歧已被队长公开表示解决": "",
-          "risk_hit_binary": null
+          "unverified": [],
+          "risk_hit_binary": null,
+          "notes": "风险背景信息得到核实，但不能将比赛胜负直接解释为风险提示命中。"
         }
       },
       {
@@ -201,7 +204,7 @@
       "TPS Turku vs Ilves"
     ],
     "rescheduled": [
-      "Kuwait vs Syria: corrected from 2026-11-13 22:00 to 2026-11-14 00:30 Beijing; final score not verified in this run"
+      "Kuwait vs Syria: corrected to 2026-11-14 00:30 Beijing (17:30 CET on 13 Nov); final score 3-0 verified. This match belongs to the 14 Nov Beijing review, not the 13 Nov review."
     ]
   },
   "source_priority_note": "雷速体育本轮未取得可复核的逐场赛果页面；改用UEFA、LaLiga、CONCACAF官方页面及Reuters/WorldFootball/Sky Sports等可靠赛果页交叉核验。"
