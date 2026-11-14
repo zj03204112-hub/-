@@ -55,12 +55,16 @@
         "handicap_status": "无法核验：官方竞彩编号/让球数/赔率时间戳未取得",
         "risk_review": {
           "confirmed_context": [
-            "UAE新帅Dalic首场执教，赛前已明确有考察新人/试阵背景"
+            "UAE新帅Dalic首场执教，试阵/考察新人背景已核实"
           ],
-          "unverified": [
-            "Moncada伤情仅有媒体报道，未取得官方赛前医疗名单"
+          "contradicted_or_not_materialized": [
+            "赛前Moncada伤情担忧未兑现：球员首发并出场至82分钟"
           ],
-          "risk_hit_binary": null
+          "unverified": [],
+          "risk_hit_binary": null,
+          "source_urls": [
+            "https://www--worldfootball--net.c.hs-data.com/match-report/co571/friendlies/ma12622415/ua-emirates_honduras/"
+          ]
         }
       },
       {
@@ -170,7 +174,9 @@
       "confirmed_context_cues": 2,
       "unverified_context_cues": 1,
       "binary_risk_hit_rate": null,
-      "reason": "风险提示是情境/不确定性标记，不能把结果输赢反推成风险命中。"
+      "reason": "风险提示是情境/不确定性标记，不能把结果输赢反推成风险命中。",
+      "not_materialized_context_cues": 1,
+      "notes": "UAE新帅首战背景确认，但Moncada伤情未兑现；沙特关键球员缺席背景确认；澳大利亚阵容削弱说法未核实。风险提示不按赛果倒推命中。"
     },
     "probability_metrics": {
       "multiclass_brier_sum_mean": 0.6439333333,
