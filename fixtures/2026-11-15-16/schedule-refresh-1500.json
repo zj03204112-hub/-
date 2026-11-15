@@ -2000,9 +2000,9 @@
   "counts": {
     "inherited_1000_snapshot": 25,
     "refreshed_confirmed_or_listed": 63,
-    "prediction_window_eligible": 47,
+    "prediction_window_eligible": 45,
     "early_or_outside_window": 11,
-    "french_cup_15_nov": 34
+    "french_cup_15_nov": 32
   },
   "missing_fields_global": [
     "SQLite未连接，未写入规范数据库",
@@ -2028,5 +2028,5 @@
     "https://www.cafonline.com/afcon2025/news/crucial-matchdays-3-and-4-to-shape-totalenergies-caf-afcon-pamoja-2027-qualification-race"
   ],
   "inherited_snapshot": "fixtures/2026-11-15-16/schedule-refresh-1000.json",
-  "note": "This refresh supplements, but does not overwrite, the 10:00 snapshot. Times are retained in UTC and converted to Beijing time. Schedule coverage remains source-bounded, not a claim of every worldwide fixture."
+  "note": "This refresh supplements, but does not overwrite, the 10:00 snapshot. Times are retained in UTC and converted to Beijing time. Schedule coverage remains source-bounded, not a claim of every worldwide fixture. Count correction: the source lists 32 Coupe de France fixtures on 15 Nov (30 at 13:00 UTC and 2 at 14:00 UTC), so 45 total fixtures are inside the 6–12h window."
 }
