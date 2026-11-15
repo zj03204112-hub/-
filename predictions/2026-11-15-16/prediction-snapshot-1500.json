@@ -1,0 +1,1056 @@
+{
+  "schema_version": "1.0",
+  "run_id": "2026-11-15-1500-run11",
+  "captured_at_beijing": "2026-11-15T14:57:18+08:00",
+  "prediction_window_beijing": {
+    "start": "2026-11-15T20:57:18+08:00",
+    "end": "2026-11-16T02:57:18+08:00"
+  },
+  "eligible_window_fixture_count": 47,
+  "generated_predictions": 18,
+  "deferred_french_cup_predictions": 29,
+  "model_governance": {
+    "production_v5_1_executed": false,
+    "v5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "active_screening_model": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+    "reason": "SQLite/model runtime及规范数据链未连接；因此本轮只生成独立的低置信度筛选预测，不冒充V5.1正式输出。"
+  },
+  "rules": {
+    "wdl_is_independent_from_handicap": true,
+    "handicap_rule": "仅在官方竞彩让球数核验后，按第一比分机械映射；第二比分绝不参与。",
+    "handicap_mapping_performed": false,
+    "third_party_asian_handicap_substitution": false,
+    "second_score_not_used_for_handicap": true,
+    "score_tail": "芬兰-圣马力诺保留4球及以上尾部；其他比赛按各自总进球市场/球队近况分配，不将所有高进球集中于热门。",
+    "draw_review": "平局独立保留0-0/1-1/2-2检查；本批多场保留较高平局概率。"
+  },
+  "predictions": [
+    {
+      "id": "2026-11-15-CYP-MNE-SCR1",
+      "competition": "UEFA Nations League C2",
+      "home": "Cyprus",
+      "away": "Montenegro",
+      "kickoff_utc": "2026-11-15T14:00:00Z",
+      "kickoff_beijing": "2026-11-15T22:00:00+08:00",
+      "first_score": "1-1",
+      "second_score": "0-1",
+      "wdl": "客胜",
+      "wdl_probabilities": {
+        "home": 31,
+        "draw": 30,
+        "away": 39
+      },
+      "half_full": "平/负",
+      "confidence": 49,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-DRAW-01",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "黑山近况占优但客场优势有限；平局尾部较厚；赛前伤停/首发未官方确认。",
+      "data_completeness": "中等（UEFA近况、第三方欧赔/大小球、天气可查；官方竞彩线、首发、裁判、赛前xG缺失）",
+      "recent3": {
+        "home": [
+          "2026-11-12 亚美尼亚1-1塞浦路斯",
+          "2026-10-05 塞浦路斯2-1拉脱维亚",
+          "2026-10-02 塞浦路斯2-0亚美尼亚"
+        ],
+        "away": [
+          "2026-11-12 黑山2-1拉脱维亚",
+          "2026-10-05 黑山0-0亚美尼亚",
+          "2026-10-02 拉脱维亚1-2黑山"
+        ]
+      },
+      "tactics": "赛前战术板/正式首发未发布；倾向先控制节奏，黑山后程推进的判断仅作低权重观察。",
+      "weather": "利马索尔约22°C、干燥、微风；第三方天气预报，非球场实测。",
+      "referee": null,
+      "injuries": "未取得双方官方伤停名单；不可将传闻当作确认缺阵。",
+      "prematch_xg": null,
+      "market_ref": "cyprus-montenegro",
+      "next_opponent_importance": "末轮背景已知；晋级/排名精确情景未独立核算。"
+    },
+    {
+      "id": "2026-11-15-LVA-ARM-SCR1",
+      "competition": "UEFA Nations League C2",
+      "home": "Latvia",
+      "away": "Armenia",
+      "kickoff_utc": "2026-11-15T14:00:00Z",
+      "kickoff_beijing": "2026-11-15T22:00:00+08:00",
+      "first_score": "1-1",
+      "second_score": "0-1",
+      "wdl": "平局",
+      "wdl_probabilities": {
+        "home": 31,
+        "draw": 31,
+        "away": 38
+      },
+      "half_full": "平/平",
+      "confidence": 48,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-DRAW-01",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "两队本届进攻产量偏低；亚美尼亚客场并非稳定优势方；平局独立保留，盘口/伤停不完整。",
+      "data_completeness": "中等（UEFA近况、第三方赔率、场地天气、部分风格数据；官方竞彩线、首发、裁判、赛前xG缺失）",
+      "recent3": {
+        "home": [
+          "2026-11-12 黑山2-1拉脱维亚",
+          "2026-10-05 塞浦路斯2-1拉脱维亚",
+          "2026-10-02 拉脱维亚1-2黑山"
+        ],
+        "away": [
+          "2026-11-12 亚美尼亚1-1塞浦路斯",
+          "2026-10-05 黑山0-0亚美尼亚",
+          "2026-10-02 塞浦路斯2-0亚美尼亚"
+        ]
+      },
+      "tactics": "二级数据源显示拉脱维亚更愿意让出控球、依靠边路推进；亚美尼亚控球与传球量更高。该风格数据非官方跟踪数据。",
+      "weather": "里加约6°C、风约5m/s、降雨概率低；第三方天气预报。",
+      "referee": null,
+      "injuries": "无可核验的官方伤停清单。",
+      "prematch_xg": null,
+      "market_ref": "latvia-armenia",
+      "next_opponent_importance": "小组末轮；积分情景需以官方实时积分表再核验。"
+    },
+    {
+      "id": "2026-11-15-BLR-ALB-SCR1",
+      "competition": "UEFA Nations League C1",
+      "home": "Belarus",
+      "away": "Albania",
+      "kickoff_utc": "2026-11-15T17:00:00Z",
+      "kickoff_beijing": "2026-11-16T01:00:00+08:00",
+      "first_score": "0-1",
+      "second_score": "1-1",
+      "wdl": "客胜",
+      "wdl_probabilities": {
+        "home": 26,
+        "draw": 29,
+        "away": 45
+      },
+      "half_full": "平/负",
+      "confidence": 55,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-DRAW-01",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "阿尔巴尼亚积分领先但白俄罗斯防守近况好；平局概率不可忽略；官方竞彩线与首发缺失。",
+      "data_completeness": "中等（UEFA近三场、第三方欧赔/大小球；阵容、裁判、天气、官方竞彩线缺失）",
+      "recent3": {
+        "home": [
+          "2026-11-12 圣马力诺0-2白俄罗斯",
+          "2026-10-06 白俄罗斯1-0芬兰",
+          "2026-10-03 白俄罗斯4-0圣马力诺"
+        ],
+        "away": [
+          "2026-11-12 阿尔巴尼亚2-0芬兰",
+          "2026-10-06 阿尔巴尼亚2-1圣马力诺",
+          "2026-10-03 芬兰2-1阿尔巴尼亚"
+        ]
+      },
+      "tactics": "白俄罗斯近期防守端稳定；阿尔巴尼亚需要主动争取小组位置，但客场不宜过度压上。无正式战术报告。",
+      "weather": null,
+      "referee": null,
+      "injuries": "官方名单/伤停未核验。",
+      "prematch_xg": null,
+      "market_ref": "belarus-albania",
+      "next_opponent_importance": "小组末轮直接竞争；具体晋级情景未独立核验。"
+    },
+    {
+      "id": "2026-11-15-FIN-SMR-SCR1",
+      "competition": "UEFA Nations League C1",
+      "home": "Finland",
+      "away": "San Marino",
+      "kickoff_utc": "2026-11-15T17:00:00Z",
+      "kickoff_beijing": "2026-11-16T01:00:00+08:00",
+      "first_score": "3-0",
+      "second_score": "4-0",
+      "wdl": "主胜",
+      "wdl_probabilities": {
+        "home": 90,
+        "draw": 7,
+        "away": 3
+      },
+      "half_full": "胜/胜",
+      "confidence": 76,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-TAIL-02",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "首回合圣马力诺0-7芬兰，4球及以上尾部必须保留；芬兰最近两场进攻不稳定，强风/小雨可能影响总进球。",
+      "data_completeness": "中等偏高（UEFA近三场、第三方1X2/大小球、天气；官方竞彩线、正式首发、裁判缺失）",
+      "recent3": {
+        "home": [
+          "2026-11-12 阿尔巴尼亚2-0芬兰",
+          "2026-10-06 白俄罗斯1-0芬兰",
+          "2026-10-03 芬兰2-1阿尔巴尼亚"
+        ],
+        "away": [
+          "2026-11-12 圣马力诺0-2白俄罗斯",
+          "2026-10-06 阿尔巴尼亚2-1圣马力诺",
+          "2026-10-03 白俄罗斯4-0圣马力诺"
+        ]
+      },
+      "tactics": "芬兰预计控制球权与前场压迫；圣马力诺低位防守。无官方阵型/首发。",
+      "weather": "赫尔辛基约3–8°C，局部小雨可能，风约7–10m/s；不同预报对降水有分歧。",
+      "referee": null,
+      "injuries": "供应商未列明显缺阵，但非官方最终名单。",
+      "prematch_xg": {
+        "provider_estimate": {
+          "home": 2.59,
+          "away": 0.53,
+          "provider": "Squawka",
+          "type": "供应商模型估算",
+          "not_own_model": true
+        }
+      },
+      "market_ref": "finland-san-marino",
+      "next_opponent_importance": "本组末轮；芬兰需要确认最终排名，具体情景未独立核验。"
+    },
+    {
+      "id": "2026-11-15-TEN-CEU-SCR1",
+      "competition": "Segunda División",
+      "home": "Tenerife",
+      "away": "AD Ceuta",
+      "kickoff_utc": "2026-11-15T13:00:00Z",
+      "kickoff_beijing": "2026-11-15T21:00:00+08:00",
+      "first_score": "1-0",
+      "second_score": "1-1",
+      "wdl": "主胜",
+      "wdl_probabilities": {
+        "home": 54,
+        "draw": 27,
+        "away": 19
+      },
+      "half_full": "平/胜",
+      "confidence": 52,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-FORM-03",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "Tenerife近阶段平局偏多；Ceuta连续失利但换帅/战意可能改变表现；赛前伤停信息来自二级来源。",
+      "data_completeness": "中等（近况、第三方赔率、两家供应商赛前xG估算；官方竞彩线、裁判、天气、首发缺失）",
+      "recent3": {
+        "home": [
+          "2026-11-01 Tenerife 2-2 Andorra",
+          "2026-10-25 Tenerife 1-1 Sabadell",
+          "2026-10-19 Tenerife 1-1 Celta Vigo B"
+        ],
+        "away": [
+          "2026-11-07 Córdoba 3-0 AD Ceuta",
+          "2026-11-01 Sporting Gijón 2-0 AD Ceuta",
+          "2026-10-29 Poblense 1-2 AD Ceuta"
+        ]
+      },
+      "tactics": "战术细节无可靠官方报告；以主队主场优势和客队近期失球趋势作低权重修正。",
+      "weather": null,
+      "referee": null,
+      "injuries": "二级来源称Tenerife有个别伤停/国家队征召；未取得俱乐部官方最终名单。",
+      "prematch_xg": {
+        "provider_estimates": [
+          {
+            "home": 2.05,
+            "away": 0.83,
+            "provider": "KingsOdds",
+            "type": "供应商模型估算"
+          },
+          {
+            "home": 2.24,
+            "away": 0.47,
+            "provider": "StatsBet",
+            "type": "供应商模型估算"
+          }
+        ],
+        "do_not_average": true
+      },
+      "market_ref": "tenerife-ceuta",
+      "next_opponent_importance": "下一场对手/轮换优先级未完成可靠核验。"
+    },
+    {
+      "id": "2026-11-15-GRA-LPA-SCR1",
+      "competition": "Segunda División",
+      "home": "Granada",
+      "away": "Las Palmas",
+      "kickoff_utc": "2026-11-15T15:15:00Z",
+      "kickoff_beijing": "2026-11-15T23:15:00+08:00",
+      "first_score": "2-1",
+      "second_score": "1-1",
+      "wdl": "主胜",
+      "wdl_probabilities": {
+        "home": 52,
+        "draw": 26,
+        "away": 22
+      },
+      "half_full": "胜/胜",
+      "confidence": 57,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-FORM-03",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "Granada近期连胜、主场优势；Las Palmas也有反弹能力；双方伤停报道未由俱乐部逐项确认。",
+      "data_completeness": "中等（近况、第三方市场概率/赛前xG估算；官方盘口、首发、裁判、天气缺失）",
+      "recent3": {
+        "home": [
+          "2026-11-01 Granada 2-0 Eldense",
+          "2026-10-23 Granada 2-1 Valladolid",
+          "2026-10-18 Granada 2-0 Cádiz"
+        ],
+        "away": [
+          "2026-11-09 Las Palmas 2-0 Eldense",
+          "2026-11-02 Oviedo 3-2 Las Palmas",
+          "2026-10-24 Las Palmas 1-0 Real Sociedad B"
+        ]
+      },
+      "tactics": "Granada主场主动性较强；Las Palmas更依赖控球与边路推进，具体阵型需待首发确认。",
+      "weather": null,
+      "referee": "D. Miranda Bolaños（二级赛事资料，未取得官方裁判委派公告）",
+      "injuries": "双方有二级来源伤停/征召报道，尚未逐人完成官方确认。",
+      "prematch_xg": {
+        "provider_estimate": {
+          "home": 1.6,
+          "away": 0.9,
+          "provider": "Forepitch",
+          "type": "供应商模型估算",
+          "not_own_model": true
+        }
+      },
+      "market_ref": "granada-las-palmas",
+      "next_opponent_importance": "下一场对手重要性未核验。"
+    },
+    {
+      "id": "2026-11-15-EIB-CAD-SCR1",
+      "competition": "Segunda División",
+      "home": "Eibar",
+      "away": "Cádiz",
+      "kickoff_utc": "2026-11-15T17:30:00Z",
+      "kickoff_beijing": "2026-11-16T01:30:00+08:00",
+      "first_score": "1-0",
+      "second_score": "1-1",
+      "wdl": "主胜",
+      "wdl_probabilities": {
+        "home": 52,
+        "draw": 28,
+        "away": 20
+      },
+      "half_full": "平/胜",
+      "confidence": 53,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-FORM-03",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "Eibar主场数据优于客场；Cádiz客场取分能力偏弱，但比赛节奏可能偏低，平局保留。",
+      "data_completeness": "中等偏低（球队近况摘要、第三方概率参考；官方盘口、完整近3场、首发、天气、裁判缺失）",
+      "recent3": {
+        "home": [
+          "最近5个主场保持不败，含3-0胜Granada；逐场日期/完整三场需二次核验"
+        ],
+        "away": [
+          "最近客场连续未胜；近三场客场比分来源未完全交叉核验"
+        ]
+      },
+      "tactics": "未取得双方正式战术报告；按Eibar主场主动、Cádiz客场偏保守作低权重假设。",
+      "weather": null,
+      "referee": null,
+      "injuries": "二级来源列出双方若干伤病/出场疑问，未官方确认。",
+      "prematch_xg": null,
+      "market_ref": "eibar-cadiz",
+      "next_opponent_importance": "未核验。"
+    },
+    {
+      "id": "2026-11-15-ELD-SAB-SCR1",
+      "competition": "Segunda División",
+      "home": "Eldense",
+      "away": "Sabadell",
+      "kickoff_utc": "2026-11-15T17:30:00Z",
+      "kickoff_beijing": "2026-11-16T01:30:00+08:00",
+      "first_score": "1-1",
+      "second_score": "1-0",
+      "wdl": "平局",
+      "wdl_probabilities": {
+        "home": 36,
+        "draw": 37,
+        "away": 27
+      },
+      "half_full": "平/平",
+      "confidence": 46,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-DRAW-01",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "Eldense近期连败、Sabadell近期不胜；双方进攻不稳，低比分与平局尾部需保留。",
+      "data_completeness": "中等偏低（第三方赔率、近况摘要、部分伤停；官方盘口、完整近3场、裁判、天气缺失）",
+      "recent3": {
+        "home": [
+          "最近3场联赛连败；精确逐场比分未完成可靠交叉核验"
+        ],
+        "away": [
+          "最近6场未胜；精确逐场比分未完成可靠交叉核验"
+        ]
+      },
+      "tactics": "预期节奏偏慢，双方优先减少防守失误；无官方战术/阵型资料。",
+      "weather": null,
+      "referee": null,
+      "injuries": "二级来源报告Eldense有停赛，Sabadell有伤停；未取得俱乐部官方确认。",
+      "prematch_xg": null,
+      "market_ref": "eldense-sabadell",
+      "next_opponent_importance": "未核验。"
+    },
+    {
+      "id": "2026-11-15-AVL-BIR-W-SCR1",
+      "competition": "Women's Super League",
+      "home": "Aston Villa Women",
+      "away": "Birmingham City Women",
+      "kickoff_utc": "2026-11-15T14:00:00Z",
+      "kickoff_beijing": "2026-11-15T22:00:00+08:00",
+      "first_score": "2-1",
+      "second_score": "1-1",
+      "wdl": "主胜",
+      "wdl_probabilities": {
+        "home": 45,
+        "draw": 30,
+        "away": 25
+      },
+      "half_full": "平/胜",
+      "confidence": 50,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-DRAW-01",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "同城德比；两队近期防守都有波动；Villa周中杯赛失利，平局概率偏高。",
+      "data_completeness": "中等偏高（俱乐部官方赛程、Sky近况、德比背景；官方竞彩线、最终首发、逐人伤停、天气缺失）",
+      "recent3": {
+        "home": [
+          "2026-11-11 Liverpool 4-1 Aston Villa (Players Cup)",
+          "2026-11-08 Aston Villa 0-1 Manchester United",
+          "2026-11-01 Arsenal 1-1 Aston Villa"
+        ],
+        "away": [
+          "2026-11-11 Birmingham 3-1 Sunderland (Players Cup)",
+          "2026-11-08 London City 4-1 Birmingham",
+          "2026-11-01 Birmingham 1-4 Tottenham"
+        ]
+      },
+      "tactics": "德比环境下双方可能先求稳定；官方首发未公布，不预设阵型。",
+      "weather": null,
+      "referee": null,
+      "injuries": "Aston Villa官方发布球员可用性更新，但本次未能读取具体名单；Birmingham伤停未核实。",
+      "prematch_xg": null,
+      "market_ref": null,
+      "next_opponent_importance": "West Ham后续杯赛/联赛安排需临场核对。"
+    },
+    {
+      "id": "2026-11-15-WHU-CHA-W-SCR1",
+      "competition": "Women's Super League",
+      "home": "West Ham United Women",
+      "away": "Charlton Athletic Women",
+      "kickoff_utc": "2026-11-15T14:00:00Z",
+      "kickoff_beijing": "2026-11-15T22:00:00+08:00",
+      "first_score": "2-0",
+      "second_score": "3-0",
+      "wdl": "主胜",
+      "wdl_probabilities": {
+        "home": 64,
+        "draw": 23,
+        "away": 13
+      },
+      "half_full": "胜/胜",
+      "confidence": 66,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-TAIL-02",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "Charlton前9轮0分、失球较多；West Ham上轮0-5负曼城，主队状态并非稳定；大比分尾部保留。",
+      "data_completeness": "中等偏高（West Ham官方赛程/预览、Sky近况、公开伤停报道；官方竞彩线、首发缺失）",
+      "recent3": {
+        "home": [
+          "2026-11-07 Manchester City 5-0 West Ham",
+          "2026-11-01 West Ham 4-1 Liverpool",
+          "2026-10-24 Brighton 3-0 West Ham"
+        ],
+        "away": [
+          "2026-11-11 Charlton 1-0 Ipswich (Players Cup)",
+          "2026-11-08 Crystal Palace 3-2 Charlton",
+          "2026-11-01 Charlton 0-6 Chelsea"
+        ]
+      },
+      "tactics": "West Ham可利用边路与二点球；Charlton本季控球/防线承压明显。无正式阵型确认。",
+      "weather": null,
+      "referee": null,
+      "injuries": "二级来源报告West Ham Tuva Hansen膝伤；Charlton Linda Boama、Hawa Cissoko伤缺，均待官方最终确认。",
+      "prematch_xg": null,
+      "market_ref": null,
+      "next_opponent_importance": "West Ham 18 Nov杯赛、Charlton 22 Nov联赛；轮换影响待临场。"
+    },
+    {
+      "id": "2026-11-15-ARS-LCL-W-SCR1",
+      "competition": "Women's Super League",
+      "home": "Arsenal Women",
+      "away": "London City Lionesses",
+      "kickoff_utc": "2026-11-15T16:30:00Z",
+      "kickoff_beijing": "2026-11-16T00:30:00+08:00",
+      "first_score": "2-1",
+      "second_score": "1-1",
+      "wdl": "主胜",
+      "wdl_probabilities": {
+        "home": 55,
+        "draw": 26,
+        "away": 19
+      },
+      "half_full": "平/胜",
+      "confidence": 58,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-DRAW-01",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "Arsenal 12 Nov刚踢欧冠，体能劣势；London City排名前三、近期进攻强；历史交锋优势不能直接替代当前实力。",
+      "data_completeness": "中等偏高（阿森纳官方开球时间、Sky近况、Reuters赛况、Opta模型参考；官方竞彩线、最终首发、伤停细节缺失）",
+      "recent3": {
+        "home": [
+          "2026-11-12 Barcelona 1-1 Arsenal (UWCL)",
+          "2026-11-08 Liverpool 1-2 Arsenal",
+          "2026-11-01 Arsenal 1-1 Aston Villa"
+        ],
+        "away": [
+          "2026-11-08 London City 4-1 Birmingham",
+          "2026-11-01 London City 1-2 Manchester City",
+          "2026-10-25 Liverpool 2-2 London City"
+        ]
+      },
+      "tactics": "Arsenal需要提高阵地战破低位效率；London City反击和边路推进有威胁。Opta赛前模型偏主队，但不作为唯一依据。",
+      "weather": null,
+      "referee": null,
+      "injuries": "未取得双方官方最终伤停清单。",
+      "prematch_xg": null,
+      "market_ref": null,
+      "next_opponent_importance": "Arsenal连续欧战/联赛，赛程密度高；London City休息间隔更长。"
+    },
+    {
+      "id": "2026-11-15-NUR-KOE-W-SCR1",
+      "competition": "Frauen-Bundesliga",
+      "home": "1. FC Nürnberg Women",
+      "away": "1. FC Köln Women",
+      "kickoff_utc": "2026-11-15T15:00:00Z",
+      "kickoff_beijing": "2026-11-15T23:00:00+08:00",
+      "first_score": "1-2",
+      "second_score": "1-1",
+      "wdl": "客胜",
+      "wdl_probabilities": {
+        "home": 26,
+        "draw": 27,
+        "away": 47
+      },
+      "half_full": "平/负",
+      "confidence": 50,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-FORM-03",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "Nürnberg近期两场反弹；Köln排名/阵容优势但客场稳定性有限；裁判与首发未最终核验。",
+      "data_completeness": "中等（俱乐部预览、近况摘要、开球时间；赔率、官方竞彩线、天气、完整伤停缺失）",
+      "recent3": {
+        "home": [
+          "近期联赛4-0胜Freiburg",
+          "此前2-0胜Leverkusen",
+          "杯赛对Frankfurt点球出局；第三场常规时间比分需复核"
+        ],
+        "away": [
+          "近期联赛3-1胜Leipzig",
+          "杯赛1-0胜Leipzig",
+          "第三场近期赛果待补齐"
+        ]
+      },
+      "tactics": "Nürnberg预期以紧凑防守寻找转换；Köln近期高压逼抢有效。上述为俱乐部预览归纳，非实时战术板。",
+      "weather": null,
+      "referee": "Levke Scholz（二级来源委派信息，未取得DFB官方委派确认）",
+      "injuries": "未见可核验的最新官方伤停名单。",
+      "prematch_xg": null,
+      "market_ref": null,
+      "next_opponent_importance": "未核验。"
+    },
+    {
+      "id": "2026-11-15-RBL- SGE-W-SCR1",
+      "competition": "Frauen-Bundesliga",
+      "home": "RB Leipzig Women",
+      "away": "Eintracht Frankfurt Women",
+      "kickoff_utc": "2026-11-15T15:00:00Z",
+      "kickoff_beijing": "2026-11-15T23:00:00+08:00",
+      "first_score": "1-2",
+      "second_score": "1-1",
+      "wdl": "客胜",
+      "wdl_probabilities": {
+        "home": 20,
+        "draw": 26,
+        "away": 54
+      },
+      "half_full": "平/负",
+      "confidence": 56,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-FORM-03",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "Frankfurt实力与客场数据占优；Leipzig近期有失球/领先后守不住的风险；赛前xG为供应商估算。",
+      "data_completeness": "中等（俱乐部赛前预览、第三方赔率/xG估算；官方竞彩线、最终首发、天气、裁判缺失）",
+      "recent3": {
+        "home": [
+          "近期联赛0-1负Köln",
+          "杯赛0-1负Köln",
+          "第三场赛果未完成可靠核验"
+        ],
+        "away": [
+          "近期欧战2-1胜PSV",
+          "联赛最近一场结果未完成可靠核验",
+          "第三场赛果缺失"
+        ]
+      },
+      "tactics": "Frankfurt更可能利用边路和转换速度；Leipzig需要控制防线身后空间。非官方战术观察。",
+      "weather": "莱比锡约8–9°C，云量较多；降水预报存在来源分歧。",
+      "referee": "Naemi Breier（二级来源委派信息，未取得DFB官方委派确认）",
+      "injuries": "未取得双方官方最终伤停清单。",
+      "prematch_xg": {
+        "provider_estimate": {
+          "home": 1.37,
+          "away": 1.95,
+          "provider": "TipOracle",
+          "type": "供应商模型估算",
+          "not_own_model": true
+        }
+      },
+      "market_ref": "leipzig-frankfurt-w",
+      "next_opponent_importance": "未核验。"
+    },
+    {
+      "id": "2026-11-15-GOB-RED-SCR1",
+      "competition": "Coupe de France",
+      "home": "Gobelins",
+      "away": "Red Star FC 93",
+      "kickoff_utc": "2026-11-15T13:00:00Z",
+      "kickoff_beijing": "2026-11-15T21:00:00+08:00",
+      "first_score": "0-1",
+      "second_score": "1-1",
+      "wdl": "客胜",
+      "wdl_probabilities": {
+        "home": 18,
+        "draw": 25,
+        "away": 57
+      },
+      "half_full": "平/负",
+      "confidence": 45,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-CUP-RISK-04",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "职业队级别优势明显但Red Star近期状态并非稳定；杯赛单场淘汰、低级别主场爆冷风险。",
+      "data_completeness": "偏低（赛程和第三方欧赔可查；双方近3场、首发、伤停、裁判、天气缺失）",
+      "recent3": {
+        "home": null,
+        "away": "Red Star最近联赛状态资料存在来源差异，未拼接为伪造逐场清单。"
+      },
+      "tactics": "无可靠战术报告。",
+      "weather": null,
+      "referee": null,
+      "injuries": "无官方名单。",
+      "prematch_xg": null,
+      "market_ref": "gobelins-redstar",
+      "next_opponent_importance": "杯赛优先级/下一场轮换动机未核验。"
+    },
+    {
+      "id": "2026-11-15-STREN-LAV-SCR1",
+      "competition": "Coupe de France",
+      "home": "Saint-Renan",
+      "away": "Laval",
+      "kickoff_utc": "2026-11-15T13:00:00Z",
+      "kickoff_beijing": "2026-11-15T21:00:00+08:00",
+      "first_score": "1-2",
+      "second_score": "0-2",
+      "wdl": "客胜",
+      "wdl_probabilities": {
+        "home": 20,
+        "draw": 24,
+        "away": 56
+      },
+      "half_full": "平/负",
+      "confidence": 43,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-CUP-RISK-04",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "Laval级别优势；但其近期状态起伏，主队近期得失球样本有限，杯赛轮换不明。",
+      "data_completeness": "偏低（赛程、部分近期状态；官方盘口、完整近3场、首发、天气、裁判缺失）",
+      "recent3": {
+        "home": "二级来源只提供近5场约1进球、7失球摘要，未获得逐场核验。",
+        "away": "二级来源近5场约L-D-L-W-L，逐场比分未完成交叉核验。"
+      },
+      "tactics": "无可靠战术报告。",
+      "weather": null,
+      "referee": null,
+      "injuries": "无官方名单。",
+      "prematch_xg": null,
+      "market_ref": null,
+      "next_opponent_importance": "未核验。"
+    },
+    {
+      "id": "2026-11-15-CAS-NAN-SCR1",
+      "competition": "Coupe de France",
+      "home": "Castelbourgeois",
+      "away": "Nantes",
+      "kickoff_utc": "2026-11-15T13:00:00Z",
+      "kickoff_beijing": "2026-11-15T21:00:00+08:00",
+      "first_score": "0-3",
+      "second_score": "0-4",
+      "wdl": "客胜",
+      "wdl_probabilities": {
+        "home": 4,
+        "draw": 8,
+        "away": 88
+      },
+      "half_full": "负/负",
+      "confidence": 63,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-TAIL-02",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "级别差距明显，但主队真实阵容和场地信息缺失；保留杯赛偶发进球/大比分尾部。",
+      "data_completeness": "偏低（赛程、Nantes近况摘要和第三方预测；主队近3场、官方阵容、裁判、天气缺失）",
+      "recent3": {
+        "home": null,
+        "away": "Nantes近5场约D-L-L-D-W的二级来源摘要，逐场未完成官方核验。"
+      },
+      "tactics": "无可靠战术报告。",
+      "weather": null,
+      "referee": null,
+      "injuries": "无官方名单。",
+      "prematch_xg": null,
+      "market_ref": null,
+      "next_opponent_importance": "未核验。"
+    },
+    {
+      "id": "2026-11-15-KEL-MET-SCR1",
+      "competition": "Coupe de France",
+      "home": "Kellermann",
+      "away": "Metz",
+      "kickoff_utc": "2026-11-15T13:00:00Z",
+      "kickoff_beijing": "2026-11-15T21:00:00+08:00",
+      "first_score": "0-2",
+      "second_score": "1-2",
+      "wdl": "客胜",
+      "wdl_probabilities": {
+        "home": 15,
+        "draw": 25,
+        "away": 60
+      },
+      "half_full": "平/负",
+      "confidence": 44,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-CUP-RISK-04",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "Metz职业队实力优势；其近期战绩来源有冲突，主队可核验样本不足，低置信度。",
+      "data_completeness": "偏低（赛程和部分第三方模型；双方近3场、官方首发、伤停、天气缺失）",
+      "recent3": {
+        "home": null,
+        "away": "Metz近5场第三方来源出现不同序列，未采用未经核验的逐场结果。"
+      },
+      "tactics": "无可靠战术报告。",
+      "weather": null,
+      "referee": null,
+      "injuries": "无官方名单。",
+      "prematch_xg": null,
+      "market_ref": null,
+      "next_opponent_importance": "未核验。"
+    },
+    {
+      "id": "2026-11-15-RUM-ASSE-SCR1",
+      "competition": "Coupe de France",
+      "home": "Rumilly Vallières",
+      "away": "Saint-Étienne",
+      "kickoff_utc": "2026-11-15T14:00:00Z",
+      "kickoff_beijing": "2026-11-15T22:00:00+08:00",
+      "first_score": "1-2",
+      "second_score": "0-2",
+      "wdl": "客胜",
+      "wdl_probabilities": {
+        "home": 14,
+        "draw": 18,
+        "away": 68
+      },
+      "half_full": "平/负",
+      "confidence": 55,
+      "handicap": {
+        "official_line": null,
+        "prediction": null,
+        "status": "无法核验：未取得官方竞彩让球数及SP；不使用第三方亚洲盘替代",
+        "mapping_applied": false
+      },
+      "strategy_id": "S-TAIL-02",
+      "model_version": "SCREENING-1.0 (非生产筛选版；未执行V5.1)",
+      "risk": "Saint-Étienne级别优势明显；Rumilly近期有进球能力，杯赛爆冷风险仍存在；供应商xG估算差异较大。",
+      "data_completeness": "中等偏低（赛程、第三方赔率与xG；官方首发、伤停、裁判、逐小时天气缺失）",
+      "recent3": {
+        "home": "二级来源显示近期4胜1负，未取得完整官方逐场比分。",
+        "away": "二级来源显示近期4胜1负，未取得完整官方逐场比分。"
+      },
+      "tactics": "无可靠战术报告。",
+      "weather": null,
+      "referee": null,
+      "injuries": "无官方名单。",
+      "prematch_xg": {
+        "provider_estimate": {
+          "home": 1.01,
+          "away": 2.29,
+          "provider": "TipOracle",
+          "type": "供应商模型估算",
+          "not_own_model": true
+        }
+      },
+      "market_ref": "rumilly-asse",
+      "next_opponent_importance": "未核验。"
+    }
+  ],
+  "deferred_predictions": [
+    {
+      "match": "Tremblay vs Maisons Alfort",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Violaines vs US Vermelles",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Sedan vs Bourges Foot 18",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Pays Neslois vs Furiani-Agliani",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Riom vs Limonest",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Stade Pontivy vs Stade Plabennec",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Marseille Endoume vs Toulon",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Senlis vs St-Pryvé St-Hilaire",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Seyssinet-Pariset vs Nimes",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Rochefort vs Juventus Papus",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Montigny vs Pontarlier",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Perros-Louannec vs Vannes",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "SAG Cestas vs Bayonne",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "OCPAM vs Olympique Marcquois",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "US Montreuil-sur-Mer vs Loon-Plage",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Yerres Crosne vs Union Cosnoise",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Verson vs RC Calais",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Sottevillais vs Fecamp",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Massay vs Montlouis",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Veauche vs Saint Paul en Jarez",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "RC Chambery vs Niort",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Talange vs Baume Dames",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Vandœuvre vs Epinal",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Chatou vs Les Ulis",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "FC 2 Rives 82 vs Trélissac",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Metz ESAP vs Reipertswiller",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Atlas Paillade vs Cannes",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    },
+    {
+      "match": "Plus one French Cup fixture not individually forecasted because the available schedule and team data were insufficient.",
+      "competition": "Coupe de France",
+      "status": "本场处于6–12小时窗口，但因可核验近况/阵容/盘口/场地数据不足，不生成比分和胜平负预测；待数据补齐后更新。"
+    }
+  ],
+  "early_register_only": [
+    "Belgium vs Italy — 2026-11-16 03:45 Beijing",
+    "France vs Türkiye — 2026-11-16 03:45 Beijing",
+    "Croatia vs Czechia — 2026-11-16 03:45 Beijing",
+    "Spain vs England — 2026-11-16 03:45 Beijing",
+    "Gotham FC vs Kansas City Current — 2026-11-16 04:00 Beijing",
+    "Namibia vs Cameroon — 2026-11-16 21:00 Beijing",
+    "Sudan vs Senegal — 2026-11-16 21:00 Beijing",
+    "Zimbabwe vs Equatorial Guinea — 2026-11-16 21:00 Beijing",
+    "Somalia vs Ghana — 2026-11-16 23:00 Beijing",
+    "Faroe Islands vs Moldova — 2026-11-16 23:00 Beijing",
+    "Kazakhstan vs Slovakia — 2026-11-16 23:00 Beijing"
+  ],
+  "missing_fields": [
+    "18场官方竞彩让球数/让球SP均未独立核验，故让球胜平负全部标记无法核验",
+    "开盘至即时盘同一供应商时间序列缺失，无法量化盘口变化",
+    "本批大部分正式首发/替补尚未到发布窗口",
+    "多数比赛官方伤停、裁判、逐小时天气、球员状态缺失",
+    "多数比赛赛前xG/进球概率缺失；已列xG均为供应商模型估算，不是自有模型实测",
+    "SQLite未连接；本轮预测快照仅追加到GitHub JSON"
+  ],
+  "sources": [
+    "https://www.uefa.com/uefanationsleague/news/02a2-1fea7079900a-801b2c5f6c9e-1000--2026-uefa-nations-league-league-phase-fixtures-and-results-by-team/",
+    "https://www.avfc.co.uk/news/2026/october/29/aston-villa-women-v-birmingham-city-women--group-bookings-open/",
+    "https://www.whufc.com/en/news/west-ham-united-womens-team-v-charlton-athletic-or-all-you-need-to-know",
+    "https://help.arsenal.com/support/solutions/articles/101000594163-fixture-and-event-timings-for-local-residents",
+    "https://www.reuters.com/sports/soccer/russo-fires-arsenal-wsl-win-over-liverpool-london-city-thrash-birmingham-2026-11-08/",
+    "https://www.skysports.com/football/arsenal-women-vs-london-city-lionesses/stats/575818",
+    "https://www.skysports.com/football/west-ham-united-women-vs-charlton-athletic-women/4638789357454408232",
+    "https://www.skysports.com/football/aston-villa-women-vs-birmingham-city-women/8373488470317299232",
+    "https://www.kingsodds.com/match/1570023-tenerife-vs-ad-ceuta-fc",
+    "https://1livesport.com/en/match/2612-granada-cf-vs-las-palmas",
+    "https://www.oddsivio.com/matches/117992",
+    "https://news.bet365.es/es-es/article/eldense-vs-sabadell-alineaciones-estadisticas-horario-donde-ver/2026111312410928469",
+    "https://www.fcn.de/news/artikel/vorbericht-mit-rueckenwind-gegen-den-effzeh/",
+    "https://frauen.eintracht.de/news/punktejagd-in-leipzig-180392/",
+    "https://matchcalendar.football/competition/coupe-de-france/fixtures/"
+  ]
+}
