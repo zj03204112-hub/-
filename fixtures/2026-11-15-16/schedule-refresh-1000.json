@@ -880,6 +880,41 @@
         "canonical_team_and_competition_IDs"
       ],
       "note": "Duplicate UTC-date view of the 15 Nov UK fixture; Beijing kickoff date is 16 Nov 00:30."
+    },
+    {
+      "competition": "Women's Super League",
+      "category": "other",
+      "home": "Arsenal Women",
+      "away": "London City Lionesses",
+      "kickoff_utc": "2026-11-15T16:30:00Z",
+      "kickoff_beijing": "2026-11-16T00:30:00+08:00",
+      "status": "scheduled",
+      "source_urls": [
+        "https://www.skysports.com/football-scores-fixtures/2026-11-15"
+      ],
+      "official_sporttery_match_id": null,
+      "official_sporttery_handicap_line": null,
+      "odds_open_to_live": [],
+      "missing_fields": [
+        "official_sporttery_match_id",
+        "official_sporttery_handicap_line",
+        "official_sporttery_sp_and_capture_time",
+        "same_bookmaker_open_to_live_odds_series",
+        "asian_handicap_and_over_under_water_history",
+        "confirmed_starting_XI_and_substitutes",
+        "verified_injuries_and_suspensions",
+        "last_3_official_matches_per_team",
+        "tactical_report",
+        "hourly_weather",
+        "confirmed_referee",
+        "prematch_xG_and_goal_probabilities",
+        "player_form",
+        "team_news",
+        "fixture_congestion",
+        "importance_of_next_opponent",
+        "canonical_team_and_competition_IDs"
+      ],
+      "note": "UK 16:30 kick-off on 15 Nov converts to Beijing 00:30 on 16 Nov."
     }
   ],
   "date_conflict_candidates": [
@@ -1490,7 +1525,7 @@
   },
   "counts": {
     "beijing_15_nov": 17,
-    "beijing_16_nov": 7,
+    "beijing_16_nov": 8,
     "afcon_date_conflicts": 24
   }
 }
