@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "run_id": "2026-11-15-1500-run11",
+  "captured_at_beijing": "2026-11-15T14:57:18+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-15-1500-run11",
+  "base_branch": "automation/daily-football-2026-11-15-1000-run11",
+  "summary": {
+    "schedule_records": 63,
+    "french_cup_15_nov_records": 32,
+    "fixtures_in_6_to_12_hour_window": 45,
+    "screening_predictions_generated": 18,
+    "french_cup_matches_deferred_for_insufficient_verified_data": 27,
+    "third_party_market_snapshots": 11,
+    "official_sporttery_handicap_lines_verified": 0,
+    "official_sporttery_sp_verified": 0,
+    "sqlite_connected": false,
+    "database_write": false,
+    "v5_1_executed": false,
+    "v5_1_modified": false,
+    "frozen_validation_samples_modified": false
+  },
+  "files": [
+    {
+      "path": "fixtures/2026-11-15-16/schedule-refresh-1500.json",
+      "blob_sha": "e98987b1f23d862a149b190eef94106e19dd26c5",
+      "verified_by_readback": true
+    },
+    {
+      "path": "markets/2026-11-15-16/market-refresh-1500.json",
+      "blob_sha": "e3721c11bd15554b3af7280953eac155f9825224",
+      "verified_by_readback": true
+    },
+    {
+      "path": "predictions/2026-11-15-16/prediction-snapshot-1500.json",
+      "blob_sha": "246ff95cd213c07e28be30547249a039a1008286",
+      "verified_by_readback": true
+    }
+  ],
+  "commit_chain": [
+    "3a235c382569cdc130d9b9c4cb3b80586c29e9ff",
+    "a1169b2ba9a50a9016d46ef8c60b276fa3a5aef6",
+    "0fca04637e33901c179e9ff9ccb089cc1b9da640",
+    "3a3eb4e994b1ac796a889333bc783754f7053301",
+    "f290c85a572cd56d2b0fd030db7a1c0b28ea227c"
+  ],
+  "limitations": [
+    "官方竞彩实时赔率/让球接口未能访问，本批所有竞彩让球结果均为无法核验",
+    "未获得同一公司的初盘至即时盘完整时间序列",
+    "首发尚未到官方发布窗口；多场伤停/裁判/天气/赛前xG缺失",
+    "未连接SQLite，所有本轮新增内容只写入GitHub JSON文件"
+  ],
+  "immutable_policy": "本次文件为新增快照；不覆盖10:00快照、历史预测、历史xG或V5.1。"
+}
