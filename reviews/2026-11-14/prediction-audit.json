@@ -4,7 +4,7 @@
   "review_date_beijing": "2026-11-14",
   "snapshot_path": "predictions/2026-11-14/national-team/uefa-nations-league-provisional-1500.json",
   "snapshot_blob_sha": "483c46bc57ce26ce9b6fc3cc509af6363c60dce6",
-  "snapshot_commit_sha": "7c406a807d1aa7b7249351cb918a84c9244ee1fd",
+  "snapshot_commit_sha": null,
   "prediction_id": "P15-20261114-UEFA-2047896-r1",
   "provider_event_id": "UEFA:2047896",
   "model_version": "MANUAL-POISSON-MARKET-BLEND-2026-11-14-r1",
@@ -89,5 +89,6 @@
     "v5_1_modified": false,
     "frozen_validation_samples_modified": false,
     "historical_snapshots_overwritten": false
-  }
+  },
+  "snapshot_commit_sha_status": "not_retrieved; immutable snapshot is identified by exact path and blob SHA"
 }
