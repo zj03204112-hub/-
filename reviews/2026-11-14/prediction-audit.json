@@ -1,0 +1,93 @@
+{
+  "schema_version": "immutable-prediction-review.v1",
+  "run_id": "2026-11-15-1000-run11",
+  "review_date_beijing": "2026-11-14",
+  "snapshot_path": "predictions/2026-11-14/national-team/uefa-nations-league-provisional-1500.json",
+  "snapshot_blob_sha": "483c46bc57ce26ce9b6fc3cc509af6363c60dce6",
+  "snapshot_commit_sha": "7c406a807d1aa7b7249351cb918a84c9244ee1fd",
+  "prediction_id": "P15-20261114-UEFA-2047896-r1",
+  "provider_event_id": "UEFA:2047896",
+  "model_version": "MANUAL-POISSON-MARKET-BLEND-2026-11-14-r1",
+  "traceability_status": "QUARANTINED_PROVISIONAL_DISPLAY_ONLY; not V5.1 and not canonical production snapshot",
+  "fixture": "Kosovo vs Israel",
+  "kickoff_beijing": "2026-11-14T22:00:00+08:00",
+  "predicted": {
+    "wdl": "home",
+    "home_win_prob": 0.49,
+    "draw_prob": 0.26,
+    "away_win_prob": 0.25,
+    "score1": "1-1",
+    "score2": "1-0",
+    "half_full": "主/主",
+    "sporttery_handicap": null,
+    "handicap_result": null
+  },
+  "actual": {
+    "score_90": "0-0",
+    "half_time": "0-0",
+    "wdl": "draw",
+    "half_full": "平/平",
+    "source_urls": [
+      "https://www.beinsports.com/en-mena/football/uefa-nations-league/kosovo-vs-israel-2026-11-14",
+      "https://matchcalendar.football/competition/uefa-nations-league/match/kosovo-vs-israel/"
+    ]
+  },
+  "grading": {
+    "wdl_hit": false,
+    "score1_exact_hit": false,
+    "score2_exact_hit": false,
+    "half_full_hit": false,
+    "handicap_status": "无法核验：无官方竞彩让球数/赔率时间戳",
+    "risk_hit_binary": null,
+    "risk_notes": {
+      "confirmed_context": [
+        "比赛66分钟Veldin Hodža两黄变一红；这是赛中事件，不属于赛前风险命中。"
+      ],
+      "not_materialized": [
+        "Edon Zhegrova首发并踢至82分钟，赛前出场疑问未转化为缺席。"
+      ],
+      "unverified": [
+        "中卫伤缺对结果的独立影响无法量化",
+        "天气来源冲突无法作为命中/未命中评分"
+      ]
+    }
+  },
+  "metrics": {
+    "sample_size": 1,
+    "wdl": {
+      "hits": 0,
+      "total": 1,
+      "accuracy_pct": 0
+    },
+    "score1": {
+      "hits": 0,
+      "total": 1,
+      "accuracy_pct": 0
+    },
+    "score2": {
+      "hits": 0,
+      "total": 1,
+      "accuracy_pct": 0
+    },
+    "half_full": {
+      "hits": 0,
+      "total": 1,
+      "accuracy_pct": 0
+    },
+    "handicap": {
+      "official_lines_verified": 0,
+      "unverifiable": 1,
+      "settled": 0
+    },
+    "risk": {
+      "binary_hit_rate": null,
+      "reason": "风险提示按赛前可验证事实记录，不从赛果倒推命中。"
+    }
+  },
+  "exclusion_note": "Norway-Wales and Georgia-Hungary snapshots in the same file have Beijing kickoff date 2026-11-15; excluded from the 2026-11-14 review and reserved for the next Beijing-date review.",
+  "protection": {
+    "v5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "historical_snapshots_overwritten": false
+  }
+}
