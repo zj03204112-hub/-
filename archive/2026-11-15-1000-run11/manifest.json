@@ -1,0 +1,112 @@
+{
+  "schema_version": "daily-football-archive-manifest.v2",
+  "run_id": "2026-11-15-1000-run11",
+  "captured_at_beijing": "2026-11-15T10:01:11+08:00",
+  "repository": "zj03204112-hub/-",
+  "work_branch": "automation/daily-football-2026-11-15-1000-run11",
+  "base_branch": "automation/daily-football-2026-11-14-1500-run11",
+  "base_commit_sha": "d72bb4f57ce5aa6320e409f4103d20d0696c6360",
+  "pre_manifest_head_commit_sha": "510fe0c381f97ac05d802bbde965908bfb91de7f",
+  "archive_status": "FILES_COMMITTED_AND_READBACK_VERIFIED",
+  "files": [
+    {
+      "path": "reviews/2026-11-14/results-by-category.json",
+      "commit_sha": "c7d43fffcbb78240203d0bdace50ee58c13eec8b",
+      "blob_sha": "51e6071ac2ce49cd5826753d740499e14302be36",
+      "readback_verified": true
+    },
+    {
+      "path": "reviews/2026-11-14/prediction-audit.json",
+      "commit_sha": "686565553a9b249e80e56c65b8d9d4133f2f5a96",
+      "blob_sha": "52e18b372f0cedcf9be823bd2d8c83b71b290b79",
+      "readback_verified": true
+    },
+    {
+      "path": "reviews/2026-11-14/summary.json",
+      "commit_sha": "9255acdd44655555a9cbeb36efdb004893053c37",
+      "blob_sha": "f6358af3f18c30b3e6a7169ba1e387c8ceccfc46",
+      "readback_verified": true
+    },
+    {
+      "path": "fixtures/2026-11-15-16/schedule-refresh-1000.json",
+      "commit_sha": "510fe0c381f97ac05d802bbde965908bfb91de7f",
+      "blob_sha": "fea69ed10279a1c120492edfd1f8476a480e0ebb",
+      "readback_verified": true
+    },
+    {
+      "path": "xg/weekly/2026-W46/match-observations-2026-11-15-1000.json",
+      "commit_sha": "c7066580579d5ef3e68ee1d6379288f1db681522",
+      "blob_sha": "453ad29c272ce449db9cd88e351974843e677a2e",
+      "readback_verified": true
+    },
+    {
+      "path": "xg/weekly/2026-W46/team-weekly-snapshot-2026-11-15-1000.json",
+      "commit_sha": "131d9912a5f34018fea0c9a6ef22682d8326be30",
+      "blob_sha": "237629523dc8fda888121a2e2ca84f557c10388c",
+      "readback_verified": true
+    },
+    {
+      "path": "xg/weekly/2026-W46/coverage-audit-2026-11-15-1000.json",
+      "commit_sha": "4c83315240bce8449045467b2fd6cfc35c227d99",
+      "blob_sha": "15b1a0f638ead2cebf96ed25175fb92bc00c1c91",
+      "readback_verified": true
+    }
+  ],
+  "review": {
+    "beijing_date": "2026-11-14",
+    "archived_candidates": 55,
+    "confirmed_full_time": 48,
+    "unresolved": 7,
+    "immutable_snapshots_found": 1,
+    "no_snapshot": 47,
+    "snapshot_coverage_pct": 2.0833,
+    "provisional_snapshot_result": {
+      "wdl_hit": false,
+      "score1_hit": false,
+      "score2_hit": false,
+      "half_full_hit": false,
+      "handicap": "unverifiable",
+      "risk_hit_binary": null
+    },
+    "official_sporttery_lines_verified": 0
+  },
+  "schedule": {
+    "beijing_15_nov_fixtures": 17,
+    "beijing_16_nov_fixtures": 8,
+    "afcon_date_conflict_candidates": 24,
+    "official_sporttery_lines_verified": 0,
+    "opening_to_live_odds_series_verified": 0
+  },
+  "xg_weekly": {
+    "iso_week": "2026-W46",
+    "combined_match_records": 85,
+    "matches_with_any_supplier_xg": 13,
+    "matches_without_any_supplier_xg": 72,
+    "team_competition_season_groups": 170,
+    "groups_with_provider_xg": 26,
+    "groups_without_provider_xg": 144,
+    "snapshot_rows": 188,
+    "provider_count": 17,
+    "canonical_team_ids": 0,
+    "canonical_competition_ids": 0,
+    "self_model_estimates": 0,
+    "postmatch_leakage_check": "PASS"
+  },
+  "database": {
+    "sqlite_connected": false,
+    "formal_database_write": false,
+    "reason": "SQLite connector/database not connected; only GitHub JSON archive was written."
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "postmatch_xg_used_as_prematch_input": false
+  },
+  "limitations": [
+    "47 of 50 newly appended W46 match records have no free provider xG; values remain null with missing reason.",
+    "Canonical team_id and competition_id mappings remain unavailable because SQLite is not connected.",
+    "Official Sporttery handicap/SP and odds timestamps were not obtained; no Asian handicap substitution.",
+    "24 AFCON fixture candidates have unresolved 15 Nov vs 16-17 Nov date/time conflicts and are not treated as confirmed."
+  ]
+}
