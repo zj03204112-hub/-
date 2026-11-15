@@ -1,0 +1,83 @@
+{
+  "schema_version": "postmatch-review.v3",
+  "run_id": "2026-11-15-1000-run11",
+  "captured_at_beijing": "2026-11-15T10:01:11+08:00",
+  "review_date_beijing": "2026-11-14",
+  "review_rule": "仅纳入北京时间11月14日开球且确认完赛的比赛；90分钟胜平负与竞彩让球独立核算；让球只使用第一比分和已核实官方竞彩让球数机械映射，第二比分不得参与。",
+  "scope_audit": {
+    "archived_fixture_candidates": 55,
+    "confirmed_full_time": 48,
+    "unresolved_or_rescheduled": 7,
+    "global_census": false,
+    "core_league_fixtures": {
+      "premier_league": 0,
+      "la_liga": 0,
+      "bundesliga": 0,
+      "serie_a": 0,
+      "ligue_1": 0,
+      "k_league_1": 0,
+      "j1_regular_league": 0
+    },
+    "note": "J.League Levain Cup is domestic cup, not regular J1. International break means no core men’s league fixtures on 14 Nov."
+  },
+  "prediction_snapshot_audit": {
+    "confirmed_matches": 48,
+    "immutable_or_archived_snapshots_found": 1,
+    "provisional_quarantined_snapshots": 1,
+    "no_snapshot_or_not_found": 47,
+    "snapshot_coverage_pct": 2.0833,
+    "formal_v5_1_sample_included": 0,
+    "missing_snapshot_rule": "无原始预测不回顾性重建，不计入预测命中率。"
+  },
+  "prediction_metrics": {
+    "sample_size": 1,
+    "wdl": {
+      "hits": 0,
+      "total": 1,
+      "accuracy_pct": 0
+    },
+    "score1": {
+      "hits": 0,
+      "total": 1,
+      "accuracy_pct": 0
+    },
+    "score2": {
+      "hits": 0,
+      "total": 1,
+      "accuracy_pct": 0
+    },
+    "half_full": {
+      "hits": 0,
+      "total": 1,
+      "accuracy_pct": 0
+    },
+    "handicap": {
+      "official_lines_verified": 0,
+      "unverifiable": 1,
+      "settled": 0
+    },
+    "risk": {
+      "binary_hit_rate": null,
+      "reason": "风险提示按赛前可验证事实记录，不从赛果倒推命中。"
+    }
+  },
+  "result_by_category": {
+    "national_team": 35,
+    "domestic_cup": 6,
+    "other": 7
+  },
+  "handicap_audit": {
+    "verified_official_sporttery_lines": 0,
+    "unverifiable_for_snapshot_matches": 1,
+    "asian_handicap_substituted": false,
+    "second_score_used": false
+  },
+  "sqlite_connected": false,
+  "canonical_internal_match_ids_available": false,
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "historical_predictions_overwritten": false
+  },
+  "next_review_note": "15 Nov Beijing matches Norway-Wales and Georgia-Hungary are not part of this review date; retain their original 14 Nov 15:03 snapshots and review them on the next 10:00 run."
+}
