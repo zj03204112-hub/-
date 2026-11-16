@@ -10,12 +10,9 @@
   "files": [
     {
       "path": "reviews/2026-11-15/results-by-category.json",
-      "blob_sha": "d3f7f3571c223bb0671282d61c5f0ae114041312",
-      "bytes": 26976,
-      "ok": true,
-      "counts": {
-        "results": 47
-      }
+      "blob_sha": "2f113775e2a07026928d7f4f29ee4bd4b170cce8",
+      "bytes": 32152,
+      "ok": true
     },
     {
       "path": "reviews/2026-11-15/prediction-audit.json",
@@ -39,34 +36,21 @@
     },
     {
       "path": "xg/weekly/2026-W46/match-observations-2026-11-16-1000-delta.json",
-      "blob_sha": "9019f58233c9b9243c54fec1e924ca01a7997dee",
-      "bytes": 33249,
-      "ok": true,
-      "counts": {
-        "records": 47,
-        "xg": 6,
-        "provider_obs": 12
-      }
+      "blob_sha": "95ebd77201c7b77bc4f6f0f0dd6da281a8a101f8",
+      "bytes": 33873,
+      "ok": true
     },
     {
       "path": "xg/weekly/2026-W46/team-weekly-delta-2026-11-16-1000.json",
-      "blob_sha": "a83b7e191ea1332e9ea11482f671dc4c615add0f",
-      "bytes": 88235,
-      "ok": true,
-      "counts": {
-        "rows": 106
-      }
+      "blob_sha": "045c6a0adef829ffee7ade0d6174cfb7f1b3eae8",
+      "bytes": 89801,
+      "ok": true
     },
     {
       "path": "xg/weekly/2026-W46/coverage-audit-2026-11-16-1000.json",
-      "blob_sha": "d1ca57e5b9e05adcb3672c5a21ccc92d0795d388",
+      "blob_sha": "f021bc88d79075d980813c0cfc356ba0a09a90c4",
       "bytes": 2323,
-      "ok": true,
-      "counts": {
-        "records": 132,
-        "provider_xg": 19,
-        "missing": 113
-      }
+      "ok": true
     },
     {
       "path": "xg/weekly/2026-W47/match-observations-2026-11-16-1000.json",
@@ -99,11 +83,9 @@
     },
     {
       "path": "archive/domestic-cup/2026-11-15/results.json",
-      "blob_sha": "f28248a84da1cd00ed90a322374a1a39b6e00e0f",
-      "bytes": 18768,
-      "ok": true,
-      "records": 36,
-      "fixtures": 36
+      "blob_sha": "ecf62d40d085e1ea8a8b7f59bb9c1c251de19035",
+      "bytes": 23318,
+      "ok": true
     },
     {
       "path": "archive/domestic-league/2026-11-15/results.json",
@@ -203,16 +185,14 @@
     },
     {
       "path": "archive/category-index/2026-11-16-1000-run11.json",
-      "blob_sha": "88c2e03be888902c0bd611b9b8365bb03bc6ba82",
+      "blob_sha": "6380c227678faf0bd8cb44e5deed1e9b1dae4002",
       "bytes": 3212,
-      "ok": true,
-      "records": 6,
-      "fixtures": 37
+      "ok": true
     }
   ],
   "review_summary": {
     "beijing_date": "2026-11-15",
-    "result_records": 47,
+    "result_records": 48,
     "valid_prediction_sample": 12,
     "wdl_hits": "11/12",
     "first_score_hits": "3/12",
@@ -232,12 +212,15 @@
   },
   "xg_summary": {
     "2026-W46": {
-      "appended_match_records": 47,
+      "appended_match_records": 48,
       "provider_xg_matches": 6,
-      "missing_xg_matches": 41,
+      "missing_xg_matches": 42,
       "provider_observations": 12,
-      "team_rows": 106,
-      "prior_snapshot_preserved": true
+      "team_rows": 108,
+      "prior_snapshot_preserved": true,
+      "combined_match_records": 133,
+      "combined_provider_xg_matches": 19,
+      "combined_missing_xg_matches": 114
     },
     "2026-W47": {
       "match_records": 9,
@@ -257,11 +240,11 @@
   "limitations": [
     "SQLite未连接；本轮只追加GitHub JSON文件。",
     "新追加记录的稳定match_id/team_id/competition_id仍缺失，使用临时复合键，不宣称ID映射完成。",
-    "法国杯部分结果来自单一二级比分源；点球/加时未逐场拆分，score_90保持空值。",
-    "官方竞彩让球盘口和SP未核验，预测审计中的让球结果全部不可核验。"
+    "官方竞彩让球盘口和SP未核验，预测审计中的让球结果全部不可核验。",
+    "法国杯按FFF第七轮官方赛程修正为33场北京日期15日记录（含SAG Cestas当地14日、北京15日01:00）；FFF比赛报告页访问403，部分比分仍是二级比分源，Montreuil、Massay等比分冲突已标记。"
   ],
-  "final_verified_at_beijing": "2026-11-16T10:08:00+08:00",
-  "latest_content_commit_before_manifest": "e0cfa119db5ad38c42e9052a1a460174a9413afb",
+  "final_verified_at_beijing": "2026-11-16T10:12:00+08:00",
+  "latest_content_commit_before_manifest": "443ed94b771bc00d0d579f749954e7c6ec8c2eca",
   "category_archive_files": [
     "archive/domestic-cup/2026-11-15/results.json",
     "archive/domestic-league/2026-11-15/results.json",
@@ -280,7 +263,7 @@
   ],
   "category_archive_summary": {
     "results": {
-      "domestic_cup": 36,
+      "domestic_cup": 37,
       "domestic_league": 4,
       "uefa_nations_league": 2,
       "concacaf_nations_league": 2,
