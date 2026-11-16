@@ -46,8 +46,8 @@ The key structural mismatch is exact-five probability (10.0% predicted vs 31.25%
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Baseline V5.3 | 19.83% | 10.0% | 9.9% | 0.4810 | 0.8298 | 0.8439 | 1.9074 |
 | All 5+ buckets ×3.0 | 38.31% | 19.9% | 18.4% | 0.4700 | 0.8063 | 0.8061 | 1.8257 |
-| Exactly 5 only ×3.0 | 31.2% | 23.1% | 8.1% | 0.4700* | 0.8063* | 0.7980 | 1.7619 |
-| Exactly 5 only ×4.5 | 37.8% | 30.7% | 7.1% | 0.4667 | 0.7991 | 0.7900* | 1.7450* |
+| Exactly 5 only ×3.0 | 31.2% | 23.1% | 8.1% | 0.4710 | 0.8091 | 0.7980 | 1.7619 |
+| Exactly 5 only ×4.5 | 37.8% | 30.7% | 7.1% | 0.4667 | 0.7991 | 0.7887 | 1.7439 |
 
 * H/D/A values in this diagnostic use the unchanged joint matrix calculation; exact figures are to be reproduced by the committed ablation script in CI before treating the report as verified. The local reproduction at ×4.5 produced H/D/A Brier 0.4667 and LogLoss 0.7991; at ×3.0 it produced approximately 0.4700/0.8063. Values rounded.
 
