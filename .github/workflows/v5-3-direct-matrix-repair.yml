@@ -7,6 +7,8 @@ on:
     paths:
       - "model_validation/v5_3_*.py"
       - "tests/test_v5_3_*.py"
+      - "data_pipeline/v5_3_prediction_api.py"
+      - "data_pipeline/prediction_snapshot_writer.py"
       - ".github/workflows/v5-3-direct-matrix-repair.yml"
   pull_request:
     paths:
