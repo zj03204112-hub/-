@@ -18,7 +18,7 @@ def outcome(h, a):
 def scenarios():
     base = copy.deepcopy(DEFAULT_WEIGHTS)
     out = {"baseline_v5_3": base}
-    for factor in (1.15, 1.25, 1.40):
+    for factor in (1.15, 1.25, 1.40, 1.60, 1.80, 2.00, 2.50, 3.00, 4.00):
         w = copy.deepcopy(base)
         for k in ("5", "6", "7", "8+"):
             w["total_goals"][k] = factor
@@ -79,6 +79,10 @@ def score_variant(rows, weights, label):
         actual_margin[str(r["actual_margin"]) if r["actual_margin"] <= 4 else "5+"] += 1
         actual_away[str(r["actual_away"]) if r["actual_away"] <= 3 else "4+"] += 1
     mean = lambda key, keys: {k: sum(r[key][k] for r in per_match)/n for k in keys}
+    total_goal_brier = sum(sum((r["bins"][k] - (1.0 if (str(r["total"]) if r["total"] <= 7 else "8+") == k else 0.0))**2 for k in TOTAL_KEYS) for r in per_match) / n
+    total_goal_logloss = -sum(math.log(max(r["bins"][str(r["total"]) if r["total"] <= 7 else "8+"], 1e-15)) for r in per_match) / n
+    binary_tail_brier = sum((r["p5plus"] - (1.0 if r["total"] >= 5 else 0.0))**2 for r in per_match) / n
+    binary_tail_logloss = -sum(math.log(max(r["p5plus"] if r["total"] >= 5 else 1.0-r["p5plus"], 1e-15)) for r in per_match) / n
     return {
         "scenario": label, "matches": n,
         "direction_hits": sum(r["pick"] == r["actual"] for r in per_match),
@@ -89,6 +93,10 @@ def score_variant(rows, weights, label):
         "top1_score_hits": sum(r["top1_hit"] for r in per_match),
         "top2_score_hits": sum(r["top2_hit"] for r in per_match),
         "brier": brier, "logloss": logloss,
+        "total_goals_9class_brier": total_goal_brier,
+        "total_goals_9class_logloss": total_goal_logloss,
+        "binary_5plus_brier": binary_tail_brier,
+        "binary_5plus_logloss": binary_tail_logloss,
         "actual_5plus_rate": sum(r["total"] >= 5 for r in per_match)/n,
         "mean_predicted_5plus": sum(r["p5plus"] for r in per_match)/n,
         "mean_predicted_total_bins": mean("bins", TOTAL_KEYS),
