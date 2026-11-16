@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "run_id": "2026-11-16-1000-run11",
+  "captured_at_beijing": "2026-11-16T09:57:19+08:00",
+  "iso_week": "2026-W46",
+  "prior_snapshot": {
+    "snapshot_id": "2026-11-15-1000-W46",
+    "match_records": 85,
+    "matches_with_any_provider_xg": 13,
+    "matches_missing_xg": 72,
+    "team_competition_season_groups": 170,
+    "groups_with_provider_xg": 26,
+    "groups_missing_xg": 144,
+    "snapshot_rows": 188,
+    "provider_count": 17
+  },
+  "appended_delta": {
+    "match_records": 47,
+    "matches_with_any_provider_xg": 7,
+    "matches_missing_xg": 40,
+    "team_rows": 102,
+    "groups_with_provider_xg": 14,
+    "groups_missing_xg": 80,
+    "provider_observations": 11,
+    "provider_names": [
+      "Scorwave",
+      "PushScore",
+      "Kickly",
+      "FootballWebPages",
+      "FootballData.cn",
+      "KingsOdds",
+      "StatsBet",
+      "Matchcalendar",
+      "Forepitch",
+      "TipOracle"
+    ]
+  },
+  "combined_counts": {
+    "match_records": 132,
+    "matches_with_any_provider_xg": 20,
+    "matches_missing_xg": 112,
+    "team_competition_season_groups": 264,
+    "groups_with_provider_xg": 40,
+    "groups_missing_xg": 224,
+    "snapshot_rows": 290,
+    "combined_provider_count": null
+  },
+  "provider_policy": "Provider-specific observations remain separate; no provider averaging. Supplier model estimates are not labelled measured xG. No own-model estimate was created.",
+  "self_model_estimates": 0,
+  "postmatch_data_leakage": {
+    "detected": 0,
+    "rule": "All post-match provider estimates are tagged post_match_provider_model_estimate and usable_as_prematch_input=false."
+  },
+  "stable_id_coverage": {
+    "new_match_ids_resolved": 0,
+    "new_team_ids_resolved": 0,
+    "new_competition_ids_resolved": 0,
+    "reason": "The accessible free sources did not provide a stable cross-provider ID mapping for these records."
+  },
+  "recalculation_status": "Delta rows are internally reproducible, but the full historical W46 aggregate was not recomputed from SQLite because the database is not connected.",
+  "missing_reasons": [
+    "No free match-level xG found for 40 of the 47 newly appended matches.",
+    "Stable match/team/competition IDs absent for the new delta.",
+    "Several cup final score displays may include penalty shootouts; xG rows do not resolve that."
+  ],
+  "immutable_prior_snapshot": true
+}
