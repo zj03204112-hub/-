@@ -1,0 +1,30 @@
+{
+  "run_id": "2026-11-16-1000-run11",
+  "captured_at_beijing": "2026-11-16T09:57:19+08:00",
+  "date_basis": "Asia/Shanghai (UTC+08:00)",
+  "related_prediction_audit": "reviews/2026-11-15/prediction-audit.json",
+  "related_prediction_snapshot": "predictions/2026-11-15-16/prediction-snapshot-1500.json",
+  "related_market_snapshot": "markets/2026-11-15-16/market-refresh-1500.json",
+  "related_xg_paths": [
+    "xg/weekly/2026-W46/match-observations-2026-11-16-1000-delta.json",
+    "xg/weekly/2026-W46/team-weekly-delta-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/match-observations-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/team-weekly-snapshot-2026-11-16-1000.json"
+  ],
+  "missing_fields": [
+    "stable_match_id/team_id/competition_id for most records",
+    "official竞彩让球盘口/SP",
+    "opening-to-live odds timestamps",
+    "complete official lineup/injury/referee/weather data",
+    "match-level xG for most fixtures"
+  ],
+  "archive_category": "domestic_cup",
+  "beijing_dates": [
+    "2026-11-16",
+    "2026-11-17"
+  ],
+  "record_type": "scheduled_fixtures",
+  "record_count": 0,
+  "fixtures": [],
+  "status": "no_confirmed_fixture_found"
+}
