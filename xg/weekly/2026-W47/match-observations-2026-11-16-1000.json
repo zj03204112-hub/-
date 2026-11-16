@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "run_id": "2026-11-16-1000-run11",
+  "captured_at_beijing": "2026-11-16T09:57:19+08:00",
+  "iso_week": "2026-W47",
+  "scope": "Initial W47 rows for the nine fixtures from the inherited 15:00 snapshot that kicked off on Beijing 2026-11-16 and had finished by this capture.",
+  "record_count": 9,
+  "matches_with_any_provider_xg": 3,
+  "matches_missing_xg": 6,
+  "records": [
+    {
+      "competition": "UEFA Nations League",
+      "home": "Belarus",
+      "away": "Albania",
+      "kickoff_beijing": "2026-11-16T01:00:00+08:00",
+      "score_90": "0-2",
+      "match_id": null,
+      "competition_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "season": "2026-27",
+      "internal_match_key": "2026-11-16|UEFA Nations League|Belarus|Albania",
+      "xg_observations": [],
+      "xg_status": "missing",
+      "missing_reason": "No free match-level xG provider observation found at capture time."
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Finland",
+      "away": "San Marino",
+      "kickoff_beijing": "2026-11-16T01:00:00+08:00",
+      "score_90": "7-2",
+      "match_id": null,
+      "competition_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "season": "2026-27",
+      "internal_match_key": "2026-11-16|UEFA Nations League|Finland|San Marino",
+      "xg_observations": [
+        {
+          "provider": "Squawka",
+          "home_xg": 2.59,
+          "away_xg": 0.53,
+          "phase": "prematch_provider_model_estimate",
+          "source_url": "https://squawka.com/football/finland-v-san-marino/2026-11-15/",
+          "retrieved_at_beijing": "2026-11-15T14:57:18+08:00"
+        }
+      ],
+      "xg_status": "provider_data_available",
+      "missing_reason": null
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Belgium",
+      "away": "Italy",
+      "kickoff_beijing": "2026-11-16T03:45:00+08:00",
+      "score_90": "4-1",
+      "match_id": null,
+      "competition_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "season": "2026-27",
+      "internal_match_key": "2026-11-16|UEFA Nations League|Belgium|Italy",
+      "xg_observations": [],
+      "xg_status": "missing",
+      "missing_reason": "No free match-level xG provider observation found at capture time."
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "France",
+      "away": "Türkiye",
+      "kickoff_beijing": "2026-11-16T03:45:00+08:00",
+      "score_90": "2-1",
+      "match_id": null,
+      "competition_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "season": "2026-27",
+      "internal_match_key": "2026-11-16|UEFA Nations League|France|Türkiye",
+      "xg_observations": [],
+      "xg_status": "missing",
+      "missing_reason": "No free match-level xG provider observation found at capture time."
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Croatia",
+      "away": "Czechia",
+      "kickoff_beijing": "2026-11-16T03:45:00+08:00",
+      "score_90": "2-1",
+      "match_id": null,
+      "competition_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "season": "2026-27",
+      "internal_match_key": "2026-11-16|UEFA Nations League|Croatia|Czechia",
+      "xg_observations": [],
+      "xg_status": "missing",
+      "missing_reason": "No free match-level xG provider observation found at capture time."
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Spain",
+      "away": "England",
+      "kickoff_beijing": "2026-11-16T03:45:00+08:00",
+      "score_90": "2-3",
+      "match_id": null,
+      "competition_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "season": "2026-27",
+      "internal_match_key": "2026-11-16|UEFA Nations League|Spain|England",
+      "xg_observations": [],
+      "xg_status": "missing",
+      "missing_reason": "No free match-level xG provider observation found at capture time."
+    },
+    {
+      "competition": "Women's Super League",
+      "home": "Arsenal Women",
+      "away": "London City Lionesses",
+      "kickoff_beijing": "2026-11-16T00:30:00+08:00",
+      "score_90": "1-1",
+      "match_id": null,
+      "competition_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "season": "2026-27",
+      "internal_match_key": "2026-11-16|Women's Super League|Arsenal Women|London City Lionesses",
+      "xg_observations": [],
+      "xg_status": "missing",
+      "missing_reason": "No free match-level xG provider observation found at capture time."
+    },
+    {
+      "competition": "Segunda División",
+      "home": "Eibar",
+      "away": "Cádiz",
+      "kickoff_beijing": "2026-11-16T01:30:00+08:00",
+      "score_90": "1-1",
+      "match_id": null,
+      "competition_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "season": "2026-27",
+      "internal_match_key": "2026-11-16|Segunda División|Eibar|Cádiz",
+      "xg_observations": [
+        {
+          "provider": "Playmakerstats",
+          "home_xg": 1.38,
+          "away_xg": 0.71,
+          "phase": "post_match_provider_model_estimate",
+          "source_url": "https://www.playmakerstats.com/live/2026-11-15-eibar-cadiz/12295764"
+        }
+      ],
+      "xg_status": "provider_data_available",
+      "missing_reason": null
+    },
+    {
+      "competition": "Segunda División",
+      "home": "Eldense",
+      "away": "Sabadell",
+      "kickoff_beijing": "2026-11-16T01:30:00+08:00",
+      "score_90": "2-0",
+      "match_id": null,
+      "competition_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "season": "2026-27",
+      "internal_match_key": "2026-11-16|Segunda División|Eldense|Sabadell",
+      "xg_observations": [
+        {
+          "provider": "Matchcalendar",
+          "home_xg": 1.41,
+          "away_xg": 0.48,
+          "phase": "post_match_provider_model_estimate",
+          "source_url": "https://matchcalendar.football/es/competition/segunda-division/match/eldense-vs-sabadell/"
+        }
+      ],
+      "xg_status": "provider_data_available",
+      "missing_reason": null
+    }
+  ]
+}
