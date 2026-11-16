@@ -19,8 +19,8 @@ def brier(rows, key):
     total = 0.0
     for r in rows:
         p = r[key]
-        y = r["actual"]
-        total += sum((p[i] - (1.0 if i == j else 0.0)) ** 2 for i, j in enumerate(("H", "D", "A")) for _ in [0])
+        actual = r["actual"]
+        total += sum((p[i] - (1.0 if cls == actual else 0.0)) ** 2 for i, cls in enumerate(("H", "D", "A")))
     return total / len(rows)
 
 def logloss(rows, key):
