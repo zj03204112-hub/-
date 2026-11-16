@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "run_id": "2026-11-16-1000-run11",
+  "captured_at_beijing": "2026-11-16T09:57:19+08:00",
+  "iso_week": "2026-W47",
+  "match_records": 9,
+  "matches_with_any_provider_xg": 3,
+  "matches_missing_xg": 6,
+  "team_groups": 18,
+  "groups_with_provider_xg": 6,
+  "groups_missing_xg": 12,
+  "snapshot_rows": 18,
+  "provider_names": [
+    "Squawka",
+    "Playmakerstats",
+    "Matchcalendar"
+  ],
+  "self_model_estimates": 0,
+  "stable_id_coverage": {
+    "match_ids": 0,
+    "team_ids": 0,
+    "competition_ids": 0
+  },
+  "postmatch_data_leakage": {
+    "detected": 0,
+    "rule": "Eibar/Cádiz and Eldense/Sabadell xG are post-match provider estimates and are excluded from prematch features."
+  },
+  "missing_reasons": [
+    "No free match-level xG located for six of nine completed matches.",
+    "No stable cross-provider team/competition/event IDs in the accessible sources."
+  ],
+  "immutable_snapshot": true
+}
