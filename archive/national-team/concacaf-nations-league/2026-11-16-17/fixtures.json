@@ -1,0 +1,163 @@
+{
+  "run_id": "2026-11-16-1000-run11",
+  "captured_at_beijing": "2026-11-16T09:57:19+08:00",
+  "date_basis": "Asia/Shanghai (UTC+08:00)",
+  "related_prediction_audit": "reviews/2026-11-15/prediction-audit.json",
+  "related_prediction_snapshot": "predictions/2026-11-15-16/prediction-snapshot-1500.json",
+  "related_market_snapshot": "markets/2026-11-15-16/market-refresh-1500.json",
+  "related_xg_paths": [
+    "xg/weekly/2026-W46/match-observations-2026-11-16-1000-delta.json",
+    "xg/weekly/2026-W46/team-weekly-delta-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/match-observations-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/team-weekly-snapshot-2026-11-16-1000.json"
+  ],
+  "missing_fields": [
+    "stable_match_id/team_id/competition_id for most records",
+    "official竞彩让球盘口/SP",
+    "opening-to-live odds timestamps",
+    "complete official lineup/injury/referee/weather data",
+    "match-level xG for most fixtures"
+  ],
+  "archive_category": "national_team/concacaf-nations-league",
+  "beijing_dates": [
+    "2026-11-16",
+    "2026-11-17"
+  ],
+  "record_type": "scheduled_fixtures",
+  "record_count": 6,
+  "fixtures": [
+    {
+      "competition": "CONCACAF Nations League",
+      "category": "national_team",
+      "home": "Cuba",
+      "away": "Grenada",
+      "kickoff_utc": "2026-11-16T19:00:00Z",
+      "kickoff_beijing": "2026-11-17T03:00:00.000+08:00",
+      "season": "2026-27",
+      "status": "scheduled",
+      "source_urls": [
+        "https://matchcalendar.football/today/2026-11-16/"
+      ],
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_jc_sp",
+        "opening_to_live_odds_history",
+        "confirmed_lineups",
+        "confirmed_injuries",
+        "referee_if_not_officially_assigned"
+      ],
+      "note": null
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "category": "national_team",
+      "home": "Guyana",
+      "away": "Puerto Rico",
+      "kickoff_utc": "2026-11-16T19:00:00Z",
+      "kickoff_beijing": "2026-11-17T03:00:00.000+08:00",
+      "season": "2026-27",
+      "status": "scheduled",
+      "source_urls": [
+        "https://matchcalendar.football/today/2026-11-16/"
+      ],
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_jc_sp",
+        "opening_to_live_odds_history",
+        "confirmed_lineups",
+        "confirmed_injuries",
+        "referee_if_not_officially_assigned"
+      ],
+      "note": null
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "category": "national_team",
+      "home": "Guadeloupe",
+      "away": "Bermuda",
+      "kickoff_utc": "2026-11-16T19:00:00Z",
+      "kickoff_beijing": "2026-11-17T03:00:00.000+08:00",
+      "season": "2026-27",
+      "status": "scheduled",
+      "source_urls": [
+        "https://matchcalendar.football/today/2026-11-16/"
+      ],
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_jc_sp",
+        "opening_to_live_odds_history",
+        "confirmed_lineups",
+        "confirmed_injuries",
+        "referee_if_not_officially_assigned"
+      ],
+      "note": null
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "category": "national_team",
+      "home": "Trinidad and Tobago",
+      "away": "Antigua and Barbuda",
+      "kickoff_utc": "2026-11-17T00:00:00Z",
+      "kickoff_beijing": "2026-11-17T08:00:00.000+08:00",
+      "season": "2026-27",
+      "status": "scheduled",
+      "source_urls": [
+        "https://matchcalendar.football/today/2026-11-17/"
+      ],
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_jc_sp",
+        "opening_to_live_odds_history",
+        "confirmed_lineups",
+        "confirmed_injuries",
+        "referee_if_not_officially_assigned"
+      ],
+      "note": null
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "category": "national_team",
+      "home": "Martinique",
+      "away": "Aruba",
+      "kickoff_utc": "2026-11-17T00:00:00Z",
+      "kickoff_beijing": "2026-11-17T08:00:00.000+08:00",
+      "season": "2026-27",
+      "status": "scheduled",
+      "source_urls": [
+        "https://matchcalendar.football/today/2026-11-17/"
+      ],
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_jc_sp",
+        "opening_to_live_odds_history",
+        "confirmed_lineups",
+        "confirmed_injuries",
+        "referee_if_not_officially_assigned"
+      ],
+      "note": null
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "category": "national_team",
+      "home": "Canada",
+      "away": "Guatemala",
+      "kickoff_utc": "2026-11-17T01:00:00Z",
+      "kickoff_beijing": "2026-11-17T09:00:00.000+08:00",
+      "season": "2026-27",
+      "status": "scheduled",
+      "source_urls": [
+        "https://matchcalendar.football/today/2026-11-17/"
+      ],
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_jc_sp",
+        "opening_to_live_odds_history",
+        "confirmed_lineups",
+        "confirmed_injuries",
+        "referee_if_not_officially_assigned"
+      ],
+      "note": null
+    }
+  ],
+  "status": "scheduled"
+}
