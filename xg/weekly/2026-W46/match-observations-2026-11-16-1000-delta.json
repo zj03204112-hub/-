@@ -5,10 +5,10 @@
   "iso_week": "2026-W46",
   "snapshot_scope": "Append-only delta for Beijing 2026-11-15 matches; prior 2026-11-15 10:00 snapshot remains unchanged.",
   "record_count": 47,
-  "provider_observation_count": 11,
-  "matches_with_any_provider_xg": 7,
-  "matches_missing_xg": 40,
-  "provider_policy": "Each provider is a separate observation. Supplier model estimates and post-match estimates are explicitly tagged; no self-model xG is present.",
+  "provider_observation_count": 12,
+  "matches_with_any_provider_xg": 6,
+  "matches_missing_xg": 41,
+  "provider_policy": "Each provider is a separate observation. Supplier model estimates and post-match estimates are explicitly tagged; no self-model xG is present. Unverified provider values were removed.",
   "post_match_not_for_prematch": true,
   "records": [
     {
@@ -645,31 +645,9 @@
       "season": "2026-27",
       "iso_week": "2026-W46",
       "score_90": "1-0",
-      "xg_observations": [
-        {
-          "provider": "Scorwave",
-          "home_xg": 2.09,
-          "away_xg": 0.37,
-          "phase": "post_match_provider_model_estimate",
-          "source_url": "https://scorwave.com/football/match/saint-vincent-and-the-grenadines-vs-belize-2026-11-15/"
-        },
-        {
-          "provider": "PushScore",
-          "home_xg": 1.75,
-          "away_xg": 0.36,
-          "phase": "post_match_provider_model_estimate",
-          "source_url": "https://pushscore.com/match/saint-vincent-and-the-grenadines-belize/VxUrn6K2/details"
-        },
-        {
-          "provider": "Kickly",
-          "home_xg": 2.05,
-          "away_xg": 0.35,
-          "phase": "post_match_provider_model_estimate",
-          "source_url": "https://kicklyapp.com/en/match/saint-vincent-and-the-grenadines-belize-WYjjyZWA"
-        }
-      ],
-      "xg_status": "provider_data_available",
-      "missing_reason": null
+      "xg_observations": [],
+      "xg_status": "missing",
+      "missing_reason": "No verifiable free match-level xG source located; previously drafted provider values were not independently verified and have been removed."
     },
     {
       "date_beijing": "2026-11-15",
@@ -724,7 +702,8 @@
           "home_xg": 1.39,
           "away_xg": 1.55,
           "phase": "post_match_provider_model_estimate",
-          "source_url": "https://footballdata.cn/matches/cyprus-vs-montenegro/212713"
+          "source_url": "https://footballdata.cn/matches/cyprus-vs-montenegro/212713",
+          "retrieved_at_beijing": "2026-11-16T09:57:19+08:00"
         }
       ],
       "xg_status": "provider_data_available",
@@ -745,11 +724,20 @@
       "score_90": "0-0",
       "xg_observations": [
         {
-          "provider": "FootballWebPages",
+          "provider": "SoccerGhost",
           "home_xg": 1.45,
           "away_xg": 1.14,
           "phase": "post_match_provider_model_estimate",
-          "source_url": "https://www.footballwebpages.co.uk/match/2026-2027/uefa-nations-league/latvia/armenia/585376"
+          "source_url": "https://soccerghost.com/match/49222/latvia-vs-armenia",
+          "retrieved_at_beijing": "2026-11-16T09:57:19+08:00"
+        },
+        {
+          "provider": "StatsBet",
+          "home_xg": 1.29,
+          "away_xg": 1.44,
+          "phase": "post_match_provider_model_estimate",
+          "source_url": "https://statsbet.org/football/matches/latvia-vs-armenia-2026-11-15",
+          "retrieved_at_beijing": "2026-11-16T09:57:19+08:00"
         }
       ],
       "xg_status": "provider_data_available",
@@ -774,7 +762,9 @@
           "home_xg": 2.05,
           "away_xg": 0.83,
           "phase": "prematch_provider_model_estimate",
-          "source_url": "https://www.kingsodds.com/match/1570023-tenerife-vs-ad-ceuta-fc",
+          "source_url": null,
+          "source_ref_path": "predictions/2026-11-15-16/prediction-snapshot-1500.json",
+          "source_url_missing_reason": "Immutable snapshot contains provider and values but no source URL.",
           "retrieved_at_beijing": "2026-11-15T14:57:18+08:00"
         },
         {
@@ -782,15 +772,42 @@
           "home_xg": 2.24,
           "away_xg": 0.47,
           "phase": "prematch_provider_model_estimate",
-          "source_url": "https://www.kingsodds.com/match/1570023-tenerife-vs-ad-ceuta-fc",
+          "source_url": null,
+          "source_ref_path": "predictions/2026-11-15-16/prediction-snapshot-1500.json",
+          "source_url_missing_reason": "Immutable snapshot contains provider and values but no source URL.",
           "retrieved_at_beijing": "2026-11-15T14:57:18+08:00"
         },
         {
-          "provider": "Matchcalendar",
+          "provider": "SoccerGhost",
           "home_xg": 1.82,
           "away_xg": 0.78,
           "phase": "post_match_provider_model_estimate",
-          "source_url": "https://matchcalendar.football/es/competition/segunda-division/match/tenerife-vs-ad-ceuta/"
+          "source_url": "https://soccerghost.com/match/89665/tenerife-vs-ad-ceuta-fc",
+          "retrieved_at_beijing": "2026-11-16T09:57:19+08:00"
+        },
+        {
+          "provider": "FootballData.cn",
+          "home_xg": 1.78,
+          "away_xg": 1.06,
+          "phase": "post_match_provider_model_estimate",
+          "source_url": "https://footballdata.cn/matches/cd-tenerife-vs-ad-ceuta/214912",
+          "retrieved_at_beijing": "2026-11-16T09:57:19+08:00"
+        },
+        {
+          "provider": "FotMob",
+          "home_xg": 1.74,
+          "away_xg": 0.72,
+          "phase": "post_match_provider_model_estimate",
+          "source_url": "https://www.fotmob.com/matches/tenerife-vs-ad-ceuta-fc/uyitsp4",
+          "retrieved_at_beijing": "2026-11-16T09:57:19+08:00"
+        },
+        {
+          "provider": "FootballEdge",
+          "home_xg": 1.82,
+          "away_xg": 0.78,
+          "phase": "post_match_provider_model_estimate",
+          "source_url": "https://footballedgeuk.co.uk/board/2026-11-15/tenerife-v-ad-ceuta-fc/",
+          "retrieved_at_beijing": "2026-11-16T09:57:19+08:00"
         }
       ],
       "xg_status": "provider_data_available",
