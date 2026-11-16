@@ -77,7 +77,8 @@ def predict_match(
         str(line): {
             side: settle_probabilities(
                 line=line, side=side,
-                total_goal_probabilities=matrix["total_goal_pmf"],
+                odds=over_odds if side == "over" else under_odds,
+                total_goal_probabilities={i: p for i, p in enumerate(matrix["total_goal_pmf"])},
             )
             for side in ("over", "under")
         }
