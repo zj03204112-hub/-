@@ -22,7 +22,10 @@
       "internal_match_key": "2026-11-16|UEFA Nations League|Belarus|Albania",
       "xg_observations": [],
       "xg_status": "missing",
-      "missing_reason": "No free match-level xG provider observation found at capture time."
+      "missing_reason": "No free match-level xG provider observation found at capture time.",
+      "result_source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures/"
+      ]
     },
     {
       "competition": "UEFA Nations League",
@@ -42,12 +45,17 @@
           "home_xg": 2.59,
           "away_xg": 0.53,
           "phase": "prematch_provider_model_estimate",
-          "source_url": "https://squawka.com/football/finland-v-san-marino/2026-11-15/",
-          "retrieved_at_beijing": "2026-11-15T14:57:18+08:00"
+          "source_url": null,
+          "retrieved_at_beijing": "2026-11-15T14:57:18+08:00",
+          "source_ref_path": "predictions/2026-11-15-16/prediction-snapshot-1500.json",
+          "source_url_missing_reason": "The immutable prediction snapshot stores provider and estimate but does not store the source URL; no URL has been inferred."
         }
       ],
       "xg_status": "provider_data_available",
-      "missing_reason": null
+      "missing_reason": null,
+      "result_source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures/"
+      ]
     },
     {
       "competition": "UEFA Nations League",
@@ -63,7 +71,10 @@
       "internal_match_key": "2026-11-16|UEFA Nations League|Belgium|Italy",
       "xg_observations": [],
       "xg_status": "missing",
-      "missing_reason": "No free match-level xG provider observation found at capture time."
+      "missing_reason": "No free match-level xG provider observation found at capture time.",
+      "result_source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures/"
+      ]
     },
     {
       "competition": "UEFA Nations League",
@@ -79,7 +90,10 @@
       "internal_match_key": "2026-11-16|UEFA Nations League|France|Türkiye",
       "xg_observations": [],
       "xg_status": "missing",
-      "missing_reason": "No free match-level xG provider observation found at capture time."
+      "missing_reason": "No free match-level xG provider observation found at capture time.",
+      "result_source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures/"
+      ]
     },
     {
       "competition": "UEFA Nations League",
@@ -95,7 +109,10 @@
       "internal_match_key": "2026-11-16|UEFA Nations League|Croatia|Czechia",
       "xg_observations": [],
       "xg_status": "missing",
-      "missing_reason": "No free match-level xG provider observation found at capture time."
+      "missing_reason": "No free match-level xG provider observation found at capture time.",
+      "result_source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures/"
+      ]
     },
     {
       "competition": "UEFA Nations League",
@@ -111,7 +128,10 @@
       "internal_match_key": "2026-11-16|UEFA Nations League|Spain|England",
       "xg_observations": [],
       "xg_status": "missing",
-      "missing_reason": "No free match-level xG provider observation found at capture time."
+      "missing_reason": "No free match-level xG provider observation found at capture time.",
+      "result_source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures/"
+      ]
     },
     {
       "competition": "Women's Super League",
@@ -127,7 +147,11 @@
       "internal_match_key": "2026-11-16|Women's Super League|Arsenal Women|London City Lionesses",
       "xg_observations": [],
       "xg_status": "missing",
-      "missing_reason": "No free match-level xG provider observation found at capture time."
+      "missing_reason": "No free match-level xG provider observation found at capture time.",
+      "result_source_urls": [
+        "https://www.skysports.com/football/arsenal-women-vs-london-city-lionesses/report/575818",
+        "https://www.londoncitylionesses.com/fixtures?view=results"
+      ]
     },
     {
       "competition": "Segunda División",
@@ -151,7 +175,10 @@
         }
       ],
       "xg_status": "provider_data_available",
-      "missing_reason": null
+      "missing_reason": null,
+      "result_source_urls": [
+        "https://www.laliga.com/en-DE/match/temporada-2026-2027-laliga-hypermotion-sd-eibar-cadiz-cf-14"
+      ]
     },
     {
       "competition": "Segunda División",
@@ -176,7 +203,10 @@
         }
       ],
       "xg_status": "provider_data_available",
-      "missing_reason": null
+      "missing_reason": null,
+      "result_source_urls": [
+        "https://iaas-public-front-pro.laliga.com/en-US/match/temporada-2026-2027-laliga-hypermotion-cd-eldense-ce-sabadell-14"
+      ]
     }
   ]
 }
