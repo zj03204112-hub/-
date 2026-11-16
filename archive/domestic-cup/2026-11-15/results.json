@@ -1,0 +1,559 @@
+{
+  "run_id": "2026-11-16-1000-run11",
+  "captured_at_beijing": "2026-11-16T09:57:19+08:00",
+  "date_basis": "Asia/Shanghai (UTC+08:00)",
+  "related_prediction_audit": "reviews/2026-11-15/prediction-audit.json",
+  "related_prediction_snapshot": "predictions/2026-11-15-16/prediction-snapshot-1500.json",
+  "related_market_snapshot": "markets/2026-11-15-16/market-refresh-1500.json",
+  "related_xg_paths": [
+    "xg/weekly/2026-W46/match-observations-2026-11-16-1000-delta.json",
+    "xg/weekly/2026-W46/team-weekly-delta-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/match-observations-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/team-weekly-snapshot-2026-11-16-1000.json"
+  ],
+  "missing_fields": [
+    "stable_match_id/team_id/competition_id for most records",
+    "official竞彩让球盘口/SP",
+    "opening-to-live odds timestamps",
+    "complete official lineup/injury/referee/weather data",
+    "match-level xG for most fixtures"
+  ],
+  "archive_category": "domestic_cup",
+  "beijing_date": "2026-11-15",
+  "record_type": "completed_results",
+  "record_count": 36,
+  "results": [
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Paris 13 Atletico",
+      "away": "Red Star FC",
+      "final_score": "0-2",
+      "score_90": "0-2",
+      "ht": "0-2",
+      "status": "fixture_officially_confirmed_result_secondary",
+      "alias_note": "Official FFF fixture list identifies Paris 13 Atletico–Red Star; replaces the invalid Gobelins–Red Star snapshot fixture.",
+      "prediction_id": null,
+      "source_urls": [
+        "https://district75foot.fff.fr/wp-content/uploads/sites/126/bsk-pdf-manager/21b06f4555b5b55640f5a824636a4f8e.pdf",
+        "https://paris-idf.fff.fr/simple/page/2/",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Saint-Renan",
+      "away": "Laval",
+      "final_score": "1-2",
+      "score_90": "1-2",
+      "ht": "0-2",
+      "status": "confirmed_multi_source",
+      "prediction_id": "2026-11-15-STREN-LAV-SCR1",
+      "source_urls": [
+        "https://www.kovascore.com/football/match/coupe-de-france/saint-renan-laval-4888279",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Castelbourgeois",
+      "away": "Nantes",
+      "final_score": "1-9",
+      "score_90": "1-9",
+      "ht": "0-5",
+      "status": "confirmed_multi_source",
+      "prediction_id": "2026-11-15-CAS-NAN-SCR1",
+      "source_urls": [
+        "https://matchcalendar.football/fr/competition/coupe-de-france/match/castelbourgeois-vs-nantes/",
+        "https://www.kovascore.com/football/match/coupe-de-france/stade-castelbourgeois-nantes-4892769",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Kellermann",
+      "away": "Metz",
+      "final_score": "1-0",
+      "score_90": "1-0",
+      "ht": "0-0",
+      "status": "confirmed_multi_source",
+      "prediction_id": "2026-11-15-KEL-MET-SCR1",
+      "source_urls": [
+        "https://matchcalendar.football/it/competition/coupe-de-france/match/kellermann-vs-metz/",
+        "https://www.kovascore.com/football/match/coupe-de-france/sr-st-die-kellermann-metz-4892768",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Tremblay",
+      "away": "Maisons-Alfort",
+      "final_score": "2-0",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Violaines",
+      "away": "Vermelles",
+      "final_score": "0-1",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.kovascore.com/football/match/coupe-de-france/as-violaines-vermelles-4892775",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Sedan",
+      "away": "Bourges Foot 18",
+      "final_score": "2-0",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Pays Neslois",
+      "away": "Furiani-Agliani",
+      "final_score": "1-4",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Riom",
+      "away": "Limonest",
+      "final_score": "0-4",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.ladepeche.fr/sports/resultats-sportifs/football/coupe-de-france/septieme-tour/rencontre/548775/riom-f-c--limonest-fc",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Stade Pontivy",
+      "away": "Plabennec",
+      "final_score": "8-7",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_final_display_penalty_or_extra_time_unresolved",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Marseille Endoume",
+      "away": "Toulon",
+      "final_score": "2-1",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Senlis",
+      "away": "St-Pryvé St-Hilaire",
+      "final_score": "0-2",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Seyssinet-Pariset",
+      "away": "Nîmes",
+      "final_score": "0-2",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Rochefort",
+      "away": "Juventus Papus",
+      "final_score": "7-5",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_final_display_penalty_or_extra_time_unresolved",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Montigny-lès-Metz",
+      "away": "Pontarlier",
+      "final_score": "0-5",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Perros-Louannec",
+      "away": "Vannes",
+      "final_score": "0-7",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "SAG Cestas",
+      "away": "Bayonne",
+      "final_score": "0-1",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_alias_candidate",
+      "alias_note": "Result feed labels the home side Cestas and the away side Aviron Bayonnais.",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "OCPAM",
+      "away": "Olympique Marcquois",
+      "final_score": "2-0",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_alias_candidate",
+      "alias_note": "Likely alias of Olympique Charleville Prix AM; source result labels the home side Charleville.",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://newikis.com/en/2026%E2%80%9327_Coupe_de_France",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "US Montreuil-sur-Mer",
+      "away": "Loon-Plage",
+      "final_score": "0-2",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Yerres Crosne",
+      "away": "Union Cosnoise",
+      "final_score": "5-6",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_final_display_penalty_or_extra_time_unresolved",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Verson",
+      "away": "RC Calais",
+      "final_score": "1-5",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Sottevillais",
+      "away": "Fécamp",
+      "final_score": "4-1",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Massay",
+      "away": "Montlouis",
+      "final_score": "2-2",
+      "score_90": "2-2",
+      "ht": null,
+      "status": "penalty_result_conflict",
+      "penalty_result_sources": [
+        "Newikis: 7-6 pens",
+        "Sportsgambler: 9-8 final display"
+      ],
+      "source_urls": [
+        "https://newikis.com/en/2026%E2%80%9327_Coupe_de_France",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Veauche",
+      "away": "Saint-Paul-en-Jarez",
+      "final_score": "1-3",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "RC Chambéry",
+      "away": "Niort",
+      "final_score": "6-5",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_final_display_penalty_or_extra_time_unresolved",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Talange",
+      "away": "Baume-les-Dames",
+      "final_score": "2-0",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Vandœuvre",
+      "away": "Épinal",
+      "final_score": "0-3",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Chatou",
+      "away": "Les Ulis",
+      "final_score": "0-0",
+      "score_90": "0-0",
+      "ht": null,
+      "status": "confirmed_score_with_penalties",
+      "penalty_score": "4-5",
+      "source_urls": [
+        "https://newikis.com/en/2026%E2%80%9327_Coupe_de_France",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "FC 2 Rives 82",
+      "away": "Trélissac",
+      "final_score": "0-0",
+      "score_90": "0-0",
+      "ht": null,
+      "status": "penalty_winner_conflict",
+      "penalty_result_sources": [
+        "Capasseou: text says Trélissac won shootout",
+        "Eurosport: score display 2-1 FC 2 Rives 82"
+      ],
+      "source_urls": [
+        "https://www.capasseou.com/fc-2-rives-82-trelissac-sur-quelle-chaine",
+        "https://www.eurosport.fr/football/coupe-de-france/2026-2027/live-fc-2-rives-82-trelissac-fc_mtc22043459/live-stats.shtml"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Metz ESAP",
+      "away": "Reipertswiller",
+      "final_score": "0-1",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://www.kovascore.com/football/match/coupe-de-france/esap-metz-reipertswiller-4892772",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Rumilly Vallières",
+      "away": "Saint-Étienne",
+      "final_score": "1-2",
+      "score_90": "1-2",
+      "ht": "0-0",
+      "status": "confirmed_multi_source",
+      "prediction_id": "2026-11-15-RUM-ASSE-SCR1",
+      "source_urls": [
+        "https://www.nrpyrenees.fr/sports/resultats-sportifs/football/coupe-de-france/septieme-tour/rencontre/548773/gfa-rumilly-vallieres-saint-etienne",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "Coupe de France",
+      "home": "Montpellier Atlas Paillade",
+      "away": "Cannes",
+      "final_score": "0-2",
+      "score_90": null,
+      "ht": null,
+      "status": "secondary_scoreboard_only",
+      "score_90_status": "not_separately_verified",
+      "source_urls": [
+        "https://offsidescores.com/br/futebol/jogo/montpellier-atlas-paillade-as-cannes-20261115/4120b62d-d870-49d1-b9e2-29434c46d91c/detalhe",
+        "https://www.sportsgambler.com/fixtures-results/football/coupe-de-france/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "J.League Levain Cup",
+      "home": "FC Machida Zelvia",
+      "away": "Vissel Kobe",
+      "final_score": "1-1",
+      "score_90": "1-1",
+      "ht": "0-0",
+      "kickoff_beijing": "2026-11-15T13:03:00+08:00",
+      "status": "official_confirmed",
+      "source_urls": [
+        "https://www.jleague.jp/en/j1/match/",
+        "https://www.jleague.jp/en/match/leaguecup/2026/111501/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "J.League Levain Cup",
+      "home": "Kashima Antlers",
+      "away": "Yokohama F. Marinos",
+      "final_score": "3-2",
+      "score_90": "3-2",
+      "ht": null,
+      "kickoff_beijing": "2026-11-15T14:03:00+08:00",
+      "status": "official_confirmed",
+      "source_urls": [
+        "https://www.jleague.jp/en/j1/match/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "J.League Levain Cup",
+      "home": "Cerezo Osaka",
+      "away": "Urawa Reds",
+      "final_score": "1-1",
+      "score_90": "1-1",
+      "ht": "0-0",
+      "kickoff_beijing": "2026-11-15T14:04:00+08:00",
+      "status": "official_confirmed",
+      "source_urls": [
+        "https://www.jleague.jp/en/j1/match/",
+        "https://www.jleague.jp/en/match/leaguecup/2026/111502/"
+      ]
+    },
+    {
+      "category": "domestic_cup",
+      "competition": "J.League Levain Cup",
+      "home": "Kashiwa Reysol",
+      "away": "Kawasaki Frontale",
+      "final_score": "5-4",
+      "score_90": "5-4",
+      "ht": null,
+      "kickoff_beijing": "2026-11-15T16:03:00+08:00",
+      "status": "official_confirmed",
+      "source_urls": [
+        "https://www.jleague.jp/en/j1/match/",
+        "https://www.jleague.jp/en/match/leaguecup/2026/111504/"
+      ]
+    }
+  ]
+}
