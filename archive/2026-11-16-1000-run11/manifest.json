@@ -12,66 +12,47 @@
       "path": "reviews/2026-11-15/results-by-category.json",
       "blob_sha": "d3f7f3571c223bb0671282d61c5f0ae114041312",
       "bytes": 26976,
-      "summary": {
-        "results": 47,
-        "france_cup": 32
+      "ok": true,
+      "counts": {
+        "results": 47
       }
     },
     {
       "path": "reviews/2026-11-15/prediction-audit.json",
       "blob_sha": "67ea5a33b7eb99a89c048f75df9be4424c84c0f2",
       "bytes": 11377,
-      "summary": {
-        "valid_sample": 12,
-        "wdl": {
-          "hits": 11,
-          "total": 12,
-          "accuracy": 0.9166666666666666
-        },
-        "first": {
-          "hits": 3,
-          "total": 12,
-          "accuracy": 0.25
-        },
-        "second": {
-          "hits": 0,
-          "total": 12,
-          "accuracy": 0
-        },
-        "half_full": {
-          "hits": 5,
-          "total": 12,
-          "accuracy": 0.4166666666666667
-        }
+      "ok": true,
+      "counts": {
+        "valid": 12,
+        "wdl": "11/12"
       }
     },
     {
       "path": "fixtures/2026-11-16-17/schedule-refresh-1000.json",
       "blob_sha": "f388cfc1a41e4f4b8b6df32e4273ccdb4ad1eb79",
       "bytes": 30619,
-      "summary": {
-        "fixtures": 37,
-        "dates": [
-          "2026-11-16",
-          "2026-11-17"
-        ]
+      "ok": true,
+      "counts": {
+        "fixtures": 37
       }
     },
     {
       "path": "xg/weekly/2026-W46/match-observations-2026-11-16-1000-delta.json",
-      "blob_sha": "36ea1b694f267ce8a65faf65355f3c0ae755aded",
-      "bytes": 32646,
-      "summary": {
+      "blob_sha": "9019f58233c9b9243c54fec1e924ca01a7997dee",
+      "bytes": 33249,
+      "ok": true,
+      "counts": {
         "records": 47,
-        "xg_matches": 6,
+        "xg": 6,
         "provider_obs": 12
       }
     },
     {
       "path": "xg/weekly/2026-W46/team-weekly-delta-2026-11-16-1000.json",
-      "blob_sha": "96d60d6166eb251f4ed23a4aabe620af717aad1f",
-      "bytes": 86657,
-      "summary": {
+      "blob_sha": "a83b7e191ea1332e9ea11482f671dc4c615add0f",
+      "bytes": 88235,
+      "ok": true,
+      "counts": {
         "rows": 106
       }
     },
@@ -79,33 +60,29 @@
       "path": "xg/weekly/2026-W46/coverage-audit-2026-11-16-1000.json",
       "blob_sha": "d1ca57e5b9e05adcb3672c5a21ccc92d0795d388",
       "bytes": 2323,
-      "summary": {
-        "combined": {
-          "match_records": 132,
-          "matches_with_any_provider_xg": 19,
-          "matches_missing_xg": 113,
-          "team_competition_season_groups": 264,
-          "groups_with_provider_xg": 38,
-          "groups_missing_xg": 226,
-          "snapshot_rows": 294,
-          "combined_provider_count": null
-        }
+      "ok": true,
+      "counts": {
+        "records": 132,
+        "provider_xg": 19,
+        "missing": 113
       }
     },
     {
       "path": "xg/weekly/2026-W47/match-observations-2026-11-16-1000.json",
-      "blob_sha": "b825ef75b9052a35ad891eaf737015164e580c14",
-      "bytes": 6168,
-      "summary": {
+      "blob_sha": "7ff890ec0b9b00576bc1f57d9211d4a24b16ab3e",
+      "bytes": 8014,
+      "ok": true,
+      "counts": {
         "records": 9,
-        "xg_matches": 3
+        "xg": 3
       }
     },
     {
       "path": "xg/weekly/2026-W47/team-weekly-snapshot-2026-11-16-1000.json",
-      "blob_sha": "d3943862b14bbd5ccad4431bcffa903887886ac8",
-      "bytes": 14896,
-      "summary": {
+      "blob_sha": "b6a529c92224edee435fbec7e01523f6ac5c4de9",
+      "bytes": 15270,
+      "ok": true,
+      "counts": {
         "rows": 18
       }
     },
@@ -113,10 +90,10 @@
       "path": "xg/weekly/2026-W47/coverage-audit-2026-11-16-1000.json",
       "blob_sha": "1b778ef7cef22f2d2b0acf9555e39fa0ecef29ac",
       "bytes": 932,
-      "summary": {
-        "matches": 9,
-        "xg_matches": 3,
-        "rows": 18
+      "ok": true,
+      "counts": {
+        "records": 9,
+        "xg": 3
       }
     }
   ],
@@ -169,5 +146,7 @@
     "新追加记录的稳定match_id/team_id/competition_id仍缺失，使用临时复合键，不宣称ID映射完成。",
     "法国杯部分结果来自单一二级比分源；点球/加时未逐场拆分，score_90保持空值。",
     "官方竞彩让球盘口和SP未核验，预测审计中的让球结果全部不可核验。"
-  ]
+  ],
+  "final_verified_at_beijing": "2026-11-16T10:03:00+08:00",
+  "latest_content_commit_before_manifest": "5d24614b246e3ddddeb4ffd2fb1f114082d04fa2"
 }
