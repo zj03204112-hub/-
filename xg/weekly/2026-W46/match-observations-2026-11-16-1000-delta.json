@@ -4,10 +4,10 @@
   "captured_at_beijing": "2026-11-16T09:57:19+08:00",
   "iso_week": "2026-W46",
   "snapshot_scope": "Append-only delta for Beijing 2026-11-15 matches; prior 2026-11-15 10:00 snapshot remains unchanged.",
-  "record_count": 47,
+  "record_count": 48,
   "provider_observation_count": 12,
   "matches_with_any_provider_xg": 6,
-  "matches_missing_xg": 41,
+  "matches_missing_xg": 42,
   "provider_policy": "Each provider is a separate observation. Supplier model estimates and post-match estimates are explicitly tagged; no self-model xG is present. Unverified provider values were removed.",
   "post_match_not_for_prematch": true,
   "records": [
@@ -921,6 +921,23 @@
       ],
       "xg_status": "provider_data_available",
       "missing_reason": null
+    },
+    {
+      "date_beijing": "2026-11-15",
+      "competition": "Coupe de France",
+      "home": "FC Saint-Martin-lèz-Tatinghem",
+      "away": "Racing Club de France",
+      "internal_match_key": "2026-11-15|Coupe de France|FC Saint-Martin-lèz-Tatinghem|Racing Club de France",
+      "match_id": null,
+      "competition_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "season": "2026-27",
+      "iso_week": "2026-W46",
+      "score_90": null,
+      "xg_observations": [],
+      "xg_status": "missing",
+      "missing_reason": "No free match-level xG located for this match at capture time."
     }
   ]
 }
