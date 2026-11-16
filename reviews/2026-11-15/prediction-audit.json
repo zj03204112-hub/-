@@ -1,0 +1,430 @@
+{
+  "schema_version": "1.0",
+  "run_id": "2026-11-16-1000-run11",
+  "captured_at_beijing": "2026-11-16T09:57:19+08:00",
+  "source_snapshot": "predictions/2026-11-15-16/prediction-snapshot-1500.json",
+  "model_scope": "Inherited predictions were SCREENING-1.0 only; not V5.1 production forecasts.",
+  "valid_prediction_sample": 12,
+  "excluded_invalid_fixture_predictions": 1,
+  "metrics": {
+    "ninety_minute_wdl": {
+      "hits": 11,
+      "total": 12,
+      "accuracy": 0.9166666666666666
+    },
+    "first_score_exact": {
+      "hits": 3,
+      "total": 12,
+      "accuracy": 0.25
+    },
+    "second_score_exact": {
+      "hits": 0,
+      "total": 12,
+      "accuracy": 0
+    },
+    "half_full_exact": {
+      "hits": 5,
+      "total": 12,
+      "accuracy": 0.4166666666666667
+    },
+    "official_jc_handicap": {
+      "verified": 0,
+      "total": 12,
+      "accuracy": null,
+      "unverifiable": 12
+    },
+    "risk_flags": {
+      "explicit_outcome_warnings_realized": 2,
+      "total_predictions": 12,
+      "scoring_method": "Manual qualitative tagging only; not a validated binary metric."
+    }
+  },
+  "predictions": [
+    {
+      "prediction_id": "2026-11-15-CYP-MNE-SCR1",
+      "home": "Cyprus",
+      "away": "Montenegro",
+      "prediction": {
+        "first": "1-1",
+        "second": "0-1",
+        "wdl": "客胜",
+        "half_full": "平/负",
+        "confidence": 49,
+        "strategy": "S-DRAW-01"
+      },
+      "actual": {
+        "score_90": "1-4",
+        "halftime": "0-1",
+        "wdl": "客胜",
+        "half_full": "负/负"
+      },
+      "checks": {
+        "wdl": true,
+        "first_score": false,
+        "second_score": false,
+        "half_full": false,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [],
+      "error_reason": "方向正确但比分严重低估客队进球尾部；半场已落后，半全场平/负未命中。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-LVA-ARM-SCR1",
+      "home": "Latvia",
+      "away": "Armenia",
+      "prediction": {
+        "first": "1-1",
+        "second": "0-1",
+        "wdl": "平局",
+        "half_full": "平/平",
+        "confidence": 48,
+        "strategy": "S-DRAW-01"
+      },
+      "actual": {
+        "score_90": "0-0",
+        "halftime": "0-0",
+        "wdl": "平局",
+        "half_full": "平/平"
+      },
+      "checks": {
+        "wdl": true,
+        "first_score": false,
+        "second_score": false,
+        "half_full": true,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [
+        "低进球/平局风险兑现"
+      ],
+      "error_reason": "胜平负与半全场正确，但比分分布未给0-0足够权重。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-TEN-CEU-SCR1",
+      "home": "Tenerife",
+      "away": "AD Ceuta",
+      "prediction": {
+        "first": "1-0",
+        "second": "1-1",
+        "wdl": "主胜",
+        "half_full": "平/胜",
+        "confidence": 52,
+        "strategy": "S-FORM-03"
+      },
+      "actual": {
+        "score_90": "2-0",
+        "halftime": "1-0",
+        "wdl": "主胜",
+        "half_full": "胜/胜"
+      },
+      "checks": {
+        "wdl": true,
+        "first_score": false,
+        "second_score": false,
+        "half_full": false,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [],
+      "error_reason": "方向正确；主队第40分钟先开纪录，半全场判断错误，第二球在86分钟。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-GRA-LPA-SCR1",
+      "home": "Granada",
+      "away": "Las Palmas",
+      "prediction": {
+        "first": "2-1",
+        "second": "1-1",
+        "wdl": "主胜",
+        "half_full": "胜/胜",
+        "confidence": 57,
+        "strategy": "S-FORM-03"
+      },
+      "actual": {
+        "score_90": "1-0",
+        "halftime": "0-0",
+        "wdl": "主胜",
+        "half_full": "平/胜"
+      },
+      "checks": {
+        "wdl": true,
+        "first_score": false,
+        "second_score": false,
+        "half_full": false,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [],
+      "error_reason": "主胜方向正确，但总进球和主队进球数偏高；上半场未能领先。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-AVL-BIR-W-SCR1",
+      "home": "Aston Villa Women",
+      "away": "Birmingham City Women",
+      "prediction": {
+        "first": "2-1",
+        "second": "1-1",
+        "wdl": "主胜",
+        "half_full": "平/胜",
+        "confidence": 50,
+        "strategy": "S-DRAW-01"
+      },
+      "actual": {
+        "score_90": "1-0",
+        "halftime": "0-0",
+        "wdl": "主胜",
+        "half_full": "平/胜"
+      },
+      "checks": {
+        "wdl": true,
+        "first_score": false,
+        "second_score": false,
+        "half_full": true,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [],
+      "error_reason": "方向与半全场正确；比分预测高估双方进球，实际仅一球。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-WHU-CHA-W-SCR1",
+      "home": "West Ham United Women",
+      "away": "Charlton Athletic Women",
+      "prediction": {
+        "first": "2-0",
+        "second": "3-0",
+        "wdl": "主胜",
+        "half_full": "胜/胜",
+        "confidence": 66,
+        "strategy": "S-TAIL-02"
+      },
+      "actual": {
+        "score_90": "2-0",
+        "halftime": "1-0",
+        "wdl": "主胜",
+        "half_full": "胜/胜"
+      },
+      "checks": {
+        "wdl": true,
+        "first_score": true,
+        "second_score": false,
+        "half_full": true,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [],
+      "error_reason": "第一比分、方向和半全场均命中；第二比分未命中。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-NUR-KOE-W-SCR1",
+      "home": "1. FC Nürnberg Women",
+      "away": "1. FC Köln Women",
+      "prediction": {
+        "first": "1-2",
+        "second": "1-1",
+        "wdl": "客胜",
+        "half_full": "平/负",
+        "confidence": 50,
+        "strategy": "S-FORM-03"
+      },
+      "actual": {
+        "score_90": "0-1",
+        "halftime": "0-1",
+        "wdl": "客胜",
+        "half_full": "负/负"
+      },
+      "checks": {
+        "wdl": true,
+        "first_score": false,
+        "second_score": false,
+        "half_full": false,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [],
+      "error_reason": "方向正确，但客队第9分钟领先；预测未捕捉早早失球导致的半全场变化。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-RBL- SGE-W-SCR1",
+      "home": "RB Leipzig Women",
+      "away": "Eintracht Frankfurt Women",
+      "prediction": {
+        "first": "1-2",
+        "second": "1-1",
+        "wdl": "客胜",
+        "half_full": "平/负",
+        "confidence": 56,
+        "strategy": "S-FORM-03"
+      },
+      "actual": {
+        "score_90": "1-5",
+        "halftime": "0-2",
+        "wdl": "客胜",
+        "half_full": "负/负"
+      },
+      "checks": {
+        "wdl": true,
+        "first_score": false,
+        "second_score": false,
+        "half_full": false,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [
+        "主队防守失球风险兑现"
+      ],
+      "error_reason": "客胜方向正确，但客队优势及4球以上尾部严重低估；半场已落后。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-STREN-LAV-SCR1",
+      "home": "Saint-Renan",
+      "away": "Laval",
+      "prediction": {
+        "first": "1-2",
+        "second": "0-2",
+        "wdl": "客胜",
+        "half_full": "平/负",
+        "confidence": 43,
+        "strategy": "S-CUP-RISK-04"
+      },
+      "actual": {
+        "score_90": "1-2",
+        "halftime": "0-2",
+        "wdl": "客胜",
+        "half_full": "负/负"
+      },
+      "checks": {
+        "wdl": true,
+        "first_score": true,
+        "second_score": false,
+        "half_full": false,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [],
+      "error_reason": "第一比分与方向正确；Laval上半场已两球领先，半全场未命中。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-CAS-NAN-SCR1",
+      "home": "Castelbourgeois",
+      "away": "Nantes",
+      "prediction": {
+        "first": "0-3",
+        "second": "0-4",
+        "wdl": "客胜",
+        "half_full": "负/负",
+        "confidence": 63,
+        "strategy": "S-TAIL-02"
+      },
+      "actual": {
+        "score_90": "1-9",
+        "halftime": "0-5",
+        "wdl": "客胜",
+        "half_full": "负/负"
+      },
+      "checks": {
+        "wdl": true,
+        "first_score": false,
+        "second_score": false,
+        "half_full": true,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [
+        "大比分尾部风险兑现"
+      ],
+      "error_reason": "方向和半全场正确，但9个客队进球远超两个比分候选；尾部概率仍被低估。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-KEL-MET-SCR1",
+      "home": "Kellermann",
+      "away": "Metz",
+      "prediction": {
+        "first": "0-2",
+        "second": "1-2",
+        "wdl": "客胜",
+        "half_full": "平/负",
+        "confidence": 44,
+        "strategy": "S-CUP-RISK-04"
+      },
+      "actual": {
+        "score_90": "1-0",
+        "halftime": "0-0",
+        "wdl": "主胜",
+        "half_full": "平/胜"
+      },
+      "checks": {
+        "wdl": false,
+        "first_score": false,
+        "second_score": false,
+        "half_full": false,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [],
+      "error_reason": "杯赛冷门：职业队实力优势没有转化为进球；赛前Metz近期战绩来源冲突及主队样本不足，未能量化为足够的主胜/低比分概率。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-RUM-ASSE-SCR1",
+      "home": "Rumilly Vallières",
+      "away": "Saint-Étienne",
+      "prediction": {
+        "first": "1-2",
+        "second": "0-2",
+        "wdl": "客胜",
+        "half_full": "平/负",
+        "confidence": 55,
+        "strategy": "S-TAIL-02"
+      },
+      "actual": {
+        "score_90": "1-2",
+        "halftime": "0-0",
+        "wdl": "客胜",
+        "half_full": "平/负"
+      },
+      "checks": {
+        "wdl": true,
+        "first_score": true,
+        "second_score": false,
+        "half_full": true,
+        "handicap": "无法核验"
+      },
+      "risk_realized": [],
+      "error_reason": "第一比分、方向和半全场命中；第二比分未命中。",
+      "official_handicap_status": "not_found_verified"
+    },
+    {
+      "prediction_id": "2026-11-15-GOB-RED-SCR1",
+      "home": "Gobelins",
+      "away": "Red Star FC 93",
+      "prediction": {
+        "first": "0-1",
+        "second": "1-1",
+        "wdl": "客胜",
+        "half_full": "平/负",
+        "confidence": 45,
+        "strategy": "S-CUP-RISK-04"
+      },
+      "actual": null,
+      "checks": {
+        "wdl": "excluded",
+        "first_score": "excluded",
+        "second_score": "excluded",
+        "half_full": "excluded",
+        "handicap": "无法核验"
+      },
+      "risk_realized": [],
+      "error_reason": "赛程身份冲突：官方FF F地区文件列出的对阵为Paris 13 Atletico–Red Star；不可把其他来源的Gobelins–Red Star结果强行匹配。",
+      "official_handicap_status": "not_found_verified",
+      "excluded_from_metrics": true
+    }
+  ],
+  "conclusions": [
+    "90分钟胜平负方向在12场有效样本中命中11场；样本来自筛选版且非随机完整赛事集，不能代表V5.1或生产准确率。",
+    "比分命中显著低于方向命中：第一比分3/12，第二比分0/12；4球以上尾部在Leipzig与Castelbourgeois两场仍明显低估。",
+    "半全场5/12；早早失球的场次（Nürnberg、Leipzig、Saint-Renan）是主要错误来源之一。",
+    "官方竞彩让球盘口缺失，12场全部无法核验；不使用亚洲盘代替、不反推让球结果。",
+    "Gobelins–Red Star预测因官方赛程身份冲突排除，不计入任何命中率。"
+  ]
+}
