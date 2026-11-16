@@ -1,0 +1,142 @@
+{
+  "run_id": "2026-11-16-1000-run11",
+  "captured_at_beijing": "2026-11-16T09:57:19+08:00",
+  "date_basis": "Asia/Shanghai (UTC+08:00)",
+  "related_prediction_audit": "reviews/2026-11-15/prediction-audit.json",
+  "related_prediction_snapshot": "predictions/2026-11-15-16/prediction-snapshot-1500.json",
+  "related_market_snapshot": "markets/2026-11-15-16/market-refresh-1500.json",
+  "related_xg_paths": [
+    "xg/weekly/2026-W46/match-observations-2026-11-16-1000-delta.json",
+    "xg/weekly/2026-W46/team-weekly-delta-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/match-observations-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/team-weekly-snapshot-2026-11-16-1000.json"
+  ],
+  "missing_fields": [
+    "stable_match_id/team_id/competition_id for most records",
+    "official竞彩让球盘口/SP",
+    "opening-to-live odds timestamps",
+    "complete official lineup/injury/referee/weather data",
+    "match-level xG for most fixtures"
+  ],
+  "archive_category": "domestic_league",
+  "beijing_dates": [
+    "2026-11-16",
+    "2026-11-17"
+  ],
+  "record_type": "scheduled_fixtures",
+  "record_count": 5,
+  "fixtures": [
+    {
+      "competition": "Frauen-Bundesliga",
+      "category": "domestic_league",
+      "home": "VfB Stuttgart Women",
+      "away": "Bayer 04 Leverkusen Women",
+      "kickoff_utc": "2026-11-16T17:00:00Z",
+      "kickoff_beijing": "2026-11-17T01:00:00.000+08:00",
+      "season": "2026-27",
+      "status": "scheduled",
+      "source_urls": [
+        "https://www.vfb.de/de/1893/frauen/frauen/bundesliga/2026-2027/bundesliga/spielberichte/",
+        "https://www.bayer04.de/de-de/team/frauen/frauen"
+      ],
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_jc_sp",
+        "opening_to_live_odds_history",
+        "confirmed_lineups",
+        "confirmed_injuries",
+        "referee_if_not_officially_assigned"
+      ],
+      "note": null
+    },
+    {
+      "competition": "Peruvian Liga 1",
+      "category": "domestic_league",
+      "home": "UTC Cajamarca",
+      "away": "Club Deportivo Los Chankas",
+      "kickoff_utc": "2026-11-16T18:00:00Z",
+      "kickoff_beijing": "2026-11-17T02:00:00.000+08:00",
+      "season": "2026",
+      "status": "scheduled",
+      "source_urls": [
+        "https://matchcalendar.football/today/2026-11-16/"
+      ],
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_jc_sp",
+        "opening_to_live_odds_history",
+        "confirmed_lineups",
+        "confirmed_injuries",
+        "referee_if_not_officially_assigned"
+      ],
+      "note": null
+    },
+    {
+      "competition": "Segunda División",
+      "category": "domestic_league",
+      "home": "Albacete",
+      "away": "Celta de Vigo II",
+      "kickoff_utc": "2026-11-16T19:30:00Z",
+      "kickoff_beijing": "2026-11-17T03:30:00.000+08:00",
+      "season": "2026-27",
+      "status": "scheduled",
+      "source_urls": [
+        "https://matchcalendar.football/today/2026-11-16/"
+      ],
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_jc_sp",
+        "opening_to_live_odds_history",
+        "confirmed_lineups",
+        "confirmed_injuries",
+        "referee_if_not_officially_assigned"
+      ],
+      "note": null
+    },
+    {
+      "competition": "Peruvian Liga 1",
+      "category": "domestic_league",
+      "home": "Cusco",
+      "away": "ADT",
+      "kickoff_utc": "2026-11-16T20:15:00Z",
+      "kickoff_beijing": "2026-11-17T04:15:00.000+08:00",
+      "season": "2026",
+      "status": "scheduled",
+      "source_urls": [
+        "https://matchcalendar.football/today/2026-11-16/"
+      ],
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_jc_sp",
+        "opening_to_live_odds_history",
+        "confirmed_lineups",
+        "confirmed_injuries",
+        "referee_if_not_officially_assigned"
+      ],
+      "note": null
+    },
+    {
+      "competition": "Peruvian Liga 1",
+      "category": "domestic_league",
+      "home": "UCV Moquegua",
+      "away": "Atlético Grau",
+      "kickoff_utc": "2026-11-16T20:15:00Z",
+      "kickoff_beijing": "2026-11-17T04:15:00.000+08:00",
+      "season": "2026",
+      "status": "scheduled",
+      "source_urls": [
+        "https://matchcalendar.football/today/2026-11-16/"
+      ],
+      "missing_fields": [
+        "official_jc_handicap",
+        "official_jc_sp",
+        "opening_to_live_odds_history",
+        "confirmed_lineups",
+        "confirmed_injuries",
+        "referee_if_not_officially_assigned"
+      ],
+      "note": null
+    }
+  ],
+  "status": "scheduled"
+}
