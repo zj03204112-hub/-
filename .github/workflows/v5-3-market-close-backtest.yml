@@ -7,7 +7,8 @@ on:
     paths:
       - "model_validation/backtest_v5_3_market_close.py"
       - "model_validation/ablation_v5_3_tail.py"
-      - "model_validation/joint_direction_matrix_validation_v5_3.py"\n      - "model_validation/targeted_draw_away_tail_diagnostics_v5_3.py"
+      - "model_validation/joint_direction_matrix_validation_v5_3.py"
+      - "model_validation/targeted_draw_away_tail_diagnostics_v5_3.py"
       - "model_validation/fixtures/v5_3_unl_20261114_15.csv"
       - "model_validation/v5_2_market_lambda.py"
       - "model_validation/v5_3_direct_matrix_repair.py"
@@ -17,6 +18,7 @@ on:
       - "model_validation/backtest_v5_3_market_close.py"
       - "model_validation/ablation_v5_3_tail.py"
       - "model_validation/joint_direction_matrix_validation_v5_3.py"
+      - "model_validation/targeted_draw_away_tail_diagnostics_v5_3.py"
       - "model_validation/fixtures/v5_3_unl_20261114_15.csv"
       - "model_validation/v5_2_market_lambda.py"
       - "model_validation/v5_3_direct_matrix_repair.py"
@@ -36,3 +38,5 @@ jobs:
         run: python -m model_validation.ablation_v5_3_tail
       - name: Run joint direction and score-matrix sensitivity
         run: python -m model_validation.joint_direction_matrix_validation_v5_3
+      - name: Run targeted draw, away-goal and goal-tail diagnostics
+        run: python -m model_validation.targeted_draw_away_tail_diagnostics_v5_3
