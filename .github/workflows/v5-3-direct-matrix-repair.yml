@@ -1,0 +1,28 @@
+name: V5.3 direct matrix repair tests
+
+on:
+  push:
+    branches:
+      - experiment/v5.3-direct-matrix-repair-2026-11-16
+    paths:
+      - "model_validation/v5_3_*.py"
+      - "tests/test_v5_3_*.py"
+      - "data_pipeline/v5_3_prediction_api.py"
+      - "data_pipeline/prediction_snapshot_writer.py"
+      - ".github/workflows/v5-3-direct-matrix-repair.yml"
+  pull_request:
+    paths:
+      - "model_validation/v5_3_*.py"
+      - "tests/test_v5_3_*.py"
+      - ".github/workflows/v5-3-direct-matrix-repair.yml"
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run V5.3 unit tests
+        run: python -m unittest discover -s tests -p "test_v5_3_*.py" -v
