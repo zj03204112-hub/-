@@ -29,11 +29,12 @@
     },
     {
       "path": "fixtures/2026-11-16-17/schedule-refresh-1000.json",
-      "blob_sha": "f388cfc1a41e4f4b8b6df32e4273ccdb4ad1eb79",
-      "bytes": 30619,
+      "blob_sha": "9547ad565525767031e64f68f7f5d21a497eed9f",
+      "bytes": 30885,
       "ok": true,
       "counts": {
-        "fixtures": 37
+        "fixtures": 37,
+        "u21": "2026-11-16T14:00:00+08:00"
       }
     },
     {
@@ -147,6 +148,6 @@
     "法国杯部分结果来自单一二级比分源；点球/加时未逐场拆分，score_90保持空值。",
     "官方竞彩让球盘口和SP未核验，预测审计中的让球结果全部不可核验。"
   ],
-  "final_verified_at_beijing": "2026-11-16T10:03:00+08:00",
-  "latest_content_commit_before_manifest": "5d24614b246e3ddddeb4ffd2fb1f114082d04fa2"
+  "final_verified_at_beijing": "2026-11-16T10:05:00+08:00",
+  "latest_content_commit_before_manifest": "916c0aed3770d115ee52760ea8561efd36347123"
 }
