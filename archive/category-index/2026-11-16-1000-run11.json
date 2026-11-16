@@ -1,0 +1,98 @@
+{
+  "run_id": "2026-11-16-1000-run11",
+  "captured_at_beijing": "2026-11-16T09:57:19+08:00",
+  "date_basis": "Asia/Shanghai (UTC+08:00)",
+  "related_prediction_audit": "reviews/2026-11-15/prediction-audit.json",
+  "related_prediction_snapshot": "predictions/2026-11-15-16/prediction-snapshot-1500.json",
+  "related_market_snapshot": "markets/2026-11-15-16/market-refresh-1500.json",
+  "related_xg_paths": [
+    "xg/weekly/2026-W46/match-observations-2026-11-16-1000-delta.json",
+    "xg/weekly/2026-W46/team-weekly-delta-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/match-observations-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/team-weekly-snapshot-2026-11-16-1000.json"
+  ],
+  "missing_fields": [
+    "stable_match_id/team_id/competition_id for most records",
+    "official竞彩让球盘口/SP",
+    "opening-to-live odds timestamps",
+    "complete official lineup/injury/referee/weather data",
+    "match-level xG for most fixtures"
+  ],
+  "archive_index": "date/type/category",
+  "result_categories": [
+    {
+      "category": "domestic_cup",
+      "path": "archive/domestic-cup/2026-11-15/results.json",
+      "records": 36
+    },
+    {
+      "category": "domestic_league",
+      "path": "archive/domestic-league/2026-11-15/results.json",
+      "records": 4
+    },
+    {
+      "category": "national_team/uefa-nations-league",
+      "path": "archive/national-team/uefa-nations-league/2026-11-15/results.json",
+      "records": 2
+    },
+    {
+      "category": "national_team/concacaf-nations-league",
+      "path": "archive/national-team/concacaf-nations-league/2026-11-15/results.json",
+      "records": 2
+    },
+    {
+      "category": "international_friendly",
+      "path": "archive/international-friendly/2026-11-15/results.json",
+      "records": 1
+    },
+    {
+      "category": "other",
+      "path": "archive/other/2026-11-15/results.json",
+      "records": 2
+    }
+  ],
+  "fixture_categories": [
+    {
+      "category": "domestic_cup",
+      "path": "archive/domestic-cup/2026-11-16-17/fixtures.json",
+      "fixtures": 0
+    },
+    {
+      "category": "domestic_league",
+      "path": "archive/domestic-league/2026-11-16-17/fixtures.json",
+      "fixtures": 5
+    },
+    {
+      "category": "national_team/uefa-nations-league",
+      "path": "archive/national-team/uefa-nations-league/2026-11-16-17/fixtures.json",
+      "fixtures": 10
+    },
+    {
+      "category": "national_team/afcon-qualifiers",
+      "path": "archive/national-team/afcon-qualifiers/2026-11-16-17/fixtures.json",
+      "fixtures": 12
+    },
+    {
+      "category": "national_team/concacaf-nations-league",
+      "path": "archive/national-team/concacaf-nations-league/2026-11-16-17/fixtures.json",
+      "fixtures": 6
+    },
+    {
+      "category": "international_friendly",
+      "path": "archive/international-friendly/2026-11-16-17/fixtures.json",
+      "fixtures": 3
+    },
+    {
+      "category": "other",
+      "path": "archive/other/2026-11-16-17/fixtures.json",
+      "fixtures": 1
+    }
+  ],
+  "special_rules": {
+    "uefa_nations_league_separate": true,
+    "other_national_team_competitions_separate": true,
+    "domestic_cup_separate": true,
+    "postmatch_xg_never_prematch": true,
+    "immutable_snapshots": true
+  }
+}
