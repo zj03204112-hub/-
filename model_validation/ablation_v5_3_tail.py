@@ -18,11 +18,22 @@ def outcome(h, a):
 def scenarios():
     base = copy.deepcopy(DEFAULT_WEIGHTS)
     out = {"baseline_v5_3": base}
+    # Aggregate 5+ sensitivity: diagnostic only, not a proposed production setting.
     for factor in (1.15, 1.25, 1.40, 1.60, 1.80, 2.00, 2.50, 3.00, 4.00):
         w = copy.deepcopy(base)
         for k in ("5", "6", "7", "8+"):
             w["total_goals"][k] = factor
-        out[f"total_tail_x{factor:.2f}"] = w
+        out[f"total_tail_5plus_x{factor:.2f}"] = w
+    # Separate exactly-five from 6+ because the observed tail may be misallocated.
+    for factor in (1.50, 2.00, 2.50, 3.00, 4.00, 4.50, 5.00):
+        w = copy.deepcopy(base)
+        w["total_goals"]["5"] = factor
+        out[f"exactly_5_goals_x{factor:.2f}"] = w
+    for factor in (0.50, 0.75, 1.25, 1.50):
+        w = copy.deepcopy(base)
+        for k in ("6", "7", "8+"):
+            w["total_goals"][k] = factor
+        out[f"total_6plus_x{factor:.2f}"] = w
     for factor in (1.15, 1.25, 1.40):
         w = copy.deepcopy(base)
         for k in ("2", "3+"):
@@ -34,7 +45,6 @@ def scenarios():
             w["draw_exact"][k] = factor
         out[f"draw_only_x{factor:.2f}"] = w
     return out
-
 def score_variant(rows, weights, label):
     per_match = []
     for item in rows:
