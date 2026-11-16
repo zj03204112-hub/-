@@ -81,8 +81,9 @@ def score(rows, alpha, tail_factor, name):
             draw_odds=float(item["draw_odds"]),away_odds=float(item["away_odds"]),max_goals=15)
         m=base["market"]
         weights=copy.deepcopy(DEFAULT_WEIGHTS)
-        for k in ("5","6","7","8+"):
-            weights["total_goals"][k]=tail_factor
+        if tail_factor is not None:
+            for k in ("5","6","7","8+"):
+                weights["total_goals"][k]=tail_factor
         raw=build_score_matrix(
             lambda_home=float(base["lambda_home"]),lambda_away=float(base["lambda_away"]),
             market_home_probability=float(m["p_home_devig"]),
@@ -127,12 +128,12 @@ def main():
     path="model_validation/fixtures/v5_3_unl_20261114_15.csv"
     with open(path,newline="",encoding="utf-8") as f: rows=list(csv.DictReader(f))
     scenarios=[
-      (0.0,1.08,"baseline_v5_3"),
+      (0.0,None,"baseline_v5_3"),
       (0.0,2.50,"tail_only_x2.50"),
-      (0.25,1.08,"direction_market_blend_25pct"),
-      (0.50,1.08,"direction_market_blend_50pct"),
-      (0.75,1.08,"direction_market_blend_75pct"),
-      (1.00,1.08,"market_direction_anchor_100pct"),
+      (0.25,None,"direction_market_blend_25pct"),
+      (0.50,None,"direction_market_blend_50pct"),
+      (0.75,None,"direction_market_blend_75pct"),
+      (1.00,None,"market_direction_anchor_100pct"),
       (0.25,2.50,"joint_direction25_tail2.50"),
       (0.50,2.50,"joint_direction50_tail2.50"),
       (0.75,2.50,"joint_direction75_tail2.50"),
