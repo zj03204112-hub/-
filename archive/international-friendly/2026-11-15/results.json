@@ -1,0 +1,43 @@
+{
+  "run_id": "2026-11-16-1000-run11",
+  "captured_at_beijing": "2026-11-16T09:57:19+08:00",
+  "date_basis": "Asia/Shanghai (UTC+08:00)",
+  "related_prediction_audit": "reviews/2026-11-15/prediction-audit.json",
+  "related_prediction_snapshot": "predictions/2026-11-15-16/prediction-snapshot-1500.json",
+  "related_market_snapshot": "markets/2026-11-15-16/market-refresh-1500.json",
+  "related_xg_paths": [
+    "xg/weekly/2026-W46/match-observations-2026-11-16-1000-delta.json",
+    "xg/weekly/2026-W46/team-weekly-delta-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/match-observations-2026-11-16-1000.json",
+    "xg/weekly/2026-W47/team-weekly-snapshot-2026-11-16-1000.json"
+  ],
+  "missing_fields": [
+    "stable_match_id/team_id/competition_id for most records",
+    "official竞彩让球盘口/SP",
+    "opening-to-live odds timestamps",
+    "complete official lineup/injury/referee/weather data",
+    "match-level xG for most fixtures"
+  ],
+  "archive_category": "international_friendly",
+  "beijing_date": "2026-11-15",
+  "record_type": "completed_results",
+  "record_count": 1,
+  "results": [
+    {
+      "category": "international_friendly",
+      "competition": "International Friendly",
+      "home": "New Zealand",
+      "away": "India",
+      "final_score": "3-0",
+      "score_90": "3-0",
+      "ht": "3-0",
+      "kickoff_beijing": "2026-11-15T11:10:00+08:00",
+      "status": "multi_source_confirmed",
+      "time_note": "Prior schedule snapshot rounded kickoff to 11:00; match report gives 03:10 UTC / 11:10 Beijing.",
+      "source_urls": [
+        "https://www.friendsoffootballnz.com/2026/11/15/all-whites-beat-india-3-0-to-give-coach-darren-bazeley-a-winning-send-off/",
+        "https://economictimes.indiatimes.com/news/sports/football/india-lose-0-3-to-new-zealand-in-football-friendly/articleshow/135848987.cms"
+      ]
+    }
+  ]
+}
