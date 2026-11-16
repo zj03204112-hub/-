@@ -15,12 +15,12 @@
     "provider_count": 17
   },
   "appended_delta": {
-    "match_records": 47,
+    "match_records": 48,
     "matches_with_any_provider_xg": 6,
-    "matches_missing_xg": 41,
-    "team_rows": 106,
+    "matches_missing_xg": 42,
+    "team_rows": 108,
     "groups_with_provider_xg": 12,
-    "groups_missing_xg": 82,
+    "groups_missing_xg": 84,
     "provider_observations": 12,
     "provider_names": [
       "TipOracle",
@@ -34,13 +34,13 @@
     ]
   },
   "combined_counts": {
-    "match_records": 132,
+    "match_records": 133,
     "matches_with_any_provider_xg": 19,
-    "matches_missing_xg": 113,
-    "team_competition_season_groups": 264,
+    "matches_missing_xg": 114,
+    "team_competition_season_groups": 266,
     "groups_with_provider_xg": 38,
-    "groups_missing_xg": 226,
-    "snapshot_rows": 294,
+    "groups_missing_xg": 228,
+    "snapshot_rows": 296,
     "combined_provider_count": null
   },
   "provider_policy": "Provider-specific observations remain separate; no provider averaging. Supplier model estimates are not labelled measured xG. No own-model estimate was created.",
@@ -57,7 +57,7 @@
   },
   "recalculation_status": "Delta rows are internally reproducible, but the full historical W46 aggregate was not recomputed from SQLite because the database is not connected.",
   "missing_reasons": [
-    "No free match-level xG found for 41 of the 47 newly appended matches.",
+    "No free match-level xG found for 42 of the 48 newly appended matches.",
     "Stable match/team/competition IDs absent for the new delta.",
     "Several cup final score displays may include penalty shootouts; xG rows do not resolve that."
   ],
