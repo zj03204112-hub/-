@@ -68,7 +68,7 @@ def summarize(matrix, row, market):
         "top1_is_1_1": cells[0][1:3] == (1,1),
         "p_away_goals_0": away["0"], "p_away_goals_1": away["1"],
         "p_away_goals_2": away["2"], "p_away_goals_3plus": away["3+"],
-        "p_underdog_goals_2plus": sum(v for k,v in fav_goal.items() if k in ("2","3+","4+")),
+        "p_underdog_goals_2plus": sum(v for k,v in fav_goal.items() if k in ("2","3+","4+")),\n        "p_underdog_goals_0": fav_goal["0"], "p_underdog_goals_1": fav_goal["1"],\n        "p_underdog_goals_2": fav_goal["2"], "p_underdog_goals_3plus": fav_goal["3+"],\n        "p_5plus_favourite_win": tail_by_fav_outcome["favourite_win"],\n        "p_5plus_underdog_win": tail_by_fav_outcome["underdog_win"],\n        "p_5plus_draw": tail_by_fav_outcome["draw"],
         "actual_favourite_conceded": actual_fav_goals,
         "actual_total_goals": actual_total,
         "p_total_5plus": sum(totals[k] for k in ("5","6","7","8+")),
@@ -117,7 +117,7 @@ def evaluate(rows, draw_factor=1.0, tail_factor=None, away_factor=1.0):
         "mean_p_0_0_1_1_2_2":sum(r["p_draw_0_0_1_1_2_2"] for r in records)/n,
         "top1_draw_count":top_draw, "top1_1_1_count":top11,
         "actual_5plus_count":actual5,
-        "mean_predicted_5plus":sum(r["p_total_5plus"] for r in records)/n,
+        "mean_predicted_5plus":sum(r["p_total_5plus"] for r in records)/n,\n        "mean_5plus_favourite_win_mass":sum(r["p_5plus_favourite_win"] for r in records)/n,\n        "mean_5plus_underdog_win_mass":sum(r["p_5plus_underdog_win"] for r in records)/n,\n        "mean_5plus_draw_mass":sum(r["p_5plus_draw"] for r in records)/n,
         "home_favourite_matches":sum(r["home_is_favourite"] for r in records),
         "home_favourite_mean_underdog_2plus":(
             sum(r["p_underdog_goals_2plus"] for r in records if r["home_is_favourite"]) /
