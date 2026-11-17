@@ -1,0 +1,138 @@
+{
+  "schema_version": "prediction-patch-v1",
+  "captured_at_beijing": "2026-11-17T16:04:09+08:00",
+  "supersedes": "2026-11-17_1500_shadow.json (append-only correction; original retained unchanged)",
+  "correction_reason": "二次交叉核验后，替换首版中6场19:00/20:00 UTC AFCON比赛未充分核实的1X2报价；仅修正市场字段与相应概率，不改动赛前比分/策略版本。",
+  "patches": [
+    {
+      "prediction_id": "pred-20261117-caf-bot-uga",
+      "market_one_x_two": "2.26 / 2.96 / 3.28",
+      "market_source": "SupaPicks",
+      "capture_time": "页面构建时间未披露；页面列示opening→current",
+      "opening_partial": {
+        "home": 2.61,
+        "away": 2.77,
+        "draw": null
+      },
+      "movement": "博茨瓦纳主胜2.61→2.26；乌干达客胜2.77→3.28；平赔初值缺失",
+      "probabilities_90m_pct": {
+        "home": 36,
+        "draw": 33,
+        "away": 31
+      },
+      "scores": [
+        "1-1",
+        "1-0"
+      ],
+      "sources": [
+        "https://www.supapicks.com/match/1545886-botswana-vs-uganda",
+        "https://www.tiporacle.com/match/1545886-botswana-vs-uganda"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-caf-con-com",
+      "market_one_x_two": "2.12 / 3.20 / 4.10",
+      "market_source": "OddSeek",
+      "capture_time": "页面未披露精确时间",
+      "opening_partial": null,
+      "movement": "未取得可靠初盘序列",
+      "probabilities_90m_pct": {
+        "home": 39,
+        "draw": 35,
+        "away": 26
+      },
+      "scores": [
+        "0-0",
+        "1-1"
+      ],
+      "sources": [
+        "https://oddseek.com/football/congo-vs-comoros-13669960",
+        "https://eightodds.com/tips/2026-11-17/"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-caf-lbr-cpv",
+      "market_one_x_two": "3.75 / 3.00 / 1.96",
+      "market_source": "Betmaster",
+      "capture_time": "页面未披露精确时间",
+      "opening_partial": null,
+      "movement": "未取得可靠初盘序列",
+      "probabilities_90m_pct": {
+        "home": 23,
+        "draw": 30,
+        "away": 47
+      },
+      "scores": [
+        "1-2",
+        "1-1"
+      ],
+      "sources": [
+        "https://betmaster.eu/en/sportsbook/sports/soccer/match/4609589",
+        "https://oddseek.com/football/liberia-vs-cape-verde-13674201"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-caf-mtn-bfa",
+      "market_one_x_two": "3.05 / 2.70 / 2.39",
+      "market_source": "Betmaster",
+      "capture_time": "页面未披露精确时间",
+      "opening_partial": null,
+      "movement": "未取得可靠初盘序列",
+      "probabilities_90m_pct": {
+        "home": 29,
+        "draw": 33,
+        "away": 38
+      },
+      "scores": [
+        "0-1",
+        "1-1"
+      ],
+      "sources": [
+        "https://betmaster.dk/da/sportsbook/sports/soccer/match/4607041",
+        "https://tipsterarea.com/match/mauritania-burkina-faso-africa-cup-of-nations-qualification-955490"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-caf-rwa-mli",
+      "market_one_x_two": "4.81 / 3.22 / 1.74",
+      "market_source": "FootballNation平均赔率",
+      "capture_time": "页面未披露精确时间",
+      "opening_partial": null,
+      "movement": "未取得可靠初盘序列",
+      "probabilities_90m_pct": {
+        "home": 19,
+        "draw": 29,
+        "away": 52
+      },
+      "scores": [
+        "1-1",
+        "0-1"
+      ],
+      "sources": [
+        "https://footballnation.eu/match/africa-cup-of-nations-qualifiers/2027/785458/",
+        "https://oddseek.com/id/football/rwanda-vs-mali-13674200"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-caf-nig-mar",
+      "market_one_x_two": "25.95 / 9.20 / 1.07",
+      "market_source": "OddsFilter平均赔率",
+      "capture_time": "页面未披露精确时间",
+      "opening_partial": null,
+      "movement": "未取得可靠初盘序列",
+      "probabilities_90m_pct": {
+        "home": 4,
+        "draw": 9,
+        "away": 87
+      },
+      "scores": [
+        "0-3",
+        "0-2"
+      ],
+      "sources": [
+        "https://oddsfilter.com/event/1001545901-niger-morocco",
+        "https://www.winningarena.com/match/1545901-niger-vs-morocco"
+      ]
+    }
+  ]
+}
