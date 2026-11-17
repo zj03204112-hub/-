@@ -1,0 +1,258 @@
+{
+  "schema_version": "daily-shadow-predictions-v1",
+  "captured_at_beijing": "2026-11-17T16:04:09+08:00",
+  "target_kickoff_window_beijing": [
+    "2026-11-17T22:04:09+08:00",
+    "2026-11-18T04:04:09+08:00"
+  ],
+  "category": "国家队/其他赛事/国际友谊赛",
+  "title": "国际友谊赛赛前影子预测",
+  "scope_note": "只纳入当前采集时点距开赛6至12小时的比赛；未达到6小时的赛事只登记早期预测，不生成正式预测。",
+  "model_integrity": {
+    "V5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "model_code_executed": false,
+    "database_connected": false,
+    "formal_v5_1_prediction": false
+  },
+  "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+  "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+  "probability_method": "以可见1X2市场去水概率为基准，结合已检索的近况、赛制动机和可核实伤停作小幅人工校正；不是V5.1模型计算结果。",
+  "matches": [
+    {
+      "prediction_id": "pred-20261117-friendly-sau-uzb",
+      "competition": "International Friendly",
+      "category": "国家队/其他赛事",
+      "home": "沙特阿拉伯",
+      "away": "乌兹别克斯坦",
+      "kickoff_utc": "2026-11-17T15:30:00Z",
+      "kickoff_beijing": "2026-11-17T23:30:00+08:00",
+      "venue": "Jassim Bin Hamad Stadium, Doha, Qatar",
+      "market": {
+        "one_x_two": "2.35 / 3.15 / 3.05",
+        "source": "Scorewave当前1X2；另有BettingView 01:45 UTC快照",
+        "capture_time": "Scorewave页面现值；BettingView 2026-11-17 01:45 UTC对比91家书商",
+        "opening_one_x_two": null,
+        "opening_to_current": null,
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": null,
+        "candidate_handicap_from_third_party": null,
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "1-1",
+        "second_score": "2-1",
+        "result_90m": "主胜",
+        "probabilities_90m_pct": {
+          "home": 40,
+          "draw": 29,
+          "away": 31
+        },
+        "half_time_full_time": "平/胜",
+        "confidence_score": 55,
+        "risk": "高：双方实力接近，沙特近期连胜但乌兹别克具备反击质量；不同机构对主客优势判断分歧明显。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "沙特近5场WWDWW，上一场3-2韩国；乌兹别克近5场LLWWL，上一场2-3负俄罗斯。",
+        "team_news": "未取得官方伤停名单；不将媒体预测首发当作确认。",
+        "tactical_context": "友谊赛，主要考察阵容与备战；胜负动机低于正式赛事。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": {
+          "provider": "Betarazi",
+          "home": 1.74,
+          "away": 1.4,
+          "type": "supplier_model_estimate",
+          "pre_match_input_eligible": false
+        },
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "沙特11月13日刚与韩国比赛，约4天间隔。",
+        "next_opponent_importance": "友谊赛备战；下一场正式比赛优先级未核。"
+      },
+      "data_completeness_pct": 57,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://scorewave.live/en/soccer/m-17-11-2026-saudi-arabia-uzbekistan",
+        "https://bettingview.com/en/lu/odds/soccer/international/int-friendly-games-851/saudi-arabia-vs-uzbekistan/1000085176169220/full-time-result",
+        "https://www.tiporacle.com/match/1647370-saudi-arabia-vs-uzbekistan"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-friendly-jor-aus",
+      "competition": "International Friendly",
+      "category": "国家队/其他赛事",
+      "home": "约旦",
+      "away": "澳大利亚",
+      "kickoff_utc": "2026-11-17T16:00:00Z",
+      "kickoff_beijing": "2026-11-18T00:00:00+08:00",
+      "venue": "Doha, Qatar（Reuters确认比赛从安曼迁出；具体场地待足协最终确认）",
+      "market": {
+        "one_x_two": "4.33 / 3.78 / 1.94",
+        "source": "KickoffScore 03:32 UTC赔率快照；Sports Pundit平均赔率",
+        "capture_time": "KickoffScore 2026-11-17 03:32 UTC",
+        "opening_one_x_two": null,
+        "opening_to_current": null,
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": null,
+        "candidate_handicap_from_third_party": null,
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "0-1",
+        "second_score": "0-2",
+        "result_90m": "客胜",
+        "probabilities_90m_pct": {
+          "home": 18,
+          "draw": 26,
+          "away": 56
+        },
+        "half_time_full_time": "平/负",
+        "confidence_score": 58,
+        "risk": "中高：澳大利亚整体实力占优但有多名伤缺；比赛已从安曼迁至多哈，中立场削弱约旦主场优势。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "约旦近5场0胜2平3负；澳大利亚近5场1胜3平1负，上一场3-0胜卡塔尔。双方近6次交锋澳大利亚4胜。",
+        "team_news": "媒体列出澳大利亚Bos、Burgess、Trewin、Devlin等伤缺；约旦无明确伤缺报告，均待官方名单。",
+        "tactical_context": "友谊赛备战，双方阵容试验可能较大。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "澳大利亚11月13日有比赛，约4天间隔。",
+        "next_opponent_importance": "友谊赛备战；不属于正式积分赛。"
+      },
+      "data_completeness_pct": 58,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/australias-friendly-against-jordan-moved-qatar-over-security-concerns-2026-11-13/",
+        "https://kickoffscore.com/match/jordan-vs-australia/1640089",
+        "https://www.khelnow.com/football/jordan-vs-australia-preview-international-friendly-202611"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-friendly-rus-ven",
+      "competition": "International Friendly",
+      "category": "国家队/其他赛事",
+      "home": "俄罗斯",
+      "away": "委内瑞拉",
+      "kickoff_utc": "2026-11-17T16:00:00Z",
+      "kickoff_beijing": "2026-11-18T00:00:00+08:00",
+      "venue": "Ozon Arena, Krasnodar, Russia",
+      "market": {
+        "one_x_two": "1.63 / 4.19 / 5.90",
+        "source": "xG.Football 16 Nov 12:02 UTC赔率快照；Sports Pundit平均赔率",
+        "capture_time": "xG.Football 2026-11-16 12:02 UTC；Oddschecker页面当日现值",
+        "opening_one_x_two": null,
+        "opening_to_current": null,
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": null,
+        "candidate_handicap_from_third_party": null,
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "2-0",
+        "second_score": "2-1",
+        "result_90m": "主胜",
+        "probabilities_90m_pct": {
+          "home": 61,
+          "draw": 23,
+          "away": 16
+        },
+        "half_time_full_time": "胜/胜",
+        "confidence_score": 68,
+        "risk": "中：俄罗斯近5场4胜1平，主场进攻产出高；委内瑞拉近5场1胜2平2负且进球偏少，需防友谊赛轮换。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "俄罗斯近5场4胜1平，最近3-2胜乌兹别克；委内瑞拉近5场1胜2平2负，近几场进攻乏力。",
+        "team_news": "委内瑞拉Quintero有伤情报道；双方正式首发未发布。",
+        "tactical_context": "友谊赛，俄罗斯主场；比赛重要性以阵容试验为主。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "俄罗斯11月12日刚与乌兹别克比赛，约5天间隔。",
+        "next_opponent_importance": "友谊赛；未发现明确积分目标。"
+      },
+      "data_completeness_pct": 62,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://xg.football/matches/russia-venezuela-2026-11-17",
+        "https://www.sportpundit.com/soccer/matches/russia-vs-venezuela/",
+        "https://www.footballpredictions.com/footballpredictions/internationalfriendliespredictions/russia-vs-venezuela-prediction-17-11-2026/"
+      ]
+    }
+  ],
+  "shared_missing_fields": [
+    "官方竞彩让球线未核实，所有竞彩让球胜平负均留空",
+    "官方首发未发布/未核实",
+    "裁判与天气未取得",
+    "赛前xG/xGA无可追溯来源的场次留空",
+    "市场初盘/即时盘时间序列仅部分场次可用"
+  ]
+}
