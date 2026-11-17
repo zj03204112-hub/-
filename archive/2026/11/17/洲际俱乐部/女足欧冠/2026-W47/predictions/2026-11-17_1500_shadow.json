@@ -1,0 +1,323 @@
+{
+  "schema_version": "daily-shadow-predictions-v1",
+  "captured_at_beijing": "2026-11-17T16:04:09+08:00",
+  "target_kickoff_window_beijing": [
+    "2026-11-17T22:04:09+08:00",
+    "2026-11-18T04:04:09+08:00"
+  ],
+  "category": "洲际俱乐部/女足欧冠",
+  "title": "女足欧冠第5轮赛前影子预测",
+  "scope_note": "只纳入当前采集时点距开赛6至12小时的比赛；未达到6小时的赛事只登记早期预测，不生成正式预测。",
+  "model_integrity": {
+    "V5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "model_code_executed": false,
+    "database_connected": false,
+    "formal_v5_1_prediction": false
+  },
+  "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+  "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+  "probability_method": "以可见1X2市场去水概率为基准，结合已检索的近况、赛制动机和可核实伤停作小幅人工校正；不是V5.1模型计算结果。",
+  "matches": [
+    {
+      "prediction_id": "pred-20261117-uwcl-hac-mci",
+      "competition": "UEFA Women's Champions League",
+      "category": "洲际俱乐部/女足欧冠",
+      "home": "赫肯女足",
+      "away": "曼城女足",
+      "kickoff_utc": "2026-11-18T17:45:00Z",
+      "kickoff_beijing": "2026-11-19T01:45:00+08:00",
+      "venue": "Gamla Ullevi, Gothenburg（待赛事官方确认）",
+      "market": {
+        "one_x_two": "8.00 / 5.40 / 1.27",
+        "source": "Stake页面1X2；抓取时间未披露",
+        "capture_time": "网页当前值；来源未披露精确抓取时间",
+        "opening_one_x_two": null,
+        "opening_to_current": null,
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": null,
+        "candidate_handicap_from_third_party": null,
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "0-2",
+        "second_score": "1-3",
+        "result_90m": "客胜",
+        "probabilities_90m_pct": {
+          "home": 10,
+          "draw": 17,
+          "away": 73
+        },
+        "half_time_full_time": "负/负",
+        "confidence_score": 56,
+        "risk": "中：曼城上轮4-1胜国际米兰，但本赛季欧冠开局曾连续平局；赫肯主场防守韧性较好。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "上轮赫肯0-0切尔西；曼城4-1国际米兰；曼城此前有对皇马、巴黎的平局。",
+        "team_news": "未找到可交叉核验的可靠伤停信息；不推测",
+        "tactical_context": "联赛阶段第5轮，争取前列与淘汰赛资格。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "国际比赛窗口/杯赛；逐队休整天数未完整核实",
+        "next_opponent_importance": "未取得足够可靠的下一场对手与赛程优先级资料"
+      },
+      "data_completeness_pct": 48,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fixtu/",
+        "https://stake.bet/sports/soccer/international-clubs/uefa-champions-league-women",
+        "https://www.theguardian.com/football/2026/nov/10/inter-manchester-city-womens-champions-league-match-report"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uwcl-rma-int",
+      "competition": "UEFA Women's Champions League",
+      "category": "洲际俱乐部/女足欧冠",
+      "home": "皇家马德里女足",
+      "away": "国际米兰女足",
+      "kickoff_utc": "2026-11-18T17:45:00Z",
+      "kickoff_beijing": "2026-11-19T01:45:00+08:00",
+      "venue": null,
+      "market": {
+        "one_x_two": "1.22 / 6.00 / 8.80",
+        "source": "Stake页面1X2；抓取时间未披露",
+        "capture_time": "网页当前值；来源未披露精确抓取时间",
+        "opening_one_x_two": null,
+        "opening_to_current": null,
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": null,
+        "candidate_handicap_from_third_party": null,
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "2-0",
+        "second_score": "3-0",
+        "result_90m": "主胜",
+        "probabilities_90m_pct": {
+          "home": 75,
+          "draw": 16,
+          "away": 9
+        },
+        "half_time_full_time": "胜/胜",
+        "confidence_score": 68,
+        "risk": "中：皇马上一轮3-0胜巴黎FC，国际米兰上一轮1-4负曼城；但女足赛事阵容轮换信息不足。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "皇马3-0巴黎FC；国际米兰1-4曼城；国际米兰此前也有1-4 OL Lyonnes。",
+        "team_news": "未找到可交叉核验的可靠伤停信息；不推测",
+        "tactical_context": "皇马争取联赛阶段积分；国米需要止住连败。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "国际比赛窗口/杯赛；逐队休整天数未完整核实",
+        "next_opponent_importance": "未取得足够可靠的下一场对手与赛程优先级资料"
+      },
+      "data_completeness_pct": 52,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fixtu/",
+        "https://stake.bet/sports/soccer/international-clubs/uefa-champions-league-women"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uwcl-che-psg",
+      "competition": "UEFA Women's Champions League",
+      "category": "洲际俱乐部/女足欧冠",
+      "home": "切尔西女足",
+      "away": "巴黎圣日耳曼女足",
+      "kickoff_utc": "2026-11-18T20:00:00Z",
+      "kickoff_beijing": "2026-11-19T04:00:00+08:00",
+      "venue": null,
+      "market": {
+        "one_x_two": "1.29 / 5.60 / 8.60",
+        "source": "Stake页面1X2；抓取时间未披露",
+        "capture_time": "网页当前值；来源未披露精确抓取时间",
+        "opening_one_x_two": null,
+        "opening_to_current": null,
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": null,
+        "candidate_handicap_from_third_party": null,
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "2-0",
+        "second_score": "1-0",
+        "result_90m": "主胜",
+        "probabilities_90m_pct": {
+          "home": 69,
+          "draw": 19,
+          "away": 12
+        },
+        "half_time_full_time": "胜/胜",
+        "confidence_score": 66,
+        "risk": "中：切尔西近轮防守稳但进攻效率有波动；巴黎近轮输给拜仁，仍有反击质量。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "切尔西上轮0-0赫肯，此前2-0罗马；巴黎上轮1-2拜仁。",
+        "team_news": "未找到可交叉核验的可靠伤停信息；不推测",
+        "tactical_context": "联赛阶段第5轮，切尔西主场争取锁定更好排名。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "国际比赛窗口/杯赛；逐队休整天数未完整核实",
+        "next_opponent_importance": "未取得足够可靠的下一场对手与赛程优先级资料"
+      },
+      "data_completeness_pct": 50,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fixtu/",
+        "https://stake.bet/sports/soccer/international-clubs/uefa-champions-league-women"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uwcl-juv-leu",
+      "competition": "UEFA Women's Champions League",
+      "category": "洲际俱乐部/女足欧冠",
+      "home": "尤文图斯女足",
+      "away": "OH鲁汶女足",
+      "kickoff_utc": "2026-11-18T20:00:00Z",
+      "kickoff_beijing": "2026-11-19T04:00:00+08:00",
+      "venue": null,
+      "market": {
+        "one_x_two": "1.22 / 5.80 / 9.60",
+        "source": "Stake页面1X2；抓取时间未披露",
+        "capture_time": "网页当前值；来源未披露精确抓取时间",
+        "opening_one_x_two": null,
+        "opening_to_current": null,
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": null,
+        "candidate_handicap_from_third_party": null,
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "2-0",
+        "second_score": "3-1",
+        "result_90m": "主胜",
+        "probabilities_90m_pct": {
+          "home": 70,
+          "draw": 19,
+          "away": 11
+        },
+        "half_time_full_time": "胜/胜",
+        "confidence_score": 62,
+        "risk": "中高：尤文上轮0-6负OL Lyonnes，防线存在大比分风险；但对手整体实力和市场差距明显。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "尤文上轮0-6负OL Lyonnes，此前1-4胜奥地利维也纳；鲁汶上轮1-1HB Køge，另有5-1胜Servette。",
+        "team_news": "未找到可交叉核验的可靠伤停信息；不推测",
+        "tactical_context": "尤文需从惨败中反弹，鲁汶争取积分。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "国际比赛窗口/杯赛；逐队休整天数未完整核实",
+        "next_opponent_importance": "未取得足够可靠的下一场对手与赛程优先级资料"
+      },
+      "data_completeness_pct": 49,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fixtu/",
+        "https://stake.bet/sports/soccer/international-clubs/uefa-champions-league-women"
+      ]
+    }
+  ],
+  "shared_missing_fields": [
+    "官方竞彩让球线未核实，所有竞彩让球胜平负均留空",
+    "官方首发未发布/未核实",
+    "裁判与天气未取得",
+    "赛前xG/xGA无可追溯来源的场次留空",
+    "市场初盘/即时盘时间序列仅部分场次可用"
+  ]
+}
