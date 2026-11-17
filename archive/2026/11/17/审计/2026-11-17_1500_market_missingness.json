@@ -1,0 +1,53 @@
+{
+  "schema_version": "daily-1500-audit-v1",
+  "captured_at_beijing": "2026-11-17T16:04:09+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-17-1500-run11",
+  "run_type": "15:00 refresh and 6-12h shadow predictions",
+  "verified_prediction_records": 28,
+  "prediction_split": {
+    "uefa_nations_league": 8,
+    "afcon_qualifiers": 12,
+    "uwcl": 4,
+    "efl_trophy": 1,
+    "international_friendlies": 3
+  },
+  "market_status": {
+    "jczq_match_list": "ZGZCW third-party pages display candidate match numbers and handicap values for six UEFA fixtures, but the match page labels the matches '未开售'; official Sporttery source was not independently accessible.",
+    "official_handicap_verified": false,
+    "handicap_mapping_performed": false,
+    "candidate_lines_not_used": true,
+    "missing": "official Sporttery handicap line, official odds feed capture and verified match IDs"
+  },
+  "odds_movement": {
+    "available_for_six_uefa_matches": true,
+    "source": "ZGZCW average odds initial vs latest",
+    "capture_time": "page system time 2026-11-17 14:55:43+08:00",
+    "other_matches": "only current 1X2 or bookmaker snapshots; no reliable initial-to-current series"
+  },
+  "data_quality": {
+    "official_lineups": "not published or not independently verified",
+    "injuries": "partial media reports; not all official federation sources",
+    "recent_form": "partial; some teams only last 3 or 5 results, not full match-level rows",
+    "tactics": "qualitative competition-context notes, not confirmed coach tactical plans",
+    "weather": "not retrieved",
+    "referees": "not retrieved",
+    "pre_match_xg": "missing for 27 of 28; Luton-Peterborough has TipOracle provider estimate 2.47-1.06, not own model and not eligible as same-match model input",
+    "team_week_xg": "not refreshed; database/team IDs unavailable",
+    "player_status": "partial; no official XI or complete availability list",
+    "next_opponent_importance": "group-stage context available for UEFA/AFCON; incomplete for friendlies and clubs"
+  },
+  "model_safety": {
+    "V5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "model_version_changed": false,
+    "model_code_executed": false,
+    "formal_model_prediction_count": 0,
+    "manual_shadow_prediction_count": 28
+  },
+  "database": {
+    "status": "NOT_CONNECTED",
+    "evidence": "10:00 branch audit reports empty/unreadable SQLite blob; no DB writes attempted"
+  },
+  "archive_policy": "append-only new 15:00 files; no 10:00 review or historical snapshot overwritten"
+}
