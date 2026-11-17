@@ -1,0 +1,48 @@
+{
+  "schema_version": "daily-audit-v1",
+  "captured_at_beijing": "2026-11-17T09:56:50+08:00",
+  "target_review_date_beijing": "2026-11-16",
+  "iso_week": "2026-W47",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-17-1000-run11",
+  "database_status": {
+    "path": "football_model_database.sqlite",
+    "status": "EMPTY_GIT_BLOB_OR_NOT_CONNECTED",
+    "evidence": "GitHub fetch_file returned base64 content length 0; no readable SQLite database was available",
+    "action": "no database writes attempted"
+  },
+  "immutable_prediction_snapshot_status": {
+    "status": "NOT_FOUND_IN_AVAILABLE_REPOSITORY_SEARCH",
+    "checked": "README/data_pipeline contracts and common daily prediction/archive paths; no match-level prediction_id snapshot located",
+    "consequence": "all 13 previous-day match reviews are unverifiable; no hit rates calculated"
+  },
+  "sporttery_handicap_status": {
+    "status": "MISSING",
+    "reason": "no verified official Sporttery match IDs/handicap lines returned for these 13 matches",
+    "rule": "do not substitute Asian handicap; do not reverse infer; handicap review left null"
+  },
+  "xg_status": {
+    "iso_week": "2026-W47",
+    "provider_match_observations": 23,
+    "team_week_rows": 46,
+    "coverage": "PARTIAL",
+    "missing": {
+      "internal_team_ids": "all xG rows unresolved",
+      "internal_match_ids": "all xG rows unresolved",
+      "supplier_methodology": "most source pages do not disclose model/version",
+      "provider_capture_timestamp": "not published by pages",
+      "previous_week_matches_2026_11_12_to_2026_11_15": "not collected in this run",
+      "all_other_tracked_matches_without_public_xg": "not collected",
+      "own_model_xg": "not generated; no model/database execution"
+    },
+    "leakage_control": "all retrieved xG are post-match provider estimates; pre_match_input_eligible=false; not allowed as same-match pre-match input",
+    "aggregation_rule": "supplier-specific rows only; never merge providers; team-week rows provisional by team name until internal IDs are mapped"
+  },
+  "model_safety": {
+    "V5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "model_version_changed": false,
+    "prediction_generation_performed": false
+  },
+  "archive_scope": "publicly verified/partially verified result, fixture and provider-xG snapshots only; not a full database reconciliation"
+}
