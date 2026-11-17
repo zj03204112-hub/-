@@ -1,0 +1,37 @@
+{
+  "schema_version": "prediction-patch-v1",
+  "captured_at_beijing": "2026-11-17T16:04:09+08:00",
+  "supersedes": "2026-11-17_1500_shadow.json (append-only correction; original retained unchanged)",
+  "patches": [
+    {
+      "prediction_id": "pred-20261117-efl-lut-pet",
+      "market_one_x_two": "1.55 / 4.80 / 5.20",
+      "market_source": "Bookmakers.market价格比较",
+      "capture_time": "页面未披露精确采集时间",
+      "opening_one_x_two_partial": "1.77 / 4.45 / 4.98",
+      "movement": "主胜1.77→1.55；平4.45→4.80；客胜4.98→5.20",
+      "probabilities_90m_pct": {
+        "home": 62,
+        "draw": 20,
+        "away": 18
+      },
+      "first_score": "2-1",
+      "second_score": "2-0",
+      "half_time_full_time": "胜/胜",
+      "confidence_score": 63,
+      "supplier_model_xg": {
+        "provider": "TipOracle",
+        "home": 2.47,
+        "away": 1.06,
+        "type": "supplier_model_estimate",
+        "captured_at": "2026-11-17 02:02 WAT",
+        "pre_match_input_eligible": false
+      },
+      "sources": [
+        "https://www.bookmakers.market/football/england/efl-trophy/luton-vs-peterborough-2026-11-17/",
+        "https://www.tiporacle.com/match/1588885-luton-vs-peterborough",
+        "https://www.sportsmole.co.uk/football/efl-trophy/luton-town-vs-peterborough-united_game_262950.html"
+      ]
+    }
+  ]
+}
