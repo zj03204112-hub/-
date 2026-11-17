@@ -1,0 +1,111 @@
+{
+  "schema_version": "fixture-refresh-v1",
+  "captured_at_beijing": "2026-11-17T16:04:09+08:00",
+  "timezone": "Asia/Shanghai",
+  "target_dates_beijing": [
+    "2026-11-17",
+    "2026-11-18"
+  ],
+  "prediction_window_beijing": [
+    "2026-11-17T22:04:09+08:00",
+    "2026-11-18T04:04:09+08:00"
+  ],
+  "scheduled_in_prediction_window": 28,
+  "breakdown": {
+    "uefa_nations_league": 8,
+    "afcon_qualifiers": 12,
+    "uwcl": 4,
+    "efl_trophy": 1,
+    "international_friendlies": 3
+  },
+  "early_or_waiting": [
+    {
+      "home": "新加坡",
+      "away": "巴西",
+      "kickoff_beijing": "2026-11-17T18:00:00+08:00",
+      "reason": "距开赛不足6小时"
+    },
+    {
+      "home": "中国U19",
+      "away": "韩国U19",
+      "kickoff_beijing": "2026-11-17T19:35:00+08:00",
+      "reason": "距开赛不足6小时"
+    },
+    {
+      "home": "中国",
+      "away": "巴林",
+      "kickoff_beijing": "2026-11-17T20:00:00+08:00",
+      "reason": "距开赛不足6小时"
+    },
+    {
+      "home": "日本",
+      "away": "巴拉圭",
+      "kickoff_beijing": "2026-11-17T21:10:00+08:00",
+      "reason": "距开赛不足6小时"
+    },
+    {
+      "home": "布隆迪",
+      "away": "赞比亚",
+      "kickoff_beijing": "2026-11-17T21:00:00+08:00",
+      "reason": "距开赛不足6小时"
+    },
+    {
+      "home": "埃塞俄比亚",
+      "away": "莫桑比克",
+      "kickoff_beijing": "2026-11-17T21:00:00+08:00",
+      "reason": "距开赛不足6小时"
+    },
+    {
+      "home": "莱索托",
+      "away": "加蓬",
+      "kickoff_beijing": "2026-11-17T21:00:00+08:00",
+      "reason": "距开赛不足6小时"
+    },
+    {
+      "home": "马拉维",
+      "away": "埃及",
+      "kickoff_beijing": "2026-11-17T21:00:00+08:00",
+      "reason": "距开赛不足6小时"
+    },
+    {
+      "home": "南苏丹",
+      "away": "安哥拉",
+      "kickoff_beijing": "2026-11-17T21:00:00+08:00",
+      "reason": "距开赛不足6小时"
+    },
+    {
+      "home": "坦桑尼亚",
+      "away": "尼日利亚",
+      "kickoff_beijing": "2026-11-17T21:00:00+08:00",
+      "reason": "距开赛不足6小时"
+    },
+    {
+      "home": "印度",
+      "away": "巴基斯坦",
+      "kickoff_beijing": "2026-11-17T22:00:00+08:00",
+      "reason": "距开赛约5小时56分，尚未进入6小时窗口"
+    },
+    {
+      "home": "卡塔尔",
+      "away": "韩国",
+      "kickoff_beijing": "2026-11-17T22:00:00+08:00",
+      "reason": "距开赛约5小时56分，尚未进入6小时窗口；年龄组仍需核实"
+    }
+  ],
+  "tracked_core_leagues": {
+    "premier_league": "未检出窗口内比赛",
+    "la_liga": "未检出窗口内比赛",
+    "bundesliga": "未检出窗口内比赛",
+    "serie_a": "未检出窗口内比赛",
+    "ligue_1": "未检出窗口内比赛",
+    "k_league_1": "未检出窗口内比赛",
+    "j1": "未检出窗口内比赛"
+  },
+  "schedule_sources": [
+    "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures-a/",
+    "https://sportnewsafrica.com/en/news/afcon-2027-qualifiers-fixtures-midweek-schedule-and-kick-off-times-17-november-2026/",
+    "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-womens-champions-league-all-the-league-phase-fixtu/",
+    "https://www.oddschecker.com/football/english/efl-trophy"
+  ],
+  "scope_limit": "数据库未连接，内部跟踪名单不可读取；当前为公开来源能核实的窗口清单，不声称全量穷尽。"
+}
