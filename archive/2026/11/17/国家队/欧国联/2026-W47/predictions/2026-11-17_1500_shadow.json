@@ -1,0 +1,630 @@
+{
+  "schema_version": "daily-shadow-predictions-v1",
+  "captured_at_beijing": "2026-11-17T16:04:09+08:00",
+  "target_kickoff_window_beijing": [
+    "2026-11-17T22:04:09+08:00",
+    "2026-11-18T04:04:09+08:00"
+  ],
+  "category": "国家队/欧国联",
+  "title": "欧国联末轮赛前影子预测",
+  "scope_note": "只纳入当前采集时点距开赛6至12小时的比赛；未达到6小时的赛事只登记早期预测，不生成正式预测。",
+  "model_integrity": {
+    "V5_1_modified": false,
+    "frozen_validation_samples_modified": false,
+    "model_code_executed": false,
+    "database_connected": false,
+    "formal_v5_1_prediction": false
+  },
+  "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+  "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+  "probability_method": "以可见1X2市场去水概率为基准，结合已检索的近况、赛制动机和可核实伤停作小幅人工校正；不是V5.1模型计算结果。",
+  "matches": [
+    {
+      "prediction_id": "pred-20261117-uefa-004-bih-rom",
+      "competition": "UEFA Nations League",
+      "category": "国家队/欧国联",
+      "home": "波黑",
+      "away": "罗马尼亚",
+      "kickoff_utc": "2026-11-17T19:45:00Z",
+      "kickoff_beijing": "2026-11-18T03:45:00+08:00",
+      "venue": null,
+      "market": {
+        "one_x_two": "2.01 / 3.57 / 3.46",
+        "source": "ZGZCW平均欧赔；14:55北京页面快照",
+        "capture_time": "2026-11-17 14:55:43+08:00（ZGZCW页面系统时间）",
+        "opening_one_x_two": "1.80 / 3.64 / 3.93",
+        "opening_to_current": "主胜+0.21；平-0.07；客胜-0.47（开盘至页面现值）",
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": "周二004",
+        "candidate_handicap_from_third_party": "-1（第三方页面候选，未开售/未核官方）",
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "1-0",
+        "second_score": "1-1",
+        "result_90m": "主胜",
+        "probabilities_90m_pct": {
+          "home": 49,
+          "draw": 28,
+          "away": 23
+        },
+        "half_time_full_time": "平/胜",
+        "confidence_score": 63,
+        "risk": "中高：波黑主场与罗马尼亚客场低迷相反；客队为保级附加赛资格必须争胜，比赛后段可能开放。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "波黑近6场2胜2平2负；罗马尼亚近6场1胜5负，但上一轮2-1胜波兰。",
+        "team_news": "媒体预览称波黑Hadžikadunić、Tabaković缺阵；罗马尼亚Munteanu伤缺、Băluță停赛，均非官方首发确认。",
+        "tactical_context": "波黑已锁定小组第二；罗马尼亚仍需胜并看波兰赛果。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "两队均在11月14日前后有欧国联比赛，约3天间隔；未取得训练负荷数据。",
+        "next_opponent_importance": "罗马尼亚需保级，波黑已锁定第二，动机差异明显。"
+      },
+      "data_completeness_pct": 66,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures-a/",
+        "https://scores24.live/en/articles/weekly-predictions/uefa-nations-league-17-11-2026",
+        "https://plzx.zgzcw.com/bjzs",
+        "https://www.forebet.com/en/football-match-previews/32390-bosnia-and-herzegovina-vs-romania-rematch-framed-by-form-swings-and-a-2-2-on-the-cards"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uefa-005-pol-swe",
+      "competition": "UEFA Nations League",
+      "category": "国家队/欧国联",
+      "home": "波兰",
+      "away": "瑞典",
+      "kickoff_utc": "2026-11-17T19:45:00Z",
+      "kickoff_beijing": "2026-11-18T03:45:00+08:00",
+      "venue": null,
+      "market": {
+        "one_x_two": "2.24 / 3.68 / 2.88",
+        "source": "ZGZCW平均欧赔；14:55北京页面快照",
+        "capture_time": "2026-11-17 14:55:43+08:00（ZGZCW页面系统时间）",
+        "opening_one_x_two": "2.28 / 3.74 / 2.59",
+        "opening_to_current": "主胜-0.04；平-0.06；客胜+0.29",
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": "周二005",
+        "candidate_handicap_from_third_party": "-1（第三方页面候选，未开售/未核官方）",
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "1-1",
+        "second_score": "2-1",
+        "result_90m": "主胜",
+        "probabilities_90m_pct": {
+          "home": 43,
+          "draw": 27,
+          "away": 30
+        },
+        "half_time_full_time": "平/胜",
+        "confidence_score": 60,
+        "risk": "高：瑞典已提前锁定小组头名，可能轮换；波兰必须争取积分，伤停集中在后防与边路。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "瑞典小组赛5场不败；波兰需要避免落入降级附加赛。瑞典Gyökeres连续进球，攻击威胁高。",
+        "team_news": "媒体报道Matty Cash、Kiwior、Frankowski缺席/存疑；Zieliński出战待定；瑞典Zeneli、Holm有伤情，Kulusevski回归。未获两队官方首发。",
+        "tactical_context": "波兰赢球可确保第三；瑞典已晋级，战意与轮换不确定。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "两队11月14日前后均有比赛，约3天间隔。",
+        "next_opponent_importance": "波兰仍有保级排名压力；瑞典已确保升级，轮换风险偏高。"
+      },
+      "data_completeness_pct": 64,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures-a/",
+        "https://scores24.live/en/articles/weekly-predictions/uefa-nations-league-17-11-2026",
+        "https://plzx.zgzcw.com/bjzs",
+        "https://www.sport.co.pl/polska-szwecja-analiza-typy-i-zapowiedz-meczu-17-11-2026-43871600.html"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uefa-006-den-nor",
+      "competition": "UEFA Nations League",
+      "category": "国家队/欧国联",
+      "home": "丹麦",
+      "away": "挪威",
+      "kickoff_utc": "2026-11-17T19:45:00Z",
+      "kickoff_beijing": "2026-11-18T03:45:00+08:00",
+      "venue": null,
+      "market": {
+        "one_x_two": "2.29 / 3.95 / 2.70",
+        "source": "ZGZCW平均欧赔；14:55北京页面快照",
+        "capture_time": "2026-11-17 14:55:43+08:00（ZGZCW页面系统时间）",
+        "opening_one_x_two": "2.39 / 3.92 / 2.39",
+        "opening_to_current": "主胜-0.10；平+0.03；客胜+0.31",
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": "周二006",
+        "candidate_handicap_from_third_party": "+1（第三方页面候选，未开售/未核官方）",
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "2-1",
+        "second_score": "1-1",
+        "result_90m": "主胜",
+        "probabilities_90m_pct": {
+          "home": 42,
+          "draw": 27,
+          "away": 31
+        },
+        "half_time_full_time": "平/胜",
+        "confidence_score": 62,
+        "risk": "高：北欧德比且挪威必须取胜；两队刚分别打出4-1、3-1，比赛可能比普通末轮更开放。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "丹麦上一轮4-1击败葡萄牙；挪威3-1击败威尔士；首回合挪威3-2丹麦。Højlund、Haaland均为主要得分点。",
+        "team_news": "媒体预览称Dorgu、Christensen、Strand Larsen、Aursnes有伤缺/退出；Ødegaard此前身体不适，赛前状态待确认。",
+        "tactical_context": "丹麦平局即可保住小组第二；挪威必须赢，末段攻守转换风险高。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "两队11月14日刚踢欧国联，约3天恢复。",
+        "next_opponent_importance": "直接争夺小组晋级席位，重要性极高。"
+      },
+      "data_completeness_pct": 68,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures-a/",
+        "https://scores24.live/en/articles/weekly-predictions/uefa-nations-league-17-11-2026",
+        "https://plzx.zgzcw.com/bjzs",
+        "https://www.victorypicks.com/en/previews/denmark-vs-norway-november-17-2026-3631/"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uefa-007-wal-por",
+      "competition": "UEFA Nations League",
+      "category": "国家队/欧国联",
+      "home": "威尔士",
+      "away": "葡萄牙",
+      "kickoff_utc": "2026-11-17T19:45:00Z",
+      "kickoff_beijing": "2026-11-18T03:45:00+08:00",
+      "venue": null,
+      "market": {
+        "one_x_two": "6.77 / 4.97 / 1.40",
+        "source": "ZGZCW平均欧赔；14:55北京页面快照",
+        "capture_time": "2026-11-17 14:55:43+08:00（ZGZCW页面系统时间）",
+        "opening_one_x_two": "8.15 / 5.59 / 1.28",
+        "opening_to_current": "主胜-1.38；平-0.62；客胜+0.12",
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": "周二007",
+        "candidate_handicap_from_third_party": "+1（第三方页面候选，未开售/未核官方）",
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "0-2",
+        "second_score": "1-2",
+        "result_90m": "客胜",
+        "probabilities_90m_pct": {
+          "home": 16,
+          "draw": 24,
+          "away": 60
+        },
+        "half_time_full_time": "负/负",
+        "confidence_score": 66,
+        "risk": "中高：葡萄牙仍需确保小组第一，但上轮1-4负丹麦；威尔士无晋级可能，战意与阵容调整存在不确定性。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "葡萄牙此前连胜被丹麦4-1终结；威尔士上一轮1-3负挪威，首回合葡萄牙1-0胜。",
+        "team_news": "未找到可交叉核验的完整官方伤停清单；Cristiano Ronaldo已宣布退出国家队，葡萄牙锋线配置需按现役名单判断。",
+        "tactical_context": "葡萄牙不败即可确保小组头名；威尔士已确定第四。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "两队11月14日有比赛，约3天间隔。",
+        "next_opponent_importance": "葡萄牙仍需确保小组第一，威尔士无晋级可能。"
+      },
+      "data_completeness_pct": 65,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures-a/",
+        "https://scores24.live/en/articles/weekly-predictions/uefa-nations-league-17-11-2026",
+        "https://plzx.zgzcw.com/bjzs",
+        "https://www.reuters.com/sports/soccer/denmark-thrash-portugal-4-1-night-ronaldo-tributes-2026-11-14/"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uefa-008-hun-nir",
+      "competition": "UEFA Nations League",
+      "category": "国家队/欧国联",
+      "home": "匈牙利",
+      "away": "北爱尔兰",
+      "kickoff_utc": "2026-11-17T19:45:00Z",
+      "kickoff_beijing": "2026-11-18T03:45:00+08:00",
+      "venue": null,
+      "market": {
+        "one_x_two": "1.93 / 3.21 / 4.18",
+        "source": "ZGZCW平均欧赔；14:55北京页面快照",
+        "capture_time": "2026-11-17 14:55:43+08:00（ZGZCW页面系统时间）",
+        "opening_one_x_two": "1.91 / 3.33 / 3.83",
+        "opening_to_current": "主胜+0.02；平-0.12；客胜+0.35",
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": "周二008",
+        "candidate_handicap_from_third_party": "-1（第三方页面候选，未开售/未核官方）",
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "1-0",
+        "second_score": "1-1",
+        "result_90m": "主胜",
+        "probabilities_90m_pct": {
+          "home": 42,
+          "draw": 34,
+          "away": 24
+        },
+        "half_time_full_time": "平/胜",
+        "confidence_score": 61,
+        "risk": "高：北爱尔兰5场零失球且平局即可升级；匈牙利必须赢，若上半场久攻不下，后段反击与定位球风险上升。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "匈牙利近3场连胜；北爱尔兰5场保持零失球，首回合0-0。Szoboszlai已在上一场出场。",
+        "team_news": "媒体预览称北爱尔兰Donley停赛、Ballard/Bradley等伤缺；Szoboszlai上轮已复出。具体名单仍待官方确认。",
+        "tactical_context": "匈牙利必须取胜；北爱尔兰不败即可自动升级。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "双方11月14日前后踢过比赛，约3天间隔。",
+        "next_opponent_importance": "升级名额直接对决，动机差异明显。"
+      },
+      "data_completeness_pct": 65,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures-a/",
+        "https://scores24.live/en/articles/weekly-predictions/uefa-nations-league-17-11-2026",
+        "https://plzx.zgzcw.com/bjzs",
+        "https://thefalse9.com/2026/11/hungary-vs-northern-ireland-predicted-lineup-team-news-17-november.html"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uefa-009-irl-kos",
+      "competition": "UEFA Nations League",
+      "category": "国家队/欧国联",
+      "home": "爱尔兰",
+      "away": "科索沃",
+      "kickoff_utc": "2026-11-17T19:45:00Z",
+      "kickoff_beijing": "2026-11-18T03:45:00+08:00",
+      "venue": null,
+      "market": {
+        "one_x_two": "2.08 / 3.12 / 3.76",
+        "source": "ZGZCW平均欧赔；14:55北京页面快照",
+        "capture_time": "2026-11-17 14:55:43+08:00（ZGZCW页面系统时间）",
+        "opening_one_x_two": "1.87 / 3.39 / 3.92",
+        "opening_to_current": "主胜+0.21；平-0.27；客胜-0.16",
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": "周二009",
+        "candidate_handicap_from_third_party": "-1（第三方页面候选，未开售/未核官方）",
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "1-1",
+        "second_score": "1-0",
+        "result_90m": "主胜",
+        "probabilities_90m_pct": {
+          "home": 39,
+          "draw": 34,
+          "away": 27
+        },
+        "half_time_full_time": "平/平",
+        "confidence_score": 58,
+        "risk": "高：爱尔兰必须赢、科索沃平局即可；主队中卫Collins伤缺，科索沃亦有停赛与伤员，平局概率不可压低。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "爱尔兰近5场1胜2平2负；科索沃近5场1胜3平1负。科索沃首回合1-0胜爱尔兰。",
+        "team_news": "爱尔兰官方确认Nathan Collins因膝伤退出；媒体报道Kosovo的Hodža停赛、Zhegrova等伤缺。",
+        "tactical_context": "爱尔兰需胜才有机会争取附加赛；科索沃一分即可。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "两队11月14日前后有比赛，约3天间隔。",
+        "next_opponent_importance": "直接决定第二名与升级附加赛资格。"
+      },
+      "data_completeness_pct": 61,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures-a/",
+        "https://scores24.live/en/articles/weekly-predictions/uefa-nations-league-17-11-2026",
+        "https://plzx.zgzcw.com/bjzs",
+        "https://www.irishtimes.com/sport/soccer/2026/11/16/ireland-captain-nathan-collins-ruled-out-for-kosovo-game/",
+        "https://www.forebet.com/en/football-match-previews/32391-stalemate-on-the-cards-ireland-and-kosovo-meet-with-defenses-in-control"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uefa-isr-aut",
+      "competition": "UEFA Nations League",
+      "category": "国家队/欧国联",
+      "home": "以色列",
+      "away": "奥地利",
+      "kickoff_utc": "2026-11-17T19:45:00Z",
+      "kickoff_beijing": "2026-11-18T03:45:00+08:00",
+      "venue": null,
+      "market": {
+        "one_x_two": "3.85 / 3.60 / 1.80",
+        "source": "Stake页面1X2；抓取时间未披露",
+        "capture_time": "网页当前值；来源未披露精确抓取时间",
+        "opening_one_x_two": null,
+        "opening_to_current": null,
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": null,
+        "candidate_handicap_from_third_party": null,
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "1-2",
+        "second_score": "1-1",
+        "result_90m": "客胜",
+        "probabilities_90m_pct": {
+          "home": 22,
+          "draw": 28,
+          "away": 50
+        },
+        "half_time_full_time": "平/负",
+        "confidence_score": 55,
+        "risk": "高：奥地利已提前升级，可能轮换；以色列必须争胜但前5轮未胜，比赛地点与主场优势需按中立场处理。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "奥地利前5轮不败并已升级；以色列前5轮无胜，仅3分；首回合奥地利3-1胜。",
+        "team_news": "未找到双方可靠的完整伤停和首发信息；按奥地利可能轮换处理风险。",
+        "tactical_context": "奥地利无升级压力；以色列仍需争取避免降级附加赛。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "国际比赛窗口，前一轮为11月14日前后。",
+        "next_opponent_importance": "奥地利已确保升级；以色列仍有保级压力。"
+      },
+      "data_completeness_pct": 54,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures-a/",
+        "https://scores24.live/en/articles/weekly-predictions/uefa-nations-league-17-11-2026",
+        "https://stake1061.com/sports/soccer/international/uefa-nations-league"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uefa-ukr-geo",
+      "competition": "UEFA Nations League",
+      "category": "国家队/欧国联",
+      "home": "乌克兰",
+      "away": "格鲁吉亚",
+      "kickoff_utc": "2026-11-17T19:45:00Z",
+      "kickoff_beijing": "2026-11-18T03:45:00+08:00",
+      "venue": null,
+      "market": {
+        "one_x_two": "2.06 / 3.15 / 3.45",
+        "source": "Stake页面1X2；抓取时间未披露",
+        "capture_time": "网页当前值；来源未披露精确抓取时间",
+        "opening_one_x_two": null,
+        "opening_to_current": null,
+        "over_under": null,
+        "note": "仅作市场参考；未据赔率单独决定方向"
+      },
+      "sporttery": {
+        "match_number_candidate": null,
+        "candidate_handicap_from_third_party": null,
+        "official_match_number_verified": false,
+        "official_handicap_line": null,
+        "predicted_handicap_result": "无法核验",
+        "mapping_status": "NOT_RUN_NO_VERIFIED_OFFICIAL_SPORTTERY_LINE",
+        "note": "未用第三方亚洲盘或第三方页面候选让球线替代官方竞彩盘口；不作机械映射"
+      },
+      "prediction": {
+        "first_score": "1-0",
+        "second_score": "1-1",
+        "result_90m": "主胜",
+        "probabilities_90m_pct": {
+          "home": 43,
+          "draw": 31,
+          "away": 26
+        },
+        "half_time_full_time": "平/胜",
+        "confidence_score": 58,
+        "risk": "高：乌克兰4轮不胜，格鲁吉亚5场仅进1球；双方均有保级压力，低比分与平局风险较高。"
+      },
+      "pre_match_inputs": {
+        "recent_form": "乌克兰近5场1胜1平3负、仅进2球；格鲁吉亚近5场0胜2平3负，5场仅进1球。首回合0-0。",
+        "team_news": "媒体预览称格鲁吉亚Tsitaishvili停赛；其余伤停与首发未获官方核验。",
+        "tactical_context": "乌克兰不败即可留在B级；格鲁吉亚必须赢。",
+        "player_state": "官方首发尚未发布；球员临场状态待核验",
+        "lineup_status": "OFFICIAL_LINEUPS_NOT_PUBLISHED_AT_CAPTURE",
+        "pre_match_xg": null,
+        "supplier_model_xg": null,
+        "own_model_xg": null,
+        "weather": null,
+        "referee": null,
+        "schedule_density": "双方处于国家队窗口，上一场为11月14日前后。",
+        "next_opponent_importance": "保级/附加赛位置直接相关。"
+      },
+      "data_completeness_pct": 59,
+      "missing_fields": [
+        "官方竞彩让球盘口",
+        "官方首发/替补名单",
+        "逐队完整近3场原始明细",
+        "裁判指派",
+        "比赛地天气",
+        "可追溯赛前xG/xGA",
+        "部分球员状态/伤停"
+      ],
+      "strategy_id": "S15-MKT-FORM-SHADOW-20261117-01",
+      "model_version": "V5.1冻结规则参考；本批未执行数据库/模型代码，属于人工影子预测，不计入V5.1正式样本",
+      "prediction_mode": "MANUAL_SHADOW_NOT_PRODUCTION_MODEL_OUTPUT",
+      "snapshot_immutable": true,
+      "source_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-uefa-nations-league-all-the-league-phase-fixtures-a/",
+        "https://scores24.live/en/articles/weekly-predictions/uefa-nations-league-17-11-2026",
+        "https://matchtips.net/ukraine-vs-georgia-prediction-november-17-2026/",
+        "https://stake1061.com/sports/soccer/international/uefa-nations-league"
+      ]
+    }
+  ],
+  "shared_missing_fields": [
+    "官方竞彩让球线未核实，所有竞彩让球胜平负均留空",
+    "官方首发未发布/未核实",
+    "裁判与天气未取得",
+    "赛前xG/xGA无可追溯来源的场次留空",
+    "市场初盘/即时盘时间序列仅部分场次可用"
+  ]
+}
