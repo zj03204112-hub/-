@@ -1,0 +1,1379 @@
+{
+  "run_id": "SHADOW-V53-DMR-20261117-1531",
+  "captured_at": "2026-11-17T15:31:30+08:00",
+  "window_beijing": {
+    "from": "2026-11-17T21:31:30+08:00",
+    "to": "2026-11-18T03:31:30+08:00",
+    "rule": "kickoff 6-12 hours after capture"
+  },
+  "status": "shadow_only_not_production_snapshot",
+  "model_version": "V5.3-direct-matrix-repair-v1",
+  "model_reference": {
+    "branch": "experiment/v5.3-direct-matrix-repair-2026-11-16",
+    "commit": "1aa1003816fc8c9c9fadeccc3ff74301ed10069c",
+    "note": "offline reproduction of the repository market-lambda + direct-matrix-repair core; production prediction API and SQLite writer were not executed"
+  },
+  "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+  "methodology": {
+    "inputs": "de-vigged 1X2 plus O/U 2.5 bookmaker prices",
+    "score_model": "market-implied total lambda, home/away lambda allocation, Poisson score grid, direct matrix weights for 0-0/1-1/2-2 and 4+ goals",
+    "not_used": "lineups, injuries, tactics, weather, referee, independent provider xG, player form, schedule density",
+    "warning": "these are market-anchored shadow outputs, not a full multi-factor production forecast or calibrated hit probability"
+  },
+  "snapshot_contract": {
+    "match_id": null,
+    "prediction_id": null,
+    "immutable_snapshot": false,
+    "reason": "stable internal match_id and database writer were not available in this run",
+    "provider_effective_timestamp": null,
+    "market_capture_time_quality": "retrieval_time_only; provider event timestamps not consistently supplied"
+  },
+  "predictions": [
+    {
+      "match": "Gambia–Ivory Coast",
+      "competition": "AFCON qualifying",
+      "kickoff_beijing": "2026-11-18T00:00:00+08:00",
+      "kickoff_utc": "2026-11-17T16:00:00.000Z",
+      "model_hda_percent": {
+        "home": 16.1,
+        "draw": 25.8,
+        "away": 58.1
+      },
+      "first_score": {
+        "score": "0-1"
+      },
+      "second_score": {
+        "score": "1-1"
+      },
+      "market_implied_lambda": {
+        "home": 0.76,
+        "away": 1.68,
+        "total": 2.44,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 9.3,
+        "1-1": 12.1,
+        "2-2": 3.8
+      },
+      "total_goals_4plus_percent": 23.4,
+      "market_odds": {
+        "one_x_two_decimal": [
+          5.5,
+          3.6,
+          1.5
+        ],
+        "over_under_2_5_decimal": [
+          2.1,
+          1.65
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "中",
+      "risk": "科特迪瓦近况与积分优势同向；客场仍有波动，主队近3场进7球，不能低估反击",
+      "data_completeness": "中",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "afcon_preview"
+      ]
+    },
+    {
+      "match": "Kenya–South Africa",
+      "competition": "AFCON qualifying",
+      "kickoff_beijing": "2026-11-18T00:00:00+08:00",
+      "kickoff_utc": "2026-11-17T16:00:00.000Z",
+      "model_hda_percent": {
+        "home": 21,
+        "draw": 30,
+        "away": 49
+      },
+      "first_score": {
+        "score": "0-1"
+      },
+      "second_score": {
+        "score": "1-1"
+      },
+      "market_implied_lambda": {
+        "home": 0.79,
+        "away": 1.37,
+        "total": 2.16,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 12.3,
+        "1-1": 13.6,
+        "2-2": 3.6
+      },
+      "total_goals_4plus_percent": 17.7,
+      "market_odds": {
+        "one_x_two_decimal": [
+          4.42,
+          3.2,
+          1.85
+        ],
+        "over_under_2_5_decimal": [
+          2.54,
+          1.47
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "南非近4场3胜1平；肯尼亚近4场3平，平局风险高",
+      "data_completeness": "中",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "afcon_preview"
+      ]
+    },
+    {
+      "match": "Libya–Tunisia",
+      "competition": "AFCON qualifying",
+      "kickoff_beijing": "2026-11-18T00:00:00+08:00",
+      "kickoff_utc": "2026-11-17T16:00:00.000Z",
+      "model_hda_percent": {
+        "home": 26,
+        "draw": 30.8,
+        "away": 43.2
+      },
+      "first_score": {
+        "score": "1-1"
+      },
+      "second_score": {
+        "score": "0-1"
+      },
+      "market_implied_lambda": {
+        "home": 0.92,
+        "away": 1.27,
+        "total": 2.19,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 11.9,
+        "1-1": 14.2,
+        "2-2": 4.1
+      },
+      "total_goals_4plus_percent": 18.3,
+      "market_odds": {
+        "one_x_two_decimal": [
+          3.56,
+          3.08,
+          2.11
+        ],
+        "over_under_2_5_decimal": [
+          2.48,
+          1.49
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "盘口略偏突尼斯，但利比亚近3场与积分排名优于突尼斯；市场与状态冲突",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "afcon_preview"
+      ]
+    },
+    {
+      "match": "Sierra Leone–DR Congo",
+      "competition": "AFCON qualifying",
+      "kickoff_beijing": "2026-11-18T00:00:00+08:00",
+      "kickoff_utc": "2026-11-17T16:00:00.000Z",
+      "model_hda_percent": {
+        "home": 13,
+        "draw": 24.6,
+        "away": 62.3
+      },
+      "first_score": {
+        "score": "0-1"
+      },
+      "second_score": {
+        "score": "0-2"
+      },
+      "market_implied_lambda": {
+        "home": 0.65,
+        "away": 1.74,
+        "total": 2.39,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 9.8,
+        "1-1": 11.3,
+        "2-2": 3.1
+      },
+      "total_goals_4plus_percent": 22.5,
+      "market_odds": {
+        "one_x_two_decimal": [
+          7,
+          3.85,
+          1.42
+        ],
+        "over_under_2_5_decimal": [
+          2.16,
+          1.62
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "高",
+      "risk": "刚果近5场3胜1平1负，塞拉利昂近3场全败；客场与首发未确认仍是风险",
+      "data_completeness": "中",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "afcon_preview"
+      ]
+    },
+    {
+      "match": "Togo–Algeria",
+      "competition": "AFCON qualifying",
+      "kickoff_beijing": "2026-11-18T00:00:00+08:00",
+      "kickoff_utc": "2026-11-17T16:00:00.000Z",
+      "model_hda_percent": {
+        "home": 16.1,
+        "draw": 27,
+        "away": 56.9
+      },
+      "first_score": {
+        "score": "0-1"
+      },
+      "second_score": {
+        "score": "1-1"
+      },
+      "market_implied_lambda": {
+        "home": 0.71,
+        "away": 1.59,
+        "total": 2.3,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 10.7,
+        "1-1": 12.4,
+        "2-2": 3.4
+      },
+      "total_goals_4plus_percent": 20.5,
+      "market_odds": {
+        "one_x_two_decimal": [
+          5.6,
+          3.5,
+          1.55
+        ],
+        "over_under_2_5_decimal": [
+          2.29,
+          1.55
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "中",
+      "risk": "阿尔及利亚近4场3胜1平，状态明显占优；客场小胜与平局是主要风险",
+      "data_completeness": "中",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "afcon_preview"
+      ]
+    },
+    {
+      "match": "Botswana–Uganda",
+      "competition": "AFCON qualifying",
+      "kickoff_beijing": "2026-11-18T03:00:00+08:00",
+      "kickoff_utc": "2026-11-17T19:00:00.000Z",
+      "model_hda_percent": {
+        "home": 39.6,
+        "draw": 31.9,
+        "away": 28.5
+      },
+      "first_score": {
+        "score": "1-1"
+      },
+      "second_score": {
+        "score": "1-0"
+      },
+      "market_implied_lambda": {
+        "home": 1.16,
+        "away": 0.92,
+        "total": 2.08,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 13.2,
+        "1-1": 14.3,
+        "2-2": 3.9
+      },
+      "total_goals_4plus_percent": 16.5,
+      "market_odds": {
+        "one_x_two_decimal": [
+          2.28,
+          2.96,
+          3.31
+        ],
+        "over_under_2_5_decimal": [
+          2.7,
+          1.42
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "市场偏博茨瓦纳，但乌干达近况与排名更好；双方上轮1-1，方向冲突",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "BetClan/secondary market preview"
+      ]
+    },
+    {
+      "match": "Congo–Comoros",
+      "competition": "AFCON qualifying",
+      "kickoff_beijing": "2026-11-18T03:00:00+08:00",
+      "kickoff_utc": "2026-11-17T19:00:00.000Z",
+      "model_hda_percent": {
+        "home": 45.2,
+        "draw": 30.3,
+        "away": 24.5
+      },
+      "first_score": {
+        "score": "1-0"
+      },
+      "second_score": {
+        "score": "1-1"
+      },
+      "market_implied_lambda": {
+        "home": 1.31,
+        "away": 0.87,
+        "total": 2.18,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 11.8,
+        "1-1": 13.8,
+        "2-2": 4.1
+      },
+      "total_goals_4plus_percent": 18.6,
+      "market_odds": {
+        "one_x_two_decimal": [
+          2.16,
+          3.16,
+          4.33
+        ],
+        "over_under_2_5_decimal": [
+          2.63,
+          1.57
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "市场偏刚果，但科摩罗积分与近期表现更好；模型方向需降级",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "congo_odds"
+      ]
+    },
+    {
+      "match": "Liberia–Cape Verde",
+      "competition": "AFCON qualifying",
+      "kickoff_beijing": "2026-11-18T03:00:00+08:00",
+      "kickoff_utc": "2026-11-17T19:00:00.000Z",
+      "model_hda_percent": {
+        "home": 25,
+        "draw": 29.1,
+        "away": 45.8
+      },
+      "first_score": {
+        "score": "1-1"
+      },
+      "second_score": {
+        "score": "0-1"
+      },
+      "market_implied_lambda": {
+        "home": 0.96,
+        "away": 1.4,
+        "total": 2.36,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 10,
+        "1-1": 13.8,
+        "2-2": 4.6
+      },
+      "total_goals_4plus_percent": 21.9,
+      "market_odds": {
+        "one_x_two_decimal": [
+          3.75,
+          3,
+          1.96
+        ],
+        "over_under_2_5_decimal": [
+          2.2,
+          1.6
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "佛得角上轮4-2胜利比亚；两队近期波动较大，客胜并不稳",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "liberia_odds"
+      ]
+    },
+    {
+      "match": "Mauritania–Burkina Faso",
+      "competition": "AFCON qualifying",
+      "kickoff_beijing": "2026-11-18T03:00:00+08:00",
+      "kickoff_utc": "2026-11-17T19:00:00.000Z",
+      "model_hda_percent": {
+        "home": 30.1,
+        "draw": 32.1,
+        "away": 37.8
+      },
+      "first_score": {
+        "score": "1-1"
+      },
+      "second_score": {
+        "score": "0-1"
+      },
+      "market_implied_lambda": {
+        "home": 0.97,
+        "away": 1.12,
+        "total": 2.09,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 13.1,
+        "1-1": 14.6,
+        "2-2": 3.9
+      },
+      "total_goals_4plus_percent": 16.4,
+      "market_odds": {
+        "one_x_two_decimal": [
+          3,
+          2.8,
+          2.36
+        ],
+        "over_under_2_5_decimal": [
+          2.65,
+          1.42
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "三项概率接近，布基纳上轮1-0取胜；平局为主要风险",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "Betmaster/secondary market preview"
+      ]
+    },
+    {
+      "match": "Rwanda–Mali",
+      "competition": "AFCON qualifying",
+      "kickoff_beijing": "2026-11-18T03:00:00+08:00",
+      "kickoff_utc": "2026-11-17T19:00:00.000Z",
+      "model_hda_percent": {
+        "home": 20.4,
+        "draw": 29.3,
+        "away": 50.3
+      },
+      "first_score": {
+        "score": "0-1"
+      },
+      "second_score": {
+        "score": "1-1"
+      },
+      "market_implied_lambda": {
+        "home": 0.8,
+        "away": 1.42,
+        "total": 2.22,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 11.7,
+        "1-1": 13.4,
+        "2-2": 3.7
+      },
+      "total_goals_4plus_percent": 18.8,
+      "market_odds": {
+        "one_x_two_decimal": [
+          5.3,
+          3.28,
+          1.97
+        ],
+        "over_under_2_5_decimal": [
+          2.58,
+          1.59
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "中",
+      "risk": "马里市场与积分优势较明显；卢旺达主场和近期连胜需防",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "rwanda_odds"
+      ]
+    },
+    {
+      "match": "Jordan–Australia",
+      "competition": "International friendly",
+      "kickoff_beijing": "2026-11-18T00:00:00+08:00",
+      "kickoff_utc": "2026-11-17T16:00:00.000Z",
+      "model_hda_percent": {
+        "home": 23.4,
+        "draw": 27.1,
+        "away": 49.5
+      },
+      "first_score": {
+        "score": "1-1"
+      },
+      "second_score": {
+        "score": "0-1"
+      },
+      "market_implied_lambda": {
+        "home": 1,
+        "away": 1.58,
+        "total": 2.58,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 8.1,
+        "1-1": 13,
+        "2-2": 5.1
+      },
+      "total_goals_4plus_percent": 26.6,
+      "market_odds": {
+        "one_x_two_decimal": [
+          3.9,
+          3.35,
+          1.8
+        ],
+        "over_under_2_5_decimal": [
+          1.94,
+          1.77
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "澳大利亚整体近况稍好；友谊赛轮换、试阵和比赛强度不确定",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "jordan_odds"
+      ]
+    },
+    {
+      "match": "Russia–Venezuela",
+      "competition": "International friendly",
+      "kickoff_beijing": "2026-11-18T00:00:00+08:00",
+      "kickoff_utc": "2026-11-17T16:00:00.000Z",
+      "model_hda_percent": {
+        "home": 58.6,
+        "draw": 24.2,
+        "away": 17.3
+      },
+      "first_score": {
+        "score": "1-0"
+      },
+      "second_score": {
+        "score": "1-1"
+      },
+      "market_implied_lambda": {
+        "home": 1.83,
+        "away": 0.87,
+        "total": 2.7,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 7.1,
+        "1-1": 11.5,
+        "2-2": 4.7
+      },
+      "total_goals_4plus_percent": 29.8,
+      "market_odds": {
+        "one_x_two_decimal": [
+          1.51,
+          3.9,
+          5.4
+        ],
+        "over_under_2_5_decimal": [
+          1.83,
+          1.88
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "中",
+      "risk": "俄罗斯近期状态占优；友谊赛轮换与委内瑞拉反击是风险",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "russia_odds"
+      ]
+    },
+    {
+      "match": "Iraq–Iran",
+      "competition": "International friendly",
+      "kickoff_beijing": "2026-11-18T00:15:00+08:00",
+      "kickoff_utc": "2026-11-17T16:15:00.000Z",
+      "model_hda_percent": {
+        "home": 24.1,
+        "draw": 29.8,
+        "away": 46.1
+      },
+      "first_score": {
+        "score": "1-1"
+      },
+      "second_score": {
+        "score": "0-1"
+      },
+      "market_implied_lambda": {
+        "home": 0.9,
+        "away": 1.36,
+        "total": 2.26,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 11,
+        "1-1": 13.9,
+        "2-2": 4.2
+      },
+      "total_goals_4plus_percent": 19.8,
+      "market_odds": {
+        "one_x_two_decimal": [
+          3.75,
+          3.1,
+          1.92
+        ],
+        "over_under_2_5_decimal": [
+          2.34,
+          1.53
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "伊拉克与伊朗不同来源欧赔差异明显；地区德比，平局和临场阵容风险高",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "iraq_odds"
+      ]
+    },
+    {
+      "match": "Kuwait–Honduras",
+      "competition": "International friendly",
+      "kickoff_beijing": "2026-11-18T00:30:00+08:00",
+      "kickoff_utc": "2026-11-17T16:30:00.000Z",
+      "model_hda_percent": {
+        "home": 22.3,
+        "draw": 27.6,
+        "away": 50.2
+      },
+      "first_score": {
+        "score": "1-1"
+      },
+      "second_score": {
+        "score": "0-1"
+      },
+      "market_implied_lambda": {
+        "home": 0.94,
+        "away": 1.54,
+        "total": 2.48,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 8.9,
+        "1-1": 13.2,
+        "2-2": 4.7
+      },
+      "total_goals_4plus_percent": 24.4,
+      "market_odds": {
+        "one_x_two_decimal": [
+          4.24,
+          3.42,
+          1.83
+        ],
+        "over_under_2_5_decimal": [
+          2.09,
+          1.72
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "盘口倾洪都拉斯，但OddsFilter近5场数据反而更支持科威特；明显冲突",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "kuwait_odds"
+      ]
+    },
+    {
+      "match": "Belize–Sint Maarten",
+      "competition": "CONCACAF Nations League",
+      "kickoff_beijing": "2026-11-18T03:00:00+08:00",
+      "kickoff_utc": "2026-11-17T19:00:00.000Z",
+      "model_hda_percent": {
+        "home": 51.4,
+        "draw": 27.3,
+        "away": 21.3
+      },
+      "first_score": {
+        "score": "1-1"
+      },
+      "second_score": {
+        "score": "1-0"
+      },
+      "market_implied_lambda": {
+        "home": 1.57,
+        "away": 0.89,
+        "total": 2.46,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 9,
+        "1-1": 12.8,
+        "2-2": 4.6
+      },
+      "total_goals_4plus_percent": 24.4,
+      "market_odds": {
+        "one_x_two_decimal": [
+          1.7,
+          3.55,
+          4.2
+        ],
+        "over_under_2_5_decimal": [
+          2.14,
+          1.72
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "中",
+      "risk": "伯利兹进球能力有限；圣马丁防守失球多，平局与低比分风险",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "belize_odds"
+      ]
+    },
+    {
+      "match": "Dominica–Cayman Islands",
+      "competition": "CONCACAF Nations League",
+      "kickoff_beijing": "2026-11-18T03:00:00+08:00",
+      "kickoff_utc": "2026-11-17T19:00:00.000Z",
+      "model_hda_percent": {
+        "home": 55.5,
+        "draw": 26.4,
+        "away": 18.2
+      },
+      "first_score": {
+        "score": "1-0"
+      },
+      "second_score": {
+        "score": "1-1"
+      },
+      "market_implied_lambda": {
+        "home": 1.64,
+        "away": 0.81,
+        "total": 2.45,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 9.1,
+        "1-1": 12.3,
+        "2-2": 4.2
+      },
+      "total_goals_4plus_percent": 24.1,
+      "market_odds": {
+        "one_x_two_decimal": [
+          1.58,
+          3.7,
+          4.9
+        ],
+        "over_under_2_5_decimal": [
+          1.85,
+          1.47
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "中",
+      "risk": "两队近期战绩与数据质量均偏弱；主胜倾向不代表稳定优势",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "dominica_odds"
+      ]
+    },
+    {
+      "match": "St Lucia–Barbados",
+      "competition": "CONCACAF Nations League",
+      "kickoff_beijing": "2026-11-18T03:00:00+08:00",
+      "kickoff_utc": "2026-11-17T19:00:00.000Z",
+      "model_hda_percent": {
+        "home": 54.7,
+        "draw": 23.1,
+        "away": 22.1
+      },
+      "first_score": {
+        "score": "1-1"
+      },
+      "second_score": {
+        "score": "2-1"
+      },
+      "market_implied_lambda": {
+        "home": 1.99,
+        "away": 1.17,
+        "total": 3.16,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 4.4,
+        "1-1": 10.5,
+        "2-2": 6.3
+      },
+      "total_goals_4plus_percent": 40.6,
+      "market_odds": {
+        "one_x_two_decimal": [
+          1.65,
+          4.05,
+          4.32
+        ],
+        "over_under_2_5_decimal": [
+          1.5,
+          2.37
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "市场明显压低圣卢西亚主胜，但独立状态模型给出更高平/客概率；高风险",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": "separate bookmaker market exists; not adopted as model HT/FT"
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "stlucia_odds"
+      ]
+    },
+    {
+      "match": "India–Pakistan",
+      "competition": "SAFF Championship Group A",
+      "kickoff_beijing": "2026-11-17T22:00:00+08:00",
+      "kickoff_utc": "2026-11-17T14:00:00.000Z",
+      "model_hda_percent": {
+        "home": 41.8,
+        "draw": 28,
+        "away": 30.2
+      },
+      "first_score": {
+        "score": "1-1"
+      },
+      "second_score": {
+        "score": "1-0"
+      },
+      "market_implied_lambda": {
+        "home": 1.43,
+        "away": 1.15,
+        "total": 2.58,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 7.9,
+        "1-1": 13.3,
+        "2-2": 5.6
+      },
+      "total_goals_4plus_percent": 27.4,
+      "market_odds": {
+        "one_x_two_decimal": [
+          2.13,
+          3.25,
+          3.1
+        ],
+        "over_under_2_5_decimal": [
+          1.9,
+          1.74
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "中立场；来源间主客胜价格有差异，德比/淘汰压力使平局风险上升",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": "separate bookmaker market exists; not adopted as model HT/FT"
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "india_odds"
+      ]
+    },
+    {
+      "match": "Qatar–South Korea",
+      "competition": "International friendly",
+      "kickoff_beijing": "2026-11-17T22:00:00+08:00",
+      "kickoff_utc": "2026-11-17T14:00:00.000Z",
+      "model_hda_percent": {
+        "home": 15.6,
+        "draw": 23.8,
+        "away": 60.7
+      },
+      "first_score": {
+        "score": "0-1"
+      },
+      "second_score": {
+        "score": "1-1"
+      },
+      "market_implied_lambda": {
+        "home": 0.82,
+        "away": 1.86,
+        "total": 2.68,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 7.3,
+        "1-1": 11.4,
+        "2-2": 4.3
+      },
+      "total_goals_4plus_percent": 29,
+      "market_odds": {
+        "one_x_two_decimal": [
+          5.8,
+          3.95,
+          1.46
+        ],
+        "over_under_2_5_decimal": [
+          1.84,
+          1.86
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "高",
+      "risk": "韩国近5场进球稳定，市场与近况同向；卡塔尔主场和轮换仍需防",
+      "data_completeness": "中",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "qatar_odds",
+        "qfa_fixture"
+      ]
+    },
+    {
+      "match": "Saudi Arabia–Uzbekistan",
+      "competition": "International friendly",
+      "kickoff_beijing": "2026-11-17T23:30:00+08:00",
+      "kickoff_utc": "2026-11-17T15:30:00.000Z",
+      "model_hda_percent": {
+        "home": 37,
+        "draw": 29,
+        "away": 34.1
+      },
+      "first_score": {
+        "score": "1-1"
+      },
+      "second_score": {
+        "score": "1-0"
+      },
+      "market_implied_lambda": {
+        "home": 1.28,
+        "away": 1.19,
+        "total": 2.47,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 8.8,
+        "1-1": 13.7,
+        "2-2": 5.3
+      },
+      "total_goals_4plus_percent": 24.9,
+      "market_odds": {
+        "one_x_two_decimal": [
+          2.39,
+          3.1,
+          2.7
+        ],
+        "over_under_2_5_decimal": [
+          2.06,
+          1.68
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "低",
+      "risk": "市场三项接近；不同来源对近期状态和胜率判断不一致，避免单边结论",
+      "data_completeness": "低",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": null
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "saudi_odds",
+        "qfa_fixture"
+      ]
+    },
+    {
+      "match": "UAE–Syria",
+      "competition": "International friendly",
+      "kickoff_beijing": "2026-11-17T22:10:00+08:00",
+      "kickoff_utc": "2026-11-17T14:10:00.000Z",
+      "model_hda_percent": {
+        "home": 65.2,
+        "draw": 22.1,
+        "away": 12.7
+      },
+      "first_score": {
+        "score": "1-0"
+      },
+      "second_score": {
+        "score": "2-0"
+      },
+      "market_implied_lambda": {
+        "home": 1.96,
+        "away": 0.72,
+        "total": 2.68,
+        "not_provider_xg": true
+      },
+      "draw_matrix_percent": {
+        "0-0": 7.3,
+        "1-1": 10.4,
+        "2-2": 3.7
+      },
+      "total_goals_4plus_percent": 29.2,
+      "market_odds": {
+        "one_x_two_decimal": [
+          1.36,
+          4.5,
+          7
+        ],
+        "over_under_2_5_decimal": [
+          1.85,
+          1.86
+        ],
+        "official_jc_handicap": null
+      },
+      "model_confidence": "高",
+      "risk": "阿联酋近况与交锋占优；市场明显偏主，但叙利亚低位防守和轮换仍是风险",
+      "data_completeness": "中",
+      "strategy_id": "SHADOW-V53-DMR-20261117-1531",
+      "model_version": "V5.3-direct-matrix-repair-v1",
+      "half_full_time": {
+        "status": "not_generated_by_engine",
+        "market_reference_only": "separate bookmaker market exists; not adopted as model HT/FT"
+      },
+      "jincai_handicap": {
+        "status": "not_verified",
+        "line": null,
+        "result": "cannot_calculate",
+        "reason": "no independently verified official Sporttery handicap for this fixture; no third-party Asian line substituted"
+      },
+      "match_id": null,
+      "prediction_id": null,
+      "immutable_snapshot": false,
+      "source_keys": [
+        "uae_odds"
+      ]
+    }
+  ],
+  "skipped_within_window": [
+    {
+      "match": "Guinea-Bissau–Madagascar",
+      "kickoff_beijing": "2026-11-18T00:00:00+08:00",
+      "reason": "1X2 prices materially disagree across current and older sources (Scorewave 1.38/4.00/8.00 vs alternate snapshots around 1.69/3.39/5.11 and 1.82/3.30/5.20); no stable same-source market snapshot, so no shadow prediction"
+    }
+  ],
+  "aggregate_diagnostics": {
+    "matches_predicted": 21,
+    "average_hda_percent": {
+      "home": 31.8,
+      "draw": 27.9,
+      "away": 40.3
+    },
+    "average_draw_exact_percent": {
+      "0-0": 9.8,
+      "1-1": 13,
+      "2-2": 4.4
+    },
+    "average_total_goals_4plus_percent": 23.3,
+    "note": "market-implied shadow diagnostics only; not backtest results or actual hit probability"
+  },
+  "sources": {
+    "afcon_preview": "https://scorewave.live/en/articles/weekly-soccer-africa-cup-of-nations-qualifying-2026-w47",
+    "congo_odds": "https://oddseek.com/football/congo-vs-comoros-13669960",
+    "rwanda_odds": "https://oddseek.com/football/rwanda-vs-mali-13674200",
+    "liberia_odds": "https://betmaster.eu/en/sportsbook/sports/soccer/match/4609589",
+    "jordan_odds": "https://betmasterluck.com/en/sportsbook/sports/soccer/match/5817949",
+    "kuwait_odds": "https://oddsfilter.com/event/1001647643-kuwait-honduras",
+    "iraq_odds": "https://betmaster.dk/da/sportsbook/sports/soccer/match/4642581",
+    "russia_odds": "https://betmaster.eu/en/sportsbook/sports/soccer/match/4551365",
+    "qatar_odds": "https://betmaster.dk/en/sportsbook/sports/soccer/match/4640058",
+    "saudi_odds": "https://betmaster.com/en/sportsbook/sports/soccer/match/4642700",
+    "uae_odds": "https://betmaster.com/en/sportsbook/sports/soccer/match/4640201",
+    "belize_odds": "https://betmaster.com/en/sportsbook/sports/soccer/match/4548992",
+    "dominica_odds": "https://betmaster.eu/en/sportsbook/sports/soccer/match/4549005",
+    "stlucia_odds": "https://oddsfilter.com/event/1001640017-st-lucia-barbados",
+    "india_odds": "https://20bet.com/nz/prematch/football/1008610-saff-championship/12381896-india-pakistan",
+    "qfa_fixture": "https://www.qfa.qa/en/news/tickets-now-available-for-qatar-friendlies-against-australia-south-korea",
+    "jincai_mirror": "https://zq.gzpxm.cn/",
+    "sporttery_official": "https://m.sporttery.cn/"
+  }
+}
