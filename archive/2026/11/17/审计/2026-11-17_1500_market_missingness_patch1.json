@@ -1,0 +1,95 @@
+{
+  "schema_version": "daily-1500-audit-patch-v1",
+  "captured_at_beijing": "2026-11-17T16:04:09+08:00",
+  "supersedes": "2026-11-17_1500_market_missingness.json (append-only audit correction; original retained)",
+  "correction_summary": {
+    "market_prices_reverified": 11,
+    "affected_groups": {
+      "afcon_qualifiers": 6,
+      "womens_champions_league": 4,
+      "efl_trophy": 1
+    },
+    "method": "逐场使用可见赔率页核对，不将不同公司的best price拼成同一家公司的平均价；页面未提供时间戳时明确标注。",
+    "original_snapshot_preserved": true
+  },
+  "corrected_market_records": [
+    {
+      "match": "博茨瓦纳-乌干达",
+      "odds": "2.26/2.96/3.28",
+      "source": "SupaPicks",
+      "movement": "主2.61→2.26，客2.77→3.28，平赔开盘缺失"
+    },
+    {
+      "match": "刚果-科摩罗",
+      "odds": "2.12/3.20/4.10",
+      "source": "OddSeek",
+      "movement": "初盘序列缺失"
+    },
+    {
+      "match": "利比里亚-佛得角",
+      "odds": "3.75/3.00/1.96",
+      "source": "Betmaster",
+      "movement": "初盘序列缺失"
+    },
+    {
+      "match": "毛里塔尼亚-布基纳法索",
+      "odds": "3.05/2.70/2.39",
+      "source": "Betmaster",
+      "movement": "初盘序列缺失"
+    },
+    {
+      "match": "卢旺达-马里",
+      "odds": "4.81/3.22/1.74",
+      "source": "FootballNation平均赔率",
+      "movement": "初盘序列缺失"
+    },
+    {
+      "match": "尼日尔-摩洛哥",
+      "odds": "25.95/9.20/1.07",
+      "source": "OddsFilter平均赔率",
+      "movement": "初盘序列缺失"
+    },
+    {
+      "match": "赫肯女足-曼城女足",
+      "odds": "9.25/5.58/1.29",
+      "source": "OddSeek",
+      "movement": "初盘序列缺失"
+    },
+    {
+      "match": "皇马女足-国际米兰女足",
+      "odds": "1.26/5.31/8.70",
+      "source": "OddsFilter平均赔率",
+      "movement": "该来源快照为2026-11-16 00:30 UTC，不是实时价"
+    },
+    {
+      "match": "切尔西女足-巴黎圣日耳曼女足",
+      "odds": "1.31/5.25/8.80",
+      "source": "Oddschecker最佳价换算",
+      "movement": "初盘序列缺失"
+    },
+    {
+      "match": "尤文图斯女足-OH鲁汶女足",
+      "odds": "1.33/5.00/8.50",
+      "source": "StatsBet可见书商报价",
+      "movement": "初盘序列缺失"
+    },
+    {
+      "match": "卢顿-彼得伯勒",
+      "odds": "1.55/4.80/5.20",
+      "source": "Bookmakers.market",
+      "movement": "主1.77→1.55，平4.45→4.80，客4.98→5.20"
+    }
+  ],
+  "integrity": {
+    "no_official_sporttery_handicap_verified": true,
+    "no_third_party_asian_handicap_substituted": true,
+    "no_prediction_or_historical_snapshot_overwritten": true,
+    "V5_1_modified": false,
+    "frozen_validation_samples_modified": false
+  },
+  "patch_files": [
+    "archive/2026/11/17/国家队/其他赛事/非洲杯预选赛/2026-W47/predictions/2026-11-17_1500_shadow_patch1.json",
+    "archive/2026/11/17/洲际俱乐部/女足欧冠/2026-W47/predictions/2026-11-17_1500_shadow_patch1.json",
+    "archive/2026/11/17/国内杯赛/EFL_Trophy/2026-W47/predictions/2026-11-17_1500_shadow_patch1.json"
+  ]
+}
