@@ -1,0 +1,69 @@
+{
+  "schema_version": "prediction-patch-v1",
+  "captured_at_beijing": "2026-11-17T16:04:09+08:00",
+  "supersedes": "2026-11-17_1500_shadow.json (append-only correction; original retained unchanged)",
+  "correction_reason": "逐场核对可见赔率后修正4场女足欧冠1X2价格；未取得初盘序列的场次不推断升降。",
+  "patches": [
+    {
+      "prediction_id": "pred-20261117-uwcl-hac-mci",
+      "market_one_x_two": "9.25 / 5.58 / 1.29",
+      "market_source": "OddSeek",
+      "capture_time": "页面未披露精确时间",
+      "probabilities_90m_pct": {
+        "home": 11,
+        "draw": 17,
+        "away": 72
+      },
+      "sources": [
+        "https://oddseek.com/football/hacken-gothenburg-vs-manchester-city-wfc-13676530",
+        "https://www.wincomparator.com/predictions/kopparbergs-gothenburg-manchester-city-8804037/"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uwcl-rma-int",
+      "market_one_x_two": "1.26 / 5.31 / 8.70",
+      "market_source": "OddsFilter平均赔率",
+      "capture_time": "2026-11-16 00:30 UTC历史抓取；非当前实时",
+      "probabilities_90m_pct": {
+        "home": 73,
+        "draw": 17,
+        "away": 10
+      },
+      "sources": [
+        "https://oddsfilter.com/event/1001638333-real-madrid-w-inter-milano-w",
+        "https://www.oddschecker.com/football/womens-club/womens-champions-league/real-madrid-women-v-inter-milan-women/winner"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uwcl-che-psg",
+      "market_one_x_two": "1.31 / 5.25 / 8.80",
+      "market_source": "Oddschecker最佳赔率换算",
+      "capture_time": "页面未披露精确时间",
+      "probabilities_90m_pct": {
+        "home": 70,
+        "draw": 18,
+        "away": 12
+      },
+      "sources": [
+        "https://www.oddschecker.com/football/womens-club/womens-champions-league/chelsea-women-v-psg-women/winner",
+        "https://www.sportsmole.co.uk/football/women-champions-league/chelsea-women-vs-paris-saint-germain-women_game_262980.html"
+      ]
+    },
+    {
+      "prediction_id": "pred-20261117-uwcl-juv-leu",
+      "market_one_x_two": "1.33 / 5.00 / 8.50",
+      "market_source": "StatsBet可见书商报价",
+      "capture_time": "页面未披露精确时间",
+      "probabilities_90m_pct": {
+        "home": 70,
+        "draw": 19,
+        "away": 11
+      },
+      "sources": [
+        "https://statsbet.org/football/matches/juventus-w-vs-oh-leuven-w-2026-11-18",
+        "https://www.oddschecker.com/football/womens-club/womens-champions-league/juventus-women-v-oh-leuven-women/winner"
+      ]
+    }
+  ],
+  "xg_note": "第三方预估存在分歧：Real Madrid-Inter可见XGaura估算2.35-0.89；Juventus-Leuven不同来源估算差异较大。均不作为本次自有赛前xG输入。"
+}
