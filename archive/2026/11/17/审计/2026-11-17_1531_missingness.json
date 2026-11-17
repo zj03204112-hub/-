@@ -1,0 +1,55 @@
+{
+  "run_id": "SHADOW-V53-DMR-20261117-1531",
+  "captured_at": "2026-11-17T15:31:30+08:00",
+  "branch": "automation/daily-football-2026-11-17-1500-run11",
+  "status": "partial_refresh_and_shadow_prediction_archived",
+  "model": {
+    "version": "V5.3-direct-matrix-repair-v1",
+    "reference_branch": "experiment/v5.3-direct-matrix-repair-2026-11-16",
+    "reference_commit": "1aa1003816fc8c9c9fadeccc3ff74301ed10069c",
+    "production_api_executed": false,
+    "database_writer_executed": false,
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false
+  },
+  "database": {
+    "file_present_in_git_tree": true,
+    "path": "football_model_database.sqlite",
+    "size_bytes": 63332352,
+    "blob_sha": "60cbdfb79e09232d3b63170d96f8f03f53ae3ba8",
+    "sqlite_integrity_check": "not_run",
+    "runtime_connection": "not_connected",
+    "reason": "GitHub connector exposed the binary blob metadata but did not provide downloadable bytes in this run; no SQLite open/query was performed",
+    "correction": "the 10:00 audit's empty-content interpretation was incorrect: fetch_file returning no text for a binary SQLite blob did not mean the file was empty"
+  },
+  "predictions": {
+    "window_matches": 22,
+    "shadow_predictions": 21,
+    "skipped_market_conflict": 1,
+    "official_jc_handicap_verified": 0,
+    "immutable_prediction_snapshots": 0,
+    "prediction_ids_created": 0,
+    "stable_internal_match_ids_available": 0,
+    "ht_ft_model_outputs": 0
+  },
+  "xg": {
+    "provider_match_xg_inputs": 0,
+    "market_implied_lambda_outputs": 21,
+    "market_lambda_is_provider_xg": false,
+    "supplier_weekly_xg_not_updated_in_this_15h_batch": true
+  },
+  "missing_or_incomplete": [
+    "official Sporttery direct page and official handicap verification",
+    "complete bookmaker opening-to-current odds history and provider-effective timestamps",
+    "starting XIs and complete injury/suspension verification",
+    "independent pre-match provider xG for every match",
+    "referee assignments",
+    "venue-level weather snapshots",
+    "tactical reports and player status",
+    "schedule density and next-opponent importance",
+    "HT/FT output from V5.3 engine",
+    "stable internal match_id/prediction_id and immutable production snapshot writer",
+    "SQLite runtime integrity check and query"
+  ],
+  "archive_note": "JSON only; no database mutation; no model code mutation; no V5.1 or frozen-sample changes"
+}
