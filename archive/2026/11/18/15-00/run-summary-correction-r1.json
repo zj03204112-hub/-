@@ -1,0 +1,14 @@
+{
+  "run_id": "2026-11-18-1500-shadow",
+  "correction": "append-only correction to run-summary.json",
+  "created_at": "2026-11-18T15:03:10+08:00",
+  "files_created_total": 19,
+  "prediction_files": 13,
+  "supporting_files": 6,
+  "valid_json_files_read_back": 17,
+  "invalid_draft_file": "archive/2026/11/18/15-00/fixtures/bjt-18-19-refresh-correction-r1.json",
+  "primary_valid_fixture_snapshot": "archive/2026/11/18/15-00/fixtures/bjt-18-19-refresh-correction-r2.json",
+  "valid_forecast_index": "archive/2026/11/18/15-00/predictions/index.json",
+  "valid_run_summary": "archive/2026/11/18/15-00/run-summary.json",
+  "note": "The initial fixture draft and correction-r1 remain append-only artifacts. Use correction-r2 as the primary valid fixture snapshot. Prediction files, index, corrected fixture r2, and run summary have been read-back validated."
+}
