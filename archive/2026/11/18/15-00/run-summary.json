@@ -1,0 +1,36 @@
+{
+  "run_id": "2026-11-18-1500-shadow",
+  "captured_at": "2026-11-18T15:03:10+08:00",
+  "timezone": "Asia/Shanghai",
+  "forecast_window_bjt": {
+    "start": "2026-11-18T21:03:10+08:00",
+    "end": "2026-11-19T03:03:10+08:00"
+  },
+  "status": "partial research forecasts; fixture list corrected and read-back validated",
+  "predictions_count": 13,
+  "fixtures_corrected_file": "archive/2026/11/18/15-00/fixtures/bjt-18-19-refresh-correction-r2.json",
+  "predictions_index": "archive/2026/11/18/15-00/predictions/index.json",
+  "forecasts": "13 individual team-path files, all read-back JSON-valid; all W/D/L probability triplets sum to 100",
+  "database": {
+    "path_in_repo": "football_model_database.sqlite",
+    "status": "not connected to runtime; no SQLite audit run"
+  },
+  "production_model": {
+    "V5_1": "not modified",
+    "execution": "not run",
+    "frozen_validation": "untouched"
+  },
+  "missing": [
+    "official Jincai handicaps and official odds for all 13 matches",
+    "provider pre-match xG for all 13",
+    "confirmed starting lineups",
+    "lineup/injury/tactical news for most matches",
+    "opening-to-current odds history for most matches; available for only selected fixtures",
+    "weather and referee for many non-UEFA matches",
+    "full K League 1/J1 schedule scan"
+  ],
+  "market_data_caveat": "All odds shown are third-party bookmaker prices, not official Jincai handicaps. Where opening/current snapshots use mixed bookmakers they are marked as non-comparable.",
+  "fixture_file_caveat": "The initial fixture file and correction-r1 are retained as immutable drafts; correction-r2 is the valid JSON fixture snapshot to use. The scope is source-visible and partial, not an all-world completeness claim.",
+  "files_created": 15,
+  "latest_commit": "9a157b3fe59fcd1ef72b521300147d7bb6a13785"
+}
