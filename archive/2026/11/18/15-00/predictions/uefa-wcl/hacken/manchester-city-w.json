@@ -1,0 +1,81 @@
+{
+  "captured_at": "2026-11-18T15:03:10+08:00",
+  "prediction_time_window": "6-12h before kickoff",
+  "official_jc_handicap": {
+    "line": null,
+    "source": null,
+    "status": "无法核验；未用第三方亚洲盘替代"
+  },
+  "pre_match_provider_xg": null,
+  "prediction_mode": "manual research shadow forecast; not a verified model execution",
+  "model_version": "manual-shadow-r1 (V5.1 unchanged, not run)",
+  "strategy_id": "SHADOW-MKT-FORM-20261118-1500",
+  "results_status": "pre-match",
+  "utc_and_bjt_conversion": "verified from source UTC/local time where specified",
+  "match_key": "2026-11-18-UEFA-WCL-Hacken-ManCityW",
+  "competition": "UEFA Women's Champions League",
+  "kickoff_utc": "2026-11-18T17:45:00Z",
+  "kickoff_bjt": "2026-11-19T01:45:00+08:00",
+  "home": "BK Hacken Women",
+  "away": "Manchester City Women",
+  "score_predictions": [
+    "0-2",
+    "1-2"
+  ],
+  "probabilities_90min": {
+    "home": 12,
+    "draw": 17,
+    "away": 71
+  },
+  "half_full": "客/客",
+  "confidence": 70,
+  "goals_over_2_5_estimate_pct": 61,
+  "market_snapshot": {
+    "current_1x2_odds": [
+      7.57,
+      5.24,
+      1.27
+    ],
+    "additional_book_snapshot": [
+      8.2,
+      6,
+      1.25
+    ],
+    "source": "DailySports/Stakes odds pages; third-party 1X2",
+    "opening_to_current": "未找到可核验初盘；不计算走势",
+    "over_2_5_odds": 1.33
+  },
+  "recent_form": {
+    "home": [
+      "2-0 Piteaa",
+      "0-0 Chelsea",
+      "1-1 Djurgaarden"
+    ],
+    "away": [
+      "1-0 loss Chelsea",
+      "4-1 Inter",
+      "5-0 West Ham"
+    ]
+  },
+  "expected_goals_proxy": null,
+  "weather": "Gothenburg forecast snow, approx 1-3C and gusty; source forecast, not confirmed at kickoff",
+  "referee": null,
+  "confirmed_lineups": false,
+  "missing": [
+    "official JC handicap",
+    "pre-match xG",
+    "confirmed lineups",
+    "referee name",
+    "opening odds movement"
+  ],
+  "risk": [
+    "City away in cold/snow",
+    "Hacken low goal output in European group",
+    "lineup uncertainty",
+    "goal total estimate has no provider xG"
+  ],
+  "data_completeness_pct": 65,
+  "sources": [
+    "https://dailysports.net/stat/football/bk-haecken-ff-vs-manchester-city-women/"
+  ]
+}
