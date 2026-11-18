@@ -1,0 +1,91 @@
+{
+  "captured_at": "2026-11-18T15:03:10+08:00",
+  "prediction_time_window": "6-12h before kickoff",
+  "official_jc_handicap": {
+    "line": null,
+    "source": null,
+    "status": "无法核验；未用第三方亚洲盘替代"
+  },
+  "pre_match_provider_xg": null,
+  "prediction_mode": "manual research shadow forecast; not a verified model execution",
+  "model_version": "manual-shadow-r1 (V5.1 unchanged, not run)",
+  "strategy_id": "SHADOW-MKT-FORM-20261118-1500",
+  "results_status": "pre-match",
+  "utc_and_bjt_conversion": "verified from source UTC/local time where specified",
+  "match_key": "2026-11-18-CdR-Alcoyano-Mallorca",
+  "competition": "Copa del Rey",
+  "kickoff_utc": "2026-11-18T19:00:00Z",
+  "kickoff_bjt": "2026-11-19T03:00:00+08:00",
+  "home": "Alcoyano",
+  "away": "Mallorca",
+  "score_predictions": [
+    "0-1",
+    "1-1"
+  ],
+  "probabilities_90min": {
+    "home": 18,
+    "draw": 25,
+    "away": 57
+  },
+  "half_full": "平/客",
+  "confidence": 58,
+  "goals_over_2_5_estimate_pct": 45,
+  "market_snapshot": {
+    "current_average_1x2": [
+      5.94,
+      3.85,
+      1.54
+    ],
+    "current_best_1x2": [
+      6.5,
+      4.2,
+      1.56
+    ],
+    "margin_free_prob_pct": [
+      16,
+      24,
+      60
+    ],
+    "opening_1x2_parse": "ambiguous; not trusted",
+    "source": "OddsFilter captured 2026-11-18 00:39 UTC",
+    "over_2_5_average": 1.97,
+    "under_2_5_average": 1.79
+  },
+  "recent_form": {
+    "home": [
+      "4-1 Intercity",
+      "1-2 Elche II",
+      "4-3 Castellonense",
+      "1-1 Real Murcia II",
+      "0-2 Atletico Baleares"
+    ],
+    "away": [
+      "3-3 Cordoba",
+      "2-1 Cadiz",
+      "1-1 Leganes",
+      "1-1 Eibar",
+      "3-1 Las Palmas"
+    ]
+  },
+  "expected_goals_proxy": null,
+  "weather": null,
+  "referee": null,
+  "confirmed_lineups": false,
+  "missing": [
+    "official JC handicap",
+    "pre-match xG",
+    "lineups",
+    "referee",
+    "weather",
+    "opening odds reliable parsing"
+  ],
+  "risk": [
+    "Mallorca odds drift from opening but remains favorite",
+    "Mallorca draws frequent",
+    "Cup single-match variance"
+  ],
+  "data_completeness_pct": 63,
+  "sources": [
+    "https://oddsfilter.com/event/1001644334-alcoyano-mallorca"
+  ]
+}
