@@ -1,0 +1,635 @@
+{
+  "snapshot_id": "football-fixtures-2026-11-18-1500-bjt-correction-r3",
+  "supersedes": "football-fixtures-2026-11-18-1500-bjt-correction-r2",
+  "captured_at": "2026-11-18T15:03:10+08:00",
+  "timezone": "Asia/Shanghai",
+  "dates_scanned_bjt": [
+    "2026-11-18",
+    "2026-11-19"
+  ],
+  "status": "partial_source_refresh_corrected_timezone",
+  "prediction_window_bjt": {
+    "from": "2026-11-18T21:03:10+08:00",
+    "to": "2026-11-19T03:03:10+08:00",
+    "inclusive": true
+  },
+  "sources": [
+    "https://www.theguardian.com/football/fixtures/2026/Nov/18",
+    "https://www.theguardian.com/football/fixtures/2026/Nov/19",
+    "https://dailysports.net/mathematical-predictions/over-under/",
+    "https://www.sportnewsafrica.com/en/news/algerian-ligue-1-fixtures-midweek-schedule-and-kick-off-times-18-19-november-2026/",
+    "https://www.soccernews.com/soccer-stats/brazilian-serie-a/fixtures-and-results/2026-27/",
+    "https://insights.betfred.com/football/competitions/spain/copa-del-rey/",
+    "https://insights.betfred.com/football/competitions/slovenia/cup/",
+    "https://www.oddalerts.com/leagues/brazil/serie-a/fixtures"
+  ],
+  "core_leagues_18_19_bjt": {
+    "Premier League": {
+      "status": "no fixture found in scanned primary fixture pages",
+      "coverage": "partial"
+    },
+    "LaLiga": {
+      "status": "no fixture found in scanned primary fixture pages",
+      "coverage": "partial"
+    },
+    "Bundesliga": {
+      "status": "no fixture found in scanned primary fixture pages",
+      "coverage": "partial"
+    },
+    "Serie A Italy": {
+      "status": "no fixture found in scanned primary fixture pages",
+      "coverage": "partial"
+    },
+    "Ligue 1": {
+      "status": "no fixture found in scanned primary fixture pages",
+      "coverage": "partial"
+    },
+    "K League 1": {
+      "status": "not independently checked",
+      "coverage": "missing"
+    },
+    "J1": {
+      "status": "not independently checked",
+      "coverage": "missing"
+    }
+  },
+  "fixtures_bjt_2026-11-18": [
+    {
+      "competition": "Egypt Cup",
+      "home": "El Gouna",
+      "away": "Al Ittihad Alexandria",
+      "kickoff_utc": "2026-11-18T15:00:00Z",
+      "kickoff_bjt": "2026-11-18T23:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Denmark",
+      "away": "Norway",
+      "kickoff_bjt": "03:45",
+      "status": "kickoff_passed_result_not_rechecked_in_1500_run"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Wales",
+      "away": "Portugal",
+      "kickoff_bjt": "03:45",
+      "status": "kickoff_passed_result_not_rechecked_in_1500_run"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Hungary",
+      "away": "Northern Ireland",
+      "kickoff_bjt": "03:45",
+      "status": "kickoff_passed_result_not_rechecked_in_1500_run"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Ukraine",
+      "away": "Georgia",
+      "kickoff_bjt": "03:45",
+      "status": "kickoff_passed_result_not_rechecked_in_1500_run"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Israel",
+      "away": "Austria",
+      "kickoff_bjt": "03:45",
+      "status": "kickoff_passed_result_not_rechecked_in_1500_run"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Ireland",
+      "away": "Kosovo",
+      "kickoff_bjt": "03:45",
+      "status": "kickoff_passed_result_not_rechecked_in_1500_run"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Bosnia-Herzegovina",
+      "away": "Romania",
+      "kickoff_bjt": "03:45",
+      "status": "kickoff_passed_result_not_rechecked_in_1500_run"
+    },
+    {
+      "competition": "UEFA Nations League",
+      "home": "Poland",
+      "away": "Sweden",
+      "kickoff_bjt": "03:45",
+      "status": "kickoff_passed_result_not_rechecked_in_1500_run"
+    },
+    {
+      "competition": "AFCON Qualifier",
+      "home": "Liberia",
+      "away": "Cape Verde",
+      "kickoff_bjt": "03:00",
+      "status": "kickoff_passed_result_unverified"
+    },
+    {
+      "competition": "AFCON Qualifier",
+      "home": "Rwanda",
+      "away": "Mali",
+      "kickoff_bjt": "03:00",
+      "status": "kickoff_passed_result_unverified"
+    },
+    {
+      "competition": "AFCON Qualifier",
+      "home": "Mauritania",
+      "away": "Burkina Faso",
+      "kickoff_bjt": "03:00",
+      "status": "kickoff_passed_result_unverified"
+    },
+    {
+      "competition": "AFCON Qualifier",
+      "home": "Niger",
+      "away": "Morocco",
+      "kickoff_bjt": "04:00",
+      "status": "kickoff_passed_result_unverified"
+    },
+    {
+      "competition": "International Friendly",
+      "home": "Iraq",
+      "away": "Iran",
+      "kickoff_bjt": "00:15",
+      "status": "kickoff_passed_result_unverified"
+    },
+    {
+      "competition": "International Friendly",
+      "home": "Kuwait",
+      "away": "Honduras",
+      "kickoff_bjt": "00:30",
+      "status": "kickoff_passed_result_unverified"
+    },
+    {
+      "competition": "International Friendly",
+      "home": "Argentina",
+      "away": "Costa Rica",
+      "kickoff_bjt": "07:00",
+      "status": "reported_result_7-0_not_crosschecked"
+    },
+    {
+      "competition": "International Friendly",
+      "home": "Chile",
+      "away": "Colombia",
+      "kickoff_bjt": "07:00",
+      "status": "result_unverified"
+    },
+    {
+      "competition": "International Friendly",
+      "home": "Ecuador",
+      "away": "Bolivia",
+      "kickoff_bjt": "07:30",
+      "status": "reported_result_2-0_not_crosschecked"
+    },
+    {
+      "competition": "International Friendly",
+      "home": "Uruguay",
+      "away": "Dominican Republic",
+      "kickoff_bjt": "07:30",
+      "status": "reported_result_5-0_not_crosschecked"
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "home": "French Guiana",
+      "away": "Saint Vincent and the Grenadines",
+      "kickoff_bjt": "01:00",
+      "status": "reported_result_1-0_not_crosschecked"
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "home": "El Salvador",
+      "away": "Saint Martin",
+      "kickoff_bjt": "02:00",
+      "status": "reported_result_3-1_not_crosschecked"
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "home": "Nicaragua",
+      "away": "Montserrat",
+      "kickoff_bjt": "04:00",
+      "status": "reported_result_2-0_not_crosschecked"
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "home": "USA",
+      "away": "Haiti",
+      "kickoff_bjt": "08:00",
+      "status": "reported_result_2-0_not_crosschecked"
+    },
+    {
+      "competition": "CONCACAF Nations League",
+      "home": "Mexico",
+      "away": "Jamaica",
+      "kickoff_bjt": "10:30",
+      "status": "reported_result_1-0_not_crosschecked"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Corluspor 1947",
+      "away": "Mus Spor",
+      "kickoff_local": "11:00 Turkey",
+      "kickoff_bjt": "16:00",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Guzide Gebzespor",
+      "away": "Ankaraspor",
+      "kickoff_local": "11:00 Turkey",
+      "kickoff_bjt": "16:00",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Adana Demirspor",
+      "away": "Kastamonuspor 1966",
+      "kickoff_local": "11:00 Turkey",
+      "kickoff_bjt": "16:00",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Hatayspor",
+      "away": "Inegol Kafkas",
+      "kickoff_local": "11:00 Turkey",
+      "kickoff_bjt": "16:00",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Isparta 32 Spor",
+      "away": "Soma Spor Dernegi",
+      "kickoff_local": "11:00 Turkey",
+      "kickoff_bjt": "16:00",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "1461 Trabzon FK",
+      "away": "Kahramanmaras Istiklalspor",
+      "kickoff_local": "11:00 Turkey",
+      "kickoff_bjt": "16:00",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Serik Spor",
+      "away": "24 Erzincanspor",
+      "kickoff_local": "11:00 Turkey",
+      "kickoff_bjt": "16:00",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Ankaragucu",
+      "away": "Kirklarelispor",
+      "kickoff_local": "11:00 Turkey",
+      "kickoff_bjt": "16:00",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Arnavutkoy Belediyespor",
+      "away": "68 Aksaray Belediyespor",
+      "kickoff_local": "12:00 Turkey",
+      "kickoff_bjt": "17:00",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Inegolspor",
+      "away": "Iskenderun FK",
+      "kickoff_local": "13:00 Turkey",
+      "kickoff_bjt": "18:00",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Aliaga",
+      "away": "Sebatspor",
+      "kickoff_local": "13:30 Turkey",
+      "kickoff_bjt": "18:30",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Sanliurfaspor",
+      "away": "Erbaaspor",
+      "kickoff_local": "13:30 Turkey",
+      "kickoff_bjt": "18:30",
+      "status": "scheduled_prediction_window_false"
+    },
+    {
+      "competition": "Turkish 2.Lig",
+      "home": "Karacabey Belediye Spor",
+      "away": "Beyoglu Yeni Carsi",
+      "kickoff_local": "13:30 Turkey",
+      "kickoff_bjt": "18:30",
+      "status": "scheduled_prediction_window_false"
+    }
+  ],
+  "fixtures_bjt_2026-11-19": [
+    {
+      "competition": "Algerian Ligue 1",
+      "home": "CS Constantine",
+      "away": "ES Ben Aknoun",
+      "kickoff_utc": "2026-11-18T16:45:00Z",
+      "kickoff_bjt": "2026-11-19T00:45:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "Algerian Ligue 1",
+      "home": "CR Temouchent",
+      "away": "JS El Biar",
+      "kickoff_utc": "2026-11-18T16:45:00Z",
+      "kickoff_bjt": "2026-11-19T00:45:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "Slovenian Cup",
+      "home": "Tabor Sezana",
+      "away": "Fuzinar",
+      "kickoff_utc": "2026-11-18T16:00:00Z",
+      "kickoff_local": "17:00 CET",
+      "kickoff_bjt": "2026-11-19T00:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "Slovenian Cup",
+      "home": "Race",
+      "away": "Radomlje",
+      "kickoff_utc": "2026-11-18T16:00:00Z",
+      "kickoff_local": "17:00 CET",
+      "kickoff_bjt": "2026-11-19T00:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "UEFA Women's Champions League",
+      "home": "Hacken",
+      "away": "Manchester City Women",
+      "kickoff_utc": "2026-11-18T17:45:00Z",
+      "kickoff_bjt": "2026-11-19T01:45:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "UEFA Women's Champions League",
+      "home": "Real Madrid Women",
+      "away": "Inter Women",
+      "kickoff_utc": "2026-11-18T17:45:00Z",
+      "kickoff_bjt": "2026-11-19T01:45:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "Copa del Rey",
+      "home": "Portugalete",
+      "away": "Real Union",
+      "kickoff_utc": "2026-11-18T18:00:00Z",
+      "kickoff_bjt": "2026-11-19T02:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "Regionalliga North",
+      "home": "SSV Jeddeloh",
+      "away": "1.FC Phoenix Luebeck",
+      "kickoff_utc": "2026-11-18T18:00:00Z",
+      "kickoff_bjt": "2026-11-19T02:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "Copa del Rey",
+      "home": "Utebo",
+      "away": "Sabadell",
+      "kickoff_utc": "2026-11-18T18:00:00Z",
+      "kickoff_bjt": "2026-11-19T02:00:00+08:00",
+      "status": "status_conflict",
+      "prediction_window": false,
+      "status_sources": [
+        "MatchPal: https://matchpal.io/what-channel-is-utebo-fc-vs-sabadell-18-nov-2026-on (lists postponed)",
+        "LaLiga: https://www.laliga.com/es-NG/partido/temporada-2026-2027-copa-del-rey-utebo-ce-sabadell-3 (lists scheduled)"
+      ]
+    },
+    {
+      "competition": "Copa del Rey",
+      "home": "Deportiva Minera",
+      "away": "FC Cartagena",
+      "kickoff_utc": "2026-11-18T18:30:00Z",
+      "kickoff_bjt": "2026-11-19T02:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "Copa del Rey",
+      "home": "Reus Reddis",
+      "away": "Barakaldo",
+      "kickoff_utc": "2026-11-18T18:30:00Z",
+      "kickoff_bjt": "2026-11-19T02:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "Copa del Rey",
+      "home": "Alcoyano",
+      "away": "Mallorca",
+      "kickoff_utc": "2026-11-18T19:00:00Z",
+      "kickoff_bjt": "2026-11-19T03:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "Copa del Rey",
+      "home": "Badajoz",
+      "away": "Tenerife",
+      "kickoff_utc": "2026-11-18T19:00:00Z",
+      "kickoff_bjt": "2026-11-19T03:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": true
+    },
+    {
+      "competition": "UEFA Women's Champions League",
+      "home": "Chelsea Women",
+      "away": "Paris Saint-Germain Women",
+      "kickoff_utc": "2026-11-18T20:00:00Z",
+      "kickoff_bjt": "2026-11-19T04:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "UEFA Women's Champions League",
+      "home": "Juventus Women",
+      "away": "OH Leuven Women",
+      "kickoff_utc": "2026-11-18T20:00:00Z",
+      "kickoff_bjt": "2026-11-19T04:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "Women's FA Cup",
+      "home": "Lye Town Women",
+      "away": "Peterborough Women",
+      "kickoff_utc": "2026-11-18T19:45:00Z",
+      "kickoff_bjt": "2026-11-19T03:45:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "WSL Cup",
+      "home": "West Ham Women",
+      "away": "Wolverhampton Women",
+      "kickoff_utc": "2026-11-18T20:00:00Z",
+      "kickoff_bjt": "2026-11-19T04:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "WSL Cup",
+      "home": "Nottingham Forest Women",
+      "away": "Liverpool Women",
+      "kickoff_utc": "2026-11-18T20:00:00Z",
+      "kickoff_bjt": "2026-11-19T04:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "WSL Cup",
+      "home": "Tottenham Women",
+      "away": "Leicester Women",
+      "kickoff_utc": "2026-11-18T20:00:00Z",
+      "kickoff_bjt": "2026-11-19T04:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "WSL Cup",
+      "home": "Manchester United Women",
+      "away": "Everton Women",
+      "kickoff_utc": "2026-11-18T20:00:00Z",
+      "kickoff_bjt": "2026-11-19T04:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "WSL Cup",
+      "home": "London City Lionesses",
+      "away": "Brighton Women",
+      "kickoff_utc": "2026-11-18T20:00:00Z",
+      "kickoff_bjt": "2026-11-19T04:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "Brazil Serie A",
+      "home": "Coritiba",
+      "away": "Santos",
+      "kickoff_utc": "2026-11-18T22:30:00Z",
+      "kickoff_bjt": "2026-11-19T06:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "Brazil Serie A",
+      "home": "Remo",
+      "away": "Chapecoense",
+      "kickoff_utc": "2026-11-18T23:00:00Z",
+      "kickoff_bjt": "2026-11-19T07:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "Brazil Serie A",
+      "home": "Cruzeiro",
+      "away": "Palmeiras",
+      "kickoff_utc": "2026-11-18T23:30:00Z",
+      "kickoff_bjt": "2026-11-19T07:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "Brazil Serie A",
+      "home": "Flamengo",
+      "away": "Athletico Paranaense",
+      "kickoff_utc": "2026-11-18T23:30:00Z",
+      "kickoff_bjt": "2026-11-19T07:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "Brazil Serie A",
+      "home": "Corinthians",
+      "away": "Botafogo",
+      "kickoff_utc": "2026-11-19T00:30:00Z",
+      "kickoff_bjt": "2026-11-19T08:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "Brazil Serie A",
+      "home": "Gremio",
+      "away": "Bahia",
+      "kickoff_utc": "2026-11-19T00:30:00Z",
+      "kickoff_bjt": "2026-11-19T08:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "Peru Liga 1",
+      "home": "Alianza Atletico",
+      "away": "FBC Melgar",
+      "kickoff_local": "21:00 Peru",
+      "kickoff_bjt": "2026-11-19T10:00:00+08:00",
+      "status": "scheduled",
+      "timezone_note": "BJT conversion assumed from Peru local UTC-5",
+      "prediction_window": false
+    },
+    {
+      "competition": "English Northern Premier League",
+      "home": "Frome Town",
+      "away": "Gloucester City",
+      "kickoff_utc": "2026-11-18T20:45:00Z",
+      "kickoff_bjt": "2026-11-19T04:45:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "English Northern Premier League",
+      "home": "Gosport Borough",
+      "away": "Chertsey Town",
+      "kickoff_utc": "2026-11-18T20:45:00Z",
+      "kickoff_bjt": "2026-11-19T04:45:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    },
+    {
+      "competition": "Northern Ireland Championship",
+      "home": "Newington",
+      "away": "Harland & Wolff Welders",
+      "kickoff_utc": "2026-11-18T20:45:00Z",
+      "kickoff_bjt": "2026-11-19T04:45:00+08:00",
+      "status": "scheduled",
+      "prediction_window": false
+    }
+  ],
+  "prediction_window_count": 13,
+  "prediction_count": 13,
+  "postponed_excluded": [
+    "Utebo vs Sabadell"
+  ],
+  "no_prediction": [],
+  "missing_fields": [
+    "official Jincai handicaps/odds for all 13",
+    "pre-match provider xG for all 13",
+    "confirmed starting lineups for all 13",
+    "line movement opening/current for most fixtures",
+    "weather/referee for most non-UEFA matches",
+    "K League 1 and J1 full fixture scan"
+  ],
+  "audit_note": "r3 corrects Utebo vs Sabadell status to conflicting sources; excluded from predictions pending official reconciliation. r2 is retained as an immutable prior snapshot."
+}
