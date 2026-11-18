@@ -1,0 +1,205 @@
+{
+  "snapshot_id": "shadow-predictions-2026-11-18-1500",
+  "captured_at": "2026-11-18T15:03:10+08:00",
+  "timezone": "Asia/Shanghai",
+  "forecast_window_bjt": {
+    "from": "2026-11-18T21:03:10+08:00",
+    "to": "2026-11-19T03:03:10+08:00"
+  },
+  "prediction_count": 13,
+  "model_version": "manual-shadow-r1 (V5.1 unchanged; no V5.1 execution)",
+  "strategy_id_prefix": "SHADOW-MKT-FORM-20261118-1500",
+  "disclaimer": "All predictions are manually researched shadow forecasts, not a verified model run. Provider xG, official Jincai handicap, confirmed lineups are missing for all fixtures. Handicap outcomes are intentionally left unverifiable.",
+  "matches": [
+    {
+      "match": "Hacken Women–Manchester City Women",
+      "kickoff_bjt": "01:45",
+      "probabilities": [
+        12,
+        17,
+        71
+      ],
+      "scores": [
+        "0-2",
+        "1-2"
+      ],
+      "path": "predictions/uefa-wcl/hacken/manchester-city-w.json"
+    },
+    {
+      "match": "Real Madrid Women–Inter Women",
+      "kickoff_bjt": "01:45",
+      "probabilities": [
+        74,
+        16,
+        10
+      ],
+      "scores": [
+        "2-1",
+        "3-1"
+      ],
+      "path": "predictions/uefa-wcl/real-madrid-w/inter-w.json"
+    },
+    {
+      "match": "Portugalete–Real Union",
+      "kickoff_bjt": "02:00",
+      "probabilities": [
+        36,
+        30,
+        34
+      ],
+      "scores": [
+        "1-1",
+        "2-1"
+      ],
+      "path": "predictions/copa-del-rey/portugalete/real-union.json"
+    },
+    {
+      "match": "SSV Jeddeloh–Phoenix Luebeck",
+      "kickoff_bjt": "02:00",
+      "probabilities": [
+        26,
+        28,
+        46
+      ],
+      "scores": [
+        "1-2",
+        "2-2"
+      ],
+      "path": "predictions/regionalliga-north/ssv-jeddeloh/phoenix-lubeck.json"
+    },
+    {
+      "match": "Deportiva Minera–FC Cartagena",
+      "kickoff_bjt": "02:30",
+      "probabilities": [
+        36,
+        33,
+        31
+      ],
+      "scores": [
+        "1-1",
+        "1-0"
+      ],
+      "path": "predictions/copa-del-rey/deportiva-minera/fc-cartagena.json"
+    },
+    {
+      "match": "Reus Reddis–Barakaldo",
+      "kickoff_bjt": "02:30",
+      "probabilities": [
+        26,
+        29,
+        45
+      ],
+      "scores": [
+        "1-1",
+        "0-1"
+      ],
+      "path": "predictions/copa-del-rey/reus-reddis/barakaldo.json"
+    },
+    {
+      "match": "Alcoyano–Mallorca",
+      "kickoff_bjt": "03:00",
+      "probabilities": [
+        18,
+        25,
+        57
+      ],
+      "scores": [
+        "0-1",
+        "1-1"
+      ],
+      "path": "predictions/copa-del-rey/alcoyano/mallorca.json"
+    },
+    {
+      "match": "Badajoz–Tenerife",
+      "kickoff_bjt": "03:00",
+      "probabilities": [
+        24,
+        27,
+        49
+      ],
+      "scores": [
+        "0-1",
+        "1-1"
+      ],
+      "path": "predictions/copa-del-rey/badajoz/tenerife.json"
+    },
+    {
+      "match": "CS Constantine–ES Ben Aknoun",
+      "kickoff_bjt": "00:45",
+      "probabilities": [
+        27,
+        32,
+        41
+      ],
+      "scores": [
+        "0-1",
+        "1-1"
+      ],
+      "path": "predictions/algerian-ligue-1/cs-constantine/es-ben-aknoun.json"
+    },
+    {
+      "match": "CR Temouchent–JS El Biar",
+      "kickoff_bjt": "00:45",
+      "probabilities": [
+        31,
+        33,
+        36
+      ],
+      "scores": [
+        "1-1",
+        "0-1"
+      ],
+      "path": "predictions/algerian-ligue-1/cr-temouchent/js-el-biar.json"
+    },
+    {
+      "match": "El Gouna–Al Ittihad Alexandria",
+      "kickoff_bjt": "23:00 Nov18",
+      "probabilities": [
+        29,
+        32,
+        39
+      ],
+      "scores": [
+        "1-1",
+        "1-2"
+      ],
+      "path": "predictions/egypt-cup/el-gouna/al-ittihad-alexandria.json"
+    },
+    {
+      "match": "Tabor Sezana–Fuzinar",
+      "kickoff_bjt": "00:00",
+      "probabilities": [
+        70,
+        18,
+        12
+      ],
+      "scores": [
+        "2-1",
+        "2-0"
+      ],
+      "path": "predictions/slovenian-cup/tabor-sezana/fuzinar.json"
+    },
+    {
+      "match": "Race–Radomlje",
+      "kickoff_bjt": "00:00",
+      "probabilities": [
+        15,
+        19,
+        66
+      ],
+      "scores": [
+        "0-1",
+        "1-2"
+      ],
+      "path": "predictions/slovenian-cup/race/radomlje.json"
+    }
+  ],
+  "missing": [
+    "official Chinese Jincai handicaps and line history",
+    "provider pre-match xG",
+    "confirmed starting lineups",
+    "referee/weather for many fixtures",
+    "complete core-league K League 1 and J1 scan"
+  ],
+  "created_files": 13
+}
