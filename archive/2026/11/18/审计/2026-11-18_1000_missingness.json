@@ -1,0 +1,127 @@
+{
+  "schema_version": "daily-data-audit-v2",
+  "captured_at_beijing": "2026-11-18T10:04:21+08:00",
+  "review_date": "2026-11-17",
+  "review": {
+    "matches_confirmed": 30,
+    "prediction_snapshots_found": 1,
+    "prediction_snapshots_missing": 29,
+    "90m_hits": 0,
+    "first_score_hits": 0,
+    "second_score_hits": 0,
+    "half_full_hits": 0,
+    "handicap_verifiable": 0,
+    "risk_hint": "1 qualitative partial; no formal binary score"
+  },
+  "schedule": {
+    "date18_fixtures": 37,
+    "date19_fixtures": 13,
+    "confirmed_scores_date18": 24,
+    "result_unverified_date18": 10,
+    "scheduled_or_provisional_date18": 3,
+    "coverage_gaps_prev_day": 5,
+    "coverage_scan": "PARTIAL"
+  },
+  "forecast_window_audit": {
+    "snapshot_total": 28,
+    "within_6_12_hours": 24,
+    "outside_window_early_forecasts": 4,
+    "outside_ids": [
+      "pred-20261117-uwcl-hac-mci",
+      "pred-20261117-uwcl-rma-int",
+      "pred-20261117-uwcl-che-psg",
+      "pred-20261117-uwcl-juv-leu"
+    ],
+    "note": "4 Women's Champions League forecasts were 33.7–35.9 hours before kickoff. Classify as early forecasts; snapshots unchanged."
+  },
+  "xg": {
+    "iso_week": "2026-W47",
+    "unique_matches": 67,
+    "unique_matches_with_xg": 25,
+    "unique_matches_missing_xg": 42,
+    "coverage_pct": 37.31,
+    "provider_observation_records": 27,
+    "duplicate_provider_records": 2,
+    "team_weekly_rows": 138,
+    "team_ids_resolved": 0,
+    "match_ids_resolved": 0,
+    "provider_count": 15,
+    "source_comparisons": [
+      {
+        "match": "Germany-Netherlands",
+        "sourceA": "ScoutingStats",
+        "sourceA_xg": [
+          1.29,
+          0.89
+        ],
+        "sourceB": "Sofascore News article (methodology not disclosed)",
+        "sourceB_xg": [
+          1.52,
+          1.16
+        ]
+      },
+      {
+        "match": "Switzerland-Scotland",
+        "sourceA": "ScoutingStats",
+        "sourceA_xg": [
+          1.69,
+          1.85
+        ],
+        "sourceB": "Sofascore News article (methodology not disclosed)",
+        "sourceB_xg": [
+          2.23,
+          1.32
+        ]
+      }
+    ],
+    "additional_postmatch_xg": {
+      "match": "Saudi Arabia-Uzbekistan",
+      "provider": "FootballData.cn (methodology not disclosed)",
+      "xg": [
+        0.57,
+        1.32
+      ]
+    },
+    "pre_match_xg_excluded": {
+      "source": "Betarazi",
+      "xg": [
+        1.74,
+        1.4
+      ],
+      "reason": "pre-match estimate, not post-match team-week xG"
+    },
+    "own_model_xg": "not run",
+    "data_leakage": "none detected; all stored post-match estimates marked ineligible for pre-match input"
+  },
+  "market": {
+    "official_sporttery_handicap_verified": 0,
+    "previous_predictions": 28,
+    "official_lines_missing": 28,
+    "third_party_asian_handicap_substitution": "prohibited"
+  },
+  "database": {
+    "repo_file_present": true,
+    "verified_file_size_bytes": 63332352,
+    "sqlite_readable_in_run": false,
+    "reason": "GitHub connector could not materialize the binary SQLite file; it is not empty"
+  },
+  "missing_fields": [
+    "official_sporttery_handicap",
+    "opening_to_current_market_history",
+    "official_lineups",
+    "confirmed_injuries",
+    "referee",
+    "weather",
+    "pre_match_xg/xga",
+    "last3_raw_results",
+    "tactical_context",
+    "player_form",
+    "schedule_density",
+    "next_opponent_importance"
+  ],
+  "notes": [
+    "The previous report's claim that SQLite was 0 bytes is incorrect. Main-branch metadata shows 63,332,352 bytes; the binary could not be read in this run.",
+    "Schedule fixtures use English names while forecast files use Chinese names; separate snapshot-link manifest provides exact prediction IDs and paths.",
+    "V5.1 and frozen validation samples unchanged; no model execution at 10:00."
+  ]
+}
