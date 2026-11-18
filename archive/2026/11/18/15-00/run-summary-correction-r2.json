@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-11-18-1500-shadow",
+  "correction": "r2",
+  "created_at": "2026-11-18T15:03:10+08:00",
+  "files_created_total": 19,
+  "prediction_files": 13,
+  "supporting_files": 6,
+  "valid_json_files_read_back": 18,
+  "invalid_draft_file": "archive/2026/11/18/15-00/fixtures/bjt-18-19-refresh-correction-r1.json",
+  "primary_valid_fixture_snapshot": "archive/2026/11/18/15-00/fixtures/bjt-18-19-refresh-correction-r2.json",
+  "valid_forecast_index": "archive/2026/11/18/15-00/predictions/index.json",
+  "readback_checked": [
+    "initial fixture draft",
+    "fixture correction-r2",
+    "prediction index",
+    "13 individual predictions",
+    "run summary",
+    "run summary correction-r1"
+  ],
+  "note": "Correction-r1 is malformed JSON and is retained as an immutable failed draft. Correction-r2 is the usable fixture snapshot. All other 18 files are valid JSON and read back successfully."
+}
