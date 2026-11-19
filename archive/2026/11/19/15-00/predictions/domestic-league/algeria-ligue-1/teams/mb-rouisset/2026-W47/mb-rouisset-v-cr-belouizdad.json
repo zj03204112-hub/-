@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+  "match_id": null,
+  "provider_match_id": "1611457",
+  "competition": "Algerian Ligue 1",
+  "category": "domestic-league",
+  "season": "2026/27",
+  "iso_week": "2026-W47",
+  "home": "MB Rouisset",
+  "away": "CR Belouizdad",
+  "kickoff_utc": "2026-11-19T16:45:00Z",
+  "kickoff_bjt": "2026-11-20T00:45:00+08:00",
+  "market": {
+    "source": "OddsDirectory / BetGolazo / WinOnBetOnline",
+    "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+    "current_1x2": {
+      "home": 4.96,
+      "draw": 3.24,
+      "away": 1.77
+    },
+    "totals": {
+      "line": 2,
+      "over": 1.89,
+      "under": 1.83
+    },
+    "third_party_asian_handicap": {
+      "line": "Rouisset +1 / Belouizdad -1",
+      "prices": {
+        "home": 1.43,
+        "away": 2.67
+      },
+      "note": "third-party Asian line only; not JZ handicap"
+    },
+    "movement": "OddsDirectory reports no movement in its sampled 1X2 prices."
+  },
+  "supplier_model_estimates": [
+    {
+      "provider": "FDVS",
+      "xg_home": 1,
+      "xg_away": 1.1,
+      "type": "supplier-model-estimate",
+      "source": "https://www.fdvs.org/match/1611457-mb-rouisset-vs-cr-belouizdad",
+      "not_measured_match_xg": true
+    },
+    {
+      "provider": "Pikibet",
+      "xg_home": 1.35,
+      "xg_away": 1.15,
+      "type": "supplier-model-estimate",
+      "source": "https://pikibet.com/view/1611457/mb-rouisset-vs-cr-belouizdad",
+      "not_measured_match_xg": true
+    }
+  ],
+  "measured_xg": null,
+  "recent_form": {
+    "home_last5": "D-D-D-W-W",
+    "away_last5": "W-W-W-D-W",
+    "notes": "Rouisset's recent defensive record is strong; CR Belouizdad remain unbeaten and top the table."
+  },
+  "lineup_injury": {
+    "status": "AfricaFoot reports Rouisset expected at full strength; CR Belouizdad expected XI only, not official."
+  },
+  "tactics": null,
+  "weather": {
+    "source": "Ouargla forecast",
+    "summary": "Warm evening around 22-29°C, overcast, low/no rain expected.",
+    "impact": "low"
+  },
+  "referee": {
+    "name": "Naïm Bouara",
+    "status": "secondary fixture listing; official appointment not independently confirmed"
+  },
+  "next_opponent_importance": null,
+  "prediction": {
+    "score_1": "0-1",
+    "score_2": "1-1",
+    "wdl": {
+      "home": 24,
+      "draw": 29,
+      "away": 47
+    },
+    "half_full": "平/客",
+    "confidence": 53,
+    "risk": "high",
+    "risk_notes": [
+      "Market favours CR Belouizdad, but two supplier goal models imply a closer match.",
+      "Rouisset have several recent draws and a strong home record.",
+      "Supplier xG estimates differ and are not measured match xG."
+    ],
+    "jczq_handicap": null,
+    "jczq_result": "无法核验"
+  },
+  "strategy_id": "SHADOW-MKT-FORM-20261119-1500",
+  "model_version": "manual-shadow-r1",
+  "data_completeness": {
+    "confirmed": [
+      "fixture/time",
+      "1X2 odds",
+      "two supplier xG estimates",
+      "recent form",
+      "probable lineup source",
+      "weather forecast"
+    ],
+    "missing": [
+      "official JZ handicap",
+      "official lineups",
+      "independently verified injuries",
+      "measured xG",
+      "tactical report",
+      "next-opponent importance"
+    ]
+  },
+  "sources": [
+    "https://odds.directory/en/football/algeria/league-1/rouisset-vs-cr-belouizdad-2026-11-19/",
+    "https://betgolazo.net/match/mb-rouisset-vs-cr-belouizdad-1611457",
+    "https://www.fdvs.org/match/1611457-mb-rouisset-vs-cr-belouizdad",
+    "https://africafoot.com/mb-rouissat-cr-belouizdad-les-compos-probables-avant-le-choc/",
+    "https://thoitiet.online/en/algeria/ouargla/tomorrow/"
+  ]
+}
