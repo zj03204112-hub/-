@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+  "match_id": "2050572",
+  "provider_match_id": "36324827",
+  "competition": "UEFA Women's Champions League",
+  "category": "continental-club",
+  "season": "2026/27",
+  "iso_week": "2026-W47",
+  "home": "Paris FC Women",
+  "away": "HB Køge Women",
+  "kickoff_utc": "2026-11-19T17:45:00Z",
+  "kickoff_bjt": "2026-11-20T01:45:00+08:00",
+  "venue": "Stade Charléty, Paris",
+  "market": {
+    "source": "Betfair / PokerStars / BetUS",
+    "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+    "current_1x2_range": {
+      "home": [
+        1.55,
+        1.6
+      ],
+      "draw": [
+        4,
+        4.2
+      ],
+      "away": [
+        4.25,
+        4.75
+      ]
+    },
+    "totals": {
+      "over_2_5": 1.44,
+      "under_2_5": 2.5,
+      "source": "PokerStars"
+    },
+    "movement": "Cross-book prices disagree; a separate odds tracker shows Paris shortening and Køge drifting, but not on the same bookmaker snapshot.",
+    "third_party_asian_handicap": {
+      "line": "Paris FC -0.5/-1 (BetUS listing)",
+      "note": "third-party line only; not JZ handicap"
+    }
+  },
+  "supplier_model_estimates": [],
+  "measured_xg": null,
+  "recent_form": {
+    "home_last5": "2-1 Le Havre; 0-3 Real Madrid; 5-0 Montpellier; 1-1 PSG; 1-1 Häcken",
+    "away_last5": "1-1 OH Leuven; 0-8 Barcelona; 5-1 Servette; 0-1 Arsenal; 1-1 PSV"
+  },
+  "lineup_injury": {
+    "status": "UEFA press kit says official lineups not yet available; no reliable injury list retrieved."
+  },
+  "tactics": null,
+  "weather": {
+    "source": "Paris forecast",
+    "summary": "Around 10-11°C, patchy light rain possible, wind around 22 km/h.",
+    "impact": "low-to-moderate"
+  },
+  "referee": {
+    "name": "Lina Lehtovaara",
+    "status": "UEFA match information"
+  },
+  "next_opponent_importance": null,
+  "prediction": {
+    "score_1": "1-1",
+    "score_2": "2-1",
+    "wdl": {
+      "home": 54,
+      "draw": 23,
+      "away": 23
+    },
+    "half_full": "平/主",
+    "confidence": 55,
+    "risk": "high",
+    "risk_notes": [
+      "Paris are favoured by the market but remain winless in this UWCL league phase.",
+      "Køge have a 5-1 win but also an 0-8 loss; defensive variance is high.",
+      "Cross-book odds and the available team data are not fully consistent."
+    ],
+    "jczq_handicap": null,
+    "jczq_result": "无法核验"
+  },
+  "strategy_id": "SHADOW-MKT-FORM-20261119-1500",
+  "model_version": "manual-shadow-r1",
+  "data_completeness": {
+    "confirmed": [
+      "fixture/time",
+      "multiple bookmaker 1X2",
+      "over/under",
+      "recent form",
+      "UEFA match officials",
+      "weather forecast"
+    ],
+    "missing": [
+      "official JZ handicap",
+      "official starting XI",
+      "verified injuries",
+      "measured xG",
+      "tactical report",
+      "next-opponent importance"
+    ]
+  },
+  "sources": [
+    "https://www.betfair.es/betting/en/football/uefa-women-s-champions-league/paris-fc-w-v-koge-w/e-36324827",
+    "https://www.pokerstars.fr/en/sports/soccer/1/uefa-womens-champions-league/12220206/paris-fc-w-v-koge-w/36324827/",
+    "https://www.uefa.com/newsfiles/uwcl/2026/2050572_FR.pdf",
+    "https://www.uefa.com/womenschampionsleague/match/2050572--paris-vs-hb-koge/matchinfo/",
+    "https://www.skysports.com/football/paris-fc-women-vs-hb-koge-women/578276",
+    "https://dailymet.com/weather/paris/14-days"
+  ]
+}
