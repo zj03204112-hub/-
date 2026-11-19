@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+  "match_id": null,
+  "provider_match_id": "rotascore-4wyrn4hyzej8q86",
+  "competition": "UEFA Women's Champions League",
+  "category": "continental-club",
+  "season": "2026/27",
+  "iso_week": "2026-W47",
+  "home": "Austria Wien Women",
+  "away": "Bayern Munich Women",
+  "kickoff_utc": "2026-11-19T17:45:00Z",
+  "kickoff_bjt": "2026-11-20T01:45:00+08:00",
+  "venue": "Franz-Horr-Stadion, Vienna",
+  "market": {
+    "source": "OddsDirectory / Bookmaker",
+    "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+    "opening_1x2": {
+      "home": 9.38,
+      "draw": 6.93,
+      "away": 1.21
+    },
+    "current_1x2": {
+      "home": 19.62,
+      "draw": 7.85,
+      "away": 1.11
+    },
+    "movement": "Bayern shortened from 1.21 to 1.11; Austria drifted substantially",
+    "totals": {
+      "line": 3,
+      "over": 1.82,
+      "under": 1.91
+    },
+    "third_party_asian_handicap": {
+      "opening_line": "Bayern -1.5",
+      "current_line": "Bayern -2.5",
+      "current_bayern_price": 1.78,
+      "current_austria_price": 1.95,
+      "note": "third-party Asian line only; not JZ handicap"
+    }
+  },
+  "supplier_model_estimates": [],
+  "measured_xg": null,
+  "recent_form": {
+    "home_last5": "Austria's last four UWCL matches: L-D-L-L; recent domestic wins 3-0 and 3-0",
+    "away_last5": "Bayern's latest UWCL match was 2-1 at PSG; 10 wins from 10 in domestic league; seven straight wins over Wolfsburg."
+  },
+  "lineup_injury": {
+    "status": "Bayern official preview confirms Oberdorf, Gilles and Potsi unavailable; Amani suspended. Austria predicted XI and absences from secondary preview: Pal suspended, Schoffel injured, Uka doubtful. No official starting XI yet."
+  },
+  "tactics": {
+    "summary": "Bayern coach describes Austria as aggressive in one-v-one pressing and duels; Bayern intend to draw them into less comfortable areas and exploit space."
+  },
+  "weather": {
+    "source": "Vienna forecast",
+    "summary": "Around 9-10°C; one forecast flags evening thunderstorms, about 60% precipitation and gusts up to 65 km/h; forecast uncertainty high.",
+    "impact": "weather uncertainty could affect crossing and long-ball execution; no numerical adjustment"
+  },
+  "referee": {
+    "name": "Kirsty Dowle",
+    "status": "secondary match listing"
+  },
+  "next_opponent_importance": null,
+  "prediction": {
+    "score_1": "0-3",
+    "score_2": "0-2",
+    "wdl": {
+      "home": 5,
+      "draw": 11,
+      "away": 84
+    },
+    "half_full": "客/客",
+    "confidence": 78,
+    "risk": "medium",
+    "risk_notes": [
+      "Bayern's strong form and market move support the away direction.",
+      "Bayern have confirmed absences and a suspension.",
+      "Austria's aggressive press and potential wind/rain add variance; 4+ goal tail remains possible."
+    ],
+    "jczq_handicap": null,
+    "jczq_result": "无法核验"
+  },
+  "strategy_id": "SHADOW-MKT-FORM-20261119-1500",
+  "model_version": "manual-shadow-r1",
+  "data_completeness": {
+    "confirmed": [
+      "fixture/time",
+      "opening/current 1X2",
+      "total-goals line",
+      "third-party AH movement",
+      "recent form",
+      "official Bayern team news",
+      "tactical preview",
+      "weather forecast",
+      "referee secondary listing"
+    ],
+    "missing": [
+      "official JZ handicap",
+      "official starting XI",
+      "Austria full medical confirmation",
+      "measured xG",
+      "next-opponent importance"
+    ]
+  },
+  "sources": [
+    "https://odds.directory/en/football/international/women-uefa-champions-league/austria-vienna-w-vs-bayern-munich-w-2026-11-19/",
+    "https://fcbayern.com/frauen/en/news/previews/2026/11/preview-austria-vienna-fc-bayern-women-champions-league-matchday-5",
+    "https://www.thestatszone.com/austria-wien-vs-bayern-munich-preview-team-news-prediction-2026-27-uefa-womens-champions-league-league-phase-239717",
+    "https://www.rotascore.com/en/match/austria-wien-w-bayern-munchen-w/4wyrn4hyzej8q86",
+    "https://meteo1.net/local-weather/austria/vienna"
+  ]
+}
