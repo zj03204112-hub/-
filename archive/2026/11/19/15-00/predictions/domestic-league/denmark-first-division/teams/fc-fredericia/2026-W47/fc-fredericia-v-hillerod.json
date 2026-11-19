@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+  "match_id": null,
+  "provider_match_id": "1551379",
+  "competition": "Denmark 1st Division",
+  "category": "domestic-league",
+  "season": "2026/27",
+  "iso_week": "2026-W47",
+  "home": "FC Fredericia",
+  "away": "Hillerød",
+  "kickoff_utc": "2026-11-19T18:00:00Z",
+  "kickoff_bjt": "2026-11-20T02:00:00+08:00",
+  "venue": "Monjasa Park, Fredericia",
+  "market": {
+    "source": "OddsDirectory / RaraBet / Bookmakers Market",
+    "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+    "opening_1x2": {
+      "home": 1.34,
+      "draw": 5.31,
+      "away": 7.15
+    },
+    "current_1x2": {
+      "home": 1.33,
+      "draw": 5.3,
+      "away": 7.55
+    },
+    "movement": "home shortened slightly; away drifted 5.5%",
+    "totals": {
+      "line": 3.5,
+      "over": 2.01,
+      "under": 1.73
+    },
+    "third_party_asian_handicap": {
+      "line": "Fredericia -1.5",
+      "opening_price": 1.83,
+      "current_price": 1.86,
+      "note": "third-party Asian line only; not JZ handicap"
+    }
+  },
+  "supplier_model_estimates": [
+    {
+      "provider": "TipOracle",
+      "xg_home": 1.94,
+      "xg_away": 0.85,
+      "xgd_home": 1.09,
+      "type": "supplier-model-estimate",
+      "source": "https://www.tiporacle.com/match/1551379-fc-fredericia-vs-hillerod",
+      "not_measured_match_xg": true
+    }
+  ],
+  "measured_xg": null,
+  "recent_form": {
+    "home_last5": "3 wins, 2 losses; 9 scored, 4 conceded",
+    "away_last5": "2 wins, 3 losses; 5 scored, 7 conceded",
+    "notes": "Fredericia unbeaten in recent home sample; Hillerød away form is poor."
+  },
+  "lineup_injury": {
+    "status": "Doubtful/injured: Jeppe Kudsk, Alexander Lyng, Alessio Alicino, Frederik Emil Hedegaard Heiselberg, Noah Kretzschmar Nielsen. Two late-November yellow-card suspensions also listed; match-specific suspension status needs confirmation."
+  },
+  "tactics": null,
+  "weather": {
+    "source": "Met Office / WorldWeatherOnline",
+    "summary": "Cold around 3-4°C, mostly overcast; low precipitation probability in one forecast, wind roughly 15-20 km/h.",
+    "impact": "cold conditions may reduce tempo; no numerical adjustment"
+  },
+  "referee": {
+    "name": "M. Thomsen",
+    "status": "secondary fixture listing"
+  },
+  "next_opponent_importance": null,
+  "prediction": {
+    "score_1": "1-0",
+    "score_2": "2-0",
+    "wdl": {
+      "home": 66,
+      "draw": 20,
+      "away": 14
+    },
+    "half_full": "主/主",
+    "confidence": 64,
+    "risk": "medium",
+    "risk_notes": [
+      "Home price is stable and Fredericia's home record is strong.",
+      "Several Hillerød players are listed doubtful; exact availability is not official.",
+      "Supplier xG is a model estimate, not measured match xG."
+    ],
+    "jczq_handicap": null,
+    "jczq_result": "无法核验"
+  },
+  "strategy_id": "SHADOW-MKT-FORM-20261119-1500",
+  "model_version": "manual-shadow-r1",
+  "data_completeness": {
+    "confirmed": [
+      "fixture/time",
+      "opening/current 1X2",
+      "totals",
+      "third-party AH movement",
+      "recent form",
+      "supplier xG estimate",
+      "injury/doubtful list",
+      "referee secondary listing",
+      "weather forecast"
+    ],
+    "missing": [
+      "official JZ handicap",
+      "official starting XI",
+      "confirmed final availability",
+      "measured xG",
+      "tactical report",
+      "next-opponent importance"
+    ]
+  },
+  "sources": [
+    "https://odds.directory/en/football/denmark/1st-division/fc-fredericia-vs-hillerod-fodbold-2026-11-19/",
+    "https://rarabet.com/soccer/prediction/fc-fredericia-vs-hillerod/today/2026-11-19/1551379",
+    "https://predictvantage.com/match/40069-fc-fredericia-vs-hiller-d-2026-11-19",
+    "https://last5games.com/matches/fredericia-vs-hillerod-19753111/",
+    "https://weather.metoffice.gov.uk/forecast/u1yunn50b?new-design=false"
+  ]
+}
