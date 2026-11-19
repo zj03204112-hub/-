@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+  "match_id": null,
+  "provider_match_id": "1571601",
+  "competition": "Bulgaria Second League",
+  "category": "domestic-league",
+  "season": "2026/27",
+  "iso_week": "2026-W47",
+  "home": "Dobrudzha",
+  "away": "Fratria",
+  "kickoff_utc": "2026-11-19T15:00:00Z",
+  "kickoff_bjt": "2026-11-19T23:00:00+08:00",
+  "market": {
+    "source": "Bookmakers Market / OddStorm / OddVora",
+    "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+    "opening_1x2": {
+      "home": 4.75,
+      "draw": 3.7,
+      "away": 1.87
+    },
+    "current_best_1x2": {
+      "home": 3.76,
+      "draw": 3.1,
+      "away": 1.87
+    },
+    "movement": "home and draw shortened materially; away price roughly unchanged",
+    "totals": {
+      "over_2_5": 1.85,
+      "under_2_5": 1.8
+    },
+    "third_party_asian_handicap": null
+  },
+  "supplier_model_estimates": [
+    {
+      "provider": "OddVora",
+      "xg_home": 1.06,
+      "xg_away": 1.73,
+      "xgd_home": -0.67,
+      "type": "supplier-model-estimate",
+      "source": "https://www.oddvora.com/match/1571601-dobrudzha-vs-fratria",
+      "not_measured_match_xg": true
+    }
+  ],
+  "measured_xg": null,
+  "recent_form": {
+    "home_last5": "D-D-L-W-L",
+    "away_last5": "W-W-L-L-L",
+    "notes": "Other source's six-match sample has Fratria 3 wins; last-five form snapshots differ by competition filters."
+  },
+  "lineup_injury": {
+    "status": "No injuries or suspensions reported by one preview source; official lineups not released."
+  },
+  "tactics": null,
+  "weather": {
+    "source": "Dobrich forecast",
+    "summary": "Around 12-17°C, cloudy/possible light rain; sources disagree on rain probability (roughly 6%-25%).",
+    "impact": "minor uncertainty; no quantitative adjustment"
+  },
+  "referee": null,
+  "next_opponent_importance": null,
+  "prediction": {
+    "score_1": "1-1",
+    "score_2": "0-1",
+    "wdl": {
+      "home": 24,
+      "draw": 26,
+      "away": 50
+    },
+    "half_full": "平/客",
+    "confidence": 54,
+    "risk": "high",
+    "risk_notes": [
+      "Fratria stronger in table and supplier xG, but market home/draw prices shortened sharply.",
+      "Supplier xG is an estimate, not measured event data.",
+      "Weather forecast and last-five sample definitions differ."
+    ],
+    "jczq_handicap": null,
+    "jczq_result": "无法核验"
+  },
+  "strategy_id": "SHADOW-MKT-FORM-20261119-1500",
+  "model_version": "manual-shadow-r1",
+  "data_completeness": {
+    "confirmed": [
+      "fixture/time",
+      "1X2 odds and movement",
+      "supplier xG estimate",
+      "recent form",
+      "weather forecast"
+    ],
+    "missing": [
+      "official JZ handicap",
+      "confirmed lineups",
+      "verified injuries",
+      "referee",
+      "tactical report",
+      "next-opponent importance",
+      "measured xG"
+    ]
+  },
+  "sources": [
+    "https://bookmakers.market/football/bulgaria/second-league/dobrudzha-vs-fratria-2026-11-19/",
+    "https://www.oddvora.com/match/1571601-dobrudzha-vs-fratria",
+    "https://www.suresoccerpredict.com/football/matches/dobrudzha-vs-fratria-25088/",
+    "https://m.vremetodnes.bg/bg/dobrich/grad-dobrich"
+  ]
+}
