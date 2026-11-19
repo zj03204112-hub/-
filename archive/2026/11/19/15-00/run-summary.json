@@ -1,0 +1,50 @@
+{
+  "task": "daily-football-15-00-refresh",
+  "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+  "result": "partial-complete",
+  "schedule_range_bjt": [
+    "2026-11-19",
+    "2026-11-20"
+  ],
+  "predictions_generated": 6,
+  "predictions_with_verified_official_jczq_handicap": 0,
+  "early_registration_only": 15,
+  "postponed_fixtures_marked": 1,
+  "measured_xg_records": 0,
+  "supplier_xg_estimates_in_predictions": 5,
+  "lineup_confirmed_count": 0,
+  "sqlite_database_connected": false,
+  "v5_1_modified": false,
+  "frozen_validation_samples_modified": false,
+  "notes": [
+    "Only fixtures 6-12 hours from the 14:57 BJT data cutoff received score predictions.",
+    "Three Women's Champions League matches at 04:00 BJT on 20 Nov are outside the 12-hour limit and remain early-registration only.",
+    "J1 has three fixtures at 18:00 BJT on 20 Nov; these are outside the prediction window.",
+    "No official JZ handicap was verified for the six predictions; all are explicitly unverified.",
+    "Supplier xG projections are stored by provider and are not measured match xG.",
+    "No SQLite/database connection was available; no database write is claimed.",
+    "V5.1 and frozen validation samples were not modified."
+  ],
+  "files_to_write": [
+    "archive/2026/11/19/15-00/fixtures/bjt-19-20.json",
+    "archive/2026/11/19/15-00/predictions/index.json",
+    "archive/2026/11/19/15-00/predictions/domestic-league/bulgaria-second-league/teams/dobrudzha/2026-W47/dobrudzha-v-fratria.json",
+    "archive/2026/11/19/15-00/predictions/domestic-league/algeria-ligue-1/teams/mc-alger/2026-W47/mc-alger-v-olympique-akbou.json",
+    "archive/2026/11/19/15-00/predictions/domestic-league/algeria-ligue-1/teams/mb-rouisset/2026-W47/mb-rouisset-v-cr-belouizdad.json",
+    "archive/2026/11/19/15-00/predictions/continental-club/uefa-womens-champions-league/teams/austria-wien-w/2026-W47/austria-wien-w-v-bayern-munich-w.json",
+    "archive/2026/11/19/15-00/predictions/continental-club/uefa-womens-champions-league/teams/paris-fc-w/2026-W47/paris-fc-w-v-hb-koge-w.json",
+    "archive/2026/11/19/15-00/predictions/domestic-league/denmark-first-division/teams/fc-fredericia/2026-W47/fc-fredericia-v-hillerod.json",
+    "archive/2026/11/19/15-00/run-summary.json"
+  ],
+  "sources": [
+    "https://uniquescores.com/football/scores/2026-11-19/",
+    "https://sportpremi.com/live-scores/2026-11-19",
+    "https://www.jleague.jp/en/j1/match/",
+    "https://www.globalscorex.com/football/league/k-league-1",
+    "https://www.premierleague.com/en/news/4725574",
+    "https://www.laliga.com/en-NG/laliga-easports",
+    "https://www.bundesliga.com/en/bundesliga/matchday",
+    "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/",
+    "https://zq.gzpxm.cn/matches/2026-11-19"
+  ]
+}
