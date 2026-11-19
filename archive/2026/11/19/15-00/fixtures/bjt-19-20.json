@@ -1,0 +1,366 @@
+{
+  "schema_version": "1.0",
+  "task": "daily-football-15-00-refresh",
+  "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+  "timezone": "Asia/Shanghai",
+  "requested_bjt_date_range": [
+    "2026-11-19",
+    "2026-11-20"
+  ],
+  "iso_week": "2026-W47",
+  "tracking_scope": {
+    "core_leagues": [
+      "Premier League",
+      "La Liga",
+      "Bundesliga",
+      "Serie A",
+      "Ligue 1",
+      "K League 1",
+      "J1 League"
+    ],
+    "other_categories": [
+      "domestic_leagues",
+      "domestic_cups",
+      "continental_club",
+      "national_teams",
+      "other"
+    ],
+    "nations_league_separate": true
+  },
+  "events": [
+    {
+      "id": "dobrich-fratria-20261119",
+      "competition": "Bulgaria Second League",
+      "category": "domestic-league",
+      "home": "Dobrudzha",
+      "away": "Fratria",
+      "kickoff_utc": "2026-11-19T15:00:00Z",
+      "kickoff_bjt": "2026-11-19T23:00:00+08:00",
+      "local_kickoff": "2026-11-19 16:00 WAT",
+      "status": "scheduled",
+      "prediction_window": "6-12h",
+      "prediction_status": "generated"
+    },
+    {
+      "id": "mc-alger-akbou-20261119",
+      "competition": "Algerian Ligue 1",
+      "category": "domestic-league",
+      "home": "MC Alger",
+      "away": "Olympique Akbou",
+      "kickoff_utc": "2026-11-19T16:45:00Z",
+      "kickoff_bjt": "2026-11-20T00:45:00+08:00",
+      "local_kickoff": "2026-11-19 17:45 WAT",
+      "status": "scheduled",
+      "prediction_window": "6-12h",
+      "prediction_status": "generated"
+    },
+    {
+      "id": "rouisset-belouizdad-20261119",
+      "competition": "Algerian Ligue 1",
+      "category": "domestic-league",
+      "home": "MB Rouisset",
+      "away": "CR Belouizdad",
+      "kickoff_utc": "2026-11-19T16:45:00Z",
+      "kickoff_bjt": "2026-11-20T00:45:00+08:00",
+      "local_kickoff": "2026-11-19 17:45 WAT",
+      "status": "scheduled",
+      "prediction_window": "6-12h",
+      "prediction_status": "generated"
+    },
+    {
+      "id": "austria-wien-bayern-w-20261119",
+      "competition": "UEFA Women's Champions League",
+      "category": "continental-club",
+      "home": "Austria Wien Women",
+      "away": "Bayern Munich Women",
+      "kickoff_utc": "2026-11-19T17:45:00Z",
+      "kickoff_bjt": "2026-11-20T01:45:00+08:00",
+      "local_kickoff": "2026-11-19 18:45 CET",
+      "status": "scheduled",
+      "prediction_window": "6-12h",
+      "prediction_status": "generated"
+    },
+    {
+      "id": "paris-fc-koge-w-20261119",
+      "competition": "UEFA Women's Champions League",
+      "category": "continental-club",
+      "home": "Paris FC Women",
+      "away": "HB Køge Women",
+      "kickoff_utc": "2026-11-19T17:45:00Z",
+      "kickoff_bjt": "2026-11-20T01:45:00+08:00",
+      "local_kickoff": "2026-11-19 18:45 CET",
+      "status": "scheduled",
+      "prediction_window": "6-12h",
+      "prediction_status": "generated"
+    },
+    {
+      "id": "fredericia-hillerod-20261119",
+      "competition": "Denmark 1st Division",
+      "category": "domestic-league",
+      "home": "FC Fredericia",
+      "away": "Hillerød",
+      "kickoff_utc": "2026-11-19T18:00:00Z",
+      "kickoff_bjt": "2026-11-20T02:00:00+08:00",
+      "local_kickoff": "2026-11-19 19:00 CET",
+      "status": "scheduled",
+      "prediction_window": "6-12h",
+      "prediction_status": "generated"
+    },
+    {
+      "id": "boston-river-maldonado-20261119",
+      "competition": "Uruguay Primera División",
+      "category": "domestic-league",
+      "home": "Boston River",
+      "away": "Deportivo Maldonado",
+      "kickoff_utc": "2026-11-19T19:30:00Z",
+      "kickoff_bjt": "2026-11-20T03:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "penarol-cerro-largo-20261119",
+      "competition": "Uruguay Primera División",
+      "category": "domestic-league",
+      "home": "Peñarol",
+      "away": "Cerro Largo",
+      "kickoff_utc": "2026-11-19T19:30:00Z",
+      "kickoff_bjt": "2026-11-20T03:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "progreso-atletico-torque-20261119",
+      "competition": "Uruguay Primera División",
+      "category": "domestic-league",
+      "home": "Progreso",
+      "away": "Atlético Torque",
+      "kickoff_utc": "2026-11-19T19:30:00Z",
+      "kickoff_bjt": "2026-11-20T03:30:00+08:00",
+      "status": "postponed",
+      "prediction_window": "not-applicable",
+      "prediction_status": "not-predicted"
+    },
+    {
+      "id": "amiens-caen-20261119",
+      "competition": "French Ligue 3",
+      "category": "domestic-league",
+      "home": "Amiens",
+      "away": "Caen",
+      "kickoff_utc": "2026-11-19T20:45:00Z",
+      "kickoff_bjt": "2026-11-20T04:45:00+08:00",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "vasco-internacional-20261119",
+      "competition": "Brazil Serie A",
+      "category": "domestic-league",
+      "home": "Vasco da Gama",
+      "away": "Internacional",
+      "kickoff_utc": "2026-11-19T22:30:00Z",
+      "kickoff_bjt": "2026-11-20T06:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "vitoria-bragantino-20261119",
+      "competition": "Brazil Serie A",
+      "category": "domestic-league",
+      "home": "Vitória",
+      "away": "RB Bragantino",
+      "kickoff_utc": "2026-11-19T22:30:00Z",
+      "kickoff_bjt": "2026-11-20T06:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "sao-paulo-fluminense-20261120",
+      "competition": "Brazil Serie A",
+      "category": "domestic-league",
+      "home": "São Paulo",
+      "away": "Fluminense",
+      "kickoff_utc": "2026-11-20T00:30:00Z",
+      "kickoff_bjt": "2026-11-20T08:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "orlando-cincinnati-20261120",
+      "competition": "MLS",
+      "category": "domestic-league",
+      "home": "Orlando City",
+      "away": "FC Cincinnati",
+      "kickoff_utc": "2026-11-20T00:30:00Z",
+      "kickoff_bjt": "2026-11-20T08:30:00+08:00",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "seattle-rsl-20261120",
+      "competition": "MLS",
+      "category": "domestic-league",
+      "home": "Seattle Sounders",
+      "away": "Real Salt Lake",
+      "kickoff_utc": "2026-11-20T03:00:00Z",
+      "kickoff_bjt": "2026-11-20T11:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "kashima-shimizu-20261120",
+      "competition": "J1 League",
+      "category": "domestic-league",
+      "home": "Kashima Antlers",
+      "away": "Shimizu S-Pulse",
+      "kickoff_utc": "2026-11-20T10:00:00Z",
+      "kickoff_bjt": "2026-11-20T18:00:00+08:00",
+      "local_kickoff": "2026-11-20 19:00 JST",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "kashiwa-jef-20261120",
+      "competition": "J1 League",
+      "category": "domestic-league",
+      "home": "Kashiwa Reysol",
+      "away": "JEF United Chiba",
+      "kickoff_utc": "2026-11-20T10:00:00Z",
+      "kickoff_bjt": "2026-11-20T18:00:00+08:00",
+      "local_kickoff": "2026-11-20 19:00 JST",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "vissel-mito-20261120",
+      "competition": "J1 League",
+      "category": "domestic-league",
+      "home": "Vissel Kobe",
+      "away": "Mito Hollyhock",
+      "kickoff_utc": "2026-11-20T10:00:00Z",
+      "kickoff_bjt": "2026-11-20T18:00:00+08:00",
+      "local_kickoff": "2026-11-20 19:00 JST",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "arsenal-lyonnes-w-20261119",
+      "competition": "UEFA Women's Champions League",
+      "category": "continental-club",
+      "home": "Arsenal Women",
+      "away": "OL Lyonnes",
+      "kickoff_utc": "2026-11-19T20:00:00Z",
+      "kickoff_bjt": "2026-11-20T04:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "barcelona-servette-w-20261119",
+      "competition": "UEFA Women's Champions League",
+      "category": "continental-club",
+      "home": "Barcelona Women",
+      "away": "Servette Chênois Women",
+      "kickoff_utc": "2026-11-19T20:00:00Z",
+      "kickoff_bjt": "2026-11-20T04:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    },
+    {
+      "id": "benfica-roma-w-20261119",
+      "competition": "UEFA Women's Champions League",
+      "category": "continental-club",
+      "home": "Benfica Women",
+      "away": "Roma Women",
+      "kickoff_utc": "2026-11-19T20:00:00Z",
+      "kickoff_bjt": "2026-11-20T04:00:00+08:00",
+      "status": "scheduled",
+      "prediction_window": "outside-6-12h",
+      "prediction_status": "early-registration"
+    }
+  ],
+  "additional_competition_notes": [
+    {
+      "competition": "FIFA U-17 World Cup",
+      "date_bjt": "2026-11-19",
+      "kickoff_bjt": "23:00",
+      "fixture_count": 24,
+      "status": "scheduled",
+      "note": "Within 6-12h window, but not enough independently verified per-team form, squad and market data in this refresh; no score predictions generated."
+    },
+    {
+      "competition": "ASEAN Club Championship",
+      "date_bjt": "2026-11-19",
+      "fixtures": [
+        "Svay Rieng vs Port",
+        "Persib vs Shan United",
+        "Công An Hà Nội vs Johor Darul Ta'zim"
+      ],
+      "kickoff_bjt_approx": [
+        "20:00",
+        "20:00",
+        "20:30"
+      ],
+      "note": "Less than six hours after cutoff; early registration only."
+    },
+    {
+      "competition": "International friendly U17",
+      "date_bjt": "2026-11-19",
+      "fixtures": [
+        "Switzerland U17 vs Czechia U17"
+      ],
+      "kickoff_bjt": "18:00",
+      "note": "Less than six hours after cutoff; no prediction under the 6-12h rule."
+    },
+    {
+      "competition": "AFC U-17 Asian Cup",
+      "date_bjt": "2026-11-20",
+      "fixture_count": 13,
+      "first_kickoff_bjt": "15:30",
+      "note": "Early registration; outside 6-12h window."
+    }
+  ],
+  "core_league_status": {
+    "Premier League": "No fixture on 2026-11-19 or 2026-11-20 BJT; next published round begins 2026-11-21 BJT.",
+    "La Liga": "No fixture on 2026-11-19 or 2026-11-20 BJT; Athletic Club vs Espanyol is 2026-11-21 03:00 BJT.",
+    "Bundesliga": "No fixture on 2026-11-19 or 2026-11-20 BJT; Bayern vs 1. FC Köln is 2026-11-21 03:30 BJT (Bayern club listing 20:30 CET).",
+    "Serie A (Italy)": "No fixture confirmed in the 2026-11-19/20 BJT scan.",
+    "Ligue 1": "No fixture on 2026-11-19 or 2026-11-20 BJT; Troyes vs Le Havre falls on 2026-11-21 BJT.",
+    "K League 1": "No fixture on 2026-11-19 or 2026-11-20 BJT; next listed round begins 2026-11-21 BJT.",
+    "J1 League": "Three fixtures confirmed on 2026-11-20 BJT at 18:00."
+  },
+  "jczq_public_feed": {
+    "status": "six-window-matches-not-found",
+    "note": "Accessible public JZ schedule mirror showed upcoming JZ fixtures for Brazil Serie A and MLS only; no official JZ handicap line was verified for any of the six predicted matches. No third-party Asian handicap was substituted.",
+    "listed_upcoming_matches": [
+      "Vitória vs RB Bragantino — 2026-11-20 06:30 BJT",
+      "São Paulo vs Fluminense — 2026-11-20 08:30 BJT",
+      "Orlando City vs FC Cincinnati — 2026-11-20 08:30 BJT",
+      "Seattle Sounders vs Real Salt Lake — 2026-11-20 11:00 BJT"
+    ],
+    "source": "https://zq.gzpxm.cn/matches/2026-11-19",
+    "official_source_direct_access": "not independently retrieved"
+  },
+  "sources": [
+    "https://uniquescores.com/football/scores/2026-11-19/",
+    "https://sportpremi.com/live-scores/2026-11-19",
+    "https://www.jleague.jp/en/j1/match/",
+    "https://www.globalscorex.com/football/league/k-league-1",
+    "https://www.premierleague.com/en/news/4725574",
+    "https://www.laliga.com/en-NG/laliga-easports",
+    "https://www.bundesliga.com/en/bundesliga/matchday",
+    "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/",
+    "https://zq.gzpxm.cn/matches/2026-11-19"
+  ]
+}
