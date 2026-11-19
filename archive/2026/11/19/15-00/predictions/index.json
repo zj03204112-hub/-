@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "task": "daily-football-15-00-refresh",
+  "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+  "iso_week": "2026-W47",
+  "strategy_id": "SHADOW-MKT-FORM-20261119-1500",
+  "model_version": "manual-shadow-r1",
+  "prediction_count": 6,
+  "all_official_jczq_handicaps_verified": false,
+  "note": "All six matches are shadow predictions, not V5.1 model outputs. Official JZ handicap was not verified for any of the six; all JZ results are null/unverifiable. Third-party Asian handicap, where stored, is isolated as market context and never substituted.",
+  "predictions": [
+    {
+      "key": "dobrudzha-v-fratria",
+      "path": "archive/2026/11/19/15-00/predictions/domestic-league/bulgaria-second-league/teams/dobrudzha/2026-W47/dobrudzha-v-fratria.json",
+      "home": "Dobrudzha",
+      "away": "Fratria",
+      "kickoff_bjt": "2026-11-19T23:00:00+08:00",
+      "score_1": "1-1",
+      "score_2": "0-1",
+      "wdl": {
+        "home": 24,
+        "draw": 26,
+        "away": 50
+      },
+      "half_full": "平/客",
+      "confidence": 54,
+      "risk": "high",
+      "jczq_result": "无法核验"
+    },
+    {
+      "key": "mc-alger-v-olympique-akbou",
+      "path": "archive/2026/11/19/15-00/predictions/domestic-league/algeria-ligue-1/teams/mc-alger/2026-W47/mc-alger-v-olympique-akbou.json",
+      "home": "MC Alger",
+      "away": "Olympique Akbou",
+      "kickoff_bjt": "2026-11-20T00:45:00+08:00",
+      "score_1": "1-0",
+      "score_2": "2-0",
+      "wdl": {
+        "home": 58,
+        "draw": 27,
+        "away": 15
+      },
+      "half_full": "主/主",
+      "confidence": 59,
+      "risk": "medium-high",
+      "jczq_result": "无法核验"
+    },
+    {
+      "key": "mb-rouisset-v-cr-belouizdad",
+      "path": "archive/2026/11/19/15-00/predictions/domestic-league/algeria-ligue-1/teams/mb-rouisset/2026-W47/mb-rouisset-v-cr-belouizdad.json",
+      "home": "MB Rouisset",
+      "away": "CR Belouizdad",
+      "kickoff_bjt": "2026-11-20T00:45:00+08:00",
+      "score_1": "0-1",
+      "score_2": "1-1",
+      "wdl": {
+        "home": 24,
+        "draw": 29,
+        "away": 47
+      },
+      "half_full": "平/客",
+      "confidence": 53,
+      "risk": "high",
+      "jczq_result": "无法核验"
+    },
+    {
+      "key": "austria-wien-w-v-bayern-munich-w",
+      "path": "archive/2026/11/19/15-00/predictions/continental-club/uefa-womens-champions-league/teams/austria-wien-w/2026-W47/austria-wien-w-v-bayern-munich-w.json",
+      "home": "Austria Wien Women",
+      "away": "Bayern Munich Women",
+      "kickoff_bjt": "2026-11-20T01:45:00+08:00",
+      "score_1": "0-3",
+      "score_2": "0-2",
+      "wdl": {
+        "home": 5,
+        "draw": 11,
+        "away": 84
+      },
+      "half_full": "客/客",
+      "confidence": 78,
+      "risk": "medium",
+      "jczq_result": "无法核验"
+    },
+    {
+      "key": "paris-fc-w-v-hb-koge-w",
+      "path": "archive/2026/11/19/15-00/predictions/continental-club/uefa-womens-champions-league/teams/paris-fc-w/2026-W47/paris-fc-w-v-hb-koge-w.json",
+      "home": "Paris FC Women",
+      "away": "HB Køge Women",
+      "kickoff_bjt": "2026-11-20T01:45:00+08:00",
+      "score_1": "1-1",
+      "score_2": "2-1",
+      "wdl": {
+        "home": 54,
+        "draw": 23,
+        "away": 23
+      },
+      "half_full": "平/主",
+      "confidence": 55,
+      "risk": "high",
+      "jczq_result": "无法核验"
+    },
+    {
+      "key": "fc-fredericia-v-hillerod",
+      "path": "archive/2026/11/19/15-00/predictions/domestic-league/denmark-first-division/teams/fc-fredericia/2026-W47/fc-fredericia-v-hillerod.json",
+      "home": "FC Fredericia",
+      "away": "Hillerød",
+      "kickoff_bjt": "2026-11-20T02:00:00+08:00",
+      "score_1": "1-0",
+      "score_2": "2-0",
+      "wdl": {
+        "home": 66,
+        "draw": 20,
+        "away": 14
+      },
+      "half_full": "主/主",
+      "confidence": 64,
+      "risk": "medium",
+      "jczq_result": "无法核验"
+    }
+  ]
+}
