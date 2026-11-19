@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+  "match_id": null,
+  "provider_match_id": "1611455",
+  "competition": "Algerian Ligue 1",
+  "category": "domestic-league",
+  "season": "2026/27",
+  "iso_week": "2026-W47",
+  "home": "MC Alger",
+  "away": "Olympique Akbou",
+  "kickoff_utc": "2026-11-19T16:45:00Z",
+  "kickoff_bjt": "2026-11-20T00:45:00+08:00",
+  "market": {
+    "source": "OddsFilter / BetGolazo / TipOracle",
+    "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+    "current_1x2": {
+      "home": 1.43,
+      "draw": 3.66,
+      "away": 7.42
+    },
+    "totals": {
+      "over_2_5": 2.22,
+      "under_2_5": 1.56
+    },
+    "movement": "no reliable same-book opening-to-current series confirmed",
+    "third_party_asian_handicap": {
+      "line": "MC Alger -1",
+      "prices": {
+        "home": 1.42,
+        "away": 1.62
+      },
+      "note": "third-party Asian line only; not JZ handicap"
+    }
+  },
+  "supplier_model_estimates": [
+    {
+      "provider": "TipOracle",
+      "xg_home": 1.31,
+      "xg_away": 0.61,
+      "xgd_home": 0.7,
+      "type": "supplier-model-estimate",
+      "source": "https://www.tiporacle.com/match/1611455-mc-alger-vs-olympique-akbou",
+      "not_measured_match_xg": true
+    }
+  ],
+  "measured_xg": null,
+  "recent_form": {
+    "home_last5": "L-W-W-W-W",
+    "away_last5": "D-D-W-W-D",
+    "notes": "MC Alger lost 0-1 to JS El Biar most recently; Akbou's latest two matches were 0-0 draws."
+  },
+  "lineup_injury": {
+    "status": "Probable MC Alger XI published by AfricaFoot; no confirmed official XI. Injury list not independently verified."
+  },
+  "tactics": {
+    "summary": "Preview suggests MC Alger aim to keep defensive stability and improve attacking animation; not a verified coach tactical statement."
+  },
+  "weather": {
+    "source": "Algiers forecast",
+    "summary": "Evening around 15-25°C; partly cloudy, rain probability around 20% in one forecast.",
+    "impact": "low"
+  },
+  "referee": {
+    "name": "Ayoub Belhachemi",
+    "status": "secondary fixture listing; not independently confirmed from official LFP match centre"
+  },
+  "next_opponent_importance": null,
+  "prediction": {
+    "score_1": "1-0",
+    "score_2": "2-0",
+    "wdl": {
+      "home": 58,
+      "draw": 27,
+      "away": 15
+    },
+    "half_full": "主/主",
+    "confidence": 59,
+    "risk": "medium-high",
+    "risk_notes": [
+      "Market strongly favours MC Alger, while one external model disagrees substantially on draw/away probability.",
+      "Akbou have gone five matches unbeaten and are difficult to beat.",
+      "Supplier xG is a model estimate, not measured match xG."
+    ],
+    "jczq_handicap": null,
+    "jczq_result": "无法核验"
+  },
+  "strategy_id": "SHADOW-MKT-FORM-20261119-1500",
+  "model_version": "manual-shadow-r1",
+  "data_completeness": {
+    "confirmed": [
+      "fixture/time",
+      "1X2 odds",
+      "supplier xG estimate",
+      "recent form",
+      "probable lineup source",
+      "weather forecast"
+    ],
+    "missing": [
+      "official JZ handicap",
+      "official starting XI",
+      "verified injuries",
+      "measured xG",
+      "full tactical analysis",
+      "next-opponent importance"
+    ]
+  },
+  "sources": [
+    "https://oddsfilter.com/event/1001611455-mc-alger-olympique-akbou",
+    "https://www.tiporacle.com/match/1611455-mc-alger-vs-olympique-akbou",
+    "https://africafoot.com/mc-alger-olympique-akbou-les-compos-probables-avant-le-choc/",
+    "https://african.football/mc-alger-v-olympique-akbou-kick-off-time-tv-channel-and-match-preview/",
+    "https://africameteo.com/en/news/algeria-capital-weather"
+  ]
+}
