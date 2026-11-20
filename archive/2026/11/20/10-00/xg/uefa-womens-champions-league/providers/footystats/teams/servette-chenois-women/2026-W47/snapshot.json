@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "snapshot_type": "team_iso_week_xg_provider_specific",
+  "captured_at_bjt": "2026-11-20T10:31:11+08:00",
+  "identity": {
+    "team_id": "internal:team:servette-chenois-women",
+    "provider_team_id": null,
+    "competition_id": "internal:competition:uefa-womens-champions-league",
+    "competition": "UEFA Women's Champions League",
+    "season": "2026/27",
+    "iso_week": "2026-W47",
+    "provider": "FootyStats"
+  },
+  "matches": [
+    {
+      "match_id": "internal:uefa-womens-champions-league:2026-11-19:barcelona-women-servette-chenois-women",
+      "provider_match_id": null,
+      "match_date_utc": "2026-11-19",
+      "match_date_bjt": "2026-11-20",
+      "opponent": "Barcelona Women",
+      "home_away": "away",
+      "score": "6-0",
+      "xg": 0.86,
+      "xga": 2.88,
+      "xgd": -2.02,
+      "xg_type": "provider_model_estimate_post_match",
+      "provider": "FootyStats",
+      "provider_model_version": "not_disclosed",
+      "source": "https://footystats.org/europe/fc-barcelona-women-vs-servette-fc-chenois-feminin-h2h-stats",
+      "measured_xg": null,
+      "use_as_same_match_pre_match_input": false
+    }
+  ],
+  "weekly_summary": {
+    "matches_played": 1,
+    "provider_model_xg_sum": 0.86,
+    "provider_model_xga_sum": 2.88,
+    "provider_model_xgd_sum": -2.02,
+    "provider_model_xg_per90": 0.86,
+    "provider_model_xga_per90": 2.88,
+    "provider_model_xgd_per90": -2.02,
+    "measured_xg_sum": null,
+    "provider_data_not_combined_with_other_suppliers": true
+  },
+  "leakage_audit": {
+    "post_match_xg": true,
+    "use_as_same_match_pre_match_input": false,
+    "append_only": true
+  }
+}
