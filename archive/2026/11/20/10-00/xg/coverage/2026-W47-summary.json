@@ -3,17 +3,18 @@
   "captured_at_bjt": "2026-11-20T10:31:11+08:00",
   "iso_week": "2026-W47",
   "summary": {
-    "team_week_snapshots_written": 30,
+    "team_week_snapshots_written": 54,
     "provider_post_match_xg_team_records": 10,
     "provider_post_match_xg_match_records": 5,
     "pre_match_supplier_estimate_only_team_records": 8,
-    "no_xg_team_records": 8,
+    "no_xg_team_records": 32,
     "measured_xg_records": 0,
     "own_model_estimates_added": 0,
     "supplier_sources_separated": true,
     "history_overwrite": false,
     "additional_provider_crosscheck_team_records": 4,
-    "additional_provider_crosscheck_match_records": 2
+    "additional_provider_crosscheck_match_records": 2,
+    "additional_missing_team_week_files": 24
   },
   "provider_post_match_matches": [
     {
@@ -131,7 +132,14 @@
       "ASEAN Club Championship Shopee Cup 2026-11-19 (3 matches)",
       "Switzerland U17 vs Czechia U17 (1 match)"
     ],
-    "reason": "可取得的免费官方赛果源未提供比赛级xG，且未检索到可追溯的免费供应商赛后xG字段；保持null，不以进球数或赛前预测估算填充"
+    "reason": "可取得的免费官方赛果源未提供比赛级xG，且未检索到可追溯的免费供应商赛后xG字段；保持null，不以进球数或赛前预测估算填充",
+    "individual_team_week_files_written_for_missing_competitions": 24,
+    "missing_competitions": [
+      "FIFA U-17 World Cup 2026-11-19",
+      "ASEAN Club Championship Shopee Cup 2026-11-19",
+      "International Friendly U17 2026-11-19"
+    ],
+    "missing_reason": "逐队ISO周文件已建立，xG/xGA/xGD保持null；免费可靠来源未提供比赛级xG，不用比分或自有模型回填。"
   },
   "supplier_definition": {
     "AlmanacStats": "赛后供应商模型估算，模型版本未公开；不是物理实测值",
