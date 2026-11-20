@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "snapshot_type": "team_iso_week_xg",
+  "captured_at_bjt": "2026-11-20T10:31:11+08:00",
+  "identity": {
+    "team_id": "internal:team:fc-fredericia",
+    "provider_team_id": null,
+    "provider_team_id_missing_reason": "本轮未取得稳定外部球队ID，采用内部确定性slug",
+    "competition_id": "internal:competition:denmark-first-division",
+    "competition": "Denmark 1st Division",
+    "season": "2026/27",
+    "iso_week": "2026-W47"
+  },
+  "matches": [
+    {
+      "match_id": "internal:denmark-first-division:2026-11-19:fredericia-hillerod",
+      "provider_match_id": "1551379",
+      "match_date_utc": "2026-11-19",
+      "match_date_bjt": "2026-11-20",
+      "opponent": "Hillerød",
+      "home_away": "home",
+      "score": "4-1",
+      "post_match_provider_xg": null,
+      "post_match_provider_xga": null,
+      "post_match_provider_xgd": null,
+      "post_match_xg_type": "missing",
+      "provider": null,
+      "provider_model_version": null,
+      "source": null,
+      "measured_xg": null,
+      "pre_match_supplier_estimates": [
+        {
+          "provider": "TipOracle",
+          "xg": 1.94,
+          "xga": 0.85,
+          "source": "https://www.tiporacle.com/match/1551379-fc-fredericia-vs-hillerod"
+        }
+      ],
+      "missing_reason": "未找到免费可追溯的赛后比赛级xG；赛前估算单独保留，不混入赛后周汇总"
+    }
+  ],
+  "weekly_summary": {
+    "matches_played": 1,
+    "available_post_match_provider_xg_matches": 0,
+    "missing_post_match_xg_matches": 1,
+    "provider_model_xg_sum": null,
+    "provider_model_xga_sum": null,
+    "provider_model_xgd_sum": null,
+    "provider_model_xg_per90": null,
+    "provider_model_xga_per90": null,
+    "provider_model_xgd_per90": null,
+    "measured_xg_sum": null,
+    "measured_xga_sum": null,
+    "pre_match_supplier_estimates_are_separate": true
+  },
+  "leakage_audit": {
+    "post_match_xg": false,
+    "use_as_same_match_pre_match_input": false,
+    "append_only": true
+  }
+}
