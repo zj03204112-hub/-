@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "snapshot_type": "team_iso_week_xg",
+  "captured_at_bjt": "2026-11-20T10:31:11+08:00",
+  "timezone": "Asia/Shanghai",
+  "identity": {
+    "team_id": "internal:team:mc-alger",
+    "provider_team_id": null,
+    "provider_team_id_missing_reason": "本轮免费来源未返回可稳定映射的球队外部ID；内部ID为确定性slug，不冒充供应商ID",
+    "competition_id": "internal:competition:algeria-ligue-1",
+    "competition": "Algerian Ligue 1",
+    "season": "2026/27",
+    "iso_week": "2026-W47"
+  },
+  "matches": [
+    {
+      "match_id": "internal:algeria-ligue-1:2026-11-19:mc-alger-akbou",
+      "provider_match_id": "1611455",
+      "match_date_utc": "2026-11-19",
+      "match_date_bjt": "2026-11-20",
+      "opponent": "Olympique Akbou",
+      "home_away": "home",
+      "score": "0-1",
+      "post_match_provider_xg": null,
+      "post_match_provider_xga": null,
+      "post_match_provider_xgd": null,
+      "post_match_xg_type": "missing",
+      "provider": null,
+      "provider_source": null,
+      "provider_model_version": "not_disclosed",
+      "measured_xg": null,
+      "missing_reason": "本轮检索未取得免费、可追溯的该场赛后xG；保留null，不以赛前预测代替赛后实测",
+      "pre_match_supplier_estimates": [
+        {
+          "provider": "TipOracle",
+          "xg": 1.31,
+          "xga": 0.61,
+          "xgd": 0.7,
+          "type": "supplier_model_estimate_pre_match",
+          "source": "https://www.tiporacle.com/match/1611455-mc-alger-vs-olympique-akbou",
+          "not_measured_match_xg": true
+        }
+      ]
+    }
+  ],
+  "weekly_summary": {
+    "matches_played": 1,
+    "matches_with_post_match_provider_xg": 0,
+    "matches_missing_post_match_xg": 1,
+    "provider_model_estimate_xg_sum": null,
+    "provider_model_estimate_xga_sum": null,
+    "provider_model_estimate_xgd_sum": null,
+    "provider_model_estimate_xg_per90": null,
+    "provider_model_estimate_xga_per90": null,
+    "provider_model_estimate_xgd_per90": null,
+    "measured_xg_sum": null,
+    "measured_xga_sum": null,
+    "pre_match_supplier_estimates_are_separate": true
+  },
+  "leakage_audit": {
+    "post_match_data_is_not_valid_for_same_match_pre_match_input": true,
+    "use_as_same_match_pre_match_input": false,
+    "use_for_future_match_only_after_captured_at": true,
+    "history_is_append_only": true
+  },
+  "missing_reason": "赛后比赛级xG缺失；不同供应商赛前估算若有则仅保存在pre_match_supplier_estimates，禁止混入周度赛后汇总"
+}
