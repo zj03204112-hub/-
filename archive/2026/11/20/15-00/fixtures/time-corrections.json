@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "task": "daily-football-15-00-fixture-time-audit",
+  "captured_at_bjt": "2026-11-20T15:14:04+08:00",
+  "source_priority": "FIGC national-team official schedule; source explicitly states all listed kick-off times are CET. FIFA tournament page states Thursday/Friday local Qatar kick-offs run 16:00–19:00.",
+  "source_urls": [
+    "https://www.figc.it/en/national-teams/news/azzurrini-arrive-in-doha-ahead-of-world-cup-opener-x2q9ta9t",
+    "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/match-schedule-revealed"
+  ],
+  "timezone_conversion": "CET (UTC+1) -> UTC -> Asia/Shanghai (UTC+8); Qatar local time (UTC+3) -> Asia/Shanghai (+5h)",
+  "original_10_00_snapshot_is_immutable": true,
+  "corrections": [
+    {
+      "match": "Cuba U17 v Tajikistan U17",
+      "old_kickoff_bjt": "2026-11-20T19:00:00+08:00",
+      "corrected_kickoff_utc": "2026-11-20T13:00:00Z",
+      "corrected_kickoff_bjt": "2026-11-20T21:00:00+08:00",
+      "source_local_cet": "14:00"
+    },
+    {
+      "match": "Belgium U17 v Vietnam U17",
+      "old_kickoff_bjt": "2026-11-20T19:00:00+08:00",
+      "corrected_kickoff_utc": "2026-11-20T13:00:00Z",
+      "corrected_kickoff_bjt": "2026-11-20T21:00:00+08:00",
+      "source_local_cet": "14:00"
+    },
+    {
+      "match": "Mali U17 v New Zealand U17",
+      "old_kickoff_bjt": "2026-11-20T19:30:00+08:00",
+      "corrected_kickoff_utc": "2026-11-20T13:30:00Z",
+      "corrected_kickoff_bjt": "2026-11-20T21:30:00+08:00",
+      "source_local_cet": "14:30"
+    },
+    {
+      "match": "Spain U17 v China PR U17",
+      "old_kickoff_bjt": "2026-11-20T20:00:00+08:00",
+      "corrected_kickoff_utc": "2026-11-20T14:00:00Z",
+      "corrected_kickoff_bjt": "2026-11-20T22:00:00+08:00",
+      "source_local_cet": "15:00"
+    },
+    {
+      "match": "Italy U17 v Jamaica U17",
+      "old_kickoff_bjt": "2026-11-20T21:00:00+08:00",
+      "corrected_kickoff_utc": "2026-11-20T15:00:00Z",
+      "corrected_kickoff_bjt": "2026-11-20T23:00:00+08:00",
+      "source_local_cet": "16:00"
+    },
+    {
+      "match": "Senegal U17 v Croatia U17",
+      "old_kickoff_bjt": "2026-11-20T21:30:00+08:00",
+      "corrected_kickoff_utc": "2026-11-20T15:30:00Z",
+      "corrected_kickoff_bjt": "2026-11-20T23:30:00+08:00",
+      "source_local_cet": "16:30"
+    },
+    {
+      "match": "Côte d'Ivoire U17 v Uzbekistan U17",
+      "old_kickoff_bjt": "2026-11-20T22:00:00+08:00",
+      "corrected_kickoff_utc": "2026-11-20T16:00:00Z",
+      "corrected_kickoff_bjt": "2026-11-21T00:00:00+08:00",
+      "source_local_cet": "17:00"
+    },
+    {
+      "match": "Fiji U17 v Morocco U17",
+      "old_kickoff_bjt": "2026-11-20T22:00:00+08:00",
+      "corrected_kickoff_utc": "2026-11-20T16:00:00Z",
+      "corrected_kickoff_bjt": "2026-11-21T00:00:00+08:00",
+      "source_local_cet": "17:00"
+    }
+  ],
+  "discrepancy_notes": [
+    "8场FIFA U17赛程在10:00快照中整体提前2小时；本文件只追加更正，不覆盖原快照。",
+    "UAE U17 v Bangladesh U17：AFC官方PDF列19:20，主办地为阿联酋，按UTC+4换算为15:20 UTC/23:20 BJT；Sofascore页面显示16:20 UTC，存在1小时冲突，采用AFC官方赛程并保留冲突。"
+  ],
+  "sources": [
+    {
+      "name": "FIGC",
+      "url": "https://www.figc.it/en/national-teams/news/azzurrini-arrive-in-doha-ahead-of-world-cup-opener-x2q9ta9t",
+      "detail": "逐场时间并明确注明全表为CET"
+    },
+    {
+      "name": "FIFA",
+      "url": "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/match-schedule-revealed",
+      "detail": "周四/周五比赛在卡塔尔当地16:00至19:00开球"
+    },
+    {
+      "name": "AFC",
+      "url": "https://assets.the-afc.com/2027_AFC_U17_Asian_Cup/Download/AFC-U17-Asian-Cup-Uzbekistan-2027-Qualifiers-Match-Schedule--6Novupd.pdf",
+      "detail": "UAE v Bangladesh列19:20，场地Emirates Club Stadium"
+    }
+  ]
+}
