@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "snapshot_type": "team_iso_week_xg",
+  "captured_at_bjt": "2026-11-20T10:31:11+08:00",
+  "timezone": "Asia/Shanghai",
+  "identity": {
+    "team_id": "internal:team:barcelona-women",
+    "provider_team_id": null,
+    "provider_team_id_missing_reason": "本轮免费来源未返回可稳定映射的球队外部ID；内部ID为确定性slug，不冒充供应商ID",
+    "competition_id": "internal:competition:uefa-womens-champions-league",
+    "competition": "UEFA Women's Champions League",
+    "season": "2026/27",
+    "iso_week": "2026-W47"
+  },
+  "matches": [
+    {
+      "match_id": "internal:uefa-womens-champions-league:2026-11-19:barcelona-servette-w",
+      "provider_match_id": "488482",
+      "match_date_utc": "2026-11-19",
+      "match_date_bjt": "2026-11-20",
+      "opponent": "Servette Chênois Women",
+      "home_away": "home",
+      "score": "6-0",
+      "post_match_provider_xg": 4.73,
+      "post_match_provider_xga": 0.38,
+      "post_match_provider_xgd": 4.35,
+      "post_match_xg_type": "provider_model_estimate_post_match",
+      "provider": "AlmanacStats",
+      "provider_source": "https://almanacstats.com/match/2026-11-19-barcelona-w-vs-servette-chenois-w-488482",
+      "provider_model_version": "not_disclosed",
+      "measured_xg": null,
+      "missing_reason": null,
+      "pre_match_supplier_estimates": []
+    }
+  ],
+  "weekly_summary": {
+    "matches_played": 1,
+    "matches_with_post_match_provider_xg": 1,
+    "matches_missing_post_match_xg": 0,
+    "provider_model_estimate_xg_sum": 4.73,
+    "provider_model_estimate_xga_sum": 0.38,
+    "provider_model_estimate_xgd_sum": 4.35,
+    "provider_model_estimate_xg_per90": 4.73,
+    "provider_model_estimate_xga_per90": 0.38,
+    "provider_model_estimate_xgd_per90": 4.35,
+    "measured_xg_sum": null,
+    "measured_xga_sum": null,
+    "pre_match_supplier_estimates_are_separate": true
+  },
+  "leakage_audit": {
+    "post_match_data_is_not_valid_for_same_match_pre_match_input": true,
+    "use_as_same_match_pre_match_input": false,
+    "use_for_future_match_only_after_captured_at": true,
+    "history_is_append_only": true
+  },
+  "missing_reason": null
+}
