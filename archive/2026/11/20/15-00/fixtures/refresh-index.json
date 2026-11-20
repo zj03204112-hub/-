@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "task": "daily-football-15-00-refresh",
+  "captured_at_bjt": "2026-11-20T15:14:04+08:00",
+  "date_range_bjt": [
+    "2026-11-20",
+    "2026-11-21"
+  ],
+  "prior_fixture_inventory": {
+    "file": "archive/2026/11/20/10-00/fixtures/bjt-20-21.json",
+    "event_count": 78,
+    "carried_forward": true
+  },
+  "verified_updates": {
+    "fifa_u17_schedule_time_corrections": 8,
+    "j1_today_matches": 3,
+    "afc_u17_final_group_c_match_time_verified": true,
+    "official_jczq_lines_verified": 0
+  },
+  "prediction_window_bjt": {
+    "from": "2026-11-20T21:14:04+08:00",
+    "to": "2026-11-21T03:14:04+08:00"
+  },
+  "eligible_predictions": [
+    {
+      "key": "mali-u17-v-new-zealand-u17",
+      "home": "Mali U17",
+      "away": "New Zealand U17",
+      "kickoff_bjt": "2026-11-20T21:30:00+08:00"
+    },
+    {
+      "key": "spain-u17-v-china-pr-u17",
+      "home": "Spain U17",
+      "away": "China PR U17",
+      "kickoff_bjt": "2026-11-20T22:00:00+08:00"
+    },
+    {
+      "key": "italy-u17-v-jamaica-u17",
+      "home": "Italy U17",
+      "away": "Jamaica U17",
+      "kickoff_bjt": "2026-11-20T23:00:00+08:00"
+    },
+    {
+      "key": "senegal-u17-v-croatia-u17",
+      "home": "Senegal U17",
+      "away": "Croatia U17",
+      "kickoff_bjt": "2026-11-20T23:30:00+08:00"
+    },
+    {
+      "key": "cote-divoire-u17-v-uzbekistan-u17",
+      "home": "Côte d'Ivoire U17",
+      "away": "Uzbekistan U17",
+      "kickoff_bjt": "2026-11-21T00:00:00+08:00"
+    },
+    {
+      "key": "fiji-u17-v-morocco-u17",
+      "home": "Fiji U17",
+      "away": "Morocco U17",
+      "kickoff_bjt": "2026-11-21T00:00:00+08:00"
+    },
+    {
+      "key": "uae-u17-v-bangladesh-u17",
+      "home": "United Arab Emirates U17",
+      "away": "Bangladesh U17",
+      "kickoff_bjt": "2026-11-20T23:20:00+08:00"
+    }
+  ],
+  "early_or_late_watch": [
+    {
+      "match": "Kashima Antlers v Shimizu S-Pulse",
+      "kickoff_bjt": "2026-11-20T18:00:00+08:00",
+      "status": "距开赛不足6小时，不生成预测"
+    },
+    {
+      "match": "Kashiwa Reysol v JEF United Chiba",
+      "kickoff_bjt": "2026-11-20T18:00:00+08:00",
+      "status": "距开赛不足6小时，不生成预测"
+    },
+    {
+      "match": "Vissel Kobe v Mito Hollyhock",
+      "kickoff_bjt": "2026-11-20T18:00:00+08:00",
+      "status": "距开赛不足6小时，不生成预测"
+    },
+    {
+      "match": "Bayern Munich v 1. FC Köln",
+      "kickoff_bjt": "2026-11-21T03:30:00+08:00",
+      "status": "距12小时窗口边界约16分钟，未进入预测窗口"
+    },
+    {
+      "match": "Troyes v Le Havre",
+      "kickoff_bjt": "2026-11-21T03:45:00+08:00",
+      "status": "超过12小时窗口"
+    },
+    {
+      "match": "Athletic Club v Espanyol",
+      "kickoff_bjt": "2026-11-21T04:00:00+08:00",
+      "status": "超过12小时窗口"
+    },
+    {
+      "match": "21 Nov J1/K League及欧洲核心联赛其余场次",
+      "status": "早期登记，待临场更新"
+    }
+  ],
+  "schedule_sources": [
+    "https://www.figc.it/en/national-teams/news/azzurrini-arrive-in-doha-ahead-of-world-cup-opener-x2q9ta9t",
+    "https://products.bundesliga.com/fixtures",
+    "https://www.theguardian.com/football/premierleague/fixtures/2026/Nov/07",
+    "https://tv.kleague.com/en-int/page/k-league-1",
+    "https://www.the-afc.com/en/national/afc_u17_asian_cup.html"
+  ],
+  "missing_fields": [
+    "未逐项重新验证全部78场状态",
+    "其余比赛官方竞彩盘口未取得",
+    "未逐场取得完整初盘至即时盘",
+    "首发、裁判、战术、赛前xG并非所有场次可得"
+  ]
+}
