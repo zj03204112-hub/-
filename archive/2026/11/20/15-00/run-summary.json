@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "task": "daily-football-15-00-refresh-and-prediction",
+  "captured_at_bjt": "2026-11-20T15:14:04+08:00",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-20-1500-run11",
+  "fixture_inventory_carried_forward": 78,
+  "schedule_time_corrections": 8,
+  "eligible_predictions": 7,
+  "official_jczq_verified": 0,
+  "third_party_market_snapshots": 8,
+  "model_version": "manual-shadow-r1",
+  "strategy_id": "SHADOW-MKT-FORM-20261120-1500",
+  "sqlite_connected": false,
+  "sqlite_file_latest_commit": "0efede372efb82255d4f9ef1bea435697695aabf",
+  "sqlite_latest_commit_time_utc": "2026-11-20T03:14:20Z",
+  "v5_1_modified": false,
+  "frozen_validation_sample_modified": false,
+  "historical_prediction_snapshots_overwritten": false,
+  "historical_xg_week_snapshots_overwritten": false,
+  "limitations": [
+    "官方竞彩盘口缺失",
+    "青年队赛前xG、官方首发和裁判缺失",
+    "未逐场覆盖全部78场的初盘/即时盘与伤停",
+    "SQLite未连接"
+  ],
+  "files_to_create": 15
+}
