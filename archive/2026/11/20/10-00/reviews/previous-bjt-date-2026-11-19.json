@@ -1,0 +1,797 @@
+{
+  "schema_version": "1.0",
+  "task": "10:00 previous Beijing-date review",
+  "run_date_bjt": "2026-11-20",
+  "captured_at_bjt": "2026-11-20T10:03:48+08:00",
+  "reviewed_kickoff_date_bjt": "2026-11-19",
+  "iso_week": "2026-W47",
+  "scope": {
+    "core_leagues": [
+      "英超",
+      "西甲",
+      "德甲",
+      "意甲",
+      "法甲",
+      "K League 1",
+      "J1"
+    ],
+    "other_competitions": "按赛事类型独立分类",
+    "nations_league": "独立目录/统计"
+  },
+  "snapshot_sources": [
+    {
+      "branch": "automation/football-2026-11-18-1500-shadow",
+      "path": "archive/2026/11/18/15-00/predictions/index.json"
+    },
+    {
+      "branch": "automation/daily-football-2026-11-19-1500-run11",
+      "path": "archive/2026/11/19/15-00/predictions/index.json"
+    }
+  ],
+  "review_rule": {
+    "only_confirmed_completed": true,
+    "use_90_minute_score_for_wdl_and_scoreline": true,
+    "extra_time_and_penalties_separate": true,
+    "jczq_independent_from_90min_wdl": true,
+    "handicap_mapping_uses_first_score_only": true,
+    "second_score_used_for_handicap": false,
+    "missing_original_snapshot_or_official_handicap_is_unverifiable": true
+  },
+  "summary": {
+    "immutable_prediction_snapshots_reviewed": 12,
+    "confirmed_completed_predictions": 12,
+    "wdl_hits": 5,
+    "wdl_accuracy_pct": 41.7,
+    "actual_draws": 6,
+    "predicted_draws_by_argmax": 0,
+    "draw_recall_pct": 0,
+    "first_score_hits": 3,
+    "first_score_accuracy_pct": 25,
+    "second_score_hits": 3,
+    "second_score_accuracy_pct": 25,
+    "either_top_two_score_hits": 6,
+    "either_top_two_score_accuracy_pct": 50,
+    "half_full_hits": 1,
+    "half_full_accuracy_pct": 8.3,
+    "official_jc_handicap_verified": 0,
+    "jczq_unverifiable": 12,
+    "risk_review": "逐场定性记录，不汇总成伪精确命中率"
+  },
+  "matches": [
+    {
+      "match_key": "2026-11-18|UEFA-WCL|Hacken-W|Manchester-City-W",
+      "competition": "UEFA Women's Champions League",
+      "category": "洲际俱乐部",
+      "kickoff_bjt": "2026-11-19T01:45:00+08:00",
+      "kickoff_utc": "2026-11-18T17:45:00Z",
+      "snapshot_branch": "automation/football-2026-11-18-1500-shadow",
+      "snapshot_path": "archive/2026/11/18/15-00/predictions/uefa-wcl/hacken/manchester-city-w.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "0-2",
+        "score_2": "1-2",
+        "wdl_probability_pct": {
+          "home": 12,
+          "draw": 17,
+          "away": 71
+        },
+        "wdl_pick": "客胜",
+        "half_full": "客/客",
+        "confidence": 70
+      },
+      "actual": {
+        "score_90": "0-2",
+        "wdl": "客胜",
+        "half_time": "0-0",
+        "half_full": "平/客",
+        "after_extra_time": null,
+        "penalties": null
+      },
+      "hits": {
+        "wdl": true,
+        "score_1": true,
+        "score_2": false,
+        "any_top2_score": true,
+        "half_full": false,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "部分兑现",
+        "notes": "客胜和低总进球方向兑现；天气对比赛的实际影响没有足够证据，不能记为命中"
+      },
+      "result_sources": [
+        "https://www.uefa.com/womenschampionsleague/news/02ab-221a71651fbd-4d9a4e74964a-1000--uefa-women-s-champions-league-matchday-5-wednesday-highli/"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap",
+        "measured_xg"
+      ]
+    },
+    {
+      "match_key": "2026-11-18|UEFA-WCL|Real-Madrid-W|Inter-W",
+      "competition": "UEFA Women's Champions League",
+      "category": "洲际俱乐部",
+      "kickoff_bjt": "2026-11-19T01:45:00+08:00",
+      "kickoff_utc": "2026-11-18T17:45:00Z",
+      "snapshot_branch": "automation/football-2026-11-18-1500-shadow",
+      "snapshot_path": "archive/2026/11/18/15-00/predictions/uefa-wcl/real-madrid-w/inter-w.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "2-1",
+        "score_2": "3-1",
+        "wdl_probability_pct": {
+          "home": 74,
+          "draw": 16,
+          "away": 10
+        },
+        "wdl_pick": "主胜",
+        "half_full": "主/主",
+        "confidence": 72
+      },
+      "actual": {
+        "score_90": "3-1",
+        "wdl": "主胜",
+        "half_time": "1-1",
+        "half_full": "平/主",
+        "after_extra_time": null,
+        "penalties": null
+      },
+      "hits": {
+        "wdl": true,
+        "score_1": false,
+        "score_2": true,
+        "any_top2_score": true,
+        "half_full": false,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "部分兑现",
+        "notes": "国际米兰进球体现了反击威胁；主胜方向正确，但半全场由上半场平局转主胜，原预测低估半场平局"
+      },
+      "result_sources": [
+        "https://www.uefa.com/womenschampionsleague/news/02ab-221a71651fbd-4d9a4e74964a-1000--uefa-women-s-champions-league-matchday-5-wednesday-highli/"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap",
+        "measured_xg"
+      ]
+    },
+    {
+      "match_key": "2026-11-18|COPA-DEL-REY|Portugalete|Real-Union",
+      "competition": "Copa del Rey",
+      "category": "国内杯赛",
+      "kickoff_bjt": "2026-11-19T02:00:00+08:00",
+      "kickoff_utc": "2026-11-18T18:00:00Z",
+      "snapshot_branch": "automation/football-2026-11-18-1500-shadow",
+      "snapshot_path": "archive/2026/11/18/15-00/predictions/copa-del-rey/portugalete/real-union.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "1-1",
+        "score_2": "2-1",
+        "wdl_probability_pct": {
+          "home": 36,
+          "draw": 30,
+          "away": 34
+        },
+        "wdl_pick": "主胜",
+        "half_full": "平/主",
+        "confidence": 53
+      },
+      "actual": {
+        "score_90": "0-0",
+        "wdl": "平局",
+        "half_time": "0-0",
+        "half_full": "平/平",
+        "after_extra_time": "0-0",
+        "penalties": "Real Unión 4-1 晋级"
+      },
+      "hits": {
+        "wdl": false,
+        "score_1": false,
+        "score_2": false,
+        "any_top2_score": false,
+        "half_full": false,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "命中",
+        "notes": "杯赛单场淘汰的不确定性和低比分平局兑现；点球晋级不改变90分钟平局统计"
+      },
+      "result_sources": [
+        "https://rfef.es/es/noticias/resumenes-la-copa-cierra-su-primera-eliminatoria"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap",
+        "measured_xg"
+      ]
+    },
+    {
+      "match_key": "2026-11-18|REGIONALLIGA-NORD|SSV-Jeddeloh|Phonix-Lubeck",
+      "competition": "Regionalliga Nord",
+      "category": "其他赛事",
+      "kickoff_bjt": "2026-11-19T02:00:00+08:00",
+      "kickoff_utc": "2026-11-18T18:00:00Z",
+      "snapshot_branch": "automation/football-2026-11-18-1500-shadow",
+      "snapshot_path": "archive/2026/11/18/15-00/predictions/regionalliga-north/ssv-jeddeloh/phoenix-lubeck.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "1-2",
+        "score_2": "2-2",
+        "wdl_probability_pct": {
+          "home": 26,
+          "draw": 28,
+          "away": 46
+        },
+        "wdl_pick": "客胜",
+        "half_full": "平/客",
+        "confidence": 52
+      },
+      "actual": {
+        "score_90": "1-1",
+        "wdl": "平局",
+        "half_time": "0-0",
+        "half_full": "平/平",
+        "after_extra_time": null,
+        "penalties": null
+      },
+      "hits": {
+        "wdl": false,
+        "score_1": false,
+        "score_2": false,
+        "any_top2_score": false,
+        "half_full": false,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "部分兑现",
+        "notes": "对客队近期不败的关注有依据，但把不败倾向压成客胜；实际为平局，暴露平局概率竞争不足"
+      },
+      "result_sources": [
+        "https://www.rezilta.com/football/results/foot2991271.html"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap",
+        "measured_xg"
+      ]
+    },
+    {
+      "match_key": "2026-11-18|COPA-DEL-REY|Deportiva-Minera|FC-Cartagena",
+      "competition": "Copa del Rey",
+      "category": "国内杯赛",
+      "kickoff_bjt": "2026-11-19T02:30:00+08:00",
+      "kickoff_utc": "2026-11-18T18:30:00Z",
+      "snapshot_branch": "automation/football-2026-11-18-1500-shadow",
+      "snapshot_path": "archive/2026/11/18/15-00/predictions/copa-del-rey/deportiva-minera/fc-cartagena.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "1-1",
+        "score_2": "1-0",
+        "wdl_probability_pct": {
+          "home": 36,
+          "draw": 33,
+          "away": 31
+        },
+        "wdl_pick": "主胜",
+        "half_full": "平/主",
+        "confidence": 52
+      },
+      "actual": {
+        "score_90": "1-1",
+        "wdl": "平局",
+        "half_time": "0-0",
+        "half_full": "平/平",
+        "after_extra_time": "1-2"
+      },
+      "hits": {
+        "wdl": false,
+        "score_1": true,
+        "score_2": false,
+        "any_top2_score": true,
+        "half_full": false,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "命中",
+        "notes": "90分钟打平并进入加时，杯赛波动风险兑现；第一比分准确，但胜平负方向仍未把平局选为首选"
+      },
+      "result_sources": [
+        "https://rfef.es/es/noticias/resumenes-la-copa-cierra-su-primera-eliminatoria",
+        "https://www.winningarena.com/blog/deportiva-minera-fc-cartagena-1-2-result-xg"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap"
+      ]
+    },
+    {
+      "match_key": "2026-11-18|COPA-DEL-REY|Reus-Reddis|Barakaldo",
+      "competition": "Copa del Rey",
+      "category": "国内杯赛",
+      "kickoff_bjt": "2026-11-19T02:30:00+08:00",
+      "kickoff_utc": "2026-11-18T18:30:00Z",
+      "snapshot_branch": "automation/football-2026-11-18-1500-shadow",
+      "snapshot_path": "archive/2026/11/18/15-00/predictions/copa-del-rey/reus-reddis/barakaldo.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "1-1",
+        "score_2": "0-1",
+        "wdl_probability_pct": {
+          "home": 26,
+          "draw": 29,
+          "away": 45
+        },
+        "wdl_pick": "客胜",
+        "half_full": "平/客",
+        "confidence": 51
+      },
+      "actual": {
+        "score_90": "1-1",
+        "wdl": "平局",
+        "half_time": "0-0",
+        "half_full": "平/平",
+        "after_extra_time": "1-1",
+        "penalties": "Reus Reddis 4-3 晋级"
+      },
+      "hits": {
+        "wdl": false,
+        "score_1": true,
+        "score_2": false,
+        "any_top2_score": true,
+        "half_full": false,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "命中",
+        "notes": "低比分和杯赛淘汰赛加时/点球风险兑现；客胜方向把平局概率压得过低"
+      },
+      "result_sources": [
+        "https://rfef.es/es/noticias/resumenes-la-copa-cierra-su-primera-eliminatoria"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap",
+        "measured_xg"
+      ]
+    },
+    {
+      "match_key": "2026-11-18|COPA-DEL-REY|Alcoyano|Mallorca",
+      "competition": "Copa del Rey",
+      "category": "国内杯赛",
+      "kickoff_bjt": "2026-11-19T03:00:00+08:00",
+      "kickoff_utc": "2026-11-18T19:00:00Z",
+      "snapshot_branch": "automation/football-2026-11-18-1500-shadow",
+      "snapshot_path": "archive/2026/11/18/15-00/predictions/copa-del-rey/alcoyano/mallorca.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "0-1",
+        "score_2": "1-1",
+        "wdl_probability_pct": {
+          "home": 18,
+          "draw": 25,
+          "away": 57
+        },
+        "wdl_pick": "客胜",
+        "half_full": "平/客",
+        "confidence": 58
+      },
+      "actual": {
+        "score_90": "1-1",
+        "wdl": "平局",
+        "half_time": "1-1",
+        "half_full": "平/平",
+        "after_extra_time": "1-3"
+      },
+      "hits": {
+        "wdl": false,
+        "score_1": false,
+        "score_2": true,
+        "any_top2_score": true,
+        "half_full": false,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "命中",
+        "notes": "Mallorca平局倾向及杯赛拖入加时的风险兑现；第二比分命中但胜平负和半全场均未命中"
+      },
+      "result_sources": [
+        "https://rfef.es/es/noticias/resumenes-la-copa-cierra-su-primera-eliminatoria"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap",
+        "measured_xg"
+      ]
+    },
+    {
+      "match_key": "2026-11-18|COPA-DEL-REY|Badajoz|Tenerife",
+      "competition": "Copa del Rey",
+      "category": "国内杯赛",
+      "kickoff_bjt": "2026-11-19T03:00:00+08:00",
+      "kickoff_utc": "2026-11-18T19:00:00Z",
+      "snapshot_branch": "automation/football-2026-11-18-1500-shadow",
+      "snapshot_path": "archive/2026/11/18/15-00/predictions/copa-del-rey/badajoz/tenerife.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "0-1",
+        "score_2": "1-1",
+        "wdl_probability_pct": {
+          "home": 24,
+          "draw": 27,
+          "away": 49
+        },
+        "wdl_pick": "客胜",
+        "half_full": "平/客",
+        "confidence": 56
+      },
+      "actual": {
+        "score_90": "2-5",
+        "wdl": "客胜",
+        "half_time": "0-3",
+        "half_full": "客/客",
+        "after_extra_time": null
+      },
+      "hits": {
+        "wdl": true,
+        "score_1": false,
+        "score_2": false,
+        "any_top2_score": false,
+        "half_full": false,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "部分兑现",
+        "notes": "客胜方向正确，但高进球尾部严重低估；主队近期防守优势未能延续，实际总进球7球"
+      },
+      "result_sources": [
+        "https://rfef.es/es/noticias/resumenes-la-copa-cierra-su-primera-eliminatoria",
+        "https://www.winningarena.com/match/1644346-badajoz-vs-tenerife"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap"
+      ]
+    },
+    {
+      "match_key": "2026-11-18|ALGERIAN-L1|CS-Constantine|ES-Ben-Aknoun",
+      "competition": "Algerian Ligue 1",
+      "category": "国内联赛",
+      "kickoff_bjt": "2026-11-19T00:45:00+08:00",
+      "kickoff_utc": "2026-11-18T16:45:00Z",
+      "snapshot_branch": "automation/football-2026-11-18-1500-shadow",
+      "snapshot_path": "archive/2026/11/18/15-00/predictions/algerian-ligue-1/cs-constantine/es-ben-aknoun.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "0-1",
+        "score_2": "1-1",
+        "wdl_probability_pct": {
+          "home": 27,
+          "draw": 32,
+          "away": 41
+        },
+        "wdl_pick": "客胜",
+        "half_full": "平/客",
+        "confidence": 48
+      },
+      "actual": {
+        "score_90": "1-0",
+        "wdl": "主胜",
+        "half_time": "1-0",
+        "half_full": "主/主",
+        "after_extra_time": null
+      },
+      "hits": {
+        "wdl": false,
+        "score_1": false,
+        "score_2": false,
+        "any_top2_score": false,
+        "half_full": false,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "未兑现",
+        "notes": "赛前主队五连败风险没有延续，主队第44分钟进球并守住1-0；低置信度提示仍然合理"
+      },
+      "result_sources": [
+        "https://scoremondo.com/en/match/cs-constantine-es-ben-aknoun-sr75049120",
+        "https://propickai.com/matches/football/algeria-first-division-standings/cs-constantine-vs-es-ben-aknoun-2026-11-18/"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap",
+        "measured_xg"
+      ]
+    },
+    {
+      "match_key": "2026-11-18|ALGERIAN-L1|CR-Temouchent|JS-El-Biar",
+      "competition": "Algerian Ligue 1",
+      "category": "国内联赛",
+      "kickoff_bjt": "2026-11-19T00:45:00+08:00",
+      "kickoff_utc": "2026-11-18T16:45:00Z",
+      "snapshot_branch": "automation/football-2026-11-18-1500-shadow",
+      "snapshot_path": "archive/2026/11/18/15-00/predictions/algerian-ligue-1/cr-temouchent/js-el-biar.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "1-1",
+        "score_2": "0-1",
+        "wdl_probability_pct": {
+          "home": 31,
+          "draw": 33,
+          "away": 36
+        },
+        "wdl_pick": "客胜",
+        "half_full": "平/平",
+        "confidence": 48
+      },
+      "actual": {
+        "score_90": "0-0",
+        "wdl": "平局",
+        "half_time": "0-0",
+        "half_full": "平/平",
+        "after_extra_time": null
+      },
+      "hits": {
+        "wdl": false,
+        "score_1": false,
+        "score_2": false,
+        "any_top2_score": false,
+        "half_full": true,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "命中",
+        "notes": "主队近期平局倾向、低比分风险兑现；模型把客胜36%放在首位，仍未让平局进入第一方向"
+      },
+      "result_sources": [
+        "https://scoremondo.com/en/match/cr-temouchent-js-el-biar-31579220",
+        "https://www.rezilta.com/football/results/foot2991252.html"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap",
+        "measured_xg"
+      ]
+    },
+    {
+      "match_key": "2026-11-18|SLOVENIAN-CUP|Race|Radomlje",
+      "competition": "Slovenian Cup",
+      "category": "国内杯赛",
+      "kickoff_bjt": "2026-11-19T00:00:00+08:00",
+      "kickoff_utc": "2026-11-18T16:00:00Z",
+      "snapshot_branch": "automation/football-2026-11-18-1500-shadow",
+      "snapshot_path": "archive/2026/11/18/15-00/predictions/slovenian-cup/race/radomlje.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "0-1",
+        "score_2": "1-2",
+        "wdl_probability_pct": {
+          "home": 15,
+          "draw": 19,
+          "away": 66
+        },
+        "wdl_pick": "客胜",
+        "half_full": "客/客",
+        "confidence": 58
+      },
+      "actual": {
+        "score_90": "1-2",
+        "wdl": "客胜",
+        "half_time": "0-0",
+        "half_full": "平/客",
+        "after_extra_time": null
+      },
+      "hits": {
+        "wdl": true,
+        "score_1": false,
+        "score_2": true,
+        "any_top2_score": true,
+        "half_full": false,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "命中",
+        "notes": "客队强势方向兑现，第二比分命中；半场实际为平局，半全场仍错"
+      },
+      "result_sources": [
+        "https://www.nzs.si/klubi/moski/pokal-pivovarna-union/tekme/nk-race-nk-radomlje-pokalpu2627-2026-11-18-170000"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap",
+        "measured_xg"
+      ]
+    },
+    {
+      "match_key": "2026-11-19|BULGARIA-SECOND-LEAGUE|Dobrudzha|Fratria",
+      "competition": "Bulgaria Second League",
+      "category": "国内联赛",
+      "kickoff_bjt": "2026-11-19T23:00:00+08:00",
+      "kickoff_utc": "2026-11-19T15:00:00Z",
+      "snapshot_branch": "automation/daily-football-2026-11-19-1500-run11",
+      "snapshot_path": "archive/2026/11/19/15-00/predictions/domestic-league/bulgaria-second-league/teams/dobrudzha/2026-W47/dobrudzha-v-fratria.json",
+      "prediction_id": null,
+      "internal_match_id": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": null,
+      "predicted": {
+        "score_1": "1-1",
+        "score_2": "0-1",
+        "wdl_probability_pct": {
+          "home": 24,
+          "draw": 26,
+          "away": 50
+        },
+        "wdl_pick": "客胜",
+        "half_full": "平/客",
+        "confidence": 54
+      },
+      "actual": {
+        "score_90": "0-5",
+        "wdl": "客胜",
+        "half_time": "0-4",
+        "half_full": "客/客",
+        "after_extra_time": null
+      },
+      "hits": {
+        "wdl": true,
+        "score_1": false,
+        "score_2": false,
+        "any_top2_score": false,
+        "half_full": false,
+        "jczq": null
+      },
+      "jczq": {
+        "official_handicap": null,
+        "result": null,
+        "status": "无法核验：原始快照无真实竞彩让球盘口",
+        "mapping_performed": false
+      },
+      "risk_review": {
+        "status": "部分兑现",
+        "notes": "客胜方向正确，但比分与进球尾部严重低估；市场主/平价格缩短与客队实力优势冲突，最终客队0-5大胜"
+      },
+      "result_sources": [
+        "https://www.winningarena.com/match/1571601-dobrudzha-vs-fratria",
+        "https://footynomad.com/fixture/202447-dobrudzha-vs-fratria"
+      ],
+      "missing_fields": [
+        "internal_match_id",
+        "prediction_id",
+        "official_jc_handicap"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "match": "El Gouna vs Al Ittihad Alexandria",
+      "reason": "开球属于2026-11-18北京时间日期，不属于本轮复盘日期"
+    },
+    {
+      "match": "Tabor Sežana vs Fužinar",
+      "reason": "NZS记录为未进行，不属于确认完赛"
+    },
+    {
+      "match": "Newington vs Harland & Wolff Welders",
+      "reason": "只有单一非官方赛果来源，本轮不计入确认完赛统计"
+    }
+  ],
+  "data_gaps": [
+    "12场快照均缺少可核实的官方竞彩让球盘口；未执行让球映射",
+    "多数比赛缺少稳定internal_match_id和prediction_id",
+    "未取得可验证的实测赛前xG；供应商估算另存，不回填历史预测",
+    "未连接SQLite数据库"
+  ]
+}
