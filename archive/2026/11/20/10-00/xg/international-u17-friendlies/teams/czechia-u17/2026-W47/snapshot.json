@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "snapshot_type": "team_iso_week_xg",
+  "captured_at_bjt": "2026-11-20T10:31:11+08:00",
+  "identity": {
+    "team_id": "internal:team:czechia-u17",
+    "provider_team_id": null,
+    "provider_team_id_missing_reason": "本轮未取得稳定外部球队ID；使用内部确定性slug",
+    "competition_id": "internal:competition:international-u17-friendlies",
+    "competition": "International Friendly U17",
+    "season": "2026",
+    "iso_week": "2026-W47"
+  },
+  "matches": [
+    {
+      "match_id": "internal:international-u17-friendlies:2026-11-19:switzerland-czechia",
+      "provider_match_id": null,
+      "match_date_utc": "2026-11-19T10:00:00Z",
+      "match_date_bjt": "2026-11-19",
+      "match_date_local": "2026-11-19",
+      "kickoff_utc": "2026-11-19T10:00:00Z",
+      "kickoff_bjt": "2026-11-19T18:00:00+08:00",
+      "local_kickoff": null,
+      "opponent": "Switzerland U17",
+      "home_away": "away",
+      "score": "4-0",
+      "xg": null,
+      "xga": null,
+      "xgd": null,
+      "xg_type": "missing",
+      "provider": null,
+      "source": "https://www.coppasvizzera.ch/sfv/nationalteams/u-17/statistik-und-resultate.aspx/tg-4408239/",
+      "measured_xg": null,
+      "missing_reason": "官方赛果/赛程源未提供比赛级xG；未检索到可追溯的免费供应商赛后xG"
+    }
+  ],
+  "weekly_summary": {
+    "matches_played": 1,
+    "available_post_match_xg_matches": 0,
+    "missing_post_match_xg_matches": 1,
+    "provider_model_xg_sum": null,
+    "provider_model_xga_sum": null,
+    "provider_model_xgd_sum": null,
+    "provider_model_xg_per90": null,
+    "provider_model_xga_per90": null,
+    "provider_model_xgd_per90": null,
+    "measured_xg_sum": null,
+    "measured_xga_sum": null
+  },
+  "leakage_audit": {
+    "post_match_xg": false,
+    "use_as_same_match_pre_match_input": false,
+    "append_only": true
+  }
+}
