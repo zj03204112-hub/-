@@ -3,7 +3,7 @@
   "captured_at_bjt": "2026-11-20T10:31:11+08:00",
   "iso_week": "2026-W47",
   "summary": {
-    "team_week_snapshots_written": 26,
+    "team_week_snapshots_written": 30,
     "provider_post_match_xg_team_records": 10,
     "provider_post_match_xg_match_records": 5,
     "pre_match_supplier_estimate_only_team_records": 8,
@@ -11,7 +11,9 @@
     "measured_xg_records": 0,
     "own_model_estimates_added": 0,
     "supplier_sources_separated": true,
-    "history_overwrite": false
+    "history_overwrite": false,
+    "additional_provider_crosscheck_team_records": 4,
+    "additional_provider_crosscheck_match_records": 2
   },
   "provider_post_match_matches": [
     {
@@ -136,7 +138,9 @@
     "OddVora": "赛前供应商模型估算",
     "TipOracle": "赛前供应商模型估算",
     "FDVS": "赛前供应商模型估算",
-    "Pikibet": "赛前供应商模型估算"
+    "Pikibet": "赛前供应商模型估算",
+    "FootballAnt": "赛后供应商模型估算；与AlmanacStats独立保存",
+    "FootyStats": "赛后供应商模型估算；与AlmanacStats独立保存"
   },
   "weekly_aggregate_rules": {
     "sum_only_same_provider_and_same_data_origin": true,
@@ -145,5 +149,51 @@
     "per90_formula": "sum_xG / (played_minutes / 90)",
     "missing_values_remain_null": true
   },
-  "leakage_audit": "5场女足欧冠AlmanacStats xG在赛后采集，禁止回填为这5场比赛的赛前输入；可作为未来比赛训练/回测数据，但必须按captured_at_bjt做时间切分。"
+  "leakage_audit": "5场女足欧冠AlmanacStats xG在赛后采集，禁止回填为这5场比赛的赛前输入；可作为未来比赛训练/回测数据，但必须按captured_at_bjt做时间切分。",
+  "additional_provider_crosschecks": [
+    {
+      "match_id": "internal:uefa-womens-champions-league:2026-11-19:paris-fc-koge-w",
+      "provider": "FootballAnt",
+      "match_date_utc": "2026-11-19",
+      "match_date_bjt": "2026-11-20",
+      "home": "Paris FC Women",
+      "away": "HB Køge Women",
+      "xg_home": 4.39,
+      "xg_away": 1.72,
+      "xgd_home": 2.67,
+      "xg_type": "provider_model_estimate_post_match",
+      "provider_model_version": "not_disclosed",
+      "source": "https://www.footballant.com/match/paris-fc-w-vs-hb-koge-w/34761-44877/live",
+      "stored_separately": true
+    },
+    {
+      "match_id": "internal:uefa-womens-champions-league:2026-11-19:barcelona-servette-w",
+      "provider": "FootyStats",
+      "match_date_utc": "2026-11-19",
+      "match_date_bjt": "2026-11-20",
+      "home": "Barcelona Women",
+      "away": "Servette Chênois Women",
+      "xg_home": 2.88,
+      "xg_away": 0.86,
+      "xgd_home": 2.02,
+      "xg_type": "provider_model_estimate_post_match",
+      "provider_model_version": "not_disclosed",
+      "source": "https://footystats.org/europe/fc-barcelona-women-vs-servette-fc-chenois-feminin-h2h-stats",
+      "stored_separately": true
+    }
+  ],
+  "provider_variance_audit": [
+    {
+      "match": "Paris FC Women vs HB Køge Women",
+      "almanacstats": "4.41-1.74",
+      "footballant": "4.39-1.72",
+      "note": "两家供应商数值接近，但仍分开保存"
+    },
+    {
+      "match": "Barcelona Women vs Servette Chênois Women",
+      "almanacstats": "4.73-0.38",
+      "footystats": "2.88-0.86",
+      "note": "供应商估算差异显著，禁止平均或混列；保留原始口径"
+    }
+  ]
 }
