@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "snapshot_type": "team_iso_week_xg",
+  "captured_at_bjt": "2026-11-20T10:31:11+08:00",
+  "identity": {
+    "team_id": "internal:team:cruzeiro",
+    "provider_team_id": null,
+    "provider_team_id_missing_reason": "本轮未取得稳定外部球队ID，采用内部确定性slug",
+    "competition_id": "internal:competition:brazil-serie-a",
+    "competition": "Brazil Serie A",
+    "season": "2026",
+    "iso_week": "2026-W47"
+  },
+  "matches": [
+    {
+      "match_id": "internal:brazil-serie-a:2026-11-18:cruzeiro-palmeiras",
+      "provider_match_id": null,
+      "match_date_utc": "2026-11-18",
+      "match_date_bjt": "2026-11-19",
+      "opponent": "Palmeiras",
+      "home_away": "home",
+      "score": "2-1",
+      "post_match_provider_xg": null,
+      "post_match_provider_xga": null,
+      "post_match_provider_xgd": null,
+      "post_match_xg_type": "missing",
+      "provider": null,
+      "source": null,
+      "measured_xg": null,
+      "pre_match_supplier_estimates": [],
+      "missing_reason": "本轮检索到赛果但未找到免费、可追溯的比赛级xG；不得由比分推算"
+    }
+  ],
+  "weekly_summary": {
+    "matches_played": 1,
+    "available_post_match_provider_xg_matches": 0,
+    "missing_post_match_xg_matches": 1,
+    "provider_model_xg_sum": null,
+    "provider_model_xga_sum": null,
+    "provider_model_xgd_sum": null,
+    "provider_model_xg_per90": null,
+    "provider_model_xga_per90": null,
+    "provider_model_xgd_per90": null,
+    "measured_xg_sum": null,
+    "measured_xga_sum": null
+  },
+  "leakage_audit": {
+    "post_match_xg": false,
+    "use_as_same_match_pre_match_input": false,
+    "append_only": true
+  }
+}
