@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "task": "daily-football-10-00-run-summary",
+  "captured_at_bjt": "2026-11-20T10:31:11+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": "partial_complete_with_explicit_gaps",
+  "repository": "zj03204112-hub/-",
+  "branch": "automation/daily-football-2026-11-20-1000-run12",
+  "archive": {
+    "new_unique_files": 30,
+    "review_file": "archive/2026/11/20/10-00/review/2026-11-19-results.json",
+    "fixtures_file": "archive/2026/11/20/10-00/fixtures/bjt-20-21.json",
+    "xg_summary_file": "archive/2026/11/20/10-00/xg/coverage/2026-W47-summary.json",
+    "xg_missing_teams_file": "archive/2026/11/20/10-00/xg/coverage/2026-W47-missing-teams.json",
+    "team_week_snapshot_count": 26,
+    "readback_verified": true,
+    "readback_checks": [
+      "review file read back after source correction",
+      "fixture file read back after window note correction",
+      "26 team-week snapshot paths checked",
+      "missing-team coverage file read back",
+      "xG summary file read back"
+    ],
+    "last_verified_commit": "3d9aec59c95a9993c1f351332f24b797257e7e9b",
+    "review_update_commit": "b8fc0f808a2194c77d202269a1089bca6b7758cd"
+  },
+  "review": {
+    "previous_bjt_date": "2026-11-19",
+    "confirmed_finished_matches": 17,
+    "original_prediction_snapshot_found": 1,
+    "no_original_prediction_snapshot": 16,
+    "core_league_finished_matches": 0,
+    "nations_league_matches": 0,
+    "evaluated_wdl_hits": "1/1",
+    "evaluated_first_score_hits": "0/1",
+    "evaluated_second_score_hits": "0/1",
+    "evaluated_half_full_hits": "0/1",
+    "jczq_handicap": "0 evaluable; official line unavailable",
+    "risk_alerts": "1 qualitative risk prompt; no binary hit-rate assigned"
+  },
+  "xg": {
+    "iso_week": "2026-W47",
+    "provider_post_match_model_estimate_matches": 5,
+    "team_records_from_those_matches": 10,
+    "pre_match_supplier_estimate_only_team_records": 8,
+    "teams_with_no_post_match_xg": 8,
+    "additional_missing_xg_teams": 24,
+    "measured_xg_records": 0,
+    "own_model_estimates_added": 0,
+    "suppliers_separated": true,
+    "same_match_post_match_leakage_prevented": true,
+    "weekly_per90_and_match_count_fields_present": true
+  },
+  "corrections": [
+    "Progreso vs Atlético Torque：上一份赛程快照标记延期；本轮更新为FT 1-1，旧快照未覆盖。",
+    "Dobrudzha vs Fratria：只保留两个可核验赛果来源，移除错误关联的来源链接。"
+  ],
+  "missing": {
+    "sqlite_database": "未连接；本轮没有数据库写入",
+    "official_jczq_handicaps": "本轮10:00仅刷新赛程与结果，未完成15:00盘口采集",
+    "provider_team_ids": "多数来源未提供稳定外部球队ID，内部slug ID明确标记为内部ID",
+    "xg": "除5场女足欧冠供应商赛后模型估算外，其他球队赛后xG缺失或未找到；保持null并写缺失原因"
+  },
+  "protected_assets": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "historical_xg_week_snapshots_overwritten": false
+  }
+}
