@@ -171,14 +171,15 @@
       "category": "domestic-league",
       "home": "Amiens",
       "away": "Caen",
-      "kickoff_bjt": "2026-11-20T04:45:00+08:00",
-      "kickoff_utc": "2026-11-19T20:45:00.000Z",
+      "kickoff_bjt": "2026-11-20T03:45:00+08:00",
+      "kickoff_utc": "2026-11-19T19:45:00.000Z",
       "status": "FT",
       "prediction_status": "register_only_until_6_12h_window",
       "actual_score": "2-1",
       "result_source": "https://badb.info/football/france/national-1/amiens-vs-caen-2026-11-21",
       "formal_review_due_bjt": "2026-11-21T10:00:00+08:00",
-      "note": "本轮只更新状态；按严格前一北京时间日期规则，正式复盘留到下一次10:00"
+      "note": "本轮只更新状态；按严格前一北京时间日期规则，正式复盘留到下一次10:00",
+      "time_correction": "原归档04:45 BJT，按20:45 CET(19:45 UTC)更正为03:45 BJT；保留本次更正记录"
     },
     {
       "id": "arsenal-lyonnes-w",
@@ -1191,6 +1192,13 @@
       "reason": "后续可靠比分源显示比赛已完赛；不得继续沿用旧的延期标记",
       "source": "https://www.skorgol.com/en/league/primera-division-uruguay",
       "history_policy": "保留原始旧快照；本文件追加更正，不覆盖历史"
+    },
+    {
+      "event_id": "amiens-caen",
+      "previous_kickoff_bjt": "2026-11-20T04:45:00+08:00",
+      "corrected_kickoff_bjt": "2026-11-20T03:45:00+08:00",
+      "reason": "Amiens官方赛事安排为11月19日20:45 CET，即19:45 UTC/11月20日03:45 BJT",
+      "source": "https://www.fixtures24.com/eng/clubs/amiens-sc/amiens-sc"
     }
   ],
   "window_conflicts": [
