@@ -1,0 +1,62 @@
+{
+  "captured_at_bjt": "2026-11-20T15:14:04+08:00",
+  "strategy_id": "SHADOW-MKT-FORM-20261120-1500",
+  "model_version": "manual-shadow-r1",
+  "model_status": "manual shadow forecast; not V5.1 output",
+  "official_jczq_handicap": null,
+  "official_jczq_result": "无法核验",
+  "third_party_asian_handicap_used_for_jczq": false,
+  "lineup_status": "未取得官方首发；不得以预测阵容替代",
+  "referee": null,
+  "pre_match_xg": null,
+  "own_model_xg": null,
+  "weather_reference": "Doha Aspire Zone: 晚间约24°C、晴、低降水概率；仅作为环境参考",
+  "tactical_notes": "未取得足以核验的最新战术部署，不推测阵型",
+  "missing_fields": [
+    "官方竞彩让球盘口",
+    "官方首发及替补名单",
+    "裁判指派",
+    "可追溯的比赛级赛前xG/xGA",
+    "可验证的主流公司初盘至即时盘时间序列",
+    "完整的球员伤停/停赛名单"
+  ],
+  "key": "uae-u17-v-bangladesh-u17",
+  "home": "United Arab Emirates U17",
+  "away": "Bangladesh U17",
+  "competition": "AFC U-17 Asian Cup 2027 Qualifiers · Group C",
+  "category": "national-team",
+  "kickoff_utc": "2026-11-20T15:20:00Z",
+  "kickoff_bjt": "2026-11-20T23:20:00+08:00",
+  "score_1": "1-1",
+  "score_2": "2-1",
+  "wdl": {
+    "home": 42,
+    "draw": 30,
+    "away": 28
+  },
+  "half_full": "平/主",
+  "confidence": 51,
+  "risk": "高",
+  "risk_reasons": [
+    "小组最后一轮，出线压力高，临场策略可能明显变化",
+    "两队最近3场状态接近，缺少可靠比赛级xG",
+    "外部模型给出较高主胜与进球预期，但无独立赔率支撑"
+  ],
+  "recent_form": {
+    "home": "最近3场：2-3负越南、2-3负也门、1-1平韩国",
+    "away": "最近3场：1-5负叙利亚、4-0胜不丹、1-0胜中国澳门；目前3场积6分"
+  },
+  "player_news": "未取得官方首发及可靠伤停清单",
+  "external_reference_only": [
+    "Supatips给出主胜67%/平11%/客胜22%，模型xG估算3.38-1.12；未作为本模型xG，也未单独提高主胜概率"
+  ],
+  "data_completeness": 65,
+  "source_urls": [
+    "https://assets.the-afc.com/2027_AFC_U17_Asian_Cup/Download/AFC-U17-Asian-Cup-Uzbekistan-2027-Qualifiers-Match-Schedule--6Novupd.pdf",
+    "https://www.dhakatribune.com/sport/football/424969/bangladesh-edge-past-macau-in-afc-u-17-asian-cup",
+    "https://www.bssnews.net/sports/447089",
+    "https://www.supatips.com/match/united-arab-emirates-u17-vs-bangladesh-u17-1638056",
+    "https://www.ncm.gov.ae/resources/shared/assets/bulletins/emirates/20261119/RAK01-EN.pdf",
+    "https://football.referee.is/match/united-arab-emirates-u17-vs-bangladesh-u17-2026-11-20/"
+  ]
+}
