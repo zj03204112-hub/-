@@ -7,23 +7,25 @@
   "repository": "zj03204112-hub/-",
   "branch": "automation/daily-football-2026-11-20-1000-run12",
   "archive": {
-    "new_unique_files": 31,
+    "new_unique_files": 35,
     "review_file": "archive/2026/11/20/10-00/review/2026-11-19-results.json",
     "fixtures_file": "archive/2026/11/20/10-00/fixtures/bjt-20-21.json",
     "xg_summary_file": "archive/2026/11/20/10-00/xg/coverage/2026-W47-summary.json",
     "xg_missing_teams_file": "archive/2026/11/20/10-00/xg/coverage/2026-W47-missing-teams.json",
-    "team_week_snapshot_count": 26,
+    "team_week_snapshot_count": 30,
     "readback_verified": true,
     "readback_checks": [
       "review file read back after source correction",
       "fixture file read back after window note correction",
       "26 team-week snapshot paths checked",
       "missing-team coverage file read back",
-      "xG summary file read back"
+      "xG summary file read back",
+      "4 provider-specific xG cross-check team snapshots checked"
     ],
     "last_verified_commit": "3d9aec59c95a9993c1f351332f24b797257e7e9b",
     "review_update_commit": "b8fc0f808a2194c77d202269a1089bca6b7758cd",
-    "data_files_excluding_run_summary": 30
+    "data_files_excluding_run_summary": 34,
+    "last_verified_commit_before_summary_update": "9789be8bbf6bf2148d749f6cf993ea3a4b29f54e"
   },
   "review": {
     "previous_bjt_date": "2026-11-19",
@@ -50,11 +52,17 @@
     "own_model_estimates_added": 0,
     "suppliers_separated": true,
     "same_match_post_match_leakage_prevented": true,
-    "weekly_per90_and_match_count_fields_present": true
+    "weekly_per90_and_match_count_fields_present": true,
+    "team_week_snapshots": 30,
+    "additional_provider_crosscheck_matches": 2,
+    "additional_provider_crosscheck_team_records": 4,
+    "provider_variance_note": "Paris FC xG: AlmanacStats 4.41-1.74 vs FootballAnt 4.39-1.72; Barcelona xG: AlmanacStats 4.73-0.38 vs FootyStats 2.88-0.86. Kept separately, not averaged."
   },
   "corrections": [
     "Progreso vs Atlético Torque：上一份赛程快照标记延期；本轮更新为FT 1-1，旧快照未覆盖。",
-    "Dobrudzha vs Fratria：只保留两个可核验赛果来源，移除错误关联的来源链接。"
+    "Dobrudzha vs Fratria：只保留两个可核验赛果来源，移除错误关联的来源链接。",
+    "Amiens-Caen开球时间由04:45 BJT更正为03:45 BJT（20:45 CET=19:45 UTC）；原快照不覆盖。",
+    "巴西Cruzeiro-Palmeiras出现次级比分源冲突，CBF官方页确认2-1，按官方结果归档。"
   ],
   "missing": {
     "sqlite_database": "未连接；本轮没有数据库写入",
