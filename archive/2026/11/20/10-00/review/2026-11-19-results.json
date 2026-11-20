@@ -1,0 +1,515 @@
+{
+  "schema_version": "1.1",
+  "task": "daily-football-10-00-review",
+  "captured_at_bjt": "2026-11-20T10:31:11+08:00",
+  "timezone": "Asia/Shanghai",
+  "previous_bjt_date": "2026-11-19",
+  "iso_week": "2026-W47",
+  "tracking_scope": {
+    "core_leagues": [
+      "Premier League",
+      "La Liga",
+      "Bundesliga",
+      "Serie A",
+      "Ligue 1",
+      "K League 1",
+      "J1 League"
+    ],
+    "separately_tracked": [
+      "Brazil Serie A",
+      "Bulgaria Second League",
+      "Uruguay Primera División",
+      "French National 1",
+      "Denmark 1st Division",
+      "Algerian Ligue 1",
+      "UEFA Women's Champions League",
+      "FIFA U-17 World Cup",
+      "AFC U-17 Asian Cup qualifiers",
+      "ASEAN Club Championship Shopee Cup",
+      "International U17 friendlies"
+    ],
+    "nations_league_separate": true
+  },
+  "result_policy": {
+    "include_only_confirmed_full_time": true,
+    "result_priority": [
+      "雷速体育",
+      "赛事官方/联赛官方",
+      "可靠独立比分源"
+    ],
+    "compare_only_immutable_pre_match_snapshot": true,
+    "handicap_mapping": "仅使用第一比分+已核实官方竞彩让球盘口；第二比分和第三方亚洲盘禁止参与"
+  },
+  "summary": {
+    "confirmed_finished_matches": 17,
+    "immutable_prediction_snapshots_found": 1,
+    "matches_without_original_prediction_snapshot": 16,
+    "core_league_matches_found": 0,
+    "nations_league_matches_found": 0,
+    "wdl": {
+      "evaluated": 1,
+      "hit": 1,
+      "accuracy": 1
+    },
+    "first_score": {
+      "evaluated": 1,
+      "hit": 0,
+      "accuracy": 0
+    },
+    "second_score": {
+      "evaluated": 1,
+      "hit": 0,
+      "accuracy": 0
+    },
+    "half_full": {
+      "evaluated": 1,
+      "hit": 0,
+      "accuracy": 0
+    },
+    "jczq_handicap": {
+      "evaluated": 0,
+      "hit": null,
+      "accuracy": null,
+      "reason": "无官方真实竞彩盘口，禁止反推"
+    },
+    "risk_warning": {
+      "evaluated": 1,
+      "binary_hit_rate": null,
+      "note": "有高风险提示，但未定义可验证的二元风险事件；仅作定性记录"
+    }
+  },
+  "matches": [
+    {
+      "match_id": "internal:bulgaria-second-league:2026-11-19:dobrudzha-fratria",
+      "competition": "Bulgaria Second League",
+      "category": "domestic-league",
+      "kickoff_bjt": "2026-11-19T23:00:00+08:00",
+      "home": "Dobrudzha",
+      "away": "Fratria",
+      "status": "FT",
+      "half_time": "0-4",
+      "full_time": "0-5",
+      "result_sources": [
+        "https://www.scoremondo.com/match/dobrudzha-fratria-2026-11-19",
+        "https://promatch24.com/match/dobrudzha-fratria-2026-11-19",
+        "https://www.soccerpunter.com/match/19753111/Fredericia-vs-Hilleroed"
+      ],
+      "prediction_snapshot": {
+        "status": "found",
+        "path": "archive/2026/11/19/15-00/predictions/domestic-league/bulgaria-second-league/teams/dobrudzha/2026-W47/dobrudzha-v-fratria.json",
+        "captured_at_bjt": "2026-11-19T14:57:09+08:00",
+        "match_id_in_snapshot": null,
+        "provider_match_id": "1571601",
+        "traceability_status": "partial; stable match_id and immutable prediction_id absent"
+      },
+      "predicted": {
+        "score_1": "1-1",
+        "score_2": "0-1",
+        "wdl": {
+          "home": 24,
+          "draw": 26,
+          "away": 50
+        },
+        "half_full": "平/客",
+        "confidence": 54,
+        "risk": "high",
+        "jczq_handicap": null
+      },
+      "evaluation": {
+        "actual_wdl": "客胜",
+        "wdl_hit": true,
+        "first_score_hit": false,
+        "second_score_hit": false,
+        "actual_half_full": "客/客",
+        "half_full_hit": false,
+        "jczq_result": "无法核验",
+        "jczq_reason": "没有真实官方竞彩让球盘口；不使用第三方亚洲盘",
+        "risk_warning_status": "qualitative-relevance-only",
+        "error_reasons": [
+          "方向判断正确，但比分矩阵严重低估客队进球尾部和净胜球上限",
+          "第一比分与第二比分均未覆盖0-5，两个候选比分均过于保守",
+          "半全场把上半场平局作为路径，但实际半场已0-4"
+        ],
+        "risk_review": "赛前已提示主/平赔率明显缩短而客胜赔率基本不动，实际客队0-5大胜说明该市场分歧提示值得保留；因未定义二元命中条件，不计为正式风险命中"
+      }
+    },
+    {
+      "match_id": "internal:brazil-serie-a:2026-11-19:coritiba-santos",
+      "competition": "Brazil Serie A",
+      "category": "domestic-league",
+      "kickoff_bjt": "2026-11-19T06:30:00+08:00",
+      "home": "Coritiba",
+      "away": "Santos",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "0-1",
+      "result_sources": [
+        "https://scoreslive.com.br/futebol/brasil/serie-a/resultados",
+        "https://www.envivo24.com/national/Brazil/Serie-A/2026/"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive",
+        "path_checked": "archive/2026/11/18/15-00/predictions/index.json"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无可回读的原始赛前预测快照；不反推预测、不计算命中"
+      }
+    },
+    {
+      "match_id": "internal:brazil-serie-a:2026-11-19:remo-chapecoense-sc",
+      "competition": "Brazil Serie A",
+      "category": "domestic-league",
+      "kickoff_bjt": "2026-11-19T07:00:00+08:00",
+      "home": "Remo",
+      "away": "Chapecoense-SC",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "2-0",
+      "result_sources": [
+        "https://scoreslive.com.br/futebol/brasil/serie-a/resultados",
+        "https://www.envivo24.com/national/Brazil/Serie-A/2026/"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive",
+        "path_checked": "archive/2026/11/18/15-00/predictions/index.json"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无可回读的原始赛前预测快照；不反推预测、不计算命中"
+      }
+    },
+    {
+      "match_id": "internal:brazil-serie-a:2026-11-19:cruzeiro-palmeiras",
+      "competition": "Brazil Serie A",
+      "category": "domestic-league",
+      "kickoff_bjt": "2026-11-19T07:30:00+08:00",
+      "home": "Cruzeiro",
+      "away": "Palmeiras",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "2-1",
+      "result_sources": [
+        "https://scoreslive.com.br/futebol/brasil/serie-a/resultados",
+        "https://www.envivo24.com/national/Brazil/Serie-A/2026/"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive",
+        "path_checked": "archive/2026/11/18/15-00/predictions/index.json"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无可回读的原始赛前预测快照；不反推预测、不计算命中"
+      }
+    },
+    {
+      "match_id": "internal:brazil-serie-a:2026-11-19:flamengo-athletico-pr",
+      "competition": "Brazil Serie A",
+      "category": "domestic-league",
+      "kickoff_bjt": "2026-11-19T07:30:00+08:00",
+      "home": "Flamengo",
+      "away": "Athletico-PR",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "2-1",
+      "result_sources": [
+        "https://scoreslive.com.br/futebol/brasil/serie-a/resultados",
+        "https://www.envivo24.com/national/Brazil/Serie-A/2026/"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive",
+        "path_checked": "archive/2026/11/18/15-00/predictions/index.json"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无可回读的原始赛前预测快照；不反推预测、不计算命中"
+      }
+    },
+    {
+      "match_id": "internal:fifa-u17-world-cup:2026-11-19:new-caledonia-u17-ecuador-u17",
+      "competition": "FIFA U-17 World Cup Qatar 2026",
+      "category": "national-team",
+      "kickoff_bjt": "2026-11-19T19:00:00+08:00",
+      "home": "New Caledonia U17",
+      "away": "Ecuador U17",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "0-1",
+      "result_sources": [
+        "https://www.fifa.com/en/articles/round-up-matchday-one-doha",
+        "https://www.figc.it/en/national-teams/news/world-cup-in-qatar-from-19-november-to-13-december-daniele-franceschini-names-his-21-man-squad-o0brrjmz"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    },
+    {
+      "match_id": "internal:fifa-u17-world-cup:2026-11-19:france-u17-haiti-u17",
+      "competition": "FIFA U-17 World Cup Qatar 2026",
+      "category": "national-team",
+      "kickoff_bjt": "2026-11-19T19:00:00+08:00",
+      "home": "France U17",
+      "away": "Haiti U17",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "3-1",
+      "result_sources": [
+        "https://www.fifa.com/en/articles/round-up-matchday-one-doha",
+        "https://www.figc.it/en/national-teams/news/world-cup-in-qatar-from-19-november-to-13-december-daniele-franceschini-names-his-21-man-squad-o0brrjmz"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    },
+    {
+      "match_id": "internal:fifa-u17-world-cup:2026-11-19:korea-republic-u17-uganda-u17",
+      "competition": "FIFA U-17 World Cup Qatar 2026",
+      "category": "national-team",
+      "kickoff_bjt": "2026-11-19T19:30:00+08:00",
+      "home": "Korea Republic U17",
+      "away": "Uganda U17",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "3-0",
+      "result_sources": [
+        "https://www.fifa.com/en/articles/round-up-matchday-one-doha",
+        "https://www.figc.it/en/national-teams/news/world-cup-in-qatar-from-19-november-to-13-december-daniele-franceschini-names-his-21-man-squad-o0brrjmz"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    },
+    {
+      "match_id": "internal:fifa-u17-world-cup:2026-11-19:saudi-arabia-u17-uruguay-u17",
+      "competition": "FIFA U-17 World Cup Qatar 2026",
+      "category": "national-team",
+      "kickoff_bjt": "2026-11-19T20:00:00+08:00",
+      "home": "Saudi Arabia U17",
+      "away": "Uruguay U17",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "2-3",
+      "result_sources": [
+        "https://www.fifa.com/en/articles/round-up-matchday-one-doha",
+        "https://www.figc.it/en/national-teams/news/world-cup-in-qatar-from-19-november-to-13-december-daniele-franceschini-names-his-21-man-squad-o0brrjmz"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    },
+    {
+      "match_id": "internal:fifa-u17-world-cup:2026-11-19:mozambique-u17-denmark-u17",
+      "competition": "FIFA U-17 World Cup Qatar 2026",
+      "category": "national-team",
+      "kickoff_bjt": "2026-11-19T21:00:00+08:00",
+      "home": "Mozambique U17",
+      "away": "Denmark U17",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "4-0",
+      "result_sources": [
+        "https://www.fifa.com/en/articles/round-up-matchday-one-doha",
+        "https://www.figc.it/en/national-teams/news/world-cup-in-qatar-from-19-november-to-13-december-daniele-franceschini-names-his-21-man-squad-o0brrjmz"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    },
+    {
+      "match_id": "internal:fifa-u17-world-cup:2026-11-19:qatar-u17-panama-u17",
+      "competition": "FIFA U-17 World Cup Qatar 2026",
+      "category": "national-team",
+      "kickoff_bjt": "2026-11-19T21:30:00+08:00",
+      "home": "Qatar U17",
+      "away": "Panama U17",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "2-0",
+      "result_sources": [
+        "https://www.fifa.com/en/articles/round-up-matchday-one-doha",
+        "https://www.figc.it/en/national-teams/news/world-cup-in-qatar-from-19-november-to-13-december-daniele-franceschini-names-his-21-man-squad-o0brrjmz"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    },
+    {
+      "match_id": "internal:fifa-u17-world-cup:2026-11-19:egypt-u17-greece-u17",
+      "competition": "FIFA U-17 World Cup Qatar 2026",
+      "category": "national-team",
+      "kickoff_bjt": "2026-11-19T22:00:00+08:00",
+      "home": "Egypt U17",
+      "away": "Greece U17",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "1-2",
+      "result_sources": [
+        "https://www.fifa.com/en/articles/round-up-matchday-one-doha",
+        "https://www.figc.it/en/national-teams/news/world-cup-in-qatar-from-19-november-to-13-december-daniele-franceschini-names-his-21-man-squad-o0brrjmz"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    },
+    {
+      "match_id": "internal:fifa-u17-world-cup:2026-11-19:argentina-u17-australia-u17",
+      "competition": "FIFA U-17 World Cup Qatar 2026",
+      "category": "national-team",
+      "kickoff_bjt": "2026-11-19T22:00:00+08:00",
+      "home": "Argentina U17",
+      "away": "Australia U17",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "0-2",
+      "result_sources": [
+        "https://www.fifa.com/en/articles/round-up-matchday-one-doha",
+        "https://www.figc.it/en/national-teams/news/world-cup-in-qatar-from-19-november-to-13-december-daniele-franceschini-names-his-21-man-squad-o0brrjmz"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    },
+    {
+      "match_id": "internal:asean-shopee-cup:2026-11-19:pkr-svay-rieng-port-fc",
+      "competition": "ASEAN Club Championship Shopee Cup",
+      "category": "continental-club",
+      "kickoff_bjt": null,
+      "kickoff_time_missing_reason": "官方赛报仅核实比赛日期，未取得可核验开球时间",
+      "home": "PKR Svay Rieng",
+      "away": "Port FC",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "4-1",
+      "result_sources": [
+        "https://aseanutdfc.com/id/asean-club-championship/2026/news",
+        "https://www.aseanfootball.org/v3/2026/11/"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    },
+    {
+      "match_id": "internal:asean-shopee-cup:2026-11-19:persib-bandung-shan-united",
+      "competition": "ASEAN Club Championship Shopee Cup",
+      "category": "continental-club",
+      "kickoff_bjt": null,
+      "kickoff_time_missing_reason": "官方赛报仅核实比赛日期，未取得可核验开球时间",
+      "home": "Persib Bandung",
+      "away": "Shan United",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "6-0",
+      "result_sources": [
+        "https://aseanutdfc.com/id/asean-club-championship/2026/news",
+        "https://www.aseanfootball.org/v3/2026/11/"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    },
+    {
+      "match_id": "internal:asean-shopee-cup:2026-11-19:c-ng-an-h-n-i-johor-darul-ta-zim",
+      "competition": "ASEAN Club Championship Shopee Cup",
+      "category": "continental-club",
+      "kickoff_bjt": null,
+      "kickoff_time_missing_reason": "官方赛报仅核实比赛日期，未取得可核验开球时间",
+      "home": "Công An Hà Nội",
+      "away": "Johor Darul Ta'zim",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "1-3",
+      "result_sources": [
+        "https://aseanutdfc.com/id/asean-club-championship/2026/news",
+        "https://www.aseanfootball.org/v3/2026/11/"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    },
+    {
+      "match_id": "internal:international-u17-friendly:2026-11-19:switzerland-czechia",
+      "competition": "International Friendly U17",
+      "category": "national-team",
+      "kickoff_bjt": "2026-11-19T18:00:00+08:00",
+      "home": "Switzerland U17",
+      "away": "Czechia U17",
+      "status": "FT",
+      "half_time": null,
+      "full_time": "4-0",
+      "result_sources": [
+        "https://www.shensuansports.com/en/match/switzerland-u17-14012-v-czechia-republic-u17-18139-2026-11-19-4670356",
+        "https://www.sportscore.id/football/match/switzerland-u17-vs-czechia-republic-u17/dn1m1gh94j13moe/"
+      ],
+      "prediction_snapshot": {
+        "status": "not-found-in-readable-archive"
+      },
+      "evaluation": {
+        "status": "无法核验",
+        "reason": "无原始赛前预测快照"
+      }
+    }
+  ],
+  "core_league_audit": {
+    "Premier League": "2026-11-19 BJT未发现已完赛场次",
+    "La Liga": "2026-11-19 BJT未发现已完赛场次",
+    "Bundesliga": "2026-11-19 BJT未发现已完赛场次",
+    "Serie A": "2026-11-19 BJT未发现已完赛场次",
+    "Ligue 1": "2026-11-19 BJT未发现已完赛场次",
+    "K League 1": "2026-11-19 BJT未发现已完赛场次",
+    "J1 League": "2026-11-19 BJT未发现已完赛场次"
+  },
+  "nations_league_audit": {
+    "status": "no_confirmed_match_found_on_2026-11-19_BJT",
+    "separate_directory": true
+  },
+  "limitations": [
+    "赛果列表覆盖的是已配置跟踪赛事及本轮确认的结果源，不代表全球所有足球赛事。",
+    "除Dobrudzha-Fratria外，16场没有可回读的原始赛前预测快照，均不得补造预测。",
+    "竞彩官方真实让球盘口未核实；本轮不产生任何让球命中率。",
+    "数据库未连接；本轮仅能写GitHub文件，不能声称SQLite已写入。"
+  ]
+}
