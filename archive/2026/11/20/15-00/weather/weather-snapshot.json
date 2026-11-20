@@ -1,0 +1,55 @@
+{
+  "captured_at_bjt": "2026-11-20T15:14:04+08:00",
+  "fixtures": [
+    {
+      "venue": "Aspire Zone, Doha, Qatar",
+      "matches": [
+        "FIFA U17当晚6场"
+      ],
+      "forecast": "比赛时段约24°C、晴到少云、降水概率低、轻风",
+      "confidence": "中",
+      "source_urls": [
+        "https://www.timeanddate.com/weather/%4025.28728%2C51.54835/hourly",
+        "https://www.wunderground.com/hourly/qa/doha/date/2026-11-20"
+      ]
+    },
+    {
+      "venue": "Emirates Club Stadium, Ras Al Khaimah, UAE",
+      "matches": [
+        "UAE U17 v Bangladesh U17"
+      ],
+      "forecast": "官方NCM预报为局部多云至多云、局部可能降雨，风速10-25km/h、阵风可达40km/h；其他预报偏晴，存在差异",
+      "confidence": "中低",
+      "source_urls": [
+        "https://www.ncm.gov.ae/resources/shared/assets/bulletins/emirates/20261119/RAK01-EN.pdf",
+        "https://www.weatherworld.com/14day-weather/ae/ras%2Bal-khaimah.html"
+      ]
+    },
+    {
+      "venue": "Borussia-Park, Mönchengladbach, Germany",
+      "matches": [
+        "Mönchengladbach v Dortmund"
+      ],
+      "forecast": "预报来源对降雨判断不一致：有来源显示晴/少云，另有来源显示局部阵雨；暂不作天气修正",
+      "confidence": "低",
+      "source_urls": [
+        "https://www.worldweatheronline.com/football/borussia-park-monchengladbach-weather/de.aspx?day=20&tp=1",
+        "https://www.gmx.net/wetter/de/nordrhein-westfalen/moenchengladbach/"
+      ]
+    },
+    {
+      "venue": "Etihad Stadium, Manchester, UK",
+      "matches": [
+        "Manchester City v Fulham"
+      ],
+      "forecast": "约0-6°C、晴、降水概率低",
+      "confidence": "中",
+      "source_urls": [
+        "https://www.worldweatheronline.com/football/etihad-stadium-manchester-weather/gb.aspx?day=20&tp=1"
+      ]
+    }
+  ],
+  "missing": [
+    "未逐个获取所有J1/K League/欧洲比赛球场的小时级天气；未对缺失场次作天气假设"
+  ]
+}
