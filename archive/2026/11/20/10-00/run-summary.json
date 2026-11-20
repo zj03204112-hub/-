@@ -7,7 +7,7 @@
   "repository": "zj03204112-hub/-",
   "branch": "automation/daily-football-2026-11-20-1000-run12",
   "archive": {
-    "new_unique_files": 59,
+    "new_unique_files": 61,
     "review_file": "archive/2026/11/20/10-00/review/2026-11-19-results.json",
     "fixtures_file": "archive/2026/11/20/10-00/fixtures/bjt-20-21.json",
     "xg_summary_file": "archive/2026/11/20/10-00/xg/coverage/2026-W47-summary.json",
@@ -21,12 +21,15 @@
       "missing-team coverage file read back",
       "xG summary file read back",
       "4 provider-specific xG cross-check team snapshots checked",
-      "24 missing-xG competition team-week snapshot files created"
+      "24 missing-xG competition team-week snapshot files created",
+      "分类索引及欧国联独立W47目录已写入"
     ],
     "last_verified_commit": "3d9aec59c95a9993c1f351332f24b797257e7e9b",
     "review_update_commit": "b8fc0f808a2194c77d202269a1089bca6b7758cd",
-    "data_files_excluding_run_summary": 58,
-    "last_verified_commit_before_summary_update": "ec83582f6752cf9d2281669e01b7742213045b60"
+    "data_files_excluding_run_summary": 60,
+    "last_verified_commit_before_summary_update": "9155c69727c9367c6f4115907a27ae877ac1d760",
+    "classification_index_file": "archive/2026/11/20/10-00/classification/index.json",
+    "nations_league_index_file": "archive/2026/11/20/10-00/national-team/nations-league/2026-W47/index.json"
   },
   "review": {
     "previous_bjt_date": "2026-11-19",
@@ -78,6 +81,7 @@
     "v5_1_modified": false,
     "frozen_validation_sample_modified": false,
     "historical_prediction_snapshots_overwritten": false,
-    "historical_xg_week_snapshots_overwritten": false
+    "historical_xg_week_snapshots_overwritten": false,
+    "nations_league_kept_separate": true
   }
 }
