@@ -3,24 +3,28 @@
   "task": "daily-football-10-00-finalization",
   "finalized_at_bjt": "2026-11-21T11:28:00+08:00",
   "branch": "automation/daily-football-2026-11-21-1000-run15",
-  "previous_commit_sha": "a1a00f81ae2983a2da9ff4ba8253e0bc95edc933",
+  "previous_commit_sha": "88a4fafd6eb8c4d6acae7f3b8566c4655340861f",
   "pre_finalization_readback": {
     "files_checked": 8,
     "files_valid": 8,
     "all_json_parsed": true,
     "results_count": 23,
+    "predictions_scored": 5,
     "fixture_count": 66,
     "fixture_dates": {
       "2026-11-21": 37,
       "2026-11-22": 29
     },
+    "guardian_timezone_rows_checked": 34,
+    "guardian_timezone_errors": 0,
     "xg_match_rows": 70,
     "team_week_rows": 70
   },
-  "status": "all eight primary archive files were fetched from the working branch and parsed successfully before this finalization file was written",
+  "status": "All eight primary archive files were fetched from the working branch and parsed successfully after timezone corrections. This finalization file is now the ninth archive file and must be read back separately.",
   "database_connected": false,
   "v5_1_modified": false,
   "frozen_validation_sample_modified": false,
   "historical_predictions_overwritten": false,
-  "historical_xg_snapshots_overwritten": false
+  "historical_xg_snapshots_overwritten": false,
+  "fixture_timezone_audit": "All 34 Guardian-sourced fixture rows checked: 21 Nov EST (UTC-05:00), 22 Nov CET (UTC+01:00); BJT and UTC conversions consistent."
 }
