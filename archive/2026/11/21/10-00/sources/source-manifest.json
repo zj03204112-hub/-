@@ -95,13 +95,13 @@
     {
       "source": "Guardian 21 Nov fixtures",
       "url": "https://www.theguardian.com/football/fixtures/2026/Nov/21",
-      "purpose": "Big Five European league fixtures, GMT kickoff times",
+      "purpose": "Big Five European league fixtures; source page displays EST (UTC-05:00), converted to BJT",
       "authority": "secondary"
     },
     {
       "source": "Guardian 22 Nov fixtures",
       "url": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
-      "purpose": "Big Five European league fixtures, GMT kickoff times",
+      "purpose": "Big Five European league fixtures; source page displays CET (UTC+01:00), converted to BJT",
       "authority": "secondary"
     },
     {
@@ -176,5 +176,6 @@
       "purpose": "Post-match Vissel-Mito xG estimate",
       "authority": "third-party model"
     }
-  ]
+  ],
+  "timezone_audit": "Guardian 21 Nov schedule was displayed in EST (UTC-05:00); Guardian 22 Nov schedule was displayed in CET (UTC+01:00). Fixture timestamps were corrected to these source zones and BJT conversions retained."
 }
