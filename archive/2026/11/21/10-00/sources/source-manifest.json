@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-  "source_count": 28,
+  "source_count": 30,
   "leisu_search": {
     "attempted": true,
     "query_scope": "exact match result pages for J1 and FIFA/AFC U17 on 2026-11-20",
@@ -147,12 +147,6 @@
       "authority": "third-party model"
     },
     {
-      "source": "FlashSport",
-      "url": "https://flashsportapp.com/en/football/match/kashiwa-reysol-jef-united-chiba-2026-11-20-1556144/",
-      "purpose": "Post-match Kashiwa-JEF xG estimate",
-      "authority": "third-party model"
-    },
-    {
       "source": "OddAlerts",
       "url": "https://www.oddalerts.com/livescores/jef-united-vs-kashiwa-reysol/6185-6173",
       "purpose": "Post-match Kashiwa-JEF xG estimate",
@@ -175,7 +169,26 @@
       "url": "https://footballedge.io/it/matches/vissel-kobe-vs-mito-hollyhock-2026-11-20",
       "purpose": "Post-match Vissel-Mito xG estimate",
       "authority": "third-party model"
+    },
+    {
+      "source": "SoccerGhost — Kashiwa vs JEF",
+      "url": "https://soccerghost.com/match/108314/kashiwa-reysol-vs-jef-united-chiba",
+      "purpose": "Post-match Kashiwa-JEF xG estimate",
+      "authority": "third-party model"
+    },
+    {
+      "source": "DailyGoal — Kashiwa vs JEF",
+      "url": "https://dailygoal.lightcoding.com/fr/m/RW5cIfIlyRC/kashiwa-reysol-vs-jef-united-chiba",
+      "purpose": "Post-match Kashiwa-JEF xG estimate",
+      "authority": "third-party model"
+    },
+    {
+      "source": "FlashSport — Vissel vs Mito",
+      "url": "https://flashsportapp.com/en/football/match/vissel-kobe-mito-hollyhock-2026-11-20-1556150/",
+      "purpose": "Post-match Vissel-Mito xG estimate",
+      "authority": "third-party model"
     }
   ],
-  "timezone_audit": "Guardian 21 Nov schedule was displayed in EST (UTC-05:00); Guardian 22 Nov schedule was displayed in CET (UTC+01:00). Fixture timestamps were corrected to these source zones and BJT conversions retained."
+  "timezone_audit": "Guardian 21 Nov schedule was displayed in EST (UTC-05:00); Guardian 22 Nov schedule was displayed in CET (UTC+01:00). Fixture timestamps were corrected to these source zones and BJT conversions retained.",
+  "xg_source_policy": "Post-match J1 xG values are stored as separate provider model estimates; no averaging. Youth match-level xG remains null where no verified provider source was found."
 }
