@@ -1219,14 +1219,14 @@
       "xg": 1.43,
       "xga": 0.51,
       "xgd": 0.92,
-      "provider_name": "FlashSport",
+      "provider_name": "SoccerGhost",
       "provider_type": "third_party",
       "data_type": "vendor_model_estimate",
       "model_origin": "provider_model",
       "measurement_status": "estimated_not_measured",
       "data_stage": "post_match",
       "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "source_url": "https://flashsportapp.com/en/football/match/kashiwa-reysol-jef-united-chiba-2026-11-20-1556144/",
+      "source_url": "https://soccerghost.com/match/108314/kashiwa-reysol-vs-jef-united-chiba",
       "missing_reason": null
     },
     {
@@ -1241,14 +1241,58 @@
       "xg": 0.51,
       "xga": 1.43,
       "xgd": -0.92,
-      "provider_name": "FlashSport",
+      "provider_name": "SoccerGhost",
       "provider_type": "third_party",
       "data_type": "vendor_model_estimate",
       "model_origin": "provider_model",
       "measurement_status": "estimated_not_measured",
       "data_stage": "post_match",
       "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "source_url": "https://flashsportapp.com/en/football/match/kashiwa-reysol-jef-united-chiba-2026-11-20-1556144/",
+      "source_url": "https://soccerghost.com/match/108314/kashiwa-reysol-vs-jef-united-chiba",
+      "missing_reason": null
+    },
+    {
+      "match_id": "j1-2026-11-20-kashiwa-jef",
+      "team_id": "kashiwa-reysol",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "match_date_bjt": "2026-11-20",
+      "kickoff_bjt": "2026-11-20T18:03:00+08:00",
+      "home_away": "home",
+      "xg": 1.43,
+      "xga": 0.51,
+      "xgd": 0.92,
+      "provider_name": "DailyGoal",
+      "provider_type": "third_party",
+      "data_type": "vendor_model_estimate",
+      "model_origin": "provider_model",
+      "measurement_status": "estimated_not_measured",
+      "data_stage": "post_match",
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "source_url": "https://dailygoal.lightcoding.com/fr/m/RW5cIfIlyRC/kashiwa-reysol-vs-jef-united-chiba",
+      "missing_reason": null
+    },
+    {
+      "match_id": "j1-2026-11-20-kashiwa-jef",
+      "team_id": "jef-united-chiba",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "match_date_bjt": "2026-11-20",
+      "kickoff_bjt": "2026-11-20T18:03:00+08:00",
+      "home_away": "away",
+      "xg": 0.51,
+      "xga": 1.43,
+      "xgd": -0.92,
+      "provider_name": "DailyGoal",
+      "provider_type": "third_party",
+      "data_type": "vendor_model_estimate",
+      "model_origin": "provider_model",
+      "measurement_status": "estimated_not_measured",
+      "data_stage": "post_match",
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "source_url": "https://dailygoal.lightcoding.com/fr/m/RW5cIfIlyRC/kashiwa-reysol-vs-jef-united-chiba",
       "missing_reason": null
     },
     {
@@ -1426,28 +1470,53 @@
       "captured_at_bjt": "2026-11-21T11:28:00+08:00",
       "source_url": "https://footballedge.io/it/matches/vissel-kobe-vs-mito-hollyhock-2026-11-20",
       "missing_reason": null
-    }
-  ],
-  "provider_conflicts": [
+    },
     {
-      "match_id": "j1-2026-11-20-kashiwa-jef",
-      "provider_name": "xGoalsPro",
-      "source_url": "https://xgoalspro.com/football/japan/j1-league/kashiwa-reysol-vs-jef-united-chiba/1570467/",
-      "values_reported": [
-        {
-          "label": "Result on xG",
-          "home": 1.05,
-          "away": 0.51
-        },
-        {
-          "label": "xG / chance model",
-          "home": 1.24,
-          "away": 0.51
-        }
-      ],
-      "decision": "excluded from weekly provider totals pending field-definition reconciliation; do not average the two values"
+      "match_id": "j1-2026-11-20-vissel-mito",
+      "team_id": "vissel-kobe",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "match_date_bjt": "2026-11-20",
+      "kickoff_bjt": "2026-11-20T18:03:00+08:00",
+      "home_away": "home",
+      "xg": 1.63,
+      "xga": 0.71,
+      "xgd": 0.92,
+      "provider_name": "FlashSport",
+      "provider_type": "third_party",
+      "data_type": "vendor_model_estimate",
+      "model_origin": "provider_model",
+      "measurement_status": "estimated_not_measured",
+      "data_stage": "post_match",
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "source_url": "https://flashsportapp.com/en/football/match/vissel-kobe-mito-hollyhock-2026-11-20-1556150/",
+      "missing_reason": null
+    },
+    {
+      "match_id": "j1-2026-11-20-vissel-mito",
+      "team_id": "mito-hollyhock",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "match_date_bjt": "2026-11-20",
+      "kickoff_bjt": "2026-11-20T18:03:00+08:00",
+      "home_away": "away",
+      "xg": 0.71,
+      "xga": 1.63,
+      "xgd": -0.92,
+      "provider_name": "FlashSport",
+      "provider_type": "third_party",
+      "data_type": "vendor_model_estimate",
+      "model_origin": "provider_model",
+      "measurement_status": "estimated_not_measured",
+      "data_stage": "post_match",
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "source_url": "https://flashsportapp.com/en/football/match/vissel-kobe-mito-hollyhock-2026-11-20-1556150/",
+      "missing_reason": null
     }
   ],
+  "provider_conflicts": [],
   "pre_match_vendor_estimates": [
     {
       "match_id": "j1-2026-11-20-kashima-shimizu",
@@ -1465,11 +1534,11 @@
     "teams_in_captured_subset": 64,
     "matches_with_at_least_one_provider_post_match_xg": 3,
     "matches_without_verified_xg": 29,
-    "team_records_with_provider_xg": 12,
+    "team_records_with_provider_xg": 16,
     "team_records_missing_xg": 58,
-    "provider_count": 6,
+    "provider_count": 7,
     "measured_xg_count": 0,
-    "vendor_model_estimate_count": 12,
+    "vendor_model_estimate_count": 16,
     "own_model_estimate_count": 0,
     "match_coverage_rate": 0.09375,
     "team_coverage_rate": 0.09375,
@@ -1482,5 +1551,26 @@
     ],
     "missing_xg_policy": "null values retained with explicit missing reason; no imputed or own-model values inserted",
     "post_match_leakage_audit": "All provider xG rows are tagged post_match and segregated from pre-match inputs in this archive. Database/pipeline read access was unavailable, so downstream leakage was not independently audited."
-  }
+  },
+  "provider_value_differences": [
+    {
+      "match_id": "j1-2026-11-20-kashiwa-jef",
+      "values_by_provider": {
+        "SoccerGhost": "1.43-0.51",
+        "DailyGoal": "1.43-0.51",
+        "OddAlerts": "1.47-0.50"
+      },
+      "decision": "keep separate; no averaging"
+    },
+    {
+      "match_id": "j1-2026-11-20-vissel-mito",
+      "values_by_provider": {
+        "SoccerGhost": "1.47-0.71",
+        "Sportslife": "1.63-0.71",
+        "Footballedge": "1.47-0.71",
+        "FlashSport": "1.63-0.71"
+      },
+      "decision": "keep separate; no averaging"
+    }
+  ]
 }
