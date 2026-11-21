@@ -1,0 +1,198 @@
+{
+  "schema_version": "2.0",
+  "task": "daily-football-10-00-previous-bjt-day-review",
+  "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+  "reviewed_bjt_date": "2026-11-20",
+  "iso_week": "2026-W47",
+  "immutable_prediction_index": {
+    "path": "archive/2026/11/20/15-00/predictions/index.json",
+    "blob_sha": "304f4ff1055b249fb4870eec0530a4f898f0f430",
+    "branch": "automation/daily-football-2026-11-20-1500-run11",
+    "strategy_id": "SHADOW-MKT-FORM-20261120-1500",
+    "model_version": "manual-shadow-r1",
+    "snapshot_mutated": false
+  },
+  "direction_method": "argmax(home,draw,away probabilities) from stored snapshot; score and handicap evaluated independently",
+  "reviewed_predictions": [
+    {
+      "key": "mali-u17-v-new-zealand-u17",
+      "match_id": "fifa-u17-2026-11-20-mali-new-zealand",
+      "predicted_score_1": "2-0",
+      "predicted_score_2": "2-1",
+      "predicted_wdl_probabilities": {
+        "home": 54,
+        "draw": 26,
+        "away": 20
+      },
+      "predicted_wdl_direction": "H",
+      "actual_score": "3-0",
+      "actual_wdl": "H",
+      "wdl_hit": true,
+      "score_1_hit": false,
+      "score_2_hit": false,
+      "predicted_half_full": "平/主",
+      "actual_half_full": "主/主",
+      "half_full_hit": false,
+      "official_jczq_handicap_status": "not_verified",
+      "jczq_result": "无法核验",
+      "risk_prompt": "高",
+      "risk_hit_status": "not_scorable",
+      "error_reason": "胜负方向正确；第一、第二比分均低估主队进球，实际主队零封且净胜3球。"
+    },
+    {
+      "key": "spain-u17-v-china-pr-u17",
+      "match_id": "fifa-u17-2026-11-20-spain-china",
+      "predicted_score_1": "1-1",
+      "predicted_score_2": "2-1",
+      "predicted_wdl_probabilities": {
+        "home": 43,
+        "draw": 29,
+        "away": 28
+      },
+      "predicted_wdl_direction": "H",
+      "actual_score": "5-0",
+      "actual_wdl": "H",
+      "wdl_hit": true,
+      "score_1_hit": false,
+      "score_2_hit": false,
+      "predicted_half_full": "平/主",
+      "actual_half_full": "主/主",
+      "half_full_hit": false,
+      "official_jczq_handicap_status": "not_verified",
+      "jczq_result": "无法核验",
+      "risk_prompt": "高",
+      "risk_hit_status": "not_scorable",
+      "error_reason": "胜负方向正确，但比分矩阵把主胜压成1-1/2-1，严重低估主队进球尾部和零封概率。"
+    },
+    {
+      "key": "italy-u17-v-jamaica-u17",
+      "match_id": "fifa-u17-2026-11-20-italy-jamaica",
+      "predicted_score_1": "2-1",
+      "predicted_score_2": "1-1",
+      "predicted_wdl_probabilities": {
+        "home": 46,
+        "draw": 28,
+        "away": 26
+      },
+      "predicted_wdl_direction": "H",
+      "actual_score": "6-0",
+      "actual_wdl": "H",
+      "wdl_hit": true,
+      "score_1_hit": false,
+      "score_2_hit": false,
+      "predicted_half_full": "平/主",
+      "actual_half_full": "主/主",
+      "half_full_hit": false,
+      "official_jczq_handicap_status": "not_verified",
+      "jczq_result": "无法核验",
+      "risk_prompt": "高",
+      "risk_hit_status": "not_scorable",
+      "error_reason": "胜负方向正确；比分矩阵明显低估强弱差距及4球以上进球尾部。"
+    },
+    {
+      "key": "senegal-u17-v-croatia-u17",
+      "match_id": "fifa-u17-2026-11-20-senegal-croatia",
+      "predicted_score_1": "1-1",
+      "predicted_score_2": "1-2",
+      "predicted_wdl_probabilities": {
+        "home": 34,
+        "draw": 29,
+        "away": 37
+      },
+      "predicted_wdl_direction": "A",
+      "actual_score": "1-1",
+      "actual_wdl": "D",
+      "wdl_hit": false,
+      "score_1_hit": true,
+      "score_2_hit": false,
+      "predicted_half_full": "平/客",
+      "actual_half_full": "平/平",
+      "half_full_hit": false,
+      "official_jczq_handicap_status": "not_verified",
+      "jczq_result": "无法核验",
+      "risk_prompt": "高",
+      "risk_hit_status": "not_scorable",
+      "error_reason": "第一比分命中，但客胜37%被排在平局29%之前，平局概率不足；实际半场和全场均为平。"
+    },
+    {
+      "key": "uae-u17-v-bangladesh-u17",
+      "match_id": "afc-u17-2026-11-20-uae-bangladesh",
+      "predicted_score_1": "1-1",
+      "predicted_score_2": "2-1",
+      "predicted_wdl_probabilities": {
+        "home": 42,
+        "draw": 30,
+        "away": 28
+      },
+      "predicted_wdl_direction": "H",
+      "actual_score": "2-0",
+      "actual_wdl": "H",
+      "wdl_hit": true,
+      "score_1_hit": false,
+      "score_2_hit": false,
+      "predicted_half_full": "平/主",
+      "actual_half_full": "平/主",
+      "half_full_hit": true,
+      "official_jczq_handicap_status": "not_verified",
+      "jczq_result": "无法核验",
+      "risk_prompt": "高",
+      "risk_hit_status": "not_scorable",
+      "error_reason": "胜负及半全场方向正确，但两个比分都给客队进球，实际客队被零封。"
+    }
+  ],
+  "aggregate": {
+    "confirmed_finished_matches": 23,
+    "immutable_prediction_snapshots_found": 5,
+    "matches_without_original_prediction_snapshot": 18,
+    "ninety_minute_wdl": {
+      "scored": 5,
+      "hit": 4,
+      "accuracy": 0.8
+    },
+    "first_score_exact": {
+      "scored": 5,
+      "hit": 1,
+      "accuracy": 0.2
+    },
+    "second_score_exact": {
+      "scored": 5,
+      "hit": 0,
+      "accuracy": 0
+    },
+    "half_full": {
+      "scored": 5,
+      "hit": 1,
+      "accuracy": 0.2
+    },
+    "official_jczq_handicap": {
+      "scored": 0,
+      "hit": null,
+      "accuracy": null,
+      "unverifiable": 5
+    },
+    "risk_prompts": {
+      "scored": 0,
+      "hit": null,
+      "accuracy": null,
+      "unscorable": 5
+    }
+  },
+  "unscored_matches_reason": "缺少不可变赛前预测快照；不得事后补造预测。",
+  "deferred_predictions_for_next_review": [
+    {
+      "key": "cote-divoire-u17-v-uzbekistan-u17",
+      "kickoff_bjt": "2026-11-21T00:00:00+08:00",
+      "review_due_bjt_date": "2026-11-21"
+    },
+    {
+      "key": "fiji-u17-v-morocco-u17",
+      "kickoff_bjt": "2026-11-21T00:00:00+08:00",
+      "review_due_bjt_date": "2026-11-21"
+    }
+  ],
+  "handicap_rule_compliance": "未使用第二比分；未使用第三方亚洲盘；未核实官方竞彩让球盘口的场次全部标记无法核验。",
+  "risk_rule_compliance": "原快照仅写‘高’，没有预先定义可观测触发条件，因此不能按赛果倒推风险提示命中。",
+  "v5_1_modified": false,
+  "frozen_validation_sample_modified": false,
+  "historical_prediction_snapshots_overwritten": false
+}
