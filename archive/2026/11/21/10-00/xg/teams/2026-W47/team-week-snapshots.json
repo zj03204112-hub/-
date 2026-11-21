@@ -5,306 +5,6 @@
   "team_id_namespace": "normalized internal slugs; provider-native stable team IDs were not available in every source",
   "team_week_snapshots": [
     {
-      "team_id": "kashima-antlers",
-      "team_name": "Kashima Antlers",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "VJStats",
-      "model_origin": "provider_model",
-      "weekly_xg": 1.86,
-      "weekly_xga": 0.68,
-      "weekly_xgd": 1.18,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 1.86,
-      "weekly_xga_per90": 0.68,
-      "weekly_xgd_per90": 1.18,
-      "match_ids": [
-        "j1-2026-11-20-kashima-shimizu"
-      ],
-      "source_urls": [
-        "https://www.vjstats.com/matches/7033/kashima-antlers-vs-shimizu-s-pulse"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
-      "team_id": "shimizu-s-pulse",
-      "team_name": "Shimizu S-Pulse",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "VJStats",
-      "model_origin": "provider_model",
-      "weekly_xg": 0.68,
-      "weekly_xga": 1.86,
-      "weekly_xgd": -1.18,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 0.68,
-      "weekly_xga_per90": 1.86,
-      "weekly_xgd_per90": -1.18,
-      "match_ids": [
-        "j1-2026-11-20-kashima-shimizu"
-      ],
-      "source_urls": [
-        "https://www.vjstats.com/matches/7033/kashima-antlers-vs-shimizu-s-pulse"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
-      "team_id": "kashiwa-reysol",
-      "team_name": "Kashiwa Reysol",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "FlashSport",
-      "model_origin": "provider_model",
-      "weekly_xg": 1.43,
-      "weekly_xga": 0.51,
-      "weekly_xgd": 0.92,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 1.43,
-      "weekly_xga_per90": 0.51,
-      "weekly_xgd_per90": 0.92,
-      "match_ids": [
-        "j1-2026-11-20-kashiwa-jef"
-      ],
-      "source_urls": [
-        "https://flashsportapp.com/en/football/match/kashiwa-reysol-jef-united-chiba-2026-11-20-1556144/"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
-      "team_id": "jef-united-chiba",
-      "team_name": "JEF United Chiba",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "FlashSport",
-      "model_origin": "provider_model",
-      "weekly_xg": 0.51,
-      "weekly_xga": 1.43,
-      "weekly_xgd": -0.92,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 0.51,
-      "weekly_xga_per90": 1.43,
-      "weekly_xgd_per90": -0.92,
-      "match_ids": [
-        "j1-2026-11-20-kashiwa-jef"
-      ],
-      "source_urls": [
-        "https://flashsportapp.com/en/football/match/kashiwa-reysol-jef-united-chiba-2026-11-20-1556144/"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
-      "team_id": "kashiwa-reysol",
-      "team_name": "Kashiwa Reysol",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "OddAlerts",
-      "model_origin": "provider_model",
-      "weekly_xg": 1.47,
-      "weekly_xga": 0.5,
-      "weekly_xgd": 0.97,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 1.47,
-      "weekly_xga_per90": 0.5,
-      "weekly_xgd_per90": 0.97,
-      "match_ids": [
-        "j1-2026-11-20-kashiwa-jef"
-      ],
-      "source_urls": [
-        "https://www.oddalerts.com/livescores/jef-united-vs-kashiwa-reysol/6185-6173"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
-      "team_id": "jef-united-chiba",
-      "team_name": "JEF United Chiba",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "OddAlerts",
-      "model_origin": "provider_model",
-      "weekly_xg": 0.5,
-      "weekly_xga": 1.47,
-      "weekly_xgd": -0.97,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 0.5,
-      "weekly_xga_per90": 1.47,
-      "weekly_xgd_per90": -0.97,
-      "match_ids": [
-        "j1-2026-11-20-kashiwa-jef"
-      ],
-      "source_urls": [
-        "https://www.oddalerts.com/livescores/jef-united-vs-kashiwa-reysol/6185-6173"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
-      "team_id": "vissel-kobe",
-      "team_name": "Vissel Kobe",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "SoccerGhost",
-      "model_origin": "provider_model",
-      "weekly_xg": 1.47,
-      "weekly_xga": 0.71,
-      "weekly_xgd": 0.76,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 1.47,
-      "weekly_xga_per90": 0.71,
-      "weekly_xgd_per90": 0.76,
-      "match_ids": [
-        "j1-2026-11-20-vissel-mito"
-      ],
-      "source_urls": [
-        "https://soccerghost.com/match/108320/vissel-kobe-vs-mito-hollyhock"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
-      "team_id": "mito-hollyhock",
-      "team_name": "Mito Hollyhock",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "SoccerGhost",
-      "model_origin": "provider_model",
-      "weekly_xg": 0.71,
-      "weekly_xga": 1.47,
-      "weekly_xgd": -0.76,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 0.71,
-      "weekly_xga_per90": 1.47,
-      "weekly_xgd_per90": -0.76,
-      "match_ids": [
-        "j1-2026-11-20-vissel-mito"
-      ],
-      "source_urls": [
-        "https://soccerghost.com/match/108320/vissel-kobe-vs-mito-hollyhock"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
-      "team_id": "vissel-kobe",
-      "team_name": "Vissel Kobe",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "Sportslife",
-      "model_origin": "provider_model",
-      "weekly_xg": 1.63,
-      "weekly_xga": 0.71,
-      "weekly_xgd": 0.92,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 1.63,
-      "weekly_xga_per90": 0.71,
-      "weekly_xgd_per90": 0.92,
-      "match_ids": [
-        "j1-2026-11-20-vissel-mito"
-      ],
-      "source_urls": [
-        "https://sportslife.org.uk/football/j1-league/vissel-kobe-vs-mito-hollyhock-20-11-2026/"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
-      "team_id": "mito-hollyhock",
-      "team_name": "Mito Hollyhock",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "Sportslife",
-      "model_origin": "provider_model",
-      "weekly_xg": 0.71,
-      "weekly_xga": 1.63,
-      "weekly_xgd": -0.92,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 0.71,
-      "weekly_xga_per90": 1.63,
-      "weekly_xgd_per90": -0.92,
-      "match_ids": [
-        "j1-2026-11-20-vissel-mito"
-      ],
-      "source_urls": [
-        "https://sportslife.org.uk/football/j1-league/vissel-kobe-vs-mito-hollyhock-20-11-2026/"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
-      "team_id": "vissel-kobe",
-      "team_name": "Vissel Kobe",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "Footballedge",
-      "model_origin": "provider_model",
-      "weekly_xg": 1.47,
-      "weekly_xga": 0.71,
-      "weekly_xgd": 0.76,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 1.47,
-      "weekly_xga_per90": 0.71,
-      "weekly_xgd_per90": 0.76,
-      "match_ids": [
-        "j1-2026-11-20-vissel-mito"
-      ],
-      "source_urls": [
-        "https://footballedge.io/it/matches/vissel-kobe-vs-mito-hollyhock-2026-11-20"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
-      "team_id": "mito-hollyhock",
-      "team_name": "Mito Hollyhock",
-      "competition_id": "j1-league",
-      "season_id": "2026",
-      "iso_week": "2026-W47",
-      "provider_name": "Footballedge",
-      "model_origin": "provider_model",
-      "weekly_xg": 0.71,
-      "weekly_xga": 1.47,
-      "weekly_xgd": -0.76,
-      "matches_played": 1,
-      "xg_match_count": 1,
-      "weekly_xg_per90": 0.71,
-      "weekly_xga_per90": 1.47,
-      "weekly_xgd_per90": -0.76,
-      "match_ids": [
-        "j1-2026-11-20-vissel-mito"
-      ],
-      "source_urls": [
-        "https://footballedge.io/it/matches/vissel-kobe-vs-mito-hollyhock-2026-11-20"
-      ],
-      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
-      "aggregation_status": "recomputable_from_single_match_detail"
-    },
-    {
       "team_id": "new-caledonia-u17",
       "team_name": "New Caledonia U17",
       "competition_id": "fifa-u-17-world-cup",
@@ -1695,6 +1395,406 @@
       "captured_at_bjt": "2026-11-21T11:28:00+08:00",
       "aggregation_status": "not_recomputable_missing_xg",
       "missing_reason": "No public match-level xG with a defined provider/model, source timestamp and match-specific observation was verified at capture time; left null and did not substitute an own-model estimate."
+    },
+    {
+      "team_id": "kashima-antlers",
+      "team_name": "Kashima Antlers",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "VJStats",
+      "model_origin": "provider_model",
+      "weekly_xg": 1.86,
+      "weekly_xga": 0.68,
+      "weekly_xgd": 1.18,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 1.86,
+      "weekly_xga_per90": 0.68,
+      "weekly_xgd_per90": 1.18,
+      "match_ids": [
+        "j1-2026-11-20-kashima-shimizu"
+      ],
+      "source_urls": [
+        "https://www.vjstats.com/matches/7033/kashima-antlers-vs-shimizu-s-pulse"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "shimizu-s-pulse",
+      "team_name": "Shimizu S-Pulse",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "VJStats",
+      "model_origin": "provider_model",
+      "weekly_xg": 0.68,
+      "weekly_xga": 1.86,
+      "weekly_xgd": -1.18,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 0.68,
+      "weekly_xga_per90": 1.86,
+      "weekly_xgd_per90": -1.18,
+      "match_ids": [
+        "j1-2026-11-20-kashima-shimizu"
+      ],
+      "source_urls": [
+        "https://www.vjstats.com/matches/7033/kashima-antlers-vs-shimizu-s-pulse"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "kashiwa-reysol",
+      "team_name": "Kashiwa Reysol",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "SoccerGhost",
+      "model_origin": "provider_model",
+      "weekly_xg": 1.43,
+      "weekly_xga": 0.51,
+      "weekly_xgd": 0.92,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 1.43,
+      "weekly_xga_per90": 0.51,
+      "weekly_xgd_per90": 0.92,
+      "match_ids": [
+        "j1-2026-11-20-kashiwa-jef"
+      ],
+      "source_urls": [
+        "https://soccerghost.com/match/108314/kashiwa-reysol-vs-jef-united-chiba"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "jef-united-chiba",
+      "team_name": "JEF United Chiba",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "SoccerGhost",
+      "model_origin": "provider_model",
+      "weekly_xg": 0.51,
+      "weekly_xga": 1.43,
+      "weekly_xgd": -0.92,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 0.51,
+      "weekly_xga_per90": 1.43,
+      "weekly_xgd_per90": -0.92,
+      "match_ids": [
+        "j1-2026-11-20-kashiwa-jef"
+      ],
+      "source_urls": [
+        "https://soccerghost.com/match/108314/kashiwa-reysol-vs-jef-united-chiba"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "kashiwa-reysol",
+      "team_name": "Kashiwa Reysol",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "DailyGoal",
+      "model_origin": "provider_model",
+      "weekly_xg": 1.43,
+      "weekly_xga": 0.51,
+      "weekly_xgd": 0.92,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 1.43,
+      "weekly_xga_per90": 0.51,
+      "weekly_xgd_per90": 0.92,
+      "match_ids": [
+        "j1-2026-11-20-kashiwa-jef"
+      ],
+      "source_urls": [
+        "https://dailygoal.lightcoding.com/fr/m/RW5cIfIlyRC/kashiwa-reysol-vs-jef-united-chiba"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "jef-united-chiba",
+      "team_name": "JEF United Chiba",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "DailyGoal",
+      "model_origin": "provider_model",
+      "weekly_xg": 0.51,
+      "weekly_xga": 1.43,
+      "weekly_xgd": -0.92,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 0.51,
+      "weekly_xga_per90": 1.43,
+      "weekly_xgd_per90": -0.92,
+      "match_ids": [
+        "j1-2026-11-20-kashiwa-jef"
+      ],
+      "source_urls": [
+        "https://dailygoal.lightcoding.com/fr/m/RW5cIfIlyRC/kashiwa-reysol-vs-jef-united-chiba"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "kashiwa-reysol",
+      "team_name": "Kashiwa Reysol",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "OddAlerts",
+      "model_origin": "provider_model",
+      "weekly_xg": 1.47,
+      "weekly_xga": 0.5,
+      "weekly_xgd": 0.97,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 1.47,
+      "weekly_xga_per90": 0.5,
+      "weekly_xgd_per90": 0.97,
+      "match_ids": [
+        "j1-2026-11-20-kashiwa-jef"
+      ],
+      "source_urls": [
+        "https://www.oddalerts.com/livescores/jef-united-vs-kashiwa-reysol/6185-6173"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "jef-united-chiba",
+      "team_name": "JEF United Chiba",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "OddAlerts",
+      "model_origin": "provider_model",
+      "weekly_xg": 0.5,
+      "weekly_xga": 1.47,
+      "weekly_xgd": -0.97,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 0.5,
+      "weekly_xga_per90": 1.47,
+      "weekly_xgd_per90": -0.97,
+      "match_ids": [
+        "j1-2026-11-20-kashiwa-jef"
+      ],
+      "source_urls": [
+        "https://www.oddalerts.com/livescores/jef-united-vs-kashiwa-reysol/6185-6173"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "vissel-kobe",
+      "team_name": "Vissel Kobe",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "SoccerGhost",
+      "model_origin": "provider_model",
+      "weekly_xg": 1.47,
+      "weekly_xga": 0.71,
+      "weekly_xgd": 0.76,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 1.47,
+      "weekly_xga_per90": 0.71,
+      "weekly_xgd_per90": 0.76,
+      "match_ids": [
+        "j1-2026-11-20-vissel-mito"
+      ],
+      "source_urls": [
+        "https://soccerghost.com/match/108320/vissel-kobe-vs-mito-hollyhock"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "mito-hollyhock",
+      "team_name": "Mito Hollyhock",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "SoccerGhost",
+      "model_origin": "provider_model",
+      "weekly_xg": 0.71,
+      "weekly_xga": 1.47,
+      "weekly_xgd": -0.76,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 0.71,
+      "weekly_xga_per90": 1.47,
+      "weekly_xgd_per90": -0.76,
+      "match_ids": [
+        "j1-2026-11-20-vissel-mito"
+      ],
+      "source_urls": [
+        "https://soccerghost.com/match/108320/vissel-kobe-vs-mito-hollyhock"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "vissel-kobe",
+      "team_name": "Vissel Kobe",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "Sportslife",
+      "model_origin": "provider_model",
+      "weekly_xg": 1.63,
+      "weekly_xga": 0.71,
+      "weekly_xgd": 0.92,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 1.63,
+      "weekly_xga_per90": 0.71,
+      "weekly_xgd_per90": 0.92,
+      "match_ids": [
+        "j1-2026-11-20-vissel-mito"
+      ],
+      "source_urls": [
+        "https://sportslife.org.uk/football/j1-league/vissel-kobe-vs-mito-hollyhock-20-11-2026/"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "mito-hollyhock",
+      "team_name": "Mito Hollyhock",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "Sportslife",
+      "model_origin": "provider_model",
+      "weekly_xg": 0.71,
+      "weekly_xga": 1.63,
+      "weekly_xgd": -0.92,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 0.71,
+      "weekly_xga_per90": 1.63,
+      "weekly_xgd_per90": -0.92,
+      "match_ids": [
+        "j1-2026-11-20-vissel-mito"
+      ],
+      "source_urls": [
+        "https://sportslife.org.uk/football/j1-league/vissel-kobe-vs-mito-hollyhock-20-11-2026/"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "vissel-kobe",
+      "team_name": "Vissel Kobe",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "Footballedge",
+      "model_origin": "provider_model",
+      "weekly_xg": 1.47,
+      "weekly_xga": 0.71,
+      "weekly_xgd": 0.76,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 1.47,
+      "weekly_xga_per90": 0.71,
+      "weekly_xgd_per90": 0.76,
+      "match_ids": [
+        "j1-2026-11-20-vissel-mito"
+      ],
+      "source_urls": [
+        "https://footballedge.io/it/matches/vissel-kobe-vs-mito-hollyhock-2026-11-20"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "mito-hollyhock",
+      "team_name": "Mito Hollyhock",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "Footballedge",
+      "model_origin": "provider_model",
+      "weekly_xg": 0.71,
+      "weekly_xga": 1.47,
+      "weekly_xgd": -0.76,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 0.71,
+      "weekly_xga_per90": 1.47,
+      "weekly_xgd_per90": -0.76,
+      "match_ids": [
+        "j1-2026-11-20-vissel-mito"
+      ],
+      "source_urls": [
+        "https://footballedge.io/it/matches/vissel-kobe-vs-mito-hollyhock-2026-11-20"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "vissel-kobe",
+      "team_name": "Vissel Kobe",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "FlashSport",
+      "model_origin": "provider_model",
+      "weekly_xg": 1.63,
+      "weekly_xga": 0.71,
+      "weekly_xgd": 0.92,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 1.63,
+      "weekly_xga_per90": 0.71,
+      "weekly_xgd_per90": 0.92,
+      "match_ids": [
+        "j1-2026-11-20-vissel-mito"
+      ],
+      "source_urls": [
+        "https://flashsportapp.com/en/football/match/vissel-kobe-mito-hollyhock-2026-11-20-1556150/"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
+    },
+    {
+      "team_id": "mito-hollyhock",
+      "team_name": "Mito Hollyhock",
+      "competition_id": "j1-league",
+      "season_id": "2026",
+      "iso_week": "2026-W47",
+      "provider_name": "FlashSport",
+      "model_origin": "provider_model",
+      "weekly_xg": 0.71,
+      "weekly_xga": 1.63,
+      "weekly_xgd": -0.92,
+      "matches_played": 1,
+      "xg_match_count": 1,
+      "weekly_xg_per90": 0.71,
+      "weekly_xga_per90": 1.63,
+      "weekly_xgd_per90": -0.92,
+      "match_ids": [
+        "j1-2026-11-20-vissel-mito"
+      ],
+      "source_urls": [
+        "https://flashsportapp.com/en/football/match/vissel-kobe-mito-hollyhock-2026-11-20-1556150/"
+      ],
+      "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+      "aggregation_status": "recomputable_from_single_match_detail"
     }
   ],
   "coverage_audit": {
@@ -1702,11 +1802,11 @@
     "teams_in_captured_subset": 64,
     "matches_with_at_least_one_provider_post_match_xg": 3,
     "matches_without_verified_xg": 29,
-    "team_records_with_provider_xg": 12,
+    "team_records_with_provider_xg": 16,
     "team_records_missing_xg": 58,
-    "provider_count": 6,
+    "provider_count": 7,
     "measured_xg_count": 0,
-    "vendor_model_estimate_count": 12,
+    "vendor_model_estimate_count": 16,
     "own_model_estimate_count": 0,
     "match_coverage_rate": 0.09375,
     "team_coverage_rate": 0.09375,
