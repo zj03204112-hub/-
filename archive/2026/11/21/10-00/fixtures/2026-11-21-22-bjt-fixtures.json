@@ -24,9 +24,9 @@
   },
   "completed_early_matches": 3,
   "upcoming_matches": 63,
-  "timezone_policy": "kickoff_utc is computed from the displayed BJT timestamp. European schedules use Guardian GMT, J1/K League use JST/KST, FIFA U17 uses Qatar local time, and the AFC early match uses Oman local time.",
+  "timezone_policy": "kickoff_utc is computed from BJT. Guardian 21 Nov page displays America/New_York EST (UTC-5); Guardian 22 Nov page displays Europe/Paris CET (UTC+1). J1 uses JST, K League uses KST, FIFA U17 uses Qatar UTC+3, and AFC early match uses Oman UTC+4.",
   "schedule_source_notes": [
-    "European Big Five: Guardian daily fixture pages, displayed in GMT.",
+    "European Big Five: Guardian 21 Nov page in EST and 22 Nov page in CET; both converted to BJT using the displayed timezone.",
     "J1 and K League: official league schedule/portal pages.",
     "FIFA U17: tournament schedule cross-checked against FIFA tournament context; local Qatar kickoff converted to BJT.",
     "AFC U17: official AFC schedule PDF; Oman-Kuwait local 20:00 on 20 Nov converts to 00:00 BJT on 21 Nov."
@@ -130,8 +130,8 @@
       "kickoff_bjt": "2026-11-21T20:30:00+08:00",
       "kickoff_utc": "2026-11-21T12:30:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "12:30 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-20 23:30 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -165,8 +165,8 @@
       "kickoff_bjt": "2026-11-21T23:00:00+08:00",
       "kickoff_utc": "2026-11-21T15:00:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "15:00 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 02:00 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -200,8 +200,8 @@
       "kickoff_bjt": "2026-11-21T23:00:00+08:00",
       "kickoff_utc": "2026-11-21T15:00:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "15:00 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 02:00 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -235,8 +235,8 @@
       "kickoff_bjt": "2026-11-21T23:00:00+08:00",
       "kickoff_utc": "2026-11-21T15:00:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "15:00 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 02:00 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -270,8 +270,8 @@
       "kickoff_bjt": "2026-11-21T23:00:00+08:00",
       "kickoff_utc": "2026-11-21T15:00:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "15:00 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 02:00 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -305,8 +305,8 @@
       "kickoff_bjt": "2026-11-21T23:00:00+08:00",
       "kickoff_utc": "2026-11-21T15:00:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "15:00 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 02:00 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -340,8 +340,8 @@
       "kickoff_bjt": "2026-11-22T01:30:00+08:00",
       "kickoff_utc": "2026-11-21T17:30:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "17:30 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 04:30 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -375,8 +375,8 @@
       "kickoff_bjt": "2026-11-21T22:30:00+08:00",
       "kickoff_utc": "2026-11-21T14:30:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:30 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 01:30 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -410,8 +410,8 @@
       "kickoff_bjt": "2026-11-21T22:30:00+08:00",
       "kickoff_utc": "2026-11-21T14:30:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:30 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 01:30 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -445,8 +445,8 @@
       "kickoff_bjt": "2026-11-21T22:30:00+08:00",
       "kickoff_utc": "2026-11-21T14:30:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:30 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 01:30 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -480,8 +480,8 @@
       "kickoff_bjt": "2026-11-21T22:30:00+08:00",
       "kickoff_utc": "2026-11-21T14:30:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:30 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 01:30 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -515,8 +515,8 @@
       "kickoff_bjt": "2026-11-21T22:30:00+08:00",
       "kickoff_utc": "2026-11-21T14:30:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:30 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 01:30 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -550,8 +550,8 @@
       "kickoff_bjt": "2026-11-22T01:30:00+08:00",
       "kickoff_utc": "2026-11-21T17:30:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "17:30 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 04:30 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -585,8 +585,8 @@
       "kickoff_bjt": "2026-11-21T22:00:00+08:00",
       "kickoff_utc": "2026-11-21T14:00:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:00 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 01:00 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -620,8 +620,8 @@
       "kickoff_bjt": "2026-11-21T22:00:00+08:00",
       "kickoff_utc": "2026-11-21T14:00:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:00 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 01:00 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -655,8 +655,8 @@
       "kickoff_bjt": "2026-11-22T01:00:00+08:00",
       "kickoff_utc": "2026-11-21T17:00:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "17:00 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 04:00 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -690,8 +690,8 @@
       "kickoff_bjt": "2026-11-22T03:45:00+08:00",
       "kickoff_utc": "2026-11-21T19:45:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "19:45 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 06:45 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -725,8 +725,8 @@
       "kickoff_bjt": "2026-11-21T21:00:00+08:00",
       "kickoff_utc": "2026-11-21T13:00:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "13:00 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 00:00 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -760,8 +760,8 @@
       "kickoff_bjt": "2026-11-21T23:15:00+08:00",
       "kickoff_utc": "2026-11-21T15:15:00Z",
       "match_date_bjt": "2026-11-21",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "15:15 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 02:15 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -795,8 +795,8 @@
       "kickoff_bjt": "2026-11-22T01:30:00+08:00",
       "kickoff_utc": "2026-11-21T17:30:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "17:30 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 04:30 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -830,8 +830,8 @@
       "kickoff_bjt": "2026-11-22T04:00:00+08:00",
       "kickoff_utc": "2026-11-21T20:00:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "20:00 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 07:00 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -865,8 +865,8 @@
       "kickoff_bjt": "2026-11-22T00:15:00+08:00",
       "kickoff_utc": "2026-11-21T16:15:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "16:15 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 03:15 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -900,8 +900,8 @@
       "kickoff_bjt": "2026-11-22T03:45:00+08:00",
       "kickoff_utc": "2026-11-21T19:45:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "19:45 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 06:45 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -935,8 +935,8 @@
       "kickoff_bjt": "2026-11-22T03:45:00+08:00",
       "kickoff_utc": "2026-11-21T19:45:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "19:45 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 06:45 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -970,8 +970,8 @@
       "kickoff_bjt": "2026-11-22T03:45:00+08:00",
       "kickoff_utc": "2026-11-21T19:45:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "19:45 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 06:45 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -1005,8 +1005,8 @@
       "kickoff_bjt": "2026-11-22T03:45:00+08:00",
       "kickoff_utc": "2026-11-21T19:45:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "19:45 GMT",
+      "source_timezone": "America/New_York UTC-05:00",
+      "source_local_kickoff": "2026-11-21 06:45 EST",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/21"
       ],
@@ -1717,8 +1717,8 @@
       "kickoff_bjt": "2026-11-22T22:00:00+08:00",
       "kickoff_utc": "2026-11-22T14:00:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:00 GMT",
+      "source_timezone": "Europe/Paris UTC+01:00",
+      "source_local_kickoff": "2026-11-22 07:00 CET",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/22"
       ],
@@ -1752,8 +1752,8 @@
       "kickoff_bjt": "2026-11-22T22:30:00+08:00",
       "kickoff_utc": "2026-11-22T14:30:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:30 GMT",
+      "source_timezone": "Europe/Paris UTC+01:00",
+      "source_local_kickoff": "2026-11-22 07:30 CET",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/22"
       ],
@@ -1787,8 +1787,8 @@
       "kickoff_bjt": "2026-11-22T19:30:00+08:00",
       "kickoff_utc": "2026-11-22T11:30:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "11:30 GMT",
+      "source_timezone": "Europe/Paris UTC+01:00",
+      "source_local_kickoff": "2026-11-22 04:30 CET",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/22"
       ],
@@ -1822,8 +1822,8 @@
       "kickoff_bjt": "2026-11-22T22:00:00+08:00",
       "kickoff_utc": "2026-11-22T14:00:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:00 GMT",
+      "source_timezone": "Europe/Paris UTC+01:00",
+      "source_local_kickoff": "2026-11-22 07:00 CET",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/22"
       ],
@@ -1857,8 +1857,8 @@
       "kickoff_bjt": "2026-11-22T22:00:00+08:00",
       "kickoff_utc": "2026-11-22T14:00:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:00 GMT",
+      "source_timezone": "Europe/Paris UTC+01:00",
+      "source_local_kickoff": "2026-11-22 07:00 CET",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/22"
       ],
@@ -1892,8 +1892,8 @@
       "kickoff_bjt": "2026-11-22T21:00:00+08:00",
       "kickoff_utc": "2026-11-22T13:00:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "13:00 GMT",
+      "source_timezone": "Europe/Paris UTC+01:00",
+      "source_local_kickoff": "2026-11-22 06:00 CET",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/22"
       ],
@@ -1927,8 +1927,8 @@
       "kickoff_bjt": "2026-11-22T23:15:00+08:00",
       "kickoff_utc": "2026-11-22T15:15:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "15:15 GMT",
+      "source_timezone": "Europe/Paris UTC+01:00",
+      "source_local_kickoff": "2026-11-22 08:15 CET",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/22"
       ],
@@ -1962,8 +1962,8 @@
       "kickoff_bjt": "2026-11-22T22:00:00+08:00",
       "kickoff_utc": "2026-11-22T14:00:00Z",
       "match_date_bjt": "2026-11-22",
-      "source_timezone": "UTC (Guardian fixture time)",
-      "source_local_kickoff": "14:00 GMT",
+      "source_timezone": "Europe/Paris UTC+01:00",
+      "source_local_kickoff": "2026-11-22 07:00 CET",
       "source_urls": [
         "https://www.theguardian.com/football/fixtures/2026/Nov/22"
       ],
