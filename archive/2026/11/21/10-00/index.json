@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "task": "daily-football-10-00-archive-index",
+  "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+  "branch": "automation/daily-football-2026-11-21-1000-run15",
+  "base_branch": "automation/daily-football-2026-11-20-1500-run11",
+  "review_date_bjt": "2026-11-20",
+  "fixture_dates_bjt": [
+    "2026-11-21",
+    "2026-11-22"
+  ],
+  "iso_week": "2026-W47",
+  "files": [
+    "archive/2026/11/21/10-00/results/2026-11-20-results.json",
+    "archive/2026/11/21/10-00/review/2026-11-20-prediction-review.json",
+    "archive/2026/11/21/10-00/fixtures/2026-11-21-22-bjt-fixtures.json",
+    "archive/2026/11/21/10-00/xg/matches/2026-W47/match-xg-records.json",
+    "archive/2026/11/21/10-00/xg/teams/2026-W47/team-week-snapshots.json",
+    "archive/2026/11/21/10-00/sources/source-manifest.json"
+  ],
+  "summary": {
+    "reviewed_results": 23,
+    "prediction_snapshots_scored": 5,
+    "unverifiable_no_snapshot": 18,
+    "wdl_hit_rate": "4/5",
+    "first_score_exact": "1/5",
+    "second_score_exact": "0/5",
+    "half_full_hit_rate": "1/5",
+    "handicap_verified": "0/5",
+    "fixture_count": 66,
+    "fixtures_by_bjt_date": {
+      "2026-11-21": 37,
+      "2026-11-22": 29
+    },
+    "xg_week_matches_captured": 32,
+    "xg_match_rows": 70,
+    "team_week_snapshots": 70,
+    "xg_coverage": "partial"
+  },
+  "immutability": {
+    "historical_predictions_overwritten": false,
+    "historical_xg_snapshots_overwritten": false,
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false
+  }
+}
