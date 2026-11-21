@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "task": "daily-football-10-00-run-summary",
+  "scheduled_slot_bjt": "10:00",
+  "captured_at_bjt": "2026-11-21T11:28:00+08:00",
+  "late_capture_minutes": 88,
+  "reviewed_bjt_date": "2026-11-20",
+  "branch": "automation/daily-football-2026-11-21-1000-run15",
+  "base_branch": "automation/daily-football-2026-11-20-1500-run11",
+  "results": {
+    "confirmed_finished_matches": 23,
+    "predictions_scored": 5,
+    "no_original_snapshot": 18,
+    "wdl_hit": "4/5",
+    "first_score_exact": "1/5",
+    "second_score_exact": "0/5",
+    "half_full_hit": "1/5",
+    "official_jczq_line_verified": "0/5",
+    "risk_prompt_scorable": "0/5"
+  },
+  "fixtures": {
+    "count": 66,
+    "by_bjt_date": {
+      "2026-11-21": 37,
+      "2026-11-22": 29
+    },
+    "completed_early_on_2026_11_21": 3,
+    "upcoming": 63
+  },
+  "xg": {
+    "iso_week": "2026-W47",
+    "captured_matches": 32,
+    "team_count": 64,
+    "provider_xg_matches": 3,
+    "no_verified_xg_matches": 29,
+    "provider_model_team_rows": 12,
+    "missing_team_rows": 58,
+    "provider_count": 6,
+    "measured": 0,
+    "own_model_estimates": 0,
+    "full_week_coverage": "partial",
+    "post_match_leakage_audit": "archive segregation completed; database pipeline not connected"
+  },
+  "missing_fields": [
+    "5 youth matches with predictions: official JZQ handicap not verified; all handicap outcomes unscorable.",
+    "18 completed matches had no immutable pre-match prediction snapshot and are excluded from hit-rate denominators.",
+    "29 of 32 captured weekly matches have no verified public match-level xG; fields left null with explicit reasons.",
+    "Whole ISO week not fully scanned: AFC U17 MD4 on 2026-11-17 and other earlier-week tracked fixtures remain unqueried.",
+    "Official lineup, injuries, tactical matchup, weather, referee, pre-match xG, odds movement and news refresh are deferred to the 15:00 run.",
+    "Leisu exact-match result pages were not returned; official and reliable alternatives were used.",
+    "SQLite database was not connected; no database read/write claimed.",
+    "Provider-native stable team IDs were unavailable for all youth teams; normalized internal team slugs used."
+  ],
+  "next_review": {
+    "date_bjt": "2026-11-22",
+    "matches_due": [
+      "Côte d'Ivoire U17–Uzbekistan U17",
+      "Fiji U17–Morocco U17",
+      "Oman U17–Kuwait U17"
+    ],
+    "note": "These kicked off at 00:00 BJT on 21 Nov and are not included in the 20 Nov review."
+  },
+  "model_protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "historical_xg_snapshots_overwritten": false
+  },
+  "archive_state": "committed_pending_readback"
+}
