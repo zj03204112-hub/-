@@ -67,5 +67,13 @@
     "historical_xg_snapshots_overwritten": false
   },
   "archive_state": "committed_pending_final_readback",
-  "fixture_timezone_audit": "European fixture source times were rechecked: Guardian 21 Nov page uses EST (UTC-05:00), Guardian 22 Nov page uses CET (UTC+01:00). BJT and UTC kickoff fields are consistent with these source zones."
+  "fixture_timezone_audit": "Guardian 21 Nov source page displays EST (UTC-05:00); Guardian 22 Nov source page displays CET (UTC+01:00). BJT and UTC values were recalculated from those source zones.",
+  "database": {
+    "connected": false,
+    "read_performed": false,
+    "write_performed": false,
+    "reason": "SQLite database was not connected in this run."
+  },
+  "archive_file_count": 9,
+  "readback_verified_count": null
 }
