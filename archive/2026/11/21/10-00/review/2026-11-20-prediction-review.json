@@ -38,7 +38,10 @@
       "risk_prompt": "高",
       "risk_hit_status": "not_scorable",
       "error_reason": "胜负方向正确；第一、第二比分均低估主队进球，实际主队零封且净胜3球。",
-      "confidence_percent": 56
+      "confidence_percent": 56,
+      "data_completeness_percent": 54,
+      "snapshot_path": "archive/2026/11/20/15-00/predictions/national-team/fifa-u17-world-cup/teams/mali-u17/2026-W47/mali-u17-v-new-zealand-u17.json",
+      "kickoff_bjt": "2026-11-20T21:30:00+08:00"
     },
     {
       "key": "spain-u17-v-china-pr-u17",
@@ -64,7 +67,10 @@
       "risk_prompt": "高",
       "risk_hit_status": "not_scorable",
       "error_reason": "胜负方向正确，但比分矩阵把主胜压成1-1/2-1，严重低估主队进球尾部和零封概率。",
-      "confidence_percent": 50
+      "confidence_percent": 50,
+      "data_completeness_percent": 57,
+      "snapshot_path": "archive/2026/11/20/15-00/predictions/national-team/fifa-u17-world-cup/teams/spain-u17/2026-W47/spain-u17-v-china-pr-u17.json",
+      "kickoff_bjt": "2026-11-20T22:00:00+08:00"
     },
     {
       "key": "italy-u17-v-jamaica-u17",
@@ -90,7 +96,10 @@
       "risk_prompt": "高",
       "risk_hit_status": "not_scorable",
       "error_reason": "胜负方向正确；比分矩阵明显低估强弱差距及4球以上进球尾部。",
-      "confidence_percent": 53
+      "confidence_percent": 53,
+      "data_completeness_percent": 60,
+      "snapshot_path": "archive/2026/11/20/15-00/predictions/national-team/fifa-u17-world-cup/teams/italy-u17/2026-W47/italy-u17-v-jamaica-u17.json",
+      "kickoff_bjt": "2026-11-20T23:00:00+08:00"
     },
     {
       "key": "senegal-u17-v-croatia-u17",
@@ -116,7 +125,10 @@
       "risk_prompt": "高",
       "risk_hit_status": "not_scorable",
       "error_reason": "第一比分命中，但客胜37%被排在平局29%之前，平局概率不足；实际半场和全场均为平。",
-      "confidence_percent": 50
+      "confidence_percent": 50,
+      "data_completeness_percent": 55,
+      "snapshot_path": "archive/2026/11/20/15-00/predictions/national-team/fifa-u17-world-cup/teams/senegal-u17/2026-W47/senegal-u17-v-croatia-u17.json",
+      "kickoff_bjt": "2026-11-20T23:30:00+08:00"
     },
     {
       "key": "uae-u17-v-bangladesh-u17",
@@ -142,7 +154,10 @@
       "risk_prompt": "高",
       "risk_hit_status": "not_scorable",
       "error_reason": "胜负及半全场方向正确，但两个比分都给客队进球，实际客队被零封。",
-      "confidence_percent": 51
+      "confidence_percent": 51,
+      "data_completeness_percent": 65,
+      "snapshot_path": "archive/2026/11/20/15-00/predictions/national-team/afc-u17-asian-cup-qualifiers/group-c/teams/united-arab-emirates-u17/2026-W47/uae-u17-v-bangladesh-u17.json",
+      "kickoff_bjt": "2026-11-20T23:20:00+08:00"
     }
   ],
   "aggregate": {
@@ -187,12 +202,34 @@
     {
       "key": "cote-divoire-u17-v-uzbekistan-u17",
       "kickoff_bjt": "2026-11-21T00:00:00+08:00",
-      "review_due_bjt_date": "2026-11-21"
+      "review_due_bjt_date": "2026-11-22",
+      "snapshot_path": "archive/2026/11/20/15-00/predictions/national-team/fifa-u17-world-cup/teams/c-te-d-ivoire-u17/2026-W47/cote-divoire-u17-v-uzbekistan-u17.json",
+      "predicted_score_1": "1-1",
+      "predicted_score_2": "0-1",
+      "wdl_probabilities": {
+        "home": 26,
+        "draw": 29,
+        "away": 45
+      },
+      "half_full": "平/客",
+      "confidence_percent": 54,
+      "data_completeness_percent": 58
     },
     {
       "key": "fiji-u17-v-morocco-u17",
       "kickoff_bjt": "2026-11-21T00:00:00+08:00",
-      "review_due_bjt_date": "2026-11-21"
+      "review_due_bjt_date": "2026-11-22",
+      "snapshot_path": "archive/2026/11/20/15-00/predictions/national-team/fifa-u17-world-cup/teams/fiji-u17/2026-W47/fiji-u17-v-morocco-u17.json",
+      "predicted_score_1": "0-2",
+      "predicted_score_2": "0-3",
+      "wdl_probabilities": {
+        "home": 16,
+        "draw": 23,
+        "away": 61
+      },
+      "half_full": "客/客",
+      "confidence_percent": 59,
+      "data_completeness_percent": 61
     }
   ],
   "handicap_rule_compliance": "未使用第二比分；未使用第三方亚洲盘；未核实官方竞彩让球盘口的场次全部标记无法核验。",
