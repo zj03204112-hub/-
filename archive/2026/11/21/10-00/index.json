@@ -16,7 +16,10 @@
     "archive/2026/11/21/10-00/fixtures/2026-11-21-22-bjt-fixtures.json",
     "archive/2026/11/21/10-00/xg/matches/2026-W47/match-xg-records.json",
     "archive/2026/11/21/10-00/xg/teams/2026-W47/team-week-snapshots.json",
-    "archive/2026/11/21/10-00/sources/source-manifest.json"
+    "archive/2026/11/21/10-00/sources/source-manifest.json",
+    "archive/2026/11/21/10-00/index.json",
+    "archive/2026/11/21/10-00/run-summary.json",
+    "archive/2026/11/21/10-00/run-summary-finalization.json"
   ],
   "summary": {
     "reviewed_results": 23,
@@ -35,7 +38,8 @@
     "xg_week_matches_captured": 32,
     "xg_match_rows": 70,
     "team_week_snapshots": 70,
-    "xg_coverage": "partial"
+    "xg_coverage": "partial",
+    "fixture_timezone_audit": "Guardian 21 Nov page in EST (UTC-05:00), Guardian 22 Nov page in CET (UTC+01:00); converted to BJT."
   },
   "immutability": {
     "historical_predictions_overwritten": false,
