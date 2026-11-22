@@ -1,0 +1,42 @@
+{
+  "task": "2026-11-22 10:00 daily football review",
+  "captured_at": "2026-11-22T09:56:32+08:00",
+  "iso_week": "2026-W47",
+  "previous_bjt_date_reviewed": "2026-11-21",
+  "confirmed_results": 50,
+  "immutable_predictions_reviewed": 20,
+  "predictions_without_snapshot": 30,
+  "ninety_minute_hits": 14,
+  "ninety_minute_accuracy_pct": 70,
+  "first_score_hits": 2,
+  "first_score_accuracy_pct": 10,
+  "second_score_hits": 1,
+  "second_score_accuracy_pct": 5,
+  "half_full_time_hits": 6,
+  "half_full_time_accuracy_pct": 30,
+  "jczq_verified": 0,
+  "jczq_unverifiable": 20,
+  "risk_binary_accuracy": null,
+  "risk_review_method": "Qualitative only; no pre-defined binary thresholds.",
+  "brier": 0.49552,
+  "log_loss": 0.858556,
+  "xg_provider_match_records": 15,
+  "xg_team_week_rows": 112,
+  "xg_coverage_complete": false,
+  "sqlite_connected": false,
+  "v5_1_modified": false,
+  "frozen_validation_sample_modified": false,
+  "historical_prediction_snapshots_overwritten": false,
+  "historical_xg_snapshots_overwritten": false,
+  "note": "manual-shadow-r1 is not V5.1; all post-match xG remains excluded from same-match pre-match inputs.",
+  "correction_note": "首版summary半全场字段编码不一致，最终以review-final.json和本文件为准。",
+  "draw_diagnostics": {
+    "actual_draws": 4,
+    "top_probability_draw_predictions": 0,
+    "draw_recall": 0
+  },
+  "four_plus_total_goals": {
+    "actual_matches": 9,
+    "top_two_scorelines_covering_four_plus": 1
+  }
+}
