@@ -1,0 +1,31 @@
+{
+  "task": "2026-11-22 15:00 daily football data refresh",
+  "captured_at": "2026-11-22T14:56:41+08:00",
+  "fixtures_count": 56,
+  "fixture_dates": {
+    "2026-11-22": 36,
+    "2026-11-23": 20
+  },
+  "predictions_in_6_to_12_hour_window": 25,
+  "predictions_by_competition": {
+    "Premier League": 2,
+    "LaLiga": 2,
+    "Bundesliga": 2,
+    "Serie A": 3,
+    "Ligue 1": 2,
+    "Eredivisie": 3,
+    "Eliteserien": 4,
+    "FIFA U17 World Cup": 6
+  },
+  "official_jczq_verified": 0,
+  "third_party_1x2_reference_count": 19,
+  "confirmed_xi_count": 0,
+  "match_level_prematch_xg_verified": 0,
+  "sqlite_connected": false,
+  "v5_1_modified": false,
+  "frozen_validation_sample_modified": false,
+  "historical_predictions_overwritten": false,
+  "historical_xg_snapshots_overwritten": false,
+  "model_version": "manual-shadow-r1",
+  "note": "窗口外比赛仅登记；U17预测低完整度高风险；第三方赔率只作交叉参考；官方竞彩让球全部无法核验。"
+}
