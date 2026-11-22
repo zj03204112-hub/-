@@ -1,0 +1,23 @@
+{
+  "captured_at": "2026-11-22T14:56:41+08:00",
+  "official_verification_status": "not_verified",
+  "verified_official_matches": 0,
+  "matches_in_prediction_window": 25,
+  "official_source_attempt": "https://www.sporttery.cn/ （本轮请求超时，未能回读官方让球赔率）",
+  "secondary_mirrors": [
+    {
+      "url": "https://zq.gzpxm.cn/pankou-radar",
+      "snapshot_time": "2026-11-22 09:03",
+      "disclaimer": "页面明确声明非中国体育彩票官方平台",
+      "contains": "18场让球信息",
+      "use_for_mapping": false
+    },
+    {
+      "url": "https://m.17500.cn/zq/score/jczq-2026-11-22",
+      "disclaimer": "第三方比分/竞彩镜像，不是官方原始页面",
+      "contains": "部分场次让球线及SP展示",
+      "use_for_mapping": false
+    }
+  ],
+  "rule": "所有预测场次官方让球均置null，竞彩让球胜平负标记无法核验；不使用亚洲盘代替，不从比分反推。"
+}
