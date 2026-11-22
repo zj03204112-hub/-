@@ -1,0 +1,597 @@
+{
+  "task": "2026-11-22 15:00 fixture refresh",
+  "captured_at": "2026-11-22T14:56:41+08:00",
+  "bjt_dates": [
+    "2026-11-22",
+    "2026-11-23"
+  ],
+  "base_snapshot": "archive/2026/11/22/10-00/fixtures/bjt-22-23-final-v2.json",
+  "fixtures_count": 56,
+  "counts_by_bjt_date": {
+    "2026-11-22": 36,
+    "2026-11-23": 20
+  },
+  "corrections": [
+    {
+      "match": "Sarpsborg 08–Lillestrøm",
+      "old_kickoff_bjt": "2026-11-23T01:15:00+08:00",
+      "corrected_kickoff_bjt": "2026-11-23T02:15:00+08:00",
+      "reason": "Official Sarpsborg/Eliteserien lists 19:15 CET, equivalent to 18:15 UTC and 02:15 BJT next day.",
+      "source": "https://www.sarpsborg08.no/terminliste"
+    },
+    {
+      "match": "Aalesund–Rosenborg; Kristiansund–Sandefjord; KFUM–Brann",
+      "reason": "Three 17:00 CET Eliteserien Round 27 fixtures were absent from the 10:00 snapshot; appended without modifying the prior file.",
+      "source": "https://www.eliteserien.no/terminliste/"
+    }
+  ],
+  "fixtures": [
+    {
+      "kickoff_bjt": "2026-11-22T13:00:00+08:00",
+      "kickoff_utc": "2026-11-22T05:00:00Z",
+      "competition": "K League 1",
+      "home": "Gwangju FC",
+      "away": "Bucheon FC 1995",
+      "category": "domestic-league",
+      "source": "https://insights.betfred.com/football/competitions/south-korea/k-league-1/",
+      "status": "live",
+      "live_score": "0-1",
+      "live_minute": "24'",
+      "status_source": "https://sokascore.com/match/gwangju-fc-vs-bucheon-fc-1995-2026-11-22/"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T13:00:00+08:00",
+      "kickoff_utc": "2026-11-22T05:00:00Z",
+      "competition": "K League 1",
+      "home": "Gimcheon Sangmu",
+      "away": "Jeju SK",
+      "category": "domestic-league",
+      "source": "https://insights.betfred.com/football/competitions/south-korea/k-league-1/",
+      "status": "live",
+      "live_score": "0-0",
+      "live_minute": "12:45 elapsed",
+      "status_source": "https://www.marathonbet.dk/da/live/33077500"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T19:30:00+08:00",
+      "kickoff_utc": "2026-11-22T11:30:00Z",
+      "competition": "Serie A",
+      "home": "Juventus",
+      "away": "Venezia",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T22:00:00+08:00",
+      "kickoff_utc": "2026-11-22T14:00:00Z",
+      "competition": "Serie A",
+      "home": "Bologna",
+      "away": "Udinese",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T22:00:00+08:00",
+      "kickoff_utc": "2026-11-22T14:00:00Z",
+      "competition": "Serie A",
+      "home": "Sassuolo",
+      "away": "Genoa",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T21:00:00+08:00",
+      "kickoff_utc": "2026-11-22T13:00:00Z",
+      "competition": "LaLiga",
+      "home": "Barcelona",
+      "away": "Villarreal",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T23:15:00+08:00",
+      "kickoff_utc": "2026-11-22T15:15:00Z",
+      "competition": "LaLiga",
+      "home": "Racing Santander",
+      "away": "Real Sociedad",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T22:00:00+08:00",
+      "kickoff_utc": "2026-11-22T14:00:00Z",
+      "competition": "Ligue 1",
+      "home": "Paris FC",
+      "away": "Angers",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T22:00:00+08:00",
+      "kickoff_utc": "2026-11-22T14:00:00Z",
+      "competition": "Premier League",
+      "home": "Hull City",
+      "away": "Brighton",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T22:30:00+08:00",
+      "kickoff_utc": "2026-11-22T14:30:00Z",
+      "competition": "Bundesliga",
+      "home": "Augsburg",
+      "away": "Mainz",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T19:15:00+08:00",
+      "kickoff_utc": "2026-11-22T11:15:00Z",
+      "competition": "Eredivisie",
+      "home": "FC Twente",
+      "away": "Willem II",
+      "category": "domestic-league",
+      "source": "https://www.footballwebpages.co.uk/dutch-eredivisie/fixtures-results",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T21:30:00+08:00",
+      "kickoff_utc": "2026-11-22T13:30:00Z",
+      "competition": "Eredivisie",
+      "home": "Ajax",
+      "away": "ADO Den Haag",
+      "category": "domestic-league",
+      "source": "https://www.footballwebpages.co.uk/dutch-eredivisie/fixtures-results",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T21:30:00+08:00",
+      "kickoff_utc": "2026-11-22T13:30:00Z",
+      "competition": "Eredivisie",
+      "home": "Sparta Rotterdam",
+      "away": "AZ Alkmaar",
+      "category": "domestic-league",
+      "source": "https://www.footballwebpages.co.uk/dutch-eredivisie/fixtures-results",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T23:45:00+08:00",
+      "kickoff_utc": "2026-11-22T15:45:00Z",
+      "competition": "Eredivisie",
+      "home": "Go Ahead Eagles",
+      "away": "Fortuna Sittard",
+      "category": "domestic-league",
+      "source": "https://www.footballwebpages.co.uk/dutch-eredivisie/fixtures-results",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T20:00:00+08:00",
+      "kickoff_utc": "2026-11-22T12:00:00Z",
+      "competition": "Championship",
+      "home": "Burnley",
+      "away": "Blackburn Rovers",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T20:00:00+08:00",
+      "kickoff_utc": "2026-11-22T12:00:00Z",
+      "competition": "Women's Super League",
+      "home": "Birmingham City Women",
+      "away": "Manchester United Women",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T20:00:00+08:00",
+      "kickoff_utc": "2026-11-22T12:00:00Z",
+      "competition": "Women's Super League",
+      "home": "Manchester City Women",
+      "away": "Tottenham Hotspur Women",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T22:00:00+08:00",
+      "kickoff_utc": "2026-11-22T14:00:00Z",
+      "competition": "Women's Super League",
+      "home": "Charlton Athletic Women",
+      "away": "Aston Villa Women",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T22:00:00+08:00",
+      "kickoff_utc": "2026-11-22T14:00:00Z",
+      "competition": "Women's Super League",
+      "home": "Everton Women",
+      "away": "Brighton & Hove Albion Women",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T22:30:00+08:00",
+      "kickoff_utc": "2026-11-22T14:30:00Z",
+      "competition": "Women's Super League",
+      "home": "Arsenal Women",
+      "away": "West Ham United Women",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T21:00:00+08:00",
+      "kickoff_utc": "2026-11-22T13:00:00Z",
+      "competition": "Women's FA Cup",
+      "home": "Lye Town Women",
+      "away": "Peterborough Women",
+      "category": "domestic-cup",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T11:00:00+08:00",
+      "kickoff_utc": "2026-11-22T03:00:00Z",
+      "competition": "J.LEAGUE U-21",
+      "home": "Kawasaki Frontale U-21",
+      "away": "Fagiano Okayama U-21",
+      "category": "other-youth",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T13:00:00+08:00",
+      "kickoff_utc": "2026-11-22T05:00:00Z",
+      "competition": "J.LEAGUE U-21",
+      "home": "Gamba Osaka U-21",
+      "away": "Tokyo Verdy U-21",
+      "category": "other-youth",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T13:00:00+08:00",
+      "kickoff_utc": "2026-11-22T05:00:00Z",
+      "competition": "J.LEAGUE U-21",
+      "home": "Vissel Kobe U-21",
+      "away": "FC Tokyo U-21",
+      "category": "other-youth",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T14:00:00+08:00",
+      "kickoff_utc": "2026-11-22T06:00:00Z",
+      "competition": "J.LEAGUE U-21",
+      "home": "Jubilo Iwata U-21",
+      "away": "V-Varen Nagasaki U-21",
+      "category": "other-youth",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T20:30:00+08:00",
+      "kickoff_utc": "2026-11-22T12:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Greece U17",
+      "away": "Panama U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T20:30:00+08:00",
+      "kickoff_utc": "2026-11-22T12:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Denmark U17",
+      "away": "Australia U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T21:00:00+08:00",
+      "kickoff_utc": "2026-11-22T13:00:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Ecuador U17",
+      "away": "Uganda U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T21:30:00+08:00",
+      "kickoff_utc": "2026-11-22T13:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "France U17",
+      "away": "Saudi Arabia U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T22:30:00+08:00",
+      "kickoff_utc": "2026-11-22T14:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "South Korea U17",
+      "away": "New Caledonia U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T23:00:00+08:00",
+      "kickoff_utc": "2026-11-22T15:00:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Qatar U17",
+      "away": "Egypt U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T23:30:00+08:00",
+      "kickoff_utc": "2026-11-22T15:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Argentina U17",
+      "away": "Mozambique U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T23:30:00+08:00",
+      "kickoff_utc": "2026-11-22T15:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Uruguay U17",
+      "away": "Haiti U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T00:15:00+08:00",
+      "kickoff_utc": "2026-11-22T16:15:00Z",
+      "competition": "Ligue 1",
+      "home": "Lorient",
+      "away": "Rennes",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T00:30:00+08:00",
+      "kickoff_utc": "2026-11-22T16:30:00Z",
+      "competition": "Premier League",
+      "home": "Liverpool",
+      "away": "Manchester United",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T00:30:00+08:00",
+      "kickoff_utc": "2026-11-22T16:30:00Z",
+      "competition": "Bundesliga",
+      "home": "Werder Bremen",
+      "away": "Hamburg",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T01:00:00+08:00",
+      "kickoff_utc": "2026-11-22T17:00:00Z",
+      "competition": "Serie A",
+      "home": "AC Milan",
+      "away": "Frosinone",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T01:30:00+08:00",
+      "kickoff_utc": "2026-11-22T17:30:00Z",
+      "competition": "LaLiga",
+      "home": "Osasuna",
+      "away": "Malaga",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T03:45:00+08:00",
+      "kickoff_utc": "2026-11-22T19:45:00Z",
+      "competition": "Serie A",
+      "home": "Atalanta",
+      "away": "Inter",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T04:00:00+08:00",
+      "kickoff_utc": "2026-11-22T20:00:00Z",
+      "competition": "LaLiga",
+      "home": "Getafe",
+      "away": "Atletico Madrid",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T03:45:00+08:00",
+      "kickoff_utc": "2026-11-22T19:45:00Z",
+      "competition": "Ligue 1",
+      "home": "Marseille",
+      "away": "Le Mans",
+      "category": "domestic-league",
+      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T20:30:00+08:00",
+      "kickoff_utc": "2026-11-23T12:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Tajikistan U17",
+      "away": "Croatia U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T20:30:00+08:00",
+      "kickoff_utc": "2026-11-23T12:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Spain U17",
+      "away": "Fiji U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T21:00:00+08:00",
+      "kickoff_utc": "2026-11-23T13:00:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Uzbekistan U17",
+      "away": "Jamaica U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T21:30:00+08:00",
+      "kickoff_utc": "2026-11-23T13:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Senegal U17",
+      "away": "Cuba U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T22:30:00+08:00",
+      "kickoff_utc": "2026-11-23T14:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Italy U17",
+      "away": "Ivory Coast U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T23:00:00+08:00",
+      "kickoff_utc": "2026-11-23T15:00:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Morocco U17",
+      "away": "China U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T23:30:00+08:00",
+      "kickoff_utc": "2026-11-23T15:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Mali U17",
+      "away": "Belgium U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T23:30:00+08:00",
+      "kickoff_utc": "2026-11-23T15:30:00Z",
+      "competition": "FIFA U17 World Cup",
+      "home": "Vietnam U17",
+      "away": "New Zealand U17",
+      "category": "national-team",
+      "source": "https://lodiscore.com/football/score/league/261/fifa-u-17-world-cup/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T23:00:00+08:00",
+      "kickoff_utc": "2026-11-22T15:00:00Z",
+      "competition": "Eliteserien",
+      "home": "Aalesund",
+      "away": "Rosenborg",
+      "category": "domestic-league",
+      "source": "https://www.soccerpunter.com/season/26781/Norway-Eliteserien-2026",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T23:00:00+08:00",
+      "kickoff_utc": "2026-11-22T15:00:00Z",
+      "competition": "Eliteserien",
+      "home": "KFUM Oslo",
+      "away": "Brann",
+      "category": "domestic-league",
+      "source": "https://www.soccerpunter.com/season/26781/Norway-Eliteserien-2026",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-22T23:00:00+08:00",
+      "kickoff_utc": "2026-11-22T15:00:00Z",
+      "competition": "Eliteserien",
+      "home": "Kristiansund BK",
+      "away": "Sandefjord",
+      "category": "domestic-league",
+      "source": "https://www.soccerpunter.com/season/26781/Norway-Eliteserien-2026",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T02:15:00+08:00",
+      "kickoff_utc": "2026-11-22T18:15:00Z",
+      "competition": "Eliteserien",
+      "home": "Sarpsborg 08",
+      "away": "Lillestrøm",
+      "category": "domestic-league",
+      "source": "https://www.eliteserien.no/terminliste/",
+      "status": "scheduled",
+      "correction": "19:15 CET verified from official league/club fixture; prior 01:15 BJT was one hour early."
+    },
+    {
+      "kickoff_bjt": "2026-11-23T00:00:00+08:00",
+      "kickoff_utc": "2026-11-22T16:00:00Z",
+      "competition": "Eliteserien",
+      "home": "Aalesund",
+      "away": "Rosenborg",
+      "category": "domestic-league",
+      "source": "https://www.eliteserien.no/terminliste/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T00:00:00+08:00",
+      "kickoff_utc": "2026-11-22T16:00:00Z",
+      "competition": "Eliteserien",
+      "home": "Kristiansund",
+      "away": "Sandefjord",
+      "category": "domestic-league",
+      "source": "https://www.eliteserien.no/terminliste/",
+      "status": "scheduled"
+    },
+    {
+      "kickoff_bjt": "2026-11-23T00:00:00+08:00",
+      "kickoff_utc": "2026-11-22T16:00:00Z",
+      "competition": "Eliteserien",
+      "home": "KFUM Oslo",
+      "away": "Brann",
+      "category": "domestic-league",
+      "source": "https://www.eliteserien.no/terminliste/",
+      "status": "scheduled"
+    }
+  ]
+}
