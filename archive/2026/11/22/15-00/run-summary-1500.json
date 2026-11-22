@@ -9,7 +9,7 @@
   "predictions_in_6_to_12_hour_window": 25,
   "predictions_by_competition": {
     "Premier League": 2,
-    "LaLiga": 2,
+    "LaLiga": 3,
     "Bundesliga": 2,
     "Serie A": 3,
     "Ligue 1": 2,
@@ -27,5 +27,6 @@
   "historical_predictions_overwritten": false,
   "historical_xg_snapshots_overwritten": false,
   "model_version": "manual-shadow-r1",
-  "note": "窗口外比赛仅登记；U17预测低完整度高风险；第三方赔率只作交叉参考；官方竞彩让球全部无法核验。"
+  "note": "窗口外比赛仅登记；U17预测低完整度高风险；第三方赔率只作交叉参考；官方竞彩让球全部无法核验。",
+  "deferred_window_matches_count": 4
 }
