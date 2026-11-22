@@ -1,0 +1,723 @@
+{
+  "task": "2026-11-22 15:00 shadow predictions",
+  "captured_at": "2026-11-22T14:56:41+08:00",
+  "window_bjt": {
+    "from": "2026-11-22T20:56:41+08:00",
+    "to": "2026-11-23T02:56:41+08:00"
+  },
+  "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+  "model_version": "manual-shadow-r1",
+  "prediction_type": "independent manual shadow; not V5.1 output",
+  "probability_order": "home/draw/away",
+  "note": "概率为市场、近况、伤停、赛程和可核验赛前信息的人工综合判断；不等同于赔率隐含概率。青年赛事单独标记低完整度。",
+  "predictions": [
+    {
+      "competition": "LaLiga",
+      "kickoff_bjt": "2026-11-22T21:00:00+08:00",
+      "home": "Barcelona",
+      "away": "Villarreal",
+      "score1": "2-1",
+      "score2": "3-1",
+      "hda_pct": {
+        "home": 72,
+        "draw": 17,
+        "away": 11
+      },
+      "half_full": "主/主",
+      "my_confidence_pct": 58,
+      "risk": "Christensen赛前状态存疑；巴塞罗那沿海有较强阵风预警，需关注传中和高球；未有官方首发。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "1.24 / 8.41 / 13.35",
+        "source": "https://soccerbets.com/match/spain/laliga/barcelona-vs-villarreal/fe2qmulvg2c2",
+        "source_time": "页面称约赛前2小时检查；本轮14:56 BJT回读"
+      },
+      "pre_match_xg": "未取得本场可追溯赛前xG；不得以赛后xG回填。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Premier League",
+      "kickoff_bjt": "2026-11-22T22:00:00+08:00",
+      "home": "Hull City",
+      "away": "Brighton",
+      "score1": "1-2",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 18,
+        "draw": 25,
+        "away": 57
+      },
+      "half_full": "平/客",
+      "my_confidence_pct": 56,
+      "risk": "Hull主场不败属性；Mitoma、Ferguson、Tzimas、Yohanna缺阵，Belloumi/Mendy不同报道对出战状态有分歧。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "6.25 / 4.50 / 1.50",
+        "source": "https://www.odds1x2.com/football/england-premier-league",
+        "source_time": "页面当前赛程赔率；本轮14:56 BJT回读"
+      },
+      "pre_match_xg": "未取得可追溯本场赛前xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Bundesliga",
+      "kickoff_bjt": "2026-11-22T22:30:00+08:00",
+      "home": "Augsburg",
+      "away": "Mainz",
+      "score1": "1-1",
+      "score2": "1-2",
+      "hda_pct": {
+        "home": 31,
+        "draw": 29,
+        "away": 40
+      },
+      "half_full": "平/客",
+      "my_confidence_pct": 51,
+      "risk": "双方近况都差；Augsburg后防伤停集中，Mainz也缺Kohr；湿冷天气影响节奏的可能性。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "2.65 / 3.65 / 2.37",
+        "source": "https://betmaster.eu/en/sportsbook/sports/soccer/match/4516284",
+        "source_time": "页面赔率；本轮14:56 BJT回读"
+      },
+      "pre_match_xg": "未取得本场可追溯赛前xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Serie A",
+      "kickoff_bjt": "2026-11-22T22:00:00+08:00",
+      "home": "Bologna",
+      "away": "Udinese",
+      "score1": "2-0",
+      "score2": "1-0",
+      "hda_pct": {
+        "home": 57,
+        "draw": 25,
+        "away": 18
+      },
+      "half_full": "主/主",
+      "my_confidence_pct": 57,
+      "risk": "Bologna四连胜，但Heggem未入名单；Udinese近期连续失利且门将位置可能调整。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "1.70 / 3.75 / 5.00",
+        "source": "https://www.odds1x2.com/football/italy-serie-a/odds/bologna-vs-udinese",
+        "source_time": "页面更新约01:37 GMT；本轮14:56 BJT回读"
+      },
+      "pre_match_xg": "未取得本场可追溯赛前xG；近期状态来自比赛结果，不以赛后xG代替。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Serie A",
+      "kickoff_bjt": "2026-11-22T22:00:00+08:00",
+      "home": "Sassuolo",
+      "away": "Genoa",
+      "score1": "1-1",
+      "score2": "1-2",
+      "hda_pct": {
+        "home": 34,
+        "draw": 29,
+        "away": 37
+      },
+      "half_full": "平/客",
+      "my_confidence_pct": 50,
+      "risk": "Sassuolo新帅D'Aversa上任后的首场联赛；Berardi复出、Adzic/Volpato缺阵；Genoa的Frendrup仍存疑。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "2.88 / 3.59 / 2.58",
+        "source": "https://soccerbets.com/match/italy/serie-a/sassuolo-vs-genoa/zcij7vy73eyk",
+        "source_time": "页面称约1小时前检查；本轮14:56 BJT回读"
+      },
+      "pre_match_xg": "第三方近10场均值参考：Sassuolo 1.06、Genoa 1.09；这是球队历史均值，不是本场xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Ligue 1",
+      "kickoff_bjt": "2026-11-22T22:00:00+08:00",
+      "home": "Paris FC",
+      "away": "Angers",
+      "score1": "1-0",
+      "score2": "2-0",
+      "hda_pct": {
+        "home": 65,
+        "draw": 22,
+        "away": 13
+      },
+      "half_full": "主/主",
+      "my_confidence_pct": 58,
+      "risk": "Angers近5场4负且连续3场未进球；Paris FC市场价格短缩，但不以赔率单独定方向。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "1.36 / 5.66 / 9.60",
+        "source": "https://soccerbets.com/match/france/ligue-1/paris-fc-vs-angers/7c4mlw7ydoub",
+        "source_time": "页面称约2小时前检查；本轮14:56 BJT回读"
+      },
+      "pre_match_xg": "第三方模型给出期望进球约1.7–0.7；未取得可独立复算的原始逐场赛前xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Eredivisie",
+      "kickoff_bjt": "2026-11-22T21:30:00+08:00",
+      "home": "Ajax",
+      "away": "ADO Den Haag",
+      "score1": "2-0",
+      "score2": "3-0",
+      "hda_pct": {
+        "home": 76,
+        "draw": 15,
+        "away": 9
+      },
+      "half_full": "主/主",
+      "my_confidence_pct": 58,
+      "risk": "Ajax有4名球员回归，但Adingra、Dolberg、Tsygankov、Caio Henrique仍缺阵；周中欧战及下一周德比带来轮换可能。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "1.20 / 8.20 / 13.80",
+        "source": "https://bookmakers.market/football/netherlands/eredivisie/ajax-vs-ado-den-haag-2026-11-22/",
+        "source_time": "页面价格变化：1.19→1.20；本轮14:56 BJT回读"
+      },
+      "pre_match_xg": "未取得可复核本场赛前xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Eredivisie",
+      "kickoff_bjt": "2026-11-22T21:30:00+08:00",
+      "home": "Sparta Rotterdam",
+      "away": "AZ Alkmaar",
+      "score1": "1-2",
+      "score2": "0-2",
+      "hda_pct": {
+        "home": 23,
+        "draw": 25,
+        "away": 52
+      },
+      "half_full": "平/客",
+      "my_confidence_pct": 54,
+      "risk": "Sparta主场防守不稳；AZ仍有Hornkamp、Resink、Zoet、Schouten等伤停/存疑，不能将客胜概率抬得过高。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "4.02 / 4.01 / 1.72",
+        "source": "https://www.sportbotai.com/news/sparta-rotterdam-vs-az-alkmaar-prediction-2026",
+        "source_time": "页面本轮回读；赔率非官方竞彩"
+      },
+      "pre_match_xg": "未取得可复核本场赛前xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "LaLiga",
+      "kickoff_bjt": "2026-11-22T23:15:00+08:00",
+      "home": "Racing Santander",
+      "away": "Real Sociedad",
+      "score1": "1-2",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 29,
+        "draw": 27,
+        "away": 44
+      },
+      "half_full": "平/客",
+      "my_confidence_pct": 52,
+      "risk": "Racing和Sociedad均有多名伤员；客胜价格从2.16缩至2.10，但不以赔率单独决定。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "3.33 / 4.21 / 2.10",
+        "source": "https://soccerbets.com/match/spain/laliga/racing-santander-vs-real-sociedad/h7wmbiavoucj",
+        "source_time": "页面称约5小时前检查；本轮14:56 BJT回读"
+      },
+      "pre_match_xg": "未取得本场可追溯赛前xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Eredivisie",
+      "kickoff_bjt": "2026-11-22T23:45:00+08:00",
+      "home": "Go Ahead Eagles",
+      "away": "Fortuna Sittard",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 42,
+        "draw": 29,
+        "away": 29
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 50,
+      "risk": "Fortuna近6场客场不败，且近5场4平；Go Ahead主场进攻有威胁但防线近期丢球偏多。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "1.61 / 4.13 / 4.58",
+        "source": "https://www.sportbotai.com/news/go-ahead-eagles-vs-fortuna-sittard-prediction-2026",
+        "source_time": "页面本轮回读"
+      },
+      "pre_match_xg": "第三方近况统计可见，但未取得本场赛前xG原始记录。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Ligue 1",
+      "kickoff_bjt": "2026-11-23T00:15:00+08:00",
+      "home": "Lorient",
+      "away": "Rennes",
+      "score1": "1-1",
+      "score2": "2-1",
+      "hda_pct": {
+        "home": 38,
+        "draw": 29,
+        "away": 33
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 50,
+      "risk": "Lorient近5次交锋全胜，但Rennes整体阵容与市场仍有竞争力；Lorient有Fadiga、Katseris、Touré缺阵，Rennes有Frankowski缺阵。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "2.83 / 3.42 / 2.37",
+        "source": "https://sportpundit.com/soccer/matches/lorient-vs-rennes/",
+        "source_time": "页面当前报价；本轮14:56 BJT回读"
+      },
+      "referee": "Marc Bollengier",
+      "pre_match_xg": "未取得本场可复核赛前xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Premier League",
+      "kickoff_bjt": "2026-11-23T00:30:00+08:00",
+      "home": "Liverpool",
+      "away": "Manchester United",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 55,
+        "draw": 24,
+        "away": 21
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 56,
+      "risk": "Pinnacle开盘主胜概率约50.4%升至57.4%；Van Dijk、Frimpong、Gravenberch预计可用但未全部确认；Bradley、Leoni、Ekitike仍缺阵。Liverpool周中欧战及下周德比带来赛程密度风险。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "1.709 / 4.60 / 4.60",
+        "source": "https://pinnacleterminal.io/blog/liverpool-vs-manchester-united-odds-2026-11-22",
+        "source_time": "Pinnacle Terminal记录18:02 UTC 21 Nov"
+      },
+      "referee": "未核实",
+      "pre_match_xg": "未取得本场可复核赛前xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Bundesliga",
+      "kickoff_bjt": "2026-11-23T00:30:00+08:00",
+      "home": "Werder Bremen",
+      "away": "Hamburg",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 46,
+        "draw": 27,
+        "away": 27
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 51,
+      "risk": "北方德比高波动；两队都有多名关键球员缺阵，Bremen的Agu、Alvero、Musah、Ndiaye、Stage、Topp缺阵，Hamburg的Nadir、Poulsen、Remberg、Lokonga缺阵。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "1.62 / 4.50 / 5.40",
+        "source": "https://www.oddschecker.com/football/germany/bundesliga/werder-bremen-v-hamburg/winner",
+        "source_time": "本轮14:56 BJT回读"
+      },
+      "referee": "Florian Badstubner",
+      "pre_match_xg": "未取得本场可复核赛前xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Serie A",
+      "kickoff_bjt": "2026-11-23T01:00:00+08:00",
+      "home": "AC Milan",
+      "away": "Frosinone",
+      "score1": "2-1",
+      "score2": "2-0",
+      "hda_pct": {
+        "home": 57,
+        "draw": 23,
+        "away": 20
+      },
+      "half_full": "主/主",
+      "my_confidence_pct": 54,
+      "risk": "Milan有Gabbia、Saelemaekers、Loftus-Cheek、Chukwueze等缺阵/存疑；Frosinone也有停赛和伤员。市场主胜由1.61缩至1.58。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "1.58 / 5.05 / 5.66",
+        "source": "https://soccerbets.com/match/italy/serie-a/ac-milan-vs-frosinone/elu5obcwmf5k",
+        "source_time": "页面称约2小时前检查；本轮14:56 BJT回读"
+      },
+      "pre_match_xg": "第三方近10场均值参考Milan 1.70、Frosinone 2.00；不是本场xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "LaLiga",
+      "kickoff_bjt": "2026-11-23T01:30:00+08:00",
+      "home": "Osasuna",
+      "away": "Malaga",
+      "score1": "1-0",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 50,
+        "draw": 28,
+        "away": 22
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 51,
+      "risk": "市场支持主队但主队近期表现并非持续稳定；缺少可靠首发、裁判和赛前xG。",
+      "completeness": "低",
+      "market_1x2": {
+        "odds": "1.85 / 3.72 / 4.88",
+        "source": "https://soccerbets.com/match/spain/laliga/osasuna-vs-malaga/yifpfwvvukop",
+        "source_time": "页面称约5小时前检查；本轮14:56 BJT回读"
+      },
+      "pre_match_xg": "缺失。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Eliteserien",
+      "kickoff_bjt": "2026-11-23T00:00:00+08:00",
+      "home": "Aalesund",
+      "away": "Rosenborg",
+      "score1": "1-2",
+      "score2": "1-3",
+      "hda_pct": {
+        "home": 20,
+        "draw": 21,
+        "away": 59
+      },
+      "half_full": "客/客",
+      "my_confidence_pct": 56,
+      "risk": "Aalesund排名15，Rosenborg排名3且客场近期四连胜；Aalesund主场进球多但失球也多。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "4.33 / 4.50 / 1.65",
+        "source": "https://www.tiporacle.com/match/1494804-aalesund-vs-rosenborg",
+        "source_time": "页面记录21 Nov 23:34 WAT"
+      },
+      "referee": "Marius Hansen Grøtta",
+      "pre_match_xg": "第三方模型估算4.1总进球，非供应商原始逐场赛前xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Eliteserien",
+      "kickoff_bjt": "2026-11-23T00:00:00+08:00",
+      "home": "Kristiansund",
+      "away": "Sandefjord",
+      "score1": "1-2",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 35,
+        "draw": 25,
+        "away": 40
+      },
+      "half_full": "平/客",
+      "my_confidence_pct": 49,
+      "risk": "两队积分接近，客队略占优；主队近期防守失球偏多；天气预报约7°C有小雨。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "2.67 / 3.85 / 2.45",
+        "source": "https://www.trueprob.com/event/kristiansund-vs-sandefjord-2026-11-22",
+        "source_time": "本轮14:56 BJT回读"
+      },
+      "referee": "M. Huru Kellerhals",
+      "pre_match_xg": "第三方近5场均值显示KRI 2.15、SAN 1.66；不是本场xG。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Eliteserien",
+      "kickoff_bjt": "2026-11-23T00:00:00+08:00",
+      "home": "KFUM Oslo",
+      "away": "Brann",
+      "score1": "1-1",
+      "score2": "2-1",
+      "hda_pct": {
+        "home": 36,
+        "draw": 30,
+        "away": 34
+      },
+      "half_full": "平/平",
+      "my_confidence_pct": 49,
+      "risk": "KFUM近5个主场不败，Brann近5个客场未胜；两队积分接近且防守均不稳。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "未取得稳定可比报价",
+        "source": "https://predictvantage.com/match/41891-kfum-oslo-vs-brann-2026-11-22",
+        "source_time": "本轮14:56 BJT回读"
+      },
+      "referee": "Mohammad Usman Aslam",
+      "pre_match_xg": "第三方估算1.46–1.71，不作为实测或赛前供应商输入。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "Eliteserien",
+      "kickoff_bjt": "2026-11-23T02:15:00+08:00",
+      "home": "Sarpsborg 08",
+      "away": "Lillestrøm",
+      "score1": "1-1",
+      "score2": "1-2",
+      "hda_pct": {
+        "home": 35,
+        "draw": 29,
+        "away": 36
+      },
+      "half_full": "平/客",
+      "my_confidence_pct": 48,
+      "risk": "Sarpsborg缺Niyukuri且另有伤员；Lillestrøm排名高14分，但历史交锋接近。",
+      "completeness": "中",
+      "market_1x2": {
+        "odds": "2.16 / 4.00 / 3.05",
+        "source": "https://www.sportytrader.com/en/odds/sarpsborg-lillestrom-8011657/",
+        "source_time": "本轮14:56 BJT回读"
+      },
+      "referee": "Ola Hobber Nilsen",
+      "pre_match_xg": "缺失。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "kickoff_bjt": "2026-11-22T21:00:00+08:00",
+      "home": "Uzbekistan U17",
+      "away": "Jamaica U17",
+      "score1": "2-0",
+      "score2": "1-0",
+      "hda_pct": {
+        "home": 60,
+        "draw": 24,
+        "away": 16
+      },
+      "half_full": "主/主",
+      "my_confidence_pct": 50,
+      "risk": "青年赛事阵容波动大；乌兹别克首战0-1惜败科特迪瓦，牙买加首战0-6负意大利。",
+      "completeness": "低",
+      "market_1x2": null,
+      "pre_match_xg": "缺失；FIFA赛前预览为主要资料。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "kickoff_bjt": "2026-11-22T21:30:00+08:00",
+      "home": "Senegal U17",
+      "away": "Cuba U17",
+      "score1": "2-0",
+      "score2": "3-1",
+      "hda_pct": {
+        "home": 61,
+        "draw": 24,
+        "away": 15
+      },
+      "half_full": "主/主",
+      "my_confidence_pct": 52,
+      "risk": "塞内加尔首战十人战平克罗地亚，但后卫Abdou Karim Diallo停赛；古巴首战3-5负塔吉克斯坦。",
+      "completeness": "低",
+      "market_1x2": null,
+      "pre_match_xg": "缺失。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "kickoff_bjt": "2026-11-22T22:30:00+08:00",
+      "home": "Italy U17",
+      "away": "Ivory Coast U17",
+      "score1": "2-1",
+      "score2": "3-1",
+      "hda_pct": {
+        "home": 59,
+        "draw": 24,
+        "away": 17
+      },
+      "half_full": "主/主",
+      "my_confidence_pct": 51,
+      "risk": "意大利首战6-0击败牙买加，科特迪瓦1-0击败乌兹别克；青年队单场方差大。",
+      "completeness": "低",
+      "market_1x2": null,
+      "pre_match_xg": "缺失。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "kickoff_bjt": "2026-11-22T23:00:00+08:00",
+      "home": "Morocco U17",
+      "away": "China PR U17",
+      "score1": "2-0",
+      "score2": "3-1",
+      "hda_pct": {
+        "home": 66,
+        "draw": 21,
+        "away": 13
+      },
+      "half_full": "主/主",
+      "my_confidence_pct": 55,
+      "risk": "摩洛哥首战6-0胜斐济，中国0-5负西班牙；中国曾在上半场较长时间守住西班牙，需防低位防守改善。",
+      "completeness": "低",
+      "market_1x2": null,
+      "pre_match_xg": "缺失。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "kickoff_bjt": "2026-11-22T23:30:00+08:00",
+      "home": "Mali U17",
+      "away": "Belgium U17",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 42,
+        "draw": 28,
+        "away": 30
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 47,
+      "risk": "马里首战3球优势胜新西兰，比利时3-2险胜越南；两队均有进攻能力，平局和高进球尾部都要保留。",
+      "completeness": "低",
+      "market_1x2": null,
+      "pre_match_xg": "缺失。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "kickoff_bjt": "2026-11-22T23:30:00+08:00",
+      "home": "Vietnam U17",
+      "away": "New Zealand U17",
+      "score1": "1-1",
+      "score2": "2-1",
+      "hda_pct": {
+        "home": 46,
+        "draw": 29,
+        "away": 25
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 46,
+      "risk": "越南首战2-3负比利时但进攻有亮点；新西兰首战0-3负马里；缺少可靠赔率、阵容和比赛级xG。",
+      "completeness": "低",
+      "market_1x2": null,
+      "pre_match_xg": "缺失。",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "model_version": "manual-shadow-r1",
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得可回读的官方中国体育彩票竞彩足球让球盘口",
+      "jczq_mapping_rule": "未映射；不得用第三方亚洲盘或第二比分替代",
+      "captured_at": "2026-11-22T14:56:41+08:00"
+    }
+  ]
+}
