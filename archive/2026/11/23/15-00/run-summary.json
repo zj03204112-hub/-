@@ -1,0 +1,47 @@
+{
+  "task": "2026-11-23 15:00 BJT football data run",
+  "captured_at": "2026-11-23T14:55:12+08:00",
+  "iso_week": "2026-W48",
+  "bjt_window": {
+    "from": "2026-11-23T20:55:12+08:00",
+    "to": "2026-11-24T02:55:12+08:00"
+  },
+  "schedule": {
+    "bjt_2026_11_23": 14,
+    "bjt_2026_11_24": 18,
+    "total": 32
+  },
+  "prediction_window": {
+    "eligible": 12,
+    "generated": 12,
+    "deferred_less_than_6h": 2,
+    "outside_12h": 18
+  },
+  "predictions": {
+    "afc_champions_league_elite_west": 6,
+    "fifa_u17_world_cup": 6
+  },
+  "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+  "model_version": "manual-shadow-r1",
+  "prediction_type": "independent manual shadow; not V5.1 output",
+  "official_jczq_verified": 0,
+  "same_book_open_to_current_verified": 0,
+  "pre_match_xg": "No traceable match-level source for most matches; vendor estimates explicitly separated and not treated as measured xG.",
+  "sqlite_connected": false,
+  "sqlite_repo_file_detected": true,
+  "sqlite_access_note": "Binary football_model_database.sqlite exists on the prior branch, but the connector returned no decodable file content; no DB query or write was performed.",
+  "v5_1_modified": false,
+  "frozen_validation_sample_modified": false,
+  "historical_predictions_overwritten": false,
+  "historical_xg_snapshots_overwritten": false,
+  "source_schedule": [
+    "https://www.the-afc.com/en/club/afc_champions_league_elite/home.html",
+    "https://assets.the-afc.com/2026-27_ACL_Elite/Downloads/Match_Schedule/261111-ACL-Elite-LS---Match-Schedule-%28updated%29.pdf",
+    "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/matchday-five-preview-doha",
+    "https://www.jleague.jp/en/acle/match/",
+    "https://www.jleague.jp/en/acl2/match/search-list/",
+    "https://www.the-afc.com/en/club/afc_champions_league_two/home.html",
+    "https://www.theguardian.com/football/fixtures/2026/Nov/18"
+  ],
+  "branch": "automation/daily-football-2026-11-23-1500-run16"
+}
