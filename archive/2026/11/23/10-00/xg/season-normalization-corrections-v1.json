@@ -1,0 +1,32 @@
+{
+  "captured_at": "2026-11-23T09:55:12+08:00",
+  "append_only": true,
+  "corrections": [
+    {
+      "file": "archive/2026/11/23/10-00/xg/2026-W47-team-match-and-weekly-snapshot-v1.json",
+      "competition": "J.LEAGUE U-21",
+      "old_season": "2026/27",
+      "correct_season": "2026",
+      "reason": "U21赛事按2026自然年赛季标识，不能套用欧洲足球赛季。"
+    },
+    {
+      "file": "archive/2026/11/23/10-00/xg/2026-W48-early-bjt-team-match-and-weekly-snapshot-v1.json",
+      "competition": "Eliteserien",
+      "old_season": "2026/27",
+      "correct_season": "2026",
+      "reason": "挪威Eliteserien采用2026自然年赛季。"
+    }
+  ],
+  "unchanged_seasons": [
+    "Premier League 2026/27",
+    "LaLiga 2026/27",
+    "Bundesliga 2026/27",
+    "Serie A 2026/27",
+    "Ligue 1 2026/27",
+    "Eredivisie 2026/27",
+    "Championship 2026/27",
+    "K League 1 2026",
+    "FIFA U17 World Cup 2026"
+  ],
+  "note": "原始v1文件保持不变；下游读取时按本追加修正文件应用season字段更正。"
+}
