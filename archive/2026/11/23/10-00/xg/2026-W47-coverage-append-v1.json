@@ -1,0 +1,48 @@
+{
+  "captured_at": "2026-11-23T09:55:12+08:00",
+  "iso_week": "2026-W47",
+  "previous_snapshot": {
+    "captured_at": "2026-11-22T09:56:32+08:00",
+    "iso_week": "2026-W47",
+    "tracked_matches_in_week": 67,
+    "matches_with_supplier_xg": 9,
+    "supplier_match_records": 15,
+    "matches_without_supplier_xg": 58,
+    "team_week_rows_total": 146,
+    "team_week_rows_with_provider_xg": 30,
+    "team_week_rows_missing_xg": 116,
+    "internal_team_ids_mapped": 0,
+    "internal_competition_ids_mapped": 0,
+    "internal_match_ids_mapped": 0,
+    "measured_xg": 0,
+    "own_model_estimates": 0,
+    "supplier_postmatch_model_estimates": 15,
+    "coverage_complete": false,
+    "leakage_audit": "赛后供应商xG仅标记postmatch，禁止回填同场赛前输入；不同供应商分开保存，不取平均。",
+    "reason": "SQLite未连接；内部ID映射缺失；免费逐场xG覆盖不足。；另追加两场U17比赛的逐场缺失记录。"
+  },
+  "current_bjt_date_append": {
+    "tracked_matches": 33,
+    "unique_matches_with_supplier_xg": 10,
+    "supplier_match_records": 13,
+    "matches_without_supplier_xg": 23,
+    "team_match_rows": 72,
+    "team_week_snapshots": 72
+  },
+  "cumulative_estimate": {
+    "tracked_matches": 100,
+    "matches_with_supplier_xg": 19,
+    "supplier_match_records": 28,
+    "matches_without_supplier_xg": 81,
+    "team_week_rows_total": 218,
+    "team_week_rows_with_provider_xg": 56,
+    "team_week_rows_missing_xg": 162
+  },
+  "measured_xg_records": 0,
+  "own_model_estimates": 0,
+  "provider_postmatch_estimates": 28,
+  "coverage_complete": false,
+  "internal_ids_mapped": false,
+  "sqlite_connected": false,
+  "leakage_audit": "赛后供应商估算单独保存；不回填同场赛前输入。供应商之间不取平均。"
+}
