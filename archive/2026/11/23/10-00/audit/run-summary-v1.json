@@ -1,0 +1,53 @@
+{
+  "task": "2026-11-23 10:00 BJT daily football data run",
+  "captured_at": "2026-11-23T09:55:12+08:00",
+  "review_date_bjt": "2026-11-22",
+  "iso_week": "2026-W47",
+  "confirmed_completed_matches": 33,
+  "valid_prediction_snapshots_for_review": 10,
+  "invalidated_misdated_u17_snapshots": 6,
+  "prediction_metrics": {
+    "hda": "5/10 (50%)",
+    "first_score": "0/10",
+    "second_score": "1/10",
+    "half_full": "2/10",
+    "multiclass_brier": 0.55728,
+    "log_loss": 0.942993,
+    "official_jczq": "0/10 verified; not scored",
+    "risk_hit_rate": "not calculated; per-match qualitative audit only"
+  },
+  "schedule_records": {
+    "bjt_2026_11_23": 20,
+    "bjt_2026_11_24": 11
+  },
+  "xg_increment": {
+    "supplier_match_records": 13,
+    "unique_matches_with_supplier_xg": 10,
+    "matches_without_supplier_xg": 23,
+    "team_match_rows": 72,
+    "team_week_snapshots": 72
+  },
+  "iso_week_2026_W47_cumulative": {
+    "tracked_matches": 100,
+    "matches_with_supplier_xg": 19,
+    "supplier_match_records": 28,
+    "matches_without_supplier_xg": 81,
+    "team_week_rows_total": 218,
+    "team_week_rows_with_provider_xg": 56,
+    "team_week_rows_missing_xg": 162
+  },
+  "sqlite_connected": false,
+  "internal_ids_mapped": false,
+  "v5_1_modified": false,
+  "frozen_validation_sample_modified": false,
+  "historical_predictions_overwritten": false,
+  "historical_xg_snapshots_overwritten": false,
+  "github_branch": "automation/daily-football-2026-11-23-1000-run15",
+  "limitations": [
+    "官方竞彩让球盘口缺失，不能计算竞彩让球命中",
+    "SQLite未连接，内部team/competition/match ID仍为空",
+    "本轮仅10场有可追溯赛后供应商xG；其余23场保留缺失原因",
+    "赛后xG均为供应商模型估算，不能作为同场赛前输入",
+    "6条上一轮U17预测日期提前一天，已隔离，不纳入准确率"
+  ]
+}
