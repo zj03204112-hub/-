@@ -1,0 +1,448 @@
+{
+  "task": "2026-11-23 15:00 shadow predictions",
+  "captured_at": "2026-11-23T14:55:12+08:00",
+  "window_bjt": {
+    "from": "2026-11-23T20:55:12+08:00",
+    "to": "2026-11-24T02:55:12+08:00"
+  },
+  "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+  "model_version": "manual-shadow-r1",
+  "prediction_type": "independent manual shadow; not V5.1 output",
+  "probability_order": "home/draw/away",
+  "predictions": [
+    {
+      "competition": "AFC Champions League Elite · West MD5",
+      "category": "洲际俱乐部",
+      "kickoff_bjt": "2026-11-23T21:45:00+08:00",
+      "kickoff_utc": "2026-11-23T13:45:00Z",
+      "home": "PFC Neftchi",
+      "away": "Al Hilal",
+      "score1": "1-2",
+      "score2": "0-2",
+      "hda_pct": {
+        "home": 15,
+        "draw": 21,
+        "away": 64
+      },
+      "half_full": "平/客",
+      "my_confidence_pct": 55,
+      "risk": "Neftchi近几个主场有进球能力，且国内赛近期有竞争力；Al Hilal近9场赢8场，但Bouabré、Dahal伤情存疑，Meité与Al-Harbi也有出战疑问。客胜仍需防主队先得分后的反击。",
+      "completeness_pct": 58,
+      "completeness": "中低",
+      "market_1x2": {
+        "snapshots": [
+          {
+            "odds": "8.00 / 5.50 / 1.39",
+            "source": "https://www.sportytrader.com/en/odds/neftchi-fargana-al-hilal-8754536/",
+            "source_type": "第三方多公司聚合"
+          },
+          {
+            "odds": "6.80 / 5.00 / 1.34",
+            "source": "https://stake.jp/sports/soccer/international-clubs/afc-champions-league/46859429-fk-neftchi-fargana-al-hilal/sgm",
+            "source_type": "第三方单一平台快照"
+          }
+        ],
+        "note": "来源价格有差异，不合并为同一盘口；仅作参考。"
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩足球销售页可回读的本场让球盘口；不使用亚洲盘代替。",
+      "pre_match_xg": "未取得可追溯的本场赛前原始xG；不以赛后xG回填。",
+      "lineup": "官方首发未发布/未核实",
+      "referee": "未从官方指派页面核实",
+      "weather": "Fergana逐小时比赛时段预报未取得",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    },
+    {
+      "competition": "AFC Champions League Elite · West MD5",
+      "category": "洲际俱乐部",
+      "kickoff_bjt": "2026-11-24T00:00:00+08:00",
+      "kickoff_utc": "2026-11-23T16:00:00Z",
+      "home": "Al Ain",
+      "away": "Esteghlal",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 53,
+        "draw": 26,
+        "away": 21
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 52,
+      "risk": "Al Ain赛前积分领先，Esteghlal也处于小组前列；两队实力差距不像部分赔率快照显示得那么大，市场不同网站报价差异明显。不能把主胜概率机械抬高。",
+      "completeness_pct": 58,
+      "completeness": "中低",
+      "market_1x2": {
+        "snapshots": [
+          {
+            "odds": "1.58 / 4.30 / 6.50",
+            "source": "https://oddsbook.com/football/world/afc-champions-league-elite/al-ain-vs-esteghlal-fc/1629976/",
+            "source_type": "第三方赔率快照"
+          },
+          {
+            "odds": "1.33 / 4.48 / 7.45",
+            "source": "https://betgolazo.net/match/al-ain-vs-esteghlal-fc-1629976",
+            "source_type": "第三方赔率快照"
+          }
+        ],
+        "note": "报价差异较大，可能对应不同时间或不同公司，未做平均。"
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩足球让球盘口。",
+      "pre_match_xg": "未取得可追溯的本场赛前原始xG；第三方期望进球数据口径不一致，不作为确定输入。",
+      "lineup": "官方首发未发布/未核实",
+      "referee": "未核实",
+      "weather": "Al Ain当地NCM预报为多云，东部地区有降雨可能；未取得球场逐小时预报。",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    },
+    {
+      "competition": "AFC Champions League Elite · West MD5",
+      "category": "洲际俱乐部",
+      "kickoff_bjt": "2026-11-24T00:00:00+08:00",
+      "kickoff_utc": "2026-11-23T16:00:00Z",
+      "home": "Tractor FC",
+      "away": "Al Wasl",
+      "score1": "1-1",
+      "score2": "1-2",
+      "hda_pct": {
+        "home": 34,
+        "draw": 28,
+        "away": 38
+      },
+      "half_full": "平/客",
+      "my_confidence_pct": 48,
+      "risk": "Tractor近5个主场表现稳健，但本场在Muscat中立场进行，主场加成应下调；Al Wasl近况进攻效率较好。两队都存在进球尾部扩张的可能。",
+      "completeness_pct": 55,
+      "completeness": "低中",
+      "market_1x2": {
+        "snapshots": [
+          {
+            "odds": "3.20 / 3.36 / 2.00",
+            "source": "https://www.supatips.com/match/tractor-sazi-vs-al-wasl-fc-1629978",
+            "source_type": "第三方1X2快照"
+          }
+        ]
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩足球让球盘口。",
+      "pre_match_xg": "第三方模型估算Tractor 1.3、Al Wasl 1.3（Footrivo）；属于供应商模型预测，不是实测xG。",
+      "lineup": "官方首发未发布/未核实",
+      "referee": "未核实",
+      "weather": "Muscat天气约23–28℃、多云；缺少场地逐小时风雨信息。",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    },
+    {
+      "competition": "AFC Champions League Elite · West MD5",
+      "category": "洲际俱乐部",
+      "kickoff_bjt": "2026-11-24T00:00:00+08:00",
+      "kickoff_utc": "2026-11-23T16:00:00Z",
+      "home": "Al Shamal",
+      "away": "Al Ahli Saudi",
+      "score1": "0-1",
+      "score2": "1-2",
+      "hda_pct": {
+        "home": 22,
+        "draw": 26,
+        "away": 52
+      },
+      "half_full": "平/客",
+      "my_confidence_pct": 51,
+      "risk": "Al Ahli近6场表现优于Al Shamal，但客场不能忽视；不同第三方模型对客胜概率从约52%到73%不等，说明数据口径与赔率差异较大。",
+      "completeness_pct": 57,
+      "completeness": "中低",
+      "market_1x2": {
+        "snapshots": [
+          {
+            "odds": "4.30 / 4.30 / 1.55",
+            "source": "https://www.supatips.com/match/al-shamal-vs-al-ahli-jeddah-1629977",
+            "source_type": "第三方赔率快照"
+          },
+          {
+            "odds": "3.88 / 3.90 / 1.77",
+            "source": "https://footballfanager.com/al-shamal-vs-al-ahli-jeddah-prediction-team-news-stats-1629977/",
+            "source_type": "第三方平均赔率"
+          }
+        ],
+        "note": "不把不同平台报价拼成盘口变化。"
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩足球让球盘口。",
+      "pre_match_xg": "Winning Arena第三方模型估算Al Shamal 1.17、Al Ahli 1.35；不是实测xG。",
+      "lineup": "官方首发未发布/未核实",
+      "referee": "未核实",
+      "weather": "Al Khor/Doha周边夜间约22–24℃、晴到少云、降雨概率低；采用区域预报。",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    },
+    {
+      "competition": "AFC Champions League Elite · West MD5",
+      "category": "洲际俱乐部",
+      "kickoff_bjt": "2026-11-24T02:15:00+08:00",
+      "kickoff_utc": "2026-11-23T18:15:00Z",
+      "home": "Al Ittihad",
+      "away": "Pakhtakor",
+      "score1": "2-1",
+      "score2": "1-0",
+      "hda_pct": {
+        "home": 58,
+        "draw": 24,
+        "away": 18
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 51,
+      "risk": "Al Ittihad近4次交锋3胜1平，主场质量占优；但两队近期防守均有波动，Pakhtakor仍有反击进球路径。可用赔率快照时间偏早，不能当作即时盘口。",
+      "completeness_pct": 52,
+      "completeness": "低中",
+      "market_1x2": {
+        "snapshots": [
+          {
+            "odds": "1.33 / 5.25 / 8.00",
+            "source": "https://bettingview.com/en/at/odds/soccer/international-clubs/afc-champions-league-elite-463/al-ittihad-club-vs-pakhtakor/1000046373835908/full-time-result",
+            "source_type": "第三方赔率快照",
+            "source_time": "2026-11-21T20:57:00Z"
+          }
+        ],
+        "note": "没有取得同一公司14:55 BJT即时更新轨迹。"
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩足球让球盘口。",
+      "pre_match_xg": "SureBetExpert第三方模型估算1.9–1.3；非实测xG，原始输入不可复算。",
+      "lineup": "官方首发未发布/未核实",
+      "referee": "未核实",
+      "weather": "Jeddah比赛时段逐小时天气未取得。",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    },
+    {
+      "competition": "AFC Champions League Elite · West MD5",
+      "category": "洲际俱乐部",
+      "kickoff_bjt": "2026-11-24T02:15:00+08:00",
+      "kickoff_utc": "2026-11-23T18:15:00Z",
+      "home": "Air Force SC (Al Quwa Al Jawiya)",
+      "away": "Al Gharafa",
+      "score1": "1-1",
+      "score2": "2-1",
+      "hda_pct": {
+        "home": 44,
+        "draw": 27,
+        "away": 29
+      },
+      "half_full": "平/平",
+      "my_confidence_pct": 48,
+      "risk": "两队在本届赛事前四轮都处于积分榜下半区；Al Gharafa近期丢球较多，Air Force SC主场优势有限。不同模型对主胜与平局分布存在差异。",
+      "completeness_pct": 57,
+      "completeness": "中低",
+      "market_1x2": {
+        "snapshots": [
+          {
+            "odds": "2.12 / 3.60 / 3.68",
+            "source": "https://oddseek.com/football/al-quwa-al-jawiya-vs-al-gharafa-sc-13663600",
+            "source_type": "第三方多公司赔率"
+          },
+          {
+            "odds": "2.26 / 3.41 / 2.58",
+            "source": "https://www.predicto9.com/match/1629980-al-quwa-al-jawiya-vs-al-gharafa",
+            "source_type": "第三方赔率快照"
+          }
+        ],
+        "note": "不同平台差异较大，未合并。"
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩足球让球盘口。",
+      "pre_match_xg": "Predicto9第三方模型估算Air Force SC 1.90、Al Gharafa 1.33；供应商预测值，不是实测xG。",
+      "lineup": "第三方预计阵型有资料，官方首发未发布；Betora称双方无伤停记录但非俱乐部官方确认。",
+      "referee": "未核实",
+      "weather": "Basra球场逐小时预报未取得。",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    },
+    {
+      "competition": "FIFA U-17 World Cup · Group E",
+      "category": "国家队/国际青年赛事",
+      "kickoff_bjt": "2026-11-23T21:00:00+08:00",
+      "kickoff_utc": "2026-11-23T13:00:00Z",
+      "home": "Uzbekistan U17",
+      "away": "Jamaica U17",
+      "score1": "2-0",
+      "score2": "1-0",
+      "hda_pct": {
+        "home": 61,
+        "draw": 24,
+        "away": 15
+      },
+      "half_full": "主/主",
+      "my_confidence_pct": 50,
+      "risk": "乌兹别克首战2-1负科特迪瓦但比赛过程有竞争力；牙买加首战0-6负意大利。青年赛事单场波动大，不能把一场大比分当成稳定实力差。",
+      "completeness_pct": 36,
+      "completeness": "低",
+      "market_1x2": null,
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未确认该青年赛事纳入官方竞彩足球销售。",
+      "pre_match_xg": "缺失；没有可追溯的比赛级赛前xG。",
+      "lineup": "官方首发未发布/未核实",
+      "referee": "未核实",
+      "weather": "Doha/Al Rayyan区域预报22–24℃、晴到少云，降雨概率约8%，轻风；非球场专属逐小时数据。",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    },
+    {
+      "competition": "FIFA U-17 World Cup · Group F",
+      "category": "国家队/国际青年赛事",
+      "kickoff_bjt": "2026-11-23T21:30:00+08:00",
+      "kickoff_utc": "2026-11-23T13:30:00Z",
+      "home": "Senegal U17",
+      "away": "Cuba U17",
+      "score1": "2-1",
+      "score2": "1-0",
+      "hda_pct": {
+        "home": 58,
+        "draw": 24,
+        "away": 18
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 48,
+      "risk": "塞内加尔首战十人战平克罗地亚，后卫Abdou Karim Diallo停赛；古巴首战3-5负塔吉克斯坦，进攻有威胁但防守暴露明显。",
+      "completeness_pct": 35,
+      "completeness": "低",
+      "market_1x2": null,
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未确认该青年赛事纳入官方竞彩足球销售。",
+      "pre_match_xg": "缺失；没有可追溯的比赛级赛前xG。",
+      "lineup": "官方首发未发布/未核实",
+      "referee": "未核实",
+      "weather": "Doha/Al Rayyan区域预报22–24℃、晴到少云；非球场专属逐小时数据。",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    },
+    {
+      "competition": "FIFA U-17 World Cup · Group E",
+      "category": "国家队/国际青年赛事",
+      "kickoff_bjt": "2026-11-23T22:30:00+08:00",
+      "kickoff_utc": "2026-11-23T14:30:00Z",
+      "home": "Italy U17",
+      "away": "Côte d’Ivoire U17",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 48,
+        "draw": 27,
+        "away": 25
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 47,
+      "risk": "意大利首战6-0击败牙买加，科特迪瓦2-1击败乌兹别克；双方均有强势开局，意大利并非稳胜，需防科特迪瓦身体对抗和转换。",
+      "completeness_pct": 34,
+      "completeness": "低",
+      "market_1x2": null,
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未确认该青年赛事纳入官方竞彩足球销售。",
+      "pre_match_xg": "缺失；没有可追溯的比赛级赛前xG。",
+      "lineup": "官方首发未发布/未核实",
+      "referee": "未核实",
+      "weather": "Doha/Al Rayyan区域预报22–24℃、晴到少云；非球场专属逐小时数据。",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    },
+    {
+      "competition": "FIFA U-17 World Cup · Group H",
+      "category": "国家队/国际青年赛事",
+      "kickoff_bjt": "2026-11-23T23:00:00+08:00",
+      "kickoff_utc": "2026-11-23T15:00:00Z",
+      "home": "Morocco U17",
+      "away": "China PR U17",
+      "score1": "2-0",
+      "score2": "3-1",
+      "hda_pct": {
+        "home": 65,
+        "draw": 22,
+        "away": 13
+      },
+      "half_full": "主/主",
+      "my_confidence_pct": 52,
+      "risk": "摩洛哥首战6-0击败斐济，中国首战0-5负西班牙；摩洛哥明显占优，但青年队阵容轮换和早早领先后的比赛节奏可能放大比分尾部。",
+      "completeness_pct": 37,
+      "completeness": "低",
+      "market_1x2": null,
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未确认该青年赛事纳入官方竞彩足球销售。",
+      "pre_match_xg": "缺失；没有可追溯的比赛级赛前xG。",
+      "lineup": "官方首发未发布/未核实",
+      "referee": "未核实",
+      "weather": "Doha/Al Rayyan区域预报22–24℃、晴到少云；非球场专属逐小时数据。",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    },
+    {
+      "competition": "FIFA U-17 World Cup · Group G",
+      "category": "国家队/国际青年赛事",
+      "kickoff_bjt": "2026-11-23T23:30:00+08:00",
+      "kickoff_utc": "2026-11-23T15:30:00Z",
+      "home": "Mali U17",
+      "away": "Belgium U17",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 43,
+        "draw": 28,
+        "away": 29
+      },
+      "half_full": "平/主",
+      "my_confidence_pct": 45,
+      "risk": "马里首战3-0胜新西兰，比利时3-2险胜越南；两队均有进攻能力，平局与4球以上尾部都不能忽略。",
+      "completeness_pct": 34,
+      "completeness": "低",
+      "market_1x2": null,
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未确认该青年赛事纳入官方竞彩足球销售。",
+      "pre_match_xg": "缺失；没有可追溯的比赛级赛前xG。",
+      "lineup": "官方首发未发布/未核实",
+      "referee": "未核实",
+      "weather": "Doha/Al Rayyan区域预报22–24℃、晴到少云；非球场专属逐小时数据。",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    },
+    {
+      "competition": "FIFA U-17 World Cup · Group G",
+      "category": "国家队/国际青年赛事",
+      "kickoff_bjt": "2026-11-23T23:30:00+08:00",
+      "kickoff_utc": "2026-11-23T15:30:00Z",
+      "home": "Vietnam U17",
+      "away": "New Zealand U17",
+      "score1": "1-1",
+      "score2": "2-1",
+      "hda_pct": {
+        "home": 43,
+        "draw": 29,
+        "away": 28
+      },
+      "half_full": "平/平",
+      "my_confidence_pct": 43,
+      "risk": "越南首战2-3负比利时，新西兰0-3负马里；两队都需要积分，比赛节奏可能开放，但缺少官方首发和比赛级xG。",
+      "completeness_pct": 32,
+      "completeness": "低",
+      "market_1x2": null,
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未确认该青年赛事纳入官方竞彩足球销售。",
+      "pre_match_xg": "缺失；没有可追溯的比赛级赛前xG。",
+      "lineup": "官方首发未发布/未核实",
+      "referee": "未核实",
+      "weather": "Doha/Al Rayyan区域预报22–24℃、晴到少云；非球场专属逐小时数据。",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "model_version": "manual-shadow-r1",
+      "captured_at": "2026-11-23T14:55:12+08:00"
+    }
+  ]
+}
