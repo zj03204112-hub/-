@@ -1,0 +1,24 @@
+{
+  "captured_at": "2026-11-23T14:55:12+08:00",
+  "prediction_matches": 12,
+  "missing": {
+    "official_jczq_handicap": "12/12未核验",
+    "same_book_open_to_current_odds": "12/12未取得完整轨迹",
+    "official_starting_lineups": "12/12尚未发布或未核实",
+    "referee_appointments": "12/12未从官方指派页面核实",
+    "match_level_prematch_xg": "U17 6/6缺失；AFC仅有部分第三方模型预测值，无原始可复算输入",
+    "weather": "U17仅有Doha/Al Rayyan区域预报；AFC场地逐小时天气不完整",
+    "tactics": "缺少逐场可靠战术报告",
+    "player_availability": "Al Hilal等个别球队有第三方伤停报道；其余不完整",
+    "schedule_density_and_next_opponent": "仅有赛事阶段背景，未逐队完整核验后续对手及轮换优先级",
+    "sqlite": "仓库分支可见football_model_database.sqlite二进制文件，但GitHub文件读取接口未能解码该二进制，本轮未能挂载/查询数据库；数据库连接状态仍为未验证",
+    "internal_ids": "球队ID、赛事ID、比赛ID未完成内部数据库映射"
+  },
+  "safeguards": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_predictions_overwritten": false,
+    "historical_xg_snapshots_overwritten": false,
+    "post_match_xg_used_as_prematch_input": false
+  }
+}
