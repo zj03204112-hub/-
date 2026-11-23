@@ -1,0 +1,57 @@
+{
+  "task": "2026-11-23 10:00 BJT daily football data run",
+  "captured_at": "2026-11-23T09:55:12+08:00",
+  "review_date_bjt": "2026-11-22",
+  "confirmed_completed_matches": 33,
+  "valid_prediction_snapshots": 10,
+  "invalidated_misdated_u17_snapshots": 6,
+  "prediction_metrics": {
+    "hda": "5/10",
+    "score1": "0/10",
+    "score2": "1/10",
+    "half_full": "2/10",
+    "multiclass_brier": 0.55728,
+    "log_loss": 0.942993,
+    "official_jczq": "0/10 verified",
+    "risk_hit_rate": "not aggregated; qualitative per-match assessment"
+  },
+  "current_bjt_date_early_results": {
+    "date": "2026-11-23",
+    "confirmed_completed_matches": 12
+  },
+  "schedule_refresh": {
+    "date_2026_11_23": 20,
+    "date_2026_11_24": 11
+  },
+  "xg_w47_increment": {
+    "supplier_match_records": 13,
+    "unique_matches_with_xg": 10,
+    "missing_matches": 23,
+    "team_match_rows": 72,
+    "team_week_snapshots": 72
+  },
+  "xg_w47_cumulative": {
+    "tracked_matches": 100,
+    "matches_with_supplier_xg": 19,
+    "supplier_match_records": 28,
+    "matches_without_supplier_xg": 81,
+    "team_week_rows_total": 218,
+    "team_week_rows_with_provider_xg": 56,
+    "team_week_rows_missing_xg": 162
+  },
+  "xg_w48_early": {
+    "tracked_matches": 12,
+    "matches_with_supplier_xg": 7,
+    "supplier_match_records": 7,
+    "matches_without_supplier_xg": 5,
+    "team_match_rows": 24,
+    "team_week_snapshots": 24
+  },
+  "sqlite_connected": false,
+  "internal_ids_mapped": false,
+  "v5_1_modified": false,
+  "frozen_validation_sample_modified": false,
+  "historical_predictions_overwritten": false,
+  "historical_xg_snapshots_overwritten": false,
+  "branch": "automation/daily-football-2026-11-23-1000-run15"
+}
