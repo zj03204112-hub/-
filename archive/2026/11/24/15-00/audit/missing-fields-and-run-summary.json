@@ -16,11 +16,13 @@
     "injuries": "partial; strongest coverage for Galatasaray/Villa, Al Nassr/Al Sadd, Shabab/Al Qadsiah, Bodø/LASK",
     "weather": "Doha, Dubai, Riyadh and Bodø have references; not all venues",
     "referees": "UEFA assignments verified for Bodø/LASK and Galatasaray/Villa; AFC/U17 referees missing",
-    "pre_match_xg": "third-party model estimates only for some fixtures; no verified same-match measured xG",
+    "pre_match_xg": "11/11 have at least one provider model estimate; sources stored separately. 0 measured xG and 0 user-owned model estimates; provider estimates are not averaged.",
     "tactics": "qualitative partial, no complete tactical scouting for all 12",
     "recent_form": "partial, especially U17 only one tournament match played",
     "next_opponent_schedule": "not fully verified for all teams",
-    "window_rule": "Capture 15:00:09 BJT; kickoff must be >=21:00:09 BJT and <=03:00:09 BJT next day. Japan U17–Serbia at 21:00:00 excluded by 9 seconds."
+    "window_rule": "Capture 15:00:09 BJT; kickoff must be >=21:00:09 BJT and <=03:00:09 BJT next day. Japan U17–Serbia at 21:00:00 excluded by 9 seconds.",
+    "official_jczq": "0/11 verified",
+    "lineups": "0/11 official confirmed XIs at capture"
   },
   "database": {
     "sqlite": "not connected/verified",
@@ -35,9 +37,10 @@
     "historical_xg_snapshots_overwritten": false
   },
   "limitations": [
-    "No official JCZQ handicap verification; all 12 handicaps uncheckable.",
+    "No official JCZQ handicap verification; all 11 handicaps uncheckable.",
     "No confirmed XIs at capture time.",
-    "U17 forecasts have low data completeness and high variance.",
-    "No SQLite write or internal ID mapping claimed."
+    "U17 forecasts have low data completeness and high variance; provider xG are estimates, not measured data.",
+    "No SQLite write or internal ID mapping claimed.",
+    "Same-company opening-to-current odds series incomplete; current odds snapshots are third-party references only."
   ]
 }
