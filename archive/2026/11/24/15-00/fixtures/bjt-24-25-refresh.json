@@ -205,12 +205,24 @@
       "status_at_capture": "upcoming"
     },
     {
-      "competition": "AFC Champions League Two",
-      "home": "Al Seeb",
-      "away": "Al Shorta",
-      "kickoff_bjt": "2026-11-25T00:00:00+08:00",
-      "kickoff_utc": "2026-11-24T16:00:00Z",
-      "status_at_capture": "upcoming"
+      "competition": "FIFA U-17 World Cup",
+      "home": "Costa Rica U17",
+      "away": "Republic of Ireland U17",
+      "kickoff_bjt": "2026-11-24T20:30:00+08:00",
+      "kickoff_utc": "2026-11-24T12:30:00Z",
+      "local_kickoff": "15:30 Qatar",
+      "status_at_capture": "upcoming",
+      "prediction_status": "too_early_under_6h"
+    },
+    {
+      "competition": "FIFA U-17 World Cup",
+      "home": "Venezuela U17",
+      "away": "Romania U17",
+      "kickoff_bjt": "2026-11-24T20:30:00+08:00",
+      "kickoff_utc": "2026-11-24T12:30:00Z",
+      "local_kickoff": "15:30 Qatar",
+      "status_at_capture": "upcoming",
+      "prediction_status": "too_early_under_6h"
     }
   ],
   "fixtures_bjt_2026_11_25": [
@@ -594,6 +606,14 @@
       "local_kickoff": "18:30 Qatar",
       "status_at_capture": "upcoming",
       "prediction_status": "too_late_over_12h"
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "home": "Al Seeb",
+      "away": "Al Shorta",
+      "kickoff_bjt": "2026-11-25T00:00:00+08:00",
+      "kickoff_utc": "2026-11-24T16:00:00Z",
+      "status_at_capture": "upcoming"
     }
   ],
   "sources": [
@@ -618,5 +638,5 @@
     "internal team_id/competition_id/match_id mappings",
     "complete tactical/news/next-opponent data for all 53? listed records"
   ],
-  "count_note": "The file records 8 completed same-BJT-date matches and the verified upcoming fixtures. Fixture coverage is limited to tracked competitions with retrieved schedule evidence; not a claim of every worldwide match."
+  "count_note": "BJT 24 Nov: 8 completed earlier plus 15 upcoming; BJT 25 Nov: 41 upcoming. Strictly uses the 15:00:09 capture timestamp; the Japan U17–Serbia U17 21:00 kickoff is 9 seconds short of six hours and is excluded. Fixture coverage is limited to tracked competitions with retrieved schedule evidence."
 }
