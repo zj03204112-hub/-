@@ -1,0 +1,42 @@
+{
+  "captured_at_bjt": "2026-11-24T15:00:09+08:00",
+  "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+  "model_version": "manual-shadow-r1",
+  "counts": {
+    "bjt_24_completed": 8,
+    "bjt_24_upcoming": 14,
+    "bjt_25_upcoming": 41,
+    "window_predictions": 12,
+    "too_early_under_6h": 8,
+    "over_12h_registered": 1
+  },
+  "data_quality": {
+    "official_lineups": "0/12 confirmed at capture",
+    "predicted_lineups": "partial for UEFA/AFC",
+    "injuries": "partial; strongest coverage for Galatasaray/Villa, Al Nassr/Al Sadd, Shabab/Al Qadsiah, Bodø/LASK",
+    "weather": "Doha, Dubai, Riyadh and Bodø have references; not all venues",
+    "referees": "UEFA assignments verified for Bodø/LASK and Galatasaray/Villa; AFC/U17 referees missing",
+    "pre_match_xg": "third-party model estimates only for some fixtures; no verified same-match measured xG",
+    "tactics": "qualitative partial, no complete tactical scouting for all 12",
+    "recent_form": "partial, especially U17 only one tournament match played",
+    "next_opponent_schedule": "not fully verified for all teams"
+  },
+  "database": {
+    "sqlite": "not connected/verified",
+    "internal_team_ids": 0,
+    "competition_ids": 0,
+    "match_ids": 0
+  },
+  "protection": {
+    "v5_1_modified": false,
+    "frozen_validation_modified": false,
+    "historical_predictions_overwritten": false,
+    "historical_xg_snapshots_overwritten": false
+  },
+  "limitations": [
+    "No official JCZQ handicap verification; all 12 handicaps uncheckable.",
+    "No confirmed XIs at capture time.",
+    "U17 forecasts have low data completeness and high variance.",
+    "No SQLite write or internal ID mapping claimed."
+  ]
+}
