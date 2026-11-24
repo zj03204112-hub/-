@@ -1,0 +1,363 @@
+{
+  "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+  "model_version": "manual-shadow-r1",
+  "captured_at_bjt": "2026-11-24T15:00:09+08:00",
+  "window": {
+    "from_bjt": "2026-11-24T21:00:09+08:00",
+    "to_bjt": "2026-11-25T03:00:09+08:00",
+    "rule": "Only kickoff 6–12 hours after capture"
+  },
+  "probability_order": [
+    "home_win",
+    "draw",
+    "away_win"
+  ],
+  "score_order": "home-away",
+  "predictions": [
+    {
+      "competition": "FIFA U-17 World Cup",
+      "home": "Japan U17",
+      "away": "Serbia U17",
+      "kickoff_bjt": "2026-11-24T21:00:00+08:00",
+      "kickoff_utc": "2026-11-24T13:00:00Z",
+      "score1": "1-2",
+      "score2": "1-1",
+      "hda_pct": [
+        27,
+        23,
+        50
+      ],
+      "ht_ft": "平/客",
+      "my_confidence_pct": 46,
+      "data_completeness_pct": 42,
+      "risk": "青年队单场波动大；日本首战1-2负哥伦比亚，塞尔维亚首战2-0胜洪都拉斯；公开模型偏塞尔维亚但缺少可比盘口及首发。",
+      "market": "无可靠可比1X2盘口",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "未取得官方首发",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    },
+    {
+      "competition": "FIFA U-17 World Cup",
+      "home": "Mexico U17",
+      "away": "Cameroon U17",
+      "kickoff_bjt": "2026-11-24T21:30:00+08:00",
+      "kickoff_utc": "2026-11-24T13:30:00Z",
+      "score1": "1-1",
+      "score2": "2-1",
+      "hda_pct": [
+        43,
+        27,
+        30
+      ],
+      "ht_ft": "平/主",
+      "my_confidence_pct": 44,
+      "data_completeness_pct": 40,
+      "risk": "墨西哥首战1-0胜罗马尼亚；喀麦隆首战1-2负委内瑞拉。模型间方向不完全一致，需防青年队反击及红牌。",
+      "market": "未取得可核验主流1X2快照",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "未取得官方首发",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    },
+    {
+      "competition": "FIFA U-17 World Cup",
+      "home": "Dominican Republic U17",
+      "away": "Chile U17",
+      "kickoff_bjt": "2026-11-24T22:30:00+08:00",
+      "kickoff_utc": "2026-11-24T14:30:00Z",
+      "score1": "1-2",
+      "score2": "1-1",
+      "hda_pct": [
+        30,
+        27,
+        43
+      ],
+      "ht_ft": "平/客",
+      "my_confidence_pct": 45,
+      "data_completeness_pct": 39,
+      "risk": "多模型偏向智利，但智利首战4-2胜阿尔及利亚，防守仍有失球；多模型平局概率差异较大。",
+      "market": "无可靠可比1X2盘口",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "未取得官方首发",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    },
+    {
+      "competition": "FIFA U-17 World Cup",
+      "home": "Brazil U17",
+      "away": "Tanzania U17",
+      "kickoff_bjt": "2026-11-24T23:00:00+08:00",
+      "kickoff_utc": "2026-11-24T15:00:00Z",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_pct": [
+        40,
+        30,
+        30
+      ],
+      "ht_ft": "平/主",
+      "my_confidence_pct": 43,
+      "data_completeness_pct": 42,
+      "risk": "巴西首战2-1胜爱尔兰，坦桑尼亚首战2-2战平哥斯达黎加；公开模型对平局和客队概率分歧大，不能仅按巴西队名气定方向。",
+      "market": "未取得可核验1X2盘口",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "未取得官方首发",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    },
+    {
+      "competition": "FIFA U-17 World Cup",
+      "home": "Algeria U17",
+      "away": "Montenegro U17",
+      "kickoff_bjt": "2026-11-24T23:30:00+08:00",
+      "kickoff_utc": "2026-11-24T15:30:00Z",
+      "score1": "1-2",
+      "score2": "1-1",
+      "hda_pct": [
+        30,
+        28,
+        42
+      ],
+      "ht_ft": "平/客",
+      "my_confidence_pct": 42,
+      "data_completeness_pct": 39,
+      "risk": "阿尔及利亚首战2-4负智利，黑山首战1-1战平多米尼加；不同模型对客胜和平局判断冲突，低置信度。",
+      "market": "未取得可靠1X2盘口",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "未取得官方首发",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    },
+    {
+      "competition": "FIFA U-17 World Cup",
+      "home": "Honduras U17",
+      "away": "Colombia U17",
+      "kickoff_bjt": "2026-11-24T23:30:00+08:00",
+      "kickoff_utc": "2026-11-24T15:30:00Z",
+      "score1": "1-2",
+      "score2": "0-2",
+      "hda_pct": [
+        27,
+        25,
+        48
+      ],
+      "ht_ft": "平/客",
+      "my_confidence_pct": 44,
+      "data_completeness_pct": 40,
+      "risk": "洪都拉斯首战0-2负塞尔维亚，哥伦比亚2-1胜日本；哥伦比亚更强但青年队比赛的平局与大比分尾部仍需保留。",
+      "market": "未取得可靠1X2盘口",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "未取得官方首发",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "home": "East Bengal",
+      "away": "Al Hussein",
+      "kickoff_bjt": "2026-11-24T21:45:00+08:00",
+      "kickoff_utc": "2026-11-24T13:45:00Z",
+      "score1": "1-2",
+      "score2": "1-1",
+      "hda_pct": [
+        32,
+        26,
+        42
+      ],
+      "ht_ft": "平/客",
+      "my_confidence_pct": 49,
+      "data_completeness_pct": 58,
+      "risk": "公开模型给出客队约43-44%优势，但East Bengal主场及近期进攻不能忽略；不同模型xG约1.3-1.6，缺少官方首发。",
+      "market": "第三方1X2参考：East Bengal约2.90、平3.34、Al Hussein约2.11（GoalNumbers；非官方竞彩）",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "未取得官方首发",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "home": "Al Seeb",
+      "away": "Al Shorta",
+      "kickoff_bjt": "2026-11-25T00:00:00+08:00",
+      "kickoff_utc": "2026-11-24T16:00:00Z",
+      "score1": "1-1",
+      "score2": "0-1",
+      "hda_pct": [
+        33,
+        31,
+        36
+      ],
+      "ht_ft": "平/客",
+      "my_confidence_pct": 46,
+      "data_completeness_pct": 54,
+      "risk": "Al Shorta近5场不败，且首回合1-0取胜；Al Seeb主场和近期3胜仍需考虑。供应商xG差异较大，平局保留。",
+      "market": "第三方参考：2.35/3.10/3.00（Betopick；非官方竞彩）",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "未取得官方首发",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "home": "Shabab Al Ahli",
+      "away": "Al Qadsiah",
+      "kickoff_bjt": "2026-11-25T00:00:00+08:00",
+      "kickoff_utc": "2026-11-24T16:00:00Z",
+      "score1": "1-1",
+      "score2": "1-2",
+      "hda_pct": [
+        35,
+        28,
+        37
+      ],
+      "ht_ft": "平/客",
+      "my_confidence_pct": 49,
+      "data_completeness_pct": 63,
+      "risk": "两队西区排名第4与第5，仅差1分且均保持不败；Al Qadsiah休息约21天，Shabab上周五刚踢联赛。Bonsu Baah缺阵、Nandez未随队；比赛可能被客队反击和主队体能拉开。",
+      "market": "第三方1X2参考：2.43/3.91/2.19（Bookmakers.market；非官方竞彩）",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "仅预计阵容，官方首发未公布",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "home": "Al Nassr",
+      "away": "Al Sadd",
+      "kickoff_bjt": "2026-11-25T02:15:00+08:00",
+      "kickoff_utc": "2026-11-24T18:15:00Z",
+      "score1": "2-1",
+      "score2": "3-1",
+      "hda_pct": [
+        64,
+        20,
+        16
+      ],
+      "ht_ft": "主/主",
+      "my_confidence_pct": 54,
+      "data_completeness_pct": 66,
+      "risk": "Al Nassr主场5连胜，Mané、Coman、Ghareeb等人回归；Al Sadd的Firmino、Brozovic、Claudinho、Pedro Miguel、El Hannach等有伤停/出战疑问。Al Nassr近来防线并不稳，客队仍有进球路径。",
+      "market": "第三方1X2参考：1.29/5.35/6.84（1xBet，经BetGolazo展示；非官方竞彩）",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "预计阵容，官方首发未公布",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "home": "Bodø/Glimt",
+      "away": "LASK",
+      "kickoff_bjt": "2026-11-25T01:45:00+08:00",
+      "kickoff_utc": "2026-11-24T17:45:00Z",
+      "score1": "2-1",
+      "score2": "2-2",
+      "hda_pct": [
+        48,
+        23,
+        29
+      ],
+      "ht_ft": "主/主",
+      "my_confidence_pct": 49,
+      "data_completeness_pct": 67,
+      "risk": "UEFA最近5场形态Bodø为L-W-D-W-W，LASK为5连胜；欧冠积分LASK 6分、Bodø 4分。不同外部模型对主客胜分歧明显，需警惕LASK高进球状态。Bodø缺Mikkelsen、Evjen等，LASK缺Bello等。",
+      "market": "第三方赔率参考：约1.54/5.10/5.00（goal888；页面列开盘与赛前盘，非官方竞彩）",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "UEFA预计阵容，非官方确认首发",
+      "referee": "Umut Meler",
+      "weather": "Bodø约-4°C，偏东风，少云；低温及风对技术发挥有影响",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "home": "Galatasaray",
+      "away": "Aston Villa",
+      "kickoff_bjt": "2026-11-25T01:45:00+08:00",
+      "kickoff_utc": "2026-11-24T17:45:00Z",
+      "score1": "1-1",
+      "score2": "1-2",
+      "hda_pct": [
+        34,
+        27,
+        39
+      ],
+      "ht_ft": "平/客",
+      "my_confidence_pct": 50,
+      "data_completeness_pct": 70,
+      "risk": "Villa在欧冠积分榜高于Galatasaray，但市场与球队近况并不完全一致。Galatasaray缺Osimhen、Rafael Leão、Sallai，Jakobs待赛前检查；Villa缺Cash、Onana、Ruggeri。Rams Park草皮刚修复，可能影响传控和节奏。",
+      "market": "第三方1X2参考：2.61/3.83/2.42（NaijaScore9十家公司均值；另有来源2.80/4.09/2.49，非官方竞彩）",
+      "jczq_handicap": "无法核验",
+      "lineup_status": "预计阵容，官方首发未公布",
+      "referee": "Daniel Siebert",
+      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
+      "model_version": "manual-shadow-r1"
+    }
+  ],
+  "excluded_or_deferred": [
+    {
+      "competition": "FIFA U-17 World Cup",
+      "home": "Costa Rica U17",
+      "away": "Republic of Ireland U17",
+      "kickoff_bjt": "2026-11-24T20:30:00+08:00",
+      "reason": "距15:00采集仅5小时30分钟，低于6小时下限"
+    },
+    {
+      "competition": "FIFA U-17 World Cup",
+      "home": "Venezuela U17",
+      "away": "Romania U17",
+      "kickoff_bjt": "2026-11-24T20:30:00+08:00",
+      "reason": "距15:00采集仅5小时30分钟，低于6小时下限"
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "home": "Newcastle Jets",
+      "away": "Kashiwa Reysol",
+      "kickoff_bjt": "2026-11-24T15:45:00+08:00",
+      "reason": "开球不足1小时，禁止生成正式预测"
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "home": "Daejeon Hana Citizen",
+      "away": "Beijing FC",
+      "kickoff_bjt": "2026-11-24T18:00:00+08:00",
+      "reason": "开球不足6小时"
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "home": "Kyoto Sanga",
+      "away": "Pohang Steelers",
+      "kickoff_bjt": "2026-11-24T18:00:00+08:00",
+      "reason": "开球不足6小时"
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "home": "Shanghai Port",
+      "away": "Buriram United",
+      "kickoff_bjt": "2026-11-24T20:15:00+08:00",
+      "reason": "开球不足6小时"
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "home": "Ratchaburi",
+      "away": "Johor Darul Ta'zim",
+      "kickoff_bjt": "2026-11-24T20:15:00+08:00",
+      "reason": "开球不足6小时"
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "home": "Cong An Ha Noi",
+      "away": "Vissel Kobe",
+      "kickoff_bjt": "2026-11-24T20:15:00+08:00",
+      "reason": "开球不足6小时"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "home": "Arsenal",
+      "away": "Borussia Dortmund",
+      "kickoff_bjt": "2026-11-25T04:00:00+08:00",
+      "reason": "距采集13小时，超过12小时上限；登记为早期预测待更新"
+    }
+  ],
+  "disclaimer": "All probabilities and scores are independent shadow estimates, not output from V5.1. No odds-only selection. Official JCZQ handicap mapping is null for all 12 predictions."
+}
