@@ -1,0 +1,42 @@
+{
+  "run_id": "daily-football-2026-11-24-1000-run17",
+  "captured_at_bjt": "2026-11-24T10:00:59+08:00",
+  "reviewed_bjt_date": "2026-11-23",
+  "review": {
+    "confirmed_matches": 18,
+    "valid_prediction_snapshots": 16,
+    "unpredicted": 2,
+    "hda": "9/16",
+    "score1": "4/16",
+    "score2": "0/16",
+    "half_full": "4/16",
+    "brier": 0.5965875,
+    "log_loss": 0.9902826151740897,
+    "actual_draws": 6,
+    "draws_selected_as_top_probability": 0
+  },
+  "fixtures": {
+    "bjt_2026_11_24": 20,
+    "bjt_2026_11_25": 33,
+    "total": 53,
+    "completed_on_2026_11_24_bjt_early": 5
+  },
+  "xg": {
+    "iso_week": "2026-W48",
+    "completed_matches_with_xg": 22,
+    "completed_matches_missing_xg": 1,
+    "supplier_records": 51,
+    "measured": 0,
+    "own_model": 0,
+    "team_week_rows": 104
+  },
+  "official_jczq_verified": 0,
+  "sqlite_connected": false,
+  "internal_ids_mapped": 0,
+  "protections": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "historical_xg_snapshots_overwritten": false
+  }
+}
