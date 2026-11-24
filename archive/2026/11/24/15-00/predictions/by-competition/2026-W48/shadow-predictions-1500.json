@@ -16,29 +16,6 @@
   "predictions": [
     {
       "competition": "FIFA U-17 World Cup",
-      "home": "Japan U17",
-      "away": "Serbia U17",
-      "kickoff_bjt": "2026-11-24T21:00:00+08:00",
-      "kickoff_utc": "2026-11-24T13:00:00Z",
-      "score1": "1-2",
-      "score2": "1-1",
-      "hda_pct": [
-        27,
-        23,
-        50
-      ],
-      "ht_ft": "平/客",
-      "my_confidence_pct": 46,
-      "data_completeness_pct": 42,
-      "risk": "青年队单场波动大；日本首战1-2负哥伦比亚，塞尔维亚首战2-0胜洪都拉斯；公开模型偏塞尔维亚但缺少可比盘口及首发。",
-      "market": "无可靠可比1X2盘口",
-      "jczq_handicap": "无法核验",
-      "lineup_status": "未取得官方首发",
-      "strategy_id": "SHADOW-MKT-FORM-20261124-1500",
-      "model_version": "manual-shadow-r1"
-    },
-    {
-      "competition": "FIFA U-17 World Cup",
       "home": "Mexico U17",
       "away": "Cameroon U17",
       "kickoff_bjt": "2026-11-24T21:30:00+08:00",
@@ -357,6 +334,13 @@
       "away": "Borussia Dortmund",
       "kickoff_bjt": "2026-11-25T04:00:00+08:00",
       "reason": "距采集13小时，超过12小时上限；登记为早期预测待更新"
+    },
+    {
+      "competition": "FIFA U-17 World Cup",
+      "home": "Japan U17",
+      "away": "Serbia U17",
+      "kickoff_bjt": "2026-11-24T21:00:00+08:00",
+      "reason": "距15:00:09采集时间仅5小时59分51秒，严格低于6小时下限；不生成预测"
     }
   ],
   "disclaimer": "All probabilities and scores are independent shadow estimates, not output from V5.1. No odds-only selection. Official JCZQ handicap mapping is null for all 12 predictions."
