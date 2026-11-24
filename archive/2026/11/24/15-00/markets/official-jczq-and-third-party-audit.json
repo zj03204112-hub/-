@@ -7,14 +7,14 @@
   "market_snapshots": [
     {
       "match": "Shabab Al Ahli–Al Qadsiah",
-      "type": "third_party_1x2",
+      "type": "third_party_1x2_best_prices",
       "odds": [
-        2.43,
-        3.91,
-        2.19
+        2.93,
+        3.54,
+        2.45
       ],
-      "source": "https://bookmakers.market/football/asia/afc-champions-league-elite/fixtures/",
-      "timestamp_note": "retrieved in this 15:00 refresh; source does not expose exact bookmaker quote time"
+      "source": "https://soccerbets.com/match/asia/afc-champions-league/shabab-al-ahli-dubai-vs-al-qadsiah/giugczeqlpb4",
+      "timestamp_note": "页面称prices checked 5 hours ago；opening曾为2.43/3.91/2.19"
     },
     {
       "match": "Al Nassr–Al Sadd",
@@ -25,18 +25,18 @@
         6.84
       ],
       "source": "https://betgolazo.net/match/al-nassr-vs-al-sadd-1629988",
-      "timestamp_note": "page displays 1xBet odds and warns prices may be out of date"
+      "timestamp_note": "1xBet价格由BetGolazo展示；页面提示赔率可能过期"
     },
     {
       "match": "Bodø/Glimt–LASK",
-      "type": "third_party_1x2",
+      "type": "third_party_1x2_american_converted",
       "odds": [
         1.54,
-        5.1,
-        5
+        4.9,
+        5.11
       ],
-      "source": "https://goal888.com/en/match/bodo-glimt-vs-lask-linz-mpa0/odds/",
-      "timestamp_note": "opening and pre-match values displayed; not JCZQ"
+      "source": "https://betwatch.io/odds/champions-league/bodo-glimt-vs-lask-linz-2026-11-24",
+      "timestamp_note": "美国赔率-185/+390/+411换算；页面标注更新时间Mon 23 Nov 02:29 ET"
     },
     {
       "match": "Galatasaray–Aston Villa",
@@ -47,28 +47,32 @@
         2.42
       ],
       "source": "https://naijascore9.com/odds/football/aston-villa-vs-galatasaray/",
-      "timestamp_note": "10-bookmaker average; separate source shows different current best prices"
+      "timestamp_note": "10家公司平均值；非官方竞彩"
     },
     {
       "match": "East Bengal–Al Hussein",
-      "type": "third_party_1x2_model_reference",
-      "odds": null,
-      "source": "https://gioscore.com/football/match/al-hussein-east-bengal/19862324",
-      "timestamp_note": "model probabilities 32/25/43; not a bookmaker quote"
+      "type": "third_party_1x2_best_prices",
+      "odds": [
+        3.02,
+        3.5,
+        2.3
+      ],
+      "source": "https://soccerbets.com/match/asia/afc-champions-league-2/east-bengal-vs-al-hussein/pdszcw572oqo",
+      "timestamp_note": "页面称prices checked 2 hours ago；best price across 12 bookmakers"
     },
     {
       "match": "Al Seeb–Al Shorta",
-      "type": "third_party_1x2",
+      "type": "third_party_1x2_best_prices",
       "odds": [
-        2.35,
-        3.1,
-        3
+        2.39,
+        3.3,
+        3.05
       ],
-      "source": "https://betopick.com/prediction/al-seeb-vs-al-shorta-sc/296501",
-      "timestamp_note": "third-party snapshot, not JCZQ"
+      "source": "https://oddseek.com/id/football/al-seeb-vs-al-shorta-sc-13684014",
+      "timestamp_note": "Pinnacle/BcGame/Gamdom跨公司最佳价；非官方竞彩"
     }
   ],
-  "odds_movement": "No verified same-bookmaker opening-to-current full 1X2 sequence for all 12. Bodø/LASK and Galatasaray/Villa have partial price history; do not claim full line movement coverage.",
+  "odds_movement": "Shabab–Al Qadsiah有opening至当前最佳价变动记录（2.43/3.91/2.19至2.93/3.54/2.45）；Bodø–LASK有部分opening/current价格；Galatasaray–Villa有10家公司均值但无完整同公司序列。其他比赛没有完整、可核验的同公司初盘至即时盘轨迹。所有第三方价格均非中国体育彩票竞彩让球盘口。",
   "missing": [
     "official JCZQ handicap and prices for all 12",
     "timestamped same-company 1X2 opening/current for every match",
