@@ -1,0 +1,815 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-24-1000-run17",
+  "captured_at_bjt": "2026-11-24T10:00:59+08:00",
+  "iso_week": "2026-W48",
+  "review_window": {
+    "bjt_date": "2026-11-23",
+    "from": "2026-11-23T00:00:00+08:00",
+    "to": "2026-11-23T23:59:59+08:00"
+  },
+  "source_policy": "只纳入确认完赛；优先官方联赛/俱乐部/AFC/FIFA，其次可靠媒体或比赛数据页。赛果以90分钟为准。",
+  "snapshot_sources": [
+    {
+      "ref": "automation/daily-football-2026-11-22-1500-run14",
+      "path": "archive/2026/11/22/15-00/predictions/by-competition/2026-W47/shadow-predictions-1500.json"
+    },
+    {
+      "ref": "automation/daily-football-2026-11-23-1500-run16",
+      "path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+    }
+  ],
+  "confirmed_matches_total": 18,
+  "valid_prediction_snapshots": 16,
+  "unpredicted_confirmed_matches": 2,
+  "predictions": [
+    {
+      "match_key": "Lorient__Rennes",
+      "competition": "Ligue 1",
+      "kickoff_bjt": "2026-11-23T00:15:00+08:00",
+      "home": "Lorient",
+      "away": "Rennes",
+      "score1": "1-1",
+      "score2": "2-1",
+      "hda_probability_pct": {
+        "home": 38,
+        "draw": 29,
+        "away": 33
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "1-1",
+      "actual_ht_score": "1-1",
+      "actual_90m_hda": "D",
+      "predicted_half_full": "平/主",
+      "actual_half_full": "平/平",
+      "hit": {
+        "hda": false,
+        "score1": true,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "risk_text": "Lorient近5次交锋全胜，但Rennes整体阵容与市场仍有竞争力；Lorient有Fadiga、Katseris、Touré缺阵，Rennes有Frankowski缺阵。",
+      "risk_review": "部分：赛前已指出Rennes具备竞争力；实际平局，且Rennes补时被罚下一人、Lorient错失点球。",
+      "result_sources": [
+        "https://www.skysports.com/football/lorient-vs-rennes/557089",
+        "https://pitchlabstats.com/recap/lorient-and-rennes-draw-1-1-1552821"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-22-1500-run14",
+        "path": "archive/2026/11/22/15-00/predictions/by-competition/2026-W47/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Liverpool__Manchester United",
+      "competition": "Premier League",
+      "kickoff_bjt": "2026-11-23T00:30:00+08:00",
+      "home": "Liverpool",
+      "away": "Manchester United",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_probability_pct": {
+        "home": 55,
+        "draw": 24,
+        "away": 21
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "4-0",
+      "actual_ht_score": "2-0",
+      "actual_90m_hda": "H",
+      "predicted_half_full": "平/主",
+      "actual_half_full": "主/主",
+      "hit": {
+        "hda": true,
+        "score1": false,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "risk_text": "Pinnacle开盘主胜概率约50.4%升至57.4%；Van Dijk、Frimpong、Gravenberch预计可用但未全部确认；Bradley、Leoni、Ekitike仍缺阵。Liverpool周中欧战及下周德比带来赛程密度风险。",
+      "risk_review": "未明显兑现：赛程密度风险未阻止主队大胜；Yoro第8分钟红牌改变比赛状态，赛前风险未覆盖该事件。",
+      "result_sources": [
+        "https://www.manutd.com/en/news/report-liverpool-v-united-22-nov-2026",
+        "https://www.skysports.com/football/liverpool-vs-manchester-united/559550"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-22-1500-run14",
+        "path": "archive/2026/11/22/15-00/predictions/by-competition/2026-W47/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Werder Bremen__Hamburg",
+      "competition": "Bundesliga",
+      "kickoff_bjt": "2026-11-23T00:30:00+08:00",
+      "home": "Werder Bremen",
+      "away": "Hamburg",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_probability_pct": {
+        "home": 46,
+        "draw": 27,
+        "away": 27
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "4-0",
+      "actual_ht_score": "0-0",
+      "actual_90m_hda": "H",
+      "predicted_half_full": "平/主",
+      "actual_half_full": "平/主",
+      "hit": {
+        "hda": true,
+        "score1": false,
+        "score2": false,
+        "half_full": true
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "risk_text": "北方德比高波动；两队都有多名关键球员缺阵，Bremen的Agu、Alvero、Musah、Ndiaye、Stage、Topp缺阵，Hamburg的Nadir、Poulsen、Remberg、Lokonga缺阵。",
+      "risk_review": "部分：北方德比高波动与伤停提示有意义；实际0-0半场后下半场连进4球。",
+      "result_sources": [
+        "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-hamburg-match-report-highlights-matchday-10-40103",
+        "https://www.hsv.de/en/news/0-4-hsv-beaten-by-werder-bremen"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-22-1500-run14",
+        "path": "archive/2026/11/22/15-00/predictions/by-competition/2026-W47/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "AC Milan__Frosinone",
+      "competition": "Serie A",
+      "kickoff_bjt": "2026-11-23T01:00:00+08:00",
+      "home": "AC Milan",
+      "away": "Frosinone",
+      "score1": "2-1",
+      "score2": "2-0",
+      "hda_probability_pct": {
+        "home": 57,
+        "draw": 23,
+        "away": 20
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "5-1",
+      "actual_ht_score": "2-1",
+      "actual_90m_hda": "H",
+      "predicted_half_full": "主/主",
+      "actual_half_full": "主/主",
+      "hit": {
+        "hda": true,
+        "score1": false,
+        "score2": false,
+        "half_full": true
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "risk_text": "Milan有Gabbia、Saelemaekers、Loftus-Cheek、Chukwueze等缺阵/存疑；Frosinone也有停赛和伤员。市场主胜由1.61缩至1.58。",
+      "risk_review": "未能解释比分尾部：伤停提示存在，但Milan仍打出5球。",
+      "result_sources": [
+        "https://www.acmilan.com/en/news/articles/serie-a/2026-11-22/ac-milan-hits-five-at-san-siro"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-22-1500-run14",
+        "path": "archive/2026/11/22/15-00/predictions/by-competition/2026-W47/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Osasuna__Malaga",
+      "competition": "LaLiga",
+      "kickoff_bjt": "2026-11-23T01:30:00+08:00",
+      "home": "Osasuna",
+      "away": "Malaga",
+      "score1": "1-0",
+      "score2": "1-1",
+      "hda_probability_pct": {
+        "home": 50,
+        "draw": 28,
+        "away": 22
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "1-0",
+      "actual_ht_score": "1-0",
+      "actual_90m_hda": "H",
+      "predicted_half_full": "平/主",
+      "actual_half_full": "主/主",
+      "hit": {
+        "hda": true,
+        "score1": true,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "risk_text": "市场支持主队但主队近期表现并非持续稳定；缺少可靠首发、裁判和赛前xG。",
+      "risk_review": "部分：赛前数据不完整风险已披露；实际为低比分主胜。",
+      "result_sources": [
+        "https://www.laliga.com/en-NG/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-malaga-cf-13",
+        "https://www.osasuna.es/en/match-recap-osasuna-malaga-22-11-2026"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-22-1500-run14",
+        "path": "archive/2026/11/22/15-00/predictions/by-competition/2026-W47/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Aalesund__Rosenborg",
+      "competition": "Eliteserien",
+      "kickoff_bjt": "2026-11-23T00:00:00+08:00",
+      "home": "Aalesund",
+      "away": "Rosenborg",
+      "score1": "1-2",
+      "score2": "1-3",
+      "hda_probability_pct": {
+        "home": 20,
+        "draw": 21,
+        "away": 59
+      },
+      "predicted_90m_hda": "A",
+      "actual_score": "2-2",
+      "actual_ht_score": "1-1",
+      "actual_90m_hda": "D",
+      "predicted_half_full": "客/客",
+      "actual_half_full": "平/平",
+      "hit": {
+        "hda": false,
+        "score1": false,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "risk_text": "Aalesund排名15，Rosenborg排名3且客场近期四连胜；Aalesund主场进球多但失球也多。",
+      "risk_review": "未命中平局路径：赛前强调排名差和客队连胜，但没有充分提高平局概率。",
+      "result_sources": [
+        "https://www.eliteserien.no/resultater",
+        "https://www.shotifystats.com/match/aalesund-vs-rosenborg-2026-11-22/report"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-22-1500-run14",
+        "path": "archive/2026/11/22/15-00/predictions/by-competition/2026-W47/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Kristiansund__Sandefjord",
+      "competition": "Eliteserien",
+      "kickoff_bjt": "2026-11-23T00:00:00+08:00",
+      "home": "Kristiansund",
+      "away": "Sandefjord",
+      "score1": "1-2",
+      "score2": "1-1",
+      "hda_probability_pct": {
+        "home": 35,
+        "draw": 25,
+        "away": 40
+      },
+      "predicted_90m_hda": "A",
+      "actual_score": "2-2",
+      "actual_ht_score": "2-1",
+      "actual_90m_hda": "D",
+      "predicted_half_full": "平/客",
+      "actual_half_full": "主/平",
+      "hit": {
+        "hda": false,
+        "score1": false,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "risk_text": "两队积分接近，客队略占优；主队近期防守失球偏多；天气预报约7°C有小雨。",
+      "risk_review": "部分：主队防守失球偏多、比赛开放的风险兑现；但预测方向仍错。",
+      "result_sources": [
+        "https://www.eliteserien.no/resultater",
+        "https://www.oddalerts.com/livescores/kristiansund-vs-sandefjord/8584-8583"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-22-1500-run14",
+        "path": "archive/2026/11/22/15-00/predictions/by-competition/2026-W47/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "KFUM Oslo__Brann",
+      "competition": "Eliteserien",
+      "kickoff_bjt": "2026-11-23T00:00:00+08:00",
+      "home": "KFUM Oslo",
+      "away": "Brann",
+      "score1": "1-1",
+      "score2": "2-1",
+      "hda_probability_pct": {
+        "home": 36,
+        "draw": 30,
+        "away": 34
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "3-4",
+      "actual_ht_score": "1-2",
+      "actual_90m_hda": "A",
+      "predicted_half_full": "平/平",
+      "actual_half_full": "客/客",
+      "hit": {
+        "hda": false,
+        "score1": false,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "risk_text": "KFUM近5个主场不败，Brann近5个客场未胜；两队积分接近且防守均不稳。",
+      "risk_review": "命中部分：两队防守不稳风险兑现为7球比赛；未捕捉Brann客胜方向。",
+      "result_sources": [
+        "https://www.eliteserien.no/resultater",
+        "https://totalodds.co.uk/matches/kfum-oslo-vs-brann-9154900"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-22-1500-run14",
+        "path": "archive/2026/11/22/15-00/predictions/by-competition/2026-W47/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Sarpsborg 08__Lillestrøm",
+      "competition": "Eliteserien",
+      "kickoff_bjt": "2026-11-23T02:15:00+08:00",
+      "home": "Sarpsborg 08",
+      "away": "Lillestrøm",
+      "score1": "1-1",
+      "score2": "1-2",
+      "hda_probability_pct": {
+        "home": 35,
+        "draw": 29,
+        "away": 36
+      },
+      "predicted_90m_hda": "A",
+      "actual_score": "0-2",
+      "actual_ht_score": "0-0",
+      "actual_90m_hda": "A",
+      "predicted_half_full": "平/客",
+      "actual_half_full": "平/客",
+      "hit": {
+        "hda": true,
+        "score1": false,
+        "score2": false,
+        "half_full": true
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261122-1500",
+      "risk_text": "Sarpsborg缺Niyukuri且另有伤员；Lillestrøm排名高14分，但历史交锋接近。",
+      "risk_review": "部分：伤停风险提示存在；客队取胜方向命中，但比分未覆盖。",
+      "result_sources": [
+        "https://www.eliteserien.no/resultater",
+        "https://soccerghost.com/match/111812/sarpsborg-08-ff-vs-lillestrom"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-22-1500-run14",
+        "path": "archive/2026/11/22/15-00/predictions/by-competition/2026-W47/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "PFC Neftchi__Al Hilal",
+      "competition": "AFC Champions League Elite",
+      "kickoff_bjt": "2026-11-23T21:45:00+08:00",
+      "home": "PFC Neftchi",
+      "away": "Al Hilal",
+      "score1": "1-2",
+      "score2": "0-2",
+      "hda_probability_pct": {
+        "home": 15,
+        "draw": 21,
+        "away": 64
+      },
+      "predicted_90m_hda": "A",
+      "actual_score": "2-2",
+      "actual_ht_score": "0-2",
+      "actual_90m_hda": "D",
+      "predicted_half_full": "平/客",
+      "actual_half_full": "客/平",
+      "hit": {
+        "hda": false,
+        "score1": false,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "risk_text": "Neftchi近几个主场有进球能力，且国内赛近期有竞争力；Al Hilal近9场赢8场，但Bouabré、Dahal伤情存疑，Meité与Al-Harbi也有出战疑问。客胜仍需防主队先得分后的反击。",
+      "risk_review": "部分：赛前已提示Neftchi有主场进球能力，实际连追两球；但客胜概率过度集中。",
+      "result_sources": [
+        "https://alhilal.com/en/news/al-hilal-draws-2-2-with-neftchi-in-the-afc-champions-league-elite",
+        "https://www.the-afc.com/en/club/afc_champions_league_elite/home.html"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-22-1500-run14",
+        "path": "archive/2026/11/22/15-00/predictions/by-competition/2026-W47/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Uzbekistan U17__Jamaica U17",
+      "competition": "FIFA U-17 World Cup",
+      "kickoff_bjt": "2026-11-23T21:00:00+08:00",
+      "home": "Uzbekistan U17",
+      "away": "Jamaica U17",
+      "score1": "2-0",
+      "score2": "1-0",
+      "hda_probability_pct": {
+        "home": 61,
+        "draw": 24,
+        "away": 15
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "6-2",
+      "actual_ht_score": "2-2",
+      "actual_90m_hda": "H",
+      "predicted_half_full": "主/主",
+      "actual_half_full": "平/主",
+      "hit": {
+        "hda": true,
+        "score1": false,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "risk_text": "乌兹别克首战2-1负科特迪瓦但比赛过程有竞争力；牙买加首战0-6负意大利。青年赛事单场波动大，不能把一场大比分当成稳定实力差。",
+      "risk_review": "青年赛高波动提示兑现；实际总进球8球，比分尾部明显低估。",
+      "result_sources": [
+        "https://www.fifa.com/pt/tournaments/mens/u17worldcup/qatar-2026/articles/dia-5-jogos-resultados-gols",
+        "https://www.jamaicaobserver.com/2026/11/23/u-17-reggae-boyz-beaten-6-2-uzbekistan/"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-23-1500-run16",
+        "path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Senegal U17__Cuba U17",
+      "competition": "FIFA U-17 World Cup",
+      "kickoff_bjt": "2026-11-23T21:30:00+08:00",
+      "home": "Senegal U17",
+      "away": "Cuba U17",
+      "score1": "2-1",
+      "score2": "1-0",
+      "hda_probability_pct": {
+        "home": 58,
+        "draw": 24,
+        "away": 18
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "9-0",
+      "actual_ht_score": "5-0",
+      "actual_90m_hda": "H",
+      "predicted_half_full": "平/主",
+      "actual_half_full": "主/主",
+      "hit": {
+        "hda": true,
+        "score1": false,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "risk_text": "塞内加尔首战十人战平克罗地亚，后卫Abdou Karim Diallo停赛；古巴首战3-5负塔吉克斯坦，进攻有威胁但防守暴露明显。",
+      "risk_review": "青年赛防线差异风险部分兑现；实际9-0，进球尾部严重低估。",
+      "result_sources": [
+        "https://www.fifa.com/pt/tournaments/mens/u17worldcup/qatar-2026/articles/dia-5-jogos-resultados-gols",
+        "https://african.football/senegal-thrash-cuba-9-0-to-move-closer-to-u17-world-cup-qualification/"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-23-1500-run16",
+        "path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Italy U17__Côte d’Ivoire U17",
+      "competition": "FIFA U-17 World Cup",
+      "kickoff_bjt": "2026-11-23T22:30:00+08:00",
+      "home": "Italy U17",
+      "away": "Côte d’Ivoire U17",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_probability_pct": {
+        "home": 48,
+        "draw": 27,
+        "away": 25
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "2-1",
+      "actual_ht_score": "1-0",
+      "actual_90m_hda": "H",
+      "predicted_half_full": "平/主",
+      "actual_half_full": "主/主",
+      "hit": {
+        "hda": true,
+        "score1": true,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "risk_text": "意大利首战6-0击败牙买加，科特迪瓦2-1击败乌兹别克；双方均有强势开局，意大利并非稳胜，需防科特迪瓦身体对抗和转换。",
+      "risk_review": "部分：已提示科特迪瓦身体对抗与转换威胁；意大利小胜，比分命中。",
+      "result_sources": [
+        "https://www.fifa.com/pt/tournaments/mens/u17worldcup/qatar-2026/articles/dia-5-jogos-resultados-gols",
+        "https://kicklyapp.com/en/match/italy-ivory-coast-YDF7xRve"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-23-1500-run16",
+        "path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Morocco U17__China PR U17",
+      "competition": "FIFA U-17 World Cup",
+      "kickoff_bjt": "2026-11-23T23:00:00+08:00",
+      "home": "Morocco U17",
+      "away": "China PR U17",
+      "score1": "2-0",
+      "score2": "3-1",
+      "hda_probability_pct": {
+        "home": 65,
+        "draw": 22,
+        "away": 13
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "2-2",
+      "actual_ht_score": "0-1",
+      "actual_90m_hda": "D",
+      "predicted_half_full": "主/主",
+      "actual_half_full": "客/平",
+      "hit": {
+        "hda": false,
+        "score1": false,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "risk_text": "摩洛哥首战6-0击败斐济，中国首战0-5负西班牙；摩洛哥明显占优，但青年队阵容轮换和早早领先后的比赛节奏可能放大比分尾部。",
+      "risk_review": "未充分覆盖冷门：赛前优势判断过度，未把中国反击与平局纳入足够概率。",
+      "result_sources": [
+        "https://www.fifa.com/pt/tournaments/mens/u17worldcup/qatar-2026/articles/dia-5-jogos-resultados-gols",
+        "https://www.sofascore.com/football/match/china-u17-morocco-u17/mCusctMd"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-23-1500-run16",
+        "path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Mali U17__Belgium U17",
+      "competition": "FIFA U-17 World Cup",
+      "kickoff_bjt": "2026-11-23T23:30:00+08:00",
+      "home": "Mali U17",
+      "away": "Belgium U17",
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_probability_pct": {
+        "home": 43,
+        "draw": 28,
+        "away": 29
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "2-1",
+      "actual_ht_score": "1-1",
+      "actual_90m_hda": "H",
+      "predicted_half_full": "平/主",
+      "actual_half_full": "平/主",
+      "hit": {
+        "hda": true,
+        "score1": true,
+        "score2": false,
+        "half_full": true
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "risk_text": "马里首战3-0胜新西兰，比利时3-2险胜越南；两队均有进攻能力，平局与4球以上尾部都不能忽略。",
+      "risk_review": "部分：平局与进球尾部均有提示；实际主队小胜，第一比分命中。",
+      "result_sources": [
+        "https://femafoot.com/en/u-17-mali-2-1-belgium-fifa-u-17-world-cup-2026/",
+        "https://www.fifa.com/pt/tournaments/mens/u17worldcup/qatar-2026/articles/dia-5-jogos-resultados-gols"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-23-1500-run16",
+        "path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+      }
+    },
+    {
+      "match_key": "Vietnam U17__New Zealand U17",
+      "competition": "FIFA U-17 World Cup",
+      "kickoff_bjt": "2026-11-23T23:30:00+08:00",
+      "home": "Vietnam U17",
+      "away": "New Zealand U17",
+      "score1": "1-1",
+      "score2": "2-1",
+      "hda_probability_pct": {
+        "home": 43,
+        "draw": 29,
+        "away": 28
+      },
+      "predicted_90m_hda": "H",
+      "actual_score": "3-3",
+      "actual_ht_score": "0-1",
+      "actual_90m_hda": "D",
+      "predicted_half_full": "平/平",
+      "actual_half_full": "客/平",
+      "hit": {
+        "hda": false,
+        "score1": false,
+        "score2": false,
+        "half_full": false
+      },
+      "official_jczq_handicap": null,
+      "jczq_result": "无法核验：未取得官方竞彩真实让球盘口；不使用第三方亚洲盘替代",
+      "confidence": null,
+      "model_version": "manual-shadow-r1",
+      "strategy_id": "SHADOW-MKT-FORM-20261123-1500",
+      "risk_text": "越南首战2-3负比利时，新西兰0-3负马里；两队都需要积分，比赛节奏可能开放，但缺少官方首发和比赛级xG。",
+      "risk_review": "命中开放比赛风险；实际3-3，但HDA仍未将平局列为最高概率。",
+      "result_sources": [
+        "https://www.sofascore.com/football/match/vietnam-u17-new-zealand-u17/JcjsetMd",
+        "https://www.fifa.com/pt/tournaments/mens/u17worldcup/qatar-2026/articles/dia-5-jogos-resultados-gols"
+      ],
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-23-1500-run16",
+        "path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+      }
+    }
+  ],
+  "unpredicted_matches": [
+    {
+      "home": "Tajikistan U17",
+      "away": "Croatia U17",
+      "score": "0-4",
+      "ht": "0-1",
+      "kickoff_bjt": "2026-11-23T20:30:00+08:00",
+      "status": "confirmed_finished_no_snapshot",
+      "sources": [
+        "https://hns.team/en/news/32105/croatia-impress-in-convincing-win-over-tajikistan/",
+        "https://kicklyapp.com/en/match/tajikistan-croatia-tb99dnWQ"
+      ]
+    },
+    {
+      "home": "Spain U17",
+      "away": "Fiji U17",
+      "score": "15-0",
+      "ht": "9-0",
+      "kickoff_bjt": "2026-11-23T20:30:00+08:00",
+      "status": "confirmed_finished_no_snapshot",
+      "sources": [
+        "https://www.fifa.com/pt/tournaments/mens/u17worldcup/qatar-2026/articles/dia-5-jogos-resultados-gols",
+        "https://www.ysscores.com/en/match/6139555/Spain-U17-vs-Fiji-U17-live"
+      ]
+    }
+  ],
+  "invalidated_misdated_predictions": [
+    {
+      "home": "Uzbekistan U17",
+      "away": "Jamaica U17",
+      "original_kickoff_bjt": "2026-11-22T21:00:00+08:00",
+      "original_snapshot_branch": "automation/daily-football-2026-11-22-1500-run14",
+      "invalid_reason": "原快照日期与FIFA官方赛事日期/时区不一致；实际比赛在2026-11-23北京时间，原采集时不满足6–12小时窗口。原始文件保留但排除评分。",
+      "replacement_snapshot_branch": "automation/daily-football-2026-11-23-1500-run16",
+      "replacement_path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+    },
+    {
+      "home": "Senegal U17",
+      "away": "Cuba U17",
+      "original_kickoff_bjt": "2026-11-22T21:30:00+08:00",
+      "original_snapshot_branch": "automation/daily-football-2026-11-22-1500-run14",
+      "invalid_reason": "原快照日期与FIFA官方赛事日期/时区不一致；实际比赛在2026-11-23北京时间，原采集时不满足6–12小时窗口。原始文件保留但排除评分。",
+      "replacement_snapshot_branch": "automation/daily-football-2026-11-23-1500-run16",
+      "replacement_path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+    },
+    {
+      "home": "Italy U17",
+      "away": "Ivory Coast U17",
+      "original_kickoff_bjt": "2026-11-22T22:30:00+08:00",
+      "original_snapshot_branch": "automation/daily-football-2026-11-22-1500-run14",
+      "invalid_reason": "原快照日期与FIFA官方赛事日期/时区不一致；实际比赛在2026-11-23北京时间，原采集时不满足6–12小时窗口。原始文件保留但排除评分。",
+      "replacement_snapshot_branch": "automation/daily-football-2026-11-23-1500-run16",
+      "replacement_path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+    },
+    {
+      "home": "Morocco U17",
+      "away": "China PR U17",
+      "original_kickoff_bjt": "2026-11-22T23:00:00+08:00",
+      "original_snapshot_branch": "automation/daily-football-2026-11-22-1500-run14",
+      "invalid_reason": "原快照日期与FIFA官方赛事日期/时区不一致；实际比赛在2026-11-23北京时间，原采集时不满足6–12小时窗口。原始文件保留但排除评分。",
+      "replacement_snapshot_branch": "automation/daily-football-2026-11-23-1500-run16",
+      "replacement_path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+    },
+    {
+      "home": "Mali U17",
+      "away": "Belgium U17",
+      "original_kickoff_bjt": "2026-11-22T23:30:00+08:00",
+      "original_snapshot_branch": "automation/daily-football-2026-11-22-1500-run14",
+      "invalid_reason": "原快照日期与FIFA官方赛事日期/时区不一致；实际比赛在2026-11-23北京时间，原采集时不满足6–12小时窗口。原始文件保留但排除评分。",
+      "replacement_snapshot_branch": "automation/daily-football-2026-11-23-1500-run16",
+      "replacement_path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+    },
+    {
+      "home": "Vietnam U17",
+      "away": "New Zealand U17",
+      "original_kickoff_bjt": "2026-11-22T23:30:00+08:00",
+      "original_snapshot_branch": "automation/daily-football-2026-11-22-1500-run14",
+      "invalid_reason": "原快照日期与FIFA官方赛事日期/时区不一致；实际比赛在2026-11-23北京时间，原采集时不满足6–12小时窗口。原始文件保留但排除评分。",
+      "replacement_snapshot_branch": "automation/daily-football-2026-11-23-1500-run16",
+      "replacement_path": "archive/2026/11/23/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json"
+    }
+  ],
+  "metrics": {
+    "ninety_minute_hda": {
+      "hit": 9,
+      "total": 16,
+      "rate": 0.5625
+    },
+    "score1": {
+      "hit": 4,
+      "total": 16,
+      "rate": 0.25
+    },
+    "score2": {
+      "hit": 0,
+      "total": 16,
+      "rate": 0
+    },
+    "half_full": {
+      "hit": 4,
+      "total": 16,
+      "rate": 0.25
+    },
+    "brier_multiclass_mean_sum_squares": 0.5965875,
+    "log_loss": 0.9902826151740897,
+    "actual_draws": 6,
+    "draws_selected_as_top_probability": 0,
+    "four_plus_total_goals": 11,
+    "top_two_score_slots_with_four_plus_goals": 2,
+    "hda_score1_consistency_mismatches": [
+      "Lorient-Rennes",
+      "KFUM Oslo-Brann",
+      "Sarpsborg 08-Lillestrøm",
+      "Vietnam U17-New Zealand U17"
+    ]
+  },
+  "jczq": {
+    "verified_official_handicap": 0,
+    "total": 16,
+    "grading": "全部无法核验；没有真实官方让球盘口，不反推，不用亚洲盘替代。"
+  },
+  "risk_review_policy": "风险提示未预先定义统一二元阈值，因此只做逐场定性复核，不计算虚构命中率。",
+  "model_version": "manual-shadow-r1",
+  "strategy_ids": [
+    "SHADOW-MKT-FORM-20261122-1500",
+    "SHADOW-MKT-FORM-20261123-1500"
+  ],
+  "protections": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "history_snapshots_overwritten": false,
+    "post_match_xg_used_as_prematch_input": false
+  }
+}
