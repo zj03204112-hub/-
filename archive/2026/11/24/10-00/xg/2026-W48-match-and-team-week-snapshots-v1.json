@@ -6,7 +6,7 @@
   "key_policy": "目标键为team_id+competition_id+season+ISO week；本轮内部ID未连接，保留null并以球队名称/赛事名称作临时键，不伪造内部ID。",
   "match_count": 23,
   "supplier_match_records": 55,
-  "team_week_snapshot_rows": 112,
+  "team_week_snapshot_rows": 110,
   "coverage": {
     "matches_with_supplier_post_match_xg": 22,
     "matches_missing_supplier_post_match_xg": 1,
@@ -14,7 +14,7 @@
     "measured_xg_records": 0,
     "own_model_estimate_records": 0,
     "team_rows_with_supplier_data": 108,
-    "team_rows_missing": 4,
+    "team_rows_missing": 2,
     "internal_team_id_resolved": 0,
     "internal_competition_id_resolved": 0,
     "internal_match_id_resolved": 0
@@ -3898,64 +3898,6 @@
           "xga": 1.54,
           "xgd": 0.32,
           "source_url": "https://betinsider.tips/scores/match/1629977-al-shamal-vs-al-ahli-jeddah"
-        }
-      ],
-      "aggregation_status": "recomputable_single_match_supplier_specific",
-      "missing_reason": "内部team_id/competition_id/match_id尚未映射；当前以球队名称+赛事+赛季+ISO周+供应商作临时键。"
-    },
-    {
-      "team_name": "Al-Ittihad",
-      "team_id": null,
-      "competition": "AFC Champions League Elite",
-      "competition_id": null,
-      "season": "2026-27",
-      "iso_week": "2026-W48",
-      "supplier": null,
-      "match_count": 1,
-      "xg": null,
-      "xga": null,
-      "xgd": 0,
-      "xg_per90": null,
-      "xga_per90": null,
-      "xgd_per90": 0,
-      "match_details": [
-        {
-          "match_key": "Al_Ittihad__Pakhtakor",
-          "match_date_bjt": "2026-11-24",
-          "venue_role": "home",
-          "xg": null,
-          "xga": null,
-          "xgd": 0,
-          "source_url": null
-        }
-      ],
-      "aggregation_status": "recomputable_single_match_supplier_specific",
-      "missing_reason": "内部team_id/competition_id/match_id尚未映射；当前以球队名称+赛事+赛季+ISO周+供应商作临时键。"
-    },
-    {
-      "team_name": "Pakhtakor",
-      "team_id": null,
-      "competition": "AFC Champions League Elite",
-      "competition_id": null,
-      "season": "2026-27",
-      "iso_week": "2026-W48",
-      "supplier": null,
-      "match_count": 1,
-      "xg": null,
-      "xga": null,
-      "xgd": 0,
-      "xg_per90": null,
-      "xga_per90": null,
-      "xgd_per90": 0,
-      "match_details": [
-        {
-          "match_key": "Al_Ittihad__Pakhtakor",
-          "match_date_bjt": "2026-11-24",
-          "venue_role": "away",
-          "xg": null,
-          "xga": null,
-          "xgd": 0,
-          "source_url": null
         }
       ],
       "aggregation_status": "recomputable_single_match_supplier_specific",
