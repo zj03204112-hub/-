@@ -4,11 +4,11 @@
   "model_version": "manual-shadow-r1",
   "counts": {
     "bjt_24_completed": 8,
-    "bjt_24_upcoming": 14,
+    "bjt_24_upcoming": 15,
     "bjt_25_upcoming": 41,
-    "window_predictions": 12,
-    "too_early_under_6h": 8,
-    "over_12h_registered": 1
+    "window_predictions": 11,
+    "too_early_under_6h": 9,
+    "over_12h_registered": 36
   },
   "data_quality": {
     "official_lineups": "0/12 confirmed at capture",
@@ -19,7 +19,8 @@
     "pre_match_xg": "third-party model estimates only for some fixtures; no verified same-match measured xG",
     "tactics": "qualitative partial, no complete tactical scouting for all 12",
     "recent_form": "partial, especially U17 only one tournament match played",
-    "next_opponent_schedule": "not fully verified for all teams"
+    "next_opponent_schedule": "not fully verified for all teams",
+    "window_rule": "Capture 15:00:09 BJT; kickoff must be >=21:00:09 BJT and <=03:00:09 BJT next day. Japan U17–Serbia at 21:00:00 excluded by 9 seconds."
   },
   "database": {
     "sqlite": "not connected/verified",
