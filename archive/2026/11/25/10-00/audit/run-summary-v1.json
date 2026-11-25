@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "run_id": "daily-football-2026-11-25-1000-run19",
+  "captured_at_bjt": "2026-11-25T10:00:50+08:00",
+  "reviewed_bjt_date": "2026-11-24",
+  "review": {
+    "confirmed_tracked_matches": 23,
+    "valid_prediction_snapshots": 11,
+    "no_prediction_snapshot": 12,
+    "hda": "6/11",
+    "score1": "0/11",
+    "score2": "3/11",
+    "half_full": "2/11",
+    "brier": 0.61518182,
+    "log_loss": 1.02146391,
+    "actual_draws": 1,
+    "top_probability_draws": 0,
+    "actual_goals_ge4_in_predicted_matches": "3/11",
+    "candidate_scores_ge4": "0/22",
+    "official_jczq_verified": 0,
+    "jczq_scoring": "无法核验；不反推、不使用第三方亚洲盘"
+  },
+  "fixture_refresh": {
+    "bjt_2026_11_25": 33,
+    "bjt_2026_11_26": 30,
+    "total": 63,
+    "bjt_2026_11_25_completed_at_capture": 20,
+    "bjt_2026_11_25_upcoming_at_capture": 13,
+    "bjt_2026_11_26_upcoming": 30,
+    "prior_schedule_coverage_corrections": 3,
+    "correction_matches": [
+      "Brentford-Everton",
+      "Monza-Fiorentina",
+      "Levante-Elche"
+    ],
+    "core_league_matches_on_2026_11_25_26_bjt": 0
+  },
+  "xg": {
+    "iso_week": "2026-W48",
+    "appended_unique_matches": 18,
+    "appended_matches_with_supplier_post_match_xg": 17,
+    "appended_missing_matches": 1,
+    "appended_supplier_estimate_records": 20,
+    "cumulative_unique_matches": 41,
+    "cumulative_matches_with_supplier_xg": 39,
+    "cumulative_missing_matches": 2,
+    "cumulative_supplier_estimate_records": 74,
+    "cumulative_measured_records": 0,
+    "cumulative_own_model_estimate_records": 0,
+    "cumulative_team_week_rows": 152,
+    "team_rows_with_supplier_data": 148,
+    "team_rows_missing": 4,
+    "internal_team_id_resolved": 0,
+    "internal_competition_id_resolved": 0,
+    "internal_match_id_resolved": 0,
+    "leakage_audit": "本次新增赛后xG未用于同场赛前输入"
+  },
+  "missing_fields": [
+    "官方竞彩让球原始盘口及时间戳未取得",
+    "同公司初盘至即时盘完整轨迹未取得",
+    "未来比赛官方首发尚未公布或未全量核验",
+    "逐场完整伤停、战术、裁判、天气、赛程密度与下一场对手重要性未全量核验",
+    "部分未来比赛的比赛级赛前xG缺失；现有供应商赛后xG仅作赛后统计",
+    "SQLite未连接/未验证",
+    "内部team_id、competition_id、match_id尚未完成映射"
+  ],
+  "archive": {
+    "repository": "zj03204112-hub/-",
+    "branch": "automation/daily-football-2026-11-25-1000-run19",
+    "files": [
+      "archive/2026/11/25/10-00/review/2026-11-24-results-review-bjt-v1.json",
+      "archive/2026/11/25/10-00/fixtures/bjt-25-26-refresh-v1.json",
+      "archive/2026/11/25/10-00/xg/2026-W48-append-2026-11-24-bjt-v1.json",
+      "archive/2026/11/25/10-00/audit/run-summary-v1.json"
+    ],
+    "commit_policy": "只有每个文件提交后回读并解析通过才报告归档"
+  },
+  "protections": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "historical_xg_snapshots_overwritten": false,
+    "previous_xg_snapshot_mutated": false
+  },
+  "database": {
+    "sqlite_connected": false,
+    "write_verified": false
+  },
+  "next_run_focus": [
+    "15:00按实时6–12小时窗口刷新并生成新预测",
+    "官方竞彩盘口缺失继续标记无法核验",
+    "优先修复平局概率矩阵和4球以上进球尾部",
+    "继续按供应商独立追加W48赛后xG，不回填赛前输入",
+    "解决SQLite连接与内部ID映射"
+  ]
+}
