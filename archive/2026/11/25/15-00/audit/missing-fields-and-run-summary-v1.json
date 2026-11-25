@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "run_at_bjt": "2026-11-25T15:01:00+08:00",
+    "iso_week": "2026-W48",
+    "branch": "automation/daily-football-2026-11-25-1500-run20",
+    "base_branch": "main"
+  },
+  "run_summary": {
+    "scheduled_refresh": true,
+    "fixtures_bjt_2026_11_25": 41,
+    "fixtures_bjt_2026_11_26": 12,
+    "boundary_spillover_to_2026_11_27": 2,
+    "eligible_6_12h_predictions": 17,
+    "predictions_written": 17
+  },
+  "window_rule": {
+    "from": "2026-11-25T21:01:00+08:00",
+    "to": "2026-11-26T03:01:00+08:00",
+    "strict": true,
+    "excluded_examples": [
+      "J1 and ACL Elite East kickoffs at 18:00/18:30 BJT are under 6 hours",
+      "U17 Ecuador-Korea and Uganda-New Caledonia at 20:30 BJT are under 6 hours",
+      "7 UCL fixtures at 04:00 BJT are over 12 hours",
+      "Championship fixtures at 03:45/04:00 BJT are over 12 hours"
+    ]
+  },
+  "missing_fields": {
+    "official_jczq_handicap": "17/17 not verified",
+    "same_bookmaker_open_to_live_odds": "17/17 incomplete",
+    "official_starting_lineups": "not yet released for all 17; UEFA predicted lineups only for two UCL fixtures",
+    "injuries": "partially verified for UCL and selected AFC; U17 official injury lists unavailable",
+    "referee": "UEFA appointments confirmed for two UCL matches; other competitions not confirmed",
+    "weather": "hourly venue weather not verified for all 17; partial Qatar/Baku/Abu Dhabi/Nasaf provider forecasts only",
+    "prematch_xg": "20 supplier estimates across selected fixtures; no measured xG and no own-model xG; 4 named fixtures missing numeric estimates",
+    "tactics": "only qualitative team-style notes from previews; no verified tactical event data for all matches",
+    "schedule_density_next_opponent": "partial; not all 17 have fully checked next-opponent schedules"
+  },
+  "data_completeness_method": "Field-coverage estimate, not confidence: official kickoff, recent form, injury/news, lineup, third-party 1X2, official JCZQ, pre-match xG, tactical context, weather/referee, schedule/motivation. Each field is scored as present/partial/missing; youth fixtures are intentionally low.",
+  "repo_model_audit": {
+    "checked_files": [
+      "model_validation/v5_2_engine_vs_market.json",
+      "model_validation/v5_2_prediction_engine.py",
+      "model_validation/v5_2_goal_tail_shadow.py"
+    ],
+    "v5_2_holdout_matches": 1509,
+    "market_brier": 0.588,
+    "v5_2_brier": 0.5887,
+    "market_log_loss": 0.9865,
+    "v5_2_log_loss": 0.9877,
+    "conclusion": "V5.2 candidate slightly worse than market baseline on the recorded holdout; not treated as production engine for this run."
+  },
+  "protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "historical_xg_week_snapshots_overwritten": false,
+    "postmatch_xg_leakage_into_prematch_inputs": 0
+  },
+  "database": {
+    "sqlite_file_present_in_repository": true,
+    "sqlite_file_size_bytes": 63332352,
+    "connected_in_this_run": false,
+    "queried_in_this_run": false,
+    "write_completed": false,
+    "reason": "63.3 MB SQLite file is in GitHub tree but was not mounted or opened by this run; no database write is claimed."
+  }
+}
