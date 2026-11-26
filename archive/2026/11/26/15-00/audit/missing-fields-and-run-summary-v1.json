@@ -1,0 +1,60 @@
+{
+  "collected_at_bjt": "2026-11-26T15:02:33+08:00",
+  "run_type": "15:00 schedule refresh and prediction",
+  "iso_week": "2026-W48",
+  "eligible_window_bjt": {
+    "start": "2026-11-26T21:02:33+08:00",
+    "end": "2026-11-27T03:02:33+08:00"
+  },
+  "predicted_matches": 34,
+  "excluded_near_window": [
+    {
+      "match": "New Zealand U17–Belgium U17",
+      "kickoff_bjt": "2026-11-26T21:00:00+08:00",
+      "reason": "比6小时下限早2分33秒"
+    },
+    {
+      "match": "Vietnam U17–Mali U17",
+      "kickoff_bjt": "2026-11-26T21:00:00+08:00",
+      "reason": "比6小时下限早2分33秒"
+    },
+    {
+      "match": "6场AFC Champions League Two",
+      "reason": "开球18:00/20:15 BJT，距采集不足6小时"
+    },
+    {
+      "match": "Borneo FC–Persita",
+      "reason": "16:30 BJT开球，距采集不足6小时"
+    }
+  ],
+  "outside_upper_window": "26 Nov UTC 20:00的欧联10场、欧协联8场换算为27 Nov 04:00 BJT，距采集约12小时57分，超过12小时上限。",
+  "official_lineups": 0,
+  "injury_data": "仅部分比赛有公开伤停/阵容新闻；无官方首发确认，未将预计阵容冒充真实首发。",
+  "referees": "仅少数赛事找到赛前裁判资料；未核验完整36场官方裁判名单。",
+  "weather": {
+    "Almaty": "Kazhydromet：26 Nov夜间约7–9°C、局地无降水，风3–8m/s，阵风可达13m/s；其他商业预报对夜间降水存在分歧。",
+    "Riyadh": "约19–22°C，晴/轻雾，低降水概率。",
+    "AlMajmaah": "约19°C夜间、晴、无明显降水，轻风。",
+    "Doha": "约21–25°C，晴，降雨概率低，风约10km/h。",
+    "Europe": "只取得部分城市日尺度预报，未取得全部比赛场地逐小时数据。"
+  },
+  "recent_form": "部分比赛有近5场资料，可提取近3场；并非36场全部字段完整。",
+  "tactics": "未取得全部球队统一口径的战术/压迫/阵型数据。",
+  "next_opponent_importance": "未完成36场逐队下一场重要性审计。",
+  "professional_commentary": "未取得全部比赛可审计的专业足球评论员独立分析；没有用赔率单独决定方向。",
+  "official_jczq": "0/34 verified",
+  "market_movement": "0/34 complete same-bookmaker opening-to-live series",
+  "xg_supplier_estimates": 16,
+  "measured_xg": 0,
+  "own_model_xg": 0,
+  "sqlite_connected": false,
+  "sqlite_write": false,
+  "team_competition_match_ids_mapped": false,
+  "production_protection": {
+    "V5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_predictions_overwritten": false,
+    "historical_xg_snapshots_overwritten": false
+  },
+  "commit_verification": "待提交后回读验证"
+}
