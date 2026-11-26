@@ -1,0 +1,1149 @@
+{
+  "schema_version": "football-review-v2",
+  "run_id": "daily-2026-11-26-1000-run21-correction",
+  "captured_at_bjt": "2026-11-26T10:04:52+08:00",
+  "review_date_bjt": "2026-11-25",
+  "iso_week": "2026-W48",
+  "supersedes": "archive/2026/11/26/10-00/review/2026-11-25-results-review-bjt-v1.json",
+  "correction_note": "v1误把2026-11-24 15:00原始快照中的hda_pct与ht_ft字段当成缺失；已重新读取原始JSON并按实际字段名恢复，v1保留不覆盖，v2为有效评分版本。",
+  "confirmed_finished_matches": 26,
+  "prediction_snapshots_found": 13,
+  "matches_without_prediction_snapshot": 13,
+  "matches_reviewed": [
+    {
+      "competition": "AFC Champions League Two",
+      "category": "continental_club",
+      "home": "Al Seeb",
+      "away": "Al Shorta",
+      "kickoff_bjt": "2026-11-25T00:00:00+08:00",
+      "score": "2-0",
+      "source": "https://www.the-afc.com/en/club/afc_champions_league_two/home.html",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-24-1500-run18",
+        "path": "archive/2026/11/24/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json",
+        "blob_sha": "ae194c48e798425dd5d6dc46ee36cb12f06a5b7b",
+        "score1": "1-1",
+        "score2": "0-1",
+        "hda_probabilities": [
+          33,
+          31,
+          36
+        ],
+        "htft": "平/客",
+        "my_confidence": 46,
+        "data_completeness": 54,
+        "risk": "Al Shorta近5场不败，且首回合1-0取胜；Al Seeb主场和近期3胜仍需考虑。供应商xG差异较大，平局保留。",
+        "market": "第三方1X2最佳价：2.39/3.30/3.05（OddSeek，跨公司最佳价；非官方竞彩）",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": [
+          {
+            "provider": "HelloPredict",
+            "type": "provider_model_estimate",
+            "xg_home": 0.5,
+            "xg_away": 2.25,
+            "source": "https://www.hellopredict.com/1630406/al-seeb-vs-al-shorta"
+          },
+          {
+            "provider": "PitchsideLab",
+            "type": "provider_model_estimate",
+            "xg_home": 0.71,
+            "xg_away": 1.09,
+            "source": "https://pitchsidelab.com/football/world-afc-champions-league-two/al-seeb-vs-al-shorta-28571-2026-11-24/"
+          }
+        ],
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261124-1500"
+      },
+      "actual_hda": "H",
+      "actual_ht": "1-0",
+      "actual_htft": "主/主",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": false,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "A",
+      "actual_ht_source": "https://live4sport.net/soccer/match/al-shorta-11512-vs-al-seeb-13812/",
+      "risk_review": {
+        "status": "not_materialized",
+        "reason": "赛前风险集中于Al Shorta近期状态及平局；实际Al Seeb 2-0零封，客队威胁未兑现。"
+      }
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "category": "continental_club",
+      "home": "Shabab Al Ahli",
+      "away": "Al Qadsiah",
+      "kickoff_bjt": "2026-11-25T00:00:00+08:00",
+      "score": "1-5",
+      "source": "https://www.reuters.com/sports/soccer/spectacular-felix-strike-earns-al-nassr-asian-champions-league-win-2026-11-24/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-24-1500-run18",
+        "path": "archive/2026/11/24/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json",
+        "blob_sha": "ae194c48e798425dd5d6dc46ee36cb12f06a5b7b",
+        "score1": "1-1",
+        "score2": "1-2",
+        "hda_probabilities": [
+          35,
+          28,
+          37
+        ],
+        "htft": "平/客",
+        "my_confidence": 49,
+        "data_completeness": 63,
+        "risk": "两队西区排名第4与第5，仅差1分且均保持不败；Al Qadsiah休息约21天，Shabab上周五刚踢联赛。Bonsu Baah缺阵、Nandez未随队；比赛可能被客队反击和主队体能拉开。",
+        "market": "第三方1X2最佳价：2.93/3.54/2.45（SoccerBets，页面称约5小时前检查；opening 2.43/3.91/2.19，非官方竞彩）",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": [
+          {
+            "provider": "SureBetExpert",
+            "type": "provider_model_estimate",
+            "xg_home": 1.2,
+            "xg_away": 1.3,
+            "source": "https://surebetexpert.com/football/match/shabab-al-ahli-dubai-vs-al-qadisiyah-fc-1629987"
+          }
+        ],
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261124-1500"
+      },
+      "actual_hda": "A",
+      "actual_ht": "0-2",
+      "actual_htft": "客/客",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": true,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "A",
+      "actual_ht_source": "https://www.spotip.app/match/shabab-al-ahli-vs-al-qadsiah-23xmvkh6eggjqg8",
+      "risk_review": {
+        "status": "aligned",
+        "reason": "赛前提示Al Qadsiah休息/体能优势；实际客队1-5大胜，方向与风险一致。"
+      }
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "category": "continental_club",
+      "home": "Al Nassr",
+      "away": "Al Sadd",
+      "kickoff_bjt": "2026-11-25T02:15:00+08:00",
+      "score": "2-1",
+      "source": "https://www.reuters.com/sports/soccer/spectacular-felix-strike-earns-al-nassr-asian-champions-league-win-2026-11-24/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-24-1500-run18",
+        "path": "archive/2026/11/24/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json",
+        "blob_sha": "ae194c48e798425dd5d6dc46ee36cb12f06a5b7b",
+        "score1": "2-1",
+        "score2": "3-1",
+        "hda_probabilities": [
+          64,
+          20,
+          16
+        ],
+        "htft": "主/主",
+        "my_confidence": 54,
+        "data_completeness": 66,
+        "risk": "Al Nassr主场5连胜，Mané、Coman、Ghareeb等人回归；Al Sadd的Firmino、Brozovic、Claudinho、Pedro Miguel、El Hannach等有伤停/出战疑问。Al Nassr近来防线并不稳，客队仍有进球路径。",
+        "market": "第三方1X2参考：1.29/5.35/6.84（1xBet，经BetGolazo展示；非官方竞彩）",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": [
+          {
+            "provider": "FulltimeStats",
+            "type": "provider_model_estimate",
+            "xg_home": 3.44,
+            "xg_away": 1.42,
+            "source": "https://fulltimestats.com/match/al-nassr-vs-al-sadd-2026-11-24"
+          },
+          {
+            "provider": "ZoraTips",
+            "type": "provider_model_estimate",
+            "xg_home": 2.43,
+            "xg_away": 1.48,
+            "source": "https://www.zoratips.com/match/1629988-al-nassr-vs-al-sadd"
+          }
+        ],
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261124-1500"
+      },
+      "actual_hda": "H",
+      "actual_ht": "1-1",
+      "actual_htft": "平/主",
+      "score1_hit": true,
+      "score2_hit": false,
+      "hda_hit": true,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "H",
+      "actual_ht_source": "https://playerstats.football/fixture/al-nassr/al-sadd/2026-11-24",
+      "risk_review": {
+        "status": "aligned",
+        "reason": "赛前提示Al Sadd仍有进球路径；实际客队取得1球。"
+      }
+    },
+    {
+      "competition": "UEFA Champions League",
+      "category": "continental_club",
+      "home": "Bodø/Glimt",
+      "away": "LASK",
+      "kickoff_bjt": "2026-11-25T01:45:00+08:00",
+      "score": "1-0",
+      "source": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-uefa-champions-league-all-the-league-phase-fix/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-24-1500-run18",
+        "path": "archive/2026/11/24/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json",
+        "blob_sha": "ae194c48e798425dd5d6dc46ee36cb12f06a5b7b",
+        "score1": "2-1",
+        "score2": "2-2",
+        "hda_probabilities": [
+          48,
+          23,
+          29
+        ],
+        "htft": "主/主",
+        "my_confidence": 49,
+        "data_completeness": 67,
+        "risk": "UEFA最近5场形态Bodø为L-W-D-W-W，LASK为5连胜；欧冠积分LASK 6分、Bodø 4分。不同外部模型对主客胜分歧明显，需警惕LASK高进球状态。Bodø缺Mikkelsen、Evjen等，LASK缺Bello等。",
+        "market": "第三方1X2参考：约1.54/4.90/5.11（Betwatch美国赔率换算，页面更新23 Nov 02:29 ET；非官方竞彩）",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": [
+          {
+            "provider": "xG.Football",
+            "type": "provider_model_estimate",
+            "xg_home": 2.46,
+            "xg_away": 1.34,
+            "source": "https://xg.football/matches/bodoglimt-lask-linz-2026-11-24"
+          },
+          {
+            "provider": "SureBetExpert",
+            "type": "provider_model_estimate",
+            "xg_home": 1.8,
+            "xg_away": 2.1,
+            "source": "https://surebetexpert.com/football/match/bodo-glimt-vs-lask-linz-1635641"
+          }
+        ],
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261124-1500"
+      },
+      "actual_hda": "H",
+      "actual_ht": "0-0",
+      "actual_htft": "平/主",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": true,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "H",
+      "actual_ht_source": "https://www.uefa.com/uefachampionsleague/match/2049629--bodo-glimt-vs-lask/",
+      "risk_review": {
+        "status": "not_materialized",
+        "reason": "赛前强调LASK近期强势和进球威胁；实际Bodø 1-0取胜，LASK未进球。"
+      }
+    },
+    {
+      "competition": "UEFA Champions League",
+      "category": "continental_club",
+      "home": "Galatasaray",
+      "away": "Aston Villa",
+      "kickoff_bjt": "2026-11-25T01:45:00+08:00",
+      "score": "1-0",
+      "source": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-uefa-champions-league-all-the-league-phase-fix/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-24-1500-run18",
+        "path": "archive/2026/11/24/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json",
+        "blob_sha": "ae194c48e798425dd5d6dc46ee36cb12f06a5b7b",
+        "score1": "1-1",
+        "score2": "1-2",
+        "hda_probabilities": [
+          34,
+          27,
+          39
+        ],
+        "htft": "平/客",
+        "my_confidence": 50,
+        "data_completeness": 70,
+        "risk": "Villa在欧冠积分榜高于Galatasaray，但市场与球队近况并不完全一致。Galatasaray缺Osimhen、Rafael Leão、Sallai，Jakobs待赛前检查；Villa缺Cash、Onana、Ruggeri。Rams Park草皮刚修复，可能影响传控和节奏。",
+        "market": "第三方1X2十家公司均值：2.61/3.83/2.42（NaijaScore9；非官方竞彩）",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": [
+          {
+            "provider": "xGaura",
+            "type": "provider_model_estimate",
+            "xg_home": 1.88,
+            "xg_away": 2.11,
+            "source": "https://www.xgaura.com/match/1635667-galatasaray-vs-aston-villa"
+          },
+          {
+            "provider": "xG.Football",
+            "type": "provider_model_estimate",
+            "xg_home": 1.71,
+            "xg_away": 1.8,
+            "source": "https://xg.football/matches/galatasaray-aston-villa-2026-11-24"
+          }
+        ],
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261124-1500"
+      },
+      "actual_hda": "H",
+      "actual_ht": "0-0",
+      "actual_htft": "平/主",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": false,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "A",
+      "actual_ht_source": "https://www.footballwebpages.co.uk/match/2026-2027/uefa-champions-league/galatasaray/aston-villa/592033",
+      "risk_review": {
+        "status": "partially_aligned",
+        "reason": "赛前提及伤停/场地与低节奏不确定；实际1-0，但风险没有预注册的二元命中定义。"
+      }
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "category": "continental_club",
+      "home": "Nasaf",
+      "away": "Al-Khaldiya",
+      "kickoff_bjt": "2026-11-25T21:45:00+08:00",
+      "score": "1-0",
+      "source": "https://www.the-afc.com/en/club/afc_champions_league_two/home.html",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "1-0",
+        "score2": "1-1",
+        "hda_probabilities": [
+          45,
+          25,
+          30
+        ],
+        "htft": "平/主",
+        "my_confidence": 44,
+        "data_completeness": 55,
+        "risk": "两队同积4分，直接争取小组位置；Nasaf近期主场较稳，但Khalidiya客场反击效率不低。",
+        "market": "1.88/3.47/3.90 (third-party, not official JCZQ)",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": "1.3-1.1 supplier estimates",
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261125-1500"
+      },
+      "actual_hda": "H",
+      "actual_ht": "0-0",
+      "actual_htft": "平/主",
+      "score1_hit": true,
+      "score2_hit": false,
+      "hda_hit": true,
+      "htft_hit": true,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "H",
+      "actual_ht_source": "https://www.the-afc.com/en/club/afc_champions_league_two/home.html",
+      "risk_review": {
+        "status": "aligned",
+        "reason": "赛前提示双方积分接近、可能低比分；实际Nasaf 1-0。"
+      }
+    },
+    {
+      "competition": "AGCFF Gulf Club Champions League",
+      "category": "other_competitions",
+      "home": "Kazma SC",
+      "away": "Erbil SC",
+      "kickoff_bjt": "2026-11-25T22:00:00+08:00",
+      "score": "1-1",
+      "source": "https://www.bet2sure.com/blog/kazma-erbil-1-1-review",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "1-2",
+        "score2": "1-3",
+        "hda_probabilities": [
+          21,
+          21,
+          58
+        ],
+        "htft": "平/客",
+        "my_confidence": 45,
+        "data_completeness": 58,
+        "risk": "Kazma近5场LLLWW，Erbil近5场DDWDL；双方11月4日交手Erbil曾6-0取胜，主队防线风险明显。",
+        "market": "约4.50/4.00/1.57 (third-party)",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": "1.32-2.08 / 1.3-2.1 (provider estimates)",
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261125-1500"
+      },
+      "actual_hda": "D",
+      "actual_ht": "1-0",
+      "actual_htft": "主/平",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": false,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "A",
+      "actual_ht_source": "https://www.ysscores.com/en/match/",
+      "risk_review": {
+        "status": "partially_aligned",
+        "reason": "赛前指出Kazma防线波动；实际1-1，但预测客胜未兑现。"
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Haiti U17",
+      "away": "Saudi Arabia U17",
+      "kickoff_bjt": "2026-11-25T21:30:00+08:00",
+      "score": "1-2",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "1-0",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "1-1",
+        "score2": "1-2",
+        "hda_probabilities": [
+          28,
+          30,
+          42
+        ],
+        "htft": "平/客",
+        "my_confidence": 41,
+        "data_completeness": 45,
+        "risk": "BetStudy模型偏主胜58%，SupaTips偏平局45%；Haiti首轮连续负于法国和乌拉圭，Saudi曾1-0击败法国，青年赛事方差高。",
+        "market": "无可靠同公司赔率；供应商模型分歧较大",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": "2.7-1.8 与 2.0-2.5 两家供应商估算，冲突保留",
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261125-1500"
+      },
+      "actual_hda": "A",
+      "actual_ht": "1-0",
+      "actual_htft": "主/客",
+      "score1_hit": false,
+      "score2_hit": true,
+      "hda_hit": true,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "A",
+      "actual_ht_source": "https://www.futbol24.com/match/2026/11/25/international/FIFA/U-17-World-Cup/2026/Group-D/Haiti-U17/vs/Saudi-Arabia-U17",
+      "risk_review": {
+        "status": "aligned",
+        "reason": "赛前提示青年赛高方差；实际1-2客胜。"
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Uruguay U17",
+      "away": "France U17",
+      "kickoff_bjt": "2026-11-25T21:30:00+08:00",
+      "score": "0-3",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "0-2",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "2-1",
+        "score2": "1-1",
+        "hda_probabilities": [
+          51,
+          27,
+          22
+        ],
+        "htft": "平/主",
+        "my_confidence": 47,
+        "data_completeness": 55,
+        "risk": "乌拉圭首轮4-1胜Haiti、此前3-2胜Saudi；法国1-0负Saudi。法国控球和传球质量仍高，乌拉圭反击与身体对抗占优。",
+        "market": "第三方模型概率53/22/25，非官方赔率",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": "1.9-1.2 supplier estimate",
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261125-1500"
+      },
+      "actual_hda": "A",
+      "actual_ht": "0-2",
+      "actual_htft": "客/客",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": false,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "H",
+      "actual_ht_source": "https://www.futbol24.com/match/2026/11/25/international/FIFA/U-17-World-Cup/2026/Group-D/Uruguay-U17/vs/France-U17",
+      "risk_review": {
+        "status": "aligned",
+        "reason": "赛前指出法国技术与转换威胁；实际法国0-3取胜。"
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Greece U17",
+      "away": "Qatar U17",
+      "kickoff_bjt": "2026-11-25T22:30:00+08:00",
+      "score": "4-1",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "0-1",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "2-0",
+        "score2": "1-0",
+        "hda_probabilities": [
+          55,
+          27,
+          18
+        ],
+        "htft": "主/主",
+        "my_confidence": 45,
+        "data_completeness": 45,
+        "risk": "Greece小组赛开局更好，Qatar首轮对Egypt失利；东道主环境因素保留，但不当作传统主场加成。",
+        "market": "第三方模型主胜约58%，无可靠赔率轨迹",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": "未找到可追溯数值xG",
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261125-1500"
+      },
+      "actual_hda": "H",
+      "actual_ht": "0-1",
+      "actual_htft": "客/主",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": true,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "H",
+      "actual_ht_source": "https://spbo.com.ng/football/world/world-cup---u17/greece-u17-vs-qatar-u17/1546192",
+      "risk_review": {
+        "status": "partially_aligned",
+        "reason": "赛前保留主场/环境优势，但低估进球差距；实际4-1。"
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Panama U17",
+      "away": "Egypt U17",
+      "kickoff_bjt": "2026-11-25T22:30:00+08:00",
+      "score": "1-4",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "0-1",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "0-2",
+        "score2": "1-2",
+        "hda_probabilities": [
+          21,
+          25,
+          54
+        ],
+        "htft": "平/客",
+        "my_confidence": 46,
+        "data_completeness": 55,
+        "risk": "Panama首轮两连败且防守承压；Egypt2-0胜Qatar，近10场客场8胜的供应商统计需防样本口径偏差。",
+        "market": "3.35/3.30/1.95 (single third-party bookmaker)",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": "1.4-2.4 supplier estimate",
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261125-1500"
+      },
+      "actual_hda": "A",
+      "actual_ht": "0-1",
+      "actual_htft": "客/客",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": true,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "A",
+      "actual_ht_source": "https://spbo.com.ng/football/world/world-cup---u17/panama-u17-vs-egypt-u17/1546200",
+      "risk_review": {
+        "status": "aligned",
+        "reason": "赛前指出巴拿马防守压力与埃及反击威胁；实际1-4。"
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Denmark U17",
+      "away": "Argentina U17",
+      "kickoff_bjt": "2026-11-25T23:30:00+08:00",
+      "score": "3-3",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "2-0",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "1-2",
+        "score2": "1-1",
+        "hda_probabilities": [
+          27,
+          27,
+          46
+        ],
+        "htft": "平/客",
+        "my_confidence": 43,
+        "data_completeness": 50,
+        "risk": "Denmark0-4负Mozambique、0-0平Australia；Argentina0-2负Australia后2-1胜Mozambique。市场和部分模型偏客，但平局概率保留。",
+        "market": "4.42/3.49/1.67 (one bookmaker)",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": "约2.0-1.2 supplier estimate",
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261125-1500"
+      },
+      "actual_hda": "D",
+      "actual_ht": "2-0",
+      "actual_htft": "主/平",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": false,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "A",
+      "actual_ht_source": "https://stadiro.com/matches/world/world-cup-u17/2026-11-25/denmark-u17-v-argentina-u17/",
+      "risk_review": {
+        "status": "aligned",
+        "reason": "赛前保留青年赛高方差和平局路径；实际3-3。"
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Australia U17",
+      "away": "Mozambique U17",
+      "kickoff_bjt": "2026-11-25T23:30:00+08:00",
+      "score": "2-2",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "1-2",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "1-1",
+        "score2": "1-2",
+        "hda_probabilities": [
+          34,
+          30,
+          36
+        ],
+        "htft": "平/平",
+        "my_confidence": 40,
+        "data_completeness": 43,
+        "risk": "Australia2-0胜Argentina、0-0平Denmark；Mozambique4-0胜Denmark、1-2负Argentina。两队进球尾部均不能压低。",
+        "market": "供应商概率分歧，缺可靠统一赔率",
+        "official_jczq_handicap": "无法核验",
+        "pre_match_xg": "缺少可追溯比赛级数值xG",
+        "model_version": "manual-shadow-r1",
+        "strategy_id": "SHADOW-MKT-FORM-20261125-1500"
+      },
+      "actual_hda": "D",
+      "actual_ht": "1-2",
+      "actual_htft": "客/平",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": false,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "Original snapshot explicitly states unavailable or contains only third-party 1X2; no official JCZQ handicap found."
+      },
+      "predicted_hda_top": "A",
+      "actual_ht_source": "https://stadiro.com/matches/world/world-cup-u17/2026-11-25/australia-u17-v-mozambique-u17/",
+      "risk_review": {
+        "status": "aligned",
+        "reason": "赛前提示双方进球尾部；实际2-2。"
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Ecuador U17",
+      "away": "Korea Republic U17",
+      "kickoff_bjt": "2026-11-25T20:30:00+08:00",
+      "score": "2-3",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "A",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Uganda U17",
+      "away": "New Caledonia U17",
+      "kickoff_bjt": "2026-11-25T20:30:00+08:00",
+      "score": "6-0",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "category": "continental_club",
+      "home": "Melbourne Victory",
+      "away": "Viettel",
+      "kickoff_bjt": "2026-11-25T15:45:00+08:00",
+      "score": "0-0",
+      "source": "https://www.the-afc.com/en/club/afc_champions_league_two/home.html",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "D",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "category": "continental_club",
+      "home": "Persib Bandung",
+      "away": "FC Seoul",
+      "kickoff_bjt": "2026-11-25T20:15:00+08:00",
+      "score": "3-1",
+      "source": "https://www.the-afc.com/en/club/afc_champions_league_two.html/news/group-e-persib-bandung-idn-3-1-fc-seoul-kor",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "Mito HollyHock",
+      "away": "Tokyo Verdy",
+      "kickoff_bjt": "2026-11-25T18:04:00+08:00",
+      "score": "1-0",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "JEF United Chiba",
+      "away": "Nagoya Grampus",
+      "kickoff_bjt": "2026-11-25T18:00:00+08:00",
+      "score": "1-2",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "A",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "FC Tokyo",
+      "away": "Sanfrecce Hiroshima",
+      "kickoff_bjt": "2026-11-25T18:04:00+08:00",
+      "score": "2-2",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "D",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "Fagiano Okayama",
+      "away": "Shimizu S-Pulse",
+      "kickoff_bjt": "2026-11-25T18:03:00+08:00",
+      "score": "2-0",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "Avispa Fukuoka",
+      "away": "Yokohama F. Marinos",
+      "kickoff_bjt": "2026-11-25T18:03:00+08:00",
+      "score": "1-2",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "A",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "V-Varen Nagasaki",
+      "away": "Kawasaki Frontale",
+      "kickoff_bjt": "2026-11-25T18:03:00+08:00",
+      "score": "1-2",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "A",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "Urawa Reds",
+      "away": "Cerezo Osaka",
+      "kickoff_bjt": "2026-11-25T18:33:00+08:00",
+      "score": "2-2",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "D",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "AFC Champions League Elite East",
+      "category": "continental_club",
+      "home": "Kashima Antlers",
+      "away": "Jeonbuk Hyundai Motors",
+      "kickoff_bjt": "2026-11-25T18:00:00+08:00",
+      "score": "3-0",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "AFC Champions League Elite East",
+      "category": "continental_club",
+      "home": "Gamba Osaka",
+      "away": "Port FC",
+      "kickoff_bjt": "2026-11-25T18:00:00+08:00",
+      "score": "2-0",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    }
+  ],
+  "scoring": {
+    "predictions_total": 13,
+    "score1": {
+      "hits": 2,
+      "denominator": 13,
+      "rate": 0.15384615384615385
+    },
+    "score2": {
+      "hits": 1,
+      "denominator": 13,
+      "rate": 0.07692307692307693
+    },
+    "hda": {
+      "hits": 7,
+      "denominator": 13,
+      "rate": 0.5384615384615384,
+      "actual_draws": 3,
+      "predicted_draw_as_top_probability": 0
+    },
+    "htft": {
+      "hits": 1,
+      "denominator": 13,
+      "rate": 0.07692307692307693
+    },
+    "brier_score_multiclass": 0.5861538461538461,
+    "log_loss": 0.9869302958655463,
+    "actual_matches_total_goals_ge_4": 5,
+    "actual_matches_ge_4_rate": 0.38461538461538464,
+    "candidate_score_slots_total": 26,
+    "candidate_score_slots_total_goals_ge_4": 3,
+    "candidate_score_slots_ge_4_rate": 0.11538461538461539,
+    "official_jczq": {
+      "verified": 0,
+      "denominator": 13,
+      "scored": 0
+    },
+    "risk_review": {
+      "status": "qualitative_only",
+      "counts": {
+        "not_materialized": 2,
+        "aligned": 8,
+        "partially_aligned": 3
+      },
+      "hit_rate": null,
+      "reason": "风险提示未设预注册二元判定标准，因此保留逐场定性评价，不伪造命中率。"
+    }
+  },
+  "diagnosis": [
+    "H/D/A方向7/13；三场实际平局均未被列为最高概率方向，平局模块仍需修复。",
+    "第一比分2/13、第二比分1/13；13场中5场实际总进球达到4球以上，但26个候选比分只有3个达到4球以上。",
+    "半全场1/13，HT/FT路径仍明显过度集中在平/主与平/客。",
+    "官方竞彩让球盘口13/13无法核验，未使用第三方亚洲盘。"
+  ]
+}
