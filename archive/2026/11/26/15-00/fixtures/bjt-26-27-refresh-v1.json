@@ -134,12 +134,6 @@
       "status": "已预测"
     },
     {
-      "time": "01:00",
-      "match": "Al-Kholood–Al-Hilal",
-      "competition": "沙特联",
-      "status": "已预测"
-    },
-    {
       "time": "01:45",
       "match": "8场欧联杯及9场欧协联（共17场）",
       "competition": "洲际俱乐部",
@@ -253,6 +247,11 @@
       "match": "Al-Faisaly–Al-Diriyah",
       "status": "conflict",
       "reason": "与同日Al-Faisaly–Al-Khaleej及Al-Diriyah–Al-Fayha重复，未确认，不预测"
+    },
+    {
+      "match": "Al-Kholood–Al-Hilal",
+      "status": "postponed",
+      "reason": "ScoreMondo标记延期；与原赛程页17:00 UTC存在冲突，取消本轮预测"
     }
   ],
   "core_leagues": {
@@ -271,238 +270,264 @@
       "kickoff_bjt": "22:00",
       "date": "2026-11-26",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-01"
     },
     {
       "match": "Ural–Arsenal",
       "kickoff_bjt": "22:00",
       "date": "2026-11-26",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-02"
     },
     {
       "match": "Al-Fateh–Al-Riyadh",
       "kickoff_bjt": "22:25",
       "date": "2026-11-26",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-03"
     },
     {
       "match": "Jamaica U17–Côte d'Ivoire U17",
       "kickoff_bjt": "22:00",
       "date": "2026-11-26",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-04"
     },
     {
       "match": "Uzbekistan U17–Italy U17",
       "kickoff_bjt": "22:00",
       "date": "2026-11-26",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-05"
     },
     {
       "match": "Al-Baq's–Al Jazeera",
       "kickoff_bjt": "23:00",
       "date": "2026-11-26",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-06"
     },
     {
       "match": "China U17–Fiji U17",
       "kickoff_bjt": "23:00",
       "date": "2026-11-26",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-07"
     },
     {
       "match": "Morocco U17–Spain U17",
       "kickoff_bjt": "23:00",
       "date": "2026-11-26",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-08"
     },
     {
       "match": "Kairat–Mjällby",
       "kickoff_bjt": "23:30",
       "date": "2026-11-26",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-09"
     },
     {
       "match": "Volga Olimpiets–Tekstilshchik",
       "kickoff_bjt": "00:00",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-10"
     },
     {
       "match": "Tajikistan U17–Senegal U17",
       "kickoff_bjt": "00:00",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-11"
     },
     {
       "match": "Croatia U17–Cuba U17",
       "kickoff_bjt": "00:00",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-12"
     },
     {
       "match": "Dinamo Moscow–Fakel",
       "kickoff_bjt": "00:30",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-13"
     },
     {
       "match": "Al-Diriyah–Al-Fayha",
       "kickoff_bjt": "01:00",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-14"
     },
     {
       "match": "Al-Faisaly–Al-Khaleej",
       "kickoff_bjt": "01:00",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
-    },
-    {
-      "match": "Al-Kholood–Al-Hilal",
-      "kickoff_bjt": "01:00",
-      "date": "2026-11-27",
-      "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-15"
     },
     {
       "match": "Viktoria Plzen–Benfica",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-16"
     },
     {
       "match": "Union SG–Lech Poznan",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-17"
     },
     {
       "match": "Salzburg–Ararat-Armenia",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-18"
     },
     {
       "match": "Besiktas–Hapoel Beer Sheva",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-19"
     },
     {
       "match": "Celta–Bournemouth",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-20"
     },
     {
       "match": "Dinamo Zagreb–Leverkusen",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-21"
     },
     {
       "match": "Marseille–Levski Sofia",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-22"
     },
     {
       "match": "Olympiakos–Milan",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-23"
     },
     {
       "match": "Brighton–Craiova",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-24"
     },
     {
       "match": "Egnatia–Lincoln Red Imps",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-25"
     },
     {
       "match": "Jablonec–Lugano",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-26"
     },
     {
       "match": "Iberia 1999–Getafe",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-27"
     },
     {
       "match": "Brann–AGF",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-28"
     },
     {
       "match": "Pafos–Midtjylland",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-29"
     },
     {
       "match": "Kauno Žalgiris–Riga",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-30"
     },
     {
       "match": "Ajax–Thun",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-31"
     },
     {
       "match": "Hearts–Monaco",
       "kickoff_bjt": "01:45",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-32"
     },
     {
       "match": "Aalborg–Esbjerg",
       "kickoff_bjt": "02:00",
       "date": "2026-11-27",
       "window": "6-12h",
-      "prediction_status": "generated"
+      "prediction_status": "generated",
+      "strategy_id": "S26-1500-33"
     }
   ]
 }
