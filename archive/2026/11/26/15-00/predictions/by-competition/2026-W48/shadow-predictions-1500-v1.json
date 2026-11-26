@@ -607,10 +607,11 @@
       "third_party_asian_handicap": {
         "used": false
       },
-      "risk": "双方近况都偏弱；主队主场优势有限，赛前伤停与首发未确认",
+      "risk": "双方近况都偏弱；主队主场优势有限，赛前伤停与首发未确认；同日另有Al-Qadisiya–Al-Fateh冲突条目，保留本场因两处赛程页与赛前页一致，仍待官方最终确认",
       "basis": "supplier_xg_poisson_hda",
       "xg_record_ref": "xg-alfateh",
-      "model_version": "SHADOW-POISSON-HDA-R3"
+      "model_version": "SHADOW-POISSON-HDA-R3",
+      "schedule_status": "provisional_cross_source_confirmed"
     },
     {
       "strategy_id": "S26-1500-20",
@@ -639,10 +640,11 @@
       "third_party_asian_handicap": {
         "used": false
       },
-      "risk": "两家模型对方向有冲突；主队近况下滑、费哈客场进攻偏弱，平局风险较高",
+      "risk": "两家模型对方向有冲突；主队近况下滑、费哈客场进攻偏弱，平局风险较高；Ledger的next-match字段指向同日对费萨里，存在赛程字段冲突，待官方确认",
       "basis": "form_derived_shadow_lambda",
       "xg_record_ref": null,
-      "model_version": "SHADOW-POISSON-HDA-R3"
+      "model_version": "SHADOW-POISSON-HDA-R3",
+      "schedule_status": "provisional_cross_source_confirmed_with_next-match_conflict"
     },
     {
       "strategy_id": "S26-1500-21",
@@ -671,10 +673,11 @@
       "third_party_asian_handicap": {
         "used": false
       },
-      "risk": "客队近5场表现更好；部分供应商xG页面日期/开球时间字段冲突，因此未采用其xG",
+      "risk": "客队近5场表现更好；部分供应商xG页面日期/开球时间字段冲突，因此未采用其xG；同日另有费萨里–迪里耶重复条目，待官方确认",
       "basis": "form_derived_shadow_lambda",
       "xg_record_ref": null,
-      "model_version": "SHADOW-POISSON-HDA-R3"
+      "model_version": "SHADOW-POISSON-HDA-R3",
+      "schedule_status": "provisional_cross_source_confirmed_with_duplicate-fixture-conflict"
     },
     {
       "strategy_id": "S26-1500-22",
