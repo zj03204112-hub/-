@@ -1,0 +1,906 @@
+{
+  "schema_version": "football-review-v1",
+  "run_id": "daily-2026-11-26-1000-run21",
+  "captured_at_bjt": "2026-11-26T10:04:52+08:00",
+  "review_date_bjt": "2026-11-25",
+  "iso_week": "2026-W48",
+  "confirmed_finished_matches": 26,
+  "prediction_snapshots_found": 13,
+  "matches_without_prediction_snapshot": 13,
+  "matches_reviewed": [
+    {
+      "competition": "AFC Champions League Two",
+      "category": "continental_club",
+      "home": "Al Seeb",
+      "away": "Al Shorta",
+      "kickoff_bjt": "2026-11-25T00:00:00+08:00",
+      "score": "2-0",
+      "source": "https://www.the-afc.com/en/club/afc_champions_league_two/home.html",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-24-1500-run18",
+        "path": "archive/2026/11/24/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json",
+        "blob_sha": "ae194c48e798425dd5d6dc46ee36cb12f06a5b7b",
+        "score1": "1-1",
+        "score2": "0-1",
+        "hda": null,
+        "htft": null
+      },
+      "actual_hda": "H",
+      "actual_ht": null,
+      "actual_htft": null,
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": null,
+      "htft_hit": null,
+      "missing_original_fields": [
+        "90-minute H/D/A probabilities",
+        "half/full-time prediction"
+      ],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "category": "continental_club",
+      "home": "Shabab Al Ahli",
+      "away": "Al Qadsiah",
+      "kickoff_bjt": "2026-11-25T00:00:00+08:00",
+      "score": "1-5",
+      "source": "https://www.reuters.com/sports/soccer/spectacular-felix-strike-earns-al-nassr-asian-champions-league-win-2026-11-24/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-24-1500-run18",
+        "path": "archive/2026/11/24/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json",
+        "blob_sha": "ae194c48e798425dd5d6dc46ee36cb12f06a5b7b",
+        "score1": "1-1",
+        "score2": "1-2",
+        "hda": null,
+        "htft": null
+      },
+      "actual_hda": "A",
+      "actual_ht": null,
+      "actual_htft": null,
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": null,
+      "htft_hit": null,
+      "missing_original_fields": [
+        "90-minute H/D/A probabilities",
+        "half/full-time prediction"
+      ],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "AFC Champions League Elite",
+      "category": "continental_club",
+      "home": "Al Nassr",
+      "away": "Al Sadd",
+      "kickoff_bjt": "2026-11-25T02:15:00+08:00",
+      "score": "2-1",
+      "source": "https://www.reuters.com/sports/soccer/spectacular-felix-strike-earns-al-nassr-asian-champions-league-win-2026-11-24/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-24-1500-run18",
+        "path": "archive/2026/11/24/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json",
+        "blob_sha": "ae194c48e798425dd5d6dc46ee36cb12f06a5b7b",
+        "score1": "2-1",
+        "score2": "3-1",
+        "hda": null,
+        "htft": null
+      },
+      "actual_hda": "H",
+      "actual_ht": null,
+      "actual_htft": null,
+      "score1_hit": true,
+      "score2_hit": false,
+      "hda_hit": null,
+      "htft_hit": null,
+      "missing_original_fields": [
+        "90-minute H/D/A probabilities",
+        "half/full-time prediction"
+      ],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "UEFA Champions League",
+      "category": "continental_club",
+      "home": "Bodø/Glimt",
+      "away": "LASK",
+      "kickoff_bjt": "2026-11-25T01:45:00+08:00",
+      "score": "1-0",
+      "source": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-uefa-champions-league-all-the-league-phase-fix/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-24-1500-run18",
+        "path": "archive/2026/11/24/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json",
+        "blob_sha": "ae194c48e798425dd5d6dc46ee36cb12f06a5b7b",
+        "score1": "2-1",
+        "score2": "2-2",
+        "hda": null,
+        "htft": null
+      },
+      "actual_hda": "H",
+      "actual_ht": null,
+      "actual_htft": null,
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": null,
+      "htft_hit": null,
+      "missing_original_fields": [
+        "90-minute H/D/A probabilities",
+        "half/full-time prediction"
+      ],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "UEFA Champions League",
+      "category": "continental_club",
+      "home": "Galatasaray",
+      "away": "Aston Villa",
+      "kickoff_bjt": "2026-11-25T01:45:00+08:00",
+      "score": "1-0",
+      "source": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-uefa-champions-league-all-the-league-phase-fix/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-24-1500-run18",
+        "path": "archive/2026/11/24/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500.json",
+        "blob_sha": "ae194c48e798425dd5d6dc46ee36cb12f06a5b7b",
+        "score1": "1-1",
+        "score2": "1-2",
+        "hda": null,
+        "htft": null
+      },
+      "actual_hda": "H",
+      "actual_ht": null,
+      "actual_htft": null,
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": null,
+      "htft_hit": null,
+      "missing_original_fields": [
+        "90-minute H/D/A probabilities",
+        "half/full-time prediction"
+      ],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "category": "continental_club",
+      "home": "Nasaf",
+      "away": "Al-Khaldiya",
+      "kickoff_bjt": "2026-11-25T21:45:00+08:00",
+      "score": "1-0",
+      "source": "https://www.the-afc.com/en/club/afc_champions_league_two/home.html",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "1-0",
+        "score2": "1-1",
+        "hda": [
+          45,
+          25,
+          30
+        ],
+        "htft": "平/主"
+      },
+      "actual_hda": "H",
+      "actual_ht": "0-0",
+      "actual_htft": "平/主",
+      "score1_hit": true,
+      "score2_hit": false,
+      "hda_hit": true,
+      "htft_hit": true,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "AGCFF Gulf Club Champions League",
+      "category": "other_competitions",
+      "home": "Kazma SC",
+      "away": "Erbil SC",
+      "kickoff_bjt": "2026-11-25T22:00:00+08:00",
+      "score": "1-1",
+      "source": "https://www.bet2sure.com/blog/kazma-erbil-1-1-review",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "1-2",
+        "score2": "1-3",
+        "hda": [
+          21,
+          21,
+          58
+        ],
+        "htft": "平/客"
+      },
+      "actual_hda": "D",
+      "actual_ht": "1-0",
+      "actual_htft": "主/平",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": false,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Haiti U17",
+      "away": "Saudi Arabia U17",
+      "kickoff_bjt": "2026-11-25T21:30:00+08:00",
+      "score": "1-2",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "1-0",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "1-1",
+        "score2": "1-2",
+        "hda": [
+          28,
+          30,
+          42
+        ],
+        "htft": "平/客"
+      },
+      "actual_hda": "A",
+      "actual_ht": "1-0",
+      "actual_htft": "主/客",
+      "score1_hit": false,
+      "score2_hit": true,
+      "hda_hit": true,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Uruguay U17",
+      "away": "France U17",
+      "kickoff_bjt": "2026-11-25T21:30:00+08:00",
+      "score": "0-3",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "0-2",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "2-1",
+        "score2": "1-1",
+        "hda": [
+          51,
+          27,
+          22
+        ],
+        "htft": "平/主"
+      },
+      "actual_hda": "A",
+      "actual_ht": "0-2",
+      "actual_htft": "客/客",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": false,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Greece U17",
+      "away": "Qatar U17",
+      "kickoff_bjt": "2026-11-25T22:30:00+08:00",
+      "score": "4-1",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "0-1",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "2-0",
+        "score2": "1-0",
+        "hda": [
+          55,
+          27,
+          18
+        ],
+        "htft": "主/主"
+      },
+      "actual_hda": "H",
+      "actual_ht": "0-1",
+      "actual_htft": "客/主",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": true,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Panama U17",
+      "away": "Egypt U17",
+      "kickoff_bjt": "2026-11-25T22:30:00+08:00",
+      "score": "1-4",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "0-1",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "0-2",
+        "score2": "1-2",
+        "hda": [
+          21,
+          25,
+          54
+        ],
+        "htft": "平/客"
+      },
+      "actual_hda": "A",
+      "actual_ht": "0-1",
+      "actual_htft": "客/客",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": true,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Denmark U17",
+      "away": "Argentina U17",
+      "kickoff_bjt": "2026-11-25T23:30:00+08:00",
+      "score": "3-3",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "2-0",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "1-2",
+        "score2": "1-1",
+        "hda": [
+          27,
+          27,
+          46
+        ],
+        "htft": "平/客"
+      },
+      "actual_hda": "D",
+      "actual_ht": "2-0",
+      "actual_htft": "主/平",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": false,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Australia U17",
+      "away": "Mozambique U17",
+      "kickoff_bjt": "2026-11-25T23:30:00+08:00",
+      "score": "2-2",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": "1-2",
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": {
+        "branch": "automation/daily-football-2026-11-25-1500-run20",
+        "path": "archive/2026/11/25/15-00/predictions/by-competition/2026-W48/shadow-predictions-1500-v1.json",
+        "blob_sha": "5a1460b1ec12e8fbd151cbe08b049f5c21411eea",
+        "score1": "1-1",
+        "score2": "1-2",
+        "hda": [
+          34,
+          30,
+          36
+        ],
+        "htft": "平/平"
+      },
+      "actual_hda": "D",
+      "actual_ht": "1-2",
+      "actual_htft": "客/平",
+      "score1_hit": false,
+      "score2_hit": false,
+      "hda_hit": false,
+      "htft_hit": false,
+      "missing_original_fields": [],
+      "review_status": "scored_only_on_fields_present_in_immutable_raw_snapshot",
+      "jczq": {
+        "status": "unverifiable",
+        "handicap": null,
+        "result": null,
+        "reason": "No original verified official China Sports Lottery handicap snapshot; no third-party Asian handicap substitution."
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Ecuador U17",
+      "away": "Korea Republic U17",
+      "kickoff_bjt": "2026-11-25T20:30:00+08:00",
+      "score": "2-3",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "A",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "FIFA U17 World Cup",
+      "category": "national_teams_other",
+      "home": "Uganda U17",
+      "away": "New Caledonia U17",
+      "kickoff_bjt": "2026-11-25T20:30:00+08:00",
+      "score": "6-0",
+      "source": "https://www.fifa.com/en/articles/matchday-7-round-up-doha",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "category": "continental_club",
+      "home": "Melbourne Victory",
+      "away": "Viettel",
+      "kickoff_bjt": "2026-11-25T15:45:00+08:00",
+      "score": "0-0",
+      "source": "https://www.the-afc.com/en/club/afc_champions_league_two/home.html",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "D",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "AFC Champions League Two",
+      "category": "continental_club",
+      "home": "Persib Bandung",
+      "away": "FC Seoul",
+      "kickoff_bjt": "2026-11-25T20:15:00+08:00",
+      "score": "3-1",
+      "source": "https://www.the-afc.com/en/club/afc_champions_league_two.html/news/group-e-persib-bandung-idn-3-1-fc-seoul-kor",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "Mito HollyHock",
+      "away": "Tokyo Verdy",
+      "kickoff_bjt": "2026-11-25T18:04:00+08:00",
+      "score": "1-0",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "JEF United Chiba",
+      "away": "Nagoya Grampus",
+      "kickoff_bjt": "2026-11-25T18:00:00+08:00",
+      "score": "1-2",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "A",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "FC Tokyo",
+      "away": "Sanfrecce Hiroshima",
+      "kickoff_bjt": "2026-11-25T18:04:00+08:00",
+      "score": "2-2",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "D",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "Fagiano Okayama",
+      "away": "Shimizu S-Pulse",
+      "kickoff_bjt": "2026-11-25T18:03:00+08:00",
+      "score": "2-0",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "Avispa Fukuoka",
+      "away": "Yokohama F. Marinos",
+      "kickoff_bjt": "2026-11-25T18:03:00+08:00",
+      "score": "1-2",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "A",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "V-Varen Nagasaki",
+      "away": "Kawasaki Frontale",
+      "kickoff_bjt": "2026-11-25T18:03:00+08:00",
+      "score": "1-2",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "A",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "J1 League",
+      "category": "domestic_league",
+      "home": "Urawa Reds",
+      "away": "Cerezo Osaka",
+      "kickoff_bjt": "2026-11-25T18:33:00+08:00",
+      "score": "2-2",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "D",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "AFC Champions League Elite East",
+      "category": "continental_club",
+      "home": "Kashima Antlers",
+      "away": "Jeonbuk Hyundai Motors",
+      "kickoff_bjt": "2026-11-25T18:00:00+08:00",
+      "score": "3-0",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    },
+    {
+      "competition": "AFC Champions League Elite East",
+      "category": "continental_club",
+      "home": "Gamba Osaka",
+      "away": "Port FC",
+      "kickoff_bjt": "2026-11-25T18:00:00+08:00",
+      "score": "2-0",
+      "source": "https://www.jleague.jp/en/j1/match/",
+      "ht": null,
+      "match_id": null,
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "prediction_snapshot": null,
+      "review_status": "confirmed_result_no_prematch_snapshot",
+      "actual_hda": "H",
+      "jczq": {
+        "status": "not_scored_no_prediction_snapshot",
+        "handicap": null,
+        "result": null
+      }
+    }
+  ],
+  "scoring": {
+    "predictions_total": 13,
+    "score1": {
+      "hits": 2,
+      "denominator": 13,
+      "rate": 0.15384615384615385,
+      "hit_matches": [
+        "Al Nassr vs Al Sadd",
+        "Nasaf vs Al-Khaldiya"
+      ]
+    },
+    "score2": {
+      "hits": 1,
+      "denominator": 13,
+      "rate": 0.07692307692307693,
+      "hit_matches": [
+        "Haiti U17 vs Saudi Arabia U17"
+      ]
+    },
+    "hda": {
+      "hits": 4,
+      "denominator": 8,
+      "rate": 0.5,
+      "not_scored_due_to_missing_raw_fields": 5,
+      "hit_matches": [
+        "Nasaf vs Al-Khaldiya",
+        "Haiti U17 vs Saudi Arabia U17",
+        "Greece U17 vs Qatar U17",
+        "Panama U17 vs Egypt U17"
+      ]
+    },
+    "htft": {
+      "hits": 1,
+      "denominator": 8,
+      "rate": 0.125,
+      "not_scored_due_to_missing_raw_fields": 5,
+      "hit_matches": [
+        "Nasaf vs Al-Khaldiya"
+      ]
+    },
+    "brier_score_multiclass_on_8_stored_hda_rows": 0.63555,
+    "log_loss_on_8_stored_hda_rows": 1.0585141261632594,
+    "actual_draws_in_8_hda_rows": 3,
+    "predicted_draw_as_top_probability": 0,
+    "actual_matches_total_goals_ge_4": 5,
+    "actual_matches_ge_4_rate": 0.38461538461538464,
+    "candidate_score_slots_total": 26,
+    "candidate_score_slots_total_goals_ge_4": 3,
+    "candidate_score_slots_ge_4_rate": 0.11538461538461539,
+    "official_jczq": {
+      "verified": 0,
+      "denominator": 13,
+      "scored": 0,
+      "reason": "No original official JCZQ handicap snapshot was found for any of the 13 predicted matches."
+    },
+    "risk_warning_hit_rate": {
+      "status": "not_scored",
+      "reason": "The original risk notes do not define a binary, pre-registered hit criterion; only qualitative review is retained."
+    }
+  },
+  "diagnosis": [
+    "Five predictions from the 2026-11-24 15:00 raw JSON contain score1/score2/risk only; H/D/A probabilities and HT/FT predictions are absent. Do not reconstruct them from prior narrative output.",
+    "Among eight predictions with stored H/D/A probabilities, none ranked draw first despite three actual draws.",
+    "High-goal tail remains underrepresented: five of 13 actual matches had at least four goals, but only three of 26 candidate score slots reached four total goals.",
+    "Official JCZQ handicap results remain unscorable; do not use Asian handicap lines or score2."
+  ],
+  "source_policy": "Only confirmed full-time results included. J.League/AFC/UEFA/FIFA official pages used where available; Kazma-Erbil uses a secondary result report. No score or handicap is inferred from odds."
+}
