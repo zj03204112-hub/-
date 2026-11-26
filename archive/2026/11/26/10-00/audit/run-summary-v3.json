@@ -1,0 +1,64 @@
+{
+  "schema_version": "daily-football-run-summary-v3",
+  "run_id": "daily-2026-11-26-1000-run21-final-correction",
+  "captured_at_bjt": "2026-11-26T10:04:52+08:00",
+  "iso_week": "2026-W48",
+  "review": {
+    "review_date_bjt": "2026-11-25",
+    "confirmed_finished_matches": 27,
+    "prediction_snapshots_found": 14,
+    "no_prediction_snapshot": 13,
+    "score1_hits": "2/14",
+    "score2_hits": "1/14",
+    "hda_hits": "7/14",
+    "htft_hits": "1/14",
+    "actual_draws": 3,
+    "draw_top_probability": 0,
+    "brier": 0.6253285714285715,
+    "log_loss": 1.0430036205845696,
+    "official_jczq_verified": "0/14"
+  },
+  "fixtures": {
+    "current_bjt_completed": 15,
+    "current_bjt_upcoming": 15,
+    "next_bjt_upcoming": 48,
+    "upcoming_total": 63,
+    "current_and_next_records": 78,
+    "boundary_spillovers": 9
+  },
+  "xg": {
+    "new_supplier_postmatch_estimates": 42,
+    "matches_with_xg": 21,
+    "matches_still_missing": 6,
+    "team_week_rows_added": 84,
+    "additional_missing_match": "Shab Hadramaut-Al-Shabab",
+    "measured_xg": 0,
+    "own_model_estimate": 0,
+    "cumulative_unique_matches": 68,
+    "cumulative_matches_with_supplier_xg": 60,
+    "cumulative_missing_matches": 8,
+    "cumulative_supplier_estimate_records": 116,
+    "cumulative_active_team_week_rows": 248,
+    "sqlite_connected": false
+  },
+  "correction_notes": [
+    "Review v1/v2 corrected to v3 after discovering the run20 snapshot for Shab Hadramaut used 00:30 BJT while the verified UTC kickoff converts to 23:30 BJT on 25-Nov; this match belongs to the previous-day review and remained within the 6-12h prediction window.",
+    "Qatar SC 2-0 Al Nasr kicked off at 01:00 BJT 26-Nov and is added to today's completed list for review on the next run.",
+    "Al-Sha'ab post-match xG remains missing; available 1.1-2.3 values are pre-match supplier predictions and were not reclassified."
+  ],
+  "missing_fields": [
+    "SQLite database not connected/opened; no database write claimed.",
+    "Internal team_id, competition_id and match_id remain unresolved.",
+    "Official JCZQ handicap unavailable for all 14 predictions; no Asian handicap substitution.",
+    "Post-match xG remains missing for Nasaf-Al Khaldiya, Kazma-Erbil, Melbourne Victory-Viettel, Persib-FC Seoul, Fagiano Okayama-Shimizu and Shab Hadramaut-Al-Shabab.",
+    "Lineups, official JCZQ prices, same-bookmaker opening-to-live odds, and full referee/tactical coverage remain incomplete for the 15:00 refresh."
+  ],
+  "protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "historical_xg_week_snapshots_overwritten": false,
+    "postmatch_xg_leakage_into_prematch_inputs": 0
+  },
+  "archive_branch": "automation/daily-football-2026-11-26-1000-run21"
+}
