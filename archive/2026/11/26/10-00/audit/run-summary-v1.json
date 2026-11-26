@@ -1,0 +1,54 @@
+{
+  "schema_version": "daily-football-run-summary-v1",
+  "run_id": "daily-2026-11-26-1000-run21",
+  "captured_at_bjt": "2026-11-26T10:04:52+08:00",
+  "iso_week": "2026-W48",
+  "review": {
+    "review_date_bjt": "2026-11-25",
+    "confirmed_finished_matches": 26,
+    "prediction_snapshots_found": 13,
+    "no_prediction_snapshot": 13,
+    "score1_hits": "2/13",
+    "score2_hits": "1/13",
+    "hda_hits": "4/8 raw stored probability rows; 5 older raw rows lack HDA",
+    "htft_hits": "1/8 raw stored HTFT rows; 5 older raw rows lack HTFT",
+    "official_jczq_verified": "0/13",
+    "brier": 0.63555,
+    "log_loss": 1.0585141261632594
+  },
+  "fixtures": {
+    "current_bjt_completed": 14,
+    "current_bjt_upcoming": 15,
+    "next_bjt_upcoming": 48,
+    "upcoming_total": 63,
+    "current_and_next_records": 77,
+    "boundary_spillovers": 8
+  },
+  "xg": {
+    "appended_matches": 26,
+    "appended_team_week_rows": 52,
+    "supplier_postmatch_xg_values": 0,
+    "measured_xg": 0,
+    "own_model_estimate": 0,
+    "missing_match_xg": 26,
+    "sqlite_connected": false,
+    "internal_ids_resolved": 0
+  },
+  "missing_fields": [
+    "SQLite database is present in repository but not connected/opened; no database write claimed.",
+    "Internal team_id, competition_id and match_id mappings remain unresolved; nulls retained.",
+    "Official JCZQ handicap source/snapshot missing for all 13 predicted matches; no Asian handicap substitution.",
+    "Free traceable post-match match-level xG/xGA not verified for 26 previous-day matches; nulls and reasons saved.",
+    "Five 2026-11-24 15:00 raw prediction rows lack HDA probabilities and HTFT predictions; not reconstructed from narrative.",
+    "Current/next schedule lineups, official JCZQ prices, same-bookmaker opening-to-live odds, referee, weather, and full tactical context remain incomplete for the 15:00 refresh."
+  ],
+  "protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "historical_xg_week_snapshots_overwritten": false,
+    "postmatch_xg_leakage_into_prematch_inputs": 0
+  },
+  "archive_branch": "automation/daily-football-2026-11-26-1000-run21",
+  "archive_policy": "Only report archived after commit success and read-back JSON verification."
+}
