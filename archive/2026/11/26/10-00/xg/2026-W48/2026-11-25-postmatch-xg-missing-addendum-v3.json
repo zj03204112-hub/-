@@ -1,0 +1,129 @@
+{
+  "schema_version": "team-week-xg-missing-match-addendum-v3",
+  "run_id": "daily-2026-11-26-1000-run21-xg-v3",
+  "captured_at_bjt": "2026-11-26T10:04:52+08:00",
+  "iso_week": "2026-W48",
+  "append_only": true,
+  "supersedes": "archive/2026/11/26/10-00/xg/2026-W48/2026-11-25-postmatch-xg-provider-addendum-v2.json",
+  "append_delta": {
+    "new_missing_match_records": 1,
+    "new_missing_team_week_rows": 2,
+    "measured_xg_records": 0,
+    "vendor_postmatch_xg_records": 0
+  },
+  "new_missing_matches": [
+    {
+      "match_key": "Shab_Hadramaut__Al_Shabab",
+      "match_date_bjt": "2026-11-25",
+      "iso_week": "2026-W48",
+      "competition": "AGCFF Gulf Club Champions League",
+      "season": "2026",
+      "home": "Shab Hadramaut",
+      "away": "Al-Shabab",
+      "home_team_id": null,
+      "away_team_id": null,
+      "competition_id": null,
+      "match_id": null,
+      "supplier": null,
+      "supplier_model_type": null,
+      "data_type": "missing",
+      "xg_home": null,
+      "xg_away": null,
+      "xgd_home": null,
+      "xgd_away": null,
+      "source": null,
+      "source_captured_at_bjt": "2026-11-26T10:04:52+08:00",
+      "retrieved_at_bjt": "2026-11-26T10:04:52+08:00",
+      "missing_reason": "检索到的ScoreMondo/ZoraTips 1.1-2.3属于赛前模型预期进球，不是赛后比赛级xG；未找到免费可追溯的赛后xG，因此保留为空。"
+    }
+  ],
+  "team_week_snapshots": [
+    {
+      "team_name": "Shab Hadramaut",
+      "team_id": null,
+      "competition": "AGCFF Gulf Club Champions League",
+      "competition_id": null,
+      "season": "2026",
+      "iso_week": "2026-W48",
+      "supplier": null,
+      "supplier_model_type": null,
+      "data_type": "missing",
+      "weekly_xg": null,
+      "weekly_xga": null,
+      "weekly_xgd": null,
+      "matches": 1,
+      "per90_xg": null,
+      "per90_xga": null,
+      "per90_xgd": null,
+      "match_details": [
+        {
+          "match_key": "Shab_Hadramaut__Al_Shabab",
+          "match_id": null,
+          "match_date_bjt": "2026-11-25",
+          "venue": "home",
+          "opponent": "Al-Shabab",
+          "xg": null,
+          "xga": null,
+          "xgd": null,
+          "source": null
+        }
+      ],
+      "missing_reason": "该场只找到赛前模型预期进球，不是赛后xG；不回填赛后xG。"
+    },
+    {
+      "team_name": "Al-Shabab",
+      "team_id": null,
+      "competition": "AGCFF Gulf Club Champions League",
+      "competition_id": null,
+      "season": "2026",
+      "iso_week": "2026-W48",
+      "supplier": null,
+      "supplier_model_type": null,
+      "data_type": "missing",
+      "weekly_xg": null,
+      "weekly_xga": null,
+      "weekly_xgd": null,
+      "matches": 1,
+      "per90_xg": null,
+      "per90_xga": null,
+      "per90_xgd": null,
+      "match_details": [
+        {
+          "match_key": "Shab_Hadramaut__Al_Shabab",
+          "match_id": null,
+          "match_date_bjt": "2026-11-25",
+          "venue": "away",
+          "opponent": "Shab Hadramaut",
+          "xg": null,
+          "xga": null,
+          "xgd": null,
+          "source": null
+        }
+      ],
+      "missing_reason": "该场只找到赛前模型预期进球，不是赛后xG；不回填赛后xG。"
+    }
+  ],
+  "cumulative_after_append": {
+    "unique_matches": 68,
+    "matches_with_supplier_postmatch_xg": 60,
+    "matches_missing_supplier_postmatch_xg": 8,
+    "supplier_estimate_records": 116,
+    "measured_xg_records": 0,
+    "own_model_estimate_records": 0,
+    "raw_match_record_rows": 146,
+    "active_match_record_rows": 124,
+    "raw_team_week_snapshot_rows": 290,
+    "active_team_week_snapshot_rows": 248,
+    "team_rows_with_supplier_data": 232,
+    "team_rows_missing": 16,
+    "internal_team_id_resolved": 0,
+    "internal_competition_id_resolved": 0,
+    "internal_match_id_resolved": 0
+  },
+  "leakage_audit": {
+    "post_match_xg_rows_added": 0,
+    "pre_match_estimate_reused_as_post_match_xg": 0,
+    "used_as_same_match_pre_match_input": 0,
+    "status": "pre-match expected goals not reclassified as post-match xG"
+  }
+}
