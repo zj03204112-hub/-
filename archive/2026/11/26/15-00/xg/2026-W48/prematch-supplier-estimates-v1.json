@@ -353,6 +353,22 @@
       "iso_week": "2026-W48",
       "source_url": "https://www.esurebet.com/match/1603084-al-fateh-vs-al-riyadh",
       "note": "赛前供应商模型估算；非实测xG；未回填赛后数据；球队/赛事/比赛内部ID未映射"
+    },
+    {
+      "id": "recent-xg-alfaisaly-khaleej",
+      "home": "Al-Faisaly",
+      "away": "Al-Khaleej",
+      "home_recent_xg_avg": 1.36,
+      "home_recent_xga_avg": 1.55,
+      "away_recent_xg_avg": 1.8,
+      "away_recent_xga_avg": 1.68,
+      "supplier": "SmartMatchData",
+      "data_type": "recent_form_xg_average",
+      "captured_at_bjt": "2026-11-26T15:02:33+08:00",
+      "source_updated_at_bjt": null,
+      "source_url": "https://smartmatchdata.com/analysis/al-faisaly-vs-al-khaleej-prediction-analysis-2026-11-26/",
+      "sample_matches": 5,
+      "note": "近5场有完整xG覆盖的均值，不是本场赛前match-xG预测；与TrueProb页面00:00 UTC开球时间冲突的match-level xG不混用。"
     }
   ],
   "measured_xg_records": 0,
@@ -393,5 +409,6 @@
     }
   ],
   "separation": "供应商模型估算独立存储；不与自有模型估算或实测xG混列。赛后xG未回填为同场赛前输入。",
-  "ids": "team_id、competition_id、match_id尚未映射，当前保留名称/赛事/赛季/ISO周临时键。"
+  "ids": "team_id、competition_id、match_id尚未映射，当前保留名称/赛事/赛季/ISO周临时键。",
+  "recent_form_xg_avg_records": 1
 }
