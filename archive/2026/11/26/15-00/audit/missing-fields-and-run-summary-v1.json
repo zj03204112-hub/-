@@ -56,5 +56,13 @@
     "historical_predictions_overwritten": false,
     "historical_xg_snapshots_overwritten": false
   },
-  "commit_verification": "待提交后回读验证"
+  "commit_verification": "success",
+  "commit_sha": "25e57a62ba10b2aa1d0de10fbdbe5ae6487ae913",
+  "readback_verification": "5 original files plus fixture index update; JSON parsing passed",
+  "prediction_integrity": {
+    "count": 34,
+    "hda_probabilities_sum_100": true,
+    "first_score_matches_modal_hda": "34/34",
+    "score_rule": "first score constrained to modal HDA direction; second score is next alternative"
+  }
 }
