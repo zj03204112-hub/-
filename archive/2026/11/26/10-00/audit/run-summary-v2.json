@@ -1,0 +1,63 @@
+{
+  "schema_version": "daily-football-run-summary-v2",
+  "run_id": "daily-2026-11-26-1000-run21-corrected",
+  "captured_at_bjt": "2026-11-26T10:04:52+08:00",
+  "iso_week": "2026-W48",
+  "review": {
+    "review_date_bjt": "2026-11-25",
+    "confirmed_finished_matches": 26,
+    "prediction_snapshots_found": 13,
+    "no_prediction_snapshot": 13,
+    "score1_hits": "2/13",
+    "score2_hits": "1/13",
+    "hda_hits": "7/13",
+    "htft_hits": "1/13",
+    "actual_draws": 3,
+    "draw_top_probability": 0,
+    "brier": 0.5861538461538461,
+    "log_loss": 0.9869302958655463,
+    "official_jczq_verified": "0/13"
+  },
+  "fixtures": {
+    "current_bjt_completed": 14,
+    "current_bjt_upcoming": 15,
+    "next_bjt_upcoming": 48,
+    "upcoming_total": 63,
+    "current_and_next_records": 77,
+    "boundary_spillovers": 9
+  },
+  "xg": {
+    "new_supplier_postmatch_estimates": 42,
+    "matches_with_xg": 21,
+    "matches_still_missing": 5,
+    "team_week_rows_added": 84,
+    "measured_xg": 0,
+    "own_model_estimate": 0,
+    "cumulative_unique_matches": 67,
+    "cumulative_matches_with_supplier_xg": 60,
+    "cumulative_missing_matches": 7,
+    "cumulative_supplier_estimate_records": 116,
+    "cumulative_active_team_week_rows": 246,
+    "sqlite_connected": false
+  },
+  "correction_notes": [
+    "Review v1 was superseded because the run18 raw prediction schema uses hda_pct and ht_ft; v2 re-read the immutable raw snapshots and scores all 13 predictions.",
+    "The initial xG append v1 marked all 26 matches missing. A later free-source pass found 42 supplier post-match xG estimates across 21 matches; xG addendum v2 supersedes those 21 missing statuses without deleting v1.",
+    "No provider values are averaged; all new xG values are vendor model estimates, not measured xG."
+  ],
+  "missing_fields": [
+    "SQLite database not connected/opened; no database write claimed.",
+    "Internal team_id, competition_id and match_id remain unresolved.",
+    "Official JCZQ handicap unavailable for all 13 predictions; no Asian handicap substitution.",
+    "Post-match xG remains missing for Nasaf-Al Khaldiya, Kazma-Erbil, Melbourne Victory-Viettel, Persib-FC Seoul and Fagiano Okayama-Shimizu.",
+    "Lineups, official JCZQ prices, same-bookmaker opening-to-live odds, and full referee/tactical coverage remain incomplete for the 15:00 refresh."
+  ],
+  "protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "historical_xg_week_snapshots_overwritten": false,
+    "postmatch_xg_leakage_into_prematch_inputs": 0
+  },
+  "archive_branch": "automation/daily-football-2026-11-26-1000-run21"
+}
