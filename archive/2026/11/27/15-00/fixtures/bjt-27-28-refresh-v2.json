@@ -1,0 +1,249 @@
+{
+  "schema_version": "daily-football-fixture-refresh-v1",
+  "captured_at_bjt": "2026-11-27T14:56:24+08:00",
+  "timezone_rule": "All dates below are Beijing calendar dates; UTC and local venue time are retained separately.",
+  "current_and_next_bjt_dates": [
+    "2026-11-27",
+    "2026-11-28"
+  ],
+  "in_prediction_window_count": 11,
+  "in_prediction_window_strategy_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11"
+  ],
+  "close_but_excluded": [
+    {
+      "match": "Macarthur FC–Melbourne City",
+      "kickoff_utc": "2026-11-27T08:40:00Z",
+      "kickoff_bjt": "2026-11-27T16:40:00+08:00",
+      "reason": "less than 6 hours from capture"
+    },
+    {
+      "match": "Al Kholood–Al Khaleej",
+      "kickoff_utc": "2026-11-27T12:15:00Z",
+      "kickoff_bjt": "2026-11-27T20:15:00+08:00",
+      "reason": "5h18m from capture, below 6-hour threshold"
+    }
+  ],
+  "upcoming_early_registration": [
+    {
+      "match": "Bremen–Mönchengladbach",
+      "competition": "Bundesliga",
+      "kickoff_utc": "2026-11-27T19:30:00Z",
+      "kickoff_bjt": "2026-11-28T03:30:00+08:00",
+      "status": "more_than_12h"
+    },
+    {
+      "match": "Venezia–Bologna",
+      "competition": "Serie A",
+      "kickoff_utc": "2026-11-27T19:45:00Z",
+      "kickoff_bjt": "2026-11-28T03:45:00+08:00",
+      "status": "more_than_12h"
+    },
+    {
+      "match": "Brest–Paris FC",
+      "competition": "Ligue 1",
+      "kickoff_utc": "2026-11-27T19:45:00Z",
+      "kickoff_bjt": "2026-11-28T03:45:00+08:00",
+      "status": "more_than_12h"
+    },
+    {
+      "match": "Nottingham Forest–Chelsea",
+      "competition": "Premier League",
+      "kickoff_utc": "2026-11-27T20:00:00Z",
+      "kickoff_bjt": "2026-11-28T04:00:00+08:00",
+      "status": "more_than_12h"
+    },
+    {
+      "match": "Levante–Racing Santander",
+      "competition": "La Liga",
+      "kickoff_utc": "2026-11-27T20:00:00Z",
+      "kickoff_bjt": "2026-11-28T04:00:00+08:00",
+      "status": "more_than_12h"
+    },
+    {
+      "match": "Southampton–Middlesbrough",
+      "competition": "Championship",
+      "kickoff_bjt": "2026-11-28T04:00:00+08:00",
+      "status": "more_than_12h"
+    },
+    {
+      "match": "Shimizu S-Pulse–Urawa Reds",
+      "competition": "J1",
+      "kickoff_bjt": "2026-11-28T13:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Kyoto Sanga–Cerezo Osaka",
+      "competition": "J1",
+      "kickoff_bjt": "2026-11-28T13:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Kashima Antlers–Fagiano Okayama",
+      "competition": "J1",
+      "kickoff_bjt": "2026-11-28T14:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Vissel Kobe–JEF United Chiba",
+      "competition": "J1",
+      "kickoff_bjt": "2026-11-28T14:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Kashiwa Reysol–Sanfrecce Hiroshima",
+      "competition": "J1",
+      "kickoff_bjt": "2026-11-28T15:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "FC Seoul–Daejeon Hana Citizen",
+      "competition": "K League 1",
+      "kickoff_bjt": "2026-11-28T13:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "FC Anyang–Jeju United",
+      "competition": "K League 1",
+      "kickoff_bjt": "2026-11-28T13:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Pohang Steelers–Gwangju",
+      "competition": "K League 1",
+      "kickoff_bjt": "2026-11-28T15:30:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Bucheon 1995–Gimcheon Sangmu",
+      "competition": "K League 1",
+      "kickoff_bjt": "2026-11-28T15:30:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Al Hazm–Al Nassr",
+      "competition": "Saudi Pro League",
+      "kickoff_bjt": "2026-11-28T20:15:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Al Ettifaq–Al Hilal",
+      "competition": "Saudi Pro League",
+      "kickoff_bjt": "2026-11-28T22:20:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Groningen–Willem II",
+      "competition": "Eerste Divisie",
+      "kickoff_bjt": "2026-11-28T03:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "VVV-Venlo–RKC Waalwijk",
+      "competition": "Eerste Divisie",
+      "kickoff_bjt": "2026-11-28T03:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Real Betis–Rayo Vallecano",
+      "competition": "La Liga",
+      "kickoff_bjt": "2026-11-28T21:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Frosinone–Parma",
+      "competition": "Serie A",
+      "kickoff_bjt": "2026-11-28T22:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Mainz 05–Union Berlin",
+      "competition": "Bundesliga",
+      "kickoff_bjt": "2026-11-28T22:30:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Hamburger SV–Bayern München",
+      "competition": "Bundesliga",
+      "kickoff_bjt": "2026-11-28T22:30:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "1. FC Köln–Elversberg",
+      "competition": "Bundesliga",
+      "kickoff_bjt": "2026-11-28T22:30:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Paderborn–Schalke 04",
+      "competition": "Bundesliga",
+      "kickoff_bjt": "2026-11-28T22:30:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Leeds United–Coventry City",
+      "competition": "Premier League",
+      "kickoff_bjt": "2026-11-28T23:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Manchester United–Brentford",
+      "competition": "Premier League",
+      "kickoff_bjt": "2026-11-28T23:00:00+08:00",
+      "status": "early_registration"
+    },
+    {
+      "match": "Málaga–Athletic Club",
+      "competition": "La Liga",
+      "kickoff_bjt": "2026-11-28T23:15:00+08:00",
+      "status": "early_registration"
+    }
+  ],
+  "core_leagues_status": {
+    "EPL": "no core EPL fixture in the 6-12h window; next BJT early fixture Nottingham Forest–Chelsea is 13h+ away",
+    "LaLiga": "no core LaLiga fixture in the 6-12h window; Levante–Racing is 13h+ away",
+    "Bundesliga": "no core Bundesliga fixture in the 6-12h window; Bremen–Mönchengladbach is 12h30+ away",
+    "SerieA": "no core Serie A fixture in the 6-12h window; Venezia–Bologna is 12h45+ away",
+    "Ligue1": "no core Ligue 1 fixture in the 6-12h window; Brest–Paris FC is 12h45+ away",
+    "KLeague1": "next round on 2026-11-28 BJT afternoon, early registration only",
+    "J1": "next round on 2026-11-28 BJT afternoon, early registration only"
+  },
+  "sources": [
+    "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/match-schedule-revealed",
+    "https://www.jleague.jp/en/j1/match/",
+    "https://gotifo.com/competitions/k-league-1-51",
+    "https://issp.fixtur.es/en/matches/saudi-professional-league",
+    "https://www.esurebet.com/match/1576245-1-fc-heidenheim-vs-1-fc-nurnberg",
+    "https://www.esurebet.com/match/1565317-universitatea-cluj-vs-sepsi-osk-sfantu-gheorghe",
+    "https://footballpredictions.com/footballpredictions/primeradivisionpredictions/betis-vs-rayo-vallecano-prediction-28-11-2026/",
+    "https://www.esurebet.com/match/1550210-frosinone-vs-parma",
+    "https://www.esurebet.com/match/1575234-fsv-mainz-05-vs-union-berlin",
+    "https://predictvantage.com/match/43156-hamburger-sv-vs-bayern-m-nchen-2026-11-28",
+    "https://www.esurebet.com/match/1575236-1-fc-koln-vs-sv-elversberg",
+    "https://www.esurebet.com/match/1575238-sc-paderborn-07-vs-fc-schalke-04",
+    "https://www.fotmob.com/matches/coventry-city-vs-leeds-united/1",
+    "https://oddsbook.com/football/england/premier-league/manchester-united-vs-brentford/1557484/",
+    "https://www.sportsgambler.com/betting-tips/football/malaga-vs-athletic-club-prediction-lineups-odds-2026-11-28/"
+  ],
+  "missing_fields": [
+    "official_jczq_handicap_for_all_11_window_matches",
+    "opening_to_live_same_bookmaker_odds",
+    "confirmed_starting_lineups",
+    "complete_injury_reports",
+    "referee_assignments",
+    "some_match_level_prematch_xg"
+  ],
+  "early_registration_count": 28,
+  "close_but_excluded_count": 2,
+  "note": "v2 expands the 2026-11-28 BJT fixture index to include later Saturday fixtures that are more than 12 hours from capture; no predictions were generated for them."
+}
