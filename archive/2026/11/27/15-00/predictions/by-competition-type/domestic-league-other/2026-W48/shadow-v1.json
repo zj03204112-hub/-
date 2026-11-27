@@ -1,0 +1,151 @@
+{
+  "schema_version": "competition-shadow-predictions-v1",
+  "captured_at_bjt": "2026-11-27T14:56:24+08:00",
+  "iso_week": "2026-W48",
+  "competition_type": "domestic-league-other",
+  "model_version": "SHADOW-POISSON-HDA-R3",
+  "matches": [
+    {
+      "strategy_id": "S02",
+      "competition": "2. Bundesliga",
+      "competition_type": "domestic_league_other",
+      "home": "1. FC Heidenheim",
+      "away": "1. FC Nürnberg",
+      "kickoff_utc": "2026-11-27T17:30:00Z",
+      "kickoff_bjt": "2026-11-28T01:30:00+08:00",
+      "hours_from_capture": 10.56,
+      "venue": "Voith-Arena",
+      "expected_goals_working_lambda": [
+        1.86,
+        1.63
+      ],
+      "supplier_prematch_xg": [
+        {
+          "supplier": "eSureBet",
+          "home": 1.86,
+          "away": 1.63,
+          "type": "supplier_model_estimate"
+        },
+        {
+          "supplier": "xG.Football",
+          "home": 1.96,
+          "away": 1.37,
+          "type": "supplier_model_estimate"
+        },
+        {
+          "supplier": "xGPANDA",
+          "home": 2.61,
+          "away": 1.7,
+          "type": "supplier_model_estimate"
+        }
+      ],
+      "score1": {
+        "score": "1-1",
+        "probability_pct": 9.2
+      },
+      "score2": {
+        "score": "2-1",
+        "probability_pct": 8.6
+      },
+      "hda_pct": {
+        "home": 43.6,
+        "draw": 22.2,
+        "away": 34.2
+      },
+      "ht_ft": "主/主",
+      "ht_ft_probability_pct": 26.9,
+      "my_confidence_pct": 44,
+      "data_completeness_pct": 76,
+      "strategy_risk": "主队近5场L-D-L-D-L，客队近5场D-L-W-W-L；主队主场不败叙事与客队客场不败叙事存在来源口径冲突；xG供应商分歧较大。",
+      "market": {
+        "third_party_jczq_mirror": {
+          "source": "17500.cn public JZQ mirror",
+          "captured_at_bjt": "2026-11-27T14:31:00+08:00",
+          "one_x_two": "1.98/3.85/2.67",
+          "mirrored_handicap": -1,
+          "handicap_odds": "3.80/4.05/1.59"
+        },
+        "other_third_party_1x2": [
+          "2.01/3.88/3.12",
+          "1.96/3.98/3.24"
+        ],
+        "opening_to_live": "not verified; providers and timestamps do not match",
+        "official_jczq_handicap": null,
+        "jczq_status": "third_party_mirror_only_not_officially_verified"
+      },
+      "missing": [
+        "direct_official_jczq_handicap_confirmation",
+        "same_bookmaker_opening_and_live_prices",
+        "confirmed_starting_xi",
+        "verified_injuries",
+        "referee_assignment",
+        "next_opponent_motivation"
+      ]
+    },
+    {
+      "strategy_id": "S03",
+      "competition": "Romanian Liga I",
+      "competition_type": "domestic_league_other",
+      "home": "Universitatea Cluj",
+      "away": "Sepsi OSK",
+      "kickoff_utc": "2026-11-27T15:30:00Z",
+      "kickoff_bjt": "2026-11-27T23:30:00+08:00",
+      "hours_from_capture": 8.56,
+      "venue": "Cluj Arena",
+      "expected_goals_working_lambda": [
+        2.1,
+        0.82
+      ],
+      "supplier_prematch_xg": [
+        {
+          "supplier": "eSureBet",
+          "home": 2.1,
+          "away": 0.82,
+          "type": "supplier_model_estimate"
+        },
+        {
+          "supplier": "xG.Football",
+          "home": 2.09,
+          "away": 0.83,
+          "type": "supplier_model_estimate"
+        }
+      ],
+      "score1": {
+        "score": "2-0",
+        "probability_pct": 11.9
+      },
+      "score2": {
+        "score": "1-0",
+        "probability_pct": 11.3
+      },
+      "hda_pct": {
+        "home": 66.9,
+        "draw": 19.5,
+        "away": 13.5
+      },
+      "ht_ft": "主/主",
+      "ht_ft_probability_pct": 44.1,
+      "my_confidence_pct": 51,
+      "data_completeness_pct": 74,
+      "strategy_risk": "主队近况明显较好，客队近6场失球偏多；两家供应商xG高度接近，但上次交锋Sepsi取胜，需保留反向风险。",
+      "market": {
+        "third_party_1x2": {
+          "source": "eSureBet",
+          "odds": "1.60/3.85/5.00",
+          "source_updated": "2026-11-26T08:53:00+01:00"
+        },
+        "opening_to_live": "not verified",
+        "official_jczq_handicap": null,
+        "jczq_status": "not_found"
+      },
+      "missing": [
+        "official_jczq_handicap",
+        "same_bookmaker_opening_and_live_prices",
+        "confirmed_starting_xi",
+        "verified_injuries",
+        "referee_assignment",
+        "kickoff_timezone_crosscheck"
+      ]
+    }
+  ]
+}
