@@ -1,0 +1,16 @@
+{
+  "schema_version": "daily-football-run-summary-v3-correction",
+  "captured_at_bjt": "2026-11-27T09:57:24+08:00",
+  "supersedes": "archive/2026/11/27/10-00/audit/run-summary-v1.json#fixtures.current_bjt_uefa_completed",
+  "correction": {
+    "field": "fixtures.current_bjt_uefa_completed",
+    "prior_value": 36,
+    "corrected_value": 35,
+    "breakdown": {
+      "europa_league": 18,
+      "conference_league": 17
+    },
+    "reason": "Kairat–Mjällby实际开球为11月26日BJT 23:30，已计入11月26日赛果复盘；不得重复计入11月27日BJT早场。"
+  },
+  "preserve_history": true
+}
