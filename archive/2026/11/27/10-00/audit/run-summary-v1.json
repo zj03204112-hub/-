@@ -1,0 +1,71 @@
+{
+  "schema_version": "daily-football-run-summary-v1",
+  "run_id": "daily-2026-11-27-1000-run23",
+  "captured_at_bjt": "2026-11-27T09:57:24+08:00",
+  "iso_week": "2026-W48",
+  "review": {
+    "review_date_bjt": "2026-11-26",
+    "confirmed_finished_matches": 21,
+    "prediction_snapshots_found": 9,
+    "no_prediction_snapshot": 12,
+    "hda_hits": "7/9",
+    "score1_hits": "1/9",
+    "score2_hits": "1/9",
+    "half_full_hits": "2/9",
+    "brier": 0.5315555555555556,
+    "log_loss": 0.8861057851254481,
+    "actual_4plus_goal_matches": 3,
+    "candidate_score_cells_4plus": "0/18",
+    "official_jczq_verified": "0/9"
+  },
+  "fixtures": {
+    "current_bjt_uefa_completed": 36,
+    "current_bjt_upcoming": 8,
+    "next_bjt_core_leagues": 16,
+    "next_bjt_j1": 5,
+    "next_bjt_k_league_1": 0,
+    "allfootball_utc_27_nov_total_listed": 111,
+    "scope_note": "仅抽取用户跟踪范围及其边界赛事，不宣称覆盖全部111场世界赛程。"
+  },
+  "xg": {
+    "new_verified_supplier_postmatch_estimates": 3,
+    "new_matches_with_xg": 3,
+    "new_matches_missing_xg": 18,
+    "new_team_week_snapshots": 6,
+    "measured_xg": 0,
+    "own_model_estimate": 0,
+    "cumulative_unique_matches_estimated": 89,
+    "cumulative_supplier_xg_matches_estimated": 58,
+    "cumulative_missing_matches_estimated": 31,
+    "cumulative_supplier_estimate_records": 94,
+    "cumulative_active_team_week_rows": 214,
+    "sqlite_connected": false
+  },
+  "markets": {
+    "official_jczq": "0/9 verified",
+    "same_bookmaker_open_to_live_series": "0/9 verified",
+    "third_party_asian_handicap_substitution": false
+  },
+  "missing_fields": [
+    "12场完赛比赛没有上一轮原始预测快照，不能核算预测命中。",
+    "9场预测均未取得官方竞彩真实让球数及时间戳。",
+    "18场新增完赛比赛没有免费可追溯的比赛级赛后xG。",
+    "内部team_id、competition_id、match_id未映射。",
+    "SQLite数据库未连接/未打开，未执行数据库写入。",
+    "全量首发、伤停、战术、天气、裁判、近3场、下一场重要性尚未全部核验。",
+    "欧国联本轮无赛程。"
+  ],
+  "corrections": [
+    "上一轮run22将Abha–Al-Shabab误列为延期/冲突；本轮已核实该场实际完赛0-1，作为赛程源误报记录，不修改原始预测快照。",
+    "高进球尾部问题得到量化：9场中3场实际总进球≥4，18个候选比分中0个≥4。",
+    "没有把供应商赛后xG回填到同场赛前输入。"
+  ],
+  "protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_predictions_overwritten": false,
+    "historical_xg_snapshots_overwritten": false,
+    "postmatch_xg_leakage_into_prematch_inputs": 0
+  },
+  "archive_branch": "automation/daily-football-2026-11-27-1000-run23"
+}
