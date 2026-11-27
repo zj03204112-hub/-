@@ -1,0 +1,94 @@
+{
+  "schema_version": "competition-shadow-predictions-v1",
+  "captured_at_bjt": "2026-11-27T14:56:24+08:00",
+  "iso_week": "2026-W48",
+  "competition_type": "domestic-league",
+  "model_version": "SHADOW-POISSON-HDA-R3",
+  "matches": [
+    {
+      "strategy_id": "S01",
+      "competition": "Saudi Pro League",
+      "competition_type": "domestic_league",
+      "home": "Al Qadsiah",
+      "away": "Al Fayha",
+      "kickoff_utc": "2026-11-27T14:20:00Z",
+      "kickoff_bjt": "2026-11-27T22:20:00+08:00",
+      "hours_from_capture": 7.39,
+      "venue": "Al Ettifaq Club Stadium; venue label differs on one score page and requires official confirmation",
+      "expected_goals_working_lambda": [
+        2.45,
+        1.1
+      ],
+      "supplier_prematch_xg": [
+        {
+          "supplier": "Scorewave",
+          "home": 2.4,
+          "away": 1.3,
+          "type": "supplier_model_estimate",
+          "note": "simple Poisson estimate from recent goals, not measured xG"
+        },
+        {
+          "supplier": "StatsBet",
+          "home": 1.89,
+          "away": 0.83,
+          "type": "supplier_model_estimate"
+        },
+        {
+          "supplier": "PredictVantage",
+          "home": 2.8,
+          "away": 1,
+          "type": "supplier_model_estimate"
+        },
+        {
+          "supplier": "xGPANDA",
+          "home": 3.85,
+          "away": 0.66,
+          "type": "supplier_model_estimate"
+        }
+      ],
+      "score1": {
+        "score": "2-1",
+        "probability_pct": 9.5
+      },
+      "score2": {
+        "score": "2-0",
+        "probability_pct": 8.6
+      },
+      "hda_pct": {
+        "home": 67,
+        "draw": 17.7,
+        "away": 15.3
+      },
+      "ht_ft": "主/主",
+      "ht_ft_probability_pct": 45.1,
+      "my_confidence_pct": 54,
+      "data_completeness_pct": 72,
+      "strategy_risk": "主队强势但供应商xG分歧很大；客队近5场仍有9球，主队不能按零失球剧本处理；官方首发、裁判和竞彩盘口未确认。",
+      "market": {
+        "third_party_1x2": [
+          {
+            "source": "Scorewave",
+            "odds": "1.19/7.00/9.50",
+            "captured_by_source": "page crawled 2026-11-27"
+          },
+          {
+            "source": "Live4Sport",
+            "probability_pct": "78/14/9",
+            "note": "9-bookmaker average, margin removed"
+          }
+        ],
+        "opening_to_live": "not verified",
+        "official_jczq_handicap": null,
+        "jczq_status": "unverified_unavailable"
+      },
+      "missing": [
+        "official_jczq_handicap",
+        "same_bookmaker_opening_and_live_prices",
+        "confirmed_starting_xi",
+        "verified_injuries",
+        "referee_assignment",
+        "official_venue_confirmation"
+      ]
+    }
+  ]
+}
