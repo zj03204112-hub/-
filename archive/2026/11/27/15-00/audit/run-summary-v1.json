@@ -1,0 +1,42 @@
+{
+  "schema_version": "daily-football-1500-run-summary-v1",
+  "captured_at_bjt": "2026-11-27T14:56:24+08:00",
+  "run_type": "15:00 schedule refresh and 6-12 hour prediction",
+  "prediction_window": {
+    "start": "2026-11-27T20:56:24+08:00",
+    "end": "2026-11-28T02:56:24+08:00"
+  },
+  "result": {
+    "window_matches": 11,
+    "predictions_written": 11,
+    "early_or_excluded_matches_registered": 17,
+    "official_jczq_verified": 0,
+    "third_party_jczq_mirror_only": 1,
+    "same_bookmaker_opening_to_live_verified": 0,
+    "provider_prematch_xg_records": 9,
+    "measured_xg_records": 0,
+    "own_model_xg_records": 0,
+    "official_lineups_confirmed": 0,
+    "referee_assignments_verified": 0
+  },
+  "quality": {
+    "all_probabilities_sum_to_100": true,
+    "score_matrix_consistency": "probabilities calculated from goal-rate matrix; top exact scores and H/D/A are retained independently",
+    "postmatch_xg_leakage": 0,
+    "historical_snapshots_overwritten": 0
+  },
+  "limitations": [
+    "Official JZQ handicap could not be directly verified for any of the 11 matches; no mechanical JZQ result is generated.",
+    "Heidenheim -1 appears only on a third-party JZQ mirror and is not accepted as official.",
+    "No confirmed starting XI or referee appointment was found for the 11 window matches.",
+    "No reliable match-level pre-match xG was found for the 8 U17 matches.",
+    "Weather forecast was retrieved for Doha and Al Khobar only; Romania and Heidenheim match-hour weather remains missing.",
+    "SQLite database is not connected; no database write is claimed."
+  ],
+  "protection": {
+    "v51_modified": false,
+    "frozen_validation_sample_modified": false,
+    "immutable_historical_predictions_overwritten": false,
+    "historical_week_xg_snapshots_overwritten": false
+  }
+}
