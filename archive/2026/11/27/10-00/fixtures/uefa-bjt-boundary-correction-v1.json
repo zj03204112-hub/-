@@ -1,0 +1,39 @@
+{
+  "schema_version": "uefa-bjt-boundary-correction-v1",
+  "captured_at_bjt": "2026-11-27T09:57:24+08:00",
+  "supersedes": "archive/2026/11/27/10-00/fixtures/bjt-27-28-refresh-v1.json#bjt_2026_11_27.completed_early",
+  "correction": {
+    "current_bjt_2026_11_27_europa_league_completed": 18,
+    "current_bjt_2026_11_27_conference_league_completed": 17,
+    "current_bjt_2026_11_27_uefa_total_completed": 35,
+    "moved_out_of_2026_11_27_bjt": [
+      {
+        "match": "Kairat Almaty–Mjällby",
+        "kickoff_utc": "2026-11-26T15:30:00Z",
+        "kickoff_bjt": "2026-11-26T23:30:00+08:00",
+        "review_date_bjt": "2026-11-26",
+        "reason": "15:30 UTC换算为23:30北京时间，属于11月26日BJT；已在前一日期赛果复盘中计入。"
+      }
+    ],
+    "remaining_conference_league_matches_on_2026_11_27_bjt": [
+      "Ajax–Thun",
+      "Brighton–Universitatea Craiova",
+      "Iberia Tbilisi–Getafe",
+      "Jablonec–Lugano",
+      "Kauno Žalgiris–Riga",
+      "Hearts–Monaco",
+      "Egnatia–Lincoln Red Imps",
+      "Pafos–Midtjylland",
+      "Brann–Aarhus",
+      "Nordsjælland–Panathinaikos",
+      "Borac Banja Luka–Atalanta",
+      "Hajduk Split–Sint-Truidense",
+      "Inter Escaldes–Copenhagen",
+      "Gent–Crvena Zvezda",
+      "CSKA Sofia–Trabzonspor",
+      "Braga–KuPS",
+      "Freiburg–Twente"
+    ]
+  },
+  "note": "UEFA官方结果页列出18场Conference League，但Kairat–Mjällby为11月26日BJT 23:30，不应重复计入11月27日BJT。保留原v1并以本修正为最新边界视图。"
+}
