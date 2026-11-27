@@ -1,0 +1,22 @@
+{
+  "schema_version": "daily-football-run-summary-v2",
+  "run_id": "daily-2026-11-27-1000-run23-correction",
+  "captured_at_bjt": "2026-11-27T09:57:24+08:00",
+  "supersedes": "archive/2026/11/27/10-00/audit/run-summary-v1.json",
+  "correction": {
+    "field": "fixtures.next_bjt_core_leagues",
+    "prior_value": 16,
+    "corrected_value": 19,
+    "breakdown": {
+      "early_28_nov_bjt_from_27_utc": 5,
+      "premier_league": 2,
+      "la_liga": 2,
+      "serie_a": 1,
+      "bundesliga": 4,
+      "j1_league": 5,
+      "k_league_1": 0
+    },
+    "note": "按BJT日期边界重算：将UTC 11月27日19:30–20:00的5场边界比赛计入11月28日BJT；再加UTC 11月28日的2场英超、2场西甲、1场意甲、4场德甲及5场日职J1，共19场核心联赛。K League 1为0场。"
+  },
+  "historical_v1_preserved": true
+}
