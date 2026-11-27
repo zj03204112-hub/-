@@ -1,0 +1,434 @@
+{
+  "schema_version": "competition-shadow-predictions-v1",
+  "captured_at_bjt": "2026-11-27T14:56:24+08:00",
+  "iso_week": "2026-W48",
+  "competition_type": "national-team",
+  "model_version": "SHADOW-POISSON-HDA-R3",
+  "matches": [
+    {
+      "strategy_id": "S04",
+      "competition": "FIFA U-17 World Cup",
+      "competition_type": "national_team",
+      "group": "L",
+      "home": "Colombia U17",
+      "away": "Serbia U17",
+      "kickoff_utc": "2026-11-27T13:00:00Z",
+      "kickoff_bjt": "2026-11-27T21:00:00+08:00",
+      "hours_from_capture": 6.06,
+      "venue": "Aspire Zone Pitch 9, Doha",
+      "group_points_before_match": {
+        "home": 6,
+        "away": 6
+      },
+      "expected_goals_working_lambda": [
+        1.35,
+        1.15
+      ],
+      "supplier_prematch_xg": null,
+      "score1": {
+        "score": "1-1",
+        "probability_pct": 12.7
+      },
+      "score2": {
+        "score": "1-0",
+        "probability_pct": 11.1
+      },
+      "hda_pct": {
+        "home": 41.3,
+        "draw": 26.8,
+        "away": 31.8
+      },
+      "ht_ft": "主/主",
+      "ht_ft_probability_pct": 24.4,
+      "my_confidence_pct": 39,
+      "data_completeness_pct": 48,
+      "strategy_risk": "两队均6分争小组头名；中立场；没有可靠比赛级赛前xG或赔率，1-1是全矩阵最高比分但主胜方向略高，比分/胜平负存在轻微不一致。",
+      "market": {
+        "third_party_1x2": null,
+        "official_jczq_handicap": null,
+        "jczq_status": "not_found"
+      },
+      "last_starting_xi_reference": "both listed 4-3-3; not confirmed for this match",
+      "missing": [
+        "match_level_prematch_xg",
+        "reliable_1x2_odds",
+        "official_jczq_handicap",
+        "confirmed_starting_xi",
+        "injury_status",
+        "referee_assignment",
+        "team_specific_weather"
+      ]
+    },
+    {
+      "strategy_id": "S05",
+      "competition": "FIFA U-17 World Cup",
+      "competition_type": "national_team",
+      "group": "L",
+      "home": "Honduras U17",
+      "away": "Japan U17",
+      "kickoff_utc": "2026-11-27T13:00:00Z",
+      "kickoff_bjt": "2026-11-27T21:00:00+08:00",
+      "hours_from_capture": 6.06,
+      "venue": "Aspire Zone Pitch 4, Doha",
+      "group_points_before_match": {
+        "home": 0,
+        "away": 0
+      },
+      "expected_goals_working_lambda": [
+        0.75,
+        1.45
+      ],
+      "supplier_prematch_xg": null,
+      "score1": {
+        "score": "0-1",
+        "probability_pct": 16.1
+      },
+      "score2": {
+        "score": "1-1",
+        "probability_pct": 12
+      },
+      "hda_pct": {
+        "home": 19.4,
+        "draw": 26.8,
+        "away": 53.8
+      },
+      "ht_ft": "客/客",
+      "ht_ft_probability_pct": 32.6,
+      "my_confidence_pct": 40,
+      "data_completeness_pct": 47,
+      "strategy_risk": "两队0分，争取最佳小组第三的压力较大；日本前两场进1失3，洪都拉斯0进球失4球；青年队方差高。",
+      "market": {
+        "third_party_1x2": null,
+        "official_jczq_handicap": null,
+        "jczq_status": "not_found"
+      },
+      "last_starting_xi_reference": "Honduras 4-2-3-1; Japan 3-5-2; not confirmed",
+      "missing": [
+        "match_level_prematch_xg",
+        "reliable_1x2_odds",
+        "official_jczq_handicap",
+        "confirmed_starting_xi",
+        "injury_status",
+        "referee_assignment"
+      ]
+    },
+    {
+      "strategy_id": "S06",
+      "competition": "FIFA U-17 World Cup",
+      "competition_type": "national_team",
+      "group": "I",
+      "home": "Costa Rica U17",
+      "away": "Brazil U17",
+      "kickoff_utc": "2026-11-27T14:00:00Z",
+      "kickoff_bjt": "2026-11-27T22:00:00+08:00",
+      "hours_from_capture": 7.06,
+      "venue": "Aspire Zone Pitch 5, Doha",
+      "group_points_before_match": {
+        "home": 1,
+        "away": 6
+      },
+      "expected_goals_working_lambda": [
+        0.8,
+        1.9
+      ],
+      "supplier_prematch_xg": null,
+      "score1": {
+        "score": "0-1",
+        "probability_pct": 12.8
+      },
+      "score2": {
+        "score": "0-2",
+        "probability_pct": 12.1
+      },
+      "hda_pct": {
+        "home": 15.1,
+        "draw": 21.5,
+        "away": 63.3
+      },
+      "ht_ft": "客/客",
+      "ht_ft_probability_pct": 40.8,
+      "my_confidence_pct": 40,
+      "data_completeness_pct": 47,
+      "strategy_risk": "巴西6分已占主动，哥斯达黎加1分需争取最佳第三；巴西可能控节奏，若早早领先存在轮换或降速风险。",
+      "market": {
+        "third_party_1x2": null,
+        "official_jczq_handicap": null,
+        "jczq_status": "not_found"
+      },
+      "last_starting_xi_reference": null,
+      "missing": [
+        "match_level_prematch_xg",
+        "reliable_1x2_odds",
+        "official_jczq_handicap",
+        "confirmed_starting_xi",
+        "injury_status",
+        "referee_assignment"
+      ]
+    },
+    {
+      "strategy_id": "S07",
+      "competition": "FIFA U-17 World Cup",
+      "competition_type": "national_team",
+      "group": "I",
+      "home": "Republic of Ireland U17",
+      "away": "Tanzania U17",
+      "kickoff_utc": "2026-11-27T14:00:00Z",
+      "kickoff_bjt": "2026-11-27T22:00:00+08:00",
+      "hours_from_capture": 7.06,
+      "venue": "Aspire Zone Pitch 1, Doha",
+      "group_points_before_match": {
+        "home": 3,
+        "away": 1
+      },
+      "expected_goals_working_lambda": [
+        1.4,
+        0.9
+      ],
+      "supplier_prematch_xg": null,
+      "score1": {
+        "score": "1-0",
+        "probability_pct": 14
+      },
+      "score2": {
+        "score": "1-1",
+        "probability_pct": 12.6
+      },
+      "hda_pct": {
+        "home": 48.6,
+        "draw": 27.2,
+        "away": 24.2
+      },
+      "ht_ft": "主/主",
+      "ht_ft_probability_pct": 29.1,
+      "my_confidence_pct": 42,
+      "data_completeness_pct": 49,
+      "strategy_risk": "爱尔兰3分、坦桑尼亚1分；爱尔兰赢球更有利于直接出线，坦桑尼亚需抢分；半场慢热和平局需保留。",
+      "market": {
+        "third_party_1x2": null,
+        "official_jczq_handicap": null,
+        "jczq_status": "not_found"
+      },
+      "last_starting_xi_reference": "Ireland 3-4-3; Tanzania 4-1-4-1; not confirmed",
+      "missing": [
+        "match_level_prematch_xg",
+        "reliable_1x2_odds",
+        "official_jczq_handicap",
+        "confirmed_starting_xi",
+        "injury_status",
+        "referee_assignment"
+      ]
+    },
+    {
+      "strategy_id": "S08",
+      "competition": "FIFA U-17 World Cup",
+      "competition_type": "national_team",
+      "group": "J",
+      "home": "Algeria U17",
+      "away": "Dominican Republic U17",
+      "kickoff_utc": "2026-11-27T15:00:00Z",
+      "kickoff_bjt": "2026-11-27T23:00:00+08:00",
+      "hours_from_capture": 8.06,
+      "venue": "Aspire Zone Pitch 2, Doha",
+      "group_points_before_match": {
+        "home": 3,
+        "away": 4
+      },
+      "expected_goals_working_lambda": [
+        1.3,
+        1.2
+      ],
+      "supplier_prematch_xg": null,
+      "score1": {
+        "score": "1-1",
+        "probability_pct": 12.8
+      },
+      "score2": {
+        "score": "1-0",
+        "probability_pct": 10.7
+      },
+      "hda_pct": {
+        "home": 38.9,
+        "draw": 27,
+        "away": 34.1
+      },
+      "ht_ft": "主/主",
+      "ht_ft_probability_pct": 22.7,
+      "my_confidence_pct": 38,
+      "data_completeness_pct": 48,
+      "strategy_risk": "多米尼加4分可用平局巩固晋级；阿尔及利亚3分需要主动争胜。阿尔及利亚前两场失5球，防守波动大。",
+      "market": {
+        "third_party_1x2": null,
+        "official_jczq_handicap": null,
+        "jczq_status": "not_found"
+      },
+      "last_starting_xi_reference": "Algeria 4-1-4-1; Dominican Republic 5-4-1; not confirmed",
+      "missing": [
+        "match_level_prematch_xg",
+        "reliable_1x2_odds",
+        "official_jczq_handicap",
+        "confirmed_starting_xi",
+        "injury_status",
+        "referee_assignment"
+      ]
+    },
+    {
+      "strategy_id": "S09",
+      "competition": "FIFA U-17 World Cup",
+      "competition_type": "national_team",
+      "group": "J",
+      "home": "Montenegro U17",
+      "away": "Chile U17",
+      "kickoff_utc": "2026-11-27T15:00:00Z",
+      "kickoff_bjt": "2026-11-27T23:00:00+08:00",
+      "hours_from_capture": 8.06,
+      "venue": "Aspire Zone Pitch 3, Doha",
+      "group_points_before_match": {
+        "home": 1,
+        "away": 3
+      },
+      "expected_goals_working_lambda": [
+        0.9,
+        1.5
+      ],
+      "supplier_prematch_xg": null,
+      "score1": {
+        "score": "0-1",
+        "probability_pct": 13.6
+      },
+      "score2": {
+        "score": "1-1",
+        "probability_pct": 12.2
+      },
+      "hda_pct": {
+        "home": 22.6,
+        "draw": 26.1,
+        "away": 51.3
+      },
+      "ht_ft": "客/客",
+      "ht_ft_probability_pct": 31.1,
+      "my_confidence_pct": 39,
+      "data_completeness_pct": 47,
+      "strategy_risk": "智利3分、黑山1分；智利进攻端前两场打入5球但失4球，黑山需要争胜，比赛可能出现开放转换。",
+      "market": {
+        "third_party_1x2": null,
+        "official_jczq_handicap": null,
+        "jczq_status": "not_found"
+      },
+      "last_starting_xi_reference": "Montenegro 4-4-2; Chile 4-3-3; not confirmed",
+      "missing": [
+        "match_level_prematch_xg",
+        "reliable_1x2_odds",
+        "official_jczq_handicap",
+        "confirmed_starting_xi",
+        "injury_status",
+        "referee_assignment"
+      ]
+    },
+    {
+      "strategy_id": "S10",
+      "competition": "FIFA U-17 World Cup",
+      "competition_type": "national_team",
+      "group": "K",
+      "home": "Venezuela U17",
+      "away": "Mexico U17",
+      "kickoff_utc": "2026-11-27T16:00:00Z",
+      "kickoff_bjt": "2026-11-28T00:00:00+08:00",
+      "hours_from_capture": 9.06,
+      "venue": "Aspire Zone Pitch 7, Doha",
+      "group_points_before_match": {
+        "home": 6,
+        "away": 6
+      },
+      "expected_goals_working_lambda": [
+        1,
+        1.25
+      ],
+      "supplier_prematch_xg": null,
+      "score1": {
+        "score": "1-1",
+        "probability_pct": 13.2
+      },
+      "score2": {
+        "score": "0-1",
+        "probability_pct": 13.2
+      },
+      "hda_pct": {
+        "home": 29.6,
+        "draw": 28.5,
+        "away": 42
+      },
+      "ht_ft": "客/客",
+      "ht_ft_probability_pct": 24.5,
+      "my_confidence_pct": 36,
+      "data_completeness_pct": 47,
+      "strategy_risk": "两队均6分争小组头名；墨西哥前两场5-0，委内瑞拉3-1。模型偏客队但平局概率接近，避免把墨西哥优势夸大。",
+      "market": {
+        "third_party_1x2": null,
+        "official_jczq_handicap": null,
+        "jczq_status": "not_found"
+      },
+      "last_starting_xi_reference": "Venezuela 4-4-2; Mexico 4-2-3-1; not confirmed",
+      "missing": [
+        "match_level_prematch_xg",
+        "reliable_1x2_odds",
+        "official_jczq_handicap",
+        "confirmed_starting_xi",
+        "injury_status",
+        "referee_assignment"
+      ]
+    },
+    {
+      "strategy_id": "S11",
+      "competition": "FIFA U-17 World Cup",
+      "competition_type": "national_team",
+      "group": "K",
+      "home": "Romania U17",
+      "away": "Cameroon U17",
+      "kickoff_utc": "2026-11-27T16:00:00Z",
+      "kickoff_bjt": "2026-11-28T00:00:00+08:00",
+      "hours_from_capture": 9.06,
+      "venue": "Aspire Zone Pitch 8, Doha",
+      "group_points_before_match": {
+        "home": 0,
+        "away": 0
+      },
+      "expected_goals_working_lambda": [
+        1,
+        1.2
+      ],
+      "supplier_prematch_xg": null,
+      "score1": {
+        "score": "1-1",
+        "probability_pct": 13.3
+      },
+      "score2": {
+        "score": "0-1",
+        "probability_pct": 13.3
+      },
+      "hda_pct": {
+        "home": 30.5,
+        "draw": 28.9,
+        "away": 40.6
+      },
+      "ht_ft": "客/客",
+      "ht_ft_probability_pct": 23.5,
+      "my_confidence_pct": 35,
+      "data_completeness_pct": 45,
+      "strategy_risk": "两队0分争取最佳第三，动力强但进攻效率低；青年队比赛方差和临场阵容不确定性很高。",
+      "market": {
+        "third_party_1x2": null,
+        "official_jczq_handicap": null,
+        "jczq_status": "not_found"
+      },
+      "last_starting_xi_reference": "Romania 5-3-2; Cameroon 4-1-4-1; not confirmed",
+      "missing": [
+        "match_level_prematch_xg",
+        "reliable_1x2_odds",
+        "official_jczq_handicap",
+        "confirmed_starting_xi",
+        "injury_status",
+        "referee_assignment"
+      ]
+    }
+  ]
+}
