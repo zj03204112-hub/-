@@ -1,0 +1,22 @@
+{
+  "schema_version": "leisu-status-crosscheck-v1",
+  "captured_at_bjt": "2026-11-27T09:57:24+08:00",
+  "source": "https://live.leisu.com/wanchang-20261126",
+  "source_role": "优先赛果状态交叉核验",
+  "limitation": "雷速页面当前可回读HTML显示完场状态和对阵，但比分单元格由前端动态渲染、未在文本结果中返回；比分采用官方AFC/UEFA及可回读比赛报告补足，不以缺失的雷速比分猜测。",
+  "matches_with_leisu_finished_status": [
+    "Kairat Almaty–Mjällby",
+    "Abha–Al-Shabab",
+    "Morocco U17–Spain U17",
+    "China PR U17–Fiji U17",
+    "Al-Baqa'a–Al-Jazeera",
+    "Al-Fateh–Al-Riyadh",
+    "Uzbekistan U17–Italy U17",
+    "Jamaica U17–Côte d'Ivoire U17",
+    "Ural–Arsenal Tula",
+    "Orenburg–Spartak Moscow",
+    "Vietnam U17–Mali U17",
+    "New Zealand U17–Belgium U17"
+  ],
+  "crosscheck_note": "上述12场在雷速11月26日完场页显示“完”；比分字段以独立比赛报告/官方赛事页核实。"
+}
