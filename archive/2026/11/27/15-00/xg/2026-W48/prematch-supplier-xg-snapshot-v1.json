@@ -1,0 +1,81 @@
+{
+  "schema_version": "prematch-provider-xg-snapshot-v1",
+  "captured_at_bjt": "2026-11-27T14:56:24+08:00",
+  "iso_week": "2026-W48",
+  "data_type": "pre_match_supplier_model_estimates_only",
+  "measured_xg_records": 0,
+  "own_model_xg_records": 0,
+  "records": [
+    {
+      "match": "Al Qadsiah–Al Fayha",
+      "supplier": "Scorewave",
+      "home_xg": 2.4,
+      "away_xg": 1.3,
+      "kind": "supplier_model_estimate",
+      "note": "simple Poisson from recent goals, not measured xG"
+    },
+    {
+      "match": "Al Qadsiah–Al Fayha",
+      "supplier": "StatsBet",
+      "home_xg": 1.89,
+      "away_xg": 0.83,
+      "kind": "supplier_model_estimate"
+    },
+    {
+      "match": "Al Qadsiah–Al Fayha",
+      "supplier": "PredictVantage",
+      "home_xg": 2.8,
+      "away_xg": 1,
+      "kind": "supplier_model_estimate"
+    },
+    {
+      "match": "Al Qadsiah–Al Fayha",
+      "supplier": "xGPANDA",
+      "home_xg": 3.85,
+      "away_xg": 0.66,
+      "kind": "supplier_model_estimate"
+    },
+    {
+      "match": "Heidenheim–Nürnberg",
+      "supplier": "eSureBet",
+      "home_xg": 1.86,
+      "away_xg": 1.63,
+      "kind": "supplier_model_estimate"
+    },
+    {
+      "match": "Heidenheim–Nürnberg",
+      "supplier": "xG.Football",
+      "home_xg": 1.96,
+      "away_xg": 1.37,
+      "kind": "supplier_model_estimate"
+    },
+    {
+      "match": "Heidenheim–Nürnberg",
+      "supplier": "xGPANDA",
+      "home_xg": 2.61,
+      "away_xg": 1.7,
+      "kind": "supplier_model_estimate"
+    },
+    {
+      "match": "Universitatea Cluj–Sepsi",
+      "supplier": "eSureBet",
+      "home_xg": 2.1,
+      "away_xg": 0.82,
+      "kind": "supplier_model_estimate"
+    },
+    {
+      "match": "Universitatea Cluj–Sepsi",
+      "supplier": "xG.Football",
+      "home_xg": 2.09,
+      "away_xg": 0.83,
+      "kind": "supplier_model_estimate"
+    }
+  ],
+  "missing": [
+    {
+      "match": "All 8 FIFA U17 matches",
+      "reason": "No reliable match-level pre-match xG found; tournament standings and recent goals used for low-confidence goal-rate estimates only."
+    }
+  ],
+  "isolation_rule": "Provider records remain separate; no provider averaging is written as measured xG. These pre-match records are not post-match team-week snapshots."
+}
