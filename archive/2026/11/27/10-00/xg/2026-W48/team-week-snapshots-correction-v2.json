@@ -1,0 +1,50 @@
+{
+  "schema_version": "team-week-snapshots-correction-v2",
+  "captured_at_bjt": "2026-11-27T09:57:24+08:00",
+  "iso_week": "2026-W48",
+  "append_only": true,
+  "supersedes": "archive/2026/11/27/10-00/xg/2026-W48/team-week-snapshots-2026-11-26-v1.json",
+  "correction_note": "仅更正Kairat和Mjällby两队的供应商归属为Bzzoiro Sports Data via TotalOdds；数值仍为0.81与1.61。其他四队继续使用All Football。",
+  "snapshots": [
+    {
+      "slug": "kairat-almaty",
+      "team_name": "Kairat Almaty",
+      "competition": "UEFA Conference League",
+      "season": "2026-27",
+      "supplier": "Bzzoiro Sports Data via TotalOdds",
+      "match_id": "source_ref:TotalOdds/kairat-almaty-vs-mjallby-9759458",
+      "weekly_xg": 0.81,
+      "weekly_xga": 1.61,
+      "weekly_xgd": -0.8,
+      "team_id": null,
+      "competition_id": null,
+      "data_type": "supplier_model_estimate_post_match",
+      "match_count": 1,
+      "iso_week": "2026-W48",
+      "xg_per90": 0.81,
+      "xga_per90": 1.61,
+      "xgd_per90": -0.8,
+      "missing_reason": "内部ID未映射；SQLite未连接。"
+    },
+    {
+      "slug": "mjallby",
+      "team_name": "Mjällby",
+      "competition": "UEFA Conference League",
+      "season": "2026-27",
+      "supplier": "Bzzoiro Sports Data via TotalOdds",
+      "match_id": "source_ref:TotalOdds/kairat-almaty-vs-mjallby-9759458",
+      "weekly_xg": 1.61,
+      "weekly_xga": 0.81,
+      "weekly_xgd": 0.8,
+      "team_id": null,
+      "competition_id": null,
+      "data_type": "supplier_model_estimate_post_match",
+      "match_count": 1,
+      "iso_week": "2026-W48",
+      "xg_per90": 1.61,
+      "xga_per90": 0.81,
+      "xgd_per90": 0.8,
+      "missing_reason": "内部ID未映射；SQLite未连接。"
+    }
+  ]
+}
