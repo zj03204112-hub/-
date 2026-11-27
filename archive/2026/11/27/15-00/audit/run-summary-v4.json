@@ -1,0 +1,41 @@
+{
+  "schema_version": "daily-football-1500-run-summary-v4",
+  "captured_at_bjt": "2026-11-27T14:56:24+08:00",
+  "supersedes": "run-summary-v3 for latest team-news audit only; all prior versions remain immutable",
+  "result": {
+    "window_matches": 11,
+    "predictions_written": 11,
+    "early_registration_matches": 28,
+    "close_or_outside_window_exclusions": 2,
+    "official_jczq_verified": 0,
+    "third_party_jczq_mirror_only": 1,
+    "same_bookmaker_opening_to_live_verified": 0,
+    "supplier_prematch_xg_records": 9,
+    "measured_xg_records": 0,
+    "own_model_xg_records": 0,
+    "official_lineups_confirmed": 0,
+    "referee_assignments_verified": 0,
+    "verified_team_news_absences": 2
+  },
+  "team_news_update": {
+    "match": "Heidenheim–Nürnberg",
+    "reported_absences": [
+      "Thomas Dähne",
+      "Jonas Föhrenbach"
+    ],
+    "note": "Stored as a post-snapshot addendum; original prediction remains immutable."
+  },
+  "limitations": [
+    "No direct official JZQ handicap was verified for any of the 11 matches.",
+    "No confirmed starting XI or referee appointment was found for the 11 window matches.",
+    "No reliable match-level pre-match xG was found for the 8 U17 matches.",
+    "Weather forecast was retrieved for Doha and Al Khobar only; Romania and Heidenheim match-hour weather remains missing.",
+    "SQLite database is not connected; no database write is claimed."
+  ],
+  "protection": {
+    "v51_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_predictions_overwritten": 0,
+    "historical_week_xg_snapshots_overwritten": 0
+  }
+}
