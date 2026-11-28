@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "captured_at_bjt": "2026-11-28T14:57:38+08:00",
+  "iso_week": "2026-W48",
+  "rule": "Prematch provider estimates are kept separate from own-model lambda. No postmatch xG is reused as same-match prematch input.",
+  "provider_estimates": [
+    {
+      "match": "达曼协作-利雅得新月",
+      "provider": "eSureBet",
+      "source_url": "https://www.esurebet.com/match/1603082-al-ettifaq-vs-al-hilal-saudi-fc",
+      "home_xg": 1.05,
+      "away_xg": 2.35,
+      "type": "supplier_model_estimate",
+      "scope": "match_prediction"
+    },
+    {
+      "match": "达曼协作-利雅得新月",
+      "provider": "TipOracle",
+      "source_url": "https://www.tiporacle.com/match/1603082-al-ettifaq-vs-al-hilal-saudi-fc",
+      "home_xg": 1.04,
+      "away_xg": 2.34,
+      "type": "supplier_model_estimate",
+      "scope": "match_prediction"
+    },
+    {
+      "match": "达曼协作-利雅得新月",
+      "provider": "Accurena",
+      "source_url": "https://www.accurena.com/match/1603082-al-ettifaq-vs-al-hilal-saudi-fc",
+      "home_xg": 1.09,
+      "away_xg": 2.15,
+      "type": "supplier_model_estimate",
+      "scope": "match_prediction"
+    },
+    {
+      "match": "皇家贝蒂斯-巴列卡诺",
+      "provider": "KeplerQuant",
+      "source_url": "https://keplerquant.com/matches/real-betis-vs-rayo-vallecano-predictions-2026-11-28/form",
+      "home_xg": 1.91,
+      "home_xga": 1.6,
+      "away_xg": 1.29,
+      "away_xga": 1.48,
+      "type": "supplier_model_estimate",
+      "scope": "team_last_10_form_not_match_prediction"
+    },
+    {
+      "match": "斯图加特-法兰克福",
+      "provider": "DeepPreviews",
+      "source_url": "https://deeppreviews.com/previews/vfb-stuttgart-vs-eintracht-frankfurt-2026-11-28",
+      "home_xg": 1.94,
+      "home_xga": 1.95,
+      "away_xg": 1.83,
+      "away_xga": 2.03,
+      "type": "supplier_model_estimate",
+      "scope": "recent_team_average_not_match_prediction"
+    },
+    {
+      "match": "帕德博恩-沙尔克04",
+      "provider": "FootyMetrics",
+      "source_url": "https://www.footymetrics.com/fixtures/43534465-bundesliga-paderborn-schalke-04",
+      "home_xg": 1.09,
+      "away_xg": 2.13,
+      "type": "supplier_model_estimate",
+      "scope": "season_team_average_not_match_prediction"
+    }
+  ],
+  "missing_match_level_prematch_xg": 15,
+  "own_model_lambda_is_separate": true,
+  "measured_xg_records": 0
+}
