@@ -1,0 +1,471 @@
+{
+  "schema_version": "1.0",
+  "captured_at_bjt": "2026-11-28T14:57:38+08:00",
+  "prediction_window_bjt": {
+    "from": "2026-11-28T20:57:38+08:00",
+    "to": "2026-11-29T02:57:38+08:00"
+  },
+  "model_version": "SHADOW-POISSON-R4-2026-11-28",
+  "production_model": "V5.1 unchanged; not used as an executable model in this run",
+  "method": "Independent shadow Poisson score matrix. Lambda inputs are own-model expected-goal rates based on available strength, recent form, home/away performance and verified absences. Market odds are cross-check context only, never the sole outcome driver.",
+  "confidence_definition": "My confidence is a conservative score: top H/D/A probability discounted by source completeness; it is not the raw model probability or a betting edge.",
+  "predictions": [
+    {
+      "id": "S01",
+      "type": "西甲",
+      "kickoff_bjt": "2026-11-28T21:00:00+08:00",
+      "home": "皇家贝蒂斯",
+      "away": "巴列卡诺",
+      "lambda": {
+        "home": 1.75,
+        "away": 0.8
+      },
+      "score1": "1-0",
+      "score2": "2-0",
+      "hda_pct": {
+        "home": 60,
+        "draw": 23.2,
+        "away": 16.8
+      },
+      "hda_pick": "主胜",
+      "htft": "主/主",
+      "my_confidence_pct": 53,
+      "data_completeness_pct": 68,
+      "jczq_handicap": "无法核验",
+      "risk": "贝蒂斯近期较稳但中场有伤疑；巴列卡诺近两轮联赛未进球，仍需防低比分平局"
+    },
+    {
+      "id": "S02",
+      "type": "意甲",
+      "kickoff_bjt": "2026-11-28T22:00:00+08:00",
+      "home": "弗罗西诺内",
+      "away": "帕尔马",
+      "lambda": {
+        "home": 1.7,
+        "away": 0.85
+      },
+      "score1": "1-0",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 57.5,
+        "draw": 23.9,
+        "away": 18.6
+      },
+      "hda_pick": "主胜",
+      "htft": "平/主",
+      "my_confidence_pct": 51,
+      "data_completeness_pct": 70,
+      "jczq_handicap": "无法核验",
+      "risk": "主队连续五个主场获胜但头号射手Raimondo伤缺；双方均有近期失利"
+    },
+    {
+      "id": "S16",
+      "type": "沙特职业联赛",
+      "kickoff_bjt": "2026-11-28T22:20:00+08:00",
+      "home": "达曼协作",
+      "away": "利雅得新月",
+      "lambda": {
+        "home": 1,
+        "away": 2
+      },
+      "score1": "1-2",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 18.3,
+        "draw": 21.2,
+        "away": 60.6
+      },
+      "hda_pick": "客胜",
+      "htft": "客/客",
+      "my_confidence_pct": 54,
+      "data_completeness_pct": 68,
+      "jczq_handicap": "不在已核验官方竞彩场次清单，无法核验",
+      "risk": "新月实力和近况占优；协作有多名攻击及中场伤停，第三方供应商赛前xG分歧不大但仍属估算"
+    },
+    {
+      "id": "S03",
+      "type": "德甲",
+      "kickoff_bjt": "2026-11-28T22:30:00+08:00",
+      "home": "帕德博恩",
+      "away": "沙尔克04",
+      "lambda": {
+        "home": 1.1,
+        "away": 1.05
+      },
+      "score1": "1-1",
+      "score2": "1-0",
+      "hda_pct": {
+        "home": 36.5,
+        "draw": 29.5,
+        "away": 34
+      },
+      "hda_pick": "主胜（微弱）",
+      "htft": "平/平",
+      "my_confidence_pct": 32,
+      "data_completeness_pct": 65,
+      "jczq_handicap": "无法核验",
+      "risk": "两队进攻数据偏弱，方向接近；帕德博恩四场不胜，沙尔克八场不胜且多名伤员"
+    },
+    {
+      "id": "S04",
+      "type": "德甲",
+      "kickoff_bjt": "2026-11-28T22:30:00+08:00",
+      "home": "科隆",
+      "away": "埃尔沃斯堡",
+      "lambda": {
+        "home": 1.35,
+        "away": 1
+      },
+      "score1": "1-1",
+      "score2": "1-0",
+      "hda_pct": {
+        "home": 44.8,
+        "draw": 27.5,
+        "away": 27.7
+      },
+      "hda_pick": "主胜",
+      "htft": "平/平",
+      "my_confidence_pct": 41,
+      "data_completeness_pct": 75,
+      "jczq_handicap": "无法核验",
+      "risk": "科隆有六名伤停且门将Schwäbe待定；埃尔沃斯堡客场连续失利，比赛可能偏低节奏"
+    },
+    {
+      "id": "S05",
+      "type": "德甲",
+      "kickoff_bjt": "2026-11-28T22:30:00+08:00",
+      "home": "汉堡",
+      "away": "拜仁慕尼黑",
+      "lambda": {
+        "home": 0.75,
+        "away": 2.1
+      },
+      "score1": "0-2",
+      "score2": "0-1",
+      "hda_pct": {
+        "home": 12.2,
+        "draw": 19.2,
+        "away": 68.7
+      },
+      "hda_pick": "客胜",
+      "htft": "客/客",
+      "my_confidence_pct": 62,
+      "data_completeness_pct": 72,
+      "jczq_handicap": "无法核验",
+      "risk": "拜仁Kane、Olise等关键攻击球员缺阵且四场九天赛程；汉堡防守失球多，仍保留客队进球尾部"
+    },
+    {
+      "id": "S06",
+      "type": "德甲",
+      "kickoff_bjt": "2026-11-28T22:30:00+08:00",
+      "home": "美因茨",
+      "away": "柏林联合",
+      "lambda": {
+        "home": 1.25,
+        "away": 0.95
+      },
+      "score1": "1-0",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 43.2,
+        "draw": 28.7,
+        "away": 28.1
+      },
+      "hda_pick": "主胜",
+      "htft": "平/平",
+      "my_confidence_pct": 39,
+      "data_completeness_pct": 72,
+      "jczq_handicap": "无法核验",
+      "risk": "美因茨近五场四负；柏林联合有多达八名缺阵，主客状态均不稳定"
+    },
+    {
+      "id": "S07",
+      "type": "英超",
+      "kickoff_bjt": "2026-11-28T23:00:00+08:00",
+      "home": "曼联",
+      "away": "布伦特福德",
+      "lambda": {
+        "home": 1.35,
+        "away": 1.35
+      },
+      "score1": "1-1",
+      "score2": "1-0",
+      "hda_pct": {
+        "home": 37.1,
+        "draw": 25.8,
+        "away": 37.1
+      },
+      "hda_pick": "主客接近并列，不强行选边",
+      "htft": "平/平",
+      "my_confidence_pct": 34,
+      "data_completeness_pct": 75,
+      "jczq_handicap": "无法核验",
+      "risk": "曼联九场联赛不胜；布伦特福德客场十场不胜但近期主场进攻强，主客方向高度接近"
+    },
+    {
+      "id": "S08",
+      "type": "英超",
+      "kickoff_bjt": "2026-11-28T23:00:00+08:00",
+      "home": "利兹联",
+      "away": "考文垂",
+      "lambda": {
+        "home": 1.75,
+        "away": 0.85
+      },
+      "score1": "1-0",
+      "score2": "2-0",
+      "hda_pct": {
+        "home": 58.7,
+        "draw": 23.3,
+        "away": 18
+      },
+      "hda_pick": "主胜",
+      "htft": "主/主",
+      "my_confidence_pct": 52,
+      "data_completeness_pct": 65,
+      "jczq_handicap": "无法核验",
+      "risk": "利兹主场稳定、考文垂客场较弱；客队锋线伤疑，需防主队进攻效率波动"
+    },
+    {
+      "id": "S09",
+      "type": "英冠",
+      "kickoff_bjt": "2026-11-28T23:00:00+08:00",
+      "home": "女王公园巡游者",
+      "away": "谢菲尔德联",
+      "lambda": {
+        "home": 1.35,
+        "away": 1.15
+      },
+      "score1": "1-1",
+      "score2": "1-0",
+      "hda_pct": {
+        "home": 41.3,
+        "draw": 26.8,
+        "away": 31.8
+      },
+      "hda_pick": "主胜（低置信）",
+      "htft": "平/平",
+      "my_confidence_pct": 32,
+      "data_completeness_pct": 38,
+      "jczq_handicap": "无法核验",
+      "risk": "缺少可靠近况、伤停和首发交叉来源；仅作低完整度影子预测"
+    },
+    {
+      "id": "S18",
+      "type": "西甲",
+      "kickoff_bjt": "2026-11-28T23:15:00+08:00",
+      "home": "马拉加",
+      "away": "毕尔巴鄂竞技",
+      "lambda": {
+        "home": 0.75,
+        "away": 1.45
+      },
+      "score1": "0-1",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 19.4,
+        "draw": 26.8,
+        "away": 53.8
+      },
+      "hda_pick": "客胜",
+      "htft": "平/客",
+      "my_confidence_pct": 47,
+      "data_completeness_pct": 62,
+      "jczq_handicap": "未在已核验竞彩镜像赛事清单中，官方盘口无法核验",
+      "risk": "马拉加联赛13轮未胜且近三场连败；毕尔巴鄂伤停较多，客胜仍需防平"
+    },
+    {
+      "id": "S10",
+      "type": "葡超",
+      "kickoff_bjt": "2026-11-28T23:30:00+08:00",
+      "home": "莫雷伦斯",
+      "away": "圣克拉拉",
+      "lambda": {
+        "home": 1.2,
+        "away": 1.1
+      },
+      "score1": "1-1",
+      "score2": "1-0",
+      "hda_pct": {
+        "home": 38.3,
+        "draw": 28.3,
+        "away": 33.4
+      },
+      "hda_pick": "主胜（微弱）",
+      "htft": "平/平",
+      "my_confidence_pct": 33,
+      "data_completeness_pct": 62,
+      "jczq_handicap": "无法核验",
+      "risk": "双方近期结果波动；Moreirense有停赛，Santa Clara也有停赛及伤疑"
+    },
+    {
+      "id": "S19",
+      "type": "法甲",
+      "kickoff_bjt": "2026-11-29T00:15:00+08:00",
+      "home": "昂热",
+      "away": "朗斯",
+      "lambda": {
+        "home": 0.75,
+        "away": 1.35
+      },
+      "score1": "0-1",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 20.8,
+        "draw": 28.2,
+        "away": 51.1
+      },
+      "hda_pick": "客胜",
+      "htft": "平/平",
+      "my_confidence_pct": 45,
+      "data_completeness_pct": 64,
+      "jczq_handicap": "未在已核验竞彩镜像赛事清单中，官方盘口无法核验",
+      "risk": "昂热近五轮四负且进攻乏力；朗斯也有多名伤员，低比分和平局风险保留"
+    },
+    {
+      "id": "S11",
+      "type": "意甲",
+      "kickoff_bjt": "2026-11-29T01:00:00+08:00",
+      "home": "都灵",
+      "away": "拉齐奥",
+      "lambda": {
+        "home": 0.95,
+        "away": 1.5
+      },
+      "score1": "0-1",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 23.9,
+        "draw": 26.1,
+        "away": 50
+      },
+      "hda_pick": "客胜",
+      "htft": "平/客",
+      "my_confidence_pct": 44,
+      "data_completeness_pct": 65,
+      "jczq_handicap": "无法核验",
+      "risk": "拉齐奥近五场四胜一平，状态占优；都灵主场有进球能力，需防平局"
+    },
+    {
+      "id": "S12",
+      "type": "挪超",
+      "kickoff_bjt": "2026-11-29T01:00:00+08:00",
+      "home": "罗森博格",
+      "away": "莫尔德",
+      "lambda": {
+        "home": 2,
+        "away": 1.75
+      },
+      "score1": "2-1",
+      "score2": "1-1",
+      "hda_pct": {
+        "home": 44.3,
+        "draw": 21.3,
+        "away": 34.4
+      },
+      "hda_pick": "主胜",
+      "htft": "主/主",
+      "my_confidence_pct": 40,
+      "data_completeness_pct": 70,
+      "jczq_handicap": "无法核验",
+      "risk": "两队进攻火力强且防守伤停多；4球以上尾部明显高于常规比赛，比分分布不可压窄"
+    },
+    {
+      "id": "S13",
+      "type": "英超",
+      "kickoff_bjt": "2026-11-29T01:30:00+08:00",
+      "home": "伊普斯维奇",
+      "away": "阿斯顿维拉",
+      "lambda": {
+        "home": 1,
+        "away": 1.4
+      },
+      "score1": "1-1",
+      "score2": "0-1",
+      "hda_pct": {
+        "home": 26.9,
+        "draw": 27,
+        "away": 46.1
+      },
+      "hda_pick": "客胜",
+      "htft": "平/平",
+      "my_confidence_pct": 42,
+      "data_completeness_pct": 75,
+      "jczq_handicap": "无法核验",
+      "risk": "维拉赛程密集且Cash、Onana、Ruggeri缺阵；伊普斯维奇主场有抵抗力，平局概率接近主胜"
+    },
+    {
+      "id": "S14",
+      "type": "德甲",
+      "kickoff_bjt": "2026-11-29T01:30:00+08:00",
+      "home": "斯图加特",
+      "away": "法兰克福",
+      "lambda": {
+        "home": 1.65,
+        "away": 1.55
+      },
+      "score1": "1-1",
+      "score2": "2-1",
+      "hda_pct": {
+        "home": 40.4,
+        "draw": 23.4,
+        "away": 36.2
+      },
+      "hda_pick": "主胜（微弱）",
+      "htft": "平/主",
+      "my_confidence_pct": 37,
+      "data_completeness_pct": 78,
+      "jczq_handicap": "无法核验",
+      "risk": "斯图加特刚踢欧冠且有伤停；法兰克福客场防守较弱、进攻稳定，双方接近"
+    },
+    {
+      "id": "S15",
+      "type": "西甲",
+      "kickoff_bjt": "2026-11-29T01:30:00+08:00",
+      "home": "埃尔切",
+      "away": "马德里竞技",
+      "lambda": {
+        "home": 0.8,
+        "away": 1.65
+      },
+      "score1": "0-1",
+      "score2": "0-2",
+      "hda_pct": {
+        "home": 18,
+        "draw": 24.4,
+        "away": 57.6
+      },
+      "hda_pick": "客胜",
+      "htft": "平/客",
+      "my_confidence_pct": 53,
+      "data_completeness_pct": 78,
+      "jczq_handicap": "无法核验",
+      "risk": "马竞客场表现强；Lookman缺阵、Sørloth及Romero有伤疑，埃尔切主场仍有抵抗空间"
+    },
+    {
+      "id": "S17",
+      "type": "沙特职业联赛",
+      "kickoff_bjt": "2026-11-29T01:30:00+08:00",
+      "home": "吉达国民",
+      "away": "布赖代合作",
+      "lambda": {
+        "home": 2.15,
+        "away": 0.75
+      },
+      "score1": "2-0",
+      "score2": "1-0",
+      "hda_pct": {
+        "home": 69.6,
+        "draw": 18.7,
+        "away": 11.7
+      },
+      "hda_pick": "主胜",
+      "htft": "主/主",
+      "my_confidence_pct": 62,
+      "data_completeness_pct": 68,
+      "jczq_handicap": "不在已核验官方竞彩场次清单，无法核验",
+      "risk": "吉达国民联赛主场五战全胜；布赖代合作联赛未胜且客场进球少，但主队仍有伤停"
+    }
+  ],
+  "prediction_count": 19
+}
