@@ -156,24 +156,27 @@
       "timezone": "GMT plus 8 hours"
     },
     {
-      "name": "Liga Portugal official",
-      "ref": "turn755153search3",
-      "url": "https://www.ligaportugal.pt/competicao/911/liga-portugal-betclic/20262027/calendario",
-      "quality": "official",
-      "timezone": "Portugal GMT plus 8 hours"
-    },
-    {
-      "name": "Eliteserien official",
-      "ref": "turn820775search8",
-      "url": "https://www.eliteserien.no/nyheter/her-er-spilleplanen-for-2026",
-      "quality": "official",
-      "timezone": "CET UTC+1 converted to BJT"
-    },
-    {
       "name": "A-League fixture guide",
       "ref": "turn142147search3",
       "url": "https://www.aleaguefixtures.com/matches/4pei60cw2wccao32zjs3tflzo/central-coast-mariners-vs-auckland-fc",
       "quality": "third_party_cross_checked"
+    },
+    {
+      "name": "Football Web Pages / RTP Portugal fixtures",
+      "refs": [
+        "turn995953search1",
+        "turn995953search8"
+      ],
+      "url": "https://www.footballwebpages.co.uk/portuguese-primeira-liga/fixtures-results/november",
+      "quality": "secondary_free_crosscheck",
+      "timezone": "Portugal GMT plus 8 hours"
+    },
+    {
+      "name": "Eliteserien official fixture list",
+      "ref": "turn555624search3",
+      "url": "https://www.eliteserien.no/terminliste",
+      "quality": "official",
+      "timezone": "CET UTC+1 converted to BJT"
     }
   ],
   "missing_sources": [
