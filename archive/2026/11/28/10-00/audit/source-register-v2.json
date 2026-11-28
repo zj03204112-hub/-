@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "captured_at_bjt": "2026-11-28T10:26:20+08:00",
+  "results_sources": [
+    {
+      "name": "Leisu Sports",
+      "url": "https://live.leisu.com/wanchang-20261126",
+      "ref": "turn925312search7",
+      "quality": "finished_status_crosscheck",
+      "note": "动态页面可核对部分完场状态，但本轮未能稳定读取全部比分字段；比分以UEFA/FIFA官方及可靠比赛报告为准"
+    },
+    {
+      "name": "UEFA Europa League official results",
+      "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-11-europa-league-all-the-league-phase-fixtures-and-re/",
+      "ref": "turn740098search0",
+      "quality": "official"
+    },
+    {
+      "name": "UEFA Conference League official round-up",
+      "url": "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/",
+      "ref": "turn740098search3",
+      "quality": "official"
+    },
+    {
+      "name": "FIFA U17 World Cup results",
+      "url": "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026",
+      "ref": "turn855320search1",
+      "quality": "official"
+    },
+    {
+      "name": "Saudi match results",
+      "url": null,
+      "ref": "turn824174view0",
+      "quality": "aggregator_cross_checked"
+    },
+    {
+      "name": "A-Leagues official result",
+      "url": "https://aleagues.com.au/news/ryan-fraser-masterclass-sees-macarthur-sink-melbourne-city/",
+      "ref": "turn517082search0",
+      "quality": "official"
+    },
+    {
+      "name": "Romanian SuperLiga match report",
+      "url": null,
+      "ref": "turn857125search0",
+      "quality": "match_report"
+    },
+    {
+      "name": "Russian Cup match report",
+      "url": null,
+      "ref": "turn834982search1",
+      "quality": "match_report"
+    },
+    {
+      "name": "Danish 1st Division match report",
+      "url": null,
+      "ref": "turn184019search0",
+      "quality": "match_report"
+    },
+    {
+      "name": "Dongqiudi results index",
+      "url": "https://m.dongqiudi.com/hk/zhanbao/saicheng/2026-11-27",
+      "ref": "turn925312search6",
+      "quality": "secondary_crosscheck",
+      "scope": "27 Nov BJT fixture-result index with 18 Europa League, 17 Conference League and tracked additional matches"
+    },
+    {
+      "name": "Russian First League Volga alias result",
+      "url": "https://scoremondo.com/en/match/fc-nizhny-novgorod-fc-tekstilschik-ivanovo-31655646",
+      "ref": "turn650917search3",
+      "quality": "third_party_cross_checked"
+    },
+    {
+      "name": "Volga Olimpiets / FC Nizhny Novgorod alias",
+      "url": "https://www.betsfan.com/soccer/t/48265/volga-olimpiets",
+      "refs": [
+        "turn879749search6",
+        "turn879749search22"
+      ],
+      "quality": "alias_cross_check"
+    },
+    {
+      "name": "A-League Macarthur–Melbourne City result",
+      "url": "https://pitchlabstats.com/recap/macarthur-beat-melbourne-city-2-0-1593709",
+      "ref": "turn797808search0",
+      "quality": "third_party_cross_checked"
+    }
+  ],
+  "xg_sources": [
+    {
+      "provider": "Bzzoiro Sports Data via TotalOdds",
+      "ref": "turn460797view0",
+      "quality": "supplier_model_estimate",
+      "records": 21
+    },
+    {
+      "provider": "FUTLO",
+      "ref": "turn115788view0",
+      "quality": "supplier_model_estimate",
+      "records": 17
+    },
+    {
+      "provider": "Kickly",
+      "refs": [
+        "turn857125search0",
+        "turn184019search0",
+        "turn927390search0",
+        "turn927390search1"
+      ],
+      "quality": "supplier_model_estimate",
+      "records": 4
+    },
+    {
+      "provider": "TheFootballTube",
+      "ref": "turn872843search10",
+      "quality": "supplier_model_estimate",
+      "records": 1
+    },
+    {
+      "provider": "TuFutbolero",
+      "ref": "turn872843search3",
+      "quality": "supplier_model_estimate",
+      "records": 1
+    },
+    {
+      "provider": "Fulltime Note",
+      "ref": "turn872843search9",
+      "quality": "supplier_model_estimate",
+      "records": 1
+    },
+    {
+      "provider": "Football Web Pages",
+      "ref": "turn872843search11",
+      "quality": "supplier_model_estimate",
+      "records": 1
+    },
+    {
+      "provider": "xGaura",
+      "ref": "turn872843search6",
+      "quality": "supplier_model_estimate",
+      "records": 1
+    },
+    {
+      "provider": "Darbah",
+      "refs": [
+        "turn872843search1",
+        "turn501823search3"
+      ],
+      "quality": "supplier_model_estimate",
+      "records": 2
+    },
+    {
+      "provider": "Shotify",
+      "ref": "turn501823search2",
+      "quality": "supplier_model_estimate",
+      "records": 1
+    },
+    {
+      "provider": "FawaNews",
+      "ref": "turn927390search2",
+      "quality": "supplier_model_estimate",
+      "records": 1
+    },
+    {
+      "provider": "SportMeridian",
+      "ref": "turn927390search3",
+      "quality": "supplier_model_estimate",
+      "records": 1
+    },
+    {
+      "provider": "Betrend",
+      "ref": "turn797808search5",
+      "quality": "supplier_model_estimate",
+      "records": 1
+    }
+  ],
+  "fixture_sources": [
+    {
+      "name": "The Guardian fixtures",
+      "refs": [
+        "turn214164view0",
+        "turn214164view1"
+      ],
+      "quality": "free_fixture_listing",
+      "timezone": "EST UTC-5 converted to UTC/BJT"
+    },
+    {
+      "name": "J.League official",
+      "ref": "turn601965view0",
+      "url": "https://www.jleague.jp/en/j1/match/",
+      "quality": "official",
+      "timezone": "JST minus 1 hour"
+    },
+    {
+      "name": "GOTIFO K League 1",
+      "ref": "turn697774view0",
+      "url": "https://gotifo.com/competitions/k-league-1-51",
+      "quality": "third_party",
+      "timezone": "KST minus 1 hour"
+    },
+    {
+      "name": "Sport News Africa Saudi schedule",
+      "ref": "turn796096view0",
+      "url": "https://sportnewsafrica.com/en/news/saudi-pro-league-fixtures-weekend-schedule-and-kick-off-times-27-28-november-2026/",
+      "quality": "free_schedule",
+      "timezone": "GMT plus 8 hours"
+    },
+    {
+      "name": "A-League fixture guide",
+      "ref": "turn142147search3",
+      "url": "https://www.aleaguefixtures.com/matches/4pei60cw2wccao32zjs3tflzo/central-coast-mariners-vs-auckland-fc",
+      "quality": "third_party_cross_checked"
+    },
+    {
+      "name": "Football Web Pages / RTP Portugal fixtures",
+      "refs": [
+        "turn995953search1",
+        "turn995953search8"
+      ],
+      "url": "https://www.footballwebpages.co.uk/portuguese-primeira-liga/fixtures-results/november",
+      "quality": "secondary_free_crosscheck",
+      "timezone": "Portugal GMT plus 8 hours"
+    },
+    {
+      "name": "Eliteserien official fixture list",
+      "ref": "turn555624search3",
+      "url": "https://www.eliteserien.no/terminliste",
+      "quality": "official",
+      "timezone": "CET UTC+1 converted to BJT"
+    }
+  ],
+  "missing_sources": [
+    "官方中国体育彩票竞彩让球盘口及时间戳未取得",
+    "部分球队/赛事/比赛内部ID无法核验，SQLite未连接",
+    "未找到的比赛级xG字段保持null，不使用赛季均值填充",
+    "部分既有xG记录source_url为空，仅保留provider与source_ref，未拼造URL"
+  ]
+}
