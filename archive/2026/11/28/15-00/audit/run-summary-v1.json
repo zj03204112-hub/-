@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "run_date_bjt": "2026-11-28",
+  "run_type": "15:00 refresh",
+  "captured_at_bjt": "2026-11-28T14:57:38+08:00",
+  "iso_week": "2026-W48",
+  "prediction_window_bjt": "2026-11-28 20:57:38 to 2026-11-29 02:57:38",
+  "fixtures": {
+    "shadow_predictions": 17,
+    "core_leagues_in_window": 13,
+    "other_tracked_competitions_in_window": 4,
+    "official_jczq_handicap_verified": 0,
+    "opening_to_live_timeline_verified": 0,
+    "j1_k_league_not_predicted_due_live_or_less_than_6h": true
+  },
+  "data_gaps": {
+    "confirmed_starting_XI": 17,
+    "official_jczq_handicap": 17,
+    "opening_to_live_market_timeline": 17,
+    "referee_not_verified": "多数场次",
+    "venue_weather_not_verified": "多数场次",
+    "match_level_supplier_prematch_xG": 15,
+    "next_opponent_motivation": "多数场次待补"
+  },
+  "xg": {
+    "supplier_prematch_estimate_records": 6,
+    "measured_xg": 0,
+    "own_model_lambda_separate": true,
+    "postmatch_xg_reused_as_prematch": 0
+  },
+  "database": {
+    "sqlite_connected": false,
+    "database_write": false,
+    "repository_sqlite_file_present": true,
+    "binary_file_read_or_validated": false,
+    "team_competition_match_id_mapping": "not verified"
+  },
+  "protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "historical_xg_snapshots_overwritten": false
+  },
+  "archive_status": "pending commit and read-back verification"
+}
