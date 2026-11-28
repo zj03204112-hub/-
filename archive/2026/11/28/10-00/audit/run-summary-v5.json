@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0",
+  "run_date_bjt": "2026-11-28",
+  "captured_at_bjt": "2026-11-28T10:26:20+08:00",
+  "iso_week": "2026-W48",
+  "review": {
+    "confirmed_matches": 51,
+    "matched_predictions": 30,
+    "no_snapshot_matches": 21,
+    "invalid_fixture_predictions": 2,
+    "hda_hits": 19,
+    "hda_accuracy_pct": 63.33,
+    "first_score_hits": 3,
+    "first_score_accuracy_pct": 10,
+    "second_score_hits": 2,
+    "second_score_accuracy_pct": 6.67,
+    "htft_hits": 9,
+    "htft_accuracy_pct": 30,
+    "actual_draws": 2,
+    "predicted_draw_top": 0,
+    "jczq_verified": 0,
+    "jczq_unverifiable": 30,
+    "risk_hit_rate": null,
+    "brier": 0.54381,
+    "log_loss": 0.95551,
+    "actual_4plus": 11,
+    "actual_4plus_rate_pct": 36.67,
+    "candidate_scores_4plus": 1,
+    "candidate_scores_5plus": 0,
+    "candidate_score_count": 60,
+    "candidate_scores_4plus_rate_pct": 1.67,
+    "brier_definition": "每场三分类Brier：三个类别平方误差之和，再对比赛数取平均",
+    "log_loss_definition": "对实际胜平负类别概率取负自然对数，再对比赛数取平均"
+  },
+  "fixtures": {
+    "completed_2026_11_28": 9,
+    "scheduled_2026_11_28": 38,
+    "scheduled_2026_11_29": 37,
+    "total_records": 84,
+    "boundary_fixtures_2026_11_30": 9,
+    "missing_fields_per_scheduled_fixture": {
+      "official_jczq_handicap": 75,
+      "opening_to_live_market_timeline": 75,
+      "confirmed_starting_XI": 75,
+      "injuries": 75,
+      "referee": 75,
+      "weather": 75,
+      "prematch_match_xG": 75,
+      "latest_news": 75
+    }
+  },
+  "xg": {
+    "provider_records": 53,
+    "unique_matches_with_xg": 49,
+    "missing_matches": 11,
+    "team_week_rows": 128,
+    "estimated_team_rows": 106,
+    "missing_team_rows": 22,
+    "measured_xg": 0,
+    "own_model_estimates": 0,
+    "postmatch_to_prematch_leakage": 0
+  },
+  "database": {
+    "sqlite_connected": false,
+    "database_writes": false,
+    "repository_sqlite_artifact_present_but_not_opened_or_validated": true,
+    "team_id_mapping": "unresolved",
+    "competition_id_mapping": "unresolved",
+    "match_id_mapping": "unresolved"
+  },
+  "protection": {
+    "v5_1_modified": false,
+    "frozen_validation_sample_modified": false,
+    "historical_prediction_snapshots_overwritten": false,
+    "historical_xg_snapshots_overwritten": false
+  },
+  "corrections": [
+    "补入S26-1500-31并修复Volga Olimpiets/FC Nizhny Novgorod别名",
+    "Al-Faisaly–Al-Diriyah更正为Saudi First Division",
+    "S20/S21两条冲突赛程预测作废",
+    "补入7条独立供应商赛后xG估算，覆盖4场此前缺失比赛",
+    "v3复核直接从30条原始逐场概率重算Brier/LogLoss，纠正v2手工转录误差",
+    "统一修正Al-Faisaly–Al-Diriyah无预测快照清单的赛事分类为Saudi First Division，与结果表和xG记录一致",
+    "v5逐场赛果表及无预测快照清单补齐source_ref；无直接URL的来源保持null"
+  ],
+  "next_steps": [
+    "15:00刷新盘口、首发、伤停、近3场、战术、天气、裁判、赛前xG、新闻和赛程密度",
+    "仅对距开赛6–12小时的比赛生成预测",
+    "11月28日已完赛9场纳入11月29日复盘",
+    "继续补齐11条缺失赛后xG",
+    "恢复SQLite连接并完成内部ID映射"
+  ],
+  "latest_review_file": "archive/2026/11/28/10-00/review/2026-11-27-results-review-v5.json",
+  "source_coverage": {
+    "total_confirmed_matches": 51,
+    "result_source_ref_present": 51,
+    "direct_source_url_present": 38,
+    "note": "未能取得直接URL的条目保留可追溯source_ref，不猜测或拼造URL"
+  }
+}
